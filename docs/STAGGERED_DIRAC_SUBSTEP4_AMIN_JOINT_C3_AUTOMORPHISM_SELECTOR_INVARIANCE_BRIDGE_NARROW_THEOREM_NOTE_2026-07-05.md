@@ -14,7 +14,7 @@ pipeline after independent review.
 ## Purpose
 
 The substep-4 species-labeling no-go
-([STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md](STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md))
+(`STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md`)
 rests on the orbit-equivariance invariant: every A_min-derivable property of
 the hw=1 corner triplet is invariant under the cyclic relabeling, so the
 identity labeling `pi_A` and the cyclic relabeling `pi_B` are
@@ -109,7 +109,7 @@ P1/P2/P3 exhaustiveness surface.
 | [STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md) | hw=1 corner triplet / Hamming-orbit structure |
 | [STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md](STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md) | joint translation eigenvalue table `tau^{alpha}_{mu}` on the corner triplet |
 
-Downstream consumer: [STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md](STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md)
+Downstream consumer: `STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md`
 (the orbit-equivariance invariant step).
 
 ## Runner verification map

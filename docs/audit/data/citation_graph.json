@@ -40117,6 +40117,22 @@
       "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
     },
     {
+      "from": "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05",
+      "to": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05",
+      "to": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05"
+    },
+    {
       "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
       "to": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
     },
@@ -56938,7 +56954,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
+      "to": "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05"
     },
     {
       "from": "repo.front_door_status",
@@ -109765,13 +109781,13 @@
         "hypercharge_identification_note",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-        "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+        "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05",
         "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4ad1e6e5153ca2bf395245ab9e28886365bfe1b606a2a833c567eaaaf0831aba",
+      "note_hash": "a0cba43501a4396ff2ff8d61af5aecc89df8839fbd0c26abb5d4ba26ed2bd51b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -114786,12 +114802,29 @@
       "runner_path": "scripts/audit_companion_staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_2026_05_17.py",
       "title": "Staggered-Dirac Substep 4 \u2014 AC_\u03c6 Trace-Equipartition Bridge Narrow Theorem"
     },
+    "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05": {
+      "claim_id": "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9dd378b1cad052680bbb4ee8858749f25a6309b166df4451197aafaa1475b651",
+      "path": "docs/STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md",
+      "runner_path": "scripts/staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_2026_07_05.py",
+      "title": "Staggered-Dirac Substep 4 \u2014 A_min Joint-C\u2083 Automorphism / Selector-Invariance Bridge (Narrow Theorem)"
+    },
     "staggered_dirac_substep4_labeling_no_go_note_2026-05-17": {
       "claim_id": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
       "deps": [
+        "staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05",
         "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
         "staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
@@ -114801,7 +114834,7 @@
         "three_generation_observable_theorem_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d7818c2bfd42c62687e14abdf44bfc78e293be204eaa657ca14d73000f022d6d",
+      "note_hash": "f72243c158134b245121181bfe0b7d6dfd8d20e301a91a910c3ed65f7029808f",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py",
       "title": "Staggered-Dirac Substep 4 \u2014 AC_\u03c6\u03bb Species-Labeling No-Go Theorem"
@@ -125795,7 +125828,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1557,
+      "bounded_theorem": 1558,
       "decoration": 3,
       "meta": 319,
       "no_go": 324,
@@ -125804,7 +125837,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1962,
+      "bounded_theorem": 1963,
       "decoration": 3,
       "meta": 319,
       "no_go": 428,
@@ -125812,10 +125845,10 @@
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14337,
+    "edge_count": 14341,
     "leaf_count": 1299,
-    "node_count": 3826,
+    "node_count": 3827,
     "root_count": 1103,
-    "runners_with_path": 3449
+    "runners_with_path": 3450
   }
 }

@@ -27,17 +27,17 @@ Owner-approval history for every axiom/primitive change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3655 |
-| Applied audit verdicts | 1371 |
+| Ledger rows | 3656 |
+| Applied audit verdicts | 1370 |
 | Retained-grade rows, including boxed decorations | 1298 |
 | Retained positive theorems | 191 |
 | Retained no-go rows | 192 |
 | Retained bounded rows | 870 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
-| Unaudited rows | 1935 |
+| Unaudited rows | 1937 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 26 |
+| Audited conditional rows | 25 |
 | Audited renaming rows | 19 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 10 |
@@ -49,10 +49,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1973 |
+| Total pending rows | 1974 |
 | Ready rows | 206 |
 | Cycle-break targets | 10 |
-| Critical pending | 416 |
+| Critical pending | 417 |
 | High pending | 284 |
 | Medium pending | 513 |
 | Leaf pending | 760 |
@@ -63,7 +63,7 @@ Next ready rows by queue order:
 - [`hypercharge_identification_note`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md) - critical; non_terminal_conditional
 - [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
-- [`staggered_dirac_substep4_labeling_no_go_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md) - critical; non_terminal_conditional
+- [`staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05`](../../docs/STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md) - critical; unaudited
 - [`yt_ward_identity_derivation_theorem`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
@@ -93,15 +93,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3826 |
-| Critical nodes | 665 |
+| Citation-graph nodes | 3827 |
+| Critical nodes | 666 |
 | High nodes | 473 |
 | Medium nodes | 970 |
 | Leaf nodes | 1718 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1875 descendants; score 192.873
+- `minimal_axioms` - critical; 1876 descendants; score 193.374
 - `three_generation_observable_theorem_note` - critical; 1155 descendants; score 67.175
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 198 descendants; score 65.137
 - `graph_first_su3_integration_note` - critical; 1547 descendants; score 65.096

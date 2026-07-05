@@ -56826,15 +56826,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "cl3_taste_generation_theorem"
     },
     {
       "from": "repo.front_door_status",
       "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
     },
     {
       "from": "repo.repo_organization",
@@ -109515,12 +109515,12 @@
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "ew_current_matching_rule_open_gate_note_2026-05-03",
         "cl3_taste_generation_theorem",
-        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
+        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bfeb4cfd41417c0e3da59645ab0d759caf068995290e402d4fabc31d646d70f9",
+      "note_hash": "c508ce511af4eb849868d852a8ca1f0d8806ba98a6eb16028189f9b308e45140",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

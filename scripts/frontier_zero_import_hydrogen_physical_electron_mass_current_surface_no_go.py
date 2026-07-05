@@ -21,6 +21,7 @@ GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 STATIC_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_CLOSURE_DISCRIMINATOR_2026-07-04.md"
 KOIDE_FIREWALL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md"
 ELECTRON_MASS_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md"
+ELECTRON_MASS_ASSEMBLY = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md"
 BRIDGE_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 NATIVE_BRIDGE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 SPECIES_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
@@ -137,6 +138,7 @@ def main() -> None:
         STATIC_TARGET,
         KOIDE_FIREWALL,
         ELECTRON_MASS_PACKET,
+        ELECTRON_MASS_ASSEMBLY,
         BRIDGE_DECISION,
         NATIVE_BRIDGE_NO_GO,
         SPECIES_DECISION,
@@ -171,6 +173,9 @@ def main() -> None:
         "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED",
         "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "species bridge target remains needed",
+        "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md",
+        "review compression for the direct electron-mass rows",
+        "does not change this current-surface result",
         "ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED",
         "KOIDE_BRANCH_MASS_MAP_RETAINED",
         "SCALE_REFERENCE_PRIMITIVE_CHAIN_SATISFIED",
@@ -269,6 +274,7 @@ def main() -> None:
     static_target = read(STATIC_TARGET)
     koide_firewall = read(KOIDE_FIREWALL)
     electron_packet = read(ELECTRON_MASS_PACKET)
+    electron_assembly = read(ELECTRON_MASS_ASSEMBLY)
     bridge_decision = read(BRIDGE_DECISION)
     native_bridge_no_go = read(NATIVE_BRIDGE_NO_GO)
     species_decision = read(SPECIES_DECISION)
@@ -287,6 +293,12 @@ def main() -> None:
     audit.check("static target references physical electron mass no-go", NOTE.name in static_target and "RETAINED_ELECTRON_MASS_PHYSICAL_UNIT" in static_target)
     audit.check("Koide firewall references physical electron mass no-go", NOTE.name in koide_firewall and "PHYSICAL_ELECTRON_READOUT_RETAINED" in koide_firewall)
     audit.check("electron mass packet references current-surface no-go", NOTE.name in electron_packet and "current retained, primitive, and open-PR surfaces do not" in electron_packet)
+    audit.check("physical electron no-go references assembly ladder", ELECTRON_MASS_ASSEMBLY.name in note and "does not change this current-surface result" in note)
+    audit.check(
+        "assembly ladder keeps physical m_e open",
+        NOTE.name in electron_assembly
+        and "No derivation or ratification of `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`." in electron_assembly,
+    )
     audit.check("native bridge packet remains bridge only", "NATIVE_ZERO_SECTION_BRIDGE_RETAINED" in bridge_decision and "does not derive `m_e`" in bridge_decision)
     audit.check("physical electron no-go references native no-go", NATIVE_BRIDGE_NO_GO.name in note and "native bridge target remains needed" in note)
     audit.check(

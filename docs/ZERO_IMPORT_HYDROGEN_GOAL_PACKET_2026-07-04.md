@@ -1210,6 +1210,14 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   `ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED`, and
   `KOIDE_BRANCH_MASS_MAP_RETAINED`; the scale-reference primitive remains
   units conversion only.
+  The physical electron mass assembly ladder review packet
+  `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+  is review compression only. It groups the direct Lane 6 electron-mass rows
+  under the parent contract: native zero-section bridge, physical electron
+  species bridge, K4 scale, branch mass-map, scale-reference chain, comparator
+  exclusions, owner, and audit. It does not supply `PHYSICAL_ELECTRON_READOUT_RETAINED`,
+  `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`, retained `alpha(0)`, static-source
+  Rydberg closure, or hydrogen.
 
 The cleanest first attack for zero-import hydrogen is therefore not generic
 Lane 6. It is the `1/256` lepton-scale suppression gate, because once the

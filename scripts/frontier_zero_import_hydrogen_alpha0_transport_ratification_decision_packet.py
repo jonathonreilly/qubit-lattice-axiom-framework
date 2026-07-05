@@ -21,6 +21,7 @@ GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 ALPHA_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ALPHA_QED_LOOP_KERNEL_TARGET_DISCRIMINATOR_2026-07-04.md"
 QED_LOOP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_QED_LOOP_KERNEL_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 R_LEP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+R_LEP_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 ALPHA0_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 STATIC_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_CLOSURE_DISCRIMINATOR_2026-07-04.md"
 LANE2_FIREWALL = ROOT / "docs" / "ATOMIC_LANE2_QED_RUNNING_DEPENDENCY_FIREWALL_NOTE_2026-04-30.md"
@@ -142,6 +143,7 @@ def main() -> None:
         ALPHA_TARGET,
         QED_LOOP_NO_GO,
         R_LEP_NO_GO,
+        R_LEP_PACKET,
         ALPHA0_NO_GO,
         STATIC_TARGET,
         LANE2_FIREWALL,
@@ -197,6 +199,8 @@ def main() -> None:
         "QED loop target remains needed",
         "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "R-Lep threshold target remains needed",
+        "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "T_LEP_THRESHOLD_MOMENT_RETAINED",
         "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "current retained, primitive, and open-PR surfaces do not supply",
         "ALPHA0_TRANSPORT_RETAINED",
@@ -265,6 +269,7 @@ def main() -> None:
     alpha_target = read(ALPHA_TARGET)
     qed_loop_no_go = read(QED_LOOP_NO_GO)
     r_lep_no_go = read(R_LEP_NO_GO)
+    r_lep_packet = read(R_LEP_PACKET)
     alpha0_no_go = read(ALPHA0_NO_GO)
     static_target = read(STATIC_TARGET)
     lane2_firewall = read(LANE2_FIREWALL)
@@ -300,6 +305,10 @@ def main() -> None:
         R_LEP_NO_GO.name in note and "R-Lep threshold target remains needed" in note,
     )
     audit.check(
+        "alpha0 packet references R-Lep decision packet",
+        R_LEP_PACKET.name in note and "T_LEP_THRESHOLD_MOMENT_RETAINED" in note,
+    )
+    audit.check(
         "QED loop no-go keeps kernel open",
         "QED_LOOP_KERNEL_RETAINED" in qed_loop_no_go
         and "current retained, primitive, and open-PR surfaces do not supply" in qed_loop_no_go,
@@ -308,6 +317,11 @@ def main() -> None:
         "R-Lep no-go keeps thresholds open",
         "R_LEP_THRESHOLDS_RETAINED" in r_lep_no_go
         and "current retained, primitive, and open-PR surfaces do not supply" in r_lep_no_go,
+    )
+    audit.check(
+        "R-Lep packet keeps alpha0 downstream",
+        "R_LEP_THRESHOLDS_RETAINED" in r_lep_packet
+        and "does not by itself supply" in r_lep_packet,
     )
 
     audit.check("alpha target names same transport inputs", all(token in alpha_target for token in [

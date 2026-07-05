@@ -1263,6 +1263,13 @@ The R-Lep threshold-moment map decision packet
 packages the threshold-moment map target
 `LEPTON_THRESHOLD_MOMENT_MAP_RETAINED` without deriving the mass spectrum,
 `T_LEP_THRESHOLD_MOMENT_RETAINED`, or `R_LEP_THRESHOLDS_RETAINED`.
+The R-Lep thresholds ratification decision packet
+`ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages the parent eleven-input handoff for `R_LEP_THRESHOLDS_RETAINED` and
+`T_LEP_THRESHOLD_MOMENT_RETAINED` under `R_LEP_THRESHOLDS_TEXT_LOCK`; it
+composes the mass-spectrum and threshold-map child inputs with high-scale
+context, comparator exclusion, owner ratification, and audit acceptance,
+while still leaving alpha0 and hydrogen downstream.
 The alpha0 transport ratification decision packet
 `ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_RATIFICATION_DECISION_PACKET_2026-07-04.md`
 packages that Lane 2 target as an eleven-input owner/audit handoff:

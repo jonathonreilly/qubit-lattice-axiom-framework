@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ALPHA_QED_LOOP_KERNEL_TARGET_DISCRIMINATOR_2026-07-04.md"
 QED_LOOP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_QED_LOOP_KERNEL_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 R_LEP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+R_LEP_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 PRIMITIVE_REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 USABLE_VALUES = ROOT / "docs" / "publication" / "ci3_z3" / "USABLE_DERIVED_VALUES_INDEX.md"
 
@@ -88,6 +89,7 @@ def main() -> int:
     note = read(NOTE)
     qed_loop_no_go = read(QED_LOOP_NO_GO)
     r_lep_no_go = read(R_LEP_NO_GO)
+    r_lep_packet = read(R_LEP_PACKET)
     primitive_registry_text = read(PRIMITIVE_REGISTRY)
     primitive_registry = json.loads(primitive_registry_text)
     usable_values = read(USABLE_VALUES)
@@ -101,6 +103,7 @@ def main() -> int:
         "docs/SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md",
         "docs/ZERO_IMPORT_HYDROGEN_QED_LOOP_KERNEL_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "docs/ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "docs/ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md",
         "docs/ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "docs/audit/data/axiom_premise_nodes.json",
         "docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md",
@@ -122,6 +125,8 @@ def main() -> int:
         "QED loop target remains needed",
         "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "R-Lep threshold target remains needed",
+        "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "T_LEP_THRESHOLD_MOMENT_RETAINED",
         "R_LEP_THRESHOLDS_RETAINED",
         "R_Q_HEAVY_THRESHOLDS_RETAINED",
         "R_HAD_NP_RETAINED",
@@ -229,6 +234,12 @@ def main() -> int:
         "R_LEP_THRESHOLDS_RETAINED" in r_lep_no_go
         and "current retained, primitive, and open-PR surfaces do not supply" in r_lep_no_go,
         "R-Lep no-go keeps threshold handoff open",
+        failures,
+    )
+    require(
+        "R_LEP_THRESHOLDS_RETAINED" in r_lep_packet
+        and "does not by itself supply" in r_lep_packet,
+        "R-Lep packet is conditional support only",
         failures,
     )
 

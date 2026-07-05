@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verifier for the zero-import hydrogen R-Lep threshold no-go."""
+"""Verifier for the R-Lep thresholds decision packet."""
 
 from __future__ import annotations
 
@@ -11,19 +11,17 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
+R_LEP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+MASS_SPECTRUM_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_CHARGED_LEPTON_MASS_SPECTRUM_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+THRESHOLD_MAP_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLD_MOMENT_MAP_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 ALPHA_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ALPHA_QED_LOOP_KERNEL_TARGET_DISCRIMINATOR_2026-07-04.md"
 ALPHA_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 ALPHA0_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 QED_LOOP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_QED_LOOP_KERNEL_CURRENT_SURFACE_NO_GO_2026-07-05.md"
-MASS_SPECTRUM_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_CHARGED_LEPTON_MASS_SPECTRUM_RATIFICATION_DECISION_PACKET_2026-07-05.md"
-THRESHOLD_MAP_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLD_MOMENT_MAP_RATIFICATION_DECISION_PACKET_2026-07-05.md"
-R_LEP_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 PHYSICAL_ELECTRON_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 PHYSICAL_ELECTRON_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
-BRANCH_MASS_MAP = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_RATIFICATION_DECISION_PACKET_2026-07-04.md"
-ABSOLUTE_SCALE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 LANE2_FIREWALL = ROOT / "docs" / "ATOMIC_LANE2_QED_RUNNING_DEPENDENCY_FIREWALL_NOTE_2026-04-30.md"
 THRESHOLD_MOMENT = ROOT / "scripts" / "frontier_atomic_alpha0_threshold_moment_no_go.py"
 REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
@@ -46,6 +44,19 @@ R_LEP_INPUTS = {
     "AUDIT_ACCEPTANCE",
 }
 
+SPECTRUM_CONSEQUENCE = {
+    "PHYSICAL_CHARGED_LEPTON_MASS_TRIPLE_RETAINED",
+    "PHYSICAL_CHARGED_LEPTON_SPECIES_LABELS_RETAINED",
+    "CHARGED_LEPTON_MASS_SPECTRUM_RETAINED",
+}
+
+MAP_CONSEQUENCE = {"LEPTON_THRESHOLD_MOMENT_MAP_RETAINED"}
+
+R_LEP_CONSEQUENCE = {
+    "R_LEP_THRESHOLDS_RETAINED",
+    "T_LEP_THRESHOLD_MOMENT_RETAINED",
+}
+
 ALPHA0_INPUTS = {
     "ALPHA0_TRANSPORT_TEXT_LOCK",
     "ALPHA_MZ_RETAINED",
@@ -57,6 +68,15 @@ ALPHA0_INPUTS = {
     "NO_COMPARATOR_PROOF_INPUT",
     "NO_NEW_PRIMITIVE_OR_AXIOM",
     "OWNER_RATIFICATION",
+    "AUDIT_ACCEPTANCE",
+}
+
+STATIC_SOURCE_INPUTS = {
+    "RETAINED_ELECTRON_MASS_PHYSICAL_UNIT",
+    "RETAINED_ALPHA0_LOW_ENERGY_COULOMB",
+    "RETAINED_STATIC_SOURCE_NR_COULOMB_LIMIT",
+    "ATOMIC_OPERATOR_HARNESS_VERIFIED",
+    "NO_RYDBERG_COMPARATOR_PROOF_INPUT",
     "AUDIT_ACCEPTANCE",
 }
 
@@ -113,14 +133,17 @@ def closes_alpha0(inputs: set[str]) -> bool:
     return ALPHA0_INPUTS <= inputs
 
 
+def closes_static_source(inputs: set[str]) -> bool:
+    return STATIC_SOURCE_INPUTS <= inputs
+
+
 def lepton_weights() -> list[Fraction]:
-    q_lep = Fraction(-1, 1)
-    return [q_lep * q_lep, q_lep * q_lep, q_lep * q_lep]
+    q = Fraction(-1, 1)
+    return [q * q, q * q, q * q]
 
 
-def threshold_moment(logs: list[float]) -> float:
-    weights = lepton_weights()
-    return sum(float(weight) * log for weight, log in zip(weights, logs))
+def t_lep(m_z: float, masses: list[float]) -> float:
+    return sum(math.log(m_z / mass) for mass in masses)
 
 
 def main() -> None:
@@ -130,17 +153,15 @@ def main() -> None:
     source_paths = [
         NOTE,
         GOAL,
+        R_LEP_NO_GO,
+        MASS_SPECTRUM_PACKET,
+        THRESHOLD_MAP_PACKET,
         ALPHA_TARGET,
         ALPHA_PACKET,
         ALPHA0_NO_GO,
         QED_LOOP_NO_GO,
-        MASS_SPECTRUM_PACKET,
-        THRESHOLD_MAP_PACKET,
-        R_LEP_PACKET,
         PHYSICAL_ELECTRON_PACKET,
         PHYSICAL_ELECTRON_NO_GO,
-        BRANCH_MASS_MAP,
-        ABSOLUTE_SCALE,
         LANE2_FIREWALL,
         THRESHOLD_MOMENT,
         REGISTRY,
@@ -157,11 +178,16 @@ def main() -> None:
 
     section("Required note content")
     required_phrases = [
-        "R-Lep Thresholds Current-Surface No-Go",
-        "current-surface no-go / import-retirement target",
-        "R_LEP_THRESHOLDS_RETAINED",
-        "current retained, primitive, and open-PR surfaces do not supply",
-        "The R-Lep threshold target remains needed",
+        "R-Lep Thresholds Ratification Decision Packet",
+        "decision packet / import-retirement handoff",
+        "does not ratify charged-lepton thresholds",
+        "the charged-lepton threshold handoff consumed by the zero-import alpha0",
+        "RL.1",
+        "RL.2",
+        "RL.3",
+        "RL.4",
+        "RL.5",
+        "RL.6",
         "R_LEP_THRESHOLDS_TEXT_LOCK",
         "ALPHA_MZ_SCALE_CONTEXT_RETAINED",
         "PHYSICAL_CHARGED_LEPTON_MASS_TRIPLE_RETAINED",
@@ -173,27 +199,31 @@ def main() -> None:
         "NO_NEW_PRIMITIVE_OR_AXIOM",
         "OWNER_RATIFICATION",
         "AUDIT_ACCEPTANCE",
+        "No proper subset of those eleven contract inputs",
+        "R_LEP_THRESHOLDS_RETAINED",
         "T_LEP_THRESHOLD_MOMENT_RETAINED",
-        "T_lep = log(M_Z / m_e) + log(M_Z / m_mu) + log(M_Z / m_tau)",
+        "QED_LOOP_KERNEL_RETAINED",
+        "R_Q_HEAVY_THRESHOLDS_RETAINED",
+        "R_HAD_NP_RETAINED",
+        "SCHEME_DECOUPLING_MATCHING_RETAINED",
         "sum_l N_c(l) Q_l^2 = 3",
         "b_lep = (4/3) * 3 = 4",
-        "ZERO_IMPORT_HYDROGEN_CHARGED_LEPTON_MASS_SPECTRUM_RATIFICATION_DECISION_PACKET_2026-07-05.md",
-        "mass-spectrum target remains needed",
-        "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLD_MOMENT_MAP_RATIFICATION_DECISION_PACKET_2026-07-05.md",
-        "threshold-moment map target remains needed",
-        "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md",
-        "positive import-retirement handoff for this target",
-        "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_RATIFICATION_DECISION_PACKET_2026-07-04.md",
-        "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md",
-        "primitive registry was checked",
-        "Open PRs were refreshed on 2026-07-05 UTC after `#5015` opened and after",
+        "T_lep(M_Z; m_e,m_mu,m_tau)",
+        "log(M_Z^3 / (m_e m_mu m_tau))",
+        "Open PRs were refreshed on 2026-07-05 UTC",
         "clean/green status is not a prerequisite",
-        "`#5015` wave-collapse-block01 measurement-collapse gate | open",
-        "`#5014` record-formation front/domain-wall chirality | open",
+        "`#5033` reflection-positivity runner-scope cleanup | open",
+        "`#5030` finite multisite Pauli carrier provenance | open",
+        "`#5021` primitive-retirement review | open draft",
+        "`#5018` domain-wall edge content vs SM chiral map | open",
+        "`#5016` zero-import hydrogen retained lane bundle | open",
+        "`#5015` wave-collapse-block01 measurement-collapse gate | open draft",
         "`#5007` Koide native zero-section route guard repair | open",
         "`#4991` owner-governed Tier-A retirement | open",
+        "The primitive registry was checked",
         "No-Go Discipline Gate",
-        "current-surface R-Lep non-supply boundary passes",
+        "decision-ready ratification",
+        "narrowed R-Lep ratification decision packet passes",
         "Explicit Non-Claims",
     ]
     for phrase in required_phrases:
@@ -202,117 +232,108 @@ def main() -> None:
     for marker in ["N1 -", "N2 -", "N3 -", "N4 -", "N5 -", "N6 -", "N7 -", "N8 -"]:
         audit.check(f"no-go discipline marker present: {marker}", marker in note)
 
-    section("R-Lep predicate checks")
+    section("Decision predicate checks")
     full_inputs = set(R_LEP_INPUTS)
-    audit.check("full R-Lep contract accepts threshold handoff", closes_r_lep(full_inputs))
+    audit.check("full R-Lep contract accepts handoff", closes_r_lep(full_inputs))
     for missing in sorted(R_LEP_INPUTS):
         reduced = set(R_LEP_INPUTS)
         reduced.remove(missing)
         audit.check(f"R-Lep handoff fails without {missing}", not closes_r_lep(reduced))
     accepted_subsets = [subset for subset in all_subsets(R_LEP_INPUTS) if closes_r_lep(subset)]
-    audit.check("only full R-Lep subset closes threshold handoff", accepted_subsets == [full_inputs])
+    audit.check("only full R-Lep subset closes handoff", accepted_subsets == [full_inputs])
+
+    audit.check("mass-spectrum consequence alone does not close R-Lep", not closes_r_lep(SPECTRUM_CONSEQUENCE))
+    audit.check("threshold-map consequence alone does not close R-Lep", not closes_r_lep(MAP_CONSEQUENCE))
     audit.check(
-        "R-Lep alone does not close alpha0",
-        not closes_alpha0({"R_LEP_THRESHOLDS_RETAINED"}),
+        "mass-spectrum plus map still needs high-scale and governance gates",
+        not closes_r_lep(SPECTRUM_CONSEQUENCE | MAP_CONSEQUENCE),
     )
+    audit.check("R-Lep consequence alone does not close alpha0", not closes_alpha0(R_LEP_CONSEQUENCE))
+    audit.check("full alpha0 predicate closes with all inputs", closes_alpha0(set(ALPHA0_INPUTS)))
     audit.check(
-        "full alpha0 input set closes alpha0 predicate",
-        closes_alpha0(set(ALPHA0_INPUTS)),
+        "alpha0 consequence alone does not close static-source hydrogen",
+        not closes_static_source({"RETAINED_ALPHA0_LOW_ENERGY_COULOMB"}),
     )
-    for missing in sorted(ALPHA0_INPUTS):
-        reduced = set(ALPHA0_INPUTS)
-        reduced.remove(missing)
-        audit.check(f"alpha0 still fails without {missing}", not closes_alpha0(reduced))
 
     section("Finite charged-lepton threshold arithmetic")
     weights = lepton_weights()
     total_weight = sum(weights, Fraction(0, 1))
     b_lep = Fraction(4, 3) * total_weight
-    audit.check("three charged leptons each have weight 1", weights == [Fraction(1, 1)] * 3)
+    audit.check("three charged-lepton weights are all 1", weights == [Fraction(1, 1)] * 3)
     audit.check("charged-lepton weight sum is 3", total_weight == Fraction(3, 1))
     audit.check("charged-lepton b coefficient is 4", b_lep == Fraction(4, 1))
 
-    logs_a = [4.0, 5.0, 6.0]
-    logs_b = [4.0, 5.0, 7.0]
-    moment_a = threshold_moment(logs_a)
-    moment_b = threshold_moment(logs_b)
-    audit.check("lepton moment is sum of three threshold logs", math.isclose(moment_a, 15.0))
-    audit.check("moving one lepton threshold changes the moment", moment_b - moment_a == 1.0)
-    logs_c = [3.0, 5.0, 7.0]
-    logs_d = [4.0, 5.0, 6.0]
-    audit.check(
-        "equal product/equal log-sum gives same one-loop lepton moment",
-        math.isclose(threshold_moment(logs_c), threshold_moment(logs_d)),
-    )
+    m_z = 100.0
+    masses_a = [1.0, 2.0, 5.0]
+    masses_b = [1.0, 2.0, 10.0]
+    moment_a = t_lep(m_z, masses_a)
+    moment_b = t_lep(m_z, masses_b)
+    audit.check("threshold moment equals log product form", abs(moment_a - math.log(m_z**3 / math.prod(masses_a))) < 1e-12)
+    audit.check("moving one mass changes threshold moment", abs((moment_b - moment_a) + math.log(2.0)) < 1e-12)
+    audit.check("permuting equal-weight lepton masses leaves one-loop moment", abs(t_lep(m_z, masses_a) - t_lep(m_z, list(reversed(masses_a)))) < 1e-12)
+    scale = 11.0
+    audit.check("common unit rescale leaves threshold moment", abs(t_lep(scale * m_z, [scale * m for m in masses_a]) - moment_a) < 1e-12)
     common_log = 5.0
-    common_moment = threshold_moment([common_log] * 3)
-    inverse_alpha_shift = (2.0 / (3.0 * math.pi)) * common_moment
+    common_moment = 3.0 * common_log
+    via_moment = (2.0 / (3.0 * math.pi)) * common_moment
     via_b = float(b_lep) * common_log / (2.0 * math.pi)
-    audit.check(
-        "lepton moment formula matches b_lep common-threshold running",
-        math.isclose(inverse_alpha_shift, via_b, rel_tol=1e-12, abs_tol=1e-12),
-    )
+    audit.check("lepton moment formula matches b_lep common-threshold running", abs(via_moment - via_b) < 1e-12)
 
     section("Authority and primitive boundary checks")
     goal = read(GOAL)
+    r_lep_no_go = read(R_LEP_NO_GO)
+    mass_spectrum = read(MASS_SPECTRUM_PACKET)
+    threshold_map = read(THRESHOLD_MAP_PACKET)
     alpha_target = read(ALPHA_TARGET)
     alpha_packet = read(ALPHA_PACKET)
     alpha0_no_go = read(ALPHA0_NO_GO)
     qed_loop_no_go = read(QED_LOOP_NO_GO)
-    mass_spectrum_packet = read(MASS_SPECTRUM_PACKET)
-    threshold_map_packet = read(THRESHOLD_MAP_PACKET)
-    r_lep_packet = read(R_LEP_PACKET)
-    physical_electron_packet = read(PHYSICAL_ELECTRON_PACKET)
+    physical_electron = read(PHYSICAL_ELECTRON_PACKET)
     physical_electron_no_go = read(PHYSICAL_ELECTRON_NO_GO)
-    branch_mass_map = read(BRANCH_MASS_MAP)
-    absolute_scale = read(ABSOLUTE_SCALE)
     lane2_firewall = read(LANE2_FIREWALL)
     threshold_runner = read(THRESHOLD_MOMENT)
     registry = json.loads(read(REGISTRY))
     registry_text = read(REGISTRY)
     minimal = read(MINIMAL)
-    scale = flat(read(SCALE)).lower()
+    scale_note = flat(read(SCALE)).lower()
     kinetic = read(KINETIC)
     realized = flat(read(REALIZED)).lower()
+    nodes = registry["nodes"]
 
     for container_name, container in [
         ("goal packet", goal),
+        ("R-Lep current-surface no-go", r_lep_no_go),
         ("alpha target", alpha_target),
         ("alpha0 packet", alpha_packet),
-        ("alpha0 no-go", alpha0_no_go),
+        ("alpha0 current-surface no-go", alpha0_no_go),
     ]:
-        audit.check(
-            f"{container_name} references R-Lep no-go",
-            NOTE.name in container and "R-Lep threshold target remains needed" in container,
-        )
+        audit.check(f"{container_name} references R-Lep decision packet", NOTE.name in container)
 
-    audit.check("Lane 2 firewall names R-Lep as Lane 6 blocked", "R-Lep" in lane2_firewall and "Lane 6" in lane2_firewall)
-    audit.check("threshold runner names charged-lepton thresholds", "charged-lepton threshold masses" in threshold_runner)
-    audit.check("QED loop no-go keeps loop separate", "QED_LOOP_KERNEL_RETAINED" in qed_loop_no_go)
-    audit.check("R-Lep no-go references mass-spectrum packet", MASS_SPECTRUM_PACKET.name in note and "mass-spectrum target remains needed" in note)
+    audit.check("R-Lep no-go names same eleven-input contract", all(token in r_lep_no_go for token in R_LEP_INPUTS))
     audit.check(
         "mass-spectrum packet supplies conditional R-Lep mass inputs",
-        "PHYSICAL_CHARGED_LEPTON_MASS_TRIPLE_RETAINED" in mass_spectrum_packet
-        and "PHYSICAL_CHARGED_LEPTON_SPECIES_LABELS_RETAINED" in mass_spectrum_packet,
+        "PHYSICAL_CHARGED_LEPTON_MASS_TRIPLE_RETAINED" in mass_spectrum
+        and "PHYSICAL_CHARGED_LEPTON_SPECIES_LABELS_RETAINED" in mass_spectrum,
     )
-    audit.check("R-Lep no-go references threshold-map packet", THRESHOLD_MAP_PACKET.name in note and "threshold-moment map target remains needed" in note)
     audit.check(
         "threshold-map packet supplies conditional R-Lep map input",
-        "LEPTON_THRESHOLD_MOMENT_MAP_RETAINED" in threshold_map_packet
-        and "does not ratify R-Lep thresholds" in threshold_map_packet,
+        "LEPTON_THRESHOLD_MOMENT_MAP_RETAINED" in threshold_map
+        and "does not ratify R-Lep thresholds" in threshold_map,
     )
-    audit.check("R-Lep no-go references R-Lep decision packet", R_LEP_PACKET.name in note and "positive import-retirement handoff" in note)
-    audit.check(
-        "R-Lep decision packet is conditional",
-        "R_LEP_THRESHOLDS_RETAINED" in r_lep_packet
-        and "No derivation or ratification of `R_LEP_THRESHOLDS_RETAINED`." in r_lep_packet,
-    )
-    audit.check("physical electron packet is electron-specific", "PHYSICAL_ELECTRON_READOUT_RETAINED" in physical_electron_packet)
-    audit.check("physical electron no-go keeps electron mass open", "RETAINED_ELECTRON_MASS_PHYSICAL_UNIT" in physical_electron_no_go)
-    audit.check("branch mass map is not species/scale closure", "PHASE_SCALE_SPECIES_SCOPE_LOCK" in branch_mass_map)
-    audit.check("absolute scale packet is not branch/species closure", "ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED" in absolute_scale)
+    audit.check("alpha0 packet consumes R-Lep", "R_LEP_THRESHOLDS_RETAINED" in alpha_packet)
+    audit.check("alpha target names other alpha blockers", all(token in alpha_target for token in [
+        "QED_LOOP_KERNEL_RETAINED",
+        "R_Q_HEAVY_THRESHOLDS_RETAINED",
+        "R_HAD_NP_RETAINED",
+        "SCHEME_DECOUPLING_MATCHING_RETAINED",
+    ]))
+    audit.check("alpha0 no-go keeps low-energy alpha open", "RETAINED_ALPHA0_LOW_ENERGY_COULOMB" in alpha0_no_go)
+    audit.check("QED loop no-go keeps kernel separate", "QED_LOOP_KERNEL_RETAINED" in qed_loop_no_go)
+    audit.check("physical electron packet is selected-electron specific", "RETAINED_ELECTRON_MASS_PHYSICAL_UNIT" in physical_electron)
+    audit.check("physical electron no-go is not full mass spectrum", "PHYSICAL_ELECTRON_READOUT_RETAINED" in physical_electron_no_go)
+    audit.check("Lane 2 firewall names R-Lep as split component", "R-Lep" in lane2_firewall and "R-Q-Heavy" in lane2_firewall and "R-Had-NP" in lane2_firewall)
+    audit.check("threshold runner remains target/no-go arithmetic", "threshold" in threshold_runner.lower() and "T_EM" in threshold_runner)
 
-    nodes = registry["nodes"]
     for node_name in [
         "minimal_axioms",
         "scale_reference_primitive",
@@ -322,32 +343,35 @@ def main() -> None:
         audit.check(f"registry node present: {node_name}", node_name in nodes)
     for absent in [
         "r_lep_thresholds_primitive",
+        "lepton_threshold_moment_primitive",
         "charged_lepton_mass_spectrum_primitive",
+        "charged_lepton_threshold_primitive",
         "alpha0_primitive",
-        "qed_loop_kernel_primitive",
+        "hydrogen_primitive",
     ]:
         audit.check(f"no registered R-Lep shortcut: {absent}", absent not in registry_text)
-    audit.check("minimal axioms exclude source/action bridges", "source/action" in minimal)
-    audit.check("scale primitive excludes dimensionless masses", "zero dimensionless content" in scale and "mass ratio" in scale)
+    audit.check("minimal axioms require downstream physical structure", "Further physical\nstructure requires derivation" in minimal)
+    audit.check("scale primitive excludes dimensionless masses", "zero dimensionless content" in scale_note and "mass ratio" in scale_note)
     audit.check("kinetic primitive excludes couplings/masses", "mass ratio" in kinetic and "coupling" in kinetic)
-    audit.check("realized primitive excludes values", "or value is supplied" in realized)
+    audit.check("realized primitive excludes state-selected values", "state-selection rule" in realized and "or value is supplied" in realized)
 
     section("Open PR and non-claim boundaries")
     latest_pr_markers = [
-        "`#5015` wave-collapse-block01 measurement-collapse gate | open",
+        "`#5033` reflection-positivity runner-scope cleanup | open",
+        "`#5030` finite multisite Pauli carrier provenance | open",
+        "`#5021` primitive-retirement review | open draft",
+        "`#5018` domain-wall edge content vs SM chiral map | open",
+        "`#5017` domain-wall anomaly inflow spectral flow | open",
+        "`#5016` zero-import hydrogen retained lane bundle | open",
+        "`#5015` wave-collapse-block01 measurement-collapse gate | open draft",
         "`#5014` record-formation front/domain-wall chirality | open",
         "`#5012` chirality domain-wall free-field note | open",
-        "`#5011` eta twisted walk family runner | open",
-        "`#5010` YT P1 I_s re-audit packet bridge repair | open",
-        "`#5009` S3 spacetime tensor primitive runner | open",
-        "`#5008` quark mass-ratio CP probe repair | open",
         "`#5007` Koide native zero-section route guard repair | open",
-        "`#5006` static-source I1 hygiene companion | open",
         "`#4991` owner-governed Tier-A retirement | open",
     ]
     for marker in latest_pr_markers:
-        audit.check(f"opened PR marker present: {marker}", flat(marker) in note_flat)
-    audit.check("open PR check does not require clean status", "clean/green status is not a prerequisite" in note)
+        audit.check(f"open PR marker present: {marker}", flat(marker) in note_flat)
+    audit.check("open PR check does not require clean status", "clean/green status is not a prerequisite" in note_flat)
 
     explicit_non_claims = [
         "No derivation or ratification of `R_LEP_THRESHOLDS_RETAINED`.",
@@ -355,6 +379,7 @@ def main() -> None:
         "No derivation or ratification of a physical charged-lepton mass triple.",
         "No derivation or ratification of `m_e`, `m_mu`, or `m_tau`.",
         "No derivation or ratification of the physical charged-lepton species labels.",
+        "No derivation or ratification of `LEPTON_THRESHOLD_MOMENT_MAP_RETAINED`.",
         "No derivation or ratification of the QED loop kernel.",
         "No derivation or ratification of `ALPHA0_TRANSPORT_RETAINED`.",
         "No derivation or ratification of `ALPHA0_RETAINED`.",
@@ -368,10 +393,10 @@ def main() -> None:
         audit.check(f"explicit non-claim present: {phrase}", phrase in note)
 
     forbidden_overclaims = [
-        "This note ratifies charged-lepton thresholds",
+        "This packet ratifies charged-lepton thresholds",
         "R_LEP_THRESHOLDS_RETAINED is supplied",
         "T_LEP_THRESHOLD_MOMENT_RETAINED is supplied",
-        "alpha(0) is retained",
+        "ALPHA0_RETAINED is supplied",
         "retained hydrogen calculation is complete",
         "PDG masses are proof inputs",
     ]

@@ -170,6 +170,16 @@ feed only `KOIDE_READOUT_DETERMINANT_DOMAIN_SPECIFIED`, not the positive
 object, factorization, count, full K1, physical electron mass, alpha input, or
 hydrogen.
 
+The K1 positive readout object disambiguation target
+(`ZERO_IMPORT_HYDROGEN_KOIDE_K1_POSITIVE_READOUT_OBJECT_DISAMBIGUATION_TARGET_DISCRIMINATOR_2026-07-05.md`)
+packages the second missing object input as
+`K1_POSITIVE_KOIDE_READOUT_OBJECT_DISAMBIGUATION_RETAINED`. Its current-surface
+no-go and decision packet keep wrong-route pruning separate from retained
+positive object selection. If later accepted, it can feed only
+`POSITIVE_KOIDE_READOUT_OBJECT_DISAMBIGUATED_FROM_VECTOR_MODULUS`, not the
+readout domain, full object, factorization, count, full K1, physical electron
+mass, alpha input, or hydrogen.
+
 The Koide native zero-section `#5007` impact discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md`)
 updates this boundary for the latest open Koide route-guard repair. It records

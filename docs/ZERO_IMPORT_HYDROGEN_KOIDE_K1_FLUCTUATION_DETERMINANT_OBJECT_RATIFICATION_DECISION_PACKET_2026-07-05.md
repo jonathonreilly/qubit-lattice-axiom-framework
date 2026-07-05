@@ -96,6 +96,8 @@ STATIC_SOURCE_RYDBERG_RETAINED
 |---|---|---|
 | readout-domain target discriminator | packages `KOIDE_READOUT_DETERMINANT_DOMAIN_SPECIFIED` as a nested target | domain only; not object identification |
 | readout-domain current-surface no-go / decision packet | records non-supply and owner/audit contract for the domain input | no retained object consequence |
+| positive-object disambiguation target discriminator | packages `POSITIVE_KOIDE_READOUT_OBJECT_DISAMBIGUATED_FROM_VECTOR_MODULUS` as a nested target | disambiguation only; not object identification |
+| positive-object disambiguation current-surface no-go / decision packet | records non-supply and owner/audit contract for the disambiguation input | no retained object consequence |
 | object target discriminator | names the sixteen-input target | target only; this packet packages the decision object |
 | object current-surface no-go | records current non-supply | no retained consequence |
 | parent K1 determinant target | consumes `FLUCTUATION_DETERMINANT_OBJECT_IDENTIFIED` if later accepted | parent theorem remains open |

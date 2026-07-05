@@ -51,6 +51,9 @@ cell.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_READOUT_DETERMINANT_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md` | sixteen-input target for `KOIDE_READOUT_DETERMINANT_DOMAIN_SPECIFIED` | retained domain consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_READOUT_DETERMINANT_DOMAIN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the readout-domain predicate | object identification |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_READOUT_DETERMINANT_DOMAIN_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit domain decision contract | retained consequence; not accepted on current surface |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_POSITIVE_READOUT_OBJECT_DISAMBIGUATION_TARGET_DISCRIMINATOR_2026-07-05.md` | sixteen-input target for `POSITIVE_KOIDE_READOUT_OBJECT_DISAMBIGUATED_FROM_VECTOR_MODULUS` | retained disambiguation consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_POSITIVE_READOUT_OBJECT_DISAMBIGUATION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the disambiguation predicate | object identification |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_POSITIVE_READOUT_OBJECT_DISAMBIGUATION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit disambiguation decision contract | retained consequence; not accepted on current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_TARGET_DISCRIMINATOR_2026-07-05.md` | sixteen-input target for object identification | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit decision contract | retained consequence; not accepted on current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` | parent determinant theorem target | object input closure |

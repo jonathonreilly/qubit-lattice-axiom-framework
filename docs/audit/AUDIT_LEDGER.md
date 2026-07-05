@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 190 |
 | **retained_no_go** | 192 |
-| **retained_bounded** | 863 |
+| **retained_bounded** | 864 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 24 |
-| unaudited | 1935 |
+| unaudited | 1934 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1239 |
+| `audited_clean` | 1240 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2273 |
+| `unaudited` | 2272 |
 
 | claim_type | count |
 |---|---:|
@@ -1157,6 +1157,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16239,6 +16240,18 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The mathematical chain closes within the stated abstract tensor-product scope, and the runner source genuinely performs exact symbolic matrix checks rather than printing constants. The load-bearing step is class A finite Pauli/Jordan-Wigner algebra over one retained upstream input. Under the stated tie-breaker, zero external comparator checks plus reduction to a single retained parent claim and standard mathematics requires audited_decoration rather than audited_clean. | The mathematical chain closes: the cited Cl(3) authority is retained and supplies the two-dimensional Pauli carrier, and the rest is exact finite-dimensional Pauli/Jordan-Wigner algebra. The runner source genuinely computes symbolic matrix identities and reports PASS=44 FAIL=0, all class A. Under the explicit tie-breaker, zero external comparator checks plus one retained parent claim and standard algebra classifies this as audited_decoration rather than audited_clean. | The mathematical chain closes within the stated abstract scope: the retained upstream note supplies the two-dimensional Pauli carrier, and the rest is finite Pauli-tensor/Jordan-Wigner algebra. The load-bearing step is class A, the runner source genuinely performs exact symbolic checks, and the packet reports PASS=44 FAIL=0. Under the explicit clean-vs-decoration tie-breaker, zero D checks plus one retained parent claim plus standard mathematics classifies this as audited_decoration, not audited_clean. | The mathematical chain closes within the note's abstract scope: the retained upstream authority supplies the two-dimensional Pauli carrier, and the Jordan-Wigner CAR statements are finite tensor-product algebra. The runner source performs exact symbolic matrix checks rather than printing constants, and all checks are class A with no external comparator. Under the stated tie-breaker, a zero-D, pure class-A chain reducing to one retained parent plus standard finite-dimensional mathematics is audited_decoration rather than audited_clean. | The mathematical chain closes within the stated abstract tensor-product scope, and the runner source performs real exact symbolic checks rather than printing constants. The load-bearing step is class A finite Pauli/Jordan-Wigner algebra over one retained upstream Cl(3) carrier. Under the binding tie-breaker, zero D checks plus a chain reducing to one retained parent claim and standard mathematics is classified as audited_decoration, not audited_clean.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** judicial_panel_majority
+
+### `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-dimensional algebraic theorem: the Z2^d-indexed per-hypercube component space C^{2^d} is graded-isomorphic to Lambda*(C^d), D_KD=d-delta has the stated nilpotency, parity-reversal, Hodge-Laplacian, and Hermiticity identities, and at even d the 2^d count factors into spinor/taste with the d=4 spinor factor matching the retained Cl(3) chirality-pair count. This does not audit any physical staggered-Dirac dynamical equivalence, continuum/species reduction, or statistics-forcing claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-postw4-row4-seat2`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The canonical bijection between b in {0,1}^d of Hamming weight p and subsets S={i:b_i=1} of size p yields the graded linear-algebra bijection V_Hn := C^{2^d} = span(epsilon^b) isomorphic to Lambda*(C^d), with D_KD := d - delta then checked by standard exterior-algebra identities and the d=4 spinor-count factor imported from the retained Cl(3) split/substep-3 inputs.  _(class `A`)_
+- **chain closes:** True — The three direct dependencies are retained-grade in the operational metadata, and the proof uses them only for the per-site nilpotency/dim-2 boundary, the Cl(3) chirality-pair dimension, and the substep-3 2^d/Hamming-weight counts. The remaining steps are finite-dimensional exterior algebra and exact integer/matrix identities, while the note explicitly excludes the physical dynamical staggered-Dirac/Kawamoto-Smit/species/statistics readings.
+- **rationale:** The runner completed successfully with TOTAL: PASS=64, FAIL=0, and its source actually constructs the finite exterior-algebra matrices, Hamming-weight counts, spinor-count arithmetic, Hermiticity check, Wilson parity-breaking witness, and JW-dimension boundary rather than merely printing constants. The source note is narrow enough: it claims only an abstract finite-window Kahler-Dirac form-complex equivalence and operator algebra on Lambda*(C^d), not a full physical staggered-Dirac realization, continuum/species theorem, or statistics result. Because the dependencies are retained-grade and the load-bearing step is class-A algebra over those inputs plus standard finite-dimensional mathematics, the chain closes within the stated bounded scope. Residual risk is downstream misuse: citing this row as a physical dynamical equivalence would exceed the audited claim.
 
 ### `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`
 

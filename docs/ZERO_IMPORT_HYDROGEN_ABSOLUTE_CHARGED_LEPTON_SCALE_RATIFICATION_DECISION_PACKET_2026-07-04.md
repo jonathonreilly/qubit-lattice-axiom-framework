@@ -208,6 +208,15 @@ accepted, it supplies only `EXACT_SOURCE_SINGLETON_RETAINED` and exact
 source-side `S_l = 1/256`; weak-front base, A3 placement, no-double-count,
 K4 scale assembly, electron mass, `alpha(0)`, and hydrogen remain downstream.
 
+The exact source singleton assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+compresses the source-side child path under K4.2: F/L/P/R clause handoffs
+feed the source-probe interface; source-probe acceptance plus full-cell,
+uniform-ray, and `S_l` readout checks feed the exact source singleton handoff;
+and `EXACT_SOURCE_SINGLETON_RETAINED` remains one direct K4 input only. It
+does not ratify F/L/P/R, the source-probe interface, exact source-side
+`S_l = 1/256`, K4, physical electron mass, `alpha(0)`, or hydrogen.
+
 The A3 precision-placement current-surface no-go
 `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
 records that current retained, primitive, and open-PR surfaces do not supply

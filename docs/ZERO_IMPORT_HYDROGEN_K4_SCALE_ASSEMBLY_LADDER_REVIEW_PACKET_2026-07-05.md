@@ -20,6 +20,13 @@ SU2_WEAK_COUPLING_CONTEXT_RETAINED
   + CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED
   -> WEAK_FRONT_BASE_RETAINED
 
+F_CLAUSE_RETAINED
+  + L_CLAUSE_RETAINED
+  + P_CLAUSE_RETAINED
+  + R_CLAUSE_RETAINED
+  + source-probe owner/audit contract
+  -> SOURCE_PROBE_INTERFACE_CONTRACT_ACCEPTED
+
 SOURCE_PROBE_INTERFACE_CONTRACT_ACCEPTED
   + FULL_CELL_SOURCE_CARRIER_CHECK
   + PROJECTIVE_UNIFORM_RAY_CHECK
@@ -77,6 +84,7 @@ does not perform that acceptance.
 | WF.1 | `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_SU2_COUPLING_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages `SU2_WEAK_COUPLING_CONTEXT_RETAINED` | `NO_PHYSICAL_G2V_OR_MW_INPUT`; no physical `g_2(v)`, no observed `m_W`, no D17 normalization, no K4 |
 | WF.2 | `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages `CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED` | no SU(2) context, no weak-front base, no source singleton, no A3, no K4 |
 | K4.1 | `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the uncorrected front `F_0 = g_2 * (1/sqrt(2))` | no exact `S_l = 1/256`, no A3 placement, no K4 |
+| K4.2 child | `ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md` | compresses F/L/P/R, source-probe acceptance, and exact-source handoff under `EXACT_SOURCE_SINGLETON_RETAINED` | support only; no retained F/L/P/R, source-probe interface, exact singleton, or K4 |
 | K4.2 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages exact source-side `S_l = 1/256` | no weak-front base, no A3 placement, no K4 |
 | K4.3 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_RATIFICATION_DECISION_PACKET_2026-07-04.md` | packages the one-placement A3 handoff | no `C_A3` theorem by itself, no K4 |
 | K4.4 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages `NO_SOURCE_A3_DOUBLE_COUNT` and `NO_SOURCE_DOUBLE_COUNT` | no P1/P2/P3/P4 theorem, no A3 placement, no K4 |
@@ -148,6 +156,16 @@ relevant queue does not supply a new spendable K4 input:
 Clean status or successful audit on a PR is not a prerequisite for recording
 the alignment here. The review question is whether the opened work supplies a
 retained K4 input. None of the refreshed PRs does.
+
+The source-side exact singleton assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+keeps the K4.2 child path in one review surface: F/L/P/R clause handoffs feed
+the source-probe interface; the accepted source-probe interface plus finite
+carrier, uniform-ray, and `S_l` readout checks feed
+`EXACT_SOURCE_SINGLETON_RETAINED`; and K4 still treats that result as only one
+direct input. It is review compression only, not retained F/L/P/R, retained
+source-probe interface, retained exact source singleton, K4, physical electron
+mass, `alpha(0)`, or hydrogen.
 
 ## Primitive Registry Check
 

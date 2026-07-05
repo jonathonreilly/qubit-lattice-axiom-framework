@@ -266,6 +266,18 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   state-law bridge only; it does not supply `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`,
   the charged-lepton carrier theorem, carrier context, fixed-point readout,
   R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
+  The physical matter-state route-fork review packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_ROUTE_FORK_REVIEW_PACKET_2026-07-05.md`
+  bundles the parent bridge route alternatives
+  `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED` and
+  `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED` for review
+  compression only. It also maps the direct elementary child chain
+  `FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED` to
+  `ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED` to
+  `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`, while preserving
+  that the parent bridge needs either route theorem, not both. This packet
+  does not ratify either route theorem, the parent bridge, HW1, carrier
+  context, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
   The K2 matter-state chirality/domain-wall impact discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_MATTER_STATE_CHIRALITY_DOMAIN_WALL_IMPACT_DISCRIMINATOR_2026-07-05.md`
   records open `#5012`/`#5014`/`#5017`/`#5018` as support context for the
@@ -1880,6 +1892,7 @@ Koide electron readout, `m_e`, `alpha(0)`, or hydrogen.
                         | R-eta physical matter-state law bridge target | Open subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`; it can feed the hw1 locus target only, not the charged-lepton carrier theorem, carrier context, fixed-point readout, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta physical matter-state law bridge ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the forked owner/audit contract for `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`; it does not derive either route theorem itself. |
                         | R-eta physical matter-state law bridge current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`. |
+                        | R-eta physical matter-state route-fork review packet | Open grouped packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_ROUTE_FORK_REVIEW_PACKET_2026-07-05.md` bundles the KS and elementary parent route alternatives, plus the direct elementary child chain, for review compression only; it does not ratify either route theorem, the parent bridge, electron mass, alpha, or hydrogen. |
                         | R-eta elementary physical state-rotation law target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` packages `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`; it can feed the physical matter-state bridge as the direct elementary route theorem only, not the sibling KS route, HW1, carrier context, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta elementary physical state-rotation law ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the direct route owner/audit contract for `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`; it does not derive the elementary state-attachment selector itself. |
                         | R-eta elementary physical state-rotation law current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`. |

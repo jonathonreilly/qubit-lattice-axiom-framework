@@ -345,6 +345,19 @@ retained, primitive, merged-PR, and open-PR surfaces do not supply it; it is
 carrier context only, not h-class, h-unit, R-eta, electron readout, physical
 electron mass, alpha input, or hydrogen.
 
+The R-eta hw1 physical generation-locus target discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md`),
+ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md`),
+and current-surface no-go
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+package `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` as an immediate subinput
+beneath the charged-lepton carrier realization theorem. Current retained,
+primitive, merged-PR, and open-PR surfaces do not supply it; it is locus
+support only, not the charged-lepton carrier theorem, carrier context, h-class,
+h-unit, R-eta, electron readout, physical electron mass, alpha input, or
+hydrogen.
+
 The two-ninths/radian-readout target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`)
 packages the K2 sub-handoff `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
@@ -374,8 +387,8 @@ firewall on current main:
 | PR | effect on K1-K3 |
 |---|---|
 | `#5022` | Merged delta-eta supplied-premise audit repair. It improves K2 conditionality bookkeeping but supplies no retained R-eta derivation, electron readout, physical electron mass, or hydrogen. |
-| `#5024` | Open Koide W4 gate-note premise minimization + substep1-bridge rebase, audit success at refresh. It improves `AC_phi_lambda` gate-readiness; it supplies no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
-| `#5023` | Open Koide W4 audit-readiness repairs, audit success at refresh. It repairs record/species/custody/hw-complement dependency surfaces; it supplies no `PHYSICAL_CARRIER_CONTEXT_RETAINED`, K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
+| `#5024` | Open Koide W4 gate-note premise minimization + substep1-bridge rebase, audit in progress after latest refresh. It improves `AC_phi_lambda` gate-readiness; it supplies no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
+| `#5023` | Merged Koide W4 audit-readiness repairs, audit success at merge. It repairs record/species/custody/hw-complement dependency surfaces; it supplies no `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, no `PHYSICAL_CARRIER_CONTEXT_RETAINED`, K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5020` | Koide R-eta value-face registered-angle/exactness relocation. It moves K2 value-face standing toward realized-state registration and names the exactness residual; it supplies no electron readout, physical electron mass, or hydrogen. |
 | `#5019` | Koide `AC_phi_lambda` axiom-surface rebase. It is premise-hygiene and audit-readiness context for the decomposition chain; it supplies no K1/K2/K3 closure. |
 | `#5011` | Latest open PR at refresh; eta twisted walk family runner repair, `CLEAN`. It does not supply Koide electron readout, charged-lepton scale, `alpha(0)`, or hydrogen. |

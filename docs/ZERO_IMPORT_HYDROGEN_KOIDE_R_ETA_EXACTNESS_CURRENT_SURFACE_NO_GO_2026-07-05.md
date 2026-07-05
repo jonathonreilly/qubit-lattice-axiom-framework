@@ -80,6 +80,11 @@ packages the next sub-lane as
 radian-readout license, fold/branch domain lock, comparator exclusion, owner
 ratification, and audit acceptance. It is a subtarget, not a retained result.
 
+The two-ninths/radian-readout ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages that subtarget as a nine-input owner/audit contract. It is still a
+decision object, not a current retained K2 consequence.
+
 The two-ninths/radian-readout current-surface no-go
 `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
 records that the current retained, primitive, merged-PR, and open-PR surfaces
@@ -96,6 +101,7 @@ do not supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing boundary for #5020 | `K2_R_ETA_EXACTNESS_RETAINED` |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | ten-input exactness target contract | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` | subtarget for exact `2/9`, radian readout, and fold/branch domain | current retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | nine-input owner/audit decision packet for the subtarget | current retained consequence or full K2 exactness |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED` | retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md` | K1/K2/K3/K4 separation and phase-sensitive arithmetic | K2 exactness closure or physical electron mass |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | comparator/open-gate warning for `delta = 2/9` | retained phase/exactness theorem |

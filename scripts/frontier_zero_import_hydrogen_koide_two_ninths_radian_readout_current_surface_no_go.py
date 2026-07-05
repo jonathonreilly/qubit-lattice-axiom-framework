@@ -15,6 +15,7 @@ KOIDE_FIREWALL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FI
 K2_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md"
 K2_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 TWO_NINTHS_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md"
+TWO_NINTHS_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 PR5020_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md"
 PR5022_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md"
 R_ETA_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md"
@@ -140,6 +141,7 @@ def main() -> None:
         K2_TARGET,
         K2_NO_GO,
         TWO_NINTHS_TARGET,
+        TWO_NINTHS_DECISION,
         PR5020_IMPACT,
         PR5022_IMPACT,
         R_ETA_TARGET,
@@ -181,6 +183,8 @@ def main() -> None:
         "OWNER_RATIFICATION",
         "AUDIT_ACCEPTANCE",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "nine-input owner/audit decision packet",
         "FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md",
         "KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md",
         "KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
@@ -231,6 +235,7 @@ def main() -> None:
     k2_target = read(K2_TARGET)
     k2_no_go = read(K2_NO_GO)
     two_ninths_target = read(TWO_NINTHS_TARGET)
+    two_ninths_decision = read(TWO_NINTHS_DECISION)
     pr5020_impact = read(PR5020_IMPACT)
     pr5019_impact = read(PR5019_IMPACT)
     flavor = read(FLAVOR_TWO_NINTHS)
@@ -252,11 +257,16 @@ def main() -> None:
         ("K2 exactness target", k2_target),
         ("K2 exactness no-go", k2_no_go),
         ("two-ninths/radian target", two_ninths_target),
+        ("two-ninths/radian decision packet", two_ninths_decision),
     ]:
         audit.check(
             f"{label} references two-ninths/radian current no-go",
             NOTE.name in container and "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in container,
         )
+    audit.check(
+        "current no-go includes decision packet as non-retained surface",
+        TWO_NINTHS_DECISION.name in note and "not accepted on the current surface" in note,
+    )
 
     audit.check("finite 2/9 source keeps readout open", "`2/9` is forced as a local" in flavor and "Physical readout is the one remaining gate" in flavor)
     audit.check("native radian theorem keeps bridge open", "does **not** close the radian-bridge postulate" in flat(native))

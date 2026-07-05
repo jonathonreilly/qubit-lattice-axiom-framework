@@ -165,6 +165,12 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   packages `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED` as the exact `2/9`
   theorem, radian-readout license, and fold/branch domain-lock sub-handoff;
   it is a partial K2 route, not electron mass or hydrogen closure.
+  The two-ninths/radian-readout ratification decision packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  packages that sub-handoff as a nine-input owner/audit contract. If accepted,
+  it supplies the exact theorem, radian-readout, and fold/branch domain inputs
+  for K2; it does not supply full K2 exactness, `m_e`, `alpha(0)`, or
+  hydrogen.
   The two-ninths/radian-readout current-surface no-go
   `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
   records that the current retained, primitive, merged-PR, and open-PR surfaces do not
@@ -1403,6 +1409,7 @@ here.
                         | K2 R-eta exactness target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` packages the successor handoff `K2_R_ETA_EXACTNESS_RETAINED`; it is not supplied by #5020 and does not derive `m_e`, `alpha(0)`, or hydrogen. |
                         | K2 R-eta exactness current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K2_R_ETA_EXACTNESS_RETAINED`. |
                         | Koide two-ninths/radian-readout target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`; if accepted it supplies exact `2/9`, radian-readout, and fold/branch domain inputs for K2, not full K2 exactness, `m_e`, `alpha(0)`, or hydrogen. |
+                        | Koide two-ninths/radian-readout ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the nine-input owner/audit contract for `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`; it is not full K2 exactness, `m_e`, `alpha(0)`, or hydrogen. |
                         | Koide two-ninths/radian-readout current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`. |
 		| `#4919`, `#4921` admissibility bootstrap continuation | Formation/orbit/chirality context; no direct closure of `m_e`, `S_l`, Koide readout, or `alpha(0)`. |
 

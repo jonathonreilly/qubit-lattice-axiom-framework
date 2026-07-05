@@ -1348,6 +1348,27 @@ is the next layer down: it bundles the three unresolved sibling content gates
 `HARTREE_SCALE_MAPPING_RATIFIED` as a shared review target. It does not ratify
 any of those gates, does not supply the parent static-source NR Coulomb limit,
 and does not promote static-source Rydberg or hydrogen.
+The static-source readout ratification decision packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+now go one layer deeper on the first child gate. They package native
+field-integration, supplied quadratic source-action, linear-response
+energy-readout, unit-source coefficient, accepted-premise firewall, owner, and
+audit as the readout handoff for
+`STATIC_SOURCE_LINEAR_RESPONSE_READOUT_RATIFIED`; they do not ratify that
+handoff.
+The static-source one-body/Hartree ratification decision packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_ONE_BODY_HARTREE_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_ONE_BODY_HARTREE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+now go one layer deeper on the remaining two child gates. They package
+scalar-operator and static-kernel consumption, low-energy one-particle
+reduction, dimensionless spectrum, no textbook Schrodinger import, retained
+`m_e`, retained alpha0, unit-source matching, physical-unit formula, no
+Rydberg comparator proof input, owner, and audit as the handoff for
+`ONE_BODY_NR_PHYSICAL_UNIT_LIMIT_RATIFIED` and
+`HARTREE_SCALE_MAPPING_RATIFIED`; they do not ratify those handoffs.
 The static-source Rydberg assembly ladder review packet
 `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
 is review compression only. It groups the final six static-source inputs:

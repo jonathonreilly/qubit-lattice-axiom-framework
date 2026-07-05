@@ -159,6 +159,31 @@ is the next review layer beneath this parent: it groups
 `HARTREE_SCALE_MAPPING_RATIFIED` as sibling content gates. It does not accept
 any of those gates and does not change the parent owner/audit contract.
 
+The static-source readout ratification decision packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+go one layer deeper on the first of those child gates. They package the
+readout handoff through native field integration, source-normalized quadratic
+action, linear-response energy readout, unit electromagnetic source coefficient,
+accepted-premise firewall, owner, and audit. They do not supply
+`STATIC_SOURCE_LINEAR_RESPONSE_READOUT_RATIFIED` unless the readout contract is
+accepted.
+
+The static-source one-body/Hartree ratification decision packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_ONE_BODY_HARTREE_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_ONE_BODY_HARTREE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+go one layer deeper on the remaining two child gates. They package the
+one-body NR physical-unit and Hartree mapping handoff through scalar-operator
+consumption, static Coulomb-kernel consumption, low-energy one-particle
+reduction, dimensionless spectrum, no textbook Schrodinger import, retained
+`m_e`, retained alpha0, unit-source matching, physical-unit formula, no
+Rydberg comparator proof input, owner, and audit. They do not supply
+`ONE_BODY_NR_PHYSICAL_UNIT_LIMIT_RATIFIED` or
+`HARTREE_SCALE_MAPPING_RATIFIED` unless the fourteen-input contract is
+accepted.
+
 ## Finite Target Algebra
 
 The dimensionless one-body Coulomb problem has shape:

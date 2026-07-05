@@ -329,6 +329,14 @@ records that current retained, primitive, and open-PR surfaces do not supply
 `ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED`, and
 `KOIDE_BRANCH_MASS_MAP_RETAINED`.
 
+The physical electron mass assembly ladder review packet
+(`ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`)
+compresses those direct electron-mass rows into one review surface: native
+zero-section bridge, physical electron species bridge, K4 scale, branch
+mass-map, scale-reference chain, comparator exclusions, owner, and audit. It
+is review support only; it is not retained K4, physical electron mass,
+`alpha(0)`, static-source Rydberg closure, or hydrogen.
+
 The Tier-A owner-retirement `#4991` impact discriminator
 (`ZERO_IMPORT_HYDROGEN_TIER_A_OWNER_RETIREMENT_PR4991_IMPACT_DISCRIMINATOR_2026-07-04.md`)
 records the separate status effect. If #4991 is adopted as written, the old

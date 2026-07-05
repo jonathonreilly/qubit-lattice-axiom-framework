@@ -190,6 +190,15 @@ records that current retained, primitive, and open-PR surfaces do not supply
 positive owner/audit route while keeping the native bridge, physical species
 bridge, K4 scale, branch mass-map, owner, and audit inputs explicit.
 
+The physical electron mass assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+is the sibling review-compression surface for this parent handoff. It groups
+the native bridge, physical species bridge, K4 scale, branch mass-map,
+scale-reference chain, comparator exclusions, owner, and audit rows under the
+same eleven-input contract. It does not ratify the physical electron mass,
+does not supply `PHYSICAL_ELECTRON_READOUT_RETAINED`, and does not supply
+`RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`.
+
 The charged-lepton mass-spectrum decision packet
 `ZERO_IMPORT_HYDROGEN_CHARGED_LEPTON_MASS_SPECTRUM_RATIFICATION_DECISION_PACKET_2026-07-05.md`
 is the sibling full-spectrum handoff for the R-Lep lane. It packages

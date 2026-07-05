@@ -28,6 +28,7 @@ SCALE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCAL
 BRANCH_MASS_MAP_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 BRANCH_MASS_MAP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 ELECTRON_MASS_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+ELECTRON_MASS_ASSEMBLY = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md"
 MASS_SPECTRUM_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_CHARGED_LEPTON_MASS_SPECTRUM_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 PR5020_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md"
 PR5019_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md"
@@ -151,6 +152,7 @@ def main() -> None:
         BRANCH_MASS_MAP_DECISION,
         BRANCH_MASS_MAP_NO_GO,
         ELECTRON_MASS_NO_GO,
+        ELECTRON_MASS_ASSEMBLY,
         MASS_SPECTRUM_PACKET,
         PR5020_IMPACT,
         PR5019_IMPACT,
@@ -190,6 +192,10 @@ def main() -> None:
         "current Koide algebra, primitive, and open-PR surfaces do not",
         "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "current retained, primitive, and open-PR surfaces do not supply",
+        "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md",
+        "sibling review-compression surface",
+        "same eleven-input contract",
+        "does not ratify the physical electron mass",
         "ZERO_IMPORT_HYDROGEN_CHARGED_LEPTON_MASS_SPECTRUM_RATIFICATION_DECISION_PACKET_2026-07-05.md",
         "mass-spectrum target remains needed",
         "PHYSICAL_ELECTRON_READOUT_RETAINED",
@@ -328,6 +334,7 @@ def main() -> None:
     branch_mass_map_decision = read(BRANCH_MASS_MAP_DECISION)
     branch_mass_map_no_go = read(BRANCH_MASS_MAP_NO_GO)
     electron_mass_no_go = read(ELECTRON_MASS_NO_GO)
+    electron_mass_assembly = read(ELECTRON_MASS_ASSEMBLY)
     mass_spectrum_packet = read(MASS_SPECTRUM_PACKET)
     pr5020_impact = read(PR5020_IMPACT)
     chirality_impact = read(CHIRALITY_IMPACT)
@@ -385,6 +392,19 @@ def main() -> None:
     audit.check(
         "electron mass no-go keeps physical m_e open",
         "PHYSICAL_ELECTRON_READOUT_RETAINED" in electron_mass_no_go and "RETAINED_ELECTRON_MASS_PHYSICAL_UNIT" in electron_mass_no_go,
+    )
+    audit.check(
+        "electron-mass packet references assembly ladder review",
+        ELECTRON_MASS_ASSEMBLY.name in note and "sibling review-compression surface" in note,
+    )
+    audit.check(
+        "assembly ladder references parent electron packet",
+        NOTE.name in electron_mass_assembly and "No proper subset of those eleven contract inputs" in electron_mass_assembly,
+    )
+    audit.check(
+        "assembly ladder remains support only",
+        "support / review-compression packet" in electron_mass_assembly
+        and "does not ratify the physical electron mass" in electron_mass_assembly,
     )
     audit.check("electron-mass packet references full mass-spectrum sibling", MASS_SPECTRUM_PACKET.name in note and "mass-spectrum target remains needed" in note)
     audit.check(

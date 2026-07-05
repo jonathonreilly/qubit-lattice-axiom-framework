@@ -48,6 +48,9 @@ cell.
 
 | surface | useful content | does not supply |
 |---|---|---|
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_READOUT_DETERMINANT_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md` | sixteen-input target for `KOIDE_READOUT_DETERMINANT_DOMAIN_SPECIFIED` | retained domain consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_READOUT_DETERMINANT_DOMAIN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the readout-domain predicate | object identification |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_READOUT_DETERMINANT_DOMAIN_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit domain decision contract | retained consequence; not accepted on current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_TARGET_DISCRIMINATOR_2026-07-05.md` | sixteen-input target for object identification | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit decision contract | retained consequence; not accepted on current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` | parent determinant theorem target | object input closure |
@@ -72,7 +75,13 @@ are dependency-state signals. Clean/green status is not proof input.
 
 | PR | queue signal | object effect |
 |---|---:|---|
+| `#5030` multisite Pauli finite-carrier source | open | no Koide determinant-object closure |
 | `#5021` primitive-retirement review | open draft | no primitive retirement or registry edit |
+| `#5018` chiral edge content versus SM map | open | chirality map with named gaps; no Koide determinant object |
+| `#5017` domain-wall anomaly inflow spectral flow | open | chiral edge support; no Koide determinant object |
+| `#5014` record-formation front domain wall | open | chiral edge context; no Koide determinant object |
+| `#5012` domain-wall chiral edge from achiral Cl3 | open | free-field chirality context; no Koide determinant object |
+| `#5007` Koide native zero-section route guard | open | confirms based determinant-line readout remains open |
 | `#5028` Koide W4c labeling-pair successor re-points | merged | species-label hygiene only |
 | `#5029` Koide substep4 labeling no-go runner strengthening | merged with audit success | runner verification only; no determinant object |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this current-surface no-go once pushed |

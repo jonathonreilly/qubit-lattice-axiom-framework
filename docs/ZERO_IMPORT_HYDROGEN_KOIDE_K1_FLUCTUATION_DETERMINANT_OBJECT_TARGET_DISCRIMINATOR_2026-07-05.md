@@ -93,6 +93,13 @@ matching current-surface no-go
 records that current retained, primitive, merged-PR, and open-PR surfaces do
 not supply `K1_FLUCTUATION_DETERMINANT_OBJECT_IDENTIFICATION_RETAINED`.
 
+The nested readout-domain packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_READOUT_DETERMINANT_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md`
+attacks only `KOIDE_READOUT_DETERMINANT_DOMAIN_SPECIFIED`. Its current-surface
+no-go and decision packet keep the Koide generation determinant/readout domain
+separate from generic C3 algebra, the plain effective-potential vector trace,
+and the pruned Hermitian/vector/modulus determinant family.
+
 ## Source Surface
 
 The parent determinant packet
@@ -149,6 +156,7 @@ nodes, not walls, but no primitive supplies
 
 | object | if this target is accepted | still not supplied |
 |---|---|---|
+| readout-domain subtarget | `K1_KOIDE_READOUT_DETERMINANT_DOMAIN_SPECIFIED_RETAINED` | positive object disambiguation, owner/audit for object gate |
 | determinant-object subtarget | `K1_FLUCTUATION_DETERMINANT_OBJECT_IDENTIFICATION_RETAINED` | factorization, count, owner/audit for parent theorem |
 | parent determinant theorem | gains `FLUCTUATION_DETERMINANT_OBJECT_IDENTIFIED` | `READOUT_FUNCTIONAL_FACTORS_THROUGH_COMPLEX_SLOT`, `CHIRAL_HOLOMORPHIC_COUNT_COMPUTED_ON_RETAINED_REALIZATION`, owner/audit |
 | parent selector/default-exclusion | no direct retained consequence | determinant theorem and real-vector default exclusion remain separate |

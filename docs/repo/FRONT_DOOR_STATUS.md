@@ -28,10 +28,10 @@ Owner-approval history for every axiom/primitive change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3656 |
-| Applied audit verdicts | 1371 |
-| Retained-grade rows, including boxed decorations | 1299 |
+| Applied audit verdicts | 1372 |
+| Retained-grade rows, including boxed decorations | 1300 |
 | Retained positive theorems | 191 |
-| Retained no-go rows | 192 |
+| Retained no-go rows | 193 |
 | Retained bounded rows | 871 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
@@ -49,10 +49,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1973 |
-| Ready rows | 206 |
+| Total pending rows | 1972 |
+| Ready rows | 207 |
 | Cycle-break targets | 10 |
-| Critical pending | 416 |
+| Critical pending | 415 |
 | High pending | 284 |
 | Medium pending | 513 |
 | Leaf pending | 760 |
@@ -63,7 +63,7 @@ Next ready rows by queue order:
 - [`hypercharge_identification_note`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md) - critical; non_terminal_conditional
 - [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
-- [`staggered_dirac_substep4_labeling_no_go_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md) - critical; audit_in_progress
+- [`staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26`](../../docs/STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md) - critical; unaudited
 - [`yt_ward_identity_derivation_theorem`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited

@@ -68,6 +68,7 @@ AUDIT_ACCEPTANCE
 | `KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md` | KS/state-law route localized | this route-defined kernel handoff |
 | `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded KS phase/gauge-class support | retained `sigma.p` kernel object |
 | `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md` | scalar/Dirac-ray and absorption-frame support | retained choice of the spinful route object |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_ETA_TWISTED_WALK_PR5011_IMPACT_DISCRIMINATOR_2026-07-05.md` | records open #5011 as eta/Kawamoto-Smit covariant-walk context | retained route-defined spinful kernel handoff |
 | `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` | bounded synthesis context with named residuals | unbounded physical state-action theorem or this target |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for route-defined momentum/link-phase input | retained spinful kernel-object theorem or this target |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit contract for the child input | owner/audit acceptance here |
@@ -101,6 +102,7 @@ PRs are queue/status signals; clean/dirty/check labels are not proof inputs.
 | `#5023` Koide W4 audit-readiness repairs | merged, audit success | W4 readiness/hygiene only |
 | `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success | gate-readiness/audit-graph hygiene only |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft, audit success | primitive-boundary context only; no primitive shortcut |
+| `#5011` eta twisted walk family runner repair | open, audit success | context only via `ZERO_IMPORT_HYDROGEN_KOIDE_ETA_TWISTED_WALK_PR5011_IMPACT_DISCRIMINATOR_2026-07-05.md`; no route-defined spinful KS kernel theorem |
 | `#5014` record-formation front is the domain wall | open, audit success | formation-front/domain-wall support only |
 | `#5017` domain-wall edge anomaly inflow via spectral flow | open, audit success | anomaly-flow support only |
 | `#5018` domain-wall edge content vs SM chiral fermions map | open, audit success | map with named gaps only |

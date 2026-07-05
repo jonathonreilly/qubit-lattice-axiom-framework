@@ -74,6 +74,7 @@ This packet does not itself supply the owner/audit decision.
 | `STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md` | retained K1/K0 geometry support for P-FLUX |
 | `GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | thermal `7/8` Stefan-Boltzmann currency context for the P-FLUX support stack |
 | `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` | local Kawamoto-Smit `eta` representative and phase classification support |
+| open `#5011` eta twisted walk family runner repair | eta/Kawamoto-Smit covariant-walk context recorded by `ZERO_IMPORT_HYDROGEN_KOIDE_ETA_TWISTED_WALK_PR5011_IMPACT_DISCRIMINATOR_2026-07-05.md`; no route momentum/link-phase acceptance |
 | merged `#5019`, `#5020`, `#5022`, `#5023`, and `#5024` | Koide/R-eta/W4 readiness and audit-graph hygiene only |
 | open `#5014`, `#5017`, and `#5018` | chirality/domain-wall support only |
 

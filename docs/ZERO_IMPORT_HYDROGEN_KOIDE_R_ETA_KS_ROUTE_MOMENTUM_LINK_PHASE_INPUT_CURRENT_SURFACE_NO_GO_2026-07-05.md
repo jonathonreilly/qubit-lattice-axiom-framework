@@ -68,6 +68,7 @@ at this exact hydrogen-facing handoff.
 | `AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md` | FSB-K supplier for P-FLUX composition | route handoff by itself |
 | `GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | thermal `7/8` Stefan-Boltzmann currency context for the P-FLUX support stack | route handoff or flux selection by itself |
 | `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` | local `eta` phase law on supplied kinetic-scalarization surface | full kinetic-surface retirement |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_ETA_TWISTED_WALK_PR5011_IMPACT_DISCRIMINATOR_2026-07-05.md` | records open #5011 as eta/Kawamoto-Smit covariant-walk context | route momentum/link-phase handoff |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_TARGET_DISCRIMINATOR_2026-07-05.md` | parent route that can consume this handoff | target theorem itself |
 
 The approved primitive registry was checked. Registered primitive nodes are
@@ -93,6 +94,7 @@ PRs are queue/status signals; clean/dirty/check labels are not proof inputs.
 | `#5023` Koide W4 audit-readiness repairs | merged, audit success | W4 readiness/hygiene only |
 | `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success | gate-readiness/audit-graph hygiene only |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft, audit success | primitive-boundary context only; no primitive shortcut |
+| `#5011` eta twisted walk family runner repair | open, audit success | context only via `ZERO_IMPORT_HYDROGEN_KOIDE_ETA_TWISTED_WALK_PR5011_IMPACT_DISCRIMINATOR_2026-07-05.md`; no route momentum/link-phase handoff |
 | `#5014` record-formation front is the domain wall | open, audit success | formation-front/domain-wall support only |
 | `#5017` domain-wall edge anomaly inflow via spectral flow | open, audit success | anomaly-flow support only |
 | `#5018` domain-wall edge content vs SM chiral fermions map | open, audit success | map with named gaps only |

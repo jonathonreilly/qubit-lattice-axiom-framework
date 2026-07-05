@@ -102,6 +102,12 @@ not supply `R_ETA_H_CLASS_RETAINED`, `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`,
 `R_ETA_READOUT_IDENTIFICATION_RETAINED`, `delta = 2/9`, `m_e`, `alpha(0)`, or
 hydrogen.
 
+The companion current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that current retained, primitive, merged-PR, and open-PR surfaces do
+not supply `R_ETA_H_CLASS_RETAINED`. This target remains a positive
+import-retirement route, not a retained consequence.
+
 ## Hydrogen Effect
 
 If accepted, this target retires one atom inside the Koide R-eta branch: the

@@ -25,6 +25,7 @@ TWO_NINTHS_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN
 PR5019_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md"
 PR5020_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md"
 PR5022_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md"
+AC_R_ETA_CLUSTER = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md"
 R_ETA_NARROWING = ROOT / "docs" / "ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md"
 R_ETA_W2 = ROOT / "docs" / "ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md"
 DELTA_ETA_CHAIN = ROOT / "docs" / "KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md"
@@ -184,6 +185,7 @@ def main() -> None:
         PR5019_IMPACT,
         PR5020_IMPACT,
         PR5022_IMPACT,
+        AC_R_ETA_CLUSTER,
         R_ETA_NARROWING,
         R_ETA_W2,
         DELTA_ETA_CHAIN,
@@ -225,6 +227,8 @@ def main() -> None:
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md",
         "merged `#5022` delta-eta chain R-eta supplied-premise audit repair",
+        "ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md",
+        "`89768b461c`/`e2d1dec095` occurrence/measure boundaries",
         "merged `#5020` Koide R-eta value-face registered-angle/exactness relocation",
         "merged `#5019` Koide `AC_phi_lambda` axiom-surface rebase",
         "`#5021` primitive-retirement review draft",
@@ -273,6 +277,7 @@ def main() -> None:
     pr5019 = read(PR5019_IMPACT)
     pr5020 = read(PR5020_IMPACT)
     pr5022 = read(PR5022_IMPACT)
+    ac_r_eta_cluster = read(AC_R_ETA_CLUSTER)
     narrowing = read(R_ETA_NARROWING)
     w2 = read(R_ETA_W2)
     chain = read(DELTA_ETA_CHAIN)
@@ -305,6 +310,11 @@ def main() -> None:
     audit.check("#5019 impact remains premise hygiene", "premise-hygiene" in pr5019 or "premise hygiene" in pr5019)
     audit.check("#5020 impact keeps exactness residual open", "exactness remains open" in pr5020)
     audit.check("#5022 impact keeps R-eta supplied, not derived", "supplied" in pr5022 and "no retained R-eta derivation" in pr5022)
+    audit.check(
+        "AC R-eta cluster keeps readout retirement open",
+        "No derivation or ratification of `R_ETA_READOUT_IDENTIFICATION_RETAINED`." in ac_r_eta_cluster
+        and "No spending of landed-main `89768b461c` or `e2d1dec095` as K1/K2 closure." in ac_r_eta_cluster,
+    )
     audit.check("narrowing note decomposes R-eta residual", "A_R-eta" in narrowing and "h-class" in narrowing and "h-unit" in narrowing)
     audit.check("W2 bridge leaves physical carrier/value open", "physical" in w2 and "A_R-eta" in w2)
     audit.check(
@@ -355,6 +365,7 @@ def main() -> None:
         "No derivation or ratification of `PHYSICAL_CARRIER_CONTEXT_RETAINED`.",
         "No derivation or ratification of `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.",
         "No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.",
+        "landed-main `#4982`-`#4986`, or landed-main",
         "No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed",
         "No derivation of K1 occupancy/counting, K3 physical species bridge, K4",
         "No new axiom, primitive, Tier-A admission, or empirical import.",

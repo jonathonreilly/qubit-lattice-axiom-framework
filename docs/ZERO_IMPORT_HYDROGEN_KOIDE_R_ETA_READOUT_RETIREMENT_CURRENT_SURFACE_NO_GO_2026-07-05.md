@@ -67,6 +67,7 @@ current surface and is not a retained consequence here.
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | eleven-input target for `R_ETA_READOUT_IDENTIFICATION_RETAINED` | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | eleven-input owner/audit decision packet | retained consequence; not accepted on the current surface |
+| `ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md` | landed-main/open-PR AC R-eta cluster: #4981 open context, #4982-#4986 landed-main shortcut pruning, and `89768b461c`/`e2d1dec095` occurrence/measure boundaries | retained R-eta readout retirement, h-class, h-unit, K1/K2 exactness, or hydrogen |
 | merged `#5022` delta-eta chain R-eta supplied-premise audit repair | conditional repair: R-eta is declared supplied and the implication is checked with retained K-orbit form authority | retained R-eta derivation or readout retirement |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing #5022 boundary | retained R-eta derivation, `R_ETA_READOUT_IDENTIFICATION_RETAINED`, K2 exactness, or hydrogen |
 | merged `#5020` Koide R-eta value-face registered-angle/exactness relocation | value-face progress and exactness residual naming | R-eta readout retirement, h-class, h-unit, or owner/audit acceptance |
@@ -121,6 +122,7 @@ dependency-state signals; clean/dirty/check labels are not proof inputs.
 | #5020 could be overread as supplying readout retirement | #5020 is merged value-face progress only; exactness/readout retirement remain open |
 | h-class and h-unit could be overread as full R-eta | each remains a subinput until the eleven-input R-eta contract is accepted; the h-class and h-unit current-surface no-gos record that neither subinput is supplied yet |
 | #5021 could be overread as a primitive shortcut | #5021 is draft primitive-boundary context while no registry edit exists |
+| #4981-#4986 plus landed-main `89768b461c`/`e2d1dec095` could be overread as R-eta closure | the AC R-eta cluster impact discriminator records them as shortcut pruning and residual sharpening only |
 
 ## No-Go Discipline Gate
 
@@ -257,8 +259,9 @@ non-supply claim passes.
 - No derivation or ratification of `PHYSICAL_CARRIER_CONTEXT_RETAINED`.
 - No derivation or ratification of `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 - No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.
-- No claim that merged PR `#5019`, merged PR `#5020`, draft PR `#5021`, or
-  merged PR `#5022` supplies R-eta readout retirement.
+- No claim that merged PR `#5019`, merged PR `#5020`, draft PR `#5021`, merged
+  PR `#5022`, open PR `#4981`, landed-main `#4982`-`#4986`, or landed-main
+  `89768b461c`/`e2d1dec095` supplies R-eta readout retirement.
 - No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed
   `m_e`, observed `alpha(0)`, or observed hydrogen as proof input.
 - No derivation of K1 occupancy/counting, K3 physical species bridge, K4

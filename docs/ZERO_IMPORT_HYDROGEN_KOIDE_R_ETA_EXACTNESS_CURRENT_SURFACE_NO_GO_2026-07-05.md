@@ -71,6 +71,15 @@ dedicated impact discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md`
 records the hydrogen-facing boundary.
 
+The AC R-eta upstream cluster impact discriminator
+`ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md`
+records the 2026-07-05 `origin/main` R-eta cluster: `#4982` through `#4986`
+were closed as PRs but their science commits landed on `main`, while `#4981`
+remains open and lane-relevant. The later landed-main commits `89768b461c`
+and `e2d1dec095` also prune the occurrence-axiom and measure-binary shortcuts.
+The cluster sharpens h-class/h-unit, doublet-clock, occurrence, and measure
+residuals; it does not supply `K2_R_ETA_EXACTNESS_RETAINED`.
+
 The R-eta readout-retirement target discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md`
 is the positive import-retirement path for the supplied R-eta premise. It
@@ -106,6 +115,7 @@ do not supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; h-class plus h-unit | current retained R-eta derivation or K2 exactness |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `R_ETA_READOUT_IDENTIFICATION_RETAINED` | R-eta consequence or K2 exactness |
+| `ZERO_IMPORT_HYDROGEN_AC_R_ETA_UPSTREAM_CLUSTER_IMPACT_DISCRIMINATOR_2026-07-05.md` | landed-main/open-PR AC R-eta cluster boundary for #4981-#4986 plus `89768b461c`/`e2d1dec095` | h-class, h-unit, R-eta retirement, K1/K2 closure, electron mass, or hydrogen |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 supplied-premise conditionality boundary | retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, or hydrogen |
 | `#5022` audit repair for the delta-eta chain | merged conditionality repair: R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, or two-ninths/radian handoff |
 | `#5020` Koide R-eta value-face PR | merged value-face movement: registered-angle functional, counterfactual classification, law-freeness, unit-face dissolution, and named exactness residual | retained exact `2/9` theorem, radian-readout license, owner/audit acceptance |
@@ -287,7 +297,9 @@ non-supply claim passes.
 - No derivation or ratification of `DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED`.
 - No derivation or ratification of `RADIAN_READOUT_LICENSE_RETAINED`.
 - No derivation or ratification of `FOLD_AND_BRANCH_DOMAIN_LOCK`.
-- No claim that PR `#5020`, PR `#5021`, or merged PR `#5022` supplies K2 exactness.
+- No claim that PR `#5020`, PR `#5021`, merged PR `#5022`, open PR `#4981`,
+  landed-main `#4982`-`#4986`, or landed-main `89768b461c`/`e2d1dec095`
+  supplies K2 exactness.
 - No derivation of `AC_phi_lambda`, `delta = 2/9`, `rho_e(delta)`, or `a_l^2`.
 - No derivation or ratification of K1 occupancy/counting, K3 physical species
   bridge, K4 absolute scale, native bridge, branch mass-map, or physical

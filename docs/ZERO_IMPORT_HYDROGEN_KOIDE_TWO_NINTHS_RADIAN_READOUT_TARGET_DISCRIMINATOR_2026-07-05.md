@@ -74,6 +74,7 @@ needed.
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | conditional Brannen comparator at `delta = 2/9` | open gate, comparator only |
 | `CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md` | bounded theorem under explicit Tier-A admission | not zero-import retained `delta = 2/9` |
 | `KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md` | one orientation object for count and phase chirality | no magnitude, no realized handedness, no radian unit |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 supplied-premise conditionality boundary | no retained R-eta derivation, exact theorem, or radian readout |
 | `#5022` audit repair for the delta-eta chain | R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | no retained R-eta derivation, exact theorem, or radian readout |
 | `#5020` Koide R-eta value-face PR | registered-angle value-face progress | exactness and radian readout remain open |
 | `#5021` primitive-retirement review draft | primitive-boundary meta review; no primitive retirement and no registry edit | no two-ninths/radian shortcut |

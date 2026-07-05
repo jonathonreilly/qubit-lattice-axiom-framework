@@ -285,6 +285,13 @@ If accepted, it supplies the exact `2/9` theorem, radian-readout license,
 and fold/branch domain-lock inputs, but not value-face acceptance, K1, K3,
 K4, physical electron mass, alpha input, or hydrogen.
 
+The two-ninths/radian-readout ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`)
+packages that sub-handoff as a nine-input owner/audit contract. It is the
+spendable wrapper for exact theorem, readout, and domain inputs only after
+acceptance, not full K2 exactness, physical electron mass, alpha input, or
+hydrogen.
+
 The two-ninths/radian-readout current-surface no-go
 (`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
 records that the current retained, primitive, and open-PR surfaces do not

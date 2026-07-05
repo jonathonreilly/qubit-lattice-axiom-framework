@@ -69,6 +69,13 @@ If ratified, it supplies the exact `2/9` theorem, radian-readout license,
 and fold/branch domain-lock inputs for this K2 target, but not full K2
 exactness by itself.
 
+The two-ninths/radian-readout ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages that sub-handoff as a nine-input owner/audit contract. It is the
+decision object for exact theorem, readout, and domain inputs only; the full
+K2 target still needs value-face acceptance, K2-level exclusions, owner
+ratification, and audit acceptance.
+
 The two-ninths/radian-readout current-surface no-go
 `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
 records that the current retained, primitive, merged-PR, and open-PR surfaces do not
@@ -179,6 +186,7 @@ K2 exactness is a named ten-input target after #5020, not a retained result.
 | `#5020` body | value-face registration and exactness split | value-face input only | yes |
 | #5020 impact discriminator | hydrogen-facing K2 boundary | names exactness residual | yes |
 | two-ninths/radian-readout target | K2 subgate for exact value, radian license, and domain lock | subtarget only | yes |
+| two-ninths/radian-readout decision packet | nine-input owner/audit contract for the subgate | not full K2 exactness | yes |
 | two-ninths/radian-readout current-surface no-go | current non-supply boundary for `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED` | no closure evidence | yes |
 | Koide electron-readout firewall | K1/K2/K3/K4 separation | K2 target only | yes |
 | physical electron mass packet | downstream mass composition | guard only | yes |

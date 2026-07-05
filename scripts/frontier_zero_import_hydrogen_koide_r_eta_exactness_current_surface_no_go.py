@@ -17,6 +17,7 @@ PR5020_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5
 PR5022_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md"
 R_ETA_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md"
 TWO_NINTHS_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md"
+TWO_NINTHS_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 TWO_NINTHS_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 PR5019_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md"
 PHYSICAL_ELECTRON = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md"
@@ -123,6 +124,7 @@ def main() -> None:
         PR5022_IMPACT,
         R_ETA_TARGET,
         TWO_NINTHS_TARGET,
+        TWO_NINTHS_DECISION,
         TWO_NINTHS_NO_GO,
         PR5019_IMPACT,
         PHYSICAL_ELECTRON,
@@ -149,6 +151,8 @@ def main() -> None:
         "K2_R_ETA_EXACTNESS_RETAINED",
         "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "nine-input owner/audit decision packet",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "current retained, primitive, merged-PR, and open-PR surfaces do not supply",
         "K2_EXACTNESS_TEXT_LOCK",
@@ -204,6 +208,7 @@ def main() -> None:
     exactness_target = read(EXACTNESS_TARGET)
     pr5020_impact = read(PR5020_IMPACT)
     two_ninths_target = read(TWO_NINTHS_TARGET)
+    two_ninths_decision = read(TWO_NINTHS_DECISION)
     two_ninths_no_go = read(TWO_NINTHS_NO_GO)
     pr5019_impact = read(PR5019_IMPACT)
     physical_electron = read(PHYSICAL_ELECTRON)
@@ -229,6 +234,12 @@ def main() -> None:
         "two-ninths/radian target keeps subgate partial",
         "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in two_ninths_target
         and "not the full K2 exactness" in two_ninths_target,
+    )
+    audit.check(
+        "two-ninths/radian decision packet keeps subgate conditional",
+        TWO_NINTHS_DECISION.name in note
+        and "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in two_ninths_decision
+        and "No derivation or ratification of `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`." in two_ninths_decision,
     )
     audit.check(
         "current no-go references two-ninths/radian current-surface no-go",

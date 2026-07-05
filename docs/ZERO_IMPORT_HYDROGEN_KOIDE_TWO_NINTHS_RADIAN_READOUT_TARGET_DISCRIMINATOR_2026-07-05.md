@@ -52,6 +52,12 @@ records that the current retained, primitive, merged-PR, and open-PR surfaces do
 supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`; this target remains
 needed.
 
+The two-ninths/radian-readout ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages this target as a nine-input owner/audit contract. If accepted, it
+supplies this sub-handoff conditionally; it does not supply full K2 exactness,
+physical electron mass, alpha input, or hydrogen.
+
 The R-eta readout-retirement target discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md`
 packages `R_ETA_READOUT_IDENTIFICATION_RETAINED`. If accepted, it supplies the
@@ -82,6 +88,7 @@ intended proof package for `DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED` and
 | `CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md` | bounded theorem under explicit Tier-A admission | not zero-import retained `delta = 2/9` |
 | `KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md` | one orientation object for count and phase chirality | no magnitude, no realized handedness, no radian unit |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; h-class plus h-unit | does not close the whole subgate without packet-level domain/owner/audit |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision packet for the nine-input subgate contract | not accepted here; no full K2, mass, alpha, or hydrogen closure |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 supplied-premise conditionality boundary | no retained R-eta derivation, exact theorem, or radian readout |
 | `#5022` audit repair for the delta-eta chain | R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | no retained R-eta derivation, exact theorem, or radian readout |
 | `#5020` Koide R-eta value-face PR | registered-angle value-face progress | exactness and radian readout remain open |

@@ -57,6 +57,7 @@ AUDIT_ACCEPTANCE
 | surface | useful content | does not supply |
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` | nine-input subtarget contract | current retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | nine-input owner/audit decision packet | retained consequence; not accepted on the current surface |
 | `FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md` | finite `2/9` forced local density context | physical readout, radian phase, or Koide fold/domain lock |
 | `KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md` | separates pure rational `2/9` from native `q*pi` angular units | radian-bridge closure |
 | `KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md` | names Type-B-to-radian observable law as missing | retained readout license |
@@ -98,6 +99,7 @@ signals; clean status is not proof input.
 | before this note | after this note |
 |---|---|
 | two-ninths/radian had a target contract | the current-surface non-supply boundary is explicit |
+| target contract had no local decision packet | the decision packet is present but still not accepted as a retained consequence |
 | #5022 could be overread as a retained R-eta derivation | #5022 is merged conditional supplied-premise repair, not a retained R-eta derivation |
 | finite `2/9` density could be overread as radian phase | finite density remains context until exact theorem and readout license are accepted |
 | #5020 could be overread as supplying the exact subgate | #5020 is value-face progress only |

@@ -124,6 +124,11 @@ species, the native bridge, branch mass-map, K4 absolute scale, physical
 electron mass, `alpha(0)`, static-source NR Coulomb limit, or retained
 hydrogen.
 
+The ratification decision wrapper for this target is
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md`.
+It packages the same eleven-input contract for owner/audit handling and does
+not claim the handoff is already retained.
+
 ## No-Go Discipline Gate
 
 This section prevents overclaiming. The broad claim "R-eta is retained" is not

@@ -146,6 +146,8 @@ def main() -> None:
         "R_ETA_READOUT_IDENTIFICATION_RETAINED",
         "h-class plus h-unit",
         "not retained derivation or electron readout",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "eleven-input owner/audit contract",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md",
         "R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED",
         "identity-radian conversion coefficient",

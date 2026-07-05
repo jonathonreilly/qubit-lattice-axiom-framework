@@ -39838,10 +39838,6 @@
     },
     {
       "from": "staggered_dirac_realization_gate_note_2026-05-03",
-      "to": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
-    },
-    {
-      "from": "staggered_dirac_realization_gate_note_2026-05-03",
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
     {
@@ -39854,19 +39850,11 @@
     },
     {
       "from": "staggered_dirac_realization_gate_note_2026-05-03",
-      "to": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07"
-    },
-    {
-      "from": "staggered_dirac_realization_gate_note_2026-05-03",
       "to": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
     },
     {
       "from": "staggered_dirac_realization_gate_note_2026-05-03",
       "to": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
-    },
-    {
-      "from": "staggered_dirac_realization_gate_note_2026-05-03",
-      "to": "staggered_dirac_physical_species_direct_theorem_note_2026-05-07"
     },
     {
       "from": "staggered_dirac_realization_gate_note_2026-05-03",
@@ -39879,10 +39867,6 @@
     {
       "from": "staggered_dirac_realization_gate_note_2026-05-03",
       "to": "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26"
-    },
-    {
-      "from": "staggered_dirac_realization_gate_note_2026-05-03",
-      "to": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17"
     },
     {
       "from": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
@@ -114364,21 +114348,17 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_axioms",
-        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
         "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
         "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_physical_species_direct_theorem_note_2026-05-07",
         "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
         "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
-        "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26",
-        "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17"
+        "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d333297fa7068f6a7583c5408c851747df40938f7fb56a9f1349a521372c15b7",
+      "note_hash": "67ad0284ca494a4fc82c37dae248a70eb5f84b59d4fad101b0e076122f066d90",
       "path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
       "runner_path": "scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py",
       "title": "Staggered-Dirac Realization Gate Note \u2014 Bounded Synthesis Closure"
@@ -114395,7 +114375,7 @@
         "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "09db082ad726ba69b9b03d3dd74199368d60ae37a099580ffaf738d0e4c82363",
+      "note_hash": "4b71454dd129207517c0c700e3f243e03f9073213249b7904370a595e7a80ee8",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem"
@@ -125583,7 +125563,7 @@
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14312,
+    "edge_count": 14308,
     "leaf_count": 1292,
     "node_count": 3818,
     "root_count": 1103,

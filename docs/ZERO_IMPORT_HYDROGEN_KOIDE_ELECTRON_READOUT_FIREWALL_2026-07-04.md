@@ -90,6 +90,15 @@ The primitive registry was checked. `minimal_axioms`,
 them is a Koide phase, counting-measure, species-branch, or electron-mass
 selector.
 
+The K1 counting-measure target discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md`)
+names the successor handoff as `K1_COUNTING_MEASURE_RETAINED`: C3 circulant
+form, block-vs-dimension fork, a retained orbit/holomorphic count selector,
+dimension/Born default exclusion, no K2/K3/K4/mass input, comparator
+exclusion, no new primitive or axiom, owner ratification, and audit
+acceptance. It is a target contract, not K1 closure; current source notes
+reduce the K1 residual to one binary but do not supply the retained selector.
+
 The Koide native zero-section `#5007` impact discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md`)
 updates this boundary for the latest open Koide route-guard repair. It records
@@ -413,6 +422,7 @@ No hidden admission is left buried as background.
 |---|---|---|
 | `CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md` | K1 counting-measure bit | yes |
 | `SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md` | K1 chiral/holomorphic forcing candidate | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` | successor target for `K1_COUNTING_MEASURE_RETAINED` | yes |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | K2 delta comparator and scale boundary | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | K2 value-face registration versus exactness residual | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 R-eta supplied-premise conditionality boundary | yes |

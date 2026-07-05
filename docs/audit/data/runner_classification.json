@@ -34611,8 +34611,8 @@
     "staggered_dirac_substep4_labeling_no_go_note_2026-05-17": {
       "assert_count": 2,
       "counts": {
-        "A": 5,
-        "B": 0,
+        "A": 10,
+        "B": 1,
         "C": 0,
         "D": 5
       },
@@ -45055,8 +45055,8 @@
         "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
       ],
       "counts": {
-        "A": 5,
-        "B": 0,
+        "A": 10,
+        "B": 1,
         "C": 0,
         "D": 5
       },

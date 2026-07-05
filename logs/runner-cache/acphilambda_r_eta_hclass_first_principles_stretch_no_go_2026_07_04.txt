@@ -1,0 +1,142 @@
+AC_phi_lambda R-eta h-class first-principles stretch no-go verifier
+
+========================================================================================
+A. source presence and Tier-A boundary
+========================================================================================
+[PASS] exists: docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/audit/data/axiom_premise_nodes.json
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+[PASS] Tier-A has a live genuine admitted input
+[PASS] AC minimum decomposition keeps R-eta
+[PASS] AC minimum decomposition keeps occupancy separate
+[PASS] AC statement names R-eta
+[PASS] human registry names R-eta
+[PASS] note declares Type no_go
+[PASS] note declares Claim type no_go
+[PASS] note declares independent audit boundary
+[PASS] note says R-eta is not retired
+[PASS] note says AC_phi_lambda is not retired
+[PASS] note says no registry/axiom/primitive edit
+[PASS] forbidden overclaim absent: R-eta is retired
+[PASS] forbidden overclaim absent: AC_phi_lambda is retired
+[PASS] forbidden overclaim absent: h-class is derived
+[PASS] forbidden overclaim absent: A_R-eta is derived
+[PASS] forbidden overclaim absent: therefore R-eta closes
+[PASS] forbidden overclaim absent: audit_status: audited_clean
+[PASS] forbidden overclaim absent: effective_status: retained
+[PASS] forbidden overclaim absent: promoted to retained
+
+========================================================================================
+B. approved premise and axiom boundaries
+========================================================================================
+[PASS] approved premise registry has exactly four canonical ids
+[PASS] approved premise registry does not contain h-class
+[PASS] approved premise registry does not contain R-eta
+[PASS] approved premise registry does not contain R_eta
+[PASS] approved premise registry does not contain A_R-eta
+[PASS] approved premise registry does not contain delta_readout_identification_R_eta
+[PASS] approved premise registry does not contain physical-observable bridge
+[PASS] minimal axiom boundary contains Records form.
+[PASS] minimal axiom boundary contains A readout value is determined by record content alone
+[PASS] minimal axiom boundary contains scalar readout `I` is additive
+[PASS] minimal axiom boundary contains context selection
+[PASS] minimal axiom boundary contains formation rules
+[PASS] minimal axiom boundary contains source/action and physical-observable identification
+[PASS] minimal axioms place AC_phi_lambda outside axiom content
+[PASS] note records no h-unit import
+
+========================================================================================
+C. context-handle discipline and retained fixed-locus input
+========================================================================================
+[PASS] note labels context handles as non-load-bearing
+[PASS] context handle is backticked in note: ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
+[PASS] context handle is backticked in note: ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md
+[PASS] context handle is backticked in note: SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md
+[PASS] context handle is backticked in note: ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md
+[PASS] context handle is backticked in note: ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+[PASS] context handle is backticked in note: ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+[PASS] fixed-locus source contains 2/9
+[PASS] fixed-locus source contains forced transverse weights
+[PASS] fixed-locus source contains physical single-summand readout
+[PASS] note reproduces context boundary: h-class:
+[PASS] note reproduces context boundary: h-unit:
+[PASS] note reproduces context boundary: physical carrier realization
+[PASS] note reproduces context boundary: Phi(c)=c S_sum
+[PASS] note reproduces context boundary: h-unit is not imported
+
+========================================================================================
+D. finite C3-invariant additive readout family
+========================================================================================
+[PASS] C3 covariance equations have a solution family
+[PASS] C3 covariance forces a0=a1=a2
+[PASS] I_alpha(empty)=0
+[PASS] I_alpha is additive on explicit split
+[PASS] I_alpha is additive on orbit doubling
+[PASS] I_alpha is C3 invariant on generic vector
+[PASS] I_alpha is C3 invariant on one orbit
+[PASS] one full orbit evaluates to 3 alpha
+[PASS] two full orbits evaluate to 6 alpha
+[PASS] fixed-locus density target is L=2/9
+[PASS] S_sum=3L=2/3
+[PASS] target alpha for one orbit is 2/27
+[PASS] five candidate alpha choices scanned
+[PASS] candidate values are not all equal
+[PASS] fixed-locus density member gives 2/9
+[PASS] zero candidate has empty normalization
+[PASS] zero candidate is additive
+[PASS] zero candidate is C3 invariant
+[PASS] one_ninth candidate has empty normalization
+[PASS] one_ninth candidate is additive
+[PASS] one_ninth candidate is C3 invariant
+[PASS] fixed_locus_density_member candidate has empty normalization
+[PASS] fixed_locus_density_member candidate is additive
+[PASS] fixed_locus_density_member candidate is C3 invariant
+[PASS] averaged_count candidate has empty normalization
+[PASS] averaged_count candidate is additive
+[PASS] averaged_count candidate is C3 invariant
+[PASS] count candidate has empty normalization
+[PASS] count candidate is additive
+[PASS] count candidate is C3 invariant
+[PASS] zero does not hit fixed-locus density value
+[PASS] one_ninth does not hit fixed-locus density value
+[PASS] averaged_count does not hit fixed-locus density value
+[PASS] count does not hit fixed-locus density value
+
+========================================================================================
+E. h-unit separation and negative controls
+========================================================================================
+[PASS] h-class fixed-density value can be evaluated without beta
+[PASS] identity h-unit beta=1 would not choose alpha
+[PASS] holding beta=1 leaves alpha free
+[PASS] if h-class were selected, beta=1 is the identity density control
+[PASS] note states h-unit is set aside
+
+========================================================================================
+F. route accounting and audit row
+========================================================================================
+[PASS] note records stretch route: Record additivity plus C3 covariance
+[PASS] note records stretch route: Fixed-locus arithmetic
+[PASS] note records stretch route: Supplied finite context / W2
+[PASS] note records stretch route: Holonomy normal form
+[PASS] note records stretch route: Approved primitive registry
+[PASS] all five attack frames are marked as failures/open
+[PASS] hidden import exclusion recorded: No observed lepton masses
+[PASS] hidden import exclusion recorded: fitted selectors
+[PASS] hidden import exclusion recorded: Born/interface rule
+[PASS] hidden import exclusion recorded: event law
+[PASS] hidden import exclusion recorded: source/action bridge
+[PASS] hidden import exclusion recorded: physical carrier theorem
+[PASS] hidden import exclusion recorded: owner decision
+[PASS] new row claim_type is no_go
+[PASS] new row audit status remains unaudited
+[PASS] new row effective status remains unaudited
+[PASS] new row has no unaudited sibling dependencies
+[PASS] new row dependency includes minimal_axioms
+[PASS] new row dependency includes admitted_input_registry_tier_a_note_2026-05-23
+[PASS] new row dependency includes koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05
+
+TOTAL: PASS=115 FAIL=0 CHECKS=115

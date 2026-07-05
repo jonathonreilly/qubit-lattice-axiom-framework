@@ -67,6 +67,9 @@ AUDIT_ACCEPTANCE
 | `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded Grassmann/CAR surface | physical rotation state law |
 | `STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | narrow chirality sign-field support | full realization and physical species bridge |
 | `CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md` | Dirac/generation chirality separation | Koide generation chirality or `r=1/2` |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | child KS route target | retained child theorem and parent bridge acceptance |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child owner/audit decision shape | accepted retained child consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the child KS theorem | parent bridge closure |
 | merged `#5023` Koide W4 audit-readiness repairs | W4 dependency hygiene | physical matter-state-law theorem |
 | merged `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | gate-readiness/audit-graph hygiene | physical matter-state-law theorem |
 | open `#5014` record-formation front domain wall | formation-front/domain-wall support | physical matter-state-law theorem |

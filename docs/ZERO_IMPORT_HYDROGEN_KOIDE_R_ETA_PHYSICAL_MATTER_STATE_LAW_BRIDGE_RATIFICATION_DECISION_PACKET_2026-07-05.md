@@ -75,6 +75,9 @@ carrier context, R-eta, electron mass, alpha, or hydrogen.
 | `INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md` | operator-frame support only |
 | `PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md` | local spin support only |
 | `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` and `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded KS/Grassmann route support only |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | child KS route target; no retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child owner/audit decision shape for the KS route |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the child KS theorem |
 | merged `#5023` and merged `#5024` | W4/gate-readiness and audit-graph hygiene; no state-law theorem |
 | open `#5014`, `#5017`, and `#5018` | chirality/domain-wall support; no state-law theorem |
 | approved primitives | no state-law selector, no readout bridge, no value/mass/alpha/hydrogen |

@@ -98,6 +98,9 @@ lane still needs its other inputs plus owner/audit acceptance.
 | `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded Grassmann/CAR surface | physical rotation state law |
 | `STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | narrow sign-field/chirality support | full realization or physical species-label bridge |
 | `CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md` | separates Dirac/spinor chirality from Koide/generation chirality | generation chirality, `r=1/2`, or state-law closure |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | child KS route target for `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED` | accepted child theorem or parent bridge |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child owner/audit decision shape | retained child consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the child KS theorem | parent physical matter-state law bridge |
 | merged `#5023` / merged `#5024` W4 stack | audit-readiness and gate/audit graph hygiene | physical matter-state-law theorem |
 | open `#5014`/`#5017`/`#5018` domain-wall/chirality stack | formation-front, anomaly-flow, and SM-content support | physical matter-state-law theorem |
 | approved primitives | minimal axioms, scale reference, kinetic isotropy, realized-state evaluation discipline | state-law selector, physical readout bridge, value, mass, alpha, or hydrogen |

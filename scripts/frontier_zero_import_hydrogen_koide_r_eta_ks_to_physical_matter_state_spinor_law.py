@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verifier for the Koide R-eta physical matter-state law bridge lane."""
+"""Verifier for the Koide R-eta KS-to-physical matter-state spinor-law lane."""
 
 from __future__ import annotations
 
@@ -9,17 +9,15 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md"
-DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
-CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
-KS_CHILD_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md"
-KS_CHILD_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md"
-KS_CHILD_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md"
+DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 KOIDE_FIREWALL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md"
+PARENT_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md"
+PARENT_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+PARENT_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 HW1_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md"
-HW1_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md"
-HW1_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 PHYSICAL_CARRIER_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md"
 MATTER_ATTACHMENT = ROOT / "docs" / "KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md"
 CARRIER_ATTACHMENT = ROOT / "docs" / "CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md"
@@ -29,7 +27,6 @@ CL31_EXTENSION = ROOT / "docs" / "CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NO
 KS_FORCING = ROOT / "docs" / "STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md"
 GRASSMANN_FORCING = ROOT / "docs" / "STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md"
 CHIRALITY_PARITY = ROOT / "docs" / "STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md"
-CHIRALITY_TWO_GATES = ROOT / "docs" / "CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md"
 REALIZATION_GATE = ROOT / "docs" / "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
 PRIMITIVE_REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 MINIMAL = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
@@ -38,7 +35,33 @@ KINETIC = ROOT / "docs" / "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
 REALIZED = ROOT / "docs" / "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
 
 
-FIXED_BRIDGE_INPUTS = {
+KS_ROUTE_INPUTS = {
+    "KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TEXT_LOCK",
+    "MATTER_ATTACHMENT_KS_REDUCTION_ACCEPTED",
+    "SPIN_MODULE_ESCAPE_NO_GO_ACCEPTED",
+    "KS_PHASE_FORCING_SURFACE_ACCEPTED",
+    "GRASSMANN_CAR_SURFACE_ACCEPTED",
+    "STAGGERED_CHIRALITY_SELECTOR_SURFACE_ACCEPTED",
+    "SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED",
+    "KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED",
+    "NO_ELEMENTARY_STATE_LAW_INPUT",
+    "NO_HW1_OR_BRIDGE_CLOSURE_INPUT",
+    "NO_R_Q_DELTA_OR_R_ETA_VALUE_INPUT",
+    "NO_K1_K3_K4_OR_MASS_INPUT",
+    "NO_COMPARATOR_PROOF_INPUT",
+    "NO_NEW_PRIMITIVE_OR_AXIOM",
+    "OWNER_RATIFICATION",
+    "AUDIT_ACCEPTANCE",
+}
+
+CURRENT_SURFACE_INPUTS = KS_ROUTE_INPUTS - {
+    "SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED",
+    "KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED",
+    "OWNER_RATIFICATION",
+    "AUDIT_ACCEPTANCE",
+}
+
+FIXED_PARENT_BRIDGE_INPUTS = {
     "PHYSICAL_MATTER_STATE_LAW_BRIDGE_TEXT_LOCK",
     "OPERATOR_FRAME_MERGER_ACCEPTED",
     "SPIN_MODULE_ESCAPE_NO_GO_ACCEPTED",
@@ -54,12 +77,10 @@ FIXED_BRIDGE_INPUTS = {
     "AUDIT_ACCEPTANCE",
 }
 
-ROUTE_INPUTS = {
+PARENT_ROUTE_INPUTS = {
     "KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED",
     "ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED",
 }
-
-CURRENT_SURFACE_INPUTS = FIXED_BRIDGE_INPUTS - {"OWNER_RATIFICATION", "AUDIT_ACCEPTANCE"}
 
 HW1_INPUTS = {
     "HW1_PHYSICAL_GENERATION_LOCUS_TEXT_LOCK",
@@ -176,8 +197,12 @@ def all_subsets(items: set[str]) -> list[set[str]]:
     return subsets
 
 
-def closes_matter_state_bridge(inputs: set[str]) -> bool:
-    return FIXED_BRIDGE_INPUTS <= inputs and bool(ROUTE_INPUTS & inputs)
+def closes_ks_route(inputs: set[str]) -> bool:
+    return KS_ROUTE_INPUTS <= inputs
+
+
+def closes_parent_bridge(inputs: set[str]) -> bool:
+    return FIXED_PARENT_BRIDGE_INPUTS <= inputs and bool(PARENT_ROUTE_INPUTS & inputs)
 
 
 def closes_hw1(inputs: set[str]) -> bool:
@@ -212,14 +237,12 @@ def main() -> None:
         TARGET,
         DECISION,
         CURRENT,
-        KS_CHILD_TARGET,
-        KS_CHILD_DECISION,
-        KS_CHILD_CURRENT,
         GOAL,
         KOIDE_FIREWALL,
+        PARENT_TARGET,
+        PARENT_DECISION,
+        PARENT_CURRENT,
         HW1_TARGET,
-        HW1_DECISION,
-        HW1_CURRENT,
         PHYSICAL_CARRIER_TARGET,
         MATTER_ATTACHMENT,
         CARRIER_ATTACHMENT,
@@ -229,7 +252,6 @@ def main() -> None:
         KS_FORCING,
         GRASSMANN_FORCING,
         CHIRALITY_PARITY,
-        CHIRALITY_TWO_GATES,
         REALIZATION_GATE,
         PRIMITIVE_REGISTRY,
         MINIMAL,
@@ -248,46 +270,47 @@ def main() -> None:
 
     section("Required packet content")
     required_phrases = [
-        "Koide R-Eta Physical Matter-State Law Bridge Target Discriminator",
-        "Koide R-Eta Physical Matter-State Law Bridge Ratification Decision Packet",
-        "Koide R-Eta Physical Matter-State Law Bridge Current-Surface No-Go",
-        "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED",
-        "PHYSICAL_MATTER_STATE_LAW_BRIDGE_TEXT_LOCK",
-        "OPERATOR_FRAME_MERGER_ACCEPTED",
-        "SPIN_MODULE_ESCAPE_NO_GO_ACCEPTED",
-        "NATIVE_D_SPIN_BLINDNESS_ACCEPTED",
-        "KS_SCALARIZATION_SURFACE_ACCEPTED",
-        "STAGGERED_CHIRALITY_SELECTOR_SURFACE_ACCEPTED",
+        "Koide R-Eta KS-To-Physical Matter-State Spinor-Law Target Discriminator",
+        "Koide R-Eta KS-To-Physical Matter-State Spinor-Law Ratification Decision Packet",
+        "Koide R-Eta KS-To-Physical Matter-State Spinor-Law Current-Surface No-Go",
         "KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED",
-        "ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md",
-        "NO_HW1_LOCUS_OR_CARRIER_CLOSURE_INPUT",
+        "KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TEXT_LOCK",
+        "MATTER_ATTACHMENT_KS_REDUCTION_ACCEPTED",
+        "SPIN_MODULE_ESCAPE_NO_GO_ACCEPTED",
+        "KS_PHASE_FORCING_SURFACE_ACCEPTED",
+        "GRASSMANN_CAR_SURFACE_ACCEPTED",
+        "STAGGERED_CHIRALITY_SELECTOR_SURFACE_ACCEPTED",
+        "SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED",
+        "KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED",
+        "NO_ELEMENTARY_STATE_LAW_INPUT",
+        "NO_HW1_OR_BRIDGE_CLOSURE_INPUT",
         "NO_R_Q_DELTA_OR_R_ETA_VALUE_INPUT",
         "NO_K1_K3_K4_OR_MASS_INPUT",
         "NO_COMPARATOR_PROOF_INPUT",
         "NO_NEW_PRIMITIVE_OR_AXIOM",
         "OWNER_RATIFICATION",
         "AUDIT_ACCEPTANCE",
+        "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED",
         "HW1_PHYSICAL_GENERATION_LOCUS_RETAINED",
         "CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED",
         "PHYSICAL_CARRIER_CONTEXT_RETAINED",
         "KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md",
         "CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md",
-        "INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md",
-        "PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
-        "CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md",
         "STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md",
         "STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md",
         "STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
-        "CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md",
+        "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md",
+        "PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
+        "CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md",
         "merged `#5023`",
         "merged `#5024`",
+        "open `#5021`",
         "open `#5014`",
         "open `#5017`",
         "open `#5018`",
-        "The primitive registry was checked",
+        "The approved primitive registry was checked",
         "No-Go Discipline Gate",
         "Explicit Non-Claims",
     ]
@@ -298,49 +321,41 @@ def main() -> None:
         audit.check(f"no-go discipline marker present: {marker}", marker in packet)
 
     section("Predicate checks")
-    fixed = set(FIXED_BRIDGE_INPUTS)
-    ks_route = fixed | {"KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED"}
-    elementary_route = fixed | {"ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED"}
-    both_routes = fixed | set(ROUTE_INPUTS)
-    audit.check("KS route closes bridge contract", closes_matter_state_bridge(ks_route))
-    audit.check("elementary route closes bridge contract", closes_matter_state_bridge(elementary_route))
-    audit.check("both route certificates also close bridge contract", closes_matter_state_bridge(both_routes))
-    audit.check("fixed inputs alone do not close bridge contract", not closes_matter_state_bridge(fixed))
-    audit.check("current surface inputs do not close bridge contract", not closes_matter_state_bridge(CURRENT_SURFACE_INPUTS))
+    full_route = set(KS_ROUTE_INPUTS)
+    audit.check("full KS child contract closes child theorem", closes_ks_route(full_route))
+    audit.check("current surface does not close child theorem", not closes_ks_route(CURRENT_SURFACE_INPUTS))
 
-    for missing in sorted(FIXED_BRIDGE_INPUTS):
-        reduced_ks = set(ks_route)
-        reduced_ks.remove(missing)
-        reduced_elementary = set(elementary_route)
-        reduced_elementary.remove(missing)
-        audit.check(
-            f"bridge contract fails without fixed input {missing}",
-            not closes_matter_state_bridge(reduced_ks) and not closes_matter_state_bridge(reduced_elementary),
-        )
+    for missing in sorted(KS_ROUTE_INPUTS):
+        reduced = set(full_route)
+        reduced.remove(missing)
+        audit.check(f"child contract fails without input {missing}", not closes_ks_route(reduced))
 
-    bridge_universe = FIXED_BRIDGE_INPUTS | ROUTE_INPUTS
-    accepted_subsets = [subset for subset in all_subsets(bridge_universe) if closes_matter_state_bridge(subset)]
-    minimal_accepted = [
-        subset
-        for subset in accepted_subsets
-        if not any(other < subset and closes_matter_state_bridge(other) for other in accepted_subsets)
-    ]
-    audit.check("only the two one-route minimal subsets close bridge", sorted(map(sorted, minimal_accepted)) == sorted(map(sorted, [ks_route, elementary_route])))
+    accepted_subsets = [subset for subset in all_subsets(KS_ROUTE_INPUTS) if closes_ks_route(subset)]
+    audit.check("only one minimal full child subset closes", accepted_subsets == [KS_ROUTE_INPUTS])
 
-    consequence = {"PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED"}
-    audit.check("bridge consequence alone does not close HW1", not closes_hw1(consequence))
-    audit.check("bridge consequence alone does not close charged carrier theorem", not closes_charged_carrier(consequence))
-    audit.check("bridge consequence alone does not close physical carrier context", not closes_physical_carrier(consequence))
-    audit.check("bridge consequence alone does not close R-eta", not closes_r_eta(consequence))
-    audit.check("bridge consequence alone does not close electron mass", not closes_electron_mass(consequence))
-    audit.check("bridge consequence alone does not close hydrogen", not closes_hydrogen(consequence))
+    child_consequence = {"KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED"}
+    parent_with_child = set(FIXED_PARENT_BRIDGE_INPUTS) | child_consequence
+    audit.check("child consequence alone does not close parent bridge", not closes_parent_bridge(child_consequence))
+    audit.check("child consequence can feed parent bridge with parent fixed inputs", closes_parent_bridge(parent_with_child))
+    audit.check("child consequence alone does not close HW1", not closes_hw1(child_consequence))
+    audit.check("child consequence alone does not close charged carrier theorem", not closes_charged_carrier(child_consequence))
+    audit.check("child consequence alone does not close physical carrier context", not closes_physical_carrier(child_consequence))
+    audit.check("child consequence alone does not close R-eta", not closes_r_eta(child_consequence))
+    audit.check("child consequence alone does not close electron mass", not closes_electron_mass(child_consequence))
+    audit.check("child consequence alone does not close hydrogen", not closes_hydrogen(child_consequence))
+
+    parent_consequence = {"PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED"}
+    audit.check("parent bridge consequence alone does not close HW1", not closes_hw1(parent_consequence))
+    audit.check("parent bridge consequence alone does not close hydrogen", not closes_hydrogen(parent_consequence))
 
     section("Authority and primitive boundary checks")
     goal = read(GOAL)
     firewall = read(KOIDE_FIREWALL)
+    parent_target = read(PARENT_TARGET)
+    parent_decision = read(PARENT_DECISION)
+    parent_current = read(PARENT_CURRENT)
+    parent_packet = "\n".join([parent_target, parent_decision, parent_current])
     hw1_target = read(HW1_TARGET)
-    hw1_decision = read(HW1_DECISION)
-    hw1_current = read(HW1_CURRENT)
     physical_carrier_target = read(PHYSICAL_CARRIER_TARGET)
     matter_attachment = read(MATTER_ATTACHMENT)
     carrier_attachment = read(CARRIER_ATTACHMENT)
@@ -350,7 +365,6 @@ def main() -> None:
     ks_forcing = read(KS_FORCING)
     grassmann_forcing = read(GRASSMANN_FORCING)
     chirality_parity = read(CHIRALITY_PARITY)
-    chirality_two_gates = read(CHIRALITY_TWO_GATES)
     realization_gate = read(REALIZATION_GATE)
     primitive_registry = json.loads(read(PRIMITIVE_REGISTRY))
     primitive_nodes = primitive_registry["nodes"]
@@ -359,40 +373,23 @@ def main() -> None:
     for label, container in [
         ("goal packet", goal),
         ("Koide firewall", firewall),
-        ("HW1 target", hw1_target),
-        ("HW1 decision", hw1_decision),
-        ("HW1 current no-go", hw1_current),
-    ]:
-        audit.check(
-            f"{label} references matter-state bridge lane",
-            TARGET.name in container
-            and DECISION.name in container
-            and CURRENT.name in container
-            and "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in container,
-        )
-
-    for label, container in [
-        ("goal packet", goal),
-        ("Koide firewall", firewall),
-        ("parent target", target),
-        ("parent decision", decision),
-        ("parent current no-go", current),
+        ("parent target", parent_target),
+        ("parent decision", parent_decision),
+        ("parent current no-go", parent_current),
     ]:
         audit.check(
             f"{label} references KS child lane",
-            KS_CHILD_TARGET.name in container
-            and KS_CHILD_DECISION.name in container
-            and KS_CHILD_CURRENT.name in container
+            TARGET.name in container
+            and DECISION.name in container
+            and CURRENT.name in container
             and "KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED" in container,
         )
 
-    ks_child_packet = "\n".join([read(KS_CHILD_TARGET), read(KS_CHILD_DECISION), read(KS_CHILD_CURRENT)])
-    audit.check(
-        "KS child packet references parent bridge",
-        TARGET.name in ks_child_packet and "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in ks_child_packet,
-    )
-
+    audit.check("KS child packet references parent bridge target", PARENT_TARGET.name in packet)
+    audit.check("parent packet still names physical matter bridge", "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in parent_packet)
+    audit.check("HW1 target still consumes parent bridge only", "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in hw1_target)
     audit.check("physical carrier target still keeps charged carrier downstream", "CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED" in physical_carrier_target)
+
     matter_flat = flat(matter_attachment)
     carrier_flat = flat(carrier_attachment)
     su2_flat = flat(su2_merger)
@@ -400,11 +397,11 @@ def main() -> None:
     cl31_flat = flat(cl31_extension)
     ks_flat = flat(ks_forcing)
     grassmann_flat = flat(grassmann_forcing)
-    chirality_parity_flat = flat(chirality_parity)
-    chirality_two_flat = flat(chirality_two_gates)
+    chirality_flat = flat(chirality_parity)
     realization_flat = flat(realization_gate)
+
     audit.check(
-        "matter attachment names the forked bridge residual",
+        "matter attachment names KS state-law residual",
         "unless a KS-to-physical-state-law bridge or an elementary state-law theorem is supplied" in matter_flat
         and "physical matter-state law still requiring its own bridge statement" in matter_flat,
     )
@@ -412,6 +409,11 @@ def main() -> None:
         "carrier attachment refutes spinor-module escape without closure",
         "does not prove the KS/Grassmann physical-state-law bridge" in carrier_flat
         and "operator-frame/Clifford data do not force the per-site `C^2` matter-state `j=1/2` law" in carrier_flat,
+    )
+    audit.check(
+        "carrier attachment names spinful kernel route",
+        "only displayed kernel excluding the scalar is the spinful" in carrier_flat
+        or ("only the spinful" in carrier_flat and "excludes the scalar" in carrier_flat),
     )
     audit.check(
         "SU2 merger is operator-level",
@@ -424,32 +426,27 @@ def main() -> None:
     )
     audit.check(
         "CL31 extension does not transport state law onto per-site module",
-        "not on the per-site site module" in cl31_flat
-        and "per-site site module is `C^2`-valued" in cl31_flat,
+        "not the per-site C2 module" in cl31_flat.replace("C^2", "C2").replace("C²", "C2")
+        or "not on the per-site site module" in cl31_flat,
     )
     audit.check(
         "KS forcing remains bounded on declared kinetic class",
-        "declared kinetic class" in ks_forcing
+        "Within the declared kinetic class" in ks_forcing
         and "What is NOT claimed: that the kinetic class itself" in ks_flat,
     )
     audit.check(
         "Grassmann forcing remains bounded/conditional",
         "Claim type:** bounded_theorem" in grassmann_forcing
-        and "GL(F)" in grassmann_forcing
-        and "unconditional forcing FALSE" in grassmann_flat,
+        and "Conditional forcing: TRUE given `GL(F)`" in grassmann_forcing
+        and "Unconditional forcing: FALSE" in grassmann_forcing,
     )
     audit.check(
         "chirality parity remains narrow support",
-        "does not prove the full staggered-Dirac realization gate" in chirality_parity_flat
-        and "does not close the BZ-corner species-label bridge" in chirality_parity_flat,
+        "does not force Grassmann/CAR statistics" in chirality_flat
+        and "does not close the BZ-corner species-label bridge" in chirality_flat,
     )
     audit.check(
-        "chirality two-gates note separates generation chirality",
-        "Dirac/spinor chirality and Koide/generation chirality are independent gates" in chirality_two_flat
-        and "does not touch the firewalled `r=1/2`" in chirality_two_flat,
-    )
-    audit.check(
-        "realization gate does not by itself close labeling/state law",
+        "realization gate remains bounded synthesis with labeling premise",
         "bounded synthesis closure" in realization_flat
         and "labeling-convention external premise" in realization_flat,
     )
@@ -463,11 +460,10 @@ def main() -> None:
         audit.check(f"registry node present: {node}", node in primitive_nodes)
 
     for forbidden_node in [
+        "ks_to_physical_matter_state_spinor_law_primitive",
+        "spinful_staggered_kernel_primitive",
+        "ks_spin_lift_physical_action_primitive",
         "physical_matter_state_law_primitive",
-        "ks_physical_state_law_primitive",
-        "elementary_physical_state_rotation_law_primitive",
-        "hw1_physical_generation_locus_primitive",
-        "physical_carrier_context_primitive",
         "hydrogen_primitive",
     ]:
         audit.check(f"no registered primitive shortcut: {forbidden_node}", forbidden_node not in primitive_nodes)
@@ -490,29 +486,30 @@ def main() -> None:
         audit.check(f"PR marker present: {marker}", flat(marker) in current_flat)
 
     explicit_nonclaims = [
-        "No derivation or ratification of `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`.",
         "No derivation or ratification of",
         "`KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED`.",
-        "`ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`.",
+        "`SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED`.",
+        "No derivation or ratification of `KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED`.",
+        "No derivation or ratification of `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`.",
         "No derivation or ratification of `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`.",
-        "No derivation or ratification of",
         "`CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`.",
         "No derivation or ratification of `PHYSICAL_CARRIER_CONTEXT_RETAINED`.",
-        "No claim that #5014, #5017, #5018, #5023, or #5024 supplies the physical",
+        "retained hydrogen",
         "No new axiom, primitive, Tier-A admission, empirical import, or audit status",
+        "No claim that #5014, #5017, #5018, #5023, or #5024 supplies the KS physical",
     ]
     for phrase in explicit_nonclaims:
         audit.check(f"explicit non-claim present: {phrase}", phrase in packet)
 
     forbidden = [
-        "This note ratifies physical matter-state law bridge",
-        "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED is supplied",
+        "This note ratifies KS-to-physical matter-state spinor law",
         "KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED is supplied",
-        "ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED is supplied",
+        "SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED is supplied",
+        "KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED is supplied",
+        "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED is supplied",
         "HW1_PHYSICAL_GENERATION_LOCUS_RETAINED is supplied",
         "CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED is supplied",
         "PHYSICAL_CARRIER_CONTEXT_RETAINED is supplied",
-        "R_ETA_READOUT_IDENTIFICATION_RETAINED is supplied",
         "physical electron mass is retained",
         "hydrogen retained theorem",
         "This note claims hydrogen is retained",

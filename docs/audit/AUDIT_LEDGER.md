@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 189 |
-| **retained_no_go** | 191 |
+| **retained_no_go** | 192 |
 | **retained_bounded** | 862 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 24 |
-| unaudited | 1938 |
+| unaudited | 1937 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1236 |
+| `audited_clean` | 1237 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2276 |
+| `unaudited` | 2275 |
 
 | claim_type | count |
 |---|---:|
@@ -1037,6 +1037,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rd_fixedness_is_arrow_invariant_on_the_retained_flow_family_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -14478,6 +14479,18 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source constructs the finite sparse Fock systems, evolves them with expm_multiply, computes determinant phases, prefix statistics, sampled-null p95 values, min-gains, and medians, and its cached output matches the source note. The closure is only for the explicitly scoped finite diagnostic, not an exhaustive permutation null, asymptotic law, or physical U(1) gauge-field claim.
 - **rationale:** The load-bearing numbers are computed directly by the provided runner rather than imported from the cited authority or hard-coded as a print-only result. The one-hop authority is retained_bounded, which is retained-grade under the rubric, and the source note explicitly confines load-bearing content to the runner-defined finite objects. The negative conclusion is scoped to the displayed finite period series and does not overclaim an all-permutation null, asymptotic behavior, L>=6 behavior, or a physical gauge interpretation.
 - **auditor confidence:** high
+
+### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`
+
+- **Note:** [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](../../docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** No-go that the current minimal axioms supply generic record occurrence but do not force a concrete formation rule, process, state trigger, site, weight, or rate.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-postw4-row1-seat2`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The surviving no-go is only: the current minimal axioms do not force the formation rule/process/state/site/weight/rate.  _(class `A`)_
+- **chain closes:** True — The source note has narrowed away the old unforced-occurrence claim: the minimal axiom memo explicitly says Records form while leaving formation rules and record-production dynamics outside axiom content. The finite-dimensional negative controls support the same boundary by showing that trivial, decoupled, and eigenstate unitary surfaces do not supply a concrete process, rule, state trigger, site, weight, or rate.
+- **rationale:** The current runner completed with TOTAL: PASS=6 FAIL=0 and its cached output matches the narrowed target. The load-bearing claim follows from the accepted minimal axiom boundary plus exact finite-dimensional negative controls; it no longer asserts that generic record occurrence is absent. Residual risk is downstream only: a later admitted or derived record-production model could supply formation details, but that would be outside the minimal axiom baseline audited here.
 
 ### `record_function_finite_sector_algebra_2026-06-05`
 

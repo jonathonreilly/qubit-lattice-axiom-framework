@@ -52,6 +52,13 @@ records that the current retained, primitive, and open-PR surfaces do not
 supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`; this target remains
 needed.
 
+The R-eta readout-retirement target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages `R_ETA_READOUT_IDENTIFICATION_RETAINED`. If accepted, it supplies the
+intended proof package for `DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED` and
+`RADIAN_READOUT_LICENSE_RETAINED`; this packet still owns
+`FOLD_AND_BRANCH_DOMAIN_LOCK`, owner ratification, and audit acceptance.
+
 | input | role |
 |---|---|
 | TWO_NINTHS_READOUT_TEXT_LOCK | fixes the exact subgate statement |
@@ -74,6 +81,7 @@ needed.
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | conditional Brannen comparator at `delta = 2/9` | open gate, comparator only |
 | `CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md` | bounded theorem under explicit Tier-A admission | not zero-import retained `delta = 2/9` |
 | `KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md` | one orientation object for count and phase chirality | no magnitude, no realized handedness, no radian unit |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; h-class plus h-unit | does not close the whole subgate without packet-level domain/owner/audit |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 supplied-premise conditionality boundary | no retained R-eta derivation, exact theorem, or radian readout |
 | `#5022` audit repair for the delta-eta chain | R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | no retained R-eta derivation, exact theorem, or radian readout |
 | `#5020` Koide R-eta value-face PR | registered-angle value-face progress | exactness and radian readout remain open |

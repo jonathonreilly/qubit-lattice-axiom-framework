@@ -54,6 +54,12 @@ has a cleaner conditionality boundary for the R-eta route. Hydrogen can track
 that as reduced ambiguity, but cannot spend it as a retained electron-mass
 input.
 
+The next positive target is
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md`,
+which packages `R_ETA_READOUT_IDENTIFICATION_RETAINED` as h-class plus h-unit.
+That target can retire the supplied R-eta premise only if its contract is
+owner/audit accepted; #5022 itself does not supply it.
+
 ## Current Open PR Alignment
 
 | PR | queue signal | hydrogen effect |
@@ -70,6 +76,7 @@ input.
 | source | supplies | boundary here |
 |---|---|---|
 | PR `#5022` body/diff | supplied-premise declaration, conditional implication check, retained K-orbit form authority | open-PR context only; not landed authority |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for retiring the supplied R-eta premise | not accepted here; no retained R-eta derivation |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | ten-input K2 exactness target contract | #5022 does not close owner/audit accepted K2 exactness |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for K2 exactness | #5022 remains a guard/context row |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` | nine-input subtarget for exact two-ninths/radian readout | #5022 does not supply retained readout license |

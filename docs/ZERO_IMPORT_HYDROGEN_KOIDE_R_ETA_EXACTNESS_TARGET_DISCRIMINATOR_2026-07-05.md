@@ -82,6 +82,13 @@ two-ninths/radian-readout sub-handoff. The dedicated impact discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md`
 records that boundary.
 
+The R-eta readout-retirement target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages `R_ETA_READOUT_IDENTIFICATION_RETAINED`. If accepted, it is the
+intended proof package for the exact two-ninths theorem and radian-readout
+license inputs under the two-ninths/radian subgate; it does not close this K2
+exactness target by itself.
+
 ## Dependency Boundary
 
 | object | if this target is accepted | still not supplied |
@@ -166,6 +173,7 @@ K2 exactness is a named ten-input target after #5020, not a retained result.
 
 | cited surface | residual it attacks | residual here | match? |
 |---|---|---|---|
+| R-eta readout-retirement target | h-class/h-unit import-retirement path for `R_ETA_READOUT_IDENTIFICATION_RETAINED` | feeds exact theorem/readout license only | yes |
 | #5022 impact discriminator | hydrogen-facing supplied-premise and conditionality boundary | not retained R-eta derivation or K2 closure | yes |
 | #5022 audit-repair PR | conditional R-eta bookkeeping and retained K-orbit form authority | not retained R-eta derivation or K2 closure | yes as guard |
 | `#5020` body | value-face registration and exactness split | value-face input only | yes |

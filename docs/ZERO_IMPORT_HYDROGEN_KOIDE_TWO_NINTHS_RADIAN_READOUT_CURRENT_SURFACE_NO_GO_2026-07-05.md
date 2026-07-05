@@ -63,6 +63,7 @@ AUDIT_ACCEPTANCE
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | conditional comparator at `delta = 2/9` | zero-import proof input |
 | `CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md` | bounded theorem under explicit Tier-A admission | retained zero-import `delta = 2/9` theorem |
 | `KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md` | one Z2 orientation object for count and phase chirality | magnitude `2/9`, radian unit, or realized handedness |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; h-class plus h-unit | current retained exact theorem, radian-readout license, or subhandoff |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 supplied-premise conditionality boundary | retained R-eta derivation, exact theorem, radian-readout license, or subhandoff |
 | `#5022` audit repair for the delta-eta chain | open conditionality repair: R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | retained R-eta derivation, exact theorem, radian-readout license, or subhandoff |
 | `#5020` Koide R-eta value-face PR | open value-face progress | exact theorem, radian-readout license, or fold/domain lock |
@@ -159,6 +160,7 @@ owner decision, audit decision, or comparator input is hidden as background.
 
 | cited surface | residual it attacks | residual here | match? |
 |---|---|---|---|
+| R-eta readout-retirement target | positive h-class/h-unit import-retirement target | target only, no retained subgate closure | yes |
 | #5022 impact discriminator | hydrogen-facing #5022 boundary | no retained R-eta derivation, exact theorem, or radian readout | yes |
 | #5022 audit-repair PR | conditional R-eta bookkeeping and retained K-orbit form authority | no retained R-eta derivation, exact theorem, or radian readout | yes as guard |
 | finite `2/9` density note | exact density context | context input only | yes |

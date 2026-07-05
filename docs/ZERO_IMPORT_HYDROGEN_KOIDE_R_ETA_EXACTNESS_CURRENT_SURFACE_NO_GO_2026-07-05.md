@@ -66,6 +66,13 @@ impact discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md`
 records the hydrogen-facing boundary.
 
+The R-eta readout-retirement target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md`
+is the positive import-retirement path for the supplied R-eta premise. It
+packages `R_ETA_READOUT_IDENTIFICATION_RETAINED` as h-class plus h-unit, and
+if accepted can feed the exact theorem and radian-readout license inputs under
+the two-ninths/radian subgate. It is not supplied on the current surface.
+
 The two-ninths/radian-readout target discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`
 packages the next sub-lane as
@@ -82,6 +89,7 @@ supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 
 | surface | supplies | does not supply |
 |---|---|---|
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; h-class plus h-unit | current retained R-eta derivation or K2 exactness |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 supplied-premise conditionality boundary | retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, or hydrogen |
 | `#5022` audit repair for the delta-eta chain | open conditionality repair: R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, or two-ninths/radian handoff |
 | `#5020` Koide R-eta value-face PR | open value-face movement: registered-angle functional, counterfactual classification, law-freeness, unit-face dissolution, and named exactness residual | retained exact `2/9` theorem, radian-readout license, owner/audit acceptance |
@@ -190,6 +198,7 @@ comparator input, owner decision, or audit decision is hidden as background.
 
 | cited surface | residual it attacks | residual here | match? |
 |---|---|---|---|
+| R-eta readout-retirement target | positive h-class/h-unit import-retirement target | target only, no closure evidence | yes |
 | #5022 audit-repair PR | conditional R-eta bookkeeping and retained K-orbit form authority | no retained R-eta derivation or audit acceptance | yes as guard |
 | #5022 impact discriminator | hydrogen-facing #5022 boundary | no K2 or hydrogen closure evidence | yes |
 | #5020 value-face PR | registered-angle/value-face classification | value-face input only | yes |

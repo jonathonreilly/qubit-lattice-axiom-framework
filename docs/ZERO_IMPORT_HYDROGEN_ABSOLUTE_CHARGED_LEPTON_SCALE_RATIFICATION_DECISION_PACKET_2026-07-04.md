@@ -177,6 +177,15 @@ records that current retained, primitive, and open-PR surfaces do not supply
 unsupplied upstream input until owner/audit acceptance or retained theorem
 status lands.
 
+The A3 no-double-count composition decision packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages the K4.4 single-spend control as its own ten-input handoff. If
+accepted, it can conditionally supply `NO_SOURCE_A3_DOUBLE_COUNT` and
+`NO_SOURCE_DOUBLE_COUNT`, but it does not supply
+`A3_PRECISION_PLACEMENT_RETAINED`, any P1/P2/P3/P4 placement theorem,
+`C_A3`, `N_A3`, or electron mass. K4 must still treat A3 placement itself as
+an unsupplied upstream input.
+
 ## Current Open PR Alignment
 
 Open PRs were refreshed on 2026-07-04 local time / 2026-07-05 UTC before this
@@ -204,6 +213,7 @@ inputs here.
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | source-side decision that can conditionally yield exact `S_l = 1/256` | source singleton only, not A3 or electron readout |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_RATIFICATION_DECISION_PACKET_2026-07-04.md` | one-placement/no-double-count decision for `C_A3` or `N_A3` | placement only, not the scale assembly by itself |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for retained A3 precision placement | retained A3 placement remains an unsupplied upstream input |
+| `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional single-spend composition law for `NO_SOURCE_A3_DOUBLE_COUNT` | no A3 placement theorem, correction value, scale assembly, or electron mass |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P1_SOURCE_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface audit for P1 source-readout correction | no `P1_SOURCE_READOUT_CORRECTION_RETAINED` or `CORRECTED_SOURCE_READOUT_THEOREM_RETAINED` on current surfaces |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md` | sharp P2 weak-front target | target support only, not retained front matching |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface audit for P2 matching | no `CHARGED_LEPTON_FRONT_MATCHING_RETAINED` or `MATCHING_THEOREM_RETAINED` on current surfaces |

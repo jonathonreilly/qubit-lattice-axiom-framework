@@ -22,6 +22,7 @@ SOURCE_PROBE_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_
 PRECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_PRECISION_CORRECTION_FIREWALL_2026-07-04.md"
 PLACEMENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_CORRECTION_PLACEMENT_DISCRIMINATOR_2026-07-04.md"
 A3_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+A3_NO_DOUBLE_COUNT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 P1_SOURCE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P1_SOURCE_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 P2_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md"
 P2_FRONT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md"
@@ -132,6 +133,7 @@ def main() -> None:
         PRECISION,
         PLACEMENT,
         A3_NO_GO,
+        A3_NO_DOUBLE_COUNT,
         P1_SOURCE_NO_GO,
         P2_TARGET,
         P2_FRONT_NO_GO,
@@ -193,6 +195,9 @@ def main() -> None:
         "(C * F_0) * S_0 * R_0",
         "F_0 * S_0 * (C * R_0)",
         "F_0 * (1/N_A3) * R_0",
+        "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "NO_SOURCE_DOUBLE_COUNT",
+        "NO_SOURCE_A3_DOUBLE_COUNT",
         "#5011",
         "#5010",
         "#5009",
@@ -265,6 +270,7 @@ def main() -> None:
     precision = read(PRECISION)
     placement = read(PLACEMENT)
     a3_no_go = read(A3_NO_GO)
+    a3_no_double_count = read(A3_NO_DOUBLE_COUNT)
     p1_source_no_go = read(P1_SOURCE_NO_GO)
     p2_target = read(P2_TARGET)
     p3_koide_no_go = read(P3_KOIDE_NO_GO)
@@ -288,6 +294,8 @@ def main() -> None:
     audit.check("A3 placement discriminator lists source/front/Koide/direct placements", all(p in placement for p in ["P1 source-readout correction", "P2 front-factor/threshold correction", "P3 Koide/electron-readout correction", "P4 direct noninteger divisor"]))
     audit.check("A3 decision references A3 current-surface no-go", A3_NO_GO.name in note and "A3 placement target remains needed" in note)
     audit.check("A3 current-surface no-go keeps A3 placement unsupplied", "current retained, primitive, and open-PR surfaces do not supply" in a3_no_go and "A3_PRECISION_PLACEMENT_RETAINED" in a3_no_go)
+    audit.check("A3 decision references no-double-count packet", A3_NO_DOUBLE_COUNT.name in note)
+    audit.check("no-double-count packet is composition-only", "NO_SOURCE_DOUBLE_COUNT" in a3_no_double_count and "does not select P1/P2/P3/P4" in a3_no_double_count)
     audit.check("P1 current-surface no-go keeps source correction open", "P1_SOURCE_READOUT_CORRECTION_RETAINED" in p1_source_no_go and "CORRECTED_SOURCE_READOUT_THEOREM_RETAINED" in p1_source_no_go)
     audit.check("P2 target names weak-front theorem", "F_phys = C_A3 * g_2 * (1/sqrt(2))" in p2_target and "CHARGED_LEPTON_FRONT_MATCHING_RETAINED" in p2_target)
     audit.check("P3 current-surface no-go keeps Koide readout correction open", "P3_KOIDE_ELECTRON_READOUT_CORRECTION_RETAINED" in p3_koide_no_go and "KOIDE_ELECTRON_A3_CORRECTION_THEOREM_RETAINED" in p3_koide_no_go)

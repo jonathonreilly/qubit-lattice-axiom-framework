@@ -101,6 +101,14 @@ They are not dependency-identical. Spending two placements gives
 `C_A3^2 * F_0 * S_0 * R_0`, not the one-correction product. Thus current
 product algebra is support for a decision surface, not retained A3 placement.
 
+The A3 no-double-count composition decision packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages the single-spend rule as a separate handoff for
+`NO_SOURCE_DOUBLE_COUNT` and `NO_SOURCE_A3_DOUBLE_COUNT`. That packet can
+move the composition-control input if owner/audit accepted, but it does not
+select a placement theorem, derive `C_A3`, derive `N_A3`, or supply
+`A3_PRECISION_PLACEMENT_RETAINED`.
+
 ## Current-Surface Audit
 
 | surface | supplies | does not supply |
@@ -108,6 +116,7 @@ product algebra is support for a decision surface, not retained A3 placement.
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_RATIFICATION_DECISION_PACKET_2026-07-04.md` | nine-input A3 placement owner/audit handoff | current retained A3 placement |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_PRECISION_CORRECTION_FIREWALL_2026-07-04.md` | `N_A3`, `C_A3`, target size, and route shapes | correction theorem or placement theorem |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_CORRECTION_PLACEMENT_DISCRIMINATOR_2026-07-04.md` | separates P1/P2/P3/P4/P5 placement classes | owner/audit acceptance or selected retained theorem |
+| `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional no-double-count composition handoff | selected placement theorem, correction value, or retained A3 placement |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P1_SOURCE_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for P1 | retained P1 placement theorem |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_CHARGED_LEPTON_FRONT_MATCHING_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for P2 | retained P2 placement theorem |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P3_KOIDE_ELECTRON_READOUT_CORRECTION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for P3 | retained P3 placement theorem |
@@ -148,6 +157,7 @@ Merge-state labels are moving review metadata, not proof inputs.
 |---|---|
 | P1-P4 each had branch no-gos | the aggregate current-surface non-supply boundary for `A3_PRECISION_PLACEMENT_RETAINED` is explicit |
 | product-equivalent placements could be overread as retained A3 placement | one-placement, retained-theorem, and no-double-count controls are separated |
+| no-double-count was embedded in the larger A3 placement packet | the single-spend composition law now has a standalone decision contract |
 | K4 could count the A3 decision packet as current retained input | K4 must treat A3 placement as unsupplied until retained derivation or owner/audit acceptance lands |
 
 ## No-Go Discipline Gate

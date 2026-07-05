@@ -538,6 +538,13 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   records that current retained, primitive, and open-PR surfaces do not supply
   `A3_PRECISION_PLACEMENT_RETAINED`; the A3 placement target remains needed
   before K4 can spend retained precision placement.
+  The A3 no-double-count composition ratification decision packet
+  `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_NO_DOUBLE_COUNT_COMPOSITION_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  packages the single-spend composition law below A3 and K4. If accepted, it
+  can conditionally supply `NO_SOURCE_DOUBLE_COUNT` and
+  `NO_SOURCE_A3_DOUBLE_COUNT`, but it does not select P1/P2/P3/P4, does not
+  supply `A3_PRECISION_PLACEMENT_RETAINED`, and does not derive `C_A3`,
+  `N_A3`, `m_e`, `alpha(0)`, or hydrogen.
   The absolute charged-lepton scale ratification decision packet
   `ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md`
   packages K4 after the source-side and A3 handoffs: K4_SCALE_TEXT_LOCK,

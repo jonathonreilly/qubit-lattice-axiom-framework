@@ -64,6 +64,11 @@ The R-Lep thresholds current-surface no-go
 records that current retained, primitive, and open-PR surfaces do not supply
 `R_LEP_THRESHOLDS_RETAINED`; the R-Lep threshold target remains needed before
 alpha0 transport can spend charged-lepton threshold support.
+The R-Lep thresholds ratification decision packet
+`ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages the parent eleven-input handoff for `R_LEP_THRESHOLDS_RETAINED` and
+`T_LEP_THRESHOLD_MOMENT_RETAINED`, while keeping QED loop, heavy-quark,
+hadronic, scheme/matching, alpha0, and hydrogen closure downstream.
 
 ## Finite Target Algebra
 

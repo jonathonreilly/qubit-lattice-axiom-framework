@@ -162,6 +162,13 @@ The R-Lep thresholds current-surface no-go
 records that current retained, primitive, and open-PR surfaces do not supply
 `R_LEP_THRESHOLDS_RETAINED`; the R-Lep threshold target remains needed before
 this packet can spend charged-lepton threshold support.
+The R-Lep thresholds ratification decision packet
+`ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages the parent R-Lep handoff for `R_LEP_THRESHOLDS_RETAINED` and
+`T_LEP_THRESHOLD_MOMENT_RETAINED`; if accepted with all inputs, it supplies
+the charged-lepton threshold input consumed here, but not the QED loop kernel,
+heavy-quark thresholds, hadronic substrate, scheme/matching, alpha0, or
+hydrogen by itself.
 
 The alpha0 transport current-surface no-go
 `ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
@@ -198,6 +205,7 @@ inputs here.
 | `ZERO_IMPORT_HYDROGEN_ALPHA_QED_LOOP_KERNEL_TARGET_DISCRIMINATOR_2026-07-04.md` | alpha transport target and closure inputs | target support only, not retained alpha0 |
 | `ZERO_IMPORT_HYDROGEN_QED_LOOP_KERNEL_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for the QED loop kernel | `QED_LOOP_KERNEL_RETAINED` |
 | `ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for charged-lepton thresholds | `R_LEP_THRESHOLDS_RETAINED` |
+| `ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | parent R-Lep threshold owner/audit handoff | alpha0 still needs the other transport inputs |
 | `ATOMIC_LANE2_QED_RUNNING_DEPENDENCY_FIREWALL_NOTE_2026-04-30.md` | R-Lep/R-Q-Heavy/R-Had-NP split | reduction/firewall only |
 | `ATOMIC_LANE2_ALPHA0_RUNNING_BRIDGE_BOUNDARY_NOTE_2026-04-29.md` | high-scale alpha alone does not determine alpha0 | boundary only |
 | `frontier_atomic_qed_threshold_bridge_firewall.py` | `b_QED` plus high-scale alpha underdetermines threshold placement | firewall only |

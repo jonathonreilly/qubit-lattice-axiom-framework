@@ -139,6 +139,13 @@ mass triple, species labels, `T_LEP_THRESHOLD_MOMENT_RETAINED`, or
 `R_LEP_THRESHOLDS_RETAINED`. The threshold-moment map target remains needed
 before R-Lep can spend charged-lepton threshold logs.
 
+The R-Lep thresholds ratification decision packet
+`ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages the parent eleven-input owner/audit route for
+`R_LEP_THRESHOLDS_RETAINED` and `T_LEP_THRESHOLD_MOMENT_RETAINED`. It is the
+positive import-retirement handoff for this target, not current retained
+threshold supply.
+
 ## Current-Surface Audit
 
 | surface | supplies | does not supply |
@@ -149,6 +156,7 @@ before R-Lep can spend charged-lepton threshold logs.
 | `ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | downstream alpha0 non-supply boundary | standalone R-Lep closure |
 | `ZERO_IMPORT_HYDROGEN_CHARGED_LEPTON_MASS_SPECTRUM_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional full `e`, `mu`, `tau` mass-triple and label handoff | R-Lep threshold moment or current retained spectrum |
 | `ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLD_MOMENT_MAP_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional log-threshold map handoff | mass spectrum, retained threshold moment, or R-Lep closure |
+| `ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional parent R-Lep owner/audit handoff | current retained R-Lep consequence |
 | `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md` | physical electron mass handoff | `mu`/`tau` thresholds or full mass triple |
 | `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current electron-mass non-supply boundary | retained charged-lepton mass triple |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_RATIFICATION_DECISION_PACKET_2026-07-04.md` | conditional branch-to-mass map | phase, species labels, absolute scale, or retained thresholds |
@@ -193,6 +201,7 @@ metadata, not proof inputs here.
 | `ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_RATIFICATION_DECISION_PACKET_2026-07-04.md` | consumes `R_LEP_THRESHOLDS_RETAINED`; does not derive it |
 | `ZERO_IMPORT_HYDROGEN_CHARGED_LEPTON_MASS_SPECTRUM_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages `PHYSICAL_CHARGED_LEPTON_MASS_TRIPLE_RETAINED` and `PHYSICAL_CHARGED_LEPTON_SPECIES_LABELS_RETAINED`; does not derive threshold logs |
 | `ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLD_MOMENT_MAP_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages `LEPTON_THRESHOLD_MOMENT_MAP_RETAINED`; does not derive masses or R-Lep closure |
+| `ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the parent R-Lep threshold decision contract; does not itself ratify current threshold supply |
 | `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md` | final electron-mass consumer, not full `e,mu,tau` threshold spectrum |
 | `SCALE_REFERENCE_PRIMITIVE_NOTE.md` | units conversion only; zero dimensionless lepton-mass content |
 

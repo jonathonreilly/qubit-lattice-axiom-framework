@@ -270,6 +270,14 @@ retirement. It attacks fixed-locus class membership and the single
 fixed-point readout bridge only; it does not supply h-unit, full R-eta
 retirement, K2 exactness, physical electron mass, alpha input, or hydrogen.
 
+The R-eta h-class fixed-locus ratification decision packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md`)
+packages that subinput as a thirteen-input owner/audit contract. It keeps
+forced `2/9` arithmetic, finite KS support, W2 registrability, and ambient
+heat-trace support separate from physical carrier realization and the single
+fixed-point readout theorem; it does not supply h-unit, full R-eta retirement,
+K2 exactness, physical electron mass, alpha input, or hydrogen.
+
 The two-ninths/radian-readout target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`)
 packages the K2 sub-handoff `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.

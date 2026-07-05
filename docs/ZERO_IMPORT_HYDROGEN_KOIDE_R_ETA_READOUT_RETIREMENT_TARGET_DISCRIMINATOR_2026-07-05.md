@@ -98,6 +98,15 @@ The h-class current-surface no-go
 `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md`
 records that the current surface does not supply that subinput.
 
+The physical carrier-context target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages the shared input `PHYSICAL_CARRIER_CONTEXT_RETAINED`. Its ratification
+decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+is a thirteen-input owner/audit contract, and its current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that the current surface does not supply that carrier-context input.
+
 ## Current Surface
 
 | surface | useful content | residual |
@@ -108,6 +117,9 @@ records that the current surface does not supply that subinput.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` | identity-unit selection theorem and owner/audit remain open |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_CLASS_RETAINED`; fixed-locus class membership only | h-unit, owner/audit, and full R-eta retirement remain open |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `R_ETA_H_CLASS_RETAINED` | physical carrier, single fixed-point readout, and owner/audit remain open |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `PHYSICAL_CARRIER_CONTEXT_RETAINED`; physical carrier context only | h-class, h-unit, single fixed-point readout, owner/audit, and full R-eta retirement remain open |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | carrier-context owner/audit decision packet | no retained carrier consequence unless accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `PHYSICAL_CARRIER_CONTEXT_RETAINED` | carrier realization theorem and owner/audit remain open |
 | `ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md` | decomposes R-eta into forced form layer plus `A_R-eta` | `A_R-eta` remains admitted, h-class plus h-unit |
 | `ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md` | closes supplied finite-context registrability fragment | physical carrier realization and `A_R-eta` value remain open |
 | `KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md` | retained arithmetic plus R-eta conditional implication to `|delta| = 2/9` | R-eta is the named conditional input |

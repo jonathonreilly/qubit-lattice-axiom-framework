@@ -80,11 +80,25 @@ It still does not supply `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`,
 `R_ETA_READOUT_IDENTIFICATION_RETAINED`, owner/audit acceptance for full
 R-eta retirement, or any downstream electron-mass or hydrogen input.
 
+The physical carrier-context target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages `PHYSICAL_CARRIER_CONTEXT_RETAINED` as a shared upstream input. Its
+ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+make clear that current surfaces do not supply the carrier-context theorem.
+Even if accepted, that lane supplies carrier context only; this h-class target
+still separately needs `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`.
+
 ## Current Surface
 
 | surface | useful content | residual |
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | packages `R_ETA_READOUT_IDENTIFICATION_RETAINED` as h-class plus h-unit | this note supplies only the h-class target |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `PHYSICAL_CARRIER_CONTEXT_RETAINED` | single fixed-point readout, h-class owner/audit, h-unit, and full R-eta remain open |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | carrier-context owner/audit decision packet | no retained carrier consequence unless accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `PHYSICAL_CARRIER_CONTEXT_RETAINED` | carrier realization theorem and owner/audit remain open |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | packages the h-unit target | independent; does not supply h-class |
 | `ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md` | decomposes `A_R-eta` into h-class plus h-unit | h-class remains admitted, not retired |
 | `ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md` | closes supplied finite-context Record-registrability | physical carrier realization and `A_R-eta` value atom remain open |
@@ -98,9 +112,9 @@ R-eta retirement, or any downstream electron-mass or hydrogen input.
 The primitive registry was checked. The approved primitive nodes are
 `minimal_axioms`, `scale_reference_primitive`, `kinetic_isotropy_primitive`,
 and `realized_state_primitive`. They are premise nodes, not walls, but they do
-not supply `R_ETA_H_CLASS_RETAINED`, `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`,
-`R_ETA_READOUT_IDENTIFICATION_RETAINED`, `delta = 2/9`, `m_e`, `alpha(0)`, or
-hydrogen.
+not supply `PHYSICAL_CARRIER_CONTEXT_RETAINED`, `R_ETA_H_CLASS_RETAINED`,
+`R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`, `R_ETA_READOUT_IDENTIFICATION_RETAINED`,
+`delta = 2/9`, `m_e`, `alpha(0)`, or hydrogen.
 
 The companion current-surface no-go
 `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md`

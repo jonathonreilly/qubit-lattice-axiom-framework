@@ -126,6 +126,9 @@ STATIC_SOURCE_RYDBERG_RETAINED
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | packages `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` | h-unit input only |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the h-unit owner/audit decision object | h-unit only; no h-class or full R-eta |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` | no retained h-unit consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` | packages `PHYSICAL_CARRIER_CONTEXT_RETAINED` | carrier context only; no h-class, h-unit, or full R-eta |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the carrier-context owner/audit decision object | no retained carrier consequence unless accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `PHYSICAL_CARRIER_CONTEXT_RETAINED` | no retained carrier-context consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` | consumes exact value/readout/domain inputs | still needs packet-level text/domain/owner/audit |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | consumes K2 exactness inputs | still needs full ten-input K2 target |
 | approved primitives | minimal axioms, scale reference, kinetic isotropy, realized-state evaluation discipline | no phase selector, readout bridge, exact value, mass, alpha, or hydrogen |

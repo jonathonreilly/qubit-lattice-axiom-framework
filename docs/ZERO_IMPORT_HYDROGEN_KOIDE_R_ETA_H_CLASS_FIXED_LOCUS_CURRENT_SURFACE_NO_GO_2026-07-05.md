@@ -76,6 +76,9 @@ The current surface localizes that target but does not derive it.
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | thirteen-input target for `R_ETA_H_CLASS_RETAINED` | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | thirteen-input owner/audit decision packet | retained consequence; not accepted on the current surface |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `PHYSICAL_CARRIER_CONTEXT_RETAINED` | h-class retained consequence or single fixed-point readout theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | carrier-context owner/audit decision packet | retained carrier context unless accepted; no h-class by itself |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `PHYSICAL_CARRIER_CONTEXT_RETAINED` | carrier realization theorem and owner/audit remain open |
 | `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md` | forced C3 fixed-locus weights and local density `2/9` | physical single-summand readout |
 | `FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md` | forced local density at forced `d = 3` | physical readout gate |
 | `FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md` | finite Kawamoto-Smit local-density operator certificate | physical readout bridge |

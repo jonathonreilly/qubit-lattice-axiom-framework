@@ -99,6 +99,15 @@ The contract means:
 13. **AUDIT_ACCEPTANCE:** the normal independent review/audit path accepts the
     decision and dependency consequences.
 
+The physical carrier-context target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages input 6 as its own upstream handoff. Its ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+do not supply h-class by themselves; they only make the carrier-context input
+auditable separately from the single fixed-point readout theorem.
+
 No proper subset of those thirteen contract inputs is a retained h-class
 fixed-locus handoff.
 

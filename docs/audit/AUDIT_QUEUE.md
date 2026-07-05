@@ -40,10 +40,10 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 23 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | critical | 1001 | 13.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/pmns_tm2_residual_consequence_runner.py` |
 | 24 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | unaudited | critical | 1001 | 13.47 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py` |
 | 25 | `yt_ward_identity_derivation_theorem` | bounded_theorem | unaudited | critical | 1000 | 43.47 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
-| 26 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | unaudited | critical | 539 | 17.58 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ew_current_matching_rule_no_go.py` |
+| 26 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | unaudited | critical | 523 | 17.53 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ew_current_matching_rule_no_go.py` |
 | 27 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | bounded_theorem | unaudited | critical | 388 | 13.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py` |
-| 28 | `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20` | positive_theorem | unaudited | critical | 338 | 10.40 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_higgs_dressed_resolvent_root_theorem.py` |
-| 29 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | decoration | unaudited | critical | 323 | 13.34 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_q_delta_formal_ratio_repair.py` |
+| 28 | `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20` | positive_theorem | unaudited | critical | 322 | 10.34 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_higgs_dressed_resolvent_root_theorem.py` |
+| 29 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | decoration | unaudited | critical | 307 | 13.27 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_q_delta_formal_ratio_repair.py` |
 | 30 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | unaudited | critical | 297 | 11.22 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_higgs_mass_status_audit.py` |
 | 31 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | unaudited | critical | 292 | 8.70 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py` |
 | 32 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | unaudited | critical | 266 | 9.06 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_clifford_chirality_dimension_narrow.py` |
@@ -75,7 +75,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 1 | `cycle-0001` | 3 | 1000 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | critical | unaudited |
 | 2 | `cycle-0002` | 36 | 1000 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | critical | unaudited |
 | 3 | `cycle-0003` | 36 | 1000 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | critical | unaudited |
-| 4 | `cycle-0004` | 2 | 377 | `quark_cp_carrier_completion_note_2026-04-18` | critical | unaudited |
+| 4 | `cycle-0004` | 2 | 361 | `quark_cp_carrier_completion_note_2026-04-18` | critical | unaudited |
 | 5 | `cycle-0005` | 2 | 285 | `bridge_gap_hk_cube_perron_note_2026-05-06` | critical | unaudited |
 | 6 | `cycle-0006` | 3 | 285 | `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06` | critical | unaudited |
 | 7 | `cycle-0007` | 2 | 58 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | high | unaudited |

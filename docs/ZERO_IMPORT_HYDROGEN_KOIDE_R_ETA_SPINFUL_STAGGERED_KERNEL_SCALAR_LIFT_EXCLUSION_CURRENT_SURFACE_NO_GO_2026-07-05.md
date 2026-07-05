@@ -63,6 +63,9 @@ AUDIT_ACCEPTANCE
 | `STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | narrow staggered chirality support | spinful scalar-lift exclusion theorem |
 | `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` | bounded synthesis context with named residuals | unbounded physical state-action theorem or this target |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | parent KS child target that can consume this handoff | target theorem itself |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` | scalar-lift covariance exclusion and this parent handoff |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit decision shape for the route-defined `sigma.p` kernel object | scalar-lift exclusion theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the route-defined `sigma.p` kernel handoff | this scalar-lift exclusion theorem |
 
 The approved primitive registry was checked. Registered primitive nodes are
 `minimal_axioms`, `scale_reference_primitive`, `kinetic_isotropy_primitive`,
@@ -164,7 +167,7 @@ retained handoff is impossible. Untested broader resolutions are not claimed.
 
 | Candidate path | Status | What it would close |
 |---|---|---|
-| retained route-defined spinful kernel | open positive route | `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` |
+| retained route-defined spinful kernel | open positive route, now packaged by the sigma-dot-p KS-route child lane | `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` |
 | retained scalar-lift covariance failure theorem | open positive route | `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED` |
 | owner/audit acceptance after both physics inputs | open governance/audit route | `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED` |
 | KS spin-lift physical action law | separate open route | helps close the KS child theorem, but not this handoff by itself |

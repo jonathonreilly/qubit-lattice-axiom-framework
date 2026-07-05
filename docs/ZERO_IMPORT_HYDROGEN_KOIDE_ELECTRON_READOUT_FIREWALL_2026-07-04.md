@@ -225,6 +225,13 @@ The K2 exactness current-surface no-go
 records that the current retained, primitive, and open-PR surfaces do not
 supply `K2_R_ETA_EXACTNESS_RETAINED`; the target remains needed.
 
+The #5022 delta-eta audit repair treats R-eta as a declared supplied
+readout-identification premise and checks the conditional implication using
+retained K-orbit form authority. It is open with audit in progress; it does
+not supply a retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`,
+`KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`, Koide electron readout, `m_e`,
+`alpha(0)`, or hydrogen.
+
 The two-ninths/radian-readout target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`)
 packages the K2 sub-handoff `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
@@ -240,7 +247,7 @@ needed.
 
 ## Open PR Alignment
 
-Open PRs were checked on 2026-07-04 and refreshed on 2026-07-05 after `#5020`
+Open PRs were checked on 2026-07-04 and refreshed on 2026-07-05 after `#5022`
 opened. The relevant Koide stack does not close this firewall on current main:
 
 | PR | effect on K1-K3 |
@@ -346,6 +353,7 @@ No hidden admission is left buried as background.
 | `SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md` | K1 chiral/holomorphic forcing candidate | yes |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | K2 delta comparator and scale boundary | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | K2 value-face registration versus exactness residual | yes |
+| `#5022` delta-eta R-eta supplied-premise audit repair | conditional R-eta bookkeeping, not retained derivation or electron readout | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | successor target for `K2_R_ETA_EXACTNESS_RETAINED` | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K2_R_ETA_EXACTNESS_RETAINED` | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` | K2 subtarget for exact `2/9`, radian readout, and fold/branch domain | yes |
@@ -413,8 +421,8 @@ electron value. The current note keeps those layers separate: phase-blind
 - No derivation of `a_l^2`, `alpha(0)`, or hydrogen spectroscopy.
 - No audit status change for any cited row.
 - No new axiom, primitive, or admitted import.
-- No adoption or landing claim for PR `#5020`; no derivation or ratification
-  of a Koide R-eta exactness theorem.
+- No adoption or landing claim for PR `#5020` or PR `#5022`; no derivation
+  or ratification of a Koide R-eta exactness theorem.
 
 ## Verification
 

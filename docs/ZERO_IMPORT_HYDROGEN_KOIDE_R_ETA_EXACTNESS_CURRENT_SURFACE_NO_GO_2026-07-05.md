@@ -58,6 +58,12 @@ The #5020 value-face PR is the closest live lane movement, but it explicitly
 names exactness as residual. It can become one target input after adoption or
 a successor review, not the full K2 exactness handoff.
 
+The #5022 audit-repair PR is newer live Koide movement. It repairs the
+delta-eta chain by treating R-eta as a declared supplied readout-identification
+premise and reusing retained K-orbit form authority. That is useful conditional
+machinery, but it is not a retained theorem deriving R-eta, and its audit is
+still in progress.
+
 The two-ninths/radian-readout target discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`
 packages the next sub-lane as
@@ -74,6 +80,7 @@ supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 
 | surface | supplies | does not supply |
 |---|---|---|
+| `#5022` audit repair for the delta-eta chain | open conditionality repair: R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, or two-ninths/radian handoff |
 | `#5020` Koide R-eta value-face PR | open value-face movement: registered-angle functional, counterfactual classification, law-freeness, unit-face dissolution, and named exactness residual | retained exact `2/9` theorem, radian-readout license, owner/audit acceptance |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing boundary for #5020 | `K2_R_ETA_EXACTNESS_RETAINED` |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | ten-input exactness target contract | current retained consequence |
@@ -102,6 +109,7 @@ signals; clean/green status is not a proof input.
 
 | PR | queue signal | K2 exactness effect |
 |---|---:|---|
+| `#5022` audit repair: delta-eta chain R-eta supplied premise | open, audit in progress | conditional repair only; no retained R-eta derivation or K2 exactness |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft | primitive-boundary context only; no registry edit, no K2 exactness |
 | `#5020` Koide R-eta value-face registered-angle/exactness relocation | open | value-face progress; exactness residual remains open |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open | premise-hygiene context; no exactness theorem |
@@ -116,6 +124,7 @@ metadata, not proof inputs.
 | before this note | after this note |
 |---|---|
 | K2 had a target contract but no current-surface non-supply boundary | the non-supply boundary is explicit |
+| #5022 could be overread as deriving R-eta | #5022 is conditional supplied-premise repair while audit is in progress |
 | #5020 could be overread as exactness closure | #5020 is value-face progress only until exactness and readout inputs are accepted |
 | primitive-retirement review could be overread as a shortcut | #5021 is primitive-boundary context only while open/draft and no-registry-edit |
 
@@ -134,6 +143,7 @@ K2_R_ETA_EXACTNESS_RETAINED.
 | route | attempt | result |
 |---|---|---|
 | full K2 exactness contract | Accept all ten contract inputs. | OPEN POSITIVE ROUTE. This would close the handoff, but the contract is not accepted here. |
+| #5022 supplied-premise route | Treat the audit repair as deriving R-eta. | ATTEMPTED. #5022 states R-eta as a declared supplied premise and checks conditional implication, not a retained derivation. |
 | #5020 value-face route | Treat registered `Phi` standing as exactness. | ATTEMPTED. #5020 explicitly leaves exactness as residual. |
 | exact `2/9` theorem route | Prove the distinguished registered value is exactly `2/9`. | OPEN POSITIVE ROUTE. No retained theorem is supplied on the current surface. |
 | radian-readout route | License the pure number as charged-lepton `delta`. | OPEN POSITIVE ROUTE. The readout license remains a named input. |
@@ -177,6 +187,7 @@ comparator input, owner decision, or audit decision is hidden as background.
 
 | cited surface | residual it attacks | residual here | match? |
 |---|---|---|---|
+| #5022 audit-repair PR | conditional R-eta bookkeeping and retained K-orbit form authority | no retained R-eta derivation or audit acceptance | yes as guard |
 | #5020 value-face PR | registered-angle/value-face classification | value-face input only | yes |
 | #5020 impact discriminator | hydrogen-facing #5020 boundary | exactness remains residual | yes |
 | K2 exactness target discriminator | ten-input exactness handoff | current consequence absent | yes |
@@ -245,7 +256,7 @@ non-supply claim passes.
 - No derivation or ratification of `DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED`.
 - No derivation or ratification of `RADIAN_READOUT_LICENSE_RETAINED`.
 - No derivation or ratification of `FOLD_AND_BRANCH_DOMAIN_LOCK`.
-- No adoption or landing claim for PR `#5020` or PR `#5021`.
+- No adoption or landing claim for PR `#5020`, PR `#5021`, or PR `#5022`.
 - No derivation of `AC_phi_lambda`, `delta = 2/9`, `rho_e(delta)`, or `a_l^2`.
 - No derivation or ratification of K1 occupancy/counting, K3 physical species
   bridge, K4 absolute scale, native bridge, branch mass-map, or physical

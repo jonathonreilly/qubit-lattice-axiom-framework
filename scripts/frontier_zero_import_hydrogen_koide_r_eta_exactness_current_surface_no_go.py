@@ -158,6 +158,9 @@ def main() -> None:
         "AUDIT_ACCEPTANCE",
         "`#5021` primitive-retirement review draft",
         "no primitive retirement and no registry edit",
+        "`#5022` audit repair: delta-eta chain R-eta supplied premise | open",
+        "declared supplied readout-identification premise",
+        "conditional repair only; no retained R-eta derivation or K2 exactness",
         "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open",
         "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",
         "No-Go Discipline Gate",
@@ -259,6 +262,7 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     open_markers = [
+        "`#5022` audit repair: delta-eta chain R-eta supplied premise | open",
         "`#5021` primitive-retirement review: meta gate map, no retirements | open draft",
         "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open",
         "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",
@@ -275,7 +279,7 @@ def main() -> None:
         "No derivation or ratification of `DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED`.",
         "No derivation or ratification of `RADIAN_READOUT_LICENSE_RETAINED`.",
         "No derivation or ratification of `FOLD_AND_BRANCH_DOMAIN_LOCK`.",
-        "No adoption or landing claim for PR `#5020` or PR `#5021`.",
+        "No adoption or landing claim for PR `#5020`, PR `#5021`, or PR `#5022`.",
         "No derivation of `AC_phi_lambda`, `delta = 2/9`, `rho_e(delta)`, or `a_l^2`.",
         "No derivation or ratification of K1 occupancy/counting, K3 physical species",
         "No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`,",

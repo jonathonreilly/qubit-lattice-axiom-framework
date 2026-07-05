@@ -63,6 +63,7 @@ AUDIT_ACCEPTANCE
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | conditional comparator at `delta = 2/9` | zero-import proof input |
 | `CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md` | bounded theorem under explicit Tier-A admission | retained zero-import `delta = 2/9` theorem |
 | `KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md` | one Z2 orientation object for count and phase chirality | magnitude `2/9`, radian unit, or realized handedness |
+| `#5022` audit repair for the delta-eta chain | open conditionality repair: R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | retained R-eta derivation, exact theorem, radian-readout license, or subhandoff |
 | `#5020` Koide R-eta value-face PR | open value-face progress | exact theorem, radian-readout license, or fold/domain lock |
 | `#5021` primitive-retirement review draft | primitive-boundary meta review; reports no primitive retirement and no registry edit | new two-ninths/radian primitive or retained subhandoff |
 | approved primitives | minimal axioms, scale reference, kinetic-form isotropy, realized-state evaluation discipline | `delta`, `2/9` theorem, radian-readout license, fold/domain lock, `m_e`, `alpha(0)`, or hydrogen |
@@ -83,6 +84,7 @@ status is not proof input.
 
 | PR | queue signal | subgate effect |
 |---|---:|---|
+| `#5022` audit repair: delta-eta chain R-eta supplied premise | open, audit in progress | conditional repair only; no retained R-eta derivation, exact theorem, or radian-readout license |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft | primitive-boundary context only; no registry edit, no subgate closure |
 | `#5020` Koide R-eta value-face registered-angle/exactness relocation | open | value-face progress; exactness and radian readout remain open |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open | premise-hygiene context; no exact theorem or readout license |
@@ -94,6 +96,7 @@ status is not proof input.
 | before this note | after this note |
 |---|---|
 | two-ninths/radian had a target contract | the current-surface non-supply boundary is explicit |
+| #5022 could be overread as a retained R-eta derivation | #5022 is conditional supplied-premise repair while audit is in progress |
 | finite `2/9` density could be overread as radian phase | finite density remains context until exact theorem and readout license are accepted |
 | #5020 could be overread as supplying the exact subgate | #5020 is value-face progress only |
 | #5021 could be overread as a primitive shortcut | #5021 is primitive-boundary context only while no registry edit exists |
@@ -113,6 +116,7 @@ KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED.
 | route | attempt | result |
 |---|---|---|
 | full subgate contract | Accept all nine contract inputs. | OPEN POSITIVE ROUTE. This would close the handoff, but the contract is not accepted here. |
+| #5022 supplied-premise route | Treat the audit repair as deriving R-eta and therefore the two-ninths/radian readout. | ATTEMPTED. #5022 states R-eta as a declared supplied premise and checks conditional implication, not a retained derivation or readout license. |
 | finite density route | Treat forced local `2/9` density as the charged-lepton radian phase. | ATTEMPTED. The finite-density note explicitly keeps physical readout open. |
 | native angular-unit route | Use a qubit-on-`Z^3` native angular unit to supply `2/9` radians. | RULED OUT BY PRIOR. The native-unit separation theorem separates pure `2/9` from native `q*pi` units. |
 | Type-B-to-radian route | Supply a retained observable law that reads the pure rational as a radian phase. | OPEN POSITIVE ROUTE. This is exactly `RADIAN_READOUT_LICENSE_RETAINED`, not supplied on the current surface. |
@@ -154,6 +158,7 @@ owner decision, audit decision, or comparator input is hidden as background.
 
 | cited surface | residual it attacks | residual here | match? |
 |---|---|---|---|
+| #5022 audit-repair PR | conditional R-eta bookkeeping and retained K-orbit form authority | no retained R-eta derivation, exact theorem, or radian readout | yes as guard |
 | finite `2/9` density note | exact density context | context input only | yes |
 | native-unit separation theorem | unit confusion | radian-readout license still open | yes |
 | A1 radian-bridge audit | Type-B-to-radian law | readout license target | yes |
@@ -219,7 +224,7 @@ non-supply claim passes.
 - No derivation or ratification of `RADIAN_READOUT_LICENSE_RETAINED`.
 - No derivation or ratification of `FOLD_AND_BRANCH_DOMAIN_LOCK`.
 - No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.
-- No adoption or landing claim for PR `#5020` or PR `#5021`.
+- No adoption or landing claim for PR `#5020`, PR `#5021`, or PR `#5022`.
 - No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed
   `m_e`, observed `alpha(0)`, or observed hydrogen as proof input.
 - No derivation of K1 occupancy/counting, K3 physical species bridge, K4

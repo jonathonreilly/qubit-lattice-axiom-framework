@@ -74,6 +74,12 @@ The two-ninths/radian-readout current-surface no-go
 records that the current retained, primitive, and open-PR surfaces do not
 supply that sub-handoff.
 
+The #5022 audit-repair PR is live conditional Koide progress: it declares
+R-eta as a supplied readout-identification premise and checks the implication
+from retained arithmetic to `|delta| = 2/9`. It is not a retained derivation of
+R-eta, does not close this K2 exactness target, and does not supply the
+two-ninths/radian-readout sub-handoff.
+
 ## Dependency Boundary
 
 | object | if this target is accepted | still not supplied |
@@ -158,6 +164,7 @@ K2 exactness is a named ten-input target after #5020, not a retained result.
 
 | cited surface | residual it attacks | residual here | match? |
 |---|---|---|---|
+| #5022 audit-repair PR | conditional R-eta bookkeeping and retained K-orbit form authority | not retained R-eta derivation or K2 closure | yes as guard |
 | `#5020` body | value-face registration and exactness split | value-face input only | yes |
 | #5020 impact discriminator | hydrogen-facing K2 boundary | names exactness residual | yes |
 | two-ninths/radian-readout target | K2 subgate for exact value, radian license, and domain lock | subtarget only | yes |
@@ -218,7 +225,7 @@ discriminator passes.
 - No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.
 - No derivation of `AC_phi_lambda`.
 - No derivation of `delta = 2/9`.
-- No adoption or landing claim for PR `#5020`.
+- No adoption or landing claim for PR `#5020` or PR `#5022`.
 - No derivation or ratification of K1 occupancy/counting, K3 physical species
   bridge, K4 absolute scale, native Z1-Z3 bridge, or Koide branch mass-map.
 - No derivation or ratification of `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`.

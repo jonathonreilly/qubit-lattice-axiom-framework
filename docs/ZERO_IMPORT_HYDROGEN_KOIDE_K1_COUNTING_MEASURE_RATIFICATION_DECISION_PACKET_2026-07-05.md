@@ -24,6 +24,13 @@ selector theorem, the dimension/Born default exclusion, owner ratification, or
 audit acceptance. This packet packages the K1 object as a reviewable owner/audit
 decision contract without spending it as retained.
 
+The selector theorem and default-exclusion inputs are now named as the narrower
+subtarget
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md`.
+That packet can feed `ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED` and
+`DIMENSION_BORN_DEFAULT_EXCLUSION` if later accepted, but it does not by itself
+ratify `K1_COUNTING_MEASURE_RETAINED`.
+
 ## Decision Object
 
 The decision object is exactly:
@@ -117,6 +124,7 @@ STATIC_SOURCE_RYDBERG_RETAINED
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` | names the ten-input K1 target | target only; this packet packages the decision object |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of K1 | no retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | names `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` for the selector/default-exclusion inputs | subtarget only; no full K1 retained consequence |
 | `CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md` | one-binary reduction and block/dimension arithmetic | no selector theorem |
 | `SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md` | right-shaped chiral/equivariant/holomorphic route | open determinant/readout theorem |
 | `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md` | current-surface non-supply and premise candidate | not adopted theorem closure |
@@ -126,7 +134,7 @@ STATIC_SOURCE_RYDBERG_RETAINED
 | `#4932` AC measure binary axiom shortcut no-go | open, clean shortcut blocker | no selector theorem |
 | `#4991` owner-governed Tier-A retirement | open, clean status movement | premise standing only, not theorem closure |
 | merged `#5019` Koide `AC_phi_lambda` axiom-surface rebase | premise-hygiene and audit-readiness context | no `AC_phi_lambda` or K1 derivation |
-| open `#5020` Koide R-eta value-face PR | K2 value-face progress | no K1 selector |
+| merged `#5020` Koide R-eta value-face PR | K2 value-face progress | no K1 selector |
 | merged `#5022` delta-eta audit repair | K2 supplied-premise conditionality repair | no K1 selector |
 | `#5021` primitive-retirement review draft | primitive-boundary context; no primitive retirement and no registry edit | no primitive shortcut |
 | `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md` | downstream physical electron mass handoff | cannot spend K1 alone as electron mass |
@@ -149,7 +157,7 @@ status is not proof input.
 | `#4932` AC measure binary axiom shortcut no-go | open, clean | shortcut blocker only; no selector theorem |
 | `#4991` owner-governed Tier-A retirement | open, clean | status progress for old occupancy atoms; no theorem closure |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene context; no `AC_phi_lambda` or K1 derivation |
-| `#5020` Koide R-eta value-face registered-angle/exactness relocation | open, clean | K2 value-face progress only |
+| `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | K2 value-face progress only |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft | primitive-boundary context only; no registry edit |
 | `#5022` delta-eta chain R-eta supplied-premise audit repair | merged, audit success | K2 conditionality repair only |
 | `#5017`/`#5018` chirality/domain-wall stack | open | above-C3 context only; no K1 or electron mass |
@@ -179,6 +187,7 @@ contract.
 | route | attempt | result |
 |---|---|---|
 | full K1 decision contract | Accept all ten inputs. | SUPPORTED CONDITIONALLY. This is the only route in this packet that yields `K1_COUNTING_MEASURE_RETAINED`. |
+| selector/default-exclusion subtarget | Accept all eleven inputs for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`. | PARTIAL POSITIVE ROUTE. It can supply two K1 inputs, not full K1. |
 | C3 algebra route | Treat `Q = 1/3 + (2/3)r` as selecting `r = 1/2`. | ATTEMPTED. The algebra supplies the form, not the selector. |
 | one-binary synthesis route | Treat the binary reduction as choosing the block/orbit cell. | ATTEMPTED. The synthesis note does not rank the two measures. |
 | supertrace / holomorphic determinant route | Use a chiral or holomorphic determinant to count the doublet once. | OPEN POSITIVE ROUTE. This is the intended selector-theorem route, not retained here. |
@@ -226,6 +235,7 @@ primitive shortcut, or comparator input is hidden as background.
 |---|---|---|---|
 | K1 target discriminator | ten-input target | decision packet object | yes |
 | K1 current-surface no-go | current non-supply boundary | no retained consequence | yes |
+| K1 selector/default-exclusion target discriminator | two-input subtarget | possible future support, not full K1 | yes |
 | counting-bit synthesis note | one binary reduction | support only | yes |
 | supertrace/equivariant-index open lead | chiral/holomorphic count route | selector-theorem route | yes |
 | orbit-occupancy independence note | current-surface non-supply and premise candidate | no retained K1 | yes |
@@ -263,6 +273,7 @@ Legitimate partial-closure paths remain:
 |---|---|
 | retained supertrace/equivariant-index/holomorphic determinant theorem | `ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED` |
 | retained transfer/kernel coefficient theorem for the corner realization | `DIMENSION_BORN_DEFAULT_EXCLUSION` if it selects the block/orbit cell |
+| owner/audit acceptance of the selector/default-exclusion subtarget | two technical K1 inputs, not full K1 by itself |
 | owner/audit acceptance of an occupancy premise | premise standing only, not zero-import theorem closure unless explicitly scoped as such |
 | owner/audit acceptance of a new primitive after registry/policy update | future premise node only; not present on the current surface |
 | owner/audit acceptance of this packet after all target inputs exist | `K1_COUNTING_MEASURE_RETAINED` |

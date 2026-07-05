@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verifier for the Koide K1 counting-measure current-surface no-go."""
+"""Verifier for the Koide K1 selector/default-exclusion target."""
 
 from __future__ import annotations
 
@@ -10,12 +10,12 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md"
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 KOIDE_FIREWALL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md"
 K1_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md"
+K1_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 K1_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
-K1_SELECTOR_DEFAULT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md"
 COUNTING_SYNTHESIS = ROOT / "docs" / "CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md"
 SUPERTRACE_OPEN = ROOT / "docs" / "SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md"
 OCCUPANCY_INDEPENDENCE = ROOT / "docs" / "KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md"
@@ -32,6 +32,26 @@ PRIMITIVE_REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.jso
 TIER_A_REGISTRY = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
 
 
+SELECTOR_INPUTS = {
+    "K1_SELECTOR_TEXT_LOCK",
+    "C3_CIRCULANT_FORM_RETAINED",
+    "BLOCK_VS_DIMENSION_FORK_REPROVEN",
+    "CHIRAL_OR_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED",
+    "REAL_VECTOR_TRACE_DEFAULT_EXCLUDED",
+    "NO_RECORD_OCCUPANCY_PREMISE_INPUT",
+    "NO_K2_K3_K4_OR_MASS_INPUT",
+    "NO_COMPARATOR_PROOF_INPUT",
+    "NO_NEW_PRIMITIVE_OR_AXIOM",
+    "OWNER_RATIFICATION",
+    "AUDIT_ACCEPTANCE",
+}
+
+SELECTOR_CONSEQUENCE_SUPPLIES = {
+    "K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED",
+    "ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED",
+    "DIMENSION_BORN_DEFAULT_EXCLUSION",
+}
+
 K1_INPUTS = {
     "K1_COUNTING_TEXT_LOCK",
     "C3_CIRCULANT_FORM_RETAINED",
@@ -41,22 +61,6 @@ K1_INPUTS = {
     "NO_K2_K3_K4_OR_MASS_INPUT",
     "NO_COMPARATOR_PROOF_INPUT",
     "NO_NEW_PRIMITIVE_OR_AXIOM",
-    "OWNER_RATIFICATION",
-    "AUDIT_ACCEPTANCE",
-}
-
-CURRENT_SURFACE_INPUTS = {
-    "K1_COUNTING_TEXT_LOCK",
-    "C3_CIRCULANT_FORM_RETAINED",
-    "BLOCK_VS_DIMENSION_FORK_REPROVEN",
-    "NO_K2_K3_K4_OR_MASS_INPUT",
-    "NO_COMPARATOR_PROOF_INPUT",
-    "NO_NEW_PRIMITIVE_OR_AXIOM",
-}
-
-EXPECTED_MISSING = {
-    "ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED",
-    "DIMENSION_BORN_DEFAULT_EXCLUSION",
     "OWNER_RATIFICATION",
     "AUDIT_ACCEPTANCE",
 }
@@ -71,8 +75,8 @@ ELECTRON_MASS_INPUTS = {
 }
 
 HYDROGEN_INPUTS = ELECTRON_MASS_INPUTS | {
-    "RETAINED_ALPHA0_LOW_ENERGY_COULOMB",
-    "RETAINED_STATIC_SOURCE_NR_COULOMB_LIMIT",
+    "ALPHA0_RETAINED",
+    "STATIC_SOURCE_RYDBERG_RETAINED",
 }
 
 
@@ -120,6 +124,10 @@ def all_subsets(items: set[str]) -> list[set[str]]:
     return subsets
 
 
+def closes_selector_default_exclusion(inputs: set[str]) -> bool:
+    return SELECTOR_INPUTS <= inputs
+
+
 def closes_k1(inputs: set[str]) -> bool:
     return K1_INPUTS <= inputs
 
@@ -157,8 +165,8 @@ def main() -> None:
         GOAL,
         KOIDE_FIREWALL,
         K1_TARGET,
+        K1_NO_GO,
         K1_DECISION,
-        K1_SELECTOR_DEFAULT,
         COUNTING_SYNTHESIS,
         SUPERTRACE_OPEN,
         OCCUPANCY_INDEPENDENCE,
@@ -182,56 +190,42 @@ def main() -> None:
 
     section("Required note content")
     required_phrases = [
-        "Koide K1 Counting-Measure Current-Surface No-Go",
-        "current-surface no-go / import-retirement target",
+        "Koide K1 Selector/Default-Exclusion Target Discriminator",
+        "target discriminator / Koide K1 selector subhandoff",
         "does not ratify K1",
-        "K1_COUNTING_MEASURE_RETAINED",
-        "current retained, primitive, merged-PR, and open-PR surfaces do not supply",
-        "K1_COUNTING_TEXT_LOCK",
-        "C3_CIRCULANT_FORM_RETAINED",
-        "BLOCK_VS_DIMENSION_FORK_REPROVEN",
+        "K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED",
         "ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED",
         "DIMENSION_BORN_DEFAULT_EXCLUSION",
+        "K1_COUNTING_MEASURE_RETAINED",
+        "K1_SELECTOR_TEXT_LOCK",
+        "C3_CIRCULANT_FORM_RETAINED",
+        "BLOCK_VS_DIMENSION_FORK_REPROVEN",
+        "CHIRAL_OR_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED",
+        "REAL_VECTOR_TRACE_DEFAULT_EXCLUDED",
+        "NO_RECORD_OCCUPANCY_PREMISE_INPUT",
         "NO_K2_K3_K4_OR_MASS_INPUT",
         "NO_COMPARATOR_PROOF_INPUT",
         "NO_NEW_PRIMITIVE_OR_AXIOM",
         "OWNER_RATIFICATION",
         "AUDIT_ACCEPTANCE",
-        "ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED",
-        "DIMENSION_BORN_DEFAULT_EXCLUSION",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md",
-        "K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED",
-        "two missing K1 inputs",
-        "ten-input owner/audit decision packet",
-        "not accepted on the current surface",
+        "No proper subset of those eleven inputs",
         "CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md",
         "SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md",
         "KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
         "OCCUPANCY_READOUT_EXPONENT_BEREZIN_SUBSUMPTION_BOUNDED_THEOREM_NOTE_2026-06-09.md",
         "KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md",
         "CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md",
-        "`#4932` AC measure binary axiom shortcut no-go",
-        "`#4991` owner-governed Tier-A retirement",
-        "merged `#5019` Koide `AC_phi_lambda` axiom-surface rebase",
-        "merged `#5020` Koide R-eta value-face PR",
-        "open draft `#5021` primitive-retirement review",
-        "merged `#5022` delta-eta audit repair",
+        "open `#4932`",
+        "open `#4991`",
+        "merged `#5019`",
+        "merged `#5020`",
+        "open draft `#5021`",
+        "merged `#5022`",
         "The primitive registry was checked",
-        "minimal_axioms",
-        "scale_reference_primitive",
-        "kinetic_isotropy_primitive",
-        "realized_state_primitive",
-        "no registered primitive supplies `K1_COUNTING_MEASURE_RETAINED`",
-        "no primitive retirement and no registry edit",
-        "Open PR Alignment",
-        "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged",
-        "`#5020` Koide R-eta value-face registered-angle/exactness relocation | merged",
-        "`#5022` delta-eta chain R-eta supplied-premise audit repair | merged, audit success",
-        "clean/green status is not a proof input",
+        "no primitive supplies `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`",
+        "K1 selector/default-exclusion is a named eleven-input target",
         "No-Go Discipline Gate",
-        "broad K1 no-go fails; narrowed current-surface non-supply",
+        "broad selector/default-exclusion retained claim fails",
         "Explicit Non-Claims",
     ]
     for phrase in required_phrases:
@@ -240,36 +234,55 @@ def main() -> None:
     for marker in ["N1 -", "N2 -", "N3 -", "N4 -", "N5 -", "N6 -", "N7 -", "N8 -"]:
         audit.check(f"no-go discipline marker present: {marker}", marker in note)
 
-    section("K1 arithmetic and predicate checks")
+    section("Predicate and arithmetic checks")
     audit.check("block/orbit count gives Q=2/3", q_from_r(Fraction(1, 2)) == Fraction(2, 3))
     audit.check("dimension count gives Q=1", q_from_r(Fraction(1, 1)) == Fraction(1, 1))
     audit.check("the two cells are distinct", q_from_r(Fraction(1, 2)) != q_from_r(Fraction(1, 1)))
-    full_inputs = set(K1_INPUTS)
-    audit.check("full K1 counting-measure contract accepts handoff", closes_k1(full_inputs))
-    for missing in sorted(K1_INPUTS):
-        reduced = set(K1_INPUTS)
+    full_selector_inputs = set(SELECTOR_INPUTS)
+    audit.check(
+        "full selector/default-exclusion contract accepts subtarget",
+        closes_selector_default_exclusion(full_selector_inputs),
+    )
+    for missing in sorted(SELECTOR_INPUTS):
+        reduced = set(SELECTOR_INPUTS)
         reduced.remove(missing)
-        audit.check(f"K1 handoff fails without {missing}", not closes_k1(reduced))
-    accepted_subsets = [subset for subset in all_subsets(K1_INPUTS) if closes_k1(subset)]
-    audit.check("only full tested K1 subset closes handoff", accepted_subsets == [full_inputs])
+        audit.check(
+            f"selector/default-exclusion target fails without {missing}",
+            not closes_selector_default_exclusion(reduced),
+        )
+    accepted_subsets = [
+        subset for subset in all_subsets(SELECTOR_INPUTS) if closes_selector_default_exclusion(subset)
+    ]
     audit.check(
-        "current surface inputs do not close K1",
-        not closes_k1(set(CURRENT_SURFACE_INPUTS)),
+        "only full tested selector contract subset closes target",
+        accepted_subsets == [full_selector_inputs],
     )
-    audit.check(
-        "current missing K1 inputs match packet",
-        K1_INPUTS - CURRENT_SURFACE_INPUTS == EXPECTED_MISSING,
-        ", ".join(sorted(K1_INPUTS - CURRENT_SURFACE_INPUTS)),
-    )
-    audit.check("K1 alone does not close electron mass", not closes_electron_mass({"K1_COUNTING_MEASURE_RETAINED"}))
-    audit.check("K1 alone does not close hydrogen", not closes_hydrogen({"K1_COUNTING_MEASURE_RETAINED"}))
+
+    consequence = set(SELECTOR_CONSEQUENCE_SUPPLIES)
+    audit.check("selector consequence supplies named target", "K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED" in consequence)
+    audit.check("selector consequence supplies orbit/holomorphic input", "ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED" in consequence)
+    audit.check("selector consequence supplies default-exclusion input", "DIMENSION_BORN_DEFAULT_EXCLUSION" in consequence)
+    audit.check("selector consequence alone does not close K1", not closes_k1(consequence))
+    k1_context_after_selector = consequence | {
+        "K1_COUNTING_TEXT_LOCK",
+        "C3_CIRCULANT_FORM_RETAINED",
+        "BLOCK_VS_DIMENSION_FORK_REPROVEN",
+        "NO_K2_K3_K4_OR_MASS_INPUT",
+        "NO_COMPARATOR_PROOF_INPUT",
+        "NO_NEW_PRIMITIVE_OR_AXIOM",
+        "OWNER_RATIFICATION",
+        "AUDIT_ACCEPTANCE",
+    }
+    audit.check("selector consequence plus remaining K1 context closes K1", closes_k1(k1_context_after_selector))
+    audit.check("selector consequence alone does not close electron mass", not closes_electron_mass(consequence))
+    audit.check("selector consequence alone does not close hydrogen", not closes_hydrogen(consequence))
 
     section("Authority and primitive boundary checks")
     goal = read(GOAL)
     koide_firewall = read(KOIDE_FIREWALL)
     k1_target = read(K1_TARGET)
+    k1_no_go = read(K1_NO_GO)
     k1_decision = read(K1_DECISION)
-    k1_selector_default = read(K1_SELECTOR_DEFAULT)
     counting = read(COUNTING_SYNTHESIS)
     supertrace = read(SUPERTRACE_OPEN)
     occupancy = read(OCCUPANCY_INDEPENDENCE)
@@ -291,18 +304,13 @@ def main() -> None:
         ("goal packet", goal),
         ("Koide firewall", koide_firewall),
         ("K1 target", k1_target),
+        ("K1 current no-go", k1_no_go),
         ("K1 decision", k1_decision),
-        ("K1 selector/default-exclusion target", k1_selector_default),
     ]:
         audit.check(
-            f"{label} references K1 current no-go or target boundary",
-            NOTE.name in container and "K1_COUNTING_MEASURE_RETAINED" in container,
+            f"{label} references selector/default-exclusion target",
+            NOTE.name in container and "K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED" in container,
         )
-    audit.check(
-        "K1 selector/default-exclusion packet keeps current surface as target work",
-        "K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED" in k1_selector_default
-        and "does not supply `K1_COUNTING_MEASURE_RETAINED`" in k1_selector_default,
-    )
     audit.check(
         "counting synthesis reduces to one bit but does not force Q=2/3",
         "one binary counting-measure bit" in counting
@@ -337,37 +345,12 @@ def main() -> None:
         and "does not derive `r^2/a^2=1/2`" in two_gate
         and "does not modify or promote the Tier-A registry" in two_gate,
     )
-    audit.check(
-        "#5019 impact is premise-hygiene not K1 closure",
-        "premise hygiene" in pr5019
-        and "does not derive `AC_phi_lambda`" in pr5019,
-    )
-    audit.check(
-        "#4991 impact is owner-governed premise standing not theorem closure",
-        "owner-governed chain-satisfying premises" in pr4991
-        and "not theorem closure" in pr4991,
-    )
-    audit.check(
-        "#5020 impact keeps K2 exactness open",
-        "exactness remains open" in pr5020
-        and "No derivation or ratification of a Koide R-eta exactness theorem." in pr5020,
-    )
-    audit.check(
-        "#5022 impact is K2 conditionality only",
-        "conditionality progress" in pr5022
-        and "no retained R-eta derivation" in pr5022,
-    )
-    audit.check(
-        "K2 exactness target keeps K1 separate",
-        "NO_K1_K3_K4_OR_MASS_INPUT" in k2
-        and "K1 occupancy/counting" in k2,
-    )
-    audit.check(
-        "physical electron packet requires more than K1",
-        "PHYSICAL_ELECTRON_MASS_TEXT_LOCK" in physical_electron
-        and "NATIVE_ZERO_SECTION_BRIDGE_RETAINED" in physical_electron
-        and "ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED" in physical_electron,
-    )
+    audit.check("#5019 impact is premise-hygiene not K1 closure", "premise hygiene" in pr5019 and "does not derive `AC_phi_lambda`" in pr5019)
+    audit.check("#4991 impact is owner-governed premise standing not theorem closure", "owner-governed chain-satisfying premises" in pr4991 and "not theorem closure" in pr4991)
+    audit.check("#5020 impact is K2 progress only", "exactness remains open" in pr5020)
+    audit.check("#5022 impact is K2 conditionality only", "conditionality progress" in pr5022 and "no retained R-eta derivation" in pr5022)
+    audit.check("K2 exactness target keeps K1 separate", "NO_K1_K3_K4_OR_MASS_INPUT" in k2 and "K1 occupancy/counting" in k2)
+    audit.check("physical electron packet remains downstream", "RETAINED_ELECTRON_MASS_PHYSICAL_UNIT" in physical_electron and "NATIVE_ZERO_SECTION_BRIDGE_RETAINED" in physical_electron)
 
     expected_nodes = {
         "minimal_axioms",
@@ -379,25 +362,25 @@ def main() -> None:
     for node_name, node in primitive_nodes.items():
         current_path = node["current_path"]
         audit.check(f"registered node has readable current path: {node_name}", (ROOT / current_path).exists())
-    forbidden_primitive_nodes = [
-        "k1_counting_measure_primitive",
+    for forbidden_node in [
+        "k1_selector_default_exclusion_primitive",
         "orbit_holomorphic_count_selector_primitive",
         "dimension_born_default_exclusion_primitive",
+        "k1_counting_measure_primitive",
         "koide_q_two_thirds_primitive",
         "electron_mass_primitive",
         "hydrogen_primitive",
-    ]
-    for absent in forbidden_primitive_nodes:
-        audit.check(f"no registered primitive shortcut: {absent}", absent not in primitive_nodes)
-    forbidden_primitive_closures = [
-        "K1_COUNTING_MEASURE_RETAINED",
+    ]:
+        audit.check(f"no registered primitive shortcut: {forbidden_node}", forbidden_node not in primitive_nodes)
+    for phrase in [
+        "K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED",
         "ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED",
         "DIMENSION_BORN_DEFAULT_EXCLUSION",
+        "K1_COUNTING_MEASURE_RETAINED",
         "Q = 2/3",
         "RETAINED_ELECTRON_MASS_PHYSICAL_UNIT",
         "RETAINED_ALPHA0_LOW_ENERGY_COULOMB",
-    ]
-    for phrase in forbidden_primitive_closures:
+    ]:
         audit.check(f"primitive texts do not supply {phrase}", phrase not in primitive_text)
     audit.check("AC_phi_lambda remains Tier-A, not primitive", "AC_phi_lambda" in tier_a and "AC_phi_lambda" not in primitive_nodes)
     for excluded in ["weighting", "normalization", "probability", "selector", "readout bridge"]:
@@ -405,41 +388,46 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     open_markers = [
-        "`#4932` AC measure binary axiom shortcut no-go | open, clean",
-        "`#4991` owner-governed Tier-A retirement | open, clean",
-        "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged",
-        "`#5020` Koide R-eta value-face registered-angle/exactness relocation | merged",
-        "`#5021` primitive-retirement review | open draft",
-        "`#5022` delta-eta chain R-eta supplied-premise audit repair | merged, audit success",
-        "`#5017`/`#5018` chirality/domain-wall stack | open",
-        "`#5016` zero-import hydrogen retained lane bundle | open",
-        "clean/green status is not a proof input",
+        "open `#4932`",
+        "open `#4991`",
+        "merged `#5019`",
+        "merged `#5020`",
+        "open draft `#5021`",
+        "merged `#5022`",
     ]
     for marker in open_markers:
-        audit.check(f"open PR marker present: {marker}", flat(marker) in note_flat)
+        audit.check(f"open PR marker present: {marker}", marker in note)
 
     explicit_nonclaims = [
+        "No derivation or ratification of `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`.",
+        "No derivation or ratification of",
+        "`ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED`.",
+        "No derivation or ratification of `DIMENSION_BORN_DEFAULT_EXCLUSION`.",
         "No derivation or ratification of `K1_COUNTING_MEASURE_RETAINED`.",
-        "No derivation of `r = 1/2` or `Q = 2/3` from the current retained inventory.",
         "No adoption of orbit-occupancy or any owner-governed occupancy premise.",
         "No claim that `#4932`, `#4991`, merged `#5019`, `#5020`, `#5021`, or merged",
         "No derivation or ratification of K2 exactness",
-        "No derivation or ratification of `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`.",
+        "No use of observed lepton masses, fitted `Q`, observed `m_e`, observed",
         "No derivation of `S_l`, A3, `alpha(0)`, static-source Rydberg, or hydrogen.",
-        "No audit status change for any cited row.",
         "No new axiom, primitive, Tier-A admission, or empirical import.",
+        "No audit status change for any cited row.",
     ]
     for phrase in explicit_nonclaims:
         audit.check(f"explicit non-claim present: {phrase}", phrase in note)
 
     forbidden = [
         "This note ratifies K1",
+        "K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED is supplied",
+        "ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED is supplied",
+        "DIMENSION_BORN_DEFAULT_EXCLUSION is supplied",
         "K1_COUNTING_MEASURE_RETAINED is supplied",
         "r = 1/2 is derived",
         "Q = 2/3 is derived",
         "physical electron mass is retained",
         "hydrogen retained theorem",
         "This note claims hydrogen is retained",
+        "**Status:** retained",
+        "**Status:** proposed_retained",
     ]
     for phrase in forbidden:
         audit.check(f"forbidden overclaim absent: {phrase}", phrase not in note)

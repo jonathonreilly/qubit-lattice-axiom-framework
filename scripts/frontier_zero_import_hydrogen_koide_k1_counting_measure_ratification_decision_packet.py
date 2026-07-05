@@ -15,6 +15,7 @@ GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 KOIDE_FIREWALL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md"
 K1_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md"
 K1_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+K1_SELECTOR_DEFAULT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md"
 COUNTING_SYNTHESIS = ROOT / "docs" / "CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md"
 SUPERTRACE_OPEN = ROOT / "docs" / "SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md"
 OCCUPANCY_INDEPENDENCE = ROOT / "docs" / "KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md"
@@ -146,6 +147,7 @@ def main() -> None:
         KOIDE_FIREWALL,
         K1_TARGET,
         K1_NO_GO,
+        K1_SELECTOR_DEFAULT,
         COUNTING_SYNTHESIS,
         SUPERTRACE_OPEN,
         OCCUPANCY_INDEPENDENCE,
@@ -187,6 +189,9 @@ def main() -> None:
         "No proper subset of those ten contract inputs",
         "ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md",
+        "K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED",
+        "two technical K1 inputs",
         "CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md",
         "SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md",
         "KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
@@ -196,7 +201,7 @@ def main() -> None:
         "`#4932` AC measure binary axiom shortcut no-go",
         "`#4991` owner-governed Tier-A retirement",
         "merged `#5019` Koide `AC_phi_lambda` axiom-surface rebase",
-        "open `#5020` Koide R-eta value-face PR",
+        "merged `#5020` Koide R-eta value-face PR",
         "`#5021` primitive-retirement review draft",
         "merged `#5022` delta-eta audit repair",
         "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md",
@@ -238,6 +243,7 @@ def main() -> None:
     koide_firewall = read(KOIDE_FIREWALL)
     k1_target = read(K1_TARGET)
     k1_no_go = read(K1_NO_GO)
+    k1_selector_default = read(K1_SELECTOR_DEFAULT)
     counting = read(COUNTING_SYNTHESIS)
     supertrace = read(SUPERTRACE_OPEN)
     occupancy = read(OCCUPANCY_INDEPENDENCE)
@@ -260,11 +266,19 @@ def main() -> None:
         ("Koide firewall", koide_firewall),
         ("K1 target", k1_target),
         ("K1 current no-go", k1_no_go),
+        ("K1 selector/default-exclusion target", k1_selector_default),
     ]:
         audit.check(
             f"{label} references K1 decision packet",
             NOTE.name in container and "K1_COUNTING_MEASURE_RETAINED" in container,
         )
+    audit.check(
+        "K1 selector/default-exclusion packet remains a partial K1 input route",
+        "K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED" in k1_selector_default
+        and "ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED" in k1_selector_default
+        and "DIMENSION_BORN_DEFAULT_EXCLUSION" in k1_selector_default
+        and "not full K1" in k1_selector_default,
+    )
     audit.check(
         "K1 no-go keeps current surface open",
         "current retained, primitive, merged-PR, and open-PR surfaces do not supply" in k1_no_go
@@ -348,7 +362,7 @@ def main() -> None:
         "`#4932` AC measure binary axiom shortcut no-go | open, clean",
         "`#4991` owner-governed Tier-A retirement | open, clean",
         "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged",
-        "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open, clean",
+        "`#5020` Koide R-eta value-face registered-angle/exactness relocation | merged",
         "`#5021` primitive-retirement review: meta gate map, no retirements | open draft",
         "`#5022` delta-eta chain R-eta supplied-premise audit repair | merged, audit success",
         "`#5017`/`#5018` chirality/domain-wall stack | open",

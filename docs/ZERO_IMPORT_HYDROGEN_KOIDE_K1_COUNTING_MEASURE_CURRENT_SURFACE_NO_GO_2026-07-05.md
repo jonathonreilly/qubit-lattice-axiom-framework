@@ -72,12 +72,20 @@ The K1 counting-measure ratification decision packet
 packages the same ten-input owner/audit contract as a decision object. It is
 not accepted on the current surface and is not a retained consequence here.
 
+The K1 selector/default-exclusion target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md`
+names the narrower subtarget `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`. If
+accepted later, it could supply `ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED`
+and `DIMENSION_BORN_DEFAULT_EXCLUSION`; on the current surface it is target
+work only and does not supply `K1_COUNTING_MEASURE_RETAINED`.
+
 ## Current-Surface Audit
 
 | surface | supplies | does not supply |
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `K1_COUNTING_MEASURE_RETAINED` | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | ten-input owner/audit decision packet | retained consequence; not accepted on the current surface |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; possible path to the selector and default-exclusion inputs | current retained consequence or full K1 |
 | `CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md` | one-binary reduction and the `(1,1)` versus `(1,2)` arithmetic | retained selector for the block/orbit count |
 | `SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md` | right-shaped chiral/equivariant/holomorphic route | retained determinant/readout theorem |
 | `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md` | current-surface non-supply and premise candidate | adopted theorem or zero-import retained selector |
@@ -87,7 +95,7 @@ not accepted on the current surface and is not a retained consequence here.
 | `#4932` AC measure binary axiom shortcut no-go | open, clean shortcut blocker for updated axioms/primitives | K1 theorem closure |
 | `#4991` owner-governed Tier-A retirement | open, clean owner-governed status movement for old atoms | theorem closure, new primitive, or electron mass |
 | merged `#5019` Koide `AC_phi_lambda` axiom-surface rebase | premise-hygiene and audit-readiness context | `AC_phi_lambda` derivation, K1 derivation, or electron mass |
-| open `#5020` Koide R-eta value-face PR | K2 value-face progress | K1 selector, K2 exactness, or electron mass |
+| merged `#5020` Koide R-eta value-face PR | K2 value-face progress | K1 selector, K2 exactness, or electron mass |
 | merged `#5022` delta-eta audit repair | K2 supplied-premise conditionality repair | K1 selector or retained R-eta derivation |
 | open draft `#5021` primitive-retirement review | primitive-boundary context; reports no primitive retirement and no registry edit | new approved primitive or K1 closure |
 | approved premise/primitive registry | minimal axioms, scale reference, kinetic-form isotropy, realized-state pointwise evaluation | counting-measure selector, dimension/Born exclusion, `r`, `Q`, `m_e`, `alpha(0)`, or hydrogen |
@@ -111,7 +119,7 @@ tracked as dependency-state signals; clean/green status is not a proof input.
 | `#4932` AC measure binary axiom shortcut no-go | open, clean | blocks a primitive/updated-axiom shortcut; no selector theorem |
 | `#4991` owner-governed Tier-A retirement | open, clean | status progress for old occupancy atoms; no theorem closure |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | merged | premise-hygiene context; no `AC_phi_lambda` or K1 derivation |
-| `#5020` Koide R-eta value-face registered-angle/exactness relocation | open, clean | K2 value-face progress only |
+| `#5020` Koide R-eta value-face registered-angle/exactness relocation | merged | K2 value-face progress only |
 | `#5021` primitive-retirement review | open draft | no primitive retirement, no registry edit, no K1 shortcut |
 | `#5022` delta-eta chain R-eta supplied-premise audit repair | merged, audit success | K2 conditionality repair only |
 | `#5017`/`#5018` chirality/domain-wall stack | open | above-C3 context only; no K1 or electron mass |
@@ -144,6 +152,7 @@ K1_COUNTING_MEASURE_RETAINED.
 | route | attempt | result |
 |---|---|---|
 | full K1 contract | Accept all ten contract inputs. | OPEN POSITIVE ROUTE. This would close the handoff, but the contract is not accepted here. |
+| selector/default-exclusion subtarget | Accept the eleven-input `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` target. | OPEN POSITIVE ROUTE. It could supply two missing K1 inputs, but it is not accepted here. |
 | static C3/Koide algebra | Treat `Q = 1/3 + (2/3)r` as selecting `r = 1/2`. | ATTEMPTED. The algebra supplies the two-cell form, not the count selector. |
 | counting-bit synthesis | Treat the one-binary reduction as choosing the block/orbit cell. | ATTEMPTED. The synthesis note reduces the residual but does not rank the two measures. |
 | supertrace / holomorphic determinant | Use a chiral or holomorphic determinant to count the doublet once. | OPEN POSITIVE ROUTE. The route is right-shaped and remains gated by the determinant/readout theorem. |
@@ -191,6 +200,7 @@ input, owner decision, or audit decision is hidden as background.
 | cited surface | residual it attacks | residual here | match? |
 |---|---|---|---|
 | K1 target discriminator | ten-input K1 handoff | current consequence absent | yes |
+| K1 selector/default-exclusion target discriminator | two-input K1 subtarget | not accepted here; full K1 still absent | yes |
 | counting-bit synthesis note | one binary counting-measure reduction | K1 target content | yes |
 | supertrace/equivariant-index open lead | chiral/holomorphic count route | live theorem route, not current closure | yes |
 | orbit-occupancy independence note | current-surface non-supply and premise candidate | no retained K1 | yes |
@@ -230,6 +240,7 @@ Legitimate partial-closure paths remain:
 |---|---|
 | retained supertrace/equivariant-index/holomorphic determinant theorem | `ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED` |
 | retained transfer/kernel coefficient theorem for the corner realization | `DIMENSION_BORN_DEFAULT_EXCLUSION` if it selects the block/orbit cell |
+| owner/audit acceptance of the selector/default-exclusion subtarget | two missing technical K1 inputs, not full K1 by itself |
 | owner/audit acceptance of an occupancy premise | premise standing only, not zero-import theorem closure unless explicitly scoped as such |
 | owner/audit acceptance of a new primitive after registry/policy update | future premise node only; not present on the current surface |
 | owner/audit acceptance of the K1 target after all inputs are present | `K1_COUNTING_MEASURE_RETAINED` |

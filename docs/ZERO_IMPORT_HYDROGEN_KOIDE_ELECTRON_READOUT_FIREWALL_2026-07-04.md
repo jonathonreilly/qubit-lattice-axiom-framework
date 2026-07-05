@@ -80,7 +80,7 @@ The hydrogen-facing Lane 6 dependency stack is now:
 | wall | content | current standing |
 |---|---|---|
 | K1 | Counting-measure bit: force `r = 1/2`, equivalently `Q=2/3`, rather than the dimension/Born default. | Reduced to the known counting bit; conditional through Tier-A `AC_phi_lambda`, not zero-import from the current retained inventory. Open `#4932` blocks the updated-axiom/primitives shortcut for AC(i)'s measure-side binary. Open `#4991` would change the old occupancy atom's status to owner-governed premise standing, not theorem closure. |
-| K2 | Radian/readout identification: turn the retained finite `2/9` weight into the charged-lepton `delta = 2/9` radian phase. | Open gate / bounded comparator; open `#4930` prunes angle-native packaging routes and sharpens the live target to a licensed `Phi = S_sum = 2/3` bridge, and open `#4931` blocks the occurrence-axiom shortcut. Open `#5020` relocates the value face to realized-state registration while leaving the exactness residual open; it is K2 progress, not a zero-source radian theorem. Open `#4991` would change the old R-eta h-unit readout-license atom's status to owner-governed premise standing, not a zero-source radian theorem. |
+| K2 | Radian/readout identification: turn the retained finite `2/9` weight into the charged-lepton `delta = 2/9` radian phase. | Open gate / bounded comparator; open `#4930` prunes angle-native packaging routes and sharpens the live target to a licensed `Phi = S_sum = 2/3` bridge, and open `#4931` blocks the occurrence-axiom shortcut. Merged `#5020` relocates the value face to realized-state registration while leaving the exactness residual open; it is K2 progress, not a zero-source radian theorem. Open `#4991` would change the old R-eta h-unit readout-license atom's status to owner-governed premise standing, not a zero-source radian theorem. |
 | K3 | Species/electron branch: connect the selected triplet branch to the physical electron, not only an abstract sorted eigenvalue. | Included in the Tier-A `AC_phi_lambda` minimum decomposition as the abstract-sector to physical-species bridge. Open `#4991` is compatible with C3 owner-ratified standing but supplies no above-C3 taste/Dirac/chirality content and no physical electron mass. |
 | K4 | Absolute scale: assemble `a_l^2`, currently sharpened to weak front, exact `1/256`, and A3 precision placement. | Packaged by the absolute charged-lepton scale ratification decision packet as a ten-input owner/audit handoff; not ratified here. |
 
@@ -111,6 +111,14 @@ The K1 counting-measure ratification decision packet
 packages the same ten-input owner/audit contract. It can make K1 spendable
 only after all inputs are accepted; it is not K2/K3/K4, physical electron
 mass, alpha input, or hydrogen.
+
+The K1 selector/default-exclusion target discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md`)
+packages `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` as a narrower subhandoff for
+the selector theorem and dimension/Born default-exclusion inputs. If accepted,
+it can feed `ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED` and
+`DIMENSION_BORN_DEFAULT_EXCLUSION`; it still does not close K1, physical
+electron mass, alpha input, or hydrogen.
 
 The Koide native zero-section `#5007` impact discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md`)
@@ -230,7 +238,7 @@ owner-governed chain-satisfying premise language. That does not supply `r`,
 
 The Koide R-eta value-face `#5020` impact discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md`)
-records the latest open K2 value-face movement. It separates registered
+records the latest merged K2 value-face movement. It separates registered
 `Phi` value standing from the still-open exactness residual, so the Koide lane
 is sharper, but no electron readout, physical electron mass, alpha input, or
 hydrogen input is supplied.
@@ -438,6 +446,7 @@ No hidden admission is left buried as background.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` | successor target for `K1_COUNTING_MEASURE_RETAINED` | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K1_COUNTING_MEASURE_RETAINED` | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision packet for the ten-input `K1_COUNTING_MEASURE_RETAINED` handoff | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | subtarget for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; can feed two K1 inputs, not full K1 | yes |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | K2 delta comparator and scale boundary | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | K2 value-face registration versus exactness residual | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 R-eta supplied-premise conditionality boundary | yes |

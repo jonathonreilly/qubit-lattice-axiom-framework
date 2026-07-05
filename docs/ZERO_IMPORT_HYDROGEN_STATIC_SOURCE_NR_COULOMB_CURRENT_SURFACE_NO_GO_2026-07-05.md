@@ -88,6 +88,15 @@ packages the unresolved content gates beneath the parent contract:
 it does not ratify any child gate and does not supply the parent retained
 handoff.
 
+The static-source readout ratification decision packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+package the first child gate under that target. They record that I1
+accepted-premise arithmetic, native field-integration relocation,
+complete-square support, RP/Kubo context, and #5006 hygiene are support only;
+they do not supply `STATIC_SOURCE_LINEAR_RESPONSE_READOUT_RATIFIED`.
+
 ## Target Arithmetic
 
 The structural atomic target is:
@@ -125,6 +134,10 @@ exclusion, owner ratification, and audit acceptance.
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_LIMIT_RATIFICATION_DECISION_PACKET_2026-07-04.md` | eleven-input owner/audit handoff | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_THREE_GATE_TARGET_BUNDLE_2026-07-05.md` | shared target for readout, one-body NR, and Hartree mapping child gates | child-gate ratification or parent retained consequence |
+| `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | eight-input readout handoff | current retained readout consequence |
+| `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface boundary for readout | retained readout |
+| `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_ONE_BODY_HARTREE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | fourteen-input one-body/Hartree handoff | current retained one-body or Hartree consequence |
+| `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_ONE_BODY_HARTREE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface boundary for one-body/Hartree | retained one-body NR physical-unit theorem or retained Hartree mapping |
 | `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_CLOSURE_DISCRIMINATOR_2026-07-04.md` | downstream Rydberg predicate | NR Coulomb limit derivation |
 | `ATOMIC_LANE2_PHYSICAL_UNIT_LIMIT_BOUNDARY_NOTE_2026-04-29.md` | proof that `1/n^2` shape does not fix eV scale | physical-unit closure |
 | `HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md` | scalar operator and kernel dependency narrowing | absolute-eV prediction |

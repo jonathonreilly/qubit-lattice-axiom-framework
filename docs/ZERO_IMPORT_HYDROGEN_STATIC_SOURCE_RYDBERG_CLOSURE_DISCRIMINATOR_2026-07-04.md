@@ -187,6 +187,25 @@ one-body NR physical-unit reduction, and Hartree mapping as separate sibling
 gates while making them reviewable together. It does not ratify those gates or
 the retained NR Coulomb input.
 
+The static-source readout ratification decision packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+go one layer deeper on the readout child gate. They do not supply
+`STATIC_SOURCE_LINEAR_RESPONSE_READOUT_RATIFIED`, so this Rydberg predicate
+still cannot consume the retained static-source NR Coulomb input through the
+readout route.
+
+The static-source one-body/Hartree ratification decision packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_ONE_BODY_HARTREE_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_ONE_BODY_HARTREE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+go one layer deeper on the remaining two child gates. They do not supply
+`ONE_BODY_NR_PHYSICAL_UNIT_LIMIT_RATIFIED` or
+`HARTREE_SCALE_MAPPING_RATIFIED`, so this Rydberg predicate still cannot
+consume the retained static-source NR Coulomb input through the atomic
+one-body/Hartree route.
+
 The physical electron mass ratification decision packet
 `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md`
 packages the Lane 6 handoff for `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`:

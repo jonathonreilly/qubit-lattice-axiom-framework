@@ -74,6 +74,24 @@ the source-normalization, energy-readout, or unit-source coefficient choices as
 background. The existing I1 bridge and hygiene notes are useful support; they
 are not the retained theorem by themselves.
 
+The static-source readout ratification decision packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages this Gate 1 target as an eight-input handoff:
+STATIC_SOURCE_READOUT_TEXT_LOCK, NATIVE_STATIC_FIELD_INTEGRATION_HANDOFF,
+SOURCE_NORMALIZED_QUADRATIC_ACTION_HANDOFF,
+LINEAR_RESPONSE_ENERGY_READOUT_HANDOFF,
+UNIT_ELECTROMAGNETIC_SOURCE_COEFFICIENT_HANDOFF,
+NO_ACCEPTED_PREMISE_AS_RETAINED_THEOREM, OWNER_RATIFICATION, and
+AUDIT_ACCEPTANCE. If accepted, it conditionally supplies
+`STATIC_SOURCE_LINEAR_RESPONSE_READOUT_RATIFIED`.
+
+The static-source readout current-surface no-go
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that current retained, primitive, and open-PR surfaces do not supply
+that readout handoff. It keeps I1 accepted-premise arithmetic, native
+field-integration relocation, complete-square support, RP/Kubo context, and
+#5006 hygiene as support rather than retained readout closure.
+
 ## Gate 2: One-Body NR Physical-Unit Limit
 
 The one-body gate is the framework-local replacement for importing the
@@ -135,6 +153,28 @@ lanes close. It does not derive either value. It also cannot use observed
 Rydberg spectroscopy, observed `m_e`, observed `alpha(0)`, or textbook
 constants as proof inputs.
 
+The static-source one-body/Hartree ratification decision packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_ONE_BODY_HARTREE_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages Gate 2 and Gate 3 together as one fourteen-input handoff:
+STATIC_SOURCE_ONE_BODY_HARTREE_TEXT_LOCK,
+SCALAR_OPERATOR_SURFACE_CONSUMED, STATIC_COULOMB_KERNEL_CONSUMED,
+LOW_ENERGY_ONE_PARTICLE_REDUCTION_HANDOFF,
+DIMENSIONLESS_COULOMB_SPECTRUM_HANDOFF, NO_TEXTBOOK_SCHRODINGER_IMPORT,
+HARTREE_MAPPING_TEXT_LOCK, RETAINED_ELECTRON_MASS_INPUT_CONSUMED,
+RETAINED_ALPHA0_INPUT_CONSUMED, UNIT_SOURCE_COEFFICIENT_MATCHED_TO_ALPHA0,
+PHYSICAL_UNIT_SCALE_FORMULA_HANDOFF, NO_RYDBERG_COMPARATOR_PROOF_INPUT,
+OWNER_RATIFICATION, and AUDIT_ACCEPTANCE. If accepted, it conditionally
+supplies `ONE_BODY_NR_PHYSICAL_UNIT_LIMIT_RATIFIED` and
+`HARTREE_SCALE_MAPPING_RATIFIED`.
+
+The static-source one-body/Hartree current-surface no-go
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_ONE_BODY_HARTREE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that current retained, primitive, and open-PR surfaces do not supply
+that two-gate handoff. It keeps scalar-operator narrowing, Green-kernel
+normalization, atomic `1/n^2` shape support, physical-unit boundary checks,
+and Hartree formula bookkeeping as support rather than retained one-body or
+Hartree closure.
+
 ## Parent Contract Fit
 
 The parent static-source NR Coulomb contract remains:
@@ -170,6 +210,8 @@ This three-gate packet does not perform that acceptance.
 | `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_LIMIT_RATIFICATION_DECISION_PACKET_2026-07-04.md` | parent eleven-input contract | no retained consequence unless all inputs are accepted |
 | `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md` | direct-row assembly under the parent | review compression only |
 | `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary | no broad impossibility claim |
+| `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_ONE_BODY_HARTREE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | two-gate one-body/Hartree handoff target | no current one-body or Hartree ratification |
+| `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_ONE_BODY_HARTREE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface boundary for one-body/Hartree | no broad impossibility claim |
 | `STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md` | accepted-premise static-source readout arithmetic | not retained readout ratification |
 | `STATIC_SOURCE_READOUT_I1_ACCEPTED_PREMISE_BRIDGE_DEP_RESOLUTION_HYGIENE_COMPANION_NOTE_2026-06-04.md` | dependency-resolution hygiene for I1 | no status promotion |
 | `I1_STATIC_READOUT_IS_NATIVE_FIELD_INTEGRATION_2026-06-06.md` | native field-integration relocation for I1 | residual energy-readout and source-normalization gates remain |

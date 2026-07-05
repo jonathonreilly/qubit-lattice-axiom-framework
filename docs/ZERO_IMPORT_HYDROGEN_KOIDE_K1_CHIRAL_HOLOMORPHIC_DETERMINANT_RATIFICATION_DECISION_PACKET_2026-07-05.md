@@ -105,6 +105,9 @@ STATIC_SOURCE_RYDBERG_RETAINED
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_TARGET_DISCRIMINATOR_2026-07-05.md` | sixteen-input target for the object-identification input | can feed only `FLUCTUATION_DETERMINANT_OBJECT_IDENTIFIED` if later accepted |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the object input | no parent theorem closure |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the object decision | not accepted on the current surface |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_TARGET_DISCRIMINATOR_2026-07-05.md` | names the coupled factoring and count subtargets | target only; this packet still needs the consequences |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the two coupled inputs | no retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages both coupled owner/audit contracts | not accepted on the current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` | names the fourteen-input determinant target | target only; this packet packages the decision object |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | no retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | parent selector/default-exclusion target | this packet can feed one input only after acceptance |
@@ -132,6 +135,8 @@ status is not proof input.
 
 | PR | queue signal | determinant effect |
 |---|---:|---|
+| `#5031` A_min joint-C3 automorphism bridge | merged and audited clean | selector-invariance context only; no determinant theorem |
+| `#5030` multisite Pauli finite-carrier source | open | finite-carrier cleanup; no determinant theorem |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft | primitive-boundary context only; no registry edit |
 | `#5028` Koide W4c labeling-pair successor re-points | merged | species-note edge hygiene only |
 | `#5029` Koide substep4 labeling no-go runner strengthening | merged with audit success | runner verification only; no determinant theorem |

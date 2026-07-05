@@ -137,6 +137,16 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   attacks only `CHIRAL_OR_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`; it does
   not supply `REAL_VECTOR_TRACE_DEFAULT_EXCLUDED`, full K1, `m_e`,
   `alpha(0)`, or hydrogen.
+  The complex-slot factoring and chiral-count batch target
+  `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages `K1_READOUT_COMPLEX_SLOT_FACTORING_RETAINED` and
+  `K1_CHIRAL_HOLOMORPHIC_COUNT_ON_RETAINED_REALIZATION_RETAINED` as coupled
+  inputs under the determinant theorem. Its current-surface no-go and decision
+  packet keep readout factorization separate from retained count computation.
+  If accepted, they can feed only `READOUT_FUNCTIONAL_FACTORS_THROUGH_COMPLEX_SLOT`
+  and `CHIRAL_HOLOMORPHIC_COUNT_COMPUTED_ON_RETAINED_REALIZATION`, not the
+  determinant object, parent determinant theorem, full K1, `m_e`, `alpha(0)`,
+  or hydrogen.
   The Koide native zero-section `#5007` impact discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md`
   records `KOIDE_NATIVE_ZERO_SECTION_DEFINED_ROUTE_ALGEBRA=TRUE` as useful
@@ -1744,6 +1754,8 @@ Koide electron readout, `m_e`, `alpha(0)`, or hydrogen.
                         | K1 chiral/holomorphic determinant target | Open nested subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`; if accepted, it can feed one selector/default-exclusion input, not default exclusion, full K1, `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 chiral/holomorphic determinant ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the fourteen-input owner/audit contract for `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`; it is not accepted on the current surface. |
                         | K1 chiral/holomorphic determinant current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`. |
+                        | K1 complex-slot factoring and chiral-count batch target | Open coupled subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_READOUT_COMPLEX_SLOT_FACTORING_RETAINED` and `K1_CHIRAL_HOLOMORPHIC_COUNT_ON_RETAINED_REALIZATION_RETAINED`; if accepted, they feed only factorization and count inputs, not the parent determinant theorem, full K1, `m_e`, `alpha(0)`, or hydrogen. |
+                        | K1 complex-slot factoring and chiral-count batch decision/no-go | Open blocker and decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_CURRENT_SURFACE_NO_GO_2026-07-05.md` and `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_RATIFICATION_DECISION_PACKET_2026-07-05.md` keep right-shaped supertrace/fork support separate from retained factorization and count consequences. |
                         | K1 fluctuation determinant object target | Open nested subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_FLUCTUATION_DETERMINANT_OBJECT_IDENTIFICATION_RETAINED`; if accepted, it can feed only `FLUCTUATION_DETERMINANT_OBJECT_IDENTIFIED`, not factorization, count, full determinant theorem, full K1, `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 fluctuation determinant object decision/no-go | Open blocker and decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_CURRENT_SURFACE_NO_GO_2026-07-05.md` and `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_RATIFICATION_DECISION_PACKET_2026-07-05.md` keep the actual Koide readout determinant object separate from generic C3 algebra and vector/modulus determinant routes. |
                         | K1 readout determinant domain target | Open nested subtarget under the object gate. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_READOUT_DETERMINANT_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_KOIDE_READOUT_DETERMINANT_DOMAIN_SPECIFIED_RETAINED`; if accepted, it can feed only `KOIDE_READOUT_DETERMINANT_DOMAIN_SPECIFIED`, not object disambiguation, factorization, count, full K1, `m_e`, `alpha(0)`, or hydrogen. |

@@ -95,8 +95,18 @@ could feed only `FLUCTUATION_DETERMINANT_OBJECT_IDENTIFIED` if later accepted.
 It does not supply factorization, the chiral count, this parent theorem, full
 K1, physical electron mass, alpha, or hydrogen.
 
-They do not supply the real-vector default exclusion, full K1, physical electron
-mass, alpha, or hydrogen.
+The complex-slot factoring and chiral-count batch
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages the next two coupled determinant-theorem inputs:
+`K1_READOUT_COMPLEX_SLOT_FACTORING_RETAINED` and
+`K1_CHIRAL_HOLOMORPHIC_COUNT_ON_RETAINED_REALIZATION_RETAINED`. Its
+current-surface no-go and decision packet keep the readout factorization proof
+separate from the retained count computation. If later accepted, the batch can
+feed only `READOUT_FUNCTIONAL_FACTORS_THROUGH_COMPLEX_SLOT` and
+`CHIRAL_HOLOMORPHIC_COUNT_COMPUTED_ON_RETAINED_REALIZATION`.
+
+These nested packets do not supply the real-vector default exclusion, full K1,
+physical electron mass, alpha, or hydrogen.
 
 ## Source Surface
 
@@ -147,6 +157,7 @@ eleven inputs only after acceptance.
 | surface | useful content | boundary here |
 |---|---|---|
 | fluctuation determinant object target | sixteen-input target for `K1_FLUCTUATION_DETERMINANT_OBJECT_IDENTIFICATION_RETAINED` | can feed only `FLUCTUATION_DETERMINANT_OBJECT_IDENTIFIED` if later accepted |
+| complex-slot factoring and chiral-count batch target | coupled targets for `READOUT_FUNCTIONAL_FACTORS_THROUGH_COMPLEX_SLOT` and `CHIRAL_HOLOMORPHIC_COUNT_COMPUTED_ON_RETAINED_REALIZATION` | not accepted; no parent determinant theorem |
 | counting-bit synthesis note | reduces K1 to the block/orbit versus dimension/Born binary and identifies native `J_cs` | support only; no determinant theorem |
 | supertrace / equivariant-index / holomorphic route | right-shaped route for counting the doublet once | open positive route; not retained here |
 | det_C versus det_R fork mechanism | separates holomorphic polarization from statistics | mechanism support only; no adopted selector |
@@ -169,6 +180,8 @@ nodes, not walls, but no primitive supplies
 
 | object | if this target is accepted | still not supplied |
 |---|---|---|
+| determinant-object subtarget | `K1_FLUCTUATION_DETERMINANT_OBJECT_IDENTIFICATION_RETAINED` | factorization, count, parent owner/audit |
+| complex-slot factoring/count batch | `K1_READOUT_COMPLEX_SLOT_FACTORING_RETAINED` and `K1_CHIRAL_HOLOMORPHIC_COUNT_ON_RETAINED_REALIZATION_RETAINED` | determinant object and parent owner/audit |
 | determinant theorem subtarget | `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | default exclusion and selector/default-exclusion acceptance |
 | parent selector/default-exclusion | gains `CHIRAL_OR_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | `REAL_VECTOR_TRACE_DEFAULT_EXCLUDED`, owner/audit acceptance, and the rest of the selector contract |
 | K1 counting measure | no direct retained consequence | full K1 still needs the selector/default-exclusion decision and K1 owner/audit decision |

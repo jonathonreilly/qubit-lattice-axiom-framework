@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verifier for the Koide R-eta faithful KS state-action selector lane."""
+"""Verifier for the Koide R-eta KS reconstructed matter-mode action-domain lane."""
 
 from __future__ import annotations
 
@@ -10,12 +10,12 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md"
-DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md"
-CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md"
-DOMAIN_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md"
-DOMAIN_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RATIFICATION_DECISION_PACKET_2026-07-05.md"
-DOMAIN_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md"
+DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+SELECTOR_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md"
+SELECTOR_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+SELECTOR_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 ACTION_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md"
 ACTION_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 ACTION_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md"
@@ -28,8 +28,6 @@ SCALAR_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGG
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 KOIDE_FIREWALL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md"
 PARENT_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md"
-PARENT_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
-PARENT_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 HW1_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md"
 PHYSICAL_CARRIER_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md"
 MATTER_ATTACHMENT = ROOT / "docs" / "KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md"
@@ -48,6 +46,34 @@ SCALE = ROOT / "docs" / "SCALE_REFERENCE_PRIMITIVE_NOTE.md"
 KINETIC = ROOT / "docs" / "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
 REALIZED = ROOT / "docs" / "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
 
+
+DOMAIN_INPUTS = {
+    "KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TEXT_LOCK",
+    "MATTER_ATTACHMENT_KS_REDUCTION_ACCEPTED",
+    "SPIN_MODULE_ESCAPE_NO_GO_ACCEPTED",
+    "OPERATOR_FRAME_MERGER_ACCEPTED",
+    "PER_SITE_PAULI_SPIN_HALF_MODULE_ACCEPTED",
+    "CL31_EXTENSION_MODULE_BOUNDARY_ACCEPTED",
+    "KS_PHASE_FORCING_SURFACE_ACCEPTED",
+    "GRASSMANN_CAR_SURFACE_ACCEPTED",
+    "STAGGERED_CHIRALITY_SELECTOR_SURFACE_ACCEPTED",
+    "STAGGERED_REALIZATION_GATE_SURFACE_ACCEPTED",
+    "FINITE_KS_SCALARIZATION_DOMAIN_CHECK",
+    "FINITE_GRASSMANN_SINGLE_PAIR_MODE_CHECK",
+    "FINITE_CHIRALITY_PARITY_ACTION_DOMAIN_CHECK",
+    "NO_PHYSICAL_ROTATION_ACTION_SELECTOR_INPUT",
+    "NO_FAITHFUL_SELECTOR_OR_ACTION_LAW_INPUT",
+    "NO_SPINFUL_SCALAR_LIFT_EXCLUSION_INPUT",
+    "NO_PARENT_BRIDGE_OR_HW1_INPUT",
+    "NO_R_Q_DELTA_OR_R_ETA_VALUE_INPUT",
+    "NO_K1_K3_K4_OR_MASS_INPUT",
+    "NO_COMPARATOR_PROOF_INPUT",
+    "NO_NEW_PRIMITIVE_OR_AXIOM",
+    "OWNER_RATIFICATION",
+    "AUDIT_ACCEPTANCE",
+}
+
+CURRENT_SURFACE_INPUTS = DOMAIN_INPUTS - {"OWNER_RATIFICATION", "AUDIT_ACCEPTANCE"}
 
 SELECTOR_INPUTS = {
     "FAITHFUL_KS_STATE_ACTION_SELECTOR_TEXT_LOCK",
@@ -73,13 +99,6 @@ SELECTOR_INPUTS = {
     "NO_K1_K3_K4_OR_MASS_INPUT",
     "NO_COMPARATOR_PROOF_INPUT",
     "NO_NEW_PRIMITIVE_OR_AXIOM",
-    "OWNER_RATIFICATION",
-    "AUDIT_ACCEPTANCE",
-}
-
-CURRENT_SURFACE_INPUTS = SELECTOR_INPUTS - {
-    "KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED",
-    "PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED",
     "OWNER_RATIFICATION",
     "AUDIT_ACCEPTANCE",
 }
@@ -121,85 +140,6 @@ KS_ROUTE_INPUTS = {
     "NO_HW1_OR_BRIDGE_CLOSURE_INPUT",
     "NO_R_Q_DELTA_OR_R_ETA_VALUE_INPUT",
     "NO_K1_K3_K4_OR_MASS_INPUT",
-    "NO_COMPARATOR_PROOF_INPUT",
-    "NO_NEW_PRIMITIVE_OR_AXIOM",
-    "OWNER_RATIFICATION",
-    "AUDIT_ACCEPTANCE",
-}
-
-FIXED_PARENT_BRIDGE_INPUTS = {
-    "PHYSICAL_MATTER_STATE_LAW_BRIDGE_TEXT_LOCK",
-    "OPERATOR_FRAME_MERGER_ACCEPTED",
-    "SPIN_MODULE_ESCAPE_NO_GO_ACCEPTED",
-    "NATIVE_D_SPIN_BLINDNESS_ACCEPTED",
-    "KS_SCALARIZATION_SURFACE_ACCEPTED",
-    "STAGGERED_CHIRALITY_SELECTOR_SURFACE_ACCEPTED",
-    "NO_HW1_LOCUS_OR_CARRIER_CLOSURE_INPUT",
-    "NO_R_Q_DELTA_OR_R_ETA_VALUE_INPUT",
-    "NO_K1_K3_K4_OR_MASS_INPUT",
-    "NO_COMPARATOR_PROOF_INPUT",
-    "NO_NEW_PRIMITIVE_OR_AXIOM",
-    "OWNER_RATIFICATION",
-    "AUDIT_ACCEPTANCE",
-}
-
-PARENT_ROUTE_INPUTS = {
-    "KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED",
-    "ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED",
-}
-
-HW1_INPUTS = {
-    "HW1_PHYSICAL_GENERATION_LOCUS_TEXT_LOCK",
-    "MOMENTUM_TYPE_THEOREM_ACCEPTED",
-    "STAGGERED_KS_REALIZATION_SURFACE_ACCEPTED",
-    "K1_FLUX_SELECTOR_WITHIN_SURFACE_ACCEPTED",
-    "HW1_C3_TRIPLET_ALGEBRA_ACCEPTED",
-    "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED",
-    "NO_SPECIES_LABEL_BIJECTION_INPUT",
-    "NO_SINGLE_FIXED_POINT_READOUT_INPUT",
-    "NO_R_Q_DELTA_OR_R_ETA_VALUE_INPUT",
-    "NO_K1_K3_K4_OR_MASS_INPUT",
-    "NO_COMPARATOR_PROOF_INPUT",
-    "NO_NEW_PRIMITIVE_OR_AXIOM",
-    "OWNER_RATIFICATION",
-    "AUDIT_ACCEPTANCE",
-}
-
-CHARGED_CARRIER_INPUTS = {
-    "CHARGED_LEPTON_CARRIER_REALIZATION_TEXT_LOCK",
-    "HW1_PHYSICAL_GENERATION_LOCUS_RETAINED",
-    "SUPPLIED_ACPHILAMBDA_R_ETA_CONTEXT_LOCK",
-    "NO_SINGLE_FIXED_POINT_READOUT_INPUT",
-    "NO_R_Q_DELTA_OR_R_ETA_VALUE_INPUT",
-    "NO_COMPARATOR_PROOF_INPUT",
-    "OWNER_RATIFICATION",
-    "AUDIT_ACCEPTANCE",
-}
-
-PHYSICAL_CARRIER_INPUTS = {
-    "PHYSICAL_CARRIER_CONTEXT_TEXT_LOCK",
-    "SUPPLIED_C3_CIRCULANT_CONTEXT_ACCEPTED",
-    "RECORD_REGISTRABILITY_CONTEXT_ACCEPTED",
-    "REDUCED_CARRIER_OBSTRUCTION_ACCOUNTED",
-    "CARRIER_GATE_COLLAPSE_MAP_ACCEPTED",
-    "CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED",
-    "NO_SINGLE_FIXED_POINT_READOUT_INPUT",
-    "NO_H_UNIT_OR_R_ETA_VALUE_INPUT",
-    "NO_K1_K3_K4_OR_MASS_INPUT",
-    "NO_COMPARATOR_PROOF_INPUT",
-    "NO_NEW_PRIMITIVE_OR_AXIOM",
-    "OWNER_RATIFICATION",
-    "AUDIT_ACCEPTANCE",
-}
-
-R_ETA_INPUTS = {
-    "R_ETA_RETIREMENT_TEXT_LOCK",
-    "FORM_LAYER_AND_K_ORBIT_AUTHORITY_ACCEPTED",
-    "FINITE_FIXED_LOCUS_ARITHMETIC_ACCEPTED",
-    "PHYSICAL_CARRIER_CONTEXT_RETAINED",
-    "R_ETA_H_CLASS_RETAINED",
-    "R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED",
-    "NO_R_K1_K3_K4_OR_MASS_INPUT",
     "NO_COMPARATOR_PROOF_INPUT",
     "NO_NEW_PRIMITIVE_OR_AXIOM",
     "OWNER_RATIFICATION",
@@ -254,6 +194,10 @@ def section(title: str) -> None:
     print("-" * 80)
 
 
+def closes_domain(inputs: set[str]) -> bool:
+    return DOMAIN_INPUTS <= inputs
+
+
 def closes_selector(inputs: set[str]) -> bool:
     return SELECTOR_INPUTS <= inputs
 
@@ -264,30 +208,6 @@ def closes_action_law(inputs: set[str]) -> bool:
 
 def closes_ks_route(inputs: set[str]) -> bool:
     return KS_ROUTE_INPUTS <= inputs
-
-
-def closes_parent_bridge(inputs: set[str]) -> bool:
-    return FIXED_PARENT_BRIDGE_INPUTS <= inputs and bool(PARENT_ROUTE_INPUTS & inputs)
-
-
-def closes_hw1(inputs: set[str]) -> bool:
-    return HW1_INPUTS <= inputs
-
-
-def closes_charged_carrier(inputs: set[str]) -> bool:
-    return CHARGED_CARRIER_INPUTS <= inputs
-
-
-def closes_physical_carrier(inputs: set[str]) -> bool:
-    return PHYSICAL_CARRIER_INPUTS <= inputs
-
-
-def closes_r_eta(inputs: set[str]) -> bool:
-    return R_ETA_INPUTS <= inputs
-
-
-def closes_electron_mass(inputs: set[str]) -> bool:
-    return ELECTRON_MASS_INPUTS <= inputs
 
 
 def closes_hydrogen(inputs: set[str]) -> bool:
@@ -319,41 +239,52 @@ def eta(x: tuple[int, int, int], mu: int) -> int:
     return -1 if (x[0] + x[1]) % 2 else 1
 
 
-def finite_selector_checks(audit: Audit) -> None:
+def finite_domain_checks(audit: Audit) -> None:
     sx, sy, sz, i2 = pauli_data()
     gammas = [sx, sy, sz]
-    state = np.array([1, 0], dtype=complex)
-
-    theta = np.pi / 2
-    uz = np.cos(theta / 2) * i2 - 1j * np.sin(theta / 2) * sz
-    full_turn = np.cos(np.pi) * i2 - 1j * np.sin(np.pi) * sz
-
-    audit.check("faithful quarter-turn co-rotates sigma_x to sigma_y", np.allclose(uz @ sx @ uz.conj().T, sy))
-    audit.check("faithful 2pi spin lift is minus identity", np.allclose(full_turn, -i2))
-    audit.check("state action distinguishes faithful 2pi from trivial lift", not np.allclose(full_turn @ state, i2 @ state))
-    audit.check("adjoint action is blind to the SU2 center", np.allclose(full_turn @ sx @ full_turn.conj().T, (-full_turn) @ sx @ (-full_turn).conj().T))
-    audit.check("trivial scalar action does not supply the faithful quarter-turn state", not np.allclose(i2 @ state, uz @ state))
 
     samples = [(0, 0, 0), (1, 0, 0), (0, 1, 0), (1, 1, 1)]
     scalarized = []
-    center_invariant = []
+    unitary_omega = []
     scalar_commutes = []
     for x in samples:
+        unitary_omega.append(np.allclose(omega(x).conj().T @ omega(x), i2))
         for mu, gamma in enumerate(gammas):
             xp = list(x)
             xp[mu] += 1
             y = tuple(xp)
             link = omega(x).conj().T @ gamma @ omega(y)
             expected = eta(x, mu) * i2
-            centered = (-omega(x)).conj().T @ gamma @ (-omega(y))
             scalarized.append(np.allclose(link, expected))
-            center_invariant.append(np.allclose(centered, link))
             scalar_commutes.append(all(np.allclose(link @ g, g @ link) for g in gammas))
 
-    audit.check("KS scalarization yields only eta_mu(x) scalar link phases", all(scalarized))
-    audit.check("global center flip leaves KS link scalarization unchanged", all(center_invariant))
-    audit.check("KS scalar link phases commute with every Pauli generator", all(scalar_commutes))
-    audit.check("KS scalar phases alone do not co-rotate sigma_x to sigma_y", not np.allclose(i2 @ sx @ i2, sy))
+    audit.check("KS Omega maps are unitary on sampled sites", all(unitary_omega))
+    audit.check("KS scalarization yields eta_mu scalar link phases", all(scalarized))
+    audit.check("KS scalar link phases are operator-scalar support only", all(scalar_commutes))
+
+    c = np.array([[0, 1], [0, 0]], dtype=complex)
+    cdag = c.conj().T
+    parity = np.array([[1, 0], [0, -1]], dtype=complex)
+    number = cdag @ c
+    audit.check("single-pair Grassmann mode is nilpotent", np.allclose(c @ c, np.zeros((2, 2))))
+    audit.check("single-pair CAR closes on identity", np.allclose(c @ cdag + cdag @ c, i2))
+    audit.check("single-pair matter mode has two-state number spectrum", np.allclose(number @ number, number) and np.isclose(np.trace(i2), 2))
+    audit.check("single-pair operator is parity odd", np.allclose(parity @ c + c @ parity, np.zeros((2, 2))))
+
+    edges = []
+    anticommutes = []
+    for x in samples:
+        eps_x = -1 if sum(x) % 2 else 1
+        for mu in range(3):
+            xp = list(x)
+            xp[mu] += 1
+            y = tuple(xp)
+            eps_y = -1 if sum(y) % 2 else 1
+            edges.append(eps_y == -eps_x)
+            anticommutes.append(eps_x + eps_y == 0)
+
+    audit.check("staggered chirality flips on every sampled coordinate edge", all(edges))
+    audit.check("nearest-neighbor epsilon grading anticommutes edgewise", all(anticommutes))
 
 
 def main() -> None:
@@ -364,9 +295,9 @@ def main() -> None:
         TARGET,
         DECISION,
         CURRENT,
-        DOMAIN_TARGET,
-        DOMAIN_DECISION,
-        DOMAIN_CURRENT,
+        SELECTOR_TARGET,
+        SELECTOR_DECISION,
+        SELECTOR_CURRENT,
         ACTION_TARGET,
         ACTION_DECISION,
         ACTION_CURRENT,
@@ -379,8 +310,6 @@ def main() -> None:
         GOAL,
         KOIDE_FIREWALL,
         PARENT_TARGET,
-        PARENT_DECISION,
-        PARENT_CURRENT,
         HW1_TARGET,
         PHYSICAL_CARRIER_TARGET,
         MATTER_ATTACHMENT,
@@ -410,11 +339,11 @@ def main() -> None:
 
     section("Required packet content")
     required_phrases = [
-        "Koide R-Eta Faithful KS State-Action Selector Target Discriminator",
-        "Koide R-Eta Faithful KS State-Action Selector Ratification Decision Packet",
-        "Koide R-Eta Faithful KS State-Action Selector Current-Surface No-Go",
-        "FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED",
-        "FAITHFUL_KS_STATE_ACTION_SELECTOR_TEXT_LOCK",
+        "Koide R-Eta KS Reconstructed Matter-Mode Action-Domain Target Discriminator",
+        "Koide R-Eta KS Reconstructed Matter-Mode Action-Domain Ratification Decision Packet",
+        "Koide R-Eta KS Reconstructed Matter-Mode Action-Domain Current-Surface No-Go",
+        "KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED",
+        "KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TEXT_LOCK",
         "MATTER_ATTACHMENT_KS_REDUCTION_ACCEPTED",
         "SPIN_MODULE_ESCAPE_NO_GO_ACCEPTED",
         "OPERATOR_FRAME_MERGER_ACCEPTED",
@@ -423,15 +352,13 @@ def main() -> None:
         "KS_PHASE_FORCING_SURFACE_ACCEPTED",
         "GRASSMANN_CAR_SURFACE_ACCEPTED",
         "STAGGERED_CHIRALITY_SELECTOR_SURFACE_ACCEPTED",
-        "FINITE_SU2_DOUBLE_COVER_ACTION_CHECK",
-        "FINITE_ADJOINT_CENTER_BLINDNESS_CHECK",
-        "FINITE_KS_SCALAR_COMPENSATOR_NONSELECTOR_CHECK",
-        "KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED",
-        "PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED",
-        "NO_OPERATOR_FRAME_SELECTOR_INPUT",
-        "NO_SCALAR_COMPENSATOR_INPUT",
+        "STAGGERED_REALIZATION_GATE_SURFACE_ACCEPTED",
+        "FINITE_KS_SCALARIZATION_DOMAIN_CHECK",
+        "FINITE_GRASSMANN_SINGLE_PAIR_MODE_CHECK",
+        "FINITE_CHIRALITY_PARITY_ACTION_DOMAIN_CHECK",
+        "NO_PHYSICAL_ROTATION_ACTION_SELECTOR_INPUT",
+        "NO_FAITHFUL_SELECTOR_OR_ACTION_LAW_INPUT",
         "NO_SPINFUL_SCALAR_LIFT_EXCLUSION_INPUT",
-        "NO_ACTION_LAW_OR_KS_ROUTE_CLOSURE_INPUT",
         "NO_PARENT_BRIDGE_OR_HW1_INPUT",
         "NO_R_Q_DELTA_OR_R_ETA_VALUE_INPUT",
         "NO_K1_K3_K4_OR_MASS_INPUT",
@@ -439,11 +366,12 @@ def main() -> None:
         "NO_NEW_PRIMITIVE_OR_AXIOM",
         "OWNER_RATIFICATION",
         "AUDIT_ACCEPTANCE",
+        "PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED",
+        "FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED",
         "KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED",
         "KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED",
         "SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED",
         "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED",
-        "HW1_PHYSICAL_GENERATION_LOCUS_RETAINED",
         "KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md",
         "CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md",
         "INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md",
@@ -454,12 +382,9 @@ def main() -> None:
         "STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md",
         "STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
         "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RATIFICATION_DECISION_PACKET_2026-07-05.md",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md",
         "open `#5016`",
         "merged `#5027`",
         "merged `#5023`",
@@ -480,49 +405,41 @@ def main() -> None:
         audit.check(f"no-go discipline marker present: {marker}", marker in packet)
 
     section("Predicate checks")
-    full_route = set(SELECTOR_INPUTS)
-    audit.check("full selector contract closes target", closes_selector(full_route))
-    audit.check("current surface does not close selector target", not closes_selector(CURRENT_SURFACE_INPUTS))
+    full_route = set(DOMAIN_INPUTS)
+    audit.check("full action-domain contract closes target", closes_domain(full_route))
+    audit.check("current surface does not close action-domain target", not closes_domain(CURRENT_SURFACE_INPUTS))
 
     removed_failures = []
-    for missing in sorted(SELECTOR_INPUTS):
+    for missing in sorted(DOMAIN_INPUTS):
         reduced = set(full_route)
         reduced.remove(missing)
-        failed = not closes_selector(reduced)
+        failed = not closes_domain(reduced)
         removed_failures.append(failed)
-        audit.check(f"selector contract fails without input {missing}", failed)
-    audit.check("every one-input-removed selector subset fails", all(removed_failures))
+        audit.check(f"domain contract fails without input {missing}", failed)
+    audit.check("every one-input-removed domain subset fails", all(removed_failures))
 
-    selector_consequence = {"FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED"}
-    action_with_selector = set(ACTION_INPUTS)
-    action_without_owner = action_with_selector - {"OWNER_RATIFICATION"}
-    action_without_audit = action_with_selector - {"AUDIT_ACCEPTANCE"}
-    action_without_selector = action_with_selector - {"FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED"}
-    audit.check("selector consequence alone does not close action law", not closes_action_law(selector_consequence))
-    audit.check("selector consequence plus full action-law inputs closes action law", closes_action_law(action_with_selector))
-    audit.check("selector cannot close action law without owner ratification", not closes_action_law(action_without_owner))
-    audit.check("selector cannot close action law without audit acceptance", not closes_action_law(action_without_audit))
-    audit.check("action law cannot close without selector", not closes_action_law(action_without_selector))
-    audit.check("selector consequence alone does not close KS route", not closes_ks_route(selector_consequence))
-    audit.check("selector consequence alone does not close parent bridge", not closes_parent_bridge(selector_consequence))
-    audit.check("selector consequence alone does not close HW1", not closes_hw1(selector_consequence))
-    audit.check("selector consequence alone does not close charged carrier theorem", not closes_charged_carrier(selector_consequence))
-    audit.check("selector consequence alone does not close physical carrier context", not closes_physical_carrier(selector_consequence))
-    audit.check("selector consequence alone does not close R-eta", not closes_r_eta(selector_consequence))
-    audit.check("selector consequence alone does not close electron mass", not closes_electron_mass(selector_consequence))
-    audit.check("selector consequence alone does not close hydrogen", not closes_hydrogen(selector_consequence))
+    domain_consequence = {"KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED"}
+    selector_with_domain = set(SELECTOR_INPUTS)
+    selector_without_physical = selector_with_domain - {"PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED"}
+    selector_without_domain = selector_with_domain - {"KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED"}
+    audit.check("domain consequence alone does not close selector", not closes_selector(domain_consequence))
+    audit.check("domain consequence plus full selector inputs closes selector", closes_selector(selector_with_domain))
+    audit.check("selector cannot close without physical rotation action selector", not closes_selector(selector_without_physical))
+    audit.check("selector cannot close without action-domain input", not closes_selector(selector_without_domain))
+    audit.check("domain consequence alone does not close action law", not closes_action_law(domain_consequence))
+    audit.check("domain consequence alone does not close KS route", not closes_ks_route(domain_consequence))
+    audit.check("domain consequence alone does not close hydrogen", not closes_hydrogen(domain_consequence))
 
-    section("Finite selector checks")
-    finite_selector_checks(audit)
+    section("Finite action-domain support checks")
+    finite_domain_checks(audit)
 
     section("Authority and primitive boundary checks")
     goal = read(GOAL)
     firewall = read(KOIDE_FIREWALL)
-    domain_packet = "\n".join([read(DOMAIN_TARGET), read(DOMAIN_DECISION), read(DOMAIN_CURRENT)])
+    selector_packet = "\n".join([read(SELECTOR_TARGET), read(SELECTOR_DECISION), read(SELECTOR_CURRENT)])
     action_packet = "\n".join([read(ACTION_TARGET), read(ACTION_DECISION), read(ACTION_CURRENT)])
     ks_packet = "\n".join([read(KS_TARGET), read(KS_DECISION), read(KS_CURRENT)])
     scalar_packet = "\n".join([read(SCALAR_TARGET), read(SCALAR_DECISION), read(SCALAR_CURRENT)])
-    parent_packet = "\n".join([read(PARENT_TARGET), read(PARENT_DECISION), read(PARENT_CURRENT)])
     matter_attachment = read(MATTER_ATTACHMENT)
     carrier_attachment = read(CARRIER_ATTACHMENT)
     su2_merger = read(SU2_MERGER)
@@ -540,38 +457,22 @@ def main() -> None:
     for label, container in [
         ("goal packet", goal),
         ("Koide firewall", firewall),
-        ("action-law packet", action_packet),
-    ]:
-        audit.check(
-            f"{label} references selector lane",
-            TARGET.name in container
-            and DECISION.name in container
-            and CURRENT.name in container
-            and "FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED" in container,
-        )
-
-    for label, container in [
-        ("goal packet", goal),
-        ("Koide firewall", firewall),
-        ("selector packet", packet),
+        ("selector packet", selector_packet),
     ]:
         audit.check(
             f"{label} references action-domain lane",
-            DOMAIN_TARGET.name in container
-            and DOMAIN_DECISION.name in container
-            and DOMAIN_CURRENT.name in container
+            TARGET.name in container
+            and DECISION.name in container
+            and CURRENT.name in container
             and "KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED" in container,
         )
 
-    audit.check("domain packet references selector parent target", TARGET.name in domain_packet)
-    audit.check("domain packet keeps physical action selector as sibling input", "PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED" in domain_packet)
-    audit.check("selector packet references action-law parent target", ACTION_TARGET.name in packet)
-    audit.check("selector packet references KS child target", KS_TARGET.name in packet)
-    audit.check("selector packet references scalar-lift sibling target", SCALAR_TARGET.name in packet)
-    audit.check("action packet still names selector input", "FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED" in action_packet)
+    audit.check("domain packet references selector parent target", SELECTOR_TARGET.name in packet)
+    audit.check("selector packet still names action-domain input", "KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED" in selector_packet)
+    audit.check("selector packet still names physical action-selector sibling", "PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED" in selector_packet)
+    audit.check("action packet still names faithful selector", "FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED" in action_packet)
     audit.check("KS packet still names action-law input", "KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED" in ks_packet)
     audit.check("scalar packet keeps action law as sibling non-input", "KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED" in scalar_packet)
-    audit.check("parent packet still names physical matter bridge", "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in parent_packet)
     audit.check("HW1 target still consumes parent bridge only", "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in read(HW1_TARGET))
     audit.check("physical carrier target keeps charged carrier downstream", "CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED" in read(PHYSICAL_CARRIER_TARGET))
 
@@ -655,67 +556,64 @@ def main() -> None:
         audit.check(f"registry node present: {node}", node in primitive_nodes)
 
     for forbidden_node in [
-        "faithful_ks_state_action_selector_primitive",
         "ks_reconstructed_matter_mode_action_domain_primitive",
         "physical_rotation_action_selector_primitive",
+        "faithful_ks_state_action_selector_primitive",
         "ks_spin_lift_physical_action_primitive",
         "physical_matter_state_law_primitive",
         "hydrogen_primitive",
     ]:
         audit.check(f"no registered primitive shortcut: {forbidden_node}", forbidden_node not in primitive_nodes)
 
+    primitive_flat = flat(primitive_text)
     for excluded in ["selector", "readout bridge", "state-selection rule", "mass ratio", "empirical fit"]:
-        audit.check(f"primitive notes exclude {excluded}", excluded in primitive_text)
+        audit.check(f"primitive notes exclude {excluded}", excluded in primitive_flat)
 
     section("Open/merged PR and non-claim boundaries")
-    current_flat = flat(current)
     pr_markers = [
-        "`#5016` zero-import hydrogen retained lane bundle | open, audit in progress at refresh",
-        "`#5027` Koide custody AC gate-edge repair | merged, audit success",
-        "`#5023` Koide W4 audit-readiness repairs | merged, audit success",
-        "`#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success",
-        "`#5026` Koide custody L4 retained-successor re-point | merged, audit success",
-        "`#5021` primitive-retirement review: meta gate map, no retirements | open draft, audit success",
-        "`#5014` record-formation front is the domain wall | open, audit success",
-        "`#5017` domain-wall edge anomaly inflow via spectral flow | open, audit success",
-        "`#5018` domain-wall edge content vs SM chiral map | open, audit success",
+        "`#5016` zero-import hydrogen retained lane bundle",
+        "`#5027` Koide custody AC gate-edge repair",
+        "`#5023` Koide W4 audit-readiness repairs",
+        "`#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase",
+        "`#5026` Koide custody L4 retained-successor re-point",
+        "`#5021` primitive-retirement review: meta gate map, no retirements",
+        "`#5014` record-formation front domain wall",
+        "`#5017` domain-wall edge anomaly inflow spectral flow",
+        "`#5018` domain-wall edge content vs SM chiral map",
         "clean/dirty/check labels are not proof inputs",
     ]
     for marker in pr_markers:
-        audit.check(f"PR marker present: {marker}", flat(marker) in current_flat)
+        audit.check(f"PR marker present: {marker}", marker in packet)
 
     explicit_nonclaims = [
-        "`FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED`.",
         "`KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED`.",
         "`PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED`.",
+        "`FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED`.",
         "No derivation or ratification of `KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED`.",
         "`SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED`.",
         "`KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED`.",
         "No derivation or ratification of `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`.",
-        "No derivation or ratification of `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`.",
         "retained hydrogen",
         "No new axiom, primitive, Tier-A admission, empirical import, or audit status",
-        "No claim that #5014, #5017, #5018, #5023, #5024, #5026, or #5027 supplies the",
+        "No claim that #5014, #5017, #5018, #5023, #5024, #5026, or #5027 supplies",
     ]
     for phrase in explicit_nonclaims:
         audit.check(f"explicit non-claim present: {phrase}", phrase in packet)
 
-    forbidden = [
-        "This note ratifies faithful KS state-action selector",
-        "FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED is supplied",
+    forbidden_overclaims = [
+        "This note ratifies KS reconstructed matter-mode action domain",
         "KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED is supplied",
         "PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED is supplied",
+        "FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED is supplied",
         "KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED is supplied",
         "KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED is supplied",
-        "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED is supplied",
-        "HW1_PHYSICAL_GENERATION_LOCUS_RETAINED is supplied",
         "physical electron mass is retained",
         "hydrogen retained theorem",
         "This note claims hydrogen is retained",
         "**Status:** retained",
         "**Status:** proposed_retained",
     ]
-    for phrase in forbidden:
+    for phrase in forbidden_overclaims:
         audit.check(f"forbidden overclaim absent: {phrase}", phrase not in packet)
 
     audit.summary()

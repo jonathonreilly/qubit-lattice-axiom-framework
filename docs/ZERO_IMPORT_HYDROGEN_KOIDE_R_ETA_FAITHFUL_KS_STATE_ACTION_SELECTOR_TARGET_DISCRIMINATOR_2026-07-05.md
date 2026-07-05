@@ -27,6 +27,16 @@ This is a child input of
 theorem, the scalar-lift exclusion theorem, the KS child theorem, or the parent
 physical matter-state bridge.
 
+The action-domain subinput is packaged separately by
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md`,
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RATIFICATION_DECISION_PACKET_2026-07-05.md`,
+and
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_CURRENT_SURFACE_NO_GO_2026-07-05.md`.
+Those packets can feed this selector only after
+`KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED` is retained; they do not
+select the physical rotation action and do not by themselves ratify
+`FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED`.
+
 ## Retention Contract
 
 `FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED` requires all of the following
@@ -114,6 +124,9 @@ fixed inputs and owner/audit acceptance, and cannot close retained hydrogen.
 | `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded/conditional Grassmann/CAR support | physical rotation action on the reconstructed matter mode |
 | `STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | narrow staggered chirality support | faithful physical state-action selector |
 | `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` | bounded synthesis context with named residuals | unbounded physical matter-state action law |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md` | action-domain subtarget that can feed this selector if retained | physical action selector or selector theorem itself |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RATIFICATION_DECISION_PACKET_2026-07-05.md` | action-domain owner/audit contract shape | domain retention is not accepted here |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the action-domain input | retained selector consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | parent action-law target that can consume this selector if retained | this selector theorem itself |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | KS child target downstream of the action-law lane | this selector theorem itself |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | sibling scalar-lift exclusion target | physical action selector |
@@ -139,6 +152,7 @@ signals; clean/dirty/check labels are not proof inputs.
 | PR | queue signal | selector effect |
 |---|---|---|
 | open `#5016` zero-import hydrogen retained lane bundle | carries this lane once pushed | not landed authority while open |
+| merged `#5027` Koide custody AC gate-edge repair | custody/audit-graph repair, audit success | no faithful KS state-action selector |
 | merged `#5023` Koide W4 audit-readiness repairs | record/species/custody/hw-complement hygiene, audit success | no faithful KS state-action selector |
 | merged `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | gate-readiness and audit-graph hygiene, audit success | no faithful KS state-action selector |
 | merged `#5026` Koide custody L4 retained-successor re-point | charged-lepton custody citation repair, audit success | no faithful KS state-action selector |
@@ -212,7 +226,7 @@ gates are explicit in N2.
 | `Cl(3,1)` extension note | abstract algebra extension, not per-site module transport | per-site state action law | yes |
 | quantum boost-action faith no-go | local algebra does not force physical action faith | analogous rotation action-faith selector | yes |
 | KS/Grassmann/chirality notes | bounded route support | faithful physical state-action selector | yes, as support/nonclosure |
-| #5014/#5017/#5018/#5023/#5024/#5026 | adjacent support/hygiene/custody status | retained faithful selector | yes |
+| #5014/#5017/#5018/#5023/#5024/#5026/#5027 | adjacent support/hygiene/custody status | retained faithful selector | yes |
 
 ### N5 - Rhetoric Audit
 
@@ -225,7 +239,7 @@ cannot be supplied. Untested broader resolutions are not claimed.
 
 | Candidate path | Status | What it would close |
 |---|---|---|
-| retained reconstructed matter-mode action-domain theorem | open positive route | `KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED` |
+| retained reconstructed matter-mode action-domain theorem | open positive route in `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_TARGET_DISCRIMINATOR_2026-07-05.md` | `KS_RECONSTRUCTED_MATTER_MODE_ACTION_DOMAIN_RETAINED` |
 | retained physical faithful-action selector theorem | open positive route | `PHYSICAL_ROTATION_ACTION_SELECTOR_RETAINED` |
 | owner/audit ratification after both positive subinputs | open governance/audit route | `FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED` |
 | parent KS spin-lift action-law lane after this selector | downstream open route | `KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED` |
@@ -275,5 +289,5 @@ impossibility is not shipped.
   consequence.
 - No new axiom, primitive, Tier-A admission, empirical import, or audit status
   is introduced.
-- No claim that #5014, #5017, #5018, #5023, #5024, or #5026 supplies the
+- No claim that #5014, #5017, #5018, #5023, #5024, #5026, or #5027 supplies the
   faithful KS state-action selector.

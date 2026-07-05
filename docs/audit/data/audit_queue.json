@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 416,
-    "high": 289,
+    "high": 288,
     "leaf": 754,
     "medium": 513
   },
@@ -12066,26 +12066,29 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "per_site_su2_spin_half_theorem_note_2026-05-02",
+      "claim_id": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
       "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
         "minimal_axioms",
-        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+        "per_site_su2_spin_half_theorem_note_2026-05-02",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02"
       ],
-      "direct_in_degree": 12,
+      "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.637,
-      "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
+      "load_bearing_score": 12.524,
+      "note_path": "docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/per_site_su2_spin_half_check.py",
-      "transitive_descendants": 198
+      "runner_path": "scripts/internal_external_su2_merger_runner.py",
+      "transitive_descendants": 183
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -12951,34 +12954,6 @@
       "ready": false,
       "runner_path": "scripts/cl3_koide_a1_route_a_koide_nishiura_2026_05_08_routea.py",
       "transitive_descendants": 238
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-        "per_site_su2_spin_half_theorem_note_2026-05-02",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.524,
-      "note_path": "docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/internal_external_su2_merger_runner.py",
-      "transitive_descendants": 183
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -57926,5 +57901,5 @@
     }
   ],
   "ready_count": 184,
-  "total_pending": 1972
+  "total_pending": 1971
 }

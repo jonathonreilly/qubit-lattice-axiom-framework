@@ -721,7 +721,10 @@ def main() -> None:
         "chirality domain-wall free-field note",
         "theta native positive-class adjudication",
         "wave-collapse-block01 measurement-collapse gate",
-	        "Koide native zero-section route guard repair",
+        "Koide native zero-section route guard repair",
+        "`#5019` Koide `AC_phi_lambda` axiom-surface rebase",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md",
+        "Koide premise-hygiene and audit-readiness context",
     ]
     for phrase in required_refs:
         audit.check(f"required gate/reference present: {phrase}", phrase in note)
@@ -805,6 +808,7 @@ def main() -> None:
         "docs/ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "docs/ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md",
         "docs/ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md",
+        "docs/ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md",
         "docs/ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_TARGET_DISCRIMINATOR_2026-07-04.md",
         "docs/ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-04.md",
         "docs/ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md",

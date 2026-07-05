@@ -29,6 +29,7 @@ BRANCH_MASS_MAP_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MA
 BRANCH_MASS_MAP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 ELECTRON_MASS_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 MASS_SPECTRUM_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_CHARGED_LEPTON_MASS_SPECTRUM_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+PR5019_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md"
 KOIDE_OPEN_CERT = ROOT / "docs" / "CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md"
 BRANNEN_OPEN_GATE = ROOT / "docs" / "LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md"
 LEPTON_SCALE = ROOT / "docs" / "LEPTON_SCALE_FRONTIER_PROBE_2026-06-05.md"
@@ -149,6 +150,7 @@ def main() -> None:
         BRANCH_MASS_MAP_NO_GO,
         ELECTRON_MASS_NO_GO,
         MASS_SPECTRUM_PACKET,
+        PR5019_IMPACT,
         KOIDE_OPEN_CERT,
         BRANNEN_OPEN_GATE,
         LEPTON_SCALE,
@@ -211,6 +213,9 @@ def main() -> None:
         "Open PR Alignment",
         "Open PRs were refreshed on 2026-07-05 UTC after `#5015` opened and after",
         "clean/green status is not a prerequisite",
+        "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md",
+        "premise-hygiene and audit-readiness context",
         "`#5015` wave-collapse-block01 measurement-collapse gate | open",
         "`#5014` record-formation front/domain-wall chirality | open",
         "`#5007` Koide native zero-section route guard repair | open",
@@ -396,6 +401,7 @@ def main() -> None:
     latest_pr_markers = [
         "`#5015` wave-collapse-block01 measurement-collapse gate | open",
         "`#5014` record-formation front/domain-wall chirality | open",
+        "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",
         "`#5012` chirality domain-wall free-field note | open",
         "`#5011` eta twisted walk family runner | open",
         "`#5010` YT P1 I_s re-audit packet bridge repair | open",

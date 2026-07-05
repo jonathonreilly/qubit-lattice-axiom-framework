@@ -210,6 +210,7 @@ electron mass:
 
 | PR | queue signal | effect on this electron-mass packet |
 |---|---:|---|
+| `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open | premise-hygiene and audit-readiness context for Koide/AC_phi_lambda; no physical electron mass |
 | `#5015` wave-collapse-block01 measurement-collapse gate | open | measurement/collapse work; no physical electron mass |
 | `#5014` record-formation front/domain-wall chirality | open | chirality/domain-wall work; no physical electron mass |
 | `#5012` chirality domain-wall free-field note | open | adjacent chirality science; no electron-mass handoff |
@@ -239,6 +240,7 @@ metadata, not proof inputs here.
 | `CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md` | two-gate open certificate for Koide surface and phase | not a physical charged-lepton mass-spectrum theorem |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md` | comparator Brannen branch arithmetic | does not derive phase, coefficient, or dimensionful scale |
 | `LEPTON_SCALE_FRONTIER_PROBE_2026-06-05.md` | charged-lepton scale factorization and open `1/256` target | scale map only; no electron branch/species |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing impact boundary for open PR `#5019` | Koide premise hygiene only; no `AC_phi_lambda` theorem, species bridge, scale, or electron mass |
 | `SCALE_REFERENCE_PRIMITIVE_NOTE.md` | physical-unit conversion primitive | zero dimensionless content; no electron-mass value |
 | `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_CLOSURE_DISCRIMINATOR_2026-07-04.md` | final static-source Rydberg consumer predicate | consumes `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`; does not derive it |
 

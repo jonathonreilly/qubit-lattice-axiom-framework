@@ -120,6 +120,17 @@ The primitive registry was checked. Registered primitives are approved premise
 nodes, not walls, but no primitive supplies `K1_COUNTING_MEASURE_RETAINED`,
 `r = 1/2`, `Q = 2/3`, `m_e`, `alpha(0)`, or hydrogen.
 
+The K1 counting-measure current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records the corresponding non-supply boundary: current retained, primitive,
+merged-PR, and open-PR surfaces do not supply
+`K1_COUNTING_MEASURE_RETAINED`.
+
+The K1 counting-measure ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages the same ten-input owner/audit contract as a decision object. It is
+not accepted here and does not ratify `K1_COUNTING_MEASURE_RETAINED`.
+
 ## Dependency Boundary
 
 | object | if this target is accepted | still not supplied |

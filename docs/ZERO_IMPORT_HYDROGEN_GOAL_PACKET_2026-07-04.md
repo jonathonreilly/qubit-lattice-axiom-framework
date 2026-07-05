@@ -100,6 +100,17 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   axiom, owner ratification, and audit acceptance. It records the current
   surface as one binary reduced but not retained; it does not derive K2, K3,
   K4, `m_e`, `alpha(0)`, or hydrogen.
+  The K1 counting-measure current-surface no-go
+  `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+  records that current retained, primitive, merged-PR, and open-PR surfaces do
+  not supply `K1_COUNTING_MEASURE_RETAINED`; the missing inputs remain the
+  orbit/holomorphic count selector, dimension/Born default exclusion, owner
+  ratification, and audit acceptance.
+  The K1 counting-measure ratification decision packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  packages the same ten-input owner/audit contract for
+  `K1_COUNTING_MEASURE_RETAINED`; it is not K2/K3/K4, `m_e`, `alpha(0)`, or
+  hydrogen.
   The Koide native zero-section `#5007` impact discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md`
   records `KOIDE_NATIVE_ZERO_SECTION_DEFINED_ROUTE_ALGEBRA=TRUE` as useful
@@ -1276,7 +1287,8 @@ appeared, again after `#4958` appeared and `#4950` merged, and again after
 							and again after `#5012` and `#5013` appeared and
 							completed audit successfully, then after `#5014`
 							appeared, then after `#5015` opened and `#5013`
-                            merged, then after `#5019` and `#5020` opened.
+                            merged, then after `#5019` merged and `#5020`
+                            opened.
 							The latest refresh found
 							`#5015` open, `#5014` open, `#5013` merged, `#5012` open,
 							`#5011` `SUCCESS`, `#5010` `SUCCESS`,
@@ -1411,10 +1423,12 @@ here.
                             | `#5017` domain-wall edge anomaly inflow via spectral flow | Open. It is chirality/anomaly-inflow science; it does not supply charged-lepton F/L/P/R, D17 weak-front normalization, Koide electron readout, `S_l`, `m_e`, `alpha(0)`, static-source NR Coulomb closure, or hydrogen. |
                             | `#5018` domain-wall edge content vs SM chiral fermions map | Open. It is chirality/domain-wall edge-content science; it does not supply charged-lepton F/L/P/R, D17 weak-front normalization, Koide electron readout, `S_l`, `m_e`, `alpha(0)`, static-source NR Coulomb closure, or hydrogen. |
                             | `#5017`/`#5018` chirality/domain-wall impact boundary | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md` records these as above-C3 chirality/domain-wall context; it does not derive the K3 physical electron species bridge, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
-                        | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as Koide premise-hygiene and audit-readiness context for the `AC_phi_lambda` decomposition chain; it does not derive `AC_phi_lambda`, Koide native zero-section closure, physical electron species, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
+                        | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | Merged. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as Koide premise-hygiene and audit-readiness context for the `AC_phi_lambda` decomposition chain; it does not derive `AC_phi_lambda`, Koide native zero-section closure, physical electron species, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5020` Koide R-eta value-face registered-angle/exactness relocation | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 value-face progress; exactness remains open; it does not derive `AC_phi_lambda`, `delta = 2/9`, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5022` delta-eta chain R-eta supplied-premise audit repair | Merged with audit success. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 conditionality progress; it does not supply a retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`, `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_COUNTING_MEASURE_RETAINED`; current source notes reduce K1 to one binary, but this target is not supplied by primitives, #4991, #5019, or K2 work and does not derive `m_e`, `alpha(0)`, or hydrogen. |
+                        | K1 counting-measure current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K1_COUNTING_MEASURE_RETAINED`. |
+                        | K1 counting-measure ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the ten-input owner/audit contract for `K1_COUNTING_MEASURE_RETAINED`; it is not K2/K3/K4, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta readout-retirement target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_READOUT_IDENTIFICATION_RETAINED`; if accepted it can feed the exact theorem and radian-readout license inputs under the two-ninths/radian subgate, not full K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta readout-retirement ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the eleven-input owner/audit contract for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; it is not retained R-eta, K2 exactness, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-unit identity-radian target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; it can feed one input into R-eta readout retirement, not h-class, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |

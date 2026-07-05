@@ -99,6 +99,7 @@ ratification, and audit acceptance.
 | `KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md` | localizes matter attachment to KS/state-law or elementary state-law route | KS-route kernel-object theorem |
 | `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded KS phase/gauge-class support inside the declared kinetic class | retained `sigma.p` kernel-object handoff |
 | `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md` | two-flux-class and scalar/Dirac-ray support with named residuals | retained choice of the spinful `sigma.p` ray as the route kernel |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_ETA_TWISTED_WALK_PR5011_IMPACT_DISCRIMINATOR_2026-07-05.md` | records open #5011 as eta/Kawamoto-Smit covariant-walk context | no retained spinful `sigma.p` KS-route kernel theorem |
 | `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` | bounded synthesis context with explicit residuals | unbounded physical state-action theorem or this retained kernel handoff |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_TARGET_DISCRIMINATOR_2026-07-05.md` | child target that can supply `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED` if retained | spinful kernel-object theorem, this target, or scalar-lift exclusion |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit contract for the route momentum/link-phase input | decision acceptance here |
@@ -135,6 +136,7 @@ signals; clean/dirty/check labels are not proof inputs.
 | merged `#5023` Koide W4 audit-readiness repairs | record/species/custody/hw-complement hygiene | no route-defined spinful KS kernel theorem |
 | merged `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | gate-readiness and audit-graph hygiene | no route-defined spinful KS kernel theorem |
 | open `#5021` primitive-retirement review | draft meta map; no retirements | no primitive shortcut |
+| open `#5011` eta twisted walk family runner repair | eta/Kawamoto-Smit covariant-walk context via `ZERO_IMPORT_HYDROGEN_KOIDE_ETA_TWISTED_WALK_PR5011_IMPACT_DISCRIMINATOR_2026-07-05.md` | no route-defined spinful KS kernel theorem |
 | open `#5014` record-formation front domain wall | formation-front/domain-wall support | no route-defined spinful KS kernel theorem |
 | open `#5017` domain-wall edge anomaly inflow spectral flow | anomaly-flow support | no route-defined spinful KS kernel theorem |
 | open `#5018` domain-wall edge content vs SM chiral map | chirality/domain-wall map with named gaps | no route-defined spinful KS kernel theorem |

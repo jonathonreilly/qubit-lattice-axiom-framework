@@ -455,6 +455,17 @@ downstream support input is
 `PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2 exactness, physical
 electron mass, alpha input, or hydrogen.
 
+The eta-twisted walk PR #5011 impact discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_ETA_TWISTED_WALK_PR5011_IMPACT_DISCRIMINATOR_2026-07-05.md`)
+records open `#5011` as eta/Kawamoto-Smit covariant-walk context for the KS
+route discussion. Its support predicate is only
+`PR5011_ETA_TWISTED_COVARIANT_WALK_CONTEXT`; it does not supply
+`KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED`,
+`SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED`,
+`KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED`, the physical
+matter-state bridge, h-class, R-eta, K2 exactness, physical electron mass,
+alpha input, or hydrogen.
+
 The R-eta hw1 physical generation-locus target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md`),
 ratification decision packet
@@ -720,7 +731,7 @@ main:
 | `#5023` | Merged Koide W4 audit-readiness repairs, audit success at merge. It repairs record/species/custody/hw-complement dependency surfaces; it supplies no `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`, no `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, no `PHYSICAL_CARRIER_CONTEXT_RETAINED`, K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5020` | Koide R-eta value-face registered-angle/exactness relocation. It moves K2 value-face standing toward realized-state registration and names the exactness residual; it supplies no electron readout, physical electron mass, or hydrogen. |
 | `#5019` | Koide `AC_phi_lambda` axiom-surface rebase. It is premise-hygiene and audit-readiness context for the decomposition chain; it supplies no K1/K2/K3 closure. |
-| `#5011` | Latest open PR at refresh; eta twisted walk family runner repair, `CLEAN`. It does not supply Koide electron readout, charged-lepton scale, `alpha(0)`, or hydrogen. |
+| `#5011` | Open eta twisted walk family runner repair, audit success at refresh. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_ETA_TWISTED_WALK_PR5011_IMPACT_DISCRIMINATOR_2026-07-05.md` records it as eta/Kawamoto-Smit covariant-walk context only; it does not supply Koide electron readout, charged-lepton scale, `alpha(0)`, or hydrogen. |
 | `#5010` | Latest open PR at refresh; YT P1 I_s re-audit packet bridge repair. It does not supply Koide electron readout, charged-lepton scale, `alpha(0)`, or hydrogen. |
 | `#5009` | S3 spacetime tensor primitive runner repair, currently clean at refresh. It does not supply Koide electron readout, charged-lepton scale, `alpha(0)`, or hydrogen. |
 | `#5008` | Quark mass-ratio CP probe boundary repair. It does not supply Koide electron readout, charged-lepton scale, `alpha(0)`, or hydrogen. |

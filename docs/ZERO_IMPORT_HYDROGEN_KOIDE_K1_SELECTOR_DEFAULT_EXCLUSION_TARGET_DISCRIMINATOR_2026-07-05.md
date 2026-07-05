@@ -97,6 +97,17 @@ later accepted, it feeds only one selector/default-exclusion input; it does not
 supply `REAL_VECTOR_TRACE_DEFAULT_EXCLUDED`, full K1, `m_e`, `alpha(0)`, or
 hydrogen.
 
+The determinant theorem now has a nested complex-slot factoring and chiral-count
+batch:
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_TARGET_DISCRIMINATOR_2026-07-05.md`.
+Its current-surface no-go and decision packet package
+`K1_READOUT_COMPLEX_SLOT_FACTORING_RETAINED` and
+`K1_CHIRAL_HOLOMORPHIC_COUNT_ON_RETAINED_REALIZATION_RETAINED` as coupled
+inputs to the determinant theorem. If accepted, they can feed only
+`READOUT_FUNCTIONAL_FACTORS_THROUGH_COMPLEX_SLOT` and
+`CHIRAL_HOLOMORPHIC_COUNT_COMPUTED_ON_RETAINED_REALIZATION`, not this
+selector/default-exclusion target or hydrogen.
+
 ## Source Surface
 
 The narrow synthesis
@@ -149,6 +160,7 @@ that chain only after acceptance.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | can feed only `CHIRAL_OR_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`, not default exclusion or full K1 |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | fourteen-input owner/audit contract for the determinant theorem | not accepted on the current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for the determinant theorem | no retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_TARGET_DISCRIMINATOR_2026-07-05.md` | coupled target for determinant factorization and retained count inputs | no selector/default-exclusion consequence |
 | orbit-occupancy independence note | current-surface non-supply plus premise candidate | excluded as a proof input for this subtarget |
 | Berezin subsumption note | conditional determinant-exponent route | possible future theorem input, not current closure |
 | retained corner-measure coefficient note | keeps coefficient/occupancy open under retained corner measure | no selector shortcut |

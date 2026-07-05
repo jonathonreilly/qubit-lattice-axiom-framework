@@ -82,6 +82,9 @@ fluctuation determinant/readout object is chiral or holomorphic.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_TARGET_DISCRIMINATOR_2026-07-05.md` | sixteen-input target for `K1_FLUCTUATION_DETERMINANT_OBJECT_IDENTIFICATION_RETAINED` | current object input closure, factorization, or count |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `FLUCTUATION_DETERMINANT_OBJECT_IDENTIFIED` | parent determinant theorem closure |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit contract for the object input | retained consequence; not accepted on current surface |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_TARGET_DISCRIMINATOR_2026-07-05.md` | coupled targets for factorization and count inputs | current retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for factorization and count | parent determinant theorem closure |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COMPLEX_SLOT_FACTORING_AND_CHIRAL_COUNT_BATCH_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit contract for both coupled inputs | retained consequence; not accepted on current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` | fourteen-input target for `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | fourteen-input owner/audit decision packet | retained consequence; not accepted on the current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | parent selector/default-exclusion target | determinant theorem closure or default exclusion |
@@ -114,6 +117,8 @@ tracked as dependency-state signals; clean/green status is not proof input.
 
 | PR | queue signal | determinant effect |
 |---|---:|---|
+| `#5031` A_min joint-C3 automorphism bridge | merged and audited clean | selector-invariance context only; no K1 factorization/count |
+| `#5030` multisite Pauli finite-carrier source | open | finite-carrier cleanup; no determinant theorem |
 | `#5021` primitive-retirement review | open draft | no primitive retirement, no registry edit, no determinant shortcut |
 | `#5028` Koide W4c labeling-pair successor re-points | merged | species-label hygiene only |
 | `#5029` Koide substep4 labeling no-go runner strengthening | merged with audit success after refresh | runner verification only; no determinant theorem |

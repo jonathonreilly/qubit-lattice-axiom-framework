@@ -260,7 +260,7 @@ def main() -> None:
         "KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md",
         "CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md",
         "merged `#5023` Koide W4 audit-readiness repairs",
-        "open `#5024` Koide W4 gate-note premise minimization",
+        "merged `#5024` Koide W4 gate-note premise minimization",
         "The primitive registry was checked",
         "No-Go Discipline Gate",
         "broad physical-carrier current-surface no-go fails; narrowed",
@@ -370,7 +370,7 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     open_markers = [
-        "`#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | open, audit in progress after latest refresh",
+        "`#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success",
         "`#5023` Koide W4 audit-readiness repairs | merged, audit success",
         "`#5021` primitive-retirement review: meta gate map, no retirements | open draft, audit success",
         "`#5014`/`#5017`/`#5018` chirality/domain-wall stack | open, audit success",

@@ -181,6 +181,21 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   not supply `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`. This lane is locus
   only; it does not supply the charged-lepton carrier theorem, carrier context,
   fixed-point readout, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
+  The physical matter-state law bridge target discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages the immediate missing input under the hw1 locus lane:
+  `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`. The ratification packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  makes that a forked owner/audit contract: a retained KS-to-physical
+  matter-state spinor-law theorem or a retained elementary physical
+  state-rotation law theorem, plus fixed hygiene inputs. The current-surface
+  no-go
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+  records that current retained, primitive, merged-PR, and open-PR surfaces do
+  not supply `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`. This lane is the
+  state-law bridge only; it does not supply `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`,
+  the charged-lepton carrier theorem, carrier context, fixed-point readout,
+  R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
   The h-unit identity-radian target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md`
   packages one subinput of that R-eta target:
@@ -1369,11 +1384,12 @@ without merge after earlier moving labels.
 Merge-state labels are moving review metadata, not load-bearing proof inputs
 here.
 
-A 2026-07-05 UTC follow-up refresh also checked open Koide W4 PRs `#5023` and
-`#5024`. Both were open with audit success at refresh. They improve
-`AC_phi_lambda` / W4 dependency readiness and gate hygiene, but do not supply
-the h-class physical carrier context, h-unit identity, retained R-eta readout
-retirement, `m_e`, `alpha(0)`, or hydrogen.
+A 2026-07-05 UTC follow-up refresh also checked Koide W4 PRs `#5023` and
+`#5024`. Both are merged with audit success. They improve `AC_phi_lambda` / W4
+dependency readiness and gate hygiene, but do not supply a physical
+matter-state law bridge, `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, the h-class
+physical carrier context, h-unit identity, retained R-eta readout retirement,
+`m_e`, `alpha(0)`, or hydrogen.
 
 | PR | current relevance to zero-import hydrogen |
 |---|---|
@@ -1483,8 +1499,8 @@ retirement, `m_e`, `alpha(0)`, or hydrogen.
                         | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | Merged. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as Koide premise-hygiene and audit-readiness context for the `AC_phi_lambda` decomposition chain; it does not derive `AC_phi_lambda`, Koide native zero-section closure, physical electron species, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5020` Koide R-eta value-face registered-angle/exactness relocation | Merged. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 value-face progress; exactness remains open; it does not derive `AC_phi_lambda`, `delta = 2/9`, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5022` delta-eta chain R-eta supplied-premise audit repair | Merged with audit success. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 conditionality progress; it does not supply a retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`, `m_e`, `alpha(0)`, or hydrogen. |
-                        | `#5023` Koide W4 audit-readiness repairs | Open with audit success at refresh. It repairs record-formation/species/custody/hw-complement dependency surfaces for the `AC_phi_lambda` basis; it does not derive h-class physical carrier context, h-unit identity, retained R-eta readout retirement, `m_e`, `alpha(0)`, or hydrogen. |
-                        | `#5024` Koide W4 gate-note premise minimization + substep1 rebase | Open with audit success at refresh. It is `AC_phi_lambda` gate-readiness and premise-minimization work; it does not derive h-class, h-unit, retained R-eta readout retirement, `m_e`, `alpha(0)`, or hydrogen. |
+                        | `#5023` Koide W4 audit-readiness repairs | Merged with audit success. It repairs record-formation/species/custody/hw-complement dependency surfaces for the `AC_phi_lambda` basis; it does not derive a physical matter-state law bridge, `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, h-class physical carrier context, h-unit identity, retained R-eta readout retirement, `m_e`, `alpha(0)`, or hydrogen. |
+                        | `#5024` Koide W4 gate-note premise minimization + substep1 rebase | Merged with audit success. It is `AC_phi_lambda` gate-readiness and premise-minimization work; it does not derive a physical matter-state law bridge, `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, h-class, h-unit, retained R-eta readout retirement, `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_COUNTING_MEASURE_RETAINED`; current source notes reduce K1 to one binary, but this target is not supplied by primitives, #4991, #5019, or K2 work and does not derive `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K1_COUNTING_MEASURE_RETAINED`. |
                         | K1 counting-measure ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the ten-input owner/audit contract for `K1_COUNTING_MEASURE_RETAINED`; it is not K2/K3/K4, `m_e`, `alpha(0)`, or hydrogen. |
@@ -1498,6 +1514,9 @@ retirement, `m_e`, `alpha(0)`, or hydrogen.
                         | R-eta hw1 physical generation-locus target | Open subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` packages `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`; it can feed a future charged-lepton carrier realization theorem as locus support only, not carrier context, fixed-point readout, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta hw1 physical generation-locus ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the fourteen-input owner/audit contract for `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`; it does not derive the physical matter-state-law theorem itself. |
                         | R-eta hw1 physical generation-locus current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`. |
+                        | R-eta physical matter-state law bridge target | Open subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`; it can feed the hw1 locus target only, not the charged-lepton carrier theorem, carrier context, fixed-point readout, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
+                        | R-eta physical matter-state law bridge ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the forked owner/audit contract for `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`; it does not derive either route theorem itself. |
+                        | R-eta physical matter-state law bridge current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`. |
                         | R-eta h-unit identity-radian target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; it can feed one input into R-eta readout retirement, not h-class, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-unit identity-radian ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the eleven-input owner/audit contract for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; it does not derive `c = 1`, `Phi = 2/3`, h-class, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-unit identity-radian current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`. |

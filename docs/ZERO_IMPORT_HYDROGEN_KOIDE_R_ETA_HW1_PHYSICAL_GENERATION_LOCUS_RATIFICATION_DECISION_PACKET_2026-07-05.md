@@ -112,12 +112,15 @@ STATIC_SOURCE_RYDBERG_RETAINED
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | names the fourteen-input target | target only, not ratification |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` | no retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` | names the missing `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED` subinput | target only, not ratification |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the forked state-law bridge owner/audit decision object | no retained bridge consequence unless accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED` | no retained bridge consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` | consumes the future charged-lepton carrier theorem | does not receive it here |
 | `FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md` | momentum/BZ carrier type | no physical `hw=1` locus |
 | `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` | bounded staggered realization synthesis | no physical charged-lepton state-law handoff |
 | `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md` and `P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md` | K1 branch support | within-surface and grade-scoped |
 | open `#5014`, `#5017`, and `#5018` | domain-wall/chirality support stack | no retained physical `hw=1` locus theorem |
-| merged `#5023` and open `#5024` | W4 / AC_phi_lambda gate-readiness and dependency hygiene | no physical `hw=1` locus theorem |
+| merged `#5023` and merged `#5024` | W4 / AC_phi_lambda gate-readiness and dependency hygiene | no physical `hw=1` locus theorem |
 | approved primitives | minimal axioms and approved primitives | no physical locus selector or readout bridge |
 
 ## No-Go Discipline Gate
@@ -157,7 +160,7 @@ ratification decision contract.
 ### N3 - Hidden-Wall Scan
 
 `momentum`, `BZ`, `Kawamoto-Smit`, `K1`, `hw=1`, `C3 triplet`, `domain-wall`,
-`open PR`, `audit success`, `audit in progress`, `registered`, and `primitive`
+`open PR`, `merged PR`, `audit success`, `registered`, and `primitive`
 are treated as support or status words only. None is used as a hidden
 physical matter-state-law theorem.
 

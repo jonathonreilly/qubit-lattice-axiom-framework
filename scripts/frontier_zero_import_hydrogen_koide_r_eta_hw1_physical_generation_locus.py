@@ -14,6 +14,9 @@ DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERA
 CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 KOIDE_FIREWALL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md"
+MATTER_STATE_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md"
+MATTER_STATE_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+MATTER_STATE_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 PHYSICAL_CARRIER_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md"
 PHYSICAL_CARRIER_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 PHYSICAL_CARRIER_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md"
@@ -213,6 +216,9 @@ def main() -> None:
         CURRENT,
         GOAL,
         KOIDE_FIREWALL,
+        MATTER_STATE_TARGET,
+        MATTER_STATE_DECISION,
+        MATTER_STATE_CURRENT,
         PHYSICAL_CARRIER_TARGET,
         PHYSICAL_CARRIER_DECISION,
         PHYSICAL_CARRIER_CURRENT,
@@ -257,6 +263,9 @@ def main() -> None:
         "K1_FLUX_SELECTOR_WITHIN_SURFACE_ACCEPTED",
         "HW1_C3_TRIPLET_ALGEBRA_ACCEPTED",
         "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "NO_SPECIES_LABEL_BIJECTION_INPUT",
         "NO_SINGLE_FIXED_POINT_READOUT_INPUT",
         "NO_R_Q_DELTA_OR_R_ETA_VALUE_INPUT",
@@ -281,7 +290,7 @@ def main() -> None:
         "open `#5017`",
         "open `#5018`",
         "merged `#5023`",
-        "open `#5024`",
+        "merged `#5024`",
         "The primitive registry was checked",
         "No-Go Discipline Gate",
         "Explicit Non-Claims",
@@ -317,6 +326,9 @@ def main() -> None:
     physical_carrier_target = read(PHYSICAL_CARRIER_TARGET)
     physical_carrier_decision = read(PHYSICAL_CARRIER_DECISION)
     physical_carrier_current = read(PHYSICAL_CARRIER_CURRENT)
+    matter_state_target = read(MATTER_STATE_TARGET)
+    matter_state_decision = read(MATTER_STATE_DECISION)
+    matter_state_current = read(MATTER_STATE_CURRENT)
     h_class_target = read(H_CLASS_TARGET)
     r_eta_target = read(R_ETA_TARGET)
     momentum_type = read(MOMENTUM_TYPE)
@@ -347,6 +359,35 @@ def main() -> None:
             TARGET.name in container
             and DECISION.name in container
             and CURRENT.name in container
+            and "HW1_PHYSICAL_GENERATION_LOCUS_RETAINED" in container,
+        )
+
+    for label, container in [
+        ("goal packet", goal),
+        ("Koide firewall", firewall),
+        ("HW1 target", target),
+        ("HW1 decision", decision),
+        ("HW1 current no-go", current),
+        ("physical carrier target", physical_carrier_target),
+        ("physical carrier decision", physical_carrier_decision),
+        ("physical carrier current no-go", physical_carrier_current),
+    ]:
+        audit.check(
+            f"{label} references physical matter-state bridge lane",
+            MATTER_STATE_TARGET.name in container
+            and MATTER_STATE_DECISION.name in container
+            and MATTER_STATE_CURRENT.name in container
+            and "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in container,
+        )
+
+    for label, container in [
+        ("matter-state target", matter_state_target),
+        ("matter-state decision", matter_state_decision),
+        ("matter-state current no-go", matter_state_current),
+    ]:
+        audit.check(
+            f"{label} references HW1 bridge dependency",
+            "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in container
             and "HW1_PHYSICAL_GENERATION_LOCUS_RETAINED" in container,
         )
 
@@ -412,7 +453,7 @@ def main() -> None:
         "`#5014` record-formation front is the domain wall | open, audit success",
         "`#5017` domain-wall edge anomaly inflow via spectral flow | open, audit success",
         "`#5018` domain-wall edge content vs SM chiral fermions map | open, audit success",
-        "`#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | open, audit in progress after latest refresh",
+        "`#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success",
         "`#5023` Koide W4 audit-readiness repairs | merged, audit success",
         "clean/dirty/check labels are not proof inputs",
     ]

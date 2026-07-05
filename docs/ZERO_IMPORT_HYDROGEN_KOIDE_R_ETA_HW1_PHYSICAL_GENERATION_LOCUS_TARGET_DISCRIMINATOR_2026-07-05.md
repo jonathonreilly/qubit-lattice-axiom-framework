@@ -101,9 +101,12 @@ exactness, electron mass, alpha, or hydrogen.
 | `STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md` | arithmetic/species-count bridge support | not a framework physical-locus theorem |
 | `KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md` | locates the matter-state spinor-law residual on the KS route | physical state-law bridge remains open |
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | refutes the spinor-module escape and names the live KS/physical-state-law route | retained physical-state-law bridge |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` | packages `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED` as the next state-law bridge target | target only, not retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | forked owner/audit contract for the state-law bridge | no retained consequence unless accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the state-law bridge | no retained state-law consequence |
 | `KOIDE_DELTA_RANK2_SELECTOR_IS_THE_CLIFFORD_CHIRALITY_DOMAIN_WALL_EDGE_BOUNDED_NOTE_2026-06-05.md` | identifies a native chirality/domain-wall selector candidate | rooting, endpoint, and physical carrier remain open |
 | open `#5014`/`#5017`/`#5018` domain-wall/chirality stack | free-field domain-wall, anomaly-flow, and SM-content map support | no physical `hw=1` charged-lepton locus theorem |
-| merged `#5023` / open `#5024` Koide W4 stack | audit-readiness and gate-readiness progress | no physical `hw=1` charged-lepton locus theorem |
+| merged `#5023` / merged `#5024` Koide W4 stack | audit-readiness and gate-readiness progress | no physical `hw=1` charged-lepton locus theorem |
 | approved primitives | minimal axioms, scale reference, kinetic isotropy, realized-state evaluation discipline | no locus selector, physical readout bridge, value, mass, alpha, or hydrogen |
 
 The primitive registry was checked. The approved primitive nodes are
@@ -119,6 +122,14 @@ The companion current-surface no-go
 records that current retained, primitive, merged-PR, and open-PR surfaces do
 not supply `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`. This target remains a
 positive import-retirement route, not a retained consequence.
+
+The physical matter-state law bridge lane
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md`,
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md`,
+and
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+packages the missing `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED` input under
+this target. It does not itself supply `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`.
 
 ## Hydrogen Effect
 
@@ -178,7 +189,7 @@ domain-wall surfaces as support rather than closure.
 | `K1` / `flux-1` | within-surface kinetic selector, not physical lepton-locus theorem |
 | `hw=1` / `C3 triplet` | exact algebraic target locus, not physical selection |
 | `domain-wall` / `chirality` | support and route context, not retained charged-lepton locus |
-| `open PR` / `audit success` / `audit in progress` | queue/status signal only |
+| `open PR` / `merged PR` / `audit success` | queue/status signal only |
 | `registered` / `primitive` | registry checked; no shortcut |
 | `observed` / `fitted` | comparator data, excluded |
 

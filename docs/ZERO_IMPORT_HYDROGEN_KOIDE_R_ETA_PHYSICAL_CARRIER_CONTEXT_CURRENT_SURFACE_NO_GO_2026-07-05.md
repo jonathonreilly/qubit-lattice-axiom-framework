@@ -62,6 +62,9 @@ AUDIT_ACCEPTANCE
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` | charged-lepton carrier realization theorem or carrier context |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | hw1 locus owner/audit decision packet | retained locus unless accepted |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` | physical matter-state-law bridge and owner/audit remain open |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED` | state-law subinput only |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | forked state-law owner/audit decision packet | no retained bridge consequence unless accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for the state-law bridge | no retained bridge consequence |
 | `ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md` | closes supplied finite-context Record-registrability | physical charged-lepton realization |
 | `KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md` | blocks reduced-carrier over-promotion | retained physical carrier/readout bridge |
 | `FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md` | collapses readout/carrier/basepoint into one gate | retained closure of that gate |
@@ -70,7 +73,7 @@ AUDIT_ACCEPTANCE
 | `KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md` | carrier-locus import decomposition | physical matter operator/locus realization |
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | spinor-module escape no-go and KS route boundary | retained physical-state-law bridge |
 | merged `#5023` Koide W4 audit-readiness repairs | W4 dependency hygiene | physical carrier-context theorem |
-| open `#5024` Koide W4 gate-note premise minimization and substep1 rebase | gate-readiness and substep1 hygiene | physical carrier-context theorem |
+| merged `#5024` Koide W4 gate-note premise minimization and substep1 rebase | gate-readiness and substep1 hygiene | physical carrier-context theorem |
 | approved primitives | minimal axioms, scale reference, kinetic isotropy, realized-state evaluation discipline | carrier selector, physical readout context, exact value, mass, alpha, or hydrogen |
 
 The primitive registry was checked. The approved primitive nodes are
@@ -87,7 +90,7 @@ inputs.
 
 | PR | queue signal | carrier-context effect |
 |---|---:|---|
-| `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | open, audit in progress after latest refresh | gate-readiness progress only; no physical carrier-context theorem |
+| `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success | gate-readiness progress only; no physical carrier-context theorem |
 | `#5023` Koide W4 audit-readiness repairs | merged, audit success | dependency hygiene only; no physical carrier-context theorem |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft, audit success | primitive-boundary context only; no registry edit |
 | `#5014`/`#5017`/`#5018` chirality/domain-wall stack | open, audit success | adjacent chirality context only; no R-eta carrier-context handoff and no `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` |
@@ -122,7 +125,7 @@ PHYSICAL_CARRIER_CONTEXT_RETAINED.
 | gate-collapse route | Treat the single carrier/readout/basepoint gate as retained. | PARTIAL ONLY. The gate is localized, not closed. |
 | tracial standard-form route | Treat the supplied tracial carrier as physical selection. | PARTIAL ONLY. It remains supplied-carrier finite algebra. |
 | carrier-locus / chirality route | Treat carrier-locus decomposition or chirality boundary as the physical carrier theorem. | PARTIAL ONLY. The physical matter-state-law and locus realization remain open. |
-| W4 PR route | Treat merged #5023 / open #5024 as carrier-context closure. | ATTEMPTED. They are audit-readiness repairs, not the retained realization theorem. |
+| W4 PR route | Treat merged #5023 / merged #5024 as carrier-context closure. | ATTEMPTED. They are audit-readiness/gate-readiness repairs, not the retained realization theorem. |
 | primitive shortcut | Treat approved primitives as supplying carrier context. | ATTEMPTED. Registered primitives supply no carrier selector or physical readout context. |
 | comparator route | Use observed or fitted lepton/hydrogen data. | RULED OUT AS ZERO-IMPORT PROOF. Comparator data is target data, not proof input. |
 
@@ -152,7 +155,7 @@ ratification, and audit acceptance.
 | `tracial standard form` | supplied finite carrier support |
 | `registered` / `realized-state` | evaluation discipline, not selector |
 | `primitive` | registry checked; no shortcut |
-| `open PR` / `audit success` / `audit in progress` | queue/status signal only |
+| `open PR` / `merged PR` / `audit success` | queue/status signal only |
 | `observed` / `fitted` | comparator data, excluded |
 
 No physical carrier realization theorem, owner decision, audit decision,

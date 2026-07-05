@@ -32417,6 +32417,38 @@
       "to": "primitive_p_lh_content_proposal_note_2026-05-10_pplh"
     },
     {
+      "from": "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05",
+      "to": "scale_reference_primitive"
+    },
+    {
+      "from": "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05",
+      "to": "kinetic_isotropy_primitive"
+    },
+    {
+      "from": "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05",
+      "to": "realized_state_primitive"
+    },
+    {
+      "from": "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05",
+      "to": "kinetic_isotropy_primitive_irreducibility_support_2026-06-09"
+    },
+    {
+      "from": "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05",
+      "to": "kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20"
+    },
+    {
+      "from": "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05",
+      "to": "kinetic_bw_os0_identification_bridge_interface_no_go_note_2026-06-16"
+    },
+    {
+      "from": "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05",
+      "to": "kinetic_isotropy_composition_closure_bounded_theorem_note_2026-06-09"
+    },
+    {
       "from": "primordial_spectrum_note",
       "to": "cosmology_scale_identification_and_reduction_note"
     },
@@ -101793,6 +101825,27 @@
       "runner_path": "scripts/cl3_primitive_p_lh_ncg_native_2026_05_10_pPlh_ncg_native.py",
       "title": "P-LH NCG-Native Open Gate \u2014 KO-dim-6 J Realization and Order-One Obstruction on the Physical Cl(3)/Z^3 Baseline (pPlh_ncg_native)"
     },
+    "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05": {
+      "claim_id": "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "minimal_axioms",
+        "scale_reference_primitive",
+        "kinetic_isotropy_primitive",
+        "realized_state_primitive",
+        "kinetic_isotropy_primitive_irreducibility_support_2026-06-09",
+        "kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20",
+        "kinetic_bw_os0_identification_bridge_interface_no_go_note_2026-06-16",
+        "kinetic_isotropy_composition_closure_bounded_theorem_note_2026-06-09"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "7761e5e3770b48f04d5e9d75aaf48cef9ad1c33449d1422b473c1a33add83e6c",
+      "path": "docs/PRIMITIVE_RETIREMENT_REVIEW_AFTER_FOUR_AXIOM_RESET_NOTE_2026-07-05.md",
+      "runner_path": "scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py",
+      "title": "Primitive Retirement Review After the Four-Axiom Reset"
+    },
     "primordial_spectrum_note": {
       "claim_id": "primordial_spectrum_note",
       "claim_type_author_hint": null,
@@ -109478,7 +109531,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "27d9b967e456955a691701ee2feadc5002a5a7567f33b1891df6dc3244809919",
+      "note_hash": "d89645a0ee9179afe99c6021d3b0d30ce8bcad2dd3c2bb970cedd2c057d4f472",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125510,7 +125563,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 1556,
       "decoration": 3,
-      "meta": 319,
+      "meta": 320,
       "no_go": 316,
       "none": 1216,
       "open_gate": 133,
@@ -125519,16 +125572,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1961,
       "decoration": 3,
-      "meta": 319,
+      "meta": 320,
       "no_go": 420,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14303,
+    "edge_count": 14311,
     "leaf_count": 1290,
-    "node_count": 3817,
+    "node_count": 3818,
     "root_count": 1103,
-    "runners_with_path": 3440
+    "runners_with_path": 3441
   }
 }

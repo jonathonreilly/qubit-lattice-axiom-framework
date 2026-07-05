@@ -27996,6 +27996,18 @@
       "dominant_class": "D",
       "runner": "scripts/cl3_primitive_p_lh_ncg_native_2026_05_10_pPlh_ncg_native.py"
     },
+    "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py"
+    },
     "primordial_spectrum_note": {
       "assert_count": 0,
       "counts": {
@@ -86933,6 +86945,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py": {
+      "assert_count": 1,
+      "claims": [
+        "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/probe_bz_corner_decomposition.py": {
       "assert_count": 1,
       "claims": [
@@ -90791,13 +90818,13 @@
     "decoration_candidates": 691,
     "dominant_class_distribution": {
       "A": 490,
-      "B": 633,
+      "B": 634,
       "C": 1275,
       "D": 451,
       "none": 457
     },
-    "runners_classified": 3306,
-    "runners_with_C": 1733,
+    "runners_classified": 3307,
+    "runners_with_C": 1734,
     "runners_with_D": 1062
   }
 }

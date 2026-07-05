@@ -1,0 +1,81 @@
+==============================================================================
+PRIMITIVE RETIREMENT REVIEW AFTER FOUR-AXIOM RESET
+==============================================================================
+Scope: review/gate-map verification only; no registry edit.
+
+Registry/front-door checks
+[PASS] axiom premise registry has exactly the expected current ids -- ['minimal_axioms', 'scale_reference_primitive', 'kinetic_isotropy_primitive', 'realized_state_primitive']
+[PASS] minimal axioms current path is the four-axiom memo
+[PASS] scale primitive current path is stable
+[PASS] kinetic primitive current path is stable
+[PASS] realized-state primitive current path is stable
+[PASS] Tier-A registry now has one active admitted derivation target -- 1
+[PASS] remaining Tier-A target is AC_phi_lambda only -- ['staggered_dirac_realization_gate_note_2026-05-03']
+[PASS] theta retirement is recorded separately
+
+Updated axiom-surface checks
+[PASS] axiom memo contains boundary: Physical sites are the points of the cubic lattice `
+[PASS] axiom memo contains boundary: The full one-site possibility domain has algebraic p
+[PASS] axiom memo contains boundary: There is one fixed nearest-neighbor admissibility ru
+[PASS] axiom memo contains boundary: Records form.
+[PASS] axiom memo contains boundary: A state is a configuration of records.
+[PASS] axiom memo contains boundary: A law privileges no states.
+[PASS] axiom memo contains boundary: a law may not depend on a choice not fixed by the su
+[PASS] axiom memo contains boundary: Admissibility is not a dynamics axiom.
+[PASS] axiom memo contains boundary: It does not choose a Hamiltonian or transfer operato
+[PASS] axiom memo contains boundary: define a time metric
+[PASS] axiom memo contains boundary: scale-reference primitive
+
+Primitive source-boundary checks
+[PASS] scale source declares exactly one dimensionful reference
+[PASS] scale source declares units conversion, not physics axiom
+[PASS] scale source forbids dimensionless content
+[PASS] scale source does not derive a/l_P=1
+[PASS] kinetic source declares c_t=c_s
+[PASS] kinetic source says baseline does not fix ratio
+[PASS] kinetic source says scale fixes no dimensionless ratio
+[PASS] realized source says laws do not pick state
+[PASS] realized source says pointwise evaluation only
+[PASS] realized source forbids state-selection content
+
+Kinetic route checks
+[PASS] kinetic support states current structures do not determine xi
+[PASS] kinetic support leaves future retained dynamics route open
+[PASS] B4 no-go says transitivity route is circular
+[PASS] B4 no-go preserves primitive
+[PASS] B-W no-go requires a separate normalization rule
+[PASS] composition note names single-tick placement residual
+
+Ledger classification checks
+[PASS] ledger row exists for minimal_axioms
+[PASS] minimal_axioms is meta effective status -- meta
+[PASS] minimal_axioms is not a retained theorem -- meta
+[PASS] ledger row exists for scale_reference_primitive
+[PASS] scale_reference_primitive is meta effective status -- meta
+[PASS] scale_reference_primitive is not a retained theorem -- meta
+[PASS] ledger row exists for kinetic_isotropy_primitive
+[PASS] kinetic_isotropy_primitive is meta effective status -- meta
+[PASS] kinetic_isotropy_primitive is not a retained theorem -- meta
+[PASS] ledger row exists for realized_state_primitive
+[PASS] realized_state_primitive is meta effective status -- meta
+[PASS] realized_state_primitive is not a retained theorem -- meta
+
+Review-note conclusion checks
+[PASS] review note states no primitive is presently retireable
+[PASS] review note keeps scale primitive
+[PASS] review note keeps kinetic primitive but marks it targetable
+[PASS] review note keeps realized-state primitive
+[PASS] review note forbids registry edit from this review
+[PASS] review note records kinetic bridge stack needed for retirement
+[PASS] review note records hygiene debt separately
+
+Hygiene diagnostic checks
+[PASS] scale boundary runner stale Tier-A count diagnostic is detected
+[PASS] primitive source notes still need four-axiom narrative scrub -- SCALE_REFERENCE_PRIMITIVE_NOTE.md, KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md, REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+
+Verdicts
+  scale_reference_primitive: KEEP -- no dimensionful derivation from current axioms
+  kinetic_isotropy_primitive: KEEP -- best future retirement lane, not closed now
+  realized_state_primitive: KEEP -- laws remain state-blind; no selector supplied
+
+TOTAL: PASS=56 FAIL=0

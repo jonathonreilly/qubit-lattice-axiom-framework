@@ -1332,6 +1332,14 @@ records that current retained, primitive, and open-PR surfaces do not supply
 `AUDIT_ACCEPTANCE`; scalar lattice operator support, Green-kernel support, I1
 hygiene, native complete-square support, and atomic `1/n^2` harness checks
 remain support, not the retained physical-unit one-body theorem.
+The static-source NR Coulomb assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+is review compression only. It groups the direct final atomic rows under the
+parent contract: scalar lattice operator, Coulomb-kernel asymptotic,
+static-source readout, one-body NR physical-unit reduction, Hartree mapping,
+atomic harness, comparator exclusion, no-new-primitive guard, owner, and audit.
+It does not supply `STATIC_SOURCE_NR_COULOMB_LIMIT_RETAINED`,
+`RETAINED_STATIC_SOURCE_NR_COULOMB_LIMIT`, static-source Rydberg, or hydrogen.
 The static-source Rydberg assembly ladder review packet
 `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
 is review compression only. It groups the final six static-source inputs:

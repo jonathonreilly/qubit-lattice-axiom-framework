@@ -120,7 +120,7 @@ about a 15 percent overshoot. So the final closure predicate cannot replace
 | atomic operator shape | scaffolded and narrowed. `frontier_atomic_hydrogen_lattice_companion.py` checks coupling-relative `1/n^2`; the 2026-06-02 repair narrows the scalar graph-Laplacian and Coulomb-kernel dependency. |
 | `m_e` | open through Lane 6. The physical electron mass ratification packet packages the exact `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT` handoff, and the physical electron mass assembly packet review-compresses the direct Lane 6 rows; owner/audit acceptance is still needed before this predicate can consume it. |
 | `alpha(0)` | open through Lane 2 QED running. The alpha loop-kernel target discriminator names QED loop-kernel, threshold/matching moment, R-Lep, R-Q-Heavy, R-Had-NP, scheme/decoupling, and no-comparator inputs; the alpha0 assembly packet review-compresses those direct rows without retaining alpha0. |
-| static-source NR Coulomb physical-unit limit | scaffolded by standard-QM, lattice-operator, Green-kernel, and I1 static-source companions. The ratification decision packet below packages the retained-theorem handoff, but this discriminator does not promote it. |
+| static-source NR Coulomb physical-unit limit | scaffolded by standard-QM, lattice-operator, Green-kernel, and I1 static-source companions. The ratification decision packet packages the retained-theorem handoff, and the static-source NR Coulomb assembly packet review-compresses the direct rows, but this discriminator does not promote it. |
 | final Rydberg substitution | shallow after the first three gates are retained; the static-source Rydberg assembly packet groups the final six-input predicate for review, but the predicate is currently not retained. |
 
 The alpha0 transport ratification decision packet
@@ -172,6 +172,13 @@ records that current retained, primitive, and open-PR surfaces do not supply
 the final structural handoff. The final predicate therefore still treats
 `RETAINED_STATIC_SOURCE_NR_COULOMB_LIMIT` as an unsupplied upstream input, not
 as current retained content.
+
+The static-source NR Coulomb assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+groups the direct atomic rows under the parent NR Coulomb handoff for review
+compression only. It does not supply
+`RETAINED_STATIC_SOURCE_NR_COULOMB_LIMIT`, and this final predicate still
+cannot consume the NR Coulomb limit until the parent handoff is accepted.
 
 The physical electron mass ratification decision packet
 `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md`

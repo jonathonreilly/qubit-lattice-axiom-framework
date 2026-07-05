@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 STATIC_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_LIMIT_RATIFICATION_DECISION_PACKET_2026-07-04.md"
+STATIC_ASSEMBLY = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md"
 STATIC_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_CLOSURE_DISCRIMINATOR_2026-07-04.md"
 PHYSICAL_UNIT_BOUNDARY = ROOT / "docs" / "ATOMIC_LANE2_PHYSICAL_UNIT_LIMIT_BOUNDARY_NOTE_2026-04-29.md"
 PHYSICAL_UNIT_RUNNER = ROOT / "scripts" / "frontier_atomic_lane2_physical_unit_limit_boundary.py"
@@ -133,6 +134,7 @@ def main() -> None:
         NOTE,
         GOAL,
         STATIC_PACKET,
+        STATIC_ASSEMBLY,
         STATIC_TARGET,
         PHYSICAL_UNIT_BOUNDARY,
         PHYSICAL_UNIT_RUNNER,
@@ -166,6 +168,8 @@ def main() -> None:
         "RETAINED_STATIC_SOURCE_NR_COULOMB_LIMIT",
         "STATIC_SOURCE_NR_COULOMB_LIMIT_RETAINED",
         "current retained, primitive, and open-PR surfaces do not supply",
+        "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_NR_COULOMB_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md",
+        "review compression only",
         "STATIC_SOURCE_NR_COULOMB_TEXT_LOCK",
         "SCALAR_LATTICE_OPERATOR_SURFACE_RATIFIED",
         "COULOMB_KERNEL_ASYMPTOTIC_RATIFIED",
@@ -281,6 +285,7 @@ def main() -> None:
     section("Authority and primitive boundary checks")
     goal = read(GOAL)
     static_packet = read(STATIC_PACKET)
+    static_assembly = read(STATIC_ASSEMBLY)
     static_target = read(STATIC_TARGET)
     physical_unit_boundary = read(PHYSICAL_UNIT_BOUNDARY)
     physical_unit_runner = read(PHYSICAL_UNIT_RUNNER)
@@ -304,6 +309,8 @@ def main() -> None:
 
     audit.check("goal packet references static-source no-go", NOTE.name in goal and "RETAINED_STATIC_SOURCE_NR_COULOMB_LIMIT" in goal)
     audit.check("static packet references static-source no-go", NOTE.name in static_packet and "current retained, primitive, and open-PR surfaces do not supply" in static_packet)
+    audit.check("static assembly references static-source no-go", NOTE.name in static_assembly)
+    audit.check("static assembly keeps no-go support-only", "does not supply `STATIC_SOURCE_NR_COULOMB_LIMIT_RETAINED`" in flat(static_assembly))
     audit.check("static target references static-source no-go", NOTE.name in static_target and "RETAINED_STATIC_SOURCE_NR_COULOMB_LIMIT" in static_target)
     audit.check("physical-unit boundary names Hartree missing scale", "E_H = m_e alpha(0)^2" in physical_unit_boundary and "Rydberg = E_H / 2" in physical_unit_boundary)
     audit.check("physical-unit runner checks scale degeneracy", "Different Hartree scales give different E1 values" in physical_unit_runner)

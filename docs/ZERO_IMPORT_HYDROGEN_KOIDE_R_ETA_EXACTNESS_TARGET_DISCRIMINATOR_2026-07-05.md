@@ -152,6 +152,11 @@ K2 exactness is a named ten-input target after #5020, not a retained result.
 | physical electron mass packet | downstream mass composition | guard only | yes |
 | primitive registry notes | primitive boundary | guard only | yes |
 
+The K2 exactness current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that current retained, primitive, and open-PR surfaces do not supply
+`K2_R_ETA_EXACTNESS_RETAINED`; the target remains needed.
+
 ### N5 - Rhetoric Audit
 
 The negative phrase is narrow: "K2 exactness is not retained here."

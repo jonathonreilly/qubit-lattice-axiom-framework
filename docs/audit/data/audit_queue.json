@@ -273,10 +273,10 @@
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
         "three_generation_observable_theorem_note"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.469,
+      "load_bearing_score": 15.969,
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md",
       "queue_reason": "unaudited",
       "ready": true,

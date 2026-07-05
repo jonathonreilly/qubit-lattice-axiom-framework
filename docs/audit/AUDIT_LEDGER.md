@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 193 |
-| **retained_bounded** | 871 |
+| **retained_bounded** | 872 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1936 |
+| unaudited | 1935 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 12 |
-| `audited_clean` | 1247 |
+| `audited_clean` | 1248 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2274 |
+| `unaudited` | 2273 |
 
 | claim_type | count |
 |---|---:|
@@ -1037,6 +1037,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quasi_persistent_relaunch_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14462,6 +14463,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the fixed h=0.5, W=8, L=6 ordered-lattice segment, broad square-window and top-N compressed relaunch states preserve downstream free and weak-field profiles within the reported TV and relative-delta errors, while sharper localization fails.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the fixed lattice, propagates the point packet, compresses the detector-layer state, relaunches it, and computes TV distances and field-response deltas rather than printing hard-coded results. The conclusion is limited to the reported fixed-family bounded surrogate behavior.
 - **rationale:** Within the narrow audited scope, the load-bearing step is a first-principles numerical computation on the provided ordered-lattice harness, not a renaming or imported numerical match. The cited authorities are retained_bounded and are used only as bounded context, while the primary runner directly supplies the controlling metrics for this note. The note explicitly avoids upgrading the result to persistent mass, inertial closure, or family-generic behavior, so the bounded conclusion follows on its own terms.
+- **auditor confidence:** high
+
+### `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04`
+
+- **Note:** [`QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md`](../../docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under the explicit convention that a link connection is a unitary map between two C^2 qubit fibers, the infinitesimal connection algebra is u(2)=su(2)+u(1), with no faithful native single-qubit su(3) color algebra.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-2026-07-05-wave1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Condition on the narrow connection convention that a link connection between two repo-baseline qubit fibers is a unitary map between their two-dimensional complex Hilbert spaces; after choosing the standard Pauli frame on the target fiber, the infinitesimal connection algebra is u(2)=su(2)+u(1), and the single C^2 fiber has no faithful native su(3) color algebra.  _(class `A`)_
+- **chain closes:** True — The convention supplies U(2) as the finite-dimensional unitary connection group on C^2; retained Pauli/Hilbert-carrier inputs supply the C^2 Pauli frame. Independent algebra verifies the su(2) commutators, the central iI generator, real dimension 4 for u(2), Casimir 3/4 I, and the dimension obstruction to an injective su(3) algebra inside a single-qubit endomorphism algebra.
+- **rationale:** The load-bearing claim is bounded exactly by the explicit unitary-link convention, which is not treated as an axiom. The paired runner exits with PASS=19 FAIL=0 and checks the Pauli su(2), central u(1), u(2) dimension, spin-half Casimir, single-qubit color obstruction, and source boundary firewalls. Residual risk is downstream misuse: this row only supplies the algebraic u(2) shape and absence of native single-qubit color, not a physical Standard Model gauge identification.
 - **auditor confidence:** high
 
 ### `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08`

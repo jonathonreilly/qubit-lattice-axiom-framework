@@ -271,10 +271,10 @@
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
         "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.467,
+      "load_bearing_score": 13.967,
       "note_path": "docs/STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "queue_reason": "unaudited",
       "ready": true,

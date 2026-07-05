@@ -420,6 +420,18 @@
       "dominant_class": "B",
       "runner": "scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py"
     },
+    "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 14,
+        "B": 1,
+        "C": 2,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py"
+    },
     "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04": {
       "assert_count": 1,
       "counts": {
@@ -41942,6 +41954,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 14,
+        "B": 1,
+        "C": 2,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py": {
@@ -91006,14 +91033,14 @@
   "stats": {
     "decoration_candidates": 694,
     "dominant_class_distribution": {
-      "A": 497,
+      "A": 498,
       "B": 633,
       "C": 1276,
       "D": 451,
       "none": 457
     },
-    "runners_classified": 3314,
-    "runners_with_C": 1737,
-    "runners_with_D": 1066
+    "runners_classified": 3315,
+    "runners_with_C": 1738,
+    "runners_with_D": 1067
   }
 }

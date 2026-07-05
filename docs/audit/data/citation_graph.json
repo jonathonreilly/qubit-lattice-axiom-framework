@@ -561,6 +561,26 @@
       "to": "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
     },
     {
+      "from": "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04",
+      "to": "realized_state_primitive"
+    },
+    {
+      "from": "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04",
+      "to": "kinetic_isotropy_primitive"
+    },
+    {
+      "from": "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04",
+      "to": "flavor_missing_axiom_carrier_measure_note_2026-05-30"
+    },
+    {
+      "from": "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
       "from": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
       "to": "minimal_axioms"
     },
@@ -57989,6 +58009,24 @@
       "runner_path": "scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py",
       "title": "AC_phi_lambda K-Even Registration Correction And The Registered-Pattern Normal Form"
     },
+    "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "realized_state_primitive",
+        "kinetic_isotropy_primitive",
+        "flavor_missing_axiom_carrier_measure_note_2026-05-30",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "544b55e16094bc21ee803c19e80e17fee98d74b1ae6e47129f45eaf6afb41b4d",
+      "path": "docs/ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda Measure Binary Axiom-Update No-Go"
+    },
     "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04": {
       "claim_id": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
       "claim_type_author_hint": "no_go",
@@ -109733,7 +109771,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3d5f978246827899c1faeb7c5eb07a47dd49684f99e0f8c4cb2c1172c183d435",
+      "note_hash": "3a22f50a7f1b3f17967afc245bbd7bebed90ba61f43c5c51f0ee6c4f53b06885",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125760,7 +125798,7 @@
       "bounded_theorem": 1557,
       "decoration": 3,
       "meta": 319,
-      "no_go": 323,
+      "no_go": 324,
       "none": 1216,
       "open_gate": 133,
       "positive_theorem": 274
@@ -125769,15 +125807,15 @@
       "bounded_theorem": 1962,
       "decoration": 3,
       "meta": 319,
-      "no_go": 427,
+      "no_go": 428,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14332,
-    "leaf_count": 1298,
-    "node_count": 3825,
+    "edge_count": 14337,
+    "leaf_count": 1299,
+    "node_count": 3826,
     "root_count": 1103,
-    "runners_with_path": 3448
+    "runners_with_path": 3449
   }
 }

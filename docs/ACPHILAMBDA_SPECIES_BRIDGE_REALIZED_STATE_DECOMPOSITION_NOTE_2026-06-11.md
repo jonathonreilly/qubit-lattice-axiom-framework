@@ -268,5 +268,9 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 - `ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09`
   (open-gate row located for orientation; the consumed facts are re-verified by this note's runner C3 — context handle, not a citation-graph dependency)
-- [flavor_carrier_from_axioms_momentum_forced_2026-05-31](FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md)
-- [color_einselection_pointer_frame_fork_is_a_unistochastic_irreducibility_criterion_narrow_theorem_note_2026-06-09](COLOR_EINSELECTION_POINTER_FRAME_FORK_IS_A_UNISTOCHASTIC_IRREDUCIBILITY_CRITERION_NARROW_THEOREM_NOTE_2026-06-09.md)
+- `flavor_carrier_from_axioms_momentum_forced_2026-05-31`
+  (superseded-generation consolidator located for orientation; the consumed locus counterfactuals are re-verified by this note's runner C1/C2, and the named chirality-gate authority is the retained [KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md](KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md) row linked above — context handle, not a citation-graph dependency)
+- `color_einselection_pointer_frame_fork_is_a_unistochastic_irreducibility_criterion_narrow_theorem_note_2026-06-09`
+  (color-contrast surface located for orientation; the consumed arithmetic is replicated by this note's runner D1/D2, and the contrast is explanatory, not load-bearing for the registration decomposition — context handle, not a citation-graph dependency)
+
+**Dependency-surface update:** 2026-07-05 — edge hygiene: the two remaining non-retained entries in this section (the 2026-05-31 carrier consolidator and the 2026-06-09 color-einselection contrast surface) demoted to context handles per the pattern already applied to the hw-complementation entry; both consumptions are re-verified/replicated by this note's own runner as recorded in the dependency table. No decomposition claim changed.

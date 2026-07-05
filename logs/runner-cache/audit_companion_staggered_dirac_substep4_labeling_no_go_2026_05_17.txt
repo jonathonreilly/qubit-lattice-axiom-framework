@@ -3,7 +3,7 @@ runner: scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_
 runner_sha256: 387ede848f6a3d96ee53d50d61f05ec62f175ab981f801cd01d1db6441774df3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.62
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 === Substep-4 AC_phi_lambda species-labeling NO-GO ===

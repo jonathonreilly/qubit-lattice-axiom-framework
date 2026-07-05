@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 421,
     "high": 287,
-    "leaf": 753,
+    "leaf": 752,
     "medium": 515
   },
   "cycle_break_target_count": 14,
@@ -36824,31 +36824,6 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/KOIDE_OO_RD_PREMISE_RELATION_ON_CURRENT_SURFACE_NARROW_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_oo_rd_premise_relation_2026_06_12.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18",
@@ -58120,6 +58095,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 176,
-  "total_pending": 1976
+  "ready_count": 175,
+  "total_pending": 1975
 }

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 189 |
 | **retained_no_go** | 191 |
-| **retained_bounded** | 860 |
+| **retained_bounded** | 861 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 24 |
-| unaudited | 1939 |
+| unaudited | 1938 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1234 |
+| `audited_clean` | 1235 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2277 |
+| `unaudited` | 2276 |
 
 | claim_type | count |
 |---|---:|
@@ -730,6 +730,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_native_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_octahedral_overconstrains_value_bit_narrow_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_orientation_blind_count_b_field_gate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9978,6 +9979,18 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The restricted packet gives the full finite-group action and runner source, and the core statements follow from standard linear algebra for signed permutations: diagonal sign flips kill off-diagonal invariant form entries and permutations equalize diagonal entries, while the commutant is scalar. This proves the scoped O_h-carrier obstruction without importing an external physical identification.
 - **rationale:** The runner is not a print-only or tuned-value check: it explicitly constructs O_h and C_3, averages forms/operators over the group, verifies invariant dimensions, and checks the projector and commutant claims. Independent formula inventory agrees with the load-bearing identities: |O_h|=2^3*3!=48, the C_3 symmetric-form space is span{I,J-I}, O_h-invariant forms are lambda I, the O_h average of vv^T/||v||^2 is I/3, and scalar H anticommutes with Gamma only at H=0. The no-go is properly scoped and leaves C_3-level or other split-preserving routes open, so it is a closed obstruction only to full O_h equivariance on R^3.
 - **auditor confidence:** high
+
+### `koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`KOIDE_OO_RD_PREMISE_RELATION_ON_CURRENT_SURFACE_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/KOIDE_OO_RD_PREMISE_RELATION_ON_CURRENT_SURFACE_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Four-part algebraic relation between the proposed OO and R-D premises on the current two-cell surface, conditional on the supplied flow phi(r)=2r^2, the retained rho-map/cell assignments, and the stated side-condition exclusions; no premise adoption or physical-flow derivation is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cleanroom-row5-20260705`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Fix(phi) = {0, 1/2} plus infinity; the side conditions exclude 0 and infinity, so R-D admits exactly r = 1/2, OO's r = 1/2 value is phi-stationary, and psi(r)=r^2 witnesses failure of law-level equivalence.  _(class `A`)_
+- **chain closes:** True — The scoped theorem closes as exact algebra over the two retained direct authorities: the separatrix note supplies phi(r)=2r^2, and the occupancy-independence note supplies the OO statement, cells, and rho-map. The note keeps the flow, side conditions, OO, and R-D as explicit scoped inputs/proposals rather than adopting them, and the runner checks the fixed-point arithmetic, exclusions, rho-map link, stationarity, and counterexample flow.
+- **rationale:** The conclusion is not a physical derivation of the records flow and not an adoption of either premise; it is the bounded relation that follows once the supplied flow, stated side-condition exclusions, and retained OO cell/rho data are in scope. Current and cached runner output agree at PASS=14 FAIL=0, with 11 algebraic theorem checks and 3 note/link consistency checks. No open or non-retained direct dependency is needed for the audited scoped relation, and the note explicitly firewalls context notes from load-bearing dependency status.
 
 ### `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09`
 

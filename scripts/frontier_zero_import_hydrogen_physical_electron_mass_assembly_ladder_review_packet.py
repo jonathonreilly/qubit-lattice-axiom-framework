@@ -32,6 +32,7 @@ BRANCH_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_CURRE
 MASS_SPECTRUM_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_CHARGED_LEPTON_MASS_SPECTRUM_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 R_LEP_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 STATIC_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_CLOSURE_DISCRIMINATOR_2026-07-04.md"
+STATIC_SOURCE_ASSEMBLY = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md"
 ALPHA0_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 SCALE_REFERENCE = ROOT / "docs" / "SCALE_REFERENCE_PRIMITIVE_NOTE.md"
 REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
@@ -181,6 +182,7 @@ def main() -> None:
         MASS_SPECTRUM_PACKET,
         R_LEP_PACKET,
         STATIC_TARGET,
+        STATIC_SOURCE_ASSEMBLY,
         ALPHA0_NO_GO,
         SCALE_REFERENCE,
         REGISTRY,
@@ -229,6 +231,8 @@ def main() -> None:
         "ZERO_IMPORT_HYDROGEN_CHARGED_LEPTON_MASS_SPECTRUM_RATIFICATION_DECISION_PACKET_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_RATIFICATION_DECISION_PACKET_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_CLOSURE_DISCRIMINATOR_2026-07-04.md",
+        "ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md",
+        "final static-source Rydberg consumer surface",
         "r_k(delta) = 1 + sqrt(2) cos(delta + 2 pi k / 3)",
         "Q(delta) = sum_k r_k(delta)^2 / (sum_k r_k(delta))^2 = 2/3",
         "rho_e(delta) = min_k r_k(delta)^2",
@@ -357,7 +361,12 @@ def main() -> None:
 
     audit.check("static target consumes retained electron mass", "RETAINED_ELECTRON_MASS_PHYSICAL_UNIT" in static_target)
     audit.check("static target still needs alpha0", "RETAINED_ALPHA0_LOW_ENERGY_COULOMB" in static_target)
-    audit.check("static target does not name assembly as retained output", "PHYSICAL_ELECTRON_MASS_ASSEMBLY_LADDER_REVIEW_PACKET" not in static_target)
+    audit.check(
+        "static target names electron assembly only as review compression",
+        "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md" in static_target
+        and "review compression only" in static_target
+        and "It does not supply `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`" in flat(static_target),
+    )
     audit.check("native bridge packet remains bridge only", "NATIVE_ZERO_SECTION_BRIDGE_RETAINED" in native_decision and "does not derive `m_e`" in native_decision)
     audit.check("native no-go keeps bridge open", "NATIVE_ZERO_SECTION_BRIDGE_RETAINED" in native_no_go and "current retained, primitive, and open-PR surfaces do not supply" in native_no_go)
     audit.check("species packet remains K3 only", "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED" in species_decision and "K3 support only" in species_decision)

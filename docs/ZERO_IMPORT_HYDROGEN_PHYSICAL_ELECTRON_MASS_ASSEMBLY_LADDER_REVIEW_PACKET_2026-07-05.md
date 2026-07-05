@@ -89,6 +89,11 @@ surfaces:
   consumes `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT` after it is retained, and
   still also needs retained `alpha(0)`, the static-source nonrelativistic
   Coulomb limit, the atomic operator harness, and audit acceptance.
+- `ZERO_IMPORT_HYDROGEN_STATIC_SOURCE_RYDBERG_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+  groups that final static-source Rydberg consumer surface. It can spend
+  `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT` only after the parent physical
+  electron mass contract is accepted; it is not a retained electron-mass proof
+  input.
 
 ## Finite Witness Carried Forward
 

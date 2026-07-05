@@ -25,6 +25,15 @@ This target is a sibling of
 `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED` inside the KS child
 route. It is not the scalar-lift exclusion theorem itself.
 
+The faithful selector subinput is packaged separately by
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md`,
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md`,
+and
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md`.
+Those packets can feed this action-law lane only after
+`FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED` is retained; they do not by
+themselves ratify `KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED`.
+
 ## Retention Contract
 
 `KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED` requires all of the following
@@ -106,6 +115,9 @@ child lane's remaining owner/audit acceptance.
 | `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded/conditional Grassmann/CAR support | unconditional physical state-action law |
 | `STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | narrow staggered chirality parity support | physical state-action law |
 | `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` | bounded synthesis context with explicit residuals | unbounded physical matter-state spinor law |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` | selector subtarget that can feed this action law if retained | this action-law theorem itself |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md` | selector owner/audit contract shape | selector retention is not accepted here |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the selector | retained action-law consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | parent KS child target that consumes this lane if retained | this action-law theorem itself |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | sibling scalar-lift exclusion target | this physical action-law theorem |
 
@@ -213,7 +225,7 @@ cannot be supplied. Untested broader resolutions are not claimed.
 
 | Candidate path | Status | What it would close |
 |---|---|---|
-| retained faithful KS state-action selector theorem | open positive route | `FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED` |
+| retained faithful KS state-action selector theorem | open positive route in `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` | `FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED` |
 | owner/audit ratification after the selector theorem | open governance/audit route | `KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED` |
 | sibling retained spinful scalar-lift exclusion | open sibling route | can help close the KS child route, but not this action-law target by itself |
 | parent KS child theorem after this action law plus sibling scalar-lift exclusion | downstream open route | `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED` |

@@ -60,6 +60,11 @@ KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED
 This packet does not itself supply the faithful KS state-action selector. It
 only states how that eventual proof would be recognized without silently using
 the scalar-lift sibling, the parent bridge, HW1, electron readout, or hydrogen.
+The selector subinput is separately packaged by
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md`,
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md`,
+and
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md`.
 
 ## Current Surface Alignment
 
@@ -67,6 +72,9 @@ the scalar-lift sibling, the parent bridge, HW1, electron readout, or hydrogen.
 |---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | names the target; no retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the target |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` | selector subtarget that can feed this decision only after retention |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md` | selector owner/audit contract shape, not this decision consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED` |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | KS child target that can consume this action law if retained |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | sibling scalar-lift target, not this decision consequence |
 | `KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md` | localizes the live KS state-law route |
@@ -125,10 +133,12 @@ the action law.
 
 ### N6 - Partial-Closure Path Scan
 
-The partial closure is explicit: a retained faithful KS state-action selector
-can close the missing physics input; owner/audit acceptance can then promote
-the handle. A future primitive route would require owner-governed registry
-review because no such primitive is registered now.
+The partial closure is explicit:
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages the retained faithful KS state-action selector route that can close
+the missing physics input; owner/audit acceptance can then promote the handle.
+A future primitive route would require owner-governed registry review because
+no such primitive is registered now.
 
 ### N7 - Steelman
 

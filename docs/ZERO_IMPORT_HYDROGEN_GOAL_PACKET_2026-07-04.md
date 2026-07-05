@@ -222,6 +222,18 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   the KS child route only if retained; it does not supply the scalar-lift
   sibling, KS child theorem, parent bridge, HW1, carrier context, fixed-point
   readout, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
+  The faithful KS state-action selector target discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages the narrower selector subinput under that action-law lane:
+  `FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED`. The ratification packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  makes that a selector owner/audit contract, and the current-surface no-go
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+  records that current retained, primitive, merged-PR, and open-PR surfaces do
+  not supply `FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED`. This lane can feed
+  only the KS spin-lift action-law lane after retention; it does not supply
+  scalar-lift exclusion, the KS child theorem, parent bridge, HW1, carrier
+  context, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
   The spinful staggered kernel scalar-lift exclusion target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md`
   packages one narrower subinput under the KS child route:
@@ -1623,6 +1635,9 @@ physical carrier context, h-unit identity, retained R-eta readout retirement,
                         | R-eta KS spin-lift physical action-law target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` packages `KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED`; it can feed the KS child route only, not the scalar-lift sibling, parent bridge, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta KS spin-lift physical action-law ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the action-law owner/audit contract; it does not derive the faithful KS state-action selector itself. |
                         | R-eta KS spin-lift physical action-law current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `KS_SPIN_LIFT_PHYSICAL_ACTION_LAW_RETAINED`. |
+                        | R-eta faithful KS state-action selector target | Open action-law subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` packages `FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED`; it can feed the KS spin-lift action-law lane only, not scalar-lift exclusion, the KS child theorem, parent bridge, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
+                        | R-eta faithful KS state-action selector ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the selector owner/audit contract; it does not derive the matter-mode action domain or physical rotation action selector itself. |
+                        | R-eta faithful KS state-action selector current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FAITHFUL_KS_STATE_ACTION_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `FAITHFUL_KS_STATE_ACTION_SELECTOR_RETAINED`. |
                         | R-eta spinful staggered kernel scalar-lift exclusion target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` packages `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED`; it can feed the KS child route only, not the KS physical spin-lift action law, parent bridge, HW1, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta spinful staggered kernel scalar-lift exclusion ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the scalar-lift-exclusion owner/audit contract; it does not derive the route-defined spinful kernel theorem or scalar-lift covariance failure theorem itself. |
                         | R-eta spinful staggered kernel scalar-lift exclusion current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED`. |

@@ -561,6 +561,14 @@
       "to": "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
     },
     {
+      "from": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
       "from": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
       "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
     },
@@ -57912,6 +57920,21 @@
       "path": "docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md",
       "runner_path": "scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py",
       "title": "AC_phi_lambda K-Even Registration Correction And The Registered-Pattern Normal Form"
+    },
+    "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "admitted_input_registry_tier_a_note_2026-05-23"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "97aa78a7793163263936075639f99607c186b94dab02fe43ed601e643576e745",
+      "path": "docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda Occupancy Formation-Append Non-Supply No-Go"
     },
     "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11": {
       "claim_id": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
@@ -125587,7 +125610,7 @@
       "bounded_theorem": 1557,
       "decoration": 3,
       "meta": 319,
-      "no_go": 317,
+      "no_go": 318,
       "none": 1216,
       "open_gate": 133,
       "positive_theorem": 274
@@ -125596,15 +125619,15 @@
       "bounded_theorem": 1962,
       "decoration": 3,
       "meta": 319,
-      "no_go": 421,
+      "no_go": 422,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14313,
-    "leaf_count": 1293,
-    "node_count": 3819,
+    "edge_count": 14315,
+    "leaf_count": 1294,
+    "node_count": 3820,
     "root_count": 1103,
-    "runners_with_path": 3442
+    "runners_with_path": 3443
   }
 }

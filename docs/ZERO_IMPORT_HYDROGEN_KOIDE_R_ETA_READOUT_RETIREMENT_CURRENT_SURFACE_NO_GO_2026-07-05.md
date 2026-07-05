@@ -76,6 +76,7 @@ current surface and is not a retained consequence here.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | h-class owner/audit decision packet | retained h-class unless accepted, and no full R-eta retirement |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` | h-class, full R-eta retirement, K2 exactness, or hydrogen |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_RATIFICATION_DECISION_PACKET_2026-07-05.md` | h-unit owner/audit decision packet | retained h-unit unless accepted, and no full R-eta retirement |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` | h-unit selection theorem, owner/audit, full R-eta retirement, K2 exactness, or hydrogen |
 | `ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md` | decomposes R-eta into forced form layer plus `A_R-eta` | retained `A_R-eta`, h-class, or h-unit |
 | `ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md` | finite-context registrability fragment | physical carrier realization and `A_R-eta` value |
 | `KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md` | retained arithmetic plus conditional implication from supplied R-eta | retained R-eta premise |
@@ -114,7 +115,7 @@ dependency-state signals; clean/dirty/check labels are not proof inputs.
 | R-eta readout retirement had target and decision packets | the current-surface non-supply boundary is explicit |
 | #5022 could be overread as a retained R-eta derivation | #5022 is merged conditional supplied-premise repair, not retained retirement |
 | #5020 could be overread as supplying readout retirement | #5020 is merged value-face progress only; exactness/readout retirement remain open |
-| h-class and h-unit could be overread as full R-eta | each remains a subinput until the eleven-input R-eta contract is accepted |
+| h-class and h-unit could be overread as full R-eta | each remains a subinput until the eleven-input R-eta contract is accepted; the h-unit current-surface no-go records that `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` is not supplied yet |
 | #5021 could be overread as a primitive shortcut | #5021 is draft primitive-boundary context while no registry edit exists |
 
 ## No-Go Discipline Gate

@@ -56894,19 +56894,19 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_ward_identity_derivation_theorem"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "cl3_taste_generation_theorem"
     },
     {
       "from": "repo.front_door_status",
       "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
     },
     {
       "from": "repo.repo_organization",
@@ -109684,13 +109684,13 @@
         "hypercharge_identification_note",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+        "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
-        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
-        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "66d1e30e712c45982097c1e04b822b29bf512747cc6bd2e80acbcfc44d813341",
+      "note_hash": "a8ae955d307eefc8769e02ebe24327e8b27c387ed43a9bf0458a1262b29c92c5",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

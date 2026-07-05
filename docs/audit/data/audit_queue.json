@@ -272,15 +272,15 @@
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
         "three_generation_observable_theorem_note"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.467,
+      "load_bearing_score": 15.969,
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py",
-      "transitive_descendants": 1000
+      "transitive_descendants": 1001
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -300,17 +300,17 @@
         "minimal_axioms",
         "native_gauge_closure_note"
       ],
-      "direct_in_degree": 61,
+      "direct_in_degree": 62,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 43.309,
+      "load_bearing_score": 43.811,
       "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
-      "transitive_descendants": 896
+      "transitive_descendants": 897
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -364,28 +364,6 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 23,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 20.685,
-      "note_path": "docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
-      "transitive_descendants": 581
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
@@ -417,6 +395,28 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 22,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 20.182,
+      "note_path": "docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
+      "transitive_descendants": 580
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -428,15 +428,15 @@
         "minimal_axioms",
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 6,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.16,
+      "load_bearing_score": 11.657,
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
-      "transitive_descendants": 571
+      "transitive_descendants": 570
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1356,30 +1356,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.966,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py",
-      "transitive_descendants": 999
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -1398,12 +1374,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.466,
+      "load_bearing_score": 13.467,
       "note_path": "docs/STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py",
-      "transitive_descendants": 999
+      "transitive_descendants": 1000
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1430,12 +1406,36 @@
       "direct_in_degree": 54,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 39.964,
+      "load_bearing_score": 39.966,
       "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py",
-      "transitive_descendants": 998
+      "transitive_descendants": 999
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.966,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py",
+      "transitive_descendants": 999
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

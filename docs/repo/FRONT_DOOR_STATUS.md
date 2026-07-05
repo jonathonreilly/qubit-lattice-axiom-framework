@@ -102,7 +102,7 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1873 descendants; score 191.872
-- `three_generation_observable_theorem_note` - critical; 1153 descendants; score 67.172
+- `three_generation_observable_theorem_note` - critical; 1154 descendants; score 67.174
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 198 descendants; score 65.137
 - `graph_first_su3_integration_note` - critical; 1547 descendants; score 65.096
 - `observable_principle_from_axiom_note` - critical; 997 descendants; score 63.963

@@ -101,18 +101,18 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1873 | 191.87 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1153 | 67.17 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1154 | 67.17 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 198 | 65.14 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1547 | 65.10 | `audited_clean` | **retained** |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 997 | 63.96 | `unaudited` | unaudited |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1122 | 53.13 | `audited_clean` | **retained_bounded** |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1027 | 48.01 | `unaudited` | meta |
 | 8 | `key_terminology` | meta | critical | 1136 | 46.65 | `unaudited` | meta |
-| 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1268 | 43.31 | `unaudited` | unaudited |
-| 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 896 | 43.31 | `unaudited` | unaudited |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 897 | 43.81 | `unaudited` | unaudited |
+| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1268 | 43.31 | `unaudited` | unaudited |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1005 | 41.97 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1507 | 41.56 | `audited_clean` | **retained** |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 998 | 39.96 | `unaudited` | unaudited |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 999 | 39.97 | `unaudited` | unaudited |
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 300 | 39.23 | `unaudited` | unaudited |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 840 | 38.22 | `audited_clean` | **retained_no_go** |
 | 16 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 293 | 37.70 | `unaudited` | unaudited |

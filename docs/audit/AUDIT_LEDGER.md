@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 189 |
 | **retained_no_go** | 191 |
-| **retained_bounded** | 856 |
+| **retained_bounded** | 857 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1944 |
+| unaudited | 1943 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1229 |
+| `audited_clean` | 1230 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2282 |
+| `unaudited` | 2281 |
 
 | claim_type | count |
 |---|---:|
@@ -1240,6 +1240,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `thales_right_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `third_grown_family_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -17390,6 +17391,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The coefficient of a cross-plane monomial such as F_01 F_23 is a mixed derivative of a sum of single-plane plaquette functions, and those mixed derivatives vanish identically.  _(class `A`)_
 - **chain closes:** True — Treating the per-plaquette action class as the stated hypothesis, the action separates by plaquette plane, so mixed derivatives with respect to disjoint plane variables are zero. Multi-plaquette and clover terms are not closed by this argument, but they are explicitly outside the audited scope.
 - **rationale:** The load-bearing step is a direct algebraic separability check: a sum of one-plane functions has zero mixed derivative across different plane variables. An independent manual check agrees with the runner's symbolic and direction-counting result, and the note consistently limits the conclusion to the supplied per-plaquette class. The cited per-plaquette enumeration authority is retained_bounded and non-load-bearing for this theorem; no external comparator or tuned numerical value is used.
+- **auditor confidence:** high
+
+### `theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04`
+
+- **Note:** [`THETA_GAUGE_NATIVE_POSITIVE_CLASS_EMERGENT_SECTOR_WEIGHTING_NARROW_THEOREM_NOTE_2026-07-04.md`](../../docs/THETA_GAUGE_NATIVE_POSITIVE_CLASS_EMERGENT_SECTOR_WEIGHTING_NARROW_THEOREM_NOTE_2026-07-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For finite native windows in the supplied canonical Wilson + staggered-Wilson positive class, any measurable integer-valued sector functional has non-negative pushforward masses, so any positive relative gauge-side theta weighting is either support-vacuous or theta=0 mod 2pi.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-theta-auditor-019f307c`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** By L1 and L2, all populated sector masses m(q) are real and non-negative; requiring e^{i theta q} m_tilde(q) with m_tilde(q)>0 to reproduce native sector ratios forces every nonvacuous relative phase to be positive real, hence theta is zero modulo support aliases.  _(class `A`)_
+- **chain closes:** True — The proof uses retained-grade or meta one-hop inputs for the positive native measure/transfer carrier and then only pushforward positivity plus elementary phase-ratio algebra. Context handles are plain-text/non-dependency handles, and the note explicitly leaves Q-existence, integrality derivation, susceptibility, arbitrary UV completions, and arbitrary positive factorization outside scope.
+- **rationale:** The L1 attribution split is correct: pointwise Wilson positivity is elementary, while cited Wilson rows support coefficient/kernel positivity for slicing. L2 weak-limit positivity is stated at measure/test-function level, not as an unsupported per-sector convergence theorem. The runner tests finite connectivity, pushforward positivity, theta-phase discrimination, sparse-support aliases, marginal/weak positivity, gauge miniature positivity, and dependency-link guards; it does not hard-code a desired theta branch as the theorem's proof. Residual scope is bounded to the supplied positive class and cannot be cited as a Q-structure existence theorem.
 - **auditor confidence:** high
 
 ### `theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11`

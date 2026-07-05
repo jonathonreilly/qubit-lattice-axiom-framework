@@ -78,6 +78,9 @@ carrier context, R-eta, electron mass, alpha, or hydrogen.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | child KS route target; no retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child owner/audit decision shape for the KS route |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the child KS theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | child elementary route target; no retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child owner/audit decision shape for the direct elementary route |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the elementary route theorem |
 | merged `#5023` and merged `#5024` | W4/gate-readiness and audit-graph hygiene; no state-law theorem |
 | open `#5014`, `#5017`, and `#5018` | chirality/domain-wall support; no state-law theorem |
 | approved primitives | no state-law selector, no readout bridge, no value/mass/alpha/hydrogen |
@@ -126,8 +129,10 @@ does not say the bridge is impossible.
 ### N6 - Partial-Closure Path Scan
 
 The packet preserves two import-retirement routes: KS-to-physical-state-law or
-elementary state-level law. Neither route is treated as a new axiom. Approved
-primitives are respected as approved premises but do not supply the route.
+elementary state-level law. The elementary route is now packaged by
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md`.
+Neither route is treated as a new axiom. Approved primitives are respected as
+approved premises but do not supply the route.
 
 ### N7 - Steelman
 

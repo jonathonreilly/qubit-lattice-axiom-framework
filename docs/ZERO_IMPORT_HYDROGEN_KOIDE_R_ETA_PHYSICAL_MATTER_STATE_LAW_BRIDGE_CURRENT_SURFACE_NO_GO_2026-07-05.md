@@ -70,6 +70,9 @@ AUDIT_ACCEPTANCE
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | child KS route target | retained child theorem and parent bridge acceptance |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child owner/audit decision shape | accepted retained child consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the child KS theorem | parent bridge closure |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | child elementary route target | retained child theorem and parent bridge acceptance |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child owner/audit decision shape for the direct elementary route | accepted retained child consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the elementary route theorem | parent bridge closure |
 | merged `#5023` Koide W4 audit-readiness repairs | W4 dependency hygiene | physical matter-state-law theorem |
 | merged `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | gate-readiness/audit-graph hygiene | physical matter-state-law theorem |
 | open `#5014` record-formation front domain wall | formation-front/domain-wall support | physical matter-state-law theorem |
@@ -182,7 +185,7 @@ The note only claims current-surface non-supply of
 | path | what it would close |
 |---|---|
 | retained KS-to-physical-matter-state spinor-law theorem | route certificate |
-| retained elementary physical state-level rotation-law theorem | route certificate |
+| retained elementary physical state-level rotation-law theorem | route certificate, now packaged by `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` |
 | owner/audit acceptance after one route theorem | `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED` |
 | HW1 acceptance after this bridge and other HW1 inputs | `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` |
 

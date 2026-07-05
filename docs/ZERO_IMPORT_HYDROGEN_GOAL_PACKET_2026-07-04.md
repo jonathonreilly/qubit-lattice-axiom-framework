@@ -196,6 +196,20 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   state-law bridge only; it does not supply `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`,
   the charged-lepton carrier theorem, carrier context, fixed-point readout,
   R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
+  The elementary physical state-rotation law target discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages the direct non-KS route certificate under that bridge:
+  `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`. The ratification
+  packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  makes that an elementary route owner/audit contract, and the current-surface
+  no-go
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+  records that current retained, primitive, merged-PR, and open-PR surfaces do
+  not supply `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`. This
+  lane can feed the parent physical matter-state bridge only if retained; it
+  does not supply the KS route theorem, parent bridge, HW1, carrier context,
+  fixed-point readout, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
   The KS-to-physical matter-state spinor-law target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md`
   packages the KS child route under that bridge:
@@ -1664,6 +1678,9 @@ supplies no physical action selector, Koide electron readout, `m_e`,
                         | R-eta physical matter-state law bridge target | Open subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`; it can feed the hw1 locus target only, not the charged-lepton carrier theorem, carrier context, fixed-point readout, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta physical matter-state law bridge ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the forked owner/audit contract for `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`; it does not derive either route theorem itself. |
                         | R-eta physical matter-state law bridge current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`. |
+                        | R-eta elementary physical state-rotation law target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` packages `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`; it can feed the physical matter-state bridge as the direct elementary route theorem only, not the sibling KS route, HW1, carrier context, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
+                        | R-eta elementary physical state-rotation law ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the direct route owner/audit contract for `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`; it does not derive the elementary state-attachment selector itself. |
+                        | R-eta elementary physical state-rotation law current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`. |
                         | R-eta KS-to-physical matter-state spinor-law target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` packages `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED`; it can feed the physical matter-state bridge as the KS route theorem only, not the sibling elementary route, HW1, carrier context, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta KS-to-physical matter-state spinor-law ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the child owner/audit contract for `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED`; it does not derive the spinful-kernel exclusion or KS physical spin-lift action itself. |
                         | R-eta KS-to-physical matter-state spinor-law current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED`. |

@@ -25,6 +25,15 @@ This target is one child route under
 `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`; it is not the parent bridge
 itself.
 
+The sibling elementary route is packaged separately by
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md`,
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md`,
+and
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md`.
+Those packets can feed the parent bridge only after
+`ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED` is retained; they
+do not close this KS route theorem.
+
 ## Retention Contract
 
 `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED` requires all of the
@@ -101,6 +110,7 @@ acceptance.
 | `PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md` | local Pauli `j = 1/2` module | physical spin generator for every matter excitation |
 | `CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md` | abstract Clifford extension support | per-site `C^2` physical state law |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` | parent forked target that can consume this lane if retained | this child KS theorem itself |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | sibling elementary route target | this KS child theorem |
 
 The current retained, primitive, merged-PR, and open-PR surfaces therefore do
 not supply `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED`. This

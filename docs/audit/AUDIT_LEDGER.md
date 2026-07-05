@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 193 |
-| **retained_bounded** | 872 |
+| **retained_bounded** | 873 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
 | unaudited | 1933 |
-| audit_in_progress | 1 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
-| `audited_clean` | 1248 |
+| `audit_in_progress` | 12 |
+| `audited_clean` | 1249 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
@@ -144,7 +143,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1163,6 +1161,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
+| `staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16294,6 +16293,18 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The controlling step is a graph-parity algebra identity on the nearest-neighbor Z^3 coordinate-edge graph, followed by direct Pauli matrix and diagonal-grading identities. The runner source performs actual finite rank, Pauli pseudoscalar, and edgewise anticommutation checks, and there are no cited open dependencies or external comparator values. The result is clean within the stated narrow bridge scope, but its derivation class is better classified as A than C because it is not a first-principles numerical compute producing a new framework number.
 - **rationale:** The controlling step is a graph-parity algebra identity on the nearest-neighbor Z^3 coordinate-edge graph, followed by direct Pauli matrix and diagonal-grading identities. The runner source performs actual finite rank, Pauli pseudoscalar, and edgewise anticommutation checks, and there are no cited open dependencies or external comparator values. The result is clean within the stated narrow bridge scope, but its derivation class is better classified as A than C because it is not a first-principles numerical compute producing a new framework number.
 - **auditor confidence:** high
+
+### `staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05`
+
+- **Note:** [`STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md`](../../docs/STAGGERED_DIRAC_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-periodic 2 x 2 x 2 theorem that the hw=1 BZ-corner character span with restricted translations and cyclic C3 rotation realizes the abstract Hamming hw=1 orbit, AC_lambda tau table/diagonal commutant, and regular C3 action, excluding physical species, labeling, continuum, mass, and AC_phi_lambda claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-row1-second-20260705`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** One concrete triple (V, (U_mu|_V), R|_V) simultaneously realizes the abstract Hamming hw=1 orbit, the abstract AC_lambda carrier with distinct joint eigenvalue triples and diagonal commutant, and a fixed regular C3 action.  _(class `A`)_
+- **chain closes:** None — The chain closes at the bounded finite-representative surface: the cited/meta inputs supply the finite translation/rotation setting and abstract target structures, and the source note plus runner exhibit the exact algebraic identification. Residual risk is dependency-chain bookkeeping, not a local failure of the identification theorem in the restricted packet.
+- **rationale:** The note constructs the finite 2 x 2 x 2 periodic character carrier, defines V as the hw=1 character span, and proves by exact matrix/eigenvalue identities that the same V realizes the Hamming, AC_lambda, and C3 structures. The primary runner completed with PASS=25 FAIL=0 and reconstructs the translation permutation matrices, character basis, restricted tau matrices, commutant, and rotation action rather than checking a tuned numeric comparator or printing constants. The claim is explicitly bounded to this finite representative and excludes physical species reduction, labeling, continuum, mass, and AC_phi_lambda content, so no hidden physical-observable bridge is being granted beyond the stated bounded identification.
 
 ### `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03`
 

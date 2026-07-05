@@ -538,6 +538,10 @@
     },
     {
       "from": "acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12",
+      "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+    },
+    {
+      "from": "acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12",
       "to": "minimal_axioms"
     },
     {
@@ -763,10 +767,6 @@
     {
       "from": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
       "to": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
-    },
-    {
-      "from": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
-      "to": "acphilambda_hw_complementation_equivariance_support_note_2026-06-09"
     },
     {
       "from": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
@@ -5222,10 +5222,6 @@
     },
     {
       "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
-      "to": "koide_kappa_two_orbit_dimension_factorization_note_2026-04-19"
-    },
-    {
-      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
       "to": "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02"
     },
     {
@@ -5251,14 +5247,6 @@
     {
       "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
       "to": "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
-    },
-    {
-      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
-      "to": "koide_brannen_phase_reduction_theorem_note_2026-04-20"
-    },
-    {
-      "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
-      "to": "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26"
     },
     {
       "from": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
@@ -36478,6 +36466,10 @@
     },
     {
       "from": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
+      "to": "record_formation_append_consistency_sweep_2026-07-04"
+    },
+    {
+      "from": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
       "to": "minimal_axioms"
     },
     {
@@ -57866,11 +57858,12 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
         "minimal_axioms",
         "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ff196e5379df6d353bdc70b9bca3655ddbdb8f5c12bdd22c43670c56bf691f02",
+      "note_hash": "ef7ee51c850bf85083ba5f85b829be1d2be75406f7d53c6a7a8159057266f163",
       "path": "docs/ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md",
       "runner_path": "scripts/frontier_acphilambda_hw_complement_reading_registration_equivalence_2026_06_12.py",
       "title": "AC_phi_lambda hw-complement Reading Registration-Equivalence -- Bounded Theorem"
@@ -58091,12 +58084,11 @@
         "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
         "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
         "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
-        "acphilambda_hw_complementation_equivariance_support_note_2026-06-09",
         "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
         "color_einselection_pointer_frame_fork_is_a_unistochastic_irreducibility_criterion_narrow_theorem_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6633309eb2183d04f6332a6170969cdedac7bd39b23d4313ffb62ad1c8d3acd0",
+      "note_hash": "430bfd1fc583c2a70c05596d7f90b2c64eca0a9f7e0040b03e99c880d711bb38",
       "path": "docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md",
       "runner_path": "scripts/frontier_acphilambda_species_bridge_realized_state_2026_06_11.py",
       "title": "AC_phi_lambda Sub-Admission (iii): Species-Bridge Decomposition Under the Realized-State Primitive"
@@ -63952,7 +63944,6 @@
         "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
         "koide_aps_block_by_block_forcing_note_2026-04-21",
         "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02",
-        "koide_kappa_two_orbit_dimension_factorization_note_2026-04-19",
         "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
         "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
         "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
@@ -63960,13 +63951,11 @@
         "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
         "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
         "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_brannen_phase_reduction_theorem_note_2026-04-20",
-        "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26",
         "koide_a1_brannen_plancherel_identity_support_note_2026-04-25",
         "brannen_amplitude_equipartition_bae_rename_meta_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ab4d9e1434c3c96985f142c6d80f6b646fda3ac2266b2b1ccd00f8b2afffd130",
+      "note_hash": "0cd46092b656fd95433bfbbfa963c7aacd5b0227ecbbaa1a9eb253ccc8063884",
       "path": "docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md",
       "runner_path": "scripts/flavor_charged_lepton_value_full_chain_2026_06_02.py",
       "title": "Charged-Lepton Koide Value \u2014 Full Chain of Custody (framework baseline -> Q=2/3): structure derived; value modulo one Tier-A admitted input"
@@ -108769,16 +108758,17 @@
     "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": {
       "claim_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
       "claim_type_author_hint": "no_go",
-      "claim_type_author_hint_raw": "no_go (unconditional record-formation forcing) + minimality-boundary localization",
+      "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
       "deps": [
+        "record_formation_append_consistency_sweep_2026-07-04",
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "631889219bc48142cae244cbec7131663ca5f51635c8b82721a03ed2fd3ff404",
+      "note_hash": "c0b92c68149f45701a3d6db7bbf2022d00c70e55c065f9eef6f1dd692d9e61c3",
       "path": "docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md",
       "runner_path": "scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py",
-      "title": "Record Formation Is Not Unconditionally Forced by Lattice, Quantum, and Record: the Minimality Boundary Sits at Record's Decoherence-Dynamics Disclaimer -- Narrow No-Go"
+      "title": "Minimal Axioms Force Record Occurrence But Not the Formation Rule/Process/State/Site/Weight/Rate -- Narrow No-Go"
     },
     "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": {
       "claim_id": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
@@ -109546,7 +109536,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2ed186b721fd8b8e778f1dc45c2601ff3f3f12ba1ea3d5f87fe6e53e53bee761",
+      "note_hash": "bfeb4cfd41417c0e3da59645ab0d759caf068995290e402d4fabc31d646d70f9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125593,8 +125583,8 @@
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14314,
-    "leaf_count": 1291,
+    "edge_count": 14312,
+    "leaf_count": 1292,
     "node_count": 3818,
     "root_count": 1103,
     "runners_with_path": 3441

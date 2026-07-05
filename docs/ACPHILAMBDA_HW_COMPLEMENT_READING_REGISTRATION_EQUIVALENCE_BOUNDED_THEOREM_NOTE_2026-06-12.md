@@ -8,6 +8,12 @@
 [`scripts/frontier_acphilambda_hw_complement_reading_registration_equivalence_2026_06_12.py`](../scripts/frontier_acphilambda_hw_complement_reading_registration_equivalence_2026_06_12.py)
 **Runner cache:**
 [`logs/runner-cache/frontier_acphilambda_hw_complement_reading_registration_equivalence_2026_06_12.txt`](../logs/runner-cache/frontier_acphilambda_hw_complement_reading_registration_equivalence_2026_06_12.txt)
+**Axiom-surface update:** 2026-07-05 — premises re-based from the superseded
+`MINIMAL_AXIOMS_2026-06-05.md` onto the current four-axiom memo
+`MINIMAL_AXIOMS_2026-06-29.md`: finite scalar additivity remains current Record
+axiom content, while K/CPT orbit constancy is supplied-context content carried
+by [T1, KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md).
+No claim is strengthened; the supplied slot-model equivalence is unchanged.
 
 ## Boundary
 
@@ -118,8 +124,12 @@ equivariance, both explicitly NOT addressed here.
 
 ## Dependencies
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) -- the Record
-  boundary (Additivity + Orbit), the theorem's only axiom premise.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) -- the
+  current Record finite scalar-additivity boundary and Qualification
+  non-supply clauses; the occurrence sentence "Records form." is not
+  load-bearing here.
+- [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)
+  -- T1 supplied-context bridge for K/CPT orbit constancy.
 - [`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
   -- T1/T4 (registrable surface = symmetric functions; additive+even kills the
   odd line).

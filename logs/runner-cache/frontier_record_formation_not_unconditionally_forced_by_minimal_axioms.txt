@@ -1,29 +1,32 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py
-runner_sha256: 7fb3a89f950e3975d54c636ee0d87049b52a2f6eb2f3c94e1c0213e5e3e94ad9
+runner_sha256: 473b658dbaa280e8c1fc7809df060b41167a4647458b4a69e9d6dd5ad90b5fc2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ==============================================================================
-NO-GO: record formation is not unconditionally forced by the minimal axioms  [class A]
+NARROW NO-GO: occurrence is axiom content; formation rule/process/state/site/weight/rate is not  [class A]
 ==============================================================================
 
--- baseline-consistent witnesses that record formation is NOT forced --
-  [PASS] (1) H=0 (trivial dynamics): pointer coherence preserved for all t => NO record forms  (coh(t=1,5,20) = [np.float64(0.5), np.float64(0.5), np.float64(0.5)])
-  [PASS] (2) decoupled H = H_S(x)I + I(x)H_E with H != 0 (no coupling): coherence preserved => NO record despite non-trivial dynamics  (coh(t=1,5,20) = [np.float64(0.5), np.float64(0.5), np.float64(0.5)])
-  [PASS] (3) an eigenstate of any (even coupled) H is stationary => coherence frozen => NO record forms (the baseline fixes no state, so an eigenstate is admissible)
+-- live axiom-surface check --
+  [PASS] (0) live MINIMAL_AXIOMS_2026-06-29.md contains the exact Record occurrence sentence "Records form."
+
+-- unitary surfaces that do not supply the formation rule/process/state --
+  [PASS] (1) H=0 (trivial dynamics): pointer coherence preserved for all t => no formation process/rate is supplied by this unitary surface  (coh(t=1,5,20) = [0.5, 0.5, 0.5])
+  [PASS] (2) decoupled H = H_S(x)I + I(x)H_E with H != 0 (no coupling): coherence preserved => no site/write coupling rule is forced by non-trivial dynamics alone  (coh(t=1,5,20) = [0.5, 0.5, 0.5])
+  [PASS] (3) an eigenstate of any (even coupled) H is stationary => coherence frozen => no state-trigger formation rule is fixed by H alone
 
 -- contrast: coupled non-eigenstate dynamics can decohere --
-  [PASS] (4) a generic coupled H on a non-eigenstate decoheres => a record forms (companion contrast); (1)-(3) are the baseline-consistent witnesses it is not UNCONDITIONAL  (coupled-H coherence = 0.201)
+  [PASS] (4) a generic coupled H on a non-eigenstate decoheres (companion contrast); (1)-(3) show the concrete formation mechanism is not forced by unitary structure alone  (coupled-H coherence = 0.201)
 
 -- the no-go reduction --
-  [PASS] (5) Record explicitly disclaims measurement/decoherence dynamics, and the baseline fixes neither the dynamics nor the state => the (1)-(3) no-record cases are baseline-consistent => unconditional record formation requires an imported decoherence-dynamics premise
+  [PASS] (5) current memo supplies occurrence but leaves formation rule/process/state/site/weight/rate outside axiom content
 
 ==============================================================================
-TOTAL: PASS=5 FAIL=0
-VERDICT: record formation is NOT unconditionally forced by the Lattice/Quantum/Record baseline. Record explicitly excludes measurement/decoherence dynamics, and baseline-consistent witnesses (H=0, decoupled H, any energy eigenstate) produce no records. A coupled non-eigenstate toy model shows record formation can be generic, but generic is not unconditional. A theory layer that wants record production must supply the production/decoherence model explicitly.
+TOTAL: PASS=6 FAIL=0
+VERDICT: the live Record axiom supplies generic occurrence via "Records form.", while formation rule/process/state/site/weight/rate remains unforced by the minimal axiom surface. The unitary checks preserve the old computations as process/rule negative controls, and the coupled non-eigenstate case remains contrast only.
 
 ----- stderr -----
 

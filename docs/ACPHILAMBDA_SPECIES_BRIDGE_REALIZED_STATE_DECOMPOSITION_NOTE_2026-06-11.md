@@ -15,6 +15,10 @@ memo `MINIMAL_AXIOMS_2026-06-29.md`; this note had no live
 `MINIMAL_AXIOMS_2026-06-05.md` axiom-premise citation to re-point, and no
 Record-axiom orbit/outcome wording is used as live axiom text. No claim is
 strengthened; this is citation-surface alignment only.
+**Dependency-surface update:** 2026-07-05 — edge hygiene: demoted the
+open-gate hw-complementation row to a context handle because the consumed
+exchange + C3-commutation facts are re-verified by runner C3; no content
+change.
 
 ## Statement
 
@@ -262,6 +266,7 @@ status authority.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [acphilambda_hw_complementation_equivariance_support_note_2026-06-09](ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md)
+- `ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09`
+  (open-gate row located for orientation; the consumed facts are re-verified by this note's runner C3 — context handle, not a citation-graph dependency)
 - [flavor_carrier_from_axioms_momentum_forced_2026-05-31](FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md)
 - [color_einselection_pointer_frame_fork_is_a_unistochastic_irreducibility_criterion_narrow_theorem_note_2026-06-09](COLOR_EINSELECTION_POINTER_FRAME_FORK_IS_A_UNISTOCHASTIC_IRREDUCIBILITY_CRITERION_NARROW_THEOREM_NOTE_2026-06-09.md)

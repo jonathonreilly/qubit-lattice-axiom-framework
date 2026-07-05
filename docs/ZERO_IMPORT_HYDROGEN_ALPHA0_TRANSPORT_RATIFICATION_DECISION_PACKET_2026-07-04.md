@@ -179,6 +179,16 @@ owner/audit route while keeping the QED loop kernel, charged-lepton thresholds,
 heavy-quark thresholds, hadronic substrate, scheme/decoupling, owner, and
 audit inputs explicit.
 
+The alpha0 transport assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+is the sibling review-compression surface for this parent handoff. It groups
+the retained high-scale alpha, QED loop kernel, R-Lep thresholds,
+R-Q-Heavy thresholds, R-Had-NP substrate, scheme/decoupling matching,
+comparator exclusion, owner, and audit rows under the same eleven-input
+contract. It does not ratify `alpha(0)`, does not supply
+`ALPHA0_TRANSPORT_RETAINED`, and does not supply
+`RETAINED_ALPHA0_LOW_ENERGY_COULOMB`.
+
 ## Current Open PR Alignment
 
 Open PRs were refreshed on 2026-07-05 UTC before this packet was written.

@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 ALPHA_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_RATIFICATION_DECISION_PACKET_2026-07-04.md"
+ALPHA0_ASSEMBLY = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md"
 ALPHA_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ALPHA_QED_LOOP_KERNEL_TARGET_DISCRIMINATOR_2026-07-04.md"
 QED_LOOP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_QED_LOOP_KERNEL_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 R_LEP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
@@ -142,6 +143,7 @@ def main() -> None:
         NOTE,
         GOAL,
         ALPHA_PACKET,
+        ALPHA0_ASSEMBLY,
         ALPHA_TARGET,
         QED_LOOP_NO_GO,
         R_LEP_NO_GO,
@@ -177,6 +179,9 @@ def main() -> None:
         "ALPHA0_TRANSPORT_TEXT_LOCK",
         "ALPHA_MZ_RETAINED",
         "QED_LOOP_KERNEL_RETAINED",
+        "ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md",
+        "review compression for the direct alpha0 transport rows",
+        "does not change this current-surface result",
         "ZERO_IMPORT_HYDROGEN_QED_LOOP_KERNEL_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "QED loop target remains needed",
         "ZERO_IMPORT_HYDROGEN_R_LEP_THRESHOLDS_CURRENT_SURFACE_NO_GO_2026-07-05.md",
@@ -272,6 +277,7 @@ def main() -> None:
     section("Authority and primitive boundary checks")
     goal = read(GOAL)
     alpha_packet = read(ALPHA_PACKET)
+    alpha0_assembly = read(ALPHA0_ASSEMBLY)
     alpha_target = read(ALPHA_TARGET)
     qed_loop_no_go = read(QED_LOOP_NO_GO)
     r_lep_no_go = read(R_LEP_NO_GO)
@@ -295,6 +301,12 @@ def main() -> None:
     audit.check("alpha packet references current-surface no-go", NOTE.name in alpha_packet and "current retained, primitive, and open-PR surfaces do not" in alpha_packet)
     audit.check("alpha target references current-surface no-go", NOTE.name in alpha_target and "ALPHA0_TRANSPORT_RETAINED" in alpha_target)
     audit.check("static target references alpha0 no-go", NOTE.name in static_target and "RETAINED_ALPHA0_LOW_ENERGY_COULOMB" in static_target)
+    audit.check("alpha0 no-go references assembly ladder", ALPHA0_ASSEMBLY.name in note and "does not change this current-surface result" in note)
+    audit.check(
+        "assembly ladder keeps alpha0 open",
+        NOTE.name in alpha0_assembly
+        and "No derivation or ratification of `RETAINED_ALPHA0_LOW_ENERGY_COULOMB`." in alpha0_assembly,
+    )
     audit.check("alpha0 no-go references QED loop no-go", QED_LOOP_NO_GO.name in note and "QED loop target remains needed" in note)
     audit.check("alpha0 no-go references R-Lep no-go", R_LEP_NO_GO.name in note and "R-Lep threshold target remains needed" in note)
     audit.check("alpha0 no-go references R-Lep decision packet", R_LEP_PACKET.name in note and "T_LEP_THRESHOLD_MOMENT_RETAINED" in note)

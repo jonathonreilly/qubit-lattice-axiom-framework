@@ -156,6 +156,14 @@ records that current retained, primitive, and open-PR surfaces do not supply
 `b_QED = 32/3` as support for the target, not as a current low-energy Coulomb
 coupling.
 
+The alpha0 transport assembly ladder review packet
+`ZERO_IMPORT_HYDROGEN_ALPHA0_TRANSPORT_ASSEMBLY_LADDER_REVIEW_PACKET_2026-07-05.md`
+compresses the direct alpha0 rows into one review surface: retained
+high-scale alpha, QED loop kernel, R-Lep thresholds, R-Q-Heavy thresholds,
+R-Had-NP substrate, scheme/decoupling matching, comparator exclusion, owner,
+and audit. It is review support only; it is not retained alpha0, physical
+electron mass, static-source Rydberg closure, or hydrogen.
+
 ## Current Open PR Alignment
 
 Open PRs were refreshed on 2026-07-04 before this note was written:

@@ -211,6 +211,8 @@ electron mass:
 | PR | queue signal | effect on this electron-mass packet |
 |---|---:|---|
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open | premise-hygiene and audit-readiness context for Koide/AC_phi_lambda; no physical electron mass |
+| `#5018` domain-wall edge content vs SM chiral fermions map | open | above-C3 chiral-content map; no K3 species bridge or physical electron mass |
+| `#5017` domain-wall edge anomaly inflow via spectral flow | open | anomaly-inflow consistency context; no K3 species bridge or physical electron mass |
 | `#5015` wave-collapse-block01 measurement-collapse gate | open | measurement/collapse work; no physical electron mass |
 | `#5014` record-formation front/domain-wall chirality | open | chirality/domain-wall work; no physical electron mass |
 | `#5012` chirality domain-wall free-field note | open | adjacent chirality science; no electron-mass handoff |
@@ -233,6 +235,7 @@ metadata, not proof inputs here.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_RATIFICATION_DECISION_PACKET_2026-07-04.md` | conditional branch-to-mass map handoff | no phase value, physical species identity, or absolute scale |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | conditional Z1-Z3 native bridge | no physical species bridge or absolute scale |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for native bridge | no `NATIVE_ZERO_SECTION_BRIDGE_RETAINED` on current retained, primitive, or open-PR surfaces |
+| `ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing impact boundary for open chirality/domain-wall PRs `#5017` and `#5018` | above-C3 context only; no K3 species bridge, Koide readout, or electron mass |
 | `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | conditional K3 physical-species bridge | no native readout bridge, branch-to-mass map, or scale |
 | `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for K3 species bridge | no `PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED` on current retained, primitive, or open-PR surfaces |
 | `ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | conditional K4 scale assembly | no branch/readout or physical species identity |

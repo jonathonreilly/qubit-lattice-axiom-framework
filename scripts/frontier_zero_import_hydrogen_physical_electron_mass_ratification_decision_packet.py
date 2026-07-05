@@ -30,6 +30,7 @@ BRANCH_MASS_MAP_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_
 ELECTRON_MASS_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 MASS_SPECTRUM_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_CHARGED_LEPTON_MASS_SPECTRUM_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 PR5019_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md"
+CHIRALITY_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md"
 KOIDE_OPEN_CERT = ROOT / "docs" / "CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md"
 BRANNEN_OPEN_GATE = ROOT / "docs" / "LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md"
 LEPTON_SCALE = ROOT / "docs" / "LEPTON_SCALE_FRONTIER_PROBE_2026-06-05.md"
@@ -151,6 +152,7 @@ def main() -> None:
         ELECTRON_MASS_NO_GO,
         MASS_SPECTRUM_PACKET,
         PR5019_IMPACT,
+        CHIRALITY_IMPACT,
         KOIDE_OPEN_CERT,
         BRANNEN_OPEN_GATE,
         LEPTON_SCALE,
@@ -216,6 +218,10 @@ def main() -> None:
         "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",
         "ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md",
         "premise-hygiene and audit-readiness context",
+        "`#5018` domain-wall edge content vs SM chiral fermions map | open",
+        "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
+        "ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md",
+        "above-C3 chiral-content map",
         "`#5015` wave-collapse-block01 measurement-collapse gate | open",
         "`#5014` record-formation front/domain-wall chirality | open",
         "`#5007` Koide native zero-section route guard repair | open",
@@ -317,6 +323,7 @@ def main() -> None:
     branch_mass_map_no_go = read(BRANCH_MASS_MAP_NO_GO)
     electron_mass_no_go = read(ELECTRON_MASS_NO_GO)
     mass_spectrum_packet = read(MASS_SPECTRUM_PACKET)
+    chirality_impact = read(CHIRALITY_IMPACT)
     koide_open_cert = read(KOIDE_OPEN_CERT)
     brannen_open_gate = read(BRANNEN_OPEN_GATE)
     lepton_scale = read(LEPTON_SCALE)
@@ -342,6 +349,15 @@ def main() -> None:
         and "current retained, primitive, and open-PR surfaces do not supply" in native_bridge_no_go,
     )
     audit.check("species packet remains K3 only", "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED" in species_decision and "K3 support only" in species_decision)
+    audit.check(
+        "electron-mass packet references chirality impact note",
+        CHIRALITY_IMPACT.name in note and "#5018" in note and "#5017" in note,
+    )
+    audit.check(
+        "chirality impact remains non-mass context",
+        "above-C3 chirality/domain-wall content" in chirality_impact
+        and "No derivation or ratification of `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`." in chirality_impact,
+    )
     audit.check("electron-mass packet references species no-go", SPECIES_NO_GO.name in note and "species bridge target remains needed" in note)
     audit.check(
         "species no-go keeps K3 open",
@@ -399,6 +415,8 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     latest_pr_markers = [
+        "`#5018` domain-wall edge content vs SM chiral fermions map | open",
+        "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
         "`#5015` wave-collapse-block01 measurement-collapse gate | open",
         "`#5014` record-formation front/domain-wall chirality | open",
         "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",

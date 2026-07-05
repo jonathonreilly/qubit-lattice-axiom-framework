@@ -143,6 +143,9 @@ packet was written.
 
 | PR | state at refresh | effect on this species-bridge decision packet |
 |---|---:|---|
+| `#5018` domain-wall edge content vs SM chiral fermions map | `SUCCESS` | above-C3 chiral-content map; no K3 ratification and no hydrogen readout |
+| `#5017` domain-wall edge anomaly inflow via spectral flow | `SUCCESS` | anomaly-inflow consistency context; no K3 species bridge |
+| `#5014` record-formation front/domain-wall chirality | `SUCCESS` | formation-front wall context; no K3 owner adoption |
 | `#5012` chirality domain-wall free-field note | `SUCCESS` | adjacent chirality science; no K3 ratification and no hydrogen readout |
 | `#5011` eta twisted walk family runner | `SUCCESS` | runner stabilization; no K3 species bridge |
 | `#5010` YT P1 I_s re-audit packet bridge repair | `SUCCESS` | YT/P1 diagnostic repair; no K3 species bridge |
@@ -162,6 +165,7 @@ inputs here.
 | `SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md` | profile exhibit and owner path-extension map | not a registry ruling and not a retained physical electron mass |
 | `ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md` | realized-state decomposition of sector registration versus carrier-locus residual | no value of `r`, `delta`, or species mass |
 | `#4929` PR body | owner path-extension and grade-scoped ratification for AC_phi_lambda(iii)'s C3-grade species bridge | open owner/audit review context until adopted |
+| `ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md` | impact boundary for open chirality/domain-wall PRs `#5017` and `#5018` | above-C3 context only; no K3 species bridge |
 | `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for the K3 species bridge | no `PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED` on current retained, primitive, or open-PR surfaces |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_ELECTRON_READOUT_FIREWALL_2026-07-04.md` | separates K1, K2, K3, and K4 | prevents spending K3 as `m_e` |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | Z1/Z2/Z3 bridge handoff | native bridge only, not species bridge |
@@ -198,6 +202,7 @@ the K3 species bridge is packaged as a decision-ready ratification contract.
 | consume `#4897` directly | Treat universal-floor proposal as current-main retained closure. | ATTEMPTED. It is owner-gated and not used as closure here. |
 | realized-state shortcut | Treat registered pattern assignment as electron mass. | ATTEMPTED. Registration does not supply phase, scale, or mass. |
 | native zero-section shortcut | Treat Z1-Z3 as K3. | ATTEMPTED. Native bridge and species bridge are independent gates. |
+| chirality/domain-wall shortcut | Treat #5017/#5018 as K3 species retention. | ATTEMPTED. They sharpen above-C3 context but do not provide K3 owner adoption or audit acceptance. |
 | primitive shortcut | Treat minimal axioms or approved primitives as already supplying K3. | RULED OUT BY CURRENT METHODOLOGY. The registry supplies no species-bridge primitive. |
 | empirical comparator route | Use observed lepton masses, observed `m_W`, fitted `delta`, or hydrogen spectroscopy. | RULED OUT AS ZERO-IMPORT CLOSURE. Comparator data is target data, not proof input. |
 
@@ -208,6 +213,7 @@ the K3 species bridge is packaged as a decision-ready ratification contract.
 | K3 species bridge <-> K1 occupancy/counting | no in either direction | independent |
 | K3 species bridge <-> K2 R-eta/phase readout | no in either direction | independent |
 | K3 species bridge <-> Z1/Z2/Z3 native bridge | no in either direction | independent |
+| K3 species bridge <-> chirality/domain-wall stack | no in either direction | independent |
 | K3 species bridge <-> K4 absolute scale | no in either direction | independent |
 | K3 species bridge <-> alpha | no in either direction | independent |
 | OWNER_RATIFICATION <-> AUDIT_ACCEPTANCE | no in either direction | independent |
@@ -224,6 +230,7 @@ The collapsed decision wall is exactly the ten-input contract above.
 | `owner` / `audit` | explicit contract inputs |
 | `primitive` | registry checked; approved primitives do not supply K3 |
 | `electron` / `scale` | downstream readout and K4 gates, not K3 closure |
+| `chirality` / `domain-wall` | above-C3 context, not K3 closure |
 
 No phase, source/action rule, scale, alpha, or hydrogen result is left as
 background.
@@ -236,6 +243,7 @@ background.
 | species bridge ratification-class note | owner path-extension and positive-condition boundary | K3 owner/audit decision contract | yes |
 | realized-state species decomposition | assignment versus carrier-locus split | guard against treating K3 as mass | yes |
 | `#4929` PR body | species-bridge partial retirement | live K3 adoption lane | yes |
+| chirality PR impact discriminator | above-C3 domain-wall and SM-content map boundary | guard against treating chirality as K3 | yes |
 | Koide electron firewall | K1/K2/K3/K4 separation | downstream boundary after K3 | yes |
 | primitive registry notes | approved primitive boundary | guard only | yes as guard |
 
@@ -251,6 +259,7 @@ physical electron species bridge."
 | C3 carrier support | yes | exact support, not owner adoption |
 | within-triplet naming vacuity | yes | support only |
 | carrier-triplet C3 equivalence | yes | support only; above-C3 content bracketed |
+| chirality/domain-wall stack | yes | above-C3 context only; not C3 owner/audit adoption |
 | current-main Tier-A registry | yes | still contains `species_bridge` |
 | physical electron readout | kept separate | needs native bridge and K4 scale |
 | hydrogen spectroscopy | kept separate | downstream after `m_e` and `alpha(0)` |
@@ -294,6 +303,7 @@ species-bridge decision packet passes.
 - No current-main removal of `species_bridge` from the Tier-A registry.
 - No derivation of K1 occupancy/counting or K2 R-eta/phase readout.
 - No derivation or ratification of Z1/Z2/Z3 native bridge clauses.
+- No spending of PR `#5017` or PR `#5018` as K3 species-bridge closure.
 - No derivation of `a_l^2`, `S_l`, `C_A3`, `m_e`, `alpha(0)`, or hydrogen
   spectroscopy.
 - No above-C3 taste, Dirac, chirality, CKM/PMNS, or carrier-selection closure.

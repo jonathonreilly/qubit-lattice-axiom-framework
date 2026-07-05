@@ -566,6 +566,16 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   not supply `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`; the missing inputs
   remain global-readout exclusion, extensive-sum exclusion, other-K-even
   functional exclusion, owner ratification, and audit acceptance.
+  The R-eta readout ladder review packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_LADDER_REVIEW_PACKET_2026-07-05.md`
+  groups the single fixed-point readout, h-class, h-unit, R-eta
+  readout-retirement, two-ninths/radian subgate, and K2 exactness targets for
+  review compression only. It preserves sibling inputs, not a single chain:
+  single fixed-point readout feeds h-class only, h-class and h-unit jointly
+  feed R-eta readout retirement, R-eta retirement feeds two proof inputs but
+  not the full subgate, and the two-ninths/radian subgate feeds three K2 inputs
+  but not full K2 exactness. It does not ratify R-eta, K2, `m_e`,
+  `alpha(0)`, or hydrogen.
   The
   Koide R-eta exactness target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md`

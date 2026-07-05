@@ -424,6 +424,17 @@ or another K-even readout. It does not supply carrier context, h-class, h-unit,
 full R-eta retirement, K2 exactness, physical electron mass, alpha input, or
 hydrogen.
 
+The R-eta readout ladder review packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_LADDER_REVIEW_PACKET_2026-07-05.md`)
+groups the single fixed-point readout, h-class, h-unit, R-eta
+readout-retirement, two-ninths/radian subgate, and K2 exactness targets for
+review compression only. It preserves sibling inputs, not a single chain:
+single fixed-point readout feeds h-class only, h-class and h-unit jointly feed
+R-eta readout retirement, R-eta retirement feeds two proof inputs but not the
+full subgate, and the two-ninths/radian subgate feeds three K2 inputs but not
+full K2 exactness. It does not ratify R-eta, K2, physical electron mass, alpha
+input, or hydrogen.
+
 The R-eta physical carrier-context target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md`),
 ratification decision packet

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verifier for the Koide R-eta elementary state-attachment selector lane."""
+"""Verifier for the Koide R-eta field-index spin-lift privilege lane."""
 
 from __future__ import annotations
 
@@ -10,15 +10,13 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md"
-DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md"
-CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md"
-FIELD_PRIVILEGE_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_TARGET_DISCRIMINATOR_2026-07-05.md"
-FIELD_PRIVILEGE_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
-FIELD_PRIVILEGE_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_TARGET_DISCRIMINATOR_2026-07-05.md"
+DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+SELECTOR_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md"
+SELECTOR_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md"
+SELECTOR_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 ELEMENTARY_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md"
-ELEMENTARY_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md"
-ELEMENTARY_CURRENT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 PARENT_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md"
 KS_CHILD_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md"
 HW1_TARGET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md"
@@ -37,6 +35,39 @@ SCALE = ROOT / "docs" / "SCALE_REFERENCE_PRIMITIVE_NOTE.md"
 KINETIC = ROOT / "docs" / "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
 REALIZED = ROOT / "docs" / "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
 
+
+PRIVILEGE_INPUTS = {
+    "FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_TEXT_LOCK",
+    "MATTER_ATTACHMENT_PRIVILEGE_RESIDUAL_ACCEPTED",
+    "OPERATOR_FRAME_CENTER_BLINDNESS_ACCEPTED",
+    "PER_SITE_PAULI_MODULE_SUPPORT_ACCEPTED",
+    "SPIN_MODULE_ESCAPE_NO_GO_ACCEPTED",
+    "CL31_EXTENSION_MODULE_BOUNDARY_ACCEPTED",
+    "BOOST_ACTION_FAITH_ANALOGY_ACCEPTED",
+    "NATIVE_D_SPIN_BLINDNESS_ACCEPTED",
+    "SCALAR_SIGN_COMPENSATOR_BOUNDARY_ACCEPTED",
+    "FINITE_SU2_DOUBLE_COVER_ACTION_CHECK",
+    "FINITE_ADJOINT_CENTER_BLINDNESS_CHECK",
+    "FINITE_TRIVIAL_SCALAR_LIFT_COUNTERMODEL_CHECK",
+    "FINITE_SCALAR_SIGN_COMPENSATOR_BOUNDARY_CHECK",
+    "FINITE_SPIN_LIFT_VS_SCALAR_COMPENSATOR_CHECK",
+    "NO_ELEMENTARY_SELECTOR_INPUT",
+    "NO_ELEMENTARY_ROTATION_LAW_INPUT",
+    "NO_KS_ROUTE_OR_STAGGERED_KERNEL_INPUT",
+    "NO_PHYSICAL_MATTER_STATE_BRIDGE_INPUT",
+    "NO_HW1_OR_CARRIER_CLOSURE_INPUT",
+    "NO_R_Q_DELTA_OR_R_ETA_VALUE_INPUT",
+    "NO_K1_K3_K4_OR_MASS_INPUT",
+    "NO_COMPARATOR_PROOF_INPUT",
+    "NO_NEW_PRIMITIVE_OR_AXIOM",
+    "OWNER_RATIFICATION",
+    "AUDIT_ACCEPTANCE",
+}
+
+CURRENT_SURFACE_INPUTS = PRIVILEGE_INPUTS - {
+    "OWNER_RATIFICATION",
+    "AUDIT_ACCEPTANCE",
+}
 
 SELECTOR_INPUTS = {
     "ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TEXT_LOCK",
@@ -61,12 +92,6 @@ SELECTOR_INPUTS = {
     "NO_K1_K3_K4_OR_MASS_INPUT",
     "NO_COMPARATOR_PROOF_INPUT",
     "NO_NEW_PRIMITIVE_OR_AXIOM",
-    "OWNER_RATIFICATION",
-    "AUDIT_ACCEPTANCE",
-}
-
-CURRENT_SURFACE_INPUTS = SELECTOR_INPUTS - {
-    "FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED",
     "OWNER_RATIFICATION",
     "AUDIT_ACCEPTANCE",
 }
@@ -152,13 +177,17 @@ def flat(text: str) -> str:
 
 
 def normalize(text: str) -> str:
-    return flat(text).replace("\u00bd", "1/2").replace("\u00b2", "^2").replace("\u03c3", "sigma")
+    return flat(text).replace("\u00bd", "1/2").replace("\u00b2", "^2").replace("\u03c3", "sigma").replace("\u2020", "^*")
 
 
 def section(title: str) -> None:
     print("\n" + "-" * 80)
     print(title)
     print("-" * 80)
+
+
+def closes_privilege(inputs: set[str]) -> bool:
+    return PRIVILEGE_INPUTS <= inputs
 
 
 def closes_selector(inputs: set[str]) -> bool:
@@ -190,7 +219,7 @@ def uz(theta: float) -> np.ndarray:
     return np.cos(theta / 2.0) * i2 - 1j * np.sin(theta / 2.0) * sz
 
 
-def finite_selector_checks(audit: Audit) -> None:
+def finite_privilege_checks(audit: Audit) -> None:
     sx, sy, sz, i2 = pauli_data()
     u_quarter = uz(np.pi / 2.0)
     u_2pi = uz(2.0 * np.pi)
@@ -230,12 +259,10 @@ def main() -> None:
         TARGET,
         DECISION,
         CURRENT,
-        FIELD_PRIVILEGE_TARGET,
-        FIELD_PRIVILEGE_DECISION,
-        FIELD_PRIVILEGE_CURRENT,
+        SELECTOR_TARGET,
+        SELECTOR_DECISION,
+        SELECTOR_CURRENT,
         ELEMENTARY_TARGET,
-        ELEMENTARY_DECISION,
-        ELEMENTARY_CURRENT,
         PARENT_TARGET,
         KS_CHILD_TARGET,
         HW1_TARGET,
@@ -265,14 +292,14 @@ def main() -> None:
 
     section("Required packet content")
     required_phrases = [
-        "Koide R-Eta Elementary State-Attachment Selector Target Discriminator",
-        "Koide R-Eta Elementary State-Attachment Selector Ratification Decision Packet",
-        "Koide R-Eta Elementary State-Attachment Selector Current-Surface No-Go",
-        "ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED",
-        "ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TEXT_LOCK",
-        "MATTER_ATTACHMENT_ROUTE_A_ACCEPTED",
-        "OPERATOR_FRAME_MERGER_ACCEPTED",
-        "PER_SITE_PAULI_SPIN_HALF_MODULE_ACCEPTED",
+        "Koide R-Eta Field-Index Spin-Lift Privilege Principle Target Discriminator",
+        "Koide R-Eta Field-Index Spin-Lift Privilege Principle Ratification Decision Packet",
+        "Koide R-Eta Field-Index Spin-Lift Privilege Principle Current-Surface No-Go",
+        "FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED",
+        "FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_TEXT_LOCK",
+        "MATTER_ATTACHMENT_PRIVILEGE_RESIDUAL_ACCEPTED",
+        "OPERATOR_FRAME_CENTER_BLINDNESS_ACCEPTED",
+        "PER_SITE_PAULI_MODULE_SUPPORT_ACCEPTED",
         "SPIN_MODULE_ESCAPE_NO_GO_ACCEPTED",
         "CL31_EXTENSION_MODULE_BOUNDARY_ACCEPTED",
         "BOOST_ACTION_FAITH_ANALOGY_ACCEPTED",
@@ -281,13 +308,11 @@ def main() -> None:
         "FINITE_SU2_DOUBLE_COVER_ACTION_CHECK",
         "FINITE_ADJOINT_CENTER_BLINDNESS_CHECK",
         "FINITE_TRIVIAL_SCALAR_LIFT_COUNTERMODEL_CHECK",
+        "FINITE_SCALAR_SIGN_COMPENSATOR_BOUNDARY_CHECK",
         "FINITE_SPIN_LIFT_VS_SCALAR_COMPENSATOR_CHECK",
-        "FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_TARGET_DISCRIMINATOR_2026-07-05.md",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RATIFICATION_DECISION_PACKET_2026-07-05.md",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_CURRENT_SURFACE_NO_GO_2026-07-05.md",
-        "NO_KS_ROUTE_OR_STAGGERED_KERNEL_INPUT",
+        "NO_ELEMENTARY_SELECTOR_INPUT",
         "NO_ELEMENTARY_ROTATION_LAW_INPUT",
+        "NO_KS_ROUTE_OR_STAGGERED_KERNEL_INPUT",
         "NO_PHYSICAL_MATTER_STATE_BRIDGE_INPUT",
         "NO_HW1_OR_CARRIER_CLOSURE_INPUT",
         "NO_R_Q_DELTA_OR_R_ETA_VALUE_INPUT",
@@ -296,12 +321,13 @@ def main() -> None:
         "NO_NEW_PRIMITIVE_OR_AXIOM",
         "OWNER_RATIFICATION",
         "AUDIT_ACCEPTANCE",
+        "ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED",
         "ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED",
         "KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED",
         "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED",
+        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_TARGET_DISCRIMINATOR_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md",
-        "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md",
         "KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md",
         "CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md",
         "INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md",
@@ -318,6 +344,7 @@ def main() -> None:
         "open `#5014`",
         "open `#5017`",
         "open `#5018`",
+        "clean/dirty/check labels are not proof inputs",
         "The approved primitive registry was checked",
         "No-Go Discipline Gate",
         "Explicit Non-Claims",
@@ -329,35 +356,36 @@ def main() -> None:
         audit.check(f"no-go discipline marker present: {marker}", marker in packet)
 
     section("Predicate checks")
-    full_selector = set(SELECTOR_INPUTS)
-    audit.check("full elementary selector contract closes target", closes_selector(full_selector))
-    audit.check("current surface does not close selector target", not closes_selector(CURRENT_SURFACE_INPUTS))
+    full_privilege = set(PRIVILEGE_INPUTS)
+    audit.check("full field-index privilege contract closes target", closes_privilege(full_privilege))
+    audit.check("current surface does not close privilege target", not closes_privilege(CURRENT_SURFACE_INPUTS))
 
     removed_failures = []
-    for missing in sorted(SELECTOR_INPUTS):
-        reduced = set(full_selector)
+    for missing in sorted(PRIVILEGE_INPUTS):
+        reduced = set(full_privilege)
         reduced.remove(missing)
-        failed = not closes_selector(reduced)
+        failed = not closes_privilege(reduced)
         removed_failures.append(failed)
-        audit.check(f"selector contract fails without input {missing}", failed)
-    audit.check("every one-input-removed selector subset fails", all(removed_failures))
+        audit.check(f"privilege contract fails without input {missing}", failed)
+    audit.check("every one-input-removed privilege subset fails", all(removed_failures))
 
-    selector_consequence = {"ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED"}
-    elementary_full = set(ELEMENTARY_ROUTE_INPUTS)
-    elementary_without_selector = elementary_full - {"ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED"}
-    audit.check("selector consequence alone does not close elementary route", not closes_elementary_route(selector_consequence))
-    audit.check("selector plus full elementary route inputs closes elementary route", closes_elementary_route(elementary_full))
-    audit.check("elementary route cannot close without selector", not closes_elementary_route(elementary_without_selector))
-    audit.check("selector consequence alone does not close parent bridge", not closes_parent_bridge(selector_consequence))
-    audit.check("selector consequence alone does not close hydrogen", not closes_hydrogen(selector_consequence))
+    privilege_consequence = {"FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED"}
+    selector_full = set(SELECTOR_INPUTS)
+    selector_without_privilege = selector_full - {"FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED"}
+    audit.check("privilege consequence alone does not close selector", not closes_selector(privilege_consequence))
+    audit.check("privilege plus full selector inputs closes selector", closes_selector(selector_full))
+    audit.check("selector cannot close without privilege principle", not closes_selector(selector_without_privilege))
+    audit.check("privilege consequence alone does not close elementary route", not closes_elementary_route(privilege_consequence))
+    audit.check("privilege consequence alone does not close parent bridge", not closes_parent_bridge(privilege_consequence))
+    audit.check("privilege consequence alone does not close hydrogen", not closes_hydrogen(privilege_consequence))
 
-    section("Finite selector checks")
-    finite_selector_checks(audit)
+    section("Finite privilege checks")
+    finite_privilege_checks(audit)
 
     section("Authority and primitive boundary checks")
     goal = read(GOAL)
     firewall = read(KOIDE_FIREWALL)
-    elementary_packet = "\n".join([read(ELEMENTARY_TARGET), read(ELEMENTARY_DECISION), read(ELEMENTARY_CURRENT)])
+    selector_packet = "\n".join([read(SELECTOR_TARGET), read(SELECTOR_DECISION), read(SELECTOR_CURRENT)])
     primitive_registry = json.loads(read(PRIMITIVE_REGISTRY))
     primitive_nodes = primitive_registry["nodes"]
     primitive_text = "\n".join([read(MINIMAL), read(SCALE), read(KINETIC), read(REALIZED)])
@@ -365,20 +393,20 @@ def main() -> None:
     for label, container in [
         ("goal packet", goal),
         ("Koide firewall", firewall),
-        ("elementary route packet", elementary_packet),
+        ("selector packet", selector_packet),
     ]:
         audit.check(
-            f"{label} references elementary selector lane",
+            f"{label} references field-index privilege lane",
             TARGET.name in container
             and DECISION.name in container
             and CURRENT.name in container
-            and "ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED" in container,
+            and "FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED" in container,
         )
 
-    audit.check("selector packet references parent elementary route", ELEMENTARY_TARGET.name in packet and "ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED" in packet)
-    audit.check("selector packet references field-index privilege child lane", FIELD_PRIVILEGE_TARGET.name in packet and FIELD_PRIVILEGE_DECISION.name in packet and FIELD_PRIVILEGE_CURRENT.name in packet)
-    audit.check("selector packet references sibling KS child", KS_CHILD_TARGET.name in packet and "KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED" in packet)
-    audit.check("selector packet references parent bridge", PARENT_TARGET.name in packet and "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in packet)
+    audit.check("privilege packet references parent selector", SELECTOR_TARGET.name in packet and "ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED" in packet)
+    audit.check("privilege packet references elementary route", ELEMENTARY_TARGET.name in packet and "ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED" in packet)
+    audit.check("privilege packet references sibling KS child", KS_CHILD_TARGET.name in packet and "KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED" in packet)
+    audit.check("privilege packet references parent bridge", PARENT_TARGET.name in packet and "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in packet)
     audit.check("HW1 target remains downstream of parent bridge", "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED" in read(HW1_TARGET))
 
     matter_norm = normalize(read(MATTER_ATTACHMENT))
@@ -394,13 +422,23 @@ def main() -> None:
         "admitted-not-forced" in matter_norm and "the elementary route" in matter_norm,
     )
     audit.check(
-        "matter attachment names spin-blind scalar sign field",
-        "spin-blind scalar sign field `W`" in matter_norm and "fundamental-action" in matter_norm,
+        "matter attachment names genuine spin-lift privilege next path",
+        "Derive a principle privileging the genuine spin-lift `U(R)`" in read(MATTER_ATTACHMENT)
+        and "spin-blind scalar sign field `W`" in matter_norm,
+    )
+    audit.check(
+        "matter attachment names per-site matter field index",
+        "matter FIELD index = the per-site `C^2` qubit STATE" in read(MATTER_ATTACHMENT),
     )
     audit.check(
         "carrier attachment keeps state law separate",
         "j=1/2 state law is a separate datum" in carrier_norm
         and "does not prove the KS/Grassmann physical-state-law bridge" in carrier_norm,
+    )
+    audit.check(
+        "carrier attachment says trivial scalar lift satisfies operator-frame constraints",
+        "trivial scalar lift" in carrier_norm
+        and "satisfies every operator-frame constraint" in carrier_norm,
     )
     audit.check(
         "SU2 merger is operator-level support",
@@ -436,8 +474,8 @@ def main() -> None:
         audit.check(f"registry node present: {node}", node in primitive_nodes)
 
     for forbidden_node in [
-        "elementary_state_attachment_selector_primitive",
         "field_index_spin_lift_privilege_primitive",
+        "elementary_state_attachment_selector_primitive",
         "elementary_physical_state_rotation_law_primitive",
         "physical_matter_state_law_primitive",
         "hydrogen_primitive",
@@ -465,8 +503,8 @@ def main() -> None:
         audit.check(f"PR marker present: {marker}", marker in packet)
 
     explicit_nonclaims = [
-        "No derivation or ratification of\n  `ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED`.",
         "No derivation or ratification of\n  `FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED`.",
+        "No derivation or ratification of\n  `ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED`.",
         "No derivation or ratification of\n  `ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`.",
         "No derivation or ratification of\n  `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED`.",
         "No derivation or ratification of `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED`.",
@@ -477,9 +515,9 @@ def main() -> None:
         audit.check(f"explicit non-claim present: {flat(phrase)}", phrase in packet)
 
     forbidden_overclaims = [
-        "This note ratifies elementary state-attachment selector",
-        "ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED is supplied",
+        "This note ratifies field-index spin-lift privilege",
         "FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED is supplied",
+        "ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED is supplied",
         "ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED is supplied",
         "PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED is supplied",
         "physical electron mass is retained",

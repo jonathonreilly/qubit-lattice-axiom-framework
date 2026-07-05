@@ -224,6 +224,22 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   does not supply the route theorem, the sibling KS route, parent bridge, HW1,
   carrier context, fixed-point readout, R-eta, K2, `m_e`, `alpha(0)`, or
   hydrogen.
+  The field-index spin-lift privilege principle target discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages the child principle underneath that selector:
+  `FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED`. The ratification
+  packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  makes that an owner/audit contract for privileging the faithful Pauli
+  spinor lift over scalar/trivial field-index alternatives, and the
+  current-surface no-go
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+  records that current retained, primitive, merged-PR, and open-PR surfaces do
+  not supply `FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED`. This lane
+  can feed the elementary selector only after retention; it does not supply
+  the selector itself, the elementary route theorem, the sibling KS route,
+  parent bridge, HW1, carrier context, fixed-point readout, R-eta, K2, `m_e`,
+  `alpha(0)`, or hydrogen.
   The KS-to-physical matter-state spinor-law target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md`
   packages the KS child route under that bridge:
@@ -1698,6 +1714,9 @@ supplies no physical action selector, Koide electron readout, `m_e`,
                         | R-eta elementary state-attachment selector target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_TARGET_DISCRIMINATOR_2026-07-05.md` packages `ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED`; it can feed the direct elementary state-rotation route only, not the sibling KS route, parent bridge, HW1, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta elementary state-attachment selector ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the field-index spin-lift privilege owner/audit contract for `ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED`; it does not derive the privilege principle itself. |
                         | R-eta elementary state-attachment selector current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_ELEMENTARY_STATE_ATTACHMENT_SELECTOR_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED`. |
+                        | R-eta field-index spin-lift privilege principle target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED`; it can feed the elementary state-attachment selector only, not the selector owner/audit decision, elementary route, sibling KS route, parent bridge, HW1, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
+                        | R-eta field-index spin-lift privilege principle ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the owner/audit contract for privileging the faithful Pauli spinor lift over scalar/trivial field-index alternatives; it does not derive the elementary selector itself. |
+                        | R-eta field-index spin-lift privilege principle current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED`. |
                         | R-eta KS-to-physical matter-state spinor-law target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` packages `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED`; it can feed the physical matter-state bridge as the KS route theorem only, not the sibling elementary route, HW1, carrier context, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta KS-to-physical matter-state spinor-law ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the child owner/audit contract for `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED`; it does not derive the spinful-kernel exclusion or KS physical spin-lift action itself. |
                         | R-eta KS-to-physical matter-state spinor-law current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED`. |

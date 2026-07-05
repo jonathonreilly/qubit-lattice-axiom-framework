@@ -10,6 +10,11 @@ predicts, and estimates no audit verdict and edits no registry.
 (`TOTAL: PASS=19 FAIL=0`)
 **Runner cache:**
 [`logs/runner-cache/frontier_acphilambda_species_bridge_realized_state_2026_06_11.txt`](../logs/runner-cache/frontier_acphilambda_species_bridge_realized_state_2026_06_11.txt)
+**Axiom-surface update:** 2026-07-05 — current axiom surface is the four-axiom
+memo `MINIMAL_AXIOMS_2026-06-29.md`; this note had no live
+`MINIMAL_AXIOMS_2026-06-05.md` axiom-premise citation to re-point, and no
+Record-axiom orbit/outcome wording is used as live axiom text. No claim is
+strengthened; this is citation-surface alignment only.
 
 ## Statement
 

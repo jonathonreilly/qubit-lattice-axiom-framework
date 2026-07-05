@@ -11,6 +11,11 @@ publication-status surface.
 [`scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py`](../scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py)
 (`TOTAL: PASS=55 FAIL=0`; exact sympy, 3x3 class-A finite-dimensional; cached:
 [`logs/runner-cache/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.txt`](../logs/runner-cache/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.txt))
+**Axiom-surface update:** 2026-07-05 — live axiom citation re-pointed from the
+superseded `MINIMAL_AXIOMS_2026-06-05.md` to the current four-axiom memo
+`MINIMAL_AXIOMS_2026-06-29.md`; K/CPT orbit constancy used below is
+supplied-context from [T1, KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md).
+No claim is strengthened; this is premise relocation only.
 
 > **What this is.** The live Tier-A registry states AC_phi_lambda
 > sub-admission (ii) as "the delta readout identification (R-eta:
@@ -137,10 +142,12 @@ four distinguishable contents:
 
 **Theorem (narrowing, bounded).**
 
-1. **(S-form-1) is forced.** By Record (Additivity) + (Orbit) — an additive
-   scalar functional is odd by pure algebra (`g(0)=0`, `g(-x)=-g(x)`; no
-   continuity assumed), and K/CPT-orbit constancy makes it even; odd AND even
-   is identically zero. The K/CPT conjugation acts on the circulant as
+1. **(S-form-1) is forced.** By Record finite additivity plus
+   [T1, KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)
+   supplied K/CPT orbit constancy — an additive scalar functional is odd by
+   pure algebra (`g(0)=0`, `g(-x)=-g(x)`; no continuity assumed), and
+   K/CPT-orbit constancy makes it even; odd AND even is identically zero. The
+   K/CPT conjugation acts on the circulant as
    `conj(H(delta)) = H(-delta)` (verified exactly), so the orientation-odd
    line `sin(3 delta)` is K-odd and unregistrable. Any registrable
    delta-readout is an even function of delta, i.e. a function of the orbit
@@ -301,8 +308,10 @@ honest split, not a value derivation. Soft spots an auditor should press:
 - [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
   — meta (the live registry; source of the sub-admission (ii) text being
   narrowed).
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — approved
-  axiom surface (Record (Additivity)+(Orbit), the only axiom input).
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — approved
+  axiom surface (Record finite additivity, the axiom input).
+- [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)
+  — T1 supplied K/CPT orbit constancy for the orbit-constant readout step.
 - [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
   — **retained_bounded** (the fixed-locus arithmetic this runner
   cross-checks; also where R2 is named LIVE).

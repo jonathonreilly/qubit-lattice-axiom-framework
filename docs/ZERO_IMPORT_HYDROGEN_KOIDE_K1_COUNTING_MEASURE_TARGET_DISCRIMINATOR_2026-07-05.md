@@ -115,6 +115,7 @@ premise.
 | merged `#5019` | Koide `AC_phi_lambda` premise-hygiene context; no K1 derivation |
 | approved primitives | premise discipline only; no counting-measure selector |
 | Koide electron-readout firewall | K1/K2/K3/K4 separation; no mass closure |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | subtarget for the selector and dimension/Born default-exclusion inputs; not full K1 |
 
 The primitive registry was checked. Registered primitives are approved premise
 nodes, not walls, but no primitive supplies `K1_COUNTING_MEASURE_RETAINED`,
@@ -131,11 +132,20 @@ The K1 counting-measure ratification decision packet
 packages the same ten-input owner/audit contract as a decision object. It is
 not accepted here and does not ratify `K1_COUNTING_MEASURE_RETAINED`.
 
+The K1 selector/default-exclusion target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md`
+attacks the two technical K1 inputs
+`ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED` and
+`DIMENSION_BORN_DEFAULT_EXCLUSION` through the named subtarget
+`K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`. It is a subhandoff only: it does not
+ratify K1, owner/audit acceptance, `m_e`, `alpha(0)`, or hydrogen.
+
 ## Dependency Boundary
 
 | object | if this target is accepted | still not supplied |
 |---|---|---|
 | K1 counting measure | `K1_COUNTING_MEASURE_RETAINED` | K2 exact phase/readout |
+| K1 selector/default-exclusion | could supply `ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED` and `DIMENSION_BORN_DEFAULT_EXCLUSION` if accepted | full K1 owner/audit decision still absent |
 | Koide shape surface | gains the retained `r = 1/2`, `Q = 2/3` count | physical branch and mass still absent |
 | native Koide bridge | gains a K1 input | Z1-Z3 native bridge acceptance still separate |
 | physical electron readout | still blocked | K2 exactness, K3 species bridge, branch mass-map, K4 scale |
@@ -233,6 +243,7 @@ Legitimate follow-ups remain:
 |---|---|
 | retained supertrace/equivariant-index/holomorphic determinant theorem | `ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED` |
 | retained transfer/kernel coefficient theorem for the corner realization | `DIMENSION_BORN_DEFAULT_EXCLUSION` if it selects the block/orbit cell |
+| owner/audit acceptance of the selector/default-exclusion subtarget | `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` and the two technical K1 inputs |
 | owner/audit acceptance of an occupancy premise | premise standing only, not zero-import theorem closure unless explicitly scoped as such |
 | owner/audit acceptance of this target after all inputs are present | `K1_COUNTING_MEASURE_RETAINED` |
 | K2/K3/K4 packets | physical electron mass path after K1 is improved |

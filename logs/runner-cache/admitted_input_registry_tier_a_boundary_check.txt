@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/admitted_input_registry_tier_a_boundary_check.py
-runner_sha256: 24230ee67eb119c558f7ab9a52a255d1a43ef3f4360209f72cefc9794de29878
+runner_sha256: 6d2e2e7ae19088520e59409770fb03480d6d98ea7de6df7ccf36138171ada7f4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -14,27 +14,49 @@ Scope: source/registry alignment only; no audit verdict changes.
 [PASS] source note exists -- docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 [PASS] machine Tier-A registry exists -- docs/audit/data/tier_a_admissions.json
 [PASS] axiom premise registry exists -- docs/audit/data/axiom_premise_nodes.json
+[PASS] audit ledger exists -- docs/audit/data/audit_ledger.json
 [PASS] source claim type is meta
 [PASS] source status authority is audit lane only
 [PASS] source says it sets no audit status
 [PASS] source registers this primary runner
 [PASS] source registers this cached output
 [PASS] machine schema version is 1 -- 1
-[PASS] genuine admitted input count is exactly two -- 2
-[PASS] canonical ids are exactly the two Tier-A derivation targets -- ['staggered_dirac_realization_gate_note_2026-05-03', 'strong_cp_theta_zero_note']
-[PASS] derivation target keys match canonical ids -- ['staggered_dirac_realization_gate_note_2026-05-03', 'strong_cp_theta_zero_note']
+[PASS] genuine admitted input count is exactly one -- 1
+[PASS] canonical ids are exactly the one Tier-A derivation target -- ['staggered_dirac_realization_gate_note_2026-05-03']
+[PASS] derivation target keys match canonical ids -- ['staggered_dirac_realization_gate_note_2026-05-03']
+[PASS] retired target keys are exactly theta -- ['strong_cp_theta_zero_note']
 [PASS] AC_phi_lambda target row exists -- staggered_dirac_realization_gate_note_2026-05-03
 [PASS] AC_phi_lambda label matches -- AC_phi_lambda
 [PASS] AC_phi_lambda has no-go portfolio -- ['koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24', 'koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24', 'koide_delta_marked_relative_cobordism_no_go_note_2026-04-24']
 [PASS] AC_phi_lambda has minimum decomposition -- ['reading_occupancy_selection', 'delta_readout_identification_R_eta', 'species_bridge']
 [PASS] AC_phi_lambda has sharpening source list
-[PASS] theta target row exists -- strong_cp_theta_zero_note
-[PASS] theta label matches -- theta
-[PASS] theta has no-go portfolio -- ['strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16']
-[PASS] theta has minimum decomposition -- ['gauge_side_winding_account', 'mass_side_orientation_determinant_readout_bridge']
-[PASS] theta has sharpening source list
 [PASS] AC_phi_lambda has three named minimum atoms
-[PASS] theta has two named minimum atoms
+[PASS] theta retired row exists -- retired_derivation_targets
+[PASS] theta retired label matches -- theta
+[PASS] theta retired no-go portfolio preserved -- ['strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16']
+[PASS] theta retired minimum decomposition preserved
+[PASS] theta retirement record present
+[PASS] theta retirement mechanism is retained derivation -- retired_by_retained_derivation
+[PASS] theta retirement records owner approval location
+[PASS] theta retirement records scope
+[PASS] theta retirement records discharge basis
+[PASS] theta discharge basis categories are row-id lists -- {'gauge_side_local': 'list', 'gauge_side_theta_value_any_emergent_sector_functional': 'list', 'mass_side': 'list', 'supplied_context_premise_layer': 'list'}
+[PASS] theta discharge basis rows are exactly expected -- ['kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04', 'per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09', 'registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10', 'strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12', 'theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09', 'theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04', 'theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11', 'theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10']
+[PASS] theta discharge row retained-grade: kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04 -- ('audited_clean', 'retained_bounded')
+[PASS] theta discharge row retained-grade: per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09 -- ('audited_clean', 'retained_bounded')
+[PASS] theta discharge row retained-grade: registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10 -- ('audited_clean', 'retained_bounded')
+[PASS] theta discharge row retained-grade: strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12 -- ('audited_clean', 'retained_bounded')
+[PASS] theta discharge row retained-grade: theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09 -- ('audited_clean', 'retained_bounded')
+[PASS] theta discharge row retained-grade: theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04 -- ('audited_clean', 'retained_bounded')
+[PASS] theta discharge row retained-grade: theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11 -- ('audited_clean', 'retained_bounded')
+[PASS] theta discharge row retained-grade: theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10 -- ('audited_clean', 'retained_bounded')
+[PASS] retired theta source row remains retained-bounded source theorem -- ('bounded_theorem', 'audited_clean', 'retained_bounded')
+[PASS] retired theta source row has no hidden deps -- []
+[PASS] theta positive-class row has explicit second-seat confirmation -- {'status': 'confirmed', 'mode': 'explicit_second_seat'}
+[PASS] theta retirement records cross-confirmation separately
+[PASS] theta retirement records source-row boundary
+[PASS] theta retirement records PR #4995 artifact path -- PR #4995 artifact path docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md (2026-07-05 updated verdict; decision artifact not shipped as a live source note in this registry PR)
+[PASS] theta no longer an active derivation target
 [PASS] convention rows are present -- ['g_bare_rigidity_theorem_note', 'hypercharge_identification_note']
 [PASS] Y0 convention label matches -- Y0
 [PASS] Y0 is vacuous convention -- vacuous normalization convention
@@ -50,14 +72,20 @@ Scope: source/registry alignment only; no audit verdict changes.
 [PASS] Record lives in axiom-premise registry -- ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
 [PASS] Scale reference lives in axiom-premise registry -- ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
 [PASS] Tier-A targets are not axiom-premise ids -- []
+[PASS] retired targets are not axiom-premise ids -- []
 [PASS] Tier-A conventions are not axiom-premise ids -- []
 [PASS] note states Record retired from Tier A
+[PASS] note states theta retired from Tier A
+[PASS] note states count is one
 [PASS] note keeps observable-principle parent outside Record
 [PASS] note says scale primitive is not counted
 [PASS] note says Y0 and g0 are not counted
-[PASS] note states two dimensionless Tier-A admissions
-[PASS] note says sharpening adds/removes/regrades nothing
-[PASS] note says dependent rows stay bounded
+[PASS] note preserves historical two-admission refinement as historical
+[PASS] note says sharpening added/removed/regraded nothing historically
+[PASS] note says historical dependent rows stayed bounded
+[PASS] note has no active stale theta-admitted wording
+[PASS] note has no active stale count-stays-two wording
+[PASS] note preserves theta source row as bounded source
 [PASS] note says audit status remains audit-lane-only
 [PASS] note propagation says Tier-A accepted premise is bounded
 [PASS] note says no hand-maintained backlinks
@@ -68,7 +96,7 @@ Scope: source/registry alignment only; no audit verdict changes.
 [PASS] forbidden positive status claim absent: Record is a Tier-A admission
 [PASS] forbidden positive status claim absent: scale-reference primitive is a Tier-A admission
 
-SUMMARY: TIER-A REGISTRY BOUNDARY PASS=56 FAIL=0
+SUMMARY: TIER-A REGISTRY BOUNDARY PASS=84 FAIL=0
 
 ----- stderr -----
 

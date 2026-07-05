@@ -163,7 +163,7 @@ def main() -> None:
         "retained exact `2/9` theorem",
         "fold/branch domain-lock inputs",
         "registered Phi",
-        "No adoption or landing claim for PR `#5020` or PR `#5022`",
+        "No claim that PR `#5020` or merged PR `#5022` derives or ratifies a Koide",
         "KOIDE_NATIVE_ZERO_SECTION_DEFINED_ROUTE_ALGEBRA=TRUE",
         "ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_TARGET_DISCRIMINATOR_2026-07-04.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-04.md",

@@ -150,7 +150,7 @@ def main() -> None:
         "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md",
-        "current retained, primitive, and open-PR surfaces do not supply",
+        "current retained, primitive, merged-PR, and open-PR surfaces do not supply",
         "K2_EXACTNESS_TEXT_LOCK",
         "REGISTERED_PHI_VALUE_FACE_ACCEPTED",
         "DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED",
@@ -165,7 +165,7 @@ def main() -> None:
         "ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md",
         "R_ETA_READOUT_IDENTIFICATION_RETAINED",
-        "`#5022` audit repair: delta-eta chain R-eta supplied premise | open",
+        "`#5022` audit repair: delta-eta chain R-eta supplied premise | merged",
         "declared supplied readout-identification premise",
         "conditional repair only; no retained R-eta derivation or K2 exactness",
         "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open",
@@ -236,7 +236,7 @@ def main() -> None:
     )
     audit.check(
         "two-ninths/radian current no-go keeps subgate open",
-        "current retained, primitive, and open-PR surfaces do not supply" in two_ninths_no_go
+        "current retained, primitive, merged-PR, and open-PR surfaces do not supply" in two_ninths_no_go
         and "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED" in two_ninths_no_go,
     )
     audit.check("#5020 impact keeps exactness open", "exactness remains open" in pr5020_impact and "No derivation or ratification of a Koide R-eta exactness theorem." in pr5020_impact)
@@ -269,7 +269,7 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     open_markers = [
-        "`#5022` audit repair: delta-eta chain R-eta supplied premise | open",
+        "`#5022` audit repair: delta-eta chain R-eta supplied premise | merged",
         "`#5021` primitive-retirement review: meta gate map, no retirements | open draft",
         "`#5020` Koide R-eta value-face registered-angle/exactness relocation | open",
         "`#5019` Koide `AC_phi_lambda` axiom-surface rebase | open",
@@ -286,7 +286,7 @@ def main() -> None:
         "No derivation or ratification of `DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED`.",
         "No derivation or ratification of `RADIAN_READOUT_LICENSE_RETAINED`.",
         "No derivation or ratification of `FOLD_AND_BRANCH_DOMAIN_LOCK`.",
-        "No adoption or landing claim for PR `#5020`, PR `#5021`, or PR `#5022`.",
+        "No claim that PR `#5020`, PR `#5021`, or merged PR `#5022` supplies K2 exactness.",
         "No derivation of `AC_phi_lambda`, `delta = 2/9`, `rho_e(delta)`, or `a_l^2`.",
         "No derivation or ratification of K1 occupancy/counting, K3 physical species",
         "No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`,",

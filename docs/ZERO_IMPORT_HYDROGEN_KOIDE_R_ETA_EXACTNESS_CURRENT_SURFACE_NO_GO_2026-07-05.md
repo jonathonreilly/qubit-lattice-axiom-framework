@@ -17,8 +17,8 @@ K2_R_ETA_EXACTNESS_RETAINED.
 
 The target discriminator packages that handoff as a ten-input owner/audit
 contract. The narrow result here is not "K2 exactness cannot be retained."
-The narrow result is that current retained, primitive, and open-PR surfaces do
-not supply `K2_R_ETA_EXACTNESS_RETAINED`.
+The narrow result is that current retained, primitive, merged-PR, and open-PR
+surfaces do not supply `K2_R_ETA_EXACTNESS_RETAINED`.
 
 ## Exactness Contract
 
@@ -58,11 +58,11 @@ The #5020 value-face PR is the closest live lane movement, but it explicitly
 names exactness as residual. It can become one target input after adoption or
 a successor review, not the full K2 exactness handoff.
 
-The #5022 audit-repair PR is newer live Koide movement. It repairs the
+The #5022 audit-repair PR has merged with audit success. It repairs the
 delta-eta chain by treating R-eta as a declared supplied readout-identification
-premise and reusing retained K-orbit form authority. That is useful conditional
-machinery, but it is not a retained theorem deriving R-eta. The dedicated
-impact discriminator
+premise and reusing retained K-orbit form authority. That is useful landed
+conditional machinery, but it is not a retained theorem deriving R-eta. The
+dedicated impact discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md`
 records the hydrogen-facing boundary.
 
@@ -82,8 +82,8 @@ ratification, and audit acceptance. It is a subtarget, not a retained result.
 
 The two-ninths/radian-readout current-surface no-go
 `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
-records that the current retained, primitive, and open-PR surfaces do not
-supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
+records that the current retained, primitive, merged-PR, and open-PR surfaces
+do not supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 
 ## Current-Surface Audit
 
@@ -91,7 +91,7 @@ supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; h-class plus h-unit | current retained R-eta derivation or K2 exactness |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | #5022 supplied-premise conditionality boundary | retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, or hydrogen |
-| `#5022` audit repair for the delta-eta chain | open conditionality repair: R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, or two-ninths/radian handoff |
+| `#5022` audit repair for the delta-eta chain | merged conditionality repair: R-eta as declared supplied readout-identification premise plus retained K-orbit form authority | retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, or two-ninths/radian handoff |
 | `#5020` Koide R-eta value-face PR | open value-face movement: registered-angle functional, counterfactual classification, law-freeness, unit-face dissolution, and named exactness residual | retained exact `2/9` theorem, radian-readout license, owner/audit acceptance |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing boundary for #5020 | `K2_R_ETA_EXACTNESS_RETAINED` |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | ten-input exactness target contract | current retained consequence |
@@ -115,12 +115,12 @@ but no registered primitive supplies `K2_R_ETA_EXACTNESS_RETAINED`,
 
 ## Open PR Alignment
 
-Open PRs were refreshed on 2026-07-05 UTC. Opened, lane-relevant PRs are queue
-signals; clean/green status is not a proof input.
+PRs were refreshed on 2026-07-05 UTC. Merged and opened lane-relevant PRs are
+tracked as dependency-state signals; clean/green status is not a proof input.
 
 | PR | queue signal | K2 exactness effect |
 |---|---:|---|
-| `#5022` audit repair: delta-eta chain R-eta supplied premise | open, audit in progress | conditional repair only; no retained R-eta derivation or K2 exactness |
+| `#5022` audit repair: delta-eta chain R-eta supplied premise | merged, audit success | conditional repair only; no retained R-eta derivation or K2 exactness |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft | primitive-boundary context only; no registry edit, no K2 exactness |
 | `#5020` Koide R-eta value-face registered-angle/exactness relocation | open | value-face progress; exactness residual remains open |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open | premise-hygiene context; no exactness theorem |
@@ -135,7 +135,7 @@ metadata, not proof inputs.
 | before this note | after this note |
 |---|---|
 | K2 had a target contract but no current-surface non-supply boundary | the non-supply boundary is explicit |
-| #5022 could be overread as deriving R-eta | #5022 is conditional supplied-premise repair while audit is in progress |
+| #5022 could be overread as deriving R-eta | #5022 is merged conditional supplied-premise repair, not a retained R-eta derivation |
 | #5020 could be overread as exactness closure | #5020 is value-face progress only until exactness and readout inputs are accepted |
 | primitive-retirement review could be overread as a shortcut | #5021 is primitive-boundary context only while open/draft and no-registry-edit |
 
@@ -145,7 +145,7 @@ This section prevents overclaiming. The broad claim "K2 exactness cannot be
 retained" is not shipped. The narrowed claim is:
 
 ```text
-the current retained, primitive, and open-PR surfaces do not supply
+the current retained, primitive, merged-PR, and open-PR surfaces do not supply
 K2_R_ETA_EXACTNESS_RETAINED.
 ```
 
@@ -269,7 +269,7 @@ non-supply claim passes.
 - No derivation or ratification of `DISTINGUISHED_TWO_NINTHS_THEOREM_RETAINED`.
 - No derivation or ratification of `RADIAN_READOUT_LICENSE_RETAINED`.
 - No derivation or ratification of `FOLD_AND_BRANCH_DOMAIN_LOCK`.
-- No adoption or landing claim for PR `#5020`, PR `#5021`, or PR `#5022`.
+- No claim that PR `#5020`, PR `#5021`, or merged PR `#5022` supplies K2 exactness.
 - No derivation of `AC_phi_lambda`, `delta = 2/9`, `rho_e(delta)`, or `a_l^2`.
 - No derivation or ratification of K1 occupancy/counting, K3 physical species
   bridge, K4 absolute scale, native bridge, branch mass-map, or physical

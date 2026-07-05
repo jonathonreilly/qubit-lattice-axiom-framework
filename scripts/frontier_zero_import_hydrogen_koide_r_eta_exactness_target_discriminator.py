@@ -171,7 +171,7 @@ def main() -> None:
         "value-face registration <-> exactness theorem",
         "The primitive registry was checked",
         "ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md",
-        "current retained, primitive, and open-PR surfaces do not supply",
+        "current retained, primitive, merged-PR, and open-PR surfaces do not supply",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md",
         "ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED",
@@ -223,7 +223,7 @@ def main() -> None:
     )
     audit.check(
         "exactness no-go keeps target open",
-        "current retained, primitive, and open-PR surfaces do not supply" in exactness_no_go
+        "current retained, primitive, merged-PR, and open-PR surfaces do not supply" in exactness_no_go
         and "K2_R_ETA_EXACTNESS_RETAINED" in exactness_no_go,
     )
     audit.check(
@@ -235,7 +235,7 @@ def main() -> None:
     audit.check(
         "two-ninths/radian current no-go keeps subtarget open",
         TWO_NINTHS_NO_GO.name in note
-        and "current retained, primitive, and open-PR surfaces do not supply" in two_ninths_no_go,
+        and "current retained, primitive, merged-PR, and open-PR surfaces do not supply" in two_ninths_no_go,
     )
     audit.check("physical electron packet remains downstream", "K2 value-face progress only" in physical_electron and "no delta exactness theorem" in physical_electron)
     audit.check("#5020 impact names exactness residual", "exactness remains open" in pr5020_impact and "No derivation or ratification of a Koide R-eta exactness theorem." in pr5020_impact)
@@ -264,7 +264,7 @@ def main() -> None:
         "No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.",
         "No derivation of `AC_phi_lambda`.",
         "No derivation of `delta = 2/9`.",
-        "No adoption or landing claim for PR `#5020` or PR `#5022`.",
+        "No claim that PR `#5020` or merged PR `#5022` supplies K2 exactness.",
         "No derivation or ratification of K1 occupancy/counting, K3 physical species",
         "No derivation or ratification of `RETAINED_ELECTRON_MASS_PHYSICAL_UNIT`.",
         "No derivation of `S_l`, A3, `alpha(0)`, static-source Rydberg, or hydrogen.",

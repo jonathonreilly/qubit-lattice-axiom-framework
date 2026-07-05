@@ -1,10 +1,11 @@
 # Zero-Import Hydrogen: Koide Delta-Eta PR #5022 Impact Discriminator
 
 **Date:** 2026-07-05
-**Type:** open-PR impact discriminator / Koide K2 conditionality boundary
-**Status:** support-only. This note does not adopt PR `#5022`, does not change
-audit status, does not derive R-eta, does not derive `delta = 2/9`, does not
-ratify `K2_R_ETA_EXACTNESS_RETAINED`, does not ratify
+**Type:** merged-PR impact discriminator / Koide K2 conditionality boundary
+**Status:** support-only. This note does not claim merged PR `#5022` supplies a
+retained R-eta derivation, does not change audit status, does not derive R-eta,
+does not derive `delta = 2/9`, does not ratify
+`K2_R_ETA_EXACTNESS_RETAINED`, does not ratify
 `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`, does not derive the physical
 electron mass, and does not claim hydrogen is retained.
 **Verifier:** `scripts/frontier_zero_import_hydrogen_koide_delta_eta_pr5022_impact_discriminator.py`
@@ -12,9 +13,10 @@ electron mass, and does not claim hydrogen is retained.
 ## Scope
 
 PR `#5022`, `audit repair: delta-eta chain - R-eta as declared supplied
-premise, retained K-orbit form authority`, is open on 2026-07-05 UTC. At the
-latest refresh, its audit check had completed successfully and the merge state
-was clean. Those are review signals, not retained proof inputs.
+premise, retained K-orbit form authority`, merged on 2026-07-05 UTC at
+2026-07-05T11:34:09Z after audit success at 2026-07-05T11:33:54Z
+(merge commit `246c3f1597b3ae769979a3b1a5472f9889b65573`). That is landed
+conditionality repair, not a retained proof of the supplied R-eta premise.
 
 The PR body and diff repair the delta-eta chain in three ways:
 
@@ -60,11 +62,11 @@ which packages `R_ETA_READOUT_IDENTIFICATION_RETAINED` as h-class plus h-unit.
 That target can retire the supplied R-eta premise only if its contract is
 owner/audit accepted; #5022 itself does not supply it.
 
-## Current Open PR Alignment
+## Current PR Alignment
 
 | PR | queue signal | hydrogen effect |
 |---|---:|---|
-| `#5022` delta-eta chain R-eta supplied-premise audit repair | open; audit check success at refresh | conditionality repair; no retained R-eta derivation, K2 exactness, or `m_e` |
+| `#5022` delta-eta chain R-eta supplied-premise audit repair | merged; audit success at refresh | conditionality repair; no retained R-eta derivation, K2 exactness, or `m_e` |
 | `#5021` primitive-retirement review draft | open draft; reports no primitive retirement and no registry edit | primitive-boundary context only |
 | `#5020` Koide R-eta value-face registered-angle/exactness relocation | open | K2 value-face progress; exactness remains open |
 | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | open | premise-hygiene and audit-readiness context |
@@ -75,7 +77,7 @@ owner/audit accepted; #5022 itself does not supply it.
 
 | source | supplies | boundary here |
 |---|---|---|
-| PR `#5022` body/diff | supplied-premise declaration, conditional implication check, retained K-orbit form authority | open-PR context only; not landed authority |
+| merged PR `#5022` body/diff | supplied-premise declaration, conditional implication check, retained K-orbit form authority | landed conditionality repair only; no retained R-eta derivation |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` | target for retiring the supplied R-eta premise | not accepted here; no retained R-eta derivation |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | ten-input K2 exactness target contract | #5022 does not close owner/audit accepted K2 exactness |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for K2 exactness | #5022 remains a guard/context row |
@@ -94,10 +96,10 @@ nodes, not walls, but no primitive supplies R-eta, `K2_R_ETA_EXACTNESS_RETAINED`
 
 | before this note | after this note |
 |---|---|
-| #5022 was only visible as a newly opened audit repair PR | hydrogen has a local K2 conditionality impact boundary |
+| #5022 was only visible as an audit repair PR | hydrogen has a landed K2 conditionality impact boundary |
 | the delta-eta chain could hide whether R-eta was derived or supplied | R-eta is explicitly supplied, not derived |
 | conditional `|delta| = 2/9` could be overread as zero-import exactness | the implication is machine-checked while the premise remains unretired |
-| audit check success could be overread as retained handoff acceptance | review metadata is separated from retained theorem status |
+| merged audit success could be overread as retained handoff acceptance | landed conditionality repair is separated from retained theorem status |
 
 ## No-Go Discipline Gate
 
@@ -175,7 +177,7 @@ Legitimate follow-ups remain:
 
 | path | what it could close |
 |---|---|
-| landed/audited #5022 or successor | cleaner K2 conditionality status |
+| successor R-eta retirement target after landed #5022 | cleaner K2 conditionality status can be spent only after premise retirement |
 | retained theorem deriving or retiring the R-eta supplied premise | R-eta import-retirement wall |
 | accepted two-ninths/radian-readout subtarget | exact value, radian license, and fold/domain lock |
 | accepted K2 exactness target | `K2_R_ETA_EXACTNESS_RETAINED` |
@@ -201,7 +203,7 @@ discriminator passes.
 
 ## Explicit Non-Claims
 
-- No adoption or landing claim for PR `#5022`.
+- No claim that merged PR `#5022` supplies a retained R-eta derivation.
 - No audit verdict or retained-status change.
 - No derivation or ratification of R-eta.
 - No derivation of `delta = 2/9` from current retained inventory alone.
@@ -223,4 +225,4 @@ PYTHONPATH=scripts python3 scripts/frontier_zero_import_hydrogen_koide_delta_eta
 ```
 
 The verifier checks #5022 impact wording, K2/electron-mass boundaries,
-primitive boundaries, open PR alignment, and non-claims.
+primitive boundaries, PR alignment, and non-claims.

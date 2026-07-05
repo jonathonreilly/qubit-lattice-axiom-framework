@@ -139,7 +139,7 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   exclusion, owner ratification, and audit acceptance before K2 can be spent.
   The K2 exactness current-surface no-go
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md`
-  records that the current retained, primitive, and open-PR surfaces do not
+  records that the current retained, primitive, merged-PR, and open-PR surfaces do not
   supply `K2_R_ETA_EXACTNESS_RETAINED`; the K2 exactness target remains
   needed.
   The two-ninths/radian-readout target discriminator
@@ -149,7 +149,7 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   it is a partial K2 route, not electron mass or hydrogen closure.
   The two-ninths/radian-readout current-surface no-go
   `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
-  records that the current retained, primitive, and open-PR surfaces do not
+  records that the current retained, primitive, merged-PR, and open-PR surfaces do not
   supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`; the subtarget remains
   needed.
   The
@@ -1375,14 +1375,14 @@ here.
                             | `#5017`/`#5018` chirality/domain-wall impact boundary | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md` records these as above-C3 chirality/domain-wall context; it does not derive the K3 physical electron species bridge, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as Koide premise-hygiene and audit-readiness context for the `AC_phi_lambda` decomposition chain; it does not derive `AC_phi_lambda`, Koide native zero-section closure, physical electron species, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5020` Koide R-eta value-face registered-angle/exactness relocation | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 value-face progress; exactness remains open; it does not derive `AC_phi_lambda`, `delta = 2/9`, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
-                        | `#5022` delta-eta chain R-eta supplied-premise audit repair | Open. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 conditionality progress; it does not supply a retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`, `m_e`, `alpha(0)`, or hydrogen. |
+                        | `#5022` delta-eta chain R-eta supplied-premise audit repair | Merged with audit success. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 conditionality progress; it does not supply a retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta readout-retirement target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_READOUT_IDENTIFICATION_RETAINED`; if accepted it can feed the exact theorem and radian-readout license inputs under the two-ninths/radian subgate, not full K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-unit identity-radian target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; it can feed one input into R-eta readout retirement, not h-class, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-class fixed-locus target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_H_CLASS_RETAINED`; it can feed one input into R-eta readout retirement, not h-unit, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | K2 R-eta exactness target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` packages the successor handoff `K2_R_ETA_EXACTNESS_RETAINED`; it is not supplied by #5020 and does not derive `m_e`, `alpha(0)`, or hydrogen. |
-                        | K2 R-eta exactness current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, and open-PR surfaces do not supply `K2_R_ETA_EXACTNESS_RETAINED`. |
+                        | K2 R-eta exactness current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K2_R_ETA_EXACTNESS_RETAINED`. |
                         | Koide two-ninths/radian-readout target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`; if accepted it supplies exact `2/9`, radian-readout, and fold/branch domain inputs for K2, not full K2 exactness, `m_e`, `alpha(0)`, or hydrogen. |
-                        | Koide two-ninths/radian-readout current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, and open-PR surfaces do not supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`. |
+                        | Koide two-ninths/radian-readout current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`. |
 		| `#4919`, `#4921` admissibility bootstrap continuation | Formation/orbit/chirality context; no direct closure of `m_e`, `S_l`, Koide readout, or `alpha(0)`. |
 
 ## Non-Claims

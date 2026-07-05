@@ -365,7 +365,7 @@ def main() -> None:
         "No derivation of `delta = 2/9` as a retained physical phase.",
         "No derivation or ratification of `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.",
         "No derivation or ratification of `K2_R_ETA_EXACTNESS_RETAINED`.",
-        "No adoption or landing claim for PR `#5020`, PR `#5021`, or PR `#5022`.",
+        "No claim that PR `#5020`, PR `#5021`, or merged PR `#5022` supplies R-eta",
         "No use of observed lepton masses, fitted `Phi_PDG`, fitted `delta`, observed",
         "No derivation of K1 occupancy/counting, K3 physical species bridge, K4",
         "No new axiom, primitive, Tier-A admission, or empirical import.",

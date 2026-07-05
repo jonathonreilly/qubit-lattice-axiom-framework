@@ -19,6 +19,7 @@ NOTE = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_RATIFICATION_DECISI
 GOAL = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_GOAL_PACKET_2026-07-04.md"
 K4_PACKET = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 WEAK_FRONT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+D17_BLOCK_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 A3_P2 = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md"
 LEPTON_SCALE = ROOT / "docs" / "LEPTON_SCALE_FRONTIER_PROBE_2026-06-05.md"
 D17_SUPPORT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_D17_FULL_CELL_SEPARABILITY_SUPPORT_2026-07-04.md"
@@ -122,6 +123,7 @@ def main() -> None:
         GOAL,
         K4_PACKET,
         WEAK_FRONT_NO_GO,
+        D17_BLOCK_DECISION,
         A3_P2,
         LEPTON_SCALE,
         D17_SUPPORT,
@@ -163,12 +165,23 @@ def main() -> None:
         "No proper subset of those ten contract inputs",
         "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "base-front target remains needed",
+        "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "D17_BLOCK_NORMALIZATION_TEXT_LOCK",
+        "D17_STATED_BLOCK_SCOPE_ACCEPTED",
+        "TWO_COMPONENT_UNIT_NORMALIZATION_CHECK",
+        "D17_ONLY_NO_SOURCE_SINGLETON_OR_A3_INPUT",
+        "NO_WEAK_COUPLING_OR_FRONT_BASE_INPUT",
+        "NO_MASS_OR_COMPARATOR_PROOF_INPUT",
         "EXACT_SOURCE_SINGLETON_RETAINED",
         "A3_PRECISION_PLACEMENT_RETAINED",
         "CHARGED_LEPTON_FRONT_MATCHING_RETAINED",
         "ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED",
         "RETAINED_ELECTRON_MASS_PHYSICAL_UNIT",
         "RETAINED_ALPHA0_LOW_ENERGY_COULOMB",
+        "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
+        "`#5016` zero-import hydrogen retained lane bundle | open",
+        "`#5015` wave-collapse-block01 measurement-collapse gate | open draft",
+        "`#5014` record-formation front/domain-wall chirality | open",
         "`#5013` theta native positive-class adjudication | `CLEAN` / `SUCCESS`",
         "`#5012` chirality domain-wall free-field note | `CLEAN` / `SUCCESS`",
         "`#5011` eta twisted walk family runner | `CLEAN` / `SUCCESS`",
@@ -230,6 +243,7 @@ def main() -> None:
     goal = read(GOAL)
     k4_packet = read(K4_PACKET)
     weak_front_no_go = read(WEAK_FRONT_NO_GO)
+    d17_block_decision = read(D17_BLOCK_DECISION)
     a3_p2 = read(A3_P2)
     lepton_scale = read(LEPTON_SCALE)
     d17_support = read(D17_SUPPORT)
@@ -268,6 +282,8 @@ def main() -> None:
     audit.check("A3 P2 target consumes weak front base separately", "WEAK_FRONT_BASE_RETAINED" in a3_p2 and "CHARGED_LEPTON_FRONT_MATCHING_RETAINED" in a3_p2)
     audit.check("K4 packet consumes weak front base", "WEAK_FRONT_BASE_RETAINED" in k4_packet)
     audit.check("weak-front packet references weak-front current no-go", WEAK_FRONT_NO_GO.name in note and "base-front target remains needed" in note)
+    audit.check("weak-front packet references D17 block decision", D17_BLOCK_DECISION.name in note and "D17_BLOCK_NORMALIZATION_TEXT_LOCK" in note)
+    audit.check("D17 block decision feeds this weak-front packet", NOTE.name in d17_block_decision and "CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED" in d17_block_decision)
     audit.check("weak-front no-go keeps base unsupplied", "current retained, primitive, and open-PR surfaces do not supply" in weak_front_no_go and "WEAK_FRONT_BASE_RETAINED" in weak_front_no_go)
     audit.check("goal packet consumes weak front base lane", NOTE.name in goal and "WEAK_FRONT_BASE_RETAINED" in goal)
     audit.check("minimal axioms keep downstream bridges outside axiom content", "Further physical structure requires derivation, bridge, explicit admission, or approved primitive registration" in flat(minimal))
@@ -295,6 +311,10 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     latest_pr_markers = [
+        "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
+        "`#5016` zero-import hydrogen retained lane bundle | open",
+        "`#5015` wave-collapse-block01 measurement-collapse gate | open draft",
+        "`#5014` record-formation front/domain-wall chirality | open",
         "`#5013` theta native positive-class adjudication | `CLEAN` / `SUCCESS`",
         "`#5012` chirality domain-wall free-field note | `CLEAN` / `SUCCESS`",
         "`#5011` eta twisted walk family runner | `CLEAN` / `SUCCESS`",

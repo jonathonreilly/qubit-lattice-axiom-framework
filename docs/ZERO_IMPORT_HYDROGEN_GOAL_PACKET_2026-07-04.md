@@ -565,6 +565,19 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   records that current retained, primitive, and open-PR surfaces do not supply
   `WEAK_FRONT_BASE_RETAINED`; K4 must treat the base front as an unsupplied
   upstream input until owner/audit acceptance or retained theorem status lands.
+  The D17 block-normalization ratification decision packet
+  `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  packages the weak-front WF.2 subinput:
+  D17_BLOCK_NORMALIZATION_TEXT_LOCK, D17_STATED_BLOCK_SCOPE_ACCEPTED,
+  TWO_COMPONENT_UNIT_NORMALIZATION_CHECK, CHARGED_LEPTON_SCOPE_LOCK,
+  D17_ONLY_NO_SOURCE_SINGLETON_OR_A3_INPUT,
+  NO_WEAK_COUPLING_OR_FRONT_BASE_INPUT, NO_MASS_OR_COMPARATOR_PROOF_INPUT,
+  NO_NEW_PRIMITIVE_OR_AXIOM, OWNER_RATIFICATION, and AUDIT_ACCEPTANCE. If
+  accepted, it conditionally supplies
+  `CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED` only; the `SU(2)_L`
+  weak-coupling context, weak-front base, exact source singleton, A3
+  placement, K4 scale assembly, `m_e`, `alpha(0)`, and hydrogen remain
+  downstream.
   The Koide branch mass-map ratification decision packet
   `ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_RATIFICATION_DECISION_PACKET_2026-07-04.md`
   packages the branch-to-mass composition needed after native readout and
@@ -1019,6 +1032,14 @@ remain support, not the retained physical-unit one-body theorem.
 				   records that `WEAK_FRONT_BASE_RETAINED` is not supplied by
 				   current retained, primitive, or open-PR surfaces; the base-front target remains needed
 				   before K4 can spend weak-front support.
+				   The D17 block-normalization ratification decision packet
+				   (`ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md`)
+				   packages the WF.2 subinput
+				   `CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED` as a
+				   ten-input owner/audit handoff. It preserves the D17
+				   `1/sqrt(2)` factor while excluding source singleton, weak
+				   coupling, weak-front base, A3 placement, K4 scale assembly,
+				   and hydrogen.
 				   The absolute charged-lepton scale ratification decision packet
 				   (`ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md`)
 				   packages K4 as the ten-input handoff after source-side exact
@@ -1228,6 +1249,8 @@ here.
 						| `#5013` theta native positive-class adjudication | Merged at the latest refresh. It is theta gauge-side work; it does not supply charged-lepton F/L/P/R, Koide electron readout, `S_l`, `m_e`, `alpha(0)`, static-source NR Coulomb closure, or hydrogen. |
 						| `#5014` record-formation front/domain-wall chirality | Open and audit `SUCCESS`. It is chirality/domain-wall science; it does not supply charged-lepton F/L/P/R, Koide electron readout, `S_l`, full charged-lepton mass spectrum, R-Lep thresholds, `m_e`, `alpha(0)`, static-source NR Coulomb closure, or hydrogen. |
 						| `#5015` wave-collapse-block01 measurement-collapse gate | Open. It maps measurement-collapse gate context; it does not supply charged-lepton F/L/P/R, Koide electron readout, `S_l`, full charged-lepton mass spectrum, R-Lep thresholds, `m_e`, `alpha(0)`, static-source NR Coulomb closure, or hydrogen. |
+						| `#5016` zero-import hydrogen retained lane bundle | Open. It carries the hydrogen lane packet work, including weak-front and D17 handoff updates; it is the active packaging PR, not landed authority. |
+						| `#5017` domain-wall edge anomaly inflow via spectral flow | Open. It is chirality/anomaly-inflow science; it does not supply charged-lepton F/L/P/R, D17 weak-front normalization, Koide electron readout, `S_l`, `m_e`, `alpha(0)`, static-source NR Coulomb closure, or hydrogen. |
 		| `#4919`, `#4921` admissibility bootstrap continuation | Formation/orbit/chirality context; no direct closure of `m_e`, `S_l`, Koide readout, or `alpha(0)`. |
 
 ## Non-Claims

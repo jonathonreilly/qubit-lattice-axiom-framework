@@ -70,6 +70,17 @@ That consequence is not supplied here. The current missing controls include
 source-side `S_l = 1/256`, A3 precision placement, and no-double-count
 controls.
 
+The D17 block-normalization decision packet
+`ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+now packages the `CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED` subinput as
+its own owner/audit handoff: D17_BLOCK_NORMALIZATION_TEXT_LOCK,
+D17_STATED_BLOCK_SCOPE_ACCEPTED, TWO_COMPONENT_UNIT_NORMALIZATION_CHECK,
+CHARGED_LEPTON_SCOPE_LOCK, D17_ONLY_NO_SOURCE_SINGLETON_OR_A3_INPUT,
+NO_WEAK_COUPLING_OR_FRONT_BASE_INPUT, NO_MASS_OR_COMPARATOR_PROOF_INPUT,
+NO_NEW_PRIMITIVE_OR_AXIOM, OWNER_RATIFICATION, and AUDIT_ACCEPTANCE. That
+packet is a positive import-retirement route for the D17 factor only; until
+accepted, the weak-front base still treats this subinput as unsupplied.
+
 ## Finite Front Witness
 
 For any supplied nonzero weak-coupling symbol:
@@ -101,6 +112,7 @@ or observed `m_W` as proof.
 | `SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md` | structural `b_2 = 19/6` and asymptotic running form | charged-lepton matching interval or physical weak-front value |
 | `EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md` | electroweak mass-diagonalization context | numerical `g_2(v)` or charged-lepton front theorem |
 | `LEPTON_SCALE_FRONTIER_PROBE_2026-06-05.md` | factorization `g_2 * (1/sqrt(2)) * (1/256)` after the empirical gate | retained weak-front base, source singleton, or A3 placement |
+| `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | ten-input owner/audit handoff for `CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED` | retained D17 normalization until owner/audit acceptance, and no weak-front base |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_D17_FULL_CELL_SEPARABILITY_SUPPORT_2026-07-04.md` | preserves the D17 `1/sqrt(2)` block anchor | retained weak-coupling context or K4 front handoff |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_F2_CHARGED_LEPTON_SOURCE_BLOCK_SELECTOR_DISCRIMINATOR_2026-07-04.md` | charged-lepton source-block target using the D17 block if F2 inputs are supplied | retained weak-front base |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_P2_WEAK_FRONT_THRESHOLD_TARGET_DISCRIMINATOR_2026-07-04.md` | target for `F_phys = C_A3 * g_2 * (1/sqrt(2))` | uncorrected base-front retention or matching theorem |
@@ -115,11 +127,16 @@ No registered primitive supplies `weak_front_base_primitive`,
 
 ## Open PR Alignment
 
-Open PRs were refreshed on 2026-07-05 UTC. The newest rows are green, but they
-do not close the weak-front-base handoff:
+Open PRs were refreshed on 2026-07-05 UTC. Opened and lane-relevant is the
+queue signal; clean/green/check state is review metadata and not a proof
+input. The newest rows do not close the weak-front-base handoff:
 
 | PR | state at refresh | weak-front-base effect |
 |---|---:|---|
+| `#5017` domain-wall edge anomaly inflow via spectral flow | open | chirality/anomaly-inflow work; no charged-lepton weak-front base |
+| `#5016` zero-import hydrogen retained lane bundle | open | carries this weak-front and D17 handoff work |
+| `#5015` wave-collapse-block01 measurement-collapse gate | open draft | measurement-collapse context; no charged-lepton weak-front base |
+| `#5014` record-formation front/domain-wall chirality | open | adjacent chirality science; no K4 weak-front handoff |
 | `#5013` theta native positive-class adjudication | `CLEAN` / `SUCCESS` | theta gauge-side work; no charged-lepton weak-front base |
 | `#5012` chirality domain-wall free-field note | `CLEAN` / `SUCCESS` | adjacent chirality science; no K4 weak-front handoff |
 | `#5011` eta twisted walk family runner | `CLEAN` / `SUCCESS` | runner stabilization; no charged-lepton weak front |
@@ -245,6 +262,7 @@ Legitimate partial-closure paths remain:
 | path | what it could close |
 |---|---|
 | owner/audit adoption of the weak-front-base decision packet | `WEAK_FRONT_BASE_RETAINED` |
+| owner/audit adoption of the D17 block-normalization decision packet | `CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED`, not weak-front base by itself |
 | retained theorem deriving `g_2` context plus D17 block normalization as one charged-lepton front | `WEAK_FRONT_BASE_RETAINED` by theorem |
 | retained charged-lepton front-matching theorem | `CHARGED_LEPTON_FRONT_MATCHING_RETAINED`, not the base alone |
 | exact source-probe interface ratification | `EXACT_SOURCE_SINGLETON_RETAINED`, not the base front |

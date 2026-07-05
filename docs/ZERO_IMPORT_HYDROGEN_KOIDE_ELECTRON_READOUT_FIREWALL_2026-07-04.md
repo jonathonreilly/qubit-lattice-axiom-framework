@@ -468,6 +468,18 @@ downstream support input is
 `PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2 exactness, physical
 electron mass, alpha input, or hydrogen.
 
+The R-eta HW1 carrier-realization chain review packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_CARRIER_REALIZATION_CHAIN_REVIEW_PACKET_2026-07-05.md`)
+maps the downstream sequential carrier chain
+`PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED` to
+`HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` to
+`CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED` to
+`PHYSICAL_CARRIER_CONTEXT_RETAINED`. It is review compression only: #5030
+finite-carrier provenance and #5032 common `hw=1` carrier identification
+remain support-only inputs, and the packet itself does not ratify any carrier
+handoff, h-class, h-unit, R-eta, electron readout, physical electron mass,
+alpha input, or hydrogen.
+
 The eta-twisted walk PR #5011 impact discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_ETA_TWISTED_WALK_PR5011_IMPACT_DISCRIMINATOR_2026-07-05.md`)
 records open `#5011` as eta/Kawamoto-Smit covariant-walk context for the KS

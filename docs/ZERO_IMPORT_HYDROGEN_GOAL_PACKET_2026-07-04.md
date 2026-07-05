@@ -1342,6 +1342,12 @@ without merge after earlier moving labels.
 Merge-state labels are moving review metadata, not load-bearing proof inputs
 here.
 
+A 2026-07-05 UTC follow-up refresh also checked open Koide W4 PRs `#5023` and
+`#5024`. Both were open with audit success at refresh. They improve
+`AC_phi_lambda` / W4 dependency readiness and gate hygiene, but do not supply
+the h-class physical carrier context, h-unit identity, retained R-eta readout
+retirement, `m_e`, `alpha(0)`, or hydrogen.
+
 | PR | current relevance to zero-import hydrogen |
 |---|---|
 | `#4897` species universal-floor reclassification | Owner-gated and open. If merged, it may move the abstract-to-physical species bridge out of `AC_phi_lambda`; while open, K3 remains a dependency note, not retired. |
@@ -1450,6 +1456,8 @@ here.
                         | `#5019` Koide `AC_phi_lambda` axiom-surface rebase | Merged. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_ACPHILAMBDA_PR5019_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as Koide premise-hygiene and audit-readiness context for the `AC_phi_lambda` decomposition chain; it does not derive `AC_phi_lambda`, Koide native zero-section closure, physical electron species, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5020` Koide R-eta value-face registered-angle/exactness relocation | Merged. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_VALUE_FACE_PR5020_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 value-face progress; exactness remains open; it does not derive `AC_phi_lambda`, `delta = 2/9`, Koide electron readout, `m_e`, `S_l`, A3, `alpha(0)`, or hydrogen. |
                         | `#5022` delta-eta chain R-eta supplied-premise audit repair | Merged with audit success. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as K2 conditionality progress; it does not supply a retained R-eta derivation, `K2_R_ETA_EXACTNESS_RETAINED`, `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`, `m_e`, `alpha(0)`, or hydrogen. |
+                        | `#5023` Koide W4 audit-readiness repairs | Open with audit success at refresh. It repairs record-formation/species/custody/hw-complement dependency surfaces for the `AC_phi_lambda` basis; it does not derive h-class physical carrier context, h-unit identity, retained R-eta readout retirement, `m_e`, `alpha(0)`, or hydrogen. |
+                        | `#5024` Koide W4 gate-note premise minimization + substep1 rebase | Open with audit success at refresh. It is `AC_phi_lambda` gate-readiness and premise-minimization work; it does not derive h-class, h-unit, retained R-eta readout retirement, `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_COUNTING_MEASURE_RETAINED`; current source notes reduce K1 to one binary, but this target is not supplied by primitives, #4991, #5019, or K2 work and does not derive `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K1_COUNTING_MEASURE_RETAINED`. |
                         | K1 counting-measure ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the ten-input owner/audit contract for `K1_COUNTING_MEASURE_RETAINED`; it is not K2/K3/K4, `m_e`, `alpha(0)`, or hydrogen. |

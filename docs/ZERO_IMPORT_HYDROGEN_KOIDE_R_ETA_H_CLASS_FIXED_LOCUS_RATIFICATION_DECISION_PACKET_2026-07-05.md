@@ -108,6 +108,16 @@ and current-surface no-go
 do not supply h-class by themselves; they only make the carrier-context input
 auditable separately from the single fixed-point readout theorem.
 
+The single fixed-point readout target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages input 7 as its own readout-selection handoff. Its ratification
+decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+do not supply h-class by themselves; they only make the readout-functional
+selection input auditable separately from physical carrier context.
+
 No proper subset of those thirteen contract inputs is a retained h-class
 fixed-locus handoff.
 
@@ -140,6 +150,9 @@ STATIC_SOURCE_RYDBERG_RETAINED
 | surface | useful content | boundary here |
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | names the thirteen-input h-class target | target only; this packet packages the decision object |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md` | names the readout-selection subtarget | readout target only; h-class still needs carrier context and owner/audit |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED` as a fourteen-input decision object | no retained readout theorem unless accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SINGLE_FIXED_POINT_READOUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the readout theorem | no h-class consequence |
 | `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md` | forced C3 fixed-locus weights and local density `2/9` | physical single-summand readout remains open |
 | `FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md` | forced local density at forced `d = 3` | physical readout is the remaining gate |
 | `FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md` | finite KS local-density operator certificate | no physical readout bridge |

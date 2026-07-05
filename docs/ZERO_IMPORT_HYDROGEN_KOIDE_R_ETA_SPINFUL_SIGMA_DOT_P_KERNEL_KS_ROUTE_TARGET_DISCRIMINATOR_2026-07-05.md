@@ -100,6 +100,9 @@ ratification, and audit acceptance.
 | `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded KS phase/gauge-class support inside the declared kinetic class | retained `sigma.p` kernel-object handoff |
 | `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md` | two-flux-class and scalar/Dirac-ray support with named residuals | retained choice of the spinful `sigma.p` ray as the route kernel |
 | `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` | bounded synthesis context with explicit residuals | unbounded physical state-action theorem or this retained kernel handoff |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_TARGET_DISCRIMINATOR_2026-07-05.md` | child target that can supply `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED` if retained | spinful kernel-object theorem, this target, or scalar-lift exclusion |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit contract for the route momentum/link-phase input | decision acceptance here |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the route momentum/link-phase input | retained `sigma.p` kernel theorem |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | parent scalar-lift target that consumes this lane if retained | route-defined spinful kernel theorem itself |
 
 The current retained, primitive, merged-PR, and open-PR surfaces therefore do
@@ -109,6 +112,7 @@ target remains a live positive route, not a closed no-go.
 The approved primitive registry was checked. Registered primitive nodes are
 `minimal_axioms`, `scale_reference_primitive`, `kinetic_isotropy_primitive`,
 and `realized_state_primitive`. None is a
+`ks_route_momentum_link_phase_primitive`,
 `spinful_sigma_dot_p_kernel_primitive`,
 `spinful_staggered_kernel_primitive`, `scalar_lift_exclusion_primitive`,
 `ks_to_physical_matter_state_spinor_law_primitive`, or `hydrogen_primitive`.
@@ -120,7 +124,7 @@ signals; clean/dirty/check labels are not proof inputs.
 
 | PR | queue signal | sigma-dot-p KS-route effect |
 |---|---|---|
-| open `#5016` zero-import hydrogen retained lane bundle | carries this lane once pushed | not landed authority while open |
+| open `#5016` zero-import hydrogen retained lane bundle | carries this lane and the child momentum/link-phase lane once pushed | not landed authority while open |
 | merged `#5019` AC_phi_lambda decomposition chain | Koide form-layer rebase | no route-defined spinful KS kernel theorem |
 | merged `#5020` AC_phi_lambda value face | value-face/exactness relocation | no route-defined spinful KS kernel theorem |
 | merged `#5022` delta-eta chain repair | supplied-premise and K-orbit form authority | no route-defined spinful KS kernel theorem |
@@ -204,6 +208,7 @@ kernel."
 | Candidate path | Status | What it would close |
 |---|---|---|
 | retained route-defined momentum/link-phase input | open positive route | `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED` |
+| momentum/link-phase target packet using P-FLUX and Kawamoto-Smit support | open positive child route | same input after owner/audit acceptance; see `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_TARGET_DISCRIMINATOR_2026-07-05.md` |
 | retained spinful kernel-object theorem | open positive route | `KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RETAINED` |
 | owner/audit acceptance after both physics inputs | open governance/audit route | `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` |
 | retained trivial-scalar covariance failure theorem | separate open sibling input | can help close the scalar-lift exclusion lane, but not this target by itself |

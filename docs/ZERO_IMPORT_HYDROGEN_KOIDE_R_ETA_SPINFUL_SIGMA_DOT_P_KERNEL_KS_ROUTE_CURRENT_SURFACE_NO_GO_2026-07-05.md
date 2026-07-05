@@ -69,11 +69,15 @@ AUDIT_ACCEPTANCE
 | `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded KS phase/gauge-class support | retained `sigma.p` kernel object |
 | `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md` | scalar/Dirac-ray and absorption-frame support | retained choice of the spinful route object |
 | `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` | bounded synthesis context with named residuals | unbounded physical state-action theorem or this target |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for route-defined momentum/link-phase input | retained spinful kernel-object theorem or this target |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit contract for the child input | owner/audit acceptance here |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply of the child input | this sigma-dot-p handoff |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | parent scalar-lift target that can consume this handoff | target theorem itself |
 
 The approved primitive registry was checked. Registered primitive nodes are
 `minimal_axioms`, `scale_reference_primitive`, `kinetic_isotropy_primitive`,
 and `realized_state_primitive`. None is a
+`ks_route_momentum_link_phase_primitive`,
 `spinful_sigma_dot_p_kernel_primitive`,
 `spinful_staggered_kernel_primitive`, `scalar_lift_exclusion_primitive`,
 `ks_to_physical_matter_state_spinor_law_primitive`,
@@ -101,6 +105,7 @@ PRs are queue/status signals; clean/dirty/check labels are not proof inputs.
 
 | Potential overread | Boundary |
 |---|---|
+| child momentum/link-phase packet could be overread as this sigma-dot-p target | it can supply only one missing subinput after owner/audit acceptance |
 | carrier-attachment finite runner could be overread as retained closure | it is strong source support, not owner/audit acceptance of this handoff |
 | KS phase forcing could be overread as the route-defined kernel theorem | it remains bounded support under declared kinetic premises |
 | kinetic scalar/Dirac-ray support could be overread as this target | it is support with named residuals and does not force `K1` |
@@ -177,6 +182,7 @@ retained handoff is impossible. Untested broader resolutions are not claimed.
 | Candidate path | Status | What it would close |
 |---|---|---|
 | retained route-defined momentum/link phase | open positive route | `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED` |
+| momentum/link-phase target packet using P-FLUX and Kawamoto-Smit support | open positive child route | same input after owner/audit acceptance; not the sigma-dot-p target |
 | retained spinful kernel-object theorem | open positive route | `KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RETAINED` |
 | owner/audit acceptance after both physics inputs | open governance/audit route | `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` |
 | retained scalar-lift covariance failure theorem | separate open route | helps close scalar-lift exclusion, but not this handoff by itself |

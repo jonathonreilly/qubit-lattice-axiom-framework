@@ -35,7 +35,8 @@ determinant-character phase erasure ∘ additive-even registrable readout).
 | (a-local) per-plaquette class | `per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09`; `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | both `retained_bounded` |
 | (a-local) licensed multi-plaquette extension | `theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11` — verbatim license closes to single plaquettes (empty reopening); pairwise-proximity weakening keeps the slot absent at every factor order | `retained_bounded` |
 | (b) mass side | `theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10`; `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10`; `strong_cp_determinant_readout_bridge_narrow_theorem_note_2026-06-12` (the named localization target); premise layer `kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04` | all `retained_bounded` (2026-07-04 drain) |
-| (a-global) winding account | see below | **not discharged** |
+| (a-global) winding account, theta-value component | `theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04` — for every emergent integer-sector functional on the canonical class, any positive relative theta weighting is support-vacuous or `theta = 0 (mod 2 pi)` | `retained_bounded` (audited 2026-07-05) |
+| (a-global) winding account, Q-structure component | see below | open — re-scoped as not theta-value content |
 
 **Mass side (b): discharged at retained grade**, conditional on the supplied
 readout-context layer those rows carry (the supplied-context orbit bridge and
@@ -86,28 +87,58 @@ residual; none discharges it**:
 
 ## Verdict
 
-**The PR #3511 basis does not discharge the refined minimum statement.**
-Components (b) and (a-local) are discharged at retained grade as of
-2026-07-04; component (a-global) — the winding account, which the refined
-statement itself names as the admission's gauge-side residual — is narrowed
-by retained and candidate rows but not derived. Under the registry rule that
-a Tier-A admission is retired only by a retained derivation, full retirement
-(admitted-input count 2 → 1) is not currently supportable.
+**2026-07-05 update — the augmented basis discharges the refined minimum
+statement's theta-value content.** The original verdict (2026-07-04, below)
+found (b) and (a-local) discharged and (a-global) narrowed-not-derived. The
+native positive-class adjudication row
+`theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04`
+(audited clean, `retained_bounded`, 2026-07-05) closes the theta-value gap:
+on the canonical class, for EVERY emergent integer-sector functional, any
+positive relative theta weighting is support-vacuous or zero — the Delta(S)
+alias bookkeeping means the single-parity case yields a vacuous alias, not
+theta content, so no support structure admits a nonvacuous nonzero theta.
+The seven winding-account candidate rows' residuals (emergent-Q nonvacuous
+weighting, 4D-carrier model, action-level pairing, defect closure,
+`W_anomaly_covariant_assembly`, SU(3) abelianization) are thereby re-scoped:
+they are Q-STRUCTURE physics (topological susceptibility and related), not
+theta-value content, and do not gate the admission.
 
-## Options for the owner ruling
+Retirement basis, restated: gauge side = per-plaquette license ∘ cross-plane
+absence ∘ licensed multi-plaquette narrowing ∘ native positive-class
+adjudication; mass side = phase-erasure ∘ additive-even ∘ determinant-readout
+bridge, with the K-real reading riding on the remaining `AC_phi_lambda`
+sub-admission (i) as the registry already records. Every named row is
+retained-grade. Under the retired-by-retained-derivation rule, full
+retirement (admitted-input count 2 → 1) is now supportable, with the
+retirement record carrying the scope: canonical imported Wilson +
+staggered-Wilson class; mass-side conditionality relocates onto
+`AC_phi_lambda`; Q-structure lanes continue as open physics outside the
+admission.
 
-1. **Narrowing restatement (recommended).** Keep theta Tier-A; restate its
-   minimum form at today's sharper decomposition (precedent: the 2026-06-11
-   minimum-statement refinement — governance hygiene, no count change):
-   mass side discharged onto the named retained rows; gauge side reduced to
-   the named winding-account atoms (emergent-Q nonvacuous weighting,
-   action-level pairing selection, defect closure, license-external chained
-   clusters). PR #3511 stays open, gated on a retained derivation of those
-   atoms; its gate list is updated to name them.
-2. **Hold as-is.** Leave the admission statement and PR #3511 unchanged;
-   revisit when the winding wave audits and a genuine discharge lands.
-3. Retirement now — not available under the registry rule; recorded here
-   only so the ruling is explicit.
+**Original verdict (2026-07-04, superseded by the above):** components (b)
+and (a-local) discharged at retained grade; component (a-global) narrowed
+by retained and candidate rows but not derived; full retirement not then
+supportable.
+
+## Options for the owner ruling (2026-07-05 update)
+
+1. **Retire (now available; recommended with one precaution).** Record the
+   owner approval on PR #3511 and land the retirement with the registry
+   edit regenerated against live main: move `strong_cp_theta_zero_note`
+   into `retired_derivation_targets` preserving its no-go portfolio,
+   `genuine_admitted_input_count` 2 → 1, discharge basis as restated in the
+   Verdict above, scope recorded (canonical class; `AC_phi_lambda`(i)
+   linkage; Q-structure non-gating). Precaution: the adjudication row was
+   seeded leaf and single-seat audited (fresh_context); it becomes
+   load-bearing for a Tier-A decision on landing, so a second-seat
+   cross-confirmation audit before the registry edit is cheap insurance and
+   matches the critical-row cross-confirmation rule in spirit.
+2. **Narrowing restatement (conservative alternative).** Keep theta Tier-A;
+   restate its minimum form with the theta-value component discharged and
+   only the Q-structure atoms named. Appropriate if the owner prefers the
+   admission to stand until Q-structure physics matures.
+3. **Hold as-is** — no longer the natural reading given the retained
+   adjudication row, recorded for completeness.
 
 This note sets no status and makes no ruling; it is the gate-4 decision
 artifact PR #3511's handling instruction asks for.

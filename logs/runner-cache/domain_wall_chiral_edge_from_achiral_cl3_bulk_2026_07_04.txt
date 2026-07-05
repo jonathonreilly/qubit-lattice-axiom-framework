@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/domain_wall_chiral_edge_from_achiral_cl3_bulk_2026_07_04.py
+runner_sha256: 4b9ea98fddf65db2c620d3e555ff274b2b7fbbde7d73e70d74b267817944bb61
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.28
+status: ok
+----- stdout -----
+
+========================================================================================
+1. Naive Cl(3,0) operator has the Nielsen-Ninomiya eight-corner doubling
+========================================================================================
+PASS - naive operator zeros occur exactly at p_i in {0, pi}  (found=8 corners)
+PASS - naive BZ-corner chiralities sum to zero  (plus=4 minus=4 sum=0)
+
+========================================================================================
+2. Direct Wilson removal lifts doublers but breaks chiral anticommutation
+========================================================================================
+PASS - Wilson scalar lifts seven of the eight naive corner zeros  (corner_min_singular=[0.0, 2.0, 2.0, 4.0, 2.0, 4.0, 4.0, 6.0])
+PASS - massless embedded operator anticommutes with gamma_5  (||{gamma_5,D}||=0.000e+00)
+PASS - Wilson term breaks the gamma_5 anticommutation  (||{gamma_5,D+W}||=4.000000)
+
+========================================================================================
+3. Record-time domain wall localizes one chiral Weyl species per wall
+========================================================================================
+PASS - domain-wall Hamiltonian is Hermitian
+PASS - periodic wall/anti-wall has four light spinor states at p=0  (light=4 max|E_light|=4.557e-09 next_gap=0.801204)
+PASS - wall-localized light rank is two spin components, i.e. one Weyl species  (window_eigs=[0.798565653441 0.798565653441 0.             0.            ])
+PASS - anti-wall-localized light rank is two spin components, i.e. one Weyl species  (window_eigs=[ 0.880610823077  0.880610823077  0.             -0.            ])
+PASS - wall profile has exponential one-sided localization tails  (peak=15 xi_left=0.621335 xi_right=1.701298 r2=(1.000000000000,1.000000000000) antiwall_leak=9.012e-19)
+PASS - anti-wall profile has exponential one-sided localization tails  (peak=48 xi_left=1.701298 xi_right=0.621335 r2=(1.000000000000,1.000000000000) wall_leak=2.253e-17)
+PASS - wall chirality is a definite eigenvalue fixed by sign(M)  (<chi_edge>=1.000000000000, sign(M)=1)
+PASS - anti-wall chirality is opposite  (<chi_edge>=-1.000000000000)
+PASS - wall projected spatial velocities form one Cl(3,0) Weyl cone  (square_err=5.030e-15 anticomm_err=1.277e-15 handedness=-1)
+PASS - anti-wall projected Weyl cone has opposite handedness  (wall_hand=-1 anti_hand=1)
+PASS - flipping M flips wall and anti-wall chiralities  (M=-0.8: wall_chi=-1.000000000000 anti_chi=1.000000000000)
+
+========================================================================================
+4. Bulk gap and index/count contrasts
+========================================================================================
+PASS - only the physical p=0 corner carries light domain-wall modes  (light_counts=[4, 0, 0, 0, 0, 0, 0, 0] min_gaps=[4.55668542508971e-09, 1.2076871085066745, 1.2076871085066743, 3.205673785991843, 1.207687108506671, 3.2056737859918485, 3.205673785991841, 5.205188287678504])
+PASS - uniform record-time bulk is gapped by |M| with no edge light modes  (uniform_gaps=[0.7999999999999999, 0.7999999999999987])
+PASS - wall/anti-wall pair has one species per wall and net zero chirality on the torus  (species_count=2 walls=2 net_edge_chi=4.441e-16 net_handedness=-5.995e-15)
+
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

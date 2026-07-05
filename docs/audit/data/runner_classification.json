@@ -34320,6 +34320,18 @@
       "dominant_class": "C",
       "runner": "scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py"
     },
+    "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05": {
+      "assert_count": 2,
+      "counts": {
+        "A": 1,
+        "B": 4,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/staggered_dirac_common_hw1_bz_corner_carrier_identification_2026_07_05.py"
+    },
     "staggered_dirac_exercise_honest_reassessment_note_2026-06-06": {
       "assert_count": 0,
       "counts": {
@@ -89290,6 +89302,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/staggered_dirac_common_hw1_bz_corner_carrier_identification_2026_07_05.py": {
+      "assert_count": 2,
+      "claims": [
+        "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 4,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py": {
       "assert_count": 1,
       "claims": [
@@ -91061,13 +91088,13 @@
     "decoration_candidates": 695,
     "dominant_class_distribution": {
       "A": 499,
-      "B": 633,
+      "B": 634,
       "C": 1276,
       "D": 451,
       "none": 457
     },
-    "runners_classified": 3316,
-    "runners_with_C": 1738,
+    "runners_classified": 3317,
+    "runners_with_C": 1739,
     "runners_with_D": 1067
   }
 }

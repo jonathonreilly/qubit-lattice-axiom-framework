@@ -1,13 +1,24 @@
 # The |δ| = 2/9 Theorem Chain: Retained Fixed-Locus Arithmetic + One Named Readout Identification
 
 **Date:** 2026-06-09 (2026-06-12: dependency decoupling — the carrier surface is stipulated in-note as the supplied circulant class; the period-fork and detc/detr-fork citations are demoted to context (the period content used here is computed in this note's own runner; the circulant class is supplied in-note); the E6 orientation-strip consumption now cites its authority as a load-bearing dependency.)
+**Audit repair:** 2026-07-05 — repairs the `missing_bridge_theorem` conditional
+(audit row 3800b57ab): (a) the circulant-class form is now consumed from the
+retained K-orbit form authority instead of bare in-note stipulation; (b) R-η is
+restated as an explicitly **declared supplied readout-identification premise**
+with a non-derivability boundary (it is the Tier-A sub-admission (ii) content;
+no retained readout theorem supplies it on the current surface, and the retained
+radian-bridge no-go covers the enumerated phase sources), so the theorem this
+note claims — and the runner now checks — is the **conditional implication**
+(declared premise + retained arithmetic ⟹ `|δ| = 2/9`), not R-η itself.
+No claim is strengthened; the prior stipulation-style runner check is replaced
+by a mechanical declaration check plus the computed implication.
 **Claim type:** bounded_theorem (a conditional theorem chain; the single conditional input is a named, proposed identification — no new number, no new primitive)
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome.
 **Primary runner:**
 [`scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py`](../scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py)
-(SCORECARD: PASS=21, FAIL=0; cached:
+(SCORECARD: PASS=23, FAIL=0; cached:
 [`logs/runner-cache/frontier_koide_delta_eta_density_readout_chain_2026_06_09.txt`](../logs/runner-cache/frontier_koide_delta_eta_density_readout_chain_2026_06_09.txt))
 
 > **What this is.** The no-go validation pass found the |δ| portfolio soft: the
@@ -42,16 +53,30 @@ the cotangent/Dedekind packaging (same 2/9), and mechanically cross-checked
 against the **retained-bounded** fixed-locus note
 ([`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)).
 
-**E2 — the one conditional input (R-η, proposed, NOT adopted).**
-*The registered C₃-breaking phase magnitude is the fixed-locus spectral
-density, read directly as the angle:* `|δ| = L₃(1,2)`. R-η is a dimensionless
-readout-class **identification** — the sibling of the `(M)`/det-class readout
-atom — and it names no number; the number comes from E1.
+**E2 — the declared supplied premise (R-η).**
 
-**Carrier class (supplied).** Throughout, the carrier is the supplied
-charged-lepton circulant class: the three-parameter Hermitian circulant family
+> **Supplied-premise declaration (R-η).** *The registered C₃-breaking phase
+> magnitude is the fixed-locus spectral density, read directly as the angle:*
+> `|δ| = L₃(1,2)`. This identification is **supplied, not derived**: it is the
+> readout-identification content of Tier-A `AC_phi_lambda` sub-admission (ii);
+> no retained readout theorem supplies it on the current surface, and the
+> retained radian-bridge no-go covers the enumerated phase sources. Every claim
+> in this note is conditional on this declared premise.
+
+R-η is a dimensionless readout-class **identification** — the sibling of the
+`(M)`/det-class readout atom — and it names no number; the number comes from
+E1. The runner verifies this declaration mechanically and then checks the
+conditional implication (declaration + E1 arithmetic ⟹ `|δ| = 2/9`); it does
+not, and cannot, check R-η itself.
+
+**Carrier class (supplied form, retained authority).** Throughout, the carrier
+is the supplied charged-lepton circulant class: the three-parameter Hermitian
+circulant family
 `H(delta) = a I + B exp(i delta) C + B exp(-i delta) C^T` with `a` real, `B > 0`,
-`delta` real, and `C` the cyclic 3-shift, stipulated here as the supplied surface.
+`delta` real, and `C` the cyclic 3-shift. The class form and its `K`-orbit
+structure are consumed from the retained one-hop form authority
+[`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)
+(the same wiring as the R-η narrowing note's formal layer).
 The physical identification of this class as the charged-lepton carrier is carried
 by the `AC_phi_lambda` admission itself, which supplies its own gate surface
 (`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is context for where that
@@ -112,10 +137,12 @@ the sign stays frame content.
 
 ```text
 |δ| = 2/9  =  THEOREM conditional on:
-    R-η          (proposed readout identification — the single named gap;
-                  owner/audit decision; now stated number-free)
-    carrier class (the supplied circulant class above; its physical carrier
-                  identification is carried by the AC_phi_lambda admission)
+    R-η          (DECLARED supplied readout-identification premise — the
+                  Tier-A sub-admission (ii) content; not derivable from
+                  currently retained premises on this surface; number-free)
+    carrier class (form from the retained K-orbit authority; the physical
+                  carrier identification is carried by the AC_phi_lambda
+                  admission)
     context      (landed circulant; r = 1/2 used only in the mass comparator
                   unless the separate occupancy-subsumption row lands)
 
@@ -185,6 +212,9 @@ all other phase-readout routes.
 - [`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md)
   — the orientation strip consumed in E6 (registrable species surface = unordered
   multiset; the registrable atom is `|δ|`).
+- [`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)
+  — the retained one-hop form authority for the supplied circulant class and its
+  `K`-orbit structure (`conj(H(δ)) = H(−δ)`), re-verified symbolically in E6.
 
 Context (not load-bearing: cited only to locate surfaces and corroborate
 diagnostics; no content is consumed):

@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py
-runner_sha256: ce4c4c74b88139e6d57454853c913020e0d4fa1f62bac9f6aa1fe984fe8ae7b5
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 1.51
-status: ok
------ stdout -----
 ========================================================================================
 THE |delta| = 2/9 THEOREM CHAIN: RETAINED ARITHMETIC + ONE NAMED IDENTIFICATION
 ========================================================================================
@@ -20,9 +12,10 @@ E1: retained arithmetic re-derived from scratch (two independent packagings)
   [PASS] cross-check gate vs the RETAINED-BOUNDED fixed-locus note: it states the forced weights (1,2), L_3(1,2)=2/9, the 1/9 contrast, and the core identity (all located mechanically)  --  the chain consumes the landed arithmetic, re-proven above
 
 ----------------------------------------------------------------------------------------
-E2: the named identification R-eta (the chain's ONE conditional input)
+E2: the declared supplied premise R-eta + the conditional implication
 ----------------------------------------------------------------------------------------
-  [PASS] R-eta (PROPOSED, not adopted): the registered C_3-breaking phase magnitude IS the fixed-locus density read directly as the angle: |delta| = L_3(1,2) = 2/9 rad -- a dimensionless readout-class identification naming NO number (the number is the retained arithmetic above)  --  sibling of the (M)/det-class readout atom; owner/audit decision
+  [PASS] E2.a the note carries the explicit supplied-premise DECLARATION for R-eta (supplied-not-derived; Tier-A sub-admission (ii) content; no retained readout theorem supplies it; all claims conditional) -- verified verbatim on the note file  --  mechanical declaration check; replaces the prior stipulation-style check
+  [PASS] E2.b the CONDITIONAL THEOREM, computed: {declared R-eta premise |delta| = L_3(1,2)} + {E1-derived L_3(1,2) = 2/9} ==> |delta| = 2/9 exactly (substitution on the symbolic premise; the runner checks the implication, never the premise)  --  conclusion: Eq(abs_delta, 2/9)
 
 ----------------------------------------------------------------------------------------
 E3: the period fork, computed honestly (the alternative packaging fails)
@@ -48,6 +41,7 @@ E5: no-go boundary compliance
 E6: K-orbit consistency -- the chain supplies exactly the registrable atom
 ----------------------------------------------------------------------------------------
   [PASS] conj(H(delta)) = H(-delta) on the supplied circulant class; with the registrability bridge, the registrable atom is |delta| -- exactly what the chain supplies; the sign stays frame content
+  [PASS] the circulant-class form consumed here matches the RETAINED K-orbit form authority: that note carries the H(delta) circulant form and the conjugation/sign-flip statement (located mechanically; the identity itself is re-verified symbolically above)  --  retained one-hop form authority; same wiring as the R-eta narrowing note
 
 ----------------------------------------------------------------------------------------
 E7: honest conditionality and falsifiers
@@ -66,8 +60,5 @@ E8: period-fork diagnostic -- period-1 is the zero-import reading on tested mech
   [PASS] counterfactual boundary: had the masses matched the pi-row, this chain could not have absorbed that result by convention; it would require a new retained readout context or would falsify this R-eta chain  --  the comparator agreement supports R-eta but does not derive it
 
 ========================================================================================
-SUMMARY: PASS=21 FAIL=0
+SUMMARY: PASS=23 FAIL=0
 ========================================================================================
-
------ stderr -----
-

@@ -66,6 +66,9 @@ AUDIT_ACCEPTANCE
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` | scalar-lift covariance exclusion and this parent handoff |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit decision shape for the route-defined `sigma.p` kernel object | scalar-lift exclusion theorem |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the route-defined `sigma.p` kernel handoff | this scalar-lift exclusion theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED` | route-defined spinful kernel theorem and this parent handoff |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit decision shape for the finite trivial scalar-lift covariance failure | scalar-lift parent acceptance |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the trivial-lift covariance-failure handoff | this scalar-lift exclusion theorem |
 
 The approved primitive registry was checked. Registered primitive nodes are
 `minimal_axioms`, `scale_reference_primitive`, `kinetic_isotropy_primitive`,
@@ -83,6 +86,7 @@ PRs are queue/status signals; clean/dirty/check labels are not proof inputs.
 |---|---|---|
 | `#5023` Koide W4 audit-readiness repairs | merged, audit success | W4 readiness/hygiene only; no scalar-lift exclusion theorem |
 | `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success | gate-readiness/audit-graph hygiene only; no scalar-lift exclusion theorem |
+| `#5026` Koide custody L4 retained-successor re-point | open, audit in progress | custody repair only; no scalar-lift exclusion theorem |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft, audit success | primitive-boundary context only; no primitive shortcut |
 | `#5014` record-formation front is the domain wall | open, audit success | formation-front/domain-wall support only |
 | `#5017` domain-wall edge anomaly inflow via spectral flow | open, audit success | anomaly-flow support only |
@@ -168,7 +172,7 @@ retained handoff is impossible. Untested broader resolutions are not claimed.
 | Candidate path | Status | What it would close |
 |---|---|---|
 | retained route-defined spinful kernel | open positive route, now packaged by the sigma-dot-p KS-route child lane | `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` |
-| retained scalar-lift covariance failure theorem | open positive route | `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED` |
+| retained scalar-lift covariance failure theorem | open positive route, now packaged by the trivial scalar-lift covariance exclusion child lane | `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED` |
 | owner/audit acceptance after both physics inputs | open governance/audit route | `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED` |
 | KS spin-lift physical action law | separate open route | helps close the KS child theorem, but not this handoff by itself |
 | future primitive registry update | absent now | could supply a primitive only after explicit owner/review update |
@@ -211,5 +215,5 @@ spinful-kernel impossibility is not shipped.
   retained hydrogen.
 - No new axiom, primitive, Tier-A admission, empirical import, or audit status
   is introduced.
-- No claim that #5014, #5017, #5018, #5023, or #5024 supplies the spinful
+- No claim that #5014, #5017, #5018, #5023, #5024, or #5026 supplies the spinful
   staggered kernel scalar-lift exclusion theorem.

@@ -94,6 +94,9 @@ inputs.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_TARGET_DISCRIMINATOR_2026-07-05.md` | child subtarget for `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` | scalar-lift covariance exclusion and this parent handoff |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit decision shape for the route-defined `sigma.p` kernel object | scalar-lift exclusion theorem |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the route-defined `sigma.p` kernel handoff | this scalar-lift exclusion theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | child subtarget for `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED` | route-defined spinful kernel theorem and this parent handoff |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision shape for the finite trivial-lift covariance-failure theorem | scalar-lift parent acceptance |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the trivial-lift covariance-failure handoff | this scalar-lift exclusion theorem |
 
 The current retained, primitive, merged-PR, and open-PR surfaces therefore do
 not supply `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED`. This
@@ -108,6 +111,7 @@ signals; clean/dirty/check labels are not proof inputs.
 |---|---|---|
 | merged `#5023` Koide W4 audit-readiness repairs | record/species/custody/hw-complement hygiene | no spinful staggered kernel scalar-lift exclusion theorem |
 | merged `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | gate-readiness and audit-graph hygiene | no spinful staggered kernel scalar-lift exclusion theorem |
+| open `#5026` Koide custody L4 retained-successor re-point | charged-lepton custody citation repair | no spinful staggered kernel scalar-lift exclusion theorem |
 | open `#5021` primitive-retirement review | draft meta map; no retirements | no primitive shortcut |
 | open `#5014` record-formation front domain wall | formation-front/domain-wall support | no retained spinful kernel exclusion handoff |
 | open `#5017` domain-wall edge anomaly inflow spectral flow | anomaly-flow support | no retained spinful kernel exclusion handoff |
@@ -185,7 +189,7 @@ subinput handoff level only. This note does not use broader phrases like
 | Candidate path | Status | What it would close |
 |---|---|---|
 | retained route-defined spinful kernel | open positive route, now packaged by `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_TARGET_DISCRIMINATOR_2026-07-05.md` | `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` |
-| retained trivial-scalar covariance failure theorem | open positive route | `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED` |
+| retained trivial-scalar covariance failure theorem | open positive route, now packaged by `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED` |
 | owner/audit acceptance after both physics inputs | open governance/audit route | `SPINFUL_STAGGERED_KERNEL_EXCLUDES_SCALAR_LIFT_RETAINED` |
 | KS spin-lift physical action law | separate open sibling input | can help close the KS child route, but not this target by itself |
 | future primitive registry update | absent now | could supply a primitive only after explicit owner/review update |
@@ -229,5 +233,5 @@ spinful-kernel impossibility is not shipped.
   consequence.
 - No new axiom, primitive, Tier-A admission, empirical import, or audit status
   is introduced.
-- No claim that #5014, #5017, #5018, #5023, or #5024 supplies the spinful
+- No claim that #5014, #5017, #5018, #5023, #5024, or #5026 supplies the spinful
   staggered kernel scalar-lift exclusion theorem.

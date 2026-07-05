@@ -63,6 +63,9 @@ scalar-lift covariance-failure theorem, or the owner/audit decision.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision shape for the route-defined `sigma.p` kernel object, not scalar-lift exclusion |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the route-defined `sigma.p` kernel handoff |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for `TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RETAINED` |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision shape for the finite trivial scalar-lift covariance failure, not parent scalar-lift exclusion |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_TRIVIAL_SCALAR_LIFT_COVARIANCE_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of the trivial-lift covariance-failure handoff |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_TARGET_DISCRIMINATOR_2026-07-05.md` | parent KS child target that can consume this handoff if retained |
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | source support for scalar-kernel compatibility and spinful selector location |
 | `scripts/carrier_attachment_chirality_gate_consolidation_runner.py` | finite support check, not decision acceptance |
@@ -118,9 +121,10 @@ existing finite support irrelevant.
 The partial closures are explicit: a retained route-defined spinful kernel can
 close one missing physics input and is now packaged as the sigma-dot-p
 KS-route child lane; a retained scalar-lift covariance-failure theorem can
-close the other; owner/audit acceptance can then promote the target handle. A
-future primitive route would require owner-governed registry review because no
-such primitive is registered now.
+close the other and is now packaged by the trivial scalar-lift covariance
+exclusion child lane; owner/audit acceptance can then promote the target
+handle. A future primitive route would require owner-governed registry review
+because no such primitive is registered now.
 
 ### N7 - Steelman
 

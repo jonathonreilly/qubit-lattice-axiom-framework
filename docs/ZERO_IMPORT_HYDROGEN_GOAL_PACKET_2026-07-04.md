@@ -487,8 +487,13 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   remain downstream.
   The physical electron species-bridge current-surface no-go
   `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
-  records that current retained, primitive, and open-PR surfaces do not supply
+  records that current retained, primitive, merged-PR, and open-PR surfaces do not supply
   `PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED`; the species bridge target remains needed before physical electron mass can spend K3 support.
+  The Koide W4c PR #5028 impact discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_W4C_PR5028_IMPACT_DISCRIMINATOR_2026-07-05.md`
+  records the newest merged labeling/species dependency-surface repair as
+  Koide audit-drain readiness only: it does not supply K1, K2, K3, physical
+  electron mass, `alpha(0)`, or hydrogen.
   The
   Tier-A owner-retirement `#4991` impact discriminator
   `ZERO_IMPORT_HYDROGEN_TIER_A_OWNER_RETIREMENT_PR4991_IMPACT_DISCRIMINATOR_2026-07-04.md`
@@ -1692,6 +1697,7 @@ supplies no physical action selector, Koide electron readout, `m_e`,
                         | `#5023` Koide W4 audit-readiness repairs | Merged with audit success. It repairs record-formation/species/custody/hw-complement dependency surfaces for the `AC_phi_lambda` basis; it does not derive a physical matter-state law bridge, `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, h-class physical carrier context, h-unit identity, retained R-eta readout retirement, `m_e`, `alpha(0)`, or hydrogen. |
                         | `#5024` Koide W4 gate-note premise minimization + substep1 rebase | Merged with audit success. It is `AC_phi_lambda` gate-readiness and premise-minimization work; it does not derive a physical matter-state law bridge, `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, h-class, h-unit, retained R-eta readout retirement, `m_e`, `alpha(0)`, or hydrogen. |
                         | `#5027` Koide custody AC gate-edge repair | Merged with audit success at refresh. It is a custody/audit-graph direct-dependency repair for the `AC_phi_lambda` row; it does not derive a physical action selector, physical matter-state law bridge, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
+| `#5028` Koide W4c labeling/species repairs | Merged after open lane-relevant refresh. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_W4C_PR5028_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as labeling/species dependency-surface readiness; it does not derive K1/K2/K3, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_COUNTING_MEASURE_RETAINED`; current source notes reduce K1 to one binary, but this target is not supplied by primitives, #4991, #5019, or K2 work and does not derive `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K1_COUNTING_MEASURE_RETAINED`. |
                         | K1 counting-measure ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the ten-input owner/audit contract for `K1_COUNTING_MEASURE_RETAINED`; it is not K2/K3/K4, `m_e`, `alpha(0)`, or hydrogen. |

@@ -165,6 +165,11 @@ The physical electron species-bridge current-surface no-go
 (`ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
 records that current retained, primitive, and open-PR surfaces do not supply
 `PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED`; the species bridge target remains needed before any physical electron mass packet can spend K3 support.
+The Koide W4c PR #5028 impact discriminator
+(`ZERO_IMPORT_HYDROGEN_KOIDE_W4C_PR5028_IMPACT_DISCRIMINATOR_2026-07-05.md`)
+tracks the newest merged labeling/species dependency-surface repair as lane
+readiness only. It does not supply K1 counting, K2 exactness, K3 physical
+species adoption, electron readout, physical electron mass, or hydrogen.
 
 The absolute charged-lepton scale ratification decision packet
 (`ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md`)
@@ -592,11 +597,12 @@ needed.
 ## Open PR Alignment
 
 PRs were checked on 2026-07-04 and refreshed on 2026-07-05 after `#5022`
-merged with audit success, then refreshed again for merged `#5027`. The relevant
-Koide stack does not close this firewall on current main:
+merged with audit success, then refreshed again for merged `#5027` and open
+`#5028`. The relevant Koide stack does not close this firewall on current main:
 
 | PR | effect on K1-K3 |
 |---|---|
+| `#5028` | Open W4c labeling/species repairs. It improves labeling/species dependency-surface readiness and species-note context handling, but supplies no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5027` | Merged Koide custody AC gate-edge repair, audit success at refresh. It repairs a custody/audit-graph edge but supplies no physical action selector, physical matter-state law bridge, K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5026` | Merged Koide custody L4 retained-successor re-point and Plancherel edge demotion, audit success at merge. It repairs a charged-lepton custody citation edge but supplies no physical matter-state law bridge, no KS spin-lift physical action law, no KS-route spinful kernel-object theorem, no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5022` | Merged delta-eta supplied-premise audit repair. It improves K2 conditionality bookkeeping but supplies no retained R-eta derivation, electron readout, physical electron mass, or hydrogen. |

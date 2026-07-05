@@ -299,7 +299,7 @@ def main() -> None:
     audit.check(
         "species no-go keeps K3 open",
         "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED" in species_no_go
-        and "current retained, primitive, and open-PR surfaces do not supply" in species_no_go,
+        and "current retained, primitive, merged-PR, and open-PR surfaces do not supply" in species_no_go,
     )
     audit.check("scale packet remains K4 only", "ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED" in scale_decision and "K4 support only" in scale_decision)
     audit.check("branch mass-map packet remains map only", "KOIDE_BRANCH_MASS_MAP_RETAINED" in branch_decision and "does not derive a physical electron mass" in branch_decision)

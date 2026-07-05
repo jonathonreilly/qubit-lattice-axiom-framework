@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 665,
     "high": 473,
-    "leaf": 1716,
+    "leaf": 1717,
     "medium": 970
   },
   "flagship_signal_used": false,
-  "node_count": 3824,
+  "node_count": 3825,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -19,14 +19,14 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 191.872,
-      "transitive_descendants": 1873
+      "load_bearing_score": 192.373,
+      "transitive_descendants": 1874
     },
     {
       "claim_id": "three_generation_observable_theorem_note",
       "criticality": "critical",
-      "load_bearing_score": 67.174,
-      "transitive_descendants": 1154
+      "load_bearing_score": 67.175,
+      "transitive_descendants": 1155
     },
     {
       "claim_id": "quark_route2_exact_readout_map_note_2026-04-19",
@@ -149,6 +149,12 @@
       "transitive_descendants": 818
     },
     {
+      "claim_id": "kinetic_isotropy_primitive",
+      "criticality": "critical",
+      "load_bearing_score": 34.275,
+      "transitive_descendants": 437
+    },
+    {
       "claim_id": "s3_time_bilinear_tensor_primitive_note",
       "criticality": "critical",
       "load_bearing_score": 33.923,
@@ -159,12 +165,6 @@
       "criticality": "critical",
       "load_bearing_score": 33.892,
       "transitive_descendants": 335
-    },
-    {
-      "claim_id": "kinetic_isotropy_primitive",
-      "criticality": "critical",
-      "load_bearing_score": 33.771,
-      "transitive_descendants": 436
     }
   ]
 }

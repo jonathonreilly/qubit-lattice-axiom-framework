@@ -369,7 +369,7 @@ def main() -> None:
     audit.check(
         "species no-go keeps K3 open",
         "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED" in species_no_go
-        and "current retained, primitive, and open-PR surfaces do not supply" in species_no_go,
+        and "current retained, primitive, merged-PR, and open-PR surfaces do not supply" in species_no_go,
     )
     audit.check("scale packet remains K4 only", "ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED" in scale_decision and "K4 support only" in scale_decision)
     audit.check("electron-mass packet references K4 no-go", SCALE_NO_GO.name in note and "K4 scale target remains needed" in note)

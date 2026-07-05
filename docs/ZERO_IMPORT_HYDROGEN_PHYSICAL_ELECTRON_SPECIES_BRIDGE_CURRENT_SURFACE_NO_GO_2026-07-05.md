@@ -21,8 +21,9 @@ physical electron. It is not the native Z1-Z3 Koide bridge, not the branch
 mass map, and not the absolute charged-lepton scale.
 
 The narrow result is not "no physical electron species bridge can be
-retained." The narrow result is that current retained, primitive, and open-PR
-surfaces do not supply `PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED`.
+retained." The narrow result is that current retained, primitive, merged-PR,
+and open-PR surfaces do not supply
+`PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED`.
 
 ## Species-Bridge Contract
 
@@ -87,6 +88,7 @@ audit acceptance, a physical electron mass, or hydrogen spectroscopy.
 | `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_RATIFICATION_DECISION_PACKET_2026-07-04.md` | downstream mass handoff | species-bridge derivation |
 | `ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_MASS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for physical electron mass | K3 species bridge |
 | `ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing impact boundary for open chirality/domain-wall PRs `#5017` and `#5018` | above-C3 context only; no K3 species bridge |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_W4C_PR5028_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing impact boundary for merged W4c labeling/species PR `#5028` | dependency-surface readiness only; no K3 owner adoption |
 | approved primitives | minimal axioms, scale reference, kinetic-form isotropy, realized-state evaluation discipline | species bridge, species selector, branch identity, mass value, phase, or hydrogen |
 
 The primitive registry was checked. Registered primitives are approved premise
@@ -102,11 +104,12 @@ therefore a live import-retirement route, not a retained K3 result.
 
 ## Open PR Alignment
 
-Open PRs were refreshed on 2026-07-05 UTC. The newest rows are green; the
-direct species rows are live but not current-main closure:
+Open and recently merged PRs were refreshed on 2026-07-05 UTC. The newest rows
+are lane-relevant; the direct species rows are live but not retained K3 closure:
 
 | PR | state at refresh | species-bridge effect |
 |---|---:|---|
+| `#5028` W4c labeling/species repairs | merged after open lane-relevant refresh | repairs labeling/species dependency surfaces and species-note context handles; no K3 owner adoption |
 | `#5018` domain-wall edge content vs SM chiral fermions map | `CLEAN` / `SUCCESS` | above-C3 chiral-content map; no K3 owner adoption |
 | `#5017` domain-wall edge anomaly inflow via spectral flow | `CLEAN` / `SUCCESS` | anomaly-inflow consistency context; no K3 species bridge |
 | `#5014` record-formation front/domain-wall chirality | `CLEAN` / `SUCCESS` | formation-front wall context; no K3 owner adoption |
@@ -129,6 +132,7 @@ Merge-state labels are moving review metadata, not proof inputs.
 | #4929 could be overread as retained K3 closure | #4929 is recorded as a live owner-adoption route, not a current-main result |
 | C3 contentlessness could be confused with physical electron identification | C3 support and retained physical species handoff are separated |
 | #5017/#5018 could be overread as physical species closure | the chirality impact discriminator keeps above-C3 chiral content separate from K3 |
+| #5028 could be overread as K3 species closure | the W4c impact discriminator keeps dependency readiness separate from retained K3 adoption |
 
 ## No-Go Discipline Gate
 
@@ -136,7 +140,7 @@ This section prevents overclaiming. The broad claim "the physical electron
 species bridge cannot be retained" is not shipped. The narrowed claim is:
 
 ```text
-the current retained, primitive, and open-PR surfaces do not supply
+the current retained, primitive, merged-PR, and open-PR surfaces do not supply
 PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED.
 ```
 
@@ -151,6 +155,7 @@ PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED.
 | realized-state registration route | Treat the unique registered assignment as the physical electron species bridge. | ATTEMPTED. Registration is pointwise supplied-context data and does not derive the retained bridge or a mass. |
 | native zero-section route | Treat Z1-Z3 native bridge support as K3 species support. | ATTEMPTED. Native bridge and species bridge are independent Lane 6 gates. |
 | chirality/domain-wall route | Treat the open `#5017`/`#5018` chirality stack as K3 species support. | ATTEMPTED. It supplies above-C3/domain-wall context, not K3 owner adoption. |
+| W4c labeling/species route | Treat the merged `#5028` dependency repair as K3 species closure. | ATTEMPTED. It improves labeling/species audit-drain readiness, not owner/audit adoption of the K3 handoff. |
 | primitive shortcut | Treat approved primitives or minimal axioms as supplying K3. | ATTEMPTED. The registry supplies no species-bridge primitive or species selector. |
 | empirical comparator route | Use observed lepton masses, observed `m_W`, fitted `delta`, fitted `a_l`, observed `m_e`, or Rydberg. | RULED OUT AS ZERO-IMPORT PROOF. Comparator data is target data, not proof input. |
 
@@ -194,6 +199,7 @@ audit decision is left as background.
 | `#4929` PR body | species-bridge partial retirement | live owner-adoption lane | yes |
 | `#4897` PR body | species universal-floor reclassification | live owner-gated alternate lane | yes |
 | chirality PR impact discriminator | above-C3 domain-wall and SM-content map boundary | guard against treating chirality as K3 | yes |
+| W4c PR #5028 impact discriminator | labeling/species dependency-surface readiness | guard against treating W4c repair as K3 | yes |
 | Koide electron firewall | K1/K2/K3/K4 separation | downstream boundary after K3 | yes |
 | primitive registry notes | approved primitive boundary | guard only | yes |
 
@@ -223,6 +229,7 @@ Legitimate partial-closure paths remain:
 | owner adoption plus audit acceptance of `#4929` or equivalent successor | `PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED` |
 | owner adoption plus audit acceptance of `#4897` or equivalent universal-floor successor | a species-floor reclassification route for K3 |
 | retained theorem connecting the chirality/domain-wall stack to K3 without above-C3 smuggling | possible future species-support route, not supplied by open #5017/#5018 |
+| landed #5028 successor effects plus a retained K3 adoption theorem | possible species-readiness support, not supplied by #5028 alone |
 | retained theorem deriving the species bridge from current primitives and retained support | K3 by theorem rather than governance |
 | native zero-section bridge decision | Z1-Z3 only, not K3 |
 | K4 source-side decisions | absolute scale only, not K3 |
@@ -261,6 +268,7 @@ non-supply claim passes.
 - No derivation or ratification of the Koide branch mass-map.
 - No derivation or ratification of the absolute charged-lepton scale.
 - No spending of PR `#5017` or PR `#5018` as K3 species-bridge closure.
+- No spending of PR `#5028` as K3 species-bridge closure.
 - No derivation of `a_l^2`, `S_l`, `C_A3`, `m_e`, `alpha(0)`, or hydrogen
   spectroscopy.
 - No above-C3 taste, Dirac, chirality, CKM/PMNS, or carrier-selection closure.
@@ -279,5 +287,5 @@ PYTHONPATH=scripts python3 scripts/frontier_zero_import_hydrogen_physical_electr
 ```
 
 The verifier checks the K3 contract, finite C3 witness, current-main Tier-A
-registry boundary, primitive registry boundary, open-PR alignment, downstream
+registry boundary, primitive registry boundary, PR alignment, downstream
 Lane 6 consumers, no-go discipline section, and explicit non-claims.

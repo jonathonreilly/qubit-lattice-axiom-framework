@@ -335,7 +335,7 @@ def main() -> None:
     audit.check(
         "species no-go keeps K3 open",
         "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED" in species_no_go
-        and "current retained, primitive, and open-PR surfaces do not supply" in species_no_go,
+        and "current retained, primitive, merged-PR, and open-PR surfaces do not supply" in species_no_go,
     )
     audit.check(
         "chirality impact keeps above-C3 content separate",

@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 189 |
 | **retained_no_go** | 191 |
 | **retained_bounded** | 860 |
-| _retained_pending_chain_ | 4 |
+| _retained_pending_chain_ | 5 |
 | open_gate | 24 |
-| unaudited | 1940 |
+| unaudited | 1939 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1233 |
+| `audited_clean` | 1234 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2278 |
+| `unaudited` | 2277 |
 
 | claim_type | count |
 |---|---:|
@@ -84,7 +84,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 925 |
 | `leaf` | 1595 |
 
-- **Retained pending chain closure:** 4
+- **Retained pending chain closure:** 5
 - **Citation cycles detected:** 14
 
 ### Runner classification (static heuristic)
@@ -147,6 +147,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -1596,6 +1597,18 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The claim closes as finite algebra and symbolic enumeration within the stated surface. It does not require or assert a physical-species bridge, full-dynamics complementation equivariance, or any registry/status change.
 - **rationale:** The runner actually enumerates the Boolean cube, the order-48 coordinate-permutation/bit-flip relabelings, the C3 orbit structure, and the listed triplet profiles, and it symbolically verifies the circulant determinant and orientation-odd readout identities. The load-bearing step is exact finite algebra rather than a definition substitution, external comparator, or tuned numerical match. The source note is scoped to support-only finite-surface content and expressly avoids the unclosed physical bridge and registry implications.
 - **auditor confidence:** high
+
+### `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11`
+
+- **Note:** [`ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md`](../../docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the AC_phi_lambda sub-admission (i) value-face reduction: under minimal_axioms, the approved realized_state_primitive, the supplied K/CPT orbit-indexing bridge, and retained Koide algebra/no-go anchors, the per-lane r/occupancy value is realized-state registration; the measure-side grain/dynamical realization and any derivation of r=1/2 remain outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:charged_lepton_koide_value_full_chain_of_custody_2026-06-02`)
+- **auditor:** `codex-cleanroom-row4-20260705`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** r is an already-defined state functional of the registered signed-root masses, varies across law-admissible realized states, and therefore passes the realized_state_primitive counterfactual test as registered data rather than derivation output.  _(class `A`)_
+- **chain closes:** True — Within the scoped value-face claim, the chain closes: retained algebra supplies r and the Q lever, retained no-gos supply law-freeness of the ratio, minimal_axioms supply no state-selecting rule slot, and the approved primitive classifies state-varying pointwise functionals as registered data. The runner also verifies the firewall and S8 survivor: both grain models remain viable, so no r=1/2 or measure-side realization is selected.
+- **rationale:** The completed live runner and cache agree at PASS=25 FAIL=0. The single D-class check is an explicitly labeled PDG comparator and is not used as an input to the reduction. The unaudited charged-lepton chain-of-custody note is contextual for naming what downstream value consumers cared about; the scoped proof rests on retained algebra/no-go anchors, the retained_bounded K/CPT supplied-context bridge, minimal_axioms, and the accepted realized_state_primitive. No hidden derivation of r=1/2, orbit-occupancy adoption, registry edit, or measure-side closure is present.
 
 ### `action_crossover_note`
 

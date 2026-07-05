@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 421,
     "high": 287,
-    "leaf": 754,
+    "leaf": 753,
     "medium": 515
   },
   "cycle_break_target_count": 14,
@@ -43568,41 +43568,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
-        "minimal_axioms",
-        "realized_state_primitive",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
-        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
-        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
-        "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
-        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02",
-        "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "acphilambda_occurrence_clock_composition_delta_blindness_2026-07-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -58156,5 +58121,5 @@
     }
   ],
   "ready_count": 176,
-  "total_pending": 1977
+  "total_pending": 1976
 }

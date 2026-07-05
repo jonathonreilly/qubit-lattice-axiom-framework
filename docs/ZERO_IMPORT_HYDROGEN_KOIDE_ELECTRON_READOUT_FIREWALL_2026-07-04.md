@@ -710,6 +710,16 @@ physical action law, KS child theorem, parent state-law bridge, HW1, the
 charged-lepton carrier theorem, carrier context, h-class, h-unit, R-eta,
 electron readout, physical electron mass, alpha input, or hydrogen.
 
+The KS-route sigma.p two-handle review packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SIGMA_P_TWO_HANDLE_REVIEW_PACKET_2026-07-05.md`)
+groups the route momentum/link-phase input and the spinful kernel-object
+theorem as adjacent child handles under the parent `sigma.p` lane. It is
+review compression only: accepting both child handles would let the parent
+`SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED` lane spend them
+together, but the packet does not ratify either handle, the parent handoff,
+scalar-lift exclusion, KS state law, the parent matter-state bridge, physical
+electron mass, alpha input, or hydrogen.
+
 The two-ninths/radian-readout target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`)
 packages the K2 sub-handoff `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.

@@ -111,7 +111,7 @@ signals; clean/dirty/check labels are not proof inputs.
 |---|---|---|
 | merged `#5023` Koide W4 audit-readiness repairs | record/species/custody/hw-complement hygiene | no spinful staggered kernel scalar-lift exclusion theorem |
 | merged `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | gate-readiness and audit-graph hygiene | no spinful staggered kernel scalar-lift exclusion theorem |
-| open `#5026` Koide custody L4 retained-successor re-point | charged-lepton custody citation repair | no spinful staggered kernel scalar-lift exclusion theorem |
+| merged `#5026` Koide custody L4 retained-successor re-point | charged-lepton custody citation repair | no spinful staggered kernel scalar-lift exclusion theorem |
 | open `#5021` primitive-retirement review | draft meta map; no retirements | no primitive shortcut |
 | open `#5014` record-formation front domain wall | formation-front/domain-wall support | no retained spinful kernel exclusion handoff |
 | open `#5017` domain-wall edge anomaly inflow spectral flow | anomaly-flow support | no retained spinful kernel exclusion handoff |

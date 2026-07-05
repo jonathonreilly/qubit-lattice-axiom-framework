@@ -84,7 +84,7 @@ PRs are queue/status signals; clean/dirty/check labels are not proof inputs.
 | PR | status | trivial scalar-lift effect |
 |---|---|---|
 | `#5016` zero-import hydrogen retained lane bundle | open, audit in progress | carries this lane once pushed; not landed authority while open |
-| `#5026` Koide custody L4 retained-successor re-point | open, audit in progress | custody repair only; no trivial scalar-lift covariance theorem |
+| `#5026` Koide custody L4 retained-successor re-point | merged, audit success | custody repair only; no trivial scalar-lift covariance theorem |
 | `#5023` Koide W4 audit-readiness repairs | merged, audit success | W4 readiness/hygiene only |
 | `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success | gate-readiness/audit-graph hygiene only |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft, audit success | primitive-boundary context only; no primitive shortcut |

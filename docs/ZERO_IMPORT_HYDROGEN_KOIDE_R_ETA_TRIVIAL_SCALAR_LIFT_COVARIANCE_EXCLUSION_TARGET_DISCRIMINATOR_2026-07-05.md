@@ -125,7 +125,7 @@ signals; clean/dirty/check labels are not proof inputs.
 | PR | queue signal | trivial scalar-lift effect |
 |---|---|---|
 | open `#5016` zero-import hydrogen retained lane bundle | carries this lane once pushed | not landed authority while open |
-| open `#5026` Koide custody L4 retained-successor re-point | charged-lepton custody L4 rewire to retained-bounded momentum-type successor; Plancherel edge demotion | no trivial scalar-lift covariance-failure theorem |
+| merged `#5026` Koide custody L4 retained-successor re-point | charged-lepton custody L4 rewire to retained-bounded momentum-type successor; Plancherel edge demotion | no trivial scalar-lift covariance-failure theorem |
 | merged `#5019` AC_phi_lambda decomposition chain | Koide form-layer rebase | no trivial scalar-lift covariance-failure theorem |
 | merged `#5020` AC_phi_lambda value face | value-face/exactness relocation | no trivial scalar-lift covariance-failure theorem |
 | merged `#5022` delta-eta chain repair | supplied-premise and K-orbit form authority | no trivial scalar-lift covariance-failure theorem |

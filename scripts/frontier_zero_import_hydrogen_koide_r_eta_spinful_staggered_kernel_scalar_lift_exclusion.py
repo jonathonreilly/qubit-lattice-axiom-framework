@@ -377,7 +377,7 @@ def main() -> None:
         "merged `#5023`",
         "merged `#5024`",
         "open `#5021`",
-        "open `#5026`",
+        "merged `#5026`",
         "open `#5014`",
         "open `#5017`",
         "open `#5018`",
@@ -582,7 +582,7 @@ def main() -> None:
     pr_markers = [
         "`#5023` Koide W4 audit-readiness repairs | merged, audit success",
         "`#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success",
-        "`#5026` Koide custody L4 retained-successor re-point | open, audit in progress",
+        "`#5026` Koide custody L4 retained-successor re-point | merged, audit success",
         "`#5021` primitive-retirement review: meta gate map, no retirements | open draft, audit success",
         "`#5014` record-formation front is the domain wall | open, audit success",
         "`#5017` domain-wall edge anomaly inflow via spectral flow | open, audit success",

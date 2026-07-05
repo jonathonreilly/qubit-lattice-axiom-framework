@@ -753,6 +753,30 @@
       "to": "admitted_input_registry_tier_a_note_2026-05-23"
     },
     {
+      "from": "acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04",
+      "to": "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
+    },
+    {
+      "from": "acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04",
+      "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04",
+      "to": "admitted_input_registry_tier_a_note_2026-05-23"
+    },
+    {
+      "from": "acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04",
+      "to": "realized_state_primitive"
+    },
+    {
+      "from": "acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04",
+      "to": "kinetic_isotropy_primitive"
+    },
+    {
       "from": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
       "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
     },
@@ -58136,6 +58160,25 @@
       "runner_path": "scripts/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.py",
       "title": "AC_phi_lambda R-eta h-Unit Approved-Primitive Non-Supply No-Go"
     },
+    "acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04": {
+      "claim_id": "acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "admitted_input_registry_tier_a_note_2026-05-23",
+        "realized_state_primitive",
+        "kinetic_isotropy_primitive"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "042fcef59b677bd857054562fbed3cae24549e6d10f43d93171bc3d993db2faa",
+      "path": "docs/ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md",
+      "runner_path": "scripts/acphilambda_r_eta_occurrence_axiom_hygiene_no_go_2026_07_04.py",
+      "title": "AC_phi_lambda R-eta Occurrence Axiom-Hygiene No-Go"
+    },
     "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11": {
       "claim_id": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
       "claim_type_author_hint": "bounded_theorem",
@@ -109690,7 +109733,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a8ae955d307eefc8769e02ebe24327e8b27c387ed43a9bf0458a1262b29c92c5",
+      "note_hash": "3d5f978246827899c1faeb7c5eb07a47dd49684f99e0f8c4cb2c1172c183d435",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125717,7 +125760,7 @@
       "bounded_theorem": 1557,
       "decoration": 3,
       "meta": 319,
-      "no_go": 322,
+      "no_go": 323,
       "none": 1216,
       "open_gate": 133,
       "positive_theorem": 274
@@ -125726,15 +125769,15 @@
       "bounded_theorem": 1962,
       "decoration": 3,
       "meta": 319,
-      "no_go": 426,
+      "no_go": 427,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14326,
-    "leaf_count": 1297,
-    "node_count": 3824,
+    "edge_count": 14332,
+    "leaf_count": 1298,
+    "node_count": 3825,
     "root_count": 1103,
-    "runners_with_path": 3447
+    "runners_with_path": 3448
   }
 }

@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 868 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1936 |
+| unaudited | 1937 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -66,14 +66,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2274 |
+| `unaudited` | 2275 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1990 |
 | `decoration` | 50 |
 | `meta` | 344 |
-| `no_go` | 472 |
+| `no_go` | 473 |
 | `open_gate` | 185 |
 | `positive_theorem` | 612 |
 
@@ -82,16 +82,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 657 |
 | `high` | 470 |
 | `medium` | 923 |
-| `leaf` | 1603 |
+| `leaf` | 1604 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3313
-- runners with (C) first-principles compute hits: 1736
-- runners with (D) external comparator hits: 1065
+- runners classified: 3314
+- runners with (C) first-principles compute hits: 1737
+- runners with (D) external comparator hits: 1066
 - decoration candidates (no C, no D): 694
 
 ## Top 25 by load-bearing score (topology only)
@@ -100,8 +100,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1873 | 191.87 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1154 | 67.17 | `audited_clean` | **retained** |
+| 1 | `minimal_axioms` | meta | critical | 1874 | 192.37 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1155 | 67.17 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 198 | 65.14 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1547 | 65.10 | `audited_clean` | **retained** |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 997 | 63.96 | `unaudited` | unaudited |
@@ -122,9 +122,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 20 | `cpt_exact_note` | positive_theorem | critical | 705 | 35.96 | `audited_clean` | **retained** |
 | 21 | `three_generation_structure_note` | bounded_theorem | critical | 993 | 35.46 | `audited_clean` | **retained_bounded** |
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 818 | 34.68 | `unaudited` | unaudited |
-| 23 | `s3_time_bilinear_tensor_primitive_note` | open_gate | critical | 970 | 33.92 | `unaudited` | unaudited |
-| 24 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 335 | 33.89 | `unaudited` | unaudited |
-| 25 | `kinetic_isotropy_primitive` | meta | critical | 436 | 33.77 | `unaudited` | meta |
+| 23 | `kinetic_isotropy_primitive` | meta | critical | 437 | 34.27 | `unaudited` | meta |
+| 24 | `s3_time_bilinear_tensor_primitive_note` | open_gate | critical | 970 | 33.92 | `unaudited` | unaudited |
+| 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 335 | 33.89 | `unaudited` | unaudited |
 
 
 ## Applied audits

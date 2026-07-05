@@ -1,9 +1,9 @@
 {
   "criticality_counts": {
-    "critical": 668,
-    "high": 470,
+    "critical": 665,
+    "high": 472,
     "leaf": 1710,
-    "medium": 970
+    "medium": 971
   },
   "flagship_signal_used": false,
   "node_count": 3818,
@@ -95,12 +95,6 @@
       "transitive_descendants": 1540
     },
     {
-      "claim_id": "cl3_color_automorphism_theorem",
-      "criticality": "critical",
-      "load_bearing_score": 40.599,
-      "transitive_descendants": 1096
-    },
-    {
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
       "criticality": "critical",
       "load_bearing_score": 39.467,
@@ -131,6 +125,12 @@
       "transitive_descendants": 1074
     },
     {
+      "claim_id": "cl3_color_automorphism_theorem",
+      "criticality": "critical",
+      "load_bearing_score": 36.55,
+      "transitive_descendants": 529
+    },
+    {
       "claim_id": "s3_time_theta_to_slice_coupling_note",
       "criticality": "critical",
       "load_bearing_score": 35.989,
@@ -149,12 +149,6 @@
       "transitive_descendants": 1071
     },
     {
-      "claim_id": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
-      "criticality": "critical",
-      "load_bearing_score": 34.97,
-      "transitive_descendants": 1002
-    },
-    {
       "claim_id": "koide_circulant_character_derivation_note_2026-04-18",
       "criticality": "critical",
       "load_bearing_score": 34.7,
@@ -165,6 +159,12 @@
       "criticality": "critical",
       "load_bearing_score": 34.543,
       "transitive_descendants": 1054
+    },
+    {
+      "claim_id": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+      "criticality": "critical",
+      "load_bearing_score": 34.47,
+      "transitive_descendants": 1002
     }
   ]
 }

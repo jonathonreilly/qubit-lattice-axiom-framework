@@ -132,6 +132,8 @@ STATIC_SOURCE_RYDBERG_RETAINED
 | `FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md` | collapses duplicate carrier/readout/basepoint gates | does not retain the gate |
 | open `#5030` multisite Pauli finite-carrier provenance | finite algebraic carrier provenance may become retained-supplied at its own scope | no charged-lepton carrier realization theorem |
 | `ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md` | support-only boundary for #5030 | no `PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2, mass, or hydrogen |
+| open `#5032` common `hw=1` BZ-corner carrier identification | common finite representative for Hamming `hw=1`, AC_lambda, and C3 action if adopted | support only, not physical locus selection or carrier-context closure |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_COMMON_HW1_PR5032_CARRIER_IDENTIFICATION_IMPACT_DISCRIMINATOR_2026-07-05.md` | support-only boundary for #5032 and `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED` | no `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, no charged-lepton carrier theorem, no `PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2, mass, or hydrogen |
 | merged `#5023` and merged `#5024` | W4 / AC_phi_lambda gate-readiness and dependency hygiene | no physical carrier-context theorem |
 | approved primitives | minimal axioms and approved primitives | no carrier selector or physical readout context |
 
@@ -154,6 +156,7 @@ ratification decision contract.
 | reduced-carrier route | Treat determinant support as physical carrier identification. | RULED OUT BY PRIOR. The obstruction note keeps the physical bridge open. |
 | gate-collapse route | Treat one named gate as retained closure. | PARTIAL ONLY. It collapses bookkeeping, not the gate itself. |
 | #5030 finite-carrier route | Treat retained-supplied multisite Pauli carrier provenance as this handoff. | PARTIAL ONLY. It can support finite algebraic carrier provenance, not physical charged-lepton realization. |
+| #5032 common-hw1 route | Treat common finite `hw=1` carrier identification as this handoff. | PARTIAL ONLY. It can support the `hw=1` locus contract after adoption but does not supply physical matter-state-law or carrier-context closure. |
 | W4 PR route | Treat #5023/#5024 as carrier-context closure. | ATTEMPTED. They are gate-readiness and hygiene progress only. |
 | primitive route | Treat approved primitives as supplying carrier context. | ATTEMPTED. Registry notes supply no carrier selector or physical readout context. |
 | comparator route | Use observed or fitted data. | RULED OUT AS ZERO-IMPORT PROOF. Comparator data is not proof input. |
@@ -171,15 +174,16 @@ ratification decision contract.
 ### N3 - Hidden-Wall Scan
 
 `supplied context`, `Record-registrable`, `reduced carrier`, `single gate`,
-`open PR`, `merged PR`, `audit success`, `registered`, and `primitive`
+`common carrier`, `#5032`, `open PR`, `merged PR`, `audit success`,
+`registered`, and `primitive`
 are treated as support or status words only. None is used as a hidden
 carrier-realization theorem.
 
 ### N4 - Residual Matching
 
 The residual matches the cited carrier/readout surfaces exactly: each supplies
-support or an obstruction around the physical carrier bridge, and none is used
-as closure evidence.
+support or an obstruction around the physical carrier bridge, including #5032's
+common-representative support, and none is used as closure evidence.
 
 ### N5 - Rhetoric Audit
 
@@ -188,17 +192,18 @@ not say no future carrier theorem can close the route.
 
 ### N6 - Partial-Closure Path Scan
 
-The import-retirement path is explicit: supply a retained physical
-charged-lepton carrier realization theorem, then owner/audit accept this
-contract. No new axiom is required by this packet.
+The import-retirement path is explicit: accept #5032's common-representative
+support at its own scope, supply a retained physical charged-lepton carrier
+realization theorem, then owner/audit accept this contract. No new axiom is
+required by this packet.
 
 ### N7 - Steelman
 
 A hostile reviewer can argue the handoff is close because W2, the gate-collapse
 map, reduced-carrier obstruction, tracial support, #5030 carrier provenance,
-and W4 PRs make the target well-localized. The reply is that localization is
-not retention; the retained carrier-realization theorem and owner/audit
-acceptance remain missing.
+#5032 common-carrier support, and W4 PRs make the target well-localized. The
+reply is that localization is not retention; the retained carrier-realization
+theorem and owner/audit acceptance remain missing.
 
 ### N8 - Cross-Cycle Echo
 
@@ -212,6 +217,8 @@ ratification-decision packaging passes.
 ## Explicit Non-Claims
 
 - No derivation or ratification of `PHYSICAL_CARRIER_CONTEXT_RETAINED`.
+- No adoption or ratification of open PR `#5032`, and no derivation or
+  ratification of `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED`.
 - No derivation or ratification of `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`.
 - No derivation or ratification of h-class, h-unit, R-eta, K2, electron mass,
   alpha, or hydrogen.

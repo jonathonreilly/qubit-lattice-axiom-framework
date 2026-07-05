@@ -25,6 +25,7 @@ WEAK_FRONT_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT
 D17_BLOCK_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 SU2_CONTEXT_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_WEAK_FRONT_SU2_COUPLING_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 SOURCE_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
+EXACT_SOURCE_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md"
 EXACT_SOURCE_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_CURRENT_SURFACE_NO_GO_2026-07-05.md"
 A3_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 A3_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md"
@@ -146,6 +147,7 @@ def main() -> None:
         D17_BLOCK_DECISION,
         SU2_CONTEXT_DECISION,
         SOURCE_DECISION,
+        EXACT_SOURCE_DECISION,
         EXACT_SOURCE_NO_GO,
         A3_DECISION,
         A3_NO_GO,
@@ -215,6 +217,13 @@ def main() -> None:
         "NO_MW_OR_LEPTON_COMPARATOR_PROOF_INPUT",
         "NO_A3_OR_THRESHOLD_MATCHING_INPUT",
         "EXACT_SOURCE_SINGLETON_RETAINED",
+        "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md",
+        "EXACT_SOURCE_SINGLETON_TEXT_LOCK",
+        "SOURCE_PROBE_INTERFACE_CONTRACT_ACCEPTED",
+        "FULL_CELL_SOURCE_CARRIER_CHECK",
+        "PROJECTIVE_UNIFORM_RAY_CHECK",
+        "S_L_READOUT_IDENTITY_BOUND",
+        "NO_A3_OR_K4_OR_MASS_INPUT",
         "ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_CURRENT_SURFACE_NO_GO_2026-07-05.md",
         "current retained, primitive, and open-PR surfaces do not supply",
         "retained exact source-side",
@@ -321,6 +330,7 @@ def main() -> None:
     d17_block_decision = read(D17_BLOCK_DECISION)
     su2_context_decision = read(SU2_CONTEXT_DECISION)
     source_decision = read(SOURCE_DECISION)
+    exact_source_decision = read(EXACT_SOURCE_DECISION)
     exact_source_no_go = read(EXACT_SOURCE_NO_GO)
     a3_decision = read(A3_DECISION)
     a3_no_go = read(A3_NO_GO)
@@ -365,6 +375,8 @@ def main() -> None:
     audit.check("weak-front no-go keeps base unsupplied", "current retained, primitive, and open-PR surfaces do not supply" in weak_front_no_go and "WEAK_FRONT_BASE_RETAINED" in weak_front_no_go)
     audit.check("lepton-scale probe carries front factorization", "y_scale := a_lepton" in lepton_scale and "g_2" in lepton_scale and "1/256" in lepton_scale)
     audit.check("source decision remains source-side only", "This is source-side only" in source_decision and "does not derive" in source_decision)
+    audit.check("K4 packet references exact-source decision", EXACT_SOURCE_DECISION.name in note and "EXACT_SOURCE_SINGLETON_TEXT_LOCK" in note)
+    audit.check("exact-source decision remains below K4", "EXACT_SOURCE_SINGLETON_RETAINED" in exact_source_decision and "No derivation or ratification of K4 scale assembly" in exact_source_decision)
     audit.check("K4 packet references exact-source no-go", EXACT_SOURCE_NO_GO.name in note and "EXACT_SOURCE_SINGLETON_RETAINED" in note)
     audit.check("exact-source no-go keeps source singleton unsupplied", "EXACT_SOURCE_SINGLETON_RETAINED" in exact_source_no_go and "current retained, primitive, and open-PR surfaces do not supply" in exact_source_no_go)
     audit.check("A3 decision remains placement only", "A3_PRECISION_PLACEMENT_RETAINED" in a3_decision and "does not by itself derive `C_A3`" in a3_decision)

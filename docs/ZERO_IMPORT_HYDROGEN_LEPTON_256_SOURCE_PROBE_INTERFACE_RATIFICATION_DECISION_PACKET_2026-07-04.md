@@ -111,6 +111,14 @@ records that current retained, primitive, and open-PR surfaces do not supply
 `AUDIT_ACCEPTANCE`; the F/L/P/R clause-level surfaces remain support-only
 rather than current retained subdecisions.
 
+The exact source singleton ratification decision packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages the downstream named-token handoff for K4. If accepted after this
+source-probe interface is accepted, it conditionally supplies
+`EXACT_SOURCE_SINGLETON_RETAINED` and exact source-side `S_l = 1/256` only;
+A3 precision placement, K4 scale assembly, physical electron mass,
+`alpha(0)`, and hydrogen remain downstream.
+
 The F-clause current-surface no-go
 `ZERO_IMPORT_HYDROGEN_LEPTON_256_F_CLAUSE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
 records the first upstream clause wall: current retained, primitive, and

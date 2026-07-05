@@ -22,6 +22,12 @@ normalized label-free charged-lepton full-cell source-probe interface
   -> S_l = 1/256.
 ```
 
+The exact source singleton ratification decision packet
+`ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+now packages the positive handoff from accepted source-probe interface plus
+finite singleton checks to the K4 token `EXACT_SOURCE_SINGLETON_RETAINED`.
+It remains support-only until owner ratification and audit acceptance land.
+
 Current Lane 6 source-probe surfaces supply real support: the full-cell
 `4^4 = 256` carrier, the F/L/P/R minimality discriminator, clause-level
 decision packets, projective source-shape arithmetic, and `S_l` readout
@@ -34,7 +40,10 @@ current retained, primitive, and open-PR surfaces do not supply
 ## Exact Source Singleton Contract
 
 A future exact source singleton handoff needs all six source-probe decision
-inputs accepted:
+inputs accepted, followed by the exact-source packet's text lock, finite
+carrier check, uniform-ray check, `S_l` readout binding, downstream-input
+exclusion, owner ratification, and audit acceptance. The source-probe inputs
+are:
 
 ```text
 CLAUSE_TEXT_LOCK
@@ -102,6 +111,7 @@ interface. They do not by themselves ratify the interface.
 
 | surface | supplies | does not supply |
 |---|---|---|
+| `ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_RATIFICATION_DECISION_PACKET_2026-07-05.md` | eleven-input owner/audit handoff for `EXACT_SOURCE_SINGLETON_RETAINED` from accepted source-probe interface | current retained exact source singleton |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_RATIFICATION_DECISION_PACKET_2026-07-04.md` | six-input owner/audit handoff for F/L/P/R | current retained exact source singleton |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_RATIFICATION_TARGET_DISCRIMINATOR_2026-07-04.md` | minimality: all F/L/P/R clauses are necessary | owner/audit acceptance |
 | `ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_COMPRESSION_SUPPORT_2026-07-04.md` | conditional composition to `S_l = 1/256` if interface is supplied | ratified interface |
@@ -243,6 +253,7 @@ Legitimate partial-closure paths remain:
 
 | path | what it could close |
 |---|---|
+| owner/audit acceptance of the exact source singleton packet | `EXACT_SOURCE_SINGLETON_RETAINED` |
 | owner/audit acceptance of the source-probe interface packet | `EXACT_SOURCE_SINGLETON_RETAINED` |
 | retained F-clause decision | source/action family input |
 | retained L-clause decision | label-free coordinate input |

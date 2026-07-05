@@ -154,6 +154,19 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   records that current retained, primitive, merged-PR, and open-PR surfaces do
   not supply `R_ETA_READOUT_IDENTIFICATION_RETAINED`; the import-retirement
   target remains needed.
+  The physical carrier-context target discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages the shared input `PHYSICAL_CARRIER_CONTEXT_RETAINED`: the physical
+  charged-lepton carrier realizes the supplied finite AC_phi_lambda/R-eta C3
+  circulant readout context. The companion ratification decision packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  makes that a thirteen-input owner/audit contract, and the current-surface
+  no-go
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+  records that current retained, primitive, merged-PR, and open-PR surfaces do
+  not supply `PHYSICAL_CARRIER_CONTEXT_RETAINED`. This lane is carrier context
+  only; it does not supply h-class, h-unit, R-eta, K2, `m_e`, `alpha(0)`, or
+  hydrogen.
   The h-unit identity-radian target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md`
   packages one subinput of that R-eta target:
@@ -1465,6 +1478,9 @@ retirement, `m_e`, `alpha(0)`, or hydrogen.
                         | R-eta readout-retirement target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_READOUT_IDENTIFICATION_RETAINED`; if accepted it can feed the exact theorem and radian-readout license inputs under the two-ninths/radian subgate, not full K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta readout-retirement ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the eleven-input owner/audit contract for `R_ETA_READOUT_IDENTIFICATION_RETAINED`; it is not retained R-eta, K2 exactness, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta readout-retirement current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `R_ETA_READOUT_IDENTIFICATION_RETAINED`. |
+                        | R-eta physical carrier-context target | Open shared subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `PHYSICAL_CARRIER_CONTEXT_RETAINED`; it can feed R-eta and h-class as carrier context only, not h-unit, fixed-point readout, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
+                        | R-eta physical carrier-context ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the thirteen-input owner/audit contract for `PHYSICAL_CARRIER_CONTEXT_RETAINED`; it does not derive the charged-lepton carrier theorem itself. |
+                        | R-eta physical carrier-context current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `PHYSICAL_CARRIER_CONTEXT_RETAINED`. |
                         | R-eta h-unit identity-radian target | Open subtarget. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` packages `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; it can feed one input into R-eta readout retirement, not h-class, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-unit identity-radian ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the eleven-input owner/audit contract for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; it does not derive `c = 1`, `Phi = 2/3`, h-class, full R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta h-unit identity-radian current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`. |

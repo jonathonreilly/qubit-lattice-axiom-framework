@@ -2107,6 +2107,43 @@
       "decision": null,
       "edges": [
         {
+          "from": "record_context_generator_nonidentifiability_no_go_2026-06-17",
+          "to": "record_prerecord_instrument_kernel_gate_2026-06-06"
+        },
+        {
+          "from": "record_prerecord_instrument_kernel_gate_2026-06-06",
+          "to": "record_context_generator_nonidentifiability_no_go_2026-06-17"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 2,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "record_context_generator_nonidentifiability_no_go_2026-06-17",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md",
+          "title": "Record Context/Generator Nonidentifiability No-Go",
+          "transitive_descendants": 2
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "record_prerecord_instrument_kernel_gate_2026-06-06",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md",
+          "title": "Record Pre-Record Instrument Kernel Gate Under Supplied Readout Context",
+          "transitive_descendants": 2
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0011",
+      "decision": null,
+      "edges": [
+        {
           "from": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
           "to": "ep_record_stiffness_context_independence_no_go_note_2026-06-17"
         },
@@ -2140,7 +2177,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0011",
+      "cycle_id": "cycle-0012",
       "decision": null,
       "edges": [
         {
@@ -2177,7 +2214,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0012",
+      "cycle_id": "cycle-0013",
       "decision": null,
       "edges": [
         {
@@ -2214,7 +2251,7 @@
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0013",
+      "cycle_id": "cycle-0014",
       "decision": null,
       "edges": [
         {
@@ -2245,43 +2282,6 @@
           "effective_status": "unaudited",
           "note_path": "docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
           "title": "Meron / Fractional-Instanton Half-Action `4\u03c0\u00b2/g\u00b2` \u2014 Algebraic Decoration of the Retained Half-Action Core",
-          "transitive_descendants": 1
-        }
-      ],
-      "requires_lemma_extraction": false
-    },
-    {
-      "cycle_id": "cycle-0014",
-      "decision": null,
-      "edges": [
-        {
-          "from": "record_context_generator_nonidentifiability_no_go_2026-06-17",
-          "to": "record_prerecord_instrument_kernel_gate_2026-06-06"
-        },
-        {
-          "from": "record_prerecord_instrument_kernel_gate_2026-06-06",
-          "to": "record_context_generator_nonidentifiability_no_go_2026-06-17"
-        }
-      ],
-      "length": 2,
-      "max_transitive_descendants": 1,
-      "nodes": [
-        {
-          "audit_status": "unaudited",
-          "claim_id": "record_context_generator_nonidentifiability_no_go_2026-06-17",
-          "claim_type": "no_go",
-          "effective_status": "unaudited",
-          "note_path": "docs/RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md",
-          "title": "Record Context/Generator Nonidentifiability No-Go",
-          "transitive_descendants": 1
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "record_prerecord_instrument_kernel_gate_2026-06-06",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md",
-          "title": "Record Pre-Record Instrument Kernel Gate Under Supplied Readout Context",
           "transitive_descendants": 1
         }
       ],

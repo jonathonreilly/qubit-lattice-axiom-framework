@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 668,
     "high": 468,
-    "leaf": 1708,
-    "medium": 973
+    "leaf": 1707,
+    "medium": 975
   },
   "flagship_signal_used": false,
-  "node_count": 3817,
+  "node_count": 3818,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -19,8 +19,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 188.867,
-      "transitive_descendants": 1867
+      "load_bearing_score": 189.368,
+      "transitive_descendants": 1868
     },
     {
       "claim_id": "three_generation_observable_theorem_note",
@@ -61,8 +61,8 @@
     {
       "claim_id": "key_terminology",
       "criticality": "critical",
-      "load_bearing_score": 46.792,
-      "transitive_descendants": 1253
+      "load_bearing_score": 46.793,
+      "transitive_descendants": 1254
     },
     {
       "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
@@ -121,8 +121,8 @@
     {
       "claim_id": "cpt_exact_note",
       "criticality": "critical",
-      "load_bearing_score": 36.694,
-      "transitive_descendants": 1170
+      "load_bearing_score": 36.695,
+      "transitive_descendants": 1171
     },
     {
       "claim_id": "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",

@@ -36597,6 +36597,38 @@
       "to": "record_instrument_kernel_interface_2026-06-05"
     },
     {
+      "from": "record_measurement_collapse_unbounded_derivation_gate_map_note_2026-07-05",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "record_measurement_collapse_unbounded_derivation_gate_map_note_2026-07-05",
+      "to": "realized_state_primitive"
+    },
+    {
+      "from": "record_measurement_collapse_unbounded_derivation_gate_map_note_2026-07-05",
+      "to": "record_formation_append_certification_bounded_note_2026-07-04"
+    },
+    {
+      "from": "record_measurement_collapse_unbounded_derivation_gate_map_note_2026-07-05",
+      "to": "record_prerecord_instrument_kernel_gate_2026-06-06"
+    },
+    {
+      "from": "record_measurement_collapse_unbounded_derivation_gate_map_note_2026-07-05",
+      "to": "record_context_generator_nonidentifiability_no_go_2026-06-17"
+    },
+    {
+      "from": "record_measurement_collapse_unbounded_derivation_gate_map_note_2026-07-05",
+      "to": "record_production_kernel_boundary_2026-06-06"
+    },
+    {
+      "from": "record_measurement_collapse_unbounded_derivation_gate_map_note_2026-07-05",
+      "to": "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06"
+    },
+    {
+      "from": "record_measurement_collapse_unbounded_derivation_gate_map_note_2026-07-05",
+      "to": "born_rule_from_gleason_busch_derivation_note_2026-05-20"
+    },
+    {
       "from": "record_open_system_reset_channel_interface_2026-06-05",
       "to": "record_blank_sink_preparation_regress_no_go_2026-06-05"
     },
@@ -108930,6 +108962,27 @@
       "runner_path": "scripts/frontier_record_markov_generator_premise_classifier_2026_06_06.py",
       "title": "Record Markov-Generator Premise Classifier"
     },
+    "record_measurement_collapse_unbounded_derivation_gate_map_note_2026-07-05": {
+      "claim_id": "record_measurement_collapse_unbounded_derivation_gate_map_note_2026-07-05",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "minimal_axioms",
+        "realized_state_primitive",
+        "record_formation_append_certification_bounded_note_2026-07-04",
+        "record_prerecord_instrument_kernel_gate_2026-06-06",
+        "record_context_generator_nonidentifiability_no_go_2026-06-17",
+        "record_production_kernel_boundary_2026-06-06",
+        "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06",
+        "born_rule_from_gleason_busch_derivation_note_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "de69b862121c33b2dce81bfe43279edfaf0408e79435e03d8d0e05045c47f960",
+      "path": "docs/RECORD_MEASUREMENT_COLLAPSE_UNBOUNDED_DERIVATION_GATE_MAP_NOTE_2026-07-05.md",
+      "runner_path": "scripts/frontier_record_measurement_collapse_unbounded_gate_map_2026_07_05.py",
+      "title": "Record/Measurement Collapse Retained-Unbounded Gate Map"
+    },
     "record_occurrence_thinned_iid_frequency_bridge_2026-07-01": {
       "claim_id": "record_occurrence_thinned_iid_frequency_bridge_2026-07-01",
       "claim_type_author_hint": "bounded_theorem",
@@ -109478,7 +109531,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0fb18a0b9d7297f97c1bccc79d6e1efad213305dc8980052e666fc67bd184a83",
+      "note_hash": "33587f4459411fe892c4eac15a19ce25a6b49b92a023e7ecca1a97c4fa35f952",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125513,7 +125566,7 @@
       "meta": 319,
       "no_go": 316,
       "none": 1216,
-      "open_gate": 133,
+      "open_gate": 134,
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
@@ -125522,13 +125575,13 @@
       "meta": 319,
       "no_go": 420,
       "none": 248,
-      "open_gate": 207,
+      "open_gate": 208,
       "positive_theorem": 659
     },
-    "edge_count": 14303,
-    "leaf_count": 1290,
-    "node_count": 3817,
+    "edge_count": 14311,
+    "leaf_count": 1289,
+    "node_count": 3818,
     "root_count": 1103,
-    "runners_with_path": 3440
+    "runners_with_path": 3441
   }
 }

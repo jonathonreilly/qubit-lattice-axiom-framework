@@ -27,7 +27,7 @@ Owner-approval history for every axiom/primitive change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3646 |
+| Ledger rows | 3647 |
 | Applied audit verdicts | 1354 |
 | Retained-grade rows, including boxed decorations | 1282 |
 | Retained positive theorems | 189 |
@@ -35,7 +35,7 @@ Owner-approval history for every axiom/primitive change:
 | Retained bounded rows | 857 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
-| Unaudited rows | 1943 |
+| Unaudited rows | 1944 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 25 |
 | Audited renaming rows | 19 |
@@ -49,13 +49,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1980 |
+| Total pending rows | 1981 |
 | Ready rows | 174 |
 | Cycle-break targets | 14 |
 | Critical pending | 421 |
 | High pending | 288 |
-| Medium pending | 516 |
-| Leaf pending | 755 |
+| Medium pending | 518 |
+| Leaf pending | 754 |
 
 Next ready rows by queue order:
 
@@ -93,19 +93,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3817 |
+| Citation-graph nodes | 3818 |
 | Critical nodes | 668 |
 | High nodes | 468 |
-| Medium nodes | 973 |
-| Leaf nodes | 1708 |
+| Medium nodes | 975 |
+| Leaf nodes | 1707 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1867 descendants; score 188.867
+- `minimal_axioms` - critical; 1868 descendants; score 189.368
 - `three_generation_observable_theorem_note` - critical; 1148 descendants; score 67.166
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 198 descendants; score 65.137
 - `graph_first_su3_integration_note` - critical; 1578 descendants; score 65.125
 - `observable_principle_from_axiom_note` - critical; 1201 descendants; score 64.231
 - `plaquette_self_consistency_note` - critical; 1248 descendants; score 53.287
 - `minimal_axioms_2026-05-03` - critical; 1153 descendants; score 48.172
-- `key_terminology` - critical; 1253 descendants; score 46.792
+- `key_terminology` - critical; 1254 descendants; score 46.793

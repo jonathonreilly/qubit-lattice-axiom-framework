@@ -30912,6 +30912,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_record_markov_generator_premise_classifier_2026_06_06.py"
     },
+    "record_measurement_collapse_unbounded_derivation_gate_map_note_2026-07-05": {
+      "assert_count": 1,
+      "counts": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_record_measurement_collapse_unbounded_gate_map_2026_07_05.py"
+    },
     "record_occurrence_thinned_iid_frequency_bridge_2026-07-01": {
       "assert_count": 1,
       "counts": {
@@ -73229,6 +73241,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_record_measurement_collapse_unbounded_gate_map_2026_07_05.py": {
+      "assert_count": 1,
+      "claims": [
+        "record_measurement_collapse_unbounded_derivation_gate_map_note_2026-07-05"
+      ],
+      "counts": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_record_open_system_reset_channel_interface_2026_06_05.py": {
       "assert_count": 1,
       "claims": [
@@ -90788,15 +90815,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 691,
+    "decoration_candidates": 692,
     "dominant_class_distribution": {
-      "A": 490,
+      "A": 491,
       "B": 634,
       "C": 1274,
       "D": 451,
       "none": 457
     },
-    "runners_classified": 3306,
+    "runners_classified": 3307,
     "runners_with_C": 1733,
     "runners_with_D": 1062
   }

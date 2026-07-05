@@ -1,0 +1,24 @@
+loop: wave-collapse-retained-unbounded-20260705
+target_claim_id: record_measurement_collapse_unbounded_derivation_gate_map_note_2026-07-05
+target_status: open_gate source-side gate map
+branch: physics-loop/wave-collapse-block01-20260705
+base: origin/main
+current_result: "Retained-unbounded physical collapse not reached; current framework supports finite supplied-context collapse/update interface and identifies the needed measurement-production family."
+files_touched:
+  - docs/RECORD_MEASUREMENT_COLLAPSE_UNBOUNDED_DERIVATION_GATE_MAP_NOTE_2026-07-05.md
+  - scripts/frontier_record_measurement_collapse_unbounded_gate_map_2026_07_05.py
+  - scripts/born_rule_framework_bridge_check.py
+  - .claude/science/physics-loops/wave-collapse-retained-unbounded-20260705/STATE.yaml
+  - .claude/science/physics-loops/wave-collapse-retained-unbounded-20260705/GOAL.md
+  - .claude/science/physics-loops/wave-collapse-retained-unbounded-20260705/ASSUMPTIONS_AND_IMPORTS.md
+  - .claude/science/physics-loops/wave-collapse-retained-unbounded-20260705/ROUTE_PORTFOLIO.md
+  - .claude/science/physics-loops/wave-collapse-retained-unbounded-20260705/OPPORTUNITY_QUEUE.md
+  - .claude/science/physics-loops/wave-collapse-retained-unbounded-20260705/NO_GO_LEDGER.md
+  - .claude/science/physics-loops/wave-collapse-retained-unbounded-20260705/ARTIFACT_PLAN.md
+  - .claude/science/physics-loops/wave-collapse-retained-unbounded-20260705/TRACE_GATE.md
+  - .claude/science/physics-loops/wave-collapse-retained-unbounded-20260705/CLAIM_STATUS_CERTIFICATE.md
+  - .claude/science/physics-loops/wave-collapse-retained-unbounded-20260705/REVIEW_HISTORY.md
+  - .claude/science/physics-loops/wave-collapse-retained-unbounded-20260705/HANDOFF.md
+  - .claude/science/physics-loops/wave-collapse-retained-unbounded-20260705/PR_BACKLOG.md
+next_exact_action: "Audit or attack the strongest subroute: derive a no-information tracial reference from the 2026-06-29 no-privilege clauses, while keeping context/generator and unbounded-lift gates separate."
+stop_condition: "Source-side gate map and runner pass without retained/unbounded promotion."

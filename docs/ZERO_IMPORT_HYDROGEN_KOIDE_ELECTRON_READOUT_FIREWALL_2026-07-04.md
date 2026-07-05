@@ -505,6 +505,20 @@ open-PR surfaces do not supply it; it is state-law bridge support only, not
 carrier context, h-class, h-unit, R-eta, electron readout, physical electron
 mass, alpha input, or hydrogen.
 
+The R-eta physical matter-state route-fork review packet
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_ROUTE_FORK_REVIEW_PACKET_2026-07-05.md`)
+bundles the parent state-law bridge route alternatives
+`KS_TO_PHYSICAL_MATTER_STATE_SPINOR_LAW_THEOREM_RETAINED` and
+`ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`, plus the direct
+elementary child chain
+`FIELD_INDEX_SPIN_LIFT_PRIVILEGE_PRINCIPLE_RETAINED` to
+`ELEMENTARY_STATE_ATTACHMENT_SELECTOR_RETAINED` to
+`ELEMENTARY_PHYSICAL_STATE_ROTATION_LAW_THEOREM_RETAINED`. It is review
+compression only: the parent bridge needs either route theorem, not both, and
+the packet itself does not ratify either route theorem, parent bridge, HW1,
+charged-lepton carrier theorem, carrier context, h-class, h-unit, R-eta,
+electron readout, physical electron mass, alpha input, or hydrogen.
+
 The K2 matter-state chirality/domain-wall impact discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_MATTER_STATE_CHIRALITY_DOMAIN_WALL_IMPACT_DISCRIMINATOR_2026-07-05.md`)
 records open `#5012`/`#5014`/`#5017`/`#5018` as support context for this

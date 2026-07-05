@@ -169,6 +169,19 @@ not supply `SU2_WEAK_COUPLING_CONTEXT_RETAINED`, `WEAK_FRONT_BASE_RETAINED`,
 `EXACT_SOURCE_SINGLETON_RETAINED`, `A3_PRECISION_PLACEMENT_RETAINED`, or
 `ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED`.
 
+The SU2 coupling-context decision packet
+`ZERO_IMPORT_HYDROGEN_WEAK_FRONT_SU2_COUPLING_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+also sits one level below the weak-front-base packet. It packages
+`SU2_WEAK_COUPLING_CONTEXT_RETAINED` only through
+SU2_WEAK_COUPLING_CONTEXT_TEXT_LOCK, CL3_SU2_WEAK_CONTEXT_ACCEPTED,
+BARE_G2_SYMBOL_SCOPE_LOCK, CHARGED_LEPTON_WEAK_DOUBLET_SCOPE_LOCK,
+RUNNING_STRUCTURE_BOUNDARY_LOCK, NO_PHYSICAL_G2V_OR_MW_INPUT,
+NO_THRESHOLD_OR_A3_MATCHING_INPUT, NO_D17_SOURCE_SINGLETON_OR_MASS_INPUT,
+NO_NEW_PRIMITIVE_OR_AXIOM, OWNER_RATIFICATION, and AUDIT_ACCEPTANCE. It does
+not supply physical `g_2(v)`, observed `m_W`, D17 normalization,
+`WEAK_FRONT_BASE_RETAINED`, `EXACT_SOURCE_SINGLETON_RETAINED`,
+`A3_PRECISION_PLACEMENT_RETAINED`, or `ABSOLUTE_CHARGED_LEPTON_SCALE_RETAINED`.
+
 The weak-front-base current-surface no-go
 `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md`
 records that current retained, primitive, and open-PR surfaces do not supply
@@ -227,6 +240,7 @@ inputs here.
 | source | supplies | boundary here |
 |---|---|---|
 | `LEPTON_SCALE_FRONTIER_PROBE_2026-06-05.md` | factorization `y_scale = g_2 * (1/sqrt(2)) * S_l` and isolation of `1/256` | identifies K4 components, does not derive `1/256` or A3 |
+| `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_SU2_COUPLING_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional handoff for `SU2_WEAK_COUPLING_CONTEXT_RETAINED` | no physical `g_2(v)`, observed `m_W`, D17 normalization, weak-front base, exact source singleton, A3 placement, K4 scale assembly, or electron mass |
 | `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_D17_BLOCK_NORMALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional handoff for `CHARGED_LEPTON_D17_BLOCK_NORMALIZATION_RETAINED` | no weak-coupling context, weak-front base, exact source singleton, A3 placement, K4 scale assembly, or electron mass |
 | `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | conditional weak-front-base handoff | no exact source singleton, A3 correction, scale assembly, or electron mass |
 | `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_BASE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current-surface non-supply boundary for weak-front base | retained weak-front base |

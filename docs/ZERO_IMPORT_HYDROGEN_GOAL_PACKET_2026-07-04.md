@@ -578,6 +578,18 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   weak-coupling context, weak-front base, exact source singleton, A3
   placement, K4 scale assembly, `m_e`, `alpha(0)`, and hydrogen remain
   downstream.
+  The SU2 coupling-context ratification decision packet
+  `ZERO_IMPORT_HYDROGEN_WEAK_FRONT_SU2_COUPLING_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  packages the weak-front WF.1 subinput:
+  SU2_WEAK_COUPLING_CONTEXT_TEXT_LOCK, CL3_SU2_WEAK_CONTEXT_ACCEPTED,
+  BARE_G2_SYMBOL_SCOPE_LOCK, CHARGED_LEPTON_WEAK_DOUBLET_SCOPE_LOCK,
+  RUNNING_STRUCTURE_BOUNDARY_LOCK, NO_PHYSICAL_G2V_OR_MW_INPUT,
+  NO_THRESHOLD_OR_A3_MATCHING_INPUT, NO_D17_SOURCE_SINGLETON_OR_MASS_INPUT,
+  NO_NEW_PRIMITIVE_OR_AXIOM, OWNER_RATIFICATION, and AUDIT_ACCEPTANCE. If
+  accepted, it conditionally supplies `SU2_WEAK_COUPLING_CONTEXT_RETAINED`
+  only; physical `g_2(v)`, observed `m_W`, threshold matching, D17
+  normalization, weak-front base, exact source singleton, A3 placement, K4
+  scale assembly, `m_e`, `alpha(0)`, and hydrogen remain downstream.
   The Koide branch mass-map ratification decision packet
   `ZERO_IMPORT_HYDROGEN_KOIDE_BRANCH_MASS_MAP_RATIFICATION_DECISION_PACKET_2026-07-04.md`
   packages the branch-to-mass composition needed after native readout and
@@ -1040,6 +1052,15 @@ remain support, not the retained physical-unit one-body theorem.
 				   `1/sqrt(2)` factor while excluding source singleton, weak
 				   coupling, weak-front base, A3 placement, K4 scale assembly,
 				   and hydrogen.
+				   The SU2 coupling-context ratification decision packet
+				   (`ZERO_IMPORT_HYDROGEN_WEAK_FRONT_SU2_COUPLING_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md`)
+				   packages the WF.1 subinput
+				   `SU2_WEAK_COUPLING_CONTEXT_RETAINED` as an eleven-input
+				   owner/audit handoff. It preserves the `SU(2)_L`
+				   weak-coupling context and symbol `g_2` while excluding
+				   physical `g_2(v)`, observed `m_W`, threshold matching,
+				   D17 normalization, source singleton, A3 placement, K4
+				   scale assembly, and hydrogen.
 				   The absolute charged-lepton scale ratification decision packet
 				   (`ZERO_IMPORT_HYDROGEN_ABSOLUTE_CHARGED_LEPTON_SCALE_RATIFICATION_DECISION_PACKET_2026-07-04.md`)
 				   packages K4 as the ten-input handoff after source-side exact

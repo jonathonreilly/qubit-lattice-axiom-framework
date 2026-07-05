@@ -116,6 +116,8 @@ premise.
 | approved primitives | premise discipline only; no counting-measure selector |
 | Koide electron-readout firewall | K1/K2/K3/K4 separation; no mass closure |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | subtarget for the selector and dimension/Born default-exclusion inputs; not full K1 |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit decision contract for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; not full K1 |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; not full K1 |
 
 The primitive registry was checked. Registered primitives are approved premise
 nodes, not walls, but no primitive supplies `K1_COUNTING_MEASURE_RETAINED`,
@@ -139,6 +141,14 @@ attacks the two technical K1 inputs
 `DIMENSION_BORN_DEFAULT_EXCLUSION` through the named subtarget
 `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`. It is a subhandoff only: it does not
 ratify K1, owner/audit acceptance, `m_e`, `alpha(0)`, or hydrogen.
+The K1 selector/default-exclusion ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages the subhandoff as an eleven-input owner/audit contract, and the
+matching current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that current retained, primitive, merged-PR, and open-PR surfaces do
+not supply `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`. Both are upstream of full
+K1 and do not supply `K1_COUNTING_MEASURE_RETAINED`.
 
 ## Dependency Boundary
 

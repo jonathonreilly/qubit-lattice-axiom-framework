@@ -78,6 +78,14 @@ names the narrower subtarget `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`. If
 accepted later, it could supply `ORBIT_OR_HOLOMORPHIC_COUNT_SELECTOR_RETAINED`
 and `DIMENSION_BORN_DEFAULT_EXCLUSION`; on the current surface it is target
 work only and does not supply `K1_COUNTING_MEASURE_RETAINED`.
+The K1 selector/default-exclusion ratification decision packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+packages that subtarget as an eleven-input owner/audit contract. The matching
+current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that current retained, primitive, merged-PR, and open-PR surfaces do
+not supply `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; therefore the two
+technical K1 inputs remain unsupplied on the current surface.
 
 ## Current-Surface Audit
 
@@ -86,6 +94,8 @@ work only and does not supply `K1_COUNTING_MEASURE_RETAINED`.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `K1_COUNTING_MEASURE_RETAINED` | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | ten-input owner/audit decision packet | retained consequence; not accepted on the current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED`; possible path to the selector and default-exclusion inputs | current retained consequence or full K1 |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | eleven-input owner/audit decision packet for `K1_SELECTOR_DEFAULT_EXCLUSION_RETAINED` | retained consequence; not accepted on the current surface |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for the selector/default-exclusion subtarget | retained consequence or full K1 |
 | `CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md` | one-binary reduction and the `(1,1)` versus `(1,2)` arithmetic | retained selector for the block/orbit count |
 | `SUPERTRACE_INDEX_HOLOMORPHIC_ROUTE_TO_KOIDE_R_HALF_OPEN_LEAD_NOTE_2026-06-04.md` | right-shaped chiral/equivariant/holomorphic route | retained determinant/readout theorem |
 | `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md` | current-surface non-supply and premise candidate | adopted theorem or zero-import retained selector |

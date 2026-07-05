@@ -56974,11 +56974,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26"
+      "to": "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05"
     },
     {
       "from": "repo.front_door_status",
@@ -56987,10 +56991,6 @@
     {
       "from": "repo.front_door_status",
       "to": "cl3_taste_generation_theorem"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -109804,14 +109804,14 @@
         "no_per_site_chirality_theorem_note_2026-05-02",
         "hypercharge_identification_note",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+        "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-        "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26",
+        "staggered_dirac_common_hw1_bz_corner_carrier_identification_bridge_narrow_theorem_note_2026-07-05",
         "yt_ward_identity_derivation_theorem",
-        "cl3_taste_generation_theorem",
-        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
+        "cl3_taste_generation_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9051a3270a512cc9f34dd704b4509cf4523119b992af80841b4b4c0cb4ad25d8",
+      "note_hash": "46dc11f411ec8998a18855b9338a799d3689f52af5c555d8cc9cbbd06331bfdf",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -240,6 +240,19 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   physical spin-lift action law, the KS child theorem, parent bridge, HW1,
   carrier context, fixed-point readout, R-eta, K2, `m_e`, `alpha(0)`, or
   hydrogen.
+  The KS-route spinful kernel-object theorem target discriminator
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_TARGET_DISCRIMINATOR_2026-07-05.md`
+  packages the object-theorem child subinput under the sigma-dot-p route:
+  `KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RETAINED`. The ratification packet
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+  makes that a child owner/audit contract, and the current-surface no-go
+  `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+  records that current retained, primitive, merged-PR, and open-PR surfaces do
+  not supply `KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RETAINED`. This lane can
+  feed the sigma-dot-p route only if retained; it does not supply route
+  momentum/link phase, the sigma-dot-p handoff, scalar-lift exclusion, the KS
+  physical action law, parent bridge, HW1, carrier context, fixed-point readout,
+  R-eta, K2, `m_e`, `alpha(0)`, or hydrogen.
   The KS-route momentum/link-phase input target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_TARGET_DISCRIMINATOR_2026-07-05.md`
   packages the next narrower subinput under the sigma-dot-p route:
@@ -1585,6 +1598,9 @@ physical carrier context, h-unit identity, retained R-eta readout retirement,
                         | R-eta spinful sigma-dot-p KS-route kernel target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED`; it can feed the scalar-lift exclusion route only, not scalar-lift covariance exclusion, the scalar-lift handoff, KS action law, parent bridge, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta spinful sigma-dot-p KS-route kernel ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the route-kernel owner/audit contract; it does not derive the route-defined momentum/link-phase input or spinful kernel-object theorem itself. |
                         | R-eta spinful sigma-dot-p KS-route kernel current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_SIGMA_DOT_P_KERNEL_KS_ROUTE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `SPINFUL_SIGMA_DOT_P_KERNEL_DEFINED_ON_KS_ROUTE_RETAINED`. |
+                        | R-eta KS-route spinful kernel-object theorem target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_TARGET_DISCRIMINATOR_2026-07-05.md` packages `KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RETAINED`; it can feed the sigma-dot-p route only, not route momentum/link phase, scalar-lift exclusion, KS action law, parent bridge, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
+                        | R-eta KS-route spinful kernel-object theorem ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the child owner/audit contract over the Pauli-vector and Kawamoto-Smit support stack; it does not derive the route-defined momentum/link-phase input or parent sigma-dot-p handoff. |
+                        | R-eta KS-route spinful kernel-object theorem current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RETAINED`. |
                         | R-eta KS-route momentum/link-phase input target | Open child subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED`; it can feed the sigma-dot-p route only, not the spinful kernel-object theorem, scalar-lift exclusion, KS action law, parent bridge, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta KS-route momentum/link-phase input ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the route-input owner/audit contract over the P-FLUX and Kawamoto-Smit support stack; it does not derive the sigma-dot-p kernel theorem itself. |
                         | R-eta KS-route momentum/link-phase input current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED`. |

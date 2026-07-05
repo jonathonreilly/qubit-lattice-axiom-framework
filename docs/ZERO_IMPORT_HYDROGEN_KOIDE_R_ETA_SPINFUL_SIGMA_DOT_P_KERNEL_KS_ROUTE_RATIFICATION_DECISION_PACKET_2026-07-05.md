@@ -70,11 +70,15 @@ input, the spinful kernel-object theorem, or the owner/audit decision.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED`; no retained consequence here |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit contract for the route momentum/link-phase input |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_MOMENTUM_LINK_PHASE_INPUT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of that child input |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for `KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RETAINED`; no retained consequence here |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit contract for the spinful kernel-object theorem |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of that child input |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_SPINFUL_STAGGERED_KERNEL_SCALAR_LIFT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | parent scalar-lift target that can consume this handoff if retained |
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | source support for scalar-kernel compatibility and spinful selector location |
 | `scripts/carrier_attachment_chirality_gate_consolidation_runner.py` | finite support check, not decision acceptance |
 | `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md` | bounded KS support, not the decision consequence |
 | `STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md` | scalar/Dirac-ray support, not the decision consequence |
+| open `#5026` | Koide custody L4 re-point only; no route-defined spinful KS kernel theorem |
 | merged `#5019`, `#5020`, `#5022`, `#5023`, and `#5024` | Koide/R-eta/W4 readiness and audit-graph hygiene only |
 | open `#5014`, `#5017`, and `#5018` | chirality/domain-wall support only |
 
@@ -92,7 +96,7 @@ Gate target: narrowed current-surface non-supply and decision hygiene only.
 | KS phase route | Use KS phase forcing. | ATTEMPTED. Bounded phase support is not a route-defined kernel-object theorem. |
 | kinetic two-ray route | Use the scalar/Dirac-ray classification. | ATTEMPTED. It is support, not this handoff. |
 | chirality/domain-wall route | Use chirality/domain-wall support or open PRs. | ATTEMPTED. Support only. |
-| W4/value-face route | Use merged Koide PRs as this kernel theorem. | ATTEMPTED. They do not define this route object. |
+| W4/value/custody route | Use #5026 or merged Koide PRs as this kernel theorem. | ATTEMPTED. They do not define this route object. |
 | primitive shortcut | Use an approved primitive. | ATTEMPTED. The primitive registry was checked; no such primitive is registered. |
 
 ### N2 - Wall-Independence Audit
@@ -126,8 +130,9 @@ existing finite support irrelevant.
 
 The partial closures are explicit: the momentum/link-phase target packet can
 promote `KS_ROUTE_DEFINED_MOMENTUM_COVECTOR_OR_LINK_PHASE_INPUT_RETAINED`
-after owner/audit acceptance of the P-FLUX and Kawamoto-Smit support stack; a
-retained spinful kernel-object theorem can close the other physics input;
+after owner/audit acceptance of the P-FLUX and Kawamoto-Smit support stack; the
+spinful kernel-object theorem target packet can promote
+`KS_ROUTE_SPINFUL_KERNEL_OBJECT_THEOREM_RETAINED` after owner/audit acceptance;
 owner/audit acceptance can then promote the target handle. A future primitive
 route would require owner-governed registry review because no such primitive is
 registered now.

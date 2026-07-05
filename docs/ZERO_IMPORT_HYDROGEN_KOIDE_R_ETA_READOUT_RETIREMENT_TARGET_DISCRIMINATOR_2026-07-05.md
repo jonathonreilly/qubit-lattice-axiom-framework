@@ -83,6 +83,9 @@ packages one subinput of this contract:
 identity-radian unit coefficient only; this packet still needs h-class,
 physical carrier context, owner ratification, and audit acceptance before
 `R_ETA_READOUT_IDENTIFICATION_RETAINED` is available.
+The h-unit current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that the current surface does not supply that subinput.
 
 The h-class fixed-locus target discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md`
@@ -99,6 +102,7 @@ still needs h-unit, owner ratification, and audit acceptance before
 | merged `#5022` delta-eta audit repair | R-eta is explicit supplied premise; conditional implication is machine-checked | retained R-eta derivation absent |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_DELTA_ETA_PR5022_IMPACT_DISCRIMINATOR_2026-07-05.md` | hydrogen-facing #5022 boundary | K2 conditionality only |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; identity-radian unit coefficient only | h-class, carrier context, owner/audit, and full R-eta retirement remain open |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` | identity-unit selection theorem and owner/audit remain open |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_CLASS_RETAINED`; fixed-locus class membership only | h-unit, owner/audit, and full R-eta retirement remain open |
 | `ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md` | decomposes R-eta into forced form layer plus `A_R-eta` | `A_R-eta` remains admitted, h-class plus h-unit |
 | `ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md` | closes supplied finite-context registrability fragment | physical carrier realization and `A_R-eta` value remain open |

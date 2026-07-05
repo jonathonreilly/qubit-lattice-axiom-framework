@@ -306,6 +306,12 @@ the live selection theorem to `c = 1` or equivalently `Phi = 2/3`; it does not
 derive that value, h-class, full R-eta retirement, K2 exactness, physical
 electron mass, alpha input, or hydrogen.
 
+The R-eta h-unit identity-radian current-surface no-go
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+records that current retained, primitive, merged-PR, and open-PR surfaces do
+not supply `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; the h-unit lane still
+needs the identity-unit selection theorem plus owner/audit acceptance.
+
 The R-eta h-class fixed-locus target
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md`)
 packages `R_ETA_H_CLASS_RETAINED`, the matching subinput of R-eta readout
@@ -460,6 +466,7 @@ No hidden admission is left buried as background.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | decision packet for the eleven-input `R_ETA_READOUT_IDENTIFICATION_RETAINED` handoff; not electron readout | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `R_ETA_READOUT_IDENTIFICATION_RETAINED` | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; identity-radian unit only, not electron readout | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; not electron readout | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_CLASS_RETAINED`; fixed-locus class membership only, not electron readout | yes |
 | `#5022` delta-eta R-eta supplied-premise audit repair | conditional R-eta bookkeeping, not retained derivation or electron readout | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | successor target for `K2_R_ETA_EXACTNESS_RETAINED` | yes |

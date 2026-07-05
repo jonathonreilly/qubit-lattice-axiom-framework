@@ -31,6 +31,7 @@ SPECIES_MINIMUM = ROOT / "docs" / "SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_
 SPECIES_RATIFICATION = ROOT / "docs" / "SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md"
 SPECIES_REALIZED = ROOT / "docs" / "ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md"
 SPECIES_RUNNER = ROOT / "scripts" / "frontier_species_bridge_ratification_class_2026_07_02.py"
+CHIRALITY_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md"
 REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 TIER_A_REGISTRY = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
 MINIMAL = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
@@ -167,6 +168,7 @@ def main() -> None:
         SPECIES_RATIFICATION,
         SPECIES_REALIZED,
         SPECIES_RUNNER,
+        CHIRALITY_IMPACT,
         REGISTRY,
         TIER_A_REGISTRY,
         MINIMAL,
@@ -208,6 +210,10 @@ def main() -> None:
         "c3_species_bridge_primitive",
         "electron_species_bridge_primitive",
         "electron_mass_primitive",
+        "ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md",
+        "`#5018` domain-wall edge content vs SM chiral fermions map | `CLEAN` / `SUCCESS`",
+        "`#5017` domain-wall edge anomaly inflow via spectral flow | `CLEAN` / `SUCCESS`",
+        "`#5014` record-formation front/domain-wall chirality | `CLEAN` / `SUCCESS`",
         "`#5013` theta native positive-class adjudication | `CLEAN` / `SUCCESS`",
         "`#5012` chirality domain-wall free-field note | `CLEAN` / `SUCCESS`",
         "`#5011` eta twisted walk family runner | `CLEAN` / `SUCCESS`",
@@ -307,6 +313,7 @@ def main() -> None:
     bridge_decision = read(BRIDGE_DECISION)
     k4_no_go = read(K4_NO_GO)
     branch_no_go = read(BRANCH_MASS_MAP_NO_GO)
+    chirality_impact = read(CHIRALITY_IMPACT)
     species_minimum = canon(read(SPECIES_MINIMUM))
     species_ratification = canon(read(SPECIES_RATIFICATION))
     species_realized = canon(read(SPECIES_REALIZED)).lower()
@@ -325,6 +332,15 @@ def main() -> None:
     audit.check("species decision references species no-go", NOTE.name in species_decision and "species bridge target remains needed" in species_decision)
     audit.check("physical electron packet references species no-go", NOTE.name in physical_packet and "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED" in physical_packet)
     audit.check("physical electron no-go references species no-go", NOTE.name in physical_no_go and "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED" in physical_no_go)
+    audit.check(
+        "species no-go references chirality impact note",
+        CHIRALITY_IMPACT.name in note and "#5018" in note and "#5017" in note,
+    )
+    audit.check(
+        "chirality impact keeps K3 separate",
+        "above-C3 chirality/domain-wall content" in chirality_impact
+        and "No derivation or ratification of `PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED`." in chirality_impact,
+    )
     audit.check(
         "native bridge no-go keeps K3 separate",
         "physical electron species bridge" in native_bridge_no_go
@@ -391,6 +407,9 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     latest_pr_markers = [
+        "`#5018` domain-wall edge content vs SM chiral fermions map | `CLEAN` / `SUCCESS`",
+        "`#5017` domain-wall edge anomaly inflow via spectral flow | `CLEAN` / `SUCCESS`",
+        "`#5014` record-formation front/domain-wall chirality | `CLEAN` / `SUCCESS`",
         "`#5013` theta native positive-class adjudication | `CLEAN` / `SUCCESS`",
         "`#5012` chirality domain-wall free-field note | `CLEAN` / `SUCCESS`",
         "`#5011` eta twisted walk family runner | `CLEAN` / `SUCCESS`",
@@ -411,6 +430,7 @@ def main() -> None:
         "No derivation or ratification of Z1/Z2/Z3 native bridge clauses.",
         "No derivation or ratification of the Koide branch mass-map.",
         "No derivation or ratification of the absolute charged-lepton scale.",
+        "No spending of PR `#5017` or PR `#5018` as K3 species-bridge closure.",
         "No derivation of `a_l^2`, `S_l`, `C_A3`, `m_e`, `alpha(0)`, or hydrogen",
         "No above-C3 taste, Dirac, chirality, CKM/PMNS, or carrier-selection closure.",
         "No use of observed lepton masses, observed `m_W`, fitted `a_l`, fitted",

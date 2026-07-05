@@ -26,6 +26,7 @@ PR4991_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_TIER_A_OWNER_RETIREMENT_PR
 SOURCE_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_SOURCE_PROBE_INTERFACE_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 A3_DECISION = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_LEPTON_256_A3_PRECISION_PLACEMENT_RATIFICATION_DECISION_PACKET_2026-07-04.md"
 SPECIES_NO_GO = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md"
+CHIRALITY_IMPACT = ROOT / "docs" / "ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md"
 SPECIES_MINIMUM = ROOT / "docs" / "SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md"
 SPECIES_RATIFICATION = ROOT / "docs" / "SPECIES_BRIDGE_RESIDUAL_IS_RATIFICATION_CLASS_GRADE_SCOPED_BOUNDED_NOTE_2026-07-02.md"
 SPECIES_REALIZED = ROOT / "docs" / "ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md"
@@ -169,6 +170,7 @@ def main() -> None:
         SOURCE_DECISION,
         A3_DECISION,
         SPECIES_NO_GO,
+        CHIRALITY_IMPACT,
         SPECIES_MINIMUM,
         SPECIES_RATIFICATION,
         SPECIES_REALIZED,
@@ -209,7 +211,11 @@ def main() -> None:
         "ALPHA0_RETAINED",
         "STATIC_SOURCE_RYDBERG_RETAINED",
         "ZERO_IMPORT_HYDROGEN_PHYSICAL_ELECTRON_SPECIES_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md",
+        "ZERO_IMPORT_HYDROGEN_CHIRALITY_DOMAIN_WALL_PR5017_5018_IMPACT_DISCRIMINATOR_2026-07-05.md",
         "species bridge target remains needed",
+        "`#5018` domain-wall edge content vs SM chiral fermions map | `SUCCESS`",
+        "`#5017` domain-wall edge anomaly inflow via spectral flow | `SUCCESS`",
+        "`#5014` record-formation front/domain-wall chirality | `SUCCESS`",
         "`#5012` chirality domain-wall free-field note | `SUCCESS`",
         "`#4929` species-bridge partial-retirement | `SUCCESS`",
         "`#4897` species universal-floor reclassification | `SUCCESS`",
@@ -296,6 +302,7 @@ def main() -> None:
     source_decision = read(SOURCE_DECISION)
     a3_decision = read(A3_DECISION)
     species_no_go = read(SPECIES_NO_GO)
+    chirality_impact = read(CHIRALITY_IMPACT)
     species_minimum = canon(read(SPECIES_MINIMUM))
     species_ratification = canon(read(SPECIES_RATIFICATION))
     species_realized = canon(read(SPECIES_REALIZED)).lower()
@@ -322,9 +329,18 @@ def main() -> None:
     audit.check("A3 decision remains precision placement only", "does not ratify A3" in a3_decision and "does not derive" in a3_decision and "`C_A3`" in a3_decision)
     audit.check("species decision references species no-go", SPECIES_NO_GO.name in note and "species bridge target remains needed" in note)
     audit.check(
+        "species decision references chirality impact note",
+        CHIRALITY_IMPACT.name in note and "#5018" in note and "#5017" in note,
+    )
+    audit.check(
         "species no-go keeps K3 open",
         "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED" in species_no_go
         and "current retained, primitive, and open-PR surfaces do not supply" in species_no_go,
+    )
+    audit.check(
+        "chirality impact keeps above-C3 content separate",
+        "above-C3 chirality/domain-wall content" in chirality_impact
+        and "No derivation or ratification of `PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED`." in chirality_impact,
     )
 
     source_requirements = [
@@ -381,6 +397,9 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     latest_pr_markers = [
+        "`#5018` domain-wall edge content vs SM chiral fermions map | `SUCCESS`",
+        "`#5017` domain-wall edge anomaly inflow via spectral flow | `SUCCESS`",
+        "`#5014` record-formation front/domain-wall chirality | `SUCCESS`",
         "`#5012` chirality domain-wall free-field note | `SUCCESS`",
         "`#5011` eta twisted walk family runner | `SUCCESS`",
         "`#5010` YT P1 I_s re-audit packet bridge repair | `SUCCESS`",
@@ -397,6 +416,7 @@ def main() -> None:
         "No current-main removal of `species_bridge` from the Tier-A registry.",
         "No derivation of K1 occupancy/counting or K2 R-eta/phase readout.",
         "No derivation or ratification of Z1/Z2/Z3 native bridge clauses.",
+        "No spending of PR `#5017` or PR `#5018` as K3 species-bridge closure.",
         "No derivation of `a_l^2`, `S_l`, `C_A3`, `m_e`, `alpha(0)`, or hydrogen",
         "No above-C3 taste, Dirac, chirality, CKM/PMNS, or carrier-selection closure.",
         "No use of observed lepton masses, observed `m_W`, fitted `a_l`, fitted",

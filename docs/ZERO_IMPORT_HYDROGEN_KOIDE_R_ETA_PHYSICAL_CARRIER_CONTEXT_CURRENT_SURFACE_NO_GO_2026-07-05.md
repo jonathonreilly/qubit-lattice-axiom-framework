@@ -70,6 +70,8 @@ AUDIT_ACCEPTANCE
 | `FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md` | collapses readout/carrier/basepoint into one gate | retained closure of that gate |
 | `FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md` | blocks bare-character/equivariance shortcuts | physical carrier and basepoint theorem |
 | `KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md` | exact supplied-carrier standard-form support | physical carrier/scoring selection |
+| open `#5030` multisite Pauli finite-carrier provenance | proposes replacing a self-stipulated finite Pauli carrier with retained Cl(3) per-site tensor support | physical charged-lepton carrier realization theorem |
+| `ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md` | records #5030 as finite algebraic carrier-provenance context | `PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2, mass, and hydrogen |
 | `KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md` | carrier-locus import decomposition | physical matter operator/locus realization |
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | spinor-module escape no-go and KS route boundary | retained physical-state-law bridge |
 | merged `#5023` Koide W4 audit-readiness repairs | W4 dependency hygiene | physical carrier-context theorem |
@@ -90,6 +92,7 @@ inputs.
 
 | PR | queue signal | carrier-context effect |
 |---|---:|---|
+| `#5030` multisite Pauli finite-carrier provenance | open, audit pipeline success at refresh | finite algebraic carrier support only; no physical carrier-context theorem |
 | `#5024` Koide W4 gate-note premise minimization + substep1-bridge rebase | merged, audit success | gate-readiness progress only; no physical carrier-context theorem |
 | `#5023` Koide W4 audit-readiness repairs | merged, audit success | dependency hygiene only; no physical carrier-context theorem |
 | `#5021` primitive-retirement review: meta gate map, no retirements | open draft, audit success | primitive-boundary context only; no registry edit |
@@ -103,6 +106,7 @@ inputs.
 | physical carrier context was an unnamed shared input inside R-eta and h-class | it is a local target/decision/no-go lane |
 | W2 registrability could be overread as physical carrier realization | W2 is recorded as supplied-context algebra only |
 | reduced-carrier/tracial support could be overread as physical identification | support is separated from carrier realization |
+| #5030 could be overread as physical carrier closure | finite carrier provenance is recorded as algebraic support only |
 | #5023/#5024 could be overread as carrier closure | they are W4 / gate-readiness repairs only |
 
 ## No-Go Discipline Gate
@@ -124,6 +128,7 @@ PHYSICAL_CARRIER_CONTEXT_RETAINED.
 | reduced-carrier route | Treat reduced determinant algebra as physical carrier/readout identification. | RULED OUT BY PRIOR. The reduced-carrier obstruction keeps that bridge open. |
 | gate-collapse route | Treat the single carrier/readout/basepoint gate as retained. | PARTIAL ONLY. The gate is localized, not closed. |
 | tracial standard-form route | Treat the supplied tracial carrier as physical selection. | PARTIAL ONLY. It remains supplied-carrier finite algebra. |
+| #5030 finite-carrier route | Treat retained-supplied multisite Pauli carrier provenance as physical carrier realization. | PARTIAL ONLY. It improves finite algebraic provenance while preserving the physical-carrier carve-out. |
 | carrier-locus / chirality route | Treat carrier-locus decomposition or chirality boundary as the physical carrier theorem. | PARTIAL ONLY. The physical matter-state-law and locus realization remain open. |
 | W4 PR route | Treat merged #5023 / merged #5024 as carrier-context closure. | ATTEMPTED. They are audit-readiness/gate-readiness repairs, not the retained realization theorem. |
 | primitive shortcut | Treat approved primitives as supplying carrier context. | ATTEMPTED. Registered primitives supply no carrier selector or physical readout context. |
@@ -170,6 +175,7 @@ primitive shortcut, or comparator input is hidden as background.
 | gate-collapse map | readout/carrier/basepoint gate | retained closure of that gate | yes |
 | bare-character carrier note | bare-character/equivariance shortcuts | physical carrier/basepoint still open | yes |
 | tracial standard-form note | supplied-carrier algebra | physical carrier/scoring selection | yes |
+| #5030 impact discriminator | finite multisite Pauli carrier provenance | physical carrier realization still open | yes |
 | carrier-locus decomposition | matter operator/locus residuals | physical carrier realization | yes |
 | chirality-gate sharpening | spinor-module escape and KS route boundary | retained physical-state-law bridge | yes |
 | #5023/#5024 | W4/gate dependency readiness | no physical carrier theorem | yes |
@@ -210,9 +216,9 @@ These are import-retirement paths, not new-axiom requirements.
 
 A hostile reviewer can argue that current support nearly closes the context:
 W2 supplies the registrable finite context, the reduced-carrier and gate-collapse
-notes sharpen the missing bridge, the tracial standard form supplies a natural
-finite carrier, and #5023/#5024 improve gate readiness. The boundary is that
-all of this remains support unless a retained theorem proves the physical
+notes sharpen the missing bridge, the tracial standard form and #5030 supply
+finite carrier support, and #5023/#5024 improve gate readiness. The boundary is
+that all of this remains support unless a retained theorem proves the physical
 charged-lepton carrier realizes the supplied context.
 
 ### N8 - Cross-Cycle Echo
@@ -232,6 +238,7 @@ current-surface non-supply claim passes.
 - No derivation or ratification of h-class, h-unit, R-eta, two-ninths/radian,
   K2, electron mass, alpha, or hydrogen.
 - No claim that #5023 or #5024 supplies the physical carrier-context theorem.
+  The same support-only boundary applies to #5030.
 - No use of observed or fitted lepton/hydrogen data as proof input.
 - No new axiom, primitive, Tier-A admission, empirical import, or audit status
   change.

@@ -422,6 +422,15 @@ retained, primitive, merged-PR, and open-PR surfaces do not supply it; it is
 carrier context only, not h-class, h-unit, R-eta, electron readout, physical
 electron mass, alpha input, or hydrogen.
 
+The multisite Pauli PR #5030 carrier-provenance impact discriminator
+(`ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md`)
+records open `#5030` as finite algebraic carrier-provenance support for the
+K2 physical-carrier discussion. Its support predicate is only
+`PR5030_FINITE_MULTISITE_PAULI_CARRIER_PROVENANCE_CONTEXT`; it does not supply
+`CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`,
+`PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2 exactness, physical
+electron mass, alpha input, or hydrogen.
+
 The R-eta hw1 physical generation-locus target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md`),
 ratification decision packet
@@ -670,13 +679,15 @@ needed.
 
 PRs were checked on 2026-07-04 and refreshed on 2026-07-05 after `#5022`
 merged with audit success, refreshed again for merged `#5027` and open
-`#5028`, and refreshed again after `#5029` merged. The relevant Koide stack
-does not close this firewall on current main:
+`#5028`, refreshed again after `#5029` merged, and refreshed again for open
+`#5030`. The relevant Koide stack does not close this firewall on current
+main:
 
 | PR | effect on K1-K3 |
 |---|---|
 | `#5029` | Open Koide substep4 labeling no-go runner strengthening. It improves audit-surface verification mechanics; it supplies no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5028` | Merged W4c labeling/species repairs. It improves labeling/species dependency-surface readiness and species-note context handling, but supplies no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
+| `#5030` | Open multisite Pauli finite-carrier provenance repair. It can support finite algebraic carrier provenance only; it supplies no physical carrier-context theorem, h-class, R-eta, K2 exactness, electron readout, physical electron mass, or hydrogen. |
 | `#5027` | Merged Koide custody AC gate-edge repair, audit success at refresh. It repairs a custody/audit-graph edge but supplies no physical action selector, physical matter-state law bridge, K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5026` | Merged Koide custody L4 retained-successor re-point and Plancherel edge demotion, audit success at merge. It repairs a charged-lepton custody citation edge but supplies no physical matter-state law bridge, no KS spin-lift physical action law, no KS-route spinful kernel-object theorem, no K1/K2/K3 closure, electron readout, physical electron mass, or hydrogen. |
 | `#5022` | Merged delta-eta supplied-premise audit repair. It improves K2 conditionality bookkeeping but supplies no retained R-eta derivation, electron readout, physical electron mass, or hydrogen. |

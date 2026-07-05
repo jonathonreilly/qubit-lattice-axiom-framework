@@ -196,6 +196,14 @@ The latest charged-lepton surfaces sharpen `m_e` into two main sub-gates:
   not supply `PHYSICAL_CARRIER_CONTEXT_RETAINED`. This lane is carrier context
   only; it does not supply h-class, h-unit, R-eta, K2, `m_e`, `alpha(0)`, or
   hydrogen.
+  The multisite Pauli PR #5030 carrier-provenance impact discriminator
+  `ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md`
+  records open `#5030` as finite algebraic carrier-provenance support for the
+  physical-carrier discussion. It can support only
+  `PR5030_FINITE_MULTISITE_PAULI_CARRIER_PROVENANCE_CONTEXT`; it does not
+  supply `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`,
+  `PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2, `m_e`, `alpha(0)`,
+  or hydrogen.
   The hw1 physical generation-locus target discriminator
   `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md`
   packages one immediate subinput beneath the charged-lepton carrier theorem:
@@ -1745,6 +1753,7 @@ Koide electron readout, `m_e`, `alpha(0)`, or hydrogen.
                         | `#5027` Koide custody AC gate-edge repair | Merged with audit success at refresh. It is a custody/audit-graph direct-dependency repair for the `AC_phi_lambda` row; it does not derive a physical action selector, physical matter-state law bridge, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
 | `#5028` Koide W4c labeling/species repairs | Merged after open lane-relevant refresh. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_W4C_PR5028_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as labeling/species dependency-surface readiness; it does not derive K1/K2/K3, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
 | `#5029` Koide substep4 labeling no-go runner strengthening | Merged with audit success after refresh. It strengthens mechanical verification for a Koide labeling no-go runner; it does not derive K1/K2/K3, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
+| `#5030` multisite Pauli finite-carrier provenance | Open and audit-successful at refresh. The dedicated impact discriminator `ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md` records this as finite algebraic carrier support only; it does not derive `PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2, Koide electron readout, `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure target | Open target. The target discriminator `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_TARGET_DISCRIMINATOR_2026-07-05.md` packages `K1_COUNTING_MEASURE_RETAINED`; current source notes reduce K1 to one binary, but this target is not supplied by primitives, #4991, #5019, or K2 work and does not derive `m_e`, `alpha(0)`, or hydrogen. |
                         | K1 counting-measure current-surface no-go | Open blocker. The current-surface no-go `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `K1_COUNTING_MEASURE_RETAINED`. |
                         | K1 counting-measure ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_K1_COUNTING_MEASURE_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the ten-input owner/audit contract for `K1_COUNTING_MEASURE_RETAINED`; it is not K2/K3/K4, `m_e`, `alpha(0)`, or hydrogen. |
@@ -1768,6 +1777,7 @@ Koide electron readout, `m_e`, `alpha(0)`, or hydrogen.
                         | R-eta physical carrier-context target | Open shared subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` packages `PHYSICAL_CARRIER_CONTEXT_RETAINED`; it can feed R-eta and h-class as carrier context only, not h-unit, fixed-point readout, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta physical carrier-context ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the thirteen-input owner/audit contract for `PHYSICAL_CARRIER_CONTEXT_RETAINED`; it does not derive the charged-lepton carrier theorem itself. |
                         | R-eta physical carrier-context current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `PHYSICAL_CARRIER_CONTEXT_RETAINED`. |
+                        | R-eta physical carrier #5030 provenance impact | Open PR support boundary. `ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md` records #5030 as finite multisite Pauli carrier provenance only, not a charged-lepton carrier realization theorem, h-class, R-eta, K2, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta hw1 physical generation-locus target | Open subtarget. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` packages `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`; it can feed a future charged-lepton carrier realization theorem as locus support only, not carrier context, fixed-point readout, full R-eta, `m_e`, `alpha(0)`, or hydrogen. |
                         | R-eta hw1 physical generation-locus ratification decision packet | Open decision packet. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` packages the fourteen-input owner/audit contract for `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`; it does not derive the physical matter-state-law theorem itself. |
                         | R-eta hw1 physical generation-locus current-surface no-go | Open blocker. `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md` records that current retained, primitive, merged-PR, and open-PR surfaces do not supply `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`. |

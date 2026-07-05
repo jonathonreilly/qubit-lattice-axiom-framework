@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 192 |
-| **retained_bounded** | 870 |
+| **retained_bounded** | 871 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
 | unaudited | 1936 |
-| audit_in_progress | 1 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 12 |
-| `audited_clean` | 1246 |
+| `audit_in_progress` | 11 |
+| `audited_clean` | 1247 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
@@ -143,7 +142,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1169,6 +1167,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16391,6 +16390,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The abstract algebra closes once the circulant form is admitted: C and C^2 have zero diagonal, so diag(H) = (a,a,a), Tr(H)=3a, and the retained cited parent supplies the eigenvalue formula. The physical hw=1 carrier and observable identification is explicitly outside this claim scope.
 - **rationale:** The runner performs exact symbolic matrix algebra and reports 19 passing class-A checks with no external comparator or fitted input. The result is a true algebraic corollary of the single retained circulant/eigenvalue parent plus standard finite-dimensional matrix facts. Under the decoration policy, zero-D algebra that reduces to one upstream parent claim is audited_decoration rather than audited_clean. The runner's reverse-direction uniqueness evidence is only a counterexample, so a second audit should keep P1 tied to admitted standard commutant theory rather than to that runner check alone.
 - **decoration parent:** `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`
+- **auditor confidence:** high
+
+### `staggered_dirac_substep4_amin_joint_c3_automorphism_selector_invariance_bridge_narrow_theorem_note_2026-07-05`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md`](../../docs/STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Presentation-level A_min joint-C3 automorphism bridge: on the finite hw=1 corner triplet with the retained joint translation eigenvalue table, non-admitted A_min-definable selectors are invariant under joint cyclic axis/corner relabeling and cannot choose a labeled bijection.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260705-amin-joint-c3-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** By (T1) the supplied structure is sigma-symmetric and by (T2) every derived readout is sigma-covariant, so any A_min-derivable non-admitted selector value on the corner triplet is constant on the transitive sigma-orbit and cannot fix a bijection to a labeled 3-set.  _(class `A`)_
+- **chain closes:** True — The minimal axiom memo supplies proper cubic rotations, covariance, and the no-unfixed-choice qualification; the retained upstream notes supply the hw=1 triplet and the explicit tau table. The finite cyclic action is transitive and intertwines the supplied generators, so the selector-invariance conclusion follows within the stated bounded presentation scope.
+- **rationale:** The load-bearing step is an exact automorphism/finite-orbit argument over accepted axiom text and retained finite carrier inputs, not a definition, numerical fit, or physical-observable identification. The runner recomputes the proper rotation, corner action, intertwining identities, word-sweep covariance, selector consequence, and a C3-breaking negative control, with PASS=28 FAIL=0 under the stated runner SHA. Residual risk is only scope risk: this clean verdict covers the narrow presentation-level selector-invariance bridge, not downstream physical species labeling or any admitted C3-breaking premise.
 - **auditor confidence:** high
 
 ### `staggered_fermion_card_2026-04-10`

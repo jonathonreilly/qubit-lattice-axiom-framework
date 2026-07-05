@@ -144,6 +144,12 @@ The primitive registry was checked. Registered primitives are approved premise
 nodes, not walls, but no primitive supplies `R_ETA_H_CLASS_RETAINED`, h-unit,
 full R-eta, `delta = 2/9`, `m_e`, `alpha(0)`, or hydrogen.
 
+The companion current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+records that current retained, primitive, merged-PR, and open-PR surfaces do
+not supply `R_ETA_H_CLASS_RETAINED`. This packet is therefore a decision
+contract, not a current retained consequence.
+
 ## Current PR Alignment
 
 PRs were refreshed on 2026-07-05 UTC before this packet was written. Opened

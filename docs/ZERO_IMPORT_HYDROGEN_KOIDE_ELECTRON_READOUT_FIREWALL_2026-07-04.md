@@ -327,6 +327,13 @@ heat-trace support separate from physical carrier realization and the single
 fixed-point readout theorem; it does not supply h-unit, full R-eta retirement,
 K2 exactness, physical electron mass, alpha input, or hydrogen.
 
+The R-eta h-class fixed-locus current-surface no-go
+(`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md`)
+records that current retained, primitive, merged-PR, and open-PR surfaces do
+not supply `R_ETA_H_CLASS_RETAINED`; the h-class lane still needs physical
+carrier context, the single fixed-point readout theorem, and owner/audit
+acceptance.
+
 The two-ninths/radian-readout target discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_TWO_NINTHS_RADIAN_READOUT_TARGET_DISCRIMINATOR_2026-07-05.md`)
 packages the K2 sub-handoff `KOIDE_TWO_NINTHS_RADIAN_READOUT_RETAINED`.
@@ -468,6 +475,7 @@ No hidden admission is left buried as background.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; identity-radian unit only, not electron readout | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`; not electron readout | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `R_ETA_H_CLASS_RETAINED`; fixed-locus class membership only, not electron readout | yes |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `R_ETA_H_CLASS_RETAINED`; not electron readout | yes |
 | `#5022` delta-eta R-eta supplied-premise audit repair | conditional R-eta bookkeeping, not retained derivation or electron readout | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_TARGET_DISCRIMINATOR_2026-07-05.md` | successor target for `K2_R_ETA_EXACTNESS_RETAINED` | yes |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_EXACTNESS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `K2_R_ETA_EXACTNESS_RETAINED` | yes |

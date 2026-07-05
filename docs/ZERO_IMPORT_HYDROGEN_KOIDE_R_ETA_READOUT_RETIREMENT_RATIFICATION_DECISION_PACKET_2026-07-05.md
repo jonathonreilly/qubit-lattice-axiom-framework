@@ -122,6 +122,7 @@ STATIC_SOURCE_RYDBERG_RETAINED
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_READOUT_RETIREMENT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `R_ETA_READOUT_IDENTIFICATION_RETAINED` | no retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | packages `R_ETA_H_CLASS_RETAINED` | h-class input only |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the h-class owner/audit decision object | h-class only; no h-unit or full R-eta |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_CLASS_FIXED_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `R_ETA_H_CLASS_RETAINED` | no retained h-class consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_TARGET_DISCRIMINATOR_2026-07-05.md` | packages `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` | h-unit input only |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the h-unit owner/audit decision object | h-unit only; no h-class or full R-eta |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_H_UNIT_IDENTITY_RADIAN_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` | no retained h-unit consequence |
@@ -243,7 +244,7 @@ Legitimate partial-closure paths remain:
 | path | what it could close |
 |---|---|
 | retained physical carrier/context realization | `PHYSICAL_CARRIER_CONTEXT_RETAINED` |
-| retained h-class target | `R_ETA_H_CLASS_RETAINED` |
+| retained h-class target after the current-surface no-go is resolved | `R_ETA_H_CLASS_RETAINED` |
 | retained h-unit target after the current-surface no-go is resolved | `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED` |
 | owner/audit acceptance of this packet | `R_ETA_READOUT_IDENTIFICATION_RETAINED` after all inputs are present |
 | two-ninths/radian packet acceptance | spend this handoff into the K2 subgate |

@@ -166,12 +166,66 @@ def check_theta_fit_discriminator(masses: dict[int, float], pair: tuple[int, int
 
 def check_theta_pi_branch(masses: dict[int, float]) -> tuple[bool, str]:
     odd_sectors = sorted(q for q, value in masses.items() if q % 2 != 0 and value > 0.0)
+    even_sectors = sorted(q for q, value in masses.items() if q % 2 == 0 and value > 0.0)
     if not odd_sectors:
         return False, "no populated odd sector found"
+    if not even_sectors:
+        return False, "no populated even sector found"
     q = odd_sectors[0]
+    q_even = even_sectors[0]
     signed_value = ((-1) ** q) * masses[q]
-    ok = signed_value < 0.0 < masses[q]
-    return ok, f"odd_sector={q} native_mass={masses[q]:.6e} pi_weighted_value={signed_value:.6e}"
+    relative_sign = ((-1) ** (q - q_even))
+    ok = relative_sign < 0 and signed_value < 0.0 < masses[q]
+    return (
+        ok,
+        f"mixed_parity=True even_sector={q_even} odd_sector={q} "
+        f"native_mass={masses[q]:.6e} pi_weighted_value={signed_value:.6e}",
+    )
+
+
+def check_sparse_support_aliases() -> tuple[bool, str]:
+    sparse_even = {0: 0.2, 2: 0.3, 4: 0.5}
+    sparse_odd = {1: 0.4, 3: 0.6}
+    mixed_parity = {0: 0.4, 1: 0.6}
+    singleton = {5: 1.0}
+
+    def positive_rep_exists(theta: float, masses: dict[int, float]) -> bool:
+        for q, value in masses.items():
+            if value <= 0.0:
+                continue
+            m_tilde_q = cmath.exp(-1j * theta * q) * value
+            if abs(m_tilde_q.imag) > 1.0e-10 or m_tilde_q.real <= 0.0:
+                return False
+        return True
+
+    def relative_alias_exists(theta: float, masses: dict[int, float]) -> bool:
+        populated = sorted(q for q, value in masses.items() if value > 0.0)
+        if len(populated) <= 1:
+            return True
+        q0 = populated[0]
+        return all(abs(cmath.exp(1j * theta * (q - q0)) - 1.0) <= 1.0e-10 for q in populated)
+
+    grid = [2.0 * math.pi * k / 360.0 for k in range(360)]
+    relative_even = [round(theta, 12) for theta in grid if relative_alias_exists(theta, sparse_even)]
+    relative_odd = [round(theta, 12) for theta in grid if relative_alias_exists(theta, sparse_odd)]
+    relative_mixed = [round(theta, 12) for theta in grid if relative_alias_exists(theta, mixed_parity)]
+    exact_odd = [round(theta, 12) for theta in grid if positive_rep_exists(theta, sparse_odd)]
+    singleton_all_alias = all(relative_alias_exists(theta, singleton) for theta in grid)
+    expected_single_parity = [0.0, round(math.pi, 12)]
+    expected_mixed = [0.0]
+    ok = (
+        relative_even == expected_single_parity
+        and relative_odd == expected_single_parity
+        and relative_mixed == expected_mixed
+        and exact_odd == expected_mixed
+        and singleton_all_alias
+    )
+    detail = (
+        f"relative_even={relative_even} relative_odd={relative_odd} "
+        f"relative_mixed={relative_mixed} exact_odd={exact_odd} "
+        f"singleton_all_alias={singleton_all_alias}"
+    )
+    return ok, detail
 
 
 def circle_block_transitions(N: int = 24, beta: float = 5.0, block_ticks: int = 2) -> list[dict[tuple[int, int], float]]:
@@ -384,6 +438,9 @@ def main() -> int:
 
     ok_d, detail_d = check_theta_pi_branch(masses)
     results.append(("D", ok_d, detail_d))
+
+    ok_h, detail_h = check_sparse_support_aliases()
+    results.append(("H", ok_h, detail_h))
 
     ok_e, detail_e = check_inheritance()
     results.append(("E", ok_e, detail_e))

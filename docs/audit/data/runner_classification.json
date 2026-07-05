@@ -36552,6 +36552,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_theta_emergent_q_cp_rg_stability_2026_06_13.py"
     },
+    "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 18,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_theta_gauge_native_positive_class_emergent_sector_weighting_2026_07_04.py"
+    },
     "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11": {
       "assert_count": 2,
       "counts": {
@@ -77157,6 +77169,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_theta_gauge_native_positive_class_emergent_sector_weighting_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 18,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_theta_gauge_substrate_winding_vacuity_2026_06_11.py": {
       "assert_count": 2,
       "claims": [
@@ -90765,12 +90792,12 @@
     "dominant_class_distribution": {
       "A": 490,
       "B": 634,
-      "C": 1273,
+      "C": 1274,
       "D": 451,
       "none": 457
     },
-    "runners_classified": 3305,
-    "runners_with_C": 1732,
+    "runners_classified": 3306,
+    "runners_with_C": 1733,
     "runners_with_D": 1062
   }
 }

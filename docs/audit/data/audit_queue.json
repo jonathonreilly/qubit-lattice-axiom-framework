@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 421,
     "high": 288,
-    "leaf": 755,
+    "leaf": 756,
     "medium": 516
   },
   "cycle_break_target_count": 14,
@@ -38493,6 +38493,36 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07",
+        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
+        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+        "rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29",
+        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/THETA_GAUGE_NATIVE_POSITIVE_CLASS_EMERGENT_SECTOR_WEIGHTING_NARROW_THEOREM_NOTE_2026-07-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_theta_gauge_native_positive_class_emergent_sector_weighting_2026_07_04.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -58229,6 +58259,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 174,
-  "total_pending": 1980
+  "ready_count": 175,
+  "total_pending": 1981
 }

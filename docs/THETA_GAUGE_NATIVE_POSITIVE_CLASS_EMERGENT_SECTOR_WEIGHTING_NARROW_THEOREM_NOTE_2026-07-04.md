@@ -13,9 +13,9 @@ This source artifact states the gauge-side theta question inside the native
 canonical class, rather than on an independently fundamental four-dimensional
 lattice. The framework is natively 3+1: spatial `Z^3` with `SU(3)` links, the
 canonical imported Wilson per-plaquette class, and emergent record-tick
-evolution. There is no fundamental fourth lattice direction. The "4D surface"
-of prior gauge-side notes, including finite `T^4` models and flux cohomology
-language, is a model of the emergent OS0 surface. Its entire content is the
+evolution. There is no fundamental fourth lattice direction. When prior
+gauge-side notes use finite `T^4` models or flux-cohomology language as
+emergent OS0 surface carrier models, the content this note consumes is the
 family of native transfer moments
 
 ```text
@@ -61,7 +61,7 @@ superselection label for a theta angle to decorate. This is elementary and is
 checked in miniature by the runner on `SU(2)^3`, where explicit paths
 `g(t) = exp(t log g)` witness the same finite-product connectivity pattern.
 
-## L1 Native Positive Conjugation-Paired Class
+## L1 Native Positive Class
 
 On any finite record window in the canonical class, the native history weight
 is
@@ -96,10 +96,10 @@ dmu(h) >= 0,
 
 and its record-tick slicing is by a positive kernel.
 
-It is also conjugation-paired in this class: the real Wilson trace factor gives
-`w(conj U) = w(U)`, the transfer kernel inherits the same real class-function
-symmetry, and the supplied determinant positivity surface contributes a real
-non-negative factor.
+The Wilson gauge factor is conjugation-symmetric as a real class function. This
+bounded theorem does not import or require a separate conjugation-pairing
+theorem for the supplied determinant factor; the load-bearing property below is
+only the real non-negativity of the native pushforward masses.
 
 ## L2 Inheritance To Any Emergent Sector Functional
 
@@ -132,8 +132,8 @@ masses from the canonical positive class.
 ## Main Theorem
 
 **Theorem T.** In the canonical imported Wilson + staggered-Wilson class, for
-every emergent integer-valued sector functional `Q`, the gauge-side theta dial
-is vacuous or zero.
+every emergent integer-valued sector functional `Q`, every positive relative
+sector weighting by a gauge-side theta dial is vacuous or zero.
 
 **Proof.** Let `m(q)` be the native sector masses induced by `Q`. By L1 and L2,
 all populated `m(q)` are real and non-negative.
@@ -144,19 +144,22 @@ Suppose an emergent effective description weights the sectors as
 w(q) = e^{i theta q} m_tilde(q),
 ```
 
-with `m_tilde(q) > 0` on populated sectors, and suppose it reproduces the native
-sector masses:
+with `m_tilde(q) > 0` on populated sectors. Since a common populated-sector
+phase is a readout convention, the nonvacuous content is the relative
+sector-weight ratio. Fix any populated reference sector `q0`. Reproducing the
+native record ratios requires
 
 ```text
-e^{i theta q} m_tilde(q) = m(q).
+[e^{i theta q} m_tilde(q)] / [e^{i theta q0} m_tilde(q0)]
+  = m(q) / m(q0)
 ```
 
-If at least two adjacent sectors are populated, say `m(q) > 0` and
-`m(q+1) > 0`, then
+for every populated `q`. If at least two adjacent sectors are populated, say
+`m(q) > 0` and `m(q+1) > 0`, then
 
 ```text
 e^{i theta}
-  = [m(q+1) / m_tilde(q+1)] / [m(q) / m_tilde(q)].
+  = [m(q+1) / m(q)] [m_tilde(q) / m_tilde(q+1)].
 ```
 
 The right-hand side is a ratio of positive real numbers. Since
@@ -165,17 +168,32 @@ exactly the nonvacuous weighting clause: adjacent populated sectors make the
 phase dial observable at the sector-weight level, and positivity collapses it
 to the zero branch.
 
-The `theta = pi` branch would weight sectors by `(-1)^q`. Equating that to the
-non-negative native masses while keeping `m_tilde(q) > 0` requires negative
-sector masses on odd populated sectors. L1 and L2 exclude that inside the
-positive class.
+More generally, let `S = {q : m(q) > 0}`. If `S` has at least two elements, set
 
-If only one sector is populated, every value of `theta` is readout-equivalent
-after absorbing the single phase into the one populated sector's convention.
-The dial is then vacuous, not physical theta-value content.
+```text
+Delta(S) = gcd{|q - q0| : q in S}
+```
+
+for any fixed `q0 in S`; the value is independent of the choice of `q0`. Phases
+with `theta Delta(S) = 0 (mod 2 pi)` are constant across the populated support
+and are support-vacuous aliases. If `Delta(S) = 1`, the only positive relative
+representation is `theta = 0 (mod 2 pi)`. Adjacent populated sectors are the
+common sufficient case because they force `Delta(S) = 1`.
+
+The `theta = pi` branch is therefore excluded as nonvacuous positive-class
+content exactly when the populated support contains both parities. Then some
+relative sector ratio changes sign, contradicting L1 and L2 while
+`m_tilde(q) > 0`. If the populated support lies in one parity class, `theta =
+pi` is a common populated-sector phase and is a vacuous alias rather than new
+theta-value content.
+
+If zero or one sector is populated, every value of `theta` is readout-equivalent
+after absorbing the single populated-sector phase into convention. The dial is
+then vacuous, not physical theta-value content.
 
 Therefore, on the canonical class, for every emergent integer-sector
-functional, the gauge-side theta dial is vacuous or zero. ∎
+functional, every positive relative gauge-side theta weighting is vacuous or
+zero. ∎
 
 ## Readout Guard
 
@@ -186,14 +204,14 @@ would change record expectations contradicts L1 and L2, since all record
 expectations are moments of the fixed native non-negative measure, and that
 measure carries no theta parameter.
 
-## Composition With The Sector-Lattice Result
+## Relation To Sector-Lattice Context
 
 `THETA_GAUGE_Z2_CHARACTER_COLLAPSE_ODD_SUPPORT_AND_POSITIVE_CLASS_ZERO_BRANCH_SELECTION_BOUNDED_THEOREM_NOTE_2026-07-03.md`
-(context handle, not a citation-graph dependency) reaches `theta in {0, pi}`
-and then `0` on its sector lattice conditional on membership in a positive
-conjugation-paired weight class, an adjudication its own boundary names as
-open. L1 and L2 here supply exactly that adjudication for the canonical class,
-natively.
+(context handle, not a citation-graph dependency) is related sector-lattice
+work, but this note does not import that artifact and does not certify all of
+its hypotheses. The source result here is narrower: native positive-class
+pushforwards make relative theta sector weighting vacuous or zero on the
+populated support.
 
 The Q-STRUCTURE questions remain open:
 `THETA_GAUGE_SUBSTRATE_NO_WINDING_CARRIER_EMERGENT_Q_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`
@@ -207,8 +225,9 @@ The Q-STRUCTURE questions remain open:
 existence and integrality of a derived emergent `Q` with nonvacuous weighting,
 the 4D-carrier model, defect or monopole closure,
 `W_anomaly_covariant_assembly`, and `SU(3)` abelianization. They are not
-theta-VALUE content under this theorem: whatever `Q` those lanes derive, its
-sector weighting is already forced vacuous-or-zero here.
+theta-VALUE content under this theorem. If those lanes separately derive a
+nonvacuous emergent `Q` and an applicable positive weighting surface, this note
+can be used only for the positive-class sector-weighting subclaim.
 
 ## What This Note Does Not Claim
 
@@ -220,9 +239,14 @@ sector weighting is already forced vacuous-or-zero here.
 - no mass-side content; the `arg det M` chain is separate source work;
 - scope is the canonical imported Wilson + staggered-Wilson class; other UV
   completions are outside;
+- no derivation that an arbitrary emergent description admits the positive
+  factorization `w(q) = e^{i theta q} m_tilde(q)`; this is the conditional
+  positive-weighting surface of the theorem;
 - no new axiom, primitive, admission, normalization, or measured input;
-- `theta = pi` is excluded only inside the positive class; a future signed
-  native class would need its own analysis.
+- `theta = pi` is excluded as nonvacuous content only when populated sectors of
+  both parities are present; single-parity support makes it a support-vacuous
+  alias;
+- a future signed native class would need its own analysis.
 
 ## Runner Verification
 
@@ -234,11 +258,13 @@ The companion runner verifies:
   representation `m(q) = e^{i theta q} m_tilde(q)` exists exactly at
   `theta = 0` and at no other grid angle — including a hand-inserted
   non-real theta positive control recovered at exactly its inserted value;
-- contradiction of the `theta = pi` branch on odd populated sectors;
+- contradiction of nonvacuous relative `theta = pi` when both parities are
+  populated, plus sparse single-parity controls where `theta = pi` is correctly
+  classified as a support-vacuous alias;
 - positivity under block marginalization and a finite-window weak-limit
   demonstration;
 - a small `1+1` `Z_N` gauge miniature with positive plaquette weights,
-  non-negative transfer entries, conjugation pairing, a positive diagonal
-  determinant stand-in, and non-negative emergent flux-sector masses;
+  non-negative transfer entries, a symmetric positive diagonal determinant
+  stand-in, and non-negative emergent flux-sector masses;
 - text guards for required boundary phrases, forbidden status-changing
   phrases, and markdown-link discipline.

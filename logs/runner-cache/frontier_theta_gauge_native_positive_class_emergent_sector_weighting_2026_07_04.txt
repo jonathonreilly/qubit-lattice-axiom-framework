@@ -1,9 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_theta_gauge_native_positive_class_emergent_sector_weighting_2026_07_04.py
+runner_sha256: 611d94731cad4b09d34b890caa20c8ee9c094aecb5eebec7ca9dbbd190f4906d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 8.12
+status: ok
+----- stdout -----
 A PASS explicit SU(2)^3 paths endpoint/unitarity worst_err=6.281e-16
 B PASS N=24 T=6 sectors=[-3, -2, -1, 0, 1, 2, 3] min_link_weight=6.738e-03 adjacent=(-3, -2) conjugation_pairing=True
 C PASS admitted_thetas_from_positive_masses=[0.0] (360-point grid) fake_recovered_thetas=[0.7] nonreal_fake=True
-D PASS odd_sector=-3 native_mass=2.245830e-12 pi_weighted_value=-2.245830e-12
+D PASS mixed_parity=True even_sector=-2 odd_sector=-3 native_mass=2.245830e-12 pi_weighted_value=-2.245830e-12
+H PASS relative_even=[0.0, 3.14159265359] relative_odd=[0.0, 3.14159265359] relative_mixed=[0.0] exact_odd=[0.0] singleton_all_alias=True
 E PASS coarse_nonnegative=True coarse_equals_fine=True weak_T_windows=[[-1, 0, 1], [-2, -1, 0, 1, 2], [-3, -2, -1, 0, 1, 2, 3]] tv_to_delta0=['1.350e-04', '7.842e-06', '4.049e-07']
 F PASS N=6 links=3 ticks=3 min_plaquette=2.466e-01 min_transfer=1.320e-01 conjugation=True sectors=[-3, -2, -1, 0, 1, 2, 3]
 G PASS missing=[] banned=[] bad_md_targets=[]
-SUMMARY PASS=7 FAIL=0
+SUMMARY PASS=8 FAIL=0
 DONE
+
+----- stderr -----
+

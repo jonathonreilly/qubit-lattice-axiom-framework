@@ -41549,6 +41549,34 @@
       "to": "strong_cp_theta_bar_structured_admission_2026-06-04"
     },
     {
+      "from": "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04",
+      "to": "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07"
+    },
+    {
+      "from": "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04",
+      "to": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+    },
+    {
+      "from": "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04",
+      "to": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
+    },
+    {
+      "from": "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04",
+      "to": "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04",
+      "to": "rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29"
+    },
+    {
+      "from": "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04",
+      "to": "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11",
       "to": "strong_cp_theta_bar_structured_admission_2026-06-04"
     },
@@ -109450,7 +109478,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cd72bfb6b23056fec43b73ad9003be59f57e77fb8672b1b48cf5445095d5c875",
+      "note_hash": "0fb18a0b9d7297f97c1bccc79d6e1efad213305dc8980052e666fc67bd184a83",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -117306,6 +117334,26 @@
       "path": "docs/THETA_EMERGENT_Q_WEIGHTING_REALITY_RG_STABLE_BOUNDED_THEOREM_NOTE_2026-06-13.md",
       "runner_path": "scripts/frontier_theta_emergent_q_cp_rg_stability_2026_06_13.py",
       "title": "Theta Emergent-Q Weighting: Conditional Reality/Conjugation RG-Stability Boundary (Bounded Theorem)"
+    },
+    "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04": {
+      "claim_id": "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07",
+        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
+        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+        "rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29",
+        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "2fd1756c92d1275a8a639d9055bd75a06d4e2761ab83fc5cca9fdd9c04dc67f8",
+      "path": "docs/THETA_GAUGE_NATIVE_POSITIVE_CLASS_EMERGENT_SECTOR_WEIGHTING_NARROW_THEOREM_NOTE_2026-07-04.md",
+      "runner_path": "scripts/frontier_theta_gauge_native_positive_class_emergent_sector_weighting_2026_07_04.py",
+      "title": "Native Positive-Class Adjudication: On The Framework's 3+1 Canonical Class, Any Emergent Integer-Sector Weighting Has Non-Negative Masses, So The Gauge-Side Theta Dial Is Vacuous Or Zero -- Narrow Bounded Theorem"
     },
     "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11": {
       "claim_id": "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11",
@@ -125460,7 +125508,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1555,
+      "bounded_theorem": 1556,
       "decoration": 3,
       "meta": 319,
       "no_go": 316,
@@ -125469,7 +125517,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1960,
+      "bounded_theorem": 1961,
       "decoration": 3,
       "meta": 319,
       "no_go": 420,
@@ -125477,10 +125525,10 @@
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14296,
+    "edge_count": 14303,
     "leaf_count": 1290,
-    "node_count": 3816,
+    "node_count": 3817,
     "root_count": 1103,
-    "runners_with_path": 3439
+    "runners_with_path": 3440
   }
 }

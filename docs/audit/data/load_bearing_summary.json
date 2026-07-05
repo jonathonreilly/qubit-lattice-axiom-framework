@@ -113,6 +113,12 @@
       "transitive_descendants": 293
     },
     {
+      "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+      "criticality": "critical",
+      "load_bearing_score": 36.611,
+      "transitive_descendants": 552
+    },
+    {
       "claim_id": "cl3_color_automorphism_theorem",
       "criticality": "critical",
       "load_bearing_score": 36.497,
@@ -159,12 +165,6 @@
       "criticality": "critical",
       "load_bearing_score": 33.923,
       "transitive_descendants": 970
-    },
-    {
-      "claim_id": "charged_lepton_koide_cone_algebraic_equivalence_note",
-      "criticality": "critical",
-      "load_bearing_score": 33.892,
-      "transitive_descendants": 335
     }
   ]
 }

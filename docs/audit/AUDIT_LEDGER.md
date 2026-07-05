@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 192 |
-| **retained_bounded** | 869 |
+| **retained_bounded** | 870 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1937 |
+| unaudited | 1936 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1245 |
+| `audited_clean` | 1246 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2275 |
+| `unaudited` | 2274 |
 
 | claim_type | count |
 |---|---:|
@@ -116,15 +116,15 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 300 | 39.23 | `unaudited` | unaudited |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 840 | 38.22 | `audited_clean` | **retained_no_go** |
 | 16 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 293 | 37.70 | `unaudited` | unaudited |
-| 17 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 510 | 36.50 | `unaudited` | unaudited |
-| 18 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 821 | 36.18 | `unaudited` | unaudited |
-| 19 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
-| 20 | `cpt_exact_note` | positive_theorem | critical | 705 | 35.96 | `audited_clean` | **retained** |
-| 21 | `three_generation_structure_note` | bounded_theorem | critical | 993 | 35.46 | `audited_clean` | **retained_bounded** |
-| 22 | `kinetic_isotropy_primitive` | meta | critical | 438 | 34.78 | `unaudited` | meta |
-| 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 818 | 34.68 | `unaudited` | unaudited |
-| 24 | `s3_time_bilinear_tensor_primitive_note` | open_gate | critical | 970 | 33.92 | `unaudited` | unaudited |
-| 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 335 | 33.89 | `unaudited` | unaudited |
+| 17 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 552 | 36.61 | `unaudited` | unaudited |
+| 18 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 510 | 36.50 | `unaudited` | unaudited |
+| 19 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 821 | 36.18 | `unaudited` | unaudited |
+| 20 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
+| 21 | `cpt_exact_note` | positive_theorem | critical | 705 | 35.96 | `audited_clean` | **retained** |
+| 22 | `three_generation_structure_note` | bounded_theorem | critical | 993 | 35.46 | `audited_clean` | **retained_bounded** |
+| 23 | `kinetic_isotropy_primitive` | meta | critical | 438 | 34.78 | `unaudited` | meta |
+| 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 818 | 34.68 | `unaudited` | unaudited |
+| 25 | `s3_time_bilinear_tensor_primitive_note` | open_gate | critical | 970 | 33.92 | `unaudited` | unaudited |
 
 
 ## Applied audits
@@ -150,6 +150,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -1645,6 +1646,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On B > 0, a=e1/3, B=sqrt(e1^2-3e2)/3, cos(3 delta)=(e3-a^3+3aB^2)/(2B^3), and Phi=(1/3) arccos(cos(3 delta)); therefore Phi is a single-valued functional of the unordered multiset, so the realized-state primitive treats a realized Phi value as registered data rather than a law-selected derivation output.  _(class `A`)_
 - **chain closes:** True — The runner derives the symmetric functions and folded-angle inversion from the constructed spectrum, verifies boundary degeneracy and multiple formal Phi values, and the one-hop dependencies supply retained-bounded form/orbit/readout discipline, retained-bounded 2/9 local density, retained no-go unit discipline, and accepted meta realized-state/axiom premises. The chain closes only for this bounded relocation theorem; it does not derive an interior Phi value, the charged-lepton physical carrier, or exactness to 2/9.
 - **rationale:** The load-bearing bridge is exact algebra over the formal unordered signed-root multiset plus the realized-state primitive's registration rule, not a definition of Phi=2/9 or a tuned PDG match. The runner does not hard-code the theorem value: it constructs multiple Phi values, recomputes the current PASS=27 output, and treats Phi_PDG and the 7.409267493568850e-06 gap as an unthresholded labeled comparator. A hostile specialist could reject downstream carrier-readout or exactness claims, but those are explicitly outside the audited scope and remain open boundaries.
+
+### `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11`
+
+- **Note:** [`ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md`](../../docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-dimensional decomposition of AC_phi_lambda sub-admission (iii): naming is vacuous, sector-pattern assignment is registered data in the supplied context for nondegenerate patterns, and carrier-locus/species-physical matching residuals remain separately tracked.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-audit-wave-acphi-row4-fresh`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given the supplied hw=1 readout context and a nondegenerate realized registered pattern, the sector-to-pattern assignment is reconstructed pointwise from the records, uniquely fixed, and state-contingent under the realized-state primitive, leaving only the carrier-locus chirality gate and empirical anchor as residual content.  _(class `A`)_
+- **chain closes:** True — Within the stated boundary, the conclusion follows from the supplied realized-state primitive, the registry/context statements, retained hw=1/C3 finite algebra inputs, and the runner's exact finite checks. The audit does not read this as deriving the carrier locus, PDG species matching, readout context, K-reality predicate, or sub-admission retirement.
+- **rationale:** The runner does not hard-code PDG values or a fitted mass pattern; it verifies the finite algebraic claims about de-naming, record-determined rigidity, context-tautological hw=1 membership, state contingency, and replicated contrast checks. The note is careful that the physical carrier locus, empirical anchor, readout context, and cross-type mass-base alignment remain outside the closure. Meta/context authorities are used to name the registry and guardrail surface, while the consumed finite facts are either retained-grade or re-verified in the runner.
+- **auditor confidence:** medium
 
 ### `action_crossover_note`
 

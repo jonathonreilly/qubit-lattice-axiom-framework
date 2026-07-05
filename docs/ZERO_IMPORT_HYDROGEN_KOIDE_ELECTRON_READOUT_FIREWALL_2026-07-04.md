@@ -149,6 +149,16 @@ record that current surfaces do not supply the determinant theorem. This is
 not a default-exclusion theorem, full K1, physical electron mass, alpha input,
 or hydrogen.
 
+The nested fluctuation determinant object target
+(`ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_TARGET_DISCRIMINATOR_2026-07-05.md`)
+packages `K1_FLUCTUATION_DETERMINANT_OBJECT_IDENTIFICATION_RETAINED` as the
+first mathematical subinput under the determinant theorem. Its current-surface
+no-go and decision packet keep the actual Koide readout determinant object
+separate from generic C3 algebra, `J_cs` support, and vector/modulus determinant
+route-pruning. If later accepted, it can feed only
+`FLUCTUATION_DETERMINANT_OBJECT_IDENTIFIED`, not factorization, count, full K1,
+physical electron mass, alpha input, or hydrogen.
+
 The Koide native zero-section `#5007` impact discriminator
 (`ZERO_IMPORT_HYDROGEN_KOIDE_NATIVE_ZERO_SECTION_PR5007_IMPACT_DISCRIMINATOR_2026-07-04.md`)
 updates this boundary for the latest open Koide route-guard repair. It records

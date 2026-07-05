@@ -79,6 +79,9 @@ fluctuation determinant/readout object is chiral or holomorphic.
 
 | surface | useful content | does not supply |
 |---|---|---|
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_TARGET_DISCRIMINATOR_2026-07-05.md` | sixteen-input target for `K1_FLUCTUATION_DETERMINANT_OBJECT_IDENTIFICATION_RETAINED` | current object input closure, factorization, or count |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `FLUCTUATION_DETERMINANT_OBJECT_IDENTIFIED` | parent determinant theorem closure |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | owner/audit contract for the object input | retained consequence; not accepted on current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_TARGET_DISCRIMINATOR_2026-07-05.md` | fourteen-input target for `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED` | current retained consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_CHIRAL_HOLOMORPHIC_DETERMINANT_RATIFICATION_DECISION_PACKET_2026-07-05.md` | fourteen-input owner/audit decision packet | retained consequence; not accepted on the current surface |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_K1_SELECTOR_DEFAULT_EXCLUSION_TARGET_DISCRIMINATOR_2026-07-05.md` | parent selector/default-exclusion target | determinant theorem closure or default exclusion |

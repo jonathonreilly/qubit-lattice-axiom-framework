@@ -88,6 +88,13 @@ matching current-surface no-go
 records that current retained, primitive, merged-PR, and open-PR surfaces do
 not supply `K1_CHIRAL_HOLOMORPHIC_DETERMINANT_THEOREM_RETAINED`.
 
+The nested object-identification target
+`ZERO_IMPORT_HYDROGEN_KOIDE_K1_FLUCTUATION_DETERMINANT_OBJECT_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages `K1_FLUCTUATION_DETERMINANT_OBJECT_IDENTIFICATION_RETAINED`, which
+could feed only `FLUCTUATION_DETERMINANT_OBJECT_IDENTIFIED` if later accepted.
+It does not supply factorization, the chiral count, this parent theorem, full
+K1, physical electron mass, alpha, or hydrogen.
+
 They do not supply the real-vector default exclusion, full K1, physical electron
 mass, alpha, or hydrogen.
 
@@ -139,6 +146,7 @@ eleven inputs only after acceptance.
 
 | surface | useful content | boundary here |
 |---|---|---|
+| fluctuation determinant object target | sixteen-input target for `K1_FLUCTUATION_DETERMINANT_OBJECT_IDENTIFICATION_RETAINED` | can feed only `FLUCTUATION_DETERMINANT_OBJECT_IDENTIFIED` if later accepted |
 | counting-bit synthesis note | reduces K1 to the block/orbit versus dimension/Born binary and identifies native `J_cs` | support only; no determinant theorem |
 | supertrace / equivariant-index / holomorphic route | right-shaped route for counting the doublet once | open positive route; not retained here |
 | det_C versus det_R fork mechanism | separates holomorphic polarization from statistics | mechanism support only; no adopted selector |

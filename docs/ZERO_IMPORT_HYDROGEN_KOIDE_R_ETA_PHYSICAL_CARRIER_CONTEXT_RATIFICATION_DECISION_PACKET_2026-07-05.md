@@ -121,6 +121,9 @@ STATIC_SOURCE_RYDBERG_RETAINED
 |---|---|---|
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` | names the thirteen-input target | target only, not ratification |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `PHYSICAL_CARRIER_CONTEXT_RETAINED` | no retained consequence |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_TARGET_DISCRIMINATOR_2026-07-05.md` | packages the child theorem `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED` | child target only |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the child theorem owner/audit decision object | no retained child consequence unless accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED` | no retained child consequence |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | packages `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` | locus subinput only |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | packages the hw1 locus owner/audit decision object | no retained locus consequence unless accepted |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | records current non-supply of `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` | no retained locus consequence |
@@ -132,7 +135,7 @@ STATIC_SOURCE_RYDBERG_RETAINED
 | `FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md` | collapses duplicate carrier/readout/basepoint gates | does not retain the gate |
 | open `#5030` multisite Pauli finite-carrier provenance | finite algebraic carrier provenance may become retained-supplied at its own scope | no charged-lepton carrier realization theorem |
 | `ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md` | support-only boundary for #5030 | no `PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2, mass, or hydrogen |
-| open `#5032` common `hw=1` BZ-corner carrier identification | common finite representative for Hamming `hw=1`, AC_lambda, and C3 action if adopted | support only, not physical locus selection or carrier-context closure |
+| merged `#5032` common `hw=1` BZ-corner carrier identification | common finite representative for Hamming `hw=1`, AC_lambda, and C3 action | support only, not physical locus selection or carrier-context closure |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_COMMON_HW1_PR5032_CARRIER_IDENTIFICATION_IMPACT_DISCRIMINATOR_2026-07-05.md` | support-only boundary for #5032 and `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED` | no `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, no charged-lepton carrier theorem, no `PHYSICAL_CARRIER_CONTEXT_RETAINED`, h-class, R-eta, K2, mass, or hydrogen |
 | merged `#5023` and merged `#5024` | W4 / AC_phi_lambda gate-readiness and dependency hygiene | no physical carrier-context theorem |
 | approved primitives | minimal axioms and approved primitives | no carrier selector or physical readout context |
@@ -156,7 +159,7 @@ ratification decision contract.
 | reduced-carrier route | Treat determinant support as physical carrier identification. | RULED OUT BY PRIOR. The obstruction note keeps the physical bridge open. |
 | gate-collapse route | Treat one named gate as retained closure. | PARTIAL ONLY. It collapses bookkeeping, not the gate itself. |
 | #5030 finite-carrier route | Treat retained-supplied multisite Pauli carrier provenance as this handoff. | PARTIAL ONLY. It can support finite algebraic carrier provenance, not physical charged-lepton realization. |
-| #5032 common-hw1 route | Treat common finite `hw=1` carrier identification as this handoff. | PARTIAL ONLY. It can support the `hw=1` locus contract after adoption but does not supply physical matter-state-law or carrier-context closure. |
+| #5032 common-hw1 route | Treat common finite `hw=1` carrier identification as this handoff. | PARTIAL ONLY. It supports the `hw=1` locus contract at its own scope but does not supply physical matter-state-law or carrier-context closure. |
 | W4 PR route | Treat #5023/#5024 as carrier-context closure. | ATTEMPTED. They are gate-readiness and hygiene progress only. |
 | primitive route | Treat approved primitives as supplying carrier context. | ATTEMPTED. Registry notes supply no carrier selector or physical readout context. |
 | comparator route | Use observed or fitted data. | RULED OUT AS ZERO-IMPORT PROOF. Comparator data is not proof input. |
@@ -217,8 +220,8 @@ ratification-decision packaging passes.
 ## Explicit Non-Claims
 
 - No derivation or ratification of `PHYSICAL_CARRIER_CONTEXT_RETAINED`.
-- No adoption or ratification of open PR `#5032`, and no derivation or
-  ratification of `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED`.
+- No downstream ratification from merged PR `#5032`, and no derivation or
+  ratification of `PHYSICAL_CARRIER_CONTEXT_RETAINED`.
 - No derivation or ratification of `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`.
 - No derivation or ratification of h-class, h-unit, R-eta, K2, electron mass,
   alpha, or hydrogen.

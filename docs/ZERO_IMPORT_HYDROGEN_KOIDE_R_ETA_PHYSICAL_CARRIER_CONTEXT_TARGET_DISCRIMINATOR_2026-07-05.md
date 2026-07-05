@@ -94,9 +94,18 @@ and current-surface no-go
 make clear that current surfaces do not supply
 `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`.
 
+The charged-lepton carrier-realization target discriminator
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_TARGET_DISCRIMINATOR_2026-07-05.md`
+packages the child theorem itself. Its ratification packet
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md`
+and current-surface no-go
+`ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_CURRENT_SURFACE_NO_GO_2026-07-05.md`
+make clear that current surfaces do not supply
+`CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`.
+
 The common `hw=1` PR #5032 carrier-identification impact discriminator
 `ZERO_IMPORT_HYDROGEN_KOIDE_COMMON_HW1_PR5032_CARRIER_IDENTIFICATION_IMPACT_DISCRIMINATOR_2026-07-05.md`
-records open `#5032` as support for
+records merged `#5032` as support for
 `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED`: one finite
 representative for Hamming `hw=1`, AC_lambda translation triples, and C3
 action. It is support beneath the `hw=1` locus lane, not a physical
@@ -109,6 +118,9 @@ matter-state-law theorem and not a carrier-context theorem.
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` | charged-lepton carrier realization theorem and physical carrier context remain open |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_RATIFICATION_DECISION_PACKET_2026-07-05.md` | hw1 locus owner/audit decision packet | no retained locus consequence unless accepted |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_HW1_PHYSICAL_GENERATION_LOCUS_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` | physical matter-state-law bridge and owner/audit remain open |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_TARGET_DISCRIMINATOR_2026-07-05.md` | child target for `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED` | this parent target and physical carrier context remain open |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | child carrier-realization owner/audit decision packet | no retained child theorem unless accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for the child theorem | no retained child theorem |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` | target for `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED` | state-law subinput only |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | forked state-law owner/audit decision packet | no retained bridge consequence unless accepted |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for the state-law bridge | no retained bridge consequence |
@@ -119,7 +131,7 @@ matter-state-law theorem and not a carrier-context theorem.
 | `KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md` | proves exact finite facts for a supplied tracial standard-form carrier | framework-native physical carrier/scoring selection |
 | open `#5030` multisite Pauli finite-carrier provenance | proposes sourcing the finite multisite Pauli carrier from retained Cl(3) per-site support | finite algebraic carrier support only; no physical charged-lepton realization theorem |
 | `ZERO_IMPORT_HYDROGEN_MULTISITE_PAULI_PR5030_CARRIER_PROVENANCE_IMPACT_DISCRIMINATOR_2026-07-05.md` | records #5030 as `PR5030_FINITE_MULTISITE_PAULI_CARRIER_PROVENANCE_CONTEXT` support | no `PHYSICAL_CARRIER_CONTEXT_RETAINED`, no h-class, no R-eta, no K2, no mass, no hydrogen |
-| open `#5032` common `hw=1` BZ-corner carrier identification | proposes one finite representative for Hamming `hw=1`, AC_lambda translations, and C3 action | common-carrier support only; no physical locus theorem or carrier-context theorem |
+| merged `#5032` common `hw=1` BZ-corner carrier identification | records one finite representative for Hamming `hw=1`, AC_lambda translations, and C3 action | common-carrier support only; no physical locus theorem or carrier-context theorem |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_COMMON_HW1_PR5032_CARRIER_IDENTIFICATION_IMPACT_DISCRIMINATOR_2026-07-05.md` | records #5032 as `PR5032_COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_CONTEXT` and `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED` support | no `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, no charged-lepton carrier theorem, no `PHYSICAL_CARRIER_CONTEXT_RETAINED`, no R-eta, no mass, no hydrogen |
 | `KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md` | localizes carrier-locus imports and the Hodge-orientation bit | physical matter operator/locus realization |
 | `CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md` | refutes the spinor-module escape and locates the live KS/physical-state-law route | retained physical-state-law bridge |
@@ -170,7 +182,7 @@ for the Koide R-eta and h-class lanes.
 | reduced-carrier determinant route | Treat reduced determinant algebra and `D_red = I_2` as the physical charged-lepton carrier. | RULED OUT BY PRIOR. The reduced-carrier obstruction leaves the physical carrier/readout bridge open. |
 | readout-gate collapse route | Treat the gate-collapse map as closure. | PARTIAL ONLY. It identifies one gate; it does not retain it. |
 | tracial standard-form route | Treat the supplied tracial carrier as framework-native physical selection. | PARTIAL ONLY. It proves supplied-carrier algebra and leaves physical scoring/carrier selection open. |
-| #5032 common-hw1 route | Treat common finite `hw=1` carrier identification as physical carrier realization. | PARTIAL ONLY. It can support the `hw=1` locus contract after adoption but does not supply the physical matter-state-law or carrier-context theorem. |
+| #5032 common-hw1 route | Treat common finite `hw=1` carrier identification as physical carrier realization. | PARTIAL ONLY. It supports the `hw=1` locus contract at its own scope but does not supply the physical matter-state-law or carrier-context theorem. |
 | carrier-locus route | Treat finite Hamming-shell bookkeeping as physical locus selection. | PARTIAL ONLY. The physical matter operator/locus realization and Hodge bit remain open. |
 | W4 PR route | Treat #5023/#5024 audit-readiness repairs as physical carrier closure. | ATTEMPTED. They improve dependency readiness but do not supply the charged-lepton carrier realization theorem. |
 | primitive shortcut | Treat approved primitives as supplying carrier context. | ATTEMPTED. Registered primitives supply no carrier selector, physical readout context, value, mass, alpha, or hydrogen. |
@@ -282,8 +294,8 @@ carrier-context target passes.
 ## Explicit Non-Claims
 
 - No derivation or ratification of `PHYSICAL_CARRIER_CONTEXT_RETAINED`.
-- No adoption or ratification of open PR `#5032`, and no derivation or
-  ratification of `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED`.
+- No downstream ratification from merged PR `#5032`, and no derivation or
+  ratification of `PHYSICAL_CARRIER_CONTEXT_RETAINED`.
 - No derivation or ratification of `SINGLE_FIXED_POINT_READOUT_THEOREM_RETAINED`.
 - No derivation or ratification of `R_ETA_H_CLASS_RETAINED`.
 - No derivation or ratification of `R_ETA_H_UNIT_IDENTITY_RADIAN_RETAINED`.

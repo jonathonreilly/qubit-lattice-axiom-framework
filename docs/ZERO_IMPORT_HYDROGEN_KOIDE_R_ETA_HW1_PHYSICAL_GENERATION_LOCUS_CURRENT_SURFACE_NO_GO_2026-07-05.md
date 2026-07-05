@@ -53,7 +53,6 @@ HW1_PHYSICAL_GENERATION_LOCUS_RETAINED.
 That consequence is not supplied here. The current missing inputs include:
 
 ```text
-COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED
 PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED
 OWNER_RATIFICATION
 AUDIT_ACCEPTANCE
@@ -68,6 +67,9 @@ AUDIT_ACCEPTANCE
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_TARGET_DISCRIMINATOR_2026-07-05.md` | forked target for `PHYSICAL_MATTER_STATE_LAW_BRIDGE_RETAINED` | retained state-law bridge |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_RATIFICATION_DECISION_PACKET_2026-07-05.md` | forked owner/audit decision packet for the state-law bridge | accepted retained state-law bridge |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_MATTER_STATE_LAW_BRIDGE_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for the state-law bridge | retained state-law bridge |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_TARGET_DISCRIMINATOR_2026-07-05.md` | parent child-theorem target consuming `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED` | `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED` |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_RATIFICATION_DECISION_PACKET_2026-07-05.md` | charged-lepton carrier-realization owner/audit decision packet | retained child theorem unless accepted |
+| `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_CHARGED_LEPTON_CARRIER_REALIZATION_CURRENT_SURFACE_NO_GO_2026-07-05.md` | current non-supply boundary for `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED` | retained child theorem |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_R_ETA_PHYSICAL_CARRIER_CONTEXT_TARGET_DISCRIMINATOR_2026-07-05.md` | carrier-context target that needs the charged-lepton carrier theorem | physical `hw=1` locus theorem |
 | `FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md` | momentum/BZ carrier type | physical `hw=1` locus |
 | `FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md` | parent integration map and residual consolidation | retained physical-locus bridge |
@@ -76,7 +78,7 @@ AUDIT_ACCEPTANCE
 | `P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md` | K1 selected within the licensed two-class surface at chain grade | physical charged-lepton locus |
 | `STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md` | scalar chirality/parity sign field | full realization gate or species-label bridge |
 | `STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md` | exact `1+3+3+1` Hamming orbit decomposition | physical species reading |
-| open `#5032` common `hw=1` BZ-corner carrier identification | proposes one finite representative for Hamming `hw=1`, AC_lambda translations, and C3 action | physical matter-state-law theorem, physical locus, species reduction, labeling |
+| merged `#5032` common `hw=1` BZ-corner carrier identification | records one finite representative for Hamming `hw=1`, AC_lambda translations, and C3 action | physical matter-state-law theorem, physical locus, species reduction, labeling |
 | `ZERO_IMPORT_HYDROGEN_KOIDE_COMMON_HW1_PR5032_CARRIER_IDENTIFICATION_IMPACT_DISCRIMINATOR_2026-07-05.md` | records #5032 as common finite carrier-identification support and names `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED` | `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`, charged-lepton carrier theorem, carrier context, R-eta, mass, hydrogen |
 | `STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md` | arithmetic/species-count bridge support | framework physical-locus theorem |
 | `KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md` | locates the state-law residual on the KS route | retained physical state-law bridge |
@@ -105,7 +107,7 @@ inputs.
 
 | PR | queue signal | locus effect |
 |---|---:|---|
-| `#5032` common `hw=1` BZ-corner carrier identification | open, audit pipeline in progress at refresh | common finite carrier-identification support only; no physical `hw=1` locus theorem |
+| `#5032` common `hw=1` BZ-corner carrier identification | merged, audit success at refresh | common finite carrier-identification support only; no physical `hw=1` locus theorem |
 | `#5014` record-formation front is the domain wall | open, audit success | formation-front/domain-wall support only |
 | `#5017` domain-wall edge anomaly inflow via spectral flow | open, audit success | free-field anomaly-flow support only |
 | `#5018` domain-wall edge content vs SM chiral fermions map | open, audit success | map with named gaps only |
@@ -143,7 +145,7 @@ HW1_PHYSICAL_GENERATION_LOCUS_RETAINED.
 | staggered realization route | Treat bounded realization synthesis as physical state-law closure. | PARTIAL ONLY. It is declared-premise bounded. |
 | K1 route | Treat flux-`-1` selection as charged-lepton locus selection. | PARTIAL ONLY. It is within-surface support. |
 | Hamming/C3 route | Treat exact triplet algebra as physical locus. | PARTIAL ONLY. It supplies algebra, not physical state-law. |
-| common-carrier #5032 route | Treat one common Hamming/AC_lambda/C3 representative as physical locus closure. | PARTIAL ONLY. It can support a contract input after adoption, but physical matter-state law remains open. |
+| common-carrier #5032 route | Treat one common Hamming/AC_lambda/C3 representative as physical locus closure. | PARTIAL ONLY. It supports a contract input, but physical matter-state law remains open. |
 | domain-wall route | Treat #5014/#5017/#5018 as physical locus closure. | ATTEMPTED. They add support but keep gaps. |
 | W4 PR route | Treat #5023/#5024 as locus closure. | ATTEMPTED. They are audit-readiness/gate-readiness repairs, not the retained locus theorem. |
 | primitive shortcut | Treat approved primitives as supplying the locus. | ATTEMPTED. Registered primitives supply no physical locus selector or readout bridge. |
@@ -253,8 +255,8 @@ narrowed current-surface non-supply claim passes.
 ## Explicit Non-Claims
 
 - No derivation or ratification of `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`.
-- No adoption or ratification of open PR `#5032`, and no derivation or
-  ratification of `COMMON_HW1_BZ_CORNER_CARRIER_IDENTIFICATION_ACCEPTED`.
+- No downstream ratification from merged PR `#5032`, and no derivation or
+  ratification of `HW1_PHYSICAL_GENERATION_LOCUS_RETAINED`.
 - No derivation or ratification of `CHARGED_LEPTON_CARRIER_REALIZATION_THEOREM_RETAINED`.
 - No derivation or ratification of `PHYSICAL_CARRIER_CONTEXT_RETAINED`.
 - No derivation or ratification of fixed-point readout, h-class, h-unit,

@@ -249,6 +249,7 @@ def main() -> None:
         "PHYSICAL_ELECTRON_SPECIES_BRIDGE_RETAINED",
         "ALPHA0_RETAINED",
         "STATIC_SOURCE_RYDBERG_RETAINED",
+        "`#5018` domain-wall edge content vs SM chiral fermions map | open",
         "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
         "`#5016` zero-import hydrogen retained lane bundle | open",
         "`#5015` wave-collapse-block01 measurement-collapse gate | open draft",
@@ -404,6 +405,7 @@ def main() -> None:
 
     section("Open PR and non-claim boundaries")
     latest_pr_markers = [
+        "`#5018` domain-wall edge content vs SM chiral fermions map | open",
         "`#5017` domain-wall edge anomaly inflow via spectral flow | open",
         "`#5016` zero-import hydrogen retained lane bundle | open",
         "`#5015` wave-collapse-block01 measurement-collapse gate | open draft",

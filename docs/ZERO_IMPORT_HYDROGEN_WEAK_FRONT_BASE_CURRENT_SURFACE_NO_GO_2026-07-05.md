@@ -146,6 +146,7 @@ input. The newest rows do not close the weak-front-base handoff:
 
 | PR | state at refresh | weak-front-base effect |
 |---|---:|---|
+| `#5018` domain-wall edge content vs SM chiral fermions map | open | chirality/domain-wall edge-content work; no charged-lepton weak-front base |
 | `#5017` domain-wall edge anomaly inflow via spectral flow | open | chirality/anomaly-inflow work; no charged-lepton weak-front base |
 | `#5016` zero-import hydrogen retained lane bundle | open | carries this weak-front and D17 handoff work |
 | `#5015` wave-collapse-block01 measurement-collapse gate | open draft | measurement-collapse context; no charged-lepton weak-front base |

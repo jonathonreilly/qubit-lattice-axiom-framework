@@ -5,6 +5,7 @@ science-fix — see §0 changelog. The note is rewritten from a pure
 open-gate identity assignment into a bounded synthesis note whose
 load-bearing step is the computed composition of the four substep
 theorems, with every genuinely open residual named explicitly.)
+**Premise-surface update:** 2026-07-05 — dependency surface minimized for auditability: superseded-generation 05-07 sources re-pointed to their retained substep successors (originals kept as historical context handles); the closure-synthesis row demoted to a context handle where consumed as summary; axiom citation re-pointed to the 2026-06-29 memo. No claim is changed; the gate statement and its admission content are untouched.
 **Type:** bounded_theorem
 **Scope:** On the Quantum + Lattice baseline (one-qubit / `Cl(3,0)`
 operator algebra per site on the `Z^3` lattice) plus the declared
@@ -62,8 +63,8 @@ lattice instead of asserting it.
   kinetic-and-algebra surface now closes on declared premises; the
   labeling residual is closed as a no-go plus convention, not hidden.
 - **2026-05-21.** §2.1 recognition of the in-flight synthesis
-  candidate (superseded by this revision; the synthesis note remains a
-  cited authority below).
+  candidate (superseded by this revision; the synthesis note is now kept
+  as a context handle below, not a citation-graph dependency).
 - **2026-05-03.** Original open-gate parent identity note.
 
 ## 1. Why this note exists
@@ -82,7 +83,7 @@ carry.
 
 Throughout, Quantum is the one-qubit / `Cl(3,0)` local operator algebra
 per site and Lattice is the `Z^3` lattice, per
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md).
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md).
 
 > **Definition.** "The staggered-Dirac realization from Quantum +
 > Lattice" is the conjunction of:
@@ -124,13 +125,19 @@ cannot silently promote a convention into a derivation.
 
 Substep theorems (load-bearing):
 
-1. **Matter-statistics clause:** [`STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md)
-   — Theorem 1 (Grassmann partition forcing): bosonic second
-   quantization is incompatible with the dim-2 per-site Cl(3) module,
-   so the matter measure is the finite Grassmann partition.
-   Bounded on the spin-statistics support input.
-   Narrow companion: [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
-   (two-candidate single-mode surface).
+1. **Matter-statistics clause:** [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+   — Theorem 1 (two-candidate collapse, stated at that note's claim
+   scope): on the per-site dim-2 carrier the free-bosonic candidate is
+   excluded and the single-pair Grassmann candidate is the unique
+   survivor within the declared two-candidate canonical-pair surface,
+   carrying the Berezin finite-determinant partition readout; the
+   statistics-selection input (S2/FS) remains the named support input —
+   this clause is bounded on it, exactly as before.
+   Historical source handle:
+   `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
+   (superseded-generation source whose broader "bosonic second
+   quantization is incompatible" statistics-forcing phrasing is NOT
+   consumed here; context handle, not a citation-graph dependency).
 2. **Kinetic-form clause:** [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
    — Theorem 2 (Kawamoto-Smit phase forcing): on the single-mode
    Grassmann surface, the spin-diagonalization scalarization condition
@@ -140,13 +147,15 @@ Substep theorems (load-bearing):
    site-local spin-diagonalization premise, with
    boundary holonomies/APBC and axis ordering as convention data.
    Narrow companion: [`STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md).
-3. **Corner-structure clause:** [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md)
+3. **Corner-structure clause:** [`STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md)
    — Theorem 3 (BZ-corner algebraic triplet support): 8 corners,
    unique Hamming decomposition 1+3+3+1, hw=1 carries exact
    irreducible `M_3(C)` with no proper quotient.
-   Narrow companions: [`STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md)
-   and [`STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md).
-4. **Species-surface algebraic clause:** [`STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md)
+   Narrow companion: [`STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md).
+   Historical source handle:
+   `STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`
+   (superseded-generation source, context handle, not a citation-graph dependency).
+4. **Species-surface algebraic clause:** [`STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
    — Theorem 4-revised (direct three-state algebraic support): the
    hw=1 triplet is three orthogonal, `C_3`-connected states inside the
    single reconstructed `H_phys` (single superselection sector), not
@@ -154,6 +163,9 @@ Substep theorems (load-bearing):
    [`STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
    — the AC_λ simultaneous-diagonalization corollary (L1–L4) on the
    joint-eigenvalue triples (2a)-(2c).
+   Historical source handle:
+   `STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md`
+   (superseded-generation source, context handle, not a citation-graph dependency).
 5. **Species-labeling no-go clause:** [`STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md)
    — the AC_φλ species-labeling no-go within the minimal axiom baseline
    (orbit-equivariance invariant, π_A/π_B counter-model, exhaustive closure-path
@@ -161,12 +173,14 @@ Substep theorems (load-bearing):
    [`STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
    — the labeling-convention accepted-premise carrier.
 
-Prior packaged synthesis (cited per the 2026-06-05 re-audit
+Prior packaged synthesis (recorded per the 2026-06-05 re-audit
 condition; this revision supersedes its packaging role but keeps its
-internal chain as a cross-check):
-[`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`](STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md).
+internal chain as a cross-check/context handle, not a citation-graph
+dependency):
+`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`
+(context handle, not a citation-graph dependency).
 
-Axiom premise: [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+Axiom premise: [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 (accepted axiom premise; Quantum = one-qubit / `Cl(3,0)` per site,
 Lattice = `Z^3`).
 
@@ -414,11 +428,15 @@ references so the citation-graph builder would not parse supporting
 notes as upstream dependencies (the note was then a pure parent
 identity with no load-bearing inputs). That convention is retired for
 this note as of the 2026-06-09/10 science-fix: the substep theorem
-notes in §3.1 are now genuine one-hop load-bearing cited authorities
-and are intentionally written as markdown links so the audit packet
-builder includes them. The only intentionally non-load-bearing
-reference is the in-repair substep-4 AC narrowing note, kept in plain
-text in §3.1.
+notes in §3.1 that remain markdown links are now genuine one-hop
+load-bearing cited authorities and are intentionally written as markdown
+links so the audit packet builder includes them. As of 2026-07-05,
+superseded-generation 05-07 sources are kept only as backticked
+historical handles where re-pointed, and the prior closure-synthesis row
+is a backticked context handle; these are not citation-graph
+dependencies. The intentionally non-load-bearing references are the
+historical 05-07 handles, the closure-synthesis context handle, and the
+in-repair substep-4 AC narrowing note, kept in plain text in §3.1.
 
 ## 9. Command
 

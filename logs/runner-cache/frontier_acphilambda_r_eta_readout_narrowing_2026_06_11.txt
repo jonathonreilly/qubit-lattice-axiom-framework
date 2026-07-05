@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py
-runner_sha256: fedc967309dd36e33a5dea56855bec18d2ed01b3106ef69ec4fb2c0fe7a2b723
+runner_sha256: 1f3d882a27ab236b4c3eccbc33b647f63050e1c3a73038b056d965cda74b2f5f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 
@@ -69,7 +69,7 @@ S6 - forced weights: transverse spectrum of the C3 cycle => (1,2); density uniqu
 ========================================================================================
 S7 - circularity guard: the cos3delta channel does NOT assume R-eta
 ========================================================================================
-[PASS] e3 derivation is symbolic in {a, B, delta} with NO density object, NO 2/9, NO L3 anywhere in the computation  [free symbols = {delta, a, B}]
+[PASS] e3 derivation is symbolic in {a, B, delta} with NO density object, NO 2/9, NO L3 anywhere in the computation  [free symbols = {a, B, delta}]
 [PASS] the channel result is an IDENTITY in delta (holds for ALL delta), so it cannot have assumed any particular value of |delta|
 [PASS] the circulant form itself is consumed from the carrier/K-orbit context, which is independent of (and prior to) R-eta  [hostile guard (a) answered: no circularity]
 
@@ -92,10 +92,10 @@ S9 - boundary witnesses + r-firewall
 [PASS] NOT addressed here: sub-admission (i) occupancy selection, sub-admission (iii) species bridge, the R1b anchor, the R2 global PL/ABSS bridge, the carrier gate realization
 [PASS] no Tier-A registry edit, no downstream status set, no admission retired; this is a source-side narrowing of WHAT sub-admission (ii) admits
 [PASS] 2026-06-13 boundary: conditional support only; A_R-eta remains admitted
-[PASS] 2026-06-20 dependency-status split: explicit FORMAL H(delta) theorem present (physical readout identification is conditional/open)
-[PASS] 2026-06-20 dependency-status split: the two non-retained-grade named authorities are marked context-only
-[PASS] 2026-06-20 dependency-status split: the K-orbit circulant form is wired as a one-hop markdown-link authority at its current retained-bounded grade
-[PASS] 2026-06-20 dependency-status split: physical readout identification explicitly NOT claimed (firewall: register-not-read price class preserved)
+[PASS] 2026-07-05 dependency-status split: explicit FORMAL H(delta) theorem present (physical readout identification is conditional/open)
+[PASS] 2026-07-05 dependency-status split: the two named non-proof authorities are marked context-only at their current grades
+[PASS] 2026-07-05 dependency-status split: the K-orbit circulant form is wired as a one-hop markdown-link authority at its current retained-bounded grade
+[PASS] 2026-07-05 dependency-status split: physical readout identification explicitly NOT claimed (firewall: register-not-read price class preserved)
 [PASS] Status authority preserved: independent audit lane only (no downstream status authored/altered in this source note)
 
 ========================================================================================

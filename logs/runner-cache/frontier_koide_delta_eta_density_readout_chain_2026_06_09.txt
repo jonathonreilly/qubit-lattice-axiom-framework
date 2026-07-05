@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py
+runner_sha256: 702fba6ff9b40ce244f42f9372f7f942ebd90fc312fe8012bf01c58b31b15d09
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
 ========================================================================================
 THE |delta| = 2/9 THEOREM CHAIN: RETAINED ARITHMETIC + ONE NAMED IDENTIFICATION
 ========================================================================================
@@ -14,7 +22,7 @@ E1: retained arithmetic re-derived from scratch (two independent packagings)
 ----------------------------------------------------------------------------------------
 E2: the declared supplied premise R-eta + the conditional implication
 ----------------------------------------------------------------------------------------
-  [PASS] E2.a the note carries the explicit supplied-premise DECLARATION for R-eta (supplied-not-derived; Tier-A sub-admission (ii) content; no retained readout theorem supplies it; all claims conditional) -- verified verbatim on the note file  --  mechanical declaration check; replaces the prior stipulation-style check
+  [PASS] E2.a the note carries the explicit supplied-premise DECLARATION for R-eta (exact bridge |delta| = L_3(1,2); supplied-not-derived; Tier-A sub-admission (ii) content; no retained readout theorem supplies it; all claims conditional) -- verified verbatim on the note file  --  mechanical declaration check; replaces the prior stipulation-style check
   [PASS] E2.b the CONDITIONAL THEOREM, computed: {declared R-eta premise |delta| = L_3(1,2)} + {E1-derived L_3(1,2) = 2/9} ==> |delta| = 2/9 exactly (substitution on the symbolic premise; the runner checks the implication, never the premise)  --  conclusion: Eq(abs_delta, 2/9)
 
 ----------------------------------------------------------------------------------------
@@ -27,7 +35,7 @@ E3: the period fork, computed honestly (the alternative packaging fails)
 ----------------------------------------------------------------------------------------
 E4: the comparator -- m_tau prediction and the fitted-phase residual
 ----------------------------------------------------------------------------------------
-  [PASS] with r = 1/2 (separate comparator context) and |delta| = 2/9 EXACT, the predicted m_mu and m_tau land at the PDG values (m_tau inside ~2 sigma of the PDG band; comparator only)  --  m_mu: pred 105.6594 vs 105.6583755 (9.8e-06); m_tau: pred 1776.98 vs 1776.86 +/- 0.12
+  [PASS] with r = 1/2 (separate comparator context) and |delta| = 2/9 EXACT, the predicted m_mu and m_tau land at the PDG values (m_tau inside about 1 sigma of the PDG band; comparator only)  --  m_mu: pred 105.6594 vs 105.6583755 (9.8e-06); m_tau: pred 1776.98 vs 1776.86 +/- 0.12
   [PASS] the PDG-fitted phase agrees with 2/9 WITHIN the m_tau-uncertainty-induced band (diff ~7e-6 absolute ~ 1 sigma of the +/-0.12 MeV band; comparator only, not a derivation input)  --  delta_fit = 0.222229631 vs 2/9 = 0.222222222 (diff 7.4e-06; 1-sigma band 8.3e-06)
 
 ----------------------------------------------------------------------------------------
@@ -41,7 +49,8 @@ E5: no-go boundary compliance
 E6: K-orbit consistency -- the chain supplies exactly the registrable atom
 ----------------------------------------------------------------------------------------
   [PASS] conj(H(delta)) = H(-delta) on the supplied circulant class; with the registrability bridge, the registrable atom is |delta| -- exactly what the chain supplies; the sign stays frame content
-  [PASS] the circulant-class form consumed here matches the RETAINED K-orbit form authority: that note carries the H(delta) circulant form and the conjugation/sign-flip statement (located mechanically; the identity itself is re-verified symbolically above)  --  retained one-hop form authority; same wiring as the R-eta narrowing note
+  [PASS] the circulant-class form consumed here matches the retained_bounded K-orbit form authority: that note carries the exact H(delta) form, the exact conjugation/sign-flip statement, and the bounded |delta| atom boundary (located mechanically; the identity itself is re-verified symbolically above)  --  retained_bounded one-hop form authority; same wiring as the R-eta narrowing note
+  [PASS] generated citation graph includes the retained_bounded K-orbit authority as a load-bearing dependency edge for this repaired note  --  deps=['koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05', 'tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09', 'registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10', 'koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24']
 
 ----------------------------------------------------------------------------------------
 E7: honest conditionality and falsifiers
@@ -52,13 +61,16 @@ E7: honest conditionality and falsifiers
   [PASS] the Callan-Harvey 2/N^2 = 2/9 is a DISTINCT object (proven distinct in-repo; coincides only at d = 3) -- recorded as consistency, not consumed
 
 ----------------------------------------------------------------------------------------
-E8: period-fork diagnostic -- period-1 is the zero-import reading on tested mechanisms
+E8: period-fork diagnostic -- period-1 adds no import beyond supplied R-eta
 ----------------------------------------------------------------------------------------
   [PASS] the pi of the standard packaging is the det-sign mechanism: arg det = pi * n_minus (mod 2pi) for a real spectrum (computed witness)  --  n_minus=2, arg det = -0.000000 = pi*n_minus mod 2pi
   [PASS] the det-phase door is CLOSED on the checked det-class surface (multiplicative lemma re-verified): K-invariance forces the phase character k = 0, so the standard det-sign route supplies no registrable pi*n_minus phase  --  this does not exclude a future non-det-class readout context
-  [PASS] import accounting: period-1 (delta = L) consumes ZERO imports; the pi-packaging (delta = pi*L) consumes ONE unexplained dimensionless constant whose standard mechanism is unavailable by (b). This keeps the direct reading as the zero-import R-eta option on known mechanisms  --  bounded claim: no currently retained registrable pi-source
+  [PASS] import accounting: period-1 (delta = L) consumes zero additional imports beyond the supplied R-eta premise; the pi-packaging (delta = pi*L) consumes ONE unexplained dimensionless constant whose standard mechanism is unavailable by (b). This keeps the direct reading as the zero-additional-import option beyond supplied R-eta on known mechanisms  --  bounded claim: no currently retained registrable pi-source
   [PASS] counterfactual boundary: had the masses matched the pi-row, this chain could not have absorbed that result by convention; it would require a new retained readout context or would falsify this R-eta chain  --  the comparator agreement supports R-eta but does not derive it
 
 ========================================================================================
-SUMMARY: PASS=23 FAIL=0
+SUMMARY: PASS=24 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

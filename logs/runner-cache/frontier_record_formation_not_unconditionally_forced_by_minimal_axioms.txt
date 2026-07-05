@@ -3,7 +3,7 @@ runner: scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_
 runner_sha256: 473b658dbaa280e8c1fc7809df060b41167a4647458b4a69e9d6dd5ad90b5fc2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -29,3 +29,4 @@ TOTAL: PASS=6 FAIL=0
 VERDICT: the live Record axiom supplies generic occurrence via "Records form.", while formation rule/process/state/site/weight/rate remains unforced by the minimal axiom surface. The unitary checks preserve the old computations as process/rule negative controls, and the coupled non-eigenstate case remains contrast only.
 
 ----- stderr -----
+

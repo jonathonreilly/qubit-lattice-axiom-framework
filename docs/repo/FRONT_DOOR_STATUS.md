@@ -54,8 +54,8 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Cycle-break targets | 14 |
 | Critical pending | 421 |
 | High pending | 287 |
-| Medium pending | 515 |
-| Leaf pending | 752 |
+| Medium pending | 514 |
+| Leaf pending | 753 |
 
 Next ready rows by queue order:
 
@@ -95,9 +95,9 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3818 |
 | Critical nodes | 668 |
-| High nodes | 469 |
-| Medium nodes | 972 |
-| Leaf nodes | 1709 |
+| High nodes | 470 |
+| Medium nodes | 970 |
+| Leaf nodes | 1710 |
 
 Top load-bearing rows by graph score:
 

@@ -1,8 +1,10 @@
 # Minimal Axioms Force Record Occurrence But Not the Formation Rule/Process/State/Site/Weight/Rate -- Narrow No-Go
 
 **Date:** 2026-06-06
-**Claim type:** no_go (formation-rule/process/state/site/weight/rate forcing) + minimality-boundary localization
-**Status:** unaudited candidate. Graph-visible only so the independent audit lane can decide.
+**Type:** no_go
+**Claim type:** no_go
+**Claim boundary:** formation-rule/process/state/site/weight/rate forcing from the current minimal axioms only; occurrence is axiom-supplied by "Records form."
+**Status authority:** independent audit lane only. This source note does not set or predict an audit outcome.
 **Primary runner:** [`scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py`](../scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py)
 **Cached output:** [`logs/runner-cache/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.txt`](../logs/runner-cache/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.txt)
 (`TOTAL: PASS=6 FAIL=0`)
@@ -137,7 +139,8 @@ eigenstates are retained as exact negative controls showing that a concrete
 formation process/rule/state trigger is not read off from unitary dynamics
 alone. A coupled non-eigenstate toy model shows decoherence can occur in a
 supplied model, but generic model behavior is not a forced formation
-rule/process/state/site/weight/rate. Effective status remains `unaudited`.
+rule/process/state/site/weight/rate. Audit status and effective status are
+pipeline-derived by the independent audit lane.
 
 ## Runner
 

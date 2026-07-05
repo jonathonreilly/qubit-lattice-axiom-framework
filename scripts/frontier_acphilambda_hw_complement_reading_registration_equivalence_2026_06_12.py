@@ -11,7 +11,7 @@ This runner checks the bounded theorem note:
   C3-invariant line evaluates to -6 sqrt(3) B^3 sin(3 delta);
 * additive-plus-even registrability kills that odd line;
 * the two complement readings carry the same unordered spectrum;
-* the note contains only the two load-bearing markdown dependency links and
+* the note contains only the three load-bearing markdown dependency links and
   keeps the context notes context-only.
 
 No registry, audit lane, cache, network, or git surface is read or written.

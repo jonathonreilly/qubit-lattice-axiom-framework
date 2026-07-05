@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_acphilambda_hw_complement_reading_registration_equivalence_2026_06_12.py
+runner_sha256: b7ffb93bb126c453edc87fd5a91293f6da5366978a33aa1c5d0f9c375ea36244
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.88
+status: ok
+----- stdout -----
 ========================================================================================
 AC_PHI_LAMBDA HW-COMPLEMENT READING REGISTRATION-EQUIVALENCE
 ========================================================================================
@@ -46,3 +54,6 @@ B12-B15: note consistency checks
 ========================================================================================
 SUMMARY: PASS=17 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

@@ -28,7 +28,7 @@ Owner-approval history for every axiom/primitive/governance change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3658 |
+| Ledger rows | 3659 |
 | Applied audit verdicts | 1377 |
 | Retained-grade rows, including boxed decorations | 1306 |
 | Retained positive theorems | 191 |
@@ -94,19 +94,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3829 |
+| Citation-graph nodes | 3830 |
 | Critical nodes | 668 |
 | High nodes | 472 |
-| Medium nodes | 971 |
+| Medium nodes | 972 |
 | Leaf nodes | 1718 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1877 descendants; score 193.875
-- `three_generation_observable_theorem_note` - critical; 1155 descendants; score 67.175
+- `minimal_axioms` - critical; 1878 descendants; score 193.876
+- `three_generation_observable_theorem_note` - critical; 1156 descendants; score 67.176
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 198 descendants; score 65.137
-- `graph_first_su3_integration_note` - critical; 1547 descendants; score 65.096
-- `observable_principle_from_axiom_note` - critical; 997 descendants; score 63.963
-- `plaquette_self_consistency_note` - critical; 1122 descendants; score 53.133
-- `minimal_axioms_2026-05-03` - critical; 1027 descendants; score 48.006
-- `key_terminology` - critical; 1136 descendants; score 46.651
+- `graph_first_su3_integration_note` - critical; 1548 descendants; score 65.097
+- `observable_principle_from_axiom_note` - critical; 998 descendants; score 63.964
+- `plaquette_self_consistency_note` - critical; 1123 descendants; score 53.134
+- `minimal_axioms_2026-05-03` - critical; 1028 descendants; score 48.007
+- `key_terminology` - critical; 1137 descendants; score 46.652

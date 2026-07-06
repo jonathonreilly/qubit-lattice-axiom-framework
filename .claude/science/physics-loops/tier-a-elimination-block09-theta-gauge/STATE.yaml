@@ -1,0 +1,19 @@
+block: tier-a-elimination-block09-theta-gauge
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block09-theta-gauge-20260704
+base_branch: physics-loop/tier-a-elimination-block08-theta-mass-20260704
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4934
+source_commit: 6a805eb8b
+target: theta gauge-side winding account
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: pr_open
+verification:
+  runner: "PASS=150 FAIL=0"
+  py_compile: pass
+  audit_pipeline: pass
+  audit_lint_strict: "pass; existing warnings/notices only"
+  diff_check: pass
+audit_row: theta_gauge_winding_axiom_update_no_go_note_2026-07-04
+next_exact_action: "Monitor PR #4934 audit_pipeline, then choose the next positive-retention route from the opportunity queue."

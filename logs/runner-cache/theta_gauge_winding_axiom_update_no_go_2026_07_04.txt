@@ -1,0 +1,198 @@
+theta gauge winding axiom-update no-go verifier
+
+========================================================================================
+A. source presence and retained target
+========================================================================================
+[PASS] exists: docs/THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/audit/data/axiom_premise_nodes.json
+[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/audit_ledger.json
+[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+[PASS] exists: docs/STRONG_CP_THETA_ZERO_NOTE.md
+[PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+[PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+[PASS] exists: docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md
+[PASS] exists: docs/THETA_GAUGE_SUBSTRATE_NO_WINDING_CARRIER_EMERGENT_Q_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+[PASS] exists: docs/THETA_EMERGENT_Q_WEIGHTING_REALITY_RG_STABLE_BOUNDED_THEOREM_NOTE_2026-06-13.md
+[PASS] exists: docs/STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_IS_ADMISSIBLE_NOT_CLEAN_CLOSEABLE_BOUNDED_NOTE_2026-06-07.md
+[PASS] exists: docs/STRONG_CP_THETA_BAR_STRUCTURED_ADMISSION_2026-06-04.md
+[PASS] theta parent row is retained_bounded
+[PASS] theta parent row is audited_clean
+
+========================================================================================
+B. Tier-A registry theta boundary
+========================================================================================
+[PASS] live Tier-A genuine count is zero
+[PASS] theta entry is retired, not live
+[PASS] theta retired-target record is preserved
+[PASS] theta retirement date is recorded
+[PASS] theta retirement mechanism is retained derivation
+[PASS] historical theta minimum decomposition preserves two residual atoms
+[PASS] machine registry theta statement includes gauge side
+[PASS] machine registry theta statement includes topological-sector weighting
+[PASS] machine registry theta statement includes multi-plaquette / large-gauge-winding account
+[PASS] machine registry theta statement includes per-plaquette class
+[PASS] machine registry theta statement includes mass side
+[PASS] machine registry theta statement includes determinant-readout bridge
+[PASS] human registry names theta gauge side
+[PASS] human registry names theta mass side
+[PASS] note has current-main posture line
+[PASS] note records live Tier-A zero posture
+[PASS] note says retirement records are not reopened
+[PASS] note says theta is not retired
+[PASS] note says registry is not edited
+
+========================================================================================
+C. approved premise-node and axiom non-supply
+========================================================================================
+[PASS] premise registry canonical ids are the approved four
+[PASS] premise registry withholds K/CPT structure
+[PASS] premise registry withholds source/action bridge
+[PASS] premise registry withholds physical observable bridge
+[PASS] premise registry withholds state-selection rule
+[PASS] premise registry withholds law-domain derivation
+[PASS] premise registry withholds weighting
+[PASS] premise registry withholds probability
+[PASS] premise registry withholds no context-selection rule
+[PASS] premise registry withholds formation rule
+[PASS] minimal axiom excludes/scopes The full one-site possibility domain has algebraic
+[PASS] minimal axiom excludes/scopes A `Cl(3,0)`-compatible real-algebra presentation m
+[PASS] minimal axiom excludes/scopes Admissibility is not a dynamics axiom
+[PASS] minimal axiom excludes/scopes does not choose a Hamiltonian or transfer operator
+[PASS] minimal axiom excludes/scopes transition probabilities or weights
+[PASS] minimal axiom excludes/scopes context selection
+[PASS] minimal axiom excludes/scopes source/action and physical-observable identificati
+[PASS] minimal axiom excludes/scopes the strong-CP theta admission
+[PASS] minimal axiom excludes/scopes Records form.
+[PASS] note theorem names missing gauge bridge: topological-sector account
+[PASS] note theorem names missing gauge bridge: a derived full gauge-measure/action premise
+[PASS] note theorem names missing gauge bridge: a multi-plaquette or scaling-limit topological s
+[PASS] note theorem names missing gauge bridge: a branch/section choice for an integer Q readout
+[PASS] note theorem names missing gauge bridge: a nonvacuous theta_gauge sector-weighting law
+
+========================================================================================
+D. approved primitive non-supply
+========================================================================================
+[PASS] realized primitive withholds/polices no state
+[PASS] realized primitive withholds/polices state-selection rule
+[PASS] realized primitive withholds/polices measure
+[PASS] realized primitive withholds/polices weighting
+[PASS] realized primitive withholds/polices probability rule
+[PASS] realized primitive withholds/polices typical
+[PASS] realized primitive withholds/polices generic
+[PASS] kinetic primitive withholds no mass ratio
+[PASS] kinetic primitive withholds coupling
+[PASS] kinetic primitive withholds mixing angle
+[PASS] kinetic primitive withholds phase
+[PASS] kinetic primitive withholds selector
+[PASS] kinetic primitive withholds readout bridge
+[PASS] kinetic primitive withholds dynamics
+[PASS] kinetic primitive withholds absolute scale
+[PASS] note says approved primitives do not supply bridge
+
+========================================================================================
+E. existing theta gauge support cannot be used as retirement shortcut
+========================================================================================
+[PASS] cross-plane row is audited_clean
+[PASS] cross-plane row is retained_bounded
+[PASS] cross-plane scope is supplied per-plaquette only
+[PASS] substrate no-winding row remains unaudited
+[PASS] substrate row depends on multiplaquette boundary
+[PASS] emergent-Q row remains unaudited
+[PASS] multiplaquette no-go row remains unaudited
+[PASS] structured theta-bar row remains an unaudited open gate
+[PASS] substrate packet keeps boundary: Not claimed
+[PASS] substrate packet keeps boundary: retirement of the
+[PASS] substrate packet keeps boundary: the emergent-Q bridge is named, not closed
+[PASS] substrate packet keeps boundary: branch/section choice
+[PASS] emergent-Q packet keeps boundary: Not claimed
+[PASS] emergent-Q packet keeps boundary: Q-existence and the 0-vs-
+[PASS] emergent-Q packet keeps boundary: CP-even
+[PASS] emergent-Q packet keeps boundary: unconditional: consumes
+[PASS] emergent-Q packet keeps boundary: retirement or re-grade
+[PASS] multiplaquette packet keeps route open: the boundary does not close
+[PASS] multiplaquette packet keeps route open: admissibly realizable
+[PASS] multiplaquette packet keeps route open: not clean-closeable
+[PASS] multiplaquette packet keeps route open: single-plaquette / minimality admission
+[PASS] structured admission keeps open boundary: large-gauge-winding account
+[PASS] structured admission keeps open boundary: does not remove a canonical large-gauge-winding 
+[PASS] structured admission keeps open boundary: does not retire or split
+[PASS] structured admission keeps open boundary: does not turn axioms or primitives into bounded-
+
+========================================================================================
+F. exact finite gauge-carrier sanity checks
+========================================================================================
+[PASS] U(1)^L winding pattern has discrete winding one
+[PASS] identity pattern has discrete winding zero
+[PASS] site-local U(1) homotopy stays unitary at t=0.0
+[PASS] site-local U(1) homotopy stays unitary at t=0.125
+[PASS] site-local U(1) homotopy stays unitary at t=0.25
+[PASS] site-local U(1) homotopy stays unitary at t=0.5
+[PASS] site-local U(1) homotopy stays unitary at t=0.75
+[PASS] site-local U(1) homotopy stays unitary at t=1.0
+[PASS] homotopy starts at winding pattern
+[PASS] homotopy ends at identity phases
+[PASS] discrete winding label changes along site-local homotopy
+[PASS] note carries pi0 carrier boundary
+[PASS] SU(2) one-parameter sample has determinant one
+[PASS] SU(2) one-parameter sample is unitary
+[PASS] SU(2) contraction midpoint keeps determinant one
+[PASS] sigma_z generator is traceless
+
+========================================================================================
+G. cross-plane and multiplaquette guards
+========================================================================================
+[PASS] per-plane sum has zero mixed derivative
+[PASS] cross-plane product has nonzero mixed derivative
+[PASS] FtildeF toy expression depends on complementary planes
+[PASS] cross-plane note states supplied action class boundary
+[PASS] cross-plane note preserves multi-plaquette reopening
+[PASS] note says per-plaquette result is conditional
+[PASS] note says multiplaquette routes remain open
+[PASS] note names branch/section non-supply
+
+========================================================================================
+H. note discipline
+========================================================================================
+[PASS] note Type header is no_go
+[PASS] note Claim type header is no_go
+[PASS] scope boundary blocks retirement
+[PASS] audit boundary present
+[PASS] primary runner link present
+[PASS] N1 gate present
+[PASS] N2 gate present
+[PASS] N3 gate present
+[PASS] N4 gate present
+[PASS] N5 gate present
+[PASS] N6 gate present
+[PASS] N7 gate present
+[PASS] N8 gate present
+[PASS] note carries boundary phrase: The mass-side determinant-readout bridge is unto
+[PASS] note carries boundary phrase: No full gauge-measure/action premise is derived.
+[PASS] note carries boundary phrase: No continuum/scaling-limit sector functional `Q`
+[PASS] note carries boundary phrase: No branch/section choice or topological-sector r
+[PASS] note carries boundary phrase: derive the action/Q/readout bridge or keep theta
+[PASS] forbidden phrase absent: Theta is retired
+[PASS] forbidden phrase absent: theta_bar = 0 is derived
+[PASS] forbidden phrase absent: audited_clean
+[PASS] forbidden phrase absent: effective_status = retained
+[PASS] forbidden phrase absent: neutron electric dipole
+[PASS] forbidden phrase absent: uses a fitted value
+[PASS] forbidden phrase absent: registry is edited
+[PASS] no wall names introduced
+
+========================================================================================
+I. markdown dependency and context control
+========================================================================================
+[PASS] markdown link inventory is controlled
+[PASS] context note not markdown-linked: THETA_GAUGE_SUBSTRATE_NO_WINDING_CARRIER_E
+[PASS] context note not markdown-linked: THETA_EMERGENT_Q_WEIGHTING_REALITY_RG_STAB
+[PASS] context note not markdown-linked: STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_I
+[PASS] context note not markdown-linked: STRONG_CP_THETA_BAR_STRUCTURED_ADMISSION_2
+[PASS] note line count is bounded
+[PASS] verification block states fail-zero threshold
+
+========================================================================================
+TOTAL: PASS=157 FAIL=0
+========================================================================================

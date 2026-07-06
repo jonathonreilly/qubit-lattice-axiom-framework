@@ -7,9 +7,9 @@ Scope-aware rule:
   - clean theorem/no-go/bounded rows become retained-grade only when every
     one-hop dependency is already retained-grade, metadata context, or an
     accepted premise.
-    Axiom/approved-primitive premises satisfy without bounding. Tier-A
-    derivation-target premises bound otherwise clean dependents to
-    retained_bounded until the target is retired.
+    Axiom/approved-primitive premises and owner-governed residual premises
+    satisfy without bounding. Tier-A derivation-target premises bound otherwise
+    clean dependents to retained_bounded until the target is retired.
   - open gates, decorations, metadata, and terminal non-clean audit verdicts
     have explicit effective statuses and never become retained by author tier.
 
@@ -128,6 +128,8 @@ def clean_status(row: dict, dep_effective: dict[str, str]) -> tuple[str, str]:
         if is_chain_satisfying_status(dep_status):
             continue
         if premise_nodes.is_axiom_premise(dep_id):
+            continue
+        if premise_nodes.is_owner_governed_premise(dep_id):
             continue
         if premise_nodes.is_admitted_derivation_target(dep_id):
             has_tier_a_derivation_target = True

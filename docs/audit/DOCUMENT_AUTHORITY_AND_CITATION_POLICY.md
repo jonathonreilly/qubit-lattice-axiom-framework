@@ -31,9 +31,9 @@ runner mechanically checks the invariants.
   only, logged in `docs/audit/AXIOM_MINIMALITY_POLICY.md`, guarded by the
   clean-base runner. Cite by quoting landed sentences verbatim.
 
-- **Class B — owner registries.** Approved primitives and Tier-A admissions
-  (`docs/audit/data/*.json`). Premise weight: as registered. Changes: owner
-  channels only. Cite by registry id.
+- **Class B — owner registries.** Approved primitives, owner-governed residual
+  premises, and Tier-A admissions (`docs/audit/data/*.json`). Premise weight:
+  as registered. Changes: owner channels only. Cite by registry id.
 
 - **Class C — runner-carried claim notes.** Bounded/no-go/bridge notes with a
   primary runner and a claim type. Premise weight: none until audit
@@ -114,9 +114,9 @@ registered, and zero premise weight in the meantime.
 class definitions above are present; the registry parses, uses only classes
 A-G, and carries `pr` on in-flight rows; every landed Class F document
 contains the formula phrase; no Class F or G path appears inside
-`axiom_premise_nodes.json` or `tier_a_admissions.json`; and the reciprocal
-front-door links exist. The runner is Class E infrastructure and proves
-nothing about physics.
+`axiom_premise_nodes.json`, `owner_governed_premise_nodes.json`, or
+`tier_a_admissions.json`; and the reciprocal front-door links exist. The
+runner is Class E infrastructure and proves nothing about physics.
 
 ## Links
 

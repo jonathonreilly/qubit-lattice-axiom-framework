@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_retirement_basis_rematch_claim_surface_2026_07_06.py
+runner_sha256: 44f3bc16c52a9087f20a6a54e054cf14cee3b5279bf2c3dd3549223934c9a885
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+=== AC_phi_lambda retirement-basis re-match + claim-surface audit ===
+
+[M1] registry state
+
+[PASS] live Tier-A count is 0
+[PASS] canonical_ids empty and derivation_targets empty
+[PASS] AC and theta preserved under retired_derivation_targets
+[PASS] owner-governed registry carries exactly one canonical id (the AC gate id)
+[PASS] the adopted residual candidates are exactly the two AC atoms
+[PASS] the recorded boundary carries the no-value sentence verbatim
+[PASS] the retirement surface records the audited gate landing
+[PASS] theta is NOT an owner-governed premise (registry-level separation)
+
+[M2] audited basis grades (live ledger)
+
+[PASS] all 16 basis rows are retained-grade
+
+[M3] atom-match witnesses
+
+[PASS] Candidate 1 adopts the AC(i) measure-side grain (verbatim witness)
+[PASS] Candidate 2 adopts the h-class/h-unit identity-read license (verbatim witness)
+[PASS] occupancy note carries the measure/realization-binary survivor language
+[PASS] delta-eta chain declares the R-eta premise as supplied, not derived
+[PASS] value-face note carries the registered-angle functional claim
+[PASS] species note: nothing further survives in sub-admission (iii) (verbatim witness)
+
+[M4] boundary witnesses
+
+[PASS] value-face note labels the PDG comparison a comparator (exactness residual open)
+[PASS] custody capstone carries the structure/value split (value modulo the named input)
+
+[M5] claim-surface sweep over the retired gate row's dependents
+
+[PASS] dependent set is substantial (>= 50 direct dependents)  [54 dependents]
+[PASS] every checked dependent mentioning the values also carries admission/conditionality vocabulary (zero flagged)  [checked=54, no-path=0, flagged=[]]
+[PASS] sweep coverage: at least 45 dependent notes read from disk  [checked=54]
+
+[M6] cross-admission separation (theta)
+
+[PASS] theta source row remains retained-grade in the live ledger  [retained_bounded]
+[PASS] adoption note records the theta disposition (approval context only; retained-derivation retirement untouched)
+
+============================================================================
+TOTAL: PASS=22 FAIL=0
+============================================================================
+
+----- stderr -----
+

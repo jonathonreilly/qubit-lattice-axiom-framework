@@ -693,6 +693,38 @@
       "to": "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
     },
     {
+      "from": "acphilambda_retirement_basis_rematch_and_claim_surface_note_2026-07-06",
+      "to": "tier_a_residual_owner_adoption_retirement_2026-07-04"
+    },
+    {
+      "from": "acphilambda_retirement_basis_rematch_and_claim_surface_note_2026-07-06",
+      "to": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"
+    },
+    {
+      "from": "acphilambda_retirement_basis_rematch_and_claim_surface_note_2026-07-06",
+      "to": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11"
+    },
+    {
+      "from": "acphilambda_retirement_basis_rematch_and_claim_surface_note_2026-07-06",
+      "to": "acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05"
+    },
+    {
+      "from": "acphilambda_retirement_basis_rematch_and_claim_surface_note_2026-07-06",
+      "to": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "acphilambda_retirement_basis_rematch_and_claim_surface_note_2026-07-06",
+      "to": "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09"
+    },
+    {
+      "from": "acphilambda_retirement_basis_rematch_and_claim_surface_note_2026-07-06",
+      "to": "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02"
+    },
+    {
+      "from": "acphilambda_retirement_basis_rematch_and_claim_surface_note_2026-07-06",
+      "to": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11"
+    },
+    {
       "from": "acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04",
       "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
     },
@@ -58351,6 +58383,27 @@
       "runner_path": "scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py",
       "title": "AC_phi_lambda Registrable Cycle-Holonomy Normal Form"
     },
+    "acphilambda_retirement_basis_rematch_and_claim_surface_note_2026-07-06": {
+      "claim_id": "acphilambda_retirement_basis_rematch_and_claim_surface_note_2026-07-06",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "tier_a_residual_owner_adoption_retirement_2026-07-04",
+        "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+        "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
+        "acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05",
+        "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
+        "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
+        "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+        "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "cd5e2f37aaff0f8ff394e1fa6c663f1a68f7464d4d3faf29e6612433df8c7d8f",
+      "path": "docs/ACPHILAMBDA_RETIREMENT_BASIS_REMATCH_AND_CLAIM_SURFACE_NOTE_2026-07-06.md",
+      "runner_path": "scripts/acphilambda_retirement_basis_rematch_claim_surface_2026_07_06.py",
+      "title": "AC_phi_lambda Retirement-Basis Re-Match and Claim-Surface Check"
+    },
     "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11": {
       "claim_id": "acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11",
       "claim_type_author_hint": "bounded_theorem",
@@ -109816,7 +109869,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9ef6440c838b89e5a1c03290497d1afdda30b1a96e00bd26be0e924ee73bef2d",
+      "note_hash": "c4ef04482c4fb351e3eeee656bf3f924964cfc7db5df6b868df0dc1a2460b355",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -125891,7 +125944,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 1559,
       "decoration": 3,
-      "meta": 320,
+      "meta": 321,
       "no_go": 324,
       "none": 1216,
       "open_gate": 133,
@@ -125900,16 +125953,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1964,
       "decoration": 3,
-      "meta": 320,
+      "meta": 321,
       "no_go": 428,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14348,
-    "leaf_count": 1299,
-    "node_count": 3829,
+    "edge_count": 14356,
+    "leaf_count": 1296,
+    "node_count": 3830,
     "root_count": 1104,
-    "runners_with_path": 3452
+    "runners_with_path": 3453
   }
 }

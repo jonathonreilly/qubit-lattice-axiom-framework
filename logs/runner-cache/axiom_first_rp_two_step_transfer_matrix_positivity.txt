@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
-runner_sha256: 1732cef8361d0eab0ef23e9e47435b1a40e291f68ec90a60305ab3d09c62dcec
+runner_sha256: 65ce9be50f8b1612614045773a1a7d861872ebd3b1c8d763844ec7e560890302
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -28,6 +28,15 @@ C1  DISPERSION ANCHOR (faithfulness): 2-step decaying eigenvalue == e^{-2E(p)}
     ... (16 momenta over the Brillouin zone)
     max dispersion residual = 2.945e-16  (tol 1e-09)
     max |Im(decay-mode)|    = 2.597e-16
+    mass-range persistence (real m>0): m in {0.05, 0.1, 0.5, 1, 2, 5}
+      m= 0.050: max|res|=2.61e-16  max|Im|=1.75e-16  min eig(T_hat^2)=1.540e-03
+      m= 0.100: max|res|=3.89e-16  max|Im|=9.03e-17  min eig(T_hat^2)=1.229e-03
+      m= 0.500: max|res|=2.94e-16  max|Im|=2.60e-16  min eig(T_hat^2)=1.264e-04
+      m= 1.000: max|res|=6.10e-16  max|Im|=2.32e-16  min eig(T_hat^2)=4.718e-06
+      m= 2.000: max|res|=4.58e-16  max|Im|=1.00e-16  min eig(T_hat^2)=1.611e-08
+      m= 5.000: max|res|=4.43e-16  max|Im|=4.89e-17  min eig(T_hat^2)=7.912e-13
+    sweep max dispersion residual = 6.104e-16  (tol 1e-09)
+    sweep min eig(T_hat^2)        = 7.912e-13  (>0 required throughout)
     C1 = PASS
 
 ------------------------------------------------------------------------------
@@ -87,7 +96,7 @@ C6  DECAYING-CHANNEL BRIDGE: spectral projector of action-derived T_odd T_even
 ==============================================================================
 SUMMARY
 ==============================================================================
-  C1 dispersion anchor   : PASS  (max residual 2.94e-16)
+  C1 dispersion anchor   : PASS  (m=0.5 residual 2.94e-16; sweep max 6.10e-16, min eig(T_hat^2)>0 over m in [0.05,5.0])
   C2 single-step non-PSD : PASS  (min |Im eig| for sin(p)!=0 0.562; sin(p)=0 negative mode YES)
   C3 2-step positivity   : PASS  (T_hat^2 positive Hermitian = B^dag B)
   C4 R2 OS Gram PSD      : PASS  (2-step OS Gram Hermitian PSD)

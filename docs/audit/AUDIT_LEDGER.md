@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 191 |
 | **retained_no_go** | 193 |
-| **retained_bounded** | 876 |
+| **retained_bounded** | 877 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
 | unaudited | 1929 |
-| audit_in_progress | 1 |
 | meta | 338 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
-| `audited_clean` | 1252 |
+| `audit_in_progress` | 12 |
+| `audited_clean` | 1253 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
@@ -113,7 +112,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1268 | 43.31 | `unaudited` | unaudited |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1005 | 41.97 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1507 | 41.56 | `audited_clean` | **retained** |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 999 | 40.47 | `audit_in_progress` | audit_in_progress |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 999 | 40.47 | `audited_clean` | **retained_bounded** |
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 300 | 39.23 | `unaudited` | unaudited |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 840 | 38.22 | `audited_clean` | **retained_no_go** |
 | 16 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 293 | 37.70 | `unaudited` | unaudited |
@@ -144,7 +143,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1169,6 +1167,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16372,6 +16371,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The path-product transport around each plaquette is identity exactly when the phases satisfy the Clifford -1 plaquette cocycle, and on simply connected regions the ratio of any two cocycle solutions is an exact local gauge one-cochain.  _(class `A`)_
 - **chain closes:** True — The bounded local theorem closes from Clifford anticommutation, unitary transport, and standard simply connected cubical cohomology. It does not derive P-KIN/P-SD or torus holonomy choices, but those are explicitly outside the audited claim scope.
 - **rationale:** The load-bearing step is exact algebra, not a definition, renaming, or numerical comparator: independently, gamma_nu gamma_mu gamma_nu gamma_mu = -I and the -1 cocycle makes the plaquette transport +I. The one-gauge-class claim follows because a closed U(1) or Z2 one-cochain is exact on the stated simply connected cubical regions. The runner source genuinely enumerates the unit cube and computes GF(2) ranks at scale rather than merely printing the claimed result.
+- **auditor confidence:** high
+
+### `staggered_dirac_realization_gate_note_2026-05-03`
+
+- **Note:** [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](../../docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded synthesis of the staggered-Dirac realization gate on Quantum plus Lattice and the declared premise set, with AC_phi_lambda generation labeling carried only by the no-go plus accepted labeling convention.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-acphi-gate-second-20260705`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The interface lemmas verify by explicit computation that each substep's delivered object equals the next substep's consumed object, and the runner reproduces the chained conclusion end-to-end from the Quantum plus Lattice instantiation with the labeling residual carried as convention.  _(class `C`)_
+- **chain closes:** True — The chain closes at bounded scope: the direct dependencies supplied in the packet are retained-grade or meta, the Tier-A AC_phi_lambda input is accounted as a labeling convention rather than a derivation, and the current runner plus matching cache pass 31/31 with the admitted residuals printed explicitly.
+- **rationale:** The source note and runner do not derive AC_phi_lambda labeling, physical charged-lepton values, r=1/2, delta=2/9, or gate retirement; they expose the labeling step as no-go plus P1 convention. The runner constructs the staggered operator, kernel, taste-cube characters, hw=1 M_3(C), commutants, C3 orbit, no-go witness, and convention-distinguishing check rather than merely printing constants. The remaining spin-statistics, kinetic-class/P-FLUX, boundary-holonomy, and labeling-convention inputs are declared boundaries, so the appropriate clean result is bounded_theorem, not an unbounded positive theorem.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`

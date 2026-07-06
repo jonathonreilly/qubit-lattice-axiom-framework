@@ -28,11 +28,11 @@ Owner-approval history for every axiom/primitive change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3657 |
-| Applied audit verdicts | 1377 |
-| Retained-grade rows, including boxed decorations | 1305 |
+| Applied audit verdicts | 1378 |
+| Retained-grade rows, including boxed decorations | 1306 |
 | Retained positive theorems | 191 |
 | Retained no-go rows | 193 |
-| Retained bounded rows | 876 |
+| Retained bounded rows | 877 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
 | Unaudited rows | 1929 |
@@ -49,10 +49,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1969 |
-| Ready rows | 207 |
+| Total pending rows | 1968 |
+| Ready rows | 206 |
 | Cycle-break targets | 10 |
-| Critical pending | 415 |
+| Critical pending | 414 |
 | High pending | 283 |
 | Medium pending | 513 |
 | Leaf pending | 758 |
@@ -64,16 +64,16 @@ Next ready rows by queue order:
 - [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
 - [`flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) - critical; audit_in_progress
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
-- [`staggered_dirac_realization_gate_note_2026-05-03`](../../docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md) - critical; audit_in_progress
 - [`yt_ward_identity_derivation_theorem`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
+- [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **441**.
+- Non-retained-grade cited rows in publication tables: **440**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -82,7 +82,6 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | medium | `unaudited` | 97 |
 | medium | `open_gate` | 3 |
 | high | `audited_numerical_match` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | high | `audited_conditional` | 1 |
 | high | `open_gate` | 1 |

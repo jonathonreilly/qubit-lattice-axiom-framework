@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 415,
+    "critical": 414,
     "high": 283,
     "leaf": 758,
     "medium": 513
@@ -273,38 +273,6 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
       "transitive_descendants": 1005
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
-      "claim_scope": "Bounded synthesis that the Quantum+Lattice staggered-Dirac realization clauses compose on the declared premise set: Grassmann two-candidate collapse, Kawamoto-Smit gauge class within the kinetic class, 8 BZ corners with 1+3+3+1 and hw=1 M_3(C)/AC_lambda surface, plus AC_phi_lambda no-go with the P1 labeling convention accounted as an external premise; no SM mass, PDG value, or unbounded gate-retirement derivation is audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
-        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
-        "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26"
-      ],
-      "direct_in_degree": 55,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 40.466,
-      "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py",
-      "transitive_descendants": 999
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -57704,6 +57672,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 207,
-  "total_pending": 1969
+  "ready_count": 206,
+  "total_pending": 1968
 }

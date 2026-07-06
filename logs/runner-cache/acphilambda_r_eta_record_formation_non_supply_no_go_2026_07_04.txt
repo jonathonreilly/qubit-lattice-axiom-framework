@@ -1,0 +1,92 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_r_eta_record_formation_non_supply_no_go_2026_07_04.py
+runner_sha256: bcd1cdcc827f45c4be9564c64d0e38519ccc447deec6e7f69249851a74ff4985
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+AC_phi_lambda R-eta Record-formation non-supply no-go
+==============================================================================
+
+------------------------------------------------------------------------------
+A - source and registry boundaries
+------------------------------------------------------------------------------
+PASS: exists: docs/ACPHILAMBDA_R_ETA_RECORD_FORMATION_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md
+PASS: exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+PASS: exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+PASS: note declares no-go claim type
+PASS: runner path is wired in note
+PASS: live Tier-A genuine count is zero
+PASS: canonical Tier-A IDs are empty on current main
+PASS: live derivation targets are empty on current main
+PASS: AC retired-target record is preserved
+PASS: AC retirement date is recorded -- {'date': '2026-07-05', 'mechanism': 'retired_by_owner_governance_on_audited_surface', 'owner_approval': 'In-thread approval for #4991 owner-governance adoption of the four Block49 residual candidates with the exact owner_governed_premise_nodes.json boundaries; current-main landing applies the registry delta only to the live AC_phi_lambda Tier-A target because theta was already retired by retained derivation.', 'owner_governed_premise_node': 'staggered_dirac_realization_gate_note_2026-05-03', 'adoption_source': 'docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md', 'audited_surface': 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md audited_clean / retained_bounded on main at 5d8df21fe', 'adopted_residual_candidates': ['ac_orbit_occupancy_statistical_grain_premise', 'ac_reta_hclass_hunit_readout_premise'], 'boundary': 'Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.', 'non_laundering': 'This retirement is not an axiom, not an approved primitive, not a theorem derivation, and not an audit verdict. Source-side theorem/no-go packet statuses remain audit-lane-owned.'}
+PASS: AC retirement mechanism is owner governance -- {'date': '2026-07-05', 'mechanism': 'retired_by_owner_governance_on_audited_surface', 'owner_approval': 'In-thread approval for #4991 owner-governance adoption of the four Block49 residual candidates with the exact owner_governed_premise_nodes.json boundaries; current-main landing applies the registry delta only to the live AC_phi_lambda Tier-A target because theta was already retired by retained derivation.', 'owner_governed_premise_node': 'staggered_dirac_realization_gate_note_2026-05-03', 'adoption_source': 'docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md', 'audited_surface': 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md audited_clean / retained_bounded on main at 5d8df21fe', 'adopted_residual_candidates': ['ac_orbit_occupancy_statistical_grain_premise', 'ac_reta_hclass_hunit_readout_premise'], 'boundary': 'Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.', 'non_laundering': 'This retirement is not an axiom, not an approved primitive, not a theorem derivation, and not an audit verdict. Source-side theorem/no-go packet statuses remain audit-lane-owned.'}
+PASS: historical AC decomposition retains R-eta -- ['reading_occupancy_selection', 'delta_readout_identification_R_eta', 'species_bridge']
+PASS: registry prose names density-read-as-angle
+PASS: note denies AC retirement
+PASS: note denies registry/axiom/primitive edits
+PASS: note has current-main posture line
+PASS: note records live Tier-A zero posture
+PASS: note says retirement records are not reopened
+
+------------------------------------------------------------------------------
+B - Record formation axiom boundary
+------------------------------------------------------------------------------
+PASS: minimal axioms contain formation sentence
+PASS: minimal axioms keep outside content outside: record-production process
+PASS: minimal axioms keep outside content outside: record-production dynamics
+PASS: minimal axioms keep outside content outside: time metric
+PASS: minimal axioms keep outside content outside: formation rules
+PASS: minimal axioms keep outside content outside: at what rate
+PASS: minimal axioms keep outside content outside: with what weight
+PASS: minimal axioms keep outside content outside: source/action
+PASS: minimal axioms keep outside content outside: physical-observable identification
+PASS: minimal axioms keep outside content outside: readout-context selection
+PASS: minimal axioms explicitly leave AC outside
+PASS: minimal axioms explicitly leave theta outside
+
+------------------------------------------------------------------------------
+C - fixed-locus arithmetic and formation-compatible family
+------------------------------------------------------------------------------
+PASS: each fixed-locus summand is 1/3
+PASS: averaged fixed-locus density is 2/9 -- 2/9
+PASS: fixed-locus note carries 2/9 arithmetic
+PASS: bare formation fact is the same for both summands
+PASS: direct_density is additive over formed record collections
+PASS: direct_density total is expected -- 2/9
+PASS: cycle_angle_sum is additive over formed record collections
+PASS: cycle_angle_sum total is expected -- 2/3
+PASS: count is additive over formed record collections
+PASS: count total is expected -- 2
+PASS: unit_event_rate is additive over formed record collections
+PASS: unit_event_rate total is expected -- 1
+PASS: arbitrary_positive_rate is additive over formed record collections
+PASS: arbitrary_positive_rate total is expected -- 10
+PASS: same formed records support mutually different event/readout assignments -- {'direct_density': 2/9, 'cycle_angle_sum': 2/3, 'count': 2, 'unit_event_rate': 1, 'arbitrary_positive_rate': 10}
+PASS: formation existence alone does not pick direct density
+
+------------------------------------------------------------------------------
+D - non-supply conclusion
+------------------------------------------------------------------------------
+PASS: occurrence hygiene no-go keeps event/rate content outside
+PASS: direct-license no-go keeps Record readout license unsupplied
+PASS: angle no-go keeps occurrence-lane clock/event route live
+PASS: delta chain isolates R-eta as conditional input
+PASS: note states formation does not supply event/rate law
+PASS: note requires separate occurrence or readout theorem
+PASS: new note is a source-side bounded no-go
+PASS: banned overclaim phrases are absent
+
+==============================================================================
+TOTAL: PASS=60 FAIL=0
+
+----- stderr -----
+

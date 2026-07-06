@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py
+runner_sha256: 770ce568dc8b2b91f62b6ead8a4c41a3a6e9e9c610a8a7f64d1828216a559506
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+AC_phi_lambda Record outcome-orbit occupancy non-supply no-go
+==============================================================================
+
+------------------------------------------------------------------------------
+A - source and registry boundaries
+------------------------------------------------------------------------------
+PASS: exists: docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: exists: docs/MINIMAL_AXIOMS_2026-06-05.md
+PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md
+PASS: exists: docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md
+PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md
+PASS: exists: docs/ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
+PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
+PASS: note declares no_go claim type
+PASS: runner path is wired in note
+PASS: note denies AC retirement
+PASS: note denies horn selection and r derivation
+PASS: note denies premise/primitive adoption
+PASS: note denies registry/axiom edits
+PASS: live Tier-A genuine count is zero
+PASS: canonical Tier-A IDs are empty on current main
+PASS: live derivation targets are empty on current main
+PASS: AC retired-target record is preserved
+PASS: AC retirement date is recorded -- {'date': '2026-07-05', 'mechanism': 'retired_by_owner_governance_on_audited_surface', 'owner_approval': 'In-thread approval for #4991 owner-governance adoption of the four Block49 residual candidates with the exact owner_governed_premise_nodes.json boundaries; current-main landing applies the registry delta only to the live AC_phi_lambda Tier-A target because theta was already retired by retained derivation.', 'owner_governed_premise_node': 'staggered_dirac_realization_gate_note_2026-05-03', 'adoption_source': 'docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md', 'audited_surface': 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md audited_clean / retained_bounded on main at 5d8df21fe', 'adopted_residual_candidates': ['ac_orbit_occupancy_statistical_grain_premise', 'ac_reta_hclass_hunit_readout_premise'], 'boundary': 'Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.', 'non_laundering': 'This retirement is not an axiom, not an approved primitive, not a theorem derivation, and not an audit verdict. Source-side theorem/no-go packet statuses remain audit-lane-owned.'}
+PASS: AC retirement mechanism is owner governance -- {'date': '2026-07-05', 'mechanism': 'retired_by_owner_governance_on_audited_surface', 'owner_approval': 'In-thread approval for #4991 owner-governance adoption of the four Block49 residual candidates with the exact owner_governed_premise_nodes.json boundaries; current-main landing applies the registry delta only to the live AC_phi_lambda Tier-A target because theta was already retired by retained derivation.', 'owner_governed_premise_node': 'staggered_dirac_realization_gate_note_2026-05-03', 'adoption_source': 'docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md', 'audited_surface': 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md audited_clean / retained_bounded on main at 5d8df21fe', 'adopted_residual_candidates': ['ac_orbit_occupancy_statistical_grain_premise', 'ac_reta_hclass_hunit_readout_premise'], 'boundary': 'Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.', 'non_laundering': 'This retirement is not an axiom, not an approved primitive, not a theorem derivation, and not an audit verdict. Source-side theorem/no-go packet statuses remain audit-lane-owned.'}
+PASS: historical AC decomposition preserves three old atoms -- ['reading_occupancy_selection', 'delta_readout_identification_R_eta', 'species_bridge']
+PASS: note has current-main posture line
+PASS: note records live Tier-A zero posture
+PASS: note says retirement records are not reopened
+
+------------------------------------------------------------------------------
+B - current versus older axiom surface
+------------------------------------------------------------------------------
+PASS: current axioms supersede June 5 memo
+PASS: current axioms keep K/CPT orbit structure downstream
+PASS: current axioms keep weights and context selection outside
+PASS: current axioms explicitly keep AC_phi_lambda outside
+PASS: older supplied-context Record wording named K/CPT orbit only conditionally
+PASS: older Record wording denied weights and occupancy supply
+
+------------------------------------------------------------------------------
+C - same outcome object, different dictionaries
+------------------------------------------------------------------------------
+PASS: component and slot dictionaries share the same outcome variable x
+PASS: component dictionary x=2r maps x=1 to r=1/2
+PASS: slot dictionary x=r maps x=1 to r=1
+PASS: the two dictionaries are not the same map
+PASS: component dictionary is additive on the same outcome labels
+PASS: slot dictionary is additive on the same outcome labels
+PASS: determinant exponents differ by dictionary, not by outcome label
+PASS: landed cells remain distinct
+
+------------------------------------------------------------------------------
+D - source integration and non-overclaim
+------------------------------------------------------------------------------
+PASS: outcome dictionary note states Record names object not weight
+PASS: outcome dictionary note keeps occupancy binary open
+PASS: AC reduction names measure-side survivor
+PASS: Block28 determinant split identifies what must be selected
+PASS: measure-binary no-go blocks axiom/primitive retirement
+PASS: formation-append no-go blocks Record shortcut
+PASS: note contains required phrase: The implication is invalid
+PASS: note contains required phrase: outcome object only
+PASS: note contains required phrase: does not select the determinant-power dictionary
+PASS: note contains required phrase: physical measure/readout theorem
+PASS: note contains required phrase: Remaining Live Routes
+PASS: banned overclaim phrases are absent except explicit denials
+
+==============================================================================
+TOTAL: PASS=51 FAIL=0
+
+----- stderr -----
+

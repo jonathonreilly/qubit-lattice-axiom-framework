@@ -1,0 +1,18 @@
+block: tier-a-elimination-block08-theta-mass
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block08-theta-mass-20260704
+base_branch: physics-loop/tier-a-elimination-block07-aci-binary-20260704
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4933
+source_commit: 7f4642214
+target: theta mass-side determinant-readout bridge
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: pr_open
+verification:
+  runner: "PASS=110 FAIL=0"
+  py_compile: pass
+  audit_pipeline: pass
+  audit_lint_strict: "pass; existing warnings/notices only"
+  diff_check: pass
+next_exact_action: "Monitor PR #4933 audit_pipeline, then continue with theta gauge-side winding as the remaining theta Tier-A residual."

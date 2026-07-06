@@ -1,0 +1,14 @@
+slug: primitive-retirement-review-20260705
+date: 2026-07-05
+branch: physics-loop/primitive-retirement-review-20260705
+status: packaged_review_note
+target: review whether the updated four-axiom surface retires any registered framework primitive
+verdict: no_current_primitive_retirement
+artifacts:
+  - docs/PRIMITIVE_RETIREMENT_REVIEW_AFTER_FOUR_AXIOM_RESET_NOTE_2026-07-05.md
+  - scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py
+  - logs/runner-cache/primitive_retirement_review_after_four_axiom_reset_2026_07_05.txt
+next_actions:
+  - optional hygiene scrub of primitive notes to replace old three-axiom narrative references with the current four-axiom surface
+  - optional fix for scripts/scale_reference_primitive_boundary_check.py stale Tier-A count assertion after theta and AC_phi_lambda retirements
+  - deeper kinetic-isotropy retirement attempt if the user wants to pursue a primitive-retirement lane

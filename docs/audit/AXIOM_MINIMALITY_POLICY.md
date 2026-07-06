@@ -80,10 +80,15 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
   are tracked in `docs/audit/data/axiom_premise_nodes.json`, chain-satisfy
   dependencies without bounding downstream status, and are guarded by
   `check_axiom_premise_clean.py`.
+- **Owner-governed residual premises** are explicit owner-governance
+  retirements of formerly Tier-A residuals. They are tracked in
+  `docs/audit/data/owner_governed_premise_nodes.json`, chain-satisfy
+  dependencies without Tier-A bounding, and are not axioms, approved
+  primitives, or theorem derivations.
 - **Tier-A admitted derivation targets** are non-axiom inputs with no-go
   portfolios. They are tracked in `docs/audit/data/tier_a_admissions.json` and
   chain-satisfy only at `retained_bounded` until retired by a retained
-  derivation.
+  derivation or explicit owner-governance adoption.
 
 Entries below are the historical record of approvals and their validation
 provenance. They carry no premise or interpretive weight: effect statements
@@ -524,6 +529,47 @@ registry's designed discharge path, not an axiom or primitive change):
   - **Approval.** Owner approval recorded in the PR #3511 thread
     (2026-07-05). Review-loop must verify that approval comment exists
     before landing the registry edit.
+
+Recorded Tier-A retirement (explicit owner-governance adoption; not an axiom,
+primitive, or audit-ratified theorem closure):
+
+- **2026-07-05 -- AC_phi_lambda retired from live Tier-A by owner-governance
+  adoption on an audited surface.** Owner approval recorded in-thread:
+  "I approve #4991's owner-governance adoption of the four Block49 residual
+  candidates, with the exact boundaries in owner_governed_premise_nodes.json,
+  retiring live Tier-A admissions without treating them as axioms, primitives,
+  or audit-ratified theorem closures." Because theta had already been retired
+  by retained derivation on current main, this registry landing applies the
+  owner-governed registry delta only to the remaining live Tier-A target,
+  `staggered_dirac_realization_gate_note_2026-05-03` (`AC_phi_lambda`). The
+  target source surface itself had already landed through the audit lane as
+  `audited_clean` / `retained_bounded` at main commit `5d8df21fe`, with its
+  full basis terminal-grade.
+  - **Registry effect.** `AC_phi_lambda` is moved from
+    `derivation_targets` to `retired_derivation_targets` in
+    `docs/audit/data/tier_a_admissions.json`; `genuine_admitted_input_count`
+    becomes zero, `canonical_ids` becomes empty, and `derivation_targets`
+    becomes empty. The live owner-governed boundary is registered in
+    `docs/audit/data/owner_governed_premise_nodes.json` under
+    `staggered_dirac_realization_gate_note_2026-05-03`. Theta stays under its
+    existing retained-derivation retirement record and is not resurrected as
+    an owner-governed premise.
+  - **Adopted AC residuals.** The adopted AC owner-governed residual
+    candidates are exactly `ac_orbit_occupancy_statistical_grain_premise` and
+    `ac_reta_hclass_hunit_readout_premise`. The owner approval also covered
+    the two theta residual candidates, but on current main those candidates no
+    longer retire a live slot because the theta slot was already closed by the
+    retained derivation record above.
+  - **No laundering.** This is not an axiom update, not an approved primitive,
+    and not a theorem derivation. It does not set or edit any audit verdict.
+    The AC adoption supplies no value of `r`, `delta`, charged-lepton mass,
+    mixing angle, probability rule, above-C3 taste/Dirac/chirality content,
+    CKM/PMNS alignment, or sector-weight law. Source-side theorem/no-go packet
+    statuses remain audit-lane-owned.
+  - **Scope.** Chain-satisfying authority is the owner-governed registry entry
+    plus its exact boundary, not this policy prose. Dependents re-grade solely
+    through the automatic effective-status pipeline; no hand retagging or
+    audit result is applied by this entry.
 
 Recorded Tier-A registry refinement (admissions remain Tier-A; nothing is
 promoted to axiom or primitive class):

@@ -5,11 +5,16 @@ Single source of truth for which cited authorities count as *accepted
 premises* -- dependencies that satisfy chain closure even though their own
 effective_status is not in a retained-grade bucket.
 
-There are two supported classes:
+There are three supported classes:
 
 * axiom/primitive premises from docs/audit/data/axiom_premise_nodes.json. These
   are framework axioms or explicitly approved primitives, are not audited,
   and do not bound downstream status.
+* owner-governed residual premises from
+  docs/audit/data/owner_governed_premise_nodes.json. These are explicit
+  owner-adopted governance premises that retire formerly Tier-A residuals
+  without making them axioms or approved primitives. They satisfy chain closure
+  without Tier-A bounding, but only inside the recorded boundaries.
 * Tier-A derivation-target admissions from docs/audit/data/tier_a_admissions.json.
   These are named non-axiom inputs accepted as chain-satisfying only at the
   bounded tier until a retained derivation lands and the entry is removed.
@@ -40,9 +45,11 @@ from pathlib import Path
 
 _DATA_DIR = Path(__file__).resolve().parents[1] / "data"
 _AXIOM_PREMISE_NODES_PATH = _DATA_DIR / "axiom_premise_nodes.json"
+_OWNER_GOVERNED_PREMISE_NODES_PATH = _DATA_DIR / "owner_governed_premise_nodes.json"
 _TIER_A_ADMISSIONS_PATH = _DATA_DIR / "tier_a_admissions.json"
 
 _AXIOM_PREMISE_IDS: set[str] | None = None
+_OWNER_GOVERNED_PREMISE_IDS: set[str] | None = None
 _TIER_A_DATA: dict | None = None
 _TIER_A_DERIVATION_TARGET_IDS: set[str] | None = None
 _TIER_A_CONVENTION_IDS: set[str] | None = None
@@ -65,6 +72,29 @@ def axiom_premise_ids() -> set[str]:
             except Exception:
                 _AXIOM_PREMISE_IDS = set()
     return _AXIOM_PREMISE_IDS
+
+
+def owner_governed_premise_ids() -> set[str]:
+    """Canonical owner-governed residual premise ids.
+
+    Entries in owner_governed_premise_nodes.json chain-satisfy without bounding
+    downstream rows. They are not axioms, not approved primitives, and not
+    theorem derivations; they are explicit owner-governance retirements of
+    formerly Tier-A residuals.
+    """
+    global _OWNER_GOVERNED_PREMISE_IDS
+    if _OWNER_GOVERNED_PREMISE_IDS is None:
+        if not _OWNER_GOVERNED_PREMISE_NODES_PATH.exists():
+            _OWNER_GOVERNED_PREMISE_IDS = set()
+        else:
+            try:
+                data = json.loads(
+                    _OWNER_GOVERNED_PREMISE_NODES_PATH.read_text(encoding="utf-8")
+                )
+                _OWNER_GOVERNED_PREMISE_IDS = set(data.get("canonical_ids") or [])
+            except Exception:
+                _OWNER_GOVERNED_PREMISE_IDS = set()
+    return _OWNER_GOVERNED_PREMISE_IDS
 
 
 def tier_a_admissions_data() -> dict:
@@ -114,11 +144,15 @@ def tier_a_admission_ids() -> set[str]:
 
 def accepted_premise_ids() -> set[str]:
     """Ids accepted as chain-satisfying premises."""
-    return axiom_premise_ids() | tier_a_admission_ids()
+    return axiom_premise_ids() | owner_governed_premise_ids() | tier_a_admission_ids()
 
 
 def is_axiom_premise(dep_id: str) -> bool:
     return dep_id in axiom_premise_ids()
+
+
+def is_owner_governed_premise(dep_id: str) -> bool:
+    return dep_id in owner_governed_premise_ids()
 
 
 def is_admitted_derivation_target(dep_id: str) -> bool:
@@ -146,9 +180,10 @@ def is_accepted_premise_dep(dep_id: str) -> bool:
 
 
 def _reset_cache_for_tests() -> None:
-    global _AXIOM_PREMISE_IDS, _TIER_A_DATA
+    global _AXIOM_PREMISE_IDS, _OWNER_GOVERNED_PREMISE_IDS, _TIER_A_DATA
     global _TIER_A_DERIVATION_TARGET_IDS, _TIER_A_CONVENTION_IDS
     _AXIOM_PREMISE_IDS = None
+    _OWNER_GOVERNED_PREMISE_IDS = None
     _TIER_A_DATA = None
     _TIER_A_DERIVATION_TARGET_IDS = None
     _TIER_A_CONVENTION_IDS = None

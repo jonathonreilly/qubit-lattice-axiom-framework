@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 877 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1929 |
-| meta | 338 |
+| unaudited | 1930 |
+| meta | 339 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 26 |
+| ~~audited_conditional~~ | 25 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -61,18 +61,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1253 |
-| `audited_conditional` | 26 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2267 |
+| `unaudited` | 2269 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1992 |
 | `decoration` | 50 |
-| `meta` | 344 |
+| `meta` | 345 |
 | `no_go` | 474 |
 | `open_gate` | 185 |
 | `positive_theorem` | 612 |
@@ -81,7 +81,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 660 |
 | `high` | 469 |
-| `medium` | 923 |
+| `medium` | 924 |
 | `leaf` | 1605 |
 
 - **Retained pending chain closure:** 4
@@ -89,10 +89,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3317
+- runners classified: 3318
 - runners with (C) first-principles compute hits: 1739
 - runners with (D) external comparator hits: 1067
-- decoration candidates (no C, no D): 695
+- decoration candidates (no C, no D): 696
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -112,7 +112,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1268 | 43.31 | `unaudited` | unaudited |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1005 | 41.97 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1507 | 41.56 | `audited_clean` | **retained** |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 999 | 40.47 | `audited_clean` | **retained_bounded** |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 999 | 39.97 | `audited_clean` | **retained_bounded** |
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 300 | 39.23 | `unaudited` | unaudited |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 840 | 38.22 | `audited_clean` | **retained_no_go** |
 | 16 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 293 | 37.70 | `unaudited` | unaudited |
@@ -1399,7 +1399,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2359,21 +2358,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using [E_ij,E_pp] = delta_jp E_ip - delta_pi E_pj, the expansion i[H,rho_p] = i sum_i c_ip E_ip - i sum_j c_pj E_pj equals sum_{q != p} i(c_qp E_qp - c_pq E_pq) after the q=p term cancels.  _(class `A`)_
 - **chain closes:** True — The commutator identity directly gives the local continuity equation for arbitrary finite I, and summing over p cancels every oriented pair. The support-envelope and antisymmetry claims follow immediately from the displayed definition of J_{p<-q}.
 - **rationale:** The load-bearing step is a genuine algebraic closure from the stated matrix-unit commutator, not a definition substitution or imported physical bridge. An independent manual expansion verifies the sign, the q=p cancellation, global cancellation, and the dependence only on c_pq and c_qp. The runner source performs actual symbolic dictionary algebra and concrete matrix-unit checks without external comparators, hard-coded contested values, or helper opacity. The note explicitly excludes the staggered carrier and physical density bridge, so no open carrier-specific dependency is imported into this scoped claim.
-- **auditor confidence:** high
-
-### `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
-
-- **Note:** [`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`](../../docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Free staggered-only U=1 action surface in 1+1d with periodic L_s, one Grassmann component per site, canonical staggered phases, and real m>0: the single-step transfer operator is non-positive, while the two-step blocked transfer matrix is positive Hermitian via the action-derived decaying channel and finite Gamma construction.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-2026-07-05-wave1`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The two-step blocked transfer matrix T_hat^2 = T_odd . T_even is positive Hermitian on the free Fock space, with t1^(2)(p)=e^{-2E(p)} and E(p)=arcsinh(sqrt(m^2+sin^2 p)), while the single-step transfer operator is non-positive.  _(class `C`)_
-- **chain closes:** False — The free-case C1-C6 finite-dimensional derivation itself checks out independently, but the paired runner no longer matches the source row as written: the note states PASS=6 FAIL=0 and C1-C6, while the current runner reports PASS=7 FAIL=0 and adds C7 by reading an unaudited downstream parent source.
-- **rationale:** Issue: source-runner drift in the primary audit artifact. The source note repeatedly states that the paired runner witnesses the free theorem with C1-C6 and PASS=6 FAIL=0, but the current runner emits PASS=7 FAIL=0 and adds a Wilson temporal-gauge bridge guard C7 that reads docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md, an unaudited downstream parent not listed as an upstream dependency of this row. Why this blocks: a clean audit cannot certify this row as written when the paired runner is partly checking an out-of-scope downstream bridge rather than only the stated free U=1 theorem and boundary. Repair target: split or remove C7 from this free-case runner, or explicitly update the source theorem, boundary, and dependency graph if C7 is intended to be load-bearing; then refresh the runner output and re-audit. Claim boundary until fixed: the C1-C6 free two-step positivity and single-step non-positivity calculations are witnessed, but the row is not clean/retained because its current paired runner artifact is not confined to that stated claim.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`

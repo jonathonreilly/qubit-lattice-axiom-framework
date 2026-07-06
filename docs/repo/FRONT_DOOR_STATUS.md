@@ -15,29 +15,30 @@ It is not a physics claim surface and should not be edited by hand.
 | `scale_reference_primitive` | approved primitive | [`docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md`](../../docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md) |
 | `kinetic_isotropy_primitive` | approved primitive | [`docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](../../docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) |
 | `realized_state_primitive` | approved primitive | [`docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](../../docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) |
+| `staggered_dirac_realization_gate_note_2026-05-03` | owner-governed residual premise (`AC_phi_lambda`) | [`docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`](../../docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md) |
 
-Tier-A admitted derivation targets (1): `AC_phi_lambda` (row `staggered_dirac_realization_gate_note_2026-05-03`).
-Dependents chain-satisfy only at `retained_bounded` until an
-admission is retired by a retained derivation.
+Tier-A admitted derivation targets (0): none.
+Live Tier-A dependents chain-satisfy only at `retained_bounded` until an
+admission is retired by retained derivation or explicit owner-governance adoption.
 
-Owner-approval history for every axiom/primitive change:
+Owner-approval history for every axiom/primitive/governance change:
 [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) section 6.
 
 ## Audit Surface
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3657 |
-| Applied audit verdicts | 1378 |
+| Ledger rows | 3658 |
+| Applied audit verdicts | 1377 |
 | Retained-grade rows, including boxed decorations | 1306 |
 | Retained positive theorems | 191 |
 | Retained no-go rows | 193 |
 | Retained bounded rows | 877 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
-| Unaudited rows | 1929 |
+| Unaudited rows | 1930 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 26 |
+| Audited conditional rows | 25 |
 | Audited renaming rows | 19 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 10 |
@@ -93,10 +94,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3828 |
+| Citation-graph nodes | 3829 |
 | Critical nodes | 668 |
 | High nodes | 472 |
-| Medium nodes | 970 |
+| Medium nodes | 971 |
 | Leaf nodes | 1718 |
 
 Top load-bearing rows by graph score:

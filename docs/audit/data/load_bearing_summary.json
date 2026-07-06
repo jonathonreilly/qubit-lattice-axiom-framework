@@ -3,10 +3,10 @@
     "critical": 668,
     "high": 472,
     "leaf": 1718,
-    "medium": 970
+    "medium": 971
   },
   "flagship_signal_used": false,
-  "node_count": 3828,
+  "node_count": 3829,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -91,7 +91,7 @@
     {
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
       "criticality": "critical",
-      "load_bearing_score": 40.466,
+      "load_bearing_score": 39.966,
       "transitive_descendants": 999
     },
     {

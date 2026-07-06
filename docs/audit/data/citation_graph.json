@@ -56962,6 +56962,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "tier_a_residual_owner_adoption_retirement_2026-07-04"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "no_per_site_chirality_theorem_note_2026-05-02"
     },
     {
@@ -56982,15 +56986,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_realization_gate_note_2026-05-03"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "yt_ward_identity_derivation_theorem"
     },
     {
       "from": "repo.front_door_status",
       "to": "cl3_taste_generation_theorem"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -58620,7 +58624,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0dc14677e9c5099b858664a3f0532e274482a7d7b8b6d3d13ce66ef6c22495ba",
+      "note_hash": "5b422d3ea7f8d2c7743bdb0f8cadb3ecf0efba78d7d3eb6a57291dfe33118de6",
       "path": "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
       "runner_path": "scripts/admitted_input_registry_tier_a_boundary_check.py",
       "title": "Admitted-Input Registry \u2014 Tier A (Central Index of Named Non-Axiom Admissions)"
@@ -109801,17 +109805,18 @@
         "scale_reference_primitive",
         "kinetic_isotropy_primitive",
         "realized_state_primitive",
+        "tier_a_residual_owner_adoption_retirement_2026-07-04",
         "no_per_site_chirality_theorem_note_2026-05-02",
         "hypercharge_identification_note",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-        "staggered_dirac_realization_gate_note_2026-05-03",
         "yt_ward_identity_derivation_theorem",
-        "cl3_taste_generation_theorem"
+        "cl3_taste_generation_theorem",
+        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8fcc454cf4ba5be790504941ef79963566f7b6603dcb1ea21487b6170548b968",
+      "note_hash": "9ef6440c838b89e5a1c03290497d1afdda30b1a96e00bd26be0e924ee73bef2d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118182,6 +118187,18 @@
       "runner_path": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py",
       "title": "Tier-A K/CPT Orientation Invariance For The AC_phi_lambda Gate: Bounded Candidate Route"
     },
+    "tier_a_residual_owner_adoption_retirement_2026-07-04": {
+      "claim_id": "tier_a_residual_owner_adoption_retirement_2026-07-04",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "74bc1197596b12103e0397a690670ead3e9821eabc9bdffd9948bef875263edc",
+      "path": "docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md",
+      "runner_path": "scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py",
+      "title": "Tier-A Residual Owner Adoption and Retirement"
+    },
     "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20": {
       "claim_id": "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
       "claim_type_author_hint": "positive_theorem",
@@ -125763,6 +125780,7 @@
     "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
     "three_generation_rooting_undefined_narrow_theorem_note_2026-05-26",
     "three_generation_rooting_undefined_narrow_theorem_note_2026-05-27",
+    "tier_a_residual_owner_adoption_retirement_2026-07-04",
     "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
     "triple_stack_collapse_scaling_note",
     "two_field_retarded_family_closure_note_2026-04-10",
@@ -125873,7 +125891,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 1559,
       "decoration": 3,
-      "meta": 319,
+      "meta": 320,
       "no_go": 324,
       "none": 1216,
       "open_gate": 133,
@@ -125882,16 +125900,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 1964,
       "decoration": 3,
-      "meta": 319,
+      "meta": 320,
       "no_go": 428,
       "none": 248,
       "open_gate": 207,
       "positive_theorem": 659
     },
-    "edge_count": 14347,
+    "edge_count": 14348,
     "leaf_count": 1299,
-    "node_count": 3828,
-    "root_count": 1103,
-    "runners_with_path": 3451
+    "node_count": 3829,
+    "root_count": 1104,
+    "runners_with_path": 3452
   }
 }

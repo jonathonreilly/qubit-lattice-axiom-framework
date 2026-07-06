@@ -198,12 +198,15 @@ Definitions you must use:
     non-retained-grade upstream is the axiom/primitive premise, and whose
     load-bearing step genuinely closes from that premise content plus
     retained-grade inputs, is eligible for `audited_clean`.
+    Owner-governed residual premises are also accepted premises inside their
+    recorded registry boundaries. They are not axioms, primitives, or theorem
+    derivations, but they do not impose Tier-A boundedness once adopted.
     Tier-A admitted derivation targets are different: they are accepted
     non-axiom premises only at the bounded tier. A clean row depending on a
     Tier-A admitted derivation target may become `retained_bounded` after the
     pipeline computes effective status, but it is not eligible for full
     unbounded `retained` until that admission is retired by a retained
-    derivation.
+    derivation or explicit owner-governance adoption.
     **This is not a free pass.** The carve-out removes only the automatic
     downgrade; the load-bearing step must still correctly use the axiom
     content. If the step merely re-reads the axiom's wording or asserts a

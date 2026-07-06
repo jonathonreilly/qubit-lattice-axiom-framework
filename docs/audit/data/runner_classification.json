@@ -821,11 +821,11 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 4,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "C",
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "runner": "scripts/admitted_input_registry_tier_a_boundary_check.py"
     },
     "affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02": {
@@ -1864,8 +1864,8 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 19,
+        "B": 0,
+        "C": 18,
         "D": 0
       },
       "decoration_candidate": false,
@@ -37044,6 +37044,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py"
     },
+    "tier_a_residual_owner_adoption_retirement_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py"
+    },
     "topological_instanton_textbook_infrastructure_import_note_2026-05-17": {
       "assert_count": 8,
       "counts": {
@@ -42333,11 +42345,11 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 4,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "C",
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/alpha_bare_four_pi_from_z3_plancherel_bridge_2026_05_26.py": {
@@ -45815,8 +45827,8 @@
       ],
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 19,
+        "B": 0,
+        "C": 18,
         "D": 0
       },
       "decoration_candidate": false,
@@ -89978,6 +89990,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "tier_a_residual_owner_adoption_retirement_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/topological_instanton_bounded_certificate.py": {
       "assert_count": 8,
       "claims": [
@@ -91085,15 +91112,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 695,
+    "decoration_candidates": 696,
     "dominant_class_distribution": {
       "A": 499,
-      "B": 634,
-      "C": 1276,
+      "B": 636,
+      "C": 1275,
       "D": 451,
       "none": 457
     },
-    "runners_classified": 3317,
+    "runners_classified": 3318,
     "runners_with_C": 1739,
     "runners_with_D": 1067
   }

@@ -52,7 +52,7 @@ re-derived here, and full `U`-integrated RP is not claimed here.
 
 Numbers (primary runner, `PASS=6 FAIL=0` at `m = 0.5`): 2-step decaying
 eigenvalue matches `e^{-2 E(p)}` over the Brillouin zone to max residual
-`3.4e-16` (C1, faithfulness); single-step spectra over `sin(p) != 0` have
+`2.9e-16` (C1, faithfulness); single-step spectra over `sin(p) != 0` have
 `min |Im eig(T_even/T_odd)| = 0.562` and the `sin(p)=0` modes have eigenvalues
 `{-1.618, +0.618}` at `m=0.5` (C2, non-positive); `T_hat^2` positive Hermitian
 with `min eig > 0` and exact
@@ -67,7 +67,7 @@ runner also verifies the finite spectral projectors of the action-derived
 and checks its exterior/Gamma image is positive `=B^dag B` (C6, decaying
 bridge). Faithfulness and 2-step positivity persist over
 the mass range `m in {0.05, 0.1, 0.5, 1.0, 2.0, 5.0}` (max dispersion residual
-`4.1e-16`; `min eig(T_hat^2) > 0` throughout).
+`6.1e-16`; `min eig(T_hat^2) > 0` throughout).
 
 ## Why two steps (mechanism, not citation)
 
@@ -131,7 +131,7 @@ The 2-step classical matrix `T2cl(p) = T_odd(p) . T_even(p)` has eigenvalues
 
 the exact free staggered `1+1d` dispersion. The decaying (physical) eigenvalue
 is `e^{-2 E(p)}`, real and positive. The runner verifies this match across the
-Brillouin zone with maximum residual `3.4e-16`. Reproducing the known
+Brillouin zone with maximum residual `2.9e-16`. Reproducing the known
 dispersion is the proof that the construction is faithful to the staggered
 action, not an artifact: the 2-step block is the physical object whose spectrum
 is the staggered energy.
@@ -262,7 +262,7 @@ The runner reports a PASS/FAIL scorecard; PASS overall requires (free case):
 
 | Check | Surface | Pass condition | Result |
 |---|---|---|---|
-| C1 dispersion anchor | 2-step decaying eigenvalue vs `e^{-2 E(p)}` over the BZ | max residual `< 1e-9` | `3.4e-16` |
+| C1 dispersion anchor | 2-step decaying eigenvalue vs `e^{-2 E(p)}` over the BZ | max residual `< 1e-9` | `2.9e-16` |
 | C2 single-step non-PSD | `spec(T_even/T_odd)` for `sin(p) != 0`; exceptional `sin(p)=0` modes | `min |Im eig| > 1e-3` off the exceptional set; negative eigenvalue at `sin(p)=0` | `0.562`; `{-1.618,+0.618}` |
 | C3 2-step positivity | `T_hat^2` positive Hermitian `= B^dag B`, `L_s in {2,3,4,6}` | `min eig > 0`, `||T_hat^2 - B^dag B|| < 1e-10` | `min eig > 0`, `~6e-17` |
 | C4 R2 OS Gram PSD | operator-picture 2-step OS Gram | Hermitian, `min eig >= -1e-10` | `min eig = 0`, PSD |

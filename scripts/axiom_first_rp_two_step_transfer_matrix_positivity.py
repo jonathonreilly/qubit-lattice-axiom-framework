@@ -151,6 +151,7 @@ import numpy as np
 MASS = 0.5
 TOL_DISP = 1e-9
 TOL_PSD = 1e-10
+MASS_SWEEP = (0.05, 0.1, 0.5, 1.0, 2.0, 5.0)
 
 
 # ---------------------------------------------------------------------------
@@ -266,6 +267,27 @@ def build_manybody_T2(Ls: int, m: float):
         "max_eig": float(eig.max()),
         "BdagB_err": recon,
     }
+
+
+def check_dispersion_mass_sweep(masses=MASS_SWEEP, ls_set=(2, 3, 4, 6)):
+    """C1 persistence over real m > 0: the faithfulness anchor and 2-step
+    positivity are not artifacts of m = 0.5. For each mass, take the max
+    Brillouin-zone residual |decaying eigenvalue - e^{-2E(p)}| (faithfulness)
+    and the min eigenvalue of the many-body T_hat^2 over L_s in {2,3,4,6}
+    (positivity). Returns per-mass rows and the sweep extrema.
+    """
+    rows = []
+    sweep_max_res = 0.0
+    sweep_max_imag = 0.0
+    sweep_min_eig = float("inf")
+    for m in masses:
+        max_res, max_imag, _ = check_dispersion_anchor(m)
+        min_eig = min(build_manybody_T2(Ls, m)["min_eig"] for Ls in ls_set)
+        rows.append((m, max_res, max_imag, min_eig))
+        sweep_max_res = max(sweep_max_res, max_res)
+        sweep_max_imag = max(sweep_max_imag, max_imag)
+        sweep_min_eig = min(sweep_min_eig, min_eig)
+    return rows, sweep_max_res, sweep_max_imag, sweep_min_eig
 
 
 def spectral_decaying_projection(p: float, m: float) -> dict[str, float]:
@@ -504,7 +526,7 @@ def main() -> int:
     passes = 0
     fails = 0
 
-    # ---- C1: dispersion anchor ----
+    # ---- C1: dispersion anchor (faithfulness) + mass-range persistence ----
     print("-" * 78)
     print("C1  DISPERSION ANCHOR (faithfulness): 2-step decaying eigenvalue == e^{-2E(p)}")
     print("    E(p) = arcsinh( sqrt(m^2 + sin^2 p) ),  sinh^2 E = m^2 + sin^2 p")
@@ -516,7 +538,19 @@ def main() -> int:
     print(f"    ... ({len(rows)} momenta over the Brillouin zone)")
     print(f"    max dispersion residual = {max_res:.3e}  (tol {TOL_DISP:.0e})")
     print(f"    max |Im(decay-mode)|    = {max_imag:.3e}")
-    c1 = (max_res < TOL_DISP) and (max_imag < TOL_DISP)
+    print("    mass-range persistence (real m>0): "
+          f"m in {{{', '.join(format(m, 'g') for m in MASS_SWEEP)}}}")
+    sweep_rows, sweep_max_res, sweep_max_imag, sweep_min_eig = check_dispersion_mass_sweep()
+    for m, mr, mi, me in sweep_rows:
+        print(f"      m={m:6.3f}: max|res|={mr:.2e}  max|Im|={mi:.2e}  "
+              f"min eig(T_hat^2)={me:.3e}")
+    print(f"    sweep max dispersion residual = {sweep_max_res:.3e}  (tol {TOL_DISP:.0e})")
+    print(f"    sweep min eig(T_hat^2)        = {sweep_min_eig:.3e}  (>0 required throughout)")
+    c1 = (
+        max_res < TOL_DISP and max_imag < TOL_DISP
+        and sweep_max_res < TOL_DISP and sweep_max_imag < TOL_DISP
+        and sweep_min_eig > 0.0
+    )
     print(f"    C1 = {'PASS' if c1 else 'FAIL'}")
     passes += int(c1)
     fails += int(not c1)
@@ -643,8 +677,9 @@ def main() -> int:
     print("=" * 78)
     print("SUMMARY")
     print("=" * 78)
-    print(f"  C1 dispersion anchor   : {'PASS' if (max_res<TOL_DISP and max_imag<TOL_DISP) else 'FAIL'}"
-          f"  (max residual {max_res:.2e})")
+    print(f"  C1 dispersion anchor   : {'PASS' if c1 else 'FAIL'}"
+          f"  (m={MASS} residual {max_res:.2e}; sweep max {sweep_max_res:.2e}, "
+          f"min eig(T_hat^2)>0 over m in [0.05,5.0])")
     print(f"  C2 single-step non-PSD : {'PASS' if c2 else 'FAIL'}"
           f"  (min |Im eig| for sin(p)!=0 {complex_min_imag:.3f}; "
           f"sin(p)=0 negative mode {'YES' if exceptional_ok else 'NO'})")

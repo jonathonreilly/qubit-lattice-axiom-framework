@@ -1,0 +1,19 @@
+block: tier-a-elimination-block12-theta-g1
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block12-theta-g1-20260704
+base_branch: physics-loop/tier-a-elimination-block11-theta-g3-20260704
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4937
+source_commit: d57a21650
+target: theta gauge-side G1 defect closure
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: pr_open
+verification:
+  runner: "PASS=167 FAIL=0"
+  py_compile: pass
+  audit_pipeline: pass
+  audit_lint_strict: "pass; existing warnings/notices only"
+  diff_check: pass
+audit_row: theta_g1_defect_closure_current_surface_no_go_note_2026-07-04
+next_exact_action: "Monitor PR #4937; next science action is a constraint-level dn = 0 search or a dynamical defect-suppression search."

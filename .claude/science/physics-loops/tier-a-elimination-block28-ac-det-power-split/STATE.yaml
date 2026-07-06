@@ -1,0 +1,37 @@
+block: tier-a-elimination-block28-ac-det-power-split
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block28-ac-det-power-split-20260704
+base_branch: physics-loop/tier-a-elimination-block27-ac-reta-record-nonsupply-20260704
+target: AC_phi_lambda(i) occupancy determinant-power split
+claim_type: bounded_theorem
+registry_edits: false
+retirement_claimed: false
+status: pr_open
+source_commit: 87f50b6a8
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4969
+active_route: "prove exact det_C versus det_R(realification) support for the count-once/count-twice fork"
+hard_residual: "derive physical horn selection for the matter action's grain/statistics"
+files_touched:
+  - docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md
+  - scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py
+  - logs/runner-cache/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.txt
+  - .claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/
+open_imports:
+  - physical horn-selection theorem
+  - physical generation coupling theorem
+  - K/CPT-site-basis bridge
+  - owner governance route for orbit-occupancy or readout selection
+  - R-eta density-read-as-angle theorem
+no_go_routes:
+  - determinant algebra alone does not retire AC(i)
+trace_gate_classification: exact_support_for_live_residual
+review_findings: "Local scope review passed: exact determinant-power support only; no AC retirement, horn selection, orbit-premise adoption, K-real primitive, registry edit, or R-eta/theta movement."
+verification:
+  runner: "PASS=41 FAIL=0"
+  py_compile: pass
+  audit_pipeline: "pass; newly seeded rows=1"
+  audit_lint_strict: "pass with existing 23 warnings and 178 notices; no errors"
+  diff_check: pass
+audit_row: "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04: claim_type=bounded_theorem, audit_status=unaudited, effective_status=unaudited, criticality=leaf"
+next_exact_action: "Watch hosted audit_pipeline, then continue with physical horn-selection or R-eta routes."
+stop_condition: "Block complete after PR status is verified and local lock is removed."

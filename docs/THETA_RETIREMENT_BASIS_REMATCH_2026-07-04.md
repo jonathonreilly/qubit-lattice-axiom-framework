@@ -8,6 +8,36 @@ names the coverage verdict per component. It applies no audit verdict, edits
 no registry, and retires nothing; ledger statuses are quoted as of 2026-07-04
 and are owned by the independent audit lane.
 
+## Current-Main Posture (2026-07-06 addendum)
+
+Events after the 2026-07-05 verdict update, recorded so this artifact reads
+correctly from current main. The verdict sections below are unchanged; this
+addendum adds no new claim.
+
+- The option-1 precaution was executed before the registry edit: a
+  second-seat clean-room cross-confirmation of
+  `theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04`
+  (confirmed `audited_clean` / `retained_bounded`) is recorded in the
+  PR #3511 thread, 2026-07-05.
+- The owner ruling followed option 1: theta was retired from live Tier-A by
+  retained derivation on 2026-07-05 (PR #3511), admitted-input count 2 -> 1,
+  with the discharge basis and scope recorded in
+  `docs/audit/data/tier_a_admissions.json` and the Tier-A retirement record
+  in `docs/audit/AXIOM_MINIMALITY_POLICY.md`. Both cite this artifact at
+  this path; this landing resolves that citation.
+- `AC_phi_lambda` was subsequently retired by explicit owner-governance
+  adoption (`docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`),
+  taking the admitted-input count to 0. The mass-side conditionality this
+  note relocates onto "the remaining `AC_phi_lambda` admission" accordingly
+  now rides on the owner-governed AC premise boundary in
+  `docs/audit/data/owner_governed_premise_nodes.json`, not on a live
+  admission. The AC-side re-match artifact
+  (`docs/ACPHILAMBDA_RETIREMENT_BASIS_REMATCH_AND_CLAIM_SURFACE_NOTE_2026-07-06.md`)
+  landed 2026-07-06 with verdict: supported.
+
+This note remains a point-in-time gate-4 decision artifact: it sets no audit
+status and edits no registry.
+
 ## The two texts being matched
 
 **The retirement basis (PR #3511, 2026-06-10):** retire

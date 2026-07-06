@@ -1,4 +1,4 @@
-# AC_phi_lambda Retirement-Basis Re-Match and Claim-Surface Audit
+# AC_phi_lambda Retirement-Basis Re-Match and Claim-Surface Check
 
 **Date:** 2026-07-06
 **Type:** meta
@@ -23,8 +23,8 @@ treated as settled. This note is the `AC_phi_lambda` analogue, run after the
 ([TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md](TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md)):
 does the landed two-atom adoption accounting match, atom for atom and
 boundary for boundary, what the audited decomposition basis actually
-established — and does any dependent of the retired gate row read the values
-as derived?
+established — and does the direct-dependent lexical guard flag any
+note-level bare-value reading?
 
 ## Re-match 1 — adopted atoms vs audited decomposition survivors
 
@@ -56,8 +56,9 @@ matches the audited surface:
   named, not consumed;
 - the carrier-locus chirality gate remains an open tracked row, outside the
   adoption;
-- every downstream consumption of the two values remains conditional
-  ("modulo" the named input) — checked mechanically below.
+- the direct-dependent sweep below flags no note that both mentions the two
+  values and lacks a named-input marker. This is only a note-level lexical
+  guard.
 
 ## Re-match 3 — cross-admission consistency (theta)
 
@@ -70,7 +71,7 @@ matches the audited surface:
   neither retirement consumes the other's residual atoms. The runner checks
   the registry-level separation.
 
-## Claim-surface audit (the retired gate row's dependents)
+## Claim-surface lexical check (the retired gate row's dependents)
 
 The retired gate row has ~54 direct citation-graph dependents. The runner
 sweeps every dependent note that exists on disk and enforces, mechanically:
@@ -79,18 +80,19 @@ carry admission/conditionality vocabulary (the admission id, "admitted",
 "modulo", "conditional", "premise", "adopted", or "registered") somewhere in
 the note. This is a note-level lexical guard, not a per-sentence semantic
 classification; it is the same class of check the two-gate bounded verifier
-applies, extended across the dependent set. Zero flagged notes = no
-dependent asserts the values bare of the named input.
+applies, extended across the dependent set. Zero flagged notes means zero
+direct dependents tripped this lexical screen; it is not a per-sentence
+semantic proof.
 
-## Verdict
+## Result
 
-**RE-MATCH SUPPORTED.** The landed owner-governance retirement's accounting
+**Re-match result: supported.** The landed owner-governance retirement's accounting
 (two adopted atoms; species leg not adopted; recorded no-value boundary;
 theta untouched at its retained-derivation standing) matches the audited
-realized-state decomposition basis atom-for-atom, and the dependent claim
-surface carries no bare-value consumption. The named open frontiers survive
-the retirement unconsumed: the two exactness residuals and the carrier-locus
-chirality gate.
+realized-state decomposition basis atom-for-atom, and the direct-dependent
+claim-surface sweep found zero bare-value lexical flags. The named open
+frontiers survive the retirement unconsumed: the two exactness residuals and
+the carrier-locus chirality gate.
 
 ## Firewalls
 

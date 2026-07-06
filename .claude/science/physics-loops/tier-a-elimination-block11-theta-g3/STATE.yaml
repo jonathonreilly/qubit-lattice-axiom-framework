@@ -1,0 +1,19 @@
+block: tier-a-elimination-block11-theta-g3
+date: 2026-07-04
+branch: physics-loop/tier-a-elimination-block11-theta-g3-20260704
+base_branch: physics-loop/tier-a-elimination-block10-theta-positive-20260704
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4936
+source_commit: 2d1727e43
+target: theta gauge-side G3 phase-type F cup F insertion
+claim_type: no_go
+registry_edits: false
+retirement_claimed: false
+status: pr_open
+verification:
+  runner: "PASS=161 FAIL=0"
+  py_compile: pass
+  audit_pipeline: pass
+  audit_lint_strict: "pass; existing warnings/notices only"
+  diff_check: pass
+audit_row: theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04
+next_exact_action: "Monitor PR #4936; next science action is an action-side phase source search or split G1 defect closure."

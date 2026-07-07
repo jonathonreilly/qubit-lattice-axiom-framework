@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """
-Two-Ward g_bare Closure Verifier
-================================
+Two-Ward g_bare Scope Verifier
+==============================
 
-This runner certifies the Path-2 / two-Ward closure on g_bare.
+This runner verifies the current Path-2 / two-Ward scope for g_bare.
+The actual source surface is a canonical-surface consistency check plus
+a conditional off-surface map, not an unconditional derivation of
+g_bare = 1.
 
 Authority chain:
   - docs/G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md
   - docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md
-  - docs/G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md
   - docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md
 
 What it checks:
@@ -19,11 +21,15 @@ What it checks:
   Block 3: D17 uniqueness of the scalar-singlet operator on Q_L.
   Block 4: Rep A remains symbolic in g_bare with coefficient
            c_S g_bare^2 / (2 N_c), and c_S = +1.
-  Block 5: The off-surface same-1PI pinning theorem upgrades the
-           final equality to a theorem-grade identity for the same
-           scalar-singlet Gamma^(4) coefficient.
-  Block 6: Solving that identity with y_t_bare = 1/sqrt(6) gives
-           g_bare = 1.
+  Block 5: The paired notes state the repaired actual surface:
+           g_bare = 1 is a rescaling convention, the same-1PI agreement
+           is a canonical-surface consistency check, and off-surface
+           g_bare = 1 requires the named H_unit-residue admission.
+  Block 6: The coefficient algebra preserves both sides of that scope:
+           canonical agreement at g_bare = 1, a residue-normalization
+           family R(g_bare) that prevents an unconditional off-surface
+           conclusion, and the conditional g_bare = 1 map if R=1 is
+           supplied by a future retained theorem.
 """
 
 from __future__ import annotations
@@ -198,54 +204,81 @@ check(
 
 log()
 log("=" * 72)
-log("BLOCK 5: Off-surface same-Gamma^(4) pinning theorem")
+log("BLOCK 5: Source scope is consistency check plus conditional map")
 log("=" * 72)
 
 check(
-    "Ward theorem states the two representations are evaluations of the same Green's function in the same retained theory",
-    "two INDEPENDENT computations of the same Green's function" in ward_text
-    and "The two evaluations of the same Green's function must agree" in ward_text,
-    "Step 3 same-theory identity in YT_WARD theorem",
+    "Ward note treats g_bare = 1 as a rescaling convention",
+    "`g_bare = 1` is a rescaling convention" in ward_text
+    and "the load-bearing form factor `y_t_bare/g_bare = 1/sqrt(6)` is `g_bare`-flat" in ward_text,
+    "B2 scope boundary",
 )
 
 check(
-    "Pinning theorem states the coefficient identity for arbitrary g_bare",
-    "leave the bare gauge scale `g_bare` arbitrary" in pinning_text
-    and "F_Htt^(0)(g_bare)^2 = g_bare^2 / (2 N_c)" in pinning_text,
-    "off-surface same-Gamma^(4) coefficient identity",
+    "Ward note frames same-1PI agreement as a consistency check, not the source of y_t_bare",
+    "agreement is a non-trivial consistency check" in ward_text
+    and "not the source of the value" in ward_text,
+    "canonical-surface comparison",
+)
+
+check(
+    "Same-1PI note says the actual surface is not an unconditional pinning theorem",
+    "The actual current surface is not an unconditional pinning theorem" in pinning_text
+    and "**Actual surface:** current cited inputs do not derive the complete same-projected 1PI exhaustion theorem" in pinning_text,
+    "actual-surface scope lock",
+)
+
+check(
+    "Same-1PI note keeps off-surface g_bare = 1 conditional on the H_unit-residue admission",
+    "**Conditional surface:** if a future retained theorem proves the missing normalization `R(g_bare)=1`" in pinning_text
+    and "They may not cite it as an actual-surface theorem deriving `g_bare = 1`" in pinning_text,
+    "conditional-use boundary",
 )
 
 rep_b_coeff = y_t_bare ** 2
 check(
-    "The coefficient identity singles out g_bare = 1 on the positive branch",
-    abs(rep_b_coeff - rep_a_coeff(1.0)) < 1e-12
-    and abs(rep_b_coeff - rep_a_coeff(0.0)) > 1e-12
-    and abs(rep_b_coeff - rep_a_coeff(2.0)) > 1e-12
-    and abs(rep_b_coeff - rep_a_coeff(3.0)) > 1e-12,
-    "Rep-B coefficient = 1/6 matches Rep A only at g_bare = 1",
+    "Canonical-surface Rep-A and Rep-B coefficients agree at g_bare = 1",
+    abs(rep_b_coeff - rep_a_coeff(1.0)) < 1e-12,
+    "Rep-A = Rep-B = 1/6 at the convention surface",
 )
 
 log()
 log("=" * 72)
-log("BLOCK 6: Solve the matching identity")
+log("BLOCK 6: Obstruction family and conditional algebra")
 log("=" * 72)
 
-g_bare_sq = 2.0 * N_c * y_t_bare ** 2
-g_bare = math.sqrt(g_bare_sq)
 check(
-    "Solve g_bare^2 = 2 N_c y_t_bare^2 = 1",
-    abs(g_bare_sq - 1.0) < 1e-12,
-    f"g_bare^2 = {g_bare_sq:.10f}",
-)
-check(
-    "Unique positive solution g_bare = 1",
-    abs(g_bare - 1.0) < 1e-12,
-    f"g_bare = {g_bare:.10f}",
+    "Unweighted H_unit coefficient is not an off-surface identity by itself",
+    abs(rep_b_coeff - rep_a_coeff(0.5)) > 1e-12
+    and abs(rep_b_coeff - rep_a_coeff(2.0)) > 1e-12
+    and abs(rep_b_coeff - rep_a_coeff(3.0)) > 1e-12,
+    "without an admitted residue normalization, equality is only canonical",
 )
 
-ratio = y_t_bare / g_bare
+
+def residue_weighted_rep_b_coeff(g_bare: float) -> float:
+    """The source note's allowed obstruction family R(g_bare)=g_bare^2."""
+    return g_bare ** 2 * rep_b_coeff
+
+
+test_g = (0.5, 1.0, 2.0, 3.0)
 check(
-    "Recovered ratio y_t_bare / g_bare = 1/sqrt(6)",
+    "Residue-normalization family R(g_bare)=g_bare^2 preserves off-surface agreement",
+    all(abs(residue_weighted_rep_b_coeff(g) - rep_a_coeff(g)) < 1e-12 for g in test_g),
+    "demonstrates the current no-admission obstruction",
+)
+
+conditional_g_sq = 2.0 * N_c * y_t_bare ** 2
+conditional_g = math.sqrt(conditional_g_sq)
+check(
+    "Conditional R(g_bare)=1 map would give g_bare = 1 on the positive branch",
+    abs(conditional_g_sq - 1.0) < 1e-12 and abs(conditional_g - 1.0) < 1e-12,
+    f"conditional_g_bare^2 = {conditional_g_sq:.10f}",
+)
+
+ratio = y_t_bare / 1.0
+check(
+    "Canonical-surface ratio y_t_bare / g_bare = 1/sqrt(6)",
     abs(ratio - 1.0 / math.sqrt(6.0)) < 1e-12,
     f"ratio = {ratio:.10f}",
 )
@@ -257,12 +290,13 @@ log("=" * 72)
 log(f"  PASS = {COUNTS['PASS']}")
 log(f"  FAIL = {COUNTS['FAIL']}")
 log()
-log("  Two-Ward closure chain:")
+log("  Two-Ward current source surface:")
 log("    Rep B independence theorem  ->  y_t_bare = 1/sqrt(6)")
-log("    Same-1PI pinning theorem    ->  y_t_bare^2 = g_bare^2 / (2 N_c)")
-log("    Therefore                  ->  g_bare = 1")
+log("    Canonical Rep-A comparison  ->  non-trivial consistency at g_bare = 1")
+log("    Off-surface map             ->  conditional on the H_unit-residue normalization")
+log("    Actual obstruction          ->  R(g_bare)=g_bare^2 remains compatible with cited inputs")
 log()
-log("  VERDICT: CLOSED")
+log("  SCOPE: CONSISTENCY_CHECK_PLUS_CONDITIONAL_MAP")
 
 if COUNTS["FAIL"] > 0:
     sys.exit(1)

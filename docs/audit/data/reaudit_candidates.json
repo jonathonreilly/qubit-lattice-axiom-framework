@@ -3,7 +3,7 @@
     "critical": 0,
     "high": 0,
     "leaf": 0,
-    "medium": 0
+    "medium": 1
   },
   "by_criticality_runner_drift": {
     "critical": 0,
@@ -11,7 +11,49 @@
     "leaf": 0,
     "medium": 0
   },
-  "candidates": [],
+  "candidates": [
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "audited_conditional",
+      "candidate_reason": "all_deps_ratified_after_audit_time_dependency_strengthening",
+      "claim_id": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
+      "claim_scope": "Conditional bounded coefficient bookkeeping for YT_WARD Step 3: under SAME-1PI as a supplied premise, C_A = C_B gives c_S * g_bare^2 = 2 / N_iso, while without SAME-1PI the exact residual (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso) and the g_bare=2 counterexample show non-identity.",
+      "claim_type": "bounded_theorem",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "current_dep_effective_status": {
+        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+        "native_gauge_closure_note": "retained",
+        "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "retained",
+        "yt_ward_identity_derivation_theorem": "retained_bounded"
+      },
+      "deps": [
+        "yt_ward_identity_derivation_theorem",
+        "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
+        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+        "native_gauge_closure_note"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "audited_conditional",
+      "generated_order": 1,
+      "improved_dependencies": [
+        {
+          "after_effective_status": "retained_bounded",
+          "before_effective_status": "unaudited",
+          "claim_id": "yt_ward_identity_derivation_theorem",
+          "rank_delta": 65
+        }
+      ],
+      "load_bearing_score": 3.822,
+      "note_hash": "e666bb1022cf47599bb773acc3b32d1e34c2a0e77bcc9717717f55693a7c138d",
+      "note_path": "docs/YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "reraudit_after_claim_ids": [
+        "yt_ward_identity_derivation_theorem"
+      ],
+      "runner_path": "scripts/yt_ward_step3_same_1pi_construction_2026_05_10.py",
+      "transitive_descendants": 4
+    }
+  ],
   "eligible_audit_statuses": [
     "audited_conditional",
     "audited_decoration",
@@ -33,6 +75,6 @@
     "retained_no_go"
   ],
   "runner_drift_candidates": [],
-  "total_candidates": 0,
+  "total_candidates": 1,
   "total_runner_drift_candidates": 0
 }

@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_pkin_subtree_current_surface_restatement_check_2026_07_03.py
+runner_sha256: 6011c59f12ba1062e7fa62e2091b5367e546a4796b673c48a34339ecf3dbcc7f
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+G1.1 PASS: ledger contains Kawamoto-Smit row with non-null claim_scope :: present=True
+G1.2 PASS: Kawamoto-Smit ledger claim_scope equals expected pin :: status=retained_bounded
+G1.3 PASS: note quotes the Kawamoto-Smit ledger claim_scope
+G1.4 PASS: reverse-dependency transitive closure count from roots is at least 1000 :: union=1470; statuses: staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07=retained_bounded, staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10=unaudited, realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selected_by_admissibility_variation_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selection_frame_class_transport_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_selection_gauged_background_invariance_narrow_theorem_note_2026-07-02=unaudited, realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02=unaudited
+G2.1 PASS: variation clause present in axiom text
+G2.2 PASS: variation clause present in note
+G2.3 PASS: non-selection sentence present in axiom text
+G2.4 PASS: non-selection sentence present in note
+G2.5 PASS: downstream-content clause present in axiom text
+G2.6 PASS: downstream-content clause present in note
+G2.7 PASS: record-permanence sentence present in axiom text and note
+G3.1 PASS: all seven chain source files and the Kawamoto-Smit note file exist
+G3.2 PASS: kinetic_class first-sentence quote present in source and note :: docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md
+G3.3 PASS: discriminator first-sentence quote present in source and note :: docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md
+G3.4 PASS: variation first-sentence quote present in source and note :: docs/REALIZED_KINETIC_BRANCH_SELECTED_BY_ADMISSIBILITY_VARIATION_NARROW_THEOREM_NOTE_2026-07-02.md
+G3.5 PASS: transport first-sentence quote present in source and note :: docs/REALIZED_KINETIC_BRANCH_SELECTION_FRAME_CLASS_TRANSPORT_NARROW_THEOREM_NOTE_2026-07-02.md
+G3.6 PASS: gauged_background first-sentence quote present in source and note :: docs/REALIZED_KINETIC_BRANCH_SELECTION_GAUGED_BACKGROUND_INVARIANCE_NARROW_THEOREM_NOTE_2026-07-02.md
+G3.7 PASS: record_registration first-sentence quote present in source and note :: docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md
+G3.8 PASS: transposition first-sentence quote present in source and note :: docs/STAGGERED_DIRAC_LINK_INTEGRATION_CLASS_COUPLING_TRANSPOSITION_NARROW_THEOREM_NOTE_2026-07-02.md
+G3.9 PASS: independent audit lane status authority appears in old-format sources and Kawamoto-Smit note
+G3.10 PASS: section-7 selector clause present in kinetic-class source and note
+G4.1 PASS: K0 plaquette flux is +1 on every 4x4x4 plaquette
+G4.2 PASS: Kawamoto-Smit eta plaquette flux is -1 on every 4x4x4 plaquette
+G4.3 PASS: single-edge sign-flip rejector breaks all-minus plaquette property :: plus_count=4
+G4.4 PASS: eta satisfies the Clifford -1 cocycle anticommutation identity
+G4.5 PASS: t == 1 satisfies the +1 relation everywhere and the -1 relation nowhere :: plus=192/192; minus=0/192
+G4.6 PASS: unital *-algebra dimensions give [2,2,2] for Pauli generators and 1 for identity :: pauli=[2, 2, 2]; identity=1
+G4.7 PASS: generic nonnormal 2x2 matrix generates full M2(C) :: dim=4
+G4.8 PASS: anticommuting Hermitian-unitary pair gaps equal sqrt(2) exactly within tolerance :: gaps=1.4142135623731,1.4142135623731,1.4142135623731
+G4.9 PASS: commuting Hermitian-unitary rejectors give gaps 0 and 2, not sqrt(2) :: same=0.0; opposite=2.0
+G4.10 PASS: dense L=4 spectra match K0 and K1 squared momentum formulas :: K0_dev=4.44e-15; K1sq_dev=1.07e-14
+G4.11 PASS: zero-count anchors and L=6 K1 gap match exact values :: K1 L4=8, L8=8, L6=0, gap6=1.73205080756887; K0 L4=20, L8=68
+G4.12 PASS: wrong sin-squared L=6 anchor is rejected by true H[eta]^2 eigenvalues :: wrong_dev=3.00000000000001
+G5.1 PASS: firewall sentence present verbatim in note
+G5.2 PASS: forbidden closure rhetoric is absent
+G5.3 PASS: grade-authoring and audit-prediction strings are absent
+G6.1 PASS: markdown-linked .md basenames equal exactly the dependency inventory :: linked=['MINIMAL_AXIOMS_2026-06-29.md', 'REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md', 'REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md', 'REALIZED_KINETIC_BRANCH_SELECTED_BY_ADMISSIBILITY_VARIATION_NARROW_THEOREM_NOTE_2026-07-02.md', 'REALIZED_KINETIC_BRANCH_SELECTION_FRAME_CLASS_TRANSPORT_NARROW_THEOREM_NOTE_2026-07-02.md', 'REALIZED_KINETIC_BRANCH_SELECTION_GAUGED_BACKGROUND_INVARIANCE_NARROW_THEOREM_NOTE_2026-07-02.md', 'STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md', 'STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md', 'STAGGERED_DIRAC_LINK_INTEGRATION_CLASS_COUPLING_TRANSPOSITION_NARROW_THEOREM_NOTE_2026-07-02.md']
+G6.2 PASS: exactly one linked .py basename equals the runner basename :: linked_py=['staggered_dirac_pkin_subtree_current_surface_restatement_check_2026_07_03.py']
+G6.3 PASS: Block A basename appears only outside markdown links and only inside backticks :: markdown_hits=0; outside_backticks=False
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----
+

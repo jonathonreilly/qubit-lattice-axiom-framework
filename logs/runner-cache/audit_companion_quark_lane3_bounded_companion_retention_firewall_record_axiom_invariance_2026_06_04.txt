@@ -1,190 +1,148 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_quark_lane3_bounded_companion_retention_firewall_record_axiom_invariance_2026_06_04.py
-runner_sha256: 46a3b4c0c98b1595910247b9c758235b06cf7297dfad9736fcb74b7e0fc3e830
+runner_sha256: 870a0ec6bc9d603602178ae5ff79e288c33a009af88d8bb63b287cc44be7c1d6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
-Quark Lane-3 Bounded-Companion Retention Firewall
-Record-Axiom Invariance Companion Runner
-========================================================================
-Repo root: /private/tmp/cl3-review-open-20260604
-Parent note: /private/tmp/cl3-review-open-20260604/docs/QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md
-Companion source note: docs/QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md
-
-Goal: verify the parent's load-bearing firewall structure
-      (negative-boundary accounting + ratio invariance +
-       species-uniform Ward overshoot comparator + CKM-mass
-       type-distinction) is invariant under the 2026-06-04
-       Record-axiom adoption (MINIMAL_AXIOMS_2026-06-04.md).
-
-Scope: pure audit-companion evidence; no theorem claim,
-       no status promotion, no Record-axiom content asserted.
 
 ========================================================================
-BLOCK 1: parent note + load-bearing section anchors
+Quark Lane 3 retention firewall Record-axiom companion
 ========================================================================
-  PASS parent_note_present :: /private/tmp/cl3-review-open-20260604/docs/QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md
-  PASS anchor_present::question :: ## Question
-  PASS anchor_present::result :: ## Result
-  PASS anchor_present::theorem :: ## Theorem
-  PASS anchor_present::why_ratios_are_not_absolute_masses :: ## Why Ratios Are Not Absolute Masses
-  PASS anchor_present::why_ckm_closure_is_not_mass_closure :: ## Why CKM Closure Is Not Mass Closure
-  PASS anchor_present::what_this_retires :: ## What This Retires
-  PASS anchor_present::what_remains_open :: ## What Remains Open
-  PASS anchor_present::verification :: ## Verification
-  PASS anchor_present::inputs_and_import_roles :: ## Inputs And Import Roles
-  PASS anchor_present::safe_wording :: ## Safe Wording
+Parent note: docs/QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md
+Parent runner: scripts/frontier_quark_lane3_bounded_companion_retention_firewall.py
+Scope: meta evidence only; no theorem claim and no audit-status change.
+Audit-lane values are informational metadata, not pass/fail targets.
 
 ========================================================================
-BLOCK 2: down-type ratio formulas present in parent
+Block 1: live parent runner
 ========================================================================
-  PASS formula_present::m_d/m_s = alpha_s(v) / 2 :: m_d/m_s = alpha_s(v) / 2
-  PASS formula_present::m_s/m_b = [alpha_s(v) / sqrt(6)]^(6/5) :: m_s/m_b = [alpha_s(v) / sqrt(6)]^(6/5)
-  PASS formula_present::m_d/m_b = (m_d/m_s)(m_s/m_b) :: m_d/m_b = (m_d/m_s)(m_s/m_b)
+PASS parent_runner_exit_zero :: exit=0
+PASS parent_runner_tally_present
+PASS parent_runner_pass_count_at_least_17 :: pass=17
+PASS parent_runner_fail_count_zero :: fail=0
+PASS parent_runner_reports_bounded_support_not_five_mass_retention
+PASS parent_runner_reports_lane3_open_boundary
 
 ========================================================================
-BLOCK 3: bottom-anchor rescaling invariance of down-type ratios
+Block 2: ledger row presence and live metadata
 ========================================================================
-  For arbitrary lambda > 0, rescaling m_b -> lambda * m_b together
-  with m_s -> lambda * m_s and m_d -> lambda * m_d (which follow
-  from the parent's ratio chain) preserves all three down-type
-  ratios. Uses standard arithmetic only; no record functional.
-  PASS rescale_lambda_0.5::r_ds :: r_ds=0.0500000000 target=0.0500000000
-  PASS rescale_lambda_0.5::r_sb :: r_sb=0.0223444976 target=0.0223444976
-  PASS rescale_lambda_0.5::r_db :: r_db=0.0011172249 target=0.0011172249
-  PASS rescale_lambda_0.5::absolute_mass_moves :: m_b(scaled) = 2.0900000000
-  PASS rescale_lambda_1.0::r_ds :: r_ds=0.0500000000 target=0.0500000000
-  PASS rescale_lambda_1.0::r_sb :: r_sb=0.0223444976 target=0.0223444976
-  PASS rescale_lambda_1.0::r_db :: r_db=0.0011172249 target=0.0011172249
-  PASS rescale_lambda_1.0::absolute_mass_unchanged :: m_b(scaled) = 4.1800000000
-  PASS rescale_lambda_2.0::r_ds :: r_ds=0.0500000000 target=0.0500000000
-  PASS rescale_lambda_2.0::r_sb :: r_sb=0.0223444976 target=0.0223444976
-  PASS rescale_lambda_2.0::r_db :: r_db=0.0011172249 target=0.0011172249
-  PASS rescale_lambda_2.0::absolute_mass_moves :: m_b(scaled) = 8.3600000000
-  PASS rescale_lambda_10.0::r_ds :: r_ds=0.0500000000 target=0.0500000000
-  PASS rescale_lambda_10.0::r_sb :: r_sb=0.0223444976 target=0.0223444976
-  PASS rescale_lambda_10.0::r_db :: r_db=0.0011172249 target=0.0011172249
-  PASS rescale_lambda_10.0::absolute_mass_moves :: m_b(scaled) = 41.8000000000
+PASS parent_ledger_row_present
+PASS parent_status_fields_present :: effective_status=unaudited audit_status=unaudited
+PASS parent_claim_type_field_present :: claim_type=bounded_theorem
+PASS companion_ledger_row_present
+PASS companion_status_fields_present :: effective_status=meta audit_status=unaudited
+PASS companion_claim_type_field_present :: claim_type=meta
+PASS staggered_ledger_row_present
+PASS staggered_status_fields_present :: effective_status=retained_bounded audit_status=audited_clean
+PASS staggered_claim_type_field_present :: claim_type=bounded_theorem
+PASS parent_note_exists
+PASS parent_runner_exists
+PASS companion_note_exists
+PASS staggered_note_exists
+PASS parent_runner_path_expected
+PASS parent_note_hash_matches_ledger
+PASS staggered_note_hash_matches_ledger
 
 ========================================================================
-BLOCK 4: species-uniform Ward overshoot comparator
+Block 3: parent firewall source content
 ========================================================================
-  The parent's Part 4 firewall: applying top-channel Ward
-    y_t/g_s = 1/sqrt(6)
-  species-uniformly to the bottom species yields the framework
-    bottom_framework = 145.07 GeV  (parent runner constant)
-  vs PDG comparator
-    m_b_obs = 4.180 GeV
-  overshoot = bottom_framework / m_b_obs.
-  PASS y_t_ward_exact_value :: y_t_ward = 0.4082482904638631
-  PASS overshoot_greater_than_30x :: overshoot = 34.71x
-  PASS overshoot_about_35x :: overshoot = 34.71x
-  PASS overshoot_uses_only_pdg_comparator_and_framework_constant :: overshoot is exactly bottom-framework constant divided by PDG m_b
+PASS parent_anchor_present_question
+PASS parent_anchor_present_result
+PASS parent_anchor_present_theorem
+PASS parent_anchor_present_ratio_boundary
+PASS parent_anchor_present_ckm_mass_type_boundary
+PASS parent_anchor_present_retired_fast_upgrades
+PASS parent_anchor_present_open_work
+PASS parent_anchor_present_verification
+PASS parent_anchor_present_input_roles
+PASS parent_anchor_present_safe_wording
+PASS parent_formula_present_m_d/m_s = alpha_s(v) / 2
+PASS parent_formula_present_m_s/m_b = [alpha_s(v) / sqrt(6)]^(6/5)
+PASS parent_formula_present_m_d/m_b = (m_d/m_s)(m_s/m_b)
+PASS loadbearing_section_found :: start=726 end=3473
+PASS zero_record_axiom_tokens_in_parent_loadbearing_section :: matches=[]
+PASS parent_keeps_ratio_and_firewall_content
+PASS parent_marks_pdg_values_as_comparator_only
+PASS support_note_present_QUARK_MASS_RATIO_NOTE_2026-04-18.md :: QUARK_MASS_RATIO_NOTE_2026-04-18.md
+PASS support_note_present_DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md :: DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md
+PASS support_note_present_QUARK_UP_AMPLITUDE_CANDIDATE_SCAN_NOTE_2026-04-19.md :: QUARK_UP_AMPLITUDE_CANDIDATE_SCAN_NOTE_2026-04-19.md
+PASS support_note_present_YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md :: YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md
 
 ========================================================================
-BLOCK 5: CKM-mass type-distinction is logical, not derivational
+Block 4: current staggered-Dirac source boundary
 ========================================================================
-  PASS ckm_section_start_found :: start index = 2727
-  PASS ckm_section_end_found :: end index = 3145
-  PASS ckm_type_distinction_marker_present::structural mixing magnitudes :: structural mixing magnitudes
-  PASS ckm_type_distinction_marker_present::does not itself supply :: does not itself supply
-  PASS ckm_type_distinction_marker_present::Treating CKM closure as quark-mass retention :: Treating CKM closure as quark-mass retention
-  PASS ckm_section_zero_record_axiom_tokens :: matches = []
+PASS staggered_note_declares_independent_status_authority
+PASS staggered_note_declares_source_note_proposal_boundary
+PASS staggered_note_contains_bounded_synthesis_content
+PASS staggered_note_names_labeling_residual
+PASS staggered_note_does_not_supply_lane3_mass_law
 
 ========================================================================
-BLOCK 6: Lane-3 stub claim-state consistency
+Block 5: axiom memo content boundary
 ========================================================================
-  PASS lane3_stub_present :: /private/tmp/cl3-review-open-20260604/docs/lanes/open_science/03_QUARK_MASS_RETENTION_OPEN_LANE_2026-04-26.md
-  PASS lane3_stub_marker_present::the top mass is retained; the remaining  :: the top mass is retained; the remaining five quark
-  PASS lane3_stub_marker_present::the only retained quark mass :: the only retained quark mass
-  PASS lane3_stub_marker_present::Direct retention of m_d, m_s, m_b, m_u,  :: Direct retention of m_d, m_s, m_b, m_u, m_c
+PASS axiom_memo_present_MINIMAL_AXIOMS_2026-05-03.md :: MINIMAL_AXIOMS_2026-05-03.md
+PASS axiom_memo_present_MINIMAL_AXIOMS_2026-05-20.md :: MINIMAL_AXIOMS_2026-05-20.md
+PASS axiom_memo_present_MINIMAL_AXIOMS_2026-06-04.md :: MINIMAL_AXIOMS_2026-06-04.md
+PASS axiom_memo_present_MINIMAL_AXIOMS_2026-06-29.md :: MINIMAL_AXIOMS_2026-06-29.md
+PASS reset_memo_has_lattice_content
+PASS reset_memo_has_quantum_content
+PASS current_memo_has_lattice_content
+PASS current_memo_has_quantum_content
+PASS current_memo_has_record_additivity
+PASS record_scope_excludes_firewall_missing_bridges
+PASS record_adoption_memo_has_historical_additivity
 
 ========================================================================
-BLOCK 7: cited support-note authority surface present
+Block 6: ratio and comparator arithmetic
 ========================================================================
-  PASS support_note_present::docs/QUARK_MASS_RATIO_NOTE_2026-04-18.md :: /private/tmp/cl3-review-open-20260604/docs/QUARK_MASS_RATIO_NOTE_2026-04-18.md
-  PASS support_note_present::docs/DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md :: /private/tmp/cl3-review-open-20260604/docs/DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md
-  PASS support_note_present::docs/QUARK_UP_AMPLITUDE_CANDIDATE_SCAN_NOTE_2026-04-19.md :: /private/tmp/cl3-review-open-20260604/docs/QUARK_UP_AMPLITUDE_CANDIDATE_SCAN_NOTE_2026-04-19.md
-  PASS support_note_present::docs/YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md :: /private/tmp/cl3-review-open-20260604/docs/YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md
+PASS rescale_0.5_preserves_m_d_over_m_s
+PASS rescale_0.5_preserves_m_s_over_m_b
+PASS rescale_0.5_preserves_m_d_over_m_b
+PASS rescale_0.5_moves_absolute_anchor_when_nonunit :: m_b=2.0900000000
+PASS rescale_1.0_preserves_m_d_over_m_s
+PASS rescale_1.0_preserves_m_s_over_m_b
+PASS rescale_1.0_preserves_m_d_over_m_b
+PASS rescale_1.0_moves_absolute_anchor_when_nonunit :: m_b=4.1800000000
+PASS rescale_2.0_preserves_m_d_over_m_s
+PASS rescale_2.0_preserves_m_s_over_m_b
+PASS rescale_2.0_preserves_m_d_over_m_b
+PASS rescale_2.0_moves_absolute_anchor_when_nonunit :: m_b=8.3600000000
+PASS rescale_10.0_preserves_m_d_over_m_s
+PASS rescale_10.0_preserves_m_s_over_m_b
+PASS rescale_10.0_preserves_m_d_over_m_b
+PASS rescale_10.0_moves_absolute_anchor_when_nonunit :: m_b=41.8000000000
+PASS top_channel_ward_ratio_exact
+PASS species_uniform_bottom_comparator_overshoot_gt_30 :: overshoot=34.71
+PASS species_uniform_bottom_comparator_overshoot_about_35
 
 ========================================================================
-BLOCK 8: staggered-Dirac realization open-gate premise unchanged
+Block 7: Record-axiom counterfactual
 ========================================================================
-  PASS staggered_dirac_gate_note_present :: /private/tmp/cl3-review-open-20260604/docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md
-  PASS gate_note_claim_type_open_gate :: **Type:** open_gate present in gate note header
-  PASS gate_note_explicit_open_gate_status_language :: gate-status language present
+PASS with_record_blocks_retention
+PASS with_record_ratio_invariant
+PASS with_record_overshoot_large
+PASS without_record_blocks_retention
+PASS without_record_ratio_invariant
+PASS without_record_overshoot_large
+PASS counterfactual_boolean_outputs_identical
+PASS counterfactual_numeric_outputs_identical :: diff=0.000e+00
 
 ========================================================================
-BLOCK 9: parent note Record-axiom token scan (load-bearing sections)
+Block 8: companion note content
 ========================================================================
-  PASS loadbearing_section_start_found :: start index = 726
-  PASS loadbearing_section_end_found :: end index = 3473
-  PASS zero_record_axiom_tokens_in_load_bearing_section :: matches = []
-  PASS structural_content_present_in_load_bearing_section :: matches >= 3: ['m_d/m_s', 'alpha_s(v)', 'sqrt(6)', 'bounded companion support', 'CKM']
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_status_change
+PASS companion_marks_audit_values_informational
+PASS companion_documents_current_staggered_boundary
+PASS companion_disclaims_mass_derivation
 
 ========================================================================
-BLOCK 10: Record-axiom counterfactual on the firewall
+Summary
 ========================================================================
-  PASS with_record::firewall_blocks_promotion :: with Record asserted: firewall blocks promotion = True
-  PASS without_record::firewall_blocks_promotion :: without Record asserted: firewall blocks promotion = True
-  PASS counterfactual_firewall_blocks_promotion_identical :: identical Boolean output in both scopes
-  PASS with_record::ratio_invariance_holds :: with Record asserted: ratio invariance holds
-  PASS without_record::ratio_invariance_holds :: without Record asserted: ratio invariance holds
-  PASS counterfactual_ratio_invariance_identical :: identical Boolean output in both scopes
-  PASS with_record::comparator_overshoot_about_35x :: with Record asserted: overshoot = 34.71x
-  PASS without_record::comparator_overshoot_about_35x :: without Record asserted: overshoot = 34.71x
-  PASS counterfactual_comparator_overshoot_identical :: |diff| = 0.000e+00
-
-========================================================================
-BLOCK 11: Quantum and Lattice content preserved across memos
-========================================================================
-  PASS axiom_reset_memo_present :: /private/tmp/cl3-review-open-20260604/docs/MINIMAL_AXIOMS_2026-05-03.md
-  PASS old_memo_present :: /private/tmp/cl3-review-open-20260604/docs/MINIMAL_AXIOMS_2026-05-20.md
-  PASS new_memo_present :: /private/tmp/cl3-review-open-20260604/docs/MINIMAL_AXIOMS_2026-06-04.md
-  PASS axiom_reset_has_Z3_lattice_content :: Z^3 / cubic-lattice content present
-  PASS axiom_reset_has_qubit_content :: qubit / Cl(3) local-algebra content present
-  PASS new_memo_has_Quantum_content :: Quantum = one-qubit / M_2(C) / Cl(3,0) preserved
-  PASS new_memo_has_Lattice_content :: Lattice = Z^3 preserved
-  PASS new_memo_has_Record_additive_scalar_content :: Record axiom: additive scalar functional
-  PASS new_memo_Record_scope_excludes_firewall_missing_premises :: Record axiom's own scope statement excludes log-det / source-action / observable bridges (= the load-bearing missing premises the firewall enumerates)
-
-========================================================================
-BLOCK 12: independent recomputation of firewall load-bearing checks
-========================================================================
-  Reconstruct the parent firewall's three load-bearing outputs
-  three independent ways: Boolean missing-premise enumeration,
-  direct ratio computation, and direct comparator arithmetic.
-  Verify all three reach the same conclusion under both Record-
-  asserted and Record-not-asserted outer scopes.
-  PASS route1_boolean_premise_enumeration_blocks :: missing premises count = 3
-  PASS route2_ratio_invariance_under_explicit_rescaling :: r_sb(scaled lam=5) = 0.0223444976, r_sb(unscaled) = 0.0223444976
-  PASS route3_direct_comparator_overshoot_blocks :: overshoot = 34.71x > 30
-  PASS all_routes_agree_firewall_blocks_promotion :: route1 (missing premises) AND route3 (overshoot) both block
-  PASS all_routes_record_axiom_independent :: route outputs are computed without a Record-axiom state variable
-
-========================================================================
-TOTAL PASS: 78
-TOTAL FAIL: 0
-========================================================================
-
-Companion conclusion (audit-friendly evidence only):
-  The load-bearing firewall structure of
-  QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md
-  uses ONLY Lattice + Quantum axiom content + standard ratio
-  algebra + multiplicative comparator arithmetic + logical-
-  firewall accounting on the open staggered-Dirac realization
-  gate. The Record axiom (additive scalar record-readout
-  functional) is neither used nor invoked. Numeric/Boolean
-  outputs are identical under both 'Record axiom asserted' and
-  'Record axiom not asserted' outer scopes. This runner does
-  not re-apply the prior audit verdicts; it records that the
-  firewall arithmetic + accounting checked here is unchanged
-  by the 2026-06-04 axiom-set adoption.
-
-The audit lane decides whether to honor or re-test the prior
-verdicts on the new minimal_axioms premise hash.
+TOTAL: PASS=92, FAIL=0
 
 ----- stderr -----
 

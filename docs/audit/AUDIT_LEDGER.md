@@ -1511,7 +1511,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
-| `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -11829,13 +11829,13 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 
 - **Note:** [`MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the finite 6-NN reachability/no-diagonal arithmetic and the claimed ratio/absolute-scale split; the physical time-step identification is only supported as a naming convention.
+- **claim_scope:** Audited the finite 6-NN reachability/no-diagonal arithmetic and the claimed identification of update tick, record tick, minimum time step, and one lattice edge.
 - **audit_status:** ~~audited_renaming~~
 - **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The minimum time step is one elementary dynamical update = one record tick, so one tick is one nearest-neighbor hop and a_tau is locked to a_s.  _(class `F`)_
-- **chain closes:** False — The finite graph facts close: a 6-NN update reaches exactly the six graph-distance-1 neighbors, while 26-NN reaches diagonal sites out to sqrt(3). The claimed derivation of the minimum physical time step does not close because the packet lacks a retained bridge theorem deriving the record/update tick as the time coordinate rather than defining that identity.
-- **rationale:** Issue: the runner computes nearest-neighbor reachability, but the load-bearing move equates update tick, record tick, a_tau, and one lattice edge. Why this blocks: the cited reachability theorem constrains influence under an already indexed local update; it does not derive that index as the physical time coordinate. Repair target: supply a retained bridge theorem deriving the record/update tick as time. Claim boundary until fixed: finite reachability and no-diagonal support are valid, but the time-step tie is a renaming.
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-min_time_step_tied_to_the_lattic-13`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The minimum time step is one elementary dynamical update = one record tick, so one tick is identified with one nearest-neighbor hop and a_tau is tied to a_s.  _(class `F`)_
+- **chain closes:** False — The finite graph reachability facts close from the retained LATTICE_NN_LIGHT_CONE input and runner. The claimed physical/time-coordinate tie does not close because the identity between update tick, record tick, a_tau, and one edge is introduced as a naming convention rather than derived by a retained bridge theorem.
+- **rationale:** The runner genuinely checks small finite reachability, no-diagonal geometry, and a bounded group-velocity inequality, but those checks only support graph-local propagation per update. The load-bearing claim that this update tick is the physical minimum time step, record tick, and a_tau is an asserted symbol identity. The source note's own boundary confirms that the row is renaming/bounded reachability support only and requires a retained bridge theorem for promotion beyond that.
 - **auditor confidence:** high
 
 ### `minimal_absorbing_horizon_probe_note`

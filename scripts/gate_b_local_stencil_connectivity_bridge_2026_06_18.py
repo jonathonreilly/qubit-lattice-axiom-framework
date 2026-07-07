@@ -188,6 +188,14 @@ def main() -> int:
     )
 
     check(
+        "note explicitly includes gate_b_connectivity_tolerance helper source and cache",
+        "Helper runner (audit packet must include)" in note
+        and "scripts/gate_b_connectivity_tolerance.py" in note
+        and "logs/runner-cache/gate_b_connectivity_tolerance.txt" in note
+        and "_build_fixed_connectivity" in note,
+    )
+
+    check(
         "parent note wires the GB-S3 split and preserves open physical-growth selector",
         "2026-06-18 local stencil connectivity split" in parent
         and "GB-S3a" in parent

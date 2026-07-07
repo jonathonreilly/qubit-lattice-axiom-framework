@@ -14,6 +14,7 @@ claim_type_author_hint: meta
 **Status:** companion-only. This records that the parent note, runner, and
 two-gate firewall evidence are reproducible on the current tree. It is not a
 new theorem claim, not a verdict change, and not independent audit work.
+Audit-lane values are informational here, not companion pass/fail targets.
 **Companion target:** `hubble_lane5_two_gate_dependency_firewall_note_2026-04-27`
 ([`HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md`](HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md))
 **Primary runner:**
@@ -23,18 +24,19 @@ new theorem claim, not a verdict change, and not independent audit work.
 
 ## Claim Boundary
 
-The parent remains dependency-pending because its six registered upstream
-dependency rows remain unresolved in the ledger. This companion does not remove
-or close those dependencies.
+The parent keeps six registered upstream dependency rows in the ledger. This
+companion does not remove or resolve the upstream dependencies.
 
 The narrow evidence recorded here is:
 
-1. the parent note hash and runner path match the live ledger row;
+1. the parent note hash matches the live ledger row and the runner path still
+   points to the parent runner;
 2. the parent runner exits with `PASS=18 FAIL=0`;
 3. the parent text still records the two-gate identity
    `H_0 = H_inf / sqrt(L)`;
-4. the parent text still blocks the three fast upgrades: C1-only closure,
-   C2/C3-only closure, and structural-lock-only numerical closure;
+4. the parent text still rejects the three unsupported fast upgrades: a C1-alone
+   numerical result, a C2/C3-alone numerical result, and a
+   structural-lock-alone numerical result;
 5. the parent note still names the six dependency inputs in its import-role
    table.
 
@@ -42,12 +44,12 @@ The narrow evidence recorded here is:
 
 - It does not claim a new theorem.
 - It does not change the parent or this companion's verdict fields.
-- It does not close the six upstream dependency rows.
+- It does not resolve the six upstream dependency rows.
 - It does not derive a numerical `H_0`.
 - It does not treat the absolute-scale gate or the dimensionless history gate
-  as closed by this companion.
+  as supplied by this companion.
 - It does not edit generated ledger, queue, or publication-status files.
 
 The safe downstream use is only this meta evidence: the parent two-gate
-firewall remains reproducible, while Hubble Lane 5 numerical closure still
-waits on its upstream gates.
+firewall remains reproducible, while a Hubble Lane 5 numerical result still
+depends on its upstream gates.

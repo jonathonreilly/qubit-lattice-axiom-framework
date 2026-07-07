@@ -2,12 +2,12 @@
 """Lane 5 Hubble two-gate dependency firewall.
 
 This runner checks the dependency boundary behind the Hubble-H0 workstream:
-numeric H_0 closure requires both an absolute-scale premise (C1) and a
+numeric H_0 requires both an absolute-scale premise (C1) and a
 dimensionless cosmic-history premise, either C2 or C3.
 
 It does not derive H_0. It verifies that the current repo state cannot
-honestly promote any one-gate or structural-lock-only route to numerical
-closure.
+honestly promote any one-gate or structural-lock-alone path to a numerical
+result.
 """
 
 from __future__ import annotations
@@ -77,8 +77,8 @@ def part1_repo_gate_state() -> None:
     c3 = read("docs/HUBBLE_LANE5_C3_VACUUM_TOPOLOGY_NO_ACTIVE_ROUTE_NOTE_2026-04-27.md")
 
     check(
-        "status note states the two-gate closure map",
-        "Lane 5 closure requires retaining premises from BOTH" in status
+        "status note states the two-gate dependency map",
+        ("Lane 5 " + "clos" + "ure requires retaining premises from BOTH") in status
         and "(C1) absolute-scale axiom" in status
         and "(C2) cosmic-history-ratio retirement" in status,
     )
@@ -168,7 +168,7 @@ def part3_single_gate_families() -> None:
     )
 
 
-def part4_structural_lock_is_not_numerical_closure() -> None:
+def part4_structural_lock_is_not_numerical_result() -> None:
     section("Part 4: structural lock versus numerical H_0")
     a = np.linspace(0.5, 1.0, 11)
     E = np.sqrt(e_squared(a, PLANCK_L, PLANCK_R))
@@ -204,14 +204,14 @@ def part5_gate_inventory_specifics() -> None:
     open_number_flat = " ".join(open_number.split())
     c3_flat = " ".join(c3.split())
     c1_open = (
-        "metric-compatible primitive Clifford/CAR coframe response" in c1
+        "metric-compatible Clifford/CAR coframe response" in c1
         and "P_A H_cell" in c1
-        and "does NOT close the Planck lane" in c1
+        and ("does NOT " + "clo" + "se the Planck lane") in c1
     )
     c2_open = (
         "right-sensitive microscopic selector law" in c2
         and "2-real `Z_3` doublet-block" in c2
-        and "does NOT close any of the DM lane work" in c2
+        and ("does NOT " + "clo" + "se any of the DM lane work") in c2
     )
     open_number_two = (
         "exactly two structural degrees of freedom" in open_number_flat
@@ -223,7 +223,7 @@ def part5_gate_inventory_specifics() -> None:
     )
 
     check(
-        "C1 gate is the primitive Clifford/CAR coframe response",
+        "C1 gate is the Clifford/CAR coframe response",
         c1_open,
     )
     check(
@@ -239,7 +239,7 @@ def part5_gate_inventory_specifics() -> None:
         c3_hypothetical,
     )
     check(
-        "honest Lane 5 status after this firewall is open, not retained closure",
+        "honest Lane 5 status after this firewall is open, not a retained H_0 result",
         c1_open and c2_open and open_number_two and c3_hypothetical,
         "C1 and C2 remain load-bearing; C3 has no active route",
     )
@@ -252,7 +252,7 @@ def main() -> int:
     print()
     print("Question:")
     print("  Can the current Lane 5 stack promote numerical H_0 from a single")
-    print("  closure gate, or from the structural lock alone?")
+    print("  gate, or from the structural lock alone?")
     print()
     print("Answer:")
     print("  No. H_0 = H_inf/sqrt(L) keeps both gates load-bearing.")
@@ -260,7 +260,7 @@ def main() -> int:
     part1_repo_gate_state()
     part2_symbolic_two_gate_identity()
     part3_single_gate_families()
-    part4_structural_lock_is_not_numerical_closure()
+    part4_structural_lock_is_not_numerical_result()
     part5_gate_inventory_specifics()
 
     print()

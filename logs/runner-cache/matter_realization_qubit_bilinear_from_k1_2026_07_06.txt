@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/matter_realization_qubit_bilinear_from_k1_2026_07_06.py
+runner_sha256: f402fc80ba5461a7dfc689c25ce6d86e3579ddec1ccb3cfaf4d965728daad7e4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+[PASS] normalized text audits for quoted source sentences
+[PASS] AST self-scan: no network/subprocess/eval path
+[PASS] eta phases by parity order 000,001,010,011,100,101,110,111: mu1=++++++++; mu2=++++----; mu3=++----++
+[PASS] K1 per-edge coefficients: Gamma_1=sigma_1, Gamma_2=sigma_2, Gamma_3=sigma_3; self-adjoint unitary rank=2 on all 24 edges
+[PASS] D1 exact: K1 Clifford triple; no fourth; scalar commutant
+[PASS] D4 exact: K0 coefficient constructed (identity; scalar class) -> dims=[1,1,1]; K1 dims=[2,2,2]
+[PASS] D2 exact witness: K1 Clifford square (a.sigma)^2 = |a|^2 I on a rational point; K0-side dispersion contrast is QUOTED target/context only, not recomputed
+[NOTE] D3 zero-set geometry: quoted target/context from the unaudited discriminator note; not recomputed here
+DECLARATION results=T1_exact_K1_branch_conditional; T2_bookkeeping_only; residuals_not_T_claims; not_consumed=K1_audit_status,color_C3_carrier_lift,state_level_full_rank,occupancy_selection,audit_verdicts,Tier-A_or_primitive_content,cache_write
+TOTAL PASS=9 FAIL=0
+
+----- stderr -----
+

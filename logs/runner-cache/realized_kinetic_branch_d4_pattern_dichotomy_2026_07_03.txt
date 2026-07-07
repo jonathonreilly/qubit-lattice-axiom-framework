@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.py
+runner_sha256: f983ea710d43119ef4e3a2ee7697628fe5c1f0d04ede1504ea21080943d13fa0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+==============================================================================
+realized kinetic branch D4 pattern dichotomy (2026-07-03)
+==============================================================================
+[PASS] [T1]  1. single Hermitian generator gives dim 1 iff scalar else 2; Cayley-Hamilton holds  |  nonscalar->2 count=50, scalar->1 count=4, max CH residual=1.26e-15
+[PASS] [T2]  2. off-surface: two Hermitian generators reach dim 4 (sigma_1,sigma_3 and generic pairs)  |  alg_dim([S1,S3])=4, generic dim-4 pairs=20/20
+[PASS] [T3]  3. machinery gate: adjoint closure of nilpotent [[0,1],[0,0]] generates all of M_2(C)  |  alg_dim([A_nilpotent])=4 (a scalarness branch would wrongly give 2)
+[PASS] [T4]  4. computed K1 Gamma family is Hermitian/unitary/anticommuting with per-dir dims [2,2,2]; K0 scalar dims [1,1,1]  |  K1 dims=[2, 2, 2], K0 dims=[1, 1, 1], max anticommutator=0.00e+00, edge spread=0.00e+00
+[PASS] [T5]  5. spinor-rep rotations transport the computed Gamma family (U_z: 1<->2, U_111: 3-cycle) up to sign, dims preserved  |  U_z signs=(1.0,-1.0), U_111 cycle signs=[1.0, 1.0, 1.0]
+[PASS] [T6]  6. alg_dim invariant under 20 Haar U(2) conjugations; constancy filter leaves exactly {[1,1,1],[2,2,2]}, no filter leaves all 8  |  constant patterns=[(1, 1, 1), (2, 2, 2)] (count 2), unfiltered count=8, max dim deviation=0
+[PASS] [T7]  7. non-covariant symbol B_1=sigma_3,B_2=B_3=0 has dims [2,1,1]; no unitary implements C4z covariance (floor > 0.5)  |  mixed dims=[2, 1, 1], min covariance defect over 200 unitaries=1.733
+[PASS] [T8]  8. Fourier orthogonality extracts Hermitian coefficients (reconstruction exact); a non-Hermitian coefficient breaks K(p)=K(p)^dag  |  max coeff Herm defect=0.00e+00, reconstruction defect=1.07e-15, non-Herm symbol defect=1.414
+[PASS] [T9]  9. guard: flipping one eta0 link sign breaks the clean anticommutation of the blocked family  |  perturbed anticommutation norm=4.000, clean anticommutation norm=0.00e+00
+
+TOTAL: PASS=9 FAIL=0
+
+SUMMARY: On the parent two-flux-class kinetic surface, the D4 per-direction algebra-dimension
+         discriminator is a BINARY CLASS INVARIANT on the covariant surface: for Hermitian
+         nearest-neighbor symbols on the one-site C^2 carrier covariant under the proper cubic
+         rotations the per-direction unital star-algebra dimension is CONSTANT across the three
+         directions, and on the one-coefficient-per-direction representatives it lies in {1,2},
+         realizing exactly [1,1,1] (K0 class) and [2,2,2] (K1 class). Off-surface Hermitian
+         symbols realize dim 4 and non-covariant symbols realize direction-mixed patterns, so
+         both hypotheses are load-bearing. The selector bit is not decided here, and the
+         Admissibility reading is not decided here.
+
+----- stderr -----
+

@@ -1,46 +1,94 @@
 ===== runner cache v1 =====
 runner: scripts/source_resolved_exact_green_pocket.py
-runner_sha256: 2035c4388fa4f7fd5dfa4361485b3c7d2dee99a8494e576584d5a45933f787d5
+runner_sha256: 5e5d4a2f56f9b8373d6bb342b6a9878047278285691d505898005d4e63f4b330
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.45
+elapsed_sec: 1.46
 status: ok
 ----- stdout -----
 ====================================================================================
 SOURCE-RESOLVED EXACT GREEN POCKET
-  small exact lattice, source-resolved Green-like field
-  comparison: source-resolved field vs instantaneous 1/r field
+  conditional fixture theorem under GREEN-KERNEL-PARAMS
+  motivation-tier replay is evidence only, not load-bearing
 ====================================================================================
 h=0.5, W=3, L=20, source_cluster=4 nodes
-field kernel: exp(-mu rho_eps)/rho_eps, rho_eps=rho+eps, mu=0.08, eps=0.5
-source strengths: (0.001, 0.002, 0.004, 0.008)
-target max |f|: 0.02
+field kernel premise: exp(-mu rho_eps)/rho_eps, rho_eps=rho+eps, mu=0.08, eps=0.5
+source strengths premise: (0.001, 0.002, 0.004, 0.008)
+supplied gain premise: 2.131774
+
+PREMISE CONSISTENCY CHECKS
+  [PASS] lattice h premise is 0.5
+  [PASS] lattice W premise is 3
+  [PASS] lattice L premise is 20
+  [PASS] source cluster clips to 4 nodes
+  [PASS] source-strength premise is {0.001, 0.002, 0.004, 0.008}
+  [PASS] kernel mu premise is 0.08
+  [PASS] kernel eps premise is 0.5
+  [PASS] gain premise is 2.131774
+
+MOTIVATION-TIER CALIBRATION REPLAY
+  Calibration replay comparisons are motivation-tier evidence only.
+  target max |f|: 0.02
+  replayed calibration gain: 2.131774390e+00
+  supplied gain consumed by hard bars: 2.131774000e+00
+  [PASS] replayed calibration gain matches the frozen motivation reference
 
 REDUCTION CHECK
   zero-source dynamic shift: +0.000000e+00
-  calibration gain: 2.131774e+00
 
+LOAD-BEARING REPLAY TABLE
+  The Green readouts below feed hard-bar assertions.
        s         inst        green  green/inst       max|f|
 ----------------------------------------------------------------------
   0.0010 +1.713544e-03 +2.139974e-03       1.249 2.500000e-03
-  0.0020 +3.440703e-03 +4.279368e-03       1.244 5.000000e-03
-  0.0040 +6.936763e-03 +8.557987e-03       1.234 1.000000e-02
+  0.0020 +3.440703e-03 +4.279367e-03       1.244 4.999999e-03
+  0.0040 +6.936763e-03 +8.557985e-03       1.234 9.999998e-03
   0.0080 +1.410179e-02 +1.712572e-02       1.214 2.000000e-02
 
-SAFE READ
+LOAD-BEARING FIT READOUT
+  green_alpha, TOWARD, and mean_ratio feed hard-bar assertions.
   instantaneous F~M exponent: 1.01
   green-kernel F~M exponent: 1.00
   TOWARD rows: 4/4
   mean |green/inst| ratio: 1.235
-  this is a feasibility pocket, not yet a full-size exact-lattice theory
 
-HARD-BAR ASSERTIONS
-  PASS: zero-source reduction |zero_delta|=0.000e+00 <= 1e-12
-  PASS: TOWARD sign 4/4
-  PASS: green F~M exponent 1.000 in [0.95, 1.05]
-  PASS: mean |green/inst| ratio 1.235 in [1.10, 1.40]
-  PASS: calibration gain 2.131774e+00 in (0, 100)
-  === TOTAL: PASS=5, FAIL=0 ===
+LOAD-BEARING HARD-BAR ASSERTIONS
+  Conditional on GREEN-KERNEL-PARAMS; no parameter derivation claimed.
+  [PASS] zero-source reduction |zero_delta|=0.000e+00 <= 1e-12
+  [PASS] TOWARD sign 4/4
+  [PASS] green F~M exponent 1.000 in [0.95, 1.05]
+  [PASS] mean |green/inst| ratio 1.235 in [1.10, 1.40]
+  [PASS] computed gain is finite and matches DECLARED_GAIN within 5e-7 (2.131774390e+00)
+
+PARSER AND TEXT CONTRACT CHECKS
+  [PASS] frontmatter claim_id is source_resolved_exact_green_pocket_note
+  [PASS] parser path claim_id is source_resolved_exact_green_pocket_note
+  [PASS] parser claim type is bounded_theorem
+  [PASS] parser primary runner is scripts/source_resolved_exact_green_pocket.py
+  [PASS] note contains: claim_id: source_resolved_exact_green_pocket_note
+  [PASS] note contains: **Type:** bounded_theorem
+  [PASS] note contains: **Claim type:** bounded_theorem
+  [PASS] note contains: **Primary runner:**
+  [PASS] note contains: ## Artifact chain
+  [PASS] note contains: GREEN-KERNEL-PARAMS (named conditional premise): the Green-kernel
+  [PASS] note contains: Runner Readout and Motivation Exhibit
+  [PASS] note contains: Calibration replay comparisons are motivation-tier evidence only.
+  [PASS] note contains: The named premises may not be cited as derived.
+
+DETERMINISM STATEMENT
+  uncounted: runner uses no random seed, no RNG branch, no network,
+  and fixed loops over declared finite inputs.
+
+TIER ACCOUNTING
+  LOAD-BEARING: PASS=5 FAIL=0
+  PREMISE: PASS=8 FAIL=0
+  PARSER: PASS=4 FAIL=0
+  TEXT: PASS=9 FAIL=0
+  MOTIVATION: PASS=1 FAIL=0
+TOTAL: PASS=26 FAIL=0
+NONFATAL TOTAL: PASS=1 FAIL=0
+DECLARATION: GREEN-KERNEL-PARAMS is supplied; kernel, gain, source
+geometry, and hard-bar windows are not claimed as derived.
 
 ----- stderr -----
 

@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/frontier_species_universal_floor_classification_2026_07_03.py
+runner_sha256: 4427c3bead044eafb648debfaf0228ba7647deb5ca4fed7b73c5811010c38569
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+CHECK 01: PASS - single C3 orbit on the three corner labels -- orbit=[0, 1, 2]
+CHECK 02: PASS - Reynolds average of diagonal corner-weight has spread 0 -- raw_spread=6, averaged=[Fraction(3, 1), Fraction(3, 1), Fraction(3, 1)]
+CHECK 03: PASS - live quote guard: arrow universal-floor sentence
+CHECK 04: PASS - live quote guard: past-hypothesis placement sentence
+CHECK 05: PASS - live quote guard: parent same-identification sentence
+CHECK 06: PASS - direct text extraction: species residual statement names no tested number
+CHECK 07: PASS - direct text extraction: registry theta entry names theta-bar numbers
+CHECK 08: PASS - direct text extraction: CKM/PMNS remains separate
+files: ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md, SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md, ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+TOTAL: PASS=8 FAIL=0
+classification claim: AC_phi_lambda(iii)'s C3-grade species identification belongs beside the past hypothesis as a universal-floor candidate, subject to owner ruling.
+counterargument: every theory needing an input does not make it free; the defense is the past-hypothesis precedent plus the no-number discriminator.
+uncertainties: owner registry ruling, audit-lane handling, and any above-C3 or CKM/PMNS content remain outside this runner.
+
+----- stderr -----
+

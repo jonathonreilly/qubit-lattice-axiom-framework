@@ -19,7 +19,7 @@
         }
       ],
       "length": 3,
-      "max_transitive_descendants": 375,
+      "max_transitive_descendants": 384,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -28,7 +28,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
           "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3",
-          "transitive_descendants": 375
+          "transitive_descendants": 384
         },
         {
           "audit_status": "unaudited",
@@ -37,7 +37,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
           "title": "Single-Clock APBC Axis-Label Bridge",
-          "transitive_descendants": 375
+          "transitive_descendants": 384
         },
         {
           "audit_status": "unaudited",
@@ -46,7 +46,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
           "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin",
-          "transitive_descendants": 375
+          "transitive_descendants": 384
         }
       ],
       "requires_lemma_extraction": false
@@ -65,7 +65,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 369,
+      "max_transitive_descendants": 378,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -74,7 +74,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md",
           "title": "Quark CP-Carrier Completion on the Live Mass-Ratio Lane",
-          "transitive_descendants": 369
+          "transitive_descendants": 378
         },
         {
           "audit_status": "unaudited",
@@ -83,7 +83,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md",
           "title": "Quark CP Carrier Slot Minimality Theorem",
-          "transitive_descendants": 369
+          "transitive_descendants": 378
         }
       ],
       "requires_lemma_extraction": false
@@ -102,7 +102,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 292,
+      "max_transitive_descendants": 301,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -111,7 +111,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md",
           "title": "Bridge Gap \u2014 Heat-Kernel Thermodynamic \u27e8P\u27e9(6) Stretch Attempt (Block 03)",
-          "transitive_descendants": 292
+          "transitive_descendants": 301
         },
         {
           "audit_status": "unaudited",
@@ -120,7 +120,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md",
           "title": "Bridge Gap \u2014 HK Cube Perron L_s=2 (Block 06)",
-          "transitive_descendants": 292
+          "transitive_descendants": 301
         }
       ],
       "requires_lemma_extraction": false
@@ -143,7 +143,7 @@
         }
       ],
       "length": 3,
-      "max_transitive_descendants": 292,
+      "max_transitive_descendants": 301,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -152,7 +152,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md",
           "title": "Bridge Gap \u2014 Action-Form Uniqueness No-Go",
-          "transitive_descendants": 292
+          "transitive_descendants": 301
         },
         {
           "audit_status": "unaudited",
@@ -161,7 +161,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md",
           "title": "Bridge Gap \u2014 Heat-Kernel Thermodynamic \u27e8P\u27e9(6) Stretch Attempt (Block 03)",
-          "transitive_descendants": 292
+          "transitive_descendants": 301
         },
         {
           "audit_status": "unaudited",
@@ -170,7 +170,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md",
           "title": "Bridge Gap \u2014 HK Cube Perron L_s=2 (Block 06)",
-          "transitive_descendants": 292
+          "transitive_descendants": 301
         }
       ],
       "requires_lemma_extraction": false

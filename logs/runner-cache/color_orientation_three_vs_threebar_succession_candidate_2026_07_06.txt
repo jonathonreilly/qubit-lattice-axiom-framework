@@ -1,0 +1,9 @@
+[PASS] text audits passed for 12 quoted source snippets
+[PASS] rational antihermitian su(3)/su(2) bases checked; spans verified rank 8 and 3
+[PASS] su(3) fundamental-to-conjugate intertwiner nullity = 0
+[PASS] su(2) control nullity = 1 with exact epsilon intertwiner
+[PASS] cubic anomaly signs checked: A(3)=+1, A(3bar)=-1, pair sum=0
+[PASS] AST self-scan passed
+DECLARATION premise=SUCCESSION-ORIENT; conditional_on=R-comparability; supplied=SUPPLIED-C3; anomaly_requirement=ANOMALY-CANCEL
+EXACT su3_nullity=0 su2_nullity=1 epsilon=[[0, 1], [-1, 0]] D3(0, 0, 7)=4 A3=+1 A3bar=-1 pair_sum=0
+TOTAL PASS=6 FAIL=0

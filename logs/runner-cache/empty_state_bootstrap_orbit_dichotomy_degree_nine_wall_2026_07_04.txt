@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/empty_state_bootstrap_orbit_dichotomy_degree_nine_wall_2026_07_04.py
+runner_sha256: da3fc3be638c7de090a0533ece5ab18435836dffe87379a9a29dc091519c669e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS: S0 group machinery and orbit sizes | unique=48 proper=24 improper=24 orbit_sizes={'axis': 6, 'corner': 8, 'edge': 12, 'mirror': 24, 'generic': 24}
+PASS: A1 all-open pattern invariant under full cubic direction action | constant all-open six-direction coloring is fixed by all 48 direction permutations; this is the checkable empty-state symmetry input for proper-covariant availability-set transport
+PASS: A2 orbit dichotomy equals improper stabilizer criterion | cases=35 mismatches=0
+PASS: A3 mirror twins equal exactly on improper-stabilized representatives | generic_disjoint=True equal={axis:True, corner:True, edge:True, mirror:True}
+PASS: B1 model availability sets under P pairing | sizes={S_chiral:30, S_paired:54, S_special:14} P_flags={S_chiral:False, S_paired:True, S_special:True}
+PASS: B2 chiral model pair is not related by proper transport | proper_invariant=True distinct=True proper_maps_to_twin=False
+PASS: C1 degree wall by det-character multiplicities | m_l(0..10)=[0, -6.82821880595e-17, 0, 1.85037170771e-17, 0, 5.18104078158e-16, 0, -7.81103587274e-16, 0, 1, 0]
+PASS: C2 Psi9 follows det character | group_elements=48 samples_per_element=3 max_err=1.421e-14
+PASS: C3 degree wall by polynomial projection | d7:monomials=36,max_projected=2.776e-17,scale=1.226e+00; d8:monomials=45,max_projected=4.626e-18,scale=2.589e+00; d9:monomials=55,ratio=-0.0541365809877,spread=2.954e-13
+PASS: C4 mirror zero locus and generic nonzero locus | zero_points=14 max_zero=0.000e+00 generic_abs=5.454e-03 rng_nonzero=20 skipped=0
+PASS: C5 pointwise Psi9-zero iff improper-stabilized | cases=55 mismatches=0
+PASS: D1 one-bit selector transport and orbit sums | nonzero_D=20/20 orbit_sums={S_chiral:0.130885743749, S_paired:8.67361737988e-18, S_special:0}
+PASS: D2 readout face: even additive scalar vs Psi9 | readout=0.718376034963 flipped_readout=0.718376034963 Psi9_sum=-0.0029788062195 flipped_Psi9_sum=0.0029788062195
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

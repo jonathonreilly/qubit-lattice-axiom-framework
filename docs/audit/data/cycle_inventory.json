@@ -377,10 +377,10 @@
       "max_transitive_descendants": 1,
       "nodes": [
         {
-          "audit_status": "unaudited",
+          "audit_status": "audited_conditional",
           "claim_id": "record_context_generator_nonidentifiability_no_go_2026-06-17",
           "claim_type": "no_go",
-          "effective_status": "unaudited",
+          "effective_status": "audited_conditional",
           "note_path": "docs/RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md",
           "title": "Record Context/Generator Nonidentifiability No-Go",
           "transitive_descendants": 1

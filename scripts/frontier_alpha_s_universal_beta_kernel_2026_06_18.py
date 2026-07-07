@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Framework-native exact evaluation of the universal QCD beta0/beta1 kernel."""
+"""Conditional exact evaluation of supplied QCD beta0/beta1 templates."""
 
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ from pathlib import Path
 
 NOTE_PATH = Path("docs/ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md")
 PARENT_PATH = Path("docs/ALPHA_S_4LOOP_RUNNING_DERIVATION_PARTIAL_NOTE_2026-05-10_4loop.md")
-EXPECTED_SUMMARY = "SUMMARY: PASS=28 FAIL=0"
+EXPECTED_SUMMARY = "SUMMARY: PASS=30 FAIL=0"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -83,7 +83,9 @@ def main() -> int:
     required = [
         "**Claim type:** bounded_theorem",
         "**Type:** bounded_theorem",
-        "universal two-loop beta-kernel",
+        "bounded algebra/convention kernel conditional on supplied universal",
+        "This note does not derive the universal `beta_0` or `beta_1` loop coefficient",
+        "conditional on those supplied templates",
         "This note does not derive beta_2, beta_3, MSbar counterterms, or four-loop running.",
         "This note does not derive physical threshold masses.",
         "This note does not promote any downstream alpha_s(M_Z) value to retained status.",

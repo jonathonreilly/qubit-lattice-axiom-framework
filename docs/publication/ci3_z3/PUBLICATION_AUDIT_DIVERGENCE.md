@@ -17,12 +17,12 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 186 |
+| critical | `unaudited` | 185 |
 | high | `unaudited` | 146 |
 | medium | `unaudited` | 96 |
 | high | `audited_conditional` | 3 |
 | medium | `open_gate` | 3 |
-| critical | `audit_in_progress` | 1 |
+| critical | `audit_in_progress` | 2 |
 | critical | `audited_numerical_match` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |

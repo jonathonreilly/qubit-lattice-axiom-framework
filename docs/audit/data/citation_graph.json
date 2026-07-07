@@ -57774,7 +57774,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hypercharge_identification_note"
+      "to": "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
@@ -111813,7 +111813,7 @@
         "kinetic_isotropy_primitive",
         "realized_state_primitive",
         "tier_a_residual_owner_adoption_retirement_2026-07-04",
-        "hypercharge_identification_note",
+        "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
@@ -111823,7 +111823,7 @@
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "95e2597c89b16dddf4a94292a7c7e1c7d80d14e6f4cf05d2103bc0224d8eac85",
+      "note_hash": "0fce150846a4b25f360595694a0d2ad190e871f5b3757f2d2f8df7910cfd6335",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

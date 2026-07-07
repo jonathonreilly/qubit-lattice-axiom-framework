@@ -165,15 +165,15 @@
       "deps": [
         "hypercharge_identification_note"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.839,
+      "load_bearing_score": 14.34,
       "note_path": "docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py",
-      "transitive_descendants": 1294
+      "transitive_descendants": 1295
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

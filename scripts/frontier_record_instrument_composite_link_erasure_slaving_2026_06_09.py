@@ -93,10 +93,10 @@ def haar_su3():
 
 
 def polar_uq(m):
-    """m = u q, q = (m^dag m)^{1/2} PD Hermitian, u unitary (m invertible)."""
-    w, v = np.linalg.eigh(m.conj().T @ m)
-    q = v @ np.diag(np.sqrt(w)) @ v.conj().T
-    u = m @ v @ np.diag(1.0 / np.sqrt(w)) @ v.conj().T
+    """Return the unitary polar factor and positive part using SVD."""
+    u_svd, singular, vh = np.linalg.svd(m)
+    u = u_svd @ vh
+    q = vh.conj().T @ np.diag(singular) @ vh
     return u, q
 
 

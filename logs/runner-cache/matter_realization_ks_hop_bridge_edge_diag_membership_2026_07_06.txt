@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/matter_realization_ks_hop_bridge_edge_diag_membership_2026_07_06.py
+runner_sha256: 89fa96664cc11507681955d357c71ed18c03c65ea91d324c09d450abaaa33041
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+TEXT-AUDIT STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md:3/3;STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md:4/4;MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06.md:2/2
+AST-SCAN PASS detail=ascii_ast_exact_arithmetic_scan
+T1 h0: label=h0; EDGE-DIAG=IN; swap_image=h0
+T1 hJW_left: label=-h0; EDGE-DIAG=IN; swap_image=-h0
+T1 hJW_right: label=-h0; EDGE-DIAG=IN; swap_image=-h0
+T1 h0_minus: label=unclassified; EDGE-DIAG=OUT; swap_image=unclassified
+T1 hJW_left_minus: label=unclassified; EDGE-DIAG=OUT; swap_image=unclassified
+T1 hJW_right_minus: label=unclassified; EDGE-DIAG=OUT; swap_image=unclassified
+HKS h0 mu=1: endpoint_parities=8; label=pair_same+; EDGE-DIAG=IN
+HKS h0 mu=2: endpoint_parities=8; label=pair_same-; EDGE-DIAG=IN
+HKS h0 mu=3: endpoint_parities=8; label=-h0; EDGE-DIAG=IN
+HKS hJW_left mu=1: endpoint_parities=8; label=pair_same-; EDGE-DIAG=IN
+HKS hJW_left mu=2: endpoint_parities=8; label=pair_same+; EDGE-DIAG=IN
+HKS hJW_left mu=3: endpoint_parities=8; label=h0; EDGE-DIAG=IN
+HKS hJW_right mu=1: endpoint_parities=8; label=pair_same-; EDGE-DIAG=IN
+HKS hJW_right mu=2: endpoint_parities=8; label=pair_same+; EDGE-DIAG=IN
+HKS hJW_right mu=3: endpoint_parities=8; label=h0; EDGE-DIAG=IN
+HKS h0_minus mu=1: endpoint_parities=8; label=unclassified; EDGE-DIAG=IN
+HKS h0_minus mu=2: endpoint_parities=8; label=unclassified; EDGE-DIAG=IN
+HKS h0_minus mu=3: endpoint_parities=8; label=unclassified; EDGE-DIAG=OUT
+HKS hJW_left_minus mu=1: endpoint_parities=8; label=unclassified; EDGE-DIAG=IN
+HKS hJW_left_minus mu=2: endpoint_parities=8; label=unclassified; EDGE-DIAG=IN
+HKS hJW_left_minus mu=3: endpoint_parities=8; label=unclassified; EDGE-DIAG=OUT
+HKS hJW_right_minus mu=1: endpoint_parities=8; label=unclassified; EDGE-DIAG=IN
+HKS hJW_right_minus mu=2: endpoint_parities=8; label=unclassified; EDGE-DIAG=IN
+HKS hJW_right_minus mu=3: endpoint_parities=8; label=unclassified; EDGE-DIAG=OUT
+DECLARATION T1=h0:h0:IN,hJW_left:-h0:IN,hJW_right:-h0:IN,h0_minus:unclassified:OUT,hJW_left_minus:unclassified:OUT,hJW_right_minus:unclassified:OUT; HKS_all_8_endpoint_parities=h0[mu1:pair_same+:IN,mu2:pair_same-:IN,mu3:-h0:IN];hJW_left[mu1:pair_same-:IN,mu2:pair_same+:IN,mu3:h0:IN];hJW_right[mu1:pair_same-:IN,mu2:pair_same+:IN,mu3:h0:IN];h0_minus[mu1:unclassified:IN,mu2:unclassified:IN,mu3:unclassified:OUT];hJW_left_minus[mu1:unclassified:IN,mu2:unclassified:IN,mu3:unclassified:OUT];hJW_right_minus[mu1:unclassified:IN,mu2:unclassified:IN,mu3:unclassified:OUT]; not_consumed_or_claimed=statistics_selection,dynamics,weights,color_carrier,SUPPLIED-C3,K1_audit,Tier-A_content,audit_verdicts
+TOTAL: PASS=100 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,358 @@
+# Matter Realization KS Hop Bridge EDGE-DIAG Membership
+
+**Date:** 2026-07-06
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only. This source note does not
+set, predict, or apply an audit outcome.
+**Primary runner:**
+[`scripts/matter_realization_ks_hop_bridge_edge_diag_membership_2026_07_06.py`](../scripts/matter_realization_ks_hop_bridge_edge_diag_membership_2026_07_06.py)
+**Cache:**
+[`logs/runner-cache/matter_realization_ks_hop_bridge_edge_diag_membership_2026_07_06.txt`](../logs/runner-cache/matter_realization_ks_hop_bridge_edge_diag_membership_2026_07_06.txt)
+
+The cache linked above is generated from this runner's output.
+
+## Summary
+
+Current-main posture on 2026-07-07: this note lands after
+[`MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06.md`](MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06.md),
+which named KS-HOP-BRIDGE, and the Tier-A admitted-input count is zero. This
+note does not edit registries, Tier-A retirement records, audit ledgers, or
+effective-status surfaces.
+
+This note computes KS-HOP-BRIDGE as an exact finite case analysis, and the
+answer is a DICHOTOMY. Every SYMMETRIZED bonded-pair hopping presentation --
+naive, both Jordan-Wigner parity placements, and all KS shared-frame dressed
+cases across all directions and endpoint parities -- lies in EDGE-DIAG: the
+arena split survives those forms exactly. The ANTISYMMETRIZED
+lattice-difference combinations (the literal form of the quoted KS edge) are
+exactly OUT in the undressed and ladder-axis-aligned cases -- they anti-commute
+with the exchange and are exact Sym <-> Anti intertwiners -- and
+presentation-relatively IN under transverse dressing. Which Hermitian
+combination the KS action induces as the bonded-pair generator is the named
+remainder KS-COMBINATION, not resolved here. One small named convention
+(QUBIT-LADDER-PRES) and no statistics content anywhere.
+
+## The texts in play
+
+The current axiom memo supplies only the four-axiom surface:
+
+> "The full one-site possibility domain has algebraic presentation `M_2(C)`."
+
+> "For each site, the available possibilities are determined by, and vary with,
+> the nearest-neighbor conditions."
+
+The Kawamoto-Smit note is consumed at its retained local
+kinetic-scalarization surface. Its source contains non-ASCII notation; these
+are ASCII renderings, and the runner audits the exact source text:
+
+> "Under P-KIN the kinetic operator is
+> `D = Sum_mu gamma_mu tensor partial_mu` with `partial_mu` the symmetric
+> lattice difference. P-SD supplies the site-local unitary scalarization map
+> `T(x)` per site, `chi(x) := T(x) psi(x)`, with the scalarization condition
+> `T^dagger(x) gamma_mu T(x + mu-hat) = eta_mu(x) * I_2`."
+
+> "The canonical phases are `eta_1(x)=1`,
+> `eta_2(x)=(-1)^{x_1}`, and `eta_3(x)=(-1)^{x_1+x_2}`."
+
+> "A canonical solution is
+> `T(x)=gamma_1^{x_1} gamma_2^{x_2} gamma_3^{x_3}`; on the Pauli realization,
+> `T(x)=sigma_1^{x_1} sigma_2^{x_2} sigma_3^{x_3}`."
+
+The hopping form it declares is rendered as (full sentence, ASCII):
+
+> "Hence the staggered kinetic operator
+> `D_staggered = (1/2) Sum_{x,mu} eta_mu(x) *
+> (chibar_{x+mu} chi_x - chibar_x chi_{x+mu})`
+> carries the Kawamoto-Smit phase law uniquely as a local gauge class, up to
+> finite-boundary holonomy/APBC convention data and lattice-axis permutation
+> gauge (B4)."
+
+The quoted edge is the ANTISYMMETRIC lattice difference. Which Hermitian
+combination this Euclidean-action bilinear induces as the bonded-pair
+GENERATOR on the two-site Hilbert space (the symmetrized `A + A^dagger`, the
+antisymmetrized `A - A^dagger` up to `i`, or a mixture) is action-to-operator
+bookkeeping this note does NOT derive; both combinations are therefore
+computed below and the verdict is stated per combination (see
+KS-COMBINATION).
+
+The Grassmann bridge supplies the one-mode per-site presentation and its
+boundary, again rendered in ASCII with exact source audits:
+
+> "Per-site state space: the Berezin function space
+> `F_x = Lambda[chibar_x] = C*1 plus C*chibar_x`, complex dimension `2`,
+> carrying multiplication `cbar_x` and the Berezin derivative `c_x`."
+
+> "On the basis `(1, chibar_x)`, `cbar_x` is raising and `c_x` is lowering;
+> direct evaluation gives `{c_x,cbar_x}=1` on `F_x`."
+
+> "This is collapse within the two-candidate surface only: it is NOT a
+> statistics-forcing theorem; the statistics-selection input remains open."
+
+QUBIT-LADDER-PRES (named presentation convention, small): substep-1 itself
+supplies the raising/lowering structure on `F_x` (quoted above: `cbar_x` is
+raising, `c_x` is lowering). What substep-1 does NOT choose is the explicit
+qubit-matrix identification and basis orientation; that choice is this
+note's added presentation convention, carried by name:
+`sigma^+ = [[0,1],[0,0]]`, `sigma^- = [[0,0],[1,0]]`,
+`sigma_z = diag(1,-1)`, with `(1, chibar_x)` as the ordered basis. This is
+an algebraic matrix placement only -- NOT fermionic statistics, graded
+locality, or a cross-site sign rule (substep-1's statistics boundary is
+quoted above and carried). One computed consequence below is
+presentation-relativity: the antisymmetric combination's class membership
+depends on the orientation of the edge twist relative to this convention's
+axis, so QUBIT-LADDER-PRES is load-bearing for those rows and is named
+exactly for that reason.
+
+The landed arena split-preservation source note defines the class and the open
+bridge. Quoted verbatim:
+
+> "Definition (EDGE-DIAG, precise): an edge operator `O` on `C^2 tensor C^2`
+> is in the EDGE-DIAG class iff `[O, S] = 0`. Split preservation for this
+> class is then exact and immediate: commuting with `S` is equivalent to
+> preserving both `S`-eigenspaces, i.e. being block diagonal with respect to
+> `P_sym + P_anti`."
+
+and:
+
+> "What is PROVEN here about the KS structure: the relative frame transport is
+> in class -- `[S'_mu, S] = 0` for all three directions, and every diagonal
+> lift `g tensor g` is in class (T1). What is NOT proven here: that the
+> bonded-pair edge operator induced by the actual KS hopping term lies in
+> EDGE-DIAG. That step is the named open bridge KS-HOP-BRIDGE: deriving, from
+> the retained KS note's scalarization structure, the explicit bonded-pair
+> operator the hopping induces on `C^2 tensor C^2` and checking its membership."
+
+The landed color arena source note is cited within its own contract only: edge
+arena, shared-presentation split, and R1 as downstream obligation. It is not
+cited for color realization, `SU(3)`, dynamics, species, or carrier content.
+
+## T1 -- Undressed hopping candidates
+
+Let `S(v tensor w) = w tensor v`. The runner verifies
+`S (A tensor B) S = B tensor A` on all 16 elementary matrix-unit pairs, so
+EDGE-DIAG membership is exactly factor-swap symmetry.
+
+The candidate operators are:
+
+```text
+h0       = sigma^+ tensor sigma^- + sigma^- tensor sigma^+
+hJW_L    = (sigma^+ sigma_z) tensor sigma^- + h.c.
+hJW_R    = sigma^+ tensor (sigma_z sigma^-) + h.c.
+```
+
+The exact matrix identities are:
+
+```text
+sigma^+ sigma_z = -sigma^+
+sigma_z sigma^- = -sigma^-
+```
+
+Therefore:
+
+```text
+h0    = h0
+hJW_L = -h0
+hJW_R = -h0
+```
+
+**T1 (exact, runner-verified):** `h0`, `hJW_L`, and `hJW_R` are in EDGE-DIAG; their antisymmetrized counterparts `h0_minus`, `hJW_L_minus`, `hJW_R_minus` are OUT, anti-commuting with `S` (exact Sym <-> Anti intertwiners).
+Both parity placements have equal relative signs on the two hopping terms.
+
+## T2 -- KS shared-frame dressed cases
+
+For a positive `mu` edge, file 2 gives:
+
+```text
+T(x) = sigma_1^{x_1} sigma_2^{x_2} sigma_3^{x_3}
+T(x+e_mu) = eta_mu(x) sigma_mu T(x)
+```
+
+The runner checks this for all eight endpoint parity representatives and all
+three directions, then computes
+
+```text
+h_KS(x,mu) =
+(T(x) tensor T(x+e_mu)) h (T(x) tensor T(x+e_mu))^dagger.
+```
+
+The `eta_mu(x)` sign cancels in conjugation. The one-sided
+`I tensor sigma_mu` factor is still tested explicitly.
+
+With
+
+```text
+pair_same = sigma^+ tensor sigma^+ + sigma^- tensor sigma^-,
+```
+
+the complete case table is:
+
+| candidate | parities | mu=1 | mu=2 | mu=3 |
+|---|---:|---|---|---|
+| `h0` | 8 | `pair_same`, IN | `-pair_same`, IN | `-h0`, IN |
+| `hJW_L` | 8 | `-pair_same`, IN | `pair_same`, IN | `h0`, IN |
+| `hJW_R` | 8 | `-pair_same`, IN | `pair_same`, IN | `h0`, IN |
+
+No row depends on the endpoint parity representative.
+
+**T2 (exact, runner-verified):** every shared-frame dressed SYMMETRIZED
+candidate in the table is in EDGE-DIAG. The dressed ANTISYMMETRIZED
+candidates are IN for `mu = 1, 2` and OUT for `mu = 3` (all eight parities
+each; the pattern tracks the edge twist's orientation relative to the
+QUBIT-LADDER-PRES axis -- see T3).
+
+## T3 -- Bridge verdict
+
+**T3 (exact, from T1 and T2; a DICHOTOMY, not a uniform closure):**
+KS-HOP-BRIDGE resolves into two exact halves plus one named remainder.
+
+Half 1 (IN, uniformly): every SYMMETRIZED combination -- `h0`, `hJW_L`,
+`hJW_R`, and all of their KS shared-frame dressed cases across all three
+directions and all eight endpoint parities -- lies in EDGE-DIAG.
+
+Half 2 (OUT, with structure): the ANTISYMMETRIZED lattice-difference
+combinations `h0_minus = A - A^dagger` (and both JW placements) are OUT of
+EDGE-DIAG in the undressed case: they anti-commute with the exchange
+(`S h_minus S = -h_minus`, exact), which makes them exact Sym <-> Anti
+INTERTWINERS -- the lattice-difference structure is precisely the
+split-mixing object. Under the KS dressing their membership is
+PRESENTATION-RELATIVE: IN for the two transverse directions, OUT for the
+direction whose twist aligns with the QUBIT-LADDER-PRES axis
+(runner-verified for every case; the pattern tracks the relative
+orientation of the edge twist and the ladder-axis convention, so no
+presentation-invariant membership claim exists for the minus forms).
+
+Named remainder (KS-COMBINATION): the retained KS note's quoted edge is the
+antisymmetric difference at the Euclidean-action level. Which Hermitian
+combination it induces as the bonded-pair GENERATOR on the two-site Hilbert
+space is action-to-operator bookkeeping not derived here (the substep-2
+Kahler-Dirac equivalence surface is the natural home). Until
+KS-COMBINATION is resolved, the R1 chain for the KS class reads: the arena
+split survives IF the induced bonded-pair generator is a symmetrized
+combination (Half 1); if it is the literal antisymmetrized difference in an
+aligned presentation, the split is exactly NOT preserved -- and the
+intertwiner structure of Half 2 is then the precise statement of how it
+fails. Both directions are exact; neither is asserted as the physical case.
+
+The conclusion is conditional on the retained KS surface, the file-3
+per-site Berezin presentation plus the named QUBIT-LADDER-PRES convention,
+the arena split-preservation EDGE-DIAG theorem, and audit ratification at the
+stated scope.
+
+This does not select a statistics frame across sites. File 3's own boundary is
+carried forward: the per-site Grassmann/Berezin presentation does not force
+spin-statistics, graded locality, or a cross-site sign rule.
+
+## T4 -- Residuals and scope boundary
+
+These residuals are not theorem claims:
+
+- R-statistics: cross-site sign/statistics are not forced.
+- R-k1-audit: inherited; no K1 audit verdict is consumed or applied.
+- R-beyond-ks: non-KS realizations are untouched.
+- R-carrier: SUPPLIED-C3 remains unchanged; no color carrier is identified.
+- R-source-order: this note depends on the landed arena split-preservation
+source note and does not alter that source note's residual ledger.
+- R-ks-combination: which Hermitian combination the KS action bilinear
+induces as the bonded-pair generator is open (see T3); substep-2's
+Kahler-Dirac surface is the natural home for resolving it.
+- R-ladder-pres: the QUBIT-LADDER-PRES matrix/basis orientation is a named
+convention; the minus-form membership rows are relative to it.
+- R-case-analysis: only the listed hopping forms and KS shared-frame
+conjugations are covered; the minus forms are OUT in the undressed and
+aligned cases, IN in the transverse-dressed cases, exactly as tabulated.
+
+## Honest boundary
+
+This note does not derive color, `SU(3)`, a color carrier, dynamics, weights,
+probabilities, records, statistics, a Hamiltonian, a cross-site sign selector,
+a physical species assignment, a new axiom, a primitive, Tier-A content, a K1
+audit result, or any audit verdict. It proves only the finite-matrix
+EDGE-DIAG membership statements above.
+
+## Current-Main Posture
+
+The arena split-preservation source note is present on current `main` before
+this note lands, so the ordering requirement is satisfied. This note is still
+unaudited source material: it does not edit audit files and does not apply
+audit verdicts.
+
+## Citation contract
+
+Citation is audit-gated. Downstream rows may cite this note, after audit
+ratification and only at the audited scope, for:
+
+```text
+T1: h0 is in EDGE-DIAG; both parity-dressed placements collapse to -h0
+    and remain in EDGE-DIAG; the antisymmetrized counterparts are OUT,
+    anti-commuting with S (exact Sym <-> Anti intertwiners).
+
+T2: for all eight endpoint parities and mu=1,2,3, the KS shared-frame
+    dressed symmetrized forms have the labels in the table and remain in
+    EDGE-DIAG; the dressed antisymmetrized forms are IN for mu=1,2 and OUT
+    for mu=3, relative to the named QUBIT-LADDER-PRES convention.
+
+T3: KS-HOP-BRIDGE resolves as the stated DICHOTOMY for the enumerated
+    single-edge hopping presentations, with KS-COMBINATION the named open
+    remainder, under the retained KS surface, the file-3 per-site Berezin
+    presentation plus QUBIT-LADDER-PRES, and the arena split-preservation
+    EDGE-DIAG source note.
+    T3 may never be cited as an unconditional bridge closure.
+```
+
+Downstream rows may NOT cite this note for: dynamics, weights, statistics
+selection, cross-site graded locality, color realization, `SU(3)`, a color
+carrier, SUPPLIED-C3, physical species assignment, finite-boundary holonomy,
+K1 as audited, new primitive or Tier-A content, audit-status upgrade, or any
+hopping presentation not enumerated here.
+
+## Dependencies table
+
+| dependency | current-main status used here | consumed content |
+|---|---|---|
+| [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md) | current axiom memo only; not a bounded-status source | four-axiom surface, one-site `M_2(C)`, and nearest-neighbor admissibility context |
+| [STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md) | retained local KS surface | `P-KIN/P-SD`, Pauli `T(x)`, `eta`, and hopping |
+| [STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) | retained per-site Berezin module boundary | per-site Berezin module and non-statistics-forcing boundary |
+| [MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06.md](MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06.md) | landed source note; premise weight gated on audit ratification | EDGE-DIAG definition, class theorem, and KS-HOP-BRIDGE source question |
+| [COLOR_ARENA_BONDED_PAIR_ADMISSIBILITY_CROSS_SITE_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-06.md](COLOR_ARENA_BONDED_PAIR_ADMISSIBILITY_CROSS_SITE_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-06.md) | landed source note | arena split and R1 only, within citation contract |
+
+## Runner verification map
+
+The runner uses exact `Fraction` real/imaginary pairs. It checks the explicit
+`sigma^+`, `sigma^-`, and `sigma_z` matrices; the two sign identities; SWAP on
+all 16 elementary pairs; T1 labels and memberships; file-2 relative frames at
+all endpoint parity representatives and directions; every T2 conjugated label
+and membership; text audits of every rendered quote from files 2, 3, and 4;
+and an AST self-scan.
+
+Current expected output shape:
+
+```text
+T1 h0: label=h0; EDGE-DIAG=IN; swap_image=h0
+HKS h0 mu=1: endpoint_parities=8; label=pair_same+; EDGE-DIAG=IN
+DECLARATION T1=...; HKS_all_8_endpoint_parities=...; not_consumed_or_claimed=...
+TOTAL: PASS=65 FAIL=0
+```
+
+Command:
+
+```bash
+python3 scripts/matter_realization_ks_hop_bridge_edge_diag_membership_2026_07_06.py
+```
+
+## Source-note boundary
+
+Hypothesis set: the current four-axiom memo as context; the file-2 local KS
+surface; the file-3 per-site Berezin presentation; the arena
+split-preservation EDGE-DIAG source note; the landed color arena source note
+only within its citation contract;
+and finite-dimensional tensor/SWAP algebra recomputed exactly in the runner.
+
+Forbidden imports: no new axiom, primitive, Tier-A admission, dynamics,
+statistics selector, color-carrier identification, K1 audit verdict,
+finite-boundary phase convention, holonomy selector, or physical species
+assignment is imported.
+
+## Changelog
+
+- **2026-07-06.** Initial source note and exact Python runner.

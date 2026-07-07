@@ -1,63 +1,126 @@
 ===== runner cache v1 =====
 runner: scripts/yt_ward_step3_same_1pi_construction_2026_05_10.py
-runner_sha256: d61cf097cd3d149b192f6b5167fbae83c6daeb1a66e80bbbee0ad7c17922fdbf
+runner_sha256: 1c66613ba963fbaf095cf368aa25dc01c77694c4b02b856f056fc2c7c251f517
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.27
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
-Part 1: source scope
+Part 1: load-bearing note contract
 ----------------------------------------------------------------------------------------
-[PASS] note contains required scope text: **Type:** open_gate
-[PASS] note contains required scope text: same-1PI bridge remains
-[PASS] note contains required scope text: Does **not** derive `g_bare = 1`
-[PASS] note contains required scope text: not load-bearing dependencies
-[PASS] note contains source-boundary text: Downstream source-boundary firewall
-[PASS] note contains source-boundary text: Allowed downstream uses
-[PASS] note contains source-boundary text: Forbidden downstream uses
-[PASS] note contains source-boundary text: coefficient-bookkeeping diagnostic
-[PASS] note contains source-boundary text: missing same-1PI bridge remains open
-[PASS] note contains source-boundary text: retained same-1PI theorem
-[PASS] note contains source-boundary text: gate equation as a retained theorem
-[PASS] note contains source-boundary text: derivation of `g_bare = 1`
-[PASS] note contains source-boundary text: top-Yukawa derivation
-[PASS] note contains source-boundary text: Wick-level proof
-[PASS] note avoids overclaim/status text: DERIVED tree-level identity
-[PASS] note avoids overclaim/status text: holds. The agreement is enforced
-[PASS] note avoids overclaim/status text: target_claim_type: positive_theorem
-[PASS] note avoids overclaim/status text: audited_clean
-[PASS] source-boundary forbids using the gate as retained same-1PI/top-Yukawa closure
+[PASS] [load-bearing] note contains required scope text: claim_id: yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10
+[PASS] [load-bearing] note contains required scope text: claim_type_author_hint: bounded_theorem
+[PASS] [load-bearing] note contains required scope text: runner_path: scripts/yt_ward_step3_same_1pi_construction_2026_05_10.py
+[PASS] [load-bearing] note contains required scope text: **Type:** bounded_theorem
+[PASS] [load-bearing] note contains required scope text: **Claim type:** bounded_theorem
+[PASS] [load-bearing] note contains required scope text: **Claim scope:** conditional bounded theorem
+[PASS] [load-bearing] note contains required scope text: WITHOUT SAME-1PI supplied
+[PASS] [load-bearing] note contains required scope text: same-1PI bridge remains
+[PASS] [load-bearing] note contains required scope text: Does **not** derive `g_bare = 1`
+[PASS] [load-bearing] note contains required scope text: not load-bearing dependencies
+[PASS] [load-bearing] note contains SAME-1PI supplied-premise block
+[PASS] [load-bearing] note contains canonical supplied sign block
+[PASS] [load-bearing] note says c_S sign is supplied, not sourced
+[PASS] [load-bearing] note contains exact conditional consequences
+[PASS] [load-bearing] claim scope states conditional structure
+[PASS] [load-bearing] note contains source-boundary text: Downstream source-boundary firewall
+[PASS] [load-bearing] note contains source-boundary text: Allowed downstream uses
+[PASS] [load-bearing] note contains source-boundary text: Forbidden downstream uses
+[PASS] [load-bearing] note contains source-boundary text: bounded coefficient-bookkeeping theorem
+[PASS] [load-bearing] note contains source-boundary text: SAME-1PI named as a supplied premise
+[PASS] [load-bearing] note contains source-boundary text: `c_S * g_bare^2 = 2 / N_iso` only under SAME-1PI
+[PASS] [load-bearing] note contains source-boundary text: `g_bare^2 = 1` only under SAME-1PI
+[PASS] [load-bearing] note contains source-boundary text: missing same-1PI bridge remains open
+[PASS] [load-bearing] note contains source-boundary text: closed same-1PI theorem
+[PASS] [load-bearing] note contains source-boundary text: gate equation as a closed theorem
+[PASS] [load-bearing] note contains source-boundary text: derivation of `g_bare = 1`
+[PASS] [load-bearing] note contains source-boundary text: top-Yukawa derivation
+[PASS] [load-bearing] note contains source-boundary text: Wick-level proof
+[PASS] [load-bearing] note contains source-boundary text: do not cite SAME-1PI as established
+[PASS] [load-bearing] note contains source-boundary text: the named premises may not be cited as derived
+[PASS] [load-bearing] declared dependency is cited: UNIT_SINGLET_OVERLAP_NARROW_THEOREM_NOTE_2026-05-02.md
+[PASS] [load-bearing] declared dependency is cited: G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md
+[PASS] [load-bearing] declared dependency is cited: YT_WARD_IDENTITY_DERIVATION_THEOREM.md
+[PASS] [load-bearing] declared dependency is cited: NATIVE_GAUGE_CLOSURE_NOTE.md
+[PASS] [load-bearing] note avoids overclaim/status text: DERIVED tree-level identity
+[PASS] [load-bearing] note avoids overclaim/status text: holds. The agreement is enforced
+[PASS] [load-bearing] note avoids overclaim/status text: target_claim_type: positive_theorem
+[PASS] [load-bearing] note avoids overclaim/status text: audited_clean
+[PASS] [load-bearing] active note text avoids retained-status vocabulary
+[PASS] [load-bearing] source-boundary forbids using the gate as same-1PI/top-Yukawa closure
+[PASS] [load-bearing] source-boundary forbids citing SAME-1PI as derived
+[PASS] [load-bearing] note has no Markdown blockquote source quotations
 
 ----------------------------------------------------------------------------------------
-Part 2: symbolic coefficient algebra
+Part 2: load-bearing source-support coherence
 ----------------------------------------------------------------------------------------
-[PASS] Rep A coefficient is c_S * g_bare^2 / (2 N_c)  (C_A=c_S*g_bare**2/(2*N_c))
-[PASS] Rep B coefficient is 1 / (N_c N_iso)  (C_B=1/(N_c*N_iso))
-[PASS] C_A - C_B residual has the expected gate factor  (residual=(N_iso*c_S*g_bare**2 - 2)/(2*N_c*N_iso))
-[PASS] C_A and C_B are not identical as symbolic functions of g_bare  (free_symbols=['N_c', 'N_iso', 'c_S', 'g_bare'])
-[PASS] Equating coefficients yields g_bare = sqrt(2 / (c_S N_iso)) on the positive branch  (solutions=[sqrt(2)/(sqrt(N_iso)*sqrt(c_S))])
-[PASS] Canonical residual is (g_bare^2 - 1) / 6  (canonical_residual=g_bare**2/6 - 1/6)
-[PASS] Canonical equality holds at g_bare = 1
-[PASS] Canonical equality fails off surface at g_bare = 2  (residual(g=2)=1/2)
+[PASS] [load-bearing] D12 authority is the Ward-identity derivation
+[PASS] [load-bearing] D12 is not attributed to the EW color-projection note
+[PASS] [load-bearing] Ward-identity source contains the D12 singlet coefficient
+[PASS] [load-bearing] EW color-projection source does not carry the D12 singlet coefficient
+[PASS] [load-bearing] declared dependencies are linked for citation-graph extraction
 
 ----------------------------------------------------------------------------------------
-Part 3: D12 SU(3) Fierz coefficient input
+Part 3: load-bearing exact symbolic coefficient algebra
 ----------------------------------------------------------------------------------------
-[PASS] Gell-Mann normalization Tr(Ta Tb) = delta_ab / 2  (err=1.11e-16)
-[PASS] D12 Fierz identity verified over all SU(3) index tuples  (err=5.55e-17)
-[PASS] D12 singlet coefficient is -1/(2 N_c) = -1/6
+[PASS] [load-bearing] Rep A coefficient is c_S * g_bare^2 / (2 N_c)  (C_A=c_S*g_bare**2/(2*N_c))
+[PASS] [load-bearing] Rep B coefficient is 1 / (N_c N_iso)  (C_B=1/(N_c*N_iso))
+[PASS] [load-bearing] C_A - C_B residual has the expected gate factor  (residual=(N_iso*c_S*g_bare**2 - 2)/(2*N_c*N_iso))
+[PASS] [load-bearing] C_A and C_B are not identical as symbolic functions of g_bare  (free_symbols=['N_c', 'N_iso', 'c_S', 'g_bare'])
+[PASS] [load-bearing] Equating coefficients yields the positive gate branch  (solutions=[sqrt(2)/(sqrt(N_iso)*sqrt(c_S))])
+[PASS] [load-bearing] Canonical residual is (g_bare^2 - 1) / 6  (canonical_residual=g_bare**2/6 - 1/6)
+[PASS] [load-bearing] Canonical equality holds at g_bare = 1
+[PASS] [load-bearing] Canonical equality fails off surface at g_bare = 2  (residual(g=2)=1/2)
 
 ----------------------------------------------------------------------------------------
-Part 4: H_unit normalization input
+Part 4: load-bearing note-displayed formula consistency
 ----------------------------------------------------------------------------------------
-[PASS] H_unit diagonal entries are 1/sqrt(6)
-[PASS] Tr(H_unit) = sqrt(6)
-[PASS] Diagonal Wick-contraction count on Q_L is N_iso * N_c = 6
-[PASS] H_unit Wick saturation normalizes the diagonal count to 1  (6/6)
+[PASS] [load-bearing] note contains displayed Rep A formula block
+[PASS] [load-bearing] note Rep A formula matches computed value
+[PASS] [load-bearing] note contains displayed Rep B formula block
+[PASS] [load-bearing] note Rep B formula matches computed value
+[PASS] [load-bearing] note contains displayed residual formula block
+[PASS] [load-bearing] note residual formula matches computed value
+[PASS] [load-bearing] note contains displayed canonical-residual block
+[PASS] [load-bearing] note canonical residual matches computed value
+[PASS] [load-bearing] note contains displayed off-surface counterexample block
+[PASS] [load-bearing] note counterexample line is parseable
+[PASS] [load-bearing] note counterexample residual matches computed value  (g_bare=2, residual=1/2)
 
-TOTAL: PASS=34, FAIL=0
+----------------------------------------------------------------------------------------
+Part 5: load-bearing D12 SU(3) Fierz coefficient input
+----------------------------------------------------------------------------------------
+[PASS] [load-bearing] Gell-Mann normalization Tr(Ta Tb) = delta_ab / 2  (err=1.11e-16)
+[PASS] [load-bearing] D12 Fierz identity verified over all SU(3) index tuples  (err=5.55e-17)
+[PASS] [load-bearing] D12 exchange coefficient is computed as 1/2  (coefficient=0.5)
+[PASS] [load-bearing] D12 singlet coefficient is computed as -1/(2 N_c) = -1/6  (coefficient=-0.166666666667)
+
+----------------------------------------------------------------------------------------
+Part 6: load-bearing H_unit normalization input
+----------------------------------------------------------------------------------------
+[PASS] [load-bearing] H_unit diagonal entries are 1/sqrt(6)
+[PASS] [load-bearing] Tr(H_unit) = sqrt(6)
+[PASS] [load-bearing] Diagonal Wick-contraction count on Q_L is N_iso * N_c = 6
+[PASS] [load-bearing] H_unit Wick saturation normalizes the diagonal count to 1  (6/6)
+
+----------------------------------------------------------------------------------------
+Part 7: motivation-tier exhibit labels and non-consuming replay
+----------------------------------------------------------------------------------------
+[PASS] [motivation-tier] note contains motivation-tier label: ## Motivation exhibit
+[PASS] [motivation-tier] note contains motivation-tier label: Evidence only; not load-bearing; no value below is consumed by any claim.
+[PASS] [motivation-tier] note contains motivation-tier label: Any nearest-rational scan, live-value replay, or numerical coincidence
+[PASS] [motivation-tier] note contains motivation-tier label: motivation-tier only
+[PASS] [motivation-tier] note contains motivation-tier label: no PDG observed value, fitted selector, or admitted unit convention
+[PASS] [motivation-tier] motivation exhibit says no value is consumed by any claim
+
+LOAD-BEARING: PASS=74 FAIL=0
+MOTIVATION-TIER: PASS=6 FAIL=0
+========================================================================================
+TOTAL: PASS=74 FAIL=0
+========================================================================================
+DECLARATION: SAME-1PI is supplied, not derived; no g_bare = 1 derivation, top-Yukawa derivation, or closed same-1PI theorem is claimed.
 
 ----- stderr -----
 

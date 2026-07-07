@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1980 |
+| unaudited | 1981 |
 | meta | 345 |
-| ~~audited_numerical_match~~ | 9 |
+| ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 24 |
+| ~~audited_conditional~~ | 25 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1255 |
-| `audited_conditional` | 24 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
-| `audited_numerical_match` | 9 |
+| `audited_numerical_match` | 7 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2325 |
+| `unaudited` | 2326 |
 
 | claim_type | count |
 |---|---:|
@@ -90,8 +90,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 - runners classified: 3375
 - runners with (C) first-principles compute hits: 1779
-- runners with (D) external comparator hits: 1081
-- decoration candidates (no C, no D): 709
+- runners with (D) external comparator hits: 1080
+- decoration candidates (no C, no D): 710
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -1423,6 +1423,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
@@ -1492,12 +1493,10 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
-| `architecture_note_directional_measure` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
-| `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -2060,19 +2059,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner constructs multiple admissible angular kernels, checks the primitive properties, and computes distinct second and fourth transverse moments. The no-go is correctly bounded because it does not rule out adding a higher-order isotropy, Lagrangian, or observable-matching axiom.
 - **rationale:** The load-bearing negative result is an explicit counterexample family, not a definition, renaming, or tuned numerical match. The supplied retained-grade authorities support the routing clarification that the boost lane is on the staggered/Laplacian carrier rather than the directional-measure kernel. Some runner checks are narrative summaries, but the computed witness family and fixed-carrier checks are sufficient for the bounded audited scope.
 - **auditor confidence:** high
-
-### `architecture_note_directional_measure`
-
-- **Note:** [`ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md`](../../docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Six deterministic directional-measure smoke/table checks at fixed tuned beta = 0.8; beta derivation and broader gravity/decoherence claims are outside the audited closure.
-- **audit_status:** ~~audited_numerical_match~~
-- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-architecture_note_directional_measure-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The tested smoke/table results hold at the fixed tuned point beta = 0.8, while beta itself is an empirical input rather than a derived constant.  _(class `G`)_
-- **chain closes:** True — The runner source performs finite fixture computations through the directional path-measure helpers and reports PASS=6/6 at beta = 0.8. This closes only the fixed-beta numerical support claim, not a derivation of beta or a general theorem beyond the tested fixtures.
-- **rationale:** Issue: the load-bearing result uses beta = 0.8 as a hard-coded tuned setting. Why this blocks clean status: the cited retained no-go supports the not-derived boundary, and the runner verifies only fixture behavior at that supplied value. Repair target: derive beta within a retained framework route and rerun the table without treating beta as calibrated input. Claim boundary until fixed: bounded numerical support at beta = 0.8 only.
-- **auditor confidence:** medium
 
 ### `architecture_portability_live_reaudit_bridge_note_2026-06-18`
 
@@ -15705,19 +15691,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The load-bearing step is finite algebra over retained-grade inputs, not a new physical source identification. Independently, for P0=(1/2,1/2), epsilon=(1,-1) has E0[epsilon]=0 and E0[epsilon^2]=1, while lambda epsilon has Fisher norm lambda^2; in the supplied C^6 diagonal Hilbert-Schmidt basis, (1/sqrt(6)) sum_i E_ii has norm one and component amplitude 1/sqrt(6). The note's firewall keeps same-source top/W response and physical Y_T semantics conditional, so the bounded theorem closes as written.
 - **auditor confidence:** high
 
-### `source_resolved_exact_green_pocket_note`
-
-- **Note:** [`SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the declared h=0.5, W=3, L=20 finite replay with four in-bounds boundary-clipped source nodes, source strengths {0.001,0.002,0.004,0.008}, Green kernel parameters mu=0.08 and eps=0.5, and calibrated gain 2.131774.
-- **audit_status:** ~~audited_numerical_match~~
-- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-source_resolved_exact_green_pocket_note-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** On the declared small exact-lattice family, the runner reproduces zero-source reduction, 4/4 TOWARD Green-channel signs, Green F~M exponent 1.00, and mean |green/inst| ratio 1.235 using the selected Green kernel and calibrated gain.  _(class `G`)_
-- **chain closes:** True — The restricted packet closes the finite replay: the primary and helper runner sources compute the reported table and the cached run passes the five hard-bar assertions. Closure is only for the declared calibrated numerical pocket, not for a derivation of the Green kernel, source geometry, or gain from retained framework dynamics.
-- **rationale:** The runner is not a print-only artifact: it builds the lattice, constructs the source-resolved Green-like field, propagates both instantaneous and Green fields, computes centroid shifts, fits exponents, and enforces explicit thresholds. The load-bearing result nevertheless depends on runner-selected kernel parameters, a boundary-clipped source cluster, and a calibrated gain selected at the declared scale. This supports a reproducible bounded numerical pocket, not class C theorem closure or a retained field-theoretic derivation.
-- **auditor confidence:** high
-
 ### `source_resolved_exact_green_scaling_note`
 
 - **Note:** [`SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md)
@@ -19591,6 +19564,21 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** medium
+
+### `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded coefficient bookkeeping for YT_WARD Step 3: under SAME-1PI as a supplied premise, C_A = C_B gives c_S * g_bare^2 = 2 / N_iso, while without SAME-1PI the exact residual (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso) and the g_bare=2 counterexample show non-identity.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt5.5-2026-07-07`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under SAME-1PI, Rep A and Rep B are supplied as two complete representations of the same projected amputated 1PI Green's function, so C_A = C_B gives c_S * g_bare^2 = 2 / N_iso; without that premise the residual is not identically zero.  _(class `A`)_
+- **chain closes:** False — The displayed coefficient algebra closes, and an independent check reproduces the residual, canonical reduction, gate equation, and SU(3) singlet coefficient. The audit chain does not close because YT_WARD_IDENTITY_DERIVATION_THEOREM is still unaudited and SAME-1PI is an explicit supplied bridge rather than a retained theorem.
+- **rationale:** Issue: the exact algebra is conditional on SAME-1PI and on the one-hop YT_WARD identity source, whose ledger status is still unaudited. Why this blocks: the row may state the coefficient residual and the with-premise gate, but retained-grade closure cannot treat the same-1PI bridge or the unaudited Ward-identity source as established. Repair target: first audit YT_WARD_IDENTITY_DERIVATION_THEOREM to retained grade, then supply and audit a Wick-level SAME-1PI bridge showing the OGE contraction and H_unit decomposition are the same projected amputated 1PI Green's function. Claim boundary until fixed: the residual/no-equality branch and the with-SAME-1PI coefficient bookkeeping may be cited only with SAME-1PI named as a supplied premise.
+- **open / conditional deps cited:**
+  - `YT_WARD_IDENTITY_DERIVATION_THEOREM.md`
+- **auditor confidence:** high
 
 ### `yt_zero_import_chain_note`
 

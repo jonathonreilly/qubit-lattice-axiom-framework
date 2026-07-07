@@ -1297,15 +1297,15 @@
       "runner": "scripts/gravity_signed_sector_harness.py"
     },
     "architecture_note_directional_measure": {
-      "assert_count": 1,
+      "assert_count": 4,
       "counts": {
-        "A": 0,
+        "A": 1,
         "B": 0,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "runner": "scripts/architecture_directional_measure_table_runner_2026_05_03.py"
     },
     "architecture_portability_live_reaudit_bridge_note_2026-06-18": {
@@ -33985,15 +33985,15 @@
       "runner": "scripts/frontier_source_resolved_exact_green_pocket_kernel_reconciliation_2026_06_02.py"
     },
     "source_resolved_exact_green_pocket_note": {
-      "assert_count": 1,
+      "assert_count": 3,
       "counts": {
         "A": 0,
         "B": 0,
         "C": 0,
-        "D": 1
+        "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": null,
       "runner": "scripts/source_resolved_exact_green_pocket.py"
     },
     "source_resolved_exact_green_pocket_note_2026-05-17": {
@@ -43190,18 +43190,18 @@
       "exists": true
     },
     "scripts/architecture_directional_measure_table_runner_2026_05_03.py": {
-      "assert_count": 1,
+      "assert_count": 4,
       "claims": [
         "architecture_note_directional_measure"
       ],
       "counts": {
-        "A": 0,
+        "A": 1,
         "B": 0,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/architecture_portability_live_reaudit_bridge_2026_06_18.py": {
@@ -90091,7 +90091,7 @@
       "exists": true
     },
     "scripts/source_resolved_exact_green_pocket.py": {
-      "assert_count": 1,
+      "assert_count": 3,
       "claims": [
         "source_resolved_exact_green_pocket_note"
       ],
@@ -90099,10 +90099,10 @@
         "A": 0,
         "B": 0,
         "C": 0,
-        "D": 1
+        "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": null,
       "exists": true
     },
     "scripts/source_resolved_exact_green_scaling.py": {
@@ -92638,16 +92638,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 709,
+    "decoration_candidates": 710,
     "dominant_class_distribution": {
-      "A": 502,
+      "A": 503,
       "B": 658,
       "C": 1305,
-      "D": 452,
+      "D": 451,
       "none": 458
     },
     "runners_classified": 3375,
     "runners_with_C": 1779,
-    "runners_with_D": 1081
+    "runners_with_D": 1080
   }
 }

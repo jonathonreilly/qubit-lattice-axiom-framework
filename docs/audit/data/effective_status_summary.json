@@ -33,8 +33,8 @@
   ],
   "cycles_detected": 10,
   "effective_status_counts": {
-    "audited_conditional": 24,
-    "audited_numerical_match": 9,
+    "audited_conditional": 25,
+    "audited_numerical_match": 7,
     "audited_renaming": 19,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 6,
@@ -69,7 +69,7 @@
     "retained_bounded": 880,
     "retained_no_go": 193,
     "retained_pending_chain": 7,
-    "unaudited": 1980
+    "unaudited": 1981
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

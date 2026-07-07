@@ -61429,7 +61429,7 @@
         "scripts/three_d_angle_weight.py",
         "scripts/three_d_gravity.py"
       ],
-      "note_hash": "ca975256c3e7e8e80214bad5e2bbdd5427453bb14d8a2f35e9f105c410d1f970",
+      "note_hash": "90e13a63247b9dfeca28a4f8b5d00471a637d66e8342bcf6886c398dea77afeb",
       "path": "docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md",
       "runner_path": "scripts/architecture_directional_measure_table_runner_2026_05_03.py",
       "title": "Architecture Note: Directional Path Measure"
@@ -111823,7 +111823,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b3dbae148da69925070bc51cd11ce3e6b01a71c08068b3141eeca9bab8b320c6",
+      "note_hash": "890a96008112c48060d6940ee9afc2b59097ffbbffb8f5117d97843333230798",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -115710,7 +115710,7 @@
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "note_hash": "913d656638d74f4bdff5a079de3164279699d5d3f15aff6a025496c4d71c0497",
+      "note_hash": "695cc9177a924179e374074e80eb0c34fe3f79aec938bcc5e296efd1cc12c823",
       "path": "docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md",
       "runner_path": "scripts/source_resolved_exact_green_pocket.py",
       "title": "Source-Resolved Exact Green Pocket"

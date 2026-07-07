@@ -64,7 +64,7 @@ dependency.
 
 The Record premise says:
 
-> "a record locks exactly one local possibility"
+> "a record locks exactly one admissible local possibility"
 
 The one-site possibility domain is therefore two-dimensional at full
 resolution, and a record, when present, locks one available local possibility

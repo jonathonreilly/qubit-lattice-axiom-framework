@@ -42,8 +42,9 @@ localizes it exactly.
 The [Record axiom](MINIMAL_AXIOMS_2026-06-29.md) supplies, verbatim:
 
 ```text
-Only records are readable. For any finite collection of pairwise-disjoint
-records, scalar readout I is additive, with I(empty)=0.
+Only records are readable. A readout value is determined by record content
+alone. For any finite collection of pairwise-disjoint records, scalar readout
+I is additive, with I(empty)=0.
 ```
 
 On a class of selected-defect records whose scalar dependence factors through
@@ -68,8 +69,8 @@ The scanned clauses, with their sources:
 |---|---|---|
 | `I(empty) = 0` | Record axiom | invariant (`lambda * 0 = 0`) |
 | additivity over finite disjoint collections | Record axiom | invariant (linearity) |
-| a record locks exactly one available local possibility | Record axiom | value-free: constrains which possibility, never the scalar |
-| invariance under repeated readout | Record axiom | value-free |
+| a record locks exactly one admissible local possibility | Record axiom | value-free: constrains which possibility, never the scalar |
+| records are permanent | Record axiom | value-free |
 | dependence only through the local density line | selected-class definition | invariant (equal densities keep equal values) |
 | translation / proper cubic-rotation covariance | Lattice axiom + selected context | invariant |
 | disjoint-refinement consistency (composite reads the sum of parts) | additivity corollary | invariant |
@@ -125,7 +126,7 @@ restates the target; it is exactly the normalization the finite rescale
 witnesses are free to deny, and the Record axiom's registry exclusion
 ("supplies no ... weighting, normalization, probability ... physical
 observable bridge") says the axiom does not supply it. The Record clause
-"locks exactly one local possibility" constrains which possibility is locked,
+"locks exactly one admissible local possibility" constrains which possibility is locked,
 never the scalar value a readout surface attaches to the lock.
 
 ## Result T3 — Angle-Side Rigidity: The Unit Freedom Is Not An Angular Convention

@@ -1,5 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18.py
+runner_sha256: b6c56bc7cb6a0264061e2ce4b85e6df8c19468b481e9ba892a58c0a472f08ded
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 === Source-boundary checks ===
+[PASS] note declares boundary: **Claim type:** bounded_theorem
 [PASS] note declares boundary: leading-order continuity matching kernel
+[PASS] note declares boundary: explicit conditional matching input here
+[PASS] note declares boundary: This note does not derive the LO heavy-threshold no-jump condition
 [PASS] note declares boundary: This note does not derive physical threshold masses.
 [PASS] note declares boundary: This note does not supply higher-loop MSbar decoupling constants.
 [PASS] note declares boundary: This note does not promote any downstream alpha_s(M_Z) value to retained status.
@@ -34,4 +45,7 @@
 [PASS] domain guard rejects skipped flavor crossings
 [PASS] falsifier detects a non-continuous threshold jump
 
-SUMMARY: PASS=24 FAIL=0
+SUMMARY: PASS=27 FAIL=0
+
+----- stderr -----
+

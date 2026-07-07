@@ -38,6 +38,14 @@ IMPORT_NEEDLES = [
     "IMPORT 2: a formation-successor relation F_B among states.",
     "What no landed sentence licenses is",
 ]
+MINIMAL_AXIOM_LINK = "[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)"
+NO_GO_ROUTE_NEEDLES = [
+    "Route 1, per-state fork countermodel",
+    "Route 2, minimal-signature collapsed stock",
+    "Route 3, final-container reading of v1",
+    "Route 4, total-comparability reading of v2",
+    "Route 5, arrow-ordering from formation dependencies",
+]
 OWNER_SEMANTICS_FORBIDDEN = [
     "owner-approved scope semantics",
     "owner-supplied axiom semantics",
@@ -315,12 +323,18 @@ def main() -> int:
         check(0, f"axiom contains quoted sentence: {quote}", contains_needle(axiom_text, quote))
         check(0, f"note quotes sentence: {quote}", contains_needle(note_text, quote))
 
+    check(0, "note uses markdown link for minimal axioms dependency", MINIMAL_AXIOM_LINK in note_text)
     check(0, "axiom contains the admission-discipline sentence", contains_needle(axiom_text, DISCIPLINE_SENTENCE))
     check(0, "note quotes the admission-discipline sentence", contains_needle(note_text, DISCIPLINE_SENTENCE))
     check(0, "axiom contains the law-dependence sentence", contains_needle(axiom_text, LAW_DEPENDENCE_SENTENCE))
     check(0, "note quotes the law-dependence sentence", contains_needle(note_text, LAW_DEPENDENCE_SENTENCE))
     for needle in IMPORT_NEEDLES:
         check(0, f"note inventories: {needle[:40]}", contains_needle(note_text, needle))
+    check(0, "note states the fork consumes exactly two extra objects", "consumes two objects beyond the named signature" in note_text)
+    check(0, "stale three-object inventory wording is absent", "consumes three objects beyond the named signature" not in note_text)
+    check(0, "stale IMPORT 3 reference is absent", "IMPORT 3" not in note_text)
+    for needle in NO_GO_ROUTE_NEEDLES:
+        check(0, f"note records no-go route: {needle}", contains_needle(note_text, needle))
     for forbidden in OWNER_SEMANTICS_FORBIDDEN:
         check(0, f"owner-semantics phrase absent: {forbidden[:40]}", forbidden not in note_text)
     check(0, "reserve wording is absent from axiom file", not contains_needle(axiom_text, PROMOTION_TEXT))

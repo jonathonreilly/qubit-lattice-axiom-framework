@@ -1,18 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py
-runner_sha256: 3858f65254de87d00d2fa213cefdf83d646442ac21a823de4ca22c079d6a8104
+runner_sha256: 4275cb30e2a8ae7bcfe9d4d5f32b87c81dd9934eaa3bf6fbbd4537c1da83e3c1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
-CHECK 1 PASS: text needles and absence guards (32/32)
+CHECK 1 PASS: text needles and absence guards (41/41)
 CHECK 2 PASS: Result F Model B: narrow same-site branching model (12/12)
 CHECK 3 PASS: Result F import inventory and co-realization-collapse bar (7/7)
 CHECK 4 PASS: Result A1/A2: overlap agreement and one realized configuration (6/6)
 CHECK 5 PASS: Result A3/non-goal: influence order without global totality (10/10)
 CHECK 6 PASS: smoke rejectors fail the required surfaces (not same-verifier mutations) (6/6)
-TOTAL: PASS=73 FAIL=0
+TOTAL: PASS=82 FAIL=0
 
 ----- stderr -----
 

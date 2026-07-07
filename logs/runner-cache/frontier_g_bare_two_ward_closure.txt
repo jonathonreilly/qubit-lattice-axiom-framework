@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_two_ward_closure.py
-runner_sha256: 306472fc90e3117c16f7a04ce0c822990e138d778de19b82cbb133f9d90d5534
+runner_sha256: 97c3e4ade7f7329192d5ece4143add66c393be1b394f4f180a558e3714f9a3f0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================
@@ -35,31 +35,35 @@ BLOCK 4: Rep-A stays symbolic in g_bare
   [PASS] Rep A coefficient scales as g_bare^2  --  g=1 -> 0.1666666667, g=2 -> 0.6666666667
 
 ========================================================================
-BLOCK 5: Off-surface same-Gamma^(4) pinning theorem
+BLOCK 5: Source scope is consistency check plus conditional map
 ========================================================================
-  [PASS] Ward theorem states the two representations are evaluations of the same Green's function in the same retained theory  --  Step 3 same-theory identity in YT_WARD theorem
-  [PASS] Pinning theorem states the coefficient identity for arbitrary g_bare  --  off-surface same-Gamma^(4) coefficient identity
-  [PASS] The coefficient identity singles out g_bare = 1 on the positive branch  --  Rep-B coefficient = 1/6 matches Rep A only at g_bare = 1
+  [PASS] Ward note treats g_bare = 1 as a rescaling convention  --  B2 scope boundary
+  [PASS] Ward note frames same-1PI agreement as a consistency check, not the source of y_t_bare  --  canonical-surface comparison
+  [PASS] Same-1PI note says the actual surface is not an unconditional pinning theorem  --  actual-surface scope lock
+  [PASS] Same-1PI note keeps off-surface g_bare = 1 conditional on the H_unit-residue admission  --  conditional-use boundary
+  [PASS] Canonical-surface Rep-A and Rep-B coefficients agree at g_bare = 1  --  Rep-A = Rep-B = 1/6 at the convention surface
 
 ========================================================================
-BLOCK 6: Solve the matching identity
+BLOCK 6: Obstruction family and conditional algebra
 ========================================================================
-  [PASS] Solve g_bare^2 = 2 N_c y_t_bare^2 = 1  --  g_bare^2 = 1.0000000000
-  [PASS] Unique positive solution g_bare = 1  --  g_bare = 1.0000000000
-  [PASS] Recovered ratio y_t_bare / g_bare = 1/sqrt(6)  --  ratio = 0.4082482905
+  [PASS] Unweighted H_unit coefficient is not an off-surface identity by itself  --  without an admitted residue normalization, equality is only canonical
+  [PASS] Residue-normalization family R(g_bare)=g_bare^2 preserves off-surface agreement  --  demonstrates the current no-admission obstruction
+  [PASS] Conditional R(g_bare)=1 map would give g_bare = 1 on the positive branch  --  conditional_g_bare^2 = 1.0000000000
+  [PASS] Canonical-surface ratio y_t_bare / g_bare = 1/sqrt(6)  --  ratio = 0.4082482905
 
 ========================================================================
 SUMMARY
 ========================================================================
-  PASS = 18
+  PASS = 21
   FAIL = 0
 
-  Two-Ward closure chain:
+  Two-Ward current source surface:
     Rep B independence theorem  ->  y_t_bare = 1/sqrt(6)
-    Same-1PI pinning theorem    ->  y_t_bare^2 = g_bare^2 / (2 N_c)
-    Therefore                  ->  g_bare = 1
+    Canonical Rep-A comparison  ->  non-trivial consistency at g_bare = 1
+    Off-surface map             ->  conditional on the H_unit-residue normalization
+    Actual obstruction          ->  R(g_bare)=g_bare^2 remains compatible with cited inputs
 
-  VERDICT: CLOSED
+  SCOPE: CONSISTENCY_CHECK_PLUS_CONDITIONAL_MAP
 
 ----- stderr -----
 

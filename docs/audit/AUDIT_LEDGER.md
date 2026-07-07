@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 192 |
 | **retained_no_go** | 193 |
-| **retained_bounded** | 879 |
+| **retained_bounded** | 880 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 22 |
-| unaudited | 1981 |
+| unaudited | 1980 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 19 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1252 |
+| `audited_clean` | 1253 |
 | `audited_conditional` | 18 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2326 |
+| `unaudited` | 2325 |
 
 | claim_type | count |
 |---|---:|
@@ -703,6 +703,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9451,6 +9452,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the declared premises, the fractional part of the equivariant APS eta-invariant at an isolated Z_3 fixed point is determined by the tangent weights alone via eta(a,b)=(1/3) sum_{k=1,2} 1/[(zeta^{ka}-1)(zeta^{kb}-1)], and eta(1,2)=2/9 with no metric symbol.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the runner recomputes the character sum, the invariant-metric rigidity G=lambda I, mod-3 weight invariance, and fractional-part arithmetic, and both direct dependency notes are supplied as retained_bounded. The source explicitly excludes the physical Brannen-phase bridge, tangent-class selection as a physical class, and global PL/ABSS route closure from this claim.
 - **rationale:** The load-bearing step is exact algebra over declared local inputs, not a definition, renaming, tuned comparator, or physical-observable bridge. The current runner and cache both report PASS=41, FAIL=0, and the source code performs symbolic evaluations and invariant-metric solves rather than merely printing constants. Residual risk is bounded by the explicitly scoped premises: ABSS/fractional-part invariance and the upstream tangent-class input are consumed, not reproved, and no downstream physical eta-to-observable identification is established here.
+- **auditor confidence:** high
+
+### `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04`
+
+- **Note:** [`KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md`](../../docs/KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional four-cell det_C-vs-det_R fork algebra on R[Z_3] = R (+) C: supplied real versus holomorphic polarization fixes the doublet slot count and the listed conditional (r, Q) branch values, without deriving or preferring a polarization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260707-191013-c5dd4741-koide_berezin_detc_vs_de-004`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under POLARIZATION-SELECT, real polarization counts the doublet as two real slots while holomorphic polarization counts it as one complex slot, yielding real => r = 1, Q = 1 and holomorphic => r = 1/2, Q = 2/3.  _(class `A`)_
+- **chain closes:** True — Direct algebra gives tr(P_s)=1, tr(P_d)=2, P_s+P_d=I, J^2=-P_d, and det_R(alpha P_s + beta P_d)=alpha beta^2, so the displayed projection, trace, complex-structure, and determinant identities match. With POLARIZATION-SELECT supplied, r is the normalized doublet slot count and the cited algebraic lever Q=(1+2r)/3 gives Q=1 for r=1 and Q=2/3 for r=1/2.
+- **rationale:** The source note states a bounded conditional theorem and preserves the boundary that no polarization selector is derived. The runner source performs exact rational matrix/projector, determinant, complex-realification, Pfaffian, and table-consistency checks; the randomized Koide replay is explicitly motivation-tier and not used for the verdict. The only upstream cited authority is retained-grade, and no PDG value, fitted selector, or physical mass bridge is consumed by the audited claim.
 - **auditor confidence:** high
 
 ### `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29`

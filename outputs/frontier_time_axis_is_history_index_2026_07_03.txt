@@ -39,7 +39,7 @@ CHECK 26: PASS -- T3 degenerate-j grid collapses to a single chain along i (one 
 CHECK 27: PASS -- T3 dichotomy horn B: totally-ordered grid (cells ~ i+j) serializes to a single chain (one clock remains)
 CHECK 28: PASS -- T4 quote guard: single-clock note carries the S3' certificate W M_KS W^T = M_KS with the sign field
 CHECK 29: PASS -- T4 quote guard: S3' non-triviality -- plain permutation without the sign field FAILS
-CHECK 30: PASS -- T4 quote guard (transitional): axioms file carries the LANDED permanence clause (records are permanent; commit 50f0db6187, authoritative) OR the pre-restoration locking clause (invariant under repeated readout; pre-restoration checkouts only)
+CHECK 30: PASS -- T4 quote guard: axioms file carries the current landed Record sentence (records are permanent; commit 50f0db6187, authoritative)
 CHECK 31: PASS -- T4 statement guard: note carries the reconciliation/resonance sentence
 CHECK 32: PASS -- T4 record-content: generic history singles out index; symmetric history axis-blind (resonance with S3')
 CHECK 33: PASS -- T4 B-AXIS decomposition covers {1a,1b,2,3}; axis-selection CONDITIONAL/OPEN incl. periodic compactification; B-AXIS.3 UNCHANGED

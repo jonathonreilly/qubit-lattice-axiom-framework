@@ -16,10 +16,9 @@ no floats, no fitted or observed inputs, deterministic, nonzero exit on any FAIL
 - **Permanence is LANDED (commit `50f0db6187`).** Record-nesting (T2) depends on
   the permanence clause `records are permanent`, which the review loop LANDED on
   main as commit `50f0db6187` (drafted as PR #4874, review-loop-closed — not in
-  flight, not conditional). Current main carries the landed form; the runner's
-  Record-clause guard remains TRANSITIONAL only so older pre-restoration
-  checkouts can still run. Every nesting claim below is grounded on the landed
-  permanence sentence.
+  flight, not conditional). Current main carries the landed form, and the
+  runner's Record-clause guard now requires that current landed sentence. Every
+  nesting claim below is grounded on the landed permanence sentence.
 - **The theorem is quantifier-scoped, not universal.** The index direction nests
   for **every** realized history (universal, T2(i)); spatial nesting **fails for
   some** event-bearing history along **each** spatial axis (existential, T2(ii));
@@ -64,23 +63,20 @@ with it.
 
 ## Supplied surface (quoted)
 
-### Record axiom, historical pre-restoration wording (`docs/MINIMAL_AXIOMS_2026-06-29.md`)
+### Record axiom, current landed wording (`docs/MINIMAL_AXIOMS_2026-06-29.md`)
 
-> "When present, a record locks exactly one local possibility from the subset
-> available at that site under Admissibility; the locked possibility is
-> invariant under repeated readout."
+> "When present, a record locks exactly one admissible local possibility. A site
+> never carries more than one record; records are permanent."
 
 > "Only records are readable. A readout value is determined by record content
 > alone."
 
 > "A state is a configuration of records."
 
-On current main the review loop LANDED the permanence restoration (commit
-`50f0db6187`, drafted as PR #4874, review-loop-closed): the locking clause above
-now ends "records are permanent." That landed sentence is the authoritative
-permanence grounding for this note; the pre-restoration wording above is kept as
-historical context and accepted only by the transitional Record-clause guard [30]
-when the runner is executed on older pre-restoration checkouts.
+The review loop LANDED the permanence restoration (commit `50f0db6187`, drafted
+as PR #4874, review-loop-closed), and the current landed Record sentence above is
+the authoritative permanence grounding for this note. The runner's Record-clause
+guard [30] is live on this current sentence.
 
 That file lists, as content **outside** the axioms, "arrow, record-production
 dynamics, physical persistence dynamics, time metric, and local observability of
@@ -256,14 +252,10 @@ whereas in S3' the plain permutation FAILS and the sign field
 **Live quote guards.** The runner reads the single-clock note and asserts the S3'
 certificate `W M_KS W^T = M_KS` [28] and its non-triviality — "the plain
 permutation without the sign field fails by a nonzero margin" [29]. It reads the
-axioms file and applies a TRANSITIONAL Record-clause guard [30]: it passes if the
-file carries EITHER the landed permanence clause "records are permanent"
-(authoritative — commit `50f0db6187`, drafted as PR #4874, review-loop-closed) OR
-the pre-restoration locking clause "the locked possibility is invariant under
-repeated readout" (accepted only for older pre-restoration checkouts). The landed
-form is authoritative on current main; honoring the old form prevents old
-checkouts from failing a guard whose scientific grounding is the landed clause.
-It reads this note and asserts its own reconciliation/resonance sentence [31].
+axioms file and requires the current landed Record sentence with "records are
+permanent" [30] (commit `50f0db6187`, drafted as PR #4874,
+review-loop-closed). It reads this note and asserts its own
+reconciliation/resonance sentence [31].
 
 **Reconciliation.** S3' is about the **bare operator array**: `W` swaps the
 temporal and `x_1` hop sectors with residual `0`, and "the single-clock
@@ -299,8 +291,7 @@ residues added by this repair [36]:
 
 1. permanence grounding: the permanence clause `records are permanent` is LANDED
    (commit `50f0db6187`; drafted as PR #4874, review-loop-closed), and the
-   runner's Record-clause guard is transitional (accepts the landed form or, for
-   pre-restoration checkouts, the old locking clause);
+   runner's Record-clause guard requires the current landed Record sentence;
 2. realized-sector conditioning (event-bearing histories only; static is D0);
 3. the realized-history import (sequence definition, note-level, flagged);
 4. the representation-faithfulness bridge — **named OPEN** — covering BOTH the
@@ -355,8 +346,8 @@ axis-blind.
 - Record axiom —
   [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md) (quoted). The
   landed permanence clause `records are permanent` (commit `50f0db6187`) is
-  authoritative on current main; the runner's Record-clause guard is
-  transitional only for older pre-restoration checkouts.
+  authoritative on current main; the runner's Record-clause guard requires the
+  current landed Record sentence.
 - B-AXIS premise + S3' certificate + the operator block `Λ = (Z/L_τ Z) ×
   (Z/L_s Z)^3` —
   [AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)

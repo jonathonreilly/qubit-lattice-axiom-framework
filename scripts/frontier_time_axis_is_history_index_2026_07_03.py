@@ -36,9 +36,7 @@ files and asserts the quoted sentences as whitespace-normalized substrings:
   "records are permanent" is LANDED on main as commit 50f0db6187 (drafted as
   PR #4874, review-loop-closed) and is the authoritative permanence grounding
   for every record-nesting check below. Current main carries that landed form.
-  The Record-clause quote guard (CHECK 30) remains TRANSITIONAL only for older
-  pre-restoration checkouts: it passes if the axiom file carries EITHER the
-  landed "records are permanent" form OR the pre-restoration locking clause.
+  The Record-clause quote guard (CHECK 30) requires that current landed form.
   Record nesting is grounded on the landed permanence sentence, not conditional.
 
 * B-AXIS premise, the S3' exchange-symmetry certificate, and the operator block
@@ -477,21 +475,18 @@ def theorem_T4():
                          "the plain permutation without the sign field fails by a nonzero margin"),
           "T4 quote guard: S3' non-triviality -- plain permutation without the sign field FAILS")
 
-    # CHECK 30: LIVE QUOTE GUARD (TRANSITIONAL) -- Record-clause permanence
-    #           grounding. The landed form "records are permanent" (commit
-    #           50f0db6187, drafted as PR #4874, review-loop-closed) is
-    #           AUTHORITATIVE; the pre-restoration locking clause "the locked
-    #           possibility is invariant under repeated readout" is accepted ONLY
-    #           for older pre-restoration checkouts. Current main carries the
-    #           landed form; the fallback keeps old checkouts runnable without
-    #           making the old wording load-bearing.
-    landed_permanence = _contains_norm(axioms, "records are permanent")
-    pre_restoration = _contains_norm(
-        axioms, "the locked possibility is invariant under repeated readout")
-    check(landed_permanence or pre_restoration,
-          "T4 quote guard (transitional): axioms file carries the LANDED permanence clause "
-          "(records are permanent; commit 50f0db6187, authoritative) OR the pre-restoration "
-          "locking clause (invariant under repeated readout; pre-restoration checkouts only)")
+    # CHECK 30: LIVE QUOTE GUARD -- Record-clause permanence grounding. The
+    #           landed form "records are permanent" (commit 50f0db6187, drafted
+    #           as PR #4874, review-loop-closed) is AUTHORITATIVE on current
+    #           main; no pre-restoration fallback is accepted in this landing
+    #           artifact.
+    landed_record = _contains_norm(
+        axioms,
+        "When present, a record locks exactly one admissible local possibility. "
+        "A site never carries more than one record; records are permanent.")
+    check(landed_record,
+          "T4 quote guard: axioms file carries the current landed Record sentence "
+          "(records are permanent; commit 50f0db6187, authoritative)")
 
     # CHECK 31: STATEMENT GUARD -- the note carries its own reconciliation /
     #           resonance sentence (no fake analog is asserted anywhere).

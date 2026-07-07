@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 879 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 22 |
-| unaudited | 1983 |
+| unaudited | 1982 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 16 |
+| ~~audited_conditional~~ | 17 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1252 |
-| `audited_conditional` | 16 |
+| `audited_conditional` | 17 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2328 |
+| `unaudited` | 2327 |
 
 | claim_type | count |
 |---|---:|
@@ -1410,6 +1410,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
@@ -14209,6 +14210,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md#ENDPOINT-QE`
   - `QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md#ENDPOINT-RT`
   - `QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md#SHELL-MULT`
+- **auditor confidence:** high
+
+### `quark_endpoint_ratio_chain_law_note_2026-04-19`
+
+- **Note:** [`QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md`](../../docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under supplied ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT, exact rational endpoint-chain algebra maps {5/6, -2, -8/9} to q_E=15/8, r_E=21/4, and D_E=21/8, with the retained Route-2 no-go used only for the non-derivation boundary.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260707-190338-c8f0e7e8-quark_endpoint_ratio_cha-002`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the supplied legs 5/6, -2, and -8/9, the exact chain gives gamma_E(center)/gamma_E(shell)=(-9/8)*(5/6)*(-2)=15/8, hence r_E=21/4 and D_E=21/8.  _(class `A`)_
+- **chain closes:** True — Manual rational algebra closes: (-9/8)*(5/6)*(-2)=15/8, 6*(15/8-1)=21/4, r_T=6*(5/6-1)=-1, and (21/4)/((-1)*(-2))=21/8. The closure is conditional on the three named supplied premises; those premise legs are not derived in this packet.
+- **rationale:** The load-bearing mathematics is class A exact algebra over explicitly supplied rational inputs, and it is correct within that scope. The runner's load-bearing path hard-codes the supplied premise values as Fraction inputs and verifies algebra plus citation/firewall text; it does not derive ENDPOINT-QE, ENDPOINT-RT, or SHELL-MULT. The no-go authority is retained_no_go and supports only the stated non-derivation boundary, not the three positive premise legs. Therefore the row is a valid conditional bounded theorem, not an audited_clean derivation of the endpoint ratio chain.
 - **auditor confidence:** high
 
 ### `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`

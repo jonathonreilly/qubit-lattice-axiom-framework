@@ -343,7 +343,7 @@
       "deps": [
         "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
       ],
-      "direct_in_degree": 10,
+      "direct_in_degree": 11,
       "effective_status": "audited_conditional",
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py",
@@ -351,12 +351,12 @@
         "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "load_bearing_score": 17.236,
+      "load_bearing_score": 17.738,
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
-      "transitive_descendants": 602
+      "transitive_descendants": 603
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

@@ -57774,10 +57774,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "no_per_site_chirality_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hypercharge_identification_note"
     },
     {
@@ -57803,6 +57799,10 @@
     {
       "from": "repo.front_door_status",
       "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
     },
     {
       "from": "repo.repo_organization",
@@ -111813,17 +111813,17 @@
         "kinetic_isotropy_primitive",
         "realized_state_primitive",
         "tier_a_residual_owner_adoption_retirement_2026-07-04",
-        "no_per_site_chirality_theorem_note_2026-05-02",
         "hypercharge_identification_note",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
-        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
+        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
+        "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4fe7fb0415cf59934a8ea61157efc592deaaa80c73a9f24fca46dc674ca76bd5",
+      "note_hash": "b9615ab6222b338ebe847d6a0393804584b67736addf62ce1874b763bbee23e0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

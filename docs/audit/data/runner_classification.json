@@ -17676,6 +17676,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_hypercharge_squared_trace_catalog.py"
     },
+    "hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/hypercharge_traceless_central_multi_summand_2026_07_06.py"
+    },
     "i1_native_quadratic_static_source_normalization_bridge_2026-06-08": {
       "assert_count": 1,
       "counts": {
@@ -84364,6 +84376,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/hypercharge_traceless_central_multi_summand_2026_07_06.py": {
+      "assert_count": 1,
+      "claims": [
+        "hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py": {
       "assert_count": 1,
       "claims": [
@@ -92584,15 +92611,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 708,
+    "decoration_candidates": 709,
     "dominant_class_distribution": {
       "A": 502,
-      "B": 656,
+      "B": 657,
       "C": 1305,
       "D": 452,
       "none": 458
     },
-    "runners_classified": 3373,
+    "runners_classified": 3374,
     "runners_with_C": 1779,
     "runners_with_D": 1080
   }

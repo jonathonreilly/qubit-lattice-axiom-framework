@@ -20037,6 +20037,18 @@
       "to": "bminusl_anomaly_freedom_theorem_note_2026-04-24"
     },
     {
+      "from": "hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06",
+      "to": "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06"
+    },
+    {
+      "from": "hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06",
+      "to": "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06"
+    },
+    {
       "from": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
       "to": "minimal_axioms"
     },
@@ -86881,6 +86893,22 @@
       "runner_path": "scripts/frontier_hypercharge_squared_trace_catalog.py",
       "title": "Hypercharge Squared Trace Catalog Theorem"
     },
+    "hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06": {
+      "claim_id": "hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+        "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "2b76416941f33f328184023f5df683b5eceebc7649a826c63cd00ef655fd0d3c",
+      "path": "docs/HYPERCHARGE_TRACELESS_CENTRAL_DIRECTION_REQUIRES_MULTI_SUMMAND_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+      "runner_path": "scripts/hypercharge_traceless_central_multi_summand_2026_07_06.py",
+      "title": "Hypercharge-Like Traceless Central Direction Requires Multi-Summand Supplied Structure"
+    },
     "i1_native_quadratic_static_source_normalization_bridge_2026-06-08": {
       "claim_id": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
       "claim_type_author_hint": "bounded_theorem",
@@ -111762,7 +111790,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9d5a97f0c85b975ad5e8f7dea865646a3d591dd71143e0c5165760262e0256a1",
+      "note_hash": "da17f8e7832c1e24ce79e80a971d236da81568a6ab7140ea09e5151ab0ef582b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -128576,7 +128604,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1604,
+      "bounded_theorem": 1605,
       "decoration": 3,
       "meta": 326,
       "no_go": 333,
@@ -128585,7 +128613,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2008,
+      "bounded_theorem": 2009,
       "decoration": 3,
       "meta": 326,
       "no_go": 436,
@@ -128593,10 +128621,10 @@
       "open_gate": 206,
       "positive_theorem": 657
     },
-    "edge_count": 14543,
+    "edge_count": 14546,
     "leaf_count": 1308,
-    "node_count": 3884,
+    "node_count": 3885,
     "root_count": 1105,
-    "runners_with_path": 3506
+    "runners_with_path": 3507
   }
 }

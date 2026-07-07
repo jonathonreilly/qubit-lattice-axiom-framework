@@ -21,7 +21,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 192 |
 | **retained_no_go** | 193 |
 | **retained_bounded** | 880 |
-| _retained_pending_chain_ | 6 |
+| _retained_pending_chain_ | 7 |
 | open_gate | 22 |
 | unaudited | 1980 |
 | meta | 345 |
@@ -59,7 +59,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1255 |
+| `audited_clean` | 1256 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
@@ -69,7 +69,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2036 |
+| `bounded_theorem` | 2037 |
 | `decoration` | 50 |
 | `meta` | 351 |
 | `no_go` | 482 |
@@ -80,18 +80,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 687 |
 | `high` | 445 |
-| `medium` | 953 |
+| `medium` | 954 |
 | `leaf` | 1628 |
 
-- **Retained pending chain closure:** 6
+- **Retained pending chain closure:** 7
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3373
+- runners classified: 3374
 - runners with (C) first-principles compute hits: 1779
 - runners with (D) external comparator hits: 1080
-- decoration candidates (no C, no D): 708
+- decoration candidates (no C, no D): 709
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -99,7 +99,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1929 | 216.41 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1930 | 216.91 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1185 | 67.21 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 65.64 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1577 | 65.62 | `audited_clean` | **retained** |
@@ -852,6 +852,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `memory_decay_diagnosis_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_mu2_geometry_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_annular_tapered_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -11665,6 +11666,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The finite Bogoliubov inequality together with E_k = 2 sum_mu(1 - cos k_mu) and I_d(L) = L^-d sum_{k != 0} 1/E_k gives the d=1 exact identity, d=2 logarithmic growth, and finite d=3 window behavior.  _(class `A`)_
 - **chain closes:** True — Within the narrowed scope, the finite matrix inequality closes by spectral/Cauchy-Schwarz algebra and the IR behavior closes from the stated lattice dispersion. The |m_L| extraction and no-SSB theorem do not close here and are not part of the audited clean scope.
 - **rationale:** The runner exits 0 with PASS=5 FAIL=0 and its code computes finite matrix and lattice-sum checks rather than importing the textbook theorem. Independent recheck, without importing the runner, passed random 5x5 Hermitian Gibbs Bogoliubov instances, the exact I_1 identity for multiple L, monotone/log-scale d=2 behavior, and finite d=3 window behavior through L=24. The no-go/admission gate passes only because this clean verdict does not retain the Ward-normalized |m_L| extraction or no-SSB conclusion.
+- **auditor confidence:** high
+
+### `meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18`
+
+- **Note:** [`MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md`](../../docs/MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded algebraic action-scale calculation: retained-bounded instanton normalization plus supplied |Q|=1/2 gives S_half=4*pi^2/g^2, with no meron existence, regulator, patching, substrate, or observable bridge claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16`)
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-meron_half_action_core_from_topo-09`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Assuming S_E >= (8*pi^2/g^2)|Q| and a supplied half-charge sector |Q|=1/2, the action scale is S_half=(8*pi^2/g^2)*(1/2)=4*pi^2/g^2.  _(class `A`)_
+- **chain closes:** True — Within that scoped algebraic claim, the chain closes: the retained-bounded infrastructure supplies the normalization and the note explicitly assumes |Q|=1/2. The co-cycle citation meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16 is informational/non-load-bearing here.
+- **rationale:** The load-bearing step is a direct algebraic substitution into the retained-bounded topological-instanton normalization, not a numerical match or a definition-only renaming. The runner source actually checks the symbolic identity and numerical arithmetic, while its parent-row checks are non-load-bearing under this cycle-break audit. The co-cycle citation meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16 is treated as informational only; source-graph repair is still needed to remove or rewrite those markdown links before effective_status can leave retained_pending_chain.
 - **auditor confidence:** high
 
 ### `meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30`

@@ -2,8 +2,8 @@
   "by_criticality": {
     "critical": 429,
     "high": 272,
-    "leaf": 778,
-    "medium": 537
+    "leaf": 777,
+    "medium": 538
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -131,7 +131,7 @@
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 1,
       "primary_break_target": "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
-      "primary_break_target_audit_status": "unaudited",
+      "primary_break_target_audit_status": "audited_clean",
       "primary_break_target_criticality": "leaf",
       "repair_class": "cycle_break_required"
     },
@@ -22065,6 +22065,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gauge_factor_preservation_record_typed_selector_2026_07_06.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "post_record_directed_certificate_examples_2026-06-06",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -37555,6 +37579,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/COLOR_ORIENTATION_THREE_VS_THREEBAR_SUCCESSION_CANDIDATE_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/color_orientation_three_vs_threebar_succession_candidate_2026_07_06.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37622,30 +37670,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/fractional_instanton_action_core_split_2026_06_18.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gauge_factor_preservation_record_typed_selector_2026_07_06.py",
       "transitive_descendants": 1
     },
     {
@@ -38363,30 +38387,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/color_comp_hurwitz_clause_scope_reduction_2026_07_06.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/COLOR_ORIENTATION_THREE_VS_THREEBAR_SUCCESSION_CANDIDATE_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/color_orientation_three_vs_threebar_succession_candidate_2026_07_06.py",
       "transitive_descendants": 0
     },
     {
@@ -43404,31 +43404,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/matter_realization_arena_split_preservation_axis_frames_2026_07_06.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
-        "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/meron_half_action_core_split_2026_06_18.py",
       "transitive_descendants": 1
     },
     {
@@ -49792,6 +49767,32 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_hubble_lane5_c2_attack_surface_bipartition.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+        "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/HYPERCHARGE_TRACELESS_CENTRAL_DIRECTION_REQUIRES_MULTI_SUMMAND_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/hypercharge_traceless_central_multi_summand_2026_07_06.py",
       "transitive_descendants": 0
     },
     {

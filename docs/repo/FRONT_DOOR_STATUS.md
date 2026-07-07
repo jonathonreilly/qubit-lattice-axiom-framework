@@ -29,11 +29,11 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3715 |
-| Applied audit verdicts | 1379 |
-| Retained-grade rows, including boxed decorations | 1312 |
+| Applied audit verdicts | 1380 |
+| Retained-grade rows, including boxed decorations | 1313 |
 | Retained positive theorems | 192 |
 | Retained no-go rows | 194 |
-| Retained bounded rows | 881 |
+| Retained bounded rows | 882 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 21 |
 | Unaudited rows | 1976 |
@@ -50,10 +50,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2018 |
-| Ready rows | 242 |
+| Total pending rows | 2017 |
+| Ready rows | 243 |
 | Cycle-break targets | 10 |
-| Critical pending | 427 |
+| Critical pending | 426 |
 | High pending | 273 |
 | Medium pending | 541 |
 | Leaf pending | 777 |
@@ -64,17 +64,17 @@ Next ready rows by queue order:
 - [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
 - [`flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) - critical; audit_in_progress
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
-- [`yt_ward_identity_derivation_theorem`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md) - critical; audit_in_progress
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; non_terminal_conditional
+- [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **438**.
+- Non-retained-grade cited rows in publication tables: **437**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -83,7 +83,6 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | medium | `unaudited` | 96 |
 | high | `audited_conditional` | 3 |
 | medium | `open_gate` | 3 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |
@@ -104,7 +103,7 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1932 descendants; score 217.417
-- `three_generation_observable_theorem_note` - critical; 1187 descendants; score 67.214
+- `three_generation_observable_theorem_note` - critical; 1186 descendants; score 67.213
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 65.644
 - `graph_first_su3_integration_note` - critical; 1577 descendants; score 65.624
 - `observable_principle_from_axiom_note` - critical; 1018 descendants; score 64.493

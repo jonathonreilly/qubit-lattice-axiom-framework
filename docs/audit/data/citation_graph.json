@@ -57790,10 +57790,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_ward_identity_derivation_theorem"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "cl3_taste_generation_theorem"
     },
     {
@@ -57803,6 +57799,10 @@
     {
       "from": "repo.front_door_status",
       "to": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
     },
     {
       "from": "repo.repo_organization",
@@ -111817,13 +111817,13 @@
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-        "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
-        "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
+        "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0fce150846a4b25f360595694a0d2ad190e871f5b3757f2d2f8df7910cfd6335",
+      "note_hash": "22cd6662e7eda2f1a290fa518150e5bba87633bf6c0395cb7291de2c5c3082a2",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

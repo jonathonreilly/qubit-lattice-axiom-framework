@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 192 |
 | **retained_no_go** | 194 |
-| **retained_bounded** | 881 |
+| **retained_bounded** | 882 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
 | unaudited | 1976 |
-| audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 15 |
-| `audited_clean` | 1257 |
+| `audit_in_progress` | 14 |
+| `audited_clean` | 1258 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
@@ -101,18 +100,18 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1932 | 217.42 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1187 | 67.21 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1186 | 67.21 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 65.64 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1577 | 65.62 | `audited_clean` | **retained** |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1018 | 64.49 | `unaudited` | unaudited |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1148 | 53.17 | `audited_clean` | **retained_bounded** |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1048 | 48.03 | `unaudited` | meta |
 | 8 | `key_terminology` | meta | critical | 1162 | 46.68 | `unaudited` | meta |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 922 | 44.35 | `audit_in_progress` | audit_in_progress |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 921 | 43.85 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1289 | 43.33 | `unaudited` | unaudited |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1026 | 42.00 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1536 | 41.59 | `audited_clean` | **retained** |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1023 | 39.50 | `audited_clean` | **retained_bounded** |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1022 | 39.50 | `audited_clean` | **retained_bounded** |
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 319 | 39.32 | `unaudited` | unaudited |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 312 | 37.79 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 863 | 37.76 | `audited_clean` | **retained_no_go** |
@@ -145,7 +144,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `yt_ward_identity_derivation_theorem` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1401,6 +1399,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -19622,6 +19621,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** medium
+
+### `yt_ward_identity_derivation_theorem`
+
+- **Note:** [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact point-split U(1)_B and U(2)_iso Ward identities for the declared staggered Q_L action surface, plus the local H_unit scalar-singlet matrix element y_t_bare = g_bare/sqrt(6); no SM Yukawa readout, tadpole transport, RG, precision, or physical matching claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-yt-ward-second-20260707`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Step 0 derives sum_mu [J_mu(x) - J_mu(x-mu)] = [E_x, M] and the Schwinger-Dyson contact-term Ward identities for the declared staggered Q_L action; Steps 1-3 evaluate the H_unit scalar-singlet matrix element y_t_bare = g_bare/sqrt(6) on the same bounded surface.  _(class `C`)_
+- **chain closes:** True — Within the declared staggered Q_L surface, the local vector variation gives the point-split current and kernel identity, Gaussian integration gives the contact-term Ward identity, and U(2)_iso x SU(3)_color commutant plus unit-residue normalization force the 1/sqrt(6) scalar-singlet matrix element. The direct dependencies are retained-grade or accepted axiom/owner-governed surfaces, so the clean result remains bounded rather than unbounded.
+- **rationale:** The Ward identity is derived from a localized change of variables for the declared staggered action, and the runner computes zero residuals on random and exact finite constructions while computing nonzero residuals for link-stripped, eta-mismatched, and split-mass falsification legs. Independently, I checked the kernel/contact-term signs on a separate U(1) toy lattice, the iso-breaking commutator sign, the singlet normalization, the SU(3) singlet Fierz coefficient, and the scalar Clifford projection coefficient. The T1 statement is only the local H_unit matrix element on the canonical bare surface; the note explicitly excludes SM Yukawa readout, tadpole transport, RG, precision, and physical matching. No-go/bounded-surface gate: the residual surfaces are explicit dependencies or boundaries, not hidden negative walls or promoted no-go claims.
+- **auditor confidence:** high
 
 ### `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10`
 

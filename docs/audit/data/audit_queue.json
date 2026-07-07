@@ -21551,12 +21551,12 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "architecture_note_directional_measure",
-      "claim_scope": null,
+      "claim_scope": "Conditional fixed-fixture theorem for the directional path measure: under supplied BETA-DIRECTIONAL with beta=0.8, T1-T6 hold on the stated deterministic fixtures; no derivation of beta, uniqueness of the angular kernel, gravity law, full 3D Sorkin theorem, decoherence solution, or observable match is audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -21564,14 +21564,14 @@
         "angular_kernel_underdetermination_no_go_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [
         "scripts/three_d_angle_weight.py",
         "scripts/three_d_gravity.py"
       ],
       "load_bearing_score": 5.17,
       "note_path": "docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/architecture_directional_measure_table_runner_2026_05_03.py",
       "transitive_descendants": 8

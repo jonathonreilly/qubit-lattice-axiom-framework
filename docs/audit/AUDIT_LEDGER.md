@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1980 |
+| unaudited | 1979 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 26 |
+| ~~audited_conditional~~ | 27 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1255 |
-| `audited_conditional` | 26 |
+| `audited_conditional` | 27 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2325 |
+| `unaudited` | 2324 |
 
 | claim_type | count |
 |---|---:|
@@ -1400,6 +1400,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -2059,6 +2060,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The stated four primitives admit the seven listed distinct kernels, all passing the primitive checks while producing different transverse moments, so w(theta) is not uniquely determined on that surface.  _(class `C`)_
 - **chain closes:** True — The runner constructs multiple admissible angular kernels, checks the primitive properties, and computes distinct second and fourth transverse moments. The no-go is correctly bounded because it does not rule out adding a higher-order isotropy, Lagrangian, or observable-matching axiom.
 - **rationale:** The load-bearing negative result is an explicit counterexample family, not a definition, renaming, or tuned numerical match. The supplied retained-grade authorities support the routing clarification that the boost lane is on the staggered/Laplacian carrier rather than the directional-measure kernel. Some runner checks are narrative summaries, but the computed witness family and fixed-carrier checks are sufficient for the bounded audited scope.
+- **auditor confidence:** high
+
+### `architecture_note_directional_measure`
+
+- **Note:** [`ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md`](../../docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional fixed-fixture theorem for the directional path measure: under supplied BETA-DIRECTIONAL with beta=0.8, T1-T6 hold on the stated deterministic fixtures; no derivation of beta, uniqueness of the angular kernel, gravity law, full 3D Sorkin theorem, decoherence solution, or observable match is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt5.5-2026-07-07`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Conditional on BETA-DIRECTIONAL supplying beta = 0.8, the deterministic runner recomputes T1-T6: partition additivity, phase-free visibility, k=0 real amplitudes, gravity sign count, gravity scaling, and beta-sweep monotonicity.  _(class `A`)_
+- **chain closes:** False — The fixture algebra and computations close under supplied beta: an independent implementation reproduces T2 visibility 0.975648, T4 attract 6/8, T5 R values, and T6 monotonic weighted theta^2, while T1 and T3 are direct finite-sum/real-factor identities. The audit chain does not close to retained-grade derivation because beta=0.8 is a supplied premise, not a retained derivation, approved primitive, or admitted premise.
+- **rationale:** Issue: the live fixture checks are reproducible only under BETA-DIRECTIONAL, which supplies beta=0.8; this row does not derive beta, select the angular kernel uniquely, or close the gravity/decoherence interpretation. Why this blocks: the retained angular-kernel no-go may be used as boundary context, but this audit does not ratify a new no-go or all-route wall; without a retained beta-selection route, the row remains a supplied-value fixture theorem. Repair target: derive or explicitly admit BETA-DIRECTIONAL through a retained route such as higher-order isotropy, an action/Lagrangian principle, or a structural observable-selection theorem, then rerun the T1-T6 checks. Claim boundary until fixed: cite only the deterministic T1-T6 fixture replay at supplied beta=0.8, not a beta derivation, unique angular kernel, framework gravity law, decoherence solution, or observable match.
 - **auditor confidence:** high
 
 ### `architecture_portability_live_reaudit_bridge_note_2026-06-18`

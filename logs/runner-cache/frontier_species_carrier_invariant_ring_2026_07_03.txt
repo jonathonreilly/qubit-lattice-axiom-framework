@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_species_carrier_invariant_ring_2026_07_03.py
+runner_sha256: 30282568b12a690f962d32610c78f1dbb0def3118f8cdd904e936339e5f5941c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+CHECK 01: PASS - parent gap sentence is present in the live parent note
+CHECK 02: PASS - parent carrier ordering, C3 block, and eps intertwiner are reproduced [c3 perm=[1, 2, 0], eps pullback perm=[0, 1, 2]]
+CHECK 03: PASS - abstract C3+eps averaging group has six elements and exact relations [distinct functional actions=3]
+CHECK 04: PASS - parent check-4 orbit fact and check-8 diagonal average are reproduced [raw spread=5, averaged spread=0]
+CHECK 05: PASS - complete 9D Hermitian linear-functional basis is closed [D0,D1,D2,S01,S12,S20,A01,A12,A20]
+CHECK 06: PASS - degree-one Molien coefficient equals the Reynolds-image rank [Molien dim=3, Reynolds rank=3]
+CHECK 07: PASS - every full-group averaged generator has zero corner-diagonal spread [spreads=0,0,0,0,0,0,0,0,0]
+CHECK 08: PASS - negative control drops C3 and produces an orbit separator [broken Molien dim=9, max spread=1]
+TOTAL: PASS=8 FAIL=0
+SUMMARY files: docs/SPECIES_CARRIER_INVARIANT_RING_NO_ORBIT_SEPARATOR_EXACT_NOTE_2026-07-03.md; scripts/frontier_species_carrier_invariant_ring_2026_07_03.py
+SUMMARY check count: PASS=8 FAIL=0 TOTAL=8
+SUMMARY invariant dimension found: 3
+SUMMARY separator verdict: none in the full C3+eps averaged generator set; present after dropping C3
+SUMMARY uncertainties: scoped to linear Hermitian functionals on the parent corner-diagonal readout surface; no count change
+
+----- stderr -----
+

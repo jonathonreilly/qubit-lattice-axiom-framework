@@ -1,10 +1,10 @@
 # DM Neutrino Source-Amplitude Theorem
 
-**Claim type:** positive_theorem
+**Claim type:** bounded_theorem
 
 **Date:** 2026-04-15  
-**Status:** exact sharp-branch source-amplitude theorem on the refreshed
-`main`-derived DM lane  
+**Status:** bounded conditional sharp-branch source-amplitude result on the
+named-input `K_R` carrier definition
 **Script:** `scripts/frontier_dm_neutrino_source_amplitude_theorem.py`
 
 ## Framework sentence
@@ -19,11 +19,11 @@ left on the source side?
 
 Can the selector amplitude `a_sel` and the symmetric weak source amplitude
 `tau_+ = tau_E + tau_T` be fixed canonically on the sharp source-oriented
-branch?
+branch, inside the named-input `K_R` carrier definition?
 
 ## Bottom line
 
-Yes.
+Yes, inside that bounded carrier context.
 
 On the sharp source-oriented branch:
 
@@ -31,14 +31,29 @@ On the sharp source-oriented branch:
 - `tau_E = tau_T = 1/2`
 - `tau_+ = 1`
 
-Therefore, using the already-derived transfer coefficients,
+Therefore, using the already-derived transfer coefficients inside the same
+bounded source package,
 
 - `gamma = c_odd a_sel = 1/2`
 - `E1 = sqrt(8/3) tau_+ = sqrt(8/3)`
 - `E2 = (sqrt(8)/3) tau_+ = sqrt(8)/3`
 
 So on the refreshed `main`-derived branch, the source side is no longer a
-floating pair of amplitudes on the sharp branch. It is canonically fixed.
+floating pair of amplitudes on the sharp branch once the named-input `K_R`
+carrier definition is supplied. This does not derive that carrier as a
+physical primitive.
+
+## 2026-07-04 scope repair
+
+The upstream `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md` now records `K_R` as a
+class-A definition under named admitted inputs `(delta_A1, u_E, u_T)`. It
+explicitly does not derive those inputs, the decoupling fact, the
+aligned-bright coordinates, or a physical tensor-primitive interpretation.
+
+This note is therefore not an exact physical weak-carrier theorem. Its
+load-bearing result is conditional: given the named-input `K_R` row factor and
+the sharp source-oriented projection, the source amplitudes are fixed as
+`a_sel = 1/2`, `tau_E = tau_T = 1/2`, and `tau_+ = 1`.
 
 ## Selector amplitude
 
@@ -71,7 +86,7 @@ So the canonical sharp selector amplitude is
 
 ## Symmetric weak source amplitude
 
-The exact weak source carrier is the two-column bright bundle
+The named-input weak source carrier definition is the two-column bright bundle
 
 `K_R(q) = [[u_E(q), u_T(q)], [delta_A1(q)u_E(q), delta_A1(q)u_T(q)]]`.
 
@@ -100,23 +115,26 @@ The coefficient theorems already gave:
 - `c_odd = +1`
 - `v_even = (sqrt(8/3), sqrt(8)/3)`.
 
-Substituting the sharp source amplitudes gives the exact triplet-side source
+Substituting the sharp source amplitudes gives the bounded triplet-side source
 data
 
 - `gamma = 1/2`
 - `E1 = sqrt(8/3)`
 - `E2 = sqrt(8)/3`.
 
-That is the strongest exact source-side closure point reached so far on the
-refreshed `main`-derived DM branch.
+That is the current bounded source-amplitude point on the refreshed
+`main`-derived DM branch, conditional on the named-input `K_R` carrier
+definition.
 
-## What this does not close
+## What remains open
 
-This note does **not** yet rewrite the full leptogenesis benchmark in terms of
-these sharp source amplitudes. The existing benchmark runner still uses the
-older reduced kernel.
+This note does **not** derive the `K_R` carrier as a physical weak tensor
+primitive. It also does **not** yet rewrite the full leptogenesis benchmark in
+terms of these sharp source amplitudes. The existing benchmark runner still
+uses the older reduced kernel.
 
-So this is a source-amplitude theorem, not yet the final `eta` closure note.
+So this is a bounded source-amplitude result inside a supplied carrier
+definition, not yet the final `eta` note.
 
 ## Command
 

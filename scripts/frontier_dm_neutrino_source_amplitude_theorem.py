@@ -7,16 +7,17 @@ Framework convention:
 
 Question:
   Once the transfer coefficients are fixed, can the source amplitudes on the
-  source-oriented sharp branch be fixed canonically as well?
+  source-oriented sharp branch be fixed canonically inside the named-input
+  K_R carrier definition?
 
 Answer:
-  Yes, on the sharp source-oriented branch:
+  Yes, conditionally on that named-input carrier definition:
 
     a_sel = 1/2
     tau_E = tau_T = 1/2
     tau_+ = 1
 
-  Therefore the exact transfer law becomes
+  Therefore the bounded source package becomes
 
     gamma = 1/2
     E1 = sqrt(8/3)
@@ -53,6 +54,10 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
 
 def read(rel: str) -> str:
     return (ROOT / rel).read_text(encoding="utf-8")
+
+
+def compact(text: str) -> str:
+    return "".join(text.split())
 
 
 S_CLS = np.diag([0.0, 0.0, 1.0, -1.0])
@@ -110,10 +115,15 @@ def part2_sharp_symmetric_source_projection_fixes_tau_plus() -> None:
     source_vec = np.array([0.5, 0.5], dtype=float)
     tau_plus = float(np.sum(source_vec))
 
+    carrier_compact = compact(carrier)
+    kr_definition = compact("K_R(q) := [[u_E(q), u_T(q)], [delta_A1(q) u_E(q), delta_A1(q) u_T(q)]]")
+
     check(
-        "The exact weak carrier is the two-column bright bundle K_R(q) = [[u_E,u_T],[delta_A1 u_E,delta_A1 u_T]]",
-        "K_R(q) = [[u_E(q), u_T(q)], [delta_A1(q)u_E(q), delta_A1(q)u_T(q)]]".replace(" ", "")
-        in carrier.replace(" ", ""),
+        "The weak carrier premise is the named-input K_R definition, not a physical-primitive theorem",
+        kr_definition in carrier_compact
+        and "class-A definition" in carrier
+        and ("**does not derive**" in carrier or "does **not** derive" in carrier)
+        and "physical tensor primitive" in carrier,
     )
     check(
         "The hierarchy selector theorem again supplies sharp bosonic-even projection rather than soft weighting",
@@ -134,15 +144,15 @@ def part2_sharp_symmetric_source_projection_fixes_tau_plus() -> None:
         f"vec={source_vec.tolist()}",
     )
     check(
-        "Therefore the symmetric source amplitude is canonically tau_+ = 1",
+        "Therefore the bounded symmetric source amplitude is canonically tau_+ = 1 inside that carrier definition",
         abs(tau_plus - 1.0) < 1e-12,
         f"tau_+={tau_plus:.6f}",
     )
 
 
-def part3_the_exact_triplet_source_data_follow_immediately() -> None:
+def part3_the_bounded_triplet_source_data_follow_immediately() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: THE EXACT TRIPLET SOURCE DATA FOLLOW IMMEDIATELY")
+    print("PART 3: THE BOUNDED TRIPLET SOURCE DATA FOLLOW INSIDE THE CARRIER DEFINITION")
     print("=" * 88)
 
     codd = read("docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md")
@@ -163,12 +173,12 @@ def part3_the_exact_triplet_source_data_follow_immediately() -> None:
         "v_even = (sqrt(8/3), sqrt(8)/3)" in veven,
     )
     check(
-        "So the exact odd triplet source is gamma = a_sel = 1/2",
+        "So the bounded odd triplet source is gamma = a_sel = 1/2",
         abs(gamma - 0.5) < 1e-12,
         f"gamma={gamma:.6f}",
     )
     check(
-        "The exact even triplet responses are E1 = sqrt(8/3) and E2 = sqrt(8)/3",
+        "The bounded even triplet responses are E1 = sqrt(8/3) and E2 = sqrt(8)/3",
         abs(e1 - math.sqrt(8.0 / 3.0)) < 1e-12 and abs(e2 - math.sqrt(8.0) / 3.0) < 1e-12,
         f"(E1,E2)=({e1:.12f},{e2:.12f})",
     )
@@ -181,7 +191,7 @@ def main() -> int:
 
     part1_sharp_selector_projection_fixes_a_sel()
     part2_sharp_symmetric_source_projection_fixes_tau_plus()
-    part3_the_exact_triplet_source_data_follow_immediately()
+    part3_the_bounded_triplet_source_data_follow_immediately()
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

@@ -152,6 +152,15 @@ def main() -> int:
     )
 
     check(
+        "note explicitly includes gate_b_connectivity_tolerance helper source and cache",
+        "Helper runner (audit packet must include)" in note
+        and "scripts/gate_b_connectivity_tolerance.py" in note
+        and "logs/runner-cache/gate_b_connectivity_tolerance.txt" in note
+        and "_field_for_mass" in note
+        and "FIELD_STRENGTH" in note,
+    )
+
+    check(
         "parent note wires the GB-S1b split and preserves open physical normalization",
         "2026-06-18 finite radial scalar split" in parent
         and "GB-S1b-a" in parent

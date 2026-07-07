@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_finite_path_sum_propagation_bridge_2026_06_18.py
-runner_sha256: 6d34b5bfc6aadac37cb358473a03365e2c3014ec0c5a632f7c0f0ec822a42cb4
+runner_sha256: fca95bace410f2cbccd3a618c65ee885381f163bd3846ff388002935d0400f2c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 Gate B finite path-sum propagation bridge
 ========================================================================
 [PASS] runner recursion equals independently enumerated finite path sum
-       max_abs_diff=4.467e-16
+       max_abs_diff=4.450e-16
 [PASS] finite layer transfer equals path-sum expansion
-       max_abs_diff=2.225e-16
+       max_abs_diff=2.289e-16
 [PASS] transfer is linear in initial source amplitudes
-       max_abs_diff=2.371e-16
+       max_abs_diff=1.570e-16
 [PASS] blocked-node deletion is load-bearing and explicit
        blocked_nodes=3, changed_terminal_or_bulk_entries=12
 [PASS] blocked nodes carry zero amplitude in the checked transfer
@@ -26,11 +26,12 @@ Gate B finite path-sum propagation bridge
        nodes=36, edges=147, detectors=9
 [PASS] edge kernel has finite nonzero weights on all unblocked traversed edges
 [PASS] note states GB-S2a boundary without claiming Gate B closure
+[PASS] note explicitly includes gate_b_connectivity_tolerance helper source and cache
 [PASS] parent note wires the GB-S2 split and preserves open physical readout semantics
 [PASS] parent note still blocks scalar/connectivity/physical-gravity overclaims
 
-TOTAL: PASS=12 FAIL=0
-runner_check_breakdown = {A: 12, B: 0, C: 0, D: 0, total_pass: 12}
+TOTAL: PASS=13 FAIL=0
+runner_check_breakdown = {A: 13, B: 0, C: 0, D: 0, total_pass: 13}
 VERDICT: GB-S2a is exact finite path-sum propagation on the supplied Gate B DAG/kernel; GB-S2b physical readout semantics remain open.
 
 ----- stderr -----

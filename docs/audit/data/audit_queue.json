@@ -18,7 +18,7 @@
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16', 'single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 385,
       "primary_break_target": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "primary_break_target_audit_status": "unaudited",
+      "primary_break_target_audit_status": "audited_conditional",
       "primary_break_target_criticality": "critical",
       "repair_class": "cycle_break_required"
     },
@@ -8363,12 +8363,12 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "claim_scope": null,
+      "claim_scope": "Axis-conditional single-clock codimension-1 finite-block evolution: conditional on B-AXIS, the supplied two-step transfer gives one Stone generator/unitary group, equal-time tensor-product `M_2(C)` slice algebra, and free `U=1` bilinear quasilocal propagation only; no unconditional axis-selection or no-second-clock theorem is audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
@@ -8390,11 +8390,11 @@
         "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
       ],
       "direct_in_degree": 25,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [],
       "load_bearing_score": 21.092,
       "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": false,
       "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
       "transitive_descendants": 385

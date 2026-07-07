@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 22 |
-| unaudited | 1986 |
+| unaudited | 1985 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 18 |
+| ~~audited_conditional~~ | 19 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1253 |
-| `audited_conditional` | 18 |
+| `audited_conditional` | 19 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2331 |
+| `unaudited` | 2330 |
 
 | claim_type | count |
 |---|---:|
@@ -1398,6 +1398,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -2336,6 +2337,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** T_odd T_even has eigenvalues e^{+2E(p)} and e^{-2E(p)}, the decaying channel t1^(2)(p)=e^{-2E(p)} gives T_hat^2=Gamma(t1^(2))=tensor_p diag(1,e^{-2E(p)})=B^dag B, while the one-step matrices have complex spectra for sin(p)!=0 and a negative eigenvalue at sin(p)=0.  _(class `C`)_
 - **chain closes:** True — From the action recurrence, with q=m^2+sin^2(p), T_odd T_even has trace 2+4q=2 cosh(2E) and determinant 1, so its eigenvalues are e^{+/-2E}. The decaying eigenvalue is positive, Gamma has positive product eigenvalues, and the one-step non-positivity follows from complex spectra off sin(p)=0 plus eigenvalues -m+/-sqrt(m^2+1) at sin(p)=0.
 - **rationale:** The cached runner reports only C1-C6 and PASS=6 FAIL=0. C1 executes the mass sweep over m in {0.05, 0.1, 0.5, 1.0, 2.0, 5.0}; the independent closed-form product check reproduces the sweep minimum eigenvalue 7.912e-13 at m=5, L_s=6. C1-C6 witness the note's bounded free two-step positivity and one-step non-positivity claim. They do not witness any gauge-background or U-integrated RP extension.
+- **auditor confidence:** high
+
+### `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`
+
+- **Note:** [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Axis-conditional single-clock codimension-1 finite-block evolution: conditional on B-AXIS, the supplied two-step transfer gives one Stone generator/unitary group, equal-time tensor-product `M_2(C)` slice algebra, and free `U=1` bilinear quasilocal propagation only; no unconditional axis-selection or no-second-clock theorem is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-axiom_first_single_clock_codimen-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied positive two-step transfer `T_hat^2` and fixed denominator `2a_tau`, apply (R-STONE)/(R-SC2) to get the unique generator `H = -(1/(2a_tau)) log(T_hat^2/M_T)`, with slice locality/propagation imported from (R-ET)/(R-FBQL) and axis/no-second-clock content left as (B-AXIS).  _(class `A`)_
+- **chain closes:** False — The internal algebraic composition is coherent, and the runner checks the exchange-symmetry and two-clock boundary, but the restricted packet does not close the theorem because load-bearing transfer/propagation authorities are marked unaudited and B-AXIS.1b/B-AXIS.2/B-AXIS.3 remain declared/open premises.
+- **rationale:** The proof is not a renaming or numerical match; it is an algebraic composition over supplied transfer, locality, and propagation inputs plus a computed exchange-symmetry boundary. The runner source performs substantive finite-matrix checks and totals PASS=47, but those checks do not independently establish the actual upstream RP/SC transfer supply, the R-FBQL propagation theorem, or the open B-AXIS premises. The APBC axis-label bridge and record-durability route-pruning co-cycle links were treated as informational/see-also references, not as chain support. Because the packet marks load-bearing upstream suppliers unaudited and leaves B-AXIS open, the result is conditional rather than clean.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
+  - `AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`
+  - `FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`
+  - `SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md`
+  - `SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md`
 - **auditor confidence:** high
 
 ### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`

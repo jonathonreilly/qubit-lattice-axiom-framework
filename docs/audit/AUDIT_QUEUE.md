@@ -72,7 +72,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | cycle_id | length | max_desc | primary break target | criticality | audit_status |
 |---:|---|---:|---:|---|---|---|
-| 1 | `cycle-0001` | 3 | 385 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | critical | unaudited |
+| 1 | `cycle-0001` | 3 | 385 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | critical | audited_conditional |
 | 2 | `cycle-0002` | 2 | 379 | `quark_cp_carrier_completion_note_2026-04-18` | critical | unaudited |
 | 3 | `cycle-0003` | 2 | 304 | `bridge_gap_hk_cube_perron_note_2026-05-06` | critical | unaudited |
 | 4 | `cycle-0004` | 3 | 304 | `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06` | critical | unaudited |

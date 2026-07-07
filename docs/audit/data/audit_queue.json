@@ -46,7 +46,7 @@
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['bridge_gap_hk_thermodynamic_stretch_note_2026-05-06'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 304,
       "primary_break_target": "bridge_gap_hk_cube_perron_note_2026-05-06",
-      "primary_break_target_audit_status": "unaudited",
+      "primary_break_target_audit_status": "audited_conditional",
       "primary_break_target_criticality": "critical",
       "repair_class": "cycle_break_required"
     },
@@ -10068,12 +10068,12 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "bridge_gap_hk_cube_perron_note_2026-05-06",
-      "claim_scope": null,
+      "claim_scope": "Fixed L_s=2 heat-kernel cube Perron computation at t=1 using the stated candidate-rho ansatz and finite NMAX convergence, not a thermodynamic-limit or action-uniqueness claim.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
@@ -10085,11 +10085,11 @@
         "su3_casimir_fundamental_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [],
       "load_bearing_score": 8.753,
       "note_path": "docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": false,
       "runner_path": "scripts/probe_hk_cube_perron_l2_2026_05_06.py",
       "transitive_descendants": 304

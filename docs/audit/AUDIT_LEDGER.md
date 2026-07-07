@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 22 |
-| unaudited | 1984 |
+| unaudited | 1983 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 19 |
+| ~~audited_conditional~~ | 20 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1253 |
-| `audited_conditional` | 19 |
+| `audited_conditional` | 20 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2329 |
+| `unaudited` | 2328 |
 
 | claim_type | count |
 |---|---:|
@@ -1400,6 +1400,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `bridge_gap_hk_cube_perron_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2786,6 +2787,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Hermitian commutant of the supplied 3x3 cyclic shift C is exactly the three-real-dimensional set H = aI + bC + conj(b)C^T, with a real and b complex.  _(class `A`)_
 - **chain closes:** True — The algebra closes: the cyclic shift has distinct eigenvalues, so its complex commutant is span{I,C,C^2}; Hermiticity imposes the paired coefficients a in R and C^2 coefficient conj(b). Since S=C+C^2 is also a polynomial in C, every such H commutes with S.
 - **rationale:** The runner source performs an actual finite-dimensional commutator/nullspace computation and reconstructs the resulting basis as Brannen circulants, rather than merely printing expected constants. An independent algebraic check gives the same result from the centralizer of the cyclic shift and the Hermiticity condition, and the pointer non-demolition statement follows because S is a polynomial in C. The result uses only supplied C3 action, locality/displacement structure, Hermiticity, and supplied pointer data; it does not claim to select the action, pointer, r, delta, or any coupling value.
+- **auditor confidence:** high
+
+### `bridge_gap_hk_cube_perron_note_2026-05-06`
+
+- **Note:** [`BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md`](../../docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed L_s=2 heat-kernel cube Perron computation at t=1 using the stated candidate-rho ansatz and finite NMAX convergence, not a thermodynamic-limit or action-uniqueness claim.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-bridge_gap_hk_cube_perron_note_2-03`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting heat-kernel character coefficients into the L_s=2 candidate-rho Perron transfer operator gives P_cube_HK(L_s=2,t=1)=0.5223243151, stable across NMAX.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the stated finite Perron value from the provided formulas, but the candidate-rho/Perron machinery and Casimir/time/action premises are imported from cited authorities that are not retained-grade in this packet. The co-cycle citation bridge_gap_hk_thermodynamic_stretch_note_2026-05-06 is treated as informational and not used as chain support.
+- **rationale:** The primary runner source is substantive: it defines SU(3) dimensions, Casimirs, HK coefficients, candidate rho, the recurrence operator, local HK factor, and symmetric Perron solve, and its cached output matches the note's numerical claim. However, the load-bearing candidate-rho/Perron ansatz is inherited from docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md and the Casimir/HK premises are cited through unaudited authorities, so the chain is conditional under the rubric. The co-cycle link docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md is non-load-bearing/informational for this re-audit, but source-graph repair is still needed to strip or rewrite those markdown links before effective_status can leave retained_pending_chain.
+- **open / conditional deps cited:**
+  - `SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md`
+  - `BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md`
+  - `BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md`
+  - `SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`
 - **auditor confidence:** high
 
 ### `broad_gravity_derivation_note`

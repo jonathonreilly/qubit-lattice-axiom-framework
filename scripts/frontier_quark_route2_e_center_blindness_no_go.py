@@ -5,6 +5,13 @@ Route-2 E-center blindness no-go for the quark endpoint chain.
 Status:
   exact negative boundary for E-center-blind Route-2 endpoint repairs.
 
+Source boundary:
+  The reduced endpoint carrier and channelwise readout setup are supplied by
+  QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md. This runner consumes
+  that setup and proves only the E-center-blind negative boundary; it does
+  not derive the granted T-side endpoint candidates or the missing E-center
+  lift.
+
 Safe claim:
   The Route-2 endpoint chain cannot derive the missing E-channel value
   rho_E = beta_E/alpha_E = 21/4 from constraints that never inspect the
@@ -305,6 +312,11 @@ def main() -> int:
     print("=" * 72)
     print("  FRONTIER: Quark Route-2 E-Center Blindness No-Go")
     print("=" * 72)
+    print(
+        "\n  Source boundary: carrier/readout setup supplied by "
+        "QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md; "
+        "this runner proves only the E-center-blind no-go."
+    )
 
     part1_geometry()
     part2_invariance()

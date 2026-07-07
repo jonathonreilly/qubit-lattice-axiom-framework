@@ -9,6 +9,12 @@
 checked by the runner (`PASS=40 FAIL=0`). Authority role: source proposal; the
 audit lane sets status.
 
+**2026-07-04 runner robustness repair.** The runner's polar-decomposition
+helper now computes the unitary polar factor by SVD rather than by inverting
+`sqrt(M^dag M)`, so the `lam=0` contrast remains finite on near-singular
+roundoff cases. The discriminating contrast is unchanged: without records the
+link remains order-1 away from the pointer-slaved `polar(s)` direction.
+
 ## The named residual this addresses
 
 The gauge-dynamics convergence note

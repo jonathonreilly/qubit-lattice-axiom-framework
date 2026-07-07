@@ -251,15 +251,15 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "yt_ward_identity_derivation_theorem",
-      "claim_scope": null,
+      "claim_scope": "Exact point-split U(1)_B and U(2)_iso Ward identities for the declared staggered Q_L action surface, plus the local H_unit scalar-singlet matrix element y_t_bare = g_bare/sqrt(6); no SM Yukawa readout, tadpole transport, RG, precision, or physical matching claim.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "staggered_dirac_realization_gate_note_2026-05-03",
         "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
@@ -268,13 +268,13 @@
         "native_gauge_closure_note"
       ],
       "direct_in_degree": 63,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
       "load_bearing_score": 44.35,
       "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "transitive_descendants": 922

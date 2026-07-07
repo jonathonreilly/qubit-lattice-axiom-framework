@@ -266,10 +266,10 @@
       "max_transitive_descendants": 1,
       "nodes": [
         {
-          "audit_status": "unaudited",
+          "audit_status": "audited_clean",
           "claim_id": "gate_b_context_independence_no_go_note_2026-06-17",
           "claim_type": "no_go",
-          "effective_status": "unaudited",
+          "effective_status": "retained_pending_chain",
           "note_path": "docs/GATE_B_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md",
           "title": "Gate B Context Independence No-Go",
           "transitive_descendants": 1

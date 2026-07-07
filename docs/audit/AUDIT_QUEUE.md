@@ -1,13 +1,13 @@
 # Audit Queue
 
-**Total pending:** 2018
+**Total pending:** 2017
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 236
 
 By criticality:
 - `critical`: 429
 - `high`: 272
 - `medium`: 537
-- `leaf`: 780
+- `leaf`: 779
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -78,7 +78,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 4 | `cycle-0004` | 3 | 305 | `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06` | critical | audited_conditional |
 | 5 | `cycle-0005` | 2 | 58 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | high | audited_conditional |
 | 6 | `cycle-0006` | 2 | 1 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | leaf | audited_conditional |
-| 7 | `cycle-0007` | 2 | 1 | `gate_b_context_independence_no_go_note_2026-06-17` | leaf | unaudited |
+| 7 | `cycle-0007` | 2 | 1 | `gate_b_context_independence_no_go_note_2026-06-17` | leaf | audited_clean |
 | 8 | `cycle-0008` | 2 | 1 | `gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17` | leaf | unaudited |
 | 9 | `cycle-0009` | 2 | 1 | `meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18` | leaf | unaudited |
 | 10 | `cycle-0010` | 2 | 1 | `record_context_generator_nonidentifiability_no_go_2026-06-17` | leaf | unaudited |

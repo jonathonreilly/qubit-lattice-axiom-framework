@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/record_formation_front_chiral_edge_2026_07_05.py
+runner_sha256: 4e837e9b9f1a2e278b37e9b6a378ba96c054533bb7ec5b80f415aa2d2ba09656
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+
+========================================================================================
+0. Cl(3,0) and independent construction cross-check
+========================================================================================
+PASS: Pauli generators realize the Cl(3,0) spatial algebra
+PASS: two independent occupancy constructions agree  (max|theta_A-theta_B|=2.220e-16)
+PASS: two independent Hamiltonian constructions agree  (||H_A-H_B||_F=2.683e-15)
+
+========================================================================================
+1. Formation front localizes a chiral edge across front widths
+========================================================================================
+PASS: front width w=0.75: edge is light, localized at occupancy midpoint, and chiral  (grad=+0.870062, midpoint_s=32, peaks=[31, 31], chi=[-1.0, -1.0], prob_xi=0.750973, R2=0.995061)
+PASS: front width w=1.5: edge is light, localized at occupancy midpoint, and chiral  (grad=+0.582783, midpoint_s=32, peaks=[32, 31], chi=[-1.0, -1.0], prob_xi=0.736150, R2=0.999235)
+PASS: front width w=3: edge is light, localized at occupancy midpoint, and chiral  (grad=+0.321513, midpoint_s=32, peaks=[32, 32], chi=[-1.0, -1.0], prob_xi=0.780902, R2=0.994960)
+PASS: front width w=5: edge is light, localized at occupancy midpoint, and chiral  (grad=+0.197375, midpoint_s=32, peaks=[32, 32], chi=[-1.0, -1.0], prob_xi=0.785808, R2=0.994213)
+PASS: front width w=8: edge is light, localized at occupancy midpoint, and chiral  (grad=+0.124350, midpoint_s=32, peaks=[32, 32], chi=[-1.0, -1.0], prob_xi=0.818263, R2=0.991020)
+PASS: localization length is measured for a range of front widths  (xi_prob(w)=0.75:0.750973, 1.5:0.736150, 3:0.780902, 5:0.785808, 8:0.818263)
+
+========================================================================================
+2. Formation-arrow sign flip
+========================================================================================
+PASS: reversing occupancy gradient flips the edge chirality  (forward_grad=+0.321513, forward_chi=-1.0; reverse_grad=-0.321513, reverse_chi=+1.0)
+PASS: periodic anti-front has the opposite chirality  (front_grad=+0.321513, anti_grad=-0.321513, front_chi=-1.0, anti_chi=+1.0)
+
+========================================================================================
+3. Uniform occupancy contrast
+========================================================================================
+PASS: uniform empty/full occupancy has no light edge and stays gapped  (gap_empty=1.000000000000, gap_full=1.000000000000)
+
+========================================================================================
+4. Projected Cl(3,0) Weyl cone at the front
+========================================================================================
+PASS: projected edge velocities obey the Pauli Clifford algebra  (max_anticommutator_error=1.308e-15, velocity_eigs=[array([-1.,  1.]), array([-1.,  1.]), array([-1.,  1.])])
+
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

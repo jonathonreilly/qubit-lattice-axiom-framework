@@ -20945,12 +20945,12 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "source_resolved_exact_green_pocket_note",
-      "claim_scope": null,
+      "claim_scope": "Conditional finite-fixture theorem for the source-resolved Green pocket: under supplied GREEN-KERNEL-PARAMS, the declared h=0.5, W=3, L=20 four-source fixture deterministically satisfies the listed hard bars; no derivation of the kernel, parameter values, gain, source geometry, bar windows, size transfer, or field dynamics is audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -20958,13 +20958,13 @@
         "minimal_source_driven_field_probe_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
       "load_bearing_score": 8.229,
       "note_path": "docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/source_resolved_exact_green_pocket.py",
       "transitive_descendants": 74

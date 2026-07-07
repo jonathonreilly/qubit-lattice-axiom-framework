@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1981 |
+| unaudited | 1980 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 25 |
+| ~~audited_conditional~~ | 26 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1255 |
-| `audited_conditional` | 25 |
+| `audited_conditional` | 26 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2326 |
+| `unaudited` | 2325 |
 
 | claim_type | count |
 |---|---:|
@@ -1422,6 +1422,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_context_generator_nonidentifiability_no_go_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
@@ -15689,6 +15690,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** finite sharp-record Fisher tangent theorem + supplied diagonal C^6 Hilbert-Schmidt response basis => primitive unit tangent normalization lambda=1 => democratic coordinate amplitude 1/sqrt(6) in that supplied basis  _(class `A`)_
 - **chain closes:** True — Within the bounded scope, the retained Fisher tangent theorem supplies the zero-mean RN score, Fisher pairing, unit signed record, and exponential chart, while the retained_bounded diagonal-basis theorem supplies the orthonormal C^6 basis and democratic unit. The physical Y_T/source readout bridge is not closed, but the note explicitly excludes it from the audited load-bearing claim.
 - **rationale:** The load-bearing step is finite algebra over retained-grade inputs, not a new physical source identification. Independently, for P0=(1/2,1/2), epsilon=(1,-1) has E0[epsilon]=0 and E0[epsilon^2]=1, while lambda epsilon has Fisher norm lambda^2; in the supplied C^6 diagonal Hilbert-Schmidt basis, (1/sqrt(6)) sum_i E_ii has norm one and component amplitude 1/sqrt(6). The note's firewall keeps same-source top/W response and physical Y_T semantics conditional, so the bounded theorem closes as written.
+- **auditor confidence:** high
+
+### `source_resolved_exact_green_pocket_note`
+
+- **Note:** [`SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-fixture theorem for the source-resolved Green pocket: under supplied GREEN-KERNEL-PARAMS, the declared h=0.5, W=3, L=20 four-source fixture deterministically satisfies the listed hard bars; no derivation of the kernel, parameter values, gain, source geometry, bar windows, size transfer, or field dynamics is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt5.5-2026-07-07`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If GREEN-KERNEL-PARAMS is supplied, the declared finite exact-lattice fixture computed through the retained bounded Lattice3D/propagate/K implementation satisfies the zero-source, TOWARD, alpha_green, mean-ratio, and declared-gain hard bars.  _(class `A`)_
+- **chain closes:** False — A standalone recomputation reproduces the displayed table, zero-source reduction, gain, alpha_green, TOWARD count, and mean ratio outside the runner path. The audit chain does not close because GREEN-KERNEL-PARAMS, including the calibrated gain, kernel parameters, source geometry, and hard-bar windows, is a supplied premise rather than a retained derivation or approved primitive.
+- **rationale:** Issue: the finite hard-bar replay is correct only after supplying GREEN-KERNEL-PARAMS, including the Green-kernel form and parameters, calibrated gain, source geometry, source strengths, and bar windows. Why this blocks: the row can certify this declared fixture, but it cannot be retained as a framework-derived result because the load-bearing parameter and window choices are not closed by the cited retained-bounded dependency. Repair target: derive or explicitly admit the Green kernel, parameter values, gain/normalization rule, source geometry, and hard-bar windows from retained framework dynamics, then rerun the finite-fixture checks. Claim boundary until fixed: cite only the conditional deterministic replay under GREEN-KERNEL-PARAMS, not a Green-kernel derivation, field-dynamics theorem, continuum transfer, size-transfer law, or self-consistent field equation.
 - **auditor confidence:** high
 
 ### `source_resolved_exact_green_scaling_note`

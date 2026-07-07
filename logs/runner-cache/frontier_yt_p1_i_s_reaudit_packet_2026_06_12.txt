@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py
-runner_sha256: 6f39a75787114288a6190793ce607a5d40dfbb6a13571693c2ad5c7d44de13ef
-timeout_sec: 120
+runner_sha256: f9480774993f0a7e631d5231ddae2c2c8928fab04769c4b409fa5f138cb370a6
+timeout_sec: 300
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
@@ -18,6 +18,7 @@ BLOCK 1: restricted-packet source/cache presence
   [PASS] docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md exists  (present)
   [PASS] docs/YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md exists  (present)
   [PASS] docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md exists  (present)
+  [PASS] docs/YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md exists  (present)
   [PASS] docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md exists  (present)
   [PASS] docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md exists  (present)
   [PASS] docs/YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md exists  (present)
@@ -35,17 +36,17 @@ BLOCK 2: source-note status boundary
 ========================================================================
   [PASS] re-audit bridge section present
   [PASS] restricted packet table present
-  [PASS] native BZ candidate section present
+  [PASS] corrected BZ diagnostic section present
   [PASS] independent audit firewall present
   [PASS] no audit verdict update claimed
-  [PASS] native path does not use supplied bracket as load-bearing
-  [PASS] upper end not proved
-  [PASS] native candidate replacement gate explicit
+  [PASS] corrected path does not use supplied bracket as load-bearing
+  [PASS] supplied range not proved
+  [PASS] old native candidate invalidation explicit
   [PASS] master theorem not modified
   [PASS] old proposed-retained marker absent from citation note
   [PASS] citation note remains bounded theorem
   [PASS] citation note keeps legacy conditional arithmetic
-  [PASS] citation note names native arithmetic bridge
+  [PASS] citation note names corrected BZ diagnostic bridge
   [PASS] citation note links native BZ row as markdown dependency
   [PASS] citation note links canonical alpha certificate
   [PASS] citation note links parent plaquette surface
@@ -92,38 +93,39 @@ BLOCK 4: conditional I_S bracket arithmetic
   [PASS] central/standard revision factor is exactly 3
 
 ========================================================================
-BLOCK 5: native full-staggered BZ candidate
+BLOCK 5: corrected full-staggered BZ diagnostic
 ========================================================================
-  I_v_scalar candidate       = 3.902000
-  5% systematic scalar band  = [3.706900, 4.097100]
-  P1 native candidate        = 3.7538%
-  P1 native 5% band          = [3.5661%, 3.9415%]
-  Delta_R full staggered-PT  = -3.769%
+  I_v_scalar corrected       = 32.435000
+  5% systematic scalar band  = [30.813250, 34.056750]
+  P1 scalar diagnostic       = 31.2030%
+  P1 scalar 5% band          = [29.6428%, 32.7631%]
+  Delta_R full staggered-PT  = 51.129%
   [PASS] BZ cache records clean execution
-  [PASS] BZ cache records PASS=45 FAIL=0
-  [PASS] BZ cache gives I_v_scalar near 3.902
-  [PASS] 5% scalar systematic overlaps I_S = 4
-  [PASS] native P1 candidate equals framework-native arithmetic bridge
-  [PASS] native P1 systematic band recorded
-  [PASS] BZ cache gives negative Delta_R three-channel assembly
-  [PASS] note records native lower-end candidate
-  [PASS] note records native P1 central value
-  [PASS] note records native P1 systematic band
-  [PASS] note says native candidate removes bracket import for native path
+  [PASS] BZ cache records PASS=44 FAIL=0
+  [PASS] BZ cache gives corrected I_v_scalar near 32.435
+  [PASS] 5% scalar systematic is far outside supplied I_S bracket
+  [PASS] corrected scalar diagnostic maps to about 31.2%
+  [PASS] corrected scalar 5% band recorded arithmetically
+  [PASS] BZ cache gives positive Delta_R three-channel diagnostic
+  [PASS] BZ cache records old small residual invalidated
+  [PASS] note records corrected scalar diagnostic
+  [PASS] note records corrected P1 scalar diagnostic
+  [PASS] note says old native replacement candidate is invalidated
+  [PASS] note says corrected BZ row remains diagnostic only
 
 ========================================================================
 BLOCK 6: audit/status firewall
 ========================================================================
   [PASS] citation note says legacy bracket is not retained by default
   [PASS] citation note keeps master obstruction unchanged
-  [PASS] new bridge calls BZ surface a native candidate
+  [PASS] new bridge calls BZ surface a corrected diagnostic
   [PASS] new bridge requires separate BZ audit
   [PASS] new bridge does not treat literature bracket as native authority
-  [PASS] bridge keeps BZ candidate under separate audit
+  [PASS] bridge keeps corrected BZ diagnostic under separate audit
   [PASS] this runner does not edit audit ledger  (source/cache verifier only)
 
 ========================================================================
-SUMMARY: PASS=72  FAIL=0
+SUMMARY: PASS=74  FAIL=0
 ========================================================================
 
 RESULT:

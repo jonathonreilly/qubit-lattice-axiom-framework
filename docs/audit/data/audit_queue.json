@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 430,
     "high": 270,
-    "leaf": 779,
+    "leaf": 778,
     "medium": 531
   },
   "cycle_break_target_count": 10,
@@ -37429,30 +37429,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/RECORD_COMPARABILITY_IMPORT_DISCIPLINE_SUPPORT_FORK_EXHIBIT_AND_CONDITIONAL_ARROW_BOUNDED_NOTE_2026-07-07.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_occurrence_thinned_iid_frequency_bridge_2026-07-01",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -59631,6 +59607,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 231,
-  "total_pending": 2010
+  "ready_count": 230,
+  "total_pending": 2009
 }

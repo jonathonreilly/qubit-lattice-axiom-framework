@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 192 |
 | **retained_no_go** | 193 |
-| **retained_bounded** | 878 |
+| **retained_bounded** | 879 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1974 |
+| unaudited | 1973 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1253 |
+| `audited_clean` | 1254 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2319 |
+| `unaudited` | 2318 |
 
 | claim_type | count |
 |---|---:|
@@ -1046,6 +1046,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rd_fixedness_is_arrow_invariant_on_the_retained_flow_family_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14532,6 +14533,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The cited retained-bounded authorities supply the two maps, and independent algebra verifies that they are inverses on r >= 0, have the same finite and projective fixed points, and reverse stability at r=1/2. The result closes only for the retained family and stated fixedness/side-condition reading; it does not close the physical R-D bridge or coarse-graining selector.
 - **rationale:** The load-bearing mathematics is a direct algebraic closure over the supplied retained-bounded maps, not a numerical fit, definition substitution, or external comparator. Manual checking confirms g(phi(r))=r and phi(g(r))=r on r>=0, Fix(phi)=Fix(g)={0,1/2}, the common projective fixed point at s=0, and the multiplier reversal 2 versus 1/2. The note’s firewall language keeps the clean result bounded to fixedness on the retained family and does not promote R-D, the physical arrow, or the coarse-graining prong.
 - **auditor confidence:** high
+
+### `record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07`
+
+- **Note:** [`RECORD_COMPARABILITY_IMPORT_DISCIPLINE_SUPPORT_FORK_EXHIBIT_AND_CONDITIONAL_ARROW_BOUNDED_NOTE_2026-07-07.md`](../../docs/RECORD_COMPARABILITY_IMPORT_DISCIPLINE_SUPPORT_FORK_EXHIBIT_AND_CONDITIONAL_ARROW_BOUNDED_NOTE_2026-07-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional bounded Record-comparability result: treating co-realized alternative-family and formation-successor furniture as unregistered load-bearing structure under the Qualification, the same-site fork exhibit is barred; then overlap agreement and finite one-realized-configuration follow, while chain ordering requires a supplied acyclic nearest-neighbor dependency relation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-record-comparability-2026-07-07`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the Qualification's admission discipline, Model B's co-realized alternative-family furniture and formation-successor relation are unregistered load-bearing structure; without those imports, the same construction is one stock of formed records and violates per-site uniqueness.  _(class `A`)_
+- **chain closes:** True — minimal_axioms is an accepted axiom-premise node. The finite fork, collapsed-stock, finite-union, and dependency-chain checks close at the stated conditional scope; no formation rule, rate, metric, global order, or dynamics is claimed.
+- **rationale:** The note quotes the only direct authority, and the load-bearing import discipline is a correct application at the scoped bounded level: a same-site fork passes only by introducing a co-realized alternative family and a formation-successor relation, neither registered or named in the accepted axiom premise. Independently enumerating a two-site/two-possibility toy domain verifies that pairwise overlap agreement is equivalent to conflict-free finite union and that the collapsed fork violates per-site uniqueness; graph closure checks confirm A3 only after acyclicity is supplied. The N1-N8 gate is satisfied at the narrowed wall set: audit-owned countermodel-furniture judgment plus supplied acyclic relation; residual risk is only semantic over the countermodel-furniture judgment, so downstream use must keep the bounded conditions.
+- **auditor confidence:** medium
 
 ### `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11`
 

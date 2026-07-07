@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py
+runner_sha256: 4d7432857eb6fbbd3682b88bff1a4af3a353caf13f85cedf8482872900251340
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.27
+status: ok
+----- stdout -----
+CHECK 01: PASS -- live quote guard: record locks exactly one admissible local possibility
+CHECK 02: PASS -- live quote guard: readout value is determined by record content alone
+CHECK 03: PASS -- T1 channel family determinants match exact small-matrix formulas
+CHECK 04: PASS -- T1 off the K-real line, the family contains no conjugate coefficient
+CHECK 05: PASS -- T1 off the K-real line, every family determinant is harmonic in (Re b, Im b)
+CHECK 06: PASS -- T1 on c = conj(b), every family determinant has the expected nonzero mixed b-bbar term
+CHECK 07: PASS -- T1 c = conj(b) is the formal Hermitian/K-real section for the real channel family
+CHECK 08: PASS -- T1 negative control: conjugate contamination before K-reality gives off-line mixed curvature
+CHECK 09: PASS -- T2 orbit grading assigns one slot to one locked record-outcome
+CHECK 10: PASS -- T2 sector grading makes one locked complex outcome into two registered data
+CHECK 11: PASS -- T2 sector grading changes the slot count by the Re/Im split rather than record content alone
+CHECK 12: PASS -- T2 negative control: two registered data change the doublet weight by factor 2
+CHECK 13: PASS -- T2 factor-2 slot change reproduces r=1 versus r=1/2 exactly
+SUMMARY files written: docs/KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md; scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py
+SUMMARY sharpest remaining bridge sentence: one record locking one admissible local possibility is one statistical slot, and the relevant locked possibilities for the generation doublet are the K/CPT record-outcome orbits rather than the real components of the fluctuation coordinate.
+SUMMARY walls dodged: category-slip by counting record-outcomes only; measure-neutrality by not using J_cs as selector.
+SUMMARY uncertainty for supervisor: T2 remains a collision exhibit under the supplied one-record-one-slot reading.
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

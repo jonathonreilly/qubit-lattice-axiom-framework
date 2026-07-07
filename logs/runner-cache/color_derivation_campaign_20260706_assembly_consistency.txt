@@ -1,0 +1,13 @@
+[PASS] june5_residual_map_quotes_present
+[PASS] brief_premise_ledger_lists_all_eight :: eight named premises
+[PASS] brief_verdict_states_not_derived_and_count_zero
+[SKIP] block01_note_pending_landing :: COLOR_COMP_HURWITZ_CLAUSE_SCOPE_REDUCTION_NARROW_THEOREM_NOTE_2026-07-06.md
+[SKIP] block02_note_pending_landing :: COLOR_ARENA_BONDED_PAIR_ADMISSIBILITY_CROSS_SITE_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-06.md
+[SKIP] block03_note_pending_landing :: COLOR_SINGLET_RECORDS_G2_FACTORIZATION_SITE_LOCAL_LOCKING_BOUNDED_THEOREM_NOTE_2026-07-06.md
+[SKIP] block04_note_pending_landing :: GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md
+[SKIP] block05_note_pending_landing :: COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md
+[SKIP] block06_note_pending_landing :: COLOR_ORIENTATION_THREE_VS_THREEBAR_SUCCESSION_CANDIDATE_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md
+[PASS] ast_self_scan_no_writes_no_network
+MODE: pre-landing -- THIS RUN IS NOT A LANDING VALIDATION; skips mark pending sibling landings
+DECLARATION meta adjudication brief consistency only; no audit verdicts applied
+TOTAL: 4 PASS / 0 FAIL / 6 SKIP

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 22 |
-| unaudited | 1983 |
+| unaudited | 1982 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 21 |
+| ~~audited_conditional~~ | 22 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1253 |
-| `audited_conditional` | 21 |
+| `audited_conditional` | 22 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2328 |
+| `unaudited` | 2327 |
 
 | claim_type | count |
 |---|---:|
@@ -1404,6 +1404,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5565,6 +5566,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Since H_oo - E I = (mu - E)I, the Schur complement gives mu' = mu - 2t^2/(mu - E) and t' = t^2/(mu - E), hence mu' - E = (mu - E)(1 - 2h^2) and h' = h^2/(1 - 2h^2).  _(class `A`)_
 - **chain closes:** True — The independent Schur-complement calculation gives the stated diagonal and nearest-neighbor effective parameters with the correct signs and factors. The singular gate mu = E and the displayed-map pole at h^2 = 1/2 are excluded by the stated domain/chart.
 - **rationale:** The load-bearing step is a direct algebraic closure, not a definition, renaming, tuned numerical match, or external comparator. The runner source genuinely constructs finite-ring Hamiltonians, performs the Schur complement, and checks the formula, singular gate, threshold covariance, length diagnostic, sign quotient, and chart boundary without importing a contested premise. No cited authority or open bridge is needed for this bounded free-chain statement.
+- **auditor confidence:** high
+
+### `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07`
+
+- **Note:** [`EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md`](../../docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Only the conditional algebra inside a supplied continuous local energy/action context, supplied rest-gap readout, and supplied shared source coefficient was audited; no Record-only mass derivation or WEP closure was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-ep_record_stiffness_conditional_-06`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under supplied continuous-context assumptions, the same supplied stiffness m appears in the inertial rest gap and in the normalized recorded-energy source integral, giving m_grav/m_inert = 1 with no sigma dependence.  _(class `A`)_
+- **chain closes:** False — The algebra closes after the continuous context and shared coefficient are supplied. The framework-native chain does not close because the continuous local energy/action functional, inertial rest-gap readout, and EP-S3b shared gravitational source coefficient are not derived in the restricted packet.
+- **rationale:** The runner performs symbolic algebra over explicitly supplied inputs and verifies the note preserves its open-gate boundary. The co-cycle citation docs/EP_RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md was treated as informational and non-load-bearing, but removing it does not supply the missing dynamics/source theorem. The ratio-one result still depends on importing the same m into both inertial and gravitational-source slots.
+- **open / conditional deps cited:**
+  - `EQUIVALENCE_PRINCIPLE_NOTE.md`
 - **auditor confidence:** high
 
 ### `ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16`

@@ -229,10 +229,10 @@
       "max_transitive_descendants": 1,
       "nodes": [
         {
-          "audit_status": "unaudited",
+          "audit_status": "audited_conditional",
           "claim_id": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
           "claim_type": "open_gate",
-          "effective_status": "unaudited",
+          "effective_status": "audited_conditional",
           "note_path": "docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md",
           "title": "EP Record-Stiffness Conditional Shared-Coupling Template",
           "transitive_descendants": 1

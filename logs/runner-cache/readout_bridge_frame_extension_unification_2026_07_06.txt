@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/readout_bridge_frame_extension_unification_2026_07_06.py
+runner_sha256: 7df35b834f73f998895a961ee0387333cf0ee9b1ddcb4dc926075b288bd3f35b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+[PASS] source quote audit -- files=4 needles=8
+[PASS] T1 partial-trace restriction -- basis_pairs=128 over_Q both_factors
+[PASS] T1 registered-factor bookkeeping -- typed_subalgebra_closure_products=16
+[PASS] T2 M2 frame additivity and no-density obstruction -- antipodal_pairs=6 rankA=3 rankAug=4
+[PASS] AST self-scan -- ast_calls=134 read_only
+[PASS] declaration inputs -- Gleason_external_not_reproved Born_not_derived
+DECLARATION FRAME-EXT=conditional_premise gap=FINITE-ADDITIVITY-TO-FRAME composite_REP_requires_external_Gleason
+TOTAL PASS=6 FAIL=0
+
+----- stderr -----
+

@@ -43,7 +43,7 @@ Answer:
 
 Boundary:
   This is still a tested-edge obstruction candidate, not interval-certified
-  exact-carrier closure.
+  exact-carrier certificate.
 """
 
 from __future__ import annotations
@@ -297,8 +297,8 @@ def part4_the_note_records_the_transport_lane_obstruction_honestly() -> None:
         "0.847299300834" in note and "0.293939334980" in note and "0.057100889715" in note,
     )
     check(
-        "The note keeps the boundary honest: this is still not exact-carrier closure",
-        "not interval-certified" in note and "not flagship closure" in note,
+        "The note keeps the boundary honest: this is still not an exact-carrier certificate",
+        "not an interval-certified" in note and "not a flagship result" in note,
     )
 
 

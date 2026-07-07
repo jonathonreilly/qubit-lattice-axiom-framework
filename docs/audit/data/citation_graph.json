@@ -47406,15 +47406,15 @@
     },
     {
       "from": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
+      "to": "yt_ward_identity_derivation_theorem"
+    },
+    {
+      "from": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
       "to": "unit_singlet_overlap_narrow_theorem_note_2026-05-02"
     },
     {
       "from": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
       "to": "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
-    },
-    {
-      "from": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
-      "to": "yt_ew_color_projection_theorem"
     },
     {
       "from": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
@@ -111823,7 +111823,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1ef910aeead3eb6d5e5ad8778b88675416018ba354794589557e32b494911b4d",
+      "note_hash": "8addfa13381340585353607e4262831f648a276dead2f7b9bd508c6906dbb765",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -127328,20 +127328,20 @@
     },
     "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10": {
       "claim_id": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
-      "claim_type_author_hint": "open_gate",
-      "claim_type_author_hint_raw": "open_gate",
-      "claim_type_seed_hint": "open_gate",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "yt_ward_identity_derivation_theorem",
         "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
         "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
-        "yt_ew_color_projection_theorem",
         "native_gauge_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6c9a3e7331a444404814e112721d76c0e33009c0d244860eb6ae46c920777875",
+      "note_hash": "e666bb1022cf47599bb773acc3b32d1e34c2a0e77bcc9717717f55693a7c138d",
       "path": "docs/YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/yt_ward_step3_same_1pi_construction_2026_05_10.py",
-      "title": "YT_WARD Step 3 Same-1PI Construction Gate Diagnostic"
+      "title": "YT_WARD Step 3 Same-1PI Conditional Coefficient Theorem"
     },
     "yt_ward_tadpole_cancellation_premise_derivation_narrow_theorem_note_2026-06-06": {
       "claim_id": "yt_ward_tadpole_cancellation_premise_derivation_narrow_theorem_note_2026-06-06",
@@ -128637,21 +128637,21 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1606,
+      "bounded_theorem": 1607,
       "decoration": 3,
       "meta": 326,
       "no_go": 333,
       "none": 1212,
-      "open_gate": 132,
+      "open_gate": 131,
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2010,
+      "bounded_theorem": 2011,
       "decoration": 3,
       "meta": 326,
       "no_go": 436,
       "none": 248,
-      "open_gate": 206,
+      "open_gate": 205,
       "positive_theorem": 657
     },
     "edge_count": 14550,

@@ -22,12 +22,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 193 |
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 7 |
-| open_gate | 22 |
+| open_gate | 21 |
 | unaudited | 1980 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 23 |
+| ~~audited_conditional~~ | 24 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1256 |
-| `audited_conditional` | 23 |
+| `audited_clean` | 1255 |
+| `audited_conditional` | 24 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
@@ -69,11 +69,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2038 |
+| `bounded_theorem` | 2039 |
 | `decoration` | 50 |
 | `meta` | 351 |
 | `no_go` | 482 |
-| `open_gate` | 184 |
+| `open_gate` | 183 |
 | `positive_theorem` | 610 |
 
 | criticality | count |
@@ -90,8 +90,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 - runners classified: 3375
 - runners with (C) first-principles compute hits: 1779
-- runners with (D) external comparator hits: 1080
-- decoration candidates (no C, no D): 710
+- runners with (D) external comparator hits: 1081
+- decoration candidates (no C, no D): 709
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -99,22 +99,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1931 | 217.42 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1185 | 67.21 | `audited_clean` | **retained** |
+| 1 | `minimal_axioms` | meta | critical | 1932 | 217.42 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1187 | 67.21 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 65.64 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1577 | 65.62 | `audited_clean` | **retained** |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1018 | 64.49 | `unaudited` | unaudited |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1148 | 53.17 | `audited_clean` | **retained_bounded** |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1048 | 48.03 | `unaudited` | meta |
 | 8 | `key_terminology` | meta | critical | 1162 | 46.68 | `unaudited` | meta |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 919 | 43.84 | `unaudited` | unaudited |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 922 | 44.35 | `unaudited` | unaudited |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1289 | 43.33 | `unaudited` | unaudited |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1026 | 42.00 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1536 | 41.59 | `audited_clean` | **retained** |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1021 | 39.50 | `audited_clean` | **retained_bounded** |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1023 | 39.50 | `audited_clean` | **retained_bounded** |
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 319 | 39.32 | `unaudited` | unaudited |
-| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 866 | 38.26 | `audited_clean` | **retained_no_go** |
-| 16 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 312 | 37.79 | `unaudited` | unaudited |
+| 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 312 | 37.79 | `unaudited` | unaudited |
+| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 863 | 37.76 | `audited_clean` | **retained_no_go** |
 | 17 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 575 | 36.67 | `unaudited` | unaudited |
 | 18 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 537 | 36.57 | `unaudited` | unaudited |
 | 19 | `kinetic_isotropy_primitive` | meta | critical | 461 | 36.35 | `unaudited` | meta |
@@ -1397,7 +1397,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1410,6 +1409,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -7632,6 +7632,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The primary runner exhaustively evaluates the stated 6 x 6 x 5 x 8 = 1440 sampled grid and finds a strictly positive minimum scaled-fit gap of 7.791551e-03 at the reported grid point.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the stated grids, computes the witness vector and optimal scalar gap at each sampled point, and the cached output matches the note's minimum and argmin. The conclusion is restricted to the finite grid; no continuous-box exclusion is used or audited.
 - **rationale:** The load-bearing result is a first-principles finite computation over the explicit sampled grid, not a definition, renaming, or external comparator match. The primary runner does not merely print the contested minimum: it sweeps all 1440 grid points and computes the gap through the supplied helper chain. Hard-coded reference values in the runner are used only for sanity checks and are not load-bearing for the sampled minimum. The no-go is clean only at the finite-grid resolution explicitly stated in the repaired note; off-grid continuous minimizers and other parameterizations remain outside scope.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_FULL_PACKET_NO_GO_THEOREM_NOTE_2026-04-20.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_FULL_PACKET_NO_GO_THEOREM_NOTE_2026-04-20.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the linear-algebra no-go that the supplied full sparse-face target 3x3 Hermitian block cannot be a 3d compression of the selected retained 4x4 Wilson block because its eigenvalues violate Cauchy interlacing.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-gauge_vacuum_plaquette_first_sec-14`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The full sparse-face target Hermitian block violates compression interlacing against the selected retained 4x4 Wilson block, so no real or complex 3d compression of that retained ambient can reproduce the full target packet exactly.  _(class `A`)_
+- **chain closes:** True — Conditioned on the supplied retained Wilson block and sparse-face target block, the interlacing obstruction is a standard algebraic closure and the runner verifies the needed eigenvalue inequalities. Retained-grade dependency closure is not established because the cited reduced-packet selector authority is marked unaudited.
+- **rationale:** The no-go step itself is an algebraic Cauchy-interlacing check over the supplied matrices, and the primary runner computes the relevant spectra rather than merely printing constants. However, the source cites the reduced-packet complex-Givens selector theorem with effective_status unaudited, which triggers the rubric's dependency-not-retained downgrade. The additional no-go-discipline gate also blocks clean wall status as presented because the packet supplies one decisive interlacing route, not five distinct attack routes against the negative claim.
+- **open / conditional deps cited:**
+  - `GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_REDUCED_PACKET_COMPLEX_GIVENS_SELECTOR_THEOREM_NOTE_2026-04-20.md`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20`
@@ -19574,19 +19589,6 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** medium
-
-### `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10`
-
-- **Note:** [`YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** Coefficient-bookkeeping diagnostic showing that the retained Rep A and Rep B scalar-singlet coefficients reduce to the gate equation, with the same-1PI bridge explicitly left open.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** open_gate  (reason: `audited_open_gate`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The residual C_A - C_B = (N_iso * c_S * g_bare^2 - 2) / (2 N_c N_iso), so C_A = C_B iff c_S * g_bare^2 = 2 / N_iso.  _(class `A`)_
-- **chain closes:** True — For the scoped open-gate diagnostic, the algebra from the stated coefficients to the residual and canonical g_bare^2 = 1 surface closes. The Wick-level proof that Rep A and Rep B are the same amputated 1PI Green's function is correctly identified as missing and is not claimed.
-- **rationale:** The load-bearing step is an exact symbolic simplification over the stated coefficient inputs, not a numerical fit or comparator check. The runner verifies the residual, canonical reduction, off-surface counterexample, SU(3) Fierz identity, and H_unit normalization, while not asserting the contested same-1PI equality. Because the note is scoped as an open-gate diagnostic and forbids downstream promotion to a same-1PI or top-Yukawa theorem, the audited conclusion follows within its boundary.
-- **auditor confidence:** high
 
 ### `yt_zero_import_chain_note`
 

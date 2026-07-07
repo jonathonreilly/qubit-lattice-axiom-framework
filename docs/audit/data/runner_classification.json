@@ -432,6 +432,18 @@
       "dominant_class": "A",
       "runner": "scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py"
     },
+    "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 20,
+        "B": 10,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py"
+    },
     "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04": {
       "assert_count": 1,
       "counts": {
@@ -576,6 +588,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py"
     },
+    "acphilambda_r_eta_record_formation_non_supply_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 7,
+        "B": 9,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/acphilambda_r_eta_record_formation_non_supply_no_go_2026_07_04.py"
+    },
     "acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05": {
       "assert_count": 1,
       "counts": {
@@ -611,6 +635,18 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py"
+    },
+    "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 5,
+        "B": 9,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py"
     },
     "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01": {
       "assert_count": 2,
@@ -1877,7 +1913,7 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 18,
+        "C": 21,
         "D": 0
       },
       "decoration_candidate": false,
@@ -5028,6 +5064,42 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_coarse_grained_exterior_law.py"
     },
+    "color_arena_bonded_pair_admissibility_cross_site_surface_bounded_theorem_note_2026-07-06": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 11,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/color_arena_bonded_pair_admissibility_cross_site_2026_07_06.py"
+    },
+    "color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/color_comp_hurwitz_clause_scope_reduction_2026_07_06.py"
+    },
+    "color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/color_composition_rule_matter_bilinear_polar_transport_2026_07_06.py"
+    },
     "color_depolarization_adm2_gating_admissions_collapse_to_two_narrow_theorem_note_2026-06-09": {
       "assert_count": 1,
       "counts": {
@@ -5051,6 +5123,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_color_depolarization_single_frame_dephasing_and_multiframe_exhibit_2026_06_09.py"
+    },
+    "color_derivation_campaign_20260706_assembly_and_honest_rebounding_meta_note_2026-07-06": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 5,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/color_derivation_campaign_20260706_assembly_consistency.py"
     },
     "color_einselection_matter_unitary_primitivity_requires_background_connection_narrow_theorem_note_2026-06-09": {
       "assert_count": 1,
@@ -5160,6 +5244,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_color_orientation_predictive_equivalence_2026_06_09.py"
     },
+    "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/color_orientation_three_vs_threebar_succession_candidate_2026_07_06.py"
+    },
     "color_purity_does_not_reduce_to_past_hypothesis_slot_narrow_theorem_note_2026-06-09": {
       "assert_count": 1,
       "counts": {
@@ -5171,6 +5267,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_color_purity_non_reduction_past_hypothesis_2026_06_09.py"
+    },
+    "color_singlet_records_g2_factorization_site_local_locking_bounded_theorem_note_2026-07-06": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/color_singlet_records_g2_factorization_site_local_locking_2026_07_06.py"
     },
     "color_su3_matter_realization_residual_map_2026-06-05": {
       "assert_count": 1,
@@ -13379,6 +13487,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/gauge_factor_local_selector_normalizer_2026_06_18.py"
+    },
+    "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/gauge_factor_preservation_record_typed_selector_2026_07_06.py"
     },
     "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16": {
       "assert_count": 1,
@@ -28116,6 +28236,18 @@
       "dominant_class": "D",
       "runner": "scripts/cl3_primitive_p_lh_ncg_native_2026_05_10_pPlh_ncg_native.py"
     },
+    "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py"
+    },
     "primordial_spectrum_note": {
       "assert_count": 0,
       "counts": {
@@ -30431,6 +30563,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py"
+    },
+    "real_record_no_i_unification_proposal_narrow_theorem_note_2026-06-04": {
+      "assert_count": 0,
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/audit_companion_real_record_no_i_unification_2026_06_04.py"
     },
     "realization_row_sigma_reconciliation_bounded_theorem_note_2026-06-11": {
       "assert_count": 1,
@@ -36696,6 +36840,30 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_theta_emergent_q_cp_rg_stability_2026_06_13.py"
     },
+    "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py"
+    },
+    "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 2,
+        "B": 3,
+        "C": 22,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py"
+    },
     "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04": {
       "assert_count": 1,
       "counts": {
@@ -36707,6 +36875,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_theta_gauge_native_positive_class_emergent_sector_weighting_2026_07_04.py"
+    },
+    "theta_gauge_positive_route_stretch_status_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 4,
+        "B": 3,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/theta_gauge_positive_route_stretch_status_2026_07_04.py"
     },
     "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11": {
       "assert_count": 2,
@@ -36720,6 +36900,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_theta_gauge_substrate_winding_vacuity_2026_06_11.py"
     },
+    "theta_gauge_winding_axiom_update_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 4,
+        "B": 1,
+        "C": 29,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py"
+    },
     "theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02": {
       "assert_count": 2,
       "counts": {
@@ -36731,6 +36923,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/theta_link_star_frame_correlation_gluing_2026_07_02.py"
+    },
+    "theta_mass_determinant_axiom_update_no_go_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/theta_mass_determinant_axiom_update_no_go_2026_07_04.py"
     },
     "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01": {
       "assert_count": 1,
@@ -42019,6 +42223,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 20,
+        "B": 10,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py": {
       "assert_count": 1,
       "claims": [
@@ -42169,6 +42388,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/acphilambda_r_eta_record_formation_non_supply_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "acphilambda_r_eta_record_formation_non_supply_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 9,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py": {
       "assert_count": 1,
       "claims": [
@@ -42182,6 +42416,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 5,
+        "B": 9,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py": {
@@ -44722,6 +44971,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/audit_companion_real_record_no_i_unification_2026_06_04.py": {
+      "assert_count": 0,
+      "claims": [
+        "real_record_no_i_unification_proposal_narrow_theorem_note_2026-06-04"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/audit_companion_redundancy_not_forced_pnd_locality_2026_06_07.py": {
       "assert_count": 1,
       "claims": [
@@ -45855,7 +46119,7 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 18,
+        "C": 21,
         "D": 0
       },
       "decoration_candidate": false,
@@ -48642,6 +48906,66 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/color_arena_bonded_pair_admissibility_cross_site_2026_07_06.py": {
+      "assert_count": 0,
+      "claims": [
+        "color_arena_bonded_pair_admissibility_cross_site_surface_bounded_theorem_note_2026-07-06"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 11,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/color_comp_hurwitz_clause_scope_reduction_2026_07_06.py": {
+      "assert_count": 0,
+      "claims": [
+        "color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/color_composition_rule_matter_bilinear_polar_transport_2026_07_06.py": {
+      "assert_count": 1,
+      "claims": [
+        "color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/color_derivation_campaign_20260706_assembly_consistency.py": {
+      "assert_count": 0,
+      "claims": [
+        "color_derivation_campaign_20260706_assembly_and_honest_rebounding_meta_note_2026-07-06"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 5,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/color_generation_z3_identification_no_go_2026_06_05.py": {
       "assert_count": 7,
       "claims": [
@@ -48655,6 +48979,36 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/color_orientation_three_vs_threebar_succession_candidate_2026_07_06.py": {
+      "assert_count": 2,
+      "claims": [
+        "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/color_singlet_records_g2_factorization_site_local_locking_2026_07_06.py": {
+      "assert_count": 1,
+      "claims": [
+        "color_singlet_records_g2_factorization_site_local_locking_bounded_theorem_note_2026-07-06"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/complex_action_grown_companion.py": {
@@ -81957,6 +82311,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/gauge_factor_preservation_record_typed_selector_2026_07_06.py": {
+      "assert_count": 1,
+      "claims": [
+        "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 4,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/gauge_gauging_selection_conjugation_independence_2026_06_16.py": {
       "assert_count": 1,
       "claims": [
@@ -87239,6 +87608,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py": {
+      "assert_count": 1,
+      "claims": [
+        "primitive_retirement_review_after_four_axiom_reset_note_2026-07-05"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/probe_bz_corner_decomposition.py": {
       "assert_count": 1,
       "claims": [
@@ -89897,6 +90281,66 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_g1_defect_closure_current_surface_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_g3_phase_insertion_current_surface_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 2,
+        "B": 3,
+        "C": 22,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/theta_gauge_positive_route_stretch_status_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_gauge_positive_route_stretch_status_2026-07-04"
+      ],
+      "counts": {
+        "A": 4,
+        "B": 3,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_gauge_winding_axiom_update_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 4,
+        "B": 1,
+        "C": 29,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/theta_link_star_frame_correlation_gluing_2026_07_02.py": {
       "assert_count": 2,
       "claims": [
@@ -89910,6 +90354,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/theta_mass_determinant_axiom_update_no_go_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "theta_mass_determinant_axiom_update_no_go_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/theta_mass_orientation_zero_branch_pairing_forced_2026_07_01.py": {
@@ -91139,16 +91598,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 696,
+    "decoration_candidates": 700,
     "dominant_class_distribution": {
-      "A": 499,
-      "B": 637,
-      "C": 1275,
-      "D": 451,
+      "A": 502,
+      "B": 645,
+      "C": 1280,
+      "D": 452,
       "none": 457
     },
-    "runners_classified": 3319,
-    "runners_with_C": 1740,
-    "runners_with_D": 1068
+    "runners_classified": 3336,
+    "runners_with_C": 1753,
+    "runners_with_D": 1069
   }
 }

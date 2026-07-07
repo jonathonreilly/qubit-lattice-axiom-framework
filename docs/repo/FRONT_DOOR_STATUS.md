@@ -28,7 +28,7 @@ Owner-approval history for every axiom/primitive/governance change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3712 |
+| Ledger rows | 3713 |
 | Applied audit verdicts | 1370 |
 | Retained-grade rows, including boxed decorations | 1310 |
 | Retained positive theorems | 192 |
@@ -36,7 +36,7 @@ Owner-approval history for every axiom/primitive/governance change:
 | Retained bounded rows | 880 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 22 |
-| Unaudited rows | 1983 |
+| Unaudited rows | 1984 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 20 |
 | Audited renaming rows | 19 |
@@ -50,12 +50,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2017 |
+| Total pending rows | 2018 |
 | Ready rows | 236 |
 | Cycle-break targets | 10 |
 | Critical pending | 429 |
 | High pending | 272 |
-| Medium pending | 536 |
+| Medium pending | 537 |
 | Leaf pending | 780 |
 
 Next ready rows by queue order:
@@ -93,19 +93,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3883 |
+| Citation-graph nodes | 3884 |
 | Critical nodes | 695 |
 | High nodes | 448 |
-| Medium nodes | 999 |
+| Medium nodes | 1000 |
 | Leaf nodes | 1741 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1928 descendants; score 215.914
-- `three_generation_observable_theorem_note` - critical; 1184 descendants; score 67.211
+- `minimal_axioms` - critical; 1929 descendants; score 216.414
+- `three_generation_observable_theorem_note` - critical; 1185 descendants; score 67.212
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 65.644
-- `graph_first_su3_integration_note` - critical; 1576 descendants; score 65.623
+- `graph_first_su3_integration_note` - critical; 1577 descendants; score 65.624
 - `observable_principle_from_axiom_note` - critical; 1018 descendants; score 64.493
-- `plaquette_self_consistency_note` - critical; 1147 descendants; score 53.165
+- `plaquette_self_consistency_note` - critical; 1148 descendants; score 53.166
 - `minimal_axioms_2026-05-03` - critical; 1048 descendants; score 48.035
-- `key_terminology` - critical; 1161 descendants; score 46.682
+- `key_terminology` - critical; 1162 descendants; score 46.684

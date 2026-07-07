@@ -27097,6 +27097,26 @@
       "to": "color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06"
     },
     {
+      "from": "matter_realization_ks_hop_bridge_edge_diag_membership_bounded_theorem_note_2026-07-06",
+      "to": "matter_realization_arena_split_preservation_under_axis_coupled_frames_bounded_theorem_note_2026-07-06"
+    },
+    {
+      "from": "matter_realization_ks_hop_bridge_edge_diag_membership_bounded_theorem_note_2026-07-06",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "matter_realization_ks_hop_bridge_edge_diag_membership_bounded_theorem_note_2026-07-06",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "matter_realization_ks_hop_bridge_edge_diag_membership_bounded_theorem_note_2026-07-06",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "matter_realization_ks_hop_bridge_edge_diag_membership_bounded_theorem_note_2026-07-06",
+      "to": "color_arena_bonded_pair_admissibility_cross_site_surface_bounded_theorem_note_2026-07-06"
+    },
+    {
       "from": "matter_self_focusing_note",
       "to": "matter_inertial_closure_note"
     },
@@ -95052,6 +95072,24 @@
       "runner_path": "scripts/matter_realization_arena_split_preservation_axis_frames_2026_07_06.py",
       "title": "Matter Realization Arena Split Preservation Under Axis-Coupled Frames"
     },
+    "matter_realization_ks_hop_bridge_edge_diag_membership_bounded_theorem_note_2026-07-06": {
+      "claim_id": "matter_realization_ks_hop_bridge_edge_diag_membership_bounded_theorem_note_2026-07-06",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "matter_realization_arena_split_preservation_under_axis_coupled_frames_bounded_theorem_note_2026-07-06",
+        "minimal_axioms",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "color_arena_bonded_pair_admissibility_cross_site_surface_bounded_theorem_note_2026-07-06"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "69f8e4cffd4570d470eb34bdc9780b2eddff69463b242e8f9c7b6da83d378d47",
+      "path": "docs/MATTER_REALIZATION_KS_HOP_BRIDGE_EDGE_DIAG_MEMBERSHIP_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+      "runner_path": "scripts/matter_realization_ks_hop_bridge_edge_diag_membership_2026_07_06.py",
+      "title": "Matter Realization KS Hop Bridge EDGE-DIAG Membership"
+    },
     "matter_self_focusing_note": {
       "claim_id": "matter_self_focusing_note",
       "claim_type_author_hint": null,
@@ -111724,7 +111762,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ffecd8cd2e623383da53db15c634afdee214978a39d6e975ddbd809d8ce0191f",
+      "note_hash": "25d9e2e8ca29faae006a9ebf0ca398c20d22edbba81e29558b5cb9c7121179d1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -128538,7 +128576,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1603,
+      "bounded_theorem": 1604,
       "decoration": 3,
       "meta": 326,
       "no_go": 333,
@@ -128547,7 +128585,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2007,
+      "bounded_theorem": 2008,
       "decoration": 3,
       "meta": 326,
       "no_go": 436,
@@ -128555,10 +128593,10 @@
       "open_gate": 206,
       "positive_theorem": 657
     },
-    "edge_count": 14538,
+    "edge_count": 14543,
     "leaf_count": 1308,
-    "node_count": 3883,
+    "node_count": 3884,
     "root_count": 1105,
-    "runners_with_path": 3505
+    "runners_with_path": 3506
   }
 }

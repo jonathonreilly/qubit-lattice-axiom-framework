@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 22 |
-| unaudited | 1983 |
+| unaudited | 1984 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 19 |
@@ -65,11 +65,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2328 |
+| `unaudited` | 2329 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2035 |
+| `bounded_theorem` | 2036 |
 | `decoration` | 50 |
 | `meta` | 351 |
 | `no_go` | 482 |
@@ -80,7 +80,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 687 |
 | `high` | 445 |
-| `medium` | 952 |
+| `medium` | 953 |
 | `leaf` | 1628 |
 
 - **Retained pending chain closure:** 4
@@ -88,10 +88,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3372
+- runners classified: 3373
 - runners with (C) first-principles compute hits: 1779
 - runners with (D) external comparator hits: 1080
-- decoration candidates (no C, no D): 707
+- decoration candidates (no C, no D): 708
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -99,29 +99,29 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1928 | 215.91 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1184 | 67.21 | `audited_clean` | **retained** |
+| 1 | `minimal_axioms` | meta | critical | 1929 | 216.41 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1185 | 67.21 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 65.64 | `audited_clean` | **retained** |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1576 | 65.62 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1577 | 65.62 | `audited_clean` | **retained** |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1018 | 64.49 | `unaudited` | unaudited |
-| 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1147 | 53.16 | `audited_clean` | **retained_bounded** |
+| 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1148 | 53.17 | `audited_clean` | **retained_bounded** |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1048 | 48.03 | `unaudited` | meta |
-| 8 | `key_terminology` | meta | critical | 1161 | 46.68 | `unaudited` | meta |
+| 8 | `key_terminology` | meta | critical | 1162 | 46.68 | `unaudited` | meta |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 919 | 43.84 | `unaudited` | unaudited |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1289 | 43.33 | `unaudited` | unaudited |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1026 | 42.00 | `unaudited` | unaudited |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1535 | 41.59 | `audited_clean` | **retained** |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1536 | 41.59 | `audited_clean` | **retained** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1021 | 39.50 | `audited_clean` | **retained_bounded** |
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 319 | 39.32 | `unaudited` | unaudited |
-| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 865 | 38.26 | `audited_clean` | **retained_no_go** |
+| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 866 | 38.26 | `audited_clean` | **retained_no_go** |
 | 16 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 312 | 37.79 | `unaudited` | unaudited |
 | 17 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 575 | 36.67 | `unaudited` | unaudited |
-| 18 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 536 | 36.57 | `unaudited` | unaudited |
+| 18 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 537 | 36.57 | `unaudited` | unaudited |
 | 19 | `kinetic_isotropy_primitive` | meta | critical | 461 | 36.35 | `unaudited` | meta |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 842 | 36.22 | `unaudited` | unaudited |
-| 21 | `cpt_exact_note` | positive_theorem | critical | 726 | 36.01 | `audited_clean` | **retained** |
+| 21 | `cpt_exact_note` | positive_theorem | critical | 727 | 36.01 | `audited_clean` | **retained** |
 | 22 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
-| 23 | `three_generation_structure_note` | bounded_theorem | critical | 1018 | 35.49 | `audited_clean` | **retained_bounded** |
+| 23 | `three_generation_structure_note` | bounded_theorem | critical | 1019 | 35.49 | `audited_clean` | **retained_bounded** |
 | 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 839 | 34.71 | `unaudited` | unaudited |
 | 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 354 | 33.97 | `unaudited` | unaudited |
 
@@ -1400,7 +1400,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `bridge_gap_hk_cube_perron_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2789,22 +2789,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner source performs an actual finite-dimensional commutator/nullspace computation and reconstructs the resulting basis as Brannen circulants, rather than merely printing expected constants. An independent algebraic check gives the same result from the centralizer of the cyclic shift and the Hermiticity condition, and the pointer non-demolition statement follows because S is a polynomial in C. The result uses only supplied C3 action, locality/displacement structure, Hermiticity, and supplied pointer data; it does not claim to select the action, pointer, r, delta, or any coupling value.
 - **auditor confidence:** high
 
-### `bridge_gap_hk_cube_perron_note_2026-05-06`
+### `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06`
 
-- **Note:** [`BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md`](../../docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Fixed L_s=2 heat-kernel cube Perron computation at t=1 using the stated candidate-rho ansatz and finite NMAX convergence, not a thermodynamic-limit or action-uniqueness claim.
+- **Note:** [`BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md`](../../docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the scoped current-stack action-form non-uniqueness claim for the Wilson, heat-kernel, and Manton candidate surface, with Wilson/HK finite-beta single-plaquette separation as the witness.
 - **audit_status:** ~~audited_conditional~~
 - **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-bridge_gap_hk_cube_perron_note_2-03`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Substituting heat-kernel character coefficients into the L_s=2 candidate-rho Perron transfer operator gives P_cube_HK(L_s=2,t=1)=0.5223243151, stable across NMAX.  _(class `C`)_
-- **chain closes:** False — The runner genuinely computes the stated finite Perron value from the provided formulas, but the candidate-rho/Perron machinery and Casimir/time/action premises are imported from cited authorities that are not retained-grade in this packet. The co-cycle citation bridge_gap_hk_thermodynamic_stretch_note_2026-05-06 is treated as informational and not used as chain support.
-- **rationale:** The primary runner source is substantive: it defines SU(3) dimensions, Casimirs, HK coefficients, candidate rho, the recurrence operator, local HK factor, and symmetric Perron solve, and its cached output matches the note's numerical claim. However, the load-bearing candidate-rho/Perron ansatz is inherited from docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md and the Casimir/HK premises are cited through unaudited authorities, so the chain is conditional under the rubric. The co-cycle link docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md is non-load-bearing/informational for this re-audit, but source-graph repair is still needed to strip or rewrite those markdown links before effective_status can leave retained_pending_chain.
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-bridge_gap_action_form_uniquenes-04`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Wilson and heat-kernel are jointly compatible with the current support and leading continuum matching yet give distinct finite-beta one-plaquette values, so no current premise uniquely selects the action form.  _(class `B`)_
+- **chain closes:** False — The no-go logic would close conditionally if the upstream Wilson/HK finite-beta inputs and candidate-compatibility premises were retained-grade. In this restricted packet, the Wilson PF certificate is absent/hard-coded and the G_BARE, HK time, and HK plaquette authorities are explicitly unaudited.
+- **rationale:** The note has the right narrowed no-go shape: it enumerates multiple attack routes, collapses the wall to the missing action-selection or realized-dynamics criterion, and treats HK diffusion uniqueness as a conditional counterroute rather than a closure. The load-bearing finite-beta separation is still cross-note/constant-based: the runner hard-codes the Wilson value and only recomputes exp(-2/3), while key upstream authorities are unaudited and the Wilson PF certificate is not included. The co-cycle HK thermodynamic and HK cube citations are non-load-bearing informational links under the re-audit instruction; source-graph repair is still needed to strip or rewrite those links before effective status can advance.
 - **open / conditional deps cited:**
-  - `SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md`
+  - `G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`
+  - `BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md`
   - `BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md`
-  - `BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md`
-  - `SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`
+  - `PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`
 - **auditor confidence:** high
 
 ### `broad_gravity_derivation_note`

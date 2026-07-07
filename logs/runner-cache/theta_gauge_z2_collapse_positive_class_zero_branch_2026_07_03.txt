@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/theta_gauge_z2_collapse_positive_class_zero_branch_2026_07_03.py
+runner_sha256: 88384c0f620f9928535407ddd719f596b8addbd9f510bc11ae2944bbbe817689
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+PASS: A1 Z2 character collapse with odd support :: z^Q = z^{-Q} for all Q with 1 in the support iff z^2 = 1; scan_count=2
+PASS: A2 evenness alone is not multiplicative character input :: w(2)=0.825335614910, w(1)w(1)=0.912667807455
+PASS: A3 odd support is load-bearing :: even-support fixed count=4, odd-support fixed count=2
+PASS: A4a swap-closed evenness re-earned :: max alpha-odd paired residual=0.000e+00
+PASS: A4b pi branch is orientation-blind :: e.b flips under frame swap while (-1)^Q is unchanged on 100 draws
+PASS: B1 closed-surface positive matched labels A=4 (full tuple enumeration) :: 9^4 tuples filtered by matching; max |direct-product|=0.000e+00, min Z=1.870e-10
+PASS: B1 closed-surface positive matched labels A=16 (multiplicative scaling) :: Z_n(16) = Z_n(4)^4 cross-path; max diff=2.585e-26
+PASS: B2a SU(3) quadrature orthonormality gate :: <chi_F,chi_F>=1.000000000000+1.54e-19i
+PASS: B2b Wilson dual coefficients positive real :: min real=1.2548769, max relative imag=1.095e-16
+PASS: B2c Wilson conjugation pairing :: c00=3.4414404-2.7e-33i, c01=4.3623533-9.1e-17i, c02=2.8074251+6.1e-17i, c10=4.3623533-9.1e-17i, c11=4.4672594-3.6e-17i, c12=2.4927069-3.0e-17i, c20=2.8074251-1.8e-16i, c21=2.4927069-2.7e-16i, c22=1.2548769+3.0e-17i
+PASS: B3a positive class product weights on carrier sectors :: draws=200, unit-complementary Q values=[1, 1, 1, 1, 1, 1]
+PASS: B3b pi branch exits the positive class :: odd-Q draws=99, negative signed draws=99
+PASS: B4 two-mechanism honesty for positive class selection :: orientation draws=50, character pairs=50, negative witnesses=6
+PASS: B5a mass-side mirror antisymmetric pairing :: min det(M+mI) on n=4,6,8 grid=8.995e+00
+PASS: B5b symmetric refutation leg loses sign guarantee :: m=-1.90, det=-2.349e-01
+PASS: B6 two-sided Z2 table zero branch :: (0,0)->0; (0,pi)->pi; (pi,0)->pi; (pi,pi)->0
+PASS: C1 note declares bounded_theorem Type header
+PASS: C2 note keeps branch-table result formal and scoped
+PASS: C3 note does not assert physical theta_bar value
+PASS: C4 note states class-to-action adjudication remains open
+PASS: C5 note keeps orientation evenness as a hypothesis
+PASS: C6 note has no landed/unconditional authority wording
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -1,22 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_count_bounds_composition_words_2026_07_02.py
-runner_sha256: a183be669d431bdbad005c2de3dc35e2fd1fdf6aac6675fdbf547e431b28ca10
+runner_sha256: b4d8707985041dc0944ac94151b55689aa25268f3b6d6b3ca97292572601ee49
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 CHECK 01: PASS — guard: state definition 'A state is a configuration of records.' present in axiom memo
-CHECK 02: PASS — guard: 'the locked possibility is invariant under repeated readout' present -- WITHIN-readout stability, NOT persistence across events (grounds the record-persistence premise correction, not record-persistence premise)
+CHECK 02: PASS — guard: 'records are permanent' present in axiom memo (Record / Fixed Reality; landed commit 7950d9202c) -- permanence across events is axiom text and grounds record persistence directly; the pre-restoration wording 'the locked possibility is invariant under repeated readout' gave only within-readout stability and is superseded, so persistence is no longer a supplied correction premise
 CHECK 03: PASS — guard: 'For any finite collection of pairwise-disjoint records, scalar readout' present -- a CONDITIONAL on a supplied finite collection, NOT a bound on a configuration's record total
 CHECK 04: PASS — guard: dynamics disclaimer 'provide a record-production process' present (axioms supply no record-production process; grounds record-production premise as dynamics-shaped)
 CHECK 05: PASS — guard: occupancy note 'double-registration update squares registered weights' present (the ONE flow step read in a supplied chart)
 CHECK 06: PASS — guard: occupancy tri-guise 'the same binary, not three independent binaries' present (f, g are two charts of one binary; mixed words need chart-mix)
-CHECK 07: PASS — guard: axiom Open Gates 'physical persistence dynamics' present (persistence is outside the axioms; grounds record-persistence premise as un-adopted dynamics-shaped)
+CHECK 07: PASS — guard: axiom Open Gates 'physical persistence dynamics' present -- the persistence MECHANISM/dynamics stays outside the axioms, distinct from the landed permanence FACT ('records are permanent', commit 7950d9202c) that grounds the record-persistence input to the count bound
 CHECK 08: PASS — pure-letter event premise: a single-chart word is a pure iterate of the ONE flow read in ONE supplied chart -- 'ff'=f^2, 'gg'=g^2, 'fff'=f^3 (component chart -> f, slot chart -> g)
 CHECK 09: PASS — pure-letter event premise / chart-mix: single-chart f.f=8r^4, g.g=r^4 vs mixed f.g=2r^4, g.f=4r^4 -- mixed leading coeffs {2,4} match neither single chart {8,1}; a mixed word is not an iterate of any single supplied flow
 CHECK 10: PASS — record-production premise (production): NAMED, dynamics-shaped (memo disclaims a record-production process); independent content -- a zero-production history [0,0,0] advances the word (3 events) yet registers no record, so production is not supplied by the letters alone
-CHECK 11: PASS — record-persistence premise (persistence): NAMED, dynamics-shaped (memo Open Gates lists 'physical persistence dynamics' outside the axioms; readout-invariance is WITHIN-readout only, NOT persistence -- category-error correction); independent content -- a produce-then-vanish history [+1,-1,+1,-1] has records vanish so the count 0 ceases to bound the 4 events
+CHECK 11: PASS — record persistence: GROUNDED on the landed axiom sentence 'records are permanent' (commit 7950d9202c) -- permanence across events is axiom text, so persistence is no longer a supplied correction premise; the produce-then-vanish history [+1,-1,+1,-1] is kept only as the load-bearing witness that the count step depends on persistence (count 0 would cease to bound the 4 events), a dependence the permanence axiom now meets
 CHECK 12: PASS — finite-collection-containment premise (scoping/FIN): the axioms do NOT bound a configuration's record total (an all-sites-recorded Z^3 config satisfies every quoted sentence); finiteness enters only via the supplied finite collection -- N_rec = |collection| for arbitrarily large supplied sizes (no cap), and the registered records are contained in the counted collection
 CHECK 13: PASS — record-count bound: under record-production premise+record-persistence premise+finite-collection-containment premise, after k events at least k contained persistent records exist (k <= N_rec) for every prefix (monotone induction)
 CHECK 14: PASS — record-count bound: tightness -- a unit, persistent, contained history achieves k = N_rec exactly (the bound is tight)

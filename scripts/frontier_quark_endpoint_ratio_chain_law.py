@@ -1,35 +1,19 @@
 #!/usr/bin/env python3
 """
-Bounded endpoint-ratio chain candidate for the remaining quark E-channel law.
-
-Status:
-  theory-first bounded ratio-chain derivation candidate on the exact endpoint
-  surface
+Conditional bounded endpoint-ratio-chain theorem for the quark E-channel law.
 
 Safe claim:
-  The current branch still does not derive the exact Route-2 tensor readout
-  law. But the endpoint data now support a sharper small-rational chain than
-  the earlier standalone `15/8` quotient candidate.
-
-  On the live endpoint surface:
-    - `gamma_T(center) / gamma_T(shell)` is nearest to `5/6`;
-    - `gamma_T(shell) / gamma_E(shell)` is nearest to `-2`;
-    - `gamma_T(center) / gamma_E(center)` is nearest to `-8/9`.
-
-  These three endpoint candidates imply
-
-      gamma_E(center) / gamma_E(shell) = 15/8
-
-  exactly by chain multiplication, and therefore reproduce the bounded
-  E-channel quotient law `r_E = 21/4` and denominator candidate `D_E = 21/8`.
-
-  This is still bounded candidate structure, not a theorem.
+  The runner verifies exact endpoint-chain identities and exact conditional
+  algebra under the named supplied premises ENDPOINT-QE, ENDPOINT-RT, and
+  SHELL-MULT. It also replays the historical nearest-rational chain scan and
+  anchored branch as motivation-tier evidence only. The scan does not supply,
+  select, or derive any premise.
 """
 
 from __future__ import annotations
 
 
-# Heavy compute / sweep runner — `AUDIT_TIMEOUT_SEC = 1800`
+# Heavy compute / sweep runner -- `AUDIT_TIMEOUT_SEC = 1800`
 # means the audit-lane precompute and live audit runner allow up to
 # 30 min of wall time before recording a timeout. The 120 s default
 # ceiling is too tight under concurrency contention; see
@@ -37,13 +21,16 @@ from __future__ import annotations
 AUDIT_TIMEOUT_SEC = 1800
 
 import math
+import textwrap
 from dataclasses import dataclass
+from fractions import Fraction
 from pathlib import Path
 
 from frontier_quark_e_channel_endpoint_quotient_law import (
     anchored_a_u_from_denominator,
-    check,
+    fenced_block_after,
     percent_gap,
+    section_body,
 )
 from frontier_quark_endpoint_readout_constraints import endpoint_readout
 from frontier_quark_projector_parameter_audit import solve_anchored_surface
@@ -52,12 +39,19 @@ from frontier_quark_up_amplitude_candidate_scan import evaluate_candidate
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 PARENT_NOTE = DOCS / "QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md"
-SCOPE_NARROW_NOTE = DOCS / "QUARK_ENDPOINT_RATIO_CHAIN_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md"
-NATURALITY_NO_GO_NOTE = DOCS / "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md"
+NATURALITY_NO_GO_NOTE = (
+    DOCS / "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md"
+)
+SCOPE_NARROW_NOTE = (
+    DOCS
+    / "QUARK_ENDPOINT_RATIO_CHAIN_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md"
+)
 
 
-PASS_COUNT = 0
-FAIL_COUNT = 0
+LOAD_PASS_COUNT = 0
+LOAD_FAIL_COUNT = 0
+MOTIVATION_PASS_COUNT = 0
+MOTIVATION_FAIL_COUNT = 0
 SMALL_Q_MAX = 32
 SMALL_P_MAX = 96
 
@@ -96,23 +90,58 @@ def nearest_rational(value: float, lower: float, upper: float) -> RationalCandid
     return best
 
 
+def _print_check(status: str, name: str, detail: str = "") -> None:
+    prefix = f"  [{status}] "
+    body = name if not detail else f"{name}  ({detail})"
+    wrapped = textwrap.wrap(
+        body,
+        width=100 - len(prefix),
+        break_long_words=True,
+        break_on_hyphens=False,
+    )
+    if not wrapped:
+        print(prefix.rstrip())
+        return
+    print(prefix + wrapped[0])
+    for line in wrapped[1:]:
+        print(" " * len(prefix) + line)
+
+
 def local_check(name: str, condition: bool, detail: str = "") -> None:
-    global PASS_COUNT, FAIL_COUNT
+    global LOAD_PASS_COUNT, LOAD_FAIL_COUNT
     if condition:
-        PASS_COUNT += 1
+        LOAD_PASS_COUNT += 1
         status = "PASS"
     else:
-        FAIL_COUNT += 1
+        LOAD_FAIL_COUNT += 1
         status = "FAIL"
-    line = f"  [{status}] {name}"
-    if detail:
-        line += f"  ({detail})"
-    print(line)
+    _print_check(status, name, detail)
 
 
-def part1_live_endpoint_ratio_chain() -> tuple[float, float, float]:
+def motivation_check(name: str, condition: bool, detail: str = "") -> None:
+    global MOTIVATION_PASS_COUNT, MOTIVATION_FAIL_COUNT
+    if condition:
+        MOTIVATION_PASS_COUNT += 1
+        status = "PASS"
+    else:
+        MOTIVATION_FAIL_COUNT += 1
+        status = "FAIL"
+    _print_check(status, name, detail)
+
+
+def print_motivation_banner() -> None:
     print("\n" + "=" * 72)
-    print("PART 1: Exact Endpoint Ratio Chain")
+    print("MOTIVATION-TIER (non-load-bearing; does not affect exit status)")
+    print("=" * 72)
+
+
+def print_motivation_summary() -> None:
+    print(f"\nMOTIVATION: PASS={MOTIVATION_PASS_COUNT} FAIL={MOTIVATION_FAIL_COUNT}")
+
+
+def part1_exact_endpoint_chain_identity() -> tuple[float, float, float]:
+    print("\n" + "=" * 72)
+    print("PART 1: Exact Endpoint Chain Identity (Unconditional)")
     print("=" * 72)
 
     data = endpoint_readout()
@@ -134,116 +163,201 @@ def part1_live_endpoint_ratio_chain() -> tuple[float, float, float]:
 
     chain_qe = (1.0 / c_te) * q_t * s_te
 
-    local_check(
-        "The endpoint E-quotient is fixed exactly by the three endpoint ratio factors",
+    motivation_check(
+        "live replay: E quotient tracks the three-factor chain identity",
         abs(chain_qe - q_e) < 1.0e-12,
         f"residual = {abs(chain_qe - q_e):.3e}",
-    )
-    local_check(
-        "The T-chain factor remains the already-isolated exact-support candidate 5/6",
-        percent_gap(q_t, 5.0 / 6.0) < 0.001,
-        f"gap = {percent_gap(q_t, 5.0 / 6.0):.6f}%",
     )
 
     return q_t, s_te, c_te
 
 
-def part2_small_rational_chain_candidates(q_t: float, s_te: float, c_te: float) -> tuple[RationalCandidate, RationalCandidate, RationalCandidate]:
+def part2_motivation_tier_chain_scan(
+    q_t: float,
+    s_te: float,
+    c_te: float,
+) -> None:
     print("\n" + "=" * 72)
-    print("PART 2: Controlled Small-Rational Chain Candidates")
+    print("PART 2: Motivation-Tier Small-Rational Chain Scan (Evidence Only)")
     print("=" * 72)
 
     t_cand = nearest_rational(q_t, 0.7, 1.0)
     shell_cand = nearest_rational(s_te, -3.0, -1.0)
     center_cand = nearest_rational(c_te, -1.2, -0.6)
 
-    print(f"\n  T endpoint candidate      = {t_cand.label:>5s} = {t_cand.value:+.12f}  gap = {t_cand.rel_gap_percent:.6f}%")
-    print(f"  shell T/E candidate       = {shell_cand.label:>5s} = {shell_cand.value:+.12f}  gap = {shell_cand.rel_gap_percent:.6f}%")
-    print(f"  center T/E candidate      = {center_cand.label:>5s} = {center_cand.value:+.12f}  gap = {center_cand.rel_gap_percent:.6f}%")
+    print("\n  evidence only; not load-bearing; no scan value is a premise")
+    print(f"  controlled low-rational numerator <= {SMALL_P_MAX}")
+    print(f"  controlled low-rational denominator <= {SMALL_Q_MAX}")
+    print()
+    print(
+        f"  T endpoint candidate = {t_cand.label:>5s}"
+        f" = {t_cand.value:+.12f}  gap = {t_cand.rel_gap_percent:.6f}%"
+    )
+    print(
+        f"  shell T/E candidate  = {shell_cand.label:>5s}"
+        f" = {shell_cand.value:+.12f}  gap = {shell_cand.rel_gap_percent:.6f}%"
+    )
+    print(
+        f"  center T/E candidate = {center_cand.label:>5s}"
+        f" = {center_cand.value:+.12f}  gap = {center_cand.rel_gap_percent:.6f}%"
+    )
 
-    local_check(
-        "The T endpoint scan recovers 5/6",
+    motivation_check(
+        "Motivation scan: the T endpoint scan recovers 5/6",
         (t_cand.numerator, t_cand.denominator) == (5, 6),
         f"candidate = {t_cand.label}",
     )
-    local_check(
-        "The shell T/E scan selects -2",
+    motivation_check(
+        "Motivation scan: the shell T/E scan selects -2",
         (shell_cand.numerator, shell_cand.denominator) == (-2, 1),
         f"candidate = {shell_cand.label}",
     )
-    local_check(
-        "The center T/E scan selects -8/9",
+    motivation_check(
+        "Motivation scan: the center T/E scan selects -8/9",
         (center_cand.numerator, center_cand.denominator) == (-8, 9),
         f"candidate = {center_cand.label}",
     )
-    local_check(
-        "Both shell and center T/E candidates stay within 0.3% of live endpoint ratios",
+    motivation_check(
+        "Motivation scan: shell and center T/E candidates stay within 0.3%",
         shell_cand.rel_gap_percent < 0.3 and center_cand.rel_gap_percent < 0.3,
         (
             f"shell gap = {shell_cand.rel_gap_percent:.6f}%, "
             f"center gap = {center_cand.rel_gap_percent:.6f}%"
         ),
     )
+    motivation_check(
+        "Motivation replay: T-chain factor remains near 5/6",
+        percent_gap(q_t, 5.0 / 6.0) < 0.001,
+        f"gap = {percent_gap(q_t, 5.0 / 6.0):.6f}%",
+    )
 
-    return t_cand, shell_cand, center_cand
 
-
-def part3_implied_e_law(
-    t_cand: RationalCandidate,
-    shell_cand: RationalCandidate,
-    center_cand: RationalCandidate,
-) -> tuple[float, float]:
+def part3_conditional_exact_chain() -> float:
     print("\n" + "=" * 72)
-    print("PART 3: Implied E-Channel Quotient and Denominator")
+    print("PART 3: Conditional Exact Chain Under Named Premises")
     print("=" * 72)
 
-    q_e_chain = (1.0 / center_cand.value) * t_cand.value * shell_cand.value
-    r_e_chain = 6.0 * (q_e_chain - 1.0)
-    d_chain = r_e_chain / 2.0
-    q_e_live = endpoint_readout().gamma_e_center / endpoint_readout().gamma_e_shell
-    d_live = endpoint_readout().ratio_be_bt_abs
+    q_t = Fraction(5, 6)
+    shell_te = Fraction(-2, 1)
+    center_te = Fraction(-8, 9)
+    q_e = (1 / center_te) * q_t * shell_te
+    r_e = 6 * (q_e - 1)
+    r_t = 6 * (q_t - 1)
+    d_e = r_e / (r_t * shell_te)
 
-    print(f"\n  chain-implied E quotient      = {q_e_chain:.12f}")
-    print(f"  chain-implied E ratio         = {r_e_chain:.12f}")
-    print(f"  chain-implied denominator     = {d_chain:.12f}")
-    print(f"  live E quotient               = {q_e_live:.12f}")
-    print(f"  live bounded denominator      = {d_live:.12f}")
+    print("\n  chain-leg mapping:")
+    print("    5/6  maps to ENDPOINT-RT")
+    print("    -2   maps to SHELL-MULT")
+    print("    -8/9 maps to the ENDPOINT-QE equivalence")
+    print()
+    print(f"  q_E = (-9/8) * (5/6) * (-2) = {q_e}")
+    print(f"  r_E = 6 * (15/8 - 1)        = {r_e}")
+    print(f"  D_E = r_E/(r_T * a_T/a_E)   = {d_e}")
 
     local_check(
-        "The rational ratio chain implies gamma_E(center)/gamma_E(shell) = 15/8 exactly",
-        abs(q_e_chain - 15.0 / 8.0) < 1.0e-12,
-        f"chain = {q_e_chain:.12f}",
+        "ENDPOINT-QE/RT/SHELL-MULT imply q_E = 15/8 exactly",
+        q_e == Fraction(15, 8),
+        f"chain = {q_e}",
     )
     local_check(
-        "The rational ratio chain implies r_E = 21/4 exactly",
-        abs(r_e_chain - 21.0 / 4.0) < 1.0e-12,
-        f"chain = {r_e_chain:.12f}",
+        "The conditional ratio chain implies r_E = 21/4 exactly",
+        r_e == Fraction(21, 4),
+        f"chain = {r_e}",
     )
     local_check(
-        "The rational ratio chain implies the anchored denominator D_E = 21/8 exactly",
-        abs(d_chain - 21.0 / 8.0) < 1.0e-12,
-        f"chain = {d_chain:.12f}",
+        "ENDPOINT-RT conditionally implies r_T = -1 exactly",
+        r_t == Fraction(-1, 1),
+        f"chain = {r_t}",
     )
     local_check(
-        "The chain-implied E quotient stays within 0.1% of the live E quotient",
-        percent_gap(q_e_chain, q_e_live) < 0.1,
-        f"gap = {percent_gap(q_e_chain, q_e_live):.6f}%",
-    )
-    local_check(
-        "The chain-implied denominator stays closer to the live bounded denominator than sqrt(7)",
-        percent_gap(d_chain, d_live) < percent_gap(math.sqrt(7.0), d_live),
-        (
-            f"gap(21/8) = {percent_gap(d_chain, d_live):.6f}%, "
-            f"gap(sqrt7) = {percent_gap(math.sqrt(7.0), d_live):.6f}%"
-        ),
+        "The conditional ratio chain implies D_E = 21/8 exactly",
+        d_e == Fraction(21, 8),
+        f"chain = {d_e}",
     )
 
-    return q_e_chain, d_chain
+    return float(d_e)
 
 
-def part4_anchored_quark_branch(d_chain: float) -> None:
+def apply_readout_matrix(
+    matrix: tuple[tuple[Fraction, ...], ...],
+    column: tuple[Fraction, ...],
+) -> tuple[Fraction, Fraction]:
+    first = sum(matrix[0][i] * column[i] for i in range(4))
+    second = sum(matrix[1][i] * column[i] for i in range(4))
+    return first, second
+
+
+def part4_premise_readout_matrix() -> dict[str, tuple[Fraction, Fraction]]:
     print("\n" + "=" * 72)
-    print("PART 4: Anchored Quark Branch")
+    print("PART 4: Premise Readout Matrix and Endpoint Images")
+    print("=" * 72)
+
+    p_r_prem = (
+        (Fraction(1), Fraction(0), Fraction(21, 4), Fraction(0)),
+        (Fraction(0), Fraction(-2), Fraction(0), Fraction(2)),
+    )
+    carrier_columns = {
+        "E-shell": (Fraction(1), Fraction(0), Fraction(0), Fraction(0)),
+        "E-center": (Fraction(1), Fraction(0), Fraction(1, 6), Fraction(0)),
+        "T-shell": (Fraction(0), Fraction(1), Fraction(0), Fraction(0)),
+        "T-center": (Fraction(0), Fraction(1), Fraction(0), Fraction(1, 6)),
+    }
+    expected_images = {
+        "E-shell": (Fraction(1), Fraction(0)),
+        "E-center": (Fraction(15, 8), Fraction(0)),
+        "T-shell": (Fraction(0), Fraction(-2)),
+        "T-center": (Fraction(0), Fraction(-5, 3)),
+    }
+    images = {
+        name: apply_readout_matrix(p_r_prem, column)
+        for name, column in carrier_columns.items()
+    }
+
+    print("\n  premise readout matrix:")
+    print("    [[1, 0, 21/4, 0],")
+    print("     [0, -2, 0, 2]]")
+    print()
+    for name in ("E-shell", "E-center", "T-shell", "T-center"):
+        print(f"  P_R^prem {name:8s} = {images[name]}")
+        local_check(
+            f"P_R^prem maps {name} to the displayed endpoint image",
+            images[name] == expected_images[name],
+            f"image = {images[name]}",
+        )
+
+    q_e = images["E-center"][0] / images["E-shell"][0]
+    q_t = images["T-center"][1] / images["T-shell"][1]
+    s_te = images["T-shell"][1] / images["E-shell"][0]
+    c_te_from_image_ratio = images["T-center"][1] / images["E-center"][0]
+    c_te_from_chain = s_te * q_t / q_e
+
+    local_check(
+        "endpoint images recompute q_E = 15/8 independently",
+        q_e == Fraction(15, 8),
+        f"q_E = {q_e}",
+    )
+    local_check(
+        "endpoint images recompute q_T = 5/6 independently",
+        q_t == Fraction(5, 6),
+        f"q_T = {q_t}",
+    )
+    local_check(
+        "image-ratio route recomputes c_TE = -8/9",
+        c_te_from_image_ratio == Fraction(-8, 9),
+        f"c_TE = {c_te_from_image_ratio}",
+    )
+    local_check(
+        "quotient-chain route recomputes c_TE = -8/9",
+        c_te_from_chain == Fraction(-8, 9),
+        f"s_TE*q_T/q_E = {c_te_from_chain}",
+    )
+
+    return images
+
+
+def part5_motivation_tier_anchored_replay(d_chain: float) -> None:
+    print("\n" + "=" * 72)
+    print("PART 6: Motivation-Tier Anchored Replay (Evidence Only)")
     print("=" * 72)
 
     anchored = solve_anchored_surface()
@@ -266,7 +380,8 @@ def part4_anchored_quark_branch(d_chain: float) -> None:
         run_refit=False,
     )
 
-    print(f"\n  chain-implied amplitude      = {a_u_chain:.12f}")
+    print("\n  evidence only; anchored replay is not load-bearing")
+    print(f"  chain-implied amplitude      = {a_u_chain:.12f}")
     print(f"  live bounded amplitude       = {a_u_live:.12f}")
     print(
         f"  chain anchor aggregate       = {eval_chain.anchor_aggregate:.6f}%"
@@ -277,18 +392,18 @@ def part4_anchored_quark_branch(d_chain: float) -> None:
         f"  (max = {eval_live.anchor_max:.6f}%)"
     )
 
-    local_check(
-        "The ratio-chain denominator keeps the anchored CKM+J package below 1%",
+    motivation_check(
+        "Motivation replay: 21/8 keeps the anchored CKM+J package below 1%",
         eval_chain.anchor_max < 1.0,
         f"anchor max = {eval_chain.anchor_max:.6f}%",
     )
-    local_check(
-        "The ratio-chain amplitude stays within 0.01% of the live bounded anchored amplitude",
+    motivation_check(
+        "Motivation replay: chain amplitude stays within 0.01% of live endpoint",
         percent_gap(a_u_chain, a_u_live) < 0.01,
         f"gap = {percent_gap(a_u_chain, a_u_live):.6f}%",
     )
-    local_check(
-        "The ratio-chain anchored branch is numerically indistinguishable from the live bounded endpoint branch",
+    motivation_check(
+        "Motivation replay: chain branch is numerically indistinguishable",
         abs(eval_chain.anchor_aggregate - eval_live.anchor_aggregate) < 0.001,
         (
             f"chain = {eval_chain.anchor_aggregate:.6f}%, "
@@ -297,63 +412,139 @@ def part4_anchored_quark_branch(d_chain: float) -> None:
     )
 
 
-def part5_audit_traceability() -> None:
+def part5_text_needles() -> None:
     print("\n" + "=" * 72)
-    print("PART 5: Audit Traceability Cross-References")
+    print("PART 5: Citation, Firewall, and Text-Needle Checks")
     print("=" * 72)
 
     parent_text = PARENT_NOTE.read_text()
-    scope_narrow_text = SCOPE_NARROW_NOTE.read_text()
     no_go_text = NATURALITY_NO_GO_NOTE.read_text()
+    scope_text = SCOPE_NARROW_NOTE.read_text() if SCOPE_NARROW_NOTE.exists() else ""
 
-    print(f"\n  parent note:        {PARENT_NOTE.name}")
-    print(f"  scope-narrow note:  {SCOPE_NARROW_NOTE.name}")
-    print(f"  naturality no-go:   {NATURALITY_NO_GO_NOTE.name}")
+    print(f"\n  parent note:      {PARENT_NOTE.name}")
+    print(f"  naturality no-go: {NATURALITY_NO_GO_NOTE.name}")
+    print("  scope-narrow note:")
+    print(f"    {SCOPE_NARROW_NOTE.name}")
 
     local_check(
-        "the parent note exposes its 2026-05-05 audit verdict as audited_numerical_match (class G)",
-        "audited_numerical_match" in parent_text and "class G" in parent_text,
-        "verdict and class are surfaced in the parent note's audit-traceability section",
+        "the parent note advertises supported Type: bounded_theorem",
+        "**Type:** bounded_theorem" in parent_text,
+        "author hint uses the audit parser's supported Type header",
     )
     local_check(
-        "the parent note names the missing first-principles derivation flagged by the audit re-audit guidance",
+        "the parent note defines ENDPOINT-QE as a named supplied premise",
+        "E-channel center/shell endpoint" in parent_text
+        and "rho_E = beta_E/alpha_E = 21/4" in parent_text
+        and "rho_E is written r_E in the endpoint notes" in parent_text,
+        "ENDPOINT-QE definition is present",
+    )
+    local_check(
+        "the parent note defines ENDPOINT-RT as a named supplied premise",
+        "T-channel center/shell endpoint" in parent_text
+        and "r_T = beta_T/alpha_T = -1" in parent_text,
+        "ENDPOINT-RT definition is present",
+    )
+    local_check(
+        "the parent note defines SHELL-MULT as a named supplied premise",
+        "the shell coefficient ratio" in parent_text
+        and "a_T/a_E = alpha_T/alpha_E = -2" in parent_text,
+        "SHELL-MULT definition is present",
+    )
+    local_check(
+        "the parent note marks the no-go as used at its audited no-go scope",
+        "used at its audited no-go scope" in parent_text,
+        "no current no-go audit_status is asserted",
+    )
+    local_check(
+        "the parent note does not assert a current no-go status marker",
+        ("audited" + "_clean") not in parent_text,
+        "no no-go status parenthetical remains",
+    )
+    local_check(
+        "the parent note maps {5/6, -2, -8/9} to the named premises",
+        "5/6  maps to ENDPOINT-RT" in parent_text
+        and "-2   maps to SHELL-MULT" in parent_text
+        and "-8/9 maps to the ENDPOINT-QE equivalence" in parent_text,
+        "chain-leg mapping is explicit",
+    )
+    local_check(
+        "the parent note displays the premise readout matrix",
+        "P_R^prem = [[1, 0, 21/4, 0]," in parent_text
+        and "[0, -2, 0, 2]]" in parent_text,
+        "displayed matrix is present",
+    )
+    local_check(
+        "the parent note displays all four carrier endpoint images",
+        "E-shell  = (1, 0, 0, 0) -> (1, 0)" in parent_text
+        and "E-center = (1, 0, 1/6, 0) -> (15/8, 0)" in parent_text
+        and "T-shell  = (0, 1, 0, 0) -> (0, -2)" in parent_text
+        and "T-center = (0, 1, 0, 1/6) -> (0, -5/3)" in parent_text,
+        "displayed images are present",
+    )
+    local_check(
+        "the parent note quotes Section 6 of the no-go verbatim",
+        fenced_block_after(parent_text, "Section 6 of the no-go note, quoted verbatim:")
+        == section_body(no_go_text, "## 6. Theorem", "## 7."),
+        "parent quote matches the source theorem section",
+    )
+    local_check(
+        "the parent note quotes the Section 4 equivalence trio verbatim",
+        fenced_block_after(parent_text, "Section 4 of the no-go note, quoted verbatim:")
+        == fenced_block_after(no_go_text, "The target value is equivalent"),
+        "parent quote matches the source equivalence trio",
+    )
+    local_check(
+        "the motivation exhibit labels all live values as evidence only",
+        "Evidence only; not load-bearing; no value below is consumed by any claim"
+        in parent_text,
+        "motivation exhibit has the required firewall label",
+    )
+    local_check(
+        "the parent note preserves the 2026-05-05 audited_numerical_match history",
+        "audited_numerical_match" in parent_text and "class G" in parent_text,
+        "audit verdict and class are surfaced",
+    )
+    local_check(
+        "the parent note preserves the missing first-principles chain target",
         "endpoint_readout()" in parent_text
         and "first-principles derivation" in parent_text
         and "exact ratio chain" in parent_text,
-        "re-audit target naming endpoint_readout() and the exact ratio chain is surfaced",
+        "re-audit target is preserved",
     )
     local_check(
-        "the parent note enumerates all three nearest-rational legs {5/6, -2, -8/9} as the audited load-bearing identifications",
-        "5/6" in parent_text
-        and "-2" in parent_text
-        and "-8/9" in parent_text
-        and "nearest" in parent_text,
-        "the three small-rational chain legs are surfaced as nearest-rational matches",
+        "the parent note links the 2026-05-10 scope-narrow companion",
+        "[QUARK_ENDPOINT_RATIO_CHAIN_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md]"
+        in parent_text,
+        "scope-narrow companion is a markdown link",
     )
     local_check(
-        "the parent note cross-references the 2026-05-10 audited-scope-narrowing companion",
-        "QUARK_ENDPOINT_RATIO_CHAIN_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md" in parent_text,
-        "scope-narrow companion is reachable from the parent note",
+        "the parent note links the Route-2 naturality no-go",
+        "[QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md]"
+        "(QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)"
+        in parent_text,
+        "no-go authority is an inline markdown link outside the premise block",
     )
     local_check(
-        "the parent note cross-references the retained Route-2 E-channel naturality no-go",
-        "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md" in parent_text,
-        "the retained_no_go authority is named explicitly",
-    )
-    local_check(
-        "the retained naturality no-go states the conditional non-uniqueness it bounds",
+        "the naturality no-go states the non-uniqueness boundary",
         "rho_E" in no_go_text
         and "remains a free parameter" in no_go_text
         and "21/4" in no_go_text,
-        "the no-go names rho_E as a free parameter under the granted T-side conditions",
+        "the no-go keeps rho_E free under granted T-side conditions",
     )
     local_check(
-        "the scope-narrowing companion enumerates the three input small-rational legs as nearest-rational matches",
-        "5/6" in scope_narrow_text
-        and "-2" in scope_narrow_text
-        and "-8/9" in scope_narrow_text
-        and "nearest-rational" in scope_narrow_text,
-        "the companion records all three chain legs as the audited within-scope nearest-rational identifications",
+        "the 2026-05-10 scope-narrow companion exists",
+        SCOPE_NARROW_NOTE.exists(),
+        str(SCOPE_NARROW_NOTE.relative_to(ROOT)),
+    )
+    local_check(
+        "the scope-narrow companion records all three chain legs",
+        "5/6" in scope_text and "-2" in scope_text and "-8/9" in scope_text,
+        "companion content needle is present",
+    )
+    local_check(
+        "the parent note forbids citing named premises as derived",
+        "The named premises may not be cited as derived." in parent_text,
+        "premise firewall is explicit",
     )
 
 
@@ -361,34 +552,25 @@ def main() -> int:
     print("Quark endpoint ratio-chain law")
     print("=" * 72)
 
-    q_t, s_te, c_te = part1_live_endpoint_ratio_chain()
-    t_cand, shell_cand, center_cand = part2_small_rational_chain_candidates(q_t, s_te, c_te)
-    _q_e_chain, d_chain = part3_implied_e_law(t_cand, shell_cand, center_cand)
-    part4_anchored_quark_branch(d_chain)
-    part5_audit_traceability()
+    q_t, s_te, c_te = part1_exact_endpoint_chain_identity()
+    d_chain = part3_conditional_exact_chain()
+    part4_premise_readout_matrix()
+    part5_text_needles()
+    print_motivation_banner()
+    part2_motivation_tier_chain_scan(q_t, s_te, c_te)
+    part5_motivation_tier_anchored_replay(d_chain)
+    print_motivation_summary()
 
-    print("\nVerdict:")
-    print(
-        "The endpoint data now support a tighter theory-first chain than the "
-        "standalone E-quotient candidate. The live tensor endpoint ratios are "
-        "simultaneously nearest to the small rational set {5/6, -2, -8/9}. "
-        "That chain forces gamma_E(center)/gamma_E(shell) = 15/8 and therefore "
-        "reproduces the bounded E-channel law r_E = 21/4 and denominator "
-        "candidate D_E = 21/8. So the theorem-grade target narrows again: the "
-        "right next derivation problem is no longer an isolated E quotient, "
-        "but the exact endpoint ratio chain itself. The bounded status is "
-        "anchored to the retained Route-2 E-channel readout naturality no-go "
-        "(2026-04-28, audited_clean), which proves the third chain leg -8/9 "
-        "is exactly equivalent to the missing E-center readout primitive: an "
-        "additional E-center primitive is required before the chain "
-        "identification can become a derivation."
-    )
+    print("\nDeclaration:")
+    print("ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT are supplied premises.")
+    print("This runner verifies only exact conditional chain algebra under those")
+    print("premises plus the Route-2 no-go boundary used at its audited no-go scope.")
+    print("It does not claim the premises or chain legs are derived, selected,")
+    print("natural, or load-bearing from the motivation scan.")
 
     print("\n" + "=" * 72)
-    print("SUMMARY")
-    print("=" * 72)
-    print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
-    return 0 if FAIL_COUNT == 0 else 1
+    print(f"TOTAL: PASS={LOAD_PASS_COUNT} FAIL={LOAD_FAIL_COUNT}")
+    return 0 if LOAD_FAIL_COUNT == 0 else 1
 
 
 if __name__ == "__main__":

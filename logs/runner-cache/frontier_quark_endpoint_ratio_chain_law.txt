@@ -1,16 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_quark_endpoint_ratio_chain_law.py
-runner_sha256: 3cebd04613a7046e8fa9cc80c3547cd954991e646157b3323421713db4509f1b
-timeout_sec: 1800
-exit_code: 0
-elapsed_sec: 0.51
-status: ok
------ stdout -----
 Quark endpoint ratio-chain law
 ========================================================================
 
 ========================================================================
-PART 1: Exact Endpoint Ratio Chain
+PART 1: Exact Endpoint Chain Identity (Unconditional)
 ========================================================================
 
   gamma_T(center)/gamma_T(shell) = 0.833328197623
@@ -23,70 +15,139 @@ PART 1: Exact Endpoint Ratio Chain
       = [gamma_E(center)/gamma_T(center)]
         * [gamma_T(center)/gamma_T(shell)]
         * [gamma_T(shell)/gamma_E(shell)]
-  [PASS] The endpoint E-quotient is fixed exactly by the three endpoint ratio factors  (residual = 2.220e-16)
-  [PASS] The T-chain factor remains the already-isolated exact-support candidate 5/6  (gap = 0.000616%)
+  [PASS] live replay: E quotient tracks the three-factor chain identity  (residual = 2.220e-16)
 
 ========================================================================
-PART 2: Controlled Small-Rational Chain Candidates
+PART 3: Conditional Exact Chain Under Named Premises
 ========================================================================
 
-  T endpoint candidate      =   5/6 = +0.833333333333  gap = 0.000616%
-  shell T/E candidate       =  -2/1 = -2.000000000000  gap = 0.268415%
-  center T/E candidate      =  -8/9 = -0.888888888889  gap = 0.201518%
-  [PASS] The T endpoint scan recovers 5/6  (candidate = 5/6)
-  [PASS] The shell T/E scan selects -2  (candidate = -2/1)
-  [PASS] The center T/E scan selects -8/9  (candidate = -8/9)
-  [PASS] Both shell and center T/E candidates stay within 0.3% of live endpoint ratios  (shell gap = 0.268415%, center gap = 0.201518%)
+  chain-leg mapping:
+    5/6  maps to ENDPOINT-RT
+    -2   maps to SHELL-MULT
+    -8/9 maps to the ENDPOINT-QE equivalence
+
+  q_E = (-9/8) * (5/6) * (-2) = 15/8
+  r_E = 6 * (15/8 - 1)        = 21/4
+  D_E = r_E/(r_T * a_T/a_E)   = 21/8
+  [PASS] ENDPOINT-QE/RT/SHELL-MULT imply q_E = 15/8 exactly  (chain = 15/8)
+  [PASS] The conditional ratio chain implies r_E = 21/4 exactly  (chain = 21/4)
+  [PASS] ENDPOINT-RT conditionally implies r_T = -1 exactly  (chain = -1)
+  [PASS] The conditional ratio chain implies D_E = 21/8 exactly  (chain = 21/8)
 
 ========================================================================
-PART 3: Implied E-Channel Quotient and Denominator
+PART 4: Premise Readout Matrix and Endpoint Images
 ========================================================================
 
-  chain-implied E quotient      = 1.875000000000
-  chain-implied E ratio         = 5.250000000000
-  chain-implied denominator     = 2.625000000000
-  live E quotient               = 1.876246130347
-  live bounded denominator      = 2.621601678213
-  [PASS] The rational ratio chain implies gamma_E(center)/gamma_E(shell) = 15/8 exactly  (chain = 1.875000000000)
-  [PASS] The rational ratio chain implies r_E = 21/4 exactly  (chain = 5.250000000000)
-  [PASS] The rational ratio chain implies the anchored denominator D_E = 21/8 exactly  (chain = 2.625000000000)
-  [PASS] The chain-implied E quotient stays within 0.1% of the live E quotient  (gap = 0.066416%)
-  [PASS] The chain-implied denominator stays closer to the live bounded denominator than sqrt(7)  (gap(21/8) = 0.129628%, gap(sqrt7) = 0.921179%)
+  premise readout matrix:
+    [[1, 0, 21/4, 0],
+     [0, -2, 0, 2]]
+
+  P_R^prem E-shell  = (Fraction(1, 1), Fraction(0, 1))
+  [PASS] P_R^prem maps E-shell to the displayed endpoint image  (image = (Fraction(1, 1),
+         Fraction(0, 1)))
+  P_R^prem E-center = (Fraction(15, 8), Fraction(0, 1))
+  [PASS] P_R^prem maps E-center to the displayed endpoint image  (image = (Fraction(15, 8),
+         Fraction(0, 1)))
+  P_R^prem T-shell  = (Fraction(0, 1), Fraction(-2, 1))
+  [PASS] P_R^prem maps T-shell to the displayed endpoint image  (image = (Fraction(0, 1),
+         Fraction(-2, 1)))
+  P_R^prem T-center = (Fraction(0, 1), Fraction(-5, 3))
+  [PASS] P_R^prem maps T-center to the displayed endpoint image  (image = (Fraction(0, 1),
+         Fraction(-5, 3)))
+  [PASS] endpoint images recompute q_E = 15/8 independently  (q_E = 15/8)
+  [PASS] endpoint images recompute q_T = 5/6 independently  (q_T = 5/6)
+  [PASS] image-ratio route recomputes c_TE = -8/9  (c_TE = -8/9)
+  [PASS] quotient-chain route recomputes c_TE = -8/9  (s_TE*q_T/q_E = -8/9)
 
 ========================================================================
-PART 4: Anchored Quark Branch
+PART 5: Citation, Firewall, and Text-Needle Checks
 ========================================================================
 
+  parent note:      QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md
+  naturality no-go: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+  scope-narrow note:
+    QUARK_ENDPOINT_RATIO_CHAIN_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md
+  [PASS] the parent note advertises supported Type: bounded_theorem  (author hint uses the audit
+         parser's supported Type header)
+  [PASS] the parent note defines ENDPOINT-QE as a named supplied premise  (ENDPOINT-QE definition is
+         present)
+  [PASS] the parent note defines ENDPOINT-RT as a named supplied premise  (ENDPOINT-RT definition is
+         present)
+  [PASS] the parent note defines SHELL-MULT as a named supplied premise  (SHELL-MULT definition is
+         present)
+  [PASS] the parent note marks the no-go as used at its audited no-go scope  (no current no-go
+         audit_status is asserted)
+  [PASS] the parent note does not assert a current no-go status marker  (no no-go status
+         parenthetical remains)
+  [PASS] the parent note maps {5/6, -2, -8/9} to the named premises  (chain-leg mapping is explicit)
+  [PASS] the parent note displays the premise readout matrix  (displayed matrix is present)
+  [PASS] the parent note displays all four carrier endpoint images  (displayed images are present)
+  [PASS] the parent note quotes Section 6 of the no-go verbatim  (parent quote matches the source
+         theorem section)
+  [PASS] the parent note quotes the Section 4 equivalence trio verbatim  (parent quote matches the
+         source equivalence trio)
+  [PASS] the motivation exhibit labels all live values as evidence only  (motivation exhibit has the
+         required firewall label)
+  [PASS] the parent note preserves the 2026-05-05 audited_numerical_match history  (audit verdict
+         and class are surfaced)
+  [PASS] the parent note preserves the missing first-principles chain target  (re-audit target is
+         preserved)
+  [PASS] the parent note links the 2026-05-10 scope-narrow companion  (scope-narrow companion is a
+         markdown link)
+  [PASS] the parent note links the Route-2 naturality no-go  (no-go authority is an inline markdown
+         link outside the premise block)
+  [PASS] the naturality no-go states the non-uniqueness boundary  (the no-go keeps rho_E free under
+         granted T-side conditions)
+  [PASS] the 2026-05-10 scope-narrow companion exists
+         (docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md)
+  [PASS] the scope-narrow companion records all three chain legs  (companion content needle is
+         present)
+  [PASS] the parent note forbids citing named premises as derived  (premise firewall is explicit)
+
+========================================================================
+MOTIVATION-TIER (non-load-bearing; does not affect exit status)
+========================================================================
+
+========================================================================
+PART 2: Motivation-Tier Small-Rational Chain Scan (Evidence Only)
+========================================================================
+
+  evidence only; not load-bearing; no scan value is a premise
+  controlled low-rational numerator <= 96
+  controlled low-rational denominator <= 32
+
+  T endpoint candidate =   5/6 = +0.833333333333  gap = 0.000616%
+  shell T/E candidate  =  -2/1 = -2.000000000000  gap = 0.268415%
+  center T/E candidate =  -8/9 = -0.888888888889  gap = 0.201518%
+  [PASS] Motivation scan: the T endpoint scan recovers 5/6  (candidate = 5/6)
+  [PASS] Motivation scan: the shell T/E scan selects -2  (candidate = -2/1)
+  [PASS] Motivation scan: the center T/E scan selects -8/9  (candidate = -8/9)
+  [PASS] Motivation scan: shell and center T/E candidates stay within 0.3%  (shell gap = 0.268415%,
+         center gap = 0.201518%)
+  [PASS] Motivation replay: T-chain factor remains near 5/6  (gap = 0.000616%)
+
+========================================================================
+PART 6: Motivation-Tier Anchored Replay (Evidence Only)
+========================================================================
+
+  evidence only; anchored replay is not load-bearing
   chain-implied amplitude      = 0.774180788008
   live bounded amplitude       = 0.774170054824
   chain anchor aggregate       = 0.723153%  (max = 0.666622%)
   live anchor aggregate        = 0.723246%  (max = 0.666354%)
-  [PASS] The ratio-chain denominator keeps the anchored CKM+J package below 1%  (anchor max = 0.666622%)
-  [PASS] The ratio-chain amplitude stays within 0.01% of the live bounded anchored amplitude  (gap = 0.001386%)
-  [PASS] The ratio-chain anchored branch is numerically indistinguishable from the live bounded endpoint branch  (chain = 0.723153%, live = 0.723246%)
+  [PASS] Motivation replay: 21/8 keeps the anchored CKM+J package below 1%  (anchor max = 0.666622%)
+  [PASS] Motivation replay: chain amplitude stays within 0.01% of live endpoint  (gap = 0.001386%)
+  [PASS] Motivation replay: chain branch is numerically indistinguishable  (chain = 0.723153%, live
+         = 0.723246%)
+
+MOTIVATION: PASS=9 FAIL=0
+
+Declaration:
+ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT are supplied premises.
+This runner verifies only exact conditional chain algebra under those
+premises plus the Route-2 no-go boundary used at its audited no-go scope.
+It does not claim the premises or chain legs are derived, selected,
+natural, or load-bearing from the motivation scan.
 
 ========================================================================
-PART 5: Audit Traceability Cross-References
-========================================================================
-
-  parent note:        QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md
-  scope-narrow note:  QUARK_ENDPOINT_RATIO_CHAIN_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md
-  naturality no-go:   QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
-  [PASS] the parent note exposes its 2026-05-05 audit verdict as audited_numerical_match (class G)  (verdict and class are surfaced in the parent note's audit-traceability section)
-  [PASS] the parent note names the missing first-principles derivation flagged by the audit re-audit guidance  (re-audit target naming endpoint_readout() and the exact ratio chain is surfaced)
-  [PASS] the parent note enumerates all three nearest-rational legs {5/6, -2, -8/9} as the audited load-bearing identifications  (the three small-rational chain legs are surfaced as nearest-rational matches)
-  [PASS] the parent note cross-references the 2026-05-10 audited-scope-narrowing companion  (scope-narrow companion is reachable from the parent note)
-  [PASS] the parent note cross-references the retained Route-2 E-channel naturality no-go  (the retained_no_go authority is named explicitly)
-  [PASS] the retained naturality no-go states the conditional non-uniqueness it bounds  (the no-go names rho_E as a free parameter under the granted T-side conditions)
-  [PASS] the scope-narrowing companion enumerates the three input small-rational legs as nearest-rational matches  (the companion records all three chain legs as the audited within-scope nearest-rational identifications)
-
-Verdict:
-The endpoint data now support a tighter theory-first chain than the standalone E-quotient candidate. The live tensor endpoint ratios are simultaneously nearest to the small rational set {5/6, -2, -8/9}. That chain forces gamma_E(center)/gamma_E(shell) = 15/8 and therefore reproduces the bounded E-channel law r_E = 21/4 and denominator candidate D_E = 21/8. So the theorem-grade target narrows again: the right next derivation problem is no longer an isolated E quotient, but the exact endpoint ratio chain itself. The bounded status is anchored to the retained Route-2 E-channel readout naturality no-go (2026-04-28, audited_clean), which proves the third chain leg -8/9 is exactly equivalent to the missing E-center readout primitive: an additional E-center primitive is required before the chain identification can become a derivation.
-
-========================================================================
-SUMMARY
-========================================================================
-PASS=21 FAIL=0
-
------ stderr -----
-
+TOTAL: PASS=32 FAIL=0

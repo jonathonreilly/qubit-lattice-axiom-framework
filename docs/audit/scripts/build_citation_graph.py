@@ -8,8 +8,8 @@ Walks every .md file under docs/ (excluding docs/audit/), extracts:
   - optional legacy Status-line migration hint for claim_type backfill
   - cited authorities (markdown links to other .md files in docs/)
   - primary runner script path
-  - helper runner script paths (transitive `from scripts.X import` imports
-    of the primary runner; needed by the audit packet builder so the
+  - helper runner script paths (transitive imports and static dynamic-load
+    calls of the primary runner; needed by the audit packet builder so the
     auditor sees the full source chain and doesn't fall back to class C
     on missing-helper grounds)
   - note hash (sha256 of body)
@@ -258,8 +258,80 @@ def extract_section(body: str, start: int) -> str:
     return body[start:end]
 
 
+def _script_stem_from_path_parts(parts: list[str], scripts_dir: Path) -> str | None:
+    """Resolve static path fragments to a checked-in scripts/*.py stem."""
+    if not parts:
+        return None
+    flattened: list[str] = []
+    for part in parts:
+        flattened.extend(p for p in Path(part).parts if p not in {"", "."})
+    py_parts = [p for p in flattened if p.endswith(".py")]
+    if not py_parts:
+        return None
+    candidate = Path(py_parts[-1])
+    if not (scripts_dir / candidate.name).exists():
+        return None
+    return candidate.stem
+
+
+def _path_parts_from_ast(node: ast.AST, names: dict[str, str]) -> list[str]:
+    """Best-effort static extractor for script path fragments.
+
+    The resolver only needs enough structure to recognize patterns such as
+    ``ROOT / "scripts/foo.py"``, ``Path(__file__).with_name("foo.py")``, and
+    constants routed through module-level names.
+    """
+    if isinstance(node, ast.Constant) and isinstance(node.value, str):
+        return [node.value]
+    if isinstance(node, ast.Name) and node.id in names:
+        return [names[node.id]]
+    if isinstance(node, ast.BinOp) and isinstance(node.op, ast.Div):
+        return _path_parts_from_ast(node.left, names) + _path_parts_from_ast(
+            node.right, names
+        )
+    if isinstance(node, ast.Call):
+        func_name = ""
+        if isinstance(node.func, ast.Name):
+            func_name = node.func.id
+        elif isinstance(node.func, ast.Attribute):
+            func_name = node.func.attr
+        if func_name in {"Path", "with_name", "joinpath"}:
+            parts: list[str] = []
+            for arg in node.args:
+                parts.extend(_path_parts_from_ast(arg, names))
+            return parts
+    return []
+
+
+def _script_stem_from_ast(node: ast.AST, names: dict[str, str], scripts_dir: Path) -> str | None:
+    return _script_stem_from_path_parts(_path_parts_from_ast(node, names), scripts_dir)
+
+
+def _dynamic_loader_param_indexes(tree: ast.AST) -> dict[str, set[int]]:
+    """Find local wrapper functions whose path parameter feeds a dynamic loader."""
+    wrappers: dict[str, set[int]] = {}
+    for fn in (n for n in ast.walk(tree) if isinstance(n, ast.FunctionDef)):
+        params = [arg.arg for arg in fn.args.args]
+        indexes: set[int] = set()
+        for call in (n for n in ast.walk(fn) if isinstance(n, ast.Call)):
+            func_name = ""
+            if isinstance(call.func, ast.Name):
+                func_name = call.func.id
+            elif isinstance(call.func, ast.Attribute):
+                func_name = call.func.attr
+            if func_name not in {"spec_from_file_location", "SourceFileLoader"}:
+                continue
+            if len(call.args) < 2 or not isinstance(call.args[1], ast.Name):
+                continue
+            if call.args[1].id in params:
+                indexes.add(params.index(call.args[1].id))
+        if indexes:
+            wrappers[fn.name] = indexes
+    return wrappers
+
+
 def _parse_script_imports(script_path: Path) -> set[str]:
-    """Return basenames of scripts/*.py that this script imports.
+    """Return basenames of scripts/*.py that this script imports or loads.
 
     Handles `from scripts.X import ...`, `from scripts import X [as Y]`,
     `import scripts.X`, relative imports inside `scripts/`
@@ -267,6 +339,10 @@ def _parse_script_imports(script_path: Path) -> set[str]:
     imports (`from X import ...`, `import X`) where `scripts/X.py` exists —
     common in this repo because runners are invoked with
     `PYTHONPATH=scripts python3 scripts/X.py`.
+
+    Also handles static dynamic-loader paths such as
+    `importlib.util.spec_from_file_location("m", ROOT / "scripts" / "X.py")`
+    and local wrapper calls that forward a path parameter into that loader.
 
     Filters to imports that exist as scripts/<name>.py, so third-party
     libraries (numpy, scipy, etc.) are excluded.
@@ -286,6 +362,17 @@ def _parse_script_imports(script_path: Path) -> set[str]:
         return set()
     scripts_dir = REPO_ROOT / "scripts"
     helpers: set[str] = set()
+    script_path_names: dict[str, str] = {}
+    for node in tree.body:
+        if not isinstance(node, ast.Assign):
+            continue
+        stem = _script_stem_from_ast(node.value, script_path_names, scripts_dir)
+        if not stem:
+            continue
+        for target in node.targets:
+            if isinstance(target, ast.Name):
+                script_path_names[target.id] = f"{stem}.py"
+    loader_param_indexes = _dynamic_loader_param_indexes(tree)
     for node in ast.walk(tree):
         if isinstance(node, ast.ImportFrom):
             module = node.module or ""
@@ -310,6 +397,35 @@ def _parse_script_imports(script_path: Path) -> set[str]:
                     helpers.add(alias.name.removeprefix("scripts."))
                 else:
                     helpers.add(alias.name.split(".")[0])
+        elif isinstance(node, ast.Call):
+            func_name = ""
+            if isinstance(node.func, ast.Name):
+                func_name = node.func.id
+            elif isinstance(node.func, ast.Attribute):
+                func_name = node.func.attr
+            indexes: set[int] = set()
+            keyword_names: set[str] = set()
+            if func_name in {"spec_from_file_location", "SourceFileLoader", "load_frontier"}:
+                indexes.add(1)
+                if func_name == "spec_from_file_location":
+                    keyword_names.add("location")
+                elif func_name == "SourceFileLoader":
+                    keyword_names.add("path")
+                elif func_name == "load_frontier":
+                    keyword_names.add("filename")
+            indexes.update(loader_param_indexes.get(func_name, set()))
+            for index in indexes:
+                if len(node.args) <= index:
+                    continue
+                stem = _script_stem_from_ast(node.args[index], script_path_names, scripts_dir)
+                if stem:
+                    helpers.add(stem)
+            for keyword in node.keywords:
+                if keyword.arg not in keyword_names:
+                    continue
+                stem = _script_stem_from_ast(keyword.value, script_path_names, scripts_dir)
+                if stem:
+                    helpers.add(stem)
     return {h for h in helpers if (scripts_dir / f"{h}.py").exists()}
 
 

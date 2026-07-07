@@ -29,16 +29,16 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3706 |
-| Applied audit verdicts | 1374 |
+| Applied audit verdicts | 1373 |
 | Retained-grade rows, including boxed decorations | 1309 |
 | Retained positive theorems | 192 |
 | Retained no-go rows | 193 |
 | Retained bounded rows | 879 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 24 |
-| Unaudited rows | 1973 |
+| Unaudited rows | 1974 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 22 |
+| Audited conditional rows | 21 |
 | Audited renaming rows | 19 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 10 |
@@ -61,7 +61,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 Next ready rows by queue order:
 
 - [`no_per_site_chirality_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`hypercharge_identification_note`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md) - critical; non_terminal_conditional
+- [`hypercharge_identification_note`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md) - critical; unaudited
 - [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
 - [`flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) - critical; audit_in_progress
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
@@ -78,12 +78,11 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 188 |
+| critical | `unaudited` | 189 |
 | high | `unaudited` | 146 |
 | medium | `unaudited` | 97 |
 | medium | `open_gate` | 3 |
 | high | `audited_numerical_match` | 2 |
-| critical | `audited_conditional` | 1 |
 | high | `audited_conditional` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_numerical_match` | 1 |

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_amplitude_theorem.py
-runner_sha256: e69845697fe62c81659eb4ab3029f6ada57f9fc340adbcab6952455b542e7da3
+runner_sha256: acb8046906783e28ce014d5a31af97a00e7a65d73d968e108eef418dcc4b7545
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -22,20 +22,20 @@ PART 1: SHARP SELECTOR PROJECTION FIXES A_SEL
 ========================================================================================
 PART 2: SHARP SYMMETRIC SOURCE PROJECTION FIXES TAU_PLUS
 ========================================================================================
-  [PASS] The exact weak carrier is the two-column bright bundle K_R(q) = [[u_E,u_T],[delta_A1 u_E,delta_A1 u_T]]
+  [PASS] The weak carrier premise is the named-input K_R definition, not a physical-primitive theorem
   [PASS] The hierarchy selector theorem again supplies sharp bosonic-even projection rather than soft weighting
   [PASS] The weak even reduction note fixes that only the swap-even source mode survives
   [PASS] The canonical sharp swap-even projector is P_+ = (I + P_swap)/2  (idempotence err=0.00e+00)
   [PASS] Its source-oriented coordinate vector is exactly (tau_E,tau_T) = (1/2,1/2)  (vec=[0.5, 0.5])
-  [PASS] Therefore the symmetric source amplitude is canonically tau_+ = 1  (tau_+=1.000000)
+  [PASS] Therefore the bounded symmetric source amplitude is canonically tau_+ = 1 inside that carrier definition  (tau_+=1.000000)
 
 ========================================================================================
-PART 3: THE EXACT TRIPLET SOURCE DATA FOLLOW IMMEDIATELY
+PART 3: THE BOUNDED TRIPLET SOURCE DATA FOLLOW INSIDE THE CARRIER DEFINITION
 ========================================================================================
   [PASS] The odd transfer coefficient is already fixed as c_odd = +1
   [PASS] The even transfer coefficients are already fixed as v_even = (sqrt(8/3), sqrt(8)/3)
-  [PASS] So the exact odd triplet source is gamma = a_sel = 1/2  (gamma=0.500000)
-  [PASS] The exact even triplet responses are E1 = sqrt(8/3) and E2 = sqrt(8)/3  ((E1,E2)=(1.632993161855,0.942809041582))
+  [PASS] So the bounded odd triplet source is gamma = a_sel = 1/2  (gamma=0.500000)
+  [PASS] The bounded even triplet responses are E1 = sqrt(8/3) and E2 = sqrt(8)/3  ((E1,E2)=(1.632993161855,0.942809041582))
 
 ========================================================================================
 SUMMARY: PASS=15 FAIL=0

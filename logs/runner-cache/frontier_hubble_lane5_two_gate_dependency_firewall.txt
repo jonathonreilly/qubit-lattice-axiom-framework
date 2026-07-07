@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_two_gate_dependency_firewall.py
-runner_sha256: b7ad9fb4569c93e62be34ed82bef156a93615446851fbd361fd645a2785a1a68
+runner_sha256: c23cff8901a5af63e3fad5a5f27b880015e1d0478a0493cdc8de8dfaf413098b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -12,7 +12,7 @@ LANE 5 HUBBLE TWO-GATE DEPENDENCY FIREWALL
 
 Question:
   Can the current Lane 5 stack promote numerical H_0 from a single
-  closure gate, or from the structural lock alone?
+  gate, or from the structural lock alone?
 
 Answer:
   No. H_0 = H_inf/sqrt(L) keeps both gates load-bearing.
@@ -20,7 +20,7 @@ Answer:
 ----------------------------------------------------------------------------------------
 Part 1: repo gate-state guardrails
 ----------------------------------------------------------------------------------------
-  [PASS] status note states the two-gate closure map
+  [PASS] status note states the two-gate dependency map
   [PASS] necessity no-go states no single class is sufficient
   [PASS] workstream status says no numerical input was retired
   [PASS] C3 audit records no active direct-L route
@@ -53,11 +53,11 @@ Part 4: structural lock versus numerical H_0
 ----------------------------------------------------------------------------------------
 Part 5: gate-inventory specifics
 ----------------------------------------------------------------------------------------
-  [PASS] C1 gate is the primitive Clifford/CAR coframe response
+  [PASS] C1 gate is the Clifford/CAR coframe response
   [PASS] C2 gate is the right-sensitive Z_3 doublet-block selector
   [PASS] open-number theorem exposes exactly two structural degrees of freedom
   [PASS] current C3 audit reduces C3 to a hypothetical alternative
-  [PASS] honest Lane 5 status after this firewall is open, not retained closure  (C1 and C2 remain load-bearing; C3 has no active route)
+  [PASS] honest Lane 5 status after this firewall is open, not a retained H_0 result  (C1 and C2 remain load-bearing; C3 has no active route)
 
 ========================================================================================
 PASS=18 FAIL=0

@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/frontier_acphilambda_k_odd_carrier_datum_2026_07_03.py
+runner_sha256: e0cab1ab06c0ab8aa68e1be9a18652e9cc13c4d9e503ced8ec9f488880b7d399
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+CHECK 01: PASS - escape-condition quote guard
+CHECK 02: PASS - K-odd trace identity quote guard
+CHECK 03: PASS - I4b quote guard
+CHECK 04: PASS - N7 bridge-warning quote guard
+CHECK 05: PASS - record-readout axiom quote is carried literally
+CHECK 06: PASS - small-carrier trace identity computes exactly
+CHECK 07: PASS - separator sample is non-real
+CHECK 08: PASS - Candidate 1 plus-branch phases are exact Z6 torsion -- {1: -1/6, 2: -1/3, 3: 1/2}
+CHECK 09: PASS - Candidate 1 minus-branch phases are exact Z6 torsion -- {1: 1/6, 2: 1/3, 3: 1/2}
+CHECK 10: PASS - Candidate 1 C3 branch product phases collapse -- {P_plus: 0, P_minus: 0}
+CHECK 11: PASS - Candidate 1 axis orbit has undefined k=3 phase -- {1: -1/4, 2: -1/4, 3: undefined}
+CHECK 12: PASS - Candidate 1 axis nonzero product is a half-turn -- axis_nonzero_product=1/2
+CHECK 13: PASS - Candidate 1 period-1 full-turn result is NO-MATCH -- values={P_plus_product: 0, P_minus_product: 0, axis_nonzero_product: 1/2} target=2/9
+CHECK 14: PASS - Candidate 1 period-2pi full-turn result is NO-MATCH -- same rational full-turn fractions; no 4pi/9 phase appears
+CHECK 15: PASS - Candidate 1 does not import bare-radian A2 bridge -- 2/9 radians is not compared as 1/(9*pi)
+CHECK 16: PASS - Candidate 1 registrability screen records the record-content gap -- {'record_content_alone': False, 'c3_covariant': True, 'k_odd_separator': True}
+CHECK 17: PASS - Candidate 2 exact eigenphase inventory is the small U-twisted carrier -- {1: ('-1/6', '-1/3'), 2: ('-1/3', '-1/6'), 3: ('1/2', '0')}
+CHECK 18: PASS - Candidate 2 real-cut eta vanishes in every k sector -- sector={1: 0, 2: 0, 3: 0} total=0
+CHECK 19: PASS - Candidate 2 real-cut asymmetry result is NO-MATCH -- values={real_cut_total: 0, real_cut_k1: 0, real_cut_k2: 0, real_cut_k3: 0} target=2/9
+CHECK 20: PASS - Candidate 2 imaginary-cut sensitivity is also NO-MATCH -- {1: -1, 2: -1, 3: 0}
+CHECK 21: PASS - Candidate 2 registrability screen records K-odd cancellation -- {'record_content_alone': False, 'c3_covariant': True, 'k_odd_separator': False}
+CHECK 22: PASS - Parent fixed-locus decomposition is exactly 1/9 plus 1/9 -- weights={1: 1/9, 2: 1/9} total=2/9
+CHECK 23: PASS - Candidate 3 decomposition result is NO-MATCH -- matches=[]
+CHECK 24: PASS - Candidate 3 has no total-only accidental match -- total_only_matches=[]
+CHECK 25: PASS - Candidate 3 registrability screen records fixed-locus readback gap -- {'record_content_alone': False, 'c3_covariant': True, 'k_odd_separator': False}
+CHECK 26: PASS - I4b consistency: holonomy phase trivializes on positive Hermitian restriction -- phase=0
+CHECK 27: PASS - I4b consistency: centered eta trivializes on positive Hermitian restriction -- centered_eta=0
+CHECK 28: PASS - No A1 derivation claim is triggered -- C1=NO-MATCH; C2=NO-MATCH; C3=NO-MATCH
+TOTAL: PASS=28 FAIL=0
+SUMMARY files: docs/ACPHILAMBDA_K_ODD_CARRIER_REGISTERED_DATUM_TEST_BOUNDED_NOTE_2026-07-03.md; scripts/frontier_acphilambda_k_odd_carrier_datum_2026_07_03.py
+SUMMARY checks: PASS=28 FAIL=0
+SUMMARY candidates: C1=NO-MATCH; C2=NO-MATCH; C3=NO-MATCH
+SUMMARY period-matches: none under period-1 full-turn or period-2pi full-turn; A2 not imported
+SUMMARY uncertainties: record-content occurrence map absent; no fixed-locus decomposition match
+
+----- stderr -----
+

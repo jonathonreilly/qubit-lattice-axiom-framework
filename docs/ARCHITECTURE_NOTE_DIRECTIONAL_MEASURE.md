@@ -8,6 +8,7 @@ claim_scope: >-
 # Architecture Note: Directional Path Measure
 
 **Status:** supplied-premise bounded theorem candidate.
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Date:** 2026-04-05 (original); 2026-05-03 (review-loop repair);
 2026-05-10 (REPAIR_TARGETS #1 PATH B tuned-support demotion);
@@ -160,7 +161,7 @@ standing evidence:
   gravity-card beta = 0.8 is not a moment-matched derivation but the route-3
   observable-matched value.
 - The angular-kernel underdetermination boundary note
-  (`ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md`,
+  ([`ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md`](ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md),
   PASS=64 in its runner) is cited here only as boundary context. It records
   that, within its stated packet, `w(theta)`, and hence beta if the family is
   restricted to Gaussian, is not uniquely determined by the accepted primitive
@@ -202,7 +203,7 @@ recomputes the table from the stated propagator on fixed DAG fixtures
   beta on the fixed runner beta list.
 
 **Beta handling (b):**
-`ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md`
+[`ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md`](ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md)
 is cited at its stated scope as boundary context. The preserved boundary
 statement is that the angular kernel `w(theta)` of the directional path-measure
 walk is not uniquely determined by the repo baseline physical Cl(3) local

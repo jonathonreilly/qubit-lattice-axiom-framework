@@ -27129,6 +27129,22 @@
       "to": "color_arena_bonded_pair_admissibility_cross_site_surface_bounded_theorem_note_2026-07-06"
     },
     {
+      "from": "matter_realization_qubit_level_cross_site_bilinear_from_k1_structure_bounded_theorem_note_2026-07-06",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "matter_realization_qubit_level_cross_site_bilinear_from_k1_structure_bounded_theorem_note_2026-07-06",
+      "to": "realized_kinetic_branch_selected_by_admissibility_variation_narrow_theorem_note_2026-07-02"
+    },
+    {
+      "from": "matter_realization_qubit_level_cross_site_bilinear_from_k1_structure_bounded_theorem_note_2026-07-06",
+      "to": "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02"
+    },
+    {
+      "from": "matter_realization_qubit_level_cross_site_bilinear_from_k1_structure_bounded_theorem_note_2026-07-06",
+      "to": "color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06"
+    },
+    {
       "from": "matter_self_focusing_note",
       "to": "matter_inertial_closure_note"
     },
@@ -95118,6 +95134,23 @@
       "runner_path": "scripts/matter_realization_ks_hop_bridge_edge_diag_membership_2026_07_06.py",
       "title": "Matter Realization KS Hop Bridge EDGE-DIAG Membership"
     },
+    "matter_realization_qubit_level_cross_site_bilinear_from_k1_structure_bounded_theorem_note_2026-07-06": {
+      "claim_id": "matter_realization_qubit_level_cross_site_bilinear_from_k1_structure_bounded_theorem_note_2026-07-06",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "realized_kinetic_branch_selected_by_admissibility_variation_narrow_theorem_note_2026-07-02",
+        "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02",
+        "color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "71905f9a486472d4ae9ffcda6d37e799961472c1c36778aa58cbbd172f50b4fe",
+      "path": "docs/MATTER_REALIZATION_QUBIT_LEVEL_CROSS_SITE_BILINEAR_FROM_K1_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+      "runner_path": "scripts/matter_realization_qubit_bilinear_from_k1_2026_07_06.py",
+      "title": "Matter Realization: Qubit-Level Cross-Site Bilinear From K1 Structure"
+    },
     "matter_self_focusing_note": {
       "claim_id": "matter_self_focusing_note",
       "claim_type_author_hint": null,
@@ -111790,7 +111823,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "544a2221c2affefa18634892e557c6121a0426ab60577c68cf14ed9df7f657fe",
+      "note_hash": "1940be888a8d29d400ae03bb7b9f1c95c337c1783211b226340d27aec0c15c23",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -128604,7 +128637,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1605,
+      "bounded_theorem": 1606,
       "decoration": 3,
       "meta": 326,
       "no_go": 333,
@@ -128613,7 +128646,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2009,
+      "bounded_theorem": 2010,
       "decoration": 3,
       "meta": 326,
       "no_go": 436,
@@ -128621,10 +128654,10 @@
       "open_gate": 206,
       "positive_theorem": 657
     },
-    "edge_count": 14546,
-    "leaf_count": 1308,
-    "node_count": 3885,
+    "edge_count": 14550,
+    "leaf_count": 1309,
+    "node_count": 3886,
     "root_count": 1105,
-    "runners_with_path": 3507
+    "runners_with_path": 3508
   }
 }

@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1979 |
+| unaudited | 1980 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 19 |
@@ -65,11 +65,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2324 |
+| `unaudited` | 2325 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2037 |
+| `bounded_theorem` | 2038 |
 | `decoration` | 50 |
 | `meta` | 351 |
 | `no_go` | 482 |
@@ -79,7 +79,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 687 |
-| `high` | 445 |
+| `high` | 446 |
 | `medium` | 954 |
 | `leaf` | 1628 |
 
@@ -88,10 +88,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3374
+- runners classified: 3375
 - runners with (C) first-principles compute hits: 1779
 - runners with (D) external comparator hits: 1080
-- decoration candidates (no C, no D): 709
+- decoration candidates (no C, no D): 710
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -99,7 +99,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1930 | 216.91 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1931 | 217.42 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1185 | 67.21 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 65.64 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1577 | 65.62 | `audited_clean` | **retained** |
@@ -1443,7 +1443,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
 | `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
-| `koide_mru_demotion_note_2026-04-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `koide_kappa_spectrum_operator_bridge_theorem_2026-04-19` |
+| `koide_mru_demotion_note_2026-04-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `koide_kappa_spectrum_operator_bridge_theorem_2026-04-19` |
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
@@ -10038,13 +10038,13 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 
 - **Note:** [`KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`](../../docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md)
 - **claim_type:** `decoration`
-- **claim_scope:** Audited the MRU/SO(2) demotion and the bounded bridge-corollary replacement on Herm_circ(3), not any derivation of spectrum-side Q = 2/3.
+- **claim_scope:** Audited the bounded demotion claim that the MRU/SO(2)-quotient route is not load-bearing here and that operator-side kappa = 2 is carried only as the spectrum-operator bridge corollary of spectrum-side Q = 2/3.
 - **audit_status:** ~~audited_decoration~~
 - **effective_status:** _retained_pending_chain_  (reason: `decoration_waiting_on:koide_kappa_spectrum_operator_bridge_theorem_2026-04-19`)
-- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_mru_demotion_note_2026-04-20-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** On Herm_circ(3), the exact identity a0^2 - 2|z|^2 = 3(a^2 - 2|b|^2) makes operator-side kappa = 2 only the spectrum-side Q = 2/3 corollary, while the displayed spectral-observable Path A does not force an SO(2) quotient.  _(class `A`)_
-- **chain closes:** True — The trace and determinant phase dependence show the displayed Path A is not SO(2)-invariant for generic rotations. The cited retained-bounded spectrum-operator bridge supplies the exact Fourier identity used for the conditional Q = 2/3 iff kappa = 2 transfer.
-- **rationale:** Issue: the bridge-corollary content is exact algebra over a single upstream spectrum-operator bridge, not an independent physical closure. Why this blocks clean: the note adds no new derivation of spectrum-side Q = 2/3 or scalar-measure closure, and its operator-side kappa statement is only the parent corollary plus source-boundary demotion. Repair target: keep this as a boxed corollary/meta demotion, or add an independent physical bridge/closure theorem if theorem-grade status is intended. Claim boundary until fixed: MRU is supplementary, and conditional on spectrum-side Q = 2/3, operator-side kappa = 2 follows on Herm_circ(3).
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-koide_mru_demotion_note_2026-04--11`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The displayed spectral-observable Path A does not derive the scalar-lane SO(2) quotient because generic SO(2) phase rotation changes spectral scalar observables such as tr(H^3) and det(H), while the retained spectrum-operator bridge supplies only the conditional Q = 2/3 => kappa = 2 corollary.  _(class `A`)_
+- **chain closes:** True — The Path A obstruction is an algebraic spectral-invariance check on Herm_circ(3), and the replacement bridge is exactly the one-hop retained_bounded authority supplied in the packet. The note does not claim to close spectrum-side Q = 2/3 or the physical scalar-measure bridge.
+- **rationale:** The runner source performs substantive symbolic and numerical algebraic checks: source-boundary checks, the corrected tr(H^3) phase obstruction, generic non-invariance under SO(2) phase rotation, and the exact spectrum-operator residual identity. There are no external comparator checks in this demotion runner, and the scoped conclusion reduces to standard algebra plus the single retained_bounded spectrum-operator bridge parent. The cited bridge authority is retained-grade for this rubric, and its open limits are respected rather than promoted.
 - **decoration parent:** `koide_kappa_spectrum_operator_bridge_theorem_2026-04-19`
 - **auditor confidence:** high
 

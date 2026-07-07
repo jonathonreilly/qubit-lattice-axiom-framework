@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 192 |
 | **retained_no_go** | 193 |
 | **retained_bounded** | 880 |
-| _retained_pending_chain_ | 5 |
+| _retained_pending_chain_ | 6 |
 | open_gate | 22 |
-| unaudited | 1981 |
+| unaudited | 1980 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 19 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1254 |
+| `audited_clean` | 1255 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2326 |
+| `unaudited` | 2325 |
 
 | claim_type | count |
 |---|---:|
@@ -83,7 +83,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 953 |
 | `leaf` | 1628 |
 
-- **Retained pending chain closure:** 5
+- **Retained pending chain closure:** 6
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -596,6 +596,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -7968,6 +7969,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For any dominant weight (p,q), the irrep V_(p,q) occurs in Sym^p(3) tensor Sym^q(3bar) subset V^{tensor (p+q)} as its Cartan highest-weight component.  _(class `A`)_
 - **chain closes:** True — The Cartan highest-weight occurrence gives a positive witness term at n=p+q, while all tensor-power character multiplicities contribute nonnegatively. The formal convolution statement is confined to finite-character tests, so no L2, continuity, positivity-measure, or bounded-operator closure is being imported.
 - **rationale:** The positivity claim closes by exact SU(3) character algebra: finite tensor powers have nonnegative irreducible multiplicities, and the Cartan component supplies one positive monomial for every dominant weight. The formal all-weight distribution claim is scoped to the algebraic dual of C_fin, where all pairings and actions are finite coefficientwise operations. The runner is supportive rather than a full all-weight decomposition engine, but the source-note proof supplies the needed all-weight argument without an external comparator or tuned input.
+- **auditor confidence:** high
+
+### `gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17`
+
+- **Note:** [`GBARE_ROOT_SU2_SCALE_TRANSPORT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md`](../../docs/GBARE_ROOT_SU2_SCALE_TRANSPORT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional algebraic verification that each root SU(2) subgroup of the graph-first V_3 carrier has Pauli/2 normalization, trace Gram Tr_V3(J_a J_b)=1/2 delta_ab, and unchanged scale under positive bracket-preserving dilation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:staggered_gbare_trace_surface_bridge_note_2026-06-06`)
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-gbare_root_su2_scale_transport_b-08`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On each active coordinate two-plane in V_3, the root generators J_x^(ij), J_y^(ij), J_z^(ij) are exactly Pauli/2 generators, so their commutator, trace Gram, spectrum, and spin period match the per-site Pauli/2 normalization.  _(class `A`)_
+- **chain closes:** True — The displayed matrix-unit definitions directly give the Pauli/2 active subblocks, su(2) brackets, trace normalization, spectrum, and period. The graph-first V_3 carrier is supplied by retained upstream authorities; the co-cycle trace-surface bridge is not needed for this finite root-SU2 scale claim.
+- **rationale:** The load-bearing step is a genuine finite matrix-algebra identity over the V_3 carrier, not a definition substitution, external comparator, or numerical fit. The runner source constructs the Pauli/2 and root-SU2 matrices and checks the relevant commutators, traces, spectra, periods, conjugacy, and trace-surface controls rather than merely printing constants. The co-cycle citation docs/STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md is treated as non-load-bearing/informational under the cycle-break instruction; source-graph repair is still needed to remove or rewrite that markdown link before effective_status can leave retained_pending_chain.
 - **auditor confidence:** high
 
 ### `generation_axiom_boundary_note`

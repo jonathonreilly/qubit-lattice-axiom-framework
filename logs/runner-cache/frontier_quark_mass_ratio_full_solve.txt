@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_mass_ratio_full_solve.py
-runner_sha256: 2b7fbdd80a1e5a28f5fe01b931f39d61329bd1854b230fe98304e8b07a0bc540
-timeout_sec: 120
+runner_sha256: 118387c384128e9a0ab7726643b8ed32e7ed807c6f3f3423c9bda7339ec619a5
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 6.85
+elapsed_sec: 1.98
 status: ok
 ----- stdout -----
 ========================================================================
@@ -65,7 +65,7 @@ PART 3: Intrinsic CP Gap on the Magnitude-Solved Surface
   [PASS] The CP-area deficit is larger than a factor of 5  (factor = 6.53)
 
 ========================================================================
-PART 4: Phase-Relaxed J Ceiling at Fixed CKM Magnitude Corridor
+PART 4: Phase-Relaxed J Probe at Fixed CKM Magnitude Corridor
 ========================================================================
 
   Corridor:
@@ -80,30 +80,30 @@ PART 4: Phase-Relaxed J Ceiling at Fixed CKM Magnitude Corridor
   |V_us|                = 0.225348
   |V_cb|                = 0.043048
   |V_ub|                = 0.004688
-  J_ceiling             = 6.459890e-06
+  J_probe               = 6.459890e-06
   [PASS] Phase relaxation keeps the CKM magnitudes inside the declared corridor  (dv = (-1.9224e-03, +8.7421e-04, +7.7540e-04))
-  [PASS] The phase-relaxed J ceiling still stays below 25% of the atlas J  (J_ceiling/J_atlas = 0.1939)
-  [PASS] Even the relaxed surface still misses the atlas J by more than 4x  (factor = 5.16)
+  [PASS] The phase-relaxed J probe still stays below 30% of the atlas J  (J_probe/J_atlas = 0.1939)
+  [PASS] Even the relaxed surface still misses the atlas J by more than 3x  (factor = 5.16)
 
 ========================================================================
 PART 5: Summary
 ========================================================================
 
-  Strong result on the current branch:
-    the minimal Schur-NNI inversion closes the quark magnitudes well
+  Strong result on the current source:
+    the minimal Schur-NNI inversion supplies the quark magnitudes well
     m_u/m_c = 1.683852e-03
     m_c/m_t = 7.323604e-03
 
   Honest remaining blocker:
-    the same surface does not close the CP area
+    the same surface does not supply the CP area
     intrinsic J = 5.102024e-06
-    relaxed J ceiling = 6.459890e-06
+    relaxed J probe = 6.459890e-06
     atlas J = 3.331135e-05
 
   Interpretation:
     the current quark lane is materially stronger than the lepton lane
     because the magnitudes invert cleanly on this surface
-    but one extra CP-area primitive is still missing for full closure
+    but one extra CP-area carrier/input remains open for the full result
 
 ========================================================================
   TOTAL: PASS=15, FAIL=0

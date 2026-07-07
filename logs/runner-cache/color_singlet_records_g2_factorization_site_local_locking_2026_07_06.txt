@@ -1,0 +1,19 @@
+[PASS] text_record_axiom_quotes_present :: quotes=3
+[PASS] text_g2_antecedent_present
+[PASS] text_g2_residual_present
+[PASS] text_depolarization_row_sentence_present
+[PASS] text_pauli_target_sentence_present
+[PASS] text_block02_r5_inherited_present
+[PASS] text_phase_free_boundary_and_disclaimer_present :: adjacent surface scoped by its own quoted boundary; not consumed for general record phase-freeness
+[PASS] t1_sym_block_site_marginals_distinct :: dA=1, dB=1
+[PASS] t1_trace_distance_positive
+[PASS] t2_theta_marginals_symbolic_phase_independent :: computed in the exact ring Q + Q e^{i theta} + Q e^{-i theta}; no e^{+-i theta} coefficient survives the partial trace
+[PASS] t2_compact_additive_phase_core_control :: finite control for the c*theta = c*(theta+2pi) => c = 0 argument; not a derivation of readout additivity or continuity
+[PASS] t3_adinv_consistency_uniform_traceless_zero
+[PASS] t3_closed_shell_fock_dimension
+[PASS] t3_closed_shell_one_body_gamma_identity
+[PASS] t3_closed_shell_normalized_marginal_i3_over_3
+[PASS] singular_gap_floating_rank_control (environment control only, not theorem evidence) :: rank=1, gap=1.000e+300
+[PASS] ast_self_scan_read_only_no_network_no_subprocess
+[PASS] DECLARATION_color_singlet_records_g2_factorization_site_local_locking_2026_07_06 :: bounded factorization runner; no audit verdicts applied
+TOTAL: PASS=18 FAIL=0

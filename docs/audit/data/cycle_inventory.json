@@ -114,10 +114,10 @@
           "transitive_descendants": 304
         },
         {
-          "audit_status": "unaudited",
+          "audit_status": "audited_conditional",
           "claim_id": "bridge_gap_hk_cube_perron_note_2026-05-06",
           "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
+          "effective_status": "audited_conditional",
           "note_path": "docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md",
           "title": "Bridge Gap \u2014 HK Cube Perron L_s=2 (Block 06)",
           "transitive_descendants": 304
@@ -164,10 +164,10 @@
           "transitive_descendants": 304
         },
         {
-          "audit_status": "unaudited",
+          "audit_status": "audited_conditional",
           "claim_id": "bridge_gap_hk_cube_perron_note_2026-05-06",
           "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
+          "effective_status": "audited_conditional",
           "note_path": "docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md",
           "title": "Bridge Gap \u2014 HK Cube Perron L_s=2 (Block 06)",
           "transitive_descendants": 304

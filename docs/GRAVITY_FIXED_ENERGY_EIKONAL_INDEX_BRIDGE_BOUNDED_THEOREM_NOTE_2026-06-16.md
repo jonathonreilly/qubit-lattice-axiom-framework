@@ -106,15 +106,16 @@ Since `lambda_axis'(k) = 2 sin(k)` and `lambda_axis(k0)=E`, the small-`k`
 weak-field limit gives
 
 ```text
-    c_E = 1/(2E) + O(1),
-    n(s) = 1 - s/(2E) + O(s^2/E^2, E s).
+    c_E = 1/(2E) + 1/24 + O(E),
+    n(s) = 1 - (1/(2E) + 1/24 + O(E)) s + O(s^2/E^2).
 ```
 
-This is the coefficient used by the Premise (4) refractive-index packet.
-Choosing the unit normalization `c_E s = phi_phys` recovers the displayed
-`S = L - int phi_phys dl` form; without that normalization, this note supplies
-the structural index form and the exact coefficient `c_E`, not a physical
-value of `G_Newton`.
+The leading `1/(2E)` term is the coefficient used by the Premise (4)
+refractive-index packet; the next lattice-symbol correction is the displayed
+`1/24` term. Choosing the unit normalization `c_E s = phi_phys` recovers the
+displayed `S = L - int phi_phys dl` form; without that normalization, this note
+supplies the structural index form and the exact coefficient `c_E`, not a
+physical value of `G_Newton`.
 
 ## Proof
 
@@ -191,8 +192,18 @@ Differentiate `lambda_axis(k_s) + s = E`:
 Since `lambda_axis'(k0)>0`, positive `s` lowers `k_s/k0`, matching the
 weak-field source-response convention that positive field lowers the
 normalized action. In the small-`k` regime, `lambda_axis(k0)=E` and
-`lambda_axis'(k0)=2 sin(k0)=2 k0 + O(k0^3)`, so
-`k0 lambda_axis'(k0)=2E+O(E^2)` and `c_E=1/(2E)+O(1)`.
+`lambda_axis'(k0)=2 sin(k0)`. Expanding the axis symbol gives
+
+```text
+    k0 = sqrt(E) + E^(3/2)/24 + O(E^(5/2)),
+    k0 lambda_axis'(k0) = 2E - E^2/6 + O(E^3),
+    c_E = 1/(k0 lambda_axis'(k0))
+        = 1/(2E) + 1/24 + O(E).
+```
+
+Thus the continuum-leading coefficient is `1/(2E)`, but the finite-lattice
+axis-symbol remainder begins with an order-one `1/24` correction. Any use that
+drops the `1/24` term should be read as leading small-`E` order only.
 
 ### 5. Ray deflection form
 
@@ -236,5 +247,5 @@ PYTHONPATH=scripts python3 scripts/frontier_gravity_fixed_energy_eikonal_index_b
 Expected result:
 
 ```text
-TOTAL: PASS=36 FAIL=0
+TOTAL: PASS=40 FAIL=0
 ```

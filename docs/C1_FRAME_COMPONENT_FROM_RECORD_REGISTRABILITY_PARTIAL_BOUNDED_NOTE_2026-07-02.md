@@ -33,14 +33,12 @@ The supplied finite structure used here is only:
 The Record axiom surface is:
 
 ```text
-A site need not carry a record.
+When present, a record locks exactly one admissible local possibility. A
+site never carries more than one record; records are permanent.
 
-When present, a record locks exactly one local possibility from the subset
-available at that site under Admissibility; the locked possibility is invariant
-under repeated readout.
-
-Only records are readable. For any finite collection of pairwise-disjoint
-records, scalar readout `I` is additive, with `I(empty)=0`.
+Only records are readable. A readout value is determined by record content
+alone. For any finite collection of pairwise-disjoint records, scalar readout
+`I` is additive, with `I(empty)=0`.
 ```
 
 The realized-state primitive interface is:
@@ -124,7 +122,7 @@ of the supplied structure that is:
 
 An imported basis or imported frame is an unsupplied auxiliary choice; its orbit
 is the choice set. The definition-level reading from Record is: because "Only
-records are readable" and "a record locks exactly one local possibility", a
+records are readable" and "a record locks exactly one admissible local possibility", a
 value that varies with an unsupplied choice is not locked by any record of the
 supplied structure.
 
@@ -261,10 +259,10 @@ C1b remains open. T3 is the witness: S3's `Y`-dependent frame is not excluded
 by orbit constancy because `Y` is supplied via the realized-state primitive's
 pointwise interface.
 
-The next attack shape is candidate-only: Record says that the locked
-possibility is "invariant under repeated readout." A future note could test
-whether repeated-readout invariance supplies partition state-independence and
-therefore C1b. This note makes no such claim.
+The next attack shape is candidate-only: Record says records are permanent and
+their readout values are determined by record content alone. A future note
+could test whether permanence plus content-determined readout supplies
+partition state-independence and therefore C1b. This note makes no such claim.
 
 ## What This Note Does NOT Claim
 
@@ -286,7 +284,7 @@ therefore C1b. This note makes no such claim.
 | [`ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md`](ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md) | Supplies the scoped precedent pattern: on its supplied slot model, registrable scalar content is symmetric spectral content and frame-dependent components are not registrable. |
 | [`FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md`](FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md) | Landed Block01 dependency; supplies the three parent-named scoring rules, Hadamard witnesses, and the no-imported-frame residual. Independent audit still owns its verdict and any retained-grade dependency closure. |
 | [`SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md`](SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md) | Landed Block02 dependency; supplies the C1/C2 separation and the independence of C1a from C2 at witness level. Independent audit still owns its verdict and any retained-grade dependency closure. |
-| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Supplies the Record locking, repeated-readout invariance, readability, and finite-additivity sentences; also shows measurement basis and context selection remain outside axiom content. |
+| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Supplies the Record locking, permanence, content-determined readability, and finite-additivity sentences; also shows measurement basis and context selection remain outside axiom content. |
 | [`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) | Supplies the pointwise realized-state evaluation interface and the no-state-content boundary for `Y`. |
 | [`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`](REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md) | The repo's existing registrability characterization (supplied-context boundary; Conditional Implication B). Role: in-repo source of the orbit-constancy mechanism that R* transports to unsupplied choices. Dependency class: unaudited bounded theorem; independent audit must adjudicate it before retained-grade dependency closure. |
 

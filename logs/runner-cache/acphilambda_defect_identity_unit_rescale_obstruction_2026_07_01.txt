@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py
-runner_sha256: 71e39aefb2005a2fe0bf13a3b371adfb6b28cd62e89f79c337d7cb0760b2d3e7
+runner_sha256: 5428a6d9e3390f94cb4f422fc4289d37966c8d08fe79efeafb2f74cb2cbbfd42
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 === AC_phi_lambda defect identity-unit rescale obstruction ===

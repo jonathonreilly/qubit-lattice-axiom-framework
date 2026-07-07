@@ -79,12 +79,11 @@ the Tier-A registry.
 1. **Record axiom** (approved axiom node `minimal_axioms`,
    [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)), quoted:
 
-   > "When present, a record locks exactly one local possibility from the
-   > subset available at that site under Admissibility; the locked possibility
-   > is invariant under repeated readout. Only records are readable. A readout
-   > value is determined by record content alone. For any finite collection of
-   > pairwise-disjoint records, scalar readout `I` is additive, with
-   > `I(empty)=0`."
+   > "When present, a record locks exactly one admissible local possibility. A
+   > site never carries more than one record; records are permanent. Only
+   > records are readable. A readout value is determined by record content
+   > alone. For any finite collection of pairwise-disjoint records, scalar
+   > readout `I` is additive, with `I(empty)=0`."
 
 2. **Retained `SU(3)` character surface**
    ([`GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md),
@@ -172,9 +171,10 @@ truncation drift (|n| <= 30 vs 60): 0 at double precision;  tail mass at
 
 **Record registration (interface match, bounded).** Each finite truncation is
 a finite family of mutually exclusive alternatives summing to the identity —
-the shape the Record axiom registers (lock exactly one, invariant under
-repeated readout); the matched label's repeat-readout invariance is exactly
-the superselection behavior of the glued surface. Record occurrence is not
+the shape the Record axiom registers (lock exactly one admissible alternative,
+records are permanent, and readout is determined by record content); the
+matched label's stability is exactly the superselection behavior of the glued
+surface. Record occurrence is not
 derived and not claimed; the decomposition is derived here, not supplied by
 Record.
 

@@ -248,14 +248,12 @@ all-mode law or the semigroup property.
 Minimal axiom boundary, quoted from
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md):
 
-> "A site need not carry a record."
+> "When present, a record locks exactly one admissible local possibility. A
+> site never carries more than one record; records are permanent."
 
-> "When present, a record locks exactly one local possibility from the subset
-> available at that site under Admissibility; the locked possibility is
-> invariant under repeated readout."
-
-> "Only records are readable. For any finite collection of pairwise-disjoint
-> records, scalar readout `I` is additive, with `I(empty)=0`."
+> "Only records are readable. A readout value is determined by record content
+> alone. For any finite collection of pairwise-disjoint records, scalar readout
+> `I` is additive, with `I(empty)=0`."
 
 The same source states that Admissibility "does not choose a Hamiltonian or
 transfer operator, supply transition probabilities or weights, select a scalar

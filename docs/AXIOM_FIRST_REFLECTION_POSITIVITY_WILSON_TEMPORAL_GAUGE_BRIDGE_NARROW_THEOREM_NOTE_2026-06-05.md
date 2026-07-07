@@ -74,7 +74,7 @@ explicit lattice.
 >   `(\text{positive-half})·(\text{plane positive kernel})·(\text{reflected half})`
 >   and equals `\sum_a c_a\,W_I(a)\,\overline{W_J(a)}`, i.e. `G = W\,\mathrm{diag}(c)\,W^†`
 >   with `c_a ≥ 0`. Hence `G ⪰ 0`: the RP inequality `⟨Θ(F)·F⟩ ≥ 0` holds for the
->   integrated pure-gauge theory. (Reproved exactly for `Z_N`, `N∈{2,3,4,5}`, and
+>   integrated pure-gauge theory on the groups reproven here. (Reproved exactly for `Z_N`, `N∈{2,3,4,5}`, and
 >   analytically for the `U(1)` plane kernel by Bessel positivity, with a `U(1)`
 >   quadrature Gram cross-check; a numeric `SU(2)` sample is PSD within Monte Carlo
 >   error - runner Parts C, D, E.)
@@ -124,10 +124,13 @@ Osterwalder-Seiler / Montvay-Münster results are named only as comparator.
 
 The bridge is honest about gauge-group scope: the finite-Haar exact reprove is
 on `Z_N`; the `U(1)` plane-kernel positivity is analytic by Bessel positive
-series; the general `SU(N)` case is supported by the same link-reflection
-structure (and a numeric `SU(2)` sample), and the fully-integrated interacting
-`SU(N)` form is left to the row's other reduction factors plus the structural
-argument of §4.
+series; the `SU(2)` case is a numeric Haar Monte Carlo sample. For `SU(N≥3)` the
+plane-kernel character-coefficient nonnegativity is **not reproven here** —
+Peter-Weyl gives the character expansion but not the sign of its coefficients on a
+nonabelian group — so `SU(N≥3)` Wilson-plane positivity is carried only by the
+published Osterwalder-Seiler comparator (§9), not by a derivation in this note.
+The fully-integrated interacting `SU(N)` form is left to the row's other reduction
+factors together with that comparator.
 
 ## 1. Setup — Wilson plaquette in temporal gauge with link/time reflection
 
@@ -215,8 +218,8 @@ into a positive (Gram) kernel. We reprove this directly for the temporal-gauge
 straddling weight.
 
 Per straddling link the plane Boltzmann factor is `\exp(β\,\mathrm{Re}\,
-\mathrm{Tr}[U_+ U_-^†])`, a class function of `U_+ U_-^†`. Its character expansion
-on the gauge group has nonnegative coefficients:
+\mathrm{Tr}[U_+ U_-^†])`, a class function of `U_+ U_-^†`. For `Z_N` and `U(1)`
+its character expansion has nonnegative coefficients:
 
 - **`Z_N`.** `\exp(β\,\mathrm{Re}\,U^{n})` is circulant in `n_+ − n_-`; its
   discrete Fourier (character) coefficients are real and **nonnegative**, so
@@ -267,7 +270,8 @@ Inserting the plane-kernel spectral decomposition `e^{B_0} = ∑_a κ_a φ_a(c_0
 
 with all `κ_a ≥ 0`. Therefore `G ⪰ 0`: the integrated reflected Gram over the
 `A_+^(2)` basis is a positive semidefinite Hermitian matrix, i.e.
-`⟨Θ(F)·F⟩ ≥ 0` for the integrated pure-gauge theory. This is the abstract `(G3)`
+`⟨Θ(F)·F⟩ ≥ 0` for the integrated pure-gauge theory (established here for `Z_N`
+and `U(1)`, with `SU(2)` sampled numerically). This is the abstract `(G3)`
 sesquilinear-form structure of the gauge-half note (`G(F,F') = ⟨ψ²F | ψ²F'⟩`,
 PSD), instantiated on the genuine Wilson-plaquette boundary data and integrated
 over the gauge field.
@@ -285,21 +289,28 @@ The runner reproves this two ways and stress-tests it:
   `\min\mathrm{eig} = −0.48`, confirming the PSD is a genuine property of the
   correct OS reflection. (Runner Part C: C2.)
 
-**Structural argument for general `SU(N)`.** The construction uses only that (a)
-temporal gauge reduces the straddling plaquette to a single class function of
-`U_+ U_-^†`, (b) `\mathrm{Re}\,\mathrm{Tr}` is reflection-plane symmetric, and (c)
-the heat-kernel/character expansion of `\exp(β\,\mathrm{Re}\,\mathrm{Tr})` on a
-compact group has nonnegative coefficients (Peter-Weyl: the expansion of a
-positive class function in irreducible characters; for `\exp(β\,\mathrm{Re}\,
-\mathrm{Tr}\,U)` the coefficients are the well-known nonnegative
-modified-Bessel-type integrals). None of (a)–(c) is special to abelian groups,
-which is why the same link-reflection Gram structure carries to `SU(N)`. As an
-exhibit, the runner's numeric `SU(2)` Haar Monte Carlo sample gives a PSD Gram
-(`\min\mathrm{eig} = +0.032`, positive within Monte Carlo error). The finite-Haar
-exact reprove here is `Z_N`; the `U(1)` exact input is the analytic
-Bessel-series plane-kernel positivity. The `SU(N)` statement rests on the
-structural argument plus the `SU(2)` sample, and is stated as such, not as an
-exact finite computation.
+**Scope of the `SU(N)` generalization (comparator, not reproven here).** Two
+ingredients of the construction are group-generic: (a) temporal gauge reduces the
+straddling plaquette to a single class function of `U_+ U_-^†`, and (b)
+`\mathrm{Re}\,\mathrm{Tr}` is reflection-plane symmetric. These hold for every
+compact `G`. The load-bearing third ingredient — (c) that the character expansion
+of `\exp(β\,\mathrm{Re}\,\mathrm{Tr})` has **nonnegative** coefficients — is
+**group-dependent**, and is established in this note only for `Z_N` (exact
+discrete Fourier) and `U(1)` (Bessel positive-series certificate), with `SU(2)`
+checked by numeric Haar Monte Carlo (`\min\mathrm{eig} = +0.032`, positive within
+Monte Carlo error). For `SU(N≥3)` it is **not** reproven here: Peter-Weyl supplies
+the character *expansion* of a class function, but positivity of a class function
+does **not** by itself imply nonnegative character coefficients on a nonabelian
+group (it does on abelian groups, where the irreducible characters are
+one-dimensional), so §3's mechanism does not carry to `SU(N≥3)` on its own. The
+nonnegativity of the `SU(N)` Wilson-plane kernel is nonetheless a true result of
+the published Osterwalder-Seiler construction (§9), secured there by the
+Osterwalder-Seiler reflection-positivity argument rather than by
+character-coefficient signs; this note names it as a **comparator only** — not a
+derivation input, and not something reproven here. The finite-Haar exact reprove
+surface of this note is therefore `Z_N`, with `U(1)` analytic Bessel positivity
+and an `SU(2)` numeric sample; `SU(N≥3)` Wilson-plane positivity is left to the
+Osterwalder-Seiler comparator.
 
 ## 5. Test plan / runner
 
@@ -339,8 +350,9 @@ This note is deliberately narrow. It does **not**:
   factor) and the positive determinant weight are separate factors, not re-derived
   here.
 - **Prove the fully-integrated interacting `SU(N)` RP from scratch.** The exact
-  reprove is on `Z_N`/`U(1)`; the `SU(N)` case rests on the structural
-  Peter-Weyl/heat-kernel argument of §4 plus the numeric `SU(2)` sample. A fully
+  reprove is on `Z_N`/`U(1)` with an `SU(2)` numeric sample; for `SU(N≥3)` the
+  Wilson-plane character-coefficient positivity is **not** established here (see
+  §4) and is carried only by the Osterwalder-Seiler comparator (§9). A fully
   rigorous `SU(N)` finite computation is not performed.
 - **Claim more than the pure-gauge half on the two-slice lattice.** The explicit
   carrier is the two-time-slice lattice with `A_+^(2)` observables; this note does
@@ -371,8 +383,8 @@ observables." This note supplies that bridge for the **bosonic half**:
 - it proves the **integrated three-factor RP form** `G = W\,\mathrm{diag}(κ)\,W^†
   ⪰ 0` for the named `A_+^(2)` observables (W3), with finite-exact `Z_N`
   evidence, analytic `U(1)` plane-kernel positivity, a `U(1)` quadrature
-  cross-check, a numeric `SU(2)` sample, and a Peter-Weyl structural argument for
-  `SU(N)`.
+  cross-check, and a numeric `SU(2)` sample; `SU(N≥3)` is left to the
+  Osterwalder-Seiler comparator (§9), not reproven here.
 
 Combined with the row's already-`retained`/`retained_bounded` factors — the
 positive determinant weight
@@ -393,8 +405,8 @@ The claim is not "full interacting `SU(N)` RP is proved" and not "the fermion
 sector is supplied here." It is: the gauge-half norm-square hypotheses, applied to
 the Wilson plaquette temporal-gauge boundary, yield the integrated three-factor RP
 form `G ⪰ 0` for the stated `A_+^(2)` observables, finite-exact on `Z_N`, with
-`U(1)` plane-kernel positivity certified by Bessel positive series, and by
-structure + `SU(2)` sample for `SU(N)`.
+`U(1)` plane-kernel positivity certified by Bessel positive series and an `SU(2)`
+numeric sample; `SU(N≥3)` is the Osterwalder-Seiler comparator, not reproven here.
 
 ### N1 — Alternative route enumeration
 
@@ -403,7 +415,7 @@ structure + `SU(2)` sample for `SU(N)`.
 | Abstract gauge-half identity alone | Use the retained `(G1)–(G3)` Cauchy-Schwarz identity directly. | Insufficient: that note explicitly disclaims the Wilson-plaquette boundary; the carrier `(X,μ,Θ,S_+)` must be the Wilson data. | ATTEMPTED |
 | Wilson temporal-gauge link reflection (this note) | Split `B = B_+ + Θ B_+ + B_0`, factor the plane weight, integrate. | `Z_N` finite-exact; `U(1)` plane kernel Bessel-certified with quadrature Gram cross-check; `G = W\,\mathrm{diag}(κ)\,W^† ⪰ 0`. | ADOPTED |
 | Drop `Θ`'s conjugation | Treat `Θ` as linear in the reflected factor. | Non-PSD control (`min eig = −0.48`): the correct antilinear `Θ` is load-bearing. | RULED OUT BY RUNNER |
-| Full interacting `SU(N)` finite reprove | Exact finite-Haar PSD on `SU(N)`. | Not performed; `SU(N)` rests on Peter-Weyl structure + `SU(2)` sample. | OUT OF SCOPE |
+| Full interacting `SU(N)` finite reprove | Exact finite-Haar PSD on `SU(N)`. | Not performed; reproven on `Z_N`/`U(1)` with `SU(2)` sampled, `SU(N≥3)` left to the Osterwalder-Seiler comparator. | OUT OF SCOPE |
 | Fermion-sector inclusion | Add the staggered determinant weight + 2-step transfer here. | Out of scope: those are the row's other two (already retained) factors. | OUT OF SCOPE |
 
 ### N2 — Wall-independence audit
@@ -420,18 +432,20 @@ factorization is what converts plane-kernel positivity into Gram positivity.
 
 The hidden premises are explicit: temporal gauge (`U_0 = 1`), the link/time
 reflection `θ: t ↦ 1−t` with antilinear `Θ`, Haar measure on links, the
-`A_+^(2)` character-degree-`≤2` observable basis, and the compact-group character
-nonnegativity (Peter-Weyl / Jacobi-Anger). The `SU(N)` generality is flagged as a
-structural argument plus a numeric `SU(2)` sample, **not** an exact computation.
+`A_+^(2)` character-degree-`≤2` observable basis, and the plane-kernel character
+nonnegativity (exact for `Z_N`; Bessel/Jacobi-Anger for `U(1)`). For `SU(N≥3)`
+that nonnegativity is **not** established here — Peter-Weyl gives the character
+expansion but not its coefficient signs on a nonabelian group — and is flagged as
+the Osterwalder-Seiler comparator, with `SU(2)` shown only as a numeric sample.
 The published Osterwalder-Seiler / Montvay-Münster results are comparator only;
-the positivity is reproven from numpy/sympy primitives.
+the positivity reproven here (on `Z_N`/`U(1)`) is from numpy/sympy primitives.
 
 ### N4 — Residual matching
 
 | target repair item | what this note supplies | match? |
 |---|---|---|
 | "apply gauge-half norm-square hypotheses to Wilson plaquette temporal-gauge boundary" | W1 (split `B_- = Θ B_+`, plane `B_0`) + W2 (plane kernel = norm-square) on the Wilson data | yes (bosonic half) |
-| "prove the integrated three-factor RP form for the stated `A_+^(2)` observables" | W3 (`G = W\,\mathrm{diag}(κ)\,W^† ⪰ 0`; `Z_N` finite-exact, `U(1)` Bessel-certified plane kernel plus quadrature Gram check) | yes (bosonic half; `SU(N)` by structure + sample) |
+| "prove the integrated three-factor RP form for the stated `A_+^(2)` observables" | W3 (`G = W\,\mathrm{diag}(κ)\,W^† ⪰ 0`; `Z_N` finite-exact, `U(1)` Bessel-certified plane kernel plus quadrature Gram check) | yes (bosonic half; `Z_N`/`U(1)` reproven, `SU(2)` sampled, `SU(N≥3)` = OS comparator) |
 | fermion-sector transfer positivity / determinant weight | not here — the row's other (retained) factors | no; out of scope |
 
 ### N5 — Rhetoric audit
@@ -447,23 +461,25 @@ include the fermion sector, and does not set the target row's status.
 
 No new axiom or primitive is proposed. The legitimate closure path is exactly what
 this note does: realize the retained gauge-half hypotheses on the Wilson boundary
-and reprove PSD on tractable groups, leaving the `SU(N)` generalization to the
-named structural argument and the fermion factor to the row's other retained
-dependencies.
+and reprove PSD on the tractable groups (`Z_N`/`U(1)`, with `SU(2)` sampled),
+leaving `SU(N≥3)` Wilson-plane positivity to the Osterwalder-Seiler comparator and
+the fermion factor to the row's other retained dependencies.
 
 ### N7 — Steelman
 
 The strongest objection is that the finite exact computation is abelian (`Z_N`)
 and the `U(1)` full reflected-Gram check is quadrature rather than a finite-Haar
-exact computation, so a hostile reviewer may withhold the unqualified `SU(N)`
+exact computation, so a hostile reviewer may withhold any unqualified `SU(N)`
 statement. That objection is correct against an unbounded "full interacting
-`SU(N)` RP" claim, which is why this note is bounded: the `SU(N)` case is stated
-as a structural Peter-Weyl argument plus a numeric `SU(2)` sample, and the exact
-theorem surface is `Z_N` finite-Haar plus `U(1)` Bessel plane-kernel positivity.
-The abelian reprove already carries the full mechanism (split + nonnegative
-character kernel + spectral Gram factorization); the residual is the nonabelian
-character-coefficient positivity, which is standard but not finitely recomputed
-here.
+`SU(N)` RP" claim, which is why this note is bounded: for `SU(N≥3)` the
+Wilson-plane character-coefficient positivity is **not** established here (it does
+not follow from Peter-Weyl, which gives only the expansion) and is left to the
+Osterwalder-Seiler comparator; the exact theorem surface of this note is `Z_N`
+finite-Haar plus `U(1)` Bessel plane-kernel positivity, with `SU(2)` as a numeric
+sample. The abelian/`U(1)` reprove carries the full mechanism on those groups
+(split + nonnegative character kernel + spectral Gram factorization); the residual
+nonabelian character-coefficient positivity is a published Osterwalder-Seiler
+result, not reproven here.
 
 ### N8 — Cross-cycle echo
 
@@ -498,9 +514,11 @@ does not absorb the still-open fermion or full-`SU(N)` surfaces.
   1994), Sec. 3.4 (transfer matrix / reflection positivity), as the standard RP
   comparator.
 - The Jacobi-Anger / modified-Bessel expansion `e^{z\cos t} = ∑_n I_n(z) e^{int}`
-  with `I_n(z) ≥ 0` for `z > 0`, and the Peter-Weyl character expansion of a
-  positive class function on a compact group, as standard comparators for the
-  plane-kernel nonnegativity reproven in Part B.
+  with `I_n(z) ≥ 0` for `z > 0`, as the comparator for the `U(1)` plane-kernel
+  nonnegativity reproven in Part B. (Peter-Weyl supplies the character *expansion*
+  of a class function on a compact group, but not the sign of its coefficients on
+  a nonabelian group; the `SU(N≥3)` Wilson-plane positivity is carried by the
+  Osterwalder-Seiler entry above, not reproven here.)
 
 **See-also (non-load-bearing, backticked to avoid citation-graph edges; the target
 row is `audited_conditional` and is deliberately NOT linked):**
@@ -520,11 +538,12 @@ two-time-slice lattice with periodic spatial direction and temporal gauge
 (character-degree-`≤2` positive-half monomials / plaquette / two-link traces); (4)
 the retained gauge-half norm-square hypotheses
 `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10`,
-here realized on the Wilson data; (5) the standard compact-group character
-nonnegativity (Peter-Weyl / Jacobi-Anger; finite-exact on `Z_N`, Bessel-certified
-on the `U(1)` plane kernel). The finite-Haar exact reprove surface is `Z_N`;
-`SU(N)` is supported by a structural argument and a numeric `SU(2)` sample,
-stated as such.
+here realized on the Wilson data; (5) the plane-kernel character nonnegativity,
+reproven here finite-exact on `Z_N` and Bessel-certified on the `U(1)` plane
+kernel (Jacobi-Anger), with `SU(2)` sampled numerically. The finite-Haar exact
+reprove surface is `Z_N`/`U(1)`; for `SU(N≥3)` the Wilson-plane positivity is
+**not** established here (Peter-Weyl gives the expansion, not its coefficient
+signs) and is carried by the Osterwalder-Seiler comparator (§9), stated as such.
 
 **Forbidden-imports check:** this note introduces **no** new axiom, primitive, repo
 vocabulary, or class tag. It uses only standard mathematical terms ("reflection

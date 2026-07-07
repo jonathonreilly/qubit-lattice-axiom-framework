@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/frontier_theta_mass_side_composition_close_2026_07_03.py
+runner_sha256: 1cb7b8aee6c43578adf6c2d7ce3eb10c28a4bc608af32ae84a372ea4547f5297
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+CHECK 01: PASS -- shared occupancy bridge sentence is present verbatim
+CHECK 02: PASS -- 2026-07-01 pairing formula source fragment is present verbatim -- det(M_KS + m I) = (prod over positive lambda of (m^2 + lambda^2)) * m^(2z) >= 0 for every real m of either sign.
+CHECK 03: PASS -- 2026-06-12 conditional sentence is present verbatim -- The statement is deliberately conditional on the supplied mass determinant channel.
+CHECK 04: PASS -- reimplemented M_KS matrices are exactly real antisymmetric
+CHECK 05: PASS -- reimplemented M_KS matrices obey exact bipartite grading
+CHECK 06: PASS -- det(M_KS + m I) >= 0 on the signed 2026-07-01 mass grid -- minimum determinant = 0.016258
+CHECK 07: PASS -- det(M_KS + m I) is exactly even on the signed mass grid
+CHECK 08: PASS -- pairing formula det = prod(m^2 + lambda^2) * m^(2z) holds exactly -- positive lambdas=[Fraction(1, 2), Fraction(3, 2), Fraction(5, 2)], 2z=2
+CHECK 09: PASS -- pairing formula is nonnegative for zero and both mass signs
+CHECK 10: PASS -- Hermitian Brannen flavor tensor determinant factorizes exactly -- det(M_KS x I_3 + I x A) = product_k det(M_KS + a_k I)
+CHECK 11: PASS -- signed-Brannen exact dials stay on the zero branch -- 3 dials contain a negative root; largest |det|=3358997906234133322056573361/1000000000000000000000000
+CHECK 12: PASS -- phase characters compose exactly on explicit independent blocks
+CHECK 13: PASS -- K/CPT equality exp(i k phi) = exp(-i k phi) leaves only k=0 -- sampled integer characters with formal all-phi guard: [0]
+CHECK 14: PASS -- hostile guard stays excluded: cos(phi+psi) violates block multiplication -- cos(2*pi/3)=-1/2, cos(pi/3)^2=1/4
+CHECK 15: PASS -- composition conditional-input count is one -- the 2026-06-12 supplied channel is this mass-side use of the shared bridge
+CHECK 16: PASS -- 2026-07-01 T3c documented cross-check value is guarded -- roots = [-0.7606  0.4678  3.2928], det = 2.262e+10
+FILES: docs/THETA_MASS_SIDE_COMPOSITION_CLOSE_ON_SHARED_OCCUPANCY_BRIDGE_BOUNDED_NOTE_2026-07-03.md; scripts/frontier_theta_mass_side_composition_close_2026_07_03.py
+TOTAL: PASS=16 FAIL=0; CHECK_COUNT=16
+SURVIVING CONDITIONALS: count=1; "one record locking one admissible local possibility is one statistical slot, and the relevant locked possibilities for the generation doublet are the K/CPT record-outcome orbits rather than the real components of the fluctuation coordinate."
+CROSS-CHECK: 2026-07-01 T3c roots = [-0.7606  0.4678  3.2928], det = 2.262e+10
+UNCERTAINTIES: gauge side untouched: theta_gauge, real-positive Wilson action surface, multi-plaquette/large-winding gauge data; registry untouched.
+
+----- stderr -----
+

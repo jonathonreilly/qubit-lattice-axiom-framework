@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.py
 runner_sha256: 8753ae341e3a4cf78ff6ca1003b5ac0200a6e04e54cebc34db45dcc073278a93
-timeout_sec: 300
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================

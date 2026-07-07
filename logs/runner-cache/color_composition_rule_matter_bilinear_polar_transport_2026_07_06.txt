@@ -1,0 +1,13 @@
+[PASS] exact_polar_witness_signed_perm_times_rational_diagonal rank=3 detD=8
+[PASS] exact_covariance_signed_permutation_frames
+[PASS] exact_det_and_z3_bookkeeping_on_polar_unitaries det(polarU)=1 exact; odd-permutation case det=-1 reduced exactly on the rational Z_3 branch; ambiguity = cube roots of unity
+[PASS] exact_path_ordered_wilson_invariance W=0
+[PASS] exact_rank_exhibits_and_boundary_discontinuity polar factors COMPUTED exactly at eps=1/2,1/4,1/8,1/64: constant I vs constant diag(1,1,-1); divergent at the rank-2 limit
+[PASS] seeded_numeric_covariance_controls max_dev=1.30e-14 min_gap=3.34e-01
+[PASS] seeded_numeric_wilson_invariance dev=2.48e-16 min_gap=3.28e-01
+[PASS] text_audit_june8_routing_quotes quotes=3
+[PASS] text_audit_june8_non_autonomy_quotes quotes=2
+[PASS] ast_self_scan_no_network_no_subprocess
+DECLARATION premise=SUPPLIED-C3; untouched_walls=ST1/ST2_generator_rate_action,graded_constraint_port3_port4; no_dynamics_no_weights_no_probabilities
+EXACT polar_witness=Fractions signed_permutation_x_diag; covariance=signed_permutation_frames; wilson=path_ordered_trace
+TOTAL PASS=10 FAIL=0

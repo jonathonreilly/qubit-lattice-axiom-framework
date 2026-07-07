@@ -370,6 +370,62 @@ class BuildCitationGraphParserTest(unittest.TestCase):
             m.REPO_ROOT = original
         self.assertEqual(helpers, {"gate_b_connectivity_tolerance", "plain_helper"})
 
+    def test_static_dynamic_loader_paths_are_detected(self):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("dynamic_helper", "VALUE = 1\n")
+            primary = self._write(
+                "primary",
+                "import importlib.util\n"
+                "from pathlib import Path\n"
+                "ROOT = Path(__file__).resolve().parents[1]\n"
+                "HELPER = ROOT / 'scripts' / 'dynamic_helper.py'\n"
+                "spec = importlib.util.spec_from_file_location('dynamic_helper', HELPER)\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, {"dynamic_helper"})
+
+    def test_local_dynamic_loader_wrapper_paths_are_detected(self):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("wrapped_helper", "VALUE = 2\n")
+            primary = self._write(
+                "primary",
+                "import importlib.util\n"
+                "from pathlib import Path\n"
+                "ROOT = Path(__file__).resolve().parents[1]\n"
+                "WRAPPED = ROOT / 'scripts/wrapped_helper.py'\n"
+                "def load_module(name, path):\n"
+                "    return importlib.util.spec_from_file_location(name, path)\n"
+                "load_module('wrapped_helper', WRAPPED)\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, {"wrapped_helper"})
+
+    def test_load_frontier_filename_keyword_is_detected(self):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("keyword_helper", "VALUE = 3\n")
+            primary = self._write(
+                "primary",
+                "from _frontier_loader import load_frontier\n"
+                "load_frontier('keyword_helper', filename='keyword_helper.py')\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, {"keyword_helper"})
+
 
 class SeedLedgerTest(unittest.TestCase):
     def setUp(self):

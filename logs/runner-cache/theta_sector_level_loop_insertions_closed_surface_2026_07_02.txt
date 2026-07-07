@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/theta_sector_level_loop_insertions_closed_surface_2026_07_02.py
+runner_sha256: a0cc51d174f92b7a999d5766f4d84ecc4f877a1085f9d29f2822f88e2dd4bdc4
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 16.58
+status: ok
+----- stdout -----
+A. U(1) ground (sector-level loop insertions; fusion = label shift):
+  [PASS] A1 no insertion (q=0): finite-window constrained enumeration = sum_n c_n^4 (re-earn glue)
+         enum=1.647524496051e+00 form=1.647524496051e+00 |diff|=2.22e-16
+  [PASS] A2 charge-1 loop around one plaquette: finite-window enumeration = sum_n c_n^3 c_{n+1}
+         enum=5.926383502809e-01 form=5.926383502809e-01 |diff|=1.11e-16
+  [PASS] A3 charge-2 loop: finite-window enumeration = sum_n c_n^3 c_{n+2}; wrong-fusion sum_n c_n^3 c_{n+1} rejected (relative margin > 1e-3)
+         enum=1.109383910847e-01 form=1.109383910847e-01 wrong=5.926383502809e-01 rel_margin=4.342e+00
+  [PASS] A4 insertion acts diagonally in the sector sum: exterior label n contributes exactly c_n^3 c_{n+q} for q in {0,1,2} on the finite window
+         worst per-sector term mismatch = 1.39e-17
+
+B. Conjugation equivariance (charge flip q -> -q maps sector n -> -n):
+  [PASS] B1 c_n = c_{-n} and q=-1 value equals the q=+1 value; per-sector table maps sector n -> -n under q -> -q (nontrivial-case witness for SU(2) self-conjugacy note D)
+         c symmetric=True Z(q=-1)=5.926383503e-01 Z(q=+1)=5.926383503e-01 worst sector-map mismatch=0.00e+00
+
+C. SU(2) fusion at sector level (heat-kernel b_j; character calculus):
+  [PASS] C1 fusion-gluing identity Int chi_{j1}(U) chi_{1/2}(U) chi_{j2}(U^dag) = N^{j2}_{1/2 j1} at quadrature tol 3e-3 (DERIVED convention), with discriminating zero at (0, 3/2)
+         worst |val-N| on fusion pairs=7.14e-04 non-fusion(0,3/2)=-2.25e-15 grid norm offset=7.14e-04
+  [PASS] C2 two-cell insertion assembled from the verified identity is sector-diagonal: contributions indexed by pairs (j1, j2) with j2 in 1/2 x j1 only; no-insertion glue forces j1 = j2 (Z = sum_j b_j^2)
+         Z(no insert)=sum b_j^2=1.509171289 Z_{1/2}(V=2)=1.728901790 worst orthonormality mismatch=7.14e-04 sector pairs (j1<=3/2): [(0.0, 0.5), (0.5, 0.0), (0.5, 1.0), (1.0, 0.5), (1.0, 1.5), (1.5, 1.0), (1.5, 2.0)]
+  [PASS] C3 generic-argument gluing sketch rejected: inferred coefficient in Int chi_{1/2}(XU) chi_{1/2}(U) chi_1(U^dag Y) / chi_1(XY) is not argument-independent; class-trace coefficient is the stable fusion weight
+         coeffs=[class 0.333571, X 0.571213, X/Y 0.448678] spread=2.376e-01 vals=[1.001e+00, 7.654e-01, -3.421e-01] denoms=[3.000e+00, 1.340e+00, -7.624e-01]
+
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

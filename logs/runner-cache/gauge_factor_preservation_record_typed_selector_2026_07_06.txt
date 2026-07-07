@@ -1,0 +1,11 @@
+[PASS] u6_dim_36_exact
+[PASS] factorwise_dim_12_center_overlap
+[PASS] stabilizer_equals_factorwise_both_containments
+[PASS] decomposition_bookkeeping_exact
+[PASS] lie_structure_closure_cross_zero_abelian_central
+[PASS] killing_form_nondegenerate_block_diagonal
+[PASS] quoted_source_sentences_text_audit
+[PASS] ast_self_scan_readonly_no_network_no_subprocess
+DECLARATION premises=minimal_axioms_context; REGISTERED-FACTOR(named conditional, not axiom content); supplied C^3 tensor C^2 model surface; exact finite matrix algebra
+DIMENSIONS u6=36 factorwise=12 stabilizer=12 su3=8 su2=3 semisimple=11 abelian_image=1 relative_identity_kernel=1
+TOTAL PASS=8 FAIL=0

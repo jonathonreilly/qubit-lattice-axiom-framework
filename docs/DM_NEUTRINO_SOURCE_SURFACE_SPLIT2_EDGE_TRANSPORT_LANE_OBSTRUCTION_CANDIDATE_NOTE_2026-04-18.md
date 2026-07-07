@@ -139,7 +139,7 @@ best winning transport column stays decisively off the preferred lane:
 
 ## Interpretation
 
-This does **not** close the carrier problem. It does sharpen it.
+This does **not** settle the carrier problem. It does sharpen it.
 
 The broad split-2 low-slack undercut is a real broad-bundle phenomenon, but on
 the tested edge interval it is **transport-incompatible** with the preferred
@@ -157,4 +157,4 @@ That is a much smaller target than generic broad-window global dominance.
 ## Boundary
 
 This is still a numerical candidate on the tested broad split-2 edge. It is
-not interval-certified exact-carrier closure, and it is not flagship closure.
+not an interval-certified exact-carrier certificate, and it is not a flagship result.

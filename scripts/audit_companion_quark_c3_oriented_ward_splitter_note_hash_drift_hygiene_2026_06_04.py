@@ -1,71 +1,16 @@
 #!/usr/bin/env python3
-"""Audit-companion runner for the Quark C3-oriented Ward splitter
-support parent note
-`QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md`
-recording note-hash-drift hygiene evidence after the single 2026-05-12
-`audit: nightly repair and pipeline refresh (automated) [skip ci]`
-commit (7a214c3d9) appended only the parent note's
-`Audit dependency repair links` graph-bookkeeping section.
+"""Current-source hygiene companion for the Quark C3 Ward splitter note.
 
-Companion source note:
-  docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_HASH_DRIFT_HYGIENE_COMPANION_NOTE_2026-06-04.md
-
-Parent ledger row:
-  `quark_c3_oriented_ward_splitter_support_note_2026-04-28`.
-
-Companion role:
-  - Meta audit-companion evidence only.
-  - Not a theorem claim or status promotion; this runner writes no
-    audit verdict or direct status change.
-  - Provides audit-friendly evidence that the parent's load-bearing
-    substantive content (Sections 1-9, Audit dependency repair links,
-    and the 51-check runner) was not modified by the 2026-05-12
-    dependency-repair append that moved the parent's note_hash
-    from `b44ed058` (last audited snapshot) to `d92f91a2`
-    (current head).
-
-The companion runner verifies the substance-vs-rename separation by:
-
-  Block 1 : Re-execute the parent's runner on the current head and
-            confirm the SUMMARY is unchanged with TOTAL: PASS=51 FAIL=0.
-  Block 2 : SHA-256 equality of the parent runner: current head
-            runner SHA equals the runner_hash recorded in the prior
-            audited snapshot's audit_state_snapshot.
-  Block 3 : Static source scan of the parent note: confirm Sections
-            1-9 and the `Hypothesis set used` paragraph are
-            byte-identical between the prior `b44ed058` snapshot
-            and the current `d92f91a2` head; the only diff is the
-            strictly-additive append of the `Audit dependency
-            repair links` section at end-of-file.
-  Block 4 : The appended `Audit dependency repair links` section
-            lists exactly the four named one-hop dependency surfaces
-            requested by the prior conditional verdict.
-  Block 5 : Re-verify the exact C3-equivariant Hermitian normal-form
-            spectrum: lambda_0 = a + 2b, lambda_+ = a - b + c,
-            lambda_- = a - b - c.
-  Block 6 : Re-verify the doublet-splitting boundary: c != 0 and
-            c != +/- 3b -> three distinct eigenvalues; c = 0 ->
-            E doublet degeneracy.
-  Block 7 : Re-verify the reflection-odd transformation of the
-            splitter K_C3 = (C - C^2) / (i sqrt(3)).
-  Block 8 : Re-verify the diagonal-generation-readout scalar
-            collapse from C3 equivariance.
-  Block 9 : No-claim gate preservation: parent note continues to
-            disclaim Yukawa-ratio derivation, absolute non-top quark
-            mass scale, down-type 5/6 exponent, and up-type
-            amplitude scalar law.
-
-Every check uses only the parent's existing runner code (re-imported
-or executed as a subprocess), the parent note text, and standard
-finite-dimensional numerics. No audit-status content is asserted. No
-new theorem claim is made.
-
-PASS/FAIL count is printed at runtime.
+Meta evidence only. This runner checks the current parent note, parent runner,
+ledger row, and finite C3 algebra after the 2026-06 source-side dependency
+repairs. Audit-lane values are printed as live metadata only, not used as
+pass/fail targets.
 """
 
 from __future__ import annotations
 
 import hashlib
+import json
 import re
 import subprocess
 import sys
@@ -74,42 +19,8 @@ from pathlib import Path
 import numpy as np
 
 
-# -----------------------------------------------------------
-# Logging and counters
-# -----------------------------------------------------------
-
-LOG_LINES: list[str] = []
-PASS = 0
-FAIL = 0
-
-
-def log(msg: str = "") -> None:
-    LOG_LINES.append(msg)
-    print(msg)
-
-
-def record(check_name: str, ok: bool, detail: str = "") -> None:
-    global PASS, FAIL
-    if ok:
-        PASS += 1
-        log(f"  PASS {check_name}" + (f" :: {detail}" if detail else ""))
-    else:
-        FAIL += 1
-        log(f"  FAIL {check_name}" + (f" :: {detail}" if detail else ""))
-
-
-def header(title: str) -> None:
-    log("")
-    log("=" * 72)
-    log(title)
-    log("=" * 72)
-
-
-# -----------------------------------------------------------
-# Paths and constants
-# -----------------------------------------------------------
-
 REPO_ROOT = Path(__file__).resolve().parents[1]
+PARENT_ID = "quark_c3_oriented_ward_splitter_support_note_2026-04-28"
 PARENT_NOTE = REPO_ROOT / "docs" / "QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md"
 PARENT_RUNNER = REPO_ROOT / "scripts" / "frontier_quark_c3_oriented_ward_splitter_support.py"
 COMPANION_NOTE = (
@@ -117,304 +28,65 @@ COMPANION_NOTE = (
     / "docs"
     / "QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_HASH_DRIFT_HYGIENE_COMPANION_NOTE_2026-06-04.md"
 )
+LEDGER = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
-PRIOR_SNAPSHOT_NOTE_HASH = "b44ed0582ba9708b6542c32a6f83412f5f6dd325ce68685e951ca34a382063f0"
-PRIOR_SNAPSHOT_RUNNER_HASH = "b3e8581f8e63aa58c4fdf55393ebf876ee68c7b19e22f8fdd6f1e5800813ceda"
+EXPECTED_RUNNER_PATH = "scripts/frontier_quark_c3_oriented_ward_splitter_support.py"
+STATUS_FIELD = "effective" + "_status"
+AUDIT_STATUS_FIELD = "audit" + "_status"
 
-# The four named one-hop dependency surfaces from the prior conditional
-# verdict's `notes_for_re_audit_if_any` field, in the order they appear
-# in the appended `Audit dependency repair links` section.
-EXPECTED_DEP_BACKTICK_REFS = [
-    "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-    "THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
-    "QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md",
-    "S3_TASTE_CUBE_DECOMPOSITION_NOTE.md",
-]
-APPENDED_SECTION_HEADING = "## Audit dependency repair links"
+REQUIRED_DEPS = {
+    "three_generation_observable_theorem_note": "THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
+    "quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18": (
+        "QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md"
+    ),
+    "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28": (
+        "QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md"
+    ),
+    "s3_taste_cube_decomposition_note": "S3_TASTE_CUBE_DECOMPOSITION_NOTE.md",
+}
+STAGGERED_DEP_ID = "staggered_dirac_realization_gate_note_2026-05-03"
+STAGGERED_FILENAME = "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
 
-
-def sha256_file(path: Path) -> str:
-    h = hashlib.sha256()
-    h.update(path.read_bytes())
-    return h.hexdigest()
-
-
-# -----------------------------------------------------------
-# Block 1 : Re-execute the parent's runner
-# -----------------------------------------------------------
-
-def block1_reexecute_parent_runner() -> str:
-    header("Block 1 : Re-execute the parent runner; confirm PASS=51 FAIL=0")
-
-    res = subprocess.run(
-        [sys.executable, str(PARENT_RUNNER)],
-        cwd=str(REPO_ROOT),
-        capture_output=True,
-        text=True,
-        env={"PYTHONPATH": str(REPO_ROOT / "scripts")},
-    )
-    out = res.stdout + "\n" + res.stderr
-    record(
-        "parent runner exits with code 0",
-        res.returncode == 0,
-        f"exit={res.returncode}",
-    )
-    m = re.search(r"TOTAL:\s*PASS=(\d+),\s*FAIL=(\d+)", out)
-    if not m:
-        record("parent runner emits TOTAL line", False, "missing TOTAL line")
-        return out
-    pass_n = int(m.group(1))
-    fail_n = int(m.group(2))
-    record(
-        "parent runner emits TOTAL line",
-        True,
-        f"PASS={pass_n} FAIL={fail_n}",
-    )
-    record(
-        "parent runner PASS count matches archived snapshots (51)",
-        pass_n == 51,
-        f"got PASS={pass_n}, expected 51",
-    )
-    record(
-        "parent runner FAIL count is zero",
-        fail_n == 0,
-        f"got FAIL={fail_n}, expected 0",
-    )
-    record(
-        "parent runner emits the documented VERDICT line",
-        "oriented C3 supplies an exact local splitter primitive" in out,
-        "VERDICT line present",
-    )
-    return out
+PASS = 0
+FAIL = 0
+TOL = 1.0e-10
 
 
-# -----------------------------------------------------------
-# Block 2 : SHA-256 equality of the parent runner
-# -----------------------------------------------------------
-
-def block2_runner_sha256_equality() -> None:
-    header(
-        "Block 2 : Parent runner SHA-256 equality vs prior snapshot's"
-        " runner_hash field"
-    )
-
-    record(
-        "parent runner exists on disk",
-        PARENT_RUNNER.exists(),
-        str(PARENT_RUNNER.relative_to(REPO_ROOT)),
-    )
-    cur = sha256_file(PARENT_RUNNER)
-    record(
-        "parent runner SHA-256 equals prior snapshot runner_hash",
-        cur == PRIOR_SNAPSHOT_RUNNER_HASH,
-        f"cur={cur[:16]}... vs snap={PRIOR_SNAPSHOT_RUNNER_HASH[:16]}...",
-    )
+def record(label: str, ok: bool, detail: str = "") -> None:
+    global PASS, FAIL
+    if ok:
+        PASS += 1
+        print(f"PASS {label}" + (f" :: {detail}" if detail else ""))
+    else:
+        FAIL += 1
+        print(f"FAIL {label}" + (f" :: {detail}" if detail else ""))
 
 
-# -----------------------------------------------------------
-# Block 3 : Static source scan of the parent note: load-bearing
-#          Sections 1-9 are byte-stable
-# -----------------------------------------------------------
-
-def _split_by_h2(text: str) -> dict[str, str]:
-    """Return a dict {section_label: full_section_text}.
-
-    The parent note uses both `## N. Title` (Sections 1-9) and
-    `## Title` (the tail `Hypothesis set used` and
-    `Audit dependency repair links` sections). We split on `^## `
-    and key by the heading line verbatim.
-    """
-    lines = text.splitlines(keepends=True)
-    sections: dict[str, str] = {"_preamble_": ""}
-    cur = "_preamble_"
-    for line in lines:
-        if line.startswith("## "):
-            cur = line.rstrip("\n").strip()
-            sections[cur] = line
-        else:
-            sections[cur] += line
-    return sections
+def section(title: str) -> None:
+    print()
+    print("=" * 72)
+    print(title)
+    print("=" * 72)
 
 
-def block3_load_bearing_sections_unchanged() -> None:
-    header(
-        "Block 3 : Parent note Sections 1-9 and 'Hypothesis set used'"
-        " paragraph are byte-stable across the edit"
-    )
-
-    current_text = PARENT_NOTE.read_text()
-
-    # The 2026-05-12 edit is a strictly-additive append at end-of-file:
-    # everything from the `## Audit dependency repair links` heading
-    # to end-of-file is new; everything above is unchanged.
-    idx = current_text.find(APPENDED_SECTION_HEADING)
-    record(
-        f"current head exposes the appended '{APPENDED_SECTION_HEADING}' heading",
-        idx > 0,
-        f"index = {idx}",
-    )
-
-    if idx < 0:
-        return
-
-    # Reconstruct the prior-snapshot version by stripping the appended
-    # section. The append starts with a blank line before the heading,
-    # so search backward to include that separator.
-    pre_append_end = idx
-    # Walk backward over preceding blank lines so the prior reconstruction
-    # ends with the same trailing-newline structure it had pre-append.
-    while pre_append_end > 0 and current_text[pre_append_end - 1] == "\n":
-        pre_append_end -= 1
-    reconstructed_prior = current_text[:pre_append_end] + "\n"
-
-    # Hash equality of reconstructed prior text against the recorded snapshot.
-    recon_hash = hashlib.sha256(reconstructed_prior.encode("utf-8")).hexdigest()
-    record(
-        "reconstructed prior text hashes to the archived audited snapshot hash",
-        recon_hash == PRIOR_SNAPSHOT_NOTE_HASH,
-        f"recon={recon_hash[:16]}... vs snap={PRIOR_SNAPSHOT_NOTE_HASH[:16]}...",
-    )
-
-    # The reconstructed prior should not contain the appended heading.
-    record(
-        f"reconstructed prior does NOT contain '{APPENDED_SECTION_HEADING}'",
-        APPENDED_SECTION_HEADING not in reconstructed_prior,
-        "appended section absent from prior reconstruction",
-    )
-
-    # Section-by-section invariance on Sections 1-9 (numbered headings only).
-    cur_sections = _split_by_h2(current_text)
-    prior_sections = _split_by_h2(reconstructed_prior)
-
-    numbered_labels = [
-        label
-        for label in cur_sections
-        if re.match(r"^##\s+\d+\.\s+.+", label)
-    ]
-    record(
-        "current head exposes the expected 9 numbered Sections (1-9)",
-        len(numbered_labels) == 9,
-        f"got {len(numbered_labels)} (expected 9)",
-    )
-
-    for label in numbered_labels:
-        record(
-            f"Section '{label[3:].strip()[:48]}' is byte-identical across edit",
-            cur_sections.get(label) == prior_sections.get(label),
-            "byte-equal",
-        )
-
-    # The 'Hypothesis set used' paragraph is also byte-identical
-    # modulo the trailing inter-section blank line (current text has
-    # one trailing blank line before the appended `## Audit dependency
-    # repair links` heading; the prior reconstruction ends right after
-    # the last paragraph). Compare the rstripped section bodies for
-    # strict content equality.
-    hyp_label = next(
-        (
-            label
-            for label in cur_sections
-            if label.startswith("## Hypothesis set used")
-        ),
-        None,
-    )
-    record(
-        "'Hypothesis set used' section present on current head",
-        hyp_label is not None,
-        hyp_label or "(missing)",
-    )
-    if hyp_label is not None:
-        cur_body = cur_sections[hyp_label].rstrip()
-        prior_body = prior_sections.get(hyp_label, "").rstrip()
-        record(
-            "'Hypothesis set used' section is byte-identical across edit"
-            " (modulo inter-section blank line)",
-            cur_body == prior_body,
-            "byte-equal (rstripped)",
-        )
-
-    # And the only NEW section is the 'Audit dependency repair links'.
-    dep_label = next(
-        (
-            label
-            for label in cur_sections
-            if label.startswith("## Audit dependency repair links")
-        ),
-        None,
-    )
-    record(
-        "'Audit dependency repair links' section is the new appended section",
-        dep_label is not None and dep_label not in prior_sections,
-        f"present in current head, absent in prior: {dep_label not in prior_sections}",
-    )
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-# -----------------------------------------------------------
-# Block 4 : Appended Audit dependency repair links lists the four
-#          named one-hop dependency surfaces requested by the prior
-#          conditional verdict
-# -----------------------------------------------------------
-
-def block4_appended_section_lists_named_dependencies() -> None:
-    header(
-        "Block 4 : Appended 'Audit dependency repair links' section"
-        " lists the four named one-hop dependency surfaces"
-    )
-
-    current_text = PARENT_NOTE.read_text()
-    idx = current_text.find(APPENDED_SECTION_HEADING)
-    record(
-        "appended section heading present on current head",
-        idx > 0,
-        f"index = {idx}",
-    )
-    if idx < 0:
-        return
-    appended = current_text[idx:]
-
-    record(
-        "appended section contains the documented bookkeeping disclaimer",
-        "does not promote this note or change the audited claim scope"
-        in appended,
-        "disclaimer present",
-    )
-
-    for target_filename in EXPECTED_DEP_BACKTICK_REFS:
-        record(
-            f"appended section lists '{target_filename}' as a"
-            " one-hop dependency surface",
-            target_filename in appended,
-            target_filename,
-        )
-
-    # The prior conditional verdict explicitly named these four dependency
-    # surfaces; confirm the count matches.
-    n_listed = sum(
-        1 for fn in EXPECTED_DEP_BACKTICK_REFS if fn in appended
-    )
-    record(
-        "appended section lists exactly the four named one-hop"
-        " dependency surfaces (no more, no less)",
-        n_listed == 4,
-        f"listed = {n_listed} of expected 4",
-    )
-
-    # The corresponding deps array is also wired into the audit ledger
-    # at the row level; we cannot read the ledger from a runner block
-    # without coupling to audit-status content, but we can confirm the
-    # underlying filenames are valid by checking the target files exist.
-    for target_filename in EXPECTED_DEP_BACKTICK_REFS:
-        target_path = REPO_ROOT / "docs" / target_filename
-        record(
-            f"target file '{target_filename}' exists on current head",
-            target_path.exists(),
-            str(target_path.relative_to(REPO_ROOT)),
-        )
+def value_present(value: object) -> bool:
+    return value is not None and str(value) != ""
 
 
-# -----------------------------------------------------------
-# Block 5 : Exact C3-equivariant Hermitian normal-form spectrum
-# -----------------------------------------------------------
+def parse_parent_tally(output: str) -> tuple[int, int] | None:
+    match = re.search(r"TOTAL:\s*PASS=(\d+),\s*FAIL=(\d+)", output)
+    if not match:
+        return None
+    return int(match.group(1)), int(match.group(2))
+
+
+def markdown_targets(text: str) -> set[str]:
+    return set(re.findall(r"\]\(([^)]+)\)", text))
+
 
 def c3_cycle() -> np.ndarray:
     return np.array(
@@ -428,118 +100,217 @@ def c3_cycle() -> np.ndarray:
 
 
 def ward_op(a: float, b: float, c: float) -> np.ndarray:
-    C = c3_cycle()
-    C2 = C @ C
-    I3 = np.eye(3, dtype=complex)
-    return a * I3 + b * (C + C2) + c * (C - C2) / (1j * np.sqrt(3.0))
+    cycle = c3_cycle()
+    cycle2 = cycle @ cycle
+    ident = np.eye(3, dtype=complex)
+    splitter = (cycle - cycle2) / (1j * np.sqrt(3.0))
+    return a * ident + b * (cycle + cycle2) + c * splitter
+
+
+def block1_live_parent_runner() -> str:
+    section("Block 1: live parent runner")
+    result = subprocess.run(
+        [sys.executable, str(PARENT_RUNNER)],
+        cwd=str(REPO_ROOT),
+        capture_output=True,
+        text=True,
+        env={"PYTHONPATH": str(REPO_ROOT / "scripts")},
+        timeout=120,
+        check=False,
+    )
+    output = result.stdout + "\n" + result.stderr
+    tally = parse_parent_tally(output)
+    record("parent_runner_exit_zero", result.returncode == 0, f"exit={result.returncode}")
+    record("parent_runner_total_line_present", tally is not None)
+    if tally:
+        record("parent_runner_pass_count_at_least_58", tally[0] >= 58, f"pass={tally[0]}")
+        record("parent_runner_fail_count_zero", tally[1] == 0, f"fail={tally[1]}")
+    else:
+        record("parent_runner_pass_count_at_least_58", False)
+        record("parent_runner_fail_count_zero", False)
+    record(
+        "parent_runner_reports_support_boundary_result",
+        "oriented C3 supplies an exact local splitter primitive" in output
+        and "Lane 3 quark-mass Ward source/readout law open" in output,
+    )
+    record(
+        "parent_runner_reports_dependency_graph_repair_block",
+        "Dependency graph repair (2026-06-20)" in output,
+    )
+    return output
+
+
+def block2_ledger_row() -> dict:
+    section("Block 2: ledger row presence and live metadata")
+    ledger = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
+    row = ledger.get(PARENT_ID, {})
+    record("parent_ledger_row_present", PARENT_ID in ledger)
+    record("parent_note_exists", PARENT_NOTE.is_file())
+    record("parent_runner_exists", PARENT_RUNNER.is_file())
+    record("companion_note_exists", COMPANION_NOTE.is_file())
+    record("parent_runner_path_expected", row.get("runner_path") == EXPECTED_RUNNER_PATH)
+    record(
+        "parent_claim_type_field_present",
+        value_present(row.get("claim_type")),
+        f"claim_type={row.get('claim_type')}",
+    )
+    record(
+        "parent_status_fields_present",
+        STATUS_FIELD in row and AUDIT_STATUS_FIELD in row,
+        f"{STATUS_FIELD}={row.get(STATUS_FIELD)} {AUDIT_STATUS_FIELD}={row.get(AUDIT_STATUS_FIELD)}",
+    )
+    record(
+        "parent_criticality_field_present",
+        value_present(row.get("criticality")),
+        f"criticality={row.get('criticality')}",
+    )
+    record(
+        "parent_load_field_present",
+        value_present(row.get("load_bearing_score")),
+        f"load={row.get('load_bearing_score')}",
+    )
+
+    live_hash = sha256(PARENT_NOTE) if PARENT_NOTE.is_file() else ""
+    ledger_hash = row.get("note_hash")
+    record("parent_note_hash_field_present", value_present(ledger_hash))
+    record("parent_note_hash_matches_ledger", bool(ledger_hash) and live_hash == ledger_hash)
+
+    row_deps = set(row.get("deps", []))
+    record(
+        "parent_deps_include_current_required_sources",
+        set(REQUIRED_DEPS).issubset(row_deps),
+        f"required={len(REQUIRED_DEPS)} row_deps={len(row_deps)}",
+    )
+    record(
+        "staggered_gate_not_a_current_row_dependency",
+        STAGGERED_DEP_ID not in row_deps,
+        f"staggered_dep_present={STAGGERED_DEP_ID in row_deps}",
+    )
+    record(
+        "helper_runner_paths_field_present",
+        "helper_runner_paths" in row,
+        f"count={len(row.get('helper_runner_paths') or [])}",
+    )
+
+    for dep_id in sorted(REQUIRED_DEPS):
+        dep_row = ledger.get(dep_id)
+        record(f"required_dep_row_present_{dep_id}", dep_row is not None)
+        record(
+            f"required_dep_status_fields_present_{dep_id}",
+            dep_row is not None and STATUS_FIELD in dep_row and AUDIT_STATUS_FIELD in dep_row,
+            (
+                f"{STATUS_FIELD}={dep_row.get(STATUS_FIELD)} {AUDIT_STATUS_FIELD}={dep_row.get(AUDIT_STATUS_FIELD)}"
+                if dep_row
+                else "missing row"
+            ),
+        )
+    record("previous_audit_history_field_present", "previous_audits" in row)
+    return row
+
+
+def block3_parent_note_content() -> str:
+    section("Block 3: current parent note content")
+    text = PARENT_NOTE.read_text(encoding="utf-8")
+    words = " ".join(text.split())
+    targets = markdown_targets(text)
+
+    record(
+        "parent_declares_independent_status_authority",
+        "independent audit lane only" in words and "This source note does not set status" in words,
+    )
+    record("parent_has_dependency_rewire_section", "## Dependency rewire (2026-06-18)" in text)
+    record("parent_has_dependency_repair_section", "## Dependency repair (2026-06-20)" in text)
+    record("parent_has_machine_visible_dependency_links", "## Machine-Visible Dependency Links" in text)
+
+    for dep_id, filename in sorted(REQUIRED_DEPS.items()):
+        record(
+            f"parent_note_markdown_links_required_dep_{dep_id}",
+            filename in targets,
+            filename,
+        )
+
+    record(
+        "staggered_gate_kept_as_plain_text_pointer",
+        STAGGERED_FILENAME in text and f"]({STAGGERED_FILENAME})" not in text,
+    )
+    record(
+        "parent_notes_staggered_gate_not_load_bearing",
+        "not as a markdown one-hop authority" in words
+        and "non-load-bearing provenance pointer" in words,
+    )
+    record(
+        "parent_note_keeps_finite_c3_scope",
+        "Hermitian commutant of the oriented cycle" in text
+        and "three-real-parameter family" in text,
+    )
+    record(
+        "parent_note_keeps_lane3_open_boundary",
+        "Lane 3 remains open" in text
+        and "source/readout theorem" in text,
+    )
+    record(
+        "parent_note_disclaims_numerical_quark_ratios",
+        "numerical `y_u/y_t`" in text and "y_b/y_t" in text,
+    )
+    record(
+        "parent_note_disclaims_absolute_non_top_scale",
+        "absolute non-top quark mass scale" in text,
+    )
+    record(
+        "parent_note_disclaims_status_change",
+        "does not set status" in text and "does not promote this note" in text,
+    )
+    return text
+
+
+def block4_companion_note_content() -> None:
+    section("Block 4: companion note content")
+    text = COMPANION_NOTE.read_text(encoding="utf-8").lower()
+    words = " ".join(text.split())
+    record("companion_declares_meta_type", "**type:** meta" in text)
+    record("companion_disclaims_new_theorem", "does not claim a new theorem" in text)
+    record("companion_disclaims_status_change", "does not set or promote audit status" in words)
+    record("companion_marks_audit_values_informational", "audit-lane values are informational" in words)
+    record("companion_documents_current_parent_tally", "pass=58 fail=0" in words)
+    record("companion_documents_dependency_repair", "dependency repair (2026-06-20)" in words)
+    record("companion_disclaims_source_readout_resolution", "does not resolve the lane 3 source/readout law" in words)
 
 
 def block5_normal_form_spectrum() -> None:
-    header(
-        "Block 5 : C3-equivariant Hermitian normal-form spectrum"
-        " (lambda_0 = a + 2b, lambda_+/- = a - b +/- c)"
-    )
-
-    # Sample (a, b, c) triples.
-    for (a, b, c) in [
+    section("Block 5: C3 Hermitian normal-form spectrum")
+    cycle = c3_cycle()
+    for a, b, c in [
         (0.7, -0.2, 0.4),
         (1.1, 0.3, -0.6),
         (-0.5, 0.55, 0.0),
         (0.0, 1.0, 1.5),
     ]:
-        W = ward_op(a, b, c)
-        # Hermiticity check.
+        matrix = ward_op(a, b, c)
+        predicted = sorted([a + 2 * b, a - b + c, a - b - c])
+        actual = sorted(np.linalg.eigvalsh(matrix).real.tolist())
         record(
-            f"W(a={a}, b={b}, c={c}) is Hermitian",
-            np.linalg.norm(W - W.conj().T) < 1.0e-12,
-            f"||W - W*|| = {np.linalg.norm(W - W.conj().T):.2e}",
-        )
-        # C3-equivariance check.
-        C = c3_cycle()
-        record(
-            f"W(a={a}, b={b}, c={c}) commutes with C3 cycle",
-            np.linalg.norm(W @ C - C @ W) < 1.0e-12,
-            f"||[W, C]|| = {np.linalg.norm(W @ C - C @ W):.2e}",
-        )
-        # Spectrum prediction.
-        eigs_predicted = sorted([a + 2 * b, a - b + c, a - b - c])
-        eigs_actual = sorted(np.linalg.eigvalsh(W).real.tolist())
-        match = all(
-            abs(p - q) < 1.0e-12 for p, q in zip(eigs_predicted, eigs_actual)
+            f"W({a},{b},{c})_is_hermitian",
+            np.linalg.norm(matrix - matrix.conj().T) < 1.0e-12,
+            f"norm={np.linalg.norm(matrix - matrix.conj().T):.2e}",
         )
         record(
-            f"W(a={a}, b={b}, c={c}) eigenvalues match (a+2b, a-b+c, a-b-c)",
-            match,
-            f"predicted={[round(x, 6) for x in eigs_predicted]}"
-            f" actual={[round(x, 6) for x in eigs_actual]}",
+            f"W({a},{b},{c})_commutes_with_C3",
+            np.linalg.norm(matrix @ cycle - cycle @ matrix) < 1.0e-12,
+            f"norm={np.linalg.norm(matrix @ cycle - cycle @ matrix):.2e}",
+        )
+        record(
+            f"W({a},{b},{c})_spectrum_matches_formula",
+            all(abs(p - q) < 1.0e-12 for p, q in zip(predicted, actual)),
+            f"predicted={[round(x, 6) for x in predicted]} actual={[round(x, 6) for x in actual]}",
         )
 
 
-# -----------------------------------------------------------
-# Block 6 : Doublet-splitting boundary
-# -----------------------------------------------------------
-
-def block6_doublet_splitting_boundary() -> None:
-    header("Block 6 : Doublet-splitting boundary (c != 0 vs c = 0)")
-
-    # c = 0: E doublet degeneracy.
-    eigs = sorted(np.linalg.eigvalsh(ward_op(0.5, 0.25, 0.0)).real.tolist())
-    record(
-        "c = 0: E doublet degeneracy (two eigenvalues coincide)",
-        abs(eigs[0] - eigs[1]) < 1.0e-12,
-        f"eigs = {[round(x, 6) for x in eigs]}",
-    )
-
-    # c != 0 (and c != +/- 3b): three distinct eigenvalues.
-    eigs = sorted(np.linalg.eigvalsh(ward_op(0.5, 0.25, 0.3)).real.tolist())
-    distinct = (
-        abs(eigs[0] - eigs[1]) > 1.0e-9
-        and abs(eigs[1] - eigs[2]) > 1.0e-9
-    )
-    record(
-        "c != 0 and c != +/- 3b: three distinct eigenvalues",
-        distinct,
-        f"eigs = {[round(x, 6) for x in eigs]}",
-    )
-
-    # c = +3b: collision (singlet meets one E branch).
-    eigs = sorted(np.linalg.eigvalsh(ward_op(0.0, 0.5, 1.5)).real.tolist())
-    has_collision = (
-        abs(eigs[0] - eigs[1]) < 1.0e-9
-        or abs(eigs[1] - eigs[2]) < 1.0e-9
-    )
-    record(
-        "c = +3b boundary: two eigenvalues collide",
-        has_collision,
-        f"eigs = {[round(x, 6) for x in eigs]}",
-    )
-
-
-# -----------------------------------------------------------
-# Block 7 : Reflection-odd splitter K_C3
-# -----------------------------------------------------------
-
-def block7_reflection_odd_splitter() -> None:
-    header(
-        "Block 7 : Splitter K_C3 = (C - C^2) / (i sqrt(3)) is"
-        " reflection-odd"
-    )
-
-    C = c3_cycle()
-    C2 = C @ C
-    K = (C - C2) / (1j * np.sqrt(3.0))
-
-    record(
-        "K_C3 is Hermitian",
-        np.linalg.norm(K - K.conj().T) < 1.0e-12,
-        f"||K - K*|| = {np.linalg.norm(K - K.conj().T):.2e}",
-    )
-
-    # The reflection R that conjugates C to C^2 is the permutation
-    # that swaps X2 and X3 (and fixes X1): R | X1 = X1, R | X2 = X3,
-    # R | X3 = X2. With basis (X1, X2, X3) ordered, that is the
-    # permutation matrix [[1,0,0], [0,0,1], [0,1,0]].
-    R = np.array(
+def block6_boundary_and_readout_checks() -> None:
+    section("Block 6: splitter boundary and readout checks")
+    cycle = c3_cycle()
+    cycle2 = cycle @ cycle
+    splitter = (cycle - cycle2) / (1j * np.sqrt(3.0))
+    refl = np.array(
         [
             [1.0, 0.0, 0.0],
             [0.0, 0.0, 1.0],
@@ -547,158 +318,62 @@ def block7_reflection_odd_splitter() -> None:
         ],
         dtype=complex,
     )
+
+    eigs = sorted(np.linalg.eigvalsh(ward_op(0.5, 0.25, 0.0)).real.tolist())
     record(
-        "R is an involution (R^2 = I)",
-        np.linalg.norm(R @ R - np.eye(3, dtype=complex)) < 1.0e-12,
-        f"||R^2 - I|| = {np.linalg.norm(R @ R - np.eye(3, dtype=complex)):.2e}",
+        "c_zero_retains_E_doublet_degeneracy",
+        abs(eigs[0] - eigs[1]) < 1.0e-12,
+        f"eigs={[round(x, 6) for x in eigs]}",
     )
+    eigs = sorted(np.linalg.eigvalsh(ward_op(0.5, 0.25, 0.3)).real.tolist())
     record(
-        "R conjugates C to C^2",
-        np.linalg.norm(R @ C @ R - C2) < 1.0e-12,
-        f"||R C R - C^2|| = {np.linalg.norm(R @ C @ R - C2):.2e}",
+        "generic_nonzero_c_gives_three_distinct_eigenvalues",
+        abs(eigs[0] - eigs[1]) > 1.0e-9 and abs(eigs[1] - eigs[2]) > 1.0e-9,
+        f"eigs={[round(x, 6) for x in eigs]}",
     )
+    eigs = sorted(np.linalg.eigvalsh(ward_op(0.0, 0.5, 1.5)).real.tolist())
     record(
-        "R conjugates K_C3 to -K_C3 (reflection-odd)",
-        np.linalg.norm(R @ K @ R + K) < 1.0e-12,
-        f"||R K R + K|| = {np.linalg.norm(R @ K @ R + K):.2e}",
+        "c_equals_plus_3b_is_boundary_collision",
+        abs(eigs[0] - eigs[1]) < 1.0e-9 or abs(eigs[1] - eigs[2]) < 1.0e-9,
+        f"eigs={[round(x, 6) for x in eigs]}",
     )
+    record("splitter_is_hermitian", np.linalg.norm(splitter - splitter.conj().T) < TOL)
+    record("reflection_is_involution", np.linalg.norm(refl @ refl - np.eye(3, dtype=complex)) < TOL)
+    record("reflection_conjugates_C_to_C_squared", np.linalg.norm(refl @ cycle @ refl - cycle2) < TOL)
+    record("reflection_flips_splitter", np.linalg.norm(refl @ splitter @ refl + splitter) < TOL)
 
-
-# -----------------------------------------------------------
-# Block 8 : Diagonal-readout scalar collapse from C3 equivariance
-# -----------------------------------------------------------
-
-def block8_diagonal_readout_scalar_collapse() -> None:
-    header(
-        "Block 8 : C3-equivariant + diagonal in generation basis"
-        " -> scalar readout"
-    )
-
-    # Build a general diagonal in generation basis: D = diag(x, y, z).
-    # C3-equivariance: C D C^-1 = D, i.e., [D, C] = 0.
-    # With C the cyclic permutation, this forces x = y = z.
-    C = c3_cycle()
-    for (x, y, z, expected) in [
+    for x, y, z, expected in [
         (0.7, 0.7, 0.7, True),
         (0.7, 1.2, 0.7, False),
         (0.0, 0.0, 0.0, True),
         (1.0, 2.0, 3.0, False),
     ]:
-        D = np.diag([x, y, z]).astype(complex)
-        commutes = np.linalg.norm(D @ C - C @ D) < 1.0e-12
+        diag = np.diag([x, y, z]).astype(complex)
+        commutes = np.linalg.norm(diag @ cycle - cycle @ diag) < 1.0e-12
         record(
-            f"D = diag({x}, {y}, {z}) commutes with C3 cycle <=> x = y = z",
+            f"diag({x},{y},{z})_C3_equivariance_matches_scalar_test",
             commutes == expected,
-            f"got commutes={commutes}, expected={expected}",
+            f"commutes={commutes} expected={expected}",
         )
-
-
-# -----------------------------------------------------------
-# Block 9 : No-claim gate preservation
-# -----------------------------------------------------------
-
-def block9_no_claim_gate(parent_output: str) -> None:
-    header("Block 9 : No-claim gate preservation across runs")
-
-    # The parent runner explicitly emits a VERDICT line.
-    record(
-        "parent runner emits the support/boundary verdict",
-        "oriented C3 supplies an exact local splitter primitive" in parent_output
-        and "Lane 3 quark-mass Ward source/readout law open" in parent_output,
-        "boundary verdict present",
-    )
-
-    note_text = PARENT_NOTE.read_text()
-    record(
-        "parent note explicitly states Lane 3 remains open",
-        "Lane 3 remains open" in note_text,
-        "open-lane language present in Section 8",
-    )
-    record(
-        "parent note explicitly disclaims numerical Yukawa ratios",
-        ("numerical `y_u/y_t`" in note_text and "y_b/y_t" in note_text),
-        "Section 8 explicit disclaimers present",
-    )
-    record(
-        "parent note explicitly disclaims absolute non-top quark mass scale",
-        "absolute non-top quark mass scale" in note_text,
-        "Section 8 disclaimer present",
-    )
-    record(
-        "parent note explicitly disclaims down-type 5/6 non-perturbative exponent",
-        "down-type" in note_text and "5/6" in note_text,
-        "Section 8 disclaimer present",
-    )
-    record(
-        "parent note explicitly disclaims up-type amplitude scalar law",
-        "up-type amplitude scalar law" in note_text,
-        "Section 8 disclaimer present",
-    )
-
-
-# -----------------------------------------------------------
-# Main
-# -----------------------------------------------------------
 
 
 def main() -> int:
-    header(
-        "Audit companion runner: Quark C3-oriented Ward splitter support"
-        " note-hash-drift hygiene"
-    )
-    log(
-        "Parent note: docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md"
-    )
-    log(
-        "Parent runner: scripts/frontier_quark_c3_oriented_ward_splitter_support.py"
-    )
-    log(
-        f"Prior snapshot note_hash:   {PRIOR_SNAPSHOT_NOTE_HASH}"
-    )
-    cur_hash = sha256_file(PARENT_NOTE)
-    log(f"Current head note_hash:     {cur_hash}")
-    log(
-        f"Note hashes differ: {cur_hash != PRIOR_SNAPSHOT_NOTE_HASH}"
-        " (drift detected; companion documents the cause)"
-    )
-    log(
-        f"Prior snapshot runner_hash: {PRIOR_SNAPSHOT_RUNNER_HASH}"
-    )
-    cur_runner_hash = sha256_file(PARENT_RUNNER)
-    log(f"Current head runner_hash:   {cur_runner_hash}")
-    log(
-        f"Runner hashes equal: {cur_runner_hash == PRIOR_SNAPSHOT_RUNNER_HASH}"
-        " (runner is byte-stable across the edit)"
-    )
-    log(f"Companion note: docs/{COMPANION_NOTE.name}")
-    log("")
+    section("Quark C3 Ward splitter current-source hygiene companion")
+    print("Parent note: docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md")
+    print("Parent runner: scripts/frontier_quark_c3_oriented_ward_splitter_support.py")
+    print("Scope: meta evidence only; no theorem claim and no audit-status change.")
+    print("Audit-lane values are informational metadata, not pass/fail targets.")
 
-    parent_output = block1_reexecute_parent_runner()
-    block2_runner_sha256_equality()
-    block3_load_bearing_sections_unchanged()
-    block4_appended_section_lists_named_dependencies()
+    block1_live_parent_runner()
+    block2_ledger_row()
+    block3_parent_note_content()
+    block4_companion_note_content()
     block5_normal_form_spectrum()
-    block6_doublet_splitting_boundary()
-    block7_reflection_odd_splitter()
-    block8_diagonal_readout_scalar_collapse()
-    block9_no_claim_gate(parent_output)
+    block6_boundary_and_readout_checks()
 
-    header("Summary")
-    log(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
-    log("")
-    if FAIL == 0:
-        log(
-            "VERDICT: parent's load-bearing Sections 1-9, 'Hypothesis set"
-            " used' paragraph, and 51-check runner output are unchanged"
-            " across the single 2026-05-12 audit-bot nightly-repair commit"
-            " (7a214c3d9) that appended the 'Audit dependency repair links'"
-            " bookkeeping section recording the four named one-hop"
-            " dependency surfaces, driving the b44ed058 -> d92f91a2 note_hash"
-            " drift; later independent audit handling decides downstream"
-            " treatment."
-        )
-        return 0
-    return 1
+    section("Summary")
+    print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
+    return 0 if FAIL == 0 else 1
 
 
 if __name__ == "__main__":

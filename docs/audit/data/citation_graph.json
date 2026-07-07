@@ -57778,7 +57778,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+      "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
     },
     {
       "from": "repo.front_door_status",
@@ -111814,7 +111814,7 @@
         "realized_state_primitive",
         "tier_a_residual_owner_adoption_retirement_2026-07-04",
         "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "cl3_taste_generation_theorem",
@@ -111823,7 +111823,7 @@
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5c68f99234bdab612b5f03184b1c6a2b49f0027d2156f04023269494c6e1f557",
+      "note_hash": "f33a37417661d459897d1ed2d7ab63b9d3543154261d57f04434938e287c3baf",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

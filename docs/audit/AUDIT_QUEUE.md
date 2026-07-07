@@ -81,6 +81,6 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 7 | `cycle-0007` | 2 | 1 | `gate_b_context_independence_no_go_note_2026-06-17` | leaf | audited_clean |
 | 8 | `cycle-0008` | 2 | 1 | `gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17` | leaf | audited_clean |
 | 9 | `cycle-0009` | 2 | 1 | `meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18` | leaf | audited_clean |
-| 10 | `cycle-0010` | 2 | 1 | `record_context_generator_nonidentifiability_no_go_2026-06-17` | leaf | unaudited |
+| 10 | `cycle-0010` | 2 | 1 | `record_context_generator_nonidentifiability_no_go_2026-06-17` | leaf | audited_conditional |
 
 Full queue lives in `data/audit_queue.json`.

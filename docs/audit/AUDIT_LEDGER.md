@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1980 |
+| unaudited | 1979 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 22 |
+| ~~audited_conditional~~ | 23 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1256 |
-| `audited_conditional` | 22 |
+| `audited_conditional` | 23 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2325 |
+| `unaudited` | 2324 |
 
 | claim_type | count |
 |---|---:|
@@ -1419,6 +1419,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `record_context_generator_nonidentifiability_no_go_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -14622,6 +14623,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the stated L=3/L=4/L=5 events, occupancies, seeds, depth choices, and fixed 300-permutation sampled-null protocol, the three-point min-gain ledger and sampled-null gap series have the displayed values.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the finite sparse Fock systems, evolves them with expm_multiply, computes determinant phases, prefix statistics, sampled-null p95 values, min-gains, and medians, and its cached output matches the source note. The closure is only for the explicitly scoped finite diagnostic, not an exhaustive permutation null, asymptotic law, or physical U(1) gauge-field claim.
 - **rationale:** The load-bearing numbers are computed directly by the provided runner rather than imported from the cited authority or hard-coded as a print-only result. The one-hop authority is retained_bounded, which is retained-grade under the rubric, and the source note explicitly confines load-bearing content to the runner-defined finite objects. The negative conclusion is scoped to the displayed finite period series and does not overclaim an all-permutation null, asymptotic behavior, L>=6 behavior, or a physical gauge interpretation.
+- **auditor confidence:** high
+
+### `record_context_generator_nonidentifiability_no_go_2026-06-17`
+
+- **Note:** [`RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md`](../../docs/RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite no-go under supplied projective/Lueders readout algebra: the state/projective algebra does not select an endogenous readout context, and a one-step probability vector does not determine a physical production kernel, Markov generator, or rate unit.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-record_context_generator_noniden-10`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The same one-qubit state admits distinct complete projective readout contexts Z, X, and Y with different probability vectors, and the resulting one-step production vector does not identify the physical kernel, generator, or clock/rate normalization.  _(class `A`)_
+- **chain closes:** True — The finite algebraic witnesses close the negative claim over the supplied inputs: Z/X/Y give distinct normalized vectors, one-hot append is post-selection grammar only, and the same production vector embeds in distinct kernels, generators, and rate-clock pairs. The source-gate co-cycle citation is not needed for the proof, but several non-co-cycle upstream authorities remain non-retained.
+- **rationale:** The runner source genuinely computes the finite matrix/projector, stochastic-kernel, generator, and rate-clock witnesses rather than merely printing constants. The no-go discipline gate passes on the provided packet: it checks more than five attack routes, keeps the walls independent, narrows the claim to the supplied finite gate, and leaves future physical measurement/generator theorems open. The co-cycle citation to record_prerecord_instrument_kernel_gate_2026-06-06 is treated as informational and not load-bearing. However, the projective/Lueders and post-record grammar authorities used by the proof are marked unaudited, so retained-grade closure is not available under the rubric.
+- **open / conditional deps cited:**
+  - `LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`
+  - `LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`
+  - `RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`

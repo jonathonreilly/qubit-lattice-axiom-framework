@@ -10068,6 +10068,42 @@
       "dominant_class": null,
       "runner": "scripts/frontier_dm_z3_texture_factor_theorem.py"
     },
+    "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/domain_wall_chiral_edge_from_achiral_cl3_bulk_2026_07_04.py"
+    },
+    "domain_wall_edge_anomaly_inflow_spectral_flow_free_field_bounded_theorem_note_2026-07-05": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/domain_wall_edge_anomaly_inflow_spectral_flow_2026_07_05.py"
+    },
+    "domain_wall_edge_content_vs_sm_chiral_fermions_map_bounded_theorem_note_2026-07-05": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/domain_wall_edge_content_vs_sm_chiral_map_2026_07_05.py"
+    },
     "doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12": {
       "assert_count": 1,
       "counts": {
@@ -30672,6 +30708,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_answer_condition_motion_closure_2026_07_02.py"
     },
+    "readout_bridge_frame_extension_unifies_marginal_read_and_registered_factor_conditional_bounded_theorem_note_2026-07-06": {
+      "assert_count": 14,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/readout_bridge_frame_extension_unification_2026_07_06.py"
+    },
     "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08": {
       "assert_count": 1,
       "counts": {
@@ -31139,6 +31187,18 @@
       "decoration_candidate": false,
       "dominant_class": "B",
       "runner": "scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py"
+    },
+    "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/record_formation_front_chiral_edge_2026_07_05.py"
     },
     "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": {
       "assert_count": 1,
@@ -49914,6 +49974,51 @@
       },
       "decoration_candidate": true,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/domain_wall_chiral_edge_from_achiral_cl3_bulk_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/domain_wall_edge_anomaly_inflow_spectral_flow_2026_07_05.py": {
+      "assert_count": 1,
+      "claims": [
+        "domain_wall_edge_anomaly_inflow_spectral_flow_free_field_bounded_theorem_note_2026-07-05"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/domain_wall_edge_content_vs_sm_chiral_map_2026_07_05.py": {
+      "assert_count": 1,
+      "claims": [
+        "domain_wall_edge_content_vs_sm_chiral_fermions_map_bounded_theorem_note_2026-07-05"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/edge_deletion_boundary_sweep.py": {
@@ -88585,6 +88690,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/readout_bridge_frame_extension_unification_2026_07_06.py": {
+      "assert_count": 14,
+      "claims": [
+        "readout_bridge_frame_extension_unifies_marginal_read_and_registered_factor_conditional_bounded_theorem_note_2026-07-06"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/realization_row_sigma_reconciliation_2026_06_11.py": {
       "assert_count": 1,
       "claims": [
@@ -88778,6 +88898,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/record_formation_front_chiral_edge_2026_07_05.py": {
+      "assert_count": 1,
+      "claims": [
+        "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/record_function_finite_sector_algebra_2026_06_05.py": {
@@ -92395,16 +92530,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 705,
+    "decoration_candidates": 706,
     "dominant_class_distribution": {
       "A": 502,
-      "B": 653,
-      "C": 1301,
+      "B": 654,
+      "C": 1305,
       "D": 452,
       "none": 458
     },
-    "runners_classified": 3366,
-    "runners_with_C": 1775,
-    "runners_with_D": 1077
+    "runners_classified": 3371,
+    "runners_with_C": 1779,
+    "runners_with_D": 1080
   }
 }

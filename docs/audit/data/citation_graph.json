@@ -12513,6 +12513,46 @@
       "to": "neutrino_majorana_z3_nonactivation_theorem_note"
     },
     {
+      "from": "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "domain_wall_edge_anomaly_inflow_spectral_flow_free_field_bounded_theorem_note_2026-07-05",
+      "to": "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04"
+    },
+    {
+      "from": "domain_wall_edge_anomaly_inflow_spectral_flow_free_field_bounded_theorem_note_2026-07-05",
+      "to": "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05"
+    },
+    {
+      "from": "domain_wall_edge_content_vs_sm_chiral_fermions_map_bounded_theorem_note_2026-07-05",
+      "to": "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04"
+    },
+    {
+      "from": "domain_wall_edge_content_vs_sm_chiral_fermions_map_bounded_theorem_note_2026-07-05",
+      "to": "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05"
+    },
+    {
+      "from": "domain_wall_edge_content_vs_sm_chiral_fermions_map_bounded_theorem_note_2026-07-05",
+      "to": "domain_wall_edge_anomaly_inflow_spectral_flow_free_field_bounded_theorem_note_2026-07-05"
+    },
+    {
+      "from": "domain_wall_edge_content_vs_sm_chiral_fermions_map_bounded_theorem_note_2026-07-05",
+      "to": "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27"
+    },
+    {
+      "from": "domain_wall_edge_content_vs_sm_chiral_fermions_map_bounded_theorem_note_2026-07-05",
+      "to": "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23"
+    },
+    {
+      "from": "domain_wall_edge_content_vs_sm_chiral_fermions_map_bounded_theorem_note_2026-07-05",
+      "to": "left_handed_charge_matching_note"
+    },
+    {
+      "from": "domain_wall_edge_content_vs_sm_chiral_fermions_map_bounded_theorem_note_2026-07-05",
+      "to": "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
+    },
+    {
       "from": "down_type_mass_ratio_ckm_dual_note",
       "to": "alpha_s_derived_note"
     },
@@ -36461,6 +36501,22 @@
       "to": "ai_methodology.skills.audit-loop.skill"
     },
     {
+      "from": "readout_bridge_frame_extension_unifies_marginal_read_and_registered_factor_conditional_bounded_theorem_note_2026-07-06",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "readout_bridge_frame_extension_unifies_marginal_read_and_registered_factor_conditional_bounded_theorem_note_2026-07-06",
+      "to": "graded_constraint_program_and_record_influence_criterion_2026-07-04"
+    },
+    {
+      "from": "readout_bridge_frame_extension_unifies_marginal_read_and_registered_factor_conditional_bounded_theorem_note_2026-07-06",
+      "to": "color_singlet_records_g2_factorization_site_local_locking_bounded_theorem_note_2026-07-06"
+    },
+    {
+      "from": "readout_bridge_frame_extension_unifies_marginal_read_and_registered_factor_conditional_bounded_theorem_note_2026-07-06",
+      "to": "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06"
+    },
+    {
       "from": "realization_row_sigma_reconciliation_bounded_theorem_note_2026-06-11",
       "to": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
     },
@@ -36935,6 +36991,14 @@
     {
       "from": "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
       "to": "persistent_record_as_kraus_operator_note_2026-05-20"
+    },
+    {
+      "from": "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05",
+      "to": "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04"
+    },
+    {
+      "from": "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05",
+      "to": "minimal_axioms"
     },
     {
       "from": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
@@ -75708,6 +75772,55 @@
       "runner_path": "scripts/frontier_dm_z3_texture_factor_theorem.py",
       "title": "Exact `Z_3` Texture-Factor Theorem"
     },
+    "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04": {
+      "claim_id": "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "3974f8d8fa77e74d9504b670fa097ca4f864775ccdc8b183ebaedce0f9845a7b",
+      "path": "docs/DOMAIN_WALL_CHIRAL_EDGE_FROM_ACHIRAL_CL3_BULK_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-04.md",
+      "runner_path": "scripts/domain_wall_chiral_edge_from_achiral_cl3_bulk_2026_07_04.py",
+      "title": "Domain-Wall Chiral Edge from Achiral Cl(3,0) Bulk: Free-Field Bounded Theorem"
+    },
+    "domain_wall_edge_anomaly_inflow_spectral_flow_free_field_bounded_theorem_note_2026-07-05": {
+      "claim_id": "domain_wall_edge_anomaly_inflow_spectral_flow_free_field_bounded_theorem_note_2026-07-05",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04",
+        "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "f6d77e88e0e664436d807d2f5b2f0fdcefca631688bc861d92da1b4c394ae33f",
+      "path": "docs/DOMAIN_WALL_EDGE_ANOMALY_INFLOW_SPECTRAL_FLOW_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md",
+      "runner_path": "scripts/domain_wall_edge_anomaly_inflow_spectral_flow_2026_07_05.py",
+      "title": "Domain-Wall Edge Anomaly-Inflow Spectral Flow: Free-Field Bounded Theorem"
+    },
+    "domain_wall_edge_content_vs_sm_chiral_fermions_map_bounded_theorem_note_2026-07-05": {
+      "claim_id": "domain_wall_edge_content_vs_sm_chiral_fermions_map_bounded_theorem_note_2026-07-05",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04",
+        "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05",
+        "domain_wall_edge_anomaly_inflow_spectral_flow_free_field_bounded_theorem_note_2026-07-05",
+        "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27",
+        "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
+        "left_handed_charge_matching_note",
+        "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "0405cb20242ff81d008120ecf3855252bec43780ca17a1798b5b0105b9b35c05",
+      "path": "docs/DOMAIN_WALL_EDGE_CONTENT_VS_SM_CHIRAL_FERMIONS_MAP_BOUNDED_THEOREM_NOTE_2026-07-05.md",
+      "runner_path": "scripts/domain_wall_edge_content_vs_sm_chiral_map_2026_07_05.py",
+      "title": "Domain-Wall Edge Content vs SM Chiral Fermions Map: Bounded Theorem"
+    },
     "doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12": {
       "claim_id": "doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12",
       "claim_type_author_hint": "bounded_theorem",
@@ -110113,6 +110226,23 @@
       "runner_path": "scripts/frontier_answer_condition_motion_closure_2026_07_02.py",
       "title": "Final Reading-Note Derivations: Answer, Condition, Motion Closure, And Extensional Judgment"
     },
+    "readout_bridge_frame_extension_unifies_marginal_read_and_registered_factor_conditional_bounded_theorem_note_2026-07-06": {
+      "claim_id": "readout_bridge_frame_extension_unifies_marginal_read_and_registered_factor_conditional_bounded_theorem_note_2026-07-06",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "graded_constraint_program_and_record_influence_criterion_2026-07-04",
+        "color_singlet_records_g2_factorization_site_local_locking_bounded_theorem_note_2026-07-06",
+        "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "52a7462faab72cba813783e901101a9a9a9fc6a5dc7787a143ed9892ec77bef5",
+      "path": "docs/READOUT_BRIDGE_FRAME_EXTENSION_UNIFIES_MARGINAL_READ_AND_REGISTERED_FACTOR_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+      "runner_path": "scripts/readout_bridge_frame_extension_unification_2026_07_06.py",
+      "title": "Readout-Bridge Frame Extension Unifies MARGINAL-READ And REGISTERED-FACTOR: Conditional Bounded Theorem"
+    },
     "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08": {
       "claim_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
       "claim_type_author_hint": "bounded_theorem",
@@ -110758,6 +110888,21 @@
       "path": "docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md",
       "runner_path": "scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py",
       "title": "Record Formation Controlled-Copy Write-Isometry Theorem"
+    },
+    "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05": {
+      "claim_id": "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e879ee6dad865b180ed6c05bb58f122164b4424ef832ed7f14a3889558fe5f50",
+      "path": "docs/RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md",
+      "runner_path": "scripts/record_formation_front_chiral_edge_2026_07_05.py",
+      "title": "Record-Occupancy Front as a Diagnostic Domain Wall: Free-Field Bounded Theorem"
     },
     "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": {
       "claim_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
@@ -111541,7 +111686,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "afe3ff4a7147a4f73e2a77d160202a4198c7a89681eb68c9dcf7994798541b37",
+      "note_hash": "13a9d3351648a031284e660090a05f7043ed99460ce3336817236a472a6993bc",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -128355,7 +128500,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1597,
+      "bounded_theorem": 1602,
       "decoration": 3,
       "meta": 326,
       "no_go": 333,
@@ -128364,7 +128509,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2001,
+      "bounded_theorem": 2006,
       "decoration": 3,
       "meta": 326,
       "no_go": 436,
@@ -128372,10 +128517,10 @@
       "open_gate": 206,
       "positive_theorem": 657
     },
-    "edge_count": 14517,
-    "leaf_count": 1309,
-    "node_count": 3877,
+    "edge_count": 14533,
+    "leaf_count": 1308,
+    "node_count": 3882,
     "root_count": 1105,
-    "runners_with_path": 3499
+    "runners_with_path": 3504
   }
 }

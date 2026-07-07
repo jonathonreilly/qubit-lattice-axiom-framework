@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/eta_twisted_walk_family_discovery_2026_06_10.py
-runner_sha256: 4cdc21657b72fcf79c7c45aa04a237f7a9b984103d6e39efed43f03e999940ad
-timeout_sec: 360
+runner_sha256: 21d1d4a6b7de45d700cc13636ebb1b4250c80cde72f7763cf2ace593016facf5
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 294.04
+elapsed_sec: 79.03
 status: ok
 ----- stdout -----
 
@@ -35,11 +35,11 @@ PART F -- the eta twist is load-bearing: the same structure WITHOUT the twist si
 
 PART E -- the equivariant seeded sweep census (sweep-grade; the family is what the sweeps find)
 ==============================================================================
-  [PASS] E1 sweep census: every dispersive equivariant unitary found lies in the six-orbit walk family (diag ~ 0, moduli 1/sqrt 3)  --  73 unitaries, 21 dispersive, 21 in-family: the family IS the dispersive sector found
+  [PASS] E1 sweep census: every dispersive equivariant unitary found lies in the six-orbit walk family (diag ~ 0, moduli 1/sqrt 3)  --  62 unitaries, 19 dispersive, 19 in-family: the family IS the dispersive sector found
 
 PART G -- open-1 status: the unrestricted family's tree exceeds any practical cap (computed)
 ==============================================================================
-  [PASS] G1 the unrestricted family's kill-propagation exceeds the 50,000-leaf cap (deterministic): exhaustive enumeration infeasible  --  200 exact equations; cap exceeded -- open 1 (full-family exhaustive closure) remains NAMED, sharpened by documentation
+  [PASS] G1 the unrestricted family's kill-propagation exceeds the 50,000-leaf cap (deterministic): exhaustive enumeration infeasible  --  200 exact equations; cap exceeded -- open 1 (full-family exact classification) remains NAMED, sharpened by documentation
 
 ==============================================================================
 SCORECARD: PASS=13 FAIL=0

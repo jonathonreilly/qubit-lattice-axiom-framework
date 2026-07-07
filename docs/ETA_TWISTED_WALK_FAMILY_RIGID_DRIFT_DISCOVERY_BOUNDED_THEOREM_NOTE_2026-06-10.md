@@ -124,9 +124,33 @@ combinatorially infeasible and is documented as such. Development-phase
 structured hunts around the known structural cells (shifts, exchange cells,
 staircases, mixed cycles, hybrids) found no curved or tunable cell outside
 the eta-twisted family; those hunts are NOT shipped as runner content and
-carry no claim weight here. The exhaustive closure of the full-family
-question remains a NAMED OPEN, sharpened from "unanalyzed" to
-"infeasibility-documented, development-searched, not exhausted".
+carry no claim weight here. The full-family classification question remains a
+NAMED OPEN, sharpened from "unanalyzed" to
+"infeasibility-documented, development-searched, not treated as exhaustive".
+
+## 2026-07-04 live-runner repair
+
+The live runner was rechecked after the 2026-07-04 queue sweep. Two
+implementation-level issues were found without changing the exact D3
+factorization or the claimed scope:
+
+- **D3c phase wrapping:** the old numerical witness compared sorted raw
+  `lambda` phases at the `phi = 0` stratum. Current eigensolver ordering can
+  pair across the `+-pi` branch cut and report artificial rates near
+  `pi/dq`. The repaired witness computes the one-sided rates on
+  `X = lambda^2`, the branch-invariant variable used by the exact D3a-D3b
+  factorization, then divides by two to recover the lambda-phase rate. It
+  still fails if the equal-stratum rate is not `1/(2 sqrt 3)`.
+- **E1 runtime:** the seeded least-squares census still uses the same
+  32-parameter equivariant family, deterministic starts, three unitarity
+  test momenta, and two held-out fine momenta. The repair precomputes the
+  fixed-momentum linear basis matrices and evaluates the same residuals from
+  those bases, reducing the live runtime from the old near-300-second cache
+  window to about 80-100 seconds on the current local runner. The updated
+  cache records a zero-fail run with at least `50` unitaries, at least `10`
+  dispersive solutions, and every dispersive solution in the six-orbit
+  family. This remains sweep-grade evidence only, not an exact classification
+  of the 32-parameter variety.
 
 ## The conditional set after this cycle
 
@@ -135,7 +159,7 @@ question remains a NAMED OPEN, sharpened from "unanalyzed" to
 | block03/block04 set (readings, bridges, unaudited deps, premises) | unchanged |
 | the named refinement (the eta-twisted/'projective-variant' enumeration) | ANSWERED: the class transports via the exact family; its symmetric-point velocity is quantized {+-1/6, +-1/(2 sqrt 3)} and its diagonal dispersion exactly linear; off-axis front speeds are continuous moduli content (honest scope) |
 | the 3D matter cone | upgraded: a curved covariant candidate EXISTS at this density (this family); whether the realized matter sector occupies it is realization content (with the factorized class and its named input as the alternative) |
-| full-family exhaustive closure (open 1) | named open, sharpened (documented infeasibility + structured-search coverage) |
+| full-family classification (open 1) | named open, sharpened (documented infeasibility + structured-search coverage) |
 | amplitude-mixing tunability | subsumed into the open-1 wording above |
 
 ## What this note does NOT claim
@@ -175,17 +199,18 @@ question remains a NAMED OPEN, sharpened from "unanalyzed" to
 The negative claims: "the symmetric-point velocity set is discrete (exact)"; "no dispersive
 equivariant unitary found outside the six-orbit family (sweep grade)".
 
-- **N1 alternative routes:** (1) tune the six phases — CLOSED EXACTLY: the
-  D3 factorization classifies every moduli point; no flat stratum exists;
+- **N1 alternative routes:** (1) tune the six phases — settled on the exact
+  D3 surface: the factorization classifies every moduli point and rejects a
+  flat stratum;
   (2) leave the 1/sqrt-3 subfamily within the 32-parameter equivariant
   family — the runner's census (E1) finds every dispersive equivariant
   unitary INSIDE the six-orbit family (diagnostics computed per solution);
-  an exact closure of the equivariant variety is a registered falsifier
+  an exact classification of the equivariant variety is a registered falsifier
   surface; (3) the full unrestricted family —
   NAMED OPEN (documented infeasibility); (4) amplitude-mixing — structured
   hunts found nothing, subsumed in open 1; (5) strip the eta signs and use
-  the bare permutation action — CLOSED for this exhibited family by F1, and
-  consistent with block04's linear-flatness result.
+  the bare permutation action — rejected for this exhibited family by F1,
+  and consistent with block04's linear-flatness result.
 - **N2 wall independence:** the eta-sign wall (F1: signs stripped, unitarity
   dies) is independent of the license wall (A1 degree table) and of the
   quantization mechanism (D3 rigidity) — three separately computed legs.
@@ -201,7 +226,7 @@ equivariant unitary found outside the six-orbit family (sweep grade)".
   set {+-1/6, +-1/(2 sqrt 3)} for that drift plus exact diagonal linearity;
   off-axis front-speed continuity is stated as moduli content, and no
   exhaustiveness is claimed anywhere for open 1.
-- **N6 partial-closure scan:** no prior note analyzes the eta-twisted class.
+- **N6 partial-surface scan:** no prior note analyzes the eta-twisted class.
 - **N7 steelman:** "the rigidity was sampled in the first draft." RESOLVED
   IN REVIEW: the referee-supplied factorization makes D3 symbolic over the
   whole torus; the steelman's residual is the off-axis front-speed
@@ -221,7 +246,7 @@ on the generic and equal-phase strata, with the symbolic moduli-uniform
 axis-line proof in the runner; the six-phase subfamily exhibited (the census
 E1 finds no dispersive
 equivariant unitary outside it at sweep grade). Open 1 (the unrestricted
-family) is documented-infeasible, not closed.
+family) is documented-infeasible, not classified exactly here.
 
 ## Reproduction
 
@@ -230,7 +255,8 @@ PYTHONHASHSEED=0 python3 scripts/eta_twisted_walk_family_discovery_2026_06_10.py
 ```
 
 Expected scorecard: `PASS=13 FAIL=0` (Parts A-G; the E1 census, G1 cap, and the symbolic D3a
-factorization dominate the runtime).
+factorization dominate the runtime; the 2026-07-04 runner repair keeps the live
+runtime below the required cache-helper timeout on the current local machine).
 
 ## Dependencies
 

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 425,
+    "critical": 424,
     "high": 273,
     "leaf": 777,
     "medium": 540
@@ -179,33 +179,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
       "blocker": "awaiting_cross_confirmation",
-      "claim_id": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-      "claim_scope": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over per-site C^2 with translations and proper cubic rotations up to site-local U(1) frame, there are exactly two simply connected frame classes K0/K1; P-SD absorption exists and is unique on K1; K1 vs K0 remains an unforced selector bit.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms",
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-        "fermion_parity_z2_grading_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 17,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 21.601,
-      "note_path": "docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py",
-      "transitive_descendants": 1097
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
       "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
       "claim_scope": "Finite periodic 2 x 2 x 2 translation/BZ carrier statement for position-diagonal local readouts on the supplied hw=1 three-corner sector.",
       "claim_type": "bounded_theorem",
@@ -223,6 +196,32 @@
       "ready": true,
       "runner_path": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py",
       "transitive_descendants": 1073
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_vertex_power_derivation",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 15.014,
+      "note_path": "docs/YT_VERTEX_POWER_DERIVATION.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_vertex_power.py",
+      "transitive_descendants": 1033
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1331,32 +1330,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_anomaly_forces_time.py",
       "transitive_descendants": 1289
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_vertex_power_derivation",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.014,
-      "note_path": "docs/YT_VERTEX_POWER_DERIVATION.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_vertex_power.py",
-      "transitive_descendants": 1033
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -13021,6 +12994,34 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 7,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.822,
+      "note_path": "docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/realized_kinetic_branch_discriminators_2026_07_02.py",
+      "transitive_descendants": 9
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "universal_gr_isotropic_schur_localization_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -20368,34 +20369,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_hierarchy_delta0_route_inventory_synthesis_2026_06_11.py",
-      "transitive_descendants": 9
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
-        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.822,
-      "note_path": "docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/realized_kinetic_branch_discriminators_2026_07_02.py",
       "transitive_descendants": 9
     },
     {
@@ -37391,6 +37364,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/acphilambda_ambient_scalar_k_blindness_projective_carrier_2026_07_02.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38061,6 +38058,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "acphilambda_k_even_registration_correction_registered_pattern_2026-07-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38080,6 +38101,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "acphilambda_projective_equivariance_k_odd_trace_2026-07-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py",
       "transitive_descendants": 0
     },
     {
@@ -41366,30 +41411,6 @@
       "ready": false,
       "runner_path": "scripts/vector_magnetic_extension_probe.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/acphilambda_ambient_scalar_k_blindness_projective_carrier_2026_07_02.py",
-      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -45077,30 +45098,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "acphilambda_k_odd_carrier_registered_datum_test_bounded_note_2026-07-03",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -45147,30 +45144,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/acphilambda_occurrence_clock_composition_delta_blindness_2026_07_02.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "acphilambda_projective_equivariance_k_odd_trace_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py",
       "transitive_descendants": 0
     },
     {
@@ -59835,6 +59808,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 248,
-  "total_pending": 2015
+  "ready_count": 252,
+  "total_pending": 2014
 }

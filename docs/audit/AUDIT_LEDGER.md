@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 193 |
 | **retained_no_go** | 194 |
-| **retained_bounded** | 883 |
+| **retained_bounded** | 884 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
 | unaudited | 1969 |
-| audit_in_progress | 5 |
+| audit_in_progress | 4 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 19 |
-| `audited_clean` | 1260 |
+| `audit_in_progress` | 18 |
+| `audited_clean` | 1261 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
@@ -148,7 +148,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1178,6 +1177,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16442,6 +16442,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The path-product transport around each plaquette is identity exactly when the phases satisfy the Clifford -1 plaquette cocycle, and on simply connected regions the ratio of any two cocycle solutions is an exact local gauge one-cochain.  _(class `A`)_
 - **chain closes:** True — The bounded local theorem closes from Clifford anticommutation, unitary transport, and standard simply connected cubical cohomology. It does not derive P-KIN/P-SD or torus holonomy choices, but those are explicitly outside the audited claim scope.
 - **rationale:** The load-bearing step is exact algebra, not a definition, renaming, or numerical comparator: independently, gamma_nu gamma_mu gamma_nu gamma_mu = -I and the -1 cocycle makes the plaquette transport +I. The one-gauge-class claim follows because a closed U(1) or Z2 one-cochain is exact on the stated simply connected cubical regions. The runner source genuinely enumerates the unit cube and computes GF(2) ranks at scale rather than merely printing the claimed result.
+- **auditor confidence:** high
+
+### `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`
+
+- **Note:** [`STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the adjacency-licensed Q-conserving NN bilinear surface over per-site C^2, translation+cubic covariance up to site-local U(1) frame collapses the kinetic family to two simply connected flux classes K0=+1 and K1=-1; the site-local absorbing frame exists and is unique up to gauge x global frame on K1; the K1 selector remains unforced.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-019f3f00-a595-7b51-b963-df967f9233e8`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On D-kin with hermiticity, translation covariance, cubic O-covariance up to frame, and nonzero hopping, there are exactly two simply connected frame classes K0/K1; K0 is a countermodel to forcing K1 and P-SD is derived only on K1.  _(class `C`)_
+- **chain closes:** True — The allowed inputs supply the lattice/qubit carrier, retained Cl(3) module classification, tensor-product ladder/translation surface, and parity grading. Within the declared surface and covariance constraints, the proof and runner compute the two flux classes, K1-branch absorbing frame, and K0 countermodel without promoting the residual K1 selector to a theorem.
+- **rationale:** Clean only for the bounded theorem: two-flux collapse on the licensed surface plus K1-branch absorbing-frame existence/uniqueness, with K0 retained as the sharp countermodel. The note explicitly leaves B-BIT open and reduces P-KIN to the flux(-1) selector rather than deriving that selector. The no-spectator step is limited to the minimal C^2 carrier plus retained Cl(3) classification and the runner's CAR(2) dimension computation; the runner computes rotations, cohomology, enumeration, Pauli/CAR algebra, spectra, and falsification legs rather than hard-coding K1.
 - **auditor confidence:** high
 
 ### `staggered_dirac_realization_gate_note_2026-05-03`

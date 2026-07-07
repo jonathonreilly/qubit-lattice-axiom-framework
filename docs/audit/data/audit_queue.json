@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 428,
+    "critical": 427,
     "high": 273,
     "leaf": 777,
     "medium": 541
@@ -153,31 +153,27 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "hypercharge_identification_note",
-      "claim_scope": "Bounded LH-doublet chain assembly showing that the retained/chained ratio, matter-assignment, alpha=1/3 normalization bridge, and GMN vev-annihilator readout give Y(Q_L)=+1/3, Y(L_L)=-1 and the corresponding LH charge multiset; no full-spectrum, GUT-normalization, or sin^2(theta_W) claim is included.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
-        "gmn_vev_annihilator_l4_support_note_2026-07-02",
-        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
-        "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-        "graph_first_su3_integration_note"
+        "hypercharge_identification_note"
       ],
-      "direct_in_degree": 22,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 24.345,
-      "note_path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 13.839,
+      "note_path": "docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py",
-      "transitive_descendants": 1300
+      "runner_path": "scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py",
+      "transitive_descendants": 1294
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -508,6 +504,32 @@
       "ready": true,
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
       "transitive_descendants": 527
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "r_base_group_theory_derivation_theorem_note_2026-04-24",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "hypercharge_identification_note",
+        "graph_first_su3_integration_note",
+        "native_gauge_closure_note"
+      ],
+      "direct_in_degree": 23,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 23.469,
+      "note_path": "docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_r_base_group_theory_derivation.py",
+      "transitive_descendants": 500
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1197,30 +1219,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_quark_route2_e_center_blindness_no_go.py",
       "transitive_descendants": 22
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hypercharge_identification_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.839,
-      "note_path": "docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py",
-      "transitive_descendants": 1294
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6794,32 +6792,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_transport_integral_theorem.py",
       "transitive_descendants": 501
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "r_base_group_theory_derivation_theorem_note_2026-04-24",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hypercharge_identification_note",
-        "graph_first_su3_integration_note",
-        "native_gauge_closure_note"
-      ],
-      "direct_in_degree": 23,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 23.469,
-      "note_path": "docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_r_base_group_theory_derivation.py",
-      "transitive_descendants": 500
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -39975,6 +39947,34 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "native_gauge_closure_note",
+        "graph_first_su3_integration_note",
+        "hypercharge_identification_note",
+        "three_generation_observable_count_corollary_note_2026-05-03",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_sm_anomaly_closure_retained_anchors_2026_06_08.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "spectral_trajectory_theorem_2026-04-11",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -57436,34 +57436,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "native_gauge_closure_note",
-        "graph_first_su3_integration_note",
-        "hypercharge_identification_note",
-        "three_generation_observable_count_corollary_note_2026-05-03",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_sm_anomaly_closure_retained_anchors_2026_06_08.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "sm_gstar_from_framework_structure_bounded_theorem_note_2026-05-29",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -59944,6 +59916,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 240,
-  "total_pending": 2019
+  "ready_count": 242,
+  "total_pending": 2018
 }

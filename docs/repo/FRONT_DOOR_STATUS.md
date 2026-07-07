@@ -29,11 +29,11 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3715 |
-| Applied audit verdicts | 1378 |
-| Retained-grade rows, including boxed decorations | 1311 |
+| Applied audit verdicts | 1379 |
+| Retained-grade rows, including boxed decorations | 1312 |
 | Retained positive theorems | 192 |
 | Retained no-go rows | 194 |
-| Retained bounded rows | 880 |
+| Retained bounded rows | 881 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 21 |
 | Unaudited rows | 1976 |
@@ -50,17 +50,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2019 |
-| Ready rows | 240 |
+| Total pending rows | 2018 |
+| Ready rows | 242 |
 | Cycle-break targets | 10 |
-| Critical pending | 428 |
+| Critical pending | 427 |
 | High pending | 273 |
 | Medium pending | 541 |
 | Leaf pending | 777 |
 
 Next ready rows by queue order:
 
-- [`hypercharge_identification_note`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md) - critical; audit_in_progress
+- [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; unaudited
 - [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
 - [`flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) - critical; audit_in_progress
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
@@ -74,7 +74,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **439**.
+- Non-retained-grade cited rows in publication tables: **438**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -83,7 +83,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | medium | `unaudited` | 96 |
 | high | `audited_conditional` | 3 |
 | medium | `open_gate` | 3 |
-| critical | `audit_in_progress` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |

@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 192 |
 | **retained_no_go** | 194 |
-| **retained_bounded** | 880 |
+| **retained_bounded** | 881 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
 | unaudited | 1976 |
-| audit_in_progress | 2 |
+| audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 16 |
-| `audited_clean` | 1256 |
+| `audit_in_progress` | 15 |
+| `audited_clean` | 1257 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
@@ -135,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `hypercharge_identification_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -688,6 +687,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `hypercharge_identification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -9299,6 +9299,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Substitute the retained 6+2 traceless ratio beta = -3 alpha and explicit P1-P4 into Q(e_L) = T_3(e_L) + Y(L_L)/2, giving -1 = -1/2 + (-3 alpha)/2, hence alpha = 1/3.  _(class `A`)_
 - **chain closes:** True — The supplied direct dependencies are retained and audited_clean for the selected-axis graph-first 6+2 structural surface. The non-framework premises P1-P4 are not treated as axioms or derived facts; they are explicit antecedents in the bounded implication. Under that exact antecedent set, the conclusion is a rational arithmetic consequence with no hidden physical identification outside scope.
 - **rationale:** Audited clean is warranted only as a bounded theorem/implication. The note honestly exposes the physical/readout inputs as P1-P4, states that they are not derived or registry-accepted premises, and keeps the parent hypercharge identification and electroweak/matter-assignment claims outside the load-bearing chain. The runner output independently checks the source firewall, the beta/alpha = -3 traceless ratio on the 6+2 split, and the exact Fraction solve alpha = 1/3 with TOTAL PASS=15 FAIL=0. No numerical fit, quark-charge cross-check, lattice-action input, or downstream status promotion is load-bearing.
+- **auditor confidence:** high
+
+### `hypercharge_identification_note`
+
+- **Note:** [`HYPERCHARGE_IDENTIFICATION_NOTE.md`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded LH-doublet chain assembly: from the retained-grade ratio, matter-assignment, alpha=1/3 normalization, and GMN readout authorities, the commutant U(1) gives Y(Q_L)=+1/3, Y(L_L)=-1 and the derived LH charge table; no full-spectrum anomaly, GUT-normalization, or sin^2(theta_W) claim is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260707T174600Z-hypercharge_identification-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The load-bearing step of this note is the chain assembly itself: jointly, the L1 ratio, L2 matter assignment, L3 alpha=1/3 normalization bridge, and L4 GMN readout reproduce the SM hypercharge/charge pattern on the LH-doublet surface.  _(class `A`)_
+- **chain closes:** True — The direct authorities supplied for L1-L4 are retained-grade or decoration under a retained parent, and the source note keeps the normalization/readout boundaries explicit. The runner completes and checks only exact finite algebra plus source-boundary routing over those supplied/chained inputs.
+- **rationale:** The scoped bounded theorem closes as an algebraic assembly over retained-grade one-hop inputs: the ratio and matter assignment select the sectors, the retained-bounded normalization bridge fixes alpha=1/3, and the retained-bounded GMN lemma supplies Q=T3+Y/2. The runner does not perform an external PDG-style comparator check and the source firewall quarantines downstream GUT/sin^2/full-spectrum claims. Residual risk is bounded to the upstream premise packets and conventions already owned by the cited authority rows, not to this chain-assembly step.
 - **auditor confidence:** high
 
 ### `i3_zero_exact_theorem_note`

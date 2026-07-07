@@ -1502,7 +1502,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
-| `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -4681,13 +4681,13 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 
 - **Note:** [`DISTANCE_LAW_BREAKPOINT_NOTE.md`](../../docs/DISTANCE_LAW_BREAKPOINT_NOTE.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Hard-coded finite alpha/direction breakpoint table across the retained grown, alt-connectivity, third, fourth, and fifth-radial families; no causal architecture-feature theorem audited.
+- **claim_scope:** Audited only the bounded finite breakpoint table and its preserve/break/boundary labels across the listed retained families; the causal architecture-feature diagnosis is explicitly non-load-bearing.
 - **audit_status:** ~~audited_renaming~~
 - **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-distance_law_breakpoint_note-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The load-bearing content is the finite breakpoint table: the per-family alpha and direction rows, with causal architecture-feature attribution explicitly split off as non-load-bearing.  _(class `E`)_
-- **chain closes:** False — The primary runner does not compute alpha values, direction fractions, or breakpoint classes, and it does not read or assert the cited authorities; it defines BreakpointRow constants and prints them. The packet therefore supports only a reprinted table, not a closed bounded theorem from the supplied inputs.
-- **rationale:** Issue: the runner's load-bearing path is the hard-coded ROWS constant table, not a computation or cross-note verifier. Why this blocks: the current packet can define or reprint the finite breakpoint rows and labels, but it does not derive or verify them as a bounded theorem. Repair target: replace the constant-table runner with a verifier that consumes retained family outputs, or add matched-ablation computations if the causal feature diagnosis is to become load-bearing. Claim boundary until fixed: documented finite summary only, with causal diagnosis excluded.
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-distance_law_breakpoint_note-12`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The finite breakpoint table classifies the retained rows by alpha, direction, and architecture feature, with only the first two grown families preserving both near-Newtonian tail and direction.  _(class `E`)_
+- **chain closes:** False — The runner does not compute or verify the alpha/direction rows from the cited authorities; it defines and prints hard-coded rows and classifier text. The finite table may be consistent with the provided authorities, but the primary artifact supplies no load-bearing computation or input verification.
+- **rationale:** The source note correctly narrows the live claim to a finite table and explicitly splits off the causal architecture-feature diagnosis as non-load-bearing. However, the provided runner source contains only a constant ROWS list and prints labels; it does not recompute, parse, or verify the displayed measurements. Under the rubric, a no-computation runner that prints constants is class E, so the row is a bounded re-labeling/table definition rather than a clean theorem derivation.
 - **auditor confidence:** high
 
 ### `distance_law_definitive_note`

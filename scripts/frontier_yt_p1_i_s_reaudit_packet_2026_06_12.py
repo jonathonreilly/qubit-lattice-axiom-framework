@@ -11,9 +11,9 @@ packet exposes:
   * the `SU(3)` color-factor authority `C_F = 4/3`;
   * the conditional citation arithmetic `I_S in [4,10] -> P1 in
     [3.85%,9.62%]`;
-  * the full-staggered BZ candidate cache giving a framework-native scalar
-    candidate and native P1 arithmetic that can replace the supplied bracket
-    if the BZ row is independently audited clean;
+  * the corrected full-staggered BZ cache showing the old small native
+    candidate was a scalar taste-normalization bug and that the corrected
+    diagnostic is large and uncontrolled;
   * explicit firewalls against treating either surface as an audit-closed
     retained value before independent review.
 """
@@ -33,6 +33,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md"
 COLOR_NOTE = ROOT / "docs" / "YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md"
 BZ_NOTE = ROOT / "docs" / "YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md"
+CORRECTION_NOTE = ROOT / "docs" / "YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md"
 CANONICAL_CERT_NOTE = ROOT / "docs" / "CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md"
 PLAQUETTE_NOTE = ROOT / "docs" / "PLAQUETTE_SELF_CONSISTENCY_NOTE.md"
 MASTER_NOTE = ROOT / "docs" / "YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md"
@@ -96,6 +97,7 @@ def block_1_packet_presence() -> None:
         NOTE,
         COLOR_NOTE,
         BZ_NOTE,
+        CORRECTION_NOTE,
         CANONICAL_CERT_NOTE,
         PLAQUETTE_NOTE,
         MASTER_NOTE,
@@ -125,17 +127,17 @@ def block_2_source_boundary() -> None:
     note_flat = compact(note)
     check("re-audit bridge section present", "2026-06-12 restricted-packet re-audit bridge" in note)
     check("restricted packet table present", "Packet authorities exposed for re-audit" in note)
-    check("native BZ candidate section present", "What the native BZ certificate does and does not prove" in note)
+    check("corrected BZ diagnostic section present", "What the corrected BZ diagnostic does and does not prove" in note)
     check("independent audit firewall present", "Independent audit remains required" in note)
     check("no audit verdict update claimed", "does not update any audit verdict" in note_flat)
-    check("native path does not use supplied bracket as load-bearing", "supplied bracket is not load-bearing for the framework-native candidate" in note_flat)
-    check("upper end not proved", "does not prove the full supplied range" in note_flat)
-    check("native candidate replacement gate explicit", "can replace the supplied bracket on the native arithmetic path once the quadrature row itself is audited" in note_flat)
+    check("corrected path does not use supplied bracket as load-bearing", "supplied bracket is not load-bearing for a framework-native value" in note_flat)
+    check("supplied range not proved", "does not prove the supplied range" in note_flat)
+    check("old native candidate invalidation explicit", "old native replacement candidate is invalidated" in note_flat)
     check("master theorem not modified", "does not modify the master obstruction theorem" in note_flat)
     check("old proposed-retained marker absent from citation note", ("proposed_" + "retained") not in note)
     check("citation note remains bounded theorem", "**Claim type:** bounded_theorem" in note)
     check("citation note keeps legacy conditional arithmetic", "conditional arithmetic lemma" in note)
-    check("citation note names native arithmetic bridge", "framework-native arithmetic bridge" in note)
+    check("citation note names corrected BZ diagnostic bridge", "corrected BZ diagnostic bridge" in note)
     check("citation note links native BZ row as markdown dependency", "](YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md)" in note)
     check("citation note links canonical alpha certificate", "](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)" in note)
     check("citation note links parent plaquette surface", "](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)" in note)
@@ -178,7 +180,12 @@ def block_3b_canonical_alpha_certificate() -> None:
     check("canonical certificate links plaquette parent", "](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)" in cert)
     check("canonical certificate displays alpha_LM/(4pi)", "alpha_LM/(4pi)" in cert)
     check("BZ note links canonical certificate", "](CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)" in bz)
-    check("P1 note consumes canonical certificate only after audit", "canonical alpha/plaquette value certificate" in p1 and "independently audited clean" in p1)
+    p1_flat = compact(p1)
+    check(
+        "P1 note consumes canonical certificate only after audit",
+        "canonical alpha/plaquette value certificate" in p1_flat
+        and "independent audit closure and retained-grade dependency closure" in p1_flat,
+    )
 
 
 def block_4_conditional_arithmetic() -> None:
@@ -219,11 +226,12 @@ def block_4_conditional_arithmetic() -> None:
 
 def block_5_native_bz_candidate() -> None:
     print("\n" + "=" * 72)
-    print("BLOCK 5: native full-staggered BZ candidate")
+    print("BLOCK 5: corrected full-staggered BZ diagnostic")
     print("=" * 72)
 
     cache = text(BZ_CACHE)
     note = text(NOTE)
+    note_flat = compact(note)
 
     i_v_scalar = require_float(r"I_v_scalar\s+= \+([0-9.]+) \+/-", cache, "I_v_scalar")
     delta_r = require_float(r"Delta_R full staggered-PT:\s+([-+0-9.]+) %", cache, "Delta_R")
@@ -236,23 +244,24 @@ def block_5_native_bz_candidate() -> None:
     p1_native_low = alpha_over_4pi * cf * syst_low
     p1_native_high = alpha_over_4pi * cf * syst_high
 
-    print(f"  I_v_scalar candidate       = {i_v_scalar:.6f}")
+    print(f"  I_v_scalar corrected       = {i_v_scalar:.6f}")
     print(f"  5% systematic scalar band  = [{syst_low:.6f}, {syst_high:.6f}]")
-    print(f"  P1 native candidate        = {100.0 * p1_native:.4f}%")
-    print(f"  P1 native 5% band          = [{100.0 * p1_native_low:.4f}%, {100.0 * p1_native_high:.4f}%]")
+    print(f"  P1 scalar diagnostic       = {100.0 * p1_native:.4f}%")
+    print(f"  P1 scalar 5% band          = [{100.0 * p1_native_low:.4f}%, {100.0 * p1_native_high:.4f}%]")
     print(f"  Delta_R full staggered-PT  = {delta_r:.3f}%")
 
     check("BZ cache records clean execution", "status: ok" in cache and "exit_code: 0" in cache)
-    check("BZ cache records PASS=45 FAIL=0", "SUMMARY: PASS=45  FAIL=0" in cache)
-    check("BZ cache gives I_v_scalar near 3.902", abs(i_v_scalar - 3.902) < 0.005)
-    check("5% scalar systematic overlaps I_S = 4", syst_low <= 4.0 <= syst_high)
-    check("native P1 candidate equals framework-native arithmetic bridge", abs(100.0 * p1_native - 3.754) < 0.03)
-    check("native P1 systematic band recorded", abs(100.0 * p1_native_low - 3.566) < 0.03 and abs(100.0 * p1_native_high - 3.942) < 0.03)
-    check("BZ cache gives negative Delta_R three-channel assembly", delta_r < 0.0)
-    check("note records native lower-end candidate", "I_S_native_candidate" in note and "3.902" in note)
-    check("note records native P1 central value", "3.754%" in note)
-    check("note records native P1 systematic band", "[3.566%, 3.942%]" in note)
-    check("note says native candidate removes bracket import for native path", "removes the need to import that range for the native candidate" in note)
+    check("BZ cache records PASS=44 FAIL=0", "SUMMARY: PASS=44  FAIL=0" in cache)
+    check("BZ cache gives corrected I_v_scalar near 32.435", abs(i_v_scalar - 32.435) < 0.01)
+    check("5% scalar systematic is far outside supplied I_S bracket", syst_low > 10.0)
+    check("corrected scalar diagnostic maps to about 31.2%", abs(100.0 * p1_native - 31.203) < 0.05)
+    check("corrected scalar 5% band recorded arithmetically", abs(100.0 * p1_native_low - 29.643) < 0.05 and abs(100.0 * p1_native_high - 32.763) < 0.05)
+    check("BZ cache gives positive Delta_R three-channel diagnostic", delta_r > 0.0)
+    check("BZ cache records old small residual invalidated", "old -3.27% / -3.77% P1 residual is invalidated" in cache)
+    check("note records corrected scalar diagnostic", "I_v_scalar corrected full-BZ  =  32.435" in note)
+    check("note records corrected P1 scalar diagnostic", "31.203%" in note)
+    check("note says old native replacement candidate is invalidated", "old native replacement candidate is invalidated" in note_flat)
+    check("note says corrected BZ row remains diagnostic only", "diagnostic correction only" in note_flat)
 
 
 def block_6_scope_firewall() -> None:
@@ -265,16 +274,16 @@ def block_6_scope_firewall() -> None:
 
     check("citation note says legacy bracket is not retained by default", "no audit should treat the bracket as retained unless the bracket itself is separately accepted" in note_flat)
     check("citation note keeps master obstruction unchanged", "Do not modify the master obstruction theorem" in note)
-    check("new bridge calls BZ surface a native candidate", "native-BZ candidate" in note or "native BZ candidate" in note)
+    check("new bridge calls BZ surface a corrected diagnostic", "corrected BZ diagnostic" in note)
     check("new bridge requires separate BZ audit", "Independent audit remains required" in note)
     check(
         "new bridge does not treat literature bracket as native authority",
         "literature bracket remains parallel context only" in note_flat,
     )
     check(
-        "bridge keeps BZ candidate under separate audit",
+        "bridge keeps corrected BZ diagnostic under separate audit",
         "Independent audit remains required" in note
-        and "native-BZ candidate or the P1 revision as retained authority" in note,
+        and "corrected BZ diagnostic or P1 revision as retained authority" in note,
     )
     check("this runner does not edit audit ledger", True, "source/cache verifier only")
 

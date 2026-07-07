@@ -41,7 +41,8 @@ it "does not unconditionally force record formation". It conditions on a
 supplied realized state and on a record stack already containing the specified
 kind of record.
 
-The current Record axiom says a record "locks exactly one admissible local possibility". The realized-state
+The current Record axiom says a record "locks exactly one admissible local
+possibility". The realized-state
 primitive
 [`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md)
 allows pointwise evaluation at a supplied law-admissible realized state; it
@@ -140,7 +141,10 @@ the K1 anticommutation discriminator.
 The implication is conditional only. It does not assert that the four axioms
 produce a record stack, and it does not decide whether Admissibility alone must
 be read nonvacuously on the qubit factor. It uses the exact axiom clauses
-"for each site, nearest-neighbor conditions determine the available subset of possibilities" and "locks exactly one admissible local possibility" only after a supplied realized state contains the relevant record.
+"for each site, the available possibilities are determined by, and vary with,
+the nearest-neighbor conditions" and "locks exactly one admissible local
+possibility" only after a supplied realized state contains the relevant
+record.
 
 The parent residual remains intact: "the flux(-1) selector is not forced because K0 also satisfies the constraints". This note registers K1 from a
 realized neighbor-conditioned record stack; it does not select the branch from

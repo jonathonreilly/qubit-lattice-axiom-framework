@@ -10,7 +10,9 @@ unadopted premises plus exact polynomial arithmetic:
     occupancy note's one flow read in one supplied dictionary.
   * chart-mix premise: a mixed word requires per-step dictionary supply.
   * record-production premise: each event registers at least one new record.
-  * record-persistence premise: records persist across events.
+  * record persistence: records persist across events; grounded on the landed
+    Record axiom sentence that records are permanent (commit 7950d9202c), not a
+    separately supplied premise.
   * finite-collection-containment premise: a supplied finite readout collection
     contains the realized history's registered records.
   * record-count bound: under the pure-letter, production, persistence, and
@@ -244,8 +246,8 @@ check(
     "guard: state definition 'A state is a configuration of records.' present in axiom memo",
 )
 check(
-    contains(AXIOMS_DOC, "the locked possibility is invariant under repeated readout"),
-    "guard: 'the locked possibility is invariant under repeated readout' present -- WITHIN-readout stability, NOT persistence across events (grounds the record-persistence premise correction, not record-persistence premise)",
+    contains(AXIOMS_DOC, "records are permanent"),
+    "guard: 'records are permanent' present in axiom memo (Record / Fixed Reality; landed commit 7950d9202c) -- permanence across events is axiom text and grounds record persistence directly; the pre-restoration wording 'the locked possibility is invariant under repeated readout' gave only within-readout stability and is superseded, so persistence is no longer a supplied correction premise",
 )
 check(
     contains(AXIOMS_DOC, "For any finite collection of pairwise-disjoint records, scalar readout"),
@@ -265,7 +267,7 @@ check(
 )
 check(
     contains(AXIOMS_DOC, "physical persistence dynamics"),
-    "guard: axiom Open Gates 'physical persistence dynamics' present (persistence is outside the axioms; grounds record-persistence premise as un-adopted dynamics-shaped)",
+    "guard: axiom Open Gates 'physical persistence dynamics' present -- the persistence MECHANISM/dynamics stays outside the axioms, distinct from the landed permanence FACT ('records are permanent', commit 7950d9202c) that grounds the record-persistence input to the count bound",
 )
 
 # ===== pure-letter event premise: letter = event (pure words) + CHART-MIX  [checks 8-9] ============
@@ -295,7 +297,7 @@ check(
     "record-production premise (production): NAMED, dynamics-shaped (memo disclaims a record-production process); independent content -- a zero-production history [0,0,0] advances the word (3 events) yet registers no record, so production is not supplied by the letters alone",
 )
 
-# ===== record-persistence premise: persistence named, dynamics-shaped, independent content [check 11] =
+# ===== record persistence: grounded on landed axiom permanence; witness content [check 11] =
 
 net_persist = [1, 1, 1, 1]        # records persist -> running count non-decreasing
 net_vanish = [1, -1, 1, -1]       # produced then vanish -> not persistent
@@ -303,7 +305,7 @@ cum_vanish = cumulative(net_vanish)
 check(
     persistence_holds(net_persist) and (not persistence_holds(net_vanish))
     and cum_vanish == [1, 0, 1, 0] and cum_vanish[-1] < len(net_vanish),
-    "record-persistence premise (persistence): NAMED, dynamics-shaped (memo Open Gates lists 'physical persistence dynamics' outside the axioms; readout-invariance is WITHIN-readout only, NOT persistence -- category-error correction); independent content -- a produce-then-vanish history [+1,-1,+1,-1] has records vanish so the count 0 ceases to bound the 4 events",
+    "record persistence: GROUNDED on the landed axiom sentence 'records are permanent' (commit 7950d9202c) -- permanence across events is axiom text, so persistence is no longer a supplied correction premise; the produce-then-vanish history [+1,-1,+1,-1] is kept only as the load-bearing witness that the count step depends on persistence (count 0 would cease to bound the 4 events), a dependence the permanence axiom now meets",
 )
 
 # ===== finite-collection-containment premise: collection scoping / FIN [check 12] =============================

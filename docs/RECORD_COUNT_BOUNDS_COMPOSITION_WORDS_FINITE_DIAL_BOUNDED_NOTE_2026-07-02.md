@@ -1,7 +1,7 @@
 ---
 claim_id: record_count_bounds_composition_words_finite_dial_bounded_note_2026-07-02
 claim_type: bounded_theorem
-claim_scope: "Bounded support: under named unadopted pure-letter, record-production, record-persistence, finite-collection-containment, and chart-mix premises, a pure single-chart composition word has length bounded by the supplied finite record collection, pure single-chart fixed points stay {1/2} or {1} for all word lengths, and the length-<=2 mixed-word dial points are exactly the two chart-mix roots 2^(-1/3) and 2^(-2/3). This does not adopt the premises, select the realized word, fix r, import an empirical modulus, or close/retire any wall."
+claim_scope: "Bounded support: with record persistence grounded on the landed axiom sentence that records are permanent, and under named unadopted pure-letter, record-production, finite-collection-containment, and chart-mix premises, a pure single-chart composition word has length bounded by the supplied finite record collection, pure single-chart fixed points stay {1/2} or {1} for all word lengths, and the length-<=2 mixed-word dial points are exactly the two chart-mix roots 2^(-1/3) and 2^(-2/3). This does not adopt the premises, select the realized word, fix r, import an empirical modulus, or close/retire any wall."
 upstream_dependencies:
   - minimal_axioms
   - occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12
@@ -28,11 +28,16 @@ claim.
 ## Firewall
 
 - The bound rests on named premises, none derived and none adopted here:
-  pure-letter event, record production, record persistence, finite-collection
-  containment, and chart-mix for mixed words.
-- Record production and record persistence are dynamics-shaped. The axiom memo
-  disclaims any record-production process and lists physical persistence dynamics
-  among the open gates outside the axioms.
+  pure-letter event, record production, finite-collection containment, and
+  chart-mix for mixed words. Its remaining input, record persistence across
+  events, is now supplied by the landed Record axiom sentence that records are
+  permanent (commit 7950d9202c); it is no longer a separately supplied premise.
+- Record production is dynamics-shaped. The axiom memo disclaims any
+  record-production process. Record persistence across events is supplied by the
+  axiom sentence that records are permanent; the "physical persistence dynamics"
+  the axiom memo still lists among the open gates is the persistence mechanism,
+  which is distinct from, and not needed for, the permanence fact the count bound
+  uses.
 - Finite-collection containment is a scoping premise. The axiom set does not
   bound a configuration's total number of records; it only states additivity for a
   supplied finite pairwise-disjoint collection.
@@ -52,9 +57,10 @@ the slot chart has only the positive fixed point `1`. The mixed points
 `2^(-1/3)` and `2^(-2/3)` arise only after adding chart-mix, because a mixed word
 is not an iterate of either single supplied flow.
 
-The note also records the exact record-count bound: under the pure-letter event,
-record-production, record-persistence, and finite-collection-containment premises,
-a pure word with `k` letters has `k <= N_rec` for the supplied finite collection.
+The note also records the exact record-count bound: under the axiom's record
+permanence, together with the pure-letter event, record-production, and
+finite-collection-containment premises, a pure word with `k` letters has
+`k <= N_rec` for the supplied finite collection.
 For a finite maximum length, the mixed-word dial set is finite by a degree bound;
 the length-`<=2` mixed-word surface is enumerated completely below.
 
@@ -63,6 +69,9 @@ the length-`<=2` mixed-word surface is enumerated completely below.
 From [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md):
 
 - "A state is a configuration of records."
+- "When present, a record locks exactly one admissible local possibility. A site
+  never carries more than one record; records are permanent." (Record / Fixed
+  Reality; landed commit 7950d9202c.)
 - "For any finite collection of pairwise-disjoint records, scalar readout `I` is
   additive, with `I(empty)=0`."
 - Admissibility "does not choose a Hamiltonian or transfer operator, supply
@@ -97,11 +106,17 @@ supply. This premise is named and not adopted.
 is dynamics-shaped content and is not supplied by the axioms. A zero-production
 history can advance the word while registering no records.
 
-**Record-persistence premise.** Records persist across events. The Record
-sentence that a locked possibility is invariant under repeated readout gives only
-within-readout stability of an already-present record; it is not persistence
-across events. A produce-then-vanish history registers records that later vanish,
-so the final count need not bound the event total.
+**Record persistence.** Records persist across events. This is supplied by the
+landed Record axiom sentence that records are permanent (commit 7950d9202c):
+permanence across events is axiom text, so persistence is grounded on the axiom
+and is not a separately supplied premise. The pre-restoration Record wording said
+only that "the locked possibility is invariant under repeated readout", which
+gave within-readout stability of an already-present record rather than
+persistence across events; that reading is superseded now that the axiom states
+records are permanent. A produce-then-vanish history, which would register
+records that later vanish so the final count need not bound the event total, is
+what permanence excludes; it is kept below only as the witness showing the
+count step depends on persistence, a dependence the axiom now meets.
 
 **Finite-collection-containment premise.** A supplied finite readout collection
 contains the realized history's registered records, and `N_rec` is that
@@ -111,17 +126,18 @@ axiom text.
 
 ## Record-Count Bound
 
-Under the pure-letter event, record-production, record-persistence, and
-finite-collection-containment premises, induction on a pure single-chart word
-gives `k <= N_rec`. Record production gives at least one new record per event;
-record persistence keeps each registered record; finite-collection containment
-places them in the supplied counted collection.
+Under the axiom's record permanence, together with the pure-letter event,
+record-production, and finite-collection-containment premises, induction on a
+pure single-chart word gives `k <= N_rec`. Record production gives at least one
+new record per event; record permanence keeps each registered record;
+finite-collection containment places them in the supplied counted collection.
 
 The bound is exact and tight: a unit persistent contained history achieves
-`k = N_rec`. Each premise is load-bearing:
+`k = N_rec`. Each input is load-bearing:
 
 - without record production, events can advance while no new records appear;
-- without record persistence, records can vanish before the count is read;
+- without record permanence, records could vanish before the count is read, which
+  the axiom now excludes;
 - without finite-collection containment, registrations can land outside the
   counted collection.
 
@@ -166,7 +182,7 @@ chart stays at `{1/2}` and the slot chart stays at `{1}` for all word lengths.
 
 The remaining content is not resolved by this note:
 
-1. record production and record persistence;
+1. record production;
 2. supplied finite-collection containment;
 3. chart-mix and per-step dictionary supply;
 4. the realized history: which word is realized, and the realized step count;
@@ -179,7 +195,8 @@ decision, not a review-loop or audit-loop verdict.
 ## Does NOT
 
 - Does not derive or adopt the pure-letter event, record-production,
-  record-persistence, finite-collection-containment, or chart-mix premises.
+  finite-collection-containment, or chart-mix premises; record persistence is
+  grounded on the landed axiom sentence that records are permanent.
 - Does not select which word is realized, propose a selector, fix `r`, or import
   an empirical modulus.
 - Does not close, retire, or contradict any wall.

@@ -15,12 +15,12 @@ next_trace_action: "the representation-faithfulness bridge (realized-history ori
 actual_current_surface_status: bounded-support; claim type: bounded_theorem
 (T2 marking, quantifier-swapped) + bounded observation (T3 type-level) +
 bounded support (T4 reconciliation/decomposition). Permanence grounded on
-the LANDED restoration (commit 50f0db6187; transitional guard for older
-checkouts). Realized-sector conditioning per owner ruling. Nothing adopted;
+the LANDED restoration (commit 50f0db6187; current Record-sentence guard).
+Realized-sector conditioning per owner ruling. Nothing adopted;
 audit_required: true.
 
 ## Assumptions and imports
-No new empirical imports. Read files: MINIMAL_AXIOMS (transitional guard);
+No new empirical imports. Read files: MINIMAL_AXIOMS (current Record-sentence guard);
 the single-clock note (B-AXIS text + S3' certificate, quoted verbatim,
 review-pending/unaudited post-reset). Supervisor-supplied: landed
 permanence (50f0db6187); sibling PR #4882/#4873-lineage event-ordering as
@@ -64,7 +64,7 @@ added to the bridge); check hygiene (WINDOW==WINDOW tautology; the 4-cube
 guards; no file I/O in the draft's guards). Convergent repairs: the
 quantifier swap with ONE stated criterion; D0/D1 degeneracy classes with
 the counterexamples as checks 17-20; T3 dichotomy completed; residues 11->15
-parsed live from the note; live guards on both source files. Post-repair
-sync: permanence grounded on the landed restoration (transitional guard,
-CHECK 30). Supervisor re-run: TOTAL: PASS=36 FAIL=0; vocab clean.
+parsed live from the note; live guards on both source files. Landing sync:
+permanence grounded on the current landed Record sentence (CHECK 30).
+Supervisor re-run: TOTAL: PASS=36 FAIL=0; vocab clean.
 Disposition: pass-after-repair.

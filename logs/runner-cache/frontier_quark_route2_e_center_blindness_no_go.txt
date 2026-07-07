@@ -1,14 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_e_center_blindness_no_go.py
-runner_sha256: 0411149586b764e04c2da59e03790a776a472b65f3a186af985752397c655fde
+runner_sha256: 79ade76c86a1ccde8f3464ec8fd21cfeb3b7024324ea924317a4057b4372deb6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================
   FRONTIER: Quark Route-2 E-Center Blindness No-Go
 ========================================================================
+
+  Source boundary: carrier/readout setup supplied by QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md; this runner proves only the E-center-blind no-go.
 
 ========================================================================
 PART 1: Endpoint Carrier Geometry

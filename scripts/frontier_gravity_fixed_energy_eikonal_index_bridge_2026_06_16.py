@@ -62,6 +62,9 @@ def main() -> int:
         "GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md",
         "phi_action = c_E s",
         "c_E = 1 / (k0 lambda_axis'(k0))",
+        "c_E = 1/(2E) + 1/24 + O(E)",
+        "n(s) = 1 - (1/(2E) + 1/24 + O(E)) s + O(s^2/E^2).",
+        "order-one `1/24` correction",
         "No observed constants, PDG values, fitted selectors, new repo-wide axioms",
         "it does not rederive universal matter coupling",
         "The scalar generator shift/sign and fixed-energy action normalization are",
@@ -143,6 +146,23 @@ def main() -> int:
         "small-k coefficient agrees with 1/(2E) at weak-field accuracy",
         abs(c_exact - 1.0 / (2.0 * E)) / (1.0 / (2.0 * E)) < 0.02,
         f"c_exact={c_exact:.8f}, 1/(2E)={1/(2*E):.8f}",
+    )
+    series_residuals = []
+    correction_improves = True
+    for e_test in [0.04, 0.01, 0.0025]:
+        k_test = k_of_shift(e_test, 0.0)
+        c_test = 1.0 / (k_test * d_lam_axis(k_test))
+        leading = 1.0 / (2.0 * e_test)
+        corrected = leading + 1.0 / 24.0
+        correction_improves &= abs(c_test - corrected) < abs(c_test - leading)
+        series_residuals.append((c_test - corrected) / e_test)
+    target_residual = 11.0 / 1440.0
+    check(
+        "small-k expansion includes the +1/24 lattice correction beyond 1/(2E)",
+        correction_improves and max(abs(r - target_residual) for r in series_residuals) < 1.0e-4,
+        "residuals="
+        + ",".join(f"{r:.8f}" for r in series_residuals)
+        + f"; target={target_residual:.8f}",
     )
 
     lengths = np.array([1.0, 0.5, 1.7, 0.8, 1.2], dtype=float)

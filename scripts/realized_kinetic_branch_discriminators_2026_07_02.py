@@ -369,6 +369,48 @@ def rotation_permutation(L, ss, idx):
     return P
 
 
+def z2_frame_relates(A, B):
+    """True iff B = W A W for a site-diagonal Z2 frame W built by BFS.
+
+    The frame is reconstructed from the edge sign ratios B[i,j]/A[i,j]
+    on the shared off-diagonal support; the gate fails on support
+    mismatch, a non-(+1/-1) ratio, a disconnected reconstruction, an
+    inconsistent sign cocycle, or a nonzero conjugation residual.
+    """
+    tol = 1e-12
+    sup_a = np.abs(A) > tol
+    sup_b = np.abs(B) > tol
+    if not np.array_equal(sup_a, sup_b):
+        return False
+    n = A.shape[0]
+    sign = {}
+    nbrs = [[] for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            if i != j and sup_a[i, j]:
+                r = B[i, j] / A[i, j]
+                if abs(r - 1.0) > tol and abs(r + 1.0) > tol:
+                    return False
+                sign[(i, j)] = 1 if abs(r - 1.0) <= tol else -1
+                nbrs[i].append(j)
+    w = np.zeros(n, dtype=int)
+    w[0] = 1
+    queue = [0]
+    while queue:
+        i = queue.pop()
+        for j in nbrs[i]:
+            if w[j] == 0:
+                w[j] = sign[(i, j)] * w[i]
+                queue.append(j)
+    if np.any(w == 0):
+        return False
+    for (i, j), s in sign.items():
+        if s != w[i] * w[j]:
+            return False
+    W = np.diag(w.astype(complex))
+    return bool(np.linalg.norm(B - W @ A @ W) < 1e-12)
+
+
 def main():
     print("=" * 78)
     print("realized kinetic branch discriminators (2026-07-02)")
@@ -545,12 +587,17 @@ def main():
     H0r = P @ H0 @ P.conj().T
     H1r = P @ H1 @ P.conj().T
     rot_k0_exact = np.linalg.norm(H0r - H0) < 1e-12
-    rot_k1_spec = np.max(np.abs(np.linalg.eigvalsh(H1r) - np.linalg.eigvalsh(H1))) < 1e-10
+    rot_k1_frame = z2_frame_relates(H1, H1r)
+    H1f, _, _ = build_hopping(
+        L,
+        lambda x, mu: -eta0(x, mu) if (x == (0, 0, 0) and mu == 0) else eta0(x, mu),
+    )
+    rot_k1_reject = not z2_frame_relates(H1f, H1r)
     check(
         "T10",
-        "proper R_z12 rotation covariance checked by exact K0 equality and K1 spectrum invariance",
-        rot_k0_exact and rot_k1_spec,
-        "K1 leg uses spectrum-level invariance under the rotation permutation",
+        "proper R_z12 rotation covariance checked by exact K0 equality and operator-level K1 covariance up to a constructed site-local Z2 frame",
+        rot_k0_exact and rot_k1_frame and rot_k1_reject,
+        "K1 frame reconstructed from edge sign ratios with a cocycle consistency gate; a one-link flux flip is rejected",
     )
 
     print()

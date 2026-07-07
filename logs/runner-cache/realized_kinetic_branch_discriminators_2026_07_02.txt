@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/realized_kinetic_branch_discriminators_2026_07_02.py
-runner_sha256: d86e9649f98628f665d0057d99d7144910e9dba48b294853b88bc7502ea932e5
+runner_sha256: 6869626646b7a512df232df935c4af49776bf4a07d97ba802960d9205e862929
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -24,7 +24,7 @@ realized kinetic branch discriminators (2026-07-02)
 [PASS] [T8] 13. one-link sign flip of eta0 produces mixed plaquette fluxes  |  + fluxes=4, - fluxes=20
 [PASS] [T8] 14. perturbed blocked coefficients fail the K1 anticommutation discriminator  |  violated anticommutator norm=4.000
 [PASS] [T9] 15. D4 algebra dimensions discriminate and are U(1)-frame covariant; illegal SU2 subregion breaks covariance  |  K0 dims=[1, 1, 1], K1 dims=[2, 2, 2], illegal spread=1.000
-[PASS] [T10] 16. proper R_z12 rotation covariance checked by exact K0 equality and K1 spectrum invariance  |  K1 leg uses spectrum-level invariance under the rotation permutation
+[PASS] [T10] 16. proper R_z12 rotation covariance checked by exact K0 equality and operator-level K1 covariance up to a constructed site-local Z2 frame  |  K1 frame reconstructed from edge sign ratios with a cocycle consistency gate; a one-link flux flip is rejected
 
 SUMMARY: representative-level discriminators on the two-flux-class surface; selector bit NOT forced here; Admissibility reading not decided.
 [PASS] [SRC] 17. source declares bounded_theorem claim type

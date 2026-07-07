@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/frontier_theta_defect_closure_admissibility_2026_07_03.py
+runner_sha256: b729ee177a8ddf08857778a82b4732d8fd9097bb3e2d45e01168920257375b73
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.64
+status: ok
+----- stdout -----
+CHECK 01: PASS - Admissibility quote guard
+CHECK 02: PASS - parent Theorem 4.1 no-decomposition quote guard
+CHECK 03: PASS - parent N6 open-question quote guard
+CHECK 04: PASS - parent runner branch grading guard: branch n is a plaquette 2-cochain
+CHECK 05: PASS - parent runner defect grading guard: defect is dn on cubes
+CHECK 06: PASS - T^4_2 cell counts match parent grading
+CHECK 07: PASS - cubical coboundary sanity: d2 d1 = 0 on every link basis cochain
+CHECK 08: PASS - Encoding E1 exhaustive enumeration completed
+  closed=2 open=65534 total=65536
+CHECK 09: PASS - FORCING FAILS in E1: a neighbor-determined branch assignment has dn != 0
+  witness_mask=0x0001; nonzero dn entries=['((0, 0, 0, 0), (0, 1, 2)):-1', '((0, 0, 1, 0), (0, 1, 2)):1', '((0, 1, 0, 0), (0, 1, 2)):-1', '((1, 0, 0, 0), (0, 1, 2)):1', '((0, 0, 0, 0), (0, 1, 3)):-1', '((0, 0, 0, 1), (0, 1, 3)):1', '((0, 1, 0, 0), (0, 1, 3)):-1', '((1, 0, 0, 0), (0, 1, 3)):1']
+CHECK 10: PASS - explicit witness: c(0,0,0,0)=1 and all other vertex conditions 0 gives dn != 0
+  nonzero dn entries=['((0, 0, 0, 0), (0, 1, 2)):-1', '((0, 0, 1, 0), (0, 1, 2)):1', '((0, 1, 0, 0), (0, 1, 2)):-1', '((1, 0, 0, 0), (0, 1, 2)):1', '((0, 0, 0, 0), (0, 1, 3)):-1', '((0, 0, 0, 1), (0, 1, 3)):1', '((0, 1, 0, 0), (0, 1, 3)):-1', '((1, 0, 0, 0), (0, 1, 3)):1']
+CHECK 11: PASS - negative control: without neighbor-determination, a single plaquette branch has dn != 0
+  nonzero dn entries=['((0, 0, 0, 0), (0, 1, 2)):-1', '((0, 0, 1, 0), (0, 1, 2)):1', '((0, 0, 0, 0), (0, 1, 3)):-1', '((0, 0, 0, 1), (0, 1, 3)):1']
+CHECK 12: PASS - counterexample is still on the parent branch object; no theta value is inferred
+  witness Q_raw=0; used only as object sanity, not as theta charge
+TOTAL: PASS=12 FAIL=0
+FILES: docs/THETA_DEFECT_CLOSURE_FROM_ADMISSIBILITY_TEST_BOUNDED_NOTE_2026-07-03.md; scripts/frontier_theta_defect_closure_admissibility_2026_07_03.py
+CHECK COUNT: 12
+RESULT: FORCING FAILS; witness=mask 0x0001, dn ['((0, 0, 0, 0), (0, 1, 2)):-1', '((0, 0, 1, 0), (0, 1, 2)):1', '((0, 1, 0, 0), (0, 1, 2)):-1']
+ENCODING PREMISE: branch n is a plaquette singleton possibility, n(x;mu,nu)=c(x), determined by supplied nearest-neighbor vertex conditions
+UNCERTAINTIES: this does not test the physical SU(3) surface, other admissibility encodings, F-pairing insertion, or relative-frame correlation
+
+----- stderr -----
+

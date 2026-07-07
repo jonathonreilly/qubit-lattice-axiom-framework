@@ -1,43 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/berezin_detc_detr_fork_2026_06_04.py
-runner_sha256: e885284796c93acb375ef35be6415e0ecfa93c3e55ff1a75f3ff3b3a36ef19fc
+runner_sha256: d67696ed069a59d402f2670d46c1e1d625938d60a2561d6a0c95160e9f6d916e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
-========================================================================
 Koide Berezin det_C versus det_R fork mechanism
-========================================================================
-Scope: open-gate mechanism support; no closed no-go verdict.
-PASS cyclic_generator_order_three
-PASS complex_idempotents_orthogonal_rank_one
-PASS real_projector_split_one_plus_two
-PASS doublet_complex_structure_real
-PASS doublet_complex_structure_square
-PASS doublet_complex_structure_orientation
-PASS koide_q_identity_random_check
-PASS r_half_maps_to_q_two_thirds
-PASS r_one_maps_to_q_one
-PASS real_determinant_counts_doublet_twice
-PASS complex_block_count_counts_doublet_once
-PASS real_gaussian_doublet_weight
-PASS holo_gaussian_doublet_weight
-PASS holomorphic_berezin_equals_det
-PASS majorana_berezin_equals_pfaffian
-PASS pfaffian_square_matches_real_determinant
-PASS single_holo_mode_counted_once
-PASS real_gaussian_cell
-PASS majorana_berezin_cell
-PASS holo_gaussian_cell
-PASS holo_berezin_cell
-PASS statistics_row_not_decisive_in_tested_cells
-PASS polarization_column_decisive_in_tested_cells
-PASS real_reflection_flips_J
-No-go discipline disposition: broad negative demoted; N1 had four routes, not five.
-========================================================================
-SCORECARD: PASS=24 FAIL=0
-========================================================================
+Scope: bounded theorem under POLARIZATION-SELECT; no selector claimed.
+LOAD-BEARING CHECKS: PASS=35 FAIL=0
+MOTIVATION-TIER (non-load-bearing; does not affect exit status)
+MOTIVATION: PASS=1 FAIL=0
+TOTAL: PASS=35 FAIL=0
+DECLARATION: POLARIZATION-SELECT supplied; no polarization derived.
 
 ----- stderr -----
 

@@ -12876,12 +12876,12 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "s3_time_primitive_chain_note",
-      "claim_scope": null,
+      "claim_scope": "Exact Route-2 carrier/readout/time algebra pins P_R and Xi_R only under supplied ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT, while preserving the restricted-class boundary that rho_E is otherwise free.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
@@ -12891,7 +12891,7 @@
         "quark_route2_exact_time_coupling_note_2026-04-19"
       ],
       "direct_in_degree": 11,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [
         "scripts/_frontier_loader.py",
         "scripts/frontier_coarse_grained_exterior_law.py",
@@ -12916,7 +12916,7 @@
       ],
       "load_bearing_score": 11.566,
       "note_path": "docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_s3_time_primitive_chain_reaudit.py",
       "transitive_descendants": 66

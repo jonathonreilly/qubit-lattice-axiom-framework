@@ -1,78 +1,70 @@
+---
+claim_id: s3_time_primitive_chain_note
+claim_type_author_hint: bounded_theorem
+claim_scope: >-
+  Conditional bounded theorem: exact primitive-chain reductions and unconditional
+  retained no-go boundary, with P_R and Xi_R pinned only under ENDPOINT-QE,
+  ENDPOINT-RT, and SHELL-MULT.
+---
+
 # Primitive Chain Readout and Time-Coupling Update
 
-**Type:** open_gate
+**Type:** bounded_theorem
 **Date:** 2026-04-19
-**Primary runner:** [`scripts/frontier_s3_time_primitive_chain_reaudit.py`](../scripts/frontier_s3_time_primitive_chain_reaudit.py)
-**Purpose:** restate the remaining Route-2 primitives after the exact bilinear
-carrier, the readout/time-coupling theorem block, and the upstream
-E-channel readout naturality no-go.
+**Primary runner:** [`frontier_s3_time_primitive_chain_reaudit.py`][runner]
+**Purpose:** restate the remaining Route-2 primitives as exact reductions plus
+named-premise conditional algebra, with the retained no-go boundary preserved.
 
-## 2026-05-28 Repair Boundary
+No new axiom, primitive, bridge, or Tier-A content is introduced here; the named
+supplied premises below are conditional assumptions of this packet, not new
+registered structure.
 
-Earlier review found that the full positive theorem still does not close because
-the readout map `P_R`, specifically `beta_E / alpha_E = 21/4`, is explicitly left
-open. The narrow repair target is therefore either to derive
-`beta_E / alpha_E = 21/4` from the restricted primitive-chain objects or to prove
-an admissibility boundary showing why the current restricted class cannot select
-it uniquely. This revision takes the **split path**:
+## Safe statement
 
-- **Load-bearing (in scope):** The algebraic reduction that collapses the primitive-chain readout problem to three exact endpoint ratios `(β_T/α_T, α_T/α_E, β_E/α_E)` and the exact derivation that the current stack (exact kinematic scaffold `PL S³ × R`, bilinear carrier `K_R`, and slice semigroup `T_R = exp(−Λ_R)`) already determines the `T`-side candidates, leaving only the `E`-channel ratio as the remaining obstruction; these structural reductions follow from the cited upstream authorities.
-- **NON-load-bearing (split off / admitted):** The exact value `β_E/α_E = 21/4` — the specific E-channel readout entry needed to close the unique readout-to-slice time-coupling theorem — is not derived from the current Route-2 objects and is explicitly recorded as an open primitive; the positive theorem cannot close until this ratio is independently derived or an admissibility theorem rules out unique selection.
+This packet is a bounded conditional theorem, not a derivation of the endpoint
+ratio triple. Its load-bearing content is:
 
-No new axiom, import, or bridge is introduced. The runner-verified core is the
-load-bearing content; the named `21/4` bridge remains open.
+1. the unconditional primitive-chain reductions P0 through P3 on the existing
+   Route-2 carrier/readout/time stack;
+2. the conditional pinning of the normalized readout map P_R and the coupling
+   family Xi_R under the named supplied premises ENDPOINT-QE, ENDPOINT-RT, and
+   SHELL-MULT;
+3. the unconditional boundary that the restricted Route-2 carrier/readout class
+   leaves rho_E free unless an additional E-center endpoint ratio,
+   source-domain, or readout-map primitive is supplied.
 
-## Verdict
+Primitive P4, the Einstein/Regge identification, stays open and outside the
+claim.
 
-Route 2 no longer lacks an exact tensor carrier, and the prior open blocker for
-this row has a direct upstream no-go answer.
+## Named conditional premises
 
-The current exact stack already gives:
+```text
+ENDPOINT-QE (named conditional premise): the E-channel center/shell endpoint
+quotient is SUPPLIED as gamma_E(center)/gamma_E(shell) = 15/8; equivalently
+rho_E = beta_E/alpha_E = 21/4 (rho_E is written r_E in the endpoint notes)
+via the exact identity rho_E = 6*(q_E - 1); equivalently, granted ENDPOINT-RT
+and SHELL-MULT, the center ratio gamma_T(center)/gamma_E(center) = -8/9.
+Not derived: the no-go note
+QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md, used at
+its audited no-go scope, proves the restricted Route-2 carrier/readout class
+leaves rho_E free unless an additional E-center endpoint ratio,
+source-domain, or readout-map primitive is supplied.
 
-- exact background `PL S^3 x R`
-- exact slice generator `Lambda_R`
-- exact one-step transfer backbone `T_R = exp(-Lambda_R)`
-- exact bilinear microscopic carrier
-  `K_R(q) = (u_E, u_T, delta_A1 u_E, delta_A1 u_T)`
+ENDPOINT-RT (named conditional premise): the T-channel center/shell endpoint
+quotient is SUPPLIED as gamma_T(center)/gamma_T(shell) = 5/6; equivalently
+r_T = beta_T/alpha_T = -1.
 
-The new theorem block then sharpens the remaining problem:
+SHELL-MULT (named conditional premise): the shell coefficient ratio
+(historically the shell-multiplicity candidate) is SUPPLIED as
+a_T/a_E = alpha_T/alpha_E = -2.
+```
 
-- the restricted bright readout reduces exactly to one channelwise map `P_R`
-- the endpoint ratio chain does **not** derive exactly on the current stack
-- the exact missing readout entry collapses to the `E`-channel ratio
-  `beta_E / alpha_E`
-- and the unresolved readout map induces the current exact obstruction to a
-  unique readout-to-slice time-coupling theorem
+These premises are supplied conditions only. They are not derived, selected, or
+naturalized by this packet.
 
-The upstream no-go
-[`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)
-then proves the admissibility boundary requested by audit: within the current
-restricted Route-2 carrier/readout class, even after granting the two T-side
-candidates, `beta_E / alpha_E` remains a free parameter unless an additional
-E-center endpoint ratio, source-domain rule, or stronger readout primitive is
-supplied. In particular, the current objects do not uniquely select
-`beta_E / alpha_E = 21/4`.
+## Exact identities
 
-So the smallest missing primitive is no longer “some tensor observable.”
-It is the **exact readout map from `K_R` to the Route-2 two-channel readout**.
-The exact next target is sharper: derive a new E-center/source/readout
-primitive, or accept this route as blocked at the current restricted surface.
-
-## Exact stack already in hand
-
-The current branch already has:
-
-1. exact `S^3` spatial compactification
-2. exact anomaly-forced single-clock time
-3. exact background `PL S^3 x R`
-4. exact Schur boundary generator `Lambda_R`
-5. exact bilinear support carrier `K_R`
-6. exact slice semigroup backbone `T_R = exp(-Lambda_R)`
-
-Those are not speculative staging objects anymore. They are the live exact
-Route-2 backbone.
-
-## Revised primitive chain
+The exact Route-2 stack already supplies the following primitive-chain objects.
 
 ### Primitive P0: kinematic scaffold
 
@@ -84,85 +76,265 @@ Route-2 backbone.
 - `K_R(q) = (u_E, u_T, delta_A1 u_E, delta_A1 u_T)`
 - **Status:** exact reduction exists
 
-### Primitive P2: exact readout map
+On the live support surface the endpoint carrier columns are:
 
-- `P_R : vec(K_R) -> Theta_R`
-- restricted class:
-  `gamma_E = alpha_E u_E + beta_E delta_A1 u_E`
-  `gamma_T = alpha_T u_T + beta_T delta_A1 u_T`
-- **Status:** exact reduction derived, exact theorem still open
-- current obstruction:
-  the exact endpoint target is equivalent to
-  `(beta_T / alpha_T, alpha_T / alpha_E, beta_E / alpha_E) = (-1, -2, 21/4)`
-- admissibility boundary:
-  after granting the two T-side entries, the current restricted carrier leaves
-  `beta_E / alpha_E` free; selecting `21/4` requires additional structure.
+```text
+E-shell  = (1, 0, 0,   0)
+E-center = (1, 0, 1/6, 0)
+T-shell  = (0, 1, 0,   0)
+T-center = (0, 1, 0, 1/6)
+```
 
-### Primitive P3: exact readout-to-slice coupling law
+### Primitive P2: restricted readout map
 
-- `Xi_R(t ; c) = (P_R c) ⊗ exp(-t Lambda_R) u_*`
-- **Status:** exact conditional family exists; unique theorem still open
-- induced obstruction:
-  unresolved `P_R` means the source factor is still non-unique
+The exact carrier/readout reduction gives the channelwise class:
+
+```text
+gamma_E = alpha_E u_E + beta_E delta_A1 u_E
+gamma_T = alpha_T u_T + beta_T delta_A1 u_T
+
+P_R = [[alpha_E, 0, beta_E, 0],
+       [0, alpha_T, 0, beta_T]]
+```
+
+Its endpoint identities are unconditional algebra:
+
+```text
+q_T  := gamma_T(center) / gamma_T(shell)
+     = 1 + (beta_T / alpha_T) / 6
+
+q_E  := gamma_E(center) / gamma_E(shell)
+     = 1 + (beta_E / alpha_E) / 6
+
+s_TE := gamma_T(shell) / gamma_E(shell)
+     = alpha_T / alpha_E
+
+c_TE := gamma_T(center) / gamma_E(center)
+     = s_TE * q_T / q_E
+```
+
+Therefore the supplied endpoint triple
+
+```text
+(beta_T / alpha_T, alpha_T / alpha_E, beta_E / alpha_E) = (-1, -2, 21/4)
+```
+
+is exactly equivalent to:
+
+```text
+q_T = 5/6
+s_TE = -2
+q_E = 15/8
+c_TE = -8/9
+```
+
+This equivalence is exact algebra. It is not a derivation of any member of the
+triple.
+
+### Primitive P3: readout-to-slice coupling family
+
+For any specified admissible P_R on the restricted class, the coupling family is:
+
+```text
+Xi_R(t ; c) = (P_R c) tensor exp(-t Lambda_R) u_*
+```
+
+The time-coupling authority writes this object `Xi_P`; this packet keeps its
+original `Xi_R` symbol for the same object.
+
+This is an exact conditional family over the cited readout and slice-semigroup
+authorities. The unique theorem is not claimed without a derived P_R.
 
 ### Primitive P4: final Einstein/Regge identification
 
 - identify the exact carrier/readout/coupling package with the final
   Einstein/Regge tensor law on the current restricted class
-- **Status:** still open
+- **Status:** open and outside this claim
 
-## Current theorem endpoint
+## Conditional chain
 
-The new endpoint is now very specific.
-
-The current branch already proves:
-
-- exact carrier columns at the two endpoint-shift columns
-- exact reduction of the readout problem to one `E` map and one `T` map
-- exact endpoint algebra for the ratio chain
-- exact slice semigroup on the Route-2 side
-
-What it does **not** yet prove is the exact readout triple
+Under ENDPOINT-RT:
 
 ```text
-beta_T / alpha_T = -1
-alpha_T / alpha_E = -2
-beta_E / alpha_E = 21/4.
+gamma_T(center) / gamma_T(shell) = 5/6
+beta_T / alpha_T = 6*(5/6 - 1) = -1
 ```
 
-Granting the two `T`-side candidates collapses the remaining missing step to
-the single `E`-channel entry `beta_E / alpha_E = 21/4`.
+Under SHELL-MULT:
 
-That is the current sharp open problem. The naturality no-go proves
-that this entry is not selected by carrier linearity, shell normalization,
-T-side transfer data, or low-rational naturality alone.
+```text
+alpha_T / alpha_E = -2
+```
 
-## Dependency ranking
+Under ENDPOINT-QE:
 
-The clean dependency order is now:
+```text
+gamma_E(center) / gamma_E(shell) = 15/8
+beta_E / alpha_E = 6*(15/8 - 1) = 21/4
+```
 
-1. exact readout map `P_R`
-2. exact readout-to-slice coupling theorem
-3. final Einstein/Regge identification
+Thus, in the normalized shell gauge `alpha_E = 1`, the supplied-premise readout
+map is pinned to:
 
-The older “missing tensor primitive” framing is obsolete on this branch.
-The older “maybe the current restricted class already selects `21/4`”
-framing is also obsolete: the naturality no-go shows the current class does not
-uniquely select it.
+```text
+P_R^prem =
+[[1, 0, 21/4, 0],
+ [0, -2, 0, 2]]
+```
 
-## Immediate next derivation target
+The endpoint images then check exactly:
 
-The next theorem should be:
+```text
+P_R^prem E-shell  = (1, 0)
+P_R^prem E-center = (15/8, 0)
+P_R^prem T-shell  = (0, -2)
+P_R^prem T-center = (0, -5/3)
+```
 
-> derive the exact `E`-channel readout entry from current exact Route-2
-> objects, or prove a stronger admissibility theorem that shows why the
-> current readout class cannot select it uniquely.
+Consequently:
 
-The second branch of that repair request is now supplied by the
-naturality no-go. The remaining positive-science target is therefore a new
-primitive beyond the current restricted carrier/readout surface: derive the
-E-center endpoint ratio, a source-domain rule, or a stronger readout-map
-theorem.
+```text
+gamma_T(center) / gamma_T(shell) = (-5/3)/(-2) = 5/6
+gamma_T(shell) / gamma_E(shell) = -2
+gamma_T(center) / gamma_E(center) = (-5/3)/(15/8) = -8/9
+```
+
+Under the same named premises, the coupling family is pinned to:
+
+```text
+Xi_R^prem(t ; c) = (P_R^prem c) tensor exp(-t Lambda_R) u_*
+```
+
+This is the conditional bounded theorem. It does not derive ENDPOINT-QE,
+ENDPOINT-RT, SHELL-MULT, P4, or a unique readout-to-slice theorem without the
+named premises.
+
+## Motivation exhibit
+
+This section is evidence only; not load-bearing; no value below is consumed by
+any claim.
+
+The nearest-rational scan and live endpoint-fixed replay are kept only as
+motivation-tier context. They are not proof inputs.
+
+```text
+live beta_T / alpha_T = -1.000030814262
+live alpha_T / alpha_E = -2.005382749600
+live beta_E / alpha_E = 5.257476782081
+
+live q_T  = 0.833328197623
+live s_TE = -2.005382749600
+live c_TE = -0.890683778231
+```
+
+The nearby exact values
+
+```text
+q_T = 5/6
+s_TE = -2
+c_TE = -8/9
+q_E = 15/8
+beta_E / alpha_E = 21/4
+```
+
+are treated here only as supplied-premise values when the named premises are
+explicitly invoked. The scan does not select them for theorem use.
+
+## Unconditional boundary
+
+The retained no-go
+[QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md][no-go]
+is used at its audited scope.
+
+Section 6 of the no-go note, quoted verbatim:
+
+````text
+**Theorem (Route-2 E-channel readout naturality no-go).** In the exact
+restricted Route-2 carrier/readout class, after granting the conditional
+T-side candidates
+
+```text
+beta_T/alpha_T = -1,
+alpha_T/alpha_E = -2,
+```
+
+the E-channel readout entry
+
+```text
+rho_E = beta_E/alpha_E
+```
+
+remains a free parameter unless an additional E-center endpoint ratio,
+source-domain, or readout-map primitive is supplied. The value `rho_E = 21/4`
+is equivalent to the endpoint ratio `gamma_T(center)/gamma_E(center) = -8/9`
+under the granted T-side conditions, but it is not derived by carrier
+linearity, shell normalization, T-side transfer, or low-rational naturality
+alone.
+````
+
+Section 4 of the no-go note, quoted verbatim:
+
+````text
+The target value is equivalent to any of these exact statements:
+
+```text
+rho_E = 21/4,
+q_E = gamma_E(center)/gamma_E(shell) = 15/8,
+c_TE = gamma_T(center)/gamma_E(center) = -8/9
+```
+
+given the granted T-side values `q_T = 5/6` and
+`gamma_T(shell)/gamma_E(shell) = -2`.
+````
+
+For this row, the boundary is unconditional: the current restricted objects do
+not uniquely select `beta_E / alpha_E = 21/4`. The value remains supplied by
+ENDPOINT-QE until a new retained derivation supplies an additional E-center
+endpoint ratio, source-domain, or readout-map primitive.
+
+The no-go is not an exhaustive theorem against all possible readout primitives.
+It is a boundary for the restricted Route-2 carrier/readout class.
+
+## Residuals / open derivation targets
+
+The remaining positive-science target is:
+
+> derive an additional E-center endpoint ratio, source-domain, or readout-map
+> primitive that supplies rho_E = beta_E / alpha_E = 21/4 without importing the
+> live endpoint scan.
+
+The dependency ranking remains:
+
+1. exact readout map P_R beyond supplied-premise pinning;
+2. exact readout-to-slice coupling theorem without supplied P_R;
+3. final Einstein/Regge identification.
+
+P4 is open. The conditional package here must not be used as P4 closure.
+
+## Citation contract (audit-gated)
+
+Audit-gated citations may cite:
+
+- the exact Route-2 carrier/readout/time authority chain;
+- the unconditional reduced-family algebra and endpoint identities;
+- the conditional readout/coupling package only when ENDPOINT-QE, ENDPOINT-RT,
+  and SHELL-MULT are named as supplied premises;
+- the retained no-go boundary for the restricted Route-2 carrier/readout class.
+
+Audit-gated citations may not cite audited_conditional or unaudited rows as
+load-bearing authority. In particular,
+`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md` is context only
+unless a later retained-grade audit changes its status.
+
+### Upstream authorities (Route-2 theorem notes)
+
+- [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md][readout-map] -
+  exact bilinear carrier `K_R` and restricted bright readout class `P_R`.
+- [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md][time-coupling] -
+  exact slice backbone `Lambda_R` and one-step transfer
+  `T_R = exp(-Lambda_R)`.
+- [QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md][no-go] -
+  retained no-go boundary for non-selection of `beta_E / alpha_E = 21/4`.
 
 ## Downstream source-boundary firewall
 
@@ -173,8 +345,10 @@ Allowed downstream uses of this packet are limited to:
   `q_E = 15/8` and, under the granted T-side data, center `T/E = -8/9`;
 - cite the admissibility boundary that the current restricted
   carrier/readout class leaves `beta_E / alpha_E` free;
-- cite the open positive target: derive an E-center endpoint ratio,
-  source-domain rule, or stronger readout-map theorem.
+- cite the open positive target: derive an additional E-center endpoint ratio,
+  source-domain, or readout-map primitive;
+- cite the conditional readout/coupling package under the named premises
+  ENDPOINT-QE, ENDPOINT-RT, SHELL-MULT at its stated scope.
 
 Forbidden downstream uses without a new retained bridge:
 
@@ -184,18 +358,45 @@ Forbidden downstream uses without a new retained bridge:
 - do not cite the granted T-side candidates as selecting the E-channel ratio;
 - do not use the Route-2 no-go as an exhaustive no-go against all possible
   readout primitives;
-- do not promote the primitive chain from open gate to positive theorem unless
-  a new E-center/source/readout primitive is supplied.
+- do not promote this packet to a positive readout theorem unless a new
+  E-center/source/readout primitive is supplied;
+- the 2026-07-07 recut re-types this packet as a conditional bounded theorem;
+  promotion to a positive or unconditional readout theorem still requires a new
+  retained E-center/source/readout primitive;
+- the named premises may not be cited as derived.
 
-Re-audit should be triggered if a downstream row uses this packet as a
-positive readout theorem, as a derivation of the `21/4` E-channel entry, or
-as closure of the Route-2 readout-to-slice time-coupling theorem.
+Re-audit should be triggered if a downstream row uses this packet as a positive
+readout theorem, as a derivation of the `21/4` E-channel entry, as closure of
+the Route-2 readout-to-slice time-coupling theorem, or as a derivation of any
+named premise. Promotion to a positive or unconditional readout theorem still
+requires a new retained E-center/source/readout primitive.
 
-## Upstream authorities (Route-2 theorem notes)
+## Audit history
 
-- [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) — exact bilinear carrier `K_R` and restricted bright readout class `P_R`.
-- [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) — exact slice backbone `Lambda_R` and one-step transfer `T_R = exp(-Lambda_R)`.
-- [QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md) — no-go proving the current restricted Route-2 carrier/readout class does not uniquely select `beta_E / alpha_E = 21/4`.
+### 2026-05-28 Repair Boundary
+
+Earlier review found that the full positive theorem still does not close
+because the readout map `P_R`, specifically `beta_E / alpha_E = 21/4`, is left
+open. The narrow repair target was either to derive
+`beta_E / alpha_E = 21/4` from the restricted primitive-chain objects or to
+prove an admissibility boundary showing why the current restricted class cannot
+select it uniquely.
+
+That split remains preserved:
+
+- **Load-bearing after this recut:** exact reductions, exact endpoint algebra,
+  and conditional consequences under named supplied premises.
+- **Not load-bearing:** the live match, nearest-rational scan, and any claim
+  that the current Route-2 objects derive `beta_E / alpha_E = 21/4`.
+
+### 2026-07-07 Recut Boundary
+
+This recut re-types the audited clean open-gate row as a bounded conditional
+theorem. The formerly matched endpoint values are re-typed as the named supplied
+premises ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT. The load-bearing claim is now
+the exact conditional algebra under those premises plus the unconditional
+retained no-go boundary. The positive target remains open: derive an additional
+E-center endpoint ratio, source-domain, or readout-map primitive.
 
 ## Verification
 
@@ -208,7 +409,15 @@ PYTHONPATH=scripts python3 scripts/frontier_s3_time_primitive_chain_reaudit.py
 Expected result:
 
 ```text
-TOTAL: PASS=22, FAIL=0
-VERDICT: S3 primitive chain is an open gate backed by Route-2
-non-selection.
+S3 primitive-chain conditional bounded-theorem re-audit helper
+LOAD-BEARING: PASS=30 FAIL=0
+MOTIVATION-TIER (non-load-bearing; does not affect exit status)
+MOTIVATION: PASS=7 FAIL=0
+TOTAL: PASS=30 FAIL=0
+VERDICT: conditional bounded theorem checks passed; motivation is non-fatal.
 ```
+
+[runner]: ../scripts/frontier_s3_time_primitive_chain_reaudit.py
+[readout-map]: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+[time-coupling]: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md
+[no-go]: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md

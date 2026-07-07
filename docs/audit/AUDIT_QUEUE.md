@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 2018
+**Total pending:** 2017
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 236
 
 By criticality:
-- `critical`: 430
+- `critical`: 429
 - `high`: 272
 - `medium`: 536
 - `leaf`: 780
@@ -73,7 +73,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | cycle_id | length | max_desc | primary break target | criticality | audit_status |
 |---:|---|---:|---:|---|---|---|
 | 1 | `cycle-0001` | 3 | 385 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | critical | audited_conditional |
-| 2 | `cycle-0002` | 2 | 379 | `quark_cp_carrier_completion_note_2026-04-18` | critical | unaudited |
+| 2 | `cycle-0002` | 2 | 379 | `quark_cp_carrier_completion_note_2026-04-18` | critical | audited_numerical_match |
 | 3 | `cycle-0003` | 2 | 304 | `bridge_gap_hk_cube_perron_note_2026-05-06` | critical | unaudited |
 | 4 | `cycle-0004` | 3 | 304 | `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06` | critical | unaudited |
 | 5 | `cycle-0005` | 2 | 58 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | high | unaudited |

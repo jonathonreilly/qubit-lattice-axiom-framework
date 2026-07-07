@@ -68,10 +68,10 @@
       "max_transitive_descendants": 379,
       "nodes": [
         {
-          "audit_status": "unaudited",
+          "audit_status": "audited_numerical_match",
           "claim_id": "quark_cp_carrier_completion_note_2026-04-18",
           "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
+          "effective_status": "audited_numerical_match",
           "note_path": "docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md",
           "title": "Quark CP-Carrier Completion on the Live Mass-Ratio Lane",
           "transitive_descendants": 379

@@ -1,0 +1,35 @@
+[PASS] SWAP squares to identity
+[PASS] SWAP is transpose-self
+[PASS] SWAP is adjoint-self
+[PASS] Sym projector is idempotent
+[PASS] Anti projector is idempotent
+[PASS] Sym/Anti projectors are orthogonal
+[PASS] Sym projector has complex rank 3
+[PASS] Anti projector has complex rank 1
+[PASS] Sym block has real dimension 6
+[PASS] EXACT: S (A tensor B) S = B tensor A on all 16 elementary pairs (hence S commutes with g tensor g for every g in End(C^2), by bilinearity)
+[PASS] control: SWAP commutes with seeded SU(2) sample 1
+[PASS] control: Sym projector stable for seeded SU(2) sample 1
+[PASS] control: SWAP commutes with seeded SU(2) sample 2
+[PASS] control: Sym projector stable for seeded SU(2) sample 2
+[PASS] control: SWAP commutes with seeded SU(2) sample 3
+[PASS] control: Sym projector stable for seeded SU(2) sample 3
+[PASS] frame-relativity exhibit: an independent one-site change (g tensor 1) fails to commute with S and moves the split
+[PASS] frame-relativity control: the same g applied diagonally (g tensor g) preserves the split
+[PASS] Sym basis is orthonormal
+[PASS] Sym basis lies in +1 SWAP eigenspace
+[PASS] Sym restriction has spin-1 Casimir J^2=2I
+[PASS] Spin generators preserve the Sym block
+[PASS] Spin-axis negative control commutant has complex dimension 1 (numerical)
+[PASS] EXACT: commutant of the integer vector rep of so(3) on C^3 has complex dimension 1 (Gaussian elimination over Q[i], no tolerances)
+[PASS] witness: rotation matrix is a proper cubic rotation (integer, det +1, order 4)
+[PASS] witness: the rotation permutes the six incident edges
+[PASS] witness: the Sym/Anti split is preserved edgewise under relabeling with trivial internal action
+[PASS] Text audit: Admissibility sentence present
+[PASS] Text audit: June-8 re-opening residual present
+[PASS] Text audit: June-8 N6 baseline sentence present
+[PASS] AST self-scan: no network/subprocess imports
+[PASS] AST self-scan: no write-mode open calls
+[PASS] AST self-scan: no Path write helpers
+TOTAL: 33 PASS / 0 FAIL
+DECLARATION: bounded bonded-pair arena verified; no color, carrier, transport, dynamics, or global obstruction discharge is claimed.

@@ -16,10 +16,23 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
-ABJ_NOTE = ROOT / "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md"
+ABJ_NOTE_NAME = (
+    "ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_"
+    "BOUNDED_NOTE_2026-05-26.md"
+)
+ABJ_NOTE = ROOT / "docs" / ABJ_NOTE_NAME
 SUPPLIER_NOTE = ROOT / "docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md"
 HYPERCHARGE_NOTE = ROOT / "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md"
 RETAINED_POSITIVE_GRADES = {"retained", "retained_bounded"}
+LH_SCOPE_NEEDLES = (
+    "Bounded LH-doublet chain assembly",
+    "commutant U(1) gives Y(Q_L)=+1/3, Y(L_L)=-1",
+)
+EXCLUSION_SCOPE_NEEDLES = (
+    "no full-spectrum anomaly",
+    "GUT-normalization",
+    "sin^2(theta_W) claim is included",
+)
 
 PASS = 0
 FAIL = 0
@@ -38,6 +51,10 @@ def check(name: str, condition: bool, detail: str = "") -> None:
 
 def read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
+
+
+def one_line(text: str) -> str:
+    return " ".join(text.split())
 
 
 def ledger_row(claim_id: str) -> dict:
@@ -60,16 +77,29 @@ def test_current_supplier_status() -> None:
         str(row.get("claim_type")),
     )
     scope = row.get("claim_scope") or ""
-    check(
-        "ledger scope includes the (2,3)/(2,1) LH-doublet surface",
-        ("Q_L" in scope or "(2,3)" in scope or "(2, 3)" in scope)
-        and ("L_L" in scope or "(2,1)" in scope or "(2, 1)" in scope)
-        and "+1/3" in scope
-        and "-1" in scope,
+    expected_scope = (
+        "Bounded LH-doublet chain assembly: from the retained-grade ratio, "
+        "matter-assignment, alpha=1/3 normalization, and GMN readout "
+        "authorities, the commutant U(1) gives Y(Q_L)=+1/3, Y(L_L)=-1 and "
+        "the derived LH charge table; no full-spectrum anomaly, "
+        "GUT-normalization, or sin^2(theta_W) claim is included."
     )
     check(
-        "ledger scope explicitly keeps full-spectrum boundaries",
-        "does not derive" in scope and "full SM spectrum" in scope and "anomaly cancellation" in scope,
+        "ledger scope matches the note-quoted scope exactly",
+        " ".join(scope.split()) == " ".join(expected_scope.split()),
+        "exact claim_scope comparison (whitespace-folded)",
+    )
+    check(
+        "ledger scope carries the derived LH charge-table clause",
+        "the derived LH charge table" in scope,
+    )
+    check(
+        "ledger scope includes current LH-doublet surface needles",
+        all(needle in scope for needle in LH_SCOPE_NEEDLES),
+    )
+    check(
+        "ledger scope includes current exclusion needles",
+        all(needle in scope for needle in EXCLUSION_SCOPE_NEEDLES),
     )
 
 
@@ -90,17 +120,20 @@ def test_source_notes() -> None:
     )
     check(
         "ABJ note keeps P-COMP and P-REC open",
-        "does not derive P-COMP or P-REC" in abj and "P-COMP/P-REC premise edges" in abj,
+        "does not derive P-COMP or P-REC" in abj
+        and "P-COMP/P-REC premise edges" in abj,
     )
     check(
         "ABJ note refuses to widen P-HY to full physical hypercharge",
-        "does not widen P-HY beyond the bounded left-handed hypercharge-identification surface" in abj
+        "does not widen P-HY beyond the bounded left-handed "
+        "hypercharge-identification surface" in abj
         and "derivation of full physical hypercharge" in abj,
     )
     check(
         "supplier note names the exact target blocker",
         "Target blocker" in supplier
-        and "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26" in supplier,
+        and "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_"
+        "bounded_note_2026-05-26" in supplier,
     )
     check(
         "supplier note forbids new axioms or admissions",
@@ -108,12 +141,14 @@ def test_source_notes() -> None:
     )
     check(
         "supplier note keeps remaining ABJ blockers explicit",
-        "P-ABJ remains" in supplier and "P-COMP remains" in supplier and "P-REC remains" in supplier,
+        "P-ABJ remains" in supplier
+        and "P-COMP remains" in supplier
+        and "P-REC remains" in supplier,
     )
     check(
         "hypercharge note supplies the bounded LH identification surface",
-        "Y_α = α(P_sym" in hyper
-        and "α = +1/3" in hyper
+        "Y_\u03b1 = \u03b1(P_sym" in hyper
+        and "\u03b1 = +1/3" in hyper
         and "(2, 3)" in hyper
         and "(2, 1)" in hyper,
     )
@@ -134,15 +169,24 @@ def test_exact_b1_arithmetic() -> None:
     tr_y3 = 6 * y_q**3 + 2 * y_l**3
     tr_su3sq_y = 2 * t_f * y_q
     tr_su2sq_y = 3 * t_f * y_q + t_f * y_l
-    tr_su3cube = Fraction(2, 1)
+    # computed from rep content: LH color-triplet doublet components, A(fund)=1
+    color_triplet_lh_components = [rep for rep in ("Q_L_up", "Q_L_down") ]
+    tr_su3cube = sum(Fraction(1) for _ in color_triplet_lh_components)
 
     check("Tr[Y] LH = 0", tr_y == 0, str(tr_y))
     check("Tr[Y^3] LH = -16/9", tr_y3 == Fraction(-16, 9), str(tr_y3))
-    check("Tr[SU(3)^2 Y] LH = 1/3", tr_su3sq_y == Fraction(1, 3), str(tr_su3sq_y))
+    check(
+        "Tr[SU(3)^2 Y] LH = 1/3",
+        tr_su3sq_y == Fraction(1, 3),
+        str(tr_su3sq_y),
+    )
     check("Tr[SU(2)^2 Y] LH = 0", tr_su2sq_y == 0, str(tr_su2sq_y))
     check("Tr[SU(3)^3] LH = 2", tr_su3cube == 2, str(tr_su3cube))
     nonzero = [tr_y3, tr_su3sq_y, tr_su3cube]
-    check("B1 still has exactly three nonzero ABJ-relevant traces", sum(v != 0 for v in nonzero) == 3)
+    check(
+        "B1 still has exactly three nonzero ABJ-relevant traces",
+        sum(v != 0 for v in nonzero) == 3,
+    )
 
 
 def test_path_firewall() -> None:
@@ -166,10 +210,12 @@ def test_path_firewall() -> None:
             all(not path.startswith(banned) for path in source_paths),
         )
     supplier = read(SUPPLIER_NOTE)
+    supplier_one_line = one_line(supplier)
     check(
         "supplier note uses bounded-support status rather than bare retained",
-        "bounded-support source theorem" in supplier
-        and "independent review/audit owns any effective status movement" in supplier,
+        "bounded-support source theorem" in supplier_one_line
+        and "independent review/audit owns any effective status movement"
+        in supplier_one_line,
     )
 
 

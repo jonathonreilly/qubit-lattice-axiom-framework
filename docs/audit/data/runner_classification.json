@@ -17605,7 +17605,7 @@
       "runner": "scripts/hypercharge_alpha_third_normalization_runner.py"
     },
     "hypercharge_identification_note": {
-      "assert_count": 6,
+      "assert_count": 8,
       "counts": {
         "A": 2,
         "B": 1,
@@ -17614,7 +17614,7 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "runner": "scripts/frontier_hypercharge_identification.py"
+      "runner": "scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py"
     },
     "hypercharge_proof_walk_lattice_independence_bounded_note_2026-05-07": {
       "assert_count": 1,
@@ -64156,7 +64156,21 @@
     "scripts/frontier_hypercharge_identification.py": {
       "assert_count": 6,
       "claims": [
-        "gmn_vev_annihilator_l4_support_note_2026-07-02",
+        "gmn_vev_annihilator_l4_support_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py": {
+      "assert_count": 8,
+      "claims": [
         "hypercharge_identification_note"
       ],
       "counts": {
@@ -92385,12 +92399,12 @@
     "dominant_class_distribution": {
       "A": 503,
       "B": 652,
-      "C": 1299,
+      "C": 1300,
       "D": 453,
       "none": 458
     },
-    "runners_classified": 3365,
-    "runners_with_C": 1773,
+    "runners_classified": 3366,
+    "runners_with_C": 1774,
     "runners_with_D": 1077
   }
 }

@@ -41161,6 +41161,10 @@
       "to": "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
     },
     {
+      "from": "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
+      "to": "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26"
+    },
+    {
       "from": "su2_weak_beta_coefficient_structural_closed_form_theorem_note_2026-04-26",
       "to": "left_handed_charge_matching_note"
     },
@@ -86675,9 +86679,9 @@
         "graph_first_su3_integration_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "81f040ff717f1b236389b6863e4c64638d5245e295ba0248b28c610b0bee64d2",
+      "note_hash": "26c0b016a70a5b2d8fd7ced1aa04206dd03a254a6e765005b001787bac250292",
       "path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
-      "runner_path": "scripts/frontier_hypercharge_identification.py",
+      "runner_path": "scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py",
       "title": "Hypercharge U(1)_Y Identification from the Commutant"
     },
     "hypercharge_proof_walk_lattice_independence_bounded_note_2026-05-07": {
@@ -111533,7 +111537,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8922dd35f7cc3e7c192e99c0ac16778be850f48fad21fe602be4763cad4caa47",
+      "note_hash": "0ad763c3c33eef5f5acc3072a9573858d0f1a8aaec42844bc5bb926d1ea1245c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -117931,10 +117935,11 @@
         "graph_first_su3_integration_note",
         "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
         "three_generation_observable_count_corollary_note_2026-05-03",
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+        "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bcba9841d3e915a14ae609db00b1cd1f0eead299ae93c32cd88b33350c2b4eb3",
+      "note_hash": "3fa43767b093e7283e914491ec6d9a182fbdebe90d5b1461723e0ce2d4f4c36a",
       "path": "docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.py",
       "title": "SU(2)_L 1-Loop \u03b2-Function Coefficient Narrow Theorem"
@@ -128362,8 +128367,8 @@
       "open_gate": 208,
       "positive_theorem": 660
     },
-    "edge_count": 14515,
-    "leaf_count": 1310,
+    "edge_count": 14516,
+    "leaf_count": 1309,
     "node_count": 3877,
     "root_count": 1106,
     "runners_with_path": 3499

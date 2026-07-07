@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py
-runner_sha256: efd2cace1340bcd4e73aa0d503c5c5c51ea736fae135457c09b571d65fb23bd4
-timeout_sec: 120
+runner_sha256: efefef2c830ed90d58fd4ce9cda8f43815f62ddbb983c8be2d8000ba7818a508
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 17.26
+elapsed_sec: 4.81
 status: ok
 ----- stdout -----
 ========================================================================================

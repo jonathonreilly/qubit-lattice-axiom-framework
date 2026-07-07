@@ -56,8 +56,7 @@ def main() -> int:
 
     phi_full, support, interior, q_eff = finite_rank.exact_finite_rank_field()
     boundary = finite_rank.boundary_stationarity_report(phi_full)
-    coarse_report = finite_rank.coarse_metric_report(phi_full)
-    best = coarse_report["best"]
+    _coarse_rows, best, _coarse_ratio = finite_rank.coarse_metric_report(phi_full)
 
     print(f"support size={len(support)}, q_eff_sum={np.sum(q_eff):.8f}")
     print(

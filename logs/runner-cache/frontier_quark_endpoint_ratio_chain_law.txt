@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_endpoint_ratio_chain_law.py
+runner_sha256: fca57c9a5c2fbfadba2d55487dd9476e1617cc1f05ee52605f7f6b4503f27907
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
 Quark endpoint ratio-chain law
 ========================================================================
 
@@ -151,3 +159,6 @@ natural, or load-bearing from the motivation scan.
 
 ========================================================================
 TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

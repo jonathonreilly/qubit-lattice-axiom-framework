@@ -6329,11 +6329,11 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 0,
+        "C": 4,
         "D": 0
       },
-      "decoration_candidate": true,
-      "dominant_class": "B",
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "runner": "scripts/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.py"
     },
     "d3_lower_bound_source_packet_gate_note_2026-06-06": {
@@ -9678,7 +9678,7 @@
         "A": 0,
         "B": 0,
         "C": 4,
-        "D": 2
+        "D": 3
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -17317,11 +17317,11 @@
       "runner": "scripts/frontier_hubble_c1_a1_grassmann_no_go.py"
     },
     "hubble_lane5_c1_a2_action_unit_metrology_obstruction_hygiene_companion_note_2026-06-04": {
-      "assert_count": 9,
+      "assert_count": 5,
       "counts": {
         "A": 0,
-        "B": 10,
-        "C": 21,
+        "B": 11,
+        "C": 13,
         "D": 0
       },
       "decoration_candidate": false,
@@ -18685,15 +18685,15 @@
       "runner": "scripts/cl3_koide_bae_probe_wilson_dimensional_consistency_2026_05_09_probe26.py"
     },
     "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04": {
-      "assert_count": 1,
+      "assert_count": 3,
       "counts": {
-        "A": 14,
-        "B": 0,
-        "C": 6,
+        "A": 0,
+        "B": 1,
+        "C": 1,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "A",
+      "dominant_class": "B",
       "runner": "scripts/berezin_detc_detr_fork_2026_06_04.py"
     },
     "koide_berry_bundle_obstruction_theorem_note_2026-04-19": {
@@ -23377,10 +23377,10 @@
       "runner": "scripts/multisite_pauli_group_check.py"
     },
     "n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17": {
-      "assert_count": 3,
+      "assert_count": 4,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 3,
         "D": 0
       },
@@ -28621,11 +28621,11 @@
       "runner": "scripts/frontier_quark_c3_oriented_ward_splitter_support.py"
     },
     "quark_c3_oriented_ward_splitter_support_note_hash_drift_hygiene_companion_note_2026-06-04": {
-      "assert_count": 6,
+      "assert_count": 2,
       "counts": {
         "A": 0,
         "B": 3,
-        "C": 17,
+        "C": 14,
         "D": 0
       },
       "decoration_candidate": false,
@@ -28693,10 +28693,10 @@
       "runner": "scripts/frontier_quark_cp_small_correction_boundary.py"
     },
     "quark_e_channel_endpoint_quotient_law_audited_scope_narrow_bounded_note_2026-05-10": {
-      "assert_count": 2,
+      "assert_count": 3,
       "counts": {
         "A": 0,
-        "B": 4,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -28717,10 +28717,10 @@
       "runner": "scripts/frontier_quark_e_channel_endpoint_quotient_law_audited_scope_narrow_bounded_note_2026-05-10_hostile_audit_findings.py"
     },
     "quark_e_channel_endpoint_quotient_law_note_2026-04-19": {
-      "assert_count": 2,
+      "assert_count": 3,
       "counts": {
         "A": 0,
-        "B": 4,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -28741,10 +28741,10 @@
       "runner": "scripts/frontier_quark_endpoint_denominator_admissibility.py"
     },
     "quark_endpoint_ratio_chain_law_audited_scope_narrow_bounded_note_2026-05-10": {
-      "assert_count": 2,
+      "assert_count": 3,
       "counts": {
         "A": 0,
-        "B": 4,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -28753,10 +28753,10 @@
       "runner": "scripts/frontier_quark_endpoint_ratio_chain_law.py"
     },
     "quark_endpoint_ratio_chain_law_note_2026-04-19": {
-      "assert_count": 2,
+      "assert_count": 3,
       "counts": {
         "A": 0,
-        "B": 4,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -28861,15 +28861,15 @@
       "runner": "scripts/frontier_quark_lane3_bounded_companion_retention_firewall.py"
     },
     "quark_lane3_bounded_companion_retention_firewall_record_axiom_invariance_companion_note_2026-06-04": {
-      "assert_count": 0,
+      "assert_count": 2,
       "counts": {
         "A": 0,
-        "B": 5,
-        "C": 6,
-        "D": 25
+        "B": 7,
+        "C": 4,
+        "D": 3
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": "B",
       "runner": "scripts/audit_companion_quark_lane3_bounded_companion_retention_firewall_record_axiom_invariance_2026_06_04.py"
     },
     "quark_lane3_stuck_fanout_synthesis_2026-04-28": {
@@ -31253,7 +31253,7 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 58,
+        "C": 57,
         "D": 1
       },
       "decoration_candidate": false,
@@ -32209,7 +32209,7 @@
       "runner": "scripts/frontier_universal_gr_tensor_action_blocker.py"
     },
     "s3_time_primitive_chain_note": {
-      "assert_count": 1,
+      "assert_count": 9,
       "counts": {
         "A": 0,
         "B": 4,
@@ -35391,8 +35391,8 @@
     "static_source_readout_i1_accepted_premise_bridge_dep_resolution_hygiene_companion_note_2026-06-04": {
       "assert_count": 1,
       "counts": {
-        "A": 11,
-        "B": 3,
+        "A": 6,
+        "B": 5,
         "C": 0,
         "D": 0
       },
@@ -44419,14 +44419,14 @@
       "exists": true
     },
     "scripts/audit_companion_hubble_lane5_c1_a2_action_unit_metrology_obstruction_hygiene_2026_06_04.py": {
-      "assert_count": 9,
+      "assert_count": 5,
       "claims": [
         "hubble_lane5_c1_a2_action_unit_metrology_obstruction_hygiene_companion_note_2026-06-04"
       ],
       "counts": {
         "A": 0,
-        "B": 10,
-        "C": 21,
+        "B": 11,
+        "C": 13,
         "D": 0
       },
       "decoration_candidate": false,
@@ -45260,14 +45260,14 @@
       "exists": true
     },
     "scripts/audit_companion_quark_c3_oriented_ward_splitter_note_hash_drift_hygiene_2026_06_04.py": {
-      "assert_count": 6,
+      "assert_count": 2,
       "claims": [
         "quark_c3_oriented_ward_splitter_support_note_hash_drift_hygiene_companion_note_2026-06-04"
       ],
       "counts": {
         "A": 0,
         "B": 3,
-        "C": 17,
+        "C": 14,
         "D": 0
       },
       "decoration_candidate": false,
@@ -45275,18 +45275,18 @@
       "exists": true
     },
     "scripts/audit_companion_quark_lane3_bounded_companion_retention_firewall_record_axiom_invariance_2026_06_04.py": {
-      "assert_count": 0,
+      "assert_count": 2,
       "claims": [
         "quark_lane3_bounded_companion_retention_firewall_record_axiom_invariance_companion_note_2026-06-04"
       ],
       "counts": {
         "A": 0,
-        "B": 5,
-        "C": 6,
-        "D": 25
+        "B": 7,
+        "C": 4,
+        "D": 3
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/audit_companion_qubit_link_u2_connection_algebra_bounded_2026_06_04.py": {
@@ -45805,8 +45805,8 @@
         "static_source_readout_i1_accepted_premise_bridge_dep_resolution_hygiene_companion_note_2026-06-04"
       ],
       "counts": {
-        "A": 11,
-        "B": 3,
+        "A": 6,
+        "B": 5,
         "C": 0,
         "D": 0
       },
@@ -46611,18 +46611,18 @@
       "exists": true
     },
     "scripts/berezin_detc_detr_fork_2026_06_04.py": {
-      "assert_count": 1,
+      "assert_count": 3,
       "claims": [
         "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04"
       ],
       "counts": {
-        "A": 14,
-        "B": 0,
-        "C": 6,
+        "A": 0,
+        "B": 1,
+        "C": 1,
         "D": 0
       },
       "decoration_candidate": false,
-      "dominant_class": "A",
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/bertrand_stable_orbit_green_kernel_bridge.py": {
@@ -55619,11 +55619,11 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 0,
+        "C": 4,
         "D": 0
       },
-      "decoration_candidate": true,
-      "dominant_class": "B",
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py": {
@@ -59059,7 +59059,7 @@
         "A": 0,
         "B": 0,
         "C": 4,
-        "D": 2
+        "D": 3
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -71623,14 +71623,14 @@
       "exists": true
     },
     "scripts/frontier_quark_e_channel_endpoint_quotient_law.py": {
-      "assert_count": 2,
+      "assert_count": 3,
       "claims": [
         "quark_e_channel_endpoint_quotient_law_audited_scope_narrow_bounded_note_2026-05-10",
         "quark_e_channel_endpoint_quotient_law_note_2026-04-19"
       ],
       "counts": {
         "A": 0,
-        "B": 4,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -71669,14 +71669,14 @@
       "exists": true
     },
     "scripts/frontier_quark_endpoint_ratio_chain_law.py": {
-      "assert_count": 2,
+      "assert_count": 3,
       "claims": [
         "quark_endpoint_ratio_chain_law_audited_scope_narrow_bounded_note_2026-05-10",
         "quark_endpoint_ratio_chain_law_note_2026-04-19"
       ],
       "counts": {
         "A": 0,
-        "B": 4,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -74289,7 +74289,7 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 58,
+        "C": 57,
         "D": 1
       },
       "decoration_candidate": false,
@@ -75123,7 +75123,7 @@
       "exists": true
     },
     "scripts/frontier_s3_time_primitive_chain_reaudit.py": {
-      "assert_count": 1,
+      "assert_count": 9,
       "claims": [
         "s3_time_primitive_chain_note"
       ],
@@ -86615,13 +86615,13 @@
       "exists": true
     },
     "scripts/n5_single_generator_clock_exchange_no_go_2026_06_17.py": {
-      "assert_count": 3,
+      "assert_count": 4,
       "claims": [
         "n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17"
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 3,
         "D": 0
       },
@@ -92395,16 +92395,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 706,
+    "decoration_candidates": 705,
     "dominant_class_distribution": {
-      "A": 503,
-      "B": 652,
-      "C": 1300,
-      "D": 453,
+      "A": 502,
+      "B": 653,
+      "C": 1301,
+      "D": 452,
       "none": 458
     },
     "runners_classified": 3366,
-    "runners_with_C": 1774,
+    "runners_with_C": 1775,
     "runners_with_D": 1077
   }
 }

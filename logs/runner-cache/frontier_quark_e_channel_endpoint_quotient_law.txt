@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_e_channel_endpoint_quotient_law.py
+runner_sha256: 8fb7aa9dcfb22cf1182a351d457be0813c4c1ba04514c9299eb024508f9af4bd
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
 Quark E-channel endpoint quotient law
 ========================================================================
 
@@ -159,3 +167,6 @@ load-bearing from the motivation scan.
 
 ========================================================================
 TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/bootstrap_continuation_nonempty_free_orbit_propagation_closure_2026_07_04.py
+runner_sha256: 0b2ff4b9da43b3765afcbb7e99ed0e9609eda98d21d19c8580e5e14cd28381dd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.27
+status: ok
+----- stdout -----
+PASS: S0 computed cubic group machinery | group=48 det_split=(24, 24) orbit_sizes=(6, 8, 12, 24, 24)
+PASS: A1 proper nonempty orbit containment | model_sizes=(6, 14, 30)
+PASS: A2 rotation axes improper stabilized | improper_fixed_axes=23 nonidentity_proper=23
+PASS: A3 small proper orbits and inversion | samples=25 small_orbits=3
+PASS: A4 free orbit reduction by inversion | base=50 plus_one_free=74 restored=98
+PASS: B1 J2 flip odd and proper covariant | nonzero_observed=True proper_tests=120
+PASS: B2 L2 duplicated slots zero J2 | patterns=50 values=(0,)
+PASS: B3 achiral toy one-step closure under flip | trials=200
+PASS: B4 achiral toy BFS endpoint flip closure | layer_sizes=(1, 48, 936, 9936)
+PASS: B5 chiral toy one-step closure violation witness | J2=2 flip_J2=-2 avail=(0, 1, 2, 3, 4, 5) flip_avail=() reachable=(True,True)
+PASS: B6 chiral toy proper torus covariance | proper_elements=24 random_configs_each=3
+PASS: C1 achiral toy spontaneous J2 registration | history_available=[True, True, True] flip_history_available=[True, True, True] first_nonzero=((0, 1, 0), 2)
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

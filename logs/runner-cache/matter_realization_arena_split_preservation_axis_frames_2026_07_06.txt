@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/matter_realization_arena_split_preservation_axis_frames_2026_07_06.py
+runner_sha256: 03835ee7122bf13efbdace97a45921cb7409126171364516baacaf22895bbbe8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+[PASS] text audits: every source quote from files 1-4 is present
+[PASS] SWAP algebra and Sym/Anti projectors have exact ranks 3/1
+[PASS] 16 elementary-pair identity S(A tensor B)S = B tensor A
+[PASS] diagonal Pauli lifts commute with SWAP
+[PASS] one-sided sigma3 tensor I moves Sym into Anti by exact witness
+[PASS] KS relative frames: T(x+mu)T(x)^-1 = eta_mu(x) sigma_mu
+[PASS] twisted exchanges S'_mu commute with S and have joint dims 2,1,1,0
+[PASS] AST self-scan: no banned imports/calls and no float constants
+DECLARATION verdict=SPLIT_PRESERVATION_EXACT_FOR_EDGE_DIAG_CLASS; ks_frame_transport=IN_CLASS; open_bridge=KS-HOP-BRIDGE; condition=EDGE-DIAG; joint_dims={(S=+,S'=+):2,(+,-):1,(-,+):1,(-,-):0}; not_consumed=K1_audit,color_carrier,beyond_KS,dynamics_statistics
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

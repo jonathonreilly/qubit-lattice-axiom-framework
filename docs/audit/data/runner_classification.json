@@ -2640,6 +2640,18 @@
       "dominant_class": "C",
       "runner": "scripts/bootstrap_continuation_nonempty_free_orbit_propagation_closure_2026_07_04.py"
     },
+    "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/born_form_composite_gleason_bridge_2026_07_04.py"
+    },
     "born_lane_comparison_note": {
       "assert_count": 0,
       "counts": {
@@ -15335,6 +15347,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/frontier_gr_class_expansion_finite_rank_target.py"
+    },
+    "graded_constraint_interface_consistency_bounded_note_2026-07-04": {
+      "assert_count": 4,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/graded_constraint_interface_consistency_2026_07_04.py"
     },
     "grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12": {
       "assert_count": 1,
@@ -28224,6 +28248,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_pre_record_reference_state_tracial_derivation.py"
     },
+    "presentation_gauge_axis_sign_flip_invariants_twin_detector_gauge_section_orientation_bit_bounded_theorem_note_2026-07-04": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/presentation_gauge_localization_last_bit_2026_07_04.py"
+    },
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": {
       "assert_count": 1,
       "counts": {
@@ -30863,6 +30899,18 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py"
+    },
+    "record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py"
     },
     "record_composition_bridge_semigroup_positivity_selection_bounded_note_2026-07-02": {
       "assert_count": 2,
@@ -46680,6 +46728,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/born_form_composite_gleason_bridge_2026_07_04.py": {
+      "assert_count": 1,
+      "claims": [
+        "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/born_rule_framework_bridge_check.py": {
@@ -83736,6 +83799,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/graded_constraint_interface_consistency_2026_07_04.py": {
+      "assert_count": 4,
+      "claims": [
+        "graded_constraint_interface_consistency_bounded_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.py": {
       "assert_count": 2,
       "claims": [
@@ -88088,6 +88166,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/presentation_gauge_localization_last_bit_2026_07_04.py": {
+      "assert_count": 2,
+      "claims": [
+        "presentation_gauge_axis_sign_flip_invariants_twin_detector_gauge_section_orientation_bit_bounded_theorem_note_2026-07-04"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py": {
       "assert_count": 1,
       "claims": [
@@ -88610,6 +88703,21 @@
         "D": 0
       },
       "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py": {
+      "assert_count": 1,
+      "claims": [
+        "record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
       "dominant_class": "B",
       "exists": true
     },
@@ -92273,16 +92381,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 704,
+    "decoration_candidates": 706,
     "dominant_class_distribution": {
       "A": 503,
-      "B": 649,
-      "C": 1298,
+      "B": 652,
+      "C": 1299,
       "D": 453,
       "none": 458
     },
-    "runners_classified": 3361,
-    "runners_with_C": 1772,
-    "runners_with_D": 1076
+    "runners_classified": 3365,
+    "runners_with_C": 1773,
+    "runners_with_D": 1077
   }
 }

@@ -3341,6 +3341,10 @@
       "to": "condition_alphabet_identification_coupled_cubic_action_threshold_met_no_odd_channel_below_triples_bounded_theorem_note_2026-07-04"
     },
     {
+      "from": "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
       "to": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20"
     },
@@ -16567,6 +16571,10 @@
     {
       "from": "gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10",
       "to": "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28"
+    },
+    {
+      "from": "graded_constraint_interface_consistency_bounded_note_2026-07-04",
+      "to": "minimal_axioms"
     },
     {
       "from": "grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12",
@@ -32693,6 +32701,18 @@
       "to": "minimal_axioms"
     },
     {
+      "from": "presentation_gauge_axis_sign_flip_invariants_twin_detector_gauge_section_orientation_bit_bounded_theorem_note_2026-07-04",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "presentation_gauge_axis_sign_flip_invariants_twin_detector_gauge_section_orientation_bit_bounded_theorem_note_2026-07-04",
+      "to": "empty_state_bootstrap_all_open_availability_orbit_dichotomy_degree_nine_chirality_wall_bounded_theorem_note_2026-07-04"
+    },
+    {
+      "from": "presentation_gauge_axis_sign_flip_invariants_twin_detector_gauge_section_orientation_bit_bounded_theorem_note_2026-07-04",
+      "to": "bootstrap_continuation_availability_nonempty_free_orbit_reduction_propagation_closure_bounded_theorem_note_2026-07-04"
+    },
+    {
       "from": "pre_record_reference_state_maximal_symmetry_open_gate_note_2026-06-05",
       "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
     },
@@ -36671,6 +36691,14 @@
     {
       "from": "record_classicalization_dynamics_firewall_2026-06-05",
       "to": "record_generation_readout_two_sectors_2026-06-05"
+    },
+    {
+      "from": "record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "record_comparability_owner_one_pager_2026-07-04",
+      "to": "record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07"
     },
     {
       "from": "record_composition_bridge_semigroup_positivity_selection_bounded_note_2026-07-02",
@@ -63280,6 +63308,20 @@
       "runner_path": "scripts/bootstrap_continuation_nonempty_free_orbit_propagation_closure_2026_07_04.py",
       "title": "The Bootstrap Continued: \"Records Form\" Makes the First Availability Set Nonempty, Every Orbit With Proper Symmetry Is Automatically Achiral (Chirality Requires a Free Off-Mirror Orbit), and Achirality Propagates \u2014 an Achiral Rule Keeps the Reachable Class Flip-Closed Inductively, While a Chiral Rule Breaks One-Step Closure at a Reachable Configuration (Bounded Theorem)"
     },
+    "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04": {
+      "claim_id": "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "bd019a4a2ba0827b428c4af6db1720b2a0f27f0b1a0aaf8f065d0f90fb69163f",
+      "path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+      "runner_path": "scripts/born_form_composite_gleason_bridge_2026_07_04.py",
+      "title": "Born Form From Lawful Graded Constraint via Composite Gleason (Bridge Note)"
+    },
     "born_lane_comparison_note": {
       "claim_id": "born_lane_comparison_note",
       "claim_type_author_hint": null,
@@ -83222,6 +83264,20 @@
       "runner_path": "scripts/frontier_gr_class_expansion_finite_rank_target.py",
       "title": "Gravity Class Expansion Target: Finite-Rank Source-to-Metric on the Current Bridge Surface"
     },
+    "graded_constraint_interface_consistency_bounded_note_2026-07-04": {
+      "claim_id": "graded_constraint_interface_consistency_bounded_note_2026-07-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "da3a6209b88567461b9711fbbc8b243fa5001b5546fdb5588b0f1b99cdeee583",
+      "path": "docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md",
+      "runner_path": "scripts/graded_constraint_interface_consistency_2026_07_04.py",
+      "title": "Graded-Constraint Interface Consistency: v1 Defect and v2 Repair"
+    },
     "graded_constraint_primitive_registration_proposal_2026-07-04": {
       "claim_id": "graded_constraint_primitive_registration_proposal_2026-07-04",
       "claim_type_author_hint": "meta",
@@ -102935,6 +102991,22 @@
       "runner_path": "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
       "title": "Pre-Record Reference State as the Unique Tracial State on the One-Qubit Z^3 Algebra"
     },
+    "presentation_gauge_axis_sign_flip_invariants_twin_detector_gauge_section_orientation_bit_bounded_theorem_note_2026-07-04": {
+      "claim_id": "presentation_gauge_axis_sign_flip_invariants_twin_detector_gauge_section_orientation_bit_bounded_theorem_note_2026-07-04",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (exact finite group-theory and invariant-",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "empty_state_bootstrap_all_open_availability_orbit_dichotomy_degree_nine_chirality_wall_bounded_theorem_note_2026-07-04",
+        "bootstrap_continuation_availability_nonempty_free_orbit_reduction_propagation_closure_bounded_theorem_note_2026-07-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "b2ac790aa2e1e626fba347103fa00fa8a16070d319a6b6fa8cfb732e603aee43",
+      "path": "docs/PRESENTATION_GAUGE_AXIS_SIGN_FLIP_INVARIANTS_TWIN_DETECTOR_GAUGE_SECTION_ORIENTATION_BIT_BOUNDED_THEOREM_NOTE_2026-07-04.md",
+      "runner_path": "scripts/presentation_gauge_localization_last_bit_2026_07_04.py",
+      "title": "The Presentation-Gauge Face of the Orientation Bit: Cl(3,0) Axis-Sign Flips Are a Z2^3 Group With O_h = G+ . Z2^3, Its Invariants Are Exactly the All-Even-Exponent Functions, No Gauge-Invariant Function Separates a Generic Orbit From Its Twin, and the Unique Twin-Detector Psi9 Is Gauge-Odd \u2014 So Witnessing Chirality Requires a Gauge Section, One Z2 Orientation Bit Locked to the Bootstrap-Twin Selector (Bounded Theorem + Owner Decision Surface, Not Adopted)"
+    },
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": {
       "claim_id": "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality",
       "claim_type_author_hint": "bounded_theorem",
@@ -109697,14 +109769,30 @@
       "runner_path": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py",
       "title": "Record Clock/Rate Normalization And Stable-Dial Gate"
     },
+    "record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07": {
+      "claim_id": "record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem - genre label means scope-pinned per the",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9ef7c6be7a042074645251213955a4dca9150f1196eaa5d6c0958f503416e17b",
+      "path": "docs/RECORD_COMPARABILITY_IMPORT_DISCIPLINE_SUPPORT_FORK_EXHIBIT_AND_CONDITIONAL_ARROW_BOUNDED_NOTE_2026-07-07.md",
+      "runner_path": "scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py",
+      "title": "Record Comparability: Import-Discipline Support, Fork Exhibit, And Conditional Arrow Substrate"
+    },
     "record_comparability_owner_one_pager_2026-07-04": {
       "claim_id": "record_comparability_owner_one_pager_2026-07-04",
       "claim_type_author_hint": "meta",
       "claim_type_author_hint_raw": "meta (owner decision surface; no theorem claim)",
       "claim_type_seed_hint": "meta",
-      "deps": [],
+      "deps": [
+        "record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "2a56b3854553238e43d8d4e050fc618bf9a307305d280b076334c6c34986df86",
+      "note_hash": "151a544c734d275a6e722e2d8ddfbb5a1fdf33529c7d085c54c7a1f6174e1381",
       "path": "docs/RECORD_COMPARABILITY_OWNER_ONE_PAGER_2026-07-04.md",
       "runner_path": null,
       "title": "Owner One-Pager: One Configuration Of Records"
@@ -110809,7 +110897,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d821c58f779769bf9186a53dca25b72605810548c1756be134c673edb7f2a175",
+      "note_hash": "e94fef57f395bb778a593e93dd681c830a545cd1379060efcb76b45f78016909",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -126962,7 +127050,6 @@
     "record_axiom_audit_application_map_2026-06-06",
     "record_classical_semigroup_boundary_2026-06-06",
     "record_clock_rate_normalization_gate_2026-06-06",
-    "record_comparability_owner_one_pager_2026-07-04",
     "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11",
     "record_formation_append_consistency_sweep_2026-07-04",
     "record_function_finite_sector_algebra_2026-06-05",
@@ -127261,7 +127348,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1587,
+      "bounded_theorem": 1591,
       "decoration": 3,
       "meta": 326,
       "no_go": 332,
@@ -127270,7 +127357,7 @@
       "positive_theorem": 275
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1992,
+      "bounded_theorem": 1996,
       "decoration": 3,
       "meta": 326,
       "no_go": 436,
@@ -127278,10 +127365,10 @@
       "open_gate": 208,
       "positive_theorem": 660
     },
-    "edge_count": 14508,
-    "leaf_count": 1308,
-    "node_count": 3873,
-    "root_count": 1107,
-    "runners_with_path": 3495
+    "edge_count": 14515,
+    "leaf_count": 1310,
+    "node_count": 3877,
+    "root_count": 1106,
+    "runners_with_path": 3499
   }
 }

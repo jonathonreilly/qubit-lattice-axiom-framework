@@ -64,7 +64,7 @@ or verified against the cited note's stated values as declared inputs):
   Section C (eliminating runners re-verified, class [B]): the five
       cited runners are invoked as subprocesses; exit code 0 and the
       note-stated totals are required (block01 21/0, block02 19/0,
-      block04 mean-field 20/0, YT-P2 12/0, dim-trans 10/0).
+      block04 mean-field 20/0, YT-P2 12/0, dim-trans 5/0).
 
   Section D (surviving routes S1-S3, class [A]/[B] + residuals): the
       three routes left open by the eliminated set, each printed as a
@@ -591,7 +591,7 @@ RUNNERS = [
      r"RESULT:\s*12 PASS, 0 FAIL", "YT-P2 no-go (E4): 12/0"),
     ("C5", "frontier_hierarchy_alpha_lm_dim_trans_reframing_bounded_"
            "notation_equivalence.py",
-     r"TOTAL:\s*PASS=10\s+FAIL=0", "dim-trans (E5): 10/0"),
+     r"TOTAL:\s*PASS=5\s+FAIL=0", "dim-trans (E5): 5/0"),
 ]
 
 

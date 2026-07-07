@@ -12420,6 +12420,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_extension_lane_b_protects_lane_a_joint_composition_narrow.py"
     },
+    "frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/frontier_frozen_region_saturation_finality_2026_07_03.py"
+    },
     "frozen_stars_rigorous_note": {
       "assert_count": 0,
       "counts": {
@@ -34488,6 +34500,18 @@
       "dominant_class": "B",
       "runner": "scripts/staggered_dirac_common_hw1_bz_corner_carrier_identification_2026_07_05.py"
     },
+    "staggered_dirac_coupling_sign_channel_registration_narrow_theorem_note_2026-07-03": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 39,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/staggered_dirac_coupling_sign_channel_registration_check_2026_07_03.py"
+    },
     "staggered_dirac_exercise_honest_reassessment_note_2026-06-06": {
       "assert_count": 0,
       "counts": {
@@ -34631,6 +34655,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/probe_three_states_direct_derivation.py"
+    },
+    "staggered_dirac_pkin_subtree_current_surface_restatement_note_2026-07-03": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 25,
+        "C": 29,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/staggered_dirac_pkin_subtree_current_surface_restatement_check_2026_07_03.py"
     },
     "staggered_dirac_realization_gate_note_2026-05-03": {
       "assert_count": 2,
@@ -36816,6 +36852,18 @@
       "dominant_class": "D",
       "runner": "scripts/theta_cartan_valued_cross_plane_pairing_weyl_frame_theorems_2026_07_02.py"
     },
+    "theta_cross_plane_pair_density_geometric_oddness_connector_transport_bounded_theorem_note_2026-07-02": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/theta_cross_plane_pair_density_geometric_oddness_connector_transport_2026_07_02.py"
+    },
     "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09": {
       "assert_count": 1,
       "counts": {
@@ -36827,6 +36875,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09.py"
+    },
+    "theta_defect_closure_necessity_linking_obstruction_bounded_theorem_note_2026-07-02": {
+      "assert_count": 4,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/theta_defect_closure_necessity_linking_obstruction_2026_07_02.py"
     },
     "theta_emergent_q_weighting_reality_rg_stable_bounded_theorem_note_2026-06-13": {
       "assert_count": 2,
@@ -36912,6 +36972,18 @@
       "dominant_class": "C",
       "runner": "scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py"
     },
+    "theta_gluing_flow_nonsourcing_pair_level_seed_localization_bounded_theorem_note_2026-07-02": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.py"
+    },
     "theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02": {
       "assert_count": 2,
       "counts": {
@@ -36996,6 +37068,42 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_theta_p2_k_cpt_determinant_character_phase_erasure_2026_06_10.py"
     },
+    "theta_phase_insertion_triality_flip_table_single_link_nogo_chain_reader_bounded_theorem_note_2026-07-02": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/theta_phase_insertion_triality_flip_table_single_link_nogo_chain_reader_2026_07_02.py"
+    },
+    "theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_bounded_theorem_note_2026-07-02": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py"
+    },
+    "theta_su3_link_star_pairwise_reduction_local_rigidity_transpose_sheet_and_chiral_sign_escape_bounded_theorem_note_2026-07-02": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 11,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02.py"
+    },
     "theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02": {
       "assert_count": 1,
       "counts": {
@@ -37019,6 +37127,18 @@
       "decoration_candidate": false,
       "dominant_class": "B",
       "runner": "scripts/theta_torus_dual_abelianization_weight_lattice_gaussian_2026_07_02.py"
+    },
+    "theta_transpose_sheet_uniqueness_fiber_evidence_bounded_note_2026-07-02": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.py"
     },
     "third_grown_family_boundary_note": {
       "assert_count": 0,
@@ -37271,6 +37391,18 @@
       "decoration_candidate": false,
       "dominant_class": "B",
       "runner": "scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py"
+    },
+    "time_axis_is_the_history_index_record_monotone_direction_bounded_note_2026-07-03": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_time_axis_is_history_index_2026_07_03.py"
     },
     "topological_instanton_textbook_infrastructure_import_note_2026-05-17": {
       "assert_count": 8,
@@ -60190,6 +60322,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_frozen_region_saturation_finality_2026_07_03.py": {
+      "assert_count": 1,
+      "claims": [
+        "frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/frontier_frozen_stars_rigorous.py": {
       "assert_count": 0,
       "claims": [
@@ -78039,6 +78186,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_time_axis_is_history_index_2026_07_03.py": {
+      "assert_count": 1,
+      "claims": [
+        "time_axis_is_the_history_index_record_monotone_direction_bounded_note_2026-07-03"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_trYsquared_proof_walk_lattice_independence.py": {
       "assert_count": 1,
       "claims": [
@@ -89740,6 +89902,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/staggered_dirac_coupling_sign_channel_registration_check_2026_07_03.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_dirac_coupling_sign_channel_registration_narrow_theorem_note_2026-07-03"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 39,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py": {
       "assert_count": 1,
       "claims": [
@@ -89809,6 +89986,21 @@
         "A": 0,
         "B": 2,
         "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/staggered_dirac_pkin_subtree_current_surface_restatement_check_2026_07_03.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_dirac_pkin_subtree_current_surface_restatement_note_2026-07-03"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 25,
+        "C": 29,
         "D": 0
       },
       "decoration_candidate": false,
@@ -90281,6 +90473,36 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/theta_cross_plane_pair_density_geometric_oddness_connector_transport_2026_07_02.py": {
+      "assert_count": 2,
+      "claims": [
+        "theta_cross_plane_pair_density_geometric_oddness_connector_transport_bounded_theorem_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/theta_defect_closure_necessity_linking_obstruction_2026_07_02.py": {
+      "assert_count": 4,
+      "claims": [
+        "theta_defect_closure_necessity_linking_obstruction_bounded_theorem_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py": {
       "assert_count": 1,
       "claims": [
@@ -90341,6 +90563,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.py": {
+      "assert_count": 2,
+      "claims": [
+        "theta_gluing_flow_nonsourcing_pair_level_seed_localization_bounded_theorem_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/theta_link_star_frame_correlation_gluing_2026_07_02.py": {
       "assert_count": 2,
       "claims": [
@@ -90386,6 +90623,51 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/theta_phase_insertion_triality_flip_table_single_link_nogo_chain_reader_2026_07_02.py": {
+      "assert_count": 2,
+      "claims": [
+        "theta_phase_insertion_triality_flip_table_single_link_nogo_chain_reader_bounded_theorem_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py": {
+      "assert_count": 2,
+      "claims": [
+        "theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_bounded_theorem_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02.py": {
+      "assert_count": 2,
+      "claims": [
+        "theta_su3_link_star_pairwise_reduction_local_rigidity_transpose_sheet_and_chiral_sign_escape_bounded_theorem_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 11,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/theta_supplier_flavored_grading_spectral_flow_2026_07_02.py": {
       "assert_count": 1,
       "claims": [
@@ -90414,6 +90696,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.py": {
+      "assert_count": 2,
+      "claims": [
+        "theta_transpose_sheet_uniqueness_fiber_evidence_bounded_note_2026-07-02"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/three_family_card_missing_distance_live_bridge_2026_06_18.py": {
@@ -91602,12 +91899,12 @@
     "dominant_class_distribution": {
       "A": 502,
       "B": 645,
-      "C": 1280,
-      "D": 452,
-      "none": 457
+      "C": 1289,
+      "D": 453,
+      "none": 458
     },
-    "runners_classified": 3336,
-    "runners_with_C": 1753,
-    "runners_with_D": 1069
+    "runners_classified": 3347,
+    "runners_with_C": 1762,
+    "runners_with_D": 1075
   }
 }

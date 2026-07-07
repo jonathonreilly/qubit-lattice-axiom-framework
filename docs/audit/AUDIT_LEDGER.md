@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 191 |
+| **retained** | 192 |
 | **retained_no_go** | 193 |
 | **retained_bounded** | 876 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1945 |
+| unaudited | 1955 |
 | meta | 344 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
@@ -60,17 +60,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 13 |
-| `audited_clean` | 1251 |
+| `audited_clean` | 1252 |
 | `audited_conditional` | 25 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2289 |
+| `unaudited` | 2299 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1998 |
+| `bounded_theorem` | 2009 |
 | `decoration` | 50 |
 | `meta` | 350 |
 | `no_go` | 480 |
@@ -80,18 +80,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 670 |
-| `high` | 460 |
-| `medium` | 939 |
-| `leaf` | 1608 |
+| `high` | 462 |
+| `medium` | 940 |
+| `leaf` | 1616 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3336
-- runners with (C) first-principles compute hits: 1753
-- runners with (D) external comparator hits: 1069
+- runners classified: 3347
+- runners with (C) first-principles compute hits: 1762
+- runners with (D) external comparator hits: 1075
 - decoration candidates (no C, no D): 700
 
 ## Top 25 by load-bearing score (topology only)
@@ -100,31 +100,31 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1894 | 200.89 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1166 | 67.19 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1558 | 65.61 | `audited_clean` | **retained** |
+| 1 | `minimal_axioms` | meta | critical | 1905 | 206.40 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1169 | 67.19 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1563 | 65.61 | `audited_clean` | **retained** |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 198 | 65.14 | `audited_clean` | **retained** |
-| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1005 | 64.47 | `unaudited` | unaudited |
-| 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1132 | 53.15 | `audited_clean` | **retained_bounded** |
-| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1035 | 48.02 | `unaudited` | meta |
-| 8 | `key_terminology` | meta | critical | 1146 | 46.66 | `unaudited` | meta |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 905 | 43.82 | `unaudited` | unaudited |
-| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1276 | 43.32 | `unaudited` | unaudited |
-| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1013 | 41.99 | `unaudited` | unaudited |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1517 | 41.57 | `audited_clean` | **retained** |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1007 | 39.98 | `audited_clean` | **retained_bounded** |
-| 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 307 | 39.27 | `unaudited` | unaudited |
-| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 850 | 38.23 | `audited_clean` | **retained_no_go** |
-| 16 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 300 | 37.73 | `unaudited` | unaudited |
-| 17 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 560 | 36.63 | `unaudited` | unaudited |
-| 18 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 519 | 36.52 | `unaudited` | unaudited |
-| 19 | `kinetic_isotropy_primitive` | meta | critical | 448 | 36.31 | `unaudited` | meta |
-| 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 829 | 36.20 | `unaudited` | unaudited |
-| 21 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
-| 22 | `cpt_exact_note` | positive_theorem | critical | 715 | 35.98 | `audited_clean` | **retained** |
-| 23 | `three_generation_structure_note` | bounded_theorem | critical | 1003 | 35.47 | `audited_clean` | **retained_bounded** |
-| 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 826 | 34.69 | `unaudited` | unaudited |
-| 25 | `s3_time_bilinear_tensor_primitive_note` | open_gate | critical | 978 | 33.94 | `unaudited` | unaudited |
+| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1008 | 64.48 | `unaudited` | unaudited |
+| 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1135 | 53.15 | `audited_clean` | **retained_bounded** |
+| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1038 | 48.02 | `unaudited` | meta |
+| 8 | `key_terminology` | meta | critical | 1149 | 46.67 | `unaudited` | meta |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 908 | 43.83 | `unaudited` | unaudited |
+| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1279 | 43.32 | `unaudited` | unaudited |
+| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1016 | 41.99 | `unaudited` | unaudited |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1522 | 41.57 | `audited_clean` | **retained** |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1010 | 39.98 | `audited_clean` | **retained_bounded** |
+| 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 309 | 39.28 | `unaudited` | unaudited |
+| 15 | `yt_ew_color_projection_theorem` | no_go | critical | 853 | 38.24 | `audited_clean` | **retained_no_go** |
+| 16 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 302 | 37.74 | `unaudited` | unaudited |
+| 17 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 565 | 36.65 | `unaudited` | unaudited |
+| 18 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 523 | 36.53 | `unaudited` | unaudited |
+| 19 | `kinetic_isotropy_primitive` | meta | critical | 451 | 36.32 | `unaudited` | meta |
+| 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 832 | 36.20 | `unaudited` | unaudited |
+| 21 | `cpt_exact_note` | positive_theorem | critical | 718 | 35.99 | `audited_clean` | **retained** |
+| 22 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
+| 23 | `three_generation_structure_note` | bounded_theorem | critical | 1006 | 35.48 | `audited_clean` | **retained_bounded** |
+| 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 829 | 34.70 | `unaudited` | unaudited |
+| 25 | `s3_time_bilinear_tensor_primitive_note` | open_gate | critical | 981 | 33.94 | `unaudited` | unaudited |
 
 
 ## Applied audits
@@ -879,6 +879,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moving_source_cross_family_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `moving_source_retarded_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `multipole_tidal_response_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -12084,6 +12085,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The centered quadrupole keeps the centroid essentially pinned but opens a real width/tidal channel, and the width response grows with quadrupole separation.  _(class `C`)_
 - **chain closes:** True — The live probe reproduces the frozen controls and finite quadrupole rows: same-site and neutral controls are zero, the dipole mainly shifts centroid, and the centered quadrupoles give near-zero centroid change with positive width response at a = 1.0 and a = 2.0. The source explicitly excludes full tensor gravity and a general multipole theory.
 - **rationale:** The retained content is a narrow finite-runner claim, not a physical tidal-field theorem: the current runner recomputes the same-site cancellation, q_test = 0 inert control, dipole baseline, and two centered quadrupole width responses. The quadrupole rows support the stated shape-sensitive width channel while the note explicitly disclaims full tensor gravity, relativistic tidal fields, and a general multipole expansion. Residual risk is only finite-configuration scope, plus a harmless rounded-ratio mismatch where the prose says 1.969 and the live runner prints +1.968; the audit does not retain anything beyond the tested ordered-lattice configuration.
+- **auditor confidence:** high
+
+### `multisite_pauli_group_theorem_note_2026-05-02`
+
+- **Note:** [`MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md`](../../docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** On the retained finite tensor product H_N = (C^2)^{tensor N}, the N-site Pauli group generated by sitewise Pauli matrices has order 4^{N+1}, center {+/-I,+/-iI}, quotient (Z_2 x Z_2)^N, and minimal generating rank 2N+1; no physical Fock-carrier bridge is asserted.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-2026-07-07-multisite-pauli`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The normal-form count that central scalar phases give one global Z_4 while each site contributes four Pauli cosets, together with the abelianization P_N/[P_N,P_N] of order 2^{2N+1} for the 2N+1 generator lower bound.  _(class `A`)_
+- **chain closes:** True — The retained cl3_per_site_hilbert_dim_two dependency supplies H_N = (C^2)^{tensor N} and the Pauli realization; the target note then uses only finite Pauli-group algebra. I independently checked the displayed order, center, quotient, phaseless subgroup, sufficiency, and abelianization lower bound in an abstract Pauli normal form separate from the runner's matrix BFS path.
+- **rationale:** The source note's load-bearing formulae close from retained one-hop carrier inputs plus exact finite group algebra: |P_N| = 4^{N+1}, Z(P_N) = {+/-I,+/-iI}, P_N/Z(P_N) has order 4^N, and the abelianization rank gives the 2N+1 minimal-generator lower bound. The runner verifies these claims by explicit finite matrix generation for N <= 3, and a separate abstract normal-form recomputation verified the same sign, phase, quotient, and generator-count facts. Residual risk is limited to the retained dependency chain; the audited claim does not assert the separate physical Fock-carrier bridge.
 - **auditor confidence:** high
 
 ### `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17`

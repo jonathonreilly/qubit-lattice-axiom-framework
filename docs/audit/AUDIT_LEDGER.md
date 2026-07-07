@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 22 |
-| unaudited | 1984 |
+| unaudited | 1983 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 20 |
+| ~~audited_conditional~~ | 21 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1253 |
-| `audited_conditional` | 20 |
+| `audited_conditional` | 21 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2329 |
+| `unaudited` | 2328 |
 
 | claim_type | count |
 |---|---:|
@@ -1406,6 +1406,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -9180,6 +9181,25 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** selector route; no `eta`, `Omega_Lambda`, or `H_0` numerical claim.  _(class `B`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 1 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified B-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26`
+
+- **Note:** [`HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md`](../../docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the narrowed no-go that baseline-plus-scale-reference-primitive alone cannot close numerical Lane 5 H0 and that the closure taxonomy is C1 plus one of C2/C3.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-hubble_lane5_cosmic_history_rati-05`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current framework baseline plus the scale-reference primitive carries units conversion only and supplies neither the dimensionless C1 scale route nor any matter/radiation/Lambda history ratio needed to fix L, so Lane 5 closure requires C1 plus one of C2 or C3.  _(class `A`)_
+- **chain closes:** False — The internal C1/C2/C3 finite taxonomy is coherent, and the scale-reference primitive boundary is correctly used. The chain is still conditional because the no-go imports unaudited/open cosmology reduction, matter-bridge, bounded cascade, and C1 gate authorities for the exact residual classification.
+- **rationale:** The runner is a source-packet and taxonomy verifier, not an independent derivation; its 57 checks confirm packaging, dependency links, the C1/C2/C3 truth table, and no-go discipline markers. The no-go-discipline gate is represented in the note and passes at the narrowed scope, including alternative-route enumeration and preservation of live C1/C2/C3 routes. However, several load-bearing upstream authorities are not retained-grade, especially the open-number reduction, scale identification, matter bridge, bounded Omega_Lambda cascade, and C1 gate note. The co-cycle eta-retirement gate citation is treated as non-load-bearing/informational per instruction, but source-graph repair is still needed to remove or rewrite that markdown link before effective_status can leave retained_pending_chain.
+- **open / conditional deps cited:**
+  - `HUBBLE_LANE5_PLANCK_C1_GATE_AUDIT_NOTE_2026-04-26.md`
+  - `COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md`
+  - `OMEGA_LAMBDA_DERIVATION_NOTE.md`
+  - `COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`
+  - `OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md`
 - **auditor confidence:** high
 
 ### `hw1_second_order_return_shape_theorem_note`

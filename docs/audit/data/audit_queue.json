@@ -75,7 +75,7 @@
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['hubble_lane5_eta_retirement_gate_audit_note_2026-04-26'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 58,
       "primary_break_target": "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26",
-      "primary_break_target_audit_status": "unaudited",
+      "primary_break_target_audit_status": "audited_conditional",
       "primary_break_target_criticality": "high",
       "repair_class": "cycle_break_required"
     },
@@ -16762,12 +16762,12 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26",
-      "claim_scope": null,
+      "claim_scope": "Audited the narrowed no-go that baseline-plus-scale-reference-primitive alone cannot close numerical Lane 5 H0 and that the closure taxonomy is C1 plus one of C2/C3.",
       "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
@@ -16783,11 +16783,11 @@
         "hubble_lane5_eta_retirement_gate_audit_note_2026-04-26"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [],
       "load_bearing_score": 8.383,
       "note_path": "docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": false,
       "runner_path": "scripts/frontier_hubble_lane5_cosmic_history_ratio_no_go_source_packet.py",
       "transitive_descendants": 58

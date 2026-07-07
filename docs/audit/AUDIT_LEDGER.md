@@ -1507,7 +1507,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
-| `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -8330,13 +8330,13 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 
 - **Note:** [`GRAVITY_CLOSURE_FROM_WEAK_FIELD_LINEAR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-06-07.md`](../../docs/GRAVITY_CLOSURE_FROM_WEAK_FIELD_LINEAR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-06-07.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Renaming/bounded weak-field finite linear algebra only: after identifying the gravitational weak-field response with phi = G_0 rho on the neutral subspace, the runner checks H phi = rho, linearity, a perturbed-kernel failure, Green-column decay, and one-step nonlinear kernel movement.
+- **claim_scope:** Finite neutral-subspace checks showing that once the weak-field response is identified as phi = G0 rho, H phi = rho and G0 is the corresponding inverse kernel on the tested lattice.
 - **audit_status:** ~~audited_renaming~~
 - **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The weak-field gravitational potential sourced by matter density rho is identified with the lattice resolvent response phi = G_0 rho, where G_0 = H^{-1}, hence L = G_0^{-1} = H.  _(class `F`)_
-- **chain closes:** False — The finite algebra closes only after the gravitational response kernel is identified with the lattice propagator G_0. The missing step is a source-coupling theorem deriving that physical identification from lattice dynamics rather than defining or stipulating it.
-- **rationale:** The load-bearing move is a class F symbol-identity step between the gravitational weak-field response kernel and the lattice resolvent G_0. The runner verifies neutral-subspace identities and diagnostics after phi = G_0 rho is imposed, but it does not derive that gravity is mediated by the same H and G_0. The source note's own boundary says this support may not be cited as a retained derivation of L^{-1}=G_0, the gravitational response kernel, the 1/(4 pi r) asymptotic, or nonlinear self-gravity convergence.
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-gravity_closure_from_weak_field_-15`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The weak-field gravitational potential sourced by a matter density rho is identified with the lattice linear response phi = G0 rho, where G0 = H^-1.  _(class `F`)_
+- **chain closes:** False — The finite algebra after phi = G0 rho closes, but the source note itself admits that the physical identification of the gravitational response kernel with the same lattice H and G0 is not derived. The missing step is a perturbative source-coupling theorem deriving that response kernel from the framework dynamics.
+- **rationale:** The runner genuinely computes finite linear algebra for H, G0, neutral sources, and a perturbed-kernel failure, but only after defining the weak-field response to be G0 rho. That verifies consistency and uniqueness within the stipulated response model; it does not derive that gravity is mediated by the same lattice propagator. The note's own boundary explicitly demotes this to renaming / bounded weak-field support and forbids citing it as a retained derivation of L^{-1}=G0 or the gravitational response kernel.
 - **open / conditional deps cited:**
   - `GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`
 - **auditor confidence:** high

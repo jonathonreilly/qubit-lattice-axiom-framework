@@ -27077,6 +27077,26 @@
       "to": "three_generation_structure_note"
     },
     {
+      "from": "matter_realization_arena_split_preservation_under_axis_coupled_frames_bounded_theorem_note_2026-07-06",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "matter_realization_arena_split_preservation_under_axis_coupled_frames_bounded_theorem_note_2026-07-06",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "matter_realization_arena_split_preservation_under_axis_coupled_frames_bounded_theorem_note_2026-07-06",
+      "to": "realized_kinetic_branch_selected_by_admissibility_variation_narrow_theorem_note_2026-07-02"
+    },
+    {
+      "from": "matter_realization_arena_split_preservation_under_axis_coupled_frames_bounded_theorem_note_2026-07-06",
+      "to": "color_arena_bonded_pair_admissibility_cross_site_surface_bounded_theorem_note_2026-07-06"
+    },
+    {
+      "from": "matter_realization_arena_split_preservation_under_axis_coupled_frames_bounded_theorem_note_2026-07-06",
+      "to": "color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06"
+    },
+    {
       "from": "matter_self_focusing_note",
       "to": "matter_inertial_closure_note"
     },
@@ -95014,6 +95034,24 @@
       "runner_path": "scripts/frontier_matter_radiation_equality_structural_identity.py",
       "title": "Matter-Radiation Equality Structural Identity Theorem"
     },
+    "matter_realization_arena_split_preservation_under_axis_coupled_frames_bounded_theorem_note_2026-07-06": {
+      "claim_id": "matter_realization_arena_split_preservation_under_axis_coupled_frames_bounded_theorem_note_2026-07-06",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "realized_kinetic_branch_selected_by_admissibility_variation_narrow_theorem_note_2026-07-02",
+        "color_arena_bonded_pair_admissibility_cross_site_surface_bounded_theorem_note_2026-07-06",
+        "color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "fac873c8885e36c722387bc0b59725504eac10fc5108bf205b4d945edbeaee3b",
+      "path": "docs/MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+      "runner_path": "scripts/matter_realization_arena_split_preservation_axis_frames_2026_07_06.py",
+      "title": "Matter Realization Arena Split Preservation Under Axis-Coupled Frames"
+    },
     "matter_self_focusing_note": {
       "claim_id": "matter_self_focusing_note",
       "claim_type_author_hint": null,
@@ -111686,7 +111724,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "13a9d3351648a031284e660090a05f7043ed99460ce3336817236a472a6993bc",
+      "note_hash": "5004cda29bb3ed4db84356a860d77e029e9b4391a915b934bef8fffd2c9dabd2",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -128500,7 +128538,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1602,
+      "bounded_theorem": 1603,
       "decoration": 3,
       "meta": 326,
       "no_go": 333,
@@ -128509,7 +128547,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2006,
+      "bounded_theorem": 2007,
       "decoration": 3,
       "meta": 326,
       "no_go": 436,
@@ -128517,10 +128555,10 @@
       "open_gate": 206,
       "positive_theorem": 657
     },
-    "edge_count": 14533,
+    "edge_count": 14538,
     "leaf_count": 1308,
-    "node_count": 3882,
+    "node_count": 3883,
     "root_count": 1105,
-    "runners_with_path": 3504
+    "runners_with_path": 3505
   }
 }

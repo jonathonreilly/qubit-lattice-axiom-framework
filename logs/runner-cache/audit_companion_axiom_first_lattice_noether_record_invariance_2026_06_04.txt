@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_axiom_first_lattice_noether_record_invariance_2026_06_04.py
-runner_sha256: 40027b1857cc63cbcbccbc49897f51b60a5ee76218280210e998fdfeb972dd9d
+runner_sha256: 3126745723a6664392a286b1b60c575bbb289a16f65022c3d8ba7581a8316761
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.53
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 ========================================================================
@@ -15,14 +15,17 @@ Parent runner: scripts/axiom_first_lattice_noether_check.py
 Scope: meta evidence only; no theorem claim and no verdict change.
 PASS parent_note_exists
 PASS parent_runner_exists
-PASS parent_claim_type_expected
+PASS parent_ledger_row_exists
+PASS parent_claim_type_field_present :: claim_type=bounded_theorem
 PASS parent_runner_path_expected
-PASS parent_current_criticality_expected
-PASS parent_current_load_expected :: load=13.443
-PASS parent_note_hash_expected
+PASS parent_current_criticality_present :: criticality=critical
+PASS parent_current_load_present :: load=15.092
+PASS parent_note_hash_field_present
 PASS parent_note_hash_matches_ledger
-PASS parent_deps_exact :: count=2
-PASS parent_current_row_unresolved
+PASS parent_deps_field_present :: count=8
+PASS parent_deps_include_required_sources :: missing=[]
+PASS parent_deps_omit_record_specific_sources :: count=8
+PASS parent_current_status_fields_present :: effective_status=unaudited, audit_status=unaudited
 PASS parent_load_bearing_block_present
 PASS parent_load_bearing_contains_noether_phrase_0
 PASS parent_load_bearing_contains_noether_phrase_1
@@ -37,7 +40,7 @@ PASS parent_load_bearing_contains_noether_phrase_9
 PASS parent_load_bearing_omits_record_axiom_terms
 PASS parent_runner_exit_zero :: returncode=0
 PASS parent_runner_summary_present
-PASS parent_runner_passed_all_seven :: passed=7/7
+PASS parent_runner_passed_all_live_exhibits :: passed=9/9
 PASS record_marker_true_exit_zero :: returncode=0
 PASS record_marker_does_not_change_parent_output
 PASS companion_declares_meta_type
@@ -46,7 +49,7 @@ PASS companion_disclaims_verdict_change
 PASS companion_keeps_dependency_boundary
 PASS companion_marks_axioms_not_support
 ========================================================================
-SUMMARY: PASS=32 FAIL=0
+SUMMARY: PASS=35 FAIL=0
 ========================================================================
 
 ----- stderr -----

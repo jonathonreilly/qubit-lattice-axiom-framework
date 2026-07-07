@@ -25,10 +25,10 @@ new theorem claim, not a verdict change, and not independent review work.
 
 The parent surface is a bounded theorem on an admitted staggered/Grassmann
 carrier. Its load-bearing content is the finite lattice Noether chain: the
-symmetry condition `[T, M] = 0`, local-alpha promotion, the bilateral current
-specialization to the U(1) current, the on-shell divergence identity, the exact
-localized two-step Ward identity, and the `(2Z)^3` periodicity of the
-staggered phases.
+two-step translation symmetry condition, local-alpha promotion, the bilateral
+current specialization to the U(1) current, the on-shell divergence identity,
+the exact localized two-step Ward identity, and the `(2Z)^3` periodicity of
+the staggered phases.
 
 This companion does not derive the admitted carrier, the KS phase form, or a
 new current identity. It does not change the parent row. Axioms and primitives
@@ -36,14 +36,18 @@ are premise context here; they are not verdict-grade support for a bounded row.
 
 The narrow evidence recorded here is:
 
-1. the parent note hash, claim type, dependency list, and runner path match the
-   live ledger row;
-2. the parent runner exits with `PASSED: 7/7`;
-3. the parent load-bearing sections contain the symmetry condition, U(1)
+1. the parent row exists, its runner path still targets the parent runner, and
+   the parent note hash matches the live ledger hash while audit-owned fields
+   such as criticality, load, and status are printed informationally only;
+2. the parent dependency census contains the required source edges used by this
+   companion and has no record-specific source edge;
+3. the parent runner exits with all live exhibits passing (`PASSED: N/N`;
+   currently `PASSED: 9/9`);
+4. the parent load-bearing sections contain the symmetry condition, U(1)
    current specialization, on-shell divergence, exact two-step Ward identity,
    and one-site-shift caveat;
-4. the parent load-bearing sections do not use Record axiom content;
-5. the parent runner output is unchanged under counterfactual markers where
+5. the parent load-bearing sections do not use Record axiom content;
+6. the parent runner output is unchanged under counterfactual markers where
    Record is asserted or not asserted.
 
 ## What This Does Not Claim

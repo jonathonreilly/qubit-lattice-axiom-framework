@@ -1,248 +1,417 @@
+---
+claim_id: architecture_note_directional_measure
+claim_scope: >-
+  Conditional on BETA-DIRECTIONAL, the six deterministic fixed-seed fixture
+  checks hold as computed; beta is supplied and is not derived by this claim.
+---
+
 # Architecture Note: Directional Path Measure
 
-**Status:** bounded - bounded or caveated result note
+**Status:** supplied-premise bounded theorem candidate.
 **Claim type:** bounded_theorem
-**Claim scope:** directional measure with **empirically-tuned `β = 0.8`
-parameter**, evaluated as a bounded "tuned support" record (PATH B of the
-2026-05-03 REPAIR_TARGETS row #1). The bounded smoke/table results below
-hold AT the tuned point `β = 0.8`; the choice of `β` is **not derived
-from first principles** and is bounded by the angular-kernel
-underdetermination no-go cited under "Beta-derivation status".
-**Date:** 2026-04-05 (originally); 2026-05-03 (review-loop repair); 2026-05-10 (REPAIR_TARGETS #1 PATH B — tuned support demotion)
-**Runner:** [`scripts/architecture_directional_measure_table_runner_2026_05_03.py`](../scripts/architecture_directional_measure_table_runner_2026_05_03.py) (PASS=6/6)
-**Beta-derivation status:** **TUNED SUPPORT — NOT DERIVED.**
-[`docs/ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md`](ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md)
-proves `β` cannot be derived from the repo baseline physical `Cl(3)`
-local algebra plus `Z^3` spatial substrate together with the named
-directional-measure constraints alone; `β = 0.8` is
-**observable-matched** against the eikonal-slope criterion of
-`BORN_SCATTERING_COMPARISON_NOTE.md` (see-also; route 3 informational
-example, converted from markdown link to backticked form 2026-05-10 to
-break citation cycle-0005 — the load-bearing authority for "β is not
-derived" is the angular-kernel underdetermination no-go cited above,
-not Born; Born's role here is to document one route-3 observable that
-the empirical β = 0.8 was matched against, which the PATH B
-disposition below now records as tuned-not-derived). Per the
-2026-05-03 REPAIR_TARGETS
-row #1 outcome, this note explicitly carries `β = 0.8` as a **tuned
-parameter**, not a derived constant; first-principles derivation of `β`
-is deferred to future work, conditional on closing one of the no-go's
-three additional-premise routes.
+**Date:** 2026-04-05 (original); 2026-05-03 (review-loop repair);
+2026-05-10 (REPAIR_TARGETS #1 PATH B tuned-support demotion);
+2026-07-07 (supplied-beta conditional recut).
+**Primary runner:**
+[runner](../scripts/architecture_directional_measure_table_runner_2026_05_03.py)
+(deterministic, offline, fixed fixtures and fixed seeds; latest local run
+FATAL TOTAL: PASS=6 FAIL=0).
+**Beta-derivation status:** **SUPPLIED PREMISE - NOT DERIVED.** The named
+premise below quarantines the historical observable matching. The note does
+not derive beta, does not select beta, and does not use the selection history
+as claim content.
 
-## Source boundary (2026-06-12)
+## Safe Statement
 
-**Boundary:** numerical-match / bounded tuned support only. Effective status
-is audit-derived; this source records only the claim boundary.
+This note makes one bounded claim. Conditional on the named supplied premise
+BETA-DIRECTIONAL, the deterministic runner recomputes six fixed-fixture checks:
 
-The tested table is valid at the fixed `β = 0.8` surface. The value `β = 0.8`
-is an empirical/tuned input selected by observable matching, not a derived
-framework constant. This note may be cited only for the bounded smoke/table
-checks at that fixed tuned point. It may not be cited as a derivation of the
-directional-measure kernel, the angular weight, the beta parameter, or a
-retained gravity law.
+- T1 detector-probability partition fixture consistency.
+- T2 phase-free two-source visibility fixture consistency.
+- T3 real detector amplitudes at k = 0.
+- T4 gravity sign count over eight fixed seeds.
+- T5 gravity scaling over fixed 3D gravity-card fixtures.
+- T6 beta-sweep monotonicity for the Gaussian directional-weight family.
+
+The load-bearing content is the conditional finite computation at the supplied
+value and the exact algebra used by that computation. Observable matching,
+nearest-rational numerology, moment matching, imported eikonal slopes, and live
+historical numerical values are motivation exhibit only.
+
+This note does not establish a derivation of beta = 0.8, uniqueness of the
+angular kernel, a retained gravity law, a full 3D Sorkin theorem, or a
+decoherence solution.
+
+## Named Conditional Premises
+
+There is one named supplied premise:
+
+BETA-DIRECTIONAL (named conditional premise): the directional-measure Gaussian
+width parameter is SUPPLIED as beta = 0.8. Its historical selection story is
+motivation-tier history, stated accurately below; it is not load-bearing claim
+content.
+
+The fixed DAG fixtures, fixed seeds, and printed thresholds are executable test
+conditions. They are not additional physical axioms and do not derive beta.
+
+## Exact Identities (Unconditional)
+
+The architecture history records the directional path-measure propagator on
+finite DAGs:
+
+```text
+amplitude(edge) = exp(i k S_spent) / L^p * exp(-beta theta^2)
+S_spent = delay - sqrt(delay^2 - L^2)
+theta = acos(dx / L) in 3D
+theta = atan2(abs(dy), dx) in 2D
+```
+
+The current runner's 2D T1/T2 fixture uses the same directional weight with
+phase-free edge action `S_spent = 0`; those rows are fixture-consistency checks,
+not phase-interference or k-variation checks. Its 3D T3-T5 calls consume the
+helper module-global `three_d_angle_weight.BETA`, which the runner sets and
+asserts equal to the supplied premise value before calling the helpers. T6 is
+a beta sweep and does not use a single fixed beta value.
+
+For assigned real beta, theta, L, delay, and k, the following identities are
+plain finite algebra:
+
+- The directional factor `exp(-beta theta^2)` is a positive real multiplier.
+- Path amplitudes are finite sums of finite products over the fixture DAG.
+- At k = 0 with real source amplitudes and no oscillating phase, the propagated
+  detector amplitudes are real up to floating-point roundoff.
+- For disjoint detector groups A and B, the finite probability sum over
+  `A union B` equals the sum over A plus the sum over B.
+- For a finite theta list, the runner's weighted second moment is exactly
+  `sum(exp(-beta theta^2) theta^2) / sum(exp(-beta theta^2))`.
+
+These identities do not select beta and do not prove that the Gaussian family
+is uniquely determined by retained primitives.
+
+## Conditional Chain
+
+Under BETA-DIRECTIONAL, the runner uses beta = 0.8 for T1-T5 and includes that
+value as the center point of the T6 sweep. These checks are the load-bearing
+content of this note.
+
+| id | load-bearing conditional check | deterministic condition |
+| --- | --- | --- |
+| T1 | detector-probability partition fixture consistency | deviation < 1e-12 |
+| T2 | phase-free two-source visibility fixture consistency | V > 0.95 |
+| T3 | k = 0 real amplitude | max imaginary detector amplitude < 1e-12 |
+| T4 | gravity sign count | current runner truth: attract = 6/8, threshold >= 5/8 |
+| T5 | gravity scaling | R(N) positive on N = 8, 12, 16, 20; R(16), R(20) > R(8) |
+| T6 | beta-sweep monotonicity | weighted theta^2 decreases on the fixed beta list |
+
+T4 reconciliation: the historical note table listed 5/8 attract. The current
+runner truth is 6/8 attract over the eight fixed seeds. The old 5/8 entry is
+kept below as historical table evidence; it is not the live claim.
+
+No value from the motivation exhibit below is consumed by T1-T6.
+
+## Motivation Exhibit
+
+**evidence only; not load-bearing; no value below is consumed by any claim**
+
+This section preserves the historical numerical-match record, the PATH A/PATH B
+disposition history, the beta-derivation-status discussion, and the old table
+context. It is kept as motivation and audit history only.
+
+### Historical Source Boundary (2026-06-12)
+
+**Boundary:** numerical-match / bounded tuned support only. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The tested table was historically treated as valid at the fixed beta = 0.8
+surface. The value beta = 0.8 was an empirical/tuned input selected by
+observable matching, not a derived framework constant. This note may be cited
+only for the bounded smoke/table checks at that fixed tuned point. It may not
+be cited as a derivation of the directional-measure kernel, the angular weight,
+the beta parameter, or a retained gravity law.
 
 Promotion beyond numerical-match support requires a separate theorem closing
 one of the additional-premise routes named by the angular-kernel
-underdetermination no-go, and deriving `β` rather than selecting it.
+underdetermination no-go, and deriving beta rather than selecting it.
 
-## Repair-pass disposition (2026-05-10) — PATH B: tuned support
+The 2026-07-07 recut preserves that boundary as history while retyping the
+live claim: beta = 0.8 is now a named supplied premise, and the fixture algebra
+under that premise is the load-bearing content.
 
-The 2026-05-03 REPAIR_TARGETS row #1 (`architecture_note_directional_measure`,
-critical, bounded_theorem, repair_class substantive) named two
-disposition options: (PATH A) derive `β = 0.8` from first principles, or
-(PATH B) demote to "tuned support". The 2026-05-10 rigorization pass
-selected **PATH B**, on the following standing evidence:
+### Repair-Pass Disposition (2026-05-10) - PATH B: Tuned Support
 
-- `β = 0.8` corresponds to `4/5`, but the retained primitive surface
-  (Cl(3) trace structure, action extremization on Z³, causal-cone
-  kinematics, leading-order SO(3) isotropy) carries no five-fold
-  structure and no algebraic identity reducing to `4/5`. Other
-  candidate algebraic combinations (`2 N_c / (N_c² - 1)` for `N_c =
-  2,3,4`, half-integer ratios, Casimir-style ratios) do not produce
-  `4/5` either.
+The 2026-05-03 REPAIR_TARGETS row #1
+(`architecture_note_directional_measure`, critical, bounded_theorem,
+repair_class substantive) named two disposition options: (PATH A) derive
+beta = 0.8 from first principles, or (PATH B) demote to "tuned support".
+The 2026-05-10 rigorization pass selected **PATH B**, on the following
+standing evidence:
+
+- beta = 0.8 corresponds to 4/5, but the retained primitive surface
+  (Cl(3) trace structure, action extremization on Z^3, causal-cone kinematics,
+  leading-order SO(3) isotropy) carries no five-fold structure and no algebraic
+  identity reducing to 4/5. Other candidate algebraic combinations
+  (`2 N_c / (N_c^2 - 1)` for `N_c = 2,3,4`, half-integer ratios, and
+  Casimir-style ratios) do not produce 4/5 either.
 - Gaussian fourth-moment matching against the canonical DAG
-  `<θ²> ≈ 0.84 rad²` would set `β = 1/(2 ⟨θ²⟩) ≈ 0.595`, which is
-  **not** `0.8`; this confirms the gravity-card `β = 0.8` is **not** a
-  moment-matched derivation but the route-3 observable-matched value.
+  `<theta^2> ~= 0.84 rad^2` would set
+  `beta = 1 / (2 <theta^2>) ~= 0.595`, which is not 0.8. This confirms the
+  gravity-card beta = 0.8 is not a moment-matched derivation but the route-3
+  observable-matched value.
 - The angular-kernel underdetermination no-go
-  ([`ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md`](ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md),
-  PASS=64, audited_conditional) is a **bounded no-go theorem** stating
-  that `w(θ)` (and hence `β` if the family is restricted to Gaussian)
-  is not uniquely determined by the retained primitives. PATH A is
-  therefore blocked at the primitive surface; closing it requires
-  adopting one of three additional-premise routes (higher-order
-  isotropy axiom, action-Lagrangian principle, or structural
-  observable-matching), none of which is currently on the retained
-  surface.
+  ([no-go](ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md),
+  PASS=64 in its runner) is cited here only at its audited scope as boundary
+  context. It states that `w(theta)`, and hence beta if the family is
+  restricted to Gaussian, is not uniquely determined by the retained
+  primitives. PATH A was therefore blocked at the primitive surface; closing it
+  requires adopting one of three additional-premise routes (higher-order
+  isotropy axiom, action-Lagrangian principle, or structural observable
+  matching), none of which is currently on the retained surface.
 
-Disposition: this note is hereby carried as **tuned support** for the
-directional path measure. The bounded smoke/table claims under
-"Tested constraints" hold AT `β = 0.8`; the choice of `β = 0.8` itself
-is a tuned input. No `audit_status` change is requested as part of this
-source repair; the source boundary is simply that `β` is tuned, not derived.
+Disposition: this note was carried as **tuned support** for the directional
+path measure. The bounded smoke/table claims held at beta = 0.8; the choice of
+beta = 0.8 itself was a tuned input. No `audit_status` change was requested as
+part of that source repair; the source boundary was simply that beta was tuned,
+not derived.
 
-Future-work derivation target (deferred): close one of the no-go's
-three additional-premise routes, then re-derive `β` analytically and
-file a separate retained promotion note. This is **not** in-scope for
-the current bounded note.
+Future-work derivation target (deferred): close one of the no-go's three
+additional-premise routes, then re-derive beta analytically and file a separate
+retained promotion note. This is not in-scope for the current bounded note.
 
-## Review-loop repair (2026-05-03)
+### Review-Loop Repair (2026-05-03)
 
-The 2026-05-03 review follow-up identified two problems: (a) the
-empirical pass/fail table had no runner, no reproduced computation, and
-no cited graph dependency; (b) `β = 0.8` was empirically chosen with no
-derivation. This repair addresses (a) mechanically and (b) by citing the
-existing no-go theorem.
+The 2026-05-03 review follow-up identified two problems: (a) the empirical
+pass/fail table had no runner, no reproduced computation, and no cited graph
+dependency; (b) beta = 0.8 was empirically chosen with no derivation. This
+repair addressed (a) mechanically and (b) by citing the existing no-go boundary.
 
-**Mechanical repair (a)**:
-[`scripts/architecture_directional_measure_table_runner_2026_05_03.py`](../scripts/architecture_directional_measure_table_runner_2026_05_03.py)
-recomputes the table from the stated propagator on FIXED DAG fixtures
-(deterministic seeds) and reproduces every pass/fail row in the table:
+**Mechanical repair (a):**
+[runner](../scripts/architecture_directional_measure_table_runner_2026_05_03.py)
+recomputes the table from the stated propagator on fixed DAG fixtures
+(deterministic seeds) and reproduces the bounded pass/fail rows:
 
-- T1 Born rule (additivity over disjoint detector groups, 2D fixture)
-- T2 Interference visibility V > 0.95 (2-slit, 2D fixture)
-- T3 k = 0 → real amplitude (no oscillating phase, 3D fixture)
-- T4 Gravity sign 6/8 attract over fixed seeds (note's table: 5/8)
-- T5 Gravity scaling R_angle(N) positive across N=8..20 with R(20)>R(8),
-  matching the canonical gravity-card protocol of `three_d_angle_weight.py`
-- T6 Beta-sweep monotonicity: weighted ⟨θ²⟩ decreases monotonically with β
-  (consistent with the BORN_SCATTERING_COMPARISON β-sweep that pinned 0.8)
+- T1 detector-probability partition fixture consistency on a 2D fixture.
+- T2 phase-free two-source visibility fixture consistency on a 2D fixture.
+  Its action increment is zero, so it is not a k-variation or
+  phase-interference test.
+- T3 k = 0 -> real amplitude (no oscillating phase, 3D fixture).
+- T4 gravity sign 6/8 attract over fixed seeds; historical note table: 5/8.
+- T5 gravity scaling R_angle(N) positive across N = 8..20 with R(20) > R(8),
+  matching the canonical gravity-card protocol of `three_d_angle_weight.py`.
+- T6 beta-sweep monotonicity: weighted `<theta^2>` decreases monotonically with
+  beta on the fixed runner beta list.
 
-**Beta handling (b)**:
-[`docs/ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md`](ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md)
-proves a bounded no-go: the angular kernel `w(θ)` of the directional
-path-measure walk is NOT uniquely determined by the repo baseline
-physical `Cl(3)` local algebra plus `Z^3` spatial substrate together
-with the named directional-measure constraints ((1) Cl(3) trace
-structure, (2) action extremization on Z³, (3) causal-cone
-kinematics, (4) leading-order continuum-limit SO(3) isotropy). Seven
-distinct kernels — `{uniform, cos, cos², exp(-0.4 θ²),
-exp(-0.8 θ²), exp(-1.6 θ²), linear_falloff}` — all pass the four
-structural constraints but produce measurably different transverse-step
-moments.
+**Beta handling (b):**
+[no-go](ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md)
+is cited at its audited scope as boundary context. The preserved boundary
+statement is that the angular kernel `w(theta)` of the directional path-measure
+walk is not uniquely determined by the repo baseline physical Cl(3) local
+algebra plus Z^3 spatial substrate together with the named directional-measure
+constraints:
 
-Closing the no-go positively requires one of three additional premises
-or closure routes:
+1. Cl(3) trace structure.
+2. Action extremization on Z^3.
+3. Causal-cone kinematics.
+4. Leading-order continuum-limit SO(3) isotropy.
 
-1. **Higher-order isotropy** — demand the sub-leading continuum
-   dispersion is also rotationally isotropic (constrains 4th moment of
-   `w`).
-2. **Action-Lagrangian principle** — derive or justify the angular
-   weight via a continuum Lagrangian whose Euler-Lagrange
-   equations include the angular preference.
-3. **Direct observable matching** — pin `w` by demanding agreement
-   with a specific observable.
+Seven distinct kernels were recorded in the history:
+`{uniform, cos, cos^2, exp(-0.4 theta^2), exp(-0.8 theta^2),
+exp(-1.6 theta^2), linear_falloff}`. They all pass the four structural
+constraints but produce measurably different transverse-step moments.
 
-The current β = 0.8 is **route 3**: pinned against the gravitational
-deflection eikonal slope per
-`BORN_SCATTERING_COMPARISON_NOTE.md` (see-also; converted from markdown
-link to backticked form 2026-05-10 to break citation cycle-0005 — Born
-is the procedural reference where the empirical match was performed,
-not a load-bearing derivation authority on this note; the no-go cited
-above is the load-bearing authority for β being a tuned, not derived,
-input).
-The eikonal predicts slope -1.28 on b ∈ {3..6}; the lattice with
-β = 0.8 gives -1.43. The β-sweep (β ∈ [0.1, 20]) shows slope varies
-monotonically from -0.79 (β = 0.1, wide beam) to -1.93 (β = 20, narrow
-beam); β = 0.8 minimizes the eikonal-deviation among the standard test
-set. **No closed form for β has been derived** — see the no-go note's
-"unsafe wording" caveat against claiming derivation from first
-principles.
+Closing the no-go positively requires one of three additional premises or
+closure routes:
 
-The empirical `<θ²>` of the canonical DAG (xyz_range = 8, connect_radius = 3)
-is ≈ 0.84 rad²; Gaussian moment-matching would give β = 1/(2⟨θ²⟩) ≈ 0.595.
-That this differs from the gravity-card value 0.8 confirms β = 0.8 is
-observable-matched (route 3), not moment-matched.
+1. **Higher-order isotropy:** demand that sub-leading continuum dispersion is
+   also rotationally isotropic, constraining the fourth moment of `w`.
+2. **Action-Lagrangian principle:** derive or justify the angular weight via a
+   continuum Lagrangian whose Euler-Lagrange equations include the angular
+   preference.
+3. **Direct observable matching:** pin `w` by demanding agreement with a
+   specific observable.
 
-After this repair the row records: a runner that recomputes the table,
-a cited graph dependency (the no-go) that explains why β is empirical,
-and a sharpened bounded statement (below) that does not overclaim
-derivation.
+The current `BORN_SCATTERING_COMPARISON_NOTE.md` does not select beta for this
+note. It imports the fixed `L=15, x_src=5, beta=0.8` envelope from the
+directional-measure architecture and does not claim that beta = 0.8 is derived
+there.
 
-## Propagator
+The current Born note says, verbatim:
 
-```
-amplitude(edge) = exp(i k S_spent) / L^p × exp(-β θ²)
-```
+> 1. **Gaussian beam profile (TESTED AND FALSIFIED below)**: A Gaussian
+>    angular weight `exp(−β·θ²)` on the eikonal integral was tested in
+>    both 2D and 3D forms at `β = 0.8`; both **worsen** the match
+>    (`Δ = 1.08` and `Δ = 0.66` respectively, see the Beam-averaging
+>    table). The β sweep does show the slope crosses `−1.43` at large
+>    `β ≈ 10–20`, but at the audited `β = 0.8` the beam correction is
+>    not in the right direction. The 2026-04-08 note text previously
+>    asserted "β = 0.8 provides the specific correction that shifts
+>    −1.28 → −1.43"; that earlier claim is **withdrawn** by this
+>    PATH B pass — the runner output above refutes it.
 
-- `S_spent = delay - sqrt(delay² - L²)`
-- `θ = acos(dx/L)` in 3D, `atan2(|dy|, dx)` in 2D
-- `β = 0.8`
+Therefore the current premise history is only this: beta = 0.8 is supplied by
+BETA-DIRECTIONAL; the older selection story is motivation-tier history and is
+not consumed by T1-T6. No closed form for beta has been derived.
 
-The directional weight penalizes edges that deviate from the forward (layer) direction. It is field-independent, scale-free, and multiplicative.
+The empirical `<theta^2>` of the canonical DAG
+(xyz_range = 8, connect_radius = 3) is approximately 0.84 rad^2. Gaussian
+moment-matching would give `beta = 1 / (2 <theta^2>) ~= 0.595`. This older
+comparison remains motivation-tier history only.
 
-## Tested constraints
+After the 2026-05-03 repair the row recorded a runner that recomputes the
+table, a cited boundary context that explains why beta is empirical, and a
+bounded statement that does not overclaim derivation.
+
+### Conditional Recut (2026-07-07)
+
+The 2026-07-07 recut retypes matched values as supplied premises. The
+historical numerical match remains visible in this motivation exhibit, but the
+live claim no longer consumes observable matching. Conditional algebra under
+BETA-DIRECTIONAL and the deterministic fixture table is now the load-bearing
+claim.
+
+This recut does not apply audit verdicts, does not edit audit records, does
+not add primitives or axioms, and does not request a landing.
+
+### Historical Tested Constraints Table
+
+This table is kept as historical motivation only. The live T4 value is the
+runner's 6/8 attract count; the historical table entry 5/8 remains visible.
 
 | test | 2D DAGs | 3D DAGs |
-|---|---|---|
-| Born rule (I₃) | 9.2e-16 PASS | — |
+| --- | --- | --- |
+| Born rule (I3) | 9.2e-16 PASS | historical table only |
 | interference (V) | 0.998 PASS | fixed-DAG smoke PASS (`V = 0.9963`) |
-| linearity / normalization smoke | implied by path-sum form | fixed-DAG smoke PASS (`3.18e-14`, norm err `0`) |
-| k=0 → zero | 0.000000 PASS | 0.000000 PASS |
-| gravity sign | 90%+ attract | 5/8 attract |
-| gravity scaling | R@25 ≥ R@12 PASS | R increases with N |
-| family transfer | r=2..5 DAGs, neutral on trees | — |
-| R_c compat | 8/10 (2 edge cases) | — |
-| decoherence scaling | FAIL (purity rises) | — |
-| b-dependence | mixed: raw R increases with b, but bounded response-density diagnostics decrease with b on the baseline and second dense-family holdout; the hierarchy transfers to the tree control and the crossover reduces to `lambda = h_mass / b` | — |
+| linearity / normalization smoke | implied by path-sum form | fixed-DAG smoke PASS |
+| k = 0 -> zero | 0.000000 PASS | 0.000000 PASS |
+| gravity sign | 90%+ attract | historical table: 5/8 attract |
+| gravity scaling | R@25 >= R@12 PASS | R increases with N |
+| family transfer | r = 2..5 DAGs, neutral on trees | historical table only |
+| R_c compat | 8/10 (2 edge cases) | historical table only |
+| decoherence scaling | FAIL (purity rises) | historical table only |
+| b-dependence | mixed bounded response-density diagnostics | historical table only |
 
-## What this establishes
+### Historical Interpretation (Motivation Only)
 
-The flat path measure (uniform weight over all causal paths) was causing CLT saturation of gravity. Adding a directional continuation preference prevents that saturation while preserving interference, Born rule, and k=0→0.
+The flat path measure, uniform over all causal paths, was recorded as causing
+CLT saturation of gravity. Adding a directional continuation preference was
+historically observed to prevent that saturation while preserving interference,
+Born rule behavior, and k = 0 -> 0 on the tested fixtures.
 
-The directional weight also has a clean 3D generalization as `acos(dx/L)`
-without modification. A bounded fixed-DAG smoke test now says this is not just
-gravity-side support: the same 3D rule shows a real zero-field interference
-pattern and preserves source-superposition linearity to machine precision.
+The directional weight also has a 3D generalization as `acos(dx / L)` without
+modification. The fixed-DAG smoke test says this is not just gravity-side
+support: the same 3D rule shows a real zero-field interference pattern and
+preserves source-superposition linearity to machine precision.
 
-The role of this note is now sharper after the topology pivot:
+The role recorded after the topology pivot was:
 
-- this directional measure is the accepted unitary support layer
-- it is not, by itself, the decoherence solution
-- but it is the unitary core used in the later modular / gap-controlled DAG
-  results where **both gravity and decoherence work on the same family**
+- this directional measure is the accepted unitary support layer;
+- it is not, by itself, the decoherence solution;
+- it is the unitary core used in later modular / gap-controlled DAG results
+  where both gravity and decoherence work on the same family.
 
-## What this does not establish
+Those historical interpretations are not part of the 2026-07-07 load-bearing
+claim unless separately audited.
 
-- Decoherence scaling is not addressed. This is expected: the directional weight modifies the unitary propagator, and decoherence is a non-unitary (record/environment) problem.
-- The 3D support is still a smoke package, not a full 3D Sorkin / three-slit theorem.
-- The raw b-dependence (deflection/readout increasing with impact parameter) is not fixed. A bounded geometry-normalized response-density diagnostic now decreases with b on the original dense random-DAG family, and the original `mass_nodes = 3` holdout-transfer replay says the same center-offset and nearest-edge densities still pass on the second dense-family holdout at both `N = 12` and `N = 25`. A widened-source holdout follow-on at `mass_nodes = 5` then sharpens the finite-source split instead of killing it: on the same holdout, `N = 25` loses the center-offset passes (`A/b`, `F/b`) while nearest-edge density (`A/edge`, `F/edge`) still decreases cleanly with actual `b`. The current bounded hierarchy is therefore sharper than before: center-offset density is the asymptotic leading term, nearest-edge density `b - h_mass` is the robust finite-source correction once the source width is widened, and support-gap is a secondary discrete packet-support correction. The reduced-variable picture is now two-layered: `lambda = h_mass / b` is the compact crossover control, while `mu = edge_b / h_mass = 1 / lambda - 1` is the cleaner signed overlap diagnostic. Tree-like controls keep large positive `mu`, while widened dense families force the finite-source correction once low-`b` corners cross into `mu <= 0`, even though pure `response / b` still survives on the bounded family once singular center-offset trials are excluded. The low-`b` onset cards now support a sharper mechanism claim: sparse target-band occupancy is the leading transferable overlap-onset signal, while coarse local spacing is a family-dependent refinement. Tree layers densify around the target plane, while dense random-DAG layers keep only about `1-2` nodes in that band and therefore have to stretch widened source windows across much larger `y` gaps; on the second dense-family holdout, the original gap/span clause softens but an occupancy floor still isolates the overlap rows cleanly. A combined occupancy bridge card now compresses that further: across the original and holdout dense families together, `target_fill <= 0.4` captures `23/24` overlap rows, while no overlap rows survive once `target_fill > 2/3`, so occupancy shortage is now the current coarse bridge variable and spacing stays secondary. The supply-load decomposition card first made the physical content explicit: raw target-band count or same-side target-plane share alone is too family-dependent, and source-window size alone is too crude, but the combined source load `mass_nodes / local_target_count >= 2.5` reproduces the bridge exactly. A new continuous-density bridge card then sharpened that into a smoother spacing law: estimating target-plane support from the fourth-nearest same-side node radius gives `expected_target_count_4nn = 4 / r4`, and the continuous load `mass_nodes / expected_target_count_4nn >= 2.7354` improves the combined dense-family bridge to `0.9167` accuracy while lifting both baseline dense families to `0.9000`. A frozen branching-tree control keeps that same 4-NN law safely on the non-overlap side without refit: tree `knn4_density_load` falls from `0.5938` to `0.1484` as depth grows while `mu` rises from `3` to `11`, so the tree family stays far below the overlap threshold because target-plane support densifies rather than starving. But a one-notch center-biased mid-layer dense sentinel now shows the fourth-neighbor stencil is the unstable piece under target-plane densification: on that holdout, the frozen 4-NN law falls to `0.8500` with six false negatives, while a bounded stencil-transfer diagnostic lifts the frozen 3-NN law to `0.9500` on the same sentinel without changing the old dense-reference thresholds. The original reference+tree still prefers 4-NN (`0.9206` vs `0.8889`), but on the current extended sample the frozen 3-NN law edges out 4-NN (`0.9126` vs `0.8932`) because most 4-NN misses are one-sided low-occupancy target bands where the fourth neighbor is the first sample to jump across the target-plane gap and `r4` overstates support. A bounded residual probe then pushed on the last two 3-NN misses directly and found the current limit: miss-local rescue clauses can close the midlayer sentinel, but only by degrading the old reference+tree control to `24/8/0/31`. So the portable statement is still occupancy-first. The 4-NN density law is the cleaner original dense-sample fit, 3-NN is the current best single frozen smooth law on the expanded sample, and no sampler-robust residual closure has landed yet.
-- β = 0.8 is **empirically chosen, not derived**, and is carried by
-  this note as **tuned support** (PATH B of the 2026-05-03
-  REPAIR_TARGETS row #1; see "Repair-pass disposition (2026-05-10)"
-  above). Per the
-  [no-go theorem on angular kernel underdetermination](ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md)
-  the kernel `w(θ)` is not determined by the repo baseline physical
-  `Cl(3)` local algebra plus `Z^3` spatial substrate together with the
-  named directional-measure constraints; closing this
-  requires one of three additional premises or closure routes
-  (higher-order isotropy, action-Lagrangian principle, or direct
-  observable matching). β = 0.8 is observable-matched (route 3)
-  against the gravitational-deflection eikonal slope, not derived from
-  first principles. The bounded smoke/table results below are valid AT
-  the tuned point β = 0.8; they do **not** lift to a derivation of β
-  itself.
-- The 2 R_c edge cases mean the weight slightly narrows the zero-field interference threshold at some geometries.
+## Unconditional Boundary
 
-## Axiom connection
+The angular-kernel underdetermination no-go is kept prominent as boundary
+context and is cited at its current audited scope, not as retained authority for
+promotion.
 
-- Axiom 6 (continuation prefers local coherence): the weight directly implements this
-- Axiom 3 (space inferred): the angle is intrinsic to the graph, not imposed
-- This is a path-measure correction, not a new dynamical law
+At its audited scope, the angular-kernel no-go states that the angular kernel
+`w(theta)` of the directional path-measure walk is not uniquely determined by
+the retained primitives plus the named directional-measure constraints.
 
-## Next work
+For this note, that boundary means beta = 0.8 cannot be described here as
+derived, natural, uniquely selected, or primitive-surface forced. The boundary
+does not itself derive the supplied premise; it only blocks converting the
+historical match into a derivation inside this note.
 
-The propagator is no longer the bottleneck. The next frontier is:
-1. dynamic emergence of the topology that lets the accepted non-unitary IF / CL route work
-2. `b`-dependence as a separate gravity-sector question, now narrowed to deriving the asymptotic `b` leading term, its `b - h_mass` finite-source correction, and turning the current occupancy-first bridge into a sampler-robust continuous law without reopening a wider denominator search; the bounded clue is now stencil-local rather than denominator-wide, because the fourth-neighbor miss mode softens if the current expanded sample is read through the frozen 3-NN density law instead
-3. principled derivation of `beta` from graph geometry — currently
-   blocked by the
-   [angular-kernel underdetermination no-go](ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md);
-   would require closing one of the no-go's three additional-premise
-   routes (higher-order isotropy, action-Lagrangian, or
-   observable-matching at the structural level). Per the 2026-05-10
-   PATH B disposition, this is the future-work derivation target
-   under which `β` would graduate from "tuned support" to a derived
-   constant; the bounded note currently makes no claim toward such a
-   derivation.
-4. transfer of the joint gravity+decoherence story to dynamically generated or higher-dimensional graph families
+## Residuals / Open Derivation Targets
+
+- Decoherence scaling is not addressed. The directional weight modifies the
+  unitary propagator, while decoherence is a non-unitary record/environment
+  problem.
+- The 3D support is still a smoke package, not a full 3D Sorkin or three-slit
+  theorem.
+- The raw b-dependence, meaning deflection/readout increasing with impact
+  parameter, is not fixed by this note. The old response-density hierarchy,
+  finite-source correction, occupancy bridge, 4-NN and 3-NN stencil diagnostics,
+  and residual probes remain motivation only. No sampler-robust residual
+  closure has landed.
+- beta = 0.8 is supplied, not derived. Closing this requires one of the
+  no-go's three additional-premise routes: higher-order isotropy,
+  action-Lagrangian principle, or direct observable matching at the structural
+  level.
+- The future-work derivation target remains: close a no-go route, derive beta,
+  and file a separate promotion note. This note is not that promotion note.
+- The 2 R_c edge cases mean the weight slightly narrows the zero-field
+  interference threshold at some geometries.
+- Transfer of the joint gravity-plus-decoherence story to dynamically generated
+  or higher-dimensional graph families remains future work.
+
+Historical axiom connections remain motivation only:
+
+- Axiom 6, continuation prefers local coherence: the weight implements this.
+- Axiom 3, space inferred: the angle is intrinsic to the graph, not imposed.
+- This is a path-measure correction, not a new dynamical law.
+
+## Citation Contract (Audit-Gated)
+
+- Cite this note, before audit review, only as a supplied-value conditional
+  fixed-fixture theorem candidate.
+- The runner may be cited for deterministic recomputation of T1-T6 under
+  BETA-DIRECTIONAL.
+- The motivation exhibit may be cited only as evidence/history. It may not be
+  cited as load-bearing derivation, selection, or observable match content for
+  the live claim.
+- `BORN_SCATTERING_COMPARISON_NOTE.md` remains a backticked see-also reference
+  documenting the bounded eikonal comparison and the withdrawn beta-correction
+  claim. It is not a load-bearing authority here.
+- The angular-kernel underdetermination no-go may be cited only at its audited
+  scope as boundary context. This note does not upgrade or apply its audit
+  verdict.
+
+## Firewall
+
+- This note may be cited only for the bounded smoke/table checks at the fixed
+  supplied point beta = 0.8.
+- It may not be cited as a derivation of the directional-measure kernel, the
+  angular weight, the beta parameter, or a retained gravity law.
+- The named premises may not be cited as derived.
+- beta = 0.8 may not be described as derived, selected by first principles,
+  natural, unique, or retained.
+- Observable matching is quarantined inside BETA-DIRECTIONAL as selection
+  history, not as claim content.
+- No closed form for beta has been derived.
+- Promotion beyond supplied-value conditional support requires a separate
+  theorem closing one of the no-go routes and deriving beta rather than
+  selecting it.
+- This note does not establish decoherence scaling, a full 3D Sorkin theorem,
+  a fixed raw b-dependence law, or a new dynamical law.
+
+## Verification
+
+The runner is deterministic and offline. It keeps load-bearing fixture checks
+separate from motivation-tier replay/provenance text, checks for the named
+premise and motivation-exhibit labels in this note, and prints a final
+`FATAL TOTAL: PASS=N FAIL=0` banner on success. The 2026-07-07 local run
+printed:
+
+```text
+LOAD-BEARING: PASS=6 FAIL=0
+MOTIVATION: PASS=6 FAIL=0
+FATAL TOTAL: PASS=6 FAIL=0
+ALL CHECKS: PASS=12 FAIL=0
+```
+
+Expected load-bearing fixture checks:
+
+- T1 detector-probability partition fixture consistency.
+- T2 phase-free two-source visibility fixture consistency.
+- T3 k = 0 real amplitude.
+- T4 gravity sign count.
+- T5 gravity scaling.
+- T6 beta-sweep monotonicity.
+
+The final runner declaration must name BETA-DIRECTIONAL as supplied and state
+that beta derivation, beta selection, and observable matching are not claimed.

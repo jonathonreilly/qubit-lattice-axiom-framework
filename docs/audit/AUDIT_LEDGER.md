@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 192 |
 | **retained_no_go** | 193 |
 | **retained_bounded** | 880 |
-| _retained_pending_chain_ | 4 |
+| _retained_pending_chain_ | 5 |
 | open_gate | 22 |
-| unaudited | 1982 |
+| unaudited | 1981 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 19 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1253 |
+| `audited_clean` | 1254 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2327 |
+| `unaudited` | 2326 |
 
 | claim_type | count |
 |---|---:|
@@ -83,7 +83,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 953 |
 | `leaf` | 1628 |
 
-- **Retained pending chain closure:** 4
+- **Retained pending chain closure:** 5
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -527,6 +527,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gate_b_complex_action_falsifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gate_b_context_independence_no_go_note_2026-06-17` | no_go | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_grown_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -6998,6 +6999,24 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The replay comparison shows fixed-connectivity jitter tolerates substantial position noise while geometry-recomputed connectivity gives mixed response.  _(class `C`)_
 - **chain closes:** False — The runner genuinely computes the tabulated finite replay rather than merely printing constants. The restricted packet does not derive the supplied valley-linear propagation law, source/boundary/readout choices, normalization, or connectivity-generation semantics from accepted premises.
 - **rationale:** Issue: The finite jitter and architecture tables are computed, but the physical law, scalar source, boundary/regulator/normalization, detector-window/TOWARD/F~M semantics, and connectivity-generation choices are supplied row-local premises. Why this blocks: with no cited authorities, the packet supports only a finite replay under those supplied choices, not a Gate B dynamics theorem or a general theorem that connectivity construction is intrinsically the bottleneck. Repair target: provide retained bridge theorems or explicit dependency edges deriving those supplied choices; the runner boundary checks also inspect docs/GATE_B_DYNAMICS_NOTE.md rather than the audited note, so source-scope validation should be corrected. Claim boundary until fixed: cite the frozen replay numbers only inside the stated finite harness.
+- **auditor confidence:** high
+
+### `gate_b_context_independence_no_go_note_2026-06-17`
+
+- **Note:** [`GATE_B_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md`](../../docs/GATE_B_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the narrow no-go that the current Minimal Axioms do not determine the remaining Gate-B physical scalar source/normalization, detector/readout semantics, or physical growth selector.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:gate_b_dynamics_note`)
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-gate_b_context_independence_no_g-07`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Two completions can share the same fixed Z^3 nearest-neighbor Lattice/Qubit/Record surface while choosing different generated-connectivity rules, scalar normalizations/regulators, and detector/readout windows, so the current axioms cannot derive GB-S1b-b, GB-S2b, or GB-S3b.  _(class `C`)_
+- **chain closes:** True — The model-pair witness correctly uses the accepted minimal axiom premise: the shared Z^3 nearest-neighbor substrate and one-site/record content do not select the extra Gate-B dynamics/readout/source choices. The no-go discipline checks are satisfied because the note tests multiple independent routes, keeps the residuals narrow, and leaves future dynamics/readout bridge theorems open.
+- **rationale:** The load-bearing step is a genuine independence/no-go argument from the accepted Minimal Axioms, not a definition or numerical fit. The runner implements a concrete model-pair witness plus wording/status guards; several runner checks are document guards rather than first-principles physics, but the decisive contradiction check is substantive. The co-cycle citation gate_b_dynamics_note is treated as non-load-bearing/informational under the cycle-break instruction; source-graph repair is still needed to remove or rewrite those markdown links before effective_status can leave retained_pending_chain. The unaudited split notes function here as residual-label witnesses, while the negative conclusion itself closes from the minimal axiom boundary and the explicitly stated completion freedom.
+- **open / conditional deps cited:**
+  - `GATE_B_DYNAMICS_NOTE.md`
+  - `GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`
+  - `GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`
+  - `GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`
 - **auditor confidence:** high
 
 ### `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17`

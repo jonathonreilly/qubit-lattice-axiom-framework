@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 429,
     "high": 272,
-    "leaf": 780,
+    "leaf": 779,
     "medium": 537
   },
   "cycle_break_target_count": 10,
@@ -103,7 +103,7 @@
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['gate_b_dynamics_note'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 1,
       "primary_break_target": "gate_b_context_independence_no_go_note_2026-06-17",
-      "primary_break_target_audit_status": "unaudited",
+      "primary_break_target_audit_status": "audited_clean",
       "primary_break_target_criticality": "leaf",
       "repair_class": "cycle_break_required"
     },
@@ -42586,35 +42586,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gate_b_context_independence_no_go_note_2026-06-17",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "gate_b_dynamics_note",
-        "gate_b_weak_field_source_action_interface_note_2026-06-16",
-        "gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18",
-        "gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18",
-        "gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/GATE_B_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gate_b_context_independence_no_go_2026_06_17.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gate_b_dynamics_note",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -59917,5 +59888,5 @@
     }
   ],
   "ready_count": 236,
-  "total_pending": 2018
+  "total_pending": 2017
 }

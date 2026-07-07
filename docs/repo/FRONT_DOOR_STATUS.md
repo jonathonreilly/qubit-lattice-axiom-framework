@@ -35,10 +35,10 @@ Owner-approval history for every axiom/primitive/governance change:
 | Retained no-go rows | 193 |
 | Retained bounded rows | 880 |
 | Boxed decorations under retained parents | 45 |
-| Open gates | 22 |
+| Open gates | 21 |
 | Unaudited rows | 1980 |
 | Retained-pending-chain rows | 7 |
-| Audited conditional rows | 23 |
+| Audited conditional rows | 24 |
 | Audited renaming rows | 19 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 10 |
@@ -50,12 +50,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2017 |
+| Total pending rows | 2018 |
 | Ready rows | 236 |
 | Cycle-break targets | 10 |
 | Critical pending | 429 |
 | High pending | 273 |
-| Medium pending | 538 |
+| Medium pending | 539 |
 | Leaf pending | 777 |
 
 Next ready rows by queue order:
@@ -80,11 +80,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 |---|---|---:|
 | critical | `unaudited` | 188 |
 | high | `unaudited` | 146 |
-| medium | `unaudited` | 97 |
+| medium | `unaudited` | 96 |
 | high | `audited_conditional` | 3 |
 | medium | `open_gate` | 3 |
 | critical | `audited_numerical_match` | 1 |
 | high | `open_gate` | 1 |
+| medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
@@ -101,8 +102,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1931 descendants; score 217.416
-- `three_generation_observable_theorem_note` - critical; 1185 descendants; score 67.212
+- `minimal_axioms` - critical; 1932 descendants; score 217.417
+- `three_generation_observable_theorem_note` - critical; 1187 descendants; score 67.214
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 65.644
 - `graph_first_su3_integration_note` - critical; 1577 descendants; score 65.624
 - `observable_principle_from_axiom_note` - critical; 1018 descendants; score 64.493

@@ -43,8 +43,8 @@ note requests no ruling on either.
 
 ## Landed premises
 
-From `docs/MINIMAL_AXIOMS_2026-06-29.md` -- sentences quoted verbatim,
-non-contiguous, in document order:
+From [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) --
+sentences quoted verbatim, non-contiguous, in document order:
 
 ```text
 There is one fixed nearest-neighbor admissibility rule, covariant under lattice
@@ -133,7 +133,7 @@ removes a record. The finite check is mechanical and the runner performs it.
 
 ### The inventory (why Model B is not a countermodel)
 
-To exist at all, Model B consumes three objects beyond the named signature:
+To exist at all, Model B consumes two objects beyond the named signature:
 
 ```text
 IMPORT 1: CO-REALIZATION of incomparable alternatives -- B1 and B2, neither
@@ -306,35 +306,59 @@ judgment point itself, which belongs to the audit lane.
 
 ## No-Go Discipline Gate
 
-- **N1 route enumeration:** Result F uses only the quoted axiom sentences,
-  the finite fork construction, and the import inventory against the named
-  signature. Result A uses the quoted sentences and Result F's supported
-  evaluation.
-- **N2 wall independence:** v1, v2, and the reserve wording are not used as
-  premises. They are wording-history exhibits and a documented fallback only.
+- **N1 route enumeration:**
+  - Route 1, per-state fork countermodel (ATTEMPTED): succeeds only with the
+    co-realized incomparable-family import and the formation-successor
+    relation import; without those imports, the same stock fails per-site
+    uniqueness.
+  - Route 2, minimal-signature collapsed stock (ATTEMPTED): treats formed
+    records as unindexed by alternative families; the fork then has two
+    records at one site and is barred directly by Record uniqueness.
+  - Route 3, final-container reading of v1 (ATTEMPTED): one final
+    configuration can contain incomparable substages, so v1 is not used as an
+    axiom-text premise; A2 keeps only the finite union consequence.
+  - Route 4, total-comparability reading of v2 (ATTEMPTED): disconnected
+    events would be globally ordered by stipulation; that is overreach and is
+    not used by A1, A2, or A3.
+  - Route 5, arrow-ordering from formation dependencies (ATTEMPTED):
+    ordering closes only after an acyclic nearest-neighbor dependency relation
+    is supplied; the relation and its acyclicity are hypothesis data, not an
+    axiom-derived theorem here.
+- **N2 wall independence:** the wall set collapses to two independent
+  conditionals: Result F's audit judgment about countermodel furniture as
+  load-bearing premise use, and A3's supplied acyclic dependency relation.
+  Closing either does not close the other. v1, v2, and the reserve wording are
+  not walls or premises; they are wording-history exhibits and a documented
+  fallback only.
 - **N3 hidden-wall scan:** no global order imported; no rate/clock; no
-  dynamics, probability, update law, site-selection rule, or
-  possibility-selection rule imported. The joint evaluation is argued from
-  the landed admission discipline, not supplied as external semantics.
-- **N4 residual matching:** after Result A, consistency of record content is
-  closed; global simultaneity, metrics, rates, dynamics, and the union-closure
-  lemma remain residual structure.
-- **N5 rhetoric audit:** "state" means a configuration of records.
-  "Extends" means set inclusion of record configurations. Neither word
-  supplies a clock tick, duration, metric, or global chronology.
-- **N6 partial-closure path scan:** the conditional causal order closes only
-  order along supplied dependency chains. It does not close formation rules,
-  weights, rates, probabilities, or dynamics.
+  dynamics, probability, update law, site-selection rule, possibility-selection
+  rule, or formation rule imported. The joint evaluation is argued from the
+  landed admission discipline, not supplied as external semantics.
+- **N4 residual matching:** the closed/residual split is explicit:
+  consistency of record content closes only under Result F's judgment point;
+  finite union is all A2 claims; global simultaneity, metrics, rates,
+  dynamics, infinite union-closure, and formation-rule certification remain
+  residual structure.
+- **N5 rhetoric audit:** "state" means a configuration of records. "Extends"
+  means set inclusion of record configurations. "Ordering" means transitive
+  closure of a supplied dependency relation. None of these words supplies a
+  clock tick, duration, metric, dynamics, or global chronology.
+- **N6 partial-closure path scan:** the standard in-place axiom-clarification
+  route remains the documented fallback if the audit judgment is refused, but
+  it is not exercised here. The conditional causal order closes only order
+  along supplied dependency chains and does not close formation rules, weights,
+  rates, probabilities, or dynamics.
 - **N7 steelman:** the strongest defense of the fork model is that stative
   "carries" invites per-state evaluation. The response is not a counter-
   reading but the inventory: per-state evaluation of formed-record existence
-  requires IMPORT 3, and the discipline sentence bars the import. The
-  strongest v1 reading is the final-container reading; the exhibit
-  `empty, {x}, {y}, {x,y}` shows why v1 fails as text while A2 holds as
-  theorem.
+  requires IMPORT 1's co-realized family, and the discipline sentence bars the
+  import unless independently supplied. The strongest v1 reading is the
+  final-container reading; the exhibit `empty, {x}, {y}, {x,y}` shows why v1
+  fails as text while A2 holds as theorem.
 - **N8 cross-cycle echo:** this note records bounded analysis only. It does
   not edit primitives, alter the audit ledger, set verdicts, forecast audit
-  status, or promote v1, v2, or the reserve wording.
+  status, or promote v1, v2, or the reserve wording. Prior wording-based
+  closure attempts are preserved as context rather than treated as authority.
 
 ## Verification
 

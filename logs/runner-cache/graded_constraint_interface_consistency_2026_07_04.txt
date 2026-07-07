@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/graded_constraint_interface_consistency_2026_07_04.py
+runner_sha256: 551c1f5405a252ec051f749f7645c745d9ae2c48204c8447d75376ba0b251d56
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+CHECK 01: PASS - Defect exhibit: v1 mixed identity resolution :: orthogonal identity resolution normalizes while containing unavailable ZA1
+CHECK 02: PASS - N1 v2: coexistence and conditioning separation :: availability and w remain distinct; conditioning excludes unavailable outcomes
+CHECK 03: PASS - N1 v2: zero-available-total boundary :: conditional is undefined while full-lattice additivity remains intact
+CHECK 04: PASS - N2 v2: record-independent shapes, record-dependent menus :: shape function receives records but derives shapes from algebra dimension
+CHECK 05: PASS - N3 v2: local locking and record-only readout :: entangled projection not lockable; identical-record different-w state rejected
+CHECK 06: PASS - Rejectors: additivity, conditioning, readout mutations caught :: same projections and states fail under three genuine mutations
+CHECK 07: PASS - Needle: prose premises and status discipline :: v1/v2 text, landed sentences, boundary, aggregate-readability, measured total
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

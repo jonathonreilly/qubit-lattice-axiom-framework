@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/born_form_composite_gleason_bridge_2026_07_04.py
+runner_sha256: add1832ae4f882495806091ba563d60cb28d995a996ebe9f0400b9f3a5b54d16
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+CHECK 01: PASS - bridge input sentence names Gleason 1957 and the trace form
+CHECK 02: PASS - note contains hypothesis H1 (grading exists)
+CHECK 03: PASS - note contains hypothesis H2 (additivity)
+CHECK 04: PASS - note contains hypothesis H3 (non-contextuality)
+CHECK 05: PASS - note contains hypothesis H4 (composite menus realized)
+CHECK 06: PASS - axiom file contains nearest-neighbor Z^3 adjacency sentence
+CHECK 07: PASS - axiom file contains M_2(C) presentation sentence
+CHECK 08: PASS - axiom file contains landed Record lock/permanence content
+CHECK 09: PASS - axiom file contains the landed formation sentence
+CHECK 10: PASS - R1 sample is nonempty, antipodal, and deduplicated up to positive scaling
+CHECK 11: PASS - R1 antipodal M_2 menus resolve the identity
+CHECK 12: PASS - R1 rogue frame function normalizes and adds on every sampled menu
+CHECK 13: PASS - R1 secondary bound: sampled Hermitian trace-form fit (superset of Born forms) leaves residual > 0.05
+CHECK 14: PASS - R1 exact three-direction contradiction: trace form forces 1/2 at (e_x-e_z)/sqrt(2), rogue assigns 0
+CHECK 15: PASS - R1 rogue rank-0/rank-2 extension: g(0)=0, g(I)=1 completes every menu to w(I)
+CHECK 16: PASS - R1 least-squares control recovers genuine 2x2 Born-form data
+CHECK 17: PASS - R2 bookkeeping (implementation identity): embedded P tensor I weights equal partial-trace single-site weights
+CHECK 18: PASS - R2 bookkeeping (implementation identity): embedded composite menus normalize for product, entangled, and mixed states
+CHECK 19: PASS - R2 bookkeeping (implementation identity): Bell entangled menu resolves identity and normalizes/adds
+CHECK 20: PASS - R3 corollary support: exact R1 contradiction bars any composite Gleason extension (bridge input carries the corollary)
+CHECK 21: PASS - R4 consequence check (full-symmetry premise supplied separately): maximally mixed gives 1/2 on embedded rank-1 site projections
+CHECK 22: PASS - R4 consequence check (full-symmetry premise supplied separately): maximally mixed gives 1/4 on every Bell-basis element
+CHECK 23: PASS - rejector detects broken additivity on a binary menu
+CHECK 24: PASS - rejector detects context-dependent weights on a shared projection
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

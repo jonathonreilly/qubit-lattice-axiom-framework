@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.py
+runner_sha256: c90212493ed1f40a97e2365e236eb8620eb3706de7d641df453ed6af786b69c5
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 3.40
+status: ok
+----- stdout -----
+PASS A1 (fiber search coverage, draw1) n_converged=28 of 60 inits (gate >= 15)
+PASS A2 (fiber invariant classification, draw1) all 28 solutions match orig invariant (tr(A B C'), tr(A C' B))=[ 0.316648+0.757581j -0.282896+1.050278j]; no second branch found
+PASS A3 (fiber search + classification, draw2) n_converged=10 of 30 inits (gate >= 8); all match orig invariant [-0.98959 +0.781574j -0.251098+0.842437j]; no second branch found
+PASS B1 (C-constraint Jacobian rigid at C0) smallest singular value=7.811818e-02 (gate > 0.01)
+PASS B2 (transpose sheet Jacobian rigid) smallest singular value=7.811818e-02 (gate > 0.01)
+PASS C1 ((1,1,1) F F F invariant dim) computed dim=1 (expected 1: epsilon channel)
+PASS C2 (3 x 3bar x 3 x 3bar invariant dim) computed dim=2 (expected 2: delta-delta pairings, all pair-generated)
+PASS C3 (3 x 3 x 3bar x 3bar invariant dim) computed dim=2 (expected 2: same conclusion, pair-generated)
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,34 @@
+CHECK 01: PASS -- quote guard: current Record section 'When present, a record locks exactly one admissible local possibility. A site never carries more than one record; records are permanent.' present verbatim -- landed one-per-site (commit 7950d9202c, PR #4879) and permanence (commit 50f0db6187) are authoritative
+CHECK 02: PASS -- quote guard: Admissibility 'determined by, and vary with, the nearest-neighbor conditions' present verbatim
+CHECK 03: PASS -- quote guard: 'A state is a configuration of records.' present verbatim (named basis for model postulate M1)
+CHECK 04: PASS -- quote guard: Lattice 'Physical sites are the points of the cubic lattice Z^3 ... proper cubic rotations about each site.' present verbatim (guards the load-bearing infinite-lattice sentence)
+CHECK 05: PASS -- quote guard: Record readout 'For any finite collection of pairwise-disjoint records, scalar readout I is additive, with I(empty)=0.' present verbatim (guards the pairwise-disjoint clause)
+CHECK 06: PASS -- T1 2x2x2 window record-saturated (|R|=8) => zero registrable sites in R
+CHECK 07: PASS -- T1 3x3x3 window record-saturated (|R|=27) => zero registrable sites in R
+CHECK 08: PASS -- T1 dom-based finality (reading-free, primary): R saturated => R subset of dom(C_t) at every later stage (domain monotone under permanence), so zero first-registrations in R thereafter -- no per-site uniqueness
+CHECK 09: PASS -- T1 M1 set-constancy (model-relative): over the 4^8 model-relative candidate R-restrictions, exactly one survives permanence (no removal/alteration) + M1 (no second record), and it equals C|R -- the record set on R is constant
+CHECK 10: PASS -- T1 guards have teeth: removal (permanence), alteration (permanence), and second-record 'double' (M1) candidates are each rejected
+CHECK 11: PASS -- T1 global corollary (rule-dependent): all-(+1) saturated config admissible under the exhibited rule (each locked value lies in its neighbor-determined availability set); readout additive over disjoint halves; readout(empty)=0
+CHECK 12: PASS -- T1 discriminating control (rule-dependent): flipping one CORNER site (0,0,0) to -1 amid +1 neighbors yields a NON-admissible config under the exhibited rule (check has teeth)
+CHECK 13: PASS -- T2 permanence: record sets nested and locked values agree at every succession step (recorded-site domain monotone, dom(prev) subset dom(cur))
+CHECK 14: PASS -- T2 region R unsaturated at stage 1, saturated at stage 2 (a frozen region is produced)
+CHECK 15: PASS -- T2 in-R first-registration counts == (4,4,0,0): the dom-event count in R halts after saturation (local record-time in R ends) -- reading-free
+CHECK 16: PASS -- T2 outside-R first-registration counts == (0,0,2,2): events continue on the unsaturated complement at stages 3,4
+CHECK 17: PASS -- T2 recorded-site count in R is constant (==8) for stages 2,3,4 -- record-time in R is halted
+CHECK 18: PASS -- T2 outside-R record count strictly increases at stages 3 and 4 while R is frozen (time flows where unwritten possibility remains)
+CHECK 19: PASS -- T2 event-definition layering: a same-value re-registration at an already-recorded site is a NON-EVENT under both definitions -- zero domain growth (dom-based) and the same (site,value) element (M1)
+CHECK 20: PASS -- T3 monotone containment (general, within the note-level model): the recorded-neighbor value set at a boundary site is monotonically nondecreasing under permanence, and the region value +1 stays available at every stage (once available it never leaves)
+CHECK 21: PASS -- T3 relaxation counterexample (exact): an admissible -1 on a DIFFERENT neighbor (3,0,0) relaxes availability at the boundary site from {+1} to {+1,-1} -- the singleton pin is NOT permanent; +1 stays available (monotone containment survives the relaxation)
+CHECK 22: PASS -- T3 cavity singleton pinning (exact, within the note-level model): a cavity site with all six neighbors inside the saturated shell has availability {+1} at every stage regardless of arbitrary outside events (incl. an admissible far -1) -- full singleton for cavity sites
+CHECK 23: PASS -- T3 far site (no recorded neighbors) retains full availability {+1,-1} at every stage
+CHECK 24: PASS -- T3 influence is possibility-level (not dynamical): the boundary site and the cavity site stay registrable (unrecorded) at every stage while their availability is constrained -- no record placed, no evolution
+CHECK 25: PASS -- T3 availability rule is covariant under lattice translation (available_at(s+v; C+v) == available_at(s; C))
+CHECK 26: PASS -- T3 availability rule is covariant under a proper cubic rotation (available_at(Rs; RC) == available_at(s; C))
+CHECK 27: PASS -- T4 finite initial support + finite per-step batches => recorded set size is a finite integer at every stage (sizes == [1,3,6,7,11])
+CHECK 28: PASS -- T4 finite union of finite sets is finite: |union| is an integer and <= sum of sizes (7 <= 8)
+CHECK 29: PASS -- T4 unrecorded-site count in (2k+1)^3 window strictly increases for k=1,2,3 ((25, 122, 339)): infinitely many unrecorded sites remain
+CHECK 30: PASS -- T4 explicit unrecorded site (M+1,0,0) outside the bounding window at a finite stage => global saturation NOT reached at any finite stage
+CHECK 31: PASS -- T4 dom-based finite bound (reading-free): a saturating history on the N-site lattice has exactly N first-registrations (dom-events == (1,)*8, sum == N == 8); every attempted (N+1)-th registration yields zero domain growth -- at most N first-registrations, no M1 needed
+CHECK 32: PASS -- T4 finite N-site lattice: a one-per-stage history saturates in exactly N stages, with zero registrable sites afterward
+CHECK 33: PASS -- T4 M1 pigeonhole tail (model-relative, M1-load-bearing): the saturated N-site lattice carries exactly N distinct (site,value) records; re-registration adds no element (M1 same-element identity), so no (N+1)-th distinct record exists -- infinite Z^3 is load-bearing
+TOTAL: PASS=33 FAIL=0

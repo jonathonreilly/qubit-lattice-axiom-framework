@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 882 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1976 |
+| unaudited | 1975 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 27 |
+| ~~audited_conditional~~ | 28 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1258 |
-| `audited_conditional` | 27 |
+| `audited_conditional` | 28 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2321 |
+| `unaudited` | 2320 |
 
 | claim_type | count |
 |---|---:|
@@ -1402,6 +1402,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1552,6 +1553,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Substituting x + y = 2a and z = -6a into the cubic anomaly gives x^3 + y^3 = 56a^3, hence xy = -8a^2 and the roots are {4a, -2a}.  _(class `A`)_
 - **chain closes:** True — The finite anomaly equations reduce to x + y = 2a, z = -6a, and xy = -8a^2, so the quadratic for the two color-triplet singlet charges has only roots 4a and -2a. The physical existence or minimality of the P-COMP template is explicitly outside the audited scope.
 - **rationale:** The audited claim is a bounded conditional classification, not a derivation of the P-COMP premise itself. Within that scope, the load-bearing step is exact algebra over the stated anomaly equations, and the runner source genuinely verifies the symbolic reduction, sample exact solutions, full anomaly cancellation, and counterfactual non-uniqueness without external comparator data. The a = 1/3 normalization is checked only as an example, not used to tune the scale-free result.
+- **auditor confidence:** high
+
+### `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`
+
+- **Note:** [`ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrow ABJ B1 supplier wiring: use the retained-bounded hypercharge LH-doublet surface Y(Q_L)=+1/3 and Y(L_L)=-1 for exact left-handed anomaly traces, without closing P-ABJ, P-COMP, P-REC, B-AXIS, or full-spectrum hypercharge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260707T175800Z-abj_p_hy_supplier_wiring`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Then the B1 input `(2,3)_{+1/3} + (2,1)_{-1}` is a retained-bounded supplier edge rather than an unsupported local premise.  _(class `B`)_
+- **chain closes:** False — The rational B1 trace arithmetic closes over the supplied LH Y values, and the authority source text states the bounded LH surface and exclusions. The completed runner nevertheless fails the status-bearing ledger-scope boundary guard, so the retained-bounded supplier edge is not fully verified from the current source/status packet.
+- **rationale:** Issue: the runner reports `[FAIL] ledger scope explicitly keeps full-spectrum boundaries` while the source note's load-bearing supplier edge relies on that bounded-status firewall. Why this blocks: CL3 retained boundaries are status/scope artifacts, not source prose alone, so the note cannot cleanly claim a retained-bounded P-HY edge that excludes full-spectrum hypercharge/anomaly claims until that guard passes. Repair target: update the status-bearing hypercharge scope or narrow the wiring note/runner expectation so the retained-bounded edge states only the verified LH-doublet surface and explicit exclusions. Claim boundary until fixed: the exact LH arithmetic and source-text citation are valid local support, but effective retained-bounded supplier wiring remains conditional.
 - **auditor confidence:** high
 
 ### `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`

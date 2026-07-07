@@ -20,15 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 192 |
 | **retained_no_go** | 193 |
-| **retained_bounded** | 877 |
+| **retained_bounded** | 878 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
-| unaudited | 1971 |
+| unaudited | 1974 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 25 |
-| ~~audited_failed~~ | 1 |
+| ~~audited_conditional~~ | 22 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1252 |
-| `audited_conditional` | 25 |
+| `audited_clean` | 1253 |
+| `audited_conditional` | 22 |
 | `audited_decoration` | 47 |
-| `audited_failed` | 23 |
+| `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2316 |
+| `unaudited` | 2319 |
 
 | claim_type | count |
 |---|---:|
@@ -1287,6 +1286,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_sign_comparison_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
@@ -1407,9 +1407,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1474,7 +1471,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
-| `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -7018,32 +7014,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The runner computes the table from fixed scenario parameters, fixed seeds, propagation loops, detector-weighted centroids, and log-slope regression; it does not hard-code the 36/36 TOWARD or F~M=1.00 outcomes. There is no external physical comparator or tuned observational value being matched in the audited claim. The note explicitly confines the result to the SHA-pinned finite harness certificate and excludes grown-geometry derivation, source/readout/kernel derivation, retained physical gravity readout, and clean Gate B/gravity closure.
 - **auditor confidence:** high
 
-### `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18`
-
-- **Note:** [`GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](../../docs/GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** GB-S2a only: exact finite complex-amplitude path-sum algebra for the supplied finite Gate B layered DAG and edge kernel, excluding physical readout semantics and Gate B closure.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The propagation recursion a_j(new) += a_i(old) W_ij on a finite layered DAG equals the finite directed path sum over unblocked source-to-detector paths with edge-weight products.  _(class `A`)_
-- **chain closes:** False — The mathematical step is a genuine finite-DAG algebraic identity, and the primary runner contains nontrivial enumeration checks. However, the primary runner imports the load-bearing Gate B helper module while the packet says no helper imports were detected, so the restricted packet cannot independently verify the current runner kernel it claims to audit.
-- **rationale:** Within the declared bounded scope, the note does not overclaim physical Gate B dynamics; it narrows the claim to supplied finite propagation algebra. The runner output reports all checks passing and the visible primary runner implements independent path enumeration, linearity, blocked-node, and normalization checks rather than merely printing constants. But the visible source imports `scripts/gate_b_connectivity_tolerance.py` for `_propagate`, graph construction, field construction, blocked nodes, detector probabilities, and kernel constants, and that helper source is absent from the packet despite being load-bearing. This is a runner artifact completeness defect, not a substantive disproof of the algebraic claim.
-- **auditor confidence:** high
-
-### `gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18`
-
-- **Note:** [`GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](../../docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite runner-local GB-S1b-a scalar-helper equality and algebraic properties on the supplied Gate B slab.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The current `_field_for_mass` helper exactly matches `strength/(r+0.1)` for every site in the tested slab.  _(class `A`)_
-- **chain closes:** False — The finite algebraic checks themselves are class-A checks, but the restricted packet omits the source of the imported `scripts/gate_b_connectivity_tolerance.py` module that supplies `_field_for_mass`, `FIELD_STRENGTH`, and the slab construction. Without that helper source, the imported runner surface remains opaque rather than source-verified.
-- **rationale:** Issue: the primary runner imports `scripts/gate_b_connectivity_tolerance.py`, but the packet reports no helper imports and does not include that source. Why this blocks: the load-bearing equality is specifically about the imported helper, so cached PASS output plus the wrapper runner is not enough for a source-level audit of the helper implementation. Repair target: include the helper source or a source-pinned certificate for the imported helper and slab construction, then re-audit the same finite algebra. Claim boundary until fixed: the packet provides supportive black-box runner evidence for the finite scalar facts, but not a closed source-audited theorem.
-- **auditor confidence:** high
-
 ### `gate_b_grown_distance_law_note`
 
 - **Note:** [`GATE_B_GROWN_DISTANCE_LAW_NOTE.md`](../../docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md)
@@ -7225,19 +7195,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The chain closes only for the finite compact single-seed h=0.25 replay: the one-hop dependencies are retained_bounded, the runner computes the observables before checking expected values, the cached output is SHA-pinned and complete, and the source note explicitly rejects a full same-family closure proof.
 - **rationale:** Clean only under the narrowed finite compact single-seed scope. The runner/cache pins H=0.25, PW=6, L=3, NL=13, SEEDS=[0], exact-grid and grown drift=0.2/restore=0.7 rows, with exit_code=0 after a 93s cached run. Independent parameter and range checks found no formula blocker: the grid/node/slit counts are internally consistent; the hard-coded replay values are post-compute assertions; the Born residual is e-15-scale as expected for linear inclusion-exclusion cancellation; d_TV is normalized total variation, MI is equal-prior binary Jensen-Shannon information, and the decoherence factor uses exp(-LAM^2*sn) with sn >= 0. Cross-row deltas support only qualitative same-regime language, not quantitative closeness beyond the two rounded rows, h=0.25 family survival, canonical-width closure, or multi-seed transfer.
 - **auditor confidence:** medium_high
-
-### `gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18`
-
-- **Note:** [`GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](../../docs/GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The explicit forward 3x3 stencil on finite `Z^3` slabs is finite-range, forward-foliated, interior translation-covariant, boundary-clipped, and asserted to match the current Gate B fixed-connectivity runner adjacency.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** For every source site `(l, y, z)` with `0 <= l < N-1`, draw an edge to every in-slab target `(l+1, y+dy, z+dz)` for `dy,dz in {-1,0,1}`, and identify this as the forward connectivity used by the Gate B runner rows.  _(class `A`)_
-- **chain closes:** False — The finite-stencil properties close by direct algebraic/enumerative check from the stated stencil. The claimed match to the Gate B runner adjacency depends on `scripts/gate_b_connectivity_tolerance.py`, which the primary runner imports but whose source is absent from the restricted helper-source packet.
-- **rationale:** Issue: the bounded local-stencil theorem itself is a direct finite enumeration, but the runner-family match relies on an imported helper artifact not included in the packet. Why this blocks: stdout plus the primary runner source show an equality test was executed, but the restricted packet does not let the auditor inspect the imported builder that defines the claimed Gate B adjacency. Repair target: include `scripts/gate_b_connectivity_tolerance.py` source/cache in the helper section or split the audited claim to the stencil-only theorem. Claim boundary until fixed: the explicit stencil is finite-range, forward, interior translation-covariant, and boundary-clipped; the runner-family adjacency match remains artifact-conditional.
-- **auditor confidence:** high
 
 ### `gate_b_no_restore_farfield_note`
 
@@ -8320,19 +8277,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The load-bearing move is a class F symbol-identity step between the gravitational weak-field response kernel and the lattice resolvent G_0. The runner verifies neutral-subspace identities and diagnostics after phi = G_0 rho is imposed, but it does not derive that gravity is mediated by the same H and G_0. The source note's own boundary says this support may not be cited as a retained derivation of L^{-1}=G_0, the gravitational response kernel, the 1/(4 pi r) asymptotic, or nonlinear self-gravity convergence.
 - **open / conditional deps cited:**
   - `GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`
-- **auditor confidence:** high
-
-### `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16`
-
-- **Note:** [`GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](../../docs/GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded one-axis fixed-energy scalar-shifted lattice packet: phase counting gives n=k_s/k0 and the first-order coefficient c_E=1/(k0 lambda_axis'(k0)), with a stated small-k weak-field expansion and conditional 1/b ray-angle form.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Differentiate lambda_axis(k_s)+s=E to get d(k_s/k0)/ds|_{s=0}=-1/(k0 lambda_axis'(k0)), so n(s)=1-c_E s and c_E=1/(k0 lambda_axis'(k0)).  _(class `A`)_
-- **chain closes:** False — The exact phase-count identity and derivative coefficient close algebraically from the cited retained-bounded inputs. The claim as written does not fully close because the displayed small-k expansion omits the O(s) correction from c_E=1/(2E)+1/24+O(E), so the stated O(E s) remainder is too small without an extra scaling assumption.
-- **rationale:** Issue: the source states n(s)=1-s/(2E)+O(s^2/E^2, E s), but expanding the exact axis formula gives an additional O(s) term. Why this blocks: the bounded theorem includes that small-k weak-field expansion, and the runner only checks the relative coefficient trend, not the displayed remainder order. Repair target: replace the remainder with O(s^2/E^2, s) or state and verify a scaling regime where the missing term is dominated. Claim boundary until fixed: the exact n=k_s/k0 identity and c_E=1/(k0 lambda_axis'(k0)) coefficient remain algebraically supported.
 - **auditor confidence:** high
 
 ### `gravity_full_self_consistency_note`
@@ -18035,6 +17979,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The symbolic star-product residue gives the d2/dB2 core (f_- - f_+)(qx^2+qy^2)/(4 R^5), so its ratio to R Omega_z^2 is (qx^2+qy^2)/m^2 rather than a constant.  _(class `A`)_
 - **chain closes:** True — The runner source actually performs the Pauli/star-product algebra and residue checks supporting the nonconstant ratio, and recomputes the finite-cell Peierls anchors before using them. The disclosed no-fudge residual is scoped as residual, not claimed as full closed-form completion.
 - **rationale:** The load-bearing scalar-prefactor refutation is a genuine algebraic closure over the displayed two-band Hamiltonian and star-product calculation, not a renaming or tuned numerical match. The one cited authority is marked retained_bounded, which is retained-grade under the rubric, and the runner has no missing helper imports. The note does not overclaim full lattice completion; it explicitly preserves the positive over-capture residual as follow-on work.
+- **auditor confidence:** high
+
+### `two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05`
+
+- **Note:** [`TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md`](../../docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite four-qubit endpoint model with matter qubits A,B and link-end qubits a,b under the note's stipulated U(1)/SU(2) endpoint generators: the U(1) link-transport endpoint profiles are 0,1,2, the U(1) commutant dimension is 36, and the SU(2) bare link-end transport is variant while the double-singlet Wilson-type observable is endpoint invariant. Derivation of the carrier, Gauss generators, physical observable identification, gauge dynamics, coupling values, electroweak breaking, and color SU(3) are out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-fresh-context-audit-2026-07-07-two-endpoint-gauss-law-fermat`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The finite Pauli-matrix endpoint algebra gives U(1) charge-cancellation profiles 0,1,2; the joint endpoint charge multiplicities give commutant dimension 36; and the SU(2) double-singlet projector commutes with both endpoint total-spin triples while the bare transport does not.  _(class `A`)_
+- **chain closes:** True — The scoped bounded theorem closes by exact finite-dimensional matrix algebra from the note's explicit endpoint-carrier and Gauss-generator conventions. The only non-meta dependency is already retained_bounded; meta roots do not block retention.
+- **rationale:** The primary runner passes SUMMARY: PASS=18 FAIL=0 and directly checks the U(1) profiles, monotone endpoint counts, nonzero operators, commutant dimension 36, SU(2) bare/double-singlet profiles, and source boundary firewalls. Independent charge-count and commutator checks agree. No unstated premise is needed beyond the note's declared bounded model conventions.
 - **auditor confidence:** high
 
 ### `two_field_retarded_family_closure_note_2026-04-10`

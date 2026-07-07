@@ -1503,7 +1503,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
-| `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -6584,13 +6584,15 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 
 - **Note:** [`FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md`](../../docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md)
 - **claim_type:** `open_gate`
-- **claim_scope:** Audited the open-gate map: the finite C3 algebra and J_cs-silent-on-r negative are supported, but the physical readout/carrier/basepoint identification is an unclosed named identification.
+- **claim_scope:** Audited only the finite C3 algebra support and the bookkeeping identification that the readout, carrier, and basepoint choices are one open gate; not a derivation of the physical charged-lepton flavor observable.
 - **audit_status:** ~~audited_renaming~~
 - **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-flavor_readout_gate_equals_carrier_identification_2026-05-31-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The readout gate, generation-carrier identification, and zero-section/basepoint pick are asserted to be the same single remaining physical carrier/basepoint premise.  _(class `F`)_
-- **chain closes:** False — The runner verifies the finite algebraic facts, including the fixed line, transverse-doublet Lefschetz values, and J_cs commutation/silence on r. It does not derive the physical carrier/readout/basepoint bridge from baseline or retained inputs; it names that bridge as the remaining gate.
-- **rationale:** Issue: the load-bearing gate-collapse step identifies three existing open choices rather than deriving the physical observable bridge. Why this blocks: the algebra supports the negative that J_cs does not select r, but it does not force the intensive 2/9 readout as the charged-lepton flavor observable over the extensive index. Repair target: a retained bridge theorem deriving the carrier, readout, and z=0 basepoint selection from baseline/retained inputs. Claim boundary until fixed: the note may record the finite algebra and the single named open gate, not a retained derivation of the physical flavor observable.
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-flavor_readout_gate_equals_carri-16`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The readout gate, generation-carrier identification, and zero-section/basepoint pick are the same single remaining physical carrier/basepoint premise, not an independently derived closure.  _(class `F`)_
+- **chain closes:** False — The finite algebraic negatives close, including the fixed-line result and J_cs silence on r. The asserted equality of the three gates is an identification/renaming of open premises, and the packet does not derive the physical carrier/basepoint premise from baseline plus retained inputs.
+- **rationale:** The runner performs real finite algebra checks, but the row's load-bearing disposition is not a first-principles derivation of the observable. Its central move is to identify three named unresolved choices as one remaining gate, which is class F rather than class C. The note correctly scopes itself as open_gate and forbids retained-derivation use, so the proper audit disposition is renaming/open-gate bookkeeping rather than clean closure.
+- **open / conditional deps cited:**
+  - `FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md`
 - **auditor confidence:** high
 
 ### `flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02`

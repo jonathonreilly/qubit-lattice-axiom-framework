@@ -3,7 +3,7 @@
     "critical": 426,
     "high": 273,
     "leaf": 777,
-    "medium": 541
+    "medium": 540
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -21697,33 +21697,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_lepton_mass_scale_mw_over_256_empirical_open_gate.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
-      "blocker": null,
-      "claim_id": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Conditional bounded coefficient bookkeeping for YT_WARD Step 3: under SAME-1PI as a supplied premise, C_A = C_B gives c_S * g_bare^2 = 2 / N_iso, while without SAME-1PI the exact residual (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso) and the g_bare=2 counterexample show non-identity.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_ward_identity_derivation_theorem",
-        "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
-        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
-        "native_gauge_closure_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.822,
-      "note_path": "docs/YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "non_terminal_conditional",
-      "ready": true,
-      "runner_path": "scripts/yt_ward_step3_same_1pi_construction_2026_05_10.py",
-      "transitive_descendants": 4
     },
     {
       "audit_independence_required": "any_non_self",
@@ -59886,6 +59859,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 243,
-  "total_pending": 2017
+  "ready_count": 242,
+  "total_pending": 2016
 }

@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 192 |
 | **retained_no_go** | 194 |
-| **retained_bounded** | 882 |
+| **retained_bounded** | 883 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
 | unaudited | 1975 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 28 |
+| ~~audited_conditional~~ | 27 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1258 |
-| `audited_conditional` | 28 |
+| `audited_clean` | 1259 |
+| `audited_conditional` | 27 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
@@ -1400,6 +1400,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
@@ -1429,7 +1430,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
-| `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
@@ -19653,15 +19653,13 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 
 - **Note:** [`YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional bounded coefficient bookkeeping for YT_WARD Step 3: under SAME-1PI as a supplied premise, C_A = C_B gives c_S * g_bare^2 = 2 / N_iso, while without SAME-1PI the exact residual (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso) and the g_bare=2 counterexample show non-identity.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-gpt5.5-2026-07-07`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Under SAME-1PI, Rep A and Rep B are supplied as two complete representations of the same projected amputated 1PI Green's function, so C_A = C_B gives c_S * g_bare^2 = 2 / N_iso; without that premise the residual is not identically zero.  _(class `A`)_
-- **chain closes:** False — The displayed coefficient algebra closes, and an independent check reproduces the residual, canonical reduction, gate equation, and SU(3) singlet coefficient. The audit chain does not close because YT_WARD_IDENTITY_DERIVATION_THEOREM is still unaudited and SAME-1PI is an explicit supplied bridge rather than a retained theorem.
-- **rationale:** Issue: the exact algebra is conditional on SAME-1PI and on the one-hop YT_WARD identity source, whose ledger status is still unaudited. Why this blocks: the row may state the coefficient residual and the with-premise gate, but retained-grade closure cannot treat the same-1PI bridge or the unaudited Ward-identity source as established. Repair target: first audit YT_WARD_IDENTITY_DERIVATION_THEOREM to retained grade, then supply and audit a Wick-level SAME-1PI bridge showing the OGE contraction and H_unit decomposition are the same projected amputated 1PI Green's function. Claim boundary until fixed: the residual/no-equality branch and the with-SAME-1PI coefficient bookkeeping may be cited only with SAME-1PI named as a supplied premise.
-- **open / conditional deps cited:**
-  - `YT_WARD_IDENTITY_DERIVATION_THEOREM.md`
+- **claim_scope:** Bounded coefficient-bookkeeping theorem: if SAME-1PI is supplied as an antecedent, C_A=C_B gives c_S*g_bare^2=2/N_iso and hence g_bare^2=1 on the N_iso=2, c_S=+1 surface; without that antecedent, the exact residual and g_bare=2 counterexample show no symbolic equality.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt5.5-xhigh-2026-07-07-reaudit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under SAME-1PI, equating C_A = c_S*g_bare^2/(2*N_c) and C_B = 1/(N_c*N_iso) gives c_S*g_bare^2 = 2/N_iso; without SAME-1PI the residual remains (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso).  _(class `A`)_
+- **chain closes:** True — The direct dependencies are now retained-grade or retained-bounded, and the target note does not ask the audit lane to derive SAME-1PI. At the stated bounded conditional scope, the displayed coefficient formulas reduce exactly to the gate equation under the antecedent and to the nonzero residual off it.
+- **rationale:** The source note is clean at its narrowed bounded scope: it treats SAME-1PI as a named supplied antecedent, not a derived bridge or accepted premise, and it explicitly preserves the no-equality residual branch without that antecedent. The runner checks the note boundary, coefficient formulas, displayed residuals, SU(3) Fierz coefficient, and H_unit normalization; an independent exact projection check reproduced the -1/6 singlet coefficient, residual (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso), canonical residual (g_bare^2 - 1)/6, and g_bare=2 residual 1/2. Residual risk is downstream citation widening: the gate equation and g_bare^2=1 surface must remain cited only under SAME-1PI.
 - **auditor confidence:** high
 
 ### `yt_zero_import_chain_note`

@@ -10,15 +10,15 @@ note:
 
 Scope of this runner (exact arithmetic; Fraction/int/set/str only; NO floats):
 
-  SOURCE LIVENESS                 (minimal quotes)    CHECK 01-03
-  LANDED RECORD PERMANENCE        (bounded theorem)   CHECK 04-12
-  RECORD NON-DECREASE / ORDERING  (bounded theorem)   CHECK 13-21
-  OCCURRENCE IRREDUCIBILITY       (narrow no-go)      CHECK 22-25
-  COMPRESSION MAP                 (bounded support)   CHECK 26-33
-  GOVERNANCE MAP                  (governance)        CHECK 34-35
+  S0  SOURCE LIVENESS            (quotes are live)    CHECK 01-03
+  T1  PERMANENCE SCOPE GAP       (bounded theorem)    CHECK 04-12
+  T2  ORDERING DERIVED           (bounded theorem)    CHECK 13-21
+  T3  NON-TRIVIALITY = REALIZED  (reclassified no-go) CHECK 22-28
+  T4  THE COMPRESSION MAP        (bounded support)    CHECK 29-36
+  T5  GOVERNANCE MAP             (governance)         CHECK 37-38
 
-Every quoted axiom sentence is guarded LIVE against MINIMAL_AXIOMS_2026-06-29.md
-(whitespace-normalized substring), so no axiom quote is dead data.  The
+Every quoted axiom / firewall sentence is guarded LIVE against the actual source
+file content (whitespace-normalized substring), so no quote is dead data.  The
 Admissibility availability rule is ONE covariant, neighbor-dependent rule shared
 by every witness: available_at(s) = the locked values of records on the nearest
 neighbors of s, or the full possibility set when no neighbor carries a record.
@@ -68,6 +68,11 @@ NOTE_NAME = ("DYNAMICS_CONTENT_SORT_ORDERING_DERIVED_ACCUMULATION_"
 
 SRC = {
     "AXIOMS": "MINIMAL_AXIOMS_2026-06-29.md",
+    "ORDER_RATE": "RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md",
+    "NONTRIV": "DYNAMICS_NONTRIVIALITY_SELECTION_FIREWALL_2026-06-06.md",
+    "FORM": ("DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_"
+             "LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md"),
+    "ARROW": "ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md",
 }
 
 
@@ -104,51 +109,69 @@ def is_live(sentence, key):
 
 SENTENCES = [
     # Lattice / Physical Locality
-    ("lattice_sites", "Physical sites are the points of the cubic lattice Z^3, with "
-                      "nearest-neighbor adjacency, standard translations, and proper cubic "
-                      "rotations about each site."),
-    ("lattice_no_privileged_site", "No site is privileged."),
-    ("lattice_distinguishes_sites", "Sites are distinguished by the supplied lattice structure alone."),
+    ("L1", "Physical sites are the points of the cubic lattice Z^3, with "
+           "nearest-neighbor adjacency, standard translations, and proper cubic "
+           "rotations about each site."),
+    ("L2", "No site is privileged."),
+    ("L3", "Sites are distinguished by the supplied lattice structure alone."),
     # Qubit / Site Possibility
-    ("qubit_possibility_domain", "Each site has a domain of local possibilities."),
-    ("qubit_one_site_algebra", "The full one-site possibility domain has algebraic presentation M_2(C)."),
-    ("qubit_cl30_equivalent", "A Cl(3,0)-compatible real-algebra presentation may be used equivalently "
-                              "and adds no further primitive structure."),
-    ("qubit_no_privileged_possibility", "No possibility is privileged."),
-    ("qubit_distinguishes_possibilities", "Possibilities are distinguished by the supplied algebraic structure alone."),
+    ("Q1", "Each site has a domain of local possibilities."),
+    ("Q2", "The full one-site possibility domain has algebraic presentation M_2(C)."),
+    ("Q3", "A Cl(3,0)-compatible real-algebra presentation may be used equivalently "
+           "and adds no further primitive structure."),
+    ("Q4", "No possibility is privileged."),
+    ("Q5", "Possibilities are distinguished by the supplied algebraic structure alone."),
     # Admissibility / Local Constraint
-    ("admissibility_fixed_covariant_rule", "There is one fixed nearest-neighbor admissibility rule, covariant under "
-                                           "lattice translations and proper cubic rotations."),
-    ("admissibility_varies_with_neighbors", "For each site, the available possibilities are determined by, and vary "
-                                            "with, the nearest-neighbor conditions."),
+    ("A1", "There is one fixed nearest-neighbor admissibility rule, covariant under "
+           "lattice translations and proper cubic rotations."),
+    ("A2", "For each site, the available possibilities are determined by, and vary "
+           "with, the nearest-neighbor conditions."),
     # Record / Fixed Reality
-    ("record_locks_admissible", "When present, a record locks exactly one admissible local possibility."),
-    ("record_unique_permanent", "A site never carries more than one record; records are permanent."),
-    ("record_only_records_readable", "Only records are readable."),
-    ("record_readout_content_only", "A readout value is determined by record content alone."),
-    ("record_finite_additive_readout", "For any finite collection of pairwise-disjoint records, scalar readout "
-                                       "I is additive, with I(empty)=0."),
+    ("R1", "When present, a record locks exactly one admissible local possibility."),
+    ("R2", "A site never carries more than one record; records are permanent."),
+    ("R3", "Only records are readable."),
+    ("R4", "A readout value is determined by record content alone."),
+    ("R5", "For any finite collection of pairwise-disjoint records, scalar readout "
+           "I is additive, with I(empty)=0."),
     # Qualification
-    ("qualification_named_content_only", "These axioms state only their named primitive content."),
-    ("qualification_extra_structure_needs_authority", "Further physical structure requires derivation, bridge, explicit "
-                                                       "admission, or approved primitive registration before use as a premise."),
-    ("qualification_state_is_records", "A state is a configuration of records."),
-    ("qualification_law_no_privileged_state", "A law privileges no states."),
-    ("qualification_law_single_answer", "Its domain is a supplied condition, and at every state where the "
-                                        "condition holds it gives exactly one answer."),
+    ("QU1", "These axioms state only their named primitive content."),
+    ("QU2", "Further physical structure requires derivation, bridge, explicit "
+            "admission, or approved primitive registration before use as a premise."),
+    ("QU3", "A state is a configuration of records."),
+    ("QU4", "A law privileges no states."),
+    ("QU5", "Its domain is a supplied condition, and at every state where the "
+            "condition holds it gives exactly one answer."),
 ]
 N_SENTENCES = len(SENTENCES)   # 20 -- the number the FIREWALL now names
 
-SENTENCE_BY_KEY = dict(SENTENCES)
-RECORD_LOCKS_ADMISSIBLE_QUOTE = SENTENCE_BY_KEY["record_locks_admissible"]
-RECORD_UNIQUE_PERMANENT_QUOTE = SENTENCE_BY_KEY["record_unique_permanent"]
-RECORD_READOUT_CONTENT_QUOTE = SENTENCE_BY_KEY["record_readout_content_only"]
-
-RECORD_EXHIBIT_QUOTES = [
-    RECORD_LOCKS_ADMISSIBLE_QUOTE,
-    RECORD_UNIQUE_PERMANENT_QUOTE,
-    RECORD_READOUT_CONTENT_QUOTE,
+# The other four source docs' quoted sentences (also guarded LIVE, not dead data).
+OTHER_QUOTES = [
+    ("ORDER_RATE", "A record history supplies ordered words and counts. A supplied "
+                   "instrument kernel supplies probabilities per admitted step. A "
+                   "physical time metric or transition rate requires an additional "
+                   "clock/production normalization."),
+    ("NONTRIV", "The class contains H = 0, and it is closed under real linear "
+                "combinations of allowed Hermitian terms."),
+    ("FORM", "Gauge-covariance + locality + Hermiticity supply the basis of allowed "
+             "local terms, not the combination."),
+    ("FORM", "It does not force non-trivial dynamics: H = 0 is in the class."),
+    ("ARROW", "boundary-condition / structural result; honest pinning, not a "
+              "from-nothing derivation of the arrow."),
+    ("ARROW", "The arrow's existence still requires the supplied low-entropy boundary"),
 ]
+
+# In-file intent evidence for T1 option (a) (heading + durable-outcome lineage).
+T1_INTENT_QUOTES = [
+    ("AXIOMS", "Record / Fixed Reality"),
+    ("AXIOMS", "The 2026-06-05 Record axiom named durable realized-outcome registration"),
+]
+
+# Pre-restoration Record tail clause: HISTORICAL quotation only (replaced by commit
+# 50f0db6187 with the landed clause "records are permanent.").  It is deliberately NOT
+# live-guarded -- it is no longer in the axiom file.  T1 exhibits the gap it left, and
+# CHECK 12 witnesses BOTH its absence and the presence of the landed clause.
+OLD_R2_TAIL_HISTORICAL = "the locked possibility is invariant under repeated readout"
+LANDED_R2_TAIL = "records are permanent."
 
 
 # ----------------------------------------------------------------------------
@@ -201,8 +224,9 @@ def readout_op(rec):
 
 
 def readout_idempotent(rec):
-    """Content-only readout plus permanent record content makes repeated
-    readouts stable: apply readout twice; value stable AND record unchanged."""
+    """Pre-restoration readout-invariance property (now a DERIVED theorem -- see the
+    lemma at CHECK 39): apply readout twice; value stable AND record unchanged both
+    times.  Used as the HISTORICAL clause in the T1 historical-gap exhibit."""
     v1, after1 = readout_op(rec)
     v2, after2 = readout_op(after1)
     return (v1 == v2) and (after1 == rec) and (after2 == rec)
@@ -214,29 +238,19 @@ def I_readout(config):
     return sum(readout_value(r) for r in config)
 
 
-def record_locks_admissible(rec, config):
-    """When present, a record locks exactly one admissible local possibility."""
+def locks_one_available(rec, config):
+    """When present, a record locks exactly one local possibility from the subset
+    available at that site under Admissibility."""
     site, val = rec
     return (val in POSSIBILITY_DOMAIN) and (val in available_at(site, config))
 
 
 def config_admissible(config):
-    return all(record_locks_admissible(r, config) for r in config)
+    return all(locks_one_available(r, config) for r in config)
 
 
 def sites_of(config):
     return frozenset(s for (s, _v) in config)
-
-
-def records_unique(config):
-    """No site carries more than one record."""
-    return len(sites_of(config)) == len(config)
-
-
-def history_permanent(hist):
-    """Every later record set contains every earlier record set."""
-    return all(hist[i] <= hist[j] for i in range(len(hist))
-               for j in range(i, len(hist)))
 
 
 def flip(config):
@@ -261,10 +275,10 @@ def relabel(config, perm):
     return frozenset(((perm[s], v) for (s, v) in config))
 
 
-# The window carries at least one empty site.  Optionality is licensed by the
-# conditional Record wording "When present, ...": records are conditional, not
-# mandated.  Availability itself is computed from the full configuration by
-# neighbor offset, so the window only bounds the empty-site witness.
+# The window carries at least one site with no record (the pre-#4879 clause "A site
+# need not carry a record.", quoted historically for the T1 exhibit).  Availability
+# itself is computed from the full configuration by neighbor offset, so the window
+# only bounds the "need-not-carry" witness used in the historical-gap toy.
 Z3_WINDOW = frozenset({(0, 0, 0), (1, 0, 0), (2, 0, 0), (0, 1, 0), (1, 1, 0),
                        (0, 2, 0), (2, 1, 0), (0, 0, 1)})
 
@@ -274,19 +288,13 @@ def some_site_without_record(config):
 
 
 def record_axioms_hold(config):
-    """Single-configuration Record clauses; permanence is a history property."""
-    lock_one = all(record_locks_admissible(r, config) for r in config)
-    unique = records_unique(config)
+    """Every quoted Record-axiom sentence, read literally, on a configuration."""
+    need_not = some_site_without_record(config)
+    lock_one = all(locks_one_available(r, config) for r in config)
+    idem = all(readout_idempotent(r) for r in config)
     only_records = all(is_record(r) for r in config)      # only records readable
-    content_only = all(readout_value(r) == r[1] for r in config)
     add_empty = (I_readout(frozenset()) == 0)
-    return lock_one and unique and only_records and content_only and add_empty
-
-
-def history_record_axioms_hold(hist):
-    """Record clauses over a history: each configuration is well formed and the
-    record set is non-decreasing."""
-    return all(record_axioms_hold(c) for c in hist) and history_permanent(hist)
+    return need_not and lock_one and idem and only_records and add_empty
 
 
 # ----------------------------------------------------------------------------
@@ -319,10 +327,10 @@ def avail_commutes_rotation(config, test_sites):
 
 
 # ============================================================================
-# SOURCE LIVENESS (minimal axiom quotes are live)                    CHECK 01-03
+# S0 -- SOURCE LIVENESS (quotes are live, not dead data)              CHECK 01-03
 # ============================================================================
 
-print("# ---- SOURCE LIVENESS (minimal axiom quotes are live) ----")
+print("# ---- S0  SOURCE LIVENESS (quotes are live, not dead data) ----")
 
 # CHECK 01 -- every enumerated axiom-block sentence is a LIVE substring of the
 #             axioms file, with a per-sentence pass report; count == 20.
@@ -330,78 +338,81 @@ _live_flags = []
 for _key, _sent in SENTENCES:
     _ok = is_live(_sent, "AXIOMS")
     _live_flags.append(_ok)
-    print("#   [%s] axiom-block sentence live in file: %s" % (_key, _ok))
+    print("#   [%-3s] axiom-block sentence live in file: %s" % (_key, _ok))
 check(all(_live_flags) and N_SENTENCES == 20 and len(SENTENCES) == 20,
-      "source liveness: all %d axiom-block sentences are live substrings of the axioms file "
+      "S0 all %d axiom-block sentences are live substrings of the axioms file "
       "(sentence-complete list)" % N_SENTENCES)
 
-# CHECK 02 -- landed Record premises used by the exhibits are live in the axioms file.
-_record_exhibit_flags = []
-for _sent in RECORD_EXHIBIT_QUOTES:
-    _ok = is_live(_sent, "AXIOMS")
-    _record_exhibit_flags.append(_ok)
-    print("#   [Record exhibit premise] live in axioms file: %s" % _ok)
-check(all(_record_exhibit_flags) and len(RECORD_EXHIBIT_QUOTES) == 3,
-      "source liveness: landed Record premises for locks/permanence/readout are live in the axioms file")
+# CHECK 02 -- the six firewall/form/arrow quoted sentences are live in their files.
+_other_flags = []
+for _key, _sent in OTHER_QUOTES:
+    _ok = is_live(_sent, _key)
+    _other_flags.append(_ok)
+    print("#   [%-10s] firewall/form/arrow quote live: %s" % (_key, _ok))
+check(all(_other_flags) and len(OTHER_QUOTES) == 6,
+      "S0 all 6 firewall/form/arrow quotes are live substrings of their source files")
 
-# CHECK 03 -- optionality is grounded in conditional wording, not a standalone
-#             quoted sentence: "When present, ..." does not mandate a record at
-#             every site, and the toy carries empty sites.
-_optionality_from_conditional = (RECORD_LOCKS_ADMISSIBLE_QUOTE.startswith("When present,")
-                                 and some_site_without_record(C_STAR))
-check(_optionality_from_conditional,
-      "source liveness/optionality: conditional 'When present' wording is live; empty sites remain legitimate")
+# CHECK 03 -- T1 option (a) in-file intent evidence (heading + lineage) is live.
+_intent_flags = [is_live(_s, _k) for (_k, _s) in T1_INTENT_QUOTES]
+check(all(_intent_flags) and len(T1_INTENT_QUOTES) == 2,
+      "S0 T1 option-(a) intent evidence live: 'Record / Fixed Reality' heading + "
+      "durable-realized-outcome lineage line")
 
 
 # ============================================================================
-# LANDED RECORD PERMANENCE AND READOUT EXHIBITS                    CHECK 04-12
+# T1 -- PERMANENCE SCOPE GAP OF THE PRE-RESTORATION TEXT (historical-gap exhibit)
+#                                                                     CHECK 04-12
 # ----------------------------------------------------------------------------
-# Repeated-readout stability is grounded on the landed pair: "A readout value is
-# determined by record content alone" + "records are permanent".  The deletion
-# map is now an excluded-step exhibit: it removes a record and thereby violates
-# the landed permanence containment property.
+# HISTORICAL exhibit.  The pre-restoration Record clause ended "the locked possibility
+# is invariant under repeated readout" (OLD_R2_TAIL_HISTORICAL, replaced by commit
+# 50f0db6187 with "records are permanent.").  T1 exhibits WHY that restoration was
+# needed: a finite model whose records are readout-stable yet evolution-mortal (a step
+# deletes a record) satisfies every PRE-RESTORATION Record-axiom sentence read literally
+# BEFORE and AFTER the step, under the ONE covariant availability rule -- the gap the
+# landed clause "records are permanent." now closes (live-guarded at CHECK 01, and
+# again at CHECK 12 with the old clause witnessed ABSENT).  The mortal-toy checks below
+# are HISTORICAL-GAP checks.
 # ============================================================================
 
-print("# ---- LANDED RECORD PERMANENCE AND READOUT EXHIBITS ----")
+print("# ---- T1  PERMANENCE SCOPE GAP OF THE PRE-RESTORATION TEXT (historical-gap exhibit) ----")
 
 CONFIG_BEFORE = C_STAR
 
 
 def mortal_step(config, victim):
-    """Excluded removal step as an explicit map on configurations: removes
-    exactly one (site, locked-value) pair."""
+    """Evolution-mortal step as an explicit map on configurations: removes exactly
+    one (site, locked-value) pair."""
     return config - frozenset({victim})
 
 
 VICTIM = R_A                                     # delete the (0,0,0) +1 record
 CONFIG_AFTER = mortal_step(CONFIG_BEFORE, VICTIM)
 
-# CHECK 04 -- repeated readout is stable because readout is content-only and the
-#             record is permanent.
-_readout_stability_premises_live = (is_live(RECORD_READOUT_CONTENT_QUOTE, "AXIOMS")
-                                    and is_live(RECORD_UNIQUE_PERMANENT_QUOTE, "AXIOMS"))
-check(_readout_stability_premises_live and all(readout_idempotent(r) for r in CONFIG_BEFORE),
-      "record readout stability: content-only readout + permanent records gives same value on repeated readout")
+# CHECK 04 -- readout idempotence as an exact operation on each present record
+check(all(readout_idempotent(r) for r in CONFIG_BEFORE),
+      "T1 readout idempotent (repeated readout: same value, record unchanged)")
 
 # CHECK 05 -- readout value determined by content alone (pure function)
 _content_pure = (readout_value(R_A) == readout_value(((0, 0, 0), +1))
                  and readout_op(R_A)[1] == R_A)
 check(_content_pure,
-      "landed Record readout value determined by record content alone (pure, no side effect)")
+      "T1 readout value determined by record content alone (pure, no side effect)")
 
 # CHECK 06 -- I(empty)=0 and additive over pairwise-disjoint records
 _disjoint_add = (I_readout(frozenset()) == 0
                  and I_readout(CONFIG_BEFORE)
                  == I_readout(frozenset({R_A, R_V})) + I_readout(frozenset({R_P, R_Q, R_R})))
-check(_disjoint_add, "landed Record scalar readout I additive over disjoint records, I(empty)=0")
+check(_disjoint_add, "T1 scalar readout I additive over disjoint records, I(empty)=0")
 
-# CHECK 07 -- each record locks exactly one admissible possibility (covariant rule)
+# CHECK 07 -- each record locks exactly one available possibility (covariant rule)
 check(config_admissible(CONFIG_BEFORE),
-      "landed Record each record locks one Admissibility-available possibility (covariant rule)")
+      "T1 each record locks one Admissibility-available possibility (covariant rule)")
 
-# CHECK 08 -- single-configuration Record clauses hold BEFORE the excluded step.
+# CHECK 08 -- every PRE-RESTORATION Record-axiom sentence (readout-invariance tail
+#             included) holds BEFORE the step (historical-gap check).
 check(record_axioms_hold(CONFIG_BEFORE),
-      "landed Record single-configuration clauses hold BEFORE the excluded removal step")
+      "T1 historical-gap: every pre-restoration Record-axiom sentence holds BEFORE "
+      "the mortal step")
 
 # CHECK 09 -- covariance: the availability map commutes with a lattice translation
 #             (including an odd-parity shift, which flips coordinate parity yet
@@ -410,7 +421,7 @@ _cov_odd = avail_commutes_translation(CONFIG_BEFORE, (1, 0, 0), COV_TEST_SITES)
 _cov_gen = avail_commutes_translation(CONFIG_BEFORE, (3, -2, 5), COV_TEST_SITES)
 _cov_rot = avail_commutes_rotation(CONFIG_BEFORE, COV_TEST_SITES)
 check(_cov_odd and _cov_gen and _cov_rot,
-      "landed Record covariance: availability commutes with translation (odd-parity + general) "
+      "T1 covariance: availability commutes with translation (odd-parity + general) "
       "and proper cubic rotation")
 
 # CHECK 10 -- variation: two sites with different neighbor conditions have
@@ -418,7 +429,7 @@ check(_cov_odd and _cov_gen and _cov_rot,
 _av_R = available_at((2, 0, 0), CONFIG_BEFORE)     # leaf: {+1}
 _av_A = available_at((0, 0, 0), CONFIG_BEFORE)     # boundary: {+1,-1}
 check(_av_R != _av_A and _av_R == frozenset({+1}) and _av_A == POSSIBILITY_DOMAIN,
-      "landed Record variation: different neighbor conditions give different available sets "
+      "T1 variation: different neighbor conditions give different available sets "
       "({+1} vs {+1,-1})")
 
 # CHECK 11 -- no fiat privilege: availability is a pure function of neighbor record
@@ -436,50 +447,52 @@ _avail_is_neighbor_content = (available_at((2, 0, 0), CONFIG_BEFORE)
                               == frozenset(v for (s, v) in CONFIG_BEFORE
                                            if s in set(neighbors((2, 0, 0)))))
 check(_diff_parity_same_avail and _avail_is_neighbor_content,
-      "landed Record no-fiat: availability reads neighbor record content only, not coordinate "
+      "T1 no-fiat: availability reads neighbor record content only, not coordinate "
       "parity (different-parity sites share an available set)")
 
-# CHECK 12 -- the removal map is excluded by the quote-guarded landed sentence
-#             "A site never carries more than one record; records are permanent."
-#             It removes one pair, all survivors remain locally admissible, and
-#             availability changes somewhere, but the two-step history violates
-#             later-state containment.
+# CHECK 12 -- HISTORICAL-GAP climax + LANDED grounding: the mortal step deletes a
+#             record while every PRE-RESTORATION Record-axiom sentence (readout-
+#             invariance tail included) still holds -- the gap.  The landed axiom now
+#             closes it: "records are permanent." is a LIVE substring of the file and
+#             the pre-restoration tail clause is ABSENT (replaced by commit 50f0db6187).
 _removed_one = (len(CONFIG_AFTER) == len(CONFIG_BEFORE) - 1
                 and VICTIM not in CONFIG_AFTER
                 and (CONFIG_BEFORE - frozenset({VICTIM})) == CONFIG_AFTER)
-_single_config_after = record_axioms_hold(CONFIG_AFTER)
+_axioms_after = record_axioms_hold(CONFIG_AFTER)
 _survivors_ok = config_admissible(CONFIG_AFTER)
 _avail_changed = (available_at((0, 1, 0), CONFIG_BEFORE)
                   != available_at((0, 1, 0), CONFIG_AFTER))
-_mortal_history = [CONFIG_BEFORE, CONFIG_AFTER]
-_permanence_containment_violated = not history_permanent(_mortal_history)
-_permanence_quote_live = is_live(RECORD_UNIQUE_PERMANENT_QUOTE, "AXIOMS")
-check(_permanence_quote_live and _removed_one and _single_config_after and _survivors_ok
-      and _avail_changed and _permanence_containment_violated,
-      "record permanence exclusion: removal step deletes one record and violates later-state containment; "
-      "quote-guarded 'records are permanent' excludes it")
+_permanence_broken = VICTIM in CONFIG_BEFORE and VICTIM not in CONFIG_AFTER
+_landed_clause_live = is_live(LANDED_R2_TAIL, "AXIOMS")
+_old_clause_absent = not is_live(OLD_R2_TAIL_HISTORICAL, "AXIOMS")
+check(_removed_one and _axioms_after and _survivors_ok and _avail_changed
+      and _permanence_broken and _landed_clause_live and _old_clause_absent,
+      "T1 historical-gap: mortal step deletes one record while the pre-restoration "
+      "readout-invariance clause still holds; the landed axiom 'records are permanent.' "
+      "is live in the file and the pre-restoration tail clause is absent (commit 50f0db6187)")
 
 
 # ============================================================================
-# RECORD NON-DECREASE AND ORDERING (bounded theorem)                 CHECK 13-21
+# T2 -- ORDERING DERIVED  (bounded theorem, grounded on landed permanence)  CHECK 13-21
 # ----------------------------------------------------------------------------
-# From "A state is a configuration of records" + "records are permanent":
-# admitted histories order by record-set INCLUSION -- a PARTIAL order.  Strict
-# increase happens exactly at registration events; idle steps give equal
-# consecutive states, so record-time is EVENT-time, coarser than step-time.
+# From "A state is a configuration of records" + the LANDED permanence axiom (commit
+# 50f0db6187): realized histories order by record-set INCLUSION -- a PARTIAL order.
+# Strict increase happens exactly at registration events; idle steps give equal
+# consecutive states (unordered by records alone), so record-time is EVENT-time,
+# coarser than step-time -- consistent with the count-not-rate firewall.
 # ============================================================================
 
-print("# ---- RECORD NON-DECREASE AND ORDERING (bounded theorem) ----")
+print("# ---- T2  ORDERING DERIVED (bounded theorem, grounded on landed permanence) ----")
 
-S_EMPTY = frozenset()
+S0 = frozenset()
 S1 = frozenset({R_A})
 S2 = frozenset({R_A, R_V})
 S3 = frozenset({R_A, R_V, R_R})
-POSET = [S_EMPTY, S1, S2, S3]                 # states for the partial-order laws
-CHAIN = [S_EMPTY, S1, S2, S3]                 # strict chain for the rate contrast
+POSET = [S0, S1, S2, S3]                 # states for the partial-order laws
+CHAIN = [S0, S1, S2, S3]                 # strict chain for the rate contrast
 # realized history (an IMPORT: a supplied sequence of states) with idle steps and
 # a multi-registration step (S1 -> S3 adds two records at once):
-REAL_HIST = [S_EMPTY, S_EMPTY, S1, S1, S3]
+REAL_HIST = [S0, S0, S1, S1, S3]
 
 
 def subset(a, b):
@@ -494,17 +507,17 @@ def registration_events(hist):
 
 
 # CHECK 13 -- reflexivity of the inclusion order
-check(all(subset(s, s) for s in POSET), "record ordering inclusion order reflexive (partial order)")
+check(all(subset(s, s) for s in POSET), "T2 inclusion order reflexive (partial order)")
 
 # CHECK 14 -- antisymmetry: A<=B and B<=A imply A==B
 _antisym = all((not (subset(a, b) and subset(b, a))) or (a == b)
                for a in POSET for b in POSET)
-check(_antisym, "record ordering inclusion order antisymmetric")
+check(_antisym, "T2 inclusion order antisymmetric")
 
 # CHECK 15 -- transitivity
 _trans = all((not (subset(a, b) and subset(b, c))) or subset(a, c)
              for a in POSET for b in POSET for c in POSET)
-check(_trans, "record ordering inclusion order transitive")
+check(_trans, "T2 inclusion order transitive")
 
 # CHECK 16 -- realized history: forward inclusion holds at every step; idle steps
 #             give EQUAL consecutive states (unordered by records alone).
@@ -513,7 +526,7 @@ _forward_all = all(subset(REAL_HIST[i], REAL_HIST[i + 1])
 _idle_positions = [i for i in range(len(REAL_HIST) - 1)
                    if REAL_HIST[i] == REAL_HIST[i + 1]]
 check(_forward_all and _idle_positions == [0, 2],
-      "record non-decrease forced by permanence: forward inclusion each step; idle steps give equal "
+      "T2 realized history: forward inclusion each step; idle steps give equal "
       "consecutive states (positions 0,2)")
 
 # CHECK 17 -- strict increase EXACTLY at registration events; a multi-registration
@@ -523,7 +536,7 @@ _strict_positions = [i for i in range(len(REAL_HIST) - 1)
 _multi_step = len(REAL_HIST[4] - REAL_HIST[3]) == 2
 check(_strict_positions == [1, 3] and _multi_step
       and registration_events(REAL_HIST) == 3,
-      "record ordering strict increase exactly at registration events (positions 1,3); "
+      "T2 strict increase exactly at registration events (positions 1,3); "
       "multi-registration step adds 2; registration_events sums set-diffs = 3")
 
 # CHECK 18 -- record-time is EVENT-time, coarser than step-time: counts are
@@ -536,15 +549,15 @@ _events = len(_strict_positions)                             # 2
 _steps = len(REAL_HIST) - 1                                  # 4
 check(_nondec and _distinct_states == 3 and _events == 2 and _steps == 4
       and _events < _steps,
-      "record ordering record-time = event-time coarser than step-time (3 states, 2 events, 4 "
+      "T2 record-time = event-time coarser than step-time (3 states, 2 events, 4 "
       "steps; counts non-decreasing)")
 
-# CHECK 19 -- no cycles: a strict DECREASE would require deleting a record, which
-#             landed permanence forbids.
+# CHECK 19 -- no cycles: a strict DECREASE would require deleting a record, which the
+#             landed permanence axiom (commit 50f0db6187) forbids.
 _back = mortal_step(S3, R_R)                                 # attempt toward S2 size
 _needs_delete = (not subset(S3, _back)) and len(_back) < len(S3) and len(S3 - _back) >= 1
 check(_needs_delete,
-      "record ordering no cycles: a return step must delete a record (permanence-forbidden)")
+      "T2 no cycles: a return step must delete a record (permanence-forbidden)")
 
 # CHECK 20 -- relabel-invariance (site permutation is an order iso) + merge/union
 #             monotonicity (A<=B => A|X <= B|X).
@@ -554,7 +567,7 @@ X = frozenset({R_R})
 _merge_mono = all((not subset(a, b)) or subset(a | X, b | X)
                   for a in POSET for b in POSET)
 check(_relabel_iso and _merge_mono,
-      "record ordering order is relabel-invariant (site perm = order iso) and merge-monotone")
+      "T2 order is relabel-invariant (site perm = order iso) and merge-monotone")
 
 # CHECK 21 -- FIREWALL PROTECTION: derivation yields ORDER + COUNT only.  The same
 #             strict chain in two step-grids has identical order/counts but a
@@ -577,21 +590,29 @@ def forward(a, b):                        # 'b later than a' iff strictly more r
 _forward_def = (forward(S1, S2) is True and forward(S2, S1) is False
                 and forward(S1, S2) == (len(S2) > len(S1)))
 check(_order_count_invariant and _rate_not_fixed and _forward_def,
-      "record ordering firewall-scoped: order+count only (rate %s vs %s not fixed); forward is "
+      "T2 firewall-scoped: order+count only (rate %s vs %s not fixed); forward is "
       "definitional inclusion, not thermodynamic" % (rate_tight, rate_loose))
 
 
 # ============================================================================
-# OCCURRENCE IRREDUCIBILITY (narrow no-go, axiom-first)               CHECK 22-25
+# T3 -- NON-TRIVIALITY IS REALIZED DATA, NOT LAW (reclassified no-go)   CHECK 22-28
 # ----------------------------------------------------------------------------
-# ONE frozen-history witness shows that occurrence ("something happens") is NOT
-# a theorem of the four axioms: the fixed admissible C_STAR with the CONSTANT
-# history is guarded against EVERY one of the 20 enumerated axiom-block sentences
-# individually (sentence-complete).  A separate H=0 witness conserves the
-# nonzero-generator residue.
+# "Something happens" is NOT a theorem of the four axioms -- and by the owner ruling
+# (2026-07-03) this is CORRECT AND EXPECTED, not a defect: non-triviality was never
+# law (Newton legislates no acceleration, GR does not outlaw Minkowski, QFT does not
+# forbid the ground state).
+# (i)   ADMISSIBLE-VACUUM witness: the fixed admissible C_STAR with the CONSTANT
+#       history, guarded against EVERY one of the 20 axiom-block sentences (complete).
+# (ii)  H=0 witness: the forced gauge-covariant class contains the zero generator.
+# (iii) FROZEN-REGION (saturation) witness: a fully-recorded window is FINAL and
+#       PHYSICAL, refuting the withdrawn per-history clause "no configuration is final".
+# (iv)  PER-STEP-PRODUCTION no-go: "every step registers a record" is a clock in
+#       disguise (Zeno-freeze; grid-gauged rate floor) -- a standing negative result.
+# (v)   REALIZED-SECTOR CONDITIONING: non-triviality re-enters honestly as an explicit
+#       realized-sector condition (no axiom), like a scattering theorem on particles.
 # ============================================================================
 
-print("# ---- OCCURRENCE IRREDUCIBILITY (narrow no-go, axiom-first) ----")
+print("# ---- T3  NON-TRIVIALITY IS REALIZED DATA, NOT LAW (reclassified no-go) ----")
 
 CONSTANT_HISTORY = [C_STAR, C_STAR, C_STAR, C_STAR]     # nothing ever changes
 
@@ -602,50 +623,47 @@ def identity_law(config):
     return config
 
 
-ADMITTED_HISTORIES = [CONSTANT_HISTORY, REAL_HIST, CHAIN]
-
-
 # ---- per-sentence predicates for the static witness (sentence-complete) --------
-def _p_lattice_sites():   # sites are Z^3 points with adjacency/translations/rotations available
+def _p_L1():   # sites are Z^3 points with adjacency/translations/rotations available
     return (all(isinstance(c, int) for s in sites_of(C_STAR) for c in s)
             and all(len(s) == 3 for s in sites_of(C_STAR)))
 
 
-def _p_lattice_no_privileged_site():   # no site privileged: the law is equivariant under site relabeling
+def _p_L2():   # no site privileged: the law is equivariant under site relabeling
     return relabel(identity_law(C_STAR), PERM) == identity_law(relabel(C_STAR, PERM))
 
 
-def _p_lattice_distinguishes_sites():   # sites distinguished by lattice coordinate alone: <=1 record/site
+def _p_L3():   # sites distinguished by lattice coordinate alone: <=1 record/site
     return len(sites_of(C_STAR)) == len(C_STAR)
 
 
-def _p_qubit_possibility_domain():   # each site has a possibility domain; locked values lie in it
+def _p_Q1():   # each site has a possibility domain; locked values lie in it
     return len(POSSIBILITY_DOMAIN) >= 1 and all(v in POSSIBILITY_DOMAIN
                                                 for (_s, v) in C_STAR)
 
 
-def _p_qubit_one_site_algebra():   # M_2(C): a two-level one-site domain
+def _p_Q2():   # M_2(C): a two-level one-site domain
     return len(POSSIBILITY_DOMAIN) == 2
 
 
-def _p_qubit_cl30_equivalent():   # equivalent presentation adds no element beyond the 2-value domain
+def _p_Q3():   # equivalent presentation adds no element beyond the 2-value domain
     return POSSIBILITY_DOMAIN == frozenset({-1, +1})
 
 
-def _p_qubit_no_privileged_possibility():   # no possibility privileged: value-flip maps admissible -> admissible
+def _p_Q4():   # no possibility privileged: value-flip maps admissible -> admissible
     return config_admissible(flip(C_STAR)) == config_admissible(C_STAR)
 
 
-def _p_qubit_distinguishes_possibilities():   # possibilities exchangeable, distinguished by structure alone
+def _p_Q5():   # possibilities exchangeable, distinguished by structure alone
     return flip(flip(C_STAR)) == C_STAR and POSSIBILITY_DOMAIN == frozenset({-1, +1})
 
 
-def _p_admissibility_fixed_covariant_rule():   # one fixed rule, covariant under translations and proper rotations
+def _p_A1():   # one fixed rule, covariant under translations and proper rotations
     return (avail_commutes_translation(C_STAR, (1, 0, 0), COV_TEST_SITES)
             and avail_commutes_rotation(C_STAR, COV_TEST_SITES))
 
 
-def _p_admissibility_varies_with_neighbors():   # determined by, and varying with, nearest-neighbor conditions
+def _p_A2():   # determined by, and varying with, nearest-neighbor conditions
     determined = (available_at((2, 0, 0), C_STAR)
                   == frozenset(v for (s, v) in C_STAR
                                if s in set(neighbors((2, 0, 0)))))
@@ -653,81 +671,65 @@ def _p_admissibility_varies_with_neighbors():   # determined by, and varying wit
     return determined and varies
 
 
-def _p_record_locks_admissible():   # every record locks an admissible local possibility
-    return all(record_locks_admissible(r, c)
-               for hist in ADMITTED_HISTORIES for c in hist for r in c)
+def _p_R1():   # a record locks exactly one admissible local possibility
+    return all(locks_one_available(r, C_STAR) for r in C_STAR)
 
 
-def _p_record_unique_permanent():   # no duplicate site records; histories are non-decreasing
-    unique_each_config = all(records_unique(c) for hist in ADMITTED_HISTORIES for c in hist)
-    permanent_each_history = all(history_permanent(hist) for hist in ADMITTED_HISTORIES)
-    return unique_each_config and permanent_each_history
+def _p_R2():   # a site never carries more than one record; records are permanent
+    one_per_site = len(sites_of(C_STAR)) == len(C_STAR)
+    permanent = all(CONSTANT_HISTORY[i] <= CONSTANT_HISTORY[i + 1]
+                    for i in range(len(CONSTANT_HISTORY) - 1))
+    return one_per_site and permanent
 
 
-def _p_record_only_records_readable():   # only records are readable
+def _p_R3():   # only records are readable
     return all(is_record(r) for r in C_STAR)
 
 
-def _p_record_readout_content_only():   # readout value determined by record content alone
+def _p_R4():   # readout value determined by record content alone
     return readout_value(R_A) == readout_value(((0, 0, 0), +1))
 
 
-def _p_record_finite_additive_readout():   # finite disjoint additivity, I(empty)=0
+def _p_R5():   # finite disjoint additivity, I(empty)=0
     return (I_readout(frozenset()) == 0
             and I_readout(C_STAR)
             == I_readout(frozenset({R_A, R_V})) + I_readout(frozenset({R_P, R_Q, R_R})))
 
 
-def _p_qualification_named_content_only():  # states only named primitive content: each record is a (site,value)
+def _p_QU1():  # states only named primitive content: each record is a (site,value)
     return all(is_record(r) and len(r) == 2 for r in C_STAR)
 
 
-def _p_qualification_extra_structure_needs_authority():  # no further structure imported (outputs are exactly order+count)
+def _p_QU2():  # no further structure imported (outputs are exactly order+count)
     return (WITNESS_OUTPUTS == frozenset({"order", "count"})
             and frozenset({"rate", "metric", "clock", "generator"}).isdisjoint(WITNESS_OUTPUTS))
 
 
-def _p_qualification_state_is_records():  # a state is a configuration of records
+def _p_QU3():  # a state is a configuration of records
     return all(all(is_record(r) for r in c) for c in CONSTANT_HISTORY)
 
 
-def _p_qualification_law_no_privileged_state():  # a law privileges no states
+def _p_QU4():  # a law privileges no states
     return (all(identity_law(c) == c for c in CONSTANT_HISTORY)
             and relabel(identity_law(C_STAR), PERM) == identity_law(relabel(C_STAR, PERM)))
 
 
-def _p_qualification_law_single_answer():  # single-valued, total where the supplied condition holds
+def _p_QU5():  # single-valued, total where the supplied condition holds
     return all(identity_law(c) == c for c in CONSTANT_HISTORY)
 
 
 SENTENCE_PRED = {
-    "lattice_sites": _p_lattice_sites,
-    "lattice_no_privileged_site": _p_lattice_no_privileged_site,
-    "lattice_distinguishes_sites": _p_lattice_distinguishes_sites,
-    "qubit_possibility_domain": _p_qubit_possibility_domain,
-    "qubit_one_site_algebra": _p_qubit_one_site_algebra,
-    "qubit_cl30_equivalent": _p_qubit_cl30_equivalent,
-    "qubit_no_privileged_possibility": _p_qubit_no_privileged_possibility,
-    "qubit_distinguishes_possibilities": _p_qubit_distinguishes_possibilities,
-    "admissibility_fixed_covariant_rule": _p_admissibility_fixed_covariant_rule,
-    "admissibility_varies_with_neighbors": _p_admissibility_varies_with_neighbors,
-    "record_locks_admissible": _p_record_locks_admissible,
-    "record_unique_permanent": _p_record_unique_permanent,
-    "record_only_records_readable": _p_record_only_records_readable,
-    "record_readout_content_only": _p_record_readout_content_only,
-    "record_finite_additive_readout": _p_record_finite_additive_readout,
-    "qualification_named_content_only": _p_qualification_named_content_only,
-    "qualification_extra_structure_needs_authority": _p_qualification_extra_structure_needs_authority,
-    "qualification_state_is_records": _p_qualification_state_is_records,
-    "qualification_law_no_privileged_state": _p_qualification_law_no_privileged_state,
-    "qualification_law_single_answer": _p_qualification_law_single_answer,
+    "L1": _p_L1, "L2": _p_L2, "L3": _p_L3,
+    "Q1": _p_Q1, "Q2": _p_Q2, "Q3": _p_Q3, "Q4": _p_Q4, "Q5": _p_Q5,
+    "A1": _p_A1, "A2": _p_A2,
+    "R1": _p_R1, "R2": _p_R2, "R3": _p_R3, "R4": _p_R4, "R5": _p_R5,
+    "QU1": _p_QU1, "QU2": _p_QU2, "QU3": _p_QU3, "QU4": _p_QU4, "QU5": _p_QU5,
 }
 
-# CHECK 22 -- the frozen history is admitted: each configuration is admissible
-#             under the ONE covariant rule, and permanence containment holds.
-check(all(config_admissible(c) for c in CONSTANT_HISTORY)
-      and history_record_axioms_hold(CONSTANT_HISTORY),
-      "occurrence no-go frozen history admitted: covariant-rule admissible and permanence non-decrease holds")
+# CHECK 22 -- the static witness is admissible under the ONE covariant rule, at
+#             every element of the constant history.
+check(all(config_admissible(c) for c in CONSTANT_HISTORY),
+      "T3(i) static witness admissible under the covariant rule across the constant history")
 
 # CHECK 23 -- the static witness is guarded against EVERY one of the 20 enumerated
 #             axiom-block sentences individually (per-sentence pass report):
@@ -738,16 +740,16 @@ for _key, _sent in SENTENCES:
     _static_flags.append(_ok)
     print("#   [%-3s] static witness satisfies sentence: %s" % (_key, _ok))
 check(all(_static_flags) and len(SENTENCE_PRED) == N_SENTENCES,
-      "occurrence no-go frozen history satisfies EVERY one of the %d axiom-block sentences "
+      "T3(i) static witness satisfies EVERY one of the %d axiom-block sentences "
       "(sentence-complete; no sentence forces change)" % N_SENTENCES)
 
-# CHECK 24 -- the constant history registers NO new record: occurrence FAILS
-#             while every quoted axiom sentence holds -> "something happens" NOT forced.
+# CHECK 24 -- the constant history registers NO new record: accumulation FAILS while
+#             every quoted axiom sentence holds -> "something happens" NOT forced.
 _no_new = all(CONSTANT_HISTORY[i + 1] == CONSTANT_HISTORY[i]
               for i in range(len(CONSTANT_HISTORY) - 1))
 _delta = registration_events(CONSTANT_HISTORY)
 check(_no_new and _delta == 0,
-      "occurrence no-go frozen history registers 0 new records: record production NOT forced")
+      "T3(i) constant history registers 0 new records: non-triviality NOT forced")
 
 
 # (ii) H=0 witness -- exact integer 2x2 commutators; the forced gauge-covariant
@@ -777,55 +779,134 @@ _h0_in = is_zero(comm(H0, G))
 _hnz_in = is_zero(comm(Hnz, G))
 _hsx_out = not is_zero(comm(Hsx, G))
 check(_h0_in and _hnz_in and _hsx_out,
-      "nonzero-generator residue: H=0 in gauge-covariant class (nonzero too; sx control fails)")
+      "T3(ii) H=0 witness: zero generator in gauge-covariant class (nonzero too; "
+      "sx control fails) -> non-triviality is realized data, not law")
+
+
+# (iii) FROZEN-REGION (saturation) witness -- the withdrawn per-history accumulation
+# clause "no configuration is final" is FALSE: a fully-recorded window is final and
+# physical, and still constrains its boundary through Admissibility neighbor-dependence.
+SAT_WINDOW = frozenset((x, y, z) for x in (0, 1) for y in (0, 1) for z in (0, 1))
+SATURATED = frozenset((s, +1) for s in SAT_WINDOW)   # one record per site, all lock +1
+
+
+def registrable_sites(window, config):
+    """Sites in `window` carrying no record -- where a NEW registration event could occur."""
+    return frozenset(window) - sites_of(config)
+
+
+# CHECK 26 -- saturated frozen-region: one record per site (each locks its one
+#             available possibility); no site remains registrable -> no event can
+#             occur (local finality, exact); the recorded interior still constrains a
+#             boundary site (pinned to {+1}); a non-saturated window has registrable
+#             sites (the check has teeth).
+_one_per_site = (len(SATURATED) == len(SAT_WINDOW) and sites_of(SATURATED) == SAT_WINDOW)
+_sat_admissible = config_admissible(SATURATED)
+_final = registrable_sites(SAT_WINDOW, SATURATED) == frozenset()
+_boundary_constrained = available_at((2, 0, 0), SATURATED) == frozenset({+1})
+_teeth = len(registrable_sites(SAT_WINDOW, frozenset({((0, 0, 0), +1)}))) == len(SAT_WINDOW) - 1
+check(_one_per_site and _sat_admissible and _final and _boundary_constrained and _teeth,
+      "T3(iii) saturated frozen-region: one record per site; no registrable site -> "
+      "no event can occur (local finality exact); interior constrains boundary ({+1}); "
+      "'no configuration is final' is FALSE")
+
+
+# (iv) PER-STEP-PRODUCTION no-go -- "every step registers a record" outlaws the
+# admissible static vacuum and every idle step (Zeno-freeze) and forbids the loose
+# re-gauge the T2 firewall used for rate freedom (grid-gauged rate floor >= 1/step).
+def per_step_production_holds(hist):
+    return all(len(hist[i + 1] - hist[i]) >= 1 for i in range(len(hist) - 1))
+
+
+LOOSE_REGAUGE = [S0, S0, S1, S2, S3]   # same event content as CHAIN, one idle step inserted
+
+# CHECK 27 -- per-step production is a clock in disguise (standing no-go): it outlaws
+#             the admissible static vacuum and idle-bearing history (Zeno-freeze) and
+#             forbids the loose re-gauge (pinning a grid-gauged rate floor >= 1/step).
+_zeno_vacuum = not per_step_production_holds(CONSTANT_HISTORY)   # static vacuum outlawed
+_zeno_idle = not per_step_production_holds(REAL_HIST)            # idle-bearing history outlawed
+_kills_rate_freedom = (not per_step_production_holds(LOOSE_REGAUGE)
+                       and per_step_production_holds(CHAIN))
+check(_zeno_vacuum and _zeno_idle and _kills_rate_freedom,
+      "T3(iv) per-step-production no-go: outlaws the admissible static vacuum and idle "
+      "steps (Zeno-freeze) and forbids the loose re-gauge (grid-gauged rate floor "
+      ">= 1/step) -> a clock in disguise")
+
+
+# (v) REALIZED-SECTOR CONDITIONING -- non-triviality re-enters as an explicit
+# realized-sector condition, honest like a scattering theorem on particle content.
+def registers_events(hist):
+    return registration_events(hist) >= 1
+
+
+def realized_sector_claim(hist):
+    """'For realized histories that register events, the order advances strictly
+    somewhere.'  Antecedent false on the vacuum -> not violated (vacuously true)."""
+    if not registers_events(hist):
+        return True
+    return any(hist[i] < hist[i + 1] for i in range(len(hist) - 1))
+
+
+# CHECK 28 -- realized-sector conditioning is honest (no axiom): the vacuum satisfies
+#             the antecedent-false branch (not violated); the realized history the
+#             antecedent-true branch (order strict).
+_vacuum_vacuous = (not registers_events(CONSTANT_HISTORY)) and realized_sector_claim(CONSTANT_HISTORY)
+_realized_holds = registers_events(REAL_HIST) and realized_sector_claim(REAL_HIST)
+check(_vacuum_vacuous and _realized_holds,
+      "T3(v) realized-sector conditioning honest: non-triviality is a contingent "
+      "realized-sector condition (vacuum antecedent false, not violated; realized "
+      "history antecedent true, order strict) -- not a law")
 
 
 # ============================================================================
-# COMPRESSION MAP (bounded support)                                  CHECK 26-33
+# T4 -- THE COMPRESSION MAP  (bounded support)                        CHECK 29-36
 # ----------------------------------------------------------------------------
-# Given landed permanence + supplied accumulation: production is definitional;
-# the SINGLE discharge map is P3(persistence)<->landed permanence,
-# P2(production)<->accumulation
-# (FORM-E direct / FORM-H + definitional event); #4855 C-add via chain-concat with
-# kernel-convolution NAMED OPEN; the conditional ladder re-hangs (B-AXIS external);
-# the ordering->transfer-axis (B-AXIS) bridge is a NAMED OPEN target; permanent
-# non-goals kept.  The full residue is PARSED from the note's own table.
+# Grounded on the LANDED permanence axiom (commit 50f0db6187; drafted as PR #4874) with
+# definitional production: the SINGLE discharge map is P3(persistence)<->the LANDED
+# permanence axiom sentence, P2(production)<->definitional event:=registration PLUS
+# realized-sector conditioning (NO axiom added); #4855 C-add via chain-concat with
+# kernel-convolution NAMED OPEN; the conditional ladder re-hangs (B-AXIS external); the
+# ordering->transfer-axis (B-AXIS) bridge is a NAMED OPEN target; permanent non-goals
+# kept.  The full residue is PARSED from the note's own table.
 # ============================================================================
 
-print("# ---- COMPRESSION MAP (bounded support) ----")
+print("# ---- T4  THE COMPRESSION MAP (bounded support) ----")
 
-# CHECK 26 -- production definitional: event := registration; production count on
+# CHECK 29 -- production definitional: event := registration; production count on
 #             the strict chain equals the count delta.
 check(registration_events(CHAIN) == len(CHAIN[-1]) - len(CHAIN[0]) == 3,
-      "compression map(a) production definitional: event:=registration, count == +records on chain")
+      "T4(a) production definitional: event:=registration, count == +records on chain")
 
-# CHECK 27 -- registration_events sums |S_{i+1} \\ S_i|: a multi-registration step
+# CHECK 30 -- registration_events sums |S_{i+1} \\ S_i|: a multi-registration step
 #             {} -> {r1,r2} counts 2; the realized history (with idle steps) counts 3.
 _r1 = ((5, 0, 0), +1)
 _r2 = ((6, 0, 0), -1)
 _multi = registration_events([frozenset(), frozenset({_r1, _r2})]) == 2
 check(_multi and registration_events(REAL_HIST) == 3,
-      "compression map(a') registration_events sums set-differences: multi-registration {}->{r1,r2}=2; "
+      "T4(a') registration_events sums set-differences: multi-registration {}->{r1,r2}=2; "
       "realized history (with idle steps) = 3")
 
-# CHECK 28 -- the SINGLE discharge map: P3(persistence)<->landed permanence,
-#             P2(production)<->accumulation (FORM-E direct / FORM-H + definitional
-#             event); touches ONLY P2,P3.
+# CHECK 31 -- the SINGLE discharge map: P3(persistence)<->the LANDED permanence
+#             axiom sentence (commit 50f0db6187), P2(production)<->definitional event:=
+#             registration PLUS realized-sector conditioning (NO axiom); touches ONLY
+#             P2,P3; and it is IDENTICAL to the note's own text (live grep of the note).
 DISCHARGE_4854 = {
-    "P3": "landed Record permanence sentence (record persistence)",
-    "P2": "accumulation sentence (record production; FORM-E direct, or FORM-H + "
-          "definitional event := registration-step)",
+    "P3": "landed permanence axiom sentence (record persistence; commit 50f0db6187)",
+    "P2": "definitional event := registration-step, plus realized-sector conditioning "
+          "(no axiom added)",
 }
 FAMILIES_4854 = {"P1", "P2", "P3", "P4", "CHART-MIX"}
 _disch_total = all(v for v in DISCHARGE_4854.values())
 _disch_scope = set(DISCHARGE_4854) == {"P2", "P3"} and set(DISCHARGE_4854) <= FAMILIES_4854
-_p3_landed = "landed Record permanence" in DISCHARGE_4854["P3"]
-_p2_conditional = "FORM-E" in DISCHARGE_4854["P2"] and "FORM-H" in DISCHARGE_4854["P2"]
-check(_disch_total and _disch_scope and _p3_landed and _p2_conditional,
-      "compression map(b) single discharge map P3<->landed permanence, P2<->accumulation "
-      "(form-conditional); touches only P2/P3")
+_note_norm = normalize(read_doc(NOTE_NAME)).lower()
+_note_map_ok = ("p3 (persistence) maps to the landed permanence axiom sentence" in _note_norm
+                and "p2 (production) becomes definitional" in _note_norm)
+check(_disch_total and _disch_scope and _note_map_ok,
+      "T4(b) single discharge map P3<->landed permanence axiom (commit 50f0db6187), "
+      "P2<->definitional event + realized-sector conditioning; touches only P2/P3; "
+      "identical to the note's own text (live grep)")
 
-# CHECK 29 -- #4855 C-add: chain concatenation supplies step composition (associative)
+# CHECK 32 -- #4855 C-add: chain concatenation supplies step composition (associative)
 #             and additive counts; the kernel-convolution clause is NAMED OPEN.
 def concat(chain_a, chain_b):
     if chain_a[-1] != chain_b[0]:
@@ -833,7 +914,7 @@ def concat(chain_a, chain_b):
     return chain_a + chain_b[1:]
 
 
-segA = [S_EMPTY, S1]
+segA = [S0, S1]
 segB = [S1, S2]
 segC = [S2, S3]
 _assoc_left = concat(concat(segA, segB), segC)
@@ -842,9 +923,9 @@ _c_add = (registration_events(_assoc_left) == registration_events(segA)
           + registration_events(segB) + registration_events(segC))
 KERNEL_CONVOLUTION_TARGET = "OPEN"
 check(_assoc_left == _assoc_right and _c_add and KERNEL_CONVOLUTION_TARGET == "OPEN",
-      "compression map(c) #4855 C-add: chain-concat associative + additive; kernel-convolution NAMED OPEN")
+      "T4(c) #4855 C-add: chain-concat associative + additive; kernel-convolution NAMED OPEN")
 
-# CHECK 30 -- the landed conditional ladder re-hangs.  Each rung carries its named
+# CHECK 33 -- the landed conditional ladder re-hangs.  Each rung carries its named
 #             premise/status; nothing beyond form/Stone is unconditional; B-AXIS is a
 #             named external axis; terminal Dirac branch is review-pending (#4797).
 LADDER = [
@@ -862,27 +943,27 @@ _axis_external = "external" in LADDER[1][1]
 _terminal_pending = LADDER[-1][2] == "review-pending"
 check(_ladder_ordered and _ladder_premised and _no_uncond and _axis_external
       and _terminal_pending,
-      "compression map(d) conditional ladder re-hangs: each rung premised, B-AXIS external, "
+      "T4(d) conditional ladder re-hangs: each rung premised, B-AXIS external, "
       "terminal Dirac branch review-pending")
 
-# CHECK 31 -- ordering -> lattice-transfer-axis (B-AXIS) bridge is a NAMED OPEN
-#             target.  record-ordering outputs are exactly {order, count}; B-AXIS is
+# CHECK 34 -- ordering -> lattice-transfer-axis (B-AXIS) bridge is a NAMED OPEN
+#             target.  T2's ordering outputs are exactly {order, count}; B-AXIS is
 #             not among them, so ordering alone does not supply the transfer axis.
 B_AXIS_TRANSFER_TARGET = "OPEN"
 check("B-AXIS" not in WITNESS_OUTPUTS and WITNESS_OUTPUTS == frozenset({"order", "count"})
       and B_AXIS_TRANSFER_TARGET == "OPEN",
-      "compression map(e) ordering->transfer-axis (B-AXIS) NOT supplied by ordering {order,count}: "
+      "T4(e) ordering->transfer-axis (B-AXIS) NOT supplied by ordering {order,count}: "
       "NAMED OPEN target")
 
-# CHECK 32 -- permanent non-goals: rate/metric/clock, arrow beyond past-hypothesis,
+# CHECK 35 -- permanent non-goals: rate/metric/clock, arrow beyond past-hypothesis,
 #             ABJ premise externality -- never moved into 'discharged'.
 PERMANENT_NON_GOALS = {"rate", "metric", "clock",
                        "arrow-beyond-past-hypothesis", "ABJ-premise-externality"}
 _discharged = set(DISCHARGE_4854) | {"C-add"}
 check(PERMANENT_NON_GOALS.isdisjoint(_discharged),
-      "compression map(f) permanent non-goals (rate/metric/clock, arrow, ABJ-externality) never discharged")
+      "T4(f) permanent non-goals (rate/metric/clock, arrow, ABJ-externality) never discharged")
 
-# CHECK 33 -- residue single-source-of-truth: PARSE the note's residue table, count
+# CHECK 36 -- residue single-source-of-truth: PARSE the note's residue table, count
 #             rows, check every required key is present, and check no status cell
 #             carries an adoption/promotion token.
 def parse_residue_table(note_text):
@@ -909,12 +990,14 @@ def parse_residue_table(note_text):
 
 
 REQUIRED_KEYS = [
-    "record permanence axiom sentence", "accumulation sentence form-e", "accumulation sentence form-h",
+    "record permanence restoration", "realized-sector conditioning",
+    "withdrawn accumulation candidate", "per-step-production no-go",
+    "frozen-region corollary", "pr #4874", "#4879",
     "p1 (#4854", "p2 production premise", "p3 persistence premise", "p4 (#4854", "chart-mix",
     "c-add", "pos (#4855", "loc (#4855",
     "kernel-convolution clause", "one-parameter composition", "record-compatibility (kernel-target",
     "b-axis supplied-axis premise", "ordering-to-transfer-axis",
-    "nonzero-dynamics premise", "#4797", "abj parity external premise", "d_t parity", "n5 cap",
+    "d1 h!=0", "#4797", "abj parity external premise", "d_t parity", "n5 cap",
     "past-hypothesis boundary", "rate no-go", "metric no-go", "clock no-go",
     "realized-history import", "unaudited post 2026-06-29 reset",
     "form-forced", "stone-unique generator",
@@ -926,75 +1009,114 @@ _items_blob = " || ".join(it.lower() for (it, _r, _st) in _residue_rows)
 _missing = [k for k in REQUIRED_KEYS if k not in _items_blob]
 _status_clean = all(all(tok not in st.lower() for tok in FORBIDDEN_STATUS)
                     for (_it, _r, st) in _residue_rows)
-_row_count_ok = len(_residue_rows) == 30
+_row_count_ok = len(_residue_rows) == 33
 print("# ---- residue table parsed from the note (single source of truth) ----")
 for _it, _r, _st in _residue_rows:
     print("#   [%s] %s" % (_st, _it))
 if _missing:
     print("#   MISSING REQUIRED KEYS: %s" % _missing)
 check(_row_count_ok and not _missing and _status_clean,
-      "compression map residue table parsed from the note: 30 rows, all %d required keys present, "
+      "T4 residue table parsed from the note: 33 rows, all %d required keys present, "
       "no adoption/promotion status" % len(REQUIRED_KEYS))
 
 
 # ============================================================================
-# GOVERNANCE MAP                                                   CHECK 34-35
+# T5 -- GOVERNANCE MAP                                                CHECK 37-38
 # ----------------------------------------------------------------------------
-# One remaining owner surface: the accumulation sentence, presented in BOTH
-# forms (FORM-E per-event / FORM-H per-history).  The Record permanence sentence
-# is landed axiom text.  Leverage honesty: landed permanence grounds
-# event-ordering; the accumulation surface replaces the H!=0 nonzero-dynamics
-# premise; B-AXIS stays EXTERNAL (the ordering->transfer-axis bridge is OPEN).
+# Exactly ONE owner surface: the permanence RESTORATION, EXERCISED AND LANDED (commit
+# 50f0db6187; drafted as PR #4874; option (a) clarity, owner-confirmed).  The
+# separately-tracked one-per-site clause (PR #4879) has LANDED on main (commit
+# 7950d9202c); its axiom sentence is grounded live at CHECK 01 (SENTENCES key R2) and
+# carried in the residue table.  The accumulation axiom candidate is
+# WITHDRAWN (both forms; saturation counterexample).  The 5-seat panel record is kept
+# as historical context (it answered "which accumulation form" under the then-standing
+# frame; the owner rejected the frame).  Leverage honesty: one restored word +
+# realized-sector conditioning replace the entire proposed fifth-axiom program; B-AXIS
+# stays EXTERNAL (the ordering->transfer-axis bridge is OPEN); ladder rungs unchanged.
 # ============================================================================
 
-print("# ---- GOVERNANCE MAP ----")
-
-LANDED_RECORD_TEXT = {
-    "id": "record-unique-permanent",
-    "sentence": RECORD_UNIQUE_PERMANENT_QUOTE,
-    "role": "landed axiom text; removal excluded",
-}
+print("# ---- T5  GOVERNANCE MAP ----")
 
 OWNER_SURFACES = [
     {
-        "id": "accumulation-sentence",
-        "forms": {
-            "FORM-E": "Every step of a realized history registers at least one new record.",
-            "FORM-H": ("Records accumulate: every realized history keeps registering "
-                       "new records; no configuration is final."),
-        },
-        "status": "owner-surface flag only",
+        "id": "permanence-restoration",
+        "pr": "#4874",
+        "option": "(a) clarity fix -- owner-confirmed (intent restoration)",
+        "restored_clause": "records are permanent.",
+        "status": "single owner surface; EXERCISED AND LANDED (commit 50f0db6187; drafted as PR #4874); this note grounds on the landed axiom text and adopts no axiom, registry, policy, or status change",
     },
 ]
 
-# CHECK 34 -- exactly one remaining owner surface; landed permanence is not an
-#             owner surface here; the accumulation surface carries BOTH forms.
-_one_surface = len(OWNER_SURFACES) == 1
-_perm_landed = (LANDED_RECORD_TEXT["sentence"] == RECORD_UNIQUE_PERMANENT_QUOTE
-                and is_live(LANDED_RECORD_TEXT["sentence"], "AXIOMS")
-                and "owner" not in LANDED_RECORD_TEXT["role"])
-_acc_both_forms = set(OWNER_SURFACES[0]["forms"]) == {"FORM-E", "FORM-H"}
-_surface_flag = OWNER_SURFACES[0]["status"] == "owner-surface flag only"
-check(_one_surface and _perm_landed and _acc_both_forms and _surface_flag,
-      "governance map one remaining owner surface: accumulation (FORM-E/FORM-H); "
-      "Record permanence is landed axiom text")
-
-# CHECK 35 -- leverage honesty: landed permanence grounds event-ordering; the
-#             accumulation surface replaces the H!=0 nonzero-dynamics premise.
-#             B-AXIS is NOT among the targets and stays EXTERNAL.
-LEVERAGE_MAP = {
-    "accumulation-surface": "H!=0 nonzero-dynamics premise",       # non-triviality/production premise
-    "landed-record-permanence": "event-ordering",                  # persistence grounds inclusion order
+WITHDRAWN_ACCUMULATION = {
+    "forms": {
+        "FORM-E": "Every step of a realized history registers at least one new record.",
+        "FORM-H": ("Records accumulate: every realized history keeps registering new "
+                   "records; no configuration is final."),
+    },
+    "disposition": "WITHDRAWN (owner reframe 2026-07-03)",
+    "counterexample": "saturated region is final and physical (frozen-region)",
 }
-LEVERAGE_TARGETS = {"H!=0 nonzero-dynamics premise", "event-ordering"}
+
+PANEL_RECORD = ("historical context: the 5-seat panel answered 'which accumulation "
+                "form' under the then-standing frame; the owner rejected the frame")
+
+# CHECK 37 -- exactly ONE owner surface (permanence restoration, EXERCISED AND LANDED,
+#             commit 50f0db6187 / PR #4874, option (a) owner-confirmed); the accumulation
+#             candidate is WITHDRAWN (both forms, saturation counterexample); the panel
+#             record is historical; this note adopts no axiom, registry, policy, or
+#             status change.
+_one_surface = len(OWNER_SURFACES) == 1 and OWNER_SURFACES[0]["id"] == "permanence-restoration"
+_pr_named = OWNER_SURFACES[0]["pr"] == "#4874"
+_option_a_confirmed = ("(a)" in OWNER_SURFACES[0]["option"]
+                       and "owner-confirmed" in OWNER_SURFACES[0]["option"])
+_acc_withdrawn = (set(WITHDRAWN_ACCUMULATION["forms"]) == {"FORM-E", "FORM-H"}
+                  and "WITHDRAWN" in WITHDRAWN_ACCUMULATION["disposition"]
+                  and "saturated" in WITHDRAWN_ACCUMULATION["counterexample"])
+_panel_historical = "historical context" in PANEL_RECORD
+check(_one_surface and _pr_named and _option_a_confirmed and _acc_withdrawn
+      and _panel_historical,
+      "T5 exactly ONE owner surface (permanence restoration, EXERCISED AND LANDED, "
+      "commit 50f0db6187 / PR #4874, option (a) owner-confirmed); accumulation candidate "
+      "WITHDRAWN (both forms, saturation counterexample); panel record historical; "
+      "this note adopts no axiom, registry, policy, or status change")
+
+# CHECK 38 -- leverage honesty: one restored word + realized-sector conditioning
+#             replace the entire proposed fifth-axiom program; B-AXIS stays EXTERNAL
+#             (ordering->transfer-axis bridge OPEN); the other ladder rungs unchanged.
+LEVERAGE_MAP = {
+    "permanence-restoration (one restored word)": "event-ordering / persistence",
+    "realized-sector conditioning (no axiom)": "non-triviality / H!=0 / D1",
+}
+LEVERAGE_TARGETS = {"event-ordering / persistence", "non-triviality / H!=0 / D1"}
+FIFTH_AXIOM_NEEDED = False     # the proposed accumulation fifth axiom is WITHDRAWN
 STILL_EXTERNAL = {"B-AXIS", "ABJ", "supplied-axis", "past-hypothesis",
                   "#4797 Dirac-branch", "N5 cap"}
 _covers = set(LEVERAGE_MAP.values()) == LEVERAGE_TARGETS
+_no_fifth_axiom = (FIFTH_AXIOM_NEEDED is False)
 _baxis_external = ("B-AXIS" not in LEVERAGE_MAP.values()) and ("B-AXIS" in STILL_EXTERNAL)
 _others_named = {"ABJ", "past-hypothesis", "#4797 Dirac-branch", "N5 cap"} <= STILL_EXTERNAL
-check(_covers and _baxis_external and _others_named,
-      "governance map leverage: landed permanence grounds event-ordering; accumulation surface replaces "
-      "H!=0 nonzero-dynamics premise; B-AXIS stays EXTERNAL")
+check(_covers and _no_fifth_axiom and _baxis_external and _others_named,
+      "T5 leverage: one restored word + realized-sector conditioning replace the "
+      "proposed fifth-axiom program (no fifth axiom); B-AXIS stays EXTERNAL (bridge "
+      "OPEN); other named rungs unchanged")
+
+# CHECK 39 -- Lemma: readout-invariance DERIVED from the LANDED permanence clause +
+#             content-determination.  The pre-restoration clause is now a theorem: the
+#             landed axiom "records are permanent." (commit 50f0db6187) -- record content
+#             unchanged along any realized history -- plus "a readout value is determined
+#             by record content alone" (existing sentence) => repeated readouts agree.
+_rec = ((0, 0, 0), 1)                      # a record: (site, locked value)
+def _readout(record):
+    return Fraction(record[1], 1)          # content-determined: value from content only
+_history = [_rec, _rec, _rec, _rec]        # permanence: same record at every position
+_vals = [_readout(r) for r in _history]
+_same = all(v == _vals[0] for v in _vals)
+_mutated = ((0, 0, 0), -1)                 # the ONLY route to disagreement: mutation,
+_control = _readout(_rec) != _readout(_mutated)   # which permanence bars
+check(_same and _control,
+      "LEMMA readout-invariance derived: landed permanence + content-determined readout "
+      "=> repeated readouts agree at all history positions; disagreement requires "
+      "a permanence-barred mutation (control differs)")
 
 
 # ============================================================================

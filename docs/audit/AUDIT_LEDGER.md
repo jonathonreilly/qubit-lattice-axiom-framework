@@ -1510,7 +1510,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
-| `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -10762,13 +10762,13 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 
 - **Note:** [`LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md`](../../docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Wrapper-level module-interface and implementation-fidelity scope: documented width-6 constants, helper entry points, and the coded w/L^2 propagation factor, with no derivation of the inverse-square kernel or tail law.
+- **claim_scope:** Audited only the wrapper/interface boundary for the 3D inverse-square kernel helper module and the provided runner source's corresponding constants, helper functions, and w/L^2 propagation expression.
 - **audit_status:** ~~audited_renaming~~
 - **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-lattice_3d_inverse_square_kernel_helper_note_2026-04-04-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The wrapper note provides citeable one-hop authority for the width-6 comparator constants and the build_family, barrier_metrics, no_barrier_distance, and fit_power helper functions in scripts/lattice_3d_inverse_square_kernel.py.  _(class `E`)_
-- **chain closes:** True — Within the declared wrapper boundary, the included runner source confirms the documented constants, helper functions, and w/(L*L) propagator factor while preserving the spent-delay action expression. This closes only the interface/documentation claim, not a physics derivation of the kernel or downstream asymptotics.
-- **rationale:** Issue: the load-bearing move is a wrapper/interface declaration, not a derivation from axioms. Why this blocks: downstream use may cite this row for constants and helper names, but not as authority for inverse-square physics or tail statistics. Repair target: a separate retained derivation or implementation-fidelity theorem would be needed to promote the kernel law itself. Claim boundary until fixed: cite only the module interface and coded branch behavior.
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-lattice_3d_inverse_square_kernel-18`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The note records only the helper-module interface: width-6 comparator constants and the build_family/barrier_metrics/no_barrier_distance/fit_power helper names, with no derivation of the inverse-square kernel or downstream tail law.  _(class `E`)_
+- **chain closes:** True — Within the wrapper-only scope, the provided runner source declares the documented constants and helper functions and uses w/(L*L) while preserving the spent-delay action expression. The chain would not close for any stronger claim deriving the inverse-square kernel or tail law, but the note explicitly excludes those claims.
+- **rationale:** The source note's operative move is definitional/interface documentation, not a first-principles physics derivation. The runner source supports that the named constants and helpers exist and that the implementation contains the advertised inverse-square attenuation, but this is an implementation/interface check rather than class (C) closure from framework axioms. Because the note itself narrows the boundary to wrapper support and forbids citation as a derivation or downstream theorem, the restricted claim closes only as a bounded definition-style wrapper.
 - **auditor confidence:** high
 
 ### `lattice_3d_l2_numpy_h0125_audit_note`

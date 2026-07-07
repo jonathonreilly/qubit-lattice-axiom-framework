@@ -340,10 +340,10 @@
       "max_transitive_descendants": 1,
       "nodes": [
         {
-          "audit_status": "unaudited",
+          "audit_status": "audited_clean",
           "claim_id": "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
           "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
+          "effective_status": "retained_pending_chain",
           "note_path": "docs/MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md",
           "title": "Meron Half-Action Algebra Core From Topological Infrastructure",
           "transitive_descendants": 1

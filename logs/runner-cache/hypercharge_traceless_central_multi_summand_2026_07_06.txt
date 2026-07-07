@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/hypercharge_traceless_central_multi_summand_2026_07_06.py
+runner_sha256: 55202c03a20e816b12f7e2f244be8cf3f373da2902cb151a7482d8502a4581cb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.26
+status: ok
+----- stdout -----
+[PASS] block04_no_second_central_u1: quoted text found in source
+[PASS] block04_global_phase_not_traceless: quoted text found in source
+[PASS] block04_r_hypercharge_boundary: quoted text found in source
+[PASS] block06_A3_plus_one: quoted text found in source
+[PASS] block06_A3bar_minus_one: quoted text found in source
+[PASS] block06_pair_sum_zero: quoted text found in source
+[PASS] block06_anomaly_cancel_boundary: quoted text found in source
+[PASS] central_dimensions_N1: N=1 center_dim=1 trace_rank=1 traceless_dim=0
+[PASS] central_dimensions_N2: N=2 center_dim=2 trace_rank=1 traceless_dim=1
+[PASS] central_dimensions_N3: N=3 center_dim=3 trace_rank=1 traceless_dim=2
+[PASS] two_summand_3_plus_3bar_typed_constraints_coincide_dim1_survives: trace_rank=1 mixed_rank=1 combined_rank=1 (constraints COINCIDE) constrained_dim=1 cubic_degenerates_to_same_line=1
+[PASS] summand_fixed_commutant_N2_dim_2: exact nullspace commutant dim=2 = span(Z_1, Z_2)
+[PASS] ast_self_scan: no banned imports or dynamic calls
+DECLARATION premises=minimal_axioms_context; supplied_blocks=block04,block06; no_physical_hypercharge; no_summand_supplier; ANOMALY-CANCEL=supplied_not_derived
+EXACT N=1 center_dim=1 trace_rank=1 traceless_dim=0
+EXACT N=2 center_dim=2 trace_rank=1 traceless_dim=1
+EXACT N=3 center_dim=3 trace_rank=1 traceless_dim=2
+EXACT two_summand trace_rank=1 mixed_rank=1 combined_rank=1 (constraints COINCIDE) constrained_dim=1 cubic_degenerates_to_same_line=1
+TOTAL PASS=13 FAIL=0
+
+----- stderr -----
+

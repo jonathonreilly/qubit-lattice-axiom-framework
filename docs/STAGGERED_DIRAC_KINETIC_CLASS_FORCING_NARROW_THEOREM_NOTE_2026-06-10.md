@@ -43,10 +43,16 @@ row's status.
 - **2026-06-17.** Removed the load-bearing dependency edge to the
   `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
   renaming row. The no-spectator input is now stated directly from the
-  current minimal Quantum axiom's one-site `M₂(C) ~= Cl(3,0)` qubit
+  current minimal Qubit axiom's one-site `M₂(C) ~= Cl(3,0)` qubit
   carrier, the retained Cl(3) Pauli-module classification, and the
   runner's CAR(2) dimension computation. U4 remains provenance context
   only; no audit status or retained-grade promotion is asserted here.
+- **2026-07-03.** Axiom-citation refresh. The load-bearing axiom link
+  (authority 1) now points at the current
+  `MINIMAL_AXIOMS_2026-06-29.md` (Lattice, Qubit, Admissibility,
+  Record), and "Quantum" is renamed "Qubit" throughout to match the
+  current axiom text; the paired runner's source-dependency gate is
+  updated in lockstep. No mathematical content changed.
 
 ## 1. Question
 
@@ -63,7 +69,7 @@ full, what exactly is the irreducible residual?
 
 ## 2. Answer (narrow, with computed sharpness)
 
-**P-SD: yes, on the surviving Dirac branch — it becomes the absorbing-frame theorem.** The current minimal Quantum axiom supplies the per-site
+**P-SD: yes, on the surviving Dirac branch — it becomes the absorbing-frame theorem.** The current minimal Qubit axiom supplies the per-site
 one-qubit carrier `A_x ~= M₂(C) ~= Cl(3,0)`; with the retained Cl(3)
 Pauli-module classification this is the single `C²` site module, not a
 spectator surface. A per-site 2-component spinor would need a faithful
@@ -151,9 +157,9 @@ It is not a claim that no future principle can select `φ = −1`.
 
 Load-bearing (markdown links):
 
-1. [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) —
+1. [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) —
    axiom premise node. License used: Lattice (site set `Z³`, standard
-   translation action, nearest-neighbor cubic adjacency) and Quantum
+   translation action, nearest-neighbor cubic adjacency) and Qubit
    (one-site qubit carrier, `A_x ≅ M₂(C) ≅ Cl(3,0)`). This is the
    load-bearing source for the single primitive local carrier used in
    the no-spectator lemma and K4. Nothing else (no dynamics, no boundary
@@ -162,7 +168,7 @@ Load-bearing (markdown links):
    — License used: the 2-dim faithful complex Cl(3) irreps with Pauli
    realization `γ_μ = σ_μ`; consumed only as the retained
    Pauli-module/classification statement that identifies the minimal
-   Quantum carrier with the single `C²` site module.
+   Qubit carrier with the single `C²` site module.
 3. [`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
    — License used: the finite periodic tensor-product Fock
    surface, local ladder operators, `Q_total`, and the
@@ -180,7 +186,7 @@ Plain-text pointers (NOT load-bearing):
   — audited-renaming/provenance context for older U4 language only.
   This note does not consume U4 as a load-bearing theorem dependency;
   the `C²`/no-spectator input is sourced directly from the current
-  minimal Quantum axiom, the retained Cl(3) classification, and runner
+  minimal Qubit axiom, the retained Cl(3) classification, and runner
   check 10.
 - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
   — declares P-KIN (B2) and P-SD (B3); its Lemmas 2–4
@@ -222,7 +228,7 @@ coefficients, no new axioms.
 
 ### 5.0 Licensing lemma L-EQ (equivariance rubric; declared, B-EQ)
 
-The axiom data (Lattice + Quantum) is invariant under the lattice
+The axiom data (Lattice + Qubit) is invariant under the lattice
 automorphisms `Aut = O ⋉ T` (`T` = translations, `O` = the 24 proper
 cubic rotations; runner check 1 generates `O` from `C4z` and
 `C3[111]`). Any kinetic term constructed from the axiom data WITHOUT an
@@ -287,11 +293,11 @@ case on the unit cube (check 7); exhaustive enumeration of all
 
 ### 5.3 Absorbing-frame theorem (P-SD discharged on the `K1` branch)
 
-**On the minimal Quantum axiom's one-site qubit carrier (authority 1)
+**On the minimal Qubit axiom's one-site qubit carrier (authority 1)
 and Cl(3) classification (authority 2):**
 
 **(i) No-spectator / scalarization forced.** The per-site physical
-space is the single `C²` qubit carrier supplied by the minimal Quantum
+space is the single `C²` qubit carrier supplied by the minimal Qubit
 axiom and identified with the retained Pauli/Cl(3) module by authority
 2. Two independent fermion modes per site (a 2-component spinor) would
 require a faithful CAR(2) module; CAR(2) generates the full `M₄(C)`

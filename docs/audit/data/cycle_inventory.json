@@ -303,10 +303,10 @@
       "max_transitive_descendants": 1,
       "nodes": [
         {
-          "audit_status": "unaudited",
+          "audit_status": "audited_clean",
           "claim_id": "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",
           "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
+          "effective_status": "retained_pending_chain",
           "note_path": "docs/GBARE_ROOT_SU2_SCALE_TRANSPORT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md",
           "title": "g_bare Root-SU2 Scale Transport Bridge",
           "transitive_descendants": 1

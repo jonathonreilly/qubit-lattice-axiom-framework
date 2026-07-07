@@ -153,25 +153,25 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "no_per_site_chirality_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Single-site one-qubit operator algebra M_2(C) with a Pauli Cl(3,0) presentation: no nonzero internal matrix anticommutes with all three generators, hence no gamma_5 with gamma_5^2 = I and no associated internal chirality projectors.",
       "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "minimal_axioms",
         "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 12,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 19.356,
       "note_path": "docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/no_per_site_chirality_check.py",
       "transitive_descendants": 1310

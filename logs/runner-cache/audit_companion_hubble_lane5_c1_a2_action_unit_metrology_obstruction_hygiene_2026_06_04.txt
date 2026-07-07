@@ -1,32 +1,29 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_hubble_lane5_c1_a2_action_unit_metrology_obstruction_hygiene_2026_06_04.py
-runner_sha256: 6660fc0230c8110ba4d860c369532b128eb08519482adc06ebc6870ddb19fbd6
+runner_sha256: 03bfae57596c4ac6d53d0ea2620f1ee7e71111d5b2ba9bc1a8993b1c361ec3d8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 ========================================================================================
 AUDIT COMPANION: HUBBLE LANE 5 (C1) A2 ACTION-UNIT METROLOGY
-OBSTRUCTION -- deps-changed (dep-added) AUDIT-READINESS HYGIENE
+OBSTRUCTION -- CURRENT-SOURCE AUDIT-READINESS HYGIENE
 ========================================================================================
 
 Companion target:
   hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29
 
 Question:
-  Did the parent's substance change since the 2026-05-23 prior
-  conditional verdict, or is the dep-add invalidation a
-  citation-graph catch-up to a dep the prior verdict already
-  named in its reasoning?
+  Does the current parent A2 obstruction source packet still expose
+  the same bounded action-unit metrology boundary, with live row,
+  dependency, cache, and runner surfaces internally aligned?
 
 Answer:
-  Citation-graph catch-up. The added dep
-  `staggered_dirac_realization_gate_note_2026-05-03` was already
-  in the prior verdict's `open_dependency_paths` and
-  `notes_for_re_audit_if_any`, and was already declared in the
-  parent's prose as an admitted-context input. Note hash and
-  runner hash are byte-stable; runner PASS=8 FAIL=0 unchanged.
+  Yes. The parent note hash matches the live ledger row, the
+  parent runner and cache agree on the current PASS=16 FAIL=0
+  source-boundary surface, and the ledger/prose retain the required
+  g_bare, minimal-axiom, and staggered-carrier dependency edges.
 
 ----------------------------------------------------------------------------------------
 (R1) Presence checks for parent note and parent runner
@@ -37,20 +34,20 @@ Answer:
 ----------------------------------------------------------------------------------------
 (R2) Note-hash invariance against current ledger row
 ----------------------------------------------------------------------------------------
-  [PASS] ledger row recorded expected note_hash  (ledger=5708b03f218f... expected=5708b03f218f...)
-  [PASS] on-disk note hash matches ledger note_hash to the byte  (on_disk=5708b03f218f... ledger=5708b03f218f...)
+  [PASS] ledger row records a note_hash field  (ledger=fd69c445d911...)
+  [PASS] on-disk note hash matches ledger note_hash to the byte  (on_disk=fd69c445d911... ledger=fd69c445d911...)
 
 ----------------------------------------------------------------------------------------
-(R3) Parent runner-hash audit-time invariance
+(R3) Parent runner-hash cache alignment
 ----------------------------------------------------------------------------------------
-  [PASS] on-disk parent runner SHA-256 matches expected hash  (on_disk=51df6c191e8d... expected=51df6c191e8d...)
-  [PASS] prior audit snapshot's runner_hash matches expected hash  (snap=51df6c191e8d... expected=51df6c191e8d...)
+  [PASS] cached parent runner log records a runner_sha256
+  [PASS] on-disk parent runner SHA-256 matches cached runner_sha256  (on_disk=46a2cc4082ee... cached=46a2cc4082ee...)
 
 ----------------------------------------------------------------------------------------
 (R4) Re-execution of parent runner + pass-count match
 ----------------------------------------------------------------------------------------
   [PASS] parent runner exits with status 0  (returncode=0)
-  [PASS] parent runner reports TOTAL: PASS=8, FAIL=0  (tail_line='TOTAL: PASS=8, FAIL=0')
+  [PASS] parent runner reports at least 8 passes and zero failures  (tail_line='TOTAL: PASS=16, FAIL=0')
 
 ----------------------------------------------------------------------------------------
 (R5) Load-bearing-content static checks on parent prose
@@ -63,11 +60,11 @@ Answer:
   [PASS] result section names the (S_dim, kappa) -> (lambda S_dim, lambda kappa) rescaling
 
 ----------------------------------------------------------------------------------------
-(R6) `Hypothesis set used (axiom-reset 2026-05-03)` section
+(R6) `Hypothesis set used` source-boundary section
 ----------------------------------------------------------------------------------------
-  [PASS] parent has explicit `Hypothesis set used (axiom-reset 2026-05-03)` section
+  [PASS] parent has explicit `Hypothesis set used` source-boundary section
   [PASS] Hypothesis set names Staggered-Dirac realization derivation target
-  [PASS] Hypothesis set names `g_bare = 1` derivation target
+  [PASS] Hypothesis set names supplied `g_bare = 1` parent gate
   [PASS] Hypothesis set cites the staggered-Dirac canonical parent file
   [PASS] Hypothesis set cites the g_bare canonical parent file
 
@@ -76,46 +73,45 @@ Answer:
 ----------------------------------------------------------------------------------------
   [PASS] parent header contains `**Admitted context inputs:**` line
   [PASS] Admitted-context header names staggered-Dirac realization derivation target
-  [PASS] Admitted-context header names `g_bare = 1` derivation target
+  [PASS] Admitted-context header names supplied `g_bare = 1` parent gate
 
 ----------------------------------------------------------------------------------------
 (R8) Ledger-row state self-consistency
 ----------------------------------------------------------------------------------------
-  [PASS] ledger row `deps` set equals ['g_bare_derivation_note', 'staggered_dirac_realization_gate_note_2026-05-03']  (deps=['g_bare_derivation_note', 'staggered_dirac_realization_gate_note_2026-05-03'])
-  [PASS] ledger row `criticality` == 'medium'  (criticality='medium')
-  [PASS] ledger row `load_bearing_score` >= 5.959  (load_bearing_score=6.524)
-  [PASS] ledger row `transitive_descendants` is not below the prior-audit floor 21  (transitive_descendants=22)
-  [PASS] ledger row generated effective status is unaudited  (effective_status='unaudited')
-  [PASS] ledger row generated audit status is unaudited  (audit_status='unaudited')
-  [PASS] ledger row `claim_type` == 'bounded_theorem'  (claim_type='bounded_theorem')
+  [PASS] ledger row `deps` includes required sources ['g_bare_derivation_note', 'minimal_axioms', 'staggered_dirac_realization_gate_note_2026-05-03']  (deps=['g_bare_derivation_note', 'minimal_axioms', 'staggered_dirac_realization_gate_note_2026-05-03'])
+  [PASS] ledger row `criticality` field is present  (criticality='medium')
+  [PASS] ledger row `load_bearing_score` field is numeric  (load_bearing_score=5.959)
+  [PASS] ledger row `transitive_descendants` field is numeric  (transitive_descendants=21)
+  [PASS] ledger row generated status fields are present  (effective_status='unaudited', audit_status='unaudited')
+  [PASS] ledger row `claim_type` field is present  (claim_type='bounded_theorem')
 
 ----------------------------------------------------------------------------------------
 (R9) Prior-audit history shape
 ----------------------------------------------------------------------------------------
-  [PASS] ledger row has exactly 2 previous_audits entries  (len(previous_audits)=2)
-  [PASS] most-recent prior audit is conditional (2026-05-23)  (audit_status='conditional-status' audit_date='2026-05-23T19:48:27.040293+00:00')
-  [PASS] most-recent prior audit snapshot recorded the single-element deps list ['g_bare_derivation_note']  (snap_deps=['g_bare_derivation_note'])
-  [PASS] most-recent prior audit's open_dependency_paths names the staggered-Dirac realization gate file  (open_dependency_paths=['docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md', 'docs/G_BARE_DERIVATION_NOTE.md'])
-  [PASS] most-recent prior audit's open_dependency_paths names the G_BARE_DERIVATION_NOTE file  (open_dependency_paths=['docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md', 'docs/G_BARE_DERIVATION_NOTE.md'])
-  [PASS] most-recent prior audit's notes_for_re_audit_if_any explicitly names the Staggered-Dirac realization gate  (notes='dependency_not_retained: close and re-audit the Staggered-Dirac realization gate and the g_bare parent repair chain, then re-run this obstruction audit on the retained dependency surface.')
-  [PASS] most-recent prior audit's runner_check_breakdown equals {A:7, B:1, C:0, D:0, total_pass:8}  (breakdown={'A': 7, 'B': 1, 'C': 0, 'D': 0, 'total_pass': 8})
+  [PASS] ledger row has prior audit history entries  (len(previous_audits)=3)
+  [PASS] most-recent prior audit record has status/date fields  (audit_status='audited_conditional' audit_date='2026-06-11T13:50:23.149805+00:00')
+  [PASS] most-recent prior audit snapshot keeps the required gate deps  (snap_deps=['g_bare_derivation_note', 'staggered_dirac_realization_gate_note_2026-05-03'])
+  [PASS] most-recent prior audit's open_dependency_paths names the staggered-Dirac realization gate file  (open_dependency_paths=['docs/G_BARE_DERIVATION_NOTE.md', 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md'])
+  [PASS] most-recent prior audit's open_dependency_paths names the G_BARE_DERIVATION_NOTE file  (open_dependency_paths=['docs/G_BARE_DERIVATION_NOTE.md', 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md'])
+  [PASS] most-recent prior audit's notes_for_re_audit_if_any explicitly names the Staggered-Dirac realization gate  (notes='dependency_not_retained: retain or replace the Staggered-Dirac realization gate and complete the g_bare parent re-audit/repair chain, then re-audit this narrow A2 obstruction scope.')
+  [PASS] most-recent prior audit's runner_check_breakdown is present  (breakdown={'A': 7, 'B': 1, 'C': 0, 'D': 0, 'total_pass': 8})
 
 ----------------------------------------------------------------------------------------
-(R10) Dep-set diff confirms the invalidation reason `deps_changed:dep_added:staggered_dirac_realization_gate_note_2026-05-03`
+(R10) Current dep-set census preserves required gate deps
 ----------------------------------------------------------------------------------------
-  [PASS] dep-set diff: added == {staggered_dirac_realization_gate_note_2026-05-03}  (added=['staggered_dirac_realization_gate_note_2026-05-03'])
-  [PASS] dep-set diff: removed == {} (no deps removed)  (removed=[])
+  [PASS] current deps include the required gate deps  (added=['minimal_axioms'])
+  [PASS] dep-set diff removed no required gate deps  (removed=[])
 
 ----------------------------------------------------------------------------------------
-(R11) Added dep is prose-declared in parent at audit time
+(R11) Staggered-carrier dep is prose-declared in parent
 ----------------------------------------------------------------------------------------
   [PASS] parent prose mentions the staggered-Dirac gate file (>=2 occurrences, header + Hypothesis set + audit_dependency_repair link)  (occurrences=3)
 
 ----------------------------------------------------------------------------------------
-(R12) Unchanged dep `g_bare_derivation_note` is prose-declared
+(R12) `g_bare_derivation_note` dep is prose-declared
 ----------------------------------------------------------------------------------------
   [PASS] parent prose mentions the G_BARE_DERIVATION_NOTE.md file
-  [PASS] parent prose names the `g_bare = 1` derivation target by phrase
+  [PASS] parent prose names the supplied `g_bare = 1` parent gate by phrase
 
 ----------------------------------------------------------------------------------------
 (R13) Open-gate files present on disk
@@ -127,8 +123,8 @@ Answer:
 (R14) Cached parent-runner log alignment
 ----------------------------------------------------------------------------------------
   [PASS] cached log file exists on disk  (path=logs/runner-cache/frontier_hubble_lane5_c1_a2_action_unit_metrology_obstruction.txt)
-  [PASS] cached log contains the `TOTAL: PASS=8, FAIL=0` line
-  [PASS] cached log contains eight `[PASS]` per-check lines  ([PASS]_count=8)
+  [PASS] cached log contains at least 8 passes and zero failures
+  [PASS] cached log contains at least 8 `[PASS]` per-check lines  ([PASS]_count=16)
 
 ----------------------------------------------------------------------------------------
 (R15) Parent header's `Type:` line names the bounded retag
@@ -153,15 +149,15 @@ Answer:
 ----------------------------------------------------------------------------------------
 (R19) Companion declares `claim_type=meta` in its Type header
 ----------------------------------------------------------------------------------------
-  [PASS] companion `**Type:**` header line contains the literal token `meta`  (text_len=25435)
+  [PASS] companion `**Type:**` header line contains the literal token `meta`  (text_len=4328)
 
 ----------------------------------------------------------------------------------------
 (R20) No-parent-edit self-check: on-disk parent SHA-256 unchanged
 ----------------------------------------------------------------------------------------
-  [PASS] on-disk parent SHA-256 still matches ledger note_hash (no parent edits introduced by this companion)  (on_disk=5708b03f218f... ledger=5708b03f218f...)
+  [PASS] on-disk parent SHA-256 still matches ledger note_hash (no parent edits introduced by this companion)  (on_disk=fd69c445d911... ledger=fd69c445d911...)
 
 ========================================================================================
-PASS=52 FAIL=0
+PASS=51 FAIL=0
 ========================================================================================
 
 ----- stderr -----

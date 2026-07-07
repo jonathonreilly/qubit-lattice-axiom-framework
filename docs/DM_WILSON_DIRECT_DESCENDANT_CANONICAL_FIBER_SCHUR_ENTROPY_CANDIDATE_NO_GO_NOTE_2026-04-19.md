@@ -1,7 +1,7 @@
 # DM Wilson Direct-Descendant Canonical-Fiber Schur-Entropy Candidate / No-Go
 
 **Date:** 2026-04-19  
-**Status:** proposed_no_go — exact follow-on no-go on the DM source-fiber
+**Status:** proposed_no_go — bounded follow-on no-go on the DM source-fiber
 lane (canonical-fiber Schur-entropy candidate)
 
 ### Detailed status
@@ -15,12 +15,11 @@ choose the most isotropic normalized Schur spectrum
 ```
 
 does **not** extend canonically. Standard coefficient-free normalized
-Schur-spectral laws disagree on exact positive-fiber points. If one adds a
+Schur-spectral laws disagree on live positive-fiber witnesses. If one adds a
 Shannon-entropy selector assumption, that does produce an explicit endpoint
 candidate on the canonical fiber, but the resulting aligned-seed -> endpoint
-exact crossing leaves the constructive chamber. So the physical selector is
-still open. This note does not add a repo-wide axiom or promote any upstream
-lane.
+crossing leaves the constructive chamber. So the physical selector remains
+unsupplied. This note does not add a repo-wide axiom or promote any upstream lane.
 
 **Primary runner:**  
 `scripts/frontier_dm_wilson_direct_descendant_canonical_fiber_schur_entropy_candidate_no_go_2026_04_19.py`
@@ -53,13 +52,14 @@ Does that slogan actually define a unique law on the full canonical fiber?
 No, not by itself.
 
 On the orbit-level canonical fiber, the normalized Schur spectra are no longer
-totally ordered by majorization. The runner certifies two exact positive-fiber
+totally ordered by majorization. The runner certifies two live positive-fiber
 points:
 
 - a **Shannon point** `S_H`,
 - and a **Renyi-2 / participation point** `S_R`,
 
-both satisfying the exact canonical orbit constraints and the retained
+both satisfying the canonical orbit constraints to measured numerical residual
+and the retained
 positive-branch conditions
 
 ```text
@@ -82,8 +82,8 @@ There is also one honest conditional positive result:
   unique continuous symmetric additive entropy, then Shannon is selected;
 - that picks an explicit canonical-fiber endpoint candidate `S_H`.
 
-But even then the source problem is not closed physically, because the unique
-exact `eta_1 = 1` crossing on the aligned-seed -> `S_H` segment already has
+But even then the source problem is not supplied physically, because the unique
+`eta_1 = 1` crossing on the aligned-seed -> `S_H` segment already has
 `E1 < 0`, so it leaves the constructive chamber.
 
 So the remaining gap is sharper again:
@@ -127,7 +127,7 @@ symmetric normalized spectral laws agreed there and selected `W1`.
 
 That agreement does **not** survive promotion to the full canonical fiber.
 
-The runner constructs two exact positive-fiber points:
+The runner constructs two positive-fiber witnesses:
 
 ### Shannon point `S_H`
 
@@ -171,7 +171,8 @@ and projected-source pack
 = (0.05318324, 0.44644652, 0.00414285, 0.01226713).
 ```
 
-Both lie on the exact same canonical orbit-level fiber and both satisfy
+Both lie on the same canonical orbit-level fiber to measured residual and both
+satisfy
 
 ```text
 gamma > 0, E1 > 0, E2 > 0, Delta_src > 0.
@@ -212,7 +213,7 @@ witness `W1` in their respective laws:
 So the plateau selector does not simply transplant unchanged to the full
 canonical fiber.
 
-That matters because it closes a tempting but false shortcut:
+That matters because it rules out a tempting but false shortcut:
 
 > prove something on the four certified plateau witnesses, then treat that as
 > the law on the whole fiber.
@@ -242,11 +243,11 @@ candidate:
 That is a real scientific sharpening, because it identifies exactly what extra
 axiom would be load-bearing if one wanted a single scalar law here.
 
-## Why this still does not close the physical selector
+## Why this still does not supply the physical selector
 
 Even the Shannon endpoint is not enough to finish.
 
-The aligned-seed -> `S_H` affine segment still has a unique exact
+The aligned-seed -> `S_H` affine segment still has a unique
 `eta_1 = 1` crossing, but the runner certifies that the crossing pack is
 
 ```text
@@ -262,7 +263,7 @@ That means:
 - but it still would **not** supply the physical point required by the older
   constructive/positive route.
 
-## What this closes
+## What this establishes
 
 - the vague hope that the full canonical fiber is already canonically ordered
   by generic normalized Schur-spectral isotropy;
@@ -271,7 +272,7 @@ That means:
 - the idea that "most isotropic spectrum" is already a theorem-grade law
   without specifying the isotropy functional.
 
-## What this does not close
+## What remains open
 
 - a retained derivation of the entropy-additivity axiom from `Cl(3)` on `Z^3`;
 - a theorem that the Shannon endpoint is the physical direct-descendant source;
@@ -289,7 +290,7 @@ It must at least:
 1. specify the microscopic scalar itself, not just the slogan "isotropy";
 2. be compatible with the direct-descendant canonical orbit-level fiber;
 3. connect back to the constructive physical route rather than sending the
-   exact crossing out of the chamber.
+   `eta_1 = 1` crossing out of the chamber.
 
 That is the sharpest honest post-fiber statement now available.
 
@@ -309,9 +310,9 @@ PYTHONPATH=scripts python3 scripts/frontier_dm_wilson_direct_descendant_canonica
 
 Expected:
 
-- exact positive-fiber Shannon point `S_H`;
-- exact positive-fiber Renyi-2 / participation point `S_R`;
+- positive-fiber Shannon witness `S_H`;
+- positive-fiber Renyi-2 / participation witness `S_R`;
 - opposite Shannon / Renyi-2 ordering;
 - majorization incomparability of `p_H` and `p_R`;
-- unique aligned-seed -> `S_H` exact crossing with `E1 < 0`;
+- unique aligned-seed -> `S_H` crossing with `E1 < 0`;
 - `PASS` with `FAIL=0`.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hadron_lane1_confinement_to_mass_firewall.py
-runner_sha256: 5328b62e6d987b2fe5ad2030197572455890ba1397614ba72ce99988fb9710d9
+runner_sha256: c4a936931698dde5953974c904b346b44548e20b1968cf5524f1cd89d2ff5759
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -22,7 +22,7 @@ Part 1: repo claim-state guardrails
 ----------------------------------------------------------------------------------------
   [PASS] Lane 1 stub says bounded confinement is not hadron-mass retention
   [PASS] Lane 1 stub says pion/proton/neutron masses are absent
-  [PASS] confinement note separates exact theorem from bounded string tension
+  [PASS] confinement note separates exact arithmetic from bounded string tension
   [PASS] confinement note leaves meson spectrum open
   [PASS] Lane 3 light-quark masses are currently not retained
 
@@ -35,7 +35,7 @@ Part 2: one bounded scale is not a hadron spectrum
   c_p   = m_p/sqrt(sigma)   = 2.0178
   c_n   = m_n/sqrt(sigma)   = 2.0206
   [PASS] pion and proton require different dimensionless spectral coefficients  (c_p-c_pi=1.718)
-  [PASS] proton and neutron are close but not fixed by sqrt(sigma) alone  (c_n-c_p=0.00278)
+  [PASS] proton and neutron are nearby but not fixed by sqrt(sigma) alone  (c_n-c_p=0.00278)
   [PASS] bounded sqrt(sigma) alone leaves arbitrary channel coefficients  (m_H = c_H sqrt(sigma); c_H is not retained)
 
 ----------------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ Part 3: GMOR pion-mass dependency
   10% change in f_pi changes m_pi by 0.9091x
   [PASS] GMOR is sensitive to light-quark masses  (sqrt(1.10)=1.0488)
   [PASS] GMOR is sensitive to f_pi normalization  (1/1.10=0.9091)
-  [PASS] current Lane 1 cannot close m_pi until m_u, m_d, Sigma, and f_pi land  (all four are load-bearing in GMOR)
+  [PASS] current Lane 1 cannot supply m_pi until m_u, m_d, Sigma, and f_pi land  (all four are load-bearing in GMOR)
 
 ----------------------------------------------------------------------------------------
 Part 4: confinement runner boundary
@@ -58,7 +58,7 @@ Part 4: confinement runner boundary
 ----------------------------------------------------------------------------------------
 Part 5: safe endpoint
 ----------------------------------------------------------------------------------------
-  [PASS] Lane 1 honest status is open, not retained hadron closure  (open gates: quark masses, chiral inputs, hadronic running, correlators)
+  [PASS] Lane 1 honest status is open, not a retained hadron-mass result  (open gates: quark masses, chiral inputs, hadronic running, correlators)
   [PASS] standard lattice-QCD methodology remains a bridge until instantiated  (methodology alone is not a framework mass calculation)
 
 ========================================================================================

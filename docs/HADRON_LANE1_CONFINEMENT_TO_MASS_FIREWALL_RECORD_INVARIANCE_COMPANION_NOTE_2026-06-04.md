@@ -27,29 +27,34 @@ The parent firewall remains a dependency-boundary surface: confinement plus one
 bounded string-tension scale does not determine pion, proton, neutron, or
 hadron-spectrum masses without the parent note's additional light-quark,
 chiral, running/matching, correlator, and spectral-coefficient inputs. This
-companion does not close those inputs and does not change the parent row.
+companion does not supply those inputs and does not change the parent row.
 
 Axioms and primitives are premise context here; they are not verdict-grade
 support for a bounded row.
 
 The narrow evidence recorded here is:
 
-1. the parent note hash, claim type, dependency list, and runner path match the
-   live ledger row;
-2. the parent runner exits with `PASS=16 FAIL=0`;
-3. the parent load-bearing sections contain the one-scale firewall, GMOR gate,
+1. the parent row exists, its runner path still targets the parent runner, and
+   the parent note hash matches the live ledger hash while audit-owned fields
+   such as criticality, load, and status are printed informationally only;
+2. the parent dependency census contains the required source edges used by this
+   companion and has no record-specific source edge;
+3. the parent runner exits with all live checks passing (`PASS=N FAIL=0`;
+   currently `PASS=16 FAIL=0`);
+4. the parent load-bearing sections contain the one-scale firewall, GMOR gate,
    nucleon dependency gate, and safe endpoint boundary;
-4. the parent load-bearing sections do not use Record axiom content;
-5. the parent runner output is unchanged under counterfactual markers where
+5. the parent load-bearing sections do not use Record axiom content;
+6. the parent runner output is unchanged under counterfactual markers where
    Record is asserted or not asserted.
 
 ## What This Does Not Claim
 
 - It does not claim a new theorem.
 - It does not change the parent or this companion's verdict fields.
-- It does not close any light-quark, chiral, running/matching, correlator, or
+- It does not supply any light-quark, chiral, running/matching, correlator, or
   spectral-coefficient input.
-- It does not promote confinement or `sqrt(sigma)` into hadron-mass closure.
+- It does not promote confinement or `sqrt(sigma)` into a retained hadron-mass
+  result.
 - It does not treat axioms or primitives as bounded-row support.
 - It does not edit generated ledger, queue, or publication-status files.
 

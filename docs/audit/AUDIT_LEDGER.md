@@ -1512,7 +1512,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
-| `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_production_dynamics_needed_row_map_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -12307,13 +12307,13 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 
 - **Note:** [`NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md`](../../docs/NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded audit of the top4 multistage compact-object bridge: the runner computes persistence, near-linear response in s, and stage-stable kappa on the baseline top4 case, but not an independent inertial-mass or external-field equivalence-principle theorem.
+- **claim_scope:** Audited only the bounded top4 multistage baseline/floor bridge asserting that the computed persistence, alpha≈1 response, and stable kappa allow identifying source-strength s with the inertial quantity required by Principle 3 on that family.
 - **audit_status:** ~~audited_renaming~~
 - **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-newton_derivation_top4_bridge_note-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The bridge therefore satisfies the Newton-derivation conditional's Principle-3 premise as a definitional identification: the parameter s is the unique scalar whose extensivity controls the field, response, and persistence simultaneously.  _(class `F`)_
-- **chain closes:** False — The numerical runner supports the operational measurements it prints, but the load-bearing move from source-strength/response scalar s to the inertial quantity required by Principle 3 is an asserted identification. The missing step is an independent bridge deriving that inertial-quantity identification, especially under an external-field response test.
-- **rationale:** Issue: the runner genuinely recomputes overlap, alpha, and kappa stability from the lattice helpers, but those checks do not derive that s is the inertial quantity. Why this blocks: the source note itself frames the decisive move as a definitional identification, and the cited authorities explicitly remain below persistent-pattern equivalence-principle or external-field closure. Repair target: add an independent bridge theorem deriving the inertial response scalar from an external-field compact-object test. Claim boundary until fixed: the row supports a bounded operational response/persistence bridge, not a derived Principle-3 inertial-mass theorem.
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-newton_derivation_top4_bridge_no-17`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The bridge satisfies the Newton-derivation conditional's Principle-3 premise as a definitional identification: the source-strength scalar s is the unique scalar whose extensivity controls the field, response, and persistence, hence plays the one-parameter mass role.  _(class `F`)_
+- **chain closes:** False — The runner supports persistence, approximate linearity in s, and stage-stable kappa, but it does not derive that s is the inertial quantity required by Principle 3. The missing step is an independent inertial-quantity/external-field bridge rather than a definitional identification.
+- **rationale:** The primary runner and helpers perform real framework computations for the three operational gates: overlap, alpha band, and kappa drift. Those checks substantiate a bounded operational response pattern, but the source note explicitly makes the load-bearing inertial-mass move by identifying the source-strength scalar s with the Principle-3 inertial quantity. That is a symbol/concept identity, not a derivation of inertial mass or an external-field equivalence-principle result. The note itself also preserves the residual gap, so the audited content cannot be treated as a clean closure of Principle 3 beyond the named definitional bridge.
 - **auditor confidence:** high
 
 ### `newton_law_derived_note`

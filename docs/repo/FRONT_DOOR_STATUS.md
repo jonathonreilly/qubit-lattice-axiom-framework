@@ -29,11 +29,11 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3715 |
-| Applied audit verdicts | 1382 |
-| Retained-grade rows, including boxed decorations | 1315 |
+| Applied audit verdicts | 1383 |
+| Retained-grade rows, including boxed decorations | 1316 |
 | Retained positive theorems | 193 |
 | Retained no-go rows | 194 |
-| Retained bounded rows | 883 |
+| Retained bounded rows | 884 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 21 |
 | Unaudited rows | 1969 |
@@ -50,10 +50,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2015 |
-| Ready rows | 248 |
+| Total pending rows | 2014 |
+| Ready rows | 252 |
 | Cycle-break targets | 10 |
-| Critical pending | 425 |
+| Critical pending | 424 |
 | High pending | 273 |
 | Medium pending | 540 |
 | Leaf pending | 777 |
@@ -61,8 +61,8 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 Next ready rows by queue order:
 
 - [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
-- [`staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md) - critical; audit_in_progress
 - [`flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) - critical; audit_in_progress
+- [`yt_vertex_power_derivation`](../../docs/YT_VERTEX_POWER_DERIVATION.md) - critical; unaudited
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; audit_in_progress
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited

@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 880 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 22 |
-| unaudited | 1985 |
+| unaudited | 1984 |
 | meta | 345 |
-| ~~audited_numerical_match~~ | 8 |
+| ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 19 |
 | ~~audited_conditional~~ | 19 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -63,9 +63,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 19 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
-| `audited_numerical_match` | 8 |
+| `audited_numerical_match` | 9 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2330 |
+| `unaudited` | 2329 |
 
 | claim_type | count |
 |---|---:|
@@ -1489,6 +1489,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -14213,6 +14214,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The positive-parent square-root dictionary is exact, but the current bank does not derive a physical quark positive parent and does not identify the square-root spectrum with quark Yukawa amplitudes.  _(class `B`)_
 - **chain closes:** True — The runner verifies exact positive-parent algebra, non-predictivity without parent/readout selection, the missing typed-edge graph, import firewall, and boundary classification with PASS=54 FAIL=0. These checks support the current-bank no-go that P1 remains support-only for Lane 3.
 - **rationale:** The no-go closes: finite-dimensional square-root algebra is exact, but by itself it can represent arbitrary positive generation-amplitude triples once a parent is supplied. The runner verifies that the current bank lacks both the physical quark positive parent and the readout theorem from square-root spectrum to quark Yukawa amplitudes, while excluding observed masses, fitted Yukawas, CKM mass input, and charged-lepton parent import. Residual risk is only future drift: a later parent/readout theorem would reopen this boundary.
+- **auditor confidence:** high
+
+### `quark_cp_carrier_completion_note_2026-04-18`
+
+- **Note:** [`QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`](../../docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded existence-of-fit claim that one complex determinant-neutral 1-3 carrier per quark sector can numerically fit the imported quark/CKM comparator surface while preserving determinant phase closure.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-quark_cp_carrier_completion_note-02`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given imported comparator targets, two complex carrier coefficients xi_u and xi_d are solved numerically to reproduce the quark mass-ratio and CKM/J surface to about 1% or better while keeping arg det(M_u M_d)=0 mod 2pi.  _(class `G`)_
+- **chain closes:** True — The restricted packet supports the bounded numerical-fit statement: the runner builds Hermitian mass matrices, optimizes xi_u and xi_d plus mass ratios, computes CKM observables and determinant phase, and passes the stated checks. It does not derive xi_u, xi_d, or the comparator targets from retained primitives.
+- **rationale:** The load-bearing step is explicitly a tuned numerical completion against imported observation/atlas comparator targets, so it is class G. The primary runner is substantive rather than a trivial printout: it computes the matrices, diagonalizes them, forms CKM observables, and checks determinant phase closure. The co-cycle citation to docs/QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md is non-load-bearing/informational for this bounded fit verdict; source-graph repair is still needed to remove or rewrite that markdown link before effective_status can leave retained_pending_chain. The result closes only as a bounded numerical match, not as a first-principles retained derivation.
 - **auditor confidence:** high
 
 ### `quark_cp_small_correction_boundary_note_2026-06-17`

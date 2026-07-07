@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 192 |
+| **retained** | 193 |
 | **retained_no_go** | 194 |
 | **retained_bounded** | 883 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
 | unaudited | 1972 |
-| audit_in_progress | 3 |
+| audit_in_progress | 2 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 17 |
-| `audited_clean` | 1259 |
+| `audit_in_progress` | 16 |
+| `audited_clean` | 1260 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
@@ -147,7 +147,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1270,6 +1269,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_taste_readout_operator_model_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_three_register_cross_encoding_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `thales_right_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -17715,6 +17715,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The load-bearing content is the four finite runner-verified computational gates, with the AdS/CFT, RT, MERA, continuum, and holographic-gravity bridge explicitly excluded as non-load-bearing.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the transfer matrices, tight-binding Hamiltonians, correlation matrices, entropies, SVDs, and fits directly rather than printing constants or importing the contested premise. The cached output matches the source note's rounded quantitative claims, and the note narrows away the unsupported holographic bridge.
 - **rationale:** The surviving claim is bounded to finite sampled computations and the supplied runner genuinely computes the reported quantities from its stated toy lattice definitions. The displayed coefficients and fit qualities in the note match the runner output to the stated rounding: c=1.0855, area-law R^2=0.999613, center chi 8 to 7 at f=20, inverse-coupling R^2=0.6465, and linear R^2=0.9745. There are no cited non-retained authorities, and the note explicitly rejects treating the finite sweep as an RT or holographic derivation.
+- **auditor confidence:** high
+
+### `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
+
+- **Note:** [`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite periodic tensor-product space H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators a_x and tensor-permutation translations T_a: unitarity, group law, T_a a_x T_a^dagger = a_{x+a} and adjoint covariance, and [T_a,Q_total]=0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-019f3efb-7107-73a2-a9e0-82b3971c2c40`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On every tensor-product basis state, T_a a_x T_a^dagger |b> = a_{x+a}|b>, hence T_a a_x T_a^dagger = a_{x+a}; taking adjoints gives the a_x^dagger identity and summing/relabeling gives [T_a,Q_total]=0.  _(class `C`)_
+- **chain closes:** True — The accepted minimal_axioms premise supplies per-site M_2(C) and Z^3 translations; after the note defines H_Lambda, a_x, T_a, and periodic labels, the result is finite-dimensional tensor-permutation algebra. The proof does not import Jordan-Wigner anticommutation, Noether translation, a physical fermion carrier, or a continuum momentum generator.
+- **rationale:** The exact load-bearing identity is T_a a_x T_a^dagger = a_{x+a} on the defined tensor-product basis, with charge conservation following by adjoint covariance and relabeling the finite periodic sum. The runner constructs exact Sympy ladder and permutation matrices and reports 131 class-C passes with 0 failures, checking the same operator identities rather than a fitted or physical comparator. The word fermion is scoped to the single-mode per-site Pauli ladder convention, and the note explicitly excludes Jordan-Wigner, Noether-current, Hamiltonian-invariance, and exp(i a.P) continuum claims, so no hidden physical bridge is being imported.
 - **auditor confidence:** high
 
 ### `tensor_support_center_excess_law_note`

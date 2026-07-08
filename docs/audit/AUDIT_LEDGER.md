@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1949 |
+| unaudited | 1948 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 34 |
+| ~~audited_conditional~~ | 35 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1275 |
-| `audited_conditional` | 34 |
+| `audited_conditional` | 35 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2294 |
+| `unaudited` | 2293 |
 
 | claim_type | count |
 |---|---:|
@@ -1448,6 +1448,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_context_generator_nonidentifiability_no_go_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -15726,6 +15727,18 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — All displayed quantitative identities reduce to finite-sum algebra: normalization gives sum_i dp_i=0, the RN coordinate derivative gives the Fisher quadratic form, W'(0)=E_0[O]=0, and the two-outcome uniform record has mean 0 and second moment 1. No cited authority, primitive, bridge, or external comparator is needed.
 - **rationale:** The independent formula inventory checks the RN score identity, Fisher quadratic form, exponential-chart normalization and derivative, and the two-outcome epsilon arithmetic directly from finite probability definitions. The runner source performs symbolic finite-probability checks rather than importing fitted values or hard-coding a contested physical premise. The claim is narrow and explicitly excludes the broader physical source, closure, and Standard Model matching assertions, so the audited theorem closes as standard finite probability geometry.
 - **auditor confidence:** high
+
+### `sigma_hier_uniqueness_theorem_note_2026-04-19`
+
+- **Note:** [`SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md`](../../docs/SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** At the pinned PMNS chamber point (m_*, delta_*, q_+*)=(0.657061, 0.933806, 0.715042), the S3 hierarchy pairing sigma=(2,1,0) is the unique permutation satisfying the runner's NuFit 5.3 NO magnitude windows and the imposed sin(delta_CP)<0 comparator, with chamber-wide uniqueness and derivation of the pin/A-BCC out of scope.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=weak)
+- **load-bearing step:** The theorem selects sigma=(2,1,0) by combining all-nine PMNS magnitude-window passes at the pinned chamber point with the external sin(delta_CP)<0 preference; the runner hard-codes the pinned point, NuFit windows, and CP-sign comparator and verifies PASS=24 FAIL=0 for that screen.  _(class `D`)_
+- **chain closes:** False — The finite S3 screen closes only after the pinned PMNS chamber point, A-BCC/physical-sheet convention, NuFit magnitude windows, and T2K/NOvA CP-sign comparator are supplied; those load-bearing authorities are not carried as retained direct dependencies by this row.
+- **rationale:** Issue: the row's claimed observational uniqueness rests on supplied external comparator windows and a supplied pinned PMNS chamber/A-BCC setup, while the direct ledger dependency is only a meta PMNS packet and does not retain those load-bearing authorities. Why this blocks: the runner verifies the arithmetic table for the supplied pin and comparator, but a hostile auditor can reject retained/open-gate closure because the pin, physical-sheet choice, and experimental CP-preference gate are not independently ratified direct inputs to this claim. Repair target: add or audit direct dependency edges for the pinned PMNS map/chamber authority, the A-BCC or physical-sheet gate, and the exact external NuFit/T2K/NOvA comparator authority used by the runner, or narrow the row to a pure computational table with those inputs admitted. Claim boundary until fixed: a bounded finite pinned-point replay shows that, under the supplied windows and sin(delta_CP)<0 filter, sigma=(2,1,0) is the unique S3 permutation in the runner; no framework derivation, chamber-wide uniqueness, or retained observational open-gate closure is established.
 
 ### `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09`
 

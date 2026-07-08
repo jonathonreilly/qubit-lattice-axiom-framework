@@ -17,7 +17,8 @@ success_bar: >
   window) AND two-body truncation pinned at the kinetic-functional value.
   Negative fork: if full Fock does NOT trend to equivalence, N-discipline
   diagnosis + owner surface (it would strike at the mediator story).
-current_block: block02 (the separation measurement)
+current_block: CLOSED (block02 was the final science block; close folded
+  into PR #5067 per the matter-mass-wep precedent)
 current_branch: physics-loop/gauged-mass-equivalence-block02-20260708
 worktree: /Users/jonBridger/tp-matter-mass-wep
 imports: >
@@ -28,7 +29,8 @@ imports: >
 discipline: same as matter-mass-wep pack (V1-V5, N1-N8, kappa-style
   validity diagnostics, size/truncation-convergence gates, PR per block,
   nothing landed in-loop).
-next_exact_action: block03 mechanism-attribution summary + campaign close
+next_exact_action: none — campaign closed; see HANDOFF.md (verdict, PR
+  review order, post-campaign frontier); follow-ups start fresh packs
 stop_condition_hit: none
 # block01 review 2026-07-08: engine validated (all residuals <= 7.4e-14);
 # worker surfaced three engineering flags, all documented in the note;

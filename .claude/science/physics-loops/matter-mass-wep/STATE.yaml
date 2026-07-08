@@ -1,0 +1,37 @@
+loop_slug: matter-mass-wep
+created: 2026-07-08
+mode: campaign
+runtime_budget: 16h+
+checkpoint_interval: 30m
+execution_split: workhorse (codex exec workers, supervisor reviews all diffs)
+goal: >
+  Decide the fork: the framework yields mass (full WEP closure — one
+  generator-invariant mass observable governs rest gap, inertial response,
+  composite additivity, and a DERIVED species-universal gravitational source
+  coefficient) OR the failure diagnoses as missing axiom/primitive content,
+  in which case write the diagnosis note and halt for the owner conversation.
+target_status: best-honest-status per block; success bar = full WEP closure
+owner_stop_condition: >
+  Axiom trigger: every enumerated closure route diagnoses as missing supplied
+  structure (not missing derivation) and the N7 steelman survives. Response:
+  finish diagnosis note, checkpoint, open PR/backlog, HALT, report to owner.
+  No in-loop axiom or primitive adoption under any circumstances.
+ordering: chain-first (block01 -> block02 -> block03 -> block04)
+current_block: block01
+current_branch: physics-loop/matter-mass-wep-block01-20260708
+worktree: /Users/jonBridger/tp-matter-mass-wep
+base_commit: 9e4a78e3b3
+active_route: block01 mass observable on two-step transfer surface
+hard_residual_being_attacked: >
+  no-go 2026-06-17 residuals R1 (energy/action context; narrowed to declared
+  I-DYN chain, not closed) and R2 (inertial rest-gap readout; partially closed
+  by mass-observable + inertial-closure chain). R3 (source coefficient) is
+  block04's wall.
+open_imports: [I-DYN, I-MASS, I-EXT(block02), I-INT(block03), EP-S3a(block04)]
+approved_primitives_consumed: [realized_state_primitive, kinetic_isotropy_primitive(partial I-TIME)]
+no_go_routes_excluded: see NO_GO_LEDGER.md
+cycles_completed: 0
+blocks_completed: []
+prs_open: []
+next_exact_action: draft block01 codex specs (note skeleton + runner) and launch worker
+stop_condition_hit: none

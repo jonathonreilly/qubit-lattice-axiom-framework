@@ -1,0 +1,5 @@
+CHECKS CHECK-01=ok(rule=tail,field=0.0e+00,comm=2.3e-16,Q=0.0e+00,E=3.6e-15); CHECK-02=ok(band=1.8e-15,ph=1.2e-13,E6m03=[0.3,1.17898,1.9975,2.3,1.9975,1.17898]); CHECK-03=ok(max=0.0e+00;m=0.3:E0=0.3,Epi=2.3;m=0.6:E0=0.6,Epi=2.6); CHECK-04=ok(d34=(+3.02e-14,+0.00e+00)); CHECK-05=ok(max=4.6e-13 [m=0.3,g=0/free:6.0e-14;m=0.6,g=0/free:1.5e-13;m=0.3,g=0.6:1.9e-13;m=0.3,g=1.0:3.9e-13;m=0.6,g=0.6:2.6e-13;m=0.6,g=1.0:4.6e-13]); CHECK-06=ok(gap0(g=.6)=0.99340089,gap0(g=1)=1.3253246)
+SPEC-NOTE K=-(i*sigma1+r*sigma3)/2; DeltaW=-q[N-1]; q=n_u+n_d-1; g0 free uses Uholo=1 comparator
+MESON g=0.6 P0=[0.993401,1.28342,1.35453,1.60264] P=2pi/8=[1.32916,1.74644,2.06284,2.36451] band2=(P0:1.28342,P2pi8:1.74644)
+MESON g=1.0 P0=[1.32532,2.19691,2.7957,2.95188] P=2pi/8=[1.5745,2.36505,2.93311,3.41042] band2=(P0:2.19691,P2pi8:2.36505)
+TOTAL PASS elapsed=98.03s flags=Q0-ring-Gauss,finite-W-translation-interior,wilson-r1-no-doublers,g0-Uholo-shifts-W

@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 193 |
 | **retained_no_go** | 196 |
-| **retained_bounded** | 894 |
+| **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
 | unaudited | 1955 |
-| audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 14 |
-| `audited_clean` | 1274 |
+| `audit_in_progress` | 13 |
+| `audited_clean` | 1275 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
@@ -131,7 +130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -206,6 +204,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2442,6 +2441,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`
   - `SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md`
   - `SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md`
+- **auditor confidence:** high
+
+### `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the free/fixed-background staggered-only finite Fock-space surface of the cited two-step transfer-matrix authority, the reconstructed Hamiltonian and gap from T_hat^2 use the two-step block normalization 1/(2 a_tau), not 1/a_tau; no U-integrated interacting, continuum/OS, closed-form universal nondegeneracy, or physical-mass identification is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-second-auditor-2026-07-08`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Since the cited transfer object is T_hat^2 = exp(-2 a_tau H_hat), the reconstructed Hamiltonian and gap from T_hat^2 must use -(1/(2 a_tau)) log(T_hat^2/M_T) and -(1/(2 a_tau)) log(lambda_1/M_T), while the 1/a_tau form is exactly twice as large.  _(class `A`)_
+- **chain closes:** True — The direct retained-bounded dependency supplies T_hat^2 = exp(-2 a_tau H_hat) and the positive two-step blocked transfer surface. Finite-dimensional functional calculus then gives H = -(1/(2 a_tau)) log(T_hat^2/M_T) = H_hat after vacuum subtraction, and the same factor fixes the gap formula.
+- **rationale:** The derivation closes as exact algebra over the retained-bounded two-step transfer authority: a two-step block advances time by 2 a_tau, so the logarithmic generator and gap necessarily carry 1/(2 a_tau). I independently derived the 2x2 action-transfer eigenvalues e^{±2E} and checked an abstract diagonal finite-spectrum example, both confirming that the 1/a_tau form doubles every excited energy and gap. The runner aligns with T_hat^2 itself and verifies the same factor-of-two relation, self-adjointness, forward cone, and corrected gap with 9 PASS / 0 FAIL. The clean verdict is bounded to this normalization bridge only; it does not promote U-integrated interacting RP, continuum/OS reconstruction, universal nondegeneracy, cluster decomposition, or physical mass identification.
 - **auditor confidence:** high
 
 ### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`

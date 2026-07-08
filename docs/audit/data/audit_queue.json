@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 411,
+    "critical": 410,
     "high": 273,
     "leaf": 777,
     "medium": 540
@@ -392,27 +392,32 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
-      "claim_scope": "Within the free/fixed-background staggered-only finite Fock-space surface of the cited two-step transfer-matrix authority, the reconstructed Hamiltonian and gap from T_hat^2 use the two-step block normalization 1/(2 a_tau), not 1/a_tau; no U-integrated interacting, continuum/OS, closed-form universal nondegeneracy, or physical-mass identification is audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+        "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
       ],
-      "direct_in_degree": 4,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 23,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.132,
-      "note_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 23.627,
+      "note_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05.py",
-      "transitive_descendants": 560
+      "runner_path": "scripts/axiom_first_spectrum_condition_check.py",
+      "transitive_descendants": 558
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -887,6 +892,33 @@
       "ready": true,
       "runner_path": "scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py",
       "transitive_descendants": 388
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+        "single_clock_uniqueness_scope_boundary_2026-06-06",
+        "post_record_clock_rate_interface_2026-06-06",
+        "record_clock_rate_normalization_gate_2026-06-06"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.096,
+      "note_path": "docs/SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py",
+      "transitive_descendants": 386
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6075,35 +6107,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-        "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
-        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
-      ],
-      "direct_in_degree": 23,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 23.627,
-      "note_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/axiom_first_spectrum_condition_check.py",
-      "transitive_descendants": 558
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem_note_2026-04-16",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -7915,33 +7918,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.py",
-      "transitive_descendants": 386
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
-        "single_clock_uniqueness_scope_boundary_2026-06-06",
-        "post_record_clock_rate_interface_2026-06-06",
-        "record_clock_rate_normalization_gate_2026-06-06"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.096,
-      "note_path": "docs/SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py",
       "transitive_descendants": 386
     },
     {
@@ -59473,6 +59449,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 266,
-  "total_pending": 2001
+  "ready_count": 267,
+  "total_pending": 2000
 }

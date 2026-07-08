@@ -15,3 +15,17 @@
   precision; CHECK-01 ties the replicated transfer construction to the
   independent scalar dispersion (3.0e-14).
 - Local disposition: pass.
+
+## block02 note — 2026-07-08 supervisor review (in progress)
+
+- Worker FLAGGED A REAL PROOF GAP in the supervisor-authored T3: a 3-sigma_p
+  window plus finite fourth moments does not control Gaussian tails, and the
+  rest-point on-axis fourth derivative is not a valid uniform bound constant
+  (transverse Hessian entries of E_33 contribute).
+- Supervisor repair: T3 restated for window-supported densities with the
+  sup-Hessian window constant C4(m) (on-axis rest-point value retained as its
+  exact lower bound, preserving the T4 divergence exhibit); new T3' Gaussian
+  tail corollary with explicit exponentially small addend, to be printed by
+  the runner.
+- Runner must gain: numerical C4^win computation, eps_tail print per run,
+  and a gated bound-compliance leg. To be patched at runner review.

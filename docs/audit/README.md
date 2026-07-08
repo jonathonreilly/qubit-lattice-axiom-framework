@@ -83,6 +83,14 @@ library is driven only by auditor-owned fields:
     `audit_status = audited_clean` plus retained-grade dependencies.
   - `retained_bounded` for `claim_type = bounded_theorem` plus
     `audit_status = audited_clean` plus retained-grade dependencies.
+  - `retained_conditional` for a clean theorem/no-go/bounded row at least
+    one of whose dependencies is `audited_conditional` or
+    `retained_conditional`. The row's own audit is clean at its stated
+    scope; every named condition carried by those dependencies is
+    inherited, and the inherited sources are recorded in the row's
+    `inherited_conditional_deps` field. `retained_conditional` is not
+    retained-grade: it satisfies chain closure only at the conditional
+    tier, so conditional-in can only ever produce conditional-out.
   - `retained_pending_chain` for a clean theorem/no-go/bounded row whose
     upstream chain is not yet retained-grade.
   - `open_gate` for a clean open gate; this blocks retained propagation.
@@ -105,6 +113,18 @@ by a retained derivation or explicit owner-governance adoption. Tier-A
 conventions are registry metadata only, not accepted premises; if a proof uses
 a convention parent row for more than the vacuous normalization choice, that
 row must still earn retained-grade normally.
+
+Conditional-tier chain closure mirrors the Tier-A pattern one tier down:
+`audited_conditional` and `retained_conditional` dependencies satisfy chain
+closure only at the conditional tier. A clean row standing on one is capped
+at `retained_conditional` and records the inherited sources in
+`inherited_conditional_deps`; the conditional cap dominates the Tier-A
+bounded cap when both apply. Failed, renaming, open-gate, and unaudited
+dependencies still block exactly as before. This is the standard
+hypothesis-inheritance convention of the mathematical literature (results
+conditional on a named hypothesis propagate that hypothesis explicitly in
+downstream statements); the ledger applies it mechanically so conditions
+flow visibly instead of blocking audits of otherwise-verifiable rows.
 - `prose_status` — vocabulary-drift status, orthogonal to `audit_status`. See
   `docs/repo/VOCABULARY_HYGIENE_DESIGN.md`. One of:
   - `clean` — no vocabulary drift detected by `vocab_lint`.

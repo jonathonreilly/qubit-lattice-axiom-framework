@@ -1,0 +1,47 @@
+loop_slug: mass-identity-and-source
+created: 2026-07-08
+mode: campaign
+runtime_budget: 16h+ (owner standing parameters from matter-mass-wep carry
+  over: PR per block, stacked, nothing landed in-loop, stop-and-write-up on
+  any axiom wall)
+execution_split: workhorse (codex exec workers, supervisor reviews all diffs)
+predecessors: matter-mass-wep (verdict under direction A), and
+  gauged-mass-equivalence (separation gated; identity test deferred)
+goal: >
+  Close the two gaps separating the mass lane from a derivation chain.
+  Thrust 1 (block01): operator-tagged band identification on the gauged
+  comparator, then gate the tautology-free two-band mass-energy-equivalence
+  identity test (shared emergent metric across internal excitation bands
+  and species). Thrust 2 (block02): Noether source identification -- prove
+  the robust-conserved-current classification on the record-preservation-
+  forced dynamics class (expected exhaustive list: identity, per-species
+  charge, energy), exclude non-scalar and charge couplings by the symmetry
+  classification and the banked composite dichotomy falsifier, reducing
+  gravitational-source species-blindness to one global constant.
+success_bar: >
+  Block01: identity ratio (M2/M1)(E01/E02) = 1 gated within a
+  drift-informed tolerance at every tag-valid, stability-valid point, with
+  overdetermined (4-momentum) fits so the per-band ratio is no longer
+  fit-forced; honest negative if tagging still fails. Block02: the
+  commutant classification theorem proved on the declared surface with a
+  runner that computes the local-conserved-operator kernel exactly on
+  small systems (generic couplings: kernel = identity + charges + energy;
+  free control: kernel blows up, exhibiting why genericity is needed);
+  dichotomy closes source form up to one constant. Axiom trigger: if the
+  classification finds robust currents beyond the expected list, or the
+  proof requires supplied structure the axioms do not provide, write up
+  and stop for the owner conversation.
+current_block: block01 (operator-tagged two-band identity test)
+current_branch: physics-loop/mass-identity-and-source-block01-20260708
+worktree: /Users/jonBridger/tp-matter-mass-wep
+imports: >
+  Block01 inherits I-GAUGE and the engine/measurement machinery by
+  citation. Block02 declares its surface explicitly in the note: the
+  forced gauge-invariant-local class from the dynamics-form theorem, with
+  a genericity premise (coupling-independent conservation) stated as a
+  named premise, not smuggled.
+discipline: physics-loop standard (V1-V5, N1-N8, validity self-exclusion
+  gates, runner + cache per note, vocab_lint before commits, PR per block,
+  nothing landed in-loop, no repo-authority surfaces touched).
+next_exact_action: block01 codex worker (operator-tagged two-band runner)
+stop_condition_hit: none

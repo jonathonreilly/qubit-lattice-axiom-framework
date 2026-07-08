@@ -38,3 +38,16 @@ admitted_observation_status: null
 claim_type_reason: "exact T1-T3 legs + declared M1/M2 measured comparator legs off I-1D/I-DIST/I-INT; no observed target values, no fitted selectors"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
+
+## block04 (executed 2026-07-08)
+
+actual_current_surface_status: bounded-support (candidate bounded_theorem + exact negative boundary + constructive witness; local review pass; runner PASS=6 FAIL=0; N1-N8 PASS)
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes  # sharpens EP-S3b; T4 = shipped partial closure; exact identification remains the owner-fork surface
+conditional_surface_status: audited_conditional expected (dependency_not_retained cascade; EP-S3a bounded interface consumed)
+hypothetical_axiom_status: null  # two readings recorded, neither selected; no axiom content mapped
+admitted_observation_status: null
+claim_type_reason: "exact sympy legs (T1/T2/T4 exponents) + constructive numeric witness (T3) + measured trends off declared imports; no observed target values, no fitted selectors"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

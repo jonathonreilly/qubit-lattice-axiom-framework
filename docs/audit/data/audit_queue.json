@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 408,
+    "critical": 407,
     "high": 273,
     "leaf": 777,
     "medium": 540
@@ -888,32 +888,6 @@
       "ready": true,
       "runner_path": "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py",
       "transitive_descendants": 386
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_realization_gate_note_2026-05-03"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_higgs_dressed_propagator_v1.py"
-      ],
-      "load_bearing_score": 10.414,
-      "note_path": "docs/KOIDE_HIGGS_DRESSED_RESOLVENT_ROOT_THEOREM_NOTE_2026-04-20.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_higgs_dressed_resolvent_root_theorem.py",
-      "transitive_descendants": 340
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -59397,6 +59371,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 265,
-  "total_pending": 1998
+  "ready_count": 264,
+  "total_pending": 1997
 }

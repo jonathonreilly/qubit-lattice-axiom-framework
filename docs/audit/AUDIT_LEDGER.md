@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1951 |
+| unaudited | 1950 |
 | audit_in_progress | 1 |
 | meta | 345 |
-| ~~audited_numerical_match~~ | 7 |
+| ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 20 |
 | ~~audited_conditional~~ | 33 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -64,9 +64,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 33 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 22 |
-| `audited_numerical_match` | 7 |
+| `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2296 |
+| `unaudited` | 2295 |
 
 | claim_type | count |
 |---|---:|
@@ -1526,6 +1526,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | weak | codex-current | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -10124,6 +10125,23 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Gamma_chi=(2/3)J-I equals the proper body-diagonal pi rotation 2vv^T-I with the standard SU(2) lift U=-i(sigma_1+sigma_2+sigma_3)/sqrt(3), and explicit non-circulant Hermitian anticommuting operators sit outside only the circulant anticommuting no-go scope.  _(class `A`)_
 - **chain closes:** True — The chain closes for the bounded compatibility theorem because each load-bearing step is finite matrix algebra plus the narrow retained dependency content: Spin(3)/Pauli compatibility, circulant no-go scope, parity triplet separation, and the algebraic Q=2/3 note's open r-pin boundary. No downstream physical readout or mass-spectrum bridge is consumed.
 - **rationale:** The bounded algebra closes: Gamma_chi=(2/3)J-I equals 2vv^T-I, has eigenvalues {+1,-1,-1} and det +1, and the stated U=-i(sigma_1+sigma_2+sigma_3)/sqrt(3) is the standard SU(2) pi-rotation lift with U^2=-I. The cited Z3 no-go is used only at its literal boundary, comm(R) intersect anticomm(Gamma_chi)={0}, and the note exhibits non-circulant Hermitian anticommuting H outside that boundary without claiming a global no-go defeat. The relocation language is honest: the r=1/2/Brannen/Q=2/3 selection, physical carrier identification, vector-vs-spinor sign bridge, CPT/reality physical content, and O_h mass-operator program are explicitly left open. Residual risk is downstream citation drift: this row must be cited only as carrier compatibility, not as generation identification or Koide closure.
+- **auditor confidence:** high
+
+### `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20`
+
+- **Note:** [`KOIDE_HIGGS_DRESSED_RESOLVENT_ROOT_THEOREM_NOTE_2026-04-20.md`](../../docs/KOIDE_HIGGS_DRESSED_RESOLVENT_ROOT_THEOREM_NOTE_2026-04-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the Higgs-dressed missing-axis resolvent calculation that, after importing the H3/readout package and observational chamber pins, finds isolated lambda roots of the Koide equation and a unique small positive root near chamber slack.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=weak)
+- **load-bearing step:** At h_0 = 0, solve Q(abs eig Sigma_lambda(0)) = 2/3 and take the unique small positive root lambda_* = 0.015808703285395..., which also gives a near-PDG charged-lepton direction.  _(class `G`)_
+- **chain closes:** False — The runner reproduces the stated root scan, but the value lambda_* is selected by solving the target Koide equation after importing observational PMNS chamber pins and upstream H3/readout constants. No retained theorem derives the pins, the missing-axis lift, or an independent lambda-law before the Koide target is imposed.
+- **rationale:** Issue: the root is defined by the equation Q = 2/3 itself and the construction imports observational chamber pins from the upstream H3/readout module. Why this blocks: the near-PDG direction and chamber-slack proximity are consequences of a target-selected numerical surface, not an independent derivation of charged-lepton Koide or a framework-native scalar law. Repair target: derive the H3/readout pins and missing-axis lift from retained inputs, then derive lambda_* from an independent structural equation before comparing to Koide/PDG. Claim boundary until fixed: the runner is a reproducible conditional numerical construction reducing this avenue to a scalar target, not a retained positive theorem.
+- **open / conditional deps cited:**
+  - `scripts/frontier_higgs_dressed_propagator_v1.py`
+  - `KOIDE_CLOSURE_ATLAS_ISSUES_FLAGGED.md`
+  - `PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md`
 - **auditor confidence:** high
 
 ### `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`

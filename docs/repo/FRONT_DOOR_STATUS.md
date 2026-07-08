@@ -36,7 +36,7 @@ Owner-approval history for every axiom/primitive/governance change:
 | Retained bounded rows | 886 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 21 |
-| Unaudited rows | 1968 |
+| Unaudited rows | 1967 |
 | Retained-pending-chain rows | 7 |
 | Audited conditional rows | 27 |
 | Audited renaming rows | 19 |
@@ -61,7 +61,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 Next ready rows by queue order:
 
 - [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
-- [`yt_vertex_power_operator_counting_lemma_note_2026-05-17`](../../docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md) - critical; unaudited
+- [`yt_vertex_power_operator_counting_lemma_note_2026-05-17`](../../docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md) - critical; audit_in_progress
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
 - [`yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md) - critical; unaudited
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
@@ -104,10 +104,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1932 descendants; score 217.417
-- `three_generation_observable_theorem_note` - critical; 1186 descendants; score 67.213
+- `three_generation_observable_theorem_note` - critical; 1187 descendants; score 67.214
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 65.644
 - `graph_first_su3_integration_note` - critical; 1577 descendants; score 65.624
 - `observable_principle_from_axiom_note` - critical; 1018 descendants; score 64.493
-- `plaquette_self_consistency_note` - critical; 1148 descendants; score 53.166
-- `minimal_axioms_2026-05-03` - critical; 1048 descendants; score 48.035
-- `key_terminology` - critical; 1162 descendants; score 46.684
+- `plaquette_self_consistency_note` - critical; 1149 descendants; score 53.167
+- `minimal_axioms_2026-05-03` - critical; 1049 descendants; score 48.036
+- `key_terminology` - critical; 1163 descendants; score 46.685

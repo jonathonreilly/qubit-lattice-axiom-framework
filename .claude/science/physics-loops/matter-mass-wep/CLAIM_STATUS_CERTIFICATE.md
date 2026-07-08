@@ -51,3 +51,16 @@ admitted_observation_status: null
 claim_type_reason: "exact sympy legs (T1/T2/T4 exponents) + constructive numeric witness (T3) + measured trends off declared imports; no observed target values, no fitted selectors"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
+
+## block05 (executed 2026-07-08)
+
+actual_current_surface_status: bounded-support (candidate bounded_theorem + class-level comparator no-go; local review pass; runner PASS=5 FAIL=0)
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes  # the window mass-energy-equivalence residual: source located (mediator requirement), derivation named for gauged surface
+conditional_surface_status: audited_conditional expected (dependency cascade)
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact sum rule (T1) + manifest control (T2) + size-valid measured class no-go (T3) off I-1D/I-DIST/I-INT-CLASS; no observed target values, no fitted selectors"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

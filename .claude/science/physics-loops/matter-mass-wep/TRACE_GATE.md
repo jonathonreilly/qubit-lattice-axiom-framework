@@ -51,3 +51,15 @@ reachability_to_target: partially_closes
 artifact_role: theorem
 next_trace_action: "owner fork-interpretation answer selects: scaling-window reading -> T4 is the closure shape; exact reading -> write-up-then-stop protocol with the diagnosis already recorded in NO_GO_DISCIPLINE_CHECKLIST.md"
 ```
+
+## block05 — mass-energy equivalence static-comparator no-go (executed)
+
+```yaml
+trace_class: direct_blocker_closure
+target_claim_id: wep_source_reduction_window_residual_2026_07_08
+target_blocker_text: "derive mass-energy equivalence for composites in the scaling window"
+source_of_blocker_text: handoff  # block04 reduction, owner direction A
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: "future campaign: composite mass-energy equivalence on the gauged/interacting transfer surface (the record-preservation-forced covariant-hopping class)"
+```

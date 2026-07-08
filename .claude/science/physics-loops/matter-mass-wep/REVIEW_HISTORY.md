@@ -92,3 +92,22 @@ Evaluator brief applied locally (no separate agent authorized mid-run):
 3. Independently reviewable: YES — standalone note + runner.
 4. Marginal review value: YES — this is the lane's decision surface.
 Verdict: OPEN.
+
+## block05 — 2026-07-08 supervisor review
+
+- Runner worker delivered PASS=4 FAIL=1 and correctly refused to pass my
+  wrong "Galilean control" (lattice-cosine band is not Kohn-exact; its
+  curvature varies). Supervisor repair: manifest quadratic-band control
+  (first-order Kohn term exact < 1e-12; zone-edge artifact bounded and
+  printed) + cosine family kept as a second sum-rule validation (1.3e-11)
+  and bandwidth-domination exhibit. Final PASS=5 FAIL=0.
+- Science: T1 kinetic-functional sum rule verified 9.3e-10 (three splits;
+  symmetric-split second-order term exactly 0); T3 class-level mass-energy
+  equivalence no-go (mismatch 9.1/7.5/3.2 binding energies, shape-
+  consistent, window-persistent); corollary = mediator requirement
+  converging on the record-preservation-forced covariant-hopping class.
+- Observed context: contact-on-cosine identity M_comp - 2m = E_B to all
+  printed digits (reported, ungated).
+- Note supervisor-authored. Local disposition: pass.
+- Cluster note: 2nd PR in the composite/matter_inertial family (block03
+  was 1st) — under the evaluator threshold.

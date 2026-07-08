@@ -323,3 +323,9 @@ or select a preferred action form.
 - Wilson-as-import: [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md)
 - Sister no-gos: [`BRIDGE_GAP_EXHAUSTED_ROUTES_CONSOLIDATION_NOTE_2026-05-06.md`](BRIDGE_GAP_EXHAUSTED_ROUTES_CONSOLIDATION_NOTE_2026-05-06.md)
 - Standard methodology: Drouffe-Zuber 1983 Phys. Rep. 102 ("Strong coupling and mean field methods in lattice gauge theories"); Menotti-Onofri 1981 Nucl. Phys. B190; Helgason 1978 (bi-invariant metrics)
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06](PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md)

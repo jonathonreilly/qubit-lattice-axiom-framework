@@ -29,16 +29,16 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3715 |
-| Applied audit verdicts | 1403 |
+| Applied audit verdicts | 1401 |
 | Retained-grade rows, including boxed decorations | 1329 |
 | Retained positive theorems | 193 |
 | Retained no-go rows | 196 |
 | Retained bounded rows | 895 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 21 |
-| Unaudited rows | 1953 |
+| Unaudited rows | 1955 |
 | Retained-pending-chain rows | 7 |
-| Audited conditional rows | 33 |
+| Audited conditional rows | 31 |
 | Audited renaming rows | 19 |
 | Audited numerical-match rows | 7 |
 | Citation cycles detected | 10 |
@@ -51,7 +51,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Metric | Value |
 |---|---:|
 | Total pending rows | 2000 |
-| Ready rows | 267 |
+| Ready rows | 266 |
 | Cycle-break targets | 10 |
 | Critical pending | 410 |
 | High pending | 273 |
@@ -63,11 +63,11 @@ Next ready rows by queue order:
 - [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
 - [`yt_zero_import_authority_note`](../../docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md) - critical; non_terminal_conditional
 - [`yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md) - critical; non_terminal_conditional
-- [`neutrino_majorana_current_atlas_nonrealization_note`](../../docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md) - critical; non_terminal_conditional
 - [`dm_neutrino_bosonic_normalization_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md) - critical; non_terminal_conditional
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; audit_in_progress
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; non_terminal_conditional
 - [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; unaudited
+- [`axiom_first_reflection_positivity_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -106,7 +106,7 @@ Top load-bearing rows by graph score:
 - `minimal_axioms` - critical; 1932 descendants; score 217.417
 - `three_generation_observable_theorem_note` - critical; 1187 descendants; score 67.214
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 65.644
-- `graph_first_su3_integration_note` - critical; 1577 descendants; score 65.624
+- `graph_first_su3_integration_note` - critical; 1578 descendants; score 65.625
 - `observable_principle_from_axiom_note` - critical; 1019 descendants; score 64.494
 - `plaquette_self_consistency_note` - critical; 1149 descendants; score 53.167
 - `minimal_axioms_2026-05-03` - critical; 1049 descendants; score 48.036

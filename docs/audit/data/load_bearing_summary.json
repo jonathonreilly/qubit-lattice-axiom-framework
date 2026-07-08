@@ -37,8 +37,8 @@
     {
       "claim_id": "graph_first_su3_integration_note",
       "criticality": "critical",
-      "load_bearing_score": 65.624,
-      "transitive_descendants": 1577
+      "load_bearing_score": 65.625,
+      "transitive_descendants": 1578
     },
     {
       "claim_id": "observable_principle_from_axiom_note",
@@ -73,8 +73,8 @@
     {
       "claim_id": "anomaly_forces_time_theorem",
       "criticality": "critical",
-      "load_bearing_score": 43.333,
-      "transitive_descendants": 1289
+      "load_bearing_score": 43.335,
+      "transitive_descendants": 1291
     },
     {
       "claim_id": "alpha_s_derived_note",
@@ -85,8 +85,8 @@
     {
       "claim_id": "native_gauge_closure_note",
       "criticality": "critical",
-      "load_bearing_score": 41.586,
-      "transitive_descendants": 1536
+      "load_bearing_score": 41.587,
+      "transitive_descendants": 1537
     },
     {
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",

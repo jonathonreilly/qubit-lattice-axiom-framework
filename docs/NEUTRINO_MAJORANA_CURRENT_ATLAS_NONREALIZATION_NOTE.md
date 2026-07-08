@@ -212,3 +212,9 @@ It is a current-atlas non-realization boundary only.
 ```bash
 python3 scripts/frontier_neutrino_majorana_current_atlas_nonrealization.py
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [one_generation_matter_closure_note](ONE_GENERATION_MATTER_CLOSURE_NOTE.md)

@@ -146,10 +146,10 @@
       "max_transitive_descendants": 305,
       "nodes": [
         {
-          "audit_status": "audited_conditional",
+          "audit_status": "unaudited",
           "claim_id": "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
           "claim_type": "no_go",
-          "effective_status": "audited_conditional",
+          "effective_status": "unaudited",
           "note_path": "docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md",
           "title": "Bridge Gap \u2014 Action-Form Uniqueness No-Go",
           "transitive_descendants": 305

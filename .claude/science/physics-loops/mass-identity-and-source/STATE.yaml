@@ -31,9 +31,10 @@ success_bar: >
   classification finds robust currents beyond the expected list, or the
   proof requires supplied structure the axioms do not provide, write up
   and stop for the owner conversation.
-current_block: block01 (Noether classification) SHIPPED; block02
-  (operator-tagged identity test) runner in revision after run 1
-current_branch: physics-loop/mass-identity-and-source-block01-20260708
+current_block: block01 SHIPPED (PR #5068, KERNEL-EXACT-3); block02
+  SHIPPED as bounded methods negative after three pre-disciplined
+  iterations (see NO_GO_LEDGER; zone-origin migration measured)
+current_branch: physics-loop/mass-identity-and-source-block02-20260708
 worktree: /Users/jonBridger/tp-matter-mass-wep
 imports: >
   Block01 inherits I-GAUGE and the engine/measurement machinery by

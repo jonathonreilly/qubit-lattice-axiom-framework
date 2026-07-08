@@ -23,12 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1946 |
+| unaudited | 1945 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 20 |
 | ~~audited_conditional~~ | 37 |
+| ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -63,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1275 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 48 |
-| `audited_failed` | 22 |
+| `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2291 |
+| `unaudited` | 2290 |
 
 | claim_type | count |
 |---|---:|
@@ -1513,6 +1514,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `koide_reviewer_stress_test_note_2026-04-21` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | weak | codex-current | B | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -10669,6 +10671,18 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The algebraic closure follows directly: on M_zeta, D is zero, U and U^dagger are scalar by the eigenspace definition, and D-spectral projectors are either identity for lambda=0 or zero for lambda nonzero. Polynomial combinations of scalar restrictions remain scalar.
 - **rationale:** The load-bearing step is a genuine class-A finite-dimensional algebraic closure over the stated retained inputs, not a definition substitution or numerical fit. The runner checks the scalar restrictions for generators and sampled polynomial words at r=1.0 and r=1.425, and also verifies a non-retained rank-one projector is non-scalar. The conclusion does not use PDG data, charged-lepton masses, Koide targets, or an external comparator.
 - **auditor confidence:** high
+
+### `koide_reviewer_stress_test_note_2026-04-21`
+
+- **Note:** [`KOIDE_REVIEWER_STRESS_TEST_NOTE_2026-04-21.md`](../../docs/KOIDE_REVIEWER_STRESS_TEST_NOTE_2026-04-21.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Reviewer stress-test claim that the Koide Q=2/3 and delta=2/9 support-route objections are all internally addressed by executable checks or retained theorem-grade authorities, while physical bridges remain out of scope.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=weak)
+- **load-bearing step:** The stress-test declares the Frobenius/AM-GM Q route and the ambient APS delta route internally clean under 'retained kinematics', with the runner reporting PASS=34 FAIL=0 after hard-coding Frobenius normalization, PL S^3 x R kinematics, and ABSS/physical-context premises.  _(class `B`)_
+- **chain closes:** False — The executable checks pass only after supplying premises that the direct authorities do not retain: the Frobenius Q dependency is a no-go against forcing beta=0/Q=2/3, and the S3/APS dependencies keep global PL S3/ABSS and physical readout bridges out of scope.
+- **rationale:** Issue: the source and runner claim that all internal Q/delta reviewer objections are addressed, but the cited authorities explicitly withhold the needed premises: the Frobenius row is a retained no-go against deriving the beta=0 normalization needed for Q=2/3, the S3 cap row is only a finite cone-cap certificate and does not identify the compactification as PL S^3, and the APS rows retain bounded local/topological arithmetic while leaving global ABSS and physical readout bridges out of scope. Why this blocks: passing symbolic checks after hard-coding Frobenius normalization, PL S^3 x R kinematics, and ABSS/metric-independence premises does not answer a reviewer objection to whether those premises are retained; the stress-test is contradicted by its own one-hop dependency surfaces. Repair target: split the executable algebraic subchecks from authority claims, narrow the row to a supplied-premise diagnostic, and add/audit separate positive bridge theorems for Q=2/3 normalization, global PL/ABSS applicability if needed, and physical readout identification. Claim boundary until fixed: the runner is useful as a diagnostic over supplied Frobenius/Q and APS/topology premises, but it cannot be cited as proving the Koide support chains are internally clean or reviewer-complete on current retained authorities.
 
 ### `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25`
 

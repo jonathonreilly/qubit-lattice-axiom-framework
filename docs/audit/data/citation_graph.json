@@ -57778,7 +57778,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18"
+      "to": "observable_principle_from_axiom_note"
     },
     {
       "from": "repo.front_door_status",
@@ -111814,7 +111814,7 @@
         "realized_state_primitive",
         "tier_a_residual_owner_adoption_retirement_2026-07-04",
         "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
-        "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
+        "observable_principle_from_axiom_note",
         "yt_zero_import_authority_note",
         "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
@@ -111823,7 +111823,7 @@
         "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3cd8af90f9a2b25c3e2f2803e29f04ba0f117fd77955cc9937d3d766e1ab749c",
+      "note_hash": "de9e93ea224c9172572c5c6042771a0baef448174abf4c396c5bb67663a830f0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

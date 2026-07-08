@@ -1423,7 +1423,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -1448,6 +1447,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_context_generator_nonidentifiability_no_go_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -2426,25 +2426,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** T_odd T_even has eigenvalues e^{+2E(p)} and e^{-2E(p)}, the decaying channel t1^(2)(p)=e^{-2E(p)} gives T_hat^2=Gamma(t1^(2))=tensor_p diag(1,e^{-2E(p)})=B^dag B, while the one-step matrices have complex spectra for sin(p)!=0 and a negative eigenvalue at sin(p)=0.  _(class `C`)_
 - **chain closes:** True — From the action recurrence, with q=m^2+sin^2(p), T_odd T_even has trace 2+4q=2 cosh(2E) and determinant 1, so its eigenvalues are e^{+/-2E}. The decaying eigenvalue is positive, Gamma has positive product eigenvalues, and the one-step non-positivity follows from complex spectra off sin(p)=0 plus eigenvalues -m+/-sqrt(m^2+1) at sin(p)=0.
 - **rationale:** The cached runner reports only C1-C6 and PASS=6 FAIL=0. C1 executes the mass sweep over m in {0.05, 0.1, 0.5, 1.0, 2.0, 5.0}; the independent closed-form product check reproduces the sweep minimum eigenvalue 7.912e-13 at m=5, L_s=6. C1-C6 witness the note's bounded free two-step positivity and one-step non-positivity claim. They do not witness any gauge-background or U-integrated RP extension.
-- **auditor confidence:** high
-
-### `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`
-
-- **Note:** [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Axis-conditional single-clock codimension-1 finite-block evolution: conditional on B-AXIS, the supplied two-step transfer gives one Stone generator/unitary group, equal-time tensor-product `M_2(C)` slice algebra, and free `U=1` bilinear quasilocal propagation only; no unconditional axis-selection or no-second-clock theorem is audited.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-axiom_first_single_clock_codimen-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given the supplied positive two-step transfer `T_hat^2` and fixed denominator `2a_tau`, apply (R-STONE)/(R-SC2) to get the unique generator `H = -(1/(2a_tau)) log(T_hat^2/M_T)`, with slice locality/propagation imported from (R-ET)/(R-FBQL) and axis/no-second-clock content left as (B-AXIS).  _(class `A`)_
-- **chain closes:** False — The internal algebraic composition is coherent, and the runner checks the exchange-symmetry and two-clock boundary, but the restricted packet does not close the theorem because load-bearing transfer/propagation authorities are marked unaudited and B-AXIS.1b/B-AXIS.2/B-AXIS.3 remain declared/open premises.
-- **rationale:** The proof is not a renaming or numerical match; it is an algebraic composition over supplied transfer, locality, and propagation inputs plus a computed exchange-symmetry boundary. The runner source performs substantive finite-matrix checks and totals PASS=47, but those checks do not independently establish the actual upstream RP/SC transfer supply, the R-FBQL propagation theorem, or the open B-AXIS premises. The APBC axis-label bridge and record-durability route-pruning co-cycle links were treated as informational/see-also references, not as chain support. Because the packet marks load-bearing upstream suppliers unaudited and leaves B-AXIS open, the result is conditional rather than clean.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
-  - `AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`
-  - `FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`
-  - `SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md`
-  - `SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md`
 - **auditor confidence:** high
 
 ### `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05`
@@ -15748,6 +15729,26 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** [PASS] strict local/taste-cell chi selector is absent (strict=[], conserved_neutral_count=3); [PASS] local signed source primitive is blocked (physical_candidates=[]); FINAL_TAGS include NO_GO_STRICT_SELECTOR, SOURCE_PRIMITIVE_BLOCKED_LOCAL, and SIGNED_GRAVITY_PHYSICAL_SECTOR_NOT_RETAINED.  _(class `C`)_
 - **chain closes:** True — The restricted packet contains closed finite/local negative results, not merely an unresolved frontier note: the cached SHA-pinned runner completes and verifies absence of a strict local selector, absence of a native local signed source primitive, and non-retention of a physical signed-gravity sector. Under the judicial standard, those are retained negative boundaries, so no_go is the correct claim type. The load-bearing status is carried by finite runner checks over the local selector/source surface rather than by source-note status prose, so class C is the correct class.
 - **rationale:** The restricted packet contains closed finite/local negative results, not merely an unresolved frontier note: the cached SHA-pinned runner completes and verifies absence of a strict local selector, absence of a native local signed source primitive, and non-retention of a physical signed-gravity sector. Under the judicial standard, those are retained negative boundaries, so no_go is the correct claim type. The load-bearing status is carried by finite runner checks over the local selector/source surface rather than by source-note status prose, so class C is the correct class.
+- **auditor confidence:** high
+
+### `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17`
+
+- **Note:** [`SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md`](../../docs/SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the source-inventory claim that the current single-clock packet admits exactly one physical-clock transfer, while arbitrary commuting positive factor transfers remain mathematical comparators rather than admitted second clocks.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=weak)
+- **load-bearing step:** On the current single-clock clock/evolution packet, the only admitted physical-clock transfer is the supplied two-step staggered RP/SC transfer (T_hat^2, 2 a_tau).  _(class `B`)_
+- **chain closes:** False — The runner's local checks pass, but the row has no ledger dependencies even though the proof and runner consume the single-clock parent, minimal axioms, RP2, blocked-time normalization, Stone uniqueness, and post-record clock/rate interface notes. Without those direct dependency edges, the audit graph cannot verify that the source-inventory premises are retained/current.
+- **rationale:** Issue: the note presents a source-inventory theorem but the ledger row has zero dependencies while the proof and runner explicitly read multiple source authorities. Why this blocks: the claimed inventory is only meaningful relative to the current single-clock packet and its retained clock/transfer boundaries, so a standalone zero-dependency row cannot close under audit-graph dependency closure. Repair target: add direct dependency edges or markdown-linked one-hop citations for the consumed authorities, then rerun the pipeline and verifier. Claim boundary until fixed: the local source scan and finite comparator algebra pass, but retained-grade source-inventory support is conditional on wiring the actual source packet into the ledger.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`
+  - `MINIMAL_AXIOMS_2026-06-29.md`
+  - `AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`
+  - `AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+  - `SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`
+  - `POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`

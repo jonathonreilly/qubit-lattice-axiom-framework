@@ -43,7 +43,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 26 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | non_terminal_conditional | critical | 390 | 9.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_local_finite_atom_availability_2026_06_17.py` |
 | 27 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | unaudited | critical | 388 | 11.60 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py` |
 | 28 | `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17` | bounded_theorem | unaudited | critical | 386 | 9.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py` |
-| 29 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | unaudited | critical | 386 | 9.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py` |
+| 29 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | non_terminal_conditional | critical | 386 | 9.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py` |
 | 30 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | unaudited | critical | 354 | 33.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_charged_lepton_observable_curvature.py` |
 | 31 | `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20` | positive_theorem | unaudited | critical | 340 | 10.41 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_higgs_dressed_resolvent_root_theorem.py` |
 | 32 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | decoration | unaudited | critical | 325 | 13.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_q_delta_formal_ratio_repair.py` |
@@ -72,7 +72,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | cycle_id | length | max_desc | primary break target | criticality | audit_status |
 |---:|---|---:|---:|---|---|---|
-| 1 | `cycle-0001` | 3 | 385 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | critical | audited_conditional |
+| 1 | `cycle-0001` | 3 | 385 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | critical | unaudited |
 | 2 | `cycle-0002` | 2 | 379 | `quark_cp_carrier_completion_note_2026-04-18` | critical | audited_numerical_match |
 | 3 | `cycle-0003` | 2 | 305 | `bridge_gap_hk_cube_perron_note_2026-05-06` | critical | unaudited |
 | 4 | `cycle-0004` | 3 | 305 | `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06` | critical | unaudited |

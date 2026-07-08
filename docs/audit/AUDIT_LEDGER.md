@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 193 |
 | **retained_no_go** | 194 |
-| **retained_bounded** | 887 |
+| **retained_bounded** | 888 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
 | unaudited | 1966 |
-| audit_in_progress | 3 |
+| audit_in_progress | 2 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 16 |
-| `audited_clean` | 1265 |
+| `audit_in_progress` | 15 |
+| `audited_clean` | 1266 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
@@ -110,7 +110,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 8 | `key_terminology` | meta | critical | 1163 | 46.69 | `unaudited` | meta |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 922 | 43.85 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1289 | 43.33 | `unaudited` | unaudited |
-| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1027 | 42.51 | `audit_in_progress` | audit_in_progress |
+| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1027 | 42.51 | `audited_clean` | **retained_bounded** |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1536 | 41.59 | `audited_clean` | **retained** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1023 | 39.50 | `audited_clean` | **retained_bounded** |
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 319 | 39.32 | `unaudited` | unaudited |
@@ -131,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `alpha_s_derived_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -171,6 +170,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `alpha_s_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1918,6 +1918,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Substituting alpha_LM := alpha_bare/u_0 and alpha_s(v) := alpha_bare/u_0^2 gives alpha_LM^2 = alpha_bare * alpha_s(v) and alpha_s(v)/alpha_LM = 1/u_0.  _(class `A`)_
 - **chain closes:** True — The cited authority is retained and supplies exactly the two abstract positive-real definitions consumed by the source note. Independent substitution verifies P1, P2, and the corollaries without any plaquette value, running bridge, external comparator, or physical identification.
 - **rationale:** The load-bearing step is a genuine class A algebraic closure over retained-grade cited inputs. The runner source performs symbolic SymPy reductions on free positive symbols rather than merely printing constants or importing a numerical target, and its PASS breakdown is consistent with the note's stated scope. The source note explicitly excludes the open plaquette evaluation, M_Z running bridge, numerical readouts, and Standard-Model identification, so no open dependency is load-bearing for this narrow claim.
+- **auditor confidence:** high
+
+### `alpha_s_derived_note`
+
+- **Note:** [`ALPHA_S_DERIVED_NOTE.md`](../../docs/ALPHA_S_DERIVED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact forward arithmetic for alpha_s(v) and the alpha_LM identity over declared boundary inputs B1-B4; the M_Z running readout is only a bounded quarantined corollary.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-019f3f18-7c06-7951-930c-ce6b470f6f94`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given B1-B4, alpha_s(v) = alpha_bare / u_0^2 = 1 / (4 pi sqrt(<P>)) = 0.10330382, with alpha_LM^2 = alpha_bare * alpha_s(v).  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the conclusion follows by arithmetic from B1-B4 plus the cited algebraic and operator-counting authorities. The note does not derive B1, the B3 channel-selection step, or the B4 scheme/scale identification, and it correctly keeps those as declared boundary inputs rather than promoted conclusions.
+- **rationale:** The load-bearing T1 surface is class-A arithmetic over explicitly declared inputs, not a first-principles alpha_s derivation and not a PDG numerical match. The one-hop authorities are used within their stated scopes: plaquette reuse license for B1, abstract tadpole algebra, bounded operator count, and the running bridge only for C1. The runner recomputes T1 internally and quarantines helper consistency checks and PDG comparisons as non-load-bearing B/D checks. The open B1, B3, and B4 work prevents any stronger unbounded physical derivation, but it does not defeat the clean bounded theorem as scoped.
 - **auditor confidence:** high
 
 ### `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30`

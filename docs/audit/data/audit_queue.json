@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 420,
+    "critical": 419,
     "high": 273,
     "leaf": 777,
     "medium": 540
@@ -177,35 +177,6 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "alpha_s_derived_note",
-      "claim_scope": "Exact forward arithmetic for alpha_s(v) and the alpha_LM identity over declared boundary inputs B1-B4; the M_Z running readout is only a bounded quarantined corollary.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "qcd_low_energy_running_bridge_note_2026-05-01",
-        "plaquette_self_consistency_note",
-        "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
-        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 59,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 42.506,
-      "note_path": "docs/ALPHA_S_DERIVED_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_alpha_s_derived_bounded_chain.py",
-      "transitive_descendants": 1027
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
@@ -227,6 +198,33 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
       "transitive_descendants": 1026
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_zero_import_authority_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "alpha_s_derived_note",
+        "yt_color_projection_correction_note"
+      ],
+      "direct_in_degree": 9,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "load_bearing_score": 17.334,
+      "note_path": "docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
+      "transitive_descendants": 912
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1183,6 +1181,33 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "confinement_string_tension_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "graph_first_su3_integration_note",
+        "alpha_s_derived_note"
+      ],
+      "direct_in_degree": 24,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "load_bearing_score": 18.845,
+      "note_path": "docs/CONFINEMENT_STRING_TENSION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_confinement_string_tension.py",
+      "transitive_descendants": 114
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -1595,33 +1620,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_sm_hypercharge_uniqueness.py",
       "transitive_descendants": 918
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_zero_import_authority_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "alpha_s_derived_note",
-        "yt_color_projection_correction_note"
-      ],
-      "direct_in_degree": 9,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 17.334,
-      "note_path": "docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
-      "transitive_descendants": 912
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -11744,33 +11742,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_planck_primitive_coframe_boundary_carrier.py",
       "transitive_descendants": 117
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "confinement_string_tension_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "graph_first_su3_integration_note",
-        "alpha_s_derived_note"
-      ],
-      "direct_in_degree": 24,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 18.845,
-      "note_path": "docs/CONFINEMENT_STRING_TENSION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_confinement_string_tension.py",
-      "transitive_descendants": 114
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -37397,6 +37368,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "yt_ew_color_projection_theorem",
+        "alpha_s_derived_narrow_theorem_note_2026-05-10",
+        "alpha_s_derived_note",
+        "yt_vertex_power_operator_counting_lemma_note_2026-05-17"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/ALPHA_S_CMT_COUPLING_MAP_DERIVATION_THEOREM_NOTE_2026-05-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_alpha_s_cmt_coupling_map_derivation.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -41437,33 +41435,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_alpha_s_4loop_running_derivation_2026_05_10_4loop.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_ew_color_projection_theorem",
-        "alpha_s_derived_narrow_theorem_note_2026-05-10",
-        "alpha_s_derived_note",
-        "yt_vertex_power_operator_counting_lemma_note_2026-05-17"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/ALPHA_S_CMT_COUPLING_MAP_DERIVATION_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_alpha_s_cmt_coupling_map_derivation.py",
       "transitive_descendants": 1
     },
     {
@@ -59708,6 +59679,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 252,
-  "total_pending": 2010
+  "ready_count": 254,
+  "total_pending": 2009
 }

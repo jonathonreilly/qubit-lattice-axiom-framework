@@ -65,3 +65,30 @@
 - Note worker draft faithful; supervisor removed campaign-internal
   block-label tokens (9 replacements).
 - Local disposition: pass.
+
+## block04 — 2026-07-08 supervisor review
+
+- Runner worker delivered honest PASS=4 FAIL=2; both failures were
+  supervisor-spec physics errors: shallow bound states larger than the ring
+  (kappa_L < 8) corrupting M_comp, and a wrongly expected monotone
+  F-violation (it crosses zero at a fine-tuned U). Supervisor patches:
+  kappa_L size-validity diagnostic gating every composite extraction;
+  L=256/1024 legs; crossing detection reported as a single-configuration
+  accidental point. Final PASS=6 FAIL=0.
+- Note supervisor-authored (verdict-adjacent surface; worker drafting not
+  appropriate per workhorse split). N1-N8 checklist completed pre-ship in
+  NO_GO_DISCIPLINE_CHECKLIST.md; gate result PASS for the narrow boundary.
+- Local disposition: pass.
+
+## block04 cluster-cap evaluation (3rd PR in ep_record_stiffness family)
+
+Evaluator brief applied locally (no separate agent authorized mid-run):
+1. New load-bearing premise: YES — T2 exact convexity boundary, T3
+   same-rest-energy/different-inertia witness, T4 scaling-window theorem
+   with derived exponents; none present in #5061/#5062.
+2. Distinct claim type: YES — reduction + exact negative boundary +
+   constructive witness + window theorem vs the prior positive bounded
+   theorems.
+3. Independently reviewable: YES — standalone note + runner.
+4. Marginal review value: YES — this is the lane's decision surface.
+Verdict: OPEN.

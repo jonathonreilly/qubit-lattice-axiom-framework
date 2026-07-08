@@ -39,3 +39,15 @@ reachability_to_target: partially_closes
 artifact_role: theorem
 next_trace_action: "block04 consumes C1 (rest-energy sources cannot give exact finite-spacing composite WEP) as the comparator leg of the reduction/no-go"
 ```
+
+## block04 — WEP source-side reduction (executed)
+
+```yaml
+trace_class: direct_blocker_closure
+target_claim_id: ep_record_stiffness_weak_field_interface_2026_06_16
+target_blocker_text: "identifying the gravitational source coefficient with the same m as the inertial rest gap | still supplied shared-coupling template data"
+source_of_blocker_text: audit_ledger
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: "owner fork-interpretation answer selects: scaling-window reading -> T4 is the closure shape; exact reading -> write-up-then-stop protocol with the diagnosis already recorded in NO_GO_DISCIPLINE_CHECKLIST.md"
+```

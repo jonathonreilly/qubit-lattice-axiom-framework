@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 193 |
-| **retained_no_go** | 195 |
+| **retained_no_go** | 196 |
 | **retained_bounded** | 890 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
 | unaudited | 1961 |
-| audit_in_progress | 3 |
+| audit_in_progress | 2 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 16 |
-| `audited_clean` | 1269 |
+| `audit_in_progress` | 15 |
+| `audited_clean` | 1270 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
@@ -138,7 +138,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -932,6 +931,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_product_factoring_does_not_force_product_character_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12820,6 +12820,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The cited retained_bounded authority supplies the only substantive input, U1: F = cW on the admissibility class. Linearity of differentiation then gives ∂^k(cW) = c∂^kW, so ratios with nonzero denominator cancel c and the sign statement follows from sign(c).
 - **rationale:** The displayed ratio, sign, additive-constant, and higher-derivative identities are standard algebraic consequences of F = cW and differentiability. The runner source performs exact symbolic checks rather than merely printing constants, and no external comparator or fitted value is used. Because the claim reduces to one retained upstream theorem plus standard calculus, with zero class-D checks, the rubric classifies it as decoration rather than an independent bounded theorem.
 - **decoration parent:** `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite local no-go: Record finite additivity plus determinant direct-sum multiplicativity, continuity, and the positive determinant branch do not derive T1-d's determinant-only readout quotient or source-blocks-to-records disjointness clause.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-audit-loop:019f3fc2-ec66-78c1-951e-ce0c96a2ea65`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** There are continuous, block-additive scalar readouts such as W_epsilon(S)=log det(S)+epsilon Tr(S) that satisfy direct-sum additivity but are not functions of det(D+J) alone; likewise a non-injective source-to-record assignment can map disjoint source blocks to the same record label.  _(class `A`)_
+- **chain closes:** True — The finite countermodels satisfy the named algebraic/additivity/continuity inputs while violating the two T1-d bridge clauses, so those clauses do not follow from the restricted packet. The note explicitly leaves future readout-context theorems or approved primitives open and does not overclaim against them.
+- **rationale:** The load-bearing step is an algebraic independence witness, not a definition, renaming, numerical fit, or external comparator. The runner source actually checks the direct-sum additivity, determinant-preserving witness, smoothness, non-determinant-only separation, and non-injective record assignment, then separately checks text guardrails. The cited determinant lemma is retained-grade and the minimal axiom memo is an accepted premise; no open dependency is needed for this negative scoped result. The source note's boundary confines the result to the T1-d derivability route and preserves future bridge paths.
 - **auditor confidence:** high
 
 ### `oh_schur_boundary_action_note`

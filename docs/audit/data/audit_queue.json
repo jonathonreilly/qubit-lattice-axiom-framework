@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 422,
+    "critical": 421,
     "high": 273,
     "leaf": 777,
     "medium": 540
@@ -177,29 +177,30 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "yt_vertex_power_derivation",
-      "claim_scope": "On the adjacency-licensed gauged staggered-Dirac nearest-neighbor hopping surface, with the named link-exponential convention, quadratic-response coupling channel, and tree-level split, gauge covariance and the quadratic response force vertex power n_link = 2 and the abstract coupling-map identity gives alpha_s(v)=alpha_bare/u_0^2.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
         "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "minimal_axioms"
+        "yt_vertex_power_derivation",
+        "minimal_axioms_2026-05-03",
+        "physical_lattice_necessity_note"
       ],
-      "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.515,
-      "note_path": "docs/YT_VERTEX_POWER_DERIVATION.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 14.508,
+      "note_path": "docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_vertex_power.py",
-      "transitive_descendants": 1034
+      "runner_path": "scripts/frontier_yt_vertex_power_operator_counting_lemma.py",
+      "transitive_descendants": 1029
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -224,6 +225,35 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
       "transitive_descendants": 1026
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "plaquette_self_consistency_note",
+        "yt_vertex_power_derivation",
+        "yt_ward_identity_derivation_theorem",
+        "minimal_axioms_2026-04-11"
+      ],
+      "direct_in_degree": 7,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "load_bearing_score": 16.107,
+      "note_path": "docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_yt_p1_h_unit_renormalization.py",
+      "transitive_descendants": 779
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1283,33 +1313,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_anomaly_forces_time.py",
       "transitive_descendants": 1289
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
-        "yt_vertex_power_derivation",
-        "minimal_axioms_2026-05-03",
-        "physical_lattice_necessity_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.508,
-      "note_path": "docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_vertex_power_operator_counting_lemma.py",
-      "transitive_descendants": 1029
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2416,35 +2419,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_yt_explicit_systematic_budget.py",
       "transitive_descendants": 780
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "plaquette_self_consistency_note",
-        "yt_vertex_power_derivation",
-        "yt_ward_identity_derivation_theorem",
-        "minimal_axioms_2026-04-11"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 16.107,
-      "note_path": "docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_p1_h_unit_renormalization.py",
-      "transitive_descendants": 779
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -59761,6 +59735,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 250,
-  "total_pending": 2012
+  "ready_count": 251,
+  "total_pending": 2011
 }

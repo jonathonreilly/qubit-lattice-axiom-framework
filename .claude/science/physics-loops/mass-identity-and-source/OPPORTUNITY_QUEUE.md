@@ -1,6 +1,6 @@
 # Opportunity Queue — mass-identity-and-source
 
-## Block01 — operator-tagged two-band identity test (V1-V5 pre-write)
+## Block02 — operator-tagged two-band identity test (V1-V5 pre-write)
 
 - V1 (new claim, not restatement): the gauged campaign REPORTED band-2 as
   unusable (level crossings); this block either gates the identity ratio
@@ -17,7 +17,7 @@
   the right way" into "the field puts it on the line" — the named
   highest-value follow-up of the predecessor campaign.
 
-## Block02 — Noether source identification (V1-V5 pre-write)
+## Block01 — Noether source identification (V1-V5 pre-write)
 
 - V1: no prior note classifies the conserved local currents of the
   forced dynamics class; the source-coupling reduction currently rests on

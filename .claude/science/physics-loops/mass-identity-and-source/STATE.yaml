@@ -9,15 +9,15 @@ predecessors: matter-mass-wep (verdict under direction A), and
   gauged-mass-equivalence (separation gated; identity test deferred)
 goal: >
   Close the two gaps separating the mass lane from a derivation chain.
-  Thrust 1 (block01): operator-tagged band identification on the gauged
-  comparator, then gate the tautology-free two-band mass-energy-equivalence
-  identity test (shared emergent metric across internal excitation bands
-  and species). Thrust 2 (block02): Noether source identification -- prove
-  the robust-conserved-current classification on the record-preservation-
-  forced dynamics class (expected exhaustive list: identity, per-species
-  charge, energy), exclude non-scalar and charge couplings by the symmetry
-  classification and the banked composite dichotomy falsifier, reducing
-  gravitational-source species-blindness to one global constant.
+  Block01 (REORDERED; completed first): Noether source identification --
+  robust-conserved-current classification on the record-preservation-
+  forced dynamics class (exhaustive list found: per-species charge +
+  total energy, KERNEL-EXACT-3), reducing gravitational-source
+  species-blindness to one global constant via the banked dichotomy.
+  Block02: operator-tagged band identification on the gauged comparator,
+  then gate the tautology-free two-band mass-energy-equivalence identity
+  test (shared emergent metric across internal excitation bands and
+  species) as a window-trend + artifact-collapse statement.
 success_bar: >
   Block01: identity ratio (M2/M1)(E01/E02) = 1 gated within a
   drift-informed tolerance at every tag-valid, stability-valid point, with
@@ -31,7 +31,8 @@ success_bar: >
   classification finds robust currents beyond the expected list, or the
   proof requires supplied structure the axioms do not provide, write up
   and stop for the owner conversation.
-current_block: block01 (operator-tagged two-band identity test)
+current_block: block01 (Noether classification) SHIPPED; block02
+  (operator-tagged identity test) runner in revision after run 1
 current_branch: physics-loop/mass-identity-and-source-block01-20260708
 worktree: /Users/jonBridger/tp-matter-mass-wep
 imports: >
@@ -43,5 +44,16 @@ imports: >
 discipline: physics-loop standard (V1-V5, N1-N8, validity self-exclusion
   gates, runner + cache per note, vocab_lint before commits, PR per block,
   nothing landed in-loop, no repo-authority surfaces touched).
-next_exact_action: block01 codex worker (operator-tagged two-band runner)
+next_exact_action: block02 revised runner (window-trend identity gates)
 stop_condition_hit: none
+# block01 review 2026-07-08 (Noether classification): first worker draft's
+# Pauli basis infeasible (25.2M cols; worker refused correctly); redesigned
+# to exact fermionic normal-ordered algebra, degree <= 4, windows 4/6.
+# Supervisor-executed KERNEL-EXACT-3: dims all 3, gap 4.2e14, overflow 0;
+# free control 20; decoupled control 4 (mediator collapses energy ledger);
+# gauged pool dim 2; absentees >= 1.0. Axiom-trigger shape did NOT fire.
+# block02 run 1 (identity test): TAGGING-FAILED 0/6 was a supervisor
+# validity-criterion bug (third-party dominance needed) + wrong window
+# (band-2 leaves the relativistic regime at g >= 1.0: c2^2 flat/negative,
+# zone structure). Redesign: g in {0.4,0.5,0.6,0.8} gated, window-trend +
+# artifact-collapse gates (1 - c^2 ~ alpha E0^2), zone exhibit reported.

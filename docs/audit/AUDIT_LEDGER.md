@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1947 |
+| unaudited | 1946 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 36 |
+| ~~audited_conditional~~ | 37 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1275 |
-| `audited_conditional` | 36 |
+| `audited_conditional` | 37 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2292 |
+| `unaudited` | 2291 |
 
 | claim_type | count |
 |---|---:|
@@ -1437,6 +1437,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q_eq_3delta_identity_note_2026-04-21` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10485,6 +10486,18 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The determinant calculation gives W_c = log(1+k_+/c)+log(1+k_perp/c), and substituting u_i = k_i/c recovers the same normalized law for every c > 0. The zero-source derivative 1/c shows that only an externally fixed source unit can distinguish c, which is outside the audited two-slot algebra.
 - **rationale:** The load-bearing step is an exact finite-dimensional algebraic counterfamily, not a numerical match or a symbol renaming. The runner source genuinely computes the split projectors, determinant identity, source rescaling, derivatives, and dual stationary source with Sympy; the final narrative PASS checks are not load-bearing. The conclusion is narrow: it only says the reduced split/determinant algebra cannot derive the normalization c = 1, while leaving an external physical response-unit theorem or convention as the possible repair.
 - **auditor confidence:** high
+
+### `koide_q_eq_3delta_identity_note_2026-04-21`
+
+- **Note:** [`KOIDE_Q_EQ_3DELTA_IDENTITY_NOTE_2026-04-21.md`](../../docs/KOIDE_Q_EQ_3DELTA_IDENTITY_NOTE_2026-04-21.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Arithmetic identity Q = p*delta on the supplied Koide support-route values Q=2/3, delta=2/9, and p=d=3; downstream PMNS consequences, physical Koide bridges, and derivation of the Q value are out of scope.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=weak)
+- **load-bearing step:** The identity derives Q/delta=(2/d)/(2/p^2)=p^2/d=p after supplying Q=2/d, delta=2/p^2, and p=d=3; the runner verifies the rational arithmetic with PASS=10 FAIL=0.  _(class `B`)_
+- **chain closes:** False — The rational identity closes only after supplying Q=2/3 as a retained support-route value, but the cited Frobenius dependency is a no-go that explicitly does not derive the beta=0/Frobenius normalization needed for Q=2/3.
+- **rationale:** Issue: the note treats Q=2/3 and delta=2/9 as two retained support-route values, but the direct Q-side dependency is a retained no-go: positive-definiteness, Ad-invariance, and scalar/traceless orthogonality do not force the Frobenius normalization beta=0, and Q=2/3 is kept only as a conditional corollary if a separate authority admits that normalization. Why this blocks: the runner verifies exact arithmetic after Q=2/3 is supplied, but the cited one-hop packet does not supply that value as a retained theorem, so the row cannot claim a positive retained identity over two retained values. Repair target: supply and audit a positive authority fixing the Frobenius/isotype normalization or otherwise deriving Q=2/3, then re-audit this row as the arithmetic bridge; alternatively narrow this row to a supplied-input rational identity. Claim boundary until fixed: Q=p*delta is an exact algebraic identity for the supplied numbers Q=2/3, delta=2/9, p=d=3, but it is conditional on an external Q-normalization bridge and does not independently retain the Koide Q support route.
 
 ### `koide_q_minimal_scale_free_selector_note_2026-04-22`
 

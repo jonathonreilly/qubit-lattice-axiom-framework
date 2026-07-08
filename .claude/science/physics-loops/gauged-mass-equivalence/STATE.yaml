@@ -17,8 +17,8 @@ success_bar: >
   window) AND two-body truncation pinned at the kinetic-functional value.
   Negative fork: if full Fock does NOT trend to equivalence, N-discipline
   diagnosis + owner surface (it would strike at the mediator story).
-current_block: block01 (model + machinery + validation)
-current_branch: physics-loop/gauged-mass-equivalence-block01-20260708
+current_block: block02 (the separation measurement)
+current_branch: physics-loop/gauged-mass-equivalence-block02-20260708
 worktree: /Users/jonBridger/tp-matter-mass-wep
 imports: >
   I-GAUGE (declared comparator/bridge: 1D U(1) links + electric term +
@@ -28,8 +28,19 @@ imports: >
 discipline: same as matter-mass-wep pack (V1-V5, N1-N8, kappa-style
   validity diagnostics, size/truncation-convergence gates, PR per block,
   nothing landed in-loop).
-next_exact_action: block01 codex worker (ED engine + validation runner)
+next_exact_action: block03 mechanism-attribution summary + campaign close
 stop_condition_hit: none
 # block01 review 2026-07-08: engine validated (all residuals <= 7.4e-14);
 # worker surfaced three engineering flags, all documented in the note;
 # note supervisor-reviewed, dependencies section added; disposition pass.
+# block02 review 2026-07-08: TOTAL PASS, six checks; decisive gates =
+# static-channel separation (>= 0.30 abs, measured 0.65-1.94 across seven
+# stability-valid points) + cross-species metric universality (<= 10%,
+# measured 3.7/5.4/4.5%). Three findings folded into the note: momentum
+# unit-fix (P = theta/2; magnetic translation = one cell), single-band
+# R = M c^2/E0 demoted to fit-consistency (near-tautological for
+# exactly-determined fits), band-2 identity unstable (level crossings) so
+# the two-band identity test is REPORTED ungated with operator-tagged
+# band identification as the named follow-up. Fock attribution rho=0.857.
+# (m=0.2, g=2.0) self-excluded by stability discipline (projector null
+# columns). Note supervisor-authored; disposition pass.

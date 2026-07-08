@@ -57786,10 +57786,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "cl3_taste_generation_theorem"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
     },
     {
@@ -57803,6 +57799,10 @@
     {
       "from": "repo.front_door_status",
       "to": "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -111816,14 +111816,14 @@
         "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
         "yt_vertex_power_derivation",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-        "cl3_taste_generation_theorem",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
+        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+        "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f347cea40edef3ff1055e807aee3759d73da796e04ec6f06e220cdc8aaa306db",
+      "note_hash": "80b92b9fc36fdf09158fdc03be5b063b50f3b62c122a3c8afee60b4906974867",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

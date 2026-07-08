@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 414,
+    "critical": 413,
     "high": 273,
     "leaf": 777,
     "medium": 540
@@ -177,27 +177,33 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
-      "claim_scope": "Conditional finite-context theorem: inside a supplied determinant-sector readout context with injective block-to-record atoms, the determinant quotient and blocks-to-records algebra close and the continuous additive readout is c log det.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "observable_principle_from_axiom_note",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+        "minimal_axioms",
+        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
+        "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
+        "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
       ],
-      "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.497,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md",
-      "queue_reason": "audit_in_progress",
+      "direct_in_degree": 103,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "load_bearing_score": 64.493,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py",
-      "transitive_descendants": 1021
+      "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
+      "transitive_descendants": 1018
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1289,36 +1295,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_anomaly_forces_time.py",
       "transitive_descendants": 1289
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "observable_principle_from_axiom_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
-        "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
-        "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
-      ],
-      "direct_in_degree": 103,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 64.493,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
-      "transitive_descendants": 1018
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -59555,5 +59531,5 @@
     }
   ],
   "ready_count": 256,
-  "total_pending": 2004
+  "total_pending": 2003
 }

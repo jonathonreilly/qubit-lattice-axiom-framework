@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 193 |
 | **retained_no_go** | 196 |
-| **retained_bounded** | 891 |
+| **retained_bounded** | 892 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
 | unaudited | 1960 |
-| audit_in_progress | 2 |
+| audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 15 |
-| `audited_clean` | 1271 |
+| `audit_in_progress` | 14 |
+| `audited_clean` | 1272 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
@@ -137,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -931,6 +930,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_product_factoring_does_not_force_product_character_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -12821,6 +12821,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The cited retained_bounded authority supplies the only substantive input, U1: F = cW on the admissibility class. Linearity of differentiation then gives ∂^k(cW) = c∂^kW, so ratios with nonzero denominator cancel c and the sign statement follows from sign(c).
 - **rationale:** The displayed ratio, sign, additive-constant, and higher-derivative identities are standard algebraic consequences of F = cW and differentiability. The runner source performs exact symbolic checks rather than merely printing constants, and no external comparator or fitted value is used. Because the claim reduces to one retained upstream theorem plus standard calculus, with zero class-D checks, the rubric classifies it as decoration rather than an independent bounded theorem.
 - **decoration parent:** `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-context theorem: inside a supplied determinant-sector readout context with injective block-to-record atoms, the determinant quotient and blocks-to-records algebra close and the continuous additive readout is c log det.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop:019f3fcd-98e4-7c62-97c4-55895629d850`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Since the central sectors are determinant fibers, any scalar readout respecting the context factors as W(S)=f(det(S)), and direct-sum determinant factorization plus Record additivity gives f(z1 z2)=f(z1)+f(z2), hence f(z)=c log z under continuity and f(1)=0.  _(class `A`)_
+- **chain closes:** True — The determinant quotient and source-to-record injectivity are explicit assumptions of the supplied context, not derived from Record. Given those bounded premises, Record additivity on already-disjoint records and determinant multiplicativity close the product-to-sum/logarithm step.
+- **rationale:** The note does not overclaim an axiom reduction: it repeatedly states that the determinant-sector context is supplied and stronger than Record. Inside that bounded context, the theorem is ordinary algebra plus the standard continuous homomorphism result on R_{>0}. The runner checks finite algebraic witnesses, separations, and boundary preservation; it contains no external comparator or fitted numerical input.
 - **auditor confidence:** high
 
 ### `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16`

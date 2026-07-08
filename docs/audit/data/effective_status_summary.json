@@ -33,8 +33,8 @@
   ],
   "cycles_detected": 10,
   "effective_status_counts": {
-    "audit_in_progress": 3,
-    "audited_conditional": 27,
+    "audit_in_progress": 2,
+    "audited_conditional": 28,
     "audited_numerical_match": 7,
     "audited_renaming": 19,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,

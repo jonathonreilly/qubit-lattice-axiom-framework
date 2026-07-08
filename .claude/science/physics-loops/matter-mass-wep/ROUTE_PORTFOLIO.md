@@ -58,3 +58,27 @@ exponents (recommended reading: exact finite-spacing WEP fails in every
 lattice theory, so (1) is not an axiom defect), or exact finite-spacing
 WEP - in which case (2) is the axiom-trigger evidence and the write-up-
 then-stop protocol fires?
+
+## OWNER DIRECTION 2026-07-08: reading A selected (scaling-window closure)
+
+Direction, not an owner ruling (no axiom/primitive/Tier-A/audit content).
+Campaign verdict under A: the framework yields mass; remaining named
+mountains, in priority order:
+
+1. block05 — window mass-energy equivalence for composites. Key derivation
+   (supervisor): for ANY P-independent (static/instant-form) relative
+   interaction, Feynman-Hellmann + second-order perturbation give the sum
+   rule: 1/M_comp is built ENTIRELY from kinetic-band derivatives averaged
+   in the bound state — the binding energy never enters as an additive
+   term. Consequences: (a) Galilean control: quadratic bands must give
+   M_comp = m1 + m2 exactly, independent of U (Kohn-type); (b) NO static
+   comparator can satisfy mass-energy equivalence M_comp = E_2(0); (c)
+   composite WEP at O(E_B/E) in the window therefore REQUIRES binding
+   carried by a dynamical mediator — which on this framework's surface is
+   exactly the covariant hopping the record-preservation theorem already
+   forces. Convergence statement: the structure the Record axiom forces for
+   dynamics is the structure WEP requires for binding.
+2. Noether energy-current source identification in the window (R3's
+   identification step, easier target under A: couple to energy).
+3. Deferred to future campaigns: gauged/interacting transfer surface for
+   field-mediated binding; d=3 composite lift; unequal-mass gates.

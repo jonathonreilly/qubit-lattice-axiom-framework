@@ -1,0 +1,45 @@
+COMPOSITE MASS ADDITIVITY / BINDING DEFECT RUNNER
+CONVENTIONS: 1D E(p)=arcsinh(sqrt(m^2+sin^2 p)); M_I=m*sqrt(1+m^2); F(x)=sinh(2x)/2
+SPEC-NOTE: CHECK-02: the equal-mass identity bottom(P) = 2*E(P/2) is exact only at even total-P (P/2 on the one-particle grid); curvature is extracted by an even-P quadratic+quartic fit, and the odd-P grid-parity shift is reported as context.
+SPEC-NOTE: CHECK-04: band curvature is extracted by a quadratic+quartic fit in P^2; the pure-quadratic fit residual at these windows is real quartic curvature, not numerics.
+SPEC-NOTE: CHECK-05 physics: composite inertial mass is bandwidth-dominated (binding RAISES M_comp on the lattice), so no species-blind function of rest energy alone can give exact finite-spacing composite universality; gates use fixed thresholds and the scaling-window trend is reported.
+CHECK-01 PBLOCK-EXACTNESS: PASS residual=2.665e-15 spectrum=2.665e-15 translation=2.066e-15 orth=4.441e-16
+MEASURE-02 equal m=0.5 richardson_curvature=8.944271909589e-01 target_1_over_2MI=8.944271909999e-01 curvature_resid=4.102e-11 evenP_identity_resid=1.776e-15 bandfit_curvature_context=8.866343853574e-01 oddP_grid_parity_shift_context=4.201e-03
+REPORT-02 unequal m_a=0.5 m_b=1.0 evenP_curvature_fit=4.809189992605e-01 reported_reduced_inertia=5.067831514063e-01 quartic_fit_resid=1.518e-03
+REPORT-02 unequal m_a=1.0 m_b=0.5 evenP_curvature_fit=4.809189992605e-01 reported_reduced_inertia=5.067831514063e-01 quartic_fit_resid=1.518e-03
+MEASURE-02 equal m=1.0 richardson_curvature=3.535533905923e-01 target_1_over_2MI=3.535533905933e-01 curvature_resid=1.001e-12 evenP_identity_resid=3.331e-15 bandfit_curvature_context=3.529753366303e-01 oddP_grid_parity_shift_context=1.684e-03
+CHECK-02 FREE-ADDITIVITY: PASS residual=4.102e-11 rest=6.661e-16 richardson_curvature=4.102e-11 evenP_identity=3.331e-15 bandfit_context=5.806e-05
+EXTRACTION-04 m=0.5 U=0.2 curvature_p6=8.288038490237e-01 curvature_p4=8.006592612893e-01 extraction_shift=2.814e-02
+EXTRACTION-04 m=0.5 U=0.4 curvature_p6=6.196158255078e-01 curvature_p4=6.189386173244e-01 extraction_shift=6.772e-04
+EXTRACTION-04 m=0.5 U=0.8 curvature_p6=3.541096248913e-01 curvature_p4=3.537073064839e-01 extraction_shift=4.023e-04
+EXTRACTION-04 m=1.0 U=0.2 curvature_p6=2.702978899346e-01 curvature_p4=2.702610159779e-01 extraction_shift=3.687e-05
+EXTRACTION-04 m=1.0 U=0.4 curvature_p6=1.747143370857e-01 curvature_p4=1.746656016394e-01 extraction_shift=4.874e-05
+EXTRACTION-04 m=1.0 U=0.8 curvature_p6=9.240619211586e-02 curvature_p4=9.237660166672e-02 extraction_shift=2.959e-05
+MEASURE-03 m=0.5 U=0.2 E2_P0=9.359446224676e-01 continuum_edge=9.624236501192e-01 E_B=2.647902765161e-02
+MEASURE-03 m=0.5 U=0.4 E2_P0=8.513827006999e-01 continuum_edge=9.624236501192e-01 E_B=1.110409494193e-01
+MEASURE-03 m=0.5 U=0.8 E2_P0=5.639312794774e-01 continuum_edge=9.624236501192e-01 E_B=3.984923706418e-01
+MEASURE-03 m=1.0 U=0.2 E2_P0=1.704011709223e+00 continuum_edge=1.762747174039e+00 E_B=5.873546481628e-02
+MEASURE-03 m=1.0 U=0.4 E2_P0=1.561922241756e+00 continuum_edge=1.762747174039e+00 E_B=2.008249322835e-01
+MEASURE-03 m=1.0 U=0.8 E2_P0=1.201931537089e+00 continuum_edge=1.762747174039e+00 E_B=5.608156369498e-01
+CHECK-03 BOUND-STATE+BINDING-DEFECT: PASS residual=0.000e+00 min_binding=2.648e-02
+LOAD-BEARING-04 m=0.5 U=0.2 M_comp=1.206558103197e+00 free_2MI=1.118033988750e+00 F_E2=1.586683301877e+00 Delta_univ=-3.801251986809e-01 Delta_add=8.852411444663e-02 curvature=8.288038490237e-01 fit_resid=2.998e-15
+LOAD-BEARING-04 m=0.5 U=0.4 M_comp=1.613903258814e+00 free_2MI=1.118033988750e+00 F_E2=1.326731743751e+00 Delta_univ=2.871715150637e-01 Delta_add=4.958692700645e-01 curvature=6.196158255078e-01 fit_resid=1.887e-15
+LOAD-BEARING-04 m=0.5 U=0.8 M_comp=2.823984240211e+00 free_2MI=1.118033988750e+00 F_E2=6.913305809782e-01 Delta_univ=2.132653659233e+00 Delta_add=1.705950251461e+00 curvature=3.541096248913e-01 fit_resid=1.110e-15
+LOAD-BEARING-04 m=1.0 U=0.2 M_comp=3.699621925432e+00 free_2MI=2.828427124746e+00 F_E2=7.543093761148e+00 Delta_univ=-3.843471835717e+00 Delta_add=8.711948006854e-01 curvature=2.702978899346e-01 fit_resid=3.997e-15
+LOAD-BEARING-04 m=1.0 U=0.4 M_comp=5.723628734084e+00 free_2MI=2.828427124746e+00 F_E2=5.672405778877e+00 Delta_univ=5.122295520719e-02 Delta_add=2.895201609338e+00 curvature=1.747143370857e-01 fit_resid=1.998e-15
+LOAD-BEARING-04 m=1.0 U=0.8 M_comp=1.082178560876e+01 free_2MI=2.828427124746e+00 F_E2=2.743868476718e+00 Delta_univ=8.077917132045e+00 Delta_add=7.993358484017e+00 curvature=9.240619211586e-02 fit_resid=8.882e-16
+CHECK-04 COMPOSITE-INERTIAL-MASS: PASS residual=3.997e-15 min_M_comp=1.207e+00 max_quartic_fit_resid=3.997e-15
+MEASURE-05 m=0.5 U=0.2 a_Q/g=1.657607698047e+00 a_F/g=1.315049227778e+00 Q_composite_violation=7.336913e-02 F_composite_violation=3.150492e-01 F_single_violation=0.000e+00 E_B=2.647903e-02
+MEASURE-05 m=0.5 U=0.4 a_Q/g=1.239231651016e+00 a_F/g=8.220639846315e-01 Q_composite_violation=3.072484e-01 F_composite_violation=1.779360e-01 F_single_violation=0.000e+00 E_B=1.110409e-01
+MEASURE-05 m=0.5 U=0.8 a_Q/g=7.082192497826e-01 a_F/g=2.448068127061e-01 Q_composite_violation=6.040934e-01 F_composite_violation=7.551932e-01 F_single_violation=0.000e+00 E_B=3.984924e-01
+MEASURE-05 m=1.0 U=0.2 a_Q/g=5.405957798692e-01 a_F/g=2.038882327217e+00 Q_composite_violation=2.354821e-01 F_composite_violation=1.038882e+00 F_single_violation=0.000e+00 E_B=5.873546e-02
+MEASURE-05 m=1.0 U=0.4 a_Q/g=3.494286741713e-01 a_F/g=9.910506153374e-01 Q_composite_violation=5.058332e-01 F_composite_violation=8.949385e-03 F_single_violation=0.000e+00 E_B=2.008249e-01
+MEASURE-05 m=1.0 U=0.8 a_Q/g=1.848123842317e-01 a_F/g=2.535504376002e-01 Q_composite_violation=7.386358e-01 F_composite_violation=7.464496e-01 F_single_violation=0.000e+00 E_B=5.608156e-01
+CONTEXT-05 m=0.5 U->0 baseline: F(2 m_gap)/(2 M_I) - 1 = 5.000000e-01 (convexity of F: even the FREE composite breaks F-universality; additivity and F-universality are compatible only in the scaling window)
+CONTEXT-05 m=1.0 U->0 baseline: F(2 m_gap)/(2 M_I) - 1 = 2.000000e+00 (convexity of F: even the FREE composite breaks F-universality; additivity and F-universality are compatible only in the scaling window)
+CHECK-05 COMMON-ACCELERATION-DICHOTOMY: PASS residual=0.000e+00 gate: singles F-exact (violation<=1e-12) AND composite Q/F violations >= 0.25 at U=0.8
+MEASURE-06 d=16 overlap=1.353352832366e-01 gaussian_bound=1.353352832366e-01 ratio=1.000000e+00 energy_delta=-2.220e-16 reason=free distinguishable theory is exactly additive regardless of overlap
+MEASURE-06 d=32 overlap=3.354626279025e-04 gaussian_bound=3.354626279025e-04 ratio=1.000000e+00 energy_delta=-6.661e-16 reason=free distinguishable theory is exactly additive regardless of overlap
+MEASURE-06 d=48 overlap=1.522997974471e-08 gaussian_bound=1.522997974471e-08 ratio=1.000000e+00 energy_delta=0.000e+00 reason=free distinguishable theory is exactly additive regardless of overlap
+CHECK-06 SEPARATION/OVERLAP-BOUND: PASS residual=6.661e-16 max_energy_delta=6.661e-16 max_overlap_factor_resid=0.000e+00
+TOTAL: PASS=6 FAIL=0

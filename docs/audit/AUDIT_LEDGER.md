@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 890 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1964 |
+| unaudited | 1963 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 28 |
+| ~~audited_conditional~~ | 29 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 13 |
 | `audited_clean` | 1270 |
-| `audited_conditional` | 28 |
+| `audited_conditional` | 29 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2309 |
+| `unaudited` | 2308 |
 
 | claim_type | count |
 |---|---:|
@@ -1423,6 +1423,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5850,6 +5851,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** Five-judge panel majority 4/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: first / audited_clean / positive_theorem / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is exact class-A representation algebra over the retained SU(3)/N_c = 3 input, with no external comparator and no tuned numerical input. The runner checks real SU(N) generator normalization, Fierz completeness, dimension counting, and citation hygiene, but it does not turn the algebraic corollary into an independent physical theorem. Under the rubric's clean-vs-decoration tie-break, the closed content is decoration of the retained SU(3) parent, while the matching rule (M) remains explicitly outside the audit scope. | The scoped claim is exact class-A algebra: Fierz completeness and the 1 plus adjoint decomposition over the retained SU(3) color structure. There are no external comparators or tuned inputs, and the note explicitly excludes the matching rule (M), so the physical 9/8 EW correction is not closed here. Under the tie-break rule, because the closed content reduces to standard mathematics applied to a single retained SU(3) parent, the proper terminal tuple is decoration rather than an independent positive-theorem clean result. | The load-bearing step is a standard algebraic representation-dimension identity over the retained SU(3) parent, with no external comparator and no tuned numerical input. The runner checks real SU(N) algebra, Fierz completeness, and the exact Fraction(8,9), but it does not make this an independent physical theorem. Because the note explicitly excludes deriving matching rule (M) and the closed content is only the algebraic channel fraction, the decoration verdict is the applicable tuple. | Both audits correctly identify the load-bearing step as class A and agree that the scoped channel-fraction claim closes while matching rule (M) remains outside the result. Under the rubric's tie-breaker, a zero-comparator algebraic corollary that reduces to retained SU(3) structure plus standard Fierz/representation algebra is decoration rather than a new positive theorem. The runner supports the algebra and citation hygiene but does not turn the standard dimension-count corollary into an independent first-principles computation.
 - **decoration parent:** `graph_first_su3_integration_note`
 - **auditor confidence:** judicial_panel_majority
+
+### `ew_current_matching_rule_open_gate_note_2026-05-03`
+
+- **Note:** [`EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`](../../docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Underdetermination of the EW matching factor K_EW(kappa_EW) from the Fierz channel fraction plus stated CMT/OZI assumptions.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.5-xhigh-audit-lane-2026-07-08-row1`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The two completions kappa_EW = 0 and kappa_EW = 1 share the retained Fierz/CMT/OZI data but give K_EW = 9/8 and K_EW = 1, so the connected-trace selector is not determined.  _(class `A`)_
+- **chain closes:** False — The displayed rational algebra closes under the note's assumptions, but the no-go claim is broader than the restricted packet: it does not exhaust five independent attack routes and the CMT/OZI/readout-selector boundaries are not closed as direct retained inputs.
+- **rationale:** Issue: the N1 no-go discipline gate is not satisfied, because the note checks Fierz arithmetic, color-blind CMT scaling, OZI boundedness, and a two-completion witness, but does not enumerate at least five distinct retained-authority attack routes against a future EW readout selector. Why this blocks: a retained no-go would foreclose selector derivations that the source packet has not independently ruled out, and the CMT/OZI/readout-boundary context is not closed by the single one-hop dependency. Repair target: add direct retained dependencies or bounded admissions for the CMT/OZI/readout premises and a visible N1-N8 no-go checklist, or narrow the note to the algebraic kappa_EW parametrization. Claim boundary until fixed: the exact formula K_EW(kappa_EW)=1/(8/9+kappa_EW/9) and the kappa_EW=0 versus kappa_EW=1 independence witness are valid under the stated assumptions.
+- **open / conditional deps cited:**
+  - `EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md`
+  - `RCONN_DERIVED_NOTE.md`
+- **auditor confidence:** high
 
 ### `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`
 

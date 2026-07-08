@@ -29,16 +29,16 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3715 |
-| Applied audit verdicts | 1393 |
+| Applied audit verdicts | 1394 |
 | Retained-grade rows, including boxed decorations | 1324 |
 | Retained positive theorems | 193 |
 | Retained no-go rows | 196 |
 | Retained bounded rows | 890 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 21 |
-| Unaudited rows | 1964 |
+| Unaudited rows | 1963 |
 | Retained-pending-chain rows | 7 |
-| Audited conditional rows | 28 |
+| Audited conditional rows | 29 |
 | Audited renaming rows | 19 |
 | Audited numerical-match rows | 7 |
 | Citation cycles detected | 10 |
@@ -78,12 +78,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 181 |
+| critical | `unaudited` | 180 |
 | high | `unaudited` | 146 |
 | medium | `unaudited` | 96 |
 | high | `audited_conditional` | 3 |
 | medium | `open_gate` | 3 |
-| critical | `audited_conditional` | 1 |
+| critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |

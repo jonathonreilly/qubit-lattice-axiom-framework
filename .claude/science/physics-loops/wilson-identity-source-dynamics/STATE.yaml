@@ -1,0 +1,48 @@
+loop_slug: wilson-identity-source-dynamics
+created: 2026-07-08
+mode: campaign
+runtime_budget: owner standing parameters carry over (PR per block,
+  stacked, nothing landed in-loop, stop-and-write-up on any axiom wall)
+execution_split: workhorse (codex exec workers, supervisor reviews all diffs)
+predecessors: mass-identity-and-source (split verdict); this campaign runs
+  its two named frontier items.
+goal: >
+  Thrust A (blocks 01-02): Wilson-kernel gauged comparator — new ED
+  engine (two-component Wilson fermions, U(1) ring, single rotor), then
+  the two-band mass-energy-equivalence identity test in the formulation
+  where both mesons rest at P = 0 by construction (kills the staggered
+  zone-edge obstruction that filed the block02 no-go).
+  Thrust B (block03): source-field dynamics — classification theorem for
+  the static field law sourced by the derived energy density (local,
+  translation-invariant, stable quadratic class): the Poisson/Newtonian
+  member is the unique shift-symmetric point, and on compact surfaces a
+  positive total source FORCES background subtraction (energy contrasts
+  source the window field). Grounded by a measured comparator leg: the
+  framework's realized gauge sector already produces the d=1 subtracted
+  Poisson response for charge (Gauss ring), including its screening
+  corrections.
+success_bar: >
+  A: engine validation TOTAL PASS with doubler-absence check; identity
+  gates (own-frame fits, tag validity, trend + artifact collapse +
+  cross-species) run to a clean verdict either way — a gate pass is the
+  campaign prize; an honest fail files with the squeeze anatomy compared
+  against the staggered case. B: exact solvability/uniqueness identities
+  (rank, shift symmetry, subtraction forcing) at 1e-12; window Green's
+  function behavior exhibited in d = 1,2,3; comparator flux-profile leg
+  measured with the screening onset reported honestly.
+current_block: block01 (Wilson engine) + block03 (source dynamics) workers
+  in parallel
+current_branch: physics-loop/wilson-identity-source-dynamics-block01-20260708
+worktree: /Users/jonBridger/tp-matter-mass-wep
+imports: >
+  I-GAUGE-W (declared): the Wilson-kernel d=1 U(1) comparator — a second
+  bridge instantiation of the record-preservation-forced covariant-hopping
+  class (Wilson term is a member of the gauge-invariant-local class);
+  convention note required (Wilson vs staggered vs two-step kernels all
+  distinct). Block03 declares P-STATIC-SOURCE and the source form by
+  citation from the classification note (#5068).
+discipline: physics-loop standard (V1-V5, N1-N8, validity self-exclusion,
+  runner + cache per note, vocab_lint, PR per block, nothing landed).
+next_exact_action: review worker drafts (Wilson engine; source-dynamics
+  classification runner)
+stop_condition_hit: none

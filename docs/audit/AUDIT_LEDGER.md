@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1948 |
+| unaudited | 1947 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 35 |
+| ~~audited_conditional~~ | 36 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1275 |
-| `audited_conditional` | 35 |
+| `audited_conditional` | 36 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2293 |
+| `unaudited` | 2292 |
 
 | claim_type | count |
 |---|---:|
@@ -1452,6 +1452,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_zero_import_authority_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -18972,6 +18973,18 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — For the bounded case, the runner computes dz through grow/_meas_yz/_prop_orbit rather than hard-coding the claimed dz values. The scalar-exposure match also checks independently because avg_inv_r depends on y_src^2+z_src^2=R^2, so it is direction-independent at fixed parameters.
 - **rationale:** The primary runner source verifies that the reported CCW/CW dz signs come from the helper propagation computation, and the contested dz constants are not simply printed as expected values. The matched scalar exposure is not merely stdout trust: it follows algebraically from the radius formula used in avg_inv_r. This clean verdict is limited to the bounded matched-exposure CCW/CW case and does not establish a phase-independent or unqualified retained vector-sector observable.
 - **auditor confidence:** high
+
+### `w_mass_derived_note`
+
+- **Note:** [`W_MASS_DERIVED_NOTE.md`](../../docs/W_MASS_DERIVED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded same-surface W-boson mass consistency probe: using the supplied v, g_2(v), g_1(v), the connected-trace kappa_EW=0 specialization, and the SM one-loop SU(2) beta coefficient, the runner computes M_W^tree=79.7956 GeV and M_W^RGE=80.5573 GeV and compares them to pole-mass measurements; retained W-mass prediction, kappa_EW selection, and SM-precision closure are out of scope.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=weak)
+- **load-bearing step:** The mass readout solves M_W=g_2(M_W)v/2 using the supplied same-surface g_2(v) at kappa_EW=0 and the SM one-loop SU(2) coefficient b_2=19/6, then compares the resulting M_W values to experimental pole measurements.  _(class `B`)_
+- **chain closes:** False — The deterministic arithmetic closes only after supplying kappa_EW=0, the same-surface EW normalization values, and the SM one-loop running/pole-comparator infrastructure; the direct YT dependency is a no-go that explicitly does not select kappa_EW=0.
+- **rationale:** Issue: the W-mass readout consumes the connected-trace specialization kappa_EW=0 and SM one-loop running/pole-comparator infrastructure as supplied inputs, while the direct color-projection dependency explicitly retains only the kappa-family algebra/no-go and says kappa_EW=0 is not derived. Why this blocks: the runner reproduces the same-surface arithmetic, but a hostile auditor can reject any retained W-mass derivation because the EW selector and physical running/pole-mass bridge are not closed by the cited retained authorities. Repair target: supply a retained EW-current selector theorem fixing kappa_EW=0 and a scoped retained bridge from the framework EW normalization surface through the chosen SM RGE/pole-mass infrastructure, or keep the row explicitly as a supplied-input diagnostic. Claim boundary until fixed: the row may be cited only as a bounded consistency calculation over the supplied kappa_EW=0 surface and standard one-loop running, not as a retained mass prediction or as evidence that the EW selector is derived.
 
 ### `wave_3plus1d_promotions_note`
 

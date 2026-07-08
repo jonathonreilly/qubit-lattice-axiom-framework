@@ -17,8 +17,8 @@ owner_stop_condition: >
   finish diagnosis note, checkpoint, open PR/backlog, HALT, report to owner.
   No in-loop axiom or primitive adoption under any circumstances.
 ordering: chain-first (block01 -> block02 -> block03 -> block04)
-current_block: block01
-current_branch: physics-loop/matter-mass-wep-block01-20260708
+current_block: block03 (note drafting); block04 restructured per ROUTE_PORTFOLIO
+current_branch: physics-loop/matter-mass-wep-block03-20260708
 worktree: /Users/jonBridger/tp-matter-mass-wep
 base_commit: 9e4a78e3b3
 active_route: block01 mass observable on two-step transfer surface
@@ -30,8 +30,8 @@ hard_residual_being_attacked: >
 open_imports: [I-DYN, I-MASS, I-EXT(block02), I-INT(block03), EP-S3a(block04)]
 approved_primitives_consumed: [realized_state_primitive, kinetic_isotropy_primitive(partial I-TIME)]
 no_go_routes_excluded: see NO_GO_LEDGER.md
-cycles_completed: 0
-blocks_completed: []
-prs_open: []
-next_exact_action: draft block01 codex specs (note skeleton + runner) and launch worker
+cycles_completed: 2
+blocks_completed: [block01, block02]
+prs_open: ["#5061 block01", "#5062 block02 (stacked)"]
+next_exact_action: review block03 note draft; commit+PR block03; raise owner fork-interpretation question; then block04 three-deliverable plan per ROUTE_PORTFOLIO
 stop_condition_hit: none

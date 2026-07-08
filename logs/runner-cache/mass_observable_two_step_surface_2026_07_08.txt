@@ -1,0 +1,10 @@
+MASS OBSERVABLE ON THE FREE STAGGERED TWO-STEP TRANSFER SURFACE
+d=3, U=1, E(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu))
+CHECK-01 SYMBOL-SCALARITY: PASS residual=3.020e-14 target_residual=2.243e-14 max_imag=2.509e-15 bad_blocks=0
+CHECK-02 REST-GAP: PASS residual=0.000e+00 max_argmin_norm=0.000e+00
+CHECK-03 GLOBAL-GAP+M=0-SINGULARITY: PASS residual=0.000e+00 worst_margin=0.000e+00 corner_E_resid=0.000e+00 corner_E_range=[4.997919006935e-02,1.443635475179e+00] m0_zero_count=8 m0_min_noncorner_E=3.739e-01
+CHECK-04 INERTIAL-MASS: PASS residual=6.185e-10 sympy_residual=0 exact_d2=1/(m*sqrt(m**2 + 1))
+CHECK-05 UNIVERSAL-FUNCTION: PASS residual=8.882e-16 series=1 + 2*m**2/3 - 4*m**4/45 + O(m**5) coeffs(m1,m2,m3)=(0,2/3,0)
+CHECK-06 GENERATOR-INVARIANCE: PASS residual=1.779e-14 phase_dev=1.779e-14 rotation_dev=1.243e-14 rotation_transport=3.989e-16 global_dev=1.616e-14
+CHECK-07 WIDTH-INDEPENDENCE-CONTRAST: PASS residual=0.000e+00 spectral_sigma_resid=0.000e+00 old_proxy_ratio=3.0x
+TOTAL: PASS=7 FAIL=0

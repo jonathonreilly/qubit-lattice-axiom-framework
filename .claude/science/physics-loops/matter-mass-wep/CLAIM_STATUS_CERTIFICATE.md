@@ -1,8 +1,8 @@
 # Claim Status Certificate — matter-mass-wep
 
-## block01 (pending execution)
+## block01 (executed 2026-07-08)
 
-actual_current_surface_status: open
+actual_current_surface_status: bounded-support (candidate bounded_theorem; local review pass; runner PASS=7 FAIL=0)
 target_claim_type: bounded_theorem
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes

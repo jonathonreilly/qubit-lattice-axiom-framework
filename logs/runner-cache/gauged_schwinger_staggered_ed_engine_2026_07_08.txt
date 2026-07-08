@@ -1,0 +1,5 @@
+CHECKS-1-3 CHECK-01=ok(rule=tail, field=0.0e+00, comm=4.9e-16, Q=0.0e+00, E=0.0e+00); CHECK-02=ok(band=1.3e-15, ph=2.5e-14); CHECK-03=ok(d23=(+2.49e-14,-1.31e-14), d34=(-1.78e-14,+3.75e-14))
+CHECKS-4-6 CHECK-04=ok(max=7.1e-14 [m=0.3,g=0.0/free:1.6e-14; m=0.3,g=0.6:3.5e-14; m=0.3,g=1.0:4.2e-14; m=0.6,g=0.0/free:2.5e-14; m=0.6,g=0.6:3.5e-14; m=0.6,g=1.0:7.1e-14]); CHECK-05=ok(gap0(g=.6)=0.96870465, gap0(g=1)=1.3284641); CHECK-06=ok(free_err=1.4e-14, g1_gap_T2=1.5469429, full=1.3284641)
+MESON g=0.6 P0=[0.968705,1.36257,1.67338,1.81545] P1=[1.08278,1.42672,1.73027,1.90616]
+MESON g=1.0 P0=[1.32846,1.84921,2.54647,2.56389] P1=[1.40192,1.8532,2.55283,2.57311]
+TOTAL PASS elapsed=5.53s flags=Q0-ring-Gauss,finite-W-translation-interior,g0-Uholo-shifts-W

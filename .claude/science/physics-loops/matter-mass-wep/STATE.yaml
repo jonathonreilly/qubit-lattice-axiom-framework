@@ -17,11 +17,11 @@ owner_stop_condition: >
   finish diagnosis note, checkpoint, open PR/backlog, HALT, report to owner.
   No in-loop axiom or primitive adoption under any circumstances.
 ordering: chain-first (block01 -> block02 -> block03 -> block04)
-current_block: block04 delivered; campaign paused at owner conversation checkpoint
-current_branch: physics-loop/matter-mass-wep-block04-20260708
+current_block: block05 delivered; campaign target achieved under owner direction A
+current_branch: physics-loop/matter-mass-wep-block05-20260708
 worktree: /Users/jonBridger/tp-matter-mass-wep
 base_commit: 9e4a78e3b3
-active_route: block05 window mass-energy equivalence (static-comparator no-go + kinetic-functional sum rule)
+active_route: none — verdict delivered; frontier named in HANDOFF
 hard_residual_being_attacked: >
   no-go 2026-06-17 residuals R1 (energy/action context; narrowed to declared
   I-DYN chain, not closed) and R2 (inertial rest-gap readout; partially closed
@@ -30,8 +30,8 @@ hard_residual_being_attacked: >
 open_imports: [I-DYN, I-MASS, I-EXT(block02), I-INT(block03), EP-S3a(block04)]
 approved_primitives_consumed: [realized_state_primitive, kinetic_isotropy_primitive(partial I-TIME)]
 no_go_routes_excluded: see NO_GO_LEDGER.md
-cycles_completed: 4
-blocks_completed: [block01, block02, block03, block04]
-prs_open: ["#5061 block01", "#5062 block02 (stacked)", "#5063 block03 (stacked)", "block04 PR at commit time"]
-next_exact_action: block05 runner (Kohn-type sum rule + quadratic control + static-V sweep) then note; then Noether source identification scoping; then final handoff
-stop_condition_hit: none (owner selected reading A, 2026-07-08: scaling-window WEP closure; direction not ruling)
+cycles_completed: 5
+blocks_completed: [block01, block02, block03, block04, block05]
+prs_open: ["#5061 block01", "#5062 block02 (stacked)", "#5063 block03 (stacked)", "#5064 block04 (stacked)", "#5065 block05 (stacked)"]
+next_exact_action: owner queues reviewer for PRs 5061-5065 in stack order; next campaign = gauged-surface composite mass-energy equivalence
+stop_condition_hit: requested target honestly achieved under owner direction A (framework yields mass, scaling-window closure); further same-lane cycles would fail the corollary-churn guard without the gauged surface

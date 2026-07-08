@@ -57778,15 +57778,19 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_from_axiom_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "yt_zero_import_authority_note"
     },
     {
       "from": "repo.front_door_status",
       "to": "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "neutrino_majorana_current_atlas_nonrealization_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15"
     },
     {
       "from": "repo.front_door_status",
@@ -57799,10 +57803,6 @@
     {
       "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -111814,16 +111814,16 @@
         "realized_state_primitive",
         "tier_a_residual_owner_adoption_retirement_2026-07-04",
         "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
-        "observable_principle_from_axiom_note",
         "yt_zero_import_authority_note",
         "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17",
+        "neutrino_majorana_current_atlas_nonrealization_note",
+        "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
-        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "de9e93ea224c9172572c5c6042771a0baef448174abf4c396c5bb67663a830f0",
+      "note_hash": "421171a931720ea816a44d5c7034572fee9af649f846b3f930be7682ca52ba73",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

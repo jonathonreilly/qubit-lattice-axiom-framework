@@ -1,0 +1,177 @@
+INERTIAL CLOSURE ON THE FREE STAGGERED TWO-STEP TRANSFER SURFACE
+d=3, U=1, E(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu)), force gauge p->p-g*t*e3
+CHECK-01 EXACT-MOMENTUM-LAW: PASS residual=1.388e-17 symbolic_residual=0 gauge=momentum-shift canonical_rho_fixed physical_p=p-g*t*e3
+  CHECK-02 m=0.5 sigma_x=3 slope=-1.3272261024e+00 pred=-1.7888543820e+00 rel_resid=2.581e-01 r2=0.99999990 OUT-OF-WINDOW (3sigma_p+|g|t > p_*(m); T3 makes no claim)
+  CHECK-02 m=0.5 sigma_x=4.5 slope=-1.5374309439e+00 pred=-1.7888543820e+00 rel_resid=1.405e-01 r2=0.99999984 OUT-OF-WINDOW (3sigma_p+|g|t > p_*(m); T3 makes no claim)
+  CHECK-02 m=0.5 sigma_x=6 slope=-1.6333691879e+00 pred=-1.7888543820e+00 rel_resid=8.692e-02 T3_bound=2.028e-01 eps_tail=1.760e-03 resid/bound=0.4285 r2=0.99999981
+  CHECK-02 m=0.5 sigma_x=9 slope=-1.7127985336e+00 pred=-1.7888543820e+00 rel_resid=4.252e-02 T3_bound=9.461e-02 eps_tail=1.117e-06 resid/bound=0.4494 r2=0.99999978
+  CHECK-02 m=0.5 sigma_x=12 slope=-1.7433090718e+00 pred=-1.7888543820e+00 rel_resid=2.546e-02 T3_bound=5.734e-02 eps_tail=8.556e-11 resid/bound=0.4440 r2=0.99999976
+  CHECK-02 m=1 sigma_x=3 slope=-6.1064846774e-01 pred=-7.0710678119e-01 rel_resid=1.364e-01 T3_bound=3.602e-01 eps_tail=1.637e-03 resid/bound=0.3788 r2=0.99999996
+  CHECK-02 m=1 sigma_x=4.5 slope=-6.6005124046e-01 pred=-7.0710678119e-01 rel_resid=6.655e-02 T3_bound=1.618e-01 eps_tail=4.718e-07 resid/bound=0.4114 r2=0.99999995
+  CHECK-02 m=1 sigma_x=6 slope=-6.7946250490e-01 pred=-7.0710678119e-01 rel_resid=3.909e-02 T3_bound=9.289e-02 eps_tail=9.309e-12 resid/bound=0.4209 r2=0.99999995
+  CHECK-02 m=1 sigma_x=9 slope=-6.9413248079e-01 pred=-7.0710678119e-01 rel_resid=1.835e-02 T3_bound=4.370e-02 eps_tail=0.000e+00 resid/bound=0.4198 r2=0.99999995
+  CHECK-02 m=1 sigma_x=12 slope=-6.9943946301e-01 pred=-7.0710678119e-01 rel_resid=1.084e-02 T3_bound=2.649e-02 eps_tail=0.000e+00 resid/bound=0.4094 r2=0.99999995
+  CHECK-02 m=2 sigma_x=3 slope=-2.0541568999e-01 pred=-2.2360679775e-01 rel_resid=8.135e-02 T3_bound=2.257e-01 eps_tail=1.535e-05 resid/bound=0.3605 r2=0.99999998
+  CHECK-02 m=2 sigma_x=4.5 slope=-2.1512628869e-01 pred=-2.2360679775e-01 rel_resid=3.793e-02 T3_bound=1.018e-01 eps_tail=1.673e-11 resid/bound=0.3725 r2=0.99999998
+  CHECK-02 m=2 sigma_x=6 slope=-2.1870835759e-01 pred=-2.2360679775e-01 rel_resid=2.191e-02 T3_bound=5.847e-02 eps_tail=0.000e+00 resid/bound=0.3747 r2=0.99999998
+  CHECK-02 m=2 sigma_x=9 slope=-2.2132990520e-01 pred=-2.2360679775e-01 rel_resid=1.018e-02 T3_bound=2.751e-02 eps_tail=0.000e+00 resid/bound=0.3702 r2=0.99999998
+  CHECK-02 m=2 sigma_x=12 slope=-2.2226027740e-01 pred=-2.2360679775e-01 rel_resid=6.022e-03 T3_bound=1.667e-02 eps_tail=0.000e+00 resid/bound=0.3612 r2=0.99999998
+  CHECK-02 m=0.2 sigma_x=3 slope=-2.3023505716e+00 pred=-4.9029033785e+00 rel_resid=5.304e-01 OUT-OF-WINDOW (near-gapless: p_*(0.2)=0.120 admits none of the declared widths)
+  CHECK-02 m=0.2 sigma_x=4.5 slope=-3.0801103616e+00 pred=-4.9029033785e+00 rel_resid=3.718e-01 OUT-OF-WINDOW (near-gapless: p_*(0.2)=0.120 admits none of the declared widths)
+  CHECK-02 m=0.2 sigma_x=6 slope=-3.5789842684e+00 pred=-4.9029033785e+00 rel_resid=2.700e-01 OUT-OF-WINDOW (near-gapless: p_*(0.2)=0.120 admits none of the declared widths)
+  CHECK-02 m=0.2 sigma_x=9 slope=-4.1304794081e+00 pred=-4.9029033785e+00 rel_resid=1.575e-01 OUT-OF-WINDOW (near-gapless: p_*(0.2)=0.120 admits none of the declared widths)
+  CHECK-02 m=0.2 sigma_x=12 slope=-4.3994472223e+00 pred=-4.9029033785e+00 rel_resid=1.027e-01 OUT-OF-WINDOW (near-gapless: p_*(0.2)=0.120 admits none of the declared widths)
+  CHECK-02 m=0.2 sigma_x=0.5 slope=-7.9447722724e-02 pred=-4.9029033785e+00 rel_resid=9.838e-01 OUT-OF-WINDOW (near-gapless: p_*(0.2)=0.120 admits none of the declared widths)
+  CHECK-02 m=0.2 sigma_x=1 slope=-5.7458410916e-01 pred=-4.9029033785e+00 rel_resid=8.828e-01 OUT-OF-WINDOW (near-gapless: p_*(0.2)=0.120 admits none of the declared widths)
+  CHECK-02 m=0.2 sigma_x=1.5 slope=-1.0886843702e+00 pred=-4.9029033785e+00 rel_resid=7.780e-01 OUT-OF-WINDOW (near-gapless: p_*(0.2)=0.120 admits none of the declared widths)
+  CHECK-02 m=0.5 sigma_x=0.5 slope=-7.1814996019e-02 pred=-1.7888543820e+00 rel_resid=9.599e-01 OUT-OF-WINDOW (historical 2026-04-07 width; reported for continuity)
+  CHECK-02 m=0.5 sigma_x=1 slope=-4.5775242472e-01 pred=-1.7888543820e+00 rel_resid=7.441e-01 OUT-OF-WINDOW (historical 2026-04-07 width; reported for continuity)
+  CHECK-02 m=0.5 sigma_x=1.5 slope=-7.8859333505e-01 pred=-1.7888543820e+00 rel_resid=5.592e-01 OUT-OF-WINDOW (historical 2026-04-07 width; reported for continuity)
+  CHECK-02 m=1 sigma_x=0.5 slope=-5.0049033902e-02 pred=-7.0710678119e-01 rel_resid=9.292e-01 OUT-OF-WINDOW (historical 2026-04-07 width; reported for continuity)
+  CHECK-02 m=1 sigma_x=1 slope=-2.8113609562e-01 pred=-7.0710678119e-01 rel_resid=6.024e-01 OUT-OF-WINDOW (historical 2026-04-07 width; reported for continuity)
+  CHECK-02 m=1 sigma_x=1.5 slope=-4.3390308735e-01 pred=-7.0710678119e-01 rel_resid=3.864e-01 OUT-OF-WINDOW (historical 2026-04-07 width; reported for continuity)
+  CHECK-02 m=2 sigma_x=0.5 slope=-2.3364709512e-02 pred=-2.2360679775e-01 rel_resid=8.955e-01 OUT-OF-WINDOW (historical 2026-04-07 width; reported for continuity)
+  CHECK-02 m=2 sigma_x=1 slope=-1.1592068065e-01 pred=-2.2360679775e-01 rel_resid=4.816e-01 OUT-OF-WINDOW (historical 2026-04-07 width; reported for continuity)
+  CHECK-02 m=2 sigma_x=1.5 slope=-1.6315519404e-01 pred=-2.2360679775e-01 rel_resid=2.703e-01 OUT-OF-WINDOW (historical 2026-04-07 width; reported for continuity)
+CHECK-02 SLOPE-VS-T3-BOUND: PASS residual=4.494e-01 worst_resid/bound=0.4494 min_r2=0.99999976 gate=bound-compliance+informative
+  CHECK-03 sympy_d4_axial=(-4*m**4 - 10*m**2 - 3)/(m**3*(m**2 + 1)**(3/2))
+  CHECK-03 sympy_d4_mixed=(-2*m**2 - 1)/(m**3*(m**2 + 1)**(3/2))
+  CHECK-03 m=0.5 widths=[6.0, 9.0, 12.0] A=1.3933187496e+01 B=-2.374057e+02 A_iso_pred=1.4000000000e+01 A/A_iso=0.995228 loglog_alpha_context=1.855524
+  CHECK-03 m=1 widths=[3.0, 4.5, 6.0, 9.0, 12.0] A=5.6951586069e+00 B=-2.917153e+01 A_iso_pred=5.7500000000e+00 A/A_iso=0.990462 loglog_alpha_context=1.891942
+  CHECK-03 m=2 widths=[3.0, 4.5, 6.0, 9.0, 12.0] A=3.1233059901e+00 B=-7.689154e+00 A_iso_pred=3.1250000000e+00 A/A_iso=0.999458 loglog_alpha_context=1.950397
+CHECK-03 RESIDUAL-COLLAPSE: PASS residual=9.583e-03 model=A*sigma_p^2+B*sigma_p^4 gate=|log(A/A_iso)|<=log2 worst_log_A_over_Aiso=9.583e-03
+  CHECK-04 m=0 sigma_x=0.5 slope=-7.8383754534e-02 intercept=1.708e-08 r2=0.99999982
+  CHECK-04 m=0 sigma_x=1 slope=-5.9856470896e-01 intercept=9.478e-08 r2=0.99999991
+  CHECK-04 m=0 sigma_x=1.5 slope=-1.1839042016e+00 intercept=3.031e-07 r2=0.99999977
+CHECK-04 M0-CONTROL: PASS residual=1.782e+00 slopes(widths 0.5/1.0/1.5)=-7.838375e-02/-5.985647e-01/-1.183904e+00 historical_2026-04-07=-73.45/-7.05/-18.28
+  CHECK-06 m=0.5 sigma_x=3 position_slope=-1.4540267542e+00 momentum_slope=-1.4540267542e+00 rel=3.153e-13 x_intercept=-2.598e-07 p_intercept=-2.598e-07 r2_x=0.99999988 r2_p=0.99999988 edge_prob=3.152e-21
+  CHECK-06 m=0.5 sigma_x=6 position_slope=-1.6820505554e+00 momentum_slope=-1.6820505554e+00 rel=2.619e-13 x_intercept=-3.906e-07 p_intercept=-3.906e-07 r2_x=0.99999980 r2_p=0.99999980 edge_prob=8.809e-18
+  CHECK-06 m=1 sigma_x=3 position_slope=-6.3315903744e-01 momentum_slope=-6.3315903744e-01 rel=4.603e-13 x_intercept=-6.728e-08 p_intercept=-6.728e-08 r2_x=0.99999996 r2_p=0.99999996 edge_prob=1.821e-29
+  CHECK-06 m=1 sigma_x=6 position_slope=-6.8629828846e-01 momentum_slope=-6.8629828846e-01 rel=2.192e-13 x_intercept=-8.067e-08 p_intercept=-8.067e-08 r2_x=0.99999995 r2_p=0.99999995 edge_prob=1.605e-29
+CHECK-06 POSITION-SPACE-CROSS-CHECK: PASS residual=4.603e-13 max_rel=4.603e-13 min_r2=0.99999980 max_edge_prob=8.809e-18
+  CHECK-05 label=3d-context m=0.5 sigma_x=3 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.508000 p_star(m)=0.300000 margin=-0.208000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=3 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.516000 p_star(m)=0.300000 margin=-0.216000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=3 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.532000 p_star(m)=0.300000 margin=-0.232000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=4.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.341333 p_star(m)=0.300000 margin=-0.041333 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=4.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.349333 p_star(m)=0.300000 margin=-0.049333 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=4.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.365333 p_star(m)=0.300000 margin=-0.065333 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-gated m=0.5 sigma_x=6 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.258000 p_star(m)=0.300000 margin=0.042000 t/t_Bloch=1.273240e-03 GATED-OK
+  CHECK-05 label=3d-gated m=0.5 sigma_x=6 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.266000 p_star(m)=0.300000 margin=0.034000 t/t_Bloch=2.546479e-03 GATED-OK
+  CHECK-05 label=3d-gated m=0.5 sigma_x=6 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.282000 p_star(m)=0.300000 margin=0.018000 t/t_Bloch=5.092958e-03 GATED-OK
+  CHECK-05 label=3d-gated m=0.5 sigma_x=9 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.174667 p_star(m)=0.300000 margin=0.125333 t/t_Bloch=1.273240e-03 GATED-OK
+  CHECK-05 label=3d-gated m=0.5 sigma_x=9 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.182667 p_star(m)=0.300000 margin=0.117333 t/t_Bloch=2.546479e-03 GATED-OK
+  CHECK-05 label=3d-gated m=0.5 sigma_x=9 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.198667 p_star(m)=0.300000 margin=0.101333 t/t_Bloch=5.092958e-03 GATED-OK
+  CHECK-05 label=3d-gated m=0.5 sigma_x=12 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.133000 p_star(m)=0.300000 margin=0.167000 t/t_Bloch=1.273240e-03 GATED-OK
+  CHECK-05 label=3d-gated m=0.5 sigma_x=12 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.141000 p_star(m)=0.300000 margin=0.159000 t/t_Bloch=2.546479e-03 GATED-OK
+  CHECK-05 label=3d-gated m=0.5 sigma_x=12 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.157000 p_star(m)=0.300000 margin=0.143000 t/t_Bloch=5.092958e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=3 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.508000 p_star(m)=0.600000 margin=0.092000 t/t_Bloch=1.273240e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=3 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.516000 p_star(m)=0.600000 margin=0.084000 t/t_Bloch=2.546479e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=3 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.532000 p_star(m)=0.600000 margin=0.068000 t/t_Bloch=5.092958e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=4.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.341333 p_star(m)=0.600000 margin=0.258667 t/t_Bloch=1.273240e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=4.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.349333 p_star(m)=0.600000 margin=0.250667 t/t_Bloch=2.546479e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=4.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.365333 p_star(m)=0.600000 margin=0.234667 t/t_Bloch=5.092958e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=6 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.258000 p_star(m)=0.600000 margin=0.342000 t/t_Bloch=1.273240e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=6 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.266000 p_star(m)=0.600000 margin=0.334000 t/t_Bloch=2.546479e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=6 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.282000 p_star(m)=0.600000 margin=0.318000 t/t_Bloch=5.092958e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=9 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.174667 p_star(m)=0.600000 margin=0.425333 t/t_Bloch=1.273240e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=9 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.182667 p_star(m)=0.600000 margin=0.417333 t/t_Bloch=2.546479e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=9 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.198667 p_star(m)=0.600000 margin=0.401333 t/t_Bloch=5.092958e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=12 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.133000 p_star(m)=0.600000 margin=0.467000 t/t_Bloch=1.273240e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=12 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.141000 p_star(m)=0.600000 margin=0.459000 t/t_Bloch=2.546479e-03 GATED-OK
+  CHECK-05 label=3d-gated m=1 sigma_x=12 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.157000 p_star(m)=0.600000 margin=0.443000 t/t_Bloch=5.092958e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=3 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.508000 p_star(m)=0.785398 margin=0.277398 t/t_Bloch=1.273240e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=3 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.516000 p_star(m)=0.785398 margin=0.269398 t/t_Bloch=2.546479e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=3 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.532000 p_star(m)=0.785398 margin=0.253398 t/t_Bloch=5.092958e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=4.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.341333 p_star(m)=0.785398 margin=0.444065 t/t_Bloch=1.273240e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=4.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.349333 p_star(m)=0.785398 margin=0.436065 t/t_Bloch=2.546479e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=4.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.365333 p_star(m)=0.785398 margin=0.420065 t/t_Bloch=5.092958e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=6 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.258000 p_star(m)=0.785398 margin=0.527398 t/t_Bloch=1.273240e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=6 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.266000 p_star(m)=0.785398 margin=0.519398 t/t_Bloch=2.546479e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=6 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.282000 p_star(m)=0.785398 margin=0.503398 t/t_Bloch=5.092958e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=9 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.174667 p_star(m)=0.785398 margin=0.610731 t/t_Bloch=1.273240e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=9 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.182667 p_star(m)=0.785398 margin=0.602731 t/t_Bloch=2.546479e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=9 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.198667 p_star(m)=0.785398 margin=0.586731 t/t_Bloch=5.092958e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=12 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.133000 p_star(m)=0.785398 margin=0.652398 t/t_Bloch=1.273240e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=12 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.141000 p_star(m)=0.785398 margin=0.644398 t/t_Bloch=2.546479e-03 GATED-OK
+  CHECK-05 label=3d-gated m=2 sigma_x=12 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.157000 p_star(m)=0.785398 margin=0.628398 t/t_Bloch=5.092958e-03 GATED-OK
+  CHECK-05 label=3d-context m=0.2 sigma_x=3 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.508000 p_star(m)=0.120000 margin=-0.388000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=3 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.516000 p_star(m)=0.120000 margin=-0.396000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=3 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.532000 p_star(m)=0.120000 margin=-0.412000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=4.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.341333 p_star(m)=0.120000 margin=-0.221333 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=4.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.349333 p_star(m)=0.120000 margin=-0.229333 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=4.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.365333 p_star(m)=0.120000 margin=-0.245333 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=6 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.258000 p_star(m)=0.120000 margin=-0.138000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=6 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.266000 p_star(m)=0.120000 margin=-0.146000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=6 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.282000 p_star(m)=0.120000 margin=-0.162000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=9 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.174667 p_star(m)=0.120000 margin=-0.054667 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=9 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.182667 p_star(m)=0.120000 margin=-0.062667 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=9 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.198667 p_star(m)=0.120000 margin=-0.078667 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=12 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.133000 p_star(m)=0.120000 margin=-0.013000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=12 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.141000 p_star(m)=0.120000 margin=-0.021000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=12 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.157000 p_star(m)=0.120000 margin=-0.037000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=0.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=3.008000 p_star(m)=0.120000 margin=-2.888000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=0.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=3.016000 p_star(m)=0.120000 margin=-2.896000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=0.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=3.032000 p_star(m)=0.120000 margin=-2.912000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=1 g=1.0e-04 t_max=80 |g|t+3sigma_p=1.508000 p_star(m)=0.120000 margin=-1.388000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=1 g=2.0e-04 t_max=80 |g|t+3sigma_p=1.516000 p_star(m)=0.120000 margin=-1.396000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=1 g=4.0e-04 t_max=80 |g|t+3sigma_p=1.532000 p_star(m)=0.120000 margin=-1.412000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=1.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=1.008000 p_star(m)=0.120000 margin=-0.888000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=1.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=1.016000 p_star(m)=0.120000 margin=-0.896000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.2 sigma_x=1.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=1.032000 p_star(m)=0.120000 margin=-0.912000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=0.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=3.008000 p_star(m)=0.300000 margin=-2.708000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=0.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=3.016000 p_star(m)=0.300000 margin=-2.716000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=0.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=3.032000 p_star(m)=0.300000 margin=-2.732000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=1 g=1.0e-04 t_max=80 |g|t+3sigma_p=1.508000 p_star(m)=0.300000 margin=-1.208000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=1 g=2.0e-04 t_max=80 |g|t+3sigma_p=1.516000 p_star(m)=0.300000 margin=-1.216000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=1 g=4.0e-04 t_max=80 |g|t+3sigma_p=1.532000 p_star(m)=0.300000 margin=-1.232000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=1.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=1.008000 p_star(m)=0.300000 margin=-0.708000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=1.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=1.016000 p_star(m)=0.300000 margin=-0.716000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=0.5 sigma_x=1.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=1.032000 p_star(m)=0.300000 margin=-0.732000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=1 sigma_x=0.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=3.008000 p_star(m)=0.600000 margin=-2.408000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=1 sigma_x=0.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=3.016000 p_star(m)=0.600000 margin=-2.416000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=1 sigma_x=0.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=3.032000 p_star(m)=0.600000 margin=-2.432000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=1 sigma_x=1 g=1.0e-04 t_max=80 |g|t+3sigma_p=1.508000 p_star(m)=0.600000 margin=-0.908000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=1 sigma_x=1 g=2.0e-04 t_max=80 |g|t+3sigma_p=1.516000 p_star(m)=0.600000 margin=-0.916000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=1 sigma_x=1 g=4.0e-04 t_max=80 |g|t+3sigma_p=1.532000 p_star(m)=0.600000 margin=-0.932000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=1 sigma_x=1.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=1.008000 p_star(m)=0.600000 margin=-0.408000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=1 sigma_x=1.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=1.016000 p_star(m)=0.600000 margin=-0.416000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=1 sigma_x=1.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=1.032000 p_star(m)=0.600000 margin=-0.432000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=2 sigma_x=0.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=3.008000 p_star(m)=0.785398 margin=-2.222602 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=2 sigma_x=0.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=3.016000 p_star(m)=0.785398 margin=-2.230602 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=2 sigma_x=0.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=3.032000 p_star(m)=0.785398 margin=-2.246602 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=2 sigma_x=1 g=1.0e-04 t_max=80 |g|t+3sigma_p=1.508000 p_star(m)=0.785398 margin=-0.722602 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=2 sigma_x=1 g=2.0e-04 t_max=80 |g|t+3sigma_p=1.516000 p_star(m)=0.785398 margin=-0.730602 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=2 sigma_x=1 g=4.0e-04 t_max=80 |g|t+3sigma_p=1.532000 p_star(m)=0.785398 margin=-0.746602 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=3d-context m=2 sigma_x=1.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=1.008000 p_star(m)=0.785398 margin=-0.222602 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=3d-context m=2 sigma_x=1.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=1.016000 p_star(m)=0.785398 margin=-0.230602 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=3d-context m=2 sigma_x=1.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=1.032000 p_star(m)=0.785398 margin=-0.246602 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=m0 m=0 sigma_x=0.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=3.008000 p_star(m)=0.000000 margin=-3.008000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=m0 m=0 sigma_x=0.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=3.016000 p_star(m)=0.000000 margin=-3.016000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=m0 m=0 sigma_x=0.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=3.032000 p_star(m)=0.000000 margin=-3.032000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=m0 m=0 sigma_x=1 g=1.0e-04 t_max=80 |g|t+3sigma_p=1.508000 p_star(m)=0.000000 margin=-1.508000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=m0 m=0 sigma_x=1 g=2.0e-04 t_max=80 |g|t+3sigma_p=1.516000 p_star(m)=0.000000 margin=-1.516000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=m0 m=0 sigma_x=1 g=4.0e-04 t_max=80 |g|t+3sigma_p=1.532000 p_star(m)=0.000000 margin=-1.532000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=m0 m=0 sigma_x=1.5 g=1.0e-04 t_max=80 |g|t+3sigma_p=1.008000 p_star(m)=0.000000 margin=-1.008000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=m0 m=0 sigma_x=1.5 g=2.0e-04 t_max=80 |g|t+3sigma_p=1.016000 p_star(m)=0.000000 margin=-1.016000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=m0 m=0 sigma_x=1.5 g=4.0e-04 t_max=80 |g|t+3sigma_p=1.032000 p_star(m)=0.000000 margin=-1.032000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=1d-x m=0.5 sigma_x=3 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.508000 p_star(m)=0.300000 margin=-0.208000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=1d-x m=0.5 sigma_x=3 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.516000 p_star(m)=0.300000 margin=-0.216000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=1d-x m=0.5 sigma_x=3 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.532000 p_star(m)=0.300000 margin=-0.232000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=1d-x m=0.5 sigma_x=6 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.258000 p_star(m)=0.300000 margin=0.042000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=1d-x m=0.5 sigma_x=6 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.266000 p_star(m)=0.300000 margin=0.034000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=1d-x m=0.5 sigma_x=6 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.282000 p_star(m)=0.300000 margin=0.018000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=1d-x m=1 sigma_x=3 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.508000 p_star(m)=0.600000 margin=0.092000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=1d-x m=1 sigma_x=3 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.516000 p_star(m)=0.600000 margin=0.084000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=1d-x m=1 sigma_x=3 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.532000 p_star(m)=0.600000 margin=0.068000 t/t_Bloch=5.092958e-03 CONTEXT
+  CHECK-05 label=1d-x m=1 sigma_x=6 g=1.0e-04 t_max=80 |g|t+3sigma_p=0.258000 p_star(m)=0.600000 margin=0.342000 t/t_Bloch=1.273240e-03 CONTEXT
+  CHECK-05 label=1d-x m=1 sigma_x=6 g=2.0e-04 t_max=80 |g|t+3sigma_p=0.266000 p_star(m)=0.600000 margin=0.334000 t/t_Bloch=2.546479e-03 CONTEXT
+  CHECK-05 label=1d-x m=1 sigma_x=6 g=4.0e-04 t_max=80 |g|t+3sigma_p=0.282000 p_star(m)=0.600000 margin=0.318000 t/t_Bloch=5.092958e-03 CONTEXT
+CHECK-05 WINDOW/BLOCH: PASS residual=0.000e+00 gated_runs=39 min_gated_margin=1.800000e-02 max_t_over_tBloch=5.092958e-03
+CHECK-07 TRANSVERSE-DRIFT: PASS residual=1.388e-17 symmetry=rho_even_in_p1_p2_and_E_even_in_p1_p2
+  CHECK-08 m=0.5 C4_win=9.200000e+00 rest_point_coeff=9.200000e+00 A_iso=1.400000e+01 M_I*osc_BZ(E33)=1.333333e+00 p_star=0.3000 OK
+  CHECK-08 m=1 C4_win=4.250000e+00 rest_point_coeff=4.250000e+00 A_iso=5.750000e+00 M_I*osc_BZ(E33)=1.577350e+00 p_star=0.6000 OK
+  CHECK-08 m=2 C4_win=2.675000e+00 rest_point_coeff=2.675000e+00 A_iso=3.125000e+00 M_I*osc_BZ(E33)=1.816497e+00 p_star=0.7854 OK
+CHECK-08 BOUND-CONSTANTS: PASS residual=0.000e+00 gate=C4_win>=rest_point_coeff (note's closed form is a valid lower bound)
+SUMMARY:
+FLAGS: CHECK-04 m=0 reproduces width-split behavior, so the closure is singular at m=0
+TOTAL: PASS=8 FAIL=0

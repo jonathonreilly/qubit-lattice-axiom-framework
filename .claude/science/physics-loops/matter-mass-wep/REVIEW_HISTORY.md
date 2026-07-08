@@ -29,3 +29,21 @@
   the runner.
 - Runner must gain: numerical C4^win computation, eps_tail print per run,
   and a gated bound-compliance leg. To be patched at runner review.
+
+## block02 runner — 2026-07-08 supervisor review
+
+- Worker's own run honestly reported PASS=4 FAIL=3 with correct diagnosis:
+  spec-design defects (historical widths gated as if in-window; on-axis-only
+  C4 comparator; flat window cap).
+- Supervisor patches: mass-dependent window p_*(m)=min(pi/4, 0.6m); gated
+  sweep widened to sigma_x in {3,4.5,6,9,12} with m in {0.5,1,2}; m=0.2 and
+  historical widths demoted to reported out-of-window context; gate changed
+  to T3/T3' bound-compliance (C4_win numeric + eps_tail) + informativeness;
+  collapse refit as A*sigma_p^2 + B*sigma_p^4 on smallest-g residuals with
+  the ISOTROPIC comparator A_iso = (1/2) M_I |d4_ax + 2 d4_mx|; new CHECK-08
+  verifies the note's closed form lower-bounds C4_win (seeded with exact
+  rest-point Hessian).
+- Final: TOTAL PASS=8 FAIL=0. A/A_iso within 1% at all gated masses;
+  resid/bound = 0.4494 equals the predicted spectral-norm slack; m=0 control
+  width-splits as required; position/momentum gauge agreement 4.6e-13.
+- Local disposition: pass.

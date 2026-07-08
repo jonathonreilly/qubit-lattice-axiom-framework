@@ -29,11 +29,11 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3715 |
-| Applied audit verdicts | 1385 |
-| Retained-grade rows, including boxed decorations | 1317 |
+| Applied audit verdicts | 1386 |
+| Retained-grade rows, including boxed decorations | 1318 |
 | Retained positive theorems | 193 |
 | Retained no-go rows | 194 |
-| Retained bounded rows | 885 |
+| Retained bounded rows | 886 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 21 |
 | Unaudited rows | 1968 |
@@ -50,10 +50,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2012 |
-| Ready rows | 250 |
+| Total pending rows | 2011 |
+| Ready rows | 251 |
 | Cycle-break targets | 10 |
-| Critical pending | 422 |
+| Critical pending | 421 |
 | High pending | 273 |
 | Medium pending | 540 |
 | Leaf pending | 777 |
@@ -61,20 +61,20 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 Next ready rows by queue order:
 
 - [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
-- [`yt_vertex_power_derivation`](../../docs/YT_VERTEX_POWER_DERIVATION.md) - critical; audit_in_progress
+- [`yt_vertex_power_operator_counting_lemma_note_2026-05-17`](../../docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md) - critical; unaudited
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
+- [`yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md) - critical; unaudited
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; non_terminal_conditional
 - [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; unaudited
 - [`axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; unaudited
-- [`axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05`](../../docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **436**.
+- Non-retained-grade cited rows in publication tables: **435**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -83,7 +83,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | medium | `unaudited` | 96 |
 | high | `audited_conditional` | 3 |
 | medium | `open_gate` | 3 |
-| critical | `audit_in_progress` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |

@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1999
+**Total pending:** 1998
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 265
 
 By criticality:
-- `critical`: 409
+- `critical`: 408
 - `high`: 273
 - `medium`: 540
 - `leaf`: 777
@@ -44,9 +44,9 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 27 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | unaudited | critical | 388 | 11.60 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py` |
 | 28 | `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17` | bounded_theorem | unaudited | critical | 386 | 9.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py` |
 | 29 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | non_terminal_conditional | critical | 386 | 9.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py` |
-| 30 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | unaudited | critical | 354 | 33.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_charged_lepton_observable_curvature.py` |
-| 31 | `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20` | positive_theorem | unaudited | critical | 340 | 10.41 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_higgs_dressed_resolvent_root_theorem.py` |
-| 32 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | decoration | unaudited | critical | 325 | 13.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_q_delta_formal_ratio_repair.py` |
+| 30 | `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20` | positive_theorem | unaudited | critical | 340 | 10.41 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_higgs_dressed_resolvent_root_theorem.py` |
+| 31 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | decoration | unaudited | critical | 325 | 13.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_q_delta_formal_ratio_repair.py` |
+| 32 | `koide_berry_bundle_obstruction_theorem_note_2026-04-19` | positive_theorem | unaudited | critical | 323 | 10.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_berry_bundle_obstruction_theorem.py` |
 | 33 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | unaudited | critical | 317 | 11.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_higgs_mass_status_audit.py` |
 | 34 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | unaudited | critical | 310 | 8.78 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py` |
 | 35 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | unaudited | critical | 284 | 9.15 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_clifford_chirality_dimension_narrow.py` |

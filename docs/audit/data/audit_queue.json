@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 409,
+    "critical": 408,
     "high": 273,
     "leaf": 777,
     "medium": 540
@@ -893,31 +893,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "charged_lepton_koide_cone_algebraic_equivalence_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "three_generation_observable_theorem_note",
-        "observable_principle_from_axiom_note"
-      ],
-      "direct_in_degree": 45,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 33.972,
-      "note_path": "docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_charged_lepton_observable_curvature.py",
-      "transitive_descendants": 354
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -963,6 +938,30 @@
       "ready": true,
       "runner_path": "scripts/frontier_koide_q_delta_formal_ratio_repair.py",
       "transitive_descendants": 325
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_berry_bundle_obstruction_theorem_note_2026-04-19",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "charged_lepton_koide_cone_algebraic_equivalence_note"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.84,
+      "note_path": "docs/KOIDE_BERRY_BUNDLE_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_berry_bundle_obstruction_theorem.py",
+      "transitive_descendants": 323
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -8979,30 +8978,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_koide_berry_phase_theorem.py",
       "transitive_descendants": 328
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_berry_bundle_obstruction_theorem_note_2026-04-19",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "charged_lepton_koide_cone_algebraic_equivalence_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.84,
-      "note_path": "docs/KOIDE_BERRY_BUNDLE_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_koide_berry_bundle_obstruction_theorem.py",
-      "transitive_descendants": 323
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -59423,5 +59398,5 @@
     }
   ],
   "ready_count": 265,
-  "total_pending": 1999
+  "total_pending": 1998
 }

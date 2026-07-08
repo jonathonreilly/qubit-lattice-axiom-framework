@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1952 |
+| unaudited | 1951 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
@@ -53,7 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
-| `decoration_under_three_generation_observable_theorem_note` | 3 |
+| `decoration_under_three_generation_observable_theorem_note` | 4 |
 | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | 1 |
 | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | 1 |
 
@@ -62,20 +62,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1275 |
 | `audited_conditional` | 33 |
-| `audited_decoration` | 47 |
+| `audited_decoration` | 48 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2297 |
+| `unaudited` | 2296 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2040 |
-| `decoration` | 50 |
+| `decoration` | 51 |
 | `meta` | 351 |
 | `no_go` | 482 |
 | `open_gate` | 183 |
-| `positive_theorem` | 609 |
+| `positive_theorem` | 608 |
 
 | criticality | count |
 |---|---:|
@@ -124,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
 | 23 | `three_generation_structure_note` | bounded_theorem | critical | 1019 | 35.49 | `audited_clean` | **retained_bounded** |
 | 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 839 | 34.71 | `unaudited` | unaudited |
-| 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 354 | 33.97 | `unaudited` | unaudited |
+| 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | decoration | critical | 354 | 33.97 | `audited_decoration` | `decoration_under_three_generation_observable_theorem_note` |
 
 
 ## Applied audits
@@ -1456,6 +1456,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
+| `charged_lepton_koide_cone_algebraic_equivalence_note` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | weak | codex-current | A | `three_generation_observable_theorem_note` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -3211,6 +3212,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Plancherel/Parseval gives |v|^2 = a_0^2 + 2|z|^2 and (v_1+v_2+v_3)^2 = 3a_0^2, hence Q(v) = (a_0^2 + 2|z|^2)/(3a_0^2).  _(class `A`)_
 - **chain closes:** True — The conclusion follows directly from the stated orthonormal C_3 Fourier basis and the definition of Q(v). Positivity ensures v_1+v_2+v_3>0, so the divisions and angle branch used in the corollaries are valid.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the definitions in the packet, not a definition substitution, external comparator, or tuned numerical match. The runner source constructs symbolic positive real variables, derives the Fourier coefficients, verifies the norm and sum identities parametrically, and checks both directions of the equivalence without helper imports or hard-coded contested premises. Independent formula inventory finds the displayed E1, E3, E4, sigma, angle, and unconstrained-product sanity statements consistent with the stated conventions.
+- **auditor confidence:** high
+
+### `charged_lepton_koide_cone_algebraic_equivalence_note`
+
+- **Note:** [`CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md`](../../docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Audited the exact algebraic equivalence between Koide's Q = 2/3 condition and the C3-character equal-weight cone for a positive three-vector on the named three-generation carrier; no forcing of the vector, mass values, or Koide cone was audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_three_generation_observable_theorem_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=weak)
+- **load-bearing step:** For a positive three-vector decomposed into C3 characters, Koide Q = 2/3 is equivalent to the equal-character-weight condition a_0^2 = 2|z|^2.  _(class `A`)_
+- **chain closes:** True — The Plancherel/Fourier algebra closes exactly and the runner passes 32/0 while explicitly reporting KOIDE_FORCING_RESOLVED=FALSE. The result is a correct reparameterization/support lemma, not an independent physical theorem or Koide derivation.
+- **rationale:** The exact equivalence is mathematically correct: the C3 Fourier decomposition gives |v|^2 = a_0^2 + 2|z|^2 and (sum v_i)^2 = 3a_0^2, so Q = 2/3 iff a_0^2 = 2|z|^2. It adds no independent observable, comparator, or forcing mechanism beyond the named carrier algebra, and the runner itself says all three cone-forcing candidates fail on the current minimal block. Under the algebraic-decoration policy, this should be boxed as a support corollary rather than retained as a separate positive theorem.
+- **decoration parent:** `three_generation_observable_theorem_note`
 - **auditor confidence:** high
 
 ### `charged_lepton_koide_note_2026-04-18`

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1950 |
+| unaudited | 1949 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 33 |
+| ~~audited_conditional~~ | 34 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1275 |
-| `audited_conditional` | 33 |
+| `audited_conditional` | 34 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2295 |
+| `unaudited` | 2294 |
 
 | claim_type | count |
 |---|---:|
@@ -1425,6 +1425,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `confinement_string_tension_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3885,6 +3886,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** Under the family-adequacy gate, every seed clears at every adequate k: seed 4242 through k=6, seed 99 through k=4, and seed 7 through k=7, with all higher-k entries reported as family-inadequate.  _(class `C`)_
 - **chain closes:** True — The runner constructs the finite L=3 Fock/Born tree, computes prefix statistics and seeded permutation-null p95 values, applies the adequacy gate, and reports that every adequate row has theorem_clears=true. Independent table arithmetic against the printed rows and gate gives adequate kmax values 6, 4, and 7, with all higher-k rows flagged family-inadequate.
 - **rationale:** The runner source does not merely print the claim: it builds the finite Hilbert-space machinery, evolves the branch tree, computes determinant phases, prefix-family statistics, null quantiles, adequacy flags, and cap-stability checks. The displayed adequate sets match the claimed theorem-grade clear sets, and non-clearing or singleton/empty-sector rows are outside the adequacy gate rather than counted as theorem wins. The no-exhaustion language is bounded to fixed L=3, k<=8, selected rows, and the adequate-family range, so it does not overclaim asymptotic or higher-k closure.
+- **auditor confidence:** high
+
+### `confinement_string_tension_note`
+
+- **Note:** [`CONFINEMENT_STRING_TENSION_NOTE.md`](../../docs/CONFINEMENT_STRING_TENSION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded support check that graph-first SU(3) with g_bare = 1 gives beta = 6 and, conditioned on imported standard SU(3) Yang-Mills confinement, Sommer-scale lattice data, EFT running, and phenomenological screening/comparator inputs, produces a string-tension consistency window near the usual sqrt(sigma) scale.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=weak)
+- **load-bearing step:** If this context is identified with standard SU(3) Yang-Mills dynamics, then standard confinement, Sommer-scale, and EFT/lattice inputs give a bounded string-tension consistency window overlapping the usual sqrt(sigma) ~ 440 MeV phenomenological scale.  _(class `B`)_
+- **chain closes:** False — The beta=6 arithmetic and small-volume Monte Carlo checks close inside the packet, but the string-tension conclusion consumes standard Yang-Mills confinement, Sommer-scale values, EFT running infrastructure, screening corrections, and phenomenological comparators as external bridge inputs.
+- **rationale:** Issue: the load-bearing string-tension support statement rests on the explicit identification of the graph-first gauge sector with standard SU(3) Yang-Mills dynamics plus imported confinement, Sommer-scale, EFT running, screening, and phenomenological comparator inputs. Why this blocks: those bridges are not derived from retained framework primitives or registered as accepted premises in the restricted packet, so the note cannot be retained as a framework-native bounded theorem even though its arithmetic and finite checks pass. Repair target: supply and audit a framework-native SU(3) Yang-Mills/confinement/Sommer-scale/EFT bridge, or explicitly register the imported standard inputs as accepted bounded premises with scope. Claim boundary until fixed: the row may be cited only as conditional support that beta=6 graph-first SU(3) is consistent with standard lattice-QCD string-tension expectations under those imported bridges.
 - **auditor confidence:** high
 
 ### `connectivity_family_v2_elliptical_duplicate_note`

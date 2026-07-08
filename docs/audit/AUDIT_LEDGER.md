@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 193 |
 | **retained_no_go** | 194 |
-| **retained_bounded** | 886 |
+| **retained_bounded** | 887 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
 | unaudited | 1967 |
-| audit_in_progress | 4 |
+| audit_in_progress | 3 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 17 |
-| `audited_clean` | 1264 |
+| `audit_in_progress` | 16 |
+| `audited_clean` | 1265 |
 | `audited_conditional` | 27 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
@@ -147,7 +147,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
-| `yt_vertex_power_operator_counting_lemma_note_2026-05-17` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1407,6 +1406,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_vertex_power_derivation` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `yt_vertex_power_operator_counting_lemma_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -19693,6 +19693,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** n_link = (external gauge legs of the quadratic response) x (gauge links per vertex insertion) = 2 x 1 = 2.  _(class `C`)_
 - **chain closes:** True — Within the explicitly bounded surface and conventions, the Schur argument gives one link per covariant hop and the quadratic current-current response gives two single-link insertions. The retained algebraic authority then supplies the alpha_s(v) identity at exponent 2, while the residual gates are stated as scope boundaries rather than hidden derivations.
 - **rationale:** The runner source genuinely computes the SU(3) covariance discriminant, finite-difference link derivatives, staggered-Dirac response formula, and link-degree scaling; it does not import an external strong-coupling target or tune to a comparator. The cited algebra note is retained, the kinetic-surface authority is retained_bounded, and the minimal-axiom input is an accepted premise. The claim remains bounded by B-GATE, B-ADJ, B-CONV, B-CHAN, and B-SPLIT, but those boundaries match the audited scope.
+- **auditor confidence:** high
+
+### `yt_vertex_power_operator_counting_lemma_note_2026-05-17`
+
+- **Note:** [`YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md`](../../docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional on the staggered-Dirac nearest-neighbor operator, the link-exponential convention, and the stated coupling-map counting surface, the single-link vertex D' has link degree 1 and the current-current vacuum-polarization term has two D' insertions, giving relative count n_link(VP)=2 versus hopping n_link=1.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-019f3f13-edd8-7262-a61e-3c415ee9779f`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** "Pi contains two insertions of D'. By S1, each carries one power of the gauge link U. Hence the gauge-link-counting exponent for the vacuum polarization is n_link = 2."  _(class `A`)_
+- **chain closes:** True — Within the explicitly bounded surface, the result follows by differentiating the stated staggered hopping operator and counting the two D' factors in the quadratic response. The staggered-Dirac realization and link-exponential convention remain admissions, so the closure is bounded rather than unconditioned.
+- **rationale:** The proof is a local operator-counting argument, not a numerical match or external-comparator claim. The runner implements algebraic homogeneity checks for D', the bubble, the tadpole companion, and the relative hopping count; these support the stated bounded structural lemma. It does not derive the admitted staggered-Dirac realization or convention, but the note scopes those as admissions rather than claiming their closure.
 - **auditor confidence:** high
 
 ### `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`

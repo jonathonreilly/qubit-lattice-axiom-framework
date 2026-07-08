@@ -1,0 +1,5 @@
+KERNELS W4=[3, 3, 3, 3, 3] W6=[3, 3, 3, 3, 3],min_gap=4.2e+14,max_angle=2.5e-13,rowsW4=7212,rowsW6=36876,overflow=0.0e+00
+CONTROLS free_W6_dim=20,HaHb=(1.6e-12,2.4e-12); decoupled_W6_dim=4,HaHb=(3.2e-13,5.3e-13); absentees_min=1.0e+00[W4:1.0e+00,W6:1.0e+00]
+GAUGED traceless_dim=2,ops=17,angle=2.4e-14,m=0.601,g=0.788,TRUNCATION-NOTE
+CHECKS CHECK-00=ok(2.8e-14); CHECK-00b=ok(0.0e+00); CHECK-01=ok(res=3.0e-16,ang=2.5e-13); CHECK-02=ok; CHECK-03=ok; CHECK-04=ok; CHECK-05=ok; CHECK-06=ok
+TOTAL KERNEL-EXACT-3 elapsed=11.06s notes=none

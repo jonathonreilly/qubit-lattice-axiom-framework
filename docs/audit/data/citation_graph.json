@@ -57778,11 +57778,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+      "to": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15"
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15"
+      "to": "yt_vertex_power_derivation"
     },
     {
       "from": "repo.front_door_status",
@@ -111814,8 +111814,8 @@
         "realized_state_primitive",
         "tier_a_residual_owner_adoption_retirement_2026-07-04",
         "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
+        "yt_vertex_power_derivation",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "cl3_taste_generation_theorem",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
@@ -111823,7 +111823,7 @@
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9b53fc02e6147e2eeba9e8b1ee63eabf78106c3db95e37fbe69bc0159743f9f4",
+      "note_hash": "61ddb9f89c6977b774c7d0a46c8ae8dd67e77f9e6137b8b5d2e708c33462c2b3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

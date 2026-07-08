@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 424,
+    "critical": 423,
     "high": 273,
     "leaf": 777,
     "medium": 540
@@ -177,28 +177,6 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
-      "claim_scope": "Finite periodic 2 x 2 x 2 translation/BZ carrier statement for position-diagonal local readouts on the supplied hw=1 three-corner sector.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 4,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.069,
-      "note_path": "docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py",
-      "transitive_descendants": 1073
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "yt_vertex_power_derivation",
@@ -213,15 +191,15 @@
         "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "minimal_axioms"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.014,
+      "load_bearing_score": 15.515,
       "note_path": "docs/YT_VERTEX_POWER_DERIVATION.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_vertex_power.py",
-      "transitive_descendants": 1033
+      "transitive_descendants": 1034
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -59808,6 +59786,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 252,
-  "total_pending": 2014
+  "ready_count": 251,
+  "total_pending": 2013
 }

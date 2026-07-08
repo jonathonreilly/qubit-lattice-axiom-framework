@@ -3,7 +3,7 @@
     "critical": 407,
     "high": 273,
     "leaf": 777,
-    "medium": 540
+    "medium": 539
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -12254,6 +12254,31 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 7,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.609,
+      "note_path": "docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/kraus_choi_normalization_convention_check_2026_06_05.py",
+      "transitive_descendants": 68
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "ckm_five_sixths_bridge_support_note",
@@ -14964,31 +14989,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_constructive_continuity_closure_theorem.py",
-      "transitive_descendants": 68
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.609,
-      "note_path": "docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/kraus_choi_normalization_convention_check_2026_06_05.py",
       "transitive_descendants": 68
     },
     {
@@ -20397,30 +20397,6 @@
       "ready": true,
       "runner_path": "scripts/source_resolved_exact_green_pocket.py",
       "transitive_descendants": 74
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.629,
-      "note_path": "docs/KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_kraus_choi_normalization_reconciled_2026_06_05.py",
-      "transitive_descendants": 69
     },
     {
       "audit_independence_required": "any_non_self",
@@ -59372,5 +59348,5 @@
     }
   ],
   "ready_count": 264,
-  "total_pending": 1997
+  "total_pending": 1996
 }

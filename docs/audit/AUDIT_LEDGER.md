@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 193 |
+| **retained** | 194 |
 | **retained_no_go** | 196 |
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1944 |
+| unaudited | 1943 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1275 |
+| `audited_clean` | 1276 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2289 |
+| `unaudited` | 2288 |
 
 | claim_type | count |
 |---|---:|
@@ -787,6 +787,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_z3_joint_projector_identity_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-current | C | - |
 | `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -10840,6 +10841,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The displayed generator T_m satisfies T_m^2 = I_3, so Tr(T_m^2)=3 and Tr(T_m^3)=Tr(T_m)=1, fixing the m^2 and m^3 coefficients in the stipulated scalar potential as g_2=3/2 and g_3=1/6.  _(class `A`)_
 - **chain closes:** True — The in-scope coefficient claim follows by direct matrix multiplication and trace algebra from the displayed T_m plus the stated potential normalization. The broader mass-tower and physical selected-point language is explicitly excluded from the audited scope and is not needed for the local coefficient result.
 - **rationale:** The load-bearing algebra is local: T_m is displayed, T_m^2=I_3 is directly checkable, Tr(T_m^2)=3 and Tr(T_m^3)=1 then fix the quadratic and cubic coefficients under the note's stated potential normalization. No one-hop dependencies are wired for this row, and no runner is required because the audited claim is an exact finite matrix calculation. Residual risk is scope drift: the title and later mass-table material must not be cited as an audited derivation of the charged-lepton mass tower or physical m_* selector.
+- **auditor confidence:** high
+
+### `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-region Kraus-Choi correspondence on the qubit matrix algebra using one unnormalized Choi convention end-to-end, including the matching inverse, Kraus extraction, and CP/TP normalization conditions.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=cross_family)
+- **load-bearing step:** With the unnormalized maximally entangled vector, the Choi matrix has no 1/d prefactor, the inverse map has no d-factor, and Kraus extraction absorbs the eigenvalue with no extra sqrt(d).  _(class `C`)_
+- **chain closes:** True — The source fixes one convention and proves the d-factor bookkeeping directly from finite-dimensional matrix algebra over the qubit substrate; the runner verifies exact M2 reconstruction, randomized M2/M4 CPTP round trips, named qubit channels, CP boundary behavior, and both mixed-convention failure modes.
+- **rationale:** The audited claim is a normalization-reconciliation theorem, not a new physical dynamics claim. Within that boundary, the unnormalized Choi convention, inverse formula, Kraus extraction, and TP/CP conditions close from finite-dimensional linear algebra on the qubit algebra supplied by the minimal axioms. The runner computes the load-bearing links and the two mixed-convention counterchecks rather than merely printing the target conclusion; residual risk is limited to the explicitly excluded thermodynamic-limit and record-dynamics applications.
 - **auditor confidence:** high
 
 ### `kubo_continuum_limit_families_note`

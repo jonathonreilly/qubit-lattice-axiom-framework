@@ -61,7 +61,7 @@
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['bridge_gap_hk_cube_perron_note_2026-05-06', 'bridge_gap_hk_thermodynamic_stretch_note_2026-05-06'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
       "max_transitive_descendants": 305,
       "primary_break_target": "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
-      "primary_break_target_audit_status": "audited_conditional",
+      "primary_break_target_audit_status": "unaudited",
       "primary_break_target_criticality": "critical",
       "repair_class": "cycle_break_required"
     },
@@ -168,12 +168,12 @@
       "direct_in_degree": 2,
       "effective_status": "audited_conditional",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.34,
+      "load_bearing_score": 14.341,
       "note_path": "docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py",
-      "transitive_descendants": 1295
+      "transitive_descendants": 1296
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -230,30 +230,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_yt_p1_h_unit_renormalization.py",
       "transitive_descendants": 780
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audited_conditional",
-      "blocker": null,
-      "claim_id": "neutrino_majorana_current_atlas_nonrealization_note",
-      "claim_scope": "Bounded current-stack claim that the present main-derived atlas/toolkit, as scanned by the runner, does not already list a fully realized charge-2 nu_R Majorana primitive.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "observable_principle_from_axiom_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "audited_conditional",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.068,
-      "note_path": "docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md",
-      "queue_reason": "non_terminal_conditional",
-      "ready": true,
-      "runner_path": "scripts/frontier_neutrino_majorana_current_atlas_nonrealization.py",
-      "transitive_descendants": 758
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1339,12 +1315,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.338,
+      "load_bearing_score": 15.34,
       "note_path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py",
-      "transitive_descendants": 1293
+      "transitive_descendants": 1295
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1369,12 +1345,12 @@
       "direct_in_degree": 60,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 43.333,
+      "load_bearing_score": 43.335,
       "note_path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_anomaly_forces_time.py",
-      "transitive_descendants": 1289
+      "transitive_descendants": 1291
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1512,15 +1488,15 @@
         "left_handed_charge_matching_note",
         "anomaly_forces_time_theorem"
       ],
-      "direct_in_degree": 33,
+      "direct_in_degree": 34,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 29.411,
+      "load_bearing_score": 29.917,
       "note_path": "docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_right_handed_sector.py",
-      "transitive_descendants": 962
+      "transitive_descendants": 966
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2935,6 +2911,31 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_universal_gr_a1_invariant_section.py",
+      "transitive_descendants": 758
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "neutrino_majorana_current_atlas_nonrealization_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "one_generation_matter_closure_note"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 15.068,
+      "note_path": "docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_neutrino_majorana_current_atlas_nonrealization.py",
       "transitive_descendants": 758
     },
     {
@@ -9517,12 +9518,12 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audited_conditional",
+      "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
-      "claim_scope": "Audited the scoped current-stack action-form non-uniqueness claim for the Wilson, heat-kernel, and Manton candidate surface, with Wilson/HK finite-beta single-plaquette separation as the witness.",
+      "claim_scope": null,
       "claim_type": "no_go",
-      "claim_type_provenance": "audited",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
@@ -9531,14 +9532,15 @@
         "lattice_physical_matching_cluster_obstruction_note_2026-05-02",
         "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
         "bridge_gap_hk_plaquette_closed_form_note_2026-05-06",
-        "bridge_gap_hk_time_derivation_note_2026-05-06"
+        "bridge_gap_hk_time_derivation_note_2026-05-06",
+        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
       ],
       "direct_in_degree": 7,
-      "effective_status": "audited_conditional",
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
       "load_bearing_score": 11.757,
       "note_path": "docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md",
-      "queue_reason": "non_terminal_conditional",
+      "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_bridge_gap_action_form_uniqueness_no_go.py",
       "transitive_descendants": 305
@@ -59449,6 +59451,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 267,
+  "ready_count": 266,
   "total_pending": 2000
 }

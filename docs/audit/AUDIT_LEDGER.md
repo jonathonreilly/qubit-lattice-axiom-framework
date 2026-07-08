@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1953 |
+| unaudited | 1955 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 33 |
+| ~~audited_conditional~~ | 31 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -61,21 +61,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1275 |
-| `audited_conditional` | 33 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2298 |
+| `unaudited` | 2300 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2041 |
+| `bounded_theorem` | 2040 |
 | `decoration` | 50 |
 | `meta` | 351 |
 | `no_go` | 482 |
 | `open_gate` | 183 |
-| `positive_theorem` | 608 |
+| `positive_theorem` | 609 |
 
 | criticality | count |
 |---|---:|
@@ -103,15 +103,15 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1932 | 217.42 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1187 | 67.21 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 65.64 | `audited_clean` | **retained** |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1577 | 65.62 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1578 | 65.62 | `audited_clean` | **retained** |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1019 | 64.49 | `audited_clean` | **retained_bounded** |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1149 | 53.17 | `audited_clean` | **retained_bounded** |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1049 | 48.04 | `unaudited` | meta |
 | 8 | `key_terminology` | meta | critical | 1163 | 46.69 | `unaudited` | meta |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 922 | 43.85 | `audited_clean` | **retained_bounded** |
-| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1289 | 43.33 | `unaudited` | unaudited |
+| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1291 | 43.34 | `unaudited` | unaudited |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1027 | 42.01 | `audited_clean` | **retained_bounded** |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1536 | 41.59 | `audited_clean` | **retained** |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1537 | 41.59 | `audited_clean` | **retained** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1023 | 39.50 | `audited_clean` | **retained_bounded** |
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 319 | 39.32 | `unaudited` | unaudited |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 312 | 37.79 | `unaudited` | unaudited |
@@ -1425,7 +1425,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1437,7 +1436,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `neutrino_majorana_current_atlas_nonrealization_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2886,24 +2884,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Hermitian commutant of the supplied 3x3 cyclic shift C is exactly the three-real-dimensional set H = aI + bC + conj(b)C^T, with a real and b complex.  _(class `A`)_
 - **chain closes:** True — The algebra closes: the cyclic shift has distinct eigenvalues, so its complex commutant is span{I,C,C^2}; Hermiticity imposes the paired coefficients a in R and C^2 coefficient conj(b). Since S=C+C^2 is also a polynomial in C, every such H commutes with S.
 - **rationale:** The runner source performs an actual finite-dimensional commutator/nullspace computation and reconstructs the resulting basis as Brannen circulants, rather than merely printing expected constants. An independent algebraic check gives the same result from the centralizer of the cyclic shift and the Hermiticity condition, and the pointer non-demolition statement follows because S is a polynomial in C. The result uses only supplied C3 action, locality/displacement structure, Hermiticity, and supplied pointer data; it does not claim to select the action, pointer, r, delta, or any coupling value.
-- **auditor confidence:** high
-
-### `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06`
-
-- **Note:** [`BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md`](../../docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Audited the scoped current-stack action-form non-uniqueness claim for the Wilson, heat-kernel, and Manton candidate surface, with Wilson/HK finite-beta single-plaquette separation as the witness.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-bridge_gap_action_form_uniquenes-04`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Wilson and heat-kernel are jointly compatible with the current support and leading continuum matching yet give distinct finite-beta one-plaquette values, so no current premise uniquely selects the action form.  _(class `B`)_
-- **chain closes:** False — The no-go logic would close conditionally if the upstream Wilson/HK finite-beta inputs and candidate-compatibility premises were retained-grade. In this restricted packet, the Wilson PF certificate is absent/hard-coded and the G_BARE, HK time, and HK plaquette authorities are explicitly unaudited.
-- **rationale:** The note has the right narrowed no-go shape: it enumerates multiple attack routes, collapses the wall to the missing action-selection or realized-dynamics criterion, and treats HK diffusion uniqueness as a conditional counterroute rather than a closure. The load-bearing finite-beta separation is still cross-note/constant-based: the runner hard-codes the Wilson value and only recomputes exp(-2/3), while key upstream authorities are unaudited and the Wilson PF certificate is not included. The co-cycle HK thermodynamic and HK cube citations are non-load-bearing informational links under the re-audit instruction; source-graph repair is still needed to strip or rewrite those links before effective status can advance.
-- **open / conditional deps cited:**
-  - `G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`
-  - `BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md`
-  - `BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md`
-  - `PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`
 - **auditor confidence:** high
 
 ### `broad_gravity_derivation_note`
@@ -12449,24 +12429,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The scalar two-point expressions have no mu input, so the same scalar two-point signature is compatible with both mu = 0 and mu != 0 while the Pfaffian sector differs.  _(class `C`)_
 - **chain closes:** True — The runner reproduces the same-current-data witness: scalar two-point and normal source-response signatures are mu-blind, Pfaffian signatures vary with mu, and charge-sector checks show normal sources are charge zero while the pairing seed carries charge -2. That directly blocks the implication that scalar two-point closure alone forces mu = 0.
 - **rationale:** The note claims a negative boundary, not a Dirac-global or numerical neutrino result: SR-2 cannot close C2-X from free-scalar two-point data alone. The runner checks the relevant current surface by verifying the cited authority text and constructing nonzero-mu witnesses with identical scalar and normal signatures but distinct Pfaffian sectors. Residual risk is limited to future typed scalar-to-Pfaffian coupling theorems, which the note explicitly leaves open.
-- **auditor confidence:** high
-
-### `neutrino_majorana_current_atlas_nonrealization_note`
-
-- **Note:** [`NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md`](../../docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded current-stack claim that the present main-derived atlas/toolkit, as scanned by the runner, does not already list a fully realized charge-2 nu_R Majorana primitive.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019f3fec-465b-75d1-a04f-8353a6c37bcc`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** None of the currently retained or atlas-listed objects is itself a fully realized fermionic charge-2 microscopic primitive with fixed physical background data on the nu_R channel.  _(class `B`)_
-- **chain closes:** False — The observable-principle dependency closes only the scalar determinant backbone. The missing step is dependency-closed authority for the atlas completeness, right-handed composite miss, matter closure, and Majorana-row classifications consumed by the non-realization claim.
-- **rationale:** Issue: The note's conclusion depends on the current derivation atlas, retained matter closure, right-handed-sector composite audit, and Majorana reduction/current-stack rows, but the restricted dependency packet wires only the observable-principle note and the primary runner scans those extra files rather than making them retained one-hop authorities. Why this blocks: a runner string scan of un-wired publication/table sources is useful bookkeeping evidence, but it cannot by itself establish a dependency-closed Nature-grade non-realization over all currently retained or atlas-listed objects. Repair target: add explicit direct dependency edges/statuses for the atlas source or canonical retained atlas snapshot, one-generation matter closure, right-handed-sector composite result, Majorana primitive reduction, and any Majorana row notes used to classify support/boundary rows, or narrow the claim to the runner's finite string scan. Claim boundary until fixed: the source may say the current runner found no listed row/title matching a fully realized charge-2 nu_R primitive, not that the retained current atlas/toolkit dependency chain closes.
-- **open / conditional deps cited:**
-  - `publication/ci3_z3/DERIVATION_ATLAS.md`
-  - `ONE_GENERATION_MATTER_CLOSURE_NOTE.md`
-  - `scripts/frontier_right_handed_sector.py`
-  - `NEUTRINO_MAJORANA_CHARGE_TWO_PRIMITIVE_REDUCTION_NOTE.md`
 - **auditor confidence:** high
 
 ### `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23`

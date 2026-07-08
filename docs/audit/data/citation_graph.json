@@ -3533,6 +3533,10 @@
       "to": "bridge_gap_hk_time_derivation_note_2026-05-06"
     },
     {
+      "from": "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
+      "to": "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+    },
+    {
       "from": "bridge_gap_hk_cube_perron_note_2026-05-06",
       "to": "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06"
     },
@@ -28303,6 +28307,10 @@
     {
       "from": "neutrino_majorana_current_atlas_nonrealization_note",
       "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "neutrino_majorana_current_atlas_nonrealization_note",
+      "to": "one_generation_matter_closure_note"
     },
     {
       "from": "neutrino_majorana_current_stack_exhaustion_note",
@@ -63778,10 +63786,11 @@
         "lattice_physical_matching_cluster_obstruction_note_2026-05-02",
         "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
         "bridge_gap_hk_plaquette_closed_form_note_2026-05-06",
-        "bridge_gap_hk_time_derivation_note_2026-05-06"
+        "bridge_gap_hk_time_derivation_note_2026-05-06",
+        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9c0b4d48a4a0389b5850ded4666cc0b5286e590c7e72eb76414b248e0890900a",
+      "note_hash": "ab577cf4d2e794535431c45ce1d7091189c9add922bb92bd858b537b3df47197",
       "path": "docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md",
       "runner_path": "scripts/frontier_bridge_gap_action_form_uniqueness_no_go.py",
       "title": "Bridge Gap \u2014 Action-Form Uniqueness No-Go"
@@ -97083,10 +97092,11 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "observable_principle_from_axiom_note"
+        "observable_principle_from_axiom_note",
+        "one_generation_matter_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6956635ed2cbb2d3f5bbc3e5fce512c27b376921f0a0ac1da5e0d082b21938fe",
+      "note_hash": "6e730724e75f33684d2b10ecd7180f3ba299d6be2bd8bed1ffd4f49677848e3a",
       "path": "docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md",
       "runner_path": "scripts/frontier_neutrino_majorana_current_atlas_nonrealization.py",
       "title": "Current Atlas Charge-Two Primitive Non-Realization"
@@ -111823,7 +111833,7 @@
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c6dec498725b508da775e8a4ef450e39f0eca305d99f61aad40e01596f52ff30",
+      "note_hash": "9efa7c8d3f0514d3099cea43ec90c2e3b0a9ebabc373e1cca62ca6e17f5311be",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -128654,7 +128664,7 @@
       "open_gate": 205,
       "positive_theorem": 657
     },
-    "edge_count": 14550,
+    "edge_count": 14552,
     "leaf_count": 1309,
     "node_count": 3886,
     "root_count": 1105,

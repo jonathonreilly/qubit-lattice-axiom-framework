@@ -1,0 +1,32 @@
+loop_slug: gauged-mass-equivalence
+created: 2026-07-08
+mode: campaign
+runtime_budget: 16h+
+execution_split: workhorse (codex exec workers, supervisor reviews all diffs)
+predecessor: matter-mass-wep (verdict under owner direction A; this campaign attacks its named frontier #1)
+goal: >
+  Decide whether field-mediated binding (the record-preservation-forced
+  covariant-hopping class, instantiated as the 1D U(1) staggered lattice
+  gauge comparator) delivers composite mass-energy equivalence
+  M_comp -> E_2(0) in the scaling window, while the two-body truncation of
+  the SAME model stays pinned at the block05 sum-rule value. Hypothesis:
+  equivalence is carried by Fock-space pair mixing.
+success_bar: >
+  Separation exhibited: full-Fock meson band relativistic
+  (E_2(P)^2 - E_2(0)^2 = c^2 P^2 with M_comp/E_2(0) -> 1 trend in the
+  window) AND two-body truncation pinned at the kinetic-functional value.
+  Negative fork: if full Fock does NOT trend to equivalence, N-discipline
+  diagnosis + owner surface (it would strike at the mediator story).
+current_block: block01 (model + machinery + validation)
+current_branch: physics-loop/gauged-mass-equivalence-block01-20260708
+worktree: /Users/jonBridger/tp-matter-mass-wep
+imports: >
+  I-GAUGE (declared comparator/bridge: 1D U(1) links + electric term +
+  Gauss law on a ring with truncated Wilson-line rotor; the dynamics-form
+  forced class instantiated in d=1), inherited mass-lane surface by
+  citation; kinetic_isotropy_primitive for the c = 1 comparison.
+discipline: same as matter-mass-wep pack (V1-V5, N1-N8, kappa-style
+  validity diagnostics, size/truncation-convergence gates, PR per block,
+  nothing landed in-loop).
+next_exact_action: block01 codex worker (ED engine + validation runner)
+stop_condition_hit: none

@@ -36,7 +36,7 @@ Owner-approval history for every axiom/primitive/governance change:
 | Retained bounded rows | 891 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 21 |
-| Unaudited rows | 1961 |
+| Unaudited rows | 1960 |
 | Retained-pending-chain rows | 7 |
 | Audited conditional rows | 29 |
 | Audited renaming rows | 19 |

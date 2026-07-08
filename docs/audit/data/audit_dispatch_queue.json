@@ -926,49 +926,6 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audit_in_progress",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audit_in_progress",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
-      ],
-      "audit_question": "Can the bounded cluster-decomposition closure be reclassified positive_theorem? Confirm the Lieb-Robinson series bound's grade first.",
-      "blocked_by_group_ids": [],
-      "claim_id": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-      "deps": [
-        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
-        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
-        "strong_cp_theta_zero_note",
-        "minimal_axioms"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher queue as evidence",
-        "docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 10,
-      "group_id": "cluster_decomposition",
-      "group_order": 2,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
-      "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
-      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved_or_superseded"
-    },
-    {
       "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
       "actual_effective_status": "unaudited",
@@ -2600,6 +2557,59 @@
       "resolution_reason": "bounded_terminal_after_reaudit",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_distinct_shell_theorem.py",
       "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved"
+    },
+    {
+      "actual_audit_status": "audited_clean",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "retained_bounded",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "audit_question": "Can the bounded cluster-decomposition closure be reclassified positive_theorem? Confirm the Lieb-Robinson series bound's grade first.",
+      "blocked_by_group_ids": [],
+      "claim_id": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+      "deps": [
+        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+        "strong_cp_theta_zero_note",
+        "minimal_axioms"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher queue as evidence",
+        "docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 10,
+      "group_id": "cluster_decomposition",
+      "group_order": 2,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
+      "resolution_evidence": {
+        "audit_date": "2026-07-08T00:25:25.446330+00:00",
+        "audit_status": "audited_clean",
+        "auditor": "codex-cli-gpt-5.5-five-judge-panel-20260707-4e0f04f4",
+        "auditor_family": "codex-gpt-5.5",
+        "claim_type": "bounded_theorem",
+        "independence": "judicial_review"
+      },
+      "resolution_manifest_date": "2026-05-28",
+      "resolution_reason": "bounded_terminal_after_reaudit",
+      "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
+      "source_json_path": "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved"
     },

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1955 |
+| unaudited | 1954 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
-| ~~audited_renaming~~ | 19 |
+| ~~audited_renaming~~ | 20 |
 | ~~audited_conditional~~ | 31 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -65,8 +65,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
-| `audited_renaming` | 19 |
-| `unaudited` | 2300 |
+| `audited_renaming` | 20 |
+| `unaudited` | 2299 |
 
 | claim_type | count |
 |---|---:|
@@ -109,14 +109,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1049 | 48.04 | `unaudited` | meta |
 | 8 | `key_terminology` | meta | critical | 1163 | 46.69 | `unaudited` | meta |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 922 | 43.85 | `audited_clean` | **retained_bounded** |
-| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1291 | 43.34 | `unaudited` | unaudited |
+| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1290 | 43.33 | `unaudited` | unaudited |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1027 | 42.01 | `audited_clean` | **retained_bounded** |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1537 | 41.59 | `audited_clean` | **retained** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1023 | 39.50 | `audited_clean` | **retained_bounded** |
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 319 | 39.32 | `unaudited` | unaudited |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 312 | 37.79 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 863 | 37.76 | `audited_clean` | **retained_no_go** |
-| 17 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 575 | 36.67 | `unaudited` | unaudited |
+| 17 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 576 | 37.17 | `unaudited` | unaudited |
 | 18 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 537 | 36.57 | `unaudited` | unaudited |
 | 19 | `kinetic_isotropy_primitive` | meta | critical | 461 | 36.35 | `unaudited` | meta |
 | 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 842 | 36.22 | `unaudited` | unaudited |
@@ -1532,6 +1532,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | weak | codex-current | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -7948,6 +7949,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted packet proves the finite-volume inverse-map theorem from compactness, variance monotonicity, range bounds, and the inverse function theorem. Those ingredients do not use the staggered-Dirac or g_bare=1 open gates when beta is treated only as the Wilson coupling variable. The open gates attach to the physical beta=6/canonical-plaquette interpretation, which is outside the ratified scope. | The narrowed finite Wilson-surface existence and uniqueness result closes by compactness, nonconstant-observable variance positivity, range bounds, and the inverse function theorem. The open staggered-Dirac and g_bare gates are needed only to interpret beta=6 and downstream physical predictions, not to prove the abstract finite-volume implicit reduction theorem with beta as the Wilson coupling variable. The support-only canonical beta_eff and constant-lift comparisons should remain outside the ratified scope. | The narrowed claim is a standard finite-volume analytic/measure-theoretic closure: compactness gives analyticity, variance gives strict monotonicity, the range bound gives invertibility, and the inverse function theorem gives the reduction map. The open staggered-Dirac and g_bare gates are relevant to interpreting beta=6 and downstream physical predictions, but they are not load-bearing for existence and uniqueness of the implicit map with beta treated as the Wilson coupling variable. The canonical beta_eff number and old constant-lift comparison remain support-only and outside the ratified positive-theorem scope. | The finite Wilson-surface existence and uniqueness result closes by compactness, variance monotonicity, range bounds, and inverse-function algebra, without using the staggered-Dirac or g_bare=1 open gates. Those gates matter for physical beta=6 interpretation and downstream quantitative gauge predictions, but they are outside the narrowed audited scope. The second audit correctly separates the positive finite-volume theorem from the source note's broader bounded framing. | The finite Wilson existence/uniqueness result closes as a standard analytic/algebraic consequence of compactness, variance monotonicity, range bounds, and the inverse function theorem. The open staggered-Dirac and g_bare=1 gates only matter when the theorem is promoted into a physical beta=6 prediction or canonical plaquette repinning claim, which this ratified scope excludes. The runner's imported canonical plaquette and old candidate comparisons are support-only and do not control the theorem scope.
 - **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted packet proves the finite-volume inverse-map theorem from compactness, variance monotonicity, range bounds, and the inverse function theorem. Those ingredients do not use the staggered-Dirac or g_bare=1 open gates when beta is treated only as the Wilson coupling variable. The open gates attach to the physical beta=6/canonical-plaquette interpretation, which is outside the ratified scope. | The narrowed finite Wilson-surface existence and uniqueness result closes by compactness, nonconstant-observable variance positivity, range bounds, and the inverse function theorem. The open staggered-Dirac and g_bare gates are needed only to interpret beta=6 and downstream physical predictions, not to prove the abstract finite-volume implicit reduction theorem with beta as the Wilson coupling variable. The support-only canonical beta_eff and constant-lift comparisons should remain outside the ratified scope. | The narrowed claim is a standard finite-volume analytic/measure-theoretic closure: compactness gives analyticity, variance gives strict monotonicity, the range bound gives invertibility, and the inverse function theorem gives the reduction map. The open staggered-Dirac and g_bare gates are relevant to interpreting beta=6 and downstream physical predictions, but they are not load-bearing for existence and uniqueness of the implicit map with beta treated as the Wilson coupling variable. The canonical beta_eff number and old constant-lift comparison remain support-only and outside the ratified positive-theorem scope. | The finite Wilson-surface existence and uniqueness result closes by compactness, variance monotonicity, range bounds, and inverse-function algebra, without using the staggered-Dirac or g_bare=1 open gates. Those gates matter for physical beta=6 interpretation and downstream quantitative gauge predictions, but they are outside the narrowed audited scope. The second audit correctly separates the positive finite-volume theorem from the source note's broader bounded framing. | The finite Wilson existence/uniqueness result closes as a standard analytic/algebraic consequence of compactness, variance monotonicity, range bounds, and the inverse function theorem. The open staggered-Dirac and g_bare=1 gates only matter when the theorem is promoted into a physical beta=6 prediction or canonical plaquette repinning claim, which this ratified scope excludes. The runner's imported canonical plaquette and old candidate comparisons are support-only and do not control the theorem scope.
 - **auditor confidence:** judicial_panel_majority
+
+### `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Formal per-weight packaging of the stripped residual source-sector operator R_beta^env as (1/lambda_env) times an unnormalized central convolution action by a sequence Z_beta^env defined from the residual eigenvalues; no independent derivation of Z_beta^env from the unmarked Wilson DOF integral, convergence, normalized trivial-channel closure, beta=6 value, or full Hilbert-space operator equality is audited.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-main-context-2026-07-08`  (codex-current; independence=weak)
+- **load-bearing step:** Define the unmarked spatial Wilson environment boundary formal central sequence as the per-weight Peter-Weyl coefficient sequence whose unnormalized formal convolution action, divided by lambda_env(beta), equals the residual operator R_beta^env on each character basis vector.  _(class `E`)_
+- **chain closes:** False — The algebra R_beta^env chi_(p,q) = z_(p,q)^env/lambda_env chi_(p,q) follows only because z_(p,q)^env is defined to be lambda_env times kappa_(p,q)/a_(p,q)^4. The cited authorities supply diagonal factorization, formal convolution algebra, and positivity, but not an independent construction of the environment coefficient sequence.
+- **rationale:** Issue: the load-bearing sequence Z_beta^env is introduced by definition from the stripped residual eigenvalues, so the asserted convolution identification is formal packaging rather than a derived environment operator. Why this blocks: a hostile reader can accept every symbolic runner check while rejecting the physical/environment identification, because no cited theorem derives Z_beta^env from the unmarked Wilson DOF integration. Repair target: prove a bridge theorem constructing the boundary Peter-Weyl sequence from the unmarked spatial Wilson environment integral, with the stated normalization and summability boundary if those stronger claims are needed. Claim boundary until fixed: the note may be cited only for formal diagonal-convolution packaging of an already-defined residual eigenvalue sequence, not as an independent derivation of environment coefficients.
+- **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10`
 

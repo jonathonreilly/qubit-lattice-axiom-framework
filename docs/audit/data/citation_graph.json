@@ -57794,10 +57794,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "neutrino_majorana_current_atlas_nonrealization_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15"
     },
     {
@@ -57811,6 +57807,10 @@
     {
       "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
     {
       "from": "repo.repo_organization",
@@ -111826,14 +111826,14 @@
         "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
         "yt_zero_import_authority_note",
         "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17",
-        "neutrino_majorana_current_atlas_nonrealization_note",
         "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
-        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9efa7c8d3f0514d3099cea43ec90c2e3b0a9ebabc373e1cca62ca6e17f5311be",
+      "note_hash": "9fd188a30085f1a6da76d98b491708d9c9b1a277fdd8f1210c19b582e69004fa",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

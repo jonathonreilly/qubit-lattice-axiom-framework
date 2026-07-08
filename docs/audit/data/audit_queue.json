@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 415,
+    "critical": 414,
     "high": 273,
     "leaf": 777,
     "medium": 540
@@ -174,31 +174,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py",
       "transitive_descendants": 1295
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
-      "claim_scope": "Finite positive diagonal source-block readouts: continuous direct-sum additive families decompose into one-site sums, and the global determinant-only quotient selects exactly the logarithmic one-site family, with source-to-record disjointness left as a separate bridge.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms",
-        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.999,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py",
-      "transitive_descendants": 1022
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -59579,6 +59554,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 257,
-  "total_pending": 2005
+  "ready_count": 256,
+  "total_pending": 2004
 }

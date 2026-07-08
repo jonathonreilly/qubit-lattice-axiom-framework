@@ -29,16 +29,16 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3715 |
-| Applied audit verdicts | 1397 |
+| Applied audit verdicts | 1398 |
 | Retained-grade rows, including boxed decorations | 1327 |
 | Retained positive theorems | 193 |
 | Retained no-go rows | 196 |
 | Retained bounded rows | 893 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 21 |
-| Unaudited rows | 1958 |
+| Unaudited rows | 1957 |
 | Retained-pending-chain rows | 7 |
-| Audited conditional rows | 29 |
+| Audited conditional rows | 30 |
 | Audited renaming rows | 19 |
 | Audited numerical-match rows | 7 |
 | Citation cycles detected | 10 |
@@ -61,7 +61,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 Next ready rows by queue order:
 
 - [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
-- [`yt_zero_import_authority_note`](../../docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md) - critical; unaudited
+- [`yt_zero_import_authority_note`](../../docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md) - critical; non_terminal_conditional
 - [`yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md) - critical; unaudited
 - [`neutrino_majorana_current_atlas_nonrealization_note`](../../docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md) - critical; unaudited
 - [`dm_neutrino_bosonic_normalization_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md) - critical; unaudited
@@ -78,12 +78,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 179 |
+| critical | `unaudited` | 178 |
 | high | `unaudited` | 146 |
 | medium | `unaudited` | 96 |
+| critical | `audited_conditional` | 3 |
 | high | `audited_conditional` | 3 |
 | medium | `open_gate` | 3 |
-| critical | `audited_conditional` | 2 |
 | critical | `audited_numerical_match` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |

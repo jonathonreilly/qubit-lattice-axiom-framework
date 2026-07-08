@@ -57778,11 +57778,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "alpha_s_derived_note"
+      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
-      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
+      "to": "yt_zero_import_authority_note"
     },
     {
       "from": "repo.front_door_status",
@@ -111814,8 +111814,8 @@
         "realized_state_primitive",
         "tier_a_residual_owner_adoption_retirement_2026-07-04",
         "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
-        "alpha_s_derived_note",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "yt_zero_import_authority_note",
         "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
@@ -111823,7 +111823,7 @@
         "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fea1df0f2a16213b2a3773646bc360f4b8c9458c7c6f27b4442dede77be95a09",
+      "note_hash": "cfaaebfa54e96d5cfb24b88dfae78e4d96197af67a6dc8700d5ae438b69145fb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

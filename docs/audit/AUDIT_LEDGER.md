@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 193 |
 | **retained_no_go** | 194 |
-| **retained_bounded** | 888 |
+| **retained_bounded** | 889 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
 | unaudited | 1966 |
-| audit_in_progress | 2 |
+| audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 15 |
-| `audited_clean` | 1266 |
+| `audit_in_progress` | 14 |
+| `audited_clean` | 1267 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
@@ -110,7 +110,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 8 | `key_terminology` | meta | critical | 1163 | 46.69 | `unaudited` | meta |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 922 | 43.85 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1289 | 43.33 | `unaudited` | unaudited |
-| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1027 | 42.51 | `audited_clean` | **retained_bounded** |
+| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1027 | 42.01 | `audited_clean` | **retained_bounded** |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1536 | 41.59 | `audited_clean` | **retained** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1023 | 39.50 | `audited_clean` | **retained_bounded** |
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 319 | 39.32 | `unaudited` | unaudited |
@@ -131,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -202,6 +201,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `audited_symmetry_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_cluster_decomposition_temporal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2348,6 +2348,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — For the scoped L1/L3/L4 statement, the chain closes from finite-dimensional local Cl(3) operator norms, finite-range Hermitian lattice interactions, Duhamel/path-count LR estimates, and the triangle inequality. The spatial connected-correlator clustering bridge is not used as a load-bearing step.
 - **rationale:** The source note correctly removes the parent spatial L2 claim and limits the theorem to L1/L3/L4. The repaired Cl(3) bound uses the valid l1 triangle inequality, fixes the explicit I + sigma_z counterexample to the prior Euclidean bound, and gives finite J_* and v_LR under the finite-range local-rule hypothesis. The LR/light-cone part is a standard finite-lattice Duhamel/path-count derivation with no external numerical comparator or tuned input; the temporal transfer-matrix material is presented only as a conditional exhibit and not as closure of spatial clustering.
 - **auditor confidence:** high
+
+### `axiom_first_cluster_decomposition_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) norm/J_* bound for finite-range Hermitian Cl(3) lattice Hamiltonians; L2 only as conditional transfer-gap temporal clustering routing, not unconditional spatial cluster decomposition.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-five-judge-panel-20260707-4e0f04f4`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Step 3 inserts an exponential path weight into the finite Duhamel interaction-path series and sets mu = 1/R_int to obtain the LR envelope with v_LR = 2e J_* D_int R_int.  _(class `A`)_
+- **chain closes:** True — The load-bearing closure is the finite-dimensional Duhamel/path-count algebra plus the weighted exponential inequality; it does not depend on producing a new framework number by first-principles computation. The runner contains genuine interacting Cl(3) computations and useful controls, but those are exhibits validating the algebraic theorem surface rather than the theorem's load-bearing derivation class. The bounded/open L2 language is explicitly scoped out of clean closure except as conditional temporal routing, and the No-Go Discipline boundary is narrow enough to avoid overclaiming spatial clustering.
+- **rationale:** The load-bearing closure is the finite-dimensional Duhamel/path-count algebra plus the weighted exponential inequality; it does not depend on producing a new framework number by first-principles computation. The runner contains genuine interacting Cl(3) computations and useful controls, but those are exhibits validating the algebraic theorem surface rather than the theorem's load-bearing derivation class. The bounded/open L2 language is explicitly scoped out of clean closure except as conditional temporal routing, and the No-Go Discipline boundary is narrow enough to avoid overclaiming spatial clustering.
+- **auditor confidence:** panel-majority
 
 ### `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`
 

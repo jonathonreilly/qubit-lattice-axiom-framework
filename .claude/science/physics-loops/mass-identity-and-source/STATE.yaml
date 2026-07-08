@@ -45,7 +45,8 @@ imports: >
 discipline: physics-loop standard (V1-V5, N1-N8, validity self-exclusion
   gates, runner + cache per note, vocab_lint before commits, PR per block,
   nothing landed in-loop, no repo-authority surfaces touched).
-next_exact_action: block02 revised runner (window-trend identity gates)
+next_exact_action: none — campaign closed; see HANDOFF.md (verdict, PR
+  review order, post-campaign frontier); follow-ups start fresh packs
 stop_condition_hit: none
 # block01 review 2026-07-08 (Noether classification): first worker draft's
 # Pauli basis infeasible (25.2M cols; worker refused correctly); redesigned

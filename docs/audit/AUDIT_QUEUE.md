@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 2010
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 252
+**Total pending:** 2009
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 254
 
 By criticality:
-- `critical`: 420
+- `critical`: 419
 - `high`: 273
 - `medium`: 540
 - `leaf`: 777
@@ -16,8 +16,8 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | non_terminal_conditional | critical | 1295 | 14.34 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py` |
-| 2 | `alpha_s_derived_note` | bounded_theorem | audit_in_progress | critical | 1027 | 42.51 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_alpha_s_derived_bounded_chain.py` |
-| 3 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | unaudited | critical | 1026 | 16.00 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py` |
+| 2 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | unaudited | critical | 1026 | 16.00 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py` |
+| 3 | `yt_zero_import_authority_note` | positive_theorem | unaudited | critical | 912 | 17.33 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
 | 4 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | positive_theorem | unaudited | critical | 780 | 16.61 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_p1_h_unit_renormalization.py` |
 | 5 | `g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18` | bounded_theorem | unaudited | critical | 661 | 13.37 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py` |
 | 6 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | non_terminal_conditional | critical | 603 | 17.74 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py` |
@@ -55,16 +55,16 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 38 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | critical | 267 | 8.57 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_self_gravity_entropy.py` |
 | 39 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | audit_in_progress | critical | 257 | 8.51 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_a1_ansatz_algebra_certificate.py` |
 | 40 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | critical | 190 | 28.08 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py` |
-| 41 | `rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08` | open_gate | unaudited | critical | 65 | 14.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_rconn_kappa_ew_register_not_read.py` |
-| 42 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | critical | 45 | 18.02 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_classical_semigroup_boundary_2026_06_06.py` |
-| 43 | `quark_route2_e_center_blindness_no_go_note_2026-06-17` | no_go | unaudited | critical | 22 | 15.52 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_e_center_blindness_no_go.py` |
-| 44 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1293 | 15.34 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
-| 45 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1289 | 43.33 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
-| 46 | `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16` | no_go | unaudited | critical | 1023 | 15.50 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py` |
-| 47 | `observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18` | bounded_theorem | unaudited | critical | 1021 | 14.50 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py` |
-| 48 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | unaudited | critical | 1020 | 15.00 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py` |
-| 49 | `observable_principle_from_axiom_note` | bounded_theorem | unaudited | critical | 1018 | 64.49 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_observable_principle_from_axiom.py` |
-| 50 | `s3_time_spacetime_tensor_primitive_note` | bounded_theorem | unaudited | critical | 1009 | 15.48 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_spacetime_tensor_primitive.py` |
+| 41 | `confinement_string_tension_note` | bounded_theorem | unaudited | critical | 114 | 18.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_confinement_string_tension.py` |
+| 42 | `rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08` | open_gate | unaudited | critical | 65 | 14.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_rconn_kappa_ew_register_not_read.py` |
+| 43 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | critical | 45 | 18.02 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_classical_semigroup_boundary_2026_06_06.py` |
+| 44 | `quark_route2_e_center_blindness_no_go_note_2026-06-17` | no_go | unaudited | critical | 22 | 15.52 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_e_center_blindness_no_go.py` |
+| 45 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1293 | 15.34 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
+| 46 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1289 | 43.33 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
+| 47 | `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16` | no_go | unaudited | critical | 1023 | 15.50 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py` |
+| 48 | `observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18` | bounded_theorem | unaudited | critical | 1021 | 14.50 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py` |
+| 49 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | unaudited | critical | 1020 | 15.00 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py` |
+| 50 | `observable_principle_from_axiom_note` | bounded_theorem | unaudited | critical | 1018 | 64.49 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_observable_principle_from_axiom.py` |
 
 ## Citation cycle break targets
 

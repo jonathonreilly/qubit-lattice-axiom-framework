@@ -29,11 +29,11 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3715 |
-| Applied audit verdicts | 1388 |
-| Retained-grade rows, including boxed decorations | 1319 |
+| Applied audit verdicts | 1389 |
+| Retained-grade rows, including boxed decorations | 1320 |
 | Retained positive theorems | 193 |
 | Retained no-go rows | 194 |
-| Retained bounded rows | 887 |
+| Retained bounded rows | 888 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 21 |
 | Unaudited rows | 1966 |
@@ -50,10 +50,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2010 |
-| Ready rows | 252 |
+| Total pending rows | 2009 |
+| Ready rows | 254 |
 | Cycle-break targets | 10 |
-| Critical pending | 420 |
+| Critical pending | 419 |
 | High pending | 273 |
 | Medium pending | 540 |
 | Leaf pending | 777 |
@@ -61,8 +61,8 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 Next ready rows by queue order:
 
 - [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
-- [`alpha_s_derived_note`](../../docs/ALPHA_S_DERIVED_NOTE.md) - critical; audit_in_progress
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
+- [`yt_zero_import_authority_note`](../../docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md) - critical; unaudited
 - [`yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md) - critical; unaudited
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; non_terminal_conditional
@@ -74,7 +74,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **435**.
+- Non-retained-grade cited rows in publication tables: **434**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -83,7 +83,6 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | medium | `unaudited` | 96 |
 | high | `audited_conditional` | 3 |
 | medium | `open_gate` | 3 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | high | `open_gate` | 1 |

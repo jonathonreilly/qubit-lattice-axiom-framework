@@ -192,17 +192,17 @@
         "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
         "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 58,
+      "direct_in_degree": 59,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 42.004,
+      "load_bearing_score": 42.506,
       "note_path": "docs/ALPHA_S_DERIVED_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_alpha_s_derived_bounded_chain.py",
-      "transitive_descendants": 1026
+      "transitive_descendants": 1027
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -464,26 +464,26 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
+      "audit_status": "audited_conditional",
+      "blocker": null,
       "claim_id": "r_base_group_theory_derivation_theorem_note_2026-04-24",
-      "claim_scope": "Exact bounded algebraic identity R_base = 31/9 from SU(3)/SU(2) fundamental Casimirs, adjoint dimensions, and the bounded/admitted 3/5 hypercharge-normalization factor; no dark-matter or cosmology closure.",
+      "claim_scope": "Exact rational reduction of the displayed SU(3)/SU(2) Casimir-adjoint formula to R_base = 31/9, with the 3/5 GUT-normalization factor treated as an admitted input and no cosmology closure audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": "third_confirmed_second",
       "deps": [
         "hypercharge_identification_note",
         "graph_first_su3_integration_note",
         "native_gauge_closure_note"
       ],
       "direct_in_degree": 23,
-      "effective_status": "audit_in_progress",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [],
       "load_bearing_score": 23.469,
       "note_path": "docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md",
-      "queue_reason": "audit_in_progress",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_r_base_group_theory_derivation.py",
       "transitive_descendants": 500

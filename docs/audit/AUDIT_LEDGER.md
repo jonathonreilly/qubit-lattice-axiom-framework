@@ -24,11 +24,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
 | unaudited | 1967 |
-| audit_in_progress | 3 |
+| audit_in_progress | 2 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 27 |
+| ~~audited_conditional~~ | 28 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -59,9 +59,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 16 |
+| `audit_in_progress` | 15 |
 | `audited_clean` | 1265 |
-| `audited_conditional` | 27 |
+| `audited_conditional` | 28 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
@@ -110,7 +110,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 8 | `key_terminology` | meta | critical | 1163 | 46.69 | `unaudited` | meta |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 922 | 43.85 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1289 | 43.33 | `unaudited` | unaudited |
-| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1026 | 42.00 | `unaudited` | unaudited |
+| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1027 | 42.51 | `unaudited` | unaudited |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1536 | 41.59 | `audited_clean` | **retained** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1023 | 39.50 | `audited_clean` | **retained_bounded** |
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 319 | 39.32 | `unaudited` | unaudited |
@@ -142,7 +142,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `poisson_self_gravity_mechanism_note` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1434,6 +1433,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `record_context_generator_nonidentifiability_no_go_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -14615,6 +14615,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Direct algebra from the displayed runner formula cancels G_lin(k xi + xi k), reduces the transverse-traceless sample to (1/2) k^2 h, and gives G_lin(eta)=k k - k^2 eta, distinct from the TT response. This closes only for the target continuum operator and not for Regge second variation, metric emergence, or physical graviton closure.
 - **rationale:** The runner source implements the linearized Einstein tensor formula and performs nontrivial numerical checks rather than merely printing pass constants. Independent algebra verifies the gauge cancellation, the TT coefficient including the 1/2 factor, k^2=1.7^2=2.890, and the conformal max response scale. The source note's guardrails explicitly prevent using this as a Regge-action, edge-metric, continuum-limit, or physical-graviton theorem.
 - **auditor confidence:** high
+
+### `r_base_group_theory_derivation_theorem_note_2026-04-24`
+
+- **Note:** [`R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md`](../../docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact rational reduction of the displayed SU(3)/SU(2) Casimir-adjoint formula to R_base = 31/9, with the 3/5 GUT-normalization factor treated as an admitted input and no cosmology closure audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-five-judge-panel-20260707-b96ff3ea`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** R_base = (3/5) * [C_2(3) * dim(adj_3) + C_2(2) * dim(adj_2)] / [C_2(2) * dim(adj_2)] = 31/9.  _(class `A`)_
+- **chain closes:** False — The arithmetic itself is a genuine class A exact identity, and the runner computes it with Fraction arithmetic rather than fitting a comparator. However, the 3/5 factor is load-bearing and the restricted packet does not supply a retained derivation or accepted-premise registration for that normalization. The retained_bounded hypercharge authority does not close this gap because it explicitly quarantines GUT-normalization claims, so the clean bounded core remains conditional on that admitted normalization.
+- **rationale:** The arithmetic itself is a genuine class A exact identity, and the runner computes it with Fraction arithmetic rather than fitting a comparator. However, the 3/5 factor is load-bearing and the restricted packet does not supply a retained derivation or accepted-premise registration for that normalization. The retained_bounded hypercharge authority does not close this gap because it explicitly quarantines GUT-normalization claims, so the clean bounded core remains conditional on that admitted normalization.
+- **open / conditional deps cited:**
+  - `HYPERCHARGE_IDENTIFICATION_NOTE.md`
+- **auditor confidence:** panel-majority
 
 ### `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02`
 

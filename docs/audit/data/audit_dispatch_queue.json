@@ -3186,9 +3186,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audit_in_progress",
+      "actual_audit_status": "audited_conditional",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audit_in_progress",
+      "actual_effective_status": "audited_conditional",
       "audit_question": null,
       "claim_id": "r_base_group_theory_derivation_theorem_note_2026-04-24",
       "expected_current_audit_status": null,

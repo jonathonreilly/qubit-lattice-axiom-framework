@@ -45,6 +45,9 @@ READY_DEP_STATUSES = {
 }
 
 
+CONDITIONAL_TIER_STATUSES = {"audited_conditional", "retained_conditional"}
+
+
 def dep_ready(status: str | None) -> bool:
     if status in READY_DEP_STATUSES:
         return True
@@ -70,6 +73,26 @@ def is_ready(row: dict, rows: dict[str, dict]) -> bool:
         if not dep_ready(d_eff):
             return False
     return True
+
+
+def ready_tier(row: dict, rows: dict[str, dict]) -> str | None:
+    """'clean' when every dep is a stable retained-grade input; 'conditional'
+    when the only non-passing deps are conditional-tier rows (the row is
+    auditable and, on a clean verdict, resolves to `retained_conditional`
+    with its inherited conditions recorded); None when a dep is neither.
+    """
+    tier = "clean"
+    for d in row.get("deps", []):
+        if premise_nodes.is_accepted_premise_dep(d):
+            continue
+        d_eff = rows.get(d, {}).get("effective_status") or "unknown"
+        if dep_ready(d_eff):
+            continue
+        if d_eff in CONDITIONAL_TIER_STATUSES:
+            tier = "conditional"
+            continue
+        return None
+    return tier
 
 
 def needs_audit(row: dict) -> tuple[bool, str]:
@@ -168,6 +191,7 @@ def main() -> int:
         a = row.get("audit_status", "unaudited")
         criticality = row.get("criticality") or "leaf"
         ready = is_ready(row, rows)
+        tier = ready_tier(row, rows)
         entry = {
             "claim_id": cid,
             "note_path": row.get("note_path"),
@@ -186,6 +210,7 @@ def main() -> int:
             "helper_runner_paths": list(row.get("helper_runner_paths") or []),
             "deps": list(row.get("deps", [])),
             "ready": ready,
+            "ready_tier": tier,
             "blocker": row.get("blocker"),
             "cross_confirmation_status": (row.get("cross_confirmation") or {}).get("status"),
             "audit_independence_required": (
@@ -201,7 +226,7 @@ def main() -> int:
     pending.sort(
         key=lambda e: (
             -e["criticality_rank"],
-            0 if e["ready"] else 1,
+            0 if e["ready"] else (1 if e["ready_tier"] == "conditional" else 2),
             -e["transitive_descendants"],
             -e["load_bearing_score"],
         )
@@ -212,6 +237,9 @@ def main() -> int:
     queue = {
         "total_pending": len(pending),
         "ready_count": sum(1 for e in pending if e["ready"]),
+        "conditional_ready_count": sum(
+            1 for e in pending if e["ready_tier"] == "conditional"
+        ),
         "by_criticality": {
             c: sum(1 for e in pending if e["criticality"] == c)
             for c in ("critical", "high", "medium", "leaf")
@@ -229,6 +257,7 @@ def main() -> int:
         "",
         f"**Total pending:** {queue['total_pending']}",
         f"**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** {queue['ready_count']}",
+        f"**Conditional-tier ready (auditable now; a clean verdict resolves to retained_conditional with inherited conditions recorded):** {queue['conditional_ready_count']}",
         "",
         "By criticality:",
     ]
@@ -254,7 +283,7 @@ def main() -> int:
             f"{e['queue_reason']} | {e['criticality']} | "
             f"{e['transitive_descendants']} | "
             f"{e['load_bearing_score']:.2f} | "
-            f"{'Y' if e['ready'] else ''} | "
+            f"{'Y' if e['ready'] else ('C' if e['ready_tier'] == 'conditional' else '')} | "
             f"{e['audit_independence_required']} | "
             f"{'`' + e['runner_path'] + '`' if e['runner_path'] else '-'} |"
         )

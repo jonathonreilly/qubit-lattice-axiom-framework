@@ -416,7 +416,7 @@ When a claim's law domain (a supplied condition) is audited:
 Use the audit-lane verdict enum exactly:
 
 - `audited_clean`: derivation closes from the cited inputs; no hidden physical identification; runner checks the load-bearing step or the proof is purely exact algebra over independent retained inputs; and every math-bearing formula/sign/factor/normalization/numeric target has been independently cross-checked outside the runner's implementation path. Effective status is derived from ledger `claim_type` plus dependency closure, not source-note status prose. `support` is not a claim class, and old support prose neither grants nor blocks retained status after a clean audit.
-- `audited_conditional`: depends on an unaudited dependency, open gate, retained-pending-chain row, unratified physical bridge, or an explicit premise not closed by the cited authorities.
+- `audited_conditional`: depends on an unaudited dependency, open gate, retained-pending-chain row, unratified physical bridge, or an explicit premise not closed by the cited authorities. A dependency that is itself `audited_conditional` or `retained_conditional` does NOT force this verdict by itself: it satisfies chain closure at the conditional tier (see Conditional-Tier Chain Closure below), and a clean verdict on the row's own content resolves to `retained_conditional` mechanically.
 - `audited_renaming`: the load-bearing step defines/renames the target quantity or identifies two concepts without derivation.
 - `audited_decoration`: exact algebraic corollary with no independent comparator, falsifiability, compression, or new physical content beyond an upstream parent.
 - `audited_numerical_match`: result depends on tuned/calibrated input or chosen scale/value rather than a structural theorem.
@@ -439,6 +439,31 @@ For claims with `claim_type: no_go`, `bounded_theorem` whose source note names w
 - if N7/N8 fails (convincing steelman exists, or prior-wall retirement mechanism not considered), record `audited_conditional` with `notes_for_re_audit_if_any: scope_too_broad — named alternative not foreclosed`.
 
 See [`docs/ai_methodology/skills/no-go-discipline/SKILL.md`](../no-go-discipline/SKILL.md). The audit lane must not transcribe a source note's inflated no-go into the ledger as `audited_clean` — that cements the overclaim and forecloses investigation paths permanently.
+
+## Conditional-Tier Chain Closure
+
+Queue entries with `ready_tier: conditional` are auditable: every
+non-passing dependency is itself `audited_conditional` or
+`retained_conditional`, so the row's own claim can be judged now and its
+conditions inherited visibly instead of blocking.
+
+Protocol for such rows:
+
+- The restricted packet MUST include each conditional-tier dependency's
+  audited `claim_scope` verbatim (ledger grep), so the inherited conditions
+  are in front of the auditor.
+- Judge the row's OWN claim at its stated scope exactly as for any row. Do
+  not re-audit the upstream conditional row; do not treat the inherited
+  condition as a defect of this row; do not require this row to discharge a
+  condition its dependency already names.
+- Verdict enum is unchanged. On `audited_clean`, the pipeline derives
+  `effective_status = retained_conditional` and records
+  `inherited_conditional_deps` mechanically; do not hand-set either field.
+- The session report MUST name the inherited conditions (one line per
+  conditional dependency, quoting its named premise or condition).
+- A conditional-tier row never confers retained-grade support. If the
+  row's own content independently fails, the ordinary non-clean verdicts
+  apply exactly as elsewhere in this skill.
 
 ## Required Failure Handoff
 

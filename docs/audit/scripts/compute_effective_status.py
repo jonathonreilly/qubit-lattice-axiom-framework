@@ -30,6 +30,12 @@ LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 SUMMARY_PATH = DATA_DIR / "effective_status_summary.json"
 
 RETAINED_GRADES = {"retained", "retained_no_go", "retained_bounded"}
+
+# Conditional-tier statuses satisfy chain closure only at the conditional
+# tier: a clean row depending on one is capped at retained_conditional and
+# records the inherited sources in inherited_conditional_deps. They are NOT
+# retained-grade and never confer retained-grade support.
+CONDITIONAL_TIER_STATUSES = {"audited_conditional", "retained_conditional"}
 TERMINAL_AUDIT_STATUSES = {
     "audited_renaming",
     "audited_conditional",
@@ -48,6 +54,7 @@ RANK = {
     "retained": 100,
     "retained_no_go": 100,
     "retained_bounded": 95,
+    "retained_conditional": 90,
     "retained_pending_chain": 80,
     "open_gate": 40,
     "unaudited": 30,
@@ -123,9 +130,17 @@ def clean_status(row: dict, dep_effective: dict[str, str]) -> tuple[str, str]:
         return "retained_pending_chain", "missing_or_unknown_claim_type"
 
     has_tier_a_derivation_target = False
+    first_conditional_dep: str | None = None
     for dep_id in sorted(row.get("deps", [])):
         dep_status = dep_effective.get(dep_id, "unaudited")
         if is_chain_satisfying_status(dep_status):
+            continue
+        if dep_status in CONDITIONAL_TIER_STATUSES:
+            # Conditional-tier chain closure: the dependency satisfies the
+            # edge, but every condition it carries is inherited and the row
+            # is capped at retained_conditional below.
+            if first_conditional_dep is None:
+                first_conditional_dep = dep_id
             continue
         if premise_nodes.is_axiom_premise(dep_id):
             continue
@@ -135,6 +150,14 @@ def clean_status(row: dict, dep_effective: dict[str, str]) -> tuple[str, str]:
             has_tier_a_derivation_target = True
             continue
         return "retained_pending_chain", f"chain_waiting_on:{dep_id}"
+    if first_conditional_dep is not None:
+        # The conditional cap dominates the Tier-A bounded cap: conditional
+        # is the weaker tier, and conditional-in must never grade above
+        # conditional-out.
+        return (
+            "retained_conditional",
+            f"conditional_by_inherited_upstream_condition:{first_conditional_dep}",
+        )
     if has_tier_a_derivation_target and retained_status != "retained_bounded":
         return "retained_bounded", "bounded_by_tier_a_admitted_derivation_target"
     return retained_status, "self"
@@ -268,6 +291,14 @@ def compute_effective(rows: dict[str, dict]) -> tuple[dict[str, dict], list[list
         new_row["intrinsic_status"] = intrinsic[cid]
         new_row["effective_status"] = effective[cid]
         new_row["effective_status_reason"] = reason[cid]
+        if effective[cid] == "retained_conditional":
+            new_row["inherited_conditional_deps"] = sorted(
+                d
+                for d in row.get("deps", [])
+                if d in rows and effective.get(d) in CONDITIONAL_TIER_STATUSES
+            )
+        else:
+            new_row.pop("inherited_conditional_deps", None)
         out[cid] = new_row
     return out, cycles
 

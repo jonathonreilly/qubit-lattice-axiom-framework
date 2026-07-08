@@ -34,7 +34,7 @@
   "cycles_detected": 10,
   "effective_status_counts": {
     "audit_in_progress": 1,
-    "audited_conditional": 31,
+    "audited_conditional": 32,
     "audited_numerical_match": 7,
     "audited_renaming": 20,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
@@ -70,7 +70,7 @@
     "retained_bounded": 895,
     "retained_no_go": 196,
     "retained_pending_chain": 7,
-    "unaudited": 1954
+    "unaudited": 1953
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

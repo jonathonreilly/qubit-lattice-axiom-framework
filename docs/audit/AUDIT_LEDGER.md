@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 194 |
+| **retained** | 195 |
 | **retained_no_go** | 196 |
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1943 |
+| unaudited | 1942 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1276 |
+| `audited_clean` | 1277 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2288 |
+| `unaudited` | 2287 |
 
 | claim_type | count |
 |---|---:|
@@ -788,6 +788,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_z3_joint_projector_identity_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-current | C | - |
+| `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-current | B | - |
 | `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -10854,6 +10855,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** With the unnormalized maximally entangled vector, the Choi matrix has no 1/d prefactor, the inverse map has no d-factor, and Kraus extraction absorbs the eigenvalue with no extra sqrt(d).  _(class `C`)_
 - **chain closes:** True — The source fixes one convention and proves the d-factor bookkeeping directly from finite-dimensional matrix algebra over the qubit substrate; the runner verifies exact M2 reconstruction, randomized M2/M4 CPTP round trips, named qubit channels, CP boundary behavior, and both mixed-convention failure modes.
 - **rationale:** The audited claim is a normalization-reconciliation theorem, not a new physical dynamics claim. Within that boundary, the unnormalized Choi convention, inverse formula, Kraus extraction, and TP/CP conditions close from finite-dimensional linear algebra on the qubit algebra supplied by the minimal axioms. The runner computes the load-bearing links and the two mixed-convention counterchecks rather than merely printing the target conclusion; residual risk is limited to the explicitly excluded thermodynamic-limit and record-dynamics applications.
+- **auditor confidence:** high
+
+### `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-region Kraus-Choi/operator-sum representation theorem for CPTP maps on the qubit-lattice matrix algebra A_Lambda, using the retained single-convention normalization theorem as the framework-local Kraus-Choi authority.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=cross_family)
+- **load-bearing step:** The qubit-lattice algebra A_Lambda = tensor_x M_2(C) is finite-dimensional M_d(C), so the retained single-convention Kraus-Choi correspondence applies directly to finite-region CPTP maps on A_Lambda.  _(class `B`)_
+- **chain closes:** True — The current source no longer relies on the mixed-normalization convention; it routes through the retained reconciliation theorem, while minimal_axioms supplies the finite M2(C) per-site qubit algebra and Z3 finite-region substrate. The thermodynamic-limit and record-dynamics applications are explicitly out of scope.
+- **rationale:** The load-bearing finite-region theorem closes from two wired inputs: the retained single-convention Kraus-Choi normalization row and the minimal qubit-lattice algebra premise. The runner verifies the source markers, the normalized/unnormalized inverse factors, the Choi PSD/TP checks on a concrete CPTP map, and finite-region dimensions d=2^|Lambda|; it also checks that omitting the normalized-convention d factor fails. Residual risk is outside the audited scope: arbitrary infinite-volume channels and any specific record-formation CPTP identification remain separate lanes.
 - **auditor confidence:** high
 
 ### `kubo_continuum_limit_families_note`

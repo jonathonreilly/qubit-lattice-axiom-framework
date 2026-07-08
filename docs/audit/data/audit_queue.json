@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 407,
-    "high": 273,
+    "high": 272,
     "leaf": 777,
     "medium": 539
   },
@@ -12254,31 +12254,6 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.609,
-      "note_path": "docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/kraus_choi_normalization_convention_check_2026_06_05.py",
-      "transitive_descendants": 68
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "ckm_five_sixths_bridge_support_note",
@@ -20925,6 +20900,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/gauge_center_sector_record_context_character_grading_obstruction_2026_07_01.py",
+      "transitive_descendants": 14
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.407,
+      "note_path": "docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_persistent_record_instrument_construction.py",
       "transitive_descendants": 14
     },
     {
@@ -30264,31 +30264,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_beta6_connected_coefficient_2026_05_30.py",
-      "transitive_descendants": 14
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.407,
-      "note_path": "docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_persistent_record_instrument_construction.py",
       "transitive_descendants": 14
     },
     {
@@ -59348,5 +59323,5 @@
     }
   ],
   "ready_count": 264,
-  "total_pending": 1996
+  "total_pending": 1995
 }

@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 2004
+**Total pending:** 2003
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 256
 
 By criticality:
-- `critical`: 414
+- `critical`: 413
 - `high`: 273
 - `medium`: 540
 - `leaf`: 777
@@ -16,7 +16,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | non_terminal_conditional | critical | 1295 | 14.34 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py` |
-| 2 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | audit_in_progress | critical | 1021 | 15.50 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py` |
+| 2 | `observable_principle_from_axiom_note` | bounded_theorem | unaudited | critical | 1018 | 64.49 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_observable_principle_from_axiom.py` |
 | 3 | `yt_zero_import_authority_note` | positive_theorem | unaudited | critical | 913 | 17.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
 | 4 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | positive_theorem | unaudited | critical | 780 | 16.61 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_p1_h_unit_renormalization.py` |
 | 5 | `g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18` | bounded_theorem | unaudited | critical | 661 | 13.37 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py` |
@@ -59,12 +59,12 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 42 | `quark_route2_e_center_blindness_no_go_note_2026-06-17` | no_go | unaudited | critical | 22 | 15.52 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_e_center_blindness_no_go.py` |
 | 43 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1293 | 15.34 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
 | 44 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1289 | 43.33 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
-| 45 | `observable_principle_from_axiom_note` | bounded_theorem | unaudited | critical | 1018 | 64.49 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_observable_principle_from_axiom.py` |
-| 46 | `s3_time_spacetime_tensor_primitive_note` | bounded_theorem | unaudited | critical | 1009 | 15.48 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_spacetime_tensor_primitive.py` |
-| 47 | `s3_time_transfer_matrix_bridge_note` | bounded_theorem | unaudited | critical | 994 | 15.46 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_transfer_matrix_bridge.py` |
-| 48 | `s3_time_bilinear_tensor_primitive_note` | open_gate | unaudited | critical | 991 | 33.95 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_bilinear_tensor_primitive.py` |
-| 49 | `one_generation_matter_closure_note` | bounded_theorem | unaudited | critical | 962 | 29.41 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_right_handed_sector.py` |
-| 50 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 918 | 31.84 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_sm_hypercharge_uniqueness.py` |
+| 45 | `s3_time_spacetime_tensor_primitive_note` | bounded_theorem | unaudited | critical | 1009 | 15.48 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_spacetime_tensor_primitive.py` |
+| 46 | `s3_time_transfer_matrix_bridge_note` | bounded_theorem | unaudited | critical | 994 | 15.46 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_transfer_matrix_bridge.py` |
+| 47 | `s3_time_bilinear_tensor_primitive_note` | open_gate | unaudited | critical | 991 | 33.95 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_bilinear_tensor_primitive.py` |
+| 48 | `one_generation_matter_closure_note` | bounded_theorem | unaudited | critical | 962 | 29.41 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_right_handed_sector.py` |
+| 49 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 918 | 31.84 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_sm_hypercharge_uniqueness.py` |
+| 50 | `yt_boundary_theorem` | open_gate | unaudited | critical | 910 | 19.33 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_boundary_consistency.py` |
 
 ## Citation cycle break targets
 

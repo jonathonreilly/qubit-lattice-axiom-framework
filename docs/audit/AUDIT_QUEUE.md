@@ -2,7 +2,6 @@
 
 **Total pending:** 2000
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 267
-**Conditional-tier ready (auditable now; a clean verdict resolves to retained_conditional with inherited conditions recorded):** 26
 
 By criticality:
 - `critical`: 410
@@ -61,11 +60,11 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 43 | `rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08` | open_gate | unaudited | critical | 65 | 14.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_rconn_kappa_ew_register_not_read.py` |
 | 44 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | critical | 45 | 18.02 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_classical_semigroup_boundary_2026_06_06.py` |
 | 45 | `quark_route2_e_center_blindness_no_go_note_2026-06-17` | no_go | unaudited | critical | 22 | 15.52 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_e_center_blindness_no_go.py` |
-| 46 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1293 | 15.34 | C | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
-| 47 | `yt_boundary_theorem` | open_gate | unaudited | critical | 910 | 19.33 | C | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_boundary_consistency.py` |
-| 48 | `yt_p1_i_s_native_kernel_settled_bounded_theorem_note_2026-06-16` | bounded_theorem | unaudited | critical | 778 | 13.11 | C | fresh_context_or_stronger_with_cross_confirmation | `scripts/yt_p1_i_s_native_kernel_settled_2026_06_16.py` |
-| 49 | `dm_neutrino_schur_suppression_theorem_note_2026-04-15` | bounded_theorem | unaudited | critical | 720 | 14.49 | C | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_neutrino_schur_suppression_theorem.py` |
-| 50 | `cl3_color_automorphism_theorem` | bounded_theorem | unaudited | critical | 537 | 36.57 | C | fresh_context_or_stronger_with_cross_confirmation | `scripts/verify_cl3_sm_embedding.py` |
+| 46 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1293 | 15.34 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
+| 47 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1289 | 43.33 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
+| 48 | `s3_time_spacetime_tensor_primitive_note` | bounded_theorem | unaudited | critical | 1009 | 15.48 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_spacetime_tensor_primitive.py` |
+| 49 | `s3_time_transfer_matrix_bridge_note` | bounded_theorem | unaudited | critical | 994 | 15.46 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_transfer_matrix_bridge.py` |
+| 50 | `s3_time_bilinear_tensor_primitive_note` | open_gate | unaudited | critical | 991 | 33.95 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_bilinear_tensor_primitive.py` |
 
 ## Citation cycle break targets
 

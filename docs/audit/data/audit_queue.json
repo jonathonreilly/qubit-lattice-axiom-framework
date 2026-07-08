@@ -190,10 +190,10 @@
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "minimal_axioms"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.501,
+      "load_bearing_score": 16.001,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md",
       "queue_reason": "unaudited",
       "ready": true,
@@ -1309,12 +1309,12 @@
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.499,
+      "load_bearing_score": 14.497,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py",
-      "transitive_descendants": 1022
+      "transitive_descendants": 1021
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1323,7 +1323,7 @@
       "claim_id": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
@@ -1333,24 +1333,24 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.997,
+      "load_bearing_score": 14.996,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py",
-      "transitive_descendants": 1021
+      "transitive_descendants": 1020
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "observable_principle_from_axiom_note",
-      "claim_scope": null,
+      "claim_scope": "Finite real-positive staggered source-surface theorem: given Record finite additivity, determinant positivity, and the explicit T1-d readout-identification Boundary, the log-det generator family, local derivative formulas, Matsubara kernel identity, and Klein-four Lt=4 selector close on the runner block.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "minimal_axioms",
         "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
@@ -1358,17 +1358,17 @@
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
       ],
-      "direct_in_degree": 104,
-      "effective_status": "unaudited",
+      "direct_in_degree": 103,
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 64.994,
+      "load_bearing_score": 64.493,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": false,
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
-      "transitive_descendants": 1019
+      "transitive_descendants": 1018
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

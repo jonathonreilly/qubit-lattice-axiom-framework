@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1954 |
+| unaudited | 1953 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 31 |
+| ~~audited_conditional~~ | 32 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1275 |
-| `audited_conditional` | 31 |
+| `audited_conditional` | 32 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2299 |
+| `unaudited` | 2298 |
 
 | claim_type | count |
 |---|---:|
@@ -1434,6 +1434,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -8260,6 +8261,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The registered toy-DAG ensemble runner reports normalized coherent-vs-incoherent contrast 0.0393, centroid shift 0.057445, width change 0.021137, and peak-bin pairwise phase differences up to about 0.3225 rad, so coherent summation over the specified DAG geometries is distinguishable from the incoherent mixture in this bounded ensemble.  _(class `C`)_
 - **chain closes:** True — The live runner deterministically constructs the five specified DAG variants, including the repaired added-edge variant, propagates the toy path-sum amplitudes, normalizes each geometry's detector wavefunction, and reproduces the note's bounded contrast, centroid, width, and phase-difference values. The source note explicitly confines the claim to this older DAG-ensemble probe and excludes staggered/headline claims.
 - **rationale:** The bounded computation closes because the current runner output matches the scoped numerical rows and the note has narrowed away the prior inflated normalization headline and any staggered-fermion interpretation. The runner does not emit classified PASS lines, but its deterministic output directly provides the audited observables and its branch would stop claiming confirmation if normalized contrast fell below the stated 1% threshold. Residual risk is citation drift: this result is only a toy_event_physics DAG-ensemble lead, not a retained staggered or gravity-entanglement claim.
+- **auditor confidence:** high
+
+### `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Application of the standard Gleason projection-lattice theorem to finite multi-site qubit-lattice Hilbert spaces with |Lambda| >= 2, conditional on a retained framework authority supplying the finite-region tensor-product Hilbert/projection lattice H_Lambda = tensor_x C^2_x from the per-site qubit and Z^3 substrate.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-main-context-2026-07-08`  (codex-current; independence=weak)
+- **load-bearing step:** By A1+A2, the per-site operator algebra is M_2(C) acting on C^2; by tensor composition, for finite Lambda subset Z^3, H_Lambda = tensor_{x in Lambda} C^2_x and A_Lambda = tensor_{x in Lambda} M_2(C)_x = B(H_Lambda).  _(class `B`)_
+- **chain closes:** False — The standard Gleason step is mathematically recognizable, but the framework-specific substrate H_Lambda = tensor_x C^2_x is not supplied by the only direct dependency, minimal_axioms. The current axiom memo supplies per-site M_2(C) and the Z^3 substrate, but explicitly leaves additional physical structure to downstream derivations or bridges.
+- **rationale:** Issue: the note's framework-specific move from per-site M_2(C) on Z^3 to the finite-region tensor-product Hilbert/projection lattice H_Lambda = tensor_x C^2_x is not closed by the direct dependency on minimal_axioms. Why this blocks: Gleason's theorem can classify measures after a Hilbert projection lattice is supplied, but the audited row has not supplied a retained authority that the framework's multi-site physical event algebra is exactly that tensor-product projection lattice. Repair target: cite or prove a retained finite-region tensor-product/projection-lattice bridge, or narrow the row to a purely conditional Gleason application whose substrate is supplied as an explicit premise. Claim boundary until fixed: standard Gleason applies to any supplied finite Hilbert space of dimension at least 3, but this row does not yet derive that Hilbert projection lattice from the current framework axioms.
 - **auditor confidence:** high
 
 ### `global_coherence_held_out2_note`

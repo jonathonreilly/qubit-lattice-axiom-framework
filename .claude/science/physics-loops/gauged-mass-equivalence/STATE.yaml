@@ -30,3 +30,6 @@ discipline: same as matter-mass-wep pack (V1-V5, N1-N8, kappa-style
   nothing landed in-loop).
 next_exact_action: block01 codex worker (ED engine + validation runner)
 stop_condition_hit: none
+# block01 review 2026-07-08: engine validated (all residuals <= 7.4e-14);
+# worker surfaced three engineering flags, all documented in the note;
+# note supervisor-reviewed, dependencies section added; disposition pass.

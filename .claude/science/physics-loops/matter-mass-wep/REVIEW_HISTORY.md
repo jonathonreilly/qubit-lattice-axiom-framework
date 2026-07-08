@@ -47,3 +47,21 @@
   resid/bound = 0.4494 equals the predicted spectral-norm slack; m=0 control
   width-splits as required; position/momentum gauge agreement 4.6e-13.
 - Local disposition: pass.
+
+## block03 — 2026-07-08 supervisor review
+
+- Runner worker survived a session disconnect and delivered honestly
+  (PASS=3 FAIL=3 with correct spec-defect diagnosis). Supervisor patches:
+  even-P identity + Richardson curvature replaces the contaminated
+  mixed-parity band fit (4.1e-11 vs the identity); quartic+sextic band fits
+  with printed extraction shift; fixed-threshold dichotomy gates decoupled
+  from Delta_univ. Final PASS=6 FAIL=0.
+- Science findings (drive the block04 restructure): composite inertial mass
+  is bandwidth-dominated (M_comp rises with binding while rest energy
+  falls); singles-exact source F fails composites by >= 0.6 at U=0.8; F's
+  convexity breaks even free composites. Exact finite-spacing WEP for
+  rest-energy sources is impossible on this surface (a lattice fact, not a
+  framework defect).
+- Note worker draft faithful; supervisor removed campaign-internal
+  block-label tokens (9 replacements).
+- Local disposition: pass.

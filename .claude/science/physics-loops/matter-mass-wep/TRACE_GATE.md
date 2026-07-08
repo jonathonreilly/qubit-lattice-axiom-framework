@@ -27,3 +27,15 @@ next_trace_action: "block03 extends to composites; block04 consumes M_I for the 
 ## block03 / block04 — to be drafted at block start.
 block04's expected trace on the negative fork: negative_route_pruning +
 diagnosis note; on the positive fork: direct_blocker_closure of EP-S3b.
+
+## block03 — composite motion (executed)
+
+```yaml
+trace_class: direct_blocker_closure
+target_claim_id: null
+target_blocker_text: "no note on center-of-mass motion, comoving frames, Galilean invariance, or common acceleration of a bound pair exists"
+source_of_blocker_text: user_goal  # motion sweep 2026-07-08; owner's original two-masses question
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: "block04 consumes C1 (rest-energy sources cannot give exact finite-spacing composite WEP) as the comparator leg of the reduction/no-go"
+```

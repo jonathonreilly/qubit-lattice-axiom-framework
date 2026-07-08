@@ -25,3 +25,16 @@ admitted_observation_status: null
 claim_type_reason: "exact T1/T2 identities + windowed T3/T3' bound off block01 imports plus I-EXT probe; no observed values, no fitted selectors"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
+
+## block03 (executed 2026-07-08)
+
+actual_current_surface_status: bounded-support (candidate bounded_theorem with declared measured-comparator legs; local review pass; runner PASS=6 FAIL=0)
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes  # composite/common-acceleration gap; supplies block04 comparator
+conditional_surface_status: audited_conditional expected (dependency_not_retained via AC_phi_lambda cascade; I-INT comparator declared)
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact T1-T3 legs + declared M1/M2 measured comparator legs off I-1D/I-DIST/I-INT; no observed target values, no fitted selectors"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

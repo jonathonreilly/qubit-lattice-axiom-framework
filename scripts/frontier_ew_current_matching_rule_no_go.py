@@ -1,50 +1,75 @@
 #!/usr/bin/env python3
-"""EW current matching-rule no-go runner.
+"""EW current matching-rule kappa_EW parametrization runner.
 
-Authority note:
-    docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md
+This verifies the audited-conditional narrow repair: KAPPA-EW is a supplied
+premise and the exact family is
 
-The runner checks the formal underdetermination argument:
+    K_EW(kappa) = 1 / (F_adj + kappa * (1 - F_adj)).
 
-    F_adj = (N_c^2 - 1) / N_c^2
-    K_EW(kappa) = 1 / (F_adj + kappa * (1 - F_adj))
-
-The current retained primitives fix F_adj and CMT color-blind scaling, but
-do not fix kappa. Two completions, kappa=0 and kappa=1, satisfy the same
-primitive constraints and give different EW matching factors. Therefore the
-connected-trace selector kappa=0 is not derivable from those primitives.
-
-Exit code: 0 on full PASS, 1 on any FAIL.
+Fatal/load-bearing checks drive the exit code. Motivation-tier downstream
+wording checks are reported separately and never create a nonzero exit.
 """
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from fractions import Fraction
 from pathlib import Path
+import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md"
 FIERZ = DOCS / "EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md"
+RUNNER = "scripts/frontier_ew_current_matching_rule_no_go.py"
 
-PASS_COUNT = 0
-FAIL_COUNT = 0
+FATAL_TIERS = ("LOAD_BEARING", "TEXT", "SELFTEST")
+MOTIVATION_TIERS = ("MOTIVATION",)
+ALL_TIERS = FATAL_TIERS + MOTIVATION_TIERS
+
+KAPPA_BLOCK = """KAPPA-EW (named conditional premise):
+the physical disconnected-current readout coefficient kappa_EW is
+SUPPLIED; the connected-trace selector is the special case kappa_EW = 0.
+Not derived: no landed route selects kappa_EW; this note's
+parametrization covers every finite value exactly."""
+
+KAPPA_EXPECTED = (
+    ("0", Fraction(0), Fraction(9, 8)),
+    ("1", Fraction(1), Fraction(1)),
+    ("1/2", Fraction(1, 2), Fraction(18, 17)),
+    ("-1/9", Fraction(-1, 9), Fraction(81, 71)),
+    ("2", Fraction(2), Fraction(9, 10)),
+)
 
 
-def check(name: str, passed: bool, detail: str) -> bool:
-    global PASS_COUNT, FAIL_COUNT
-    status = "PASS" if passed else "FAIL"
-    if passed:
-        PASS_COUNT += 1
-    else:
-        FAIL_COUNT += 1
-    print(f"[{status}] {name}: {detail}")
-    return passed
+@dataclass
+class Ledger:
+    passed: dict[str, int] = field(default_factory=dict)
+    failed: dict[str, int] = field(default_factory=dict)
+    failures: list[tuple[str, str, str]] = field(default_factory=list)
+
+    def check(self, tier: str, name: str, ok: bool, detail: str = "") -> None:
+        if tier not in ALL_TIERS:
+            raise ValueError(f"unknown tier: {tier}")
+        target = self.passed if ok else self.failed
+        target[tier] = target.get(tier, 0) + 1
+        if not ok:
+            self.failures.append((tier, name, detail))
+
+    def tier_counts(self, tiers: tuple[str, ...]) -> tuple[int, int]:
+        pass_count = sum(self.passed.get(tier, 0) for tier in tiers)
+        fail_count = sum(self.failed.get(tier, 0) for tier in tiers)
+        return pass_count, fail_count
+
+    def exit_code(self) -> int:
+        _passed, fatal_fail = self.tier_counts(FATAL_TIERS)
+        return 1 if fatal_fail else 0
 
 
-def read(path: Path) -> str:
+def read_if_exists(path: Path) -> str:
+    if not path.exists():
+        return ""
     return path.read_text(encoding="utf-8")
 
 
@@ -56,9 +81,16 @@ def singlet_fraction(n_c: int) -> Fraction:
     return Fraction(1, n_c * n_c)
 
 
-def k_ew(n_c: int, kappa: Fraction) -> Fraction:
+def denominator(n_c: int, kappa: Fraction) -> Fraction:
     f = f_adj(n_c)
-    return Fraction(1, 1) / (f + kappa * (1 - f))
+    return f + kappa * (1 - f)
+
+
+def k_ew(n_c: int, kappa: Fraction) -> Fraction | None:
+    denom = denominator(n_c, kappa)
+    if denom == 0:
+        return None
+    return Fraction(1) / denom
 
 
 @dataclass(frozen=True)
@@ -100,11 +132,15 @@ class Completion:
         return self.c_u + self.kappa * self.s_u
 
     @property
-    def matching_v(self) -> Fraction:
+    def matching_v(self) -> Fraction | None:
+        if self.readout_v == 0:
+            return None
         return self.t_v / self.readout_v
 
     @property
-    def matching_u(self) -> Fraction:
+    def matching_u(self) -> Fraction | None:
+        if self.readout_u == 0:
+            return None
         return self.t_u / self.readout_u
 
     @property
@@ -112,8 +148,7 @@ class Completion:
         return self.kappa * self.s_v / self.c_v
 
 
-def primitive_signature(model: Completion) -> tuple[Fraction, Fraction, Fraction, Fraction]:
-    """Return the primitive data that the retained packet fixes."""
+def primitive_signature(model: Completion) -> tuple[Fraction, ...]:
     return (
         f_adj(model.n_c),
         singlet_fraction(model.n_c),
@@ -122,162 +157,268 @@ def primitive_signature(model: Completion) -> tuple[Fraction, Fraction, Fraction
     )
 
 
-def downstream_guard(path: Path, required: list[str], forbidden_windows: list[str]) -> None:
-    text = read(path)
+def markdown_note_links(markdown: str) -> list[str]:
+    return re.findall(r"\]\(([^)]+\.md)\)", markdown)
+
+
+def downstream_guard(
+    ledger: Ledger,
+    path: Path,
+    required: tuple[str, ...],
+    forbidden: tuple[str, ...],
+) -> None:
+    text = read_if_exists(path)
+    rel = path.relative_to(ROOT).as_posix()
+    ledger.check("MOTIVATION", f"{rel} exists", bool(text), rel)
     for needle in required:
-        check(
-            f"{path.relative_to(ROOT)} contains {needle!r}",
+        ledger.check(
+            "MOTIVATION",
+            f"{rel} contains {needle!r}",
             needle in text,
-            "downstream conditional wording present",
+            "conditional downstream wording",
         )
-    for phrase in forbidden_windows:
-        check(
-            f"{path.relative_to(ROOT)} avoids {phrase!r}",
+    for phrase in forbidden:
+        ledger.check(
+            "MOTIVATION",
+            f"{rel} avoids {phrase!r}",
             phrase not in text,
             "unconditional EW-retention wording absent",
         )
 
 
-def main() -> int:
-    print("=" * 78)
-    print("EW CURRENT MATCHING-RULE NO-GO")
-    print("=" * 78)
+def accounting_self_test() -> bool:
+    fatal_and_motivation = Ledger()
+    fatal_and_motivation.check("LOAD_BEARING", "fatal sample", False)
+    fatal_and_motivation.check("MOTIVATION", "nonfatal sample", False)
 
-    note = read(NOTE)
-    fierz = read(FIERZ)
+    motivation_only = Ledger()
+    motivation_only.check("MOTIVATION", "nonfatal sample", False)
 
-    check("authority note exists", NOTE.exists(), str(NOTE.relative_to(ROOT)))
-    check("Fierz authority exists", FIERZ.exists(), str(FIERZ.relative_to(ROOT)))
-    check("note is typed as no_go", "**Claim type:** no_go" in note, "claim-type hint present")
-    check(
-        "note registers the primary runner",
-        "scripts/frontier_ew_current_matching_rule_no_go.py" in note,
-        "runner path present",
+    return (
+        fatal_and_motivation.exit_code() == 1
+        and motivation_only.exit_code() == 0
+        and fatal_and_motivation.tier_counts(FATAL_TIERS) == (0, 1)
+        and fatal_and_motivation.tier_counts(MOTIVATION_TIERS) == (0, 1)
     )
-    check(
-        "note cites retained Fierz/channel authority",
-        "EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md" in note,
-        "one-hop retained-bounded dependency present",
+
+
+def check_note_contract(ledger: Ledger, note: str, fierz: str) -> None:
+    ledger.check(
+        "TEXT",
+        "note declares bounded_theorem",
+        "**Claim type:** bounded_theorem" in note,
     )
-    check(
-        "Fierz authority explicitly leaves matching rule open",
+    ledger.check(
+        "TEXT",
+        "note does not retain no_go claim header",
+        "**Claim type:** no_go" not in note,
+    )
+    ledger.check("TEXT", "note registers primary runner", RUNNER in note)
+    ledger.check("TEXT", "KAPPA-EW block is verbatim", KAPPA_BLOCK in note)
+    ledger.check("TEXT", "KAPPA-EW is supplied", "SUPPLIED;" in note)
+    ledger.check("TEXT", "FIERZ-ADJ surface feature named", "**FIERZ-ADJ:**" in note)
+    ledger.check(
+        "TEXT",
+        "CMT-COLOR-BLIND feature named",
+        "**CMT-COLOR-BLIND:**" in note,
+    )
+    ledger.check("TEXT", "OZI-BOUNDED feature named", "**OZI-BOUNDED:**" in note)
+    ledger.check(
+        "TEXT",
+        "generic K_EW formula present",
+        "K_EW(kappa_EW) = 1 / (F_adj + kappa_EW (1 - F_adj))" in note,
+    )
+    ledger.check(
+        "TEXT",
+        "N_c=3 K_EW formula present",
+        "K_EW(kappa_EW) = 1 / (8/9 + kappa_EW/9)" in note,
+    )
+    ledger.check(
+        "TEXT",
+        "completion exhibit present",
+        "Completion A: kappa_EW = 0,  K_EW = 9/8." in note
+        and "Completion B: kappa_EW = 1,  K_EW = 1." in note,
+    )
+    ledger.check(
+        "TEXT",
+        "residual does not claim selector closure",
+        "R-selector remains open" in note and "not as a claim of this note" in note,
+    )
+    ledger.check(
+        "TEXT",
+        "citation contract is audit-gated",
+        "Citation is audit-gated" in note and "Forbidden uses:" in note,
+    )
+    ledger.check(
+        "TEXT",
+        "safe downstream wording retained",
+        "The EW normalization lane is bounded by a named matching coefficient" in note
+        and "not an unconditional retained theorem" in note,
+    )
+    ledger.check(
+        "TEXT",
+        "unsafe downstream wording retained",
+        "The framework derives the exact `9/8` EW color-projection correction." in note,
+    )
+    ledger.check(
+        "TEXT",
+        "old theorem landing language absent",
+        "No-go theorem (matching-rule underdetermination)" not in note
+        and "close the former open gate negatively" not in note,
+    )
+    links = markdown_note_links(note)
+    ledger.check(
+        "TEXT",
+        "only Fierz note is linked as dependency",
+        links == ["EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md"],
+        f"links={links}",
+    )
+    ledger.check(
+        "TEXT",
+        "Fierz authority leaves matching rule open",
         "The matching rule is **not derived in this note**" in fierz,
-        "upstream does not already prove kappa_EW=0",
     )
 
-    nc = 3
-    f = f_adj(nc)
-    s = singlet_fraction(nc)
-    check("F_adj at N_c=3 is exactly 8/9", f == Fraction(8, 9), f"F_adj={f}")
-    check("singlet fraction at N_c=3 is exactly 1/9", s == Fraction(1, 9), f"S={s}")
-    check("channels sum to the total", f + s == 1, f"F_adj+S={f+s}")
 
-    connected = Completion(n_c=nc, kappa=Fraction(0), u0_squared=Fraction(77, 100))
-    full_trace = Completion(n_c=nc, kappa=Fraction(1), u0_squared=Fraction(77, 100))
-    half_trace = Completion(n_c=nc, kappa=Fraction(1, 2), u0_squared=Fraction(77, 100))
+def check_exact_algebra(ledger: Ledger) -> None:
+    n_c = 3
+    f = f_adj(n_c)
+    s = singlet_fraction(n_c)
+    ledger.check("LOAD_BEARING", "F_adj at N_c=3 is 8/9", f == Fraction(8, 9), str(f))
+    ledger.check("LOAD_BEARING", "S at N_c=3 is 1/9", s == Fraction(1, 9), str(s))
+    ledger.check("LOAD_BEARING", "channels sum to T=1", f + s == 1, str(f + s))
 
-    check(
-        "connected-trace specialization gives K_EW=9/8",
-        connected.matching_v == Fraction(9, 8),
-        f"K_EW(0)={connected.matching_v}",
+    for label, kappa, expected in KAPPA_EXPECTED:
+        actual = k_ew(n_c, kappa)
+        ledger.check(
+            "LOAD_BEARING",
+            f"K_EW({label}) exact value",
+            actual == expected,
+            f"got={actual} expected={expected}",
+        )
+        model = Completion(n_c=n_c, kappa=kappa, u0_squared=Fraction(77, 100))
+        ledger.check(
+            "LOAD_BEARING",
+            f"CMT invariance at kappa={label}",
+            model.matching_u == model.matching_v == expected,
+            f"K_U={model.matching_u} K_V={model.matching_v}",
+        )
+        expected_ozi = kappa / Fraction(n_c * n_c - 1)
+        ledger.check(
+            "LOAD_BEARING",
+            f"OZI ratio identity at kappa={label}",
+            model.ozi_ratio == expected_ozi,
+            f"got={model.ozi_ratio} expected={expected_ozi}",
+        )
+
+    ledger.check(
+        "LOAD_BEARING",
+        "zero-denominator pole is algebraically marked",
+        denominator(n_c, Fraction(-8)) == 0 and k_ew(n_c, Fraction(-8)) is None,
     )
-    check(
-        "full-trace specialization gives K_EW=1",
-        full_trace.matching_v == Fraction(1, 1),
-        f"K_EW(1)={full_trace.matching_v}",
-    )
-    check(
-        "intermediate kappa gives a distinct admissible coefficient",
-        half_trace.matching_v == Fraction(18, 17),
-        f"K_EW(1/2)={half_trace.matching_v}",
-    )
-    check(
-        "two completions share all retained primitive data",
+
+    connected = Completion(n_c=n_c, kappa=Fraction(0), u0_squared=Fraction(77, 100))
+    full_trace = Completion(n_c=n_c, kappa=Fraction(1), u0_squared=Fraction(77, 100))
+    ledger.check(
+        "LOAD_BEARING",
+        "two completions share primitive data",
         primitive_signature(connected) == primitive_signature(full_trace),
         f"signature={primitive_signature(connected)}",
     )
-    check(
-        "two completions disagree on EW matching factor",
-        connected.matching_v != full_trace.matching_v,
-        f"{connected.matching_v} != {full_trace.matching_v}",
+    ledger.check(
+        "LOAD_BEARING",
+        "two completions compute different K_EW values",
+        connected.matching_v == Fraction(9, 8)
+        and full_trace.matching_v == Fraction(1)
+        and connected.matching_v != full_trace.matching_v,
     )
 
-    for model in (connected, full_trace, half_trace):
-        check(
-            f"CMT scaling cancels from K_EW at kappa={model.kappa}",
-            model.matching_u == model.matching_v,
-            f"K_U={model.matching_u}, K_V={model.matching_v}",
+    for other_n in (2, 3, 4, 5, 10):
+        model = Completion(
+            n_c=other_n,
+            kappa=Fraction(1),
+            u0_squared=Fraction(3, 5),
         )
-        check(
-            f"OZI class is bounded at kappa={model.kappa}",
-            abs(model.ozi_ratio) <= Fraction(1, nc * nc - 1),
-            f"kappa*S/C={model.ozi_ratio}",
-        )
-
-    for other_nc in (2, 3, 4, 5, 10):
-        model = Completion(n_c=other_nc, kappa=Fraction(1), u0_squared=Fraction(3, 5))
-        bound = Fraction(1, other_nc * other_nc - 1)
-        check(
-            f"full-trace disconnected ratio is O(1/N_c^2) at N_c={other_nc}",
+        bound = Fraction(1, other_n * other_n - 1)
+        ledger.check(
+            "LOAD_BEARING",
+            f"full-trace OZI ratio at N_c={other_n}",
             model.ozi_ratio == bound,
-            f"S/C={model.ozi_ratio}, bound={bound}",
+            f"got={model.ozi_ratio} expected={bound}",
         )
 
-    check(
-        "note states the conditional coefficient formula",
-        "K_EW(kappa_EW) = 1 / (F_adj + kappa_EW (1 - F_adj))" in note,
-        "formula present",
-    )
-    check(
-        "note states 9/8 is special case only",
-        "The package-level `9/8` factor is the special case" in note,
-        "no unconditional promotion",
-    )
-    check(
-        "note records the two-completion witness",
-        "Completion A: kappa_EW = 0" in note and "Completion B: kappa_EW = 1" in note,
-        "independence witness present",
-    )
 
+def check_downstream_context(ledger: Ledger) -> None:
     downstream_guard(
+        ledger,
         DOCS / "YT_EW_COLOR_PROJECTION_THEOREM.md",
-        required=[
+        required=(
             "kappa_EW",
             "K_EW(kappa_EW)",
             'must say "conditional on the connected-trace specialization',
-        ],
-        forbidden_windows=[
+        ),
+        forbidden=(
             "**Status:** " + "proposed" + "_retained EW normalization lane",
             "The correction 9/8 on the EW couplings is derived from",
-        ],
+        ),
     )
     downstream_guard(
+        ledger,
         DOCS / "publication" / "ci3_z3" / "QUANTITATIVE_SUMMARY_TABLE.md",
-        required=["matching-rule conditional", "kappa_EW"],
-        forbidden_windows=[
+        required=("matching-rule conditional", "kappa_EW"),
+        forbidden=(
             "| `g_1(v)` | `0.4644` | `0.4640` | `+0.08%` | retained |",
             "| `g_2(v)` | `0.6480` | `0.6463` | `+0.26%` | retained |",
-        ],
+        ),
     )
     downstream_guard(
+        ledger,
         DOCS / "publication" / "ci3_z3" / "USABLE_DERIVED_VALUES_INDEX.md",
-        required=["K_EW(kappa_EW)", "conditional"],
-        forbidden_windows=[
+        required=("K_EW(kappa_EW)", "conditional"),
+        forbidden=(
             "| `g_1(v)` | `0.4644` | derived |",
             "| `g_2(v)` | `0.6480` | derived |",
-        ],
+        ),
     )
     downstream_guard(
+        ledger,
         DOCS / "CANONICAL_HARNESS_INDEX.md",
-        required=["EW current matching rule no-go proposal", "frontier_ew_current_matching_rule_no_go.py"],
-        forbidden_windows=["EW current matching rule open main gate"],
+        required=("frontier_ew_current_matching_rule_no_go.py",),
+        forbidden=("EW current matching rule open main gate",
+        "EW current matching rule no-go proposal",),
     )
 
-    print()
+
+def print_summary(ledger: Ledger) -> None:
+    fatal_pass, fatal_fail = ledger.tier_counts(FATAL_TIERS)
+    motivation_pass, motivation_fail = ledger.tier_counts(MOTIVATION_TIERS)
     print("=" * 78)
-    print(f"RESULT: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    print("EW CURRENT MATCHING-RULE KAPPA PARAMETRIZATION")
     print("=" * 78)
-    return 0 if FAIL_COUNT == 0 else 1
+    print(f"runner: {RUNNER}")
+    print("declaration: KAPPA-EW is supplied; no selector is derived")
+    print(f"fatal: PASS={fatal_pass} FAIL={fatal_fail}")
+    print(f"motivation: PASS={motivation_pass} FAIL={motivation_fail} (non-fatal)")
+    for tier, name, detail in ledger.failures[:4]:
+        suffix = f" -- {detail}" if detail else ""
+        print(f"FAIL[{tier}] {name}{suffix}")
+    print(f"RESULT: {'PASS' if fatal_fail == 0 else 'FAIL'}")
+
+
+def main() -> int:
+    ledger = Ledger()
+    note = read_if_exists(NOTE)
+    fierz = read_if_exists(FIERZ)
+
+    ledger.check("LOAD_BEARING", "authority note exists", NOTE.exists(), str(NOTE))
+    ledger.check("LOAD_BEARING", "Fierz authority exists", FIERZ.exists(), str(FIERZ))
+    ledger.check("SELFTEST", "tier accounting self-test", accounting_self_test())
+
+    check_note_contract(ledger, note, fierz)
+    check_exact_algebra(ledger)
+    check_downstream_context(ledger)
+    print_summary(ledger)
+    return ledger.exit_code()
 
 
 if __name__ == "__main__":

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1945 |
+| unaudited | 1944 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 37 |
+| ~~audited_conditional~~ | 38 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1275 |
-| `audited_conditional` | 37 |
+| `audited_conditional` | 38 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2290 |
+| `unaudited` | 2289 |
 
 | claim_type | count |
 |---|---:|
@@ -1439,6 +1439,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_eq_3delta_identity_note_2026-04-21` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
+| `occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -12986,6 +12987,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The proof is a closed finite algebra/functional-equation argument over the stated positive diagonal hypotheses. It explicitly does not derive T1-d, source-to-record disjointness, or a physical readout context.
 - **rationale:** The load-bearing mathematics closes: concatenation additivity recursively decomposes every W_n into one-site terms, and the determinant-only condition reduces to the continuous multiplicative-to-additive Cauchy equation on R_{>0}. The cited no-go is retained-grade and supports the boundary that determinant-only readout and source-block-to-record disjointness are not Record-derived; the minimal axiom memo is an accepted premise and is used only for that boundary. The runner checks the symbolic identities, determinant witnesses, dimension-label obstruction, and note guardrails; it does not hard-code a physical bridge that the note claims to prove.
 - **auditor confidence:** high
+
+### `occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12`
+
+- **Note:** [`OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md`](../../docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebra showing that, on the supplied two-outcome dictionaries x=2r and x=r, agreement-conditioned squaring selects outcome equipartition x=1 while the r-coordinate reading remains dictionary-dependent.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=weak)
+- **load-bearing step:** The fixed-point equation is phi(r)=phi(r)^2, so the outcome-space interior fixed point is phi(r*)=1; dictionary choices then read x=1 as r=1/2 or r=1.  _(class `A`)_
+- **chain closes:** False — The finite algebra over explicitly supplied dictionaries closes, but the broader same-binary wording across Record/K-CPT outcome, kernel bookkeeping, Fock weights, and rho-map labels is not closed by the wired direct authorities in the current packet.
+- **rationale:** Issue: the note proves the supplied x-space fixed-point algebra, but its broader 'same binary' and Record/K-CPT outcome language uses supplied kernel/weight/rho-map labels and an old minimal-axioms quote that are not wired as retained direct authorities in the current dependency packet; the current runner also reports PASS=21 FAIL=1 because of a stale git-status self-check. Why this blocks: the audit can retain the finite dictionary algebra only after the physical/bookkeeping label authorities are direct and current, or after the claim is narrowed to purely stipulated algebra. Repair target: wire retained authorities for the supplied K/CPT readout context, kernel exponent, Fock weight, and rho-map dictionaries and repair the runner self-check/cache, or split a narrower supplied-dictionary algebra row. Claim boundary until fixed: exact algebra over stipulated x=2r and x=r dictionaries selecting x=1, with no dictionary, occupancy cell, or physical readout selected.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-06-05.md`
+  - `context-only rho-map / wave companion authorities named but not linked as direct dependencies`
+- **auditor confidence:** medium
 
 ### `oh_schur_boundary_action_note`
 

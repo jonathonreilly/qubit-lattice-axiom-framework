@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1953 |
+| unaudited | 1952 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 32 |
+| ~~audited_conditional~~ | 33 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1275 |
-| `audited_conditional` | 32 |
+| `audited_conditional` | 33 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2298 |
+| `unaudited` | 2297 |
 
 | claim_type | count |
 |---|---:|
@@ -1446,6 +1446,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `record_context_generator_nonidentifiability_no_go_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -14957,6 +14958,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Two exact two-record joint laws have the same one-step marginals p=(2/3,1/3) but different count/frequency distributions.  _(class `A`)_
 - **chain closes:** True — The packet gives an explicit finite-probability counterexample: the IID and locked couplings share both one-step marginals but yield different N_0 distributions and variances. Therefore the claimed shortcut from one-shot probabilities to IID frequencies is invalid without an added sequence law.
 - **rationale:** The load-bearing step is an elementary algebraic counterexample, not a definition substitution or tuned numerical match. Independent recomputation confirms the displayed marginals, count laws, expectations, and variances. The clean no-go is narrow: it blocks only deriving IID/frequency/typicality from the one-step vector alone, while leaving supplied sequence-law routes open.
+- **auditor confidence:** high
+
+### `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17`
+
+- **Note:** [`RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md`](../../docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the claim that the live minimal framework axioms alone supply arbitrary finite families of support-disjoint record-eligible local readout atoms with unit-count finite additivity.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=weak)
+- **load-bearing step:** For every finite n, the Lattice and Quantum axioms admit a concrete finite local readout context with n pairwise support-disjoint nonzero record-eligible readout atoms.  _(class `B`)_
+- **chain closes:** False — The finite projector algebra inside a declared M2(C) context closes, but the live 2026-06-29 axiom surface adds admissibility and only lets records lock admissible local possibilities. The source does not derive that the chosen P1 atoms are admissible for arbitrary finite supports, and its runner is stale against the current formation no-go text.
+- **rationale:** Issue: the load-bearing step moves from Z3 sites plus M2(C) projectors to arbitrary finite record-eligible atoms, but the current minimal axioms require admissible local possibilities and do not derive availability of the selected P1 atom at arbitrary supports. Why this blocks: a declared diagonal readout context and unit count are mathematically consistent, yet they are not forced as record-eligible/admissible content by the live axiom packet. Repair target: prove or admit an admissibility/readout-context availability bridge for the selected local atoms under the current MINIMAL_AXIOMS_2026-06-29 surface, and refresh the runner so it no longer fails on the narrowed record-formation no-go. Claim boundary until fixed: finite M2(C) projector algebra and disjoint Z3 support bookkeeping are available, but framework-native arbitrary finite record-eligible atom availability remains conditional.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-06-29.md`
+  - `RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `record_markov_generator_embeddability_boundary_2026-06-06`

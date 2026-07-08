@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1955 |
+| unaudited | 1954 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 32 |
+| ~~audited_conditional~~ | 33 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 13 |
 | `audited_clean` | 1275 |
-| `audited_conditional` | 32 |
+| `audited_conditional` | 33 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2300 |
+| `unaudited` | 2299 |
 
 | claim_type | count |
 |---|---:|
@@ -1426,6 +1426,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5174,6 +5175,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Step 6: Y^†Y = P_L, so Tr(Y^†Y)=Tr(P_L)=8 while Tr(Γ_1^†Γ_1)=16, giving sqrt(8/16)=1/sqrt(2).  _(class `A`)_
 - **chain closes:** True — The conclusion follows from the stated Hermitian involution, chirality anticommutation, projector algebra, and dim V=16. Independently, anticommutation gives Tr γ_5=0, hence Tr P_L=8, Y^†Y=P_L, and Γ_1^†Γ_1=I_16.
 - **rationale:** The load-bearing result is a genuine algebraic closure over the finite matrix setup, not a renaming or calibrated numerical match. The determinant identities, trace norms, nilpotency, Hermitian-completion identity, active-space comparator, and pseudoscalar companion formulas all check by direct algebra independent of the runner implementation. The note explicitly firewalls the scalar-baseline diagnostics from real-D observable-principle or physical readout claims, so no missing upstream physical bridge is required for the audited scope.
+- **auditor confidence:** high
+
+### `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15`
+
+- **Note:** [`DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md`](../../docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the claimed selection of y_nu^(0)/g_weak = 1/sqrt(2) for the direct neutrino bridge by using W-source response to prefer Gamma_1 over the active chiral bridge Y.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-019f3ff0-2629-75a2-8239-f07a79e8a7fb`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note asserts that the physical normalization surface is not the active chiral bridge by itself but the full bosonic Gamma_1 family.  _(class `B`)_
+- **chain closes:** False — The finite C^16 matrix and log-det identities close, but the packet does not prove the physical bridge from the retained observable-principle note to this neutrino Gamma_1 Higgs/source family and weak-coupling trace normalization. The downstream Schur theorem and Majorana/Z3 activation law are not closed by the one-hop packet.
+- **rationale:** Issue: the runner proves exact algebra after setting G1 as the scalar Higgs axis and using W as the physical readout, but the packet does not derive the bridge that this Gamma_1 completion is the unique admissible physical bosonic source surface with the stated weak-coupling normalization. Why this blocks: the observable-principle dependency is retained for its bounded source-response surface, but it does not by itself make the active-space ratio inadmissible for the neutrino bridge or close the local Higgs/source-family import. Repair target: add or cite a retained bridge theorem constructing the neutrino local Higgs source family, Gamma_1 scalar completion, and y_nu/g_weak normalization from retained inputs, with Schur and Majorana/Z3 consequences kept as separate dependencies. Claim boundary until fixed: the exact identities Y^2=0, Y+Y^dagger=Gamma_1, the determinant responses, and the full-space trace ratio 1/sqrt(2) hold only as conditional algebra given that physical source assignment.
 - **auditor confidence:** high
 
 ### `dm_neutrino_cascade_geometry_note_2026-04-14`

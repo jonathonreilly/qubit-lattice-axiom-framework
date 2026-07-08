@@ -104,7 +104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1187 | 67.21 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 65.64 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1577 | 65.62 | `audited_clean` | **retained** |
-| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1018 | 64.49 | `unaudited` | unaudited |
+| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1019 | 64.99 | `unaudited` | unaudited |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1149 | 53.17 | `audited_clean` | **retained_bounded** |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1049 | 48.04 | `unaudited` | meta |
 | 8 | `key_terminology` | meta | critical | 1163 | 46.69 | `unaudited` | meta |

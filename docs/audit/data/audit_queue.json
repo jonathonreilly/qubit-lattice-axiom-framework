@@ -193,17 +193,17 @@
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
       ],
-      "direct_in_degree": 103,
+      "direct_in_degree": 104,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 64.493,
+      "load_bearing_score": 64.994,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
-      "transitive_descendants": 1018
+      "transitive_descendants": 1019
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

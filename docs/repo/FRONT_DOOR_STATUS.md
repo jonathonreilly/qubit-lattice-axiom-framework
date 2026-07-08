@@ -107,7 +107,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1187 descendants; score 67.214
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 65.644
 - `graph_first_su3_integration_note` - critical; 1577 descendants; score 65.624
-- `observable_principle_from_axiom_note` - critical; 1018 descendants; score 64.493
+- `observable_principle_from_axiom_note` - critical; 1019 descendants; score 64.994
 - `plaquette_self_consistency_note` - critical; 1149 descendants; score 53.167
 - `minimal_axioms_2026-05-03` - critical; 1049 descendants; score 48.036
 - `key_terminology` - critical; 1163 descendants; score 46.685

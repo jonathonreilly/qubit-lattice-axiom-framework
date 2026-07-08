@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 893 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1957 |
+| unaudited | 1956 |
 | audit_in_progress | 2 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -61,21 +61,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 15 |
 | `audited_clean` | 1273 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2302 |
+| `unaudited` | 2301 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2039 |
+| `bounded_theorem` | 2040 |
 | `decoration` | 50 |
 | `meta` | 351 |
 | `no_go` | 482 |
 | `open_gate` | 183 |
-| `positive_theorem` | 610 |
+| `positive_theorem` | 609 |
 
 | criticality | count |
 |---|---:|
@@ -1448,6 +1448,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_zero_import_authority_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
@@ -19734,6 +19735,22 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** The packet supplies the algebraic fraction F_adj = 8/9 but does not contain a retained selector promoting it to exact physical EW matching rule M, so exact physical R_conn = 8/9 is not derived by this packet.  _(class `A`)_
 - **chain closes:** True — The cited retained no-go parent supplies the open selector boundary, and the cited decoration authority supplies only the finite-dimensional SU(3) channel fraction. The source note does not claim an absolute finite-N_c impossibility or an exhaustive no-go over future selectors.
 - **rationale:** The restricted packet cleanly supports the narrowed no-go boundary: F_adj = (N_c^2 - 1) / N_c^2 gives 8/9 at N_c = 3, and no selector deriving physical R_conn = 8/9 is supplied. Independent formula checks of the kappa-family, Fierz normalization, channel dimensions, and listed specializations found no coefficient or normalization defect. The no-go discipline gate passes because the note explicitly limits itself to current-packet absence, leaves future non-perturbative selector routes open, and avoids absolute no-go rhetoric.
+- **auditor confidence:** high
+
+### `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`
+
+- **Note:** [`YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that H_unit 1-loop scalar renormalization symbolically reduces to a single tadpole-improved D_S1 BZ integral with decomposition and envelope |I_S^{framework}| <= 23.35, without a specific framework-native I_S quadrature value.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-019f3fe7-75a4-7430-b8ae-db2592c6129d`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained framework-native envelope bound is |I_S^{framework}| <= 23.35, derived from retained u_0, retained <P>, and the retained tadpole-subtraction identity.  _(class `A`)_
+- **chain closes:** False — The note does not close the bridge from the current retained inputs to the B0 envelope: the supplied runner hard-codes diagram absorption, tadpole absorption, log coefficient, and the envelope formula rather than deriving a finite BZ-integral bound. The missing step is a retained theorem or runner deriving the D_S1 kernel and valid envelope from the current canonical action plus a retained or explicitly accepted plaquette readout.
+- **rationale:** Issue: The note consumes the superseded Minimal Axioms file and the plaquette note's admitted 0.5934 reuse number as retained physical inputs, while the B0 envelope and single-D_S1 reduction are asserted by hard-coded runner checks. Why this blocks: a retained framework-native 1-loop reduction or envelope theorem cannot rest on a superseded action authority, an out-of-scope plaquette readout, or an unproved max-integrand/tadpole-subtraction bound. Repair target: route the claim to a current retained canonical-action authority and a retained or explicitly accepted plaquette premise, then provide a theorem or runner that derives the D_S1 kernel, tadpole subtraction, and finite envelope without hard-coded contested premises. Claim boundary until fixed: the note can be cited only as a symbolic bookkeeping proposal and loose compatibility check, not as a retained 1-loop renormalization theorem, retained envelope theorem, or framework-native numerical I_S value.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-04-11.md`
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
 - **auditor confidence:** high
 
 ### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`

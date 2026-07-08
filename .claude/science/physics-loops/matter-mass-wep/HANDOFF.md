@@ -1,9 +1,9 @@
 # Handoff — matter-mass-wep
 
 Campaign 2026-07-08. Owner: Jon. Supervisor: Claude (Fable), workhorse split
-with codex workers. All four science blocks delivered; campaign paused at
-the owner-conversation checkpoint per the owner's standing instruction
-("stop and have the axiom conversation as soon as it's apparent").
+with codex workers. Five science blocks delivered. Owner selected reading A (2026-07-08,
+direction not ruling): WEP closure = scaling-window universality.
+CAMPAIGN VERDICT UNDER A: the framework yields mass.
 
 ## PRs in review order (each verifiable by its stated runner command)
 
@@ -12,8 +12,11 @@ the owner-conversation checkpoint per the owner's standing instruction
    mechanism. `python3 scripts/inertial_closure_two_step_surface_2026_07_08.py` -> PASS=8 FAIL=0.
 3. #5063 block03 (stacked) — composite additivity + binding defect.
    `python3 scripts/composite_mass_additivity_binding_defect_2026_07_08.py` -> PASS=6 FAIL=0.
-4. block04 (stacked) — WEP source reduction, finite-spacing boundary,
-   scaling-window universality. `python3 scripts/wep_source_reduction_scaling_window_2026_07_08.py` -> PASS=6 FAIL=0.
+4. #5064 block04 (stacked) — WEP source reduction, finite-spacing
+   boundary, scaling-window universality. `python3 scripts/wep_source_reduction_scaling_window_2026_07_08.py` -> PASS=6 FAIL=0.
+5. #5065 block05 (stacked) — composite mass-energy equivalence static-
+   comparator no-go + kinetic-functional sum rule + mediator requirement.
+   `python3 scripts/composite_mass_energy_equivalence_static_comparator_2026_07_08.py` -> PASS=5 FAIL=0.
 
 Nothing is landed; the review lane owns landing. Every claim is bounded off
 declared imports; expected first audit verdicts are audited_conditional via
@@ -39,7 +42,7 @@ the staggered-realization dependency cascade — normal bookkeeping.
   with derived correction exponents (all quadratic in the mass datum, plus
   a binding term), exhibited numerically at 4.1% observed vs 12.7% bound.
 
-## The one question that decides the fork
+## The fork question (ANSWERED: reading A selected 2026-07-08)
 
 Does "full WEP closure" mean:
 (A) scaling-window universality with derived exponents — then block04's T4
@@ -76,3 +79,17 @@ remaining budget on the named residual stretch rounds (R3 Noether
 identification; unequal-mass composite gates; d=3 lift of the composite
 comparator). If (B): campaign halts; the conversation artifacts are the
 block04 note, the checklist, and this brief.
+
+
+## Post-verdict frontier (named for the next campaign)
+
+1. Composite mass-energy equivalence on the gauged/interacting transfer
+   surface — the mediator requirement (block05 corollary) meets the
+   record-preservation-forced covariant-hopping class head-on. This is the
+   single highest-value next campaign for the mass lane and for gravity.
+2. Noether energy-current source identification in the window (route R3):
+   the current exists; its selection as THE gravitational source is the
+   supplied step — same shape as every theory's G, now with a precise,
+   window-level target (couple to energy).
+3. Smaller: unequal-mass composite gates; d=3 lift of the composite
+   comparator; the contact-on-cosine dM = E_B identity (curiosity).

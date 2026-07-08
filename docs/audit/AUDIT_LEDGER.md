@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 894 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1956 |
+| unaudited | 1955 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 31 |
+| ~~audited_conditional~~ | 32 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -61,21 +61,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1274 |
-| `audited_conditional` | 31 |
+| `audited_conditional` | 32 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2301 |
+| `unaudited` | 2300 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2040 |
+| `bounded_theorem` | 2041 |
 | `decoration` | 50 |
 | `meta` | 351 |
 | `no_go` | 482 |
 | `open_gate` | 183 |
-| `positive_theorem` | 609 |
+| `positive_theorem` | 608 |
 
 | criticality | count |
 |---|---:|
@@ -1435,6 +1435,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `neutrino_majorana_current_atlas_nonrealization_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -12420,6 +12421,24 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The scalar two-point expressions have no mu input, so the same scalar two-point signature is compatible with both mu = 0 and mu != 0 while the Pfaffian sector differs.  _(class `C`)_
 - **chain closes:** True — The runner reproduces the same-current-data witness: scalar two-point and normal source-response signatures are mu-blind, Pfaffian signatures vary with mu, and charge-sector checks show normal sources are charge zero while the pairing seed carries charge -2. That directly blocks the implication that scalar two-point closure alone forces mu = 0.
 - **rationale:** The note claims a negative boundary, not a Dirac-global or numerical neutrino result: SR-2 cannot close C2-X from free-scalar two-point data alone. The runner checks the relevant current surface by verifying the cited authority text and constructing nonzero-mu witnesses with identical scalar and normal signatures but distinct Pfaffian sectors. Residual risk is limited to future typed scalar-to-Pfaffian coupling theorems, which the note explicitly leaves open.
+- **auditor confidence:** high
+
+### `neutrino_majorana_current_atlas_nonrealization_note`
+
+- **Note:** [`NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md`](../../docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded current-stack claim that the present main-derived atlas/toolkit, as scanned by the runner, does not already list a fully realized charge-2 nu_R Majorana primitive.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-019f3fec-465b-75d1-a04f-8353a6c37bcc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** None of the currently retained or atlas-listed objects is itself a fully realized fermionic charge-2 microscopic primitive with fixed physical background data on the nu_R channel.  _(class `B`)_
+- **chain closes:** False — The observable-principle dependency closes only the scalar determinant backbone. The missing step is dependency-closed authority for the atlas completeness, right-handed composite miss, matter closure, and Majorana-row classifications consumed by the non-realization claim.
+- **rationale:** Issue: The note's conclusion depends on the current derivation atlas, retained matter closure, right-handed-sector composite audit, and Majorana reduction/current-stack rows, but the restricted dependency packet wires only the observable-principle note and the primary runner scans those extra files rather than making them retained one-hop authorities. Why this blocks: a runner string scan of un-wired publication/table sources is useful bookkeeping evidence, but it cannot by itself establish a dependency-closed Nature-grade non-realization over all currently retained or atlas-listed objects. Repair target: add explicit direct dependency edges/statuses for the atlas source or canonical retained atlas snapshot, one-generation matter closure, right-handed-sector composite result, Majorana primitive reduction, and any Majorana row notes used to classify support/boundary rows, or narrow the claim to the runner's finite string scan. Claim boundary until fixed: the source may say the current runner found no listed row/title matching a fully realized charge-2 nu_R primitive, not that the retained current atlas/toolkit dependency chain closes.
+- **open / conditional deps cited:**
+  - `publication/ci3_z3/DERIVATION_ATLAS.md`
+  - `ONE_GENERATION_MATTER_CLOSURE_NOTE.md`
+  - `scripts/frontier_right_handed_sector.py`
+  - `NEUTRINO_MAJORANA_CHARGE_TWO_PRIMITIVE_REDUCTION_NOTE.md`
 - **auditor confidence:** high
 
 ### `new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23`

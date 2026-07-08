@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 413,
+    "critical": 416,
     "high": 273,
     "leaf": 777,
     "medium": 540
@@ -179,31 +179,26 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "observable_principle_from_axiom_note",
+      "claim_id": "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_type": "no_go",
       "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
       "deps": [
-        "minimal_axioms",
-        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
-        "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
-        "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "minimal_axioms"
       ],
-      "direct_in_degree": 104,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 64.994,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
+      "helper_runner_paths": [],
+      "load_bearing_score": 15.501,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
-      "transitive_descendants": 1019
+      "runner_path": "scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py",
+      "transitive_descendants": 1024
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1295,6 +1290,85 @@
       "ready": false,
       "runner_path": "scripts/frontier_anomaly_forces_time.py",
       "transitive_descendants": 1289
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.499,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py",
+      "transitive_descendants": 1022
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint_after_invalidation",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.997,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py",
+      "transitive_descendants": 1021
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "observable_principle_from_axiom_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
+        "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
+        "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
+      ],
+      "direct_in_degree": 104,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "load_bearing_score": 64.994,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
+      "transitive_descendants": 1019
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -59531,5 +59605,5 @@
     }
   ],
   "ready_count": 256,
-  "total_pending": 2003
+  "total_pending": 2006
 }

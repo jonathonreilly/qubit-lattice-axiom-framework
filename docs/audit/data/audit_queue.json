@@ -177,15 +177,15 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "alpha_s_derived_note",
-      "claim_scope": null,
+      "claim_scope": "Exact forward arithmetic for alpha_s(v) and the alpha_LM identity over declared boundary inputs B1-B4; the M_Z running readout is only a bounded quarantined corollary.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "qcd_low_energy_running_bridge_note_2026-05-01",
         "plaquette_self_consistency_note",
@@ -193,13 +193,13 @@
         "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 59,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
       "load_bearing_score": 42.506,
       "note_path": "docs/ALPHA_S_DERIVED_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_alpha_s_derived_bounded_chain.py",
       "transitive_descendants": 1027

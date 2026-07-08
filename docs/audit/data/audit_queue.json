@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 412,
+    "critical": 411,
     "high": 273,
     "leaf": 777,
     "medium": 540
@@ -360,30 +360,35 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
-      "claim_scope": "Wilson plaquette temporal-gauge gauge-half RP bridge on the explicit two-slice lattice for A_+^(2) observables: finite-exact Z_N, U(1) plane-kernel Bessel positivity with Gram cross-check, SU(2) numeric sample, and SU(N>=3) comparator-only.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
         "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
         "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+        "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02"
       ],
-      "direct_in_degree": 8,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.197,
-      "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "audit_in_progress",
+      "direct_in_degree": 49,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py"
+      ],
+      "load_bearing_score": 36.67,
+      "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py",
-      "transitive_descendants": 586
+      "runner_path": "scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py",
+      "transitive_descendants": 575
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6027,38 +6032,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py",
       "transitive_descendants": 576
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
-        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
-        "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02"
-      ],
-      "direct_in_degree": 49,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py"
-      ],
-      "load_bearing_score": 36.67,
-      "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py",
-      "transitive_descendants": 575
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -21388,6 +21361,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
+        "minimal_axioms",
+        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
+        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.807,
+      "note_path": "docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py",
+      "transitive_descendants": 6
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -32805,33 +32805,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
-        "minimal_axioms",
-        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.807,
-      "note_path": "docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py",
-      "transitive_descendants": 6
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -38627,6 +38600,34 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "gauge_link_per_record_step_rate_dial_unit_variance_point_theorem_note_2026-07-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_rigidity_theorem_note",
+        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
+        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+        "record_classical_semigroup_boundary_2026-06-06",
+        "scale_reference_primitive"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "graded_constraint_interface_consistency_bounded_note_2026-07-04",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -40219,6 +40220,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/ward_bogoliubov_no_continuous_ssb_low_d_bridge_2026_06_11.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "wilson_temporal_kernel_casimir_generator_beta_gbare_transport_theorem_note_2026-07-01",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_rigidity_theorem_note",
+        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
+        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/wilson_temporal_kernel_casimir_generator_beta_gbare_transport_2026_07_01.py",
       "transitive_descendants": 0
     },
     {
@@ -47642,34 +47669,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/gauge_link_central_registration_induced_bi_invariant_step_kernel_2026_07_02.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_link_per_record_step_rate_dial_unit_variance_point_theorem_note_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_rigidity_theorem_note",
-        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
-        "record_classical_semigroup_boundary_2026-06-06",
-        "scale_reference_primitive"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py",
       "transitive_descendants": 0
     },
     {
@@ -58788,32 +58787,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wilson_temporal_kernel_casimir_generator_beta_gbare_transport_theorem_note_2026-07-01",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_rigidity_theorem_note",
-        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/wilson_temporal_kernel_casimir_generator_beta_gbare_transport_2026_07_01.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "wir_cone_agreement_from_sector_alias_uniqueness_bounded_theorem_note_2026-06-11",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -59500,6 +59473,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 263,
-  "total_pending": 2002
+  "ready_count": 266,
+  "total_pending": 2001
 }

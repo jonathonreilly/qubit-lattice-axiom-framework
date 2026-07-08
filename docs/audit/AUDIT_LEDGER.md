@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 193 |
 | **retained_no_go** | 196 |
-| **retained_bounded** | 893 |
+| **retained_bounded** | 894 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
 | unaudited | 1956 |
-| audit_in_progress | 2 |
+| audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 19 |
@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 15 |
-| `audited_clean` | 1273 |
+| `audit_in_progress` | 14 |
+| `audited_clean` | 1274 |
 | `audited_conditional` | 31 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 22 |
@@ -131,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -205,6 +204,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2396,6 +2396,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using [E_ij,E_pp] = delta_jp E_ip - delta_pi E_pj, the expansion i[H,rho_p] = i sum_i c_ip E_ip - i sum_j c_pj E_pj equals sum_{q != p} i(c_qp E_qp - c_pq E_pq) after the q=p term cancels.  _(class `A`)_
 - **chain closes:** True — The commutator identity directly gives the local continuity equation for arbitrary finite I, and summing over p cancels every oriented pair. The support-envelope and antisymmetry claims follow immediately from the displayed definition of J_{p<-q}.
 - **rationale:** The load-bearing step is a genuine algebraic closure from the stated matrix-unit commutator, not a definition substitution or imported physical bridge. An independent manual expansion verifies the sign, the q=p cancellation, global cancellation, and the dependence only on c_pq and c_qp. The runner source performs actual symbolic dictionary algebra and concrete matrix-unit checks without external comparators, hard-coded contested values, or helper opacity. The note explicitly excludes the staggered carrier and physical density bridge, so no open carrier-specific dependency is imported into this scoped claim.
+- **auditor confidence:** high
+
+### `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Wilson plaquette temporal-gauge gauge-half RP bridge on the explicit two-slice lattice for A_+^(2) observables: finite-exact Z_N, U(1) plane-kernel Bessel positivity with Gram cross-check, SU(2) numeric sample, and SU(N>=3) comparator-only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.5-xhigh-second-auditor-2026-07-08`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The plane Boltzmann kernel factorizes with nonnegative character/Bessel coefficients and therefore the integrated reflected Gram over the stated A_+^(2) basis has the manifest form G = W diag(kappa) W^dag with kappa >= 0.  _(class `C`)_
+- **chain closes:** True — The retained gauge-half norm-square identity supplies the abstract PSD form, and the note independently realizes its hypotheses on the Wilson temporal-gauge boundary. The sign convention S_W=-B+constant is consistent with exp(B), the Z_N coefficients are positive Bessel periodizations, the U(1) coefficients are positive I_n(beta) series, and the Gram factorization makes PSD explicit on the stated bounded surface.
+- **rationale:** The derivation closes on its bounded surface: W1 gives the Wilson exponent split with the repaired Boltzmann sign, W2 establishes nonnegative plane-kernel coefficients for Z_N and U(1), and W3 follows by the standard finite Gram factorization G = W diag(kappa) W^dag. I independently checked the sign dependence, finite cyclic Fourier coefficient positivity, and a small Z_3 Gram PSD without importing the companion runner. The N1-N8 bounded-wall gate is satisfied because the note expressly excludes the full interacting SU(N>=3), continuum/OS reconstruction, and fermion-sector claims rather than using them as hidden support. Residual risk is bounded to the stated scope: SU(2) remains only a numerical sample and SU(N>=3) is comparator-only, not part of the clean derivation.
 - **auditor confidence:** high
 
 ### `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`

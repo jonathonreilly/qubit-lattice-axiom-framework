@@ -21,7 +21,7 @@ current_block: block04 delivered; campaign paused at owner conversation checkpoi
 current_branch: physics-loop/matter-mass-wep-block04-20260708
 worktree: /Users/jonBridger/tp-matter-mass-wep
 base_commit: 9e4a78e3b3
-active_route: owner fork-interpretation decision (see ROUTE_PORTFOLIO owner question + HANDOFF brief)
+active_route: block05 window mass-energy equivalence (static-comparator no-go + kinetic-functional sum rule)
 hard_residual_being_attacked: >
   no-go 2026-06-17 residuals R1 (energy/action context; narrowed to declared
   I-DYN chain, not closed) and R2 (inertial rest-gap readout; partially closed
@@ -33,5 +33,5 @@ no_go_routes_excluded: see NO_GO_LEDGER.md
 cycles_completed: 4
 blocks_completed: [block01, block02, block03, block04]
 prs_open: ["#5061 block01", "#5062 block02 (stacked)", "#5063 block03 (stacked)", "block04 PR at commit time"]
-next_exact_action: owner answers fork question -> scaling-window reading: verdict memo + resume any residual stretch rounds; exact reading: diagnosis note is written (block04 + checklist), campaign halts per protocol
-stop_condition_hit: owner-conversation checkpoint (fork interpretation), per owner instruction to stop as soon as the axiom question is apparent
+next_exact_action: block05 runner (Kohn-type sum rule + quadratic control + static-V sweep) then note; then Noether source identification scoping; then final handoff
+stop_condition_hit: none (owner selected reading A, 2026-07-08: scaling-window WEP closure; direction not ruling)

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 919 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1877 |
+| unaudited | 1876 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 53 |
+| ~~audited_conditional~~ | 54 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 18 |
 | `audited_clean` | 1319 |
-| `audited_conditional` | 53 |
+| `audited_conditional` | 54 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2222 |
+| `unaudited` | 2221 |
 
 | claim_type | count |
 |---|---:|
@@ -1489,6 +1489,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_action_predicts_q1_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `flavor_record_readout_form_not_weight_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -6642,6 +6643,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** If a physical charge U(1) acts as a scalar on the generation triplet, it commutes with C and cannot orient the generation doublet or select the det_C reading.  _(class `A`)_
 - **chain closes:** True — The scalar action is central, so [iI,C]=0 and it supplies no orientation of the generation doublet. Independently, (exp(i alpha)C)^3=exp(3i alpha)I, so order three allows only alpha=0,2pi/3,4pi/3 modulo 2pi.
 - **rationale:** The load-bearing route-pruning statement is a direct algebraic identity about scalar matrices and the C3 order condition, not a definition substitution or numerical fit. The runner source actually computes the spectral endpoint, commutator, and order-three rephasing obstruction, while the charged-sector and neutrino values are correctly bounded as empirical comparators rather than promoted to selectors. The packet explicitly does not claim that physical Standard Model gauge U(1) actions are generation-scalar or that a physical det_C/det_R selector has been derived.
+- **auditor confidence:** high
+
+### `flavor_carrier_from_axioms_momentum_forced_2026-05-31`
+
+- **Note:** [`FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** The combined parent packet: momentum/BZ carrier-type resolution on the finite periodic 2×2×2 representative, with the physical hw=1 locus, r=1/2 basepoint, and delta=2/9 readout selection left open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-flavor_carrier_from_axio-043`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The joint spectral decomposition of the commuting translations forces flavor-separating resolution onto the momentum/BZ factor, while selecting the physical hw=1 locus still requires the imported staggered/Kawamoto-Smit chiral operator class.  _(class `C`)_
+- **chain closes:** False — The finite translation calculation supports the bounded Layer-A distinction within position-diagonal local readouts. The packet does not derive the staggered/KS hw=1 physical locus, r=1/2, or selection of the index-density readout.
+- **rationale:** Issue: the physical hw=1 locus, continuous r=1/2 basepoint, and delta=2/9 readout class remain explicit imports or selections. Why this blocks: the retained bounded translation theorem resolves only momentum versus position within its tested readout class, not the full physical generation carrier. Repair target: retained bridge theorems must force the staggered/KS hw=1 locus and independently select r=1/2 and the index-density readout. Claim boundary until fixed: cite the split theorem for Layer A and use this parent only as a conditional integration map.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
+  - `KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`
 - **auditor confidence:** high
 
 ### `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`

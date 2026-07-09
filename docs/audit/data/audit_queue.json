@@ -3,7 +3,7 @@
     "critical": 407,
     "high": 272,
     "leaf": 777,
-    "medium": 537
+    "medium": 536
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -20549,25 +20549,25 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
+      "claim_id": "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18",
       "claim_scope": null,
-      "claim_type": "no_go",
+      "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "minimal_axioms"
+        "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 5.807,
-      "note_path": "docs/GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md",
+      "load_bearing_score": 5.255,
+      "note_path": "docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/gauge_gauging_selection_conjugation_independence_2026_06_16.py",
-      "transitive_descendants": 27
+      "runner_path": "scripts/gauge_factor_local_selector_normalizer_2026_06_18.py",
+      "transitive_descendants": 26
     },
     {
       "audit_independence_required": "any_non_self",
@@ -28241,30 +28241,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": null,
-      "transitive_descendants": 26
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.255,
-      "note_path": "docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gauge_factor_local_selector_normalizer_2026_06_18.py",
       "transitive_descendants": 26
     },
     {
@@ -59275,5 +59251,5 @@
     }
   ],
   "ready_count": 262,
-  "total_pending": 1993
+  "total_pending": 1992
 }

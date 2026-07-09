@@ -1,0 +1,7 @@
+ANCHORING: C0=1.0000 C_adv=0.9606 gate1A=True cross_adv=0.0000 Cdiff[0,50,100,150,200]=1.000,0.967,0.941,0.925,0.911 half_life=>200
+WAKE-MOTION: S0=0.2367 SA=0.0700 SB=0.2233 Svirgin0=0.0700 SvirginA=0.2633 gate2A=True dens0/A/B=0.133/0.033/0.127 width0/A/B=63/67/64 IcrowdA/B=1.000/1.000 IclockB=0.978 gateI=True
+CORE: gate3A=True first5layers_t40=304 first5layers_t80=236 first_move_layer_t0..4=1,33,131,259,282
+POCKETS: frozen=98 thaw_form_frac=0.276 filled_frac=1.000 t_first_thaw=1.661 postT=1000.0
+CHECKS: machinery=ok K_gt_L_part1=400>200 wake_integral_5pct=True core_layer_assert=True stdout_lines=7
+TOTAL: GEOMETRY-ANCHORING=preserved-under-advection, WAKE-UNDER-ADVECTION=relocates-with-source, SATURATED-CORE=exclusion-frozen-boundary-peeling, FROZEN-POCKETS=thaw
+SPEC-NOTE: Part1 source-tagging is declared and cross-subset damage is separate; Part1 K=400>L=200 makes literal one-per-site diffusion impossible, so its diffusion curve is an abstract position stress test; blocked advection uses synchronous occupied-at-step-start waiting; probe readouts are counted-not-committed clocks, while Icrowd gates record count conservation.

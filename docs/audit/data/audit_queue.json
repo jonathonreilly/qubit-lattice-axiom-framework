@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 403,
+    "critical": 402,
     "high": 272,
     "leaf": 754,
     "medium": 522
@@ -890,33 +890,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_clifford_chirality_dimension_narrow.py",
       "transitive_descendants": 284
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "poisson_self_gravity_mechanism_note",
-      "claim_scope": "Finite checked-packet no-go: the specified h=0.25, W=3, L=6 screened Poisson-like exact-lattice packet is not a closed self-gravity mechanism because the checked nonzero loops are nonconverged and the end-to-end Born row is only a nonconverged finite-iteration diagnostic.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "retained_no_go",
-      "helper_runner_paths": [
-        "scripts/minimal_source_driven_field_probe.py",
-        "scripts/poisson_self_gravity_born_audit.py",
-        "scripts/poisson_self_gravity_loop.py",
-        "scripts/poisson_self_gravity_loop_v3.py"
-      ],
-      "load_bearing_score": 12.577,
-      "note_path": "docs/POISSON_SELF_GRAVITY_MECHANISM_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/poisson_self_gravity_mechanism.py",
-      "transitive_descendants": 269
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -58263,6 +58236,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 226,
-  "total_pending": 1951
+  "ready_count": 225,
+  "total_pending": 1950
 }

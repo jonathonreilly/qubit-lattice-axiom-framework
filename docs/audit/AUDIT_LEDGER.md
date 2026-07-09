@@ -60,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 20 |
-| `audited_clean` | 1318 |
+| `audit_in_progress` | 19 |
+| `audited_clean` | 1319 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 24 |
@@ -144,7 +144,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
-| `poisson_self_gravity_mechanism_note` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1048,6 +1047,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_born_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_v3_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
+| `poisson_self_gravity_mechanism_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | C | - |
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -14724,6 +14724,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source performs an actual finite-lattice backreaction sweep and Born audit rather than printing or importing the contested nonzero-coupling outcome. The completed output supports the scoped observation: nonzero epsilon rows have positive centroid deltas and phase spans/slopes, but 0/3 rows converge at each nonzero epsilon and the safe read remains a bounded no-go. Because the narrowed claim is falsifying/no-promotion evidence rather than a retained positive bounded theorem, the second tuple has the correct claim type.
 - **rationale:** The runner source performs an actual finite-lattice backreaction sweep and Born audit rather than printing or importing the contested nonzero-coupling outcome. The completed output supports the scoped observation: nonzero epsilon rows have positive centroid deltas and phase spans/slopes, but 0/3 rows converge at each nonzero epsilon and the safe read remains a bounded no-go. Because the narrowed claim is falsifying/no-promotion evidence rather than a retained positive bounded theorem, the second tuple has the correct claim type.
 - **auditor confidence:** judicial
+
+### `poisson_self_gravity_mechanism_note`
+
+- **Note:** [`POISSON_SELF_GRAVITY_MECHANISM_NOTE.md`](../../docs/POISSON_SELF_GRAVITY_MECHANISM_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** A finite no-go for mechanism closure on the specified h=0.25, W=3, L=6 screened-Poisson lattice packet and the runner's checked source, coupling, tolerance, and iteration rows.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-poisson_self_gravity_mec-034`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The nonzero-coupling loops remain nonconverged on the checked rows and the end-to-end nonlinear Born result is only a nonconverged finite-iteration diagnostic, so the current packet does not close a self-gravity mechanism.  _(class `C`)_
+- **chain closes:** True — The primary runner and all load-bearing helpers are present and compute the finite lattice rows rather than importing a verdict or expected numerical outputs. Nonconvergence within the stated iteration caps, together with the explicitly nonconverged end-to-end Born diagnostic, suffices for the narrowly stated conclusion that this packet has not achieved mechanism closure.
+- **rationale:** The code genuinely executes lattice propagation, screened-field updates, convergence tests, observables, and Sorkin combinations; it does not merely print the contested conclusion. The completed certificate supports all 26 checks, and the note correctly limits the result to finite checked rows rather than claiming asymptotic nonconvergence or a physical self-gravity theorem. Although the V3 epsilon-zero path returns the free solution directly, that algebraic control is not load-bearing for the negative conclusion, which independently follows from the computed nonzero-loop and end-to-end limitations.
+- **auditor confidence:** high
 
 ### `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17`
 

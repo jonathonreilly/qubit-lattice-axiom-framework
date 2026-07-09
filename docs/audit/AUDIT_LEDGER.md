@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 901 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1927 |
+| unaudited | 1926 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
-| ~~audited_renaming~~ | 20 |
+| ~~audited_renaming~~ | 21 |
 | ~~audited_conditional~~ | 42 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,8 +66,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
-| `audited_renaming` | 20 |
-| `unaudited` | 2272 |
+| `audited_renaming` | 21 |
+| `unaudited` | 2271 |
 
 | claim_type | count |
 |---|---:|
@@ -1575,6 +1575,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_markov_generator_premise_classifier_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | weak | codex-current | F | - |
 
 
 ## Audit findings (full)
@@ -18806,6 +18807,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The conclusion follows by substituting the retained K4 dimensional readout dim_C V = 2 into the stated tadpole convention. The proof does not require any numerical plaquette value or downstream running input.
 - **rationale:** The proof's only load-bearing work is exact algebraic substitution and simplification. The runner source checks Pauli-matrix identities and symbolic fourth-root substitutions, and it does not import PDG values, lattice numerical comparators, or tuned scales. Since the row adds only an algebraic specialization of a single retained parent dimensional readout plus the stated convention, it is decoration rather than an independent theorem.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited only the source-side compatibility/alias map from the older U4 bridge wording to the current one-qubit/M2(C)/Cl(3,0) per-site baseline, with downstream staggered-Dirac gates left separately auditor-owned.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-2026-07-09-u4-qubit-reframe`  (codex-current; independence=weak)
+- **load-bearing step:** The prior U4 wording is treated as exactly the current one-qubit-per-site Quantum axiom plus the retained Cl(3,0) complexification split, yielding k=1 and dim_C H_x=2.  _(class `F`)_
+- **chain closes:** False — The alias map itself is internally consistent and runner-checked, but no independent theorem-grade derivation is supplied beyond restating the accepted qubit-per-site baseline. A clean theorem would need a nontrivial derivation not reducible to this symbol/wording identification.
+- **rationale:** The runner passes all 15 checks and verifies the Pauli/M2(C)/Cl(3,0) facts plus the source boundary text. The source note itself says the claim is source-side alias or renaming support, not a new theorem-grade derivation, and preserves downstream auditor ownership. Under the rubric this is class F: a correct identification between existing concepts rather than an independent derivation.
 - **auditor confidence:** high
 
 ### `unification_basin_failure_note`

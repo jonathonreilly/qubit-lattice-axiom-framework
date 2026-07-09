@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 906 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1921 |
+| unaudited | 1920 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 21 |
 | ~~audited_conditional~~ | 42 |
-| ~~audited_failed~~ | 1 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -64,10 +64,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1293 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 48 |
-| `audited_failed` | 23 |
+| `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2266 |
+| `unaudited` | 2265 |
 
 | claim_type | count |
 |---|---:|
@@ -1541,6 +1541,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | weak | codex-current | A | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `shapiro_diamond_bridge_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | F | - |
@@ -15299,6 +15300,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`
   - `LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`
   - `RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md`
+- **auditor confidence:** high
+
+### `record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05`
+
+- **Note:** [`RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md`](../../docs/RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite free-field diagnostic over the supplied occupancy-to-mass map m(s)=M(2 theta(s)-1), checking whether the resulting record-occupancy front localizes a chiral edge with chirality tied to the occupancy-gradient sign and projected Cl(3,0) Weyl-cone velocities; no derivation of the occupancy-to-mass bridge, record-production dynamics, gauge coupling, anomaly inflow, Standard Model content, or physical persistence dynamics.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=weak)
+- **load-bearing step:** At free-field level and under the stated occupancy-to-mass bridge, a monotone record-occupancy front can play the role of the prior diagnostic's record-time mass wall.  _(class `A`)_
+- **chain closes:** False — The finite-model runner completes and supports the qualitative edge/localization/chirality checks, but the source note's computed witness table is stale relative to the current runner output. In particular, the w=1.5 localization row and the projected-velocity anticommutator error no longer match the executed runner.
+- **rationale:** Issue: the source note's computed witness values are stale relative to the current runner output: at w=1.5 the runner now reports peaks [32, 31], probability xi 0.736150, R^2 0.999235, while the note reports [31, 32], 0.771490, 0.991982; the projected Clifford error also differs (current 1.308e-15 vs note 1.256e-15). Why this blocks: the bounded theorem is presented with specific measured finite-runner witnesses, so the source as written cannot be certified clean against its own executable artifact. Repair target: refresh the source note/cache to the current runner output, or change the runner and rerun so the note and executable witness agree. Claim boundary until fixed: the current runner still supports the qualitative supplied-map free-field diagnostic, but the audited source note cannot be cited for the stale numerical witness table.
 - **auditor confidence:** high
 
 ### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`

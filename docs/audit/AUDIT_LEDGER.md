@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 922 |
+| **retained_bounded** | 923 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1887 |
+| unaudited | 1886 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1316 |
+| `audited_clean` | 1317 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2232 |
+| `unaudited` | 2231 |
 
 | claim_type | count |
 |---|---:|
@@ -1127,6 +1127,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retarded_field_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `rstar_dtotality_axiom_text_instances_bounded_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_all_r_boundary_link_disk_theorem_note_2026-05-30` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -16056,6 +16057,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Since h[U] is anti-Hermitian, it is unitarily diagonalizable with eigenvalues i lambda_j, so T_odd T_even splits into 2x2 Hermitian blocks with determinant 1, trace 2+4(m^2+lambda_j^2), and eigenvalues exp(±2 asinh(sqrt(m^2+lambda_j^2))); the relabeling part is unitary conjugation invariance of determinant, spectrum, and trace.  _(class `A`)_
 - **chain closes:** True — The finite linear-algebra chain closes: independent checking gives h^dag=-h, the displayed T2(lambda) block has the stated signs, determinant, trace, and positive eigenvalues, and second quantization of positive contraction eigenvalues gives a positive many-body transfer. The relabeling result follows exactly from similarity invariance under permutation unitaries.
 - **rationale:** The runner source performs actual finite matrix construction and numerical checks rather than printing constants, and its PASS=7 output matches the stated surfaces. The clean verdict does not rest on the random samples alone: the modal anti-Hermitian-hop reduction independently supplies the arbitrary fixed-background finite proof within the note's stated scope. The source also explicitly excludes the full dynamical-gauge RP bridge and downstream P2/AC_phi_lambda conclusions, so those open items are not part of the audited theorem.
+- **auditor confidence:** high
+
+### `rstar_dtotality_axiom_text_instances_bounded_note_2026-07-02`
+
+- **Note:** [`RSTAR_DTOTALITY_AXIOM_TEXT_INSTANCES_BOUNDED_NOTE_2026-07-02.md`](../../docs/RSTAR_DTOTALITY_AXIOM_TEXT_INSTANCES_BOUNDED_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded clause mapping: the quoted R* finite-additivity/content-determination clauses and D-totality exactly-one-answer domain clause are direct instances of the cited Record/law text, with the realized-state primitive used only to preserve the pointwise-evaluation boundary.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-fresh-context-rstar-dtotality-auditor-2026-07-09`  (codex-current; independence=fresh_context)
+- **load-bearing step:** R* clauses 1-2 map to the Record axiom's finite additivity and content-determination sentences, and D-totality maps to the law sentence requiring exactly one answer at every state in the supplied domain.  _(class `A`)_
+- **chain closes:** True — The cited axiom and primitive text contain the exact finite-additivity, content-determination, exactly-one-answer, and pointwise-evaluation boundary clauses, and the note explicitly excludes sibling PR adjudication, wall/gate closure, motion closure, pointwise-domain closure, and audit/status changes.
+- **rationale:** The note stays within a bounded text-instance claim: the relevant Record and law-domain sentences are present in the minimal axioms, and the realized-state primitive supports only pointwise evaluation without supplying a domain certificate. The runner checks finite witnesses for additivity, fixed-content exclusion of unsupplied auxiliary basis variation, exactly-one-answer totality, and firewall language. I found no overclaim of sibling PR adjudication, wall/gate closure, motion closure, pointwise-domain closure, or audit/status changes.
 - **auditor confidence:** high
 
 ### `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10`

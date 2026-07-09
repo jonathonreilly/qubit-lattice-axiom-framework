@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 196 |
-| **retained_no_go** | 198 |
+| **retained_no_go** | 199 |
 | **retained_bounded** | 899 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1932 |
+| unaudited | 1931 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1284 |
+| `audited_clean` | 1285 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2277 |
+| `unaudited` | 2276 |
 
 | claim_type | count |
 |---|---:|
@@ -530,6 +530,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-current | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_dynamical_fixation_obstruction_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -7089,6 +7090,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For a shell closed under signed permutations, the coordinate-square sums are equal and add to n q, so each axis sum is n q / 3.  _(class `A`)_
 - **chain closes:** True — Within the stated ideal finite kinetic stress setup, the conclusion follows by finite orbit symmetry and elementary pressure/energy algebra. The note does not import or claim closure of the full FRW backdrop or actual cosmological-fluid application.
 - **rationale:** The load-bearing argument is an algebraic identity over finite signed-permutation shells, and the massless, rest-massive, and nonzero-massive formulas follow with the stated kinetic stress definitions. The runner source performs genuine finite orbit and rational arithmetic checks, with only non-load-bearing parent-note string checks in class B and no external comparator. The runner examples are not the whole proof, but the source note's general orbit-sum argument closes the bounded claim as written.
+- **auditor confidence:** high
+
+### `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28`
+
+- **Note:** [`FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md`](../../docs/FS_ROTATION_EXCHANGE_DISCRETE_INSUFFICIENCY_NARROW_NO_GO_NOTE_2026-05-28.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow no-go that, on the one-qubit Z^3 substrate, the on-site spinor 2pi=-1 sign alone does not force CAR via the rotation-exchange route; the missing bridge is either continuous exchange pi_1 data or a retained graded-locality/fermion-parity input.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=cross_family)
+- **load-bearing step:** The on-site 2pi rotations lift to the same scalar -I_4 on two sites and generate only scalars, while the exchange operator P is non-scalar and separates symmetric from antisymmetric sectors; therefore the on-site sign cannot supply the two-site exchange/CAR sign without an extra bridge.  _(class `A`)_
+- **chain closes:** True — The no-go is route-scoped and follows from exact finite tensor-product algebra plus the parent retained no-go boundary: hard-core boson and JW frames share M_4(C), and the discriminator is the cross-site graded relation, not the on-site 2pi sign. The note explicitly leaves lattice-native graph-braid and graded-locality routes open.
+- **rationale:** Clean as a retained no-go within the stated route scope. The runner exactly verifies that U_2pi tensor I and I tensor U_2pi are the same scalar -I_4, that their generated algebra is one-dimensional, that swap P is non-scalar, and that hard-core-boson and Jordan-Wigner frames differ only in the cross-site relation while spanning the same M_4(C). Residual risk is explicitly outside the claim: a future lattice-native exchange homotopy or retained graded-locality principle could still supply fermionic statistics.
 - **auditor confidence:** high
 
 ### `g_bare_canonical_convention_narrow_theorem_note_2026-05-02`

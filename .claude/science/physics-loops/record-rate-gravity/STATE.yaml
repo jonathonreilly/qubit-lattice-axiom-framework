@@ -41,7 +41,7 @@ success_bar: >
   realized-surface rule class is count-constant (no crowding response),
   that is the honest sign/mechanism obstruction — file it and surface to
   the owner rather than tuning.
-current_block: block01 + block02 workers in parallel
+current_block: CLOSED — blocks 01-03 shipped (PRs #5076-#5078)
 current_branch: physics-loop/record-rate-gravity-block01-20260708
 worktree: /Users/jonBridger/tp-matter-mass-wep
 imports: >
@@ -52,6 +52,13 @@ imports: >
   F(0) = 0 forced) — no specific rule is chosen; the toy simulation's
   process clock is a comparator device, not a time-metric claim.
 discipline: physics-loop standard. Plain language on any owner surface.
-next_exact_action: review worker drafts (block01 counting runner; block02
-  rate-law runner)
+next_exact_action: none — campaign closed; see HANDOFF.md; the sourcing
+  link (records form where energy is) is the named next campaign
 stop_condition_hit: none
+# block01 2026-07-08: run 1 fired ATTRACTION-NONGENERIC (raw ensemble —
+# expected in hindsight; enablement rules dominate); supervisor added the
+# constraint-class leg: factorized rules monotone by intersection, 100%
+# attraction-compatible; enablement witness exhibited. Saturation corollary
+# rule-independent over 27,012 configs. block02 2026-07-08: CLASS-REDUCED
+# single iteration; collapse 3e-11; clock contrast 21-146 sigma; frozen
+# pockets at 65% occupancy. Both supervisor-executed.

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 407,
     "high": 272,
-    "leaf": 775,
+    "leaf": 774,
     "medium": 521
   },
   "cycle_break_target_count": 10,
@@ -36575,30 +36575,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/COLOR_ORIENTATION_THREE_VS_THREEBAR_SUCCESSION_CANDIDATE_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/color_orientation_three_vs_threebar_succession_candidate_2026_07_06.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38188,6 +38164,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hw_equivalence_free_transfer_dynamics_2026_06_12.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
+        "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/HYPERCHARGE_TRACELESS_CENTRAL_DIRECTION_REQUIRES_MULTI_SUMMAND_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/hypercharge_traceless_central_multi_summand_2026_07_06.py",
       "transitive_descendants": 0
     },
     {
@@ -48904,32 +48906,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06",
-        "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/HYPERCHARGE_TRACELESS_CENTRAL_DIRECTION_REQUIRES_MULTI_SUMMAND_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/hypercharge_traceless_central_multi_summand_2026_07_06.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "impact_parameter_portability_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -58835,5 +58811,5 @@
     }
   ],
   "ready_count": 249,
-  "total_pending": 1975
+  "total_pending": 1974
 }

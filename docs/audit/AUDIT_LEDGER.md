@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 907 |
+| **retained_bounded** | 908 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1915 |
+| unaudited | 1914 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1296 |
+| `audited_clean` | 1297 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2260 |
+| `unaudited` | 2259 |
 
 | claim_type | count |
 |---|---:|
@@ -306,6 +306,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
+| `color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -3924,6 +3925,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** Given supplied endpoint C^3 carriers and a supplied full-rank bilinear M(x,y), the finite-dimensional polar decomposition M=UP gives a unique unitary U whose endpoint-frame transformation is U' = g_y U g_x^dagger.  _(class `A`)_
 - **chain closes:** True — Within the explicitly conditional scope, the load-bearing step is standard finite-dimensional matrix algebra and polar decomposition over supplied C^3 data. The source and runner preserve that the supplied carrier and supplied bilinear are hypotheses, not derived framework content.
 - **rationale:** The runner returns TOTAL PASS=10 FAIL=0, with exact rational/signed-permutation witnesses for polar covariance, determinant/Z3 bookkeeping, Wilson-form trace invariance, rank exhibits, and rank-boundary discontinuity, plus seeded numerical controls and boundary quote checks. The source's open SUPPLIED-C3 and SUPPLIED-BILINEAR premises are included in the audited theorem statement and are explicitly excluded from downstream citation as derived content. Thus the bounded algebraic conditional claim closes, while the physical color, R5, dynamics, and gauge-action bridges remain outside scope.
+- **auditor confidence:** high
+
+### `color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06`
+
+- **Note:** [`COLOR_ORIENTATION_THREE_VS_THREEBAR_SUCCESSION_CANDIDATE_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md`](../../docs/COLOR_ORIENTATION_THREE_VS_THREEBAR_SUCCESSION_CANDIDATE_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded conditional color-orientation algebra: for a supplied complex C^3 carrier, the fundamental and conjugate su(3) modules are complex-linearly inequivalent, the su(2) epsilon control is one-dimensional, and the exact cubic-anomaly signs are opposite; T2 is only a named candidate premise conditional on comparability, ARROW, and SUCCESSION-ORIENT, and no C^3 carrier, orientation supplier, T-oddness, anomaly-cancellation law, physical color/quark identification, gauge dynamics, chirality, or hypercharge bridge is derived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=cross_family)
+- **load-bearing step:** Assuming SUPPLIED-C3, Hom_su3(3,3bar)=0 while the su(2) control has a one-dimensional epsilon intertwiner, and the cubic anomaly tensor satisfies A(3)=+1, A(3bar)=-1, so a supplied 3 plus ANOMALY-CANCEL requires a 3bar consistency partner; SUCCESSION-ORIENT remains only a named conditional premise.  _(class `A`)_
+- **chain closes:** True — The retained packet only needs minimal axioms as context because the audited mathematical claim is explicitly conditional on SUPPLIED-C3, comparability/ARROW/SUCCESSION-ORIENT for T2, and ANOMALY-CANCEL for T3. The runner computes the su(3)/su(2) intertwiner nullities and cubic anomaly signs exactly over rational complex matrices and reports PASS=6 FAIL=0; quoted external snippets are used as context checks, not as closure for the bounded algebraic claim.
+- **rationale:** Clean within the bounded conditional scope: the exact representation-theory checks close for a supplied C^3 carrier, and the anomaly-sign bookkeeping closes for a supplied anomaly-cancellation condition. The note repeatedly fences the open premises: C^3, comparability, ARROW, SUCCESSION-ORIENT, record-statistical influence, anomaly cancellation, and physical color/quark identification are not derived. Residual risk is only misuse downstream; citation must not promote the candidate succession supplier or any physical color bridge beyond the audited algebraic scope.
 - **auditor confidence:** high
 
 ### `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12`

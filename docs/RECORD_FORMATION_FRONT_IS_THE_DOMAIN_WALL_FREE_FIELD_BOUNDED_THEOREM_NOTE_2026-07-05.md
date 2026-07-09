@@ -60,7 +60,7 @@ BLAS/LAPACK-build-dependent. All localization witnesses below are therefore
 computed from the basis-invariant two-state subspace marginal (the site
 diagonal of the rank-2 low-subspace projector): peak sites are reported
 tie-aware (every site within relative margin `1e-10` of the marginal
-maximum; measured ties sit at `<= 5e-14` and resolved neighbors at
+maximum; measured ties sit at `< 1e-13` and resolved neighbors at
 `>= 1.8e-8`), and the exponential tail is fitted from the deterministic
 anchor site (the tie site nearest the occupancy midpoint).
 

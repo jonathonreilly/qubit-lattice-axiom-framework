@@ -215,8 +215,8 @@ def localize_in_low_subspace(
 def tie_peak_sites(profile: np.ndarray, rel_tol: float = 1e-10) -> list[int]:
     """Sites within rel_tol of the profile maximum.
 
-    Measured on the marginals used here: exact-degeneracy ties sit at
-    relative margins <= 5e-14 while genuinely resolved neighbors sit at
+    Measured across the supported eigensolver drivers: exact-degeneracy ties
+    sit at relative margins < 1e-13 while genuinely resolved neighbors sit at
     >= 1.8e-8, so 1e-10 sits over three orders above the former and over
     two orders below the latter.
     """

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 916 |
+| **retained_bounded** | 917 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1899 |
+| unaudited | 1898 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1306 |
+| `audited_clean` | 1307 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2244 |
+| `unaudited` | 2243 |
 
 | claim_type | count |
 |---|---:|
@@ -449,6 +449,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `equivalence_principle_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
+| `equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | C | - |
 | `eta_188_structural_origin_partial_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
 | `eta_ud2_fixed_token_square_homology_certificate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
@@ -6069,6 +6070,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Five-judge panel majority ratified the second audit tuple (audited_clean, bounded_theorem, class C). Vote breakdown: J1: second / audited_clean / bounded_theorem / class C; J2: second / audited_clean / bounded_theorem / class C; J3: second / audited_clean / bounded_theorem / class C; J4: second / audited_clean / bounded_theorem / class C; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: J1: The scoped claim is a bounded finite-lattice harness result. Amplitude cancellation is algebraic, but the same audited claim also depends on the computed valley/spent_delay packet-shape centroid shifts and spreads. That decisive comparison is a deterministic first-principles computation on the specified propagator, so class C is the correct load-bearing class; the clean bounded verdict and claim_type close from the runner and note. | J2: The bounded claim closes cleanly: the source and cached runner verify amplitude-scaling invariance and packet-shape-dependent centroid shifts on the fixed lattice family, while the note explicitly excludes persistent-pattern mass closure. The load-bearing result is not purely algebraic because the packet-shape dependence and reported spreads come from deterministic lattice propagation, so class C is the correct class for the audited tuple. | J3: The audited claim includes the fixed-lattice packet-shape-dependent centroid shifts, not only the algebraic cancellation under global amplitude rescaling. Those deltas and spreads are produced by the runner's finite lattice propagation computation, so the load-bearing class is C while the bounded clean verdict and bounded_theorem scope are correct. | J4: The bounded claim closes: the runner supports amplitude-scaling invariance and packet-shape-dependent centroid shifts on the fixed lattice family, while the note explicitly avoids persistent-pattern mass-law closure. The load-bearing class is C because the packet-shape deltas and spreads come from an actual finite lattice/action propagation computation; only the amplitude-cancellation subclaim is purely algebraic. | J5: The bounded claim is clean: the runner instantiates the fixed 3D lattice family and computes the amplitude-invariant deltas and packet-shape-dependent centroid shifts without an external comparator or hard-coded expected outputs. Because the scoped claim includes the packet-shape dependence/spreads, the load-bearing step is a finite first-principles lattice computation, not only the algebraic amplitude-cancellation identity.
 - **rationale:** Five-judge panel majority ratified the second audit tuple (audited_clean, bounded_theorem, class C). Vote breakdown: J1: second / audited_clean / bounded_theorem / class C; J2: second / audited_clean / bounded_theorem / class C; J3: second / audited_clean / bounded_theorem / class C; J4: second / audited_clean / bounded_theorem / class C; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: J1: The scoped claim is a bounded finite-lattice harness result. Amplitude cancellation is algebraic, but the same audited claim also depends on the computed valley/spent_delay packet-shape centroid shifts and spreads. That decisive comparison is a deterministic first-principles computation on the specified propagator, so class C is the correct load-bearing class; the clean bounded verdict and claim_type close from the runner and note. | J2: The bounded claim closes cleanly: the source and cached runner verify amplitude-scaling invariance and packet-shape-dependent centroid shifts on the fixed lattice family, while the note explicitly excludes persistent-pattern mass closure. The load-bearing result is not purely algebraic because the packet-shape dependence and reported spreads come from deterministic lattice propagation, so class C is the correct class for the audited tuple. | J3: The audited claim includes the fixed-lattice packet-shape-dependent centroid shifts, not only the algebraic cancellation under global amplitude rescaling. Those deltas and spreads are produced by the runner's finite lattice propagation computation, so the load-bearing class is C while the bounded clean verdict and bounded_theorem scope are correct. | J4: The bounded claim closes: the runner supports amplitude-scaling invariance and packet-shape-dependent centroid shifts on the fixed lattice family, while the note explicitly avoids persistent-pattern mass-law closure. The load-bearing class is C because the packet-shape deltas and spreads come from an actual finite lattice/action propagation computation; only the amplitude-cancellation subclaim is purely algebraic. | J5: The bounded claim is clean: the runner instantiates the fixed 3D lattice family and computes the amplitude-invariant deltas and packet-shape-dependent centroid shifts without an external comparator or hard-coded expected outputs. Because the scoped claim includes the packet-shape dependence/spreads, the load-bearing step is a finite first-principles lattice computation, not only the algebraic amplitude-cancellation identity.
 - **auditor confidence:** judicial_panel_majority
+
+### `equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12`
+
+- **Note:** [`EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md`](../../docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite free-bulk Wilson-eta sector checks on L in {2,3,4,6,8}, density tails on L in {3,4,6,8}, L_t in {4,8}, r in {0.5,1}, m in {-2.5,-1.5,-0.5,0.5}, for the two stated Wilson-mass variants; no APS, R-eta, large-L, or readout claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-noether-20260709-equivariant-wilson-eta`  (codex-current; independence=fresh_context)
+- **load-bearing step:** On the tested free-bulk window, sector-resolved Wilson-eta asymmetries are sub-extensive, so bulk sector counting supplies no fixed-locus-density angle.  _(class `C`)_
+- **chain closes:** True — The source stays inside the finite tested free-bulk surface and leaves APS boundary geometry, R-eta, large-L limits, and readout interpretations outside the claim. The runner computes the sector eta values and density tables from the displayed Wilson dispersion rather than importing a target density.
+- **rationale:** Clean within the bounded finite-window scope. The runner verifies sector-zero cancellation, K-odd cancellation, finite density-tail behavior, no L=8 near-hit to 2/9, and the no-delta/textual boundary guards, with SUMMARY: PASS=29 FAIL=0 and py_compile passing. Residual risk is wording hygiene only: sub-extensive and the title must remain finite tested-window language, not an asymptotic density-vanishing theorem.
+- **auditor confidence:** high
 
 ### `eta_188_structural_origin_partial_note_2026-05-03`
 

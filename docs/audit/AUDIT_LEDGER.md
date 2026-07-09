@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 906 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1918 |
+| unaudited | 1917 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 42 |
+| ~~audited_conditional~~ | 43 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1295 |
-| `audited_conditional` | 42 |
+| `audited_conditional` | 43 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2263 |
+| `unaudited` | 2262 |
 
 | claim_type | count |
 |---|---:|
@@ -1463,6 +1463,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_eq_3delta_identity_note_2026-04-21` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13310,6 +13311,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting Y_uR=a+1, Y_dR=a-1, Y_eR=b-1, and Y_nuR=b+1 into the anomaly equations gives direct color/gravity cancellation and a cubic anomaly equal to -6(n_color*a+b), which vanishes under b=-n_color*a.  _(class `A`)_
 - **chain closes:** True — The cited LH-trace authority is retained-grade at the bounded tier and supplies the trace relation and convention used here. Within the declared scope, the right-handed values are fixed by the stated SHIFT hypotheses and the anomaly cancellations follow by exact substitution.
 - **rationale:** The load-bearing work is exact algebra over explicitly stated bounded hypotheses, not an external comparator or tuned numerical match. The runner source performs symbolic Sympy simplification of the stated anomaly expressions and instance checks; it does not merely print pass counts or import hidden numerical data. The branch choice, b=-1 convention, chirality assignment, and n_color=3 selection are not derived, but the note correctly excludes those from the audited claim scope.
+- **auditor confidence:** high
+
+### `orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09`
+
+- **Note:** [`ORBIT_OCCUPANCY_NEUTRINO_OUT_OF_SAMPLE_PROGRAM_NOTE_2026-06-09.md`](../../docs/ORBIT_OCCUPANCY_NEUTRINO_OUT_OF_SAMPLE_PROGRAM_NOTE_2026-06-09.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open neutrino-sector orbit-occupancy program: external oscillation comparators exclude the direct Q=1 and Q=2/3 readout cells, and the flagged minimal-seesaw rung gives falsifiable Sigma m_nu and kill bands, conditional on a supplied K/CPT/Majorana-to-readout bridge and the stated rung-1 model imports.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=weak)
+- **load-bearing step:** Conjugation maps J -> -J, so the K-fixed locus of the generation doublet carries no invariant complex structure: a Majorana (K-fixed) multiplet cannot occupy the complex slot and is forced onto the sector cell (r=1, Q=1), while a plain-Dirac multiplet with the standard circulant readout sits on Q=2/3; both direct-readout cells are then excluded by the oscillation comparator band.  _(class `B`)_
+- **chain closes:** False — The runner reproduces the algebraic and comparator bands, but the cited current minimal_axioms note does not supply K/CPT orbit structure; it explicitly leaves K/CPT and readout-context structure downstream. The Berezin fork dependency supplies real/holomorphic cell consequences only after POLARIZATION-SELECT is supplied, so the Majorana/K-fixed-to-sector-cell bridge is not closed by the one-hop packet.
+- **rationale:** Issue: the Rung-0 step uses a K/CPT/Majorana-to-real-sector-cell readout bridge, but the current minimal_axioms dependency excludes K/CPT orbit/readout-context structure from generic axiom content and the Berezin fork only proves cell values under a supplied polarization. Why this blocks: the direct-readout exclusion and plain-Dirac/Majorana kill lines need that bridge before they can be claimed as a framework implication rather than a conditional program surface. Repair target: add a retained bridge theorem/dependency deriving the K-fixed/Majorana readout-to-real-polarization step, or narrow the note so that step is an explicit model import. Claim boundary until fixed: the external comparator exclusion, rung-1 seesaw band, quark appendix, and kill conditions remain useful program calculations under their flagged imports, but not a closed retained implication of orbit occupancy.
+- **open / conditional deps cited:**
+  - `KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md`
+  - `MINIMAL_AXIOMS_2026-06-29.md`
 - **auditor confidence:** high
 
 ### `ordered_lattice_packet_reidentification_note`

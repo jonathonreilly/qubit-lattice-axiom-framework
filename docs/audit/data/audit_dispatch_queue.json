@@ -1838,9 +1838,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_clean",
       "actual_claim_type": "no_go",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "retained_no_go",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",

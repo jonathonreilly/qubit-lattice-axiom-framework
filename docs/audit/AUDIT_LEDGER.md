@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 196 |
-| **retained_no_go** | 199 |
+| **retained_no_go** | 200 |
 | **retained_bounded** | 900 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1929 |
+| unaudited | 1928 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1286 |
+| `audited_clean` | 1287 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2274 |
+| `unaudited` | 2273 |
 
 | claim_type | count |
 |---|---:|
@@ -244,6 +244,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-current | A | - |
 | `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2971,6 +2972,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Because C4 is defined as the top-four Hankel singular-energy fraction, 1-C4 equals the normalized sum of singular energies with j>4, equivalently the relative Frobenius error of the best rank-4 truncated SVD.  _(class `A`)_
 - **chain closes:** True — The cited retained-bounded authorities supply the realized-state family, capture ordering, and Hankel capture machinery; the realized-state primitive is an accepted pointwise-evaluation premise. Within that bounded surface, the tail identity is standard SVD/Frobenius algebra and the runner verifies the finite tables without extending to generic seeds, larger L, or asymptotics.
 - **rationale:** The load-bearing equality is a genuine algebraic closure of the landed Hankel capture definition, not a new physical bridge or an external comparator match. The runner source constructs the finite L=3 Hamiltonian, realized states, determinant-phase increments, Fourier reconstruction, and Hankel SVDs; the frozen constants serve as regression anchors while the deficit-tail equality is computed directly. The dependencies are retained-grade or accepted primitive premises, so no open dependency remains inside the explicitly bounded finite scope.
+- **auditor confidence:** high
+
+### `car_from_positivity_neutrality_note_2026-06-02`
+
+- **Note:** [`CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md`](../../docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Route-local no-go: on the finite qubit tensor-product hopping models and two-slice Gram witnesses constructed by the runner, finite transfer-operator positivity, Stone generator spectrum, and the tested reflection-style Gram positivity do not select cross-site CAR over the hard-core-boson frame; this does not rule out fermions, global reflection-positive measures, graded locality, fermion-parity superselection, or continuum spin-statistics routes.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=cross_family)
+- **load-bearing step:** Finite transfer positivity, the associated Stone spectrum, and the simple reflected Gram witness do not force CAR over the hard-core boson frame; on the open chain the transfer object is identical, and on the closed ring both statistics choices still give positive transfer operators.  _(class `A`)_
+- **chain closes:** True — The runner explicitly constructs the HCB and Jordan-Wigner generator frames, verifies the real generator-level CAR/HCB distinction, shows the open-chain transfer and Stone spectra are identical, checks the two-slice Gram verdict is the same, and shows closed-loop spectra differ while both ring transfer operators remain positive. The old 2026-06-04 baseline wording is non-load-bearing for this verdict because the current minimal-axiom dependency still supplies the needed qubit one-site algebra and lattice carrier.
+- **rationale:** The no-go closes as an exact finite-matrix route exclusion: the tested positivity objects are positive or PSD in both statistics frames, while the cross-site sign remains a genuine generator-level and closed-loop datum rather than a unitary-gauge artifact. The runner covers the possible loopholes named in the note: identical open-chain Hamiltonians and transfer spectra, equal Gram positivity verdicts, nontrivial CAR/HCB intertwiner obstruction, bare correlator sign dependence, and ring spectra that differ without positivity selecting one frame. Residual risk is the explicitly scoped one: a fuller graded-locality, parity-superselection, boundary, or continuum spin-statistics construction could still select CAR outside this finite positivity route.
 - **auditor confidence:** high
 
 ### `causal_cone_speed_map_note`

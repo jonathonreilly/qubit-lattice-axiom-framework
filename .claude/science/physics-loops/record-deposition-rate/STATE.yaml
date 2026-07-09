@@ -22,10 +22,8 @@ success_bar: >
   kappa(threshold) measured with declared proxies; both phenomenological
   handles expressed as bounds on one constant; honest statement of what
   remains free. No formation rule chosen.
-current_block: block02 shipped (PR #5085); block03 (constraint note +
-  close) remains
-current_branch: physics-loop/record-deposition-rate-block02-20260708
-  (base = collapse-merger-comparator-block01, which holds the engine)
+current_block: CLOSED (block03 constraint map shipped, PR #5087)
+current_branch: physics-loop/record-deposition-rate-block03-20260708
 worktree: /Users/jonBridger/tp-matter-mass-wep
 imports: activity/distinguishability proxies as declared readout devices
   (QD bridge remains a named premise); comparators by citation.
@@ -44,7 +42,14 @@ block02_result: >
   deposit-displace ratchet mode declared. Worker drafts failed closed on
   the engine's bare-product deposition probability; engine fixed
   (Poisson conversion) on the collapse-merger-comparator-block01 branch.
-next_exact_action: block03 — constraint note tying kappa(theta), the
-  sparse window, and the mobility bound into one owner-readable
-  statement; then campaign close + handoff.
+block03_result: >
+  PR #5087. Constraint map (owner surface, plain language):
+  docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md — the one free
+  number, the measured curve above the registration floor, the
+  four-decade two-sided bracket, what would pin it (derive the
+  registration bar from the dynamics-form record mechanism, or anchor
+  one number empirically and predict the rest).
+next_exact_action: none — campaign closed. Named successor: derive the
+  registration bar (the record-formation bridge) from the dynamics-form
+  mechanism; not commissioned.
 stop_condition_hit: none

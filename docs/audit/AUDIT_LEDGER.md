@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 917 |
+| **retained_bounded** | 918 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1898 |
+| unaudited | 1897 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1307 |
+| `audited_clean` | 1308 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2243 |
+| `unaudited` | 2242 |
 
 | claim_type | count |
 |---|---:|
@@ -682,6 +682,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `harmonic_ladder_weight_law_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | C | - |
 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9400,6 +9401,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** In the physical base-angle coordinate, the determinant-phase readout has an integer harmonic ladder at gaps 3k, with nonzero k=2 weight in every realized state, while the landed deficit remains the Hankel-SVD tail rather than a simple Fourier tail.  _(class `C`)_
 - **chain closes:** True — The one-hop capture-deficit authority is retained_bounded and supplies the landed Hankel capture/tail surface. The primary runner independently instantiates the finite L=3 Hamiltonian, supplied realized states, determinant-polar readout, FFT/Hankel calculations, and verifies the stated ladder, leakage, k=2, and ordering claims within the declared finite scope.
 - **rationale:** Within the bounded finite-state scope, the claim does not require a generic-state, asymptotic, or empirical bridge. The runner is not merely printing constants: it constructs the lattice Hamiltonian, realized projectors from the supplied seeds, determinant-polar phase increments, raw and base-angle spectra, and Hankel singular-value tails before checking the source-note tables and qualitative distinctions. The note also explicitly avoids the overclaim that Fourier coefficient tail mass is the landed capture deficit, preserving the upstream Hankel-SVD definition.
+- **auditor confidence:** high
+
+### `harmonic_ladder_weight_law_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`HARMONIC_LADDER_WEIGHT_LAW_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/HARMONIC_LADDER_WEIGHT_LAW_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite L=3 realized states K=3,4,5,6 with listed seeds: the single-sideband law is refuted, and the finite Laurent determinant principal-Arg law reproduces ladder weights and bounded tail-order statements.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-harmonic-sieve-20260709`  (codex-current; independence=fresh_context)
+- **load-bearing step:** g_s(theta) = Arg(F_s(e^{i(theta+delta)}) / F_s(e^{i theta})) - mean with delta = 3*tau = 1.05, and paired ladder weights w_k are normalized Fourier powers of g_s.  _(class `C`)_
+- **chain closes:** True — The runner constructs the finite L=3 realized states, determinant Laurent coefficients, principal-branch phase increments, Fourier weights, root data, single-sideband refutation, and tail orders within the restricted packet. No upstream dependency or external comparator is needed for the bounded finite-state claim.
+- **rationale:** The bounded finite claim closes inside the restricted packet: the runner recomputes the determinant-root and Laurent-Arg machinery rather than merely printing the headline result. Frozen tables act as regression and staleness gates, while the load-bearing Laurent-law comparison is computed from the determinant construction. Residual risk is numerical scope only: this is double-precision finite-state verification, not a symbolic proof or a generalization beyond the four listed realized states.
 - **auditor confidence:** high
 
 ### `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17`

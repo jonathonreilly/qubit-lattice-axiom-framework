@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 407,
     "high": 272,
-    "leaf": 760,
+    "leaf": 759,
     "medium": 521
   },
   "cycle_break_target_count": 10,
@@ -38197,30 +38197,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KS_ETA_VS_JW_STRING_CAR_LOCALITY_NO_GO_NOTE_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/ks_eta_vs_jw_string_car_locality.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lepton_block_d12_prime_matching_no_go_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -58474,6 +58450,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 237,
-  "total_pending": 1960
+  "ready_count": 236,
+  "total_pending": 1959
 }

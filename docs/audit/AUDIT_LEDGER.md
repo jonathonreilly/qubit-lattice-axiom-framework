@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 197 |
-| **retained_no_go** | 202 |
+| **retained_no_go** | 203 |
 | **retained_bounded** | 920 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1894 |
+| unaudited | 1893 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1311 |
+| `audited_clean` | 1312 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2239 |
+| `unaudited` | 2238 |
 
 | claim_type | count |
 |---|---:|
@@ -814,6 +814,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-current | C | - |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-current | B | - |
+| `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-current | C | - |
 | `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -11387,6 +11388,18 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The current source no longer relies on the mixed-normalization convention; it routes through the retained reconciliation theorem, while minimal_axioms supplies the finite M2(C) per-site qubit algebra and Z3 finite-region substrate. The thermodynamic-limit and record-dynamics applications are explicitly out of scope.
 - **rationale:** The load-bearing finite-region theorem closes from two wired inputs: the retained single-convention Kraus-Choi normalization row and the minimal qubit-lattice algebra premise. The runner verifies the source markers, the normalized/unnormalized inverse factors, the Choi PSD/TP checks on a concrete CPTP map, and finite-region dimensions d=2^|Lambda|; it also checks that omitting the normalized-convention d factor fails. Residual risk is outside the audited scope: arbitrary infinite-volume channels and any specific record-formation CPTP identification remain separate lanes.
 - **auditor confidence:** high
+
+### `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02`
+
+- **Note:** [`KS_ETA_VS_JW_STRING_CAR_LOCALITY_NO_GO_NOTE_2026-06-02.md`](../../docs/KS_ETA_VS_JW_STRING_CAR_LOCALITY_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow no-go: KS eta c-number staggered phases plus ungraded tensor locality do not force cross-site CAR or a JW string; other statistics/graded-locality routes remain open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-fresh-context-nature-grade-audit-subagent-2026-07-09`  (codex-current; independence=fresh_context)
+- **load-bearing step:** The finite-patch counterfactuals show: keep eta and drop the JW string -> CAR fails; drop eta and keep the JW string -> CAR holds, with local hard-core-boson ladders providing the countermodel.  _(class `C`)_
+- **chain closes:** None — The finite-patch runner gives the decisive counterfactuals: keeping eta while dropping the JW string fails CAR, while keeping the JW string without eta preserves CAR; eta is a c-number hopping coefficient, not the statistics carrier.
+- **rationale:** The note proves the scoped no-go by explicit finite-matrix countermodel on the Z^3 qubit patch: eta signs are c-number hopping coefficients shared by both realizations, while CAR appears only with the JW operator string. The locality horn also closes for the stated route because the maximally local hard-core-boson ladder has no string and is not CAR, while JW orderings retain nontrivial tails. The note does not overclaim against all fermionization or statistics mechanisms; it explicitly leaves graded locality, fermion-parity superselection, and lattice-native statistics derivations open.
 
 ### `kubo_continuum_limit_families_note`
 

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 921 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1881 |
+| unaudited | 1880 |
 | audit_in_progress | 8 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
-| ~~audited_renaming~~ | 21 |
+| ~~audited_renaming~~ | 22 |
 | ~~audited_conditional~~ | 54 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,8 +66,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
-| `audited_renaming` | 21 |
-| `unaudited` | 2226 |
+| `audited_renaming` | 22 |
+| `unaudited` | 2225 |
 
 | claim_type | count |
 |---|---:|
@@ -1612,6 +1612,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
+| `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -12381,6 +12382,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Since dim_C(M_2(C))=4 and finite tensor-product dimensions multiply, dim_C(M_2(C)^tensor d)=4^d, so at the bounded parameter d=4 the dimension is 4^4=256 and the reciprocal is 1/256.  _(class `A`)_
 - **chain closes:** True — The theorem closes by basis counting and tensor-product dimension multiplicativity over finite-dimensional complex vector spaces. The only physics-sensitive quantity, d=4, is an explicit bounded parameter rather than an output.
 - **rationale:** The row is a class-A algebraic bookkeeping theorem and does not import PDG values, mass-scale observations, or a physical dimension derivation. The cached runner reports PASS=14, FAIL=0 under SHA f8e6d0d9e6a6b88a48b3cea28cf0b4f73536762df53a0784c240c0dcf71a5e20, including explicit tensor basis/rank checks at d=4. Clean status is bounded by the claim_type: downstream effective status should be retained_bounded, not an unbounded derivation of the lepton scale or d=4.
+- **auditor confidence:** high
+
+### `magnitude_temporal_factor_is_count_not_rate_2026-06-06`
+
+- **Note:** [`MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md`](../../docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The claimed identification of the magnitude exponent’s temporal factor with the two-step free staggered transfer block, and the resulting assertion that the clock-rate no-go does not block that factor.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-magnitude_temporal_facto-023`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The magnitude’s temporal factor 2 is identified with the minimal reflection-positive transfer-step count L_t = 2, so its exponent is the mode count 8 × 2 = 16 rather than a clock rate.  _(class `F`)_
+- **chain closes:** False — The authorities separately establish an 8 L_t determinant dimension, count/rate separation, and free 1+1-dimensional two-step positivity, but do not identify the magnitude ansatz’s temporal factor with that transfer block. The hierarchy authority explicitly leaves selection of the physical L_t = 2 UV endpoint open.
+- **rationale:** The runner computes lattice dimensions and checks two-step spectral properties, but it hard-codes the contested identification as magnitude_exponent_is = "transfer-step count". Neither those computations nor the cited notes derive the bridge from the magnitude exponent to the free two-step transfer object or justify the L_t = 2 readout. The restricted two-step authority is also confined to a free 1+1-dimensional surface, while the determinant construction used for the magnitude has three spatial dimensions.
+- **open / conditional deps cited:**
+  - `HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md`
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

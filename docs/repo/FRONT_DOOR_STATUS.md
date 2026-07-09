@@ -29,7 +29,7 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3715 |
-| Applied audit verdicts | 1471 |
+| Applied audit verdicts | 1472 |
 | Retained-grade rows, including boxed decorations | 1372 |
 | Retained positive theorems | 197 |
 | Retained no-go rows | 205 |
@@ -39,7 +39,7 @@ Owner-approval history for every axiom/primitive/governance change:
 | Unaudited rows | 1885 |
 | Retained-pending-chain rows | 7 |
 | Audited conditional rows | 52 |
-| Audited renaming rows | 21 |
+| Audited renaming rows | 22 |
 | Audited numerical-match rows | 8 |
 | Citation cycles detected | 10 |
 
@@ -50,10 +50,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1953 |
-| Ready rows | 230 |
+| Total pending rows | 1952 |
+| Ready rows | 229 |
 | Cycle-break targets | 10 |
-| Critical pending | 407 |
+| Critical pending | 406 |
 | High pending | 272 |
 | Medium pending | 521 |
 | Leaf pending | 753 |
@@ -64,10 +64,10 @@ Next ready rows by queue order:
 - [`yt_zero_import_authority_note`](../../docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md) - critical; non_terminal_conditional
 - [`yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md) - critical; non_terminal_conditional
 - [`dm_neutrino_bosonic_normalization_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md) - critical; non_terminal_conditional
-- [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; audit_in_progress
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; non_terminal_conditional
 - [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; unaudited
 - [`axiom_first_reflection_positivity_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
+- [`axiom_first_spectrum_condition_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

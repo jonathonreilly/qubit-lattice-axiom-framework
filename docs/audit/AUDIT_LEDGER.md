@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 919 |
+| **retained_bounded** | 920 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1896 |
+| unaudited | 1895 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1309 |
+| `audited_clean` | 1310 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2241 |
+| `unaudited` | 2240 |
 
 | claim_type | count |
 |---|---:|
@@ -717,6 +717,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -9974,6 +9975,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The load-bearing step of this note is the chain assembly itself: jointly, the L1 ratio, L2 matter assignment, L3 alpha=1/3 normalization bridge, and L4 GMN readout reproduce the SM hypercharge/charge pattern on the LH-doublet surface.  _(class `A`)_
 - **chain closes:** True — The direct authorities supplied for L1-L4 are retained-grade or decoration under a retained parent, and the source note keeps the normalization/readout boundaries explicit. The runner completes and checks only exact finite algebra plus source-boundary routing over those supplied/chained inputs.
 - **rationale:** The scoped bounded theorem closes as an algebraic assembly over retained-grade one-hop inputs: the ratio and matter assignment select the sectors, the retained-bounded normalization bridge fixes alpha=1/3, and the retained-bounded GMN lemma supplies Q=T3+Y/2. The runner does not perform an external PDG-style comparator check and the source firewall quarantines downstream GUT/sin^2/full-spectrum claims. Residual risk is bounded to the upstream premise packets and conventions already owned by the cited authority rows, not to this chain-assembly step.
+- **auditor confidence:** high
+
+### `hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06`
+
+- **Note:** [`HYPERCHARGE_TRACELESS_CENTRAL_DIRECTION_REQUIRES_MULTI_SUMMAND_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md`](../../docs/HYPERCHARGE_TRACELESS_CENTRAL_DIRECTION_REQUIRES_MULTI_SUMMAND_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within supplied SUMMAND-FIXED direct sums of N factorwise C^3 tensor C^2 blocks, central directions have dimension N and the traceless central subspace has dimension N-1; no physical hypercharge or summand supplier is claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-trace-20260709`  (codex-current; independence=fresh_context)
+- **load-bearing step:** For Z(q) = q_1 Z_1 + ... + q_N Z_N, tr Z(q) = 6i(q_1 + ... + q_N), so the traceless central condition is q_1 + ... + q_N = 0 and the traceless central subspace has dimension N-1.  _(class `A`)_
+- **chain closes:** True — The algebraic closure from factorwise central projectors to one trace-zero equation is exact in the supplied direct-sum surface. The retained-bounded dependencies supply only the allowed factor-preservation and 3/3bar arithmetic boundaries, not physical hypercharge or a multi-summand supplier.
+- **rationale:** Clean within the bounded supplied-summand scope. The runner verifies the central-dimension and traceless-dimension algebra, the two-summand typed-constraint coincidence, commutant dimensions, quote guards, and AST discipline with TOTAL PASS=13 FAIL=0 and py_compile passing. Residual risk is scope drift only: downstream rows must not cite this as a physical hypercharge derivation or as deriving the multi-summand supplier.
 - **auditor confidence:** high
 
 ### `i3_zero_exact_theorem_note`

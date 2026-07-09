@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 195 |
-| **retained_no_go** | 205 |
-| **retained_bounded** | 920 |
+| **retained** | 194 |
+| **retained_no_go** | 204 |
+| **retained_bounded** | 919 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1875 |
-| audit_in_progress | 14 |
+| unaudited | 1877 |
+| audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 18 |
-| `audited_clean` | 1321 |
+| `audited_clean` | 1319 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2220 |
+| `unaudited` | 2222 |
 
 | claim_type | count |
 |---|---:|
@@ -145,7 +145,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08` | open_gate | audit_in_progress | audit_in_progress | - | - | - | - |
-| `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -887,7 +887,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -1119,7 +1118,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_occurrence_thinned_iid_frequency_bridge_2026-07-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `record_production_kernel_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_tick_signature_neutral_2026-06-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12483,19 +12481,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The source note and runner agree on the bounded table, alpha estimates, and conclusion that this matched pocket does not support a dimensional exponent-flattening theorem. The runner computes the graph samples and metrics before checking the pinned values, rather than importing a retained theorem or relying on author prose. Residual risk is limited to the named generator routines, seed count, radius grid, and default harness settings; broader 2D/4D modular universality is explicitly outside the audited scope.
 - **auditor confidence:** high
 
-### `matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09`
-
-- **Note:** [`MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md`](../../docs/MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Given the supplied C^3 color carrier and a nonzero SU(3)-equivariant linear matter-current drift into su(3), Ad-invariance of the Lie-algebra increment first moment forces rho_color = I_3/3.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260610-040748-9ca6b439f3-matter_color_depolarization_`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** An Ad-invariant increment distribution has an Ad-invariant mean; since su(3) has no nonzero Ad-invariant vector and any nonzero equivariant linear drift has mean proportional to traceless(rho_color), centrality forces traceless(rho_color)=0.  _(class `A`)_
-- **chain closes:** True — The claim follows from standard SU(3) representation algebra: Herm(3)=1+8, Hom_SU(3)(1+8,8) is one-dimensional, the adjoint has no invariant vector, and E[traceless(phi phi^†)] = traceless(rho). The note does not claim to derive the drift channel, a relaxation law, or full gauge-link dynamics.
-- **rationale:** The load-bearing step is algebraic closure, not a numerical fit or renaming. Independent checks confirm the projection identity, the zero invariant vector condition, the order parameter identity ||traceless(rho)||_F^2 = Tr(rho^2)-1/3, and the stated Gaussian covariance anisotropy table. All cited authorities in the restricted packet are retained-grade or retained no-go boundaries, and the source note keeps the dynamics and zero-drift exceptions outside the theorem.
-- **auditor confidence:** high
-
 ### `matter_inertial_closure_note`
 
 - **Note:** [`MATTER_INERTIAL_CLOSURE_NOTE.md`](../../docs/MATTER_INERTIAL_CLOSURE_NOTE.md)
@@ -15922,19 +15907,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** Issue: the proof packet and runner close against docs/MINIMAL_AXIOMS_2026-06-05.md, while the current ledger dependency minimal_axioms resolves to docs/MINIMAL_AXIOMS_2026-06-29.md. Why this blocks: the runner's B-class checks verify old three-axiom / Quantum / durable-realized-outcome wording, not the current Qubit/Admissibility/Record boundary, so the current row cannot receive clean closure as written. Repair target: update the note and runner to cite/read 2026-06-29 and restate the load-bearing split under Qubit, Admissibility, and Record; the repaired core likely can close because 2026-06-29 still excludes Born law, measurement/decoherence dynamics, formation rules, weighting, normalization, sector generation, and dial selection. Claim boundary until fixed: the old 2026-06-05-bound type split passes locally, but current-ledger closure remains conditional.
 - **open / conditional deps cited:**
   - `MINIMAL_AXIOMS_2026-06-05.md: source/runner-cited superseded authority not matching current ledger dependency MINIMAL_AXIOMS_2026-06-29.md`
-- **auditor confidence:** high
-
-### `record_production_kernel_boundary_2026-06-06`
-
-- **Note:** [`RECORD_PRODUCTION_KERNEL_BOUNDARY_2026-06-06.md`](../../docs/RECORD_PRODUCTION_KERNEL_BOUNDARY_2026-06-06.md)
-- **claim_type:** `no_go`
-- **claim_scope:** For a supplied finite post-record alphabet and append/count update on realized atoms, the finite post-record grammar does not determine a unique production kernel, predictive law, transition rate, or stable prior.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-584ac77670-record_production_kernel_bou`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The same finite post-record alphabet and append/count grammar admit multiple distinct normalized producers with different likelihoods and expectations, so the append/count layer underdetermines the production kernel.  _(class `A`)_
-- **chain closes:** True — The restricted packet gives an explicit finite counterexample: fair IID, biased IID, reverse-biased IID, Markov persistence, and scripted kernels all feed the same realized append/count update while disagreeing on likelihoods and expected next counts. This closes the scoped underdetermination claim without importing any producer-selection rule.
-- **rationale:** The runner source performs finite rational checks rather than merely printing constants, and the independent algebraic check is straightforward: append takes a supplied atom and count increments by the corresponding basis vector, while many normalized kernels can assign probabilities to the same prefixes. The cited semigroup boundary is retained and supports the separation between post-record append/count dynamics and supplied ensemble or generator dynamics. The no-go is scoped to the exact post-record grammar not selecting a producer; it does not claim that no producer can be supplied or derived elsewhere.
 - **auditor confidence:** high
 
 ### `record_tick_signature_neutral_2026-06-23`

@@ -44,6 +44,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import sys
 from collections import defaultdict
@@ -406,13 +407,23 @@ def main() -> int:
                 )
                 continue
             text = spath.read_text(encoding="utf-8", errors="replace")
-            if current_path and current_path not in text:
+            surface_parent = Path(surface).parent.as_posix() or "."
+
+            def reference_spellings(target: str) -> set[str]:
+                return {
+                    target,
+                    Path(os.path.relpath(target, start=surface_parent)).as_posix(),
+                }
+
+            if current_path and not any(
+                spelling in text for spelling in reference_spellings(current_path)
+            ):
                 add_warning(
                     "front_door_axiom_pointer",
                     f"{surface}: does not cite the current axiom memo {current_path}",
                 )
             for old in superseded:
-                if old in text:
+                if any(spelling in text for spelling in reference_spellings(old)):
                     add_warning(
                         "front_door_axiom_pointer",
                         f"{surface}: cites superseded axiom memo {old} "

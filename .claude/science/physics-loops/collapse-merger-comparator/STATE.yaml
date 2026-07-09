@@ -1,0 +1,37 @@
+loop_slug: collapse-merger-comparator
+created: 2026-07-08
+mode: campaign (owner-commissioned: the extremes as numbers — collapse,
+  frozen stars, merger by bridging, area/permanence, memory)
+execution_split: workhorse (codex exec workers on gpt-5.6-sol at
+  reasoning effort max, owner directive 2026-07-08; supervisor reviews)
+predecessors: record-rate-gravity + energy-to-records (fixed-record
+  choice locked by owner after the mobility probe and saturation leg).
+goal: >
+  A coupled d=1 toy: energy parcels falling along the crowding-set clock
+  gradient, depositing permanent records at rate kappa x activity x
+  F(availability); records suppress clocks (constraint class). Block01:
+  engine + validation (parcel conservation; attraction sign — parcels
+  drift toward crowding; static-blob husk nucleation; seeded
+  determinism). Block02: single-blob collapse — Jeans-like runaway,
+  husk growth, interior saturation with capacity-capped density (no
+  singularity), exterior asymptotic freeze, ossification curve, the
+  frozen-star anatomy (husk + bound unrecorded parcels). Block03:
+  merger — two blobs approach as energy wells; husks NEVER translate
+  (exact); merger completes by BRIDGING (the between-region saturates
+  first; final husk connected and contains the union); record/husk
+  monotonicity as the area-theorem analog (exact); memory leg — a
+  radiated parcel burst deposits a sparse permanent shell with a
+  measured post-passage clock offset. Block04: close + handoff.
+success_bar: >
+  Each named correspondence measured or exactly asserted; honest
+  negatives filed if the toy refuses (e.g., no collapse runaway at any
+  kappa, or merger by means other than bridging).
+current_block: block01 worker launching
+current_branch: (stacks after record-deposition-rate blocks)
+worktree: /Users/jonBridger/tp-matter-mass-wep
+imports: the coupled toy is a declared comparator device (fall bias,
+  parcel model, kappa) — no derivation of the coupling is claimed here;
+  sign/class structure cited from #5076-#5081.
+discipline: physics-loop standard.
+next_exact_action: review block01 worker draft
+stop_condition_hit: none

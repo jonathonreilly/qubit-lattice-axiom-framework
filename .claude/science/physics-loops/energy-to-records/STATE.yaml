@@ -34,7 +34,7 @@ success_bar: >
   (correlation fails, or the wake dominates in a phenomenologically
   fatal way) — both pre-registered. No assuming the conclusion; the
   eigenstate and wake objections are run head-on.
-current_block: block01 + block02 workers in parallel
+current_block: CLOSED — blocks 01-03 shipped (PRs #5079-#5081)
 current_branch: physics-loop/energy-to-records-block01-20260708
 worktree: /Users/jonBridger/tp-matter-mass-wep
 imports: >
@@ -45,5 +45,11 @@ imports: >
   record premise of the dynamics-form theorem — the bridge is a NAMED
   premise, not a derived identification.
 discipline: physics-loop standard.
-next_exact_action: review worker drafts
+next_exact_action: none — campaign closed; see HANDOFF.md
 stop_condition_hit: none
+# block01: run 1 theorem legs ok, correlation legs failed on supervisor
+# observable errors (flux-like single-site proxy vanishes at packet crest;
+# non-unitary prep broke naive lightcone); run 2 (bond-resolved activity,
+# overlap gates, unitary kick): 11/11 SUPPORT-HALF-ESTABLISHED.
+# block02: single iteration TWO-CHANNEL-QUANTIFIED; R_wake 0..1 lawful in
+# (deposition, dwell); Newtonian shape <=> deposition-sparse rule.

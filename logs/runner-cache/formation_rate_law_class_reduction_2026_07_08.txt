@@ -1,0 +1,6 @@
+EXACT: CHECK-01 endpoint pass; CHECK-02 max collapse spread=3.067e-11; CHECK-03 second-order spreads=linear6:0.091,convex6:0.518,horizon6:2.338
+SIM-CLOCK: linear1d[relspread=0.137;lin:A=0.9996+/-0.0005 B=0.9579+/-0.0011 z=34.1 Cg=0.0417,sqrt:A=0.9998+/-0.0005 B=0.9758+/-0.0010 z=21.5 Cg=0.0479,quad:A=1.0001+/-0.0005 B=0.9111+/-0.0011 z=75.7 Cg=0.0445,sat:A=0.9992+/-0.0005 B=0.9771+/-0.0008 z=23.5 Cg=0.0464,exp:A=1.0006+/-0.0005 B=0.9748+/-0.0011 z=21.8 Cg=0.0470] | horizon1d[relspread=0.118;lin:A=1.0003+/-0.0004 B=0.9020+/-0.0009 z=98.4 Cg=0.0982,sqrt:A=0.9985+/-0.0004 B=0.9503+/-0.0012 z=37.5 Cg=0.0966,quad:A=0.9999+/-0.0005 B=0.8146+/-0.0011 z=146.0 Cg=0.0927,sat:A=1.0003+/-0.0005 B=0.9481+/-0.0011 z=42.8 Cg=0.1044,exp:A=1.0005+/-0.0005 B=0.9407+/-0.0011 z=49.1 Cg=0.1027]
+SATURATION: linear1d/lin occ=1.000 frozen_open=0 monotone=True curve=(0.255,217.182),(0.440,115.636),(0.625,25.000),(0.810,3.455),(1.000,0.000) | horizon1d/lin occ=0.650 frozen_open=70 monotone=True curve=(0.320,328.000),(0.400,216.000),(0.485,104.000),(0.565,40.000),(0.650,0.000)
+CHECKS: 01=True 02=True 03=True 04=True 05=True 06=True
+SPEC-NOTE: resetting=comparator-not-axiom; d1-reduction; common weak-field crowding probe for measured collapse; pins=8/40 with reduced transverse crowding; linear1d uses positive floor, horizon1d has A(2)=0; no gravity/audit claim.
+TOTAL: CLASS-REDUCED

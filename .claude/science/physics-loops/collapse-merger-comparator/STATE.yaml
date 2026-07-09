@@ -26,12 +26,35 @@ success_bar: >
   Each named correspondence measured or exactly asserted; honest
   negatives filed if the toy refuses (e.g., no collapse runaway at any
   kappa, or merger by means other than bridging).
-current_block: block01 worker launching
-current_branch: (stacks after record-deposition-rate blocks)
+current_block: block02 shipped (PR #5084); block03 (merger) next
+current_branch: physics-loop/collapse-merger-comparator-block02-20260708
+  (base = block01 branch, which now carries the Poisson deposition fix)
 worktree: /Users/jonBridger/tp-matter-mass-wep
 imports: the coupled toy is a declared comparator device (fall bias,
   parcel model, kappa) — no derivation of the coupling is claimed here;
   sign/class structure cited from #5076-#5081.
 discipline: physics-loop standard.
-next_exact_action: review block01 worker draft
+block01_result: >
+  PR #5083. ENGINE-VALID (all six checks): attraction z=8.1 with
+  sub-sigma null; husk nucleation where energy sits; choking; exact
+  excluded volume; conservation; determinism. 2026-07-09 supervisor fix:
+  deposition Poisson conversion (bare product exceeded one on bunched
+  states); re-validated, digests refreshed.
+block02_result: >
+  PR #5084. FROZEN-STAR-EXHIBITED (all six checks): self-formed husk
+  gravitates fresh probes at z=+9.5 (two-phase kappa=0 probe, control
+  +1.2); husk monotone and peak-anchored; capacity caps the core, no
+  condensation; exterior clock freezes (z=-8.9/-43.8); anatomy at
+  kappa=0.001: husk 136, shell 0.927, unbound 0.023, open 0.635.
+  Findings: record-mediated gravity has no pre-nucleation contraction
+  channel; occupancy statistics are d=1 caging-confounded (probe phase
+  isolates the pull); ossification decelerates only in the starved
+  regime, accelerates capture-fed (alpha=1.47) — corrects the merger
+  thought-pass prose.
+next_exact_action: block03 — merger. Two blobs; husks never translate
+  (exact); merger by BRIDGING (between-region saturates first; final
+  husk connected, contains the union); husk monotonicity as the
+  area-theorem analog (exact); memory leg — radiated parcel burst
+  deposits a sparse permanent shell with measured post-passage clock
+  offset. Then block04 close + handoff.
 stop_condition_hit: none

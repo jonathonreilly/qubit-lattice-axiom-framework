@@ -20,7 +20,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 194 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 921 |
+| **retained_bounded** | 922 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
 | unaudited | 1872 |
@@ -29,7 +29,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
 | ~~audited_conditional~~ | 55 |
-| ~~audited_failed~~ | 3 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -61,10 +61,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 18 |
-| `audited_clean` | 1321 |
+| `audited_clean` | 1322 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 49 |
-| `audited_failed` | 25 |
+| `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
 | `unaudited` | 2217 |
@@ -883,6 +883,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lp_two_band_exact_completion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1587,7 +1588,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
-| `record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | weak | codex-current | A | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `shapiro_diamond_bridge_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | F | - |
@@ -12435,6 +12435,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The load-bearing step is a first-principles finite-matrix computation from the stated Harper cell: the runner constructs H(+B), H(0), H(-B), H1, and H2 and compares the finite-difference response with the full second-order divided-difference PT sum. Expected chi values are not hard-coded; the predecessor deviations are printed as retained bounded provenance and are not used as the proof of the new PT agreement. The finite-B and non-flux-quantized caveats are disclosed, so the conclusion does not overclaim a strict B->0, flux-quantized, continuum, or boundary-root result.
 - **auditor confidence:** high
 
+### `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The canonical projective-measurement isometry yields the Lüders Kraus operator K_r = P_r and hence the sequential effect P_r E P_r; no uniqueness among all instruments implementing the same POVM is claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-lsp_projective_derivatio-052`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting the explicitly constructed canonical dilation into the Kraus formula gives K_r = sum_{r'} P_{r'} delta_{r,r'} = P_r.  _(class `A`)_
+- **chain closes:** True — The projection identities and completeness relation make the constructed map an isometry, which extends to a unitary in finite dimension. Taking the apparatus matrix element then algebraically yields K_r = P_r.
+- **rationale:** The narrow conclusion follows directly from the explicit canonical isometry and the standard Kraus extraction formula, without an imported open bridge or numerical input. The accepted qubit premise is sufficient for the finite-dimensional setting, while the projective-measurement relations are stated and used correctly. The broader sentence claiming that arbitrary apparatus rotations V_A preserve the same labeled POVM is not generally correct with a fixed readout basis, but that statement is not load-bearing for the proved canonical result or the analyzed system-unitary twists with V_A equal to the identity.
+- **auditor confidence:** high
+
 ### `m2_tensor_d4_dimension_256_bounded_note_2026-05-26`
 
 - **Note:** [`M2_TENSOR_D4_DIMENSION_256_BOUNDED_NOTE_2026-05-26.md`](../../docs/M2_TENSOR_D4_DIMENSION_256_BOUNDED_NOTE_2026-05-26.md)
@@ -15794,19 +15807,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** "This is occurrence strength only" plus "Succession, wherever it exists, is monotone."  _(class `A`)_
 - **chain closes:** True — The axiom text supports occurrence and, conditional on an actual formation-successor, permanence plus per-site uniqueness force strict extension; the note explicitly excludes any formation rule, universal successor law, rate, clock, selector, or dynamics.
 - **rationale:** The citable axiom text contains 'Records form.' and the Qualification blocks extra physical structure absent derivation/admission. Read minimally, that supports occurrence and excludes empty-forever history, but it does not supply a total transition law, availability domain, site or possibility selector, rate, clock, stochastic process, or dynamics. The extension lemma closes only under the explicit conditional 'for any realized formation-successor': permanence preserves old records, per-site uniqueness forbids overwrite, and formation adds a record. The runner verifies exact text needles and finite toy consequences; it is not an independent dynamics derivation, but the note does not claim one.
-- **auditor confidence:** high
-
-### `record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05`
-
-- **Note:** [`RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md`](../../docs/RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded finite free-field diagnostic over the supplied occupancy-to-mass map m(s)=M(2 theta(s)-1), checking whether the resulting record-occupancy front localizes a chiral edge with chirality tied to the occupancy-gradient sign and projected Cl(3,0) Weyl-cone velocities; no derivation of the occupancy-to-mass bridge, record-production dynamics, gauge coupling, anomaly inflow, Standard Model content, or physical persistence dynamics.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop`  (codex-current; independence=weak)
-- **load-bearing step:** At free-field level and under the stated occupancy-to-mass bridge, a monotone record-occupancy front can play the role of the prior diagnostic's record-time mass wall.  _(class `A`)_
-- **chain closes:** False — The finite-model runner completes and supports the qualitative edge/localization/chirality checks, but the source note's computed witness table is stale relative to the current runner output. In particular, the w=1.5 localization row and the projected-velocity anticommutator error no longer match the executed runner.
-- **rationale:** Issue: the source note's computed witness values are stale relative to the current runner output: at w=1.5 the runner now reports peaks [32, 31], probability xi 0.736150, R^2 0.999235, while the note reports [31, 32], 0.771490, 0.991982; the projected Clifford error also differs (current 1.308e-15 vs note 1.256e-15). Why this blocks: the bounded theorem is presented with specific measured finite-runner witnesses, so the source as written cannot be certified clean against its own executable artifact. Repair target: refresh the source note/cache to the current runner output, or change the runner and rerun so the note and executable witness agree. Claim boundary until fixed: the current runner still supports the qualitative supplied-map free-field diagnostic, but the audited source note cannot be cited for the stale numerical witness table.
 - **auditor confidence:** high
 
 ### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`

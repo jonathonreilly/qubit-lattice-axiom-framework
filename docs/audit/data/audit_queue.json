@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 400,
-    "high": 271,
+    "high": 270,
     "leaf": 755,
     "medium": 522
   },
@@ -12112,30 +12112,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 9,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.454,
-      "note_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 61
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -20268,6 +20244,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.115,
+      "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
+      "transitive_descendants": 48
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -21327,12 +21329,12 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "audited_failed",
+      "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05",
-      "claim_scope": "Bounded finite free-field diagnostic over the supplied occupancy-to-mass map m(s)=M(2 theta(s)-1), checking whether the resulting record-occupancy front localizes a chiral edge with chirality tied to the occupancy-gradient sign and projected Cl(3,0) Weyl-cone velocities; no derivation of the occupancy-to-mass bridge, record-production dynamics, gauge coupling, anomaly inflow, Standard Model content, or physical persistence dynamics.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -21341,11 +21343,11 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 2,
-      "effective_status": "audited_failed",
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
       "load_bearing_score": 2.585,
       "note_path": "docs/RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md",
-      "queue_reason": "non_terminal_failed",
+      "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/record_formation_front_chiral_edge_2026_07_05.py",
       "transitive_descendants": 2
@@ -25848,32 +25850,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_koide_gamma_orbit_positive_one_clock_semigroup.py",
-      "transitive_descendants": 48
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.115,
-      "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
       "transitive_descendants": 48
     },
     {
@@ -58169,5 +58145,5 @@
     }
   ],
   "ready_count": 221,
-  "total_pending": 1948
+  "total_pending": 1947
 }

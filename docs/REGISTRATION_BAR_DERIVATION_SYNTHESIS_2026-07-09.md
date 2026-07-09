@@ -87,16 +87,20 @@ free dial.
 
 ## What would settle the rest
 
-A minimal two-dimensional comparator (the smallest branching
-geometry). There, the derived criterion predicts: redundancy onset
-occurs; its effective threshold is insensitive to the tolerance choice
-(a property, not a dial); and its location can be checked against the
-deposition-sparse window that the gravity chain needs. Each of these
-is falsifiable. One dimension has already shown it cannot host the
-measurement -- that negative is load-bearing for interpreting every
-d = 1 record comparator in the repository, including this season's
-coupled toys, whose "records" are supplied primitives rather than
-formed registers, exactly as their notes declare.
+A three-dimensional comparator -- the framework's own lattice. The
+derived criterion predicts: redundancy onset occurs; its effective
+threshold is insensitive to the tolerance choice (a property, not a
+dial); and its location can be checked against the deposition-sparse
+window that the gravity chain needs. Each of these is falsifiable.
+The measurement belongs at d = 3 because the bar's location can
+depend on dimension -- a two-dimensional stand-in would trade the
+supplied threshold for a supplied dimension and close nothing; two
+dimensions are admissible only as a declared method stepping stone.
+One dimension has already shown it cannot host the measurement at
+all -- that negative is load-bearing for interpreting every d = 1
+record comparator in the repository, including this season's coupled
+toys, whose "records" are supplied primitives rather than formed
+registers, exactly as their notes declare.
 
 ## Boundaries
 

@@ -1,0 +1,57 @@
+loop_slug: record-rate-gravity
+created: 2026-07-08
+mode: campaign (owner-commissioned 2026-07-08: "the derivation that checks
+  whether gravity was already in the axioms")
+runtime_budget: owner standing parameters carry over
+execution_split: workhorse (codex exec workers, supervisor reviews all diffs)
+predecessors: energy-sector-field-derivation (HALTED at the lapse-promotion
+  decision; owner ruled derivation-first via the record-formation-rate
+  route). Owner mechanism insights now axiom-grounded: one-record-per-site
+  + permanence (Record axiom text) force zero formation at saturation;
+  Admissibility makes availability vary with neighbor record content.
+goal: >
+  Derive the lapse from the record sector. Block01: (a) the saturation
+  corollary (zero formable records at saturation — theorem off the axiom
+  text); (b) the availability-counting classification: over the exact
+  covariant nearest-neighbor rule spaces (classification note 2026-07-03
+  models), how does the available-possibility structure at an open site
+  vary with the number of recorded neighbors — census of
+  monotone-decreasing (attraction-compatible) / increasing / non-monotone /
+  count-constant rules; the gravity SIGN becomes a named property of the
+  realized rule class. Block02: the rate-law class reduction — for EVERY
+  local covariant monotone formation-rate law F(availability), the
+  effective local event-rate field behaves as a lapse; in the weak field
+  only F'(background) enters (the one-constant/G theorem), verified both
+  symbolically and by a seeded stochastic formation simulation with a
+  measured clock field, including the forced saturation limit. Block03:
+  the bridge + synthesis — identification of the rate field with the
+  conformal factor (June metric arc), snap-fit to the induced
+  Poisson-class kernel (Route A), no-go compliance table (post-record
+  clock-rate no-go, normalization gate, context-independence no-go —
+  all dodged legitimately by forward-dynamics content), the G
+  identification, and the honest statement of what remains supplied
+  (existence/monotonicity of a lawful rate rule) with the owner surface
+  on whether that needs a primitive registration.
+success_bar: >
+  Block01 exact and exhaustive over the named finite rule spaces; block02
+  class-wide (rule-independent structure demonstrated, one-constant
+  weak-field collapse verified); block03 assembles the chain with every
+  supplied item named. Negative forks pre-registered: if the covariant
+  rule census shows attraction-compatible rules are non-generic or the
+  realized-surface rule class is count-constant (no crowding response),
+  that is the honest sign/mechanism obstruction — file it and surface to
+  the owner rather than tuning.
+current_block: block01 + block02 workers in parallel
+current_branch: physics-loop/record-rate-gravity-block01-20260708
+worktree: /Users/jonBridger/tp-matter-mass-wep
+imports: >
+  Axiom text (MINIMAL_AXIOMS_2026-06-29 with the 2026-07-04 formation
+  sentence) as the sole foundation authority; the admissibility-rule
+  classification note's condition-alphabet models by citation; the rate
+  law F enters ONLY as a class (local, covariant, monotone,
+  F(0) = 0 forced) — no specific rule is chosen; the toy simulation's
+  process clock is a comparator device, not a time-metric claim.
+discipline: physics-loop standard. Plain language on any owner surface.
+next_exact_action: review worker drafts (block01 counting runner; block02
+  rate-law runner)
+stop_condition_hit: none

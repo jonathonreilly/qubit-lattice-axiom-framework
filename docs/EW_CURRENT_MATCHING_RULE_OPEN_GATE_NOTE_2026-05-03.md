@@ -1,204 +1,162 @@
-# EW Current Matching Rule No-Go Proposal Note
+# EW Current Matching Rule Kappa_EW Parametrization Note
 
 **Date:** 2026-05-03
-**Claim type:** no_go
-**Status:** no-go proposal for independent audit-lane review. The retained
-Fierz/channel-count theorem fixes the exact adjoint fraction
-`F_adj = (N_c^2 - 1) / N_c^2 = 8/9` at `N_c = 3`, but the current retained
-framework primitives do not fix the physical EW readout functional that
-weights the singlet/disconnected current after CMT factorization.
+**Claim type:** bounded_theorem
+**Status:** proposed bounded recut; independent audit required
+**Claim scope:** on the explicitly supplied channel-weight/readout surface,
+for every `kappa_EW != 1 - N_c^2`, the note proves
+`K_EW(kappa_EW) = T/(C + kappa_EW S) =
+1/(F_adj + kappa_EW(1-F_adj))`. At `N_c=3` this is
+`1/(8/9+kappa_EW/9)`. The `kappa_EW=0` and `kappa_EW=1` cases are exhibits,
+not selector derivations.
 **Primary runner:** `scripts/frontier_ew_current_matching_rule_no_go.py`
 
-## Cited Authority
+## Authorities And Supplied Premises
 
-- [EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)
-  derives the exact representation-theoretic ratio
-  `(N_c^2 - 1) / N_c^2` and explicitly separates it from the physical
-  matching rule.
+- [Fierz channel note](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)
+  supplies the exact `SU(N_c)` representation-dimension fraction
+  `F_adj=(N_c^2-1)/N_c^2`. It does not turn that dimension fraction into a
+  correlator contribution or physical readout weight.
+- [YT EW M-residual note](YT_EW_M_RESIDUAL_NOTE_2026-05-02.md) supplies the
+  narrow common-CMT-scaling statement used below: on its declared two-link
+  channel model, singlet and adjoint pieces acquire the same nonzero `u_0^2`
+  factor.
 
-Plain-text bounded context, not load-bearing dependencies of this no-go:
-`docs/EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md` and
-`docs/RCONN_DERIVED_NOTE.md`. They provide the existing bounded/OZI route,
-but neither supplies an exact disconnected-current coefficient.
-
-## Claim
-
-**No-go theorem (matching-rule underdetermination).** On the current retained
-packet consisting of:
-
-1. `N_c = 3` and the exact SU(`N_c`) Fierz decomposition
-   `q qbar = 1 + adj`;
-2. the exact channel fraction
-   `F_adj = dim(adj) / dim(q qbar) = (N_c^2 - 1) / N_c^2`;
-3. the CMT mean-field factorization `U -> u_0 V`, which multiplies both
-   singlet and adjoint two-link EW-current channel contributions by the same
-   `u_0^2`; and
-4. the bounded OZI statement that disconnected current contributions are
-   suppressed as `O(1/N_c^2)` but not assigned an exact coefficient,
-
-the package-level EW matching factor is not determined. In particular, the
-connected-trace selector
+This note has two explicit supplied premises:
 
 ```text
-kappa_EW = 0
+Supplied channel-weight map:
+C/T = F_adj = (N_c^2 - 1)/N_c^2,
+S/T = 1 - F_adj = 1/N_c^2.
+
+KAPPA-EW:
+the physical disconnected-current readout coefficient kappa_EW is supplied;
+the connected-trace specialization is kappa_EW = 0.
 ```
 
-is an extra matching premise, not a consequence of the retained primitives.
+The channel-weight map is a count-to-contribution assumption, not a consequence of
+the Fierz identity. `KAPPA-EW` is an extra matching premise. Neither premise is
+an axiom or a registered primitive.
 
-## Coefficient Parametrization
+## Exact Parametrization
 
-Normalize the post-CMT channel sum to
-
-```text
-T = C + S = 1,
-```
-
-where
-
-```text
-C = F_adj = (N_c^2 - 1) / N_c^2,
-S = 1 - F_adj = 1 / N_c^2.
-```
-
-Let `kappa_EW` be the physical disconnected-current readout coefficient:
+Normalize the declared channel weights by `T=C+S=1`. Define
 
 ```text
 Pi_EW^phys(kappa_EW) = C + kappa_EW S.
 ```
 
-The CMT/lattice normalization reads the total channel sum `T`. Therefore the
-EW alpha-level matching factor is
+Then, whenever the denominator is nonzero,
 
 ```text
 K_EW(kappa_EW)
   = T / Pi_EW^phys(kappa_EW)
-  = 1 / (F_adj + kappa_EW (1 - F_adj)).                  (1)
+  = 1 / (F_adj + kappa_EW(1 - F_adj))
+  = N_c^2 / (N_c^2 - 1 + kappa_EW).                 (1)
 ```
 
-Equivalently, `K_EW(kappa_EW) = 1 / (F_adj + kappa_EW (1 - F_adj))`.
-
-At `N_c = 3`, equation (1) becomes
+The excluded pole is
 
 ```text
-K_EW(kappa_EW) = 1 / (8/9 + kappa_EW/9).
+kappa_EW = 1 - N_c^2.
 ```
 
-The package-level `9/8` factor is the special case
+At `N_c=3`, equation (1) becomes
 
 ```text
-K_EW(0) = 9/8,
+K_EW(kappa_EW) = 1/(8/9 + kappa_EW/9) = 9/(8+kappa_EW),
+kappa_EW != -8.
 ```
 
-which is exactly the connected-trace selector. The full-trace readout is also
-compatible with the retained Fierz/CMT algebra:
-
-```text
-K_EW(1) = 1.
-```
-
-Thus the retained packet admits at least two completions with identical
-Fierz arithmetic, identical CMT scaling, and identical `O(1/N_c^2)`
-disconnected-channel size, but different EW matching factors.
-
-## Proof
-
-### 1. Fierz fixes channel dimensions, not the readout functional
-
-The Fierz/channel-count theorem fixes only the decomposition
-
-```text
-q qbar = 1 + adj,
-dim(1) = 1,
-dim(adj) = N_c^2 - 1.
-```
-
-It therefore fixes
-
-```text
-C / T = (N_c^2 - 1) / N_c^2,
-S / T = 1 / N_c^2.
-```
-
-No equation in that theorem assigns the physical EW current to `C` rather
-than to `C + kappa_EW S`. The value of `kappa_EW` is a statement about the
-lattice-to-continuum current readout, not about representation dimension.
-
-### 2. CMT is color-blind at the relevant two-link level
-
-The CMT substitution `U -> u_0 V` gives the same two-link factor to every
-EW-current channel:
-
-```text
-C(U) = u_0^2 C(V),
-S(U) = u_0^2 S(V),
-T(U) = u_0^2 T(V).
-```
-
-Consequently equation (1) is invariant under CMT scaling:
-
-```text
-T(U) / (C(U) + kappa_EW S(U))
-  = T(V) / (C(V) + kappa_EW S(V)).
-```
-
-CMT can neither select `kappa_EW = 0` nor exclude `kappa_EW = 1`, because it
-treats both channels uniformly.
-
-### 3. Bounded OZI suppression does not fix the coefficient
-
-For bounded `kappa_EW = O(1)`, the disconnected readout contribution relative
-to the connected channel is
-
-```text
-kappa_EW S / C
-  = kappa_EW / (N_c^2 - 1)
-  = O(1/N_c^2).
-```
-
-This includes `kappa_EW = 0`, `kappa_EW = 1`, and any finite intermediate
-coefficient. The OZI route therefore supplies a suppression class, not the
-exact coefficient needed to make `K_EW = 9/8`.
-
-### 4. Independence witness
-
-Construct two admissible completions of the retained packet:
+Two exact exhibits are
 
 ```text
 Completion A: kappa_EW = 0,  K_EW = 9/8.
 Completion B: kappa_EW = 1,  K_EW = 1.
 ```
 
-Both completions satisfy the exact Fierz ratio `C/T = 8/9`, both satisfy
-the same color-blind CMT scaling law, and both keep the disconnected channel
-at `O(1/N_c^2)` relative size. Since they agree on all retained premises but
-disagree on the package-level EW matching factor, the matching rule is
-underdetermined by those premises.
+They show that the supplied selector changes the normalization. They do not
+select which completion is physical.
 
-Therefore the connected-trace EW readout cannot be derived from the current
-retained primitives alone. A future positive theorem would need to add an
-actual lattice-current selector argument that fixes `kappa_EW = 0`, or an
-exact disconnected-current computation that fixes the same value.
+## Why Fierz Dimensions Do Not Fix Channel Contributions
 
-## Proposed Consequences
+The Fierz authority fixes the decomposition
 
-If ratified by the independent audit lane, this would close the former open
-gate negatively:
+```text
+N_c tensor anti-N_c = 1 + adj,
+dim(1)=1,
+dim(adj)=N_c^2-1.
+```
 
-- exact Fierz/channel-count arithmetic remains retained-bounded support for
-  `F_adj = 8/9`;
-- the package-level EW coefficient must be written as
-  `K_EW(kappa_EW)`, not as an unconditional retained `9/8`;
-- any numerical use of `sqrt(9/8)` for `g_1(v)` or `g_2(v)` is the conditional
-  specialization `kappa_EW = 0`;
-- empirical agreement after choosing `kappa_EW = 0` is not a derivation and
-  must not be used to fit or ratify the coefficient.
+It does not imply that a general correlator contributes in those dimensional
+fractions. At `N_c=3`, a color matrix proportional to the identity has zero
+adjoint contribution, while `diag(1,-1,0)` has zero singlet contribution.
+Representation dimension alone therefore cannot supply the channel-weight map.
+
+## Common CMT Scaling
+
+On the cited declared two-link model, take a common nonzero factor
+
+```text
+C(U)=u_0^2 C(V),
+S(U)=u_0^2 S(V),
+T(U)=u_0^2 T(V).
+```
+
+The factor cancels from equation (1):
+
+```text
+T(U)/(C(U)+kappa_EW S(U))
+  = T(V)/(C(V)+kappa_EW S(V)).
+```
+
+This cancellation cannot select `kappa_EW`.
+
+## OZI-Scaling Boundary
+
+For fixed `kappa_EW`, or for a family uniformly bounded as
+`kappa_EW=O(1)` while `N_c` grows,
+
+```text
+kappa_EW S/C = kappa_EW/(N_c^2-1) = O(1/N_c^2).
+```
+
+The qualifier is load-bearing. A family such as `kappa_EW=N_c^2` gives a
+ratio tending to one and is not OZI-suppressed. OZI scaling therefore supplies
+only a bounded asymptotic class; it does not derive `kappa_EW=0`.
+
+## Open Repair Targets
+
+Two premise-discharge targets remain separate:
+
+1. derive the count-to-contribution weighting from the physical
+   current/correlator; and
+2. derive the physical `kappa_EW` readout coefficient.
+
+This note makes no no-go claim about either target and prunes no candidate
+route.
+
+## Citation Contract
+
+Citation is audit-gated. This note may be cited only for equation (1), its pole,
+the common-scaling cancellation, the uniformly bounded OZI class, and the two
+computed exhibits under the named supplied premises.
+
+Forbidden uses:
+
+- citing `C/T=F_adj` as a Fierz-derived correlator weight;
+- citing `kappa_EW=0` or `K_EW=9/8` as unconditionally derived;
+- citing the OZI statement without the fixed/uniformly-bounded qualifier;
+- using empirical agreement after choosing `kappa_EW=0` to fit or ratify the
+  coefficient; or
+- citing this note as a no-go against future selector derivations.
 
 Safe downstream wording:
 
-> The EW normalization lane is bounded by a named matching coefficient
-> `kappa_EW`: `K_EW(kappa_EW) = 1 / (8/9 + kappa_EW/9)`. The familiar
-> `9/8` alpha-level correction is the connected-trace specialization
-> `kappa_EW = 0`, not an unconditional retained theorem.
+> On the declared channel-weight surface, the EW normalization is
+> `K_EW(kappa_EW)=1/(8/9+kappa_EW/9)` away from `kappa_EW=-8`.
+> The familiar `9/8` factor is the supplied connected-trace specialization,
+> not an unconditional retained theorem.
 
 Unsafe downstream wording:
 
@@ -210,12 +168,14 @@ Unsafe downstream wording:
 PYTHONPATH=scripts python3 scripts/frontier_ew_current_matching_rule_no_go.py
 ```
 
-The runner verifies the exact rational arithmetic, the CMT invariance of the
-free coefficient, the OZI boundedness class, the two-completion independence
-witness, and the direct downstream wording guardrails.
+The runner checks the rational family, excluded pole, common-scaling
+cancellation, fixed/uniformly-bounded OZI condition, count-to-contribution
+counterexamples, exhibits, dependency links, and downstream wording guards.
 
-## Audit-Lane Status
+## Repair Provenance
 
-This review-loop pass does not apply an audit verdict. The note should seed
-as `claim_type=no_go` and remain `unaudited` until a fresh independent audit
-ratifies or rejects the proposal.
+- **2026-07-08:** narrowed the former no-go framing to the algebraic
+  `kappa_EW` family.
+- **2026-07-09:** exposed `CHANNEL-WEIGHT` as a supplied premise, excluded the
+  pole, restricted the asymptotic, and removed the untested no-go route
+  inventory. Independent audit owns the verdict and effective status.

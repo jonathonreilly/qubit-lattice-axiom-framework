@@ -4,10 +4,13 @@
 # aliased path. Warning-level (category front_door_axiom_pointer). One
 # repo-relative path per line; # comments and blanks ignored.
 #
-# Extend this list as narrative surfaces are brought current (e.g. after the
-# four-axiom narrative scrub waves land, add the publication package README
-# and other governance surfaces).
+# Approved primitive declarations are included because their premise wording
+# must track the current minimal-axiom baseline even though they remain
+# separate non-axiom registry nodes.
 
 README.md
 docs/START_HERE.md
 docs/publication/ci3_z3/README.md
+docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md

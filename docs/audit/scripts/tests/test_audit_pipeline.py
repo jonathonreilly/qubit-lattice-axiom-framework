@@ -1892,6 +1892,28 @@ class CodexAuditRunnerReauditCandidatesTest(unittest.TestCase):
         self.assertEqual([r["claim_id"] for r in dep_only], ["medium_dep"])
 
 
+class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
+    def test_select_named_targets_preserves_requested_order(self):
+        m = _import_codex_audit_runner()
+        queue = [
+            {"claim_id": "first", "score": 100},
+            {"claim_id": "second", "score": 10},
+        ]
+
+        selected = m.select_named_targets(queue, ["second", "first"])
+
+        self.assertEqual([row["claim_id"] for row in selected], ["second", "first"])
+
+    def test_select_named_targets_rejects_missing_and_duplicate_ids(self):
+        m = _import_codex_audit_runner()
+        queue = [{"claim_id": "first"}]
+
+        with self.assertRaisesRegex(ValueError, "absent from the selected queue"):
+            m.select_named_targets(queue, ["missing"])
+        with self.assertRaisesRegex(ValueError, "duplicate --claim-id"):
+            m.select_named_targets(queue, ["first", "first"])
+
+
 class RelabelUnverifiedCodexAuditsTest(unittest.TestCase):
     def test_relabels_below_floor_row_and_matching_cross_confirmation(self):
         m = _import("relabel_unverified_codex_audits")

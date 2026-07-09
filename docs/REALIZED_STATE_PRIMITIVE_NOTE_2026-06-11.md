@@ -46,7 +46,7 @@ realized state is registered data, not derivation output.
 
 ## Why It Is A Primitive
 
-The framework baseline, Lattice + Quantum + Record, does not select which
+The framework baseline, Lattice + Qubit + Admissibility + Record, does not select which
 law-admissible state is realized. Any state-dependent quantity from that
 structural core is undetermined until one realized state is supplied.
 
@@ -58,7 +58,8 @@ structural content is otherwise clean.
 ## What This Does Not Do
 
 - It does not add or amend an axiom. The minimal framework baseline remains
-  the three named axioms in `docs/MINIMAL_AXIOMS_2026-06-05.md`.
+  the four named axioms in `docs/MINIMAL_AXIOMS_2026-06-29.md`: Lattice,
+  Qubit, Admissibility, and Record.
 - It does not supply a state, state-selection rule, averaging over
   alternatives, measure, weighting, probability rule, typicality claim,
   genericity claim, preferred state, default state, boundary condition,

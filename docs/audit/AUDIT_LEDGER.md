@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 895 |
+| **retained_bounded** | 896 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1939 |
+| unaudited | 1938 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1280 |
+| `audited_clean` | 1281 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2284 |
+| `unaudited` | 2283 |
 
 | claim_type | count |
 |---|---:|
@@ -242,6 +242,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broad_gravity_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2921,6 +2922,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The bounded damage ladder does not crown p = 1 as the most robust action power on this family: p = 1 is cleanest on exponent drift when it survives, while p = 2 survives more signed damage cases.  _(class `C`)_
 - **chain closes:** True — The included runner and helper source instantiate the lattice, damaged offset masks, propagator, field, Born diagnostic, gravity sign, F~M fits, and summary counts rather than printing constants. The audited conclusion is limited to the bounded replay result and does not require a universal graph theorem.
 - **rationale:** The runner output directly supports the note's negative robustness summary: p=0.5 and p=1.0 are TOWARD on 3/6 damaged cases, while p=2.0 is TOWARD on 5/6, and p=1.0 has the smallest mean |F~M-p| among finite surviving fits. The primary and helper source show an actual bounded numerical replay from the stated lattice/action setup, with no hard-coded expected summary values or external comparator calibration. The cited authorities are retained_bounded and are used only to bound the family and neighboring action-power context, so the narrowed claim closes as a bounded theorem.
+- **auditor confidence:** high
+
+### `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the accepted Z^3 spatial substrate and standard Pontryagin-duality/Haar-measure facts, the dual group is T^3 with Haar probability measure d^3k/(2 pi)^3 on [-pi, pi]^3; the resulting (2 pi)^3 Brillouin-zone normalization is substrate-internal for this 3D bounded scope, with the continuum Fourier convention used only as a non-load-bearing comparison.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-20260709`  (codex-current; independence=cross_family)
+- **load-bearing step:** The dual group T^3 of Z^3 has fundamental domain [-pi, pi]^3, Lebesgue volume (2 pi)^3, and normalized Haar probability density d^3k/(2 pi)^3, so the BZ Plancherel denominator is fixed by the Z^3 substrate plus Pontryagin/Haar normalization rather than imported from continuum 3D Fourier measure.  _(class `A`)_
+- **chain closes:** True — Within the audited scope, the accepted Z^3 substrate plus standard Pontryagin/Haar mathematics determine T^3 and its normalized Haar measure. The continuum d^3k/(2 pi)^3 convention is named only after the substrate-internal denominator has been derived, so it is not a hidden input.
+- **rationale:** The source's load-bearing result is the standard algebraic/harmonic-analysis chain Z^3 -> T^3, vol([-pi,pi]^3)=(2 pi)^3, and Haar probability density d^3k/(2 pi)^3. The current minimal-axiom authority supplies the Z^3 spatial substrate, and the remaining inputs are textbook Pontryagin-duality and Haar-normalization facts. The runner completed with TOTAL PASS=55 FAIL=0, checking the source boundary, character-sum factorization, exact volume identities, Haar normalization, translation invariance of the constant density, and exclusion of 4D/Wick/hierarchy extensions. The clean verdict is only for the bounded 3D BZ normalization and does not close alpha_bare, 4D loop measures, Wick rotation, hierarchy primitives, or continuum-measure derivation from first principles.
 - **auditor confidence:** high
 
 ### `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`

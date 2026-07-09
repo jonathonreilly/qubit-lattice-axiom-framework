@@ -35,7 +35,8 @@ class structure cited from #5076-#5081); nothing is derived here.
 Declared conventions (flags): fall bias p_R - p_L = clip(beta
 (N_L - N_R)/2); blocked hops wait; formation displaces (not destroys)
 parcels to the nearest open site, with a last-open refuge only at total
-saturation.
+saturation; the deposition coupling is a rate, converted to a per-step
+probability by the Poisson form 1 - exp(-kappa n (A/A0) dt).
 
 ## Boundaries
 
@@ -46,3 +47,11 @@ saturation.
 
 - **2026-07-08.** Initial engine (worker: gpt-5.6-sol/max, first-draft
   pass), supervisor-reviewed and supervisor-executed.
+- **2026-07-09 (supervisor).** Deposition changed from the bare product
+  kappa n (A/A0) dt (a rate used directly as a Bernoulli probability,
+  which exceeds one on bunched initial states -- both block02 runners
+  failed closed on exactly this) to its Poisson conversion
+  1 - exp(-rate dt). Identical in the small-rate regime the engine was
+  validated in; well-defined at any occupancy. All six validation
+  checks re-pass; determinism digests changed with the draw law
+  (cache refreshed).

@@ -244,20 +244,21 @@ def hop_parcels(
 
 
 def deposition_probabilities(state: EngineState, kappa: float, dt: float = DT) -> np.ndarray:
-    """Return the specified per-open-site Bernoulli probabilities."""
+    """Return per-open-site formation probabilities.
 
-    probabilities = (
+    kappa * n_x * (A(r_x)/A0) is a rate; the per-step probability is its
+    Poisson conversion 1 - exp(-rate * dt). This equals the bare product
+    in the small-rate regime and stays in [0, 1] at any site occupancy
+    (the bare product exceeds one for bunched initial states).
+    """
+
+    rates = (
         kappa * state.parcels.astype(np.float64) * availability_field(state.records) / A0 * dt
     )
-    probabilities[state.records | (state.parcels == 0)] = 0.0
-    if np.any(probabilities < 0.0):
-        raise AssertionError("negative deposition probability")
-    maximum = float(probabilities.max(initial=0.0))
-    if maximum > 1.0:
-        raise RuntimeError(
-            f"specified discrete-time deposition probability exceeds one: {maximum:.6g}"
-        )
-    return probabilities
+    rates[state.records | (state.parcels == 0)] = 0.0
+    if np.any(rates < 0.0):
+        raise AssertionError("negative deposition rate")
+    return -np.expm1(-rates)
 
 
 def closest_open_destinations(source: int, open_mask: np.ndarray) -> np.ndarray:
@@ -629,6 +630,7 @@ def status_flags_and_spec() -> str:
         "flags(sign=pR-pL=clip(beta*(N_L-N_R)/2,[-0.45,0.45]);slower-target-favored,"
         "blocked-hop=wait,displacement=nearest-post-open/tie-seeded-binomial/terminal-refuge); "
         "SPEC-NOTE: fall-bias, parcel model, and kappa are supplied comparator couplings; "
+        "deposition uses the Poisson rate-to-probability conversion 1-exp(-kappa*n*(A/A0)*dt); "
         "formation displacement conserves but relocates energy (the last-open refuge is forced "
         "by that rule); parcels are indistinguishable multi-occupancy energy counts, not records; "
         "engine validation only, no audit status."

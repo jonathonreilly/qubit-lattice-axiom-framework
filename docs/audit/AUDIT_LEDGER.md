@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 910 |
+| **retained_bounded** | 911 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1910 |
+| unaudited | 1909 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1300 |
+| `audited_clean` | 1301 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2255 |
+| `unaudited` | 2254 |
 
 | claim_type | count |
 |---|---:|
@@ -1095,6 +1095,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `record_occurrence_thinned_iid_frequency_bridge_2026-07-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_kernel_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -15525,6 +15526,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner classifies dynamics claims into four premise levels separating post-record information, production kernels, Markov semigroups, and physical-rate models.  _(class `E`)_
 - **chain closes:** False — The finite matrix checks close exactly, but the classifier gates themselves are stipulated as a premise map. No cited authority or first-principles axiom derivation is provided showing that this taxonomy follows rather than being defined.
 - **rationale:** Issue: the load-bearing classifier levels and gates are introduced by definition, not derived from retained inputs or first-principles framework dynamics. Why this blocks: the note can support a reusable taxonomy and exact finite examples, but not a retained derivation of a dynamics law, kernel, bridge, clock, or rate normalization. Repair target: supply a theorem deriving the gate structure from accepted axioms or split the finite algebraic checks from the stipulated classifier surface. Claim boundary until fixed: cite only the premise discipline and the checked two-state examples.
+- **auditor confidence:** high
+
+### `record_occurrence_thinned_iid_frequency_bridge_2026-07-01`
+
+- **Note:** [`RECORD_OCCURRENCE_THINNED_IID_FREQUENCY_BRIDGE_2026-07-01.md`](../../docs/RECORD_OCCURRENCE_THINNED_IID_FREQUENCY_BRIDGE_2026-07-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For finite A, supplied activation a, supplied conditional law p, and supplied IID repetitions of K(bot)=1-a and K(v)=a p(v), the attempt counts are multinomial/binomial and recorded-only frequencies recover p after conditioning on M=m>0; no derivation of a, p, IID reset/preparation, record occurrence, clock/rate, objectivity, or empirical measurement semantics is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-descartes`  (codex-current; independence=fresh_context)
+- **load-bearing step:** Conditional on M=m>0, the recorded values are multinomial with probabilities p(v), giving the displayed E[G_v | M=m] and variance formulas.  _(class `A`)_
+- **chain closes:** True — The chain closes for the bounded theorem because the supplied product measure on ({bot} union A)^N directly implies the multinomial count law, the binomial law for M, and the conditional multinomial law on recorded symbols. No external comparator, hidden physical carrier, or empirical readout bridge is used.
+- **rationale:** Clean within the supplied-kernel/IID probability scope. The runner completed with TOTAL: PASS=65 FAIL=0 and checks an exact finite witness plus source-boundary markers; the generic conditional-multinomial step follows directly from elementary finite product-measure algebra rather than a fitted comparator. Residual risk is downstream misuse only: this does not derive the activation law, conditional law, IID preparation/reset, occurrence semantics, clock/rate, objectivity, or measurement bridge.
 - **auditor confidence:** high
 
 ### `record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15`

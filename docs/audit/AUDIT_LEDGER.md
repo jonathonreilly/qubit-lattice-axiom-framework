@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 911 |
+| **retained_bounded** | 912 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1909 |
+| unaudited | 1908 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1301 |
+| `audited_clean` | 1302 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2254 |
+| `unaudited` | 2253 |
 
 | claim_type | count |
 |---|---:|
@@ -1099,6 +1099,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_kernel_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `record_tick_signature_neutral_2026-06-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -15578,6 +15579,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The same finite post-record alphabet and append/count grammar admit multiple distinct normalized producers with different likelihoods and expectations, so the append/count layer underdetermines the production kernel.  _(class `A`)_
 - **chain closes:** True — The restricted packet gives an explicit finite counterexample: fair IID, biased IID, reverse-biased IID, Markov persistence, and scripted kernels all feed the same realized append/count update while disagreeing on likelihoods and expected next counts. This closes the scoped underdetermination claim without importing any producer-selection rule.
 - **rationale:** The runner source performs finite rational checks rather than merely printing constants, and the independent algebraic check is straightforward: append takes a supplied atom and count increments by the corresponding basis vector, while many normalized kernels can assign probabilities to the same prefixes. The cited semigroup boundary is retained and supports the separation between post-record append/count dynamics and supplied ensemble or generator dynamics. The no-go is scoped to the exact post-record grammar not selecting a producer; it does not claim that no producer can be supplied or derived elsewhere.
+- **auditor confidence:** high
+
+### `record_tick_signature_neutral_2026-06-23`
+
+- **Note:** [`RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23.md`](../../docs/RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded negative theorem that the checked finite record-tick channels do not derive Lorentzian eps = e_4^2 = -1; the Lorentzian sign remains a separate Wick/sign admission, and no global no-go against all possible Lorentzian-sign derivations is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-mill`  (codex-current; independence=fresh_context)
+- **load-bearing step:** eps = e_4^2 = -1 remains a separate binary input, not supplied by the checked record-tick channels.  _(class `A`)_
+- **chain closes:** True — The chain closes for the stated finite channels: the retained no-go dependency supplies the relevant single-clock KMS/APBC-axis boundary, and the runner checks the finite algebraic counterchannels without deriving a Lorentzian sign. The result is bounded and does not claim a universal impossibility theorem for every future Lorentzian-sign route.
+- **rationale:** Clean within the bounded negative scope. The runner completed with TOTAL: PASS=10 FAIL=0 and checks finite algebraic counterchannels: no on-site e_4 in M_2(C), Euclidean contraction/arrow with eps=+1, Wick i needed for the unitary branch, and Pauli-span sign ambiguity between so(3,1) and so(4). No fitted comparator or hidden external value is used, and the source excludes a broader global no-go.
 - **auditor confidence:** high
 
 ### `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`

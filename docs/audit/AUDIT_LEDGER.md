@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 921 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1876 |
+| unaudited | 1875 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -42,7 +42,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
 | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | 1 |
 | `decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | 1 |
-| `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 2 |
+| `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 3 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
 | `decoration_under_lattice_nn_deterministic_rescale_note` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
@@ -63,11 +63,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 18 |
 | `audited_clean` | 1318 |
 | `audited_conditional` | 56 |
-| `audited_decoration` | 48 |
+| `audited_decoration` | 49 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2221 |
+| `unaudited` | 2220 |
 
 | claim_type | count |
 |---|---:|
@@ -1546,6 +1546,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
 | `koide_mru_demotion_note_2026-04-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `koide_kappa_spectrum_operator_bridge_theorem_2026-04-19` |
+| `koide_q_delta_linking_relation_theorem_note_2026-04-20` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.6 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
@@ -11030,6 +11031,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The runner source performs symbolic algebra for the cyclic power equivalence, coordinate substitution, Brannen-envelope Koide ratio, and simple representation face constants; it does not merely print pass text. The source note repeatedly limits the conclusion to arithmetic/representation-theoretic collapse and explicitly excludes the physical/source-law bridge, so that open bridge is not part of the ratified scoped claim. Within that bounded scope, the conclusion follows as class A algebra over the packet's stated inputs.
 - **rationale:** The runner source performs symbolic algebra for the cyclic power equivalence, coordinate substitution, Brannen-envelope Koide ratio, and simple representation face constants; it does not merely print pass text. The source note repeatedly limits the conclusion to arithmetic/representation-theoretic collapse and explicitly excludes the physical/source-law bridge, so that open bridge is not part of the ratified scoped claim. Within that bounded scope, the conclusion follows as class A algebra over the packet's stated inputs.
 - **auditor confidence:** judicial
+
+### `koide_q_delta_linking_relation_theorem_note_2026-04-20`
+
+- **Note:** [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](../../docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic evaluation of the spectral ratio functional as Q_3 = 2/3 on the retained circulant-character parent’s a_0² = 2|z|² locus, together with the formal companion identity Delta_3 = Q_3/3 = 2/9; no locus selection or physical identification was audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-koide_q_delta_linking_re-029`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On the parent’s locus a_0² = 2|z|², equivalently |b|²/a² = 1/2, substituting into R = 1/3 + (2/3)(|b|²/a²) gives R = 2/3 = Q_3, with Delta_3 = Q_3/3 = 2/9.  _(class `A`)_
+- **chain closes:** True — The retained parent supplies T1–T3, and standard root-of-unity algebra yields C1–C3 without additional premises. The conclusion is explicitly limited to evaluating the ratio on the parent’s stipulated equational locus.
+- **rationale:** The sole upstream parent is retained, and all scientific load-bearing steps are algebraic consequences of its T1–T3 identities plus standard mathematics. The runner genuinely computes the exact rational and spectral identities; 73 passes test class-A mathematics, while the remaining 86 passes are source-boundary and citation-hygiene checks rather than scientific derivations. There are no external-comparator checks, selection claims, or physical charged-lepton identifications.
+- **decoration parent:** `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`
+- **auditor confidence:** high
 
 ### `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24`
 

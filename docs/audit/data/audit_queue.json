@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 404,
+    "critical": 403,
     "high": 272,
     "leaf": 754,
     "medium": 522
@@ -791,30 +791,6 @@
       "ready": true,
       "runner_path": "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py",
       "transitive_descendants": 386
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_q_delta_linking_relation_theorem_note_2026-04-20",
-      "claim_scope": null,
-      "claim_type": "decoration",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.349,
-      "note_path": "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_q_delta_formal_ratio_repair.py",
-      "transitive_descendants": 325
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -21070,6 +21046,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
+        "koide_aps_block_by_block_forcing_note_2026-04-21",
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+        "koide_q_delta_linking_relation_theorem_note_2026-04-20"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.822,
+      "note_path": "docs/KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_phase_aps_eta_parity_route_discriminator.py",
+      "transitive_descendants": 4
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -33629,33 +33632,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/koide_circulant_value_derivation_2026_06_05.py",
-      "transitive_descendants": 4
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
-        "koide_aps_block_by_block_forcing_note_2026-04-21",
-        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
-        "koide_q_delta_linking_relation_theorem_note_2026-04-20"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.822,
-      "note_path": "docs/KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_koide_phase_aps_eta_parity_route_discriminator.py",
       "transitive_descendants": 4
     },
     {
@@ -58288,5 +58264,5 @@
     }
   ],
   "ready_count": 226,
-  "total_pending": 1952
+  "total_pending": 1951
 }

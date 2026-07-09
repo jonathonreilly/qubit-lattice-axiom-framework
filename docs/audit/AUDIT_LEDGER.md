@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 923 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1882 |
+| unaudited | 1881 |
 | audit_in_progress | 2 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 54 |
+| ~~audited_conditional~~ | 55 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1318 |
-| `audited_conditional` | 54 |
+| `audited_conditional` | 55 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2227 |
+| `unaudited` | 2226 |
 
 | claim_type | count |
 |---|---:|
@@ -1469,6 +1469,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `acphilambda_k_even_registration_correction_registered_pattern_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -2497,6 +2498,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Near k=0, E_k ~ |k|^2, so I_d(L) has the continuum scaling proxy integral_{1/L}^1 r^{d-3} dr, giving linear/log divergences for d=1,2 and finite behavior for d>=3.  _(class `A`)_
 - **chain closes:** True — The small-k expansion 2(1-cos k_mu) ~ k_mu^2 and the radial integral test give the stated threshold. The finite table entries are actually computed by the runner and independently match the displayed values; no Ward normalization, no-SSB theorem, D9 kernel authority, or substrate-minimality conclusion is imported.
 - **rationale:** The narrowed claim is a mathematical IR-sum scaling statement from the displayed lattice dispersion and standard integral comparison, not an external Coleman-Mermin-Wagner theorem. The runner source enumerates the lattice sums rather than printing constants, and its E0-E3 checks all pass. The formula inventory check finds the displayed small-k scaling, radial exponent, divergence classes, and quantitative table entries consistent with the note's definitions. The explicit non-claims prevent the earlier Ward/SSB/D9/substrate-minimality gaps from being load-bearing here.
+- **auditor confidence:** high
+
+### `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The thermodynamic-limit FSB-K asymptotic under formal hypothesis (Z), including strict positivity of g_eff, together with the certificate-grade FSB-X scaling claims.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-axiom_first_fermionic_st-014`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Replacing each conical branch by its tangent dispersion costs O(T^5), after which the change of variables u=V_jb q gives |det V_jb|^-1(7/8)(pi^2/30)T^4 per branch.  _(class `A`)_
+- **chain closes:** False — The cone-integral proof closes for nonempty finite conical zero sets, but formal hypothesis (Z) permits an empty zero set, so a fully gapped kernel satisfies (Z) vacuously while giving g_eff=0, contradicting g_eff in (0,infinity). FSB-X also needs global control of all other zeros before a single regular surface piece or quadratic point determines the global asymptotic.
+- **rationale:** The central cone-window analysis and retained 7/8 normalization support the stated T^4 formula, and the cited dependencies are retained-grade or accepted premises. However, the formal theorem omits the nonempty-zero-set condition needed for strict positivity. The runner establishes the falsification rates only for its explicit witnesses and does not close FSB-X's broader sufficient-condition wording when additional zero components are present.
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06`

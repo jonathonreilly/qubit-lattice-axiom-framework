@@ -36,18 +36,41 @@ success_bar: >
   does not pin the bar (which sharpens the no-go), filed with N1-N8.
   No new axiom content; no primitive registration (owner standing
   instruction).
-current_block: block01+block02 workers launching in parallel (pinned
-  shared conventions: pointer = site occupation/charge basis; fragments
-  = contiguous disjoint site blocks; Holevo content per the 2026-06-05
-  record-formation note)
-current_branch: physics-loop/registration-bar-block01-20260709
-  (base = record-deposition-rate-block03, which carries the kappa
-  runner and its lineage)
+current_block: CLOSED (block03 derivation synthesis shipped with the
+  close, PR #5091)
+current_branch: physics-loop/registration-bar-block03-20260709
 worktree: /Users/jonBridger/tp-matter-mass-wep
 imports: the QD record reading + pointer-non-demolition (standing
   bounded conventions of the dynamics-form chain — cited, not
   re-derived); gauged comparator + activity conventions by citation.
 discipline: physics-loop standard; vocab_lint before commits; stop and
   write up on any axiom trigger.
-next_exact_action: review both worker drafts line-by-line
+block01_result: >
+  PR #5089. BAR-NOT-PINNED (physics outcome, exit 1): the criterion
+  SHAPE is forced (redundancy onset; R>=2 from permanence; small delta
+  from exactly-one); occupation pointer demolished (v1, confirms the
+  2026-06-05 necessity theorem in situ); lawful pointer = cell charge
+  with Gauss-law link registers (constraint structure = copying
+  mechanism); single-register certification I/H=0.88; R>=2
+  geometrically impossible in d=1 (two-boundary Markov blanket +
+  zero-mode noise; xi_reg<=1 across g 0.05-1.0, m 0.3/3.0 probes).
+block02_result: >
+  PR #5090. BOUND-PARTIAL (honest): necessity direction exhibited with
+  exact controls (stationary floor 1e-15; Fannes-Audenaert envelope
+  zero violations; excess grows from exactly zero) — no activity, no
+  opportunity. Findings kept: pointer flow rides coherence (no linear
+  activity gate exists; measured counterexample); d=1 Markov blanket
+  saturates attribution (r=0.63).
+block03_result: >
+  PR #5091. Derivation synthesis (owner surface):
+  docs/REGISTRATION_BAR_DERIVATION_SYNTHESIS_2026-07-09.md — the bar's
+  shape is forced by the Record axiom's clauses through the one shared
+  record-reading convention; necessity exhibited; rate normalization =
+  measured kappa; bar LOCATION deferred to d>=2 (named successor:
+  minimal d=2 comparator). Lattice/Record consistency exhibit: the
+  permanence clause demands the branching geometry the Z^3 axiom
+  supplies; d=1 worlds cannot host permanence-grade records.
+next_exact_action: none — campaign closed. Named successor (not
+  commissioned): minimal d=2 registration comparator (redundancy onset,
+  delta-insensitivity, bar location vs the sparse window).
 stop_condition_hit: none

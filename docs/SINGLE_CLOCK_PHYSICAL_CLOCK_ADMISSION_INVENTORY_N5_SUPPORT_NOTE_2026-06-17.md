@@ -188,3 +188,13 @@ B_AXIS_DERIVED=FALSE
 MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE
 AUDIT_LEDGER_WRITTEN=FALSE
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [minimal_axioms](MINIMAL_AXIOMS_2026-06-29.md)
+- [axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28](AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md)
+- [axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05](AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- [single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
+- [post_record_clock_rate_interface_2026-06-06](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md)

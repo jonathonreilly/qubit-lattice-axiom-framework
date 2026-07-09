@@ -30,9 +30,9 @@ success_bar: >
   (rank, shift symmetry, subtraction forcing) at 1e-12; window Green's
   function behavior exhibited in d = 1,2,3; comparator flux-profile leg
   measured with the screening onset reported honestly.
-current_block: block01 (Wilson engine) + block03 (source dynamics) workers
-  in parallel
-current_branch: physics-loop/wilson-identity-source-dynamics-block01-20260708
+current_block: CLOSED — block01 engine (PR #5070), block02 source-law
+  (PR #5071), block03 Wilson identity negative + close (PR #5072)
+current_branch: physics-loop/wilson-identity-source-dynamics-block03-20260708
 worktree: /Users/jonBridger/tp-matter-mass-wep
 imports: >
   I-GAUGE-W (declared): the Wilson-kernel d=1 U(1) comparator — a second
@@ -43,6 +43,13 @@ imports: >
   citation from the classification note (#5068).
 discipline: physics-loop standard (V1-V5, N1-N8, validity self-exclusion,
   runner + cache per note, vocab_lint, PR per block, nothing landed).
-next_exact_action: review worker drafts (Wilson engine; source-dynamics
-  classification runner)
+next_exact_action: none — campaign closed; see HANDOFF.md
 stop_condition_hit: none
+# block03 review 2026-07-08: run 1 (ported grid) — zone fix confirmed
+# (origins (0,0) volume-stable), Wilson O(a) speed artifact measured
+# (c^2 ~ 1+m free-level), two supervisor spec bugs fixed (cache print
+# tolerance; O(a^2) artifact gate on O(a) kernel), clean window found at
+# strong coupling. Run 2 (final, pre-committed): 4/8 points fully valid
+# at N=8 (ratio_I 1.04-1.25) but the N=10 volume spot REFUTED convergence
+# (1.042 -> 2.211, tol 0.10). Consolidated ED-instrument-class negative
+# filed; tensor-network escape named as THE route.

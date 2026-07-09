@@ -46,13 +46,17 @@ convention instead of an independent premise.
 
 ## Named successor (not commissioned)
 
-Minimal d=2 registration comparator: smallest branching geometry;
-predicts redundancy onset occurs, the effective threshold is
-tolerance-insensitive, and its location can be checked against the
-deposition-sparse window. Each prediction falsifiable. Note the d=1
-negative also calibrates every d=1 record comparator in the repo:
-their records are supplied primitives, not formed registers, exactly
-as their notes declare.
+d=3 registration comparator — the framework's own Z^3 is the target
+(owner reminder 2026-07-09): the bar location can be
+dimension-dependent, so a d=2 measurement would import a fresh gap
+rather than close one. d=2 is admissible only as a declared stepping
+stone for method development, never as the bar's source. Predictions
+at d=3: redundancy onset occurs; the effective threshold is
+tolerance-insensitive; its location can be checked against the
+deposition-sparse window. Each falsifiable. Note the d=1 negative also
+calibrates every d=1 record comparator in the repo: their records are
+supplied primitives, not formed registers, exactly as their notes
+declare.
 
 ## Deliberately not done
 

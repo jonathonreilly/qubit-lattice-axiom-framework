@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 909 |
+| **retained_bounded** | 910 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1912 |
+| unaudited | 1911 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1298 |
+| `audited_clean` | 1299 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2257 |
+| `unaudited` | 2256 |
 
 | claim_type | count |
 |---|---:|
@@ -348,6 +348,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d3_staggered_two_band_orbital_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | C | - |
 | `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4541,6 +4542,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** After projecting the step-1 retained operator to the even-d² {2,4} stencil, that stencil has zero kept-to-decimated block by parity, so the Schur correction vanishes on later truncated steps and the landed couplings recur unchanged.  _(class `C`)_
 - **chain closes:** True — The supplied runner constructs the finite cubic Laplacian, performs the checkerboard Schur step, projects to the d²=0,2,4 stencil, and verifies zero truncated H_kd and recurrence. Independently, H_dd=6I at step 1 gives correction coefficients 1, 1/3, and 1/6 on shells d²=0,2,4, yielding diag=5, c2=-1/3, c4=-1/6; those displacements preserve checkerboard parity, so later H_kd=0 exactly.
 - **rationale:** The load-bearing closure is not just a printed PASS line: the runner computes the Schur complement from the finite lattice operator rather than importing another note, and the parity argument independently forces the later Schur updates to vanish after truncation. The hard-coded expected constants are used as gates, but the same constants follow by direct shell counting from the initial Laplacian: per kept row the step-1 correction has squared RMS 1 + 12/9 + 6/36 = 5/2, giving the reported 1.58113883008419 budget, with zero later correction. No cited authority or open bridge is needed within the stated finite-L bounded scope.
+- **auditor confidence:** high
+
+### `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`D3_TRUNCATION_COMMENSURATION_CRITERION_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/D3_TRUNCATION_COMMENSURATION_CRITERION_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite bounded iff criterion on the synthetic d=3 step-2 chart family with K-periods (L/2, L, L/2) over L={8,10,12,14,16,18}: even-d2 truncation protects the next checkerboard exactly for the all-even period cases, equivalently L = 0 mod 4 on this grid.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-dirac`  (codex-current; independence=fresh_context)
+- **load-bearing step:** The full step-2 Schur machinery verifies that the structural parity correspondence is equivalent, on the grid, to H_kd_after < 1e-14 after even-d2 truncation.  _(class `C`)_
+- **chain closes:** True — The chain closes for the finite bounded grid: the retained-bounded step-1 parity/closed-form anchor and retained-bounded step-2 machinery are direct dependencies, and the primary runner constructs the finite Hamiltonian/Schur machinery and exhaustively checks the parity criterion on exactly the claimed L values. The protected cases L=8,12,16 have H_kd_after=0, while the unprotected L=10,14,18 branch remains nonzero.
+- **rationale:** Clean within the stated finite bounded scope. The runner completed with TOTAL: PASS=18 FAIL=0 and computes the step-1 dense Schur anchor, step-2 Schur complement, exhaustive K-chart parity correspondence, and L=16/L=18 branch checks rather than importing a fitted physical comparator. The claim does not extrapolate beyond the listed synthetic chart family or assert a broader physical truncation theorem.
 - **auditor confidence:** high
 
 ### `d3_upper_bound_import_scope_gate_note_2026-06-06`

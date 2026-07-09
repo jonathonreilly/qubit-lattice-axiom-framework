@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 200 |
-| **retained_bounded** | 904 |
+| **retained_bounded** | 905 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1923 |
+| unaudited | 1922 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1291 |
+| `audited_clean` | 1292 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2268 |
+| `unaudited` | 2267 |
 
 | claim_type | count |
 |---|---:|
@@ -559,6 +559,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_h025_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_h025_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_h025_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `gate_b_no_restore_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_no_restore_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_connectivity_v1_distance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -7521,6 +7522,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The chain closes only for the finite compact single-seed h=0.25 replay: the one-hop dependencies are retained_bounded, the runner computes the observables before checking expected values, the cached output is SHA-pinned and complete, and the source note explicitly rejects a full same-family closure proof.
 - **rationale:** Clean only under the narrowed finite compact single-seed scope. The runner/cache pins H=0.25, PW=6, L=3, NL=13, SEEDS=[0], exact-grid and grown drift=0.2/restore=0.7 rows, with exit_code=0 after a 93s cached run. Independent parameter and range checks found no formula blocker: the grid/node/slit counts are internally consistent; the hard-coded replay values are post-compute assertions; the Born residual is e-15-scale as expected for linear inclusion-exclusion cancellation; d_TV is normalized total variation, MI is equal-prior binary Jensen-Shannon information, and the decoherence factor uses exp(-LAM^2*sn) with sn >= 0. Cross-row deltas support only qualitative same-regime language, not quantitative closeness beyond the two rounded rows, h=0.25 family survival, canonical-width closure, or multi-seed transfer.
 - **auditor confidence:** medium_high
+
+### `gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18`
+
+- **Note:** [`GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](../../docs/GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-runner theorem that `GB-S3a` closes as a finite-range local forward stencil on the supplied finite Z^3 Gate B slab, exactly matching `gate_b_connectivity_tolerance._build_fixed_connectivity`, with one-layer advancement, transverse offsets in {-1,0,1}^2, interior translation covariance, and boundary clipping only; no physical growth dynamics, KNN/generated graph selection, scalar normalization, propagation/readout semantics, TOWARD/F~M physical readout, Gate B dynamics closure, or physical gravity theorem is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-2026-07-09-gate-b-local-stencil`  (codex-current; independence=cross_family)
+- **load-bearing step:** The fixed Gate B forward adjacency is exactly the finite stencil S={(1,dy,dz): dy,dz in {-1,0,1}} clipped to the finite Z^3 slab, and it matches the helper runner adjacency.  _(class `A`)_
+- **chain closes:** True — The primary verifier independently reconstructs the theorem adjacency and compares it exactly to the declared helper runner's fixed connectivity. The runner's historical axiom-wording check is not load-bearing for the finite adjacency equality; current scope is the explicit finite Z^3 stencil algebra.
+- **rationale:** The primary runner returns TOTAL PASS=13 FAIL=0 and verifies exact equality between the theorem stencil and helper adjacency, finite graph-distance range, one-layer forward foliation, bounded out-degree, translation-covariant interior offsets, and boundary clipping. The helper source required by the note is present and inspectable, and the source/parent boundary checks preserve the `GB-S3a`/`GB-S3b` split. The result is a clean finite adjacency theorem only; physical selection or dynamical generation of the stencil remains open.
+- **auditor confidence:** high
 
 ### `gate_b_no_restore_farfield_note`
 

@@ -3,7 +3,7 @@
     "critical": 407,
     "high": 272,
     "leaf": 777,
-    "medium": 524
+    "medium": 523
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -21402,30 +21402,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/gate_b_connectivity_tolerance.py"
-      ],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gate_b_local_stencil_connectivity_bridge_2026_06_18.py",
       "transitive_descendants": 2
     },
     {
@@ -58955,6 +58931,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 252,
-  "total_pending": 1980
+  "ready_count": 251,
+  "total_pending": 1979
 }

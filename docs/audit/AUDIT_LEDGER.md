@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 199 |
-| **retained_bounded** | 899 |
+| **retained_bounded** | 900 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1930 |
+| unaudited | 1929 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1285 |
+| `audited_clean` | 1286 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2275 |
+| `unaudited` | 2274 |
 
 | claim_type | count |
 |---|---:|
@@ -1073,6 +1073,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rd_fixedness_is_arrow_invariant_on_the_retained_flow_family_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `reading_note_final_derivations_motion_closure_bounded_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | C | - |
 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -15117,6 +15118,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Fix(phi) = Fix(g) = {0, 1/2}, with the same projective fixed point at infinity, so fixedness-based selection is unchanged when the retained map orientation is reversed.  _(class `A`)_
 - **chain closes:** True — The cited retained-bounded authorities supply the two maps, and independent algebra verifies that they are inverses on r >= 0, have the same finite and projective fixed points, and reverse stability at r=1/2. The result closes only for the retained family and stated fixedness/side-condition reading; it does not close the physical R-D bridge or coarse-graining selector.
 - **rationale:** The load-bearing mathematics is a direct algebraic closure over the supplied retained-bounded maps, not a numerical fit, definition substitution, or external comparator. Manual checking confirms g(phi(r))=r and phi(g(r))=r on r>=0, Fix(phi)=Fix(g)={0,1/2}, the common projective fixed point at s=0, and the multiplier reversal 2 versus 1/2. The note’s firewall language keeps the clean result bounded to fixedness on the retained family and does not promote R-D, the physical arrow, or the coarse-graining prong.
+- **auditor confidence:** high
+
+### `reading_note_final_derivations_motion_closure_bounded_note_2026-07-02`
+
+- **Note:** [`READING_NOTE_FINAL_DERIVATIONS_MOTION_CLOSURE_BOUNDED_NOTE_2026-07-02.md`](../../docs/READING_NOTE_FINAL_DERIVATIONS_MOTION_CLOSURE_BOUNDED_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded theorem on the current 2026-06-29 minimal-axiom surface: answer typing, condition-as-state-predicate including record absence, motion closure of lawful domains under named translations/proper cubic rotations, and extensional condition judgment/procedure classification follow as surface-relative semantic consequences, with no axiom edit or historical reading-note authority retained.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=cross_family)
+- **load-bearing step:** All semantic derivations use only the 2026-06-29 minimal-axiom sentences, especially the law-domain sentence, state definition, record/readability clauses, distinction clauses, and motion/admissibility covariance clauses.  _(class `C`)_
+- **chain closes:** True — The derivations are explicitly tied to quoted minimal-axiom clauses, and the runner verifies the quoted sentences plus finite toy witnesses for answer typing, state predicates, motion closure, anchored counterexamples, and coextensional judgment. The procedural classification is not used as an axiom premise.
+- **rationale:** The load-bearing step closes within the accepted minimal-axiom surface: the law-domain sentence gives one answer per in-domain state, states are record configurations, records/readout clauses keep absence statewise rather than a readout value, and the lattice/Qubit distinction clauses plus covariance support the surface-relative motion-closure and extensional-judgment claims. The runner does not merely print constants; it checks the quoted axiom text and exercises finite state/motion witnesses including anchored failures and invariant exceptions. Residual risk is only the bounded semantic/interface ceiling stated in the note, not an unclosed physical bridge.
 - **auditor confidence:** high
 
 ### `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`

@@ -26,7 +26,7 @@
       "audits_with_runner_class": {
         "A": 11,
         "B": 10,
-        "C": 2,
+        "C": 3,
         "D": 1,
         "E": 1,
         "G": 1
@@ -35,7 +35,7 @@
       "criticality_counts": {
         "critical": 7,
         "high": 6,
-        "medium": 13
+        "medium": 14
       },
       "cross_confirmation_outcomes": {},
       "cross_confirmation_pairs_agreed_first_try": 0,
@@ -43,10 +43,10 @@
       "judicial_third_pass_count": 0,
       "overturned_by_third": 0,
       "ratified_by_third": 0,
-      "total_audits": 26,
+      "total_audits": 27,
       "verdict_changed_after_re_audit": 0,
       "verdict_counts": {
-        "audited_clean": 10,
+        "audited_clean": 11,
         "audited_conditional": 12,
         "audited_decoration": 1,
         "audited_failed": 1,
@@ -165,7 +165,7 @@
   "totals": {
     "auditor_families_observed": 4,
     "overall_agreement_rate": 0.824,
-    "total_audits_recorded": 1426,
+    "total_audits_recorded": 1427,
     "total_cross_confirmation_family_participations": 417,
     "total_cross_confirmation_pairs": 374,
     "total_third_pass_decisions": 126

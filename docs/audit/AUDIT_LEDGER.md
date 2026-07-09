@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 914 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1902 |
+| unaudited | 1903 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 48 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1304 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 48 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2247 |
+| `unaudited` | 2248 |
 
 | claim_type | count |
 |---|---:|
@@ -101,7 +101,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1932 | 217.42 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1933 | 217.92 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1187 | 67.21 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 65.64 | `audited_clean` | **retained** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1578 | 65.62 | `audited_clean` | **retained** |
@@ -1491,7 +1491,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
-| `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -16410,26 +16409,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** If APBC is supplied on the tau circle, then W transports that operator exactly to the operator with APBC on the x1 circle, so KMS/APBC does not pick an axis before B-AXIS; it only decorates whichever axis was already chosen.  _(class `A`)_
 - **chain closes:** True — The direct dependencies are retained-grade for the single-clock scope boundary and the algebraic Grassmann/Berezin support, and the runner verifies the finite exchange-map APBC covariance directly. KMS and prior axis-selection notes are used as route/context text, while the no-go conclusion itself rests on the exact supplied-circle covariance and the retained B-AXIS scope boundary.
 - **rationale:** The load-bearing negative step is an explicit finite matrix statement: W carries APBC on the supplied tau circle to APBC on the supplied x1 circle, and only an asymmetric supplied boundary datum breaks the exchange. The runner constructs that map and the staggered/APBC operators directly, checks the zero-kernel and cyclic-shift contrasts, and uses quote checks only to pin the route context and retained no-go checklist. The residual boundary is explicit: this prunes KMS/APBC as a pre-axis supplier but does not rule out a future independently derived boundary-condition asymmetry or close B-AXIS itself.
-- **auditor confidence:** high
-
-### `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17`
-
-- **Note:** [`SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md`](../../docs/SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the source-inventory claim that the current single-clock packet admits exactly one physical-clock transfer, while arbitrary commuting positive factor transfers remain mathematical comparators rather than admitted second clocks.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=weak)
-- **load-bearing step:** On the current single-clock clock/evolution packet, the only admitted physical-clock transfer is the supplied two-step staggered RP/SC transfer (T_hat^2, 2 a_tau).  _(class `B`)_
-- **chain closes:** False — The runner's local checks pass, but the row has no ledger dependencies even though the proof and runner consume the single-clock parent, minimal axioms, RP2, blocked-time normalization, Stone uniqueness, and post-record clock/rate interface notes. Without those direct dependency edges, the audit graph cannot verify that the source-inventory premises are retained/current.
-- **rationale:** Issue: the note presents a source-inventory theorem but the ledger row has zero dependencies while the proof and runner explicitly read multiple source authorities. Why this blocks: the claimed inventory is only meaningful relative to the current single-clock packet and its retained clock/transfer boundaries, so a standalone zero-dependency row cannot close under audit-graph dependency closure. Repair target: add direct dependency edges or markdown-linked one-hop citations for the consumed authorities, then rerun the pipeline and verifier. Claim boundary until fixed: the local source scan and finite comparator algebra pass, but retained-grade source-inventory support is conditional on wiring the actual source packet into the ledger.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`
-  - `MINIMAL_AXIOMS_2026-06-29.md`
-  - `AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`
-  - `AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
-  - `SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`
-  - `POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`

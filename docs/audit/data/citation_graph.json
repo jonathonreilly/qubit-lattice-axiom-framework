@@ -39373,6 +39373,26 @@
       "to": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17",
+      "to": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+    },
+    {
+      "from": "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17",
+      "to": "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17",
+      "to": "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17",
+      "to": "post_record_clock_rate_interface_2026-06-06"
+    },
+    {
       "from": "single_clock_uniqueness_scope_boundary_2026-06-06",
       "to": "repo.active_review_queue"
     },
@@ -111833,7 +111853,7 @@
         "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a679ad98de2d0a9276aaa701247d9cca00e173133224ace651887fc565d2f5d4",
+      "note_hash": "198a941a91b369b62b6867dcbf5b2ee75dbec1410e73ee6056bed2c9b6a9be08",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -115063,9 +115083,15 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "minimal_axioms",
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
+        "post_record_clock_rate_interface_2026-06-06"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "97b566f264a490716d5867048cf10ac5b07c98811bd030e6ff4afb430d598a69",
+      "note_hash": "30821dc376f71ebe5e0f7e40fcc2fb1bbf335c11ad6a5356641d0a06a3ea5dec",
       "path": "docs/SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md",
       "runner_path": "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py",
       "title": "Single-Clock Physical-Clock Admission Inventory N5 Support"
@@ -128405,7 +128431,6 @@
     "signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12",
     "signed_gravity_response_lane_status_note_2026-04-26",
     "single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17",
-    "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17",
     "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
     "site_phase_cube_shift_intertwiner_note",
     "sixth_family_complex_boundary_note",
@@ -128664,10 +128689,10 @@
       "open_gate": 205,
       "positive_theorem": 657
     },
-    "edge_count": 14552,
+    "edge_count": 14557,
     "leaf_count": 1309,
     "node_count": 3886,
-    "root_count": 1105,
+    "root_count": 1104,
     "runners_with_path": 3508
   }
 }

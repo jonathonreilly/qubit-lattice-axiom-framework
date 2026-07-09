@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 200 |
-| **retained_bounded** | 900 |
+| **retained_bounded** | 901 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1928 |
+| unaudited | 1927 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1287 |
+| `audited_clean` | 1288 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2273 |
+| `unaudited` | 2272 |
 
 | claim_type | count |
 |---|---:|
@@ -414,6 +414,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | C | - |
 | `doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dynamics_coupling_residual_classifier_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `dynamics_nontriviality_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -5471,6 +5472,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The exact Schur factorization gives I_e^* D_-^(-1) I_e = L_e^(-1), and under D_- = D_-^* > 0 the completed-square identity gives u^* L_e u = min_v [u; v]^* D_- [u; v].  _(class `A`)_
 - **chain closes:** True — The note proves the scoped conclusions directly by finite-dimensional block factorization and positive-Hermitian quadratic completion. There are no one-hop dependencies and no imported physical bridge inside the audited finite-dimensional boundary theorem.
 - **rationale:** The finite-dimensional algebra closes under the note's explicit hypotheses: invertible F and L_e for the resolvent identity, and D_- = D_-^* > 0 for the variational and monotonicity statements. The runner is not a first-principles microscopic computation, but it consistently checks exact Schur/Feshbach/Dirichlet algebra and scope hygiene, with 46 PASS and 0 FAIL in the supplied live summary. Residual risk is limited to scope discipline: this clean verdict covers only the supplied-block theorem and does not certify any Wilson-native construction of D_-, charged support selection, or final DM closure.
+- **auditor confidence:** high
+
+### `domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04`
+
+- **Note:** [`DOMAIN_WALL_CHIRAL_EDGE_FROM_ACHIRAL_CL3_BULK_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-04.md`](../../docs/DOMAIN_WALL_CHIRAL_EDGE_FROM_ACHIRAL_CL3_BULK_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite free-field linear-algebra diagnostic: from the current minimal-axiom spatial Z^3/M_2(C) input plus explicitly imposed diagnostic chiral embedding, Wilson-Dirac regulator, and record-time mass wall, the runner verifies naive Cl(3,0) doubling, direct Wilson chiral breaking, one localized Weyl species on the wall and the opposite species on the anti-wall, zero net torus chirality, and a gapped uniform bulk; no gauge coupling, interaction, anomaly matching, dynamical wall origin, electroweak structure, or framework derivation of the higher-dimensional regulator is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=cross_family)
+- **load-bearing step:** The finite higher-dimensional Wilson-Dirac domain-wall diagnostic localizes one two-component Weyl species on the wall and the opposite species on the anti-wall, while the native Cl(3,0) spatial operator is doubled and direct Wilson lifting breaks chiral anticommutation.  _(class `C`)_
+- **chain closes:** True — The source makes every extra diagnostic ingredient explicit and excludes them from framework derivation. The runner computes the Brillouin-corner zeros and chiralities, Wilson anticommutator, actual finite record-time wall spectrum and localization, edge chirality, projected Weyl cones, M-flip, uniform-bulk gap, and wall/anti-wall net-zero count with TOTAL PASS=19 FAIL=0.
+- **rationale:** The bounded diagnostic closes: the spatial Cl(3,0) input is supplied by the current minimal axiom memo, and all non-axiom domain-wall ingredients are explicitly imposed rather than smuggled in as derived framework structure. The runner performs the load-bearing finite-matrix computations and verifies both halves of the contrast: naive doubling/direct Wilson chiral breaking, and localized opposite-chirality wall/anti-wall Weyl species with a gapped uniform bulk and zero net torus chirality. Residual risk is exactly the stated scope boundary: this is not a gauge-coupled, interacting, anomaly-matching, dynamical-origin, or electroweak derivation.
 - **auditor confidence:** high
 
 ### `doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12`

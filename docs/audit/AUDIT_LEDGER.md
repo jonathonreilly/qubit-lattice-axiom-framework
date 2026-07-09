@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 200 |
-| **retained_bounded** | 905 |
+| **retained_bounded** | 906 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1922 |
+| unaudited | 1921 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1292 |
+| `audited_clean` | 1293 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2267 |
+| `unaudited` | 2266 |
 
 | claim_type | count |
 |---|---:|
@@ -574,6 +574,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gate_b_weak_connectivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_center_sector_record_context_and_theta_q_character_grading_obstruction_bounded_theorem_note_2026-07-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
+| `gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-current | A | - |
 | `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -7730,6 +7731,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Every admissible sector label on the retained SU(3) character surface factors through the center grading: the retained fusion channels force 3a = 0 and then g(p,q) = (p - q)a.  _(class `A`)_
 - **chain closes:** True — The cited recurrence note supplies the SU(3) fusion/multiplication law, and the minimal Record axiom supplies only the readout-additivity interface. The RP no-go is route-independence context, not a load-bearing premise.
 - **rationale:** The load-bearing step is exact algebra over the retained SU(3) character recurrence: the displayed fusion channels force the triality grading and obstruct both Z-valued and GF(2) parity labels. The center projectors, sector-shift rule, and disjoint-region additivity follow from the same group-action/fusion algebra, while the Record axiom is used only for the finite sharp readout interface. The runner completed with TOTAL: PASS=56 FAIL=0. The note explicitly does not derive record occurrence, topological theta Q, conserved flux, full transfer-state Perron data, or non-class-function/winding constructions, so no hidden physical bridge is consumed inside the bounded scope.
+- **auditor confidence:** high
+
+### `gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06`
+
+- **Note:** [`GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md`](../../docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-dimensional algebra theorem: on supplied C^3 tensor C^2 with named factor subalgebras and ordered infinitesimal factor preservation, the stabilizer in u(6) is exactly the 12-dimensional factorwise u(3)+u(2) image with semisimple su(3)+su(2) and one central u(1); REGISTERED-FACTOR/T2 are conditional bookkeeping only, not a derived gauging, carrier, chirality, hypercharge, or physical color/weak bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=cross_family)
+- **load-bearing step:** GIVEN the supplied split and factor preservation in the stated ordered sense, the stabilizer inside u(6) is exactly the factorwise algebra of dimension 12, whose semisimple part is the verified direct sum su(3) + su(2), with the one central abelian direction stated above.  _(class `A`)_
+- **chain closes:** True — Within the bounded supplied-surface scope, the note explicitly assumes the tensor split and factor-preservation condition, and the exact rational runner verifies the stabilizer, containments, center overlap, bracket closure, and Killing-form decomposition. The chain does not claim to derive REGISTERED-FACTOR, the physical carrier, gauging, chirality, hypercharge, or physical color/weak identifications.
+- **rationale:** The load-bearing theorem is exact finite-dimensional matrix algebra over a supplied C^3 tensor C^2 surface and named preservation condition, not a hidden physical selection. The runner constructs the u(6) basis, factorwise image, stabilizer equations, Lie brackets, central direction, and Killing form over exact rationals, and the two quote/self-scan passes only support packet integrity. Residual risks are explicitly outside the audited scope: REGISTERED-FACTOR itself, physical gauging, chirality, hypercharge, color/weak identification, and a physical C^6 carrier remain unproved.
 - **auditor confidence:** high
 
 ### `gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16`

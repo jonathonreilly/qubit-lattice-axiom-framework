@@ -24,10 +24,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
 | unaudited | 1885 |
-| audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
-| ~~audited_renaming~~ | 21 |
+| ~~audited_renaming~~ | 22 |
 | ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -60,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 14 |
+| `audit_in_progress` | 13 |
 | `audited_clean` | 1318 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
-| `audited_renaming` | 21 |
+| `audited_renaming` | 22 |
 | `unaudited` | 2230 |
 
 | claim_type | count |
@@ -135,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1599,6 +1597,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | judicial_review | codex-gpt-5.6 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | weak | codex-current | E | - |
@@ -7482,6 +7481,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Equating the two abstract constraints F^2 = c0 and F^2 = g^2/(2N) gives g^2 = 2 N c0, so on the positive branch g = sqrt(2 N c0) when c0 > 0.  _(class `A`)_
 - **chain closes:** True — The theorem follows by direct substitution and multiplication by 2N over the stated positive-real domain, with the c0=0 boundary explicitly excluded by g>0. The runner verifies the symbolic identity, positive branch, rational instances, non-unit counterexamples, and scope disclaimers with PASS=39, FAIL=0.
 - **rationale:** The scoped claim closes as pure algebra: the two hypotheses give c0 = g^2/(2N), hence g^2 = 2Nc0, and the positive branch is unique for c0>0. The specific g=1 result is correctly limited to pairs satisfying 2Nc0=1, with the note and runner showing that other pairs such as (N,c0)=(1,1) force different values. This audit does not ratify the physical Ward-route premises or any claim that those abstract variables are fixed by Cl(3), Wilson, or SU(N_c) structure.
+- **auditor confidence:** high
+
+### `g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`
+
+- **Note:** [`G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the supplied finite-link SU(3) and Wilson plaquette surfaces, Theorems 1–3 establish split redundancy and the matched family gamma*(beta)^2 = 2N_c/beta; beta=6 for N_c=3 follows only under the declared same-slot identification (SD).
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-gbare-panel-1783636777-16c21fff-judge-1`  (codex-gpt-5.6; independence=judicial_review)
+- **load-bearing step:** The declared surface definition (SD) identifies A^a := C^a, equivalently g_bare := s, thereby selecting beta=2N_c.  _(class `F`)_
+- **chain closes:** False — Theorem 2 and the mismatched-slot exhibit establish that link, plaquette, and action data cannot determine the same-slot identity. The runner likewise derives the matched family but obtains beta=6 only by substituting (SD) in its exact-composition section. Because that identification between existing scalar concepts performs the selection, the rubric classifies the load-bearing step as (F), notwithstanding the note's accurate disclosure that it is a definition.
+- **rationale:** Theorem 2 and the mismatched-slot exhibit establish that link, plaquette, and action data cannot determine the same-slot identity. The runner likewise derives the matched family but obtains beta=6 only by substituting (SD) in its exact-composition section. Because that identification between existing scalar concepts performs the selection, the rubric classifies the load-bearing step as (F), notwithstanding the note's accurate disclosure that it is a definition.
 - **auditor confidence:** high
 
 ### `g_bare_rigidity_theorem_note`

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 909 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1913 |
+| unaudited | 1912 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 44 |
+| ~~audited_conditional~~ | 45 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1298 |
-| `audited_conditional` | 44 |
+| `audited_conditional` | 45 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2258 |
+| `unaudited` | 2257 |
 
 | claim_type | count |
 |---|---:|
@@ -1451,6 +1451,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `confinement_string_tension_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
+| `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4475,6 +4476,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the framework's Z^3 nearest-neighbor adjacency with the supplied free one-orbital Hamiltonian, the odd-parity block is h_oo = mu I and the step-1 Schur complement has diag' = mu - 6t^2/mu, face-diagonal entries -2t^2/mu, axial entries -t^2/mu, no beyond-shell couplings, plus the d=3 parity lemma sum d_i^2 = sum d_i mod 2.  _(class `A`)_
 - **chain closes:** True — The minimal axiom packet supplies the cubic Z^3 nearest-neighbor lattice; the Hamiltonian parameters and free one-orbital kernel are explicit supplied bounded inputs. The runner constructs the finite periodic lattice matrices and verifies the Schur-complement coefficients, parity lemma, wraparound guard, E-shift, and resolvent identity with PASS=12 FAIL=0, without using external comparators or hidden downstream physics.
 - **rationale:** Clean within the bounded algebraic scope: the source states a supplied free one-orbital NN Hamiltonian on the cubic lattice, and the claimed step-1 coefficients are exactly the Schur-complement path counts over the odd sublattice. The parity lemma is elementary integer algebra and the runner also checks finite-size/wraparound, E-covariance, and retained-site resolvent equality. Residual risk is only scope: this does not derive a physical kinetic branch, measure, weight, r-value, or step-2 behavior from the axioms.
+- **auditor confidence:** high
+
+### `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18`
+
+- **Note:** [`D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md`](../../docs/D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded spinless single-band Peierls-flux normalization for Omega''(0) = -1/12 times the Brillouin-zone integral of f'(E(k)) det(H_xy(k)) d^3k/(2*pi)^3, including the cubic-band substitution and sign-independent elliptic/saddle patching.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-fresh-pascal`  (codex-current; independence=weak)
+- **load-bearing step:** Since the local coefficient is polynomial in det(H_xy), the full Brillouin-zone patching does not require a separate sign branch at saddle points.  _(class `A`)_
+- **chain closes:** False — The finite magnetic-cell density, midpoint coefficient, elliptic local determinant algebra, and cubic Hessian substitution are checked, but the stated full-scope sign-independent saddle/full-Brillouin-zone patching is not derived from the restricted packet.
+- **rationale:** Issue: The elliptic local oscillator plus midpoint Euler-Maclaurin coefficient is supported, but the extension to saddle and negative-determinant patches across the full cubic band is asserted as polynomial continuation. Why this blocks: The claim scope includes sign-independent full-patch normalization; without a theorem deriving the saddle response from Peierls magnetic translations or perturbative patching, the runner checks an imposed -det(H_xy)/12 coefficient for the negative-determinant case. Repair target: Add a bounded theorem and runner deriving the indefinite-quadratic saddle contribution or justified analytic-continuation/full-BZ patching from the Peierls Hamiltonian, or narrow the note to elliptic patches. Claim boundary until fixed: Finite-torus B/(2*pi) density, midpoint 1/24, elliptic-patch -det(H_xy)/12, and the cubic Hessian determinant remain supported; full sign-independent cubic Landau-Peierls normalization remains conditional.
 - **auditor confidence:** high
 
 ### `d3_native_stable_orbit_upper_bound_composition_note_2026-06-09`

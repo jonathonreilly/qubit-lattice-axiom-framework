@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 912 |
+| **retained_bounded** | 913 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1905 |
+| unaudited | 1904 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1302 |
+| `audited_clean` | 1303 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2250 |
+| `unaudited` | 2249 |
 
 | claim_type | count |
 |---|---:|
@@ -153,6 +153,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `acphilambda_projective_equivariance_k_odd_trace_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | C | - |
 | `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1757,6 +1758,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** `r` takes different values on different law-admissible realized states and is an already-defined functional of the registered signed-root masses, so by the realized-state primitive it is registered data rather than derivation output.  _(class `A`)_
 - **chain closes:** True — The packet supplies the primitive rule, retained algebraic lever/biconditional inputs, and no-go/law-freeness authorities needed for the bounded classification. The conclusion does not derive r=1/2 or select a grain; those are explicitly outside scope.
 - **rationale:** Within the stated bounded scope, the note closes: the runner verifies the algebraic r-functional, the multi-r firewall, the relevant primitive/axiom text, and the survival of both grain models. The single PDG check is labeled comparator-only and is not load-bearing on the classification. The proof does not silently promote the measure-side frontier or derive the charged-lepton value, so the clean verdict applies only to the value-face reduction and frontier naming.
+- **auditor confidence:** high
+
+### `acphilambda_projective_equivariance_k_odd_trace_2026-07-02`
+
+- **Note:** [`ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md`](../../docs/ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the explicitly defined finite-torus two-component Dirac representative H_D with C3 spin lift R2, the note proves/checks exact projective equivariance, torsion branch weights, diagonal heat/flux trace reductions, even-N naive doubler cancellation, and stated odd-ring/Wilson K-odd witnesses; no physical carrier selection, phi value, occurrence, or AC_phi_lambda retirement is claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-fresh-acphilambda-kodd-20260709-02`  (codex-current; independence=fresh_context)
+- **load-bearing step:** The definitions of H_D, R2, and A(phi), together with the algebraic/dense checks that [R2,H_D]=0, R2^3=-I, Tr(f(H_D)R2^2)=-Tr(f(H_D)R2), and the even/odd/Wilson K-odd trace gates hold at the stated bounded instances.  _(class `C`)_
+- **chain closes:** True — Within the bounded operator scope, the construction is explicit and the runner computes the relevant finite matrices/traces rather than importing an external comparator or tuned physical value. The note preserves the open boundaries for physical selection, occurrence, readout/value, and phi.
+- **rationale:** Clean closure: the claimed result is a bounded construction/check on a defined representative, not a claim that the representative is physically selected or that AC_phi_lambda is retired. The retained-bounded dependency supplies the licensed per-site C^2 nearest-neighbor surface and residual selector boundary, while the runner verifies the projective equivariance, branch weights, trace reductions, cancellation, and finite K-odd witnesses with PASS=64 FAIL=0.
 - **auditor confidence:** high
 
 ### `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11`

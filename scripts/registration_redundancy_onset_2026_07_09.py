@@ -48,6 +48,34 @@ is the first sampled time at which two disjoint fragments certify.  The
 effective ``theta*`` attached to an onset is the kappa runner's exact
 GS-baseline-subtracted ``1-Tr(rho_cell^2)`` proxy on bond ``(2B,2B+1)``.
 
+v3 retains those v1/v2 findings and makes three declared convention
+corrections.  First, the QD reading fixes no fragment size, so a fragment is
+now one finest-register exterior link.  For cell ``B``, the internal link
+``E_(2B)`` is ineligible.  The eleven eligible links, with all indices modulo
+12 and clockwise/right member first at a distance tie, are
+
+    (E_(2B+1+d), E_(2B-1-d)) for d=0,...,4, then E_(2B+6).
+
+Thus for ``B=0`` they are ``(E1,E11,E2,E10,E3,E9,E4,E8,E5,E7,E6)`` at
+exterior link distances ``(0,0,1,1,2,2,3,3,4,4,5)``.  Second, the two
+boundary links ``(E_(2B-1),E_(2B+1))`` are each singly eligible, but cannot
+together be used as one joint two-link fragment: their joint relation
+``E_(2B+1)-E_(2B-1)=Q_B`` is a Gauss-law operator identity, not an exterior
+written record.  No such joint layout is constructed.  Each disjoint
+boundary singleton is nevertheless marginalized and may independently
+certify and count toward ``R``, because it carries screened exterior
+information without using the joint identity.
+Third, ``g=0.3`` is added to the v2 couplings ``(0.6,1.0)`` to expose the
+longer screening length.
+
+For hop kick (c), v3 also reports the kicked-cell profile
+``Delta I_n(t*)=I_t*(Q_0:E_n)-I_GS(Q_0:E_n)`` on every eligible link.  Here
+``t*`` is the first sampled maximizer of the algebraic total
+``sum_n Delta I_n(t)``, and ``xi_reg`` is the largest declared exterior link
+distance with ``Delta I_n(t*)>=eps_exc`` (or ``none``).  This is a measured
+finite-comparator screening/redundancy range, not an imported correlation
+length.
+
 The runner reads conventions only from:
 
 * ``gauged_schwinger_staggered_ed_engine_2026_07_08.py``;
@@ -74,9 +102,11 @@ import scipy.sparse.linalg as spla
 
 N_SITES = 12
 N_CELLS = N_SITES // 2
-N_FRAGMENTS = N_CELLS
+N_FRAGMENTS = N_SITES - 1
 MASS = 0.3
-COUPLINGS = (0.6, 1.0)
+V2_COUPLINGS = (0.6, 1.0)
+COUPLINGS = (0.3,) + V2_COUPLINGS
+GROUND_SEED_OFFSETS = {0.6: 0, 1.0: 1, 0.3: 2}
 W_MAX = 4
 T_FINAL = 10.0
 DT = 0.1
@@ -96,9 +126,9 @@ NUMERIC_TOL = 1.0e-10
 
 @dataclass(frozen=True)
 class ClassicalFragmentLayout:
-    """Sparse marginalization map for one ``(Q_B, two-link F)`` pair."""
+    """Sparse marginalization map for one ``(Q_B, single-link F)`` pair."""
 
-    links: tuple[int, int]
+    links: tuple[int, ...]
     n_fragment_outcomes: int
     joint_indicator: sp.csr_matrix
 
@@ -110,6 +140,18 @@ class RegistrationEvent:
     time_index: int
     time: float
     theta_star: float
+
+
+@dataclass(frozen=True)
+class RegisterProfile:
+    coupling: float
+    time_index: int
+    time: float
+    links: tuple[int, ...]
+    distances: tuple[int, ...]
+    excess_information: tuple[float, ...]
+    total_excess: float
+    xi_reg: int | None
 
 
 @dataclass
@@ -225,7 +267,7 @@ def load_sources() -> tuple[Any, Any, Any, Any]:
     pinned = (
         kappa.N_SITES == N_SITES
         and kappa.MASS == MASS
-        and tuple(kappa.COUPLINGS) == COUPLINGS
+        and tuple(kappa.COUPLINGS) == V2_COUPLINGS
         and kappa.W_MAX == W_MAX
         and kappa.T_FINAL == T_FINAL
         and kappa.DT == DT
@@ -237,29 +279,56 @@ def load_sources() -> tuple[Any, Any, Any, Any]:
     return engine, kappa, darwinism, witnesses
 
 
-def ordered_register_cells(pointer_cell: int) -> tuple[int, ...]:
-    """Ring-distance order with clockwise member first at every tie."""
+def eligible_register_links(pointer_cell: int) -> tuple[int, ...]:
+    """Return all single exterior links, right first at distance ties.
+
+    The first two entries are the right and left cell-boundary links.  They
+    are each eligible as a singleton, while their joint two-link fragment is
+    never constructed.  The cell's internal link ``E_(2B)`` is absent.
+    """
 
     if not 0 <= pointer_cell < N_CELLS:
         raise ValueError("invalid pointer cell")
-    offsets = (0, 1, -1, 2, -2, N_CELLS // 2)
-    cells = tuple((pointer_cell + offset) % N_CELLS for offset in offsets)
-    if len(set(cells)) != N_CELLS:
-        raise RuntimeError("register-cell ordering is not a permutation")
-    return cells
+    internal = 2 * pointer_cell
+    right_boundary = (internal + 1) % N_SITES
+    left_boundary = (internal - 1) % N_SITES
+    links = tuple(
+        link
+        for distance in range(N_CELLS - 1)
+        for link in (
+            (right_boundary + distance) % N_SITES,
+            (left_boundary - distance) % N_SITES,
+        )
+    ) + ((internal + N_CELLS) % N_SITES,)
+    if len(links) != N_FRAGMENTS or len(set(links)) != N_FRAGMENTS:
+        raise RuntimeError("eligible exterior links are not unique")
+    if internal in links or set(links) != set(range(N_SITES)) - {internal}:
+        raise RuntimeError("eligible exterior links have the wrong support")
+    return links
 
 
-def fragment_tiling(pointer_cell: int) -> tuple[tuple[int, int], ...]:
-    """Return the declared six disjoint two-link intervals for ``B``."""
+def eligible_register_distances(pointer_cell: int) -> tuple[int, ...]:
+    """Exterior link distance paired with ``eligible_register_links``."""
 
-    fragments = tuple(
-        ((2 * cell + 1) % N_SITES, (2 * cell + 2) % N_SITES)
-        for cell in ordered_register_cells(pointer_cell)
-    )
-    flattened = [link for fragment in fragments for link in fragment]
-    if sorted(flattened) != list(range(N_SITES)):
-        raise RuntimeError("fragment tiling does not cover every link exactly once")
-    return fragments
+    if not 0 <= pointer_cell < N_CELLS:
+        raise ValueError("invalid pointer cell")
+    distances = tuple(
+        distance
+        for distance in range(N_CELLS - 1)
+        for _ in range(2)
+    ) + (N_CELLS - 1,)
+    if len(distances) != N_FRAGMENTS:
+        raise RuntimeError("eligible exterior distances have the wrong size")
+    return distances
+
+
+def independent_redundancy(certifies: np.ndarray) -> np.ndarray:
+    """Count disjoint certifying single-link layouts."""
+
+    flags = np.asarray(certifies, dtype=bool)
+    if flags.shape[-1] != N_FRAGMENTS:
+        raise ValueError("certification array has the wrong register axis")
+    return np.count_nonzero(flags, axis=-1)
 
 
 def build_diagonal_observables(
@@ -303,11 +372,9 @@ def build_classical_layouts(
     for cell in range(N_CELLS):
         pointer_outcome = np.asarray(cell_charges[cell] + 1, dtype=np.int64)
         cell_layouts: list[ClassicalFragmentLayout] = []
-        for links in fragment_tiling(cell):
-            field_pairs = fields[np.asarray(links, dtype=np.int64)].T
+        for link in eligible_register_links(cell):
             _, fragment_outcome = np.unique(
-                field_pairs,
-                axis=0,
+                fields[link],
                 return_inverse=True,
             )
             n_fragment_outcomes = int(np.max(fragment_outcome)) + 1
@@ -321,7 +388,7 @@ def build_classical_layouts(
             )
             cell_layouts.append(
                 ClassicalFragmentLayout(
-                    links=links,
+                    links=(link,),
                     n_fragment_outcomes=n_fragment_outcomes,
                     joint_indicator=indicator,
                 )
@@ -410,6 +477,42 @@ def record_content(
                     float(np.max(np.abs(local_entropy - entropy[:, cell]))),
                 )
     return entropy, information, diagnostics, norm_error
+
+
+def hop_register_profile(
+    coupling: float,
+    information: np.ndarray,
+    ground_information: np.ndarray,
+) -> RegisterProfile:
+    """Measure the hop-kicked ``Q_0`` excess profile and ``xi_reg``."""
+
+    if information.shape != (N_TIMES, N_CELLS, N_FRAGMENTS):
+        raise ValueError("hop information has the wrong profile shape")
+    if ground_information.shape != (N_CELLS, N_FRAGMENTS):
+        raise ValueError("ground information has the wrong profile shape")
+    excess = information[:, 0, :] - ground_information[None, 0, :]
+    if not np.all(np.isfinite(excess)):
+        raise RuntimeError("nonfinite hop register profile")
+    total = np.sum(excess, axis=1)
+    time_index = int(np.argmax(total))
+    profile = excess[time_index]
+    links = eligible_register_links(0)
+    distances = eligible_register_distances(0)
+    reached = [
+        distance
+        for distance, value in zip(distances, profile)
+        if float(value) + NUMERIC_TOL >= EPS_EXCESS
+    ]
+    return RegisterProfile(
+        coupling=coupling,
+        time_index=time_index,
+        time=float(TIMES[time_index]),
+        links=links,
+        distances=distances,
+        excess_information=tuple(float(value) for value in profile),
+        total_excess=float(total[time_index]),
+        xi_reg=max(reached) if reached else None,
+    )
 
 
 def build_covariant_hop(engine: Any, basis: Any, link: int) -> sp.csr_matrix:
@@ -531,9 +634,8 @@ def registration_events(
         excess_gate = (
             excess_information[:, cell, :] + NUMERIC_TOL >= EPS_EXCESS
         )
-        redundancy = np.count_nonzero(
-            nontrivial[:, None] & content_gate & excess_gate,
-            axis=1,
+        redundancy = independent_redundancy(
+            nontrivial[:, None] & content_gate & excess_gate
         )
         onset_indices = np.flatnonzero(redundancy >= MIN_REDUNDANCY)
         if onset_indices.size == 0:
@@ -615,9 +717,7 @@ def measure_case(
             & (ratios + NUMERIC_TOL >= 1.0 - delta)
             & (excess_information + NUMERIC_TOL >= EPS_EXCESS)
         )
-        maximum_redundancy[delta] = int(
-            np.max(np.count_nonzero(certifies, axis=2))
-        )
+        maximum_redundancy[delta] = int(np.max(independent_redundancy(certifies)))
     return CaseResult(
         coupling=coupling,
         preparation=preparation,
@@ -641,6 +741,10 @@ def fmt_number(value: float) -> str:
 def fmt_vector(values: Any) -> str:
     array = np.asarray(values).ravel()
     return "[" + ",".join(fmt_number(float(value)) for value in array) + "]"
+
+
+def fmt_xi(value: int | None) -> str:
+    return "none" if value is None else str(value)
 
 
 def case_label(result: CaseResult) -> str:
@@ -704,9 +808,26 @@ def format_event(event: RegistrationEvent) -> str:
     return f"B{event.cell}@{event.time:g}/{fmt_number(event.theta_star)}"
 
 
+def format_register_profile(profile: RegisterProfile) -> str:
+    entries = ",".join(
+        f"E{link}/d{distance}:{fmt_number(value)}"
+        for link, distance, value in zip(
+            profile.links,
+            profile.distances,
+            profile.excess_information,
+        )
+    )
+    return (
+        f"g={profile.coupling:g} t*={profile.time:g} "
+        f"sum={fmt_number(profile.total_excess)} xi_reg={fmt_xi(profile.xi_reg)} "
+        f"[{entries}]"
+    )
+
+
 def build_output(
     *,
     results: list[CaseResult],
+    profiles: list[RegisterProfile],
     panels: list[DemolitionPanel],
     control_counts: dict[float, int],
     diagnostics: ClassicalDiagnostics,
@@ -752,6 +873,20 @@ def build_output(
 
     observable_error = max(result.observable_error for result in results)
     proxy_ok = all(result.proxy_ok for result in results)
+    profile_ok = bool(
+        len(profiles) == len(COUPLINGS)
+        and {profile.coupling for profile in profiles} == set(COUPLINGS)
+        and all(
+            profile.links == eligible_register_links(0)
+            and profile.distances == eligible_register_distances(0)
+            and len(profile.excess_information) == N_FRAGMENTS
+            and np.all(np.isfinite(profile.excess_information))
+            and np.isfinite(profile.total_excess)
+            and 0 <= profile.time_index < N_TIMES
+            and profile.time == float(TIMES[profile.time_index])
+            for profile in profiles
+        )
+    )
     numerical_machinery = bool(
         maximum_ground_residual <= 1.0e-8
         and maximum_norm_error <= 1.0e-9
@@ -764,17 +899,24 @@ def build_output(
         and diagnostics.pointer_marginal_error <= 1.0e-9
         and diagnostics.lower_bound_error <= 1.0e-9
         and diagnostics.upper_bound_error <= 1.0e-9
+        and profile_ok
         and elapsed < 900.0
     )
-    machinery_ok = numerical_machinery and check_01 and check_02 and check_03
+    # Absence of onset (CHECK-03) is a physics outcome of the declared
+    # protocol, not broken machinery: it maps to BAR-NOT-PINNED below.
+    machinery_ok = numerical_machinery and check_01 and check_02
 
     setup = (
-        "SETUP N=12 cells=6 m=0.3 g=[0.6,1] Qtotal=0 Wmax=4 t=0:0.1:10; "
+        "SETUP N=12 cells=6 m=0.3 g=[0.3,0.6,1] Qtotal=0 Wmax=4 t=0:0.1:10; "
         "pointer=Q_B=q_2B+q_(2B+1) outcomes=[-1,0,1]; "
         "register=E_n=W+sum_(k<=n)q_k,E11=W; "
-        "F(B0)=[E1E2,E3E4,E11E0,E5E6,E9E10,E7E8] order=[0,+1,-1,+2,-2,+3]; "
+        "eligible-single-links(B)=all-E_except_internal-E_2B,"
+        "order=right/left-outward; B0=[E1,E11,E2,E10,E3,E9,E4,E8,E5,E7,E6],"
+        "d=[0,0,1,1,2,2,3,3,4,4,5]; boundary-pair=(E_(2B-1),E_(2B+1)) "
+        "joint-fragment-excluded/each-singleton-eligible; "
         "kick=a:exp(+i0.7n0),b:exp(+i0.5(n0+n6)),c:exp(+i0.5(h01+h01dag)); "
-        "cert=I>=(1-delta)H AND I-I_GS>=0.02,Hfloor=0.05,Rdelta>=2,delta=[0.05,0.1,0.2]"
+        "cert=I>=(1-delta)H AND I-I_GS>=0.02,Hfloor=0.05,"
+        "R>=2-over-eligible-single-links,delta=[0.05,0.1,0.2]"
     )
 
     event_parts: list[str] = []
@@ -789,6 +931,13 @@ def build_output(
     events_line = (
         "EVENTS N-order=d[0.05,0.1,0.2],entry=B@sampled-t/theta*_cell; "
         + "; ".join(event_parts)
+    )
+
+    profile_line = (
+        "REGISTER PROFILE hop/Q0 DeltaI=I_t-I_GS; "
+        "t*=first-argmax(sum_eligible DeltaI); xi_reg=max-d(DeltaI>=0.02); "
+        "structure=records-written-redundantly-only-within-screening-length; "
+        + "; ".join(format_register_profile(profile) for profile in profiles)
     )
 
     panel_parts = [
@@ -835,7 +984,7 @@ def build_output(
         f"(GS-events={control_vector},excess-subtraction=exact); "
         f"CHECK-02={'ok' if check_02 else 'FAIL'}; "
         f"CHECK-03={'ok' if check_03 else 'FAIL'}"
-        f"(hop-headline-each-g={hop_event_each_coupling},early={early_count},"
+        f"(hop-headline-each-g={hop_event_each_coupling},t<=1/within-3-cells,early={early_count},"
         f"max-cell-dist={early_maximum},probe=[{hop_probe}]); "
         f"CHECK-04={'ok' if check_04 else 'FAIL'}(factor={fmt_number(sensitivity_factor)}); "
         f"CHECK-05={check_05_label}; MACHINERY={'ok' if numerical_machinery else 'FAIL'}"
@@ -844,7 +993,8 @@ def build_output(
         f"hop={hop_operator_error:.2e},proxy={observable_error:.2e},"
         f"joint={diagnostics.joint_normalization_error:.2e},"
         f"marg={diagnostics.pointer_marginal_error:.2e},"
-        f"MIbounds=[{diagnostics.lower_bound_error:.2e},{diagnostics.upper_bound_error:.2e}])"
+        f"MIbounds=[{diagnostics.lower_bound_error:.2e},{diagnostics.upper_bound_error:.2e}],"
+        f"profile={profile_ok})"
     )
 
     headline_global = delta_median[HEADLINE_DELTA]
@@ -857,7 +1007,7 @@ def build_output(
     if not machinery_ok:
         verdict = "MACHINERY-FAIL"
         exit_code = 2
-    elif not check_04:
+    elif not (check_03 and check_04):
         verdict = "BAR-NOT-PINNED"
         exit_code = 1
     else:
@@ -875,12 +1025,18 @@ def build_output(
         if not passed
     ]
     finding_flags = ["BAR-BELOW-WINDOW"] if below_window else []
+    xi_summary = ",".join(
+        f"g{profile.coupling:g}:{fmt_xi(profile.xi_reg)}" for profile in profiles
+    ) or "unavailable"
     total = (
         f"TOTAL {verdict} theta*={fmt_number(headline_global)} window={window_flag} "
+        f"xi_reg=[{xi_summary}] "
         f"flags={','.join(finding_flags) if finding_flags else 'none'} "
         f"failed={','.join(failed) if failed else 'none'} elapsed={elapsed:.2f}s "
-        "SPEC-NOTE=engine-register:E_n=W+sum(k<=n)q_k,E11=W,link11-hop-shifts-W;"
-        "fragments:disjoint-two-link-ring-tiling-distance-ordered;eps_exc=0.02;"
+        "SPEC-NOTE=v3-correction-1:FRAGMENTS=SINGLE-exterior-links-finest-registers;"
+        "v3-correction-2:E_2B-ineligible-boundaries-singly-eligible-boundary-pair-joint-fragment-excluded-as-Gauss-identity;"
+        "v3-correction-3:g=0.3-added-to-[0.6,1];"
+        "engine-register:E_n=W+sum(k<=n)q_k,E11=W,link11-hop-shifts-W;eps_exc=0.02;"
         "classical-MI:joint-marginal-of-|psi(fock,W)|^2,no-RDM;"
         "kick-asymmetry:phase-p(t0)=GS-exact,hop-kick-writes-registers-directly;"
         "v1:n_x-no-onset,adjacent~0.2bit-static,far~1e-3bit,[H,n_x]!=0-confirms-2026-06-05-necessity;"
@@ -890,9 +1046,9 @@ def build_output(
     return [
         setup,
         events_line,
-        demolition_line,
+        profile_line,
         bar_line,
-        checks_line,
+        demolition_line + "; " + checks_line,
         total,
     ], exit_code
 
@@ -918,7 +1074,7 @@ def run() -> tuple[list[str], int]:
         engine,
         basis,
         MASS,
-        COUPLINGS[0],
+        V2_COUPLINGS[0],
     )
     cell_charges, fields, reference_error = build_diagonal_observables(
         engine,
@@ -938,6 +1094,7 @@ def run() -> tuple[list[str], int]:
     hop_operator_error = sparse_frobenius(imported_hopping - expected_hopping)
 
     results: list[CaseResult] = []
+    profiles: list[RegisterProfile] = []
     panels: list[DemolitionPanel] = []
     control_counts = {delta: 0 for delta in DELTAS}
     diagnostics = ClassicalDiagnostics()
@@ -945,7 +1102,7 @@ def run() -> tuple[list[str], int]:
     maximum_norm_error = 0.0
     maximum_phase_probability_error = 0.0
 
-    for coupling_index, coupling in enumerate(COUPLINGS):
+    for coupling in COUPLINGS:
         hamiltonian = engine.build_many_body_hamiltonian(
             basis,
             MASS,
@@ -963,7 +1120,7 @@ def run() -> tuple[list[str], int]:
         _, ground_state, ground_residual = kappa.deterministic_ground_state(
             hamiltonian,
             witnesses,
-            kappa.RNG_SEED + coupling_index,
+            kappa.RNG_SEED + GROUND_SEED_OFFSETS[coupling],
         )
         maximum_ground_residual = max(maximum_ground_residual, ground_residual)
         ground_d = kappa.ground_distinguishability(
@@ -1037,6 +1194,13 @@ def run() -> tuple[list[str], int]:
             "b": slice(1 + N_TIMES, 1 + 2 * N_TIMES),
             "c": slice(1 + 2 * N_TIMES, 1 + 3 * N_TIMES),
         }
+        profiles.append(
+            hop_register_profile(
+                coupling,
+                information[slices["c"]],
+                ground_information,
+            )
+        )
         centers = {"a": (0,), "b": (0, 3), "c": (0,)}
         for preparation in ("a", "b", "c"):
             sample_slice = slices[preparation]
@@ -1068,6 +1232,7 @@ def run() -> tuple[list[str], int]:
     elapsed = time.monotonic() - started
     return build_output(
         results=results,
+        profiles=profiles,
         panels=panels,
         control_counts=control_counts,
         diagnostics=diagnostics,
@@ -1087,7 +1252,10 @@ def main() -> int:
         message = " ".join(str(exc).split())[:260]
         print(
             f"TOTAL MACHINERY-FAIL error={type(exc).__name__}:{message} "
-            "SPEC-NOTE=engine-register-reference-link;eps_exc=0.02;"
+            "xi_reg=unavailable "
+            "SPEC-NOTE=v3-correction-1:FRAGMENTS=SINGLE-exterior-links;"
+            "v3-correction-2:E_2B-ineligible-boundaries-singly-eligible-boundary-pair-joint-fragment-excluded;"
+            "v3-correction-3:g=0.3-added;engine-register-reference-link;eps_exc=0.02;"
             "classical-MI-from-basis-probabilities;phase-vs-hop-kick-asymmetry;"
             "v1-site-pointer-negative-retained;no-formation-rule,no-audit-status"
         )

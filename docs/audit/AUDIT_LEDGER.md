@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 899 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1931 |
+| unaudited | 1930 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 41 |
+| ~~audited_conditional~~ | 42 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1285 |
-| `audited_conditional` | 41 |
+| `audited_conditional` | 42 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2276 |
+| `unaudited` | 2275 |
 
 | claim_type | count |
 |---|---:|
@@ -1443,6 +1443,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_native_action_predicts_q1_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `flavor_record_readout_form_not_weight_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -6635,6 +6636,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** If equal Hilbert-Schmidt energy is supplied across the two generator channels, then N a^2 = N(N-1)b^2 and r = b^2/a^2 = 1/(N-1), while finite Record additivity leaves d/(u+d)=p arbitrary.  _(class `A`)_
 - **chain closes:** True — The finite Hilbert-Schmidt identities and ratio algebra close directly from the displayed matrices and equations. The claimed positive value is explicitly conditional on a supplied generator-channel Hilbert-Schmidt scoring rule, and the note correctly preserves that boundary.
 - **rationale:** The load-bearing finite algebra is an algebraic identity check: ||I_N||^2=N, ||J_N-I_N||^2=N(N-1), orthogonality, and equal supplied channel energy imply r=1/(N-1). The Record-side non-selection claim also closes algebraically because d=p u/(1-p) realizes any normalized two-sector coordinate p in (0,1). The runner source performs symbolic and matrix checks rather than merely printing constants, though its source-guard reads unprovided notes; that guard is not needed for the load-bearing finite algebra audited here.
+- **auditor confidence:** high
+
+### `flavor_native_action_predicts_q1_2026-06-02`
+
+- **Note:** [`FLAVOR_NATIVE_ACTION_PREDICTS_Q1_2026-06-02.md`](../../docs/FLAVOR_NATIVE_ACTION_PREDICTS_Q1_2026-06-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Narrow action-axis gate: for H=aI+b(C+C^2), the five displayed finite spectral-action cutoffs on a=1, b/a in [0,2] peak near |b|/a=1 (Q=1), not at |b|/a=1/sqrt(2), and HS mass/hopping orthogonality means this two-grade scan does not supply the r=1/2 Koide weighting.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=weak)
+- **load-bearing step:** For the five displayed cutoffs, the finite scan of S(b)=sum_i f(lambda_i^2) over a=1 and b/a in [0,2] has its maximum at |b|/a approximately 1, never near 1/sqrt(2), while the mass and hopping grades are Hilbert-Schmidt orthogonal.  _(class `C`)_
+- **chain closes:** False — The finite action-axis scan itself is reproduced, but the primary runner exits with SCORECARD PASS=9 FAIL=1 because the downstream occupancy-boundary helper uses a stale or brittle prose needle. A clean audit needs the declared runner certificate for the full source-scope boundary to pass live.
+- **rationale:** Issue: scripts/flavor_native_action_predicts_q1_2026_06_02.py currently returns SCORECARD PASS=9 FAIL=1, with the failing check in scripts/flavor_occupancy_boundary_checks_2026_06_13.py's occupancy-note prose boundary. Why this blocks: the core five-cutoff finite scan and HS-orthogonality checks pass, but the source-scope certificate includes the downstream occupancy boundary and the declared primary runner is nonzero. Repair target: update the boundary helper/cache to the current occupancy-note and minimal-axiom wording, or otherwise slice the runner so the action-axis certificate passes without brittle stale prose checks. Claim boundary until fixed: the safe statement is the finite five-cutoff action-axis result and HS orthogonality only; no universal native-action theorem or action-sector selector is supplied.
 - **auditor confidence:** high
 
 ### `flavor_native_beta_no_half_attractor_note_2026-05-30`

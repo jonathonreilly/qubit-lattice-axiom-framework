@@ -21007,12 +21007,12 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "flavor_native_action_predicts_q1_2026-06-02",
-      "claim_scope": null,
+      "claim_scope": "Narrow action-axis gate: for H=aI+b(C+C^2), the five displayed finite spectral-action cutoffs on a=1, b/a in [0,2] peak near |b|/a=1 (Q=1), not at |b|/a=1/sqrt(2), and HS mass/hopping orthogonality means this two-grade scan does not supply the r=1/2 Koide weighting.",
       "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -21021,13 +21021,13 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [
         "scripts/flavor_occupancy_boundary_checks_2026_06_13.py"
       ],
       "load_bearing_score": 3.5,
       "note_path": "docs/FLAVOR_NATIVE_ACTION_PREDICTS_Q1_2026-06-02.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/flavor_native_action_predicts_q1_2026_06_02.py",
       "transitive_descendants": 7

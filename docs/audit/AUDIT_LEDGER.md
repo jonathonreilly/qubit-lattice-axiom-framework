@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 195 |
+| **retained** | 196 |
 | **retained_no_go** | 197 |
 | **retained_bounded** | 895 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1941 |
+| unaudited | 1940 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1278 |
+| `audited_clean` | 1279 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2286 |
+| `unaudited` | 2285 |
 
 | claim_type | count |
 |---|---:|
@@ -1040,6 +1040,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_two_state_markov_stability_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-current | A | - |
 | `qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -14514,6 +14515,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For H=aI+bC+conj(b)C^2, Tr(pi_plus(H))=3a and Tr(pi_perp(H))=b Tr(C)+conj(b) Tr(C^2)=0, so tau_M(H)=Tr(H)=3a and the literal linear trace form cannot distinguish doublet amplitude.  _(class `A`)_
 - **chain closes:** True — The degeneracy follows from elementary C3 circulant algebra: C and C^2 are traceless, so the doublet part contributes zero to the linear trace functional. The runner's M1 subcheck verifies zero tau-minus-trace delta, C/C^2 tracelessness, and the separate BAE saddle ratio for the log-functional candidate; broader P-BAE primitive closure is excluded.
 - **rationale:** The no-go is local and exact: the proposed linear trace functional is just ordinary trace on Hermitian C3 circulants, hence it is blind to doublet amplitude at fixed a and cannot supply the required block-weight distinction. The proof does not need the open target proposal or review PR as authority; it follows from Tr(C)=Tr(C^2)=0 and the displayed decomposition. The runner's relevant M1 subtest passes and the note explicitly withholds any retained claim for the broader P-BAE primitive program.
+- **auditor confidence:** high
+
+### `q_integer_spectrum_theorem_note_2026-05-02`
+
+- **Note:** [`Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For a finite block of qubit sites and a chosen rank-one local readout projection at each site, Q_total=sum_x n_x has spectrum {0,...,N} with binomial multiplicities; no physical electric charge, hypercharge, or Noether charge identification is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-20260709`  (codex-current; independence=cross_family)
+- **load-bearing step:** Since the embedded rank-one projections n_x commute on distinct tensor factors, their joint binary eigenbasis gives Q_total|nu> = (sum_x nu_x)|nu>, with multiplicity C(N,k) at eigenvalue k.  _(class `A`)_
+- **chain closes:** True — The current minimal axioms supply the per-site M_2(C) qubit algebra, and finite tensor-product linear algebra gives commuting rank-one projections with a binary joint eigenbasis. The runner verifies the source firewall, local projection spectrum, tensor-factor commutativity, integer spectrum, binomial multiplicities, and Pauli-coordinate formula.
+- **rationale:** The theorem is a finite-dimensional occupation-count statement over explicitly chosen rank-one projections in the qubit tensor product. It does not derive or identify physical electric charge, hypercharge, or a dynamical conserved charge, and the note states those exclusions. Residual risk is limited to downstream misuse of the integer spectrum as physical charge, not to the audited algebraic spectrum claim itself.
 - **auditor confidence:** high
 
 ### `qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02`

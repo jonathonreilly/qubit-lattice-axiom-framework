@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 175 |
 | high | `unaudited` | 142 |
-| medium | `unaudited` | 95 |
+| medium | `unaudited` | 94 |
 | high | `audited_conditional` | 6 |
 | critical | `audited_conditional` | 4 |
 | medium | `open_gate` | 3 |
@@ -29,7 +29,7 @@ publication tables phrase it.
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 431
+**Total non-retained-grade rows in publication tables:** 430
 
 ## Per-row breakdown
 
@@ -436,7 +436,6 @@ publication tables phrase it.
 | medium | `pmns_graph_commutant_cycle_value_boundary_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `pmns_right_polar_section_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `pmns_transfer_operator_dominant_mode_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `q_integer_spectrum_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `quark_endpoint_denominator_admissibility_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | medium | `quark_jts_physical_point_closure_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `quark_up_amplitude_sqrt7_counterexample_simplification_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |

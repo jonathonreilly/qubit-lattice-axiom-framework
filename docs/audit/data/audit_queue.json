@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 407,
     "high": 272,
-    "leaf": 754,
+    "leaf": 753,
     "medium": 521
   },
   "cycle_break_target_count": 10,
@@ -38813,28 +38813,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "s3_endpoint_fiber_uniform_lift_support_2026-06-27",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/S3_ENDPOINT_FIBER_UNIFORM_LIFT_SUPPORT_2026-06-27.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_s3_endpoint_fiber_uniform_lift_support_2026_06_27.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -58333,6 +58311,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 231,
-  "total_pending": 1954
+  "ready_count": 230,
+  "total_pending": 1953
 }

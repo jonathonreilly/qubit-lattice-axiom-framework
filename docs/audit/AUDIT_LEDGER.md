@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 923 |
+| **retained_bounded** | 924 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1886 |
+| unaudited | 1885 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1317 |
+| `audited_clean` | 1318 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2231 |
+| `unaudited` | 2230 |
 
 | claim_type | count |
 |---|---:|
@@ -1132,6 +1132,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_all_r_boundary_link_disk_theorem_note_2026-05-30` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `s3_cap_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `s3_endpoint_fiber_uniform_lift_support_2026-06-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `s3_general_r_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_mass_matrix_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `s3_taste_cube_decomposition_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -16122,6 +16123,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the explicit cubical-ball family constructed by the runner at R=2,3,4,5, the checker constructs the boundary triangulation and cone complex and verifies the listed finite incidence, link, boundary, and Euler facts.  _(class `A`)_
 - **chain closes:** True — Fresh-context independent check confirmed this is finite combinatorics over the declared runner family: edge-degree two and vertex-link cycle checks make the boundary a closed triangulated 2-manifold in the checked cases; coning gives apex link equal to the base triangulation, paired non-base cone faces, and chi_cap=1. The source excludes global uniqueness and PL S^3 conclusions.
 - **rationale:** The second audit agrees that the narrowed bounded certificate closes only for the explicit finite construction. The runner directly constructs the cubical balls, boundary triangulations, and cone complexes for R=2,3,4,5, while the source explicitly removes global PL cap uniqueness, physical closure, Schoenflies/Alexander/Perelman/Moise imports, and PL S^3 identification.
+- **auditor confidence:** high
+
+### `s3_endpoint_fiber_uniform_lift_support_2026-06-27`
+
+- **Note:** [`S3_ENDPOINT_FIBER_UNIFORM_LIFT_SUPPORT_2026-06-27.md`](../../docs/S3_ENDPOINT_FIBER_UNIFORM_LIFT_SUPPORT_2026-06-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite theorem: for any stated total surjective four-label-to-three-axis quotient with uniform axis law, fiber-uniform lift, and E/T-channel symmetry, the endpoint weights are exactly the shell-pair or center-pair 1/6,1/3 laws; no physical endpoint quotient, same-source readout, or calibration closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-fresh-context-s3-endpoint-auditor-2026-07-09`  (codex-current; independence=fresh_context)
+- **load-bearing step:** If the lifted law is also E/T-channel symmetric, then the two-label fiber must pair same-radial labels, leaving exactly the shell-pair and center-pair lifted laws with radial 1:2 or 2:1 weights.  _(class `A`)_
+- **chain closes:** True — The finite enumerative consequence closes under the stated quotient-lift premises; the note names physical quotient, same-source readout, and calibration bridges as out-of-scope future targets rather than consuming them.
+- **rationale:** The finite claim closes as an exact algebraic/enumerative consequence of the stated quotient-lift premises. The note explicitly does not claim the physical four-to-three quotient, physical fiber-uniform lift, same-source readout, or typing/calibration bridges; those are named as remaining theorem targets rather than silently imported. A physical endpoint-use claim would be conditional, but the audited bounded support theorem is scoped only to the algebraic consequence under those premises.
 - **auditor confidence:** high
 
 ### `s3_general_r_derivation_note`

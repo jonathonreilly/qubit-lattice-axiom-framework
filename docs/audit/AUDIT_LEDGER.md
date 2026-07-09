@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 197 |
-| **retained_no_go** | 204 |
+| **retained_no_go** | 205 |
 | **retained_bounded** | 920 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1891 |
+| unaudited | 1890 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1313 |
+| `audited_clean` | 1314 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2236 |
+| `unaudited` | 2235 |
 
 | claim_type | count |
 |---|---:|
@@ -1085,6 +1085,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `quark_route2_endpoint_blind_renormalization_no_go_note_2026-06-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-current | A | - |
 | `quark_route2_eta_floor_hf_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_time_coupling_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -15407,6 +15408,18 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** If a future proof derives the double-local projector normalization, then lambda=(w_E/w_T1)^-2=9/4 and the endpoint chain closes.  _(class `A`)_
 - **chain closes:** None — The endpoint algebra closes only after supplying the double reciprocal local projector-normalization law q_X proportional to w_X^-2; that bridge is an explicit primitive/premise in the packet, not a derived result.
 - **rationale:** Issue: the double reciprocal local projector-normalization law q_X proportional to w_X^-2 is not derived from packet inputs; it is the named missing primitive. Why this blocks: the endpoint rho_E=21/4 follows only after that normalization bridge is admitted. Repair target: derive the double-local normalization from Route-2 source/tensor/readout structure, with a runner that computes the bridge rather than selecting p=-2 against lambda=9/4. Claim boundary until fixed: the note cleanly isolates the conditional algebra and falsifies nearby monomial laws, but it is not a current-surface derivation.
+
+### `quark_route2_endpoint_blind_renormalization_no_go_note_2026-06-21`
+
+- **Note:** [`QUARK_ROUTE2_ENDPOINT_BLIND_RENORMALIZATION_NO_GO_NOTE_2026-06-21.md`](../../docs/QUARK_ROUTE2_ENDPOINT_BLIND_RENORMALIZATION_NO_GO_NOTE_2026-06-21.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Exact no-go for endpoint-blind, separable finite-box renormalizations of Route-2 E/T endpoint ratios; excludes nonseparable E-specific counterterms and new readout primitives.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-fresh-context-audit-subagent-route2-nogo-2026-07-09`  (codex-current; independence=fresh_context)
+- **load-bearing step:** Under gamma_X(endpoint;N) -> c_X(N) r_endpoint(N) gamma_X(endpoint;N), both q_E and q_T acquire the same r_center/r_shell factor, so lambda' = q_E'/q_T' = q_E/q_T.  _(class `A`)_
+- **chain closes:** None — The allowed endpoint-blind/separable reparameterization preserves lambda=q_E/q_T exactly, so it cannot make both endpoint targets true unless the unrenormalized lambda is already 9/4.
+- **rationale:** The scoped no-go closes by exact algebra: the allowed endpoint-blind/separable reparameterization preserves lambda, so it cannot make both endpoint targets true unless the unrenormalized lambda is already 9/4. The runner verifies the symbolic invariance, target equivalence, finite-box cache checks, wrong-sign bulk E lift, and note firewall. The note does not overclaim against nonseparable E-specific center/shell counterterms or new readout primitives; it explicitly classifies those as new science outside the no-go.
 
 ### `quark_route2_eta_floor_hf_boundary_note`
 

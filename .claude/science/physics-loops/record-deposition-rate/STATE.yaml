@@ -22,11 +22,29 @@ success_bar: >
   kappa(threshold) measured with declared proxies; both phenomenological
   handles expressed as bounds on one constant; honest statement of what
   remains free. No formation rule chosen.
-current_block: block01 worker launching
-current_branch: physics-loop/record-deposition-rate-block01-20260708
+current_block: block02 shipped (PR #5085); block03 (constraint note +
+  close) remains
+current_branch: physics-loop/record-deposition-rate-block02-20260708
+  (base = collapse-merger-comparator-block01, which holds the engine)
 worktree: /Users/jonBridger/tp-matter-mass-wep
 imports: activity/distinguishability proxies as declared readout devices
   (QD bridge remains a named premise); comparators by citation.
 discipline: physics-loop standard.
-next_exact_action: review block01 worker draft
+block01_result: >
+  PR #5082. KAPPA-MEASURED: kappa(theta) power law exponent -0.81 in
+  excess distinguishability above the interacting-GS baseline;
+  deposition-sparse window non-empty at theta >= 0.2; recurrence floor
+  below (closed-ring finding, reported).
+block02_result: >
+  PR #5085. WINDOW-MAPPED: five-decade kappa sweep in the coupled toy;
+  trail/ossification monotone 5/5; mobile-sparse window non-empty
+  (kappa=1e-6); fossil-anchor real (kappa=1e-3 pins); kappa_mob=1e-6
+  four decades below kappa_oss=1e-2 — mobility forces sparsity, the
+  comparator-level exhibit of P-DEPOSITION-SPARSE. d=1 wall caveat and
+  deposit-displace ratchet mode declared. Worker drafts failed closed on
+  the engine's bare-product deposition probability; engine fixed
+  (Poisson conversion) on the collapse-merger-comparator-block01 branch.
+next_exact_action: block03 — constraint note tying kappa(theta), the
+  sparse window, and the mobility bound into one owner-readable
+  statement; then campaign close + handoff.
 stop_condition_hit: none

@@ -26,10 +26,18 @@ SPEC-NOTE design concerns surfaced here and in stdout:
 * The permanent fraction p is a comparator device: only records formed inside
   the moving activity zone are promoted to reset-immune, axiom-faithful records.
   All other records are resettable in the campaign-5 stationarity apparatus.
+  That resettable background refreshes capacity and is a declared comparator
+  artifact, not the axiom-faithful one-shot wake.
 * Co-moving bins use the even-width window convention: offsets 0..9 are the
   wake/trailing half, and offsets 10..19 are the front/leading half.
 * The saturation guard reports the maximum zone-width permanent trail density;
   resettable background occupancy is not treated as axiom permanence.
+* The saturation wake leg turns background formation off outside the moving
+  zone to isolate the zone's own deposition.  Background-formation physics
+  remains the content of the two-channel comparator legs above.
+* Saturation wake probes are non-invasive instantaneous-clock readouts: baseline
+  formation attempts are counted from the frozen record field but are not
+  committed as records.
 """
 
 from __future__ import annotations
@@ -58,6 +66,16 @@ SIGMA_SPEED = 2.0
 SIGMA_P0_WAKE = 2.0
 SATURATION_WARN_DENSITY = 0.95
 EPS = 1.0e-12
+SATURATION_WAKE_SEED = 20260708
+N_TRANSITS = 6
+SATURATION_WAKE_V = 1.0
+# Calibrated so first-transit fill lands in the partial-coverage regime
+# (f ~ 0.35): fill ~ 1 - exp(-B * rate0 * dwell) with rate0 = 2.0 and
+# dwell = ZONE_WIDTH / v = 20.  The b = 5 corner saturates in one transit
+# (f = 1) and is kept as a reported corner, not a gate.
+SATURATION_WAKE_BOOST = 0.011
+SATURATION_WAKE_BOOST_CORNER = 5.0
+SATURATION_WAKE_F_VALID = (0.10, 0.70)
 
 
 @dataclass(frozen=True)
@@ -97,6 +115,31 @@ class ComboResult:
     wake_ratio: float
     wake_ratio_err: float
     max_perm_window_density: float
+
+
+@dataclass(frozen=True)
+class SaturationWakeResult:
+    transit_totals: np.ndarray
+    coverage: np.ndarray
+    coverage_model: np.ndarray
+    f_hat: float
+    geometric_rms: float
+    constant_rms: float
+    suppression: np.ndarray
+    suppression_increments: np.ndarray
+    coverage_track_max_abs: float
+    sigma_clock: np.ndarray
+    one_shot_ok: bool
+    check07_ok: bool
+    check08_ok: bool
+    check09_ok: bool
+    check10_ok: bool
+    corner_f: float
+    corner_coverage: float
+
+    @property
+    def ok(self) -> bool:
+        return self.check07_ok and self.check08_ok and self.check09_ok and self.check10_ok
 
 
 def load_campaign5_source() -> ModuleType:
@@ -402,6 +445,188 @@ def ratio_with_err(num: float, num_err: float, den: float, den_err: float) -> tu
     return float(value), float(abs(err))
 
 
+def saturation_wake_zone_rates(permanent: np.ndarray, t_zone: float, boost: float = SATURATION_WAKE_BOOST) -> np.ndarray:
+    """Formation rates for Leg 3: permanent records, zone-only attempts."""
+
+    recorded_i = permanent.astype(np.int8)
+    neighbor_count = np.roll(recorded_i, 1) + np.roll(recorded_i, -1)
+    rates = boost * INTRINSIC_RATE_BY_NEIGHBORS[neighbor_count]
+    rates[permanent] = 0.0
+    start = zone_start(t_zone, SATURATION_WAKE_V)
+    offsets = (SITE_INDEX - start) % L_RING
+    rates[offsets >= ZONE_WIDTH] = 0.0
+    return rates
+
+
+def run_saturation_wake_transit(
+    permanent: np.ndarray,
+    rng: np.random.Generator,
+    boost: float = SATURATION_WAKE_BOOST,
+) -> np.ndarray:
+    """Run one full zone transit with p=1 and no background formation."""
+
+    deposits = np.zeros(L_RING, dtype=bool)
+    duration = L_RING / SATURATION_WAKE_V
+    t = 0.0
+    while t < duration - 1.0e-12:
+        rates = saturation_wake_zone_rates(permanent, t, boost)
+        total = float(rates.sum())
+        next_boundary = next_zone_boundary(t, SATURATION_WAKE_V, duration)
+        if total <= 0.0:
+            t = min(next_boundary, duration)
+            continue
+
+        dt_event = float(rng.exponential(1.0 / total))
+        dt_stop = min(dt_event, next_boundary - t, duration - t)
+        if dt_stop < -1.0e-12:
+            raise RuntimeError("negative time step in saturation wake transit")
+        dt = max(0.0, dt_stop)
+        t += dt
+        if dt_event > dt + 1.0e-12:
+            continue
+        if t >= duration - 1.0e-12:
+            break
+
+        draw = float(rng.random() * total)
+        cumulative = np.cumsum(rates)
+        idx = int(np.searchsorted(cumulative, draw, side="right"))
+        if idx >= L_RING or permanent[idx] or deposits[idx] or rates[idx] <= 0.0:
+            raise RuntimeError("selected invalid saturation wake deposit")
+        deposits[idx] = True
+        permanent[idx] = True
+    return deposits
+
+
+def saturation_probe_clock_field(permanent: np.ndarray) -> np.ndarray:
+    """Non-invasive baseline-rate clock readout from a frozen record field."""
+
+    empty_clock = float(INTRINSIC_RATE_BY_NEIGHBORS[0])
+    if empty_clock <= 0.0:
+        raise RuntimeError("non-positive empty-site probe clock")
+    recorded_i = permanent.astype(np.int8)
+    neighbor_count = np.roll(recorded_i, 1) + np.roll(recorded_i, -1)
+    rates = INTRINSIC_RATE_BY_NEIGHBORS[neighbor_count].copy()
+    rates[permanent] = 0.0
+    return rates / empty_clock
+
+
+def relative_rms(observed: np.ndarray, predicted: np.ndarray, scale: float) -> float:
+    if scale <= 0.0:
+        raise RuntimeError("non-positive rms scale")
+    return float(np.sqrt(np.mean((observed - predicted) ** 2)) / scale)
+
+
+def saturation_corner_report() -> tuple[float, float]:
+    """One-transit corner at the saturating boost: (f_corner, coverage_1)."""
+
+    rng = np.random.default_rng(SATURATION_WAKE_SEED + 1)
+    permanent = np.zeros(L_RING, dtype=bool)
+    deposits = run_saturation_wake_transit(permanent, rng, SATURATION_WAKE_BOOST_CORNER)
+    f_corner = float(deposits.sum()) / float(L_RING)
+    return f_corner, float(permanent.sum()) / float(L_RING)
+
+
+def analyze_saturation_wake() -> SaturationWakeResult:
+    rng = np.random.default_rng(SATURATION_WAKE_SEED)
+    permanent = np.zeros(L_RING, dtype=bool)
+    deposits = np.zeros((N_TRANSITS, L_RING), dtype=bool)
+    probe_fields = np.zeros((N_TRANSITS, L_RING), dtype=float)
+
+    for transit in range(N_TRANSITS):
+        deposits[transit] = run_saturation_wake_transit(permanent, rng, SATURATION_WAKE_BOOST)
+        probe_fields[transit] = saturation_probe_clock_field(permanent)
+
+    deposits_by_site = deposits.sum(axis=0)
+    one_shot_ok = bool(deposits_by_site.max() <= 1)
+    if not one_shot_ok:
+        raise RuntimeError("CHECK-07 one-shot bookkeeping violated")
+    transit_totals = deposits.sum(axis=1).astype(float)
+    swept_sites = float(L_RING)
+    f_hat = float(transit_totals[0] / swept_sites)
+    if not (SATURATION_WAKE_F_VALID[0] <= f_hat <= SATURATION_WAKE_F_VALID[1]):
+        raise RuntimeError(
+            f"Leg 3 boost miscalibrated: f_hat={f_hat:.3f} outside "
+            f"{SATURATION_WAKE_F_VALID} — gates need the partial-coverage regime"
+        )
+    remainder = 1.0 - f_hat
+    geometric_model = transit_totals[0] * remainder ** np.arange(N_TRANSITS, dtype=float)
+    constant_model = np.full(N_TRANSITS, float(transit_totals.mean()), dtype=float)
+    rms_scale = max(float(transit_totals[0]), 1.0)
+    geometric_rms = relative_rms(transit_totals, geometric_model, rms_scale)
+    constant_rms = relative_rms(transit_totals, constant_model, rms_scale)
+    rejects_constant = constant_rms > 0.0 and geometric_rms < 0.5 * constant_rms
+    # The geometric model assumes independent-site filling.  The crowding
+    # mechanism suppresses deposition into gaps whose neighbors are already
+    # recorded, so the physical claim is AT-LEAST-geometric decay: each
+    # transit deposits no more than the independent-filling prediction, and
+    # strictly less as crowding builds.  Equality is not expected.
+    strictly_decreasing = bool(np.all(np.diff(transit_totals) < 0.0))
+    at_most_geometric = bool(
+        np.all(transit_totals <= geometric_model * 1.05 + 3.0)
+    )
+    check07_ok = bool(
+        one_shot_ok and strictly_decreasing and at_most_geometric and rejects_constant
+    )
+
+    coverage = np.cumsum(transit_totals) / swept_sites
+    coverage_model = 1.0 - remainder ** np.arange(1, N_TRANSITS + 1, dtype=float)
+    coverage_abs_err = float(np.max(np.abs(coverage - coverage_model)))
+    # Sub-geometric accumulation: the wake builds no faster than independent
+    # filling, and its increments shrink (self-limiting trail).
+    coverage_below_geometric = bool(np.all(coverage <= coverage_model + 0.02))
+    increments_shrinking = bool(np.all(np.diff(np.diff(np.concatenate([[0.0], coverage]))) <= 1.0e-12))
+    check08_ok = bool(coverage_below_geometric and increments_shrinking)
+
+    suppression = 1.0 - probe_fields.mean(axis=1)
+    suppression_increments = np.diff(suppression)
+    monotone_suppression = bool(np.all(suppression_increments >= -1.0e-12))
+    concave_suppression = bool(np.all(np.diff(suppression_increments) <= 1.0e-12))
+    asymptoting_suppression = bool(
+        abs(float(suppression_increments[-1]))
+        <= 0.25 * abs(float(suppression_increments[0])) + 1.0e-12
+    )
+    if suppression[-1] <= 0.0 or coverage[-1] <= 0.0:
+        coverage_track_max_abs = math.inf
+    else:
+        coverage_track = np.abs(suppression / suppression[-1] - coverage / coverage[-1])
+        coverage_track_max_abs = float(coverage_track.max())
+    check09_ok = bool(
+        monotone_suppression
+        and concave_suppression
+        and asymptoting_suppression
+        and coverage_track_max_abs <= 0.15
+    )
+
+    sigma_clock = probe_fields.std(axis=1)
+    max_sigma = float(sigma_clock.max())
+    max_suppression = float(suppression.max())
+    check10_ok = bool(
+        sigma_clock[-1] <= 0.4 * max_sigma + 1.0e-12
+        and suppression[-1] >= 0.9 * max_suppression - 1.0e-12
+    )
+
+    corner_f, corner_coverage = saturation_corner_report()
+    return SaturationWakeResult(
+        transit_totals=transit_totals,
+        coverage=coverage,
+        coverage_model=coverage_model,
+        f_hat=f_hat,
+        geometric_rms=geometric_rms,
+        constant_rms=constant_rms,
+        suppression=suppression,
+        suppression_increments=suppression_increments,
+        coverage_track_max_abs=coverage_track_max_abs,
+        sigma_clock=sigma_clock,
+        one_shot_ok=one_shot_ok,
+        check07_ok=check07_ok,
+        check08_ok=check08_ok,
+        check09_ok=check09_ok,
+        check10_ok=check10_ok,
+        corner_f=corner_f,
+        corner_coverage=corner_coverage,
+    )
+
+
 def analyze_combo(v: float, b: float, p: float) -> ComboResult:
     trials: list[TrialStats] = []
     combo_seed_base = SEED + int(round(1000.0 * v)) + int(100 * b) + int(10000 * p)
@@ -486,6 +711,14 @@ def fmt_float(value: float, digits: int = 3) -> str:
     return f"{value:.{digits}f}"
 
 
+def fmt_series(values: np.ndarray, digits: int = 3) -> str:
+    return "[" + ",".join(fmt_float(float(value), digits) for value in values) + "]"
+
+
+def fmt_count_series(values: np.ndarray) -> str:
+    return "[" + ",".join(str(int(round(float(value)))) for value in values) + "]"
+
+
 def format_wake(results: list[ComboResult]) -> str:
     lookup = result_map(results)
     chunks: list[str] = []
@@ -500,6 +733,39 @@ def format_wake(results: list[ComboResult]) -> str:
                 )
             chunks.append(f"v={v:g},b={b:g}[{';'.join(vals)}]")
     return " | ".join(chunks)
+
+
+def format_saturation_wake(result: SaturationWakeResult) -> str:
+    verdict = "WAKE-SELF-REGULATING" if result.ok else "WAKE-NOT-SELF-REGULATING"
+    max_suppression = float(result.suppression.max())
+    s6_over_max = (
+        float(result.suppression[-1] / max_suppression) if max_suppression > 0.0 else math.nan
+    )
+    return (
+        "SATURATION-WAKE: "
+        f"setup seed={SATURATION_WAKE_SEED} L={L_RING} W={ZONE_WIDTH} "
+        f"v={SATURATION_WAKE_V:g} b={SATURATION_WAKE_BOOST:g} p=1 "
+        f"N_TRANSITS={N_TRANSITS} profile={LINEAR_PROFILE.name} "
+        f"law={LINEAR_LAW.name}:F(A)=A background_outside=0; "
+        f"CHECK-07 one_shot={result.one_shot_ok} ok={result.check07_ok} "
+        f"T={fmt_count_series(result.transit_totals)} f={fmt_float(result.f_hat, 3)} "
+        f"rms_geo={fmt_float(result.geometric_rms, 3)} "
+        f"rms_const={fmt_float(result.constant_rms, 3)}; "
+        f"CHECK-08 ok={result.check08_ok} c={fmt_series(result.coverage, 3)} "
+        f"c_geo={fmt_series(result.coverage_model, 3)}; "
+        f"CHECK-09 ok={result.check09_ok} S={fmt_series(result.suppression, 3)} "
+        f"dS={fmt_series(result.suppression_increments, 3)} "
+        f"track_max={fmt_float(result.coverage_track_max_abs, 3)}; "
+        f"CHECK-10 ok={result.check10_ok} sigma_N={fmt_series(result.sigma_clock, 3)} "
+        f"S6_over_maxS={fmt_float(s6_over_max, 3)}; "
+        "physics=UNIFORM-WAKE-IS-CONVENTION; "
+        f"CORNER b={SATURATION_WAKE_BOOST_CORNER:g}: f={fmt_float(result.corner_f, 3)} "
+        f"c1={fmt_float(result.corner_coverage, 3)} (saturates in one transit, reported not gated); "
+        "SPEC-NOTE background-off isolates zone deposition; "
+        "probe counts baseline attempts but commits no records; "
+        "gates evaluated at the calibrated partial-coverage boost; "
+        f"{verdict}"
+    )
 
 
 def format_during_gate(results: list[ComboResult]) -> str:
@@ -578,8 +844,9 @@ def speed_scaling(results: list[ComboResult]) -> tuple[bool, float, list[str], l
     return ok, min_z, chunks, alphas, sdur_text
 
 
-def run_all() -> tuple[str, str, str, str, str, str]:
+def run_all() -> tuple[str, ...]:
     results = [analyze_combo(v, b, p) for v in SPEEDS for b in BOOSTS for p in PERMANENT_FRACTIONS]
+    saturation_wake = analyze_saturation_wake()
     during_ok = all(
         r.wake_clock < r.front_clock and r.wake_front_z >= SIGMA_WAKE_FRONT
         for r in results
@@ -619,18 +886,26 @@ def run_all() -> tuple[str, str, str, str, str, str]:
         f"saturation_guard={saturation_ok} max_perm_window_density={max_density:.3f}; "
         "SPEC-NOTE normalized site-locked clock isolates crowding and gives saturated bins N=0; "
         "p is in-zone permanent fraction; "
-        "co-moving wake/front are trailing/leading half-bins; resetting is comparator."
+        "co-moving wake/front are trailing/leading half-bins; "
+        "resetting background refreshes capacity and is a comparator artifact; "
+        "Leg3 background-off isolates zone deposition and probe attempts are counted without commits."
     )
+    saturation_line = format_saturation_wake(saturation_wake)
     if all((during_ok, p0_ok, monotone_ok, scaling_ok, saturation_ok)):
         verdict = "TWO-CHANNEL-QUANTIFIED"
     else:
         verdict = "MACHINERY-FAIL"
+    if saturation_wake.ok:
+        verdict = f"{verdict} + WAKE-SELF-REGULATING"
+    else:
+        verdict = f"{verdict} + WAKE-NOT-SELF-REGULATING"
     total_line = (
         f"TOTAL: {verdict} (+ flags R_wake_range={fmt_float(ratio_range[0], 3)}.."
         f"{fmt_float(ratio_range[1], 3)}, wake_monotone_in_p={monotone_ok}, "
-        f"dwell_alpha={fmt_float(dwell_alpha, 2)})"
+        f"dwell_alpha={fmt_float(dwell_alpha, 2)}, "
+        f"saturation_wake={saturation_wake.ok})"
     )
-    return setup_line, during_line, wake_line, scaling_line, checks_line, total_line
+    return setup_line, during_line, wake_line, scaling_line, checks_line, saturation_line, total_line
 
 
 def main() -> int:
@@ -638,7 +913,12 @@ def main() -> int:
         lines = run_all()
         for line in lines:
             print(line)
-        return 0 if lines[-1].startswith("TOTAL: TWO-CHANNEL-QUANTIFIED") else 1
+        return (
+            0
+            if lines[-1].startswith("TOTAL: TWO-CHANNEL-QUANTIFIED")
+            and "WAKE-SELF-REGULATING" in lines[-1]
+            else 1
+        )
     except Exception as exc:  # noqa: BLE001 - fail closed into the required token.
         print(f"TOTAL: MACHINERY-FAIL {type(exc).__name__}: {exc}")
         return 1

@@ -1,0 +1,6 @@
+CHARGE q_abelian=ok qh_l2_nonzero=8 qh_l2_minmax=(9.171e-01,1.297e+00)
+ENERGY-OBSTRUCTION C01_hs8=4.049983e+02 locality_d>=2=ok self=ok dense_err=1.8e-15 G01_hs8=4.049983e+02 noncentral_spread=1.000
+CURRENT-CLOSURE j_hs8=4.049983e+02 div_exact=ok width=3 angle_hq=1.571 angle_hqJ=1.244 drop=0.327 curr_dominated=no
+CONTROLS free_C01_hs8=1.718835e+02 single_C01_hs8=(6.349e+01,1.966e+02) diag_abelian=ok obstruction-is-kinetic
+SPEC-NOTE eta-auxiliary-only; current=crossing-partial-sum; projection=8site-degree<=6-coeff-basis
+TOTAL ABELIAN-OBSTRUCTED elapsed=1.36s seed=20260708

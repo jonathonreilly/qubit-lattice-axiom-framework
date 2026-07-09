@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 200 |
-| **retained_bounded** | 901 |
+| **retained_bounded** | 902 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1926 |
+| unaudited | 1925 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1288 |
+| `audited_clean` | 1289 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2271 |
+| `unaudited` | 2270 |
 
 | claim_type | count |
 |---|---:|
@@ -305,6 +305,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -3885,6 +3886,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** Averaging the per-momentum Bogoliubov lower bound and using W2 gives C_A >= (2 c_W^2 |m_L|^2/(beta C_H)) I_d(L), hence |m_L|^2 <= beta C_A C_H/(2 c_W^2 I_d(L)).  _(class `A`)_
 - **chain closes:** True — Within the stated W1-W4 hypotheses, W1, W3, and W4 give the per-mode lower bound on the anticommutator, and W2 turns the nonzero-momentum average into the displayed theorem bound. The d=1, d=2, and d>=3 IR threshold is covered by the retained_bounded cited authorities and matches the independent small-k comparison E_k ~ |k|^2.
 - **rationale:** The load-bearing step is a direct algebraic rearrangement of the four explicit finite-volume hypotheses with the stated unnormalized Fourier volume factors. The runner is not merely printing constants: it recomputes the finite lattice sums, checks the d=1 identity, monotonic/log behavior, bound monotonicity, and the symbolic rearrangement. The note explicitly excludes the broader claim that arbitrary continuous-symmetry Hamiltonians satisfy W1-W4, so the missing operator-construction theorem is outside this audited scope rather than a hidden dependency.
+- **auditor confidence:** high
+
+### `color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06`
+
+- **Note:** [`COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md`](../../docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-dimensional conditional theorem: for supplied endpoint C^3 carriers and a supplied full-rank cross-site bilinear, polar decomposition gives an endpoint-frame-covariant unitary transport, determinant/Z3 bookkeeping, Wilson-form trace invariance under the stated orientation convention, and the rank-boundary witnesses; no C^3 carrier, physical color identification, full-rank sector selection, gauge dynamics, action, probability, Wilson positivity, confinement, chiral bridge, or hypercharge bridge is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-2026-07-09-color-composition-polar-transport`  (codex-current; independence=cross_family)
+- **load-bearing step:** Given supplied endpoint C^3 carriers and a supplied full-rank bilinear M(x,y), the finite-dimensional polar decomposition M=UP gives a unique unitary U whose endpoint-frame transformation is U' = g_y U g_x^dagger.  _(class `A`)_
+- **chain closes:** True — Within the explicitly conditional scope, the load-bearing step is standard finite-dimensional matrix algebra and polar decomposition over supplied C^3 data. The source and runner preserve that the supplied carrier and supplied bilinear are hypotheses, not derived framework content.
+- **rationale:** The runner returns TOTAL PASS=10 FAIL=0, with exact rational/signed-permutation witnesses for polar covariance, determinant/Z3 bookkeeping, Wilson-form trace invariance, rank exhibits, and rank-boundary discontinuity, plus seeded numerical controls and boundary quote checks. The source's open SUPPLIED-C3 and SUPPLIED-BILINEAR premises are included in the audited theorem statement and are explicitly excluded from downstream citation as derived content. Thus the bounded algebraic conditional claim closes, while the physical color, R5, dynamics, and gauge-action bridges remain outside scope.
 - **auditor confidence:** high
 
 ### `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12`

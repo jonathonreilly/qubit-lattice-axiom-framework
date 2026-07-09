@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 200 |
-| **retained_bounded** | 903 |
+| **retained_bounded** | 904 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1924 |
+| unaudited | 1923 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1290 |
+| `audited_clean` | 1291 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2269 |
+| `unaudited` | 2268 |
 
 | claim_type | count |
 |---|---:|
@@ -544,6 +544,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
+| `gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `gate_b_grown_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_grown_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_grown_propagating_field_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -7324,6 +7325,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For a supplied finite layered Gate B DAG and edge kernel, the runner recursion a_j(new) += a_i(old) W_ij equals the finite directed path sum over all unblocked source-to-detector paths.  _(class `A`)_
 - **chain closes:** True — The restricted packet includes the declared helper runner, and the primary runner independently reconstructs the finite path sum from the helper's graph/kernel functions. The physical interpretation of the kernel and detector readout is explicitly outside the audited claim.
 - **rationale:** The primary runner returns TOTAL PASS=13 FAIL=0 and verifies runner-recursion equality to an independently enumerated finite path sum, linearity in source amplitudes, blocked-node deletion, finite edge weights, and terminal probability normalization. The helper source required by the note is present and inspectable, and the runner checks that the source boundary preserves the `GB-S2a`/`GB-S2b` split. The result is a clean finite algebra theorem only; all physical Gate B readout and dynamics claims remain open.
+- **auditor confidence:** high
+
+### `gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18`
+
+- **Note:** [`GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](../../docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-runner theorem that `GB-S1b-a` closes as exact positive regularized radial scalar algebra on the supplied Gate B coordinate slab, including equality to the helper formula strength/(r+0.1), finite mass-node value from epsilon=0.1, radial monotonicity, global strength normalization, and linearity in source strength; no Poisson PDE, physical source/boundary/regulator selection, absolute unit normalization, propagation/readout semantics, generated connectivity, Gate B dynamics closure, or physical gravity theorem is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-2026-07-09-gate-b-radial-scalar`  (codex-current; independence=cross_family)
+- **load-bearing step:** On the supplied finite Gate B coordinate slab, the helper scalar `_field_for_mass` exactly equals strength/(r(x,mass)+0.1), is positive finite, radially nonincreasing, and linear in source strength.  _(class `A`)_
+- **chain closes:** True — The restricted packet includes the declared helper runner, and the primary verifier independently recomputes the radial formula from the helper's finite coordinate data. The physical selection of this scalar, regulator, source normalization, and units remains explicitly outside scope.
+- **rationale:** The primary runner returns TOTAL PASS=13 FAIL=0 and verifies exact equality to strength/(r+0.1), positivity/finiteness including the mass node, radial nonincrease, linear strength scaling, one global normalization, and the norm*strength degeneracy in the action contribution. The helper source required by the note is present and inspectable, and the source/parent boundary checks preserve the `GB-S1b-a`/`GB-S1b-b` split. The result is a clean finite algebra theorem only; physical Poisson/source normalization and Gate B dynamics remain open.
 - **auditor confidence:** high
 
 ### `gate_b_grown_distance_law_note`

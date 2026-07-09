@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 200 |
-| **retained_bounded** | 902 |
+| **retained_bounded** | 903 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1925 |
+| unaudited | 1924 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1289 |
+| `audited_clean` | 1290 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2270 |
+| `unaudited` | 2269 |
 
 | claim_type | count |
 |---|---:|
@@ -543,6 +543,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_context_independence_no_go_note_2026-06-17` | no_go | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `gate_b_grown_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_grown_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_grown_propagating_field_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -7310,6 +7311,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** In the SHA-pinned runner cache, the harness reports 36/36 TOWARD and F~M=1.00 for each declared drift/restore row.  _(class `C`)_
 - **chain closes:** True — The chain closes for the bounded cache-table claim: the runner SHA matches the cache, and the source code deterministically constructs the declared seeded scenarios and computes the TOWARD fractions and F~M slopes. The admitted runner ingredients limit the scope but are not hidden premises for a physical Gate B bridge theorem.
 - **rationale:** The runner computes the table from fixed scenario parameters, fixed seeds, propagation loops, detector-weighted centroids, and log-slope regression; it does not hard-code the 36/36 TOWARD or F~M=1.00 outcomes. There is no external physical comparator or tuned observational value being matched in the audited claim. The note explicitly confines the result to the SHA-pinned finite harness certificate and excludes grown-geometry derivation, source/readout/kernel derivation, retained physical gravity readout, and clean Gate B/gravity closure.
+- **auditor confidence:** high
+
+### `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18`
+
+- **Note:** [`GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](../../docs/GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-runner theorem that `GB-S2a` closes as exact finite complex-amplitude path-sum propagation on the supplied layered Gate B DAG and supplied edge kernel, including linearity, blocked-node deletion, finite nonzero edge weights, and normalized terminal detector probabilities when terminal intensity is nonzero; no edge-kernel selection, central-barrier physical semantics, detector-window mass-gain readout, TOWARD/F~M physical meaning, scalar normalization, generated connectivity, Gate B dynamics closure, or physical gravity theorem is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-2026-07-09-gate-b-path-sum`  (codex-current; independence=cross_family)
+- **load-bearing step:** For a supplied finite layered Gate B DAG and edge kernel, the runner recursion a_j(new) += a_i(old) W_ij equals the finite directed path sum over all unblocked source-to-detector paths.  _(class `A`)_
+- **chain closes:** True — The restricted packet includes the declared helper runner, and the primary runner independently reconstructs the finite path sum from the helper's graph/kernel functions. The physical interpretation of the kernel and detector readout is explicitly outside the audited claim.
+- **rationale:** The primary runner returns TOTAL PASS=13 FAIL=0 and verifies runner-recursion equality to an independently enumerated finite path sum, linearity in source amplitudes, blocked-node deletion, finite edge weights, and terminal probability normalization. The helper source required by the note is present and inspectable, and the runner checks that the source boundary preserves the `GB-S2a`/`GB-S2b` split. The result is a clean finite algebra theorem only; all physical Gate B readout and dynamics claims remain open.
 - **auditor confidence:** high
 
 ### `gate_b_grown_distance_law_note`

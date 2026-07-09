@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Block02 v2: cell-interface activity and register-information opportunity.
+"""Block02 v3: cell-interface activity and register-information opportunity.
 
 This is the measured half of "local activity is record-formation opportunity"
 on the gauged comparator.  It is a declared finite-volume measurement, not a
@@ -17,6 +17,25 @@ v2 changelog (the v1 gates were ill-posed in two distinct ways):
   Kick sites saturated first and the resulting statistic decorrelated from
   activity (v1 reported r=-0.42).  v2 instead uses excess register information
   at the declared early-transient time t=3.
+
+v3 changelog (two v2 gates had spec-side defects):
+
+* CHECK-02 no longer bounds the full cell density-matrix change by boundary
+  activity: the cell's internal bond can change that state without boundary
+  flux.  It now tests the exact pointer-continuity statement
+  ``0.5*||p_t(Q_B)-p_(t-dt)(Q_B)||_1 <= c1*a_B(t)*dt + 1e-6``.  The single
+  ``c1`` is still fixed by the declared pooled upper-activity-decile fit.
+* CHECK-04/05 no longer sum excess mutual information over every register.
+  Fragments are single exterior links, and ``I_B`` uses only the screening
+  zone through exterior-link distance two from either cell boundary.  The
+  boundary singletons remain eligible, but their joint pair
+  ``(E_(2B-1),E_(2B+1))`` is never constructed because its difference is
+  identically ``Q_B``.  In block01's right-first ordering, the eligible link
+  offsets from ``2B`` are ``(+1,-1,+2,-2,+3,-3)`` modulo 12.
+* The coupling panel is extended from ``(0.6,1.0)`` to ``(0.3,0.6,1.0)``;
+  CHECK-03 retains the full-cell entropy-continuity theorem layer, and
+  CHECK-04 retains the declared ``t=3`` endpoint in the early window
+  ``t <= 3``.
 
 The entropy theorem check uses the sharp Fannes--Audenaert continuity bound:
 K. M. R. Audenaert, J. Phys. A 40 (2007) 8127--8136.  For a four-dimensional
@@ -42,7 +61,9 @@ N_SITES = 12
 N_CELLS = N_SITES // 2
 CELL_DIMENSION = 4
 MASS = 0.3
-COUPLINGS = (0.6, 1.0)
+V2_COUPLINGS = (0.6, 1.0)
+COUPLINGS = (0.3,) + V2_COUPLINGS
+GROUND_SEED_OFFSETS = {0.6: 0, 1.0: 1, 0.3: 2}
 W_MAX = 4
 T_FINAL = 10.0
 DT = 0.1
@@ -50,7 +71,15 @@ N_TIMES = int(round(T_FINAL / DT)) + 1
 TIMES = np.linspace(0.0, T_FINAL, N_TIMES)
 EARLY_TIME = 3.0
 EARLY_INDEX = int(round(EARLY_TIME / DT))
-LINK_FRAGMENTS = tuple((2 * fragment, 2 * fragment + 1) for fragment in range(N_CELLS))
+N_FRAGMENTS = N_SITES - 1
+SCREENING_RADIUS = 2
+SCREENING_LINK_OFFSETS = (1, -1, 2, -2, 3, -3)
+EXTERIOR_LINK_DISTANCES = (0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5)
+SCREENING_FRAGMENT_INDICES = tuple(
+    index
+    for index, distance in enumerate(EXTERIOR_LINK_DISTANCES)
+    if distance <= SCREENING_RADIUS
+)
 
 # All gates and resolutions are declared before looking at the measurements.
 STATIONARY_FLOOR = 1.0e-8
@@ -92,6 +121,7 @@ class CaseResult:
     fragment_information: np.ndarray
     cell_activity: np.ndarray
     cumulative_activity: np.ndarray
+    pointer_delta: np.ndarray
     cell_delta: np.ndarray
     entropy_change: np.ndarray
     norm_error: float
@@ -232,11 +262,44 @@ def classical_outcomes(
     return cell_charges, link_registers
 
 
+def exterior_register_links(cell: int) -> tuple[int, ...]:
+    """Return block01 v3's single exterior links, right first at ties.
+
+    The internal link ``E_(2B)`` is absent.  Boundary links ``2B-1`` and
+    ``2B+1`` obey ``Q_B=E_(2B+1)-E_(2B-1)`` exactly, so they are measured only
+    as separate singletons; no joint boundary-pair layout is constructed.
+    """
+
+    if not 0 <= cell < N_CELLS:
+        raise ValueError("invalid pointer cell")
+    internal = 2 * cell
+    right_boundary = (internal + 1) % N_SITES
+    left_boundary = (internal - 1) % N_SITES
+    links = tuple(
+        link
+        for distance in range(N_CELLS - 1)
+        for link in (
+            (right_boundary + distance) % N_SITES,
+            (left_boundary - distance) % N_SITES,
+        )
+    ) + ((internal + N_CELLS) % N_SITES,)
+    if len(links) != N_FRAGMENTS or len(set(links)) != N_FRAGMENTS:
+        raise RuntimeError("exterior register links are not unique")
+    if internal in links or set(links) != set(range(N_SITES)) - {internal}:
+        raise RuntimeError("exterior register links have the wrong support")
+    screening_links = tuple(
+        (internal + offset) % N_SITES for offset in SCREENING_LINK_OFFSETS
+    )
+    if links[: len(SCREENING_FRAGMENT_INDICES)] != screening_links:
+        raise RuntimeError("screening zone is not the exterior-link prefix")
+    return links
+
+
 def build_classical_mi_layouts(
     cell_charges: np.ndarray,
     link_registers: np.ndarray,
 ) -> list[list[ClassicalMILayout]]:
-    """Build the six-by-six fixed ``Q_B:F`` coarse grainings."""
+    """Build eligible single-link ``Q_B:E_l`` coarse grainings."""
 
     dimension = cell_charges.shape[1]
     basis_indices = np.arange(dimension, dtype=np.int64)
@@ -245,10 +308,8 @@ def build_classical_mi_layouts(
         _, pointer_index = np.unique(cell_charges[cell], return_inverse=True)
         n_pointer = int(np.max(pointer_index)) + 1
         cell_layouts: list[ClassicalMILayout] = []
-        for left_link, right_link in LINK_FRAGMENTS:
-            outcomes = np.column_stack(
-                (link_registers[left_link], link_registers[right_link])
-            )
+        for link in exterior_register_links(cell):
+            outcomes = link_registers[link, :, None]
             _, fragment_index = np.unique(
                 outcomes, axis=0, return_inverse=True
             )
@@ -422,8 +483,11 @@ def classical_mutual_information(
         raise RuntimeError("nonpositive or nonfinite state norm")
     norm_error = float(np.max(np.abs(norms - 1.0)))
     probabilities = probabilities / norms[:, None]
+    fragment_counts = {len(cell_layouts) for cell_layouts in layouts}
+    if fragment_counts != {N_FRAGMENTS}:
+        raise RuntimeError("unexpected single-link fragment layout count")
     information = np.empty(
-        (states.shape[0], N_CELLS, len(LINK_FRAGMENTS)),
+        (states.shape[0], N_CELLS, N_FRAGMENTS),
         dtype=np.float64,
     )
     upper_error = 0.0
@@ -469,14 +533,59 @@ def excess_register_information(
     mutual_information: np.ndarray,
     ground_mutual_information: np.ndarray,
 ) -> tuple[np.ndarray, np.ndarray]:
-    """Apply the pinned positive excess-over-ground-state convention."""
+    """Sum pinned positive GS excess over the screening-zone prefix only."""
 
     excess_by_fragment = np.maximum(
         0.0,
         mutual_information
         - np.asarray(ground_mutual_information, dtype=np.float64)[None, :, :],
     )
-    return np.sum(excess_by_fragment, axis=2), excess_by_fragment
+    screening_excess = excess_by_fragment[..., SCREENING_FRAGMENT_INDICES]
+    return np.sum(screening_excess, axis=2), excess_by_fragment
+
+
+def pointer_distribution_change(
+    states: np.ndarray,
+    cell_charges: np.ndarray,
+) -> np.ndarray:
+    """Return backward-step total variation of each ``Q_B`` distribution."""
+
+    probabilities = np.abs(np.asarray(states, dtype=np.complex128)) ** 2
+    norms = np.sum(probabilities, axis=1)
+    if np.any(norms <= 0.0) or not np.all(np.isfinite(norms)):
+        raise RuntimeError("nonpositive or nonfinite state norm")
+    probabilities = probabilities / norms[:, None]
+    distributions = np.empty(
+        (states.shape[0], N_CELLS, 3), dtype=np.float64
+    )
+    for cell in range(N_CELLS):
+        outcomes = np.asarray(cell_charges[cell] + 1, dtype=np.int64)
+        if not np.all((0 <= outcomes) & (outcomes < 3)):
+            raise RuntimeError("pointer outcome left {-1,0,1}")
+        indicator = sp.csr_matrix(
+            (
+                np.ones(outcomes.size, dtype=np.float64),
+                (np.arange(outcomes.size, dtype=np.int64), outcomes),
+            ),
+            shape=(outcomes.size, 3),
+        )
+        distributions[:, cell] = np.asarray(probabilities @ indicator)
+    normalization_error = float(
+        np.max(np.abs(np.sum(distributions, axis=2) - 1.0))
+    )
+    if normalization_error > INTERNAL_TOL:
+        raise RuntimeError("pointer distribution normalization failed")
+    delta = np.zeros((states.shape[0], N_CELLS), dtype=np.float64)
+    delta[1:] = 0.5 * np.sum(
+        np.abs(distributions[1:] - distributions[:-1]), axis=2
+    )
+    if (
+        not np.all(np.isfinite(delta))
+        or np.min(delta) < -INTERNAL_TOL
+        or np.max(delta) > 1.0 + INTERNAL_TOL
+    ):
+        raise RuntimeError("pointer total variation left its numerical range")
+    return delta
 
 
 def cell_state_observables(
@@ -517,6 +626,7 @@ def measure_case(
     states: np.ndarray,
     hamiltonian: sp.csr_matrix,
     ground_mutual_information: np.ndarray,
+    cell_charges: np.ndarray,
     trace_groups: list[Any],
     bond_layouts: list[PackedLayout],
     cell_layouts: list[PackedLayout],
@@ -555,6 +665,7 @@ def measure_case(
     information, fragment_information = excess_register_information(
         mutual_information, ground_mutual_information
     )
+    pointer_delta = pointer_distribution_change(states, cell_charges)
     cell_delta, entropy_change, cell_reduction_error = cell_state_observables(
         states, cell_layouts
     )
@@ -563,6 +674,7 @@ def measure_case(
         and np.all(np.isfinite(fragment_information))
         and np.all(np.isfinite(cell_activity))
         and np.all(np.isfinite(cumulative_activity))
+        and np.all(np.isfinite(pointer_delta))
         and np.all(np.isfinite(entropy_change))
     )
     information_range_ok = bool(
@@ -583,6 +695,7 @@ def measure_case(
         fragment_information=fragment_information,
         cell_activity=cell_activity,
         cumulative_activity=cumulative_activity,
+        pointer_delta=pointer_delta,
         cell_delta=cell_delta,
         entropy_change=entropy_change,
         norm_error=norm_error,
@@ -593,16 +706,16 @@ def measure_case(
 
 
 def fit_activity_bound(results: list[CaseResult]) -> BoundResult:
-    """Test the hypothesis that cell change enters only through its boundary."""
+    """Test that the ``Q_B`` outcome law changes only through its boundary."""
 
     activities = np.concatenate(
         [result.cell_activity[1:].ravel() for result in results]
     )
     changes = np.concatenate(
-        [result.cell_delta[1:].ravel() for result in results]
+        [result.pointer_delta[1:].ravel() for result in results]
     )
     if activities.shape != changes.shape:
-        raise RuntimeError("activity/cell-change step alignment failed")
+        raise RuntimeError("activity/pointer-change step alignment failed")
     activity_decile = float(np.quantile(activities, 0.9))
     upper = activities >= activity_decile
     upper &= activities > np.finfo(float).tiny
@@ -751,11 +864,13 @@ def build_output(
         exit_code = 0
 
     setup = (
-        "SETUP N=12 cells=B:(2B,2B+1) m=0.3 g=[0.6,1] Qtotal=0 Wmax=4 "
+        "SETUP N=12 cells=B:(2B,2B+1) m=0.3 g=[0.3,0.6,1] Qtotal=0 Wmax=4 "
         "t=0:0.1:10; kick=a:exp(+i0.7n0),b:exp(+i0.5(n0+n6)),"
         "c:exp(+i0.5(c0dag*c1+h.c.)); pointer=Q_B=q_2B+q_(2B+1); "
-        "register=E_l=W+sum(k<=l)q_k; F=[(0,1),(2,3),(4,5),(6,7),(8,9),(10,11)]; "
-        "I_B=sum_F max(0,Iclassical_t(Q_B:F)-Iclassical_GS(Q_B:F)) bits; "
+        "register=E_l=W+sum(k<=l)q_k; "
+        "F_B=all single exterior E_l except internal E_2B; "
+        "eligible-for-I_B=boundary-distance<=2,offsets=[+1,-1,+2,-2,+3,-3]; "
+        "I_B=sum_eligible-l max(0,Iclassical_t(Q_B:E_l)-Iclassical_GS(Q_B:E_l)) bits; "
         "a_B=a_bond[2B-1]+a_bond[2B+1]"
     )
     controls = (
@@ -767,23 +882,25 @@ def build_output(
     )
     bound_line = (
         f"CHECK-02={'ok' if bound_ok else 'FAIL'} c1={fmt(bound.constant)} "
-        f"fit=max(delta_B/(a_B*dt))@a>=q90={fmt(bound.activity_decile)} "
+        f"fit=max(TV[p_t(Q_B),p_prev(Q_B)]/(a_B*dt))@a>=q90="
+        f"{fmt(bound.activity_decile)} "
         "a_B=right-endpoint-boundary-velocity "
         f"eps={INTERFACE_EPSILON:.1e} violations={bound.violations} "
-        f"max-ratio={fmt(bound.maximum_ratio)} residual=delta_B-c1*a_B*dt "
+        f"max-ratio={fmt(bound.maximum_ratio)} residual=pointer-TV-c1*a_B*dt "
         f"q[min,50,90,99,max]={fmt_vector(bound.residual_quantiles)}"
     )
     entropy_line = (
         f"CHECK-03={'ok' if entropy_ok else 'FAIL'} "
         "Fannes-Audenaert(Audenaert-2007,JPhysA40:8127) "
-        "|DeltaS|<=T*log2(3)+h2(T),T=min(delta_B,3/4),d^2=4 "
+        "|DeltaS_cell|<=T*log2(3)+h2(T),"
+        "T=min(full-cell-trace-distance,3/4),d=4 "
         f"tol={ENTROPY_ENVELOPE_TOL:.1e} violations={entropy_envelope.violations} "
         f"max-residual={entropy_envelope.maximum_residual:.3e} "
         f"q[min,50,90,99,max]={fmt_vector(entropy_envelope.residual_quantiles)}"
     )
     opportunity = (
         f"CHECK-04={'ok' if regression_ok else 'FAIL'} r={fmt(regression.correlation)} "
-        f"I_B(t=3)=slope*A_B(t=3)+intercept slope={fmt(regression.slope)} "
+        f"I_B(t=3<=3)=slope*A_B(t=3)+intercept slope={fmt(regression.slope)} "
         f"intercept={fmt(regression.intercept)} "
         f"q[5,50,95]={fmt_vector(regression.residual_quantiles)}; "
         f"CHECK-05={'ok' if consistency_ok else 'FAIL'} "
@@ -798,13 +915,26 @@ def build_output(
         f"reduction-error={maximum_reduction_error:.2e} "
         f"hop-Herm-error={hop_hermiticity_error:.2e} elapsed={elapsed:.2f}s "
         "SPEC-NOTE=envelope=sharp-Fannes-Audenaert-D4;"
+        "v3-CHECK02=pointer-continuity-not-full-cell;"
+        "v3-attribution=all-single-exterior-link-fragments,"
+        "I_B-only-boundary-distance<=2-screening-zone,"
+        "eligible-offsets:+1|-1|+2|-2|+3|-3,joint-boundary-pair-identity-excluded;"
         f"floors=stationary:{STATIONARY_FLOOR:.0e},interface-eps:{INTERFACE_EPSILON:.0e},"
         f"entropy-tol:{ENTROPY_ENVELOPE_TOL:.0e},eps_exc:{EPS_EXCESS_BITS:g}-bits;"
-        "early-window=t3-grid-index30,A=trapezoid,step-a=right-endpoint;"
-        "register=Gauss-E_l-W-plus-left-partial-charge-sum,fixed-disjoint-2-link-intervals,"
+        "early-window=t<=3,endpoint=t3-grid-index30,A=trapezoid,"
+        "step-a=right-endpoint;"
+        "register=Gauss-E_l-W-plus-left-partial-charge-sum,"
         "occupation-probability-classical-MI,positive-GS-excess-without-eps-subtraction;"
         "composition=conditional-information-rate-envelope-"
         "F(min(c1*a*dt+eps,3/4))/dt-not-linear-information-bound;"
+        "CHECK-02-violations-interpretation=pointer-flow-is-driven-by-bond-"
+        "COHERENCE(a-current-VALUE)-while-activity-is-state-CHANGE:a-steady-"
+        "current-through-a-quiet-bond-moves-the-pointer-with-little-activity,"
+        "so-no-linear-activity-gate-on-pointer-flow-exists(measured-"
+        "counterexample,kept-as-finding);"
+        "d1-attribution-limit=all-exterior-information-flows-through-the-"
+        "two-boundary-registers(Markov-blanket),so-per-cell-attribution-"
+        "saturates-in-d=1;"
         "no-silent-fixes;no-audit-status"
     )
     return (
@@ -833,7 +963,7 @@ def run() -> tuple[list[str], int]:
     cell_charges, link_registers = classical_outcomes(engine, basis)
     mi_layouts = build_classical_mi_layouts(cell_charges, link_registers)
     occupations, _ = witnesses.gauged_local_arrays(
-        engine, basis, MASS, COUPLINGS[0]
+        engine, basis, MASS, V2_COUPLINGS[0]
     )
     hop_kick, hop_hermiticity_error = build_hop_kick(engine, basis)
 
@@ -846,7 +976,7 @@ def run() -> tuple[list[str], int]:
     maximum_reduction_error = 0.0
     all_information_ranges_ok = True
 
-    for coupling_index, coupling in enumerate(COUPLINGS):
+    for coupling in COUPLINGS:
         hamiltonian = engine.build_many_body_hamiltonian(
             basis,
             MASS,
@@ -855,7 +985,7 @@ def run() -> tuple[list[str], int]:
         ).tocsr()
         _, ground_state, ground_residual = deterministic_ground_state(
             hamiltonian,
-            RNG_SEED + coupling_index,
+            RNG_SEED + GROUND_SEED_OFFSETS[coupling],
         )
         maximum_ground_residual = max(
             maximum_ground_residual, ground_residual
@@ -933,6 +1063,7 @@ def run() -> tuple[list[str], int]:
                 states=evolved[:, :, state_index],
                 hamiltonian=hamiltonian,
                 ground_mutual_information=ground_mi[0],
+                cell_charges=cell_charges,
                 trace_groups=trace_groups,
                 bond_layouts=bond_layouts,
                 cell_layouts=cell_layouts,
@@ -991,8 +1122,11 @@ def main() -> int:
         message = " ".join(str(exc).split())[:240]
         print(
             f"TOTAL MACHINERY-FAIL error={type(exc).__name__}:{message} "
-            "SPEC-NOTE=v2-two-layer-interface-plus-Fannes-Audenaert;"
-            "stationary/interface/envelope-floors-declared;early-window=t3;"
+            "SPEC-NOTE=v3-pointer-continuity-plus-full-cell-Fannes-Audenaert;"
+            "stationary/interface/envelope-floors-declared;"
+            "early-window=t<=3-endpoint-t3;"
+            "attribution=all-single-exterior-links-I_B-screening-radius2-"
+            "joint-boundary-pair-identity-excluded;"
             "register=Gauss-link-partial-sums,classical-MI-positive-GS-excess;"
             "no-silent-fixes;no-audit-status"
         )

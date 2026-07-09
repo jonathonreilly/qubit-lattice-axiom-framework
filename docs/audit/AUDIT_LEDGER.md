@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 896 |
+| **retained_bounded** | 897 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1937 |
+| unaudited | 1936 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1281 |
+| `audited_clean` | 1282 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2282 |
+| `unaudited` | 2281 |
 
 | claim_type | count |
 |---|---:|
@@ -1017,6 +1017,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_loop_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_v3_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_admitted_sample_target_vector_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_arrow_orientation_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -14154,6 +14155,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `SIGN_PORTABILITY_INVARIANT_NOTE.md`
   - `DISTANCE_LAW_PORTABILITY_NOTE.md`
   - `COMPLEX_SELECTIVITY_COMPARE_NOTE.md`
+- **auditor confidence:** high
+
+### `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite S3 axis-ordering surface: among one-dimensional character/sign-magnitude constraints, determinant-magnitude positivity is S3-invariant and cannot select C3, while the sign/orientation character has positive level set A3 = C3; no physical orientation-positivity bridge is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-20260709`  (codex-current; independence=cross_family)
+- **load-bearing step:** Determinant positivity is the trivial S3 character, while sgn(sigma)=det(rho_perm(sigma)) is +1 exactly on A3=C3, so the only nontrivial one-dimensional character/sign-magnitude route to C3 is the orientation-sign route.  _(class `A`)_
+- **chain closes:** True — The chain closes as finite group/linear algebra over retained-grade one-hop inputs. The clean result must not be used as if it derived the separate physical orientation-sign positivity constraint.
+- **rationale:** The source is narrowly scoped to one-dimensional character/sign-magnitude constraints and explicitly does not derive the physical handedness positivity bridge. Given the retained determinant-positivity input, the retained-bounded S3 axis-symmetry input, and finite S3 representation theory, the determinant-magnitude route is trivial/S3-invariant and the sign character has positive set A3=C3. The runner completed with PASS=15 FAIL=0, checking source scope, determinant-magnitude invariance under identity/transposition/3-cycle, sign representation values, and the scope guard excluding arbitrary binary selectors. No hidden physical bridge, tuned comparator, or definition-as-derivation is used inside this bounded scope.
 - **auditor confidence:** high
 
 ### `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23`

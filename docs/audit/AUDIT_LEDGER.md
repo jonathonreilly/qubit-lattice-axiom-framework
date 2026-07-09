@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 202 |
 | **retained_bounded** | 920 |
 | _retained_pending_chain_ | 7 |
-| open_gate | 21 |
-| unaudited | 1895 |
+| open_gate | 22 |
+| unaudited | 1894 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1310 |
+| `audited_clean` | 1311 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2240 |
+| `unaudited` | 2239 |
 
 | claim_type | count |
 |---|---:|
@@ -798,6 +798,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_readout_lane_demarcation_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_real_rep_block_count_permitted_not_forced_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_record_sign_agnostic_eta_refuted_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-current | A | - |
 | `koide_records_pointer_grounds_block_channel_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11153,6 +11154,18 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — A single admissible (1,2) witness satisfying every listed retained constraint is enough to refute the proposed forcing route. The runner source actually computes the invariant Gram cone, Theta residuals, Hermitian eigenvalue form, Q compatibility, determinant weighting, and witness invariance rather than merely printing constants.
 - **rationale:** All cited authorities are retained-grade under the rubric, and no open or support-status dependency is used load-bearing. The load-bearing step is a genuine algebraic counterexample over the stated finite matrices, not a definition, renaming, fitted numerical match, or external comparator. The no-go is narrowly scoped and leaves the SO(2)/U(1)_b quotient/readout-factorization handle open, so the negative conclusion does not overreach the tested route.
 - **auditor confidence:** high
+
+### `koide_record_sign_agnostic_eta_refuted_2026-06-04`
+
+- **Note:** [`KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md`](../../docs/KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open-gate diagnosis that Record additivity does not select among the tested additive readouts, sign-blind squaring loses sign data, eta alone does not fix the Koide denominator, and the PDG square-root comparator is only non-load-bearing sanity context.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-fresh-context-audit-subagent-2026-07-09`  (codex-current; independence=fresh_context)
+- **load-bearing step:** Record additivity alone does not distinguish the tested additive sign-sensitive and sign-blind functionals, and the eta count is not enough to reconstruct the signed Koide denominator.  _(class `A`)_
+- **chain closes:** None — The scoped open gate closes as elementary algebra plus a concrete eta counterexample: tested additive readouts remain admissible, squaring erases a single sign, and equal eta can yield different Q denominators without adopting any readout rule.
+- **rationale:** The scoped open-gate claim closes as elementary algebra and a concrete eta counterexample: the runner checks additivity on tested direct sums, sign erasure under squaring, and same-eta/different-Q spectra. The note explicitly refuses the broader no-go/readout theorem, treats the PDG comparator as non-load-bearing, and keeps future framework-native signed readout routes open. No readout functional, physical Koide derivation, or all-future-route exclusion is being claimed.
 
 ### `koide_records_pointer_grounds_block_channel_note_2026-05-31`
 

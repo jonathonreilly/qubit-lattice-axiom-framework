@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 915 |
+| **retained_bounded** | 916 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1901 |
+| unaudited | 1900 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1305 |
+| `audited_clean` | 1306 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2246 |
+| `unaudited` | 2245 |
 
 | claim_type | count |
 |---|---:|
@@ -361,6 +361,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `depth_branch_corrected_closed_form_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `diamond_ideal_lockin_detector_theorem_note_2026-06-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4776,6 +4777,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner reconstructs the degree-3 Laurent determinant for the supplied L=3 K3-K6 states, factors the six numerator roots, and verifies that the per-root principal-branch phase sum reproduces the measured ladder weights while the scalar root-moduli formula has large residuals and wrong ordering.  _(class `C`)_
 - **chain closes:** True — Within the declared finite-state scope, the runner constructs the L=3 lattice Hamiltonian and supplied state projectors, computes determinant-polar phase increments and harmonic weights, reconstructs and factors the Laurent determinant, and evaluates the root-power scalar residuals. The hard-coded landed constants are used as anchor checks; the branch-law reproduction, residuals, and orderings are computed by the runner.
 - **rationale:** The source code is not a printout-only or pure expected-value matcher: it performs the determinant, Laurent reconstruction, root factorization, phase-law, harmonic-weight, residual, and ordering computations directly for the scoped finite states. The imported landed values serve as validation anchors, but the contested scalar-form refutation does not rely on those anchors alone. The clean verdict is bounded to the supplied L=3 K3-K6 state evaluations and does not derive state selection, all-L behavior, or impossibility of every scalar root invariant.
+- **auditor confidence:** high
+
+### `det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12`
+
+- **Note:** [`DET_HOLONOMY_TRIVIAL_ON_HERMITIAN_POSITIVE_CIRCULANT_EDGE_CONTENT_BOUNDED_NOTE_2026-06-12.md`](../../docs/DET_HOLONOMY_TRIVIAL_ON_HERMITIAN_POSITIVE_CIRCULANT_EDGE_CONTENT_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the supplied Hermitian-positive circulant surface H(delta) with a > 2B > 0, the polar link is identity and the C3 determinant-holonomy phase is zero; no R-eta, physical readout, or generic induced-holonomy closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `Noether`  (codex-current; independence=fresh_context)
+- **load-bearing step:** For Hermitian P > 0, |P| = (P^dagger P)^(1/2) = P, so the polar unitary U = P |P|^-1 is I; therefore Hermitian-positive composite links give Hol = I and arg det Hol = 0.  _(class `A`)_
+- **chain closes:** True — The scoped wall closes by exact linear algebra: the positivity domain makes the circulant Hermitian edge matrix positive definite, the polar identity is exact, and the note explicitly firewalls non-Hermitian, sign-sector, R-eta, and physical-readout routes.
+- **rationale:** Clean because the audited claim is only the bounded Hermitian-positive wall. The runner computes the polar identity, finite witnesses, harmonic/K-parity zero checks, negative controls, and boundary text checks without hard-coding an R-eta or physical-readout result. Residual risk is downstream misuse: this cannot be cited as a generic induced-holonomy or R-eta carrier no-go.
 - **auditor confidence:** high
 
 ### `det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12`

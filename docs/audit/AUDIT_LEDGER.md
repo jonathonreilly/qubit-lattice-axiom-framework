@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 922 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
-| unaudited | 1871 |
+| unaudited | 1870 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 55 |
+| ~~audited_conditional~~ | 56 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 18 |
 | `audited_clean` | 1322 |
-| `audited_conditional` | 55 |
+| `audited_conditional` | 56 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2216 |
+| `unaudited` | 2215 |
 
 | claim_type | count |
 |---|---:|
@@ -1503,6 +1503,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_eq_3delta_identity_note_2026-04-21` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
+| `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -12369,6 +12370,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** In the continuum limit a -> 0, W_lat(Δt, Δx⃗; a, m) converges for spacelike separations to m K_1(m sqrt(-s^2))/(4π² sqrt(-s^2)), which depends only on the Lorentz invariant s^2.  _(class `C`)_
 - **chain closes:** True — The narrowed claim closes on the supplied free-scalar spectral integral, the retained/retained_bounded one-hop authorities, and standard invariant-measure and Bessel-form identities checked within the restricted packet. The previously open Planck-scale, finite-a causal, and physical-substrate identifications are explicitly excluded from the audited scope.
 - **rationale:** The runner source contains real lattice-dispersion, boost, quadrature, Euclidean convergence, and K4-normalization computations rather than only stdout assertions, although some final summary checks are narrative check(True) statements and are not load-bearing. Independent formula checks found the Taylor sign and coefficients, the axis/diagonal split -(a^2 p^4)/18, the normalized K4 coefficient 4√π/15, and the spacelike K1 form consistent with the note's conventions. All cited authorities used load-bearingly are retained-grade under the rubric, and the source has narrowed away the earlier non-retained Planck/readout/light-cone premises.
+- **auditor confidence:** high
+
+### `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29`
+
+- **Note:** [`LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the stipulated free one-component staggered action and canonical phases, the Euclidean two-point spin block converges to the SO(4)-covariant Dirac propagator, while its scalar spectrum has a leading O(a^2) dimension-6 ell=4 hypercubic anisotropy.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-lorentz_boost_free_stagg-057`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The exact reduced operator D_red(p) = mI_16 + i sum_mu alpha_mu sin(p_mu a)/a, with Clifford alpha_mu, has the stated closed inverse and tends under sin(p_mu a)/a -> p_mu to the SO(4)-covariant continuum Dirac propagator.  _(class `A`)_
+- **chain closes:** False — The algebraic and numerical chain closes for the stipulated staggered action. The restricted packet does not close the identification of that action and its canonical phases with the framework's physical dynamical operator, and it supplies no analytic-continuation proof for the additional Wightman claim.
+- **rationale:** The runner substantively constructs the blocked operator, verifies its Clifford algebra and spectrum, computes its inverse, and checks the Euclidean continuum covariance and scalar-spectrum anisotropy. However, the cited Kähler-Dirac authority explicitly leaves the physical staggered-operator and Kawamoto-Smit phase identification open, while this note imports that carrier as canonical. The Wightman continuation and full-propagator O(a) taste-mixing statements are represented only by unconditional check(True) summaries rather than load-bearing computations or proofs.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `lorentz_kernel_positive_closure_note`

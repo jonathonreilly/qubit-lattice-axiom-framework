@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 899 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1933 |
+| unaudited | 1932 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 40 |
+| ~~audited_conditional~~ | 41 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1284 |
-| `audited_conditional` | 40 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2278 |
+| `unaudited` | 2277 |
 
 | claim_type | count |
 |---|---:|
@@ -1442,6 +1442,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_record_readout_form_not_weight_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6778,6 +6779,23 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the tested two-sector record map, Lüders self-composition sharpens r -> 2r^2, so r=1/2 is a fixed point with multiplier 2 and is unstable.  _(class `A`)_
 - **chain closes:** True — The stability claim follows algebraically: f(1/2)=1/2, f'(1/2)=2, and for 0<r<1/2 the iterate f(r)=2r^2 decreases toward 0. Independent checks also confirm g(r)=sqrt(r/2) is the inverse/stabilizing erasure direction, the C3-invariant operator commutes with the singlet projector, and I/3 gives weights 1/3 and 2/3, hence r=1.
 - **rationale:** The runner source performs the finite algebraic checks it reports rather than merely printing expected constants, and the displayed factors, derivative, projectors, and thermal normalization independently check out. This is class A algebraic closure over the stated tested maps, not a class C derivation of those maps from baseline axioms. The no-go discipline gate passes only in the corrected narrow scope: the packet closes the tested attractor/stabilizer route, while explicitly leaving stationarity/durability fixed-point occupancy, measure/reference choices, and other future dynamics open.
+- **auditor confidence:** high
+
+### `flavor_record_readout_form_not_weight_2026-06-02`
+
+- **Note:** [`FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT_2026-06-02.md`](../../docs/FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT_2026-06-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open gate that Record additivity can support logarithmic readout form only after a multiplicative amplitude/readout surface is supplied, and does not select the Koide singlet/doublet occupancy weight or block-count functional.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=weak)
+- **load-bearing step:** Record additivity selects log form only after Z is supplied, while genuine log|det H| counts the doublet with multiplicity two and the r=1/2 block-count reading uses a distinct multiplicity-stripped functional.  _(class `B`)_
+- **chain closes:** False — The source/dependency packet supports the open-gate boundary, but the primary runner currently exits nonzero with SCORECARD PASS=9 FAIL=1. The failing helper check is a boundary-string/runner-artifact mismatch against the current occupancy note and superseded axiom memo, so the current executable artifact does not close cleanly.
+- **rationale:** Issue: the primary runner completes but reports one failure in the downstream occupancy-boundary helper, specifically the guard that the occupancy note records independence without adopting the premise. Why this blocks: a clean open-gate audit cannot rely on a currently failing runner, even though the core algebraic checks pass and the failure appears to be stale boundary-string/tooling drift rather than a contradiction of the form/weight separation. Repair target: update the helper to check the current occupancy-note wording or ledger claim_scope and the current 2026-06-29 minimal-axiom boundary, then rerun to a zero-fail scorecard. Claim boundary until fixed: Record-additivity/log-form separation and non-selection of the Koide weight remain supported, but the row should not be promoted until its runner artifact is repaired.
+- **open / conditional deps cited:**
+  - `scripts/flavor_occupancy_boundary_checks_2026_06_13.py`
+  - `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`
+  - `MINIMAL_AXIOMS_2026-06-29.md`
 - **auditor confidence:** high
 
 ### `flavor_retention_law_is_a2plus_note_2026-05-31`

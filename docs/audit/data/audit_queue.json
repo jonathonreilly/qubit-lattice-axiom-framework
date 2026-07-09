@@ -20805,12 +20805,12 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "flavor_record_readout_form_not_weight_2026-06-02",
-      "claim_scope": null,
+      "claim_scope": "Open gate that Record additivity can support logarithmic readout form only after a multiplicative amplitude/readout surface is supplied, and does not select the Koide singlet/doublet occupancy weight or block-count functional.",
       "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -20819,13 +20819,13 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [
         "scripts/flavor_occupancy_boundary_checks_2026_06_13.py"
       ],
       "load_bearing_score": 4.7,
       "note_path": "docs/FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT_2026-06-02.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/flavor_record_readout_form_not_weight_2026_06_02.py",
       "transitive_descendants": 12

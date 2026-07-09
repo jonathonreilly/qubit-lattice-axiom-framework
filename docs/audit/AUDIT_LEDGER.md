@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 920 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1873 |
+| unaudited | 1876 |
 | audit_in_progress | 13 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 56 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -60,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 18 |
-| `audited_clean` | 1320 |
-| `audited_conditional` | 56 |
+| `audit_in_progress` | 17 |
+| `audited_clean` | 1321 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2218 |
+| `unaudited` | 2221 |
 
 | claim_type | count |
 |---|---:|
@@ -144,7 +144,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
-| `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | C | - |
@@ -1091,6 +1090,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `quark_route2_endpoint_blind_renormalization_no_go_note_2026-06-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-current | A | - |
 | `quark_route2_eta_floor_hf_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1507,13 +1507,10 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
-| `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -15428,36 +15425,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`
 - **auditor confidence:** high
 
-### `quark_e_channel_endpoint_quotient_law_note_2026-04-19`
-
-- **Note:** [`QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md`](../../docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Under supplied premises ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT, the affine endpoint identities imply r_E = 21/4 and D_E = |b_E/b_T| = 21/8, while the retained Route-2 no-go keeps ENDPOINT-QE non-derived in the restricted carrier/readout class.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260707-185948-2d03b01f-quark_e_channel_endpoint-001`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Under ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT, exact endpoint algebra gives r_E = 6*(15/8 - 1) = 21/4 and b_E/b_T = (r_E a_E)/(r_T a_T) = 21/8.  _(class `A`)_
-- **chain closes:** True — The conditional algebra closes: q_E=15/8 gives r_E=21/4, q_T=5/6 gives r_T=-1, and a_T/a_E=-2 gives b_E/b_T=21/8. The missing steps are not in the conditional chain but remain the derivations of ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT themselves.
-- **rationale:** Manual algebra independently confirms the load-bearing equations: 6*(15/8-1)=21/4, 6*(5/6-1)=-1, and (21/4)/((-1)*(-2))=21/8. The runner source implements this with exact Fraction arithmetic and separates motivation-tier numerical replay from load-bearing checks. However the theorem explicitly imports ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT as supplied premises, and the cited retained no-go states the E-channel value remains free unless an additional E-center primitive is supplied. Thus the bounded conditional result is valid only under those admissions, not an unconditional retained derivation.
-- **open / conditional deps cited:**
-  - `QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md#ENDPOINT-QE`
-  - `QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md#ENDPOINT-RT`
-  - `QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md#SHELL-MULT`
-- **auditor confidence:** high
-
-### `quark_endpoint_ratio_chain_law_note_2026-04-19`
-
-- **Note:** [`QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md`](../../docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Under supplied ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT, exact rational endpoint-chain algebra maps {5/6, -2, -8/9} to q_E=15/8, r_E=21/4, and D_E=21/8, with the retained Route-2 no-go used only for the non-derivation boundary.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260707-190338-c8f0e7e8-quark_endpoint_ratio_cha-002`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Under the supplied legs 5/6, -2, and -8/9, the exact chain gives gamma_E(center)/gamma_E(shell)=(-9/8)*(5/6)*(-2)=15/8, hence r_E=21/4 and D_E=21/8.  _(class `A`)_
-- **chain closes:** True — Manual rational algebra closes: (-9/8)*(5/6)*(-2)=15/8, 6*(15/8-1)=21/4, r_T=6*(5/6-1)=-1, and (21/4)/((-1)*(-2))=21/8. The closure is conditional on the three named supplied premises; those premise legs are not derived in this packet.
-- **rationale:** The load-bearing mathematics is class A exact algebra over explicitly supplied rational inputs, and it is correct within that scope. The runner's load-bearing path hard-codes the supplied premise values as Fraction inputs and verifies algebra plus citation/firewall text; it does not derive ENDPOINT-QE, ENDPOINT-RT, or SHELL-MULT. The no-go authority is retained_no_go and supports only the stated non-derivation boundary, not the three positive premise legs. Therefore the row is a valid conditional bounded theorem, not an audited_clean derivation of the endpoint ratio chain.
-- **auditor confidence:** high
-
 ### `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`
 
 - **Note:** [`QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md`](../../docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md)
@@ -15508,6 +15475,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** If a future proof derives the double-local projector normalization, then lambda=(w_E/w_T1)^-2=9/4 and the endpoint chain closes.  _(class `A`)_
 - **chain closes:** None — The endpoint algebra closes only after supplying the double reciprocal local projector-normalization law q_X proportional to w_X^-2; that bridge is an explicit primitive/premise in the packet, not a derived result.
 - **rationale:** Issue: the double reciprocal local projector-normalization law q_X proportional to w_X^-2 is not derived from packet inputs; it is the named missing primitive. Why this blocks: the endpoint rho_E=21/4 follows only after that normalization bridge is admitted. Repair target: derive the double-local normalization from Route-2 source/tensor/readout structure, with a runner that computes the bridge rather than selecting p=-2 against lambda=9/4. Claim boundary until fixed: the note cleanly isolates the conditional algebra and falsifies nearby monomial laws, but it is not a current-surface derivation.
+
+### `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`
+
+- **Note:** [`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](../../docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Within the exact channelwise restricted Route-2 readout class, with the stated carrier columns and granted T-side ratios, rho_E is unconstrained and rho_E=21/4 requires an additional E-center datum.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-quark_route2_e_channel_r-037`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because P(rho_E) maps E-shell to (1,0) for every rho_E while mapping E-center to (1+rho_E/6,0), shell normalization and the granted T-side data leave rho_E free.  _(class `A`)_
+- **chain closes:** True — The explicit family supplies distinct admissible maps, including rho_E=0 and rho_E=21/4, that agree on every granted constraint but differ on the unconstrained E-center lift. This is a valid algebraic non-uniqueness proof, and the endpoint-ratio equivalences follow exactly.
+- **rationale:** The load-bearing no-go is genuine algebra over carrier columns computed by the included framework helper chain: two admissible parameter values satisfy the supplied constraints, so those constraints cannot select 21/4. The runner does not import observed masses or hard-code 21/4 as a derived result; its live endpoint is confined to explicitly bounded comparator checks. The conclusion remains correctly limited to the restricted channelwise class and granted T-side premises.
+- **auditor confidence:** high
 
 ### `quark_route2_endpoint_blind_renormalization_no_go_note_2026-06-21`
 
@@ -16266,22 +16246,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Xi_R^(0) := (Theta_R^(0)(e0) - Theta_R^(0)(s/sqrt(6))) / (delta_A1(e0) - delta_A1(s/sqrt(6))).  _(class `A`)_
 - **chain closes:** True — The cited retained_bounded dependency supplies the exact seven-site A1 support scalar and the bounded affine gamma_E/gamma_T staging surface to stated tolerances. The note derives only the finite-difference/affine-response Jacobian over those inputs and explicitly excludes an exact tensor observable, endpoint coefficient theorem, support-to-slice time coupling, and GR closure.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained bounded inputs: the denominator is the retained support scalar endpoint gap, and the numerator is the current bounded Theta_R^(0) endpoint pair. The runner computes Xi_R^(0) from live support_delta and gamma_pair endpoint values, reports PASS=7 FAIL=0, and checks canonical plus audited-family affine compatibility to the note's tolerances. The result is clean only inside the bounded staging scope; citing it as an exact tensor observable, exact endpoint coefficient theorem, time-coupling law, or GR closure would exceed the audited claim.
-- **auditor confidence:** high
-
-### `s3_time_primitive_chain_note`
-
-- **Note:** [`S3_TIME_PRIMITIVE_CHAIN_NOTE.md`](../../docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Exact Route-2 carrier/readout/time algebra pins P_R and Xi_R only under supplied ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT, while preserving the restricted-class boundary that rho_E is otherwise free.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260707-190646-bea9c907-s3_time_primitive_chain_-003`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Under ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT, in the normalized shell gauge alpha_E = 1, the supplied-premise readout map is pinned to P_R^prem = [[1, 0, 21/4, 0], [0, -2, 0, 2]] and Xi_R^prem(t ; c) = (P_R^prem c) tensor exp(-t Lambda_R) u_*.  _(class `A`)_
-- **chain closes:** True — Within the stated conditional scope, the algebra closes: q_T=5/6 gives rho_T=-1, q_E=15/8 gives rho_E=21/4, alpha_T/alpha_E=-2 gives beta_T=2 in alpha_E=1 gauge, and the displayed endpoint images and ratios follow exactly. It does not close as an unconditional readout or time-coupling theorem because the endpoint and shell premises are supplied rather than derived.
-- **rationale:** The load-bearing calculation is a genuine algebraic identity check over the supplied premises and retained restricted readout/time authorities; manual recomputation matches the runner’s matrix images and quotient identities exactly. The runner is not first-principles evidence for the endpoint triple: it verifies that the note states the premises, preserves the boundary language, and recomputes the conditional algebra. Because ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT are explicitly imported and the upstream readout/time notes keep the unique readout and unique coupling theorem open, this cannot be audited_clean. The packet is nevertheless correctly scoped as conditional and does not promote P4 or rho_E=21/4 as derived.
-- **open / conditional deps cited:**
-  - `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`
-  - `QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`
 - **auditor confidence:** high
 
 ### `s3_time_tensor_build_memo`

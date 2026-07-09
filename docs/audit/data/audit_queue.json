@@ -258,14 +258,14 @@
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "claim_id": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
       "claim_scope": "Bounded same-scalar-slot composition on the declared finite-link canonical Wilson surface `(SD)`: retained rigidity supplies `s=1`, retained Wilson matching supplies `beta g_bare^2=2N_c`, and for `N_c=3` the declared same-slot surface gives `beta=6`.",
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": "disagreement",
       "deps": [
         "g_bare_rigidity_theorem_note",
         "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"

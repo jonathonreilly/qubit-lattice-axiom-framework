@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 913 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1904 |
+| unaudited | 1903 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 48 |
+| ~~audited_conditional~~ | 49 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1303 |
-| `audited_conditional` | 48 |
+| `audited_conditional` | 49 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2249 |
+| `unaudited` | 2248 |
 
 | claim_type | count |
 |---|---:|
@@ -1455,6 +1455,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_k_even_registration_correction_registered_pattern_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `confinement_string_tension_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -2865,6 +2866,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The note demotes the standalone GHZ-like runner and bases the support claim on the robustness harness: 25/25 configurations are W or W-asym with tau_3 = 0 for the fixed two-branch protocol.  _(class `C`)_
 - **chain closes:** True — The source is support-tier and explicitly bounded to externally imposed two-branch tripartite entanglement. The current robustness runner recomputes the source/coupling surface and prints tau_3 = 0, W/W-asym classification in 25/25 configurations, and positive bipartite entropies.
 - **rationale:** The load-bearing support claim closes because the note clearly makes the later robustness harness, not the historical standalone heuristic runner, the canonical interpretation surface. That canonical runner reproduces the stated W-type result and the note keeps the boundary narrow: fixed adjacency, externally imposed branch, not a full three-body BMV witness or topology-superposition claim. The historical runner's GHZ-like rows are not a contradiction because both the source note and that runner label them as non-canonical heuristic output.
+- **auditor confidence:** high
+
+### `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04`
+
+- **Note:** [`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](../../docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bridge-conditional Born trace-form result: if a lawful graded record-conditioned weight exists and full neighbor-composite projection menus are eligible, the named Gleason bridge forces composite Born form and single-site restrictions; the graded primitive, H4 menu ontology, and bridge adoption are not established here.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-born-gleason-conditional-20260709`  (codex-current; independence=weak)
+- **load-bearing step:** The claim depends on H1-H4, especially H4's full neighbor-composite projection-menu eligibility, plus the named Gleason theorem bridge to force w(E)=Tr(rho E) on M4.  _(class `B`)_
+- **chain closes:** False — The runner supports the R1 dimension-2 loophole witness, bookkeeping identities, and finite rejectors, but the framework does not derive or register the graded-constraint primitive, H4 composite menu eligibility, or the Gleason bridge as an adopted theorem.
+- **rationale:** Issue: the load-bearing Born-form conclusion is explicitly conditional on a graded weight primitive, full neighbor-composite projection-menu eligibility including entangled projections, and the named Gleason bridge input. Why this blocks: minimal axioms supply site-local M2 and nearest-neighbor structure, but not a pair-level projection-menu ontology or the adoption theorem needed to apply Gleason as framework content. Repair target: add/audit a retained bridge theorem or primitive registration specifying H1-H4 and the Gleason import boundary, including how composite menus are eligible under records. Claim boundary until fixed: the note validly isolates the finite R1 loophole, R2/R3 consequence under the bridge assumptions, and R4 symmetry consequence under an additional premise; it does not close Born weights from current framework axioms.
 - **auditor confidence:** high
 
 ### `born_lane_comparison_note`

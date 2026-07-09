@@ -266,12 +266,12 @@ wilson_anticom_norm = norm(anticommutator(gamma_5, Dw_test))
 check(
     "Wilson scalar lifts seven of the eight naive corner zeros",
     zero_after_wilson == 1 and corner_singular_mins[0] < 1.0e-12 and min(corner_singular_mins[1:]) > 1.9,
-    f"corner_min_singular={corner_singular_mins}",
+    f"corner_min_singular={[float(np.round(x, 9)) for x in corner_singular_mins]}",
 )
 check(
     "massless embedded operator anticommutes with gamma_5",
     naive_anticom_norm < 1.0e-12,
-    f"||{{gamma_5,D}}||={naive_anticom_norm:.3e}",
+    f"||{{gamma_5,D}}|| < 1e-12: {naive_anticom_norm < 1.0e-12}",
 )
 check(
     "Wilson term breaks the gamma_5 anticommutation",
@@ -292,7 +292,7 @@ check("domain-wall Hamiltonian is Hermitian", norm(H0 - H0.conj().T) < 1.0e-12)
 check(
     "periodic wall/anti-wall has four light spinor states at p=0",
     len(light) == 4 and next_gap > 0.5,
-    f"light={len(light)} max|E_light|={np.max(np.abs(evals[light])):.3e} next_gap={next_gap:.6f}",
+    f"light={len(light)} max|E_light| < 1e-06: {np.max(np.abs(evals[light])) < 1.0e-6} next_gap={next_gap:.6f}",
 )
 
 wall_evals, wall_light, wall_window, wall_basis = localized_light_basis(H0, N_S, wall)
@@ -301,12 +301,12 @@ anti_evals, anti_light, anti_window, anti_basis = localized_light_basis(H0, N_S,
 check(
     "wall-localized light rank is two spin components, i.e. one Weyl species",
     wall_light.size == 4 and np.all(wall_window[:2] > 0.5) and np.all(wall_window[2:] < 1.0e-10),
-    f"window_eigs={wall_window}",
+    f"window_top2={np.round(wall_window[:2], 9)} max|window_rest| < 1e-10: {np.max(np.abs(wall_window[2:])) < 1.0e-10}",
 )
 check(
     "anti-wall-localized light rank is two spin components, i.e. one Weyl species",
     anti_light.size == 4 and np.all(anti_window[:2] > 0.5) and np.all(anti_window[2:] < 1.0e-10),
-    f"window_eigs={anti_window}",
+    f"window_top2={np.round(anti_window[:2], 9)} max|window_rest| < 1e-10: {np.max(np.abs(anti_window[2:])) < 1.0e-10}",
 )
 
 wall_profile = subspace_profile(wall_basis, N_S)
@@ -332,7 +332,8 @@ check(
     and wall_leak < 1.0e-12,
     (
         f"peak={wall_peak} xi_left={wall_left_xi:.6f} xi_right={wall_right_xi:.6f} "
-        f"r2=({wall_left_r2:.12f},{wall_right_r2:.12f}) antiwall_leak={wall_leak:.3e}"
+        f"min_r2 > 0.999999: {min(wall_left_r2, wall_right_r2) > 0.999999} "
+        f"antiwall_leak < 1e-12: {wall_leak < 1.0e-12}"
     ),
 )
 check(
@@ -345,7 +346,8 @@ check(
     and anti_leak < 1.0e-12,
     (
         f"peak={anti_peak} xi_left={anti_left_xi:.6f} xi_right={anti_right_xi:.6f} "
-        f"r2=({anti_left_r2:.12f},{anti_right_r2:.12f}) wall_leak={anti_leak:.3e}"
+        f"min_r2 > 0.999999: {min(anti_left_r2, anti_right_r2) > 0.999999} "
+        f"wall_leak < 1e-12: {anti_leak < 1.0e-12}"
     ),
 )
 
@@ -367,7 +369,8 @@ check(
 check(
     "wall projected spatial velocities form one Cl(3,0) Weyl cone",
     wall_sqerr < 1.0e-10 and wall_antierr < 1.0e-10 and abs(abs(wall_hand) - 1.0) < 1.0e-10,
-    f"square_err={wall_sqerr:.3e} anticomm_err={wall_antierr:.3e} handedness={wall_hand:.0f}",
+    f"square_err < 1e-10: {wall_sqerr < 1.0e-10} anticomm_err < 1e-10: {wall_antierr < 1.0e-10} "
+    f"handedness={wall_hand:.0f}",
 )
 check(
     "anti-wall projected Weyl cone has opposite handedness",
@@ -409,17 +412,20 @@ for sign in (-1.0, 1.0):
 check(
     "only the physical p=0 corner carries light domain-wall modes",
     corner_light_counts[0] == 4 and sum(corner_light_counts[1:]) == 0 and min(corner_min_gaps[1:]) > 0.7,
-    f"light_counts={corner_light_counts} min_gaps={corner_min_gaps}",
+    f"light_counts={corner_light_counts} min_gap_p0 < 1e-06: {corner_min_gaps[0] < 1.0e-6} "
+    f"heavy_min_gaps={np.round(np.array(corner_min_gaps[1:]), 9)}",
 )
 check(
     "uniform record-time bulk is gapped by |M| with no edge light modes",
     min(uniform_gaps) > 0.7 and all(abs(g - abs(M)) < 1.0e-10 for g in uniform_gaps),
-    f"uniform_gaps={uniform_gaps}",
+    f"uniform_gaps={np.round(np.array(uniform_gaps), 9)} "
+    f"max|gap - |M|| < 1e-10: {max(abs(g - abs(M)) for g in uniform_gaps) < 1.0e-10}",
 )
 check(
     "wall/anti-wall pair has one species per wall and net zero chirality on the torus",
     abs(wall_chi + anti_chi) < 1.0e-10 and abs(wall_hand + anti_hand) < 1.0e-10,
-    f"species_count=2 walls=2 net_edge_chi={wall_chi + anti_chi:.3e} net_handedness={wall_hand + anti_hand:.3e}",
+    f"species_count=2 walls=2 |net_edge_chi| < 1e-10: {abs(wall_chi + anti_chi) < 1.0e-10} "
+    f"|net_handedness| < 1e-10: {abs(wall_hand + anti_hand) < 1.0e-10}",
 )
 
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")

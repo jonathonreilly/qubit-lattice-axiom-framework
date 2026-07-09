@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 921 |
+| **retained_bounded** | 922 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1889 |
+| unaudited | 1888 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1315 |
+| `audited_clean` | 1316 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2234 |
+| `unaudited` | 2233 |
 
 | claim_type | count |
 |---|---:|
@@ -1104,6 +1104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `record_formation_append_certification_bounded_note_2026-07-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -15699,6 +15700,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`
   - `LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`
   - `RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md`
+- **auditor confidence:** high
+
+### `record_formation_append_certification_bounded_note_2026-07-04`
+
+- **Note:** [`RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md`](../../docs/RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded certification that 'Records form.' supplies occurrence strength only, and that any actual formation-successor strictly extends its predecessor by permanence plus per-site uniqueness; no formation rule, law domain, rate, clock, selector, or dynamics is supplied.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-fresh-context-audit-subagent-2026-07-09`  (codex-current; independence=fresh_context)
+- **load-bearing step:** "This is occurrence strength only" plus "Succession, wherever it exists, is monotone."  _(class `A`)_
+- **chain closes:** True — The axiom text supports occurrence and, conditional on an actual formation-successor, permanence plus per-site uniqueness force strict extension; the note explicitly excludes any formation rule, universal successor law, rate, clock, selector, or dynamics.
+- **rationale:** The citable axiom text contains 'Records form.' and the Qualification blocks extra physical structure absent derivation/admission. Read minimally, that supports occurrence and excludes empty-forever history, but it does not supply a total transition law, availability domain, site or possibility selector, rate, clock, stochastic process, or dynamics. The extension lemma closes only under the explicit conditional 'for any realized formation-successor': permanence preserves old records, per-site uniqueness forbids overwrite, and formation adds a record. The runner verifies exact text needles and finite toy consequences; it is not an independent dynamics derivation, but the note does not claim one.
 - **auditor confidence:** high
 
 ### `record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05`

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 921 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1877 |
+| unaudited | 1876 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 55 |
+| ~~audited_conditional~~ | 56 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 18 |
 | `audited_clean` | 1318 |
-| `audited_conditional` | 55 |
+| `audited_conditional` | 56 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2222 |
+| `unaudited` | 2221 |
 
 | claim_type | count |
 |---|---:|
@@ -1515,6 +1515,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
@@ -16711,6 +16712,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** If APBC is supplied on the tau circle, then W transports that operator exactly to the operator with APBC on the x1 circle, so KMS/APBC does not pick an axis before B-AXIS; it only decorates whichever axis was already chosen.  _(class `A`)_
 - **chain closes:** True — The direct dependencies are retained-grade for the single-clock scope boundary and the algebraic Grassmann/Berezin support, and the runner verifies the finite exchange-map APBC covariance directly. KMS and prior axis-selection notes are used as route/context text, while the no-go conclusion itself rests on the exact supplied-circle covariance and the retained B-AXIS scope boundary.
 - **rationale:** The load-bearing negative step is an explicit finite matrix statement: W carries APBC on the supplied tau circle to APBC on the supplied x1 circle, and only an asymmetric supplied boundary datum breaks the exchange. The runner constructs that map and the staggered/APBC operators directly, checks the zero-kernel and cyclic-shift contrasts, and uses quote checks only to pin the route context and retained no-go checklist. The residual boundary is explicit: this prunes KMS/APBC as a pre-axis supplier but does not rule out a future independently derived boundary-condition asymmetry or close B-AXIS itself.
+- **auditor confidence:** high
+
+### `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17`
+
+- **Note:** [`SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md`](../../docs/SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The bounded assertion that the named source packet explicitly supplies and consumes only (T_hat^2, 2 a_tau) as a physical-clock transfer, without excluding other positive commuting factor transfers.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-single_clock_physical_cl-028`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Applying the four physical-clock-admission checks to the current source packet leaves exactly {(T_hat^2, 2 a_tau)} and no second admitted transfer.  _(class `B`)_
+- **chain closes:** False — The retained authorities establish the transfer's positivity and denominator and show that Stone construction and record order do not independently supply clocks. They do not establish an exhaustive admission inventory, while the runner hard-codes the admission flags rather than deriving them from a complete packet manifest.
+- **rationale:** Issue: the runner hard-codes the sole-admission list and reads the superseded 2026-06-05 minimal-axiom memo, while no supplied manifest establishes that the inspected sources exhaust the current clock-admission surface. Why this blocks: source anchors support the named transfer but cannot prove the negative inventory statement without a closed enumeration of all eligible authorities. Repair target: supply an explicit dated source-packet or admission manifest and make the runner enumerate it using the cited 2026-06-29 axiom memo rather than preset physical_clock_admitted flags. Claim boundary until fixed: the named authorities support (T_hat^2, 2 a_tau) as an admitted clock and do not promote the exhibited factor comparators, but exhaustive single-clock admission remains conditional.
 - **auditor confidence:** high
 
 ### `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`

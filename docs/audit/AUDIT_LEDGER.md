@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 906 |
+| **retained_bounded** | 907 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1917 |
+| unaudited | 1916 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1295 |
+| `audited_clean` | 1296 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2262 |
+| `unaudited` | 2261 |
 
 | claim_type | count |
 |---|---:|
@@ -341,6 +341,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d2_soft_band_truncation_also_closes_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `d3_native_stable_orbit_upper_bound_composition_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `d3_staggered_two_band_orbital_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4417,6 +4418,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For finite periodic L=12,16 at E=0, truncating the exact step-2 Hamiltonian to kept d²={4,8} shells and exactly stepping to step 3 gives retained projected-resolvent errors 4.558e-3 and 1.3547e-2, while the harsher keep-d²=4 truncation is larger and no truncation gives zero difference.  _(class `C`)_
 - **chain closes:** True — The included runner constructs the finite periodic free d=2 Laplacian, applies Schur-complement decimations and shell truncations, and computes the projected E=0 resolvent without importing the measured values. An independent zero-sum-subspace recomputation reproduces the stated tail sizes, support counts, resolvent errors, growth from L=12 to L=16, harshness ordering, and no-truncation zero check.
 - **rationale:** The audited claim is a bounded finite-lattice datum, not an asymptotic or fixed-point theorem. The runner source performs genuine first-principles finite linear algebra from the stated free d=2 convention and contains no helper imports, hard-coded contested constants, or external comparator values. The displayed numerical claims match both the runner output and an independent computation route, so the finite scoped conclusion closes.
+- **auditor confidence:** high
+
+### `d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic step-1 checkerboard decimation lemma for a supplied free one-orbital nearest-neighbor scalar Hamiltonian on periodic cubic Z^3: exact odd-block diagonality, Schur-complement coefficients, no beyond-shell terms, E-covariance, retained-site resolvent equality, and the d=3 parity lemma; no kinetic branch, measure, weight, r-value, or step-2 range theorem is derived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=cross_family)
+- **load-bearing step:** On the framework's Z^3 nearest-neighbor adjacency with the supplied free one-orbital Hamiltonian, the odd-parity block is h_oo = mu I and the step-1 Schur complement has diag' = mu - 6t^2/mu, face-diagonal entries -2t^2/mu, axial entries -t^2/mu, no beyond-shell couplings, plus the d=3 parity lemma sum d_i^2 = sum d_i mod 2.  _(class `A`)_
+- **chain closes:** True — The minimal axiom packet supplies the cubic Z^3 nearest-neighbor lattice; the Hamiltonian parameters and free one-orbital kernel are explicit supplied bounded inputs. The runner constructs the finite periodic lattice matrices and verifies the Schur-complement coefficients, parity lemma, wraparound guard, E-shift, and resolvent identity with PASS=12 FAIL=0, without using external comparators or hidden downstream physics.
+- **rationale:** Clean within the bounded algebraic scope: the source states a supplied free one-orbital NN Hamiltonian on the cubic lattice, and the claimed step-1 coefficients are exactly the Schur-complement path counts over the odd sublattice. The parity lemma is elementary integer algebra and the runner also checks finite-size/wraparound, E-covariance, and retained-site resolvent equality. Residual risk is only scope: this does not derive a physical kinetic branch, measure, weight, r-value, or step-2 behavior from the axioms.
 - **auditor confidence:** high
 
 ### `d3_native_stable_orbit_upper_bound_composition_note_2026-06-09`

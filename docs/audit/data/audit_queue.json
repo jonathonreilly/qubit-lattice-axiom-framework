@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 407,
     "high": 272,
-    "leaf": 776,
+    "leaf": 775,
     "medium": 521
   },
   "cycle_break_target_count": 10,
@@ -36335,30 +36335,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_d3_checkerboard_step1_parity_lemma_2026_06_12.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -36665,6 +36641,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12",
+        "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/D3_TRUNCATION_COMMENSURATION_CRITERION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_d3_commensuration_criterion_2026_06_12.py",
       "transitive_descendants": 1
     },
     {
@@ -41307,31 +41308,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_connes_kreimer_bridge_16fold_blocking_no_go.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12",
-        "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/D3_TRUNCATION_COMMENSURATION_CRITERION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_d3_commensuration_criterion_2026_06_12.py",
       "transitive_descendants": 1
     },
     {
@@ -58859,5 +58835,5 @@
     }
   ],
   "ready_count": 249,
-  "total_pending": 1976
+  "total_pending": 1975
 }

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 896 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1938 |
+| unaudited | 1937 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1281 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 20 |
-| `unaudited` | 2283 |
+| `unaudited` | 2282 |
 
 | claim_type | count |
 |---|---:|
@@ -1464,6 +1464,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `yt_zero_import_authority_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
@@ -20047,6 +20048,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **chain closes:** True — The conclusion follows from SU(N) color-singlet invariance, trace algebra, and the retained kappa-family target in the cited color-projection correction. The note keeps alternative matching theorems and nonstandard scalar insertions out of scope rather than claiming a global impossibility theorem.
 - **rationale:** The load-bearing step is ordinary finite-dimensional color algebra, not a definition, numerical fit, or external comparator. The cited upstream authority is retained_no_go and supplies the conditional kappa_Y family that this note targets; the current note does not import the open kappa_Y selector as a premise. The restricted packet satisfies the no-go gate: it enumerates six routes, collapses independent walls, scans hidden assumptions, matches the cited residual, narrows rhetoric, leaves partial closure paths open, gives a steelman, and uses same-packet cross-cycle evidence.
 - **auditor confidence:** high
+
+### `yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`
+
+- **Note:** [`YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic support only: in the signed-record qubit algebra epsilon = sigma_z = P_+ - P_- = I - 2P_-, and in the declared one-Higgs EW bookkeeping the lower doublet ray satisfies P_- H_0 = H_0 and Q H_0 = 0, with no same-surface physical carrier identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-fresh-yt-signed-lower-20260709`  (codex-current; independence=weak)
+- **load-bearing step:** epsilon = sigma_z = P_+ - P_- = I - 2P_-; P_- H_0 = H_0, P_+ H_0 = 0, Q H_0 = 0.  _(class `A`)_
+- **chain closes:** False — The mathematical identities are direct algebra over the qubit and EW bookkeeping inputs, but the audit chain is not clean because the primary runner's current output is failing and imports an unprovided parent-note boundary.
+- **rationale:** Issue: the bounded algebra itself closes over the provided one-hop inputs, but the current primary runner is stale/out-of-packet: it reads docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md, which is not an allowed one-hop dependency here, and the current run returns TOTAL: PASS=34 FAIL=1. Why this blocks: the source note advertises a FAIL=0 verifier, but the verifier now fails a parent-boundary check and depends on an unprovided parent note. Repair target: slice or repair the runner so it verifies only this note plus the declared one-hop dependencies, or explicitly add and audit the parent dependency if that parent boundary is load-bearing. Claim boundary until fixed: the finite algebraic identities may be cited as local bounded support, but not as a clean audited row with the current runner artifact.
+- **auditor confidence:** medium
 
 ### `yt_source_action_support_packet_note_2026-05-22`
 

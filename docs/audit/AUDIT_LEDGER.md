@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 194 |
 | **retained_no_go** | 204 |
 | **retained_bounded** | 922 |
-| _retained_pending_chain_ | 7 |
+| _retained_pending_chain_ | 8 |
 | open_gate | 22 |
-| unaudited | 1872 |
+| unaudited | 1871 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -63,16 +63,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 18 |
 | `audited_clean` | 1322 |
 | `audited_conditional` | 55 |
-| `audited_decoration` | 49 |
+| `audited_decoration` | 50 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2217 |
+| `unaudited` | 2216 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2040 |
-| `decoration` | 51 |
+| `bounded_theorem` | 2039 |
+| `decoration` | 52 |
 | `meta` | 351 |
 | `no_go` | 482 |
 | `open_gate` | 183 |
@@ -85,7 +85,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 954 |
 | `leaf` | 1628 |
 
-- **Retained pending chain closure:** 7
+- **Retained pending chain closure:** 8
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -1562,6 +1562,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
 | `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
+| `pre_record_reference_state_tracial_derivation_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | `minimal_axioms` |
 | `quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `quark_c3_oriented_ward_splitter_support_note_2026-04-28` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08` | decoration | ~~audited_decoration~~ | `decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | cross_family | codex-gpt-5.5 | A | `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` |
@@ -15218,6 +15219,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Any tracial state restricts on each finite A_Lambda to the unique normalized matrix trace, so it agrees with tau_infty on dense A_loc; norm-continuity of states extends equality to all of A.  _(class `A`)_
 - **chain closes:** True — The chain closes from the accepted qubit-lattice axiom content plus standard finite-dimensional and inductive-limit C*-algebra facts invoked in the note: finite-region trace uniqueness fixes all local restrictions, compatible local normalized traces define the inductive-limit state, and density plus state continuity gives global uniqueness.
 - **rationale:** Clean within the scoped mathematical theorem. No runner is recorded, but the proof is standard exact C*-algebra: each finite tensor product matrix algebra has a unique normalized trace, tracial states agree on the dense local algebra, and norm-continuity extends equality to the quasi-local completion. No tuned comparator, hidden observable bridge, or physical readout is used for this scoped result. Residual hygiene risk is citation wording only: the source mentions an older minimal-axiom label, while the live dependency packet is the current minimal axiom note; the needed lattice and one-site M_2(C) content is present in the accepted premise.
+- **auditor confidence:** high
+
+### `pre_record_reference_state_tracial_derivation_note_2026-05-20`
+
+- **Note:** [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
+- **claim_type:** `decoration`
+- **claim_scope:** The unique tracial-state characterization of the one-qubit quasi-local algebra over Z^3, excluding its identification with a pre-record reference state.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** _retained_pending_chain_  (reason: `decoration_waiting_on:minimal_axioms`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-pre_record_reference_sta-053`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Applying finite-dimensional trace uniqueness on every local matrix algebra and the standard UHF inductive-limit theorem yields a unique tracial state whose finite-region restrictions are tensor products of I/2.  _(class `A`)_
+- **chain closes:** True — The accepted Qubit and Lattice premises determine the type-2-infinity UHF algebra, and standard matrix-algebra and UHF trace-uniqueness results force the stated product trace. The explicitly demoted pre-record identification is outside the audited scope.
+- **rationale:** The runner genuinely performs twelve finite-region algebraic checks, including trace identities, entropy identities, unitary invariance, and the correlated-state counterexample. It does not prove the thermodynamic-limit result, but that result follows by the note's named standard UHF trace-uniqueness import. Because the chain contains only algebraic closure over the single minimal-axioms parent plus standard mathematics and no external comparison, the rubric classifies it as a decoration.
+- **decoration parent:** `minimal_axioms`
 - **auditor confidence:** high
 
 ### `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality`

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 914 |
+| **retained_bounded** | 915 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1902 |
+| unaudited | 1901 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1304 |
+| `audited_clean` | 1305 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2247 |
+| `unaudited` | 2246 |
 
 | claim_type | count |
 |---|---:|
@@ -309,6 +309,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
+| `commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4031,6 +4032,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** Assuming SUPPLIED-C3, Hom_su3(3,3bar)=0 while the su(2) control has a one-dimensional epsilon intertwiner, and the cubic anomaly tensor satisfies A(3)=+1, A(3bar)=-1, so a supplied 3 plus ANOMALY-CANCEL requires a 3bar consistency partner; SUCCESSION-ORIENT remains only a named conditional premise.  _(class `A`)_
 - **chain closes:** True — The retained packet only needs minimal axioms as context because the audited mathematical claim is explicitly conditional on SUPPLIED-C3, comparability/ARROW/SUCCESSION-ORIENT for T2, and ANOMALY-CANCEL for T3. The runner computes the su(3)/su(2) intertwiner nullities and cubic anomaly signs exactly over rational complex matrices and reports PASS=6 FAIL=0; quoted external snippets are used as context checks, not as closure for the bounded algebraic claim.
 - **rationale:** Clean within the bounded conditional scope: the exact representation-theory checks close for a supplied C^3 carrier, and the anomaly-sign bookkeeping closes for a supplied anomaly-cancellation condition. The note repeatedly fences the open premises: C^3, comparability, ARROW, SUCCESSION-ORIENT, record-statistical influence, anomaly cancellation, and physical color/quark identification are not derived. Residual risk is only misuse downstream; citation must not promote the candidate succession supplier or any physical color bridge beyond the audited algebraic scope.
+- **auditor confidence:** high
+
+### `commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`COMMENSURATION_GENERAL_LEMMA_PERIOD_PARITY_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/COMMENSURATION_GENERAL_LEMMA_PERIOD_PARITY_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the d=3 step-2 K-period family (L/2, L, L/2), minimal-vector d^2 mod 2 parity agrees with chart parity for even L >= 8 exactly when L = 0 mod 4, with the Hamiltonian tie limited to the stated L=8 and L=10 anchors.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `Noether`  (codex-current; independence=fresh_context)
+- **load-bearing step:** Even K-period wraps preserve parity, while odd L/2 periods in the L = 4q + 2 branch flip parity on the high-half coordinates, giving d2_mod2 = chart_mod2 + high_x + high_z mod 2.  _(class `A`)_
+- **chain closes:** True — The scoped period-parity claim follows from elementary residue-class algebra over the retained d=3 step-2 chart family; the runner verifies the symbolic case split, frozen L=8/L=10 Hamiltonian anchors, and the extended combinatorial grid without claiming a new all-L Hamiltonian equivalence.
+- **rationale:** Closure holds under the note's scoped boundary. The proof is elementary residue-class algebra over the retained chart family, and the runner independently checks the symbolic case split plus an extended finite grid. Residual risk is downstream misuse: this clean result should not be cited as a general H_kd_after theorem beyond the stated Hamiltonian anchors.
 - **auditor confidence:** high
 
 ### `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12`

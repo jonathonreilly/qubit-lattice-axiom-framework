@@ -29,14 +29,14 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3715 |
-| Applied audit verdicts | 1454 |
-| Retained-grade rows, including boxed decorations | 1359 |
+| Applied audit verdicts | 1455 |
+| Retained-grade rows, including boxed decorations | 1360 |
 | Retained positive theorems | 197 |
 | Retained no-go rows | 202 |
-| Retained bounded rows | 914 |
+| Retained bounded rows | 915 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 21 |
-| Unaudited rows | 1902 |
+| Unaudited rows | 1901 |
 | Retained-pending-chain rows | 7 |
 | Audited conditional rows | 49 |
 | Audited renaming rows | 21 |
@@ -50,13 +50,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1967 |
-| Ready rows | 244 |
+| Total pending rows | 1966 |
+| Ready rows | 243 |
 | Cycle-break targets | 10 |
 | Critical pending | 407 |
 | High pending | 272 |
 | Medium pending | 521 |
-| Leaf pending | 767 |
+| Leaf pending | 766 |
 
 Next ready rows by queue order:
 

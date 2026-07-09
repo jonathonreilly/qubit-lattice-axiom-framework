@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 924 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
-| unaudited | 1867 |
+| unaudited | 1866 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -53,6 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_plaquette_self_consistency_note` | 1 |
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
+| `decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
 | `decoration_under_three_generation_observable_theorem_note` | 4 |
 | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | 1 |
@@ -63,16 +64,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 18 |
 | `audited_clean` | 1324 |
 | `audited_conditional` | 57 |
-| `audited_decoration` | 50 |
+| `audited_decoration` | 51 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2212 |
+| `unaudited` | 2211 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2039 |
-| `decoration` | 52 |
+| `bounded_theorem` | 2038 |
+| `decoration` | 53 |
 | `meta` | 351 |
 | `no_go` | 482 |
 | `open_gate` | 183 |
@@ -1570,6 +1571,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `quark_c3_oriented_ward_splitter_support_note_2026-04-28` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08` | decoration | ~~audited_decoration~~ | `decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | cross_family | codex-gpt-5.5 | A | `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` |
+| `realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02` | decoration | ~~audited_decoration~~ | `decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | cross_family | codex-gpt-5.6 | A | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` |
 | `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -15815,6 +15817,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** S + D = S^{1/2}(I+B)S^{1/2} with B real antisymmetric, so det(S+D)=det(S) det(I+B)>0; multiplicativity over disjoint blocks plus explicit continuity gives W_c=c log det, with c=1 chosen by convention.  _(class `A`)_
 - **chain closes:** True — The determinant positivity and derivative-patch sign constancy follow from finite-dimensional real linear algebra, while the log readout is explicitly bounded by the stated continuity and normalization conventions rather than claimed from Record alone.
 - **rationale:** The load-bearing determinant argument is correct: congruence by S^{1/2} reduces the positive diagonal source case to I+B with B real antisymmetric, whose eigenvalues occur as 0 or +/- i lambda and therefore give positive factors 1+lambda^2. For the derivative patch, ||D^{-1}J||<1 keeps D+tJ invertible for t in [0,1], so the real determinant cannot cross zero and preserves the positive sign of invertible real antisymmetric D. The log-readout step does not overclaim Record: continuity on R_{>0} and c=1 are explicit bounded conventions, so the result is clean only at bounded-theorem scope.
+- **auditor confidence:** high
+
+### `realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02`
+
+- **Note:** [`REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md`](../../docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Representative-level algebraic, dispersion, zero-set, and generated-algebra discriminators between the retained parent K0 and K1 classes; no branch selector or Admissibility interpretation was audited as decided.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-realized_kinetic_branch_-062`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting the parent representatives K0(p)=2Σμ cos(pμ)I and K1(p)=ΣμΓμ sin(pμ), with the computed Pauli/Clifford triple Γμ, directly yields discriminators D1–D4.  _(class `A`)_
+- **chain closes:** True — The retained parent supplies the two-class surface and representative symbols, while the retained M2(C)/Cl(3) authorities supply the qubit algebra. Standard 2×2 matrix and Fourier algebra then establishes the scoped discriminators without an additional premise.
+- **rationale:** The load-bearing work is class (A): it evaluates elementary consequences of the single retained kinetic-class parent and standard M2(C) algebra. The runner performs genuine calculations and contains no external-comparator checks, but it does not derive a new kinetic class or select the residual bit. The note correctly leaves the semantic bridge to the Admissibility axiom open.
+- **decoration parent:** `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`
 - **auditor confidence:** high
 
 ### `record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07`

@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 400,
-    "high": 267,
+    "high": 266,
     "leaf": 755,
     "medium": 522
   },
@@ -12267,34 +12267,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
-        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.822,
-      "note_path": "docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/realized_kinetic_branch_discriminators_2026_07_02.py",
-      "transitive_descendants": 9
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "universal_gr_isotropic_schur_localization_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -20797,6 +20769,33 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py",
       "transitive_descendants": 8
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02",
+        "realized_state_primitive",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.0,
+      "note_path": "docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/realized_kinetic_branch_conditional_record_registration_2026_07_02.py",
+      "transitive_descendants": 7
     },
     {
       "audit_independence_required": "any_non_self",
@@ -31106,33 +31105,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02",
-        "realized_state_primitive",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.0,
-      "note_path": "docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/realized_kinetic_branch_conditional_record_registration_2026_07_02.py",
-      "transitive_descendants": 7
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "bae_block_total_frobenius_derivation_narrow_theorem_note_2026-05-16",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38339,6 +38311,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_rd_bridge_anatomy_agreement_conditioning_2026_06_12.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "realized_kinetic_branch_d4_pattern_dichotomy_narrow_theorem_note_2026-07-03",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/REALIZED_KINETIC_BRANCH_D4_PATTERN_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-03.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.py",
       "transitive_descendants": 0
     },
     {
@@ -54517,33 +54516,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "realized_kinetic_branch_d4_pattern_dichotomy_narrow_theorem_note_2026-07-03",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/REALIZED_KINETIC_BRANCH_D4_PATTERN_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-03.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_born_frequency_boundary_2026-06-05",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -58067,6 +58039,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 222,
-  "total_pending": 1944
+  "ready_count": 223,
+  "total_pending": 1943
 }

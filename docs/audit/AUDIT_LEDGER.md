@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 914 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1903 |
+| unaudited | 1902 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 48 |
+| ~~audited_conditional~~ | 49 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1304 |
-| `audited_conditional` | 48 |
+| `audited_conditional` | 49 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2248 |
+| `unaudited` | 2247 |
 
 | claim_type | count |
 |---|---:|
@@ -1459,6 +1459,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `confinement_string_tension_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -3988,6 +3989,22 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** Averaging the per-momentum Bogoliubov lower bound and using W2 gives C_A >= (2 c_W^2 |m_L|^2/(beta C_H)) I_d(L), hence |m_L|^2 <= beta C_A C_H/(2 c_W^2 I_d(L)).  _(class `A`)_
 - **chain closes:** True — Within the stated W1-W4 hypotheses, W1, W3, and W4 give the per-mode lower bound on the anticommutator, and W2 turns the nonzero-momentum average into the displayed theorem bound. The d=1, d=2, and d>=3 IR threshold is covered by the retained_bounded cited authorities and matches the independent small-k comparison E_k ~ |k|^2.
 - **rationale:** The load-bearing step is a direct algebraic rearrangement of the four explicit finite-volume hypotheses with the stated unnormalized Fourier volume factors. The runner is not merely printing constants: it recomputes the finite lattice sums, checks the d=1 identity, monotonic/log behavior, bound monotonicity, and the symbolic rearrangement. The note explicitly excludes the broader claim that arbitrary continuous-symmetry Hamiltonians satisfy W1-W4, so the missing operator-construction theorem is outside this audited scope rather than a hidden dependency.
+- **auditor confidence:** high
+
+### `color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06`
+
+- **Note:** [`COLOR_COMP_HURWITZ_CLAUSE_SCOPE_REDUCTION_NARROW_THEOREM_NOTE_2026-07-06.md`](../../docs/COLOR_COMP_HURWITZ_CLAUSE_SCOPE_REDUCTION_NARROW_THEOREM_NOTE_2026-07-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded claim that the historical COMP Hurwitz/composition-algebra clause is unnecessary for graph-first su(3) algebra selection and non-operational for the target SU(3)/C^3, with no physical color derivation audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `Noether`  (codex-current; independence=weak)
+- **load-bearing step:** By T1, SU(3) is not the unit set of a normed division algebra; by T2, C^3 is not a Hurwitz-dimensional carrier; by T3, a graph-first route selects su(3) without composition-algebra input.  _(class `B`)_
+- **chain closes:** False — The graph-first T3 half closes from the retained graph-first dependency and the runner recomputation, but the T1/T2/T4 target-mismatch half relies on external Hurwitz classification and SU(3)/C^3 target premises not supplied as direct retained or accepted dependencies.
+- **rationale:** Issue: the theorem's non-operational half consumes external Hurwitz classification and Standard Model color-target premises that are not present as direct retained dependencies. Why this blocks: the full T4 scope cannot be granted from the stated direct chain; the runner verifies finite arithmetic/algebra after those premises are supplied. Repair target: add and audit direct retained or accepted-premise authority for Hurwitz classification and the scoped SU(3)/C^3 target facts, or split the clean T3 no-composition-input core from the conditional target-mismatch claim. Claim boundary until fixed: the graph-first route's algebra-selection independence from composition-algebra input is supportable; the physical-target Hurwitz obstruction remains conditional on imported authorities.
+- **open / conditional deps cited:**
+  - `external: Hurwitz classification`
+  - `external: SU(3)/C^3 physical target premises`
 - **auditor confidence:** high
 
 ### `color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06`

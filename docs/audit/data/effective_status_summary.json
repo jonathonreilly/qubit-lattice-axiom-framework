@@ -50,7 +50,7 @@
     "decoration_under_hierarchy_matsubara_decomposition_note": 1,
     "decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": 1,
     "decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": 1,
-    "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 2,
+    "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 3,
     "decoration_under_koide_dweh_cyclic_compression_note_2026-04-18": 1,
     "decoration_under_lattice_nn_deterministic_rescale_note": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
@@ -71,7 +71,7 @@
     "retained_bounded": 921,
     "retained_no_go": 205,
     "retained_pending_chain": 7,
-    "unaudited": 1876
+    "unaudited": 1875
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

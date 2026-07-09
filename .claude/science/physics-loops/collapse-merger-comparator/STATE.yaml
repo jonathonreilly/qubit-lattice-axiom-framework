@@ -26,9 +26,9 @@ success_bar: >
   Each named correspondence measured or exactly asserted; honest
   negatives filed if the toy refuses (e.g., no collapse runaway at any
   kappa, or merger by means other than bridging).
-current_block: block02 shipped (PR #5084); block03 (merger) next
-current_branch: physics-loop/collapse-merger-comparator-block02-20260708
-  (base = block01 branch, which now carries the Poisson deposition fix)
+current_block: CLOSED (block03 merger shipped, PR #5086; close folded
+  into the block03 branch)
+current_branch: physics-loop/collapse-merger-comparator-block03-20260708
 worktree: /Users/jonBridger/tp-matter-mass-wep
 imports: the coupled toy is a declared comparator device (fall bias,
   parcel model, kappa) — no derivation of the coupling is claimed here;
@@ -51,10 +51,17 @@ block02_result: >
   isolates the pull); ossification decelerates only in the starved
   regime, accelerates capture-fed (alpha=1.47) — corrects the merger
   thought-pass prose.
-next_exact_action: block03 — merger. Two blobs; husks never translate
-  (exact); merger by BRIDGING (between-region saturates first; final
-  husk connected, contains the union); husk monotonicity as the
-  area-theorem analog (exact); memory leg — radiated parcel burst
-  deposits a sparse permanent shell with measured post-passage clock
-  offset. Then block04 close + handoff.
+block03_result: >
+  PR #5086. MERGER-BY-BRIDGING (all six checks): husks never translate
+  (exact site-set superset via anchored containment-continuity
+  identity — the per-snapshot selector aliases, measured + declared);
+  t_bridge=3720 with junction fully recorded and far flanks 100% open
+  (between-region first); area analog exact (140 >= 51+88); exterior
+  survives (0.507); memory imprint exhibited (sparse far shell 0.207,
+  permanent clock suppression 0.635) — leakage-laid at this kappa, no
+  bridge-epoch burst (claimed as measured).
+next_exact_action: none — campaign closed. The named GR-correspondence
+  set (attraction, frozen star, area law, bridging merger, memory
+  imprint, saturation endgame) is exhibited or exactly asserted in one
+  coupled comparator.
 stop_condition_hit: none

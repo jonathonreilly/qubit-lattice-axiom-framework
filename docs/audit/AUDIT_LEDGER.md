@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 913 |
+| **retained_bounded** | 914 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1903 |
+| unaudited | 1902 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1303 |
+| `audited_clean` | 1304 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2248 |
+| `unaudited` | 2247 |
 
 | claim_type | count |
 |---|---:|
@@ -244,6 +244,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
+| `canonical_two_cell_context_c3_ew_instance_bounded_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-current | A | - |
 | `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3051,6 +3052,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Within the stated arithmetic scope, the chain closes by direct substitution and numerical identity checks from P = 0.5934 and 1/(4 pi). The derivation or physical certification of P is outside this row and remains owned by the parent plaquette surface.
 - **rationale:** The runner and helper import or hard-code the parent input P = 0.5934, then compute the displayed quantities by elementary arithmetic. The independent check confirms the formulas and printed values within the stated tolerances. There are no external comparator checks and no first-principles beta=6 plaquette derivation here, so the result is an algebraic decoration of a single retained-bounded parent rather than an independent physical closure.
 - **decoration parent:** `plaquette_self_consistency_note`
+- **auditor confidence:** high
+
+### `canonical_two_cell_context_c3_ew_instance_bounded_note_2026-07-02`
+
+- **Note:** [`CANONICAL_TWO_CELL_CONTEXT_C3_EW_INSTANCE_BOUNDED_NOTE_2026-07-02.md`](../../docs/CANONICAL_TWO_CELL_CONTEXT_C3_EW_INSTANCE_BOUNDED_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-algebra verification that the supplied M3 unit/traceless two-cell frame reproduces the landed C3 frame, gives the 8/9 instance witness, and leaves kappa_EW and EW readout adoption unclaimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `Noether`  (codex-current; independence=fresh_context)
+- **load-bearing step:** If the EW readout context is supplied as the M3 unit/traceless two-cell frame, it matches the parent's 8/9 count and channel naming without adopting the EW readout premise or determining kappa_EW.  _(class `A`)_
+- **chain closes:** True — The restricted packet closes for the bounded algebraic instance: the note and runner verify the unit/traceless Hilbert-Schmidt frame, the 8/9 dimension witness, automorphism preservation, and the kappa boundary while explicitly firewalling EW readout adoption.
+- **rationale:** Closure holds because the claim is bounded to exact instance witnesses and firewall language, not to physical EW adoption. The runner computes the C3/M3 Hilbert-Schmidt facts, dimension/count identity, automorphism preservation checks, and kappa boundary without setting kappa_EW or importing a tuned comparator. The residual risk is downstream misuse: citing this row as an EW readout theorem would exceed the audited scope.
 - **auditor confidence:** high
 
 ### `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12`

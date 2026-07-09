@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 407,
     "high": 272,
-    "leaf": 772,
+    "leaf": 771,
     "medium": 521
   },
   "cycle_break_target_count": 10,
@@ -36701,30 +36701,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_occurrence_thinned_iid_frequency_bridge_2026-07-01",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38189,6 +38165,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_inner_automorphism_invariance_tracial_identification.py",
       "transitive_descendants": 0
     },
     {
@@ -48908,31 +48909,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_inner_automorphism_invariance_tracial_identification.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_a1_loop_investigation_summary",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -58760,5 +58736,5 @@
     }
   ],
   "ready_count": 248,
-  "total_pending": 1972
+  "total_pending": 1971
 }

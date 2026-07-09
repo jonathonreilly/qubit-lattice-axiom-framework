@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 196 |
+| **retained** | 197 |
 | **retained_no_go** | 202 |
 | **retained_bounded** | 910 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1911 |
+| unaudited | 1910 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1299 |
+| `audited_clean` | 1300 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2256 |
+| `unaudited` | 2255 |
 
 | claim_type | count |
 |---|---:|
@@ -1056,6 +1056,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_supplied_selection_rule_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_transition_kernel_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_two_state_markov_stability_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-current | A | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-current | A | - |
@@ -14844,6 +14845,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For any row probability vector p=(x,1-x), (pK)_0 - pi_0 = (1-a-b)(p_0 - pi_0), so |1-a-b|<1 gives attraction to pi.  _(class `A`)_
 - **chain closes:** True — Independently expanding gives (pK)_0=b+x(1-a-b) and pi_0=b/(a+b), hence the stated deviation identity; iteration gives contraction by powers of 1-a-b. The kernel, physical bridge, and dial selection are explicitly outside the audited scope.
 - **rationale:** The load-bearing step is a direct algebraic identity for a supplied finite Markov kernel, not a numerical fit or symbol renaming. Independent calculation confirms the stationary vector, normalization, equal-letter subcase, biased subcase, and contraction factor, including the runner's displayed sample values. The clean verdict is limited to the supplied-kernel stability interface and does not certify any derivation or physical selection of the kernel, bridge, clock, Born law, Hamiltonian, generation dial, or Koide dial.
+- **auditor confidence:** high
+
+### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Unique tracial state on the qubit-lattice quasi-local UHF algebra A = closure of the directed union of finite tensor products over lattice sites, with every finite-region restriction equal to the normalized matrix trace; no downstream physical identification of tau_infty as a reference-state premise is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-curie`  (codex-current; independence=fresh_context)
+- **load-bearing step:** Any tracial state restricts on each finite A_Lambda to the unique normalized matrix trace, so it agrees with tau_infty on dense A_loc; norm-continuity of states extends equality to all of A.  _(class `A`)_
+- **chain closes:** True — The chain closes from the accepted qubit-lattice axiom content plus standard finite-dimensional and inductive-limit C*-algebra facts invoked in the note: finite-region trace uniqueness fixes all local restrictions, compatible local normalized traces define the inductive-limit state, and density plus state continuity gives global uniqueness.
+- **rationale:** Clean within the scoped mathematical theorem. No runner is recorded, but the proof is standard exact C*-algebra: each finite tensor product matrix algebra has a unique normalized trace, tracial states agree on the dense local algebra, and norm-continuity extends equality to the quasi-local completion. No tuned comparator, hidden observable bridge, or physical readout is used for this scoped result. Residual hygiene risk is citation wording only: the source mentions an older minimal-axiom label, while the live dependency packet is the current minimal axiom note; the needed lattice and one-site M_2(C) content is present in the accepted premise.
 - **auditor confidence:** high
 
 ### `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality`

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 912 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1906 |
+| unaudited | 1905 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 47 |
+| ~~audited_conditional~~ | 48 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1302 |
-| `audited_conditional` | 47 |
+| `audited_conditional` | 48 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2251 |
+| `unaudited` | 2250 |
 
 | claim_type | count |
 |---|---:|
@@ -1451,6 +1451,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
+| `acphilambda_k_even_registration_correction_registered_pattern_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -1731,6 +1732,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The finite real lift and heat-trace witnesses close, but the full carrier-removal no-go needs a direct retained dependency for the PR #4831 blindness theorem and off-locus carrier requirement.
 - **rationale:** Issue: the general blindness transfer and carrier-localization conclusion rely on PR #4831/off-locus carrier context while the packet wires only the staggered kinetic-class dependency. Why this blocks: the finite runner does not by itself prove Tr(f(H)Rt)=Tr(f(H)Rt^2) for every real f or establish that this blindness removes all required K-breaking registered content. Repair target: add/audit the direct dependency edge(s) carrying the real order-3 blindness theorem and the retained source for the off-locus K-breaking carrier requirement, or split the note so the finite real-lift computation is audited separately from the carrier no-go. Claim boundary until fixed: finite N=4,6 constructive real lift/order-three checks and N=4 heat-trace witnesses are supported; the full carrier-removal no-go remains conditional.
 - **auditor confidence:** medium
+
+### `acphilambda_k_even_registration_correction_registered_pattern_2026-07-02`
+
+- **Note:** [`ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md`](../../docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** K-even registration correction and registered-pattern normal form on the current retained surface, including the K-odd trace as reconstruction detector and the value residual as Tier-A R-eta sub-admission in narrowed coordinates.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-runner-artifact-20260709`  (codex-current; independence=weak)
+- **load-bearing step:** The primary runner must verify the Tier-A sub-admission quote and then execute the K-parity, finite route-kill, and note-discipline checks supporting the registered-pattern normal form.  _(class `B`)_
+- **chain closes:** False — The current runner exits nonzero during the Tier-A registry lookup before reaching the load-bearing K-parity and route-kill checks, so the advertised PASS=111 close is not reproducible from the packet.
+- **rationale:** Issue: the primary runner crashes in tier_a_statement() with KeyError: 'staggered_dirac_realization_gate_note_2026-05-03' while looking up docs/audit/data/tier_a_admissions.json. Why this blocks: the source note advertises a measured TOTAL: PASS=111 FAIL=0, but the live verifier currently exits with status 1 after only 33 partial setup/text checks and before the load-bearing K-parity and route-kill checks. Repair target: update the runner to the current Tier-A registry key/schema, or provide a stable cached certificate/log and rerun the verifier to completion. Claim boundary until fixed: the dependency file pins and premise quote gates reached before the crash are checked, but the K-even registration correction and registered-pattern normal-form theorem are not audit-closed.
+- **auditor confidence:** high
 
 ### `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11`
 

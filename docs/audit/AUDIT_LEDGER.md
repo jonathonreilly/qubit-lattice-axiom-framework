@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 196 |
-| **retained_no_go** | 200 |
+| **retained_no_go** | 201 |
 | **retained_bounded** | 906 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1920 |
+| unaudited | 1919 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1293 |
+| `audited_clean` | 1294 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2265 |
+| `unaudited` | 2264 |
 
 | claim_type | count |
 |---|---:|
@@ -1136,6 +1136,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sign_portability_invariant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `signed_gravity_response_lane_status_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | C | - |
+| `single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-current | A | - |
 | `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `single_clock_uniqueness_scope_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `site_phase_cube_shift_intertwiner_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -16153,6 +16154,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** [PASS] strict local/taste-cell chi selector is absent (strict=[], conserved_neutral_count=3); [PASS] local signed source primitive is blocked (physical_candidates=[]); FINAL_TAGS include NO_GO_STRICT_SELECTOR, SOURCE_PRIMITIVE_BLOCKED_LOCAL, and SIGNED_GRAVITY_PHYSICAL_SECTOR_NOT_RETAINED.  _(class `C`)_
 - **chain closes:** True — The restricted packet contains closed finite/local negative results, not merely an unresolved frontier note: the cached SHA-pinned runner completes and verifies absence of a strict local selector, absence of a native local signed source primitive, and non-retention of a physical signed-gravity sector. Under the judicial standard, those are retained negative boundaries, so no_go is the correct claim type. The load-bearing status is carried by finite runner checks over the local selector/source surface rather than by source-note status prose, so class C is the correct class.
 - **rationale:** The restricted packet contains closed finite/local negative results, not merely an unresolved frontier note: the cached SHA-pinned runner completes and verifies absence of a strict local selector, absence of a native local signed source primitive, and non-retention of a physical signed-gravity sector. Under the judicial standard, those are retained negative boundaries, so no_go is the correct claim type. The load-bearing status is carried by finite runner checks over the local selector/source surface rather than by source-note status prose, so class C is the correct class.
+- **auditor confidence:** high
+
+### `single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16`
+
+- **Note:** [`SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md`](../../docs/SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md)
+- **claim_type:** `no_go`
+- **claim_scope:** No-go for the KMS/APBC-as-axis-supplier route: on the stated finite staggered block, APBC on a supplied circle is axis-covariant under the tau<->x1 exchange, and axis selection requires an independently supplied per-axis boundary-condition asymmetry; this does not derive B-AXIS, physical time step, APBC from minimal axioms, exclusion of independent clocks, or a broad no-future-BC-supplier theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=cross_family)
+- **load-bearing step:** If APBC is supplied on the tau circle, then W transports that operator exactly to the operator with APBC on the x1 circle, so KMS/APBC does not pick an axis before B-AXIS; it only decorates whichever axis was already chosen.  _(class `A`)_
+- **chain closes:** True — The direct dependencies are retained-grade for the single-clock scope boundary and the algebraic Grassmann/Berezin support, and the runner verifies the finite exchange-map APBC covariance directly. KMS and prior axis-selection notes are used as route/context text, while the no-go conclusion itself rests on the exact supplied-circle covariance and the retained B-AXIS scope boundary.
+- **rationale:** The load-bearing negative step is an explicit finite matrix statement: W carries APBC on the supplied tau circle to APBC on the supplied x1 circle, and only an asymmetric supplied boundary datum breaks the exchange. The runner constructs that map and the staggered/APBC operators directly, checks the zero-kernel and cyclic-shift contrasts, and uses quote checks only to pin the route context and retained no-go checklist. The residual boundary is explicit: this prunes KMS/APBC as a pre-axis supplier but does not rule out a future independently derived boundary-condition asymmetry or close B-AXIS itself.
 - **auditor confidence:** high
 
 ### `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17`

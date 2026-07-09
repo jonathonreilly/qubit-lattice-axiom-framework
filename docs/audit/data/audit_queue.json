@@ -3,7 +3,7 @@
     "critical": 407,
     "high": 272,
     "leaf": 777,
-    "medium": 522
+    "medium": 521
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -21486,31 +21486,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "single_clock_uniqueness_scope_boundary_2026-06-06",
-        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -36870,6 +36845,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "record_tick_signature_neutral_2026-06-23",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/record_tick_signature_neutral_2026_06_23.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -43686,30 +43685,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_record_selective_instrument_atom_criterion_2026_06_05.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "record_tick_signature_neutral_2026-06-23",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/record_tick_signature_neutral_2026_06_23.py",
       "transitive_descendants": 1
     },
     {
@@ -58908,5 +58883,5 @@
     }
   ],
   "ready_count": 250,
-  "total_pending": 1978
+  "total_pending": 1977
 }

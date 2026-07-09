@@ -18,17 +18,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 196 |
+| **retained** | 195 |
 | **retained_no_go** | 205 |
 | **retained_bounded** | 921 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1879 |
-| audit_in_progress | 7 |
+| unaudited | 1881 |
+| audit_in_progress | 8 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
-| ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 55 |
+| ~~audited_renaming~~ | 21 |
+| ~~audited_conditional~~ | 54 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 16 |
 | `audited_clean` | 1318 |
-| `audited_conditional` | 55 |
+| `audited_conditional` | 54 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
-| `audited_renaming` | 22 |
-| `unaudited` | 2224 |
+| `audited_renaming` | 21 |
+| `unaudited` | 2226 |
 
 | claim_type | count |
 |---|---:|
@@ -144,7 +144,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_mechanism_note` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -1507,7 +1507,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
-| `record_context_generator_nonidentifiability_no_go_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1613,7 +1612,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
-| `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -12684,19 +12682,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The primary runner does not merely print constants: it generates the lattice, propagates amplitudes under distributed and point-source fields, compresses computed profiles, and compares the second-stage surrogate against the first. The helper source supplies lattice generation and constants used by the computation rather than importing the contested result from another note. The cited authorities are retained_bounded and the note's conclusion stays bounded: mesoscopic two-stage stability, not localized persistent-mass closure.
 - **auditor confidence:** high
 
-### `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08`
-
-- **Note:** [`MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the finite 6-NN reachability/no-diagonal arithmetic and the claimed identification of update tick, record tick, minimum time step, and one lattice edge.
-- **audit_status:** ~~audited_renaming~~
-- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-min_time_step_tied_to_the_lattic-13`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The minimum time step is one elementary dynamical update = one record tick, so one tick is identified with one nearest-neighbor hop and a_tau is tied to a_s.  _(class `F`)_
-- **chain closes:** False — The finite graph reachability facts close from the retained LATTICE_NN_LIGHT_CONE input and runner. The claimed physical/time-coordinate tie does not close because the identity between update tick, record tick, a_tau, and one edge is introduced as a naming convention rather than derived by a retained bridge theorem.
-- **rationale:** The runner genuinely checks small finite reachability, no-diagonal geometry, and a bounded group-velocity inequality, but those checks only support graph-local propagation per update. The load-bearing claim that this update tick is the physical minimum time step, record tick, and a_tau is an asserted symbol identity. The source note's own boundary confirms that the row is renaming/bounded reachability support only and requires a retained bridge theorem for promotion beyond that.
-- **auditor confidence:** high
-
 ### `minimal_absorbing_horizon_probe_note`
 
 - **Note:** [`MINIMAL_ABSORBING_HORIZON_PROBE_NOTE.md`](../../docs/MINIMAL_ABSORBING_HORIZON_PROBE_NOTE.md)
@@ -15733,23 +15718,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the stated L=3/L=4/L=5 events, occupancies, seeds, depth choices, and fixed 300-permutation sampled-null protocol, the three-point min-gain ledger and sampled-null gap series have the displayed values.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the finite sparse Fock systems, evolves them with expm_multiply, computes determinant phases, prefix statistics, sampled-null p95 values, min-gains, and medians, and its cached output matches the source note. The closure is only for the explicitly scoped finite diagnostic, not an exhaustive permutation null, asymptotic law, or physical U(1) gauge-field claim.
 - **rationale:** The load-bearing numbers are computed directly by the provided runner rather than imported from the cited authority or hard-coded as a print-only result. The one-hop authority is retained_bounded, which is retained-grade under the rubric, and the source note explicitly confines load-bearing content to the runner-defined finite objects. The negative conclusion is scoped to the displayed finite period series and does not overclaim an all-permutation null, asymptotic behavior, L>=6 behavior, or a physical gauge interpretation.
-- **auditor confidence:** high
-
-### `record_context_generator_nonidentifiability_no_go_2026-06-17`
-
-- **Note:** [`RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md`](../../docs/RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Finite no-go under supplied projective/Lueders readout algebra: the state/projective algebra does not select an endogenous readout context, and a one-step probability vector does not determine a physical production kernel, Markov generator, or rate unit.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-record_context_generator_noniden-10`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The same one-qubit state admits distinct complete projective readout contexts Z, X, and Y with different probability vectors, and the resulting one-step production vector does not identify the physical kernel, generator, or clock/rate normalization.  _(class `A`)_
-- **chain closes:** True — The finite algebraic witnesses close the negative claim over the supplied inputs: Z/X/Y give distinct normalized vectors, one-hot append is post-selection grammar only, and the same production vector embeds in distinct kernels, generators, and rate-clock pairs. The source-gate co-cycle citation is not needed for the proof, but several non-co-cycle upstream authorities remain non-retained.
-- **rationale:** The runner source genuinely computes the finite matrix/projector, stochastic-kernel, generator, and rate-clock witnesses rather than merely printing constants. The no-go discipline gate passes on the provided packet: it checks more than five attack routes, keeps the walls independent, narrows the claim to the supplied finite gate, and leaves future physical measurement/generator theorems open. The co-cycle citation to record_prerecord_instrument_kernel_gate_2026-06-06 is treated as informational and not load-bearing. However, the projective/Lueders and post-record grammar authorities used by the proof are marked unaudited, so retained-grade closure is not available under the rubric.
-- **open / conditional deps cited:**
-  - `LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`
-  - `LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`
-  - `RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `record_formation_append_certification_bounded_note_2026-07-04`

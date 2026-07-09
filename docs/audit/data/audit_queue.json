@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 400,
-    "high": 273,
+    "high": 272,
     "leaf": 755,
     "medium": 522
   },
@@ -11893,31 +11893,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.358,
-      "note_path": "docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/lattice_laplacian_shell_localization_2026_06_16.py",
-      "transitive_descendants": 115
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -11991,6 +11966,30 @@
       "ready": true,
       "runner_path": "scripts/frontier_single_axiom_hilbert.py",
       "transitive_descendants": 84
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "restricted_strong_field_closure_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+      ],
+      "direct_in_degree": 12,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 12.304,
+      "note_path": "docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_restricted_strong_field_closure_packet.py",
+      "transitive_descendants": 78
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -14363,30 +14362,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_quark_up_amplitude_tensor_endpoint_bridge.py",
       "transitive_descendants": 79
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "restricted_strong_field_closure_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
-      ],
-      "direct_in_degree": 12,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.304,
-      "note_path": "docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_restricted_strong_field_closure_packet.py",
-      "transitive_descendants": 78
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -20167,6 +20142,35 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "coarse_grained_exterior_law_helper_note_2026-04-14",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "finite_rank_gravity_residual_helper_note_2026-04-14",
+        "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/_frontier_loader.py",
+        "scripts/frontier_finite_rank_gravity_residual.py",
+        "scripts/frontier_same_source_metric_ansatz_scan.py"
+      ],
+      "load_bearing_score": 8.615,
+      "note_path": "docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_coarse_grained_exterior_law.py",
+      "transitive_descendants": 97
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -21463,35 +21467,6 @@
       "ready": true,
       "runner_path": "scripts/theta_mass_orientation_zero_branch_pairing_forced_2026_07_01.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "coarse_grained_exterior_law_helper_note_2026-04-14",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "finite_rank_gravity_residual_helper_note_2026-04-14",
-        "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/_frontier_loader.py",
-        "scripts/frontier_finite_rank_gravity_residual.py",
-        "scripts/frontier_same_source_metric_ansatz_scan.py"
-      ],
-      "load_bearing_score": 8.615,
-      "note_path": "docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_coarse_grained_exterior_law.py",
-      "transitive_descendants": 97
     },
     {
       "audit_independence_required": "any_non_self",
@@ -58221,6 +58196,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 220,
-  "total_pending": 1950
+  "ready_count": 221,
+  "total_pending": 1949
 }

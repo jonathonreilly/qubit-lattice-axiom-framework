@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 194 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 919 |
+| **retained_bounded** | 920 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1876 |
+| unaudited | 1875 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 18 |
-| `audited_clean` | 1319 |
+| `audited_clean` | 1320 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2221 |
+| `unaudited` | 2220 |
 
 | claim_type | count |
 |---|---:|
@@ -842,6 +842,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_keff_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_kernel_transfer_norm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `lattice_nn_continuum_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_deterministic_rescale_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -11826,6 +11827,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the measured norm with h^2 normalization, p = 1.5 is closest to stable across h = 1.0, 0.5, 0.25, 0.125.  _(class `C`)_
 - **chain closes:** True — The current runner, invoked with the note's four h values, reproduces the stated measured slopes: +0.102, -0.204, -0.598, and -1.046, ranking p = 1.5 closest to marginal. The note explicitly bounds the result away from branch promotion, same-harness propagation, and continuum-limit claims.
 - **rationale:** The load-bearing claim is a bounded numerical computation inside a specified local harness, not a physical promotion claim. The runner computes the relevant outgoing transfer norms and log-log measured slopes directly, and the scoped note does not import dependencies or overstate the result beyond the finite discriminator.
+- **auditor confidence:** high
+
+### `lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`
+
+- **Note:** [`LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite 15^3 zero-Dirichlet realization at R=4, restricted to seven-site-star sources and the stated shell-mean, radial-orbit, and reduced-shell observables.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-lattice_laplacian_shell_-044`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Building H = 6I - A on the explicit 15^3 Dirichlet lattice and applying it to the exterior-truncated seven star Green columns yields sewing-band sources whose reduced radial and anisotropic shell data depend only on total charge Q.  _(class `C`)_
+- **chain closes:** True — The runner directly constructs the nearest-neighbor lattice Laplacian, solves the Green and exterior Dirichlet systems, and derives the shell profiles and anisotropy anchor without helper data or hard-coded expected values. Linearity plus equality of all seven column images establishes factorization through total charge within the audited finite-grid scope.
+- **rationale:** The load-bearing computation is a first-principles class-C calculation from the accepted lattice premise, with the retained-bounded cubic-action authority supplying compatible symmetry structure. The source computes rather than imports the Green columns, shell source, radial kernel, and anisotropic coefficient, and all fourteen checks pass. The result is clean only within the note's explicit finite-grid and reduced-observable boundary; it does not establish a general-volume identity or the excluded tensor/GR completion.
 - **auditor confidence:** high
 
 ### `lattice_nn_continuum_note`

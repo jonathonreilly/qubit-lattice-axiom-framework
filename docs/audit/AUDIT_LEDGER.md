@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 197 |
+| **retained** | 196 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 922 |
+| **retained_bounded** | 921 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1880 |
-| audit_in_progress | 4 |
+| unaudited | 1881 |
+| audit_in_progress | 5 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 15 |
-| `audited_clean` | 1318 |
+| `audited_clean` | 1317 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2225 |
+| `unaudited` | 2226 |
 
 | claim_type | count |
 |---|---:|
@@ -139,7 +139,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
-| `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `poisson_self_gravity_mechanism_note` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -1032,7 +1032,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_three_flux_holonomy_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14515,19 +14514,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The finite matrix identities: conjugation by C sends (c_1,c_2,c_3) to (c_2,c_3,c_1), I_3 has forward-cycle coefficients (0,0,0), and S(A)=P_23 A^dagger P_23 has fixed locus c_1=conjugate(c_3) with c_2 real.  _(class `A`)_
 - **chain closes:** True — The bounded claim closes over the explicitly displayed finite matrices and maps with no direct dependencies. It does not close, and does not claim to close, any physical PMNS bridge or primitive derivation.
 - **rationale:** The source narrows the row to exactly three finite matrix identities and explicitly excludes the physical carrier, observable law, identity-block interpretation, graph-first swap derivation, PMNS value selection, angle prediction, physical mixing law, and derivation from primitives. The runner source defines the displayed matrices and computes the finite matrix maps; its load-bearing checks are A-class algebraic checks, while the remaining PASS lines are source-firewall text checks. No B/C/D physical, dependency, or comparator step is being ratified. The clean verdict applies only to the bounded raw-matrix scope.
-- **auditor confidence:** high
-
-### `pmns_oriented_cycle_two_prong_composition_bridge_bounded_note_2026-05-26`
-
-- **Note:** [`PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/PMNS_ORIENTED_CYCLE_TWO_PRONG_COMPOSITION_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded composition of the retained graph-first residual antiunitary theorem with the free-point identity-block sibling, plus direct 3x3 matrix algebra for the stated downstream identities.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260616-033337-2a9762c90c-pmns_oriented_cycle_two_pron`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The parent’s two admitted premises are supplied by the cited sibling authorities: B1 gives A_fwd = P_23 A_fwd^dagger P_23 and B2 gives A_act((1,1,1),(0,0,0),delta) = I_3, after which the remaining identities are direct 3x3 algebra.  _(class `A`)_
-- **chain closes:** True — The antiunitary sibling is marked retained, the free-point sibling is marked decoration under a retained parent, and the channel-value parent is marked retained. Independent matrix-unit multiplication gives P_23 A_fwd^dagger P_23 = bar(c_3)E_12 + bar(c_2)E_23 + bar(c_1)E_31, while substituting x=(1,1,1), y=(0,0,0) gives A_act=I_3 and zero forward-cycle coefficients.
-- **rationale:** The claim is a bounded algebraic composition over retained-grade one-hop authorities, not a numerical comparator or symbol renaming. The displayed P_23 conjugation, fixed-locus condition, free-point identity block, cyclic covariance of I_3, and zero channel coefficients all check by direct matrix algebra independent of the runner implementation. The runner source performs finite 3x3 computations and has no missing helper path in the packet; it does not introduce a tuned value or external observational check.
 - **auditor confidence:** high
 
 ### `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16`

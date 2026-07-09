@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 920 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1875 |
+| unaudited | 1874 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 54 |
+| ~~audited_conditional~~ | 55 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 18 |
 | `audited_clean` | 1320 |
-| `audited_conditional` | 54 |
+| `audited_conditional` | 55 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2220 |
+| `unaudited` | 2219 |
 
 | claim_type | count |
 |---|---:|
@@ -1510,6 +1510,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
@@ -15817,6 +15818,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The surviving no-go is only: the current minimal axioms do not force the formation rule/process/state/site/weight/rate.  _(class `A`)_
 - **chain closes:** True — The source note has narrowed away the old unforced-occurrence claim: the minimal axiom memo explicitly says Records form while leaving formation rules and record-production dynamics outside axiom content. The finite-dimensional negative controls support the same boundary by showing that trivial, decoupled, and eigenstate unitary surfaces do not supply a concrete process, rule, state trigger, site, weight, or rate.
 - **rationale:** The current runner completed with TOTAL: PASS=6 FAIL=0 and its cached output matches the narrowed target. The load-bearing claim follows from the accepted minimal axiom boundary plus exact finite-dimensional negative controls; it no longer asserts that generic record occurrence is absent. Residual risk is downstream only: a later admitted or derived record-production model could supply formation details, but that would be outside the minimal axiom baseline audited here.
+
+### `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`
+
+- **Note:** [`RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md`](../../docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The explicit finite S plus E_1..E_n model: all-state, all-continuous-time pointer-population conservation and the displayed controlled-copy record construction with fresh or idle fragments.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-record_formation_pointer-045`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Under the stated quantum-Darwinism convention, persistent objective pointer-record formation requires [H_int, Pi_S] = 0, while H_int = g sigma_z(S) tensor sum_k sigma_x(E_k) at t = pi/(4g), with fresh or idle fragments, is a sufficient finite construction.  _(class `C`)_
+- **chain closes:** False — The runner establishes the all-state, all-time pointer-conservation iff theorem and the particular sufficient construction, but it does not establish that persistent record formation under the stated fixed initial state and further discrete U steps generally implies [H_int, Pi_S] = 0. Its additivity check also defines a separate record-mass by summing singleton information rather than proving that the stated Holevo information is additive over fragment unions.
+- **rationale:** The dense-operator runner genuinely computes the finite controlled-copy construction and correctly verifies the Heisenberg pointer-conservation equivalence. However, the note promotes that equivalence into a broader necessity claim for persistent objective record formation without supplying the required quantifier and dynamics argument. The runner’s tautologically additive record-mass is also not the same functional as the union-fragment Holevo information specified in the claim.
+- **auditor confidence:** high
 
 ### `record_function_finite_sector_algebra_2026-06-05`
 

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 912 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1907 |
+| unaudited | 1906 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 46 |
+| ~~audited_conditional~~ | 47 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1302 |
-| `audited_conditional` | 46 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2252 |
+| `unaudited` | 2251 |
 
 | claim_type | count |
 |---|---:|
@@ -1450,6 +1450,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -1717,6 +1718,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The claim closes as finite algebra and symbolic enumeration within the stated surface. It does not require or assert a physical-species bridge, full-dynamics complementation equivariance, or any registry/status change.
 - **rationale:** The runner actually enumerates the Boolean cube, the order-48 coordinate-permutation/bit-flip relabelings, the C3 orbit structure, and the listed triplet profiles, and it symbolically verifies the circulant determinant and orientation-odd readout identities. The load-bearing step is exact finite algebra rather than a definition substitution, external comparator, or tuned numerical match. The source note is scoped to support-only finite-surface content and expressly avoids the unclosed physical bridge and registry implications.
 - **auditor confidence:** high
+
+### `acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02`
+
+- **Note:** [`ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md`](../../docs/ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** One-component nearest-neighbor staggered K0/K1 surface removal as a K-breaking carrier via real non-projective C3[111] lift plus conjugate-sector blindness.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-fresh-kblindness-auditor-20260709-b`  (codex-current; independence=weak)
+- **load-bearing step:** The step that imports the PR #4831 theorem verbatim to upgrade finite real/order-three lift checks into all-real-functions trace blindness and the claimed K-breaking carrier no-go.  _(class `C`)_
+- **chain closes:** False — The finite real lift and heat-trace witnesses close, but the full carrier-removal no-go needs a direct retained dependency for the PR #4831 blindness theorem and off-locus carrier requirement.
+- **rationale:** Issue: the general blindness transfer and carrier-localization conclusion rely on PR #4831/off-locus carrier context while the packet wires only the staggered kinetic-class dependency. Why this blocks: the finite runner does not by itself prove Tr(f(H)Rt)=Tr(f(H)Rt^2) for every real f or establish that this blindness removes all required K-breaking registered content. Repair target: add/audit the direct dependency edge(s) carrying the real order-3 blindness theorem and the retained source for the off-locus K-breaking carrier requirement, or split the note so the finite real-lift computation is audited separately from the carrier no-go. Claim boundary until fixed: finite N=4,6 constructive real lift/order-three checks and N=4 heat-trace witnesses are supported; the full carrier-removal no-go remains conditional.
+- **auditor confidence:** medium
 
 ### `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11`
 

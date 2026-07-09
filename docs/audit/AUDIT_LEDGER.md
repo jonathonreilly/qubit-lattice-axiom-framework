@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 916 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1900 |
+| unaudited | 1899 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 50 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1306 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 50 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2245 |
+| `unaudited` | 2244 |
 
 | claim_type | count |
 |---|---:|
@@ -1468,6 +1468,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_action_predicts_q1_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
@@ -6026,6 +6027,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The finite two-band Harper/PT runner computes mu*_PT(m,T) on the stated mass-temperature grid and shows that mu*_PT(m,T)^2 - m^2 has a per-temperature mean eps*(T)^2 with maximum relative spread below 2%.  _(class `C`)_
 - **chain closes:** True — The runner source directly constructs the finite Harper/PT matrices, evaluates the full PT response, bisects roots, and derives the eps*(T) table from those computed roots. The cited authorities are retained_bounded and no external comparator, empirical value, or hidden bridge is needed for the stated finite-grid scope.
 - **rationale:** The load-bearing result is a first-principles finite-dimensional computation on the declared Harper/PT surface, not a renaming or imported curve. The only imported numerical anchor is used as a provenance sanity check, while the eps*(T) values and spreads are computed from the PT roots in the runner. The printed root table also supports the disclosed residual pattern: per-temperature collapse values decrease with m and have residual signs (+,+,+,-). The claim is clean only within its bounded sampled-grid scope and does not establish continuum behavior or exact m-independence.
+- **auditor confidence:** high
+
+### `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`EPSSTAR_FULL_KERNEL_COEFFICIENT_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/EPSSTAR_FULL_KERNEL_COEFFICIENT_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite Q=24, Ly=2, GL=20, m=0 Harper/PT runner claim that retaining the full finite-T divided-difference kernel flips the naive negative seagull coefficient and gives a positive mu*(T)^2 slope within the frozen 15% tolerance.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `Noether`  (codex-current; independence=weak)
+- **load-bearing step:** The runner evaluates the complete finite-T PT integrand once at the fixed surface scale T = eta = 0.05 and divides by T^2 to obtain the full-kernel coefficient.  _(class `C`)_
+- **chain closes:** False — The runner supports an internal finite-cell sign-flip check under chosen Harper/PT settings, but the direct packet does not close the model/bridge assumptions or replace the one-point T=eta coefficient/tolerance comparison with a controlled bounded error estimate.
+- **rationale:** Issue: the load-bearing coefficient route depends on a chosen Harper/PT finite model, branch bracket, eta=0.05 surface scale, and finite-grid tolerance comparison not derived or admitted in the direct packet. Why this blocks: minimal_axioms supplies only framework/context support and does not choose Hamiltonians, kinetic branches, time metrics, PT kernels, or physical observable bridges, so the theorem cannot be retained as closed from the provided chain. Repair target: add and audit a direct bridge or admission deriving the Harper/PT surface, PT kernel/readout, branch and surface-scale choices, plus a controlled coefficient limit or bounded error estimate. Claim boundary until fixed: the runner is evidence for an internal finite-cell sign-flip/tolerance check, not a closed first-principles bounded theorem.
+- **open / conditional deps cited:**
+  - `external: Harper/PT response surface and branch/surface-scale bridge`
 - **auditor confidence:** high
 
 ### `epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12`

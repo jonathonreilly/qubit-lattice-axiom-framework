@@ -126,6 +126,9 @@ PROSE_FIX_REQUIRED_FIELDS = {"old_hash", "new_hash", "prose_status", "prose_corr
 # newer are accepted.
 MIN_NEW_AUDIT_FAMILY_RANK = (5, 5)
 _FAMILY_RANK_RE = re.compile(r"codex-gpt-(\d+(?:\.\d+)*)$")
+_SUPPORTED_CODEX_MODEL_RE = re.compile(
+    r"gpt-(?P<version>\d+(?:\.\d+)*)(?:-sol)?$"
+)
 
 
 def _family_rank(family: str | None) -> tuple[int, ...] | None:
@@ -157,6 +160,22 @@ def _family_meets_floor(family: str | None) -> bool:
     floor_padded = floor + (0,) * (width - len(floor))
     return rank_padded >= floor_padded
 
+
+def _canonical_codex_family_for_model(model: str) -> str:
+    """Map an accepted exact model slug to its stable numeric family."""
+    match = _SUPPORTED_CODEX_MODEL_RE.fullmatch(model)
+    if match:
+        return f"codex-gpt-{match.group('version')}"
+    return f"codex-{model}"
+
+
+def _canonicalize_existing_auditor_family(family: str | None) -> str | None:
+    """Normalize legacy suffix-bearing Codex families for independence checks."""
+    if not family or not family.startswith("codex-"):
+        return family
+    return _canonical_codex_family_for_model(family.removeprefix("codex-"))
+
+
 ALLOWED_JUDICIAL_SIDES = {"first", "second", "hybrid", "neither"}
 JUDICIAL_REVIEWABLE_STATUSES = {
     "disagreement",
@@ -186,7 +205,10 @@ def cross_confirmation_error(first: dict, audit: dict) -> str | None:
     if first_auditor and first_auditor == auditor:
         return "second auditor must have a distinct auditor identity/session from the first"
 
-    same_family = first.get("auditor_family") == audit.get("auditor_family")
+    same_family = (
+        _canonicalize_existing_auditor_family(first.get("auditor_family"))
+        == _canonicalize_existing_auditor_family(audit.get("auditor_family"))
+    )
     if same_family and audit.get("independence") != "fresh_context":
         return (
             "same-family second audit requires independence='fresh_context' "
@@ -207,11 +229,18 @@ def third_confirmation_error(cross_confirmation: dict, audit: dict) -> str | Non
         return "third auditor must have a distinct auditor identity/session from both prior auditors"
 
     prior_families = {
-        (cross_confirmation.get("first_audit") or {}).get("auditor_family"),
-        (cross_confirmation.get("second_audit") or {}).get("auditor_family"),
+        _canonicalize_existing_auditor_family(
+            (cross_confirmation.get("first_audit") or {}).get("auditor_family")
+        ),
+        _canonicalize_existing_auditor_family(
+            (cross_confirmation.get("second_audit") or {}).get("auditor_family")
+        ),
     }
     prior_families.discard(None)
-    if audit.get("auditor_family") in prior_families and audit.get("independence") != "fresh_context":
+    current_family = _canonicalize_existing_auditor_family(
+        audit.get("auditor_family")
+    )
+    if current_family in prior_families and audit.get("independence") != "fresh_context":
         return (
             "same-family third audit requires independence='fresh_context' "
             "to document a restricted-input clean-room session"
@@ -528,8 +557,14 @@ def validate_auditor_provenance(audit: dict) -> str | None:
             "effort. Re-run the audit with the correct setting."
         )
     declared_family = audit.get("auditor_family")
-    if isinstance(declared_family, str) and declared_family.startswith("codex-gpt-"):
-        expected = f"codex-{auditor_model}"
+    if auditor_model.startswith("gpt-"):
+        if not _SUPPORTED_CODEX_MODEL_RE.fullmatch(auditor_model):
+            return (
+                f"auditor_model={auditor_model!r} is not an accepted full GPT "
+                "audit-model slug; expected a numeric GPT model with optional "
+                "'-sol' serving suffix."
+            )
+        expected = _canonical_codex_family_for_model(auditor_model)
         if declared_family != expected:
             return (
                 f"auditor_family={declared_family!r} does not match "
@@ -537,6 +572,11 @@ def validate_auditor_provenance(audit: dict) -> str | None:
                 f"{expected!r}. Either fix the family label or fix the "
                 "model field; they must agree."
             )
+    elif isinstance(declared_family, str) and declared_family.startswith("codex-gpt-"):
+        return (
+            f"auditor_family={declared_family!r} requires a supported GPT "
+            f"auditor_model, got {auditor_model!r}."
+        )
     return None
 
 

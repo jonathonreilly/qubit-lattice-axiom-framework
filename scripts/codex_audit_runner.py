@@ -77,6 +77,9 @@ LOG_DIR = REPO_ROOT / "logs" / "codex-audit-runs"
 # autopilot authors) or a same-family second-pass (must be fresh_context).
 AUDIT_REASONING_EFFORT = "xhigh"
 MODEL_FALLBACK = "gpt-5.5"
+SUPPORTED_AUDIT_MODEL_RE = re.compile(
+    r"gpt-(?P<version>\d+(?:\.\d+)*)(?:-sol)?$"
+)
 
 # Minimum audit-model rank (numeric tuple). The audit lane refuses to
 # run on anything below this unless --allow-low-model is passed (a
@@ -96,7 +99,7 @@ HELPER_SOURCE_CHAR_LIMIT = 120_000
 
 def _meets_floor(model: str | None) -> bool:
     """True if model parses to a rank >= MIN_AUDIT_MODEL_RANK."""
-    if not model:
+    if not model or not SUPPORTED_AUDIT_MODEL_RE.fullmatch(model):
         return False
     rank = _model_rank(model)
     if not rank:
@@ -109,7 +112,24 @@ def _meets_floor(model: str | None) -> bool:
 
 
 def codex_family_for_model(model: str) -> str:
+    """Return the canonical ledger family while preserving model detail elsewhere.
+
+    Audit model slugs may carry a serving/runtime suffix (for example
+    "gpt-5.6-sol"), but apply_audit.py deliberately validates the stable
+    numeric family namespace (for example "codex-gpt-5.6"). The exact slug
+    is still written separately as "auditor_model" on every audit row.
+    """
+    match = SUPPORTED_AUDIT_MODEL_RE.fullmatch(model)
+    if match:
+        return f"codex-gpt-{match.group('version')}"
     return f"codex-{model}"
+
+
+def canonicalize_existing_auditor_family(family: str | None) -> str | None:
+    """Normalize a previously recorded Codex family for role comparison."""
+    if not family or not family.startswith("codex-"):
+        return family
+    return codex_family_for_model(family.removeprefix("codex-"))
 
 
 def _model_rank(model: str) -> tuple[int, ...]:
@@ -144,7 +164,7 @@ def _reasoning_efforts(model_info: dict) -> set[str]:
 
 def _is_full_gpt_audit_model(model_info: dict) -> bool:
     slug = str(model_info.get("slug") or "")
-    if not slug.startswith("gpt-"):
+    if not SUPPORTED_AUDIT_MODEL_RE.fullmatch(slug):
         return False
     lowered = slug.lower()
     if any(part in lowered for part in ("mini", "spark", "auto-review")):
@@ -269,7 +289,7 @@ def add_auditor_metadata(verdict_blob: dict, auditor_name: str,
     blob["auditor"] = auditor_name
     blob["auditor_family"] = auditor_family
     # Stamp the exact model + reasoning effort the runner used. apply_audit
-    # validates that codex-gpt-* family labels agree with this exact model.
+    # validates the stable numeric family against this exact model slug.
     blob["auditor_model"] = auditor_model
     blob["auditor_reasoning_effort"] = auditor_reasoning_effort
     blob["independence"] = independence
@@ -337,7 +357,10 @@ def determine_audit_role(led_row: dict, auditor_family: str,
     if audit_status == "audit_in_progress" and cc_status == "awaiting_second":
         first_audit = cc.get("first_audit") or {}
         first_family = first_audit.get("auditor_family") if isinstance(first_audit, dict) else None
-        if first_family == auditor_family:
+        if (
+            canonicalize_existing_auditor_family(first_family)
+            == canonicalize_existing_auditor_family(auditor_family)
+        ):
             return "second", "fresh_context"
         return "second", "cross_family"
 
@@ -347,7 +370,10 @@ def determine_audit_role(led_row: dict, auditor_family: str,
     # whichever auditor produced the prior verdict.
     if is_reaudit_candidate:
         prior_family = led_row.get("auditor_family")
-        if prior_family == auditor_family:
+        if (
+            canonicalize_existing_auditor_family(prior_family)
+            == canonicalize_existing_auditor_family(auditor_family)
+        ):
             return "reaudit", "fresh_context"
         return "reaudit", "cross_family"
 

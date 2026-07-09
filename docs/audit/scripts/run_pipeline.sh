@@ -39,6 +39,9 @@ cd "${REPO_ROOT}"
 echo "==> 0/16 check_axiom_premise_clean.py (guard: axiom/primitive premise docs stay pure)"
 python3 docs/audit/scripts/check_axiom_premise_clean.py
 
+echo "==> 0a/16 audit_model_family_normalization_guard.py (guard: model/family provenance stays compatible)"
+python3 scripts/audit_model_family_normalization_guard.py
+
 echo "==> 1/16 build_citation_graph.py"
 python3 docs/audit/scripts/build_citation_graph.py
 

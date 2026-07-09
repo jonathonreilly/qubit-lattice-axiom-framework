@@ -30,6 +30,43 @@ is chosen here. Comparator devices declared; sets no audit status.
 **Runner cache:**
 [`logs/runner-cache/sourcing_correlation_wake_quantification_2026_07_08.txt`](../logs/runner-cache/sourcing_correlation_wake_quantification_2026_07_08.txt)
 
+## The Saturation-Limited Wake (owner-prompted addendum, same day)
+
+The two-channel measurement above used a resetting background that
+refreshes capacity -- a declared comparator device that HIDES the
+axioms' own regulator. The axiom-faithful leg (all records permanent,
+zone-only formation, calibrated to the partial-coverage regime
+f = 0.31, with the saturating corner reported separately) shows the
+wake is SELF-REGULATING, with no new content:
+
+- **One-shot (exact):** no site ever deposits twice.
+- **Self-limiting trail (stronger than independent filling):**
+  per-transit deposits fall `94 / 49 / 18 / 15 / 10 / 6` -- at-least
+  geometric decay, in fact sub-geometric accumulation (coverage
+  `0.31 -> 0.64` against the independent-filling model's `0.90`),
+  because crowding suppresses deposition into its own gaps: the same
+  constraint character that makes the mechanism attractive makes the
+  trail anti-catalyze its own deepening.
+- **Suppression asymptotes on coverage** (track error `0.09`),
+  refuting linear-in-transits deepening.
+- **Contrast dies while the mean saturates:** the within-band clock
+  contrast falls `0.400 -> 0.085` (factor `4.7`) as the trail
+  homogenizes, while mean suppression saturates at `0.97`. By the
+  forced background subtraction (the classified static law) a uniform
+  clock offset is a global-unit convention, not a field:
+  UNIFORM-WAKE-IS-CONVENTION. Only the young, patchy wake gravitates,
+  and it self-erases toward convention as it ages.
+
+Consequence for the premise ledger: P-DEPOSITION-SPARSE is
+substantially weakened -- the CUMULATIVE wake regulates itself
+(capacity + crowding + subtraction); what remains of the premise is
+only the amplitude of the TRANSIENT young-wake contrast, which is the
+scalar-memory-channel prediction rather than a Newtonian-shape threat.
+The first gate design encoded an independent-site geometric model that
+the crowding physics rightly violates in the favorable direction; the
+corrected gates test the physical claims (at-most-geometric deposits,
+sub-geometric accumulation) -- both corrections documented here.
+
 ## Boundaries
 
 - The moving elevated-activity zone models "formation opportunity is

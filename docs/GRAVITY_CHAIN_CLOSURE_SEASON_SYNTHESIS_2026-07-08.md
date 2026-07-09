@@ -42,14 +42,17 @@ status:
   record-formation opportunity. Natural reading of the Record
   axiom's formation sentence through the dynamics-form theorem's
   quantum-Darwinism premise; not yet derived.
-- **P-DEPOSITION-SPARSE:** the realized formation rule deposits records
-  sparsely per unit activity. Forced dichotomy from the wake
-  quantification (#5080): sparse deposition gives gravity that follows
-  its source (Newtonian shape, wake subdominant with dwell scaling
-  measured at alpha ~ 0.6-1.1); heavy deposition predicts permanent
-  gravitational-memory-like trails. Falsifiable in-framework either
-  way; the realized rule's deposition rate is the sharpest named open
-  computation.
+- **P-DEPOSITION-SPARSE (weakened same-day to a transient-amplitude
+  statement):** the axiom-faithful saturation leg (#5080 addendum)
+  shows the CUMULATIVE wake self-regulates with no new content --
+  one-shot capacity, sub-geometric trail accumulation (crowding
+  suppresses its own deposition), suppression asymptoting on coverage,
+  and the aged uniform wake reducing to a global-unit convention by
+  the forced background subtraction (contrast dies 4.7x while the
+  mean saturates). What remains supplied is only the amplitude of the
+  TRANSIENT young-wake contrast -- a scalar-memory-channel prediction
+  (testable against the breathing-mode memory literature), not a
+  Newtonian-shape threat.
 
 Also standing, unruled by owner choice (nothing blocked): the
 constraint reading of Admissibility and lawful-rate-law existence

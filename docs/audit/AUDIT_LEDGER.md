@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 924 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
-| unaudited | 1868 |
+| unaudited | 1867 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 56 |
+| ~~audited_conditional~~ | 57 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 18 |
 | `audited_clean` | 1324 |
-| `audited_conditional` | 56 |
+| `audited_conditional` | 57 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2213 |
+| `unaudited` | 2212 |
 
 | claim_type | count |
 |---|---:|
@@ -1525,6 +1525,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
+| `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -19160,6 +19161,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** By L1 and L2, all populated sector masses m(q) are real and non-negative; requiring e^{i theta q} m_tilde(q) with m_tilde(q)>0 to reproduce native sector ratios forces every nonvacuous relative phase to be positive real, hence theta is zero modulo support aliases.  _(class `A`)_
 - **chain closes:** True — The proof uses retained-grade or meta one-hop inputs for the positive native measure/transfer carrier and then only pushforward positivity plus elementary phase-ratio algebra. Context handles are plain-text/non-dependency handles, and the note explicitly leaves Q-existence, integrality derivation, susceptibility, arbitrary UV completions, and arbitrary positive factorization outside scope.
 - **rationale:** The L1 attribution split is correct: pointwise Wilson positivity is elementary, while cited Wilson rows support coefficient/kernel positivity for slicing. L2 weak-limit positivity is stated at measure/test-function level, not as an unsupported per-sector convergence theorem. The runner tests finite connectivity, pushforward positivity, theta-phase discrimination, sparse-support aliases, marginal/weak positivity, gauge miniature positivity, and dependency-link guards; it does not hard-code a desired theta branch as the theorem's proof. Residual scope is bounded to the supplied positive class and cannot be cited as a Q-structure existence theorem.
+- **auditor confidence:** high
+
+### `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02`
+
+- **Note:** [`THETA_LINK_STAR_GLUING_FRAME_CORRELATION_PAIR_COMPOSITE_DAGGER_EVENNESS_AND_ODD_BRANCH_PHASE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md`](../../docs/THETA_LINK_STAR_GLUING_FRAME_CORRELATION_PAIR_COMPOSITE_DAGGER_EVENNESS_AND_ODD_BRANCH_PHASE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite SU(2) pair, star, and chain calculations, together with the asserted extension of dagger-evenness to every compact group with real class weights.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-theta_link_star_gluing_f-061`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting V → V† and using w(X†) = w(X) for real class weights gives G(S₁†,…,Sₖ†) = G(S₁,…,Sₖ), which combined with the SU(2) symmetric-trace identity makes the star pairwise-reducible.  _(class `A`)_
+- **chain closes:** False — A real-valued class weight on a general compact group need not satisfy w(g†) = w(g); for example, positive real class functions on U(1) can contain an inversion-odd sine component. The runner tests only SU(2), where inversion preserves conjugacy classes, so it cannot establish the advertised group-general theorem or its SU(3) transfer.
+- **rationale:** The 14 runner checks genuinely support the stated finite SU(2) examples and algebraic identities, with no external comparator or imported numerical premise. However, the load-bearing generalization incorrectly treats real-valued centrality as dagger-evenness; an explicit inversion-even hypothesis is missing. Moreover, diagonal-conjugation invariance and one independent-conjugation witness establish factorization through joint orbits and nontrivial joint dependence, but not that the observables separate or expose precisely all diagonal-orbit data.
 - **auditor confidence:** high
 
 ### `theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11`

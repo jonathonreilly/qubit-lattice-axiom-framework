@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 924 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1885 |
+| unaudited | 1884 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 13 |
 | `audited_clean` | 1318 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2230 |
+| `unaudited` | 2229 |
 
 | claim_type | count |
 |---|---:|
@@ -1509,6 +1509,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -17661,6 +17662,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The qubit-ladder algebra and the JW-fermion algebra generate the same full matrix algebra, so the checked ungraded operator-algebra and dimension data do not prefer the fermionic frame over the hard-core-boson frame.  _(class `C`)_
 - **chain closes:** True — The accepted axiom premise supplies the Z^3 lattice and one-site M2(C) structure, and the runner constructs the finite tensor-product bare ladders and JW operators directly from it. The verified same-algebra, dimension-blindness, and ordering-locality checks are enough for the scoped no-forcing conclusion without importing an additional selector.
 - **rationale:** The runner source genuinely computes finite Pauli/JW tensor-product identities, generated-algebra ranks, hard-core versus free-boson dimension behavior, and the 2x2x2 grid bandwidth; it does not hard-code the contested no-go or import external comparator values. The only upstream authority is an explicitly accepted axiom premise, so the carve-out applies and there is no dependency downgrade. The no-go discipline gate passes for the narrowed claim: five forcing routes are enumerated, collapsed to one missing statistics/locality selector wall, scoped against a graded-locality steelman, and not phrased as forbidding future retained selectors.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Whether the current Qubit axiom plus the retained Cl(3) split fixes the physical one-site module to k=1 and dimension 2, while abstract Cl(3) representations still admit k≥2.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-staggered_dirac_substep1-006`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The Qubit axiom's one-site algebra A_x ≅ M_2(C) is identified with the single two-dimensional Pauli carrier, so the physical module has k=1.  _(class `B`)_
+- **chain closes:** False — The supplied Qubit axiom specifies the one-site possibility algebra M_2(C), but does not identify a physical H_x with its irreducible defining module; faithful multiplicity representations a↦a⊗I_k remain possible. A bridge requiring the physical carrier to be the irreducible/minimal module is missing.
+- **rationale:** The retained Cl(3) authority supports the multiplicity decomposition and the conditional implication k=1 ⇒ dim_C H_x=2. It does not make the Qubit algebra's physical representation irreducible, and the axiom authority itself states only the possibility-domain algebra. The runner hard-codes primitive_qubit_dim=2 and uses unconditional True checks for Q1, so PASS=55 does not verify the missing carrier-identification bridge; additionally, C2's unitary-conjugacy wording requires a compatible *-representation or inner product not supplied here.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`

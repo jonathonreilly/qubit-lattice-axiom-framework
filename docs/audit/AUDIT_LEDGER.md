@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 194 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 923 |
+| **retained_bounded** | 924 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
-| unaudited | 1869 |
+| unaudited | 1868 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 18 |
-| `audited_clean` | 1323 |
+| `audited_clean` | 1324 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2214 |
+| `unaudited` | 2213 |
 
 | claim_type | count |
 |---|---:|
@@ -744,6 +744,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10383,6 +10384,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Under POLARIZATION-SELECT, real polarization counts the doublet as two real slots while holomorphic polarization counts it as one complex slot, yielding real => r = 1, Q = 1 and holomorphic => r = 1/2, Q = 2/3.  _(class `A`)_
 - **chain closes:** True — Direct algebra gives tr(P_s)=1, tr(P_d)=2, P_s+P_d=I, J^2=-P_d, and det_R(alpha P_s + beta P_d)=alpha beta^2, so the displayed projection, trace, complex-structure, and determinant identities match. With POLARIZATION-SELECT supplied, r is the normalized doublet slot count and the cited algebraic lever Q=(1+2r)/3 gives Q=1 for r=1 and Q=2/3 for r=1/2.
 - **rationale:** The source note states a bounded conditional theorem and preserves the boundary that no polarization selector is derived. The runner source performs exact rational matrix/projector, determinant, complex-realification, Pfaffian, and table-consistency checks; the randomized Koide replay is explicitly motivation-tier and not used for the verdict. The only upstream cited authority is retained-grade, and no PDG value, fitted selector, or physical mass bridge is consumed by the audited claim.
+- **auditor confidence:** high
+
+### `koide_berry_monopole_bridge_reduction_note_2026-05-31`
+
+- **Note:** [`KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`](../../docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-matrix algebra for the explicitly defined C3 circulant family, the explicit two-band anticommuting comparator, the native commutation obstruction, and the identities Q(1/2)=2/3 and Q(1)=1; no physical branch-selection rule was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-koide_berry_monopole_bri-059`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because the native circulant family is diagonalized by a parameter-independent C3 Fourier basis, its isolated-band eigenprojectors have zero Berry curvature, while the explicit two-band Pauli comparator has a nonzero plaquette Berry phase.  _(class `A`)_
+- **chain closes:** True — The fixed Fourier diagonalization establishes eigenvector rigidity and zero curvature wherever the selected band is nondegenerate, and the explicit Pauli matrices independently establish the comparator result. The missing Berry/chirality-to-r weighting bridge is expressly outside the claim boundary.
+- **rationale:** The runner performs genuine finite-matrix calculations rather than printing assumed outcomes or importing calibrated values. Its eight checks support the bounded algebraic conclusions, with the nonzero-Berry statement properly limited to the explicit toy comparator rather than a universal consequence of anticommutation. All cited authorities are retained-grade, and the note does not promote their explicitly open physical identifications into its conclusion.
 - **auditor confidence:** high
 
 ### `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29`

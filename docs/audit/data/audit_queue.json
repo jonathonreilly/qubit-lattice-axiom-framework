@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 400,
-    "high": 268,
+    "high": 267,
     "leaf": 755,
     "medium": 522
   },
@@ -12214,35 +12214,6 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_berry_monopole_bridge_reduction_note_2026-05-31",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
-        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.087,
-      "note_path": "docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_berry_monopole_bridge_reduction_2026_05_31.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12",
@@ -20721,6 +20692,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/COMPLEX_SELECTIVITY_COMPARE.py",
+      "transitive_descendants": 10
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+        "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.959,
+      "note_path": "docs/KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py",
       "transitive_descendants": 10
     },
     {
@@ -30416,33 +30414,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
-        "koide_berry_monopole_bridge_reduction_note_2026-05-31",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.959,
-      "note_path": "docs/KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_koide_dirac_mass_forces_r_one_exact.py",
-      "transitive_descendants": 10
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_kahler_dirac_realization_gives_r_one_index_route_closed_bounded_no_go_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -37712,6 +37683,60 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_koide_faithfulness_rotation_scalar_excluded.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_first_order_selector_bounded_localization_certificate_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/koide_first_order_selector_bounded_localization_certificate_2026_06_18.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+        "minimal_axioms",
+        "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py",
       "transitive_descendants": 0
     },
     {
@@ -48512,60 +48537,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_first_order_selector_bounded_localization_certificate_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_berry_monopole_bridge_reduction_note_2026-05-31",
-        "staggered_dirac_realization_gate_note_2026-05-03",
-        "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/koide_first_order_selector_bounded_localization_certificate_2026_06_18.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_berry_monopole_bridge_reduction_note_2026-05-31",
-        "minimal_axioms",
-        "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -58096,6 +58067,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 220,
-  "total_pending": 1945
+  "ready_count": 222,
+  "total_pending": 1944
 }

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 407,
     "high": 272,
-    "leaf": 777,
+    "leaf": 776,
     "medium": 521
   },
   "cycle_break_target_count": 10,
@@ -36210,30 +36210,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.5,
-      "note_path": "docs/FLAVOR_OPERATOR_SPECTRAL_FUNCTIONALS_DO_NOT_FORCE_R_HALF_NO_GO_NOTE_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/flavor_operator_spectral_functionals_do_not_force_r_half_no_go_2026_06_02.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -58882,6 +58858,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 250,
-  "total_pending": 1977
+  "ready_count": 249,
+  "total_pending": 1976
 }

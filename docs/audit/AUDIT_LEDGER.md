@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 196 |
-| **retained_no_go** | 201 |
+| **retained_no_go** | 202 |
 | **retained_bounded** | 906 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1919 |
+| unaudited | 1918 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1294 |
+| `audited_clean` | 1295 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2264 |
+| `unaudited` | 2263 |
 
 | claim_type | count |
 |---|---:|
@@ -505,6 +505,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_native_beta_no_half_attractor_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-current | A | - |
 | `flavor_q1_default_rests_on_prr_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_qubit_berry_holonomy_probe_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6738,6 +6739,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For U_phys = S P, the runner verifies U_phys D U_phys^T = D and U_phys^3 = I, and the tangent action at a diagonal fixed site splits as one singlet plus transverse C3 weights (1,2), giving L_3(1,2)=2/9.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the finite staggered matrices, raw cyclic permutation, sign gauge, corrected symmetry, tangent representation, and exact local density checks rather than only printing expected values. The physical observable identification is explicitly outside the claim boundary, so it is not a missing step for this bounded operator-side claim.
 - **rationale:** The cited one-hop authorities are retained-grade or retained_bounded, and the load-bearing operator certificate is recomputed directly in the supplied runner for L=4 and L=6. The local 2/9 arithmetic is an exact symbolic C3 fixed-point density calculation, while the contested operator-realization premise is checked by explicit matrix construction, sign-gauge solving, commutation, and order-three tests. No external comparator, fitted input, or physical charged-lepton readout promotion is used inside the audited scope.
+- **auditor confidence:** high
+
+### `flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02`
+
+- **Note:** [`FLAVOR_OPERATOR_SPECTRAL_FUNCTIONALS_DO_NOT_FORCE_R_HALF_NO_GO_NOTE_2026-06-02.md`](../../docs/FLAVOR_OPERATOR_SPECTRAL_FUNCTIONALS_DO_NOT_FORCE_R_HALF_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** No-go for forcing r=1/2 from the enumerated choice-free operator-spectral, Hilbert-Schmidt, Ad-invariant metric, and transfer-positivity functionals on the supplied C3-circulant generation-weight family; r=1/2 is only recovered after adding the two-sector block fold. Does not rule out chiral-sector, non-tracial-reference, finite-gap-dynamics, or explicit block-count/admission routes.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=cross_family)
+- **load-bearing step:** In the tested C3-circulant family, choice-free spectral functionals land at r=0 or r=1, while r=1/2 appears only after folding the two complex-conjugate off-identity modes into one real doublet channel.  _(class `A`)_
+- **chain closes:** True — The accepted minimal axiom surface supplies only the generic finite algebra/readout boundary; the no-go itself is a finite supplied-family calculation. The runner symbolically derives Q(r), exhausts the listed spectral/HS/positivity probes in the note's scope, and separately shows that the probes reaching r=1/2 require an inserted two-sector fold.
+- **rationale:** The load-bearing negative result is bounded and explicit: the listed choice-free spectral entropies, relative entropy, purity, canonical HS metric, Ad-invariant metric family, and transfer-positivity probe do not select r=1/2 on the supplied C3-circulant family. The runner computes the algebraic Q(r) relation and the extrema/metric facts directly, then shows r=1/2 appears only when the two off-identity modes are folded into a separate real doublet channel. The residual is not hidden: other routes such as a chiral-sector theorem, non-tracial reference state, dynamics, or an explicit block-count admission remain open.
 - **auditor confidence:** high
 
 ### `flavor_q1_default_rests_on_prr_note_2026-05-30`

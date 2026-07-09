@@ -33,11 +33,11 @@
   ],
   "cycles_detected": 10,
   "effective_status_counts": {
-    "audit_in_progress": 7,
-    "audited_conditional": 55,
+    "audit_in_progress": 8,
+    "audited_conditional": 54,
     "audited_failed": 2,
     "audited_numerical_match": 8,
-    "audited_renaming": 22,
+    "audited_renaming": 21,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 6,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
@@ -67,11 +67,11 @@
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "meta": 345,
     "open_gate": 22,
-    "retained": 196,
+    "retained": 195,
     "retained_bounded": 921,
     "retained_no_go": 205,
     "retained_pending_chain": 7,
-    "unaudited": 1879
+    "unaudited": 1881
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

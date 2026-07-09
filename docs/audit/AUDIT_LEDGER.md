@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 194 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 920 |
+| **retained_bounded** | 921 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1874 |
+| unaudited | 1873 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 18 |
-| `audited_clean` | 1320 |
+| `audited_clean` | 1321 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2219 |
+| `unaudited` | 2218 |
 
 | claim_type | count |
 |---|---:|
@@ -1159,6 +1159,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `self_gravity_failure_diagnosis` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `self_gravity_scaling_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `seventh_family_diagonal_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `shapiro_delay_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `shapiro_five_family_portability_corrected_boundary_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `shapiro_static_discriminator_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16522,6 +16523,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `CAUSAL_MOVING_UNIFICATION_NOTE.md`
   - `COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md`
   - `DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`
+- **auditor confidence:** high
+
+### `shapiro_delay_note`
+
+- **Note:** [`SHAPIRO_DELAY_NOTE.md`](../../docs/SHAPIRO_DELAY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A finite two-seed, three-family replay of the declared discrete harness, including its exact self-overlap control, monotone finite-c phase table, and static-cone non-uniqueness boundary; no physical Shapiro law, propagation-speed measurement, or unique-causality inference was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-shapiro_delay_note-046`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The primary runner computes the configured three-family phase table and demonstrates that an independently written position-only frozen cone reproduces every causal-labeled row to numerical precision.  _(class `C`)_
+- **chain closes:** True — The supplied primary and helper sources genuinely construct the geometries, propagate amplitudes, and calculate the reported phases rather than importing the results. They also establish the stated no-go boundary because the causal-labeled cone field is reproducible as the same position-only field in the mirrored kernel.
+- **rationale:** The completed runner reports all eleven checks passing, and its source exposes the load-bearing computation rather than merely printing stored values. The configured phase values are generated from the supplied discrete harness, while the exact static-cone match correctly prevents any unique causal-propagation interpretation. All three cited authorities carry retained-grade effective statuses, and the source note keeps the conclusion within the computed bounded scope.
 - **auditor confidence:** high
 
 ### `shapiro_diamond_bridge_note`

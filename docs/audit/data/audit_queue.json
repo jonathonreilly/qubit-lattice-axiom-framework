@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 400,
-    "high": 272,
+    "high": 271,
     "leaf": 755,
     "medium": 522
   },
@@ -11919,34 +11919,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "shapiro_delay_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "causal_propagating_field_live_packet_note_2026-06-05",
-        "causal_field_reconciliation_note",
-        "shapiro_static_discriminator_note"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/shapiro_delay_portable.py"
-      ],
-      "load_bearing_score": 9.492,
-      "note_path": "docs/SHAPIRO_DELAY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/shapiro_phase_lag_probe.py",
-      "transitive_descendants": 89
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "single_axiom_hilbert_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -20245,6 +20217,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "shapiro_family_portability_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "shapiro_delay_note",
+        "shapiro_static_discriminator_note"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.672,
+      "note_path": "docs/SHAPIRO_FAMILY_PORTABILITY_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/shapiro_family_portability.py",
+      "transitive_descendants": 50
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -24927,31 +24924,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
-      "transitive_descendants": 50
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "shapiro_family_portability_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "shapiro_delay_note",
-        "shapiro_static_discriminator_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.672,
-      "note_path": "docs/SHAPIRO_FAMILY_PORTABILITY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/shapiro_family_portability.py",
       "transitive_descendants": 50
     },
     {
@@ -58197,5 +58169,5 @@
     }
   ],
   "ready_count": 221,
-  "total_pending": 1949
+  "total_pending": 1948
 }

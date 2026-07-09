@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 922 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1888 |
+| unaudited | 1887 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1316 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2233 |
+| `unaudited` | 2232 |
 
 | claim_type | count |
 |---|---:|
@@ -1503,6 +1503,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `record_context_generator_nonidentifiability_no_go_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
+| `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
@@ -15845,6 +15846,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Since [H,S]=0, H commutes with the singlet/doublet spectral projectors of S, so U(t)=exp(-iHt) preserves tr(P_doublet rho) and the coarse record D_S leaves P_doublet rho P_doublet intact.  _(class `A`)_
 - **chain closes:** True — The cited Stage-1 authority supplies [H,S]=0 and the pointer authority supplies the two-sector decomposition. Spectral-projector algebra then gives [H,P_doublet]=0 and D_S(rho)'s doublet block equals the original doublet block, so the scoped conservation/preservation conclusion follows.
 - **rationale:** The load-bearing step is exact finite-dimensional algebra over retained-bounded inputs, not a definition, external comparator, or tuned numerical match. Independently, P_singlet=(S+I)/3 and P_doublet=(2I-S)/3, so [H,S]=0 implies [H,P_doublet]=0 and therefore conservation of Tr(P_doublet rho(t)); likewise D_S preserves P_doublet rho P_doublet by construction. The runner checks the relevant matrix identities, conservation behavior, contrasting non-record-preserving control, and record-map properties without hard-coding the conclusion as a fitted target. The clean verdict is only for the stated bounded scope and does not derive or select r, delta, a state, or a relaxation mechanism.
+- **auditor confidence:** high
+
+### `record_production_interface_principle_2026-06-06`
+
+- **Note:** [`RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md`](../../docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded interface principle separating pre-record qubit/possibility surface, separate record-production bridge, and post-record durable record/count/readout dynamics.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-fresh-context-audit-subagent`  (codex-current; independence=weak)
+- **load-bearing step:** The source claims the axioms already provide the required type split: Quantum supplies the pre-record one-qubit algebra, Record supplies durable realized records and finite scalar readout, and Record excludes the production bridge.  _(class `A`)_
+- **chain closes:** False — The local type split passes against the runner-cited 2026-06-05 axiom memo, but the current ledger dependency resolves minimal_axioms to the 2026-06-29 memo, so the audited chain does not close against the dependency actually wired for this row.
+- **rationale:** Issue: the proof packet and runner close against docs/MINIMAL_AXIOMS_2026-06-05.md, while the current ledger dependency minimal_axioms resolves to docs/MINIMAL_AXIOMS_2026-06-29.md. Why this blocks: the runner's B-class checks verify old three-axiom / Quantum / durable-realized-outcome wording, not the current Qubit/Admissibility/Record boundary, so the current row cannot receive clean closure as written. Repair target: update the note and runner to cite/read 2026-06-29 and restate the load-bearing split under Qubit, Admissibility, and Record; the repaired core likely can close because 2026-06-29 still excludes Born law, measurement/decoherence dynamics, formation rules, weighting, normalization, sector generation, and dial selection. Claim boundary until fixed: the old 2026-06-05-bound type split passes locally, but current-ledger closure remains conditional.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-06-05.md: source/runner-cited superseded authority not matching current ledger dependency MINIMAL_AXIOMS_2026-06-29.md`
 - **auditor confidence:** high
 
 ### `record_production_kernel_boundary_2026-06-06`

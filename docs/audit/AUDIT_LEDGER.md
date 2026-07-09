@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 197 |
-| **retained_no_go** | 203 |
+| **retained_no_go** | 204 |
 | **retained_bounded** | 920 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 22 |
-| unaudited | 1893 |
+| unaudited | 1892 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1312 |
+| `audited_clean` | 1313 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2238 |
+| `unaudited` | 2237 |
 
 | claim_type | count |
 |---|---:|
@@ -920,6 +920,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moving_source_retarded_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `multipole_tidal_response_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-current | A | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -12915,6 +12916,18 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The retained cl3_per_site_hilbert_dim_two dependency supplies H_N = (C^2)^{tensor N} and the Pauli realization; the target note then uses only finite Pauli-group algebra. I independently checked the displayed order, center, quotient, phaseless subgroup, sufficiency, and abelianization lower bound in an abstract Pauli normal form separate from the runner's matrix BFS path.
 - **rationale:** The source note's load-bearing formulae close from retained one-hop carrier inputs plus exact finite group algebra: |P_N| = 4^{N+1}, Z(P_N) = {+/-I,+/-iI}, P_N/Z(P_N) has order 4^N, and the abelianization rank gives the 2N+1 minimal-generator lower bound. The runner verifies these claims by explicit finite matrix generation for N <= 3, and a separate abstract normal-form recomputation verified the same sign, phase, quotient, and generator-count facts. Residual risk is limited to the retained dependency chain; the audited claim does not assert the separate physical Fock-carrier bridge.
 - **auditor confidence:** high
+
+### `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17`
+
+- **Note:** [`N5_SINGLE_GENERATOR_CLOCK_EXCHANGE_INVARIANCE_NARROW_NO_GO_NOTE_2026-06-17.md`](../../docs/N5_SINGLE_GENERATOR_CLOCK_EXCHANGE_INVARIANCE_NARROW_NO_GO_NOTE_2026-06-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite two-clock witness H=C^2 tensor C^2: any S-invariant linear site/readout selector assigns G1=sigma_z tensor I and G2=I tensor sigma_z equal status, so it cannot prefer one named site-clock; diagonal, quotient, superselection, and dynamics one-clock routes remain outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-fresh-context-audit-subagent-n5-2026-07-09`  (codex-current; independence=fresh_context)
+- **load-bearing step:** Any S-invariant linear functional Phi with Phi(S X S^dag)=Phi(X) satisfies Phi(G2)=Phi(S G1 S^dag)=Phi(G1).  _(class `A`)_
+- **chain closes:** None — The no-go is an exact exchange-symmetry argument: if S exchanges G1 and G2 and Phi is S-invariant and linear, then Phi(G2)=Phi(S G1 S^dag)=Phi(G1).
+- **rationale:** The no-go is an exact symmetry argument: once S exchanges G1 and G2, S-invariance of a linear selector forces equal values. The runner verifies the finite swap algebra and distinguishes the S-breaking site readout from the invariant cases, while the note explicitly avoids claiming that every one-clock reduction or diagonal/quotient/superselection/dynamics route is impossible. No hidden dependency is needed for this scoped finite-witness algebra.
 
 ### `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`
 

@@ -12,6 +12,15 @@ anti-front as an opposite-chirality contrast.
 
 All physical claims are measured from diagonalizing the finite operator.
 No randomness; numpy only.
+
+Printed witness values are restricted to platform-stable quantities. At the
+spatial momentum used here the operator is exactly sigma-degenerate, so the
+eigensolver's basis inside the low doublet — and the argmax of a two-site
+peak tie — are BLAS/LAPACK-build-dependent. Localization witnesses are
+therefore computed from the basis-invariant two-state subspace marginal with
+tie-aware peak reporting and a deterministic tail-fit anchor (the tie site
+nearest the occupancy midpoint), and pure rounding-noise magnitudes are
+printed as bound checks rather than digits.
 """
 
 from __future__ import annotations
@@ -203,32 +212,46 @@ def localize_in_low_subspace(
     return out
 
 
-def fit_tail(profile: np.ndarray, peak: int, max_steps: int) -> tuple[float, float, float, int]:
+def tie_peak_sites(profile: np.ndarray, rel_tol: float = 1e-10) -> list[int]:
+    """Sites within rel_tol of the profile maximum.
+
+    Measured on the marginals used here: exact-degeneracy ties sit at
+    relative margins <= 5e-14 while genuinely resolved neighbors sit at
+    >= 1.8e-8, so 1e-10 sits over three orders above the former and over
+    two orders below the latter.
+    """
+    peak_value = float(np.max(profile))
+    return [int(s) for s in np.nonzero(profile >= (1.0 - rel_tol) * peak_value)[0]]
+
+
+def fit_tail(profile: np.ndarray, anchors: list[int], max_steps: int) -> tuple[float, float, float, int, int]:
+    """Best-R^2 exponential tail fit over the deterministic anchor candidates."""
     best = None
     length = len(profile)
-    for direction in (+1, -1):
-        xs = []
-        ys = []
-        for d in range(0, max_steps + 1):
-            value = float(profile[(peak + direction * d) % length])
-            if value > 1e-14:
-                xs.append(float(d))
-                ys.append(np.log(value))
-        if len(xs) < 6:
-            continue
-        slope, intercept = np.polyfit(xs, ys, 1)
-        fitted = slope * np.array(xs) + intercept
-        denom = float(np.sum((np.array(ys) - np.mean(ys)) ** 2))
-        r2 = 1.0 if denom < 1e-30 else 1.0 - float(np.sum((np.array(ys) - fitted) ** 2)) / denom
-        candidate = (r2, len(xs), slope, direction)
-        if best is None or candidate[0] > best[0]:
-            best = candidate
+    for anchor in sorted(anchors):
+        for direction in (+1, -1):
+            xs = []
+            ys = []
+            for d in range(0, max_steps + 1):
+                value = float(profile[(anchor + direction * d) % length])
+                if value > 1e-14:
+                    xs.append(float(d))
+                    ys.append(np.log(value))
+            if len(xs) < 6:
+                continue
+            slope, intercept = np.polyfit(xs, ys, 1)
+            fitted = slope * np.array(xs) + intercept
+            denom = float(np.sum((np.array(ys) - np.mean(ys)) ** 2))
+            r2 = 1.0 if denom < 1e-30 else 1.0 - float(np.sum((np.array(ys) - fitted) ** 2)) / denom
+            candidate = (r2, slope, anchor, direction)
+            if best is None or candidate[0] > best[0]:
+                best = candidate
     if best is None:
-        return float("nan"), float("nan"), float("nan"), 0
-    r2, _count, slope, direction = best
+        return float("nan"), float("nan"), float("nan"), -1, 0
+    r2, slope, anchor, direction = best
     probability_xi = -1.0 / slope if slope < 0.0 else float("inf")
     amplitude_xi = 2.0 * probability_xi
-    return probability_xi, amplitude_xi, r2, direction
+    return probability_xi, amplitude_xi, r2, anchor, direction
 
 
 def analyze_front(
@@ -251,12 +274,15 @@ def analyze_front(
     localized = localize_in_low_subspace(evecs, low_indices, sites, 2)
     chirality_operator = np.kron(np.eye(length, dtype=complex), np.kron(TAU_Z, I2))
     chiralities = [float(np.vdot(psi, chirality_operator @ psi).real) for _w, psi in localized]
-    profiles = [site_profile(psi, length) for _w, psi in localized]
-    peaks = [int(np.argmax(profile)) for profile in profiles]
+    # Basis-invariant witness: the summed two-state site marginal (the diagonal
+    # of the rank-2 subspace projector), not either individual eigenvector.
+    marginal = np.sum([site_profile(psi, length) for _w, psi in localized], axis=0)
+    peaks = tie_peak_sites(marginal)
     midpoint = midpoint_near(theta, center, radius)
     gradient = float(theta[(center + 1) % length] - theta[(center - 1) % length])
-    probability_xi, amplitude_xi, r2, tail_dir = fit_tail(
-        profiles[0], peaks[0], max(12, int(np.ceil(4.0 * width)))
+    anchor = min(peaks, key=lambda s: (abs(s - midpoint), s))
+    probability_xi, amplitude_xi, r2, _fit_anchor, tail_dir = fit_tail(
+        marginal, [anchor], max(12, int(np.ceil(4.0 * width)))
     )
     return {
         "theta": theta,
@@ -266,6 +292,7 @@ def analyze_front(
         "support": [w for w, _psi in localized],
         "chiralities": chiralities,
         "peaks": peaks,
+        "anchor": anchor,
         "midpoint": midpoint,
         "gradient": gradient,
         "probability_xi": probability_xi,
@@ -308,15 +335,17 @@ def main() -> int:
     theta_b = occupancy_profile_b(length, front, anti_front, 3.0)
     h_a = hamiltonian_a(theta_a, p=(0.17, 0.11, -0.07))
     h_b = hamiltonian_b(theta_b, p=(0.17, 0.11, -0.07))
+    theta_diff = float(np.max(np.abs(theta_a - theta_b)))
+    h_diff = fro_norm(h_a - h_b)
     check(
         "two independent occupancy constructions agree",
-        float(np.max(np.abs(theta_a - theta_b))) < 1e-14,
-        f"max|theta_A-theta_B|={float(np.max(np.abs(theta_a - theta_b))):.3e}",
+        theta_diff < 1e-14,
+        f"max|theta_A-theta_B| < 1e-14: {theta_diff < 1e-14}",
     )
     check(
         "two independent Hamiltonian constructions agree",
-        fro_norm(h_a - h_b) < 1e-12,
-        f"||H_A-H_B||_F={fro_norm(h_a - h_b):.3e}",
+        h_diff < 1e-12,
+        f"||H_A-H_B||_F < 1e-12: {h_diff < 1e-12}",
     )
 
     section("1. Formation front localizes a chiral edge across front widths")
@@ -344,7 +373,7 @@ def main() -> int:
                 result["gradient"],
                 result["midpoint"],
                 result["peaks"],
-                [round(c, 12) for c in result["chiralities"]],
+                [round(c, 6) for c in result["chiralities"]],
                 result["probability_xi"],
                 result["r2"],
             ),
@@ -413,11 +442,14 @@ def main() -> int:
     section("4. Projected Cl(3,0) Weyl cone at the front")
     max_velocity_error, velocities = projected_velocity_errors(forward["states"], length)
     velocity_eigs = [np.linalg.eigvalsh(v) for v in velocities]
+    algebra_ok = max_velocity_error < 1e-10 and all(
+        np.allclose(eigs, [-1.0, 1.0], atol=1e-10) for eigs in velocity_eigs
+    )
+    printed_eigs = [np.round(eigs, 9) for eigs in velocity_eigs]
     check(
         "projected edge velocities obey the Pauli Clifford algebra",
-        max_velocity_error < 1e-10
-        and all(np.allclose(eigs, [-1.0, 1.0], atol=1e-10) for eigs in velocity_eigs),
-        f"max_anticommutator_error={max_velocity_error:.3e}, velocity_eigs={velocity_eigs}",
+        algebra_ok,
+        f"max_anticommutator_error < 1e-10: {max_velocity_error < 1e-10}, velocity_eigs={printed_eigs}",
     )
 
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")

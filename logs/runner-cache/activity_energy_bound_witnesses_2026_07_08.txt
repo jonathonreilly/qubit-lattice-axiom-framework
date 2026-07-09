@@ -1,0 +1,6 @@
+BOUND CHECK-01=ok max_ratio=0.0251937
+WITNESSES CHECK-02=ok max_a=2.665e-15 min_abs_eps=2.987e-02 remark=stationary-worlds-form-no-records; CHECK-03=ok far_right_t0=0.000e+00 spread=0:none,0.5:3-10,1:1-12,2:0-13
+PACKET CHECK-04=ok support=ok overlap_min=0.863355 centroid_delta_max=1.10693 overlaps=[0.9861, 0.8634, 0.9424, 0.9216] centroids=[0.0, 1.1069, 0.0713, 0.234]
+GAUGED CHECK-05a=ok locality_max=1.439e-18; CHECK-05=ok overlap_min=0.832871 max_active_dist=3 front_v=2; CHECK-06=ok gs_max_a=9.609e-13
+CHECKS CHECK-01-bound=ok;CHECK-02-eigen=ok;CHECK-03-empty=ok;CHECK-04-packet-support=ok;CHECK-04-packet-overlap=ok;CHECK-04-packet-centroid=ok;CHECK-05a-unitary-locality=ok;CHECK-05-support=ok;CHECK-05-overlap=ok;CHECK-05-lightcone=ok;CHECK-06-stationary=ok
+TOTAL SUPPORT-HALF-ESTABLISHED gates=none elapsed=1.59s flags=SPEC-NOTE:CHECK-01-03-single-site-controls,packet-two-site-bond-trace-norm,gauged-unitary-local-kick,gauged-bond-energy-local-apportioning,no-formation-rule,no-gravity-claim,no-audit-status

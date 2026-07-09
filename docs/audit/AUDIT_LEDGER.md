@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 907 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1916 |
+| unaudited | 1915 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 43 |
+| ~~audited_conditional~~ | 44 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1296 |
-| `audited_conditional` | 43 |
+| `audited_conditional` | 44 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2261 |
+| `unaudited` | 2260 |
 
 | claim_type | count |
 |---|---:|
@@ -1446,6 +1446,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `confinement_string_tension_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -2957,6 +2958,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The dual group T^3 of Z^3 has fundamental domain [-pi, pi]^3, Lebesgue volume (2 pi)^3, and normalized Haar probability density d^3k/(2 pi)^3, so the BZ Plancherel denominator is fixed by the Z^3 substrate plus Pontryagin/Haar normalization rather than imported from continuum 3D Fourier measure.  _(class `A`)_
 - **chain closes:** True — Within the audited scope, the accepted Z^3 substrate plus standard Pontryagin/Haar mathematics determine T^3 and its normalized Haar measure. The continuum d^3k/(2 pi)^3 convention is named only after the substrate-internal denominator has been derived, so it is not a hidden input.
 - **rationale:** The source's load-bearing result is the standard algebraic/harmonic-analysis chain Z^3 -> T^3, vol([-pi,pi]^3)=(2 pi)^3, and Haar probability density d^3k/(2 pi)^3. The current minimal-axiom authority supplies the Z^3 spatial substrate, and the remaining inputs are textbook Pontryagin-duality and Haar-normalization facts. The runner completed with TOTAL PASS=55 FAIL=0, checking the source boundary, character-sum factorization, exact volume identities, Haar normalization, translation invariance of the constant density, and exclusion of 4D/Wick/hierarchy extensions. The clean verdict is only for the bounded 3D BZ normalization and does not close alpha_bare, 4D loop measures, Wick rotation, hierarchy primitives, or continuum-measure derivation from first principles.
+- **auditor confidence:** high
+
+### `c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02`
+
+- **Note:** [`C2_W_SUPPLIER_READING_FORK_FIXED_POINT_UNIDENTIFIABILITY_BOUNDED_NOTE_2026-07-02.md`](../../docs/C2_W_SUPPLIER_READING_FORK_FIXED_POINT_UNIDENTIFIABILITY_BOUNDED_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded two-cell rational-content reading-fork calculation: Record additivity/content-determination plus a policy-section-6 naturality premise yield the READING-X/READING-P fork, diagonal fixed-point unidentifiability, and conditional kappa_EW correspondence; no reading is adjudicated, no CTX-match/wall is closed, and no dictionary, axiom, primitive, or registry edit is claimed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-current; independence=weak)
+- **load-bearing step:** Policy section 6 naturality turns the remaining one-parameter freedom on the supplied two-cell rational-content class into a reading fork: READING-X forces u=v and w=1, READING-P leaves w free, while diagonal fixed-point/readout ratios are independent of the free parameter.  _(class `B`)_
+- **chain closes:** False — The finite algebra checks pass, but the source lists docs/audit/AXIOM_MINIMALITY_POLICY.md as a load-bearing governance surface and the runner directly reads it for the possibility-relabeling/naturality premise. That policy file is not present in the row's ledger deps, so the restricted one-hop dependency packet is incomplete for the step that turns the algebra into the stated reading fork.
+- **rationale:** Issue: the reading-fork conclusion is load-bearing on AXIOM_MINIMALITY_POLICY.md section 6, but that file is not listed as a direct dependency in the audit ledger while the runner reads it directly. Why this blocks: without that dependency edge, the restricted audit packet cannot verify the naturality/promotion premise used to move from the two-cell linear algebra to the READING-X versus READING-P fork. Repair target: add a ledger dependency edge or accepted-premise/meta authority for the policy section, or rewrite the note so the policy premise is non-load-bearing and fully supplied in an audited source. Claim boundary until fixed: the exact two-cell algebra, diagonal fixed-point checks, and conditional kappa_EW arithmetic may be treated as runner-supported calculations, but not as a retained bounded theorem with complete dependency closure.
+- **open / conditional deps cited:**
+  - `audit/AXIOM_MINIMALITY_POLICY.md`
 - **auditor confidence:** high
 
 ### `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`

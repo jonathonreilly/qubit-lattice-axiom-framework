@@ -60,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 19 |
-| `audited_clean` | 1319 |
+| `audit_in_progress` | 18 |
+| `audited_clean` | 1320 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 24 |
@@ -139,7 +139,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | audit_in_progress | audit_in_progress | - | - | - | - |
-| `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
@@ -737,6 +736,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -10259,6 +10259,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For dy/dl <= a(l)y(l)^2 + b(l)y(l), comparison with the scalar equality gives small-data control; in the constant-coefficient b=0 quadratic equality case y(l)=y0/(1-a l y0).  _(class `A`)_
 - **chain closes:** True — The restricted claim is elementary scalar ODE algebra and finite-dimensional nonnegativity; no KMS BBF polymer-norm theorem or framework bridge is used. The displayed quadratic formula is valid for the constant-a, b=0 equality model audited by the runner; the general variable-coefficient statement is only a comparison/small-data statement, not a displayed closed form.
 - **rationale:** The source note explicitly repairs the prior over-broad KMS use and confines the binding claim to scalar ODE consequences and finite toy checks. The runner source performs exact rational arithmetic checks of the quadratic closed form, threshold signs, multiplicative linear composition, zero fixed point, finite diagonal bounds, norm-surrogate nonnegativity, and boundary disclaimers; it does not import a contested external theorem or fitted numerical premise. Within that narrowed scope, the load-bearing step is class A algebraic closure and the chain closes from standard scalar ODE comparison algebra.
+- **auditor confidence:** high
+
+### `koide_a1_loop_final_status_2026-04-22`
+
+- **Note:** [`KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md`](../../docs/KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic consequences of the declared quartic ansatz and formal trace data, including its zero-locus and the resulting formal values c^2 = 2 and Q = 2/3.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-koide_a1_loop_final_stat-036`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting tr(Phi) = 3a and tr(Phi^2) = 3a^2 + 6r^2 into the admitted ansatz V(Phi) := [2 tr(Phi)^2 - 3 tr(Phi^2)]^2 gives V(Phi) = 81(a^2 - 2r^2)^2.  _(class `A`)_
+- **chain closes:** True — The stated polynomial identity, nonnegativity, zero-locus, ratio, and formal c and Q values follow by exact algebra from the explicitly admitted ansatz and definitions. The chain closes only within that bounded premise and does not derive or physically justify the ansatz.
+- **rationale:** The load-bearing step is a genuine algebraic identity over the note's explicitly declared inputs, and the runner source performs the corresponding symbolic computations rather than merely printing expected results. The note consistently limits its conclusion to a bounded support theorem conditional on the admitted quartic ansatz and expressly excludes physical or framework-level derivation claims. With no upstream parent claim, this is not an algebraic decoration.
 - **auditor confidence:** high
 
 ### `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24`

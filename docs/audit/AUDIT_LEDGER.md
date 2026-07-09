@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 918 |
+| **retained_bounded** | 919 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 21 |
-| unaudited | 1897 |
+| unaudited | 1896 |
 | audit_in_progress | 1 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1308 |
+| `audited_clean` | 1309 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 48 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 21 |
-| `unaudited` | 2242 |
+| `unaudited` | 2241 |
 
 | claim_type | count |
 |---|---:|
@@ -704,6 +704,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hkd_correspondence_general_charts_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `hkd_correspondence_structural_equivalence_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | C | - |
 | `hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `holographic_probe_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -9745,6 +9746,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For the listed checked charts, the runner-computed real Schur H_kd_after vanishes exactly when the independently counted misaligned survivors vanish, and exactly when all chart periods are even.  _(class `C`)_
 - **chain closes:** True — The runner source actually constructs the finite Hamiltonian, performs the two Schur complements, truncates by even periodic d2, measures H_kd_after, and separately enumerates the parity misalignment count. Within the explicitly bounded checked-chart scope, no cited upstream or external bridge is needed.
 - **rationale:** The claim is scoped to a fixed finite list of checked charts and a fixed numerical convention, not to an all-period or continuum theorem. The runner computes the Schur quantities from the stated finite Hamiltonian and computes the parity diagnostic separately, so the three-way coincidence is not merely a symbol renaming or printed constant. The frozen anchor values are used as regression gates, but the load-bearing chart classification is recomputed within the packet and no external comparator or open dependency is imported.
+- **auditor confidence:** high
+
+### `hkd_correspondence_structural_equivalence_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`HKD_CORRESPONDENCE_STRUCTURAL_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/HKD_CORRESPONDENCE_STRUCTURAL_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed-grid bounded verification for the synthetic d=3 step-2 chart family with K-periods (L/2,L,L/2) on L in {8,10,12,14,16,18}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-fresh-gridsentry-20260709`  (codex-current; independence=fresh_context)
+- **load-bearing step:** On the full listed grid, zero misaligned survivor entries is equivalent both to H_kd_after < 1e-14 and to all K-chart periods being even.  _(class `C`)_
+- **chain closes:** True — The runner constructs the finite step-2 Schur output and entry decomposition for every listed L, then verifies the protected/unprotected equivalences and the L=10 witness. The claim does not import a downstream verdict or assert full-L or physical-observable closure.
+- **rationale:** The bounded fixed-grid claim closes in the restricted packet because the verifier computes the Schur output, survivor decomposition, protection equivalences, and L=10 counter-witness directly for the listed grid, with TOTAL: PASS=18 FAIL=0 and py_compile passing. Residual risk is limited to the bounded synthetic-family scope and numerical dense-linear-algebra implementation; no full-L theorem or physical observable bridge is audited here.
 - **auditor confidence:** high
 
 ### `hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12`

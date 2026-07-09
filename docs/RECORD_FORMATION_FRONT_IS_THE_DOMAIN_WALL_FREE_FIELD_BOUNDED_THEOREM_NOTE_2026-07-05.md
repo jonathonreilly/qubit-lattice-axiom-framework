@@ -48,20 +48,31 @@ The runner verifies:
 
 The runner first builds the same finite operator in two independent ways:
 one vectorized construction and one explicit block assembly. They agree at
-the operator level:
+the operator level; the agreement magnitudes are pure rounding noise, so the
+runner reports them as bound checks:
 
-- `max|theta_A-theta_B| = 2.220e-16`
-- `||H_A-H_B||_F = 2.683e-15`
+- `max|theta_A-theta_B| < 1e-14` (satisfied)
+- `||H_A-H_B||_F < 1e-12` (satisfied)
+
+At the spatial momentum used, the finite operator is exactly
+sigma-degenerate, so the eigensolver's basis inside the low edge doublet is
+BLAS/LAPACK-build-dependent. All localization witnesses below are therefore
+computed from the basis-invariant two-state subspace marginal (the site
+diagonal of the rank-2 low-subspace projector): peak sites are reported
+tie-aware (every site within relative margin `1e-10` of the marginal
+maximum; measured ties sit at `<= 5e-14` and resolved neighbors at
+`>= 1.8e-8`), and the exponential tail is fitted from the deterministic
+anchor site (the tie site nearest the occupancy midpoint).
 
 The measured front-width table is:
 
-| width `w` | gradient at front | midpoint site | peak sites | chirality | probability `xi` | fit `R^2` |
+| width `w` | gradient at front | midpoint site | peak sites (tie-aware) | chirality | probability `xi` | fit `R^2` |
 |---:|---:|---:|---|---|---:|---:|
-| 0.75 | +0.870062 | 32 | `[31, 31]` | `[-1, -1]` | 0.750973 | 0.995061 |
-| 1.5 | +0.582783 | 32 | `[31, 32]` | `[-1, -1]` | 0.771490 | 0.991982 |
-| 3 | +0.321513 | 32 | `[32, 32]` | `[-1, -1]` | 0.780902 | 0.994960 |
-| 5 | +0.197375 | 32 | `[32, 32]` | `[-1, -1]` | 0.785808 | 0.994213 |
-| 8 | +0.124350 | 32 | `[32, 32]` | `[-1, -1]` | 0.818263 | 0.991020 |
+| 0.75 | +0.870062 | 32 | `[31, 32]` | `[-1, -1]` | 0.723996 | 0.999958 |
+| 1.5 | +0.582783 | 32 | `[31, 32]` | `[-1, -1]` | 0.736150 | 0.999235 |
+| 3 | +0.321513 | 32 | `[31, 32]` | `[-1, -1]` | 0.780902 | 0.994960 |
+| 5 | +0.197375 | 32 | `[32]` | `[-1, -1]` | 0.785808 | 0.994213 |
+| 8 | +0.124350 | 32 | `[32]` | `[-1, -1]` | 0.818263 | 0.991020 |
 
 The chirality flip check at `w=3` gives:
 
@@ -81,14 +92,17 @@ gap_full  = 1.000000000000
 The projected Weyl-cone check gives:
 
 ```text
-max projected-velocity Clifford anticommutator error = 1.256e-15
+max projected-velocity Clifford anticommutator error < 1e-10 (bound check)
 projected velocity eigenvalues = [-1,+1] for each of the three Cl(3,0) axes
 ```
 
 All quantities above are computed from diagonalizing the finite operator and
 projecting inside the measured low eigenspace. The chirality is measured as an
 expectation value of the record-time extended chirality operator; it is not
-inserted as a per-site Cl(3,0) chirality.
+inserted as a per-site Cl(3,0) chirality. Rounding-noise magnitudes (the
+construction agreements and the projected anticommutator error) are reported
+as satisfied bounds rather than digits because their trailing digits are
+BLAS-build-dependent.
 
 ## What Is Shown
 

@@ -1,0 +1,32 @@
+loop_slug: record-deposition-rate
+created: 2026-07-08
+mode: campaign (owner-commissioned: quantify the one live constraint —
+  the recorded fraction / deposition-per-activity constant kappa)
+execution_split: workhorse (codex exec workers on gpt-5.6-sol at
+  reasoning effort max, owner directive 2026-07-08; supervisor reviews)
+predecessors: energy-to-records (P-DEPOSITION-SPARSE weakened to a
+  transient-amplitude statement; black-hole mobility re-derives the same
+  constraint — the husk fraction of moving/collapsed matter must be
+  small on cosmic timescales).
+goal: >
+  Block01: measure the comparator's deposition-per-activity: in the
+  gauged comparator, per-site integrated activity vs a declared
+  distinguishability (registration) proxy — kappa(threshold) printed as
+  the honest function of the unspecified registration threshold.
+  Block02: ossification and mobility translation in the crowding toy —
+  husk-fraction growth h(t) for a stationary blob (self-regulation
+  choked) and trail density d(v) for a moving one; express the wake
+  transient and the hole-mobility requirement as bounds on the SAME
+  kappa; print the allowed window. Block03: constraint note + close.
+success_bar: >
+  kappa(threshold) measured with declared proxies; both phenomenological
+  handles expressed as bounds on one constant; honest statement of what
+  remains free. No formation rule chosen.
+current_block: block01 worker launching
+current_branch: physics-loop/record-deposition-rate-block01-20260708
+worktree: /Users/jonBridger/tp-matter-mass-wep
+imports: activity/distinguishability proxies as declared readout devices
+  (QD bridge remains a named premise); comparators by citation.
+discipline: physics-loop standard.
+next_exact_action: review block01 worker draft
+stop_condition_hit: none

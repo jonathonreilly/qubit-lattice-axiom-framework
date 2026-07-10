@@ -37,7 +37,7 @@
     "audited_conditional": 120,
     "audited_failed": 11,
     "audited_numerical_match": 9,
-    "audited_renaming": 30,
+    "audited_renaming": 31,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note": 1,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 6,
@@ -78,7 +78,7 @@
     "retained_bounded": 947,
     "retained_no_go": 211,
     "retained_pending_chain": 10,
-    "unaudited": 1743
+    "unaudited": 1742
   },
   "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [

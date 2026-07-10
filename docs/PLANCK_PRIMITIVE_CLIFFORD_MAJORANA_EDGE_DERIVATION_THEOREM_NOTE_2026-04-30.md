@@ -1,701 +1,559 @@
-# Planck Primitive Clifford-Majorana Edge Derivation Theorem
+# Planck Primitive Clifford-Majorana Edge Substrate-Descent Obstruction
 
-**Date:** 2026-04-30
-**Status:** audited_renaming audit verdict; chain does not close
-**Claim type:** bounded_theorem
-**Runner:** `scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py`
+**Date:** 2026-04-30; substrate-descent repair 2026-07-10
+**Type:** no_go
+**Status:** exact negative boundary on the supplied exterior one-form action;
+finite-matrix multiplicity checks are numerical companions; independent audit required
+**Primary runner:** `scripts/frontier_planck_primitive_clifford_substrate_descent_obstruction.py`
+**Helper runner:** `scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py`
 
 ```yaml
-claim_type: bounded_theorem
-claim_scope: "Algebraic consistency theorem: GIVEN the rank-four carrier
-  K = P_A H_cell as an admitted upstream-conditional input from the cited
-  link-local first-variation candidate authority, the explicit Hermitian
-  generator set {Gamma_t, Gamma_n, Gamma_tau1, Gamma_tau2} on C^4 realizes
-  the irreducible complex Cl_4(C) module, the two-mode CAR algebra
-  F(C^2) by oriented Majorana pairing, and the consistency identity
-  c_Widom = c_cell = 1/4. The note does NOT derive the substrate-to-P_A
-  selection; that step is sourced as conditional provenance to
-  PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM (bounded-support
-  action-source bridge over an explicit premise) and remains the named open
-  premise."
-admitted_premises:
-  - "P_A = Hamming-weight-one projector on H_cell is the active block
-    carrier (sourced from the upstream conditional action-source bridge;
-    not derived here; see SUBSTRATE_TO_P_A_FORCING_THEOREM and
-    FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO for the symmetry-only
-    no-go boundaries)."
-  - "Complex Hilbert structure on H_cell (sourced to I3_ZERO_EXACT_THEOREM
-    as the retained pairwise-interference/Born surface)."
-status_authority: "Independent audit lane only. This note self-classifies
-  the load-bearing step as a renaming-class consistency check, not a
-  substrate forcing derivation. Two prior independent audits returned
-  audited_renaming with load_bearing_step_class F; this self-classification
-  aligns the claim type with those prior verdicts. Re-audit at any time
-  may revise both the class and the audit verdict."
+claim_type_author_hint: no_go
+claim_scope: >-
+  Exact obstruction, on the explicitly supplied event-cell exterior action,
+  to deriving the displayed irreducible Cl_4(C) / two-mode CAR action on
+  P_A H_cell. Even granting P_A = Lambda^1 W, the supplied spatial module is
+  1+3 whereas an irreducible Cl_4(C) module restricts to two spin-half
+  doublets; the simultaneous intertwiner space is exactly zero. The canonical
+  wedge-plus-contraction action gives a second exact grade-leakage witness on
+  the full cell. Numerical finite-matrix companion checks expose multiplicity
+  on the full exterior and retained native cubic taste representations. The
+  older explicit C^4 matrices remain a correct conditional consistency
+  construction, not an event-cell descent.
+actual_current_surface_status: no-go
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+conditional_surface_status: conditional-support
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: >-
+  The positive implication is false on the supplied event-cell representation
+  surface; native-taste multiplicity checks are companion evidence only.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
 ```
 
-## Cited authorities (one-hop deps)
+## Question
 
-This note records explicit one-hop authority citations for the renaming-gap
-identified by audit: the algebraic `Cl_4(C)` construction here is correct on
-`C^4`, but the substrate action does not by itself force the active block to
-be `P_A H_cell`. The citations below make the conditional substrate-to-`P_A`
-provenance explicit on the live authority chain, while leaving the audit
-status of this row at `audited_renaming` (status authority is the independent
-audit lane).
-
-- [`PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md`](PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md)
-  — bounded-support action-source bridge that supplies the conditional
-  substrate-to-`P_A` route from the named microscopic action-source surface.
-  The algebraic differential of a link-local staggered-Dirac / Grassmann
-  action with respect to its fundamental local link variables has support on
-  exactly the Hamming-weight-one packet `P_1`. Hodge-dual `P_3` is excluded on
-  that premise because Hodge maps a one-link source to a three-link composite,
-  which is not an automorphism of the fundamental source domain. That theorem
-  supplies the action-source provenance for the rank-four packet selection on
-  which the present note's `Cl_4(C)` construction acts if the action-source
-  premise is accepted.
-- [`LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md`](LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — exact conditional algebra split: one-link source map plus the
-  active-response/support bridge gives `P_A = P_1`, while `P_3` is excluded
-  only relative to that same source-map premise. This split is the local
-  algebraic core of the preceding Planck-specific bridge and is not a retained
-  physical source-domain derivation by itself.
-- [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
-  — companion conditional carrier note that selects `P_A` from the
-  first-order coframe boundary variation under the same link-local
-  first-variation provenance. Its closure status is `audited_conditional`;
-  it is the upstream surface on which the present `Cl_4(C)` carrier acts.
-- [`SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md`](SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md)
-  (`retained_no_go`) — exact negative boundary clarifying that
-  symmetry-only substrate content does *not* uniquely force `P_A`. This is
-  why the link-local first-variation route above is needed: the
-  substrate-to-`P_A` step requires action-source structure beyond pure
-  symmetries.
-- [`FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30.md`](FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30.md)
-  (`retained_no_go`) — exact Hodge-degeneracy negative boundary: pure
-  substrate symmetries cannot force first-order over Hodge-dual
-  third-order. The link-local first-variation route changes the premise
-  surface (it adds the action source domain as additional structure beyond
-  pure symmetries), and on that enlarged surface the Hodge ambiguity is
-  broken because Hodge duality maps a one-link source to a three-link
-  composite.
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
-  — current framework memo: Lattice, Quantum, and Record are the repo-wide
-  axiom set, with source/action and the staggered-Dirac / Grassmann
-  realization outside the axioms. The link-local first-variation route is
-  therefore a conditional action-surface route, not a new repo-wide axiom and
-  not retained by this note.
-
-The one-hop dependencies above name the conditional substrate-to-`P_A`
-provenance and the negative boundaries it must respect. The present note's
-`Cl_4(C)` construction is unchanged; what is sharpened is the explicit
-provenance of the active-packet selection step that audit flagged as
-renaming, recorded as conditional on the cited link-local first-variation
-authority rather than left implicit.
-
-## Purpose
-
-The Planck Target 3 Clifford bridge identified one explicit remaining premise:
-the active primitive boundary response on the rank-four packet must be the
-metric-compatible Clifford coframe response. In
-`PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md`, that
-premise is stated as
+The earlier version of this note constructed four Hermitian gamma matrices on
+an abstract `C^4`, checked the `Cl_4(C)` relations and two-mode CAR pairing,
+and then identified that module with
 
 ```text
-D(v)^2 = ||v||^2 I_K
+P_A H_cell,      H_cell = Lambda^* W,      W = span(t,x,y,z),
+P_A = P_1,       rank(P_A) = 4.
 ```
 
-on `K = P_A H_cell ~= C^4`, and is explicitly marked as "native candidate,
-not yet independently forced."
-
-This note records the attempted construction. It uses the retained native
-`Cl(3)` / `SU(2)` bivector content, the graph-first structural `SU(3)`
-surface, and the anomaly-forced `3+1` time-axis closure to construct an
-explicit complex `Cl_4(C)` module on the primitive packet. Audit accepted the
-algebraic construction but rejected the claimed derivation of that carrier
-from the supplied substrate inputs.
-
-This is not a Hilbert-rank-only argument. The Hilbert-only no-go in
-`PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md`
-remains valid if the Clifford substrate content is stripped away.
-
-## Audit Outcome
-
-Fresh-context audit returned `audited_renaming`. The algebraic construction is
-correct as an explicit `Cl_4(C)` / two-mode CAR representation, and the runner
-still verifies all eight construction checks. The derivation does not close as
-a retained substrate theorem because the load-bearing step identifies
+Two independent audits correctly classified the load-bearing step as a
+renaming. Equal dimension does not derive an action. The missing question is
+sharper:
 
 ```text
-rank(P_A H_cell) = 4
+Does the action already carried by P_A H_cell intertwine with the spatial
+bivector action of an irreducible Cl_4(C) module, and do substrate-native
+coframe operators restrict to P_A?
 ```
 
-with the irreducible complex `Cl_4` module by dimension and representation
-theory, but does not prove that the retained event-cell substrate action
-restricts invariantly and uniquely to that module on `P_A H_cell`.
+The answer is no on the explicitly supplied event-cell exterior
+representation. A second numerical finite-matrix calculation on the retained
+cubic taste representation finds underdetermination rather than a unique
+rank-four descent. Thus a better `P_A` selector alone cannot repair the old
+positive chain on that exterior-action surface.
 
-The missing step is therefore:
+## Allowed Premises And Forbidden Imports
+
+The decisive no-go grants more than the current minimal axioms provide:
+
+1. a four-axis complex event cell `H_cell = Lambda^* W`;
+2. the distinguished time line and standard spatial rotation of
+   `W = C t + span(x,y,z)`;
+3. the active packet `P_A = Lambda^1 W` itself;
+4. the retained native cubic `Cl(3)` matrices on `C^8` when testing the
+   independent taste-space route;
+5. complex linearity.
+
+The proof does not import an observed value, fit, selected unitary basis,
+link-local source map, reflection-positive vacuum sector, gravitational
+boundary density, or coefficient match. In particular, it forbids the step
 
 ```text
-retained Cl(3)+time event-cell action
-  -> invariant active P_A block
-  -> induced Cl_4(C) generators on that block.
+dim(P_A H_cell) = dim(S_Cl4) = 4  therefore  P_A H_cell = S_Cl4.
 ```
 
-Until that substrate-to-packet forcing theorem is supplied, the primitive
-Clifford-Majorana edge algebra remains a carrier assignment for the Planck
-chain, not a derived consequence of the cited upstream content.
+The current `ANOMALY_FORCES_TIME_THEOREM.md` is a bounded conditional count
+theorem. Its declared B-AXIS premise supplies one clock/transfer axis and its
+conclusion supplies `d_t=1` under named premises. It does not construct a
+specific endomorphism `Gamma_t` on either `P_A H_cell` or the cubic taste
+space. No such operator is imported here.
 
-The follow-up no-go
-[SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md](./SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md)
-tests the missing step directly. It finds that the stated substrate symmetries
-do not uniquely force `P_A`: the Hamming-weight-three projector and additional
-rank-four local equivariant sums satisfy the same spin/time/CPT/Born/locality
-checks. Therefore the repair target requires an additional first-order
-boundary/orientation principle, not only the symmetries listed in PR #228.
+## Exact Obstruction Theorem On The Supplied Exterior Action
 
-The next repair attempt is also negative and has now been audited clean:
-[FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30.md](./FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30.md)
-checks whether the retained substrate symmetries force the first-order coframe
-carrier over its Hodge-dual third-order carrier. They do not. The oriented
-Hodge-complement map exchanges `P_1` and `P_3` while preserving the same
-spin-lift, time-parity, CPT, complex-Hilbert, and tensor-local number-algebra
-structure. Thus a first-order boundary/orientation law remains an additional
-input unless it is derived by a stronger theorem not currently in the retained
-bank.
-
-## Upstream Authorities
-
-The construction cites these existing framework authorities:
-
-- [MINIMAL_AXIOMS_2026-06-05.md](./MINIMAL_AXIOMS_2026-06-05.md): the current
-  Lattice, Quantum, and Record axiom baseline. The finite Grassmann /
-  staggered-Dirac action-source surface is not supplied by the axioms here;
-  it is the conditional premise sourced through the link-local first-variation
-  bridge above.
-- [NATIVE_GAUGE_CLOSURE_NOTE.md](./NATIVE_GAUGE_CLOSURE_NOTE.md): native cubic
-  `Cl(3)` gives exact `SU(2)` through the spatial Clifford / bivector
-  subalgebra.
-- [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](./GRAPH_FIRST_SU3_INTEGRATION_NOTE.md):
-  graph-first structural `SU(3)` integration on the selected-axis surface.
-- [ANOMALY_FORCES_TIME_THEOREM.md](./ANOMALY_FORCES_TIME_THEOREM.md):
-  anomaly cancellation plus chirality and single-clock evolution force one
-  temporal dimension, giving the `3+1` coframe.
-- [I3_ZERO_EXACT_THEOREM_NOTE.md](./I3_ZERO_EXACT_THEOREM_NOTE.md): exact
-  Hilbert-surface `I_3=0` / pairwise-interference anchor. It is cited as the
-  quantum-content surface, not as a CAR-statistics derivation.
-
-The theorem does not use `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, does not
-use `YT_WARD_IDENTITY_DERIVATION_THEOREM.md`, and does not use any
-`alpha_LM = alpha_bare/u_0` decoration chain.
-
-## Theorem Statement (consistency, given the admitted P_A carrier)
-
-This is an algebraic consistency theorem on a stipulated carrier. The
-substrate-to-`P_A` selection step is NOT derived in this note; it is
-admitted as an upstream-conditional input from the cited link-local
-first-variation candidate authority (see header `admitted_premises` and
-the "Substrate-to-`P_A` provenance" paragraph in §3 below). The two prior
-independent audits returned `audited_renaming` precisely on this step.
-What follows is the explicit module realization on the admitted carrier
-and its CAR identification — neither more, nor less.
-
-Let
+Let the supplied spatial `SU(2)` action on
 
 ```text
-H_cell ~= C^2_t otimes C^2_x otimes C^2_y otimes C^2_z ~= C^16
+P_A H_cell = Lambda^1 W = C t + span(x,y,z)
 ```
 
-be the time-locked primitive event cell, and ADMIT (not derive) the
-Hamming-weight-one primitive boundary packet as the active carrier:
+be the exterior action induced by rotations of the three spatial axes while
+fixing `t`. Let `J_1,J_2,J_3` be its Hermitian generators in standard
+normalization:
 
 ```text
-K = P_A H_cell,        dim K = rank(P_A) = 4    [ADMITTED carrier].
+[J_i,J_j] = i epsilon_ijk J_k.
 ```
 
-For a selected oriented primitive face, write the primitive coframe as
+Let `S` be an irreducible complex `Cl_4(C)` module with Hermitian Clifford
+generators `Gamma_t,Gamma_x,Gamma_y,Gamma_z`, and let
 
 ```text
-(t, n, tau_1, tau_2),
+T_1 = -(i/2) Gamma_y Gamma_z,
+T_2 = -(i/2) Gamma_z Gamma_x,
+T_3 = -(i/2) Gamma_x Gamma_y
 ```
 
-where `n` is the face normal and `tau_1,tau_2` are tangent axes. On the
-retained `Cl(3)/Z^3` framework, with native `SU(2)` supplied by cubic
-`Cl(3)` bivectors and the time axis supplied by anomaly-forced `3+1` closure,
-the active primitive block carries four Hermitian generators
+be the spatial bivector generators on `S`.
+
+Then:
+
+1. `P_A H_cell` is the `SU(2)` module `1 + 3`, with quadratic Casimir
+   spectrum `{0,2,2,2}`.
+2. `S` restricts to the spatial `SU(2)` as `2 + 2`, with quadratic Casimir
+   `(3/4) I_4`.
+3. Therefore
+
+   ```text
+   Hom_SU(2)(P_A H_cell, S) = {0}.
+   ```
+
+   In particular, there is no invertible map `U` satisfying
+
+   ```text
+   J_i U = U T_i      for i=1,2,3.
+   ```
+
+4. Consequently no irreducible `Cl_4(C)` action on `P_A H_cell` can be an
+   induced extension of this supplied exterior spatial action. Any displayed
+   `C^4` gamma matrices replace the `1+3` action by a `2+2` action; they do not
+   descend from it.
+
+This conclusion is basis-independent because the Casimir spectra and
+intertwiner dimension are representation invariants.
+
+## Proof
+
+### The event-cell packet is scalar plus vector
+
+The one-form packet has basis `(t,x,y,z)`. Spatial rotations fix `t` and act
+in the defining three-vector representation on `(x,y,z)`. Hence
 
 ```text
-Gamma_t, Gamma_n, Gamma_tau1, Gamma_tau2 in End(K)
+P_A H_cell |_SU(2) = V_0 + V_1,
 ```
 
-obeying
+where `V_j` denotes spin `j`. The quadratic Casimir `sum_i J_i^2` is zero on
+`V_0` and `j(j+1)=2` on `V_1`, giving
 
 ```text
-{Gamma_a, Gamma_b} = 2 delta_ab I_K.
+spec(sum_i J_i^2) = {0,2,2,2}.
 ```
 
-The generated algebra is
+This is the same exterior one-particle action used by the clean
+`SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md` counterexample runner.
+
+### An irreducible complex Cl_4 module is two spatial doublets
+
+Complex `Cl_4(C)` is `M_4(C)`, so its irreducible module has dimension four.
+The spatial bivectors satisfy `su(2)` and obey
 
 ```text
-<Gamma_t, Gamma_n, Gamma_tau1, Gamma_tau2> = End(K) ~= M_4(C),
+sum_i T_i^2 = (3/4) I_4.
 ```
 
-so `K` is the irreducible complex `Cl_4(C)` module. The oriented pairings
+Thus every irreducible summand has spin `1/2`. Dimension four gives two such
+summands:
 
 ```text
-c_N = (Gamma_t + i Gamma_n) / 2,
-c_T = (Gamma_tau1 + i Gamma_tau2) / 2
+S |_SU(2) = V_1/2 + V_1/2.
 ```
 
-then obey the two-mode CAR relations:
+There is no common irreducible constituent between `V_0+V_1` and two copies
+of `V_1/2`. Schur's lemma gives a zero intertwiner space. The runner also
+forms the exact `48 x 16` simultaneous-intertwiner system and finds rank 16,
+nullity 0.
+
+### Why this directly blocks the old construction
+
+If gamma matrices on `P_A H_cell` were induced from the supplied event-cell
+action, their spatial bivectors would agree with that action up to an
+invertible change of basis. Such a change of basis would be an invertible
+intertwiner, contradicting the exact nullity result. The old runner checks
+only the Clifford relations after the new action has already been assigned.
+
+## Independent Full-Cell Clifford Attack
+
+A natural attempt bypasses packet selection and constructs Clifford operators
+directly on the full exterior cell. Let `epsilon_a` be exterior multiplication
+by the coframe vector `e_a` and `iota_a` its adjoint contraction. Then
 
 ```text
-{c_a, c_b} = 0,
-{c_a, c_b^dagger} = delta_ab I_K.
+C_a = epsilon_a + iota_a,
+{C_a,C_b} = 2 delta_ab I_16.
 ```
 
-Therefore
+This is a genuine canonical `Cl_4(C)` representation on `H_cell`. It does not
+repair the target:
 
 ```text
-K ~= F(C^2)
+C_a Lambda^1 W subset Lambda^0 W + Lambda^2 W,
+P_A C_a P_A = 0,
+[P_A,C_a] != 0.
 ```
 
-as the primitive Clifford-Majorana edge carrier.
-
-## Four-Step Derivation Chain
-
-### 1. Retained Bivector Content
-
-The load-bearing spatial input is not a chosen two-qubit factorization. It is
-the retained cubic Clifford content:
+So `P_A` is not invariant. The full module is reducible:
 
 ```text
-Cl(3) = span(1, e_i, e_i e_j, e_1 e_2 e_3).
+Lambda^* W ~= S tensor C^4,
+dim Comm_Cl4(H_cell) = 16.
 ```
 
-The spatial bivectors
+There are four equivalent irreducible Clifford copies. Selecting one is a
+primitive-idempotent or multiplicity-line choice, not a consequence of the
+Clifford relations.
+
+As a numerical finite-matrix companion, require the natural exterior spatial
+action simultaneously. Subtracting the Clifford spin action from the
+exterior rotation action produces a commuting right-spin action `R_i` with
 
 ```text
-B_1 = -i e_2 e_3,
-B_2 = -i e_3 e_1,
-B_3 = -i e_1 e_2
+[R_i,C_a]=0,
+sum_i R_i^2 = (3/4) I_16.
 ```
 
-are Hermitian on the complex spinor representation and satisfy
+The runner finds that the jointly generated algebra has complex dimension 64,
+center dimension one, and commutant dimension four, the finite-representation
+signature of `M_8(C)` with multiplicity two. The smallest joint
+Clifford-plus-exterior-spin block is therefore eight-dimensional. This is a
+numerical companion with large singular-value gaps; the exact load-bearing
+no-go remains the Casimir/intertwiner theorem above.
+
+## Independent Retained Cubic-Taste Attack
+
+The retained native `Cl(3)` authority acts on the cubic taste space `C^8`
+using
 
 ```text
-[B_i, B_j] = 2 i epsilon_ijk B_k.
+gamma_1 = sigma_x tensor I tensor I,
+gamma_2 = sigma_y tensor sigma_x tensor I,
+gamma_3 = sigma_y tensor sigma_y tensor sigma_x.
 ```
 
-Thus `T_i = B_i/2` generate the retained native `su(2)`. This is the same
-`Cl(3)` / staggered-taste content recorded in
-[NATIVE_GAUGE_CLOSURE_NOTE.md](./NATIVE_GAUGE_CLOSURE_NOTE.md), not a new
-edge-statistics postulate.
+This companion route has the desired spin-half Casimir, but it still does not
+derive the claimed packet. The displayed candidate nonuniqueness is exact;
+the algebra and commutant ranks are reproducible numerical finite-matrix
+checks:
 
-On the primitive face, the spatial axes are `(n,tau_1,tau_2)`. Their bivectors
-are the retained spatial `Cl(3)` even subalgebra restricted to that face.
-Duality by the spatial pseudoscalar recovers the spatial coframe generators,
-so the bivector data are not external to the coframe response.
+1. the generated complex `Cl_3` algebra has dimension eight while its
+   commutant on `C^8` has dimension eight, so multiplicities remain;
+2. a temporal axis label does not specify an endomorphism anticommuting with
+   the three spatial matrices;
+3. already within the three-qubit Pauli strings there are eight Hermitian
+   involutions that anticommute with all three spatial gamma matrices:
 
-### 2. Extension By The Anomaly-Forced Time Axis
+   ```text
+   YYY, YYZ, YZI, YZX, ZII, ZIX, ZXY, ZXZ;
+   ```
 
-[ANOMALY_FORCES_TIME_THEOREM.md](./ANOMALY_FORCES_TIME_THEOREM.md) supplies a
-single time axis from anomaly cancellation, chirality, and one-clock
-codimension-1 evolution. Add this orthogonal generator to the retained spatial
-triple:
+4. each choice extends the spatial matrices to a `Cl_4(C)` algebra acting on
+   `C^8`, but the commutant has dimension four: it is a two-copy module;
+5. obtaining a single `C^4` carrier requires an additional rank-four
+   multiplicity projector and a bridge identifying it with `P_A H_cell`.
+
+Thus the retained taste route does not itself supply a unique descent. The
+audited scope of the graph-first `SU(3)` surface supplies a selected-axis
+fiber/base decomposition and a `gl(4)` commutant on the base; it does not
+include a coframe-to-gamma map or an irreducible Clifford-copy selector.
+
+## What Survives From The Earlier Note
+
+The helper runner still correctly verifies the following conditional
+statement:
 
 ```text
-Gamma_t^2 = I,
-{Gamma_t, Gamma_n} = {Gamma_t, Gamma_tau1} = {Gamma_t, Gamma_tau2} = 0.
+GIVEN an abstract four-dimensional complex carrier K and GIVEN the displayed
+gamma matrices on K, they generate M_4(C), pair into the two-mode CAR algebra,
+and give K ~= F(C^2).
 ```
 
-The complexified primitive coframe algebra is therefore
+That is an algebraic consistency construction. It is not evidence that
+`K = P_A H_cell`, that `P_A` is invariant, or that the gamma matrices are
+induced by the event-cell or cubic-taste action. The coefficient equality
+`c_Widom=c_cell=1/4` is likewise a cross-check after the rank-four carrier has
+been assigned; it cannot select or derive that carrier.
+
+## Exact Claim Boundary
+
+Proved here:
 
 ```text
-Cl_4(C) ~= M_4(C).
+supplied exterior event-cell action + granted P_A
+  -/-> equivariant irreducible Cl_4(C) action on P_A;
+
+canonical exterior Cl_4(C) action on H_cell
+  -/-> invariant four-dimensional P_A block;
+
+retained native cubic Cl(3) action + temporal-axis label
+  -/-> a supplied unique temporal gamma operator or unique irreducible C^4 copy
+       within the tested finite-matrix realization [numerical companion].
 ```
 
-The framework's Wick-rotated lattice calculation surface uses the Euclidean
-Clifford anticommutator for the local primitive block. Lorentzian signature is
-recovered at the continuum interpretation layer; the local complex Clifford
-module class is unchanged after complexification.
-
-### 3. Primitive Packet Restriction
-
-The active primitive boundary packet is the Hamming-weight-one packet in the
-four-axis event cell:
-
-```text
-rank(P_A) = C(4,1) = 4.
-```
-
-The unique irreducible complex `Cl_4` module has dimension `4`. Since
-`Cl_4(C) ~= M_4(C)` has complex dimension `16`, a faithful active
-representation cannot fit in dimensions `1`, `2`, or `3`, and an `8`-dimensional
-faithful representation is a reducible two-copy module with non-scalar
-commutant. The rank-four primitive packet is therefore exactly the
-irreducible module, with no active spectator sector.
-
-**Substrate-to-`P_A` provenance (conditional, not derived here).** The audit
-verdict `audited_renaming` correctly flags that the equality `K = P_A H_cell`
-does not by itself follow from rank-matching and the cited spatial / time /
-gauge inputs alone — symmetry content does not uniquely select `P_A` from the
-17 rank-four equivariant projector classes (see the cited
-`SUBSTRATE_TO_P_A_FORCING_THEOREM` no-go), and the Hodge-dual `P_3` survives
-all listed constraints (see the cited
-`FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM`). The present note's
-`Cl_4(C)` construction therefore takes `K = P_A H_cell` as an input on this
-surface, and its substrate-to-`P_A` provenance is sourced explicitly to the
-cited link-local first-variation candidate authority above, which selects
-`P_A` from the algebraic first variation of the named link-local microscopic
-action-source map. That route survives the listed no-gos because it adds the
-action source domain as additional structure beyond pure symmetries. The
-present note does not claim to derive that selection; it cites it as
-conditional provenance. The named open premises are the action-source premise
-needed by the link-local first-variation bridge and the gravitational
-boundary/action density bridge inherited from the upstream
-`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM` §5.
-
-Metric compatibility is now not an added response law. It is the Clifford
-anticommutator applied to the constructed primitive coframe:
-
-```text
-D(v) = sum_a v_a Gamma_a,
-D(v)^2 = ||v||^2 I_K.
-```
-
-Polarization gives
-
-```text
-D(u)D(v) + D(v)D(u) = 2 <u,v> I_K.
-```
-
-This is the premise required by the old Target 3 bridge, constructed from the
-retained spatial Clifford content plus the anomaly-forced time axis.
-
-### 4. CAR Fock-Space Identification
-
-Pair the four Majorana generators by the oriented normal/tangent decomposition:
-
-```text
-(t,n),        (tau_1,tau_2).
-```
-
-Then
-
-```text
-c_N = (Gamma_t + i Gamma_n)/2,
-c_T = (Gamma_tau1 + i Gamma_tau2)/2
-```
-
-satisfy
-
-```text
-{c_N,c_N} = {c_T,c_T} = {c_N,c_T} = 0,
-{c_N,c_N^dagger} = {c_T,c_T^dagger} = I,
-{c_N,c_T^dagger} = 0.
-```
-
-Thus the rank-four packet is
-
-```text
-K ~= F(C^2).
-```
-
-A reversal of the tangent orientation conjugates the tangent pairing
-`c_T <-> c_T^dagger` or applies an equivalent Bogoliubov/unitary
-transformation. It does not change the CAR algebra or the primitive Fock-space
-carrier.
-
-## Explicit Matrix Construction
-
-The runner uses the following Hermitian generators:
-
-```text
-Gamma_t    = sigma_x otimes I,
-Gamma_n    = sigma_y otimes I,
-Gamma_tau1 = sigma_z otimes sigma_x,
-Gamma_tau2 = sigma_z otimes sigma_y.
-```
-
-They obey the `Cl_4` anticommutator exactly at machine precision and their
-Clifford words span all `16` complex matrix units of `M_4(C)`.
-
-The retained spatial `Cl(3)` subblock is
-
-```text
-Gamma_n, Gamma_tau1, Gamma_tau2.
-```
-
-Its Hermitian bivectors
-
-```text
--i Gamma_tau1 Gamma_tau2,
--i Gamma_tau2 Gamma_n,
--i Gamma_n Gamma_tau1
-```
-
-close `su(2)`, matching the native cubic bivector content. Adding `Gamma_t`
-doubles the spatial `Cl_3(C)` span from dimension `8` to dimension `16`,
-which is the primitive `Cl_4(C)` lift.
-
-## Uniqueness
-
-Complex `Cl_4` is the simple algebra `M_4(C)`. Therefore every irreducible
-complex representation is the defining four-dimensional module, and every
-automorphism is inner up to the standard matrix-algebra automorphism class.
-Changing the ordered primitive coframe by a signed orthogonal transformation,
-or changing the gamma-matrix basis by a unitary conjugation, gives an
-equivalent `Cl_4(C)` module.
-
-The runner verifies this representation-theoretically:
-
-- the rank-four module has scalar commutant only;
-- the direct two-copy module has commutant `M_2(C)` and is reducible;
-- among faithful dimensions `<= 8`, only dimension `4` has scalar commutant;
-- signed/permuted generator sets preserve the same full `M_4(C)` algebra.
-
-Thus the lift is unique up to standard `Cl_4(C)` automorphism on the primitive
-rank-four packet.
-
-## Connection To The Existing Conditional Chain
-
-This theorem closes the active-block algebraic premise of
-`PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md`:
-
-```text
-metric-compatible Clifford response D(v)^2 = ||v||^2 I
-on P_A H_cell.
-```
-
-It also closes the residual statement isolated by
-`AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md`:
-
-```text
-the active primitive boundary response is generated by a local irreducible
-Clifford-Majorana edge algebra.
-```
-
-once the active block is taken to be `P_A H_cell`. The remaining
-substrate-to-`P_A` step is sourced to the cited link-local first-variation
-candidate authority above; this note does not promote that step.
-
-Therefore the former conditional chain becomes, on the cited live authority
-chain and pending independent audit ratification of the link-local
-first-variation theorem:
-
-```text
-retained Cl(3) spatial bivectors                    [native_gauge_closure]
-  + graph-first SU(3) / anomaly-complete gauge surface  [graph_first_su3]
-  + anomaly-forced time axis                        [anomaly_forces_time]
-  + complex Hilbert / Born-rule packet              [i3_zero_exact_theorem]
-  + bounded/conditional link-local first-variation P_A bridge
-        [PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM]
-  -> active block = P_A H_cell, rank 4              [substrate-to-P_A step]
-  -> irreducible Cl_4(C) module on K                [present note]
-  -> F(C^2) two-mode CAR edge                       [present note]
-  -> c_Widom = c_cell = 1/4                         [cross-validation]
-  -> G_Newton,lat = 1 in natural lattice units      [SOURCE_UNIT_NORMALIZATION]
-  -> a/l_P = 1                                      [BOUNDARY_DENSITY_EXTENSION]
-        conditional on (BP) gravitational boundary/action density bridge.
-```
-
-The last arrow still uses the already separate source-unit normalization
-support theorem. The SI physical-units conversion remains metrology. The
-named open bridge premise (BP) — that the framework's first-order coframe
-boundary carrier `P_A` is the microscopic gravitational boundary/action
-density carrier — is unchanged by this note and remains the residual Planck
-target inherited from `PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM` §5.
-
-## Cross-Validation
-
-The CAR carrier has one normal mode and one tangent mode:
-
-```text
-normal crossings = 2,
-tangent crossings = 2 * (1/2) = 1,
-<N_x> = 3.
-```
-
-The Widom-Gioev-Klich coefficient is
-
-```text
-c_Widom = <N_x>/12 = 3/12 = 1/4.
-```
-
-The primitive packet trace is
-
-```text
-c_cell = Tr((I_16/16)P_A) = 4/16 = 1/4.
-```
-
-So
-
-```text
-c_Widom = c_cell = 1/4.
-```
-
-This is a consistency check with
-`AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md` and
-the existing primitive coefficient theorem. It is not a new fitted coefficient.
-
-## Non-Claims
-
-This theorem does not claim:
-
-- a derivation of the SI decimal value of `hbar`;
-- a physical-units derivation of Newton's constant `G`;
-- strong-field continuum gravity, black-hole interiors, or a full quantum
-  gravity completion;
-- a Hilbert-only derivation of CAR statistics;
-- any new structural identity between `c_cell`, `G_Newton`, `hbar`, and
-  `l_P` beyond the already recorded source-unit and natural-unit chain.
-
-The theorem fixes the primitive Clifford-Majorana edge-statistics carrier on
-the retained substrate. `G_Newton,lat=1` and `a/l_P=1` are natural-lattice-unit
-consequences only after the source-unit support theorem is applied.
-
-## Audit Robustness Checks
-
-### Metric Signature
-
-The construction is explicitly the Euclidean local lattice construction
-`Cl(4,0)_C ~= Cl_4(C) ~= M_4(C)`. The Hermitian generators in the runner obey
-
-```text
-Gamma_a^2 = I,        {Gamma_a,Gamma_b} = 2 delta_ab I.
-```
-
-This is the Wick-rotated primitive-block algebra used by the lattice
-calculation surface. A Lorentzian reading would replace the real quadratic
-form by signature `(1,3)` before complexification, but
-
-```text
-Cl(1,3)_C ~= Cl(4,0)_C ~= M_4(C).
-```
-
-So the complex primitive module and the CAR pairing are not sensitive to a
-separate signature choice. The theorem does not use Lorentzian signature as an
-additional premise.
-
-### Face Orientation
-
-The oriented face choice only chooses a basis of the already constructed
-orthonormal four-axis coframe. If
-
-```text
-Gamma'_a = R_a^b Gamma_b
-```
-
-for an orthogonal relabeling of `(t,n,tau_1,tau_2)` induced by a substrate
-face rotation or tangent-orientation reversal, then the Clifford
-anticommutator is preserved:
-
-```text
-{Gamma'_a,Gamma'_b} = 2 delta_ab I.
-```
-
-By the uniqueness of the irreducible complex `Cl_4` module, this relabeling is
-implemented on `K` by a unitary Clifford automorphism, up to the usual central
-phase. The induced change on `(c_N,c_T)` is therefore a CAR-preserving
-Bogoliubov/unitary transformation. In particular, reversing
-`tau_1,tau_2` conjugates the tangent mode or swaps an equivalent oriented
-pairing; it does not add a new edge-statistics carrier.
-
-### Complex Structure
-
-The complex scalar `i` used in
-
-```text
-c_N = (Gamma_t + i Gamma_n)/2,
-c_T = (Gamma_tau1 + i Gamma_tau2)/2
-```
-
-is not introduced as an extra Clifford-Majorana premise. The theorem is stated
-on the retained quantum packet
-
-```text
-H_cell ~= C^2_t otimes C^2_x otimes C^2_y otimes C^2_z,
-K = P_A H_cell ~= C^4,
-```
-
-whose complex Hilbert structure is the same pairwise-interference/Born-rule
-surface recorded by `I_3=0`. The real Clifford generators act by Hermitian
-endomorphisms of this already complex module, and the CAR modes use the
-module's retained complex structure to combine Majorana pairs. If an auditor
-does not accept the complex Hilbert packet as retained input, the correct
-verdict is `audited_conditional`; the construction does not hide that issue in
-the CAR pairing step.
-
-## Audit Verdict and Self-Narrowing
-
-This note originally self-declared `proposed_retained` and requested an
-independent audit of the load-bearing step. Two independent audits
-returned `audited_renaming` with `load_bearing_step_class = F`. In light
-of that, the note now self-classifies its claim type as a bounded
-algebraic consistency theorem on the admitted P_A carrier (see header
-`claim_type_author_hint: bounded_theorem` and the renamed Theorem
-Statement section). This self-narrowing does not promote audit status;
-the status authority remains the independent audit lane, and re-audit
-may revise both the class and the verdict.
-
-The original audit-loop question was:
-
-> Are the retained native `Cl(3)` / `SU(2)` bivectors, graph-first `SU(3)`
-> gauge surface, anomaly-forced single time axis, and rank-four
-> Hamming-weight-one primitive packet sufficient to derive the local
-> irreducible Clifford-Majorana edge algebra on `P_A H_cell` without adding a
-> new structural premise?
-
-The audit judged that restriction to be an additional carrier assignment. Its
-verdict is `audited_renaming`: the construction names the rank-four primitive
-packet as the irreducible `Cl_4(C)` module, but the supplied inputs do not force
-the substrate action to preserve `P_A` and induce the displayed generators.
-Consequently, the Planck-pin conditional chain is not promoted by this note.
-The substrate-to-`P_A` and first-order-coframe follow-up no-gos localize the
-remaining scientific gap: an audit-clean positive route must derive a
-first-order boundary/orientation law, or bypass the full-cell carrier
-selection by an intrinsic active-block theorem that does not use `P_A` as an
-input.
-
-**Conditional repair route, cited (not promoted here).** The cited
-`PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM` (one-hop deps above)
-supplies a bounded-support substrate-to-`P_A` route by deriving `P_A = P_1`
-from the algebraic first variation of a link-local microscopic action-source
-map (see that note's Theorem and §3 for why this route survives the
-`SUBSTRATE_TO_P_A_FORCING_THEOREM` and
-`FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM` no-gos). That theorem is
-not retained on the current authority surface because the action-source
-premise is not discharged by this note. If a later review/audit accepts that
-premise and the bridge, the present note's substrate-to-`P_A` provenance
-inherits stronger derivational footing through the cited live authority chain.
-If it fails audit, the present note retains its `audited_renaming` status with
-the explicit conditional provenance of the `P_A` selection step recorded above.
-Either way, this rigorization does not re-open the audit verdict; the status
-authority remains the independent audit lane.
+Not proved here: a universal no-go against every enlarged framework. A
+positive construction can be made after adding new structure. It must supply,
+at minimum:
+
+1. a spinorial packet whose spatial representation is `2+2`, or a theorem
+   replacing the exterior `1+3` action by that spinorial action;
+2. a temporal Clifford endomorphism, not only a temporal dimension/axis label;
+3. a canonical multiplicity selector on the `C^8` or `C^16` carrier;
+4. a physical bridge identifying the selected spinor packet with the active
+   boundary response.
+
+Those are changed or added premises. They are not derivable from rank four,
+`P_A` selection, or the cited coefficient match.
+
+## No-Go Discipline Gate
+
+### N1 Alternative route enumeration
+
+- **ATTEMPTED:** symmetry-only `P_A` uniqueness was rerun in this cycle using
+  `SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md:21-22,214` and its
+  runner; the `P_3` witness still passes all eight blocks.
+- **ATTEMPTED:** Hodge/oriented-incidence selection was rerun using
+  `FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30.md:32-42`
+  and its runner; the `P_1`/`P_3` Hodge witness still passes all eight blocks.
+- **ATTEMPTED:** the link-local first-variation route can select `P_1` only on
+  its added source surface per
+  `LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md:49-66,100-112`;
+  its runner was rerun, and granting its conclusion does not change the
+  `1+3` versus `2+2` representation mismatch computed here.
+- **ATTEMPTED:** the representation-intertwiner route on granted `P_A` has
+  exact nullity zero.
+- **ATTEMPTED:** the canonical full-cell exterior Clifford action exists, but
+  it does not preserve `P_A` and has fourfold multiplicity.
+- **ATTEMPTED:** the retained cubic-taste extension leaves both the temporal
+  operator and irreducible copy unselected after reconstructing the matrices
+  in `NATIVE_GAUGE_CLOSURE_NOTE.md:46-66`; its runner was rerun in this cycle.
+- **ATTEMPTED:** the graph-first fiber/base route supplies a `gl(4)` commutant,
+  which permits arbitrary base endomorphisms but selects no Clifford coframe
+  vector map within the audited scope of
+  `GRAPH_FIRST_SU3_INTEGRATION_NOTE.md:35-112`; its runner was rerun in this
+  cycle.
+
+Scope boundary, not counted as an N1 route: a new spinor packet or explicit
+approved representation bridge changes the premise surface and is not
+foreclosed by this no-go.
+
+### N2 Wall independence
+
+The old wall was substrate-to-`P_A` selection. This result exposes a second
+wall: even after `P_A` is granted, its stated spatial representation is not
+the restriction of an irreducible `Cl_4(C)` module. They are independent:
+
+| Pair | Closing first closes second? | Closing second closes first? | Independent? |
+|---|---|---|---|
+| packet selector / representation descent | no; the proof grants `P_A` and the descent still fails | no; changing to a spinor action does not select `P_A` among substrate packets | yes |
+
+For the alternative native-taste route, the narrower obligations are also
+pairwise independent. Here “physical bridge” means only the semantic
+identification after the operator and copy have already been supplied; it is
+not defined broadly enough to contain them.
+
+| Native-taste pair | Closing first closes second? | Closing second closes first? | Independent? |
+|---|---|---|---|
+| temporal gamma / rank-four copy | no; a `Cl_4` action on `C^8` remains two-copy | no; a rank-four projector does not construct an anticommuting temporal generator | yes |
+| temporal gamma / physical bridge | no; an operator has no boundary semantics by itself | no; semantics does not supply the operator | yes |
+| rank-four copy / physical bridge | no; a projector has no boundary semantics by itself | no; an identification of an already-selected copy does not select it | yes |
+
+These are route-specific obligations, not additional walls in the exact
+exterior-action theorem.
+
+### N3 Hidden-wall scan
+
+The proof text was scanned for `assume`, `by construction`, `standard`,
+`framework provides`, `bridge context`, `background`, `naturally`,
+`obviously`, `registered`, and `canonical`.
+
+| Hit | Classification | Disposition |
+|---|---|---|
+| “standard spatial rotation” in the allowed-premise list | explicit strengthening grant | kept as supplied model input, not framework authority |
+| “standard normalization” for `su(2)` generators | non-load-bearing convention | fixes `[J_i,J_j]=i epsilon_ijk J_k`; both Casimirs use the same normalization |
+| “canonical wedge-plus-contraction” | displayed exact construction | reconstructed by the runner; no admission |
+| “canonical full-cell action” | same displayed construction | non-load-bearing alternative route |
+| “canonical multiplicity selector” | absent object needed by a future positive | open repair obligation, not assumed |
+| “registered primitives” in N6 | primitive-registry check | explicitly states those primitives do not supply the bridge |
+
+No target coefficient, fitted selector, observed value, action source,
+reflection-positive state, unit convention, or hand-picked unitary is used.
+The event-cell calculation grants `P_A`; failure therefore cannot be blamed on
+the old selector no-go.
+
+### N4 Residual matching
+
+Residual matching is deliberately narrow:
+
+| Cited witness and locator | Residual it attacks | Current residual | Match as proof witness? |
+|---|---|---|---|
+| `SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md:21-22,214` | packet uniqueness | induced Clifford action after granting `P_A` | no; route history only |
+| `FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30.md:32-42` | `P_1` versus `P_3` | `1+3` versus `2+2` action | no; route history only |
+| `LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md:49-66,100-112` | source-support selection of `P_1` | induced Clifford action | no; granting it is a control |
+| `NATIVE_GAUGE_CLOSURE_NOTE.md:46-66` | displayed cubic `C^8` matrices | native-taste extension multiplicity companion | yes for input matching; ranks remain numerical companions |
+| `ANOMALY_FORCES_TIME_THEOREM.md:20-25,146-155` | conditional time count/axis | absence of a supplied temporal gamma endomorphism | yes for scope comparison, not as negative algebra evidence |
+
+The proof witness for the new residual is the new runner, not the earlier
+selector no-gos. It matches the auditor's quoted blocker by sharpening “no
+induced action was proved” to “no equivariant induced action exists on the
+stated exterior `P_A` representation.”
+
+### N5 Proven surface
+
+| Resolution | Tested? | Supported negative statement |
+|---|---|---|
+| per generator / mode | yes | each displayed exterior Clifford generator leaks from degree one; each spatial generator enters the exact intertwiner system |
+| per four-dimensional block | yes | the full `P_A` intertwiner space is zero |
+| per 16-dimensional event cell | yes | the displayed wedge-plus-contraction action does not preserve `P_A`; multiplicity ranks are numerical companions |
+| per native `C^8` taste cell | yes, companion | displayed Pauli candidates and numerical algebra/commutant ranks |
+| per lattice / dynamical theory | no | no lattice-wide or dynamical no-go is claimed |
+
+Only the
+enumeration of temporal extensions is Pauli-string-resolved; the text says
+“already within the Pauli strings” and does not claim an exhaustive
+classification of all endomorphisms. No per-site result is promoted to a
+lattice-wide dynamical no-go. The exact claim is limited to the displayed
+event-cell exterior action. The retained native cubic matrices provide a
+numerical companion, not a second exact no-go. This note does not
+forbid a future theory with a new spinor packet, changed representation
+bridge, or approved multiplicity selector.
+
+### N6 Partial closure
+
+The requested positive theorem is not recovered. A bounded conditional route
+may explicitly admit a spinor packet, temporal gamma operator, multiplicity
+selector, and physical boundary-response bridge, then seek later import
+retirement. None of the registered scale, kinetic-isotropy, or realized-state
+primitives supplies those objects, and no convention-only reframe changes the
+Casimir spectrum. The exact negative result closes only the current-surface
+repair route and isolates the premise change needed for a later positive
+attempt; it does not call that change a new axiom.
+
+The partial-closure scan found one strong adjacent algebra theorem,
+`CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md` (named as
+non-load-bearing scope context rather than a citation-graph dependency). It
+classifies the two abstract one-generator real-Clifford sign extensions. Its
+own scope explicitly does not close Wick rotation, spacetime, dynamics, or a
+carrier realization; its current audit state is in progress. It therefore
+does not supply the event-cell intertwiner or copy selector. The current
+minimal-axiom and Tier-A registries contain no carrier premise, and the
+controlled vocabulary contains no convention whose ratification changes an
+`SU(2)` representation type. The 2026-07-10 open-PR scan found PR #5135,
+which registers a different one-site P-QBIT carrier premise and does not close
+this `Cl_4`/`P_A` event-cell residual; it found no in-flight repair of this
+intertwiner. The existing link-local selector closes only support selection on
+its bounded source surface, not representation descent.
+
+### N7 Steelman
+
+A hostile reviewer can combine the graph-selected factorization
+`C^8 = C^2_fiber tensor C^4_base` with a chirality or commutant projector,
+place `Cl_4(C)` on the four-dimensional base, and then declare that base to be
+the physical boundary packet. This is the strongest live escape because it
+combines the retained native matrices in `NATIVE_GAUGE_CLOSURE_NOTE.md`, the
+retained selected-axis factorization in `GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`,
+the bounded `P_1` support selector in
+`LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md`,
+and the audit-in-progress abstract sign-extension theorem named in N6. These
+are named as non-load-bearing steelman context, not proof dependencies. It
+therefore has the right dimension and serious algebraic support. It does not
+refute the stated no-go: the `gl(4)` commutant permits every base endomorphism
+and selects no Clifford vector map, a fiber/base quotient is not the exterior
+one-form packet, and identifying it with the boundary response is precisely a
+new representation/physical bridge. Likewise, simply placing irreducible
+gamma matrices on the four one-form labels changes the spatial representation
+from `1+3` to `2+2`; the zero intertwiner result is why that is an assignment,
+not a descent.
+
+### N8 Cross-cycle echo
+
+Earlier selector walls were partially bypassed by admitting a link-local
+source domain or a reflection-positive vacuum sector. The same mechanism can
+produce a future conditional positive here: explicitly admit the spinor
+representation and multiplicity selector, then audit whether those imports
+can be retired. That possibility is preserved. What cannot be reused is the
+claim that a valid object on an isomorphic vector space establishes identity
+of actions. Here the discriminant is representation type rather than projector
+rank.
+
+The repo search found these concrete echoes:
+
+| Prior surface | Later status/mechanism | Applicability here |
+|---|---|---|
+| `AXIOM_STACK_MINIMALITY_CL4C_NO_GO_THEOREM_NOTE_2026-04-29.md` | historical broad exhaustion language; not current minimal-axiom authority | cautionary: do not repeat its universal “unique minimal extension” claim |
+| `.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md` | symmetry/Hodge selector wall partially bypassed by an explicit link-source premise | applicable as a conditional-premise route, not a derivation on the old surface |
+| `.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md` | records repeated isomorphic-carrier/semantic-bridge gaps | applicable discipline: distinguish algebra existence from physical carrier identity |
+| `CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md` | abstract extension route now in independent audit; physical realization excluded by its scope | may retire the abstract extension subproblem, but not the event-cell intertwiner or multiplicity bridge |
+
+No prior retirement mechanism found in this scan changes the exact `SU(2)`
+Casimir mismatch without changing the supplied representation premise.
 
 ## Verification
 
-Run:
+Run the discriminating substrate runner:
+
+```bash
+python3 scripts/frontier_planck_primitive_clifford_substrate_descent_obstruction.py
+```
+
+Expected close:
+
+```text
+Summary: PASS=10  FAIL=0
+Exact verdict: OBSTRUCTION ON THE GRANTED EVENT-CELL SURFACE.
+```
+
+The older helper may still be run to reproduce the conditional construction:
 
 ```bash
 python3 scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py
 ```
 
-The runner checks eight blocks:
+Its `PASS=8 FAIL=0` means only that the assigned abstract `C^4` matrices are
+internally consistent.
 
-1. four Hermitian `Cl_4` generators on `C^4`;
-2. faithful `M_4(C)` generation and irreducibility;
-3. retained spatial `Cl(3)` bivectors closing the native `SU(2)` subset;
-4. anomaly-forced time-axis extension from `Cl_3` to `Cl_4`;
-5. oriented Majorana-pair construction of the two CAR modes;
-6. `dim F(C^2)=4=rank(P_A)`;
-7. uniqueness up to standard `Cl_4(C)` automorphism by commutant class;
-8. `c_Widom=1/4=c_cell` cross-validation.
+## Referenced Route Context
 
-Current output:
+The files below are route provenance and steelman context, not load-bearing
+dependencies of the self-contained exact intertwiner theorem. They are kept as
+code-formatted paths deliberately so the citation graph does not turn route
+history into proof imports.
 
-```text
-Summary: PASS=8  FAIL=0
-```
+- `MINIMAL_AXIOMS_2026-06-29.md` — framework-boundary context only; none of
+  Lattice, Qubit, Admissibility, or Record is a proof input to this
+  granted-representation theorem.
+- `NATIVE_GAUGE_CLOSURE_NOTE.md` — retained
+  cubic `Cl(3)` matrices and bivector `su(2)` on `C^8`.
+- `GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`
+  — selected-axis fiber/base and structural commutant surface; tested as an
+  alternative route, not used in the exact intertwiner proof.
+- `ANOMALY_FORCES_TIME_THEOREM.md` — non-load-bearing scope context. Its
+  present bounded statement is a conditional temporal-dimension count and
+  does not supply `Gamma_t`; it is deliberately not a citation-graph
+  dependency of this no-go.
+- Complex linearity is an explicit strengthening grant in this note. The
+  `I3_ZERO_EXACT_THEOREM_NOTE.md` result assumes complex amplitudes for its own
+  interference theorem and is not used here to derive complex structure.
+- `SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md`
+  — clean symmetry-only selector no-go and event-cell exterior action.
+- `FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30.md`
+  — clean Hodge `P_1`/`P_3` degeneracy.
+- `LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md`
+  — bounded conditional support selector; it does not derive the Clifford
+  action tested here.

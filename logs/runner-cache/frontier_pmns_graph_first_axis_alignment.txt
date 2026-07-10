@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_graph_first_axis_alignment.py
-runner_sha256: 6b6dc25654137abc5c93d0ac746f7b0151e4e77dfdb450f9c8bef35f16f33441
+runner_sha256: 1c11a7d6de8c404774e721849f5c7942e2c518bec0fc67fb63ba7fbb3e1ad2fa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -18,41 +18,49 @@ Question:
 ========================================================================================
 PART 1: THE GRAPH-FIRST SELECTOR HAS EXACT AXIS MINIMA
 ========================================================================================
-  [PASS] S_1 is Hermitian
-  [PASS] S_1^2 = I
-  [PASS] S_2 is Hermitian
-  [PASS] S_2^2 = I
-  [PASS] S_3 is Hermitian
-  [PASS] S_3^2 = I
-  [PASS] The normalized graph-first selector has exactly three minima  (count=3)
-  [PASS] Those minima are exactly the three coordinate axes
+  [PASS (A)] S_1 is Hermitian
+  [PASS (A)] S_1^2 = I
+  [PASS (A)] S_2 is Hermitian
+  [PASS (A)] S_2^2 = I
+  [PASS (A)] S_3 is Hermitian
+  [PASS (A)] S_3^2 = I
+  [PASS (A)] The normalized graph-first selector has exactly three minima  (count=3)
+  [PASS (A)] Those minima are exactly the three coordinate axes
   [INFO] The graph-first route derives a weak-axis selector on the hw=1 triplet
 
 ========================================================================================
 PART 2: EACH SELECTED AXIS HAS EXACT RESIDUAL Z2 STABILIZER
 ========================================================================================
-  [PASS] The selected axis e1 is fixed by the 2<->3 swap
-  [PASS] The selected axis is strictly lower than the democratic diagonal under the selector  (F_axis=0.000000, F_diag=0.333333)
+  [PASS (A)] The selected axis e1 is fixed by the 2<->3 swap
+  [PASS (A)] The selected axis is strictly lower than the democratic diagonal under the selector  (F_axis=0.000000, F_diag=0.333333)
   [INFO] The selected axis leaves an exact residual Z2 stabilizer
 
 ========================================================================================
-PART 3: THE RESIDUAL Z2 FORCES THE ACTIVE HERMITIAN CORE LAW
+PART 3: UNDER PREMISE (E), RESIDUAL Z2 YIELDS THE ACTIVE HERMITIAN CORE LAW
 ========================================================================================
-  [PASS] The full complex aligned core is Hermitian
-  [PASS] The aligned core is exactly P23-invariant  (residual=0.00e+00)
-  [PASS] Residual Z2 invariance forces d2=d3  (d2-d3=0.00e+00)
-  [PASS] Residual Z2 invariance forces r12=r31  (r12-r31=0.00e+00)
-  [PASS] Residual Z2 invariance does NOT force the fixed-axis coupling real  (Im(z)=0.190000)
-  [PASS] The old real four-parameter core is recovered only by the specialization Im(z)=0
+  [PASS (A)] The full complex aligned core is Hermitian
+  [PASS (A)] The aligned core is exactly P23-invariant  (residual=0.00e+00)
+  [PASS (A)] Residual Z2 invariance forces d2=d3  (d2-d3=0.00e+00)
+  [PASS (A)] Residual Z2 invariance forces r12=r31  (r12-r31=0.00e+00)
+  [PASS (A)] Residual Z2 invariance does NOT force the fixed-axis coupling real  (Im(z)=0.190000)
+  [PASS (A)] The old real four-parameter core is recovered only by the specialization Im(z)=0
   [INFO] The active aligned Hermitian lane has exact form [[a,z,z],[z*,c,d],[z*,d,c]]  (r23=0.170000, triangle_phase=0.000000)
 
 ========================================================================================
-PART 4: THIS ROUTE DERIVES ALIGNMENT, BUT NOT VALUES OR ACTIVE-SECTOR CHOICE
+PART 4: PREMISE (E) GIVES ALIGNMENT, BUT NOT VALUES OR ACTIVE-SECTOR CHOICE
 ========================================================================================
-  [PASS] Two distinct aligned Hermitian cores survive the same graph-first axis law
-  [PASS] Exact sector exchange still flips which lepton sector carries the active aligned block
-  [INFO] The graph-first route fixes alignment but not the aligned-core values
+  [PASS (A)] Two distinct aligned Hermitian cores survive the same premised P23 law
+  [PASS (A)] Exact sector exchange still flips which lepton sector carries the active aligned block
+  [INFO] Under premise (E), the route fixes alignment but not the aligned-core values
   [INFO] It does not by itself fix whether the active block sits on E_nu or E_e
+
+========================================================================================
+PART 5: CONDITIONAL-INVARIANCE NOTE-SURFACE PINS
+========================================================================================
+  [PASS (B)] The source note names premise (E)
+  [PASS (B)] The source note carries the dated downstream-hygiene line
+  [PASS (B)] The unconditional lane-forces-alignment sentence is absent
+  [PASS (B)] Theorem item 3 is conditional on premise (E)
 
 ========================================================================================
 RESULT
@@ -60,14 +68,15 @@ RESULT
   Positive graph-first result:
     - the hw=1 cube selector derives a weak-axis choice
     - the selected axis carries residual Z2
-    - that residual Z2 forces the aligned active Hermitian core
+    - under premise (E), residual Z2 gives the aligned active Hermitian core
     - the core keeps the complex off-axis coupling allowed by Hermiticity
 
   Boundary:
+    - this route does not derive residual-Z2 equivariance of the active operator
     - this route does not fix the aligned-core values
     - this route does not fix whether the active sector is neutrino or charged-lepton
 
-PASS=18  FAIL=0
+PASS=22  FAIL=0
 
 ----- stderr -----
 

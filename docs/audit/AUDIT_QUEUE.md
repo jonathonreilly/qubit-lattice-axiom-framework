@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1912
+**Total pending:** 1911
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 203
 
 By criticality:
-- `critical`: 393
+- `critical`: 392
 - `high`: 265
 - `medium`: 500
 - `leaf`: 754
@@ -32,7 +32,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 15 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | critical | 404 | 13.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py` |
 | 16 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | non_terminal_conditional | critical | 403 | 12.66 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 17 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | critical | 396 | 11.63 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py` |
-| 18 | `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | audit_in_progress | critical | 392 | 11.62 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_observable_principle_record_scalar_map_no_go_2026_06_05.py` |
+| 18 | `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 390 | 9.61 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_p1_exponent_attack_2026_06_10.py` |
 | 19 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | non_terminal_conditional | critical | 390 | 9.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_local_finite_atom_availability_2026_06_17.py` |
 | 20 | `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | audit_in_progress | critical | 389 | 9.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_local_tomography_from_complex_structure_exact.py` |
 | 21 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | non_terminal_conditional | critical | 386 | 9.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py` |

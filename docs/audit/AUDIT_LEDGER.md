@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 929 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1749 |
+| unaudited | 1748 |
 | audit_in_progress | 9 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 34 |
+| ~~audited_renaming~~ | 35 |
 | ~~audited_conditional~~ | 136 |
 | ~~audited_failed~~ | 17 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -77,8 +77,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 69 |
 | `audited_failed` | 39 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 34 |
-| `unaudited` | 2096 |
+| `audited_renaming` | 35 |
+| `unaudited` | 2095 |
 
 | claim_type | count |
 |---|---:|
@@ -1773,6 +1773,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
+| `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -13776,6 +13777,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The provided runner constructs the 2D lattice, propagates the probe, builds stage-1 and stage-2 compressed surrogate source profiles, and computes the displayed ratios, TV distances, captures, spreads, and overlap. The bounded conclusion is limited to the frozen family and printed-precision two-stage stability.
 - **rationale:** The primary runner does not merely print constants: it generates the lattice, propagates amplitudes under distributed and point-source fields, compresses computed profiles, and compares the second-stage surrogate against the first. The helper source supplies lattice generation and constants used by the computation rather than importing the contested result from another note. The cited authorities are retained_bounded and the note's conclusion stays bounded: mesoscopic two-stage stability, not localized persistent-mass closure.
 - **auditor confidence:** high
+
+### `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite 6-NN graph reachability advances at most one graph edge per update, while record histories alone do not determine a physical clock or rate; the update-tick, record-tick, minimum-time-step, and edge identity was audited only as a naming convention.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T181128Z-79c35c5e-00001-min_time_step_tied_to_the_la`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The minimum time step is identified with one elementary update and one record tick, and because that update reaches one nearest-neighbor hop, one tick is identified with one edge.  _(class `F`)_
+- **chain closes:** False — The runner computes the finite reachability facts, but it does not derive that an update tick is a record tick or the physical time coordinate. A bridge theorem deriving that identification rather than defining it is missing.
+- **rationale:** The runner genuinely checks 6-NN and 26-NN finite reachability, but its final ratio check merely reuses those booleans and prints the asserted tick/edge identity. The source boundary explicitly says the identity among update tick, record tick, `a_tau`, and one edge is a naming convention and forbids citing it as a retained derivation. The retained clock authorities support the records-alone scale no-go, but they do not supply the missing time-coordinate bridge.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `minimal_absorbing_horizon_probe_note`
 

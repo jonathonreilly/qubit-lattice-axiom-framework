@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lattice_greens_next_order_r5_anisotropy.py
-runner_sha256: e3e1f50a29d7a0fa2187a6910b981f89d0ec3b2922271b0863c7adafcede60ec
-timeout_sec: 600
+runner_sha256: e638003aef3f8c351586381d5a12692f0e8a7d2d619863afdbd07811413172c9
+timeout_sec: 360
 exit_code: 0
-elapsed_sec: 20.76
+elapsed_sec: 15.24
 status: ok
 ----- stdout -----
 PASS S1a tail_mellin(Gt) = 1/(4 pi r) exactly
@@ -22,10 +22,10 @@ PASS S3d f(2, 1, 0) equals its exact rational/pi anchor
 PASS S3d f(2, 1, 1) equals its exact rational/pi anchor
 PASS S3d f(3, 2, 1) equals its exact rational/pi anchor
 PASS S3d f(3, 1, 0) equals its exact rational/pi anchor
-PASS S4 order n=1 has only polynomial isotropic contact terms
-PASS S4 order n=2 has only polynomial isotropic contact terms
-PASS S4 order n=3 has only polynomial isotropic contact terms
-PASS S4 order n=4 has only polynomial isotropic contact terms
+PASS S4 formal order n=1 has polynomial isotropic contact grading
+PASS S4 formal order n=2 has polynomial isotropic contact grading
+PASS S4 formal order n=3 has polynomial isotropic contact grading
+PASS S4 formal order n=4 has polynomial isotropic contact grading
 PASS N1a origin delta-identity error 2.068e-25 < 1e-18
 PASS N1b lattice-equation error at (7,4,2) 7.033e-17 < 1e-12
 PASS N1c lattice-equation error at (4,2,1) 0.000e+00 < 1e-12

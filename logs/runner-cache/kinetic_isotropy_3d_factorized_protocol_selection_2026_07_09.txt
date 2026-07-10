@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kinetic_isotropy_3d_factorized_protocol_selection_2026_07_09.py
-runner_sha256: 37b6daa8e41652dd065f8801aaeff988fe768efae6532f3a98bd070156ae6dc2
+runner_sha256: f06f011aa6cf7d899d8a6c6a3fc5e43f6ef15694a08a97a9bd195b0cc56b16d9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.44
+elapsed_sec: 0.47
 status: ok
 ----- stdout -----
 
@@ -23,34 +23,36 @@ status: ok
   [PASS] P_AXIS bare and decorated forms are both unitary
   [PASS] the P_SYM_OCT opposite mover was directly constructed and matches the inverse mover
 
-(S2) FULL PROTOCOL PROPERTY PROBE TABLE -- PRINTED BEFORE SELECTION GATES
+(S2) FULL PROTOCOL PROPERTY PROBE TABLE -- PRINTED BEFORE PREDICATE FILTERS
 ================================================================================================
-protocol       factor translation defect     per-axis nonvacuity   axis-uniform   dispersive
+protocol           factor modulus defect          factor support  support-uniform  word-dispersive
 ------------------------------------------------------------------------------------------------
-P_SYM                                  0                 [1,1,1]            yes          YES
-P_SYM_OCT                              0                 [1,1,1]            yes          YES
-P_REORDER                              0                 [1,1,1]            yes          YES
-P_WEIGHT                               0                 [1,1,1]            yes          YES
-P_AXIS                                 0                 [1,0,0]             no          YES
-P_MIX4                                 1                 [1,1,0]             no          YES
-P_STAIR                                1                 [1,1,0]             no          YES
-P_PAIRFLAT                       0.38471                 [1,1,1]            yes           NO
-P_CANCEL                               0                 [1,1,1]            yes           NO
-P_DIAG                                 0                 [0,0,0]            yes           NO
+P_SYM                                  0                 [1,1,1]              yes              YES
+P_SYM_OCT                              0                 [1,1,1]              yes              YES
+P_REORDER                              0                 [1,1,1]              yes              YES
+P_WEIGHT                               0                 [1,1,1]              yes              YES
+P_AXIS                                 0                 [1,0,0]               no              YES
+P_MIX4                                 1                 [1,1,0]               no              YES
+P_STAIR                                1                 [1,1,0]               no              YES
+P_PAIRFLAT                       0.38471                 [1,1,1]              yes               NO
+P_CANCEL                               0                 [1,1,1]              yes               NO
+P_DIAG                                 0                 [0,0,0]              yes               NO
 
-(S3) TRANSLATION-DEFECT COMPUTATIONS
+(S3) CONSTITUENT-FACTOR MODULUS-HOMOGENEITY COMPUTATIONS
 ================================================================================================
-  [PASS] zero-defect protocols equal the specified translation-clause set  --  computed=['P_AXIS', 'P_CANCEL', 'P_DIAG', 'P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']
-  [PASS] P_MIX4, P_STAIR, and P_PAIRFLAT have positive site-modulus translation defects
+  [PASS] zero-defect protocols equal the specified necessary factor-modulus set  --  computed=['P_AXIS', 'P_CANCEL', 'P_DIAG', 'P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']
+  [PASS] P_MIX4, P_STAIR, and P_PAIRFLAT have positive constituent-factor modulus defects
+  [PASS] P_DIAG explicitly shows that zero modulus defect is not sufficient for full local-frame covariance  --  operator error=1.17557; diagonal local frames commute with P_DIAG
 
-(S4) CONDITIONING NONVACUITY VECTORS
+(S4) CONSTITUENT-FACTOR SUPPORT VECTORS
 ================================================================================================
-  [PASS] all per-axis nonvacuity vectors match the site-level nearest-neighbor support probe
-  [PASS] axis-uniform protocols are exactly the all-axis and vacuous patterns
+  [PASS] all factor-support vectors match the site-level nearest-neighbor probe over constituent lists
+  [PASS] P_CANCEL distinguishes constituent-factor support from composite-word support  --  factor=(1, 1, 1); composite=(0, 0, 0)
+  [PASS] support-uniform protocols are exactly the all-axis and vacuous binary patterns
 
-(S5) FLATNESS, DISPERSIVENESS, AND SLOPES
+(S5) COMPOSITE-WORD FLATNESS, DISPERSIVENESS, AND SLOPES
 ================================================================================================
-  [PASS] dispersive protocols match the momentum-dependent characteristic-polynomial probe  --  computed=['P_AXIS', 'P_MIX4', 'P_REORDER', 'P_STAIR', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']
+  [PASS] composite-word dispersive protocols match the momentum-dependent characteristic-polynomial probe  --  computed=['P_AXIS', 'P_MIX4', 'P_REORDER', 'P_STAIR', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']
   [PASS] decorated mover squares give the independent central targets exp(-ik_i), with exp(+ik_1) for the reversed mover
   [PASS] P_MIX4 and P_STAIR fourth-power identities recompute site-slope magnitudes (1/2,1/2,0)
   [PASS] symmetric and octant cycle word slopes have magnitude one edge/tick on every axis
@@ -64,27 +66,27 @@ P_DIAG                                 0                 [0,0,0]            yes 
   [PASS] P_PAIRFLAT is axis-permutation covariant under the computed P12 conjugation
   [PASS] decorated per-axis factors satisfy the P12 plus diagonal-gauge projective covariance check
 
-(S7) SELECTION GATES G1-G5
+(S7) DESCRIPTIVE PREDICATE FILTERS AND STRUCTURE TESTS
 ================================================================================================
-  [PASS] G1 translation-clause survivors  --  computed=['P_AXIS', 'P_CANCEL', 'P_DIAG', 'P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']
-  [PASS] G2 translation plus nonvacuous all-axes-uniform survivors  --  computed=['P_CANCEL', 'P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']
-  [PASS] G3 adds the named dispersiveness conditional  --  computed=['P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']
-  [PASS] G4 ingredients: decorated anticommutation, central reorder sign, and S1^2 weight identity
-  [PASS] G4 divergence is detected: the specified P_WEIGHT is not the symmetric three-axis cycle times a central scalar
-  [PASS] G5 divergence is detected: factor slopes are one, but the P_WEIGHT composite has slope magnitudes (2,1,1)
+  [PASS] factor-modulus-homogeneity filter survivors  --  computed=['P_AXIS', 'P_CANCEL', 'P_DIAG', 'P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']
+  [PASS] nonvacuous all-axis factor-support filter survivors  --  computed=['P_CANCEL', 'P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']
+  [PASS] composite-word dispersiveness filter survivors  --  computed=['P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']
+  [PASS] survivor-structure ingredients: decorated anticommutation, central reorder sign, and S1^2 weight identity
+  [PASS] survivor-structure divergence: P_WEIGHT is not the symmetric three-axis cycle times a central scalar
+  [PASS] composite-slope divergence: factor slopes are one, but P_WEIGHT has slope magnitudes (2,1,1)
 
-(S8) REFUTATION AND REJECTOR LEGS L1-L6
+(S8) PREDICATE-REMOVAL AND REJECTOR CHECKS
 ================================================================================================
-  [PASS] L1 variation-only filter admits P_MIX4 and P_STAIR with nonunit computed slopes
-  [PASS] L1 divergence is detected: dropping only G1 while retaining axis-uniformity does not admit P_MIX4 or P_STAIR
-  [PASS] L2 dropping axis-uniformity admits P_AXIS
-  [PASS] L3 dropping dispersiveness admits the flat P_CANCEL word
-  [PASS] L4 P_PAIRFLAT is covariant, all-axes varying, flat, and translation-defective
-  [PASS] L5 bare cycle passes the protocol-level filters while bare factors commute and decorated factors anticommute
-  [PASS] L6 replacing P_SYM by P_MIX4 changes the G1-G3 survivor stack  --  honest G3=['P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']; corrupted G3=['P_REORDER', 'P_SYM_OCT', 'P_WEIGHT']
+  [PASS] support-and-dispersion-only filter admits P_MIX4 and P_STAIR with nonunit computed slopes
+  [PASS] removing only factor-modulus homogeneity retains the all-axis support rejection of P_MIX4 and P_STAIR
+  [PASS] removing all-axis support uniformity admits P_AXIS
+  [PASS] removing composite-word dispersiveness admits flat identity word P_CANCEL
+  [PASS] P_PAIRFLAT is P12-axis-permutation covariant, all-axis factor-supported, flat, and factor-modulus-defective
+  [PASS] bare cycle passes the weak protocol filters while bare factors commute and decorated factors anticommute
+  [PASS] replacing P_SYM by P_MIX4 changes the three-filter survivor stack  --  honest final=['P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']; corrupted final=['P_REORDER', 'P_SYM_OCT', 'P_WEIGHT']
 
 ================================================================================================
-TOTAL: PASS=40 FAIL=0
+TOTAL: PASS=42 FAIL=0
 
 ----- stderr -----
 

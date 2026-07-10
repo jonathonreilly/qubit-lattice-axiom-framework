@@ -350,7 +350,7 @@ def factor_translation_defect(F):
     return max(defects)
 
 
-def protocol_translation_defect(name):
+def protocol_factor_modulus_defect(name):
     return max(factor_translation_defect(F) for F in protocols[name]["site_factors"])
 
 
@@ -360,7 +360,7 @@ def is_nearest_neighbor_pair(target, source, axis):
     return same_transverse and delta in (1, L - 1)
 
 
-def conditioning_vector_from_factors(factors):
+def factor_support_vector(factors):
     vector = []
     for axis in range(3):
         occupied = any(
@@ -389,41 +389,69 @@ def dispersion_measure_from_function(function):
 
 properties = {}
 for name in protocols:
-    vector = conditioning_vector_from_factors(protocols[name]["site_factors"])
+    vector = factor_support_vector(protocols[name]["site_factors"])
     measure = dispersion_measure_from_function(lambda kvec, n=name: bloch_protocol(n, kvec))
     properties[name] = {
-        "defect": protocol_translation_defect(name),
-        "nonvacuity": vector,
-        "axis_uniform": len(set(vector)) == 1,
-        "dispersion_measure": measure,
-        "dispersive": measure > 1.0e-7,
+        "factor_modulus_defect": protocol_factor_modulus_defect(name),
+        "factor_support": vector,
+        "support_uniform": len(set(vector)) == 1,
+        "word_dispersion_measure": measure,
+        "word_dispersive": measure > 1.0e-7,
     }
 
 
-heading("(S2) FULL PROTOCOL PROPERTY PROBE TABLE -- PRINTED BEFORE SELECTION GATES")
-print(f"{'protocol':<12} {'factor translation defect':>27}  {'per-axis nonvacuity':>22}  {'axis-uniform':>13}  {'dispersive':>11}")
+heading("(S2) FULL PROTOCOL PROPERTY PROBE TABLE -- PRINTED BEFORE PREDICATE FILTERS")
+print(f"{'protocol':<12} {'factor modulus defect':>27}  {'factor support':>22}  {'support-uniform':>15}  {'word-dispersive':>15}")
 print("-" * 96)
 for name, prop in properties.items():
-    defect_text = "0" if prop["defect"] < TOL else f"{prop['defect']:.6g}"
-    vector_text = "[" + ",".join(str(x) for x in prop["nonvacuity"]) + "]"
+    defect_text = "0" if prop["factor_modulus_defect"] < TOL else f"{prop['factor_modulus_defect']:.6g}"
+    vector_text = "[" + ",".join(str(x) for x in prop["factor_support"]) + "]"
     print(
         f"{name:<12} {defect_text:>27}  {vector_text:>22}  "
-        f"{('yes' if prop['axis_uniform'] else 'no'):>13}  "
-        f"{('YES' if prop['dispersive'] else 'NO'):>11}"
+        f"{('yes' if prop['support_uniform'] else 'no'):>15}  "
+        f"{('YES' if prop['word_dispersive'] else 'NO'):>15}"
     )
 
 
 # ---------------------------------------------------------------------------
-heading("(S3) TRANSLATION-DEFECT COMPUTATIONS")
+heading("(S3) CONSTITUENT-FACTOR MODULUS-HOMOGENEITY COMPUTATIONS")
 expected_zero = {"P_SYM", "P_SYM_OCT", "P_REORDER", "P_WEIGHT", "P_AXIS", "P_CANCEL", "P_DIAG"}
-computed_zero = {name for name, prop in properties.items() if prop["defect"] < TOL}
-check("zero-defect protocols equal the specified translation-clause set", computed_zero == expected_zero, f"computed={sorted(computed_zero)}")
-positive_rejectors = all(properties[name]["defect"] > TOL for name in ("P_MIX4", "P_STAIR", "P_PAIRFLAT"))
-check("P_MIX4, P_STAIR, and P_PAIRFLAT have positive site-modulus translation defects", positive_rejectors)
+computed_zero = {
+    name for name, prop in properties.items()
+    if prop["factor_modulus_defect"] < TOL
+}
+check(
+    "zero-defect protocols equal the specified necessary factor-modulus set",
+    computed_zero == expected_zero,
+    f"computed={sorted(computed_zero)}",
+)
+positive_rejectors = all(
+    properties[name]["factor_modulus_defect"] > TOL
+    for name in ("P_MIX4", "P_STAIR", "P_PAIRFLAT")
+)
+check(
+    "P_MIX4, P_STAIR, and P_PAIRFLAT have positive constituent-factor modulus defects",
+    positive_rejectors,
+)
+
+# A local U(1) frame is diagonal, so it commutes with P_DIAG.  Its translated
+# alternating diagonal phases therefore cannot be repaired by local-frame
+# conjugation even though their entrywise moduli are homogeneous.
+diag_site = site_protocol("P_DIAG")
+diag_translation_operator_error = max(
+    np.max(np.abs(T @ diag_site @ T.conj().T - diag_site))
+    for T in translations
+)
+check(
+    "P_DIAG explicitly shows that zero modulus defect is not sufficient for full local-frame covariance",
+    properties["P_DIAG"]["factor_modulus_defect"] < TOL
+    and diag_translation_operator_error > 1.0e-3,
+    f"operator error={diag_translation_operator_error:.6g}; diagonal local frames commute with P_DIAG",
+)
 
 
 # ---------------------------------------------------------------------------
-heading("(S4) CONDITIONING NONVACUITY VECTORS")
+heading("(S4) CONSTITUENT-FACTOR SUPPORT VECTORS")
 expected_vectors = {
     "P_SYM": (1, 1, 1),
     "P_SYM_OCT": (1, 1, 1),
@@ -436,18 +464,39 @@ expected_vectors = {
     "P_CANCEL": (1, 1, 1),
     "P_DIAG": (0, 0, 0),
 }
-computed_vectors = {name: prop["nonvacuity"] for name, prop in properties.items()}
-check("all per-axis nonvacuity vectors match the site-level nearest-neighbor support probe", computed_vectors == expected_vectors)
-uniform_names = {name for name, prop in properties.items() if prop["axis_uniform"]}
+computed_vectors = {name: prop["factor_support"] for name, prop in properties.items()}
+check(
+    "all factor-support vectors match the site-level nearest-neighbor probe over constituent lists",
+    computed_vectors == expected_vectors,
+)
+composite_vectors = {
+    name: factor_support_vector([site_protocol(name)]) for name in protocols
+}
+check(
+    "P_CANCEL distinguishes constituent-factor support from composite-word support",
+    computed_vectors["P_CANCEL"] == (1, 1, 1)
+    and composite_vectors["P_CANCEL"] == (0, 0, 0),
+    f"factor={computed_vectors['P_CANCEL']}; composite={composite_vectors['P_CANCEL']}",
+)
+uniform_names = {name for name, prop in properties.items() if prop["support_uniform"]}
 expected_uniform = {"P_SYM", "P_SYM_OCT", "P_REORDER", "P_WEIGHT", "P_PAIRFLAT", "P_CANCEL", "P_DIAG"}
-check("axis-uniform protocols are exactly the all-axis and vacuous patterns", uniform_names == expected_uniform)
+check(
+    "support-uniform protocols are exactly the all-axis and vacuous binary patterns",
+    uniform_names == expected_uniform,
+)
 
 
 # ---------------------------------------------------------------------------
-heading("(S5) FLATNESS, DISPERSIVENESS, AND SLOPES")
+heading("(S5) COMPOSITE-WORD FLATNESS, DISPERSIVENESS, AND SLOPES")
 expected_dispersive = {"P_SYM", "P_SYM_OCT", "P_REORDER", "P_WEIGHT", "P_AXIS", "P_MIX4", "P_STAIR"}
-computed_dispersive = {name for name, prop in properties.items() if prop["dispersive"]}
-check("dispersive protocols match the momentum-dependent characteristic-polynomial probe", computed_dispersive == expected_dispersive, f"computed={sorted(computed_dispersive)}")
+computed_dispersive = {
+    name for name, prop in properties.items() if prop["word_dispersive"]
+}
+check(
+    "composite-word dispersive protocols match the momentum-dependent characteristic-polynomial probe",
+    computed_dispersive == expected_dispersive,
+    f"computed={sorted(computed_dispersive)}",
+)
 
 square_identity = all(
     np.max(np.abs(S_axis(k, axis, True) @ S_axis(k, axis, True) - np.exp(-1j * k[axis]) * eye8)) < TOL
@@ -574,26 +623,47 @@ check("decorated per-axis factors satisfy the P12 plus diagonal-gauge projective
 
 
 # ---------------------------------------------------------------------------
-heading("(S7) SELECTION GATES G1-G5")
+heading("(S7) DESCRIPTIVE PREDICATE FILTERS AND STRUCTURE TESTS")
 
 
-def run_gates(prop_map):
-    g1 = {name for name, prop in prop_map.items() if prop["defect"] < TOL}
-    g2 = {
-        name for name in g1
-        if prop_map[name]["axis_uniform"] and any(prop_map[name]["nonvacuity"])
+def run_filters(prop_map):
+    modulus_survivors = {
+        name for name, prop in prop_map.items()
+        if prop["factor_modulus_defect"] < TOL
     }
-    g3 = {name for name in g2 if prop_map[name]["dispersive"]}
-    return g1, g2, g3
+    support_survivors = {
+        name for name in modulus_survivors
+        if prop_map[name]["support_uniform"] and any(prop_map[name]["factor_support"])
+    }
+    dispersive_survivors = {
+        name for name in support_survivors if prop_map[name]["word_dispersive"]
+    }
+    return modulus_survivors, support_survivors, dispersive_survivors
 
 
-G1, G2, G3 = run_gates(properties)
-expected_G1 = {"P_SYM", "P_SYM_OCT", "P_REORDER", "P_WEIGHT", "P_AXIS", "P_CANCEL", "P_DIAG"}
-expected_G2 = {"P_SYM", "P_SYM_OCT", "P_REORDER", "P_WEIGHT", "P_CANCEL"}
-expected_G3 = {"P_SYM", "P_SYM_OCT", "P_REORDER", "P_WEIGHT"}
-check("G1 translation-clause survivors", G1 == expected_G1, f"computed={sorted(G1)}")
-check("G2 translation plus nonvacuous all-axes-uniform survivors", G2 == expected_G2, f"computed={sorted(G2)}")
-check("G3 adds the named dispersiveness conditional", G3 == expected_G3, f"computed={sorted(G3)}")
+MODULUS_SURVIVORS, SUPPORT_SURVIVORS, DISPERSIVE_SURVIVORS = run_filters(properties)
+EXPECTED_MODULUS_SURVIVORS = {
+    "P_SYM", "P_SYM_OCT", "P_REORDER", "P_WEIGHT", "P_AXIS", "P_CANCEL", "P_DIAG"
+}
+EXPECTED_SUPPORT_SURVIVORS = {
+    "P_SYM", "P_SYM_OCT", "P_REORDER", "P_WEIGHT", "P_CANCEL"
+}
+EXPECTED_DISPERSIVE_SURVIVORS = {"P_SYM", "P_SYM_OCT", "P_REORDER", "P_WEIGHT"}
+check(
+    "factor-modulus-homogeneity filter survivors",
+    MODULUS_SURVIVORS == EXPECTED_MODULUS_SURVIVORS,
+    f"computed={sorted(MODULUS_SURVIVORS)}",
+)
+check(
+    "nonvacuous all-axis factor-support filter survivors",
+    SUPPORT_SURVIVORS == EXPECTED_SUPPORT_SURVIVORS,
+    f"computed={sorted(SUPPORT_SURVIVORS)}",
+)
+check(
+    "composite-word dispersiveness filter survivors",
+    DISPERSIVE_SURVIVORS == EXPECTED_DISPERSIVE_SURVIVORS,
+    f"computed={sorted(DISPERSIVE_SURVIVORS)}",
+)
 
 bare_commuting = all(
     np.max(np.abs(S_axis(k, i, False) @ S_axis(k, j, False) - S_axis(k, j, False) @ S_axis(k, i, False))) < TOL
@@ -614,7 +684,10 @@ weight_identity = all(
     )) < TOL
     for k in sample_k
 )
-check("G4 ingredients: decorated anticommutation, central reorder sign, and S1^2 weight identity", decorated_anticommuting and reorder_identity and weight_identity)
+check(
+    "survivor-structure ingredients: decorated anticommutation, central reorder sign, and S1^2 weight identity",
+    decorated_anticommuting and reorder_identity and weight_identity,
+)
 
 
 def scalar_multiple(A, B):
@@ -627,10 +700,13 @@ weight_central_times_symmetric = all(
     scalar_multiple(bloch_protocol("P_WEIGHT", k), bloch_protocol("P_SYM", k))
     for k in sample_k
 )
-g4_claim = decorated_anticommuting and reorder_identity and weight_identity and weight_central_times_symmetric
+survivor_equivalence_claim = (
+    decorated_anticommuting and reorder_identity
+    and weight_identity and weight_central_times_symmetric
+)
 check(
-    "G4 divergence is detected: the specified P_WEIGHT is not the symmetric three-axis cycle times a central scalar",
-    (not g4_claim) and (not weight_central_times_symmetric),
+    "survivor-structure divergence: P_WEIGHT is not the symmetric three-axis cycle times a central scalar",
+    (not survivor_equivalence_claim) and (not weight_central_times_symmetric),
 )
 
 all_survivor_word_slopes_one = (
@@ -640,64 +716,84 @@ all_survivor_word_slopes_one = (
 )
 factor_shift_slopes_one = square_identity and reverse_square_identity
 check(
-    "G5 divergence is detected: factor slopes are one, but the P_WEIGHT composite has slope magnitudes (2,1,1)",
+    "composite-slope divergence: factor slopes are one, but P_WEIGHT has slope magnitudes (2,1,1)",
     factor_shift_slopes_one and (not all_survivor_word_slopes_one) and weight_word_slopes == (2, 1, 1),
 )
 
 
 # ---------------------------------------------------------------------------
-heading("(S8) REFUTATION AND REJECTOR LEGS L1-L6")
+heading("(S8) PREDICATE-REMOVAL AND REJECTOR CHECKS")
 
-# L1 distinguishes the variation-only filter from a literal G1-only
-# ablation, which retains the G2 axis-uniformity test.
-variation_only = {
+# Distinguish a support-and-dispersion-only filter from removing only
+# factor-modulus homogeneity while retaining the all-axis support test.
+support_and_dispersion_only = {
     name for name, prop in properties.items()
-    if any(prop["nonvacuity"]) and prop["dispersive"]
+    if any(prop["factor_support"]) and prop["word_dispersive"]
 }
-literal_drop_translation = {
+drop_only_factor_modulus = {
     name for name, prop in properties.items()
-    if prop["axis_uniform"] and any(prop["nonvacuity"]) and prop["dispersive"]
+    if prop["support_uniform"] and any(prop["factor_support"])
+    and prop["word_dispersive"]
 }
-l1_variation_only = {"P_MIX4", "P_STAIR"} <= variation_only
-l1_literal = {"P_MIX4", "P_STAIR"} <= literal_drop_translation
-check("L1 variation-only filter admits P_MIX4 and P_STAIR with nonunit computed slopes", l1_variation_only and mix_power_ok and stair_power_ok)
-check("L1 divergence is detected: dropping only G1 while retaining axis-uniformity does not admit P_MIX4 or P_STAIR", (not l1_literal) and literal_drop_translation == expected_G3)
+mixed_words_pass_weak_filter = {"P_MIX4", "P_STAIR"} <= support_and_dispersion_only
+mixed_words_pass_literal_removal = {"P_MIX4", "P_STAIR"} <= drop_only_factor_modulus
+check(
+    "support-and-dispersion-only filter admits P_MIX4 and P_STAIR with nonunit computed slopes",
+    mixed_words_pass_weak_filter and mix_power_ok and stair_power_ok,
+)
+check(
+    "removing only factor-modulus homogeneity retains the all-axis support rejection of P_MIX4 and P_STAIR",
+    (not mixed_words_pass_literal_removal)
+    and drop_only_factor_modulus == EXPECTED_DISPERSIVE_SURVIVORS,
+)
 
 drop_axis_uniformity = {
-    name for name in G1
-    if any(properties[name]["nonvacuity"]) and properties[name]["dispersive"]
+    name for name in MODULUS_SURVIVORS
+    if any(properties[name]["factor_support"])
+    and properties[name]["word_dispersive"]
 }
-check("L2 dropping axis-uniformity admits P_AXIS", "P_AXIS" in drop_axis_uniformity)
+check("removing all-axis support uniformity admits P_AXIS", "P_AXIS" in drop_axis_uniformity)
 
-drop_dispersiveness = G2
-cancel_flat = not properties["P_CANCEL"]["dispersive"]
-check("L3 dropping dispersiveness admits the flat P_CANCEL word", "P_CANCEL" in drop_dispersiveness and cancel_flat)
-
-l4_properties = (
-    pair_p12_covariant
-    and properties["P_PAIRFLAT"]["nonvacuity"] == (1, 1, 1)
-    and properties["P_PAIRFLAT"]["axis_uniform"]
-    and not properties["P_PAIRFLAT"]["dispersive"]
-    and properties["P_PAIRFLAT"]["defect"] > TOL
+drop_dispersiveness = SUPPORT_SURVIVORS
+cancel_flat = not properties["P_CANCEL"]["word_dispersive"]
+check(
+    "removing composite-word dispersiveness admits flat identity word P_CANCEL",
+    "P_CANCEL" in drop_dispersiveness and cancel_flat,
 )
-check("L4 P_PAIRFLAT is covariant, all-axes varying, flat, and translation-defective", l4_properties)
+
+pairflat_rejector_properties = (
+    pair_p12_covariant
+    and properties["P_PAIRFLAT"]["factor_support"] == (1, 1, 1)
+    and properties["P_PAIRFLAT"]["support_uniform"]
+    and not properties["P_PAIRFLAT"]["word_dispersive"]
+    and properties["P_PAIRFLAT"]["factor_modulus_defect"] > TOL
+)
+check(
+    "P_PAIRFLAT is P12-axis-permutation covariant, all-axis factor-supported, flat, and factor-modulus-defective",
+    pairflat_rejector_properties,
+)
 
 bare_site_factors = [site_shift(a, +1, False) for a in range(3)]
 bare_defect = max(factor_translation_defect(F) for F in bare_site_factors)
-bare_vector = conditioning_vector_from_factors(bare_site_factors)
+bare_vector = factor_support_vector(bare_site_factors)
 bare_dispersion = dispersion_measure_from_function(
     lambda k: compose([S_axis(k, a, False) for a in range(3)], 8)
 )
 bare_protocol_passes = bare_defect < TOL and bare_vector == (1, 1, 1) and bare_dispersion > 1.0e-7
-check("L5 bare cycle passes the protocol-level filters while bare factors commute and decorated factors anticommute", bare_protocol_passes and bare_commuting and decorated_anticommuting)
+check(
+    "bare cycle passes the weak protocol filters while bare factors commute and decorated factors anticommute",
+    bare_protocol_passes and bare_commuting and decorated_anticommuting,
+)
 
 corrupted = {name: dict(prop) for name, prop in properties.items()}
 corrupted["P_SYM"] = dict(properties["P_MIX4"])
-corrupt_G1, corrupt_G2, corrupt_G3 = run_gates(corrupted)
+corrupt_modulus, corrupt_support, corrupt_dispersive = run_filters(corrupted)
 check(
-    "L6 replacing P_SYM by P_MIX4 changes the G1-G3 survivor stack",
-    (corrupt_G1, corrupt_G2, corrupt_G3) != (G1, G2, G3),
-    f"honest G3={sorted(G3)}; corrupted G3={sorted(corrupt_G3)}",
+    "replacing P_SYM by P_MIX4 changes the three-filter survivor stack",
+    (corrupt_modulus, corrupt_support, corrupt_dispersive)
+    != (MODULUS_SURVIVORS, SUPPORT_SURVIVORS, DISPERSIVE_SURVIVORS),
+    f"honest final={sorted(DISPERSIVE_SURVIVORS)}; "
+    f"corrupted final={sorted(corrupt_dispersive)}",
 )
 
 

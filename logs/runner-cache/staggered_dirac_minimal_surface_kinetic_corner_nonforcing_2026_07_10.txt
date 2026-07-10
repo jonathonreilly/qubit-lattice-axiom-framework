@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_minimal_surface_kinetic_corner_nonforcing_2026_07_10.py
+runner_sha256: cce48285d74f2bbf0dc3da0790eedf2d5c69f0d0e51a2c0c29a3fb862948507d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+==============================================================================
+Minimal-surface staggered kinetic/corner non-forcing certificate
+==============================================================================
+
+--- [S] current-A_min source guards
+[PASS] (S01) Qubit supplies one-site M_2(C)
+[PASS] (S02) Lattice supplies the cubic lattice Z^3
+[PASS] (S03) Admissibility does not choose a Hamiltonian or transfer operator
+[PASS] (S04) the staggered-Dirac/finite-Grassmann realization is outside axiom content
+[PASS] (S05) A_min includes one fixed nearest-neighbor Admissibility rule
+[PASS] (S06) A_min explicitly says records form
+
+--- [R] explicit shared Admissibility/Record reduct
+[PASS] (R01) fixed rule varies with neighbor conditions and is neighbor-order blind
+[PASS] (R02) availability support is frame covariant in nondegenerate and scalar-tie cases
+[PASS] (R03) scalar neighbor sum returns the full possibility space, not a preferred projector
+[PASS] (R04) nonempty history realizes admissible formation, one record per site, and permanence  [record counts = [0, 1, 2, 3]]
+[PASS] (R05) record readout is content-determined, empty-normalized, and additive on disjoint sites
+
+--- [M] non-staggered local qubit-exchange completion
+[PASS] (M01) 2^3 cube edge set is translation- and cubic-permutation invariant  [vertices = 8; edges = 12]
+[PASS] (M02) sum of edge (I-SWAP) interactions is nonzero, Hermitian, local, and number conserving  [matrix = 256x256]
+[PASS] (M03) exchange law is invariant under a common one-site frame change
+[PASS] (M04) one-excitation restriction is exactly the cubic graph Laplacian
+
+--- [K] kinetic/corner discriminators
+[PASS] (K01) periodic graph Laplacian is Hermitian, nonzero, and nearest-neighbor local
+[PASS] (K02) graph Laplacian is exactly translation invariant
+[PASS] (K03) graph Laplacian is invariant under C3[111] and C4z proper-cubic generators
+[PASS] (K04) same-lattice completion has one zero, not eight BZ-corner zeros  [kernel = 1; corners = [0.0, 4.0, 4.0, 8.0, 4.0, 8.0, 8.0, 12.0]]
+[PASS] (K05) infinite-Z^3 symbol 2 sum(1-cos k_mu) has only the origin zero on a coprime grid and gives 4h at corners
+[PASS] (K06) uniform plus and Kawamoto-Smit systems have flux +1 and -1
+[PASS] (K07) different plaquette flux proves the two link systems are not site-gauge equivalent
+[PASS] (K08) periodic Kawamoto-Smit D is real antisymmetric
+[PASS] (K09) PBC Kawamoto-Smit comparator has exactly eight corner null vectors  [kernel = 8]
+[PASS] (K10) the same local law with (-,-,-) wrap holonomy has no exact finite-volume zero  [kernel = 0; min singular value = 1.2247448714]
+
+--- [C] no-go assembly
+[PASS] (C01) explicit current-A_min reduct admits a nonzero local cubic kinetic completion with one, not eight, zero  [basis-independent exchange interaction; graph-Laplacian one-particle generator]
+[PASS] (C02) flux and wrap-holonomy checks sharpen the independent choices after a kinetic surface is supplied
+
+==============================================================================
+TOTAL: PASS=27 FAIL=0
+VERDICT: exact kinetic/corner non-forcing countermodel VERIFIED.
+         Current A_min admits a nonzero, local, translation/proper-
+         cubic-invariant qubit-exchange interaction whose infinite-Z^3
+         one-particle Bloch symbol is the graph-Laplacian symbol,
+         not staggered Dirac, and its zero set is {k=0}.
+         Flux class and finite wrap holonomy remain additional choices.
+
+----- stderr -----
+

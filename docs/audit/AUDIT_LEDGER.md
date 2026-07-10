@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 28 |
-| unaudited | 1736 |
+| unaudited | 1735 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -53,6 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_mirror_mutual_information_chokepoint_note` | 1 |
 | `decoration_under_moving_source_retarded_portability_note` | 1 |
 | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | 1 |
+| `decoration_under_observable_principle_from_axiom_note` | 1 |
 | `decoration_under_observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | 1 |
 | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_plaquette_self_consistency_note` | 1 |
@@ -71,16 +72,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1363 |
 | `audited_conditional` | 122 |
-| `audited_decoration` | 64 |
+| `audited_decoration` | 65 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 32 |
-| `unaudited` | 2081 |
+| `unaudited` | 2080 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2031 |
-| `decoration` | 66 |
+| `bounded_theorem` | 2030 |
+| `decoration` | 67 |
 | `meta` | 352 |
 | `no_go` | 481 |
 | `open_gate` | 183 |
@@ -1677,6 +1678,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `momentum_charge_commute_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.6 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `observable_principle_p1_exact_additivity_zero_offset_repair_note_2026-06-13` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | cross_family | codex-gpt-5.6 | A | `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` |
+| `observable_principle_positive_source_cone_p2_elimination_narrow_theorem_note_2026-06-06` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_from_axiom_note` | cross_family | codex-gpt-5.6 | A | `observable_principle_from_axiom_note` |
 | `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
 | `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
@@ -15172,6 +15174,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The finite Berezin Gaussian equals det(M), the supplied positive-mass staggered determinants are strictly positive, and permutation-unitary conjugation preserves determinant, spectrum, and Tr(e^{-βH}).  _(class `A`)_
 - **chain closes:** True — The Berezin and staggered-positivity components follow from independent retained-grade authorities, while the relabeling component is proved inline by elementary similarity invariance. The explicitly excluded FS, D=M_KS physical identification, determinant-to-trace routing, and AC_phi_lambda-as-relabeling premises are not needed for this narrowed claim.
 - **rationale:** The direct claim is a genuine class-A finite algebraic closure over retained, retained_bounded, and retained_no_go inputs, supplemented by a self-contained conjugation-invariance proof. The runner performs substantive symbolic and finite-matrix checks and reports PASS=35, FAIL=0; it contains no external comparator, fitted value, tuned-scale match, or hard-coded contested conclusion. The stronger historical physical-realization interpretation remains explicitly outside the audited boundary.
+- **auditor confidence:** high
+
+### `observable_principle_positive_source_cone_p2_elimination_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `decoration`
+- **claim_scope:** For a finite real antisymmetric D, det(D+J) is positive for positive diagonal J and throughout a Neumann-bounded real-diagonal neighborhood of an invertible D; consequently the logarithmic phase-sensitive and phase-blind candidates coincide on that branch, without establishing global P2.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_observable_principle_from_axiom_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00082-observable_principle_positiv`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Writing S+D=S^(1/2)(I+S^(-1/2)DS^(-1/2))S^(1/2), the middle real-skew factor has determinant product_k(1+lambda_k^2)>0, so det(S+D)>0.  _(class `A`)_
+- **chain closes:** True — Positive-cone positivity follows exactly from skew-spectrum pairing, while local-patch positivity follows from the Neumann invertibility bound and determinant-sign continuity. These results suffice for the narrowly scoped P2 elimination.
+- **rationale:** The proof is a correct finite-dimensional algebraic consequence of the retained-bounded parent’s real-skew source-block assumptions and standard determinant facts. The runner genuinely evaluates the stated identities and counterexample, although its random trials are corroborative rather than the proof. Because every load-bearing step is class A, there are no external-comparator checks, and the chain reduces to one upstream parent plus standard mathematics, the campaign’s decoration rule applies.
+- **decoration parent:** `observable_principle_from_axiom_note`
 - **auditor confidence:** high
 
 ### `observable_principle_product_factoring_does_not_force_product_character_no_go_note_2026-06-02`

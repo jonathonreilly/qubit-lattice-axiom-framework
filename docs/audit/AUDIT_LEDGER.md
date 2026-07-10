@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 926 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1756 |
+| unaudited | 1755 |
 | audit_in_progress | 8 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 32 |
 | ~~audited_conditional~~ | 136 |
-| ~~audited_failed~~ | 15 |
+| ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -75,10 +75,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1340 |
 | `audited_conditional` | 136 |
 | `audited_decoration` | 69 |
-| `audited_failed` | 37 |
+| `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 32 |
-| `unaudited` | 2103 |
+| `unaudited` | 2102 |
 
 | claim_type | count |
 |---|---:|
@@ -1709,6 +1709,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
+| `flavor_detr_default_full_exercise_note_2026-05-30` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_link_per_record_step_rate_dial_unit_variance_point_theorem_note_2026-07-02` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -7284,6 +7285,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The native two-qubit tensor product leaves the bare qubit ladder frame and Jordan-Wigner CAR frame as the same ungraded M4(C) algebra with different tensor-support bookkeeping, while the graph Laplacian gives an A2-local symmetric non-chiral alternative to the supplied first-order parity-reversing operator.  _(class `A`)_
 - **chain closes:** True — The restricted conclusion follows from explicit finite matrix identities and support checks in the packet. The note excludes the downstream Dirac-Kahler, generation, Koide, spin-statistics, and flavor-sector bridge claims, so no missing bridge is load-bearing for the narrowed theorem.
 - **rationale:** The runner source actually constructs the Pauli matrices, two-qubit tensor operators, Jordan-Wigner dressed ladders, finite Z2^3 hopping matrix, epsilon parity, and graph Laplacian rather than merely printing constants. An independent formula pass confirms the relevant signs and identities: sigma_+^2=0, bare cross-site ladders commute, the JW pair anticommutes, both generated algebras span dimension 16, c2=Z tensor sigma_- is not of form I tensor B, the Pauli anticommutator cancels cross terms in the supplied symbol square, nearest-neighbor hopping flips epsilon, and L=deg I-hop is symmetric/A2-local while neither commuting nor anticommuting with epsilon. There are no cited non-retained authorities or external comparator imports in the restricted packet. The audited result is bounded finite-algebra support only, not any excluded downstream physics bridge.
+- **auditor confidence:** high
+
+### `flavor_detr_default_full_exercise_note_2026-05-30`
+
+- **Note:** [`FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md`](../../docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-algebra claim that the displayed C3 and (Z2)^3 tests exclude automatic det_C/equal-block inheritance while leaving the Q=2/3 and Q=1 reads unranked.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00034-flavor_detr_default_full_exe`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The tested structures do not inherit det_C or force equal-block counting, so r=1/2 (Q=2/3) remains a counting-measure input unless another selector supplies it.  _(class `A`)_
+- **chain closes:** False — X1 establishes only that iI3 is orthogonal to G, while X2 checks rephasing of C itself; neither proves that the native C3 doublet lacks complex structure. Indeed the runner's G=(C-C.T)/sqrt(3) is a polynomial in C and satisfies G^2=-I on the doublet, so the asserted absence of a native complex-line carrier is not established.
+- **rationale:** Issue: the runner converts orthogonality of iI3 to G and quantization of scalar rephasings of C into a broader claim that the tested algebra supplies no native complex-line carrier. Why this blocks: G itself is a native C3-equivariant complex structure on the real doublet, and the runner never proves that its presence cannot support det_C or exhausts the relevant inheritance maps. Repair target: define det_C inheritance precisely and prove the required non-selection statement while accounting for G and exp(theta G). Claim boundary until fixed: the explicit matrix identities, real-character check, chirality distinction, and endpoint arithmetic remain supported, but the carrier-exclusion inference does not.
+- **open / conditional deps cited:**
+  - `KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`
 - **auditor confidence:** high
 
 ### `flavor_doublet_metric_default_is_detr_2026-06-02`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 928 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1754 |
+| unaudited | 1753 |
 | audit_in_progress | 8 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 32 |
+| ~~audited_renaming~~ | 33 |
 | ~~audited_conditional~~ | 135 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -77,8 +77,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 69 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 32 |
-| `unaudited` | 2101 |
+| `audited_renaming` | 33 |
+| `unaudited` | 2100 |
 
 | claim_type | count |
 |---|---:|
@@ -1764,6 +1764,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `hierarchy_formula_ew_vev_observable_identification_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
@@ -12106,6 +12107,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Every record-readout is a function on K/CPT orbits, so the computed orbit partition {e0}, {e1,e2} entails conjugation-invariance and excludes phase-resolved doublet readouts.  _(class `B`)_
 - **chain closes:** False — The current accepted Record authority supplies fixed records and additive scalar readout, but expressly places K/CPT orbit structure and central-sector decomposition outside the axiom. Consequently, the algebraic orbit computation alone cannot entail that physical record readouts factor through those orbits.
 - **rationale:** Issue: the runner hard-codes the superseded premise that a Record outcome is a K/CPT orbit, including a check(True), rather than deriving it from the supplied current authority. Why this blocks: MINIMAL_AXIOMS_2026-06-29 explicitly identifies K/CPT orbit structure as downstream readout-context content, so the asserted phase exclusion and gate unification do not follow from the restricted inputs. Repair target: supply a retained theorem constructing the central-sector readout context, fixed conjugation, and orbit-factorization rule. Claim boundary until fixed: the ±J classification, K pairing, and conditional consequences of an assumed orbit-valued readout remain supportable.
+- **auditor confidence:** high
+
+### `koide_readout_channel_map_note_2026-05-31`
+
+- **Note:** [`KOIDE_READOUT_CHANNEL_MAP_NOTE_2026-05-31.md`](../../docs/KOIDE_READOUT_CHANNEL_MAP_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C3 coefficient extraction, Q at the chosen values r=0 and r=1/2, phase invariance of Q, and the proposed bookkeeping association of L_3(1,2)=2/9 with the circulant family.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00038-koide_readout_channel_map_no`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The note labels the singlet scale, doublet magnitude, spectral-asymmetry weight, and phase as finite readouts of the same circulant operator.  _(class `F`)_
+- **chain closes:** False — The elementary circulant and cyclotomic identities close individually. The packet supplies no construction deriving L_3(1,2), or the asserted r=1 asymmetry channel, as a projection of H; the runner computes L_3 solely from the separately specified tuple (1,2;3).
+- **rationale:** The runner genuinely computes the seven reported algebraic checks. Its final same-operator assertion merely conjoins results obtained from different parameter choices, while the spectral-asymmetry calculation never consumes H, its eigenvalues, or a derived operator/readout map. Consequently the channel map is a bookkeeping labeling of independently established quantities, not a theorem connecting all of them as readouts of one fixed operator.
+- **open / conditional deps cited:**
+  - `KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`
 - **auditor confidence:** high
 
 ### `koide_readout_lane_demarcation_note_2026-05-30`

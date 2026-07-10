@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 927 |
+| **retained_bounded** | 928 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1755 |
+| unaudited | 1754 |
 | audit_in_progress | 8 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 12 |
-| `audited_clean` | 1341 |
+| `audited_clean` | 1342 |
 | `audited_conditional` | 135 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 32 |
-| `unaudited` | 2102 |
+| `unaudited` | 2101 |
 
 | claim_type | count |
 |---|---:|
@@ -776,6 +776,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_import_two_bit_decomposition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11602,6 +11603,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
   - `scripts/frontier_higgs_dressed_propagator_v1.py`
   - `KOIDE_CLOSURE_ATLAS_ISSUES_FLAGGED.md`
   - `PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md`
+- **auditor confidence:** high
+
+### `koide_import_two_bit_decomposition_note_2026-05-30`
+
+- **Note:** [`KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md`](../../docs/KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the finite C3 carrier, Jcs defines a Kähler structure on the singlet-orthogonal doublet, its sign is algebraically independent of the continuous circulant modulus r, and symmetric Gamma_chi-anticommutants have spectrum {-s,0,+s}; the stated Q values are formal circulant ratios, not physical mass derivations.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00036-koide_import_two_bit_decompo`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Every Hermitian circulant operator H=aI+bC+conj(b)C^2 commutes with Jcs for every modulus r, so choosing the orientation of Jcs does not determine r.  _(class `A`)_
+- **chain closes:** True — The result follows from exact polynomial identities in C, the singlet/doublet decomposition, and the retained anticommutant characterization. It localizes the unresolved selector without claiming to derive either a physical measure choice or Q=2/3.
+- **rationale:** The complex-structure, projector, commutation, and anticommutant-spectrum statements close as finite-dimensional algebra over retained-grade inputs. Physical Kähler-Dirac realization and spectrum-to-mass identifications remain outside the audited scope. Runner check F6.2 is coded with an unconditional True and is therefore not independent evidence, but its two arithmetic cases follow directly from E_plus=3a^2 and E_perp=6|b|^2 by block-total versus per-dimension balancing.
 - **auditor confidence:** high
 
 ### `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`

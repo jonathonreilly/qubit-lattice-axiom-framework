@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1798 |
+| unaudited | 1797 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 89 |
+| ~~audited_conditional~~ | 90 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1348 |
-| `audited_conditional` | 89 |
+| `audited_conditional` | 90 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2143 |
+| `unaudited` | 2142 |
 
 | claim_type | count |
 |---|---:|
@@ -1577,6 +1577,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `theta_cartan_valued_cross_plane_pairing_diagonal_weyl_frame_theorems_and_triality_fractional_values_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_gauge_winding_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -20106,6 +20107,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The anticommutation relation implies both the paired-block spectral cancellation and the conjugation identity e^{i alpha eps}(D+mI)e^{i alpha eps}=D+m e^{2 i alpha eps}, yielding n=2 tr(eps).  _(class `A`)_
 - **chain closes:** True — The conclusions follow directly from finite-dimensional block decomposition, determinant multiplicativity, and the retained balanced-surface and supplier-boundary authorities. The physical gauge-theta interpretation is expressly outside the audited scope.
 - **rationale:** The load-bearing results are genuine algebraic identities under explicitly stated finite-dimensional assumptions, not definitions, imported numerical values, or tuned matches. All cited non-meta authorities are retained-grade, and the accepted axiom memo creates no downgrade. The supplied runner constructs the operators and independently checks the identities and premise-breaking controls rather than merely printing expected constants.
+- **auditor confidence:** high
+
+### `theta_cartan_valued_cross_plane_pairing_diagonal_weyl_frame_theorems_and_triality_fractional_values_bounded_theorem_note_2026-07-02`
+
+- **Note:** [`THETA_CARTAN_VALUED_CROSS_PLANE_PAIRING_DIAGONAL_WEYL_FRAME_THEOREMS_AND_TRIALITY_FRACTIONAL_VALUES_BOUNDED_THEOREM_NOTE_2026-07-02.md`](../../docs/THETA_CARTAN_VALUED_CROSS_PLANE_PAIRING_DIAGONAL_WEYL_FRAME_THEOREMS_AND_TRIALITY_FRACTIONAL_VALUES_BOUNDED_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The declared SU(3) Cartan pairing on T^4_2, including its cross-plane and triality arithmetic, diagonal-versus-independent Weyl behavior, claimed glued-2D orbit witness, and resulting readout boundary.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00015-theta_cartan_valued_cross_pl`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because Q_G is invariant under the diagonal Weyl action but changes under independent per-plane Weyl actions, separate per-plane orbit data underdetermine Q_G and a relative-frame datum is required.  _(class `A`)_
+- **chain closes:** False — The exact Gram, cochain, fractional-value, and Weyl-frame calculations support the central algebraic results. However, the claimed 2D gluing witness is not derived: runner Section E merely reuses the weight-orbit predicate dom_ok without constructing the glued dual or proving that its sector label is a dominant weight.
+- **rationale:** The runner performs genuine exact class-(A) calculations supporting the pairing, triality table, odd integer witness, and diagonal/independent Weyl conclusions. Its Section E check nevertheless embeds the contested glued-label identification in the check description and tests only dom_ok, so the advertised fourth finite result lacks its carrier bridge. The 4D correlation is appropriately left open, but the asserted 2D witness prevents the full note from closing as written.
 - **auditor confidence:** high
 
 ### `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09`

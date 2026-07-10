@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 947 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 29 |
-| unaudited | 1720 |
+| unaudited | 1719 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 36 |
-| ~~audited_conditional~~ | 141 |
+| ~~audited_conditional~~ | 142 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -72,12 +72,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1370 |
-| `audited_conditional` | 141 |
+| `audited_conditional` | 142 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 36 |
-| `unaudited` | 2067 |
+| `unaudited` | 2066 |
 
 | claim_type | count |
 |---|---:|
@@ -1572,6 +1572,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | B | - |
 | `hw_complement_equivalence_extends_to_free_corner_transfer_dynamics_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `informative_fraction_covariant_rule_quantization_occupancy_residual_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11133,6 +11134,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The all-ones assignment p1 = p2 = p3 = p4 = r1 = r2 = q1 = q2 = pr = pq = rq = 1 is feasible for the encoded PSD/Hausdorff/Gram/area-law SDP surface, so together with p1 <= 1 it proves max p1 = 1.  _(class `A`)_
 - **chain closes:** True — The certificate is an algebraic feasibility check: the Hankel and Gram matrices are rank-one PSD, the Hausdorff upper matrix is zero PSD, the lower matrix is PSD, and all stated inequalities are saturated or satisfied. Since the same surface also imposes p1 <= 1, no nontrivial upper bound p1 < 1 follows from these constraints.
 - **rationale:** The load-bearing claim is not the numerical bracket or the comparator values; it is the exact all-ones obstruction certificate. The runner source actually constructs the SDP and separately checks the solver-independent certificate, rather than merely printing PASS lines. The note correctly fences 0.4225, 0.5934, 0.59353, and literature brackets as comparison or admitted context, and it preserves the open gate by saying loop equations or another strict framework-native relation would change the surface.
+- **auditor confidence:** high
+
+### `informative_fraction_covariant_rule_quantization_occupancy_residual_theorem_note_2026-07-02`
+
+- **Note:** [`INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md`](../../docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the named six-binary-neighbor recorded-neighborhood model, the audit covered the proper-rotation orbit classification, uniform-occupancy k/64 attainable set, numerical Haar integral, off-lattice comparison, and exhibited iid-density roots.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00009-informative_fraction_covaria`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The unit-variance point is asserted to be p* = 4/(<s2_min>_Haar + 8/27) = 0.409730132, making 64p* = 26.222728 and therefore off the k/64 lattice.  _(class `C`)_
+- **chain closes:** False — The orbit classification, subset sums, occupancy polynomials, and Haar integral are computed directly. However, neither the note nor its cited authorities derives the load-bearing unit-variance relation p* = 4/(<s2_min>_Haar + 8/27); the runner hard-codes that conversion after computing the integral.
+- **rationale:** The runner performs substantive enumeration, integration, polynomial construction, and root finding rather than merely printing expected results. Its numerical p* calculation nevertheless assumes the unexplained constants and functional relation that identify the Haar moment with the unit-variance point. The cited rigidity authority supplies canonical normalization and a logarithm branch but not this variance-to-p relation, so the off-lattice and occupancy-residual conclusions remain conditional on a missing bridge.
 - **auditor confidence:** high
 
 ### `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20`

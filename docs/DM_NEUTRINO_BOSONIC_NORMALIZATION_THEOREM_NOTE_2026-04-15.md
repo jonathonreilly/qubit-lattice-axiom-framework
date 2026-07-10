@@ -202,23 +202,35 @@ It does not promote this note or change the audited claim scope, which
 remains conditional algebra on the `Y`/`Gamma_1` decomposition plus the
 imported observable-principle premise.
 
-One-hop authority cited:
+**Update 2026-07-09:** the inline status echo of the upstream row went
+stale against the live ledger and is replaced by a live-ledger pointer;
+the W-source application bridge note is added as the application-step
+authority for the family/normalization bridge gap named in this row's
+chain-closure explanation.
+
+Authorities cited:
 
 - [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
-  — currently `audited_conditional` (audit row:
-  `observable_principle_from_axiom_note`). This is the upstream
-  conditional authority for the load-bearing premise that physical
+  — the upstream authority for the load-bearing premise that physical
   local scalar observables are exact source derivatives of the unique
   additive CPT-even scalar generator `W[J] = log|det(D+J)| - log|det D|`,
   given premises P1 (scalar additivity), P2 (CPT-even phase blindness),
   P3 (continuity / minimal regularity), and P4 (normalization choice).
-  Because this upstream authority is `audited_conditional` rather than
-  `audited_clean`/retained, the bosonic normalization selection of
-  `Gamma_1` over the active chiral bridge `Y` lifts only to
-  `audited_conditional` under the standard cite-chain rule (the
-  effective status is capped at the upstream effective status). This
-  matches the live audit row's `audited_conditional` verdict and does
-  not require any audit JSON edit.
+  For its current standing see the live audit ledger row
+  `observable_principle_from_axiom_note`; this note does not restate
+  that status inline.
+
+- [`NEUTRINO_GAMMA1_WSOURCE_APPLICATION_BRIDGE_NOTE_2026-07-09.md`](NEUTRINO_GAMMA1_WSOURCE_APPLICATION_BRIDGE_NOTE_2026-07-09.md)
+  — the W-source application bridge: applies the observable-principle
+  functional to this note's declared `Y`/`Gamma_1` family at a declared
+  scalar comparator point `D = m I_16` and derives, as exact finite
+  theorems on `C^16`, the selection `W[jY] = 0`, the activation
+  `W[jGamma_1] = 8 log|1 - j^2/m^2|`, and the weak-coupling per-mode
+  normalization identity
+  `-m^2 W''(0)/16 = Tr(Gamma_1^dag Gamma_1)/16 = 1`. Its two named
+  premises — the family identification (readout-identification
+  admission class) and the comparator-point declaration — are stated
+  in that note.
 
 The runner-checked content of this note (Part 1 algebra: `Y` nilpotent,
 `Y + Y^dag = Gamma_1`, pseudoscalar orthogonal to scalar Higgs span;
@@ -239,10 +251,13 @@ premise is accepted, but the inadmissibility of the active-space ratio
 not follow from the runner alone — they require the upstream theorem
 that physical local scalar observables are exact `W[J]` source-response
 coefficients. The cite-chain repair above wires
-`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE` (`audited_conditional`) as that
-upstream authority. Effective status remains `audited_conditional`
-because the upstream is itself conditional on the four admitted
-premises P1-P4. The note's audit_status is unchanged by this addendum.
+`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE` as that upstream authority, and
+the W-source application bridge note linked above supplies the
+application step: the functional applied to this note's declared
+family, with the weak-coupling normalization derived as the per-mode
+quadratic W-response at the declared comparator point. Row status is
+owned by the independent audit lane on the live ledger. The note's
+audit_status is unchanged by this addendum.
 
 ## Scope of this rigorization
 

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 945 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 26 |
-| unaudited | 1755 |
+| unaudited | 1754 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 114 |
+| ~~audited_conditional~~ | 115 |
 | ~~audited_failed~~ | 10 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1358 |
-| `audited_conditional` | 114 |
+| `audited_conditional` | 115 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 32 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 29 |
-| `unaudited` | 2100 |
+| `unaudited` | 2099 |
 
 | claim_type | count |
 |---|---:|
@@ -1563,6 +1563,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
+| `graded_constraint_interface_consistency_bounded_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9766,6 +9767,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For T_3 = diag(+1/2,-1/2), Y_H = +1, and v_0 = (0,1)^T, the equation (a T_3 + b Y)v_0 = 0 has a one-dimensional solution space with b/a = +1/2.  _(class `A`)_
 - **chain closes:** True — The algebra closes on the stated bounded inputs: (a T_3 + bY)v_0 gives (-a/2 + b)v_0, so annihilation requires b = a/2 and leaves one overall normalization. The note does not claim to derive Y_H, the vev direction, the Higgs sector, or the matter hypercharge table.
 - **rationale:** The load-bearing step is a direct algebraic closure over explicitly supplied bounded inputs, not a renaming or numerical match. Independent recomputation confirms the nullspace dimension and coefficient sign/factor for the lower-component vev. Runner PART 9 genuinely computes the nullspace and downstream charge-table consequences rather than merely printing constants, though the downstream table also uses the separately supplied parent hypercharge assignments.
+- **auditor confidence:** high
+
+### `graded_constraint_interface_consistency_bounded_note_2026-07-04`
+
+- **Note:** [`GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md`](../../docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The literal v1 availability/menu defect and the N1-N3 interface consequences assuming the candidate, unregistered graded_constraint v2 premise.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00063-graded_constraint_interface_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Conditional on v2, formation statistics are obtained by restricting w to the available elements and renormalizing by their total, without changing either availability or the full-lattice weights.  _(class `A`)_
+- **chain closes:** False — The N1-N3 algebraic consequences follow once v2 is assumed, but the restricted packet neither derives nor registers v2. The runner instantiates record-dependent densities and availability tables as hard-coded inputs rather than deriving the v2 weight and conditioning structure from the accepted axioms.
+- **rationale:** The runner genuinely checks finite projection arithmetic, conditioning behavior, readout separation, and mutation rejectors, but only for a selected hard-coded model. Its passing checks do not establish the existence or framework authority of graded_constraint v2, which the note correctly labels candidate and unregistered. The v1 exhibit demonstrates the stated collision in the selected mixed-availability configuration, while the assertion that Admissibility variation alone guarantees such a mixed resolution should be re-checked separately.
 - **auditor confidence:** high
 
 ### `grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12`

@@ -31,10 +31,10 @@ instead of assigning ``g_wilson_sq = g_link_sq``. The checked content:
       at beta in {24, 3/2, 12} on identical link/plaquette data
       (mismatched-slot exhibit; pin equivalence gamma* = s iff
       beta = 2 N_c).
-  T6  exact rational composition under the declared surface definition
-      (SD): g_bare := s = 1 and beta * g_bare^2 = 2 N_c give beta = 6 at
-      N_c = 3, plus the exact mismatched family beta = 2 N_c / gamma^2.
-  T7  source-boundary guards on the bridge/parent/rigidity/Wilson notes.
+  T6  definition-level composition under the declared surface definition
+      (SD), printed as context only with no PASS/FAIL attached.
+  T7  source-boundary guards on the bridge/parent/rigidity/Wilson notes,
+      including the 2026-07-10 separation-surface pins.
 """
 
 from __future__ import annotations
@@ -433,12 +433,16 @@ def section_E(configs: list[FieldConfig], matched: dict[float, float]) -> None:
 
 
 # ---------------------------------------------------------------------------
-# Section F: exact rational composition under the declared (SD)
+# Section F: definition-level composition under (SD), context only
 # ---------------------------------------------------------------------------
 
 def section_F() -> None:
-    print("\nSECTION F: exact composition under the declared surface definition (SD)")
+    print("\nSECTION F: definition-level composition under (SD): context only")
     print("-" * 78)
+    print(
+        "definition-level composition under (SD): context only, no PASS/FAIL "
+        "attached (2026-07-10 separation)"
+    )
     n_c = Fraction(3)
     two_n_c = Fraction(2) * n_c
 
@@ -448,33 +452,33 @@ def section_F() -> None:
     s_slot = Fraction(1)
     g_bare_sq = s_slot * s_slot
     beta = two_n_c / g_bare_sq
-    check("under (SD): g_bare^2 = s^2 = 1", g_bare_sq == Fraction(1))
-    check("under (SD): beta = 2 N_c / g_bare^2 = 6", beta == Fraction(6), f"beta={beta}")
-    check("under (SD): beta * g_bare^2 = 2 N_c", beta * g_bare_sq == two_n_c)
+    print(f"  under (SD): g_bare^2 = s^2 = {g_bare_sq}")
+    print(f"  under (SD): beta = 2 N_c / g_bare^2 = {beta}")
+    print(f"  under (SD): beta * g_bare^2 = {beta * g_bare_sq} = 2 N_c")
 
     # Pin equivalence, exact: gamma*^2 = 2 N_c / beta equals s^2 iff beta = 6.
-    check(
-        "pin equivalence forward: beta = 6 gives gamma*^2 = 1 = s^2",
-        two_n_c / Fraction(6) == s_slot**2,
+    print(
+        "  pin equivalence context: beta = 6 gives "
+        f"gamma*^2 = {two_n_c / Fraction(6)} = s^2"
     )
-    check(
-        "pin equivalence backward: gamma* = s = 1 gives beta = 6",
-        two_n_c / (s_slot**2) == Fraction(6),
+    print(
+        "  pin equivalence context: gamma* = s = 1 gives "
+        f"beta = {two_n_c / (s_slot**2)}"
     )
 
     # Mismatched family: any other split scalar lands off beta = 6.
     for g2 in (Fraction(1, 2), Fraction(2), Fraction(9, 4)):
         b = two_n_c / g2
-        check(
-            f"mismatched split gamma^2={g2} gives beta={b} != 6 (family, not the pin)",
-            b != Fraction(6) and b * g2 == two_n_c,
-            f"beta={b}",
+        print(
+            f"  mismatched-family context: gamma^2={g2}, beta={b}, "
+            f"beta*gamma^2={b * g2}"
         )
     # Exact mismatched-slot exhibit at beta = 24.
     g2_24 = two_n_c / Fraction(24)
-    check(
-        "exhibit beta=24: gamma*^2 = 1/4 != s^2 while beta*gamma*^2 = 2 N_c holds",
-        g2_24 == Fraction(1, 4) and g2_24 != s_slot**2 and Fraction(24) * g2_24 == two_n_c,
+    print(
+        "  exhibit context at beta=24: "
+        f"gamma*^2={g2_24}, s^2={s_slot**2}, "
+        f"beta*gamma*^2={Fraction(24) * g2_24}"
     )
 
 
@@ -517,6 +521,22 @@ def section_G() -> None:
     require_contains("bridge", bridge_flat, "a dynamical fixed point")
     require_contains("bridge", bridge_flat, "an audit verdict or any effective-status promotion")
     require_contains("bridge", bridge_flat, "finite-link canonical Wilson surface")
+    require_contains(
+        "bridge",
+        bridge_flat,
+        "After the 2026-07-10 separation, this note's audited claim surface is exactly",
+    )
+    require_contains(
+        "bridge",
+        bridge_text,
+        "### Composition under (SD) — definition-level, excluded from claim surface",
+    )
+    require_contains(
+        "bridge",
+        bridge_flat,
+        "2026-07-10 downstream hygiene.** This note's citable surface is Theorems 1–3 and the mismatched-slot exhibit",
+    )
+    require_contains("bridge", bridge_text, "## Repair Note")
     require_absent("bridge", bridge_text, "effective_status:")
     require_absent("bridge", bridge_text, "audit_status:")
     require_absent(

@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 211 |
 | **retained_bounded** | 946 |
 | _retained_pending_chain_ | 9 |
-| open_gate | 26 |
-| unaudited | 1750 |
+| open_gate | 27 |
+| unaudited | 1749 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1359 |
+| `audited_clean` | 1360 |
 | `audited_conditional` | 116 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 30 |
-| `unaudited` | 2095 |
+| `unaudited` | 2094 |
 
 | claim_type | count |
 |---|---:|
@@ -781,6 +781,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
+| `koide_dkd_berry_spectator_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | C | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11706,6 +11707,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the current A_min C3-circulant surface, D² yields a sign-blind singular-value readout while M(b)⊗σ₊ has b-independent Fourier generation eigenvectors and therefore zero generation-bundle Berry curvature.  _(class `A`)_
 - **chain closes:** True — The determinant identity, block-square identity, and fixed Fourier eigenvectors follow directly from the displayed matrices, while the retained signed-versus-singular authority supplies the general readout distinction. These facts support the narrowly stated route-pruning conclusion without requiring the open physical branch-selection bridge.
 - **rationale:** The load-bearing result is a genuine algebraic closure over retained-grade inputs, not a definition, renaming, tuned match, or external comparison. The runner actually performs symbolic determinant, block-square, and Fourier-eigenvector computations; its sampled readout checks are supplemented by the retained authority's general algebraic theorem. The note explicitly leaves READOUT_TO_BRANCH_SELECTION_BRIDGE open and does not overextend its bounded conclusion into physical selection of r=1 or exclusion of r=1/2.
+- **auditor confidence:** high
+
+### `koide_dkd_berry_spectator_note_2026-05-31`
+
+- **Note:** [`KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md`](../../docs/KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** The corrected finite Lambda^1 embedding preserves lift(C)^3=lift(I), form parity is scalar on Lambda^1, and the sampled Wilson-loop calculation does not certify an identically zero Berry spectator claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00068-koide_dkd_berry_spectator_no`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The corrected Wilson-loop sweep is not identically zero across the tested kappa and band choices, so this branch does not certify a Kähler-Dirac zero-Berry spectator theorem.  _(class `C`)_
+- **chain closes:** True — The runner constructs the corrected Fock-space embedding and directly computes nonzero sampled Wilson phases rather than importing or printing them. This closes the stated open-gate repair while leaving any general Berry theorem unresolved.
+- **rationale:** The runner genuinely instantiates the eight-dimensional Jordan-Wigner algebra, constructs one-particle states from the unique vacuum, and evaluates the Wilson loops. Its completed results support the narrowly scoped conclusion that the corrected test does not certify the stale zero-Berry claim. The note appropriately avoids promoting the commuting-derivative diagnostic or sampled sweep into a general curvature theorem and explicitly preserves the missing band-isolation, coupling, observable, domain, and gauge data as open work.
 - **auditor confidence:** high
 
 ### `koide_dweh_cyclic_compression_note_2026-04-18`

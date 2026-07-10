@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 385,
+    "critical": 384,
     "high": 268,
     "leaf": 735,
     "medium": 497
@@ -709,34 +709,6 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py",
       "transitive_descendants": 284
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "cross_confirmation_disagreement",
-      "claim_id": "self_gravity_entropy_note_2026-04-11",
-      "claim_scope": "Bounded finite diagnostic for scripts/frontier_self_gravity_entropy.py: for the helper-defined MASS=0.30, MU2=0.22, DT=0.12, G_SELF=50.0, N_ITER=20 graph-family packet and listed cuts/ensembles, the single-particle binary occupancy entropy table is mixed and does not establish robust boundary-controlled or area-law-like scaling.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "disagreement",
-      "deps": [
-        "staggered_3d_self_gravity_sign_note_2026-04-11",
-        "self_gravity_backreaction_closure_note",
-        "poisson_self_gravity_mechanism_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/frontier_staggered_self_gravity.py"
-      ],
-      "load_bearing_score": 8.571,
-      "note_path": "docs/SELF_GRAVITY_ENTROPY_NOTE_2026-04-11.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_self_gravity_entropy.py",
-      "transitive_descendants": 268
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -56538,6 +56510,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 163,
-  "total_pending": 1885
+  "ready_count": 162,
+  "total_pending": 1884
 }

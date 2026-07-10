@@ -16404,6 +16404,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_harmonic_ladder_weight_law_2026_06_12.py"
     },
+    "heat_kernel_gauge_action_native_rp_plane_character_positivity_all_compact_groups_narrow_theorem_note_2026-07-09": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/audit_companion_heat_kernel_native_rp_plane_character_positivity_2026_07_09.py"
+    },
     "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08": {
       "assert_count": 1,
       "counts": {
@@ -44740,6 +44752,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/audit_companion_heat_kernel_native_rp_plane_character_positivity_2026_07_09.py": {
+      "assert_count": 2,
+      "claims": [
+        "heat_kernel_gauge_action_native_rp_plane_character_positivity_all_compact_groups_narrow_theorem_note_2026-07-09"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/audit_companion_hermitian_lift_theta_h_pk_bounded_exact_2026_05_17.py": {
@@ -93263,12 +93290,12 @@
     "dominant_class_distribution": {
       "A": 510,
       "B": 660,
-      "C": 1312,
+      "C": 1313,
       "D": 457,
       "none": 459
     },
-    "runners_classified": 3398,
-    "runners_with_C": 1794,
-    "runners_with_D": 1093
+    "runners_classified": 3399,
+    "runners_with_C": 1795,
+    "runners_with_D": 1094
   }
 }

@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_sd_loop_equation_beta_coupled_plaquette_bracket.py
+runner_sha256: 4a61ba41702ca827385a60a102e592d71a5ba6e2546b9fbcc053b4302271c4ef
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 63.90
+status: ok
+----- stdout -----
+frontier_gauge_sd_loop_equation_beta_coupled_plaquette_bracket
+==============================================================================
+payload sd_equations_beta6_2d.json sha256=b512c0fbb43e568c4adc333ff5f7146ab183140ccc21aabea1f478811fc6e4f1
+payload sd_equations_beta6_4d.json sha256=bed5ead58e68dcb5f2b7dd10af2c304231a7494604171bc6a2de44051bbb5e8d
+payload cert_2d_upper_compact.json sha256=733b45e35f0a986d5341e201962d197e8387eb94290a017e245b238825ad3776
+payload cert_2d_lower_compact.json sha256=d66b660f180809e89e220c332c60ad5006253b0147bec2cac9323918657a877d
+PASS: G1 Haar <chi> = 0 | err=5.880e-16
+PASS: G1 Haar <|chi|^2> = 1 | err=9.326e-15
+PASS: G1 Haar <chi^2> = 0 | err=3.239e-16
+PASS: G1 Haar <chi^2 chibar> = 0 (N-ality; corrects the lane spec's 1) | err=1.691e-15
+PASS: G1 Haar <chi^3> = 1 | err=4.663e-15
+PASS: G1 Haar <|chi|^4> = 2 | err=1.066e-14
+PASS: G2 one-link beta=6 SD residual == 0 | residual=1.021e-14
+PASS: G3 2D payload meta (D=2, N=3, beta=6, L_min=5)
+PASS: G3 4D payload meta (D=4, N=3, beta=6, L_min=5)
+PASS: G3 2D JSON inventory: 19 variables (1 const), 3 equations
+PASS: G3 4D JSON inventory: 165 variables (1 const), 9 equations
+PASS: G3 2D model name | CORE_D2_beta6
+PASS: G3 4D model name | CORE_D4_beta6
+PASS: G3 2D PSD block dims == [8, 3, 2, 2] | [8, 3, 2, 2]
+PASS: G3 4D PSD block dims == [63, 3, 2, 2] | [63, 3, 2, 2]
+PASS: G3 2D model inventory (vars, additions, equations) == (24, 6, 3) | (24, 6, 3)
+PASS: G3 4D model inventory (vars, additions, equations) == (440, 276, 9) | (440, 276, 9)
+PASS: G3 2D equation ids pinned | ['SD_P_orbit1', 'SD_R12_long', 'SD_R12_short']
+PASS: G3 4D equation ids pinned | ['SD_P_orbit1', 'SD_R12_long', 'SD_R12_short', 'SD_L6c1_orbit1', 'SD_L6c1_orbit2', 'SD_L6c1_orbit3', 'SD_L6c2_orbit1', 'SD_L6c2_orbit2', 'SD_L6c2_orbit3']
+PASS: G3 objective is the fundamental plaquette moment in both dims | w_P, w_P
+PASS: G3 fresh Gram-pair variables (2D, 4D) == (4, 274) | (4, 274)
+PASS: G4 2D all-ones is box-feasible (24 vars)
+PASS: G4 2D PSD block local_gram is PSD at all-ones
+PASS: G4 2D PSD block plaquette_hankel is PSD at all-ones
+PASS: G4 2D PSD block plaquette_localize_lo is PSD at all-ones
+PASS: G4 2D PSD block plaquette_localize_hi is PSD at all-ones
+PASS: G4 2D every SD equation evaluates to exactly +-4/3 at all-ones | values=['4/3']
+PASS: G4 4D all-ones is box-feasible (440 vars)
+PASS: G4 4D PSD block local_gram is PSD at all-ones
+PASS: G4 4D PSD block plaquette_hankel is PSD at all-ones
+PASS: G4 4D PSD block plaquette_localize_lo is PSD at all-ones
+PASS: G4 4D PSD block plaquette_localize_hi is PSD at all-ones
+PASS: G4 4D every SD equation evaluates to exactly +-4/3 at all-ones | values=['4/3']
+PASS: G4 cross-dim: all 12 SD equations share one signed all-ones value | 2D=4/3, 4D=4/3
+PASS: G5 oracle self-check <x_P> == w1 | delta=0.000e+00
+PASS: G5 oracle self-check <Tr V^2>/3 == <p2>/3 | delta=2.776e-17
+PASS: G5 oracle self-check <(Tr V)^2>/9 == <chi^2>/9 | delta=5.551e-17
+PASS: G5 oracle self-check <Tr V Tr Vd>/9 == <|chi|^2>/9 | delta=0.000e+00
+PASS: G5 2D JSON equation SD_P_orbit1 residual < 1e-10 | residual=5.274e-15
+PASS: G5 2D JSON equation SD_R12_long residual < 1e-10 | residual=1.416e-15
+PASS: G5 2D JSON equation SD_R12_short residual < 1e-10 | residual=1.416e-15
+PASS: G5 2D model equation SD_P_orbit1 residual < 1e-10 | residual=5.329e-15
+PASS: G5 2D model equation SD_R12_long residual < 1e-10 | residual=1.416e-15
+PASS: G5 2D model equation SD_R12_short residual < 1e-10 | residual=1.416e-15
+CERTIFIED UPPER: 903482039/1000000000
+PASS: G6 2D upper certificate verifies, bound == 903482039/1000000000 | 903482039/1000000000
+CERTIFIED LOWER: -10000001/20000000
+PASS: G6 2D lower certificate verifies, bound == -10000001/20000000 | -10000001/20000000
+PASS: G7 2D exact plaquette w1(beta=6) matches pinned 0.42253173965 | w1=0.422531739650
+PASS: G7 certified 2D bracket contains the exact 2D value | -0.500000050 < 0.42253173965 < 0.903482039
+PASS: G7 certified 2D upper bound < 1 strictly (beyond the kinematic box) | 1 - upper = 96517961/1000000000
+PASS: G7 certified 2D lower bound <= -1/2 (eps-weaker than the kinematic floor; disclosed) | lower + 1/2 = -1/20000000
+PASS: G7 4D MC comparator (audit-only) inside certified 4D content = kinematic box [-1/2, 1] | mc=0.5934
+==============================================================================
+TOTAL: PASS=51 FAIL=0
+
+----- stderr -----
+

@@ -1,7 +1,9 @@
-# Conformal-Class Causal-Source Packet -- Audit-Readiness Findings (Repair Before Audit)
+# Conformal-Class Causal-Source Packet Review (Repair Before Audit)
 
 **Date:** 2026-07-09
-**Type:** audit-readiness review (pre-audit verification; sets no status)
+**Type:** meta
+**Archive role:** detailed review evidence; the live decision surface is
+`docs/repo/ACTIVE_REVIEW_QUEUE.md`
 **Status authority:** independent audit lane only. This note reports
 verified defects and safe reduced claims; it neither retains nor
 rejects anything.
@@ -14,7 +16,7 @@ appear here.
 ## Headline
 
 The metric's conformal-class assembly
-([`EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md`](EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md))
+([`EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md`](../../../EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md))
 is listed as conditional on two unaudited inputs. Sending those two
 inputs to audit NOW would waste the audit lane: both need repair
 first, and the consumer itself has a live defect that would
@@ -24,7 +26,7 @@ gravity-chain results, which do not route through this packet.
 ## Verified defect register
 
 ### A. Record-order input
-([`RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md`](RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md))
+([`RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md`](../../../RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md))
 
 - **A1 (critical, type laundering).** The note's own 2026-06-17 repair
   states: "This row is not a positive time/rate theorem. Its source
@@ -58,7 +60,7 @@ gravity-chain results, which do not route through this packet.
   (supervisor-executed: 44/44, exit 0, matches cache).
 
 ### B. Microcausality input
-([`RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md))
+([`RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](../../../RECONSTRUCTED_H_QUASILOCAL_FROM_ANALYTIC_DISPERSION_MICROCAUSALITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md))
 
 - **B1 (critical, spectrum misidentification).** The note writes
   `spec(T^2) = e^{-2E(p)} in [e^{-2E_max}, e^{-2E_min}]`. Its own
@@ -86,7 +88,7 @@ gravity-chain results, which do not route through this packet.
   axis marginal, not as a general-d exponent.
 
 ### C. The consumer runner
-([`scripts/emergent_metric_conformal_class_from_records_runner.py`](../scripts/emergent_metric_conformal_class_from_records_runner.py))
+([`scripts/emergent_metric_conformal_class_from_records_runner.py`](../../../../scripts/emergent_metric_conformal_class_from_records_runner.py))
 
 - **C1 (critical, broken exit semantics — live-confirmed).** `main()`
   counts failures but returns nothing, and the module calls `main()`

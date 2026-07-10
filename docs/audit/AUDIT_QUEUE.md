@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1930
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 215
+**Total pending:** 1929
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 216
 
 By criticality:
-- `critical`: 397
+- `critical`: 396
 - `high`: 266
 - `medium`: 512
 - `leaf`: 755
@@ -31,10 +31,10 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 14 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | critical | 407 | 13.67 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_axis_alignment.py` |
 | 15 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | critical | 404 | 13.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py` |
 | 16 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | non_terminal_conditional | critical | 403 | 12.66 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
-| 17 | `tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03` | no_go | audit_in_progress | critical | 397 | 10.14 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_tensor_composition_requires_local_tomography_exact.py` |
-| 18 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | critical | 396 | 11.63 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py` |
-| 19 | `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | audit_in_progress | critical | 392 | 11.62 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_observable_principle_record_scalar_map_no_go_2026_06_05.py` |
-| 20 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | non_terminal_conditional | critical | 390 | 9.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_local_finite_atom_availability_2026_06_17.py` |
+| 17 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | critical | 396 | 11.63 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py` |
+| 18 | `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | audit_in_progress | critical | 392 | 11.62 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_observable_principle_record_scalar_map_no_go_2026_06_05.py` |
+| 19 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | non_terminal_conditional | critical | 390 | 9.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_local_finite_atom_availability_2026_06_17.py` |
+| 20 | `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | unaudited | critical | 389 | 9.11 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_local_tomography_from_complex_structure_exact.py` |
 | 21 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | audit_in_progress | critical | 388 | 11.60 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py` |
 | 22 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | non_terminal_conditional | critical | 386 | 9.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py` |
 | 23 | `koide_berry_bundle_obstruction_theorem_note_2026-04-19` | positive_theorem | unaudited | critical | 323 | 10.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_berry_bundle_obstruction_theorem.py` |

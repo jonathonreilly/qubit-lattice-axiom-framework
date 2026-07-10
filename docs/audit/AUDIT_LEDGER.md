@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 194 |
-| **retained_no_go** | 205 |
+| **retained_no_go** | 206 |
 | **retained_bounded** | 931 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
 | unaudited | 1852 |
-| audit_in_progress | 14 |
+| audit_in_progress | 13 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
@@ -62,8 +62,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 16 |
-| `audited_clean` | 1333 |
+| `audit_in_progress` | 15 |
+| `audited_clean` | 1334 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
@@ -149,7 +149,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1342,6 +1341,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_retained_axis_operator_algebra_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_taste_readout_operator_model_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_three_register_cross_encoding_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -19279,6 +19279,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The ideal three-register protocol is the two-dimensional teleportation identity conjugated by the three encoding isometries V_A, V_R, and V_B, with A/R Bell projectors, identity R/B logical resource, and Bob corrections all expressed in the ordered logical bases.  _(class `A`)_
 - **chain closes:** True — The scoped claim is an ideal logical-support theorem, not a physical implementation claim. Given the supplied definitions, conjugating the standard two-qubit teleportation identity by V_A, V_R, and V_B proves the intended map for any valid ordered encoding triple, and the completed runner output is consistent with that algebraic boundary.
 - **rationale:** The load-bearing derivation is an algebraic identity on explicitly defined two-dimensional logical supports, and the runner output reports exact projector resolution/idempotence/orthogonality, all Bell outcomes, corrected-state fidelity, no-message Bob input independence, and the negative-control boundaries within tolerance. The 1609-triple default cap limits the telemetry counts, but the note does not use the capped survey as the theorem boundary; the theorem boundary is the conjugated teleportation identity for runner-valid encodings on the stated surface. No physical resource-preparation, measurement-apparatus, noise, Hamiltonian, or matter-transport bridge is being imported into the scoped claim.
+- **auditor confidence:** high
+
+### `tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03`
+
+- **Note:** [`TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md`](../../docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite-dimensional no-go showing that faithful commuting complex-qubit subalgebras alone do not force the generated ordinary two-qubit tensor product or local tomography.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-tensor_composition_requi-020`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The explicit composite B = M_4(C) ⊕ M_4(C) contains faithful commuting local M_2(C) copies whose products span only the 16-dimensional diagonal M_4(C), while B_sa has dimension 32 and contains Z = I_4 ⊕ (-I_4) outside that span.  _(class `C`)_
+- **chain closes:** True — The accepted Qubit premise supplies the local M_2(C) carrier, and the explicit duplicate-sector construction exactly verifies faithfulness, commutation, and the 16-versus-32 span obstruction. This counterexample suffices to establish the stated narrow no-go.
+- **rationale:** The runner genuinely constructs the local embeddings and duplicate-sector algebra and computes the relevant ranks at exact symbolic precision; it does not merely print or import the contested result. The central observable outside the local-product span supplies a valid counterexample, and the only upstream premise used is the explicitly accepted one-site M_2(C) axiom content. The rebit calculation is non-load-bearing and introduces no external empirical comparator.
 - **auditor confidence:** high
 
 ### `tensor_network_connection_note`

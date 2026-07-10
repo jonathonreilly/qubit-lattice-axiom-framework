@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 936 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1819 |
+| unaudited | 1818 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 78 |
+| ~~audited_conditional~~ | 79 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1345 |
-| `audited_conditional` | 78 |
+| `audited_conditional` | 79 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2164 |
+| `unaudited` | 2163 |
 
 | claim_type | count |
 |---|---:|
@@ -1538,6 +1538,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -15451,6 +15452,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Finite realized post-record history alone does not determine a unique predictive law for future records, because the same finite counts are compatible with multiple probability laws and may forget order information needed by order-sensitive dynamics.  _(class `A`)_
 - **chain closes:** True — The finite examples independently close the underdetermination: the word 0100 has counts (3,1) but positive likelihood under distinct Bernoulli laws, and histories 01 and 10 share counts while supporting different last-symbol Markov predictions. Any unique selector would require an added statistical, physical, or instrument/pre-record bridge not supplied by the count map itself.
 - **rationale:** The load-bearing step is algebraic underdetermination, not a numerical fit or definition substitution. Independent checks confirm the displayed count, empirical-frequency, likelihood, Markov, trace-probability, integral-update, and fractional-ensemble formulas. The runner’s source-anchor checks are cross-note text checks rather than first-principles computation, but the narrow no-go does not depend on those checks as a hidden physics derivation. The no-go is clean only for the counts-alone route and explicitly leaves supplied models, Born laws, and future bridge assumptions outside scope.
+- **auditor confidence:** high
+
+### `post_record_directed_certificate_examples_2026-06-06`
+
+- **Note:** [`POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md`](../../docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Three finite directed-certificate examples under stipulated law, orientation, clock, and kernel data, including their exact expectations, probabilities, reversal-invariant count pushforwards, and accompanying row-bucket certificate.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-post_record_directed_cer-090`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Exact enumeration of three explicitly supplied finite laws under forward and reverse orientations yields orientation-sensitive directed statistics while leaving count pushforwards invariant.  _(class `A`)_
+- **chain closes:** False — The finite enumerations close algebraically on their stipulated inputs, but the chain from the framework baseline does not derive the supplied law/orientation/clock/kernel bridges. The note also claims 34 arrow-or-dynamics rows, whereas the completed primary and helper runners report 63.
+- **rationale:** Issue: the directed-certificate arithmetic is exact, but its physical bridge inputs are stipulated, and the note's 34-row certificate contradicts the completed 63-row result. Why this blocks: the packet establishes conditional finite examples, not an axiom-derived orientation or dynamics bridge, and one stated runner certificate is stale. Repair target: derive the required bridge data in a retained theorem and correct the source-note count to 63 before rerunning. Claim boundary until fixed: the three supplied-input examples remain valid, while the eleven firewall PASS lines merely test locally initialized false flags and provide no derivation.
 - **auditor confidence:** high
 
 ### `post_record_directed_certificate_kernel_selection_firewall_2026-06-06`

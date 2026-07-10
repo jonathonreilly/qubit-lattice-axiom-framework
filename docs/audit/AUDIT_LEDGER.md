@@ -24,11 +24,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
 | unaudited | 1727 |
-| audit_in_progress | 9 |
+| audit_in_progress | 8 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 136 |
+| ~~audited_conditional~~ | 137 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -71,9 +71,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 11 |
+| `audit_in_progress` | 10 |
 | `audited_clean` | 1362 |
-| `audited_conditional` | 136 |
+| `audited_conditional` | 137 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
@@ -145,7 +145,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `newton_law_derived_note` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
@@ -1586,6 +1585,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
@@ -14610,6 +14610,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The bridge satisfies the Newton-derivation conditional's Principle-3 premise as a definitional identification: the source-strength scalar s is the unique scalar whose extensivity controls the field, response, and persistence, hence plays the one-parameter mass role.  _(class `F`)_
 - **chain closes:** False — The runner supports persistence, approximate linearity in s, and stage-stable kappa, but it does not derive that s is the inertial quantity required by Principle 3. The missing step is an independent inertial-quantity/external-field bridge rather than a definitional identification.
 - **rationale:** The primary runner and helpers perform real framework computations for the three operational gates: overlap, alpha band, and kappa drift. Those checks substantiate a bounded operational response pattern, but the source note explicitly makes the load-bearing inertial-mass move by identifying the source-strength scalar s with the Principle-3 inertial quantity. That is a symbol/concept identity, not a derivation of inertial mass or an external-field equivalence-principle result. The note itself also preserves the residual gap, so the audited content cannot be treated as a clean closure of Principle 3 beyond the named definitional bridge.
+- **auditor confidence:** high
+
+### `newton_law_derived_note`
+
+- **Note:** [`NEWTON_LAW_DERIVED_NOTE.md`](../../docs/NEWTON_LAW_DERIVED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic differentiation of the supplied radial kernel G(r)=1/(4 pi r) and source-linear potential phi(r)=M G(r), without any physical force-law claim.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-newton_law_derived_n-judge-1`  (codex-gpt-5.6; independence=judicial_review)
+- **load-bearing step:** Differentiating phi(r)=M/(4 pi r) gives d phi/dr=-M/(4 pi r^2), hence |grad phi|=M/(4 pi r^2).  _(class `A`)_
+- **chain closes:** False — The differentiation is genuine class-A calculus and the narrowed inverse-square-gradient conclusion follows once the stated kernel and source-linearity are granted. However, the restricted packet supplies no retained-grade or explicitly accepted authority for either premise; under the rubric, importing such an unclosed kernel and source-linearity premise requires audited_conditional even though the physical force-law overclaim has been removed.
+- **rationale:** The differentiation is genuine class-A calculus and the narrowed inverse-square-gradient conclusion follows once the stated kernel and source-linearity are granted. However, the restricted packet supplies no retained-grade or explicitly accepted authority for either premise; under the rubric, importing such an unclosed kernel and source-linearity premise requires audited_conditional even though the physical force-law overclaim has been removed.
 - **auditor confidence:** high
 
 ### `newton_persistent_pattern_control_note_2026-04-11`

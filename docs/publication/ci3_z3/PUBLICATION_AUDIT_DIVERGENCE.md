@@ -21,10 +21,10 @@ publication tables phrase it.
 | high | `unaudited` | 140 |
 | medium | `unaudited` | 89 |
 | high | `audited_conditional` | 7 |
-| critical | `audited_conditional` | 4 |
-| critical | `audit_in_progress` | 3 |
+| critical | `audited_conditional` | 5 |
 | medium | `audited_conditional` | 3 |
 | medium | `open_gate` | 3 |
+| critical | `audit_in_progress` | 2 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_failed` | 2 |
 | critical | `retained_pending_chain` | 1 |
@@ -136,7 +136,7 @@ publication tables phrase it.
 | critical | `neutrino_majorana_z3_nonactivation_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `neutrino_mass_reduction_to_dirac_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `neutrino_two_amplitude_last_mile_reduction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| critical | `newton_law_derived_note` | `audit_in_progress` | `audit_in_progress` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
+| critical | `newton_law_derived_note` | `audited_conditional` | `audited_conditional` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `omega_lambda_derivation_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `one_generation_matter_closure_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `planck_boundary_density_extension_theorem_note_2026-04-24` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 943 |
+| **retained_bounded** | 944 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 26 |
-| unaudited | 1757 |
+| unaudited | 1756 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1356 |
+| `audited_clean` | 1357 |
 | `audited_conditional` | 114 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 32 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 29 |
-| `unaudited` | 2102 |
+| `unaudited` | 2101 |
 
 | claim_type | count |
 |---|---:|
@@ -556,6 +556,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -8242,6 +8243,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the note's bounded scope, the displayed identities reduce to explicit matrix and differential-operator algebra over definitions given in the packet. The note explicitly excludes OS reconstruction, essential self-adjointness, spin-statistics, and lattice-derived Lorentz symmetry, so no missing downstream bridge is needed for the audited claim.
 - **rationale:** The load-bearing content is a genuine class A algebraic closure check, not a definition, renaming, tuned numerical match, or external comparator. The runner output reports all eight checks passing, and the provided source implements substantive gamma-matrix, finite-representation, mass-shell, measure, spectrum, and boost-covariance computations rather than printing fixed results. The displayed signs and normalizations in the source note are consistent with the stated mostly-minus conventions. The clean verdict is limited to the bounded textbook free-field packet and does not promote any excluded reconstruction or lattice-origin claim.
 - **auditor confidence:** high
+
+### `free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The supplied m>0, spin-1/2 continuum one-particle Wigner representation on L2(H_m^+,d3p/(2E);C2), with C_c^infinity(H_m^+;C2) as a common core for its ten Stone and differential Poincare generators.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00061-free_dirac_poincare_stone_di`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because D is dense, U(t)-invariant, contained in each Stone-generator domain, and the Stone and differential generators agree on D, the invariant-domain core theorem makes D a common core and yields A_Stone = closure(A_diff restricted to D).  _(class `A`)_
+- **chain closes:** True — The retained-bounded authorities supply the strongly continuous unitary representation and the differential-generator formulas. The explicit infinitesimal agreement, density, smooth compact-support invariance, and invariant-domain core theorem then identify every Stone generator with the closure of its differential restriction.
+- **rationale:** All load-bearing upstream authorities are retained-grade, and the result is a bounded algebraic and functional-analytic closure on the explicitly supplied continuum carrier. The exact action formulas support the derivative and invariance premises, after which the cited core theorem gives essential self-adjointness and coincidence. Several runner lines, including B3 and F1-F5, are hard-coded assertions rather than executable tests, but the source note independently states the corresponding standard arguments, so this runner weakness does not leave an open scientific premise.
+- **auditor confidence:** medium
 
 ### `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07`
 

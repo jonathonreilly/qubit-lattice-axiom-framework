@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 387,
     "high": 265,
-    "leaf": 741,
+    "leaf": 740,
     "medium": 498
   },
   "cycle_break_target_count": 10,
@@ -36088,33 +36088,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
-        "free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07",
-        "free_dirac_poincare_representation_bounded_note_2026-05-30",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -56672,6 +56645,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 184,
-  "total_pending": 1891
+  "ready_count": 183,
+  "total_pending": 1890
 }

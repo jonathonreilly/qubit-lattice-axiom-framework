@@ -175,13 +175,23 @@ python3 scripts/frontier_ckm_five_sixths_bridge_support.py
 
 Current expected result on `main`:
 
-- `EXACT PASS=5`
+- `EXACT PASS=15`
 - `BOUNDED PASS=7`
 - `FAIL=0`
 
 The runner checks:
 
 - exact `SU(3)` identity `C_F - T_F = 5/6`
+- exact Fraction derivation `C_F - T_F = (N^2-1)/(2N) - 1/2 = 5/6` at
+  `N = 3` from SU(3) representation data, with the float constants `C_F`, `T_F`
+  asserted equal to the exact values and the runner's compound float exponent
+  asserted within one ulp of the exact `5/6`
+- `N = 3` uniqueness in the scan window `N = 2..6` via the factorization
+  `3N^2 - 8N - 3 = (3N+1)(N-3)`
+- exact one-loop transport `gamma_0/(2 beta_0) = 12/25` at the threshold-local
+  `n_f = 4` point (convention `gamma_0 = 6 C_F`,
+  `beta_0 = 11 - 2 n_f/3`), with explicit `n_f = 3` (`4/9`) and `n_f = 5`
+  (`12/23`) rejectors and an `N = 2` (`1/4`) exponent rejector
 - exact promoted CKM input `|V_cb| = alpha_s(v)/sqrt(6)`
 - bounded `m_s/m_b` extraction from the `5/6` bridge
 - threshold-local self-scale transport from same-scale to PDG comparator

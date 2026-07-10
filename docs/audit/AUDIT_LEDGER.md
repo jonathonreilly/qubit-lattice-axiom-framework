@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 951 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1714 |
+| unaudited | 1713 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 132 |
+| ~~audited_conditional~~ | 133 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1368 |
-| `audited_conditional` | 132 |
+| `audited_conditional` | 133 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2059 |
+| `unaudited` | 2058 |
 
 | claim_type | count |
 |---|---:|
@@ -1645,6 +1645,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `theta_gluing_flow_nonsourcing_pair_level_seed_localization_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_mass_determinant_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
+| `theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `wilson_m_h_per_channel_closure_bounded_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -21439,6 +21440,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Direct constrained enumeration gives each U(1) exterior sector weight as c_n^3 c_{n+q}, while independent SU(2) Haar quadrature gives the class-trace integral as the spin-1/2 fusion multiplicity and rejects the proposed generic-argument proportionality.  _(class `C`)_
 - **chain closes:** True — The supplied runner performs the constrained enumeration and Haar quadrature directly, with discriminating wrong-fusion and non-fusion checks. Its results support the note's explicitly bounded numerical and structural claims without relying on an uncited upstream result.
 - **rationale:** The runner computes rather than merely printing expected constants, and its independent rejectors distinguish the asserted shift and fusion structures from specified alternatives. The only cited authority is explicitly marked as an accepted axiom premise and is background rather than load-bearing. The note also correctly confines the nonabelian assembly to a structural consequence and leaves generic-argument recoupling and the 4D assembly open.
+- **auditor confidence:** high
+
+### `theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_bounded_theorem_note_2026-07-02`
+
+- **Note:** [`THETA_SEED_SPECTRAL_REALITY_CONJUGATION_SYMMETRIC_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-02.md`](../../docs/THETA_SEED_SPECTRAL_REALITY_CONJUGATION_SYMMETRIC_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The SU(3) seed-kernel identities: spectral flip-evenness, conjugation symmetry of the enumerated Casimir/dimension/fusion profile, the phased-seed odd-part decomposition, and conjugation oddness of determinant phases; the outer-evenness bridge is excluded.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00104-theta_seed_spectral_reality_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Conjugation invariance of C2(p,q) and d(p,q) implies that coefficients given by any real function of those data are conjugation-paired, so the resulting class weight is real and flip-even.  _(class `A`)_
+- **chain closes:** False — The algebra closes for spectral evenness, fusion-profile symmetry, the phased-seed split, and determinant-phase conjugation oddness. No supplied theorem establishes that the enumerated profile exhausts pure-gauge structure or that the required theta data therefore live uniquely on the mass side, and the cited registry text needed to verify the routing match is absent.
+- **rationale:** The runner performs substantive algebraic and numerical checks rather than merely printing expected results, and the displayed formulas independently support the core spectral and seed-splitting identities. Its finite windows, sample points, and quadrature do not prove that Casimir, dimension, and the two fusion rules exhaust all supplied pure-gauge distinctions. Determinant-phase oddness establishes an example of suitable odd data, not the broader location or uniqueness claim, while the note correctly leaves the semantic outer-evenness bridge unadjudicated.
 - **auditor confidence:** high
 
 ### `theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02`

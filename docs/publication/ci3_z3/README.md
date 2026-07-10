@@ -1,4 +1,4 @@
-# Lattice-Quantum-Record Framework Publication Package
+# Lattice-Qubit-Admissibility-Record Framework Publication Package
 
 This directory is the public scientific package for the current `main` branch.
 
@@ -23,7 +23,7 @@ legacy `retained` / `promoted` wording as proposed package status.
 ## Read In This Order
 
 1. [Generated front-door status snapshot](../../repo/FRONT_DOOR_STATUS.md)
-2. [Minimal Lattice/Quantum/Record axiom memo](../../MINIMAL_AXIOMS_2026-06-05.md)
+2. [Minimal Lattice/Qubit/Admissibility/Record axiom memo](../../MINIMAL_AXIOMS_2026-06-29.md)
 3. [Public arXiv draft](./ARXIV_DRAFT.md)
 4. [Current falsifiable predictions](./FALSIFIABLE_PREDICTIONS_2026-06-08.md)
 5. [Prediction surface](./PREDICTION_SURFACE_2026-04-15.md)
@@ -59,7 +59,7 @@ owned by:
 When reading the package tables, treat these as curation categories rather than
 audit badges:
 
-- framework/backbone rows: Lattice, Quantum, Record, the `Cl(3,0)` reading,
+- framework/backbone rows: Lattice, Qubit, Admissibility, Record, the `Cl(3,0)` reading,
   dimension, gauge, GR, and QG/continuum routes
 - quantitative and flavor rows: electroweak/QCD/Yukawa inputs, CKM atlas rows,
   `alpha_s` derived rows, top transport, and related corollaries
@@ -155,7 +155,7 @@ same thing as the current active package state:
 ## Package Boundaries
 
 - framework/input boundary:
-  [MINIMAL_AXIOMS_2026-06-05.md](../../MINIMAL_AXIOMS_2026-06-05.md)
+  [MINIMAL_AXIOMS_2026-06-29.md](../../MINIMAL_AXIOMS_2026-06-29.md)
 - explicit package qualifiers:
   [INPUTS_AND_QUALIFIERS_NOTE.md](./INPUTS_AND_QUALIFIERS_NOTE.md)
 - explicit non-claims:

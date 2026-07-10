@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_one_parameter_reduced_shell_law.py
-runner_sha256: 393e370c8cb3676071ee52a29984533e13ad0a47795526c3ed09ae9d6bf1ff1c
+runner_sha256: d6e71ec16da2c52c9515360c136c724d75029ca212171922a40fbc014e05e40e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.31
+elapsed_sec: 2.59
 status: ok
 ----- stdout -----
 Bounded one-parameter reduced sewing-shell law
@@ -11,23 +11,23 @@ Bounded one-parameter reduced sewing-shell law
 source packet: self-contained 2026-06-17 finite-operator replay
 c_aniso = 0.081435402995901
 max point-column charge difference from unity = 4.441e-16
-max point-column radial-profile difference = 1.110e-15
-max point-column orbit-mode difference = 2.220e-16
+max point-column radial-profile difference = 8.882e-16
+max point-column orbit-mode difference = 1.943e-16
 max point-column shell-mean total-field difference = 2.602e-18
-max point-column shell-mean anisotropic-field difference = 3.740e-18
-max family-vs-reference c_aniso difference = 4.163e-17
+max point-column shell-mean anisotropic-field difference = 1.924e-18
+max family-vs-reference c_aniso difference = 5.551e-17
 [FINITE] PASS: all seven point-Green columns carry unit total charge
     max |Q-1| across columns = 4.441e-16
 [FINITE] PASS: all seven point-Green columns induce the same radial shell kernel per unit charge
-    max radial-profile difference = 1.110e-15
+    max radial-profile difference = 8.882e-16
 [FINITE] PASS: all seven point-Green columns induce the same anisotropic orbit mode per unit charge
-    max orbit-mode difference = 2.220e-16
+    max orbit-mode difference = 1.943e-16
 [FINITE] PASS: all seven point-Green columns induce the same shell-mean exterior response per unit charge
-    max total-field difference = 2.602e-18, max anisotropic-field difference = 3.740e-18
+    max total-field difference = 2.602e-18, max anisotropic-field difference = 1.924e-18
 [FINITE] PASS: the anisotropic anchor amplitude obeys A_aniso = c_aniso * Q with one computed finite-lattice constant
     c_aniso = 0.081435402995901
 [FINITE] PASS: the admitted local O_h and finite-rank source-family comparators satisfy the same one-parameter reduced shell law
-    radial=5.551e-16, orbit=1.804e-16, shell=2.602e-18, aniso=1.952e-18, c_diff=4.163e-17
+    radial=4.441e-16, orbit=1.665e-16, shell=2.168e-18, aniso=1.708e-18, c_diff=5.551e-17
 [BOUNDED] PASS: on the reduced surface the sewing-shell law behaves like one isotropic shell density plus one cubic shear mode tied to total charge
     c_aniso = 0.081435402995901
 [BOUNDARY] PASS: umbrella source note contains citation firewall marker: 'Citation/use firewall (2026-06-18)'

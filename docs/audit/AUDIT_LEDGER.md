@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 199 |
-| **retained_no_go** | 214 |
+| **retained_no_go** | 215 |
 | **retained_bounded** | 947 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 29 |
-| unaudited | 1716 |
+| unaudited | 1715 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 36 |
@@ -71,13 +71,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1370 |
+| `audited_clean` | 1371 |
 | `audited_conditional` | 145 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 36 |
-| `unaudited` | 2063 |
+| `unaudited` | 2062 |
 
 | claim_type | count |
 |---|---:|
@@ -1150,6 +1150,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_occurrence_thinned_iid_frequency_bridge_2026-07-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `record_production_kernel_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `record_tick_signature_neutral_2026-06-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -17985,6 +17986,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** Issue: the proof packet and runner close against docs/MINIMAL_AXIOMS_2026-06-05.md, while the current ledger dependency minimal_axioms resolves to docs/MINIMAL_AXIOMS_2026-06-29.md. Why this blocks: the runner's B-class checks verify old three-axiom / Quantum / durable-realized-outcome wording, not the current Qubit/Admissibility/Record boundary, so the current row cannot receive clean closure as written. Repair target: update the note and runner to cite/read 2026-06-29 and restate the load-bearing split under Qubit, Admissibility, and Record; the repaired core likely can close because 2026-06-29 still excludes Born law, measurement/decoherence dynamics, formation rules, weighting, normalization, sector generation, and dial selection. Claim boundary until fixed: the old 2026-06-05-bound type split passes locally, but current-ledger closure remains conditional.
 - **open / conditional deps cited:**
   - `MINIMAL_AXIOMS_2026-06-05.md: source/runner-cited superseded authority not matching current ledger dependency MINIMAL_AXIOMS_2026-06-29.md`
+- **auditor confidence:** high
+
+### `record_production_kernel_boundary_2026-06-06`
+
+- **Note:** [`RECORD_PRODUCTION_KERNEL_BOUNDARY_2026-06-06.md`](../../docs/RECORD_PRODUCTION_KERNEL_BOUNDARY_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** For the supplied finite post-record alphabet and append/count grammar, the audit establishes that production probabilities, transition structure, expected updates, and stable priors are additional inputs rather than consequences of realized-record storage dynamics.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00013-record_production_kernel_bou`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Multiple distinct normalized production kernels generate the same possible realized word and feed the identical append/count update while assigning different likelihoods and expected next counts, so the append/count grammar cannot identify a unique production kernel.  _(class `A`)_
+- **chain closes:** True — The explicit fair, biased, history-dependent, and scripted kernels are valid countermodels sharing the same append/count layer but yielding incompatible predictions. A single countermodel pair would suffice for underdetermination, and the runner computes several using exact rational arithmetic.
+- **rationale:** The no-go follows by direct algebraic counterexample: the same realized history and update grammar are compatible with multiple normalized kernels having different likelihoods and expectations. The runner genuinely evaluates normalization, likelihoods, counts, and expectations rather than importing a contested value or external comparator. The sole cited authority is retained-grade and is consistent with, but not required to substitute for, the new producer-boundary argument.
 - **auditor confidence:** high
 
 ### `record_tick_signature_neutral_2026-06-23`

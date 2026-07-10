@@ -120,10 +120,25 @@ def main() -> int:
 
     section("B. Tier-A registry state on current main")
     tier = json.loads(read(TIER_A))
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     decomp = ac["minimum_decomposition"]
     statement = ac["statement"]
-    check("AC_phi_lambda remains the live Tier-A target", tier["genuine_admitted_input_count"] >= 1)
+    check(
+        "Tier-A live derivation targets are empty after the 2026-07-05 retirements",
+        tier["genuine_admitted_input_count"] == 0
+        and tier["derivation_targets"] == {}
+        and tier["canonical_ids"] == [],
+        str(tier["genuine_admitted_input_count"]),
+    )
+    check(
+        "AC entry preserved intact under retired_derivation_targets",
+        bool(statement) and bool(decomp),
+    )
+    check(
+        "AC retirement mechanism is owner governance, not the formation append",
+        ac["retirement"]["mechanism"] == "retired_by_owner_governance_on_audited_surface",
+        ac["retirement"]["mechanism"],
+    )
     check("AC minimum decomposition contains occupancy binary", "reading_occupancy_selection" in decomp, decomp)
     check("AC minimum decomposition keeps R-eta separate", "delta_readout_identification_R_eta" in decomp, decomp)
     check("AC minimum decomposition keeps species bridge separate", "species_bridge" in decomp, decomp)

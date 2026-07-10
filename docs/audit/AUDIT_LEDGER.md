@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1779 |
+| unaudited | 1778 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 103 |
+| ~~audited_conditional~~ | 104 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1350 |
-| `audited_conditional` | 103 |
+| `audited_conditional` | 104 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2124 |
+| `unaudited` | 2123 |
 
 | claim_type | count |
 |---|---:|
@@ -1530,6 +1530,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6211,6 +6212,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The exact Schur factorization gives I_e^* D_-^(-1) I_e = L_e^(-1), and under D_- = D_-^* > 0 the completed-square identity gives u^* L_e u = min_v [u; v]^* D_- [u; v].  _(class `A`)_
 - **chain closes:** True — The note proves the scoped conclusions directly by finite-dimensional block factorization and positive-Hermitian quadratic completion. There are no one-hop dependencies and no imported physical bridge inside the audited finite-dimensional boundary theorem.
 - **rationale:** The finite-dimensional algebra closes under the note's explicit hypotheses: invertible F and L_e for the resolvent identity, and D_- = D_-^* > 0 for the variational and monotonicity statements. The runner is not a first-principles microscopic computation, but it consistently checks exact Schur/Feshbach/Dirichlet algebra and scope hygiene, with 46 PASS and 0 FAIL in the supplied live summary. Residual risk is limited to scope discipline: this clean verdict covers only the supplied-block theorem and does not certify any Wilson-native construction of D_-, charged support selection, or final DM closure.
+- **auditor confidence:** high
+
+### `domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04`
+
+- **Note:** [`DOMAIN_WALL_CHIRAL_EDGE_FROM_ACHIRAL_CL3_BULK_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-04.md`](../../docs/DOMAIN_WALL_CHIRAL_EDGE_FROM_ACHIRAL_CL3_BULK_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite free-field matrix diagnostic showing naive spatial doubling, chiral-symmetry breaking by direct Wilson lifting, and opposite localized Weyl species for the specified periodic record-time domain-wall Hamiltonian.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00037-domain_wall_chiral_edge_from`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Diagonalizing the explicitly constructed periodic record-time Wilson–Dirac Hamiltonian with the imposed mass wall yields one two-component, definite-chirality Weyl subspace localized on the wall and an opposite-chirality subspace on the anti-wall.  _(class `C`)_
+- **chain closes:** False — The runner closes the spectral and localization claims for the explicitly specified finite Hamiltonian. The cited axioms do not supply the identification of record-time with an extra lattice coordinate, the four-component embedding, periodic boundary condition, imposed mass profile, or Wilson–Dirac regulator.
+- **rationale:** The runner genuinely constructs and diagonalizes the finite Hamiltonians rather than printing or importing the contested spectral results, and its 19 checks support the stated matrix-model conclusions. However, the load-bearing Hamiltonian depends on explicitly imposed diagnostic structures that are not supplied by the sole cited axiom authority. The bounded free-field result is therefore sound conditionally on those structures, but it does not establish a framework-derived record-time domain-wall mechanism.
 - **auditor confidence:** high
 
 ### `doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12`

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 934 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 27 |
-| unaudited | 1762 |
+| unaudited | 1761 |
 | audit_in_progress | 9 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 117 |
+| ~~audited_conditional~~ | 118 |
 | ~~audited_failed~~ | 12 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 13 |
 | `audited_clean` | 1347 |
-| `audited_conditional` | 117 |
+| `audited_conditional` | 118 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2109 |
+| `unaudited` | 2108 |
 
 | claim_type | count |
 |---|---:|
@@ -1609,6 +1609,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `three_family_card_missing_distance_live_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
+| `tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-current | A | - |
 | `u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `unordered_mass_pdep_record_independence_no_go_note_2026-06-18` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -21109,6 +21110,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** At BZ corners p_mu in {0, pi}, m(p)=sum_mu(1-cos p_mu)=2 hw(p), so the eight corners split as 1+3+3+1 and hw=1 is exactly the threefold lightest nonzero-mass orbit, with the M_3(C)/no-proper-quotient part imported from the direct audited dependency.  _(class `A`)_
 - **chain closes:** True — Independent exact enumeration gives 8 corners, degeneracies [1,3,3,1], masses 0,2,4,6 by Hamming weight, and hw=1 as the unique lightest nonzero orbit. The admitted staggered-Dirac/Wilson surface is present in the Tier-A registry, and the direct dependency's scoped algebra result supplies only the finite C^3/M_3(C) no-proper-quotient statement without importing physical-species or SM-generation claims.
 - **rationale:** The spectral calculation is a finite algebraic identity on the explicitly admitted bounded surface, not a tuned numerical comparator or a physical-generation identification. The runner's math checks agree with an independent exact enumeration, while its source-firewall checks confirm the note excludes no-rooting, physical lattice necessity, CKM, chirality, and new-axiom claims. The no-go/wall discipline gate does not expose an inflated wall set: there is a single registered Tier-A admitted surface, the no-proper-quotient residual exactly matches the direct dependency's audited scope, and all broader negative/physical claims are explicitly out of scope.
+- **auditor confidence:** high
+
+### `tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09`
+
+- **Note:** [`TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md`](../../docs/TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the supplied site-licensed, period-2, one-axis unitary-tick surface, and conditional on a tick--Admissibility realization bridge, one-site covariance modulo local U(1) frames plus off-site support selects exactly the p/s and q/r mover strata, giving windings +1 and -1 and |v|=1 edge/tick without selecting a winding sign.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-fresh-tick-cell-20260710`  (codex-current; independence=fresh_context)
+- **load-bearing step:** On the licensed period-2 unitary family, the necessary one-site modulus conditions together with off-site support leave exactly the p/s and q/r mover strata; interpreting those predicates as the Admissibility clauses requires the supplied tick--Admissibility realization bridge.  _(class `A`)_
+- **chain closes:** False — The five-stratum algebraic classification, local-gauge covariance construction, winding signs, and cell-to-site speed factor close exactly. The physical interpretation does not close because the tick--Admissibility realization bridge is supplied rather than derived, and the direct staggered dichotomy dependency is currently unaudited.
+- **rationale:** Issue: the exact matrix selector is conditioned on an unratified bridge identifying rule-level translation covariance with tick covariance modulo local U(1) frames and rule-level variation with off-site tick support; its direct staggered dichotomy dependency is also unaudited. Why this blocks: the restricted authorities explicitly say Admissibility supplies no transfer operator or kinetic-branch selector, so the algebra cannot by itself establish a realized physical tick or compose to an unconditional speed theorem. Repair target: derive and retain a tick--Admissibility realization theorem for both predicate identifications, and bring the cited staggered dichotomy row to retained grade. Claim boundary until fixed: the exact period-2 algebraic selector and conditional |v|=1 consequence are valid only on the stated supplied-bridge, site-strict, unitary, one-axis surface, with neither winding sign selected.
+- **open / conditional deps cited:**
+  - `STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-09.md`
 - **auditor confidence:** high
 
 ### `tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09`

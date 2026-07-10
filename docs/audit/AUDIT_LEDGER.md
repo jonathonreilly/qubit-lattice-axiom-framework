@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 211 |
 | **retained_bounded** | 939 |
 | _retained_pending_chain_ | 13 |
-| open_gate | 27 |
-| unaudited | 1748 |
+| open_gate | 28 |
+| unaudited | 1747 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 15 |
-| `audited_clean` | 1353 |
+| `audited_clean` | 1354 |
 | `audited_conditional` | 122 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2095 |
+| `unaudited` | 2094 |
 
 | claim_type | count |
 |---|---:|
@@ -367,6 +367,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | C | - |
 | `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | C | - |
 | `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -5228,6 +5229,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** L_runner intersect {d : d <= 3} = {3}, while L_runner intersect {d : d <= 4} = {3,4}, so current unique d=3 selection depends on the native stable-orbit upper edge.  _(class `A`)_
 - **chain closes:** True — The cited lower-bound authority supplies L_runner = {3,4,5}; the stable-orbit support supplies the d <= 3 edge; and the Coulomb support supplies only the weaker d <= 4 companion. The stated intersections are correct and establish the bounded scope separation.
 - **rationale:** The load-bearing step is finite-set algebra over one-hop authorities that the packet marks retained_bounded, which is retained-grade under the rubric. The runner mainly verifies prose anchors and recomputes the same set intersections; it is not a first-principles physics derivation, but the claim does not require one. The note correctly fences off full Bertrand, hydrogen spectrum, atomic-stability, framework-native dimension selection, and repo-wide promotion claims.
+- **auditor confidence:** high
+
+### `darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05`
+
+- **Note:** [`DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md`](../../docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Whether the current Lattice, Qubit, Admissibility, and Record axioms entail many-fragment local readability, and whether local observability of a determined outcome is the missing Darwinism bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153334Z-4f7da8c1-00005-darwinism_bridge_residual_lo`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** A globally encoded parity record can be determined and jointly readable while every local fragment is blind, so the framework axioms do not entail redundant local broadcast.  _(class `C`)_
+- **chain closes:** True — The accepted axiom authority explicitly leaves local observability outside the framework axioms, and the computed parity countermodel demonstrates that global determinacy and joint readability do not imply singleton-fragment readability. Adding per-fragment local recoverability supplies precisely the missing redundancy condition.
+- **rationale:** The accepted minimal-axiom authority explicitly excludes local observability, while the retained cited authorities do not supply it. The runner constructs density matrices, performs pointer dephasing and partial traces, and computes both an independent-record counterexample and a parity encoding with zero singleton recoverable information but full joint information; it does not merely print or define the conclusion. These constructions suffice for the narrow open-gate classification.
 - **auditor confidence:** high
 
 ### `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12`

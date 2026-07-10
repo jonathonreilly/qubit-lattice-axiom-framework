@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py
-runner_sha256: 84e54c58e3a66766f0187b56b9d0ed37540b8abb5030076cfeef732ef06f2d49
+runner_sha256: c5652869f3aa27f95908cfee63c2f124498553d534ad73bb8cb6fc19bb4be919
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 1.41
+elapsed_sec: 1.32
 status: ok
 ----- stdout -----
 Axiom-first RP Wilson temporal-gauge reroute guard
-note: /private/tmp/rp-reroute-wt/docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
-base runner: /private/tmp/rp-reroute-wt/scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
+note: /private/tmp/review-pr5112-wt/docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
+base runner: /private/tmp/review-pr5112-wt/scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
 
 ----------------------------------------------------------------------------------------
 C1-C6 free staggered two-step construction reused from retained runner
@@ -25,12 +25,12 @@ C7 retained Wilson temporal-gauge reroute guard
 ----------------------------------------------------------------------------------------
   [PASS] required reroute phrases present
   [PASS] stale Wilson sign-repair phrases absent
-  [PASS] live dependency statuses retained-grade (axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05:('audited_clean', 'retained_bounded'); gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10:('audited_clean', 'retained'); staggered_only_det_positivity_case_a_note_2026-05-17:('audited_clean', 'retained'); reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10:('audited_clean', 'retained'); rp_p2_gauge_extension_and_realization_residual_note_2026-05-28:('audited_clean', 'retained_bounded'); su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09:('audited_clean', 'retained'))
+  [PASS] live dependency statuses retained-grade (axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05:('bounded_theorem', 'audited_clean', 'retained_bounded'); gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10:('positive_theorem', 'audited_clean', 'retained'); staggered_only_det_positivity_case_a_note_2026-05-17:('positive_theorem', 'audited_clean', 'retained'); reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10:('positive_theorem', 'audited_clean', 'retained'); rp_p2_gauge_extension_and_realization_residual_note_2026-05-28:('bounded_theorem', 'audited_clean', 'retained_bounded'); su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09:('positive_theorem', 'audited_clean', 'retained'))
   [PASS] actual SU(3) plane-kernel Haar Gram is positive semidefinite (min eig=+7.348e+00 (n=64, beta=1.0))
   [PASS] no-conjugation plane-kernel rejector is decisively non-PSD (min eig=-3.146e+01)
-  [PASS] actual composed two-slice SU(3) Gram is PSD within sampling error (min eig=+9.347452e-04, negative allowance=2.279e-02)
-  [PASS] composed-form sampling error is controlled (mc_noise=7.597e-03)
-  [PASS] no-conjugation composed control is non-PSD (min eig=-4.149715e-01)
+  [PASS] actual composed two-slice pure-gauge SU(3) Gram is PSD within sampling error (min eig=+9.347452e-04, negative allowance=2.279e-02)
+  [PASS] pure-gauge composed-form sampling error is controlled (mc_noise=7.597e-03)
+  [PASS] no-conjugation pure-gauge composed control is non-PSD (min eig=-4.149715e-01)
 
 PASS=14 FAIL=0
 VERDICT: parent reroute guard passes; free two-step construction remains unchanged, and the Wilson temporal-gauge application is routed through retained-grade dependencies without promoting the parent row.

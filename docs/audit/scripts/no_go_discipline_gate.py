@@ -83,12 +83,34 @@ NEGATIVE_ASSERTION_RE = re.compile(
 # tense variants as no-go assertions.
 EXPLICIT_NEGATIVE_CLOSURE_RE = re.compile(
     r"\b(?:(?:(?:does|do|did|has|have|had|is|are|was|were)\s+not)|"
-    r"cannot|can\s+not|fails?\s+to)\s+"
-    r"(?:fully\s+|completely\s+|entirely\s+|exactly\s+)?"
+    r"cannot|can\s+not)\s+"
+    r"(?:(?:yet|still|fully|completely|entirely|exactly|ever|successfully)\s+){0,4}"
     r"(?:close[sd]?|remove[sd]?|resolve[sd]?|discharge[sd]?|suppl(?:y|ies|ied)|"
     r"retire[sd]?|eliminate[sd]?)\b[^\n.;:]{0,100}\b"
     r"(?:residual\s+|remaining\s+|scoped\s+|unresolved\s+)?"
+    r"(?:walls?|admissions?|obstructions?)\b|"
+    r"\bfails?\s+"
+    r"(?:(?:yet|still|fully|completely|entirely|exactly|ever|successfully)\s+){0,4}"
+    r"to\s+(?:(?:fully|completely|entirely|exactly|successfully)\s+){0,3}"
+    r"(?:close|remove|resolve|discharge|supply|retire|eliminate)\b"
+    r"[^\n.;:]{0,100}\b(?:residual\s+|remaining\s+|scoped\s+|unresolved\s+)?"
     r"(?:walls?|admissions?|obstructions?)\b",
+    re.IGNORECASE,
+)
+NEGATIVE_SUBJECT_CLOSURE_RE = re.compile(
+    r"\b(?:no|nothing|neither|zero|none(?:\s+of)?)\b[^\n.;:]{0,140}\b"
+    r"(?:close[sd]?|remove[sd]?|resolve[sd]?|discharge[sd]?|suppl(?:y|ies|ied)|"
+    r"derive[sd]?|select[sd]?|determine[sd]?|fix(?:es|ed)?|retire[sd]?|"
+    r"eliminate[sd]?)\b[^\n.;:]{0,100}\b"
+    r"(?:walls?|admissions?|obstructions?|selectors?|boundar(?:y|ies))\b",
+    re.IGNORECASE,
+)
+INABILITY_CLOSURE_RE = re.compile(
+    r"\b(?:is|are|was|were|remains?)\s+"
+    r"(?:(?:still|wholly|completely|entirely)\s+){0,3}unable\s+to\s+"
+    r"(?:close|remove|resolve|discharge|supply|derive|select|determine|fix|retire|"
+    r"eliminate)\b[^\n.;:]{0,100}\b"
+    r"(?:walls?|admissions?|obstructions?|selectors?|boundar(?:y|ies))\b",
     re.IGNORECASE,
 )
 # Remove only clauses that affirmatively close or supply the named boundary.
@@ -114,8 +136,8 @@ NEGATED_BOUNDARY_RE = re.compile(
     re.IGNORECASE,
 )
 NEGATED_NEGATIVE_ASSURANCE_RE = re.compile(
-    r"\b(?:(?:does|do|did)\s+not\s+(?:require|introduce|add|create|produce)|"
-    r"cannot\s+(?:introduce|add|create|produce))\s+"
+    r"\b(?:(?:does|do|did)(?:\s+not|n't)\s+(?:require|introduce|add|create|produce)|"
+    r"(?:cannot|can't)\s+(?:require|introduce|add|create|produce))\s+"
     r"(?:an?\s+|any\s+|the\s+)?(?:new\s+)?"
     r"(?:axioms?|walls?|admissions?|obstructions?)\b",
     re.IGNORECASE,
@@ -855,7 +877,11 @@ def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] |
 
 def _has_negative_boundary_assertion(text: str) -> bool:
     cleaned = NEGATED_NEGATIVE_ASSURANCE_RE.sub("", text)
-    if EXPLICIT_NEGATIVE_CLOSURE_RE.search(cleaned):
+    if (
+        EXPLICIT_NEGATIVE_CLOSURE_RE.search(cleaned)
+        or NEGATIVE_SUBJECT_CLOSURE_RE.search(cleaned)
+        or INABILITY_CLOSURE_RE.search(cleaned)
+    ):
         return True
     cleaned = POSITIVE_BOUNDARY_CLOSURE_RE.sub("", cleaned)
     cleaned = NEGATED_BOUNDARY_RE.sub("", cleaned)

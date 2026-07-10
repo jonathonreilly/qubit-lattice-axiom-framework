@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Tick-cell selection by the translation and variation clauses.
+"""Conditional tick-cell selection under two matrix predicates.
 
 This runner stays on the site-licensed, period-2, one-axis cell surface.  It
-recomputes the symbolic unitarity collapse, unrolls every named cell on an
-eight-site ring, and applies the two axiom-clause functionals to computed
-objects.  The blocked coefficient-algebra functional is secondary: it is
-blind to within-cell bonds, so EXCHANGE has blocked dimension 1 despite
-genuine site-level conditioning.
+recomputes the symbolic unitarity collapse, classifies every continuous
+support stratum, and checks the necessary one-site modulus-homogeneity and
+off-site-support predicates.  A supplied tick--Admissibility realization
+bridge is required to interpret those matrix predicates as the rule-level
+translation and variation clauses; this runner does not derive that bridge.
+The blocked coefficient-algebra functional is secondary because it is blind
+to within-cell bonds.
 """
 from __future__ import annotations
 
@@ -41,7 +43,9 @@ def section(tag, title):
 
 print("NOTE CONSTANTS: date=2026-07-09; lattice=Z^3; site algebra=M_2(C); period-2; one-axis")
 print("NOTE CONSTANTS: U(1); L=8; site_matrix=8x8; theta=pi/4 in (0, pi/2]; gauge seeds=5; phase seeds=3")
-print("NOTE CONSTANTS: P1'; P2; readout r=1; 3D; Tier-A; T1-T4; R1-R4")
+print("NAMED CONDITIONALS: site-strict license reading; unitary-tick reading; period-2; one-axis")
+print("SUPPLIED OPEN BRIDGE: tick--Admissibility realization; this runner does not derive it")
+print("BOUNDARY: no OS0/readout result; no primitive or Tier-A registry change")
 print("DEPENDENCY DATES: 2026-06-09; 2026-06-10; 2026-07-02; 2026-06-29")
 print("RUNNER CACHE: logs/runner-cache/tick_cell_selection_by_translation_and_variation_clauses_2026_07_09.txt")
 
@@ -153,6 +157,50 @@ check(
     "orthogonality computes zero diagonal amplitudes on both mover branches",
     qr_forcing and ps_forcing,
     "nonzero q,r or p,s force alpha=delta=0",
+)
+
+# A one-site shift exchanges the A/B row types.  Equality of the site-matrix
+# moduli is therefore exactly |alpha|=|delta|, |p|=|s|, |q|=|r|.  Full
+# covariance modulo local U(1) frames implies these equalities, although the
+# converse need not hold for diagonal phases.  On a nonzero support stratum,
+# the last two equalities are possible exactly when the paired coefficients
+# are simultaneously present or absent.  This is the class-wide selection
+# argument; it does not reduce the continuous p/r or q/s families to one rep.
+translation_modulus_pairs = (("p", "s"), ("q", "r"))
+support_stratum_rows = []
+for ab_choice, ba_choice in support_pairs:
+    active = {choice for choice in (ab_choice, ba_choice) if choice != "none"}
+    modulus_homogeneous = all((left in active) == (right in active)
+                              for left, right in translation_modulus_pairs)
+    offsite_supported = bool(active)
+    support_stratum_rows.append(
+        (f"{ab_choice}/{ba_choice}", modulus_homogeneous,
+         offsite_supported, modulus_homogeneous and offsite_supported)
+    )
+
+print("class-wide support-stratum predicate table:")
+print("  stratum     modulus_homogeneous   offsite_supported   survives")
+for stratum, modulus_homogeneous, offsite_supported, survives in support_stratum_rows:
+    print(
+        f"  {stratum:<11} {str(modulus_homogeneous):<21} "
+        f"{str(offsite_supported):<19} {survives}"
+    )
+class_survivors = {
+    stratum for stratum, _, _, survives in support_stratum_rows if survives
+}
+check(
+    "one-site modulus equalities classify every continuous support stratum",
+    class_survivors == {"p/s", "q/r"},
+    f"class survivors={sorted(class_survivors)}",
+)
+check(
+    "both nontrivial flat support strata fail one-site modulus homogeneity",
+    all(
+        not modulus_homogeneous
+        for stratum, modulus_homogeneous, _, _ in support_stratum_rows
+        if stratum in {"p/r", "q/s"}
+    ),
+    "p/r and q/s fail unless their hops collapse to the on-site stratum",
 )
 
 
@@ -347,33 +395,35 @@ check(
 
 
 # ---------------------------------------------------------------------------
-section("S4", "one-site translation-defect table")
+section("S4", "one-site modulus-homogeneity necessary-condition table")
 
 T = np.zeros((L, L), dtype=complex)
 for site in range(L):
     T[(site + 1) % L, site] = 1.0
 
 
-def translation_defect(matrix):
+def translation_modulus_defect(matrix):
     translated = T @ matrix @ T.conj().T
     return float(np.max(np.abs(np.abs(translated) - np.abs(matrix))))
 
 
-translation_defects = {name: translation_defect(matrix) for name, matrix in site_matrices.items()}
+translation_modulus_defects = {
+    name: translation_modulus_defect(matrix) for name, matrix in site_matrices.items()
+}
 print("name       one_site_modulus_defect")
 for cell in cells:
     name = cell["name"]
-    print(f"{name:<10} {translation_defects[name]:.12f}")
+    print(f"{name:<10} {translation_modulus_defects[name]:.12f}")
 
 check(
-    "site-level translation defects vanish exactly for DIAGONAL and both movers",
-    all(translation_defects[name] < 1e-12 for name in ("DIAGONAL", "U_R", "U_L")),
-    f"zero-defect cells={[name for name, value in translation_defects.items() if value < 1e-12]}",
+    "representative modulus defects vanish exactly for DIAGONAL and both movers",
+    all(translation_modulus_defects[name] < 1e-12 for name in ("DIAGONAL", "U_R", "U_L")),
+    f"zero-defect reps={[name for name, value in translation_modulus_defects.items() if value < 1e-12]}",
 )
 check(
-    "site-level translation defects are positive for every alternating cell",
-    all(translation_defects[name] > 1e-12 for name in ("EXCHANGE", "PAIRING", "UMIX")),
-    f"alternating defects={dict((name, translation_defects[name]) for name in ('EXCHANGE', 'PAIRING', 'UMIX'))}",
+    "representative modulus defects are positive for every alternating cell",
+    all(translation_modulus_defects[name] > 1e-12 for name in ("EXCHANGE", "PAIRING", "UMIX")),
+    f"alternating defects={dict((name, translation_modulus_defects[name]) for name in ('EXCHANGE', 'PAIRING', 'UMIX'))}",
 )
 
 # Probe the full requested UMIX interval away from its open endpoint theta=0.
@@ -386,7 +436,7 @@ for theta_probe in np.linspace(np.pi / 16, np.pi / 2, 8):
         qv=1j * np.sin(theta_probe),
         sv=1j * np.sin(theta_probe),
     )
-    defect = translation_defect(site_matrix(probe_cell))
+    defect = translation_modulus_defect(site_matrix(probe_cell))
     umix_theta_probes.append((theta_probe, defect))
 print("UMIX theta probes (theta/pi, defect):")
 for theta_probe, defect in umix_theta_probes:
@@ -397,9 +447,57 @@ check(
     f"minimum sampled defect={min(defect for _, defect in umix_theta_probes):.12f}",
 )
 
+# Corroborate both continuous flat strata.  Completeness comes from the exact
+# support-stratum table in S1; these samples exercise the site unrolling on
+# continuous p/r and q/s families rather than one matrix per stratum.
+continuous_flat_probes = []
+for theta_probe in np.linspace(np.pi / 16, np.pi / 2, 8):
+    cosine = np.cos(theta_probe)
+    sine = np.sin(theta_probe)
+    for stratum, probe_cell in (
+        (
+            "p/r",
+            make_cell(
+                "WITHIN_CELL_MIX_PROBE", a=cosine, d=cosine,
+                pv=sine, rv=-sine,
+            ),
+        ),
+        (
+            "q/s",
+            make_cell(
+                "CROSS_CELL_MIX_PROBE", a=cosine, d=cosine,
+                qv=1j * sine, sv=1j * sine,
+            ),
+        ),
+    ):
+        matrix = site_matrix(probe_cell)
+        unitary_error = float(np.max(np.abs(matrix @ matrix.conj().T - np.eye(L))))
+        defect = translation_modulus_defect(matrix)
+        continuous_flat_probes.append(
+            (stratum, theta_probe, unitary_error, defect, abs(defect - sine))
+        )
+
+print("continuous flat-family probes (stratum, theta/pi, unitary, defect, |defect-sin(theta)|):")
+for stratum, theta_probe, unitary_error, defect, formula_error in continuous_flat_probes:
+    print(
+        f"  {stratum:<3} {theta_probe / np.pi:.6f} {unitary_error:.3e} "
+        f"{defect:.12f} {formula_error:.3e}"
+    )
+check(
+    "continuous p/r and q/s probes are unitary and fail modulus homogeneity away from on-site",
+    max(row[2] for row in continuous_flat_probes) < 1e-12
+    and min(row[3] for row in continuous_flat_probes) > 1e-12,
+    "both continuous flat strata probed at eight nonzero angles",
+)
+check(
+    "continuous flat-family modulus defect independently matches |sin(theta)|",
+    max(row[4] for row in continuous_flat_probes) < 1e-12,
+    f"max formula error={max(row[4] for row in continuous_flat_probes):.3e}",
+)
+
 
 # ---------------------------------------------------------------------------
-section("S5", "local U(1) gauge invariance of translation defects")
+section("S5", "local U(1) gauge invariance of modulus homogeneity")
 
 rng_gauge = np.random.default_rng(20260709)
 gauge_probe_rows = []
@@ -410,7 +508,10 @@ for cell in cells:
         gauge = np.diag(np.exp(1j * phases))
         gauged = gauge @ matrix @ gauge.conj().T
         modulus_error = float(np.max(np.abs(np.abs(gauged) - np.abs(matrix))))
-        defect_error = abs(translation_defect(gauged) - translation_defects[cell["name"]])
+        defect_error = abs(
+            translation_modulus_defect(gauged)
+            - translation_modulus_defects[cell["name"]]
+        )
         gauge_probe_rows.append((cell["name"], seed_index, modulus_error, defect_error))
 
 print("name       seed   max_modulus_change   defect_change")
@@ -424,17 +525,17 @@ check(
     f"max modulus change={max_modulus_error:.3e}",
 )
 check(
-    "five random local phase gauges per cell preserve the computed translation defect",
+    "five random local phase gauges per cell preserve the modulus defect",
     max_defect_error < 1e-12,
     f"max defect change={max_defect_error:.3e}",
 )
 
 
 # ---------------------------------------------------------------------------
-section("S6", "conditioning tables: site level primary, blocked algebra secondary")
+section("S6", "off-site-support tables; blocked algebra is secondary")
 
 
-def has_site_conditioning(matrix):
+def has_offsite_reception(matrix):
     off_diagonal = matrix - np.diag(np.diag(matrix))
     return bool(np.max(np.abs(off_diagonal)) > 1e-12)
 
@@ -480,23 +581,24 @@ def algebra_dimension(generators, tol=1e-10):
     return len(basis)
 
 
-site_conditioning = {
-    name: has_site_conditioning(matrix) for name, matrix in site_matrices.items()
+offsite_reception = {
+    name: has_offsite_reception(matrix) for name, matrix in site_matrices.items()
 }
 blocked_dimensions = {}
 for cell in cells:
     c_plus, c_minus = coefficient_blocks(cell)
     blocked_dimensions[cell["name"]] = algebra_dimension([c_plus, c_minus])
 
-print("name       site_NN_conditioning   blocked_cross_cell_algebra_dim")
+print("name       offsite_reception   blocked_cross_cell_algebra_dim")
 for cell in cells:
     name = cell["name"]
-    print(f"{name:<10} {str(site_conditioning[name]):<22} {blocked_dimensions[name]}")
-print("NOTE: blocked functional is blind to within-cell bonds: EXCHANGE has blocked dimension 1 despite genuine site-level conditioning.")
+    print(f"{name:<10} {str(offsite_reception[name]):<19} {blocked_dimensions[name]}")
+print("NOTE: off-site reception is a tick predicate, not a derived Admissibility availability map.")
+print("NOTE: blocked functional is blind to within-cell bonds: EXCHANGE has blocked dimension 1 despite off-site support.")
 
 check(
-    "site-level off-diagonal entries compute vacuity only for DIAGONAL",
-    site_conditioning == {
+    "site-level off-diagonal entries compute no off-site reception only for DIAGONAL",
+    offsite_reception == {
         "DIAGONAL": False,
         "EXCHANGE": True,
         "PAIRING": True,
@@ -504,7 +606,7 @@ check(
         "U_R": True,
         "U_L": True,
     },
-    f"site conditioning={site_conditioning}",
+    f"offsite reception={offsite_reception}",
 )
 check(
     "cross-cell coefficient closure computes the blocked algebra dimensions",
@@ -520,45 +622,48 @@ check(
 )
 check(
     "EXCHANGE exposes the computed blocked-functional blindness",
-    site_conditioning["EXCHANGE"] and blocked_dimensions["EXCHANGE"] == 1,
-    "site conditioning is nonvacuous while blocked dimension is 1",
+    offsite_reception["EXCHANGE"] and blocked_dimensions["EXCHANGE"] == 1,
+    "off-site reception is present while blocked dimension is 1",
 )
 
 
 # ---------------------------------------------------------------------------
-section("S7", "two-clause selection gate")
+section("S7", "conditional two-predicate representative gate")
 
 
-def clause_filter(cell_entries, require_translation, require_variation):
+def predicate_filter(cell_entries, require_modulus_homogeneity, require_offsite):
     survivors = []
     rows = []
     for label, cell in cell_entries:
         matrix = site_matrix(cell)
-        translation_ok = translation_defect(matrix) < 1e-12
-        variation_ok = has_site_conditioning(matrix)
-        survives = ((not require_translation) or translation_ok) and (
-            (not require_variation) or variation_ok
+        modulus_homogeneous = translation_modulus_defect(matrix) < 1e-12
+        offsite_supported = has_offsite_reception(matrix)
+        survives = ((not require_modulus_homogeneity) or modulus_homogeneous) and (
+            (not require_offsite) or offsite_supported
         )
-        rows.append((label, translation_ok, variation_ok, survives))
+        rows.append((label, modulus_homogeneous, offsite_supported, survives))
         if survives:
             survivors.append(label)
     return survivors, rows
 
 
 cell_entries = [(cell["name"], cell) for cell in cells]
-selected_survivors, selection_rows = clause_filter(
-    cell_entries, require_translation=np.array([1]).sum() == 1,
-    require_variation=np.array([2]).sum() == 2,
+selected_survivors, selection_rows = predicate_filter(
+    cell_entries, require_modulus_homogeneity=np.array([1]).sum() == 1,
+    require_offsite=np.array([2]).sum() == 2,
 )
-print("name       translation_clause   variation_clause   survives_both")
-for name, translation_ok, variation_ok, survives in selection_rows:
-    print(f"{name:<10} {str(translation_ok):<20} {str(variation_ok):<18} {survives}")
-print(f"two-clause survivors: {selected_survivors}")
+print("name       modulus_homogeneous   offsite_supported   survives_both")
+for name, modulus_homogeneous, offsite_supported, survives in selection_rows:
+    print(
+        f"{name:<10} {str(modulus_homogeneous):<21} "
+        f"{str(offsite_supported):<19} {survives}"
+    )
+print(f"two-predicate representative survivors: {selected_survivors}")
 selected_windings = {computed_windings[name] for name in selected_survivors}
 print(f"surviving windings: {sorted(selected_windings)}; no selection between the two windings")
 
 check(
-    "computed translation-and-variation filter leaves exactly U_R and U_L",
+    "representative predicate filter leaves exactly U_R and U_L",
     set(selected_survivors) == {"U_R", "U_L"} and len(selected_survivors) == 2,
     f"survivors={selected_survivors}",
 )
@@ -573,6 +678,52 @@ check(
 section("S8", "dichotomy composition: bands, slopes, curvature, and flatness")
 
 momentum_grid = np.linspace(-1.2, 1.2, 25)
+
+# Independent of representative parameters, the none/none, p/r, and q/s
+# strata have z-independent trace and determinant, hence a z-independent
+# characteristic polynomial.  The mover strata have zero trace and monomial
+# determinants.  These symbolic checks cover the continuous families.
+symbolic_trace = sp.expand(U_symbolic.trace())
+symbolic_det = sp.expand(U_symbolic.det())
+flat_stratum_substitutions = {
+    "none/none": {p: 0, q: 0, r: 0, s: 0},
+    "p/r": {q: 0, s: 0},
+    "q/s": {p: 0, r: 0},
+}
+flat_characteristic_rows = []
+for stratum, substitutions in flat_stratum_substitutions.items():
+    trace_value = sp.simplify(symbolic_trace.subs(substitutions))
+    det_value = sp.simplify(symbolic_det.subs(substitutions))
+    flat_characteristic_rows.append(
+        (
+            stratum,
+            trace_value,
+            det_value,
+            sp.simplify(sp.diff(trace_value, z)) == 0
+            and sp.simplify(sp.diff(det_value, z)) == 0,
+        )
+    )
+print("continuous flat-stratum characteristic polynomials:")
+for stratum, trace_value, det_value, independent in flat_characteristic_rows:
+    print(
+        f"  {stratum:<9} trace={trace_value}; det={det_value}; "
+        f"z_independent={independent}"
+    )
+check(
+    "all nonmover support strata have z-independent characteristic polynomials",
+    all(row[3] for row in flat_characteristic_rows),
+    "none/none, p/r, and q/s continuous families are spectrally flat",
+)
+
+qr_det = sp.factor(symbolic_det.subs({p: 0, s: 0, alpha: 0, delta: 0}))
+ps_det = sp.factor(symbolic_det.subs({q: 0, r: 0, alpha: 0, delta: 0}))
+check(
+    "mover strata have zero trace and opposite monomial determinant powers",
+    sp.simplify(symbolic_trace.subs({alpha: 0, delta: 0})) == 0
+    and sp.simplify(qr_det + q * r / z) == 0
+    and sp.simplify(ps_det + p * s * z) == 0,
+    f"q/r det={qr_det}; p/s det={ps_det}",
+)
 
 
 def unordered_pair_error(actual, expected):
@@ -633,41 +784,41 @@ check(
 
 
 # ---------------------------------------------------------------------------
-section("S9", "refutation legs R1 and R2")
+section("S9", "predicate-removal legs R1 and R2")
 
-variation_only, variation_rows = clause_filter(
-    cell_entries, require_translation=np.array([0]).sum() > 0,
-    require_variation=np.array([1]).sum() == 1,
+offsite_only, offsite_rows = predicate_filter(
+    cell_entries, require_modulus_homogeneity=np.array([0]).sum() > 0,
+    require_offsite=np.array([1]).sum() == 1,
 )
-translation_only, translation_rows = clause_filter(
-    cell_entries, require_translation=np.array([1]).sum() == 1,
-    require_variation=np.array([0]).sum() > 0,
+modulus_only, modulus_rows = predicate_filter(
+    cell_entries, require_modulus_homogeneity=np.array([1]).sum() == 1,
+    require_offsite=np.array([0]).sum() > 0,
 )
 flat_inventory = {"DIAGONAL", "EXCHANGE", "PAIRING", "UMIX"}
-flat_variation_survivors = set(variation_only) & flat_inventory
-print(f"R1 variation-only survivors: {variation_only}")
-print(f"R1 flat variation-only survivors: {sorted(flat_variation_survivors)}")
-print(f"R2 translation-only survivors: {translation_only}")
+flat_offsite_survivors = set(offsite_only) & flat_inventory
+print(f"R1 off-site-only representative survivors: {offsite_only}")
+print(f"R1 flat off-site-only representatives: {sorted(flat_offsite_survivors)}")
+print(f"R2 modulus-only representative survivors: {modulus_only}")
 
 check(
-    "R1 conditioning-only filter retains both movers and all three conditioned flat cells",
-    set(variation_only) == {"U_R", "U_L", "EXCHANGE", "PAIRING", "UMIX"},
-    f"survivors={variation_only}",
+    "R1 off-site-only filter retains both movers and all three off-site flat representatives",
+    set(offsite_only) == {"U_R", "U_L", "EXCHANGE", "PAIRING", "UMIX"},
+    f"survivors={offsite_only}",
 )
 check(
-    "R1 variation-only filter computes at least one flat survivor",
-    len(flat_variation_survivors) > 0,
-    f"flat survivors={sorted(flat_variation_survivors)}",
+    "R1 off-site-only filter computes flat survivors",
+    len(flat_offsite_survivors) > 0,
+    f"flat survivors={sorted(flat_offsite_survivors)}",
 )
 check(
-    "R2 translation-only filter retains DIAGONAL and both movers",
-    set(translation_only) == {"DIAGONAL", "U_R", "U_L"},
-    f"survivors={translation_only}",
+    "R2 modulus-only filter retains DIAGONAL and both movers",
+    set(modulus_only) == {"DIAGONAL", "U_R", "U_L"},
+    f"survivors={modulus_only}",
 )
 check(
-    "R2 translation-only filter computes survival of the vacuous DIAGONAL cell",
-    "DIAGONAL" in translation_only and not site_conditioning["DIAGONAL"],
-    "DIAGONAL survives and its site-level conditioning is false",
+    "R2 modulus-only filter retains the on-site DIAGONAL representative",
+    "DIAGONAL" in modulus_only and not offsite_reception["DIAGONAL"],
+    "DIAGONAL survives and off-site reception is false",
 )
 
 
@@ -683,16 +834,19 @@ wrong_entries = [
     ("EXCHANGE", exchange) if label == "U_R" else (label, cell)
     for label, cell in cell_entries
 ]
-wrong_survivors, wrong_rows = clause_filter(
-    wrong_entries, require_translation=np.array([1]).sum() == 1,
-    require_variation=np.array([1]).sum() == 1,
+wrong_survivors, wrong_rows = predicate_filter(
+    wrong_entries, require_modulus_homogeneity=np.array([1]).sum() == 1,
+    require_offsite=np.array([1]).sum() == 1,
 )
 
 print(f"R3 perturbed U_R torus-unitarity residual: {perturbed_residual:.12f}")
 print(f"R3 perturbed U_R classified unitary: {perturbed_unitary}")
 print("R4 wrong-inventory filter rows:")
-for name, translation_ok, variation_ok, survives in wrong_rows:
-    print(f"  {name:<10} translation={translation_ok} variation={variation_ok} survives={survives}")
+for name, modulus_homogeneous, offsite_supported, survives in wrong_rows:
+    print(
+        f"  {name:<10} modulus={modulus_homogeneous} "
+        f"offsite={offsite_supported} survives={survives}"
+    )
 print(f"R4 wrong-inventory survivors: {wrong_survivors}")
 
 check(
@@ -701,7 +855,7 @@ check(
     f"max residual={perturbed_residual:.12f}",
 )
 check(
-    "R4 replacing U_R by EXCHANGE changes the computed two-clause survivors",
+    "R4 replacing U_R by EXCHANGE changes the representative predicate survivors",
     set(wrong_survivors) != {"U_R", "U_L"} and set(wrong_survivors) == {"U_L"},
     f"wrong survivors={wrong_survivors}",
 )

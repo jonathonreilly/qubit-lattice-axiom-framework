@@ -20,6 +20,6 @@ no_go_routes:
   - physics-authority-import
 trace_gate_classification: direct_blocker_closure
 review_disposition: pass
-pr_status: pending
-next_exact_action: "Commit the reviewed block, push the dedicated branch, and open/verify its review PR."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5118"
+next_exact_action: "Allow PR #5118 CI and independent reviewers to evaluate the exact metadata-support block; do not apply an audit verdict from this branch."
 stop_condition: "The finite metadata predicate and cache pass, review disposition is pass, and delivery is packaged without a physics-status promotion."

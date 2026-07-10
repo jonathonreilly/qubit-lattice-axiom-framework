@@ -35,10 +35,13 @@ its content and the auditor's quoted scope.
 ## Delivery
 
 - Branch: `claude/science-fix/universal_qg_optional_textbook_comparison_note-447cbd9f`
-- Commit: pending.
-- Pull request: pending.
+- Science block commit: `9c43bce4677d3fbb474166be52ebad88d14d3c13`.
+- Pull request: [#5118](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5118).
+- PR verification: open, non-draft, mergeable; audit-lane CI queued at the
+  delivery checkpoint.
 
 ## Next exact action
 
-Commit the reviewed block, push the dedicated branch, and open/verify its
-review PR. Independent audit authority remains unchanged.
+Allow PR #5118 CI and independent reviewers to evaluate the exact metadata-
+support block. Independent audit authority remains unchanged; do not apply a
+verdict from this branch.

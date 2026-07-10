@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1736 |
+| unaudited | 1735 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 128 |
+| ~~audited_conditional~~ | 129 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 15 |
 | `audited_clean` | 1358 |
-| `audited_conditional` | 128 |
+| `audited_conditional` | 129 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2083 |
+| `unaudited` | 2082 |
 
 | claim_type | count |
 |---|---:|
@@ -1547,6 +1547,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `corner_axis_free_transfer_extension_per_channel_trace_correspondence_and_mode_set_fork_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `corner_mode_set_fork_resolution_layer_is_record_dynamics_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -4992,6 +4993,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Summing dihedral contributions across all tetrahedra in T(Z^3) containing a given interior edge gives sum_{T containing e} alpha_T(e) = 2*pi for every axis, face-diagonal, and body-diagonal edge.  _(class `A`)_
 - **chain closes:** True — The source note derives the canonical tetrahedron dihedral table and then checks the finite edge-star sums for the three edge classes. The corrected axis-edge enumeration is explicit enough, and the runner source performs genuine symbolic/numerical Euclidean geometry rather than importing a contested premise.
 - **rationale:** This is a standalone Euclidean algebra claim over the stipulated flat Coxeter triangulation, with no cited upstream authorities or physical bridge imports. The runner computes volumes, dihedral angles, and representative edge-star sums directly from vertex coordinates using sympy/numpy; it is not merely printing constants or reading another note. The repaired axis-edge proof replaces the earlier uniform-incidence shortcut with the correct finite-star accounting, preserving the zero-deficit conclusion.
+- **auditor confidence:** high
+
+### `cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10`
+
+- **Note:** [`CUBIC_COXETER_REGGE_OK4_LATTICE_FINGERPRINT_BOUNDED_THEOREM_NOTE_2026-06-10.md`](../../docs/CUBIC_COXETER_REGGE_OK4_LATTICE_FINGERPRINT_BOUNDED_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The sampled O(k⁴) deviation, gauge structure, full-form TT dispersion, cubic-symmetry enhancement, projected-form boundary, branch scan, and off-shell basis-fit results on the specified Z³ × Zτ Kuhn complex.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00013-cubic_coxeter_regge_ok4_latt`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Rank drops of the full 15×15 analytically continued Bloch form yield a machine-degenerate TT pair with sampled dispersion coefficient α(n̂) = −(1 + Σₐ n̂ₐ⁴)/12.  _(class `C`)_
+- **chain closes:** False — The runner independently constructs and supports the central sampled O(k⁴) fingerprint and TT dispersion. However, F9 tests only 221 isolated energy ratios, excludes |E²/k²−1|≤0.02, and performs no root bracketing or complex-plane scan, so it cannot establish the note's additional branch-exclusion statements.
+- **rationale:** Issue: the real-axis F9 predicate can miss an additional rank drop between grid points and deliberately leaves an untested neighborhood around the cone; the claimed complex off-axis scan is absent from the supplied code. Why this blocks: the note presents absence of another branch, rather than merely absence at the evaluated grid points, as part of its bounded result. Repair target: add root-bracketing or continuity-controlled minimization across the full window and the stated complex-plane search. Claim boundary until fixed: the sampled O(k⁴) scaling, candidate dispersion law, TT degeneracy, B₃ enhancement, and projection/off-shell results remain runner-supported, while branch exclusion does not.
 - **auditor confidence:** high
 
 ### `cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09`

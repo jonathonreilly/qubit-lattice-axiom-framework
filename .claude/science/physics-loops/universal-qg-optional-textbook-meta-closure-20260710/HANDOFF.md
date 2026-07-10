@@ -37,8 +37,8 @@ its content and the auditor's quoted scope.
 - Branch: `claude/science-fix/universal_qg_optional_textbook_comparison_note-447cbd9f`
 - Science block commit: `9c43bce4677d3fbb474166be52ebad88d14d3c13`.
 - Pull request: [#5118](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5118).
-- PR verification: open, non-draft, mergeable; audit-lane CI queued at the
-  delivery checkpoint.
+- PR verification after the delivery-metadata push: open, non-draft,
+  mergeable, and GitHub merge state `CLEAN`.
 
 ## Next exact action
 

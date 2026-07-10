@@ -282,6 +282,19 @@ from a retained-bounded source. This note still does not mark this parent row
 or any downstream row retained; independent audit must judge the composed
 parent claim.
 
+**2026-07-09 in-packet supplier for the plane-kernel / composed-Gram step.**
+The third factor's plane-kernel PSD and the integrated two-slice Gram PSD are
+now proved in-packet by
+[SU3_WILSON_PLANE_KERNEL_CHARACTER_POSITIVITY_AND_COMPOSED_GRAM_NARROW_THEOREM_NOTE_2026-07-09.md](SU3_WILSON_PLANE_KERNEL_CHARACTER_POSITIVITY_AND_COMPOSED_GRAM_NARROW_THEOREM_NOTE_2026-07-09.md):
+for every `beta >= 0` the `SU(3)` fundamental Wilson plane kernel
+`exp(beta Re tr W)` has nonnegative character coefficients, hence the
+reflection-plane kernel is positive semidefinite and the integrated two-slice
+temporal-gauge Gram is positive semidefinite on the stated `A_+^(2)` surface
+at any finite `L_s`. The paired reroute runner now evaluates the actual
+composed `SU(3)` form directly — the Haar-sampled plane-kernel Gram, the
+composed two-slice Gram at `L_s = 2` through that supplier's machinery, and a
+no-conjugation rejector — in place of the earlier synthetic product model.
+
 ### In-repo first-principles construction and proof (free case)
 
 This positivity is **derived in-repo from the staggered action**, not

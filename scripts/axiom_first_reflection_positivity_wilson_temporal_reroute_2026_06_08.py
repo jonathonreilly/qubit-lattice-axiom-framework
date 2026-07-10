@@ -23,6 +23,7 @@ if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
 import axiom_first_rp_two_step_transfer_matrix_positivity as base_runner
+import su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09 as su3_supplier
 
 
 NOTE_PATH = ROOT / "docs" / "AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
@@ -133,6 +134,8 @@ def check_reroute_guard() -> None:
         "G = W diag(kappa) W^dag",
         "composed parent claim still requires independent audit",
         "does **not** claim",
+        "SU3_WILSON_PLANE_KERNEL_CHARACTER_POSITIVITY_AND_COMPOSED_GRAM_NARROW_THEOREM_NOTE_2026-07-09.md",
+        "in place of the earlier synthetic product model",
     ]
     forbidden_phrases = [
         "the full interacting gauge closure remains limited to the named three-factor reduction claim",
@@ -160,6 +163,10 @@ def check_reroute_guard() -> None:
         "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": {
             "retained_bounded"
         },
+        "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09": {
+            "retained",
+            "retained_bounded",
+        },
     }
     status_ok = True
     status_details = []
@@ -176,22 +183,49 @@ def check_reroute_guard() -> None:
         status_details.append(f"{claim_id}:{got}")
     check("live dependency statuses retained-grade", status_ok, detail="; ".join(status_details))
 
-    mixed_kernel = np.array([0.41, 1.0, 2.7, 4.3])
-    determinant_weight = np.array([0.09, 0.8, 1.6, 3.2])
-    gauge_norm_square = np.abs(np.array([0.2 + 0.3j, -1.0 + 0.4j, 0.0 + 0.7j, 2.0])) ** 2
-    fermion_psd_expectation = np.array([0.0, 0.12, 1.4, 5.0])
-    integrand = mixed_kernel * determinant_weight * gauge_norm_square * fermion_psd_expectation
-    factors_nonnegative = min(
-        mixed_kernel.min(),
-        determinant_weight.min(),
-        gauge_norm_square.min(),
-        fermion_psd_expectation.min(),
-    ) >= 0.0
-    check("finite product model has nonnegative factors", factors_nonnegative)
+    rng = np.random.default_rng(20260710)
+    beta_kernel = 1.0
+    u = su3_supplier.haar_su3(64, rng)
+    overlap_dagger = np.einsum("nab,mab->nm", u, np.conj(u)).real
+    plane_gram = np.exp(beta_kernel * overlap_dagger)
+    plane_gram = (plane_gram + plane_gram.T) / 2.0
+    plane_min = float(np.linalg.eigvalsh(plane_gram)[0])
     check(
-        "finite product model has nonnegative composed integrand",
-        integrand.min() >= 0.0 and integrand.sum() > 0.0,
-        detail=f"min={integrand.min():.3e}, sum={integrand.sum():.3e}",
+        "actual SU(3) plane-kernel Haar Gram is positive semidefinite",
+        plane_min >= 1e-2,
+        detail=f"min eig={plane_min:+.3e} (n=64, beta={beta_kernel})",
+    )
+
+    overlap_nodagger = np.einsum("nab,mba->nm", u, u).real
+    wrong_gram = np.exp(beta_kernel * overlap_nodagger)
+    wrong_gram = (wrong_gram + wrong_gram.T) / 2.0
+    wrong_min = float(np.linalg.eigvalsh(wrong_gram)[0])
+    check(
+        "no-conjugation plane-kernel rejector is decisively non-PSD",
+        wrong_min < -1.0,
+        detail=f"min eig={wrong_min:+.3e}",
+    )
+
+    composed = su3_supplier.composed_mc(0.5, 100_000, rng)
+    composed_min = float(composed["eigenvalues"][0])
+    composed_threshold = max(3.0 * composed["mc_noise"], 5e-3)
+    check(
+        "actual composed two-slice SU(3) Gram is PSD within sampling error",
+        composed_min > -composed_threshold,
+        detail=f"min eig={composed_min:+.6e}, negative allowance={composed_threshold:.3e}",
+    )
+    check(
+        "composed-form sampling error is controlled",
+        composed["mc_noise"] < 0.05,
+        detail=f"mc_noise={composed['mc_noise']:.3e}",
+    )
+
+    control = su3_supplier.composed_mc(1.0, 100_000, rng, conjugate_reflected=False)
+    control_min = float(control["eigenvalues"][0])
+    check(
+        "no-conjugation composed control is non-PSD",
+        control_min < -1e-3,
+        detail=f"min eig={control_min:+.6e}",
     )
 
 

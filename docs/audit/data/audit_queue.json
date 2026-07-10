@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 431,
+    "critical": 430,
     "high": 249,
     "leaf": 746,
     "medium": 493
@@ -8547,32 +8547,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.py",
       "transitive_descendants": 486
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
-      "claim_scope": "Exact all-state flow and unitary-step pointer-persistence commutator criteria, the explicit finite controlled-copy record construction, and its stated counterexample and transfer-sector boundaries, conditional on the supplied carrier, pointer, Darwinism, singleton-readout, and fresh-or-idle-fragment hypotheses.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "key_terminology",
-        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "retained_pending_chain",
-      "helper_runner_paths": [],
-      "load_bearing_score": 17.925,
-      "note_path": "docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "audit_in_progress",
-      "ready": false,
-      "runner_path": "scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py",
-      "transitive_descendants": 485
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -58470,5 +58444,5 @@
     }
   ],
   "ready_count": 176,
-  "total_pending": 1919
+  "total_pending": 1918
 }

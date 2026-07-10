@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 18 |
-| `audited_clean` | 1339 |
+| `audit_in_progress` | 17 |
+| `audited_clean` | 1340 |
 | `audited_conditional` | 136 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 38 |
@@ -159,7 +159,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
-| `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | C | - |
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1130,6 +1129,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_formation_append_certification_bounded_note_2026-07-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.6 | C | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -17248,6 +17248,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The surviving no-go is only: the current minimal axioms do not force the formation rule/process/state/site/weight/rate.  _(class `A`)_
 - **chain closes:** True — The source note has narrowed away the old unforced-occurrence claim: the minimal axiom memo explicitly says Records form while leaving formation rules and record-production dynamics outside axiom content. The finite-dimensional negative controls support the same boundary by showing that trivial, decoupled, and eigenstate unitary surfaces do not supply a concrete process, rule, state trigger, site, weight, or rate.
 - **rationale:** The current runner completed with TOTAL: PASS=6 FAIL=0 and its cached output matches the narrowed target. The load-bearing claim follows from the accepted minimal axiom boundary plus exact finite-dimensional negative controls; it no longer asserts that generic record occurrence is absent. Residual risk is downstream only: a later admitted or derived record-production model could supply formation details, but that would be outside the minimal axiom baseline audited here.
+
+### `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`
+
+- **Note:** [`RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md`](../../docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The explicit finite S-plus-environment qubit model: exact flow- and step-level all-state pointer-population commutator criteria, the stated sufficient controlled-copy record construction, and its bounded demolition, locality, persistence, and nonunitary-transfer controls.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00009-record_formation_pointer_non`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** On the supplied finite qubit model, the Heisenberg and finite-step operator identities give the all-state pointer-persistence commutator criteria, while the specified controlled-copy Hamiltonian at t = pi/(4g) produces full redundant records under the stated Darwinism, singleton-readout, and fresh-or-idle-fragment hypotheses.  _(class `C`)_
+- **chain closes:** True — The runner directly constructs the finite operators and states and computes the commutators, entropies, fragment information, redundancy, persistence witnesses, and transfer-sector weights, closing with 56 passes and no failures. The Darwinism interpretation, singleton normalization, carrier, pointer, and allowed persistence steps are explicitly scoped model hypotheses rather than claimed consequences of the framework axioms.
+- **rationale:** The runner performs substantive dense-operator and information-theoretic calculations rather than merely printing expected constants. Its results support both commutator iff criteria, the controlled-copy construction, the noncommuting-logarithm and fresh-subspace witnesses, and the stated counterexamples. The note consistently limits the result to the supplied finite model and does not promote its model bridges into derived dynamics or a universal record-formation law.
+- **auditor confidence:** high
 
 ### `record_function_finite_sector_algebra_2026-06-05`
 

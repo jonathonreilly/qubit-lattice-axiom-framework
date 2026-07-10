@@ -1640,19 +1640,19 @@
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "claim_id": "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
       "claim_scope": "Finite-dimensional matrix identities showing that projection compression PEP is an effect, satisfies the stated trace identity and boundary cases, and composes as P(QFQ)P = (QP)^*F(QP), without measurement or probability semantics.",
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": "disagreement",
       "deps": [
         "minimal_axioms"
       ],
       "direct_in_degree": 2,
-      "effective_status": "retained_bounded",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 13.794,
       "note_path": "docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",

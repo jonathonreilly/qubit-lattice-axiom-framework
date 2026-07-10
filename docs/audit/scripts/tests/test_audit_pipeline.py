@@ -565,6 +565,8 @@ class SeedLedgerTest(unittest.TestCase):
         row_with_snapshot = {
             "claim_id": "test",
             "audit_status": "audited_clean",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
             "audit_state_snapshot": {"criticality": "high", "deps": []},
             "previous_audits": [],
         }
@@ -573,6 +575,14 @@ class SeedLedgerTest(unittest.TestCase):
         self.assertIsNone(new_row.get("audit_state_snapshot"))
         # Prior values archived
         self.assertEqual(len(new_row["previous_audits"]), 1)
+        self.assertEqual(
+            new_row["previous_audits"][0]["auditor_model"], "gpt-5.6-sol"
+        )
+        self.assertEqual(
+            new_row["previous_audits"][0]["auditor_reasoning_effort"], "xhigh"
+        )
+        self.assertIsNone(new_row["auditor_model"])
+        self.assertIsNone(new_row["auditor_reasoning_effort"])
 
     def test_existing_unaudited_row_clears_stale_audit_residue(self):
         m = _import("seed_audit_ledger")
@@ -608,10 +618,18 @@ class SeedLedgerTest(unittest.TestCase):
                         "runner_path": None,
                         "deps": [],
                         "note_hash": note_hash,
-                        "previous_audits": [{"verdict": "old"}],
+                        "previous_audits": [
+                            {
+                                "verdict": "old",
+                                "auditor": "stale-auditor",
+                                "auditor_family": "codex-gpt-5",
+                            }
+                        ],
                         "audit_status": "unaudited",
                         "auditor": "stale-auditor",
                         "auditor_family": "codex-gpt-5",
+                        "auditor_model": "gpt-5",
+                        "auditor_reasoning_effort": "high",
                         "independence": "fresh_context",
                         "load_bearing_step": "stale step",
                         "chain_closes": True,
@@ -631,6 +649,8 @@ class SeedLedgerTest(unittest.TestCase):
         self.assertEqual(row["audit_status"], "unaudited")
         self.assertIsNone(row["auditor"])
         self.assertIsNone(row["auditor_family"])
+        self.assertIsNone(row["auditor_model"])
+        self.assertIsNone(row["auditor_reasoning_effort"])
         self.assertIsNone(row["independence"])
         self.assertIsNone(row["load_bearing_step"])
         self.assertIsNone(row["chain_closes"])
@@ -639,7 +659,18 @@ class SeedLedgerTest(unittest.TestCase):
         self.assertEqual(row["claim_type"], "no_go")
         self.assertEqual(row["claim_type_provenance"], "migration_hint")
         self.assertIsNone(row["claim_scope"])
-        self.assertEqual(row["previous_audits"], [{"verdict": "old"}])
+        self.assertEqual(
+            row["previous_audits"],
+            [
+                {
+                    "verdict": "old",
+                    "auditor": "stale-auditor",
+                    "auditor_family": "codex-gpt-5",
+                    "auditor_model": "gpt-5",
+                    "auditor_reasoning_effort": "high",
+                }
+            ],
+        )
 
     def test_archived_failed_row_refreshes_note_hash(self):
         m = _import("seed_audit_ledger")
@@ -1709,6 +1740,27 @@ class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):
         if cc_status is not None:
             row["cross_confirmation"] = {"status": cc_status}
         return m._categorize_criticality_bump(row, target)
+
+    def test_hard_invalidation_archives_and_clears_exact_model_provenance(self):
+        m = _import("invalidate_stale_audits")
+        row = {
+            "claim_id": "test",
+            "audit_status": "audited_clean",
+            "auditor": "unique-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "claim_type": "bounded_theorem",
+            "claim_type_author_hint": "bounded_theorem",
+            "previous_audits": [],
+        }
+        reset = m.archive_and_reset(row, "note_hash_changed:old->new")
+        archived = reset["previous_audits"][-1]
+        self.assertEqual(archived["auditor_model"], "gpt-5.6-sol")
+        self.assertEqual(archived["auditor_reasoning_effort"], "xhigh")
+        self.assertIsNone(reset["auditor_model"])
+        self.assertIsNone(reset["auditor_reasoning_effort"])
 
     def test_bump_to_medium_is_always_noop(self):
         # No special requirement at medium. Even weak audits stay live.

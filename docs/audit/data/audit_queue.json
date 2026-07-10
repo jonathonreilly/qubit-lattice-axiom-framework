@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 399,
+    "critical": 398,
     "high": 266,
     "leaf": 755,
     "medium": 512
@@ -445,30 +445,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",
       "transitive_descendants": 499
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.352,
-      "note_path": "docs/HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/hopping_bilinear_hermiticity_check.py",
-      "transitive_descendants": 461
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -20117,6 +20093,33 @@
     },
     {
       "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "graph_first_su3_integration_note",
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+        "hopping_bilinear_hermiticity_theorem_note_2026-05-02"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.907,
+      "note_path": "docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/fiber_frame_local_redundancy_bridge_2026_06_09.py",
+      "transitive_descendants": 29
+    },
+    {
+      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "gate_b_connectivity_tolerance_note",
@@ -27254,33 +27257,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_record_instrument_kernel_interface_2026_06_05.py",
       "transitive_descendants": 34
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "graph_first_su3_integration_note",
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-        "hopping_bilinear_hermiticity_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.907,
-      "note_path": "docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/fiber_frame_local_redundancy_bridge_2026_06_09.py",
-      "transitive_descendants": 29
     },
     {
       "audit_independence_required": "any_non_self",
@@ -57766,5 +57742,5 @@
     }
   ],
   "ready_count": 216,
-  "total_pending": 1932
+  "total_pending": 1931
 }

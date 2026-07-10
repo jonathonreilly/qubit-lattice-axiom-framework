@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 936 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1817 |
+| unaudited | 1816 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 80 |
+| ~~audited_conditional~~ | 81 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1345 |
-| `audited_conditional` | 80 |
+| `audited_conditional` | 81 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2162 |
+| `unaudited` | 2161 |
 
 | claim_type | count |
 |---|---:|
@@ -1561,6 +1561,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_gauge_winding_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
@@ -18103,6 +18104,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On a Z^3 x Z_tau surface with spatial O_h and time parity, Q(p)=c_t p_tau^2+c_s(p_x^2+p_y^2+p_z^2) has two independent invariant coefficients, so spatial cubic symmetry allows c_t != c_s.  _(class `A`)_
 - **chain closes:** True — The signed-permutation action has two quadratic axis orbits under spatial O_h, time separate from the three spatial axes, and one orbit under B4. Sign symmetries eliminate off-diagonal quadratic terms, so the two-coefficient obstruction is not an artifact of restricting to diagonal forms.
 - **rationale:** The runner source performs finite exact group and invariant-space checks rather than merely printing constants, and the cached output matches the source note's quantitative claims. An independent orbit/sign-flip check confirms the load-bearing invariant-space count and the explicit anisotropic counterexample. The kinetic-isotropy primitive is an approved salvage premise in the packet, but it is not needed to prove the scoped no-go about spatial O_h alone. The no-go is clean only at that scope; it does not rule out Lorentz restoration after adding c_t=c_s, B4 symmetry, or another explicit bridge.
+- **auditor confidence:** high
+
+### `species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13`
+
+- **Note:** [`SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md`](../../docs/SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite 4^3 periodic staggered surface supports the derived M3(C) carrier, within-triplet equipartition, and C3-unitary equivalence of the two Hamming triplets; the broader zero-content conclusion was also audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-species_bridge_minimum_d-093`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The single C3 orbit and the unitary epsilon-intertwiner between the hw=1 and hw=2 carriers are asserted to imply that the residual bridge supplies no C3-grade number, selector, ordering, or weight.  _(class `C`)_
+- **chain closes:** False — The computation establishes the stated carrier equivalence and one orbit-averaged diagonal-weight example, but it does not prove the universal absence of C3-invariant selectors, orderings, weights, or other structural-selection data. The note itself acknowledges that the required invariant-functional analysis is missing.
+- **rationale:** The runner genuinely constructs the staggered operators and computes the new hw=1/hw=2 intertwining result rather than merely printing it. Checks 4, 7, and 8 support two specific vacuity witnesses, but check 9 promotes those witnesses into an exhaustive no-number/no-selector/no-ordering/no-weight conclusion without the full invariant-functional argument the source explicitly identifies as absent. The universal-color comparison is likewise asserted rather than independently established by the runner.
 - **auditor confidence:** high
 
 ### `spectral_closure_2026-04-09`

@@ -22,6 +22,9 @@ logs/runner-cache/d3_pilot_checkpoints/*.npz
 logs/runner-cache/d3_pilot_checkpoints/full_run_stdout.log
 logs/runner-cache/d3_pilot_checkpoints/full_run_progress.log
 logs/runner-cache/d3_engine_tables/
+logs/runner-cache/d3_bar_location_checkpoints/*.npz
+logs/runner-cache/d3_bar_location_checkpoints/full_run_stdout.log
+logs/runner-cache/d3_bar_location_checkpoints/full_run_progress.log
 .claude/worktrees/
 
 # Python virtual environments (per-developer, per-worktree).

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 387,
     "high": 265,
-    "leaf": 754,
+    "leaf": 753,
     "medium": 497
   },
   "cycle_break_target_count": 10,
@@ -34924,32 +34924,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28",
-        "abj_epsilon_index_square_block_no_go_note_2026-05-30",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.5,
-      "note_path": "docs/THETA_SUPPLIER_FLAVORED_GRADING_SPECTRAL_FLOW_REGISTERS_WINDING_2D_NARROW_THEOREM_NOTE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/theta_supplier_flavored_grading_spectral_flow_2026_07_02.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -56992,6 +56966,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 197,
-  "total_pending": 1903
+  "ready_count": 196,
+  "total_pending": 1902
 }

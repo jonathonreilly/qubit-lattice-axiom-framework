@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 938 |
+| **retained_bounded** | 939 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1797 |
+| unaudited | 1796 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -67,13 +67,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1348 |
+| `audited_clean` | 1349 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2142 |
+| `unaudited` | 2141 |
 
 | claim_type | count |
 |---|---:|
@@ -1362,6 +1362,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `third_grown_family_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `third_grown_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `third_grown_family_complex_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -20213,6 +20214,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Requiring the determinant phase character to be K/CPT-invariant gives exp(i k phi) = exp(-i k phi) for all phi, hence sin(k phi) = 0 for all phi, so k = 0.  _(class `A`)_
 - **chain closes:** True — The direct non-axiom dependencies are retained_bounded and the minimal-axiom node is an accepted premise/meta dependency. Within the explicitly supplied determinant-character channel, the conclusion is exact U(1) character algebra and the note expressly excludes gauge/action theta closure, Tier-A registry edits, and broader physical-readout exhaustion.
 - **rationale:** The audited scope is narrow enough to close: once the determinant-character readout class and K/CPT conjugation z -> conj(z) are supplied, the phase-character invariance equation forces k=0 without a hidden physical bridge. The retained bounded bridge notes supply only the bounded determinant-channel/readout context, while the strong-CP parent is consumed only as the retained bounded selected-surface premise allowed for this row. The live runner returns PASS=15 FAIL=0 and checks both the exact algebra and the source/dependency boundary guards; its legacy 2026-06-05 axiom path is not load-bearing because the current 2026-06-29 axiom note was read directly and preserves the needed no-readout-context boundary.
+- **auditor confidence:** high
+
+### `theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02`
+
+- **Note:** [`THETA_SUPPLIER_FLAVORED_GRADING_SPECTRAL_FLOW_REGISTERS_WINDING_2D_NARROW_THEOREM_NOTE_2026-07-02.md`](../../docs/THETA_SUPPLIER_FLAVORED_GRADING_SPECTRAL_FLOW_REGISTERS_WINDING_2D_NARROW_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact operator identities plus machine-verified flavored spectral-flow registration on periodic 2D U(1) staggered lattices with L in {8,12}, Q in {-2,-1,0,1,2}, the stated mass grids, one gauge transform, and the two seeded fixed-flux deformations.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00016-theta_supplier_flavored_grad`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Direct diagonalization of H(m) on the enumerated finite backgrounds gives flow(m) = N_neg(H(+m)) - N_neg(H(-m)) = -2Q throughout the tested mass grid.  _(class `C`)_
+- **chain closes:** True — The runner explicitly constructs the link shifts, staggered operator, flavored grading, and Hermitian families, then diagonalizes them with a zero-gap guard; it does not import or merely print the spectral counts. The retained upstream no-go results are compatible with this distinct flavored-flow functional and are not needed to manufacture its numerical result.
+- **rationale:** The load-bearing registration is a genuine finite-dimensional first-principles computation, while the Hermiticity, commutation, conjugation, covariance, and fixed-grading blindness checks are algebraic or independently computed controls. The expected -2Q target is not an externally calibrated value or tuned-scale match. Clean status applies only to the explicitly enumerated finite family; the packet does not prove invariance under every fixed-flux deformation or any 4D, SU(3), continuum, physical-theta, or record/readout identification.
 - **auditor confidence:** high
 
 ### `theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02`

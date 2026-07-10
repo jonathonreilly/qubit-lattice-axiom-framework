@@ -232,6 +232,7 @@ def mask_nonrendered_markdown(text: str) -> str:
     fence_len = 0
     paragraph_open = False
     indented_code = False
+    list_content_indent: int | None = None
     for line in text.splitlines(keepends=True):
         content = line
         container_offset = 0
@@ -243,18 +244,35 @@ def mask_nonrendered_markdown(text: str) -> str:
             content = content[container.end():]
         stripped = content.lstrip(" \t")
         indent = len(content) - len(stripped)
+        list_opener = re.match(
+            r"[ ]{0,3}(?:[*+-]|\d{1,9}[.)])(?:[ \t]+|(?=\r?$))",
+            content,
+        )
+        if list_opener:
+            list_content_indent = list_opener.end()
+        elif stripped.strip() and list_content_indent is not None and indent < list_content_indent:
+            list_content_indent = None
+        container_indent = (
+            indent - list_content_indent
+            if list_content_indent is not None and indent >= list_content_indent
+            else indent
+        )
         if fence_char is not None:
             closing = re.match(
                 rf"{re.escape(fence_char)}{{{fence_len},}}[ \t]*(?:\r?\n)?$",
                 stripped,
             )
             masked_lines.append("".join("\n" if ch == "\n" else " " for ch in line))
-            if indent <= 3 and closing:
+            if container_indent <= 3 and closing:
                 fence_char = None
                 fence_len = 0
                 paragraph_open = False
             continue
-        opener = re.match(r"(`{3,}|~{3,})", stripped) if indent <= 3 else None
+        opener = (
+            re.match(r"(`{3,}|~{3,})", stripped)
+            if container_indent <= 3
+            else None
+        )
         if opener:
             fence_char = opener.group(1)[0]
             fence_len = len(opener.group(1))
@@ -267,7 +285,7 @@ def mask_nonrendered_markdown(text: str) -> str:
             paragraph_open = False
             indented_code = False
             continue
-        if container_offset == 0 and line.startswith(("    ", "\t")) and (
+        if container_indent >= 4 and (
             indented_code or not paragraph_open
         ):
             masked_lines.append("".join("\n" if ch == "\n" else " " for ch in line))
@@ -304,11 +322,6 @@ def mask_nonrendered_markdown(text: str) -> str:
             delimiter = source[i:run_end]
             close = source.find(delimiter, run_end)
             while close >= 0:
-                close_backslashes = 0
-                escape_index = close - 1
-                while escape_index >= 0 and source[escape_index] == "\\":
-                    close_backslashes += 1
-                    escape_index -= 1
                 exact_run = not (
                     (close > 0 and source[close - 1] == "`")
                     or (
@@ -316,7 +329,9 @@ def mask_nonrendered_markdown(text: str) -> str:
                         and source[close + len(delimiter)] == "`"
                     )
                 )
-                if exact_run and close_backslashes % 2 == 0:
+                # Backslashes have no escaping role inside a CommonMark code
+                # span, so an exact matching run closes even after "\\".
+                if exact_run:
                     break
                 close = source.find(delimiter, close + len(delimiter))
             if close >= 0:

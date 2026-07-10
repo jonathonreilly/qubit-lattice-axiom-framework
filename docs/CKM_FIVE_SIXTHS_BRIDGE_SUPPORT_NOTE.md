@@ -2,6 +2,7 @@
 
 **Date:** 2026-04-16
 **Status:** bounded support tool for the down-type CKM-dual mass-ratio lane
+**Type:** bounded_theorem
 **Primary runner:** `scripts/frontier_ckm_five_sixths_bridge_support.py`
 
 ## Safe statement

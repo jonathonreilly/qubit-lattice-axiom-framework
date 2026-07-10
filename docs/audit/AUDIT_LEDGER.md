@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 927 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
-| unaudited | 1861 |
+| unaudited | 1860 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -55,7 +55,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
 | `decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
-| `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 1 |
+| `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 2 |
 | `decoration_under_three_generation_observable_theorem_note` | 4 |
 | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | 1 |
 | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | 1 |
@@ -65,20 +65,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 18 |
 | `audited_clean` | 1327 |
 | `audited_conditional` | 58 |
-| `audited_decoration` | 52 |
+| `audited_decoration` | 53 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2206 |
+| `unaudited` | 2205 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2038 |
-| `decoration` | 54 |
+| `decoration` | 55 |
 | `meta` | 351 |
 | `no_go` | 482 |
 | `open_gate` | 183 |
-| `positive_theorem` | 607 |
+| `positive_theorem` | 606 |
 
 | criticality | count |
 |---|---:|
@@ -1584,6 +1584,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `strong_cp_theta_zero_audited_scope_narrow_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_strong_cp_theta_zero_note` | weak | codex-gpt-5.5 | A | `strong_cp_theta_zero_note` |
 | `three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
+| `translation_abelian_composition_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.6 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | cross_family | codex-gpt-5.5 | A | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` |
 | `yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
@@ -19538,6 +19539,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner checks the finite algebra and arithmetic after these conventions are fixed.  _(class `A`)_
 - **chain closes:** True — The bounded certificate closes only after the source's explicit Hodge convention, Yang-Mills normalization, BPST density profile, and twisted-T4 charge formula are fixed as standard inputs. It does not derive Yang-Mills topology from Cl(3)/Z3 or close global smooth-bundle/existence theorems.
 - **rationale:** Clean only as a bounded finite certificate, not as a derivation of Yang-Mills topology from Cl(3)/Z3. The note makes the Hodge convention, Yang-Mills normalization, BPST density profile, and twisted-T4 charge formula explicit fixed inputs rather than hidden imports. Fresh-context independent checks confirmed *^2=1 and the Bogomolny inequality algebra, the BPST substitution gives 2*pi^2 * 4 = 8*pi^2, and the listed twist examples give k/N as claimed.
+- **auditor confidence:** high
+
+### `translation_abelian_composition_theorem_note_2026-05-02`
+
+- **Note:** [`TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md`](../../docs/TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Identity, abelian composition, adjoint inverse, and finite-quotient faithfulness of tensor-permutation translations on the retained finite periodic tensor-product Fock space.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-translation_abelian_comp-069`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For nonzero quotient translation a, the tensor permutation moves a one-occupied-site basis vector at x to the distinct orthonormal basis vector occupied at x+a, so T_a is not the identity.  _(class `A`)_
+- **chain closes:** True — The retained cited bridge supplies the translation definition, unitarity, group law, identity, and inverse. Commutativity and faithfulness then follow by finite quotient arithmetic and the explicit action on occupation-basis states.
+- **rationale:** The only cited authority is retained-grade, and the note correctly derives commutativity and faithfulness from its tensor-permutation representation using standard finite-group and basis-state algebra. The runner genuinely constructs the permutation matrices and checks the asserted identities; its separate retained-status lookup is a class-B bookkeeping check. Because the scientific chain is entirely class-A algebra over a single upstream parent with no external comparator, the decoration verdict applies.
+- **decoration parent:** `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
 - **auditor confidence:** high
 
 ### `triage_no_promotion_note`

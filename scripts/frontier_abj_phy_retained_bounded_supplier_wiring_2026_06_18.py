@@ -28,8 +28,10 @@ L2_MATTER_NOTE_NAME = "LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-
 L3_ALPHA_NOTE_NAME = "HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md"
 L2_MATTER_CLAIM_ID = "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
 L3_ALPHA_CLAIM_ID = "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
+L2_MATTER_PARENT_CLAIM_ID = "graph_first_su3_integration_note"
 DECORATION_PREFIX = "decoration_under_"
-RETAINED_POSITIVE_GRADES = {"retained", "retained_bounded"}
+RETAINED_GRADES = {"retained", "retained_bounded", "retained_no_go"}
+THEOREM_CLAIM_TYPES = {"bounded_theorem", "positive_theorem"}
 LH_SCOPE_NEEDLES = (
     "Bounded LH-doublet chain assembly",
     "commutant U(1) gives Y(Q_L)=+1/3, Y(L_L)=-1",
@@ -100,18 +102,21 @@ def ledger_row(claim_id: str) -> dict:
     return rows.get(claim_id) or {}
 
 
-def retained_or_decoration_under_retained(claim_id: str) -> tuple[bool, str]:
-    status = str(ledger_row(claim_id).get("effective_status") or "missing_row")
-    if status in RETAINED_POSITIVE_GRADES:
-        return True, status
-    if status.startswith(DECORATION_PREFIX):
-        parent_id = status.removeprefix(DECORATION_PREFIX)
-        parent_status = ledger_row(parent_id).get("effective_status")
-        return (
-            parent_status in RETAINED_POSITIVE_GRADES,
-            f"{status} (parent {parent_id}: {parent_status})",
-        )
-    return False, status
+def decoration_under_retained_parent(
+    claim_id: str, expected_parent_id: str
+) -> tuple[bool, str]:
+    row = ledger_row(claim_id)
+    status = str(row.get("effective_status") or "missing_row")
+    parent = ledger_row(expected_parent_id)
+    parent_status = parent.get("effective_status")
+    expected_status = f"{DECORATION_PREFIX}{expected_parent_id}"
+    return (
+        row.get("claim_type") == "decoration"
+        and status == expected_status
+        and parent.get("claim_type") in THEOREM_CLAIM_TYPES
+        and parent_status in RETAINED_GRADES,
+        f"{status} (parent {expected_parent_id}: {parent_status})",
+    )
 
 
 def test_current_supplier_status() -> None:
@@ -120,7 +125,7 @@ def test_current_supplier_status() -> None:
     effective_status = row.get("effective_status")
     check(
         "hypercharge_identification_note is retained-grade in the current ledger",
-        effective_status in RETAINED_POSITIVE_GRADES,
+        effective_status in RETAINED_GRADES,
         str(effective_status),
     )
     check(
@@ -146,16 +151,20 @@ def test_current_supplier_status() -> None:
         "ledger scope includes current exclusion needles",
         all(needle in scope for needle in EXCLUSION_SCOPE_NEEDLES),
     )
-    l2_ok, l2_detail = retained_or_decoration_under_retained(L2_MATTER_CLAIM_ID)
+    l2_ok, l2_detail = decoration_under_retained_parent(
+        L2_MATTER_CLAIM_ID, L2_MATTER_PARENT_CLAIM_ID
+    )
     check(
         "L2 matter-assignment authority satisfies current dependency-chain policy",
         l2_ok,
         l2_detail,
     )
-    l3_status = ledger_row(L3_ALPHA_CLAIM_ID).get("effective_status")
+    l3_row = ledger_row(L3_ALPHA_CLAIM_ID)
+    l3_status = l3_row.get("effective_status")
     check(
         "L3 alpha=1/3 normalization authority satisfies current dependency-chain policy",
-        l3_status in RETAINED_POSITIVE_GRADES,
+        l3_row.get("claim_type") in THEOREM_CLAIM_TYPES
+        and l3_status in RETAINED_GRADES,
         str(l3_status),
     )
 

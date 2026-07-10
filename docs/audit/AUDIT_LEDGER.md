@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 25 |
-| unaudited | 1760 |
+| unaudited | 1759 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 28 |
+| ~~audited_renaming~~ | 29 |
 | ~~audited_conditional~~ | 113 |
 | ~~audited_failed~~ | 10 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,8 +73,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 62 |
 | `audited_failed` | 32 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 28 |
-| `unaudited` | 2105 |
+| `audited_renaming` | 29 |
+| `unaudited` | 2104 |
 
 | claim_type | count |
 |---|---:|
@@ -1725,6 +1725,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
+| `flavor_logdet_factor_4a_source_action_identification_narrow_companion_note_2026-06-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | judicial_review | codex-gpt-5.6 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -7700,6 +7701,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The RP self-dual route gives r=1/2 only after passing to |b|, while the signed RP edges and trace/center facts leave multiple admissible readings rather than a native latitude quantizer.  _(class `A`)_
 - **chain closes:** True — The restricted packet closes as a bounded negative/boundary result by elementary algebra: the signed RP edges are distinct, the listed tracial functionals are both tracial on the commutative algebra R + C, and the HS metric supports distinct conditional readings without selecting one.
 - **rationale:** The note no longer presents r=1/2 or Q=2/3 as a positive framework derivation; it audits only a demotion/source-boundary claim. The displayed identities independently check out: cos^2((1,1,1),(1,1,0))=2/3, M2(C) idempotent ranks give only 0,1/2,1 after trace/dimension normalization, the RP signed edges are b=-a/2 and b=a, and the |b| geometric/arithmetic/signed-affine conventions yield 1/2, 9/16, and 1/16 respectively. The trace/center correction is also sound because R + C is commutative, so both equal-center and regular functionals are tracial and trace alone cannot select between them.
+- **auditor confidence:** high
+
+### `flavor_logdet_factor_4a_source_action_identification_narrow_companion_note_2026-06-04`
+
+- **Note:** [`FLAVOR_LOGDET_FACTOR_4A_SOURCE_ACTION_IDENTIFICATION_NARROW_COMPANION_NOTE_2026-06-04.md`](../../docs/FLAVOR_LOGDET_FACTOR_4A_SOURCE_ACTION_IDENTIFICATION_NARROW_COMPANION_NOTE_2026-06-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite, fixed-basis comparison of signed-record source weights with diagonal shifts of the two-Higgs canonical texture; no staggered-Dirac or physical-source identification was audited.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00058-flavor_logdet_factor_4a_sour`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The note identifies the signed-record coupling term -h_x epsilon_x with the matrix-projector coupling j_x P_x and declares them the same algebraic shape across the two surfaces.  _(class `F`)_
+- **chain closes:** False — The authorities establish the signed-record RN/action identity and the two-Higgs canonical support theorem separately, but no representation theorem identifies their source generators with one common projector family. Defining matrix site-locality to allow only the (x,x) entry makes diagonal uniqueness tautological rather than establishing that missing cross-surface bridge.
+- **rationale:** The retained authorities support two separate finite constructions, while the claimed common structural class is obtained by renaming the signed-record coupling as a rank-one matrix-projector shift. The runner does not establish that identification: T7 hard-codes the signed-record locality condition, and T6 enumerates only projectors already selected by its definition. T4 also tests only one off-cycle perturbation, although perturbations on the BC cycle support can remain inside A+B C.
+- **open / conditional deps cited:**
+  - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
 - **auditor confidence:** high
 
 ### `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04`

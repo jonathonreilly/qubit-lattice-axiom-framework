@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 387,
     "high": 265,
-    "leaf": 743,
+    "leaf": 742,
     "medium": 498
   },
   "cycle_break_target_count": 10,
@@ -36063,33 +36063,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "flavor_logdet_factor_4a_source_action_identification_narrow_companion_note_2026-06-04",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_logdet_generator_three_factor_provenance_2026-06-04",
-        "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04",
-        "yt_source_action_support_packet_note_2026-05-22",
-        "charged_lepton_two_higgs_canonical_reduction_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FLAVOR_LOGDET_FACTOR_4A_SOURCE_ACTION_IDENTIFICATION_NARROW_COMPANION_NOTE_2026-06-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/flavor_logdet_factor_4a_source_action_identification_2026_06_04.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_r_half_assumptions_audit_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -56727,6 +56700,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 186,
-  "total_pending": 1893
+  "ready_count": 185,
+  "total_pending": 1892
 }

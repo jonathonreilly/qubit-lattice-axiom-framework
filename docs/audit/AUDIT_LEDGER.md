@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 934 |
+| **retained_bounded** | 935 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1825 |
+| unaudited | 1824 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 12 |
-| `audited_clean` | 1343 |
+| `audited_clean` | 1344 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2170 |
+| `unaudited` | 2169 |
 
 | claim_type | count |
 |---|---:|
@@ -1316,6 +1316,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `symmetry_generated_paired_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `symmetry_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `symmetry_spectrum_mirror_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `taste_scalar_isotropy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `teleportation_3d1_causal_record_channel_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_3d_initial_ramp_probe_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5 | C | - |
@@ -19264,6 +19265,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Mirror symmetry can produce a genuine near-rank-2 signature, but only in the strict chokepoint pocket and only at small N; outside that pocket, the rank story is heuristic rather than a retained large-N mechanism.  _(class `C`)_
 - **chain closes:** True — Running the registered script with the note's stated N=15,25 and 16-seed setup reproduces the table: original mirror has lower s2/s1 than random-2layer at both sizes, while mirror-chokepoint has high s2/s1, effective rank near 2, and Born zero at machine precision in the small-N pocket.
 - **rationale:** The current runner reproduces the note's diagnostic table under the stated setup, and the note's conclusion stays bounded: support exists for a strict small-N mirror-chokepoint rank signature, not for a scalable large-N rank-protected architecture. The default runner window tests larger N and is not the note's quoted table, but it reinforces the same non-scalability boundary rather than contradicting the bounded claim.
+- **auditor confidence:** high
+
+### `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02`
+
+- **Note:** [`TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact isotropy of the Hessian of V_f(φ)=Σ_s f(λ_s(φ)²) at φ=(v,0,0) for the specified commuting three-shift binary taste block.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-taste_scalar_fermion_cw_-084`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** At φ=(v,0,0), uniform λ_s²=v² factorizes the Hessian as [2f'(v²)+4v²f''(v²)] Σ_s(-1)^{s_i+s_j}, and binary orthogonality makes the sum 8δ_{ij}.  _(class `A`)_
+- **chain closes:** True — The simultaneous eigenvalue formula follows directly from the specified tensor-product shift operators. Uniform λ_s² on the axis and the exact binary-character orthogonality sum then yield a common diagonal Hessian coefficient and zero off-diagonal entries.
+- **rationale:** The result is a genuine self-contained class-A algebraic closure on the explicitly bounded binary taste-block setup, not a definition, renaming, calibrated numerical match, or external comparison. The runner source independently enumerates the binary states and evaluates the orthogonality and Hessian expressions at exact rational precision. The physical staggered-Dirac pointer is explicitly non-load-bearing, and the accepted axiom authority supplies no unresolved premise needed by the proof.
 - **auditor confidence:** high
 
 ### `taste_scalar_isotropy_theorem_note`

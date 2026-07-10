@@ -1,0 +1,352 @@
+===== runner cache v1 =====
+runner: scripts/tick_cell_selection_by_translation_and_variation_clauses_2026_07_09.py
+runner_sha256: ea0c80b43e4cad0f91c5608f0adf1cefc99602df8c5b079cb0d498f6c39f578e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+NOTE CONSTANTS: date=2026-07-09; lattice=Z^3; site algebra=M_2(C); period-2; one-axis
+NOTE CONSTANTS: U(1); L=8; site_matrix=8x8; theta=pi/4 in (0, pi/2]; gauge seeds=5; phase seeds=3
+NAMED CONDITIONALS: site-strict license reading; unitary-tick reading; period-2; one-axis
+SUPPLIED OPEN BRIDGE: tick--Admissibility realization; this runner does not derive it
+BOUNDARY: no OS0/readout result; no primitive or Tier-A registry change
+DEPENDENCY DATES: 2026-06-09; 2026-06-10; 2026-07-02; 2026-06-29
+RUNNER CACHE: logs/runner-cache/tick_cell_selection_by_translation_and_variation_clauses_2026_07_09.txt
+
+(S1) licensed family and symbolic unitarity collapse
+========================================================================================
+licensed offsets:
+  A<-A: [0]
+  A<-B: [-1, 0]
+  B<-A: [0, 1]
+  B<-B: [0]
+symbolic family: U(z)=Matrix([[alpha, p + q/z], [r + s*z, delta]])
+torus row-norm Laurent probes:
+  coeff[z,+1] of |p+q/z|^2 = p*conjugate(q)
+  coeff[z,+1] of |r+s*z|^2 = s*conjugate(r)
+row-orthogonality Laurent probes:
+  coeff[z,-1] = alpha*conjugate(s) + q*conjugate(delta)
+  coeff[z,+0] = alpha*conjugate(r) + p*conjugate(delta)
+  coeff[z,+1] = 0
+computed nonzero support branches:
+  none/none
+  p/r
+  p/s
+  q/r
+  q/s
+  [PASS] site-distance enumeration produces the licensed Bloch coefficients  --  offset table={('A', 'A'): [0], ('A', 'B'): [-1, 0], ('B', 'A'): [0, 1], ('B', 'B'): [0]}
+  [PASS] torus row norms compute the two single-monomial constraints  --  p*conjugate(q)=0 and s*conjugate(r)=0
+  [PASS] normalization balance plus monomial constraints computes five support branches  --  branches=[('none', 'none'), ('p', 'r'), ('p', 's'), ('q', 'r'), ('q', 's')]
+q/r branch orthogonality coefficients: {-1: q*conjugate(delta), 0: alpha*conjugate(r), 1: 0}
+p/s branch orthogonality coefficients: {-1: alpha*conjugate(s), 0: p*conjugate(delta), 1: 0}
+  [PASS] orthogonality computes zero diagonal amplitudes on both mover branches  --  nonzero q,r or p,s force alpha=delta=0
+class-wide support-stratum predicate table:
+  stratum     modulus_homogeneous   offsite_supported   survives
+  none/none   True                  False               False
+  p/r         False                 True                False
+  p/s         True                  True                True
+  q/r         True                  True                True
+  q/s         False                 True                False
+  [PASS] one-site modulus equalities classify every continuous support stratum  --  class survivors=['p/s', 'q/r']
+  [PASS] both nontrivial flat support strata fail one-site modulus homogeneity  --  p/r and q/s fail unless their hops collapse to the on-site stratum
+
+(S2) cell inventory table
+========================================================================================
+name       branch     determinant       winding   max_unitarity_residual
+DIAGONAL   none/none  1                 +0        0.000e+00
+EXCHANGE   p/r        -1                +0        0.000e+00
+PAIRING    q/s        -1                +0        2.220e-16
+UMIX       q/s        1                 +0        1.110e-16
+U_R        q/r        -1/z              -1        2.220e-16
+U_L        p/s        -z                +1        2.220e-16
+  [PASS] constructed inventory contains the six named unitary cell representatives  --  names=['DIAGONAL', 'EXCHANGE', 'PAIRING', 'UMIX', 'U_L', 'U_R']
+  [PASS] inventory representatives occupy every symbolically computed support branch  --  inventory branches=['none/none', 'p/r', 'p/s', 'q/r', 'q/s']
+  [PASS] determinants compute mover windings -1 and +1 and zero for every flat-cell representative  --  windings={'DIAGONAL': 0, 'EXCHANGE': 0, 'PAIRING': 0, 'UMIX': 0, 'U_R': -1, 'U_L': 1}
+
+(S3) site-level unrolling and reception-pattern probe table
+========================================================================================
+
+DIAGONAL modulus matrix:
+[[1. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 1.]]
+DIAGONAL reception rows:
+  site 0 <- ON:1.000000
+  site 1 <- ON:1.000000
+  site 2 <- ON:1.000000
+  site 3 <- ON:1.000000
+  site 4 <- ON:1.000000
+  site 5 <- ON:1.000000
+  site 6 <- ON:1.000000
+  site 7 <- ON:1.000000
+
+EXCHANGE modulus matrix:
+[[0. 1. 0. 0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0. 1. 0.]]
+EXCHANGE reception rows:
+  site 0 <- RIGHT:1.000000
+  site 1 <- LEFT:1.000000
+  site 2 <- RIGHT:1.000000
+  site 3 <- LEFT:1.000000
+  site 4 <- RIGHT:1.000000
+  site 5 <- LEFT:1.000000
+  site 6 <- RIGHT:1.000000
+  site 7 <- LEFT:1.000000
+
+PAIRING modulus matrix:
+[[0. 0. 0. 0. 0. 0. 0. 1.]
+ [0. 0. 1. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 1. 0. 0.]
+ [1. 0. 0. 0. 0. 0. 0. 0.]]
+PAIRING reception rows:
+  site 0 <- LEFT:1.000000
+  site 1 <- RIGHT:1.000000
+  site 2 <- LEFT:1.000000
+  site 3 <- RIGHT:1.000000
+  site 4 <- LEFT:1.000000
+  site 5 <- RIGHT:1.000000
+  site 6 <- LEFT:1.000000
+  site 7 <- RIGHT:1.000000
+
+UMIX modulus matrix:
+[[0.707107 0.       0.       0.       0.       0.       0.       0.707107]
+ [0.       0.707107 0.707107 0.       0.       0.       0.       0.      ]
+ [0.       0.707107 0.707107 0.       0.       0.       0.       0.      ]
+ [0.       0.       0.       0.707107 0.707107 0.       0.       0.      ]
+ [0.       0.       0.       0.707107 0.707107 0.       0.       0.      ]
+ [0.       0.       0.       0.       0.       0.707107 0.707107 0.      ]
+ [0.       0.       0.       0.       0.       0.707107 0.707107 0.      ]
+ [0.707107 0.       0.       0.       0.       0.       0.       0.707107]]
+UMIX reception rows:
+  site 0 <- ON:0.707107, LEFT:0.707107
+  site 1 <- ON:0.707107, RIGHT:0.707107
+  site 2 <- ON:0.707107, LEFT:0.707107
+  site 3 <- ON:0.707107, RIGHT:0.707107
+  site 4 <- ON:0.707107, LEFT:0.707107
+  site 5 <- ON:0.707107, RIGHT:0.707107
+  site 6 <- ON:0.707107, LEFT:0.707107
+  site 7 <- ON:0.707107, RIGHT:0.707107
+
+U_R modulus matrix:
+[[0. 0. 0. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0.]]
+U_R reception rows:
+  site 0 <- LEFT:1.000000
+  site 1 <- LEFT:1.000000
+  site 2 <- LEFT:1.000000
+  site 3 <- LEFT:1.000000
+  site 4 <- LEFT:1.000000
+  site 5 <- LEFT:1.000000
+  site 6 <- LEFT:1.000000
+  site 7 <- LEFT:1.000000
+
+U_L modulus matrix:
+[[0. 1. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 1.]
+ [1. 0. 0. 0. 0. 0. 0. 0.]]
+U_L reception rows:
+  site 0 <- RIGHT:1.000000
+  site 1 <- RIGHT:1.000000
+  site 2 <- RIGHT:1.000000
+  site 3 <- RIGHT:1.000000
+  site 4 <- RIGHT:1.000000
+  site 5 <- RIGHT:1.000000
+  site 6 <- RIGHT:1.000000
+  site 7 <- RIGHT:1.000000
+  [PASS] unrolled site matrices compute the six stated reception-direction patterns  --  patterns={'DIAGONAL': [['ON'], ['ON'], ['ON'], ['ON'], ['ON'], ['ON'], ['ON'], ['ON']], 'EXCHANGE': [['RIGHT'], ['LEFT'], ['RIGHT'], ['LEFT'], ['RIGHT'], ['LEFT'], ['RIGHT'], ['LEFT']], 'PAIRING': [['LEFT'], ['RIGHT'], ['LEFT'], ['RIGHT'], ['LEFT'], ['RIGHT'], ['LEFT'], ['RIGHT']], 'UMIX': [['ON', 'LEFT'], ['ON', 'RIGHT'], ['ON', 'LEFT'], ['ON', 'RIGHT'], ['ON', 'LEFT'], ['ON', 'RIGHT'], ['ON', 'LEFT'], ['ON', 'RIGHT']], 'U_R': [['LEFT'], ['LEFT'], ['LEFT'], ['LEFT'], ['LEFT'], ['LEFT'], ['LEFT'], ['LEFT']], 'U_L': [['RIGHT'], ['RIGHT'], ['RIGHT'], ['RIGHT'], ['RIGHT'], ['RIGHT'], ['RIGHT'], ['RIGHT']]}
+  [PASS] every unrolled named cell is unitary on the eight-site ring  --  all 8x8 residuals below 1e-12
+
+(S4) one-site modulus-homogeneity necessary-condition table
+========================================================================================
+name       one_site_modulus_defect
+DIAGONAL   0.000000000000
+EXCHANGE   1.000000000000
+PAIRING    1.000000000000
+UMIX       0.707106781187
+U_R        0.000000000000
+U_L        0.000000000000
+  [PASS] representative modulus defects vanish exactly for DIAGONAL and both movers  --  zero-defect reps=['DIAGONAL', 'U_R', 'U_L']
+  [PASS] representative modulus defects are positive for every alternating cell  --  alternating defects={'EXCHANGE': 1.0, 'PAIRING': 1.0, 'UMIX': 0.7071067811865475}
+UMIX theta probes (theta/pi, defect):
+  0.062500  0.195090322016
+  0.125000  0.382683432365
+  0.187500  0.555570233020
+  0.250000  0.707106781187
+  0.312500  0.831469612303
+  0.375000  0.923879532511
+  0.437500  0.980785280403
+  0.500000  1.000000000000
+  [PASS] positive UMIX angles through pi/2 compute positive translation defect  --  minimum sampled defect=0.195090322016
+continuous flat-family probes (stratum, theta/pi, unitary, defect, |defect-sin(theta)|):
+  p/r 0.062500 2.729e-19 0.195090322016 0.000e+00
+  q/s 0.062500 0.000e+00 0.195090322016 0.000e+00
+  p/r 0.125000 2.163e-17 0.382683432365 0.000e+00
+  q/s 0.125000 0.000e+00 0.382683432365 0.000e+00
+  p/r 0.187500 2.439e-17 0.555570233020 0.000e+00
+  q/s 0.187500 0.000e+00 0.555570233020 0.000e+00
+  p/r 0.250000 1.015e-17 0.707106781187 0.000e+00
+  q/s 0.250000 0.000e+00 0.707106781187 0.000e+00
+  p/r 0.312500 5.684e-18 0.831469612303 0.000e+00
+  q/s 0.312500 0.000e+00 0.831469612303 0.000e+00
+  p/r 0.375000 2.586e-17 0.923879532511 0.000e+00
+  q/s 0.375000 0.000e+00 0.923879532511 0.000e+00
+  p/r 0.437500 1.873e-18 0.980785280403 0.000e+00
+  q/s 0.437500 0.000e+00 0.980785280403 0.000e+00
+  p/r 0.500000 0.000e+00 1.000000000000 0.000e+00
+  q/s 0.500000 0.000e+00 1.000000000000 0.000e+00
+  [PASS] continuous p/r and q/s probes are unitary and fail modulus homogeneity away from on-site  --  both continuous flat strata probed at eight nonzero angles
+  [PASS] continuous flat-family modulus defect independently matches |sin(theta)|  --  max formula error=0.000e+00
+
+(S5) local U(1) gauge invariance of modulus homogeneity
+========================================================================================
+name       seed   max_modulus_change   defect_change
+DIAGONAL   0      1.110e-16             1.110e-16
+DIAGONAL   1      1.110e-16             1.110e-16
+DIAGONAL   2      1.110e-16             1.110e-16
+DIAGONAL   3      2.220e-16             2.220e-16
+DIAGONAL   4      2.220e-16             3.331e-16
+EXCHANGE   0      0.000e+00             0.000e+00
+EXCHANGE   1      2.220e-16             0.000e+00
+EXCHANGE   2      2.220e-16             2.220e-16
+EXCHANGE   3      2.220e-16             2.220e-16
+EXCHANGE   4      0.000e+00             0.000e+00
+PAIRING    0      2.220e-16             2.220e-16
+PAIRING    1      1.110e-16             0.000e+00
+PAIRING    2      1.110e-16             0.000e+00
+PAIRING    3      1.110e-16             0.000e+00
+PAIRING    4      2.220e-16             2.220e-16
+UMIX       0      1.110e-16             0.000e+00
+UMIX       1      1.110e-16             1.110e-16
+UMIX       2      1.110e-16             0.000e+00
+UMIX       3      1.110e-16             1.110e-16
+UMIX       4      1.110e-16             1.110e-16
+U_R        0      2.220e-16             3.331e-16
+U_R        1      2.220e-16             2.220e-16
+U_R        2      2.220e-16             2.220e-16
+U_R        3      2.220e-16             2.220e-16
+U_R        4      2.220e-16             2.220e-16
+U_L        0      2.220e-16             2.220e-16
+U_L        1      2.220e-16             1.110e-16
+U_L        2      2.220e-16             2.220e-16
+U_L        3      1.110e-16             1.110e-16
+U_L        4      1.110e-16             1.110e-16
+  [PASS] five random local phase gauges per cell preserve every matrix-element modulus  --  max modulus change=2.220e-16
+  [PASS] five random local phase gauges per cell preserve the modulus defect  --  max defect change=3.331e-16
+
+(S6) off-site-support tables; blocked algebra is secondary
+========================================================================================
+name       offsite_reception   blocked_cross_cell_algebra_dim
+DIAGONAL   False               1
+EXCHANGE   True                1
+PAIRING    True                4
+UMIX       True                4
+U_R        True                4
+U_L        True                4
+NOTE: off-site reception is a tick predicate, not a derived Admissibility availability map.
+NOTE: blocked functional is blind to within-cell bonds: EXCHANGE has blocked dimension 1 despite off-site support.
+  [PASS] site-level off-diagonal entries compute no off-site reception only for DIAGONAL  --  offsite reception={'DIAGONAL': False, 'EXCHANGE': True, 'PAIRING': True, 'UMIX': True, 'U_R': True, 'U_L': True}
+  [PASS] cross-cell coefficient closure computes the blocked algebra dimensions  --  blocked dimensions={'DIAGONAL': 1, 'EXCHANGE': 1, 'PAIRING': 4, 'UMIX': 4, 'U_R': 4, 'U_L': 4}
+  [PASS] EXCHANGE exposes the computed blocked-functional blindness  --  off-site reception is present while blocked dimension is 1
+
+(S7) conditional two-predicate representative gate
+========================================================================================
+name       modulus_homogeneous   offsite_supported   survives_both
+DIAGONAL   True                  False               False
+EXCHANGE   False                 True                False
+PAIRING    False                 True                False
+UMIX       False                 True                False
+U_R        True                  True                True
+U_L        True                  True                True
+two-predicate representative survivors: ['U_R', 'U_L']
+surviving windings: [-1, 1]; no selection between the two windings
+  [PASS] representative predicate filter leaves exactly U_R and U_L  --  survivors=['U_R', 'U_L']
+  [PASS] computed survivor windings contain both signs  --  windings=[-1, 1]
+
+(S8) dichotomy composition: bands, slopes, curvature, and flatness
+========================================================================================
+continuous flat-stratum characteristic polynomials:
+  none/none trace=alpha + delta; det=alpha*delta; z_independent=True
+  p/r       trace=alpha + delta; det=alpha*delta - p*r; z_independent=True
+  q/s       trace=alpha + delta; det=alpha*delta - q*s; z_independent=True
+  [PASS] all nonmover support strata have z-independent characteristic polynomials  --  none/none, p/r, and q/s continuous families are spectrally flat
+  [PASS] mover strata have zero trace and opposite monomial determinant powers  --  q/r det=-q*r/z; p/s det=-p*s*z
+mover   cell_slope   edge_speed   curvature   max_grid_band_error
+U_R     -1/2         1            0           4.743e-16
+U_L     1/2          1            0           7.109e-16
+flat-cell spectral variation over momentum grid:
+  EXCHANGE   0.000e+00
+  PAIRING    8.899e-16
+  UMIX       5.551e-16
+  [PASS] mover momentum-grid spectra match exactly linear half-cell-slope bands  --  max grid error=7.109e-16
+  [PASS] symbolic mover slopes compute one edge per tick with zero curvature  --  cell slopes=-1/2,+1/2; edge speed=1; curvature=0
+  [PASS] EXCHANGE, PAIRING, and UMIX momentum-grid bands compute flat  --  spectral variations={'EXCHANGE': 0.0, 'PAIRING': 8.899114524108741e-16, 'UMIX': 5.551115123125783e-16}
+
+(S9) predicate-removal legs R1 and R2
+========================================================================================
+R1 off-site-only representative survivors: ['EXCHANGE', 'PAIRING', 'UMIX', 'U_R', 'U_L']
+R1 flat off-site-only representatives: ['EXCHANGE', 'PAIRING', 'UMIX']
+R2 modulus-only representative survivors: ['DIAGONAL', 'U_R', 'U_L']
+  [PASS] R1 off-site-only filter retains both movers and all three off-site flat representatives  --  survivors=['EXCHANGE', 'PAIRING', 'UMIX', 'U_R', 'U_L']
+  [PASS] R1 off-site-only filter computes flat survivors  --  flat survivors=['EXCHANGE', 'PAIRING', 'UMIX']
+  [PASS] R2 modulus-only filter retains DIAGONAL and both movers  --  survivors=['DIAGONAL', 'U_R', 'U_L']
+  [PASS] R2 modulus-only filter retains the on-site DIAGONAL representative  --  DIAGONAL survives and off-site reception is false
+
+(S10) rejector legs R3 and R4
+========================================================================================
+R3 perturbed U_R torus-unitarity residual: 0.190000000000
+R3 perturbed U_R classified unitary: False
+R4 wrong-inventory filter rows:
+  DIAGONAL   modulus=True offsite=False survives=False
+  EXCHANGE   modulus=False offsite=True survives=False
+  PAIRING    modulus=False offsite=True survives=False
+  UMIX       modulus=False offsite=True survives=False
+  EXCHANGE   modulus=False offsite=True survives=False
+  U_L        modulus=True offsite=True survives=True
+R4 wrong-inventory survivors: ['U_L']
+  [PASS] R3 amplitude-0.9 U_R perturbation fails torus unitarity  --  max residual=0.190000000000
+  [PASS] R4 replacing U_R by EXCHANGE changes the representative predicate survivors  --  wrong survivors=['U_L']
+
+(S11) phase-uniformizability of both movers
+========================================================================================
+mover   seed   global_phase_arg   product_error   uniform_hop_error   full_covariance_error
+U_R     0      +0.092467519914    4.003e-16       2.424e-16             2.220e-16
+U_L     0      +0.372558134141    1.388e-16       2.483e-16             1.241e-16
+U_R     1      +0.058778443624    4.003e-16       3.337e-16             3.775e-16
+U_L     1      -0.114711201865    2.220e-16       1.671e-16             1.110e-16
+U_R     2      +0.068301758968    4.578e-16       2.225e-16             0.000e+00
+U_L     2      -0.095723874778    4.003e-16       1.119e-16             1.144e-16
+ring condition: L=8 is even; the computed global phase obeys g^L=product(hop phases)
+  [PASS] three random phase seeds per mover satisfy the cyclic product condition  --  max product error=4.578e-16
+  [PASS] explicit local phase gauges make every mover hop phase uniform  --  max uniform-hop error=3.337e-16
+  [PASS] gauged mover matrices compute full one-site translation covariance  --  max covariance error=3.775e-16
+TOTAL: PASS=37 FAIL=0
+
+----- stderr -----
+

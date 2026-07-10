@@ -173,6 +173,8 @@ ARCHIVED_FIELDS = [
     "audit_date",
     "auditor",
     "auditor_family",
+    "auditor_model",
+    "auditor_reasoning_effort",
     "independence",
     "load_bearing_step",
     "load_bearing_step_class",
@@ -182,6 +184,7 @@ ARCHIVED_FIELDS = [
     "open_dependency_paths",
     "decoration_parent_claim_id",
     "auditor_confidence",
+    "no_go_discipline",
     "runner_check_breakdown",
     "blocker",
     "audit_state_snapshot",
@@ -198,6 +201,8 @@ EMPTY_AFTER_INVALIDATION = {
     "audit_date": None,
     "auditor": None,
     "auditor_family": None,
+    "auditor_model": None,
+    "auditor_reasoning_effort": None,
     "independence": None,
     "load_bearing_step": None,
     "load_bearing_step_class": None,
@@ -518,6 +523,7 @@ def archive_and_reset(row: dict, reason: str) -> dict:
             new_row[k] = dict(v)
         else:
             new_row[k] = v
+    new_row.pop("no_go_discipline", None)
     source_hint = row.get("claim_type_author_hint")
     if source_hint in CLAIM_TYPES:
         new_row["claim_type"] = source_hint
@@ -545,19 +551,22 @@ def soft_reset_to_cross_confirmation_pending(row: dict, reason: str) -> dict:
     new_row = dict(row)
     # Build the first_audit summary mirroring
     # apply_audit.audit_summary_from_row exactly.
+    first_audit = {
+        "auditor": row.get("auditor"),
+        "auditor_family": row.get("auditor_family"),
+        "auditor_model": row.get("auditor_model"),
+        "auditor_reasoning_effort": row.get("auditor_reasoning_effort"),
+        "independence": row.get("independence"),
+        "audit_date": row.get("audit_date"),
+        "claim_type": row.get("claim_type"),
+        "claim_scope": row.get("claim_scope"),
+        "load_bearing_step_class": row.get("load_bearing_step_class"),
+        "verdict": row.get("audit_status"),
+    }
+    if row.get("no_go_discipline") is not None:
+        first_audit["no_go_discipline"] = row.get("no_go_discipline")
     new_row["cross_confirmation"] = {
-        "first_audit": {
-            "auditor": row.get("auditor"),
-            "auditor_family": row.get("auditor_family"),
-            "auditor_model": row.get("auditor_model"),
-            "auditor_reasoning_effort": row.get("auditor_reasoning_effort"),
-            "independence": row.get("independence"),
-            "audit_date": row.get("audit_date"),
-            "claim_type": row.get("claim_type"),
-            "claim_scope": row.get("claim_scope"),
-            "load_bearing_step_class": row.get("load_bearing_step_class"),
-            "verdict": row.get("audit_status"),
-        },
+        "first_audit": first_audit,
         "second_audit": None,
         "status": "awaiting_second",
     }

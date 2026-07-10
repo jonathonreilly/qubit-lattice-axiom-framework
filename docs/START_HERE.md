@@ -10,7 +10,7 @@ Use this order if you want the shortest route from current repo status to
 paper, predictions, claims, and validation:
 
 1. [Generated front-door status snapshot](repo/FRONT_DOOR_STATUS.md)
-2. [Minimal axiom memo](MINIMAL_AXIOMS_2026-06-05.md)
+2. [Minimal axiom memo](MINIMAL_AXIOMS_2026-06-29.md)
 3. [Publication package README](publication/ci3_z3/README.md)
 4. [Current falsifiable predictions](publication/ci3_z3/FALSIFIABLE_PREDICTIONS_2026-06-08.md)
 5. [Public arXiv draft](publication/ci3_z3/ARXIV_DRAFT.md)
@@ -37,7 +37,7 @@ For domain-oriented navigation, use:
 
 For the accepted package inputs, use:
 
-- [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)
+- [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md)
 
 For optional framework-compression / reduction context, use:
 

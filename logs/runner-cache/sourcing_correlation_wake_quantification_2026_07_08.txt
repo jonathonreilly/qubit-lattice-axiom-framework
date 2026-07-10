@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/sourcing_correlation_wake_quantification_2026_07_08.py
+runner_sha256: c37b05f0ca88f4962d6a284cbe546019010299faac31a307ba9c0dc1f77b13e8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 31.24
+status: ok
+----- stdout -----
+SETUP: seed=20260708 L=300 W=20 mu=0.02 profile=supplied_linear_floor A=[2.100,1.100,0.100] law=supplied_linear:F(A)=A v=0.5,2 b=2,5 p=0,0.1,0.5 batches=4x24; errors=SEM-across-independent-replicate-means; norm=(events/nominal-site-time)/attempt-boost; zone=2 transits; tail=same duration.
+DURING: wake<front min_t_df3(b=5,p>=0.1)=12.4; v=0.5,p=0.1:t_df3=13.7 W=0.0035 F=0.0046,v=0.5,p=0.5:t_df3=17.8 W=0.0020 F=0.0036,v=2,p=0.1:t_df3=12.4 W=0.0039 F=0.0073,v=2,p=0.5:t_df3=12.6 W=0.0035 F=0.0072
+WAKE: v=0.5,b=2[p=0:R=0.011 Sa=0.0050+/-0.0084;p=0.1:R=0.285 Sa=0.1322+/-0.0192;p=0.5:R=1.000 Sa=0.5916+/-0.0093] | v=0.5,b=5[p=0:R=-0.002 Sa=-0.0013+/-0.0097;p=0.1:R=0.206 Sa=0.1578+/-0.0072;p=0.5:R=0.716 Sa=0.6011+/-0.0120] | v=2,b=2[p=0:R=-0.006 Sa=-0.0020+/-0.0024;p=0.1:R=0.087 Sa=0.0285+/-0.0158;p=0.5:R=0.514 Sa=0.2028+/-0.0119] | v=2,b=5[p=0:R=0.001 Sa=0.0005+/-0.0063;p=0.1:R=0.066 Sa=0.0440+/-0.0213;p=0.5:R=0.361 Sa=0.2488+/-0.0098]
+SCALING: S_after slow>fast min_Welch_t=4.2; b=2,p=0.1:Welch_t=4.2 Welch_df=5.8 alpha=1.11,b=2,p=0.5:Welch_t=25.8 Welch_df=5.7 alpha=0.77,b=5,p=0.1:Welch_t=5.1 Welch_df=3.7 alpha=0.92,b=5,p=0.5:Welch_t=22.7 Welch_df=5.8 alpha=0.64; S_during_slow/fast_range=1.14..1.50
+CHECKS: co_moving_dip=True p0_effect_unresolved=True wake_monotone_in_p=True speed_gate=True saturation_guard=True max_perm_window_density=0.900; SPEC-NOTE normalized site-locked clock isolates crowding and gives saturated bins N=0; p is in-zone permanent fraction; co-moving wake/front are trailing/leading half-bins; resetting background refreshes capacity and is a comparator artifact; Leg3 background-off isolates zone deposition and probe attempts are counted without commits.
+SATURATION-WAKE: setup seed=20260708 L=300 W=20 v=1 b=0.011 p=1 N_TRANSITS=6 profile=supplied_linear_floor A=[2.100,1.100,0.100] law=supplied_linear:F(A)=A background_outside=0; CHECK-07 one_shot=True ok=True T=[94,49,18,15,10,6] f=0.313 rms_geo=0.160 rms_const=0.330; CHECK-08 ok=True c=[0.313,0.477,0.537,0.587,0.620,0.640] c_geo=[0.313,0.528,0.676,0.778,0.847,0.895]; CHECK-09 ok=True S=[0.555,0.810,0.873,0.917,0.950,0.970] dS=[0.255,0.063,0.044,0.033,0.020] track_max=0.090; CHECK-10 ok=True sigma_N=[0.400,0.289,0.235,0.195,0.134,0.085] S6_over_maxS=1.000; CORNER b=5: f=1.000 c1=1.000 (saturates in one transit, reported not gated); SPEC-NOTE background-off isolates zone deposition; probe counts baseline attempts but commits no records; gates evaluated at the calibrated partial-coverage boost; SATURATION-WAKE-GATES-PASS
+TOTAL: SEEDED-WAKE-MEASUREMENTS-PASS + SATURATION-WAKE-GATES-PASS (+ flags R_wake_range=-0.006..1.000, wake_monotone_in_p=True, dwell_alpha=0.86, saturation_wake=True)
+
+----- stderr -----
+

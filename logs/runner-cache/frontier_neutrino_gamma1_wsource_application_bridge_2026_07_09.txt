@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.py
+runner_sha256: 56f58d0294137f0d4246c0fd6f26db694cb546f6bb821e1cc4657c320482cc04
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.75
+status: ok
+----- stdout -----
+Group A — source needles
+[PASS] A1 W definition source needle
+[PASS] A2 additivity source needle
+[PASS] A3 construction-source drift detector
+[PASS] A4 premise labels and observable-principle edge
+[PASS] A5 markdown-link hygiene (targets=['../scripts/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.py', '../logs/runner-cache/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.txt', 'OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md', 'OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md'])
+Group B — construction
+[PASS] B1 Y**2 == 0
+[PASS] B2 Hermitian completion
+[PASS] B3 {gamma_5, Gamma_1} == 0
+[PASS] B4 exact trace norms (Tr(Gamma_1.H*Gamma_1)=16, Tr(Y.H*Y)=8)
+Group C — W identities
+[PASS] C1 det(mI+jY) == m**16
+[PASS] C2 det(mI+jGamma_1) == (m**2-j**2)**8
+[PASS] C3 eigenvalue multiset (eigenvals={-1: 8, 1: 8})
+[PASS] C4 exact-rational W identity (m=3, j=1/2)
+[PASS] C5 direct-sum W additivity
+Group D — quadratic response and normalization
+[PASS] D1 exact symbolic second response (W''(0)=-16/m**2)
+[PASS] D2 finite-difference Richardson convergence (values=[-16.003200853589234, -16.000800053338267, -16.000200003330786, -16.00005000020801], error-ratios=[4.000800241853489, 4.000200072286305, 4.000049974749601])
+[PASS] D3 per-mode identity chain (response=1, trace=1)
+[PASS] D4 chiral-half and HS-norm ratios (trace-ratio=1/2, HS-ratio=sqrt(2)/2)
+Group E — REJECTORS
+[PASS] E1 non-nilpotent perturbation breaks selection (det difference=j*m**15/7)
+[PASS] E2 rescaled-source normalization discriminator (coefficient=4)
+[PASS] E3 cross-block coupling breaks direct-sum additivity (exp(W_X)=16777216/43046721, exp(2W)=5070942774902496337890625/7958661109946400884391936)
+TOTAL: PASS=21 FAIL=0
+VERDICT: PASS
+
+----- stderr -----
+

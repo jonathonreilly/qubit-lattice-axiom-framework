@@ -1,6 +1,7 @@
 # `y_t` Residual-Budget and Bridge Cross-Check Note
 
 **Date:** 2026-04-17
+**Type:** positive_theorem
 **Status:** support note for the current YT authority surface
 **Primary runner:** `scripts/frontier_yt_explicit_systematic_budget.py`
 
@@ -21,9 +22,12 @@ Its current role is narrower:
 
 The live YT authority now reads:
 
-> `y_t(v)` and `m_t(pole)` are **derived quantitative rows** whose primary
-> precision caveat is carried by standard lattice-to-continuum matching and
-> standard SM running on the Ward-primary route.
+> `y_t(v)` and `m_t(pole)` are **conditional quantitative rows**: the
+> Planck-surface Ward lift requires shared dressing and physical readout, and
+> the low-energy central values additionally require the Yukawa-side selector
+> `kappa_Y = 0`. Their primary precision caveat is carried by standard
+> lattice-to-continuum matching and standard SM running on the Ward-primary
+> route.
 
 So the present note is about the **bridge cross-check path**, not the live
 primary classification.
@@ -54,7 +58,8 @@ That leaves the bridge-path endpoint budget at:
 - support-tight:
   `0.75500635%`
 
-around the current central value `y_t(v) = 0.9176`.
+around the current conditional central value `y_t(v) = 0.9176` at
+`kappa_Y = 0` and under the named Planck-surface bridge.
 
 ## How this budget is used now
 
@@ -85,7 +90,8 @@ the way it is.
 ## Propagation on the bridge path
 
 If one reads the Schur-bridge route by itself, the same bridge budget
-propagates directly to the top-mass readout:
+propagates to the following conditional top-mass readouts, at `kappa_Y = 0`
+and under the named Planck-surface bridge:
 
 - `m_t(pole, 2-loop) = 172.57 GeV`
   with bridge-path budget
@@ -96,7 +102,7 @@ propagates directly to the top-mass readout:
   `±2.103 GeV` conservative,
   `±1.307 GeV` support-tight
 
-That propagation remains a valid cross-check statement.
+That conditional propagation remains a valid cross-check statement.
 
 ## Honest boundary
 
@@ -106,6 +112,7 @@ This note does **not** claim:
   primary YT lane
 - that the bridge-path budget should be discarded
 - that the Ward-primary path has become fully retained from `M_Pl` to `v`
+- that the Planck-surface Ward lift or the `kappa_Y = 0` selector is derived
 
 What it does claim is narrower:
 

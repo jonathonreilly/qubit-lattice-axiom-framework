@@ -76,6 +76,8 @@ import re
 import sys
 from pathlib import Path
 
+import no_go_discipline_gate
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
@@ -109,6 +111,7 @@ ARCHIVED_FIELDS = (
     "claim_type_provenance",
     "claim_type_last_reviewed",
     "notes_for_re_audit_if_any",
+    "no_go_discipline",
 )
 
 RANK = {
@@ -288,7 +291,7 @@ def noncritical_invalidation_after_restore(row: dict, rows: dict[str, dict]) -> 
     is handled separately by PR #907's noop/soft-reset policy; if another
     blocker remains, restoration would only create churn and should be skipped.
     """
-    restored = restore_audit_from_previous(row)
+    restored = restore_audit_from_previous(row, rows)
     if restored is None:
         return "missing_previous_audit"
 
@@ -403,7 +406,10 @@ def parse_dep_weakened(reason: str) -> tuple[str, str, str] | None:
     return dep_id, before, after
 
 
-def restore_audit_from_previous(row: dict) -> dict | None:
+def restore_audit_from_previous(
+    row: dict,
+    rows: dict[str, dict] | None = None,
+) -> dict | None:
     """Pop the most recent previous_audits entry and copy its archived
     fields back to the live row. Returns the new row, or None if there's
     nothing to restore.
@@ -417,6 +423,30 @@ def restore_audit_from_previous(row: dict) -> dict | None:
     for field in ARCHIVED_FIELDS:
         if field in archived:
             new_row[field] = archived[field]
+    # Legacy archives with no packet are grandfathered for this one-shot
+    # migration. If a packet is present, however, restoration must preserve
+    # and validate it; silently dropping or reviving a malformed packet would
+    # bypass the current no-go gate.
+    if new_row.get("no_go_discipline") is not None:
+        ledger_rows = rows or {str(new_row.get("claim_id") or ""): new_row}
+        gate_blob = {
+            "claim_type": new_row.get("claim_type"),
+            "claim_scope": new_row.get("claim_scope"),
+            "chain_closes": new_row.get("chain_closes"),
+            "load_bearing_step": new_row.get("load_bearing_step"),
+            "chain_closure_explanation": new_row.get("chain_closure_explanation"),
+            "verdict": new_row.get("audit_status"),
+            "verdict_rationale": new_row.get("verdict_rationale"),
+            "notes_for_re_audit_if_any": new_row.get("notes_for_re_audit_if_any"),
+            "no_go_discipline": new_row.get("no_go_discipline"),
+        }
+        if no_go_discipline_gate.validate_no_go_discipline(
+            gate_blob,
+            evidence_manifest=no_go_discipline_gate.build_evidence_manifest(
+                new_row, ledger_rows, REPO_ROOT
+            ),
+        ):
+            return None
     return new_row
 
 
@@ -452,6 +482,7 @@ def select_restore_candidates(rows: dict[str, dict]) -> tuple[dict[str, str], li
             if (
                 action in ("noop", "soft_reset")
                 and archived_audit_is_lint_compatible(archived)
+                and restore_audit_from_previous(row, rows) is not None
                 and noncritical_invalidation_after_restore(row, rows) is None
             ):
                 crit_set[cid] = archived.get("audit_status") or "?"
@@ -461,6 +492,8 @@ def select_restore_candidates(rows: dict[str, dict]) -> tuple[dict[str, str], li
         dep = parse_dep_weakened(reason)
         if dep is not None:
             if not archived_audit_is_lint_compatible(archived):
+                continue
+            if restore_audit_from_previous(row, rows) is None:
                 continue
             dep_id, before_status, _after_status = dep
             dep_weakened_candidates.append((cid, dep_id, before_status, archived))
@@ -533,13 +566,13 @@ def main() -> int:
 
     restored_count = 0
     for cid in crit_set:
-        new_row = restore_audit_from_previous(rows[cid])
+        new_row = restore_audit_from_previous(rows[cid], rows)
         if new_row is None:
             continue
         rows[cid] = new_row
         restored_count += 1
     for cid, _dep, _prev in dep_weakened_set:
-        new_row = restore_audit_from_previous(rows[cid])
+        new_row = restore_audit_from_previous(rows[cid], rows)
         if new_row is None:
             continue
         rows[cid] = new_row

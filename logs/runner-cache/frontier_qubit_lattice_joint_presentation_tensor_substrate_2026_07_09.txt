@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py
+runner_sha256: a0ec0a344147ff66d72e35b4d167d4a7ad3b7b64f8a98baea9b680cda3865d42
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+GROUP A -- live axiom text
+[PASS] A1 lattice substrate sentence is present
+[PASS] A2 one-site algebra sentence is present
+[PASS] A3 no-site-privilege sentence is present
+[PASS] A4 further structure is assigned downstream
+GROUP B -- exact tensor generation
+[PASS] B1 n=2: distinct-site Pauli images commute elementwise -- tested=9
+[PASS] B2 n=2: the tensor-word family has exactly 4^n members -- members=16
+[PASS] B2 n=2: Pauli strings have the exact trace Gram matrix 2^n I -- Gram shape=(16, 16)
+[PASS] B2 n=2: Pauli strings have exact matrix-space rank 4^n -- rank=16
+[PASS] B1 n=3: distinct-site Pauli images commute elementwise -- tested=27
+[PASS] B2 n=3: the tensor-word family has exactly 4^n members -- members=64
+[PASS] B2 n=3: Pauli strings have the exact trace Gram matrix 2^n I -- Gram shape=(64, 64)
+[PASS] B2 n=3: Pauli strings have exact matrix-space rank 4^n -- rank=64
+[PASS] B3 rejector: same-factor M_2 generators violate elementwise commutation -- commutator=[[0, -2], [2, 0]]
+GROUP C -- exact minimality and multiplicity discrimination
+[PASS] C1 minimal C^4 carrier has scalar commutant -- commutant dimension=1
+[PASS] C2 multiplicity-two C^8 carrier has a four-dimensional commutant -- commutant dimension=4
+[PASS] C2 rejector: the minimal carrier is not accepted as multiplicity two -- minimal commutant dimension=1
+[PASS] C3 n=1: carrier dimension gate -- single-site dimension=2 is below 3
+[PASS] C3 n=2: carrier dimension gate -- multi-site dimension=4 is at least 4
+[PASS] C3 n=3: carrier dimension gate -- multi-site dimension=8 is at least 4
+[PASS] C3 n=4: carrier dimension gate -- multi-site dimension=16 is at least 4
+[PASS] C3 n=5: carrier dimension gate -- multi-site dimension=32 is at least 4
+GROUP D -- projection span and exact trace-form tests
+[PASS] D1 exact rank-one projections span the full real Hermitian space -- family size=16, real rank=16
+[PASS] D2 rejector: diagonal projections have deficient real span -- real rank=4 < 16
+[PASS] D3 density matrix is exactly positive with unit trace -- eigenvalues=[1/10, 1/5, 3/10, 2/5]
+[PASS] D3 projectors form an exact orthogonal resolution of identity
+[PASS] D3 trace weights are nonnegative and normalized -- weights=[1/10, 1/5, 3/10, 2/5]
+[PASS] D3 trace form is exactly additive on every tested orthogonal pair
+GROUP E -- note content and link gates
+[PASS] E1 live memo basename is present
+[PASS] E1 obsolete memo link targets are absent
+[PASS] E2 the bridge selection is explicitly named
+[PASS] E2 the commuting joint presentation is explicitly supplied rather than axiom-derived
+[PASS] E2 source note disclaims audit-outcome authority
+[PASS] E3 forbidden overclaims are absent
+[PASS] E3 markdown link inventory is exactly the three authorized targets -- targets=['../scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py', '../logs/runner-cache/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.txt', 'MINIMAL_AXIOMS_2026-06-29.md']
+VERDICT: exact bridge checks and all named rejectors pass.
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

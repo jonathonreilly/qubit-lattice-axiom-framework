@@ -44,13 +44,16 @@ from __future__ import annotations
 
 import hashlib
 import json
+import posixpath
 import re
 import sys
 from collections import defaultdict
 from fnmatch import fnmatchcase
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 import premise_nodes
+import no_go_discipline_gate
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
@@ -194,6 +197,11 @@ TERMINAL_VERDICTS = {
 SUPPORTED_DISPATCH_SCHEMAS = {"promotion_reaudit_queue.v1"}
 
 _CODEX_FAMILY_RE = re.compile(r"^codex-gpt-(\d+(?:\.\d+)*)$")
+_INLINE_MARKDOWN_LINK_RE = re.compile(
+    r"(?<!!)\[[^\]\n]*\]\(\s*"
+    r"(?P<destination><[^>\n]+>|[^)\s]+)"
+    r"(?:\s+(?:\"[^\"\n]*\"|'[^'\n]*'|\([^\)\n]*\)))?\s*\)"
+)
 
 
 def codex_family_meets_minimum(family: str, minimum: str = "gpt-5.5") -> bool:
@@ -216,6 +224,209 @@ def codex_family_meets_minimum(family: str, minimum: str = "gpt-5.5") -> bool:
 
 def load_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def mask_nonrendered_markdown(text: str) -> str:
+    """Mask code and comments before extracting rendered Markdown links."""
+    masked_lines: list[str] = []
+    fence_char: str | None = None
+    fence_len = 0
+    paragraph_open = False
+    indented_code = False
+    list_content_indent: int | None = None
+    prior_quote_depth = 0
+    for line in text.splitlines(keepends=True):
+        content = line
+        container_offset = 0
+        quote_depth = 0
+        while True:
+            container = re.match(r"[ \t]{0,3}>[ \t]?", content)
+            if not container:
+                break
+            container_offset += container.end()
+            quote_depth += 1
+            content = content[container.end():]
+        if quote_depth != prior_quote_depth:
+            # A list item cannot continue across a block-quote boundary. The
+            # new container also starts its own paragraph/code-block context.
+            list_content_indent = None
+            paragraph_open = False
+            indented_code = False
+        prior_quote_depth = quote_depth
+        stripped = content.lstrip(" \t")
+        indent = len(content) - len(stripped)
+        list_opener = re.match(
+            r"(?P<leading>[ ]{0,3})(?P<marker>[*+-]|\d{1,9}[.)])"
+            r"(?P<spacing>[ \t]+|(?=\r?$))",
+            content,
+        )
+        list_item_code_on_marker_line = False
+        if list_opener:
+            spacing = list_opener.group("spacing") or ""
+            # CommonMark accepts one to four spaces after a list marker. With
+            # five or more, only the first is marker padding and the remaining
+            # four spaces start an indented code block inside the item.
+            padding = len(spacing) if 1 <= len(spacing) <= 4 else min(len(spacing), 1)
+            list_content_indent = (
+                len(list_opener.group("leading"))
+                + len(list_opener.group("marker"))
+                + padding
+            )
+            list_item_code_on_marker_line = len(spacing) >= 5
+        elif stripped.strip() and list_content_indent is not None and indent < list_content_indent:
+            list_content_indent = None
+        container_indent = (
+            indent - list_content_indent
+            if list_content_indent is not None and indent >= list_content_indent
+            else indent
+        )
+        if fence_char is not None:
+            closing = re.match(
+                rf"{re.escape(fence_char)}{{{fence_len},}}[ \t]*(?:\r?\n)?$",
+                stripped,
+            )
+            masked_lines.append("".join("\n" if ch == "\n" else " " for ch in line))
+            if container_indent <= 3 and closing:
+                fence_char = None
+                fence_len = 0
+                paragraph_open = False
+            continue
+        opener = (
+            re.match(r"(`{3,}|~{3,})", stripped)
+            if container_indent <= 3
+            else None
+        )
+        if opener:
+            fence_char = opener.group(1)[0]
+            fence_len = len(opener.group(1))
+            masked_lines.append("".join("\n" if ch == "\n" else " " for ch in line))
+            paragraph_open = False
+            indented_code = False
+            continue
+        if not stripped.strip():
+            masked_lines.append(line)
+            paragraph_open = False
+            indented_code = False
+            continue
+        if list_item_code_on_marker_line:
+            masked_lines.append("".join("\n" if ch == "\n" else " " for ch in line))
+            paragraph_open = False
+            indented_code = True
+            continue
+        if container_indent >= 4 and (
+            indented_code or not paragraph_open
+        ):
+            masked_lines.append("".join("\n" if ch == "\n" else " " for ch in line))
+            indented_code = True
+            continue
+        masked_lines.append(line)
+        paragraph_open = True
+        indented_code = False
+
+    visible = list("".join(masked_lines))
+    source = "".join(masked_lines)
+    i = 0
+    while i < len(source):
+        if source.startswith("<!--", i):
+            end = source.find("-->", i + 4)
+            end = len(source) if end < 0 else end + 3
+            for j in range(i, end):
+                if visible[j] != "\n":
+                    visible[j] = " "
+            i = end
+            continue
+        if source[i] == "`":
+            backslashes = 0
+            escape_index = i - 1
+            while escape_index >= 0 and source[escape_index] == "\\":
+                backslashes += 1
+                escape_index -= 1
+            if backslashes % 2:
+                i += 1
+                continue
+            run_end = i + 1
+            while run_end < len(source) and source[run_end] == "`":
+                run_end += 1
+            delimiter = source[i:run_end]
+            close = source.find(delimiter, run_end)
+            while close >= 0:
+                exact_run = not (
+                    (close > 0 and source[close - 1] == "`")
+                    or (
+                        close + len(delimiter) < len(source)
+                        and source[close + len(delimiter)] == "`"
+                    )
+                )
+                # Backslashes have no escaping role inside a CommonMark code
+                # span, so an exact matching run closes even after "\\".
+                if exact_run:
+                    break
+                close = source.find(delimiter, close + len(delimiter))
+            if close >= 0:
+                end = close + len(delimiter)
+                for j in range(i, end):
+                    if visible[j] != "\n":
+                        visible[j] = " "
+                i = end
+                continue
+            i = run_end
+            continue
+        i += 1
+    return "".join(visible)
+
+
+def markdown_link_targets(surface: str, text: str) -> set[str]:
+    """Return normalized repo-relative targets of inline Markdown links.
+
+    Plain prose and code spans intentionally do not count: front-door axiom
+    currency is a navigation guarantee, so only an actual Markdown link can
+    satisfy it. Fragments and query strings do not affect target identity.
+    """
+    surface_parent = Path(surface).parent.as_posix()
+    targets: set[str] = set()
+    rendered_text = mask_nonrendered_markdown(text)
+    for match in _INLINE_MARKDOWN_LINK_RE.finditer(rendered_text):
+        backslashes = 0
+        escape_index = match.start() - 1
+        while escape_index >= 0 and rendered_text[escape_index] == "\\":
+            backslashes += 1
+            escape_index -= 1
+        if backslashes % 2:
+            continue
+        destination = match.group("destination")
+        if destination.startswith("<") and destination.endswith(">"):
+            destination = destination[1:-1]
+        parsed = urlsplit(destination)
+        if parsed.scheme or parsed.netloc or destination.startswith(("#", "/")):
+            continue
+        path = unquote(parsed.path)
+        if not path:
+            continue
+        targets.add(posixpath.normpath(posixpath.join(surface_parent, path)))
+    return targets
+
+
+def front_door_axiom_pointer_errors(
+    surface: str,
+    text: str,
+    current_path: str | None,
+    superseded: list[str],
+) -> list[str]:
+    targets = markdown_link_targets(surface, text)
+    errors: list[str] = []
+    if current_path and current_path not in targets:
+        errors.append(
+            "[front_door_axiom_pointer] "
+            f"{surface}: does not cite the current axiom memo {current_path}"
+        )
+    for old in superseded:
+        if old in targets:
+            errors.append(
+                "[front_door_axiom_pointer] "
+                f"{surface}: cites superseded axiom memo {old} "
+                f"(current: {current_path})"
+            )
+    return errors
 
 
 def hash_note_on_disk(note_path_str: str) -> str | None:
@@ -268,6 +479,47 @@ def main() -> int:
 
     def add_notice(category: str, message: str) -> None:
         notices[category].append(message)
+
+    def check_no_go_packet(
+        *,
+        cid: str,
+        label: str,
+        audit_like: dict,
+        row: dict,
+        source_required: bool,
+    ) -> None:
+        verdict = audit_like.get("verdict") or audit_like.get("audit_status")
+        if verdict in {None, "unaudited"}:
+            return
+        packet = audit_like.get("no_go_discipline")
+        required = source_required or no_go_discipline_gate.output_requires_no_go_discipline(
+            audit_like
+        )
+        if required and packet is None:
+            add_notice(
+                "legacy_no_go_packet_absent",
+                f"{cid}: {label} predates structured No-Go Discipline; "
+                "grandfathered until fresh re-audit",
+            )
+            return
+        if packet is None:
+            return
+        normalized = {
+            **audit_like,
+            "verdict": verdict,
+            "chain_closes": audit_like.get(
+                "chain_closes", verdict == "audited_clean"
+            ),
+        }
+        error = no_go_discipline_gate.validate_no_go_discipline(
+            normalized,
+            source_required=source_required,
+            evidence_manifest=no_go_discipline_gate.build_evidence_manifest(
+                row, rows, REPO_ROOT
+            ),
+        )
+        if error:
+            errors.append(f"{cid}: {label} invalid no_go_discipline packet: {error}")
 
     def _load_pattern_file(name: str) -> tuple[str, ...]:
         path = DATA_DIR / name
@@ -385,9 +637,8 @@ def main() -> int:
     # reset left the root README on the superseded memo for five days). Every
     # surface listed in data/front_door_surfaces.txt must cite the registry's
     # current minimal_axioms path and must not cite a superseded alias.
-    # Warning-level: the pipeline must keep running on branches where the
-    # front door is knowingly mid-repair; escalate per-surface only once the
-    # front-door chain is clean.
+    # Error-level: every registered front door is current, so strict lint must
+    # fail closed if a later axiom reset leaves one behind.
     front_door_surfaces = _load_pattern_file("front_door_surfaces.txt")
     axiom_registry_path = DATA_DIR / "axiom_premise_nodes.json"
     if front_door_surfaces and axiom_registry_path.exists():
@@ -400,24 +651,17 @@ def main() -> int:
         for surface in front_door_surfaces:
             spath = REPO_ROOT / surface
             if not spath.exists():
-                add_warning(
-                    "front_door_axiom_pointer",
-                    f"{surface}: listed in front_door_surfaces.txt but missing on disk",
+                errors.append(
+                    "[front_door_axiom_pointer] "
+                    f"{surface}: listed in front_door_surfaces.txt but missing on disk"
                 )
                 continue
             text = spath.read_text(encoding="utf-8", errors="replace")
-            if current_path and current_path not in text:
-                add_warning(
-                    "front_door_axiom_pointer",
-                    f"{surface}: does not cite the current axiom memo {current_path}",
+            errors.extend(
+                front_door_axiom_pointer_errors(
+                    surface, text, current_path, superseded
                 )
-            for old in superseded:
-                if old in text:
-                    add_warning(
-                        "front_door_axiom_pointer",
-                        f"{surface}: cites superseded axiom memo {old} "
-                        f"(current: {current_path})",
-                    )
+            )
 
     # Top-level stale timestamp keys cause PR drift-gate noise and were
     # removed by f383ded3d. compute_effective_status now drops them
@@ -440,6 +684,62 @@ def main() -> int:
         e = row.get("effective_status")
         ct = row.get("claim_type")
         ind = row.get("independence")
+
+        note_body = ""
+        note_path = row.get("note_path") or ""
+        if note_path:
+            try:
+                note_body = (REPO_ROOT / note_path).read_text(
+                    encoding="utf-8", errors="replace"
+                )
+            except OSError:
+                pass
+        source_requires_no_go = no_go_discipline_gate.source_requires_no_go_discipline(
+            note_path, note_body, row.get("claim_type")
+        )
+        check_no_go_packet(
+            cid=cid,
+            label="live audit",
+            audit_like={**row, "verdict": row.get("audit_status")},
+            row=row,
+            source_required=source_requires_no_go,
+        )
+        cross = row.get("cross_confirmation") or {}
+        if isinstance(cross, dict):
+            for audit_key in ("first_audit", "second_audit", "third_audit"):
+                summary = cross.get(audit_key)
+                if isinstance(summary, dict) and summary:
+                    check_no_go_packet(
+                        cid=cid,
+                        label=f"cross_confirmation.{audit_key}",
+                        audit_like=summary,
+                        row=row,
+                        source_required=source_requires_no_go,
+                    )
+        for index, archived in enumerate(row.get("previous_audits") or []):
+            if not isinstance(archived, dict) or archived.get("no_go_discipline") is None:
+                continue
+            archived_verdict = archived.get("verdict") or archived.get("audit_status")
+            archived_blob = {
+                **archived,
+                "verdict": archived_verdict,
+                "chain_closes": archived.get(
+                    "chain_closes", archived_verdict == "audited_clean"
+                ),
+            }
+            # Historical source text is not archived, so validate the complete
+            # structure and controlled enums without pretending current note
+            # bytes can authenticate an old locator. Restoration performs the
+            # stronger current-packet locator check before making it live.
+            archived_error = no_go_discipline_gate.validate_no_go_discipline(
+                archived_blob,
+                evidence_manifest=None,
+            )
+            if archived_error:
+                errors.append(
+                    f"{cid}: previous_audits[{index}] invalid no_go_discipline "
+                    f"packet: {archived_error}"
+                )
 
         for field in DEPRECATED_LEDGER_FIELDS & set(row):
             errors.append(f"{cid}: deprecated ledger field {field!r} must not be present")
@@ -584,7 +884,7 @@ def main() -> int:
         # from landing as retained-grade on critical/high; the warning
         # surfaces them for migration. After all such legacy rows are
         # migrated to independence='weak' or re-audited by a non-Claude
-        # auditor, this branch can be promoted to errors.append.
+        # auditor, this notice can be promoted to errors.append.
         if a == "audited_clean" and isinstance(fam, str) and fam.startswith("claude-"):
             if ind != "weak":
                 xc = row.get("cross_confirmation") or {}

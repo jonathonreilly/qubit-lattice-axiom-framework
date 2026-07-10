@@ -5,6 +5,9 @@
 not bounded, and not on the manuscript surface. This package records six
 missing science lanes that need active work.
 
+The current ontology baseline is the four named axioms in
+[`MINIMAL_AXIOMS_2026-06-29.md`](../../MINIMAL_AXIOMS_2026-06-29.md).
+
 ## Why this package exists
 
 The project's [CLAIMS_TABLE.md](../../publication/ci3_z3/CLAIMS_TABLE.md) currently
@@ -197,7 +200,7 @@ status elsewhere, the canonical theorem surface wins.
 | 19 | **BMS / asymptotic symmetries** | open | **Active separately — Pate co-author P4 paper target** |
 | 20 | **Decoherence law universal** | bounded | **Deferred — Gate A in older review-hardening backlog** |
 | 21 | **Galaxy rotation curves / DM detection cross-section** | absent | **Deferred — DM follow-on** |
-| 22 | **Hierarchy stability under quantum corrections** | implicitly retained via v derivation | **Argued retained** (the v derivation is not just tree-level) |
+| 22 | **Hierarchy stability under quantum corrections** | the displayed `v` chain has quantum-correction inputs, but no blanket stability conclusion follows without row-level scope review | **Deferred — hierarchy lane** |
 | 23 | **Vacuum stability quantitative** | qualitative result only | **Deferred — Phase 2 matter mass** |
 | 24 | **Form factors (B → π, K → π, etc.)** | absent | **Deferred — Lane 1 follow-on** |
 | 25 | **Hadron spectroscopy (excited states)** | absent | **Deferred — Lane 1 follow-on** |
@@ -212,33 +215,36 @@ status elsewhere, the canonical theorem surface wins.
 | 29 | **Sterile neutrino / eV-scale anomalies** | absent | **Deferred — Lane 4 follow-on** |
 | 30 | **0νββ rates** | absent (depends on Majorana confirmation) | **Deferred — Lane 4 follow-on** |
 | 31 | **Strongly correlated systems** | absent | **Deferred — Lane 2 follow-on** |
-| 32 | **Modified gravity tests (solar-system PPN)** | implicitly in retained GR | **Argued retained** |
+| 32 | **Modified gravity tests (solar-system PPN)** | PPN coefficient selection remains open; no blanket retained-GR implication | **Deferred — strong-field/phenomenology lane** |
 | 33 | **Gravitational-wave templates beyond linear** | absent | **Deferred — strong-field gravity research lane** |
 | 34 | **Axions / dark sector beyond DM relic** | absent | **Deferred — separate dark-sector lane** |
-| 35 | **Quantitative leptogenesis baryon asymmetry** | DM closed package gives δ_CP forecast | **Argued partial via DM closed package** |
+| 35 | **Quantitative leptogenesis baryon asymmetry** | selected transport/phase support exists, but the quantitative asymmetry remains bridge- and scope-dependent | **Deferred — DM/leptogenesis lane** |
 
-### Tier 5 — Items the framework already retains or argues away
+### Tier 5 — Historically advertised closures that require ledger-scope reading
 
-These are items where the framework either has retained content or has argued
-the item away structurally (acknowledged for completeness):
+Earlier versions of this table compressed package claims into `DERIVED`,
+`RETAINED`, or `EXACT`. Those words are not status authority. The current safe
+boundary is the audit-derived `effective_status` and `claim_scope` of every
+cited source row. The entries below therefore state only what must not be
+silently inferred from the package headline.
 
-| # | Item | Resolution |
+| # | Item | Current safe boundary |
 |---|---|---|
-| 36 | Why 3 generations | DERIVED (April 24-25 anomaly cluster) |
-| 37 | Why 3+1 dimensional spacetime | DERIVED (anomaly-forced 3+1) |
-| 38 | Why SM gauge group SU(3)×SU(2)×U(1) | DERIVED (April 24-25 anomaly cluster + native SU(2) + graph-first SU(3)) |
-| 39 | Hierarchy problem | DERIVED (v = M_Pl × (7/8)^(1/4) × α_LM^16) |
-| 40 | Strong CP θ-angle = 0 | RETAINED (universal θ-EDM vanishing) |
-| 41 | CP violation in flavor | RETAINED (full CKM atlas/axiom closure in α_s + rationals) |
-| 42 | Dark energy w = -1 | RETAINED (exactly) |
-| 43 | Cosmological constant Λ value | RETAINED structural identity (m_g² = 2Λ) |
-| 44 | Dark matter abundance ratio R = Ω_DM/Ω_b | RETAINED (5.48 from group theory, 0.2%) |
-| 45 | Born rule / I_3 = 0 | DERIVED |
-| 46 | CPT | EXACT |
-| 47 | Bell inequality violation | DERIVED |
-| 48 | Emergent Lorentz at low energy | DERIVED + exact 1+1D and 3+1D continuum boost-covariance |
-| 49 | Discrete-to-continuum gravity | RETAINED on canonical textbook target |
-| 50 | Top quark mass m_t | RETAINED (172.57 GeV at 0.07%) |
+| 36 | Why 3 generations | Structural generation-count results exist; a complete physical-species derivation must be checked row by row in the audit ledger. |
+| 37 | Why 3+1 dimensional spacetime | The anomaly/time route is a dependency chain with mixed audit state, not an unconditional axiom-level derivation. |
+| 38 | Why SM gauge group `SU(3)×SU(2)×U(1)` | Native `SU(2)` and selected structural `SU(3)` results are stronger than the full physical SM identification; the latter remains bridge- and dependency-sensitive. |
+| 39 | Hierarchy problem | The displayed electroweak-scale chain uses named matching, running, and identification inputs; it is not a zero-input solution of the hierarchy problem. |
+| 40 | Strong CP `theta` angle | The strongest result is scoped to selected Wilson/staggered action and mass/readout surfaces; it is not an unrestricted solution for every admissible action. |
+| 41 | CP violation in flavor | The CKM atlas is publication-captured, but its physical-input and dependency chain must be read from the effective-status mirror; package capture is not blanket retention. |
+| 42 | Dark-energy equation of state | `w=-1` is a structural/conditional cosmology corollary on a named vacuum surface, not a derivation of the observed dark-energy sector from the four axioms. |
+| 43 | Cosmological constant | Identities such as `m_g^2=2 Lambda` do not derive the observed numerical value of `Lambda`. |
+| 44 | Dark-matter abundance ratio | The numerical ratio belongs to a model- and bridge-qualified package; it is not an unconditional four-axiom prediction. |
+| 45 | Born rule / `I_3=0` | The `I_3=0` calculation assumes linear amplitude addition and a quadratic probability map; it does not derive that probability map or the Born rule from Record. |
+| 46 | CPT | Exact algebraic CPT statements must be distinguished from a full physical CPT theorem for every downstream dynamics. |
+| 47 | Bell inequality violation | Explicit lattice-system witnesses exist; they do not by themselves derive measurement settings, Born weights, or experimental readout dynamics from the axioms. |
+| 48 | Emergent Lorentz behavior | Boost/kernel results live on supplied kinetic and continuum surfaces; they are not a blanket proof of Lorentz restoration for every admissible dynamics. |
+| 49 | Discrete-to-continuum gravity | Selected action/measure/continuum calculations exist, but the repo does not presently support an unconditional full-GR or quantum-gravity closure claim. |
+| 50 | Top-quark mass | The quoted value is identification- and transport-conditioned; it is not a zero-input mass derivation. |
 
 ### Why these specific six lanes are active
 
@@ -262,9 +268,9 @@ All other Tier 2-4 items are deferred — they remain open and should be tracked
 as such. Any deferred item can be moved into active status if priorities change
 or if a worker finds a tractable attack path.
 
-The Tier 5 items are listed for completeness — they show what the framework
-has already retained or argued away from the missing-science inventory, so the
-total picture is honest rather than only listing the open items.
+The Tier 5 items are listed for completeness. They record historically
+advertised closures together with their current safe boundaries, so the total
+picture does not confuse package headlines with audit-ratified scope.
 
 ## Recommended priority order (subject to review)
 
@@ -322,8 +328,8 @@ prioritized.
   to be explicit about which observables in each lane are framework-derived
   vs. external-input vs. scaffold-only.
 
-Those publication-surface updates are deliberately deferred. This landing only
-opens the critical open science lane package; it does not change the manuscript
+Those publication-surface updates are deliberately deferred. This open-science
+package records the critical open lanes; it does not change the manuscript
 claim surface.
 
 ## Open Review Questions

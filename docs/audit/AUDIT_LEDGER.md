@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 28 |
-| unaudited | 1726 |
+| unaudited | 1725 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 126 |
+| ~~audited_conditional~~ | 127 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -72,12 +72,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1364 |
-| `audited_conditional` | 126 |
+| `audited_conditional` | 127 |
 | `audited_decoration` | 67 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2071 |
+| `unaudited` | 2070 |
 
 | claim_type | count |
 |---|---:|
@@ -1613,6 +1613,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `regge_ok4_frame_section_narrow_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `ring_monodromy_does_not_force_car_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -17851,6 +17852,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using S_+(Theta x)=S_+(x) and F(Theta x)=overline{F(x)}, the integrand exp(-S_+(x)) exp(-S_+(Theta x)) F(Theta x) F(x) becomes exp(-2S_+(x)) |F(x)|^2 = |psi^2(x) F(x)|^2.  _(class `A`)_
 - **chain closes:** True — Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted source proves a direct pointwise algebraic identity followed by integration: exp(-S_+(x)) exp(-S_+(Theta x)) F(Theta x) F(x) = exp(-2S_+(x)) |F(x)|^2 = |psi^2 F|^2, so the reflected integral is a real nonnegative weighted-L2 norm square and the associated form is Hermitian PSD. The runner exits cleanly with PASS=27 FAIL=0, all class-A checks, but the proof does not depend on the runner. The ratified claim is the exact conditional mathematical theorem under stated hypotheses; it does not assert that the framework Wilson/gauge/fermion action satisfies those hypotheses.
 - **rationale:** Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted source proves a direct pointwise algebraic identity followed by integration: exp(-S_+(x)) exp(-S_+(Theta x)) F(Theta x) F(x) = exp(-2S_+(x)) |F(x)|^2 = |psi^2 F|^2, so the reflected integral is a real nonnegative weighted-L2 norm square and the associated form is Hermitian PSD. The runner exits cleanly with PASS=27 FAIL=0, all class-A checks, but the proof does not depend on the runner. The ratified claim is the exact conditional mathematical theorem under stated hypotheses; it does not assert that the framework Wilson/gauge/fermion action satisfies those hypotheses.
+- **auditor confidence:** high
+
+### `regge_ok4_frame_section_narrow_theorem_note_2026-06-17`
+
+- **Note:** [`REGGE_OK4_FRAME_SECTION_NARROW_THEOREM_NOTE_2026-06-17.md`](../../docs/REGGE_OK4_FRAME_SECTION_NARROW_THEOREM_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the retained sampled dispersion formula and O(k²) isotropy, the audit verified the 26 critical directions of Σ_a n_a⁴ and the abstract cubic tensor's E⊕T2 split and non-orbit-flat witness.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00092-regge_ok4_frame_section_narr`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The de-traced cubic axis four-tensor splits spin-2 as E⊕T2 and gives a non-SO(3)-orbit-flat quadratic energy, so the dispersion anisotropy also supplies a finite field-frame section candidate.  _(class `A`)_
+- **chain closes:** False — The runner never derives the actual Regge O(k⁴) field-space quadratic form from the lattice Hessian; it imports alpha and applies an arbitrarily normalized cubic weight. A bridge identifying that constructed weight with the Regge Hessian—and establishing finite stationarity in full frame space rather than only direction space—is missing.
+- **rationale:** The critical-set and representation-theory calculations are valid algebraic checks. However, the DISP block directly assumes the retained sampled alpha formula rather than computing H = 6I − A, while the WEIGHT block constructs W = I + 0.4 G_aniso/||G_aniso|| with a freely chosen mixing coefficient. Nothing in the packet proves that this witness is the actual O(k⁴) Regge graviton quadratic form, so the claimed field-frame sectioning and same-object identification do not follow, and the exact-amplitude wording also exceeds the sampled upstream certificate.
 - **auditor confidence:** high
 
 ### `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10`

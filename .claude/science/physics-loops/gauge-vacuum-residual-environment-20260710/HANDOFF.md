@@ -35,3 +35,13 @@ surfaces. Independent review and audit remain required.
 Review-loop passes the branch with bounded claims. The overall identification
 target remains open; the exact sub-result is the two-PBC-size `L_s` no-go and
 the beta-six direct computation is bounded stochastic support only.
+
+## Delivery
+
+- science commit: `e6cd735ffbb55b90f235759dacad2f43d136d03e`;
+- remote branch:
+  `claude/science-fix/gauge_vacuum_plaquette_residual_environment_identification_t-7824208b`;
+- draft review PR:
+  `https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5143`;
+- PR title: `[physics-loop] gauge-vacuum-residual-environment block 01: bounded-support`;
+- no merge or write to `main` was performed.

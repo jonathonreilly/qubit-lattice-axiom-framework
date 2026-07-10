@@ -54,3 +54,9 @@ Focused re-review of changed files returned:
 Local review-loop disposition: `pass` for shipping the exact no-go and bounded
 support artifacts. This is not an audit verdict and does not close the parent
 operator identification.
+
+## Delivery record
+
+The reviewed block was committed, pushed to the dedicated science-fix branch,
+and opened as draft PR `#5143`. The PR is based on `main`; it is not stacked
+and was not merged.

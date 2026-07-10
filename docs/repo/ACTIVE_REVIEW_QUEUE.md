@@ -27,6 +27,17 @@ them.
 
 Current science/open-lane follow-ups:
 
+- `2026-07-10-pr5123-tick-admissibility-physical-realization-bridge`
+  Scope:
+  `TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md`
+  and the conditional equivariant lemma salvaged from PR #5123.
+  Finding: the submitted `REAL(U; A, F)` predicate assumes the load-bearing
+  rule-to-tick correspondence, with conditioning faithfulness already imposing
+  nonzero tick support on every varying edge. The exact fixed-assignment
+  covariance implication is reusable bounded algebra, but it does not derive
+  the physical tick--Admissibility realization bridge or discharge/requeue the
+  selector row's `missing_bridge_theorem` repair target.
+  Disposition: `science-needed`.
 - `2026-07-10-conformal-causal-source-packet-repair`
   Scope: the record-order and reconstructed-H inputs to the conformal-class
   metric packet, plus

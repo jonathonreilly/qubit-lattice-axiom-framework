@@ -112,8 +112,10 @@ NEGATIVE_SUBJECT_CLOSURE_RE = re.compile(
     re.IGNORECASE,
 )
 NO_EXISTENCE_ASSERTION_RE = re.compile(
-    r"\bno\s+(?:(?!(?:because|although|but|while|once|when|after|before|if)\b)"
-    r"[\w-]+\s+){1,8}exists\b",
+    r"\bno\s+"
+    r"(?:(?!(?:because|although|but|while|once|when|after|before|if)\b)[\w-]+\s+){0,8}"
+    r"(?:routes?|[\w-]*factorizations?|maps?|carriers?|solutions?|constructions?|"
+    r"methods?|operators?|primitives?|theorems?)\s+exists\b",
     re.IGNORECASE,
 )
 INABILITY_CLOSURE_RE = re.compile(

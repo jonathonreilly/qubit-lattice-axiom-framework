@@ -33,7 +33,7 @@
   ],
   "cycles_detected": 10,
   "effective_status_counts": {
-    "audit_in_progress": 4,
+    "audit_in_progress": 5,
     "audited_conditional": 134,
     "audited_failed": 16,
     "audited_numerical_match": 10,
@@ -81,10 +81,10 @@
     "retained": 196,
     "retained_bounded": 931,
     "retained_no_go": 209,
-    "retained_pending_chain": 17,
+    "retained_pending_chain": 16,
     "unaudited": 1753
   },
-  "retained_pending_chain_count": 17,
+  "retained_pending_chain_count": 16,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
@@ -92,7 +92,6 @@
     "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",
     "gravity_clean_derivation_note",
     "koide_mru_demotion_note_2026-04-20",
-    "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
     "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
     "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",
     "pre_record_reference_state_tracial_derivation_note_2026-05-20",

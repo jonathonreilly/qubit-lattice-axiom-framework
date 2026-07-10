@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 195 |
 | **retained_no_go** | 213 |
 | **retained_bounded** | 952 |
-| _retained_pending_chain_ | 12 |
+| _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1710 |
+| unaudited | 1709 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -74,20 +74,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1369 |
 | `audited_conditional` | 134 |
-| `audited_decoration` | 69 |
+| `audited_decoration` | 70 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2055 |
+| `unaudited` | 2054 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2023 |
-| `decoration` | 71 |
+| `decoration` | 72 |
 | `meta` | 354 |
 | `no_go` | 482 |
 | `open_gate` | 183 |
-| `positive_theorem` | 602 |
+| `positive_theorem` | 601 |
 
 | criticality | count |
 |---|---:|
@@ -96,7 +96,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 954 |
 | `leaf` | 1628 |
 
-- **Retained pending chain closure:** 12
+- **Retained pending chain closure:** 13
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -1718,6 +1718,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `strong_cp_theta_zero_audited_scope_narrow_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_strong_cp_theta_zero_note` | weak | codex-gpt-5.5 | A | `strong_cp_theta_zero_note` |
 | `three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
+| `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | `minimal_axioms` |
 | `translation_abelian_composition_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.6 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `translation_covariance_local_op_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.6 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | cross_family | codex-gpt-5.6 | A | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` |
@@ -21756,6 +21757,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Therefore, conditional on the registrable species surface being exactly the unordered mass multiset, as carried by the cited bridge, and on the k -> -k relabel being convention, the sign of delta is not extra registrable content.  _(class `A`)_
 - **chain closes:** True — The note is scoped to explicit algebra on the supplied Hermitian circulant class plus the direct retained_bounded registrability bridge and accepted minimal-axiom premise. It expressly excludes registry landing, theta retirement, magnitude derivation, and any physical gate/readout bridge beyond those bounded inputs.
 - **rationale:** The load-bearing claim is an algebraic invariance statement on a stipulated finite circulant class, followed by a bounded composition with a retained_bounded unordered-multiset registrability bridge. The runner completes with PASS=11 FAIL=0 and symbolically checks conjugation, elementary-symmetric-polynomial invariance, and the k -> -k label permutation while also guarding against registry, theta, and magnitude overclaims. Residual risk is scope-only: the result remains bounded to the supplied circulant class, the cited registrability bridge, and the relabel convention.
+- **auditor confidence:** high
+
+### `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `decoration`
+- **claim_scope:** For two disjoint finite qubit-lattice regions, the unique tracial state on their combined finite-dimensional matrix algebra factorizes on simple tensors into the regions' unique normalized traces.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** _retained_pending_chain_  (reason: `decoration_waiting_on:minimal_axioms`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00108-tomita_tensor_trace_on_finit`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The normalized matrix trace satisfies τ(A ⊗ B) = (Tr A/n₁)(Tr B/n₂) = τ₁(A)τ₂(B), because Tr(A ⊗ B) = Tr(A)Tr(B).  _(class `A`)_
+- **chain closes:** True — The accepted Qubit and Lattice premises supply finite-region algebras isomorphic to full matrix algebras. Trace uniqueness and the elementary tensor-product trace identity then directly establish the stated factorization.
+- **rationale:** The load-bearing step is an elementary normalized-matrix-trace identity, with no numerical computation or external comparison. The note correctly specializes standard finite-dimensional matrix-algebra mathematics to the single accepted minimal-axioms parent, so it closes but contributes decoration-grade localization rather than an independent framework theorem.
+- **decoration parent:** `minimal_axioms`
 - **auditor confidence:** high
 
 ### `topological_instanton_textbook_infrastructure_import_note_2026-05-17`

@@ -53,6 +53,64 @@ This definition is not a new axiom. It is a source-scope firewall: it separates
 admitted physical-clock authorities from arbitrary positive operators that can
 be written on a local tensor factor.
 
+For the manifest classification below, the remaining exclusions are explicit:
+post-record event/count order is not a clock without a supplied clock map; an
+arbitrary local positive factor transfer is a mathematical comparator, not a
+physical-clock authority; and a KMS/APBC thermal circle decorates an already
+supplied time circle rather than supplying a pre-existing second clock.
+
+## Source-Packet Admission Manifest (2026-07-10)
+
+```text
+MANIFEST-VERSION: 2026-07-10
+PACKET-SOURCES:
+  docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md
+  docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md
+  docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md
+  docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md
+
+CANDIDATE: T_hat2_two_step
+  KIND: supplied-transfer
+  SOURCE: docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md
+  RELATED-SOURCE: docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md
+  RELATED-SOURCE: docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  ADMISSION-NEEDLES: 2-step blocked transfer matrix || T_hat^2 = T_odd . T_even || over two lattice spacings
+  TRANSFER: T_hat^2
+  SPACING: 2 a_tau
+  EXPECTED: admitted
+
+CANDIDATE: stone_generator
+  KIND: transfer-relative-construction
+  SOURCE: docs/SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md
+  DISQUALIFIER: is uniquely determined by `T`
+  EXPECTED: not-admitted
+
+CANDIDATE: post_record_event_order
+  KIND: record-order
+  SOURCE: docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md
+  DISQUALIFIER: does not supply physical elapsed time
+  EXPECTED: not-admitted
+
+CANDIDATE: local_positive_factor_transfer
+  KIND: class-candidate
+  DISQUALIFIER: an arbitrary local positive factor transfer is a mathematical comparator, not a physical-clock authority
+  EXPECTED: not-admitted
+
+CANDIDATE: kms_apbc_thermal_circle
+  KIND: class-candidate
+  DISQUALIFIER: a KMS/APBC thermal circle decorates an already supplied time circle rather than supplying a pre-existing second clock
+  EXPECTED: not-admitted
+```
+
+Exhaustiveness rule: the inventory claim is scoped to the packet sources listed
+above (the dated packet). The runner mechanically scans every PACKET-SOURCES
+file for transfer-introducing mentions (needle family listed in the runner) and
+fails if any mention does not map to a manifest candidate — a closed enumeration
+ON THE DATED PACKET, not a claim about arbitrary future sources. (2026-07-10
+repair.)
+
 ## Inventory Result
 
 | Candidate | Source status | Physical-clock admission result |
@@ -182,12 +240,31 @@ python3 scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_
 Expected summary:
 
 ```text
-SUMMARY: PASS=35 FAIL=0
+SUMMARY: PASS=57 FAIL=0
 ADMITTED_PHYSICAL_CLOCK_TRANSFERS=1
 B_AXIS_DERIVED=FALSE
 MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE
 AUDIT_LEDGER_WRITTEN=FALSE
 ```
+
+## Repair Note
+
+**2026-07-10 manifest-enumeration repair.** The audit's
+`notes_for_re_audit` text is quoted verbatim:
+
+> runner_artifact_issue: replace the hard-coded admission list with enumeration
+> from an explicit dated packet manifest and update the stale minimal-axiom path
+> to the cited 2026-06-29 authority.
+
+The dated manifest now enumerates all five inventory candidates and every
+source in the bounded single-clock packet. The runner parses those blocks,
+computes admission from source needles or disqualifiers, scans every packet
+source for unmapped transfer-introducing mentions, and uses the current
+`MINIMAL_AXIOMS_2026-06-29.md` authority throughout.
+
+**Note-hash trigger:** this dated source edit intentionally changes the note
+hash so the repaired row re-enters independent re-audit; this note does not
+write or predict the refreshed audit verdict.
 
 ## Audit dependency repair links
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 194 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 928 |
+| **retained_bounded** | 929 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
-| unaudited | 1856 |
+| unaudited | 1855 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 18 |
-| `audited_clean` | 1328 |
+| `audited_clean` | 1329 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2201 |
+| `unaudited` | 2200 |
 
 | claim_type | count |
 |---|---:|
@@ -723,6 +723,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
@@ -10101,6 +10102,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The single-projector identities P_T1 Gamma_1 P_O0 Gamma_1 P_T1 = diag(1,0,0), P_T1 Gamma_1 P_(1,1,0) Gamma_1 P_T1 = diag(0,1,0), P_T1 Gamma_1 P_(1,0,1) Gamma_1 P_T1 = diag(0,0,1), and P_T1 Gamma_1 P_(0,1,1) Gamma_1 P_T1 = 0, with linearity in the weights, give diag(w_O0,w_a,w_b).  _(class `A`)_
 - **chain closes:** True — On the supplied basis, Gamma_1 flips the first spatial bit, so each T1 species returns through exactly the stated intermediate projector and the fourth T2 state is not reached. The retained cited authorities supply the Gamma_1/T1 surface, and the runner independently constructs the 16x16 matrices supporting the projector identities.
 - **rationale:** The load-bearing identities are exact finite-dimensional algebra on the supplied Gamma_1 bit-flip and spatial projectors. Both one-hop authorities are retained-grade for the scoped carrier/generation surface, and the runner source actually constructs the Clifford/projector matrices rather than printing constants. The runner's UNDERDETERMINED hierarchy verdict is consistent with the note's boundary because the note does not claim to derive the three weight values.
+- **auditor confidence:** high
+
+### `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`
+
+- **Note:** [`HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The nearest-neighbor scalar graph-Laplacian stencil and Coulomb-kernel normalization are verified, and a finite 4^3-torus counterexample distinguishes that scalar operator from the staggered Dirac square; no physical derivation of the kinetic choice, continuum-limit closure, or atomic-spectrum theorem is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-hydrogen_helium_atomic_l-075`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** From V_lat(r) = -4 pi g G(r) and G(r) -> 1/(4 pi |r|), it follows algebraically that V_lat(r) -> -g/|r|, while direct construction shows that the staggered -D^2 is not the scalar graph Laplacian.  _(class `A`)_
+- **chain closes:** True — The retained-bounded lattice Green-function authority supplies the stencil and asymptotic normalization, and the retained-bounded staggered authority supplies the explicit hopping operator needed for the counterexample. The remaining steps are exact substitution and finite-matrix algebra.
+- **rationale:** The Coulomb result is a genuine algebraic closure over the retained-bounded Green-function normalization, and the operator disambiguation is computed from the retained-bounded staggered construction. The accepted minimal-axiom premise is explicitly not used to derive the scalar kinetic operator, so it introduces no open bridge. The runner's automatically true Part-D boundary assertions are not substantive evidence, but the load-bearing numerical and algebraic checks are independently implemented and sufficient for the stated narrow scope.
 - **auditor confidence:** high
 
 ### `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`

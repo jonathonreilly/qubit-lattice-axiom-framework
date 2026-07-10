@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 389,
     "high": 269,
-    "leaf": 745,
+    "leaf": 744,
     "medium": 501
   },
   "cycle_break_target_count": 10,
@@ -37109,32 +37109,6 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SU3_WILSON_PLANE_KERNEL_CHARACTER_POSITIVITY_AND_COMPOSED_GRAM_NARROW_THEOREM_NOTE_2026-07-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "theta_gluing_flow_nonsourcing_pair_level_seed_localization_bounded_theorem_note_2026-07-02",
@@ -57007,6 +56981,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 166,
-  "total_pending": 1904
+  "ready_count": 165,
+  "total_pending": 1903
 }

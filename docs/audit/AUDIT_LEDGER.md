@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 195 |
+| **retained** | 196 |
 | **retained_no_go** | 212 |
 | **retained_bounded** | 934 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 27 |
-| unaudited | 1761 |
+| unaudited | 1760 |
 | audit_in_progress | 9 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 13 |
-| `audited_clean` | 1347 |
+| `audited_clean` | 1348 |
 | `audited_conditional` | 118 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2108 |
+| `unaudited` | 2107 |
 
 | claim_type | count |
 |---|---:|
@@ -1319,6 +1319,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_wigner_l3_treewidth_infeasible_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_wilson_closed_form_fanout_theorem_note_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `substrate_to_p_a_forcing_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `susceptibility_density_vanishes_identically_1d_ibp_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `symmetry_generated_paired_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -20109,6 +20110,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner evaluates the four named closed-form approximations at beta = 6 and obtains (M1, M2, M4, M5) = (0.4225, 0.3333, 0.8740, 0.6667), with the MC gap statement explicitly conditional on imported comparator values.  _(class `C`)_
 - **chain closes:** True — The quartet closes from the displayed closed-form definitions and direct numerical evaluation: independent Weyl-torus Haar quadrature gives M1 = 0.42253173965 and the z = 6 fixed point M4 = 0.87404899494, while M2 and M5 reduce to 6/18 and 1 - 2/6. The MC and epsilon values are not used to derive the quartet and enter only the conditional gap arithmetic.
 - **rationale:** The source note has narrowed the theorem to the internally computed quartet and clearly marks the MC/epsilon comparison as comparator-conditional. The primary runner genuinely computes M1 and M4 from character-coefficient evaluation and a fixed-point solve, while M2 and M5 are algebraic evaluations of the displayed formulas; the MC comparator is not an input to those values. An independent Weyl-integral check, not sharing the runner's Bessel-determinant path, reproduces the nontrivial M1 and M4 values. The retained cited authorities are contextual and no open upstream is load-bearing for this narrowed numerical record.
+- **auditor confidence:** high
+
+### `su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09`
+
+- **Note:** [`SU3_WILSON_PLANE_KERNEL_CHARACTER_POSITIVITY_AND_COMPOSED_GRAM_NARROW_THEOREM_NOTE_2026-07-09.md`](../../docs/SU3_WILSON_PLANE_KERNEL_CHARACTER_POSITIVITY_AND_COMPOSED_GRAM_NARROW_THEOREM_NOTE_2026-07-09.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For beta >= 0, the pure-gauge fundamental SU(3) Wilson plane kernel has tensor-multiplicity character coefficients that are nonnegative; the corresponding absolutely convergent convolution kernel and bounded two-slice temporal-gauge composed form are positive semidefinite for every finite L_s.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-su3-20260710`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** exp(beta Re chi_rho) = sum_{n>=0} (beta/2)^n/n! sum_lambda M_{lambda,n} chi_lambda, with M_{lambda,n} the nonnegative multiplicity of lambda in (rho oplus rhobar)^{tensor n}.  _(class `A`)_
+- **chain closes:** True — The tensor-power character expansion is uniformly absolutely convergent with majorant exp(3 beta), and normalized Schur orthogonality gives the converse kernel coefficient c_mu/d_mu^2. The retained-bounded bridge then composes the positive link kernels with the reflected bounded slice factors into the stated finite-L_s Gram form.
+- **rationale:** The tensor-power identity closes exactly: an independent SU(3) product-rule recurrence through tensor order 26 reproduced every displayed coefficient and the dimension sums, while normalized Schur orthogonality independently gives c_mu/d_mu^2. The positive-kernel composition uses the correct U V^dagger ordering and antilinear reflection, and bounded real slice factors on the finite compact configuration space give 0 < Z < infinity. The SHA-pinned runner and helper caches pass, and their order-two representation coefficients, basis normalizations, and exact U(1)/SU(2) reductions agree with the independent checks. Residual risk is confined to the explicitly excluded continuum, thermodynamic, and fermionic extensions and to non-load-bearing Monte Carlo smoke checks.
 - **auditor confidence:** high
 
 ### `substrate_to_p_a_forcing_theorem_note_2026-04-30`

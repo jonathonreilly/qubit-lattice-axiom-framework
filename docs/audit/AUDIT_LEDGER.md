@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 931 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1852 |
+| unaudited | 1851 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1337 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2197 |
+| `unaudited` | 2196 |
 
 | claim_type | count |
 |---|---:|
@@ -1524,6 +1524,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -15745,6 +15746,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The primary runner computes the parent solution through helper routines and then evaluates the claimed ratios, so it is not merely printing the note's constants. The exact small-correction boundary is a valid algebraic consequence of the supplied parent fitted solution. However, the load-bearing inputs are the fitted xi carriers and target surface of a bounded parent completion, and the note explicitly leaves their derivation, readout bridge, and non-perturbative normalization open. The row therefore supports only a conditional boundary on the current parent slice, not a retained-grade closure.
 - **open / conditional deps cited:**
   - `QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`
+- **auditor confidence:** high
+
+### `quark_e_channel_endpoint_quotient_law_note_2026-04-19`
+
+- **Note:** [`QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md`](../../docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under supplied ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT premises, exact endpoint algebra yields r_E = 21/4 and D_E = 21/8; the retained Route-2 no-go keeps ENDPOINT-QE non-derived within the restricted carrier/readout class.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-quark_e_channel_endpoint-035`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** ENDPOINT-QE + ENDPOINT-RT + SHELL-MULT implies r_E = 21/4 and D_E = |b_E/b_T| = 21/8 by the exact affine endpoint identities.  _(class `A`)_
+- **chain closes:** True — The rational algebra closes exactly once the three named premises are granted. The cited retained no-go supports the non-derivation boundary but does not derive those premises.
+- **rationale:** Issue: The runner hard-codes q_E = 15/8, q_T = 5/6, and a_T/a_E = -2 as supplied Fraction inputs and checks their exact consequences. Why this blocks: The retained no-go establishes that restricted Route-2 primitives leave rho_E free, while no cited authority derives any of the three premises, so unconditional closure is unavailable. Repair target: Supply retained-grade derivations of ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT. Claim boundary until fixed: The exact conditional implications r_E = 21/4 and D_E = 21/8, together with the stated no-go boundary, are valid.
 - **auditor confidence:** high
 
 ### `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`

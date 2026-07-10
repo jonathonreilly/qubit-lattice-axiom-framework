@@ -11645,12 +11645,12 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "quark_e_channel_endpoint_quotient_law_note_2026-04-19",
-      "claim_scope": null,
+      "claim_scope": "Under supplied ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT premises, exact endpoint algebra yields r_E = 21/4 and D_E = 21/8; the retained Route-2 no-go keeps ENDPOINT-QE non-derived within the restricted carrier/readout class.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
@@ -11658,7 +11658,7 @@
         "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
       ],
       "direct_in_degree": 13,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [
         "scripts/_frontier_loader.py",
         "scripts/canonical_plaquette_surface.py",
@@ -11687,7 +11687,7 @@
       ],
       "load_bearing_score": 13.629,
       "note_path": "docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_quark_e_channel_endpoint_quotient_law.py",
       "transitive_descendants": 139

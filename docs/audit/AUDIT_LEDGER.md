@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 195 |
-| **retained_no_go** | 211 |
+| **retained_no_go** | 212 |
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 28 |
-| unaudited | 1731 |
+| unaudited | 1730 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -70,20 +70,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1363 |
+| `audited_clean` | 1364 |
 | `audited_conditional` | 124 |
 | `audited_decoration` | 66 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 33 |
-| `unaudited` | 2076 |
+| `unaudited` | 2075 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2028 |
+| `bounded_theorem` | 2027 |
 | `decoration` | 68 |
 | `meta` | 353 |
-| `no_go` | 481 |
+| `no_go` | 482 |
 | `open_gate` | 183 |
 | `positive_theorem` | 602 |
 
@@ -1128,6 +1128,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `quark_route2_e_center_lift_size_scan_boundary_note_2026-06-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | C | - |
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `quark_route2_endpoint_blind_renormalization_no_go_note_2026-06-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-current | A | - |
 | `quark_route2_eta_floor_hf_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -17277,6 +17278,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The cited retained parent supplies the carrier, channelwise readout form, and conditional T-side values. Exact linear algebra then shows that rho_E is absent from every blind-column image and appears only in the E-center image.
 - **rationale:** The runner performs genuine exact rational and rank calculations, and its negative conclusion follows correctly from the retained parent's carrier and conditional readout family. It does not derive a new framework primitive or invoke an independent comparator; every load-bearing check is class (A) mathematics over one upstream parent. Under the decoration tie-break rule, this is an algebraic corollary of the exact readout-map claim rather than an independent no-go claim.
 - **decoration parent:** `quark_route2_exact_readout_map_note_2026-04-19`
+- **auditor confidence:** high
+
+### `quark_route2_e_center_lift_size_scan_boundary_note_2026-06-21`
+
+- **Note:** [`QUARK_ROUTE2_E_CENTER_LIFT_SIZE_SCAN_BOUNDARY_NOTE_2026-06-21.md`](../../docs/QUARK_ROUTE2_E_CENTER_LIFT_SIZE_SCAN_BOUNDARY_NOTE_2026-06-21.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The audited finite-box family at N=11, 13, 15, and 17 does not support the naive inference that the N=15 match demonstrates convergence of q_E(N) to 15/8; no claim is made against a different size-stable family or future infinite-volume theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00087-quark_route2_e_center_lift_s`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The computed neighboring boxes are far from the target chain, include sign reversals, and do not form a monotone convergence certificate, so the isolated 15^3 match cannot be cited as finite-size convergence evidence under the current parameterization.  _(class `C`)_
+- **chain closes:** True — The runner genuinely constructs the finite lattice operators and evaluates the parameterized source, Schur, tensor, and reduced-shell chain at each size. Its computed sign changes, large target gaps, and nonmonotone absolute-error sequence directly establish the stated narrow no-go.
+- **rationale:** The load-bearing numerical rows are produced by an actual finite-operator computation rather than printed constants or imported target values. The landed cache is used only to verify N=15 reproducibility, while the negative conclusion comes from independently computed neighboring sizes. The conclusion is appropriately limited to absence of convergence evidence for the current parameterization and does not overclaim nonconvergence or refute a future infinite-volume theorem.
 - **auditor confidence:** high
 
 ### `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`

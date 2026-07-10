@@ -125,6 +125,12 @@
       "transitive_descendants": 126
     },
     {
+      "claim_id": "kinetic_isotropy_primitive",
+      "criticality": "critical",
+      "load_bearing_score": 35.373,
+      "transitive_descendants": 468
+    },
+    {
       "claim_id": "three_generation_structure_note",
       "criticality": "critical",
       "load_bearing_score": 34.983,
@@ -159,12 +165,6 @@
       "criticality": "critical",
       "load_bearing_score": 32.706,
       "transitive_descendants": 834
-    },
-    {
-      "claim_id": "kinetic_isotropy_primitive",
-      "criticality": "critical",
-      "load_bearing_score": 32.373,
-      "transitive_descendants": 468
     }
   ]
 }

@@ -22,16 +22,16 @@ publication tables phrase it.
 | medium | `unaudited` | 89 |
 | high | `audited_conditional` | 7 |
 | critical | `audited_conditional` | 4 |
+| critical | `audit_in_progress` | 3 |
 | medium | `audited_conditional` | 3 |
 | medium | `open_gate` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_failed` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `retained_pending_chain` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 424
+**Total non-retained-grade rows in publication tables:** 426
 
 ## Per-row breakdown
 
@@ -136,6 +136,7 @@ publication tables phrase it.
 | critical | `neutrino_majorana_z3_nonactivation_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `neutrino_mass_reduction_to_dirac_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `neutrino_two_amplitude_last_mile_reduction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
+| critical | `newton_law_derived_note` | `audit_in_progress` | `audit_in_progress` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `omega_lambda_derivation_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `one_generation_matter_closure_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `planck_boundary_density_extension_theorem_note_2026-04-24` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
@@ -201,6 +202,7 @@ publication tables phrase it.
 | critical | `yt_bridge_uv_class_uniqueness_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_constructive_uv_bridge_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_eft_bridge_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| critical | `yt_ew_m_residual_note_2026-05-02` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md |
 | critical | `yt_exact_coarse_grained_bridge_operator_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_exact_schur_normal_form_uniqueness_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_explicit_systematic_budget_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

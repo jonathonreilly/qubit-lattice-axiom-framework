@@ -49,7 +49,7 @@
       "note_path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "queue_order": 1,
       "ready": false,
-      "ready_blocker": "blocked_by_dependency:abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18:unaudited",
+      "ready_blocker": "blocked_by_dependency:abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18:audited_conditional",
       "runner_path": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py",
       "source_json_path": "docs/audit/data/anomaly_forces_time_reaudit_queue_2026-06-21.json",
       "source_schema": "promotion_reaudit_queue.v1",

@@ -33,9 +33,9 @@
   ],
   "cycles_detected": 10,
   "effective_status_counts": {
-    "audit_in_progress": 9,
-    "audited_conditional": 118,
-    "audited_failed": 12,
+    "audit_in_progress": 12,
+    "audited_conditional": 120,
+    "audited_failed": 13,
     "audited_numerical_match": 9,
     "audited_renaming": 34,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 1,
@@ -80,9 +80,9 @@
     "open_gate": 27,
     "retained": 196,
     "retained_bounded": 934,
-    "retained_no_go": 212,
+    "retained_no_go": 211,
     "retained_pending_chain": 13,
-    "unaudited": 1760
+    "unaudited": 1755
   },
   "retained_pending_chain_count": 13,
   "retained_pending_chain_examples": [

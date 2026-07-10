@@ -51,9 +51,10 @@ no_go_routes:
 trace_gate_classification: direct_blocker_closure
 review_disposition: iteration_3_pass
 audit_compatibility_validation: >-
-  PASS at source commit 1dce05887 in a disposable worktree: full 16-stage
-  pipeline and audit_lint --strict returned no errors; the new no_go row is
-  ready, leaf, unaudited, and has zero inbound edges.
+  PASS after rebase at source commit 44dbcb7ad on origin/main 6723e6676 in a
+  disposable worktree: full 16-stage pipeline and audit_lint --strict returned
+  no errors; the new no_go row is ready, leaf, unaudited, and has zero inbound
+  edges.
 pr_status: pending_push
 next_exact_action: >-
   Push the reviewed branch and open one no-go review PR without merging.

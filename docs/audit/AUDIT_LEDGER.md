@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 27 |
-| unaudited | 1750 |
+| unaudited | 1749 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 121 |
+| ~~audited_conditional~~ | 122 |
 | ~~audited_failed~~ | 13 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 15 |
 | `audited_clean` | 1352 |
-| `audited_conditional` | 121 |
+| `audited_conditional` | 122 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2097 |
+| `unaudited` | 2096 |
 
 | claim_type | count |
 |---|---:|
@@ -1614,6 +1614,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `theta_cartan_valued_cross_plane_pairing_diagonal_weyl_frame_theorems_and_triality_fractional_values_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_gluing_flow_nonsourcing_pair_level_seed_localization_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -20855,6 +20856,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Because Q_G is invariant under the diagonal Weyl action but changes under independent per-plane Weyl actions, separate per-plane orbit data underdetermine Q_G and a relative-frame datum is required.  _(class `A`)_
 - **chain closes:** False — The exact Gram, cochain, fractional-value, and Weyl-frame calculations support the central algebraic results. However, the claimed 2D gluing witness is not derived: runner Section E merely reuses the weight-orbit predicate dom_ok without constructing the glued dual or proving that its sector label is a dominant weight.
 - **rationale:** The runner performs genuine exact class-(A) calculations supporting the pairing, triality table, odd integer witness, and diagonal/independent Weyl conclusions. Its Section E check nevertheless embeds the contested glued-label identification in the check description and tests only dom_ok, so the advertised fourth finite result lacks its carrier bridge. The 4D correlation is appropriately left open, but the asserted 2D witness prevents the full note from closing as written.
+- **auditor confidence:** high
+
+### `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09`
+
+- **Note:** [`THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md`](../../docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the supplied class A = sum_P f(U_P), no single local summand contains a cross-plane F tilde F coefficient.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153334Z-4f7da8c1-00003-theta_cross_plane_term_absen`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For an action that is a sum of single-plane functions, every mixed derivative with respect to field strengths from two complementary plaquette planes vanishes identically.  _(class `A`)_
+- **chain closes:** True — The mixed-derivative identity and direction count establish the stated exclusion for the supplied additive per-plaquette class. The packet does not derive that action-class premise, so the closure remains conditional on it.
+- **rationale:** The load-bearing result is a genuine class-A algebraic identity, and the runner actually computes the relevant mixed derivatives rather than printing a predetermined outcome. The theorem nevertheless imports the per-plaquette action class as an explicit premise, and the retained-bounded cited authority expressly does not derive that class. The result therefore closes only within its carefully stated conditional scope and does not establish full theta-term absence.
 - **auditor confidence:** high
 
 ### `theta_defect_closure_necessity_linking_obstruction_bounded_theorem_note_2026-07-02`

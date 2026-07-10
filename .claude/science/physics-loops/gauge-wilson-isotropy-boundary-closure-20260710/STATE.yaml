@@ -26,6 +26,8 @@ no_go_routes:
   - staggered_eta_as_orientation_split
 trace_gate: negative_route_pruning
 review_disposition: pass
-pr_status: ready_to_open
+remote_branch: claude/science-fix/gauge_wilson_isotropy_boundary_note_2026-05-04-447cbd9f
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5127
 next_exact_action: submit_source_note_runner_and_cache_for_independent_reaudit
 stop_condition: reviewed_no_go_ready_for_independent_reaudit

@@ -672,6 +672,62 @@ class SeedLedgerTest(unittest.TestCase):
             ],
         )
 
+    def test_unaudited_sole_history_recovers_exact_provenance_without_live_identity(self):
+        m = _import("seed_audit_ledger")
+        row = {
+            "audit_status": "unaudited",
+            "auditor": None,
+            "auditor_family": None,
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "previous_audits": [
+                {
+                    "audit_status": "audited_clean",
+                    "auditor": "archived-auditor",
+                    "auditor_family": "codex-gpt-5.6",
+                }
+            ],
+        }
+
+        m.reset_unaudited_audit_fields(row)
+
+        archived = row["previous_audits"][0]
+        self.assertEqual(archived["auditor_model"], "gpt-5.6-sol")
+        self.assertEqual(archived["auditor_reasoning_effort"], "xhigh")
+        self.assertIsNone(row["auditor_model"])
+        self.assertIsNone(row["auditor_reasoning_effort"])
+
+    def test_unaudited_ambiguous_history_retains_unattributed_exact_provenance(self):
+        m = _import("seed_audit_ledger")
+        row = {
+            "audit_status": "unaudited",
+            "auditor": None,
+            "auditor_family": None,
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "previous_audits": [
+                {"audit_status": "audited_clean", "auditor": "first"},
+                {"audit_status": "audited_conditional", "auditor": "second"},
+            ],
+        }
+
+        m.reset_unaudited_audit_fields(row)
+
+        self.assertNotIn("auditor_model", row["previous_audits"][0])
+        self.assertNotIn("auditor_model", row["previous_audits"][1])
+        self.assertEqual(
+            row["unattributed_audit_provenance"],
+            [
+                {
+                    "auditor_model": "gpt-5.6-sol",
+                    "auditor_reasoning_effort": "xhigh",
+                    "reason": "legacy_unaudited_exact_provenance_without_unique_history_match",
+                }
+            ],
+        )
+        self.assertIsNone(row["auditor_model"])
+        self.assertIsNone(row["auditor_reasoning_effort"])
+
     def test_archived_failed_row_refreshes_note_hash(self):
         m = _import("seed_audit_ledger")
         _patch_repo_root(m, self.tmp_root)
@@ -1371,6 +1427,8 @@ class AuditLintTest(unittest.TestCase):
             "> ~~~md\n> [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n> ~~~\n",
             "> ```md\n> [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n> ````\n",
             "    [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            ">\n>     [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "- item\n\n        [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
         )
         for text in examples:
             with self.subTest(text=text):
@@ -1387,6 +1445,7 @@ class AuditLintTest(unittest.TestCase):
             "\\`[current](docs/MINIMAL_AXIOMS_2026-06-29.md)\\`\n",
             "Paragraph\n    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
             "- item\n    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "- item\n\n    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
         )
         for text in examples:
             with self.subTest(text=text):
@@ -1396,6 +1455,31 @@ class AuditLintTest(unittest.TestCase):
                     ),
                     [],
                 )
+
+    def test_front_door_superseded_link_after_blank_list_paragraph_fails(self):
+        m = _import("audit_lint")
+        errors = m.front_door_axiom_pointer_errors(
+            "README.md",
+            "[current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n\n"
+            "- item\n\n"
+            "    [old](docs/MINIMAL_AXIOMS_2026-06-05.md)\n",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            ["docs/MINIMAL_AXIOMS_2026-06-05.md"],
+        )
+        self.assertEqual(len(errors), 1)
+        self.assertIn("cites superseded axiom memo", errors[0])
+
+    def test_front_door_backslash_does_not_escape_code_span_closer(self):
+        m = _import("audit_lint")
+        errors = m.front_door_axiom_pointer_errors(
+            "README.md",
+            "[current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n\n"
+            "`code\\` [old](docs/MINIMAL_AXIOMS_2026-06-05.md) `\n",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            ["docs/MINIMAL_AXIOMS_2026-06-05.md"],
+        )
+        self.assertEqual(len(errors), 1)
+        self.assertIn("cites superseded axiom memo", errors[0])
 
     def test_front_door_superseded_markdown_link_fails(self):
         m = _import("audit_lint")

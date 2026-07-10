@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 953 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1707 |
+| unaudited | 1706 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 135 |
+| ~~audited_conditional~~ | 136 |
 | ~~audited_failed~~ | 12 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1370 |
-| `audited_conditional` | 135 |
+| `audited_conditional` | 136 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2052 |
+| `unaudited` | 2051 |
 
 | claim_type | count |
 |---|---:|
@@ -1651,6 +1651,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `three_family_card_missing_distance_live_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `unordered_mass_pdep_record_independence_no_go_note_2026-06-18` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `wilson_m_h_per_channel_closure_bounded_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -22330,6 +22331,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Under explicit P-dep, Additivity gives the no-cross-term sector sum and T1 plus the flip covariance lambda_{sigma(k)}(-delta) = lambda_k(delta) forces each per-record contribution to depend only on the orbit class [k] and lambda_k, so every registrable readout factors through M(delta).  _(class `A`)_
 - **chain closes:** True — The restricted packet supplies Record additivity/content-determination as an accepted axiom premise, T1 orbit constancy from a retained_bounded direct dependency, and P-dep as an explicit bounded-scope premise rather than a derived claim. Within that scoped premise set, the L1-L5 algebra proves B1-B3 without importing a hidden physical bridge or external comparator.
 - **rationale:** The note accurately narrows itself to a supplied finite context and does not claim to derive P-dep, choose the physical readout context, or enact downstream registry changes. The proof's load-bearing factorization is ordinary finite algebra over the supplied context plus retained T1 orbit constancy and the explicit P-dep premise, and the runner constructs the surface, checks covariance/exactness/hostile candidates/source-scope hygiene, and reports TOTAL: PASS=15 FAIL=0. Residual risks remain outside this audited scope: deriving P-dep, selecting the physical context, and deriving any magnitude would require separate claims.
+- **auditor confidence:** high
+
+### `unordered_mass_pdep_record_independence_no_go_note_2026-06-18`
+
+- **Note:** [`UNORDERED_MASS_PDEP_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-18.md`](../../docs/UNORDERED_MASS_PDEP_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-18.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Whether the displayed q-scaled countermodel establishes that the current Record axiom cannot derive P-dep for the unordered-mass registered datum.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00111-unordered_mass_pdep_record_i`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Two supplied contexts with the same registered sector datum but different unregistered scales q yield different per-record scalar values while allegedly preserving Record.  _(class `A`)_
+- **chain closes:** False — The algebraic q-scaling checks succeed, but the packet does not show that varying an unregistered context scale is compatible with the current axiom's fixed readout determined by record content alone. The cited authority also places K/CPT and readout-context structure downstream rather than inside Record.
+- **rationale:** The runner genuinely verifies finite additivity, orbit identities, and differing q-scaled values, so it is not a print-only or tuned-match artifact. Its load-bearing witness nevertheless assumes that q may alter readout without being registered as record content, which is precisely the compatibility point not established from the superseding Record axiom. Thus the computation supports a conditional countermodel but does not close the stated Record-alone no-go under the current authority.
 - **auditor confidence:** high
 
 ### `uv_gauge_to_yukawa_bridge_sc_vs_pert_note`

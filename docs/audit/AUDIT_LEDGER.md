@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1793 |
+| unaudited | 1792 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
 | ~~audited_conditional~~ | 92 |
-| ~~audited_failed~~ | 5 |
+| ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -70,10 +70,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1350 |
 | `audited_conditional` | 92 |
 | `audited_decoration` | 61 |
-| `audited_failed` | 27 |
+| `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2138 |
+| `unaudited` | 2137 |
 
 | claim_type | count |
 |---|---:|
@@ -1652,6 +1652,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
 | `yt_zero_import_chain_note` | decoration | ~~audited_decoration~~ | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | cross_family | codex-gpt-5.5 | A | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -1916,6 +1917,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** `r` takes different values on different law-admissible realized states and is an already-defined functional of the registered signed-root masses, so by the realized-state primitive it is registered data rather than derivation output.  _(class `A`)_
 - **chain closes:** True — The packet supplies the primitive rule, retained algebraic lever/biconditional inputs, and no-go/law-freeness authorities needed for the bounded classification. The conclusion does not derive r=1/2 or select a grain; those are explicitly outside scope.
 - **rationale:** Within the stated bounded scope, the note closes: the runner verifies the algebraic r-functional, the multi-r firewall, the relevant primitive/axiom text, and the survival of both grain models. The single PDG check is labeled comparator-only and is not load-bearing on the classification. The proof does not silently promote the measure-side frontier or derive the charged-lepton value, so the clean verdict applies only to the value-face reduction and frontier naming.
+- **auditor confidence:** high
+
+### `acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02`
+
+- **Note:** [`ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md`](../../docs/ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pointer-labeled C3 spectral reconstruction, character-basis dephasing identities, the doublet-coherence phase rate, and the asserted identification of modulus-stationary degeneracy with a stopped doublet clock.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00021-acphilambda_pointer_labeled_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The retained modulus row's degenerate stationary points are the dial settings where the doublet clock stops.  _(class `A`)_
+- **chain closes:** False — At delta = pi/3, the cited modulus authority says the spectrum is stationary and degenerate, but the asserted doublet-clock rate is 2 sqrt(3)|b|sin(pi/3) = 3|b|, which is nonzero for |b| > 0. Thus general spectral degeneracy is not equivalent to degeneracy of the specifically labeled chi_1-chi_2 doublet.
+- **rationale:** The symbolic runner correctly verifies the labeled eigenvalue formulas, dephasing-map algebra, and doublet-coherence rate. However, it tests the stopped clock only at delta = 0 and pi and omits the cited stationary points delta = pi/3 and 2pi/3, where a different eigenvalue pair is degenerate while the doublet clock runs. The note repeats the resulting false degeneracy-equals-stopped-clock identification in its claimed consequences, so the bounded claim does not close as written.
 - **auditor confidence:** high
 
 ### `acphilambda_projective_equivariance_k_odd_trace_2026-07-02`

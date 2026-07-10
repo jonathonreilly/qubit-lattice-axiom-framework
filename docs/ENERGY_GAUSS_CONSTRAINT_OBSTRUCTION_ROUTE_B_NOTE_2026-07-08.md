@@ -71,14 +71,27 @@ broader universal reading has been removed.
 
 ### N2 — Scope-condition independence
 
-There are two load-bearing scope conditions, not a list of claimed universal
-walls.
+The ansatz `G_n=eta_n-eta_{n-1}-h_n` is the definition of the route tested
+here, not an additional wall. Its four load-bearing scope conditions are:
 
-| pair | changing first automatically changes second? | changing second automatically changes first? | independent? |
-|---|---:|---:|---:|
-| fixed `h_n` and coupling point / commuting auxiliary algebra | no | no | yes |
+- **W1:** the displayed cell-density definition and apportioning are fixed;
+- **W2:** the displayed coupling point is fixed;
+- **W3:** the auxiliary variables obey `[eta_n,eta_m]=0`;
+- **W4:** the auxiliary variables obey `[eta_n,h_m]=0`.
 
-Neither condition is hidden or counted as a separate physical obstruction.
+The complete pairwise check is:
+
+| pair | closing first closes second? | closing second closes first? | independent? | reason |
+|---|---:|---:|---:|---|
+| W1 / W2 | no | no | yes | A density apportioning can be held fixed while its coefficients vary, and a coupling point does not determine how the total Hamiltonian is apportioned into cells. |
+| W1 / W3 | no | no | yes | The matter-density definition does not determine the auxiliary--auxiliary algebra, and an abelian auxiliary algebra does not select a matter-density split. |
+| W1 / W4 | no | no | yes | Fixing `h_n` does not force every `eta_n` to commute with it, while imposing auxiliary--matter commutation does not select the displayed `h_n`. |
+| W2 / W3 | no | no | yes | Numerical matter couplings do not determine auxiliary--auxiliary commutators, and W3 leaves the matter couplings free. |
+| W2 / W4 | no | no | yes | The coupling point alone does not impose auxiliary--matter commutation, and W4 can hold at other coupling points. |
+| W3 / W4 | no | no | yes | Mutual commutation of the `eta_n` does not imply commutation with the matter algebra, and commuting with all `h_m` does not require the `eta_n` to commute with one another. |
+
+No condition follows from another, and none is hidden or counted as a
+universal obstruction.
 
 ### N3 — Hidden-premise scan
 

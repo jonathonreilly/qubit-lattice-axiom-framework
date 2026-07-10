@@ -915,7 +915,7 @@ def run() -> int:
     except Exception as exc:
         print(f"TOTAL: MACHINERY-FAIL error={type(exc).__name__}:{exc}")
         return 1
-    return 0
+    return 0 if total_status == "CENSUS-COMPLETE" else 1
 
 
 if __name__ == "__main__":

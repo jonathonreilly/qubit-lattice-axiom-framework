@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py
-runner_sha256: d8b98453e554a9db87290cac97558069647f5fd1c076d962525492f4bd29b3bc
+runner_sha256: e5e00b1ace48ad66925e50e30cbc31682339d8d85b17915069c1b960cc5d1c65
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.34
 status: ok
 ----- stdout -----
 == T1: current supplier status and scope ==
-[PASS] hypercharge_identification_note is retained-grade on this branch base  -- retained_bounded
+[PASS] hypercharge_identification_note is retained-grade in the current ledger  -- retained_bounded
 [PASS] hypercharge_identification_note remains a theorem supplier  -- bounded_theorem
 [PASS] ledger scope matches the note-quoted scope exactly  -- exact claim_scope comparison (whitespace-folded)
 [PASS] ledger scope carries the derived LH charge-table clause

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/record_saturation_availability_census_2026_07_08.py
-runner_sha256: 00bf6d7993d3d732246ad04954c46e4bc81a10a1754df8c2291f264da9d54fba
+runner_sha256: ddf121536780ffdbc5915408dd9b5d96f211272b8993483577c9cdae82259d91
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.94
+elapsed_sec: 0.78
 status: ok
 ----- stdout -----
 SPEC-NOTE: bridge=k2:{open,recorded}->V={recorded};k3:{open,A,B}->V={A,B}; imported machinery exposes condition orbits, so subset-valued covariant rules are counted exactly by orbit-DP; fixed-r averages are uniform over condition patterns/recorded values; attraction flag uses non-increasing count profiles with constant-count obstruction reported.

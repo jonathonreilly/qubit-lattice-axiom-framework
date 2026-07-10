@@ -114,7 +114,7 @@ This note does not close:
 
 ## Repair Note
 
-**2026-07-07 scope-needle repair.** The runner still used the stale
+**2026-07-07 scope alignment.** The runner still used the stale
 `does not derive` / `full SM spectrum` / `anomaly cancellation` ledger-scope
 needle after the 2026-07-04 hypercharge scope repair. This note and runner now
 use the current ledger `claim_scope` wording for the LH-doublet surface and
@@ -125,7 +125,7 @@ its exclusions. No claim content changed.
 The runner checks:
 
 - `HYPERCHARGE_IDENTIFICATION_NOTE.md` is cited at its ledger scope in the
-  audit ledger on this branch base;
+  current audit ledger;
 - the hypercharge-identification source note contains the bounded `(2,3)` /
   `(2,1)` eigenvalue surface and its explicit exclusions;
 - the ABJ bridge now cites this supplier note and no longer presents P-HY as

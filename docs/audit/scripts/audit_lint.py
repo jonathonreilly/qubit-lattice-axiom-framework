@@ -44,12 +44,13 @@ from __future__ import annotations
 
 import hashlib
 import json
-import os
+import posixpath
 import re
 import sys
 from collections import defaultdict
 from fnmatch import fnmatchcase
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 import premise_nodes
 
@@ -195,6 +196,11 @@ TERMINAL_VERDICTS = {
 SUPPORTED_DISPATCH_SCHEMAS = {"promotion_reaudit_queue.v1"}
 
 _CODEX_FAMILY_RE = re.compile(r"^codex-gpt-(\d+(?:\.\d+)*)$")
+_INLINE_MARKDOWN_LINK_RE = re.compile(
+    r"(?<!!)\[[^\]\n]*\]\(\s*"
+    r"(?P<destination><[^>\n]+>|[^)\s]+)"
+    r"(?:\s+(?:\"[^\"\n]*\"|'[^'\n]*'|\([^\)\n]*\)))?\s*\)"
+)
 
 
 def codex_family_meets_minimum(family: str, minimum: str = "gpt-5.5") -> bool:
@@ -217,6 +223,52 @@ def codex_family_meets_minimum(family: str, minimum: str = "gpt-5.5") -> bool:
 
 def load_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def markdown_link_targets(surface: str, text: str) -> set[str]:
+    """Return normalized repo-relative targets of inline Markdown links.
+
+    Plain prose and code spans intentionally do not count: front-door axiom
+    currency is a navigation guarantee, so only an actual Markdown link can
+    satisfy it. Fragments and query strings do not affect target identity.
+    """
+    surface_parent = Path(surface).parent.as_posix()
+    targets: set[str] = set()
+    for match in _INLINE_MARKDOWN_LINK_RE.finditer(text):
+        destination = match.group("destination")
+        if destination.startswith("<") and destination.endswith(">"):
+            destination = destination[1:-1]
+        parsed = urlsplit(destination)
+        if parsed.scheme or parsed.netloc or destination.startswith(("#", "/")):
+            continue
+        path = unquote(parsed.path)
+        if not path:
+            continue
+        targets.add(posixpath.normpath(posixpath.join(surface_parent, path)))
+    return targets
+
+
+def front_door_axiom_pointer_errors(
+    surface: str,
+    text: str,
+    current_path: str | None,
+    superseded: list[str],
+) -> list[str]:
+    targets = markdown_link_targets(surface, text)
+    errors: list[str] = []
+    if current_path and current_path not in targets:
+        errors.append(
+            "[front_door_axiom_pointer] "
+            f"{surface}: does not cite the current axiom memo {current_path}"
+        )
+    for old in superseded:
+        if old in targets:
+            errors.append(
+                "[front_door_axiom_pointer] "
+                f"{surface}: cites superseded axiom memo {old} "
+                f"(current: {current_path})"
+            )
+    return errors
 
 
 def hash_note_on_disk(note_path_str: str) -> str | None:
@@ -406,28 +458,11 @@ def main() -> int:
                 )
                 continue
             text = spath.read_text(encoding="utf-8", errors="replace")
-            surface_parent = Path(surface).parent.as_posix() or "."
-
-            def reference_spellings(target: str) -> set[str]:
-                return {
-                    target,
-                    Path(os.path.relpath(target, start=surface_parent)).as_posix(),
-                }
-
-            if current_path and not any(
-                spelling in text for spelling in reference_spellings(current_path)
-            ):
-                errors.append(
-                    "[front_door_axiom_pointer] "
-                    f"{surface}: does not cite the current axiom memo {current_path}"
+            errors.extend(
+                front_door_axiom_pointer_errors(
+                    surface, text, current_path, superseded
                 )
-            for old in superseded:
-                if any(spelling in text for spelling in reference_spellings(old)):
-                    errors.append(
-                        "[front_door_axiom_pointer] "
-                        f"{surface}: cites superseded axiom memo {old} "
-                        f"(current: {current_path})"
-                    )
+            )
 
     # Top-level stale timestamp keys cause PR drift-gate noise and were
     # removed by f383ded3d. compute_effective_status now drops them
@@ -594,7 +629,7 @@ def main() -> int:
         # from landing as retained-grade on critical/high; the warning
         # surfaces them for migration. After all such legacy rows are
         # migrated to independence='weak' or re-audited by a non-Claude
-        # auditor, this branch can be promoted to errors.append.
+        # auditor, this notice can be promoted to errors.append.
         if a == "audited_clean" and isinstance(fam, str) and fam.startswith("claude-"):
             if ind != "weak":
                 xc = row.get("cross_confirmation") or {}

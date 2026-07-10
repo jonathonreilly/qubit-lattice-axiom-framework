@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 398,
+    "critical": 397,
     "high": 266,
     "leaf": 755,
     "medium": 512
@@ -574,30 +574,6 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": null,
-      "transitive_descendants": 403
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
-      "claim_scope": "For M_2(C), every map m:E(M_2)\u2192[0,1] satisfying (M1)\u2013(M3) has a unique density-matrix representation m(E)=Tr(\u03c3E); no broader Born-rule or lattice-state claim was audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.658,
-      "note_path": "docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py",
       "transitive_descendants": 403
     },
     {
@@ -57741,6 +57717,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 216,
-  "total_pending": 1931
+  "ready_count": 215,
+  "total_pending": 1930
 }

@@ -3,14 +3,13 @@
 Neutrino Bosonic Normalization Theorem
 ======================================
 
-STATUS: EXACT normalization selector on the retained local Higgs family
+STATUS: bounded conditional normalization check on a supplied local Higgs family
 
 Purpose:
-  Resolve the remaining 1 versus 1/sqrt(2) ambiguity in the direct neutrino
-  bridge normalization by importing the retained mainline observable-principle
-  toolkit.
+  Verify the exact 1 versus 1/sqrt(2) algebra on the direct neutrino bridge
+  under the supplied observable-principle and source-family premises.
 
-Combined retained inputs:
+Supplied inputs:
 
   1. The local post-EWSB scalar Higgs family is
 
@@ -28,23 +27,20 @@ Exact conclusion:
   - the raw chiral bridge Y = P_R Gamma_1 P_L is nilpotent
   - on a scalar local baseline m I, Y has identically zero bosonic
     log|det|-response
-  - its retained scalar Hermitian completion is exactly
+  - its declared scalar Hermitian completion is exactly
 
         Y + Y^dagger = Gamma_1
 
   - Gamma_1 has nontrivial even source-response
-  - therefore the physical normalization surface is the full bosonic
-    Gamma_1 family, not the active chiral bridge by itself
-  - in the branch's canonical trace normalization, that selects the full-space
-    bridge ratio
+  - conditional on assigning Gamma_1 as the physical source family, the
+    canonical trace normalization selects the full-space bridge ratio
 
         y_nu^(0) / g_weak = 1 / sqrt(2)
 
     rather than the active-space ratio 1
 
-This closes the base-normalization ambiguity. The downstream retained local
-Schur theorem now closes the exact second-order coefficient on `T_1`; the live
-remaining blocker is the Majorana / `Z_3` activation law.
+The physical source assignment is not derived here. The downstream Schur and
+Majorana / `Z_3` steps remain separately scoped.
 """
 
 from __future__ import annotations
@@ -123,7 +119,7 @@ def main() -> int:
 
     pseudo_overlap = max(abs(np.trace(G.conj().T @ PSEUDOSCALAR_COMPLETION)) for G in G_SPATIAL)
     check(
-        "pseudoscalar completion is orthogonal to the retained scalar Higgs family span{Gamma_i}",
+        "pseudoscalar completion is orthogonal to the declared scalar Higgs family span{Gamma_i}",
         pseudo_overlap < 1e-12,
         detail=f"max overlap = {pseudo_overlap:.3e}",
     )
@@ -189,7 +185,7 @@ def main() -> int:
     check("full-space canonical bridge ratio is 1/sqrt(2)",
           abs(ratio_full - 1.0 / math.sqrt(2.0)) < 1e-12,
           detail=f"ratio = {ratio_full:.12f}")
-    check("active-space ratio remains 1 as a rejected non-bosonic comparator",
+    check("active-space ratio remains 1 as a distinct comparator",
           abs(ratio_active - 1.0) < 1e-12,
           detail=f"ratio = {ratio_active:.12f}")
 
@@ -197,8 +193,8 @@ def main() -> int:
     y_selected = g_weak_example / math.sqrt(2.0)
     y_active = g_weak_example
     print()
-    print("Selected benchmark surface:")
-    print(f"  if g_weak = {g_weak_example:.3f}, observable-principle normalization gives")
+    print("Conditional benchmark surface:")
+    print(f"  if g_weak = {g_weak_example:.3f}, the supplied normalization premise gives")
     print(f"    y_nu^(0) = g_weak / sqrt(2) = {y_selected:.6f}")
     print(f"  while the active-space comparator would be {y_active:.6f}")
     print()
@@ -206,14 +202,14 @@ def main() -> int:
     print("Honest read:")
     print("  1. The raw chiral bridge Y = P_R Gamma_1 P_L is exact, but by itself it")
     print("     carries no bosonic scalar source-response on a local scalar baseline.")
-    print("  2. The retained local Higgs family fixes the physical scalar completion as")
+    print("  2. The supplied local Higgs family names the scalar completion as")
     print("     Gamma_1 = Y + Y^dagger, not the active bridge alone.")
     print("  3. Once the physical source family is assigned on Gamma_1, the branch's")
     print("     canonical trace normalization selects the full-space bridge ratio")
     print("     y_nu^(0) / g_weak = 1/sqrt(2).")
-    print("  4. So the base-normalization ambiguity is closed. The downstream")
-    print("     retained local Schur theorem now fixes the exact T_1 return,")
-    print("     and the live remaining blocker is the Majorana / Z3 activation law.")
+    print("  4. The source-family assignment is a premise, not a runner-derived")
+    print("     physical selection; downstream Schur and Majorana / Z3 steps remain")
+    print("     separately scoped.")
     print()
     print("=" * 78)
     print(f"RESULT: {PASS_COUNT} PASS, {FAIL_COUNT} FAIL")

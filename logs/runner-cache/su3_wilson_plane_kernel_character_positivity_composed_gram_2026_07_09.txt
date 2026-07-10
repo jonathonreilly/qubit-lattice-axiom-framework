@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py
+runner_sha256: 86ce767889642e6a8ffa54aa6d14a1fd2a9fb58b4f796a43a1ab0fd789c9f431
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 10.60
+status: ok
+----- stdout -----
+========================================================================================
+SU(3) Wilson plane-kernel character positivity and composed two-slice Gram
+Exact multiplicities, independent cross-extractions, and L_s=2 composed integral
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part A: exact character positivity for SU(3)
+----------------------------------------------------------------------------------------
+  A1: built h^n through n=26; terms(h^26)=2107, max coefficient=1774040236685100000
+  [PASS] A2.1 Weyl-density normalization  (CT[|Delta|^2]=6)
+  [PASS] A2.2 Jacobi-Trudi characters have the SU(3) dimensions  (labels=45, max dimension=125, failures=0)
+  [PASS] A2.3 full pairwise character orthonormality  (pairs=2025, failures=0, max residual=0)
+  [PASS] A3.1 multiplicity anchors at n=1  (failures=0)
+  [PASS] A3.2 multiplicity anchors at n=2  (failures=0, dimension sum=36)
+  [PASS] A3.3 exact dimension sums through n=8  (max residual=0)
+  A4 coefficient table c_lambda^(26)(beta):
+    beta=0.15: (0,0)=1.005782072e+00 (0,1)=7.825549557e-02 (1,0)=7.825549557e-02 (0,2)=3.043064161e-03 (1,1)=5.939568792e-03 (2,0)=3.043064161e-03 (0,3)=7.885627305e-05 (1,2)=2.267991796e-04 (2,1)=2.267991796e-04 (3,0)=7.885627305e-05 (0,4)=1.531962845e-06 (1,3)=5.787388404e-06 (2,2)=8.555172191e-06 (3,1)=5.787388404e-06 (4,0)=1.531962845e-06
+    beta= 0.5: (0,0)=1.069956105e+00 (0,1)=2.999372044e-01 (1,0)=2.999372044e-01 (0,2)=4.189288307e-02 (1,1)=7.762135250e-02 (2,0)=4.189288307e-02 (0,3)=3.887907173e-03 (1,2)=1.024826630e-02 (2,1)=1.024826630e-02 (3,0)=3.887907173e-03 (0,4)=2.697824218e-04 (1,3)=9.089556928e-04 (2,2)=1.302430836e-03 (3,1)=9.089556928e-04 (4,0)=2.697824218e-04
+    beta= 1.0: (0,0)=1.334509635e+00 (0,1)=8.130168327e-01 (1,0)=8.130168327e-01 (0,2)=2.459599039e-01 (1,1)=4.279552801e-01 (2,0)=2.459599039e-01 (0,3)=4.924778246e-02 (1,2)=1.172787213e-01 (2,1)=1.172787213e-01 (3,0)=4.924778246e-02 (0,4)=7.344937848e-03 (1,3)=2.176040347e-02 (2,2)=3.001934687e-02 (3,1)=2.176040347e-02 (4,0)=7.344937848e-03
+    beta= 2.0: (0,0)=3.441440355e+00 (0,1)=4.362353340e+00 (1,0)=4.362353340e+00 (0,2)=2.807425052e+00 (1,1)=4.467259375e+00 (2,0)=2.807425052e+00 (0,3)=1.206478838e+00 (1,2)=2.492706946e+00 (2,1)=2.492706946e+00 (3,0)=1.206478838e+00 (0,4)=3.875081115e-01 (1,3)=9.623518174e-01 (2,2)=1.254876934e+00 (3,1)=9.623518174e-01 (4,0)=3.875081115e-01
+  [PASS] A4 exponential-series tail  (T(2,26)=1.196290e-07)
+  [PASS] A5 independent direct-exponential quadrature cross-extraction  (max residual=2.686e-11, max allowed=1.206e-07, failures=0)
+  [PASS] A6 wrong-kernel rejector detects a negative (1,1) coefficient  (extracted=-1.077621353e+00+8.54e-18i, subtraction=1.155242705e+00)
+  [PASS] A7.1 U(1) binomial and Bessel combinatorial forms agree  (max |A-B|=4.441e-16, failures=0)
+  [PASS] A7.2 U(1) combinatorial values lie in certified Bessel intervals  (max tail=7.232e-84, failures=0)
+  [PASS] A8.1 SU(2) Weyl-density normalization  (CT=2)
+  [PASS] A8.2 SU(2) exact dimension sums through n=8  (max residual=0)
+  [PASS] A8.3 SU(2) quadrature cross-extraction  (max residual=5.712e-14, max allowed=1.002e-09, failures=0)
+
+----------------------------------------------------------------------------------------
+Part B: explicit matrix elements for the n<=2 irreducible set
+----------------------------------------------------------------------------------------
+  [PASS] B1 explicit representation matrices are unitary  (max ||D D^dag-I||=4.689e-15)
+  [PASS] B2 explicit representation matrices respect composition  (max ||D(UV)-D(U)D(V)||=1.019e-15)
+  [PASS] B3 explicit characters tie to the exact torus polynomials  (max |trace D-chi|=3.140e-15)
+  [PASS] B4 pointwise truncated-kernel spectral identity  (max residual=4.444e-16)
+
+----------------------------------------------------------------------------------------
+Part C: composed two-slice SU(3) form at L_s=2
+----------------------------------------------------------------------------------------
+  C1 beta=0.15: min_eig=-6.401581e-03, mc_noise=3.320e-03, herm_err=5.938e-03, eigenvalues=[-0.0064  -0.00221  0.003    0.00989  0.02155  0.02397  0.02846  0.03108
+  0.04573  1.01306]
+  [PASS] C1.0.15.1 full-weight Gram is PSD within sampling error  (min eig=-6.401581e-03, negative allowance=9.960e-03)
+  [PASS] C1.0.15.2 full-weight sampling error is controlled  (mc_noise=3.320e-03)
+  [PASS] C1.0.15.3 full-weight Hermiticity residual is sampling-sized  (herm_err=5.938e-03, allowance=3.320e-02)
+  C1 beta=0.75: min_eig=+7.833473e-03, mc_noise=8.311e-03, herm_err=1.809e-02, eigenvalues=[0.00783 0.01291 0.02129 0.06175 0.1095  0.13387 0.14726 0.1857  0.25632
+ 1.42701]
+  [PASS] C1.0.75.1 full-weight Gram is PSD within sampling error  (min eig=+7.833473e-03, negative allowance=2.493e-02)
+  [PASS] C1.0.75.2 full-weight sampling error is controlled  (mc_noise=8.311e-03)
+  [PASS] C1.0.75.3 full-weight Hermiticity residual is sampling-sized  (herm_err=1.809e-02, allowance=8.311e-02)
+  [PASS] C2.1 direct truncated integral matches independent spectral factorization  (max |direct-factor|=2.218e-02, max violation ratio=0.333)
+  [PASS] C2.2 same-stream factorization is a manifest Gram matrix  (min eig=+6.362908e-04)
+  [PASS] C2.3 factorization coefficients byte-match the Part A partial sums  (bytes=1240, max value residual=0.000e+00)
+  C2 consistency: sup |k-ktilde_2| <= 1.706218549e-02; observed Gram difference=8.666e-03
+  [PASS] C2.4 full and truncated composed Grams obey the consistency envelope  (observed=8.666e-03, allowance=8.915e-02)
+  [PASS] C3 no-conjugation control is non-PSD  (min eig=-4.825934e-01, mc_noise=1.950e-01)
+  [PASS] C4.1 beta=0 Gram matches the exact rank-one anchor  (max residual=6.140e-03, allowance=2.670e-02)
+  [PASS] C4.2 beta=0 non-leading spectrum vanishes within sampling error  (second-largest |eig|=1.671e-02, allowance=2.670e-02)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  All exact, discriminating, representation, and composed-integral checks passed.
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

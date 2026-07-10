@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 195 |
-| **retained_no_go** | 207 |
+| **retained_no_go** | 208 |
 | **retained_bounded** | 932 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1842 |
+| unaudited | 1841 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 12 |
-| `audited_clean` | 1338 |
+| `audited_clean` | 1339 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2187 |
+| `unaudited` | 2186 |
 
 | claim_type | count |
 |---|---:|
@@ -296,6 +296,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
@@ -3921,6 +3922,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 
 Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=2; ('second', 'audited_decoration', 'decoration', 'A')=3.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02`
+
+- **Note:** [`CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md`](../../docs/CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On the real grade-1 vector representation of Cl(3,0), no nonzero Spin(3)- or Pin(3)-equivariant linear endomorphism anticommutes with Gamma_chi=(2/3)J-I; frame-selected L4 operators remain outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-cl3_frame_free_ambient_c-062`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Solving [M,L_k]=0 for the three so(3) generators gives M=cI_3, and {cI_3,Gamma_chi}=0 then forces c=0.  _(class `A`)_
+- **chain closes:** True — The exact commutant calculation reduces every equivariant grade-1 endomorphism to a scalar, whose anticommutator with the invertible Gamma_chi vanishes only for the zero map. The displayed L4 family confirms that anticommuting operators exist after non-equivariant frame data are supplied, preserving the stated narrow boundary.
+- **rationale:** The load-bearing result is a genuine exact algebraic closure using the accepted one-site Clifford carrier and the explicitly supplied Gamma_chi. The runner implements the Pauli/Clifford matrices, solves the full so(3) commutant symbolically, and verifies the anticommutator rather than merely printing expected outcomes. No physical generation identification, external comparator, calibrated value, or unretained bridge is needed for the scoped grade-1 no-go.
 - **auditor confidence:** high
 
 ### `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10`

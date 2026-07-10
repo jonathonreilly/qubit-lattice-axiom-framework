@@ -1,0 +1,25 @@
+loop_slug: universal-qg-optional-textbook-meta-closure-20260710
+mode: run
+target_status: best-honest-status
+runtime_budget: "approximately 15 minutes, supplied by the science-fix prompt"
+cycle_count: 1
+block_count: 1
+active_route: finite-repository-predicate
+hard_residual: null
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/UNIVERSAL_QG_OPTIONAL_TEXTBOOK_COMPARISON_NOTE.md
+  - scripts/universal_qg_optional_textbook_comparison_meta_check.py
+  - logs/runner-cache/universal_qg_optional_textbook_comparison_meta_check.txt
+  - .claude/science/physics-loops/universal-qg-optional-textbook-meta-closure-20260710/
+open_imports: []
+no_go_routes:
+  - theorem-retag
+  - physics-authority-import
+trace_gate_classification: direct_blocker_closure
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit the reviewed block, push the dedicated branch, and open/verify its review PR."
+stop_condition: "The finite metadata predicate and cache pass, review disposition is pass, and delivery is packaged without a physics-status promotion."

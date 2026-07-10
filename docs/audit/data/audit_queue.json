@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 389,
     "high": 268,
-    "leaf": 742,
+    "leaf": 741,
     "medium": 501
   },
   "cycle_break_target_count": 10,
@@ -35654,28 +35654,6 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "noether_source_current_classification_bounded_note_2026-07-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/NOETHER_SOURCE_CURRENT_CLASSIFICATION_BOUNDED_NOTE_2026-07-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/noether_source_current_classification_2026_07_08.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18",
@@ -36261,6 +36239,30 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_neutrino_schur_suppression_named_admissions.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "energy_gauss_constraint_obstruction_route_b_note_2026-07-08",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "noether_source_current_classification_bounded_note_2026-07-08"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/ENERGY_GAUSS_CONSTRAINT_OBSTRUCTION_ROUTE_B_NOTE_2026-07-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/energy_gauss_constraint_obstruction_2026_07_08.py",
       "transitive_descendants": 0
     },
     {
@@ -43966,30 +43968,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dynamics_sort_records_accumulate_2026_07_03.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "energy_gauss_constraint_obstruction_route_b_note_2026-07-08",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "noether_source_current_classification_bounded_note_2026-07-08"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ENERGY_GAUSS_CONSTRAINT_OBSTRUCTION_ROUTE_B_NOTE_2026-07-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/energy_gauss_constraint_obstruction_2026_07_08.py",
       "transitive_descendants": 0
     },
     {
@@ -56913,5 +56891,5 @@
     }
   ],
   "ready_count": 161,
-  "total_pending": 1900
+  "total_pending": 1899
 }

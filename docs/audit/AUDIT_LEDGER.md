@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 936 |
+| **retained_bounded** | 937 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 27 |
-| unaudited | 1752 |
+| unaudited | 1751 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1351 |
+| `audited_clean` | 1352 |
 | `audited_conditional` | 121 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2099 |
+| `unaudited` | 2098 |
 
 | claim_type | count |
 |---|---:|
@@ -974,6 +974,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nn_lattice_rescaled_universal_parameter_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-current | A | - |
 | `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `noether_source_current_classification_bounded_note_2026-07-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -14528,6 +14529,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For M = a I + b_1 sigma_1 + b_2 sigma_2 + b_3 sigma_3, {M, sigma_j} = 2a sigma_j + 2 b_j I, so requiring {M, sigma_j}=0 for all j forces a=b_1=b_2=b_3=0 and hence M=0.  _(class `A`)_
 - **chain closes:** True — The current minimal-axioms note supplies the one-site M_2(C) algebra as an accepted axiom premise, and the retained Cl(3) Pauli-irrep note supplies the Pauli presentation/pseudoscalar context. The no-go itself is elementary Pauli-basis exhaustion; zero cannot satisfy gamma5^2=I, and larger temporal, gauge, or multisite chirality mechanisms are explicitly out of scope.
 - **rationale:** The load-bearing step is a direct finite-dimensional matrix-algebra identity over the supplied M_2(C) site algebra and Pauli generators, not a definition, renaming, tuned numerical match, or external comparator. The runner independently checks the same Pauli products, commutators, nullspace exhaustion, and gamma5 exclusion, with only source-firewall checks classified as B. Residual risk: the note/runner still mention an older minimal-axioms filename, but the supplied 2026-06-29 axiom authority contains the needed Qubit premise and accepted-premise treatment, so this does not block closure.
+- **auditor confidence:** high
+
+### `noether_source_current_classification_bounded_note_2026-07-08`
+
+- **Note:** [`NOETHER_SOURCE_CURRENT_CLASSIFICATION_BOUNDED_NOTE_2026-07-08.md`](../../docs/NOETHER_SOURCE_CURRENT_CLASSIFICATION_BOUNDED_NOTE_2026-07-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The declared nonconstant, Hermitian, per-species-number-conserving fermion basis of degree at most four was numerically classified at windows four and six for five deterministic samples of the specified one-dimensional two-species Hamiltonian.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-131002-abb23e4d-noether_source_current_c-004`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For all five seeded coupling samples, the computed nullity is three at both support windows and its span matches the two species charges and Hamiltonian density within the stated numerical gates.  _(class `C`)_
+- **chain closes:** True — The runner explicitly constructs the finite operator basis and commutator matrix, computes its numerical kernel, and verifies its dimension and alignment with the three named conserved densities. The completed cache reports all gates passing without overflow.
+- **rationale:** The load-bearing result is produced by an actual finite-basis operator computation rather than by printing or importing the claimed nullity. The CAR and Jordan–Wigner representation checks validate the machinery, while the membership, sample, control, and absentee checks independently exercise the classification. The conclusion remains expressly limited to the declared basis, windows, samples, and numerical tolerances.
 - **auditor confidence:** high
 
 ### `nonlabel_grown_basin_note`

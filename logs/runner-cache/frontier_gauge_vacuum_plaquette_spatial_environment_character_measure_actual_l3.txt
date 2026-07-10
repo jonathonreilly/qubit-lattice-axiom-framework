@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py
+runner_sha256: adc317ebec7341fcf5dd81f371e0d87f653accd0f371cfa5fd4cb4f959c62e26
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 113.17
+status: ok
+----- stdout -----
+===============================================================================
+ACTUAL L_s=3 SPATIAL WILSON ENVIRONMENT CHARACTER MEASURE
+===============================================================================
+beta=6.0, L=3, links=81, plaquettes=81, chains=4, therm=900, measure=2400, sample_every=4
+No canonical plaquette comparator or fitted rho enters this runner.
+
+Exact implementation checks
+  [PASS] Jacobi--Trudi character values equal irrep dimensions at identity: max error=0.000e+00
+  [PASS] periodic L_s=3 census has 81 links and 81 plaquettes: links=81, faces=81
+  [PASS] every spatial link has four incident plaquettes: range=4..4
+  [PASS] local Metropolis action delta equals full Wilson-weight delta: residual=6.661e-16
+  [PASS] SU(2)-subgroup proposal remains in SU(3): unitary=1.110e-16, determinant=2.222e-16
+  [PASS] beta=0/marked-only Haar control kills every nontrivial tracked character: max moment=2.291e-16
+
+Independent full-Wilson chains (marked-factor deletion estimator)
+  seed=61003 init=cold kind=full_reweight      excluded=None eps=0.3032 acc=0.528 n=600 P=0.461527 rho10=0.045456 rho11=-0.001658
+  seed=61019 init=hot  kind=full_reweight      excluded=None eps=0.3192 acc=0.507 n=600 P=0.467330 rho10=0.044542 rho11=0.000446
+  seed=61031 init=cold kind=full_reweight      excluded=None eps=0.3352 acc=0.490 n=600 P=0.459184 rho10=0.039995 rho11=-0.003978
+  seed=61043 init=hot  kind=full_reweight      excluded=None eps=0.3025 acc=0.530 n=600 P=0.458440 rho10=0.033562 rho11=0.002517
+  elapsed=51.0s
+
+Marked-factor deletion estimator
+  irrep      d       rho_env +/- block-JK error       single-link rho
+  (0,0)      1   +1.000000000 +0.00e+00i +/- 3.296e-16   +1.000000000
+  (1,0)      3   +0.040787179 -1.35e-03i +/- 3.432e-03   +0.422531740
+  (0,1)      3   +0.040787179 +1.35e-03i +/- 3.432e-03   +0.422531740
+  (1,1)      8   -0.000657740 +1.11e-19i +/- 1.230e-03   +0.162259799
+  (2,0)      6   +0.001457900 +1.03e-04i +/- 1.444e-03   +0.135961727
+  (0,2)      6   +0.001457900 -1.03e-04i +/- 1.444e-03   +0.135961727
+
+Independent 80-plaquette environment chains (direct estimator)
+  seed=62003 init=hot  kind=environment_direct excluded=   0 eps=0.3040 acc=0.532 n=600 P=0.450213 rho10=0.045984 rho11=-0.006336
+  seed=62019 init=cold kind=environment_direct excluded=   1 eps=0.3192 acc=0.514 n=600 P=0.452921 rho10=0.053297 rho11=0.010008
+  seed=62031 init=hot  kind=environment_direct excluded=  27 eps=0.3192 acc=0.511 n=600 P=0.454873 rho10=0.038493 rho11=-0.003083
+  seed=62043 init=cold kind=environment_direct excluded=  54 eps=0.3184 acc=0.517 n=600 P=0.445323 rho10=0.051165 rho11=0.007491
+  irrep          direct rho_env +/- block-JK error       deletion difference
+  (0,0)   +1.000000000 +0.00e+00i +/- 0.000e+00   delta=+0.000e+00
+  (1,0)   +0.047234714 +2.83e-03i +/- 1.165e-02   delta=+6.448e-03
+  (0,1)   +0.047234714 -2.83e-03i +/- 1.165e-02   delta=+6.448e-03
+  (1,1)   +0.002020196 +1.14e-20i +/- 3.283e-03   delta=+2.678e-03
+  (2,0)   +0.000898786 -1.28e-03i +/- 4.197e-03   delta=-5.591e-04
+  (0,2)   +0.000898786 +1.28e-03i +/- 4.197e-03   delta=-5.591e-04
+
+Statistical and discriminating checks
+  [PASS] audit certificate uses the fixed minimum production protocol: chains=4, therm=900, measure=2400, sample_every=4, blocks=12
+  [PASS] rho_(0,0)^env is normalized by construction: residual=0.000e+00
+  [PASS] environment coefficients are real within four jackknife errors: imag max=1.346e-03
+  [PASS] conjugate irreps agree within four jackknife errors: residual=2.692e-03
+  [PASS] independent hot/cold chain means are mutually consistent: max chain deviation=2.70 pooled SE
+  [PASS] proposal acceptance remains nondegenerate: range=0.490..0.530
+  [PASS] full-chain block length exceeds ten estimated autocorrelation times: block=50, tau10=1.38, tau11=0.76
+  [PASS] direct-environment marked-face chain means are mutually consistent: max chain deviation=2.54 pooled SE
+  [PASS] direct-environment proposal acceptance remains nondegenerate: range=0.511..0.532
+  [PASS] direct-environment spectrum is real within four jackknife errors: imag max=2.830e-03
+  [PASS] direct-environment conjugate irreps agree within four jackknife errors: residual=5.660e-03
+  [PASS] direct-environment block length exceeds ten estimated autocorrelation times: block=50, tau10=1.66, tau11=0.90
+  [PASS] actual rho_(1,0)^env is statistically distinct from the single-link packet: separation=111.2 sigma
+  [PASS] actual rho_(1,1)^env is statistically distinct from the single-link packet: separation=132.5 sigma
+  [PASS] direct 80-plaquette and marked-factor-deletion spectra agree: max difference=0.76 combined SE
+
+Certificate boundary
+  The exact deletion identity derives the estimator from the actual
+  80-active-plaquette environment integral.  The reported beta=6
+  coefficients are finite-volume computed lattice inputs with block-
+  jackknife uncertainty, not exact all-weight arithmetic data.
+
+SUMMARY: PASS=21 FAIL=0
+
+----- stderr -----
+

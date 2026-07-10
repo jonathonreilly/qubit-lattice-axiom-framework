@@ -638,18 +638,8 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     if judgment.get("third_auditor") in prior_auditors:
         return False, "judicial third auditor must differ from both prior auditors"
 
-    third = judicial_summary_from_blob(judgment)
-    row["cross_confirmation"]["third_audit"] = third
-    row["cross_confirmation"]["mode"] = "judicial_third_pass"
-
-    if side == "neither":
-        row["cross_confirmation"]["status"] = "disagreement_irresolvable"
-        row["blocker"] = "judicial_review_irresolvable"
-        rows[cid] = row
-        ledger["rows"] = rows
-        return False, "judicial review found neither prior reading sufficient; human review required"
-
     chosen_claim_type = None
+    chosen: dict = {}
     if side == "hybrid":
         if not judgment.get("hybrid_resolution_note"):
             return False, "hybrid judicial review requires hybrid_resolution_note"
@@ -679,6 +669,8 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     )
     if ratified_verdict == "audited_decoration" and not ratified_decoration_parent:
         return False, "judicial audited_decoration requires decoration_parent_claim_id"
+    if side == "neither" and ratified_verdict == "audited_clean":
+        return False, "judicial side='neither' requires a conservative non-clean ratified_verdict"
     ratified_class = judgment.get("ratified_load_bearing_step_class")
     final_claim_type = ratified_claim_type or chosen_claim_type or row.get("claim_type")
     note_path = row.get("note_path") or ""
@@ -691,6 +683,14 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     gate_blob = {
         "claim_type": final_claim_type,
         "verdict": ratified_verdict,
+        "claim_scope": (
+            judgment.get("ratified_claim_scope")
+            or chosen.get("claim_scope")
+            or row.get("claim_scope")
+        ),
+        "chain_closes": side != "neither" and ratified_verdict == "audited_clean",
+        "load_bearing_step": judgment.get("ratified_load_bearing_step"),
+        "chain_closure_explanation": judgment.get("judgment_rationale"),
         "verdict_rationale": judgment.get("judgment_rationale"),
         "notes_for_re_audit_if_any": judgment.get("notes_for_re_audit_if_any"),
         "no_go_discipline": judgment.get("no_go_discipline"),
@@ -700,9 +700,26 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         source_required=no_go_discipline_gate.source_requires_no_go_discipline(
             note_path, note_body, row.get("claim_type") or final_claim_type
         ),
+        evidence_manifest=no_go_discipline_gate.build_evidence_manifest(
+            row, rows, REPO_ROOT
+        ),
     )
     if no_go_error:
         return False, no_go_error
+
+    # All fallible checks above are transactional: only now may the judicial
+    # record mutate the live row. This also ensures a valid ``neither`` result
+    # runs the same No-Go Discipline gate before recording its blocker.
+    third = judicial_summary_from_blob(judgment)
+    row["cross_confirmation"]["third_audit"] = third
+    row["cross_confirmation"]["mode"] = "judicial_third_pass"
+
+    if side == "neither":
+        row["cross_confirmation"]["status"] = "disagreement_irresolvable"
+        row["blocker"] = "judicial_review_irresolvable"
+        rows[cid] = row
+        ledger["rows"] = rows
+        return False, "judicial review found neither prior reading sufficient; human review required"
 
     row["cross_confirmation"]["status"] = {
         "first": "third_confirmed_first",
@@ -791,7 +808,11 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         )
     )
     no_go_error = no_go_discipline_gate.validate_no_go_discipline(
-        audit, source_required=source_requires_no_go
+        audit,
+        source_required=source_requires_no_go,
+        evidence_manifest=no_go_discipline_gate.build_evidence_manifest(
+            row, rows, REPO_ROOT
+        ),
     )
     if no_go_error:
         return False, no_go_error

@@ -53,6 +53,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 import premise_nodes
+import no_go_discipline_gate
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
@@ -479,6 +480,47 @@ def main() -> int:
     def add_notice(category: str, message: str) -> None:
         notices[category].append(message)
 
+    def check_no_go_packet(
+        *,
+        cid: str,
+        label: str,
+        audit_like: dict,
+        row: dict,
+        source_required: bool,
+    ) -> None:
+        verdict = audit_like.get("verdict") or audit_like.get("audit_status")
+        if verdict in {None, "unaudited"}:
+            return
+        packet = audit_like.get("no_go_discipline")
+        required = source_required or no_go_discipline_gate.output_requires_no_go_discipline(
+            audit_like
+        )
+        if required and packet is None:
+            add_notice(
+                "legacy_no_go_packet_absent",
+                f"{cid}: {label} predates structured No-Go Discipline; "
+                "grandfathered until fresh re-audit",
+            )
+            return
+        if packet is None:
+            return
+        normalized = {
+            **audit_like,
+            "verdict": verdict,
+            "chain_closes": audit_like.get(
+                "chain_closes", verdict == "audited_clean"
+            ),
+        }
+        error = no_go_discipline_gate.validate_no_go_discipline(
+            normalized,
+            source_required=source_required,
+            evidence_manifest=no_go_discipline_gate.build_evidence_manifest(
+                row, rows, REPO_ROOT
+            ),
+        )
+        if error:
+            errors.append(f"{cid}: {label} invalid no_go_discipline packet: {error}")
+
     def _load_pattern_file(name: str) -> tuple[str, ...]:
         path = DATA_DIR / name
         if not path.exists():
@@ -642,6 +684,62 @@ def main() -> int:
         e = row.get("effective_status")
         ct = row.get("claim_type")
         ind = row.get("independence")
+
+        note_body = ""
+        note_path = row.get("note_path") or ""
+        if note_path:
+            try:
+                note_body = (REPO_ROOT / note_path).read_text(
+                    encoding="utf-8", errors="replace"
+                )
+            except OSError:
+                pass
+        source_requires_no_go = no_go_discipline_gate.source_requires_no_go_discipline(
+            note_path, note_body, row.get("claim_type")
+        )
+        check_no_go_packet(
+            cid=cid,
+            label="live audit",
+            audit_like={**row, "verdict": row.get("audit_status")},
+            row=row,
+            source_required=source_requires_no_go,
+        )
+        cross = row.get("cross_confirmation") or {}
+        if isinstance(cross, dict):
+            for audit_key in ("first_audit", "second_audit", "third_audit"):
+                summary = cross.get(audit_key)
+                if isinstance(summary, dict) and summary:
+                    check_no_go_packet(
+                        cid=cid,
+                        label=f"cross_confirmation.{audit_key}",
+                        audit_like=summary,
+                        row=row,
+                        source_required=source_requires_no_go,
+                    )
+        for index, archived in enumerate(row.get("previous_audits") or []):
+            if not isinstance(archived, dict) or archived.get("no_go_discipline") is None:
+                continue
+            archived_verdict = archived.get("verdict") or archived.get("audit_status")
+            archived_blob = {
+                **archived,
+                "verdict": archived_verdict,
+                "chain_closes": archived.get(
+                    "chain_closes", archived_verdict == "audited_clean"
+                ),
+            }
+            # Historical source text is not archived, so validate the complete
+            # structure and controlled enums without pretending current note
+            # bytes can authenticate an old locator. Restoration performs the
+            # stronger current-packet locator check before making it live.
+            archived_error = no_go_discipline_gate.validate_no_go_discipline(
+                archived_blob,
+                evidence_manifest=None,
+            )
+            if archived_error:
+                errors.append(
+                    f"{cid}: previous_audits[{index}] invalid no_go_discipline "
+                    f"packet: {archived_error}"
+                )
 
         for field in DEPRECATED_LEDGER_FIELDS & set(row):
             errors.append(f"{cid}: deprecated ledger field {field!r} must not be present")

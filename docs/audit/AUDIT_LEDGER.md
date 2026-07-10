@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 950 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1716 |
+| unaudited | 1715 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 131 |
+| ~~audited_conditional~~ | 132 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1367 |
-| `audited_conditional` | 131 |
+| `audited_conditional` | 132 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2061 |
+| `unaudited` | 2060 |
 
 | claim_type | count |
 |---|---:|
@@ -1643,6 +1643,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `theta_gauge_winding_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `theta_gluing_flow_nonsourcing_pair_level_seed_localization_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `theta_mass_determinant_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `wilson_m_h_per_channel_closure_bounded_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -21370,6 +21371,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting V → V† and using w(X†) = w(X) for real class weights gives G(S₁†,…,Sₖ†) = G(S₁,…,Sₖ), which combined with the SU(2) symmetric-trace identity makes the star pairwise-reducible.  _(class `A`)_
 - **chain closes:** False — A real-valued class weight on a general compact group need not satisfy w(g†) = w(g); for example, positive real class functions on U(1) can contain an inversion-odd sine component. The runner tests only SU(2), where inversion preserves conjugacy classes, so it cannot establish the advertised group-general theorem or its SU(3) transfer.
 - **rationale:** The 14 runner checks genuinely support the stated finite SU(2) examples and algebraic identities, with no external comparator or imported numerical premise. However, the load-bearing generalization incorrectly treats real-valued centrality as dagger-evenness; an explicit inversion-even hypothesis is missing. Moreover, diagonal-conjugation invariance and one independent-conjugation witness establish factorization through joint orbits and nontrivial joint dependence, but not that the observables separate or expose precisely all diagonal-orbit data.
+- **auditor confidence:** high
+
+### `theta_mass_determinant_axiom_update_no_go_note_2026-07-04`
+
+- **Note:** [`THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`](../../docs/THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The four updated axioms and named approved primitives do not themselves supply the physical mass-determinant readout and exhaustion bridge; the k=0 character result applies only after a multiplicative determinant channel and K/CPT registration are supplied.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00102-theta_mass_determinant_axiom`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The cited axioms and approved primitives supply no determinant readout context, K/CPT structure, mass/action surface, or physical-observable identification, so the determinant-character phase-erasure algebra remains conditional on an additional bridge.  _(class `B`)_
+- **chain closes:** True — The full cited texts substantiate the narrowly scoped non-supply conclusion, and the conditional determinant-character calculation is mathematically sound. No physical determinant channel, positive mass orientation, or theta retirement is inferred.
+- **rationale:** The runner genuinely checks the elementary determinant-character algebra, but most checks are textual, registry, and boundary verification rather than first-principles computation. The scientific no-supply claim is properly bounded and follows from the packet. Under the binding rubric, however, the cited Tier-A registry authority has meta status and is not flagged as an accepted premise, requiring a conditional verdict despite its apparently contextual role.
+- **open / conditional deps cited:**
+  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
 - **auditor confidence:** high
 
 ### `theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01`

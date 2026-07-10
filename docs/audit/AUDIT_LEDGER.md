@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 936 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1820 |
+| unaudited | 1819 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 77 |
+| ~~audited_conditional~~ | 78 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1345 |
-| `audited_conditional` | 77 |
+| `audited_conditional` | 78 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2165 |
+| `unaudited` | 2164 |
 
 | claim_type | count |
 |---|---:|
@@ -1506,6 +1506,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `confinement_string_tension_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
@@ -4197,6 +4198,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The excited spectral sum is bounded by (λ_1/M_T)^n via Cauchy-Schwarz as ‖A†|0⟩‖‖B|0⟩‖ ≤ ‖A‖‖B‖, giving exp(-nΔ_T)‖A‖‖B‖, with the thermal term then controlled by ‖ρ_β-P_0‖_1=2q_β.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the spectral decomposition, corrected Cauchy-Schwarz placement, and trace-distance estimate prove the displayed ground-state and thermal bounds. The open mass-gap and spatial-clustering problems are explicitly outside the audited conclusion.
 - **rationale:** The load-bearing proof is a finite-dimensional algebraic spectral argument over the theorem assumptions, not a numerical match or imported physical premise. The runner source genuinely tests the corrected adjoint placement, spectral identity, ground-state bound, thermal q_β bound, and no-gap counterexample rather than merely printing expected results. Independent formula checks found the displayed exponential factor, trace-norm identity, 6q_β thermal correction, and finite-D Boltzmann population bound consistent with the note's definitions. The clean verdict is limited to the conditional transfer-matrix lemma and does not certify Δ_T>0 on A_min or spatial cluster decomposition.
+- **auditor confidence:** high
+
+### `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17`
+
+- **Note:** [`CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`](../../docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite-dimensional and compact positive-self-adjoint implications H1+H2 ⇒ (S.7), and the finite-temperature trace-distance bound (S.8) when the thermal operator is trace-class, including the claimed finite-Λ pure-Wilson composition but excluding the full staggered+Wilson and thermodynamic/continuum surfaces.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-cluster_decomposition_sp-089`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** After removing the top-eigenvector term, spectral ordering and Cauchy–Schwarz bound the remaining sum by ‖A_p‖‖B_q‖(λ_1/M_x)^d = ‖A_p‖‖B_q‖e^{-dΔ_x}.  _(class `A`)_
+- **chain closes:** False — The abstract bridge under H1 and H2 closes. The pure-Wilson composition does not: the cited axis-permutation authority states that T_W^(μ) is trace-class, positivity-improving, and compact with a simple Perron eigenvalue, but does not establish the positive self-adjoint/Hermitian operator property and nonnegative orthonormal spectral resolution required by this bridge.
+- **rationale:** The spectral-decomposition, Cauchy–Schwarz, and trace-distance arguments are correct on their stated positive-self-adjoint surfaces. The runner performs five genuine class-(A) checks on synthetically constructed Hermitian matrices, but it assumes rather than derives the missing Wilson-operator property. Consequently it verifies the conditional algebraic bridge but cannot close the asserted finite-Λ pure-Wilson corollary from the supplied authority.
 - **auditor confidence:** high
 
 ### `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02`

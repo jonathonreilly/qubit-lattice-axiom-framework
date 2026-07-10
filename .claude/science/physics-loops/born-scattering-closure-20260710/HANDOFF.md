@@ -78,3 +78,14 @@ from the bounded floating-point discriminator. The final full replay reports
 Exact next action: run the repository audit pipeline in a detached temporary
 worktree for validation only, then package one branch-local review PR. Do not
 apply an audit verdict or merge.
+
+## Checkpoint 4
+
+Detached audit-pipeline validation completed with zero errors. It seeded one
+new/changed row, preserved `3717` prior audits, invalidated `0`, and represented
+the target as `claim_type=no_go`, `audit_status=unaudited`, and
+`effective_status=unaudited`. The generated validation outputs were discarded
+with the temporary worktree and are not branch artifacts.
+
+Exact next action: commit this PR packet, push the dedicated branch, and open
+one review PR. Independent audit remains required; do not merge.

@@ -41,6 +41,19 @@ From the ledger scope, the supplier surface used here is:
 - explicit exclusions for full-spectrum anomaly, GUT-normalization, and
   `sin^2(theta_W)` claims.
 
+Within that supplier chain, the two intermediate authorities named by the
+ledger scope are cited here as direct dependency edges. The matter-assignment
+authority is
+[`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md)
+(carried as algebraic decoration under its consolidation parent
+`graph_first_su3_integration_note`; consult the pipeline-derived live ledger
+for current dependency-chain standing), which splits the
+LH-doublet sector into the SU(3)-fundamental `(2,3)` block and SU(3)-singlet
+`(2,1)` block used by B1. The alpha=1/3 normalization authority is
+[`HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md),
+whose bounded arithmetic conclusion `alpha = +1/3`, equivalently
+`Y(L_L) = -1`, is exactly the normalization this note inherits.
+
 From the source note's own statement (not the ledger scope), the notation
 used below: `Y = (1/3)P_sym - P_anti`, with the `(2,3)` block carrying
 `Q_L` and the `(2,1)` block carrying `L_L`.
@@ -112,6 +125,14 @@ This note does not close:
 - any full-spectrum Standard Model hypercharge or electroweak matching claim
   beyond the hypercharge-identification scope.
 
+**2026-07-10 downstream hygiene.** The supplier-chain inputs are now carried
+as direct dependency edges to the L2 matter-assignment and L3 alpha=1/3
+normalization authorities (previously reachable only through
+[`HYPERCHARGE_IDENTIFICATION_NOTE.md`](HYPERCHARGE_IDENTIFICATION_NOTE.md)),
+so upstream drift in either authority re-enters this row for re-audit through
+the standard dependency-edge mechanism; this dated line itself moves the note
+hash so the row re-enters for re-audit.
+
 ## Repair Note
 
 **2026-07-07 scope alignment.** The runner still used the stale
@@ -119,6 +140,13 @@ This note does not close:
 needle after the 2026-07-04 hypercharge scope repair. This note and runner now
 use the current ledger `claim_scope` wording for the LH-doublet surface and
 its exclusions. No claim content changed.
+
+**2026-07-10 dependency-edge repair.** The 2026-07-10 re-audit of this row
+returned `missing_dependency_edge`: the note named the matter-assignment and
+alpha=1/3 normalization authorities in prose but carried no direct dependency
+edges to them. The Result section now links both authorities directly, the
+Boundary section carries the dated downstream-hygiene line, and the runner
+pins both edges and pipeline-derived chain closure. No claim content changed.
 
 ## Verification
 
@@ -130,8 +158,11 @@ The runner checks:
   `(2,1)` eigenvalue surface and its explicit exclusions;
 - the ABJ bridge now cites this supplier note and no longer presents P-HY as
   an unsupported declared premise for B1;
+- the direct L2 matter-assignment and L3 alpha=1/3 normalization dependency
+  edges are present in this note, and the pipeline reports chain-satisfying
+  dependency closure (for L2, through its consolidation parent);
 - the B1 anomaly traces are recomputed exactly over rational numbers;
 - branch/file-scope hygiene is enforced by review tooling rather than claimed
   by the science runner.
 
-Expected runner result: `TOTAL: PASS=22 FAIL=0`.
+Expected runner result: `TOTAL: PASS=26 FAIL=0`.

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1809 |
+| unaudited | 1808 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 84 |
+| ~~audited_conditional~~ | 85 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1348 |
-| `audited_conditional` | 84 |
+| `audited_conditional` | 85 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2154 |
+| `unaudited` | 2153 |
 
 | claim_type | count |
 |---|---:|
@@ -1538,6 +1538,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_eq_3delta_identity_note_2026-04-21` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -14168,6 +14169,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The route's P1 derivation requires identifying the framework scalar generator W with Tr K and then using log(ρ_A ⊗ ρ_B) = log ρ_A ⊗ I + I ⊗ log ρ_B, so the Tomita-Gibbs route imports the additive-log/P1 content rather than deriving it.  _(class `A`)_
 - **chain closes:** True — The scoped no-go closes: the presented forward derivation of P1 explicitly depends on the underived W = Tr K identification plus the tensor-product log identity. The runner verifies the algebraic factorization, modular-Hamiltonian additivity, F_p contrast, and spectral Cauchy step; it does not establish a positive derivation of P1.
 - **rationale:** The load-bearing obstruction is an algebraic proof-dependency check, not a numerical match or external comparator. The runner source performs actual symbolic/numerical algebra checks and source/ledger bookkeeping checks; it does not merely print constants or import a contested value. The no-go discipline gate passes for the scoped boundary: the packet enumerates more than five attack routes, collapses the walls to the identification-plus-Cauchy residual, scans hidden assumptions, and keeps the claim narrower than global impossibility of P1.
+- **auditor confidence:** high
+
+### `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the normalized Box–Cox exponent family on R_{>0}, the declared (NU) condition point-selects p=0 and is algebraically separable from additive-identity selectors; applicability of (NU) to the physical readout remains unlicensed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00004-observable_principle_p1_expo`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For W = s·g_p, W'^2/|W''| = |s|·z^p/|p-1|, whose supremum on all of R_{>0} is finite if and only if p = 0.  _(class `A`)_
+- **chain closes:** False — The conditional mathematical implication and class-escape construction close algebraically. The repository-level chain does not close because no supplied authority derives or ratifies the (NU) readout premise, including its all-R_{>0} applicability.
+- **rationale:** The exact calculus correctly establishes the ratio formula and its global divergence for every p≠0, with p=1 excluded by vanishing curvature. The supplied runner performs substantive symbolic checks rather than merely printing the expected result, although its boundary checks only confirm that the note labels (NU) unlicensed. Because that premise and its physical readout identification are not supplied by the restricted authority packet, the result remains a valid conditional selector theorem rather than a closed P1 derivation.
+- **open / conditional deps cited:**
+  - `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
+  - `RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31`

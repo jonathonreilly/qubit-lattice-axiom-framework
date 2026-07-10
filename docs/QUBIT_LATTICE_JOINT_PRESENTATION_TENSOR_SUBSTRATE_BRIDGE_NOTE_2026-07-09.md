@@ -3,10 +3,32 @@
 **Date:** 2026-07-09
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
-**Claim boundary:** joint tensor carrier for finite `Λ` from the live four-axiom memo plus a supplied commuting joint presentation and one named minimality selection; no dynamics, no probability, no physical readout identification.
+**Claim boundary:** joint tensor carrier for finite `Λ` from the live four-axiom memo plus a supplied commuting joint presentation and one named minimality selection (registered as (P1a)/(P1b) below, 2026-07-10); no dynamics, no probability, no physical readout identification.
 **Status authority:** independent audit lane only. This source note does not set or predict an audit outcome.
 **Primary runner:** [`scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py`](../scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py)
 **Cached output:** [`logs/runner-cache/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.txt`](../logs/runner-cache/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.txt)
+
+## Accepted Premises Registration (P1)
+
+```text
+(P1) Joint-presentation accepted-premise packet.
+
+(P1a) Commuting joint presentation: the qubit algebras at the distinct sites
+      xₖ of the finite region Λ admit a common finite-dimensional joint
+      presentation by unital *-embeddings ιₖ : M₂(ℂ) → B(H) on one carrier.
+      The joint carrier presents every site algebra faithfully and unitally,
+      and distinct-site images commute elementwise.
+
+(P1b) Minimality selection m = 1: among the faithful joint carriers compatible
+      with (P1a), the bridge selects the minimal multiplicity class m = 1.
+      Equivalently, H_Λ = (⊗_{x ∈ Λ} ℂ²_x) has scalar commutant and carrier
+      dimension 2^|Λ|.
+```
+
+**Status:** accepted-premise packet entry. This bridge registers (P1a) and
+(P1b); it does not derive either from the live axioms, and the live axiom
+authority supplies neither (as this note already records). The theorem below
+is bounded ON this registered packet.
 
 ## Claim
 
@@ -92,7 +114,7 @@ given trace form, not a derivation of probability weights.
 
 ## Named minimality selection
 
-**Named minimality selection.** This bridge declares `m = 1`. The live axioms
+**Named minimality selection (P1b).** This bridge declares `m = 1`. The live axioms
 alone force neither this value nor the removal of a multiplicity space. The
 selection is justified by the Qualification and the economy requirement that
 the bridge adds no further primitive structure: a factor `ℂᵐ` with `m ≥ 2`
@@ -104,7 +126,7 @@ axiom quotation and not a consequence presented as forced by the axioms alone.
 
 Two independent inputs are load-bearing:
 
-1. **Supplied commuting joint presentation.** The live axioms provide the
+1. **Supplied commuting joint presentation (P1a).** The live axioms provide the
    one-site `M_2(C)` presentations, but they do not themselves construct a
    common `B(H)` representation or force pairwise elementwise commutation of
    distinct-site images. The first paragraph of the Claim supplies both.
@@ -141,6 +163,22 @@ the `|Λ| = 1` case belongs to its companion
 No new axiom is introduced. The non-axiom inputs are the supplied commuting
 joint presentation and the named minimality selection declared above.
 
+## Repair Note (2026-07-10)
+
+The ledger's `notes_for_re_audit` read verbatim:
+
+> missing_bridge_theorem: supply retained-grade
+> derivations of the commuting joint presentation and m = 1, or explicitly
+> register both within an accepted-premise boundary before requesting an
+> unbounded clean verdict.
+
+This repair takes the registration arm. The two inputs were already declared
+in prose in the Claim boundary, Named minimality selection, and Complete
+declared-input surface; they are now registered in the canonical
+audit-readable named-premise form as (P1a) and (P1b). No theorem content
+changed. Because this repair changes the source note, note-hash drift re-enters
+the row for re-audit.
+
 ## Runner check breakdown
 
 - Group A: four live-axiom text needles.
@@ -150,9 +188,9 @@ joint presentation and the named minimality selection declared above.
   including the multiplicity-two rejector.
 - Group D: six exact projection-span, diagonal-deficiency, positivity,
   resolution, normalization, and additivity checks.
-- Group E: six note-content and authorized-link checks.
+- Group E: eleven note-content and authorized-link checks.
 
-Expected result: `TOTAL: PASS=34 FAIL=0`.
+Expected result: `TOTAL: PASS=39 FAIL=0`.
 
 ## Honest auditor read
 

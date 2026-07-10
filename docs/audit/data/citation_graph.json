@@ -2342,6 +2342,10 @@
     },
     {
       "from": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+      "to": "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09"
+    },
+    {
+      "from": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
       "to": "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02"
     },
     {
@@ -62310,12 +62314,15 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
         "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
         "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+        "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
         "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02"
       ],
       "helper_runner_paths": [
-        "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py"
+        "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py",
+        "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
+        "scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py"
       ],
-      "note_hash": "84a74704fba83a77041f3bc744e4e108d3009e5edb9867a0b52323f5690d432d",
+      "note_hash": "04a3cb32eb0ff6dbcdf4ff83cad221c53357e3f79ed294d4439086007daba65b",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py",
       "title": "Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation"
@@ -80659,10 +80666,10 @@
         "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "71ae0db71c9b113a4cfb584b60957d92a41c36daff25ede323c0a623c802aab4",
+      "note_hash": "b74d6cf19d58164aa61546c638ecd9dba60330713da1139b8f76183f7a41a94e",
       "path": "docs/GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md",
       "runner_path": "scripts/gauge_link_central_registration_induced_bi_invariant_step_kernel_2026_07_02.py",
-      "title": "Gauge-Link Record Step: Central Registration Induces Bi-Invariant Step Kernels"
+      "title": "Gauge-Link Record Step: Positive Lueders Central Registration Induces Bi-Invariant Step Kernels"
     },
     "gauge_link_per_record_step_rate_dial_unit_variance_point_theorem_note_2026-07-02": {
       "claim_id": "gauge_link_per_record_step_rate_dial_unit_variance_point_theorem_note_2026-07-02",
@@ -128874,8 +128881,8 @@
       "open_gate": 206,
       "positive_theorem": 658
     },
-    "edge_count": 14546,
-    "leaf_count": 1316,
+    "edge_count": 14547,
+    "leaf_count": 1315,
     "node_count": 3904,
     "root_count": 1109,
     "runners_with_path": 3526

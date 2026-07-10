@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 389,
+    "critical": 390,
     "high": 268,
     "leaf": 740,
     "medium": 501
@@ -311,12 +311,38 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audited_conditional",
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
+      "claim_id": "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
+      "claim_scope": "For beta >= 0, the pure-gauge fundamental SU(3) Wilson plane kernel has tensor-multiplicity character coefficients that are nonnegative; the corresponding absolutely convergent convolution kernel and bounded two-slice temporal-gauge composed form are positive semidefinite for every finite L_s.",
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": "awaiting_second",
+      "deps": [
+        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "retained",
+      "helper_runner_paths": [
+        "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py"
+      ],
+      "load_bearing_score": 9.707,
+      "note_path": "docs/SU3_WILSON_PLANE_KERNEL_CHARACTER_POSITIVITY_AND_COMPOSED_GRAM_NARROW_THEOREM_NOTE_2026-07-09.md",
+      "queue_reason": "audit_in_progress",
+      "ready": true,
+      "runner_path": "scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py",
+      "transitive_descendants": 590
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "claim_scope": "Finite staggered-only SU(3) Wilson lattice in temporal gauge with m > 0: integrated reflection positivity for two-step-block-invariant observables and positivity of the normalized two-step Hamiltonian.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
@@ -327,16 +353,19 @@
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
         "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
         "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+        "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
         "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02"
       ],
       "direct_in_degree": 50,
-      "effective_status": "audited_conditional",
+      "effective_status": "unaudited",
       "helper_runner_paths": [
-        "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py"
+        "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py",
+        "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
+        "scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py"
       ],
       "load_bearing_score": 34.205,
       "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "non_terminal_conditional",
+      "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py",
       "transitive_descendants": 589
@@ -44867,12 +44896,12 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
+      "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "gauge_link_central_registration_induced_bi_invariant_step_kernel_theorem_note_2026-07-02",
-      "claim_scope": "The implication from real-nonnegative Peter-Weyl-scalar Kraus blocks to normalized conjugation-invariant symmetric positive-character kernels, its finite S3/Q8 witnesses, and the claimed compact SU(3) softness/rate extension.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "criticality_rank": 0,
       "cross_confirmation_status": null,
@@ -44883,11 +44912,11 @@
         "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
       "load_bearing_score": 0.0,
       "note_path": "docs/GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md",
-      "queue_reason": "non_terminal_conditional",
+      "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/gauge_link_central_registration_induced_bi_invariant_step_kernel_2026_07_02.py",
       "transitive_descendants": 0
@@ -56868,6 +56897,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 160,
-  "total_pending": 1898
+  "ready_count": 161,
+  "total_pending": 1899
 }

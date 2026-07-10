@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1784 |
+| unaudited | 1783 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 99 |
+| ~~audited_conditional~~ | 100 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1350 |
-| `audited_conditional` | 99 |
+| `audited_conditional` | 100 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2129 |
+| `unaudited` | 2128 |
 
 | claim_type | count |
 |---|---:|
@@ -1574,6 +1574,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `ring_monodromy_does_not_force_car_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `shapiro_family_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
@@ -17178,6 +17179,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner-verified frozen table of instantaneous vs. retarded deflections, oscillating-source readouts, and tail-decay percentages is exactly computed and cache-matched on the h=0.5, W=6, L=30 harness.  _(class `C`)_
 - **chain closes:** True — The narrowed load-bearing core closes: the completed runner cache matches the frozen table, and the supplied source computes the lattice propagation and retarded fields rather than printing constants. The admitted frequency-fingerprint/branch-worth synthesis is not used as a load-bearing theorem.
 - **rationale:** The displayed runner-table values match the cache output, and the ratio 0.78 is the rounded quotient of the displayed retarded and instantaneous deflections. The source constructs the lattice, field schedules, propagation, oscillating-source fields, and tail-decay readouts numerically, with no helper imports, hard-coded expected outputs, or external comparator. All cited one-hop authorities are retained_bounded, and the note explicitly splits the unsupplied fingerprint/branch-worth bridge into non-load-bearing editorial synthesis.
+- **auditor confidence:** high
+
+### `ring_monodromy_does_not_force_car_note_2026-06-04`
+
+- **Note:** [`RING_MONODROMY_DOES_NOT_FORCE_CAR_NOTE_2026-06-04.md`](../../docs/RING_MONODROMY_DOES_NOT_FORCE_CAR_NOTE_2026-06-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Whether explicit one-qubit HCB and Jordan–Wigner CAR ring Hamiltonians establish that reflection positivity plus the stated loop-monodromy single-valuedness condition cannot select CAR.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00030-ring_monodromy_does_not_forc`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The explicit HCB and CAR ring Hamiltonians are both Hermitian, charge-conserving, and sector-wise T-positive, so the tested positivity and loop-consistency conditions do not reject HCB or force CAR.  _(class `C`)_
+- **chain closes:** False — The runner proves positivity of exp(-τH) for both finite Hamiltonians but does not evaluate the cited reflection-positive form or supply a bridge equating that spectral positivity with reflection positivity. It also substitutes parity-even bonds and an ordinary cyclic shift satisfying U^L=I for a direct check of the stated (-1)^Q monodromy condition on the local field.
+- **rationale:** The runner genuinely constructs and diagonalizes the HCB and CAR matrices, establishing their spectral transfer positivity, parity algebra, and different ring spectra. However, the cited RP authority explicitly does not bridge its abstract norm-square statement to this physical lattice transfer matrix, while the runner never tests that reflected form. Block 7 also overstates ground-state parity: its own sector spectra show that the CAR ground energy occurs in both parity sectors, so selecting one eigenvector with gs_parity does not establish an odd-only CAR ground state.
+- **open / conditional deps cited:**
+  - `REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `rp_mixed_observable_single_transfer_matrix_narrow_theorem_note_2026-05-29`

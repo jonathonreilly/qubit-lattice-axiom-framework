@@ -29,8 +29,10 @@ lanes after those fixes.
 ## Exact next action
 
 The disposable-worktree audit pipeline and strict lint passed: the sibling is
-seeded `no_go`, `unaudited`, ready, leaf, and without inbound edges. Push the
-branch and open one no-go review PR. Do not apply an audit verdict.
+seeded `no_go`, `unaudited`, ready, leaf, and without inbound edges. Review PR
+[#5125](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5125)
+is open and unmerged. The next action belongs to the independent audit lane;
+do not apply a verdict from this science branch.
 
 ## Later weaving proposal
 

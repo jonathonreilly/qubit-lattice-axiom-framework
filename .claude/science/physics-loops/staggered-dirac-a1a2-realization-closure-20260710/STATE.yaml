@@ -55,9 +55,11 @@ audit_compatibility_validation: >-
   disposable worktree: full 16-stage pipeline and audit_lint --strict returned
   no errors; the new no_go row is ready, leaf, unaudited, and has zero inbound
   edges.
-pr_status: pending_push
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5125
 next_exact_action: >-
-  Push the reviewed branch and open one no-go review PR without merging.
+  Independent audit should review the separate no_go row; do not use its
+  future negative status to satisfy positive parent dependencies.
 stop_condition: >-
-  Review passes the scoped no-go and its audit compatibility, or the artifact
-  is demoted to the strongest finite exact support boundary.
+  Achieved: scoped exact no-go passed review and audit compatibility, and one
+  unmerged review PR is open.

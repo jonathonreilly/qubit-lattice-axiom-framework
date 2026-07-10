@@ -3382,6 +3382,36 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             m.restore_audit_from_previous(row, {cid: row})
         )
 
+    def test_restore_refuses_packetless_clean_output_negative_authority(self):
+        m = self._import_and_patch()
+        cid = "packetless_output_negative"
+        note_path = "docs/POSITIVE_SOURCE.md"
+        self.fx.write_note(note_path, "# Positive source theorem\n")
+        archived = self._archived_audit(
+            claim_type="positive_theorem",
+            invalidation_reason="criticality_increased:leaf->medium",
+        )
+        archived["claim_scope"] = "No obstruction remains in this scope."
+        archived["chain_closes"] = True
+        row = self._seed_with_archived(cid, archived)
+        row["note_path"] = note_path
+
+        self.assertFalse(
+            m.no_go_discipline_gate.source_requires_no_go_discipline(
+                note_path,
+                "# Positive source theorem\n",
+                archived["claim_type"],
+            )
+        )
+        self.assertTrue(
+            m.no_go_discipline_gate.output_requires_no_go_discipline(
+                {**archived, "verdict": archived["audit_status"]}
+            )
+        )
+        self.assertIsNone(
+            m.restore_audit_from_previous(row, {cid: row})
+        )
+
     def test_select_restore_candidates_picks_criticality_increased(self):
         m = self._import_and_patch()
         rows = {

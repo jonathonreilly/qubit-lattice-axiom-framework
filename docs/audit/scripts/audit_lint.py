@@ -230,9 +230,19 @@ def mask_nonrendered_markdown(text: str) -> str:
     masked_lines: list[str] = []
     fence_char: str | None = None
     fence_len = 0
+    paragraph_open = False
+    indented_code = False
     for line in text.splitlines(keepends=True):
-        stripped = line.lstrip(" \t")
-        indent = len(line) - len(stripped)
+        content = line
+        container_offset = 0
+        while True:
+            container = re.match(r"[ \t]{0,3}>[ \t]?", content)
+            if not container:
+                break
+            container_offset += container.end()
+            content = content[container.end():]
+        stripped = content.lstrip(" \t")
+        indent = len(content) - len(stripped)
         if fence_char is not None:
             closing = re.match(
                 rf"{re.escape(fence_char)}{{{fence_len},}}[ \t]*(?:\r?\n)?$",
@@ -242,17 +252,30 @@ def mask_nonrendered_markdown(text: str) -> str:
             if indent <= 3 and closing:
                 fence_char = None
                 fence_len = 0
+                paragraph_open = False
             continue
         opener = re.match(r"(`{3,}|~{3,})", stripped) if indent <= 3 else None
         if opener:
             fence_char = opener.group(1)[0]
             fence_len = len(opener.group(1))
             masked_lines.append("".join("\n" if ch == "\n" else " " for ch in line))
+            paragraph_open = False
+            indented_code = False
             continue
-        if line.startswith(("    ", "\t")):
+        if not stripped.strip():
+            masked_lines.append(line)
+            paragraph_open = False
+            indented_code = False
+            continue
+        if container_offset == 0 and line.startswith(("    ", "\t")) and (
+            indented_code or not paragraph_open
+        ):
             masked_lines.append("".join("\n" if ch == "\n" else " " for ch in line))
+            indented_code = True
             continue
         masked_lines.append(line)
+        paragraph_open = True
+        indented_code = False
 
     visible = list("".join(masked_lines))
     source = "".join(masked_lines)
@@ -267,18 +290,34 @@ def mask_nonrendered_markdown(text: str) -> str:
             i = end
             continue
         if source[i] == "`":
+            backslashes = 0
+            escape_index = i - 1
+            while escape_index >= 0 and source[escape_index] == "\\":
+                backslashes += 1
+                escape_index -= 1
+            if backslashes % 2:
+                i += 1
+                continue
             run_end = i + 1
             while run_end < len(source) and source[run_end] == "`":
                 run_end += 1
             delimiter = source[i:run_end]
             close = source.find(delimiter, run_end)
-            while close >= 0 and (
-                (close > 0 and source[close - 1] == "`")
-                or (
-                    close + len(delimiter) < len(source)
-                    and source[close + len(delimiter)] == "`"
+            while close >= 0:
+                close_backslashes = 0
+                escape_index = close - 1
+                while escape_index >= 0 and source[escape_index] == "\\":
+                    close_backslashes += 1
+                    escape_index -= 1
+                exact_run = not (
+                    (close > 0 and source[close - 1] == "`")
+                    or (
+                        close + len(delimiter) < len(source)
+                        and source[close + len(delimiter)] == "`"
+                    )
                 )
-            ):
+                if exact_run and close_backslashes % 2 == 0:
+                    break
                 close = source.find(delimiter, close + len(delimiter))
             if close >= 0:
                 end = close + len(delimiter)
@@ -304,6 +343,13 @@ def markdown_link_targets(surface: str, text: str) -> set[str]:
     targets: set[str] = set()
     rendered_text = mask_nonrendered_markdown(text)
     for match in _INLINE_MARKDOWN_LINK_RE.finditer(rendered_text):
+        backslashes = 0
+        escape_index = match.start() - 1
+        while escape_index >= 0 and rendered_text[escape_index] == "\\":
+            backslashes += 1
+            escape_index -= 1
+        if backslashes % 2:
+            continue
         destination = match.group("destination")
         if destination.startswith("<") and destination.endswith(">"):
             destination = destination[1:-1]

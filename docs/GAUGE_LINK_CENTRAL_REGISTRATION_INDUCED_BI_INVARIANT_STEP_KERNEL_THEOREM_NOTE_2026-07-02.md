@@ -1,4 +1,4 @@
-# Gauge-Link Record Step: Central Registration Induces Bi-Invariant Step Kernels
+# Gauge-Link Record Step: Positive Lueders Central Registration Induces Bi-Invariant Step Kernels
 
 **Date:** 2026-07-02
 **Claim type:** bounded_theorem
@@ -211,23 +211,26 @@ coefficients `{triv: 1/6, sign: 1/6, std: -1/9}`: the standard coefficient is st
 negative. The channel is central-scalar with signed coefficient `c(std) = -1`, outside
 the positive Lueders subclass.
 
-Fourth, the failure survives genuine multi-outcome registration. The two-outcome
-central instrument with rational `5-12-13` weights,
+Fourth, the failure also occurs in a two-outcome central isometric instrument. The
+rational `5-12-13` family
 `K_1 = (12/13)(P_triv + P_sign - P_std)` and
-`K_2 = (5/13)(P_triv + P_sign + P_std)`, is exactly trace-preserving
+`K_2 = (5/13)(P_triv + P_sign + P_std)` is exactly trace-preserving
 (`(12/13)^2 + (5/13)^2 = 1` per block), its induced kernel is an exact convolution,
 and its exact character coefficients are `{triv: 1/6, sign: 1/6, std: -23/507}`, again
 strictly negative in the standard block. Both witnesses are checked exactly in
-rational arithmetic by the runner. The positive Lueders hypothesis
+rational arithmetic by the runner. Here `K_1^dag K_1 = (144/169) I` and
+`K_2^dag K_2 = (25/169) I`, so the outcome flag carries no representation-label
+information; this is a multi-outcome central-channel witness, not an
+information-bearing registration witness. The positive Lueders hypothesis
 `c_j(R) = sqrt(m_j(R)) >= 0` is therefore on the load-bearing list, not a convenience.
 
-## Theorem 4 (registration softness sets the per-step variance in a stated convention)
+## Theorem 4 (the tested registration-softness family orders per-step variance in a stated convention)
 
-Registration softness controls the per-step size. Full-resolution
-projective registration resolves the representation label as sharply as the
-chosen carrier allows and induces a maximal kick in the tested truncation.
-Soft POVM registrations, implemented as Gaussian bins along the quadratic
-Casimir axis, induce concentrated kernels.
+Within the five-channel deterministic `SU(3)` family tested by the runner,
+full-resolution projective registration has the largest per-step variance, and
+increasing the supplied Gaussian width decreases that variance. Full resolution
+resolves the representation label as sharply as the chosen carrier allows; the four
+soft POVM channels use Gaussian bins along the quadratic Casimir axis.
 
 In the deterministic `SU(3)` truncation used by the runner, the variance
 strictly decreases as the registration is softened:
@@ -236,8 +239,9 @@ strictly decreases as the registration is softened:
 projective > width 0.5 > width 2.0 > width 6.0 > width 15.0.
 ```
 
-The corresponding values are checked against the validation references near `9.870`,
-`8.048`, `5.852`, `2.476`, and `1.861`.
+The corresponding values are checked against the stored internal regression references
+near `9.870`, `8.048`, `5.852`, `2.476`, and `1.861`. These are protocol anchors, not
+external measurements or independent evidence.
 
 Convention (stated, not selected). The truncation keeps the irreps with partitions
 `lam = (p+q, q, 0)` for `p, q >= 0` and `p + q <= 10`. The finite-group count is
@@ -245,19 +249,25 @@ replaced by the truncated block count `N_trunc = sum_R d_R^2`, and the amplitude
 carry the normalized-Haar convention
 `kappa_j(x) = N_trunc^(-1/2) sum_R sqrt(m_j(R)) d_R chi_R(x)` with
 `T = sum_j |kappa_j|^2`, normalized against the mass-one Haar class measure by
-truncated character orthonormality. The step-size functional is the squared
-principal-eigenphase distance `d^2 = t_1^2 + t_2^2 + t_3^2`, where `t_1, t_2` lie in
-`(-pi, pi)` on a midpoint grid and the third eigenphase `t_3 = -(t_1 + t_2)` is
-wrapped to `[-pi, pi)`; the reported quantity is the Haar-weighted mean of `d^2` under
-the kernel. This is one explicit convention among admissible bi-invariant step-size
-conventions (a traceless-log branch is a named alternative and is not implemented
-here); no canonical metric selection is claimed.
+truncated character orthonormality. Numerically, the Haar-class quadrature is a
+`256 x 256` midpoint grid. The soft channels use centers
+`b in {0, 2, ..., 60}` and raw weights
+`q_b(R) = exp(-((C2(R) - b)/w)^2)`, normalized for each irrep as
+`m_b(R) = q_b(R) / sum_b q_b(R)`, for widths `w in {0.5, 2.0, 6.0, 15.0}`.
 
-Each registration channel therefore has a derived per-step variance in this stated
-convention: the lane's step-size dial is relocated onto the registration
-resolution/softness of the step. No per-unit-time rate is derived; converting a
-per-step variance into a rate requires the record-step count, which this row does not
-supply.
+The step-size functional is the squared principal-eigenphase distance
+`d^2 = t_1^2 + t_2^2 + t_3^2`, where `t_1, t_2` lie in `(-pi, pi)` on that midpoint
+grid and the third eigenphase `t_3 = -(t_1 + t_2)` is wrapped to `[-pi, pi)`; the
+reported quantity is the Haar-weighted mean of `d^2` under the kernel. This is one
+explicit convention among admissible bi-invariant step-size conventions (a
+traceless-log branch is a named alternative and is not implemented here); no canonical
+metric selection is claimed.
+
+Each of these five tested channels therefore has a computed per-step variance in this
+stated convention. The supplied softness parametrizes the variation within this tested
+family; the row does not derive a softness value. No per-unit-time rate is derived;
+converting a per-step variance into a rate requires the record-step count, which this
+row does not supply.
 
 Honest limit: the per-step kernel is not the heat kernel. For the width-6
 soft kernel, the runner computes
@@ -362,5 +372,5 @@ python3 scripts/gauge_link_central_registration_induced_bi_invariant_step_kernel
 Expected:
 
 ```text
-TOTAL: PASS=117 FAIL=0
+TOTAL: PASS=127 FAIL=0
 ```

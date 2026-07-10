@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 928 |
+| **retained_bounded** | 925 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1759 |
+| unaudited | 1762 |
 | audit_in_progress | 8 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
@@ -71,14 +71,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
-| `audited_clean` | 1341 |
+| `audit_in_progress` | 12 |
+| `audited_clean` | 1339 |
 | `audited_conditional` | 132 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 31 |
-| `unaudited` | 2106 |
+| `unaudited` | 2109 |
 
 | claim_type | count |
 |---|---:|
@@ -145,7 +145,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
-| `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
@@ -546,9 +545,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
-| `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -7933,43 +7930,17 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The audited claim is not a first-principles physical coupling derivation; it is an exact algebraic theorem under explicit formal hypotheses. Independent symbolic checking confirms the displayed identities, including the d = 3 values and the weak-angle expression. The runner source performs fraction-level arithmetic and boundary checks consistent with this class A scope, and the packet supplies no cited non-retained authority or open physical bridge needed for the bounded theorem.
 - **auditor confidence:** high
 
-### `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`
+### `free_dirac_poincare_representation_bounded_note_2026-05-30`
 
-- **Note:** [`FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md`](../../docs/FREE_DIRAC_POINCARE_GENERATORS_ESSENTIAL_SELFADJOINTNESS_BOUNDED_NOTE_2026-05-30.md)
+- **Note:** [`FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md`](../../docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded free one-particle massive Dirac mass-shell/Wigner representation: direct integrability and self-adjoint one-parameter generators from the supplied strongly continuous unitary action, with the Gaussian Nelson route rejected.
+- **claim_scope:** Internal algebraic and finite-compute consistency of the explicitly defined textbook continuum free massive Dirac/Poincare construction, excluding domain, exponentiation, reconstruction, spin-statistics, and lattice-emergence claims.
 - **audit_status:** ~~audited_clean~~
 - **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260608-195557-122d5fe85f-free_dirac_poincare_generato`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The displayed mass-shell/Wigner action is a strongly continuous unitary representation, so Stone's theorem supplies the self-adjoint one-parameter generators.  _(class `A`)_
-- **chain closes:** True — The cited companion and bridge authorities are retained_bounded and supply the explicit carrier, invariant mass-shell measure, Wigner SU(2) carrier/cocycle facts, strong continuity, and Stone consequence. The rapidity identities and Gaussian analytic-vector obstruction are standard algebraic checks at the restricted free-field scope.
-- **rationale:** The load-bearing step is a class-A functional-analytic closure over retained_bounded one-hop inputs, not a first-principles lattice derivation. The previously missing Wigner strong-continuity dependency is now explicit and supplies the direct integrability route the parent relies on. The runner mostly verifies source anchors and finite/proxy algebraic checks, but that is adequate because the upstream retained_bounded authorities are included as inputs. The clean scope remains bounded to the supplied continuum free one-particle carrier and does not derive lattice Lorentz symmetry, spin-statistics, or an interacting theory.
-- **auditor confidence:** high
-
-### `free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08`
-
-- **Note:** [`FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/FREE_DIRAC_POINCARE_STONE_DIFFERENTIAL_GENERATOR_COINCIDENCE_COMMON_CORE_BOUNDED_THEOREM_NOTE_2026-06-08.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The supplied m>0, spin-1/2 continuum one-particle Wigner representation on L2(H_m^+,d3p/(2E);C2), with C_c^infinity(H_m^+;C2) as a common core for its ten Stone and differential Poincare generators.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00061-free_dirac_poincare_stone_di`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Because D is dense, U(t)-invariant, contained in each Stone-generator domain, and the Stone and differential generators agree on D, the invariant-domain core theorem makes D a common core and yields A_Stone = closure(A_diff restricted to D).  _(class `A`)_
-- **chain closes:** True — The retained-bounded authorities supply the strongly continuous unitary representation and the differential-generator formulas. The explicit infinitesimal agreement, density, smooth compact-support invariance, and invariant-domain core theorem then identify every Stone generator with the closure of its differential restriction.
-- **rationale:** All load-bearing upstream authorities are retained-grade, and the result is a bounded algebraic and functional-analytic closure on the explicitly supplied continuum carrier. The exact action formulas support the derivative and invariance premises, after which the cited core theorem gives essential self-adjointness and coincidence. Several runner lines, including B3 and F1-F5, are hard-coded assertions rather than executable tests, but the source note independently states the corresponding standard arguments, so this runner weakness does not leave an open scientific premise.
-- **auditor confidence:** medium
-
-### `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07`
-
-- **Note:** [`FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md`](../../docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded free one-particle Wigner action on the supplied continuum positive-energy mass-shell carrier is a strongly continuous unitary Poincare representation, with Stone generators for one-parameter subgroups.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260608-112915-d9edfe7888-free_dirac_wigner_action_str`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** For compactly supported smooth psi, the phase, Lorentz pullback, and SU(2) carrier vary pointwise continuously near the identity and are dominated on a common compact support, so dominated convergence gives ||U(a,Lambda)psi - psi|| -> 0, and unitary density extends this to all H_1.  _(class `A`)_
-- **chain closes:** True — The retained_bounded companion supplies mass-shell preservation, invariant d^3p/(2E), and Wigner/SU(2) carrier facts. From those inputs, the displayed action has unitary norm preservation, the Wigner cocycle gives the semidirect product group law, and the dense-carrier dominated-convergence plus epsilon/3 argument gives strong continuity on H_1.
-- **rationale:** The load-bearing step is an analytic/algebraic closure over explicit retained-bounded continuum Wigner-action inputs, not a definition substitution or tuned numerical match. Independent formula checks close the semidirect product phase, Wigner cocycle, invariant-measure unitarity, SU(2) carrier unitarity/group law, and the dense-to-completion strong-continuity bridge within the stated bounded scope. The runner is partly artifact/dependency verification and finite proxy checking, but the restricted source and retained-bounded companion authority are sufficient for this bounded one-particle continuum claim. The note does not claim lattice Lorentz derivation, spin-statistics, interacting theory, or direct retained-status promotion.
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00021-free_dirac_poincare_represen`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the explicitly instantiated spinor matrices and positive-mass-shell differential operators, the Poincare commutators close with [K^i,K^j] = -i eps^{ijk} J^k, while the mass shell, invariant measure, CAR-relabeled lower bound, and bispinor numerator covariance satisfy their stated identities.  _(class `A`)_
+- **chain closes:** True — The runner explicitly constructs the gamma matrices, Lie-algebra representations, differential operators, boosts, Hamiltonians, and bispinor numerators and evaluates the claimed identities with nontrivial wrong-sign controls. These computations close the deliberately bounded claim without importing fitted values or asserting the excluded analytic and reconstruction theorems.
+- **rationale:** All eight runner checks are substantive algebraic or analytic-identity checks on explicitly instantiated objects, rather than printed constants, cross-note imports, external comparisons, or tuned numerical matches. The source and runner agree on the bounded scope, and the observed PASS=8 result is supported by the code paths shown. The result supplies no proof of essential self-adjointness, exponentiation, full spin-tensored boost domains, OS reconstruction, spin-statistics, or emergence from the lattice framework.
 - **auditor confidence:** high
 
 ### `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08`

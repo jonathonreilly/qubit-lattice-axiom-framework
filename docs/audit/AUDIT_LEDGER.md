@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 925 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1761 |
+| unaudited | 1760 |
 | audit_in_progress | 8 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 31 |
+| ~~audited_renaming~~ | 32 |
 | ~~audited_conditional~~ | 133 |
 | ~~audited_failed~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -77,8 +77,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 69 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 31 |
-| `unaudited` | 2108 |
+| `audited_renaming` | 32 |
+| `unaudited` | 2107 |
 
 | claim_type | count |
 |---|---:|
@@ -1774,6 +1774,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | weak | codex-current | F | - |
 | `yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
+| `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 
 
 ## Audit findings (full)
@@ -22918,6 +22919,22 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **open / conditional deps cited:**
   - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
   - `YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md`
+- **auditor confidence:** high
+
+### `yt_lsp_signed_record_source_readout_support_note_2026-05-24`
+
+- **Note:** [`YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-block Pauli joint-spectrum and RN-family algebra, including the stipulated identification of the Y_T signed record with the spectral coordinate.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00024-yt_lsp_signed_record_source_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The Y_T source-action signed source record epsilon_x is identified with the coordinate function of the LSP sharp-projective Pauli readout at site x.  _(class `F`)_
+- **chain closes:** False — The Pauli spectral identities and RN uniqueness corollary close algebraically, but the cited inputs do not derive that the source packet's pre-existing signed record inhabits this particular spectral outcome carrier. The note establishes that step by definition.
+- **rationale:** Issue: the source-record/readout equality is stipulated by defining the signed-record sample space as the Pauli joint spectrum, while the runner separately checks Pauli and RN algebra plus boundary strings. Why this blocks: the source-action authority supplies an abstract signed record and the LSP authority supplies a canonical projective instrument, but neither selects an identity between their carriers. Repair target: derive an explicit carrier/readout map from retained inputs and make the runner construct that map. Claim boundary until fixed: the Pauli coordinate and exponential-family calculations are exact, but their identification with the Y_T packet record is a renaming.
+- **open / conditional deps cited:**
+  - `LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`
+  - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
 - **auditor confidence:** high
 
 ### `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`

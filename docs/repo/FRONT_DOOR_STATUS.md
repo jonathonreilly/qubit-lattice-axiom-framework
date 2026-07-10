@@ -28,19 +28,19 @@ Owner-approval history for every axiom/primitive/governance change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3738 |
-| Applied audit verdicts | 1667 |
-| Retained-grade rows, including boxed decorations | 1423 |
+| Ledger rows | 3739 |
+| Applied audit verdicts | 1649 |
+| Retained-grade rows, including boxed decorations | 1424 |
 | Retained positive theorems | 199 |
 | Retained no-go rows | 215 |
-| Retained bounded rows | 947 |
+| Retained bounded rows | 948 |
 | Boxed decorations under retained parents | 62 |
 | Open gates | 29 |
-| Unaudited rows | 1722 |
+| Unaudited rows | 1719 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 143 |
+| Audited conditional rows | 145 |
 | Audited renaming rows | 36 |
-| Audited numerical-match rows | 9 |
+| Audited numerical-match rows | 10 |
 | Citation cycles detected | 10 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
@@ -50,12 +50,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1883 |
-| Ready rows | 160 |
-| Cycle-break targets | 10 |
-| Critical pending | 382 |
-| High pending | 268 |
-| Medium pending | 497 |
+| Total pending rows | 1904 |
+| Ready rows | 181 |
+| Cycle-break targets | 49 |
+| Critical pending | 435 |
+| High pending | 247 |
+| Medium pending | 486 |
 | Leaf pending | 736 |
 
 Next ready rows by queue order:
@@ -63,11 +63,11 @@ Next ready rows by queue order:
 - [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
 - [`yt_zero_import_authority_note`](../../docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md) - critical; non_terminal_conditional
 - [`yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md) - critical; non_terminal_conditional
-- [`dm_neutrino_bosonic_normalization_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md) - critical; non_terminal_conditional
+- [`dm_neutrino_bosonic_normalization_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md) - critical; unaudited
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; non_terminal_conditional
 - [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; non_terminal_conditional
-- [`axiom_first_reflection_positivity_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) - critical; non_terminal_conditional
 - [`yt_ew_m_residual_note_2026-05-02`](../../docs/YT_EW_M_RESIDUAL_NOTE_2026-05-02.md) - critical; non_terminal_conditional
+- [`axiom_first_reflection_positivity_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) - critical; non_terminal_conditional
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -79,7 +79,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 170 |
-| high | `unaudited` | 141 |
+| high | `unaudited` | 140 |
 | medium | `unaudited` | 89 |
 | critical | `audited_conditional` | 7 |
 | high | `audited_conditional` | 6 |
@@ -88,8 +88,8 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_failed` | 2 |
 | critical | `retained_pending_chain` | 1 |
+| high | `audited_numerical_match` | 1 |
 | high | `open_gate` | 1 |
-| medium | `audited_numerical_match` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 
@@ -97,19 +97,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3909 |
-| Critical nodes | 697 |
-| High nodes | 447 |
-| Medium nodes | 1006 |
-| Leaf nodes | 1759 |
+| Citation-graph nodes | 3911 |
+| Critical nodes | 761 |
+| High nodes | 401 |
+| Medium nodes | 989 |
+| Leaf nodes | 1760 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1956 descendants; score 222.434
-- `three_generation_observable_theorem_note` - critical; 1196 descendants; score 67.225
+- `minimal_axioms` - critical; 1965 descendants; score 222.441
+- `three_generation_observable_theorem_note` - critical; 1227 descendants; score 67.262
+- `observable_principle_from_axiom_note` - critical; 1047 descendants; score 66.033
+- `graph_first_su3_integration_note` - critical; 1603 descendants; score 65.647
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 65.644
-- `graph_first_su3_integration_note` - critical; 1574 descendants; score 65.621
-- `observable_principle_from_axiom_note` - critical; 1016 descendants; score 61.990
-- `plaquette_self_consistency_note` - critical; 1141 descendants; score 53.157
-- `minimal_axioms_2026-05-03` - critical; 1041 descendants; score 48.025
-- `key_terminology` - critical; 1159 descendants; score 46.680
+- `plaquette_self_consistency_note` - critical; 1172 descendants; score 54.196
+- `minimal_axioms_2026-05-03` - critical; 1072 descendants; score 49.067
+- `key_terminology` - critical; 1184 descendants; score 47.711

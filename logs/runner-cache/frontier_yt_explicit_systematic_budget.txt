@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_explicit_systematic_budget.py
-runner_sha256: 8c4021bca08791153ab1aec502dcdf3fc9e6bdfbcca18a1853497220f789a923
+runner_sha256: e0c3a1479fe8d3bf3a54a5d7052d8385bc44be1df167920f460c258dfd8990f9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -44,9 +44,9 @@ Interpretation
 On the tested Schur-bridge route, the remaining uncertainty is no longer a structural bridge loophole. It is an explicit route-specific residual made of two named exact-bridge tails: a higher-order local tail and a nonlocal tail.
 The selector-anchor mismatch is negligible, and structural class ambiguity is closed on the current tested bridge scale.
 
-So the bridge-path cross-check read is: y_t(v) = 0.9176 with route-specific residual (±1.214751% conservative, ±0.755006% support-tight).
-The same bridge-path residual propagates to m_t(pole): 2-loop ±2.096 GeV conservative (±1.303 GeV support-tight), 3-loop ±2.103 GeV conservative (±1.307 GeV support-tight).
-The primary YT authority lane is carried elsewhere by the retained Ward theorem together with standard lattice matching and SM running.
+So the conditional bridge-path cross-check read is: y_t(v) = 0.9176 at kappa_Y = 0 and under the named Planck-surface bridge, with route-specific residual (±1.214751% conservative, ±0.755006% support-tight).
+Under those same conditions, the bridge-path residual propagates to m_t(pole): 2-loop ±2.096 GeV conservative (±1.303 GeV support-tight), 3-loop ±2.103 GeV conservative (±1.307 GeV support-tight).
+The primary YT authority lane carries an exact canonical-bare Ward core; its Planck-surface and low-energy package remains conditional alongside standard lattice matching and SM running.
 
 ==============================================================================
 FINAL TALLY: 5 PASS / 0 FAIL

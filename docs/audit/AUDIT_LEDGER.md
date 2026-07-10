@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 946 |
+| **retained_bounded** | 947 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 27 |
-| unaudited | 1746 |
+| unaudited | 1745 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1360 |
+| `audited_clean` | 1361 |
 | `audited_conditional` | 118 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 30 |
-| `unaudited` | 2091 |
+| `unaudited` | 2090 |
 
 | claim_type | count |
 |---|---:|
@@ -793,6 +793,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_import_two_bit_decomposition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11940,6 +11941,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
   - `scripts/frontier_higgs_dressed_propagator_v1.py`
   - `KOIDE_CLOSURE_ATLAS_ISSUES_FLAGGED.md`
   - `PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md`
+- **auditor confidence:** high
+
+### `koide_import_two_bit_decomposition_note_2026-05-30`
+
+- **Note:** [`KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md`](../../docs/KOIDE_IMPORT_TWO_BIT_DECOMPOSITION_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the finite real C3 triplet, Jcs supplies a complex/Kähler structure on the doublet; its orientation and the circulant modulus r are algebraically independent, while symmetric Gamma_chi-anticommutants have spectrum {-s,0,+s}. No measure selector or physical Q = 2/3 derivation is claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00072-koide_import_two_bit_decompo`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Every circulant mass operator H = aI + bC + conj(b)C^2 commutes with Jcs for all r, so orienting Jcs does not choose the modulus.  _(class `A`)_
+- **chain closes:** True — Both H and Jcs are polynomials in C, so their commutator vanishes identically, including after Jcs is replaced by -Jcs, for every modulus r. The remaining scoped conclusions follow from exact finite-dimensional linear algebra and preserve the measure selector as open.
+- **rationale:** The load-bearing independence statement is an exact algebraic consequence of the commutative circulant algebra, not a selected normalization or physical readout import. The Kähler-doublet and anticommutant-spectrum statements are likewise bounded finite-dimensional identities supported by retained-grade authorities. Runner check F6.2 is recorded with unconditional True rather than actually computed, but it is not load-bearing for the independence theorem and the note explicitly leaves measure selection unresolved.
 - **auditor confidence:** high
 
 ### `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`

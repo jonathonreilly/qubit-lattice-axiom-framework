@@ -2592,11 +2592,15 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             root = Path(tmp)
             m.REPO_ROOT = root
             notes = {
-                "target": "literal {{CLAIM_ID}} inside source evidence",
+                "target": (
+                    "literal {{CLAIM_ID}} and {{RUNNER_SOURCE}} inside source evidence"
+                ),
                 "axiom": "axiom authority",
                 "owner": "owner authority",
                 "tier": "tier authority",
-                "convention": "literal {{RUNNER_PATH}} inside authority",
+                "convention": (
+                    "literal {{RUNNER_PATH}} and {{NOTE_BODY}} inside authority"
+                ),
             }
             for name, body in notes.items():
                 path = root / "docs" / f"{name}.md"
@@ -2634,8 +2638,10 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                     rows["target"], rows, template, 1, skip_runner_stdout=True
                 )
             self.assertIn("control=target", prompt)
-            self.assertIn("literal {{CLAIM_ID}} inside source evidence", prompt)
-            self.assertIn("literal {{RUNNER_PATH}} inside authority", prompt)
+            self.assertIn("literal {{CLAIM_ID}} and", prompt)
+            self.assertIn("{{RUNNER_SOURCE}} inside source evidence", prompt)
+            self.assertIn("literal {{RUNNER_PATH}} and", prompt)
+            self.assertIn("{{NOTE_BODY}} inside authority", prompt)
             self.assertIn("accepted_premise_type: axiom_or_approved_primitive", prompt)
             self.assertIn("accepted_premise_type: owner_governed_residual", prompt)
             self.assertIn("accepted_premise_type: tier_a_derivation_target", prompt)

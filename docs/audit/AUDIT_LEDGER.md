@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 195 |
 | **retained_no_go** | 211 |
 | **retained_bounded** | 946 |
-| _retained_pending_chain_ | 9 |
+| _retained_pending_chain_ | 10 |
 | open_gate | 27 |
-| unaudited | 1749 |
+| unaudited | 1748 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -70,16 +70,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1360 |
 | `audited_conditional` | 116 |
-| `audited_decoration` | 62 |
+| `audited_decoration` | 63 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 30 |
-| `unaudited` | 2094 |
+| `unaudited` | 2093 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2033 |
-| `decoration` | 64 |
+| `bounded_theorem` | 2032 |
+| `decoration` | 65 |
 | `meta` | 352 |
 | `no_go` | 481 |
 | `open_gate` | 183 |
@@ -92,7 +92,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 954 |
 | `leaf` | 1628 |
 
-- **Retained pending chain closure:** 9
+- **Retained pending chain closure:** 10
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -1651,6 +1651,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.6 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `koide_berry_bundle_obstruction_theorem_note_2026-04-19` | decoration | ~~audited_decoration~~ | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | cross_family | codex-gpt-5.6 | A | `charged_lepton_koide_cone_algebraic_equivalence_note` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
+| `koide_faithfulness_rotation_scalar_excluded_note_2026-06-01` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | `internal_external_su2_merger` |
 | `koide_mru_demotion_note_2026-04-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `koide_kappa_spectrum_operator_bridge_theorem_2026-04-19` |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.6 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
@@ -11772,6 +11773,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The value and carrier axes commute but have all four joint sign sectors nonempty, so neither equality nor sign-reversed equality follows from the product algebra.  _(class `A`)_
 - **chain closes:** True — Independently, the value involution has eigenspace dimensions 1 and 2, while the carrier swap has eigenspace dimensions 3 and 1, giving joint dimensions {(1,1):3,(1,-1):1,(-1,1):6,(-1,-1):2}. The mixed sectors are counterexamples to any forced equality or sign-reversed equality within the scoped product model.
 - **rationale:** The runner source is self-contained and computes finite matrix identities rather than printing a hard-coded verdict. The load-bearing calculation is an algebraic identity check: tensor-embedded involutions commute, are not equal up to sign, and have nonempty mixed eigensectors. The note's no-go is properly scoped to the bare product-factor route and explicitly leaves later physical welding theorems or admissions open.
+- **auditor confidence:** high
+
+### `koide_faithfulness_rotation_scalar_excluded_note_2026-06-01`
+
+- **Note:** [`KOIDE_FAITHFULNESS_ROTATION_SCALAR_EXCLUDED_NOTE_2026-06-01.md`](../../docs/KOIDE_FAITHFULNESS_ROTATION_SCALAR_EXCLUDED_NOTE_2026-06-01.md)
+- **claim_type:** `decoration`
+- **claim_scope:** On the on-site operator frame, J_i = σ_i/2 rules out a K=0 completion of either the Lorentz or Euclidean four-dimensional rotation algebra, independently of signature.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** _retained_pending_chain_  (reason: `decoration_waiting_on:internal_external_su2_merger`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00069-koide_faithfulness_rotation_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** With the retained operator-frame identification J_i = σ_i/2 ≠ 0, setting K_i = 0 violates [K_i,K_j] = ±iε_ijkJ_k for both so(3,1) and so(4).  _(class `A`)_
+- **chain closes:** True — The retained-bounded merger authority supplies the spatial Spin(3) generators J_i = σ_i/2. Direct substitution of K_i = 0 into the standard boost/rotation commutator gives zero on the left and a nonzero Pauli generator on the right.
+- **rationale:** The bounded exclusion follows by genuine algebraic closure from the single retained-bounded internal/external SU(2) merger claim and standard Lie-algebra brackets. The runner substantively checks the Pauli rotation action, both K=0 bracket failures, the displayed candidate completions, and their Hermiticity properties. Because the audited exclusion adds only this algebraic corollary to one upstream parent and contains no external-comparator check, it is decoration-grade rather than an independent bounded theorem; the three section-E checks are hard-coded scope assertions and add no computational evidence.
+- **decoration parent:** `internal_external_su2_merger`
 - **auditor confidence:** high
 
 ### `koide_fisher_rao_spherical_reorganization_note_2026-06-01`

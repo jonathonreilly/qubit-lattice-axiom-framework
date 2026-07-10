@@ -17,6 +17,8 @@ open_imports:
 no_go_routes: []
 trace_gate_classification: direct_blocker_closure
 review_disposition: pass
-pr_status: pending
+pr_status: opened
+remote_branch: physics-loop/hypercharge-identification-name-free-closure-block01-20260710
+review_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5121
 next_exact_action: "Commit and open the bounded-theorem review PR; after landing, let the independent audit lane re-audit the target and its two invalidated dependents."
 stop_condition: "Review PR opened with physical readout and coordinate convention separated; independent re-audit remains authoritative."

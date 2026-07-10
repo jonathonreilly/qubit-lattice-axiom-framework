@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 929 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1746 |
+| unaudited | 1745 |
 | audit_in_progress | 9 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 136 |
+| ~~audited_conditional~~ | 137 |
 | ~~audited_failed~~ | 17 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 13 |
 | `audited_clean` | 1345 |
-| `audited_conditional` | 136 |
+| `audited_conditional` | 137 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 39 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 35 |
-| `unaudited` | 2093 |
+| `unaudited` | 2092 |
 
 | claim_type | count |
 |---|---:|
@@ -1623,6 +1623,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `three_family_card_missing_distance_live_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
+| `tick_admissibility_realization_bridge_clause_to_predicate_narrow_theorem_note_2026-07-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-current | A | - |
 | `u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_induced_cosmological_constant_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -21425,6 +21426,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** At BZ corners p_mu in {0, pi}, m(p)=sum_mu(1-cos p_mu)=2 hw(p), so the eight corners split as 1+3+3+1 and hw=1 is exactly the threefold lightest nonzero-mass orbit, with the M_3(C)/no-proper-quotient part imported from the direct audited dependency.  _(class `A`)_
 - **chain closes:** True — Independent exact enumeration gives 8 corners, degeneracies [1,3,3,1], masses 0,2,4,6 by Hamming weight, and hw=1 as the unique lightest nonzero orbit. The admitted staggered-Dirac/Wilson surface is present in the Tier-A registry, and the direct dependency's scoped algebra result supplies only the finite C^3/M_3(C) no-proper-quotient statement without importing physical-species or SM-generation claims.
 - **rationale:** The spectral calculation is a finite algebraic identity on the explicitly admitted bounded surface, not a tuned numerical comparator or a physical-generation identification. The runner's math checks agree with an independent exact enumeration, while its source-firewall checks confirm the note excludes no-rooting, physical lattice necessity, CKM, chirality, and new-axiom claims. The no-go/wall discipline gate does not expose an inflated wall set: there is a single registered Tier-A admitted surface, the no-proper-quotient residual exactly matches the direct dependency's audited scope, and all broader negative/physical claims are explicitly out of scope.
+- **auditor confidence:** high
+
+### `tick_admissibility_realization_bridge_clause_to_predicate_narrow_theorem_note_2026-07-10`
+
+- **Note:** [`TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md`](../../docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the stipulated even binary ring, translation covariance plus the fixed-assignment part of REAL implies tick covariance modulo local U(1) frames and M(U)=0; nonempty rule variation plus conditioning faithfulness implies O(U)=true.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T181128Z-79c35c5e-00004-tick_admissibility_realizati`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Translation invariance of V(A) makes v_x(d)=v(d), so the site-independent assignment F makes U0[x,x+d] depend only on displacement and therefore T U0 T^dag=U0.  _(class `A`)_
+- **chain closes:** False — The two conditional algebraic implications close under the stated finite-ring assumptions, and the supplied witnesses are valid. The chain from framework Admissibility to a physically realized tick remains open because REAL, the tick's existence and choice, and the binary one-component carrier are stipulated rather than derived.
+- **rationale:** The analytic covariance argument is a correct algebraic closure, and the runner genuinely computes its finite examples, sharpness witnesses, and gauge constructions rather than merely printing expected results. However, the result is explicitly conditional on the named REAL predicate and other stipulated surface structure. Neither the source note nor its accepted axiom authority derives the existence or physical selection of such a realized tick, so the result cannot serve as the requested physical realization theorem.
 - **auditor confidence:** high
 
 ### `tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09`

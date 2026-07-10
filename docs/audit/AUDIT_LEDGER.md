@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 194 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 927 |
+| **retained_bounded** | 928 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
-| unaudited | 1858 |
+| unaudited | 1857 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 18 |
-| `audited_clean` | 1327 |
+| `audited_clean` | 1328 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2203 |
+| `unaudited` | 2202 |
 
 | claim_type | count |
 |---|---:|
@@ -591,6 +591,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gate_b_weak_connectivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_center_sector_record_context_and_theta_q_character_grading_obstruction_bounded_theorem_note_2026-07-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
+| `gauge_factor_local_selector_normalizer_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-current | A | - |
 | `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8109,6 +8110,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Every admissible sector label on the retained SU(3) character surface factors through the center grading: the retained fusion channels force 3a = 0 and then g(p,q) = (p - q)a.  _(class `A`)_
 - **chain closes:** True — The cited recurrence note supplies the SU(3) fusion/multiplication law, and the minimal Record axiom supplies only the readout-additivity interface. The RP no-go is route-independence context, not a load-bearing premise.
 - **rationale:** The load-bearing step is exact algebra over the retained SU(3) character recurrence: the displayed fusion channels force the triality grading and obstruct both Z-valued and GF(2) parity labels. The center projectors, sector-shift rule, and disjoint-region additivity follow from the same group-action/fusion algebra, while the Record axiom is used only for the finite sharp readout interface. The runner completed with TOTAL: PASS=56 FAIL=0. The note explicitly does not derive record occurrence, topological theta Q, conserved flux, full transfer-state Perron data, or non-class-function/winding constructions, so no hidden physical bridge is consumed inside the bounded scope.
+- **auditor confidence:** high
+
+### `gauge_factor_local_selector_normalizer_theorem_note_2026-06-18`
+
+- **Note:** [`GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md`](../../docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite-dimensional normalizer theorem on the supplied C^3 x C^2 carrier under the explicit requirement that commutator derivations preserve both factor observable algebras separately.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-gauge_factor_local_selec-072`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The simultaneous commutator normalizer of End(C^3) x I_2 and I_3 x End(C^2) inside Hermitian u(6) is exactly u(3) x I_2 + I_3 x u(2), with dimension 12.  _(class `A`)_
+- **chain closes:** True — The computed constraint nullity is 12, while the explicitly constructed 12-dimensional local span satisfies every constraint, proving equality. Its 24-dimensional cross-factor complement completes u(6) and has trivial intersection with the normalizer.
+- **rationale:** The load-bearing result is a genuine finite-matrix algebra closure, and the runner constructs the relevant bases and constraint map rather than merely printing the claimed dimensions. The retained no-go authority is contextual rather than a contested numerical or physical input. The clean verdict is confined to the stated bounded theorem and does not extend to deriving the carrier split, the physical preservation rule, MR_color, chirality, or gauge dynamics.
 - **auditor confidence:** high
 
 ### `gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06`

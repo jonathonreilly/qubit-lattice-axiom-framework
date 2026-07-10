@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 383,
+    "critical": 382,
     "high": 268,
     "leaf": 735,
     "medium": 497
@@ -445,31 +445,6 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py",
-      "transitive_descendants": 422
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "cross_confirmation_disagreement",
-      "claim_id": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
-      "claim_scope": "For the explicitly constructed Kawamoto\u2013Smit K1 and scalar nearest-neighbor K0 kernels, K1 has eight point-like linear cones with (V,C,r)=(2I\u2083,2/3,1), while K0 has an exact zero line and fails hypothesis (Z); no realized-flux selection or thermal conclusion is audited.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "disagreement",
-      "deps": [
-        "minimal_axioms",
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.225,
-      "note_path": "docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/staggered_kernel_z_certificate_check_2026_06_11.py",
       "transitive_descendants": 422
     },
     {
@@ -56486,6 +56461,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 162,
-  "total_pending": 1883
+  "ready_count": 161,
+  "total_pending": 1882
 }

@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 198 |
+| **retained** | 199 |
 | **retained_no_go** | 214 |
 | **retained_bounded** | 946 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
 | unaudited | 1728 |
-| audit_in_progress | 2 |
+| audit_in_progress | 1 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1367 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1368 |
 | `audited_conditional` | 137 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
@@ -145,7 +145,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1290,6 +1289,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_graph_portability_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_graph_portability_stress_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.6 | C | - |
 | `staggered_layered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_layered_gauge_engineering_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_layered_gauge_phase_diagram_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -20096,6 +20096,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** All six items follow from the explicit row-by-row matrix entries of D per (D), (eta).  _(class `A`)_
 - **chain closes:** True — The cited authority is retained and supplies the staggered hopping construction used as input. From the explicitly stated D and D_mu matrix entries, S1-S6 follow by direct support and Hilbert-Schmidt orthogonality arguments within the stated lattice-operator scope.
 - **rationale:** The claim is tightly scoped to lattice operator algebra and explicitly excludes the continuum SME dictionary and coefficient-level conclusions. The proof is a genuine algebraic closure over the provided retained staggered-hopping input, not a renaming, numerical fit, or external comparator check. The runner source constructs D and D_mu directly, checks the claimed support, Hermiticity, decomposition, and Hilbert-Schmidt projection identities, and contains no hard-coded contested output.
+- **auditor confidence:** high
+
+### `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`
+
+- **Note:** [`STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For the explicitly constructed Kawamoto–Smit K1 and scalar nearest-neighbor K0 kernels, K1 has eight point-like linear cones with (V,C,r)=(2I₃,2/3,1), while K0 has an exact zero line and fails hypothesis (Z); no realized-flux selection or thermal conclusion is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-staggered_kernel_sat-judge-1`  (codex-gpt-5.6; independence=judicial_review)
+- **load-bearing step:** The explicitly constructed K1 Bloch matrix satisfies H(κ)²=4∑μ cos²(κμ/2)I₈, yielding its finite isotropic-cone zero set, while the exact K0 zero line forces any candidate cone matrix to be singular.  _(class `C`)_
+- **chain closes:** True — The runner genuinely constructs the lattice kernels and symbolic Bloch matrix, verifies the matrix-square identity algebraically, and derives the zero and cone data rather than printing or importing the contested results. The quantitative cone inequality is valid, and the K0 obstruction follows independently from an exact trigonometric zero-line identity. The accepted lattice premise and retained finite-volume operator bridge suffice for this narrowly scoped theorem about the defined matrices; neither physical flux selection nor FSB-K theorem content is needed.
+- **rationale:** The runner genuinely constructs the lattice kernels and symbolic Bloch matrix, verifies the matrix-square identity algebraically, and derives the zero and cone data rather than printing or importing the contested results. The quantitative cone inequality is valid, and the K0 obstruction follows independently from an exact trigonometric zero-line identity. The accepted lattice premise and retained finite-volume operator bridge suffice for this narrowly scoped theorem about the defined matrices; neither physical flux selection nor FSB-K theorem content is needed.
 - **auditor confidence:** high
 
 ### `staggered_layered_backreaction_note`

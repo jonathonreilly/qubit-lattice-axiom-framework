@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 932 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1834 |
+| unaudited | 1833 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 69 |
+| ~~audited_conditional~~ | 70 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1341 |
-| `audited_conditional` | 69 |
+| `audited_conditional` | 70 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2179 |
+| `unaudited` | 2178 |
 
 | claim_type | count |
 |---|---:|
@@ -1521,6 +1521,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_q_eq_3delta_identity_note_2026-04-21` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -11201,6 +11202,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Solving the defined real Z3 commutant/idempotent equations and substituting z=0, selected=1, c=0, and eta_Z3=2/9 into the route laws yields Q=2/3, no native spectator projector, and delta_open=2/9.  _(class `A`)_
 - **chain closes:** True — The displayed identities independently reduce to exact finite algebra under the note's own definitions. No cited authorities, fitted data, external comparators, or physical bridge identifications are used.
 - **rationale:** The source is explicitly scoped to a bounded defined route object, and the claimed consequences are algebraic identities inside that object. Independent formula checks confirm the zero-source Q calculation, the real Z3 commutant and idempotents, the absence of commuting real rank-one projectors, the based endpoint c=0, the finite sum eta_Z3=2/9, and delta_open=2/9. The runner source computes the load-bearing symbolic quantities directly with no helper imports, calibrated constants, or physical target import; its prose-only boundary checks do not carry the algebraic conclusion.
+- **auditor confidence:** high
+
+### `koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12`
+
+- **Note:** [`KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md`](../../docs/KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The retained arbitrary-kernel Berezin determinant surface leaves the doublet-block normalization free; the note additionally identifies that freedom with the two Z_d occupancy cells.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-koide_occupancy_kernel_c-075`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Rescaling the doublet block M_d to lambda M_d preserves the retained single-pair, nilpotency, dimension, and C3-equivariance checks while multiplying its determinant factor by lambda to the block rank, so the retained measure cannot fix its coefficient.  _(class `A`)_
+- **chain closes:** False — The determinant identity and measure-level normalization freedom close algebraically. The restricted packet does not establish the semantic bridge identifying determinant-block rescaling with the occupancy weight Z_d; the runner assumes the Z_d cells and rho map and then verifies their arithmetic.
+- **rationale:** The runner genuinely computes the Berezin determinant expansions and proves the lambda-scaling witness, supporting the bounded measure-level negative. Its occupancy section hard-codes the two Z_d values and rho-map formulas, then chooses lambda values reproducing them; this does not prove that the kernel coefficient is the occupancy weight-class datum. Consequently the central negative is supported, but the claimed occupancy-atom localization requires an additional retained bridge.
+- **open / conditional deps cited:**
+  - `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`
 - **auditor confidence:** high
 
 ### `koide_octahedral_overconstrains_value_bit_narrow_note_2026-06-02`

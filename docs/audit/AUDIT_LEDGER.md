@@ -24,11 +24,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
 | unaudited | 1727 |
-| audit_in_progress | 11 |
+| audit_in_progress | 10 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 134 |
+| ~~audited_conditional~~ | 135 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -71,9 +71,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
+| `audit_in_progress` | 12 |
 | `audited_clean` | 1362 |
-| `audited_conditional` | 134 |
+| `audited_conditional` | 135 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
@@ -143,7 +143,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -1555,6 +1554,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | D | - |
 | `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -6139,6 +6139,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** **Script:** `scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py`  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 2 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the imported fixed-N_e transport setup, computed seed and off-seed endpoints bracket eta/eta_obs = 1; no physical source selector or prediction is established.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-dm_leptogenesis_pmns-judge-1`  (codex-gpt-5.6; independence=judicial_review)
+- **load-bearing step:** The computed seed value 0.719082664368 and sampled off-seed value 1.052220313050 lie on opposite sides of the observed-comparator level eta/eta_obs = 1.  _(class `D`)_
+- **chain closes:** False — The runner performs a substantive numerical search and transport calculation, but its load-bearing bracket is defined only after dividing by the hard-coded observational input ETA_OBS = 6.12e-10 and testing against unity. That is an external-comparator check, class D, rather than a first-principles class C output from the framework baseline. The bounded interval statement closes only within an imported fixed-N_e transport surface whose physical authority and normalization are expressly not established by this packet, so audited_conditional is the supported verdict.
+- **rationale:** The runner performs a substantive numerical search and transport calculation, but its load-bearing bracket is defined only after dividing by the hard-coded observational input ETA_OBS = 6.12e-10 and testing against unity. That is an external-comparator check, class D, rather than a first-principles class C output from the framework baseline. The bounded interval statement closes only within an imported fixed-N_e transport surface whose physical authority and normalization are expressly not established by this packet, so audited_conditional is the supported verdict.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17`

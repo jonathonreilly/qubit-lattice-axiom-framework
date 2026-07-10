@@ -28,17 +28,17 @@ Owner-approval history for every axiom/primitive/governance change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3739 |
-| Applied audit verdicts | 1628 |
-| Retained-grade rows, including boxed decorations | 1394 |
+| Ledger rows | 3740 |
+| Applied audit verdicts | 1631 |
+| Retained-grade rows, including boxed decorations | 1395 |
 | Retained positive theorems | 195 |
 | Retained no-go rows | 209 |
-| Retained bounded rows | 928 |
+| Retained bounded rows | 929 |
 | Boxed decorations under retained parents | 62 |
 | Open gates | 27 |
-| Unaudited rows | 1752 |
+| Unaudited rows | 1749 |
 | Retained-pending-chain rows | 16 |
-| Audited conditional rows | 135 |
+| Audited conditional rows | 136 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 10 |
@@ -53,14 +53,14 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Total pending rows | 1915 |
 | Ready rows | 161 |
 | Cycle-break targets | 49 |
-| Critical pending | 425 |
+| Critical pending | 424 |
 | High pending | 249 |
 | Medium pending | 498 |
-| Leaf pending | 743 |
+| Leaf pending | 744 |
 
 Next ready rows by queue order:
 
-- [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; unaudited
+- [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; audit_in_progress
 - [`yt_zero_import_authority_note`](../../docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md) - critical; non_terminal_conditional
 - [`yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md) - critical; non_terminal_conditional
 - [`neutrino_gamma1_wsource_application_bridge_note_2026-07-09`](../../docs/NEUTRINO_GAMMA1_WSOURCE_APPLICATION_BRIDGE_NOTE_2026-07-09.md) - critical; non_terminal_conditional
@@ -97,15 +97,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3911 |
+| Citation-graph nodes | 3912 |
 | Critical nodes | 763 |
 | High nodes | 401 |
 | Medium nodes | 989 |
-| Leaf nodes | 1758 |
+| Leaf nodes | 1759 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1965 descendants; score 222.941
+- `minimal_axioms` - critical; 1966 descendants; score 223.442
 - `three_generation_observable_theorem_note` - critical; 1227 descendants; score 67.262
 - `observable_principle_from_axiom_note` - critical; 1047 descendants; score 66.033
 - `graph_first_su3_integration_note` - critical; 1603 descendants; score 65.647

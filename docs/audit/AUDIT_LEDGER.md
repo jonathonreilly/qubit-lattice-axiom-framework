@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 929 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1748 |
+| unaudited | 1749 |
 | audit_in_progress | 9 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
@@ -78,11 +78,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 39 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2095 |
+| `unaudited` | 2096 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2047 |
+| `bounded_theorem` | 2048 |
 | `decoration` | 71 |
 | `meta` | 355 |
 | `no_go` | 484 |
@@ -94,15 +94,15 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 754 |
 | `high` | 398 |
 | `medium` | 942 |
-| `leaf` | 1645 |
+| `leaf` | 1646 |
 
 - **Retained pending chain closure:** 16
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3400
-- runners with (C) first-principles compute hits: 1795
+- runners classified: 3401
+- runners with (C) first-principles compute hits: 1796
 - runners with (D) external comparator hits: 1094
 - decoration candidates (no C, no D): 713
 
@@ -112,7 +112,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1965 | 222.94 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1966 | 223.44 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1227 | 67.26 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1047 | 66.03 | `audited_clean` | **retained_bounded** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1603 | 65.65 | `audited_clean` | **retained** |

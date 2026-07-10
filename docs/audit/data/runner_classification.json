@@ -37956,6 +37956,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_three_generation_structure_narrow_spectrum.py"
     },
+    "tick_admissibility_realization_bridge_clause_to_predicate_narrow_theorem_note_2026-07-10": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py"
+    },
     "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09": {
       "assert_count": 1,
       "counts": {
@@ -92146,6 +92158,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py": {
+      "assert_count": 1,
+      "claims": [
+        "tick_admissibility_realization_bridge_clause_to_predicate_narrow_theorem_note_2026-07-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/tick_cell_selection_by_translation_and_variation_clauses_2026_07_09.py": {
       "assert_count": 1,
       "claims": [
@@ -93316,13 +93343,13 @@
     "decoration_candidates": 713,
     "dominant_class_distribution": {
       "A": 511,
-      "B": 660,
+      "B": 661,
       "C": 1313,
       "D": 457,
       "none": 459
     },
-    "runners_classified": 3400,
-    "runners_with_C": 1795,
+    "runners_classified": 3401,
+    "runners_with_C": 1796,
     "runners_with_D": 1094
   }
 }

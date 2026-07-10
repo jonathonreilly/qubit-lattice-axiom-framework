@@ -43029,6 +43029,10 @@
       "to": "three_generation_observable_theorem_note"
     },
     {
+      "from": "tick_admissibility_realization_bridge_clause_to_predicate_narrow_theorem_note_2026-07-10",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09",
       "to": "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09"
     },
@@ -112090,7 +112094,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7d2855466eada4101477d6b2bdbe9aaff98b96a442bb5c334b1ab1bd8df0e2dd",
+      "note_hash": "14e9c79e440ca79c367cd3d7be4f3dfd81e31f9c701c70cd15e92f93f792293a",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": null,
       "title": "Active Review Queue"
@@ -112143,7 +112147,7 @@
         "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e6412b95dd6afffc3d79f1fea770a75364f0fe469fef035ac3a4d960127cf632",
+      "note_hash": "25d327d869433882ab5f21e738e75287fa95fa633bf1e406cffd9047a94aa774",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -121259,6 +121263,20 @@
       "runner_path": "scripts/frontier_three_generation_structure_narrow_spectrum.py",
       "title": "Three-Generation Matter Structure Note"
     },
+    "tick_admissibility_realization_bridge_clause_to_predicate_narrow_theorem_note_2026-07-10": {
+      "claim_id": "tick_admissibility_realization_bridge_clause_to_predicate_narrow_theorem_note_2026-07-10",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "bbd7605e23654b769287b4c2f7de35411cd90ee057c3e6638a2ecc1c237d6c92",
+      "path": "docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md",
+      "runner_path": "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py",
+      "title": "Conditional Equivariant Tick-Realization Lemma on a Binary Ring"
+    },
     "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09": {
       "claim_id": "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09",
       "claim_type_author_hint": "bounded_theorem",
@@ -129060,7 +129078,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1630,
+      "bounded_theorem": 1631,
       "decoration": 3,
       "meta": 329,
       "no_go": 333,
@@ -129069,7 +129087,7 @@
       "positive_theorem": 277
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2032,
+      "bounded_theorem": 2033,
       "decoration": 3,
       "meta": 329,
       "no_go": 436,
@@ -129077,10 +129095,10 @@
       "open_gate": 206,
       "positive_theorem": 657
     },
-    "edge_count": 14568,
-    "leaf_count": 1318,
-    "node_count": 3911,
+    "edge_count": 14569,
+    "leaf_count": 1319,
+    "node_count": 3912,
     "root_count": 1109,
-    "runners_with_path": 3534
+    "runners_with_path": 3535
   }
 }

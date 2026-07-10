@@ -15,11 +15,13 @@ Its purpose is narrower: state the honest current claim boundary of the live
 `y_t` lane after the Ward theorem promotion and the YT-lane authority update.
 
 **Date:** 2026-04-17
-**Status:** DERIVED quantitative lane
+**Type:** positive_theorem
+**Status:** supported canonical-bare Ward-ratio core + conditional
+Planck-surface and low-energy package
 **Primary runner:** `scripts/frontier_yt_flagship_boundary_contract.py`
-**Current central values:** `y_t(v) = 0.9176`, canonical
-`m_t(pole) = 173.10 GeV` (3-loop), with retained `172.57 GeV` (2-loop)
-support
+**Current conditional central values:** `y_t(v) = 0.9176`,
+`m_t(pole) = 173.10 GeV` (3-loop), and `172.57 GeV` (2-loop), conditional on
+the named Planck-surface bridge and Yukawa-side selector `kappa_Y = 0`
 
 ---
 
@@ -27,28 +29,33 @@ support
 
 The current `y_t` lane is best described as:
 
-- **zero external SM observables on the framework side**
-- **exact retained lattice-scale Ward theorem**
-- **derived low-energy central values**
+- **no fitted or observational SM inputs on the framework side**
+- **exact canonical-bare Ward-ratio core**
+- **conditional Planck-surface and low-energy central values**
+- **underived Yukawa-side selector `kappa_Y = 0` stated explicitly**
 - **standard-method residual budget on the primary path, currently of order
   `~1.95%`**
 
 That is the honest current boundary on the package.
 
-## What is exact
+## What is exact and what is conditional
 
-These parts of the `y_t` lane are no longer the remaining blocker:
+The unconditional core is:
 
-1. the canonical-surface Ward theorem
-   `y_t(M_Pl) / g_s(M_Pl) = 1 / sqrt(6)`
-2. the same-surface `alpha_s` / `g_s(M_Pl)` input from the plaquette chain
-3. the color-singlet projection factor `sqrt(8/9)` that turns the Ward value
-   into the physical low-energy Yukawa route
-4. the hierarchy / electroweak matching scale `v`
-5. the direct framework-side Higgs/top numerical readout once the accepted
-   low-energy Yukawa is supplied
+1. the canonical-bare Ward matrix-element ratio
+   `y_t_bare / g_bare = 1 / sqrt(6)` on the bounded Ward surface
 
-Those pieces explain why the lane is predictive at all.
+The package then uses explicitly conditional or supplied pieces:
+
+2. the lift to `y_t(M_Pl) / g_s(M_Pl) = 1 / sqrt(6)`, conditional on accepted
+   shared tadpole dressing and physical readout
+3. the connected-trace factor `sqrt(8/9)`, conditional on the underived
+   Yukawa-side selector `kappa_Y = 0`
+4. the same-surface `alpha_s` / `g_s(M_Pl)` input from the bounded plaquette
+   chain
+5. the hierarchy / electroweak matching scale `v`
+6. the framework-side Higgs/top numerical readout after those conditions and
+   the standard matching/running machinery are supplied
 
 ## What remains limited
 
@@ -57,8 +64,9 @@ systematic on the primary path.
 
 The live primary route is:
 
-- exact Ward theorem at the lattice scale
-- derived color projection
+- exact canonical-bare Ward ratio on the bounded Ward surface
+- conditional Planck-surface lift of that ratio
+- conditional connected-trace specialization `sqrt(8/9)` at `kappa_Y = 0`
 - standard lattice-to-continuum matching at the `M_Pl` interface
 - standard SM running from `M_Pl` to `v`
 - standard pole-mass conversion
@@ -108,14 +116,16 @@ continuum matching/running layer.
 
 The honest paper-safe wording is:
 
-> The framework derives the lattice-scale Yukawa-to-gauge ratio exactly on the
-> canonical surface and propagates it to low energy with zero external SM
-> observables on the framework side. The current `y_t` and `m_t` central
-> values are strong and near observation. The remaining precision caveat on
-> the primary route is carried as standard lattice-to-continuum matching plus
-> standard SM running residuals, not as a framework-native explicit bridge
-> systematic. The older Schur bridge survives as an independent cross-check
-> with its own tighter route-specific residual budget.
+> The framework derives the canonical-bare Ward ratio
+> `y_t_bare/g_bare = 1/sqrt(6)` on the bounded Ward surface. Conditional on an
+> accepted Planck-surface shared-dressing/readout bridge and on the underived
+> Yukawa-side selector `kappa_Y = 0`, the package propagates that core to the
+> current low-energy `y_t` and `m_t` central values without fitted or
+> observational SM inputs on the framework side. The remaining precision
+> caveat on the primary route is carried as standard lattice-to-continuum
+> matching plus standard SM running residuals, not as a framework-native
+> explicit bridge systematic. The older Schur bridge survives as an
+> independent cross-check with its own tighter route-specific residual budget.
 
 ## Cannot claim
 
@@ -126,6 +136,9 @@ Do not claim any of the following from the current package:
   surface has been proved
 - that direct lattice extraction already delivers `y_t(v)` on accessible
   lattices
+- that the canonical-bare Ward ratio has an unconditional physical
+  Planck-surface readout
+- that `kappa_Y = 0` or the `sqrt(8/9)` physical Yukawa correction is derived
 - that the Schur bridge is worthless or obsolete rather than a real
   cross-check
 
@@ -134,10 +147,10 @@ Do not claim any of the following from the current package:
 The YT lane is materially stronger than the old bounded or
 explicit-systematic read:
 
-- no external SM observable is used as an input on the framework side
-- the lattice-scale Yukawa/gauge normalization is exact and retained
-- the low-energy route is explicit, numerically successful, and packaged on
-  one authority surface
+- no fitted or observational SM input is used on the framework side
+- the canonical-bare Yukawa/gauge ratio is exact on the bounded Ward surface
+- the conditional low-energy route is explicit, numerically successful, and
+  packaged with both named conditions on one authority surface
 - the remaining precision caveat is now standard-method rather than a
   framework-native bridge qualifier
 

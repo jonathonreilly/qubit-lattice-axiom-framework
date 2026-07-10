@@ -1,5 +1,9 @@
 # Handoff
 
+Branch: `claude/science-fix/wave_direct_dm_h025_seed0_crossfamily_note-447cbd9f`
+
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5130
+
 ## Current block
 
 The bounded seed-0 cross-family statement has been rewritten as class-A

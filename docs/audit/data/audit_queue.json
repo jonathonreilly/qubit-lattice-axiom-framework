@@ -3,7 +3,7 @@
     "critical": 393,
     "high": 265,
     "leaf": 755,
-    "medium": 503
+    "medium": 502
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -20421,34 +20421,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_koide_phase_aps_eta_parity_route_discriminator.py",
       "transitive_descendants": 4
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-        "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
-        "koide_q_readout_factorization_theorem_2026-04-22",
-        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
-      "note_path": "docs/KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_fisher_rao_spherical_reorganization.py",
-      "transitive_descendants": 3
     },
     {
       "audit_independence_required": "any_non_self",
@@ -57337,6 +57309,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 206,
-  "total_pending": 1916
+  "ready_count": 205,
+  "total_pending": 1915
 }

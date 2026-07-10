@@ -33,8 +33,8 @@
   ],
   "cycles_detected": 10,
   "effective_status_counts": {
-    "audit_in_progress": 1,
-    "audited_conditional": 139,
+    "audit_in_progress": 2,
+    "audited_conditional": 136,
     "audited_failed": 16,
     "audited_numerical_match": 10,
     "audited_renaming": 33,
@@ -77,14 +77,14 @@
     "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "meta": 347,
-    "open_gate": 28,
+    "open_gate": 27,
     "retained": 198,
-    "retained_bounded": 940,
+    "retained_bounded": 934,
     "retained_no_go": 209,
-    "retained_pending_chain": 12,
-    "unaudited": 1744
+    "retained_pending_chain": 16,
+    "unaudited": 1749
   },
-  "retained_pending_chain_count": 12,
+  "retained_pending_chain_count": 16,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
@@ -96,7 +96,11 @@
     "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",
     "pre_record_reference_state_tracial_derivation_note_2026-05-20",
     "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22",
+    "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+    "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+    "record_formation_to_kraus_isometry_bridge_2026-06-06",
     "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
-    "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20"
+    "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
+    "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
   ]
 }

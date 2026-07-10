@@ -20,15 +20,15 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 198 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 940 |
-| _retained_pending_chain_ | 12 |
-| open_gate | 28 |
-| unaudited | 1744 |
-| audit_in_progress | 1 |
+| **retained_bounded** | 934 |
+| _retained_pending_chain_ | 16 |
+| open_gate | 27 |
+| unaudited | 1749 |
+| audit_in_progress | 2 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 33 |
-| ~~audited_conditional~~ | 139 |
+| ~~audited_conditional~~ | 136 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 19 |
-| `audited_clean` | 1340 |
-| `audited_conditional` | 139 |
+| `audited_clean` | 1338 |
+| `audited_conditional` | 136 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 33 |
-| `unaudited` | 2091 |
+| `unaudited` | 2096 |
 
 | claim_type | count |
 |---|---:|
@@ -96,7 +96,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 942 |
 | `leaf` | 1645 |
 
-- **Retained pending chain closure:** 12
+- **Retained pending chain closure:** 16
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -157,11 +157,11 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
-| `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
-| `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
-| `two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
+| `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
+| `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | C | - |
+| `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
+| `two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -369,7 +369,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | C | - |
 | `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | C | - |
 | `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -604,7 +603,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_factor_local_selector_normalizer_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-current | A | - |
-| `gauge_link_central_registration_induced_bi_invariant_step_kernel_theorem_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_kz_su3_beta6_convention_split_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -1547,7 +1545,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `gauge_link_binary_registration_capacity_step_kernel_pin_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `graded_constraint_interface_consistency_bounded_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1565,9 +1562,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_r_polarization_orbit_quotient_gate_sharpening_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `kreality_predicate_one_shared_atom_one_consumer_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
-| `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
-| `native_carrier_registration_kernel_rate_vs_unit_variance_point_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `neutrino_gamma1_wsource_application_bridge_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -5262,19 +5257,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The load-bearing step is finite-set algebra over one-hop authorities that the packet marks retained_bounded, which is retained-grade under the rubric. The runner mainly verifies prose anchors and recomputes the same set intersections; it is not a first-principles physics derivation, but the claim does not require one. The note correctly fences off full Bertrand, hydrogen spectrum, atomic-stability, framework-native dimension selection, and repo-wide promotion claims.
 - **auditor confidence:** high
 
-### `darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05`
-
-- **Note:** [`DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md`](../../docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** Whether the current Lattice, Qubit, Admissibility, and Record axioms entail many-fragment local readability, and whether local observability of a determined outcome is the missing Darwinism bridge.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** open_gate  (reason: `audited_open_gate`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153334Z-4f7da8c1-00005-darwinism_bridge_residual_lo`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** A globally encoded parity record can be determined and jointly readable while every local fragment is blind, so the framework axioms do not entail redundant local broadcast.  _(class `C`)_
-- **chain closes:** True — The accepted axiom authority explicitly leaves local observability outside the framework axioms, and the computed parity countermodel demonstrates that global determinacy and joint readability do not imply singleton-fragment readability. Adding per-fragment local recoverability supplies precisely the missing redundancy condition.
-- **rationale:** The accepted minimal-axiom authority explicitly excludes local observability, while the retained cited authorities do not supply it. The runner constructs density matrices, performs pointer dephasing and partial traces, and computes both an independent-record counterexample and a parity encoding with zero singleton recoverable information but full joint information; it does not merely print or define the conclusion. These constructions suffice for the narrow open-gate classification.
-- **auditor confidence:** high
-
 ### `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12`
 
 - **Note:** [`DECLARED_RG_MAP_UNIFORM_CHAIN_BAND_EDGE_FIXED_POINT_NU_HALF_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/DECLARED_RG_MAP_UNIFORM_CHAIN_BAND_EDGE_FIXED_POINT_NU_HALF_BOUNDED_THEOREM_NOTE_2026-06-12.md)
@@ -8709,32 +8691,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** There exist non-factor-local choices of U for which U S U* is not the original factorwise embedding, while S, U S U*, and full u(6) share the relevant invariant/commutant profiles; therefore those carrier-level invariant data cannot select the factorwise embedding.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from exact finite-dimensional linear algebra on the supplied C^3 x C^2 carrier plus the minimal-axiom boundary that Lattice/Qubit/Record do not themselves supply carrier factorization, gauge action, MR_color, or chirality. No hidden physical bridge is used inside the audited scope.
 - **rationale:** The load-bearing step is a finite-dimensional algebraic witness: S is closed, 12-dimensional, irreducible with scalar commutant; a non-factor-local unitary conjugate has the same invariant profile but is not the factorwise embedding; and full u(6) shares the scalar-commutant irreducibility profile. The runner completed with SCORECARD PASS=8 FAIL=0 and checks matrix rank, Lie closure residuals, commutant dimension, center dimension, distinctness, and operator-Schmidt non-factor-locality. The source note keeps the no-go narrowly bounded to route pruning and does not claim a broad no-go against future gauge selection.
-- **auditor confidence:** high
-
-### `gauge_link_binary_registration_capacity_step_kernel_pin_theorem_note_2026-07-02`
-
-- **Note:** [`GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md`](../../docs/GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Binary rank capacity, the fixed {P_3,P_1} kernel calculation, its composed moments, and the informative-fraction mixture on the finite native carrier.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00006-gauge_link_binary_registrati`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Because the native {P_3,P_1} partition saturates the binary record capacity, the admissibility-supported family collapses to {delta,T_V}, pinning the informative-step kernel.  _(class `A`)_
-- **chain closes:** False — The rank argument bounds an orthogonal partition to two cells but does not establish a unique sharp binary instrument or identify it with {P_3,P_1}. The restricted authorities supply neither that record-to-gauge-sector bridge nor an exclusion of unsharp or alternative binary registrations.
-- **rationale:** Issue: The inference from at most two orthogonal cells to the unique family {delta,T_V} is unsupported; binary POVMs can be unsharp, and binary projective contexts need not equal {P_3,P_1}. Why this blocks: the cited axiom supplies no measurement/readout context or map from admissible site possibilities to gauge-central sectors, while the controlled-copy authority covers only its explicit P_0/P_1 model. Repair target: a retained theorem deriving the unique gauge-link record instrument {P_3,P_1} and excluding other binary effects or contexts, with a runner that tests this uniqueness. Claim boundary until fixed: the runner validates T_V, its moments, and the lazy-mixture algebra only after {P_3,P_1} has been fixed.
-- **auditor confidence:** high
-
-### `gauge_link_central_registration_induced_bi_invariant_step_kernel_theorem_note_2026-07-02`
-
-- **Note:** [`GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md`](../../docs/GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional classification of finite-group and stated Peter-Weyl-truncated compact-group kernels induced by positive Lueders central registration on position-classical one-link states, including exact finite-group contrast witnesses and convention-bound SU(3) numerics.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00007-gauge_link_central_registrat`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Because the positive Lueders coefficients are nonnegative, expanding each modulus square reduces the kernel to character products whose irreducible decompositions have nonnegative Kronecker multiplicities.  _(class `A`)_
-- **chain closes:** True — Character orthogonality proves normalization, while the central projector form proves convolutional Ad-invariance and inversion symmetry; representation-ring decomposition proves coefficient positivity. The conclusion remains explicitly restricted to supplied positive Lueders channels and position-classical inputs.
-- **rationale:** The load-bearing result is genuine algebraic closure rather than a definition, renaming, tuned match, or imported comparator. The runner independently constructs the finite-group projectors and kernels, checks the counterexamples exactly, and computes the SU(3) quantities from the stated truncation; its stored numerical references serve only as regression gates. All cited authorities are retained-grade, and the note expressly excludes record-step occurrence, position-classicality derivation, rate selection, heat-kernel closure, and continuum claims.
 - **auditor confidence:** high
 
 ### `gauge_link_per_record_step_rate_dial_unit_variance_point_theorem_note_2026-07-02`
@@ -13371,22 +13327,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The load-bearing step is a first-principles finite-matrix computation from the stated Harper cell: the runner constructs H(+B), H(0), H(-B), H1, and H2 and compares the finite-difference response with the full second-order divided-difference PT sum. Expected chi values are not hard-coded; the predecessor deviations are printed as retained bounded provenance and are not used as the proof of the new PT agreement. The finite-B and non-flux-quantized caveats are disclosed, so the conclusion does not overclaim a strict B->0, flux-quantized, continuum, or boundary-root result.
 - **auditor confidence:** high
 
-### `luders_rule_from_composition_consistency_note_2026-05-20`
-
-- **Note:** [`LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`](../../docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The finite-dimensional, positive-probability claim that trace/effect probabilities, U1–U4, and the cited compression and canonical-instrument results uniquely force normalized projective and Kraus record updates.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00001-luders_rule_from_composition`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** By taking the sequential joint effect to be M_{P,E}=PEP, U3 and trace duality over all effects force σ|_P=PσP/Tr(PσP), with the note asserting that the PEP bridge discharges the choice of joint effect.  _(class `A`)_
-- **chain closes:** False — The missing step is a retained theorem selecting M_{P,E}=PEP, or equivalently the canonical Lüders instrument, as the physical sequential-record composition. The cited PEP bridge proves algebraic validity but not that selection or instrument uniqueness.
-- **rationale:** Issue: Step 1 assumes the joint sequential effect M_{P,E}=PEP, while the cited PEP theorem establishes only that this is a valid compression, not that U1–U4 uniquely select it. Why this blocks: U3 is a probability factorization once an instrument is supplied, and the canonical K=P authority explicitly disclaims physical instrument uniqueness. Repair target: supply a retained measurement/instrument-selection theorem deriving the sequential effect and selective update from approved premises, or narrow the claim to a consequence conditional on a supplied Lüders instrument. Claim boundary until fixed: PEP positivity, trace cyclicity, canonical-frame K=P, and the normalized update formula under a supplied Lüders instrument remain valid bounded support.
-- **open / conditional deps cited:**
-  - `LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`
-  - `RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md`
-- **auditor confidence:** high
-
 ### `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`
 
 - **Note:** [`LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md)
@@ -14053,22 +13993,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the gamma anticommutator, (-i a D_naive(k))^2 = (sum_mu sin^2(k_mu a)) I, so D_naive(k)=0 iff every sin(k_mu a)=0.  _(class `A`)_
 - **chain closes:** True — The conclusion follows by algebra from the explicitly defined operator and Clifford anticommutation relation, plus the elementary zeros of sine on the stated Brillouin-zone domain. No project-specific bridge or regulator-independent claim is used.
 - **rationale:** The load-bearing step is a genuine algebraic identity check on the operator defined in the note, not a renaming, tuned numerical match, or external comparator. The runner source performs symbolic corner checks, finite d count checks, the d=4 arithmetic, and boundary-context checks; it does not merely print constants for the contested zero-locus result. The Wilson, staggered, and regulator-count rows are contextual safeguards rather than load-bearing inputs.
-- **auditor confidence:** high
-
-### `native_carrier_registration_kernel_rate_vs_unit_variance_point_theorem_note_2026-07-02`
-
-- **Note:** [`NATIVE_CARRIER_REGISTRATION_KERNEL_RATE_VS_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md`](../../docs/NATIVE_CARRIER_REGISTRATION_KERNEL_RATE_VS_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The parameter-free four-sector native-carrier kernel, its readout-floor and registration-increment moments, and the resulting bounded refutation of unit variance within the stated holonomy-family reading.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00010-native_carrier_registration_`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Integrating the derived kernel T_V=(|chi_3|^2+1)/2 on the minimal-norm zero-sum logarithm branch gives m^2(T_V)=2.440631, hence tau_native=1.220315426 rather than 1/2.  _(class `C`)_
-- **chain closes:** False — The runner closes the numerical calculation conditional on the chosen kernel and logarithm readout. The restricted authorities do not derive the bridge from the explicit two-label controlled-copy model to four native central-sector record alternatives and the associated holonomy-family transition density, nor do they select the minimal-norm branch as the record-licensed readout.
-- **rationale:** The runner genuinely constructs the finite carrier, projectors, characters, Weyl measure, and logarithmic moments; the hard-coded anchors are redundant regression gates rather than inputs to the calculation. The cited controlled-copy authority establishes projector Kraus blocks only in its explicit two-outcome finite model and expressly does not establish arbitrary record dynamics. Moreover, the rigidity authority guarantees zero-sum logarithm representatives but disclaims selection of a unique branch, while the source reconciliation leaves the readout-license consequences unresolved. Thus the mathematics is strong conditional computation, but the claimed record-step rate is not closed by the restricted packet.
-- **open / conditional deps cited:**
-  - `G_BARE_RIGIDITY_THEOREM_NOTE.md`
-  - `RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md`
 - **auditor confidence:** high
 
 ### `native_gauge_closure_note`

@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 946 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 26 |
-| unaudited | 1751 |
+| unaudited | 1750 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 30 |
 | ~~audited_conditional~~ | 116 |
-| ~~audited_failed~~ | 10 |
+| ~~audited_failed~~ | 11 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -71,10 +71,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1359 |
 | `audited_conditional` | 116 |
 | `audited_decoration` | 62 |
-| `audited_failed` | 32 |
+| `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 30 |
-| `unaudited` | 2096 |
+| `unaudited` | 2095 |
 
 | claim_type | count |
 |---|---:|
@@ -1700,6 +1700,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `koide_carrier_locus_decomposition_note_2026-06-01` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_reviewer_stress_test_note_2026-04-21` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | weak | codex-current | B | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -11454,6 +11455,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For the scalar-rephased generator, `(exp(i alpha) C)^3 = exp(3 i alpha) I`, so preserving `C^3 = I` requires `exp(3 i alpha) = 1`.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from the stated `3 x 3` cyclic-shift algebra and the retained order-three generation surface by direct matrix identities. The negative scope is properly narrow: it closes only the scalar generator-rephasing route and explicitly leaves non-circulant or tensor-factor routes open.
 - **rationale:** The load-bearing step is a genuine algebraic identity, not a definition, numerical fit, or external comparator check. The displayed rotation formulas for `B1,B2`, the cube-root quantization, the commuting-centralizer claim, and the diagonal phase proportionality criterion all check under the note's conventions. The runner source performs the relevant finite-dimensional matrix computations rather than merely printing constants, and its extra Koide-context checks are not needed for the audited obstruction. The no-go discipline gate is satisfied at the narrow route level because the note does not claim a global absence of continuous doublet actions.
+- **auditor confidence:** high
+
+### `koide_carrier_locus_decomposition_note_2026-06-01`
+
+- **Note:** [`KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md`](../../docs/KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite corner-shell bookkeeping, complement-even projector obstruction, qubit-ladder statistics check, range-1 parity relation, and claimed localization of the remaining carrier-locus imports were audited.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00067-koide_carrier_locus_decompos`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The L1 statistics knob and L3 range knob couple on the sign of the cross-site hopping bilinear c_x†c_y, allegedly the only frame-distinguishing quantity, so they collapse into one matter-operator import M.  _(class `A`)_
+- **chain closes:** False — The finite algebraic checks close, but neither the cited inputs nor the runner proves that fermionic statistics and operator range are controlled by one scalar hopping sign. Jordan-Wigner statistics involves a graded/nonlocal generator structure, while first-order versus Wilson range is a separate operator-shape choice; the asserted collapse and resulting exhaustiveness do not follow.
+- **rationale:** The runner genuinely verifies 17 elementary algebraic and finite-enumeration statements, including the complement-neutral projector no-go. It does not construct and compare the relevant Jordan-Wigner-dressed hopping operators, prove the claimed statistics/range coupling, or exhaust all carrier-frame distinctions; one scope-separation check is merely recorded with `True`. Because that unsupported identification is the central step behind the advertised one-operator/two-coupled-knob decomposition, the bounded theorem does not close on its own terms.
 - **auditor confidence:** high
 
 ### `koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02`

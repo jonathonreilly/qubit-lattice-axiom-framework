@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 947 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 29 |
-| unaudited | 1721 |
+| unaudited | 1720 |
 | meta | 347 |
-| ~~audited_numerical_match~~ | 9 |
+| ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 36 |
 | ~~audited_conditional~~ | 144 |
 | ~~audited_failed~~ | 16 |
@@ -75,9 +75,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 144 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 38 |
-| `audited_numerical_match` | 9 |
+| `audited_numerical_match` | 10 |
 | `audited_renaming` | 36 |
-| `unaudited` | 2068 |
+| `unaudited` | 2067 |
 
 | claim_type | count |
 |---|---:|
@@ -1767,6 +1767,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.6 | G | - |
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -4229,6 +4230,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Substituting w_A1=1/n_quark, w_perp=(n_quark-1)/n_quark, r^2=1/n_quark, lambda^2=alpha_s/n_pair, and A^2=n_pair/n_color forces rho=1/n_quark, eta=sqrt(n_quark-1)/n_quark, the stated phase identities, and J_0=alpha_s^3 sqrt(n_quark-1)/(n_pair^2 n_color n_quark).  _(class `A`)_
 - **chain closes:** True — Within the note's explicitly bounded scope, every claimed expression follows by direct substitution and simplification from the listed hypotheses. No excluded physical bridge, numerical alpha_s value, or external comparator is needed for this scoped theorem.
 - **rationale:** The audited claim is deliberately narrow: it asserts only algebraic consequences of stated symbolic hypotheses. The runner checks the same algebra at exact symbolic precision and reports 26 class-A passes with no failures. Because the note explicitly excludes derivation of the projector weights, CP radius, Wolfenstein inputs, physical CKM identification, and PDG comparison, those missing bridges do not block the scoped claim.
+- **auditor confidence:** high
+
+### `ckm_five_sixths_bridge_support_note`
+
+- **Note:** [`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`](../../docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The claimed numerical support for the assumed five-sixths CKM–mass bridge on the threshold-local mixed/self-scale comparator, including its one-loop transport and deviation decomposition.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T164715Z-1ebf2b3d-00002-ckm_five_sixths_bridge_suppo`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The assumed bridge |V_cb| = (m_s/m_b)^(5/6) is applied at alpha_s(v) = 0.103303816122 and judged by its +0.20% match to m_s(2 GeV)/m_b(m_b).  _(class `G`)_
+- **chain closes:** False — The arithmetic closes after assuming the bridge and supplied numerical inputs, but neither the bridge nor the selection of the mixed-scale comparator is derived from the restricted packet.
+- **rationale:** Issue: the runner assumes the contested five-sixths bridge by evaluating v_cb**(6/5), imports alpha_s(v) from a helper rooted in the hard-coded CANONICAL_PLAQUETTE = 0.5934, and uses mixed-scale PDG values as the close comparator. Why this blocks: it verifies algebra and a scale-dependent numerical coincidence rather than deriving the bridge or scale-selection rule from framework premises. Repair target: independently derive both the bridge and comparator-scale selection, then make the runner construct them without hard-coding the contested inputs. Claim boundary until fixed: the SU(3) identity, one-loop transport exponent, and conditional numerical decompositions are supported, but the claimed physical preference for the mixed/self-scale surface is not.
 - **auditor confidence:** high
 
 ### `ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10`

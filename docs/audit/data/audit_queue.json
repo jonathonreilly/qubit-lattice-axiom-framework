@@ -3,7 +3,7 @@
     "critical": 400,
     "high": 266,
     "leaf": 755,
-    "medium": 522
+    "medium": 521
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -12214,6 +12214,32 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+        "yt_source_action_support_packet_note_2026-05-22"
+      ],
+      "direct_in_degree": 13,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.959,
+      "note_path": "docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py",
+      "transitive_descendants": 21
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12",
@@ -18549,32 +18575,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
-        "yt_source_action_support_packet_note_2026-05-22"
-      ],
-      "direct_in_degree": 13,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.959,
-      "note_path": "docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py",
-      "transitive_descendants": 21
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "pmns_theta12_theta13_dcp_predictions_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -20009,30 +20009,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_coarse_grained_exterior_law.py",
       "transitive_descendants": 97
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.34,
-      "note_path": "docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py",
-      "transitive_descendants": 80
     },
     {
       "audit_independence_required": "any_non_self",
@@ -58040,5 +58016,5 @@
     }
   ],
   "ready_count": 223,
-  "total_pending": 1943
+  "total_pending": 1942
 }

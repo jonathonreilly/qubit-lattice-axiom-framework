@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 954 |
+| **retained_bounded** | 955 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1704 |
+| unaudited | 1703 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1371 |
+| `audited_clean` | 1372 |
 | `audited_conditional` | 137 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2049 |
+| `unaudited` | 2048 |
 
 | claim_type | count |
 |---|---:|
@@ -1525,6 +1525,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_cross_arc_unit_classification_wiring_2026-07-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
@@ -23762,4 +23763,17 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
   - `AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md`
   - `HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md`
   - `KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md`
+- **auditor confidence:** high
+
+### `z_n_spectral_asymmetry_physical_identification_note_2026-05-31`
+
+- **Note:** [`Z_N_SPECTRAL_ASYMMETRY_PHYSICAL_IDENTIFICATION_NOTE_2026-05-31.md`](../../docs/Z_N_SPECTRAL_ASYMMETRY_PHYSICAL_IDENTIFICATION_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C_3 regular-representation identification of L_3(1,2)=2/9 as a resolvent-determinant weight on the nontrivial-character sector of the specified circulant operator, including the normalized theta=0 spectral-flow illustration but excluding any continuum APS or Dirac-operator bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00114-z_n_spectral_asymmetry_physi`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On the complement of the C-fixed singlet, C has characters omega and omega^2, so the determinant of (C^k-I)^(-1) on that doublet equals the product defining L_3(1,2), whose averaged value is 2/9.  _(class `A`)_
+- **chain closes:** True — The retained authorities supply the finite C_3 action, circulant operator, and cyclotomic weight sum. Simultaneous diagonalization then identifies the nontrivial characters as (1,2), and the determinant identity follows exactly.
+- **rationale:** Every cited authority is retained-grade, and the load-bearing result is exact finite-dimensional algebra over independent operator and weight-sum inputs. The runner constructs C and H, recovers the two nontrivial characters, and computes both the resolvent determinant sum and cyclotomic expression, with exact symbolic confirmation rather than merely printing the target. This verdict is confined to the stated finite operator identification; no continuum APS invariant or physical Dirac realization is thereby established.
 - **auditor confidence:** high

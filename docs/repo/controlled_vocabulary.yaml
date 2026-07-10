@@ -167,6 +167,30 @@ term_families:
       other:
         definition: "None of the above fits; the note must state why."
 
+  no_go_discipline_status:
+    description: "Outcome of the mandatory structured N1-N8 stress test for negative boundaries."
+    authority: docs/ai_methodology/skills/no-go-discipline/SKILL.md
+    scope_tag: audit_physics_process
+    values:
+      PASS:
+        definition: "Every required N1-N8 record closes with no unresolved item; eligible to support a clean negative verdict."
+      FAIL:
+        definition: "At least one required stress test remains open, incomplete, or mismatched; forbids audited_clean and requires an explicit demotion."
+
+  no_go_demotion:
+    description: "Required conservative disposition when no_go_discipline_status is FAIL."
+    authority: docs/ai_methodology/skills/no-go-discipline/SKILL.md
+    scope_tag: audit_physics_process
+    values:
+      partial_attempt_with_named_untested_routes:
+        definition: "Records the tested work while naming alternative routes that remain untested."
+      partial_narrowing:
+        definition: "Narrows the claim to the portion actually supported by the restricted packet."
+      bounded_with_corrected_wall_count:
+        definition: "Retains only the bounded wall set that survives the independence audit."
+      stretch_attempt_with_honest_residual:
+        definition: "Preserves a useful stretch attempt while stating the unresolved residual explicitly."
+
   independence:
     description: "Adversarial-review independence tier between auditor and author. auditor ≠ author required."
     authority: docs/audit/FRESH_LOOK_REQUIREMENTS.md

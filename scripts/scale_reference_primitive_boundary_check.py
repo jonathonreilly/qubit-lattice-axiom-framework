@@ -118,8 +118,8 @@ def main() -> int:
     )
 
     check(
-        "Tier-A registry genuine count remains two",
-        tier_a.get("genuine_admitted_input_count") == 2,
+        "Tier-A registry genuine count is zero after the 2026-07-05 retirements",
+        tier_a.get("genuine_admitted_input_count") == 0,
         str(tier_a.get("genuine_admitted_input_count")),
     )
     check("scale primitive is not a Tier-A derivation target", CLAIM_ID not in derivation_targets)
@@ -133,7 +133,7 @@ def main() -> int:
     check("note names Planck mass scale reference", "a^{-1} = M_Pl" in note)
     check("note says units conversion not physics axiom", "This is a units conversion, not a physics axiom." in note)
     check("note says zero dimensionless content", "It carries zero dimensionless\ncontent" in note)
-    check("note says scale is irreducible by dimensional analysis", "irreducible by dimensional analysis" in note)
+    check("note disclaims deriving the chosen physical scale", "No derivation of the chosen\nphysical scale is claimed here" in note)
     check("note says it does not add or amend an axiom", "It does not add or amend an axiom." in note)
     check("note says it does not assert a/l_P = 1 as derived", "It does not assert `a/l_P = 1` as a derived theorem." in note)
     check("note says it does not supply dimensionless quantity", "It does not supply any dimensionless quantity." in note)

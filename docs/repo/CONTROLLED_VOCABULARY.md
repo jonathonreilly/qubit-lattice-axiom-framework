@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=d0fcd0cff651e8c0141f8fa7836d927de738e81104945743381654e129817352 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=cd6a2b4c83a4561c2bb97d2837d0f24f81e25b56a8e85f29f8648c8dad082d59 -->
 # Controlled Vocabulary
 
 > **Front-door lookup:** Looking up a single term? Go to
@@ -407,6 +407,20 @@ exactly one of these seven classes:
 - `other` — use only when none of the above fits, and state why
 
 After the class, the auditor names the cheapest next repair action.
+
+### No-Go Discipline packet fields
+
+`no_go_discipline.status` records the mandatory structured N1-N8 stress-test outcome for negative boundaries. Exactly one of:
+
+- `PASS` — Every required N1-N8 record closes with no unresolved item; eligible to support a clean negative verdict.
+- `FAIL` — At least one required stress test remains open, incomplete, or mismatched; forbids audited_clean and requires an explicit demotion.
+
+When the status is `FAIL`, `no_go_discipline.demotion` is required and must be exactly one of:
+
+- `partial_attempt_with_named_untested_routes` — Records the tested work while naming alternative routes that remain untested.
+- `partial_narrowing` — Narrows the claim to the portion actually supported by the restricted packet.
+- `bounded_with_corrected_wall_count` — Retains only the bounded wall set that survives the independence audit.
+- `stretch_attempt_with_honest_residual` — Preserves a useful stretch attempt while stating the unresolved residual explicitly.
 
 ### Independence tiers
 

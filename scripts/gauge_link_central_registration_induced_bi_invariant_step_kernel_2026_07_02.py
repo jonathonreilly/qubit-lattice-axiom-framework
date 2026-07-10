@@ -6,12 +6,13 @@ and independent algebra/numerics for the row.
 
 T1: the two-ended link carrier has gauge-central pointer content given by the
 Peter-Weyl isotypic projectors.
-T2: scalar central registration Kraus blocks induce normalized, convolutional,
-Ad-invariant, inversion-symmetric, positive step kernels.
-T3: intra-block frame-picking and deterministic drift witnesses show what the
-central scalar registration hypothesis supplies.
-T4: registration softness controls step size, while the per-step soft kernel is
-not asserted to be a heat kernel.
+T2: positive Lueders scalar central registration Kraus blocks induce normalized,
+convolutional, Ad-invariant, inversion-symmetric, positive step kernels.
+T3: intra-block frame-picking, deterministic drift, and exact negative-coefficient
+central witnesses show what the positive Lueders central scalar registration
+hypothesis supplies and what centrality alone does not.
+T4: the tested registration-softness family orders per-step variance in a stated
+convention, while the per-step soft kernel is not asserted to be a heat kernel.
 """
 
 import numpy as np
@@ -445,6 +446,109 @@ def run_s3_contrast(elems, idx, mul, inv, projectors, chars):
     nonscalar_norm = np.linalg.norm(rho_g0 - (np.trace(rho_g0) / 2.0) * np.eye(2), 2)
     check("C2 drift standard Fourier block is non-scalar", nonscalar_norm > 0.5, str(nonscalar_norm))
 
+    p_triv = projectors["triv"]
+    p_sign = projectors["sign"]
+    p_std_frac = projectors["std"]
+    k_central = [
+        [p_triv[i][j] + p_sign[i][j] - p_std_frac[i][j] for j in range(6)]
+        for i in range(6)
+    ]
+    check(
+        "C3 central unitary witness squares to identity exactly",
+        frac_matrix_mul(k_central, k_central) == frac_matrix_identity(6),
+    )
+
+    t_central = [[k_central[i][j] ** 2 for j in range(6)] for i in range(6)]
+    by_delta_exact = {}
+    conv_exact = True
+    for g in elems:
+        for h in elems:
+            x = mul(g, inv(h))
+            val = t_central[idx[g]][idx[h]]
+            if x in by_delta_exact and by_delta_exact[x] != val:
+                conv_exact = False
+            by_delta_exact[x] = val
+    check("C3 central unitary induced kernel is an exact convolution", conv_exact)
+
+    class_expected = {3: Fraction(1, 9), 1: Fraction(0), 0: Fraction(4, 9)}
+    class_ok = True
+    for x, val in by_delta_exact.items():
+        fixed = sum(1 for i in range(3) if x[i] == i)
+        class_ok = class_ok and (val == class_expected[fixed])
+    check(
+        "C3 central unitary kernel class values exact",
+        class_ok,
+        str(sorted((x, str(v)) for x, v in by_delta_exact.items())),
+    )
+
+    e_id = elems[0]
+    coeff_map_central = {}
+    for name, dim, ch in chars:
+        coeff = Fraction(0)
+        for x in elems:
+            coeff += t_central[idx[x]][idx[e_id]] * ch[inv(x)]
+        coeff_map_central[name] = coeff / 6
+    expected_central = {"triv": Fraction(1, 6), "sign": Fraction(1, 6), "std": Fraction(-1, 9)}
+    check(
+        "C3 central unitary character coefficients exact with negative std block",
+        coeff_map_central == expected_central and coeff_map_central["std"] < 0,
+        str(coeff_map_central),
+    )
+
+    w_big = Fraction(12, 13)
+    w_small = Fraction(5, 13)
+    k_one = [
+        [w_big * (p_triv[i][j] + p_sign[i][j] - p_std_frac[i][j]) for j in range(6)]
+        for i in range(6)
+    ]
+    k_two = [
+        [w_small * (p_triv[i][j] + p_sign[i][j] + p_std_frac[i][j]) for j in range(6)]
+        for i in range(6)
+    ]
+    k_one_t = [[k_one[j][i] for j in range(6)] for i in range(6)]
+    k_two_t = [[k_two[j][i] for j in range(6)] for i in range(6)]
+    kraus_sum = frac_matrix_add([
+        frac_matrix_mul(k_one_t, k_one),
+        frac_matrix_mul(k_two_t, k_two),
+    ])
+    check(
+        "C4 two-outcome 5-12-13 instrument is exactly trace-preserving",
+        kraus_sum == frac_matrix_identity(6),
+    )
+
+    t_two = [
+        [k_one[i][j] ** 2 + k_two[i][j] ** 2 for j in range(6)]
+        for i in range(6)
+    ]
+    by_delta_two = {}
+    conv_two = True
+    for g in elems:
+        for h in elems:
+            x = mul(g, inv(h))
+            val = t_two[idx[g]][idx[h]]
+            if x in by_delta_two and by_delta_two[x] != val:
+                conv_two = False
+            by_delta_two[x] = val
+    check("C4 two-outcome induced kernel is an exact convolution", conv_two)
+
+    coeff_map_two = {}
+    for name, dim, ch in chars:
+        coeff = Fraction(0)
+        for x in elems:
+            coeff += t_two[idx[x]][idx[e_id]] * ch[inv(x)]
+        coeff_map_two[name] = coeff / 6
+    expected_two = {"triv": Fraction(1, 6), "sign": Fraction(1, 6), "std": Fraction(-23, 507)}
+    check(
+        "C4 two-outcome character coefficients exact",
+        coeff_map_two == expected_two,
+        str(coeff_map_two),
+    )
+    check(
+        "C4 two-outcome std coefficient strictly negative",
+        coeff_map_two["std"] < 0,
+        str(coeff_map_two["std"]),
+    )
+
 
 def det3_arrays(a00, a01, a02, a10, a11, a12, a20, a21, a22):
     return (
@@ -670,6 +774,13 @@ def run_su3_numerics():
     check("D4 SU3 width-6 per-block generator spread exceeds heat-form floor", spread > 0.2, str(spread))
     check("D4 SU3 width-6 per-block generator spread remains bounded", spread < 1.0, str(spread))
 
+    wrap_engaged = integral(np.where(np.abs(t1g + t2g) > np.pi, 1.0, 0.0))
+    check(
+        "D5 SU3 principal-eigenphase wrap region has positive Haar measure",
+        float(np.real(wrap_engaged)) > 1e-3,
+        str(wrap_engaged),
+    )
+
 
 def run_exact_summary(s3_chars, s3_coeffs):
     s3_dim_sum = sum(Fraction(dim * dim) for _, dim, _ in s3_chars)
@@ -736,6 +847,11 @@ def run_source_guards():
         "Kronecker",
         "intra-block",
         "the per-step kernel is not the heat kernel",
+        "positive Lueders subclass",
+        "centrality alone does not give representation positivity",
+        "per-step variance",
+        "N_trunc^(-1/2)",
+        "principal-eigenphase distance",
     ]
     for marker in preserve:
         require_contains("F note preserve marker", note_text, marker)
@@ -757,6 +873,11 @@ def run_source_guards():
         "exh" + "austed",
         "closes" + " " + "the" + " " + "route",
         "covariance" + " " + "implies" + " " + "the" + " " + "step-measure" + " " + "premise",
+        "# Gauge-Link Record Step: Central" + " Registration Induces Bi-Invariant Step Kernels",
+        "## Theorem 2 (central" + " registration induces bi-invariant positive step kernels)",
+        "## Theorem 4 (registration softness sets the step size;" + " derived rates)",
+        "Each registration channel therefore has a derived" + " rate",
+        "the load-bearing input is registration-centrality," + " not kinematic covariance",
     ]
     for marker in forbidden:
         require_absent("F note forbidden string absent", note_text, marker)

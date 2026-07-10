@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gravity_transverse_noncentrality_structure.py
+runner_sha256: f8c7f788aa2e109416841e5e43d190f8987610da561e4b6efb4bfb40b6255501
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 24.15
+status: ok
+----- stdout -----
+PASS S1 gradient identity, x component
+PASS S1 gradient identity, y component
+PASS S1 gradient identity, z component
+PASS S2a transverse vector is exactly tangent
+PASS S2b component factor t_mu=nhat_mu(nhat_mu^2-S4)
+PASS S2c degree-zero gradient is 4t/r componentwise
+PASS S3 magnitude identity |t|^2=S6-S4^2
+PASS S4 central orbit <100> has t=0 and S4=1
+PASS S4 central orbit <110> has t=0 and S4=1/2
+PASS S4 central orbit <111> has t=0 and S4=1/3
+PASS S4 converse factor forces each nonzero square to equal S4
+PASS S4 k equal nonzero squares imply S4=1/k for k=1,2,3
+PASS S5 sphere Hessian spectrum at <100>
+PASS S5 sphere Hessian spectrum at <110>
+PASS S5 sphere Hessian spectrum at <111>
+PASS S6 constrained stationarity equation from lambda=n dot grad(q2)
+PASS S6 two-equal-square extremum u_star solves dq2/du
+PASS S6 exact global q2 maximum on the extremal family
+PASS S6 q2 maximum obeys 9216 Q^2-827 Q+8=0
+PASS S6 planar maximum q2=1/16 at v=cos^2(pi/8)
+PASS S6 global maximum is strictly above planar maximum
+PASS S6 simplex grid finds no direction above the family maximum
+PASS S6 simplex grid attains the family maximum to grid resolution
+PASS S7 exact q2 anchor (1,1,3)
+PASS S7 exact q2 anchor (2,1,0)
+PASS S7 exact q2 anchor (2,1,1)
+PASS S7 conditional pair-response contrast coefficient
+PASS S8 stabilizer has no tangent fixed vector at <100>
+PASS S8 stabilizer has no tangent fixed vector at <110>
+PASS S8 stabilizer has no tangent fixed vector at <111>
+PASS N1 finite-site transverse remainder compatibility at (3, 3, 9): e_t*r^2=1.01404911 < 8
+PASS N1 finite-site transverse remainder compatibility at (5, 5, 15): e_t*r^2=0.776289874 < 8
+PASS N1 finite-site transverse remainder compatibility at (8, 4, 0): e_t*r^2=2.18980574 < 8
+PASS N1 finite-site transverse remainder compatibility at (14, 7, 0): e_t*r^2=2.24725288 < 8
+PASS N1 finite-site transverse remainder compatibility at (8, 4, 4): e_t*r^2=4.71870185 < 8
+PASS N1 finite-site transverse remainder compatibility at (12, 6, 6): e_t*r^2=4.77927043 < 8
+PASS N2 finite-site radial remainder compatibility at (3, 3, 9): abs(error)*r^6=0.177493544 < 1
+PASS N2 finite-site radial remainder compatibility at (5, 5, 15): abs(error)*r^6=0.175610197 < 1
+PASS N2 finite-site radial remainder compatibility at (8, 4, 0): abs(error)*r^6=0.00811264485 < 1
+PASS N2 finite-site radial remainder compatibility at (14, 7, 0): abs(error)*r^6=0.0119890992 < 1
+PASS N2 finite-site radial remainder compatibility at (8, 4, 4): abs(error)*r^6=0.0887271447 < 1
+PASS N2 finite-site radial remainder compatibility at (12, 6, 6): abs(error)*r^6=0.0910416839 < 1
+PASS N3 finite-site O(1/r^2) relative convergence (3, 3, 9) to (5, 5, 15): ratio=3.62854544 expected=2.77777778
+PASS N3 finite-site O(1/r^2) relative convergence (8, 4, 0) to (14, 7, 0): ratio=2.98421248 expected=3.0625
+PASS N3 finite-site O(1/r^2) relative convergence (8, 4, 4) to (12, 6, 6): ratio=2.22148533 expected=2.25
+PASS N4 non-centrality witness at (3, 3, 9): measured/predicted=0.98975708 > 0.5
+PASS N4 non-centrality witness at (5, 5, 15): measured/predicted=0.997177128 > 0.5
+PASS N4 non-centrality witness at (8, 4, 0): measured/predicted=0.972627428 > 0.5
+PASS N4 non-centrality witness at (14, 7, 0): measured/predicted=0.990827539 > 0.5
+PASS N4 non-centrality witness at (8, 4, 4): measured/predicted=0.950846856 > 0.5
+PASS N4 non-centrality witness at (12, 6, 6): measured/predicted=0.977873748 > 0.5
+PASS N5 transverse/radial ratio at (14, 7, 0): relative error=0.00977623477 < 0.15
+PASS N5 transverse/radial ratio at (5, 5, 15): relative error=0.00337783628 < 0.15
+PASS CTRL1 10 percent inflated transverse coefficient is rejected: e_t*r^2=25.7057181 > 8
+PASS CTRL2 S6-in-place-of-S4 transverse form is rejected: e_t*r^2=120.502671 > 8
+PASS CTRL3 wrong minimal-polynomial coefficient 826 is rejected
+PASS CTRL4 wrong 3/8 transverse gradient coefficient is rejected
+RESULT: exact gradient of the displayed truncation is [1/(4 pi r^2) + (15/32 pi) K4/r^4] nhat - (5/8 pi)(nhat^3 - S4 nhat)/r^4; an O(1/r^6) full-force remainder is conditional on termwise differentiability and has finite-site support; central orbits <100>,<110>,<111>; q2_max=(827+73*sqrt(73))/18432=0.078706178; ratio_coeff=(5/2)*q_max=0.701365534
+TOTAL: PASS=57 FAIL=0
+
+----- stderr -----
+

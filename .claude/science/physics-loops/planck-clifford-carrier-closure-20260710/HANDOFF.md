@@ -17,6 +17,8 @@ positive theorem. Positive closure requires an enlarged-premise bridge that
 supplies a spinor packet, temporal Clifford operator, multiplicity selector,
 and physical boundary identification without importing the answer.
 
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5140
+
 Do not weave this branch into repo-wide authority surfaces before independent
 audit. In particular, do not commit generated audit-ledger or publication
 views from a local validation run.

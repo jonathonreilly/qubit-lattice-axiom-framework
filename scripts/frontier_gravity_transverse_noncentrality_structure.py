@@ -3,7 +3,8 @@
 The symbolic gates verify the exact gradient, tangency, central-orbit,
 sphere-Hessian, extremal, and stabilizer identities.  The numeric gates use
 the exact Bessel-resolvent lattice Green function and a five-point gradient
-stencil at six lattice sites to certify the O(1/r^6) gradient remainder.
+stencil at six lattice sites as finite-site support for compatibility with an
+O(1/r^6) gradient remainder; they do not prove the asymptotic derivative bound.
 Four controls require specified wrong coefficients or structures to fail.
 
 Prints PASS/FAIL gate lines, a RESULT line, and TOTAL: PASS=N FAIL=M.
@@ -366,7 +367,7 @@ for site in sites:
     data = numeric[site]
     scaled_error = data["e_t"] * data["r"] ** 2
     check(
-        "N1 transverse relative remainder at %s: e_t*r^2=%.9g < 8"
+        "N1 finite-site transverse remainder compatibility at %s: e_t*r^2=%.9g < 8"
         % (site, float(scaled_error)),
         scaled_error < 8,
     )
@@ -375,7 +376,7 @@ for site in sites:
     data = numeric[site]
     scaled_error = abs(data["rho_num"] - data["rho_pred"]) * data["r"] ** 6
     check(
-        "N2 radial remainder at %s: abs(error)*r^6=%.9g < 1"
+        "N2 finite-site radial remainder compatibility at %s: abs(error)*r^6=%.9g < 1"
         % (site, float(scaled_error)),
         scaled_error < 1,
     )
@@ -387,7 +388,7 @@ for small_site, large_site in site_pairs:
     measured = small["e_t"] / large["e_t"]
     expected = (large["r"] / small["r"]) ** 2
     check(
-        "N3 O(1/r^2) relative convergence %s to %s: ratio=%.9g expected=%.9g"
+        "N3 finite-site O(1/r^2) relative convergence %s to %s: ratio=%.9g expected=%.9g"
         % (small_site, large_site, float(measured), float(expected)),
         mpf("0.5") * expected <= measured <= 2 * expected,
     )
@@ -465,8 +466,10 @@ for name, ok in results:
 q2_max_num = mpf(827 + 73 * mp.sqrt(73)) / 18432
 ratio_coefficient = mpf(5) / 2 * mp.sqrt(q2_max_num)
 print(
-    "RESULT: -grad G = [1/(4 pi r^2) + (15/32 pi) K4/r^4] nhat - "
-    "(5/8 pi)(nhat^3 - S4 nhat)/r^4 + O(1/r^6); central orbits "
+    "RESULT: exact gradient of the displayed truncation is "
+    "[1/(4 pi r^2) + (15/32 pi) K4/r^4] nhat - "
+    "(5/8 pi)(nhat^3 - S4 nhat)/r^4; an O(1/r^6) full-force remainder "
+    "is conditional on termwise differentiability and has finite-site support; central orbits "
     "<100>,<110>,<111>; q2_max=(827+73*sqrt(73))/18432=%.9g; "
     "ratio_coeff=(5/2)*q_max=%.9g"
     % (float(q2_max_num), float(ratio_coefficient))

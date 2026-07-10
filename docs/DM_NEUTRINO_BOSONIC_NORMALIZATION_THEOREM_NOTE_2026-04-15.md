@@ -2,6 +2,7 @@
 
 **Date:** 2026-04-15 (status line narrowed 2026-04-28 per audit-lane verdict)
 **Status:** bounded conditional normalization selector on the upstream local Higgs family — IF physical local scalar observables are taken to be exactly `W[J]` source-response coefficients (the observable-principle premise), THEN the algebraic checks close. The observable-principle premise is not registered as an audit-clean theorem in the audit packet, and the runner only checks `Y` log-det response and `Gamma_1` even response, not the admissibility of active-space ratios. Not a tier-ratifiable normalization selector.
+**Type:** bounded_theorem
 **Script:** `scripts/frontier_dm_neutrino_bosonic_normalization_theorem.py`
 
 ---
@@ -164,19 +165,16 @@ reach `k_B = 8`. On the retained local lane, it does. The remaining question is
 whether the Majorana side is axiom-forced strongly enough to turn that local
 Dirac result into a full zero-import `eta`.
 
-## Audit boundary (2026-04-28)
+## Independent-audit boundary
 
-Audit verdict (`audited_conditional`, leaf criticality):
-
-> Issue: the algebraic checks close after accepting the
-> observable-principle premise, but the note does not register or
-> reproduce the theorem that physical local scalar observables are
-> exactly `W[J]` source-response coefficients on the retained local
-> Higgs family. Why this blocks: without that physical selection
-> theorem, the runner only shows that `Y` has zero log-det response
-> and `Gamma_1` has nonzero even response; it does not by itself
-> prove that the active-space ratio 1 is inadmissible or that
-> `1/sqrt(2)` is the unique admissible normalization.
+Independent audit is required. The algebraic checks close after accepting the
+observable-principle premise, but this note does not register or reproduce the
+theorem that physical local scalar observables are exactly `W[J]`
+source-response coefficients on the local Higgs family. Without that physical
+selection theorem, the runner only shows that `Y` has zero log-det response
+and `Gamma_1` has nonzero even response; it does not by itself prove that the
+active-space ratio `1` is inadmissible or that `1/sqrt(2)` is the unique
+admissible normalization.
 
 ## What this note does NOT claim
 
@@ -196,8 +194,8 @@ upstream dependency.
 
 This graph-bookkeeping section records the explicit upstream authority
 the load-bearing observable-principle premise relies on, in response to
-the 2026-05-10 audit verdict's `missing_bridge_theorem` repair target
-(audit row: `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15`).
+the `missing_bridge_theorem` repair target for
+`dm_neutrino_bosonic_normalization_theorem_note_2026-04-15`.
 It does not promote this note or change the audited claim scope, which
 remains conditional algebra on the `Y`/`Gamma_1` decomposition plus the
 imported observable-principle premise.
@@ -242,22 +240,21 @@ cited upstream authority. The cite chain is what supplies the physical
 selection rule that promotes `1/sqrt(2)` from a comparator to the
 admissible bosonic normalization.
 
-## Honest auditor read
+## Honest source boundary
 
-The 2026-05-10 audit recorded this row as `audited_conditional` with the
-observation that A=12 algebraic checks close once the observable-principle
-premise is accepted, but the inadmissibility of the active-space ratio
-`1` and the uniqueness of `1/sqrt(2)` as the physical normalization do
-not follow from the runner alone — they require the upstream theorem
-that physical local scalar observables are exact `W[J]` source-response
-coefficients. The cite-chain repair above wires
+The A=12 algebraic checks close once the observable-principle premise is
+accepted, but the inadmissibility of the active-space ratio `1` and the
+uniqueness of `1/sqrt(2)` as the physical normalization do not follow from the
+runner alone — they require the upstream theorem that physical local scalar
+observables are exact `W[J]` source-response coefficients. The cite-chain
+repair above wires
 `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE` as that upstream authority, and
 the W-source application bridge note linked above supplies the
 application step: the functional applied to this note's declared
 family, with the weak-coupling normalization derived as the per-mode
-quadratic W-response at the declared comparator point. Row status is
-owned by the independent audit lane on the live ledger. The note's
-audit_status is unchanged by this addendum.
+quadratic W-response at the declared comparator point. This source edit does
+not apply a verdict; the independent audit lane owns row status, and row status
+is unchanged by the source edit.
 
 ## Scope of this rigorization
 

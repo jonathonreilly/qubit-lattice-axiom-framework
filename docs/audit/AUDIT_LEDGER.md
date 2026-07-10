@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 956 |
+| **retained_bounded** | 957 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1704 |
+| unaudited | 1703 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1373 |
+| `audited_clean` | 1374 |
 | `audited_conditional` | 135 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2049 |
+| `unaudited` | 2048 |
 
 | claim_type | count |
 |---|---:|
@@ -1153,6 +1153,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_formation_append_certification_bounded_note_2026-07-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
+| `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -17677,6 +17678,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** "This is occurrence strength only" plus "Succession, wherever it exists, is monotone."  _(class `A`)_
 - **chain closes:** True — The axiom text supports occurrence and, conditional on an actual formation-successor, permanence plus per-site uniqueness force strict extension; the note explicitly excludes any formation rule, universal successor law, rate, clock, selector, or dynamics.
 - **rationale:** The citable axiom text contains 'Records form.' and the Qualification blocks extra physical structure absent derivation/admission. Read minimally, that supports occurrence and excludes empty-forever history, but it does not supply a total transition law, availability domain, site or possibility selector, rate, clock, stochastic process, or dynamics. The extension lemma closes only under the explicit conditional 'for any realized formation-successor': permanence preserves old records, per-site uniqueness forbids overwrite, and formation adds a record. The runner verifies exact text needles and finite toy consequences; it is not an independent dynamics derivation, but the note does not claim one.
+- **auditor confidence:** high
+
+### `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18`
+
+- **Note:** [`RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md`](../../docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the explicit finite qubit controlled-copy model with a fresh blank record fragment, theta = pi/4 and a fixed record-basis calibration, the kick induces the projective write isometry W with K_r = P_r, while later kicks on fresh fragments leave completed record labels invariant.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-row6-ccwi-20260710`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** At theta = pi/4, the controlled-copy unitary maps |psi>|0> to P_0|psi>|eta_0> + P_1|psi>|eta_1> with orthogonal record states, and the fixed record-basis calibration therefore gives W|psi> = P_0|psi>|0> + P_1|psi>|1>.  _(class `A`)_
+- **chain closes:** True — The spectral-projector expansion of the controlled-copy exponential gives normalized orthogonal record states at theta = pi/4, and their unitary calibration yields the stated isometry and projector blocks. An independent exact symbolic matrix computation verified the sign, pi/4 factor, normalization, tensor ordering, Kraus resolution, arbitrary-input map, two-fragment write, and completed-label commutators outside the runner implementation path.
+- **rationale:** The load-bearing step is exact A-class algebra over the retained-bounded explicit-model inputs, not a tuned match or a definition: diagonalizing sigma_z produces the two record rotations, whose pi/4 overlap is exactly zero, and the calibrated blocks are exactly P_0 and P_1. Independent exact recomputation confirms every displayed quantitative identity and the fresh-fragment persistence statement; the runner's 15 algebraic checks agree, while its other 22 passes are source/boundary checks rather than independent scientific evidence. Residual risk is confined to the inherited bounded choice of finite carrier, pointer, controlled-copy dynamics, and record reading; this verdict does not promote those choices to framework-wide record-formation physics.
 - **auditor confidence:** high
 
 ### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`

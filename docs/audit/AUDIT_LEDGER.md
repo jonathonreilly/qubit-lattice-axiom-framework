@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 936 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1822 |
+| unaudited | 1821 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 75 |
+| ~~audited_conditional~~ | 76 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1345 |
-| `audited_conditional` | 75 |
+| `audited_conditional` | 76 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2167 |
+| `unaudited` | 2166 |
 
 | claim_type | count |
 |---|---:|
@@ -1495,6 +1495,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `acphilambda_k_even_registration_correction_registered_pattern_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
+| `acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1829,6 +1830,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The primary runner must verify the Tier-A sub-admission quote and then execute the K-parity, finite route-kill, and note-discipline checks supporting the registered-pattern normal form.  _(class `B`)_
 - **chain closes:** False — The current runner exits nonzero during the Tier-A registry lookup before reaching the load-bearing K-parity and route-kill checks, so the advertised PASS=111 close is not reproducible from the packet.
 - **rationale:** Issue: the primary runner crashes in tier_a_statement() with KeyError: 'staggered_dirac_realization_gate_note_2026-05-03' while looking up docs/audit/data/tier_a_admissions.json. Why this blocks: the source note advertises a measured TOTAL: PASS=111 FAIL=0, but the live verifier currently exits with status 1 after only 33 partial setup/text checks and before the load-bearing K-parity and route-kill checks. Repair target: update the runner to the current Tier-A registry key/schema, or provide a stable cached certificate/log and rerun the verifier to completion. Claim boundary until fixed: the dependency file pins and premise quote gates reached before the crash are checked, but the K-even registration correction and registered-pattern normal-form theorem are not audit-closed.
+- **auditor confidence:** high
+
+### `acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04`
+
+- **Note:** [`ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded claim that the four axioms and the scale, kinetic-isotropy, and realized-state primitives do not themselves select count-once versus count-twice generation readout.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-acphilambda_measure_bina-087`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For any normalized two-sector coordinate p in (0,1), choosing d = pu/(1-p) realizes p, so Record additivity permits the competing readings but does not rank or select them.  _(class `A`)_
+- **chain closes:** False — The algebra and accepted-premise texts support the narrow non-supply result, but the note's live Tier-A-survivor framing is contradicted by the supplied registry, which reports zero live Tier-A targets and AC_phi_lambda retirement through owner governance. The primary runner fails on that same stale assumption.
+- **rationale:** The finite-coordinate calculation genuinely shows that Record additivity alone cannot select among the stated measures, and the accepted axiom and primitive authorities explicitly withhold the required selector. However, the source also treats the AC_phi_lambda binary as a current live Tier-A survivor, while its cited registry says that AC_phi_lambda has been retired through an owner-governed premise. The runner consequently raises a KeyError before testing most of its assertions, so the source must be narrowed or reconciled with the post-2026-07-05 registry state before a clean verdict.
 - **auditor confidence:** high
 
 ### `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11`

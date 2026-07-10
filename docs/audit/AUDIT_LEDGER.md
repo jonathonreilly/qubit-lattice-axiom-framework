@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 947 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 29 |
-| unaudited | 1719 |
+| unaudited | 1718 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 36 |
-| ~~audited_conditional~~ | 142 |
+| ~~audited_conditional~~ | 143 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -72,12 +72,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1370 |
-| `audited_conditional` | 142 |
+| `audited_conditional` | 143 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 36 |
-| `unaudited` | 2066 |
+| `unaudited` | 2065 |
 
 | claim_type | count |
 |---|---:|
@@ -1587,6 +1587,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `native_carrier_registration_kernel_rate_vs_unit_variance_point_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -14553,6 +14554,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the gamma anticommutator, (-i a D_naive(k))^2 = (sum_mu sin^2(k_mu a)) I, so D_naive(k)=0 iff every sin(k_mu a)=0.  _(class `A`)_
 - **chain closes:** True — The conclusion follows by algebra from the explicitly defined operator and Clifford anticommutation relation, plus the elementary zeros of sine on the stated Brillouin-zone domain. No project-specific bridge or regulator-independent claim is used.
 - **rationale:** The load-bearing step is a genuine algebraic identity check on the operator defined in the note, not a renaming, tuned numerical match, or external comparator. The runner source performs symbolic corner checks, finite d count checks, the d=4 arithmetic, and boundary-context checks; it does not merely print constants for the contested zero-locus result. The Wilson, staggered, and regulator-count rows are contextual safeguards rather than load-bearing inputs.
+- **auditor confidence:** high
+
+### `native_carrier_registration_kernel_rate_vs_unit_variance_point_theorem_note_2026-07-02`
+
+- **Note:** [`NATIVE_CARRIER_REGISTRATION_KERNEL_RATE_VS_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md`](../../docs/NATIVE_CARRIER_REGISTRATION_KERNEL_RATE_VS_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The parameter-free four-sector native-carrier kernel, its readout-floor and registration-increment moments, and the resulting bounded refutation of unit variance within the stated holonomy-family reading.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00010-native_carrier_registration_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Integrating the derived kernel T_V=(|chi_3|^2+1)/2 on the minimal-norm zero-sum logarithm branch gives m^2(T_V)=2.440631, hence tau_native=1.220315426 rather than 1/2.  _(class `C`)_
+- **chain closes:** False — The runner closes the numerical calculation conditional on the chosen kernel and logarithm readout. The restricted authorities do not derive the bridge from the explicit two-label controlled-copy model to four native central-sector record alternatives and the associated holonomy-family transition density, nor do they select the minimal-norm branch as the record-licensed readout.
+- **rationale:** The runner genuinely constructs the finite carrier, projectors, characters, Weyl measure, and logarithmic moments; the hard-coded anchors are redundant regression gates rather than inputs to the calculation. The cited controlled-copy authority establishes projector Kraus blocks only in its explicit two-outcome finite model and expressly does not establish arbitrary record dynamics. Moreover, the rigidity authority guarantees zero-sum logarithm representatives but disclaims selection of a unique branch, while the source reconciliation leaves the readout-license consequences unresolved. Thus the mathematics is strong conditional computation, but the claimed record-step rate is not closed by the restricted packet.
+- **open / conditional deps cited:**
+  - `G_BARE_RIGIDITY_THEOREM_NOTE.md`
+  - `RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md`
 - **auditor confidence:** high
 
 ### `native_gauge_closure_note`

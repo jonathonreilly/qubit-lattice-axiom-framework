@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 939 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1796 |
+| unaudited | 1795 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 90 |
+| ~~audited_conditional~~ | 91 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1349 |
-| `audited_conditional` | 90 |
+| `audited_conditional` | 91 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2141 |
+| `unaudited` | 2140 |
 
 | claim_type | count |
 |---|---:|
@@ -1504,6 +1504,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_k_even_registration_correction_registered_pattern_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -2227,6 +2228,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** From the definitions alpha_LM := alpha_bare/u_0 and alpha_s(v) := alpha_bare/u_0^2, the stated identities follow by direct algebra over positive reals.  _(class `A`)_
 - **chain closes:** True — The conclusions are algebraic consequences of the two displayed definitions with positivity supplying division, square-root uniqueness, and logarithm domains. No cited authority or hidden numerical input is needed for the audited abstract scope.
 - **rationale:** Independent symbolic checking confirms T1-T6: the vertex-power identities, geometric-mean/log form, constant-ratio chain, u_0=1 boundary, unique positive inverse, and P^(1/4) substitution all reduce to zero residuals under the stated positivity assumptions. The runner source performs genuine symbolic and numerical algebra checks rather than hard-coding a contested physical value, and its documentary scope guards do not enter the load-bearing proof. The verdict is clean only for the narrow abstract algebraic theorem, not for any parent alpha_s(M_Z), plaquette, Wilson-action, or bare-normalization claim.
+- **auditor confidence:** high
+
+### `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18`
+
+- **Note:** [`ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md`](../../docs/ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact SU(3) substitution, active-flavor evaluation, and coupling-convention normalization conditional on the supplied universal beta_0 and beta_1 coefficient templates.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00017-alpha_s_universal_two_loop_b`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Conditional on the supplied beta_0 and beta_1 templates, substituting C_F = 4/3, C_A = 3, and T_F = 1/2 gives beta_0(n_f) = 11 - 2n_f/3 and beta_1(n_f) = 102 - 38n_f/3, with the stated coupling-convention conversions.  _(class `A`)_
+- **chain closes:** False — The algebraic substitution and convention conversion close exactly, but the load-bearing beta_0 and beta_1 templates are imported without a cited retained derivation or an explicitly flagged accepted premise.
+- **rationale:** The runner genuinely performs exact rational substitutions, active-flavor evaluations, structural checks, and coupling-convention conversions rather than merely printing the expected values. Those calculations support the note's bounded conditional conclusions. However, the universal beta_0 and beta_1 coefficient templates are the indispensable input and are neither derived from an axiom nor supplied through a retained or explicitly accepted-premise authority in this packet.
 - **auditor confidence:** high
 
 ### `alt_connectivity_family_basin_note`

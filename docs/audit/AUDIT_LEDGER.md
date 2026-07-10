@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 211 |
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 9 |
-| open_gate | 24 |
-| unaudited | 1761 |
+| open_gate | 25 |
+| unaudited | 1760 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1354 |
+| `audited_clean` | 1355 |
 | `audited_conditional` | 113 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 32 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2106 |
+| `unaudited` | 2105 |
 
 | claim_type | count |
 |---|---:|
@@ -518,6 +518,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_idempotent_u1_collapses_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_interacting_matter_build_note_2026-05-30` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -7634,6 +7635,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Schur-complement induced hw=1 off-diagonal generation hopping cancels exactly for the specified staggered single-bit-flip operator, leaving b=0 while the diagonal term is nonzero, hence r=|b|^2/a^2=0.  _(class `C`)_
 - **chain closes:** True — The packet supplies the operator, sector, runner output, and runner source; the source explicitly constructs the matrices and computes the direct block and Schur complement rather than importing or printing the contested result. An independent sign-path check agrees: each hw=1 off-diagonal coupling has paired second-order paths through vacuum and a double-excitation state with opposite staggered signs, so the induced hopping cancels for this operator.
 - **rationale:** The load-bearing step is a finite first-principles computation from the displayed one-qubit operator algebra and the specified hw=1 projection. No upstream authorities, empirical comparators, fitted values, or open bridges are used. The no-go is narrow: it closes only this staggered single-bit-flip projection route and explicitly leaves other action, bivector, dynamical, and sector-factorized routes open.
+- **auditor confidence:** high
+
+### `flavor_hw_clifford_does_not_constrain_r_2026-06-02`
+
+- **Note:** [`FLAVOR_HW_CLIFFORD_DOES_NOT_CONSTRAIN_R_2026-06-02.md`](../../docs/FLAVOR_HW_CLIFFORD_DOES_NOT_CONSTRAIN_R_2026-06-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** For the explicitly defined qutrit pure-shift and clock-shift operator families, Fourier conjugation does not select r=1/2: H is not fixed there, while the F-fixed K and G families retain a free on-site-to-hopping ratio.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00057-flavor_hw_clifford_does_not_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The genuine Fourier-self-dual family K = aI + g(X + Z + X² + Z²) is F-fixed for arbitrary g, so r = g² remains free and r = 1/2 is unmarked.  _(class `A`)_
+- **chain closes:** True — Direct matrix-conjugation identities establish that Fourier invariance swaps the shift and clock components, leaving a continuous self-dual family and imposing only b=c in G while a remains free. Thus the narrowly scoped tested Fourier/HW equations contain no equation selecting r=1/2.
+- **rationale:** The load-bearing conclusion is a genuine algebraic closure from the explicitly instantiated qutrit Weyl and Fourier matrices, not a definition, imported numerical value, or tuned match. Linearity of the displayed operators makes the free-parameter conclusion exact despite the runner evaluating representative nonzero parameter values. The retained-bounded occupancy authority is downstream boundary context and is not needed for the core Fourier non-selection result.
 - **auditor confidence:** high
 
 ### `flavor_idempotent_u1_collapses_note_2026-05-30`

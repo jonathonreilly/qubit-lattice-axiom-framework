@@ -73,12 +73,12 @@
     "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "meta": 345,
-    "open_gate": 24,
+    "open_gate": 25,
     "retained": 195,
     "retained_bounded": 943,
     "retained_no_go": 211,
     "retained_pending_chain": 9,
-    "unaudited": 1761
+    "unaudited": 1760
   },
   "retained_pending_chain_count": 9,
   "retained_pending_chain_examples": [

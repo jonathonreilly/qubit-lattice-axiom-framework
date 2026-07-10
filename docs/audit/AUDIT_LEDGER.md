@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 195 |
 | **retained_no_go** | 212 |
 | **retained_bounded** | 948 |
-| _retained_pending_chain_ | 11 |
+| _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1724 |
+| unaudited | 1723 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -73,16 +73,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1364 |
 | `audited_conditional` | 128 |
-| `audited_decoration` | 67 |
+| `audited_decoration` | 68 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2069 |
+| `unaudited` | 2068 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2025 |
-| `decoration` | 69 |
+| `bounded_theorem` | 2024 |
+| `decoration` | 70 |
 | `meta` | 354 |
 | `no_go` | 482 |
 | `open_gate` | 183 |
@@ -95,7 +95,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 954 |
 | `leaf` | 1628 |
 
-- **Retained pending chain closure:** 11
+- **Retained pending chain closure:** 12
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -1698,6 +1698,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08` | decoration | ~~audited_decoration~~ | `decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | cross_family | codex-gpt-5.5 | A | `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` |
 | `realized_kinetic_branch_d4_pattern_dichotomy_narrow_theorem_note_2026-07-03` | decoration | ~~audited_decoration~~ | `decoration_under_realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02` | cross_family | codex-gpt-5.6 | A | `realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02` |
 | `realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02` | decoration | ~~audited_decoration~~ | `decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | cross_family | codex-gpt-5.6 | A | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` |
+| `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | `minimal_axioms` |
 | `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -18080,6 +18081,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Since h[U] is anti-Hermitian, it is unitarily diagonalizable with eigenvalues i lambda_j, so T_odd T_even splits into 2x2 Hermitian blocks with determinant 1, trace 2+4(m^2+lambda_j^2), and eigenvalues exp(±2 asinh(sqrt(m^2+lambda_j^2))); the relabeling part is unitary conjugation invariance of determinant, spectrum, and trace.  _(class `A`)_
 - **chain closes:** True — The finite linear-algebra chain closes: independent checking gives h^dag=-h, the displayed T2(lambda) block has the stated signs, determinant, trace, and positive eigenvalues, and second quantization of positive contraction eigenvalues gives a positive many-body transfer. The relabeling result follows exactly from similarity invariance under permutation unitaries.
 - **rationale:** The runner source performs actual finite matrix construction and numerical checks rather than printing constants, and its PASS=7 output matches the stated surfaces. The clean verdict does not rest on the random samples alone: the modal anti-Hermitian-hop reduction independently supplies the arbitrary fixed-background finite proof within the note's stated scope. The source also explicitly excludes the full dynamical-gauge RP bridge and downstream P2/AC_phi_lambda conclusions, so those open items are not part of the audited theorem.
+- **auditor confidence:** high
+
+### `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20`
+
+- **Note:** [`RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md`](../../docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md)
+- **claim_type:** `decoration`
+- **claim_scope:** The finite-dimensional Gibbs density theorem relative to tau_Lambda on A_Lambda; no rho_ref identification or Wilson/RP carrier bridge was audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** _retained_pending_chain_  (reason: `decoration_waiting_on:minimal_axioms`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00094-rp_rho_ref_radon_nikodym_com`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For self-adjoint H, functional calculus makes e^{-H} positive, so D_H = e^{-H}/tau_Lambda(e^{-H}) is positive, normalized, and represents omega_H relative to the faithful normalized trace.  _(class `A`)_
+- **chain closes:** True — The finite matrix algebra supplied by the accepted Qubit premise, together with standard functional calculus and trace identities, suffices to prove positivity, normalization, and the density representation. The downstream rho_ref and Wilson/RP identifications are explicitly excluded.
+- **rationale:** The proof is a correct algebraic application of standard finite-dimensional matrix facts to the single cited axiom authority. The runner performs genuine randomized matrix checks consistent with the analytic proof, but it does not establish a new first-principles numerical result. With no external-comparator checks and no additional independent retained theorem inputs, the row is decoration-grade.
+- **decoration parent:** `minimal_axioms`
 - **auditor confidence:** high
 
 ### `rstar_dtotality_axiom_text_instances_bounded_note_2026-07-02`

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 947 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 29 |
-| unaudited | 1721 |
+| unaudited | 1720 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 36 |
 | ~~audited_conditional~~ | 141 |
-| ~~audited_failed~~ | 15 |
+| ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -74,10 +74,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1370 |
 | `audited_conditional` | 141 |
 | `audited_decoration` | 70 |
-| `audited_failed` | 37 |
+| `audited_failed` | 38 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 36 |
-| `unaudited` | 2068 |
+| `unaudited` | 2067 |
 
 | claim_type | count |
 |---|---:|
@@ -1735,6 +1735,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
+| `gauge_link_per_record_step_rate_dial_unit_variance_point_theorem_note_2026-07-02` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -8937,6 +8938,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Because the positive Lueders coefficients are nonnegative, expanding each modulus square reduces the kernel to character products whose irreducible decompositions have nonnegative Kronecker multiplicities.  _(class `A`)_
 - **chain closes:** True — Character orthogonality proves normalization, while the central projector form proves convolutional Ad-invariance and inversion symmetry; representation-ring decomposition proves coefficient positivity. The conclusion remains explicitly restricted to supplied positive Lueders channels and position-classical inputs.
 - **rationale:** The load-bearing result is genuine algebraic closure rather than a definition, renaming, tuned match, or imported comparator. The runner independently constructs the finite-group projectors and kernels, checks the counterexamples exactly, and computes the SU(3) quantities from the stated truncation; its stored numerical references serve only as regression gates. All cited authorities are retained-grade, and the note expressly excludes record-step occurrence, position-classicality derivation, rate selection, heat-kernel closure, and continuum claims.
+- **auditor confidence:** high
+
+### `gauge_link_per_record_step_rate_dial_unit_variance_point_theorem_note_2026-07-02`
+
+- **Note:** [`GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md`](../../docs/GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Rate additivity, finite tested cross-kernel convergence, rate-blindness at three sampled rates, the Wilson kernel's asymptotic rate and variance laws, and the claimed exact unit-variance/beta=6 correspondence.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00008-gauge_link_per_record_step_r`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** R3 asserts the exact implication tau = 1/2 if and only if beta = N_c/tau = 6 via R0.  _(class `A`)_
+- **chain closes:** False — R0 establishes only tau_eff(beta) = (N_c/beta)(1 + O(1/beta)), while R3 treats tau = N_c/beta as an exact finite-beta identity. The runner implements that step by defining beta_of(tau) = N_c/tau rather than deriving it from the computed Wilson effective rate; it also tests only two kernels and selected representations, so it does not establish the universal complete-invariant claim.
+- **rationale:** The numerical construction supports an asymptotic Wilson rate and shrinking deviations for the sampled kernels, but it does not support the note's exact beta=6 equivalence. Indeed, the reported finite-beta corrections contradict using tau_eff = N_c/beta exactly. The finite cross-kernel experiment also cannot prove that rate is the complete surviving invariant for every kernel in the stated class, especially without the prose-named conditional heat-kernel classification authority.
+- **open / conditional deps cited:**
+  - `EMERGENT_GAUGE_HEAT_KERNEL_CLT_ATTRACTOR_CONDITIONAL_ON_BI_INVARIANT_DYNAMICS_NARROW_THEOREM_NOTE_2026-06-08.md`
+  - `AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02`

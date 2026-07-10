@@ -33,8 +33,8 @@
   ],
   "cycles_detected": 10,
   "effective_status_counts": {
-    "audit_in_progress": 10,
-    "audited_conditional": 135,
+    "audit_in_progress": 9,
+    "audited_conditional": 136,
     "audited_failed": 14,
     "audited_numerical_match": 9,
     "audited_renaming": 35,

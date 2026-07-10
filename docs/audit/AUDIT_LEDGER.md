@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 951 |
+| **retained_bounded** | 952 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1712 |
+| unaudited | 1711 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1368 |
+| `audited_clean` | 1369 |
 | `audited_conditional` | 133 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2057 |
+| `unaudited` | 2056 |
 
 | claim_type | count |
 |---|---:|
@@ -1387,6 +1387,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `theta_sector_level_loop_insertions_closed_surface_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
+| `theta_transpose_sheet_uniqueness_fiber_evidence_bounded_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `third_grown_family_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `third_grown_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `third_grown_family_complex_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -21493,6 +21494,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Multiplying the heat-kernel character sum by the Weyl denominator turns each character into its signed Weyl-orbit alternant, yielding signed dimension-polynomial Gaussian coefficients on regular rho-shifted weights.  _(class `A`)_
 - **chain closes:** False — The runner genuinely evaluates the stated finite Fourier, Weyl, Poisson, gluing, and quadrature checks. It does not establish the note's unrestricted SU(N) formulation or the inference that excluding constant label translations forces theta to enter through the uncited cross-plane pairing.
 - **rationale:** Issue: the finite SU(2)/SU(3) evidence is extended to all SU(N), and a constant-translation obstruction is promoted to a required cross-plane theta placement. Why this blocks: the zero fixed subspace excludes Weyl-commuting constant Cartan translations, but it neither proves the general-N statement presented nor exhausts other theta mechanisms; the asserted block-3 pairing authority is absent from the restricted dependency packet. Repair target: narrow the theorem to the computed groups and constant-shift class, or supply a general-N proof and a retained direct dependency establishing the cross-plane conclusion. Claim boundary until fixed: the finite heat-kernel alternant identities, stated gluing algebra, tested Wilson witness, and SU(2)/SU(3) constant-shift obstruction remain supported.
+- **auditor confidence:** high
+
+### `theta_transpose_sheet_uniqueness_fiber_evidence_bounded_note_2026-07-02`
+
+- **Note:** [`THETA_TRANSPOSE_SHEET_UNIQUENESS_FIBER_EVIDENCE_BOUNDED_NOTE_2026-07-02.md`](../../docs/THETA_TRANSPOSE_SHEET_UNIQUENESS_FIBER_EVIDENCE_BOUNDED_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Deterministic bounded computational evidence for two sampled fixed-(A,B) fibers, numerical local rigidity at one generic triple and its transpose, and singlet multiplicities at three specified low multidegrees; no global sheet-uniqueness theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00106-theta_transpose_sheet_unique`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The runner finds no differing flip-odd invariant among 38 converged fixed-(A,B) fiber solutions, computes full-rank numerical Jacobians on both sheets, and obtains singlet dimensions 1, 2, and 2 at the stated multidegrees.  _(class `C`)_
+- **chain closes:** True — The supplied runner directly performs the optimization, finite-difference Jacobian calculations, and joint-kernel computations that support the note's bounded claims. Its results do not establish the explicitly excluded global fiber theorem.
+- **rationale:** The source computes rather than merely prints the reported search outcomes, singular values, and representation-theoretic nullities, with no imported fitted value or contested cross-note premise. The search is local and sample-limited, and the Jacobians are numerical, but the note repeatedly preserves those limitations and does not claim uniqueness. The stated bounded evidence therefore follows on its own terms.
 - **auditor confidence:** high
 
 ### `third_grown_family_boundary_note`

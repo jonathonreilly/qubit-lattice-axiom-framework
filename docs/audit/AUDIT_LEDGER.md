@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 944 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1732 |
+| unaudited | 1731 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 130 |
+| ~~audited_conditional~~ | 131 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1360 |
-| `audited_conditional` | 130 |
+| `audited_conditional` | 131 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 35 |
-| `unaudited` | 2079 |
+| `unaudited` | 2078 |
 
 | claim_type | count |
 |---|---:|
@@ -133,7 +133,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 19 | `kinetic_isotropy_primitive` | meta | critical | 468 | 35.37 | `unaudited` | meta |
 | 20 | `three_generation_structure_note` | bounded_theorem | critical | 1011 | 34.98 | `audited_clean` | **retained_bounded** |
 | 21 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 296 | 34.71 | `unaudited` | unaudited |
-| 22 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 589 | 34.20 | `unaudited` | unaudited |
+| 22 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 589 | 34.20 | `audited_conditional` | ~~audited_conditional~~ |
 | 23 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 434 | 33.77 | `audited_clean` | **retained** |
 | 24 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1473 | 33.53 | `audited_clean` | **retained_bounded** |
 | 25 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 834 | 32.71 | `unaudited` | unaudited |
@@ -1538,6 +1538,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -2974,6 +2975,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On each positive eigenvalue subspace, D maps the epsilon=+1 part bijectively to the epsilon=-1 part, so the nonzero modes cancel and Tr(epsilon exp(-t D†D)) equals the zero-mode chirality count.  _(class `A`)_
 - **chain closes:** True — Even periodic nearest-neighbor hopping gives exact anticommutation with epsilon, while anti-Hermiticity makes D†D commute with epsilon and enables the nonzero-mode pairing argument. Gauge invariance and the background invariants then follow from finite matrix conjugation and direct link/plaquette calculations.
 - **rationale:** The load-bearing result is a genuine finite-dimensional algebraic closure, and the supplied runner constructs the staggered operators and evaluates all asserted residuals rather than merely printing expected outcomes. All 58 checks are algebraic or spectral checks of the stated bounded identities, with no external comparator, tuned physical input, or open identification. The claim remains properly narrowed away from any continuum anomaly, nonzero-index existence, or Wess-Zumino cohomology conclusion.
+- **auditor confidence:** high
+
+### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-lattice, two-step-blocked staggered-fermion reflection positivity with positive mass and SU(3) Wilson gauge links, restricted to the stated factorized A_+^(2) observable surface.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00019-axiom_first_reflection_posit`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The reflected gauge–fermion form is asserted to decompose into an integral of four non-negative factors, so polarization over factorized generators yields a positive-semidefinite Gram form.  _(class `A`)_
+- **chain closes:** False — The authorities separately establish fixed-background fermion transfer positivity, determinant positivity, and the integrated pure-gauge SU(3) Gram. They do not derive the displayed factorization of the coupled Berezin-integrated gauge–fermion form on non-time-symmetric gauge configurations; separately integrated PSD and pointwise positive factors do not imply that joint form is PSD.
+- **rationale:** All cited authorities have retained-grade effective status, and the runner genuinely checks the free two-step construction and the SU(3) pure-gauge plane/composed Gram rather than merely printing expected values. However, it tests those sectors separately and contains no coupled staggered-fermion/SU(3) Berezin Gram computation or derivation. The parent’s load-bearing four-factor equality therefore remains an unsupported bridge, especially because pure-gauge kernel positivity arises after a cross-configuration Gram factorization rather than as the asserted pointwise norm-square factor.
 - **auditor confidence:** high
 
 ### `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05`

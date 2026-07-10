@@ -311,12 +311,12 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "claim_scope": null,
+      "claim_scope": "Finite-lattice, two-step-blocked staggered-fermion reflection positivity with positive mass and SU(3) Wilson gauge links, restricted to the stated factorized A_+^(2) observable surface.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
@@ -331,7 +331,7 @@
         "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02"
       ],
       "direct_in_degree": 50,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [
         "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py",
         "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
@@ -339,7 +339,7 @@
       ],
       "load_bearing_score": 34.205,
       "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py",
       "transitive_descendants": 589

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 936 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1816 |
+| unaudited | 1815 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 81 |
+| ~~audited_conditional~~ | 82 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1345 |
-| `audited_conditional` | 81 |
+| `audited_conditional` | 82 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2161 |
+| `unaudited` | 2160 |
 
 | claim_type | count |
 |---|---:|
@@ -1563,6 +1563,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
+| `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_gauge_winding_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -19091,6 +19092,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substitute the assumed input g_2^2|_lattice = 1/4 into alpha = g^2/(4 pi) to get alpha_2|_lattice = 1/(16 pi), and substitute N = 2 and g_2^2|_lattice = 1/4 into beta_W = 2N/g_bare^2 to get beta_W|_lattice = 16.  _(class `A`)_
 - **chain closes:** True — The scoped theorem closes as exact algebra over the four named inputs. It does not derive the coupling input or the two textbook conventions, but the note correctly scopes those as assumptions/admissions rather than derived content.
 - **rationale:** The load-bearing step is a genuine class-A algebraic substitution, not a definition, renaming, external comparator, or tuned numerical match. The cited one-hop authorities are retained-grade for the scoped use: the coupling row supplies the formal assumed input g_2^2 = 1/(d+1), and the native gauge closure supplies SU(2) structure/dimension once SU(2)_L is fixed. Independent arithmetic confirms alpha_2 = (1/4)/(4 pi) = 1/(16 pi), its reciprocal is 16 pi, and beta_W = 2*2/(1/4) = 16.
+- **auditor confidence:** high
+
+### `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The conditional algebraic closed form for the SU(2)_L one-loop coefficient, its value 19/6 at counts (2,3,3), the sector decomposition, and corollaries C1–C4, given the named count inputs and stated X4′ coefficient kernel.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-su2_weak_beta_coefficien-094`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting N_W=(N_color+1)N_gen, T(F)=1/2, C_2(adj)=N_pair, and n_S=2 into the stated X4′ kernel yields b_2=(11/3)N_pair-(1/3)(N_color+1)N_gen-1/6.  _(class `A`)_
+- **chain closes:** False — The exact substitution closes once X4′ is assumed, but the restricted packet neither derives nor supplies a retained-grade authority for the load-bearing spin-sector coefficients 11/3, -2/3, and -1/6.
+- **rationale:** The runner genuinely verifies the SU(2) trace factors and all downstream rational algebra, with 20 successful class-A checks. However, it explicitly hard-codes the X4′ spin-sector coefficient table and labels it a boundary rather than deriving it. Restating that QFT kernel inside the note does not close the imported premise under the audit rubric, so the result remains conditional despite the correct arithmetic.
 - **auditor confidence:** high
 
 ### `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py
-runner_sha256: 4b0f9874082efcb86374fc7f1a04a6ace6fe49965c02f96840f5693b59a10487
+runner_sha256: 0513cf70d73ff26ac608cc487264030bef589dd4e9ea8c96bd9abd76def3a29b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.04
+elapsed_sec: 0.89
 status: ok
 ----- stdout -----
 AC_phi_lambda occupancy formation-append non-supply verifier
@@ -13,6 +13,7 @@ A. source presence, metadata, and no-overclaim firewall
 ================================================================================================
 [PASS] exists: docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/owner_governed_premise_nodes.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
@@ -28,17 +29,18 @@ A. source presence, metadata, and no-overclaim firewall
 [PASS] note has Claim type no_go
 [PASS] note has audit boundary
 [PASS] runner link is wired
-[PASS] scope boundary present: does not derive, refute, re-grade, retire, or remove AC_phi_lamb
+[PASS] scope boundary present: does not derive, refute, re-grade, or remove the historical AC_p
 [PASS] scope boundary present: does not edit any Tier-A registry
 [PASS] scope boundary present: No axiom, primitive, registry, audit verdict, or publication-sta
 [PASS] scope boundary present: future occupancy-dictionary or matter-action theorems
-[PASS] banned overclaim absent: AC_phi_lambda(i) is retired
-[PASS] banned overclaim absent: AC_phi_lambda is retired
+[PASS] banned overclaim absent: the formation append retired AC_phi_lambda(i)
+[PASS] banned overclaim absent: Records form retired AC_phi_lambda
 [PASS] banned overclaim absent: R-eta is retired
 [PASS] banned overclaim absent: theta is retired
 [PASS] banned overclaim absent: we remove AC_phi_lambda
 [PASS] banned overclaim absent: new occupancy primitive is approved
 [PASS] banned overclaim absent: Record formation selects the occupancy dictionary
+[PASS] banned overclaim absent: owner governance derived the occupancy dictionary
 
 ================================================================================================
 B. Tier-A registry state on current main
@@ -46,6 +48,10 @@ B. Tier-A registry state on current main
 [PASS] Tier-A live derivation targets are empty after the 2026-07-05 retirements
 [PASS] AC entry preserved intact under retired_derivation_targets
 [PASS] AC retirement mechanism is owner governance, not the formation append
+[PASS] owner-governed registry carries the retired AC premise node
+[PASS] owner-governed registry adopts the exact AC occupancy and R-eta residual candidates
+[PASS] owner-governed boundary names the exact AC(i) occupancy and AC(ii) R-eta supply
+[PASS] owner-governed boundary supplies no r value or sector-weight law
 [PASS] AC minimum decomposition contains occupancy binary
 [PASS] AC minimum decomposition keeps R-eta separate
 [PASS] AC minimum decomposition keeps species bridge separate
@@ -139,13 +145,13 @@ F. finite model separation for the occupancy dictionary
 G. note theorem and no-go discipline
 ================================================================================================
 [PASS] note contains synthesis phrase: The implication is invalid.
-[PASS] note contains synthesis phrase: The July 4 formation append does not retire AC_phi_lambda(i).
+[PASS] note contains synthesis phrase: The July 4 formation append did not itself derive or retire AC_p
 [PASS] note contains synthesis phrase: It supplies:
 [PASS] note contains synthesis phrase: It does not supply:
 [PASS] note contains synthesis phrase: the outcome-to-component dictionary
 [PASS] note contains synthesis phrase: Formation-rule theorem
 [PASS] note contains synthesis phrase: Matter-action theorem
-[PASS] note contains synthesis phrase: Owner governance route
+[PASS] note contains synthesis phrase: Owner-governance retirement path already taken
 [PASS] N1 gate present
 [PASS] N2 gate present
 [PASS] N3 gate present
@@ -154,14 +160,16 @@ G. note theorem and no-go discipline
 [PASS] N6 gate present
 [PASS] N7 gate present
 [PASS] N8 gate present
+[PASS] N1 records at least five attempted routes
+[PASS] N1 cites the current human registry for owner-governance supply
 [PASS] N2 separates occurrence from dictionary
-[PASS] N4 matches registry on current main
+[PASS] N4 matches retired registry and owner-governed current posture
 [PASS] steelman preserves occurrence support
 
 ================================================================================================
 TOTAL
 ================================================================================================
-TOTAL: PASS=122 FAIL=0 CHECKS=122
+TOTAL: PASS=130 FAIL=0 CHECKS=130
 
 ----- stderr -----
 

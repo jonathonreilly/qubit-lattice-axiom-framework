@@ -157,15 +157,26 @@ def main() -> int:
 
     print("Review-note conclusion checks")
     check("review note states no primitive is presently retireable", "No primitive is presently retireable" in note)
+    check("review note uses canonical meta claim type", "**Claim type:** meta" in note and "**Type:** meta" in note)
     check("review note keeps scale primitive", "`scale_reference_primitive` | keep" in note)
     check("review note keeps kinetic primitive but marks it targetable", "`kinetic_isotropy_primitive` | keep, but targetable" in note)
     check("review note keeps realized-state primitive", "`realized_state_primitive` | keep" in note)
     check("review note forbids registry edit from this review", "No registry edit is warranted" in note)
     check("review note records kinetic bridge stack needed for retirement", "the B-W/OS0 readout rule" in note and "single-tick kernel" in note)
-    check("review note records hygiene debt separately", "hygiene issues, not retirement evidence" in note)
+    check(
+        "review note records completed hygiene repairs without science reclassification",
+        "Hygiene Repairs Verified On 2026-07-10" in note
+        and "completed hygiene repairs are not retirement evidence" in note,
+    )
     check("review note has current-main posture line", "Current-main posture (2026-07-06)" in note)
     check("review note records live Tier-A zero posture", "Tier-A count\nzero" in note or "Tier-A count zero" in note)
     check("review note says premise registries are not reopened", "`axiom_premise_nodes.json`" in note and "does not reopen, modify, or\nre-grade either Tier-A retirement record" in note)
+    for idx in range(1, 9):
+        check(f"review note carries N{idx} no-go-discipline section", f"**N{idx}" in note)
+    check("N1 records at least five attempted routes", note.count("`ATTEMPTED`") >= 5)
+    check("N2 records the collapsed pairwise independence table", "closing first closes second?" in note and "dimensionful scale / kinetic-form ratio" in note)
+    check("N3 classifies registered and supplied phrase hits", "cited machine-registry authority" in note and "cited primitive-source boundary" in note)
+    check("N4 distinguishes exact, support-only, and partial residual matches", "support-only witness" in note and "route map only, not a witness" in note)
     print()
 
     print("Hygiene diagnostic checks")

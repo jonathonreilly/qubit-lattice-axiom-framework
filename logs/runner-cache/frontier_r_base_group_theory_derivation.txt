@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_r_base_group_theory_derivation.py
-runner_sha256: d48763cad77aa606898849acc46e13cd52bc69282bc9e24d3cb1407c9eea3fc5
+runner_sha256: b025e079e924d44009571963670e184b8ed0c313f32b7adf83645233140c37a9
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -31,8 +31,18 @@ Exact arithmetic; no cosmology observation is used in the identity.
 [PASS] Sommerfeld factor is not included in this exact identity (full R is bounded elsewhere)
 [PASS] 3/5 remains an admitted normalization input here (not derived by this runner)
 [PASS] no observed cosmology value enters the exact arithmetic (Fraction arithmetic only)
+[PASS] registered-premise arithmetic: Tr(Y^2) = 10/3 (10/3)
+[PASS] registered-premise arithmetic: Tr(T_3^2) = 2 (2)
+[PASS] registered-premise arithmetic: 2/(10/3) = 3/5 (3/5)
+[PASS] registered-premise composition: (3/5)*(155/27) = 31/9 (31/9)
+[PASS] r_base note contains the bridge filename
+[PASS] r_base note names explicit accepted-premise registration
+[PASS] r_base note removes stale hypercharge-lane admission text
+[PASS] accepted-premise bridge note exists (/Users/jonBridger/Toy Physics/.claude/worktrees/science-issues-audit-90e897/docs/HYPERCHARGE_GUT_NORMALIZATION_THREE_FIFTHS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-07-10.md)
+[PASS] accepted-premise bridge contains (P1a)
+[PASS] accepted-premise bridge contains (P1b)
 
-TOTAL: PASS=22 FAIL=0
+TOTAL: PASS=32 FAIL=0
 
 ----- stderr -----
 

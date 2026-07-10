@@ -1,8 +1,8 @@
 {
   "by_criticality": {
     "critical": 425,
-    "high": 251,
-    "leaf": 747,
+    "high": 250,
+    "leaf": 748,
     "medium": 498
   },
   "cycle_break_target_count": 49,
@@ -13937,50 +13937,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_koide_reviewer_stress_test.py",
       "transitive_descendants": 48
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint_after_invalidation",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
-        "per_site_su2_spin_half_theorem_note_2026-05-02",
-        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
-        "three_generation_observable_theorem_note",
-        "three_generation_observable_count_corollary_note_2026-05-03",
-        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
-        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-        "koide_aps_block_by_block_forcing_note_2026-04-21",
-        "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02",
-        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
-        "tier_a_residual_owner_adoption_retirement_2026-07-04",
-        "admitted_input_registry_tier_a_note_2026-05-23",
-        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
-        "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 12,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.459,
-      "note_path": "docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/flavor_charged_lepton_value_full_chain_2026_06_02.py",
-      "transitive_descendants": 43
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -45070,6 +45026,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint_after_invalidation",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30",
+        "minimal_axioms",
+        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+        "emergent_lorentz_invariance_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "directional_b_geometry_normalized_overlap_subcritical_n12_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -58537,6 +58520,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 167,
+  "ready_count": 166,
   "total_pending": 1921
 }

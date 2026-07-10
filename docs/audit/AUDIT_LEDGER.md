@@ -280,6 +280,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_note_2026-04-18` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
+| `charged_lepton_koide_value_full_chain_of_custody_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `charged_lepton_op_local_source_selected_line_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `charged_lepton_radiative_tau_selector_firewall_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `charged_lepton_selected_line_generation_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
@@ -381,7 +382,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_field_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `dirac_observable_panel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_source_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_v4_convergence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3863,6 +3863,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner verifies phase-erasure of Q, conditional status of the source and endpoint support, cyclic relabeling of the largest slot, and comparator-only use of PDG masses. That is sufficient for the no-go that Q plus Brannen phase support is not a standalone generation/tau-scale selector. It does not audit or retain native Q closure or delta/radian closure.
 - **auditor confidence:** high
 
+### `charged_lepton_koide_value_full_chain_of_custody_2026-06-02`
+
+- **Note:** [`CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`](../../docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** On the supplied abstract C3 Hermitian-circulant carrier, Q_H=1/3+(2/3)r and Q_H=2/3 iff r=1/2; the current premise registries supply no physical r value, and no charged-lepton mass identification is claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00022-charged_lepton_koide_value_f`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Combining the exact abstract identity Q_H=1/3+(2/3)r with the registry boundary that supplies no value of r leaves the physical selection Q_H=2/3, equivalently r=1/2, open.  _(class `A`)_
+- **chain closes:** True — The scoped algebraic custody map and its open-selector conclusion follow from the retained-grade authorities and the explicit registry boundary. The chain deliberately stops before any physical charged-lepton assignment or selection of r.
+- **rationale:** The runner performs eight substantive algebraic or finite-matrix consistency checks and one direct registry verification; it contains no external comparator, fitted input, or hard-coded physical value claim. The cited bounded authorities are used only within their stated abstract or supplied-carrier scopes, while the owner-governed boundary explicitly excludes an r value. Thus the clean result is the custody map to an open selector, not a derivation of the physical charged-lepton Koide value.
+- **auditor confidence:** high
+
 ### `charged_lepton_op_local_source_selected_line_selector_no_go_note_2026-04-27`
 
 - **Note:** [`CHARGED_LEPTON_OP_LOCAL_SOURCE_SELECTED_LINE_SELECTOR_NO_GO_NOTE_2026-04-27.md`](../../docs/CHARGED_LEPTON_OP_LOCAL_SOURCE_SELECTED_LINE_SELECTOR_NO_GO_NOTE_2026-04-27.md)
@@ -5488,19 +5501,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the finite m0 = 0.10 scan grid, the Gaussian profile has 5/5 TOWARD offset biases with an offset-law fit alpha = 3.053 and R^2 = 0.8098, while all profiles fail N-monotonicity.  _(class `C`)_
 - **chain closes:** True — The runner source explicitly constructs the 4-component Dirac walk, mass-field kernels, density readout, N sweep, offset sweep, and power-law fit rather than printing hard-coded contested constants. The note's in-scope numerical statements match the completed runner output.
 - **rationale:** The narrowed binding claim is only the finite m0 = 0.10 runner-output statement, not nearby-mass robustness or physical-readout interpretation. Within that scope, the completed runner computes the quoted biases, TOWARD counts, monotonicity failures, and Gaussian offset-law fit from the implemented Dirac-walk dynamics. The source note's in-scope numbers agree with stdout, and no cited authority or missing helper source is needed for the finite computational claim.
-- **auditor confidence:** high
-
-### `dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07`
-
-- **Note:** [`DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md`](../../docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** The rapidity Gaussian cannot be a common analytic vector for K and H because it is non-analytic for H; spatial cubic symmetry yields one spatial quadratic coefficient, while a Euclidean temporal-lattice extension permits two unless additional time-space symmetry or normalization is supplied.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** open_gate  (reason: `audited_open_gate`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00005-dirac_lorentz_diagnostic_bou`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** The explicit lower bound on ||H^n psi||/n! grows superfactorially, so the rapidity Gaussian is not an analytic vector for H and cannot provide the rejected common-analytic-vector bridge.  _(class `A`)_
-- **chain closes:** True — The divergent analytic lower bound establishes the H obstruction independently of the finite-order quadrature, while explicit signed-permutation enumeration establishes the quadratic-invariant dimensions 1, 2, and 1. The cited structural inputs are retained-grade or an explicitly accepted axiom premise.
-- **rationale:** The central falsity result rests on an explicit analytic lower bound rather than extrapolation from sampled moments. The symmetry dimensions are obtained by direct finite-group construction, and the dispersion check algebraically reproduces the retained structural formula. The two remaining passing checks are scope declarations rather than independent scientific derivations, but no diagnostic conclusion relies on them.
 - **auditor confidence:** high
 
 ### `dirac_observable_panel_note`

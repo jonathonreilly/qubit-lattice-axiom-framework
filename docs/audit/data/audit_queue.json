@@ -3,7 +3,7 @@
     "critical": 393,
     "high": 265,
     "leaf": 755,
-    "medium": 511
+    "medium": 510
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -19984,37 +19984,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_atomic_hydrogen_helium_probe.py",
       "transitive_descendants": 19
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
-        "minimal_axioms",
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_atomic_hydrogen_lattice_companion.py",
-        "scripts/frontier_atomic_helium_hartree_companion.py",
-        "scripts/frontier_atomic_helium_jastrow_companion.py",
-        "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py"
-      ],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py",
-      "transitive_descendants": 17
     },
     {
       "audit_independence_required": "any_non_self",
@@ -57562,6 +57531,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 212,
-  "total_pending": 1924
+  "ready_count": 211,
+  "total_pending": 1923
 }

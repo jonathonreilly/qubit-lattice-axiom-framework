@@ -198,6 +198,18 @@ characters. The manifest is an allow-list, not evidence by itself:
 {{NO_GO_EVIDENCE_MANIFEST}}
 ```
 
+For N6, the orchestrator has supplied a partial-closure index built from all
+registered premise classes, the controlled vocabulary, every ledger-indexed
+meta note, the active review queue, and repository-visible physics-loop
+handoff/status surfaces. Its metadata declares every scanned path and the
+similarity thresholds and candidate limits. You must disposition every listed
+`candidate_id`; a free-text `none_found_reason` is not a substitute for this
+index.
+
+```json
+{{NO_GO_PARTIAL_CLOSURE_INDEX}}
+```
+
 For N8, the orchestrator has also supplied a cross-cycle search index. It is
 constructed from this row's audit history, one-hop authority audit history,
 Tier-A retirements, owner-governed retirements, similar `no_go` rows in the
@@ -417,6 +429,7 @@ Use `null` only when the gate is not required. Otherwise replace it with:
     ],
     "candidates": [
       {
+        "candidate_id": "<candidate_id from the orchestrator partial-closure index>",
         "kind": "<approved_primitive | owner_governed | tier_a | convention_reframe | definition_refactor>",
         "could_close_wall": false,
         "addressed": true,

@@ -65,6 +65,7 @@ def _no_go_packet(
         "insert the effective action candidate",
     ]
     cross_cycle_path = f"audit-packet://cross-cycle-index/{claim_id}"
+    partial_closure_path = f"audit-packet://partial-closure-index/{claim_id}"
     packet = {
         "required": True,
         "status": status,
@@ -132,8 +133,8 @@ def _no_go_packet(
             "candidates": [],
             "none_found_reason": "no registered partial-closure candidate applies",
             "unresolved": [],
-            "evidence_path": evidence_path,
-            "evidence_locator": evidence_locator,
+            "evidence_path": partial_closure_path,
+            "evidence_locator": "no_go_partial_closure_index_v1",
         },
         "N7_steelman": {
             "route_id": "route-0",
@@ -2476,6 +2477,17 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "effective_status": None,
                 "accepted_premise_type": None,
             },
+            "audit-packet://partial-closure-index/test_no_go": {
+                "path": "audit-packet://partial-closure-index/test_no_go",
+                "roles": ["partial_closure_index"],
+                "text": json.dumps({
+                    "schema": "no_go_partial_closure_index_v1",
+                    "claim_id": "test_no_go",
+                    "candidates": [],
+                }),
+                "effective_status": None,
+                "accepted_premise_type": None,
+            },
         }
 
     def test_source_and_output_triggers_are_conservative(self):
@@ -2512,6 +2524,12 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "The theorem leaves two residual walls.",
             "The attempted route does not close on the supplied carrier.",
             "A scoped obstruction rules out the alternate carrier.",
+            "A selector wall prevents closure.",
+            "A scalar U(1) action cannot select the reading.",
+            "No single tensor-factorization exists.",
+            "Bounded negative theorem: checked channels do not derive the Lorentzian sign.",
+            "An obstruction remains.",
+            "The theorem does not close the remaining obstruction.",
         ):
             with self.subTest(body=body):
                 self.assertTrue(
@@ -2536,6 +2554,11 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "The explicit admission that beta=6 is supplied remains open, but does not block the theorem.",
             "This is not a bounded wall claim; the exact construction closes.",
             "The arithmetic follows from one admitted input and makes no negative claim.",
+            "The theorem closes the remaining obstruction.",
+            "The construction removes the scoped obstruction.",
+            "All residual walls are discharged by the exact identity.",
+            "The remaining admission is explicitly supplied, so the theorem closes.",
+            "No obstruction remains after the exact construction.",
         ):
             with self.subTest(rationale=rationale):
                 self.assertFalse(
@@ -2575,6 +2598,15 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             second.parent.mkdir(parents=True, exist_ok=True)
             first.write_text("# No-Go Ledger\nselector obstruction retired\n", encoding="utf-8")
             second.write_text("# No-Go Ledger\ndynamics wall remains\n", encoding="utf-8")
+            tail_marker = "tail mechanism: alternate carrier remains blocked"
+            first.write_text(
+                "# No-Go Ledger\nselector obstruction retired\n"
+                + ("x" * 4500)
+                + "\n"
+                + tail_marker
+                + "\n",
+                encoding="utf-8",
+            )
 
             rendered = json.loads(
                 m.build_cross_cycle_index(
@@ -2608,6 +2640,65 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertTrue(
             all(candidate["content_sha256"] for candidate in loop_candidates)
         )
+        first_candidate = next(
+            candidate
+            for candidate in loop_candidates
+            if candidate["note_path"] == expected_paths[0]
+        )
+        self.assertIn(tail_marker, first_candidate["content"])
+        self.assertFalse(first_candidate["content_truncated"])
+
+    def test_partial_closure_index_scans_vocab_meta_and_in_flight_surfaces(self):
+        m = _import("no_go_discipline_gate")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for path, payload in (
+                (m.AXIOM_REGISTRY, {"canonical_ids": [], "nodes": {}}),
+                (m.OWNER_REGISTRY, {"canonical_ids": [], "nodes": {}}),
+                (m.TIER_A_REGISTRY, {"derivation_targets": {}, "conventions": {}}),
+            ):
+                target = root / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_text(json.dumps(payload), encoding="utf-8")
+            vocab = root / m.CONTROLLED_VOCABULARY
+            vocab.parent.mkdir(parents=True, exist_ok=True)
+            vocab.write_text(
+                "selector_obstruction: {definition: selector convention reframe}\n",
+                encoding="utf-8",
+            )
+            meta = root / "docs/SELECTOR_META.md"
+            meta.write_text(
+                "Selector obstruction can be retired by a labeling convention reframe.\n",
+                encoding="utf-8",
+            )
+            queue = root / m.ACTIVE_REVIEW_QUEUE
+            queue.write_text(
+                "Selector obstruction convention reframe is in flight.\n",
+                encoding="utf-8",
+            )
+            row = {
+                "claim_id": "selector_obstruction",
+                "claim_scope": "selector obstruction boundary",
+                "note_path": "docs/TARGET.md",
+            }
+            rendered = json.loads(
+                m.build_partial_closure_index(
+                    row,
+                    {
+                        "meta": {
+                            "claim_type": "meta",
+                            "note_path": "docs/SELECTOR_META.md",
+                        }
+                    },
+                    root,
+                )
+            )
+
+        candidate_ids = {candidate["candidate_id"] for candidate in rendered["candidates"]}
+        self.assertTrue(any(cid.startswith("controlled_vocabulary:") for cid in candidate_ids))
+        self.assertIn("meta_reframe:docs/SELECTOR_META.md", candidate_ids)
+        self.assertIn("in_flight_reframe:docs/repo/ACTIVE_REVIEW_QUEUE.md", candidate_ids)
+        self.assertEqual(rendered["search_scope"]["meta_notes"]["scanned_count"], 1)
 
     def test_pass_requires_five_distinct_routes(self):
         m = _import("no_go_discipline_gate")
@@ -2749,7 +2840,17 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
         )
         audit["no_go_discipline"] = _no_go_packet()
+        partial_index_path = "audit-packet://partial-closure-index/test_no_go"
+        manifest[partial_index_path]["text"] = json.dumps({
+            "schema": "no_go_partial_closure_index_v1",
+            "claim_id": "test_no_go",
+            "candidates": [{
+                "candidate_id": "tier_a:convention",
+                "kind": "tier_a",
+            }],
+        })
         audit["no_go_discipline"]["N6_partial_closure_scan"]["candidates"] = [{
+            "candidate_id": "tier_a:convention",
             "kind": "tier_a",
             "could_close_wall": False,
             "addressed": True,
@@ -2761,6 +2862,57 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "does not match manifest premise type",
             m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
         )
+
+    def test_n6_requires_orchestrator_index_and_complete_disposition(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        index_path = "audit-packet://partial-closure-index/test_no_go"
+        candidate_id = "convention_reframe:selector_label"
+        manifest[index_path]["text"] = json.dumps({
+            "schema": "no_go_partial_closure_index_v1",
+            "claim_id": "test_no_go",
+            "candidates": [{
+                "candidate_id": candidate_id,
+                "kind": "convention_reframe",
+                "content": "selector_label convention reframe candidate",
+            }],
+        })
+        audit = {
+            "claim_type": "no_go",
+            "verdict": "audited_clean",
+            "chain_closes": True,
+            "no_go_discipline": _no_go_packet(),
+        }
+        self.assertIn(
+            "must disposition every partial-closure candidate",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+        )
+        audit["no_go_discipline"]["N6_partial_closure_scan"]["candidates"] = [{
+            "candidate_id": candidate_id,
+            "kind": "convention_reframe",
+            "could_close_wall": False,
+            "addressed": True,
+            "disposition": "the indexed convention does not close this wall",
+            "evidence_path": index_path,
+            "evidence_locator": "selector_label convention reframe candidate",
+        }]
+        self.assertIsNone(
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest)
+        )
+
+    def test_n8_missing_evidence_path_returns_gate_error(self):
+        m = _import("no_go_discipline_gate")
+        audit = {
+            "claim_type": "no_go",
+            "verdict": "audited_clean",
+            "chain_closes": True,
+            "no_go_discipline": _no_go_packet(),
+        }
+        del audit["no_go_discipline"]["N8_cross_cycle_echo"]["evidence_path"]
+        error = m.validate_no_go_discipline(
+            audit, evidence_manifest=self._manifest()
+        )
+        self.assertIn("requires non-empty evidence_path", error or "")
 
     def test_n8_requires_orchestrator_index(self):
         m = _import("no_go_discipline_gate")
@@ -2946,6 +3098,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "note={{NOTE_BODY}}\n"
                 "manifest={{NO_GO_EVIDENCE_MANIFEST}}\n"
                 "premises={{FRAMEWORK_PREMISE_CONTEXT}}\n"
+                "partial={{NO_GO_PARTIAL_CLOSURE_INDEX}}\n"
                 "gate={{NO_GO_DISCIPLINE_REQUIRED}}\n"
                 "stdout={{RUNNER_STDOUT}}\nsource={{RUNNER_SOURCE}}\n"
                 "helpers={{HELPER_RUNNER_SOURCES}}"
@@ -2969,6 +3122,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             self.assertIn("accepted_premise_type: tier_a_derivation_target", prompt)
             self.assertIn("accepted_premise_type: tier_a_convention_not_accepted", prompt)
             self.assertIn("bounds_downstream: true", prompt)
+            self.assertIn("no_go_partial_closure_index_v1", prompt)
 
     def test_exact_manifest_matches_truncated_source_and_visible_stdout(self):
         m = _import_codex_audit_runner()
@@ -3001,6 +3155,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             template = (
                 "{{NOTE_BODY}}\n{{RUNNER_STDOUT}}\n{{RUNNER_SOURCE}}\n"
                 "{{HELPER_RUNNER_SOURCES}}\n{{FRAMEWORK_PREMISE_CONTEXT}}\n"
+                "{{NO_GO_PARTIAL_CLOSURE_INDEX}}\n"
                 "{{NO_GO_CROSS_CYCLE_INDEX}}\n{{NO_GO_EVIDENCE_MANIFEST}}"
             )
             manifest: dict[str, dict] = {}

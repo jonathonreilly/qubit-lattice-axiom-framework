@@ -52,10 +52,15 @@ HONESTY_MARKERS = {"ATTEMPTED", "RULED OUT BY PRIOR"}
 ROUTE_DISPOSITIONS = {"CLOSED", "OPEN", "UNTESTED"}
 
 PATH_TRIGGER_RE = re.compile(r"(?:^|[\s/._-])(no[\s_-]?go|obstruction|stretch[\s_-]?attempt)(?:$|[\s/._-])", re.IGNORECASE)
-SOURCE_NEGATIVE_RE = re.compile(
+NEGATIVE_ASSERTION_RE = re.compile(
     r"structurally (?:closed|undecidable)|no route exists|"
     r"no retained primitive(?: supplies)?|requires? (?:a )?new axiom|"
     r"cannot be derived from|does not lift|cannot lift|"
+    r"\b(?:cannot|does not|do not)\s+(?:select|orient|factor|factorize|derive|supply|"
+    r"determine|fix|close|produce|recover)\b|"
+    r"\bno\s+(?!obstruction\s+(?:remains?|persists?)\b)[^\n.;:]{1,100}\s+exists\b|"
+    r"\b(?:walls?|admissions?|obstructions?)\b[^\n.;:]{0,80}"
+    r"\b(?:blocks?|prevents?|precludes?|rules?\s+out|persists?|remains?)\b|"
     r"bounded with named walls|conditional on [^\n]{0,120}\b(?:walls?|admissions?)\b|"
     r"\b(?:residual|named|independent|unclosed|remaining|unresolved) (?:walls?|admissions?)\b|"
     r"\b(?:scoped|structural|bounded|remaining|unresolved) obstruction\b|"
@@ -64,23 +69,38 @@ SOURCE_NEGATIVE_RE = re.compile(
     r"(?:^|\n)\s*(?:walls?|admissions?)\s*:",
     re.IGNORECASE,
 )
-# Verdict prose uses the same assertion-shaped trigger as source prose. Bare
-# vocabulary such as "admission", "wall", or "obstruction" is not enough:
-# positive rows routinely name supplied inputs or explicitly disclaim that a
-# scope clause is a live wall. The structured gate is required only when the
-# output actually asserts a negative boundary.
-OUTPUT_NEGATIVE_RE = SOURCE_NEGATIVE_RE
+# Remove only clauses that affirmatively close or supply the named boundary.
+# This keeps "does not close the remaining obstruction" live while excluding
+# "closes the remaining obstruction" and passive equivalents.
+POSITIVE_BOUNDARY_CLOSURE_RE = re.compile(
+    r"(?<!not )(?<!never )\b(?:closes?|removes?|discharges?|supplies?|resolves?|retires?|"
+    r"eliminates?|answers?|overcomes?)\b\s+(?:all\s+|the\s+|an?\s+|"
+    r"explicitly\s+)?(?:residual\s+|remaining\s+|scoped\s+|unresolved\s+)?"
+    r"(?:walls?|admissions?|obstructions?)\b|"
+    r"\b(?:all\s+|the\s+|an?\s+)?(?:residual\s+|remaining\s+|scoped\s+|"
+    r"unresolved\s+)?(?:walls?|admissions?|obstructions?)\b"
+    r"[^\n.;:]{0,50}\b(?:is|are)\s+(?:explicitly\s+)?"
+    r"(?:closed|removed|discharged|supplied|resolved|retired|eliminated)\b",
+    re.IGNORECASE,
+)
+NEGATED_BOUNDARY_RE = re.compile(
+    r"\b(?:no|not|never|without)\s+(?:an?\s+|live\s+)?"
+    r"(?:residual\s+|remaining\s+|scoped\s+|unresolved\s+)?"
+    r"(?:walls?|admissions?|obstructions?)\b",
+    re.IGNORECASE,
+)
 OUTPUT_BOUNDARY_FIELDS = (
     "claim_scope",
     "load_bearing_step",
     "chain_closure_explanation",
     "verdict_rationale",
 )
-OUTPUT_NOTES_NEGATIVE_RE = SOURCE_NEGATIVE_RE
 
 AXIOM_REGISTRY = "docs/audit/data/axiom_premise_nodes.json"
 OWNER_REGISTRY = "docs/audit/data/owner_governed_premise_nodes.json"
 TIER_A_REGISTRY = "docs/audit/data/tier_a_admissions.json"
+CONTROLLED_VOCABULARY = "docs/repo/controlled_vocabulary.yaml"
+ACTIVE_REVIEW_QUEUE = "docs/repo/ACTIVE_REVIEW_QUEUE.md"
 PREMISE_CLASSES_CHECKED = {
     "axiom_or_approved_primitive",
     "owner_governed_residual",
@@ -192,8 +212,37 @@ def cross_cycle_index_path(claim_id: str) -> str:
     return f"audit-packet://cross-cycle-index/{claim_id}"
 
 
+def partial_closure_index_path(claim_id: str) -> str:
+    return f"audit-packet://partial-closure-index/{claim_id}"
+
+
 def runner_stdout_evidence_path(claim_id: str) -> str:
     return f"audit-packet://runner-stdout/{claim_id}"
+
+
+SEARCH_STOPWORDS = {
+    "about", "after", "against", "before", "bounded", "claim", "clean",
+    "conditional", "current", "derived", "framework", "note", "result",
+    "route", "scope", "supplied", "theorem", "their", "there", "these",
+    "this", "under", "using", "with", "without",
+}
+
+
+def _search_terms(text: str) -> set[str]:
+    return {
+        token
+        for token in re.findall(r"[a-z0-9_]{5,}", text.casefold())
+        if token not in SEARCH_STOPWORDS
+    }
+
+
+def _row_search_terms(row: dict[str, Any]) -> set[str]:
+    return _search_terms(
+        " ".join(
+            str(row.get(field) or "")
+            for field in ("claim_id", "claim_scope", "verdict_rationale", "note_path")
+        )
+    )
 
 
 def build_cross_cycle_index(
@@ -248,26 +297,7 @@ def build_cross_cycle_index(
             }
         )
 
-    stopwords = {
-        "about", "after", "against", "before", "bounded", "claim", "clean",
-        "conditional", "current", "derived", "framework", "note", "result",
-        "route", "scope", "supplied", "theorem", "their", "there", "these",
-        "this", "under", "using", "with", "without",
-    }
-
-    def terms(text: str) -> set[str]:
-        return {
-            token
-            for token in re.findall(r"[a-z0-9_]{5,}", text.casefold())
-            if token not in stopwords
-        }
-
-    current_terms = terms(
-        " ".join(
-            str(row.get(field) or "")
-            for field in ("claim_id", "claim_scope", "verdict_rationale", "note_path")
-        )
-    )
+    current_terms = _row_search_terms(row)
 
     loop_ledger_glob = ".claude/science/physics-loops/**/NO_GO_LEDGER.md"
     loop_ledger_paths = sorted(root.glob(loop_ledger_glob))
@@ -284,9 +314,9 @@ def build_cross_cycle_index(
                 "source_claim_id": relative_path,
                 "note_path": relative_path,
                 "content_sha256": hashlib.sha256(ledger_text.encode("utf-8")).hexdigest(),
-                "content_excerpt": ledger_text[:4000],
-                "content_truncated": len(ledger_text) > 4000,
-                "matching_terms": sorted(current_terms.intersection(terms(ledger_text))),
+                "content": ledger_text,
+                "content_truncated": False,
+                "matching_terms": sorted(current_terms.intersection(_search_terms(ledger_text))),
             }
         )
 
@@ -298,7 +328,7 @@ def build_cross_cycle_index(
             str(other.get(field) or "")
             for field in ("claim_id", "claim_scope", "verdict_rationale", "note_path")
         )
-        overlap = sorted(current_terms.intersection(terms(other_text)))
+        overlap = sorted(current_terms.intersection(_search_terms(other_text)))
         if len(overlap) < 2:
             continue
         similar.append((len(overlap), other_id, other, overlap))
@@ -339,6 +369,209 @@ def build_cross_cycle_index(
                         path.relative_to(root).as_posix() for path in loop_ledger_paths
                     ],
                     "candidate_policy": "every tracked ledger is included",
+                },
+            },
+            "candidates": candidates,
+        },
+        indent=2,
+        sort_keys=True,
+    )
+
+
+def build_partial_closure_index(
+    row: dict[str, Any],
+    ledger_rows: dict[str, dict],
+    repo_root: str | Path,
+) -> str:
+    """Render the orchestrator-owned N6 convention/reframe search surface."""
+    root = Path(repo_root)
+    cid = str(row.get("claim_id") or "")
+    current_terms = _row_search_terms(row)
+    candidates: list[dict[str, Any]] = []
+
+    def add_candidate(
+        *,
+        candidate_id: str,
+        kind: str,
+        source_path: str,
+        content: Any,
+        matching_terms: list[str] | None = None,
+        accepted_premise_type: str | None = None,
+        content_sha256: str | None = None,
+    ) -> None:
+        candidates.append(
+            {
+                "candidate_id": candidate_id,
+                "kind": kind,
+                "source_path": source_path,
+                "accepted_premise_type": accepted_premise_type,
+                "matching_terms": matching_terms or [],
+                "content_sha256": content_sha256,
+                "content": content,
+            }
+        )
+
+    axioms = _load_json(root, AXIOM_REGISTRY)
+    for premise_id in sorted(axioms.get("canonical_ids") or []):
+        add_candidate(
+            candidate_id=f"approved_primitive:{premise_id}",
+            kind="approved_primitive",
+            source_path=AXIOM_REGISTRY,
+            content=(axioms.get("nodes") or {}).get(premise_id, {}),
+            accepted_premise_type="axiom_or_approved_primitive",
+        )
+    owners = _load_json(root, OWNER_REGISTRY)
+    for premise_id in sorted(owners.get("canonical_ids") or []):
+        add_candidate(
+            candidate_id=f"owner_governed:{premise_id}",
+            kind="owner_governed",
+            source_path=OWNER_REGISTRY,
+            content=(owners.get("nodes") or {}).get(premise_id, {}),
+            accepted_premise_type="owner_governed_residual",
+        )
+    tier_a = _load_json(root, TIER_A_REGISTRY)
+    for premise_id, record in sorted((tier_a.get("derivation_targets") or {}).items()):
+        add_candidate(
+            candidate_id=f"tier_a:{premise_id}",
+            kind="tier_a",
+            source_path=TIER_A_REGISTRY,
+            content=record,
+            accepted_premise_type="tier_a_derivation_target",
+        )
+    for premise_id, record in sorted((tier_a.get("conventions") or {}).items()):
+        add_candidate(
+            candidate_id=f"convention_reframe:{premise_id}",
+            kind="convention_reframe",
+            source_path=TIER_A_REGISTRY,
+            content=record,
+            accepted_premise_type="tier_a_convention_not_accepted",
+        )
+
+    keyword_re = re.compile(
+        r"\b(?:axiom|primitive|convention|definition|label(?:ing)?|meta|ratif\w*|refram\w*)\b",
+        re.IGNORECASE,
+    )
+
+    def evidence_lines(content: str) -> list[dict[str, Any]]:
+        ranked: list[tuple[int, int, int, dict[str, Any]]] = []
+        for line_number, line in enumerate(content.splitlines(), 1):
+            overlap = sorted(current_terms.intersection(_search_terms(line)))
+            if not overlap:
+                continue
+            keyword_hit = bool(keyword_re.search(line))
+            ranked.append(
+                (
+                    len(overlap),
+                    int(keyword_hit),
+                    line_number,
+                    {
+                        "line": line_number,
+                        "matching_terms": overlap,
+                        "partial_closure_keyword": keyword_hit,
+                        "text": line,
+                    },
+                )
+            )
+        return [
+            item[3]
+            for item in sorted(ranked, key=lambda item: (-item[0], -item[1], item[2]))[:5]
+        ]
+
+    vocabulary_text = _read_text(root, CONTROLLED_VOCABULARY)
+    vocabulary_hits: list[tuple[int, int, str, list[str]]] = []
+    for line_number, line in enumerate(vocabulary_text.splitlines(), 1):
+        overlap = sorted(current_terms.intersection(_search_terms(line)))
+        if overlap and keyword_re.search(line):
+            vocabulary_hits.append((len(overlap), line_number, line, overlap))
+    for _score, line_number, line, overlap in sorted(
+        vocabulary_hits, key=lambda item: (-item[0], item[1])
+    )[:10]:
+        add_candidate(
+            candidate_id=f"controlled_vocabulary:{line_number}",
+            kind="definition_refactor",
+            source_path=CONTROLLED_VOCABULARY,
+            content=line,
+            matching_terms=overlap,
+        )
+
+    meta_paths = sorted(
+        {
+            str(other.get("note_path"))
+            for other in ledger_rows.values()
+            if other.get("claim_type") == "meta" and other.get("note_path")
+        }
+    )
+    meta_hits: list[tuple[int, str, str, list[str]]] = []
+    for path in meta_paths:
+        content = _read_text(root, path)
+        overlap = sorted(current_terms.intersection(_search_terms(content)))
+        if len(overlap) >= 2 and keyword_re.search(content):
+            meta_hits.append((len(overlap), path, content, overlap))
+    for _score, path, content, overlap in sorted(
+        meta_hits, key=lambda item: (-item[0], item[1])
+    )[:10]:
+        add_candidate(
+            candidate_id=f"meta_reframe:{path}",
+            kind="definition_refactor",
+            source_path=path,
+            content=evidence_lines(content),
+            matching_terms=overlap,
+            content_sha256=hashlib.sha256(content.encode("utf-8")).hexdigest(),
+        )
+
+    reframe_globs = (
+        ".claude/science/physics-loops/**/HANDOFF.md",
+        ".claude/science/physics-loops/**/BRANCH_HANDOFF.md",
+        ".claude/science/physics-loops/**/CLAIM_STATUS_CERTIFICATE*.md",
+    )
+    reframe_paths = {ACTIVE_REVIEW_QUEUE}
+    for pattern in reframe_globs:
+        reframe_paths.update(path.relative_to(root).as_posix() for path in root.glob(pattern))
+    reframe_hits: list[tuple[int, str, str, list[str]]] = []
+    for path in sorted(reframe_paths):
+        content = _read_text(root, path)
+        overlap = sorted(current_terms.intersection(_search_terms(content)))
+        if len(overlap) >= 2 and keyword_re.search(content):
+            reframe_hits.append((len(overlap), path, content, overlap))
+    for _score, path, content, overlap in sorted(
+        reframe_hits, key=lambda item: (-item[0], item[1])
+    )[:10]:
+        add_candidate(
+            candidate_id=f"in_flight_reframe:{path}",
+            kind="definition_refactor",
+            source_path=path,
+            content=evidence_lines(content),
+            matching_terms=overlap,
+            content_sha256=hashlib.sha256(content.encode("utf-8")).hexdigest(),
+        )
+
+    return json.dumps(
+        {
+            "schema": "no_go_partial_closure_index_v1",
+            "claim_id": cid,
+            "search_scope": {
+                "premise_registries": [AXIOM_REGISTRY, OWNER_REGISTRY, TIER_A_REGISTRY],
+                "controlled_vocabulary": {
+                    "path": CONTROLLED_VOCABULARY,
+                    "content_sha256": hashlib.sha256(vocabulary_text.encode("utf-8")).hexdigest(),
+                    "minimum_shared_terms": 1,
+                    "candidate_limit": 10,
+                },
+                "meta_notes": {
+                    "scanned_count": len(meta_paths),
+                    "scanned_paths": meta_paths,
+                    "minimum_shared_terms": 2,
+                    "candidate_limit": 10,
+                    "evidence_line_limit_per_candidate": 5,
+                },
+                "repository_visible_in_flight_reframes": {
+                    "queue_path": ACTIVE_REVIEW_QUEUE,
+                    "globs": list(reframe_globs),
+                    "scanned_count": len(reframe_paths),
+                    "scanned_paths": sorted(reframe_paths),
+                    "minimum_shared_terms": 2,
+                    "candidate_limit": 10,
+                    "evidence_line_limit_per_candidate": 5,
                 },
             },
             "candidates": candidates,
@@ -428,6 +661,12 @@ def build_evidence_manifest(
         role="cross_cycle_index",
         text=build_cross_cycle_index(row, ledger_rows, root),
     )
+    _add_evidence(
+        manifest,
+        path=partial_closure_index_path(str(row.get("claim_id") or "")),
+        role="partial_closure_index",
+        text=build_partial_closure_index(row, ledger_rows, root),
+    )
     return manifest
 
 
@@ -477,27 +716,48 @@ def _evidence_references(value: Any) -> list[tuple[str, str]]:
     return refs
 
 
-def _cross_cycle_candidate_ids(entry: dict[str, Any]) -> set[str] | None:
-    stored = entry.get("cross_cycle_candidate_ids")
+def _index_candidates(
+    entry: dict[str, Any], *, schema: str, stored_field: str
+) -> dict[str, dict[str, Any]] | None:
+    stored = entry.get(stored_field)
     if isinstance(stored, list) and all(_text(item) for item in stored):
-        return set(stored)
+        return {str(item): {} for item in stored}
     try:
         parsed = json.loads(str(entry.get("text") or ""))
     except json.JSONDecodeError:
         return None
-    if parsed.get("schema") != "no_go_cross_cycle_index_v1":
+    if parsed.get("schema") != schema:
         return None
     candidates = parsed.get("candidates")
     if not isinstance(candidates, list):
         return None
-    ids = {
-        str(candidate.get("candidate_id"))
+    mapped = {
+        str(candidate.get("candidate_id")): candidate
         for candidate in candidates
         if isinstance(candidate, dict) and _text(candidate.get("candidate_id"))
     }
-    if len(ids) != len(candidates):
+    if len(mapped) != len(candidates):
         return None
-    return ids
+    return mapped
+
+
+def _cross_cycle_candidate_ids(entry: dict[str, Any]) -> set[str] | None:
+    candidates = _index_candidates(
+        entry,
+        schema="no_go_cross_cycle_index_v1",
+        stored_field="cross_cycle_candidate_ids",
+    )
+    return set(candidates) if candidates is not None else None
+
+
+def _partial_closure_candidates(
+    entry: dict[str, Any],
+) -> dict[str, dict[str, Any]] | None:
+    return _index_candidates(
+        entry,
+        schema="no_go_partial_closure_index_v1",
+        stored_field="partial_closure_candidate_ids",
+    )
 
 
 def build_evidence_snapshot(
@@ -526,6 +786,11 @@ def build_evidence_snapshot(
             if candidate_ids is None:
                 raise ValueError("cross-cycle index is not orchestrator-authenticated")
             snapshot_entry["cross_cycle_candidate_ids"] = sorted(candidate_ids)
+        if "partial_closure_index" in set(entry.get("roles") or []):
+            candidates = _partial_closure_candidates(entry)
+            if candidates is None:
+                raise ValueError("partial-closure index is not orchestrator-authenticated")
+            snapshot_entry["partial_closure_candidate_ids"] = sorted(candidates)
         entries[path] = snapshot_entry
     return {"schema": "no_go_evidence_snapshot_v1", "entries": entries}
 
@@ -552,8 +817,15 @@ def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] |
             "accepted_premise_type": stored.get("accepted_premise_type"),
             "content_sha256": stored.get("content_sha256"),
             "cross_cycle_candidate_ids": stored.get("cross_cycle_candidate_ids"),
+            "partial_closure_candidate_ids": stored.get("partial_closure_candidate_ids"),
         }
     return manifest
+
+
+def _has_negative_boundary_assertion(text: str) -> bool:
+    cleaned = POSITIVE_BOUNDARY_CLOSURE_RE.sub("", text)
+    cleaned = NEGATED_BOUNDARY_RE.sub("", cleaned)
+    return bool(NEGATIVE_ASSERTION_RE.search(cleaned))
 
 
 def source_requires_no_go_discipline(
@@ -570,22 +842,18 @@ def source_requires_no_go_discipline(
     metadata = "\n".join(body.splitlines()[:80])
     if re.search(r"(?:Type|Claim type)\s*:\s*`?no_go`?", metadata, re.IGNORECASE):
         return True
-    return bool(SOURCE_NEGATIVE_RE.search(body))
+    return _has_negative_boundary_assertion(body)
 
 
 def output_requires_no_go_discipline(audit: dict[str, Any]) -> bool:
     if audit.get("claim_type") == "no_go":
         return True
     boundary = "\n".join(str(audit.get(field) or "") for field in OUTPUT_BOUNDARY_FIELDS)
-    boundary = re.sub(
-        r"\b(?:not|never|without)\s+(?:an?\s+)?(?:wall|admission|obstruction)s?\b",
-        "",
-        boundary,
-        flags=re.IGNORECASE,
-    )
-    if OUTPUT_NEGATIVE_RE.search(boundary):
+    if _has_negative_boundary_assertion(boundary):
         return True
-    return bool(OUTPUT_NOTES_NEGATIVE_RE.search(str(audit.get("notes_for_re_audit_if_any") or "")))
+    return _has_negative_boundary_assertion(
+        str(audit.get("notes_for_re_audit_if_any") or "")
+    )
 
 
 def _text(value: Any) -> bool:
@@ -891,6 +1159,22 @@ def _validate_n6(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     if error:
         return error
     assert section is not None
+    error = _locator_error(
+        section.get("evidence_path"),
+        section.get("evidence_locator"),
+        manifest,
+        "N6 scan",
+    )
+    if error:
+        return error
+    indexed_candidates: dict[str, dict[str, Any]] | None = None
+    if manifest is not None:
+        index_entry = manifest.get(section.get("evidence_path"))
+        if not index_entry or "partial_closure_index" not in set(index_entry.get("roles") or []):
+            return "N6 must cite the orchestrator-owned partial_closure_index surface"
+        indexed_candidates = _partial_closure_candidates(index_entry)
+        if indexed_candidates is None:
+            return "N6 partial-closure index is malformed or not orchestrator-authenticated"
     if not _text(section.get("scan_scope")):
         return "N6.scan_scope must name the primitive/reframe surfaces checked"
     checked = section.get("premise_classes_checked")
@@ -903,9 +1187,20 @@ def _validate_n6(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     if error:
         return error
     allowed_kinds = {"approved_primitive", "owner_governed", "tier_a", "convention_reframe", "definition_refactor"}
+    seen_candidate_ids: set[str] = set()
     for index, candidate in enumerate(candidates, 1):
         if not isinstance(candidate, dict) or candidate.get("kind") not in allowed_kinds:
             return f"N6 candidate {index}.kind is invalid"
+        if not _text(candidate.get("candidate_id")):
+            return f"N6 candidate {index}.candidate_id must be non-empty"
+        candidate_id = str(candidate["candidate_id"])
+        if candidate_id in seen_candidate_ids:
+            return f"N6 candidate {index}.candidate_id is duplicated"
+        indexed = indexed_candidates.get(candidate_id) if indexed_candidates is not None else None
+        if indexed_candidates is not None and indexed is None:
+            return f"N6 candidate {index}.candidate_id is absent from the partial-closure index"
+        if indexed and indexed.get("kind") and candidate.get("kind") != indexed.get("kind"):
+            return f"N6 candidate {index}.kind does not match the partial-closure index"
         for field in ("could_close_wall", "addressed"):
             if not isinstance(candidate.get(field), bool):
                 return f"N6 candidate {index}.{field} must be boolean"
@@ -916,6 +1211,11 @@ def _validate_n6(packet: dict, status: str, manifest: dict[str, dict] | None) ->
             return error
         if manifest is not None:
             entry = manifest[candidate["evidence_path"]]
+            if "partial_closure_index" in set(entry.get("roles") or []):
+                seen_candidate_ids.add(candidate_id)
+                if status == "PASS" and candidate["could_close_wall"] and not candidate["addressed"]:
+                    return f"No-Go Discipline PASS leaves N6 candidate {index} unaddressed"
+                continue
             expected_type = {
                 "approved_primitive": "axiom_or_approved_primitive",
                 "owner_governed": "owner_governed_residual",
@@ -933,8 +1233,11 @@ def _validate_n6(packet: dict, status: str, manifest: dict[str, dict] | None) ->
                 return f"N6 definition_refactor candidate {index} must cite a source or code surface"
         if status == "PASS" and candidate["could_close_wall"] and not candidate["addressed"]:
             return f"No-Go Discipline PASS leaves N6 candidate {index} unaddressed"
-    error = _locator_error(section.get("evidence_path"), section.get("evidence_locator"), manifest, "N6 scan")
-    return error or _unresolved_error(section, "N6", status)
+        seen_candidate_ids.add(candidate_id)
+    if indexed_candidates is not None and seen_candidate_ids != set(indexed_candidates):
+        missing = sorted(set(indexed_candidates) - seen_candidate_ids)
+        return f"N6.candidates must disposition every partial-closure candidate; missing {missing[:3]}"
+    return _unresolved_error(section, "N6", status)
 
 
 def _validate_n7(packet: dict, status: str, manifest: dict[str, dict] | None) -> str | None:
@@ -967,20 +1270,27 @@ def _validate_n8(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     section, error = _section(packet, "N8_cross_cycle_echo")
     if error:
         return error
+    assert section is not None
+    error = _locator_error(
+        section.get("evidence_path"),
+        section.get("evidence_locator"),
+        manifest,
+        "N8 search",
+    )
+    if error:
+        return error
     candidate_ids: set[str] | None = None
     if manifest is not None:
-        entry = manifest[section["evidence_path"]]
+        entry = manifest.get(section.get("evidence_path"))
+        if not entry:
+            return "N8 evidence path is outside the restricted packet"
         if "cross_cycle_index" not in set(entry.get("roles") or []):
             return "N8 must cite the orchestrator-owned cross_cycle_index surface"
         candidate_ids = _cross_cycle_candidate_ids(entry)
         if candidate_ids is None:
             return "N8 cross-cycle index is malformed or not orchestrator-authenticated"
-    assert section is not None
     if not isinstance(section.get("packet_complete"), bool):
         return "N8.packet_complete must be boolean"
-    error = _locator_error(section.get("evidence_path"), section.get("evidence_locator"), manifest, "N8 search")
-    if error:
-        return error
     echoes = section.get("echoes")
     if not _list(echoes):
         return "N8.echoes must be a list"

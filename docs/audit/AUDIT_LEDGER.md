@@ -1517,7 +1517,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `acphilambda_k_even_registration_correction_registered_pattern_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
-| `acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1991,17 +1991,17 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Issue: the primary runner crashes in tier_a_statement() with KeyError: 'staggered_dirac_realization_gate_note_2026-05-03' while looking up docs/audit/data/tier_a_admissions.json. Why this blocks: the source note advertises a measured TOTAL: PASS=111 FAIL=0, but the live verifier currently exits with status 1 after only 33 partial setup/text checks and before the load-bearing K-parity and route-kill checks. Repair target: update the runner to the current Tier-A registry key/schema, or provide a stable cached certificate/log and rerun the verifier to completion. Claim boundary until fixed: the dependency file pins and premise quote gates reached before the crash are checked, but the K-even registration correction and registered-pattern normal-form theorem are not audit-closed.
 - **auditor confidence:** high
 
-### `acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04`
+### `acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04`
 
-- **Note:** [`ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md)
+- **Note:** [`ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md)
 - **claim_type:** `no_go`
-- **claim_scope:** The July 4 Record formation occurrence/additivity append does not by itself select between count-twice and count-once doublet occupancy dictionaries.
+- **claim_scope:** Bounded non-supply claim that the four axioms plus realized-state, kinetic-isotropy, and scale primitives do not select count-once versus count-twice generation measure.
 - **audit_status:** ~~audited_conditional~~
 - **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-acphilambda_occupancy_fo-088`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Two distinct doublet dictionaries preserve Record occurrence, permanence, one-record-per-site uniqueness, and finite additivity while yielding r=1/2 and r=1 respectively, so the formation append cannot select between them.  _(class `A`)_
-- **chain closes:** True — For the narrow non-supply claim, the two explicit completions are compatible with the accepted Record axiom yet produce different occupancy readings, establishing non-entailment. This does not establish the note's stale assertion that AC_phi_lambda(i) remains a live Tier-A target on current main.
-- **rationale:** The finite separation argument is a valid class-A countermodel check, and the minimal-axiom authority explicitly withholds formation rules, weights, and outcome dictionaries. However, the cited registry says the live Tier-A target count is zero and AC_phi_lambda was retired through owner governance on 2026-07-05, contradicting the note's current-main/live-registry language. The completed runner then crashes because it assumes the removed entry still exists, so the broader current-surface framing is not verified.
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00005-acphilambda_measure_binary_a`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** None of the updated axioms or approved primitives selects a physical generation readout partition or carrier-measure scoring rule.  _(class `B`)_
+- **chain closes:** False — The premise texts and retained carrier-measure theorem support the narrow non-supply result, but the cited current registry says AC_phi_lambda has been retired from live Tier A through owner governance. The note and runner instead assume a live derivation-target entry, so the claimed current registry boundary is unreconciled.
+- **rationale:** The narrow axiom-and-primitive non-supply conclusion is well supported, and the finite algebra is explicitly conditional rather than presented as selection of a measure. However, the non-retained meta registry now reports zero live Tier-A targets and owner-governed retirement of AC_phi_lambda, contradicting the note's current-live-survivor framing. The runner confirms this stale dependency assumption by raising KeyError before reaching its substantive algebra checks.
 - **open / conditional deps cited:**
   - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
 - **auditor confidence:** high

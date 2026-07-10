@@ -1,9 +1,9 @@
 # Qubit-Lattice Joint Presentation Tensor Substrate Bridge (Narrow)
 
 **Date:** 2026-07-09
-**Type:** positive_theorem (bridge)
-**Claim type:** positive_theorem
-**Claim boundary:** joint tensor carrier for finite `Λ` from the live four-axiom memo plus one named minimality selection; no dynamics, no probability, no physical readout identification.
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Claim boundary:** joint tensor carrier for finite `Λ` from the live four-axiom memo plus a supplied commuting joint presentation and one named minimality selection; no dynamics, no probability, no physical readout identification.
 **Status authority:** independent audit lane only. This source note does not set or predict an audit outcome.
 **Primary runner:** [`scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py`](../scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py)
 **Cached output:** [`logs/runner-cache/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.txt`](../logs/runner-cache/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.txt)
@@ -100,6 +100,23 @@ would be additional structure whose dimension and multiplicity action are
 fixed by no supplied axiom content. This is a named bridge selection, not an
 axiom quotation and not a consequence presented as forced by the axioms alone.
 
+## Complete declared-input surface
+
+Two independent inputs are load-bearing:
+
+1. **Supplied commuting joint presentation.** The live axioms provide the
+   one-site `M_2(C)` presentations, but they do not themselves construct a
+   common `B(H)` representation or force pairwise elementwise commutation of
+   distinct-site images. The first paragraph of the Claim supplies both.
+2. **Minimality selection `m = 1`.** Once the commuting joint presentation is
+   supplied, finite-factor representation theory gives `m >= 1`; choosing
+   `m = 1` is the separate named bridge selection above.
+
+Neither input resolves the other: commutation identifies the generated tensor
+factor but leaves arbitrary multiplicity, while minimality cannot construct
+or enforce a commuting joint presentation. The theorem is bounded by both
+walls.
+
 ## What this supplies downstream
 
 This bridge supplies the multi-site finite-region carrier
@@ -113,14 +130,16 @@ the `|Λ| = 1` case belongs to its companion
 - This is not a dynamics or probability statement.
 - It does not derive Born weights.
 - It does not identify physical observables.
+- The common joint presentation and distinct-site commutation are supplied,
+  not derived from the one-site axiom wording.
 - The minimality selection is named, not derived from the axioms alone.
 - Finite type-I structure and the Pauli basis are standard mathematics cited
   here, not re-proved from scratch.
 
 ## Forbidden imports check
 
-No new axiom is introduced. The only non-axiom input is the named minimality
-selection declared above.
+No new axiom is introduced. The non-axiom inputs are the supplied commuting
+joint presentation and the named minimality selection declared above.
 
 ## Runner check breakdown
 
@@ -133,7 +152,7 @@ selection declared above.
   resolution, normalization, and additivity checks.
 - Group E: six note-content and authorized-link checks.
 
-Expected result: `TOTAL: PASS=33 FAIL=0`.
+Expected result: `TOTAL: PASS=34 FAIL=0`.
 
 ## Honest auditor read
 

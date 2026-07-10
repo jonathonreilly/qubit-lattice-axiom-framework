@@ -1,17 +1,21 @@
 # Teleportation Acceptance Suite Note
 
-Status: bounded planning artifact. This note documents
-`scripts/frontier_teleportation_acceptance_suite.py`, a consolidated runner for
-ordinary native taste-qubit quantum state teleportation checks.
-Sync guard:
+**Type:** meta
+
+**Runner:**
 [`scripts/frontier_teleportation_acceptance_suite_note_sync_check.py`](../scripts/frontier_teleportation_acceptance_suite_note_sync_check.py)
+
+Status: bounded planning artifact. This note documents
+[`scripts/frontier_teleportation_acceptance_suite.py`](../scripts/frontier_teleportation_acceptance_suite.py),
+a consolidated runner for ordinary native taste-qubit quantum state
+teleportation checks.
 
 ## Scope
 
 The suite runs existing teleportation artifacts as child processes and reports
-coarse PASS/FAIL/SKIP categories. It is intentionally a harness, not a new
-physics claim and not an implementation of preparation, apparatus dynamics, or
-physical transport.
+coarse PASS/FAIL/SKIP/TIMEOUT categories. It is intentionally a harness, not a
+new physics claim and not an implementation of preparation, apparatus
+dynamics, or physical transport.
 
 Claim boundary:
 
@@ -59,6 +63,24 @@ Current optional hook surfaces:
 - `cross_encoding_hook`: bounded three-register cross-encoding map sample when
   present.
 
+The full default `--list-probes` surface is the eight blocking probes followed
+by the four optional hooks. Current synchronized default inventory:
+
+| probe key | category | candidate script |
+|---|---|---|
+| `core_protocol` | required | `frontier_teleportation_protocol.py` |
+| `poisson_end_to_end_selected` | required | `frontier_teleportation_end_to_end_poisson.py` |
+| `causal_channel` | required | `frontier_teleportation_causal_channel.py` |
+| `measurement_record` | required | `frontier_teleportation_measurement_record.py` |
+| `resource_fidelity_summary` | required | `frontier_teleportation_resource_fidelity.py` |
+| `noise_fault_summary` | required | `frontier_teleportation_noise_fault_controls.py` |
+| `encoding_portability_summary` | required | `frontier_teleportation_encoding_portability.py` |
+| `logical_readout_summary` | required | `frontier_teleportation_logical_readout_audit.py` |
+| `adiabatic_prep_hook` | optional | `frontier_teleportation_adiabatic_time_evolution.py, frontier_teleportation_adiabatic_prep_probe.py` |
+| `taste_readout_operator_hook` | optional | `frontier_teleportation_taste_readout_operator_model.py, frontier_teleportation_preparation_readout_probe.py` |
+| `bell_measurement_circuit_hook` | optional | `frontier_teleportation_bell_measurement_circuit.py` |
+| `cross_encoding_hook` | optional | `frontier_teleportation_cross_encoding_maps.py` |
+
 ## Strict-Lane Profile
 
 `--strict-lane` switches from the default quick optional hooks to a heavier
@@ -100,8 +122,8 @@ current worktree:
   nature-grade closure on hold.
 
 The full `--strict-lane --list-probes` surface is the eight default required
-probes followed by the present-gated strict-lane additions above. Current
-synchronized inventory:
+probes followed by the present-gated strict-lane additions above.
+Current synchronized strict inventory:
 
 | probe key | category | candidate script |
 |---|---|---|
@@ -149,11 +171,13 @@ The current list-surface synchronization is checked by:
 python3 scripts/frontier_teleportation_acceptance_suite_note_sync_check.py
 ```
 
-The sync guard runs both `--list-probes` surfaces, parses the strict-lane
-inventory table above, and fails unless the note's probe key, category, and
-candidate-script rows exactly match the live
-`--strict-lane --list-probes` output. The current runner cache reports
-`PASS=6 FAIL=0`.
+The sync guard runs both `--list-probes` surfaces, parses the default and
+strict-lane inventory tables above, and fails unless every note probe key,
+category, candidate-script list, and row order exactly matches the live
+outputs. It also checks the profile algebra: strict-lane keeps the eight
+default required rows in order, replaces the four default optional hooks, and
+adds exactly sixteen `required-if-present` rows. The current guard reports
+`PASS=8 FAIL=0`.
 
 The previous strict-lane snapshot is cached at
 [`outputs/frontier_teleportation_acceptance_suite_strict_list_probes_2026-05-06.txt`](../outputs/frontier_teleportation_acceptance_suite_strict_list_probes_2026-05-06.txt).
@@ -199,6 +223,13 @@ python3 -m py_compile scripts/frontier_teleportation_acceptance_suite_note_sync_
 
 ## Validation Snapshots
 
+The current sync-runner cache is SHA-pinned to the guard source at
+[`logs/runner-cache/frontier_teleportation_acceptance_suite_note_sync_check.txt`](../logs/runner-cache/frontier_teleportation_acceptance_suite_note_sync_check.txt)
+and reports `PASS=8 FAIL=0`. Its captured stdout records SHA-256 fingerprints
+for both mutable inputs: this note and the documented acceptance runner.
+Because the shared cache framework currently keys freshness only to runner
+source, rerun the live sync command after either input changes.
+
 The current default probe inventory is cached at
 [`outputs/frontier_teleportation_acceptance_suite_default_list_probes_2026-05-06.txt`](../outputs/frontier_teleportation_acceptance_suite_default_list_probes_2026-05-06.txt).
 
@@ -218,7 +249,8 @@ Optional probes:
 
 - absent candidate script: SKIP, non-blocking;
 - present script success: PASS;
-- present script failure: FAIL, non-blocking unless `--strict-optional` is set.
+- present script failure or timeout: FAIL/TIMEOUT, non-blocking unless
+  `--strict-optional` is set.
 
 Strict-lane present-gated probes:
 
@@ -232,6 +264,7 @@ The runner extracts short numeric highlights and child acceptance gate counts.
 It does not preserve full child stdout unless a child fails or times out. For
 deep diagnosis, run the individual child artifact directly with its own CLI.
 
-PASS means only that the bounded harness and the selected child gates passed.
-It does not close the open preparation/readout/circuit/dynamics limitations
-listed above.
+PASS means only that the selected child returned zero and no parsed acceptance
+gate reported FAIL. A child with no parseable gate lines can therefore PASS on
+its return code alone. PASS does not close the open
+preparation/readout/circuit/dynamics limitations listed above.

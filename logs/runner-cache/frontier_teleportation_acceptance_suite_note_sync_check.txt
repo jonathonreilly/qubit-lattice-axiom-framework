@@ -1,24 +1,31 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_acceptance_suite_note_sync_check.py
-runner_sha256: 0ff2555967faca4c717dd0c694cd6fe78276a7a5fda6477e233e7bd78969d826
+runner_sha256: 9099359571a9b5f0d604f72b78a0cd06050818cd3c903ac12056606f3cbe344f
 timeout_sec: 30
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 ================================================================================================
 TELEPORTATION ACCEPTANCE SUITE NOTE SYNC CHECK
 ================================================================================================
+acceptance_runner_sha256: d0b70560361dbfab5b46d63a1ef824fe827f56af69719a3a6fa6e949c25d6072
+note_sha256: 36766f9393d3c0a3bd73d1864e343fb4862c5997b6508df298667e20c8b144d6
+
 [PASS] default --list-probes exits zero
 [PASS] strict-lane --list-probes exits zero
-[PASS] default surface still includes the documented optional hook keys
-       missing=[]
-[PASS] strict-lane surface replaces default optional hooks with present-gated strict probes
-       unexpected=[]
+[PASS] note default inventory table exactly matches live default surface
+       note_rows=12 live_rows=12
 [PASS] note strict-lane inventory table exactly matches live strict-lane surface
        note_rows=24 live_rows=24
-[PASS] strict-lane live surface has the expected current row count
-       rows=24
+[PASS] default surface is exactly eight required rows then four optional rows
+       required_rows=8 optional_rows=4
+[PASS] strict-lane surface retains the default required prefix in order
+       required_rows=8
+[PASS] strict-lane surface replaces default optional hooks with present-gated strict probes
+       unexpected=[]
+[PASS] strict-lane has exactly sixteen required-if-present additions
+       addition_rows=16
 
 Strict-lane synchronized rows:
   core_protocol                          required            frontier_teleportation_protocol.py
@@ -46,7 +53,7 @@ Strict-lane synchronized rows:
   remaining_open_item_attack             required-if-present frontier_teleportation_remaining_open_item_attack.py
   conclusion_boundary                    required-if-present frontier_teleportation_conclusion_boundary.py
 
-PASS=6 FAIL=0
+PASS=8 FAIL=0
 
 ----- stderr -----
 

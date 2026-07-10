@@ -109,6 +109,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/frontier_sewing_shell_source.py",
         "scripts/frontier_radial_shell_matching_law.py",
     ],
+    # The note-sync runner invokes the documented acceptance suite as a child
+    # process. Import discovery intentionally does not treat arbitrary
+    # subprocess targets as Python imports, so register this load-bearing
+    # source explicitly for the restricted audit packet.
+    "teleportation_acceptance_suite_note": [
+        "scripts/frontier_teleportation_acceptance_suite.py",
+    ],
 }
 
 

@@ -2,8 +2,8 @@
 
 **Date:** 2026-06-17
 **Surface update:** 2026-07-09 — restated on the live four-axiom memo (`Lattice`/`Qubit`/`Admissibility`/`Record`, 2026-06-29): the availability claim now names its declared admissibility-instance premise, the presence-conditional layer cites the live Record wording, and the legacy axiom name and 2026-06-05 memo citation are replaced. Finite-algebra content unchanged.
-**Claim type:** positive_theorem
-**Type:** positive_theorem
+**Claim type:** bounded_theorem
+**Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
 apply audit verdicts, does not edit audit data, and does not assert package
 promotion.
@@ -51,9 +51,10 @@ readout functional on the finite Boolean context, that sum is exactly `n`.
 
 ## What This Repairs
 
-This note removes a hidden source-side import in the unbounded finite-record
-schemas. The existence of arbitrary finite local sites and nonzero local
-record-eligible readout atoms is framework-native:
+This note makes the source-side inputs in the unbounded finite-record schemas
+explicit. Arbitrary finite local sites and one-site projectors are
+framework-native; their readout and record-eligibility roles are conditional
+on the declared input surface below:
 
 - `Z^3` supplies arbitrary finite lists of distinct sites.
 - `M_2(C)` supplies nonzero orthogonal rank-one projectors in any declared
@@ -68,6 +69,22 @@ record-eligible readout atoms is framework-native:
 The repair does **not** say that this context is physically selected. It only
 proves that the source packet no longer has to import arbitrary finite nonzero
 readout atoms as mathematical objects.
+
+## Declared inputs and remaining selection walls
+
+The bounded theorem is conditional on four independently named inputs:
+
+- an **admissibility instance** under which `P_1` is available at the chosen
+  sites;
+- the **diagonal readout context** `span{P_0,P_1}`;
+- the **`K`/conjugation context** given by entrywise conjugation in that
+  declared basis; and
+- the **unit-count normalization** assigning weight `1` to each chosen atom.
+
+The Lattice and Qubit axioms supply the sites and matrices, but the framework
+does not select any of those four inputs. The exact finite-algebra conclusion
+therefore closes only under this declared instance/context/normalization
+surface. Selecting that surface remains open.
 
 ## Admissibility layer (declared instance premise)
 

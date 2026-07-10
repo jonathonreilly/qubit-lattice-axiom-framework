@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 195 |
-| **retained_no_go** | 212 |
+| **retained_no_go** | 213 |
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1721 |
+| unaudited | 1720 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1364 |
+| `audited_clean` | 1365 |
 | `audited_conditional` | 129 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2066 |
+| `unaudited` | 2065 |
 
 | claim_type | count |
 |---|---:|
@@ -1208,6 +1208,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sign_portability_invariant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `signed_gravity_response_lane_status_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | C | - |
+| `single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | C | - |
 | `single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-current | A | - |
 | `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `single_clock_uniqueness_scope_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -18798,6 +18799,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The runner genuinely evaluates the elementary diagonal-transfer and clock-map identities rather than merely printing expected results, and those calculations support the narrow algebraic split. However, its framework-exclusion check only string-searches an unprovided MINIMAL_AXIOMS file, so the packet cannot verify the load-bearing assertion that no other minimal-framework axiom supplies the clock metric. Under the restricted-input and accepted-premise rules, that missing authority edge prevents an audited-clean verdict.
 - **open / conditional deps cited:**
   - `MINIMAL_AXIOMS_2026-06-05.md`
+- **auditor confidence:** high
+
+### `single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17`
+
+- **Note:** [`SINGLE_CLOCK_INDEPENDENT_COMMUTING_TRANSFER_FACTOR_N5_NO_GO_NOTE_2026-06-17.md`](../../docs/SINGLE_CLOCK_INDEPENDENT_COMMUTING_TRANSFER_FACTOR_N5_NO_GO_NOTE_2026-06-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The minimal two-site tensor-product, finite-Stone, and additive-record surface does not algebraically exclude independent commuting local transfer factors or establish B-AXIS.3.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00097-single_clock_independent_com`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The lifted factor transfers commute exactly while their generators span a two-dimensional tangent space, so product-transfer Stone uniqueness does not erase the independent factor flows.  _(class `C`)_
+- **chain closes:** True — The explicit two-qubit construction produces positive invertible commuting transfers, linearly independent factor generators, and compatible additive record counters, while the product logarithm recovers only the supplied diagonal generator. This suffices for the narrowly stated route-pruning conclusion without asserting that either factor is a physical clock.
+- **rationale:** The runner genuinely instantiates the one-qubit tensor algebra and performs the load-bearing positivity, commutation, rank, product-log, orbit-separation, and record-additivity calculations rather than printing predetermined outcomes or importing a contested numerical value. The construction establishes compatibility of independent factor flows with the named algebraic surface, which is exactly the bounded no-go claimed. The note properly separates that result from the stronger assertion that a second physical clock exists.
 - **auditor confidence:** high
 
 ### `single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16`

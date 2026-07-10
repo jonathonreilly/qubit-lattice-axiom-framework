@@ -85,25 +85,25 @@ convention alignment). Then:
   numerically for `SU(2)` and `SU(3)` and exactly for the listed finite
   testbeds; those checks support the factorization but are not its proof.
 
-- **H4 (checked pointwise positivity — Boltzmann sensibility).** For the
-  groups and parameter values exercised by the runner, `K_t > 0` pointwise,
-  so `S_HK = −log K_t` is a real action and the HK weight is a genuine
-  Boltzmann factor on those checked surfaces. Certified per group: `Z_N` exact evaluation; `U(1)` via
+- **H4 (pointwise-positivity boundary — Boltzmann sensibility).** For `Z_N`
+  at the enumerated values and for `U(1)`, the runner establishes `K_t > 0`
+  pointwise: `Z_N` by exact evaluation and `U(1)` via
   the Poisson-summation (Jacobi theta) identity
   `Σ_n e^{−tn²/2} e^{inθ} = √(2π/t) Σ_m e^{−(θ−2πm)²/(2t)}` — a sum of
-  manifestly positive Gaussian terms; `SU(2)` and `SU(3)` by a
-  grid-plus-Lipschitz-plus-truncation-tail certificate (margin strictly
-  exceeds the certified evaluation error), exercised at the runner's printed
-  `t` values. H4 is **not** needed for H3 (the
+  manifestly positive Gaussian terms. For `SU(2)` and `SU(3)`, the finite
+  character truncations are positive on the sampled grids at the printed
+  `t` values, but this is numerical evidence only: no analytic infinite-tail
+  bound is proved here. H4 is **not** needed for H3 (the
   Gram argument uses realness and spectral positivity, not pointwise
-  positivity). No all-compact-group pointwise-positivity claim is inferred
-  from these finite testbeds.
+  positivity). Strict pointwise positivity for the full `SU(2)`/`SU(3)` heat
+  kernels remains a standard-theorem/import or analytic-tail gate outside the
+  runner's certified claim.
 
 **Bounded scope.** The theorem is about the HK **candidate** weight for a
 specified central heat semigroup on the narrow two-slice carrier. It makes
 the RP coefficient step manifest on that candidate; it does not select the
-candidate or establish pointwise positivity beyond the checked groups and
-parameters (see boundary below).
+candidate or establish full-kernel pointwise positivity for `SU(2)`/`SU(3)`
+(see boundary below).
 
 ## Why the heat-semigroup form is useful
 
@@ -155,13 +155,14 @@ Two structural bonuses, both re-proved in the runner rather than cited:
 |---|---|---|---|---|
 | `Z_N` | manifest + enumerated | exact (1-dim reps) | **exact** double sum, all configs | exact evaluation |
 | `U(1)` | manifest | exact coefficient algebra | quadrature (trig-exact grid) | Poisson identity, term-positive |
-| `SU(2)` | manifest + tail bound | exact to 1e−12 (symmetric-power reps) | seeded MC, tolerance-gated | grid + Lipschitz + tail certificate |
-| `SU(3)` | manifest + tail bound | exact to 1e−11 (fund + adjoint) | seeded MC, tolerance-gated | grid + Lipschitz + tail certificate |
+| `SU(2)` | manifest + enumerated | exact to 1e−12 (symmetric-power reps) | seeded MC, tolerance-gated | finite-truncation grid evidence |
+| `SU(3)` | manifest + enumerated | exact to 1e−11 (fund + adjoint) | seeded MC, tolerance-gated | finite-truncation grid evidence |
 
 The `SU(2)`/`SU(3)` integrated Grams are Monte-Carlo estimates (fixed seeds,
 printed tolerances). The deterministic H1/H2 coefficient algebra and
 semigroup/normalization identities are exact on their stated surface. H4 is
-certified only for the groups and parameter values listed in the table.
+proved for `Z_N`/`U(1)` as stated and is support-only for the sampled
+`SU(2)`/`SU(3)` truncations.
 
 ## What this note does NOT claim
 
@@ -225,8 +226,9 @@ above):** `HEAT_KERNEL_UNIQUE_DIFFUSION_KERNEL_AMONG_CANDIDATE_GAUGE_ACTIONS_NAR
 - **Part A — H1.** Enumerated strict positivity of `c_λ(t)` for `Z_N`
   (`N ∈ {2,…,6}`), `U(1)` (`|n| ≤ 30`), `SU(2)` (`j ≤ 15`), `SU(3)`
   (`p+q ≤ 10`), at several `t`; `SU(3)` dimension/Casimir spot checks
-  (`d(1,0)=3, C₂=4/3`; `d(1,1)=8, C₂=3`; `d(2,1)=15`; `d(2,2)=27`);
-  superexponential truncation-tail bounds with geometric-majorant guards.
+  (`d(1,0)=3, C₂=4/3`; `d(1,1)=8, C₂=3`; `d(2,1)=15`; `d(2,2)=27`).
+  Coefficient positivity itself is analytic from H1; these finite checks are
+  implementation sanity checks.
 - **Part B — H2 algebra + conventions.** Exact coefficient-level semigroup
   `c_λ(s)c_λ(t)/d_λ = c_λ(s+t)` (all four groups); `Z_N` kernel-level
   convolution `K_s ∗ K_t = K_{s+t}` exact; trivial-coefficient normalization
@@ -236,10 +238,9 @@ above):** `HEAT_KERNEL_UNIQUE_DIFFUSION_KERNEL_AMONG_CANDIDATE_GAUGE_ACTIONS_NAR
   machinery the `SU(3)` checks use); `U(1)` Poisson/Jacobi-theta identity to
   1e−10.
 - **Part C — H4.** `Z_N` exact pointwise minima; `U(1)` term-positive Gaussian
-  representation + grid minimum; `SU(2)`/`SU(3)` certificates: grid minimum
-  − Lipschitz·(spacing/2) − truncation tail > 0, with the Lipschitz constant
-  from explicit character-derivative bounds (`|χ_j′| ≤ 2j(2j+1)`;
-  `SU(3)` weight-phase degree ≤ p+q per torus angle → `|∂χ| ≤ d_λ(p+q)`).
+  representation + grid minimum; `SU(2)`/`SU(3)` finite-truncation grid
+  minima as numerical evidence only. No sampled finite-ratio estimate is used
+  as an infinite-tail bound.
 - **Part D — H2 cut factorization.** `χ_λ(AB†) = Σ_{ij} π_λ(A)_{ij}
   conj(π_λ(B)_{ij})` exact on seeded random pairs: `Z_N` (all reps), `SU(2)`
   (symmetric-power reps `j ∈ {1/2, 1, 3/2, 2}`), `SU(3)` (fundamental and
@@ -272,6 +273,7 @@ On the spectral heat-semigroup parametrization, coefficient positivity is
 manifest, the retained gauge-half Cauchy–Schwarz mechanism runs natively, and
 the antilinear-reflection control still separates the mechanism from vacuous
 positivity. The runner checks the integrated `SU(3)` Gram as a numerical
-instance and certifies pointwise positivity only on its enumerated group and
-parameter surfaces. The remaining open path is action selection; this note
+instance. It proves pointwise positivity for the stated `Z_N`/`U(1)` surfaces
+and reports only finite-truncation evidence for `SU(2)`/`SU(3)`. The remaining
+open paths are the full-kernel positivity authority and action selection; this note
 does not choose the heat-kernel candidate or rule out the Wilson route.

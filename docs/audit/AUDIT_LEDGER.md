@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 942 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1766 |
+| unaudited | 1765 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 112 |
-| ~~audited_failed~~ | 7 |
+| ~~audited_failed~~ | 8 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -71,10 +71,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1353 |
 | `audited_conditional` | 112 |
 | `audited_decoration` | 62 |
-| `audited_failed` | 29 |
+| `audited_failed` | 30 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2111 |
+| `unaudited` | 2110 |
 
 | claim_type | count |
 |---|---:|
@@ -1681,6 +1681,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `cluster_decomposition_lr_poisson_tail_repair_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
+| `corner_transfer_extends_to_fixed_gauge_backgrounds_bounded_note_2026-06-12` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -4836,6 +4837,21 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
   - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
   - `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`
   - `KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md`
+- **auditor confidence:** high
+
+### `corner_transfer_extends_to_fixed_gauge_backgrounds_bounded_note_2026-06-12`
+
+- **Note:** [`CORNER_TRANSFER_EXTENDS_TO_FIXED_GAUGE_BACKGROUNDS_BOUNDED_NOTE_2026-06-12.md`](../../docs/CORNER_TRANSFER_EXTENDS_TO_FIXED_GAUGE_BACKGROUNDS_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The fixed-background channel decomposition, corner tensor-product positivity, trace/determinant correspondence, and K/complement relations were audited without any U-integrated gauge-dynamics claim.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00051-corner_transfer_extends_to_f`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because the internal circulant mass commutes with the spatial gauge action, the fixed-background transfer splits into positive channel transfers whose tensor product is positive, while K is asserted to relate the channel kernels at U and conj(U) by a doublet swap.  _(class `A`)_
+- **chain closes:** False — N1–N3 close algebraically, but the unrestricted N4 relation does not follow from the cited authorities or runner. The runner tests only the degenerate L_s=2 U(1) carrier; generally background conjugation gives t[conj(U)]=conj(t[U]), not the asserted raw same-matrix equality used by N4a/N4c and N5.
+- **rationale:** The tensor-product positivity and finite-fermion trace identities are sound algebraic consequences of retained-grade inputs. However, the L_s=2 U(1) runner surface makes the channel kernel insensitive to the complex structure that distinguishes t[U] from t[conj(U)], so its passing N4 checks do not support the claimed every-background SU(3)/U(1) operator relation. The registrability authority also explicitly leaves the physical species-readout identification open, preventing the stated N5 narrowing from repairing this gap.
+- **open / conditional deps cited:**
+  - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
 - **auditor confidence:** high
 
 ### `coulomb_stability_upper_bound_support_note_2026-05-20`

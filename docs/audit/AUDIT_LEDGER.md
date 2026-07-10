@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 941 |
+| **retained_bounded** | 942 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1740 |
+| unaudited | 1739 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 15 |
-| `audited_clean` | 1356 |
+| `audited_clean` | 1357 |
 | `audited_conditional` | 126 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2087 |
+| `unaudited` | 2086 |
 
 | claim_type | count |
 |---|---:|
@@ -737,6 +737,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hypercharge_traceless_central_direction_requires_multi_summand_supplied_structure_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
+| `i1_native_quadratic_static_source_normalization_bridge_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -10833,6 +10834,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For Z(q) = q_1 Z_1 + ... + q_N Z_N, tr Z(q) = 6i(q_1 + ... + q_N), so the traceless central condition is q_1 + ... + q_N = 0 and the traceless central subspace has dimension N-1.  _(class `A`)_
 - **chain closes:** True — The algebraic closure from factorwise central projectors to one trace-zero equation is exact in the supplied direct-sum surface. The retained-bounded dependencies supply only the allowed factor-preservation and 3/3bar arithmetic boundaries, not physical hypercharge or a multi-summand supplier.
 - **rationale:** Clean within the bounded supplied-summand scope. The runner verifies the central-dimension and traceless-dimension algebra, the two-summand typed-constraint coincidence, commutant dimensions, quote guards, and AST discipline with TOTAL PASS=13 FAIL=0 and py_compile passing. Residual risk is scope drift only: downstream rows must not cite this as a physical hypercharge derivation or as deriving the multi-summand supplier.
+- **auditor confidence:** high
+
+### `i1_native_quadratic_static_source_normalization_bridge_2026-06-08`
+
+- **Note:** [`I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-periodic-lattice completion-of-square algebra for the explicitly supplied source-normalized quadratic action, including its effective-action cross term and the retained Green-kernel asymptotic, but excluding physical source normalization and energy readout.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00009-i1_native_quadratic_static_s`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Completing the supplied quadratic action on the zero-mean subspace gives S_eff[J] = -(g^2/2)<J,L^+J>, whose two-source cross term is -g^2 s_1 s_2 G(r).  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the supplied action and graph-Laplacian identity algebraically imply the stationary equation, effective action, and two-source cross term. The retained-bounded Green-kernel authority supplies the separate large-distance coefficient.
+- **rationale:** The load-bearing result is genuine completion-of-square algebra on the zero-mean lattice subspace, and the cited retained-bounded authority independently supplies the Green-kernel asymptotic. The runner constructs the lattice Laplacian and pseudoinverse and checks stationarity, the minimum, the cross term, and both source and coupling scaling rather than merely printing the claimed result. This verdict does not extend to the explicitly excluded physical source-coupling normalization or effective-action-to-energy bridge.
 - **auditor confidence:** high
 
 ### `i3_zero_exact_theorem_note`

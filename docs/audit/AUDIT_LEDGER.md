@@ -28,7 +28,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 135 |
+| ~~audited_conditional~~ | 136 |
 | ~~audited_failed~~ | 12 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,7 +73,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1374 |
-| `audited_conditional` | 135 |
+| `audited_conditional` | 136 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
@@ -82,7 +82,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2024 |
+| `bounded_theorem` | 2025 |
 | `decoration` | 72 |
 | `meta` | 353 |
 | `no_go` | 482 |
@@ -94,15 +94,15 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 687 |
 | `high` | 447 |
 | `medium` | 954 |
-| `leaf` | 1627 |
+| `leaf` | 1628 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3375
-- runners with (C) first-principles compute hits: 1779
+- runners classified: 3376
+- runners with (C) first-principles compute hits: 1780
 - runners with (D) external comparator hits: 1080
 - decoration candidates (no C, no D): 710
 
@@ -112,30 +112,30 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1934 | 217.92 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1193 | 67.22 | `audited_clean` | **retained** |
+| 1 | `minimal_axioms` | meta | critical | 1935 | 218.42 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1194 | 67.22 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 65.64 | `audited_clean` | **retained** |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1583 | 65.63 | `audited_clean` | **retained** |
-| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1024 | 64.50 | `audited_clean` | **retained_bounded** |
-| 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1154 | 53.17 | `audited_clean` | **retained_bounded** |
-| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1054 | 48.04 | `unaudited` | meta |
-| 8 | `key_terminology` | meta | critical | 1168 | 46.69 | `unaudited` | meta |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 927 | 43.86 | `audited_clean` | **retained_bounded** |
-| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1295 | 43.34 | `unaudited` | unaudited |
-| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1032 | 42.01 | `audited_clean` | **retained_bounded** |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1542 | 41.59 | `audited_clean` | **retained** |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1028 | 39.51 | `audited_clean` | **retained_bounded** |
-| 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 319 | 39.32 | `unaudited` | unaudited |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1584 | 65.63 | `audited_clean` | **retained** |
+| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1025 | 64.50 | `audited_clean` | **retained_bounded** |
+| 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1155 | 53.17 | `audited_clean` | **retained_bounded** |
+| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1055 | 48.04 | `unaudited` | meta |
+| 8 | `key_terminology` | meta | critical | 1169 | 46.69 | `unaudited` | meta |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 928 | 43.86 | `audited_clean` | **retained_bounded** |
+| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1296 | 43.34 | `unaudited` | unaudited |
+| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1033 | 42.01 | `audited_clean` | **retained_bounded** |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1543 | 41.59 | `audited_clean` | **retained** |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1029 | 39.51 | `audited_clean` | **retained_bounded** |
+| 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 320 | 39.33 | `unaudited` | unaudited |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 312 | 37.79 | `unaudited` | unaudited |
-| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 868 | 37.76 | `audited_clean` | **retained_no_go** |
-| 17 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 581 | 37.19 | `audited_conditional` | ~~audited_conditional~~ |
-| 18 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 537 | 36.57 | `unaudited` | unaudited |
-| 19 | `kinetic_isotropy_primitive` | meta | critical | 465 | 36.36 | `unaudited` | meta |
-| 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 847 | 36.23 | `unaudited` | unaudited |
-| 21 | `cpt_exact_note` | positive_theorem | critical | 730 | 36.01 | `audited_clean` | **retained** |
+| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 869 | 37.77 | `audited_clean` | **retained_no_go** |
+| 17 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 582 | 37.19 | `audited_conditional` | ~~audited_conditional~~ |
+| 18 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 538 | 36.57 | `unaudited` | unaudited |
+| 19 | `kinetic_isotropy_primitive` | meta | critical | 466 | 36.37 | `unaudited` | meta |
+| 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 848 | 36.23 | `unaudited` | unaudited |
+| 21 | `cpt_exact_note` | positive_theorem | critical | 731 | 36.02 | `audited_clean` | **retained** |
 | 22 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
-| 23 | `three_generation_structure_note` | bounded_theorem | critical | 1024 | 35.50 | `audited_clean` | **retained_bounded** |
-| 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 844 | 34.72 | `unaudited` | unaudited |
+| 23 | `three_generation_structure_note` | bounded_theorem | critical | 1025 | 35.50 | `audited_clean` | **retained_bounded** |
+| 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 845 | 34.73 | `unaudited` | unaudited |
 | 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | decoration | critical | 354 | 33.97 | `audited_decoration` | `decoration_under_three_generation_observable_theorem_note` |
 
 
@@ -1579,6 +1579,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_record_readout_form_not_weight_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_link_central_registration_induced_bi_invariant_step_kernel_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -8987,6 +8988,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** There exist non-factor-local choices of U for which U S U* is not the original factorwise embedding, while S, U S U*, and full u(6) share the relevant invariant/commutant profiles; therefore those carrier-level invariant data cannot select the factorwise embedding.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from exact finite-dimensional linear algebra on the supplied C^3 x C^2 carrier plus the minimal-axiom boundary that Lattice/Qubit/Record do not themselves supply carrier factorization, gauge action, MR_color, or chirality. No hidden physical bridge is used inside the audited scope.
 - **rationale:** The load-bearing step is a finite-dimensional algebraic witness: S is closed, 12-dimensional, irreducible with scalar commutant; a non-factor-local unitary conjugate has the same invariant profile but is not the factorwise embedding; and full u(6) shares the scalar-commutant irreducibility profile. The runner completed with SCORECARD PASS=8 FAIL=0 and checks matrix rank, Lie closure residuals, commutant dimension, center dimension, distinctness, and operator-Schmidt non-factor-locality. The source note keeps the no-go narrowly bounded to route pruning and does not claim a broad no-go against future gauge selection.
+- **auditor confidence:** high
+
+### `gauge_link_central_registration_induced_bi_invariant_step_kernel_theorem_note_2026-07-02`
+
+- **Note:** [`GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md`](../../docs/GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The implication from real-nonnegative Peter-Weyl-scalar Kraus blocks to normalized conjugation-invariant symmetric positive-character kernels, its finite S3/Q8 witnesses, and the claimed compact SU(3) softness/rate extension.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-fresh-row7`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** For K_j = sum_R sqrt(m_j(R)) P_R with nonnegative real coefficients and sum_j m_j(R)=1, T(g|h)=sum_j|kappa_j(gh^{-1})|^2 is normalized, conjugation-invariant, inversion-symmetric, and has nonnegative character coefficients.  _(class `A`)_
+- **chain closes:** False — The finite-group algebra closes for the explicitly positive square-root Kraus subclass. The complete row does not close because centrality alone omits the phase condition, the compact normalization and SU(3) distance conventions drift from the source authorities, the rate claim lacks a clock or generator, and one direct dependency is not retained-grade.
+- **rationale:** Issue: The row attributes representation positivity to registration-centrality although relative isotypic phases can make a central trace-preserving instrument's character coefficient negative; it also reuses the finite |G| normalization ambiguously in the compact truncation and calls a per-step variance a derived rate. Why this blocks: The broad central-registration, compact SU(3) numerical-normalization, and rate surfaces do not follow from the stated inputs, and the direct semigroup dependency is not retained-grade. Repair target: Restrict the theorem to the positive Lueders subclass, state the normalized-Haar N_trunc^(-1/2) amplitude convention, specify and implement a traceless-log branch or explicitly name the alternative metric, replace rate by per-step variance, and re-audit after the semigroup dependency reaches retained grade. Claim boundary until fixed: The exact finite S3/Q8 theorem for the explicitly written nonnegative square-root Kraus blocks remains valid; the runner's SU(3) numbers describe only its private principal-phase step-size convention, not a canonically derived physical rate. No-Go Discipline: FAIL at N3/N4/N5/N7 because the phase, compact-normalization, residual-matching, rate-rhetoric, and alternative-metric conditions are not all explicit or closed.
+- **open / conditional deps cited:**
+  - `RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02`

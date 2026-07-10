@@ -37680,6 +37680,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_three_generation_structure_narrow_spectrum.py"
     },
+    "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09": {
+      "assert_count": 1,
+      "counts": {
+        "A": 27,
+        "B": 0,
+        "C": 8,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/tick_cell_selection_by_translation_and_variation_clauses_2026_07_09.py"
+    },
     "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10": {
       "assert_count": 1,
       "counts": {
@@ -91501,6 +91513,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/tick_cell_selection_by_translation_and_variation_clauses_2026_07_09.py": {
+      "assert_count": 1,
+      "claims": [
+        "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09"
+      ],
+      "counts": {
+        "A": 27,
+        "B": 0,
+        "C": 8,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/tick_unitarity_from_spectrum_reflection_conjugacy_2026_06_10.py": {
       "assert_count": 1,
       "claims": [
@@ -92640,14 +92667,14 @@
   "stats": {
     "decoration_candidates": 710,
     "dominant_class_distribution": {
-      "A": 503,
+      "A": 504,
       "B": 658,
       "C": 1305,
       "D": 451,
       "none": 458
     },
-    "runners_classified": 3375,
-    "runners_with_C": 1779,
+    "runners_classified": 3376,
+    "runners_with_C": 1780,
     "runners_with_D": 1080
   }
 }

@@ -42893,6 +42893,14 @@
       "to": "three_generation_observable_theorem_note"
     },
     {
+      "from": "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09",
+      "to": "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09"
+    },
+    {
+      "from": "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10",
       "to": "cpt_exact_note"
     },
@@ -111893,7 +111901,7 @@
         "axiom_first_spectrum_condition_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "94729ec985354c6cc693f1d2da2513be9e0f0107240d40283022e7b37f66cad8",
+      "note_hash": "111f2d67960a638bc96f0f6b3247c0fa459f125c92572c0501501e41752fee9f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -120964,6 +120972,21 @@
       "runner_path": "scripts/frontier_three_generation_structure_narrow_spectrum.py",
       "title": "Three-Generation Matter Structure Note"
     },
+    "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09": {
+      "claim_id": "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "114ba59e682972f290df470de2aafe350d0b71b0825028c71aef762a6d9fab57",
+      "path": "docs/TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md",
+      "runner_path": "scripts/tick_cell_selection_by_translation_and_variation_clauses_2026_07_09.py",
+      "title": "Conditional Tick-Cell Selection Under the Translation and Variation Predicates"
+    },
     "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10": {
       "claim_id": "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -128712,7 +128735,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1607,
+      "bounded_theorem": 1608,
       "decoration": 3,
       "meta": 326,
       "no_go": 333,
@@ -128721,7 +128744,7 @@
       "positive_theorem": 274
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2011,
+      "bounded_theorem": 2012,
       "decoration": 3,
       "meta": 326,
       "no_go": 436,
@@ -128729,10 +128752,10 @@
       "open_gate": 205,
       "positive_theorem": 657
     },
-    "edge_count": 14565,
-    "leaf_count": 1303,
-    "node_count": 3886,
+    "edge_count": 14567,
+    "leaf_count": 1304,
+    "node_count": 3887,
     "root_count": 1104,
-    "runners_with_path": 3508
+    "runners_with_path": 3509
   }
 }

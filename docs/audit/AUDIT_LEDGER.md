@@ -19,15 +19,15 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 198 |
-| **retained_no_go** | 210 |
-| **retained_bounded** | 941 |
+| **retained_no_go** | 209 |
+| **retained_bounded** | 940 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1740 |
+| unaudited | 1744 |
 | audit_in_progress | 1 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 35 |
+| ~~audited_renaming~~ | 33 |
 | ~~audited_conditional~~ | 139 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -71,14 +71,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 20 |
-| `audited_clean` | 1341 |
+| `audit_in_progress` | 19 |
+| `audited_clean` | 1340 |
 | `audited_conditional` | 139 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 35 |
-| `unaudited` | 2087 |
+| `audited_renaming` | 33 |
+| `unaudited` | 2091 |
 
 | claim_type | count |
 |---|---:|
@@ -148,7 +148,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
-| `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-current | C | - |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-current | B | - |
@@ -510,7 +509,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `flavor_detr_default_full_exercise_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_einselection_2sector_modulo_kreality_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -547,7 +545,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `formation_rate_law_class_reduction_bounded_note_2026-07-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
@@ -806,6 +803,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_positive_parent_axis_obstruction_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `koide_q23_oh_covariance_nogo_note_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_bridge_single_primitive_note_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -1775,8 +1773,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `hierarchy_formula_ew_vev_observable_identification_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
-| `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
-| `koide_three_measures_three_observables_note_2026-05-31` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
@@ -7343,19 +7339,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The runner source actually constructs the Pauli matrices, two-qubit tensor operators, Jordan-Wigner dressed ladders, finite Z2^3 hopping matrix, epsilon parity, and graph Laplacian rather than merely printing constants. An independent formula pass confirms the relevant signs and identities: sigma_+^2=0, bare cross-site ladders commute, the JW pair anticommutes, both generated algebras span dimension 16, c2=Z tensor sigma_- is not of form I tensor B, the Pauli anticommutator cancels cross terms in the supplied symbol square, nearest-neighbor hopping flips epsilon, and L=deg I-hop is symmetric/A2-local while neither commuting nor anticommuting with epsilon. There are no cited non-retained authorities or external comparator imports in the restricted packet. The audited result is bounded finite-algebra support only, not any excluded downstream physics bridge.
 - **auditor confidence:** high
 
-### `flavor_detr_default_full_exercise_note_2026-05-30`
-
-- **Note:** [`FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md`](../../docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded finite-algebra locator: within the tested C3/Z2^3 and R[Z3] structures, det_C/equal-block counting is not forced, det_R/dimension and det_C/center-count remain an unranked counting fork, and no default/reference-state claim is made.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260614-025110-b5e2c17ae7-flavor_detr_default_full_exe`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The tested native structures do not make det_C/equal-block counting automatic; r=1/2 (Q=2/3) remains a localized counting/measure input unless another retained selector supplies it.  _(class `A`)_
-- **chain closes:** True — The finite matrix and character identities close the route-pruning statement only for the tested structures. The retained-grade authorities supply the r/Q endpoint dictionary and the block-vs-dimension fork, while no beta=0 reference-state or physical selector is imported.
-- **rationale:** The runner performs five finite algebra checks plus one source-boundary guard, not a first-principles physical selector derivation. Independently, C^3 gives e^{3iα}=1, iI3 has zero Hilbert-Schmidt projection on (C-C^2)/sqrt(3), Z2^3 characters are real ±1, ||{G,Gamma_chi}||_F=2sqrt(2), and Q=1/3+(2/3)r gives the stated r=1/2 and r=1 endpoints. The cited retained and retained_bounded authorities support exactly the narrowed counting-fork locator and leave physical weighting selection open, matching the claim scope.
-- **auditor confidence:** high
-
 ### `flavor_doublet_metric_default_is_detr_2026-06-02`
 
 - **Note:** [`FLAVOR_DOUBLET_METRIC_DEFAULT_IS_DETR_2026-06-02.md`](../../docs/FLAVOR_DOUBLET_METRIC_DEFAULT_IS_DETR_2026-06-02.md)
@@ -7867,19 +7850,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the supplied path r(t)=tanh(t)^4, dr/dt=4 tanh(t)^3 sech(t)^2>0 for finite t>0 with endpoints 0 and 1, so r=1/2 is crossed rather than selected as an attractor.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the conclusion follows from the retained Koide identification Q=2/3 iff r=1/2 plus exact algebra/calculus on the displayed maps and supplied path. No framework-native derivation of r(t)=tanh(t)^4 or physical arrow selection is established or needed for the narrowed claim.
 - **rationale:** The load-bearing calculation is an exact algebraic and differential check on supplied inputs: the maps are inverse branches with fixed points {0,1/2}, their multipliers at 1/2 flip stability, and tanh(t)^4 is monotone from 0 to 1 for finite t>0. The retained Koide lightcone authority supplies the only upstream identification needed, Q=2/3 iff r=1/2 on this C3-circulant line. The runner source genuinely recomputes the symbolic identities and path checks rather than merely printing expected PASS lines. This clean verdict applies only to the bounded route-pruning statement and does not ratify any unclaimed framework-native beta law or physical heat-kernel arrow selection.
-- **auditor confidence:** high
-
-### `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`
-
-- **Note:** [`FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Under the explicit formal finite-carrier hypotheses F1-F3, the tracial/product/modular reference route selects dimension weighting (1,2), not the equal-block weighting that would give Q=2/3.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-09f3681280-flavor_tracial_reference_doe`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** For rho=I_3/3 on the finite C3 carrier, Tr(rho e0):Tr(rho e1)=1/3:2/3=1:2, so the tracial/product/modular route gives r=1 and Q=1 rather than the equal-block r=1/2, Q=2/3 point.  _(class `A`)_
-- **chain closes:** True — The chain closes as a narrow route-pruning theorem: exact finite matrix algebra gives ranks 1 and 2 for e0 and e1, the trace weights those blocks by dimension, and the retained cited authorities supply the Q=1/3+(2/3)r coordinate and endpoint dictionary. No physical generation bridge, flavor-sector identification, measured-mass readout, or absolute obstruction to Q=2/3 is claimed.
-- **rationale:** The load-bearing step is an algebraic closure over the supplied finite C3 carrier and retained Q-coordinate inputs, not a tuned numerical match or definition substitution. An independent exact check confirms C^3=I, e0/e1 are orthogonal projectors of ranks 1 and 2, Tr((I/3)e0)=1/3, Tr((I/3)e1)=2/3, and the Q endpoints r=1 -> Q=1 and r=1/2 -> Q=2/3. The runner source materially computes these finite facts and uses no external comparator. The no-go discipline gate is satisfied only in the narrow route-pruning sense: non-tracial, chiral, finite-gap, and explicit block-measure routes remain open.
 - **auditor confidence:** high
 
 ### `flavor_value_campaign_capstone_four_channel_2026-05-31`
@@ -11944,6 +11914,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
   - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
+### `koide_q23_block_weight_frontier_bounded_note_2026-05-29`
+
+- **Note:** [`KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`](../../docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact C_3-character power identity, the Q values produced by three stipulated isotype-weight prescriptions, and the counting-versus-splitting localization; no physical selection of the equal-block prescription.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00006-koide_q23_block_weight_front`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** With E_+ = 3a^2 and E_perp = 6|b|^2, Q = 1/3 + (2/3)|b|^2/a^2, so Q = 2/3 exactly when the singlet and doublet powers are equal.  _(class `A`)_
+- **chain closes:** True — Parseval and direct substitution establish the power formula and all three tabulated values. The retained one-hop operator authorities establish the stated counting-versus-splitting localization, while the physical equal-block selector is explicitly excluded from scope.
+- **rationale:** The bounded algebra follows exactly from retained-grade C_3 Fourier identities, and the operator localization follows from the retained same-factor commutation and anti-commutation results. The runner performs 19 genuine finite algebraic or operator checks and accurately states that it does not derive or approve the physical equal-block rule. Consequently the scoped theorem closes without importing that unresolved physical selection.
+- **auditor confidence:** high
+
 ### `koide_q23_oh_covariance_nogo_note_2026-04-22`
 
 - **Note:** [`KOIDE_Q23_OH_COVARIANCE_NOGO_NOTE_2026-04-22.md`](../../docs/KOIDE_Q23_OH_COVARIANCE_NOGO_NOTE_2026-04-22.md)
@@ -12141,21 +12124,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** Issue: the runner hard-codes the superseded premise that a Record outcome is a K/CPT orbit, including a check(True), rather than deriving it from the supplied current authority. Why this blocks: MINIMAL_AXIOMS_2026-06-29 explicitly identifies K/CPT orbit structure as downstream readout-context content, so the asserted phase exclusion and gate unification do not follow from the restricted inputs. Repair target: supply a retained theorem constructing the central-sector readout context, fixed conjugation, and orbit-factorization rule. Claim boundary until fixed: the ±J classification, K pairing, and conditional consequences of an assumed orbit-valued readout remain supportable.
 - **auditor confidence:** high
 
-### `koide_readout_channel_map_note_2026-05-31`
-
-- **Note:** [`KOIDE_READOUT_CHANNEL_MAP_NOTE_2026-05-31.md`](../../docs/KOIDE_READOUT_CHANNEL_MAP_NOTE_2026-05-31.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The finite circulant trace and Koide-ratio identities, the cyclotomic evaluation L_3(1,2)=2/9, phase independence of Q, and their asserted bookkeeping identification as readouts of one operator.
-- **audit_status:** ~~audited_renaming~~
-- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00075-koide_readout_channel_map_no`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** The spectral-asymmetry weight and the other listed quantities are finite readouts or projections of the same circulant operator H.  _(class `F`)_
-- **chain closes:** False — The separate algebraic identities close, but no map derives L_3(1,2) from H, its eigenvalue signs, or its spectral flow. The runner evaluates L_N from an independently specified weight tuple and then merely conjoins that result with the H-based checks.
-- **rationale:** Issue: the runner labels an independently computed cyclotomic weight sum as a spectral-asymmetry projection of H without constructing that projection. Why this blocks: the final F5 check only conjoins earlier booleans and does not establish the claimed common-operator readout map. Repair target: derive an explicit finite map from H, with specified symmetry operator, spectral object, and weights, to L_3(1,2), and compute that map in the runner. Claim boundary until fixed: the trace, Q, phase-independence, and cyclotomic identities remain valid as separate algebraic statements.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md`
-- **auditor confidence:** high
-
 ### `koide_readout_lane_demarcation_note_2026-05-30`
 
 - **Note:** [`KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md`](../../docs/KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md)
@@ -12283,19 +12251,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Because T1 is invariant under U, P1 commutes with U and U|T1=C, giving P1 A8(X) P1 = A3(P1 X P1); the Schur block covariance then gives C S(M)=S(M) C.  _(class `A`)_
 - **chain closes:** True — All load-bearing objects are defined inside the packet: the finite basis, cycle U, projector P1, T1 cycle C, averaging maps, cyclic basis, and Schur complement. The descent identity follows by finite matrix algebra, and the Schur-compatible response factorization follows from block covariance and cyclic-basis orthogonality.
 - **rationale:** The central descent is a genuine algebraic identity over explicitly defined finite matrices, not a physical bridge or numerical fit. The runner source constructs the cycle, projector, matrix units, orbit channels, and Schur samples directly, with no imported contested value or external comparator; the exact matrix-unit checks substantiate the averaging/compression identity. The physical charged-lepton carrier/readout interpretation, microscopic source law, selector law, and mass readout are explicitly outside the audited scope, so they do not block this bounded finite theorem.
-- **auditor confidence:** high
-
-### `koide_three_measures_three_observables_note_2026-05-31`
-
-- **Note:** [`KOIDE_THREE_MEASURES_THREE_OBSERVABLES_NOTE_2026-05-31.md`](../../docs/KOIDE_THREE_MEASURES_THREE_OBSERVABLES_NOTE_2026-05-31.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The separate C3 arithmetic yields Q values 1/3, 2/3, and 1 and the cyclotomic value L_3(1,2)=2/9, but the asserted common dimension-weight interpretation was also audited.
-- **audit_status:** ~~audited_renaming~~
-- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00076-koide_three_measures_three_o`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** The dimension weight gives Q=1 under the Q-readout and L_3(1,2)=2/9 under the spectral-asymmetry readout as the same (1,2) weight.  _(class `F`)_
-- **chain closes:** False — The separate algebraic evaluations close. No cited step maps the singlet/doublet multiplicity pair (mu,nu)=(1,2) used by the Q readout to the transverse character-weight tuple a=(1,2) used by L_3, so shared notation and the identity 2/9=(3-1)/3^2 do not establish that they are the same weight.
-- **rationale:** The retained authorities support the Q table and the exact value L_3(1,2)=2/9 separately. The runner performs seven genuine arithmetic checks, but its F3 tests merely conjoin those results while labeling two semantically different tuples as the same dimension weight. Thus the claimed spectral-asymmetry interpretation is a symbol-identification step, not a derived bridge.
 - **auditor confidence:** high
 
 ### `koide_tracial_standard_form_carrier_narrow_note_2026-06-02`

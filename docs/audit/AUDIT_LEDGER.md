@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 937 |
+| **retained_bounded** | 938 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 27 |
-| unaudited | 1751 |
+| unaudited | 1750 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1352 |
+| `audited_clean` | 1353 |
 | `audited_conditional` | 121 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2098 |
+| `unaudited` | 2097 |
 
 | claim_type | count |
 |---|---:|
@@ -1213,6 +1213,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `source_driven_field_recovery_h025_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_driven_field_recovery_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
+| `source_field_static_law_classification_bounded_note_2026-07-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `source_measure_sharp_record_tangent_space_theorem_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -18640,6 +18641,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the declared exact 3D lattice family, the self-contained runner verifies the broad sweep and conservative pocket replay with explicit threshold gates, yielding RUNNER PASS=5 FAIL=0.  _(class `C`)_
 - **chain closes:** True — The restricted packet contains both completed stdout and source code showing the runner constructs the finite lattice, source-driven field evolution, propagation, centroid readout, exponent fits, and threshold gates inline rather than hard-coding the reported results. The claim is explicitly bounded to this declared runner family and excludes derivation of the telegraph rule, parameters, and calibration ladder from retained framework dynamics. Within that bounded scope, the target-max ladder is a fixed modeling input being swept, not an external tuned comparator or missing dependency, so the first tuple is the correct one under the hostile-review standard.
 - **rationale:** The restricted packet contains both completed stdout and source code showing the runner constructs the finite lattice, source-driven field evolution, propagation, centroid readout, exponent fits, and threshold gates inline rather than hard-coding the reported results. The claim is explicitly bounded to this declared runner family and excludes derivation of the telegraph rule, parameters, and calibration ladder from retained framework dynamics. Within that bounded scope, the target-max ladder is a fixed modeling input being swept, not an external tuned comparator or missing dependency, so the first tuple is the correct one under the hostile-review standard.
+- **auditor confidence:** high
+
+### `source_field_static_law_classification_bounded_note_2026-07-08`
+
+- **Note:** [`SOURCE_FIELD_STATIC_LAW_CLASSIFICATION_BOUNDED_NOTE_2026-07-08.md`](../../docs/SOURCE_FIELD_STATIC_LAW_CLASSIFICATION_BOUNDED_NOTE_2026-07-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact zero-mode, mean-subtracted pseudoinverse, and lattice screening identities for the declared nearest-neighbor periodic operator, plus the stated finite-lattice numerical checks.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-131002-abb23e4d-source_field_static_law_-005`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the symbol λ(k)=sum_i 2(1-cos(k_i)), every term is nonnegative and all terms vanish only at k=0, yielding the unique constant zero mode and the mean-zero solvability condition.  _(class `A`)_
+- **chain closes:** True — The structural conclusions follow algebraically from the fully specified Fourier symbol. The runner constructs that symbol, performs the FFT inversions and finite-volume comparisons, and reproduces all five reported checks without importing or hard-coding a contested result.
+- **rationale:** The theorem is correctly bounded to a declared operator class and makes no uniqueness or physical-field identification. Its exact claims follow from elementary Fourier algebra, while the supplied runner genuinely computes the finite-lattice residuals, Green-function profiles, and screened decay fits. The output agrees with the note, and no open authority or external calibrated input is load-bearing.
 - **auditor confidence:** high
 
 ### `source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30`

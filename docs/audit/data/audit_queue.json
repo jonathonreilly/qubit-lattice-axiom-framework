@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 389,
     "high": 268,
-    "leaf": 741,
+    "leaf": 740,
     "medium": 501
   },
   "cycle_break_target_count": 10,
@@ -36963,28 +36963,6 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "source_field_static_law_classification_bounded_note_2026-07-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SOURCE_FIELD_STATIC_LAW_CLASSIFICATION_BOUNDED_NOTE_2026-07-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/source_field_static_law_classification_2026_07_08.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "spectral_trajectory_theorem_2026-04-11",
@@ -56890,6 +56868,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 161,
-  "total_pending": 1899
+  "ready_count": 160,
+  "total_pending": 1898
 }

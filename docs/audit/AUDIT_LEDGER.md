@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1802 |
+| unaudited | 1801 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -33,6 +33,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
+| `decoration_under_cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -68,20 +69,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1348 |
 | `audited_conditional` | 86 |
-| `audited_decoration` | 60 |
+| `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2147 |
+| `unaudited` | 2146 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2035 |
-| `decoration` | 62 |
+| `decoration` | 63 |
 | `meta` | 351 |
 | `no_go` | 481 |
 | `open_gate` | 183 |
-| `positive_theorem` | 603 |
+| `positive_theorem` | 602 |
 
 | criticality | count |
 |---|---:|
@@ -1637,6 +1638,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `translation_abelian_composition_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.6 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `translation_covariance_local_op_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.6 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
+| `two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | cross_family | codex-gpt-5.6 | A | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` |
 | `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | cross_family | codex-gpt-5.5 | A | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` |
 | `yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
@@ -20562,6 +20564,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Under the old identity-coupling convention, both attractive and repulsive signs remain stable on the tested graph families, so consistency does not select the sign at these parameters.  _(class `D`)_
 - **chain closes:** True — The current runner compares both signs across the three registered families and reports comparable norm drift, bounded energy, stable Phi, comparable spectra, and non-sign-selective force proxies. The conclusion is bounded to the retired identity-coupling convention and tested parameter surface.
 - **rationale:** The negative-control claim closes from the source note and current runner output. It does not claim final sign selection for the corrected parity-coupled scalar channel, and the note states that boundary. Residual risk is only if downstream readers apply this old-convention result to the corrected-coupling lane.
+- **auditor confidence:** high
+
+### `two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `decoration`
+- **claim_scope:** The ordinary retained finite-block qubit tensor carrier, specialized to two distinct sites, has Hilbert dimension 4, operator algebra M₄(C), a 16-element Pauli-product basis, Bell vectors, and the corresponding finite-dimensional local-tomography count.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00011-two_site_qubit_tensor_carrie`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Specializing the retained finite-block tensor-product carrier to Λ = {x,y} gives H_xy = C²_x ⊗ C²_y, after which End(H_xy) ≅ M₂(C) ⊗ M₂(C) ≅ M₄(C).  _(class `A`)_
+- **chain closes:** True — The retained per-site authority already supplies C² factors, their Pauli realization, and the finite-block tensor-product carrier; the audited conclusions then follow by standard finite-dimensional tensor and matrix algebra. The additional retained tensor-product bridge is consistent but not necessary, while the retained no-go correctly limits the result to the explicitly supplied tensor surface.
+- **rationale:** The runner genuinely performs the advertised exact algebraic checks, and all 15 checks pass. However, the load-bearing work is only the two-site specialization of the retained per-site finite-block tensor-product claim followed by standard matrix algebra; it introduces no independent class-(C) derivation. With no external-comparator checks and one upstream parent sufficient for closure, the row is decoration-grade under the rubric.
+- **decoration parent:** `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02`
 - **auditor confidence:** high
 
 ### `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17`

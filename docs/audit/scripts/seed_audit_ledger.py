@@ -77,6 +77,8 @@ EMPTY_AUDIT = {
     "audit_date": None,
     "auditor": None,
     "auditor_family": None,
+    "auditor_model": None,
+    "auditor_reasoning_effort": None,
     "independence": None,
     "load_bearing_step": None,
     "load_bearing_step_class": None,
@@ -126,6 +128,19 @@ def reset_unaudited_audit_fields(row: dict) -> None:
     """Clear stale audit-owned residue from rows already back in the queue."""
     if row.get("audit_status") != "unaudited":
         return
+    history = list(row.get("previous_audits") or [])
+    if history:
+        last = dict(history[-1])
+        same_auditor = (
+            last.get("auditor") == row.get("auditor")
+            and last.get("auditor_family") == row.get("auditor_family")
+        )
+        if same_auditor:
+            for field in ("auditor_model", "auditor_reasoning_effort"):
+                if not last.get(field) and row.get(field):
+                    last[field] = row[field]
+            history[-1] = last
+            row["previous_audits"] = history
     for k, v in EMPTY_AUDIT.items():
         row[k] = v if not isinstance(v, (list, dict)) else (list(v) if isinstance(v, list) else dict(v))
 

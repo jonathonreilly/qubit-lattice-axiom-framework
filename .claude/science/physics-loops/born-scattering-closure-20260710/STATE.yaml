@@ -1,0 +1,44 @@
+loop_slug: born-scattering-closure-20260710
+mode: run
+target_status: best-honest-status
+started_at: 2026-07-10T00:00:00-04:00
+runtime_budget: interactive-session; no unattended runtime requested
+checkpoint_interval: after each major derivation or long runner
+cycle: 1
+science_block: 1
+branch: physics-loop/born-scattering-closure-block01-20260710
+base: origin/main@d8728888f
+lock_mode: degraded-branch-local
+lock_note: legacy /Users/jonreilly/Projects/Physics/scripts/automation_lock.py is absent; dedicated worktree and branch provide isolation
+goal: close or sharply resolve the missing first-principles derivation in docs/BORN_SCATTERING_COMPARISON_NOTE.md
+active_route: exact-observable compatibility and scale-covariance discriminator
+hard_residual: determine whether any plane-wave or positive Gaussian ray average can equal the literal first-order detector-centroid observable and explain its tested L-independent shape
+A_min:
+  - the finite directed Fam1 propagation harness and its supplied parameters when a bounded harness theorem is being tested
+  - complex-linear free propagation on the directed acyclic edge set
+  - the derivative of the detector-centroid functional with respect to the supplied weak source parameter
+  - elementary calculus, finite sums, and log-log regression definitions
+  - independently audited current-surface authorities only when explicitly named as dependencies
+forbidden_imports:
+  - the value -1.43 as a proof input or fitted target
+  - a chosen beta selected because it approaches -1.43
+  - the labels Schrodinger, Klein-Gordon, Fermat, gravitational lensing, or eikonal as semantic bridges without derivation
+  - the old centered finite-path surrogate as the literal detector-centroid observable
+  - an incoherent Gaussian ray average as a replacement for coherent amplitude propagation without proof
+  - a universal 3D beam law inferred from the 2D imposed-field harness
+files_touched:
+  - .claude/science/physics-loops/born-scattering-closure-20260710/
+open_imports:
+  - source/action and source-to-observable identification beyond the supplied finite harness
+  - derivation of the chosen finite harness parameters from the four minimal axioms
+  - any positive analytic explanation of the four-point -1.433549 slope
+no_go_routes:
+  - centered finite-path surrogate as literal detector-centroid explanation
+  - nonzero nonnegative scalar-potential path/layer reduction as exact adjoint-centroid functional on the audited fixed harness
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_findings: []
+review_disposition: pending
+pr_status: not_started
+next_exact_action: derive a formula-level incompatibility test for finite-path/Gaussian ray observables versus the exact adjoint centroid response, then encode it in a discriminating runner
+stop_condition: target receives an honest audit-ready certificate, or all four attack frames are executed and the strongest bounded support/no-go blocker is packaged

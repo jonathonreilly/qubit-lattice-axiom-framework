@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 946 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 27 |
-| unaudited | 1747 |
+| unaudited | 1746 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 117 |
+| ~~audited_conditional~~ | 118 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1360 |
-| `audited_conditional` | 117 |
+| `audited_conditional` | 118 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 30 |
-| `unaudited` | 2092 |
+| `unaudited` | 2091 |
 
 | claim_type | count |
 |---|---:|
@@ -1572,6 +1572,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hw_complement_equivalence_extends_to_free_corner_transfer_dynamics_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_first_order_selector_bounded_localization_certificate_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -11801,6 +11802,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Exact finite algebra shows that the native circulant algebra has zero intersection with the Gamma_chi-anticommuting operators, while a separate tensor factor supplies a nonzero anticommuting witness and the remaining Q, C3-multiplicity, and Fourier-rigidity identities hold.  _(class `A`)_
 - **chain closes:** True — The exact symbolic calculations establish all five bounded statements on their stated finite surface. The physical L-R coupling and first-order readout are explicitly excluded from the conclusion rather than silently assumed.
 - **rationale:** The runner genuinely performs exact symbolic algebra for the scientific payload; it does not hard-code a physical selector or observational target. Its remaining checks are textual and cross-note firewall verification. However, the cited Koide index-readout authority has meta rather than retained-grade status and explicitly leaves the physical readout identification open, requiring the conservative conditional verdict despite closure of the narrower algebraic surface.
+- **open / conditional deps cited:**
+  - `KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md`
+- **auditor confidence:** high
+
+### `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`
+
+- **Note:** [`KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The five finite algebraic localization statements were audited: δ-independence of Q, clock-character multiplicities, the native-family intersection no-go, the separate-factor escape, and Fourier-eigenvector Berry flatness; no physical coupling, readout rule, or r=1/2 derivation was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00071-koide_first_order_selector_i`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Within the native circulant R³ family, comm(C) ∩ anticomm(Γχ) = {0}, whereas on a separate R³⊗C² chirality factor a nonzero C₃-equivariant anticommuting operator exists.  _(class `A`)_
+- **chain closes:** True — The supplied runner genuinely computes the finite matrix and character identities, and those identities support the explicitly bounded localization. The physical AC_phi_lambda-to-M(b)⊗σ₊ bridge and r-weighting remain outside the claim scope.
+- **rationale:** All ten runner checks are substantive class-A algebraic checks, and the source repairs consistently prevent consuming them as a physical selector theorem. However, the graph-visible load-bearing dependencies include a meta-status authority that explicitly leaves the staggered-Dirac realization and readout selection open. Under the rubric, that non-retained authority requires a conditional verdict even though the narrowed finite algebra closes.
 - **open / conditional deps cited:**
   - `KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md`
 - **auditor confidence:** high

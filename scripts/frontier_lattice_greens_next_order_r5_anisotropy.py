@@ -12,7 +12,7 @@ the mpmath Bessel-resolvent representation.
   S1     exact free tail, landed K4 tail, and direct-integrator cross-check.
   S2     raw degree-8 polynomial, S-basis identity, and harmonic identity.
   S3     exact sphere moments, harmonic orthogonality, and seven direction values.
-  S4     all-orders contact-term inequality through n = 4.
+  S4     formal contact-term grading through n = 4 (not an all-orders proof).
   N1     three lattice-equation precision certificates.
   N2     five extrapolation gates and five last-pair convergence-ratio gates.
   CTRL1  a 5 percent wrong axial value fails the extrapolation gate.
@@ -182,7 +182,7 @@ for direction, target in direction_targets:
           sp.simplify(f_raw.subs(substitutions) - target) == 0)
 
 
-# S4: finite combinatorial grading of the all-orders contact-term argument.
+# S4: finite combinatorial grading of the formal symbol expansion through n=4.
 kx, ky, kz = sp.symbols("kx ky kz")
 E = t * sum(
     (-1) ** (i + 1) * sp.Rational(2, sp.factorial(2*i + 2))
@@ -205,7 +205,7 @@ for powers, coefficient in sp.Poly(exp_series, t, kx, ky, kz).terms():
         graded[n].append(D - J - 1 >= 0)
 
 for n in range(1, 5):
-    check("S4 order n=%d has only polynomial isotropic contact terms" % n,
+    check("S4 formal order n=%d has polynomial isotropic contact grading" % n,
           bool(graded[n]) and all(graded[n]))
 
 

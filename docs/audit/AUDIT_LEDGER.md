@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1738 |
+| unaudited | 1737 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 126 |
+| ~~audited_conditional~~ | 127 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 15 |
 | `audited_clean` | 1358 |
-| `audited_conditional` | 126 |
+| `audited_conditional` | 127 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2085 |
+| `unaudited` | 2084 |
 
 | claim_type | count |
 |---|---:|
@@ -1525,6 +1525,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `activity_energy_bound_witnesses_bounded_note_2026-07-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -2114,6 +2115,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   - `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+- **auditor confidence:** high
+
+### `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04`
+
+- **Note:** [`ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded no-go that the Record axiom's generic formation sentence alone supplies neither a delta-sensitive event interface nor the normalization and physical readout license required for R-eta.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00011-acphilambda_r_eta_occurrence`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Changing |b| or a_act changes the clock/event-rate ratio while leaving the minimal Record axiom content untouched, so record occurrence alone cannot determine the R-eta readout.  _(class `A`)_
+- **chain closes:** False — The algebraic underdetermination argument supports the bounded no-go, but the submitted chain also asserts a live Tier-A R-eta entry that the cited current registry has retired. The runner consequently aborts before executing any substantive algebraic checks.
+- **rationale:** Issue: the source and runner require AC_phi_lambda/R-eta to remain a live Tier-A derivation target, whereas the cited registry says the live target count is zero and records AC_phi_lambda as owner-governed and retired. Why this blocks: the runner raises KeyError after ten file-presence checks, so its claimed 139-pass verification is stale and the current registry does not support the stated governance boundary. Repair target: update the note and runner to the current owner-governed registry topology, preserving the distinction between governance retirement and derivation from the Record axiom, then produce a completed certificate. Claim boundary until fixed: the narrower algebraic observation that generic record formation does not itself supply an event, normalization, or readout law remains supported but is not ratified by this runner.
 - **auditor confidence:** high
 
 ### `acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01`

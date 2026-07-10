@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2046,
-    "decoration": 72,
+    "bounded_theorem": 2047,
+    "decoration": 71,
     "meta": 355,
     "no_go": 483,
     "open_gate": 184,
@@ -33,7 +33,7 @@
   ],
   "cycles_detected": 10,
   "effective_status_counts": {
-    "audited_conditional": 144,
+    "audited_conditional": 143,
     "audited_failed": 16,
     "audited_numerical_match": 10,
     "audited_renaming": 36,
@@ -76,21 +76,21 @@
     "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "meta": 347,
-    "open_gate": 29,
+    "open_gate": 28,
     "retained": 199,
-    "retained_bounded": 948,
-    "retained_no_go": 215,
+    "retained_bounded": 947,
+    "retained_no_go": 214,
     "retained_pending_chain": 13,
-    "unaudited": 1720
+    "unaudited": 1724
   },
   "retained_pending_chain_count": 13,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
+    "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
     "gate_b_context_independence_no_go_note_2026-06-17",
     "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",
     "gravity_clean_derivation_note",
-    "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01",
     "koide_mru_demotion_note_2026-04-20",
     "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
     "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",

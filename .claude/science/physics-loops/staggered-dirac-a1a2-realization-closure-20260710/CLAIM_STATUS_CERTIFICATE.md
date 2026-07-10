@@ -47,3 +47,8 @@ resolution audit, partial paths, hostile steelman, and cross-cycle echo table.
 Review iteration 3 independently passed the science boundary, runner/math,
 dependency-polarity, link, and full N1-N8 checks. This is source review only;
 independent audit remains required before an effective status is assigned.
+
+Disposable-worktree validation ran the full audit pipeline plus
+`audit_lint.py --strict` with no errors. It seeded the sibling as `no_go`,
+`unaudited`, `ready=true`, leaf criticality, and zero inbound edges. No
+generated audit authority was copied back to the science branch.

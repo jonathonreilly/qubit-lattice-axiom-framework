@@ -294,6 +294,11 @@ check(
     "named minimality selection" in flat_note.lower(),
 )
 check(
+    "E2 the commuting joint presentation is explicitly supplied rather than axiom-derived",
+    "supplied commuting joint presentation" in flat_note.lower()
+    and "do not themselves construct a common `B(H)` representation" in flat_note,
+)
+check(
     "E2 source note disclaims audit-outcome authority",
     "does not set or predict an audit outcome" in flat_note,
 )

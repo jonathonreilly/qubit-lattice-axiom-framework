@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py
-runner_sha256: 2bbb0d272c3cc6ff108e6c2392edf25c1a6c5d5f14c2d03374eddb40f09b024e
-timeout_sec: 300
+runner_sha256: a0ec0a344147ff66d72e35b4d167d4a7ad3b7b64f8a98baea9b680cda3865d42
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.62
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 GROUP A -- live axiom text
@@ -41,11 +41,12 @@ GROUP E -- note content and link gates
 [PASS] E1 live memo basename is present
 [PASS] E1 obsolete memo link targets are absent
 [PASS] E2 the bridge selection is explicitly named
+[PASS] E2 the commuting joint presentation is explicitly supplied rather than axiom-derived
 [PASS] E2 source note disclaims audit-outcome authority
 [PASS] E3 forbidden overclaims are absent
 [PASS] E3 markdown link inventory is exactly the three authorized targets -- targets=['../scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py', '../logs/runner-cache/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.txt', 'MINIMAL_AXIOMS_2026-06-29.md']
 VERDICT: exact bridge checks and all named rejectors pass.
-TOTAL: PASS=33 FAIL=0
+TOTAL: PASS=34 FAIL=0
 
 ----- stderr -----
 

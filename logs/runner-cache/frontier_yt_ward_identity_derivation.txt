@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_ward_identity_derivation.py
-runner_sha256: fa08cefaf4b1d968604e10cef1944041dca76a7eacbcf518dcbf4051ef6c6732
+runner_sha256: b65c944f5ee895becb24dffa6d46d916489d1a3274178e711fd885e852e2ab49
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.81
+elapsed_sec: 3.44
 status: ok
 ----- stdout -----
 ========================================================================
@@ -34,9 +34,9 @@ BLOCK W2: Propagator-level Ward identity (full Wick, contact terms)
   full Wick value <V F> = -Tr(J G) G + G J G  (disconnected + connected).
 
   [PASS (A)] Propagator is exactly iso-diagonal (U(2)_iso symmetry of M at fixed links)  --  max iso-offdiagonal |G| = 0.000e+00
-  [PASS (C)] Exact point-split Ward identity: max residual over all (x; y, z) at machine zero  --  max |D^-.<V psi psibar> - contact| = 2.040e-15 on random SU(3) background
-  [PASS (C)] Current conservation in expectation: sum_mu D^-_mu <V_mu(x)> = 0 at every site  --  max |div <V>| = 2.276e-15
-  [PASS (C)] Ward identity exact after a RANDOM local SU(3) gauge transformation of links  --  max residual = 6.727e-16 (gauge covariance of the point-split current)
+  [PASS (C)] Exact point-split Ward identity: max residual over all (x; y, z) at machine zero  --  max |D^-.<V psi psibar> - contact| = 2.046e-15 on random SU(3) background
+  [PASS (C)] Current conservation in expectation: sum_mu D^-_mu <V_mu(x)> = 0 at every site  --  max |div <V>| = 2.318e-15
+  [PASS (C)] Ward identity exact after a RANDOM local SU(3) gauge transformation of links  --  max residual = 6.524e-16 (gauge covariance of the point-split current)
 
 ========================================================================
 BLOCK W3: FALSIFICATION leg A: naive (link-stripped) current FAILS
@@ -48,7 +48,7 @@ BLOCK W3: FALSIFICATION leg A: naive (link-stripped) current FAILS
   is a property of the action's symmetry current, not of bookkeeping.
 
   [PASS (C)] Link-stripped current VIOLATES the kernel identity (residual >> 0)  --  max kernel residual = 0.9622 (vs < 1e-13 for the true current)
-  [PASS (C)] Link-stripped current VIOLATES the propagator-level Ward identity  --  max residual = 0.869859 (vs 2.040e-15 for the true current)
+  [PASS (C)] Link-stripped current VIOLATES the propagator-level Ward identity  --  max residual = 0.869859 (vs 2.046e-15 for the true current)
   [PASS (C)] With trivial links U = 1 the 'stripped' current is the true current: residual = 0  --  max residual = 0.000e+00 (failure is located in gauge covariance)
 
 ========================================================================
@@ -77,9 +77,9 @@ BLOCK W5: Iso-vector charged current: conserved at degenerate mass;
   explicit (m2 - m1) psibar tau+ psi insertion, nothing else.
 
   [PASS (A)] Breaking kernel identity: [tau+, diag(m1,m2) (x) 1_c] = (m2 - m1) (tau+ (x) 1_c)  --  (m2 - m1) = 0.4600; max |comm - (m2-m1) tau+| = 0.000e+00
-  [PASS (C)] Degenerate mass: charged-current Ward identity EXACT (no breaking term needed)  --  max residual = 1.395e-15 ([tau+, m 1] = 0)
+  [PASS (C)] Degenerate mass: charged-current Ward identity EXACT (no breaking term needed)  --  max residual = 1.393e-15 ([tau+, m 1] = 0)
   [PASS (C)] Split mass m1 != m2: charged current NOT conserved (residual >> 0 w/o insertion)  --  max residual without insertion = 0.199313
-  [PASS (C)] Split mass: residual equals the EXACT (m2-m1) psibar tau+ psi insertion  --  max residual WITH exact mass insertion = 7.615e-16
+  [PASS (C)] Split mass: residual equals the EXACT (m2-m1) psibar tau+ psi insertion  --  max residual WITH exact mass insertion = 7.312e-16
 
 ========================================================================
 BLOCK W6: EXACT-arithmetic certificate: Ward residual is EXACTLY zero
@@ -321,9 +321,20 @@ identification surface; it documents SU(N_c) algebraic facts.
   -- context only, no PASS/FAIL attached, no precision claim.
 
 ========================================================================
+BLOCK 13: note claim-surface checks (2026-07-10 narrowing repair)
+These note-surface checks pin the dated narrowing to the canonical-bare
+Ward-ratio core; the runner's computational blocks are unchanged.
+========================================================================
+
+  [PASS (A)] Authority note carries the dated downstream-hygiene line  --  pins the 2026-07-10 claim-surface narrowing
+  [PASS (A)] Authority note states its narrowed audited claim surface exactly  --  canonical-bare claim surface is explicit
+  [PASS (A)] Authority note fences the package section as excluded conditional context  --  Planck/IR package is outside this note's claim surface
+  [PASS (A)] Authority note retains the exact canonical-bare ratio claim  --  bounded Ward-ratio core remains present
+
+========================================================================
 SUMMARY
 ========================================================================
-  PASS: 58
+  PASS: 62
   FAIL: 0
 
   WARD-IDENTITY THEOREM (load-bearing, Blocks W1-W6):
@@ -357,7 +368,7 @@ SUMMARY
     (W1)  exact point-split vector Ward identity of the staggered Q_L action
     (T1)  y_t_bare = g_bare / sqrt(6)   (g_bare-flat form factor)
 
-TOTAL: PASS=58 FAIL=0
+TOTAL: PASS=62 FAIL=0
   See docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md for the source note.
 
 ----- stderr -----

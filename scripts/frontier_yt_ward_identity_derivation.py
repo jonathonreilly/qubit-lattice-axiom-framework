@@ -75,6 +75,7 @@ to any helper-imported plaquette constant):
              where helper constants enter; algebra-only checks kept).
   Block 12:  Two-gluon color-trace algebra (exact SU(3) facts kept as
              checks; topology-counting and NNLO-magnitude lines log-only).
+  Block 13:  Note claim-surface checks pinning the 2026-07-10 narrowing.
 
 Every PASS is a computed check.  The Ward residuals are computed on explicit
 lattice constructions whose link backgrounds are random (not present in any
@@ -87,6 +88,7 @@ from __future__ import annotations
 import math
 import sys
 from itertools import product
+from pathlib import Path
 
 import numpy as np
 
@@ -1392,6 +1394,49 @@ alpha_LM_sq_C_F_sq = (ALPHA_LM * C_F / PI) ** 2
 delta_NNLO_nonplanar = alpha_LM_sq_C_F_sq / (N_c ** 2)
 log(f"    delta_NNLO_NP = (alpha_LM * C_F / pi)^2 / N_c^2 = {delta_NNLO_nonplanar*100:.4f}%")
 log("  -- context only, no PASS/FAIL attached, no precision claim.")
+
+
+# ============================================================
+# BLOCK 13: note claim-surface checks (2026-07-10 narrowing repair)
+# ============================================================
+log()
+log("=" * 72)
+log("BLOCK 13: note claim-surface checks (2026-07-10 narrowing repair)")
+log("These note-surface checks pin the dated narrowing to the canonical-bare")
+log("Ward-ratio core; the runner's computational blocks are unchanged.")
+log("=" * 72)
+log()
+
+repo_root = Path(__file__).resolve().parents[1]
+authority_note = (repo_root / "docs" / "YT_ZERO_IMPORT_AUTHORITY_NOTE.md").read_text(
+    encoding="utf-8"
+)
+
+check(
+    "Authority note carries the dated downstream-hygiene line",
+    "2026-07-10 downstream hygiene." in authority_note,
+    "pins the 2026-07-10 claim-surface narrowing",
+    cls="A",
+)
+check(
+    "Authority note states its narrowed audited claim surface exactly",
+    "this note's audited claim surface is exactly:" in authority_note,
+    "canonical-bare claim surface is explicit",
+    cls="A",
+)
+check(
+    "Authority note fences the package section as excluded conditional context",
+    "Conditional context (excluded from claim surface): current strongest package read"
+    in authority_note,
+    "Planck/IR package is outside this note's claim surface",
+    cls="A",
+)
+check(
+    "Authority note retains the exact canonical-bare ratio claim",
+    "y_t_bare / g_bare = 1 / sqrt(6)" in authority_note,
+    "bounded Ward-ratio core remains present",
+    cls="A",
+)
 
 
 # ============================================================

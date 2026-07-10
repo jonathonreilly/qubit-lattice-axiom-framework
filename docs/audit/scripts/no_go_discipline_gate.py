@@ -58,15 +58,12 @@ NEGATIVE_ASSERTION_RE = re.compile(
     r"cannot be derived from|does not lift|cannot lift|"
     r"\b(?:cannot|does not|do not)\s+(?:select|orient|factor|factorize|derive|supply|"
     r"determine|fix|close|produce|recover)\b|"
-    r"\bno\s+(?!obstruction\s+(?:remains?|persists?)\b)[^\n.;:]{1,100}\s+exists\b|"
-    r"\bno\s+[^\n.;:]{1,100}\s+(?:closes?|supplies?|selects?|orients?|"
-    r"derives?|determines?|fixes?|produces?|recovers?)\b|"
     r"\bthere\s+(?:still\s+)?(?:remains?|persists?)\s+(?:an?\s+)?"
     r"(?:scoped\s+|residual\s+|unresolved\s+)?(?:wall|admission|obstruction)\b|"
     r"\bfails?\s+to\s+(?:close|resolve|remove|discharge|supply|derive|select)\b|"
     r"\b[^\n.;:]{1,80}\s+(?:is|are|was|were)\s+"
     r"(?:blocked|prevented|precluded)\b[^\n.;:]{0,80}\b"
-    r"(?:walls?|admissions?|obstructions?)\b|"
+    r"(?:walls?|admissions?|obstructions?|boundar(?:y|ies))\b|"
     r"\b(?:walls?|admissions?|obstructions?)\b[^\n.;:]{0,80}"
     r"\b(?:blocks?|prevents?|precludes?|rules?\s+out|persists?|remains?)\b|"
     r"bounded with named walls|conditional on [^\n]{0,120}\b(?:walls?|admissions?)\b|"
@@ -88,21 +85,35 @@ EXPLICIT_NEGATIVE_CLOSURE_RE = re.compile(
     r"(?:close[sd]?|remove[sd]?|resolve[sd]?|discharge[sd]?|suppl(?:y|ies|ied)|"
     r"retire[sd]?|eliminate[sd]?)\b[^\n.;:]{0,100}\b"
     r"(?:residual\s+|remaining\s+|scoped\s+|unresolved\s+)?"
-    r"(?:walls?|admissions?|obstructions?)\b|"
+    r"(?:walls?|admissions?|obstructions?|boundar(?:y|ies))\b|"
     r"\bfails?\s+"
     r"(?:(?:yet|still|fully|completely|entirely|exactly|ever|successfully)\s+){0,4}"
     r"to\s+(?:(?:fully|completely|entirely|exactly|successfully)\s+){0,3}"
     r"(?:close|remove|resolve|discharge|supply|retire|eliminate)\b"
     r"[^\n.;:]{0,100}\b(?:residual\s+|remaining\s+|scoped\s+|unresolved\s+)?"
-    r"(?:walls?|admissions?|obstructions?)\b",
+    r"(?:walls?|admissions?|obstructions?|boundar(?:y|ies))\b",
     re.IGNORECASE,
 )
 NEGATIVE_SUBJECT_CLOSURE_RE = re.compile(
-    r"\b(?:no|nothing|neither|zero|none(?:\s+of)?)\b[^\n.;:]{0,140}\b"
+    r"\b(?:(?:no|neither|zero)\s+"
+    r"(?:(?!(?:because|although|but|while|once|when|after|before|if)\b)[\w-]+\s+){0,8}"
+    r"(?:routes?|arguments?|candidates?|shells?|constructions?|attempts?|inputs?|"
+    r"primitives?|theorems?|methods?|maps?|carriers?|actions?|identities?)|"
+    r"none\s+of\s+(?:the\s+)?"
+    r"(?:(?!(?:because|although|but|while|once|when|after|before|if)\b)[\w-]+\s+){0,8}"
+    r"(?:routes?|arguments?|candidates?|shells?|constructions?|attempts?|inputs?|"
+    r"primitives?|theorems?|methods?|maps?|carriers?|actions?|identities?)|nothing)\s+"
+    r"(?:(?:can\s+|is\s+able\s+to\s+|are\s+able\s+to\s+)?"
     r"(?:close[sd]?|remove[sd]?|resolve[sd]?|discharge[sd]?|suppl(?:y|ies|ied)|"
     r"derive[sd]?|select[sd]?|determine[sd]?|fix(?:es|ed)?|retire[sd]?|"
-    r"eliminate[sd]?)\b[^\n.;:]{0,100}\b"
-    r"(?:walls?|admissions?|obstructions?|selectors?|boundar(?:y|ies))\b",
+    r"eliminate[sd]?)|succeeds?\s+in\s+"
+    r"(?:closing|removing|resolving|discharging|supplying|deriving|selecting|"
+    r"determining|fixing|retiring|eliminating))\b",
+    re.IGNORECASE,
+)
+NO_EXISTENCE_ASSERTION_RE = re.compile(
+    r"\bno\s+(?:(?!(?:because|although|but|while|once|when|after|before|if)\b)"
+    r"[\w-]+\s+){1,8}exists\b",
     re.IGNORECASE,
 )
 INABILITY_CLOSURE_RE = re.compile(
@@ -113,6 +124,16 @@ INABILITY_CLOSURE_RE = re.compile(
     r"(?:walls?|admissions?|obstructions?|selectors?|boundar(?:y|ies))\b",
     re.IGNORECASE,
 )
+BOUNDARY_SUBJECT_NEGATIVE_RE = re.compile(
+    r"\b(?:the\s+|an?\s+|this\s+|that\s+)?"
+    r"(?:residual\s+|remaining\s+|scoped\s+|unresolved\s+)?"
+    r"(?:walls?|admissions?|obstructions?|selectors?|boundar(?:y|ies))\s+"
+    r"(?:(?:cannot|can\s+not)\s+be\s+|"
+    r"(?:is|are|was|were|has|have|had)\s+not\s+(?:been\s+)?)"
+    r"(?:closed|removed|resolved|discharged|supplied|derived|selected|determined|"
+    r"fixed|retired|eliminated)\b",
+    re.IGNORECASE,
+)
 # Remove only clauses that affirmatively close or supply the named boundary.
 # This keeps "does not close the remaining obstruction" live while excluding
 # "closes the remaining obstruction" and passive equivalents.
@@ -121,9 +142,9 @@ POSITIVE_BOUNDARY_CLOSURE_RE = re.compile(
     r"supplies?|supplied|resolves?|resolved|retires?|retired|eliminates?|eliminated|"
     r"answers?|answered|overcomes?|overcame)\b\s+(?:all\s+|the\s+|an?\s+|"
     r"explicitly\s+)?(?:residual\s+|remaining\s+|scoped\s+|unresolved\s+)?"
-    r"(?:walls?|admissions?|obstructions?)\b|"
+    r"(?:walls?|admissions?|obstructions?|boundar(?:y|ies))\b|"
     r"\b(?:all\s+|the\s+|an?\s+)?(?:residual\s+|remaining\s+|scoped\s+|"
-    r"unresolved\s+)?(?:walls?|admissions?|obstructions?)\b"
+    r"unresolved\s+)?(?:walls?|admissions?|obstructions?|boundar(?:y|ies))\b"
     r"[^\n.;:]{0,50}\b(?:is|are|was|were|has\s+been|have\s+been|had\s+been)\s+"
     r"(?:explicitly\s+)?"
     r"(?:closed|removed|discharged|supplied|resolved|retired|eliminated)\b",
@@ -880,7 +901,9 @@ def _has_negative_boundary_assertion(text: str) -> bool:
     if (
         EXPLICIT_NEGATIVE_CLOSURE_RE.search(cleaned)
         or NEGATIVE_SUBJECT_CLOSURE_RE.search(cleaned)
+        or NO_EXISTENCE_ASSERTION_RE.search(cleaned)
         or INABILITY_CLOSURE_RE.search(cleaned)
+        or BOUNDARY_SUBJECT_NEGATIVE_RE.search(cleaned)
     ):
         return True
     cleaned = POSITIVE_BOUNDARY_CLOSURE_RE.sub("", cleaned)

@@ -1,7 +1,12 @@
 # DM Neutrino Bosonic Normalization Theorem (Conditional)
 
-**Date:** 2026-04-15 (status line narrowed 2026-04-28 per audit-lane verdict)
-**Status:** bounded conditional normalization selector on the upstream local Higgs family — IF physical local scalar observables are taken to be exactly `W[J]` source-response coefficients (the observable-principle premise), THEN the algebraic checks close. The observable-principle premise is not registered as an audit-clean theorem in the audit packet, and the runner only checks `Y` log-det response and `Gamma_1` even response, not the admissibility of active-space ratios. Not a tier-ratifiable normalization selector.
+**Date:** 2026-04-15
+**Status:** bounded conditional normalization selector on the supplied local
+Higgs family. If physical local scalar observables are taken to be exactly
+`W[J]` source-response coefficients (the observable-principle premise), then
+the algebraic checks close. That physical selection bridge is not supplied by
+this note, and the runner does not establish the inadmissibility of active-space
+ratios. Not a tier-ratifiable normalization selector.
 **Type:** bounded_theorem
 **Script:** `scripts/frontier_dm_neutrino_bosonic_normalization_theorem.py`
 
@@ -10,24 +15,24 @@
 ## Question
 
 Can the remaining `1` versus `1/sqrt(2)` ambiguity in the direct neutrino
-bridge normalization be resolved by importing the retained mainline
+bridge normalization be resolved by importing the supplied
 observable-principle toolkit?
 
 ---
 
 ## Answer
 
-Yes, on the retained local Higgs family.
+Conditionally, on the declared local Higgs family.
 
-The exact direct bridge audit was correct as an audit:
+The exact direct bridge algebra gives:
 
 - full `C^16` Frobenius normalization gives `y_nu^(0) / g_weak = 1/sqrt(2)`
 - active chiral-subspace normalization gives `1`
 
-What that audit did **not** yet decide was which normalization is physically
-admissible for a local bosonic observable.
+That algebra does **not** decide which normalization is physically admissible
+for a local bosonic observable.
 
-The mainline observable principle now fixes that.
+The observable-principle premise supplies a conditional selection rule.
 
 Physical local scalar observables must be source-response coefficients of the
 unique additive CPT-even generator
@@ -43,7 +48,7 @@ On the direct neutrino bridge, that changes the story sharply.
 Let
 
 - `Y = P_R Gamma_1 P_L` be the exact direct local chiral bridge
-- `Gamma_1` be the weak-axis post-EWSB scalar operator from the retained Higgs
+- `Gamma_1` be the weak-axis post-EWSB scalar operator from the declared Higgs
   family `M(phi) = sum_i phi_i Gamma_i`
 
 Then:
@@ -63,7 +68,7 @@ Then:
 
    for all real `j`.
 
-3. The retained scalar Hermitian completion of the bridge is exactly
+3. The declared scalar Hermitian completion of the bridge is exactly
 
    `Y + Y^dagger = Gamma_1`.
 
@@ -96,11 +101,11 @@ The active-space ratio `1` remains a mathematically exact comparator, but it is
 no longer the physical bosonic normalization because the raw chiral bridge
 itself carries no scalar source-response.
 
-So the branch can now promote the previously bounded full-space benchmark to
-the retained normalization statement:
+Under the physical source-assignment premise, the full-space benchmark becomes
+the conditional normalization statement:
 
-> within the retained local Higgs family and the axiom-native observable
-> principle, the physical base normalization is
+> within the declared local Higgs family and the supplied observable-principle
+> premise, the conditional physical base normalization is
 > `y_nu^(0) / g_weak = 1/sqrt(2)`.
 
 Equivalently, the branch's correct base benchmark is
@@ -113,32 +118,32 @@ not the active-space comparator `g_weak`.
 
 ## What This Does And Does Not Close
 
-This closes one real blocker:
+This conditionally narrows one blocker:
 
 - the base-normalization ambiguity of the direct `Gamma_1` bridge
 
-This note by itself does **not** close the whole denominator. But the next
-local step is now closed by the downstream companion
+This note by itself does **not** close the whole denominator. The downstream
+companion separately treats the next local algebraic step:
 
 - `docs/DM_NEUTRINO_SCHUR_SUPPRESSION_THEOREM_NOTE_2026-04-15.md`
 - `scripts/frontier_dm_neutrino_schur_suppression_theorem.py`
 
-That theorem fixes the exact retained local second-order coefficient
+That companion states the exact local second-order coefficient
 
 `y_nu^eff = g_weak^2 / 64`
 
-and upgrades the old bounded `k_B = 8` attraction to an exact local Dirac-lane
-statement.
+on its own stated input surface.
 
-So the live denominator problem is no longer
+On this conditional surface, the remaining denominator problem is not the
+choice
 
 > choose `1` versus `1/sqrt(2)`
 
-and it is no longer
+or the supplied local second-order coefficient
 
 > derive the local second-order `Gamma_1` suppression coefficient.
 
-It is now downstream:
+The unresolved physical step remains downstream:
 
 > derive or rule out the Majorana / `Z_3` activation law that turns on the
 > unique charge-`2` source and feeds the three-generation `A/B/epsilon`
@@ -150,20 +155,19 @@ It is now downstream:
 
 The denominator boundary is now sharper than this note alone.
 
-This note fixes the physical base surface:
+This note conditionally fixes the physical base surface:
 
 `y_nu^(0) = g_weak / sqrt(2)`.
 
-The downstream Schur theorem then fixes the retained local suppression:
+The downstream Schur companion then supplies the local suppression:
 
 `y_nu^eff = g_weak^2 / 64`,
 
 which implies `k_eff ~= 8.01` on the present seesaw calibration.
 
-So the honest remaining question is no longer whether the direct Dirac lane can
-reach `k_B = 8`. On the retained local lane, it does. The remaining question is
-whether the Majorana side is axiom-forced strongly enough to turn that local
-Dirac result into a full zero-import `eta`.
+On the declared conditional lane this reaches the `k_B = 8` neighborhood. The
+remaining question is whether the Majorana side is framework-derived strongly
+enough to turn that local Dirac result into a full zero-import `eta`.
 
 ## Independent-audit boundary
 
@@ -179,16 +183,15 @@ admissible normalization.
 ## What this note does NOT claim
 
 - A tier-ratifiable normalization selector.
-- An audit-clean upstream observable-principle theorem.
+- An unconditional physical-observable selection theorem.
 - That the active-space ratio 1 is inadmissible without the
   observable-principle premise.
 
 ## What would close this lane (Path A future work)
 
-A retained normalization selector would require registering the
-physical-observable selection theorem (physical local scalar
-observables = `W[J]` source-response coefficients) as an audit-clean
-upstream dependency.
+A framework-derived or approved normalization selector would require the
+physical-observable selection theorem (physical local scalar observables =
+`W[J]` source-response coefficients) as an upstream dependency.
 
 ## Audit dependency repair links
 
@@ -196,7 +199,7 @@ This graph-bookkeeping section records the explicit upstream authority
 the load-bearing observable-principle premise relies on, in response to
 the `missing_bridge_theorem` repair target for
 `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15`.
-It does not promote this note or change the audited claim scope, which
+It does not promote this note or enlarge the source claim boundary, which
 remains conditional algebra on the `Y`/`Gamma_1` decomposition plus the
 imported observable-principle premise.
 

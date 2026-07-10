@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 28 |
-| unaudited | 1733 |
+| unaudited | 1732 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 33 |
-| ~~audited_conditional~~ | 123 |
+| ~~audited_conditional~~ | 124 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -71,12 +71,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1363 |
-| `audited_conditional` | 123 |
+| `audited_conditional` | 124 |
 | `audited_decoration` | 65 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 33 |
-| `unaudited` | 2078 |
+| `unaudited` | 2077 |
 
 | claim_type | count |
 |---|---:|
@@ -1600,6 +1600,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
+| `prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -16932,6 +16933,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The retained-bounded authority substantively supports keeping the gate open, but it does not supply the missing NCG structures. Of the runner's 55 reported passes, only elementary Pauli and block-matrix identities are actually evaluated; decisive P-LH-1 and P-LH-3 conclusions are hard-coded or inferred from imposed algebra choices rather than a general order-one or Pati-Salam exclusion calculation. The packet therefore supports an honest conditional design map, not a framework-derived selector.
 - **open / conditional deps cited:**
   - `P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md`
+- **auditor confidence:** high
+
+### `prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`PRR_LOCAL_DERIVATION_FROM_JAYNES_MAX_ENTROPY_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PRR_LOCAL_DERIVATION_FROM_JAYNES_MAX_ENTROPY_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-window per-site unitary invariance and translation invariance of an unrestricted qubit-lattice Jaynes state.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00085-prr_local_derivation_from_ja`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On a finite window, maximizing von Neumann entropy subject only to normalization uniquely gives the normalized trace state I/2^{|Λ|}, whose one-site marginals are I/2 and which is invariant under all available lattice-translation automorphisms.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional entropy argument is correct if the admissible state space is the full density-operator simplex. The cited current axiom memo includes a nearest-neighbor Admissibility constraint, and the packet supplies no bridge showing that absence of record-side information removes that constraint or leaves every density operator on the finite tensor-product algebra available.
+- **rationale:** Conditional on normalization being the only finite-window constraint, the normalized trace is uniquely entropy-maximizing and both asserted invariances follow by standard finite-dimensional mathematics. However, that unrestricted-state-space premise is asserted rather than derived from the restricted packet and is not implied merely by having no record-side information, especially under the cited Admissibility axiom. No runner source or output was available, but computation is unnecessary to identify this missing premise.
 - **auditor confidence:** high
 
 ### `q_integer_spectrum_theorem_note_2026-05-02`

@@ -3,7 +3,7 @@
     "critical": 400,
     "high": 266,
     "leaf": 755,
-    "medium": 519
+    "medium": 518
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -20112,30 +20112,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
       "transitive_descendants": 48
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "momentum_charge_commute_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.085,
-      "note_path": "docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/momentum_charge_commute_check.py",
-      "transitive_descendants": 47
     },
     {
       "audit_independence_required": "any_non_self",
@@ -57965,6 +57941,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 221,
-  "total_pending": 1940
+  "ready_count": 220,
+  "total_pending": 1939
 }

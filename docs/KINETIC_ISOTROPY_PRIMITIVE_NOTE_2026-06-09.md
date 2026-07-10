@@ -35,15 +35,12 @@ graining ratio relating that emergent time to space.
 
 ## Why It Is A Primitive
 
-The framework baseline `Lattice + Quantum + Record`, together with the emergent
-single-clock evolution and reflection positivity, does **not** fix the kinetic
-isotropy `c_t = c_s`. Those structures are compatible with positive-transfer
-kinetic forms at different values of `c_t/c_s`; the scale reference fixes no
-dimensionless ratio; and the records' causal order does not set a kinetic
-normalization. Because `c_t = c_s` is itself the emergent-Lorentz output, treating
-it as derived from those structures would be circular. This primitive records the
-missing structural graining choice explicitly instead of laundering it through
-Record, scale, reflection positivity, or the single-clock theorem.
+Within this declaration, `c_t = c_s` is supplied rather than derived. The
+Lattice + Qubit + Admissibility + Record baseline, emergent single-clock
+evolution, reflection positivity, scale reference, and records' causal order
+are not used here as a derivation of that equality. This primitive records the
+structural graining choice explicitly; any derivation of it would require a
+separate theorem.
 
 The adjacent quantities are *not* supplied here and are recorded only for
 contrast:
@@ -64,8 +61,9 @@ claims; they are not supplied by this primitive declaration.
 
 ## What This Does Not Do
 
-- It does not add or amend an axiom. The minimal framework baseline is the three
-  named axioms in `MINIMAL_AXIOMS_2026-06-05.md`: Lattice, Quantum, and Record.
+- It does not add or amend an axiom. The minimal framework baseline is the four
+  named axioms in `MINIMAL_AXIOMS_2026-06-29.md`: Lattice, Qubit,
+  Admissibility, and Record.
 - It does not re-axiomatize time. The emergent single-clock evolution remains
   derived; this primitive normalizes only the one graining ratio `c_t / c_s`.
 - It does not supply any dimensionless dynamical quantity. No mass ratio,
@@ -95,7 +93,7 @@ ratification clauses).
 
 ## Dependencies
 
-- [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md) — the three-axiom
+- [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md) — the four-axiom
   baseline whose spatial cubic adjacency this primitive parallels in the time
   direction.
 - [SCALE_REFERENCE_PRIMITIVE_NOTE.md](SCALE_REFERENCE_PRIMITIVE_NOTE.md) — the

@@ -22,6 +22,11 @@ from pathlib import Path
 
 import frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17 as replay
 
+
+def reduced_data(phi_grid, shell_radius: float = 4.0):
+    """Compatibility export for callers of the pre-replay wrapper API."""
+    return replay.reduced_data(phi_grid, shell_radius)
+
 ROOT = Path(__file__).resolve().parent.parent
 UMBRELLA_NOTE = "ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md"
 UMBRELLA_NOTE_PATH = ROOT / "docs" / UMBRELLA_NOTE

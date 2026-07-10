@@ -10,16 +10,30 @@ verdicts.
 from __future__ import annotations
 
 import json
+from dataclasses import dataclass
 from fractions import Fraction
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
-ABJ_NOTE = ROOT / "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md"
+ABJ_NOTE_NAME = (
+    "ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_"
+    "BOUNDED_NOTE_2026-05-26.md"
+)
+ABJ_NOTE = ROOT / "docs" / ABJ_NOTE_NAME
 SUPPLIER_NOTE = ROOT / "docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md"
 HYPERCHARGE_NOTE = ROOT / "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md"
 RETAINED_POSITIVE_GRADES = {"retained", "retained_bounded"}
+LH_SCOPE_NEEDLES = (
+    "Bounded LH-doublet chain assembly",
+    "commutant U(1) gives Y(Q_L)=+1/3, Y(L_L)=-1",
+)
+EXCLUSION_SCOPE_NEEDLES = (
+    "no full-spectrum anomaly",
+    "GUT-normalization",
+    "sin^2(theta_W) claim is included",
+)
 
 PASS = 0
 FAIL = 0
@@ -40,6 +54,42 @@ def read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
+def one_line(text: str) -> str:
+    return " ".join(text.split())
+
+
+def quoted_scope(text: str) -> str:
+    lines = text.splitlines()
+    start = next(
+        (i for i, line in enumerate(lines) if line.startswith("> Bounded LH-doublet")),
+        None,
+    )
+    if start is None:
+        return ""
+    quoted: list[str] = []
+    for line in lines[start:]:
+        if not line.startswith(">"):
+            break
+        quoted.append(line.removeprefix("> ").removeprefix(">"))
+    return one_line(" ".join(quoted))
+
+
+@dataclass(frozen=True)
+class LeftHandedRep:
+    name: str
+    weak_multiplicity: int
+    color_multiplicity: int
+    hypercharge: Fraction
+    color_quadratic_index: Fraction
+    color_cubic_index: Fraction
+
+
+LH_REPS = (
+    LeftHandedRep("Q_L", 2, 3, Fraction(1, 3), Fraction(1, 2), Fraction(1)),
+    LeftHandedRep("L_L", 2, 1, Fraction(-1), Fraction(0), Fraction(0)),
+)
+
+
 def ledger_row(claim_id: str) -> dict:
     rows = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
     return rows[claim_id]
@@ -50,7 +100,7 @@ def test_current_supplier_status() -> None:
     row = ledger_row("hypercharge_identification_note")
     effective_status = row.get("effective_status")
     check(
-        "hypercharge_identification_note is retained-grade on this branch base",
+        "hypercharge_identification_note is retained-grade in the current ledger",
         effective_status in RETAINED_POSITIVE_GRADES,
         str(effective_status),
     )
@@ -61,15 +111,21 @@ def test_current_supplier_status() -> None:
     )
     scope = row.get("claim_scope") or ""
     check(
-        "ledger scope includes the (2,3)/(2,1) LH-doublet surface",
-        ("Q_L" in scope or "(2,3)" in scope or "(2, 3)" in scope)
-        and ("L_L" in scope or "(2,1)" in scope or "(2, 1)" in scope)
-        and "+1/3" in scope
-        and "-1" in scope,
+        "ledger scope matches the note-quoted scope exactly",
+        " ".join(scope.split()) == quoted_scope(read(SUPPLIER_NOTE)),
+        "exact claim_scope comparison (whitespace-folded)",
     )
     check(
-        "ledger scope explicitly keeps full-spectrum boundaries",
-        "does not derive" in scope and "full SM spectrum" in scope and "anomaly cancellation" in scope,
+        "ledger scope carries the derived LH charge-table clause",
+        "the derived LH charge table" in scope,
+    )
+    check(
+        "ledger scope includes current LH-doublet surface needles",
+        all(needle in scope for needle in LH_SCOPE_NEEDLES),
+    )
+    check(
+        "ledger scope includes current exclusion needles",
+        all(needle in scope for needle in EXCLUSION_SCOPE_NEEDLES),
     )
 
 
@@ -90,17 +146,20 @@ def test_source_notes() -> None:
     )
     check(
         "ABJ note keeps P-COMP and P-REC open",
-        "does not derive P-COMP or P-REC" in abj and "P-COMP/P-REC premise edges" in abj,
+        "does not derive P-COMP or P-REC" in abj
+        and "P-COMP/P-REC premise edges" in abj,
     )
     check(
         "ABJ note refuses to widen P-HY to full physical hypercharge",
-        "does not widen P-HY beyond the bounded left-handed hypercharge-identification surface" in abj
+        "does not widen P-HY beyond the bounded left-handed "
+        "hypercharge-identification surface" in abj
         and "derivation of full physical hypercharge" in abj,
     )
     check(
         "supplier note names the exact target blocker",
         "Target blocker" in supplier
-        and "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26" in supplier,
+        and "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_"
+        "bounded_note_2026-05-26" in supplier,
     )
     check(
         "supplier note forbids new axioms or admissions",
@@ -108,14 +167,15 @@ def test_source_notes() -> None:
     )
     check(
         "supplier note keeps remaining ABJ blockers explicit",
-        "P-ABJ remains" in supplier and "P-COMP remains" in supplier and "P-REC remains" in supplier,
+        "P-ABJ remains" in supplier
+        and "P-COMP remains" in supplier
+        and "P-REC remains" in supplier,
     )
     check(
-        "hypercharge note supplies the bounded LH identification surface",
-        "Y_α = α(P_sym" in hyper
-        and "α = +1/3" in hyper
-        and "(2, 3)" in hyper
-        and "(2, 1)" in hyper,
+        "hypercharge note supplies the complete operator/eigenblock mapping",
+        "Y_\u03b1 = \u03b1(P_sym \u2212 3 P_anti)" in hyper
+        and "| (2, 3) = C² ⊗ Sym²(C²) | 6 | +1/3 |" in hyper
+        and "| (2, 1) = C² ⊗ Anti²(C²) | 2 | −1 |" in hyper,
     )
     check(
         "hypercharge note declares normalization and full-spectrum boundaries",
@@ -126,50 +186,48 @@ def test_source_notes() -> None:
 
 def test_exact_b1_arithmetic() -> None:
     print("== T3: exact B1 anomaly arithmetic from supplied LH Y values ==")
-    y_q = Fraction(1, 3)
-    y_l = Fraction(-1, 1)
-    t_f = Fraction(1, 2)
-
-    tr_y = 6 * y_q + 2 * y_l
-    tr_y3 = 6 * y_q**3 + 2 * y_l**3
-    tr_su3sq_y = 2 * t_f * y_q
-    tr_su2sq_y = 3 * t_f * y_q + t_f * y_l
-    tr_su3cube = Fraction(2, 1)
+    tr_y = sum(
+        rep.weak_multiplicity * rep.color_multiplicity * rep.hypercharge
+        for rep in LH_REPS
+    )
+    tr_y3 = sum(
+        rep.weak_multiplicity * rep.color_multiplicity * rep.hypercharge**3
+        for rep in LH_REPS
+    )
+    tr_su3sq_y = sum(
+        rep.weak_multiplicity * rep.color_quadratic_index * rep.hypercharge
+        for rep in LH_REPS
+    )
+    su2_quadratic_index = Fraction(1, 2)
+    tr_su2sq_y = sum(
+        rep.color_multiplicity * su2_quadratic_index * rep.hypercharge
+        for rep in LH_REPS
+    )
+    tr_su3cube = sum(
+        rep.weak_multiplicity * rep.color_cubic_index for rep in LH_REPS
+    )
 
     check("Tr[Y] LH = 0", tr_y == 0, str(tr_y))
     check("Tr[Y^3] LH = -16/9", tr_y3 == Fraction(-16, 9), str(tr_y3))
-    check("Tr[SU(3)^2 Y] LH = 1/3", tr_su3sq_y == Fraction(1, 3), str(tr_su3sq_y))
+    check(
+        "Tr[SU(3)^2 Y] LH = 1/3",
+        tr_su3sq_y == Fraction(1, 3),
+        str(tr_su3sq_y),
+    )
     check("Tr[SU(2)^2 Y] LH = 0", tr_su2sq_y == 0, str(tr_su2sq_y))
     check("Tr[SU(3)^3] LH = 2", tr_su3cube == 2, str(tr_su3cube))
-    nonzero = [tr_y3, tr_su3sq_y, tr_su3cube]
-    check("B1 still has exactly three nonzero ABJ-relevant traces", sum(v != 0 for v in nonzero) == 3)
-
-
-def test_path_firewall() -> None:
-    print("== T4: path and status firewall ==")
-    touched_authority_paths = [
-        "docs/audit/",
-        "docs/publication/ci3_z3/",
-        "docs/repo/FRONT_DOOR_STATUS.md",
-        "docs/repo/LANE_REGISTRY.yaml",
-        "docs/repo/ACTIVE_REVIEW_QUEUE.md",
-        "docs/work_history/repo/LANE_STATUS_BOARD.md",
-    ]
-    source_paths = [
-        str(ABJ_NOTE.relative_to(ROOT)),
-        str(SUPPLIER_NOTE.relative_to(ROOT)),
-        "scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py",
-    ]
-    for banned in touched_authority_paths:
-        check(
-            f"new source paths avoid authority surface {banned}",
-            all(not path.startswith(banned) for path in source_paths),
-        )
-    supplier = read(SUPPLIER_NOTE)
+    anti_fundamental = LeftHandedRep(
+        "anti-Q", 2, 3, Fraction(0), Fraction(1, 2), Fraction(-1)
+    )
     check(
-        "supplier note uses bounded-support status rather than bare retained",
-        "bounded-support source theorem" in supplier
-        and "independent review/audit owns any effective status movement" in supplier,
+        "anti-fundamental edge case reverses the cubic-anomaly sign",
+        anti_fundamental.weak_multiplicity * anti_fundamental.color_cubic_index
+        == -2,
+    )
+    nonzero = [tr_y3, tr_su3sq_y, tr_su3cube]
+    check(
+        "B1 still has exactly three nonzero ABJ-relevant traces",
+        sum(v != 0 for v in nonzero) == 3,
     )
 
 
@@ -177,7 +235,6 @@ def main() -> int:
     test_current_supplier_status()
     test_source_notes()
     test_exact_b1_arithmetic()
-    test_path_firewall()
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 

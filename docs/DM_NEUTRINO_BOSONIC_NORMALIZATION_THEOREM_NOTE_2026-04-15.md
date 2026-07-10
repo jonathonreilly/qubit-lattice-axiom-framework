@@ -260,7 +260,7 @@ is unchanged by the source edit.
 
 This rigorization is class B (graph-bookkeeping citation). It does not
 change any algebraic content, runner output, or load-bearing step
-classification. It records the upstream authority the audit verdict
-expected and matches the live cite-chain pattern used by the
+classification. It records the upstream authority named by the repair target
+and matches the live cite-chain pattern used by the
 `DM_NEUTRINO_SCHUR_SUPPRESSION_THEOREM_NOTE_2026-04-15.md` cluster
 (commit `02ad4fadd`).

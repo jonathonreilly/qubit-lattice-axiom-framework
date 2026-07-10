@@ -1,191 +1,162 @@
-# Wave Direct-dM H=0.25 Seed0 Cross-Family Compression Note
+# Wave Direct-dM H=0.25 Seed0 Cross-Family Bounded Synthesis Note
 
 **Date:** 2026-04-08
-**Status:** bounded numerical compression on the controlled seed-`0` fine-`H` surface
-**Type:** bounded_theorem
-**Audit ceiling:** class-G numerical-match compression; not a structural theorem on this surface
-**Runner:** [`scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py`](../scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py)
 
-**Audit class:** The load-bearing step is a numerical compression of two
-preselected control rows at the tuned input scale `H = 0.25` with the
-preselected seed `0`. Review classifies that step as derivation class
-`(G)` (numerical match at a tuned input scale). This source note does
-not set or predict an audit verdict. It only records that promotion to
-a structural theorem would require a class `(C)` first-principles
-derivation of the row magnitudes from `Cl(3)` on `Z^3`, which is not
-attempted here and is explicitly excluded from this note's scope.
+**Revised:** 2026-07-10
 
-This note compresses the controlled `H = 0.25` seed-`0` evidence across the
-two families that currently have it:
+**Status:** proposed_retained bounded cross-note synthesis on the controlled seed-`0` fine-`H` surface
 
-## Source boundary (2026-06-12)
+**Claim type:** bounded_theorem
 
-**Boundary:** numerical-match / bounded support only. Effective status is
-audit-derived; this source records only the claim boundary.
+**Status authority:** source-note proposal only; the independent audit lane sets
+`audit_status` and `effective_status`.
 
-The load-bearing comparison uses two preselected simulation rows at the tuned
-`H = 0.25`, seed-`0` surface. This note may be cited only for the frozen
-Fam1/Fam2 seed-0 sign/order/magnitude comparison. It may not be cited as a
-derivation of the direct-dM magnitudes, the Fam2-deeper-than-Fam1 ordering, a
-family-wide law, a third-family transfer, or a structural explanation of why
-`H = 0.25` and seed `0` are forced.
+**Primary runner:**
+[`scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py`](../scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py)
 
-Promotion beyond numerical-match support requires a separate class-C
-first-principles magnitude/order derivation or a retained theorem selecting
-the `H = 0.25`, seed-`0` surface.
+## Claim scope
 
-> Keep the controlled `Fam1`, seed `0`, `H = 0.25` control ladder together
-> with the controlled `Fam2`, seed `0`, `H = 0.25` control ladder, and ask
-> what survives if we hold the seed fixed but compare the same fine-`H`
-> row across families.
+Fix the already-computed coordinate `H = 0.25`, seed `0`, and compare the
+`S = 0.004` rows supplied by the two retained-bounded control notes below.
+On exactly those two rows:
 
-## Evidence surface
+1. both `delta_hist` values are negative;
+2. `Fam2` is deeper than `Fam1` both in `|delta_hist|` and in the normalized
+   value `R_hist`; and
+3. each row belongs to its source note's controlled weak-field ladder, with an
+   exact `S = 0` null, a negative sign at all three nonzero strengths, and the
+   source-reported bounded `|delta_hist/S|` spread.
 
-The seed-`0` source rows are:
+This is a finite cross-note implication. It does not derive or select
+`H = 0.25`, seed `0`, either row magnitude, an amplitude law, or a portability
+law. The fixed `H`, seed, family labels, and strength are coordinates of the
+bounded claim, not fitted inputs used to match an external target.
 
-| family | `H` | `dM(early)` | `dM(late)` | `delta_hist` | `R_hist` | late gain |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| `Fam1` | `0.25` | `+0.004989` | `+0.006246` | `-0.001256` | `-20.12%` | `+0.001257` |
-| `Fam2` | `0.25` | `+0.005393` | `+0.006969` | `-0.001576` | `-22.61%` | `+0.001576` |
+## Registered load-bearing dependencies
 
-Both rows are now controlled at the same resolution:
+These are the only note-level physics dependencies. Both are independently
+recorded in the audit ledger as `audited_clean` with
+`effective_status = retained_bounded`.
 
-- exact `S = 0` null
-- sign pattern `- - -`
-- bounded `|delta_hist / s|` spread
+| input | retained-bounded source note | source computation | frozen transcript | role here |
+| --- | --- | --- | --- | --- |
+| `Fam1`, seed `0`, `H=0.25` ladder | [Fam1 seed-0 control note](WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md) | [`wave_direct_dm_h025_fam1_seed0_control_batch.py`](../scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py) | [`2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt) | supplies row 1, its null, sign pattern, and spread |
+| `Fam2`, seed `0`, `H=0.25` ladder | [Fam2 seed-0 control note](WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md) | [`wave_direct_dm_h025_fam2_seed0_control_batch.py`](../scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py) | [`2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt) | supplies row 2, its null, sign pattern, and spread |
 
-Per-family summaries:
+The primary runner checks that both dependencies remain in the audit lane's
+retained-grade set in
+`docs/audit/data/audit_ledger.json`, checks that each source note registers its
+own runner and transcript, parses both transcripts, and performs the finite
+synthesis below. It contains no expected direct-`dM` magnitudes or expected
+`R_hist` values.
 
-| family | null max `|delta_hist|` | sign pattern | `|delta_hist / s|` spread |
-| --- | ---: | --- | ---: |
-| `Fam1` | `0.000e+00` | `- - -` | `7.77%` |
-| `Fam2` | `0.000e+00` | `- - -` | `6.67%` |
+## Cross-note derivation
 
-The runner is log-backed: it reads the frozen control logs listed in the
-artifact chain and asserts the two-row compression table, the exact nulls,
-the nonzero negative sign pattern, the weak-field spread bounds, and the
-selected-row ordering.  It deliberately does not rerun the expensive fine-`H`
-controls and does not certify any family-wide law.
+For family `F` and strength `S`, use the quantities already defined and
+computed in the source control note:
 
-## What the seed-0 surface does not say
+```text
+D_F(S) = delta_hist_F(S),
+Q_F(S) = D_F(S) / S                       (S > 0),
+R_F(S) = D_F(S) / max(|dM_early|, |dM_late|).
+```
 
-- not a stable amplitude law
-- not a family-independent `H = 0.25` portability result
-- not a third-family extrapolation
+The nonzero control ladder is
+`L = {0.002, 0.004, 0.008}`. Its source-reported scaled spread is
 
-The common sign stays negative, but the normalized magnitudes remain
-family-dependent.
-`Fam1` is the shallower weak branch; `Fam2` is the deeper weak branch.
+```text
+spread_F = (max_{S in L}|Q_F(S)| - min_{S in L}|Q_F(S)|)
+           / mean_{S in L}|Q_F(S)|.
+```
 
-## What actually survives
+The parsed retained inputs are:
 
-The cleanest bounded statement is:
+| family | `D_F(0)` | sign on `L` | `spread_F` | `dM_early(0.004)` | `dM_late(0.004)` | `D_F(0.004)` | `R_F(0.004)` |
+| --- | ---: | --- | ---: | ---: | ---: | ---: | ---: |
+| `Fam1` | `0.000000` | `- - -` | `7.77%` | `+0.004989` | `+0.006246` | `-0.001256` | `-20.12%` |
+| `Fam2` | `0.000000` | `- - -` | `6.67%` | `+0.005393` | `+0.006969` | `-0.001576` | `-22.61%` |
 
-> seed `0` occupies the lower-magnitude side of the fine-`H` direct-`dM`
-> story in both families, and the two families sit at different depths
-> inside that weak branch: `Fam1` is controlled near `R_hist ~ -20%`,
-> while `Fam2` is controlled near `R_hist ~ -23%`.
+The displayed `dM` entries are rounded to six decimal places. `D_F` and
+`R_F` are the separately printed values computed from the source runner's
+unrounded state; no exact subtraction identity is asserted for the displayed
+rounded columns.
 
-That is a same-seed cross-family compression result, not a portability law.
+The conclusion is immediate from the table:
 
-## Boundary
+```text
+D_Fam1(0.004) < 0,
+D_Fam2(0.004) < 0,
+|D_Fam2(0.004)| = 0.001576 > 0.001256 = |D_Fam1(0.004)|,
+R_Fam2(0.004) = -22.61% < -20.12% = R_Fam1(0.004).
+```
+
+The exact nulls, common negative ladder signs, and finite spreads are inherited
+from the same two retained-bounded controls. Thus the selected rows share
+negative sign and common depth ordering while remaining inside their respective
+controlled weak-field ladders.
+
+## Derivation-class split
+
+The source computations are the load-bearing first-principles numerical work
+for the two family/seed ladders. This note does not redo that work and does not
+compare either output with an experimental or hand-selected target. It reads
+two retained-bounded inputs and applies sign and order relations.
+
+The two roles are distinct under the repository vocabulary:
+
+- reading and checking the two retained source packets is class-`(B)`
+  cross-note input verification;
+- the load-bearing step in this note is the class-`(A)` algebraic inequality
+  closure displayed above: two sign tests and two strict order comparisons
+  over those independent retained-grade inputs.
+
+No class-`(G)` numerical match remains: there is no target value in the runner
+and no observed or fitted comparator in the claim.
+
+The distinction is scope, not rhetoric: a structural claim explaining the
+magnitudes or selecting `H = 0.25` and seed `0` would require a different
+derivation. No such structural claim appears here.
+
+## What does and does not survive
+
+What survives is only the finite proposition
+
+> At `H = 0.25`, seed `0`, and `S = 0.004`, the retained-bounded `Fam1`
+> and `Fam2` control rows both have negative `delta_hist`; `Fam2` is deeper
+> than `Fam1`; and both rows belong to source ladders with exact null,
+> common negative nonzero sign, and bounded scaled spread.
 
 This note does **not** claim:
 
-- that the seed-`0` rows define a stable amplitude band
-- that the direct-`dM` lane has a family-wide fine-`H` law
-- that the fine-`H` evidence extends to `Fam3`
+- a stable amplitude band or amplitude law;
+- a family-independent `H = 0.25` result;
+- a derivation of the row magnitudes or of the chosen surface;
+- a statement about `Fam3`, another seed, another `H`, or another strength;
+- a mechanism-level explanation of the cross-family ordering.
 
-The honest boundary is:
+In particular, `Fam1` and `Fam2` have different normalized magnitudes. The
+comparison is evidence against treating the two rows as a universal amplitude.
 
-> the seed-`0` fine-`H` surface is consistent across families in sign,
-> ordering, and weak-field control, but it still does not define a stable
-> amplitude law or a portability claim beyond `Fam1`/`Fam2`.
+## Executable certificate
 
-## Assertion closeout
+Run:
 
-Primary runner:
+```bash
+python3 scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py
+```
 
-- [`scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py`](../scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py)
+The checked transcript is
+[`outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-07-10.txt`](../outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-07-10.txt).
+The runner prints, among its computed values:
 
-Transcript:
-
-- [`outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-06.txt`](../outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-06.txt)
-- [`outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-16.txt`](../outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-16.txt)
-
-The runner prints:
-
-- `WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_ASSERTIONS=TRUE`
+- `WAVE_DIRECT_DM_H025_SEED0_DEPENDENCIES_RETAINED_GRADE=TRUE`
+- `WAVE_DIRECT_DM_H025_SEED0_DEPENDENCY_CLASS=B_CROSS_NOTE_INPUT_VERIFICATION`
+- `WAVE_DIRECT_DM_H025_SEED0_LOAD_BEARING_CLASS=A_ALGEBRAIC_INEQUALITY_CLOSURE`
 - `WAVE_DIRECT_DM_H025_SEED0_SHARED_SIGN=negative`
 - `WAVE_DIRECT_DM_H025_SEED0_COMMON_ORDERING=Fam2_deeper_than_Fam1_at_strength_0.004`
 - `WAVE_DIRECT_DM_H025_SEED0_WEAK_FIELD_CONTROL=TRUE`
 - `WAVE_DIRECT_DM_H025_SEED0_PORTABILITY_LAW=FALSE`
 - `WAVE_DIRECT_DM_H025_STABLE_AMPLITUDE_LAW=FALSE`
-- `RESIDUAL_SCOPE=fam3_and_family_wide_portability_not_claimed`
 
-## Artifact chain
-
-- Source log: [`logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt)
-- Source log: [`logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt)
-- Primary assertion runner: [`scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py`](../scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py)
-- Assertion transcript: [`outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-06.txt`](../outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-06.txt)
-- Assertion transcript: [`outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-16.txt`](../outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-16.txt)
-- Context note: [`docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md`](WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md)
-- Context note: [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md`](WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md)
-- Context note: [`docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md`](WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md)
-- Context note: [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md`](WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md)
-- Context note: [`docs/WAVE_DIRECT_DM_H025_HIGH_BAND_BOUNDARY_NOTE.md`](WAVE_DIRECT_DM_H025_HIGH_BAND_BOUNDARY_NOTE.md)
-- Context note: [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md`](WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md)
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records the explicit upstream-source
-dependency edges the prior auditor flagged as missing
-("the source rows and runner/log artifacts are not registered as audit
-dependencies"). It does not change the audited claim scope or promote
-this note above its class-`(G)` ceiling. Each link names the upstream
-note plus the source log that backs the corresponding row in the
-compression table.
-
-- Fam1 seed-0 control row (table row 1): upstream note
-  [wave_direct_dm_h025_fam1_seed0_control_note](WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md);
-  source log
-  [`logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt);
-  control-batch runner
-  [`scripts/wave_direct_dm_h025_control_batch.py`](../scripts/wave_direct_dm_h025_control_batch.py).
-- Fam2 seed-0 control row (table row 2): upstream note
-  [wave_direct_dm_h025_fam2_seed0_control_note](WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md);
-  source log
-  [`logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt);
-  control-batch runner
-  [`scripts/wave_direct_dm_h025_control_batch.py`](../scripts/wave_direct_dm_h025_control_batch.py).
-
-The assertion runner
-[`scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py`](../scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py)
-ingests both source logs directly (`parse_log` reads them by path) and
-fails fast if either log is missing or its parsed rows disagree with the
-compression table above. The audit can therefore trace each row in the
-table back to a specific line in a specific frozen log via the listed
-dependency edges.
-
-## Why this note cannot promote to a structural theorem
-
-For audit-graph transparency, the structural reason promotion is blocked
-on the registered scope:
-
-- The conclusion ("Fam2 sits deeper than Fam1 at the selected weak-field
-  strength on the seed-0 fine-`H` surface") is a comparison of two
-  simulation outputs taken at the tuned input scale `H = 0.25`.
-- Structural-theorem treatment would require class `(C)`
-  first-principles compute (or genuine class `(A)` algebraic closure
-  over independent retained inputs).
-- Deriving the magnitudes of `R_hist` from `Cl(3)` on `Z^3` would be a
-  separate structural theorem in a different note; that theorem is not
-  attempted here and is explicitly out of scope.
-- The same exclusion applies to any "family-wide portability law" that
-  would extend the compression to `Fam3` or to a continuous family of
-  `H` values.
-
-This revision therefore registers the dependency edges and keeps the
-scope bounded to the two-row numerical compression. The independent
-audit lane remains responsible for the audit verdict.
+Independent audit remains required before the repository can ratify the
+proposed retained-bounded status.

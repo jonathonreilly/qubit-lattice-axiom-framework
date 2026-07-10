@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 211 |
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 9 |
-| open_gate | 25 |
-| unaudited | 1758 |
+| open_gate | 26 |
+| unaudited | 1757 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1355 |
+| `audited_clean` | 1356 |
 | `audited_conditional` | 114 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 32 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 29 |
-| `unaudited` | 2103 |
+| `unaudited` | 2102 |
 
 | claim_type | count |
 |---|---:|
@@ -547,6 +547,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_zdet_fermionic_statistics_admission_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -8090,6 +8091,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Within the supplied C3 circulant coordinate model, scale, ratio, and phase are independent coordinates, while the displayed Q values depend on the chosen readout convention.  _(class `A`)_
 - **chain closes:** True — The restricted claim closes as a bounded algebraic statement about the supplied model. The source explicitly leaves the axiom-to-H construction, physical channel identifications, eta=2/9, and readout-convention selection outside scope.
 - **rationale:** The packet no longer claims a first-principles physical flavor derivation; it claims only finite algebraic facts about an explicitly supplied C3 circulant coordinate model. Independent inspection confirms the displayed formulas are algebraic: the eigenvalue mean is a, the dispersion readout is delta-blind, the scalar gI has zero C/C^2 doublet projection, and the stated Q floors follow from their definitions at r=0. Because the physical carrier, channel bridge, eta datum, and readout selection are explicitly excluded, those open bridges do not break the narrowed claim.
+- **auditor confidence:** high
+
+### `flavor_zdet_fermionic_statistics_admission_2026-06-04`
+
+- **Note:** [`FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md`](../../docs/FLAVOR_ZDET_FERMIONIC_STATISTICS_ADMISSION_2026-06-04.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Bounded algebraic support for the determinant readout in the explicit finite Grassmann-versus-bosonic scope, together with non-selection of cross-site CAR by local dimension or ordinary tensor-product ladders and non-selection of Koide occupancy; physical spin-statistics remains open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00060-flavor_zdet_fermionic_statis`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Composed with the finite checks, the retained dependencies establish that within the audited abstract two-candidate scope the Grassmann candidate carries the finite det(M) readout, while ordinary hard-core/tensor and bosonic comparator routes do not supply that readout by themselves.  _(class `A`)_
+- **chain closes:** True — Within the stated abstract finite scope, retained-grade authorities and exact algebraic checks establish determinant compatibility and show that ordinary local/tensor data do not select CAR. The unproved physical spin-statistics selector is expressly outside the audited conclusion.
+- **rationale:** The retained Grassmann bridge supplies the determinant identity within the explicit two-candidate surface, the retained parity theorem supplies the finite Z2-graded carrier, and the runner computes the relevant determinant, commutation, CAR, and parity identities. The retained-bounded Koide authority is used only to delimit the downstream occupancy residual and does not select either occupancy model. All direct dependencies are retained-grade, and the open physical statistics selector is excluded from the claim scope rather than imported as a premise.
 - **auditor confidence:** high
 
 ### `fm_transfer_note`

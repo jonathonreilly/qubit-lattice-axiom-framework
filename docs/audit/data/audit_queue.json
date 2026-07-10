@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 432,
+    "critical": 431,
     "high": 249,
     "leaf": 746,
     "medium": 493
@@ -8468,32 +8468,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_charged_lepton_observable_curvature.py",
       "transitive_descendants": 491
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
-      "claim_scope": "Finite four-qubit endpoint model with matter qubits A,B and link-end qubits a,b under the note's stipulated U(1)/SU(2) endpoint generators: the U(1) link-transport endpoint profiles are 0,1,2, the U(1) commutant dimension is 36, and the SU(2) bare link-end transport is variant while the double-singlet Wilson-type observable is endpoint invariant. Derivation of the carrier, Gauss generators, physical observable identification, gauge dynamics, coupling values, electroweak breaking, and color SU(3) are out of scope.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "key_terminology",
-        "minimal_axioms",
-        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "retained_pending_chain",
-      "helper_runner_paths": [],
-      "load_bearing_score": 17.934,
-      "note_path": "docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "audit_in_progress",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_two_endpoint_gauss_law_invariance_profile_bounded_2026_06_05.py",
-      "transitive_descendants": 488
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -58496,5 +58470,5 @@
     }
   ],
   "ready_count": 176,
-  "total_pending": 1920
+  "total_pending": 1919
 }

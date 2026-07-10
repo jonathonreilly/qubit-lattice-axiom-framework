@@ -18,9 +18,12 @@ the mpmath Bessel-resolvent representation.
   CTRL1  a 5 percent wrong axial value fails the extrapolation gate.
   CTRL2  the same wrong value fails the convergence-ratio gate.
   CTRL3  changing the raw coefficient 621 to 622 fails the symbolic identity.
+  CTRL4  a simulated failed gate maps to a nonzero process exit.
 
 prints TOTAL: PASS=N FAIL=0
 """
+
+import sys
 
 import sympy as sp
 import numpy as np
@@ -30,6 +33,11 @@ from mpmath import mp, mpf, besseli, exp as mpexp, quad as mpquad, inf as mpinf,
 AUDIT_TIMEOUT_SEC = 360
 
 results = []
+
+
+def exit_code_for(fail_count):
+    """Return the decisive process exit for the accumulated gate failures."""
+    return 1 if fail_count else 0
 
 
 def check(name, ok):
@@ -338,6 +346,8 @@ raw_xyz_wrong = raw_xyz + (x**4*y**4 + x**4*z**4 + y**4*z**4)
 wrong_symbolic_difference = sp.simplify(128 * sp.pi * r**13 * T2 - raw_xyz_wrong)
 check("CTRL3 coefficient 622 in place of 621 is symbolically rejected",
       wrong_symbolic_difference != 0)
+check("CTRL4 decisive exit mapping rejects one simulated failure",
+      exit_code_for(1) == 1 and exit_code_for(0) == 0)
 
 
 n_pass = sum(1 for _, ok in results if ok)
@@ -351,3 +361,4 @@ extrapolation_summary = " ".join(
 )
 print("RESULT: G(x) = 1/(4 pi r) + [5/(32 pi)] K4(nhat)/r^3 + f(nhat)/r^5 + O(1/r^7); extrapolations " + extrapolation_summary)
 print("TOTAL: PASS=%d FAIL=%d" % (n_pass, n_fail))
+sys.exit(exit_code_for(n_fail))

@@ -27,6 +27,28 @@ them.
 
 Current science/open-lane follow-ups:
 
+- `2026-07-10-conformal-causal-source-packet-repair`
+  Scope: the record-order and reconstructed-H inputs to the conformal-class
+  metric packet, plus
+  `scripts/emergent_metric_conformal_class_from_records_runner.py`.
+  Finding: a retained no-go is being accepted as a positive causal-order
+  premise; the microcausality note conflates one-particle and full-Fock
+  spectra, drops `1/a_tau`, and lacks the quasilocal LR composition; the
+  consumer exits zero on failures and labels sampled group velocity as an LR
+  velocity.
+  Disposition: `fix on main`.
+  Detail:
+  [`CONFORMAL_CLASS_CAUSAL_SOURCE_PACKET_REVIEW_2026-07-09.md`](../work_history/repo/review_feedback/CONFORMAL_CLASS_CAUSAL_SOURCE_PACKET_REVIEW_2026-07-09.md)
+- `2026-07-10-wilson-plane-representation-ring-route`
+  Scope:
+  `AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+  and its companion runner.
+  Finding: the `SU(N>=3)` boundary omits a direct representation-ring proof:
+  expanding `exp[(beta/2N)(chi_R + chi_Rbar)]` gives positive powers of
+  `R direct-sum Rbar`, and tensor-power decomposition has nonnegative integer
+  irrep multiplicities. Replace the group-dependent obstruction language and
+  add a runner gate for this analytic route.
+  Disposition: `fix on main`.
 - `2026-07-10-record-p1-dependency-audit-drift`
   Scope: `RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md` and
   `scripts/frontier_record_p1_dependency_audit_verifier.py`.

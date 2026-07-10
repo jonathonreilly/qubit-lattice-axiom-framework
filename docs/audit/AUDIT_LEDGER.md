@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 197 |
-| **retained_no_go** | 212 |
+| **retained_no_go** | 213 |
 | **retained_bounded** | 945 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
 | unaudited | 1727 |
-| audit_in_progress | 6 |
+| audit_in_progress | 5 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 8 |
-| `audited_clean` | 1363 |
+| `audit_in_progress` | 7 |
+| `audited_clean` | 1364 |
 | `audited_conditional` | 138 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
@@ -85,9 +85,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `bounded_theorem` | 2039 |
 | `decoration` | 72 |
 | `meta` | 355 |
-| `no_go` | 482 |
+| `no_go` | 483 |
 | `open_gate` | 184 |
-| `positive_theorem` | 601 |
+| `positive_theorem` | 600 |
 
 | criticality | count |
 |---|---:|
@@ -145,7 +145,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | C | - |
 | `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -1139,6 +1138,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `reading_note_final_derivations_motion_closure_bounded_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | C | - |
 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `record_classical_semigroup_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.6 | A | - |
 | `record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -17567,6 +17567,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Record supports durable realized outcomes, finite additive scalar readout, arbitrary finite-prefix count/readout schemas, and post-record label consumption.  _(class `E`)_
 - **chain closes:** False — The runner computes set differences only after hard-coding both the Record-supported gate set and every lane's required gates. Neither the Record axiom content nor a derivation of those gate assignments is included, so the substantive classification is assumed rather than established.
 - **rationale:** The runner genuinely checks file existence, anchor phrases, and internal set consistency, but its load-bearing support map is introduced as a constant. Its 39 passing checks therefore validate a stipulated classifier rather than derive the classifier from the Record axiom. The result is useful as bounded audit metadata, but it is definition-grade rather than theorem-grade.
+- **auditor confidence:** high
+
+### `record_classical_semigroup_boundary_2026-06-06`
+
+- **Note:** [`RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md`](../../docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Conditional on representing a supplied finite post-record alphabet by C^O, the audit establishes discrete permutation automorphisms, zero derivations, irreversible nonzero append/count translations, and the need to supply Markov generators to select continuous rates or stationary points.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-record_classical_sem-judge-1`  (codex-gpt-5.6; independence=judicial_review)
+- **load-bearing step:** The idempotent derivation equations force Der(C^O)=0, while Aut(C^O)=Sym(O) is finite, excluding any nontrivial connected reversible flow within the finite record algebra.  _(class `A`)_
+- **chain closes:** True — The note gives a self-contained algebraic closure from the stipulated finite function algebra: its atom idempotents force all derivations to vanish, and its automorphisms are precisely permutations. The runner performs actual enumeration and linear-algebra checks rather than importing or printing the contested conclusions; its append/count and Markov examples also support the stated boundary. The operative claim is a no-go result excluding intrinsic continuous reversible post-record dynamics, with the positive algebraic facts serving as its proof.
+- **rationale:** The note gives a self-contained algebraic closure from the stipulated finite function algebra: its atom idempotents force all derivations to vanish, and its automorphisms are precisely permutations. The runner performs actual enumeration and linear-algebra checks rather than importing or printing the contested conclusions; its append/count and Markov examples also support the stated boundary. The operative claim is a no-go result excluding intrinsic continuous reversible post-record dynamics, with the positive algebraic facts serving as its proof.
 - **auditor confidence:** high
 
 ### `record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07`

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 936 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1821 |
+| unaudited | 1820 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 76 |
+| ~~audited_conditional~~ | 77 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1345 |
-| `audited_conditional` | 76 |
+| `audited_conditional` | 77 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2166 |
+| `unaudited` | 2165 |
 
 | claim_type | count |
 |---|---:|
@@ -1496,6 +1496,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `acphilambda_k_even_registration_correction_registered_pattern_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1843,6 +1844,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For any normalized two-sector coordinate p in (0,1), choosing d = pu/(1-p) realizes p, so Record additivity permits the competing readings but does not rank or select them.  _(class `A`)_
 - **chain closes:** False — The algebra and accepted-premise texts support the narrow non-supply result, but the note's live Tier-A-survivor framing is contradicted by the supplied registry, which reports zero live Tier-A targets and AC_phi_lambda retirement through owner governance. The primary runner fails on that same stale assumption.
 - **rationale:** The finite-coordinate calculation genuinely shows that Record additivity alone cannot select among the stated measures, and the accepted axiom and primitive authorities explicitly withhold the required selector. However, the source also treats the AC_phi_lambda binary as a current live Tier-A survivor, while its cited registry says that AC_phi_lambda has been retired through an owner-governed premise. The runner consequently raises a KeyError before testing most of its assertions, so the source must be narrowed or reconciled with the post-2026-07-05 registry state before a clean verdict.
+- **auditor confidence:** high
+
+### `acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04`
+
+- **Note:** [`ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The July 4 Record formation occurrence/additivity append does not by itself select between count-twice and count-once doublet occupancy dictionaries.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-acphilambda_occupancy_fo-088`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Two distinct doublet dictionaries preserve Record occurrence, permanence, one-record-per-site uniqueness, and finite additivity while yielding r=1/2 and r=1 respectively, so the formation append cannot select between them.  _(class `A`)_
+- **chain closes:** True — For the narrow non-supply claim, the two explicit completions are compatible with the accepted Record axiom yet produce different occupancy readings, establishing non-entailment. This does not establish the note's stale assertion that AC_phi_lambda(i) remains a live Tier-A target on current main.
+- **rationale:** The finite separation argument is a valid class-A countermodel check, and the minimal-axiom authority explicitly withholds formation rules, weights, and outcome dictionaries. However, the cited registry says the live Tier-A target count is zero and AC_phi_lambda was retired through owner governance on 2026-07-05, contradicting the note's current-main/live-registry language. The completed runner then crashes because it assumes the removed entry still exists, so the broader current-surface framing is not verified.
+- **open / conditional deps cited:**
+  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
 - **auditor confidence:** high
 
 ### `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11`

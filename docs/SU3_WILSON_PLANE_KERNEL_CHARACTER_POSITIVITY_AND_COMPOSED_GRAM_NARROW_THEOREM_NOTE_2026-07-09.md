@@ -1,7 +1,9 @@
 # SU(3) Wilson plane-kernel character positivity and composed two-slice Gram — narrow theorem note
 
-**Date:** 2026-07-09  
-**Claim type:** positive narrow theorem
+**Date:** 2026-07-09
+**Type:** positive_theorem
+**Primary runner:** [`scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py`](../scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py)
+**Cached output:** [`logs/runner-cache/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.txt`](../logs/runner-cache/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.txt)
 
 ## 0. Statement and scope
 
@@ -18,7 +20,7 @@ or thermodynamic limit.
 
 ## 1. Claims
 
-**S1 — multiplicity series and character positivity.** Let `G` be a compact
+**Multiplicity-series character positivity.** Let `G` be a compact
 group and `rho` a finite-dimensional unitary representation. For `beta >= 0`,
 
 ```text
@@ -31,16 +33,22 @@ where `M_{lambda,n}` is the multiplicity of `lambda` in
 so every `c_lambda(beta)` is nonnegative. For the `SU(3)` fundamental,
 `k_beta(W) = exp(beta Re tr W)` is the Wilson plane-kernel factor.
 
-**Supplier statement (S-RP).** For every `beta >= 0` the `SU(3)` fundamental Wilson plane kernel `exp(beta Re tr W)` has nonnegative character coefficients `c_lambda(beta) = sum_n (beta/2)^n / n! * M_{lambda,n}` with `M_{lambda,n}` the nonnegative integer multiplicity of `lambda` in `(3 ⊕ 3bar)^{⊗n}`; hence the reflection-plane kernel is positive semidefinite and the integrated two-slice temporal-gauge Gram is positive semidefinite on the stated `A_+^(2)` surface at any finite `L_s`.
+**Wilson-plane supplier theorem.** For every `beta >= 0` the `SU(3)` fundamental
+Wilson plane kernel `exp(beta Re tr W)` has nonnegative character coefficients
+`c_lambda(beta) = sum_n (beta/2)^n / n! * M_{lambda,n}`, with `M_{lambda,n}` the
+nonnegative integer multiplicity of `lambda` in `(3 ⊕ 3bar)^{⊗n}`. Hence the
+reflection-plane kernel and the integrated two-slice temporal-gauge Gram on the
+stated `A_+^(2)` surface are positive semidefinite at any finite `L_s`.
 
-**S2 — kernel criterion and integrated Gram.** Suppose the character series for
+**Kernel criterion and integrated Gram.** Suppose the character series for
 `k` is absolutely convergent. The kernel `K(U,V) = k(U V^dagger)` is positive
-semidefinite if and only if every character coefficient is nonnegative. With S1
-supplying the `SU(3)` plane-kernel coefficients, the group-independent
-factorization in the bridge yields the integrated two-slice Gram positive
-semidefinite on its `A_+^(2)` surface for every finite spatial size `L_s`.
+semidefinite if and only if every character coefficient is nonnegative. With the
+multiplicity series supplying the `SU(3)` plane-kernel coefficients, the
+group-independent factorization in the bridge yields the integrated two-slice
+Gram positive semidefinite on its `A_+^(2)` surface for every finite spatial size
+`L_s`.
 
-**S2' — arbitrary bounded plus-slice observables.** In the two-slice
+**Bounded plus-slice observable extension.** In the two-slice
 temporal-gauge composed form, let
 
 ```text
@@ -48,18 +56,19 @@ w = exp(B_+) exp(B_-) product_k k_beta(U_k(0) U_k(1)^dagger),
 B_- = B_+ circ theta,
 ```
 
-with `B_+` real and supported on the plus slice. For any finite family of bounded
-measurable plus-slice observables `{F_i}`, the form
-`G_ij = E_w[conj(F_i(c_0)) F_j(c_1)]` is positive semidefinite. The bridge's
-`A_+^(2)` surface is the stated special case.
+with `B_+` bounded, measurable, real, and supported on the plus slice. Then the
+normalizing integral satisfies `0 < Z = integral w < infinity`. For any finite
+family of bounded measurable plus-slice observables `{F_i}`, the normalized form
+`G_ij = Z^(-1) integral w conj(F_i(c_0)) F_j(c_1)` is positive semidefinite. The
+bridge's `A_+^(2)` surface is the stated special case.
 
-**S3 — exact reductions and cross-anchors.** For `U(1)` of charge one, the
+**Exact reductions and cross-anchors.** For `U(1)` of charge one, the
 multiplicity construction reduces exactly to the positive Bessel series. For
 `SU(2)`, the same construction reduces on the one-variable torus to exact
 integer multiplicities. These reductions independently anchor the general
 series.
 
-## 2. Proof of S1 and exact reductions
+## 2. Proof of multiplicity-series positivity and exact reductions
 
 Unitarity gives
 
@@ -82,7 +91,8 @@ Finite-dimensional representation theory gives
 `sum_lambda M_{lambda,n} d_lambda = (2 d_rho)^n` and
 `|chi_lambda| <= d_lambda`. The resulting absolute majorant is
 `exp(beta d_rho)`, equal to `exp(3 beta)` for the `SU(3)` fundamental. Absolute
-convergence therefore permits interchange of the two sums and proves S1.
+convergence therefore permits interchange of the two sums and proves the
+multiplicity-series statement.
 
 For `U(1)`, the multiplicity of charge `n` in `(1 oplus -1)^{tensor k}` is
 `C(k,(k+n)/2)` when `k` and `n` have the same parity, and is zero otherwise.
@@ -101,7 +111,7 @@ For `SU(2)`, the same torus multiplication, Weyl density, and character inner
 product produce nonnegative integer tensor-power multiplicities; no floating
 proxy enters that reduction.
 
-## 3. Proof of S2 and S2'
+## 3. Proof of the kernel criterion and bounded-observable extension
 
 For an irreducible unitary matrix representation,
 
@@ -112,7 +122,8 @@ chi_lambda(U V^dagger)
 
 Every finite restriction of this kernel is therefore a Gram matrix. An
 absolutely convergent nonnegative combination of these kernels is positive
-semidefinite, proving the reverse implication in S2.
+semidefinite, proving that nonnegative coefficients imply a positive-semidefinite
+kernel.
 
 Conversely, test `K` with `f = D^mu_ab`. Schur orthogonality gives
 
@@ -121,17 +132,20 @@ integral integral conj(f(U)) K(U,V) f(V) dU dV = c_mu / d_mu^2.
 ```
 
 Positive semidefiniteness forces this quantity, and hence every `c_mu`, to be
-nonnegative. This proves the forward implication.
+nonnegative. This proves the converse implication.
 
-For S2', absorb `exp(B_+)` into each plus-slice observable and absorb
-`exp(B_-)` symmetrically into its reflected factor. Each link kernel is positive
-semidefinite by S1 and S2. A pointwise product of positive-semidefinite kernels is
+For the bounded-observable extension, absorb `exp(B_+)` into each plus-slice
+observable and absorb `exp(B_-)` symmetrically into its reflected factor. Each
+link kernel is positive semidefinite by the multiplicity-series result and the
+kernel criterion. A pointwise product of positive-semidefinite kernels is
 positive semidefinite by the Schur product theorem on every finite restriction,
 so the product over spatial links is a positive kernel on the product group. The
 integrated bilinear form is consequently a Gram form for every finite family of
-bounded measurable plus-slice observables.
+bounded measurable plus-slice observables. Boundedness on the compact finite-link
+configuration space also gives `0 < Z < infinity`, and division by `Z` preserves
+positive semidefiniteness.
 
-The bridge's W3 factorization is group-independent once its plane-kernel
+The bridge's integrated factorization is group-independent once its plane-kernel
 positivity input is supplied. Applying the preceding result supplies that input
 for the `SU(3)` fundamental and gives its integrated two-slice Gram on the
 `A_+^(2)` surface for every finite `L_s`.
@@ -153,14 +167,15 @@ derivation.
 The runner is
 `su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py`.
 
-- Part A constructs exact `SU(3)` character and multiplicity tables, performs
-  independent torus quadrature, rejects a deliberately wrong kernel, and checks
-  the exact `U(1)` and `SU(2)` reductions.
-- Part B checks explicit matrices for the irreducibles appearing through tensor
-  order two, including unitarity, composition, character ties, and the spectral
-  kernel identity.
-- Part C evaluates the actual `L_s = 2` composed integral, its truncated-kernel
-  factorization, the no-conjugation control, and the exact zero-coupling anchor.
+- The exact-character checks construct `SU(3)` character and multiplicity tables,
+  perform independent torus quadrature, reject a deliberately wrong kernel, and
+  check the exact `U(1)` and `SU(2)` reductions.
+- The representation-matrix checks cover the irreducibles appearing through
+  tensor order two, including unitarity, composition, character ties, and the
+  spectral kernel identity.
+- The composed-form checks evaluate the actual `L_s = 2` composed integral, its
+  truncated-kernel factorization, the no-conjugation control, and the exact
+  zero-coupling anchor.
 
 The runner prints a final line of the exact form `TOTAL: PASS=<N> FAIL=<M>` and
 exits zero if and only if `M = 0`.

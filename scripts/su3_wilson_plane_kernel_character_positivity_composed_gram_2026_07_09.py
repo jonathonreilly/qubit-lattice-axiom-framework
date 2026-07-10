@@ -156,7 +156,7 @@ def exact_coefficient(multiplicities, label, beta: float, nmax=N_SERIES):
 
 
 def build_part_a_data():
-    section("Part A: exact character positivity for SU(3)")
+    section("Exact character positivity for SU(3)")
 
     chi3 = {(1, 0): 1, (0, 1): 1, (-1, -1): 1}
     chi3bar = {tuple(-x for x in exponent): coefficient for exponent, coefficient in chi3.items()}
@@ -166,7 +166,7 @@ def build_part_a_data():
         h_powers.append(poly_mul(h_powers[-1], h))
     assert all(type(v) is int for power in h_powers for v in power.values())
     print(
-        f"  A1: built h^n through n={N_SERIES}; terms(h^{N_SERIES})="
+        f"  Built h^n through n={N_SERIES}; terms(h^{N_SERIES})="
         f"{len(h_powers[-1])}, max coefficient={max(h_powers[-1].values())}"
     )
 
@@ -180,7 +180,7 @@ def build_part_a_data():
     delta = poly_mul(poly_mul(poly_add(z1, z2, -1), poly_add(z1, z3, -1)), poly_add(z2, z3, -1))
     density = poly_mul(delta, poly_conj(delta))
     density_ct = density.get((0, 0), 0)
-    check("A2.1 Weyl-density normalization", density_ct == 6, f"CT[|Delta|^2]={density_ct}")
+    check("Weyl-density normalization", density_ct == 6, f"CT[|Delta|^2]={density_ct}")
 
     dimension_failures = [
         (label, sum(characters[label].values()), su3_dimension(label))
@@ -189,7 +189,7 @@ def build_part_a_data():
     ]
     max_dim = max(su3_dimension(label) for label in labels8)
     check(
-        "A2.2 Jacobi-Trudi characters have the SU(3) dimensions",
+        "Jacobi-Trudi characters have the SU(3) dimensions",
         not dimension_failures,
         f"labels={len(labels8)}, max dimension={max_dim}, failures={len(dimension_failures)}",
     )
@@ -208,7 +208,7 @@ def build_part_a_data():
             worst_orth = max(worst_orth, abs(observed - expected))
             orth_failures += observed != expected
     check(
-        "A2.3 full pairwise character orthonormality",
+        "Full pairwise character orthonormality",
         orth_failures == 0,
         f"pairs={len(labels8) ** 2}, failures={orth_failures}, max residual={worst_orth}",
     )
@@ -229,7 +229,7 @@ def build_part_a_data():
         for label in labels8
         if multiplicities[(label, 1)] != expected_n1.get(label, 0)
     ]
-    check("A3.1 multiplicity anchors at n=1", not n1_bad, f"failures={len(n1_bad)}")
+    check("Multiplicity anchors at n=1", not n1_bad, f"failures={len(n1_bad)}")
 
     expected_n2 = {
         (0, 0): 2,
@@ -248,7 +248,7 @@ def build_part_a_data():
         multiplicities[(label, 2)] * su3_dimension(label) for label in labels8
     )
     check(
-        "A3.2 multiplicity anchors at n=2",
+        "Multiplicity anchors at n=2",
         not n2_bad and n2_dim_sum == 36,
         f"failures={len(n2_bad)}, dimension sum={n2_dim_sum}",
     )
@@ -262,7 +262,7 @@ def build_part_a_data():
         )
         dimension_residuals.append(observed - 6**n)
     check(
-        "A3.3 exact dimension sums through n=8",
+        "Exact dimension sums through n=8",
         all(x == 0 for x in dimension_residuals),
         f"max residual={max(map(abs, dimension_residuals))}",
     )
@@ -271,7 +271,7 @@ def build_part_a_data():
     coefficient_exact = {}
     coefficient_float = {}
     ctilde2 = {}
-    print("  A4 coefficient table c_lambda^(26)(beta):")
+    print("  Coefficient table c_lambda^(26)(beta):")
     for beta in BETA_VALUES:
         values = []
         for label in labels4:
@@ -295,7 +295,7 @@ def build_part_a_data():
             if sum(label) <= 2
         }
     tail_2 = tail_bound(2.0, 3)
-    check("A4 exponential-series tail", tail_2 < 1e-6, f"T(2,26)={tail_2:.6e}")
+    check("Exponential-series tail", tail_2 < 1e-6, f"T(2,26)={tail_2:.6e}")
 
     angles = np.linspace(0.0, 2.0 * np.pi, 64, endpoint=False)
     theta1, theta2 = np.meshgrid(angles, angles, indexing="ij")
@@ -321,7 +321,7 @@ def build_part_a_data():
             max_quad_allowance = max(max_quad_allowance, allowance)
             quad_failures += residual > allowance
     check(
-        "A5 independent direct-exponential quadrature cross-extraction",
+        "Independent direct-exponential quadrature cross-extraction",
         quad_failures == 0,
         f"max residual={max_quad_residual:.3e}, max allowed={max_quad_allowance:.3e}, failures={quad_failures}",
     )
@@ -334,7 +334,7 @@ def build_part_a_data():
         bad_kernel * np.conj(char_grids[(1, 1)]) * density_grid / 6.0
     )
     check(
-        "A6 wrong-kernel rejector detects a negative (1,1) coefficient",
+        "Wrong-kernel rejector detects a negative (1,1) coefficient",
         bad_extracted.real < -0.5,
         f"extracted={bad_extracted.real:+.9e}{bad_extracted.imag:+.2e}i, subtraction={subtraction:.9e}",
     )
@@ -369,12 +369,12 @@ def build_part_a_data():
             interval_failures += not (lower <= form_b <= upper)
             max_bessel_tail = max(max_bessel_tail, tail)
     check(
-        "A7.1 U(1) binomial and Bessel combinatorial forms agree",
+        "U(1) binomial and Bessel combinatorial forms agree",
         ab_failures == 0,
         f"max |A-B|={max_ab:.3e}, failures={ab_failures}",
     )
     check(
-        "A7.2 U(1) combinatorial values lie in certified Bessel intervals",
+        "U(1) combinatorial values lie in certified Bessel intervals",
         interval_failures == 0,
         f"max tail={max_bessel_tail:.3e}, failures={interval_failures}",
     )
@@ -398,14 +398,14 @@ def build_part_a_data():
             value = numerator // 2
             assert value >= 0
             multiplicities2[(r, n)] = value
-    check("A8.1 SU(2) Weyl-density normalization", density2_ct == 2, f"CT={density2_ct}")
+    check("SU(2) Weyl-density normalization", density2_ct == 2, f"CT={density2_ct}")
 
     dim2_residuals = []
     for n in range(9):
         observed = sum(multiplicities2[(r, n)] * (r + 1) for r in labels2)
         dim2_residuals.append(observed - 4**n)
     check(
-        "A8.2 SU(2) exact dimension sums through n=8",
+        "SU(2) exact dimension sums through n=8",
         all(x == 0 for x in dim2_residuals),
         f"max residual={max(map(abs, dim2_residuals))}",
     )
@@ -430,7 +430,7 @@ def build_part_a_data():
             max_su2_allowance = max(max_su2_allowance, allowance)
             su2_failures += residual > allowance
     check(
-        "A8.3 SU(2) quadrature cross-extraction",
+        "SU(2) quadrature cross-extraction",
         su2_failures == 0,
         f"max residual={max_su2_residual:.3e}, max allowed={max_su2_allowance:.3e}, failures={su2_failures}",
     )
@@ -541,7 +541,7 @@ def ctilde_table(part_a, beta: float):
 
 
 def run_part_b(part_a):
-    section("Part B: explicit matrix elements for the n<=2 irreducible set")
+    section("Explicit matrix elements for the n<=2 irreducible set")
     pairs_u = haar_su3(20, RNG)
     pairs_v = haar_su3(20, RNG)
     max_unitarity = 0.0
@@ -578,22 +578,22 @@ def run_part_b(part_a):
         max_kernel_identity = max(max_kernel_identity, abs(left - right))
 
     check(
-        "B1 explicit representation matrices are unitary",
+        "Explicit representation matrices are unitary",
         max_unitarity <= 1e-12,
         f"max ||D D^dag-I||={max_unitarity:.3e}",
     )
     check(
-        "B2 explicit representation matrices respect composition",
+        "Explicit representation matrices respect composition",
         max_homomorphism <= 1e-12,
         f"max ||D(UV)-D(U)D(V)||={max_homomorphism:.3e}",
     )
     check(
-        "B3 explicit characters tie to the exact torus polynomials",
+        "Explicit characters tie to the exact torus polynomials",
         max_character_tie <= 1e-10,
         f"max |trace D-chi|={max_character_tie:.3e}",
     )
     check(
-        "B4 pointwise truncated-kernel spectral identity",
+        "Pointwise truncated-kernel spectral identity",
         max_kernel_identity <= 1e-12,
         f"max residual={max_kernel_identity:.3e}",
     )
@@ -713,7 +713,7 @@ def normalized_factor_gram(m_a, m_b, c_joint):
 
 
 def run_part_c(part_a):
-    section("Part C: composed two-slice SU(3) form at L_s=2")
+    section("Composed two-slice SU(3) form at L_s=2")
     c1_results = {}
     for beta in (0.15, 0.75):
         result = composed_mc(beta, 200_000, RNG)
@@ -721,21 +721,21 @@ def run_part_c(part_a):
         minimum = float(result["eigenvalues"][0])
         threshold = max(3.0 * result["mc_noise"], 5e-3)
         print(
-            f"  C1 beta={beta}: min_eig={minimum:+.6e}, mc_noise={result['mc_noise']:.3e}, "
+            f"  Full-weight beta={beta}: min_eig={minimum:+.6e}, mc_noise={result['mc_noise']:.3e}, "
             f"herm_err={result['herm_err']:.3e}, eigenvalues={np.array2string(result['eigenvalues'], precision=5)}"
         )
         check(
-            f"C1.{beta}.1 full-weight Gram is PSD within sampling error",
+            f"Full-weight Gram at beta={beta} is PSD within sampling error",
             minimum > -threshold,
             f"min eig={minimum:+.6e}, negative allowance={threshold:.3e}",
         )
         check(
-            f"C1.{beta}.2 full-weight sampling error is controlled",
+            f"Full-weight sampling error at beta={beta} is controlled",
             result["mc_noise"] < 0.05,
             f"mc_noise={result['mc_noise']:.3e}",
         )
         check(
-            f"C1.{beta}.3 full-weight Hermiticity residual is sampling-sized",
+            f"Full-weight Hermiticity residual at beta={beta} is sampling-sized",
             result["herm_err"] < 10.0 * result["mc_noise"] + 1e-12,
             f"herm_err={result['herm_err']:.3e}, allowance={10.0 * result['mc_noise'] + 1e-12:.3e}",
         )
@@ -749,14 +749,20 @@ def run_part_c(part_a):
 
     dims = {label: su3_dimension(label) for label in LAMBDA2}
     coefficients = ctilde_table(part_a, beta)
+    b = Fraction(str(beta))
+    expected_coefficients = {
+        (0, 0): float(1 + b * b / 4),
+        (1, 0): float(b / 2 + b * b / 8),
+        (0, 1): float(b / 2 + b * b / 8),
+        (2, 0): float(b * b / 8),
+        (0, 2): float(b * b / 8),
+        (1, 1): float(b * b / 4),
+    }
     expected_w155 = np.concatenate(
-        [
-            np.full(dims[label] ** 2, part_a["ctilde2"][beta][label], dtype=np.float64)
-            for label in LAMBDA2
-        ]
+        [np.full(dims[label] ** 2, expected_coefficients[label], dtype=np.float64) for label in LAMBDA2]
     )
     w155 = np.concatenate(
-        [np.full(dims[label] ** 2, ctilde_table(part_a, beta)[label], dtype=np.float64) for label in LAMBDA2]
+        [np.full(dims[label] ** 2, coefficients[label], dtype=np.float64) for label in LAMBDA2]
     )
     c_joint = np.outer(w155, w155)
     factor, factor_raw = normalized_factor_gram(m_a, m_b, c_joint)
@@ -775,7 +781,7 @@ def run_part_c(part_a):
     violation_ratio = difference / allowance
     max_ratio = float(np.max(violation_ratio))
     check(
-        "C2.1 direct truncated integral matches independent spectral factorization",
+        "Direct truncated integral matches independent spectral factorization",
         np.all(difference <= allowance),
         f"max |direct-factor|={np.max(difference):.3e}, max violation ratio={max_ratio:.3f}",
     )
@@ -786,26 +792,28 @@ def run_part_c(part_a):
     same_hermitian = (same_raw + same_raw.conj().T) / 2.0
     same_minimum = float(np.linalg.eigvalsh(same_hermitian)[0])
     check(
-        "C2.2 same-stream factorization is a manifest Gram matrix",
+        "Same-stream factorization is a manifest Gram matrix",
         same_minimum >= -1e-10,
         f"min eig={same_minimum:+.6e}",
     )
 
     check(
-        "C2.3 factorization coefficients byte-match the Part A partial sums",
+        "Factorization coefficients match independent order-two representation-ring formulas",
         w155.tobytes() == expected_w155.tobytes(),
         f"bytes={len(w155.tobytes())}, max value residual={np.max(np.abs(w155 - expected_w155)):.3e}",
     )
 
     consistency_difference = float(np.max(np.abs(c1_results[0.15]["gram"] - direct["gram"])))
     consistency_allowance = 0.05 + 5.0 * (c1_results[0.15]["mc_noise"] + direct["mc_noise"])
-    kernel_envelope = math.exp(3.0 * beta) - 1.0 - 3.0 * beta - 0.5 * (3.0 * beta) ** 2
+    per_link_remainder_bound = (
+        math.exp(3.0 * beta) - 1.0 - 3.0 * beta - 0.5 * (3.0 * beta) ** 2
+    )
     print(
-        f"  C2 consistency: sup |k-ktilde_2| <= {kernel_envelope:.9e}; "
+        f"  Truncation diagnostic: per-link sup |k-ktilde_2| <= {per_link_remainder_bound:.9e}; "
         f"observed Gram difference={consistency_difference:.3e}"
     )
     check(
-        "C2.4 full and truncated composed Grams obey the consistency envelope",
+        "Full and truncated composed Grams agree within the Monte Carlo smoke-test tolerance",
         consistency_difference <= consistency_allowance,
         f"observed={consistency_difference:.3e}, allowance={consistency_allowance:.3e}",
     )
@@ -813,7 +821,7 @@ def run_part_c(part_a):
     linear = composed_mc(1.0, 100_000, RNG, conjugate_reflected=False)
     linear_minimum = float(linear["eigenvalues"][0])
     check(
-        "C3 no-conjugation control is non-PSD",
+        "No-conjugation control is non-PSD",
         linear_minimum < -1e-3,
         f"min eig={linear_minimum:+.6e}, mc_noise={linear['mc_noise']:.3e}",
     )
@@ -824,14 +832,14 @@ def run_part_c(part_a):
     zero_difference = float(np.max(np.abs(zero["gram"] - target)))
     zero_allowance = 6.0 * zero["mc_noise"] + 1e-3
     check(
-        "C4.1 beta=0 Gram matches the exact rank-one anchor",
+        "Beta=0 Gram matches the exact rank-one anchor",
         zero_difference <= zero_allowance,
         f"max residual={zero_difference:.3e}, allowance={zero_allowance:.3e}",
     )
     absolute_eigenvalues = np.sort(np.abs(zero["eigenvalues"]))[::-1]
     second_largest = float(absolute_eigenvalues[1])
     check(
-        "C4.2 beta=0 non-leading spectrum vanishes within sampling error",
+        "Beta=0 non-leading spectrum vanishes within sampling error",
         second_largest <= zero_allowance,
         f"second-largest |eig|={second_largest:.3e}, allowance={zero_allowance:.3e}",
     )

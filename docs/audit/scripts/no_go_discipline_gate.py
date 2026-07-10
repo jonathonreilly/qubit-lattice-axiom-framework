@@ -114,8 +114,8 @@ NEGATED_BOUNDARY_RE = re.compile(
     re.IGNORECASE,
 )
 NEGATED_NEGATIVE_ASSURANCE_RE = re.compile(
-    r"\b(?:(?:does|do|did)\s+not\s+(?:require|introduce|add|supply|create|produce)|"
-    r"cannot\s+(?:introduce|add|supply|create|produce))\s+"
+    r"\b(?:(?:does|do|did)\s+not\s+(?:require|introduce|add|create|produce)|"
+    r"cannot\s+(?:introduce|add|create|produce))\s+"
     r"(?:an?\s+|any\s+|the\s+)?(?:new\s+)?"
     r"(?:axioms?|walls?|admissions?|obstructions?)\b",
     re.IGNORECASE,

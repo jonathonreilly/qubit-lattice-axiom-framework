@@ -2535,6 +2535,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "The carrier is blocked by a selector wall.",
             "There remains an obstruction.",
             "The attempted construction fails to close.",
+            "The construction does not supply an admission.",
         ):
             with self.subTest(body=body):
                 self.assertTrue(
@@ -2571,7 +2572,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "The remaining admission is explicitly supplied, so the theorem closes.",
             "No obstruction remains after the exact construction.",
             "This does not require a new axiom.",
-            "The construction does not supply an admission.",
+            "The construction does not introduce an admission.",
             "The identity cannot produce an obstruction.",
         ):
             with self.subTest(rationale=rationale):

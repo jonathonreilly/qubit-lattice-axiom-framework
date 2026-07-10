@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 942 |
+| **retained_bounded** | 943 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1739 |
+| unaudited | 1738 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 15 |
-| `audited_clean` | 1357 |
+| `audited_clean` | 1358 |
 | `audited_conditional` | 126 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2086 |
+| `unaudited` | 2085 |
 
 | claim_type | count |
 |---|---:|
@@ -164,6 +164,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_ambient_equivariant_heat_trace_face_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -1929,6 +1930,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing contribution is an algebraic re-expression of one retained parent result using standard cycle-graph spectral mathematics, with no external-comparator check. The runner genuinely computes the fixed-point and pseudoinverse identities, but its physical-wall block assigns delta = 2/9 and then checks consistency rather than deriving that assignment. Consequently the exact transport face is decoration-grade, while the note correctly leaves the physical wall open.
 - **decoration parent:** `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`
 - **auditor confidence:** high
+
+### `acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01`
+
+- **Note:** [`ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md`](../../docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the selected local C3 fixed-defect density class, the enumerated homogeneous premises cannot select c=1; count normalization selects c=9/2, the retained fixed-radian C3 circulant surface permits no spectrum-preserving rescale beyond sign, and the unresolved coefficient is the existing R-eta density-to-angle junction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00010-acphilambda_defect_identity_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because every enumerated readout clause is homogeneous under I -> lambda I, the premise-satisfying set contains the entire c-line and cannot select the nonzero member c=1.  _(class `A`)_
+- **chain closes:** True — Finite additivity gives the stated one-parameter normal form, and rescale homogeneity proves the scoped orbit obstruction. The remaining count, C3-angle, and unit-blind-interface conclusions follow by exact algebra from the supplied retained-grade or accepted inputs; the physical selector remains an explicit conclusion-side wall.
+- **rationale:** The main obstruction is a genuine class-A group-orbit argument, not a definition, tuned match, or external comparator check. The count and interface results follow by exact arithmetic, while the angle-side result follows from the supplied C3 circulant spectrum. The Tier-A R-eta admission remains open as the wall identified by this bounded theorem rather than being imported as a closed physical bridge. The runner's finite-grid T3 implementation is weaker than its universal label, but the universal result is independently forced by the exact formulas supplied in the packet.
+- **open / conditional deps cited:**
+  - `audit/data/tier_a_admissions.json`
+  - `KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`
+- **auditor confidence:** medium
 
 ### `acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02`
 

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 931 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1846 |
+| unaudited | 1845 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 63 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1337 |
-| `audited_conditional` | 63 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 24 |
-| `unaudited` | 2191 |
+| `unaudited` | 2190 |
 
 | claim_type | count |
 |---|---:|
@@ -1533,6 +1533,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `shapiro_family_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -16965,6 +16966,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`
   - `DIAMOND_SENSOR_PROTOCOL_NOTE.md`
   - `DIAMOND_SENSOR_PREDICTION_NOTE.md`
+- **auditor confidence:** high
+
+### `shapiro_family_portability_note`
+
+- **Note:** [`SHAPIRO_FAMILY_PORTABILITY_NOTE.md`](../../docs/SHAPIRO_FAMILY_PORTABILITY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-c proxy phase portability, monotonicity, family spread, and exact zero-source controls within the three-family, two-seed configured discrete harness.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-shapiro_family_portabili-053`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The computed family means agree below 2.5e-4 rad at every finite c across the three configured families.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the finite-c phase table, spread, and monotonicity. It does not compute the claimed zero-source control: _measure_family assigns zero_phase = 0.0 directly, so that required gate remains unsupported by the runner.
+- **rationale:** Issue: the runner hard-codes zero_phase = 0.0 instead of performing the stated zero-source detector-overlap comparison. Why this blocks: exact zero control is an explicit first gate and conjunct of the audited claim, although the finite-c portability table itself is genuinely computed. Repair target: execute the instantaneous and finite-c paths with source strength zero for every family and seed, measure the detector overlaps, and assert the resulting phases before refreshing the cache. Claim boundary until fixed: the finite-c table, small family spread, and monotonicity are supported only within the configured proxy harness, while the exact zero-control gate remains conditional.
 - **auditor confidence:** high
 
 ### `shapiro_five_family_portability_corrected_boundary_note_2026-06-06`

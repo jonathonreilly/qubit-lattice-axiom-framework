@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1799 |
+| unaudited | 1798 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 88 |
+| ~~audited_conditional~~ | 89 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1348 |
-| `audited_conditional` | 88 |
+| `audited_conditional` | 89 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2144 |
+| `unaudited` | 2143 |
 
 | claim_type | count |
 |---|---:|
@@ -1581,6 +1581,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
+| `wilson_m_h_per_channel_closure_bounded_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
@@ -21675,6 +21676,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Given the retained_bounded Wilson matching authority beta = 2 N_c / g^2 and the compensating relation g'^2 = g^2/c^2, the stated beta' = c^2 beta and beta' g'^2 = beta g^2 = 2 N_c follow by direct algebra. No Wilson action-surface selection, beta=6, or g_bare=1 claim is needed or audited.
 - **rationale:** The chain uses a single retained_bounded parent, the Wilson small-a matching theorem, and substitutes the compensating coupling rescaling into that formula. The independent algebra check gives beta' g'^2 = c^2 beta * g^2/c^2 = beta g^2 = 2 N_c. The runner performs finite rational algebra plus source-boundary checks; it does not compute new framework physics, so this is an algebraic decoration of the upstream Wilson matching result.
 - **decoration parent:** `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`
+- **auditor confidence:** high
+
+### `wilson_m_h_per_channel_closure_bounded_note_2026-05-09`
+
+- **Note:** [`WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md`](../../docs/WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact subset formulas, k=2 non-closure, rescaling identity, and conditional PDG-comparison roots under the declared curvature-on-subset convention and rounded u_0=0.8776 input.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00014-wilson_m_h_per_channel_closu`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For an admitted subset S, divide the sign-flipped Wilson curvature restricted to S by 4·N_taste^(eff)(S), yielding equation (S) for the per-channel readout.  _(class `A`)_
+- **chain closes:** False — The algebra and bisections close under the declared inputs, but the restricted packet supplies no retained theorem selecting S or validating the curvature-on-subset diagnostic as a physical Higgs readout. The rounded u_0 normalization used for the quoted roots is also explicitly unreconciled with the current parent surface.
+- **rationale:** The runner genuinely evaluates the rational subset formulas and performs Fraction bisections; its reported values and rescaling identity follow under the stated convention. However, both the channel identification and curvature-on-subset readout rule are expressly non-derived, and the parent authority says the curvature scale is a diagnostic rather than a Higgs-pole observable. Thus the calculation is a valid conditional matching exercise, not closure of a physical Higgs channel or derivation of a canonical Wilson coefficient.
+- **open / conditional deps cited:**
+  - `WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md`
+  - `HIGGS_MASS_FROM_AXIOM_NOTE.md`
+  - `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`
 - **auditor confidence:** high
 
 ### `wilson_m_h_tree_at_extremum_algebraic_core_split_note_2026-06-18`

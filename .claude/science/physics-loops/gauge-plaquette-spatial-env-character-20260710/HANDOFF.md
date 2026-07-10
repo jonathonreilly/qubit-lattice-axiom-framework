@@ -30,3 +30,8 @@ matrix for this algebraic quotient without a commutation theorem.
 Do not merge or write audit-owned/generated status files. Independent audit is
 required for the bounded theorem row. This block does not permit a retained-
 grade proposal.
+
+The science checkpoint is commit `a2fcb7f31` on branch
+`claude/science-fix/gauge_vacuum_plaquette_spatial_environment_character_measure-7824208b`.
+Independent review is open as
+[PR #5142](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5142).

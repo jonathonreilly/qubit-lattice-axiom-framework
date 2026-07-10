@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 196 |
+| **retained** | 197 |
 | **retained_no_go** | 212 |
 | **retained_bounded** | 945 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
 | unaudited | 1727 |
-| audit_in_progress | 7 |
+| audit_in_progress | 6 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 9 |
-| `audited_clean` | 1362 |
+| `audit_in_progress` | 8 |
+| `audited_clean` | 1363 |
 | `audited_conditional` | 138 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
@@ -145,7 +145,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | C | - |
@@ -1061,6 +1060,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.6 | A | - |
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16058,6 +16058,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using the retained identity T_sigma|_{V_1}=P_sigma, take sigma=(1 3 2) so CYCLE=T_{(1 3 2)}|_{V_1}=P_{(1 3 2)}, and then apply the matrix-unit identities to derive the forward-cycle basis and residual-swap actions.  _(class `A`)_
 - **chain closes:** True — The cited axis-to-active-lane bridge supplies the full S_3 restriction T_sigma|_{V_1}=P_sigma, including P_23, and the remaining claims are elementary permutation-matrix and matrix-unit identities. The forward orientation is a stated convention, not an intrinsic uniqueness claim.
 - **rationale:** All cited authorities are retained-grade under the rubric, including the retained_bounded active-lane bridge. The runner source performs direct finite-dimensional sympy/numpy algebra over the stated permutation matrices and matrix units; aside from one informational negative-control check that is trivially true, the load-bearing checks compute the claimed identities. No external comparator, fitted value, or non-retained dependency is used.
+- **auditor confidence:** high
+
+### `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For the stated P_23 and forward-cycle channel, R[A] = P_23 A^dagger P_23 preserves the channel, is conjugate-linear and involutive, and has fixed locus c_1 = conj(c_3), c_2 real.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-pmns_graph_first_res-judge-2`  (codex-gpt-5.6; independence=judicial_review)
+- **load-bearing step:** Direct matrix-unit conjugation gives R[A_fwd(c_1,c_2,c_3)] = A_fwd(conj(c_3),conj(c_2),conj(c_1)).  _(class `A`)_
+- **chain closes:** True — The displayed matrix-unit identities directly establish the coordinate action, from which conjugate-linearity, involution, the three-real-dimensional fixed locus, and generic non-fixity follow without an open dependency. The runner genuinely performs these finite-dimensional calculations and reports 35 successful class-A checks. This clean verdict is restricted to properties of the defined map; it does not independently establish that residual invariance of an arbitrary Hermitian core mandates imposing this fixed-point condition.
+- **rationale:** The displayed matrix-unit identities directly establish the coordinate action, from which conjugate-linearity, involution, the three-real-dimensional fixed locus, and generic non-fixity follow without an open dependency. The runner genuinely performs these finite-dimensional calculations and reports 35 successful class-A checks. This clean verdict is restricted to properties of the defined map; it does not independently establish that residual invariance of an arbitrary Hermitian core mandates imposing this fixed-point condition.
 - **auditor confidence:** high
 
 ### `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17`

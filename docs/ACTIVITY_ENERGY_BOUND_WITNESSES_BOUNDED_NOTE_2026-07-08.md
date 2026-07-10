@@ -51,9 +51,9 @@ These are toy witnesses, not a general energy-to-registration theorem.
 
 Any use of the activity proxy as a record-formation opportunity additionally
 supplies the comparator premise `AO`: interpret the declared activity
-observable as an opportunity proxy. No current retained authority derives
-`AO`. Neither the exact bound nor the toy witnesses derive that premise, a
-formation rule, a registration threshold, or a deposition probability.
+observable as an opportunity proxy. `AO` is explicitly supplied here; this
+note and runner do not attempt to derive it, a formation rule, a registration
+threshold, or a deposition probability.
 
 ## Boundaries
 

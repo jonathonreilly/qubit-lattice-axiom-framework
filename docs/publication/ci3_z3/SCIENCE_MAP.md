@@ -118,8 +118,9 @@ read the effective-status mirror and decoration roll-ups.
 
 Charged-lepton Koide structure, the phase/readout bridge, and the absolute
 mass scale remain scope-sensitive. Retirement of the former
-`AC_phi_lambda` Tier-A slot records an owner-governed premise boundary; it is
-not a derivation of charged-lepton masses.
+`AC_phi_lambda` Tier-A slot leaves the physical `r=1/2` selector open: the
+owner-governed replacement explicitly supplies no `r`, `delta`, or
+charged-lepton mass value.
 
 Start with:
 

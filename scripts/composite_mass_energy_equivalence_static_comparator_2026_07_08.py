@@ -4,10 +4,10 @@
 Companion runner for
 COMPOSITE_CURVATURE_SUM_RULE_BAND_CONTROLS_BOUNDED_THEOREM_NOTE_2026-07-08.md.
 
-The gated content is limited to the exact Feynman-Hellmann curvature sum rule,
-split invariance, the signed-zone quadratic control, and the cosine-band
-control. No universal static-comparator, WEP, mediator, or framework-dynamics
-conclusion is tested.
+The gated content is limited to the exact fixed-split Feynman-Hellmann
+curvature sum rule, the finite-periodic split-dependence boundary, the
+signed-zone quadratic control, and the cosine-band control. No universal
+static-comparator, WEP, mediator, or framework-dynamics conclusion is tested.
 """
 
 from __future__ import annotations
@@ -24,7 +24,7 @@ PASS_COUNT = 0
 FAIL_COUNT = 0
 FLAGS: list[str] = []
 
-ALPHAS = (0.0, 0.5, 1.0)
+ALPHAS = (0.0, 0.25, 0.5, 0.75, 1.0)
 
 
 def record(ok: bool, flag: str | None = None) -> bool:
@@ -308,44 +308,72 @@ def sum_rule_parts(L: int, kind: str, m: float, U: float, w: float, alpha: float
     return first, second, first + second
 
 
+def finite_difference_curvature(
+    L: int,
+    kind: str,
+    m: float,
+    U: float,
+    w: float,
+    alpha: float,
+    step: float = 1.0e-3,
+) -> float:
+    plus = lowest_energy(L, kind, m, U, w, step, alpha)
+    zero = lowest_energy(L, kind, m, U, w, 0.0, alpha)
+    minus = lowest_energy(L, kind, m, U, w, -step, alpha)
+    return float((plus - 2.0 * zero + minus) / (step * step))
+
+
 def check_01() -> str:
+    max_fixed_alpha_fd = 0.0
+    min_small_ring_split_spread = float("inf")
+    small_rows = []
+    for U in (0.05, 0.4):
+        totals = []
+        for alpha in ALPHAS:
+            _, _, total = sum_rule_parts(8, "ARC", 0.5, U, 0.0, alpha)
+            finite_difference = finite_difference_curvature(8, "ARC", 0.5, U, 0.0, alpha)
+            max_fixed_alpha_fd = max(max_fixed_alpha_fd, abs(total - finite_difference))
+            totals.append(total)
+        spread = max(totals) - min(totals)
+        min_small_ring_split_spread = min(min_small_ring_split_spread, spread)
+        small_rows.append(
+            "U={:.2f}:T=[{}],spread={}".format(
+                U,
+                ",".join(short(value) for value in totals),
+                short(spread),
+            )
+        )
+
     L = 256
     max_sum_band = 0.0
-    max_split_band = 0.0
-    max_split_sum = 0.0
-    rows = []
+    large_rows = []
     for m in (0.5, 1.0):
         for U in (0.4, 0.8):
-            by_alpha = []
-            for alpha in ALPHAS:
-                band_curv, _, fit_resid, _ = band_measurement(L, "ARC", m, U, 0.0, alpha)
-                first, second, total = sum_rule_parts(L, "ARC", m, U, 0.0, alpha)
-                max_sum_band = max(max_sum_band, abs(total - band_curv), fit_resid)
-                by_alpha.append((alpha, first, second, total, band_curv))
-            base_band = by_alpha[0][4]
-            base_total = by_alpha[0][3]
-            for _, _, _, total, band_curv in by_alpha:
-                max_split_band = max(max_split_band, abs(band_curv - base_band))
-                max_split_sum = max(max_split_sum, abs(total - base_total))
-            split_text = ",".join(
-                "a={:.1f}:A={},S2={},T={},BF={}".format(alpha, short(first), short(second), short(total), short(band))
-                for alpha, first, second, total, band in by_alpha
+            alpha = 0.5
+            band_curv, _, fit_resid, _ = band_measurement(L, "ARC", m, U, 0.0, alpha)
+            first, second, total = sum_rule_parts(L, "ARC", m, U, 0.0, alpha)
+            max_sum_band = max(max_sum_band, abs(total - band_curv), fit_resid)
+            large_rows.append(
+                "m={:.1f},U={:.1f}:A={},S2={},T={},BF={}".format(
+                    m, U, short(first), short(second), short(total), short(band_curv)
+                )
             )
-            rows.append(f"m={m:.1f},U={U:.1f}[{split_text}]")
 
-    ok = max_sum_band <= 1e-8 and max_split_band <= 1e-8 and max_split_sum <= 1e-8
-    if max_split_band > 1e-8 or max_split_sum > 1e-8:
-        FLAGS.append(
-            "CHECK-01 split total drift: band={} sum={}".format(short(max_split_band), short(max_split_sum))
-        )
-    record(ok, f"CHECK-01 sum-rule/band residual {short(max_sum_band)}")
+    ok = (
+        max_fixed_alpha_fd <= 2.0e-5
+        and min_small_ring_split_spread >= 1.0e-2
+        and max_sum_band <= 1.0e-8
+    )
+    record(ok, f"CHECK-01 fixed-alpha residual {short(max(max_fixed_alpha_fd, max_sum_band))}")
     return (
-        "CHECK-01 {} SUMRULE-VS-BANDFIT max_sum_band={} max_split_band={} max_split_sum={} rows={}".format(
+        "CHECK-01 {} FIXED-ALPHA-SUMRULE max_fd_resid={} min_L8_split_spread={} "
+        "max_largeL_band_resid={} small_rows={} large_rows={}".format(
             "PASS" if ok else "FAIL",
+            short(max_fixed_alpha_fd),
+            short(min_small_ring_split_spread),
             short(max_sum_band),
-            short(max_split_band),
-            short(max_split_sum),
-            ";".join(rows),
+            ";".join(small_rows),
+            ";".join(large_rows),
         )
     )
 

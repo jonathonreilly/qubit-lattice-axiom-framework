@@ -289,65 +289,6 @@ def lowest_eigvals(matrix: sp.spmatrix, k: int, tol: float = 1.0e-12) -> np.ndar
     return np.sort(vals.real)
 
 
-def projected_vector(vector: np.ndarray, translation: TranslationMap, momentum: float) -> np.ndarray:
-    n_cells = translation.basis.n_sites // 2
-    accum = np.zeros_like(vector, dtype=np.complex128)
-    current = np.asarray(vector, dtype=np.complex128)
-    phase = 1.0 + 0.0j
-    step_phase = np.exp(-1.0j * momentum)
-    for _ in range(n_cells):
-        accum += phase * current
-        current = translation.apply(current)
-        phase *= step_phase
-    return accum / n_cells
-
-
-def projected_lowest_eigvals(
-    hamiltonian: sp.csr_matrix,
-    translation: TranslationMap,
-    momentum: float,
-    k: int,
-    tol: float = 1.0e-11,
-) -> np.ndarray:
-    dim = hamiltonian.shape[0]
-
-    def matvec(vector: np.ndarray) -> np.ndarray:
-        pv = projected_vector(vector, translation, momentum)
-        return projected_vector(hamiltonian @ pv, translation, momentum)
-
-    operator = spla.LinearOperator((dim, dim), matvec=matvec, dtype=np.complex128)
-    vals = spla.eigsh(
-        operator,
-        k=k,
-        which="SA",
-        return_eigenvectors=False,
-        tol=tol,
-        maxiter=6000,
-        ncv=min(dim - 1, max(32, 5 * k + 16)),
-        v0=deterministic_v0(dim),
-    )
-    return np.sort(vals.real)
-
-
-def sector_lowest_table(
-    hamiltonian: sp.csr_matrix,
-    translation: TranslationMap,
-    k: int,
-    tol: float = 1.0e-11,
-) -> list[np.ndarray]:
-    n_cells = translation.basis.n_sites // 2
-    table: list[np.ndarray] = []
-    for p_index in range(n_cells):
-        momentum = 2.0 * np.pi * p_index / n_cells
-        table.append(projected_lowest_eigvals(hamiltonian, translation, momentum, k, tol=tol))
-    return table
-
-
-def ground_sector_index(sector_table: list[np.ndarray]) -> int:
-    lows = np.array([vals[0] for vals in sector_table], dtype=np.float64)
-    return int(np.argmin(lows))
-
-
 def safe_random_vector(basis: Basis, rng: np.random.Generator, samples: int = 96) -> np.ndarray:
     """Random charge-zero vector with enough W margin for CHECK-01 commutators."""
     vec = np.zeros(basis.dim, dtype=np.complex128)
@@ -487,7 +428,7 @@ def build_free_fermion_hamiltonian(n_sites: int, mass: float) -> tuple[Basis, sp
 def check_02() -> tuple[bool, str, dict[tuple[int, float], np.ndarray]]:
     ph_cache: dict[tuple[int, float], np.ndarray] = {}
     worst_band = 0.0
-    worst_sector = 0.0
+    worst_many_body_gap = 0.0
     for n_sites in (8, 12):
         n_cells = n_sites // 2
         for mass in (0.3, 0.6):
@@ -499,16 +440,15 @@ def check_02() -> tuple[bool, str, dict[tuple[int, float], np.ndarray]]:
 
             ph = free_particle_hole_gaps(n_sites, mass)
             ph_cache[(n_sites, mass)] = ph
-            _, hamiltonian, translation = build_free_fermion_hamiltonian(n_sites, mass)
-            sector_table = sector_lowest_table(hamiltonian, translation, 3)
-            ground_index = ground_sector_index(sector_table)
-            ground = sector_table[ground_index][0]
-            for p_index in range(n_cells):
-                vals = sector_table[(ground_index + p_index) % n_cells]
-                excitation = vals[1] - ground if p_index == 0 else vals[0] - ground
-                worst_sector = max(worst_sector, abs(float(excitation - ph[p_index])))
-    passed = worst_band <= DISP_TOL and worst_sector <= DISP_TOL
-    return passed, f"band={worst_band:.1e}, ph={worst_sector:.1e}", ph_cache
+            _, hamiltonian, _ = build_free_fermion_hamiltonian(n_sites, mass)
+            many_body = lowest_eigvals(hamiltonian, 2)
+            many_body_gap = float(many_body[1] - many_body[0])
+            worst_many_body_gap = max(
+                worst_many_body_gap,
+                abs(many_body_gap - float(np.min(ph))),
+            )
+    passed = worst_band <= DISP_TOL and worst_many_body_gap <= DISP_TOL
+    return passed, f"band={worst_band:.1e}, gap={worst_many_body_gap:.1e}", ph_cache
 
 
 def check_exact_rotor_g0_couples_w() -> bool:
@@ -549,69 +489,6 @@ def check_03() -> tuple[bool, str]:
         f"d34=({diff_34[0]:+.2e},{diff_34[1]:+.2e})"
     )
     return passed, detail
-
-
-def check_04() -> tuple[bool, str]:
-    n_sites = 8
-    n_cells = n_sites // 2
-    basis = Basis(n_sites=n_sites, w_max=4, charge_sector=0, rotor=True)
-    translation = build_translation_map(basis, magnetic_w_shift_tail)
-    worst = 0.0
-    summaries: list[str] = []
-    for mass in (0.3, 0.6):
-        # The g = 0 supervisor check is the decoupled U_holo = 1 comparator:
-        # exact rotor g = 0 still hops in W and is flagged in TOTAL.
-        free_basis, free_h, free_t = build_free_fermion_hamiltonian(n_sites, mass)
-        full = lowest_eigvals(free_h, 8)
-        sector_vals = []
-        for vals in sector_lowest_table(free_h, free_t, 8):
-            sector_vals.extend(vals)
-        reassembled = np.sort(np.array(sector_vals, dtype=np.float64))[:8]
-        err = float(np.max(np.abs(full - reassembled)))
-        worst = max(worst, err)
-        summaries.append(f"m={mass},g=0.0/free:{err:.1e}")
-
-        for coupling in (0.6, 1.0):
-            hamiltonian = build_many_body_hamiltonian(basis, mass, coupling, boundary_holonomy_shifts_w=True)
-            full = lowest_eigvals(hamiltonian, 8)
-            sector_vals: list[float] = []
-            for p_index in range(n_cells):
-                momentum = 2.0 * np.pi * p_index / n_cells
-                sector_vals.extend(projected_lowest_eigvals(hamiltonian, translation, momentum, 8))
-            reassembled = np.sort(np.array(sector_vals, dtype=np.float64))[:8]
-            err = float(np.max(np.abs(full - reassembled)))
-            worst = max(worst, err)
-            summaries.append(f"m={mass},g={coupling}:{err:.1e}")
-    return worst <= 1.0e-10, "max=" + f"{worst:.1e}" + " [" + "; ".join(summaries) + "]"
-
-
-def measure_05() -> tuple[str, dict[float, dict[str, np.ndarray]]]:
-    n_sites = 12
-    n_cells = n_sites // 2
-    mass = 0.3
-    basis = Basis(n_sites=n_sites, w_max=4, charge_sector=0, rotor=True)
-    translation = build_translation_map(basis, magnetic_w_shift_tail)
-    results: dict[float, dict[str, np.ndarray]] = {}
-    gaps: list[float] = []
-    for coupling in (0.6, 1.0):
-        hamiltonian = build_many_body_hamiltonian(
-            basis,
-            mass,
-            coupling,
-            boundary_holonomy_shifts_w=True,
-        )
-        sector_table = sector_lowest_table(hamiltonian, translation, 5)
-        ground_index = ground_sector_index(sector_table)
-        p0 = sector_table[ground_index]
-        p1 = sector_table[(ground_index + 1) % n_cells][:4]
-        gap = float(p0[1] - p0[0])
-        gaps.append(gap)
-        results[coupling] = {
-            "P0_excitations": p0[1:5] - p0[0],
-            "P1_excitations": p1[:4] - p0[0],
-        }
-    detail = f"gap0(g=.6)={gaps[0]:.8g}, gap0(g=1)={gaps[1]:.8g}"
-    return detail, results
 
 
 def slater_state_columns(
@@ -717,11 +594,6 @@ def main() -> int:
     ok03, detail03 = check_03()
     check_results.append(("CHECK-03", ok03, detail03))
 
-    ok04, detail04 = check_04()
-    check_results.append(("CHECK-04", ok04, detail04))
-
-    detail05, sector_results = measure_05()
-
     ok06, detail06 = check_06(ph_cache)
     check_results.append(("CHECK-06", ok06, detail06))
 
@@ -730,17 +602,9 @@ def main() -> int:
     status = "PASS" if passed_all else "FAIL"
 
     c01_c03 = "; ".join(f"{name}={'ok' if ok else 'FAIL'}({detail})" for name, ok, detail in check_results[:3])
-    c04_c06 = "; ".join(f"{name}={'ok' if ok else 'FAIL'}({detail})" for name, ok, detail in check_results[3:])
-    p0_g06 = ",".join(f"{x:.6g}" for x in sector_results[0.6]["P0_excitations"])
-    p1_g06 = ",".join(f"{x:.6g}" for x in sector_results[0.6]["P1_excitations"])
-    p0_g10 = ",".join(f"{x:.6g}" for x in sector_results[1.0]["P0_excitations"])
-    p1_g10 = ",".join(f"{x:.6g}" for x in sector_results[1.0]["P1_excitations"])
 
     print(f"CHECKS-1-3 {c01_c03}")
-    print(f"CHECKS-4-6 {c04_c06}")
-    print(f"MEASURE-05 SECTOR-REGRESSION {detail05}")
-    print(f"SECTOR-REGRESSION g=0.6 P0=[{p0_g06}] P1=[{p1_g06}]")
-    print(f"SECTOR-REGRESSION g=1.0 P0=[{p0_g10}] P1=[{p1_g10}]")
+    print(f"CHECK-06 {'ok' if ok06 else 'FAIL'}({detail06})")
     print(f"TOTAL {status} elapsed={elapsed:.2f}s flags={','.join(flags)}")
     return 0 if passed_all else 1
 

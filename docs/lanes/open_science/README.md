@@ -5,6 +5,9 @@
 not bounded, and not on the manuscript surface. This package records six
 missing science lanes that need active work.
 
+The current ontology baseline is the four named axioms in
+[`MINIMAL_AXIOMS_2026-06-29.md`](../../MINIMAL_AXIOMS_2026-06-29.md).
+
 ## Why this package exists
 
 The project's [CLAIMS_TABLE.md](../../publication/ci3_z3/CLAIMS_TABLE.md) currently
@@ -197,7 +200,7 @@ status elsewhere, the canonical theorem surface wins.
 | 19 | **BMS / asymptotic symmetries** | open | **Active separately — Pate co-author P4 paper target** |
 | 20 | **Decoherence law universal** | bounded | **Deferred — Gate A in older review-hardening backlog** |
 | 21 | **Galaxy rotation curves / DM detection cross-section** | absent | **Deferred — DM follow-on** |
-| 22 | **Hierarchy stability under quantum corrections** | implicitly retained via v derivation | **Argued retained** (the v derivation is not just tree-level) |
+| 22 | **Hierarchy stability under quantum corrections** | the displayed `v` chain has quantum-correction inputs, but no blanket stability conclusion follows without row-level scope review | **Deferred — hierarchy lane** |
 | 23 | **Vacuum stability quantitative** | qualitative result only | **Deferred — Phase 2 matter mass** |
 | 24 | **Form factors (B → π, K → π, etc.)** | absent | **Deferred — Lane 1 follow-on** |
 | 25 | **Hadron spectroscopy (excited states)** | absent | **Deferred — Lane 1 follow-on** |
@@ -212,10 +215,10 @@ status elsewhere, the canonical theorem surface wins.
 | 29 | **Sterile neutrino / eV-scale anomalies** | absent | **Deferred — Lane 4 follow-on** |
 | 30 | **0νββ rates** | absent (depends on Majorana confirmation) | **Deferred — Lane 4 follow-on** |
 | 31 | **Strongly correlated systems** | absent | **Deferred — Lane 2 follow-on** |
-| 32 | **Modified gravity tests (solar-system PPN)** | implicitly in retained GR | **Argued retained** |
+| 32 | **Modified gravity tests (solar-system PPN)** | PPN coefficient selection remains open; no blanket retained-GR implication | **Deferred — strong-field/phenomenology lane** |
 | 33 | **Gravitational-wave templates beyond linear** | absent | **Deferred — strong-field gravity research lane** |
 | 34 | **Axions / dark sector beyond DM relic** | absent | **Deferred — separate dark-sector lane** |
-| 35 | **Quantitative leptogenesis baryon asymmetry** | DM closed package gives δ_CP forecast | **Argued partial via DM closed package** |
+| 35 | **Quantitative leptogenesis baryon asymmetry** | selected transport/phase support exists, but the quantitative asymmetry remains bridge- and scope-dependent | **Deferred — DM/leptogenesis lane** |
 
 ### Tier 5 — Historically advertised closures that require ledger-scope reading
 
@@ -265,9 +268,9 @@ All other Tier 2-4 items are deferred — they remain open and should be tracked
 as such. Any deferred item can be moved into active status if priorities change
 or if a worker finds a tractable attack path.
 
-The Tier 5 items are listed for completeness — they show what the framework
-has already retained or argued away from the missing-science inventory, so the
-total picture is honest rather than only listing the open items.
+The Tier 5 items are listed for completeness. They record historically
+advertised closures together with their current safe boundaries, so the total
+picture does not confuse package headlines with audit-ratified scope.
 
 ## Recommended priority order (subject to review)
 

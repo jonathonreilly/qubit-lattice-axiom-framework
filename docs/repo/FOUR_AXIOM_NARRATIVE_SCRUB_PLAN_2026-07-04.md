@@ -34,8 +34,9 @@ The complete current foundation surface is:
 - **Approved primitives (3):** `scale_reference_primitive`,
   `kinetic_isotropy_primitive`, `realized_state_primitive`
   (`docs/audit/data/axiom_premise_nodes.json`).
-- **Tier-A admitted derivation targets (2):** `AC_phi_lambda`, `theta`
-  (`docs/audit/data/tier_a_admissions.json`).
+- **Tier-A admitted derivation targets (0):** the two targets present when this
+  plan was written, `AC_phi_lambda` and `theta`, have since been retired; their
+  history remains in `docs/audit/data/tier_a_admissions.json`.
 - **Scope condition (not a premise):** the past-hypothesis low-entropy
   magnitude (2026-06-16 classification).
 

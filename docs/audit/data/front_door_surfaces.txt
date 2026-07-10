@@ -1,7 +1,7 @@
 # Narrative front-door surfaces whose axiom-memo pointers must stay current.
 # audit_lint.py checks each listed file: it must cite the minimal_axioms
 # current_path from axiom_premise_nodes.json, and must not cite a superseded
-# aliased path. Warning-level (category front_door_axiom_pointer). One
+# aliased path. Error-level (category front_door_axiom_pointer). One
 # repo-relative path per line; # comments and blanks ignored.
 #
 # Approved primitive declarations are included because their premise wording
@@ -11,6 +11,8 @@
 README.md
 docs/START_HERE.md
 docs/publication/ci3_z3/README.md
+docs/publication/ci3_z3/SCIENCE_MAP.md
+docs/lanes/open_science/README.md
 docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
 docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
 docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md

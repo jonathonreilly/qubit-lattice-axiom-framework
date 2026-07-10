@@ -72,10 +72,11 @@ Use these entrypoints in order:
 The repo remains in an audit-transition state. The 2026-06-29 foundation
 reset from the three-axiom base to the four-axiom base invalidated every audit
 that rested directly on the old axiom text; the premise-hash guard enforced
-that reset, and the direct `minimal_axioms` dependents have since received
-post-reset audits. A much larger legacy cohort still predates the reset, but
-those rows are not automatically axiom-dependent: their scoped ledger entries
-and citation edges determine whether re-audit is required. The generated
+that reset. Some direct `minimal_axioms` dependents have since received
+post-reset audits, while many remain unaudited or in progress. A much larger
+legacy cohort still predates the reset, but those rows are not automatically
+axiom-dependent: their scoped ledger entries and citation edges determine
+whether re-audit is required. The generated
 [`docs/repo/FRONT_DOOR_STATUS.md`](docs/repo/FRONT_DOOR_STATUS.md) always has
 the current counts, refreshed by `bash docs/audit/scripts/run_pipeline.sh`.
 

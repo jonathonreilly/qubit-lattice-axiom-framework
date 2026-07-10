@@ -72,8 +72,8 @@ convention. Those require separate physical bridges and are omitted.
 
 ## Dependencies
 
-- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — context
-  for permanent, site-locked records; it does not supply the comparator.
+- `MINIMAL_AXIOMS_2026-06-29.md` — context for permanent, site-locked records;
+  it does not supply the comparator.
 - [`ACTIVITY_ENERGY_BOUND_WITNESSES_BOUNDED_NOTE_2026-07-08.md`](ACTIVITY_ENERGY_BOUND_WITNESSES_BOUNDED_NOTE_2026-07-08.md)
   — the explicitly supplied `AO` activity-to-record-opportunity
   interpretation represented by the supplied moving zone.

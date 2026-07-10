@@ -386,9 +386,8 @@ def main() -> int:
     # reset left the root README on the superseded memo for five days). Every
     # surface listed in data/front_door_surfaces.txt must cite the registry's
     # current minimal_axioms path and must not cite a superseded alias.
-    # Warning-level: the pipeline must keep running on branches where the
-    # front door is knowingly mid-repair; escalate per-surface only once the
-    # front-door chain is clean.
+    # Error-level: every registered front door is current, so strict lint must
+    # fail closed if a later axiom reset leaves one behind.
     front_door_surfaces = _load_pattern_file("front_door_surfaces.txt")
     axiom_registry_path = DATA_DIR / "axiom_premise_nodes.json"
     if front_door_surfaces and axiom_registry_path.exists():
@@ -401,9 +400,9 @@ def main() -> int:
         for surface in front_door_surfaces:
             spath = REPO_ROOT / surface
             if not spath.exists():
-                add_warning(
-                    "front_door_axiom_pointer",
-                    f"{surface}: listed in front_door_surfaces.txt but missing on disk",
+                errors.append(
+                    "[front_door_axiom_pointer] "
+                    f"{surface}: listed in front_door_surfaces.txt but missing on disk"
                 )
                 continue
             text = spath.read_text(encoding="utf-8", errors="replace")
@@ -418,16 +417,16 @@ def main() -> int:
             if current_path and not any(
                 spelling in text for spelling in reference_spellings(current_path)
             ):
-                add_warning(
-                    "front_door_axiom_pointer",
-                    f"{surface}: does not cite the current axiom memo {current_path}",
+                errors.append(
+                    "[front_door_axiom_pointer] "
+                    f"{surface}: does not cite the current axiom memo {current_path}"
                 )
             for old in superseded:
                 if any(spelling in text for spelling in reference_spellings(old)):
-                    add_warning(
-                        "front_door_axiom_pointer",
+                    errors.append(
+                        "[front_door_axiom_pointer] "
                         f"{surface}: cites superseded axiom memo {old} "
-                        f"(current: {current_path})",
+                        f"(current: {current_path})"
                     )
 
     # Top-level stale timestamp keys cause PR drift-gate noise and were

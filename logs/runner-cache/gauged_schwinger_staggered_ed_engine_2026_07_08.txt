@@ -1,17 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/gauged_schwinger_staggered_ed_engine_2026_07_08.py
-runner_sha256: 5279cdb15599309b493615b6ec6d9bdaf616c7390fc698b3ec61173ab1e06292
+runner_sha256: 8162fbe2f8189aecc94e2b7d67adaa41ea5ec8cff020726d50e3647f04f66ceb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 7.62
+elapsed_sec: 2.04
 status: ok
 ----- stdout -----
-CHECKS-1-3 CHECK-01=ok(rule=tail, field=0.0e+00, comm=4.9e-16, Q=0.0e+00, E=0.0e+00); CHECK-02=ok(band=6.7e-16, ph=3.9e-14); CHECK-03=ok(d23=(+8.88e-15,+4.04e-14), d34=(-1.87e-14,-1.13e-14))
-CHECKS-4-6 CHECK-04=ok(max=9.1e-14 [m=0.3,g=0.0/free:1.2e-14; m=0.3,g=0.6:2.6e-14; m=0.3,g=1.0:3.1e-14; m=0.6,g=0.0/free:1.6e-14; m=0.6,g=0.6:7.7e-14; m=0.6,g=1.0:9.1e-14]); CHECK-06=ok(free_err=6.6e-15, g1_gap_T2=1.5469429, full=1.3284641)
-MEASURE-05 SECTOR-REGRESSION gap0(g=.6)=0.96870465, gap0(g=1)=1.3284641
-SECTOR-REGRESSION g=0.6 P0=[0.968705,1.36257,1.67338,1.81545] P1=[1.08278,1.42672,1.73027,1.90616]
-SECTOR-REGRESSION g=1.0 P0=[1.32846,1.84921,2.54647,2.56389] P1=[1.40192,1.8532,2.55283,2.57311]
-TOTAL PASS elapsed=7.27s flags=Q0-ring-Gauss,finite-W-translation-interior,g0-Uholo-shifts-W
+CHECKS-1-3 CHECK-01=ok(rule=tail, field=0.0e+00, comm=4.9e-16, Q=0.0e+00, E=0.0e+00); CHECK-02=ok(band=6.7e-16, gap=2.3e-14); CHECK-03=ok(d23=(+8.88e-15,+4.04e-14), d34=(-1.87e-14,-1.13e-14))
+CHECK-06 ok(free_err=6.6e-15, g1_gap_T2=1.5469429, full=1.3284641)
+TOTAL PASS elapsed=1.79s flags=Q0-ring-Gauss,finite-W-translation-interior,g0-Uholo-shifts-W
 
 ----- stderr -----
 

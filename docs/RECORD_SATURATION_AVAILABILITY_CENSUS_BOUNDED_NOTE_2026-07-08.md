@@ -48,10 +48,10 @@ declared finite factorized classes: all 15 nonconstant `k = 3` models are
 crowding-monotone, as is the one nonconstant `k = 2` model. Nine of the 15
 `k = 3` models can empty availability before all six neighbors are recorded.
 
-The factorized-set premises are not consequences of Admissibility. They are a
-supplied model. A covariant non-factorized witness whose availability is empty
-at zero recorded neighbors and full once any neighbor is recorded is an
-explicit member of the counted increasing class.
+The factorized-set premises are a supplied model; this note claims no
+derivation of them from Admissibility. A covariant non-factorized witness whose
+availability is empty at zero recorded neighbors and full once any neighbor is
+recorded is an explicit member of the counted increasing class.
 
 ## Boundaries
 

@@ -88,10 +88,10 @@ dim(1)=1,
 dim(adj)=N_c^2-1.
 ```
 
-It does not imply that a general correlator contributes in those dimensional
-fractions. At `N_c=3`, a color matrix proportional to the identity has zero
+This note does not infer general correlator weights from those representation
+dimensions. At `N_c=3`, a color matrix proportional to the identity has zero
 adjoint contribution, while `diag(1,-1,0)` has zero singlet contribution.
-Representation dimension alone therefore cannot supply the channel-weight map.
+The channel-weight map is therefore kept as a separate supplied premise here.
 
 ## Common CMT Scaling
 
@@ -110,7 +110,7 @@ T(U)/(C(U)+kappa_EW S(U))
   = T(V)/(C(V)+kappa_EW S(V)).
 ```
 
-This cancellation cannot select `kappa_EW`.
+No `kappa_EW` selection is claimed from this cancellation.
 
 ## OZI-Scaling Boundary
 
@@ -123,7 +123,7 @@ kappa_EW S/C = kappa_EW/(N_c^2-1) = O(1/N_c^2).
 
 The qualifier is load-bearing. A family such as `kappa_EW=N_c^2` gives a
 ratio tending to one and is not OZI-suppressed. OZI scaling therefore supplies
-only a bounded asymptotic class; it does not derive `kappa_EW=0`.
+only a bounded asymptotic class; no `kappa_EW=0` derivation is claimed.
 
 ## Open Repair Targets
 

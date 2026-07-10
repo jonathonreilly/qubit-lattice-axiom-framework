@@ -225,6 +225,74 @@ def load_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def mask_nonrendered_markdown(text: str) -> str:
+    """Mask code and comments before extracting rendered Markdown links."""
+    masked_lines: list[str] = []
+    fence_char: str | None = None
+    fence_len = 0
+    for line in text.splitlines(keepends=True):
+        stripped = line.lstrip(" \t")
+        indent = len(line) - len(stripped)
+        if fence_char is not None:
+            closing = re.match(
+                rf"{re.escape(fence_char)}{{{fence_len},}}[ \t]*(?:\r?\n)?$",
+                stripped,
+            )
+            masked_lines.append("".join("\n" if ch == "\n" else " " for ch in line))
+            if indent <= 3 and closing:
+                fence_char = None
+                fence_len = 0
+            continue
+        opener = re.match(r"(`{3,}|~{3,})", stripped) if indent <= 3 else None
+        if opener:
+            fence_char = opener.group(1)[0]
+            fence_len = len(opener.group(1))
+            masked_lines.append("".join("\n" if ch == "\n" else " " for ch in line))
+            continue
+        if line.startswith(("    ", "\t")):
+            masked_lines.append("".join("\n" if ch == "\n" else " " for ch in line))
+            continue
+        masked_lines.append(line)
+
+    visible = list("".join(masked_lines))
+    source = "".join(masked_lines)
+    i = 0
+    while i < len(source):
+        if source.startswith("<!--", i):
+            end = source.find("-->", i + 4)
+            end = len(source) if end < 0 else end + 3
+            for j in range(i, end):
+                if visible[j] != "\n":
+                    visible[j] = " "
+            i = end
+            continue
+        if source[i] == "`":
+            run_end = i + 1
+            while run_end < len(source) and source[run_end] == "`":
+                run_end += 1
+            delimiter = source[i:run_end]
+            close = source.find(delimiter, run_end)
+            while close >= 0 and (
+                (close > 0 and source[close - 1] == "`")
+                or (
+                    close + len(delimiter) < len(source)
+                    and source[close + len(delimiter)] == "`"
+                )
+            ):
+                close = source.find(delimiter, close + len(delimiter))
+            if close >= 0:
+                end = close + len(delimiter)
+                for j in range(i, end):
+                    if visible[j] != "\n":
+                        visible[j] = " "
+                i = end
+                continue
+            i = run_end
+            continue
+        i += 1
+    return "".join(visible)
+
+
 def markdown_link_targets(surface: str, text: str) -> set[str]:
     """Return normalized repo-relative targets of inline Markdown links.
 
@@ -234,7 +302,8 @@ def markdown_link_targets(surface: str, text: str) -> set[str]:
     """
     surface_parent = Path(surface).parent.as_posix()
     targets: set[str] = set()
-    for match in _INLINE_MARKDOWN_LINK_RE.finditer(text):
+    rendered_text = mask_nonrendered_markdown(text)
+    for match in _INLINE_MARKDOWN_LINK_RE.finditer(rendered_text):
         destination = match.group("destination")
         if destination.startswith("<") and destination.endswith(">"):
             destination = destination[1:-1]

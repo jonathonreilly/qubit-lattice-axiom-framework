@@ -194,7 +194,48 @@ class ChangedRunnerFailureGateTest(unittest.TestCase):
         ):
             m.check_finite_same_energy_comparator()
         self.assertEqual(m.FAIL_COUNT, 1)
-        self.assertIn("fit_residual_tolerance=1.0e-10", output.getvalue())
+        self.assertIn("fit_residual_tolerance=1.0e-06", output.getvalue())
+
+    def test_wep_fit_residual_is_overdetermined(self):
+        m = _import_repo_script(
+            "wep_source_reduction_scaling_window_2026_07_08.py"
+        )
+
+        def adversarial_energy(length, mass_a, mass_b, coupling, index):
+            momentum = m.signed_momentum_value(index, length)
+            return 1.0 + momentum**2 + 1.0e8 * momentum**8
+
+        with mock.patch.object(
+            m, "lowest_pblock_energy", side_effect=adversarial_energy
+        ):
+            _, residual = m.fitted_curvature_mass(64, 0.5, 1.0)
+        self.assertGreater(residual, m.FIT_RESID_TOL)
+
+    def test_wep_comparator_rejects_nan_fit_residual(self):
+        import contextlib
+        import io
+
+        m = _import_repo_script(
+            "wep_source_reduction_scaling_window_2026_07_08.py"
+        )
+        m.PASS_COUNT = 0
+        m.FAIL_COUNT = 0
+        with (
+            mock.patch.object(
+                m,
+                "tune_to_energy",
+                side_effect=lambda length, mass, target: (1.0, target),
+            ),
+            mock.patch.object(
+                m,
+                "fitted_curvature_mass",
+                side_effect=[(1.0, float("nan")), (2.0, float("nan"))],
+            ),
+            contextlib.redirect_stdout(io.StringIO()) as output,
+        ):
+            m.check_finite_same_energy_comparator()
+        self.assertEqual(m.FAIL_COUNT, 1)
+        self.assertIn("max_fit_residual=inf", output.getvalue())
 
 
 class ApplyAuditTest(unittest.TestCase):
@@ -1287,6 +1328,22 @@ class AuditLintTest(unittest.TestCase):
         )
         self.assertEqual(len(errors), 1)
         self.assertIn("does not cite the current axiom memo", errors[0])
+
+    def test_front_door_nonrendered_markdown_links_do_not_count(self):
+        m = _import("audit_lint")
+        current = "docs/MINIMAL_AXIOMS_2026-06-29.md"
+        examples = (
+            "`[example](docs/MINIMAL_AXIOMS_2026-06-29.md)`\n",
+            "```md\n[example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n```\n",
+            "<!-- [example](docs/MINIMAL_AXIOMS_2026-06-29.md) -->\n",
+        )
+        for text in examples:
+            with self.subTest(text=text):
+                errors = m.front_door_axiom_pointer_errors(
+                    "README.md", text, current, []
+                )
+                self.assertEqual(len(errors), 1)
+                self.assertIn("does not cite the current axiom memo", errors[0])
 
     def test_front_door_superseded_markdown_link_fails(self):
         m = _import("audit_lint")

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 950 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1717 |
+| unaudited | 1716 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 130 |
+| ~~audited_conditional~~ | 131 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1367 |
-| `audited_conditional` | 130 |
+| `audited_conditional` | 131 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2062 |
+| `unaudited` | 2061 |
 
 | claim_type | count |
 |---|---:|
@@ -1641,6 +1641,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `theta_cartan_valued_cross_plane_pairing_diagonal_weyl_frame_theorems_and_triality_fractional_values_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_gauge_winding_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
+| `theta_gluing_flow_nonsourcing_pair_level_seed_localization_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -21343,6 +21344,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The runner performs 133 textual, ledger, and cross-note checks plus 24 exact finite or symbolic sanity checks; it contains no first-principles class-C closure and no external-comparator checks. Its finite U(1), SU(2), and mixed-derivative calculations support the stated boundaries but are not the load-bearing proof of non-supply. Moreover, the cited Tier-A registry authority is meta rather than retained-grade, so the rubric prevents an audited-clean verdict even though the narrowly scoped bookkeeping conclusion follows.
 - **open / conditional deps cited:**
   - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
+- **auditor confidence:** high
+
+### `theta_gluing_flow_nonsourcing_pair_level_seed_localization_bounded_theorem_note_2026-07-02`
+
+- **Note:** [`THETA_GLUING_FLOW_NONSOURCING_PAIR_LEVEL_SEED_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-02.md`](../../docs/THETA_GLUING_FLOW_NONSOURCING_PAIR_LEVEL_SEED_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite checks in the {1,F,Fbar} SU(3) truncation for one three-leg star, one plane-uniform scalar epsilon assembly, and the displayed same- and opposed-orientation pair channels.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00101-theta_gluing_flow_nonsourcin`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The glued pair functional is plane-label-free, so flow-generated pair couplings are plane-uniform and their epsilon assembly vanishes identically because the summed epsilon tensor is zero.  _(class `A`)_
+- **chain closes:** False — The runner omits plane labels by construction and then substitutes one scalar glued value for every oriented plane pair; it does not derive a plane-uniform coefficient tensor from an orientation-resolved gluing integral. It also does not establish the claimed all-star, all-representation inheritance from its finite truncation.
+- **rationale:** The nine checks are genuine finite algebraic/numerical checks rather than printed constants or external comparisons, and they support the encoded truncated model. However, B1 does not test plane-blindness independently, while B3 assumes the uniformity needed for cancellation and omits the distinct oriented pair operators. The general theorem and its application to the framework weighting class therefore require an unprovided orientation-resolved bridge and the explicitly open seed-class premise.
 - **auditor confidence:** high
 
 ### `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02`

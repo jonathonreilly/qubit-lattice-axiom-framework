@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 941 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1776 |
+| unaudited | 1775 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 104 |
+| ~~audited_conditional~~ | 105 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1352 |
-| `audited_conditional` | 104 |
+| `audited_conditional` | 105 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2121 |
+| `unaudited` | 2120 |
 
 | claim_type | count |
 |---|---:|
@@ -1511,6 +1511,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -2065,6 +2066,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The counterexample families are genuine class-A checks showing that additivity alone does not determine either h-class or h-unit. However, the runner terminates on a KeyError because it expects an obsolete live derivation-target entry, while the supplied registry explicitly says AC_phi_lambda has been retired from live Tier-A through owner governance. The fixed-locus authority also explicitly leaves the physical readout identification open, so the broader current-surface claim is not closed by this packet.
 - **open / conditional deps cited:**
   - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
+  - `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+- **auditor confidence:** high
+
+### `acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04`
+
+- **Note:** [`ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The supplied doublet-clock algebra does not by itself normalize either the raw clock or a sparse event-rate ratio into the physical charged-lepton readout 2/3; this is a route-family no-go, not a terminal no-go against future event physics.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00040-acphilambda_r_eta_doublet_cl`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** At delta = 2/9, equating the event-rate ratio to 2/3 merely gives |b| = a_act / (3 sqrt(3) sin(2/9)), leaving the normalization ratio |b|/a_act undetermined.  _(class `A`)_
+- **chain closes:** False — The displayed rescaling and one-parameter-family algebra is correct conditionally. The restricted packet does not close the load-bearing assertion that |b| remains free on the current pointer-clock surface, and the runner aborts before testing that algebra because its live Tier-A lookup is stale.
+- **rationale:** The algebra correctly shows that the stated clock formula cannot select 2/3 without an additional normalization or readout law. However, the pointer-clock authority supplying the free-|b| boundary is absent from the cited-authority packet and is treated by the runner as potentially unaudited, while the retained-bounded fixed-locus authority explicitly leaves the physical readout identification open. The completed runner also exposes stale governance assumptions by raising KeyError after AC_phi_lambda was moved out of the live Tier-A derivation-target map.
+- **open / conditional deps cited:**
+  - `ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md`
   - `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
 - **auditor confidence:** high
 

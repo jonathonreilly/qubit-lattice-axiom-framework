@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 925 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1760 |
+| unaudited | 1759 |
 | audit_in_progress | 8 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 133 |
+| ~~audited_conditional~~ | 134 |
 | ~~audited_failed~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1339 |
-| `audited_conditional` | 133 |
+| `audited_conditional` | 134 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 32 |
-| `unaudited` | 2107 |
+| `unaudited` | 2106 |
 
 | claim_type | count |
 |---|---:|
@@ -1547,6 +1547,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `informative_fraction_covariant_rule_quantization_occupancy_residual_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -11128,6 +11129,23 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The cited algebraic equivalence fixes the normalized locus, and the supplied parameterization plus standard descent, contractibility, and H^2(S^1; Z) arguments establish the stated topological obstruction. No additional physical premise is needed for this scoped conclusion.
 - **rationale:** Issue: the obstruction is an exact class-A mathematical corollary of a single upstream Koide-cone equivalence rather than an independent class-C framework computation. Why this blocks a stronger classification: the runner performs geometry, topology, and consistency checks but no independent comparator or new first-principles physical derivation. Repair target: none is needed for the scoped topological statement; any future claim that the phase readout is derived must independently establish the delta(t) map. Claim boundary until then: the bundle and holonomy obstruction is valid, but the runner's delta = t/3 assignment is not itself derived.
 - **decoration parent:** `charged_lepton_koide_cone_algebraic_equivalence_note`
+- **auditor confidence:** high
+
+### `koide_berry_monopole_bridge_reduction_note_2026-05-31`
+
+- **Note:** [`KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`](../../docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-matrix identities for the stipulated C3 circulant family and explicit two-band comparator, including Fourier projection, isolated-band Berry curvature on gapped patches, commutation, and Q(r) checks; no framework-native carrier or physical Q-branch selection.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00025-koide_berry_monopole_bridge_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the stipulated circulant family, the eigenvectors are parameter-independent Fourier modes, so its isolated-band Berry curvature is zero, while the explicit Pauli two-band comparator has nonzero Berry curvature.  _(class `A`)_
+- **chain closes:** False — The stipulated finite-matrix consequences close, but the claimed framework-native provenance of the C3 generation carrier and circulant mass family is not constructed by a supplied retained authority or accepted premise. The runner begins by hard-coding those objects.
+- **rationale:** The runner genuinely constructs finite matrices, eigenspaces, plaquette phases, commutators, and Q values; all eight passed checks are class-A algebra. However, it stipulates the C3 generation carrier and circulant mass family, while neither the provided one-hop authorities nor premise registries derive their framework-native status. The safe result is therefore conditional finite algebra, although the note correctly declines any physical Q-branch selection.
+- **open / conditional deps cited:**
+  - `KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`
+  - `KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`
+  - `STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `koide_carrier_locus_decomposition_note_2026-06-01`

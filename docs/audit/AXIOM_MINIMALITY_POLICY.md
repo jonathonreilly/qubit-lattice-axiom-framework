@@ -688,3 +688,60 @@ added to or removed from any premise registry):
     Optional future hardening (separate, not in this change): a one-line audit
     lint warning if any retained row ever cites the low-entropy magnitude as an
     upstream dependency.
+
+Recorded primitive derivation-route progress (primitive unchanged; no registry
+delta; not a discharge):
+
+- **2026-07-10 -- kinetic-isotropy primitive: derivation-route progress
+  record.** Two conditional theorem rows landed on the Admissibility-side
+  derivation surface upstream of the registered primitive:
+  `tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09`
+  and
+  `kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09`,
+  both graded `audited_conditional` by the independent audit lane as of this
+  record's date. Grades remain audit-lane-owned and re-grade solely through
+  the automatic effective-status pipeline; this record quotes them as
+  point-in-time facts and sets nothing.
+  - **What the graded route computes.** On the site-licensed period-2
+    one-axis surface, under a supplied tick--Admissibility realization
+    bridge, the translation and variation predicates select exactly the two
+    unit-speed movers (one lattice edge per tick) out of the exact
+    five-stratum support classification. On the analyzed 3D period-2
+    classes, under a supplied 3D protocol--Admissibility bridge and a
+    supplied word-level dispersiveness condition, three named algebraic
+    filters bound the factorized-protocol candidate set to four members.
+    The route runs from Admissibility-clause structure, not from
+    emergent-Lorentz output, so it is not the circular direction named in
+    the 2026-06-09 entry's rationale; the entry's premise accounting is
+    otherwise unaffected while the named gaps below stay open.
+  - **Residual gaps (named).** (i) The realization bridges are supplied,
+    not derived: the four axioms do not choose a tick, and pairing a
+    varying availability rule with a flat tick is not excluded by the
+    landed rows. (ii) The word-level dispersiveness condition is supplied.
+    (iii) `P_WEIGHT` survives the three filters with composite slopes
+    `(2,1,1)`, so the four-member set is a necessary filter only; a
+    proper-cubic protocol-covariance theorem, a one-mover-per-axis
+    word-domain restriction, or a class-transport theorem is the named next
+    opening. (iv) Scope is period-2, one-axis, one Grassmann component per
+    site; the simultaneous 3D tick, larger cells, and the mod-3 staircase
+    variant are outside the proofs. (v) No OS0/readout identification is
+    made: connecting the realized protocol speed to the OS0 graining ratio
+    `c_t/c_s` that the primitive registers remains open. (vi) Inherited
+    site-strict/unitary-tick conditionals and non-retained direct
+    dependencies re-grade only through the cascade.
+  - **Registry effect: none.** `kinetic_isotropy_primitive` remains a
+    registered framework primitive and remains in `canonical_ids`; the
+    2026-06-09 entry above is byte-unchanged; no premise accounting,
+    effective status, or audit language is set or edited by this record.
+  - **No laundering.** This record supplies no value of `c_t/c_s`, no
+    dynamics, no selector, no readout bridge, and no promotion of any row;
+    it is a dated pointer from the registry entry to the graded derivation
+    surface and its named gaps.
+  - **Forward path (recorded, not enacted).** The registry's discharge
+    precedent (theta, 2026-07-05) required the discharge-basis rows at
+    retained grade, with the recorded cross-confirmation, before the owner
+    moved the entry to a retirement record. The gaps named above are the
+    open derivation surface for any future record of that kind; this record
+    proposes no retirement.
+  - **Approval.** Owner approval for adding this record is recorded in the
+    landing PR thread; the record does not land without it.

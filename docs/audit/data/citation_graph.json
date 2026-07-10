@@ -57818,10 +57818,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
     },
     {
@@ -57831,6 +57827,10 @@
     {
       "from": "repo.front_door_status",
       "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
     },
     {
       "from": "repo.repo_organization",
@@ -111066,7 +111066,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e879ee6dad865b180ed6c05bb58f122164b4424ef832ed7f14a3889558fe5f50",
+      "note_hash": "1fa628d9e0345df90934d549dc0c05d972c849338f99434c457cbc6a92cf6f49",
       "path": "docs/RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md",
       "runner_path": "scripts/record_formation_front_chiral_edge_2026_07_05.py",
       "title": "Record-Occupancy Front as a Diagnostic Domain Wall: Free-Field Bounded Theorem"
@@ -111847,13 +111847,13 @@
         "yt_zero_import_authority_note",
         "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17",
         "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15",
-        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2b1702498ff4b5fda97da903992892f8761929add388b7d6a28fce245bd19db8",
+      "note_hash": "fb8a394ec519a3129f3186fb8f5b2176637345f7aeb3a82d88651522e1031f09",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -20,7 +20,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 926 |
+| **retained_bounded** | 927 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
 | unaudited | 1755 |
@@ -28,7 +28,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 136 |
+| ~~audited_conditional~~ | 135 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -72,8 +72,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 12 |
-| `audited_clean` | 1340 |
-| `audited_conditional` | 136 |
+| `audited_clean` | 1341 |
+| `audited_conditional` | 135 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
@@ -691,6 +691,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hard_geometry_local_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `harmonic_ladder_weight_law_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | C | - |
+| `heat_kernel_gauge_action_native_rp_plane_character_positivity_all_compact_groups_narrow_theorem_note_2026-07-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1598,7 +1599,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
-| `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10122,6 +10122,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** The bounded finite claim closes inside the restricted packet: the runner recomputes the determinant-root and Laurent-Arg machinery rather than merely printing the headline result. Frozen tables act as regression and staleness gates, while the load-bearing Laurent-law comparison is computed from the determinant construction. Residual risk is numerical scope only: this is double-precision finite-state verification, not a symbolic proof or a generalization beyond the four listed realized states.
 - **auditor confidence:** high
 
+### `heat_kernel_gauge_action_native_rp_plane_character_positivity_all_compact_groups_narrow_theorem_note_2026-07-09`
+
+- **Note:** [`HEAT_KERNEL_GAUGE_ACTION_NATIVE_RP_PLANE_CHARACTER_POSITIVITY_ALL_COMPACT_GROUPS_NARROW_THEOREM_NOTE_2026-07-09.md`](../../docs/HEAT_KERNEL_GAUGE_ACTION_NATIVE_RP_PLANE_CHARACTER_POSITIVITY_ALL_COMPACT_GROUPS_NARROW_THEOREM_NOTE_2026-07-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** H1–H3 for the specified central heat-semigroup plaquette weight on the explicit two-slice temporal-gauge carrier for compact Lie groups; H4 only for the enumerated Z_N cases and U(1), with SU(2)/SU(3) truncations treated as numerical support.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00035-heat_kernel_gauge_action_nat`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because every heat-semigroup coefficient is positive and χ_λ(AB†) is a matrix-element Gram product, the plane kernel is positive, so integration against the real reflected half weights yields G = W diag(κ) W† with κ ≥ 0.  _(class `A`)_
+- **chain closes:** True — The positive spectral coefficients and the representation matrix-element identity directly establish a positive plane kernel. The retained carrier/reflection construction then converts that kernel and the real matching half weights into the claimed integrated positive-semidefinite Gram matrix.
+- **rationale:** The load-bearing result is a genuine algebraic closure from the specified heat-semigroup spectrum, compact-group representation identities, and retained-grade reflection-positivity authorities. The runner source performs the advertised coefficient, representation, finite-carrier, quadrature, and Monte Carlo calculations rather than printing hard-coded verdicts or importing a contested value. The note correctly excludes action selection and analytic SU(2)/SU(3) pointwise positivity from its theorem surface.
+- **auditor confidence:** high
+
 ### `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17`
 
 - **Note:** [`HERMITIAN_LIFT_THETA_H_PK_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/HERMITIAN_LIFT_THETA_H_PK_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md)
@@ -18330,21 +18343,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** W_{a,a+1} M_per W_{a,a+1}^T = M_per and W_{a,a+1} M_ap(a) W_{a,a+1}^T = M_ap(a+1) for adjacent exchanges, plus adjacent transpositions generating S4.  _(class `A`)_
 - **chain closes:** False — The finite L=4 transport chain closes from the runner's constructed matrices, but the source note's broader robustness/generalization does not close from the available runner packet.
 - **rationale:** Issue: The source note says the runner also checks m=1.7, L=(6,6,6,6), and an equivalent staggered-phase convention, but the runner source/output only cover m=0.3, L=(4,4,4,4), and the odd L=(3,3,3,3) falsifier. Why this blocks: The clean finite core closes, but the current note's even-block/robustness scope is broader than the completed runner evidence in the restricted packet. Repair target: Either narrow the source scope to the actually tested finite surface, or extend the runner/proof to cover m=1.7, L=(6,6,6,6), the equivalent phase convention, and the intended all-even cubic-symmetric scope. Claim boundary until fixed: The packet supports the L=(4,4,4,4) signed-exchange transport and W-inert parity grading, not the broader robustness statement.
-- **auditor confidence:** high
-
-### `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17`
-
-- **Note:** [`SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md`](../../docs/SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The B-AXIS.1 split between the internally fixed two-step denominator for supplied T_hat^2 and the underived absolute physical clock unit represented by a_tau.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00001-single_clock_blocked_time_un`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** For the same dimensionless transfer T_hat^2, functional calculus fixes the supplied two-step reconstruction to H_block = -(1/(2 a_tau)) log(T_hat^2/M_T), while replacing the block time by 2 c a_tau rescales the generator to H_block/c.  _(class `A`)_
-- **chain closes:** False — The transfer and Record-relative algebra closes, but the framework-wide N2b conclusion also consumes docs/MINIMAL_AXIOMS_2026-06-05.md, which is not supplied as a one-hop authority with an effective status. The runner only verifies selected text anchors from that omitted file.
-- **rationale:** Issue: the proof's framework-wide N2b conclusion consumes docs/MINIMAL_AXIOMS_2026-06-05.md without a direct dependency edge or full retained-grade authority packet. Why this blocks: the supplied retained no-go authorities establish transfer- and Record-relative clock underdetermination, but do not alone establish the absence of clock content from every minimal Lattice or Quantum axiom. Repair target: wire the minimal-axioms note as a direct dependency and re-audit its exact exclusions and status. Claim boundary until fixed: N2a and the transfer-/Record-relative rescaling no-go remain supported, while the framework-wide absolute-unit conclusion remains conditional.
-- **open / conditional deps cited:**
-  - `MINIMAL_AXIOMS_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17`

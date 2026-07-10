@@ -1,13 +1,13 @@
 # Audit Queue
 
-**Total pending:** 1919
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 165
+**Total pending:** 1918
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 164
 
 By criticality:
 - `critical`: 425
 - `high`: 249
 - `medium`: 498
-- `leaf`: 747
+- `leaf`: 746
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -41,7 +41,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 24 | `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10` | bounded_theorem | non_terminal_conditional | critical | 429 | 13.75 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_p1_exponent_attack_2026_06_10.py` |
 | 25 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | bounded_theorem | non_terminal_conditional | critical | 429 | 13.25 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_local_finite_atom_availability_2026_06_17.py` |
 | 26 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | non_terminal_conditional | critical | 425 | 13.23 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py` |
-| 27 | `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17` | bounded_theorem | non_terminal_conditional | critical | 424 | 13.23 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py` |
+| 27 | `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17` | bounded_theorem | unaudited | critical | 424 | 13.23 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py` |
 | 28 | `confinement_string_tension_note` | bounded_theorem | non_terminal_conditional | critical | 114 | 18.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_confinement_string_tension.py` |
 | 29 | `newton_law_derived_note` | bounded_theorem | non_terminal_conditional | critical | 70 | 13.65 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/newton_law_potential_kernel_scope_check.py` |
 | 30 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1319 | 16.37 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |

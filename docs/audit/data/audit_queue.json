@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 425,
     "high": 249,
-    "leaf": 747,
+    "leaf": 746,
     "medium": 498
   },
   "cycle_break_target_count": 49,
@@ -1867,12 +1867,12 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audited_conditional",
+      "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17",
-      "claim_scope": "The B-AXIS.1 split between the internally fixed two-step denominator for supplied T_hat^2 and the underived absolute physical clock unit represented by a_tau.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
@@ -1883,11 +1883,11 @@
         "record_clock_rate_normalization_gate_2026-06-06"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
       "load_bearing_score": 13.231,
       "note_path": "docs/SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md",
-      "queue_reason": "non_terminal_conditional",
+      "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py",
       "transitive_descendants": 424
@@ -37865,31 +37865,6 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "heat_kernel_gauge_action_native_rp_plane_character_positivity_all_compact_groups_narrow_theorem_note_2026-07-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
-        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/HEAT_KERNEL_GAUGE_ACTION_NATIVE_RP_PLANE_CHARACTER_POSITIVITY_ALL_COMPACT_GROUPS_NARROW_THEOREM_NOTE_2026-07-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_heat_kernel_native_rp_plane_character_positivity_2026_07_09.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "hw_complement_equivalence_extends_to_free_corner_transfer_dynamics_bounded_note_2026-06-12",
@@ -58469,6 +58444,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 165,
-  "total_pending": 1919
+  "ready_count": 164,
+  "total_pending": 1918
 }

@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2025,
-    "decoration": 69,
+    "bounded_theorem": 2024,
+    "decoration": 70,
     "meta": 354,
     "no_go": 482,
     "open_gate": 183,
@@ -80,10 +80,10 @@
     "retained": 195,
     "retained_bounded": 948,
     "retained_no_go": 212,
-    "retained_pending_chain": 11,
-    "unaudited": 1724
+    "retained_pending_chain": 12,
+    "unaudited": 1723
   },
-  "retained_pending_chain_count": 11,
+  "retained_pending_chain_count": 12,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
@@ -95,6 +95,7 @@
     "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
     "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",
     "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-    "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22"
+    "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22",
+    "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20"
   ]
 }

@@ -69,17 +69,33 @@ NEGATIVE_ASSERTION_RE = re.compile(
     r"(?:^|\n)\s*(?:walls?|admissions?)\s*:",
     re.IGNORECASE,
 )
+# Check explicit negated closure phrases before removing affirmative closure
+# clauses. This handles adverbial forms ("does not fully close"), negative
+# perfect/passive forms, and "fails to resolve" without treating affirmative
+# tense variants as no-go assertions.
+EXPLICIT_NEGATIVE_CLOSURE_RE = re.compile(
+    r"\b(?:(?:(?:does|do|did|has|have|had|is|are|was|were)\s+not)|"
+    r"cannot|can\s+not|fails?\s+to)\s+"
+    r"(?:fully\s+|completely\s+|entirely\s+|exactly\s+)?"
+    r"(?:close[sd]?|remove[sd]?|resolve[sd]?|discharge[sd]?|suppl(?:y|ies|ied)|"
+    r"retire[sd]?|eliminate[sd]?)\b[^\n.;:]{0,100}\b"
+    r"(?:residual\s+|remaining\s+|scoped\s+|unresolved\s+)?"
+    r"(?:walls?|admissions?|obstructions?)\b",
+    re.IGNORECASE,
+)
 # Remove only clauses that affirmatively close or supply the named boundary.
 # This keeps "does not close the remaining obstruction" live while excluding
 # "closes the remaining obstruction" and passive equivalents.
 POSITIVE_BOUNDARY_CLOSURE_RE = re.compile(
-    r"(?<!not )(?<!never )\b(?:closes?|removes?|discharges?|supplies?|resolves?|retires?|"
-    r"eliminates?|answers?|overcomes?)\b\s+(?:all\s+|the\s+|an?\s+|"
+    r"(?<!not )(?<!never )\b(?:closes?|closed|removes?|removed|discharges?|discharged|"
+    r"supplies?|supplied|resolves?|resolved|retires?|retired|eliminates?|eliminated|"
+    r"answers?|answered|overcomes?|overcame)\b\s+(?:all\s+|the\s+|an?\s+|"
     r"explicitly\s+)?(?:residual\s+|remaining\s+|scoped\s+|unresolved\s+)?"
     r"(?:walls?|admissions?|obstructions?)\b|"
     r"\b(?:all\s+|the\s+|an?\s+)?(?:residual\s+|remaining\s+|scoped\s+|"
     r"unresolved\s+)?(?:walls?|admissions?|obstructions?)\b"
-    r"[^\n.;:]{0,50}\b(?:is|are)\s+(?:explicitly\s+)?"
+    r"[^\n.;:]{0,50}\b(?:is|are|was|were|has\s+been|have\s+been|had\s+been)\s+"
+    r"(?:explicitly\s+)?"
     r"(?:closed|removed|discharged|supplied|resolved|retired|eliminated)\b",
     re.IGNORECASE,
 )
@@ -823,6 +839,8 @@ def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] |
 
 
 def _has_negative_boundary_assertion(text: str) -> bool:
+    if EXPLICIT_NEGATIVE_CLOSURE_RE.search(text):
+        return True
     cleaned = POSITIVE_BOUNDARY_CLOSURE_RE.sub("", text)
     cleaned = NEGATED_BOUNDARY_RE.sub("", cleaned)
     return bool(NEGATIVE_ASSERTION_RE.search(cleaned))

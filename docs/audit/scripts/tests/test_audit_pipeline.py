@@ -2567,6 +2567,40 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                         "verdict_rationale": rationale,
                     })
                 )
+        for assertion in (
+            "The theorem does not fully close the remaining obstruction.",
+            "The attempt fails to resolve the remaining obstruction.",
+            "The construction cannot completely remove the scoped obstruction.",
+        ):
+            with self.subTest(assertion=assertion):
+                self.assertTrue(
+                    m.source_requires_no_go_discipline(
+                        "docs/POLARITY.md", assertion, "bounded_theorem"
+                    )
+                )
+                self.assertTrue(
+                    m.output_requires_no_go_discipline({
+                        "claim_type": "bounded_theorem",
+                        "verdict_rationale": assertion,
+                    })
+                )
+        for closure in (
+            "The theorem has closed the remaining obstruction.",
+            "The remaining obstruction was closed by the theorem.",
+            "The residual walls have been discharged.",
+        ):
+            with self.subTest(closure=closure):
+                self.assertFalse(
+                    m.source_requires_no_go_discipline(
+                        "docs/POSITIVE.md", closure, "positive_theorem"
+                    )
+                )
+                self.assertFalse(
+                    m.output_requires_no_go_discipline({
+                        "claim_type": "positive_theorem",
+                        "verdict_rationale": closure,
+                    })
+                )
         self.assertTrue(
             m.source_requires_no_go_discipline(
                 "docs/spatial_anisotropy_no_go_note.md",

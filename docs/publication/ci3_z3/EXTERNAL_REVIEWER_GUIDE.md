@@ -116,8 +116,7 @@ Review this as a modular component stack:
    [CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md](../../CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md),
    [CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md](../../CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md),
    [CKM_THALES_CROSS_SYSTEM_CP_RATIO_THEOREM_NOTE_2026-04-25.md](../../CKM_THALES_CROSS_SYSTEM_CP_RATIO_THEOREM_NOTE_2026-04-25.md),
-   [CKM_KAON_EPSILON_K_JARLSKOG_DECOMPOSITION_THEOREM_NOTE_2026-04-25.md](../../CKM_KAON_EPSILON_K_JARLSKOG_DECOMPOSITION_THEOREM_NOTE_2026-04-25.md),
-   [KR_A1_VANISHING_SUPPORT_NOTE.md](../../KR_A1_VANISHING_SUPPORT_NOTE.md)
+   [CKM_KAON_EPSILON_K_JARLSKOG_DECOMPOSITION_THEOREM_NOTE_2026-04-25.md](../../CKM_KAON_EPSILON_K_JARLSKOG_DECOMPOSITION_THEOREM_NOTE_2026-04-25.md)
 8. three-generation observable closure:
    [THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md](../../THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
 9. three-generation / flavor representation-theory support packet:
@@ -204,9 +203,6 @@ Current status from that stack:
   barred-unitarity-triangle angles retain finite-`lambda` corrections; the
   protected `gamma_bar` identity is retained only at NLO under the standard
   barred-apex scaling and is not an all-orders barred-triangle theorem
-- exact CKM carrier-side support theorem:
-  `K_R(q) = 0` for every pure `A1` background on the seven-site support block
-  via [KR_A1_VANISHING_SUPPORT_NOTE.md](../../KR_A1_VANISHING_SUPPORT_NOTE.md)
 - retained three-generation matter structure is now closed on the retained
   generation surface: the exact orbit algebra `8 = 1 + 1 + 3 + 3` survives as
   physical species structure, the retained `hw=1` observable algebra is

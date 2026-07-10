@@ -99,6 +99,25 @@ def hilbert_schmidt_norm(operator, cache) -> float:
     return float(np.linalg.norm(matrix.data)) if matrix.nnz else 0.0
 
 
+def commuting_auxiliary_identity_error() -> tuple[float, float]:
+    """Independent finite-matrix check of [G0,G1]=[h0,h1]."""
+
+    eye_aux = np.eye(3, dtype=np.complex128)
+    eye_matter = np.eye(2, dtype=np.complex128)
+    eta_minus = np.diag([-0.7, 0.2, 1.1]).astype(np.complex128)
+    eta_zero = np.diag([0.4, -0.3, 0.9]).astype(np.complex128)
+    eta_one = np.diag([1.2, 0.5, -0.6]).astype(np.complex128)
+    h_zero = np.array([[0.3, 1.0 - 0.2j], [1.0 + 0.2j, -0.4]], dtype=np.complex128)
+    h_one = np.array([[-0.1, 0.6 + 0.5j], [0.6 - 0.5j, 0.8]], dtype=np.complex128)
+
+    g_zero = np.kron(eta_zero - eta_minus, eye_matter) - np.kron(eye_aux, h_zero)
+    g_one = np.kron(eta_one - eta_zero, eye_matter) - np.kron(eye_aux, h_one)
+    lhs = g_zero @ g_one - g_one @ g_zero
+    matter_commutator = h_zero @ h_one - h_one @ h_zero
+    rhs = np.kron(eye_aux, matter_commutator)
+    return float(np.linalg.norm(lhs - rhs)), float(np.linalg.norm(rhs))
+
+
 def main() -> int:
     started = time.time()
     cache = {}
@@ -127,7 +146,8 @@ def main() -> int:
     adjacent_nonzero = adjacent_coefficient_norm > CHECK_TOL and adjacent_hs_norm > CHECK_TOL
     separated_zero = not separated
     dense_ok = dense_error <= CHECK_TOL
-    auxiliary_identity_ok = adjacent_nonzero
+    auxiliary_identity_error, auxiliary_rhs_norm = commuting_auxiliary_identity_error()
+    auxiliary_identity_ok = auxiliary_identity_error <= CHECK_TOL and auxiliary_rhs_norm > CHECK_TOL
     passed = charge_abelian and adjacent_nonzero and separated_zero and dense_ok and auxiliary_identity_ok
 
     coupling_text = ",".join(f"{name}={value:.8g}" for name, value in couplings.__dict__.items())
@@ -137,7 +157,9 @@ def main() -> int:
         f"adjacent_coeff_l2={adjacent_coefficient_norm:.8e};"
         f"adjacent_hs8={adjacent_hs_norm:.8e};"
         f"separated_d2_zero={'Y' if separated_zero else 'N'};"
-        f"dense_error={dense_error:.1e}"
+        f"dense_error={dense_error:.1e};"
+        f"aux_identity_error={auxiliary_identity_error:.1e};"
+        f"aux_rhs_norm={auxiliary_rhs_norm:.8e}"
     )
     print(
         "CHECKS "

@@ -4,8 +4,9 @@
 **Type:** bounded_theorem
 **Claim scope:** For a supplied one-dimensional two-particle band Hamiltonian
 with a total-momentum-independent relative potential, this note proves the
-Feynman–Hellmann curvature sum rule and records quadratic and cosine-band
-controls. It does not assert a universal static-comparator no-go.
+fixed-split Feynman–Hellmann curvature sum rule and records quadratic and
+cosine-band controls. It does not assert split independence on a finite
+periodic domain or a universal static-comparator no-go.
 
 **Primary runner:**
 [`scripts/composite_mass_energy_equivalence_static_comparator_2026_07_08.py`](../scripts/composite_mass_energy_equivalence_static_comparator_2026_07_08.py)
@@ -41,7 +42,10 @@ A_\alpha=\alpha^2E''(q)+(1-\alpha)^2E''(-q),
 \qquad
 B_\alpha=\alpha E'(q)+(1-\alpha)E'(-q).
 \]
-The total is independent of the momentum split \(\alpha\).
+This identity holds for each fixed \(\alpha\) on the stated domain. Changing
+\(\alpha\) is not generally a coordinate relabeling on a finite periodic grid:
+it changes the relative-coordinate twist unless the boundary domain is
+transformed with it. No finite-volume split-independence theorem is claimed.
 
 For an even band at the symmetric split \(\alpha=1/2\),
 \(B_{1/2}=0\), so
@@ -84,7 +88,10 @@ entire class of static interactions.
 
 - One-dimensional supplied band and nondegenerate even bound state.
 - The relative potential is imported and \(P\)-independent.
-- Only the exact sum rule and the two stated controls are retained.
+- The proposed bounded scope is limited to the fixed-split sum rule and the two
+  stated controls.
+- No finite-periodic split-independence claim is made; the small-ring runner
+  explicitly resolves the split dependence at fixed boundary conditions.
 - No universal mass-energy-equivalence negative, mediator necessity,
   WEP statement, or claim that Record supplies or forces interaction
   dynamics remains.

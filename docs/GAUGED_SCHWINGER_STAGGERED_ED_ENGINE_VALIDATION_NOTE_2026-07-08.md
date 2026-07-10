@@ -40,12 +40,13 @@ The runner checks:
 - two-site magnetic translation on vectors whose support and image remain in
   the cutoff interior;
 - the explicitly decoupled \(U_{\rm holo}=1\) free comparator;
-- momentum-sector reassembly against the unprojected finite spectrum;
 - construction of the finite two-body truncation projector.
 
-The printed sector-energy and projection numbers are non-gating regression
-data for those implementations. They are not source-note physics claims or
-particle/channel identifications.
+The validation intentionally omits momentum-sector projection at finite rotor
+cutoff. The truncated magnetic translation is not globally unitary at the
+cutoff boundary, so averaging its powers does not define a Hermitian idempotent
+momentum projector. No sector-reassembly or sector-energy result from that
+construction is retained, even as regression data.
 
 ## Open Dependencies and Engineering Flags
 

@@ -1,11 +1,9 @@
-"""Charged-lepton Koide value -- full chain of custody, end-to-end verifier.
+"""Charged-lepton Koide chain -- local algebra/registry consistency runner.
 
-This runner backs the capstone chain note: it checks EVERY link of the derivation chain from the
-framework baseline to Q=2/3, so downstream consumers of Q=2/3 have one end-to-end-verified,
-honestly-tiered chain to cite. The source claim is bounded: structure derived, value Q=2/3 reached
-modulo the single Tier-A admitted input AC_phi_lambda (the generation mass pattern; this session
-sharpens it for the charged-lepton sector into K-reality [partition] + det_C/block-counting
-[the r=1/2 vs r=1 value]). Independent audit owns retained status.
+This runner backs the capstone chain note. It reproduces representative local
+algebra through Q=2/3 <=> r=1/2 and verifies that the live registries do not
+supply the physical r=1/2 selection. It does not prove or audit the cited
+dependency claims. Independent audit owns status.
 
 LINK -> source/dependency anchor (status checked before landing, not set by this runner):
  L1 one-qubit local algebra / per-site spin-1/2: per_site_su2_spin_half
@@ -22,11 +20,12 @@ LINK -> source/dependency anchor (status checked before landing, not set by this
  L9 r=1/2 = HS 2-sector equipartition   : this session (stationary point; koide_kappa_two_orbit_dimension_
     / balance stationary point            factorization)
  L10 Q=2/3 <=> r=1/2 (cone biconditional): charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem
- ADMITTED INPUT AC_phi_lambda           : Tier-A registry; no-go portfolio koide_frobenius_isotype_split_
-   (= K-reality + det_C block-counting)   uniqueness, koide_q_delta_residual_cohomology_obstruction
- ENDPOINT Q=2/3.
+ OPEN SELECTOR r=1/2                    : zero live Tier-A targets; the
+   owner-governed AC_phi_lambda boundary explicitly supplies no r value.
 """
 import itertools
+import json
+from pathlib import Path
 import numpy as np
 
 w = np.exp(2j * np.pi / 3)
@@ -96,20 +95,31 @@ def main():
     passed.append(check("L10 Q=2/3 <=> r=1/2 (cone biconditional) [charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem]",
                         abs(Q_of(1.0, np.sqrt(0.5))[0] - 2 / 3) < 1e-9, f"Q(r=1/2)={Q_of(1.0, np.sqrt(0.5))[0]:.6f}"))
 
-    # ADMITTED INPUT AC_phi_lambda: K-reality (partition) + det_C (block-counting); Born gives r=1
+    # Open selector: the owner-governed replacement explicitly supplies no r.
     born_blocks = (1 / 3, 2 / 3)   # rho=I/3 dimension weighting -> r=1
-    passed.append(check("AC: the value needs the admitted input AC_phi_lambda = K-reality [2-block partition] + det_C/equal-power-per-block [r=1/2]; Born/dimension gives r=1 [no-go portfolio: koide_frobenius_isotype_split_uniqueness, koide_q_delta_residual_cohomology]",
-                        abs((1 / 3 + 2 / 3 * 1.0) - 1.0) < 1e-12 and abs((1 / 3 + 2 / 3 * 0.5) - 2 / 3) < 1e-12,
-                        f"Born blocks {born_blocks} -> r=1 -> Q=1; equal-power-per-block -> r=1/2 -> Q=2/3 (the admitted selection)"))
+    repo = Path(__file__).resolve().parents[1]
+    tier_a = json.loads((repo / "docs/audit/data/tier_a_admissions.json").read_text())
+    owner = json.loads((repo / "docs/audit/data/owner_governed_premise_nodes.json").read_text())
+    boundary = owner["nodes"]["staggered_dirac_realization_gate_note_2026-05-03"]["boundary"]
+    selector_open = (
+        tier_a["genuine_admitted_input_count"] == 0
+        and not tier_a["canonical_ids"]
+        and "no value of r" in boundary
+    )
+    passed.append(check(
+        "OPEN SELECTOR: zero live Tier-A targets and owner-governed AC_phi_lambda supplies no r value",
+        selector_open
+        and abs((1 / 3 + 2 / 3 * 1.0) - 1.0) < 1e-12
+        and abs((1 / 3 + 2 / 3 * 0.5) - 2 / 3) < 1e-12,
+        f"Born blocks {born_blocks} -> r=1 -> Q=1; r=1/2 -> Q=2/3 algebraically; physical selection remains open",
+    ))
 
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
-    print("CHAIN SOURCE CHECK: the charged-lepton Koide value chain from the framework baseline to Q=2/3")
-    print("is verified end-to-end as a bounded source candidate.")
-    print("The STRUCTURE (L1-L9: carrier/3-gens, circulant, exact Q=1/3+(2/3)r, channels,")
-    print("topological 2/9, endpoint exclusion, r=1/2 = 2-sector-equipartition stationary point) is DERIVED on")
-    print("existing dependency anchors; the VALUE Q=2/3 (L10) is reached MODULO the single Tier-A admitted")
-    print("input AC_phi_lambda (sharpened: K-reality for the 2-block partition + det_C/equal-power-per-block for")
-    print("r=1/2 over the Born/dimension r=1). Downstream consumers of Q=2/3 cite this chain + that one admission.")
+    print("CHAIN CONSISTENCY CHECK: nine representative local algebra/registry checks passed.")
+    print("The runner does not prove or audit the chain's cited dependency claims.")
+    print("The structural formulas assemble to Q=1/3+(2/3)r, while the VALUE Q=2/3")
+    print("requires the still-open physical selection r=1/2.")
+    print("There are zero live Tier-A targets, and the owner-governed AC_phi_lambda boundary supplies no r value.")
     print("Independent audit decides claim type/status after landing.")
     return 0 if all(passed) else 1
 

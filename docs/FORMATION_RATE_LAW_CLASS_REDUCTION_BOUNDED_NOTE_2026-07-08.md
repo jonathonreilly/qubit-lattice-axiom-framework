@@ -62,6 +62,6 @@ retained here.
 
 ## Dependency
 
-- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — context
-  for the downstream formation-rate slot only; the displayed identity is
-  ordinary calculus conditional on the hypotheses stated above.
+- `MINIMAL_AXIOMS_2026-06-29.md` — context for the downstream formation-rate
+  slot only; the displayed identity is ordinary calculus conditional on the
+  hypotheses stated above.

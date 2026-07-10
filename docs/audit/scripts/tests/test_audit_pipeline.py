@@ -1763,6 +1763,36 @@ class AuditLintTest(unittest.TestCase):
         self.assertEqual(rc, 1)
         self.assertIn("cross_confirmation.first_audit invalid", buf.getvalue())
 
+    def test_lint_allows_schema_old_no_go_packet_in_non_authoritative_history(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        packet = _no_go_packet()
+        del packet["N3_hidden_wall_scan"]["scan_scope"]
+        rows = {
+            "migrated_history": {
+                "claim_id": "migrated_history",
+                "_body": "# Historical packet holder\n",
+                "audit_status": "unaudited",
+                "effective_status": "unaudited",
+                "claim_type": "positive_theorem",
+                "criticality": "leaf",
+                "previous_audits": [{
+                    "audit_status": "audited_clean",
+                    "claim_type": "no_go",
+                    "claim_scope": "legacy negative scope",
+                    "no_go_discipline": packet,
+                    "invalidation_reason": "dep_weakened:authority:retained->unaudited",
+                }],
+            }
+        }
+        self._write_minimal_ledger(rows)
+        import contextlib, io
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        self.assertEqual(rc, 0, buf.getvalue())
+        self.assertIn("archived_invalid_no_go_packet", buf.getvalue())
+
     def test_front_door_prose_or_code_path_does_not_count(self):
         m = _import("audit_lint")
         errors = m.front_door_axiom_pointer_errors(

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1792 |
+| unaudited | 1791 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 92 |
+| ~~audited_conditional~~ | 93 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1350 |
-| `audited_conditional` | 92 |
+| `audited_conditional` | 93 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2137 |
+| `unaudited` | 2136 |
 
 | claim_type | count |
 |---|---:|
@@ -1505,6 +1505,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_k_even_registration_correction_registered_pattern_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
@@ -1943,6 +1944,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The definitions of H_D, R2, and A(phi), together with the algebraic/dense checks that [R2,H_D]=0, R2^3=-I, Tr(f(H_D)R2^2)=-Tr(f(H_D)R2), and the even/odd/Wilson K-odd trace gates hold at the stated bounded instances.  _(class `C`)_
 - **chain closes:** True — Within the bounded operator scope, the construction is explicit and the runner computes the relevant finite matrices/traces rather than importing an external comparator or tuned physical value. The note preserves the open boundaries for physical selection, occurrence, readout/value, and phi.
 - **rationale:** Clean closure: the claimed result is a bounded construction/check on a defined representative, not a claim that the representative is physically selected or that AC_phi_lambda is retired. The retained-bounded dependency supplies the licensed per-site C^2 nearest-neighbor surface and residual selector boundary, while the runner verifies the projective equivariance, branch weights, trace reductions, cancellation, and finite K-odd witnesses with PASS=64 FAIL=0.
+- **auditor confidence:** high
+
+### `acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04`
+
+- **Note:** [`ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** A bounded route no-go for rational-multiple-of-pi phase sources, canonical 2pi packagings, real/K-real loci, homogeneous zero-source maps, and the unlicensed map Phi = S_sum, conditional on identifying the R-eta target with Phi = 3 delta = 2/3.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00022-acphilambda_r_eta_angle_nati`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Every named candidate class either misses Phi = 2/3, cannot isolate a nonzero value because it is homogeneous under rescaling, or reaches the target only by inserting the unlicensed identity Phi = S_sum.  _(class `A`)_
+- **chain closes:** False — The algebraic pruning of the named candidate classes closes for the stipulated target, but the packet does not supply the load-bearing coordinate bridge identifying registered R-eta, whose cited magnitude is delta = 2/9, with a charged-lepton cycle holonomy Phi = 3 delta. The cited registry also now says AC_phi_lambda was retired by owner governance, causing the runner to abort before executing its scientific checks.
+- **rationale:** The periodic-phase, canonical-packaging, off-real-locus, and homogeneous-map exclusions are genuine algebraic checks over retained-grade inputs. However, the note's equivalence between R-eta and the new cycle-holonomy target Phi = 3 delta is neither derived nor supplied by a cited authority. In addition, the completed runner fails on a stale live-Tier-A assumption because the provided registry has moved AC_phi_lambda into retired owner-governed premises.
+- **open / conditional deps cited:**
+  - `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
 - **auditor confidence:** high
 
 ### `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11`

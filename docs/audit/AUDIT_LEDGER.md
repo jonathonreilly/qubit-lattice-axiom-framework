@@ -112,7 +112,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1965 | 222.44 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1965 | 222.94 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1227 | 67.26 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1047 | 66.03 | `audited_clean` | **retained_bounded** |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1603 | 65.65 | `audited_clean` | **retained** |

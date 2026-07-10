@@ -449,6 +449,14 @@
       "to": "hypercharge_identification_note"
     },
     {
+      "from": "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
+      "to": "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
+    },
+    {
+      "from": "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
+      "to": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
+    },
+    {
       "from": "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28",
       "to": "cpt_exact_note"
     },
@@ -39506,6 +39514,10 @@
     },
     {
       "from": "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17",
       "to": "post_record_clock_rate_interface_2026-06-06"
     },
     {
@@ -57834,7 +57846,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15"
+      "to": "neutrino_gamma1_wsource_application_bridge_note_2026-07-09"
     },
     {
       "from": "repo.front_door_status",
@@ -58668,10 +58680,12 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "hypercharge_identification_note"
+        "hypercharge_identification_note",
+        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
+        "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "65353a2f0cefc8405af06646e87094ab192319b10aa14984abc3c7c6f282895d",
+      "note_hash": "556f05f47bb5d3f26238745824a45ea39b5ba0f2cea545ea45fc0c4a95425ef8",
       "path": "docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md",
       "runner_path": "scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py",
       "title": "ABJ P-HY Retained-Bounded Supplier Wiring"
@@ -112122,14 +112136,14 @@
         "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
         "yt_zero_import_authority_note",
         "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17",
-        "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15",
+        "neutrino_gamma1_wsource_application_bridge_note_2026-07-09",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
         "yt_ew_m_residual_note_2026-05-02",
         "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "53fa20f00fe4ddf63bd4ad4d00415e1f857b878036f4b5edf606a7dce68fba15",
+      "note_hash": "e6412b95dd6afffc3d79f1fea770a75364f0fe469fef035ac3a4d960127cf632",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -115320,11 +115334,12 @@
       "deps": [
         "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
         "single_clock_uniqueness_scope_boundary_2026-06-06",
+        "minimal_axioms",
         "post_record_clock_rate_interface_2026-06-06",
         "record_clock_rate_normalization_gate_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "67cd52e9712df230bd7629a4a7178e5095d5a1259979bdd06b02a4ca3151a1c3",
+      "note_hash": "f9d8239b87449f60656578ec5140e0e7d4a265b7895e098fab7c2a3a49b86394",
       "path": "docs/SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md",
       "runner_path": "scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py",
       "title": "Single-Clock Blocked-Time Unit Split: N2 Internal Support Boundary"
@@ -122810,7 +122825,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "b1fe0c0d2833ce84a3e685144be7017d36fda8756551cc680739abb4a54efe50",
+      "note_hash": "c55da42c9bd275697d8d5cc94272b24efe28a9c3ae494ac07adcd7ad40afabee",
       "path": "docs/UNIVERSAL_QG_OPTIONAL_TEXTBOOK_COMPARISON_NOTE.md",
       "runner_path": "scripts/universal_qg_optional_textbook_comparison_meta_check.py",
       "title": "Universal QG Optional Textbook Comparison Note"
@@ -129062,7 +129077,7 @@
       "open_gate": 206,
       "positive_theorem": 657
     },
-    "edge_count": 14565,
+    "edge_count": 14568,
     "leaf_count": 1318,
     "node_count": 3911,
     "root_count": 1109,

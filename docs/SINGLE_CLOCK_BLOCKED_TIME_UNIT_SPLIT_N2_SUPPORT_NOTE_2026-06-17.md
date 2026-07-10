@@ -13,7 +13,7 @@ undischarged absolute-unit premise.
 effective-status files, or publication status surfaces. Independent audit
 owns any effective verdict.
 **Primary runner:** [`scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py`](../scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py)
-(`TOTAL: PASS=35 FAIL=0`).
+(`TOTAL: PASS=37 FAIL=0`).
 
 ## Result
 
@@ -58,9 +58,16 @@ minimal axioms and outside Record alone.
   keeps Stone uniqueness transfer-relative and tau-relative; it does not let
   the transfer alone derive an absolute clock unit, axis uniqueness, or
   no-second-clock result.
-- **Minimal framework axioms.** `MINIMAL_AXIOMS_2026-06-05.md` states that
+- **Minimal framework axioms.**
+  [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) states that
   Lattice supplies no metric scale, lattice spacing, or physical unit
-  conversion, and Record supplies no time metric or dynamics.
+  conversion, and Record supplies no time metric or dynamics. This markdown
+  link is a load-bearing dependency edge (added 2026-07-10): the `2026-06-05`
+  path is an aliased path of the canonical `minimal_axioms` premise node in
+  `docs/audit/data/axiom_premise_nodes.json` (current path
+  `MINIMAL_AXIOMS_2026-06-29.md`), so the edge resolves to the live
+  minimal-axioms authority and its full text and effective status enter this
+  note's dependency packet.
 - **Post-record clock/rate boundary.**
   [`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md)
   proves that finite record histories determine event order and counts, not a
@@ -185,12 +192,14 @@ The runner checks:
 - tau-rescaling and dimensionless-transfer invariance;
 - post-record histories preserving words and counts under inequivalent clocks;
 - minimal-axiom and Record clock/rate no-go anchors;
+- the minimal-axioms markdown dependency edge and its aliased-path mapping to
+  the canonical `minimal_axioms` premise node;
 - no audit-ledger, audit-queue, effective-status, or publication-surface
   edits in the branch;
 - explicit boundaries that keep this support from becoming a status or audit
   verdict.
 
-Expected output: `TOTAL: PASS=35 FAIL=0`.
+Expected output: `TOTAL: PASS=37 FAIL=0`.
 
 ## Boundaries
 

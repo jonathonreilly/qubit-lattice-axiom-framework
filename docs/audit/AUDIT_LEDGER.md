@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1764 |
+| unaudited | 1763 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 112 |
+| ~~audited_conditional~~ | 113 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1354 |
-| `audited_conditional` | 112 |
+| `audited_conditional` | 113 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2109 |
+| `unaudited` | 2108 |
 
 | claim_type | count |
 |---|---:|
@@ -1538,6 +1538,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `corner_axis_free_transfer_extension_per_channel_trace_correspondence_and_mode_set_fork_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `corner_mode_set_fork_resolution_layer_is_record_dynamics_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -5651,6 +5652,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the finite m0 = 0.10 scan grid, the Gaussian profile has 5/5 TOWARD offset biases with an offset-law fit alpha = 3.053 and R^2 = 0.8098, while all profiles fail N-monotonicity.  _(class `C`)_
 - **chain closes:** True — The runner source explicitly constructs the 4-component Dirac walk, mass-field kernels, density readout, N sweep, offset sweep, and power-law fit rather than printing hard-coded contested constants. The note's in-scope numerical statements match the completed runner output.
 - **rationale:** The narrowed binding claim is only the finite m0 = 0.10 runner-output statement, not nearby-mass robustness or physical-readout interpretation. Within that scope, the completed runner computes the quoted biases, TOWARD counts, monotonicity failures, and Gaussian offset-law fit from the implemented Dirac-walk dynamics. The source note's in-scope numbers agree with stdout, and no cited authority or missing helper source is needed for the finite computational claim.
+- **auditor confidence:** high
+
+### `dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07`
+
+- **Note:** [`DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md`](../../docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** The rapidity-Gaussian H-analyticity obstruction, signed-permutation quadratic-invariant counts, and free continuous-time lattice dispersion boundary, including review of the separate K-analyticity assertion.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00054-dirac_lorentz_diagnostic_bou`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The explicit lower bound ||H^n psi||/n! >= (mass/2)^n exp(n^2/(2a)-a/2)/n! diverges, so the common-Gaussian analytic-vector bridge is false.  _(class `A`)_
+- **chain closes:** False — The H lower bound, invariant counts, and dispersion expansion close as algebraic diagnostics. The assertion that the Gaussian is an analytic vector for K does not close because the runner checks only finitely many orders, while analyticity requires an all-orders convergence or factorial-exponential bound.
+- **rationale:** Issue: the runner infers K-analyticity from decreasing ratios only through n=8. Why this blocks: finite sampled moments cannot establish the all-orders analytic-vector property stated in the note. Repair target: add an analytic all-n bound for ||K^n psi|| or narrow the claim to the sampled K behavior, which is sufficient because the independently proved H obstruction already rejects the common-vector repair. Claim boundary until fixed: the H nonanalyticity proof, invariant counts, and free-dispersion diagnostics remain supported, without any Nelson, interacting-naturalness, or full Lorentz theorem.
 - **auditor confidence:** high
 
 ### `dirac_observable_panel_note`

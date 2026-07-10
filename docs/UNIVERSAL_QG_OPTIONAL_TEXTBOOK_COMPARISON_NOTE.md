@@ -1,7 +1,8 @@
 # Universal QG Optional Textbook Comparison Note
 
 **Date:** 2026-04-15 (originally); 2026-05-05 (meta retag for re-seed);
-2026-05-06 (zero-authority runner closure)
+2026-05-06 (zero-authority runner closure); 2026-07-10 (finite-predicate
+closure)
 **Type:** meta
 **Status:** audit-checkable packaging hub for optional textbook-comparison
 crosswalks against the universal-QG canonical textbook closure target.
@@ -9,6 +10,10 @@ crosswalks against the universal-QG canonical textbook closure target.
 **Authority role:** zero — this row exists only to anchor a citation hub
 for downstream universal-QG notes that need a stable target for "optional
 textbook comparison" callouts.
+**Audit target:** the finite repository predicate `Z := Z0 AND ... AND Z5`
+below, and no scientific proposition.
+**Status authority:** independent audit lane only; the runner supplies a
+repository-state certificate, not an audit verdict.
 **Primary runner:** `scripts/universal_qg_optional_textbook_comparison_meta_check.py`
 **Runner cache:** `logs/runner-cache/universal_qg_optional_textbook_comparison_meta_check.txt`
 
@@ -41,8 +46,11 @@ invariant, not a continuum theorem:
 - `Z3`: this note has no markdown links to other docs, so it registers no
   upstream theorem dependency edge for itself; cross-references below are
   code-span filenames for navigation only.
-- `Z4`: every substantive textbook-comparison result is forced out to its
-  own claim row with its own load-bearing step, runner, and audit.
+- `Z4`: the complete packaging-only source body is SHA-pinned by the runner;
+  in that pinned body every substantive textbook-comparison result is forced
+  out to its own claim row with its own load-bearing step, runner, and audit.
+  Any source change invalidates the pin until the source and runner are
+  reviewed together and the cache is refreshed.
 - `Z5`: current inbound mentions of this filename are guarded as optional
   packaging callouts rather than load-bearing theorem authority.
 
@@ -51,11 +59,37 @@ passing run certifies only this zero-authority metadata guard. It does not
 certify, import, or strengthen any universal-QG continuum, weak-measure,
 geometric-action, or textbook-equivalence theorem.
 
+### Finite closure certificate
+
+Let `N` be this source file and let `D` be the finite set of current Markdown
+files under `docs/`, excluding `N` itself and the entire `docs/audit/` subtree.
+That subtree contains audit infrastructure, generated audit surfaces, and
+audit history rather than current dependent claim notes. Define:
+
+- `S(N)` to mean that `N` satisfies the source-local guards `Z0`-`Z4`;
+- `I(N,D)` to mean that every current inbound occurrence of this filename in
+  `D` has both an optional-comparison marker and an explicit non-authority /
+  packaging guard; and
+- `Z(N,D) := S(N) AND I(N,D)`.
+
+The runner reads and SHA-pins all of `N`, enumerates `D`, and evaluates every
+conjunct in this definition. Therefore a passing run closes `Z(N,D)` for the
+checked checkout by finite inspection. This exhaustiveness is the entire
+derivation burden of this meta row. It neither assumes nor establishes the
+truth, completeness, or audit grade of any physics note named below.
+
+The certificate is falsified if any source-local guard fails, if this note
+acquires a markdown dependency edge, or if any current inbound occurrence is
+not explicitly optional and non-authoritative. Any edit to this source,
+including a substantive textbook comparison added here, invalidates the `Z4`
+source pin; such a comparison must be moved to its own claim row before a
+reviewer refreshes this metadata certificate.
+
 ## 2. What this note is for
 
-The canonical textbook continuum target for the universal-QG family is
-already handled on the project route by the theorem chain listed in §4 below.
-This note is a packaging hub providing a stable citation target for downstream
+The phrase "canonical textbook continuum target" is a navigation label here,
+not a statement about that target's truth, completeness, or audit grade. This
+note is a packaging hub providing a stable citation target for downstream
 universal-QG notes that need a named row to attach optional-comparison callouts
 to:
 
@@ -71,12 +105,12 @@ above. It is infrastructure metadata for the universal-QG citation graph.
 
 This note **must not** be used to:
 
-- reopen, weaken, or extend the closed universal-QG theorem stack;
+- assign, change, or extend the status of the universal-QG theorem stack;
 - introduce a new "comparison" claim that the audit lane would have to
   ratify;
 - act as a one-hop authority for any downstream theorem;
-- substitute for the actual closed canonical textbook continuum closure
-  parent.
+- substitute for the claim row that supplies the canonical textbook continuum
+  closure.
 
 If a universal-QG downstream note needs a *substantive* textbook-comparison
 result, that must live in its own claim row with its own load-bearing
@@ -84,9 +118,9 @@ step, runner, and independent audit review — not here.
 
 ## 4. Cross-references (informational only)
 
-The universal-QG canonical textbook closure parent and sibling theorems are
+The universal-QG canonical textbook closure parent and sibling claim rows are
 not load-bearing for this meta packaging note. They are listed here only so a
-reader landing on this row by citation can navigate to the actual derivations:
+reader landing on this row by citation can navigate to the substantive rows:
 
 - `UNIVERSAL_QG_CANONICAL_TEXTBOOK_CONTINUUM_GR_CLOSURE_NOTE.md`
 - `UNIVERSAL_QG_CANONICAL_SMOOTH_GRAVITATIONAL_WEAK_MEASURE_NOTE.md`
@@ -94,4 +128,5 @@ reader landing on this row by citation can navigate to the actual derivations:
 - `UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md`
 - `UNIVERSAL_QG_CONTINUUM_BRIDGE_REDUCTION_NOTE.md`
 
-These are the actual claim rows. This note is *not* one of them.
+These are the substantive claim rows. This note is *not* one of them, and its
+metadata certificate does not assign any grade to them.

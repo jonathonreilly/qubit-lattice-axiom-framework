@@ -8,6 +8,7 @@ elsewhere only in explicitly optional/packaging contexts.
 """
 from __future__ import annotations
 
+import hashlib
 import math
 import re
 import sys
@@ -21,6 +22,7 @@ NOTE_PATH = REPO_ROOT / NOTE_REL
 RUNNER_REL = Path("scripts/universal_qg_optional_textbook_comparison_meta_check.py")
 CACHE_REL = Path("logs/runner-cache/universal_qg_optional_textbook_comparison_meta_check.txt")
 TARGET_NAME = NOTE_REL.name
+EXPECTED_NOTE_SHA256 = "c55da42c9bd275697d8d5cc94272b24efe28a9c3ae494ac07adcd7ad40afabee"
 DOC_LINK_RE = re.compile(r"\[[^\]]+\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 
@@ -35,6 +37,10 @@ class CheckResult:
 def read(path: Path) -> str:
     with path.open(encoding="utf-8") as handle:
         return handle.read()
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def field(body: str, name: str) -> str:
@@ -96,10 +102,13 @@ def inbound_optional_contexts() -> tuple[bool, int, list[str]]:
 def main() -> int:
     body = read(NOTE_PATH)
     normalized_body = " ".join(body.split())
+    predicate_text = normalized_body.replace("`", "")
     results: list[CheckResult] = []
 
     status = field(body, "Status")
     authority = field(body, "Authority role")
+    audit_target = field(body, "Audit target")
+    status_authority = field(body, "Status authority")
     primary_runner = field(body, "Primary runner")
     runner_cache = field(body, "Runner cache")
 
@@ -109,6 +118,14 @@ def main() -> int:
         "A",
         body.startswith("# Universal QG Optional Textbook Comparison Note\n"),
         str(NOTE_REL),
+    )
+    note_sha = sha256(NOTE_PATH)
+    add(
+        results,
+        "Source note matches the reviewed byte-for-byte predicate surface",
+        "A",
+        note_sha == EXPECTED_NOTE_SHA256,
+        note_sha,
     )
     add(
         results,
@@ -121,7 +138,12 @@ def main() -> int:
         results,
         "Status field negates theorem, claim, and new authority roles",
         "A",
-        all(token in status.lower() for token in ("not", "theorem", "claim", "new authority surface")),
+        re.search(
+            r"\*\*not\*\*\s+a theorem,\s*claim,\s*or new authority surface",
+            status,
+            re.IGNORECASE,
+        )
+        is not None,
         status or "missing",
     )
     add(
@@ -130,6 +152,24 @@ def main() -> int:
         "A",
         authority.lower().startswith("zero"),
         authority or "missing",
+    )
+    add(
+        results,
+        "Audit target is the finite Z0-Z5 repository predicate only",
+        "A",
+        "finite repository predicate" in audit_target.lower()
+        and "z := z0 and ... and z5" in audit_target.lower()
+        and "no scientific proposition" in audit_target.lower(),
+        audit_target or "missing",
+    )
+    add(
+        results,
+        "Status authority remains with the independent audit lane",
+        "A",
+        "independent audit lane only" in status_authority.lower()
+        and "repository-state certificate" in status_authority.lower()
+        and "not an audit verdict" in status_authority.lower(),
+        status_authority or "missing",
     )
     add(
         results,
@@ -152,6 +192,49 @@ def main() -> int:
         "does not change this row's zero-authority role" in normalized_body
         and "does not assert an audit outcome" in normalized_body,
         "source-side cache metadata is not a status promotion",
+    )
+    z_labels = re.findall(r"^- `Z([0-5])`:", body, re.MULTILINE)
+    add(
+        results,
+        "Z0-Z5 are each declared exactly once",
+        "A",
+        z_labels == ["0", "1", "2", "3", "4", "5"],
+        ",".join(z_labels) or "missing",
+    )
+    add(
+        results,
+        "Finite closure certificate defines source and inbound predicates",
+        "A",
+        all(
+            marker in predicate_text
+            for marker in (
+                "S(N) to mean that N satisfies the source-local guards Z0-Z4",
+                "I(N,D) to mean that every current inbound occurrence",
+                "Z(N,D) := S(N) AND I(N,D)",
+                "excluding N itself and the entire docs/audit/ subtree",
+                "a passing run closes Z(N,D) for the checked checkout by finite inspection",
+            )
+        ),
+        "Z(N,D) source/inbound conjunction",
+    )
+    add(
+        results,
+        "Finite certificate disclaims all physics-grade implications",
+        "A",
+        "neither assumes nor establishes the truth, completeness, or audit grade"
+        in predicate_text
+        and "metadata certificate does not assign any grade" in predicate_text,
+        "physics and audit-grade firewall present",
+    )
+    add(
+        results,
+        "Finite certificate states executable falsifiers",
+        "A",
+        "certificate is falsified if any source-local guard fails" in predicate_text
+        and "acquires a markdown dependency edge" in predicate_text
+        and "Any edit to this source" in predicate_text
+        and "invalidates the Z4 source pin" in predicate_text,
+        "source pin, edge, inbound-context, and Z4 falsifiers present",
     )
     add(
         results,

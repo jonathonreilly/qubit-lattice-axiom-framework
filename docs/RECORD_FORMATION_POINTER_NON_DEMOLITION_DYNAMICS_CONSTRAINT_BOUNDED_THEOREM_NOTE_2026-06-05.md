@@ -103,13 +103,13 @@ In that model the following hold.
    fragments it acts on. This is a destructive nonlocal control, not a proof
    that every nonlocal record channel must fail.
 
-4. **Transfer-class consequence.** Any downstream transfer step that has been
-   independently established to possess a conserved charge/pointer, for
-   example a number-conserving reflection-positive OS transfer `T = exp(-H)`
-   with `[T, Q] = 0`, lies in the pointer-conserving class. This row verifies
-   the finite algebraic membership condition in the runner; it does not cite or
-   prove that a physical framework OS transfer has the nontrivial
-   fragment-imprinting channel needed to form redundant records.
+4. **Transfer-sector consequence.** A downstream nonunitary transfer operator
+   `T = exp(-H)` with `[T, Q] = 0` is block diagonal in the charge sectors.
+   This does not imply unitary-style all-state population persistence:
+   normalized sector weights can change when `T` has different eigenvalues in
+   different sectors. The runner verifies both the block-diagonal membership
+   condition and an explicit normalized-weight counterexample. It does not
+   prove reflection positivity or a physical fragment-imprinting channel.
 
 This is **bounded** because the quantum-Darwinism identification of a *record*
 (a redundant, objective, persistent imprint of a system observable) is a model
@@ -169,9 +169,10 @@ is conditional on the explicit bounded bridges and hypotheses above.
   Hermitian generators `H_log` with `[H_log, Pi_S] != 0`, and the runner gives
   a separate globally noncommuting unitary that agrees with controlled-NOT on
   every input `|psi_S>|0_E>` and forms the same fresh-fragment record.
-- It does not use OS-transfer membership as a record-formation proof. A
-  conserved-charge OS transfer is only in the pointer-conserving class; a
-  physical record channel still has to be supplied or proved separately.
+- It does not use OS-transfer membership as a record-formation or
+  pointer-population-persistence proof. Commutation makes a nonunitary
+  transfer charge-sector block diagonal, but normalized sector populations
+  need not persist; a physical record channel remains separate.
 - It does not establish the lattice/continuum or interacting-field
   generalization; the theorem is on the explicit finite model.
 - It does not identify the gauge-invariant algebra of the companion timeless
@@ -233,14 +234,14 @@ The runner verifies, on the explicit `S + E_1..E_4` model plus a minimal
    `exp(-i H_log) = U` exactly and `||[H_log, Pi_S]|| = 2 sqrt(2) pi != 0`,
    while a separate globally noncommuting unitary agrees with controlled-NOT
    on the complete fresh-fragment input subspace and forms the same record;
-7. the all-state pointer-persistence class and construction controls:
+7. the all-state unitary pointer-persistence class and construction controls:
    `[U, Pi_S] = 0` is checked for the controlled-copy step, a nontrivial
    fragment-imprinting channel is required for sufficiency, and a specific
    non-local env-env scramble erases the acted-on singleton records while
    injecting excess pairwise correlation `I(E_a:E_b) > H_S`; a supplied positive
-   number-conserving OS-style transfer block `T = exp(-H)` commutes with the
-   conserved charge, which is a transfer-class membership check rather than a
-   record-formation proof;
+   number-conserving Euclidean-style transfer block `T = exp(-H)` commutes with
+   the conserved charge and is therefore charge-sector block diagonal, while
+   an exact two-sector example shows its normalized sector weights change;
 8. the coupling/magnitude/`beta` are not pinned (any `g > 0` works);
 9. this source note keeps the dynamics, action, coupling, and `beta=6` claims
    out of scope.
@@ -254,5 +255,5 @@ python3 scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
 Expected result:
 
 ```text
-SUMMARY: PASS=55 FAIL=0
+SUMMARY: PASS=56 FAIL=0
 ```

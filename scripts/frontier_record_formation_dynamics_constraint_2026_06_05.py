@@ -5,11 +5,9 @@ qubit lattice patch.
 Temporal sequel to the timeless gauge-STRUCTURE corollary
 (`TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05`,
 the two-endpoint Gauss-law companion): that result constrains the gauge-invariant *algebra* at a
-fixed time. Here we ask what the Record axiom -- additivity of the record
-readout over disjoint record collections -- plus its dynamical realization
-(quantum Darwinism: an objective record is redundantly imprinted on many
-disjoint environment fragments) plus persistence (decoherence-stability)
-imposes on the transfer step U / T that FORMS the record.
+fixed time. Here we separate exact all-state unitary pointer-persistence
+criteria from one supplied quantum-Darwinism controlled-copy construction and
+from the weaker charge-sector block diagonality of a nonunitary transfer.
 
 Framework anchors (named axioms, MINIMAL_AXIOMS_2026-06-29.md):
   - Qubit: per-site possibility domain with algebraic presentation M_2(C).
@@ -860,16 +858,13 @@ def main() -> int:
            f"I(E_1:E_2)={pair_12:.4f}, excess={excess:.4f}")
 
     # -----------------------------------------------------------------------
-    section("Part 8: supplied conserved-charge transfer block class check")
+    section("Part 8: supplied conserved-charge transfer block check")
     # -----------------------------------------------------------------------
-    # A supplied OS-style transfer block T = exp(-H) built from a
-    # reflection-positive, number-/charge-conserving action has the
-    # all-state-persistence signature: a conserved pointer/charge observable that
-    # commutes with T.
-    # Model T by a positive, Hermitian (=> reflection-symmetric in the simplest
-    # case) transfer operator that commutes with a conserved charge Q. This is a
-    # finite class-membership check only; it is not a proof that any physical
-    # framework OS transfer also supplies the fragment-imprinting record channel.
+    # A supplied Euclidean-style transfer block T=exp(-H) that commutes with Q
+    # is block diagonal in the charge sectors. Unlike a unitary U, nonunitary T
+    # need not preserve normalized sector populations: different sectors can be
+    # rescaled by different positive eigenvalues. We check both facts. This is
+    # not a proof of reflection positivity or a physical record channel.
     Q = op(SZ, 0, n)  # the conserved charge / pointer playing Pi_S's role
     # A number-conserving local transfer block: diagonal-in-charge hops.
     H_T = (op(SZ, 0, n) @ op(SZ, 1, n)
@@ -884,9 +879,33 @@ def main() -> int:
     eig_T = np.linalg.eigvalsh(T_eucl)
     record("supplied transfer block: Euclidean-style transfer e^{-H} is positive",
            np.all(eig_T > 0), f"min eig = {eig_T.min():.4f}")
-    record("supplied transfer block: commutes with the conserved charge => lies in the all-state persistence class",
+    record("supplied transfer block: commutes with the conserved charge => charge-sector block diagonal",
            np.linalg.norm(comm(T_eucl, Q_total)) < 1e-10,
            f"||[T,Q_tot]||={np.linalg.norm(comm(T_eucl, Q_total)):.2e}")
+
+    # Exact boundary counterexample on the active two-qubit block. |00> is an
+    # H_T eigenstate with eigenvalue 1, while |s>=(|01>+|10>)/sqrt(2) has
+    # eigenvalue 0. The normalized T=e^{-H_T} image therefore changes the two
+    # sector weights from (1/2,1/2) to (e^{-2},1)/(1+e^{-2}).
+    H_T2 = (np.kron(SZ, SZ)
+            + 0.5 * (np.kron(SX, SX) + np.kron(SY, SY)))
+    w2, V2 = np.linalg.eigh(H_T2)
+    T2 = (V2 * np.exp(-w2)) @ V2.conj().T
+    ket00 = np.kron(KET0, KET0)
+    ket01 = np.kron(KET0, np.array([0.0, 1.0], dtype=complex))
+    ket10 = np.kron(np.array([0.0, 1.0], dtype=complex), KET0)
+    sym_zero = (ket01 + ket10) / np.sqrt(2.0)
+    psi_sectors = (ket00 + sym_zero) / np.sqrt(2.0)
+    out_sectors = T2 @ psi_sectors
+    out_sectors = out_sectors / np.linalg.norm(out_sectors)
+    plus2_weight = float(abs(np.vdot(ket00, out_sectors)) ** 2)
+    zero_weight = float(abs(np.vdot(sym_zero, out_sectors)) ** 2)
+    expected_plus2 = float(np.exp(-2.0) / (1.0 + np.exp(-2.0)))
+    record("nonunitary boundary: charge-sector commutation does NOT preserve normalized sector weights",
+           abs(plus2_weight - expected_plus2) < 1e-12
+           and abs(zero_weight - (1.0 - expected_plus2)) < 1e-12
+           and abs(plus2_weight - 0.5) > 0.1,
+           f"weights (1/2,1/2) -> ({plus2_weight:.6f},{zero_weight:.6f})")
 
     # -----------------------------------------------------------------------
     section("Part 9: NOT pinned -- coupling strength / action magnitude / beta")
@@ -918,7 +937,7 @@ def main() -> int:
             "says **nothing** about `beta = 6`",
             "does not derive the quantum-Darwinism bridge",
             "does not claim that either generator-level",
-            "does not use OS-transfer membership as a record-formation proof",
+            "does not use OS-transfer membership as a record-formation",
             "does not establish the lattice/continuum or interacting-field",
         ]:
             record(f"source-note firewall present: {phrase[:48]}...", phrase in text)
@@ -982,9 +1001,10 @@ BOUNDED ALGEBRAIC RESULTS, with explicit scope:
     (c) its local single-fragment sum produces independent conditional copies;
         a specific non-local env-env scramble erases the acted-on singleton
         records and injects EXCESS pairwise correlation I(E_a:E_b) > H_S,
-    (d) a supplied number-conserving reflection-positive OS-style transfer
-        block T = e^{-H} with [T,Q]=0 lies in the all-state conserved-charge
-        class. The runner does not establish reflection positivity itself.
+    (d) a supplied Euclidean-style transfer block T=e^{-H} with [T,Q]=0 is
+        charge-sector block diagonal. It need not preserve normalized sector
+        weights; the runner gives an exact counterexample and does not establish
+        reflection positivity itself.
 
   Relative to the two-endpoint Gauss-law gauge-structure companion, this note
   adds exact all-state temporal commutator criteria and a separate sufficient
@@ -1011,8 +1031,9 @@ HONEST LIMITS (no over-claim):
     transfer-matrix magnitude, or beta=6. It proves all-state conservation
     criteria and tests one explicit local controlled-copy channel as a
     sufficient record-writing construction.
-  - It does NOT prove that a physical framework OS transfer writes records.
-    Part 8 checks only conserved-charge transfer-class membership.
+  - It does NOT prove that a physical framework OS transfer writes records or
+    preserves normalized charge-sector populations. Part 8 checks block
+    diagonality and exhibits the nonunitary population-change boundary.
   - Pointer non-demolition is necessary and sufficient for all-state pointer
     persistence -- at the FLOW level for the generator ([H,Pi_S]=0, Part 6b)
     and at the STEP level for the unitary ([U,Pi_S]=0, Part 6d). The

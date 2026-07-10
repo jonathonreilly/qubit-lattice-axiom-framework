@@ -182,14 +182,22 @@ term_families:
     authority: docs/ai_methodology/skills/no-go-discipline/SKILL.md
     scope_tag: audit_physics_process
     values:
-      partial_attempt_with_named_untested_routes:
+      partial-attempt-with-named-untested-routes:
         definition: "Records the tested work while naming alternative routes that remain untested."
-      partial_narrowing:
+      partial-narrowing:
         definition: "Narrows the claim to the portion actually supported by the restricted packet."
-      bounded_with_corrected_wall_count:
+      bounded-with-corrected-wall-count:
         definition: "Retains only the bounded wall set that survives the independence audit."
-      stretch_attempt_with_honest_residual:
+      stretch-attempt-with-honest-residual:
         definition: "Preserves a useful stretch attempt while stating the unresolved residual explicitly."
+
+  no_go_discipline_invalidation:
+    description: "Audit invalidation reason used when negative authority predates the structured N1-N8 gate."
+    authority: docs/audit/scripts/invalidate_stale_audits.py
+    scope_tag: audit_physics_process
+    values:
+      no_go_discipline_packet_missing:
+        definition: "A clean negative-boundary audit has no structured N1-N8 packet; archive it and return the row to fresh audit before it can remain authoritative."
 
   independence:
     description: "Adversarial-review independence tier between auditor and author. auditor ≠ author required."

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 394,
+    "critical": 393,
     "high": 266,
     "leaf": 755,
     "medium": 512
@@ -857,34 +857,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_confinement_string_tension.py",
       "transitive_descendants": 114
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
-      "claim_scope": "On the cited color-algebra and Record-axiom surface, register-not-read does not by itself select kappa_EW = 0; only the exact Fierz decomposition and adjoint channel-count fraction are established.",
-      "claim_type": "open_gate",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "rconn_derived_note",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "graph_first_su3_integration_note",
-        "native_gauge_closure_note",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 16,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.044,
-      "note_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_rconn_kappa_ew_register_not_read.py",
-      "transitive_descendants": 65
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -57645,6 +57617,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 215,
-  "total_pending": 1927
+  "ready_count": 214,
+  "total_pending": 1926
 }

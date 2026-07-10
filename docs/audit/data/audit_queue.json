@@ -1,7 +1,7 @@
 {
   "by_criticality": {
-    "critical": 430,
-    "high": 249,
+    "critical": 429,
+    "high": 250,
     "leaf": 746,
     "medium": 495
   },
@@ -1608,30 +1608,6 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_kraus_choi_normalization_reconciled_2026_06_05.py",
       "transitive_descendants": 450
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
-      "claim_scope": "Canonical projective-measurement Kraus selection K_r=P_r, including phase/permutation equivalence and failure under genuine outcome-sector mixing, on a finite-dimensional qubit-lattice region carrier.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.814,
-      "note_path": "docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py",
-      "transitive_descendants": 449
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -14122,6 +14098,32 @@
       "ready": true,
       "runner_path": "scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py",
       "transitive_descendants": 27
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint_after_invalidation",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+        "yt_source_action_support_packet_note_2026-05-22"
+      ],
+      "direct_in_degree": 13,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.959,
+      "note_path": "docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py",
+      "transitive_descendants": 21
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",

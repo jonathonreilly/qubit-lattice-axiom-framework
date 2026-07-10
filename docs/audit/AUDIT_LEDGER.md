@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 931 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1753 |
+| unaudited | 1754 |
 | audit_in_progress | 5 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 33 |
+| ~~audited_renaming~~ | 32 |
 | ~~audited_conditional~~ | 134 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -71,14 +71,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 17 |
-| `audited_clean` | 1338 |
+| `audit_in_progress` | 16 |
+| `audited_clean` | 1339 |
 | `audited_conditional` | 134 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 33 |
-| `unaudited` | 2100 |
+| `audited_renaming` | 32 |
+| `unaudited` | 2101 |
 
 | claim_type | count |
 |---|---:|
@@ -152,7 +152,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-current | C | - |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-current | B | - |
 | `lattice_nn_light_cone_note` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -890,6 +889,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lp_two_band_exact_completion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1781,7 +1781,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | weak | codex-current | F | - |
 | `yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
-| `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 
 
 ## Audit findings (full)
@@ -13295,6 +13294,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The load-bearing step is a first-principles finite-matrix computation from the stated Harper cell: the runner constructs H(+B), H(0), H(-B), H1, and H2 and compares the finite-difference response with the full second-order divided-difference PT sum. Expected chi values are not hard-coded; the predecessor deviations are printed as retained bounded provenance and are not used as the proof of the new PT agreement. The finite-B and non-flux-quantized caveats are disclosed, so the conclusion does not overclaim a strict B->0, flux-quantized, continuum, or boundary-root result.
 - **auditor confidence:** high
 
+### `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For finite-dimensional H_sys with a complete family of nonzero orthogonal projectors and fixed canonical apparatus preparation/readout, K_r=P_r; pure outcome phases and permutations preserve the instrument up to phase or relabeling, while label-mixing rows change the corresponding POVM element to the stated unistochastic mixture.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00014-lsp_projective_canonical_kp_`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Contracting the canonical isometry with the apparatus outcome bra gives K_r=P_r, while orthogonality reduces a twisted operator to K_r†K_r=Σ_s|⟨r|V_A|s⟩|²P_s.  _(class `A`)_
+- **chain closes:** True — The canonical identity and the label-mixing result follow directly from contraction, projector orthogonality, completeness, and finite-dimensional isometry extension. No measurement axiom, empirical input, or unresolved authority is needed for this explicitly conditional scope.
+- **rationale:** The load-bearing steps are genuine finite-dimensional algebraic closures rather than definitions, renamings, or imported numerical matches. The supplied runner source actually constructs the projectors, isometry, Kraus operators, twists, and zero-projector cases using exact symbolic and independent numerical calculations, with 53 checks passing and no hard-coded contested conclusion. The randomized tests are supplementary; the inline orthogonality argument proves the general scoped statement.
+- **auditor confidence:** high
+
 ### `m2_tensor_d4_dimension_256_bounded_note_2026-05-26`
 
 - **Note:** [`M2_TENSOR_D4_DIMENSION_256_BOUNDED_NOTE_2026-05-26.md`](../../docs/M2_TENSOR_D4_DIMENSION_256_BOUNDED_NOTE_2026-05-26.md)
@@ -22952,22 +22964,6 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **open / conditional deps cited:**
   - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
   - `YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md`
-- **auditor confidence:** high
-
-### `yt_lsp_signed_record_source_readout_support_note_2026-05-24`
-
-- **Note:** [`YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-block Pauli joint-projector algebra, its signed coordinate readout, and the compositional exponential RN family, restricted to source-side support with no Higgs or Yukawa identification.
-- **audit_status:** ~~audited_renaming~~
-- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-yt_lsp_signed_record_sou-048`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** The packet-level signed record epsilon_x is identified with the coordinate function on the LSP joint Pauli spectral outcome set because the record sample space is defined to be that outcome set.  _(class `F`)_
-- **chain closes:** False — The cited inputs separately provide a signed-record carrier and a canonical Pauli projective readout, but none independently establishes that the pre-existing packet record is generated by that readout. The note obtains the equality by defining the two carriers to be the same and reusing epsilon_x.
-- **rationale:** The projector, joint-spectrum, RN-score, and source-composition calculations are valid algebraic checks once the shared carrier is stipulated. The load-bearing source-to-readout edge, however, is introduced by declaring the source-record space to be the Pauli spectral outcome set rather than derived from an independent authority. The runner verifies this declaration through strings and fixed finite algebra but does not establish the provenance of the packet-level record.
-- **open / conditional deps cited:**
-  - `LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`
-  - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
 - **auditor confidence:** high
 
 ### `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`

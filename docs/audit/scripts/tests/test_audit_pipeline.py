@@ -2554,6 +2554,12 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "The admission cannot be discharged.",
             "The obstruction is not resolved.",
             "The obstruction has not been resolved.",
+            "No derivation closes the remaining boundary.",
+            "No anomaly mechanism within these scopes can close the obstruction.",
+            "No finite truncation can close the boundary.",
+            "No compute frontier closes the structural gap.",
+            "No published path supplies the missing selector.",
+            "No retained operator determines the readout.",
         ):
             with self.subTest(body=body):
                 self.assertTrue(

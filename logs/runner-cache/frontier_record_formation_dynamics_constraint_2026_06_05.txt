@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
-runner_sha256: 2b93f9bcff092228d5989d52ee5ab72858a8f7b4a6127742d92c82f52aae8c74
+runner_sha256: 7ede61bde4b0f76e929522a16f1ebc02bb83e571bf10c0c8573d2e9a9a9cd66a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.29
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -28,7 +28,8 @@ PASS non-demolition: system pointer populations preserved by recording :: pops=[
 ------------------------------------------------------------------------------
 Part 2: ADDITIVITY of the record readout over disjoint fragments
 ------------------------------------------------------------------------------
-PASS Record axiom additivity (record-mass): I(F1 U F2) = I(F1) + I(F2) :: 2.0894 = 1.0447 + 1.0447
+PASS two-functional bridge: I_mass(F1 U F2) - J(F1 U F2) = (m-1)*H_S (all three computed independently) :: 2.0894 - 0.5224 = 3*0.5224
+PASS recoverable content J is strictly SUB-additive (saturation, NOT additivity): J(F1 U F2) = J(F1) = J(F2) = H_S :: J(F1)=0.5224, J(F2)=0.5224, J(union)=0.5224, sum-minus-union=0.5224
 PASS additivity is consistent: recovered pointer info saturates at H_S (no super-additivity) despite redundant copies :: I(S:F1F2)=0.5224=H_S, record-mass=2.0894=4*H_S
 PASS objectivity: every pair of fragments shares exactly the pointer record H_S (one consistent value) :: pairwise I = [0.5224, 0.5224, 0.5224, 0.5224, 0.5224, 0.5224] (H_S=0.5224)
 
@@ -61,8 +62,8 @@ PASS demolition control: fragments do NOT objectively agree on Pi_S :: pairwise 
 Part 6: MONOTONE LINK -- redundancy vs the non-demolition norm
 ------------------------------------------------------------------------------
 PASS sweep: theta=0 (non-demolition) maximizes objective-record quality :: quality(theta=0)=0.5224, max=0.5224
-PASS sweep: objective-record quality decreases as ||[H,Pi_S]|| grows :: q=[0.522, 0.371, 0.244, 0.175, 0.138, 0.104, 0.061, 0.02, 0.0] vs ||c||=[0.0, 4.414, 8.659, 12.571, 16.0, 18.814, 20.905, 22.193, 22.627]
-PASS sweep: only the zero-commutator endpoint gives a perfect record (quality = H_S at theta=0, degraded elsewhere) :: q[0]=0.5224=H_S, q[-1]=0.0000
+PASS sweep: objective-record quality decreases as ||[H,Pi_S]|| grows :: q=[0.522, 0.371, 0.244, 0.175, 0.138, 0.104, 0.061, 0.02, -0.0] vs ||c||=[0.0, 4.414, 8.659, 12.571, 16.0, 18.814, 20.905, 22.193, 22.627]
+PASS sweep: only the zero-commutator endpoint gives a perfect record (quality = H_S at theta=0, degraded elsewhere) :: q[0]=0.5224=H_S, q[-1]=-0.0000
 
 ------------------------------------------------------------------------------
 Part 6b: POINTER-CONSERVATION IFF for [H,Pi_S]=0 (random-H theorem)
@@ -77,6 +78,16 @@ PASS QND-alone counterexample: H=0 commutes with Pi_S but writes no fragment rec
 PASS QND-alone counterexample: system-only pointer phase commutes but does not imprint E :: max I=1.11e-16
 PASS QND-alone counterexample: nonzero commuting S-E interaction with E in an eigenstate writes no fragment record :: ||H||=5.66, max I=1.11e-16
 PASS sufficiency construction needs both QND and nonzero controlled S-to-E imprint :: controlled min I=0.5224; zero max I=0.00e+00; eigenstate max I=1.11e-16
+
+------------------------------------------------------------------------------
+Part 6d: STEP-LEVEL iff [U,Pi_S]=0 and the noncommuting-log witness
+------------------------------------------------------------------------------
+PASS step-level sufficiency: any random U with [U,Pi_S]=0 preserves pointer populations for all sampled states :: failures = 0/60
+PASS step-level necessity: every random U with [U,Pi_S]!=0 moves some state's pointer population :: detected 60/60 non-commuting samples
+PASS witness: exp(-i H_log) reproduces the controlled-NOT step exactly :: ||exp(-iH_log)-CNOT|| = 2.47e-15
+PASS witness: the generator fails to commute, ||[H_log,Pi_S]|| = 2*sqrt(2)*pi :: ||[H_log,Pi_S]|| = 8.885766 (2*sqrt(2)*pi = 8.885766)
+PASS witness: the step itself commutes, [CNOT, Pi_S] = 0 (step-level QND holds) :: ||[CNOT,Pi_S]|| = 0.00e+00
+PASS witness: the CNOT step forms the full fresh-fragment record and preserves the pointer populations :: J = 0.522361 = H_S = 0.522361; pops preserved
 
 ------------------------------------------------------------------------------
 Part 7: FORCED-CLASS structure -- conserved pointer + imprint + locality
@@ -125,13 +136,25 @@ GENUINE CONSTRAINT, with explicit scope:
 
     - Positive controlled-copy construction (Parts 1-4): the explicit nonzero
       local Hamiltonian H = g sigma_z(S) x sum_k sigma_x(E_k), at
-      t = pi/(4g), forms a perfect redundant additive persistent objective
-      record: R_delta = n_env, plateau = H_S, finished idle fragments persist,
-      and fragments objectively agree.
+      t = pi/(4g), forms a perfect redundant persistent objective record:
+      R_delta = n_env, plateau = H_S, finished idle fragments persist, and
+      fragments objectively agree. Two record functionals are kept distinct:
+      the record-mass I_mass(F) = sum_k J({k}) is the axiom's additive
+      readout over disjoint records, while the recoverable pointer content
+      J(F) SATURATES at H_S (strictly sub-additive; bridge identity
+      I_mass - J = (m-1) H_S on the plateau, Part 2).
 
     - QND-alone counterexamples (Part 6c): H=0, a system-only pointer phase,
       and a nonzero commuting S-E interaction with E held in an eigenstate
       conserve Pi_S but write no environment record.
+
+    - Step-level iff + noncommuting-log witness (Part 6d): for a single step
+      U, all-state pointer persistence holds IFF [U,Pi_S]=0 (60/60 both
+      directions). The controlled-NOT step has [CNOT,Pi_S]=0, forms the full
+      fresh-fragment record, and admits a Hermitian generator H_log with
+      exp(-i H_log) = CNOT exactly and ||[H_log,Pi_S]|| = 2*sqrt(2)*pi != 0:
+      generator-level commutation [H_int,Pi_S]=0 is the continuous-flow
+      condition (Part 6b), NOT a property forced by one record-forming step.
 
     - Demolition controls (Parts 5-6): a noncommuting sigma_x(S) handle records
       the wrong observable, collapses redundancy, makes the pointer populations
@@ -181,14 +204,18 @@ HONEST LIMITS (no over-claim):
   - It does NOT prove that a physical framework OS transfer writes records.
     Part 8 checks only conserved-charge transfer-class membership.
   - Pointer non-demolition is necessary and sufficient for all-state pointer
-    persistence; it is not by itself sufficient for record formation. The
-    lattice/continuum and interacting generalization is NOT established here.
+    persistence -- at the FLOW level for the generator ([H,Pi_S]=0, Part 6b)
+    and at the STEP level for the unitary ([U,Pi_S]=0, Part 6d). The
+    generator-level condition is NOT forced by a single record-forming step
+    (noncommuting-logarithm witness, Part 6d); it is not by itself sufficient
+    for record formation either. The lattice/continuum and interacting
+    generalization is NOT established here.
   - We do NOT claim 'derived the action' or 'derived the dynamics'. We claim a
     pointer-conservation constraint and a controlled-copy sufficient
     construction on the explicit system, given the Darwinism bridge.
 
 ==============================================================================
-SUMMARY: PASS=46 FAIL=0
+SUMMARY: PASS=53 FAIL=0
 ==============================================================================
 
 ----- stderr -----

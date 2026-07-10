@@ -22,8 +22,10 @@ Framework anchors (named axioms, MINIMAL_AXIOMS_2026-06-05.md):
 
 The runner is fully self-contained (numpy only), uses <= 6 qubits, exact dense
 operators, and emits a PASS/FAIL self-check. It proves the Heisenberg
-pointer-conservation iff separately from the sufficient controlled-copy
-recording construction; it does NOT claim that arbitrary commuting Hamiltonians
+pointer-conservation iff at the flow level, the step-level iff [U,Pi_S]=0
+(with a noncommuting-Hermitian-logarithm CNOT witness: generator-level
+commutation is NOT forced by one step), separately from the sufficient
+controlled-copy recording construction; it does NOT claim that arbitrary commuting Hamiltonians
 write redundant fragments, derive an action, fix a coupling, or beta=6. See the
 verdict block at the end and the companion note for the firewall.
 
@@ -348,50 +350,54 @@ def main() -> int:
     # -----------------------------------------------------------------------
     section("Part 2: ADDITIVITY of the record readout over disjoint fragments")
     # -----------------------------------------------------------------------
-    # Record axiom realization: define the record readout of a fragment F as
-    # the recovered pointer information J(F) := holevo_pointer_info(S,F). The
-    # *axiom-faithful* additivity statement is over the DEPHASED (classical
-    # record) state: once the dynamics has decohered S in the pointer basis,
-    # the joint readout of disjoint fragments is the sum of the parts, because
-    # each fragment certifies the SAME classical pointer value (perfectly
-    # correlated copies => the classical readout is set-additive: the
-    # information is "the pointer is k", counted once per disjoint collection
-    # with consistent value, and the JOINT recovered information saturates at
-    # H_S with no super-additive surprise).
+    # Two DISTINCT record functionals -- do not conflate (post-audit repair):
     #
-    # Operationally we test the additivity the Record axiom asserts: define the
-    # additive readout I_add(F) on the dephased state as the CLASSICAL
-    # correlation J(S:F) restricted to the pointer; the axiom is
-    #   I_add(F1 sqcup F2) = I_add(F1) + I_add(F2)
-    # for fragments F1,F2 carrying INDEPENDENT records of the pointer. For a
-    # non-demolition channel where each E_k records via an independent ancilla,
-    # the dephased fragment states factorize given the pointer, so the readout
-    # is additive. We verify additivity of the conditional fragment entropies
-    # (the genuinely additive functional), and that the recovered pointer info
-    # saturates (no super-additivity): the classical plateau.
+    #   J(F) := holevo_pointer_info(S, F) -- the recoverable pointer content
+    #       of a fragment F: dephase S in the pointer basis, take the S<->F
+    #       mutual information (= Holevo content of the pointer ensemble). On
+    #       redundant perfect copies J SATURATES: J(F1 u F2) = J(F1) = J(F2)
+    #       = H_S. It is strictly SUB-additive, NOT additive: reading two
+    #       copies of the same registered fact yields the fact once.
     #
-    # We test the record-mass functional I_mass(F) = sum_{k in F} J({k}),
-    # where J({k}) = I(S:E_k) on the dephased (classical-record) state. The
-    # Record axiom's literal additivity over disjoint collections of records
-    # is I_mass(F1 sqcup F2) = I_mass(F1) + I_mass(F2), which is exact for any
-    # disjoint partition by construction; the NON-trivial physical content is
-    # that this set-additive readout is CONSISTENT (objective) only because
-    # every fragment certifies the SAME pointer value -- verified below.
+    #   I_mass(F) := sum_{k in F} J({k}) -- the scalar record readout over
+    #       the disjoint singleton records {k}. THIS is the functional the
+    #       Record axiom's additivity clause governs (additivity of the
+    #       readout over finite pairwise-disjoint record collections).
+    #
+    # The bridge between the two at the perfect-recording plateau is exact
+    # and NON-trivial:
+    #   I_mass(F1 u F2) - J(F1 u F2) = (m - 1) * H_S   (m disjoint fragments)
+    # -- the surplus counts the SAME registered pointer fact once per disjoint
+    # record (redundancy), not additional pointer content. The gates below
+    # compute I_mass, J, and H_S INDEPENDENTLY and check the bridge identity
+    # and the strict sub-additivity; a tautological I_mass-vs-sum-of-J gate
+    # (which would hold by definition) is deliberately NOT used as evidence.
 
     P0 = op(PROJ0, 0, n)
     P1 = op(PROJ1, 0, n)
     rho_nd_deph = P0 @ rho_nd @ P0 + P1 @ rho_nd @ P1
 
     J = {k: mutual_information(rho_nd_deph, [0], [k], n) for k in range(1, n)}
-    # disjoint pair additivity of the *record-mass* functional I_mass(F)=sum_k in F J({k})
-    # (the Record axiom's literal additivity over disjoint collections of records)
     F1, F2 = [1, 2], [3, 4]
-    I_mass_F1 = sum(J[k] for k in F1)
-    I_mass_F2 = sum(J[k] for k in F2)
+    m_frag = len(F1 + F2)
+    # record-mass = sum of singleton readouts (the axiom's additive readout);
+    # recoverable content J(F) = JOINT dephased mutual information (saturates).
     I_mass_union = sum(J[k] for k in F1 + F2)
-    record("Record axiom additivity (record-mass): I(F1 U F2) = I(F1) + I(F2)",
-           abs(I_mass_union - (I_mass_F1 + I_mass_F2)) < 1e-9,
-           f"{I_mass_union:.4f} = {I_mass_F1:.4f} + {I_mass_F2:.4f}")
+    J_F1 = mutual_information(rho_nd_deph, [0], F1, n)
+    J_F2 = mutual_information(rho_nd_deph, [0], F2, n)
+    J_union = mutual_information(rho_nd_deph, [0], F1 + F2, n)
+    record("two-functional bridge: I_mass(F1 U F2) - J(F1 U F2) = (m-1)*H_S "
+           "(all three computed independently)",
+           abs((I_mass_union - J_union) - (m_frag - 1) * H_S_initial) < 1e-6,
+           f"{I_mass_union:.4f} - {J_union:.4f} = {m_frag - 1}*{H_S_initial:.4f}")
+    record("recoverable content J is strictly SUB-additive (saturation, NOT "
+           "additivity): J(F1 U F2) = J(F1) = J(F2) = H_S",
+           abs(J_union - H_S_initial) < 1e-6
+           and abs(J_F1 - H_S_initial) < 1e-6
+           and abs(J_F2 - H_S_initial) < 1e-6
+           and (J_F1 + J_F2 - J_union) > 0.5 * H_S_initial,
+           f"J(F1)={J_F1:.4f}, J(F2)={J_F2:.4f}, J(union)={J_union:.4f}, "
+           f"sum-minus-union={J_F1 + J_F2 - J_union:.4f}")
 
     # The physically NON-trivial content of additivity: the recovered pointer
     # information about the H_S-bit pointer SATURATES at H_S (no
@@ -705,6 +711,86 @@ def main() -> int:
            f"eigenstate max I={max(info_env_eigenstate):.2e}")
 
     # -----------------------------------------------------------------------
+    section("Part 6d: STEP-LEVEL iff [U,Pi_S]=0 and the noncommuting-log witness")
+    # -----------------------------------------------------------------------
+    # The generator-level iff (Part 6b) is a statement about the continuous
+    # flow (all states, ALL TIMES). The single-step analogue is:
+    #     pointer populations preserved for ALL states by the step U
+    #        <=>  U^dag P_k U = P_k  <=>  [U, Pi_S] = 0.
+    # Certified over random unitaries both ways. Then the WITNESS: a perfect
+    # record-forming step (controlled-NOT) has [U, Pi_S] = 0 but admits a
+    # Hermitian generator H_log with [H_log, Pi_S] != 0 and exp(-i H_log) = U
+    # EXACTLY -- so generator-level commutation [H_int, Pi_S] = 0 is a flow
+    # property, NOT a necessary condition read off one finite record-forming
+    # step.
+
+    step_suff_fail = 0
+    for _ in range(60):
+        U_c = unitary(project_commutant(rand_herm(n)), 1.0)
+        psi = rand_state(n_env)
+        p0 = np.real(np.diag(partial_trace(density(psi), [0], n)))
+        p1 = np.real(np.diag(partial_trace(density(U_c @ psi), [0], n)))
+        if not np.allclose(p0, p1, atol=1e-8):
+            step_suff_fail += 1
+    record("step-level sufficiency: any random U with [U,Pi_S]=0 preserves "
+           "pointer populations for all sampled states",
+           step_suff_fail == 0, f"failures = {step_suff_fail}/60")
+
+    step_nec_detect = 0
+    step_nec_total = 0
+    for _ in range(60):
+        U_r = unitary(rand_herm(n), 1.0)
+        if np.linalg.norm(comm(U_r, Pi_S)) < 1e-9:
+            continue
+        step_nec_total += 1
+        D = U_r.conj().T @ P0_op @ U_r - P0_op
+        if np.max(np.abs(np.linalg.eigvalsh(D))) > 1e-9:
+            step_nec_detect += 1
+    record("step-level necessity: every random U with [U,Pi_S]!=0 moves some "
+           "state's pointer population",
+           step_nec_detect == step_nec_total and step_nec_total > 0,
+           f"detected {step_nec_detect}/{step_nec_total} non-commuting samples")
+
+    # The noncommuting-logarithm WITNESS on the minimal S+E pair:
+    # CNOT = P0(S) x I + P1(S) x X(E). Eigenspaces: -1 on |1,->, +1 elsewhere.
+    # H_log puts the pi branch on the -1 eigenvector and a 2*pi-shifted branch
+    # on a +1-eigenspace vector that MIXES the Pi_S sectors -- Hermitian,
+    # exponentiates to CNOT exactly, fails to commute with Pi_S.
+    n2q = 2
+    Pi_S2 = op(SZ, 0, n2q)
+    CNOT = np.kron(PROJ0, I2) + np.kron(PROJ1, SX)
+    ket1 = np.array([0.0, 1.0], dtype=complex)
+    minus = np.array([1.0, -1.0], dtype=complex) / np.sqrt(2.0)
+    plus = np.array([1.0, 1.0], dtype=complex) / np.sqrt(2.0)
+    v_m = np.kron(ket1, minus)
+    v_mix = (np.kron(KET0, KET0) + np.kron(ket1, plus)) / np.sqrt(2.0)
+    H_log = (np.pi * np.outer(v_m, v_m.conj())
+             + 2.0 * np.pi * np.outer(v_mix, v_mix.conj()))
+    U_from_log = unitary(H_log, 1.0)
+    record("witness: exp(-i H_log) reproduces the controlled-NOT step exactly",
+           np.linalg.norm(U_from_log - CNOT) < 1e-12,
+           f"||exp(-iH_log)-CNOT|| = {np.linalg.norm(U_from_log - CNOT):.2e}")
+    wit_comm = float(np.linalg.norm(comm(H_log, Pi_S2)))
+    record("witness: the generator fails to commute, ||[H_log,Pi_S]|| = 2*sqrt(2)*pi",
+           abs(wit_comm - 2.0 * np.sqrt(2.0) * np.pi) < 1e-9,
+           f"||[H_log,Pi_S]|| = {wit_comm:.6f} "
+           f"(2*sqrt(2)*pi = {2.0 * np.sqrt(2.0) * np.pi:.6f})")
+    record("witness: the step itself commutes, [CNOT, Pi_S] = 0 (step-level QND holds)",
+           float(np.linalg.norm(comm(CNOT, Pi_S2))) < 1e-12,
+           f"||[CNOT,Pi_S]|| = {float(np.linalg.norm(comm(CNOT, Pi_S2))):.2e}")
+    psi_w = kron_list([bloch_ket(SYS_THETA, SYS_PHI), KET0])
+    rho_w = density(CNOT @ psi_w)
+    J_w = holevo_pointer_info(rho_w, 0, [1], n2q)
+    H_S_w = pointer_entropy(rho_w, 0, n2q)
+    pops_w_before = np.real(np.diag(partial_trace(density(psi_w), [0], n2q)))
+    pops_w_after = np.real(np.diag(partial_trace(rho_w, [0], n2q)))
+    record("witness: the CNOT step forms the full fresh-fragment record and "
+           "preserves the pointer populations",
+           abs(J_w - H_S_w) < 1e-9 and H_S_w > 0.01
+           and np.allclose(pops_w_before, pops_w_after, atol=1e-12),
+           f"J = {J_w:.6f} = H_S = {H_S_w:.6f}; pops preserved")
+
+    # -----------------------------------------------------------------------
     section("Part 7: FORCED-CLASS structure -- conserved pointer + imprint + locality")
     # -----------------------------------------------------------------------
     # (i) Conserved pointer: [H_int, Pi_S]=0 => Pi_S commutes with U => Pi_S
@@ -847,13 +933,25 @@ GENUINE CONSTRAINT, with explicit scope:
 
     - Positive controlled-copy construction (Parts 1-4): the explicit nonzero
       local Hamiltonian H = g sigma_z(S) x sum_k sigma_x(E_k), at
-      t = pi/(4g), forms a perfect redundant additive persistent objective
-      record: R_delta = n_env, plateau = H_S, finished idle fragments persist,
-      and fragments objectively agree.
+      t = pi/(4g), forms a perfect redundant persistent objective record:
+      R_delta = n_env, plateau = H_S, finished idle fragments persist, and
+      fragments objectively agree. Two record functionals are kept distinct:
+      the record-mass I_mass(F) = sum_k J({k}) is the axiom's additive
+      readout over disjoint records, while the recoverable pointer content
+      J(F) SATURATES at H_S (strictly sub-additive; bridge identity
+      I_mass - J = (m-1) H_S on the plateau, Part 2).
 
     - QND-alone counterexamples (Part 6c): H=0, a system-only pointer phase,
       and a nonzero commuting S-E interaction with E held in an eigenstate
       conserve Pi_S but write no environment record.
+
+    - Step-level iff + noncommuting-log witness (Part 6d): for a single step
+      U, all-state pointer persistence holds IFF [U,Pi_S]=0 (60/60 both
+      directions). The controlled-NOT step has [CNOT,Pi_S]=0, forms the full
+      fresh-fragment record, and admits a Hermitian generator H_log with
+      exp(-i H_log) = CNOT exactly and ||[H_log,Pi_S]|| = 2*sqrt(2)*pi != 0:
+      generator-level commutation [H_int,Pi_S]=0 is the continuous-flow
+      condition (Part 6b), NOT a property forced by one record-forming step.
 
     - Demolition controls (Parts 5-6): a noncommuting sigma_x(S) handle records
       the wrong observable, collapses redundancy, makes the pointer populations
@@ -903,8 +1001,12 @@ HONEST LIMITS (no over-claim):
   - It does NOT prove that a physical framework OS transfer writes records.
     Part 8 checks only conserved-charge transfer-class membership.
   - Pointer non-demolition is necessary and sufficient for all-state pointer
-    persistence; it is not by itself sufficient for record formation. The
-    lattice/continuum and interacting generalization is NOT established here.
+    persistence -- at the FLOW level for the generator ([H,Pi_S]=0, Part 6b)
+    and at the STEP level for the unitary ([U,Pi_S]=0, Part 6d). The
+    generator-level condition is NOT forced by a single record-forming step
+    (noncommuting-logarithm witness, Part 6d); it is not by itself sufficient
+    for record formation either. The lattice/continuum and interacting
+    generalization is NOT established here.
   - We do NOT claim 'derived the action' or 'derived the dynamics'. We claim a
     pointer-conservation constraint and a controlled-copy sufficient
     construction on the explicit system, given the Darwinism bridge.

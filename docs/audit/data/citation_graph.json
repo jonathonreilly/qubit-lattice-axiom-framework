@@ -57794,11 +57794,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09"
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
     },
     {
       "from": "repo.repo_organization",
@@ -111970,11 +111970,11 @@
         "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8b617ce922e599d6d613a0328fd6b55017cc81d58dc8a483e25c9bfe36b07180",
+      "note_hash": "162bb51303909bab4ad0708c60e799058f05743455e408fe6862fc6d3823eebb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

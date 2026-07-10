@@ -302,6 +302,20 @@ check(
     "E2 source note disclaims audit-outcome authority",
     "does not set or predict an audit outcome" in flat_note,
 )
+check("E2 accepted-premise tag (P1a) is present", "(P1a)" in note_text)
+check("E2 accepted-premise tag (P1b) is present", "(P1b)" in note_text)
+check(
+    "E2 accepted-premise packet header is present",
+    "(P1) Joint-presentation accepted-premise packet." in note_text,
+)
+check(
+    "E2 dated 2026-07-10 Repair Note is present",
+    "## Repair Note (2026-07-10)" in note_text,
+)
+check(
+    "E2 accepted-premise packet status phrase is present",
+    "accepted-premise packet entry" in note_text,
+)
 forbidden_overclaims = [
     "closes " + "the",
     "only " + "route",

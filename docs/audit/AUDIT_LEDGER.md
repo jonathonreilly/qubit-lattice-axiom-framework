@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 932 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1841 |
+| unaudited | 1840 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 65 |
+| ~~audited_conditional~~ | 66 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1339 |
-| `audited_conditional` | 65 |
+| `audited_conditional` | 66 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2186 |
+| `unaudited` | 2185 |
 
 | claim_type | count |
 |---|---:|
@@ -1517,6 +1517,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_q_eq_3delta_identity_note_2026-04-21` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -11137,6 +11138,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Full signed-permutation O_h equivariance on the R^3 generation carrier forces invariant symmetric forms and equivariant operators to be scalar while moving the democratic direction, so the C_3 trivial/doublet value-bit carrier is erased rather than selected.  _(class `A`)_
 - **chain closes:** True — The restricted packet gives the full finite-group action and runner source, and the core statements follow from standard linear algebra for signed permutations: diagonal sign flips kill off-diagonal invariant form entries and permutations equalize diagonal entries, while the commutant is scalar. This proves the scoped O_h-carrier obstruction without importing an external physical identification.
 - **rationale:** The runner is not a print-only or tuned-value check: it explicitly constructs O_h and C_3, averages forms/operators over the group, verifies invariant dimensions, and checks the projector and commutant claims. Independent formula inventory agrees with the load-bearing identities: |O_h|=2^3*3!=48, the C_3 symmetric-form space is span{I,J-I}, O_h-invariant forms are lambda I, the O_h average of vv^T/||v||^2 is I/3, and scalar H anticommutes with Gamma only at H=0. The no-go is properly scoped and leaves C_3-level or other split-preserving routes open, so it is a closed obstruction only to full O_h equivariance on R^3.
+- **auditor confidence:** high
+
+### `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02`
+
+- **Note:** [`KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md`](../../docs/KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audit covered the on-site Pauli-bivector so(3,1) algebra, its chiral Weyl representation and massless kinetic-kernel covariance, the asserted faithful-versus-scalar selection, and the explicitly residual massive partner-chirality construction.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-koide_onsite_boost_recon-063`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The statistics-blind kernel numerator is asserted to have spin-1/2 one-particle content, so the rest-frame little-group Casimir excludes the scalar carrier and forces the faithful chiral Weyl carrier.  _(class `A`)_
+- **chain closes:** False — The finite Pauli, Clifford, Casimir, and massless-kernel covariance identities close. The selection does not: no supplied theorem derives on-shell Wigner spin-1/2 content merely from a nonzero traceless part of an inverse quadratic form, and the massive SO(3) rest-frame argument cannot establish the stated massless-chiral conclusion, whose little group has no rest frame.
+- **rationale:** The runner genuinely verifies the elementary bivector algebra, chiral Casimirs, and covariance of the massless kernel p0+p.sigma. Its load-bearing S5 selection is not computed: ok_scalar is hard-coded true and the selection check merely repeats ok_carrier, while S4 omits the massive numerator invoked in the argument. A reconstruction/intertwiner bridge establishing the claimed one-particle spin content without presupposing the Lorentz carrier is therefore still required.
+- **open / conditional deps cited:**
+  - `FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md`
+  - `FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION_CONDITIONAL_THEOREM_NOTE_2026-05-30.md`
 - **auditor confidence:** high
 
 ### `koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12`

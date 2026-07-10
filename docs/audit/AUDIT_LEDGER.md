@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1801 |
+| unaudited | 1800 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 86 |
+| ~~audited_conditional~~ | 87 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1348 |
-| `audited_conditional` | 86 |
+| `audited_conditional` | 87 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2146 |
+| `unaudited` | 2145 |
 
 | claim_type | count |
 |---|---:|
@@ -1551,6 +1551,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -15982,6 +15983,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For H=aI+bC+conj(b)C^2, Tr(pi_plus(H))=3a and Tr(pi_perp(H))=b Tr(C)+conj(b) Tr(C^2)=0, so tau_M(H)=Tr(H)=3a and the literal linear trace form cannot distinguish doublet amplitude.  _(class `A`)_
 - **chain closes:** True — The degeneracy follows from elementary C3 circulant algebra: C and C^2 are traceless, so the doublet part contributes zero to the linear trace functional. The runner's M1 subcheck verifies zero tau-minus-trace delta, C/C^2 tracelessness, and the separate BAE saddle ratio for the log-functional candidate; broader P-BAE primitive closure is excluded.
 - **rationale:** The no-go is local and exact: the proposed linear trace functional is just ordinary trace on Hermitian C3 circulants, hence it is blind to doublet amplitude at fixed a and cannot supply the required block-weight distinction. The proof does not need the open target proposal or review PR as authority; it follows from Tr(C)=Tr(C^2)=0 and the displayed decomposition. The runner's relevant M1 subtest passes and the note explicitly withholds any retained claim for the broader P-BAE primitive program.
+- **auditor confidence:** high
+
+### `primitive_p_lh_content_proposal_note_2026-05-10_pplh`
+
+- **Note:** [`PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md`](../../docs/PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** The note maps three proposed NCG selectors and, using a retained-bounded underdetermination result, correctly leaves SM-versus-Pati-Salam selection open on the accepted Cl(3)/Z^3 baseline; it admits no primitive or theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00012-primitive_p_lh_content_propo`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The current Cl(3)/Z^3 baseline admits both SM-like and Pati-Salam-like finite actions and does not determine the finite algebra, order-one condition, or KO-dimension-6 real structure required by the proposed NCG route.  _(class `B`)_
+- **chain closes:** False — The cited boundary supports only underdetermination of the NCG data on the current baseline. A framework-native derivation or approved registration of the finite algebra, order-one condition, and KO-dimension-6 real structure is still missing.
+- **rationale:** The retained-bounded authority substantively supports keeping the gate open, but it does not supply the missing NCG structures. Of the runner's 55 reported passes, only elementary Pauli and block-matrix identities are actually evaluated; decisive P-LH-1 and P-LH-3 conclusions are hard-coded or inferred from imposed algebra choices rather than a general order-one or Pati-Salam exclusion calculation. The packet therefore supports an honest conditional design map, not a framework-derived selector.
+- **open / conditional deps cited:**
+  - `P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md`
 - **auditor confidence:** high
 
 ### `q_integer_spectrum_theorem_note_2026-05-02`

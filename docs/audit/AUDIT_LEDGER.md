@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1744 |
+| unaudited | 1743 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 124 |
+| ~~audited_conditional~~ | 125 |
 | ~~audited_failed~~ | 13 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 15 |
 | `audited_clean` | 1355 |
-| `audited_conditional` | 124 |
+| `audited_conditional` | 125 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2091 |
+| `unaudited` | 2090 |
 
 | claim_type | count |
 |---|---:|
@@ -1617,6 +1617,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `theta_cartan_valued_cross_plane_pairing_diagonal_weyl_frame_theorems_and_triality_fractional_values_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -20150,6 +20151,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting N_W=(N_color+1)N_gen, T(F)=1/2, C_2(adj)=N_pair, and n_S=2 into the stated X4′ kernel yields b_2=(11/3)N_pair-(1/3)(N_color+1)N_gen-1/6.  _(class `A`)_
 - **chain closes:** False — The exact substitution closes once X4′ is assumed, but the restricted packet neither derives nor supplies a retained-grade authority for the load-bearing spin-sector coefficients 11/3, -2/3, and -1/6.
 - **rationale:** The runner genuinely verifies the SU(2) trace factors and all downstream rational algebra, with 20 successful class-A checks. However, it explicitly hard-codes the X4′ spin-sector coefficient table and labels it a boundary rather than deriving it. Restating that QFT kernel inside the note does not close the imported premise under the audit rubric, so the result remains conditional despite the correct arithmetic.
+- **auditor confidence:** high
+
+### `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`
+
+- **Note:** [`SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md`](../../docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** The conditional fixed-lattice implication that the standard 4D SU(3) fundamental-Wilson system has m_0++(6)>0 if a small-beta positive gap exists and no correlation-length divergence occurs through beta=6.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00003-su3_beta6_gap_bulk_criticali`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Since m(beta)=1/xi(beta), a zero gap at beta=6 would require a divergent correlation length, so the assumed absence of a second-order bulk critical point, together with a small-beta positive gap and no intervening divergence, implies m(6)>0.  _(class `A`)_
+- **chain closes:** False — The restricted packet does not prove the no-second-order-bulk-critical-point premise or supply a retained small-beta-gap-to-beta=6 propagation theorem. The transfer-kernel authorities establish bounded positivity inputs, not the required infinite-volume spectral-gap continuation.
+- **rationale:** The load-bearing implication is a valid algebraic reduction only after importing the explicitly open no-criticality and gap-continuation premises. The runner's ten passing checks are ancillary one-plaquette, toy-kernel, asymptotic, scope, and comparator diagnostics; none tests the missing physical Wilson-axis theorem. In particular, the finite positive-kernel illustration is not the infinite-volume SU(3) Wilson transfer spectrum, and the beta=6 string-tension comparison is class D evidence rather than closure.
+- **open / conditional deps cited:**
+  - `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`
+  - `AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `su3_bridge_pr525_flaw_fix_note_2026-05-05`

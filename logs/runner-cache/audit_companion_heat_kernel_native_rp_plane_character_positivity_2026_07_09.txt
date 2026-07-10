@@ -3,7 +3,7 @@ runner: scripts/audit_companion_heat_kernel_native_rp_plane_character_positivity
 runner_sha256: ae41b968fb1c8f631412e7a2e68753ed319c4c0dee5ec704547fb45f23bfe5e6
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 10.51
+elapsed_sec: 10.34
 status: ok
 ----- stdout -----
 ========================================================================================

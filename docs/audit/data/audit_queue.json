@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 387,
     "high": 265,
-    "leaf": 747,
+    "leaf": 746,
     "medium": 498
   },
   "cycle_break_target_count": 10,
@@ -35493,31 +35493,6 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
-        "koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/acphilambda_fluxed_ring_spectral_functional_route_no_go_2026_07_02.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02",
@@ -56832,6 +56807,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 190,
-  "total_pending": 1897
+  "ready_count": 189,
+  "total_pending": 1896
 }

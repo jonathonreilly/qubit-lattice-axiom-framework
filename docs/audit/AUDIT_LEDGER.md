@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 195 |
-| **retained_no_go** | 210 |
+| **retained_no_go** | 211 |
 | **retained_bounded** | 941 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1777 |
+| unaudited | 1776 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1351 |
+| `audited_clean` | 1352 |
 | `audited_conditional` | 104 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2122 |
+| `unaudited` | 2121 |
 
 | claim_type | count |
 |---|---:|
@@ -157,6 +157,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_ambient_equivariant_heat_trace_face_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1903,6 +1904,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Record additivity plus the stipulated single-density factorization gives I_c, and every enumerated clause is homogeneous or value-free. The retained circulant algebra supports the angular-rigidity and interface conclusions; consolidation with R-eta is dependency de-duplication, not closure of that admitted bridge.
 - **rationale:** The substantive bounded conclusions are exact class-A consequences of the accepted Record premise and retained-grade fixed-locus and circulant inputs, without external comparators or tuned data. The cited open bridge is preserved as the residual target rather than imported to derive c=1. Runner bookkeeping and coverage have non-load-bearing defects, but the analytic bounded chain still closes.
 - **auditor confidence:** medium
+
+### `acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02`
+
+- **Note:** [`ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02.md`](../../docs/ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On the single-cycle fluxed ring, the spectrum depends on flux only through cos Phi; consequently differentiable spectral functionals have stationary real-holonomy endpoints, while selection of the specified interior value requires an outer functional having a critical point there.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00039-acphilambda_fluxed_ring_spec`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because every non-constant characteristic-polynomial coefficient is flux-independent and the constant term depends only on cos Phi, every spectral functional factors as F(Phi) = g(cos Phi), so an interior stationary target requires g'(cos Phi*) = 0.  _(class `A`)_
+- **chain closes:** True — The characteristic-polynomial localization, spectral reduction, and derivative factorization follow algebraically from the explicitly constructed fluxed-ring matrices. The retained upstream notes supply only the bounded circulant surface and the stated modulus-route precedent; no open authority is needed for the spectral no-go itself.
+- **rationale:** The runner genuinely constructs the ring operators and performs exact symbolic determinant, coefficient, derivative, and cofactor calculations rather than printing or importing the contested result. The central conclusion is a genuine class-A algebraic closure, and both cited authorities have retained-grade effective status. The note appropriately bounds the no-go to spectral functionals and leaves non-spectral record/state-facing mechanisms open.
+- **auditor confidence:** high
 
 ### `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12`
 

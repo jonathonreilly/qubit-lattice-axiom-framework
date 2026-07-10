@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 391,
+    "critical": 390,
     "high": 265,
     "leaf": 754,
     "medium": 500
@@ -679,30 +679,6 @@
       "ready": true,
       "runner_path": "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py",
       "transitive_descendants": 386
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_berry_bundle_obstruction_theorem_note_2026-04-19",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "charged_lepton_koide_cone_algebraic_equivalence_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.84,
-      "note_path": "docs/KOIDE_BERRY_BUNDLE_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_berry_bundle_obstruction_theorem.py",
-      "transitive_descendants": 323
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -57177,6 +57153,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 202,
-  "total_pending": 1910
+  "ready_count": 201,
+  "total_pending": 1909
 }

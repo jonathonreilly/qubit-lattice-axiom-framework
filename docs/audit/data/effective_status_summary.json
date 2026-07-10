@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
     "bounded_theorem": 2038,
-    "decoration": 57,
+    "decoration": 58,
     "meta": 351,
     "no_go": 482,
     "open_gate": 183,
-    "positive_theorem": 604
+    "positive_theorem": 603
   },
   "cycle_examples": [
     [
@@ -39,6 +39,7 @@
     "audited_numerical_match": 9,
     "audited_renaming": 26,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
+    "decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note": 1,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 6,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_cpt_exact_note": 4,
@@ -73,7 +74,7 @@
     "retained_bounded": 938,
     "retained_no_go": 210,
     "retained_pending_chain": 8,
-    "unaudited": 1810
+    "unaudited": 1809
   },
   "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [

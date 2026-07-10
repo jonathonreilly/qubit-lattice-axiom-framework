@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1810 |
+| unaudited | 1809 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -31,6 +31,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_conditional~~ | 84 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
+| `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
 | `decoration_under_cpt_exact_note` | 4 |
@@ -65,20 +66,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1348 |
 | `audited_conditional` | 84 |
-| `audited_decoration` | 55 |
+| `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2155 |
+| `unaudited` | 2154 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2038 |
-| `decoration` | 57 |
+| `decoration` | 58 |
 | `meta` | 351 |
 | `no_go` | 482 |
 | `open_gate` | 183 |
-| `positive_theorem` | 604 |
+| `positive_theorem` | 603 |
 
 | criticality | count |
 |---|---:|
@@ -1598,6 +1599,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
 | `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
 | `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.6 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
+| `koide_berry_bundle_obstruction_theorem_note_2026-04-19` | decoration | ~~audited_decoration~~ | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | cross_family | codex-gpt-5.6 | A | `charged_lepton_koide_cone_algebraic_equivalence_note` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
 | `koide_mru_demotion_note_2026-04-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `koide_kappa_spectrum_operator_bridge_theorem_2026-04-19` |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.6 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
@@ -10727,6 +10729,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Under POLARIZATION-SELECT, real polarization counts the doublet as two real slots while holomorphic polarization counts it as one complex slot, yielding real => r = 1, Q = 1 and holomorphic => r = 1/2, Q = 2/3.  _(class `A`)_
 - **chain closes:** True — Direct algebra gives tr(P_s)=1, tr(P_d)=2, P_s+P_d=I, J^2=-P_d, and det_R(alpha P_s + beta P_d)=alpha beta^2, so the displayed projection, trace, complex-structure, and determinant identities match. With POLARIZATION-SELECT supplied, r is the normalized doublet slot count and the cited algebraic lever Q=(1+2r)/3 gives Q=1 for r=1 and Q=2/3 for r=1/2.
 - **rationale:** The source note states a bounded conditional theorem and preserves the boundary that no polarization selector is derived. The runner source performs exact rational matrix/projector, determinant, complex-realification, Pfaffian, and table-consistency checks; the randomized Koide replay is explicitly motivation-tier and not used for the verdict. The only upstream cited authority is retained-grade, and no PDG value, fitted selector, or physical mass bridge is consumed by the audited claim.
+- **auditor confidence:** high
+
+### `koide_berry_bundle_obstruction_theorem_note_2026-04-19`
+
+- **Note:** [`KOIDE_BERRY_BUNDLE_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`](../../docs/KOIDE_BERRY_BUNDLE_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `decoration`
+- **claim_scope:** From the Koide condition sigma = 1/2, the normalized positive locus is three C_3-permuted open arcs whose quotient is an interval; its equivariant line bundles and connections are trivial, while the sign-relaxed projective circle has only arbitrary flat holonomy.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00003-koide_berry_bundle_obstructi`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because the free C_3 action identifies equivariant line bundles on K_norm^+ with line bundles on the quotient interval, contractibility of that interval forces equivariant triviality and eliminates nontrivial Chern class or Berry holonomy.  _(class `A`)_
+- **chain closes:** True — The cited algebraic equivalence fixes the normalized locus, and the supplied parameterization plus standard descent, contractibility, and H^2(S^1; Z) arguments establish the stated topological obstruction. No additional physical premise is needed for this scoped conclusion.
+- **rationale:** Issue: the obstruction is an exact class-A mathematical corollary of a single upstream Koide-cone equivalence rather than an independent class-C framework computation. Why this blocks a stronger classification: the runner performs geometry, topology, and consistency checks but no independent comparator or new first-principles physical derivation. Repair target: none is needed for the scoped topological statement; any future claim that the phase readout is derived must independently establish the delta(t) map. Claim boundary until then: the bundle and holonomy obstruction is valid, but the runner's delta = t/3 assignment is not itself derived.
+- **decoration parent:** `charged_lepton_koide_cone_algebraic_equivalence_note`
 - **auditor confidence:** high
 
 ### `koide_berry_monopole_bridge_reduction_note_2026-05-31`

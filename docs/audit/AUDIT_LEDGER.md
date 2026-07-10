@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 942 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1768 |
+| unaudited | 1767 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 110 |
+| ~~audited_conditional~~ | 111 |
 | ~~audited_failed~~ | 7 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1353 |
-| `audited_conditional` | 110 |
+| `audited_conditional` | 111 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2113 |
+| `unaudited` | 2112 |
 
 | claim_type | count |
 |---|---:|
@@ -1533,6 +1533,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `confinement_string_tension_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
+| `continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -4774,6 +4775,21 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The strict prefix-sum operator satisfies the Rota-Baxter identity of weight +1: P(a)P(b)=P(P(a)b+aP(b)+ab).  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the packet verifies the Rota-Baxter identity, non-idempotence, B4 combinatorics, and the tautological first-slot readout. The note explicitly excludes framework-native characters, staggered taste-blocking bridges, and derivation of alpha_LM^16, so those missing bridges do not block this scoped claim.
 - **rationale:** The scoped theorem is external algebra plus an explicit boundary statement, and the dependency is provided as retained. The runner's alpha_LM^16 check is hard-coded, but the note labels that as an imported character value and not a derivation, so it supports the boundary rather than inflating the claim.
+- **auditor confidence:** high
+
+### `continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12`
+
+- **Note:** [`CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md`](../../docs/CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact 2/9 localization arithmetic and delta-independence, together with spectral-flow and sign-asymmetry diagnostics for the explicitly supplied finite chiral-doubled mass family.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00048-continuum_equivariant_eta_st`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting the retained (1,2) weights into the localization expressions gives 2/9 independently of delta, while the supplied chiral-doubled matrix family has zero net signed crossings and flat spectral sign asymmetry.  _(class `A`)_
+- **chain closes:** False — The localization arithmetic closes, but the continuum-operator and regularized-eta interpretation does not. The cited Kähler-Dirac authority expressly leaves the physical dynamical identification open, while the runner computes only a finite 6-by-6 mass matrix and its unregularized spectral sign count.
+- **rationale:** Issue: C1-C2 are sound exact arithmetic, but C3 computes D = sigma_z tensor H for a hard-coded finite matrix, and eta_asymmetry is merely the positive-minus-negative eigenvalue count rather than a regularized continuum Kähler-Dirac eta invariant; C4b also sets delta_forced_by_eta to false instead of deriving it. Why this blocks: the cited Kähler-Dirac authority explicitly disclaims the physical/dynamical operator identification, and the runner checks that authority text without constructing D_KD or a continuum regularization. Repair target: derive and implement the continuum operator/eta bridge from retained inputs, or narrow C3-C4 to finite-matrix sign-symmetry diagnostics. Claim boundary until fixed: the 2/9 localization evaluation, its delta-independence, and zero spectral flow/sign imbalance for the explicitly defined finite family remain supported.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `continuum_limit_note`

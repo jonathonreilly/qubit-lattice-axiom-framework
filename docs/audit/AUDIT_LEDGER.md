@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 954 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1705 |
+| unaudited | 1704 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 136 |
+| ~~audited_conditional~~ | 137 |
 | ~~audited_failed~~ | 12 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1371 |
-| `audited_conditional` | 136 |
+| `audited_conditional` | 137 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2050 |
+| `unaudited` | 2049 |
 
 | claim_type | count |
 |---|---:|
@@ -1655,6 +1655,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `unordered_mass_pdep_record_independence_no_go_note_2026-06-18` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `wilson_m_h_per_channel_closure_bounded_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `wilson_temporal_kernel_casimir_generator_beta_gbare_transport_theorem_note_2026-07-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
@@ -23166,6 +23167,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Equation (13): c_lambda(beta) = sum_{n>=0} (1/n!) (beta/(2 N_c))^n m_lambda^{(n)}, with every m_lambda^{(n)} a non-negative SU(3) tensor-product multiplicity, hence c_lambda(beta) >= 0 for beta >= 0.  _(class `A`)_
 - **chain closes:** True — The proof closes by standard SU(3) representation-ring algebra: chi_3 + chi_3bar is the character of 3 direct-sum 3bar, its powers decompose with non-negative Clebsch-Gordan multiplicities, and the beta >= 0 exponential is a non-negative weighted sum of those powers. The retained cited authorities supply the convolution diagonalization/factorization context, while the note explicitly excludes the full mixed gauge+fermion RP theorem.
 - **rationale:** The load-bearing step is a genuine algebraic closure, not a definition, renaming, tuned numerical match, or external comparator import. The runner source performs real exact rational character-algebra checks plus Monte Carlo and Gram-matrix sanity checks, and it does not hard-code the contested positivity premise. The finite runner does not by itself prove all irreps, but the note's representation-ring argument does, and the stated scope remains limited to the gauge kernel.
+- **auditor confidence:** high
+
+### `wilson_temporal_kernel_casimir_generator_beta_gbare_transport_theorem_note_2026-07-01`
+
+- **Note:** [`WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md`](../../docs/WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Large-beta Casimir asymptotics and leading beta-dial transport for the supplied Wilson temporal-gauge per-link kernel, including the asserted three-slot normalization coincidence.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00113-wilson_temporal_kernel_casim`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Matching the Gaussian widths gives tau_eff = N_c / beta, hence eps_R = (N_c / beta) C_2(R) (1 + O(1/beta)).  _(class `C`)_
+- **chain closes:** False — K1-K3 close at leading asymptotic order from the supplied Wilson kernel and retained magnetic matching. The three-slot K4 conclusion does not close because s and the identification g_bare = s come only from G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md, which the source explicitly excludes as a dependency and which is absent from the restricted authorities.
+- **rationale:** Issue: the runner genuinely computes the kernel character integrals and supports the Casimir asymptotic, but K4 introduces s and relies on an excluded same-scalar-slot bridge. Why this blocks: the retained rigidity authority fixes the generator trace form but neither defines s nor identifies it with g_bare. Repair target: add the named beta-6 bridge note as a direct dependency and establish that it is retained-grade. Claim boundary until fixed: the isotypic diagonalization, leading Casimir coefficient, and beta g_E^2 -> 2 N_c transport are supported, but the coordinate-slot three-normalization coincidence is conditional.
 - **auditor confidence:** high
 
 ### `wilson_test_mass_continuum_note_2026-04-11`

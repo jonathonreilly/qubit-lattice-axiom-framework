@@ -15,6 +15,13 @@ logs/*
 # In-progress live logs are transient (replaced by canonical cache on
 # completion); do NOT commit them.
 logs/runner-cache/.in-progress/
+# d3 pilot: rolling ~92MB state checkpoints and live logs are
+# transient; canonical evidence = the JSONL observable streams + the
+# --report cache (both committed). Engine tables regenerate in ~1 min.
+logs/runner-cache/d3_pilot_checkpoints/*.npz
+logs/runner-cache/d3_pilot_checkpoints/full_run_stdout.log
+logs/runner-cache/d3_pilot_checkpoints/full_run_progress.log
+logs/runner-cache/d3_engine_tables/
 .claude/worktrees/
 
 # Python virtual environments (per-developer, per-worktree).

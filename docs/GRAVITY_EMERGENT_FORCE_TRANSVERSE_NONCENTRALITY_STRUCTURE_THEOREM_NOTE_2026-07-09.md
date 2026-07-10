@@ -1,13 +1,14 @@
 # The Emergent Force Is Not Central: Exact Transverse Structure at O(1/r⁴) and the Three Central Orbits
 
 **Date:** 2026-07-09
-**Claim type:** theorem
-**Status authority:** independent audit lane only. This source note does not set or predict an audit outcome.
+**Claim type:** bounded_theorem
+**Status:** source-side bounded proposal; independent audit required.
 **Primary runner:** [`scripts/frontier_gravity_transverse_noncentrality_structure.py`](../scripts/frontier_gravity_transverse_noncentrality_structure.py)
 **Cached output:** [`logs/runner-cache/frontier_gravity_transverse_noncentrality_structure.txt`](../logs/runner-cache/frontier_gravity_transverse_noncentrality_structure.txt)
 
 ## Claim
 
+> **Conditional on the differentiable-remainder premise below,**
 > **`−∇G = [1/(4π r²) + (15/(32π))·K₄(n̂)/r⁴]·n̂ − (5/(8π))·(n̂³ − S₄ n̂)/r⁴ + O(1/r⁶)`**
 
 The second correction term is exactly tangent to the sphere, so the emergent force is
@@ -22,10 +23,10 @@ polynomial is `9216·Q² − 827·Q + 8`.
 The input expansion comes from the leading-correction theorem
 [`GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07`](GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md),
 which supplies `G(r) = 1/(4π r) + [5/(32π)]·K₄(n̂)/r³ + O(1/r⁵)`. This note is pure
-structure downstream of that expansion: exact gradient algebra plus an independent
-numeric certification of the remainder order against the exact Bessel-resolvent Green
-function. No new physical identification is introduced. “Force” means `−∇` of the same
-emergent potential named in that theorem.
+structure downstream of that expansion: exact gradient algebra plus independent
+finite-site numerical support for differentiating the remainder against the exact
+Bessel-resolvent Green function. No new physical identification is introduced. “Force”
+means `−∇` of the same emergent potential named in that theorem.
 
 Write `r = |x|`, `n̂ = x/r`, `S₄ = Σ_μ n̂_μ⁴`, `S₆ = Σ_μ n̂_μ⁶`,
 `K₄ = S₄ − 3/5`, and `n̂³ = (n̂_x³,n̂_y³,n̂_z³)` componentwise. Define
@@ -33,11 +34,14 @@ Write `r = |x|`, `n̂ = x/r`, `S₄ = Σ_μ n̂_μ⁴`, `S₆ = Σ_μ n̂_μ⁶`
 
 ## Theorem
 
-- **T1 — gradient and remainder.** Exact differentiation of the supplied asymptotic form gives
+- **T1 — gradient and conditional remainder.** Exact differentiation of the displayed
+  two-term truncation gives
   `∇[1/(4πr) + (5/(32π))K₄/r³]`
   `= −[1/(4πr²) + (15/(32π))K₄/r⁴]n̂ + (5/(8π))t/r⁴`.
-  Consequently the displayed force formula holds with remainder `O(1/r⁶)`. The
-  `O(1/r⁵)` potential term first contributes to its gradient at `O(1/r⁶)`.
+  If the supplied potential remainder `R_G(x)=O(r⁻⁵)` is differentiable with
+  `∇R_G(x)=O(r⁻⁶)` termwise in the lattice asymptotic expansion, then the full force
+  has the displayed `O(1/r⁶)` remainder. The six-site runner checks are finite-site
+  numerical support for this premise, not a proof of it.
 
 - **T2 — exact tangency and magnitude.** The identities
   `n̂·t = n̂·n̂³ − S₄ = 0` and `t_μ = n̂_μ(n̂_μ² − S₄)` hold componentwise.
@@ -63,7 +67,8 @@ Write `r = |x|`, `n̂ = x/r`, `S₄ = Σ_μ n̂_μ⁴`, `S₆ = Σ_μ n̂_μ⁶`
   at every asymptotic order. Conversely, T3 gives a nonzero `O(1/r⁴)` transverse term
   in every other direction. The field is asymptotically central precisely on ⟨100⟩ ∪ ⟨110⟩ ∪ ⟨111⟩.
 
-- **T6 — transverse-to-radial ratio.** Dividing the leading transverse magnitude by
+- **T6 — transverse-to-radial ratio.** Under the differentiable-remainder premise,
+  dividing the leading transverse magnitude by
   `1/(4πr²)` gives
   `|transverse|/|radial| = (5/2)·q(n̂)/r² + O(1/r⁴)`.
 
@@ -92,7 +97,7 @@ Thus the transverse component of `∇G` is parallel to the tangential gradient o
 Its gradient-field lines bend along the `S₄` gradient flow on the sphere, whose fixed
 points are the three orbits in T3 and whose local signatures are those in T4.
 
-## Numeric certification (runner)
+## Finite-site numerical support (runner)
 
 The `S1–S8` gates use exact SymPy algebra for the gradient, tangency, component factors,
 magnitude, classification, tangent Hessians, constrained stationarity, extrema, exact
@@ -111,9 +116,11 @@ has truncation `O(∂⁵G) = O(1/r⁶)`; the three-point stencil is insufficient
 
 For each site the runner computes `ρ_num = n̂·D`, `t_num = D−ρ_num n̂`, and the radial
 and transverse predictions directly. The observed scaled transverse and radial residuals
-are bounded by the gates, the three direction pairs show the required relative
-`O(1/r²)` convergence, all six sites witness non-centrality, and the two largest-radius
-sites reproduce the ratio in T6 within `15%`. The exact direction anchors are
+are compatible with the stated remainder at the sampled sites, the three direction pairs
+show the expected relative `O(1/r²)` convergence, all six sites witness non-centrality,
+and the two largest-radius sites reproduce the ratio in T6 within `15%`. These finite-site
+checks support but do not prove the differentiable-remainder premise. The exact direction
+anchors are
 `q²(1,1,3)=1152/14641`, `q²(2,1,0)=36/625`, `q²(2,1,1)=1/18`, and `q²=0` on
 `⟨100⟩`, `⟨110⟩`, and `⟨111⟩`.
 
@@ -137,10 +144,11 @@ on the bridge's coupling-sign convention and is not assigned here.
 
 ## Boundary / honest auditor read
 
-- The theorem gives the exact asymptotic structure of the supplied expansion together
-  with numerical certification of the remainder order; it does not derive new dynamics.
-- The `O(1/r⁶)` remainder is certified on six sites in three directions with `r ≤ 16.6`,
-  rather than proven symbolically here.
+- The theorem gives the exact gradient and orbit structure of the displayed two-term
+  truncation. The full-force `O(1/r⁶)` remainder is conditional on the named
+  differentiable-remainder premise; it does not derive new dynamics.
+- Six sites in three directions with `r ≤ 16.6` provide finite-site numerical support
+  for that premise. They do not prove an asymptotic derivative bound.
 - The conditional corollary inherits the bounded status of its cited bridge.
 - T5 is a symmetry theorem about the asymptotic series of an `O_h`-equivariant field,
   certified by the stabilizer fixed-vector check.

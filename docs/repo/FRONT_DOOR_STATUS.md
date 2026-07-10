@@ -29,16 +29,16 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3733 |
-| Applied audit verdicts | 1643 |
-| Retained-grade rows, including boxed decorations | 1413 |
+| Applied audit verdicts | 1645 |
+| Retained-grade rows, including boxed decorations | 1414 |
 | Retained positive theorems | 196 |
-| Retained no-go rows | 211 |
+| Retained no-go rows | 212 |
 | Retained bounded rows | 944 |
 | Boxed decorations under retained parents | 62 |
 | Open gates | 28 |
-| Unaudited rows | 1729 |
+| Unaudited rows | 1727 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 133 |
+| Audited conditional rows | 134 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 10 |
@@ -50,18 +50,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1890 |
-| Ready rows | 156 |
+| Total pending rows | 1889 |
+| Ready rows | 155 |
 | Cycle-break targets | 10 |
 | Critical pending | 389 |
 | High pending | 268 |
-| Medium pending | 498 |
+| Medium pending | 497 |
 | Leaf pending | 735 |
 
 Next ready rows by queue order:
 
 - [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
-- [`yt_zero_import_authority_note`](../../docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md) - critical; unaudited
+- [`yt_zero_import_authority_note`](../../docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md) - critical; non_terminal_conditional
 - [`yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md) - critical; non_terminal_conditional
 - [`dm_neutrino_bosonic_normalization_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md) - critical; non_terminal_conditional
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; non_terminal_conditional
@@ -78,12 +78,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 171 |
+| critical | `unaudited` | 170 |
 | high | `unaudited` | 140 |
 | medium | `unaudited` | 89 |
 | high | `audited_conditional` | 7 |
+| critical | `audited_conditional` | 4 |
 | critical | `audit_in_progress` | 3 |
-| critical | `audited_conditional` | 3 |
 | medium | `audited_conditional` | 3 |
 | medium | `open_gate` | 3 |
 | critical | `audited_numerical_match` | 2 |

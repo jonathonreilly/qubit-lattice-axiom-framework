@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 29 |
-| unaudited | 1718 |
+| unaudited | 1717 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 36 |
-| ~~audited_conditional~~ | 145 |
+| ~~audited_conditional~~ | 146 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -72,12 +72,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1372 |
-| `audited_conditional` | 145 |
+| `audited_conditional` | 146 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 36 |
-| `unaudited` | 2065 |
+| `unaudited` | 2064 |
 
 | claim_type | count |
 |---|---:|
@@ -1611,6 +1611,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | F | - |
+| `qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -17525,6 +17526,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The axiom's word “qubit” is identified with the minimal faithful complex irreducible module of M_2(C), thereby selecting k=1.  _(class `F`)_
 - **chain closes:** False — The Qubit axiom supplies the one-site possibility algebra M_2(C), but it does not identify the physical carrier with its minimal faithful irreducible module. That semantic/minimal-carrier bridge is asserted as a definition, and the source boundary itself acknowledges that it is not derived from the cited operator-algebra inputs.
 - **rationale:** The representation-theoretic statement that finite-dimensional M_2(C)-modules have the form (C²)^{⊕k}, with k=1 minimal faithful, is sound from the restricted packet. However, the conclusion about H_x requires an additional identification between the axiom's possibility algebra and a minimal physical Hilbert-space carrier; the accepted axiom explicitly supplies only the algebraic presentation. The note therefore establishes k=1 only conditional on that semantic premise, not as a framework-native derivation.
+- **auditor confidence:** high
+
+### `qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09`
+
+- **Note:** [`QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md`](../../docs/QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite-dimensional tensor-carrier, multiplicity decomposition, minimal-carrier dimension, Gleason dimension threshold, and projection-span conclusions were audited conditional on a supplied commuting joint presentation and the named selection m = 1.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T164715Z-1ebf2b3d-00005-qubit_lattice_joint_presenta`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Pairwise elementwise commutation makes the product map from the tensor product a unital *-homomorphism, and simplicity of the matrix-algebra source makes that map injective.  _(class `A`)_
+- **chain closes:** True — Given both declared inputs, standard finite-dimensional matrix-algebra representation theory proves the stated conclusions. Neither the common commuting presentation nor the selection m = 1 follows from the accepted four-axiom authority.
+- **rationale:** The algebraic argument is correct on its stated hypotheses, and the runner genuinely checks representative tensor-generation, commutant, dimension, and projection-span facts using exact symbolic calculations. However, the claim imports two load-bearing bridge inputs: a common pairwise-commuting joint presentation and the minimality selection m = 1. The restricted packet explicitly acknowledges that the accepted axioms supply neither input, so the result remains conditional on them.
 - **auditor confidence:** high
 
 ### `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04`

@@ -35,7 +35,7 @@
   "effective_status_counts": {
     "audit_in_progress": 9,
     "audited_conditional": 110,
-    "audited_failed": 6,
+    "audited_failed": 7,
     "audited_numerical_match": 9,
     "audited_renaming": 28,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
@@ -78,7 +78,7 @@
     "retained_bounded": 942,
     "retained_no_go": 211,
     "retained_pending_chain": 9,
-    "unaudited": 1769
+    "unaudited": 1768
   },
   "retained_pending_chain_count": 9,
   "retained_pending_chain_examples": [

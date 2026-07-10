@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 942 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1769 |
+| unaudited | 1768 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 110 |
-| ~~audited_failed~~ | 6 |
+| ~~audited_failed~~ | 7 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -71,10 +71,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1353 |
 | `audited_conditional` | 110 |
 | `audited_decoration` | 62 |
-| `audited_failed` | 28 |
+| `audited_failed` | 29 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2114 |
+| `unaudited` | 2113 |
 
 | claim_type | count |
 |---|---:|
@@ -1678,6 +1678,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `cluster_decomposition_lr_poisson_tail_repair_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
@@ -4523,6 +4524,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **rationale:** The claimed spatial gap is not an independent first-principles computation; the SU(3) heat-kernel positivity, trace-class property, and Perron-Jentzsch gap are all imported from the retained temporal-axis parent. The new step is a finite-kernel axis-label permutation, which is a class-A algebraic decoration of that parent under the note's own pure-Wilson definitions. The runner reports 18 passes, but its sampled positivity check uses an approximate character surrogate, so the runner should be treated as non-load-bearing sanity support rather than a class-C proof.
 - **decoration parent:** `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`
 - **auditor confidence:** medium
+
+### `cluster_decomposition_lr_poisson_tail_repair_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`CLUSTER_DECOMPOSITION_LR_POISSON_TAIL_REPAIR_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/CLUSTER_DECOMPOSITION_LR_POISSON_TAIL_REPAIR_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The corrected Poisson-tail derivation and its claimed conversion into an L1 Lieb–Robinson commutator bound; no L2 clustering claim was audited.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00047-cluster_decomposition_lr_poi`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The chain Σ_{n≥R}x^n/n! ≤ e^x(e x/R)^R ≤ e^{(1+e)x-R}, with R=d/R_int, is asserted to yield an LR velocity O(e J_*D_intR_int).  _(class `A`)_
+- **chain closes:** False — The elementary tail inequalities close for integer R, but their physical substitution does not: with the note's x=J_*D_intR_int|t| and R=d/R_int, the exponent gives velocity (1+e)J_*D_intR_int^2, not O(eJ_*D_intR_int). Moreover, R=d/R_int need not be integral and the claimed equivalence R>ex omits the e^x prefactor, so the stated cone requires a corrected threshold.
+- **rationale:** The runner genuinely checks the abstract inequalities at selected integer (x,R) values, but it never checks the load-bearing substitution into the physical LR variables; its scope conclusions are hard-coded true. The extra R_int in x produces an extra R_int in the derived velocity, while the omitted ceiling leaves the factorial-tail expression undefined as written for general d/R_int. Thus the runner validates a mathematical tail lemma but not the theorem-level conclusion claimed from it.
+- **auditor confidence:** high
 
 ### `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09`
 

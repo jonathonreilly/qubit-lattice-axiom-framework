@@ -200,9 +200,12 @@ characters. The manifest is an allow-list, not evidence by itself:
 
 For N8, the orchestrator has also supplied a cross-cycle search index. It is
 constructed from this row's audit history, one-hop authority audit history,
-Tier-A retirements, and owner-governed retirements. You must disposition every
-listed `candidate_id`; `packet_complete` is valid only when the N8 evidence
-path names this index.
+Tier-A retirements, owner-governed retirements, similar `no_go` rows in the
+audit ledger, and every tracked
+`.claude/science/physics-loops/**/NO_GO_LEDGER.md` file. The index metadata
+states the exact glob, scanned file count and paths, similarity threshold, and
+candidate limit. You must disposition every listed `candidate_id`;
+`packet_complete` is valid only when the N8 evidence path names this index.
 
 ```json
 {{NO_GO_CROSS_CYCLE_INDEX}}

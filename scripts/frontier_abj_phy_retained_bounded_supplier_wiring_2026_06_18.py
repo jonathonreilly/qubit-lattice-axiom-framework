@@ -24,6 +24,11 @@ ABJ_NOTE_NAME = (
 ABJ_NOTE = ROOT / "docs" / ABJ_NOTE_NAME
 SUPPLIER_NOTE = ROOT / "docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md"
 HYPERCHARGE_NOTE = ROOT / "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md"
+L2_MATTER_NOTE_NAME = "LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md"
+L3_ALPHA_NOTE_NAME = "HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md"
+L2_MATTER_CLAIM_ID = "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
+L3_ALPHA_CLAIM_ID = "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
+DECORATION_PREFIX = "decoration_under_"
 RETAINED_POSITIVE_GRADES = {"retained", "retained_bounded"}
 LH_SCOPE_NEEDLES = (
     "Bounded LH-doublet chain assembly",
@@ -92,7 +97,21 @@ LH_REPS = (
 
 def ledger_row(claim_id: str) -> dict:
     rows = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
-    return rows[claim_id]
+    return rows.get(claim_id) or {}
+
+
+def retained_or_decoration_under_retained(claim_id: str) -> tuple[bool, str]:
+    status = str(ledger_row(claim_id).get("effective_status") or "missing_row")
+    if status in RETAINED_POSITIVE_GRADES:
+        return True, status
+    if status.startswith(DECORATION_PREFIX):
+        parent_id = status.removeprefix(DECORATION_PREFIX)
+        parent_status = ledger_row(parent_id).get("effective_status")
+        return (
+            parent_status in RETAINED_POSITIVE_GRADES,
+            f"{status} (parent {parent_id}: {parent_status})",
+        )
+    return False, status
 
 
 def test_current_supplier_status() -> None:
@@ -126,6 +145,20 @@ def test_current_supplier_status() -> None:
     check(
         "ledger scope includes current exclusion needles",
         all(needle in scope for needle in EXCLUSION_SCOPE_NEEDLES),
+    )
+    l2_ok, l2_detail = retained_or_decoration_under_retained(L2_MATTER_CLAIM_ID)
+    check(
+        "L2 matter-assignment authority is retained-grade or decoration under a "
+        "retained parent",
+        l2_ok,
+        l2_detail,
+    )
+    l3_status = ledger_row(L3_ALPHA_CLAIM_ID).get("effective_status")
+    check(
+        "L3 alpha=1/3 normalization authority is retained-grade in the current "
+        "ledger",
+        l3_status in RETAINED_POSITIVE_GRADES,
+        str(l3_status),
     )
 
 
@@ -170,6 +203,18 @@ def test_source_notes() -> None:
         "P-ABJ remains" in supplier
         and "P-COMP remains" in supplier
         and "P-REC remains" in supplier,
+    )
+    check(
+        "supplier note carries a direct dependency edge to the L2 "
+        "matter-assignment authority",
+        f"]({L2_MATTER_NOTE_NAME})" in supplier
+        and (ROOT / "docs" / L2_MATTER_NOTE_NAME).is_file(),
+    )
+    check(
+        "supplier note carries a direct dependency edge to the L3 alpha=1/3 "
+        "normalization authority",
+        f"]({L3_ALPHA_NOTE_NAME})" in supplier
+        and (ROOT / "docs" / L3_ALPHA_NOTE_NAME).is_file(),
     )
     check(
         "hypercharge note supplies the complete operator/eigenblock mapping",

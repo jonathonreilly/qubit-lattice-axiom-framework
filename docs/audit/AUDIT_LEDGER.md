@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 931 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1845 |
+| unaudited | 1844 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 64 |
+| ~~audited_conditional~~ | 65 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1337 |
-| `audited_conditional` | 64 |
+| `audited_conditional` | 65 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 24 |
-| `unaudited` | 2190 |
+| `unaudited` | 2189 |
 
 | claim_type | count |
 |---|---:|
@@ -1517,6 +1517,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_eq_3delta_identity_note_2026-04-21` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -12688,6 +12689,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Positivity under compression and finite-dimensional trace cyclicity yield 0 <= PEP <= P <= I and Tr(rho PEP) = Tr(P rho P E).  _(class `A`)_
 - **chain closes:** True — Each conclusion follows directly from the stated projection, effect, and density-matrix hypotheses using positivity under congruence, trace cyclicity, and matrix multiplication. The accepted Qubit premise supplies the framework's M_2(C) instance, while the conditional M_d(C) theorem requires no additional framework bridge.
 - **rationale:** The load-bearing content is genuine class-A finite matrix algebra rather than a definition, renaming, calibrated numerical match, or imported measurement rule. The proof establishes positivity, order bounds, trace cyclicity, boundary cases, and nested compression from explicit hypotheses, and the runner independently exercises exact and randomized instances with 32 passing checks. The note explicitly excludes Lüders-update, Born-rule, and probability interpretations, so the audited conclusion does not overreach those open measurement bridges.
+- **auditor confidence:** high
+
+### `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite-region identity M_{P,E}=PEP and the corresponding normalized state update, conditional on selecting the Lüders Kraus operator K_P=P for projective measurements.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-luders_sequential_produc-055`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Given the LSP selection K_P = P, K_P† E K_P = P† E P = P E P because P† = P.  _(class `A`)_
+- **chain closes:** False — The algebra closes exactly once K_P=P is assumed, but the restricted packet does not establish that the canonical Lüders/Naimark representative is the framework's physically selected projective instrument. The retained-bounded Naimark authority explicitly leaves that canonical-frame selection as a convention rather than a unique physical consequence.
+- **rationale:** The runner genuinely verifies the class-A operator identities and demonstrates that a unitary-twisted Kraus operator can produce different sequential statistics. Thus LSP is load-bearing rather than derived by the runner. The cited retained-bounded Naimark note supplies K_P=P only within the canonical frame and explicitly leaves the physical instrument-selection bridge open, so the stronger framework-selection premise remains conditional.
+- **open / conditional deps cited:**
+  - `LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`
 - **auditor confidence:** high
 
 ### `m2_tensor_d4_dimension_256_bounded_note_2026-05-26`

@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2033,
-    "decoration": 64,
+    "bounded_theorem": 2032,
+    "decoration": 65,
     "meta": 352,
     "no_go": 481,
     "open_gate": 183,
@@ -77,16 +77,17 @@
     "retained": 195,
     "retained_bounded": 946,
     "retained_no_go": 211,
-    "retained_pending_chain": 9,
-    "unaudited": 1749
+    "retained_pending_chain": 10,
+    "unaudited": 1748
   },
-  "retained_pending_chain_count": 9,
+  "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
     "gate_b_context_independence_no_go_note_2026-06-17",
     "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",
     "gravity_clean_derivation_note",
+    "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01",
     "koide_mru_demotion_note_2026-04-20",
     "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
     "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",

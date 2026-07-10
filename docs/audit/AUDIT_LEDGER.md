@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 212 |
-| **retained_bounded** | 944 |
+| **retained_bounded** | 945 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
 | unaudited | 1727 |
-| audit_in_progress | 12 |
+| audit_in_progress | 11 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 14 |
-| `audited_clean` | 1361 |
+| `audit_in_progress` | 13 |
+| `audited_clean` | 1362 |
 | `audited_conditional` | 134 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
@@ -82,12 +82,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2038 |
+| `bounded_theorem` | 2039 |
 | `decoration` | 72 |
 | `meta` | 355 |
 | `no_go` | 482 |
 | `open_gate` | 184 |
-| `positive_theorem` | 602 |
+| `positive_theorem` | 601 |
 
 | criticality | count |
 |---|---:|
@@ -143,7 +143,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_spectrum_condition_theorem_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -222,6 +221,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `axiom_first_spectrum_condition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.6 | A | - |
 | `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3044,6 +3044,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Since the cited transfer object is T_hat^2 = exp(-2 a_tau H_hat), the reconstructed Hamiltonian and gap from T_hat^2 must use -(1/(2 a_tau)) log(T_hat^2/M_T) and -(1/(2 a_tau)) log(lambda_1/M_T), while the 1/a_tau form is exactly twice as large.  _(class `A`)_
 - **chain closes:** True — The direct retained-bounded dependency supplies T_hat^2 = exp(-2 a_tau H_hat) and the positive two-step blocked transfer surface. Finite-dimensional functional calculus then gives H = -(1/(2 a_tau)) log(T_hat^2/M_T) = H_hat after vacuum subtraction, and the same factor fixes the gap formula.
 - **rationale:** The derivation closes as exact algebra over the retained-bounded two-step transfer authority: a two-step block advances time by 2 a_tau, so the logarithmic generator and gap necessarily carry 1/(2 a_tau). I independently derived the 2x2 action-transfer eigenvalues e^{±2E} and checked an abstract diagonal finite-spectrum example, both confirming that the 1/a_tau form doubles every excited energy and gap. The runner aligns with T_hat^2 itself and verifies the same factor-of-two relation, self-adjointness, forward cone, and corrected gap with 9 PASS / 0 FAIL. The clean verdict is bounded to this normalization bridge only; it does not promote U-integrated interacting RP, continuum/OS reconstruction, universal nondegeneracy, cluster decomposition, or physical mass identification.
+- **auditor confidence:** high
+
+### `axiom_first_spectrum_condition_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On finite free or time-independent fixed-background staggered-only two-step carriers, a strictly positive Hermitian transfer matrix yields a self-adjoint vacuum-subtracted Hamiltonian H >= 0; a positive gap and temporal decay follow under the stated non-degeneracy and gap hypotheses.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T160820Z-9d13e99d-axiom_first_spectrum-judge-1`  (codex-gpt-5.6; independence=judicial_review)
+- **load-bearing step:** Finite-dimensional functional calculus applied to spec(T/M_T) contained in (0,1] gives H := -(1/(2 a_tau)) log(T/M_T) self-adjoint and non-negative, with the stated conditional spectral-gap consequences.  _(class `A`)_
+- **chain closes:** True — The load-bearing result is elementary spectral algebra over explicitly supplied retained-grade positivity and blocked-time-normalization authorities; no open authority is required for SC1-SC2, while SC3-SC4 state their additional hypotheses explicitly. The runner constructs T from H and reconstructs H, so it is only an algebraic exhibit rather than an independent positivity derivation, but the cited retained-grade authorities already supply that premise. The physical claim remains bounded to finite staggered-only free or fixed-background two-step carriers, so positive_theorem is too broad as the row-level classification.
+- **rationale:** The load-bearing result is elementary spectral algebra over explicitly supplied retained-grade positivity and blocked-time-normalization authorities; no open authority is required for SC1-SC2, while SC3-SC4 state their additional hypotheses explicitly. The runner constructs T from H and reconstructs H, so it is only an algebraic exhibit rather than an independent positivity derivation, but the cited retained-grade authorities already supply that premise. The physical claim remains bounded to finite staggered-only free or fixed-background two-step carriers, so positive_theorem is too broad as the row-level classification.
 - **auditor confidence:** high
 
 ### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 942 |
+| **retained_bounded** | 943 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1765 |
+| unaudited | 1764 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1353 |
+| `audited_clean` | 1354 |
 | `audited_conditional` | 112 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2110 |
+| `unaudited` | 2109 |
 
 | claim_type | count |
 |---|---:|
@@ -332,6 +332,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4852,6 +4853,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **rationale:** The tensor-product positivity and finite-fermion trace identities are sound algebraic consequences of retained-grade inputs. However, the L_s=2 U(1) runner surface makes the channel kernel insensitive to the complex structure that distinguishes t[U] from t[conj(U)], so its passing N4 checks do not support the claimed every-background SU(3)/U(1) operator relation. The registrability authority also explicitly leaves the physical species-readout identification open, preventing the stated N5 narrowing from repairing this gap.
 - **open / conditional deps cited:**
   - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+- **auditor confidence:** high
+
+### `correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12`
+
+- **Note:** [`CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md`](../../docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The identity, proper rank-one/rank-two projector, beta in {1,4} thermal, and symmetric-inversion checks on the explicitly supplied three-site Hermitian circulant surface and stated branch.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00053-correlator_cycle_phases_read`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On the supplied circulant surface, the identity cycle product is B^3 exp(3i delta), fixed rank-one/rank-two Fourier projectors are delta-independent, tested thermal phases vary with state parameters, and det H yields the stated cos(3 delta) inversion.  _(class `A`)_
+- **chain closes:** True — The symbolic calculations establish the readback, fixed-projector blindness, and determinant inversion directly, while the numerical scans substantiate the expressly finite thermal-contingency and candidate-comparison claims. No untested carrier-class exhaustion or physical identification is needed for this bounded surface-local conclusion.
+- **rationale:** The load-bearing content is genuine algebra on the defined circulant family, not a definition, renaming, tuned match, or imported empirical comparator. The runner source performs symbolic diagonalization, projector, edge-product, and determinant computations and independently evaluates the stated thermal grids rather than merely printing expected results. The accepted realized-state primitive is used only to classify varying thermal values as registered data, and the note consistently limits its negative conclusion to the tested classes.
 - **auditor confidence:** high
 
 ### `coulomb_stability_upper_bound_support_note_2026-05-20`

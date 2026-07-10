@@ -33,7 +33,8 @@
   ],
   "cycles_detected": 10,
   "effective_status_counts": {
-    "audited_conditional": 141,
+    "audit_in_progress": 1,
+    "audited_conditional": 139,
     "audited_failed": 16,
     "audited_numerical_match": 10,
     "audited_renaming": 35,
@@ -78,15 +79,14 @@
     "meta": 347,
     "open_gate": 28,
     "retained": 198,
-    "retained_bounded": 942,
+    "retained_bounded": 941,
     "retained_no_go": 210,
-    "retained_pending_chain": 13,
-    "unaudited": 1737
+    "retained_pending_chain": 12,
+    "unaudited": 1740
   },
-  "retained_pending_chain_count": 13,
+  "retained_pending_chain_count": 12,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
-    "flavor_idempotent_u1_collapses_note_2026-05-30",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
     "gate_b_context_independence_no_go_note_2026-06-17",
     "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",

@@ -20,14 +20,15 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 198 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 942 |
-| _retained_pending_chain_ | 13 |
+| **retained_bounded** | 941 |
+| _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1737 |
+| unaudited | 1740 |
+| audit_in_progress | 1 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 141 |
+| ~~audited_conditional~~ | 139 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -71,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 21 |
-| `audited_clean` | 1341 |
-| `audited_conditional` | 141 |
+| `audited_clean` | 1340 |
+| `audited_conditional` | 139 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 35 |
-| `unaudited` | 2084 |
+| `unaudited` | 2087 |
 
 | claim_type | count |
 |---|---:|
@@ -95,7 +96,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 942 |
 | `leaf` | 1645 |
 
-- **Retained pending chain closure:** 13
+- **Retained pending chain closure:** 12
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -146,7 +147,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -522,7 +523,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
-| `flavor_idempotent_u1_collapses_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_interacting_matter_build_note_2026-05-30` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1517,7 +1517,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
-| `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `activity_energy_bound_witnesses_bounded_note_2026-07-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1547,7 +1546,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
-| `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -2194,24 +2192,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
   - `KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`
-- **auditor confidence:** high
-
-### `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11`
-
-- **Note:** [`ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md`](../../docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** A conditional finite-dimensional decomposition in which a supplied hw=1 spectral context makes a nondegenerate sector-to-pattern assignment record-rigid but state-contingent; carrier selection, empirical species matching, and the broader color contrast remain external or model-specific.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00004-acphilambda_species_bridge_r`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Given the supplied readout projectors and a nondegenerate registered pattern, exactly one sector-to-value assignment survives the records, while delta-to-minus-delta changes that assignment, so the realized-state primitive classifies it as registered data rather than derivation output.  _(class `A`)_
-- **chain closes:** False — The algebra closes for the explicitly supplied projectors and circulant family, but the packet does not close the lane-specific identification of those projectors as the physical generation readout context. The canonical record-outcome authority is an unaudited meta proposal, and the retained-bounded grade-1 authority explicitly leaves physical generation identification open.
-- **rationale:** The runner performs genuine class-A finite-dimensional calculations and correctly shows that supplied nondegenerate diagonal records fix one permutation and that the assignment changes under the stated counterfactual. Those calculations do not derive the supplied readout context or its physical-generation semantics; the cited canonical methodology explicitly requires a lane-specific decomposition, while the grade-1 bridge authority calls itself a compatibility candidate and leaves the physical identification open. The one-step color erasure result is additionally restricted to the chosen Fourier channel and does not establish the broader color statement without its unaudited contrast surface.
-- **open / conditional deps cited:**
-  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
-  - `RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md`
-  - `KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`
-  - `STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
 - **auditor confidence:** high
 
 ### `action_crossover_note`
@@ -7309,22 +7289,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The load-bearing route-pruning statement is a direct algebraic identity about scalar matrices and the C3 order condition, not a definition substitution or numerical fit. The runner source actually computes the spectral endpoint, commutator, and order-three rephasing obstruction, while the charged-sector and neutrino values are correctly bounded as empirical comparators rather than promoted to selectors. The packet explicitly does not claim that physical Standard Model gauge U(1) actions are generation-scalar or that a physical det_C/det_R selector has been derived.
 - **auditor confidence:** high
 
-### `flavor_carrier_from_axioms_momentum_forced_2026-05-31`
-
-- **Note:** [`FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** The combined parent packet: momentum/BZ carrier-type resolution on the finite periodic 2×2×2 representative, with the physical hw=1 locus, r=1/2 basepoint, and delta=2/9 readout selection left open.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-flavor_carrier_from_axio-043`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** The joint spectral decomposition of the commuting translations forces flavor-separating resolution onto the momentum/BZ factor, while selecting the physical hw=1 locus still requires the imported staggered/Kawamoto-Smit chiral operator class.  _(class `C`)_
-- **chain closes:** False — The finite translation calculation supports the bounded Layer-A distinction within position-diagonal local readouts. The packet does not derive the staggered/KS hw=1 physical locus, r=1/2, or selection of the index-density readout.
-- **rationale:** Issue: the physical hw=1 locus, continuous r=1/2 basepoint, and delta=2/9 readout class remain explicit imports or selections. Why this blocks: the retained bounded translation theorem resolves only momentum versus position within its tested readout class, not the full physical generation carrier. Repair target: retained bridge theorems must force the staggered/KS hw=1 locus and independently select r=1/2 and the index-density readout. Claim boundary until fixed: cite the split theorem for Layer A and use this parent only as a conditional integration map.
-- **open / conditional deps cited:**
-  - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
-  - `KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`
-- **auditor confidence:** high
-
 ### `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`
 
 - **Note:** [`FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md)
@@ -7548,19 +7512,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Schur-complement induced hw=1 off-diagonal generation hopping cancels exactly for the specified staggered single-bit-flip operator, leaving b=0 while the diagonal term is nonzero, hence r=|b|^2/a^2=0.  _(class `C`)_
 - **chain closes:** True — The packet supplies the operator, sector, runner output, and runner source; the source explicitly constructs the matrices and computes the direct block and Schur complement rather than importing or printing the contested result. An independent sign-path check agrees: each hw=1 off-diagonal coupling has paired second-order paths through vacuum and a double-excitation state with opposite staggered signs, so the induced hopping cancels for this operator.
 - **rationale:** The load-bearing step is a finite first-principles computation from the displayed one-qubit operator algebra and the specified hw=1 projection. No upstream authorities, empirical comparators, fitted values, or open bridges are used. The no-go is narrow: it closes only this staggered single-bit-flip projection route and explicitly leaves other action, bivector, dynamical, and sector-factorized routes open.
-- **auditor confidence:** high
-
-### `flavor_idempotent_u1_collapses_note_2026-05-30`
-
-- **Note:** [`FLAVOR_IDEMPOTENT_U1_COLLAPSES_NOTE_2026-05-30.md`](../../docs/FLAVOR_IDEMPOTENT_U1_COLLAPSES_NOTE_2026-05-30.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The audited claim is the finite algebraic route-pruning statement that the native equal-doublet idempotent U(1) is inert on circulant Hermitian Hamiltonians, one-sided multiplication is not the Hermitian signed readout route, and opposite doublet charge exits the idempotent span; the ordering table is only a comparator.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29`)
-- **auditor:** `codex-cli-gpt-5.5-20260607-180014-122f6f19a8-flavor_idempotent_u1_collaps`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** In the Fourier/idempotent decomposition, the equal-doublet U(1) is scalar on the singlet and doublet projectors so U H U^dagger = H for circulant H, while the opposite doublet charge P1 - P2 has unequal doublet eigenvalues and is outside span{Ps,Pd}.  _(class `A`)_
-- **chain closes:** True — The projector algebra closes directly: Ps and Pd commute with C, any C3-circulant H is diagonal in the same Fourier basis, and U is scalar on the two idempotent blocks, so conjugation is inert. Also P1+P2=Pd, whereas P1-P2 has Fourier eigenvalues (0,1,-1), impossible for any alpha Ps + beta Pd whose doublet eigenvalues are equal.
-- **rationale:** The load-bearing math is a genuine class-A finite matrix identity over the supplied C3/idempotent inputs and retained one-hop authorities. An independent Fourier-basis check confirms the commutation, conjugation inertness, equal-doublet projector identity, and outside-span status of the opposite charge without relying on the runner implementation. The note explicitly demotes the observed sector ordering to a non-load-bearing comparator and does not claim a global sector selector or blanket absence of continuous doublet actions.
 - **auditor confidence:** high
 
 ### `flavor_interacting_matter_build_note_2026-05-30`

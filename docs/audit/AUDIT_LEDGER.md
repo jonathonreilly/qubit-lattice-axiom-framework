@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 932 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1839 |
+| unaudited | 1838 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 66 |
+| ~~audited_conditional~~ | 67 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1340 |
-| `audited_conditional` | 66 |
+| `audited_conditional` | 67 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2184 |
+| `unaudited` | 2183 |
 
 | claim_type | count |
 |---|---:|
@@ -1497,6 +1497,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
+| `charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `confinement_string_tension_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -3553,6 +3554,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the Brannen carrier Q=(c^2+2)/6 is independent of delta, and cyclic relabelings preserve Q and unordered ratios while moving the largest slot label.  _(class `A`)_
 - **chain closes:** True — The negative firewall closes: even granting the Q and Brannen support values, the data do not select a physical generation or tau-scale label. The note explicitly leaves Q source selection, selected-line endpoint/readout, and generation selection as residuals.
 - **rationale:** The runner verifies phase-erasure of Q, conditional status of the source and endpoint support, cyclic relabeling of the largest slot, and comparator-only use of PDG masses. That is sufficient for the no-go that Q plus Brannen phase support is not a standalone generation/tau-scale selector. It does not audit or retain native Q closure or delta/radian closure.
+- **auditor confidence:** high
+
+### `charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02`
+
+- **Note:** [`CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md`](../../docs/CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The algebraic consequences Q=2/3 and delta=2/9 conditional on explicit selector premises; no derivation of either selector was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-charged_lepton_koide_two-067`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Consuming the cited AC_phi_lambda registry premise is asserted to supply both r^2/a^2=1/2 and the delta readout, after which elementary algebra gives Q=2/3 and delta=2/9.  _(class `B`)_
+- **chain closes:** False — The current registry authority says AC_phi_lambda has been retired from live Tier A and that its owner-governed boundary supplies no value of r or delta. The cited staggered-Dirac carrier supplies species-labeling structure, not the two selector premises required here.
+- **rationale:** The algebra following r^2/a^2=1/2 and delta=Q/3 is correct, but the load-bearing move is cross-note premise consumption rather than a first-principles computation. The current registry text directly contradicts the runner's stale claim that AC_phi_lambda remains a live Tier-A admission covering both gates. The runner checks file presence rather than registry content and hard-codes several hostile-review checks as true, so its 25/25 result does not close the missing premise edge.
+- **open / conditional deps cited:**
+  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
+  - `audit/data/tier_a_admissions.json`
 - **auditor confidence:** high
 
 ### `charged_lepton_koide_value_full_chain_of_custody_2026-06-02`

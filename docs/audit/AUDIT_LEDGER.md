@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 944 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1733 |
+| unaudited | 1734 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 130 |
+| ~~audited_conditional~~ | 129 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -71,14 +71,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 15 |
-| `audited_clean` | 1359 |
-| `audited_conditional` | 130 |
+| `audit_in_progress` | 14 |
+| `audited_clean` | 1360 |
+| `audited_conditional` | 129 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2080 |
+| `unaudited` | 2081 |
 
 | claim_type | count |
 |---|---:|
@@ -133,7 +133,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 19 | `kinetic_isotropy_primitive` | meta | critical | 468 | 35.37 | `unaudited` | meta |
 | 20 | `three_generation_structure_note` | bounded_theorem | critical | 1011 | 34.98 | `audited_clean` | **retained_bounded** |
 | 21 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 296 | 34.71 | `unaudited` | unaudited |
-| 22 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 589 | 34.20 | `audited_conditional` | ~~audited_conditional~~ |
+| 22 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 589 | 34.20 | `unaudited` | unaudited |
 | 23 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 434 | 33.77 | `audited_clean` | **retained** |
 | 24 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1473 | 33.53 | `audited_clean` | **retained_bounded** |
 | 25 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 834 | 32.71 | `unaudited` | unaudited |
@@ -156,7 +156,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | C | - |
 | `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1333,6 +1332,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_wigner_l3_treewidth_infeasible_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_wilson_closed_form_fanout_theorem_note_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `substrate_to_p_a_forcing_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `susceptibility_density_vanishes_identically_1d_ibp_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `symmetry_generated_paired_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -1538,7 +1538,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
-| `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -2973,23 +2972,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On each positive eigenvalue subspace, D maps the epsilon=+1 part bijectively to the epsilon=-1 part, so the nonzero modes cancel and Tr(epsilon exp(-t D†D)) equals the zero-mode chirality count.  _(class `A`)_
 - **chain closes:** True — Even periodic nearest-neighbor hopping gives exact anticommutation with epsilon, while anti-Hermiticity makes D†D commute with epsilon and enables the nonzero-mode pairing argument. Gauge invariance and the background invariants then follow from finite matrix conjugation and direct link/plaquette calculations.
 - **rationale:** The load-bearing result is a genuine finite-dimensional algebraic closure, and the supplied runner constructs the staggered operators and evaluates all asserted residuals rather than merely printing expected outcomes. All 58 checks are algebraic or spectral checks of the stated bounded identities, with no external comparator, tuned physical input, or open identification. The claim remains properly narrowed away from any continuum anomaly, nonzero-index existence, or Wess-Zumino cohomology conclusion.
-- **auditor confidence:** high
-
-### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
-
-- **Note:** [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite staggered-only SU(3) Wilson lattices with m > 0, two-step-block-invariant positive-half observables, and the proposed U-integrated two-step reflection-positive Gram form.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153334Z-4f7da8c1-00001-axiom_first_reflection_posit`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** The parent reflected form is asserted to decompose into four non-negative gauge, determinant, gauge-half, and fixed-background fermion-transfer factors, with finite linear combinations inheriting a positive-semidefinite Gram form.  _(class `A`)_
-- **chain closes:** False — The retained authorities separately establish pure-gauge integrated kernel positivity, positive determinant sign, and fermion-transfer positivity for a fixed spatial background. They do not prove that these objects form a joint positive kernel for non-time-symmetric dynamical gauge configurations; pointwise determinant positivity and separate diagonal non-negativity do not imply the asserted coupled Gram positivity.
-- **rationale:** The runner genuinely checks the free two-step fermion construction and the SU(3) pure-gauge plane and composed Grams, while its remaining guards verify text and retained dependency status. It never constructs the full coupled staggered-fermion plus dynamical-gauge reflected Gram or verifies the displayed four-factor identity. The fixed-background fermion theorem and pure-gauge composed-Gram theorem explicitly stop on opposite sides of this missing compatibility step, so polarization of the combined generators is not established.
-- **open / conditional deps cited:**
-  - `RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`
-  - `AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
-  - `SU3_WILSON_PLANE_KERNEL_CHARACTER_POSITIVITY_AND_COMPOSED_GRAM_NARROW_THEOREM_NOTE_2026-07-09.md`
 - **auditor confidence:** high
 
 ### `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05`
@@ -20490,6 +20472,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner evaluates the four named closed-form approximations at beta = 6 and obtains (M1, M2, M4, M5) = (0.4225, 0.3333, 0.8740, 0.6667), with the MC gap statement explicitly conditional on imported comparator values.  _(class `C`)_
 - **chain closes:** True — The quartet closes from the displayed closed-form definitions and direct numerical evaluation: independent Weyl-torus Haar quadrature gives M1 = 0.42253173965 and the z = 6 fixed point M4 = 0.87404899494, while M2 and M5 reduce to 6/18 and 1 - 2/6. The MC and epsilon values are not used to derive the quartet and enter only the conditional gap arithmetic.
 - **rationale:** The source note has narrowed the theorem to the internally computed quartet and clearly marks the MC/epsilon comparison as comparator-conditional. The primary runner genuinely computes M1 and M4 from character-coefficient evaluation and a fixed-point solve, while M2 and M5 are algebraic evaluations of the displayed formulas; the MC comparator is not an input to those values. An independent Weyl-integral check, not sharing the runner's Bessel-determinant path, reproduces the nontrivial M1 and M4 values. The retained cited authorities are contextual and no open upstream is load-bearing for this narrowed numerical record.
+- **auditor confidence:** high
+
+### `su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09`
+
+- **Note:** [`SU3_WILSON_PLANE_KERNEL_CHARACTER_POSITIVITY_AND_COMPOSED_GRAM_NARROW_THEOREM_NOTE_2026-07-09.md`](../../docs/SU3_WILSON_PLANE_KERNEL_CHARACTER_POSITIVITY_AND_COMPOSED_GRAM_NARROW_THEOREM_NOTE_2026-07-09.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For beta >= 0, the pure-gauge fundamental SU(3) Wilson plane kernel has nonnegative character coefficients, and its two-slice temporal-gauge form is a positive-semidefinite normalized Gram form for bounded plus-slice observables at every finite L_s, without fermions or continuum or thermodynamic limits.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00016-su3_wilson_plane_kernel_char`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Expanding exp(beta chi_(rho oplus rhobar)/2) into tensor-power characters expresses every character coefficient as a convergent sum of nonnegative integer multiplicities.  _(class `A`)_
+- **chain closes:** True — Absolute convergence justifies the character-series rearrangement, and tensor-product multiplicities are nonnegative integers. The matrix-coefficient factorization, Schur orthogonality, and product-kernel argument then establish the kernel criterion and integrated Gram positivity.
+- **rationale:** The load-bearing multiplicity expansion is a genuine algebraic closure using standard compact-group representation theory, not a definition, tuned match, or imported coefficient sign. The sole cited authority is retained_bounded, and the note also supplies a direct bounded-observable product-kernel proof within its stated two-slice scope. The primary and helper sources perform substantive exact and numerical checks, including discriminating negative controls, and the cached primary run reports 31 PASS and 0 FAIL.
 - **auditor confidence:** high
 
 ### `substrate_to_p_a_forcing_theorem_note_2026-04-30`

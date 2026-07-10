@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 195 |
 | **retained_no_go** | 210 |
 | **retained_bounded** | 938 |
-| _retained_pending_chain_ | 8 |
+| _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1806 |
+| unaudited | 1805 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -68,16 +68,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1348 |
 | `audited_conditional` | 85 |
-| `audited_decoration` | 58 |
+| `audited_decoration` | 59 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2151 |
+| `unaudited` | 2150 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2037 |
-| `decoration` | 60 |
+| `bounded_theorem` | 2036 |
+| `decoration` | 61 |
 | `meta` | 351 |
 | `no_go` | 481 |
 | `open_gate` | 183 |
@@ -90,7 +90,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 954 |
 | `leaf` | 1628 |
 
-- **Retained pending chain closure:** 8
+- **Retained pending chain closure:** 9
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -1598,6 +1598,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_canonical_convention_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `gate_b_weak_field_source_action_interface_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | cross_family | codex-gpt-5.5 | A | `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
+| `gravity_clean_derivation_note` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026_06_11` |
 | `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` |
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
 | `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
@@ -9349,6 +9350,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Under the configured probe parameters, the mean phase delta from the static v=0 baseline is monotonic in v_z, with small-|v| deltas approximately antisymmetric and the |v|=0.5 antisymmetry failing.  _(class `C`)_
 - **chain closes:** True — The retained bounded claim follows on its own restricted terms: the supplied runner source computes the reported phases from the configured DAG, propagator, imposed source trajectory, and static baseline, and the cached stdout matches the note's table. No GR, Shapiro, or self-consistent moving-source bridge is closed or claimed within the retained scope.
 - **rationale:** For the bounded diagnostic actually retained, the runner is not a constant-printing or hard-coded expected-value script; it constructs the configured grown families, propagates amplitudes, computes phases, and subtracts the v=0 baseline. The output supports monotonic increase in v_z, approximate antisymmetry only at |v|=0.2, and failure of full antisymmetry at |v|=0.5, matching the revised note. The broader gravitomagnetic/Shapiro and self-consistent moving-source claims are explicitly excluded, so they are not part of the audited closure.
+- **auditor confidence:** high
+
+### `gravity_clean_derivation_note`
+
+- **Note:** [`GRAVITY_CLEAN_DERIVATION_NOTE.md`](../../docs/GRAVITY_CLEAN_DERIVATION_NOTE.md)
+- **claim_type:** `decoration`
+- **claim_scope:** The large-distance 1/r potential and bilinear inverse-square test-source force in lattice units, conditional on the named retained-bounded weak-field and Green-kernel inputs.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** _retained_pending_chain_  (reason: `decoration_waiting_on:gravity_weak_field_source_response_bridge_bounded_theorem_note_2026_06_11`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00007-gravity_clean_derivation_not`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Combining the retained Green-kernel asymptotic with the first-order test-source response and Poisson linearity gives |F_12| proportional to M_1 M_2/r^2.  _(class `A`)_
+- **chain closes:** True — The conclusion follows by substituting the retained 1/(4 pi r) Green asymptotic into the retained weak-field response and differentiating. However, the upstream weak-field bridge already states this same composed conclusion.
+- **rationale:** The weak-field bridge already supplies the operator inverse, source readout, bilinear test response, and—when composed with the retained Green normalization—the same 1/r and inverse-square conclusion. The parent runner's five scientific checks are direct algebraic substitutions and ratios; its other 71 checks verify files, wording, links, and cache metadata. The row therefore adds no independent physical or computational result beyond its retained upstream parent.
+- **decoration parent:** `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026_06_11`
 - **auditor confidence:** high
 
 ### `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07`

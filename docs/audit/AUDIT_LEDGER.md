@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 936 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1814 |
+| unaudited | 1813 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
 | ~~audited_conditional~~ | 83 |
-| ~~audited_failed~~ | 4 |
+| ~~audited_failed~~ | 5 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -66,10 +66,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1345 |
 | `audited_conditional` | 83 |
 | `audited_decoration` | 55 |
-| `audited_failed` | 26 |
+| `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2159 |
+| `unaudited` | 2158 |
 
 | claim_type | count |
 |---|---:|
@@ -1651,6 +1651,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | E | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -19943,6 +19944,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting V → V† and using w(X†) = w(X) for real class weights gives G(S₁†,…,Sₖ†) = G(S₁,…,Sₖ), which combined with the SU(2) symmetric-trace identity makes the star pairwise-reducible.  _(class `A`)_
 - **chain closes:** False — A real-valued class weight on a general compact group need not satisfy w(g†) = w(g); for example, positive real class functions on U(1) can contain an inversion-odd sine component. The runner tests only SU(2), where inversion preserves conjugacy classes, so it cannot establish the advertised group-general theorem or its SU(3) transfer.
 - **rationale:** The 14 runner checks genuinely support the stated finite SU(2) examples and algebraic identities, with no external comparator or imported numerical premise. However, the load-bearing generalization incorrectly treats real-valued centrality as dagger-evenness; an explicit inversion-even hypothesis is missing. Moreover, diagonal-conjugation invariance and one independent-conjugation witness establish factorization through joint orbits and nontrivial joint dependence, but not that the observables separate or expose precisely all diagonal-orbit data.
+- **auditor confidence:** high
+
+### `theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01`
+
+- **Note:** [`THETA_MASS_ORIENTATION_ZERO_BRANCH_PAIRING_FORCED_ON_K_REAL_SURFACE_NARROW_THEOREM_NOTE_2026-07-01.md`](../../docs/THETA_MASS_ORIENTATION_ZERO_BRANCH_PAIRING_FORCED_ON_K_REAL_SURFACE_NARROW_THEOREM_NOTE_2026-07-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Determinant nonnegativity and claimed zero-orientation selection for real scalar masses, Hermitian flavor-factor masses, and squared masses on the finite even-dimensional real-antisymmetric Case-A surface.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-theta_mass_orientation_z-096`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The paired spectrum gives det(M_KS + mI) = product over (m^2 + lambda^2) times m^(2z) >= 0, from which the note infers arg det = 0 on the whole real mass line.  _(class `A`)_
+- **chain closes:** False — The determinant formulas close algebraically, but the claimed orientation conclusion does not: when m = 0 and M_KS has a nontrivial kernel, det(M_KS) = 0 and arg det is undefined, not 0. The same defect occurs for flavor spectra producing a zero determinant.
+- **rationale:** The pairing, tensor-factorization, and squared-determinant identities are correct within the stated even-dimensional hypotheses. However, the headline conclusion covers every real mass and every Hermitian spectrum, while the supplied runner omits m = 0 and exact zero-root flavor cases despite exhibiting a configuration with kernel dimension two. Nonnegativity at a determinant zero does not define an orientation phase, so the asserted whole-surface collapse to arg det = 0 fails as written.
 - **auditor confidence:** high
 
 ### `theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11`

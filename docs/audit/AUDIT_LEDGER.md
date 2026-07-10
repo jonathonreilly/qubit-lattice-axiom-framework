@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 28 |
-| unaudited | 1727 |
+| unaudited | 1726 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 33 |
+| ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 126 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -76,14 +76,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 67 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 33 |
-| `unaudited` | 2072 |
+| `audited_renaming` | 34 |
+| `unaudited` | 2071 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2026 |
+| `bounded_theorem` | 2025 |
 | `decoration` | 69 |
-| `meta` | 353 |
+| `meta` | 354 |
 | `no_go` | 482 |
 | `open_gate` | 183 |
 | `positive_theorem` | 602 |
@@ -1779,6 +1779,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `post_record_production_dynamics_needed_row_map_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_retained_unbounded_dynamics_gate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `record_axiom_audit_application_map_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `record_markov_generator_premise_classifier_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -17625,6 +17626,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The retained parent supplies the two-class surface and representative symbols, while the retained M2(C)/Cl(3) authorities supply the qubit algebra. Standard 2×2 matrix and Fourier algebra then establishes the scoped discriminators without an additional premise.
 - **rationale:** The load-bearing work is class (A): it evaluates elementary consequences of the single retained kinetic-class parent and standard M2(C) algebra. The runner performs genuine calculations and contains no external-comparator checks, but it does not derive a new kinetic class or select the residual bit. The note correctly leaves the semantic bridge to the Admissibility axiom open.
 - **decoration parent:** `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`
+- **auditor confidence:** high
+
+### `record_axiom_audit_application_map_2026-06-06`
+
+- **Note:** [`RECORD_AXIOM_AUDIT_APPLICATION_MAP_2026-06-06.md`](../../docs/RECORD_AXIOM_AUDIT_APPLICATION_MAP_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** The finite classifier assigning seven record-sensitive lane shapes to gates declared supported or still missing under the Record schema, without promoting downstream claims or applying audit verdicts.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00091-record_axiom_audit_applicati`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Record supports durable realized outcomes, finite additive scalar readout, arbitrary finite-prefix count/readout schemas, and post-record label consumption.  _(class `E`)_
+- **chain closes:** False — The runner computes set differences only after hard-coding both the Record-supported gate set and every lane's required gates. Neither the Record axiom content nor a derivation of those gate assignments is included, so the substantive classification is assumed rather than established.
+- **rationale:** The runner genuinely checks file existence, anchor phrases, and internal set consistency, but its load-bearing support map is introduced as a constant. Its 39 passing checks therefore validate a stipulated classifier rather than derive the classifier from the Record axiom. The result is useful as bounded audit metadata, but it is definition-grade rather than theorem-grade.
 - **auditor confidence:** high
 
 ### `record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07`

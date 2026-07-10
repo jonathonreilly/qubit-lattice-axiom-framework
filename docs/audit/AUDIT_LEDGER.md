@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 926 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
-| unaudited | 1864 |
+| unaudited | 1863 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 57 |
+| ~~audited_conditional~~ | 58 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 18 |
 | `audited_clean` | 1326 |
-| `audited_conditional` | 57 |
+| `audited_conditional` | 58 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2209 |
+| `unaudited` | 2208 |
 
 | claim_type | count |
 |---|---:|
@@ -1491,6 +1491,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `confinement_string_tension_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5291,6 +5292,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** theorem on the open DM gate; it cannot derive the A-BCC axiom  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 3 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18`
+
+- **Note:** [`DM_EFFECTIVE_PARENT_ONE_CLOCK_TRANSFER_BOUNDARY_THEOREM_NOTE_2026-04-18.md`](../../docs/DM_EFFECTIVE_PARENT_ONE_CLOCK_TRANSFER_BOUNDARY_THEOREM_NOTE_2026-04-18.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The proposed finite-lattice enlarged gauge–fermion one-clock transfer representation and the asserted edge-factorization requirement for a memoryless gauge-only effective parent.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-dm_effective_parent_one_-066`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Nearest-neighbor temporal locality plus the Berezin/Fock identification turns the sliced Wilson–staggered Boltzmann weight into a cyclic product of one-step operators, yielding an exact graded transfer trace.  _(class `A`)_
+- **chain closes:** False — The packet does not construct the retained staggered-fermion transfer operator or establish the APBC trace/parity convention on the claimed slice space. The gauge-only necessity argument also requires configuration-by-configuration history-weight equality, which is stronger than the stated partition-trace equality and is only assumed verbally.
+- **rationale:** The runner keyword-checks four upstream statements and verifies six algebraic or numerical properties of an unrelated three-mode toy; it never constructs or checks the claimed retained-lattice operator. In particular, the APBC-to-supertrace convention and the exact slice space are not established. The cited DM correctness audit is also meta rather than retained-grade, independently requiring a conditional verdict under the rubric.
+- **open / conditional deps cited:**
+  - `DM_WILSON_PARENT_CORRECTNESS_AUDIT_NOTE_2026-04-18.md`
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16`

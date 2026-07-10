@@ -44,8 +44,7 @@ Parts:
      HK weight: Z_N exact over all configurations; dropped-conjugation
      negative control (non-PSD); manifest factorization G = W diag(kappa)
      W^dag with plane-kernel eigenvalues kappa >= 0; U(1) quadrature Gram;
-     SU(2) and SU(3) seeded Monte-Carlo Grams (the SU(3) case is the one
-     the Wilson-weight route had no derivable coefficient-positivity for).
+     SU(2) and SU(3) seeded Monte-Carlo Grams.
 
 Literature disclaimer: Osterwalder & Seiler, Ann. Phys. 110 (1978) 440, and
 Montvay & Munster, "Quantum Fields on a Lattice" Sec. 3.4, are comparators
@@ -751,7 +750,7 @@ def part_e():
 
 def main() -> int:
     print("=" * 88)
-    print("Heat-kernel gauge action: native RP plane character positivity, all compact groups")
+    print("Heat-kernel gauge action: native RP plane character positivity on specified heat semigroups")
     print("companion runner for the 2026-07-09 narrow theorem note")
     print("=" * 88)
     part_a()

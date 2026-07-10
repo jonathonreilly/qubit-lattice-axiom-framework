@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_heat_kernel_native_rp_plane_character_positivity_2026_07_09.py
-runner_sha256: 40d28bec8b8351ebe3c4facb3bfeb9b9c59e785a2c7378b2bd1e158084fc205c
+runner_sha256: c936168f6122a4480b8335f1762503644c60f349044a38c82a515a70374157c0
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 14.20
+elapsed_sec: 10.62
 status: ok
 ----- stdout -----
 ========================================================================================
-Heat-kernel gauge action: native RP plane character positivity, all compact groups
+Heat-kernel gauge action: native RP plane character positivity on specified heat semigroups
 companion runner for the 2026-07-09 narrow theorem note
 ========================================================================================
 
@@ -46,13 +46,13 @@ Part D -- H2 cut factorization: chi(AB^dag) = sum_ij pi(A)_ij conj(pi(B)_ij)
   [PASS] D1: Z_5 factorization exact for all reps and group pairs  (max dev=1.6e-16)
   [PASS] D2: SU(2) symmetric-power reps: homomorphism, unitarity, trace = character  (hom=5.8e-16, unit=8.9e-16, tr=2.0e-15)
   [PASS] D3: SU(2) factorization chi_j(AB^dag) = sum_ij pi_j(A)_ij conj(pi_j(B)_ij)  (max dev=1.3e-15)
-  [PASS] D4: SU(3) adjoint: real, orthogonal, homomorphism, trace = |TrU|^2-1 = s_(1,1)  (im=5.6e-17, orth=6.7e-16, hom=3.4e-16, tr=2.8e-16, schur=5.1e-16)
-  [PASS] D5: SU(3) factorization, fundamental and adjoint  (fund=1.1e-16, adj=6.7e-16)
+  [PASS] D4: SU(3) adjoint: real, orthogonal, homomorphism, trace = |TrU|^2-1 = s_(1,1)  (im=5.6e-17, orth=2.6e-16, hom=2.5e-16, tr=1.4e-16, schur=7.2e-16)
+  [PASS] D5: SU(3) factorization, fundamental and adjoint  (fund=2.5e-16, adj=8.9e-16)
 
 ----------------------------------------------------------------------------------------
 Part E -- H3: integrated reflected Gram PSD with the HK weight
 ----------------------------------------------------------------------------------------
-  [PASS] E1: Z_N exact Gram PSD (N in {2,3,4,5}, t in {0.3,1.0,2.5})  (Z_2(t=0.3): min=-5.4e-16; Z_2(t=1.0): min=-5.3e-17; Z_2(t=2.5): min=-2.3e-18; Z_5(t=0.3): min=+1.1e-02 ...)
+  [PASS] E1: Z_N exact Gram PSD (N in {2,3,4,5}, t in {0.3,1.0,2.5})  (Z_2(t=0.3): min=-3.9e-16; Z_2(t=1.0): min=-4.6e-17; Z_2(t=2.5): min=-3.1e-18; Z_5(t=0.3): min=+1.1e-02 ...)
   [PASS] E2: dropped-conjugation control is NOT PSD (Z_4)  (min eig=-1.7253)
   [PASS] E3: manifest factorization G = W diag(kappa) W^dag, kappa >= 0 (Z_4, t=1.0)  (match dev=1.4e-13, kappa_min=+2.9e-01)
   [PASS] E4: U(1) quadrature Gram PSD (24-point grid, t in {0.5,1.5})  (t=0.5: min=+4.6e-03; t=1.5: min=+4.3e-02)

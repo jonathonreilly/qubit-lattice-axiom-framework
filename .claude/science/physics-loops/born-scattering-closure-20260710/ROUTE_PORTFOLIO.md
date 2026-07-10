@@ -17,3 +17,21 @@ covariance, angular/coherence measure, and direct signed-kernel reconstruction.
 The exact-observable route has the best direct reach to the audit blocker. The
 dispersion-first route cannot close the detector-centroid bridge by itself and
 is not allowed to launder a phase law into an observable law.
+
+## Stuck fan-out synthesis checkpoint 2
+
+All four selected frames were executed.
+
+1. **Exact-observable compatibility:** the literal response is the recomputed
+   signed-adjoint edge law; the plane ray has a different cross-path shape.
+2. **Scale covariance:** exact `I(rho b;rho x,rho L)=rho^-1 I(b;x,L)` and the
+   endpoint-matched fits expose a `0.282053262` plane-shape change.
+3. **3D angular beam:** the positive 3D marginal leaves the zero-impact
+   `2/b_eff` pole intact; the ordinary expectation is undefined.
+4. **Direct adjoint b-law:** target-constant-free builds at the explicitly
+   supplied, historically tuned `beta=0.8` fixture give slopes `-1.435642062` and
+   `-1.433548534`, a shape change of only `0.002093528`.
+
+The frames agree on a bounded finite-harness negative result for the eikonal
+identification, with an exact Gaussian pole subtheorem. They preserve the
+signed-adjoint law as the positive bounded-support residual.

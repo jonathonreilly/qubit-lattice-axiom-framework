@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1805 |
+| unaudited | 1804 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 85 |
+| ~~audited_conditional~~ | 86 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -67,12 +67,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1348 |
-| `audited_conditional` | 85 |
+| `audited_conditional` | 86 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2150 |
+| `unaudited` | 2149 |
 
 | claim_type | count |
 |---|---:|
@@ -1523,6 +1523,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_action_predicts_q1_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
@@ -6650,6 +6651,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Because n_x has eigenvalues 0 and 1 on each tensor factor, F = exp(i pi sum_x n_x) acts as (-1)^{sum_x nu_x} = tensor_x sigma_{3,x}, which yields the parity eigenspaces and odd/even commutation rules.  _(class `A`)_
 - **chain closes:** True — The proof closes from the admitted finite-dimensional spectral calculus, per-site Pauli ladder construction, and tensor-product Fock basis. The runner source actually constructs the matrices for N=4 and verifies the relevant algebraic identities rather than merely printing constants.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the admitted finite-dimensional occupation basis and Pauli definitions. No cross-note authority, external comparator, fitted input, or physical fermion-statistics/superselection premise is imported. The proof appropriately keeps the dynamical conservation and physical selector claims conditional, so the audited algebraic scope follows.
+- **auditor confidence:** high
+
+### `fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09`
+
+- **Note:** [`FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md`](../../docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional covariance of weak operators and hopping-link matrices under local U(3) fibre-basis changes, conditional on a supplied weak-sector Record context and a common graph-fibre/hopping carrier.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00008-fiber_frame_local_redundancy`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Conjugation by independent local fibre frames rewrites the hopping block as G H[U] G^dag = H[g_x U g_y^dag], so U=I becomes g_x g_y^dag.  _(class `A`)_
+- **chain closes:** False — The matrix covariance identities close algebraically, but the cited authorities do not supply the claimed Record readout context with P_up and P_down as central sectors or a bridge placing the graph-first C^2_weak tensor C^3_fibre carrier on the tensor-product hopping surface. The current minimal-axiom authority explicitly leaves central-sector decomposition and context-specific readout structure downstream.
+- **rationale:** The runner genuinely verifies the stated finite-matrix identities and contains no external comparator or tuned numerical input. Those computations establish basis covariance once the combined carrier, link action, and weak-projector readout context are assumed. They do not establish those structures from the restricted cited packet, and the minimal-axiom authority expressly disclaims the required central-sector readout content.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-06-29.md`
 - **auditor confidence:** high
 
 ### `field_equation_derivation_note`

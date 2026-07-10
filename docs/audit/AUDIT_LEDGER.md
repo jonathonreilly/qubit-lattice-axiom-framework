@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 925 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1759 |
+| unaudited | 1758 |
 | audit_in_progress | 8 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 134 |
+| ~~audited_conditional~~ | 135 |
 | ~~audited_failed~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,21 +73,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1339 |
-| `audited_conditional` | 134 |
+| `audited_conditional` | 135 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 32 |
-| `unaudited` | 2106 |
+| `unaudited` | 2105 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2047 |
 | `decoration` | 71 |
 | `meta` | 355 |
-| `no_go` | 483 |
+| `no_go` | 484 |
 | `open_gate` | 184 |
-| `positive_theorem` | 599 |
+| `positive_theorem` | 598 |
 
 | criticality | count |
 |---|---:|
@@ -1548,6 +1548,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -11147,6 +11148,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
   - `KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`
   - `STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`
 - **auditor confidence:** high
+
+### `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29`
+
+- **Note:** [`KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/KOIDE_C3_GENERATOR_REPHASING_OBSTRUCTION_NARROW_THEOREM_NOTE_2026-05-29.md)
+- **claim_type:** `no_go`
+- **claim_scope:** For the 3x3 order-three cyclic shift, scalar generator rephasing preserves `C^3 = I` only at cube-root phases; commuting centralizers and generation-blind scalar phases leave `b` unchanged, while diagonal corner phases either exit the circulant class or reduce to a cube-root character.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00028-koide_c3_generator_rephasing`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Since `(exp(i alpha) C)^3 = exp(3 i alpha) I`, the rephased generator preserves `C^3 = I` exactly when `exp(3 i alpha) = 1`.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional scalar-rephasing obstruction itself follows exactly. The mandatory no-go chain does not close because the source explicitly leaves tensor-factor chirality and non-circulant routes untested.
+- **rationale:** The load-bearing equation and the centralizer, gauge-phase, and diagonal-phase distinctions are valid class-A matrix algebra over the retained order-three carrier. The runner materially computes all 13 reported checks, although some continuum statements are sampled rather than exhaustively established by the code; the note's symbolic proof supplies the exact argument. Under the required no-go discipline, however, the explicitly open tensor-factor chirality/non-circulant route prevents a terminal no-go verdict.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial_narrowing`)
+  - **gate failures:**
+    - N1: the separate tensor-factor chirality/non-circulant route is explicitly untested and open, so the alternative-route set is incomplete.
 
 ### `koide_carrier_locus_decomposition_note_2026-06-01`
 

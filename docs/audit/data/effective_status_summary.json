@@ -3,9 +3,9 @@
     "bounded_theorem": 2047,
     "decoration": 71,
     "meta": 355,
-    "no_go": 483,
+    "no_go": 484,
     "open_gate": 184,
-    "positive_theorem": 599
+    "positive_theorem": 598
   },
   "cycle_examples": [
     [
@@ -34,7 +34,7 @@
   "cycles_detected": 10,
   "effective_status_counts": {
     "audit_in_progress": 8,
-    "audited_conditional": 134,
+    "audited_conditional": 135,
     "audited_failed": 15,
     "audited_numerical_match": 10,
     "audited_renaming": 32,
@@ -82,7 +82,7 @@
     "retained_bounded": 925,
     "retained_no_go": 209,
     "retained_pending_chain": 16,
-    "unaudited": 1759
+    "unaudited": 1758
   },
   "retained_pending_chain_count": 16,
   "retained_pending_chain_examples": [

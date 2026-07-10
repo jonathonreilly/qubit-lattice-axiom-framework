@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 953 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1708 |
+| unaudited | 1707 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 134 |
+| ~~audited_conditional~~ | 135 |
 | ~~audited_failed~~ | 12 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1370 |
-| `audited_conditional` | 134 |
+| `audited_conditional` | 135 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2053 |
+| `unaudited` | 2052 |
 
 | claim_type | count |
 |---|---:|
@@ -1650,6 +1650,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `three_family_card_missing_distance_live_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
+| `u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `wilson_m_h_per_channel_closure_bounded_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -21987,6 +21988,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The prior U4 wording is treated as exactly the current one-qubit-per-site Quantum axiom plus the retained Cl(3,0) complexification split, yielding k=1 and dim_C H_x=2.  _(class `F`)_
 - **chain closes:** False — The alias map itself is internally consistent and runner-checked, but no independent theorem-grade derivation is supplied beyond restating the accepted qubit-per-site baseline. A clean theorem would need a nontrivial derivation not reducible to this symbol/wording identification.
 - **rationale:** The runner passes all 15 checks and verifies the Pauli/M2(C)/Cl(3,0) facts plus the source boundary text. The source note itself says the claim is source-side alias or renaming support, not a new theorem-grade derivation, and preserves downstream auditor ownership. Under the rubric this is class F: a correct identification between existing concepts rather than an independent derivation.
+- **auditor confidence:** high
+
+### `u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12`
+
+- **Note:** [`U_INTEGRATION_READING_BLIND_AND_DICTIONARY_BLIND_ON_CORNER_TRANSFER_BOUNDED_NOTE_2026-06-12.md`](../../docs/U_INTEGRATION_READING_BLIND_AND_DICTIONARY_BLIND_ON_CORNER_TRANSFER_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic preservation, on the runner-defined L_s=2 U(1) witness kernel, of trace equality and a fixed dictionary rescaling under matter-blind Haar weighting, including the asserted species-registrability and occupancy consequences.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00110-u_integration_reading_blind_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Pointwise equality of the two reading trace data and the U-independent scaling f_rho[U] = rho^kappa f[U] imply, by linearity, that every matter-blind U-integration preserves both relations.  _(class `A`)_
+- **chain closes:** False — The integration identities close once pointwise reading equality and U-independent dictionary scaling are assumed. The packet does not derive the runner-defined conjugation map or rho^4 normalization as the physical hw and Berezin readouts, and the cited registrability authority explicitly leaves that physical-readout identification open.
+- **rationale:** Issue: the runner defines reading 2 by complex conjugation and inserts dictionary_scale**4 directly, so its decisive premises are hard-coded on a supplied carrier rather than derived from the cited authorities. Why this blocks: the resulting computations establish a valid conditional algebraic lemma but not the broader claims that the hw choice is unregistrable or that the occupancy dictionary is physically underdetermined. Repair target: supply a retained bridge deriving the corner-transfer reading map, the Berezin normalization exponent, and the relevant registrable-readout identification. Claim boundary until fixed: matter-blind integration preserves the stipulated equality and fixed rescaling of the runner-defined trace datum.
+- **open / conditional deps cited:**
+  - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
 - **auditor confidence:** high
 
 ### `unification_basin_failure_note`

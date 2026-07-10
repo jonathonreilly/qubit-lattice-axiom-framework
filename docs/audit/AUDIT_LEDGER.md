@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1737 |
+| unaudited | 1736 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 127 |
+| ~~audited_conditional~~ | 128 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 15 |
 | `audited_clean` | 1358 |
-| `audited_conditional` | 127 |
+| `audited_conditional` | 128 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2084 |
+| `unaudited` | 2083 |
 
 | claim_type | count |
 |---|---:|
@@ -1526,6 +1526,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `activity_energy_bound_witnesses_bounded_note_2026-07-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -2128,6 +2129,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Changing |b| or a_act changes the clock/event-rate ratio while leaving the minimal Record axiom content untouched, so record occurrence alone cannot determine the R-eta readout.  _(class `A`)_
 - **chain closes:** False — The algebraic underdetermination argument supports the bounded no-go, but the submitted chain also asserts a live Tier-A R-eta entry that the cited current registry has retired. The runner consequently aborts before executing any substantive algebraic checks.
 - **rationale:** Issue: the source and runner require AC_phi_lambda/R-eta to remain a live Tier-A derivation target, whereas the cited registry says the live target count is zero and records AC_phi_lambda as owner-governed and retired. Why this blocks: the runner raises KeyError after ten file-presence checks, so its claimed 139-pass verification is stale and the current registry does not support the stated governance boundary. Repair target: update the note and runner to the current owner-governed registry topology, preserving the distinction between governance retirement and derivation from the Record axiom, then produce a completed certificate. Claim boundary until fixed: the narrower algebraic observation that generic record formation does not itself supply an event, normalization, or readout law remains supported but is not ratified by this runner.
+- **auditor confidence:** high
+
+### `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05`
+
+- **Note:** [`ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md`](../../docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact folded-angle functional and counterfactual variation were audited on the supplied nondegenerate Hermitian-circulant class; extension to the physical charged-lepton AC_phi_lambda carrier remains conditional.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00012-acphilambda_r_eta_value_face`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On B>0, the unordered spectrum determines cos(3 delta) and hence Phi=(1/3) arccos(cos(3 delta)); applying the realized-state primitive then classifies the AC_phi_lambda value face as registered state data and leaves an exactness residual.  _(class `A`)_
+- **chain closes:** False — The symmetric-function inversion and formal-state variation close exactly. The claimed physical value-face relocation does not close because no retained authority in the packet identifies the charged-lepton species readout with exactly this supplied unordered H(delta) spectrum.
+- **rationale:** Issue: the runner genuinely verifies the folded-angle algebra for the supplied B>0 circulant class. Why this blocks: applying that algebra to the actual AC_phi_lambda charged-lepton value face assumes the physical-carrier/species-readout identification that the cited bounded authorities explicitly leave open. Repair target: retain a theorem identifying the charged-lepton signed-root readout with exactly the supplied unordered spectrum. Claim boundary until fixed: the formal functional and its law-freeness are supported, but the admission relocation is conditional.
+- **open / conditional deps cited:**
+  - `TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
+  - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+  - `ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md`
 - **auditor confidence:** high
 
 ### `acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01`

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 947 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 27 |
-| unaudited | 1745 |
+| unaudited | 1744 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 118 |
+| ~~audited_conditional~~ | 119 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1361 |
-| `audited_conditional` | 118 |
+| `audited_conditional` | 119 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 30 |
-| `unaudited` | 2090 |
+| `unaudited` | 2089 |
 
 | claim_type | count |
 |---|---:|
@@ -1576,6 +1576,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_q_eq_3delta_identity_note_2026-04-21` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `koide_r_half_durability_stationarity_conditional_chain_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -12142,6 +12143,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **open / conditional deps cited:**
   - `FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md`
   - `FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION_CONDITIONAL_THEOREM_NOTE_2026-05-30.md`
+- **auditor confidence:** high
+
+### `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01`
+
+- **Note:** [`KOIDE_ONSITE_WEYL_BOOST_FROM_BIVECTORS_NOTE_2026-06-01.md`](../../docs/KOIDE_ONSITE_WEYL_BOOST_FROM_BIVECTORS_NOTE_2026-06-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The single-site Pauli carrier algebraically realizes a faithful two-dimensional Weyl representation of so(3,1), conditional on selecting the faithful carrier and Lorentzian sign; it does not derive those physical selections.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00073-koide_onsite_weyl_boost_from`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** With J_i = σ_i/2 and K_i = B_i = iσ_i/2, the commutators satisfy [J,J] = iεJ, [J,K] = iεK, and [K,K] = −iεJ.  _(class `A`)_
+- **chain closes:** False — The matrix-algebra construction and faithful-image calculation close. The framework-level boost embedding does not close because no cited retained bridge selects the faithful representation over the trivial representation or derives the Lorentzian signature.
+- **rationale:** The Pauli substitutions genuinely verify the three Lorentz commutators and the six-real-dimensional faithful image. However, identifying this available representation as the physical matter boost action remains conditional on the explicitly unforced faithful-carrier and (3,1)-signature selections; the retained per-site SU(2) authority also disclaims identification with every matter excitation's physical spin. The runner's main commutator checks are substantive, but several conclusions are recorded with unconditional True values, and its purported no-common-anticommuting-matrix routine does not actually solve the nullspace problem, although the cited retained no-go supplies an independent proof.
 - **auditor confidence:** high
 
 ### `koide_oo_rd_premise_relation_on_current_surface_narrow_theorem_note_2026-06-12`

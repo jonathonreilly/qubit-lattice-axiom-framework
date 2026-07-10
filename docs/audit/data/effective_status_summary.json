@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2027,
-    "decoration": 68,
+    "bounded_theorem": 2026,
+    "decoration": 69,
     "meta": 353,
     "no_go": 482,
     "open_gate": 183,
@@ -68,6 +68,7 @@
     "decoration_under_pmns_hw1_source_transfer_boundary_note": 1,
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
     "decoration_under_quark_route2_exact_readout_map_note_2026-04-19": 1,
+    "decoration_under_realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02": 1,
     "decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": 1,
     "decoration_under_strong_cp_theta_zero_note": 1,
     "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": 4,
@@ -80,7 +81,7 @@
     "retained_bounded": 948,
     "retained_no_go": 212,
     "retained_pending_chain": 11,
-    "unaudited": 1728
+    "unaudited": 1727
   },
   "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [

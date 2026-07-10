@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py
-runner_sha256: c759c026987cbab59fe8aa92e19b478290daaabda9053ae218b126c74b591d47
+runner_sha256: 5e8d947f6cf05f6b77bc2f973bbd0849a486f86d3332ec53522ea76418ae06b1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.90
+elapsed_sec: 0.96
 status: ok
 ----- stdout -----
 ========================================================================
@@ -50,8 +50,14 @@ RESIDUAL (declared-open): u(T) is the half-filled free-Fermi probe in the retain
 RESIDUAL (declared-open): hypothesis (Z) is a CONDITION: this row verifies it for its explicit witnesses only and does NOT certify it for the realized kernel; which kernel is realized (the P-FLUX bit) is neither assumed nor derived here (boundary B-3)
 RESIDUAL (declared-open): the falsification legs [C] are computed certificates with proof sketches, not the theorem-grade core; they establish only that (Z) is load-bearing (boundary B-5)
 
-TOTAL: PASS=18 FAIL=0
-VERDICT: on the licensed realized kernel class, for every kinetic kernel whose massless set is point-like with
+========================================================================
+[E] 2026-07-10 hypothesis-scope repair
+========================================================================
+[PASS] 19. [E] empty-set discriminator: the explicitly gapped W3 kernel has min|E| = 1.0 and empty Z(h); u(T)/T^4 = 5.541209e-02, 1.347272e-03, 2.833632e-07 at decreasing T = 0.2, 0.1, 0.05, with successive ratios 2.431e-02, 2.103e-04 < 0.5 -- the normalization tends to zero, so nonemptiness is load-bearing for the g_eff in (0, infinity) claim surface
+[PASS] 20. [E] note-surface pins: hypothesis (Z) says 'finite and nonempty'; both dated scope-repair parentheticals, the explicit-witness FSB-X title, the 'witness-specific' closing needle, and the Repair Note are present
+
+TOTAL: PASS=20 FAIL=0
+VERDICT: on the licensed realized kernel class, for every kinetic kernel whose massless set is nonempty, point-like with
          linear cones (hypothesis (Z)), the low-T thermal energy density obeys u(T) = g_eff (7/8)(pi^2/30) T^4
          + O(T^5) with g_eff = sum |det V|^-1 finite = the cone-weighted massless species count, in the retained
          Stefan-Boltzmann bridge row's own per-dof currency (clause (CL), supplied CONDITIONALLY on (Z)).

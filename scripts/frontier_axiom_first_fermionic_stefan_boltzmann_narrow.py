@@ -10,10 +10,10 @@ kernel class, not a supplied continuum dispersion).
 Theorem computed here (FSB-K).  For every kinetic kernel in the
 licensed realized class -- finite-range, sublattice-periodic, Hermitian
 hopping on the Z^3 single-mode-per-site one-particle surface -- whose
-massless set is point-like with linear cones (hypothesis (Z): finitely
-many zero branches (p_j, b), each |E_b(p_j + q)| = |V_jb q| + O(|q|^2)
-with invertible V_jb), the half-filled free-Fermi thermal energy
-density per site obeys
+massless set is point-like with linear cones (hypothesis (Z): a finite,
+nonempty set of zero branches (p_j, b), each
+|E_b(p_j + q)| = |V_jb q| + O(|q|^2) with invertible V_jb), the
+half-filled free-Fermi thermal energy density per site obeys
 
     u(T) = g_eff * (7/8)(pi^2/30) T^4 + O(T^5),
     g_eff = sum_(j,b) |det V_jb|^(-1)  (finite),
@@ -54,6 +54,10 @@ Load-bearing content COMPUTED (not just continuum arithmetic):
       phi = -1 is neither assumed nor derived (branch-blind quantifier;
       both licensed branch symbols enter only as computed witnesses
       classified by their zero-set geometry).
+  [E] the 2026-07-10 scope repair: an explicitly gapped empty-zero-set
+      kernel has u(T)/T^4 decreasing toward zero at three decreasing
+      temperatures, and note-surface pins enforce the nonempty-(Z) and
+      explicit-witness FSB-X wording.
 
 Deterministic, no network, no randomness; numpy + sympy + mpmath.
 Exit code 0 iff FAIL = 0.
@@ -508,10 +512,48 @@ def main():
              "establish only that (Z) is load-bearing (boundary B-5)")
 
     print()
+    print("=" * 72)
+    print("[E] 2026-07-10 hypothesis-scope repair")
+    print("=" * 72)
+
+    empty_zero_vals = sym_gapped(Lbig)
+    empty_T = (0.2, 0.1, 0.05)
+    empty_u_T4 = [u_density(empty_zero_vals, T) / T ** 4
+                  for T in empty_T]
+    empty_ratios = [empty_u_T4[i + 1] / empty_u_T4[i]
+                    for i in range(len(empty_u_T4) - 1)]
+    report(count_zeros(empty_zero_vals) == 0
+           and float(np.min(np.abs(empty_zero_vals))) >= 1.0
+           and all(r < 0.5 for r in empty_ratios),
+           f"[E] empty-set discriminator: the explicitly gapped W3 "
+           f"kernel has min|E| = {np.min(np.abs(empty_zero_vals)):.1f} "
+           f"and empty Z(h); u(T)/T^4 = {empty_u_T4[0]:.6e}, "
+           f"{empty_u_T4[1]:.6e}, {empty_u_T4[2]:.6e} at decreasing "
+           f"T = {empty_T[0]}, {empty_T[1]}, {empty_T[2]}, with "
+           f"successive ratios {empty_ratios[0]:.3e}, "
+           f"{empty_ratios[1]:.3e} < 0.5 -- the normalization tends "
+           f"to zero, so nonemptiness is load-bearing for the "
+           f"g_eff in (0, infinity) claim surface")
+
+    z_start = self_txt.index("**Hypothesis (Z)")
+    z_end = self_txt.index("## 3. Statements", z_start)
+    z_block = self_txt[z_start:z_end]
+    report("finite and nonempty" in z_block
+           and self_txt.count("(2026-07-10 scope repair") >= 2
+           and "Proposition FSB-X (both clauses of (Z) are load-bearing "
+               "on explicit witness kernels; certificate grade)" in self_txt
+           and "witness-specific" in self_txt
+           and "## Repair Note" in self_txt,
+           "[E] note-surface pins: hypothesis (Z) says 'finite and "
+           "nonempty'; both dated scope-repair parentheticals, the "
+           "explicit-witness FSB-X title, the 'witness-specific' "
+           "closing needle, and the Repair Note are present")
+
+    print()
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print("VERDICT: on the licensed realized kernel class, for every "
-              "kinetic kernel whose massless set is point-like with")
+              "kinetic kernel whose massless set is nonempty, point-like with")
         print("         linear cones (hypothesis (Z)), the low-T thermal "
               "energy density obeys u(T) = g_eff (7/8)(pi^2/30) T^4")
         print("         + O(T^5) with g_eff = sum |det V|^-1 finite = the "

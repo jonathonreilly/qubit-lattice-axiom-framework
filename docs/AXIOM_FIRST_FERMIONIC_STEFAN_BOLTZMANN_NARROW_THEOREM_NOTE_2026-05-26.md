@@ -8,7 +8,7 @@ retained tensor-product Fock/translation bridge, for **every** kinetic kernel in
 finite-range, sublattice-periodic, Hermitian hopping with analytic
 Bloch band family `{E_b(p)}` on the Brillouin torus — **whose massless
 set is point-like with linear cones** (hypothesis (Z): the zero set
-`Z(h) = {(p_j, b) : E_b(p_j) = 0}` is finite and each vanishing branch
+`Z(h) = {(p_j, b) : E_b(p_j) = 0}` is finite and nonempty, and each vanishing branch
 satisfies `|E_b(p_j + q)| = |V_jb q| + O(|q|²)` with invertible real
 `3×3` matrices `V_jb`), the half-filled free-Fermi thermal energy
 density per site obeys, as `T → 0`,
@@ -34,7 +34,7 @@ computed witnesses classified by their zero-set geometry.
 does not set or predict an audit outcome; audit verdict and effective
 status are set only by the independent audit lane.
 **Primary runner:** [`scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py`](../scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py)
-(`TOTAL: PASS=18 FAIL=0`, deterministic, runtime well under one
+(`TOTAL: PASS=20 FAIL=0`, deterministic, runtime well under one
 minute)
 **Runner cache:** [`logs/runner-cache/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.txt`](../logs/runner-cache/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.txt)
 **Authority role:** source-note proposal. If retained, this row
@@ -79,6 +79,20 @@ row's status and performs no selection itself.
   (specialization to a supplied isotropic dispersion), so downstream
   citations of the per-Dirac-species law and the `7/8` per-dof ratio
   are unaffected.
+
+## Repair Note
+
+**2026-07-10.** The audit's notes for re-audit were:
+
+> scope_too_broad: Require Z(h) to be nonempty or replace
+> g_eff in (0,infinity) by g_eff in [0,infinity), and restrict FSB-X to the
+> explicit witnesses or add hypotheses globally controlling every zero
+> component; then re-audit.
+
+The chosen arms are the NONEMPTY arm for hypothesis (Z), preserving
+the existing `g_eff ∈ (0, ∞)` claim surface, and the
+RESTRICT-TO-WITNESSES arm for FSB-X. No computational content changed;
+the runner gains an empty-set discriminator and note-surface pins.
 
 ## 1. Question and method
 
@@ -147,7 +161,7 @@ is NOT derived here.
 per-dof normalization as denominator.
 
 **Hypothesis (Z) (point-like linear-cone zero set).** The massless
-set `Z(h) = {(p_j, b) : E_b(p_j) = 0}` is finite, and for each
+set `Z(h) = {(p_j, b) : E_b(p_j) = 0}` is finite and nonempty, and for each
 `(p_j, b) ∈ Z(h)` there are an invertible real `3×3` matrix `V_jb`,
 a radius `r_j > 0`, and a constant `C_j < ∞` with
 
@@ -160,6 +174,12 @@ a radius `r_j > 0`, and a constant `C_j < ∞` with
 finiteness of `Z(h)` plus the local cone bounds already imply a
 uniform gap `Δ > 0` off the cone neighborhoods; no separate gap
 hypothesis is needed.)
+
+(2026-07-10 scope repair: nonemptiness is load-bearing for
+`g_eff ∈ (0, ∞)`. The empty-`Z(h)` fully gapped case is excluded from
+FSB-K's claim surface: there `u(T) = O(e^{-Δ/T})` and
+`g_eff(T) → 0`, so the `T⁴` normalization is not the natural currency
+and no FSB-K claim is made.)
 
 ## 3. Statements
 
@@ -197,19 +217,22 @@ whether a given realized kernel satisfies (Z) is a separate,
 external, computable kernel-geometry fact, not certified here
 (boundary B-3). ∎
 
-### 3.3 Proposition FSB-X (both clauses of (Z) are load-bearing; certificate grade)
+### 3.3 Proposition FSB-X (both clauses of (Z) are load-bearing on explicit witness kernels; certificate grade)
 
-(a) **Extended zero set.** If a band's zero set contains a regular
-codim-1 surface piece with nonvanishing normal gradient, then
-`u(T) ≍ T²` (Sommerfeld; tubular-neighborhood/coarea sketch in §4.6),
-so `g_eff(T) ≍ T⁻²` diverges — the `T⁴` law fails structurally.
-(b) **Point-like but quadratic.** If a zero is an isolated point with
-nondegenerate quadratic dispersion `|E| ≍ |q|²`, then
+(a) **Extended zero set.** For the explicit extended-zero witness
+kernel (§4.6; runner checks 12–13), `u(T) ≍ T²` (Sommerfeld), so
+`g_eff(T) ≍ T⁻²` diverges — the `T⁴` law fails structurally.
+(b) **Point-like but quadratic.** For the explicit isolated
+quadratic-point witness kernel (runner checks 14–15),
 `u(T) ≍ T^(5/2)` and `g_eff(T) ≍ T^(−3/2)` diverges — point-likeness
 alone is insufficient; the linear-cone clause is load-bearing
-separately. Both behaviors are computed on explicit kernels (runner
-checks 12–15); FSB-X is certificate + sketch grade, not the
-theorem-grade core (boundary B-5). ∎
+separately. FSB-X is certificate + sketch grade, not the theorem-grade
+core (boundary B-5). No sufficient-condition claim is made for kernels
+with additional uncontrolled zero components: a flatter additional
+component (`|E| ≍ |q|^α`, `α > 2`) dominates the low-`T` asymptotics
+(`u ≍ T^{1+3/α}`), so the two-sided rates above are witness-specific;
+only the per-witness divergence of `g_eff(T)` is certified.
+(2026-07-10 scope repair.) ∎
 
 ### 3.4 Corollary FSB-C (continuum specialization; the 2026-05-26 content, preserved)
 
@@ -388,7 +411,7 @@ axioms.
 
 [`scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py`](../scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py)
 — deterministic, no network, no randomness; numpy + sympy + mpmath;
-runtime well under one minute. 18 checks in four sections:
+runtime well under one minute. 20 checks in five sections:
 
 - **[A]** (4 checks) the exact currency: `η/ζ` arithmetic (symbolic),
   the Fermi-Dirac integral `Γ(4)η(4) = 7π⁴/120` and `I_F/I_B = 7/8`
@@ -422,16 +445,21 @@ runtime well under one minute. 18 checks in four sections:
   branch-blindness sentence present); branch-blindness of the
   computation (both branch symbols through the same code path,
   separated only by computed geometry).
+- **[E]** (2 checks) the 2026-07-10 scope repair: an explicitly gapped
+  empty-zero-set kernel has decreasing `u(T)/T⁴ → 0` on three
+  decreasing temperatures, and note-surface pins require the
+  nonempty-(Z), explicit-witness FSB-X, witness-specific, dated repair,
+  and Repair Note wording.
 
 Four `RESIDUAL (declared-open): ...` lines mark boundaries B-1, B-2,
 B-3, B-5 where they are load-bearing (B-4 is recorded inside check
 11's message).
 
-Runner check classes per the audit rubric: checks 1–15 and 18 are
+Runner check classes per the audit rubric: checks 1–15 and 18–19 are
 class (A) (exact symbolic arithmetic and algebraic/spectral/
 quadrature computations on constructed finite objects); checks 16–17
-conjoin class (B) components (cross-note text/ledger verification)
-with class (A) arithmetic.
+and 20 conjoin class (B) components (cross-note or source-note text/
+ledger verification) with class (A) arithmetic where applicable.
 
 ## 8. What this does NOT close
 
@@ -458,8 +486,8 @@ with class (A) arithmetic.
 python3 scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py
 ```
 
-Expected output (deterministic): 18 numbered `[PASS]` lines in
-sections `[A]`/`[B]`/`[C]`/`[D]` as described in §7, including
+Expected output (deterministic): 20 numbered `[PASS]` lines in
+sections `[A]`/`[B]`/`[C]`/`[D]`/`[E]` as described in §7, including
 `g_eff(T) at L=128 = 0.979, 1.026, 1.144, 1.508 at T=0.05..0.4`,
 `W2 ... g_eff = 0.472, 0.507 ... plateau at sum |det V|^-1 = 8/16 =
 1/2`, `g_eff = 323, 81, 20.4, 5.0 ... T-halving ratios 3.97, 3.99`,
@@ -467,7 +495,7 @@ sections `[A]`/`[B]`/`[C]`/`[D]` as described in §7, including
 four `RESIDUAL (declared-open): ...` lines; then exactly:
 
 ```text
-TOTAL: PASS=18 FAIL=0
+TOTAL: PASS=20 FAIL=0
 ```
 
 followed by the VERDICT block stating the conditional `T⁴` law with
@@ -479,7 +507,7 @@ derived. Exit code 0 iff `FAIL=0`.
 
 ```yaml
 claim_type_author_hint: bounded_theorem
-claim_scope: "On the Z^3 one-qubit single-ladder one-particle hopping surface supplied by the current minimal axiom memo and the retained tensor-product Fock/translation bridge: for every realized-class kinetic kernel (finite-range, sublattice-periodic, Hermitian hopping with analytic Bloch bands) satisfying hypothesis (Z) — the massless set is a finite set of points with linear cones, |E_b(p_j+q)| = |V_jb q| + O(|q|^2), V_jb invertible — the half-filled free-Fermi thermal energy density per site obeys u(T) = g_eff (7/8)(pi^2/30) T^4 + O(T^5) as T -> 0, with g_eff = sum |det V_jb|^{-1} finite = the cone-weighted massless species count; equivalently g_eff(T) = u(T)/[(7/8)(pi^2/30)T^4] has a finite plateau (the massless species density is finite, in the retained SB bridge row's per-dof currency), conditionally on (Z). Error control: off-cone O(e^{-Delta/T}), cone-window O(T^5) absolute / O(T) relative, constants explicit in the kernel's cone data, gap, band number, bandwidth. The hypothesis is demonstrably load-bearing in both clauses (computed certificates: extended zero surface gives g_eff ~ T^-2 Sommerfeld; quadratic point zero gives g_eff ~ T^-3/2). Bounded by: the probe currency (free-Fermi half-filled integrand, equilibrium not derived); thermodynamic-limit statement with numerically certified finite-L control; (Z) verified only for the runner's witnesses, never for 'the realized kernel'; FSB-X at certificate grade. Branch-blind: phi = -1 is neither assumed nor derived, and no flux, branch, or inventory input is consumed. Continuum specialization preserved: u_F = (7 pi^2/60) T^4 per Dirac species; u_F/u_B = 7/8 per dof."
+claim_scope: "On the Z^3 one-qubit single-ladder one-particle hopping surface supplied by the current minimal axiom memo and the retained tensor-product Fock/translation bridge: for every realized-class kinetic kernel (finite-range, sublattice-periodic, Hermitian hopping with analytic Bloch bands) satisfying hypothesis (Z) — the massless set is a finite nonempty set of points with linear cones, |E_b(p_j+q)| = |V_jb q| + O(|q|^2), V_jb invertible — the half-filled free-Fermi thermal energy density per site obeys u(T) = g_eff (7/8)(pi^2/30) T^4 + O(T^5) as T -> 0, with g_eff = sum |det V_jb|^{-1} finite = the cone-weighted massless species count; equivalently g_eff(T) = u(T)/[(7/8)(pi^2/30)T^4] has a finite plateau (the massless species density is finite, in the retained SB bridge row's per-dof currency), conditionally on (Z). Error control: off-cone O(e^{-Delta/T}), cone-window O(T^5) absolute / O(T) relative, constants explicit in the kernel's cone data, gap, band number, bandwidth. The hypothesis is demonstrably load-bearing on the explicit witness kernels in both clauses (computed certificates: the extended-zero witness gives g_eff ~ T^-2 Sommerfeld; the quadratic-point witness gives g_eff ~ T^-3/2); no sufficient-condition claim is made for kernels with additional uncontrolled zero components. Bounded by: the probe currency (free-Fermi half-filled integrand, equilibrium not derived); thermodynamic-limit statement with numerically certified finite-L control; (Z) verified only for the runner's witnesses, never for 'the realized kernel'; FSB-X at certificate grade. Branch-blind: phi = -1 is neither assumed nor derived, and no flux, branch, or inventory input is consumed. Continuum specialization preserved: u_F = (7 pi^2/60) T^4 per Dirac species; u_F/u_B = 7/8 per dof."
 upstream_dependencies:
   - minimal_axioms
   - tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25

@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 941 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1741 |
+| unaudited | 1740 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 126 |
-| ~~audited_failed~~ | 13 |
+| ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -75,10 +75,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1356 |
 | `audited_conditional` | 126 |
 | `audited_decoration` | 70 |
-| `audited_failed` | 35 |
+| `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2088 |
+| `unaudited` | 2087 |
 
 | claim_type | count |
 |---|---:|
@@ -1721,6 +1721,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `koide_carrier_locus_decomposition_note_2026-06-01` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -10163,6 +10164,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Default-threshold numerical trajectory ranks are window-64 {K=3: >=64, K=4: >=64, K=5: 34, K=6: 28} and window-128 {K=3: 71, K=4: 84, K=5: 36, K=6: 35}, while coupled site-0/1 gap counts are identical at 3 each.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the finite color-diagonal nearest-neighbor Hamiltonian, generated occupied projectors, time evolution, polar determinant phase increments, Hankel SVD ranks, and coupled spectral-gap weights directly from the supplied finite datum. The hard-coded anchor constants are comparator checks, but the audited rank and gap tables are computed rather than printed or imported.
 - **rationale:** Within the explicitly bounded scope, the load-bearing numerical claims close from first-principles finite computation over the supplied realized states and thresholds. The runner does contain expected anchor values for prior ceilings, but those are not the contested rank-ordering or identical-gap-count premise and do not supply the table values. The claim does not assert a state-selection rule, genericity result, or unbounded range law, so the realized-state primitive limits are respected.
+- **auditor confidence:** high
+
+### `harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact L=3 one-body system at four fixed realized states, testing equal three-tone support and whether the coupling-weight concentration ranking matches the descending order-4/window-64 capture ranking.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00008-harmonic_depth_weight_distri`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The computed concentration order K=6 → K=5 → K=3 → K=4 matches the order-4 capture table and is therefore asserted to match the landed det-phase depth ordering.  _(class `C`)_
+- **chain closes:** False — The runner independently computes the tone weights, concentration metrics, and their agreement with fixed-order capture. It does not establish the claimed total harmonic-depth ordering: the cited depth authority only distinguishes K=6 from states censored beyond order 8 and supplies no K=5 → K=3 → K=4 depth ranking.
+- **rationale:** Issue: The load-bearing computation establishes a correlation with capture at one fixed order and window, while the bounded claim promotes that ranking to the det-phase depth ordering. Why this blocks: the retained depth authority supplies K=6's order-4 saturation and censored statements for the other states, not the asserted total depth ranking. Repair target: compute the same formal depth for all four states or prove that fixed-order capture ranking is equivalent to depth ranking. Claim boundary until fixed: the runner supports equal three-tone support and a concentration ranking matching descending order-4/window-64 capture for these four fixed states.
 - **auditor confidence:** high
 
 ### `harmonic_ladder_weight_law_bounded_theorem_note_2026-06-12`

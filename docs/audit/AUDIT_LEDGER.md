@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 199 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 946 |
+| **retained_bounded** | 947 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 29 |
-| unaudited | 1722 |
+| unaudited | 1721 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 36 |
@@ -71,13 +71,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1369 |
+| `audited_clean` | 1370 |
 | `audited_conditional` | 141 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 36 |
-| `unaudited` | 2069 |
+| `unaudited` | 2068 |
 
 | claim_type | count |
 |---|---:|
@@ -596,6 +596,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_factor_local_selector_normalizer_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-current | A | - |
+| `gauge_link_central_registration_induced_bi_invariant_step_kernel_theorem_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_kz_su3_beta6_convention_split_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -8923,6 +8924,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Because the native {P_3,P_1} partition saturates the binary record capacity, the admissibility-supported family collapses to {delta,T_V}, pinning the informative-step kernel.  _(class `A`)_
 - **chain closes:** False — The rank argument bounds an orthogonal partition to two cells but does not establish a unique sharp binary instrument or identify it with {P_3,P_1}. The restricted authorities supply neither that record-to-gauge-sector bridge nor an exclusion of unsharp or alternative binary registrations.
 - **rationale:** Issue: The inference from at most two orthogonal cells to the unique family {delta,T_V} is unsupported; binary POVMs can be unsharp, and binary projective contexts need not equal {P_3,P_1}. Why this blocks: the cited axiom supplies no measurement/readout context or map from admissible site possibilities to gauge-central sectors, while the controlled-copy authority covers only its explicit P_0/P_1 model. Repair target: a retained theorem deriving the unique gauge-link record instrument {P_3,P_1} and excluding other binary effects or contexts, with a runner that tests this uniqueness. Claim boundary until fixed: the runner validates T_V, its moments, and the lazy-mixture algebra only after {P_3,P_1} has been fixed.
+- **auditor confidence:** high
+
+### `gauge_link_central_registration_induced_bi_invariant_step_kernel_theorem_note_2026-07-02`
+
+- **Note:** [`GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md`](../../docs/GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional classification of finite-group and stated Peter-Weyl-truncated compact-group kernels induced by positive Lueders central registration on position-classical one-link states, including exact finite-group contrast witnesses and convention-bound SU(3) numerics.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00007-gauge_link_central_registrat`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because the positive Lueders coefficients are nonnegative, expanding each modulus square reduces the kernel to character products whose irreducible decompositions have nonnegative Kronecker multiplicities.  _(class `A`)_
+- **chain closes:** True — Character orthogonality proves normalization, while the central projector form proves convolutional Ad-invariance and inversion symmetry; representation-ring decomposition proves coefficient positivity. The conclusion remains explicitly restricted to supplied positive Lueders channels and position-classical inputs.
+- **rationale:** The load-bearing result is genuine algebraic closure rather than a definition, renaming, tuned match, or imported comparator. The runner independently constructs the finite-group projectors and kernels, checks the counterexamples exactly, and computes the SU(3) quantities from the stated truncation; its stored numerical references serve only as regression gates. All cited authorities are retained-grade, and the note expressly excludes record-step occurrence, position-classicality derivation, rate selection, heat-kernel closure, and continuum claims.
 - **auditor confidence:** high
 
 ### `gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02`

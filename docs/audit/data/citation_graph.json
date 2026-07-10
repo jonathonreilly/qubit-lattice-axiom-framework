@@ -481,6 +481,34 @@
       "to": "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15"
     },
     {
+      "from": "acphilambda_cross_arc_unit_classification_wiring_2026-07-02",
+      "to": "acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01"
+    },
+    {
+      "from": "acphilambda_cross_arc_unit_classification_wiring_2026-07-02",
+      "to": "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01"
+    },
+    {
+      "from": "acphilambda_cross_arc_unit_classification_wiring_2026-07-02",
+      "to": "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02"
+    },
+    {
+      "from": "acphilambda_cross_arc_unit_classification_wiring_2026-07-02",
+      "to": "acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02"
+    },
+    {
+      "from": "acphilambda_cross_arc_unit_classification_wiring_2026-07-02",
+      "to": "acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02"
+    },
+    {
+      "from": "acphilambda_cross_arc_unit_classification_wiring_2026-07-02",
+      "to": "acphilambda_projective_equivariance_k_odd_trace_2026-07-02"
+    },
+    {
+      "from": "acphilambda_cross_arc_unit_classification_wiring_2026-07-02",
+      "to": "acphilambda_k_even_registration_correction_registered_pattern_2026-07-02"
+    },
+    {
       "from": "acphilambda_cycle_flux_transport_face_inventory_2026-07-01",
       "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
     },
@@ -24047,6 +24075,10 @@
     {
       "from": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
       "to": "free_dirac_poincare_representation_bounded_note_2026-05-30"
+    },
+    {
+      "from": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
+      "to": "free_field_os_wightman_reconstruction_conditional_theorem_note_2026-05-30"
     },
     {
       "from": "koide_onsite_weyl_boost_from_bivectors_note_2026-06-01",
@@ -58771,10 +58803,17 @@
       "deps": [
         "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
         "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
-        "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15"
+        "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15",
+        "acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01",
+        "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01",
+        "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02",
+        "acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02",
+        "acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02",
+        "acphilambda_projective_equivariance_k_odd_trace_2026-07-02",
+        "acphilambda_k_even_registration_correction_registered_pattern_2026-07-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9999a67febb6006112b8ddb5a73c6060f081c94e48d7c680ea77cd761d495cd2",
+      "note_hash": "f0bbaf6da1c56b13ee7ee81245f9020ad5f209be5e19df762328e3948be0267b",
       "path": "docs/ACPHILAMBDA_CROSS_ARC_UNIT_CLASSIFICATION_WIRING_2026-07-02.md",
       "runner_path": "scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py",
       "title": "ACPHILAMBDA Cross-Arc Unit-Classification Wiring"
@@ -90476,10 +90515,11 @@
         "cl3_complexification_split_narrow_theorem_note_2026-05-10",
         "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
         "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "free_dirac_poincare_representation_bounded_note_2026-05-30"
+        "free_dirac_poincare_representation_bounded_note_2026-05-30",
+        "free_field_os_wightman_reconstruction_conditional_theorem_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a5bca02125e92c2a914414c97f9e45a413ea08fe0a0a8421d29c495edc559dae",
+      "note_hash": "99d6bc4ada9f866f616b40cd5e98e579fe91748a464d76a68df8560062151e2b",
       "path": "docs/KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md",
       "runner_path": "scripts/koide_onsite_boost_reconstruction_2026_06_02.py",
       "title": "On-Site Weyl Boost Reconstruction: the Grassmann-Free so(3,1) Carrier and the Faithful-vs-Scalar Selection in R (reduces-to-residual)"
@@ -111097,7 +111137,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4df048d27814131f03cd894cbe7153f9363a12b7825e76af66c888b2e1965217",
+      "note_hash": "f049e9a1174764b63cb2c24a2eea36d62e29a365dcbf135866edcabe33fc4a1f",
       "path": "docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md",
       "runner_path": "scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py",
       "title": "Record-Formation Pointer-Conservation and Controlled-Copy Constraint (Bounded Theorem)"
@@ -111853,7 +111893,7 @@
         "axiom_first_spectrum_condition_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fb8a394ec519a3129f3186fb8f5b2176637345f7aeb3a82d88651522e1031f09",
+      "note_hash": "9e8916a96d49208751ac144e061ff1f65cabf0835e2763a088e420faedc3e75e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -128689,8 +128729,8 @@
       "open_gate": 205,
       "positive_theorem": 657
     },
-    "edge_count": 14557,
-    "leaf_count": 1309,
+    "edge_count": 14565,
+    "leaf_count": 1303,
     "node_count": 3886,
     "root_count": 1104,
     "runners_with_path": 3508

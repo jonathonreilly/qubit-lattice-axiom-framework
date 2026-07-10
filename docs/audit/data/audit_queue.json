@@ -1,9 +1,9 @@
 {
   "by_criticality": {
     "critical": 387,
-    "high": 265,
-    "leaf": 712,
-    "medium": 498
+    "high": 266,
+    "leaf": 713,
+    "medium": 497
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -16,7 +16,7 @@
       "cycle_id": "cycle-0001",
       "cycle_length": 3,
       "instruction": "Re-audit this node with the prompt instruction that its co-cycle citations ['single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16', 'single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11'] are informational/'see also' references, not load-bearing dependencies. If the chain truly closes without those citations, return audited_clean and name the non-load-bearing co-cycle links in the rationale; a separate source-graph repair pass must then strip or rewrite those markdown links before effective_status can leave retained_pending_chain. Otherwise return audited_conditional with repair_class=missing_dependency_edge naming the node that should be promoted upstream.",
-      "max_transitive_descendants": 385,
+      "max_transitive_descendants": 390,
       "primary_break_target": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
       "primary_break_target_audit_status": "unaudited",
       "primary_break_target_criticality": "critical",
@@ -168,12 +168,12 @@
       "direct_in_degree": 2,
       "effective_status": "audited_conditional",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.341,
+      "load_bearing_score": 14.347,
       "note_path": "docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py",
-      "transitive_descendants": 1296
+      "transitive_descendants": 1301
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -195,12 +195,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 17.836,
+      "load_bearing_score": 17.844,
       "note_path": "docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
-      "transitive_descendants": 913
+      "transitive_descendants": 918
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -224,12 +224,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 16.609,
+      "load_bearing_score": 16.618,
       "note_path": "docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_yt_p1_h_unit_renormalization.py",
-      "transitive_descendants": 780
+      "transitive_descendants": 785
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -248,12 +248,12 @@
       "direct_in_degree": 4,
       "effective_status": "audited_conditional",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.498,
+      "load_bearing_score": 14.508,
       "note_path": "docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_dm_neutrino_bosonic_normalization_theorem.py",
-      "transitive_descendants": 722
+      "transitive_descendants": 727
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -277,12 +277,12 @@
         "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "load_bearing_score": 17.738,
+      "load_bearing_score": 17.75,
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
-      "transitive_descendants": 603
+      "transitive_descendants": 608
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -302,12 +302,12 @@
       "direct_in_degree": 6,
       "effective_status": "audited_conditional",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.224,
+      "load_bearing_score": 15.236,
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
-      "transitive_descendants": 597
+      "transitive_descendants": 602
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -334,12 +334,12 @@
       "helper_runner_paths": [
         "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py"
       ],
-      "load_bearing_score": 37.172,
+      "load_bearing_score": 37.185,
       "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py",
-      "transitive_descendants": 576
+      "transitive_descendants": 581
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -363,12 +363,12 @@
       "direct_in_degree": 24,
       "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
-      "load_bearing_score": 24.129,
+      "load_bearing_score": 24.142,
       "note_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/axiom_first_spectrum_condition_check.py",
-      "transitive_descendants": 559
+      "transitive_descendants": 564
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -413,12 +413,12 @@
       "direct_in_degree": 23,
       "effective_status": "audited_conditional",
       "helper_runner_paths": [],
-      "load_bearing_score": 23.469,
+      "load_bearing_score": 23.483,
       "note_path": "docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_r_base_group_theory_derivation.py",
-      "transitive_descendants": 500
+      "transitive_descendants": 505
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -439,12 +439,12 @@
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "load_bearing_score": 15.466,
+      "load_bearing_score": 15.48,
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",
-      "transitive_descendants": 499
+      "transitive_descendants": 504
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -519,12 +519,12 @@
       "direct_in_degree": 4,
       "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.672,
+      "load_bearing_score": 13.69,
       "note_path": "docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_pmns_graph_first_axis_alignment.py",
-      "transitive_descendants": 407
+      "transitive_descendants": 412
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -545,12 +545,12 @@
       "direct_in_degree": 3,
       "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.162,
+      "load_bearing_score": 13.179,
       "note_path": "docs/PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py",
-      "transitive_descendants": 404
+      "transitive_descendants": 409
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -569,12 +569,12 @@
       "direct_in_degree": 8,
       "effective_status": "audited_conditional",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.658,
+      "load_bearing_score": 12.676,
       "note_path": "docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": null,
-      "transitive_descendants": 403
+      "transitive_descendants": 408
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -591,12 +591,12 @@
       "direct_in_degree": 6,
       "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.633,
+      "load_bearing_score": 11.651,
       "note_path": "docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py",
-      "transitive_descendants": 396
+      "transitive_descendants": 401
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -621,12 +621,12 @@
       "direct_in_degree": 2,
       "effective_status": "audited_conditional",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.611,
+      "load_bearing_score": 9.629,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/observable_principle_p1_exponent_attack_2026_06_10.py",
-      "transitive_descendants": 390
+      "transitive_descendants": 395
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -645,12 +645,12 @@
       "direct_in_degree": 1,
       "effective_status": "audited_conditional",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.111,
+      "load_bearing_score": 9.129,
       "note_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py",
-      "transitive_descendants": 390
+      "transitive_descendants": 395
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -673,12 +673,12 @@
       "direct_in_degree": 1,
       "effective_status": "audited_conditional",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.096,
+      "load_bearing_score": 9.115,
       "note_path": "docs/SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py",
-      "transitive_descendants": 386
+      "transitive_descendants": 391
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -836,12 +836,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.339,
+      "load_bearing_score": 15.344,
       "note_path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py",
-      "transitive_descendants": 1294
+      "transitive_descendants": 1299
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -866,12 +866,12 @@
       "direct_in_degree": 60,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 43.334,
+      "load_bearing_score": 43.34,
       "note_path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_anomaly_forces_time.py",
-      "transitive_descendants": 1290
+      "transitive_descendants": 1295
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -913,12 +913,12 @@
         "scripts/frontier_tensorial_einstein_regge_completion.py",
         "scripts/frontier_universal_shell_profile.py"
       ],
-      "load_bearing_score": 15.48,
+      "load_bearing_score": 15.487,
       "note_path": "docs/S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_s3_time_spacetime_tensor_primitive.py",
-      "transitive_descendants": 1009
+      "transitive_descendants": 1014
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -942,12 +942,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.459,
+      "load_bearing_score": 15.466,
       "note_path": "docs/S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_s3_time_transfer_matrix_bridge.py",
-      "transitive_descendants": 994
+      "transitive_descendants": 999
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -987,12 +987,12 @@
         "scripts/frontier_tensorial_einstein_regge_completion.py",
         "scripts/frontier_universal_shell_profile.py"
       ],
-      "load_bearing_score": 33.954,
+      "load_bearing_score": 33.961,
       "note_path": "docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_s3_time_bilinear_tensor_primitive.py",
-      "transitive_descendants": 991
+      "transitive_descendants": 996
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1012,12 +1012,12 @@
       "direct_in_degree": 34,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 29.916,
+      "load_bearing_score": 29.923,
       "note_path": "docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_right_handed_sector.py",
-      "transitive_descendants": 965
+      "transitive_descendants": 970
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1042,12 +1042,12 @@
       "direct_in_degree": 38,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 31.844,
+      "load_bearing_score": 31.852,
       "note_path": "docs/STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_sm_hypercharge_uniqueness.py",
-      "transitive_descendants": 918
+      "transitive_descendants": 923
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1068,12 +1068,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 19.331,
+      "load_bearing_score": 19.339,
       "note_path": "docs/YT_BOUNDARY_THEOREM.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_boundary_consistency.py",
-      "transitive_descendants": 910
+      "transitive_descendants": 915
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1115,12 +1115,12 @@
         "scripts/frontier_tensorial_einstein_regge_completion.py",
         "scripts/frontier_universal_shell_profile.py"
       ],
-      "load_bearing_score": 13.794,
+      "load_bearing_score": 13.803,
       "note_path": "docs/S3_TIME_BILINEAR_TENSOR_ACTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_s3_time_bilinear_tensor_action.py",
-      "transitive_descendants": 887
+      "transitive_descendants": 892
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1162,12 +1162,12 @@
         "scripts/frontier_tensorial_einstein_regge_completion.py",
         "scripts/frontier_universal_shell_profile.py"
       ],
-      "load_bearing_score": 32.793,
+      "load_bearing_score": 32.801,
       "note_path": "docs/CKM_ATLAS_AXIOM_CLOSURE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_ckm_atlas_axiom_closure.py",
-      "transitive_descendants": 886
+      "transitive_descendants": 891
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1190,12 +1190,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 20.77,
+      "load_bearing_score": 20.778,
       "note_path": "docs/YT_QFP_INSENSITIVITY_SUPPORT_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_qfp_insensitivity.py",
-      "transitive_descendants": 872
+      "transitive_descendants": 877
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1217,12 +1217,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 13.748,
+      "load_bearing_score": 13.757,
       "note_path": "docs/YT_EFT_BRIDGE_THEOREM.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_eft_bridge.py",
-      "transitive_descendants": 859
+      "transitive_descendants": 864
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1245,12 +1245,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 14.747,
+      "load_bearing_score": 14.755,
       "note_path": "docs/YT_EW_COUPLING_BRIDGE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_ew_coupling_derivation.py",
-      "transitive_descendants": 858
+      "transitive_descendants": 863
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1271,12 +1271,12 @@
       "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.745,
+      "load_bearing_score": 17.753,
       "note_path": "docs/YT_INTERACTING_BRIDGE_LOCALITY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_interacting_bridge_locality.py",
-      "transitive_descendants": 857
+      "transitive_descendants": 862
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1298,12 +1298,12 @@
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.243,
+      "load_bearing_score": 14.252,
       "note_path": "docs/YT_BRIDGE_OPERATOR_CLOSURE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_bridge_operator_closure.py",
-      "transitive_descendants": 856
+      "transitive_descendants": 861
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1323,12 +1323,12 @@
       "direct_in_degree": 13,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 19.241,
+      "load_bearing_score": 19.25,
       "note_path": "docs/YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_constructive_uv_bridge.py",
-      "transitive_descendants": 855
+      "transitive_descendants": 860
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1348,12 +1348,12 @@
       "direct_in_degree": 8,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.738,
+      "load_bearing_score": 16.747,
       "note_path": "docs/YT_BRIDGE_REARRANGEMENT_PRINCIPLE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_bridge_rearrangement_principle.py",
-      "transitive_descendants": 853
+      "transitive_descendants": 858
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1376,12 +1376,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.236,
+      "load_bearing_score": 15.245,
       "note_path": "docs/YT_BRIDGE_ACTION_INVARIANT_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_bridge_action_invariant.py",
-      "transitive_descendants": 852
+      "transitive_descendants": 857
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1404,12 +1404,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.735,
+      "load_bearing_score": 15.743,
       "note_path": "docs/YT_BRIDGE_MOMENT_CLOSURE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_bridge_moment_closure.py",
-      "transitive_descendants": 851
+      "transitive_descendants": 856
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1431,12 +1431,12 @@
       "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.733,
+      "load_bearing_score": 17.741,
       "note_path": "docs/YT_BRIDGE_HESSIAN_SELECTOR_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_bridge_hessian_selector.py",
-      "transitive_descendants": 850
+      "transitive_descendants": 855
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1457,12 +1457,12 @@
       "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.23,
+      "load_bearing_score": 16.238,
       "note_path": "docs/YT_BRIDGE_HIGHER_ORDER_CORRECTIONS_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_bridge_higher_order_corrections.py",
-      "transitive_descendants": 848
+      "transitive_descendants": 853
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1484,12 +1484,12 @@
       "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.23,
+      "load_bearing_score": 16.238,
       "note_path": "docs/YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_bridge_nonlocal_corrections.py",
-      "transitive_descendants": 848
+      "transitive_descendants": 853
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1511,12 +1511,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.723,
+      "load_bearing_score": 14.731,
       "note_path": "docs/YT_BRIDGE_ENDPOINT_SHIFT_BOUND_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_bridge_endpoint_shift_bound.py",
-      "transitive_descendants": 844
+      "transitive_descendants": 849
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1540,12 +1540,12 @@
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.223,
+      "load_bearing_score": 14.231,
       "note_path": "docs/YT_BRIDGE_UV_CLASS_UNIQUENESS_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_bridge_uv_class_uniqueness.py",
-      "transitive_descendants": 844
+      "transitive_descendants": 849
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1568,12 +1568,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.721,
+      "load_bearing_score": 14.73,
       "note_path": "docs/YT_EXACT_COARSE_GRAINED_BRIDGE_OPERATOR_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_exact_coarse_grained_bridge_operator.py",
-      "transitive_descendants": 843
+      "transitive_descendants": 848
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1597,12 +1597,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 36.219,
+      "load_bearing_score": 36.228,
       "note_path": "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_ckm_cp_phase_structural_identity.py",
-      "transitive_descendants": 842
+      "transitive_descendants": 847
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1625,12 +1625,12 @@
       "direct_in_degree": 15,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 20.218,
+      "load_bearing_score": 20.226,
       "note_path": "docs/YT_EXACT_SCHUR_NORMAL_FORM_UNIQUENESS_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_exact_schur_normal_form_uniqueness.py",
-      "transitive_descendants": 841
+      "transitive_descendants": 846
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1655,12 +1655,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 34.714,
+      "load_bearing_score": 34.723,
       "note_path": "docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_wolfenstein_lambda_a_structural_identities.py",
-      "transitive_descendants": 839
+      "transitive_descendants": 844
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1681,12 +1681,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 26.214,
+      "load_bearing_score": 26.223,
       "note_path": "docs/CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_ckm_atlas_triangle_right_angle.py",
-      "transitive_descendants": 839
+      "transitive_descendants": 844
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1710,12 +1710,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 31.693,
+      "load_bearing_score": 31.702,
       "note_path": "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_ckm_magnitudes_structural_counts.py",
-      "transitive_descendants": 827
+      "transitive_descendants": 832
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1737,12 +1737,12 @@
       "direct_in_degree": 13,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 19.124,
+      "load_bearing_score": 19.133,
       "note_path": "docs/S3_ANOMALY_SPACETIME_LIFT_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_s3_anomaly_spacetime_lift.py",
-      "transitive_descendants": 788
+      "transitive_descendants": 793
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1762,12 +1762,12 @@
       "direct_in_degree": 11,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 18.113,
+      "load_bearing_score": 18.122,
       "note_path": "docs/UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_universal_gr_tensor_variational_candidate.py",
-      "transitive_descendants": 782
+      "transitive_descendants": 787
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1788,12 +1788,12 @@
       "direct_in_degree": 9,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.111,
+      "load_bearing_score": 17.12,
       "note_path": "docs/UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_universal_gr_tensor_quotient_uniqueness.py",
-      "transitive_descendants": 781
+      "transitive_descendants": 786
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1812,12 +1812,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.609,
+      "load_bearing_score": 14.618,
       "note_path": "docs/YT_EXPLICIT_SYSTEMATIC_BUDGET_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_explicit_systematic_budget.py",
-      "transitive_descendants": 780
+      "transitive_descendants": 785
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1839,12 +1839,12 @@
       "direct_in_degree": 13,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 19.105,
+      "load_bearing_score": 19.115,
       "note_path": "docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_universal_gr_polarization_frame_bundle.py",
-      "transitive_descendants": 778
+      "transitive_descendants": 783
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1869,12 +1869,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 13.605,
+      "load_bearing_score": 13.615,
       "note_path": "docs/YT_P2_TASTE_STAIRCASE_TRANSPORT_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p2_taste_staircase_transport.py",
-      "transitive_descendants": 778
+      "transitive_descendants": 783
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1894,12 +1894,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.105,
+      "load_bearing_score": 13.115,
       "note_path": "docs/YT_P1_I_S_NATIVE_KERNEL_SETTLED_BOUNDED_THEOREM_NOTE_2026-06-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/yt_p1_i_s_native_kernel_settled_2026_06_16.py",
-      "transitive_descendants": 778
+      "transitive_descendants": 783
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1922,12 +1922,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 20.104,
+      "load_bearing_score": 20.113,
       "note_path": "docs/YT_P1_DELTA_R_FERMION_REGULATOR_DEPENDENCE_AND_SCALAR_NTASTE_RESOLUTION_NOTE_2026-06-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py",
-      "transitive_descendants": 777
+      "transitive_descendants": 782
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1950,12 +1950,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 15.104,
+      "load_bearing_score": 15.113,
       "note_path": "docs/YT_P2_V_MATCHING_THEOREM_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p2_v_matching.py",
-      "transitive_descendants": 777
+      "transitive_descendants": 782
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1981,12 +1981,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 18.602,
+      "load_bearing_score": 18.611,
       "note_path": "docs/YT_P2_TASTE_STAIRCASE_BETA_FUNCTIONS_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p2_taste_staircase_beta.py",
-      "transitive_descendants": 776
+      "transitive_descendants": 781
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2006,12 +2006,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.602,
+      "load_bearing_score": 14.611,
       "note_path": "docs/YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p1_color_factor_retention.py",
-      "transitive_descendants": 776
+      "transitive_descendants": 781
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2036,12 +2036,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 16.6,
+      "load_bearing_score": 16.609,
       "note_path": "docs/YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p1_rep_ab_cancellation.py",
-      "transitive_descendants": 775
+      "transitive_descendants": 780
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2067,12 +2067,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 22.096,
+      "load_bearing_score": 22.105,
       "note_path": "docs/YT_P1_BZ_QUADRATURE_FULL_STAGGERED_PT_NOTE_2026-04-18.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py",
-      "transitive_descendants": 773
+      "transitive_descendants": 778
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2094,12 +2094,12 @@
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.096,
+      "load_bearing_score": 14.105,
       "note_path": "docs/YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p1_shared_fierz_no_go.py",
-      "transitive_descendants": 773
+      "transitive_descendants": 778
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2127,12 +2127,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 15.594,
+      "load_bearing_score": 15.604,
       "note_path": "docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py",
-      "transitive_descendants": 772
+      "transitive_descendants": 777
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2155,12 +2155,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 13.587,
+      "load_bearing_score": 13.596,
       "note_path": "docs/YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p1_i_s_revision_verification.py",
-      "transitive_descendants": 768
+      "transitive_descendants": 773
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2182,12 +2182,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.085,
+      "load_bearing_score": 15.094,
       "note_path": "docs/YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p1_loop_geometric_bound.py",
-      "transitive_descendants": 767
+      "transitive_descendants": 772
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2206,12 +2206,12 @@
       "direct_in_degree": 16,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 20.583,
+      "load_bearing_score": 20.592,
       "note_path": "docs/NEUTRINO_MAJORANA_OPERATOR_AXIOM_FIRST_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_operator.py",
-      "transitive_descendants": 766
+      "transitive_descendants": 771
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2234,12 +2234,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 14.583,
+      "load_bearing_score": 14.592,
       "note_path": "docs/YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p1_delta_1_bz.py",
-      "transitive_descendants": 766
+      "transitive_descendants": 771
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2266,12 +2266,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 14.583,
+      "load_bearing_score": 14.592,
       "note_path": "docs/YT_P1_DELTA_2_BZ_COMPUTATION_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p1_delta_2_bz.py",
-      "transitive_descendants": 766
+      "transitive_descendants": 771
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2295,12 +2295,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 14.583,
+      "load_bearing_score": 14.592,
       "note_path": "docs/YT_P1_DELTA_3_BZ_COMPUTATION_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p1_delta_3_bz.py",
-      "transitive_descendants": 766
+      "transitive_descendants": 771
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2324,12 +2324,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 26.079,
+      "load_bearing_score": 26.089,
       "note_path": "docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_ckm_nlo_barred_triangle_protected_gamma.py",
-      "transitive_descendants": 764
+      "transitive_descendants": 769
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2348,12 +2348,12 @@
       "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.079,
+      "load_bearing_score": 16.089,
       "note_path": "docs/NEUTRINO_MAJORANA_NATIVE_GAUSSIAN_NO_GO_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_native_gaussian_nogo.py",
-      "transitive_descendants": 764
+      "transitive_descendants": 769
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2373,12 +2373,12 @@
       "direct_in_degree": 9,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.072,
+      "load_bearing_score": 17.081,
       "note_path": "docs/NEUTRINO_MAJORANA_FINITE_NORMAL_GRAMMAR_NO_GO_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_finite_normal_grammar_nogo.py",
-      "transitive_descendants": 760
+      "transitive_descendants": 765
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2399,12 +2399,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.57,
+      "load_bearing_score": 15.579,
       "note_path": "docs/NEUTRINO_MAJORANA_PFAFFIAN_EXTENSION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_pfaffian_extension.py",
-      "transitive_descendants": 759
+      "transitive_descendants": 764
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2427,12 +2427,12 @@
       "direct_in_degree": 11,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 18.068,
+      "load_bearing_score": 18.077,
       "note_path": "docs/UNIVERSAL_GR_A1_INVARIANT_SECTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_universal_gr_a1_invariant_section.py",
-      "transitive_descendants": 758
+      "transitive_descendants": 763
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2453,12 +2453,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.068,
+      "load_bearing_score": 13.077,
       "note_path": "docs/NEUTRINO_MAJORANA_PFAFFIAN_AXIOM_BOUNDARY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_pfaffian_axiom_boundary.py",
-      "transitive_descendants": 758
+      "transitive_descendants": 763
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2480,12 +2480,12 @@
       "direct_in_degree": 8,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.566,
+      "load_bearing_score": 16.576,
       "note_path": "docs/NEUTRINO_MAJORANA_PFAFFIAN_NO_FORCING_THEOREM_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_pfaffian_no_forcing_theorem.py",
-      "transitive_descendants": 757
+      "transitive_descendants": 762
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2505,12 +2505,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.566,
+      "load_bearing_score": 14.576,
       "note_path": "docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_current_atlas_nonrealization.py",
-      "transitive_descendants": 757
+      "transitive_descendants": 762
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2534,12 +2534,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.064,
+      "load_bearing_score": 15.074,
       "note_path": "docs/NEUTRINO_MAJORANA_CHARGE_TWO_PRIMITIVE_REDUCTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_charge_two_primitive_reduction.py",
-      "transitive_descendants": 756
+      "transitive_descendants": 761
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2561,12 +2561,12 @@
       "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.562,
+      "load_bearing_score": 17.572,
       "note_path": "docs/NEUTRINO_MAJORANA_UNIQUE_SOURCE_SLOT_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_unique_source_slot.py",
-      "transitive_descendants": 755
+      "transitive_descendants": 760
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2588,12 +2588,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.56,
+      "load_bearing_score": 15.57,
       "note_path": "docs/NEUTRINO_MAJORANA_PHASE_REMOVAL_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_phase_removal.py",
-      "transitive_descendants": 754
+      "transitive_descendants": 759
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2615,12 +2615,12 @@
       "direct_in_degree": 8,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.553,
+      "load_bearing_score": 16.562,
       "note_path": "docs/NEUTRINO_MAJORANA_CANONICAL_LOCAL_BLOCK_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_canonical_local_block.py",
-      "transitive_descendants": 750
+      "transitive_descendants": 755
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2645,12 +2645,12 @@
       "direct_in_degree": 22,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 23.551,
+      "load_bearing_score": 23.56,
       "note_path": "docs/CKM_A_SQUARED_BELOW_W2_Y_QUANTUM_CLOSURE_THEOREM_NOTE_2026-04-25.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_ckm_a_squared_below_w2_y_quantum_closure.py",
-      "transitive_descendants": 749
+      "transitive_descendants": 754
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2672,12 +2672,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 15.547,
+      "load_bearing_score": 15.557,
       "note_path": "docs/UP_TYPE_MASS_RATIO_CKM_INVERSION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_mass_ratio_up_sector.py",
-      "transitive_descendants": 747
+      "transitive_descendants": 752
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2703,12 +2703,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 16.545,
+      "load_bearing_score": 16.555,
       "note_path": "docs/QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_quark_mass_ratios_taste_staircase_support.py",
-      "transitive_descendants": 746
+      "transitive_descendants": 751
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2731,12 +2731,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.543,
+      "load_bearing_score": 15.553,
       "note_path": "docs/CKM_FROM_MASS_HIERARCHY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_ckm_from_mass_hierarchy.py",
-      "transitive_descendants": 745
+      "transitive_descendants": 750
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2759,12 +2759,12 @@
       "direct_in_degree": 8,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.539,
+      "load_bearing_score": 16.549,
       "note_path": "docs/NEUTRINO_MAJORANA_Z3_NONACTIVATION_THEOREM_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_z3_nonactivation_theorem.py",
-      "transitive_descendants": 743
+      "transitive_descendants": 748
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2787,12 +2787,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.035,
+      "load_bearing_score": 15.045,
       "note_path": "docs/NEUTRINO_MAJORANA_LOCAL_PFAFFIAN_UNIQUENESS_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_local_pfaffian_uniqueness.py",
-      "transitive_descendants": 741
+      "transitive_descendants": 746
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2815,12 +2815,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.035,
+      "load_bearing_score": 13.045,
       "note_path": "docs/NEUTRINO_MAJORANA_OBSERVABLE_PRINCIPLE_OBSTRUCTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_observable_principle_obstruction.py",
-      "transitive_descendants": 741
+      "transitive_descendants": 746
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2843,12 +2843,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.033,
+      "load_bearing_score": 13.043,
       "note_path": "docs/NEUTRINO_MAJORANA_CURRENT_STACK_EXHAUSTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_current_stack_exhaustion.py",
-      "transitive_descendants": 740
+      "transitive_descendants": 745
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2870,12 +2870,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.531,
+      "load_bearing_score": 15.541,
       "note_path": "docs/NEUTRINO_MAJORANA_NAMBU_SOURCE_PRINCIPLE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_nambu_source_principle.py",
-      "transitive_descendants": 739
+      "transitive_descendants": 744
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2896,12 +2896,12 @@
       "direct_in_degree": 9,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.029,
+      "load_bearing_score": 17.039,
       "note_path": "docs/NEUTRINO_MAJORANA_SOURCE_RAY_THEOREM_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_source_ray_theorem.py",
-      "transitive_descendants": 738
+      "transitive_descendants": 743
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2930,12 +2930,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 13.026,
+      "load_bearing_score": 13.035,
       "note_path": "docs/YT_P1_DELTA_R_SM_RGE_CROSSCHECK_NOTE_2026-04-18.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_p1_delta_r_sm_rge_crosscheck.py",
-      "transitive_descendants": 736
+      "transitive_descendants": 741
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2960,12 +2960,12 @@
       "direct_in_degree": 15,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 20.024,
+      "load_bearing_score": 20.033,
       "note_path": "docs/SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_su2_weak_beta_coefficient_structural_closed_form.py",
-      "transitive_descendants": 735
+      "transitive_descendants": 740
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2986,12 +2986,12 @@
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.024,
+      "load_bearing_score": 14.033,
       "note_path": "docs/NEUTRINO_MAJORANA_NAMBU_RADIAL_OBSERVABLE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_nambu_radial_observable.py",
-      "transitive_descendants": 735
+      "transitive_descendants": 740
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3021,12 +3021,12 @@
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.022,
+      "load_bearing_score": 14.031,
       "note_path": "docs/EW_COUPLING_DERIVATION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/ew_coupling_bounded_status_runner_2026_05_03.py",
-      "transitive_descendants": 734
+      "transitive_descendants": 739
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3047,12 +3047,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.522,
+      "load_bearing_score": 13.531,
       "note_path": "docs/NEUTRINO_MAJORANA_NAMBU_QUADRATIC_COMPARATOR_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_nambu_quadratic_comparator.py",
-      "transitive_descendants": 734
+      "transitive_descendants": 739
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3074,12 +3074,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.52,
+      "load_bearing_score": 15.529,
       "note_path": "docs/NEUTRINO_MAJORANA_BACKGROUND_NORMALIZATION_THEOREM_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_background_normalization_theorem.py",
-      "transitive_descendants": 733
+      "transitive_descendants": 738
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3100,12 +3100,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.02,
+      "load_bearing_score": 15.029,
       "note_path": "docs/NEUTRINO_MAJORANA_STAIRCASE_BLINDNESS_THEOREM_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_staircase_blindness_theorem.py",
-      "transitive_descendants": 733
+      "transitive_descendants": 738
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3127,12 +3127,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.518,
+      "load_bearing_score": 13.527,
       "note_path": "docs/YT_FLAGSHIP_BOUNDARY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_flagship_boundary_contract.py",
-      "transitive_descendants": 732
+      "transitive_descendants": 737
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3167,12 +3167,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 26.016,
+      "load_bearing_score": 26.026,
       "note_path": "docs/HIGGS_MASS_DERIVED_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_higgs_mass_full_3loop.py",
-      "transitive_descendants": 731
+      "transitive_descendants": 736
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3193,12 +3193,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.516,
+      "load_bearing_score": 15.526,
       "note_path": "docs/NEUTRINO_MAJORANA_AXIS_EXCHANGE_FIXED_POINT_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_axis_exchange_fixed_point.py",
-      "transitive_descendants": 731
+      "transitive_descendants": 736
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3221,12 +3221,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.014,
+      "load_bearing_score": 15.024,
       "note_path": "docs/NEUTRINO_MAJORANA_SELF_DUAL_STAIRCASE_LIFT_OBSTRUCTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_self_dual_staircase_lift_obstruction.py",
-      "transitive_descendants": 730
+      "transitive_descendants": 735
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3248,12 +3248,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.5,
+      "load_bearing_score": 14.51,
       "note_path": "docs/NEUTRINO_MAJORANA_ENDPOINT_EXCHANGE_MIDPOINT_THEOREM_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_endpoint_exchange_midpoint_theorem.py",
-      "transitive_descendants": 723
+      "transitive_descendants": 728
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3274,12 +3274,12 @@
       "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.998,
+      "load_bearing_score": 16.008,
       "note_path": "docs/NEUTRINO_MAJORANA_ADJACENT_SINGLET_PLACEMENT_THEOREM_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_adjacent_singlet_placement_theorem.py",
-      "transitive_descendants": 722
+      "transitive_descendants": 727
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3299,12 +3299,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.494,
+      "load_bearing_score": 14.504,
       "note_path": "docs/DM_NEUTRINO_SCHUR_SUPPRESSION_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_schur_suppression_theorem.py",
-      "transitive_descendants": 720
+      "transitive_descendants": 725
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3325,12 +3325,12 @@
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.992,
+      "load_bearing_score": 14.002,
       "note_path": "docs/NEUTRINO_MAJORANA_RESIDUAL_SHARING_SPLIT_THEOREM_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_residual_sharing_split_theorem.py",
-      "transitive_descendants": 719
+      "transitive_descendants": 724
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3352,12 +3352,12 @@
       "direct_in_degree": 9,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.99,
+      "load_bearing_score": 17.0,
       "note_path": "docs/DM_NEUTRINO_ATMOSPHERIC_SCALE_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_atmospheric_scale_theorem.py",
-      "transitive_descendants": 718
+      "transitive_descendants": 723
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3377,12 +3377,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.49,
+      "load_bearing_score": 13.5,
       "note_path": "docs/DM_Z3_TEXTURE_FACTOR_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_z3_texture_factor_theorem.py",
-      "transitive_descendants": 718
+      "transitive_descendants": 723
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3403,12 +3403,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.988,
+      "load_bearing_score": 14.998,
       "note_path": "docs/DM_LEPTOGENESIS_UNIVERSAL_YUKAWA_NO_GO_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_universal_yukawa_nogo.py",
-      "transitive_descendants": 717
+      "transitive_descendants": 722
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3430,12 +3430,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.488,
+      "load_bearing_score": 13.498,
       "note_path": "docs/CKM_SCHUR_COMPLEMENT_THEOREM.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_ckm_schur_complement.py",
-      "transitive_descendants": 717
+      "transitive_descendants": 722
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3460,12 +3460,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 20.986,
+      "load_bearing_score": 20.996,
       "note_path": "docs/HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_higgs_mass_full_3loop.py",
-      "transitive_descendants": 716
+      "transitive_descendants": 721
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3486,12 +3486,12 @@
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.986,
+      "load_bearing_score": 13.996,
       "note_path": "docs/DM_NEUTRINO_CKM_TEXTURE_TRANSFER_NO_GO_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_ckm_texture_transfer_nogo.py",
-      "transitive_descendants": 716
+      "transitive_descendants": 721
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3511,12 +3511,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.484,
+      "load_bearing_score": 13.494,
       "note_path": "docs/DM_NEUTRINO_CP_KERNEL_DEFORMATION_NECESSITY_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_cp_kernel_deformation_necessity.py",
-      "transitive_descendants": 715
+      "transitive_descendants": 720
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3538,12 +3538,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.482,
+      "load_bearing_score": 14.492,
       "note_path": "docs/DM_NEUTRINO_Z3_CIRCULANT_CP_TOOL_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_z3_circulant_cp_tool.py",
-      "transitive_descendants": 714
+      "transitive_descendants": 719
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3562,12 +3562,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.478,
+      "load_bearing_score": 15.488,
       "note_path": "docs/DM_NEUTRINO_TWO_HIGGS_RIGHT_GRAM_BRIDGE_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_two_higgs_right_gram_bridge.py",
-      "transitive_descendants": 712
+      "transitive_descendants": 717
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3588,12 +3588,12 @@
       "direct_in_degree": 13,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 18.972,
+      "load_bearing_score": 18.982,
       "note_path": "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_mass_reduction_to_dirac.py",
-      "transitive_descendants": 709
+      "transitive_descendants": 714
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3615,12 +3615,12 @@
       "direct_in_degree": 8,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.461,
+      "load_bearing_score": 16.472,
       "note_path": "docs/NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_dirac_z3_support_trichotomy.py",
-      "transitive_descendants": 704
+      "transitive_descendants": 709
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3642,12 +3642,12 @@
       "direct_in_degree": 9,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.941,
+      "load_bearing_score": 16.951,
       "note_path": "docs/LEPTON_SINGLE_HIGGS_PMNS_TRIVIALITY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_lepton_single_higgs_pmns_triviality.py",
-      "transitive_descendants": 694
+      "transitive_descendants": 699
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3667,12 +3667,12 @@
       "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.924,
+      "load_bearing_score": 15.935,
       "note_path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_higgs_z3_charge_pmns_gauge_redundancy_theorem.py",
-      "transitive_descendants": 686
+      "transitive_descendants": 691
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3692,12 +3692,12 @@
       "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.394,
+      "load_bearing_score": 17.405,
       "note_path": "docs/DM_NEUTRINO_SINGLET_DOUBLET_CP_SLOT_TOOL_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_singlet_doublet_cp_slot_tool.py",
-      "transitive_descendants": 672
+      "transitive_descendants": 677
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3717,12 +3717,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.39,
+      "load_bearing_score": 13.401,
       "note_path": "docs/DM_NEUTRINO_TWO_HIGGS_23_SYMMETRIC_SLOT_NO_GO_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_two_higgs_23_symmetric_slot_nogo.py",
-      "transitive_descendants": 670
+      "transitive_descendants": 675
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3743,12 +3743,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.388,
+      "load_bearing_score": 13.399,
       "note_path": "docs/DM_NEUTRINO_CANONICAL_TWO_HIGGS_SLOT_NO_GO_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_canonical_two_higgs_slot_nogo.py",
-      "transitive_descendants": 669
+      "transitive_descendants": 674
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3771,12 +3771,12 @@
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.884,
+      "load_bearing_score": 13.894,
       "note_path": "docs/DM_NEUTRINO_POSTCANONICAL_EXTENSION_CLASS_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_postcanonical_extension_class.py",
-      "transitive_descendants": 667
+      "transitive_descendants": 672
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3798,12 +3798,12 @@
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.884,
+      "load_bearing_score": 13.894,
       "note_path": "docs/DM_NEUTRINO_TWO_HIGGS_MINIMALITY_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_two_higgs_minimality_theorem.py",
-      "transitive_descendants": 667
+      "transitive_descendants": 672
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3823,12 +3823,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.382,
+      "load_bearing_score": 13.392,
       "note_path": "docs/DM_NEUTRINO_POSTCANONICAL_SLOT_SUPPORT_CLASS_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_postcanonical_slot_support_class.py",
-      "transitive_descendants": 666
+      "transitive_descendants": 671
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3848,12 +3848,12 @@
       "direct_in_degree": 9,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.879,
+      "load_bearing_score": 16.89,
       "note_path": "docs/NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_dirac_two_higgs_canonical_reduction.py",
-      "transitive_descendants": 665
+      "transitive_descendants": 670
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3874,12 +3874,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.879,
+      "load_bearing_score": 12.89,
       "note_path": "docs/DM_NEUTRINO_POSTCANONICAL_RIGHT_FRAME_OBSTRUCTION_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_postcanonical_right_frame_obstruction.py",
-      "transitive_descendants": 665
+      "transitive_descendants": 670
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3901,12 +3901,12 @@
       "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.877,
+      "load_bearing_score": 15.888,
       "note_path": "docs/DM_NEUTRINO_POSTCANONICAL_POLAR_SECTION_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_postcanonical_polar_section.py",
-      "transitive_descendants": 664
+      "transitive_descendants": 669
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3927,12 +3927,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.369,
+      "load_bearing_score": 13.379,
       "note_path": "docs/GAUGE_MATTER_CLOSURE_GATES_2026-04-12.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_gauge_matter_closure_gates_source_packet.py",
-      "transitive_descendants": 660
+      "transitive_descendants": 665
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3953,12 +3953,12 @@
       "direct_in_degree": 20,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 22.366,
+      "load_bearing_score": 22.377,
       "note_path": "docs/G_BARE_DERIVATION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_g_bare_derivation.py",
-      "transitive_descendants": 659
+      "transitive_descendants": 664
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3977,12 +3977,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.864,
+      "load_bearing_score": 14.875,
       "note_path": "docs/LEPTON_SHARED_HIGGS_UNIVERSALITY_UNDERDETERMINATION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_lepton_shared_higgs_universality_underdetermination.py",
-      "transitive_descendants": 658
+      "transitive_descendants": 663
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4001,12 +4001,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.364,
+      "load_bearing_score": 14.375,
       "note_path": "docs/PMNS_MINIMAL_BRANCH_NONSELECTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_minimal_branch_nonselection.py",
-      "transitive_descendants": 658
+      "transitive_descendants": 663
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4025,12 +4025,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.364,
+      "load_bearing_score": 14.375,
       "note_path": "docs/PMNS_SELECTOR_BANK_NONREALIZATION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_selector_bank_nonrealization.py",
-      "transitive_descendants": 658
+      "transitive_descendants": 663
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4053,12 +4053,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.362,
+      "load_bearing_score": 15.373,
       "note_path": "docs/PMNS_SECTOR_ORIENTATION_ORBIT_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_sector_orientation_orbit.py",
-      "transitive_descendants": 657
+      "transitive_descendants": 662
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4098,12 +4098,12 @@
         "scripts/frontier_tensorial_einstein_regge_completion.py",
         "scripts/frontier_universal_shell_profile.py"
       ],
-      "load_bearing_score": 15.855,
+      "load_bearing_score": 15.866,
       "note_path": "docs/S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_s3_time_tensor_primitive_prototype.py",
-      "transitive_descendants": 654
+      "transitive_descendants": 659
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4124,12 +4124,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.355,
+      "load_bearing_score": 14.366,
       "note_path": "docs/PMNS_CORNER_TRANSPORT_ACTIVE_BLOCK_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_corner_transport_active_block.py",
-      "transitive_descendants": 654
+      "transitive_descendants": 659
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4150,12 +4150,12 @@
       "helper_runner_paths": [
         "scripts/pmns_lower_level_utils.py"
       ],
-      "load_bearing_score": 16.351,
+      "load_bearing_score": 16.362,
       "note_path": "docs/PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_active_four_real_source_from_transport.py",
-      "transitive_descendants": 652
+      "transitive_descendants": 657
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4176,12 +4176,12 @@
       "direct_in_degree": 8,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.347,
+      "load_bearing_score": 16.358,
       "note_path": "docs/DM_NEUTRINO_WEAK_EVEN_SWAP_REDUCTION_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_weak_even_swap_reduction_theorem.py",
-      "transitive_descendants": 650
+      "transitive_descendants": 655
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4202,12 +4202,12 @@
       "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.824,
+      "load_bearing_score": 15.835,
       "note_path": "docs/PMNS_SECTOR_EXCHANGE_NONFORCING_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_sector_exchange_nonforcing.py",
-      "transitive_descendants": 640
+      "transitive_descendants": 645
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4227,12 +4227,12 @@
       "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.822,
+      "load_bearing_score": 15.833,
       "note_path": "docs/PMNS_SCALAR_BRIDGE_NONREALIZATION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_scalar_bridge_nonrealization.py",
-      "transitive_descendants": 639
+      "transitive_descendants": 644
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4252,12 +4252,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.822,
+      "load_bearing_score": 12.833,
       "note_path": "docs/DM_NEUTRINO_POLAR_ALIGNED_CORE_NO_GO_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_polar_aligned_core_nogo.py",
-      "transitive_descendants": 639
+      "transitive_descendants": 644
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4277,12 +4277,12 @@
       "direct_in_degree": 14,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 19.32,
+      "load_bearing_score": 19.331,
       "note_path": "docs/DM_NEUTRINO_POSITIVE_POLAR_H_CP_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py",
-      "transitive_descendants": 638
+      "transitive_descendants": 643
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4303,12 +4303,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.317,
+      "load_bearing_score": 14.329,
       "note_path": "docs/LEPTON_SHARED_HIGGS_UNIVERSALITY_COLLAPSE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_lepton_shared_higgs_universality_collapse.py",
-      "transitive_descendants": 637
+      "transitive_descendants": 642
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4328,12 +4328,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.315,
+      "load_bearing_score": 15.326,
       "note_path": "docs/PMNS_SELECTOR_SECTOR_ODD_REDUCTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_sector_odd_bridge_reduction.py",
-      "transitive_descendants": 636
+      "transitive_descendants": 641
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4352,12 +4352,12 @@
       "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.813,
+      "load_bearing_score": 15.824,
       "note_path": "docs/DM_NEUTRINO_BREAKING_TRIPLET_CP_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py",
-      "transitive_descendants": 635
+      "transitive_descendants": 640
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4379,12 +4379,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.813,
+      "load_bearing_score": 14.824,
       "note_path": "docs/PMNS_SELECTOR_NONUNIVERSAL_SUPPORT_REDUCTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_selector_nonuniversal_support_reduction.py",
-      "transitive_descendants": 635
+      "transitive_descendants": 640
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4405,12 +4405,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.811,
+      "load_bearing_score": 14.822,
       "note_path": "docs/PMNS_SELECTOR_CLASS_SPACE_UNIQUENESS_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_selector_class_space_uniqueness.py",
-      "transitive_descendants": 634
+      "transitive_descendants": 639
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4429,12 +4429,12 @@
       "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.308,
+      "load_bearing_score": 17.32,
       "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_selector_unique_amplitude_slot.py",
-      "transitive_descendants": 633
+      "transitive_descendants": 638
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4455,12 +4455,12 @@
       "helper_runner_paths": [
         "scripts/pmns_lower_level_utils.py"
       ],
-      "load_bearing_score": 15.306,
+      "load_bearing_score": 15.317,
       "note_path": "docs/PMNS_LOWER_LEVEL_END_TO_END_CLOSURE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_lower_level_end_to_end_closure.py",
-      "transitive_descendants": 632
+      "transitive_descendants": 637
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4485,12 +4485,12 @@
         "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
         "scripts/pmns_lower_level_utils.py"
       ],
-      "load_bearing_score": 14.806,
+      "load_bearing_score": 14.817,
       "note_path": "docs/PMNS_ORIENTED_CYCLE_REDUCED_CHANNEL_NONSELECTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_oriented_cycle_reduced_channel_nonselection.py",
-      "transitive_descendants": 632
+      "transitive_descendants": 637
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4520,12 +4520,12 @@
         "scripts/frontier_pmns_uniform_scalar_deformation_boundary.py",
         "scripts/pmns_lower_level_utils.py"
       ],
-      "load_bearing_score": 14.801,
+      "load_bearing_score": 14.813,
       "note_path": "docs/PMNS_CURRENT_BANK_VALUE_SELECTION_NOGO_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_current_bank_value_selection_nogo.py",
-      "transitive_descendants": 630
+      "transitive_descendants": 635
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4548,12 +4548,12 @@
         "scripts/frontier_pmns_lower_level_end_to_end_closure.py",
         "scripts/pmns_lower_level_utils.py"
       ],
-      "load_bearing_score": 13.799,
+      "load_bearing_score": 13.811,
       "note_path": "docs/PMNS_SOLE_AXIOM_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py",
-      "transitive_descendants": 629
+      "transitive_descendants": 634
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4574,12 +4574,12 @@
       "direct_in_degree": 8,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.297,
+      "load_bearing_score": 16.308,
       "note_path": "docs/PMNS_SELECTOR_CURRENT_STACK_ZERO_LAW_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_selector_current_stack_zero_law.py",
-      "transitive_descendants": 628
+      "transitive_descendants": 633
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4598,12 +4598,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.297,
+      "load_bearing_score": 15.308,
       "note_path": "docs/DM_NEUTRINO_TRIPLET_CHARACTER_SOURCE_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_triplet_character_source_theorem.py",
-      "transitive_descendants": 628
+      "transitive_descendants": 633
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4638,12 +4638,12 @@
         "scripts/frontier_pmns_uniform_scalar_deformation_boundary.py",
         "scripts/pmns_lower_level_utils.py"
       ],
-      "load_bearing_score": 13.797,
+      "load_bearing_score": 13.808,
       "note_path": "docs/PMNS_C3_CHARACTER_MODE_REDUCTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_c3_character_mode_reduction.py",
-      "transitive_descendants": 628
+      "transitive_descendants": 633
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4679,12 +4679,12 @@
         "scripts/frontier_pmns_uniform_scalar_deformation_boundary.py",
         "scripts/pmns_lower_level_utils.py"
       ],
-      "load_bearing_score": 15.795,
+      "load_bearing_score": 15.806,
       "note_path": "docs/PMNS_C3_NONTRIVIAL_CURRENT_BOUNDARY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_c3_nontrivial_current_boundary.py",
-      "transitive_descendants": 627
+      "transitive_descendants": 632
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4704,12 +4704,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.295,
+      "load_bearing_score": 13.306,
       "note_path": "docs/NEUTRINO_MAJORANA_NUR_CHARACTER_BOUNDARY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_nur_character_boundary.py",
-      "transitive_descendants": 627
+      "transitive_descendants": 632
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4732,12 +4732,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.295,
+      "load_bearing_score": 13.306,
       "note_path": "docs/NEUTRINO_MAJORANA_NUR_CHARGE2_PRIMITIVE_REDUCTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_nur_charge2_primitive_reduction.py",
-      "transitive_descendants": 627
+      "transitive_descendants": 632
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4761,12 +4761,12 @@
         "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "load_bearing_score": 17.792,
+      "load_bearing_score": 17.804,
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
-      "transitive_descendants": 626
+      "transitive_descendants": 631
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4806,12 +4806,12 @@
         "scripts/frontier_pmns_uniform_scalar_deformation_boundary.py",
         "scripts/pmns_lower_level_utils.py"
       ],
-      "load_bearing_score": 17.29,
+      "load_bearing_score": 17.301,
       "note_path": "docs/NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_two_amplitude_last_mile.py",
-      "transitive_descendants": 625
+      "transitive_descendants": 630
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4833,12 +4833,12 @@
       "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.788,
+      "load_bearing_score": 15.799,
       "note_path": "docs/PMNS_SELECTOR_SIGN_TO_BRANCH_REDUCTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_selector_sign_to_branch_reduction.py",
-      "transitive_descendants": 624
+      "transitive_descendants": 629
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4859,12 +4859,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.276,
+      "load_bearing_score": 15.288,
       "note_path": "docs/DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_veven_bosonic_normalization_theorem.py",
-      "transitive_descendants": 619
+      "transitive_descendants": 624
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4886,12 +4886,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.274,
+      "load_bearing_score": 15.285,
       "note_path": "docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_k00_bosonic_normalization_theorem.py",
-      "transitive_descendants": 618
+      "transitive_descendants": 623
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4913,12 +4913,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.774,
+      "load_bearing_score": 14.785,
       "note_path": "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_codd_bosonic_normalization_theorem.py",
-      "transitive_descendants": 618
+      "transitive_descendants": 623
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4941,12 +4941,12 @@
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "load_bearing_score": 15.767,
+      "load_bearing_score": 15.778,
       "note_path": "docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_exact_kernel_closure.py",
-      "transitive_descendants": 615
+      "transitive_descendants": 620
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4970,12 +4970,12 @@
         "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "load_bearing_score": 13.764,
+      "load_bearing_score": 13.776,
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_MICROSCOPIC_D_LAST_MILE_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_microscopic_d_last_mile.py",
-      "transitive_descendants": 614
+      "transitive_descendants": 619
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5000,12 +5000,12 @@
         "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "load_bearing_score": 13.264,
+      "load_bearing_score": 13.276,
       "note_path": "docs/DM_LEPTOGENESIS_NE_ACTIVE_COLUMN_AXIOM_BOUNDARY_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_ne_active_column_axiom_boundary.py",
-      "transitive_descendants": 614
+      "transitive_descendants": 619
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5029,12 +5029,12 @@
         "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "load_bearing_score": 19.262,
+      "load_bearing_score": 19.274,
       "note_path": "docs/DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_ne_charged_source_response_reduction.py",
-      "transitive_descendants": 613
+      "transitive_descendants": 618
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5061,12 +5061,12 @@
         "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "load_bearing_score": 19.748,
+      "load_bearing_score": 19.76,
       "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
-      "transitive_descendants": 607
+      "transitive_descendants": 612
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5086,12 +5086,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.734,
+      "load_bearing_score": 12.746,
       "note_path": "docs/DM_NEUTRINO_BREAKING_TRIPLET_AXIOM_LAW_ATTEMPT_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_breaking_triplet_axiom_law_attempt.py",
-      "transitive_descendants": 601
+      "transitive_descendants": 606
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5119,12 +5119,12 @@
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py"
       ],
-      "load_bearing_score": 15.731,
+      "load_bearing_score": 15.743,
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_breaking_triplet_source_law.py",
-      "transitive_descendants": 600
+      "transitive_descendants": 605
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5150,12 +5150,12 @@
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py"
       ],
-      "load_bearing_score": 13.722,
+      "load_bearing_score": 13.734,
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_CP_BRIDGE_BOUNDARY_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_cp_bridge_boundary.py",
-      "transitive_descendants": 596
+      "transitive_descendants": 601
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5183,12 +5183,12 @@
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
         "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py"
       ],
-      "load_bearing_score": 16.719,
+      "load_bearing_score": 16.731,
       "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_ne_projected_source_triplet_sign_theorem.py",
-      "transitive_descendants": 595
+      "transitive_descendants": 600
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5210,12 +5210,12 @@
         "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py"
       ],
-      "load_bearing_score": 15.709,
+      "load_bearing_score": 15.722,
       "note_path": "docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_exact_h_source_surface_theorem.py",
-      "transitive_descendants": 591
+      "transitive_descendants": 596
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5239,12 +5239,12 @@
         "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py"
       ],
-      "load_bearing_score": 14.19,
+      "load_bearing_score": 14.202,
       "note_path": "docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py",
-      "transitive_descendants": 583
+      "transitive_descendants": 588
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5265,12 +5265,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.19,
+      "load_bearing_score": 13.202,
       "note_path": "docs/DM_NEUTRINO_HERMITIAN_BRIDGE_CARRIER_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py",
-      "transitive_descendants": 583
+      "transitive_descendants": 588
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5289,12 +5289,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.69,
+      "load_bearing_score": 12.702,
       "note_path": "docs/DM_NEUTRINO_TRIPLET_EVEN_RESPONSE_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_triplet_even_response_theorem.py",
-      "transitive_descendants": 583
+      "transitive_descendants": 588
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5314,12 +5314,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.69,
+      "load_bearing_score": 12.702,
       "note_path": "docs/DM_STRONG_CP_GAMMA_TRANSFER_NO_GO_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_strong_cp_gamma_transfer_nogo.py",
-      "transitive_descendants": 583
+      "transitive_descendants": 588
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5347,12 +5347,12 @@
         "scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py",
         "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py"
       ],
-      "load_bearing_score": 22.187,
+      "load_bearing_score": 22.2,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_NORMAL_FORM_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py",
-      "transitive_descendants": 582
+      "transitive_descendants": 587
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5375,12 +5375,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.187,
+      "load_bearing_score": 13.2,
       "note_path": "docs/DM_NEUTRINO_WEAK_TRIPLET_TRANSFER_CLASS_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_weak_triplet_transfer_class_theorem.py",
-      "transitive_descendants": 582
+      "transitive_descendants": 587
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5408,12 +5408,12 @@
         "scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py"
       ],
-      "load_bearing_score": 21.682,
+      "load_bearing_score": 21.695,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py",
-      "transitive_descendants": 580
+      "transitive_descendants": 585
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5433,12 +5433,12 @@
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.182,
+      "load_bearing_score": 14.195,
       "note_path": "docs/DM_NEUTRINO_Z3_CHARACTER_TRANSFER_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_z3_character_transfer_theorem.py",
-      "transitive_descendants": 580
+      "transitive_descendants": 585
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5469,12 +5469,12 @@
         "scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py",
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py"
       ],
-      "load_bearing_score": 18.68,
+      "load_bearing_score": 18.692,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_INTRINSIC_SLOT_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
-      "transitive_descendants": 579
+      "transitive_descendants": 584
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5505,12 +5505,12 @@
         "scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py",
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py"
       ],
-      "load_bearing_score": 15.177,
+      "load_bearing_score": 15.19,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_M_SPECTATOR_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_m_spectator_theorem.py",
-      "transitive_descendants": 578
+      "transitive_descendants": 583
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5542,12 +5542,12 @@
         "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py"
       ],
-      "load_bearing_score": 14.675,
+      "load_bearing_score": 14.687,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SLOT_TORSION_BOUNDARY_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_slot_torsion_boundary_theorem.py",
-      "transitive_descendants": 577
+      "transitive_descendants": 582
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5580,12 +5580,12 @@
         "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py"
       ],
-      "load_bearing_score": 30.672,
+      "load_bearing_score": 30.685,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py",
-      "transitive_descendants": 576
+      "transitive_descendants": 581
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5618,12 +5618,12 @@
         "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py"
       ],
-      "load_bearing_score": 26.632,
+      "load_bearing_score": 26.645,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py",
-      "transitive_descendants": 560
+      "transitive_descendants": 565
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5657,12 +5657,12 @@
         "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py"
       ],
-      "load_bearing_score": 23.595,
+      "load_bearing_score": 23.609,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py",
-      "transitive_descendants": 546
+      "transitive_descendants": 551
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5684,12 +5684,12 @@
       "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.074,
+      "load_bearing_score": 17.087,
       "note_path": "docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/axiom_first_spin_statistics_check.py",
-      "transitive_descendants": 538
+      "transitive_descendants": 543
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5736,12 +5736,12 @@
       "direct_in_degree": 15,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 19.55,
+      "load_bearing_score": 19.563,
       "note_path": "docs/BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_bminusl_anomaly_freedom.py",
-      "transitive_descendants": 529
+      "transitive_descendants": 534
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5764,12 +5764,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.011,
+      "load_bearing_score": 15.025,
       "note_path": "docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/axiom_first_cpt_check.py",
-      "transitive_descendants": 515
+      "transitive_descendants": 520
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5802,12 +5802,12 @@
         "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py"
       ],
-      "load_bearing_score": 14.011,
+      "load_bearing_score": 14.025,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SCALAR_BASELINE_ACTIVE_QUADRATIC_DIAGNOSTIC_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_scalar_baseline_active_quadratic_diagnostic.py",
-      "transitive_descendants": 515
+      "transitive_descendants": 520
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5829,12 +5829,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 16.503,
+      "load_bearing_score": 16.517,
       "note_path": "docs/HIGGS_MASS_HIERARCHY_CORRECTION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_higgs_mass_hierarchy_correction.py",
-      "transitive_descendants": 512
+      "transitive_descendants": 517
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5857,12 +5857,12 @@
       "direct_in_degree": 8,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.003,
+      "load_bearing_score": 16.017,
       "note_path": "docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/axiom_first_kms_condition_check.py",
-      "transitive_descendants": 512
+      "transitive_descendants": 517
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5884,12 +5884,12 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 18.992,
+      "load_bearing_score": 19.006,
       "note_path": "docs/HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_hierarchy_bosonic_bilinear_selector.py",
-      "transitive_descendants": 508
+      "transitive_descendants": 513
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5910,12 +5910,12 @@
       "direct_in_degree": 19,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 21.489,
+      "load_bearing_score": 21.503,
       "note_path": "docs/N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_n_eff_from_three_generations.py",
-      "transitive_descendants": 507
+      "transitive_descendants": 512
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5944,12 +5944,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.486,
+      "load_bearing_score": 14.5,
       "note_path": "docs/AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/axiom_first_stefan_boltzmann_check.py",
-      "transitive_descendants": 506
+      "transitive_descendants": 511
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5968,12 +5968,12 @@
       "direct_in_degree": 9,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.477,
+      "load_bearing_score": 16.492,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_2026_04_18.py",
-      "transitive_descendants": 503
+      "transitive_descendants": 508
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5996,12 +5996,12 @@
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "load_bearing_score": 14.974,
+      "load_bearing_score": 14.989,
       "note_path": "docs/DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_hrad_theorem.py",
-      "transitive_descendants": 502
+      "transitive_descendants": 507
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6023,12 +6023,12 @@
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "load_bearing_score": 14.972,
+      "load_bearing_score": 14.986,
       "note_path": "docs/DM_LEPTOGENESIS_TRANSPORT_INTEGRAL_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_transport_integral_theorem.py",
-      "transitive_descendants": 501
+      "transitive_descendants": 506
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6052,12 +6052,12 @@
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "load_bearing_score": 14.969,
+      "load_bearing_score": 14.983,
       "note_path": "docs/DM_LEPTOGENESIS_TRANSPORT_DECOMPOSITION_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_transport_decomposition_theorem.py",
-      "transitive_descendants": 500
+      "transitive_descendants": 505
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6076,12 +6076,12 @@
       "direct_in_degree": 13,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 18.463,
+      "load_bearing_score": 18.477,
       "note_path": "docs/OMEGA_LAMBDA_DERIVATION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_omega_lambda_arithmetic_cascade.py",
-      "transitive_descendants": 498
+      "transitive_descendants": 503
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6118,12 +6118,12 @@
         "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py"
       ],
-      "load_bearing_score": 17.96,
+      "load_bearing_score": 17.974,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SCHUR_SCALAR_BASELINE_THEOREM_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_schur_scalar_baseline_theorem.py",
-      "transitive_descendants": 497
+      "transitive_descendants": 502
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6160,12 +6160,12 @@
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py"
       ],
-      "load_bearing_score": 15.457,
+      "load_bearing_score": 15.472,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_CURRENT_BANK_BLINDNESS_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_current_bank_blindness_theorem.py",
-      "transitive_descendants": 496
+      "transitive_descendants": 501
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6188,12 +6188,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.457,
+      "load_bearing_score": 14.472,
       "note_path": "docs/DM_NEUTRINO_SOURCE_AMPLITUDE_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_amplitude_theorem.py",
-      "transitive_descendants": 496
+      "transitive_descendants": 501
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6220,12 +6220,12 @@
         "scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "load_bearing_score": 13.957,
+      "load_bearing_score": 13.972,
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py",
-      "transitive_descendants": 496
+      "transitive_descendants": 501
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6250,12 +6250,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.954,
+      "load_bearing_score": 14.969,
       "note_path": "docs/CHARGED_LEPTON_UE_IDENTITY_VIA_Z3_TRICHOTOMY_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_charged_lepton_ue_identity_via_z3_trichotomy.py",
-      "transitive_descendants": 495
+      "transitive_descendants": 500
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6279,12 +6279,12 @@
         "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "load_bearing_score": 15.951,
+      "load_bearing_score": 15.966,
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py",
-      "transitive_descendants": 494
+      "transitive_descendants": 499
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6319,12 +6319,12 @@
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py"
       ],
-      "load_bearing_score": 14.451,
+      "load_bearing_score": 14.466,
       "note_path": "docs/DM_NEUTRINO_SOURCE_BANK_Z3_DOUBLET_BLOCK_SELECTION_OBSTRUCTION_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem.py",
-      "transitive_descendants": 494
+      "transitive_descendants": 499
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6348,12 +6348,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.945,
+      "load_bearing_score": 14.96,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_PARITY_SPLIT_THEOREM_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_z3_parity_split_theorem.py",
-      "transitive_descendants": 492
+      "transitive_descendants": 497
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6374,12 +6374,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.945,
+      "load_bearing_score": 12.96,
       "note_path": "docs/DM_NEUTRINO_ODD_CIRCULANT_CURRENT_STACK_ZERO_LAW_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_odd_circulant_current_stack_zero_law.py",
-      "transitive_descendants": 492
+      "transitive_descendants": 497
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6401,12 +6401,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.445,
+      "load_bearing_score": 12.46,
       "note_path": "docs/DM_NEUTRINO_TWO_HIGGS_CONTINUITY_SHEET_THEOREM_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_two_higgs_continuity_sheet_theorem.py",
-      "transitive_descendants": 492
+      "transitive_descendants": 497
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6442,12 +6442,12 @@
         "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py"
       ],
-      "load_bearing_score": 13.943,
+      "load_bearing_score": 13.957,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_CUBIC_VARIATIONAL_OBSTRUCTION_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_cubic_variational_obstruction.py",
-      "transitive_descendants": 491
+      "transitive_descendants": 496
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6483,12 +6483,12 @@
         "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py"
       ],
-      "load_bearing_score": 13.943,
+      "load_bearing_score": 13.957,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_INFO_GEOMETRIC_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_info_geometric_selection_obstruction.py",
-      "transitive_descendants": 491
+      "transitive_descendants": 496
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6510,12 +6510,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.443,
+      "load_bearing_score": 12.457,
       "note_path": "docs/DM_NEUTRINO_ODD_MIXED_BRIDGE_EXTENSION_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_odd_mixed_bridge_extension.py",
-      "transitive_descendants": 491
+      "transitive_descendants": 496
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6535,12 +6535,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.443,
+      "load_bearing_score": 12.457,
       "note_path": "docs/DM_NEUTRINO_Z3_PHASE_LIFT_MIXED_BRIDGE_NOTE_2026-04-15.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_z3_phase_lift_bridge.py",
-      "transitive_descendants": 491
+      "transitive_descendants": 496
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6573,12 +6573,12 @@
         "scripts/frontier_dm_leptogenesis_pmns_transport_extremal_source_candidate.py",
         "scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py"
       ],
-      "load_bearing_score": 14.44,
+      "load_bearing_score": 14.454,
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_SELECTOR_BANK_CP_SHEET_BLINDNESS_THEOREM_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py",
-      "transitive_descendants": 490
+      "transitive_descendants": 495
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6611,12 +6611,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.44,
+      "load_bearing_score": 14.454,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_PARITY_MIXING_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_parity_mixing_selection_obstruction.py",
-      "transitive_descendants": 490
+      "transitive_descendants": 495
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6654,12 +6654,12 @@
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py"
       ],
-      "load_bearing_score": 13.937,
+      "load_bearing_score": 13.951,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_FULL_CLOSURE_BOUNDARY_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_full_closure_boundary.py",
-      "transitive_descendants": 489
+      "transitive_descendants": 494
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6699,12 +6699,12 @@
         "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py"
       ],
-      "load_bearing_score": 13.931,
+      "load_bearing_score": 13.945,
       "note_path": "docs/DM_NEUTRINO_OBSERVABLE_BANK_EXHAUSTION_THEOREM_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_observable_bank_exhaustion_theorem.py",
-      "transitive_descendants": 487
+      "transitive_descendants": 492
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6724,12 +6724,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.913,
+      "load_bearing_score": 14.928,
       "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_perturbative_uniqueness_theorem.py",
-      "transitive_descendants": 481
+      "transitive_descendants": 486
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6751,12 +6751,12 @@
       "direct_in_degree": 11,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.377,
+      "load_bearing_score": 17.392,
       "note_path": "docs/NEUTRINO_MAJORANA_CURRENT_STACK_ZERO_LAW_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_current_stack_zero_law.py",
-      "transitive_descendants": 469
+      "transitive_descendants": 474
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6777,12 +6777,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.87,
+      "load_bearing_score": 14.886,
       "note_path": "docs/NEUTRINO_MAJORANA_LOWER_LEVEL_PAIRING_NOGO_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_neutrino_majorana_lower_level_pairing_nogo.py",
-      "transitive_descendants": 467
+      "transitive_descendants": 472
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6815,12 +6815,12 @@
       "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.855,
+      "load_bearing_score": 16.87,
       "note_path": "docs/PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem.py",
-      "transitive_descendants": 462
+      "transitive_descendants": 467
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6842,12 +6842,12 @@
       "direct_in_degree": 8,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.755,
+      "load_bearing_score": 12.771,
       "note_path": "docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/microcausality_finite_range_h_bridge_2026_05_09.py",
-      "transitive_descendants": 431
+      "transitive_descendants": 436
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6870,12 +6870,12 @@
       "direct_in_degree": 8,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.745,
+      "load_bearing_score": 12.762,
       "note_path": "docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py",
-      "transitive_descendants": 428
+      "transitive_descendants": 433
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6898,12 +6898,12 @@
       "helper_runner_paths": [
         "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py"
       ],
-      "load_bearing_score": 10.218,
+      "load_bearing_score": 10.235,
       "note_path": "docs/FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py",
-      "transitive_descendants": 420
+      "transitive_descendants": 425
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6964,6 +6964,88 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
+        "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
+        "pmns_graph_first_axis_alignment_note",
+        "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
+        "flavor_native_double_shift_corner_coupling_note_2026-05-30",
+        "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 12.169,
+      "note_path": "docs/PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/pmns_tm2_magic_residual_dynamical_generator_runner.py",
+      "transitive_descendants": 406
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
+        "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
+        "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05",
+        "koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 12.665,
+      "note_path": "docs/PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/pmns_tm2_trimaximal_from_record_central_sector_runner.py",
+      "transitive_descendants": 405
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.662,
+      "note_path": "docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py",
+      "transitive_descendants": 404
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -7015,83 +7097,122 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05",
+      "claim_id": "magnitude_reads_minimal_record_block_2026-06-06",
       "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_type": "no_go",
       "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
       "deps": [
-        "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
-        "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
-        "pmns_graph_first_axis_alignment_note",
-        "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
-        "flavor_native_double_shift_corner_coupling_note_2026-05-30",
-        "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.151,
-      "note_path": "docs/PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/pmns_tm2_magic_residual_dynamical_generator_runner.py",
-      "transitive_descendants": 401
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "pmns_tm2_residual_consequence_bounded_note_2026-05-26",
-        "pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26",
-        "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05",
-        "koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30"
+        "minimal_axioms",
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
+        "scale_reference_primitive",
+        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
       ],
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.647,
-      "note_path": "docs/PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md",
+      "load_bearing_score": 9.637,
+      "note_path": "docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": "scripts/pmns_tm2_trimaximal_from_record_central_sector_runner.py",
-      "transitive_descendants": 400
+      "runner_path": "scripts/magnitude_reads_minimal_record_block_2026_06_06.py",
+      "transitive_descendants": 397
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "claim_id": "record_unbounded_finite_additivity_schema_2026-06-06",
       "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_type": "open_gate",
       "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
       "deps": [
-        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
-        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
-        "minimal_axioms"
+        "minimal_axioms",
+        "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 10.644,
-      "note_path": "docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "load_bearing_score": 10.126,
+      "note_path": "docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py",
-      "transitive_descendants": 399
+      "runner_path": "scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py",
+      "transitive_descendants": 394
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
+        "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31",
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06",
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+        "post_record_count_probability_firewall_2026-06-06",
+        "observable_principle_record_scalar_map_no_go_note_2026-06-05",
+        "observable_principle_from_axiom_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.626,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_NU_LICENSE_FROM_RETAINED_SURFACE_NARROW_NO_GO_NOTE_2026-06-10.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/observable_principle_p1_nu_license_check_2026_06_10.py",
+      "transitive_descendants": 394
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10",
+        "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
+        "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31",
+        "record_function_finite_sector_algebra_2026-06-05",
+        "record_unbounded_finite_additivity_schema_2026-06-06",
+        "magnitude_reads_minimal_record_block_2026-06-06",
+        "post_record_count_probability_firewall_2026-06-06",
+        "observable_principle_record_scalar_map_no_go_note_2026-06-05",
+        "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06",
+        "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+        "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03",
+        "observable_principle_from_axiom_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.622,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/observable_principle_p1_br_license_check_2026_06_10.py",
+      "transitive_descendants": 393
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7149,158 +7270,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "magnitude_reads_minimal_record_block_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
-        "scale_reference_primitive",
-        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
-        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.618,
-      "note_path": "docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/magnitude_reads_minimal_record_block_2026_06_06.py",
-      "transitive_descendants": 392
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "record_unbounded_finite_additivity_schema_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.107,
-      "note_path": "docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py",
-      "transitive_descendants": 389
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
-        "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31",
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-        "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06",
-        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
-        "post_record_count_probability_firewall_2026-06-06",
-        "observable_principle_record_scalar_map_no_go_note_2026-06-05",
-        "observable_principle_from_axiom_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.607,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_NU_LICENSE_FROM_RETAINED_SURFACE_NARROW_NO_GO_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/observable_principle_p1_nu_license_check_2026_06_10.py",
-      "transitive_descendants": 389
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_lattice_noether_theorem_note_2026-04-29",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
-        "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
-        "minimal_axioms",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
-        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
-        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
-      ],
-      "direct_in_degree": 13,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.104,
-      "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/axiom_first_lattice_noether_check.py",
-      "transitive_descendants": 388
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10",
-        "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
-        "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31",
-        "record_function_finite_sector_algebra_2026-06-05",
-        "record_unbounded_finite_additivity_schema_2026-06-06",
-        "magnitude_reads_minimal_record_block_2026-06-06",
-        "post_record_count_probability_firewall_2026-06-06",
-        "observable_principle_record_scalar_map_no_go_note_2026-06-05",
-        "post_record_finite_to_unbounded_family_lift_no_go_2026-06-06",
-        "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
-        "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03",
-        "observable_principle_from_axiom_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.604,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/observable_principle_p1_br_license_check_2026_06_10.py",
-      "transitive_descendants": 388
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -7326,12 +7295,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.6,
+      "load_bearing_score": 9.618,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/observable_principle_p1_cap_k_check_2026_06_10.py",
-      "transitive_descendants": 387
+      "transitive_descendants": 392
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7352,12 +7321,12 @@
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.6,
+      "load_bearing_score": 9.618,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py",
-      "transitive_descendants": 387
+      "transitive_descendants": 392
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7378,12 +7347,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.096,
+      "load_bearing_score": 9.115,
       "note_path": "docs/P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.py",
-      "transitive_descendants": 386
+      "transitive_descendants": 391
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7405,12 +7374,12 @@
       "direct_in_degree": 1,
       "effective_status": "audited_conditional",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.096,
+      "load_bearing_score": 9.115,
       "note_path": "docs/SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md",
       "queue_reason": "non_terminal_conditional",
       "ready": false,
       "runner_path": "scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py",
-      "transitive_descendants": 386
+      "transitive_descendants": 391
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7443,12 +7412,12 @@
       "direct_in_degree": 25,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 21.092,
+      "load_bearing_score": 21.111,
       "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
-      "transitive_descendants": 385
+      "transitive_descendants": 390
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7468,12 +7437,12 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.092,
+      "load_bearing_score": 9.111,
       "note_path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.py",
-      "transitive_descendants": 385
+      "transitive_descendants": 390
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7503,12 +7472,43 @@
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.092,
+      "load_bearing_score": 9.111,
       "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/single_clock_axis_selection_check_2026_06_11.py",
-      "transitive_descendants": 385
+      "transitive_descendants": 390
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "axiom_first_lattice_noether_theorem_note_2026-04-29",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+        "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+        "minimal_axioms",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
+      ],
+      "direct_in_degree": 13,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 15.104,
+      "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/axiom_first_lattice_noether_check.py",
+      "transitive_descendants": 388
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -11572,7 +11572,7 @@
       "claim_id": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
@@ -11881,12 +11881,12 @@
       "direct_in_degree": 13,
       "effective_status": "audited_conditional",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.785,
+      "load_bearing_score": 11.992,
       "note_path": "docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md",
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py",
-      "transitive_descendants": 38
+      "transitive_descendants": 44
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -18225,6 +18225,35 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "free_field_os_wightman_reconstruction_conditional_theorem_note_2026-05-30",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "kinetic_isotropy_primitive",
+        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
+        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.144,
+      "note_path": "docs/FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION_CONDITIONAL_THEOREM_NOTE_2026-05-30.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/free_field_os_wightman_reconstruction_2026-05-30.py",
+      "transitive_descendants": 24
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "pmns_theta12_theta13_dcp_predictions_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -19856,34 +19885,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py",
       "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
-      "blocker": null,
-      "claim_id": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
-      "claim_scope": "The audit covered the on-site Pauli-bivector so(3,1) algebra, its chiral Weyl representation and massless kinetic-kernel covariance, the asserted faithful-versus-scalar selection, and the explicitly residual massive partner-chirality construction.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "free_dirac_poincare_representation_bounded_note_2026-05-30"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "audited_conditional",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.907,
-      "note_path": "docs/KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md",
-      "queue_reason": "non_terminal_conditional",
-      "ready": true,
-      "runner_path": "scripts/koide_onsite_boost_reconstruction_2026_06_02.py",
-      "transitive_descendants": 14
     },
     {
       "audit_independence_required": "any_non_self",
@@ -26766,6 +26767,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.255,
+      "note_path": "docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/free_dirac_antiparticle_mode_algebra_2026_05_30.py",
+      "transitive_descendants": 26
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "newton_derivation_note",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -26874,6 +26899,32 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/gauge_algebra_supplied_carrier_2026_06_08.py",
+      "transitive_descendants": 25
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.7,
+      "note_path": "docs/OSTERWALDER_SCHRADER_FROM_FRAMEWORK_NARROW_THEOREM_NOTE_2026-05-27.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/osterwalder_schrader_from_framework_runner_2026_05_27.py",
       "transitive_descendants": 25
     },
     {
@@ -28709,6 +28760,35 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "free_dirac_poincare_representation_bounded_note_2026-05-30",
+        "free_field_os_wightman_reconstruction_conditional_theorem_note_2026-05-30"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.907,
+      "note_path": "docs/KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/koide_onsite_boost_reconstruction_2026_06_02.py",
+      "transitive_descendants": 14
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "signed_gravity_remaining_closure_gates_note",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -28892,30 +28972,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.2,
-      "note_path": "docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/free_dirac_antiparticle_mode_algebra_2026_05_30.py",
-      "transitive_descendants": 12
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lanes.open_science.readme",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -29083,32 +29139,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.585,
-      "note_path": "docs/OSTERWALDER_SCHRADER_FROM_FRAMEWORK_NARROW_THEOREM_NOTE_2026-05-27.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/osterwalder_schrader_from_framework_runner_2026_05_27.py",
-      "transitive_descendants": 11
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_per_sector_orientation_is_gauge_cp_is_inter_sector_narrow_theorem_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -29211,35 +29241,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_color_orientation_predictive_equivalence_2026_06_09.py",
-      "transitive_descendants": 10
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "free_field_os_wightman_reconstruction_conditional_theorem_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kinetic_isotropy_primitive",
-        "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
-        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.459,
-      "note_path": "docs/FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION_CONDITIONAL_THEOREM_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/free_field_os_wightman_reconstruction_2026-05-30.py",
       "transitive_descendants": 10
     },
     {
@@ -34545,7 +34546,7 @@
       "claim_id": "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -35023,6 +35024,55 @@
     },
     {
       "audit_independence_required": "any_non_self",
+      "audit_status": "audited_conditional",
+      "blocker": null,
+      "claim_id": "acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02",
+      "claim_scope": "One-component nearest-neighbor staggered K0/K1 surface removal as a K-breaking carrier via real non-projective C3[111] lift plus conjugate-sector blindness.",
+      "claim_type": "no_go",
+      "claim_type_provenance": "audited",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "audited_conditional",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md",
+      "queue_reason": "non_terminal_conditional",
+      "ready": true,
+      "runner_path": "scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "audited_conditional",
+      "blocker": null,
+      "claim_id": "acphilambda_k_even_registration_correction_registered_pattern_2026-07-02",
+      "claim_scope": "K-even registration correction and registered-pattern normal form on the current retained surface, including the K-odd trace as reconstruction detector and the value residual as Tier-A R-eta sub-admission in narrowed coordinates.",
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "audited",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15",
+        "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "audited_conditional",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md",
+      "queue_reason": "non_terminal_conditional",
+      "ready": true,
+      "runner_path": "scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
       "audit_status": "audited_failed",
       "blocker": null,
       "claim_id": "acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02",
@@ -35128,6 +35178,33 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/acphilambda_r_eta_occurrence_axiom_hygiene_no_go_2026_07_04.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "audited_conditional",
+      "blocker": null,
+      "claim_id": "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01",
+      "claim_scope": "The exact circulant-spectrum invariant cos(3 delta), equal-modulus cycle-holonomy normal form, and the conditional algebraic re-coordination Phi(c) = c S_sum were audited; no derivation of the physical value Phi = 2/3 was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "audited",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "audited_conditional",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md",
+      "queue_reason": "non_terminal_conditional",
+      "ready": true,
+      "runner_path": "scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py",
       "transitive_descendants": 1
     },
     {
@@ -35495,55 +35572,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
-      "claim_id": "acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02",
-      "claim_scope": "One-component nearest-neighbor staggered K0/K1 surface removal as a K-breaking carrier via real non-projective C3[111] lift plus conjugate-sector blindness.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md",
-      "queue_reason": "non_terminal_conditional",
-      "ready": true,
-      "runner_path": "scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
-      "blocker": null,
-      "claim_id": "acphilambda_k_even_registration_correction_registered_pattern_2026-07-02",
-      "claim_scope": "K-even registration correction and registered-pattern normal form on the current retained surface, including the K-odd trace as reconstruction detector and the value residual as Tier-A R-eta sub-admission in narrowed coordinates.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15",
-        "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md",
-      "queue_reason": "non_terminal_conditional",
-      "ready": true,
-      "runner_path": "scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
-      "blocker": null,
       "claim_id": "acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04",
       "claim_scope": "The supplied doublet-clock algebra does not by itself normalize either the raw clock or a sparse event-rate ratio into the physical charged-lepton readout 2/3; this is a route-family no-go, not a terminal no-go against future event physics.",
       "claim_type": "no_go",
@@ -35645,33 +35673,6 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
-      "blocker": null,
-      "claim_id": "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01",
-      "claim_scope": "The exact circulant-spectrum invariant cos(3 delta), equal-modulus cycle-holonomy normal form, and the conditional algebraic re-coordination Phi(c) = c S_sum were audited; no derivation of the physical value Phi = 2/3 was audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md",
-      "queue_reason": "non_terminal_conditional",
-      "ready": true,
-      "runner_path": "scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py",
       "transitive_descendants": 0
     },
     {
@@ -41553,6 +41554,39 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/abj_anomaly_framework_internal_u1_jacobian_runner.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "acphilambda_cross_arc_unit_classification_wiring_2026-07-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+        "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+        "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15",
+        "acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01",
+        "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01",
+        "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02",
+        "acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02",
+        "acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02",
+        "acphilambda_projective_equivariance_k_odd_trace_2026-07-02",
+        "acphilambda_k_even_registration_correction_registered_pattern_2026-07-02"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/ACPHILAMBDA_CROSS_ARC_UNIT_CLASSIFICATION_WIRING_2026-07-02.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py",
       "transitive_descendants": 0
     },
     {
@@ -55918,6 +55952,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 155,
-  "total_pending": 1862
+  "ready_count": 154,
+  "total_pending": 1863
 }

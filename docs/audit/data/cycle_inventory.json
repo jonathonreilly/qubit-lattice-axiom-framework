@@ -19,7 +19,7 @@
         }
       ],
       "length": 3,
-      "max_transitive_descendants": 385,
+      "max_transitive_descendants": 390,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -28,7 +28,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
           "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3",
-          "transitive_descendants": 385
+          "transitive_descendants": 390
         },
         {
           "audit_status": "unaudited",
@@ -37,7 +37,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
           "title": "Single-Clock APBC Axis-Label Bridge",
-          "transitive_descendants": 385
+          "transitive_descendants": 390
         },
         {
           "audit_status": "unaudited",
@@ -46,7 +46,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
           "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin",
-          "transitive_descendants": 385
+          "transitive_descendants": 390
         }
       ],
       "requires_lemma_extraction": false

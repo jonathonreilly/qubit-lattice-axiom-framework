@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 955 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1703 |
+| unaudited | 1705 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 137 |
+| ~~audited_conditional~~ | 135 |
 | ~~audited_failed~~ | 12 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,18 +73,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1372 |
-| `audited_conditional` | 137 |
+| `audited_conditional` | 135 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2048 |
+| `unaudited` | 2050 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2023 |
+| `bounded_theorem` | 2024 |
 | `decoration` | 72 |
-| `meta` | 354 |
+| `meta` | 353 |
 | `no_go` | 482 |
 | `open_gate` | 183 |
 | `positive_theorem` | 601 |
@@ -92,9 +92,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 687 |
-| `high` | 446 |
+| `high` | 447 |
 | `medium` | 954 |
-| `leaf` | 1628 |
+| `leaf` | 1627 |
 
 - **Retained pending chain closure:** 13
 - **Citation cycles detected:** 10
@@ -112,30 +112,30 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1933 | 217.92 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1187 | 67.21 | `audited_clean` | **retained** |
+| 1 | `minimal_axioms` | meta | critical | 1934 | 217.92 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1193 | 67.22 | `audited_clean` | **retained** |
 | 3 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 65.64 | `audited_clean` | **retained** |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1578 | 65.62 | `audited_clean` | **retained** |
-| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1019 | 64.49 | `audited_clean` | **retained_bounded** |
-| 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1149 | 53.17 | `audited_clean` | **retained_bounded** |
-| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1049 | 48.04 | `unaudited` | meta |
-| 8 | `key_terminology` | meta | critical | 1163 | 46.69 | `unaudited` | meta |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 922 | 43.85 | `audited_clean` | **retained_bounded** |
-| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1290 | 43.33 | `unaudited` | unaudited |
-| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1027 | 42.01 | `audited_clean` | **retained_bounded** |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1537 | 41.59 | `audited_clean` | **retained** |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1023 | 39.50 | `audited_clean` | **retained_bounded** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1583 | 65.63 | `audited_clean` | **retained** |
+| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1024 | 64.50 | `audited_clean` | **retained_bounded** |
+| 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1154 | 53.17 | `audited_clean` | **retained_bounded** |
+| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1054 | 48.04 | `unaudited` | meta |
+| 8 | `key_terminology` | meta | critical | 1168 | 46.69 | `unaudited` | meta |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 927 | 43.86 | `audited_clean` | **retained_bounded** |
+| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1295 | 43.34 | `unaudited` | unaudited |
+| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 1032 | 42.01 | `audited_clean` | **retained_bounded** |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1542 | 41.59 | `audited_clean` | **retained** |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1028 | 39.51 | `audited_clean` | **retained_bounded** |
 | 14 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 319 | 39.32 | `unaudited` | unaudited |
 | 15 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 312 | 37.79 | `unaudited` | unaudited |
-| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 863 | 37.76 | `audited_clean` | **retained_no_go** |
-| 17 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 576 | 37.17 | `audited_conditional` | ~~audited_conditional~~ |
+| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 868 | 37.76 | `audited_clean` | **retained_no_go** |
+| 17 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 581 | 37.19 | `audited_conditional` | ~~audited_conditional~~ |
 | 18 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 537 | 36.57 | `unaudited` | unaudited |
-| 19 | `kinetic_isotropy_primitive` | meta | critical | 461 | 36.35 | `unaudited` | meta |
-| 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 842 | 36.22 | `unaudited` | unaudited |
-| 21 | `cpt_exact_note` | positive_theorem | critical | 727 | 36.01 | `audited_clean` | **retained** |
+| 19 | `kinetic_isotropy_primitive` | meta | critical | 465 | 36.36 | `unaudited` | meta |
+| 20 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 847 | 36.23 | `unaudited` | unaudited |
+| 21 | `cpt_exact_note` | positive_theorem | critical | 730 | 36.01 | `audited_clean` | **retained** |
 | 22 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
-| 23 | `three_generation_structure_note` | bounded_theorem | critical | 1019 | 35.49 | `audited_clean` | **retained_bounded** |
-| 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 839 | 34.71 | `unaudited` | unaudited |
+| 23 | `three_generation_structure_note` | bounded_theorem | critical | 1024 | 35.50 | `audited_clean` | **retained_bounded** |
+| 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 844 | 34.72 | `unaudited` | unaudited |
 | 25 | `charged_lepton_koide_cone_algebraic_equivalence_note` | decoration | critical | 354 | 33.97 | `audited_decoration` | `decoration_under_three_generation_observable_theorem_note` |
 
 
@@ -1528,7 +1528,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `acphilambda_cross_arc_unit_classification_wiring_2026-07-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `acphilambda_k_even_registration_correction_registered_pattern_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1590,7 +1589,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_first_order_selector_bounded_localization_certificate_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
-| `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_q_eq_3delta_identity_note_2026-04-21` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -1932,27 +1930,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For real orthogonal R with R^3 = I and real-symmetric O = f(Delta), Tr(O R^2) = conjugate(Tr(O R)) = Tr(O R), so the conjugate C3 isotypic traces coincide.  _(class `A`)_
 - **chain closes:** True — The scalar blindness and isotypic equality follow by exact finite-dimensional trace algebra. The retained-bounded authority supplies the scoped per-site C^2 carrier surface, and the note correctly limits the projective conclusion to exact group-theoretic identities rather than physical realization.
 - **rationale:** The runner symbolically verifies the load-bearing trace identities, the isotypic corollary, the complex-hopping counterexample, and the projective-lift algebra; its finite torus checks genuinely construct the Laplacian and rotation operators. No external comparator, tuned physical value, or hard-coded disputed bridge enters the bounded conclusion. Physical selection of the projective carrier remains explicitly outside the audited scope.
-- **auditor confidence:** high
-
-### `acphilambda_cross_arc_unit_classification_wiring_2026-07-02`
-
-- **Note:** [`ACPHILAMBDA_CROSS_ARC_UNIT_CLASSIFICATION_WIRING_2026-07-02.md`](../../docs/ACPHILAMBDA_CROSS_ARC_UNIT_CLASSIFICATION_WIRING_2026-07-02.md)
-- **claim_type:** `meta`
-- **claim_scope:** The bookkeeping claim that Arc B path 2 maps to fifteen Arc A conversion-source dispositions, excluding any value derivation, terminal no-go, or registry change.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00035-acphilambda_cross_arc_unit_c`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Arc B's path 2 is answered at the classification level by the landed unit-classification arc, with all audit statuses pending.  _(class `B`)_
-- **chain closes:** False — The mapping imports its substantive dispositions from PR-scoped Arc A notes whose audit statuses are explicitly pending and whose full contents are absent from the restricted authority packet. The runner verifies quotations, arithmetic spot checks, and document discipline but does not independently establish those dispositions.
-- **rationale:** The load-bearing operation is cross-note input verification, not a first-principles computation or independent algebraic closure. Although the runner performs genuine integrity checks and reports 134 passes, it reads the disposition claims from separate landed documents and checks that their text was reproduced. Because those load-bearing Arc A sources remain pending independent audit, the classification-wiring conclusion is conditional.
-- **open / conditional deps cited:**
-  - `ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md`
-  - `ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md`
-  - `ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02.md`
-  - `ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md`
-  - `ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md`
-  - `ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md`
-  - `ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md`
 - **auditor confidence:** high
 
 ### `acphilambda_cycle_flux_transport_face_inventory_2026-07-01`
@@ -12172,22 +12149,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Full signed-permutation O_h equivariance on the R^3 generation carrier forces invariant symmetric forms and equivariant operators to be scalar while moving the democratic direction, so the C_3 trivial/doublet value-bit carrier is erased rather than selected.  _(class `A`)_
 - **chain closes:** True — The restricted packet gives the full finite-group action and runner source, and the core statements follow from standard linear algebra for signed permutations: diagonal sign flips kill off-diagonal invariant form entries and permutations equalize diagonal entries, while the commutant is scalar. This proves the scoped O_h-carrier obstruction without importing an external physical identification.
 - **rationale:** The runner is not a print-only or tuned-value check: it explicitly constructs O_h and C_3, averages forms/operators over the group, verifies invariant dimensions, and checks the projector and commutant claims. Independent formula inventory agrees with the load-bearing identities: |O_h|=2^3*3!=48, the C_3 symmetric-form space is span{I,J-I}, O_h-invariant forms are lambda I, the O_h average of vv^T/||v||^2 is I/3, and scalar H anticommutes with Gamma only at H=0. The no-go is properly scoped and leaves C_3-level or other split-preserving routes open, so it is a closed obstruction only to full O_h equivariance on R^3.
-- **auditor confidence:** high
-
-### `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02`
-
-- **Note:** [`KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md`](../../docs/KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The audit covered the on-site Pauli-bivector so(3,1) algebra, its chiral Weyl representation and massless kinetic-kernel covariance, the asserted faithful-versus-scalar selection, and the explicitly residual massive partner-chirality construction.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-koide_onsite_boost_recon-063`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** The statistics-blind kernel numerator is asserted to have spin-1/2 one-particle content, so the rest-frame little-group Casimir excludes the scalar carrier and forces the faithful chiral Weyl carrier.  _(class `A`)_
-- **chain closes:** False — The finite Pauli, Clifford, Casimir, and massless-kernel covariance identities close. The selection does not: no supplied theorem derives on-shell Wigner spin-1/2 content merely from a nonzero traceless part of an inverse quadratic form, and the massive SO(3) rest-frame argument cannot establish the stated massless-chiral conclusion, whose little group has no rest frame.
-- **rationale:** The runner genuinely verifies the elementary bivector algebra, chiral Casimirs, and covariance of the massless kernel p0+p.sigma. Its load-bearing S5 selection is not computed: ok_scalar is hard-coded true and the selection check merely repeats ok_carrier, while S4 omits the massive numerator invoked in the argument. A reconstruction/intertwiner bridge establishing the claimed one-particle spin content without presupposing the Lorentz carrier is therefore still required.
-- **open / conditional deps cited:**
-  - `FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md`
-  - `FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION_CONDITIONAL_THEOREM_NOTE_2026-05-30.md`
 - **auditor confidence:** high
 
 ### `koide_onsite_weyl_boost_from_bivectors_note_2026-06-01`

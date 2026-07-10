@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 195 |
 | **retained_no_go** | 211 |
 | **retained_bounded** | 948 |
-| _retained_pending_chain_ | 10 |
+| _retained_pending_chain_ | 11 |
 | open_gate | 28 |
-| unaudited | 1732 |
+| unaudited | 1731 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,16 +72,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1363 |
 | `audited_conditional` | 124 |
-| `audited_decoration` | 65 |
+| `audited_decoration` | 66 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 33 |
-| `unaudited` | 2077 |
+| `unaudited` | 2076 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2029 |
-| `decoration` | 67 |
+| `bounded_theorem` | 2028 |
+| `decoration` | 68 |
 | `meta` | 353 |
 | `no_go` | 481 |
 | `open_gate` | 183 |
@@ -94,7 +94,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 954 |
 | `leaf` | 1628 |
 
-- **Retained pending chain closure:** 10
+- **Retained pending chain closure:** 11
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -1685,6 +1685,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | `minimal_axioms` |
+| `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | `minimal_axioms` |
 | `quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `quark_c3_oriented_ward_splitter_support_note_2026-04-28` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `quark_route2_e_center_blindness_no_go_note_2026-06-17` | decoration | ~~audited_decoration~~ | `decoration_under_quark_route2_exact_readout_map_note_2026-04-19` | cross_family | codex-gpt-5.6 | A | `quark_route2_exact_readout_map_note_2026-04-19` |
@@ -16946,6 +16947,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On a finite window, maximizing von Neumann entropy subject only to normalization uniquely gives the normalized trace state I/2^{|Λ|}, whose one-site marginals are I/2 and which is invariant under all available lattice-translation automorphisms.  _(class `A`)_
 - **chain closes:** False — The finite-dimensional entropy argument is correct if the admissible state space is the full density-operator simplex. The cited current axiom memo includes a nearest-neighbor Admissibility constraint, and the packet supplies no bridge showing that absence of record-side information removes that constraint or leaves every density operator on the finite tensor-product algebra available.
 - **rationale:** Conditional on normalization being the only finite-window constraint, the normalized trace is uniquely entropy-maximizing and both asserted invariances follow by standard finite-dimensional mathematics. However, that unrestricted-state-space premise is asserted rather than derived from the restricted packet and is not implied merely by having no record-side information, especially under the cited Admissibility axiom. No runner source or output was available, but computation is unnecessary to identify this missing premise.
+- **auditor confidence:** high
+
+### `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `decoration`
+- **claim_scope:** For any supplied nonzero positive finite-region state and mutually commuting bounded self-adjoint source family, the normalized trace-log functional generates their joint connected cumulants.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** _retained_pending_chain_  (reason: `decoration_waiting_on:minimal_axioms`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00086-pwc_derivation_from_cumulant`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For mutually commuting finite-dimensional observables, the trace reduces to a joint spectral moment-generating function whose logarithm has derivatives equal to the connected cumulants with the fixed (-1)^n source sign.  _(class `A`)_
+- **chain closes:** True — Simultaneous spectral decomposition converts the trace into a finite classical moment-generating function, and the standard finite moment-to-cumulant algebra proves the stated derivatives. The reference state and commuting observables remain theorem inputs rather than derived framework objects.
+- **rationale:** The finite-dimensional calculation is correct, and the runner performs exact symbolic checks rather than merely printing expected results. The general conclusion is an algebraic consequence of simultaneous diagonalization and the logarithmic moment-to-cumulant identity; it introduces no external-comparator check or first-principles numerical prediction. Because the chain reduces to the single accepted minimal-algebra parent plus standard mathematics, the rubric classifies it as decoration rather than an independent retained theorem.
+- **decoration parent:** `minimal_axioms`
 - **auditor confidence:** high
 
 ### `q_integer_spectrum_theorem_note_2026-05-02`

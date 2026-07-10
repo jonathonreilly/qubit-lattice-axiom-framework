@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 936 |
+| **retained_bounded** | 937 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1813 |
+| unaudited | 1812 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 12 |
-| `audited_clean` | 1345 |
+| `audited_clean` | 1346 |
 | `audited_conditional` | 83 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2158 |
+| `unaudited` | 2157 |
 
 | claim_type | count |
 |---|---:|
@@ -1352,6 +1352,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `thales_right_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
+| `theta_assembly_paired_shift_fixed_grading_mckean_singer_reduction_narrow_theorem_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -19890,6 +19891,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** By hypothesis eta^2 = rho(1-rho), hence v_1 . v_2 = -rho(1-rho)+eta^2 = 0.  _(class `A`)_
 - **chain closes:** True — The source note's explicit premise eta^2 = rho(1-rho) makes the Euclidean dot product of the two incident edge vectors exactly zero. The assumptions 0 < rho < 1 and eta > 0 keep the vectors nonzero and the arctan angles positive, so the right-angle and arctan-sum conclusions follow without any ledger dependency.
 - **rationale:** The audited claim is only the narrow pure Euclidean implication, not the CKM-specific choice rho=1/6, eta=sqrt(5)/6 and not a physical CKM right-angle prediction. The load-bearing step is a direct algebraic identity over the stated premises, with no hidden PDG, fitted, literature, unit, or upstream-value import. The parent and CKM value rows are cross-references only; they are not needed for this scoped theorem. Residual risk is only scope creep: this clean verdict must not be cited as auditing any CKM-specific parameter derivation.
+- **auditor confidence:** high
+
+### `theta_assembly_paired_shift_fixed_grading_mckean_singer_reduction_narrow_theorem_note_2026-07-02`
+
+- **Note:** [`THETA_ASSEMBLY_PAIRED_SHIFT_FIXED_GRADING_MCKEAN_SINGER_REDUCTION_NARROW_THEOREM_NOTE_2026-07-02.md`](../../docs/THETA_ASSEMBLY_PAIRED_SHIFT_FIXED_GRADING_MCKEAN_SINGER_REDUCTION_NARROW_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-dimensional fixed-grading heat-index rigidity, twisted-mass determinant identity, phase cancellation, balanced-surface collapse, and exclusion of background-dependent transfer from that fixed grading; no continuum ABJ anomaly or physical theta value was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-theta_assembly_paired_sh-098`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The anticommutation relation implies both the paired-block spectral cancellation and the conjugation identity e^{i alpha eps}(D+mI)e^{i alpha eps}=D+m e^{2 i alpha eps}, yielding n=2 tr(eps).  _(class `A`)_
+- **chain closes:** True — The conclusions follow directly from finite-dimensional block decomposition, determinant multiplicativity, and the retained balanced-surface and supplier-boundary authorities. The physical gauge-theta interpretation is expressly outside the audited scope.
+- **rationale:** The load-bearing results are genuine algebraic identities under explicitly stated finite-dimensional assumptions, not definitions, imported numerical values, or tuned matches. All cited non-meta authorities are retained-grade, and the accepted axiom memo creates no downgrade. The supplied runner constructs the operators and independently checks the identities and premise-breaking controls rather than merely printing expected constants.
 - **auditor confidence:** high
 
 ### `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09`

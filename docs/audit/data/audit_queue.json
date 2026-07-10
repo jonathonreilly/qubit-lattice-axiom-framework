@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 393,
     "high": 265,
-    "leaf": 755,
+    "leaf": 754,
     "medium": 500
   },
   "cycle_break_target_count": 10,
@@ -35135,32 +35135,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "theta_assembly_paired_shift_fixed_grading_mckean_singer_reduction_narrow_theorem_note_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "abj_epsilon_index_square_block_no_go_note_2026-05-30",
-        "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.5,
-      "note_path": "docs/THETA_ASSEMBLY_PAIRED_SHIFT_FIXED_GRADING_MCKEAN_SINGER_REDUCTION_NARROW_THEOREM_NOTE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/theta_assembly_paired_shift_fixed_grading_mckean_singer_2026_07_02.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "theta_cartan_valued_cross_plane_pairing_diagonal_weyl_frame_theorems_and_triality_fractional_values_bounded_theorem_note_2026-07-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -57254,6 +57228,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 204,
-  "total_pending": 1913
+  "ready_count": 203,
+  "total_pending": 1912
 }

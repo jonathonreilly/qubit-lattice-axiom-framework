@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1783 |
+| unaudited | 1782 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 101 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1350 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 101 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2128 |
+| `unaudited` | 2127 |
 
 | claim_type | count |
 |---|---:|
@@ -1585,6 +1585,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -18867,6 +18868,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On D-kin with hermiticity, translation covariance, cubic O-covariance up to frame, and nonzero hopping, there are exactly two simply connected frame classes K0/K1; K0 is a countermodel to forcing K1 and P-SD is derived only on K1.  _(class `C`)_
 - **chain closes:** True — The allowed inputs supply the lattice/qubit carrier, retained Cl(3) module classification, tensor-product ladder/translation surface, and parity grading. Within the declared surface and covariance constraints, the proof and runner compute the two flux classes, K1-branch absorbing frame, and K0 countermodel without promoting the residual K1 selector to a theorem.
 - **rationale:** Clean only for the bounded theorem: two-flux collapse on the licensed surface plus K1-branch absorbing-frame existence/uniqueness, with K0 retained as the sharp countermodel. The note explicitly leaves B-BIT open and reduces P-KIN to the flux(-1) selector rather than deriving that selector. The no-spectator step is limited to the minimal C^2 carrier plus retained Cl(3) classification and the runner's CAR(2) dimension computation; the runner computes rotations, cohomology, enumeration, Pauli/CAR algebra, spectra, and falsification legs rather than hard-coding K1.
+- **auditor confidence:** high
+
+### `staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17`
+
+- **Note:** [`STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md`](../../docs/STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-CAR properties of n_x = a_x^dag a_x and the matrix-unit density commutator, conditional on the Grassmann-symbol-to-CAR-operator identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00031-staggered_dirac_local_densit`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The identification rho_x := chibar_x chi_x maps to n_x := a_x^dag a_x, after which finite CAR algebra makes n_x the onsite number projection and U(1) generator.  _(class `A`)_
+- **chain closes:** False — The cited authority constructs the CAR lowering operator as the Berezin derivative c_x = partial/chibar_x and explicitly says the Grassmann generator chi_x is not that operator. It therefore does not supply the asserted mapping chi_x -> a_x, chibar_x -> a_x^dag or the resulting bilinear readout correspondence.
+- **rationale:** The runner genuinely verifies the stated finite-CAR algebra once the operator representation is assumed. However, its source-status checks do not derive the load-bearing Grassmann-symbol-to-operator bridge, and the sole cited authority expressly distinguishes the Grassmann integration variable from the CAR lowering operator. Consequently the algebraic conclusion is valid only conditional on an additional symbol/readout correspondence not closed by this packet.
 - **auditor confidence:** high
 
 ### `staggered_dirac_realization_gate_note_2026-05-03`

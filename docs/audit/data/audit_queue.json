@@ -3,7 +3,7 @@
     "critical": 393,
     "high": 265,
     "leaf": 755,
-    "medium": 505
+    "medium": 504
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -20374,25 +20374,26 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+      "claim_id": "primitive_p_lh_content_proposal_note_2026-05-10_pplh",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_type": "open_gate",
       "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
+        "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
         "minimal_axioms"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.307,
-      "note_path": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
+      "load_bearing_score": 4.585,
+      "note_path": "docs/PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
-      "transitive_descendants": 6
+      "runner_path": "scripts/cl3_primitive_p_lh_2026_05_10_pPlh.py",
+      "transitive_descendants": 5
     },
     {
       "audit_independence_required": "any_non_self",
@@ -31563,31 +31564,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/emergent_metric_conformal_class_from_records_runner.py",
-      "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "primitive_p_lh_content_proposal_note_2026-05-10_pplh",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.585,
-      "note_path": "docs/PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/cl3_primitive_p_lh_2026_05_10_pPlh.py",
       "transitive_descendants": 5
     },
     {
@@ -57390,5 +57366,5 @@
     }
   ],
   "ready_count": 207,
-  "total_pending": 1918
+  "total_pending": 1917
 }

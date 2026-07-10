@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 932 |
+| **retained_bounded** | 933 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1832 |
+| unaudited | 1831 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 12 |
-| `audited_clean` | 1341 |
+| `audited_clean` | 1342 |
 | `audited_conditional` | 71 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2177 |
+| `unaudited` | 2176 |
 
 | claim_type | count |
 |---|---:|
@@ -990,6 +990,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ordered_lattice_packet_reidentification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14224,6 +14225,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For each seed, the free-stage packet was compressed to its top-5 support bins and relaunched on the same ordered-lattice family, producing high relaunch carry overlaps on the fixed h=0.5, W=8, L=12 harness.  _(class `C`)_
 - **chain closes:** True — The runner instantiates the ordered-lattice propagation, constructs the packets, reidentifies top-k detector support, relaunches the surrogate, and computes the reported overlaps and centroid shifts. The note does not claim persistent mass, family-genericity, or a closed inertial-response theorem.
 - **rationale:** The load-bearing result is a first-principles numerical computation on the fixed retained ordered-lattice harness, not a definition, renaming, external comparator, or hard-coded numerical replay. The primary runner and helper source compute the lattice propagation and reported metrics directly from the stated parameters. The conclusion is appropriately bounded to support/compression control and explicitly denies persistent-mass or family-generic claims.
+- **auditor confidence:** high
+
+### `p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18`
+
+- **Note:** [`P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md`](../../docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the finite rho-plus direct-sum rho-minus Pauli test block, the minimal one-qubit lattice axioms do not uniquely select the finite-algebra action, chirality sign of the real structure, or order-one data; no conclusion is asserted for every SM LH/RH route.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-p_lh_ncg_primitive_under-077`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The same finite Pauli baseline admits inequivalent finite-algebra actions and real structures, while the order-one verdict changes with separately chosen Dirac and opposite-action data, so the baseline does not determine the NCG packet.  _(class `A`)_
+- **chain closes:** True — The accepted minimal-axiom premise supplies M_2(C)/Cl(3,0) but none of the disputed NCG structures. Explicit matrix witnesses then establish non-uniqueness and dependence on additional choices within the note's bounded scope.
+- **rationale:** The load-bearing result is a genuine algebraic non-uniqueness argument, not a definition, empirical comparison, or tuned numerical match. The runner constructs and checks the alternative actions, antiunitaries, and Dirac choices rather than merely printing the claimed outcome. The cited axiom memo is an accepted premise and does not introduce an open dependency, while its newer Admissibility axiom adds no NCG selection data.
 - **auditor confidence:** high
 
 ### `packet_memory_note`

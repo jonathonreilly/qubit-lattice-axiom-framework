@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 194 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 925 |
+| **retained_bounded** | 926 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
-| unaudited | 1865 |
+| unaudited | 1864 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 18 |
-| `audited_clean` | 1325 |
+| `audited_clean` | 1326 |
 | `audited_conditional` | 57 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2210 |
+| `unaudited` | 2209 |
 
 | claim_type | count |
 |---|---:|
@@ -887,6 +887,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lp_two_band_exact_completion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
+| `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -12495,6 +12496,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Substituting the explicitly constructed canonical dilation into the Kraus formula gives K_r = sum_{r'} P_{r'} delta_{r,r'} = P_r.  _(class `A`)_
 - **chain closes:** True — The projection identities and completeness relation make the constructed map an isometry, which extends to a unitary in finite dimension. Taking the apparatus matrix element then algebraically yields K_r = P_r.
 - **rationale:** The narrow conclusion follows directly from the explicit canonical isometry and the standard Kraus extraction formula, without an imported open bridge or numerical input. The accepted qubit premise is sufficient for the finite-dimensional setting, while the projective-measurement relations are stated and used correctly. The broader sentence claiming that arbitrary apparatus rotations V_A preserve the same labeled POVM is not generally correct with a fixed readout basis, but that statement is not load-bearing for the proved canonical result or the analyzed system-unitary twists with V_A equal to the identity.
+- **auditor confidence:** high
+
+### `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional matrix identities showing that projection compression PEP is an effect, satisfies the stated trace identity and boundary cases, and composes as P(QFQ)P = (QP)^*F(QP), without measurement or probability semantics.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-luders_sequential_effect-065`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Positivity under compression and finite-dimensional trace cyclicity yield 0 <= PEP <= P <= I and Tr(rho PEP) = Tr(P rho P E).  _(class `A`)_
+- **chain closes:** True — Each conclusion follows directly from the stated projection, effect, and density-matrix hypotheses using positivity under congruence, trace cyclicity, and matrix multiplication. The accepted Qubit premise supplies the framework's M_2(C) instance, while the conditional M_d(C) theorem requires no additional framework bridge.
+- **rationale:** The load-bearing content is genuine class-A finite matrix algebra rather than a definition, renaming, calibrated numerical match, or imported measurement rule. The proof establishes positivity, order bounds, trace cyclicity, boundary cases, and nested compression from explicit hypotheses, and the runner independently exercises exact and randomized instances with 32 passing checks. The note explicitly excludes Lüders-update, Born-rule, and probability interpretations, so the audited conclusion does not overreach those open measurement bridges.
 - **auditor confidence:** high
 
 ### `m2_tensor_d4_dimension_256_bounded_note_2026-05-26`

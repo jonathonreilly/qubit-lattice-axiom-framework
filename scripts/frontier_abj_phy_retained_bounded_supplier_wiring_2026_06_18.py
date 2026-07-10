@@ -100,7 +100,7 @@ def test_current_supplier_status() -> None:
     row = ledger_row("hypercharge_identification_note")
     effective_status = row.get("effective_status")
     check(
-        "hypercharge_identification_note is retained-grade on this branch base",
+        "hypercharge_identification_note is retained-grade in the current ledger",
         effective_status in RETAINED_POSITIVE_GRADES,
         str(effective_status),
     )

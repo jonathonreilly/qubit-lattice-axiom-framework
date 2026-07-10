@@ -18,6 +18,7 @@ from composite_mass_additivity_binding_defect_2026_07_08 import (
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+FIT_RESID_TOL = 1.0e-10
 
 
 def report(name: str, ok: bool, residual: float, detail: str) -> None:
@@ -141,15 +142,42 @@ def check_finite_same_energy_comparator() -> None:
             f"Mcurv={fitted_mass:.12e},fit_resid={fit_residual:.3e}"
         )
     energy_mismatch = abs(energies[0] - energies[1])
-    relative_mass_separation = abs(fitted_masses[0] - fitted_masses[1]) / max(abs(value) for value in fitted_masses)
-    ok = energy_mismatch <= 1.0e-10 and np.isfinite(relative_mass_separation) and relative_mass_separation >= 0.05
-    residual = max(energy_mismatch, max(0.0, 0.05 - relative_mass_separation))
+    fitted_masses_ok = all(
+        np.isfinite(value) and value > 0.0 for value in fitted_masses
+    )
+    relative_mass_separation = (
+        abs(fitted_masses[0] - fitted_masses[1])
+        / max(abs(value) for value in fitted_masses)
+        if fitted_masses_ok
+        else float("nan")
+    )
+    fit_ok = np.isfinite(max_fit_residual) and max_fit_residual <= FIT_RESID_TOL
+    ok = (
+        energy_mismatch <= 1.0e-10
+        and fitted_masses_ok
+        and fit_ok
+        and np.isfinite(relative_mass_separation)
+        and relative_mass_separation >= 0.05
+    )
+    residual = max(
+        energy_mismatch if np.isfinite(energy_mismatch) else float("inf"),
+        0.0 if fitted_masses_ok else float("inf"),
+        max(0.0, max_fit_residual - FIT_RESID_TOL)
+        if np.isfinite(max_fit_residual)
+        else float("inf"),
+        max(0.0, 0.05 - relative_mass_separation)
+        if np.isfinite(relative_mass_separation)
+        else float("inf"),
+    )
     report(
         "CHECK-04 FINITE-SAME-ENERGY-COMPARATOR",
         ok,
         residual,
         f"L={length} target={target:.12e} relative_mass_separation={relative_mass_separation:.6e} "
-        f"max_fit_residual={max_fit_residual:.3e} rows=[" + "; ".join(rows) + "]",
+        f"max_fit_residual={max_fit_residual:.3e} fit_residual_tolerance={FIT_RESID_TOL:.1e} "
+        f"fitted_masses_positive_finite={str(fitted_masses_ok).lower()} rows=["
+        + "; ".join(rows)
+        + "]",
     )
 
 

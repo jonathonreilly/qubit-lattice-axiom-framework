@@ -35,7 +35,7 @@ content is otherwise clean.
 ## What This Does Not Do
 
 - It does not add or amend an axiom. The minimal framework baseline is the
-  four named axioms in `MINIMAL_AXIOMS_2026-06-29.md`: Lattice, Qubit,
+  [four named axioms](MINIMAL_AXIOMS_2026-06-29.md): Lattice, Qubit,
   Admissibility, and Record.
 - It does not assert `a/l_P = 1` as a derived theorem. The self-consistency
   question that the framework's natural unit equals the Planck length remains

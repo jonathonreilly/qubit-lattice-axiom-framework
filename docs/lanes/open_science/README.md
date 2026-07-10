@@ -328,8 +328,8 @@ prioritized.
   to be explicit about which observables in each lane are framework-derived
   vs. external-input vs. scaffold-only.
 
-Those publication-surface updates are deliberately deferred. This landing only
-opens the critical open science lane package; it does not change the manuscript
+Those publication-surface updates are deliberately deferred. This open-science
+package records the critical open lanes; it does not change the manuscript
 claim surface.
 
 ## Open Review Questions

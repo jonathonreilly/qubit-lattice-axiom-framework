@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/gauged_schwinger_staggered_ed_engine_2026_07_08.py
-runner_sha256: 8162fbe2f8189aecc94e2b7d67adaa41ea5ec8cff020726d50e3647f04f66ceb
+runner_sha256: c1d7b43f1a6a6916c265445c2c96f9019fab531adaba688799ab145575b430ed
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.04
+elapsed_sec: 2.81
 status: ok
 ----- stdout -----
-CHECKS-1-3 CHECK-01=ok(rule=tail, field=0.0e+00, comm=4.9e-16, Q=0.0e+00, E=0.0e+00); CHECK-02=ok(band=6.7e-16, gap=2.3e-14); CHECK-03=ok(d23=(+8.88e-15,+4.04e-14), d34=(-1.87e-14,-1.13e-14))
+CHECKS-1-4 CHECK-01=ok(rule=tail, field=0.0e+00, comm=4.9e-16, Q=0.0e+00, E=0.0e+00); CHECK-02=ok(band=6.7e-16, gap=2.3e-14); CHECK-03=ok(d23=(+8.88e-15,+4.04e-14), d34=(-1.87e-14,-1.13e-14)); CHECK-04=ok(g0_holonomy_shifts_rotor=true)
 CHECK-06 ok(free_err=6.6e-15, g1_gap_T2=1.5469429, full=1.3284641)
-TOTAL PASS elapsed=1.79s flags=Q0-ring-Gauss,finite-W-translation-interior,g0-Uholo-shifts-W
+TOTAL PASS elapsed=2.20s flags=Q0-ring-Gauss,finite-W-translation-interior,g0-Uholo-shifts-W
 
 ----- stderr -----
 

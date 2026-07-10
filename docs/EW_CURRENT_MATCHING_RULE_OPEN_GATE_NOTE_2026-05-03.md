@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-03
 **Claim type:** bounded_theorem
-**Status:** proposed bounded recut; independent audit required
+**Status:** bounded support theorem; independent audit required
 **Claim scope:** on the explicitly supplied channel-weight/readout surface,
 for every `kappa_EW != 1 - N_c^2`, the note proves
 `K_EW(kappa_EW) = T/(C + kappa_EW S) =

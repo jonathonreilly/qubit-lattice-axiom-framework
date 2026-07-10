@@ -71,8 +71,10 @@ and
 On an \(L=64\) ring, the runner tunes two points of the supplied contact
 family to the same measured \(K=0\) energy and extracts their curvature masses
 from nearby momentum blocks. It prints the tuned couplings, energy mismatch,
-fit residuals, and measured mass separation. This finite observation is not
-promoted to a statement about all static interactions or all composites.
+fit residuals, and measured mass separation. Its PASS gate requires both
+fitted curvature masses to be finite and positive and the maximum fit residual
+to be at most `1e-10`. This finite observation is not promoted to a statement
+about all static interactions or all composites.
 
 ## Boundaries
 

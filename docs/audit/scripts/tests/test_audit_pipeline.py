@@ -49,6 +49,27 @@ def _import_codex_audit_runner():
     return module
 
 
+def _import_repo_script(filename: str):
+    """Import one repo-root runner under a fresh, test-specific name."""
+    module_name = f"repo_script_under_test_{Path(filename).stem}"
+    if module_name in sys.modules:
+        del sys.modules[module_name]
+    scripts_dir = PROJECT_ROOT / "scripts"
+    spec = importlib.util.spec_from_file_location(module_name, scripts_dir / filename)
+    module = importlib.util.module_from_spec(spec)
+    assert spec and spec.loader
+    sys.modules[module_name] = module
+    sys.path.insert(0, str(scripts_dir))
+    try:
+        spec.loader.exec_module(module)
+    except Exception:
+        sys.modules.pop(module_name, None)
+        raise
+    finally:
+        sys.path.remove(str(scripts_dir))
+    return module
+
+
 class CleanLedgerFixture:
     """Build a minimal but valid audit_ledger.json + citation_graph.json
     on a temporary REPO_ROOT for unit-style testing."""
@@ -113,6 +134,67 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
         module.SUMMARY_PATH = module.DATA_DIR / "effective_status_summary.json"
     if hasattr(module, "OUTPUT_PATH"):
         module.OUTPUT_PATH = module.DATA_DIR / "auditor_reliability.json"
+
+
+class ChangedRunnerFailureGateTest(unittest.TestCase):
+    def test_record_census_returns_nonzero_when_constituent_check_fails(self):
+        import contextlib
+        import io
+
+        m = _import_repo_script(
+            "record_saturation_availability_census_2026_07_08.py"
+        )
+        with mock.patch.object(
+            m, "load_text_authorities", return_value=(False, True)
+        ), contextlib.redirect_stdout(io.StringIO()) as output:
+            rc = m.run()
+        self.assertEqual(rc, 1)
+        self.assertIn("TOTAL: MACHINERY-FAIL", output.getvalue())
+
+    def test_schwinger_rotor_coupling_check_is_decisive(self):
+        import contextlib
+        import io
+
+        m = _import_repo_script(
+            "gauged_schwinger_staggered_ed_engine_2026_07_08.py"
+        )
+        with (
+            mock.patch.object(m, "check_exact_rotor_g0_couples_w", return_value=False),
+            mock.patch.object(m, "check_01", return_value=(True, "ok")),
+            mock.patch.object(m, "check_02", return_value=(True, "ok", {})),
+            mock.patch.object(m, "check_03", return_value=(True, "ok")),
+            mock.patch.object(m, "check_06", return_value=(True, "ok")),
+            contextlib.redirect_stdout(io.StringIO()) as output,
+        ):
+            rc = m.main()
+        self.assertEqual(rc, 1)
+        self.assertIn("CHECK-04=FAIL", output.getvalue())
+
+    def test_wep_comparator_rejects_bad_curvature_fit(self):
+        import contextlib
+        import io
+
+        m = _import_repo_script(
+            "wep_source_reduction_scaling_window_2026_07_08.py"
+        )
+        m.PASS_COUNT = 0
+        m.FAIL_COUNT = 0
+        with (
+            mock.patch.object(
+                m,
+                "tune_to_energy",
+                side_effect=lambda length, mass, target: (1.0, target),
+            ),
+            mock.patch.object(
+                m,
+                "fitted_curvature_mass",
+                side_effect=[(1.0, 999.0), (2.0, 999.0)],
+            ),
+            contextlib.redirect_stdout(io.StringIO()) as output,
+        ):
+            m.check_finite_same_energy_comparator()
+        self.assertEqual(m.FAIL_COUNT, 1)
+        self.assertIn("fit_residual_tolerance=1.0e-10", output.getvalue())
 
 
 class ApplyAuditTest(unittest.TestCase):
@@ -1184,6 +1266,39 @@ class AuditLintTest(unittest.TestCase):
             row["note_hash"] = hashlib.sha256(body.encode("utf-8")).hexdigest()
             row.setdefault("deps", [])
         self.fx.write_ledger({"schema_version": 1, "rows": rows})
+
+    def test_front_door_current_markdown_link_passes(self):
+        m = _import("audit_lint")
+        errors = m.front_door_axiom_pointer_errors(
+            "docs/START_HERE.md",
+            "See [the current axioms](MINIMAL_AXIOMS_2026-06-29.md#scope).\n",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            ["docs/MINIMAL_AXIOMS_2026-06-05.md"],
+        )
+        self.assertEqual(errors, [])
+
+    def test_front_door_prose_or_code_path_does_not_count(self):
+        m = _import("audit_lint")
+        errors = m.front_door_axiom_pointer_errors(
+            "README.md",
+            "Current memo: `docs/MINIMAL_AXIOMS_2026-06-29.md`.\n",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            ["docs/MINIMAL_AXIOMS_2026-06-05.md"],
+        )
+        self.assertEqual(len(errors), 1)
+        self.assertIn("does not cite the current axiom memo", errors[0])
+
+    def test_front_door_superseded_markdown_link_fails(self):
+        m = _import("audit_lint")
+        errors = m.front_door_axiom_pointer_errors(
+            "README.md",
+            "[current](docs/MINIMAL_AXIOMS_2026-06-29.md) and "
+            "[old](docs/MINIMAL_AXIOMS_2026-06-05.md)\n",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            ["docs/MINIMAL_AXIOMS_2026-06-05.md"],
+        )
+        self.assertEqual(len(errors), 1)
+        self.assertIn("cites superseded axiom memo", errors[0])
 
     def test_conditional_without_repair_class_warns(self):
         m = _import("audit_lint")

@@ -56,7 +56,7 @@ structural content is otherwise clean.
 ## What This Does Not Do
 
 - It does not add or amend an axiom. The minimal framework baseline remains
-  the four named axioms in `docs/MINIMAL_AXIOMS_2026-06-29.md`: Lattice,
+  the [four named axioms](MINIMAL_AXIOMS_2026-06-29.md): Lattice,
   Qubit, Admissibility, and Record.
 - It does not supply a state, state-selection rule, averaging over
   alternatives, measure, weighting, probability rule, typicality claim,

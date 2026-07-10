@@ -581,7 +581,8 @@ def main() -> int:
         "Q0-ring-Gauss",
         "finite-W-translation-interior",
     ]
-    if check_exact_rotor_g0_couples_w():
+    ok04 = check_exact_rotor_g0_couples_w()
+    if ok04:
         flags.append("g0-Uholo-shifts-W")
 
     check_results: list[tuple[str, bool, str]] = []
@@ -594,6 +595,10 @@ def main() -> int:
     ok03, detail03 = check_03()
     check_results.append(("CHECK-03", ok03, detail03))
 
+    check_results.append(
+        ("CHECK-04", ok04, f"g0_holonomy_shifts_rotor={str(ok04).lower()}")
+    )
+
     ok06, detail06 = check_06(ph_cache)
     check_results.append(("CHECK-06", ok06, detail06))
 
@@ -601,9 +606,12 @@ def main() -> int:
     elapsed = time.time() - started
     status = "PASS" if passed_all else "FAIL"
 
-    c01_c03 = "; ".join(f"{name}={'ok' if ok else 'FAIL'}({detail})" for name, ok, detail in check_results[:3])
+    c01_c04 = "; ".join(
+        f"{name}={'ok' if ok else 'FAIL'}({detail})"
+        for name, ok, detail in check_results[:4]
+    )
 
-    print(f"CHECKS-1-3 {c01_c03}")
+    print(f"CHECKS-1-4 {c01_c04}")
     print(f"CHECK-06 {'ok' if ok06 else 'FAIL'}({detail06})")
     print(f"TOTAL {status} elapsed={elapsed:.2f}s flags={','.join(flags)}")
     return 0 if passed_all else 1

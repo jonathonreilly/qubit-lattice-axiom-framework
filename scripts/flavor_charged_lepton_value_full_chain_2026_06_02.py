@@ -16,8 +16,8 @@ LINK -> source/dependency anchor (status checked before landing, not set by this
                                           koide_kappa_spectrum_operator_bridge
  L7 local cyclotomic density 2/9        : axiom_first_z_n_equivariant_spectral_asymmetry,
                                           koide_aps_block_by_block_forcing
- L8 positive-spectrum endpoint boundary : this session
- L9 r=1/2 = HS 2-sector equipartition   : this session (stationary point; koide_kappa_two_orbit_dimension_
+ L8 positive-spectrum endpoint boundary : local algebra in this runner
+ L9 r=1/2 = HS 2-sector equipartition   : local algebra in this runner (stationary point; koide_kappa_two_orbit_dimension_
     / balance stationary point            factorization)
  L10 Q=2/3 <=> r=1/2 (cone biconditional): charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem
  OPEN SELECTOR r=1/2                    : zero live Tier-A targets; the
@@ -110,7 +110,7 @@ def main():
     def S2(r):
         ps, pd = 1 / (1 + 2 * r), 2 * r / (1 + 2 * r); return -(ps * np.log(ps) + pd * np.log(pd))
     rs = np.linspace(0.02, 3, 1500); rmax = rs[int(np.argmax([S2(r) for r in rs]))]
-    passed.append(check("L9 r=1/2 = HS 2-sector equipartition (||aI||^2=||bC+conj(b)C^2||^2) = max 2-sector entropy (stationary point) [this session; koide_kappa_two_orbit_dimension_factorization]",
+    passed.append(check("L9 r=1/2 = HS 2-sector equipartition (||aI||^2=||bC+conj(b)C^2||^2) = max 2-sector entropy (stationary point) [local algebra; koide_kappa_two_orbit_dimension_factorization]",
                         eq and abs(rmax - 0.5) < 0.02, f"equipartition at r=1/2; 2-sector entropy argmax={rmax:.3f}"))
 
     # L10 endpoint: Q=2/3 <=> r=1/2 (cone biconditional)
@@ -142,7 +142,7 @@ def main():
     print("The structural formulas assemble to abstract Q_H=1/3+(2/3)r, while physical Q=2/3")
     print("requires the still-open physical selection r=1/2.")
     print("There are zero live Tier-A targets, and the owner-governed AC_phi_lambda boundary supplies no r value.")
-    print("Independent audit decides claim type/status after landing.")
+    print("Independent audit alone decides claim type/status.")
     return 0 if all(passed) else 1
 
 

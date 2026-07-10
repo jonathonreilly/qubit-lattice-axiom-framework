@@ -1,7 +1,7 @@
 # y_t Lane: Zero-Import Authority
 
 **Date:** 2026-04-17
-**Status:** DERIVED quantitative authority surface (zero external observables)
+**Status:** derived lattice-scale Ward-ratio core (zero external observables) + conditional low-energy package (conditional on the underived Yukawa-side selector `kappa_Y = 0`)
 **Primary runner:** `scripts/frontier_yt_ward_identity_derivation.py` ([scripts/frontier_yt_ward_identity_derivation.py](../scripts/frontier_yt_ward_identity_derivation.py))
 **Additional primary runner:** `scripts/frontier_yt_color_projection_correction.py`
 **Supporting runners:** `scripts/frontier_yt_explicit_systematic_budget.py`,
@@ -45,7 +45,9 @@ Do not treat older backward-Ward / route-history notes as competing authority.
 | `m_t(pole)` 3-loop | `173.10 GeV` | `172.69 GeV` | `+0.24%` |
 
 These are the current strongest zero-external-observable central values on the
-renormalized `y_t` lane.
+renormalized `y_t` lane. They are conditional central values: each one
+multiplies the exact Ward core by the connected-trace factor `sqrt(8/9)`,
+whose selector condition is stated below.
 
 ## Safe claim
 
@@ -53,10 +55,13 @@ The current package can safely say:
 
 - the lattice-scale Yukawa-to-gauge ratio is exact on the canonical surface:
   `y_t(M_Pl) / g_s(M_Pl) = 1 / sqrt(6)`
-- the physical low-energy Yukawa is the Ward value times the derived
-  color-projection factor `sqrt(8/9)`
-- the low-energy `y_t` endpoint and the current `m_t` values are derived
-  central values with zero external SM observables on the framework side
+- conditional on the underived Yukawa-side selector `kappa_Y = 0`, the
+  physical low-energy Yukawa is the Ward value times the connected-trace
+  color-projection factor `sqrt(8/9)` — a conditional connected-trace
+  specialization, not an unconditionally derived selector
+- conditional on that same selector, the low-energy `y_t` endpoint and the
+  current `m_t` values are conditional central values with zero external SM
+  observables on the framework side
 - the current precision caveat on the primary path is a standard-method
   residual budget, dominated by lattice-to-continuum 1-loop matching at the
   Planck interface plus standard SM RGE truncation, of order `~1.95%`
@@ -68,12 +73,35 @@ The current package can safely say:
 The package still cannot say that the renormalized `y_t` lane is a fully
 framework-internal retained theorem from `M_Pl` to `v`.
 
+## Conditionality of the low-energy package
+
+The color-projection factor `sqrt(8/9)` enters the low-energy package as a
+conditional connected-trace specialization, not as an unconditionally derived
+selector. Per
+[YT_COLOR_PROJECTION_CORRECTION_NOTE.md](./YT_COLOR_PROJECTION_CORRECTION_NOTE.md),
+the connected-trace value `K_Y(0) = 8/9` is the specialization of the color
+projection to the Yukawa-side selector `kappa_Y = 0`, and that selector is not
+derived in this packet: the cited SU(3) Fierz/channel-count authority plus
+color-blind scaling do not by themselves fix `kappa_Y = 0` or an unconditional
+`sqrt(8/9)` correction.
+
+Consequently:
+
+- the lattice-scale Ward ratio `y_t(M_Pl) / g_s(M_Pl) = 1 / sqrt(6)` is the
+  supported core of this note and does not depend on the selector
+- every low-energy quantity in this note that multiplies by `sqrt(8/9)` — the
+  `y_t(v)` endpoint and both `m_t(pole)` central values — is conditional on
+  `kappa_Y = 0`
+- deriving `kappa_Y = 0` on the framework side remains an open target; this
+  section records the current condition, not a closure of that derivation
+
 ## Why the lane is no longer carried by a framework-native explicit systematic
 
 The live primary path is now:
 
 1. exact lattice-scale Ward theorem on the retained theory
-2. derived color projection `sqrt(8/9)`
+2. conditional connected-trace color projection `sqrt(8/9)` (conditional on
+   the underived selector `kappa_Y = 0`; see the conditionality section above)
 3. standard lattice-to-continuum matching at the `M_Pl` interface
 4. standard SM RGE running from `M_Pl` to `v`
 5. standard pole-mass conversion
@@ -89,8 +117,9 @@ continuum:
 - standard lattice 1-loop matching at the `M_Pl` interface, which dominates
   the current budget
 
-That leaves the lane as a **derived quantitative lane** rather than a
-retained theorem-grade UV-to-IR closure.
+That leaves the lane as an exact Ward-ratio core plus a **conditional
+quantitative low-energy package** rather than a retained theorem-grade
+UV-to-IR closure.
 
 ## What the Schur-bridge stack becomes
 
@@ -116,12 +145,15 @@ The current package does **not** claim:
 - a theorem-grade elimination of all UV-to-IR transport residuals
 - a practical direct-lattice bypass that measures `y_t(v)` on accessible
   lattices
+- an unconditional derivation of the Yukawa-side selector `kappa_Y = 0` (the
+  low-energy package is conditional on it)
 
 So the right read is:
 
 > the exact lattice-scale Yukawa/gauge normalization is retained, the
-> renormalized low-energy `y_t` / `m_t` lane is derived with zero external SM
-> observables on the framework side, the current primary precision caveat is a
-> standard-method residual budget of order `~1.95%`, and the older Schur
-> bridge survives as an independent cross-check with its own tighter but
+> renormalized low-energy `y_t` / `m_t` lane is a conditional package —
+> conditional on the underived Yukawa-side selector `kappa_Y = 0` — with zero
+> external SM observables on the framework side, the current primary precision
+> caveat is a standard-method residual budget of order `~1.95%`, and the older
+> Schur bridge survives as an independent cross-check with its own tighter but
 > route-specific budget.

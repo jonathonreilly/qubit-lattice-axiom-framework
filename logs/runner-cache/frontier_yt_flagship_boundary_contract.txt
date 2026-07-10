@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_flagship_boundary_contract.py
-runner_sha256: 9852c60d991a5258082717f055e447a802b9cd6fceb3e6b688b3fc448fed743f
-timeout_sec: 120
+runner_sha256: c04e0cc9a187a1d857e07284fd4e63530e11259ddd30015e1032ee22d1c041b2
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -49,6 +49,9 @@ Part 4: limitation and non-claim firewall
 [PASS] cannot-claim section forbids direct-lattice y_t(v) bypass claim
 [PASS] cannot-claim section preserves Schur bridge rather than discarding it
 [PASS] zero-import authority also refuses fully retained theorem-grade UV-to-IR closure
+[PASS] zero-import authority demotes sqrt(8/9) to a conditional connected-trace specialization
+[PASS] zero-import authority conditions the low-energy package on the underived selector
+[PASS] zero-import authority carries a conditionality section for the low-energy package
 
 Part 5: bridge cross-check budget alignment
 [PASS] flagship note preserves conservative Schur budget 1.2147511%
@@ -71,7 +74,7 @@ Part 7: no hidden observed-input promotion
 [PASS] paper-safe wording calls current values central values, not retained closure
 
 ==============================================================================
-RESULT: PASS=46 FAIL=0
+RESULT: PASS=49 FAIL=0
 ==============================================================================
 
 ----- stderr -----

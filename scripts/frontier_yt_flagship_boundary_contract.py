@@ -11,7 +11,9 @@ authority contract:
 * the positive statements stay scoped to derived central values and exact
   lattice-scale support;
 * the note explicitly forbids fully-retained UV-to-IR closure, a native
-  continuum-limit theorem, and a direct-lattice low-energy bypass claim.
+  continuum-limit theorem, and a direct-lattice low-energy bypass claim;
+* the zero-import authority conditions its low-energy package on the underived
+  ``kappa_Y = 0`` selector (conditional connected-trace specialization).
 
 It deliberately does not certify effective retained status.  Independent
 audit owns that decision.
@@ -190,6 +192,18 @@ def main() -> int:
             or "fully framework-internal continuum-limit theorem" in zero_n
         )
         and "from `M_Pl` to `v`" in zero_n,
+    )
+    check(
+        "zero-import authority demotes sqrt(8/9) to a conditional connected-trace specialization",
+        "conditional connected-trace specialization" in zero_n,
+    )
+    check(
+        "zero-import authority conditions the low-energy package on the underived selector",
+        "conditional on the underived Yukawa-side selector `kappa_Y = 0`" in zero_n,
+    )
+    check(
+        "zero-import authority carries a conditionality section for the low-energy package",
+        "## Conditionality of the low-energy package" in zero,
     )
 
     print("\nPart 5: bridge cross-check budget alignment")

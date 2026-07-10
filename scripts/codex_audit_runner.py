@@ -408,6 +408,21 @@ def load_queue(criticality_filter: str | None = None,
     return rows
 
 
+def select_named_targets(queue: list[dict], claim_ids: list[str]) -> list[dict]:
+    """Select exact queue rows in caller order, rejecting missing/duplicate ids."""
+    if len(claim_ids) != len(set(claim_ids)):
+        duplicates = sorted({cid for cid in claim_ids if claim_ids.count(cid) > 1})
+        raise ValueError(f"duplicate --claim-id values: {', '.join(duplicates)}")
+    by_id = {row.get("claim_id"): row for row in queue if row.get("claim_id")}
+    missing = [cid for cid in claim_ids if cid not in by_id]
+    if missing:
+        raise ValueError(
+            "requested claim ids are absent from the selected queue/filter: "
+            + ", ".join(missing)
+        )
+    return [by_id[cid] for cid in claim_ids]
+
+
 def load_reaudit_candidates(criticality_filter: str | None = None,
                             include_runner_drift: bool = True) -> list[dict]:
     """Load rows from reaudit_candidates.json, sorted by leverage.
@@ -990,6 +1005,11 @@ def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--n", type=int, default=5,
                    help="How many top-of-queue rows to audit this run (default 5).")
+    p.add_argument("--claim-id", action="append", default=[],
+                   help="Audit this exact claim id from the selected queue. "
+                        "Repeat to preserve an explicit audit order; when set, "
+                        "--n is ignored. Use --allow-blocked only when the "
+                        "named row is intentionally dependency-blocked.")
     p.add_argument("--criticality",
                    choices=["critical", "high", "medium", "leaf"],
                    help="Restrict to one criticality tier.")
@@ -1171,7 +1191,17 @@ def main() -> int:
             print("REFUSING: --only-awaiting-cross-confirmation applies to audit_queue.json, not re-audit candidates.")
             return 2
         queue = only_awaiting_cross_confirmation(queue, ledger_rows)
-    targets = queue[: args.n]
+    if args.claim_id:
+        try:
+            targets = select_named_targets(queue, args.claim_id)
+        except ValueError as exc:
+            print(f"REFUSING targeted selection: {exc}")
+            if not args.allow_blocked and not args.from_reaudit_candidates:
+                print("A named row may be dependency-blocked; rerun with "
+                      "--allow-blocked only if auditing that blocked state is intended.")
+            return 2
+    else:
+        targets = queue[: args.n]
     if not targets:
         if args.from_reaudit_candidates:
             print("No re-audit candidates in this filter. Either no upstream "

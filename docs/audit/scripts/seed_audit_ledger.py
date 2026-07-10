@@ -77,6 +77,8 @@ EMPTY_AUDIT = {
     "audit_date": None,
     "auditor": None,
     "auditor_family": None,
+    "auditor_model": None,
+    "auditor_reasoning_effort": None,
     "independence": None,
     "load_bearing_step": None,
     "load_bearing_step_class": None,
@@ -126,6 +128,51 @@ def reset_unaudited_audit_fields(row: dict) -> None:
     """Clear stale audit-owned residue from rows already back in the queue."""
     if row.get("audit_status") != "unaudited":
         return
+    history = list(row.get("previous_audits") or [])
+    exact_fields = {
+        field: row.get(field)
+        for field in ("auditor_model", "auditor_reasoning_effort")
+        if row.get(field)
+    }
+    if history and exact_fields:
+        identity_fields = {
+            field: row.get(field)
+            for field in ("auditor", "auditor_family")
+            if row.get(field)
+        }
+        matches = [
+            index
+            for index, archived in enumerate(history)
+            if all(archived.get(field) == value for field, value in identity_fields.items())
+        ]
+        target_index: int | None = None
+        if len(history) == 1:
+            # A sole archived audit is an unambiguous owner even when an older
+            # reset already cleared the live auditor name/family.
+            target_index = 0
+        elif identity_fields and len(matches) == 1:
+            target_index = matches[0]
+
+        if target_index is not None:
+            archived = dict(history[target_index])
+            for field, value in exact_fields.items():
+                if not archived.get(field):
+                    archived[field] = value
+            history[target_index] = archived
+            row["previous_audits"] = history
+        else:
+            # Multiple archived audits plus no unique live identity cannot be
+            # safely attributed. Preserve the exact legacy residue separately
+            # instead of guessing or leaving it on the live unaudited row.
+            residue = {
+                **identity_fields,
+                **exact_fields,
+                "reason": "legacy_unaudited_exact_provenance_without_unique_history_match",
+            }
+            unattributed = list(row.get("unattributed_audit_provenance") or [])
+            if residue not in unattributed:
+                unattributed.append(residue)
+            row["unattributed_audit_provenance"] = unattributed
     for k, v in EMPTY_AUDIT.items():
         row[k] = v if not isinstance(v, (list, dict)) else (list(v) if isinstance(v, list) else dict(v))
 

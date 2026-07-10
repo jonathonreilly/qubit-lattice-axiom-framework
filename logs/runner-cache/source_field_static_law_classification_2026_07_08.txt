@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: scripts/source_field_static_law_classification_2026_07_08.py
+runner_sha256: c0bcd26ce1ab07288228c064867e648f1cfeb40606dfdf8dd216cb23fd678d15
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+KERNELS+SUBTRACTION CHECK-01/02 d1:zero_mult=1,gap=0.00963055;d2:zero_mult=1,gap=0.0384294;d3:zero_mult=1,gap=0.152241 shift(L0*1=0.0e+00,Lmu*1=0.09) SUBTRACTION k0_res=1.0,sub_res=1.8e-15,massive_res=3.3e-16
+WINDOW CHECK-03/04 d3_rel16=[r2:0.0247,r3:0.0143,r4:0.0343,r5:0.0427,r6:0.114] d3_rel24=[r2:0.0178,r3:0.00961,r4:0.0314,r5:0.0213,r6:0.0666] d1_ring_max=3.2e-14 SPEC-NOTE d3_mean_zero_offset_fit,d1_G=-|x|/2+x^2/(2L)+const
+YUKAWA CHECK-05 mu=0.2:xi_fit=5.003,xi_exact=5.0083,rel=0.00107;mu=0.5:xi_fit=2.0103,xi_exact=2.0205,rel=0.00503 shift_broken_Lmu1=0.09 SPEC-NOTE xi=1/(2asinh(mu/2)),fit=log(rG)+b/r^2
+TOTAL PASS flags=compact-zero-mode-and-subtraction,finite-green-windows,lattice-yukawa-range elapsed=0.06s
+
+----- stderr -----
+

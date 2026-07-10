@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/mass_observable_two_step_surface_2026_07_08.py
+runner_sha256: 5facef8b5e8dc34a21a8c48332de2b465545d5d3a9cae60bf45b2affbee138d2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
+FREE TWO-STEP REST-GAP AND CURVATURE ALGEBRA
+CHECK-01 REST-GAP: PASS residual=0.000e+00 grid includes all sin(p_j)=0 corners
+CHECK-02 CURVATURE: PASS residual=5.649e-09 exact=1/(m*sqrt(m**2 + 1))
+CHECK-03 HYPERBOLIC-RELATION: PASS residual=8.882e-16 exact_residual=0 series=1 + 2*m**2/3 - 4*m**4/45 + O(m**5)
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/composite_mass_additivity_binding_defect_2026_07_08.py
+runner_sha256: 15c4fdd95e0e6cc633e78fc9d1a481729a70787f4f4053c97a2de5587fac3720
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+COMPOSITE FREE ADDITIVITY AND FINITE CONTACT COMPARATOR
+CHECK-01 MOMENTUM-BLOCK-REDUCTION: PASS residual=2.887e-15 L=12 dimensions=144
+CHECK-02 FREE-ADDITIVITY: PASS residual=2.220e-16 rest=0.000e+00 even_split=0.000e+00 product_expectation=2.220e-16 curvature=1/(2*m*sqrt(m**2 + 1))
+CHECK-03 FINITE-CONTACT-COMPARATOR: PASS residual=0.000e+00 L=64 measured_rows=[m=0.5,U=0.2,E0=9.359446224676e-01,edge=9.624236501192e-01,sep=2.648e-02; m=0.5,U=0.8,E0=5.639312794774e-01,edge=9.624236501192e-01,sep=3.985e-01; m=1.0,U=0.2,E0=1.704011709223e+00,edge=1.762747174039e+00,sep=5.874e-02; m=1.0,U=0.8,E0=1.201931537089e+00,edge=1.762747174039e+00,sep=5.608e-01]
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

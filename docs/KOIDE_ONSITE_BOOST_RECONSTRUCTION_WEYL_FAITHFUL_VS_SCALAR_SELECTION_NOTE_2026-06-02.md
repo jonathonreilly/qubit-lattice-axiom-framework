@@ -293,3 +293,9 @@ Expected: `SCORECARD PASS=23 FAIL=0`. Single deterministic seed, numpy + stdlib
 only. The runner verifies the finite/representation-theoretic facts and the
 selection; it does **not** verify the abstract OS reconstruction theorem or the
 emergent-time massive-field delivery (the named residual).
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [free_field_os_wightman_reconstruction_conditional_theorem_note_2026-05-30](FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION_CONDITIONAL_THEOREM_NOTE_2026-05-30.md)

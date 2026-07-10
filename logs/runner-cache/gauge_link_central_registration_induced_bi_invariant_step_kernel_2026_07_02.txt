@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_link_central_registration_induced_bi_invariant_step_kernel_2026_07_02.py
-runner_sha256: 7f9d03973a7e811d88fcc9f6741341d5c85fe22dee693cd185ae20585ccd3f9a
+runner_sha256: 317b726df0cf682d2bce47ff839b2e0ed7c1fa3aa56d08e824d3d4676b46f466
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 PASS: A1 S3 projectors idempotent 
@@ -35,11 +35,19 @@ PASS: B3 Q8 full-resolution two-sided invariance exactly
 PASS: B3 Q8 full-resolution inversion symmetry exactly 
 PASS: B3 Q8 full-resolution character coefficients nonnegative [('triv', Fraction(1, 8)), ('chi_i', Fraction(1, 16)), ('chi_j', Fraction(1, 16)), ('chi_k', Fraction(1, 16)), ('quat', Fraction(0, 1))]
 B3 Q8 full-resolution character coefficients: [('triv', Fraction(1, 8)), ('chi_i', Fraction(1, 16)), ('chi_j', Fraction(1, 16)), ('chi_k', Fraction(1, 16)), ('quat', Fraction(0, 1))]
-PASS: C1 intra-block channel column validity 1.5543122344752192e-15
-PASS: C1 intra-block non-scalar Kraus is non-convolution max=0.0029069998035762268
+PASS: C1 intra-block channel column validity 1.2212453270876722e-15
+PASS: C1 intra-block non-scalar Kraus is non-convolution max=0.0029069998035760047
 PASS: C2 drift witness is a convolution kernel 
 PASS: C2 drift has negative nontrivial character coefficient [('triv', np.float64(0.16666666666666666)), ('sign', np.float64(0.16666666666666666)), ('std', np.float64(-0.16666666666666666))]
 PASS: C2 drift standard Fourier block is non-scalar 0.8660254037844387
+PASS: C3 central unitary witness squares to identity exactly 
+PASS: C3 central unitary induced kernel is an exact convolution 
+PASS: C3 central unitary kernel class values exact [((0, 1, 2), '1/9'), ((0, 2, 1), '0'), ((1, 0, 2), '0'), ((1, 2, 0), '4/9'), ((2, 0, 1), '4/9'), ((2, 1, 0), '0')]
+PASS: C3 central unitary character coefficients exact with negative std block {'triv': Fraction(1, 6), 'sign': Fraction(1, 6), 'std': Fraction(-1, 9)}
+PASS: C4 two-outcome 5-12-13 instrument is exactly trace-preserving 
+PASS: C4 two-outcome induced kernel is an exact convolution 
+PASS: C4 two-outcome character coefficients exact {'triv': Fraction(1, 6), 'sign': Fraction(1, 6), 'std': Fraction(-23, 507)}
+PASS: C4 two-outcome std coefficient strictly negative -23/507
 PASS: D0 SU3 Haar class density normalizes 1.0
 PASS: D1 SU3 scalar Jacobi-Trudi dimensions match Weyl dimensions reps=66
 PASS: D1 SU3 sampled character orthonormality [((1, 0, 0), (1, 0, 0), (1+2.1821677345877545e-20j)), ((2, 1, 0), (2, 1, 0), (1+1.8485267540907658e-35j)), ((1, 0, 0), (2, 1, 0), (4.163336342344337e-17+1.3877787807814457e-17j)), ((2, 0, 0), (1, 1, 0), (-7.28583859910259e-17+6.938893903907228e-18j))]
@@ -66,6 +74,7 @@ PASS: D3 SU3 w=6.0 variance near validation reference value=2.4877727520125266 r
 PASS: D3 SU3 w=15.0 variance near validation reference value=1.8861389013174228 ref=1.861
 PASS: D4 SU3 width-6 per-block generator spread exceeds heat-form floor 0.43827942136673814
 PASS: D4 SU3 width-6 per-block generator spread remains bounded 0.43827942136673814
+PASS: D5 SU3 principal-eigenphase wrap region has positive Haar measure 0.024328943366910404
 PASS: E1 S3 dimension-square sum is group order 6
 PASS: E1 Q8 dimension-square sum is group order 8
 PASS: E2 S3 full-resolution spectral data exact {'triv': Fraction(1, 6), 'sign': Fraction(1, 9), 'std': Fraction(1, 9)}
@@ -93,6 +102,11 @@ PASS: F note preserve marker needle='an audit verdict or any effective-status pr
 PASS: F note preserve marker needle='Kronecker'
 PASS: F note preserve marker needle='intra-block'
 PASS: F note preserve marker needle='the per-step kernel is not the heat kernel'
+PASS: F note preserve marker needle='positive Lueders subclass'
+PASS: F note preserve marker needle='centrality alone does not give representation positivity'
+PASS: F note preserve marker needle='per-step variance'
+PASS: F note preserve marker needle='N_trunc^(-1/2)'
+PASS: F note preserve marker needle='principal-eigenphase distance'
 PASS: F canonical source metadata needle='**Claim type:** bounded_theorem'
 PASS: F canonical source metadata needle='**Claim scope:** Central-scalar record registration'
 PASS: F canonical source metadata needle='**Status authority:** independent audit lane only.'
@@ -112,7 +126,17 @@ PASS: F note forbidden string absent needle='closes the route'
 PASS: F runner forbidden string absent needle='closes the route'
 PASS: F note forbidden string absent needle='covariance implies the step-measure premise'
 PASS: F runner forbidden string absent needle='covariance implies the step-measure premise'
-TOTAL: PASS=103 FAIL=0
+PASS: F note forbidden string absent needle='# Gauge-Link Record Step: Central Registration Induces Bi-Invariant Step Kernels'
+PASS: F runner forbidden string absent needle='# Gauge-Link Record Step: Central Registration Induces Bi-Invariant Step Kernels'
+PASS: F note forbidden string absent needle='## Theorem 2 (central registration induces bi-invariant positive step kernels)'
+PASS: F runner forbidden string absent needle='## Theorem 2 (central registration induces bi-invariant positive step kernels)'
+PASS: F note forbidden string absent needle='## Theorem 4 (registration softness sets the step size; derived rates)'
+PASS: F runner forbidden string absent needle='## Theorem 4 (registration softness sets the step size; derived rates)'
+PASS: F note forbidden string absent needle='Each registration channel therefore has a derived rate'
+PASS: F runner forbidden string absent needle='Each registration channel therefore has a derived rate'
+PASS: F note forbidden string absent needle='the load-bearing input is registration-centrality, not kinematic covariance'
+PASS: F runner forbidden string absent needle='the load-bearing input is registration-centrality, not kinematic covariance'
+TOTAL: PASS=127 FAIL=0
 
 ----- stderr -----
 

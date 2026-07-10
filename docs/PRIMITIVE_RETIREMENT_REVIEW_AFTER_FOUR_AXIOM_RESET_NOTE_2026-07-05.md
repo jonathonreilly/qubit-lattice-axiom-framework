@@ -5,7 +5,8 @@
 
 **Date:** 2026-07-05
 **Claim type:** meta
-**Type:** review / primitive-retirement gate map
+**Type:** meta
+**Purpose:** primitive-retirement gate map
 **Status authority:** independent audit lane only. This source note does not
 set, predict, promote, demote, or apply any audit verdict.
 **Current-main posture (2026-07-06):** live `main` now records Tier-A count
@@ -123,52 +124,103 @@ owner-approved change to the premise surface. Adding a typicality, measure,
 past-hypothesis, or boundary-condition assumption would not retire this
 primitive; it would introduce stronger downstream input.
 
-## Hygiene Debt Noted
+## Hygiene Repairs Verified On 2026-07-10
 
-This review found two narrative/tooling hygiene items that should be repaired
-separately from any science reclassification:
+The two narrative/tooling hygiene items originally recorded by this review are
+now repaired, separately from any science reclassification:
 
-- the three primitive source notes still contain some historical references to
-  the older three-axiom baseline; they should be narrative-scrubbed to cite the
-  current four-axiom `minimal_axioms` surface without changing primitive
-  content;
-- `scripts/scale_reference_primitive_boundary_check.py` still expects the old
-  Tier-A genuine-admitted-input count of two, while the current registry now
-  records zero active Tier-A targets after the theta and `AC_phi_lambda`
-  retirements.
+- the three primitive source notes now cite the current four-axiom
+  `minimal_axioms` surface without changing primitive content;
+- `scripts/scale_reference_primitive_boundary_check.py` now pins the current
+  Tier-A genuine-admitted-input count of zero after the theta and
+  `AC_phi_lambda` retirements.
 
-These are hygiene issues, not retirement evidence. They do not justify changing
-`docs/audit/data/axiom_premise_nodes.json`.
+These completed hygiene repairs are not retirement evidence. They do not
+justify changing `docs/audit/data/axiom_premise_nodes.json`.
 
 ## No-Go Discipline Gate
 
-Gate result: PASS for the narrow review claim that none of the registered
-primitives is presently retired by the updated axiom text.
+Gate result: PASS for the narrow registry-snapshot claim that the updated axiom
+text does not presently retire any registered primitive. This is not a
+universal no-go against future retirement.
 
-- **N1 alternative routes:** scale retirement by dimensional analysis, kinetic
-  retirement by no-privilege/symmetry/RP/B-W/unit-slope routes, and realized
-  state retirement by the new state/law wording were checked. Each leaves the
-  corresponding primitive content outside axiom-derived theorem content.
-- **N2 wall independence:** the three primitives protect distinct surfaces:
-  dimensionful units, dimensionless kinetic-form graining, and pointwise
-  realized-state evaluation.
-- **N3 hidden-wall scan:** the review does not use policy prose as premise
-  authority. Load-bearing checks cite the axiom text, primitive source notes,
-  machine registry, and existing support/no-go source notes.
-- **N4 residual matching:** the residuals match the primitive notes' declared
-  boundaries: units anchor, `c_t=c_s`, and supplied realized-state slot.
-- **N5 rhetoric audit:** this is not a universal no-go against future
-  primitive retirement. It is a current-surface review.
-- **N6 partial-closure scan:** kinetic isotropy has the most plausible future
-  retirement path, but current notes still name bridge and placement residuals.
-- **N7 steelman:** a future retained dynamics/metric-layer theorem could derive
-  kinetic isotropy and retire that primitive. A future gravity self-consistency
-  theorem could alter the status of the scale anchor. A future state-selection
-  theorem could alter the realized-state interface. No such retained closure is
-  present on the current front door.
-- **N8 cross-cycle echo:** theta retirement succeeded by retained derivation
-  and owner-approved registry update. This review does not have an analogous
-  retained derivation for any primitive.
+**N1 alternative-route enumeration.** Eight distinct attacks were checked:
+
+| route | marker | why it does not retire a primitive on the current surface |
+|---|---|---|
+| derive the scale from the four axioms by dimensional analysis | `ATTEMPTED` | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) contains no dimensionful number; [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md) still declares the single units anchor as supplied. |
+| derive kinetic isotropy from spatial no-privilege and cubic symmetry | `ATTEMPTED` | the minimal-axiom text is spatial, while [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) explicitly says `c_t = c_s` is supplied rather than derived. |
+| derive kinetic isotropy from reflection positivity or positive transfer | `ATTEMPTED` | the approved kinetic source says reflection positivity is not used as a derivation; the irreducibility note supplies a current support-only varying-`xi` witness, not audit authority. |
+| derive kinetic isotropy from four-axis transitivity | `ATTEMPTED` | the approved kinetic source supplies only the target equality; the cited B4/S4 note records the circularity check as current unaudited support. |
+| derive OS0 kinetic normalization from a unit real-time tick | `ATTEMPTED` | the approved kinetic source does not supply a B-W/OS0 readout bridge; the cited interface note records that residual as current unaudited support. |
+| derive the realized state from the state/law qualification | `ATTEMPTED` | the minimal axioms say laws privilege no states, and [`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) supplies pointwise evaluation without selecting a state. |
+| derive the realized state from `Records form` | `ATTEMPTED` | occurrence does not choose which law-admissible record configuration is realized; the realized-state source keeps selection, weighting, and boundary data outside the primitive. |
+| retire a primitive through current owner governance | `ATTEMPTED` | the machine registries record the four approved premise nodes and the separate owner-governed AC residual only; no registered primitive has an owner-adoption retirement entry. |
+
+**N2 wall-independence audit.** The collapsed residual set has three distinct
+contents:
+
+| pair | closing first closes second? | closing second closes first? | independent? |
+|---|---|---|---|
+| dimensionful scale / kinetic-form ratio | no | no | yes |
+| dimensionful scale / realized-state slot | no | no | yes |
+| kinetic-form ratio / realized-state slot | no | no | yes |
+
+No raw wall is downstream of another; the review does not inflate the count by
+splitting subclauses of a single primitive.
+
+**N3 hidden-wall scan.** Phrase hits are classified explicitly:
+
+| phrase class | classification |
+|---|---|
+| `registered` / `canonical source-of-truth` | cited machine-registry authority for the current snapshot |
+| primitive content described as `supplied` | cited primitive-source boundary, not an inferred theorem or hidden admission |
+| future gravity, dynamics/metric, and state-selection routes | non-load-bearing open paths, not assumptions used to prove the snapshot |
+
+Policy prose is not used as premise authority. The load-bearing snapshot reads
+the axiom text, primitive source notes, and machine registry directly. The
+support/no-go notes are labelled current unaudited route witnesses and are not
+promoted into retained authority.
+
+**N4 residual matching.** Every cited route witness is matched to the residual
+it actually tests:
+
+| cited surface | residual it tests | current residual | match / use |
+|---|---|---|---|
+| kinetic-isotropy irreducibility support | variable `xi = c_t/c_s` under positive-transfer support conditions | derivation of the kinetic-form ratio | yes; support-only witness |
+| B4/S4 transitivity no-go | circular use of time-space transitivity | derivation of the kinetic-form ratio | yes; support-only witness |
+| B-W/OS0 interface no-go | missing real-time-to-Euclidean normalization bridge | derivation of the kinetic-form ratio | yes; support-only witness |
+| kinetic composition closure note | single-tick normalization-placement residual | one subroute toward the kinetic-form ratio | partial; route map only, not a witness for the whole claim |
+| scale-reference source | dimensionful units anchor | scale primitive content | exact |
+| realized-state source | supplied pointwise evaluation slot | realized-state primitive content | exact |
+
+**N5 rhetoric audit.** The claim is only that the updated axiom text and
+current registries do not presently retire these primitives. It is not a
+lattice-wide impossibility theorem or a universal no-go against future
+derivations, governance decisions, or registry updates.
+
+**N6 partial-closure scan.** Kinetic isotropy has the clearest derivational
+route through a retained dynamics/metric and normalization-placement theorem.
+Scale could move through a gravity self-consistency theorem, and the
+realized-state interface through a state-selection theorem. Explicit owner
+governance could also retire an admission without pretending it was derived.
+None of those paths is recorded as complete for a primitive on current main.
+
+**N7 steelman.** The strongest counterargument is that the new no-privilege
+state/law wording, spatial symmetry, reflection positivity, and unit-tick
+normalization nearly assemble the kinetic and realized-state bridges, while a
+gravity self-consistency result could make the units anchor redundant. That is
+a plausible research program, but the current sources still mark the required
+time-space normalization, dimensionful self-consistency, and state-selection
+steps as separate. This snapshot therefore keeps the primitives while leaving
+those routes open.
+
+**N8 cross-cycle echo.** Theta retired through retained derivation, and
+AC_phi_lambda retired through explicit owner governance on an audited surface.
+Both mechanisms were checked here. Neither automatically applies to a
+registered primitive: current main records no retained derivation or explicit
+owner-adoption retirement for the scale, kinetic-isotropy, or realized-state
+primitive.
 
 ## Dependencies
 

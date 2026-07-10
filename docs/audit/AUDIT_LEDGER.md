@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 934 |
+| **retained_bounded** | 935 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 27 |
-| unaudited | 1754 |
+| unaudited | 1753 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1349 |
+| `audited_clean` | 1350 |
 | `audited_conditional` | 121 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2101 |
+| `unaudited` | 2100 |
 
 | claim_type | count |
 |---|---:|
@@ -454,6 +454,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_product_law_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `emergent_product_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `energy_channel_induced_kernel_route_a_note_2026-07-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6521,6 +6522,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** **Frozen-source control:** Poisson fields computed once from initial densities and  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 3 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `energy_channel_induced_kernel_route_a_note_2026-07-08`
+
+- **Note:** [`ENERGY_CHANNEL_INDUCED_KERNEL_ROUTE_A_NOTE_2026-07-08.md`](../../docs/ENERGY_CHANNEL_INDUCED_KERNEL_ROUTE_A_NOTE_2026-07-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the defined free d=1, N=256 staggered-fermion comparator and local-energy convention, the positive background Lehmann susceptibility has a numerically vanishing q=0 value, the reported four-point Aq^2+Bq^4 fits, and the checked continuity residuals.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-131002-abb23e4d-energy_channel_induced_k-002`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Diagonalizing the declared N=256 comparator and evaluating the displayed Lehmann sum and current matrix elements yields the reported zero mode, finite-momentum fit coefficients, and continuity residuals.  _(class `C`)_
+- **chain closes:** True — The runner constructs and diagonalizes the declared Hamiltonian rather than importing the reported values. Summing the local densities gives H, while the local-density commutator algebra supplies the stated continuity factor and its Lehmann-kernel consequence.
+- **rationale:** The runner genuinely computes the susceptibility, fit coefficients, and continuity residuals from the declared finite-lattice operators and contains no hard-coded expected numerical results. Independently, sum_n h_n=H forces the occupied-to-empty q=0 block to vanish, and the nearest-neighbor density commutators give the displayed continuity factor and kernel relation with the correct powers of the energy denominator. The reported numbers agree with the completed cache, and the note confines them to the finite comparator and stated fit window.
 - **auditor confidence:** high
 
 ### `energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12`

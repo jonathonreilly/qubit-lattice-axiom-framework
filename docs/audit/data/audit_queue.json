@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 387,
     "high": 265,
-    "leaf": 719,
+    "leaf": 718,
     "medium": 498
   },
   "cycle_break_target_count": 10,
@@ -36708,30 +36708,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "theta_defect_closure_necessity_linking_obstruction_bounded_theorem_note_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/THETA_DEFECT_CLOSURE_NECESSITY_LINKING_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/theta_defect_closure_necessity_linking_obstruction_2026_07_02.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "theta_gluing_flow_nonsourcing_pair_level_seed_localization_bounded_theorem_note_2026-07-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -56093,6 +56069,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 162,
-  "total_pending": 1869
+  "ready_count": 161,
+  "total_pending": 1868
 }

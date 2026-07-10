@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 949 |
+| **retained_bounded** | 950 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1718 |
+| unaudited | 1717 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1366 |
+| `audited_clean` | 1367 |
 | `audited_conditional` | 130 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2063 |
+| `unaudited` | 2062 |
 
 | claim_type | count |
 |---|---:|
@@ -1381,6 +1381,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `thales_right_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `theta_assembly_paired_shift_fixed_grading_mckean_singer_reduction_narrow_theorem_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `theta_defect_closure_necessity_linking_obstruction_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -21301,6 +21302,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The coefficient of a cross-plane monomial such as F_01 F_23 is a mixed derivative of a sum of single-plane plaquette functions, and those mixed derivatives vanish identically.  _(class `A`)_
 - **chain closes:** True — Treating the per-plaquette action class as the stated hypothesis, the action separates by plaquette plane, so mixed derivatives with respect to disjoint plane variables are zero. Multi-plaquette and clover terms are not closed by this argument, but they are explicitly outside the audited scope.
 - **rationale:** The load-bearing step is a direct algebraic separability check: a sum of one-plane functions has zero mixed derivative across different plane variables. An independent manual check agrees with the runner's symbolic and direction-counting result, and the note consistently limits the conclusion to the supplied per-plaquette class. The cited per-plaquette enumeration authority is retained_bounded and non-load-bearing for this theorem; no external comparator or tuned numerical value is used.
+- **auditor confidence:** high
+
+### `theta_defect_closure_necessity_linking_obstruction_bounded_theorem_note_2026-07-02`
+
+- **Note:** [`THETA_DEFECT_CLOSURE_NECESSITY_LINKING_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-02.md`](../../docs/THETA_DEFECT_CLOSURE_NECESSITY_LINKING_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the self-contained T^4 lattice at L=2, the Q_raw cup-square charge is invariant under exact branch shifts for closed cochains, while each of the six tested single-plaquette representatives is obstructed by a unit-link shift; one near/far pair also witnesses defect-local support.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00100-theta_defect_closure_necessi`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For each of the six tested single-plaquette cochains, the exact identity Delta(lambda) = -sum(J cup lambda) + sum(lambda cup J) admits a unit-link shift with |Delta| >= 1, whereas dn = 0 makes Delta vanish for every exact shift.  _(class `A`)_
+- **chain closes:** True — The linking identity follows algebraically from the implemented coboundary, Leibniz rule, d^2=0, and torus telescoping. The runner then constructs the relevant cochains and exhaustively checks all 64 unit-link shifts for each of the six plane representatives without importing the claimed result.
+- **rationale:** The runner genuinely implements the finite cubical complex and cup product, computes the charge changes, discriminates all four sign patterns, and obtains seven passing checks without hard-coded target outputs or external comparators. The result is a genuine class-(A) algebraic closure within its explicitly bounded family. Its necessity statement applies only to invariance of this Q_raw-based construction on the six tested representatives and does not exclude alternative defect-relative charges or extend to arbitrary defect families.
 - **auditor confidence:** high
 
 ### `theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04`

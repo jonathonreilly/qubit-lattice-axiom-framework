@@ -243,7 +243,7 @@ def main() -> int:
 
     print("\nE. boundary classifier")
     gates = {
-        "local_readout_atom_availability": "closed",
+        "local_readout_atom_availability": "closed_under_declared_instance",
         "declared_unit_count_context": "closed",
         "record_production": "open",
         "measurement_decoherence_instrument": "open",
@@ -253,7 +253,10 @@ def main() -> int:
         "dial_selection": "open",
         "admissibility_instance_selection": "open",
     }
-    check("E1 local readout-atom availability is the closed part", gates["local_readout_atom_availability"] == "closed")
+    check(
+        "E1 local readout-atom availability closes only under the declared instance",
+        gates["local_readout_atom_availability"] == "closed_under_declared_instance",
+    )
     check("E2 declared unit-count context is the closed finite algebra part", gates["declared_unit_count_context"] == "closed")
     check("E3 record production remains open", gates["record_production"] == "open")
     check("E4 measurement/decoherence instrument remains open", gates["measurement_decoherence_instrument"] == "open")
@@ -267,8 +270,10 @@ def main() -> int:
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print(
-            "VERDICT: exact finite local readout-atom/context availability closes; "
-            "production, probability, physical context selection, clock/rate, and dial selection remain open."
+            "VERDICT: exact finite local readout-atom/context availability closes only under the "
+            "declared admissibility instance, diagonal readout context, K/conjugation context, "
+            "and unit-count normalization; selection of those inputs, production, probability, "
+            "clock/rate, and dial selection remain open."
         )
         return 0
     print("VERDICT: local atom availability repair failed; do not use this artifact.")

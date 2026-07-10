@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_local_finite_atom_availability_2026_06_17.py
-runner_sha256: 2824c826e50148a5951381b693ca77f2e9983217ad134b3cf2fe5fee783b7cc0
-timeout_sec: 300
+runner_sha256: b669d1447af6b84f67a2ebb5fc7b355176ae204d8b730049b29702fa50d18450
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.60
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 Record local finite readout-atom availability theorem
@@ -66,7 +66,7 @@ D. finite Boolean unit-count readout
 [PASS] D5 finite prefixes remain bounded by their chosen length
 
 E. boundary classifier
-[PASS] E1 local readout-atom availability is the closed part
+[PASS] E1 local readout-atom availability closes only under the declared instance
 [PASS] E2 declared unit-count context is the closed finite algebra part
 [PASS] E3 record production remains open
 [PASS] E4 measurement/decoherence instrument remains open
@@ -77,7 +77,7 @@ E. boundary classifier
 [PASS] E9 admissibility-instance selection remains open
 
 SCORECARD: PASS=52 FAIL=0
-VERDICT: exact finite local readout-atom/context availability closes; production, probability, physical context selection, clock/rate, and dial selection remain open.
+VERDICT: exact finite local readout-atom/context availability closes only under the declared admissibility instance, diagonal readout context, K/conjugation context, and unit-count normalization; selection of those inputs, production, probability, clock/rate, and dial selection remain open.
 
 ----- stderr -----
 

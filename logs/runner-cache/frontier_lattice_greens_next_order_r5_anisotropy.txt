@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lattice_greens_next_order_r5_anisotropy.py
-runner_sha256: e638003aef3f8c351586381d5a12692f0e8a7d2d619863afdbd07811413172c9
+runner_sha256: dcc67ecd58c93d85faea2fb47c4e4a34042ca9533debe6a3cbddeb45b1caf323
 timeout_sec: 360
 exit_code: 0
-elapsed_sec: 15.24
+elapsed_sec: 15.28
 status: ok
 ----- stdout -----
 PASS S1a tail_mellin(Gt) = 1/(4 pi r) exactly
@@ -42,9 +42,10 @@ PASS N2b f(2, 1, 1) last-pair ratio 1.85534 in [1.42857, 2.7551]
 PASS CTRL1 5 percent wrong axial value is rejected by extrapolation
 PASS CTRL2 5 percent wrong axial value is rejected by last-pair ratio
 PASS CTRL3 coefficient 622 in place of 621 is symbolically rejected
+PASS CTRL4 decisive exit mapping rejects one simulated failure
 
 RESULT: G(x) = 1/(4 pi r) + [5/(32 pi)] K4(nhat)/r^3 + f(nhat)/r^5 + O(1/r^7); extrapolations (1, 0, 0)=0.0572505905 (1, 1, 0)=0.0278282781 (1, 1, 1)=-0.00663140384 (2, 1, 0)=-0.00295945052 (2, 1, 1)=-0.024402988
-TOTAL: PASS=36 FAIL=0
+TOTAL: PASS=37 FAIL=0
 
 ----- stderr -----
 

@@ -139,21 +139,23 @@ print(
 )
 print()
 print(
-    f"So the bridge-path cross-check read is: y_t(v) = {YT_CENTRAL:.4f} "
+    f"So the conditional bridge-path cross-check read is: y_t(v) = {YT_CENTRAL:.4f} "
+    f"at kappa_Y = 0 and under the named Planck-surface bridge, "
     f"with route-specific residual "
     f"(±{pct(YT_REL_SYSTEMATIC_CONSERVATIVE):.6f}% conservative, "
     f"±{pct(YT_REL_SYSTEMATIC_SUPPORT):.6f}% support-tight)."
 )
 print(
-    f"The same bridge-path residual propagates to m_t(pole): "
+    f"Under those same conditions, the bridge-path residual propagates to m_t(pole): "
     f"2-loop ±{MT2_ABS_SYSTEMATIC_CONSERVATIVE:.3f} GeV conservative "
     f"(±{MT2_ABS_SYSTEMATIC_SUPPORT:.3f} GeV support-tight), "
     f"3-loop ±{MT3_ABS_SYSTEMATIC_CONSERVATIVE:.3f} GeV conservative "
     f"(±{MT3_ABS_SYSTEMATIC_SUPPORT:.3f} GeV support-tight)."
 )
 print(
-    "The primary YT authority lane is carried elsewhere by the retained Ward "
-    "theorem together with standard lattice matching and SM running."
+    "The primary YT authority lane carries an exact canonical-bare Ward core; "
+    "its Planck-surface and low-energy package remains conditional alongside "
+    "standard lattice matching and SM running."
 )
 print()
 print("=" * 78)

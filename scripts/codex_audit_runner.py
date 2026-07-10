@@ -58,6 +58,7 @@ AUDIT_DIR = REPO_ROOT / "docs" / "audit"
 # prompt and the deterministic pipeline cannot drift.
 sys.path.insert(0, str(AUDIT_DIR / "scripts"))
 import premise_nodes
+import no_go_discipline_gate
 
 LEDGER_PATH = AUDIT_DIR / "data" / "audit_ledger.json"
 QUEUE_PATH = AUDIT_DIR / "data" / "audit_queue.json"
@@ -408,6 +409,21 @@ def load_queue(criticality_filter: str | None = None,
     return rows
 
 
+def select_named_targets(queue: list[dict], claim_ids: list[str]) -> list[dict]:
+    """Select exact queue rows in caller order, rejecting missing/duplicate ids."""
+    if len(claim_ids) != len(set(claim_ids)):
+        duplicates = sorted({cid for cid in claim_ids if claim_ids.count(cid) > 1})
+        raise ValueError(f"duplicate --claim-id values: {', '.join(duplicates)}")
+    by_id = {row.get("claim_id"): row for row in queue if row.get("claim_id")}
+    missing = [cid for cid in claim_ids if cid not in by_id]
+    if missing:
+        raise ValueError(
+            "requested claim ids are absent from the selected queue/filter: "
+            + ", ".join(missing)
+        )
+    return [by_id[cid] for cid in claim_ids]
+
+
 def load_reaudit_candidates(criticality_filter: str | None = None,
                             include_runner_drift: bool = True) -> list[dict]:
     """Load rows from reaudit_candidates.json, sorted by leverage.
@@ -613,9 +629,22 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     )
 
     note_body = read_note_body(note_path) or f"[note missing on disk: {note_path}]"
+    no_go_required = no_go_discipline_gate.source_requires_no_go_discipline(
+        note_path, note_body, claim_type_hint
+    )
 
     # Cited authorities: one-hop deps from the ledger row
     led_row = ledger_rows.get(cid, {})
+    packet_row = {**led_row, **row, "claim_id": cid}
+    evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
+        packet_row, ledger_rows, REPO_ROOT
+    )
+    evidence_manifest_text = no_go_discipline_gate.render_evidence_manifest(
+        evidence_manifest
+    )
+    premise_context = no_go_discipline_gate.render_framework_premise_context(
+        evidence_manifest
+    )
     deps = led_row.get("deps", [])
     cited_blocks = []
     for dep_cid in deps:
@@ -624,17 +653,33 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         dep_body = read_note_body(dep_path) or f"[dep note missing: {dep_path}]"
         eff = dep_row.get("effective_status") or "unaudited"
         ct = dep_row.get("claim_type") or "?"
-        premise_line = ""
+        accepted = False
+        accepted_type = "none"
+        bounds_downstream = False
         if premise_nodes.is_axiom_premise(dep_cid):
-            premise_line = (
-                "=== Cited authority axiom_or_approved_primitive_premise: true "
-                "(accepted framework premise; see rubric carve-out) ===\n"
-            )
+            accepted = True
+            accepted_type = "axiom_or_approved_primitive"
+        elif premise_nodes.is_owner_governed_premise(dep_cid):
+            accepted = True
+            accepted_type = "owner_governed_residual"
+        elif premise_nodes.is_admitted_derivation_target(dep_cid):
+            accepted = True
+            accepted_type = "tier_a_derivation_target"
+            bounds_downstream = True
+        elif premise_nodes.is_admitted_convention(dep_cid):
+            accepted_type = "tier_a_convention_not_accepted"
+        premise_lines = (
+            f"=== Cited authority accepted_premise: {str(accepted).lower()} ===\n"
+            f"=== Cited authority accepted_premise_type: {accepted_type} ===\n"
+            f"=== Cited authority bounds_downstream: {str(bounds_downstream).lower()} ===\n"
+            f"=== Cited authority axiom_premise: "
+            f"{str(accepted_type == 'axiom_or_approved_primitive').lower()} ===\n"
+        )
         cited_blocks.append(
             f"=== BEGIN CITED AUTHORITY: {dep_path} ===\n"
             f"=== Cited authority effective_status: {eff} ===\n"
             f"=== Cited authority claim_type: {ct} ===\n"
-            f"{premise_line}"
+            f"{premise_lines}"
             f"{dep_body}\n"
             f"=== END CITED AUTHORITY: {dep_path} ==="
         )
@@ -733,25 +778,35 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         else "(no helper runner imports detected)"
     )
 
-    # Inline-substitute the {{...}} variables. We only replace the variables
-    # actually appearing in the template; the FOREACH block uses cited_str.
-    prompt = template
-    prompt = prompt.replace("{{CLAIM_ID}}", cid)
-    prompt = prompt.replace("{{NOTE_PATH}}", note_path)
-    prompt = prompt.replace("{{CLAIM_TYPE_HINT}}", claim_type_hint or "(none)")
-    prompt = prompt.replace("{{RUNNER_PATH}}", runner_path or "(none)")
-    prompt = prompt.replace("{{NOTE_BODY}}", note_body)
-    prompt = prompt.replace("{{RUNNER_STDOUT}}", runner_stdout or "(no stdout captured)")
-    prompt = prompt.replace("{{RUNNER_SOURCE}}", runner_source or "(no source available)")
-    prompt = prompt.replace("{{HELPER_RUNNER_SOURCES}}", helper_runner_sources)
-
-    # Replace the FOREACH ... ENDFOREACH block with the rendered cited authorities
-    foreach_re = re.compile(
-        r"\{\{FOREACH cited_authority IN CITED_AUTHORITIES\}\}.*?\{\{ENDFOREACH\}\}",
-        re.DOTALL,
+    # Render every template token in one regex pass. Python's ``re.sub`` does
+    # not rescan replacement text, so literal template-looking strings inside
+    # notes, runner output/source, helper source, authorities, or registry
+    # context remain raw evidence instead of being expanded as another field.
+    replacements = {
+        "{{CLAIM_ID}}": cid,
+        "{{NOTE_PATH}}": note_path,
+        "{{CLAIM_TYPE_HINT}}": claim_type_hint or "(none)",
+        "{{RUNNER_PATH}}": runner_path or "(none)",
+        "{{NO_GO_DISCIPLINE_REQUIRED}}": "true" if no_go_required else "false",
+        "{{NO_GO_EVIDENCE_MANIFEST}}": evidence_manifest_text,
+        "{{NOTE_BODY}}": note_body,
+        "{{RUNNER_STDOUT}}": runner_stdout or "(no stdout captured)",
+        "{{RUNNER_SOURCE}}": runner_source or "(no source available)",
+        "{{HELPER_RUNNER_SOURCES}}": helper_runner_sources,
+        "{{FRAMEWORK_PREMISE_CONTEXT}}": premise_context,
+    }
+    foreach_pattern = (
+        r"\{\{FOREACH cited_authority IN CITED_AUTHORITIES\}\}"
+        r".*?\{\{ENDFOREACH\}\}"
     )
-    # Use a lambda so cited_str isn't interpreted as a re replacement template
-    prompt = foreach_re.sub(lambda _m: cited_str, prompt)
+    token_pattern = "|".join(re.escape(token) for token in replacements)
+    render_re = re.compile(f"(?:{foreach_pattern})|(?:{token_pattern})", re.DOTALL)
+
+    def render_token(match: re.Match[str]) -> str:
+        token = match.group(0)
+        return replacements.get(token, cited_str)
+
+    prompt = render_re.sub(render_token, template)
 
     # Append a tightening footer so we get clean JSON back. We DELIBERATELY
     # do not suppress the COMPUTE_REQUIRED escape — the audit-lane policy
@@ -961,13 +1016,26 @@ def parse_verdict_json(reply: str) -> dict | None:
             cursor = first_open + 1
 
 
-def validate_verdict(blob: dict, expected_cid: str) -> str | None:
+def validate_verdict(
+    blob: dict,
+    expected_cid: str,
+    *,
+    source_requires_no_go: bool = False,
+    evidence_manifest: dict[str, dict] | None = None,
+) -> str | None:
     """Return an error string if the verdict is unusable, else None."""
     missing = REQUIRED_VERDICT_FIELDS - set(blob)
     if missing:
         return f"missing fields: {sorted(missing)}"
     if blob.get("claim_id") != expected_cid:
         return f"claim_id mismatch: expected {expected_cid!r}, got {blob.get('claim_id')!r}"
+    no_go_error = no_go_discipline_gate.validate_no_go_discipline(
+        blob,
+        source_required=source_requires_no_go,
+        evidence_manifest=evidence_manifest,
+    )
+    if no_go_error:
+        return no_go_error
     return None
 
 
@@ -990,6 +1058,11 @@ def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--n", type=int, default=5,
                    help="How many top-of-queue rows to audit this run (default 5).")
+    p.add_argument("--claim-id", action="append", default=[],
+                   help="Audit this exact claim id from the selected queue. "
+                        "Repeat to preserve an explicit audit order; when set, "
+                        "--n is ignored. Use --allow-blocked only when the "
+                        "named row is intentionally dependency-blocked.")
     p.add_argument("--criticality",
                    choices=["critical", "high", "medium", "leaf"],
                    help="Restrict to one criticality tier.")
@@ -1171,7 +1244,17 @@ def main() -> int:
             print("REFUSING: --only-awaiting-cross-confirmation applies to audit_queue.json, not re-audit candidates.")
             return 2
         queue = only_awaiting_cross_confirmation(queue, ledger_rows)
-    targets = queue[: args.n]
+    if args.claim_id:
+        try:
+            targets = select_named_targets(queue, args.claim_id)
+        except ValueError as exc:
+            print(f"REFUSING targeted selection: {exc}")
+            if not args.allow_blocked and not args.from_reaudit_candidates:
+                print("A named row may be dependency-blocked; rerun with "
+                      "--allow-blocked only if auditing that blocked state is intended.")
+            return 2
+    else:
+        targets = queue[: args.n]
     if not targets:
         if args.from_reaudit_candidates:
             print("No re-audit candidates in this filter. Either no upstream "
@@ -1331,7 +1414,23 @@ def main() -> int:
                     }) + "\n")
                 continue
 
-            err = validate_verdict(blob, cid)
+            note_path = row.get("note_path") or full_led_row.get("note_path") or ""
+            note_body = read_note_body(note_path) or ""
+            source_requires_no_go = (
+                no_go_discipline_gate.source_requires_no_go_discipline(
+                    note_path,
+                    note_body,
+                    row.get("claim_type") or full_led_row.get("claim_type"),
+                )
+            )
+            err = validate_verdict(
+                blob,
+                cid,
+                source_requires_no_go=source_requires_no_go,
+                evidence_manifest=no_go_discipline_gate.build_evidence_manifest(
+                    {**full_led_row, **row, "claim_id": cid}, ledger_rows, REPO_ROOT
+                ),
+            )
             if err:
                 print(f"  FAIL validate: {err}")
                 failed += 1

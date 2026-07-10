@@ -262,6 +262,26 @@ def render_audit_lane_field_vocabulary(data: dict) -> str:
     lines.append("After the class, the auditor names the cheapest next repair action.")
     lines.append("")
 
+    # No-Go Discipline outcome and conservative demotion vocabulary.
+    lines.append("### No-Go Discipline packet fields")
+    lines.append("")
+    lines.append(
+        "`no_go_discipline.status` records the mandatory structured N1-N8 "
+        "stress-test outcome for negative boundaries. Exactly one of:"
+    )
+    lines.append("")
+    for name, entry in tf["no_go_discipline_status"]["values"].items():
+        lines.append(f"- `{name}` — {entry['definition']}")
+    lines.append("")
+    lines.append(
+        "When the status is `FAIL`, `no_go_discipline.demotion` is required "
+        "and must be exactly one of:"
+    )
+    lines.append("")
+    for name, entry in tf["no_go_demotion"]["values"].items():
+        lines.append(f"- `{name}` — {entry['definition']}")
+    lines.append("")
+
     # independence
     lines.append("### Independence tiers")
     lines.append("")

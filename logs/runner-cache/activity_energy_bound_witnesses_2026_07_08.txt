@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: scripts/activity_energy_bound_witnesses_2026_07_08.py
+runner_sha256: a84f6a7e2a8e80234abbe4ade8b9b39e1c7244846594239468d829a8b6d15a8d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.73
+status: ok
+----- stdout -----
+BOUND: pass=True samples=40 max_activity_over_bound=0.546505 bound=2.2
+STATIONARY-WITNESS: pass=True activity=1.683e-17 touching-term-energy=-0.763742
+FINITE-TOY-WITNESSES: pass=True far_initial_activity=0.000e+00 overlaps=[0.986106, 0.863355, 0.942353, 0.921557] centroid_deltas=[1e-06, 1.106935, 0.071278, 0.234031]
+TOTAL: BOUNDED-TOY-SUPPORT-VALIDATED AO-bridge=supplied-premise finite-window-only
+
+----- stderr -----
+

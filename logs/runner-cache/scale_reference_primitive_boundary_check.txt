@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/scale_reference_primitive_boundary_check.py
-runner_sha256: 995439520c351583d867dcfa0f4dd55fb5a8cf60119c8e51bcd9575836f94994
+runner_sha256: 8f32952c4dc78a9d4de99ce0042faaf37dd13a9b3cbe627cc442204d85a65d07
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -29,7 +29,7 @@ Scope: primitive registry/source firewall only; no downstream theorem.
 [PASS] policy records dimensional irreducibility
 [PASS] policy records no-laundering boundary
 [PASS] policy keeps Planck-length self-consistency separate
-[PASS] Tier-A registry genuine count remains two -- 2
+[PASS] Tier-A registry genuine count is zero after the 2026-07-05 retirements -- 0
 [PASS] scale primitive is not a Tier-A derivation target
 [PASS] Tier-A registry records scale as reclassified primitive
 [PASS] Tier-A reclassification says not status-bounding
@@ -37,7 +37,7 @@ Scope: primitive registry/source firewall only; no downstream theorem.
 [PASS] note names Planck mass scale reference
 [PASS] note says units conversion not physics axiom
 [PASS] note says zero dimensionless content
-[PASS] note says scale is irreducible by dimensional analysis
+[PASS] note disclaims deriving the chosen physical scale
 [PASS] note says it does not add or amend an axiom
 [PASS] note says it does not assert a/l_P = 1 as derived
 [PASS] note says it does not supply dimensionless quantity

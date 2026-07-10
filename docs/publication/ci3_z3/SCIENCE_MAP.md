@@ -1,381 +1,176 @@
 # Science Map
 
-This file is the domain-organized map of the current `main` package.
+This is a domain map, not a status authority. Use it to find the relevant
+notes and runners. For current claim strength, read the generated
+[claims](./CLAIMS_TABLE_EFFECTIVE_STATUS.md),
+[quantitative](./QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md), and
+[derivation-atlas](./DERIVATION_ATLAS_EFFECTIVE_STATUS.md) views together with
+the row-level [audit ledger](../../audit/AUDIT_LEDGER.md).
 
-Use it when the question is:
+Package appearance, a passing runner, and source-note words such as
+`retained`, `derived`, or `promoted` do not override the ledger's
+`claim_scope` and `effective_status`.
 
-- what scientific areas does the repo currently cover?
-- what is the best current status in each area?
-- where should I start if I want to validate one area rather than the whole repo?
+## Framework Baseline
 
-For the paper-facing claim surface, use [CLAIMS_TABLE.md](./CLAIMS_TABLE.md).
-For the full package inventory, use [PUBLICATION_MATRIX.md](./PUBLICATION_MATRIX.md).
-For reproduction, use [REPRODUCE.md](./REPRODUCE.md).
+The current ontology is the four named axioms in
+[MINIMAL_AXIOMS_2026-06-29.md](../../MINIMAL_AXIOMS_2026-06-29.md):
 
-## Framework and Scope
+- **Lattice:** the cubic `Z^3` site set with its stated adjacency and motions;
+- **Qubit:** the local possibility domain with full one-site presentation
+  `M_2(C)` (`Cl(3,0)` is equivalent notation);
+- **Admissibility:** one fixed covariant nearest-neighbor availability rule;
+- **Record:** records form and permanently lock one admissible local
+  possibility, with record-content readout and finite scalar additivity.
 
-- working framework:
-  a qubit at every site of `Z^3` as the physical axiom surface, with
-  `Cl(3,0)` as the equivalent per-site local-algebra language
-- broad package shape:
-  exact spacetime/gravity backbone, exact gauge/matter backbone, retained
-  quantitative EW/QCD/flavor package, bounded companion phenomenology, one
-  remaining charged-lepton flagship bridge package
-- boundaries:
-  explicit package inputs and non-claims are kept in
-  [INPUTS_AND_QUALIFIERS_NOTE.md](./INPUTS_AND_QUALIFIERS_NOTE.md) and
-  [WHAT_THIS_PAPER_DOES_NOT_CLAIM.md](./WHAT_THIS_PAPER_DOES_NOT_CLAIM.md)
+These axioms do not supply probability, Born weights, a measurement basis,
+record-formation rates, dynamics, a time metric, a kinetic branch, a
+source/action, or a physical-observable identification. Approved primitives
+and owner-governed residual premises are separate registries; neither may be
+silently promoted into an extra axiom.
 
-If you are arriving for the first time, start with:
+## Spacetime, Gravity, and Continuum Work
 
-- [ARXIV_DRAFT.md](./ARXIV_DRAFT.md)
-- [PREDICTION_SURFACE_2026-04-15.md](./PREDICTION_SURFACE_2026-04-15.md)
-- [REPRODUCE.md](./REPRODUCE.md)
-- [CLAIMS_TABLE.md](./CLAIMS_TABLE.md)
+The strongest exact content is local algebra, finite-lattice structure, and
+bounded calculations on named supplied action/kernel/readout surfaces.
+Important boundaries:
 
-Use [PUBLICATION_MATRIX.md](./PUBLICATION_MATRIX.md) only when you want the
-full package-capture inventory rather than the shortest public route.
+- [NEWTON_LAW_DERIVED_NOTE.md](../../NEWTON_LAW_DERIVED_NOTE.md) differentiates
+  a supplied `1/r` kernel; that scope is not a derivation of the physical
+  force law from the four axioms.
+- [BROAD_GRAVITY_DERIVATION_NOTE.md](../../BROAD_GRAVITY_DERIVATION_NOTE.md)
+  packages algebra on supplied action/readout inputs; it does not by itself
+  establish WEP, time dilation, or a physical source bridge.
+- Restricted strong-field, Lorentz, discrete-GR, and continuum/QG rows must be
+  read at their individual ledger scopes. They do not combine into an
+  unconditional full-GR or quantum-gravity closure.
 
-## Spacetime, Gravity, and Quantum Gravity
+Start with the audit-badged derivation atlas, then use the paired runners named
+there. A runner validates only its implemented checks; it does not enlarge the
+source note's audited scope.
 
-- retained weak-field gravity:
-  Poisson uniqueness, Newton law, WEP, and time dilation
-- retained strong-field/gravity backbone:
-  restricted strong-field closure on the current supported class, exact discrete
-  `3+1` GR on the project route, and the chosen continuum/QG identification
-  chain through the canonical textbook weak/measure/action surface
-- retained topology:
-  `S^3` compactification/topology closure
-- retained structural companions:
-  emergent Lorentz invariance with fixed-`H_lat` unitary-kernel closure,
-  exact evanescent-barrier transfer-matrix bound + tortoise-length identity,
-  BH-entropy Widom no-go on the current carrier
+## Gauge and Matter Structure
 
-Start with:
+The most mature structural core includes finite-dimensional operator algebra,
+native `SU(2)` constructions, and selected graph-first structural `SU(3)`
+results. The complete physical Standard-Model map is a larger dependency
+chain: hypercharge normalization/identification, matter carriers, chirality,
+species labels, anomaly inputs, and continuum interpretation must each carry
+their own retained-grade scope before a downstream row can inherit them.
 
-- [GRAVITY_PUBLICATION_PACKAGE_SUMMARY_2026-04-15.md](./GRAVITY_PUBLICATION_PACKAGE_SUMMARY_2026-04-15.md)
-- [DERIVATION_VALIDATION_MAP.md](./DERIVATION_VALIDATION_MAP.md)
-
-Validate with:
-
-- `python3 scripts/frontier_self_consistent_field_equation.py`
-- `python3 scripts/frontier_newton_derived.py`
-- `python3 scripts/frontier_universal_gr_discrete_global_closure.py`
-- `python3 scripts/frontier_universal_qg_canonical_textbook_continuum_gr_closure.py`
-
-## Gauge, Matter, and Structural Field Content
-
-- retained gauge structure:
-  exact native `SU(2)`, graph-first structural `SU(3)`, exact `T = 0`
-  confinement on the graph-first color sector
-- retained matter structure:
-  one-generation closure, SM hypercharge uniqueness/electric-charge
-  quantization, fractional-charge denominator from `N_c`, `SU(2)` Witten
-  global-anomaly cancellation, `SU(3)^3` cubic gauge anomaly cancellation,
-  B-L anomaly freedom as a gaugeable option, three-generation
-  observable/species closure, exact `I_3 = 0`, exact CPT,
-  Bell/CHSH support on explicit two-species lattice systems
-- retained package-support lanes:
-  `g_bare = 1` structural normalization and two-Ward 1PI closure
-- package-support atlas:
-  taste-cube/residual-symmetry flavor support and `Cl(3) -> SM` algebraic
-  support packet
-
-Start with:
+Useful entry points:
 
 - [NATIVE_GAUGE_CLOSURE_NOTE.md](../../NATIVE_GAUGE_CLOSURE_NOTE.md)
 - [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](../../GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
+- [ONE_GENERATION_MATTER_CLOSURE_NOTE.md](../../ONE_GENERATION_MATTER_CLOSURE_NOTE.md)
 - [STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md](../../STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)
-- [FRACTIONAL_CHARGE_DENOMINATOR_FROM_N_C_THEOREM_NOTE_2026-04-24.md](../../FRACTIONAL_CHARGE_DENOMINATOR_FROM_N_C_THEOREM_NOTE_2026-04-24.md)
-- [SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md](../../SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md)
-- [SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md](../../SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md)
-- [BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md](../../BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md)
-- [THREE_GENERATION_STRUCTURE_NOTE.md](../../THREE_GENERATION_STRUCTURE_NOTE.md)
-- [STRONG_CP_THETA_ZERO_NOTE.md](../../STRONG_CP_THETA_ZERO_NOTE.md)
-- [UNIVERSAL_THETA_INDUCED_EDM_VANISHING_THEOREM_NOTE_2026-04-24.md](../../UNIVERSAL_THETA_INDUCED_EDM_VANISHING_THEOREM_NOTE_2026-04-24.md)
 
-Validate with:
+Consult their effective-status annotations rather than treating this list as a
+single retained package.
 
-- `python3 scripts/frontier_non_abelian_gauge.py`
-- `python3 scripts/frontier_graph_first_su3_integration.py`
-- `python3 scripts/frontier_sm_hypercharge_uniqueness.py`
-- `python3 scripts/frontier_fractional_charge_denominator_from_n_c.py`
-- `python3 scripts/frontier_su2_witten_z2_anomaly.py`
-- `python3 scripts/frontier_su3_cubic_anomaly_cancellation.py`
-- `python3 scripts/frontier_bminusl_anomaly_freedom.py`
-- `python3 scripts/frontier_generation_fermi_point.py`
-- `python3 scripts/frontier_three_generation_observable_theorem.py`
-- `python3 scripts/frontier_strong_cp_theta_zero.py`
-- `python3 scripts/frontier_universal_theta_induced_edm_vanishing.py`
+## Probability, Measurement, and Records
 
-## Quantitative Electroweak, QCD, Yukawa, and Higgs Package
+Record supplies occurrence, permanence, one-record-per-site locking, readable
+record content, and finite scalar additivity. It does not supply the
+probability rule or measurement dynamics.
 
-- retained / identification-conditioned quantitative lanes:
-  `alpha_s(M_Z)`, EW normalization, retained EW Higgs gauge-mass
-  diagonalization as the tree-level mass/charge guardrail, YT/top transport
-  conditioned on the support-tier Ward identification
-- bounded QCD/hadron lane:
-  exact graph-first confinement is retained, but quantitative hadron masses are
-  still open. The current support map isolates `sqrt(sigma)` promotion behind
-  `(B2)` dynamical screening and `(B5)` framework-to-standard-YM validation, and
-  identifies Lane 3 `m_u + m_d` as the shortest dependency for the GMOR pion
-  path.
-- promoted quantitative flavor lane:
-  CKM atlas/axiom package, including the standalone Wolfenstein structural
-  identities `lambda^2 = alpha_s(v)/2`, `A^2 = 2/3`, and the CP-phase
-  structural identity `cos^2(delta_CKM) = 1/6`, plus the rescaled
-  atlas-triangle right-angle identity `alpha_0 = 90 deg`, atlas-leading
-  first-row identities `|V_us|_0^2 = alpha_s(v)/2`,
-  `|V_ub|_0^2 = alpha_s(v)^3/72`,
-  `|V_ud|_0^2 = 1 - alpha_s(v)/2 - alpha_s(v)^3/72`,
-  second-row identities `|V_cd|_0^2 = alpha_s(v)/2`,
-  `|V_cs|_0^2 = 1 - alpha_s(v)/2 - alpha_s(v)^2/6`,
-  `|V_cb|_0^2 = alpha_s(v)^2/6`, and atlas-leading third-row identities
-  `|V_td|_0^2 = 5 alpha_s(v)^3/72`,
-  `|V_ts|_0^2 = alpha_s(v)^2/6`, plus the atlas-leading B_s mixing phase
-  `phi_s = -alpha_s(v) sqrt(5)/6` and the NLO barred-triangle protected
-  invariant `gamma_bar = arctan(sqrt(5))`, the retained NLO beta-ratio
-  corollary `sin(2 beta_bar)/sin(2 beta_0) = 1 - alpha_s(v)/5`, the
-  moduli-only area guardrail `R=4J^2`, the exact
-  barred-triangle Napoleon closure `N_outer^2=W_+/6`,
-  `N_inner^2=W_-/6`, and
-  `N_outer^2 N_inner^2=P(alpha_s(v))/82944`, the exact Weitzenbock sum/gap
-  package `W_+`, `W_-` with `W_+W_-=P(alpha_s(v))/2304`, the
-  Weitzenbock/Brocard five-form unification, the Brocard-polynomial
-  structural-integer skeleton with `p_2=2e_1^2`, the Brocard/Q
-  square-channel decomposition into Jarlskog and perimeter channels, plus the
-  Thales-mediated
-  cross-system CP ratio `phi_s / sin(2 beta_d) = -alpha_s(v)/2`
-  and CP-product estimator
-  `alpha_s(v) = (18/5) sin(2 beta_d) sin(2 beta_s)` at atlas-leading order
-  plus the
-  kaon epsilon_K CKM-bracket factorization through atlas `J_0`
-- identification-conditioned quantitative lane:
-  Higgs/vacuum package with explicit retention budget
-- bounded quantitative companions:
-  W-boson same-surface probe, taste-scalar near-degeneracy,
-  vacuum critical stability
-- absolute-scale scoping:
-  the current package carries `a^(-1) = M_Pl` as a Planck-scale package pin on
-  the accepted physical-lattice reading; the 2026-04-24 conditional-completion
-  packet derives `c_cell = 1/4`, closes the unique finite-boundary density
-  extension positively, and gives `a/l_P = 1` once the primitive boundary count
-  is accepted as the gravitational boundary/action carrier; the 2026-04-25
-  source-unit normalization support theorem on that same carrier surface
-  separates the retained bare Green coefficient `G_kernel = 1/(4 pi)` from the
-  conditional physical Newton coefficient `G_Newton,lat = 1`, resolving the old
-  bare-source `2 sqrt(pi)` mismatch without removing the remaining carrier
-  premise; the minimal-stack derivation of that carrier identification remains
-  open; the finite-automorphism-only response route and carrier-only
-  parent-source scalar route are closed negatively; the simple-fiber Widom
-  entropy-carrier class is also closed negatively at `c_Widom <= 1/6`, so a
-  positive `1/4` entropy route must use a physically selected
-  multi-pocket/multi-interval carrier or a gapped horizon-sector
-  primitive-boundary theorem
+The `I_3=0` calculation assumes linear amplitude addition and a quadratic
+probability assignment. It proves the interference identity on that supplied
+probability surface; it does not derive the Born rule from the axioms. Bell and
+measurement-model runners are likewise explicit-system witnesses unless their
+own audited scopes say more.
+
+## Strong CP
+
+The strongest strong-CP result is scoped to the selected Wilson/staggered
+action, positivity/reality, and mass/readout surfaces named by
+[STRONG_CP_THETA_ZERO_NOTE.md](../../STRONG_CP_THETA_ZERO_NOTE.md) and its
+dependencies. It must not be generalized to every admissible action or to an
+unrestricted solution of the Standard Model strong-CP problem.
+
+The former `theta` Tier-A target is retired in the registry, but registry
+retirement is not a universal theorem and does not widen any source row's
+audited claim scope.
+
+## Quantitative Electroweak, QCD, Yukawa, and Higgs Work
+
+The numerical package mixes exact identities, bounded calculations, supplied
+matching rules, running/transport assumptions, observational comparators, and
+open bridges. Use
+[QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md](./QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md)
+for every quoted number.
+
+In particular:
+
+- a numerical match is not a structural derivation;
+- a value conditioned on a supplied identification or matching coefficient
+  keeps that condition;
+- the taste-scalar isotropy authority does not audit-ratify the separate
+  `124.91 GeV` branch estimate or thermal-cubic estimate;
+- hadron masses, atomic scales, and non-top quark masses remain open lanes.
+
+## Flavor, CKM, and Charged Leptons
+
+The CKM atlas contains many exact finite-algebra consequences once its source
+parameters and physical identifications are supplied. Publication capture of
+the atlas does not make every member an independently retained physical claim;
+read the effective-status mirror and decoration roll-ups.
+
+Charged-lepton Koide structure, the phase/readout bridge, and the absolute
+mass scale remain scope-sensitive. Retirement of the former
+`AC_phi_lambda` Tier-A slot leaves the physical `r=1/2` selector open: the
+owner-governed replacement explicitly supplies no `r`, `delta`, or
+charged-lepton mass value.
 
 Start with:
 
-- [QUANTITATIVE_SUMMARY_TABLE.md](./QUANTITATIVE_SUMMARY_TABLE.md)
-- [USABLE_DERIVED_VALUES_INDEX.md](./USABLE_DERIVED_VALUES_INDEX.md)
-- [PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md](../../PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md)
-- [PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md](../../PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md)
-- [PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md](../../PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md)
-- [PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md](../../PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md)
-- [PLANCK_FINITE_RESPONSE_NO_GO_NOTE_2026-04-24.md](../../PLANCK_FINITE_RESPONSE_NO_GO_NOTE_2026-04-24.md)
-- [PLANCK_PARENT_SOURCE_HIDDEN_CHARACTER_NO_GO_NOTE_2026-04-24.md](../../PLANCK_PARENT_SOURCE_HIDDEN_CHARACTER_NO_GO_NOTE_2026-04-24.md)
-- [AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md](../../AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md)
-
-Validate with:
-
-- `python3 scripts/frontier_complete_prediction_chain.py`
-- `python3 scripts/frontier_alpha_lm_geometric_mean_identity.py`
-- `python3 scripts/frontier_wolfenstein_lambda_a_structural_identities.py`
-- `python3 scripts/frontier_ckm_cp_phase_structural_identity.py`
-- `python3 scripts/frontier_ckm_atlas_triangle_right_angle.py`
-- `python3 scripts/frontier_yt_ward_identity_derivation.py`
-- `python3 scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py`
-- `python3 scripts/frontier_higgs_mass_full_3loop.py`
-- `python3 scripts/frontier_planck_scale_program_audit.py`
-- `python3 scripts/frontier_planck_conditional_completion_audit.py`
-- `python3 scripts/frontier_planck_source_unit_normalization_support_theorem.py`
-- `python3 scripts/frontier_planck_boundary_density_extension.py`
-- `python3 scripts/frontier_planck_finite_response_nogo.py`
-- `python3 scripts/frontier_planck_parent_source_hidden_character_nogo.py`
-- `python3 scripts/frontier_area_law_quarter_broader_no_go.py`
-
-## Flavor, CP, and Charged-Lepton Structure
-
-- promoted quantitative flavor package:
-  CKM atlas/axiom closure
-- bounded secondary flavor lanes:
-  down-type CKM-dual mass-ratio lane, bounded quark support packet
-- retained corollaries:
-  CKM-only neutron EDM on the retained `theta_eff = 0` surface, plus
-  source-scoped vanishing of all theta-induced EDM response components
-- open flagship package:
-  charged-lepton Koide `Q = 2/3`, `delta = 2/9`
-
-Current charged-lepton status:
-
-- `Q = 2/3` support is strong, but the physical readout is still reduced to a
-  source-free reduced-carrier selection theorem; the background-zero /
-  `Z`-erasure algebra on that carrier is now an exact criterion theorem, and
-  strict onsite `C3` source functions would erase `Z`; retained
-  central/projected commutant sources still admit `Z`, so the source-domain
-  theorem remains open
-- `delta = 2/9` support is strong, but the physical Brannen endpoint is still
-  reduced to the selected-line local boundary-source law plus based endpoint
-  section
-- the A1/radian audit shows retained periodic phase sources are `q*pi`, so the
-  exact Type-B rational witnesses for `2/9` still need a rational-to-radian
-  observable law
-- pointed-origin exhaustion shows that origin-free retained data cannot select
-  the simultaneous zero-source / real-primitive / unit-endpoint representative;
-  the objection-closure review keeps the branch's source-domain closure claims
-  as conditional support, not retained closure
-- the separate overall lepton scale `v_0` also remains open
-
-Start with:
-
-- [CKM_ATLAS_AXIOM_CLOSURE_NOTE.md](../../CKM_ATLAS_AXIOM_CLOSURE_NOTE.md)
-- [WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md](../../WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md)
-- [CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md](../../CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md)
-- [CKM_NEUTRON_EDM_BOUND_NOTE.md](../../CKM_NEUTRON_EDM_BOUND_NOTE.md)
-- [UNIVERSAL_THETA_INDUCED_EDM_VANISHING_THEOREM_NOTE_2026-04-24.md](../../UNIVERSAL_THETA_INDUCED_EDM_VANISHING_THEOREM_NOTE_2026-04-24.md)
+- [CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md](../../CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md)
 - [KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md](../../KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md)
-- [KOIDE_POINTED_ORIGIN_EXHAUSTION_THEOREM_NOTE_2026-04-24.md](../../KOIDE_POINTED_ORIGIN_EXHAUSTION_THEOREM_NOTE_2026-04-24.md)
-- [KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md](../../KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md)
-- [CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md](../../CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md)
-- [KOIDE_NATIVE_DIMENSIONLESS_NOTE_2026-04-24.md](../../KOIDE_NATIVE_DIMENSIONLESS_NOTE_2026-04-24.md)
+- [CKM_ATLAS_AXIOM_CLOSURE_NOTE.md](../../CKM_ATLAS_AXIOM_CLOSURE_NOTE.md)
 
-Validate with:
+## Neutrino and Dark-Matter Work
 
-- `python3 scripts/frontier_ckm_atlas_axiom_closure.py`
-- `python3 scripts/frontier_wolfenstein_lambda_a_structural_identities.py`
-- `python3 scripts/frontier_ckm_cp_phase_structural_identity.py`
-- `python3 scripts/frontier_ckm_no_import_audit.py`
-- `python3 scripts/frontier_ckm_neutron_edm_bound.py`
-- `python3 scripts/frontier_universal_theta_induced_edm_vanishing.py`
-- `python3 scripts/frontier_koide_native_zero_section_nature_review.py`
-- `python3 scripts/frontier_koide_q_delta_residual_cohomology_obstruction_no_go.py`
-- `python3 scripts/frontier_koide_dimensionless_objection_closure_review.py`
-- `python3 scripts/frontier_koide_hostile_review_guard.py`
-- `python3 scripts/frontier_koide_reviewer_stress_test.py`
-- `python3 scripts/frontier_koide_lane_regression.py`
+This domain contains exact matrix/current calculations, bounded model
+reductions, no-go boundaries, and observational comparisons. It does not yet
+provide an unconditional neutrino-mass mechanism or a framework-only dark
+matter abundance prediction. PMNS and dark-matter headline statements must
+retain their source-surface, selector, and comparator qualifications.
 
-## Neutrino and Dark-Matter Package
+Use the neutrino and dark-matter rows in the effective-status atlas and the
+[open-science index](../../lanes/open_science/README.md).
 
-- flagship closed package on the manuscript surface:
-  dark-matter exact-target PMNS package
-- bounded retained/support packet:
-  neutrino reduction/current/no-go stack plus retained-package absolute-mass
-  observable bounds
+## Cosmology and Compactness Spectra
 
-Current status:
+The repo contains conditional FRW reductions, inverse reconstructions,
+spectral identities, and compactness towers. An identity such as
+`m_g^2 = 2 Lambda` does not derive the observed numerical value of `Lambda`;
+an equation-of-state corollary on a supplied vacuum surface does not derive
+the observed dark-energy sector from the four axioms. Hubble closure and the
+physical cosmological source/history bridges remain open or conditional where
+their ledger rows say so.
 
-- dark matter is closed for the exact PMNS-target formulation treated in the
-  manuscript
-- broader target-free global uniqueness remains out of scope
-- the neutrino positive retained lane remains absent; current retained routes
-  reduce the open frontier to the missing nonzero current `J_chi`
-- the retained atmospheric scale plus retained normal ordering force bounded
-  neutrino-observable statements, including `Σm_ν > 50.58 meV`,
-  `m_β ≤ 50.58 meV`, and `m_ββ ≤ 50.58 meV`; these are not point predictions
-  for the solar gap, PMNS angles, or Majorana phases
+## Open Science Lanes
 
-Start with:
+The main unresolved physical programs are indexed in
+[docs/lanes/open_science/README.md](../../lanes/open_science/README.md),
+including:
 
-- [DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md](../../DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md)
-- [NEUTRINO_RETAINED_STATUS_NOTE_2026-04-16.md](../../NEUTRINO_RETAINED_STATUS_NOTE_2026-04-16.md)
-- [NEUTRINO_RETAINED_OBSERVABLE_BOUNDS_THEOREM_NOTE_2026-04-24.md](../../NEUTRINO_RETAINED_OBSERVABLE_BOUNDS_THEOREM_NOTE_2026-04-24.md)
+- charged-lepton masses and Koide physical closure;
+- hadron masses and atomic scales;
+- non-top quark masses;
+- neutrino quantitative closure;
+- Hubble/cosmological source closure;
+- probability/measurement dynamics beyond the narrow Record axiom.
 
-Validate with:
+## Validation Rule
 
-- `python3 scripts/frontier_dm_leptogenesis_transport_status.py`
-- `python3 scripts/frontier_dm_abcc_retained_measurement_closure_2026_04_21.py`
-- `python3 scripts/frontier_dm_pmns_ordered_chain_graded_current_delta_closure_2026_04_21.py`
-- `python3 scripts/frontier_neutrino_mass_reduction_to_dirac.py`
-- `python3 scripts/frontier_pmns_selector_current_stack_zero_law.py`
-- `python3 scripts/frontier_neutrino_retained_observable_bounds.py`
+1. Find the row in an effective-status view.
+2. Read its `claim_scope`, dependencies, and effective status in the audit
+   ledger.
+3. Read the source note and one-hop authorities.
+4. Run the paired runner in the pinned release environment.
+5. Treat failures, stale caches, and untested displayed formulas as unresolved;
+   do not infer success from a historical PASS transcript.
 
-## Cosmology and Companion Phenomenology
-
-- retained cosmology identities/corollaries:
-  `Lambda_vac = lambda_1(S^3_R)`, `w = -1`, graviton spectral compactness-mass
-  identity, the retained scalar/vector/TT compactness spectral towers, their
-  pure-`Lambda` bridge with `m_TT(2)/m_vec(1)=sqrt(3)`, the exact
-  `R_base = 31/9` group-theory support identity for the bounded
-  DM/cosmology cascade, and the FRW kinematic reduction of `q_0`, `z_*`,
-  `z_{mLambda}`, and asymptotic `H_inf` to the same open `H_inf/H_0` ratio,
-  plus its inverse reconstruction/cross-consistency certificate, the
-  late-time Hubble structural lock, and the two-degree open-number reduction
-  at fixed radiation readout,
-  plus the early-time matter-radiation equality identity
-  `1 + z_mr = Omega_m,0/Omega_r,0` and active-neutrino-count support for
-  standard `N_eff = 3.046`
-- bounded cosmology numerics:
-  numerical `Lambda`, `Omega_Lambda`, numerical `m_g`, `n_s`, bounded `r`
-- bounded phenomenology companions:
-  proton lifetime, monopole mass, gravitational decoherence, GW echo null
-  result, BH entropy companion
-
-Start with:
-
-- [PREDICTION_SURFACE_2026-04-15.md](./PREDICTION_SURFACE_2026-04-15.md)
-- [COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md](../../COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md)
-- [R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md](../../R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md)
-- [OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md](../../OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md)
-- [COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md](../../COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md)
-- [COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md](../../COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md)
-- [HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md](../../HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md)
-- [COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md](../../COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md)
-- [MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md](../../MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md)
-- [N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md](../../N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md)
-- [GRAVITON_SPECTRAL_TOWER_THEOREM_NOTE_2026-04-24.md](../../GRAVITON_SPECTRAL_TOWER_THEOREM_NOTE_2026-04-24.md)
-- [VECTOR_GAUGE_FIELD_KK_TOWER_THEOREM_NOTE_2026-04-24.md](../../VECTOR_GAUGE_FIELD_KK_TOWER_THEOREM_NOTE_2026-04-24.md)
-- [SCALAR_HARMONIC_TOWER_THEOREM_NOTE_2026-04-24.md](../../SCALAR_HARMONIC_TOWER_THEOREM_NOTE_2026-04-24.md)
-
-Validate with:
-
-- `python3 scripts/frontier_cosmological_constant_spectral_gap_identity.py`
-- `python3 scripts/frontier_dark_energy_eos_retained_corollary.py`
-- `python3 scripts/frontier_r_base_group_theory_derivation.py`
-- `python3 scripts/frontier_omega_lambda_matter_bridge.py`
-- `python3 scripts/frontier_cosmology_frw_kinematic_reduction.py`
-- `python3 scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py`
-- `python3 scripts/frontier_hubble_tension_structural_lock.py`
-- `python3 scripts/frontier_cosmology_open_number_reduction.py`
-- `python3 scripts/frontier_matter_radiation_equality_structural_identity.py`
-- `python3 scripts/frontier_n_eff_from_three_generations.py`
-- `python3 scripts/frontier_graviton_spectral_tower.py`
-- `python3 scripts/frontier_vector_gauge_field_kk_tower.py`
-- `python3 scripts/frontier_scalar_harmonic_tower.py`
-- `python3 scripts/frontier_gravity_cosmology_tower_lambda_spectral_bridge.py`
-- `python3 scripts/frontier_tensor_scalar_ratio_consolidation.py`
-
-## Validation Paths
-
-- fastest public overview:
-  [README.md](../../../README.md),
-  `README.md` (publication-package upstream landing page; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*),
-  [PREDICTION_SURFACE_2026-04-15.md](./PREDICTION_SURFACE_2026-04-15.md)
-- paper-facing claim/evidence path:
-  [CLAIMS_TABLE.md](./CLAIMS_TABLE.md),
-  [DERIVATION_VALIDATION_MAP.md](./DERIVATION_VALIDATION_MAP.md),
-  [RESULTS_INDEX.md](./RESULTS_INDEX.md)
-- reproduction path:
-  [REPRODUCE.md](./REPRODUCE.md),
-  [RELEASE_ENVIRONMENT.md](./RELEASE_ENVIRONMENT.md)
-- reusable theorem/value path:
-  [DERIVATION_ATLAS.md](./DERIVATION_ATLAS.md),
-  [USABLE_DERIVED_VALUES_INDEX.md](./USABLE_DERIVED_VALUES_INDEX.md)
-
-## Package Rule
-
-- if a lane is manuscript-facing, it must appear in
-  [CLAIMS_TABLE.md](./CLAIMS_TABLE.md)
-- if a lane is package-captured, it must appear in
-  [PUBLICATION_MATRIX.md](./PUBLICATION_MATRIX.md)
-- if a lane is meant to be validated, it must be reachable from
-  [DERIVATION_VALIDATION_MAP.md](./DERIVATION_VALIDATION_MAP.md) and
-  [REPRODUCE.md](./REPRODUCE.md)
+The [reproduce guide](./REPRODUCE.md) is a command inventory. It is not, by
+itself, a certificate that every listed command is currently green.

@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/wep_source_reduction_scaling_window_2026_07_08.py
+runner_sha256: 92adc3c79fee4e178496821c468c8d667c957dd1687f7b3939ed9da98a9e8811
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.55
+status: ok
+----- stdout -----
+FREE SOURCE-FUNCTION FORMULAS AND FINITE CONTACT COMPARATOR
+CHECK-01 CONDITIONAL-SINGLE-FORMULA: PASS residual=0.000e+00 symbolic_residual=0
+CHECK-02 FREE-COMPOSITE-FORMULA: PASS residual=0.000e+00 identity_residual=0 series=2*x**2 + 2*x**4/3 + O(x**6)
+CHECK-03 SMALL-PARAMETER-FORMULAS: PASS residual=0.000e+00 coefficients=(1/2, 2/3, 2)
+CHECK-04 FINITE-SAME-ENERGY-COMPARATOR: PASS residual=0.000e+00 L=64 target=8.661812851073e-01 relative_mass_separation=4.661369e-01 max_fit_residual=2.853e-07 fit_residual_tolerance=1.0e-06 fitted_masses_positive_finite=true rows=[m=0.5,U=3.7250327997e-01,E0=8.661812851073e-01,Mcurv=1.550948918546e+00,fit_resid=2.853e-07; m=0.6,U=5.9883401443e-01,E0=8.661812851073e-01,Mcurv=2.905143452026e+00,fit_resid=3.045e-08]
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

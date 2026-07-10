@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md"
 TIER_A = DOCS / "audit" / "data" / "tier_a_admissions.json"
+OWNER_GOVERNED = DOCS / "audit" / "data" / "owner_governed_premise_nodes.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 REGISTRY = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
 MINIMAL = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
@@ -76,6 +77,7 @@ def main() -> int:
     paths = [
         NOTE,
         TIER_A,
+        OWNER_GOVERNED,
         LEDGER,
         REGISTRY,
         MINIMAL,
@@ -101,29 +103,73 @@ def main() -> int:
     check("note has audit boundary", "**Audit boundary:** independent audit lane only." in note)
     check("runner link is wired", Path(__file__).name in note)
     for phrase in [
-        "does not derive, refute, re-grade, retire, or remove AC_phi_lambda(i)",
+        "does not derive, refute, re-grade, or remove the historical AC_phi_lambda decomposition",
         "does not edit any Tier-A registry",
         "No axiom, primitive, registry, audit verdict, or publication-status surface is edited.",
         "future occupancy-dictionary or matter-action theorems",
     ]:
         check(f"scope boundary present: {phrase[:64]}", phrase in note_flat)
     for banned in [
-        "AC_phi_lambda(i) is retired",
-        "AC_phi_lambda is retired",
+        "the formation append retired AC_phi_lambda(i)",
+        "Records form retired AC_phi_lambda",
         "R-eta is retired",
         "theta is retired",
         "we remove AC_phi_lambda",
         "new occupancy primitive is approved",
         "Record formation selects the occupancy dictionary",
+        "owner governance derived the occupancy dictionary",
     ]:
         check(f"banned overclaim absent: {banned}", banned not in note_flat)
 
     section("B. Tier-A registry state on current main")
     tier = json.loads(read(TIER_A))
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     decomp = ac["minimum_decomposition"]
     statement = ac["statement"]
-    check("AC_phi_lambda remains the live Tier-A target", tier["genuine_admitted_input_count"] >= 1)
+    owner_registry = json.loads(read(OWNER_GOVERNED))
+    owner_node = owner_registry["nodes"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    check(
+        "Tier-A live derivation targets are empty after the 2026-07-05 retirements",
+        tier["genuine_admitted_input_count"] == 0
+        and tier["derivation_targets"] == {}
+        and tier["canonical_ids"] == [],
+        str(tier["genuine_admitted_input_count"]),
+    )
+    check(
+        "AC entry preserved intact under retired_derivation_targets",
+        bool(statement) and bool(decomp),
+    )
+    check(
+        "AC retirement mechanism is owner governance, not the formation append",
+        ac["retirement"]["mechanism"] == "retired_by_owner_governance_on_audited_surface",
+        ac["retirement"]["mechanism"],
+    )
+    check(
+        "owner-governed registry carries the retired AC premise node",
+        owner_registry["canonical_ids"] == ["staggered_dirac_realization_gate_note_2026-05-03"],
+        owner_registry["canonical_ids"],
+    )
+    check(
+        "owner-governed registry adopts the exact AC occupancy and R-eta residual candidates",
+        owner_node["adopted_residual_candidates"]
+        == [
+            "ac_orbit_occupancy_statistical_grain_premise",
+            "ac_reta_hclass_hunit_readout_premise",
+        ],
+        owner_node["adopted_residual_candidates"],
+    )
+    check(
+        "owner-governed boundary names the exact AC(i) occupancy and AC(ii) R-eta supply",
+        "AC(i) matter-action occupancy grain" in owner_node["boundary"]
+        and "AC(ii) R-eta h-class/h-unit readout license" in owner_node["boundary"],
+        owner_node["boundary"],
+    )
+    check(
+        "owner-governed boundary supplies no r value or sector-weight law",
+        "supplies no value of r" in owner_node["boundary"]
+        and "sector-weight law" in owner_node["boundary"],
+        owner_node["boundary"],
+    )
     check("AC minimum decomposition contains occupancy binary", "reading_occupancy_selection" in decomp, decomp)
     check("AC minimum decomposition keeps R-eta separate", "delta_readout_identification_R_eta" in decomp, decomp)
     check("AC minimum decomposition keeps species bridge separate", "species_bridge" in decomp, decomp)
@@ -262,20 +308,31 @@ def main() -> int:
     section("G. note theorem and no-go discipline")
     for phrase in [
         "The implication is invalid.",
-        "The July 4 formation append does not retire AC_phi_lambda(i).",
+        "The July 4 formation append did not itself derive or retire AC_phi_lambda(i).",
         "It supplies:",
         "It does not supply:",
         "the outcome-to-component dictionary",
         "Formation-rule theorem",
         "Matter-action theorem",
-        "Owner governance route",
+        "Owner-governance retirement path already taken",
     ]:
         check(f"note contains synthesis phrase: {phrase[:64]}", phrase in note_flat)
     for idx in range(1, 9):
         check(f"N{idx} gate present", f"**N{idx}" in note)
-    check("N2 separates occurrence from dictionary", "formation append is an occurrence wall" in note_flat)
-    check("N4 matches registry on current main", "`reading_occupancy_selection` remains in the live minimum decomposition" in note_flat)
-    check("steelman preserves occurrence support", "formed records are necessary for any occupancy readout" in note_flat)
+    check("N1 records at least five attempted routes", note.count("`ATTEMPTED`") >= 5)
+    check(
+        "N1 cites the current human registry for owner-governance supply",
+        "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md" in note
+        and "owner-governance supply" in note,
+    )
+    check("N2 separates occurrence from dictionary", "Closing occurrence does not close the dictionary" in note_flat)
+    check(
+        "N4 matches retired registry and owner-governed current posture",
+        "historical `reading_occupancy_selection` atom" in note_flat
+        and "`owner_governed_premise_nodes.json` AC node" in note_flat
+        and "current supply is separate from derivation by the formation append" in note_flat,
+    )
+    check("steelman preserves occurrence support", "formed records remain necessary for occupancy readout" in note_flat)
 
     section("TOTAL")
     print(f"TOTAL: PASS={PASS} FAIL={FAIL} CHECKS={PASS + FAIL}")

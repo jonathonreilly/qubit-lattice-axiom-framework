@@ -16,9 +16,37 @@ Safe claim:
 
 from __future__ import annotations
 
+from fractions import Fraction
 import math
 
 from canonical_plaquette_surface import CANONICAL_ALPHA_S_V
+
+
+N_C = 3
+
+
+def casimir_fundamental(n: int) -> Fraction:
+    return Fraction(n * n - 1, 2 * n)
+
+
+T_F_EXACT = Fraction(1, 2)
+
+
+def exponent_exact(n: int) -> Fraction:
+    return casimir_fundamental(n) - T_F_EXACT
+
+
+def beta0_exact(n_f: int) -> Fraction:
+    return Fraction(11) - Fraction(2 * n_f, 3)
+
+
+def gamma0_exact(n: int) -> Fraction:
+    return 6 * casimir_fundamental(n)
+
+
+C_F_EXACT = casimir_fundamental(N_C)
+EXPONENT_EXACT = exponent_exact(N_C)
+TRANSPORT_EXACT = gamma0_exact(N_C) / (2 * beta0_exact(4))
 
 
 C_F = 4.0 / 3.0
@@ -55,6 +83,65 @@ def check(name: str, condition: bool, detail: str = "", kind: str = "EXACT") -> 
     if detail:
         line += f"  ({detail})"
     print(line)
+
+
+def part0_exact_derivation() -> None:
+    print("\n" + "=" * 72)
+    print("PART 0: Exact exponent and transport derivation")
+    print("=" * 72)
+
+    polynomial_identity = all(
+        3 * n * n - 8 * n - 3 == (3 * n + 1) * (n - 3)
+        for n in range(-2, 9)
+    )
+    matching_ranks = {
+        n for n in range(2, 7) if exponent_exact(n) == Fraction(5, 6)
+    }
+    transport_nf3 = gamma0_exact(3) / (2 * beta0_exact(3))
+    transport_nf5 = gamma0_exact(3) / (2 * beta0_exact(5))
+    exponent_n2 = exponent_exact(2)
+
+    check("P0.1: C_F exact derivation", C_F_EXACT == Fraction(4, 3))
+    check("P0.2: T_F exact input", T_F_EXACT == Fraction(1, 2))
+    check("P0.3: exponent exact derivation", EXPONENT_EXACT == Fraction(5, 6))
+    check(
+        "P0.4: exact values reproduce existing float constants (exponent within 1 ulp)",
+        C_F == float(C_F_EXACT)
+        and T_F == float(T_F_EXACT)
+        and abs(EXPONENT - float(EXPONENT_EXACT)) <= 2.0 ** -53,
+        f"C_F,T_F exact; float(C_F-T_F) vs exact 5/6 gap = "
+        f"{abs(EXPONENT - float(EXPONENT_EXACT)):.2e}",
+    )
+    check(
+        "P0.5: N=3 is unique in the N=2..6 scan",
+        polynomial_identity and matching_ranks == {3},
+        f"identity={polynomial_identity}, matching ranks={sorted(matching_ranks)}",
+    )
+    check(
+        "P0.6: exact one-loop inputs at N=3 and n_f=4",
+        gamma0_exact(3) == Fraction(8)
+        and beta0_exact(4) == Fraction(25, 3),
+    )
+    check(
+        "P0.7: exact threshold-local transport power",
+        TRANSPORT_EXACT == Fraction(12, 25)
+        and GAMMA0_OVER_2BETA0 == float(TRANSPORT_EXACT),
+    )
+    check(
+        "P0.8: n_f=3 transport rejector detected",
+        transport_nf3 == Fraction(4, 9) and transport_nf3 != TRANSPORT_EXACT,
+        f"wrong-input value={transport_nf3}",
+    )
+    check(
+        "P0.9: n_f=5 transport rejector detected",
+        transport_nf5 == Fraction(12, 23) and transport_nf5 != TRANSPORT_EXACT,
+        f"wrong-input value={transport_nf5}",
+    )
+    check(
+        "P0.10: N=2 exponent rejector detected",
+        exponent_n2 == Fraction(1, 4) and exponent_n2 != EXPONENT_EXACT,
+        f"wrong-input value={exponent_n2}",
+    )
 
 
 def part1_exact_surface() -> tuple[float, float]:
@@ -201,6 +288,7 @@ def main() -> int:
     print("  FRONTIER: CKM Five-Sixths Bridge Support")
     print("=" * 72)
 
+    part0_exact_derivation()
     v_cb, r_pred = part1_exact_surface()
     r_from_obs_vcb, r_pred = part2_bounded_bridge(v_cb, r_pred)
     part3_self_scale_transport(r_pred)

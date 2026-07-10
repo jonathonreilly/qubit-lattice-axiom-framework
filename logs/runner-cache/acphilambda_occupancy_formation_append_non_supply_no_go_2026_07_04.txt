@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py
+runner_sha256: 4b0f9874082efcb86374fc7f1a04a6ace6fe49965c02f96840f5693b59a10487
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.04
+status: ok
+----- stdout -----
 AC_phi_lambda occupancy formation-append non-supply verifier
 
 ================================================================================================
@@ -35,7 +43,9 @@ A. source presence, metadata, and no-overclaim firewall
 ================================================================================================
 B. Tier-A registry state on current main
 ================================================================================================
-[PASS] AC_phi_lambda remains the live Tier-A target
+[PASS] Tier-A live derivation targets are empty after the 2026-07-05 retirements
+[PASS] AC entry preserved intact under retired_derivation_targets
+[PASS] AC retirement mechanism is owner governance, not the formation append
 [PASS] AC minimum decomposition contains occupancy binary
 [PASS] AC minimum decomposition keeps R-eta separate
 [PASS] AC minimum decomposition keeps species bridge separate
@@ -151,4 +161,7 @@ G. note theorem and no-go discipline
 ================================================================================================
 TOTAL
 ================================================================================================
-TOTAL: PASS=120 FAIL=0 CHECKS=120
+TOTAL: PASS=122 FAIL=0 CHECKS=122
+
+----- stderr -----
+

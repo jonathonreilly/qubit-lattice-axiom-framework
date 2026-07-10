@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py
-runner_sha256: 6ad9cfea2f648a02bc4875eb428fa9c11d1c85b3a8f6bd092ab4cce92f7bb7d9
+runner_sha256: ffb0d58b8ae35e060ea229bd618acfca707b83b2fcecb19f0bf01ac443392819
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -42,8 +42,8 @@ Primitive source-boundary checks
 [PASS] scale source forbids dimensionless content
 [PASS] scale source does not derive a/l_P=1
 [PASS] kinetic source declares c_t=c_s
-[PASS] kinetic source says baseline does not fix ratio
-[PASS] kinetic source says scale fixes no dimensionless ratio
+[PASS] kinetic source says c_t = c_s is supplied rather than derived
+[PASS] kinetic source lists scale reference among structures not used as a derivation
 [PASS] realized source says laws do not pick state
 [PASS] realized source says pointwise evaluation only
 [PASS] realized source forbids state-selection content
@@ -83,8 +83,8 @@ Review-note conclusion checks
 [PASS] review note says premise registries are not reopened
 
 Hygiene diagnostic checks
-[PASS] scale boundary runner stale Tier-A count diagnostic is detected
-[PASS] primitive source notes still need four-axiom narrative scrub -- SCALE_REFERENCE_PRIMITIVE_NOTE.md, KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md, REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+[PASS] scale boundary runner carries the current Tier-A count gate
+[PASS] primitive source notes carry no pre-reset baseline narrative
 
 Verdicts
   scale_reference_primitive: KEEP -- no dimensionful derivation from current axioms

@@ -742,10 +742,15 @@ def main() -> int:
                 evidence_manifest=None,
             )
             if archived_error:
-                errors.append(
+                message = (
                     f"{cid}: previous_audits[{index}] invalid no_go_discipline "
                     f"packet: {archived_error}"
                 )
+                # Archived packets are non-authoritative history. Schema
+                # evolution may make them invalid under the current live gate;
+                # restoration revalidates against current evidence before any
+                # archived audit can become live again.
+                add_notice("archived_invalid_no_go_packet", message)
 
         for field in DEPRECATED_LEDGER_FIELDS & set(row):
             errors.append(f"{cid}: deprecated ledger field {field!r} must not be present")

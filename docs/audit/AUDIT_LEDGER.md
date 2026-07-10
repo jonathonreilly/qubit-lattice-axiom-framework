@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 211 |
 | **retained_bounded** | 947 |
 | _retained_pending_chain_ | 10 |
-| open_gate | 27 |
-| unaudited | 1740 |
+| open_gate | 28 |
+| unaudited | 1739 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1361 |
+| `audited_clean` | 1362 |
 | `audited_conditional` | 121 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 32 |
-| `unaudited` | 2085 |
+| `unaudited` | 2084 |
 
 | claim_type | count |
 |---|---:|
@@ -889,6 +889,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_finite_path_explanation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lensing_long_path_test_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lepton_block_d12_prime_matching_no_go_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -13490,6 +13491,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** At H=0.25, the T_phys=7.5 kubo_true fit gives slope -1.4356 on b in {3,4,5,6}, essentially matching the retained T_phys=15 slope near -1.43 while the finite-path formula predicts -1.7336 at T_phys=7.5.  _(class `C`)_
 - **chain closes:** True — The primary runner recomputes the T_phys=7.5 kubo_true values from the DAG/Kubo propagator and the helper source does not hard-code the contested short-path slope. The T_phys=15 comparison slope is supplied by a retained_no_go cited authority, and no open positive layer-weighted bridge is needed to falsify the surrogate prediction.
 - **rationale:** Independent recomputation of the displayed finite-path formula slopes gives -1.7336, -1.4188, and -1.0776 for L_eff=5, 10, and 30, matching the packet. Independently fitting the stdout T_phys=7.5, H=0.25 kubo_true values gives slope -1.4356 with R2=0.9985, also matching the packet. The runner source instantiates the lattice/DAG propagation and first-order Kubo calculation rather than reading the contested value from another note. The audited conclusion is limited to falsifying this finite-path surrogate's regime-transition prediction, not deriving the unknown positive mechanism for the observed slope.
+- **auditor confidence:** high
+
+### `lepton_block_d12_prime_matching_no_go_note_2026-05-10`
+
+- **Note:** [`LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md`](../../docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** On the restricted current source surface, YT-style lepton matching remains open because no cited authority identifies the required physical lepton scalar operator; no lepton Yukawa prediction or permanent no-go is established.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00078-lepton_block_d12_prime_match`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The cited authorities define the scalar-singlet operator only on the Q_L block and provide no physical lepton-composite scalar bridge, so the formal lepton matching cannot yet be promoted to a framework identity.  _(class `A`)_
+- **chain closes:** True — The retained-bounded YT authority supplies only the Q_L scalar-singlet operator, while the retained-parent decoration supplies only an SU(3) channel-dimension fraction and explicitly excludes a physical matching map. Their stated scopes therefore close the narrow current-surface absence claim.
+- **rationale:** The conclusion is a narrow logical closure over the explicit scopes of two retained-grade authorities, not a claimed derivation of a lepton Yukawa or an impossibility theorem. The runner correctly verifies the formal algebra and cited-source boundaries, although four reported passes are unconditional scope declarations rather than substantive computations. The missing lepton bridge supports the open-gate conclusion itself and is not an unclosed premise imported into a stronger result.
 - **auditor confidence:** high
 
 ### `lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26`

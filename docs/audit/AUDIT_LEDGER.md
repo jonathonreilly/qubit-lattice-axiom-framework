@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 928 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1753 |
+| unaudited | 1752 |
 | audit_in_progress | 8 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 33 |
+| ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 135 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -77,8 +77,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 69 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 33 |
-| `unaudited` | 2100 |
+| `audited_renaming` | 34 |
+| `unaudited` | 2099 |
 
 | claim_type | count |
 |---|---:|
@@ -1765,6 +1765,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_formula_ew_vev_observable_identification_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
+| `koide_three_measures_three_observables_note_2026-05-31` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
@@ -12251,6 +12252,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Because T1 is invariant under U, P1 commutes with U and U|T1=C, giving P1 A8(X) P1 = A3(P1 X P1); the Schur block covariance then gives C S(M)=S(M) C.  _(class `A`)_
 - **chain closes:** True — All load-bearing objects are defined inside the packet: the finite basis, cycle U, projector P1, T1 cycle C, averaging maps, cyclic basis, and Schur complement. The descent identity follows by finite matrix algebra, and the Schur-compatible response factorization follows from block covariance and cyclic-basis orthogonality.
 - **rationale:** The central descent is a genuine algebraic identity over explicitly defined finite matrices, not a physical bridge or numerical fit. The runner source constructs the cycle, projector, matrix units, orbit channels, and Schur samples directly, with no imported contested value or external comparator; the exact matrix-unit checks substantiate the averaging/compression identity. The physical charged-lepton carrier/readout interpretation, microscopic source law, selector law, and mass readout are explicitly outside the audited scope, so they do not block this bounded finite theorem.
+- **auditor confidence:** high
+
+### `koide_three_measures_three_observables_note_2026-05-31`
+
+- **Note:** [`KOIDE_THREE_MEASURES_THREE_OBSERVABLES_NOTE_2026-05-31.md`](../../docs/KOIDE_THREE_MEASURES_THREE_OBSERVABLES_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite C3 Q-readout table, the independent evaluation L_3(1,2)=2/9, and the asserted identification of the isotype dimension weight with the spectral transverse-weight tuple.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00039-koide_three_measures_three_o`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The block count and the dimension count are distinct finite readouts, and the dimension count has a spectral-asymmetry interpretation.  _(class `F`)_
+- **chain closes:** True — The two arithmetic calculations close independently. Their claimed common dimension-count interpretation closes only through relabeling two differently defined tuples as the same (1,2) weight; no structural map between them is derived.
+- **rationale:** The Q table follows algebraically from the supplied formulas, and the finite spectral sum is evaluated correctly. However, (mu,nu)=(1,2) denotes singlet/doublet isotype weighting, whereas L_3(1,2) uses a transverse cyclotomic weight tuple. The runner merely conjuncts the two independently computed values and prints that they use the same weight, so the spectral-asymmetry interpretation is a renaming rather than a derived bridge.
+- **open / conditional deps cited:**
+  - `KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`
 - **auditor confidence:** high
 
 ### `koide_tracial_standard_form_carrier_narrow_note_2026-06-02`

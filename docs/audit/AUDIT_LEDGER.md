@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 28 |
-| unaudited | 1725 |
+| unaudited | 1724 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 127 |
+| ~~audited_conditional~~ | 128 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -72,12 +72,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1364 |
-| `audited_conditional` | 127 |
+| `audited_conditional` | 128 |
 | `audited_decoration` | 67 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2070 |
+| `unaudited` | 2069 |
 
 | claim_type | count |
 |---|---:|
@@ -1616,6 +1616,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `regge_ok4_frame_section_narrow_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `reta_conversion_factor_carrier_class_elimination_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `ring_monodromy_does_not_force_car_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `shapiro_family_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -17956,6 +17957,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Because cos(3 delta) is a free operator coordinate while L_3(1,2)=2/9 is parameter-free, no retained polynomial relation pins the former to the latter, so R-eta is a genuine readout admission on the supplied surface.  _(class `A`)_
 - **chain closes:** False — I1-I3 and I4a-I4b close algebraically, but I4c does not: neither the note nor a cited authority specifies the claimed spectral scalar or derives its complete stationary set. The runner assumes delta=n*pi/3 and only checks that 2/9 is not in that assumed set.
 - **rationale:** Issue: I4c imports an unspecified “retained nondegenerate conjugation-even spectral-scalar branch,” while the runner hard-codes its stationary set rather than computing it. Why this blocks: without restrictions on the spectral scalar, conjugation-even functions of cos(3 delta) can have additional nondegenerate interior stationary points, so the three-route no-pin claim and resulting admission characterization are not established. Repair target: specify the scalar action and derive its complete stationary set symbolically, or cite a retained authority proving that result. Claim boundary until fixed: the invariant formulas, fixed-locus arithmetic, covariance, determinant positivity, and operational freedom of cos(3 delta) remain supported on the supplied surface.
+- **auditor confidence:** high
+
+### `reta_conversion_factor_carrier_class_elimination_bounded_note_2026-06-12`
+
+- **Note:** [`RETA_CONVERSION_FACTOR_CARRIER_CLASS_ELIMINATION_BOUNDED_NOTE_2026-06-12.md`](../../docs/RETA_CONVERSION_FACTOR_CARRIER_CLASS_ELIMINATION_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audit checked the stipulated circulant’s determinant-character erasure, symmetric-polynomial formulas, fundamental-domain inversion, the c=π equal-data counterexample, the c=2 Chebyshev guard, and the cited periodic-source boundary.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00093-reta_conversion_factor_carri`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** R1 and R4 are asserted to carry no angle datum, R2 only the derived cos(3δ) datum without a primitive multiplier, and R3 is excluded, so the primitive carrier-compatible set is {1}.  _(class `A`)_
+- **chain closes:** False — The exact R1/R2 calculations close, but they do not prove the universal elimination of every c≠1. The runner tests only c=π, hard-codes the assembled set {1} and the R4 carrier identification, and supplies no exhaustive carrier-class or primitive-carrier theorem.
+- **rationale:** Issue: the universal {1} carrier set is not derived; R2d tests only c=π, R4 is asserted through a Boolean constant, and no cited authority establishes that R1–R4 exhaust the relevant carriers or formally distinguishes primitive from post-readout functions. Why this blocks: the valid determinant and symmetric-data algebra cannot exclude every c≠1, while the radian authority expressly leaves the Type-B-to-radian law primitive. Repair target: supply an exhaustive carrier-classification and R4 bridge theorem with an all-c argument, or narrow the claim to the identities and examples actually checked. Claim boundary until fixed: k=0 and the circulant symmetric-data/inversion results hold on the stipulated surface, but c_set={1} remains conditional.
+- **open / conditional deps cited:**
+  - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+  - `KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`
+  - `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `retardation_discriminator_note`

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 946 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1727 |
+| unaudited | 1726 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
 | ~~audited_conditional~~ | 139 |
-| ~~audited_failed~~ | 14 |
+| ~~audited_failed~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -74,10 +74,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1368 |
 | `audited_conditional` | 139 |
 | `audited_decoration` | 70 |
-| `audited_failed` | 36 |
+| `audited_failed` | 37 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 35 |
-| `unaudited` | 2074 |
+| `unaudited` | 2073 |
 
 | claim_type | count |
 |---|---:|
@@ -1738,6 +1738,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_carrier_locus_decomposition_note_2026-06-01` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_reviewer_stress_test_note_2026-04-21` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | weak | codex-current | B | - |
+| `matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -13888,6 +13889,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The matched comparison does not support a clean '4D flattens the ceiling' claim under the pinned 2D/4D generator definitions, degree matching, seeds, k-band, and pur_min metric.  _(class `C`)_
 - **chain closes:** True — The runner constructs both graph families from the named generator routines, computes the matched pur_min and degree table, fits per-seed exponents, and asserts the source note's table within explicit tolerances. The note's claim is bounded to those generator definitions and default arguments, so no outside modular-universality authority is needed.
 - **rationale:** The source note and runner agree on the bounded table, alpha estimates, and conclusion that this matched pocket does not support a dimensional exponent-flattening theorem. The runner computes the graph samples and metrics before checking the pinned values, rather than importing a retained theorem or relying on author prose. Residual risk is limited to the named generator routines, seed count, radius grid, and default harness settings; broader 2D/4D modular universality is explicitly outside the audited scope.
+- **auditor confidence:** high
+
+### `matter_color_depolarization_necessary_for_gauge_link_ad_invariance_narrow_theorem_note_2026-06-09`
+
+- **Note:** [`MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md`](../../docs/MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The claimed necessity of rho_color=I3/3 for centrality of the group-valued link step under a supplied nonzero SU(3)-equivariant linear matter-current drift.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00002-matter_color_depolarization_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** An Ad-invariant link-increment distribution has an Ad-invariant mean generator, hence its mean in su(3) vanishes and traceless(rho_color)=0.  _(class `A`)_
+- **chain closes:** False — Centrality of the group-valued pushforward exp(i epsilon H) does not imply Ad-invariance of E[H] without an injective, Ad-equivariant logarithm or a suitable support bound. The runner verifies the representation and moment identities but never establishes this bridge.
+- **rationale:** The finite-dimensional facts Hom_SU(3)(Herm(3),su(3))=1, the absence of adjoint invariant vectors, and E[H]=traceless(rho_color) are sound within the stated conventions. However, the theorem concerns centrality of the group step exp(i epsilon H), while the proof silently treats centrality as invariance of the algebra-valued H distribution. Exponential aliases give counterexamples: for pure rho=diag(1,0,0) and drift scale 6pi/epsilon, H is nonzero but exp(i epsilon H)=I, yielding a central step measure with polarized rho.
 - **auditor confidence:** high
 
 ### `matter_inertial_closure_note`

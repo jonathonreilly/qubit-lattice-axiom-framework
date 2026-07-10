@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 951 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1713 |
+| unaudited | 1712 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 133 |
-| ~~audited_failed~~ | 11 |
+| ~~audited_failed~~ | 12 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -75,10 +75,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1368 |
 | `audited_conditional` | 133 |
 | `audited_decoration` | 69 |
-| `audited_failed` | 33 |
+| `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2058 |
+| `unaudited` | 2057 |
 
 | claim_type | count |
 |---|---:|
@@ -1753,6 +1753,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | E | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
+| `theta_su3_link_star_pairwise_reduction_local_rigidity_transpose_sheet_and_chiral_sign_escape_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -21453,6 +21454,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Conjugation invariance of C2(p,q) and d(p,q) implies that coefficients given by any real function of those data are conjugation-paired, so the resulting class weight is real and flip-even.  _(class `A`)_
 - **chain closes:** False — The algebra closes for spectral evenness, fusion-profile symmetry, the phased-seed split, and determinant-phase conjugation oddness. No supplied theorem establishes that the enumerated profile exhausts pure-gauge structure or that the required theta data therefore live uniquely on the mass side, and the cited registry text needed to verify the routing match is absent.
 - **rationale:** The runner performs substantive algebraic and numerical checks rather than merely printing expected results, and the displayed formulas independently support the core spectral and seed-splitting identities. Its finite windows, sample points, and quadrature do not prove that Casimir, dimension, and the two fusion rules exhaust all supplied pure-gauge distinctions. Determinant-phase oddness establishes an example of suitable odd data, not the broader location or uniqueness claim, while the note correctly leaves the semantic outer-evenness bridge unadjudicated.
+- **auditor confidence:** high
+
+### `theta_su3_link_star_pairwise_reduction_local_rigidity_transpose_sheet_and_chiral_sign_escape_bounded_theorem_note_2026-07-02`
+
+- **Note:** [`THETA_SU3_LINK_STAR_PAIRWISE_REDUCTION_LOCAL_RIGIDITY_TRANSPOSE_SHEET_AND_CHIRAL_SIGN_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-02.md`](../../docs/THETA_SU3_LINK_STAR_PAIRWISE_REDUCTION_LOCAL_RIGIDITY_TRANSPOSE_SHEET_AND_CHIRAL_SIGN_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The runner audits numerical projector identities, flip parities, an exhibited transpose pair, and a finite-difference rank test for one deterministic SU(3) witness with the hard-coded weight w = 1 + 0.35(chi_F + chi_Fb).
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00105-theta_su3_link_star_pairwise`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** At fixed generic (A, B), the full-rank pair-data Jacobian locally pins the third staple, while transpose preserves the pair data and star value but reverses the chiral datum.  _(class `A`)_
+- **chain closes:** False — The runner's 10x8 Jacobian varies only C with A and B fixed, so it does not establish local injectivity of the full triple pair-data map modulo diagonal conjugation. It also tests only one conjugate-symmetric weight, which cannot support the claimed evenness for arbitrary real class weights.
+- **rationale:** The individual numerical checks pass, but their scope is narrower than the theorem's load-bearing conclusions. Pointwise reality of an SU(3) class weight does not by itself imply dagger or outer-conjugation evenness; the runner instead hard-codes the stronger conjugate-symmetric character combination. Moreover, the finite-difference singular value is not an exact rank certificate and does not prove local rigidity of the complete triple orbit.
 - **auditor confidence:** high
 
 ### `theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02`

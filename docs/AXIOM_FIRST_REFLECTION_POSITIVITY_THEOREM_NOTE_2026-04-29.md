@@ -276,7 +276,9 @@ The signs of the four factors are supplied one hop:
   its explicit specialization.
 
 Finite linear combinations inherit a positive semidefinite Gram form by
-polarization over these same factorized generators. This reroute supplies the
+polarization over these same factorized generators — superseded 2026-07-10:
+the coupled-Gram supplier below establishes the joint PSD kernel directly on
+the full mixed algebra, with no polarization step. This reroute supplies the
 missing Wilson-plane application named in this row's latest conditional verdict
 from a retained-bounded source. This note still does not mark this parent row
 or any downstream row retained; independent audit must judge the composed
@@ -298,6 +300,23 @@ and a no-conjugation rejector — in place of the earlier synthetic product mode
 The determinant and fixed-background
 fermion-transfer factors remain separately checked by the retained dependency
 gate and C1-C6 rather than being recomputed inside this pure-gauge Monte Carlo.
+
+**2026-07-10 coupled-Gram in-packet supplier.** The coupled two-slice
+SU(3)-gauge plus staggered-fermion Berezin/OS Gram named by the latest
+conditional verdict is now derived in-packet by
+[RP_COUPLED_TWO_SLICE_GAUGE_STAGGERED_BEREZIN_GRAM_NARROW_THEOREM_NOTE_2026-07-10.md](RP_COUPLED_TWO_SLICE_GAUGE_STAGGERED_BEREZIN_GRAM_NARROW_THEOREM_NOTE_2026-07-10.md):
+in temporal gauge the crossing Boltzmann factor factorizes exactly into the
+SU(3) plane kernel times a link-independent finite fermion crossing
+polynomial, and the joint two-slice Gram is positive semidefinite as the
+tensor product of the plane-kernel Gram and an explicitly computed
+nonnegative fermionic crossing coefficient matrix — for arbitrary finite
+linear combinations on the full mixed `A_+^(2)`, including gauge x fermion
+entangled elements. Accordingly, the four-factor display above should be
+read as the INGREDIENT list of that joint cross-configuration Gram (its sign
+inputs), not as a pointwise-in-`U` product with a norm-square gauge factor;
+the earlier factorized-generators + polarization sentence is superseded by
+the joint-kernel statement. This dated line moves the note hash so the row
+re-enters for re-audit.
 
 ### In-repo first-principles construction and proof (free case)
 

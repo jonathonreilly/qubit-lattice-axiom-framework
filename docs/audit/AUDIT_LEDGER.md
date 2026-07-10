@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 195 |
-| **retained_no_go** | 208 |
+| **retained_no_go** | 209 |
 | **retained_bounded** | 932 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1837 |
+| unaudited | 1836 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 12 |
-| `audited_clean` | 1340 |
+| `audited_clean` | 1341 |
 | `audited_conditional` | 67 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2182 |
+| `unaudited` | 2181 |
 
 | claim_type | count |
 |---|---:|
@@ -766,6 +766,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_delta_marked_relative_cobordism_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10868,6 +10869,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** If c_i * alpha_i = 2/9 with c_i and q_i nonzero rationals, then (c_i q_i) * pi = 2/9 would make pi rational, contradicting transcendence/irrationality of pi.  _(class `A`)_
 - **chain closes:** True — The scoped statement closes by exact arithmetic: every nonzero rational multiple of each alpha_i is a nonzero rational multiple of pi, while 2/9 is a nonzero rational. This does not prove exhaustiveness of native angular constructions or close the radian-bridge postulate P.
 - **rationale:** The load-bearing proof is a genuine class-A algebraic identity over the six stated nonzero rational coefficients and the admitted standard fact that pi is irrational/transcendental. The runner source hard-codes the six q_i inputs but then performs exact symbolic consistency checks; that is appropriate for this scoped algebraic theorem and is not a class-C first-principles derivation. Both cited authorities are retained-grade for the limited context used, and the note explicitly leaves P closure and exhaustiveness outside the audited claim.
+- **auditor confidence:** high
+
+### `koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05`
+
+- **Note:** [`KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md`](../../docs/KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The audit covers only the algebraic sign erasure and generation-bundle Berry flatness of the specified Dirac/L-R coupling on the current A_min matrix surface; it does not establish physical readout or r-branch selection.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-koide_dirac_mass_forces_-069`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On the current A_min C3-circulant surface, D² yields a sign-blind singular-value readout while M(b)⊗σ₊ has b-independent Fourier generation eigenvectors and therefore zero generation-bundle Berry curvature.  _(class `A`)_
+- **chain closes:** True — The determinant identity, block-square identity, and fixed Fourier eigenvectors follow directly from the displayed matrices, while the retained signed-versus-singular authority supplies the general readout distinction. These facts support the narrowly stated route-pruning conclusion without requiring the open physical branch-selection bridge.
+- **rationale:** The load-bearing result is a genuine algebraic closure over retained-grade inputs, not a definition, renaming, tuned match, or external comparison. The runner actually performs symbolic determinant, block-square, and Fourier-eigenvector computations; its sampled readout checks are supplemented by the retained authority's general algebraic theorem. The note explicitly leaves READOUT_TO_BRANCH_SELECTION_BRIDGE open and does not overextend its bounded conclusion into physical selection of r=1 or exclusion of r=1/2.
 - **auditor confidence:** high
 
 ### `koide_dweh_cyclic_compression_note_2026-04-18`

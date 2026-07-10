@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_heat_kernel_native_rp_plane_character_positivity_2026_07_09.py
-runner_sha256: c936168f6122a4480b8335f1762503644c60f349044a38c82a515a70374157c0
+runner_sha256: ae41b968fb1c8f631412e7a2e68753ed319c4c0dee5ec704547fb45f23bfe5e6
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 10.62
+elapsed_sec: 10.51
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -12,14 +12,13 @@ companion runner for the 2026-07-09 narrow theorem note
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
-Part A -- H1: manifest strict positivity of c_lambda(t), with tail bounds
+Part A -- H1: manifest strict positivity of c_lambda(t)
 ----------------------------------------------------------------------------------------
   [PASS] A1: Z_N coefficients strictly positive (N=2..6, t in {0.3,1.0,2.5})
   [PASS] A2: U(1) coefficients strictly positive (|n|<=30, t in {0.5,1.5})
-  [PASS] A3: SU(2) coefficients strictly positive (2j<=30) + tail(t=1, 2j>24) tiny  (tail<= 1.538e-34)
+  [PASS] A3: SU(2) sampled coefficients strictly positive (2j<=30)
   [PASS] A4: SU(3) dimension/Casimir spot checks + c_fund(1)/d = exp(-2/3) alignment  (|c_fund(1)/d - e^(-2/3)|=0.0e+00)
   [PASS] A5: SU(3) coefficients strictly positive (p+q<=10, t in {1,2,3,4,6})
-  [PASS] A6: SU(3) truncation tails < 1e-10 at every (t, cut) used below  (t=1.0:cut16:1.3e-13; t=2.0:cut12:5.3e-19; t=3.0:cut10:2.4e-22; t=4.0:cut8:2.2e-21; t=6.0:cut8:3.7e-34)
 
 ----------------------------------------------------------------------------------------
 Part B -- H2 algebra: semigroup, normalization, realness, orthonormality
@@ -33,12 +32,12 @@ Part B -- H2 algebra: semigroup, normalization, realness, orthonormality
   [PASS] B7: Schur machinery at identity: s_(p,q)(1,1,1) = d_(p,q) for p+q<=6  (max dev=0.0e+00)
 
 ----------------------------------------------------------------------------------------
-Part C -- H4: pointwise positivity of K_t (certificates at printed t)
+Part C -- H4: pointwise-positivity boundary at printed t
 ----------------------------------------------------------------------------------------
   [PASS] C1: Z_N pointwise positivity, exact (N=2..6, t in {0.3,1.0,2.5})  (Z_2(t=0.3):4.512e-01; Z_4(t=0.3):6.718e-02)
   [PASS] C2: U(1) pointwise positivity (term-positive Gaussian rep; grid min > 0)  (t=0.5: min=3.667e-04; t=1.5: min=1.525e-01)
-  [PASS] C3: SU(2) strict-positivity certificate (grid + Lipschitz + tail)  (t=3.0: min=0.0948, err=1.87e-04; t=4.0: min=0.2636, err=9.81e-05)
-  [PASS] C4: SU(3) strict-positivity certificate (torus grid + Lipschitz + tail)  (t=4.0: min=0.4835, err=2.80e-02; t=6.0: min=0.8414, err=5.52e-03)
+  [PASS] C3: SU(2) finite-truncation grid is positive (support only)  (t=3.0: truncated-grid min=0.0948; t=4.0: truncated-grid min=0.2636)
+  [PASS] C4: SU(3) finite-truncation torus grid is positive (support only)  (t=4.0: truncated-grid min=0.4835; t=6.0: truncated-grid min=0.8414)
 
 ----------------------------------------------------------------------------------------
 Part D -- H2 cut factorization: chi(AB^dag) = sum_ij pi(A)_ij conj(pi(B)_ij)
@@ -60,7 +59,7 @@ Part E -- H3: integrated reflected Gram PSD with the HK weight
   [PASS] E6: SU(3) MC Gram PSD within MC tolerance (t=3.0, n=400k, seed 1)  (min eig=+1.43e-02, tol=2.2e-02, herm=7.3e-03, w_min=1.25e-02, ESS=114246)
 
 ========================================================================================
-TOTAL: PASS=28 FAIL=0
+TOTAL: PASS=27 FAIL=0
 ========================================================================================
 
 ----- stderr -----

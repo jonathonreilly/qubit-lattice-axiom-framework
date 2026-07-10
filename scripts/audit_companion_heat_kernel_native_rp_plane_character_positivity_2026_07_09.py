@@ -25,8 +25,8 @@ Setup (mirrors the Wilson temporal-gauge RP bridge note's carrier):
 Parts:
   A (H1): manifest strict positivity of c_lambda(t) for Z_N, U(1), SU(2),
      SU(3); SU(3) dimension/Casimir spot checks incl. the exp(-2/3)
-     convention alignment; superexponential truncation-tail bounds with
-     geometric-majorant guards.
+     convention alignment. These are implementation sanity checks; analytic
+     coefficient positivity follows from the displayed exponential formula.
   B (H2 algebra): coefficient-level semigroup c(s)c(t)/d = c(s+t) on all
      four groups; exact Z_N kernel-level convolution; Haar normalization
      (trivial coefficient = 1; quadrature integrals = 1); realness of K_t;
@@ -34,8 +34,8 @@ Parts:
      the Schur-polynomial character machinery); U(1) Poisson/Jacobi-theta
      identity; Schur(identity) = dimension.
   C (H4): pointwise positivity. Z_N exact; U(1) via the term-positive
-     Gaussian image sum; SU(2)/SU(3) grid + Lipschitz + truncation-tail
-     certificates at printed t values (H4 is not consumed by H3).
+     Gaussian image sum; SU(2)/SU(3) finite-truncation grid evidence at
+     printed t values (support only; H4 is not consumed by H3).
   D (H2 cut factorization): chi_lambda(A B^dag) = sum_ij pi_lambda(A)_ij *
      conj(pi_lambda(B)_ij) exactly, on seeded random pairs: Z_N all reps;
      SU(2) unitary symmetric-power reps j in {1/2,1,3/2,2}; SU(3)
@@ -205,33 +205,6 @@ def su3_torus_eigs(t1: np.ndarray, t2: np.ndarray) -> np.ndarray:
     x[..., 1] = np.exp(1j * t2)
     x[..., 2] = np.exp(-1j * (t1 + t2))
     return x
-
-
-def su2_tail_bound(t: float, jmax_twice_cut: int, extra: int = 40):
-    """Bound sum_{2j > cut} d^2 exp(-t C2/2) with a geometric-majorant guard."""
-    terms = []
-    for tw in range(jmax_twice_cut + 1, jmax_twice_cut + 1 + extra):
-        j = tw / 2.0
-        terms.append((tw + 1) ** 2 * math.exp(-t * j * (j + 1) / 2.0))
-    ratios_ok = all(terms[i + 1] < 0.5 * terms[i] for i in range(len(terms) - 1)
-                    if terms[i] > 0)
-    return sum(terms) + terms[-1], ratios_ok
-
-
-def su3_tail_bound(t: float, cut: int, extra: int = 30):
-    """Bound sum_{p+q > cut} d^2 exp(-t C2/2) with a geometric-majorant guard."""
-    level = []
-    for s in range(cut + 1, cut + 1 + extra):
-        tot = 0.0
-        for p in range(s + 1):
-            q = s - p
-            d = (p + 1) * (q + 1) * (p + q + 2) / 2.0
-            C2 = (p * p + q * q + p * q + 3 * p + 3 * q) / 3.0
-            tot += d * d * math.exp(-t * C2 / 2.0)
-        level.append(tot)
-    ratios_ok = all(level[i + 1] < 0.5 * level[i] for i in range(len(level) - 1)
-                    if level[i] > 0)
-    return sum(level) + level[-1], ratios_ok
 
 
 # ----------------------------------------------------------------------------
@@ -413,7 +386,7 @@ def mc_gram(group: str, t: float, n: int, seed: int, cut: int):
 # ----------------------------------------------------------------------------
 
 def part_a():
-    section("Part A -- H1: manifest strict positivity of c_lambda(t), with tail bounds")
+    section("Part A -- H1: manifest strict positivity of c_lambda(t)")
 
     ok = True
     detail = []
@@ -436,9 +409,7 @@ def part_a():
     for t in (1.0, 1.5, 3.0, 4.0):
         cs = [d * math.exp(-t * C2 / 2.0) for _j, d, C2 in su2_irreps(30)]
         ok = ok and min(cs) > 0.0
-    tail, guard = su2_tail_bound(1.0, 24)
-    check("A3: SU(2) coefficients strictly positive (2j<=30) + tail(t=1, 2j>24) tiny",
-          ok and guard and tail < 1e-12, f"tail<= {tail:.3e}")
+    check("A3: SU(2) sampled coefficients strictly positive (2j<=30)", ok)
 
     spot = {(1, 0): (3, 4.0 / 3.0), (0, 1): (3, 4.0 / 3.0), (1, 1): (8, 3.0),
             (2, 0): (6, 10.0 / 3.0), (3, 0): (10, 6.0), (2, 1): (15, 16.0 / 3.0),
@@ -460,16 +431,6 @@ def part_a():
         cs = [d * math.exp(-t * C2 / 2.0) for _p, _q, d, C2 in su3_irreps(10)]
         ok = ok and min(cs) > 0.0
     check("A5: SU(3) coefficients strictly positive (p+q<=10, t in {1,2,3,4,6})", ok)
-
-    ok = True
-    details = []
-    for t, cut in ((1.0, 16), (2.0, 12), (3.0, 10), (4.0, 8), (6.0, 8)):
-        tail, guard = su3_tail_bound(t, cut)
-        ok = ok and guard and tail < 1e-10
-        details.append(f"t={t}:cut{cut}:{tail:.1e}")
-    check("A6: SU(3) truncation tails < 1e-10 at every (t, cut) used below",
-          ok, "; ".join(details))
-
 
 def part_b():
     section("Part B -- H2 algebra: semigroup, normalization, realness, orthonormality")
@@ -564,7 +525,7 @@ def part_b():
 
 
 def part_c():
-    section("Part C -- H4: pointwise positivity of K_t (certificates at printed t)")
+    section("Part C -- H4: pointwise-positivity boundary at printed t")
 
     ok = True
     mins = []
@@ -596,14 +557,9 @@ def part_c():
         cut = 24
         K = su2_kernel_grid(th, tt, cut)
         margin = float(K.min())
-        L = sum(d * math.exp(-tt * C2 / 2.0) * (2 * j) * (2 * j + 1)
-                for j, d, C2 in su2_irreps(cut))
-        h = np.pi / (npts - 1)
-        tail, guard = su2_tail_bound(tt, cut)
-        err = L * h / 2.0 + tail
-        ok = ok and guard and margin - err > 0.0
-        detail.append(f"t={tt}: min={margin:.4f}, err={err:.2e}")
-    check("C3: SU(2) strict-positivity certificate (grid + Lipschitz + tail)",
+        ok = ok and margin > 0.0
+        detail.append(f"t={tt}: truncated-grid min={margin:.4f}")
+    check("C3: SU(2) finite-truncation grid is positive (support only)",
           ok, "; ".join(detail))
 
     ok = True
@@ -615,14 +571,9 @@ def part_c():
         x = su3_torus_eigs(t1, t2)
         K = su3_kernel_from_eigs(x, tt, cut)
         margin = float(K.min())
-        Lang = sum(d * d * (p + q) * math.exp(-tt * C2 / 2.0)
-                   for p, q, d, C2 in su3_irreps(cut))
-        h = 2.0 * np.pi / g
-        tail, guard = su3_tail_bound(tt, cut)
-        err = 2.0 * Lang * h / 2.0 + tail
-        ok = ok and guard and margin - err > 0.0
-        detail.append(f"t={tt}: min={margin:.4f}, err={err:.2e}")
-    check("C4: SU(3) strict-positivity certificate (torus grid + Lipschitz + tail)",
+        ok = ok and margin > 0.0
+        detail.append(f"t={tt}: truncated-grid min={margin:.4f}")
+    check("C4: SU(3) finite-truncation torus grid is positive (support only)",
           ok, "; ".join(detail))
 
 
@@ -731,8 +682,8 @@ def part_e():
     check("E4: U(1) quadrature Gram PSD (24-point grid, t in {0.5,1.5})",
           ok, "; ".join(details))
 
-    # t=3.0 matches a C3-certified kernel: w_min is then bounded below by a
-    # certified strictly positive kernel minimum, and the weight is light-tailed.
+    # The sampled Monte-Carlo weights remain positive at t=3.0. This is a
+    # finite-sample diagnostic, not a full-kernel pointwise-positivity proof.
     G, w, im, ess = mc_gram("su2", 3.0, 200_000, 0, 24)
     mineig, herm = psd_report(G)
     tol = max(3.0 * herm, 5e-3)

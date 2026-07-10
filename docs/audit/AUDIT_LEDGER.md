@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 28 |
-| unaudited | 1729 |
+| unaudited | 1728 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 33 |
-| ~~audited_conditional~~ | 125 |
+| ~~audited_conditional~~ | 126 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -71,12 +71,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1364 |
-| `audited_conditional` | 125 |
+| `audited_conditional` | 126 |
 | `audited_decoration` | 66 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 33 |
-| `unaudited` | 2074 |
+| `unaudited` | 2073 |
 
 | claim_type | count |
 |---|---:|
@@ -1608,6 +1608,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | F | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
@@ -17515,6 +17516,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The coefficient of the Hilbert-Schmidt projection onto the identity line is alpha = <I_color, M_color>_HS / <I_color, I_color>_HS = Tr_color M_color / N_c, giving rho_singlet = (|Tr_color M_color|^2 / N_c) / Tr_color[M_color^2].  _(class `A`)_
 - **chain closes:** True — The conclusion follows from ordinary finite-dimensional orthogonal projection and the supplied SU(N_c) generator normalization. The note explicitly does not identify this projection fraction with kappa_EW or any physical matching rule.
 - **rationale:** The load-bearing step is a direct Hilbert-Schmidt projection identity, not a definition, renaming, external comparator, or tuned numerical match. The only cited authority needed for P4 supplies the SU(N_c) normalization convention and is provided as retained-grade decoration under the rubric. The runner source performs exact rational arithmetic for the identity, traceless-generator witnesses, normalization checks, sum rule, trace-zero iff zero-singlet condition, and non-claim boundary, with no helper imports and no hard-coded contested physical coefficient.
+- **auditor confidence:** high
+
+### `rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12`
+
+- **Note:** [`RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md`](../../docs/RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact idempotence of two-sector pinching and the conditional algebra mapping independent, agreement-filtered registrations to x→x², r→2r², its inverse, and its fixed points; no physical registration-statistics rule was audited as derived.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00089-rd_bridge_anatomy_agreement_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Assuming independent repeated registrations and conditioning retained cases on agreement gives p_i' = p_i^2/(p_s^2+p_d^2), hence x maps to x^2 and r maps to 2r^2.  _(class `A`)_
+- **chain closes:** False — The algebra closes under the stated hypotheses, but the chain from retained inputs to a physical re-registration law does not. No cited authority derives independent repeated-registration statistics or the operational agreement-retention rule.
+- **rationale:** Issue: The retained map requires an explicit independent-composition premise and agreement selection that are not supplied by the cited authorities. Why this blocks: The runner defines the squared-weight update and verifies its algebraic consequences, but does not derive the joint statistics or selection operation from the framework. Repair target: Supply a retained statistics-layer bridge theorem deriving those operations and cite it directly. Claim boundary until fixed: Pinching idempotence, the conditional squared map, coordinate conversions, fixed points, and correlated negative control remain valid bounded algebra.
 - **auditor confidence:** high
 
 ### `rd_fixedness_is_arrow_invariant_on_the_retained_flow_family_bounded_note_2026-06-12`

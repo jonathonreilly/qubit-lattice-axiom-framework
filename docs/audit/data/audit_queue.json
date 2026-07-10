@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 393,
+    "critical": 392,
     "high": 265,
     "leaf": 754,
     "medium": 500
@@ -600,27 +600,33 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "observable_principle_record_scalar_map_no_go_note_2026-06-05",
-      "claim_scope": "The audit covers only the no-go against deriving a branch-probability or determinant-modulus-to-additive-scalar map from Record additivity alone.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "minimal_axioms"
+        "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31",
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "observable_principle_record_scalar_map_no_go_note_2026-06-05",
+        "observable_principle_from_axiom_note",
+        "post_record_count_probability_firewall_2026-06-06",
+        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
+        "record_outcome_observable_principle_canonical_proposal_note_2026-06-05"
       ],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.618,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 9.611,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_observable_principle_record_scalar_map_no_go_2026_06_05.py",
-      "transitive_descendants": 392
+      "runner_path": "scripts/observable_principle_p1_exponent_attack_2026_06_10.py",
+      "transitive_descendants": 390
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7267,36 +7273,6 @@
       "ready": false,
       "runner_path": "scripts/magnitude_reads_minimal_record_block_2026_06_06.py",
       "transitive_descendants": 392
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31",
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-        "observable_principle_record_scalar_map_no_go_note_2026-06-05",
-        "observable_principle_from_axiom_note",
-        "post_record_count_probability_firewall_2026-06-06",
-        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
-        "record_outcome_observable_principle_canonical_proposal_note_2026-06-05"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.611,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/observable_principle_p1_exponent_attack_2026_06_10.py",
-      "transitive_descendants": 390
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -57229,5 +57205,5 @@
     }
   ],
   "ready_count": 203,
-  "total_pending": 1912
+  "total_pending": 1911
 }

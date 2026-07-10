@@ -778,34 +778,35 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         else "(no helper runner imports detected)"
     )
 
-    # Substitute orchestrator-controlled fields before inserting any raw note,
-    # runner, helper, authority, or registry content. Otherwise a literal
-    # ``{{CLAIM_ID}}`` (etc.) inside evidence would be rewritten after the fact.
-    prompt = template
-    prompt = prompt.replace("{{CLAIM_ID}}", cid)
-    prompt = prompt.replace("{{NOTE_PATH}}", note_path)
-    prompt = prompt.replace("{{CLAIM_TYPE_HINT}}", claim_type_hint or "(none)")
-    prompt = prompt.replace("{{RUNNER_PATH}}", runner_path or "(none)")
-    prompt = prompt.replace(
-        "{{NO_GO_DISCIPLINE_REQUIRED}}", "true" if no_go_required else "false"
+    # Render every template token in one regex pass. Python's ``re.sub`` does
+    # not rescan replacement text, so literal template-looking strings inside
+    # notes, runner output/source, helper source, authorities, or registry
+    # context remain raw evidence instead of being expanded as another field.
+    replacements = {
+        "{{CLAIM_ID}}": cid,
+        "{{NOTE_PATH}}": note_path,
+        "{{CLAIM_TYPE_HINT}}": claim_type_hint or "(none)",
+        "{{RUNNER_PATH}}": runner_path or "(none)",
+        "{{NO_GO_DISCIPLINE_REQUIRED}}": "true" if no_go_required else "false",
+        "{{NO_GO_EVIDENCE_MANIFEST}}": evidence_manifest_text,
+        "{{NOTE_BODY}}": note_body,
+        "{{RUNNER_STDOUT}}": runner_stdout or "(no stdout captured)",
+        "{{RUNNER_SOURCE}}": runner_source or "(no source available)",
+        "{{HELPER_RUNNER_SOURCES}}": helper_runner_sources,
+        "{{FRAMEWORK_PREMISE_CONTEXT}}": premise_context,
+    }
+    foreach_pattern = (
+        r"\{\{FOREACH cited_authority IN CITED_AUTHORITIES\}\}"
+        r".*?\{\{ENDFOREACH\}\}"
     )
-    prompt = prompt.replace("{{NO_GO_EVIDENCE_MANIFEST}}", evidence_manifest_text)
+    token_pattern = "|".join(re.escape(token) for token in replacements)
+    render_re = re.compile(f"(?:{foreach_pattern})|(?:{token_pattern})", re.DOTALL)
 
-    # Replace the FOREACH ... ENDFOREACH block with the rendered cited authorities
-    foreach_re = re.compile(
-        r"\{\{FOREACH cited_authority IN CITED_AUTHORITIES\}\}.*?\{\{ENDFOREACH\}\}",
-        re.DOTALL,
-    )
-    # Use a lambda so cited_str isn't interpreted as a re replacement template
-    prompt = foreach_re.sub(lambda _m: cited_str, prompt)
+    def render_token(match: re.Match[str]) -> str:
+        token = match.group(0)
+        return replacements.get(token, cited_str)
 
-    # Raw packet content is inserted last and is never subject to another
-    # placeholder or FOREACH substitution pass.
-    prompt = prompt.replace("{{NOTE_BODY}}", note_body)
-    prompt = prompt.replace("{{RUNNER_STDOUT}}", runner_stdout or "(no stdout captured)")
-    prompt = prompt.replace("{{RUNNER_SOURCE}}", runner_source or "(no source available)")
-    prompt = prompt.replace("{{HELPER_RUNNER_SOURCES}}", helper_runner_sources)
-    prompt = prompt.replace("{{FRAMEWORK_PREMISE_CONTEXT}}", premise_context)
+    prompt = render_re.sub(render_token, template)
 
     # Append a tightening footer so we get clean JSON back. We DELIBERATELY
     # do not suppress the COMPUTE_REQUIRED escape — the audit-lane policy

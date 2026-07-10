@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1789 |
+| unaudited | 1788 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 95 |
+| ~~audited_conditional~~ | 96 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1350 |
-| `audited_conditional` | 95 |
+| `audited_conditional` | 96 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2134 |
+| `unaudited` | 2133 |
 
 | claim_type | count |
 |---|---:|
@@ -1508,6 +1508,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
@@ -2230,6 +2231,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using α_LM := α_bare/u_0 and α_s(v) := α_bare/u_0², α_LM² = (α_bare/u_0)² = α_bare·(α_bare/u_0²) = α_bare·α_s(v).  _(class `A`)_
 - **chain closes:** True — The scoped claim is purely algebraic and follows immediately from the two definitional equations plus positivity for the logarithm. No physical plaquette value, running bridge, PDG comparator, or retained dependency is needed for the theorem as stated.
 - **rationale:** The theorem closes inside its explicitly narrow scope: once α_LM and α_s(v) are defined as α_bare/u_0 and α_bare/u_0² over positive scalars, T1-T3 are forced by algebra. The runner's numeric retained-value checks are not load-bearing for the abstract theorem, and the source note explicitly excludes physical derivation or external comparator claims.
+- **auditor confidence:** high
+
+### `alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17`
+
+- **Note:** [`ALPHA_S_CMT_COUPLING_MAP_DERIVATION_THEOREM_NOTE_2026-05-17.md`](../../docs/ALPHA_S_CMT_COUPLING_MAP_DERIVATION_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The exact symbolic implication from the admitted CMT correlator identity and equal-kinematic-factor coupling conventions to alpha_eff = alpha_bare/u_0^{n_link}.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00025-alpha_s_cmt_coupling_map_der`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting (I2) and (I3) into (I1), cancelling the nonzero kinematic factor K_U, and solving gives alpha_eff = alpha_bare/u_0^{n_link}.  _(class `A`)_
+- **chain closes:** False — The algebra closes if (I1)-(I3) are assumed. However, the supplied YT_EW_COLOR_PROJECTION_THEOREM authority is a kappa-family no-go and does not state or prove the claimed CMT correlator identity (I1), so the result does not follow from the cited packet.
+- **rationale:** Issue: the load-bearing CMT identity is attributed to YT_EW_COLOR_PROJECTION_THEOREM.md, but that supplied authority contains only the EW kappa-family no-go and no such identity. Why this blocks: the runner correctly verifies downstream algebra but directly instantiates I1, so it cannot certify the missing upstream premise. Repair target: wire a retained one-hop authority that actually states and supports I1, or explicitly rescope I1 as an admitted premise. Claim boundary until fixed: the inverse-power map is a valid algebraic consequence conditional on I1-I3, not a derivation from the currently cited retained packet.
+- **open / conditional deps cited:**
+  - `YT_EW_COLOR_PROJECTION_THEOREM.md`
+  - `ALPHA_S_DERIVED_NOTE.md`
+  - `YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `alpha_s_derived_narrow_theorem_note_2026-05-10`

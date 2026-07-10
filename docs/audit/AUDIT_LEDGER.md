@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 928 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
-| unaudited | 1857 |
+| unaudited | 1856 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 58 |
+| ~~audited_conditional~~ | 59 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 18 |
 | `audited_clean` | 1328 |
-| `audited_conditional` | 58 |
+| `audited_conditional` | 59 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2202 |
+| `unaudited` | 2201 |
 
 | claim_type | count |
 |---|---:|
@@ -1485,6 +1485,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `acphilambda_k_even_registration_correction_registered_pattern_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2420,6 +2421,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** During layer-by-layer generation, low-asymmetry post-barrier candidate nodes are rejected, and the primary runner reproduces the sparse N=40/N=60 baseline-vs-threshold rows plus the N=80 sparse failure entry.  _(class `C`)_
 - **chain closes:** True — The primary runner and included helper source compute the graph generation, asymmetry persistence rule, propagation, binning, purity, S_norm, and gravity readouts without hard-coded result tables. Dense N=80/N=100 and layernorm-stacking rows are explicitly outside this audited scope.
 - **rationale:** Within the narrowed scope, the cached stdout matches the sparse rows quoted in the note, and the runner source shows those rows are produced by deterministic seeded computation rather than by printing constants. The transitive helper source is included and supplies the load-bearing readout implementation, so the earlier packet-completeness defect is repaired for the sparse table. The dense and layernorm sections remain scientific context only and do not affect this scoped verdict.
+- **auditor confidence:** high
+
+### `atomic_hydrogen_helium_probe_note`
+
+- **Note:** [`ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md`](../../docs/ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A standard-QM numerical scaffold reproduces the listed finite-grid hydrogen energies and evaluates the stated independent-electron and one-parameter variational helium benchmarks.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-atomic_hydrogen_helium_p-074`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Diagonalizing the textbook radial Schrödinger Hamiltonian on the stated finite grid and evaluating the one-parameter helium variational formula yields the reported agreement with analytic and experimental benchmarks.  _(class `D`)_
+- **chain closes:** False — The runner genuinely performs the hydrogen diagonalization and helium variational calculation, but the chain imports the textbook Hamiltonian, physical conversion constant, analytic Bohr spectrum, and experimental helium value without deriving or independently closing them. It also does not compute an exact helium result within any basis.
+- **rationale:** The source code constructs and diagonalizes the finite-difference hydrogen Hamiltonian rather than merely printing the cached values, and its output supports the tabulated finite-grid comparison. The helium runner evaluates only the stated textbook independent-electron and one-parameter variational formulas, with the experimental value embedded as an external comparator. Consequently this is a valid bounded standard-QM scaffold, not a class-(C) framework derivation, and the phrase claiming helium is exact within an available basis is unsupported.
 - **auditor confidence:** high
 
 ### `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29`

@@ -1336,6 +1336,10 @@ class AuditLintTest(unittest.TestCase):
             "`[example](docs/MINIMAL_AXIOMS_2026-06-29.md)`\n",
             "```md\n[example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n```\n",
             "<!-- [example](docs/MINIMAL_AXIOMS_2026-06-29.md) -->\n",
+            "\\[example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "> ~~~md\n> [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n> ~~~\n",
+            "> ```md\n> [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n> ````\n",
+            "    [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
         )
         for text in examples:
             with self.subTest(text=text):
@@ -1344,6 +1348,23 @@ class AuditLintTest(unittest.TestCase):
                 )
                 self.assertEqual(len(errors), 1)
                 self.assertIn("does not cite the current axiom memo", errors[0])
+
+    def test_front_door_rendered_links_in_continuations_count(self):
+        m = _import("audit_lint")
+        current = "docs/MINIMAL_AXIOMS_2026-06-29.md"
+        examples = (
+            "\\`[current](docs/MINIMAL_AXIOMS_2026-06-29.md)\\`\n",
+            "Paragraph\n    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "- item\n    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+        )
+        for text in examples:
+            with self.subTest(text=text):
+                self.assertEqual(
+                    m.front_door_axiom_pointer_errors(
+                        "README.md", text, current, []
+                    ),
+                    [],
+                )
 
     def test_front_door_superseded_markdown_link_fails(self):
         m = _import("audit_lint")

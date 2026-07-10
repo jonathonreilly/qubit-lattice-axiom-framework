@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 931 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1847 |
+| unaudited | 1846 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
-| ~~audited_renaming~~ | 23 |
+| ~~audited_renaming~~ | 24 |
 | ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -68,8 +68,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
-| `audited_renaming` | 23 |
-| `unaudited` | 2192 |
+| `audited_renaming` | 24 |
+| `unaudited` | 2191 |
 
 | claim_type | count |
 |---|---:|
@@ -1635,6 +1635,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | judicial_review | codex-gpt-5.6 | F | - |
@@ -4126,6 +4127,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** Averaging the per-momentum Bogoliubov lower bound and using W2 gives C_A >= (2 c_W^2 |m_L|^2/(beta C_H)) I_d(L), hence |m_L|^2 <= beta C_A C_H/(2 c_W^2 I_d(L)).  _(class `A`)_
 - **chain closes:** True — Within the stated W1-W4 hypotheses, W1, W3, and W4 give the per-mode lower bound on the anticommutator, and W2 turns the nonzero-momentum average into the displayed theorem bound. The d=1, d=2, and d>=3 IR threshold is covered by the retained_bounded cited authorities and matches the independent small-k comparison E_k ~ |k|^2.
 - **rationale:** The load-bearing step is a direct algebraic rearrangement of the four explicit finite-volume hypotheses with the stated unnormalized Fourier volume factors. The runner is not merely printing constants: it recomputes the finite lattice sums, checks the d=1 identity, monotonic/log behavior, bound monotonicity, and the symbolic rearrangement. The note explicitly excludes the broader claim that arbitrary continuous-symmetry Hamiltonians satisfy W1-W4, so the missing operator-construction theorem is outside this audited scope rather than a hidden dependency.
+- **auditor confidence:** high
+
+### `coarse_grained_exterior_law_helper_note_2026-04-14`
+
+- **Note:** [`COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md`](../../docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Implementation and numerical behavior, on the explicit 15^3 Dirichlet finite-rank fixture, of shell averaging, least-squares a/r projection, and the reported Einstein-residual reduction.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-coarse_grained_exterior_-051`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The module shell-averages the exact finite-rank field and then least-squares projects it onto the preselected effective law phi_eff(r) = a/r at a matching radius chosen from the scan.  _(class `E`)_
+- **chain closes:** False — The code reproduces the R_match = 5.0 numerical row, but it does not derive the exterior law: a/r is supplied as the fitting basis and the scan does not algorithmically derive a physically preferred matching radius. Neither cited authority derives the continuum 1/r asymptotic or the metric bridge.
+- **rationale:** Issue: the effective exterior law is introduced by projecting onto a predefined a/r ansatz, while the low Einstein residual follows from evaluating the corresponding isotropic Schwarzschild-form metric rather than deriving that metric from the lattice field. Why this blocks: the lattice authority explicitly leaves the 1/r asymptotic and GR/tensor completion out of scope, and the finite shell fit still has relative RMS 0.094 and maximum relative error 0.233 at R_match = 5.0. Repair target: derive the radial asymptotic and matching criterion from retained lattice inputs and explicit boundary conditions. Claim boundary until fixed: the runner validly documents a numerical projection construction and its reported residuals, but not an emergent or uniquely derived exterior law.
 - **auditor confidence:** high
 
 ### `color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06`

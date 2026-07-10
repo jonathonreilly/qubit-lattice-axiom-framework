@@ -3,7 +3,7 @@
     "critical": 393,
     "high": 265,
     "leaf": 755,
-    "medium": 512
+    "medium": 511
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -19784,35 +19784,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "coarse_grained_exterior_law_helper_note_2026-04-14",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "finite_rank_gravity_residual_helper_note_2026-04-14",
-        "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/_frontier_loader.py",
-        "scripts/frontier_finite_rank_gravity_residual.py",
-        "scripts/frontier_same_source_metric_ansatz_scan.py"
-      ],
-      "load_bearing_score": 8.615,
-      "note_path": "docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_coarse_grained_exterior_law.py",
-      "transitive_descendants": 97
     },
     {
       "audit_independence_required": "any_non_self",
@@ -57591,6 +57562,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 213,
-  "total_pending": 1925
+  "ready_count": 212,
+  "total_pending": 1924
 }

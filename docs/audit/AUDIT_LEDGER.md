@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 28 |
-| unaudited | 1728 |
+| unaudited | 1727 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -60,6 +60,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
 | `decoration_under_quark_route2_exact_readout_map_note_2026-04-19` | 1 |
+| `decoration_under_realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02` | 1 |
 | `decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
 | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 4 |
@@ -72,16 +73,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1364 |
 | `audited_conditional` | 126 |
-| `audited_decoration` | 66 |
+| `audited_decoration` | 67 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 33 |
-| `unaudited` | 2073 |
+| `unaudited` | 2072 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2027 |
-| `decoration` | 68 |
+| `bounded_theorem` | 2026 |
+| `decoration` | 69 |
 | `meta` | 353 |
 | `no_go` | 482 |
 | `open_gate` | 183 |
@@ -1693,6 +1694,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_c3_oriented_ward_splitter_support_note_2026-04-28` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `quark_route2_e_center_blindness_no_go_note_2026-06-17` | decoration | ~~audited_decoration~~ | `decoration_under_quark_route2_exact_readout_map_note_2026-04-19` | cross_family | codex-gpt-5.6 | A | `quark_route2_exact_readout_map_note_2026-04-19` |
 | `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08` | decoration | ~~audited_decoration~~ | `decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | cross_family | codex-gpt-5.5 | A | `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` |
+| `realized_kinetic_branch_d4_pattern_dichotomy_narrow_theorem_note_2026-07-03` | decoration | ~~audited_decoration~~ | `decoration_under_realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02` | cross_family | codex-gpt-5.6 | A | `realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02` |
 | `realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02` | decoration | ~~audited_decoration~~ | `decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | cross_family | codex-gpt-5.6 | A | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` |
 | `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
@@ -17595,6 +17597,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The runner genuinely verifies the stated finite-dimensional algebra and projector properties, but its record witness is constructed by inserting the K1 projector availability gap. The Minimal Axioms explicitly leave kinetic-branch structure downstream, while the sibling authority leaves the Admissibility interpretation undecided. Consequently, a neighbor-conditioned record governed by an independent admissibility rule has not been shown incompatible with K0.
 - **open / conditional deps cited:**
   - `REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md`
+- **auditor confidence:** high
+
+### `realized_kinetic_branch_d4_pattern_dichotomy_narrow_theorem_note_2026-07-03`
+
+- **Note:** [`REALIZED_KINETIC_BRANCH_D4_PATTERN_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-03.md`](../../docs/REALIZED_KINETIC_BRANCH_D4_PATTERN_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-03.md)
+- **claim_type:** `decoration`
+- **claim_scope:** For the parent surface's one-coefficient-per-direction C^2 representatives, proper-cubic covariance forces constant per-direction unital star-algebra dimension, yielding [1,1,1] for K0 and [2,2,2] for K1 without selecting either branch.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00090-realized_kinetic_branch_d4_p`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Proper-cubic covariance transports direction coefficients by signed unitary conjugation, so conjugation invariance of generated-algebra dimension and transitivity on the three axes imply d_1 = d_2 = d_3.  _(class `A`)_
+- **chain closes:** True — Signed unitary conjugation is a star-algebra isomorphism, and cubic-axis transitivity therefore forces equal dimensions. The single-Hermitian-generator classification in M_2(C), together with the parent representatives, then gives exactly the two stated patterns.
+- **rationale:** The mathematical chain is sound and uses only retained-grade or accepted-premise inputs. Its load-bearing content is nevertheless standard finite-dimensional star-algebra reasoning applied to the upstream D4 representative data and covariance structure; it introduces no external comparator or independently derived physical quantity. The runner supplies consistent finite-matrix checks and sharpness witnesses, but the headline result remains an algebraic corollary of the upstream discriminator.
+- **decoration parent:** `realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02`
 - **auditor confidence:** high
 
 ### `realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02`

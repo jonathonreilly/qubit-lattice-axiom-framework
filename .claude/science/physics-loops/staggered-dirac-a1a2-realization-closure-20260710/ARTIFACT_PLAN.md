@@ -14,7 +14,11 @@
   lanes.
 - Disposable full audit pipeline and strict lint passed; generated authority
   remained isolated and was discarded with the validation worktree.
+- Review PR
+  [#5125](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5125)
+  is open and unmerged.
 
 ## Remaining
 
-1. Push and open one review PR.
+Independent audit of the new `no_go` row is intentionally outside this science
+branch. No merge or audit verdict is part of this loop.

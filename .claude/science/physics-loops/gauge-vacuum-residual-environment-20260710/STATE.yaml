@@ -1,0 +1,46 @@
+loop_slug: gauge-vacuum-residual-environment-20260710
+mode: run
+started_at: 2026-07-10T00:00:00-04:00
+runtime_budget: current_authorized_deep_work_window
+checkpoint_interval: 30m
+deep_block: current_window
+cycle: 2
+science_block: 1
+branch: claude/science-fix/gauge_vacuum_plaquette_residual_environment_identification_t-7824208b
+target_claim_id: gauge_vacuum_plaquette_residual_environment_identification_theorem_note
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+active_route: selected_geometry_direct_environment_coefficient_and_geometry_no_go
+hard_residual: derive the stripped residual from the same unmarked Wilson integral, without inserting a positive diagonal witness or a single-link coefficient packet
+lock_mode: branch_local_degraded
+lock_detail: scripts/automation_lock.py resolves a stale /Users/jonreilly path and returned permission denied; the dedicated worktree and branch are the ownership boundary
+files_touched:
+  - .claude/science/physics-loops/gauge-vacuum-residual-environment-20260710/
+  - docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md
+  - docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_GEOMETRY_DEPENDENCE_NO_GO_NOTE_2026-07-10.md
+  - docs/GAUGE_VACUUM_PLAQUETTE_L2_PBC_ACTUAL_ENVIRONMENT_MC_BOUNDED_NOTE_2026-07-10.md
+  - scripts/frontier_gauge_vacuum_plaquette_environment_geometry_dependence_no_go_2026_07_10.py
+  - scripts/frontier_gauge_vacuum_plaquette_l2_pbc_environment_mc_bounded_2026_07_10.py
+  - outputs/frontier_gauge_vacuum_plaquette_environment_geometry_dependence_no_go_2026_07_10.txt
+  - outputs/frontier_gauge_vacuum_plaquette_l2_pbc_environment_mc_bounded_2026_07_10.txt
+open_imports:
+  - actual marked/unmarked Wilson mixed-kernel compression map
+  - finite spatial geometry and boundary condition attached to the target operator
+  - full multi-link Haar/intertwiner contraction or equivalent exact conditional expectation
+no_go_routes:
+  - generic positive symmetric diagonal witness
+  - normalized single-link Wilson coefficients relabeled as the multi-link environment
+  - link-orbit tying as an exact L_s=3 contraction
+  - a geometry-free residual environment coefficient sequence across finite Wilson surfaces
+trace_class: upstream_support
+reachability_to_target: supports
+review_disposition: pass
+pr_status: pending_commit_push_create
+next_exact_action: review the exact triality-filling proof and bounded Monte Carlo packet adversarially; then isolate the temporal mixed-kernel incidence map required to identify the stripped residual with the selected geometry's environment
+stop_condition: target obtains a passing proposed_retained certificate, or the current deep-work window ends after stretch attempt plus orthogonal fan-out with the sharpest reviewable artifact checkpointed

@@ -1,0 +1,26 @@
+==============================================================================
+WILSON RESIDUAL ENVIRONMENT: EXACT FINITE-GEOMETRY DEPENDENCE
+==============================================================================
+[PASS] standard periodic L_s=2 and L_s=3 Wilson spatial complexes are enumerated exactly
+       (links, plaquettes): L_s=2 -> (24,24), L_s=3 -> (81,81)
+[PASS] every plaquette boundary has two positive and two negative incidences
+[PASS] no L_s=2 signed active chain of weight <=2 fills the marked boundary modulo triality
+       exact signed-support enumeration
+[PASS] no L_s=3 signed active chain of weight <=4 fills the marked boundary modulo triality
+       exact meet-in-the-middle signed-support enumeration
+[PASS] the L_s=2 order-three triality filling is unique
+       the unique monomial is the oriented complement of the marked plaquette in its periodic 2x2 plane
+[PASS] an explicit three-plaquette L_s=2 sheet closes the marked boundary over the integers
+[PASS] an explicit five-plaquette L_s=3 cube cap closes the marked boundary over the integers
+[PASS] the L_s=2 attaining surface pairs every used link once in each orientation
+       one-link Haar orthogonality gives a nonzero closed fundamental sheet
+[PASS] the L_s=3 attaining surface pairs every used link once in each orientation
+       one-link Haar orthogonality gives a nonzero closed fundamental cube surface
+[PASS] the source note forbids witness injection and observed plaquette input
+[PASS] the parent note carries the geometry-indexed residual boundary
+
+Exact strong-coupling order certificate
+  L_s=2 PBC fundamental environment coefficient: first allowed order = 3
+  L_s=3 PBC fundamental environment coefficient: first allowed order = 5
+  consequence: one geometry-free rho_(1,0)^env(beta) cannot represent both
+SUMMARY: PASS=11 FAIL=0

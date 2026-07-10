@@ -432,9 +432,23 @@ def restore_audit_from_previous(
     source_required = no_go_discipline_gate.source_requires_no_go_discipline(
         note_path, note_body, new_row.get("claim_type")
     )
+    gate_blob = {
+        "claim_type": new_row.get("claim_type"),
+        "claim_scope": new_row.get("claim_scope"),
+        "chain_closes": new_row.get("chain_closes"),
+        "load_bearing_step": new_row.get("load_bearing_step"),
+        "chain_closure_explanation": new_row.get("chain_closure_explanation"),
+        "verdict": new_row.get("audit_status"),
+        "verdict_rationale": new_row.get("verdict_rationale"),
+        "notes_for_re_audit_if_any": new_row.get("notes_for_re_audit_if_any"),
+        "no_go_discipline": new_row.get("no_go_discipline"),
+    }
+    output_required = no_go_discipline_gate.output_requires_no_go_discipline(
+        gate_blob
+    )
     if (
         new_row.get("audit_status") == "audited_clean"
-        and source_required
+        and (source_required or output_required)
         and new_row.get("no_go_discipline") is None
     ):
         return None
@@ -442,17 +456,6 @@ def restore_audit_from_previous(
     # authority is deliberately not restorable under the current gate.
     if new_row.get("no_go_discipline") is not None:
         ledger_rows = rows or {str(new_row.get("claim_id") or ""): new_row}
-        gate_blob = {
-            "claim_type": new_row.get("claim_type"),
-            "claim_scope": new_row.get("claim_scope"),
-            "chain_closes": new_row.get("chain_closes"),
-            "load_bearing_step": new_row.get("load_bearing_step"),
-            "chain_closure_explanation": new_row.get("chain_closure_explanation"),
-            "verdict": new_row.get("audit_status"),
-            "verdict_rationale": new_row.get("verdict_rationale"),
-            "notes_for_re_audit_if_any": new_row.get("notes_for_re_audit_if_any"),
-            "no_go_discipline": new_row.get("no_go_discipline"),
-        }
         evidence_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
             new_row["no_go_discipline"]
         )

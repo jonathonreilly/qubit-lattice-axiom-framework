@@ -96,15 +96,15 @@ EXPLICIT_NEGATIVE_CLOSURE_RE = re.compile(
 )
 NEGATIVE_SUBJECT_CLOSURE_RE = re.compile(
     r"\b(?:(?:no|neither|zero)\s+"
-    r"(?:(?!(?:because|although|but|while|once|when|after|before|if|and|or|so|since|"
+    r"(?:(?!(?:because|although|but|while|once|when|after|before|if|and|so|since|as|whereas|"
     r"is|are|was|were|has|have|had|remains?|exists?|required?|needed|introduced)\b)"
     r"[\w-]+\s+){1,10}|"
     r"none\s+of\s+(?:the\s+)?"
-    r"(?:(?!(?:because|although|but|while|once|when|after|before|if|and|or|so|since|"
+    r"(?:(?!(?:because|although|but|while|once|when|after|before|if|and|so|since|as|whereas|"
     r"is|are|was|were|has|have|had|remains?|exists?|required?|needed|introduced)\b)"
     r"[\w-]+\s+){1,10}|"
     r"nothing\s+"
-    r"(?:(?!(?:because|although|but|while|once|when|after|before|if|and|or|so|since|"
+    r"(?:(?!(?:because|although|but|while|once|when|after|before|if|and|so|since|as|whereas|"
     r"is|are|was|were|has|have|had|remains?|exists?|required?|needed|introduced)\b)"
     r"[\w-]+\s+){0,8})"
     r"(?:(?:can\s+|is\s+able\s+to\s+|are\s+able\s+to\s+)?"
@@ -116,10 +116,14 @@ NEGATIVE_SUBJECT_CLOSURE_RE = re.compile(
     re.IGNORECASE,
 )
 NO_EXISTENCE_ASSERTION_RE = re.compile(
-    r"\bno\s+"
-    r"(?:(?!(?:because|although|but|while|once|when|after|before|if)\b)[\w-]+\s+){0,8}"
-    r"(?:routes?|[\w-]*factorizations?|maps?|carriers?|solutions?|constructions?|"
-    r"methods?|operators?|primitives?|theorems?)\s+exists\b",
+    r"\bno\s+(?P<subject>"
+    r"(?:(?!(?:because|although|but|while|once|when|after|before|if|and|so|since|as|whereas|"
+    r"is|are|was|were|has|have|had|remains?|required?|needed|introduced)\b)"
+    r"[\w-]+\s+){1,10})exist(?:s)?\b",
+    re.IGNORECASE,
+)
+BOUNDARY_ABSENCE_SUBJECT_RE = re.compile(
+    r"\b(?:walls?|admissions?|obstructions?|boundar(?:y|ies))\b",
     re.IGNORECASE,
 )
 INABILITY_CLOSURE_RE = re.compile(
@@ -902,12 +906,23 @@ def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] |
     return manifest
 
 
+def _has_governed_no_existence(text: str) -> bool:
+    return any(
+        not BOUNDARY_ABSENCE_SUBJECT_RE.search(match.group("subject"))
+        for match in NO_EXISTENCE_ASSERTION_RE.finditer(text)
+    )
+
+
 def _has_negative_boundary_assertion(text: str) -> bool:
-    cleaned = NEGATED_NEGATIVE_ASSURANCE_RE.sub("", text)
+    # Inline Markdown/TeX delimiters are presentation, not grammar. Removing
+    # them lets `kappa_EW`, `$Z$`, and route labels such as `(S1)-(S3)` use the
+    # same governed subject rules as plain prose.
+    normalized = re.sub(r"[`*_~$(){}\[\]]", "", text)
+    cleaned = NEGATED_NEGATIVE_ASSURANCE_RE.sub("", normalized)
     if (
         EXPLICIT_NEGATIVE_CLOSURE_RE.search(cleaned)
         or NEGATIVE_SUBJECT_CLOSURE_RE.search(cleaned)
-        or NO_EXISTENCE_ASSERTION_RE.search(cleaned)
+        or _has_governed_no_existence(cleaned)
         or INABILITY_CLOSURE_RE.search(cleaned)
         or BOUNDARY_SUBJECT_NEGATIVE_RE.search(cleaned)
     ):

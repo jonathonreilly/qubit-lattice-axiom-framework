@@ -2560,6 +2560,19 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "No compute frontier closes the structural gap.",
             "No published path supplies the missing selector.",
             "No retained operator determines the readout.",
+            "No local observable exists to threshold on.",
+            "No `kappa_EW` selector exists.",
+            "No `Z`-valued additive label exists.",
+            "No retained theorem or method closes the boundary.",
+            "No local or global route closes the obstruction.",
+            "None of (S1)-(S3) supplies the missing direction.",
+            "No solutions exist.",
+            "No viable routes exist.",
+            "No carriers exist.",
+            "No tensor factorizations exist.",
+            "No methods exist.",
+            "No operators exist.",
+            "No theorems exist.",
         ):
             with self.subTest(body=body):
                 self.assertTrue(
@@ -2608,6 +2621,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "Nothing further is required because the theorem closes the remaining boundary.",
             "No obstruction exists after the exact construction.",
             "No wall exists because the identity closes it.",
+            "No admission affects the proof as the theorem closes the wall.",
         ):
             with self.subTest(rationale=rationale):
                 self.assertFalse(

@@ -45,8 +45,9 @@ Within that supplier chain, the two intermediate authorities named by the
 ledger scope are cited here as direct dependency edges. The matter-assignment
 authority is
 [`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md)
-(carried in the current ledger as algebraic decoration under its retained
-consolidation parent `graph_first_su3_integration_note`), which splits the
+(carried as algebraic decoration under its consolidation parent
+`graph_first_su3_integration_note`; consult the pipeline-derived live ledger
+for current dependency-chain standing), which splits the
 LH-doublet sector into the SU(3)-fundamental `(2,3)` block and SU(3)-singlet
 `(2,1)` block used by B1. The alpha=1/3 normalization authority is
 [`HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md),
@@ -145,7 +146,7 @@ returned `missing_dependency_edge`: the note named the matter-assignment and
 alpha=1/3 normalization authorities in prose but carried no direct dependency
 edges to them. The Result section now links both authorities directly, the
 Boundary section carries the dated downstream-hygiene line, and the runner
-pins both edges and both authority statuses. No claim content changed.
+pins both edges and pipeline-derived chain closure. No claim content changed.
 
 ## Verification
 
@@ -158,8 +159,8 @@ The runner checks:
 - the ABJ bridge now cites this supplier note and no longer presents P-HY as
   an unsupported declared premise for B1;
 - the direct L2 matter-assignment and L3 alpha=1/3 normalization dependency
-  edges are present in this note, and their ledger rows carry retained-grade
-  status (for the L2 decoration row: a retained-grade consolidation parent);
+  edges are present in this note, and the pipeline reports chain-satisfying
+  dependency closure (for L2, through its consolidation parent);
 - the B1 anomaly traces are recomputed exactly over rational numbers;
 - branch/file-scope hygiene is enforced by review tooling rather than claimed
   by the science runner.

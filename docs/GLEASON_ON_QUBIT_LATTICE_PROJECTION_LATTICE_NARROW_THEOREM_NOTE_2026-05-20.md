@@ -243,7 +243,7 @@ applied to the framework's specific algebra.
 **Upstream framework dependencies** (load-bearing; markdown links):
 
 - [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — live axiom memo: per-site `M_2(ℂ)` possibility domain (Qubit) + `Z^3` substrate (Lattice)
-- [`QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md`](QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md) — joint tensor carrier `H_Λ = ⊗_{x ∈ Λ} ℂ²` for finite `Λ`, derived from the live memo plus a named minimality selection
+- [`QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md`](QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md) — joint tensor carrier `H_Λ = ⊗_{x ∈ Λ} ℂ²` for finite `Λ`, bounded by the supplied commuting joint presentation and the named `m = 1` minimality selection
 
 **Upstream standard-math imports** (named non-derivation):
 

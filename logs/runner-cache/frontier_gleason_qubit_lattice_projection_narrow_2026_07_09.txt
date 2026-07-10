@@ -3,7 +3,7 @@ runner: scripts/frontier_gleason_qubit_lattice_projection_narrow_2026_07_09.py
 runner_sha256: 24533765271e2cabb5f148be16207f5e408372dc143102a92d5c7a46b86a90e2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 [PASS] A1 raw trace-form needle

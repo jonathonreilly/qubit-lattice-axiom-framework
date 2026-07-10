@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 925 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1758 |
+| unaudited | 1757 |
 | audit_in_progress | 8 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 135 |
+| ~~audited_conditional~~ | 136 |
 | ~~audited_failed~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1339 |
-| `audited_conditional` | 135 |
+| `audited_conditional` | 136 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 32 |
-| `unaudited` | 2105 |
+| `unaudited` | 2104 |
 
 | claim_type | count |
 |---|---:|
@@ -1536,6 +1536,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7945,6 +7946,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the explicitly instantiated spinor matrices and positive-mass-shell differential operators, the Poincare commutators close with [K^i,K^j] = -i eps^{ijk} J^k, while the mass shell, invariant measure, CAR-relabeled lower bound, and bispinor numerator covariance satisfy their stated identities.  _(class `A`)_
 - **chain closes:** True — The runner explicitly constructs the gamma matrices, Lie-algebra representations, differential operators, boosts, Hamiltonians, and bispinor numerators and evaluates the claimed identities with nontrivial wrong-sign controls. These computations close the deliberately bounded claim without importing fitted values or asserting the excluded analytic and reconstruction theorems.
 - **rationale:** All eight runner checks are substantive algebraic or analytic-identity checks on explicitly instantiated objects, rather than printed constants, cross-note imports, external comparisons, or tuned numerical matches. The source and runner agree on the bounded scope, and the observed PASS=8 result is supported by the code paths shown. The result supplies no proof of essential self-adjointness, exponentiation, full spin-tensored boost domains, OS reconstruction, spin-statistics, or emergence from the lattice framework.
+- **auditor confidence:** high
+
+### `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07`
+
+- **Note:** [`FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md`](../../docs/FREE_DIRAC_WIGNER_ACTION_STRONG_CONTINUITY_BRIDGE_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Formal strong-continuity extension for the stated free massive one-particle Wigner action, conditional on a continuous standard-boost section and a consistent spin-cover lift.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00029-free_dirac_wigner_action_str`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For compactly supported smooth psi, the phase, Lorentz pullback, and SU(2) carrier vary pointwise continuously near the identity and are dominated on a common compact support; dominated convergence gives ||U(a,Lambda)psi-psi|| -> 0.  _(class `A`)_
+- **chain closes:** False — The packet does not define or prove continuity of the standard-boost section L(p), nor specify the spin-cover group needed to make the spin-1/2 D(W) single-valued. The runner tests a 1+1 scalar action and independent same-axis SU(2) matrices rather than the coupled full 3+1 Wigner map.
+- **rationale:** The retained-bounded companion legitimately supplies positive-mass-shell preservation, invariant measure, and bounded Wigner-rotation/SU(2) checks. It does not supply a continuous standard-boost section or the spin-cover lift required for the asserted full action, so pointwise continuity of D(W(Lambda,Lambda^{-1}p)) is assumed rather than established. The runner's density-extension guard is hard-coded, and its numerical tests do not exercise the full momentum-dependent 3+1 Wigner cocycle.
 - **auditor confidence:** high
 
 ### `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08`

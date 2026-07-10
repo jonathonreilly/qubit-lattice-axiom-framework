@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1746 |
+| unaudited | 1745 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 122 |
+| ~~audited_conditional~~ | 123 |
 | ~~audited_failed~~ | 13 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 15 |
 | `audited_clean` | 1355 |
-| `audited_conditional` | 122 |
+| `audited_conditional` | 123 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2093 |
+| `unaudited` | 2092 |
 
 | claim_type | count |
 |---|---:|
@@ -1573,6 +1573,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_r_polarization_orbit_quotient_gate_sharpening_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `kreality_predicate_one_shared_atom_one_consumer_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -13541,6 +13542,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Substituting the explicitly constructed canonical dilation into the Kraus formula gives K_r = sum_{r'} P_{r'} delta_{r,r'} = P_r.  _(class `A`)_
 - **chain closes:** True — The projection identities and completeness relation make the constructed map an isometry, which extends to a unitary in finite dimension. Taking the apparatus matrix element then algebraically yields K_r = P_r.
 - **rationale:** The narrow conclusion follows directly from the explicit canonical isometry and the standard Kraus extraction formula, without an imported open bridge or numerical input. The accepted qubit premise is sufficient for the finite-dimensional setting, while the projective-measurement relations are stated and used correctly. The broader sentence claiming that arbitrary apparatus rotations V_A preserve the same labeled POVM is not generally correct with a fixed readout basis, but that statement is not load-bearing for the proved canonical result or the analyzed system-unitary twists with V_A equal to the identity.
+- **auditor confidence:** high
+
+### `luders_rule_from_composition_consistency_note_2026-05-20`
+
+- **Note:** [`LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`](../../docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite-dimensional, positive-probability claim that trace/effect probabilities, U1–U4, and the cited compression and canonical-instrument results uniquely force normalized projective and Kraus record updates.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00001-luders_rule_from_composition`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** By taking the sequential joint effect to be M_{P,E}=PEP, U3 and trace duality over all effects force σ|_P=PσP/Tr(PσP), with the note asserting that the PEP bridge discharges the choice of joint effect.  _(class `A`)_
+- **chain closes:** False — The missing step is a retained theorem selecting M_{P,E}=PEP, or equivalently the canonical Lüders instrument, as the physical sequential-record composition. The cited PEP bridge proves algebraic validity but not that selection or instrument uniqueness.
+- **rationale:** Issue: Step 1 assumes the joint sequential effect M_{P,E}=PEP, while the cited PEP theorem establishes only that this is a valid compression, not that U1–U4 uniquely select it. Why this blocks: U3 is a probability factorization once an instrument is supplied, and the canonical K=P authority explicitly disclaims physical instrument uniqueness. Repair target: supply a retained measurement/instrument-selection theorem deriving the sequential effect and selective update from approved premises, or narrow the claim to a consequence conditional on a supplied Lüders instrument. Claim boundary until fixed: PEP positivity, trace cyclicity, canonical-frame K=P, and the normalized update formula under a supplied Lüders instrument remain valid bounded support.
+- **open / conditional deps cited:**
+  - `LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`
+  - `RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05`

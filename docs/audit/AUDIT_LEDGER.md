@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 947 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 27 |
-| unaudited | 1741 |
+| unaudited | 1740 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 120 |
+| ~~audited_conditional~~ | 121 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1361 |
-| `audited_conditional` | 120 |
+| `audited_conditional` | 121 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 32 |
-| `unaudited` | 2086 |
+| `unaudited` | 2085 |
 
 | claim_type | count |
 |---|---:|
@@ -1581,6 +1581,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_eq_3delta_identity_note_2026-04-21` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `koide_r_half_durability_stationarity_conditional_chain_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_r_polarization_orbit_quotient_gate_sharpening_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
+| `kreality_predicate_one_shared_atom_one_consumer_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -12806,6 +12807,23 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The qubit-lattice algebra A_Lambda = tensor_x M_2(C) is finite-dimensional M_d(C), so the retained single-convention Kraus-Choi correspondence applies directly to finite-region CPTP maps on A_Lambda.  _(class `B`)_
 - **chain closes:** True — The current source no longer relies on the mixed-normalization convention; it routes through the retained reconciliation theorem, while minimal_axioms supplies the finite M2(C) per-site qubit algebra and Z3 finite-region substrate. The thermodynamic-limit and record-dynamics applications are explicitly out of scope.
 - **rationale:** The load-bearing finite-region theorem closes from two wired inputs: the retained single-convention Kraus-Choi normalization row and the minimal qubit-lattice algebra premise. The runner verifies the source markers, the normalized/unnormalized inverse factors, the Choi PSD/TP checks on a concrete CPTP map, and finite-region dimensions d=2^|Lambda|; it also checks that omitting the normalized-convention d factor fails. Residual risk is outside the audited scope: arbitrary infinite-volume channels and any specific record-formation CPTP identification remain separate lanes.
+- **auditor confidence:** high
+
+### `kreality_predicate_one_shared_atom_one_consumer_bounded_note_2026-06-12`
+
+- **Note:** [`KREALITY_PREDICATE_ONE_SHARED_ATOM_ONE_CONSUMER_BOUNDED_NOTE_2026-06-12.md`](../../docs/KREALITY_PREDICATE_ONE_SHARED_ATOM_ONE_CONSUMER_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A dependency/content audit on the supplied Hermitian C3-circulant surface and the two cited consumer chains, without deriving or adopting K-reality or closing the physical theta readout identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00077-kreality_predicate_one_share`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Among the two named chains, the theta-side registrability argument does not consume the coupling K-reality predicate, whereas Koide partition selection consumes it through the singlet/doublet degeneracy of a K-real C3-invariant coupling.  _(class `B`)_
+- **chain closes:** True — Within this bounded two-chain scope, the supplied algebra and cited notes establish that K-reality selects the Koide two-sector partition while the theta-side determinant-character algebra uses different premises. This does not establish K-reality itself or an unconditional physical theta readout bridge.
+- **rationale:** The runner genuinely constructs the C3 matrices and verifies the K-even/K-odd decomposition, determinant formula, and singlet/doublet partition; it is not merely printing expected results. Its novel consumer-count conclusion is nevertheless a cross-note dependency verification, and the cited authorities explicitly leave K-reality supplied rather than derived and the physical mass-readout identification open. The result is therefore sound only as the stated bounded conditional dependency claim.
+- **open / conditional deps cited:**
+  - `FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md`
+  - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+  - `STRONG_CP_THETA_ZERO_NOTE.md`
 - **auditor confidence:** high
 
 ### `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02`

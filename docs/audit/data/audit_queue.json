@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 389,
-    "high": 269,
+    "high": 268,
     "leaf": 744,
     "medium": 501
   },
@@ -153,12 +153,12 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
-      "claim_scope": null,
+      "claim_scope": "Cross-note wiring of the ABJ B1 left-handed input to Y(Q_L)=+1/3 and Y(L_L)=-1, together with exact evaluation of the five displayed anomaly traces; no full-spectrum or remaining-bridge closure was audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
@@ -166,11 +166,11 @@
         "hypercharge_identification_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [],
       "load_bearing_score": 11.337,
       "note_path": "docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py",
       "transitive_descendants": 1292
@@ -373,19 +373,19 @@
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "claim_id": "yt_ew_m_residual_note_2026-05-02",
       "claim_scope": "CMT scalar factorization scales the singlet and adjoint Fierz channels uniformly by u_0^2, so CMT alone cannot select the adjoint channel over the singlet channel.",
       "claim_type": "no_go",
       "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": "disagreement",
       "deps": [
         "ew_current_fierz_channel_decomposition_note_2026-05-01"
       ],
       "direct_in_degree": 3,
-      "effective_status": "retained_no_go",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 10.609,
       "note_path": "docs/YT_EW_M_RESIDUAL_NOTE_2026-05-02.md",
@@ -393,31 +393,6 @@
       "ready": true,
       "runner_path": "scripts/yt_ew_m_residual_channel_check.py",
       "transitive_descendants": 551
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "ew_current_matching_rule_open_gate_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "yt_ew_m_residual_note_2026-05-02"
-      ],
-      "direct_in_degree": 17,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 17.606,
-      "note_path": "docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_ew_current_matching_rule_no_go.py",
-      "transitive_descendants": 550
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -603,24 +578,24 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
-      "claim_scope": null,
+      "claim_scope": "On a Z^3 x Z_tau quadratic kinetic surface, spatial signed-permutation symmetry and time parity permit independent temporal and spatial kinetic coefficients; spatial cubic and quartic-artifact checks alone therefore do not establish SO(4) covariance.",
       "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "kinetic_isotropy_primitive"
       ],
       "direct_in_degree": 12,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 14.676,
       "note_path": "docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_spatial_cubic_time_anisotropy_gate_2026_06_06.py",
       "transitive_descendants": 408
@@ -840,17 +815,17 @@
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "claim_id": "newton_law_derived_note",
       "claim_scope": "Given the supplied scalar kernel G(r)=1/(4 pi r) and formal source-linearity phi=M G, the note proves the inverse-square scalar gradient magnitude |grad phi|=M/(4 pi r^2), while making no physical force-law claim.",
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": "disagreement",
       "deps": [],
       "direct_in_degree": 15,
-      "effective_status": "retained_bounded",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 13.629,
       "note_path": "docs/NEWTON_LAW_DERIVED_NOTE.md",
@@ -5734,6 +5709,31 @@
       "ready": false,
       "runner_path": "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py",
       "transitive_descendants": 554
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "ew_current_matching_rule_open_gate_note_2026-05-03",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "ew_current_fierz_channel_decomposition_note_2026-05-01",
+        "yt_ew_m_residual_note_2026-05-02"
+      ],
+      "direct_in_degree": 17,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 17.606,
+      "note_path": "docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_ew_current_matching_rule_no_go.py",
+      "transitive_descendants": 550
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -11876,12 +11876,12 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-      "claim_scope": null,
+      "claim_scope": "The specified free U=1 staggered action has a pointwise momentum-space continuum propagator with SO(4) bispinor covariance, while its scalar spectrum Delta(p) has the stated O(a^2), ell=4 hypercubic anisotropy.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
@@ -11891,48 +11891,23 @@
         "cpt_exact_note"
       ],
       "direct_in_degree": 13,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [],
       "load_bearing_score": 11.992,
       "note_path": "docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py",
       "transitive_descendants": 44
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lattice_nn_light_cone_note",
-        "kinetic_isotropy_primitive"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.709,
-      "note_path": "docs/PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_per_plaquette_from_adjacency_license_2026_06_09.py",
-      "transitive_descendants": 36
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
+      "audit_status": "audited_failed",
       "blocker": null,
       "claim_id": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-      "claim_scope": null,
+      "claim_scope": "The asserted independence of the Koide doublet occupancy/weight class from the enumerated Record/Koide constraints, including the conditional orbit-occupancy map to r=1/2 and Q=2/3.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
@@ -11943,14 +11918,38 @@
         "realized_state_primitive"
       ],
       "direct_in_degree": 10,
-      "effective_status": "unaudited",
+      "effective_status": "audited_failed",
       "helper_runner_paths": [],
       "load_bearing_score": 9.807,
       "note_path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_failed",
       "ready": true,
       "runner_path": "scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py",
       "transitive_descendants": 27
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.892,
+      "note_path": "docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09.py",
+      "transitive_descendants": 20
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -18376,30 +18375,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_theta12_theta13_dcp_predictions_narrow.py",
-      "transitive_descendants": 20
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.892,
-      "note_path": "docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09.py",
       "transitive_descendants": 20
     },
     {
@@ -35654,33 +35629,6 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "delta_magnitude_reduces_to_massless_gravity_scale_narrow_theorem_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "newton_law_derived_note",
-        "scale_reference_primitive",
-        "staggered_self_consistent_two_body_note_2026-04-11",
-        "flavor_einselection_2sector_modulo_kreality_2026-06-02"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/DELTA_MAGNITUDE_REDUCES_TO_MASSLESS_GRAVITY_SCALE_NARROW_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/delta_magnitude_massless_gravity_scale_runner.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
@@ -39040,6 +38988,33 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_connes_kreimer_bridge_16fold_blocking_no_go.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "delta_magnitude_reduces_to_massless_gravity_scale_narrow_theorem_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "newton_law_derived_note",
+        "scale_reference_primitive",
+        "staggered_self_consistent_two_body_note_2026-04-11",
+        "flavor_einselection_2sector_modulo_kreality_2026-06-02"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/DELTA_MAGNITUDE_REDUCES_TO_MASSLESS_GRAVITY_SCALE_NARROW_THEOREM_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/delta_magnitude_massless_gravity_scale_runner.py",
       "transitive_descendants": 1
     },
     {
@@ -56981,6 +56956,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 165,
-  "total_pending": 1903
+  "ready_count": 163,
+  "total_pending": 1902
 }

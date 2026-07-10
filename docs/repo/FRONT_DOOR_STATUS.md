@@ -29,16 +29,16 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3733 |
-| Applied audit verdicts | 1613 |
-| Retained-grade rows, including boxed decorations | 1404 |
+| Applied audit verdicts | 1617 |
+| Retained-grade rows, including boxed decorations | 1403 |
 | Retained positive theorems | 196 |
-| Retained no-go rows | 212 |
+| Retained no-go rows | 211 |
 | Retained bounded rows | 934 |
 | Boxed decorations under retained parents | 62 |
 | Open gates | 27 |
-| Unaudited rows | 1760 |
+| Unaudited rows | 1755 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 118 |
+| Audited conditional rows | 120 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 10 |
@@ -50,17 +50,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1903 |
-| Ready rows | 165 |
+| Total pending rows | 1902 |
+| Ready rows | 163 |
 | Cycle-break targets | 10 |
 | Critical pending | 389 |
-| High pending | 269 |
+| High pending | 268 |
 | Medium pending | 501 |
 | Leaf pending | 744 |
 
 Next ready rows by queue order:
 
-- [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; unaudited
+- [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
 - [`yt_zero_import_authority_note`](../../docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md) - critical; non_terminal_conditional
 - [`yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md) - critical; non_terminal_conditional
 - [`dm_neutrino_bosonic_normalization_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md) - critical; non_terminal_conditional
@@ -74,7 +74,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **424**.
+- Non-retained-grade cited rows in publication tables: **426**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -83,11 +83,11 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | medium | `unaudited` | 89 |
 | high | `audited_conditional` | 7 |
 | critical | `audited_conditional` | 4 |
+| critical | `audit_in_progress` | 3 |
 | medium | `audited_conditional` | 3 |
 | medium | `open_gate` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_failed` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `retained_pending_chain` | 1 |
 | high | `open_gate` | 1 |
 

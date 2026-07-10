@@ -1,13 +1,13 @@
 # Audit Queue
 
-**Total pending:** 1878
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 157
+**Total pending:** 1883
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 160
 
 By criticality:
 - `critical`: 382
 - `high`: 268
-- `medium`: 496
-- `leaf`: 732
+- `medium`: 497
+- `leaf`: 736
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -29,13 +29,13 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 12 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | non_terminal_conditional | critical | 415 | 10.70 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_axis_alignment.py` |
 | 13 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | non_terminal_conditional | critical | 411 | 12.69 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 14 | `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10` | bounded_theorem | non_terminal_conditional | critical | 398 | 9.64 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_p1_exponent_attack_2026_06_10.py` |
-| 15 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | non_terminal_conditional | critical | 398 | 9.14 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_local_finite_atom_availability_2026_06_17.py` |
+| 15 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | bounded_theorem | unaudited | critical | 398 | 9.14 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_local_finite_atom_availability_2026_06_17.py` |
 | 16 | `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17` | bounded_theorem | non_terminal_conditional | critical | 394 | 9.13 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py` |
 | 17 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | non_terminal_conditional | critical | 394 | 9.13 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py` |
 | 18 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | non_terminal_conditional | critical | 318 | 11.32 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_higgs_mass_status_audit.py` |
 | 19 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | non_terminal_conditional | critical | 284 | 9.15 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py` |
 | 20 | `confinement_string_tension_note` | bounded_theorem | non_terminal_conditional | critical | 114 | 18.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_confinement_string_tension.py` |
-| 21 | `newton_law_derived_note` | bounded_theorem | non_terminal_conditional | critical | 69 | 13.63 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/newton_law_potential_kernel_scope_check.py` |
+| 21 | `newton_law_derived_note` | bounded_theorem | non_terminal_conditional | critical | 70 | 13.65 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/newton_law_potential_kernel_scope_check.py` |
 | 22 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1290 | 12.33 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
 | 23 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1286 | 40.33 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
 | 24 | `s3_time_spacetime_tensor_primitive_note` | bounded_theorem | unaudited | critical | 1005 | 12.47 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_spacetime_tensor_primitive.py` |

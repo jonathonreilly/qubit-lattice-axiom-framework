@@ -14985,6 +14985,10 @@
       "to": "gauge_scalar_temporal_completion_theorem_note"
     },
     {
+      "from": "gauge_sd_loop_equation_beta_coupled_plaquette_bracket_note_2026-07-10",
+      "to": "gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06"
+    },
+    {
       "from": "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
       "to": "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
     },
@@ -16863,6 +16867,14 @@
     {
       "from": "gravity_cosmology_tower_lambda_spectral_bridge_theorem_note_2026-04-25",
       "to": "cosmological_constant_spectral_gap_identity_theorem_note"
+    },
+    {
+      "from": "gravity_emergent_force_transverse_noncentrality_structure_theorem_note_2026-07-09",
+      "to": "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07"
+    },
+    {
+      "from": "gravity_emergent_force_transverse_noncentrality_structure_theorem_note_2026-07-09",
+      "to": "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11"
     },
     {
       "from": "gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16",
@@ -26213,6 +26225,14 @@
       "to": "minimal_axioms"
     },
     {
+      "from": "lattice_greens_next_order_r5_anisotropy_theorem_note_2026-07-09",
+      "to": "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07"
+    },
+    {
+      "from": "lattice_greens_next_order_r5_anisotropy_theorem_note_2026-07-09",
+      "to": "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07"
+    },
+    {
       "from": "lattice_green_function_zero_argument_narrow_theorem_note_2026-05-17",
       "to": "monopole_derived_note"
     },
@@ -28215,6 +28235,10 @@
     {
       "from": "neutrino_dirac_z3_support_trichotomy_note",
       "to": "neutrino_mass_reduction_to_dirac_note"
+    },
+    {
+      "from": "neutrino_gamma1_wsource_application_bridge_note_2026-07-09",
+      "to": "observable_principle_from_axiom_note"
     },
     {
       "from": "neutrino_lane4_4f_phase2_attack_frame_fanout_note_2026-04-28",
@@ -36493,6 +36517,10 @@
       "to": "minimal_axioms"
     },
     {
+      "from": "qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
       "to": "minimal_axioms"
     },
@@ -37311,6 +37339,10 @@
     {
       "from": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
       "to": "minimal_axioms"
+    },
+    {
+      "from": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+      "to": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
     },
     {
       "from": "record_local_observability_decoder_criterion_2026-06-05",
@@ -66281,14 +66313,14 @@
     },
     "ckm_five_sixths_bridge_support_note": {
       "claim_id": "ckm_five_sixths_bridge_support_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "fdae16146f6d349747c784485941cb5cd8a390934c07a0787918ca81632cd049",
+      "note_hash": "1945f2b7c6faa1be0683cb6430d4a13349e0cd9bb3870b21f3226624a410e49e",
       "path": "docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md",
       "runner_path": "scripts/frontier_ckm_five_sixths_bridge_support.py",
       "title": "CKM Five-Sixths Bridge Support Note"
@@ -80863,6 +80895,20 @@
       "runner_path": "scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py",
       "title": "Gauge-Scalar Temporal Observable Bridge Stretch Attempt"
     },
+    "gauge_sd_loop_equation_beta_coupled_plaquette_bracket_note_2026-07-10": {
+      "claim_id": "gauge_sd_loop_equation_beta_coupled_plaquette_bracket_note_2026-07-10",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "788a54ea75b488f41691993e3e542a224348c34ae0ea4cb2ae4eea684bd1c860",
+      "path": "docs/GAUGE_SD_LOOP_EQUATION_BETA_COUPLED_PLAQUETTE_BRACKET_NOTE_2026-07-10.md",
+      "runner_path": "scripts/frontier_gauge_sd_loop_equation_beta_coupled_plaquette_bracket.py",
+      "title": "Gauge SD Loop-Equation Beta-Coupled Plaquette Bracket Note"
+    },
     "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": {
       "claim_id": "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "positive_theorem",
@@ -84021,6 +84067,21 @@
       "path": "docs/GRAVITY_DESIGN_BLUEPRINT.md",
       "runner_path": null,
       "title": "Gravity Design Blueprint"
+    },
+    "gravity_emergent_force_transverse_noncentrality_structure_theorem_note_2026-07-09": {
+      "claim_id": "gravity_emergent_force_transverse_noncentrality_structure_theorem_note_2026-07-09",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07",
+        "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e7e5f007ecf3ca6386e1f882ba844fb2c70f98c51540833569e2a9e87d90edb0",
+      "path": "docs/GRAVITY_EMERGENT_FORCE_TRANSVERSE_NONCENTRALITY_STRUCTURE_THEOREM_NOTE_2026-07-09.md",
+      "runner_path": "scripts/frontier_gravity_transverse_noncentrality_structure.py",
+      "title": "The Emergent Force Is Not Central: Exact Transverse Structure at O(1/r\u2074) and the Three Central Orbits"
     },
     "gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16": {
       "claim_id": "gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16",
@@ -87564,7 +87625,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7f7d13da55b8bf979aa7c5d75ddec16b8b2b224a4e4b281df67913238c46609d",
+      "note_hash": "74286d3f8999553d6fb5125ddb629944b8a07f30dd09dc26fc0f9dba18cfcdd5",
       "path": "docs/KEY_TERMINOLOGY.md",
       "runner_path": "scripts/render_controlled_vocabulary.py",
       "title": "Key Terminology"
@@ -93575,6 +93636,21 @@
       "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
       "title": "Cubic-Lattice Green's Function Asymptotic Native Reroute"
     },
+    "lattice_greens_next_order_r5_anisotropy_theorem_note_2026-07-09": {
+      "claim_id": "lattice_greens_next_order_r5_anisotropy_theorem_note_2026-07-09",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07",
+        "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "3805179fab13326222fb3e002aa8e076b95d9b440a1ea4742965b3a4b9f12c23",
+      "path": "docs/LATTICE_GREENS_NEXT_ORDER_R5_ANISOTROPY_THEOREM_NOTE_2026-07-09.md",
+      "runner_path": "scripts/frontier_lattice_greens_next_order_r5_anisotropy.py",
+      "title": "The Next-Order Lattice Correction to the Emergent Newtonian Potential: an Exact, Purely Anisotropic f(n\u0302)/r\u2075 Term (l = 4, 6, 8)"
+    },
     "lattice_keff_continuum_note": {
       "claim_id": "lattice_keff_continuum_note",
       "claim_type_author_hint": "no_go",
@@ -97002,6 +97078,20 @@
       "path": "docs/NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md",
       "runner_path": "scripts/frontier_neutrino_dirac_z3_support_trichotomy.py",
       "title": "Neutrino Dirac `Z_3` Support Trichotomy"
+    },
+    "neutrino_gamma1_wsource_application_bridge_note_2026-07-09": {
+      "claim_id": "neutrino_gamma1_wsource_application_bridge_note_2026-07-09",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "observable_principle_from_axiom_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "eee84377355879021c83bb475121e6b4f0d4ef25ba6caba8a814bc6abda11b64",
+      "path": "docs/NEUTRINO_GAMMA1_WSOURCE_APPLICATION_BRIDGE_NOTE_2026-07-09.md",
+      "runner_path": "scripts/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.py",
+      "title": "Neutrino \u0393\u2081 W-source application bridge (narrow theorem)"
     },
     "neutrino_lane4_4f_phase2_attack_frame_fanout_note_2026-04-28": {
       "claim_id": "neutrino_lane4_4f_phase2_attack_frame_fanout_note_2026-04-28",
@@ -110272,6 +110362,20 @@
       "runner_path": null,
       "title": "Qubit k = 1 Per-Site Selection from Minimal Faithful Representation (Narrow)"
     },
+    "qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09": {
+      "claim_id": "qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "63e525265705a06dc15a3913084302de0a7d1ee10c03bb98529ebbb44bc21fe3",
+      "path": "docs/QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md",
+      "runner_path": "scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py",
+      "title": "Qubit-Lattice Joint Presentation Tensor Substrate Bridge (Narrow)"
+    },
     "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04": {
       "claim_id": "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
       "claim_type_author_hint": "bounded_theorem",
@@ -111354,14 +111458,15 @@
     },
     "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17": {
       "claim_id": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "minimal_axioms"
+        "minimal_axioms",
+        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ab27e30cfac9fe23ad62c6fad008c0ed1782f18e61e124937ea1e796af32e81a",
+      "note_hash": "1eef8bdbdc0e5be7948244f9f1d53f3bd3585383b055735f075c3438c412af1a",
       "path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
       "runner_path": "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py",
       "title": "Record Local Finite Atom Availability Narrow Theorem"
@@ -111936,7 +112041,7 @@
         "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "70cce2d832dc0760771fa8406c340de004f3da08a371f8c75bc4c2ad8da4ef1b",
+      "note_hash": "9db46d25390128595d8f1bfbba02f0272fa6ed0960877d396d9bd5113c07cec3",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"
@@ -128874,16 +128979,16 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1621,
+      "bounded_theorem": 1627,
       "decoration": 3,
       "meta": 328,
       "no_go": 333,
-      "none": 1209,
+      "none": 1208,
       "open_gate": 132,
       "positive_theorem": 278
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2025,
+      "bounded_theorem": 2030,
       "decoration": 3,
       "meta": 328,
       "no_go": 436,
@@ -128891,10 +128996,10 @@
       "open_gate": 206,
       "positive_theorem": 658
     },
-    "edge_count": 14549,
-    "leaf_count": 1315,
-    "node_count": 3904,
+    "edge_count": 14557,
+    "leaf_count": 1319,
+    "node_count": 3909,
     "root_count": 1109,
-    "runners_with_path": 3526
+    "runners_with_path": 3531
   }
 }

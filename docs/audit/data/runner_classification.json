@@ -13884,6 +13884,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_gauge_scalar_temporal_observable_bridge_stretch.py"
     },
+    "gauge_sd_loop_equation_beta_coupled_plaquette_bracket_note_2026-07-10": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 17,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_gauge_sd_loop_equation_beta_coupled_plaquette_bracket.py"
+    },
     "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -15779,6 +15791,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_gravity_cosmology_tower_lambda_spectral_bridge.py"
+    },
+    "gravity_emergent_force_transverse_noncentrality_structure_theorem_note_2026-07-09": {
+      "assert_count": 2,
+      "counts": {
+        "A": 29,
+        "B": 0,
+        "C": 0,
+        "D": 9
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_gravity_transverse_noncentrality_structure.py"
     },
     "gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16": {
       "assert_count": 1,
@@ -21780,6 +21804,18 @@
       "dominant_class": "A",
       "runner": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py"
     },
+    "lattice_greens_next_order_r5_anisotropy_theorem_note_2026-07-09": {
+      "assert_count": 2,
+      "counts": {
+        "A": 13,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_lattice_greens_next_order_r5_anisotropy.py"
+    },
     "lattice_keff_continuum_note": {
       "assert_count": 0,
       "counts": {
@@ -24035,6 +24071,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_neutrino_dirac_z3_support_trichotomy.py"
+    },
+    "neutrino_gamma1_wsource_application_bridge_note_2026-07-09": {
+      "assert_count": 2,
+      "counts": {
+        "A": 6,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.py"
     },
     "neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27": {
       "assert_count": 1,
@@ -30731,6 +30779,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/quasi_persistent_relaunch_probe.py"
+    },
+    "qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09": {
+      "assert_count": 1,
+      "counts": {
+        "A": 1,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py"
     },
     "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04": {
       "assert_count": 1,
@@ -61703,6 +61763,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_gauge_sd_loop_equation_beta_coupled_plaquette_bracket.py": {
+      "assert_count": 1,
+      "claims": [
+        "gauge_sd_loop_equation_beta_coupled_plaquette_bracket_note_2026-07-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 17,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -62987,6 +63062,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_gravity_transverse_noncentrality_structure.py": {
+      "assert_count": 2,
+      "claims": [
+        "gravity_emergent_force_transverse_noncentrality_structure_theorem_note_2026-07-09"
+      ],
+      "counts": {
+        "A": 29,
+        "B": 0,
+        "C": 0,
+        "D": 9
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_gravity_weak_field_source_response_bridge_2026_06_11.py": {
@@ -67379,6 +67469,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_lattice_greens_next_order_r5_anisotropy.py": {
+      "assert_count": 2,
+      "claims": [
+        "lattice_greens_next_order_r5_anisotropy_theorem_note_2026-07-09"
+      ],
+      "counts": {
+        "A": 13,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_lattice_physical_matching_cluster_obstruction.py": {
       "assert_count": 1,
       "claims": [
@@ -68279,6 +68384,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.py": {
+      "assert_count": 2,
+      "claims": [
+        "neutrino_gamma1_wsource_application_bridge_note_2026-07-09"
+      ],
+      "counts": {
+        "A": 6,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_neutrino_lane4_dirac_seesaw_fork_no_go.py": {
@@ -74178,6 +74298,21 @@
       "counts": {
         "A": 0,
         "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py": {
+      "assert_count": 1,
+      "claims": [
+        "qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 2,
         "C": 0,
         "D": 0
       },
@@ -93124,16 +93259,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 710,
+    "decoration_candidates": 712,
     "dominant_class_distribution": {
-      "A": 507,
-      "B": 659,
-      "C": 1311,
+      "A": 510,
+      "B": 660,
+      "C": 1312,
       "D": 457,
       "none": 459
     },
-    "runners_classified": 3393,
-    "runners_with_C": 1792,
-    "runners_with_D": 1091
+    "runners_classified": 3398,
+    "runners_with_C": 1794,
+    "runners_with_D": 1093
   }
 }

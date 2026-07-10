@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=cd6a2b4c83a4561c2bb97d2837d0f24f81e25b56a8e85f29f8648c8dad082d59 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=4e3a666317ee83e7a5e2e2a87b3bfff4f7c3ad1b0cc8adde1db0c88df2552d62 -->
 # Controlled Vocabulary
 
 > **Front-door lookup:** Looking up a single term? Go to
@@ -417,10 +417,14 @@ After the class, the auditor names the cheapest next repair action.
 
 When the status is `FAIL`, `no_go_discipline.demotion` is required and must be exactly one of:
 
-- `partial_attempt_with_named_untested_routes` — Records the tested work while naming alternative routes that remain untested.
-- `partial_narrowing` — Narrows the claim to the portion actually supported by the restricted packet.
-- `bounded_with_corrected_wall_count` — Retains only the bounded wall set that survives the independence audit.
-- `stretch_attempt_with_honest_residual` — Preserves a useful stretch attempt while stating the unresolved residual explicitly.
+- `partial-attempt-with-named-untested-routes` — Records the tested work while naming alternative routes that remain untested.
+- `partial-narrowing` — Narrows the claim to the portion actually supported by the restricted packet.
+- `bounded-with-corrected-wall-count` — Retains only the bounded wall set that survives the independence audit.
+- `stretch-attempt-with-honest-residual` — Preserves a useful stretch attempt while stating the unresolved residual explicitly.
+
+Packetless legacy negative authority is invalidated with the controlled reason:
+
+- `no_go_discipline_packet_missing` — A clean negative-boundary audit has no structured N1-N8 packet; archive it and return the row to fresh audit before it can remain authoritative.
 
 ### Independence tiers
 

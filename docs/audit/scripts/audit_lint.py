@@ -496,11 +496,14 @@ def main() -> int:
             audit_like
         )
         if required and packet is None:
-            add_notice(
-                "legacy_no_go_packet_absent",
-                f"{cid}: {label} predates structured No-Go Discipline; "
-                "grandfathered until fresh re-audit",
+            message = (
+                f"{cid}: {label} lacks structured No-Go Discipline and "
+                "cannot be authoritative until fresh re-audit"
             )
+            if label == "live audit" and verdict == "audited_clean":
+                errors.append(message)
+            else:
+                add_notice("legacy_no_go_packet_absent", message)
             return
         if packet is None:
             return
@@ -511,12 +514,15 @@ def main() -> int:
                 "chain_closes", verdict == "audited_clean"
             ),
         }
+        evidence_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(packet)
+        if evidence_manifest is None:
+            evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
+                row, rows, REPO_ROOT
+            )
         error = no_go_discipline_gate.validate_no_go_discipline(
             normalized,
             source_required=source_required,
-            evidence_manifest=no_go_discipline_gate.build_evidence_manifest(
-                row, rows, REPO_ROOT
-            ),
+            evidence_manifest=evidence_manifest,
         )
         if error:
             errors.append(f"{cid}: {label} invalid no_go_discipline packet: {error}")
@@ -736,10 +742,15 @@ def main() -> int:
                 evidence_manifest=None,
             )
             if archived_error:
-                errors.append(
+                message = (
                     f"{cid}: previous_audits[{index}] invalid no_go_discipline "
                     f"packet: {archived_error}"
                 )
+                # Archived packets are non-authoritative history. Schema
+                # evolution may make them invalid under the current live gate;
+                # restoration revalidates against current evidence before any
+                # archived audit can become live again.
+                add_notice("archived_invalid_no_go_packet", message)
 
         for field in DEPRECATED_LEDGER_FIELDS & set(row):
             errors.append(f"{cid}: deprecated ledger field {field!r} must not be present")

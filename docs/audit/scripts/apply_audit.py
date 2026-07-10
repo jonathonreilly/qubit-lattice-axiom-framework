@@ -695,17 +695,28 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         "notes_for_re_audit_if_any": judgment.get("notes_for_re_audit_if_any"),
         "no_go_discipline": judgment.get("no_go_discipline"),
     }
+    evidence_manifest = judgment.get("_no_go_evidence_manifest")
+    if not isinstance(evidence_manifest, dict):
+        evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
+            row, rows, REPO_ROOT
+        )
     no_go_error = no_go_discipline_gate.validate_no_go_discipline(
         gate_blob,
         source_required=no_go_discipline_gate.source_requires_no_go_discipline(
             note_path, note_body, row.get("claim_type") or final_claim_type
         ),
-        evidence_manifest=no_go_discipline_gate.build_evidence_manifest(
-            row, rows, REPO_ROOT
-        ),
+        evidence_manifest=evidence_manifest,
+        prior_claim_scope=row.get("claim_scope"),
     )
     if no_go_error:
         return False, no_go_error
+    if isinstance(judgment.get("no_go_discipline"), dict):
+        packet = dict(judgment["no_go_discipline"])
+        packet.pop("evidence_snapshot", None)
+        packet["evidence_snapshot"] = no_go_discipline_gate.build_evidence_snapshot(
+            packet, evidence_manifest
+        )
+        judgment["no_go_discipline"] = packet
 
     # All fallible checks above are transactional: only now may the judicial
     # record mutate the live row. This also ensures a valid ``neither`` result
@@ -768,6 +779,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
 
 
 def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
+    audit = dict(audit)
     if "sided_with" in audit or "third_auditor" in audit:
         return apply_judicial_review(ledger, audit)
 
@@ -807,15 +819,26 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             row.get("claim_type") or claim_type,
         )
     )
+    evidence_manifest = audit.get("_no_go_evidence_manifest")
+    if not isinstance(evidence_manifest, dict):
+        evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
+            row, rows, REPO_ROOT
+        )
     no_go_error = no_go_discipline_gate.validate_no_go_discipline(
         audit,
         source_required=source_requires_no_go,
-        evidence_manifest=no_go_discipline_gate.build_evidence_manifest(
-            row, rows, REPO_ROOT
-        ),
+        evidence_manifest=evidence_manifest,
+        prior_claim_scope=row.get("claim_scope"),
     )
     if no_go_error:
         return False, no_go_error
+    if isinstance(audit.get("no_go_discipline"), dict):
+        packet = dict(audit["no_go_discipline"])
+        packet.pop("evidence_snapshot", None)
+        packet["evidence_snapshot"] = no_go_discipline_gate.build_evidence_snapshot(
+            packet, evidence_manifest
+        )
+        audit["no_go_discipline"] = packet
 
     if verdict == "audited_clean" and claim_type in {"decoration", "meta"}:
         return False, f"audited_clean cannot ratify claim_type={claim_type!r}"

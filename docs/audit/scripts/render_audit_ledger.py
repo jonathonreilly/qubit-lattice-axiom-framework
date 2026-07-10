@@ -112,6 +112,21 @@ def render_audited_findings(rows: dict[str, dict]) -> str:
             parts.append(f"- **decoration parent:** `{r['decoration_parent_claim_id']}`")
         if r.get("auditor_confidence"):
             parts.append(f"- **auditor confidence:** {r['auditor_confidence']}")
+        no_go = r.get("no_go_discipline")
+        if isinstance(no_go, dict):
+            parts.append(
+                f"- **No-Go Discipline:** `{no_go.get('status', '-')}`"
+                + (
+                    f" (demotion: `{no_go.get('demotion')}`)"
+                    if no_go.get("demotion")
+                    else ""
+                )
+            )
+            failures = no_go.get("failures") or []
+            if failures:
+                parts.append("  - **gate failures:**")
+                for failure in failures:
+                    parts.append(f"    - {failure}")
         parts.append("")
     return "\n".join(parts) + "\n"
 

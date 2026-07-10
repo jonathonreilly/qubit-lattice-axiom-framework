@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 941 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1774 |
+| unaudited | 1773 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 106 |
+| ~~audited_conditional~~ | 107 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1352 |
-| `audited_conditional` | 106 |
+| `audited_conditional` | 107 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2119 |
+| `unaudited` | 2118 |
 
 | claim_type | count |
 |---|---:|
@@ -1513,6 +1513,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -2100,6 +2101,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   - `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+- **auditor confidence:** high
+
+### `acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04`
+
+- **Note:** [`ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded audit of whether the listed minimal axioms and approved primitives, supplemented by the stated carrier-elimination context, already supply the R-eta h-unit identity coefficient beta = 1.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00042-acphilambda_r_eta_hunit_appr`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The four accepted premises supply only their separately typed declared content, so none licenses the angle-readout coefficient beta = 1, while eliminating scanned c != 1 carriers does not derive the identity member without exhaustiveness and an identity rule.  _(class `B`)_
+- **chain closes:** False — The primitive texts support the narrow non-supply inference, but the packet does not provide the exact approved-premise registry or carrier-elimination authority in full, and the runner crashes before checking either. The current Tier-A authority also contradicts the note's claim that R-eta remains a live Tier-A atom.
+- **rationale:** The accepted primitive declarations consistently withhold the required phase/readout bridge, so the central type-mismatch argument is plausible. However, the runner completes only fourteen file-presence checks before a KeyError caused by the current zero-live-target Tier-A schema; none of its registry, source-pin, algebra, or type checks executes. The note's current-surface and live-Tier-A language is stale relative to the supplied registry authority, preventing certification of the claim as written.
+- **open / conditional deps cited:**
+  - `audit/data/axiom_premise_nodes.json`
+  - `RETA_CONVERSION_FACTOR_CARRIER_CLASS_ELIMINATION_BOUNDED_NOTE_2026-06-12.md`
+  - `audit/data/owner_governed_premise_nodes.json`
 - **auditor confidence:** high
 
 ### `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04`

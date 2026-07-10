@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 943 |
+| **retained_bounded** | 944 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1734 |
+| unaudited | 1733 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 15 |
-| `audited_clean` | 1358 |
+| `audited_clean` | 1359 |
 | `audited_conditional` | 130 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2081 |
+| `unaudited` | 2080 |
 
 | claim_type | count |
 |---|---:|
@@ -334,6 +334,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4823,6 +4824,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **rationale:** The tensor-product positivity and finite-fermion trace identities are sound algebraic consequences of retained-grade inputs. However, the L_s=2 U(1) runner surface makes the channel kernel insensitive to the complex structure that distinguishes t[U] from t[conj(U)], so its passing N4 checks do not support the claimed every-background SU(3)/U(1) operator relation. The registrability authority also explicitly leaves the physical species-readout identification open, preventing the stated N5 narrowing from repairing this gap.
 - **open / conditional deps cited:**
   - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+- **auditor confidence:** high
+
+### `correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12`
+
+- **Note:** [`CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md`](../../docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The identity, rank-one/rank-two Fourier-projector, beta in {1,4} thermal, and symmetric-inversion checks on the specified three-site Hermitian circulant family only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00015-correlator_cycle_phases_read`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On the supplied circulant surface, the identity, fixed Fourier-band projectors, and the tested thermal functions respectively produce exact phase readback, delta-blind phases, and parameter-contingent phases, while the determinant identity recovers |delta| through cos(3 delta).  _(class `A`)_
+- **chain closes:** True — The symbolic matrix calculations establish the readback, fixed-projector, and determinant identities, while direct eigendecomposition supplies the bounded thermal counterexamples to universality. No carrier-class exhaustion, non-circulant conclusion, or R-eta identification is needed for the narrowed claim.
+- **rationale:** The runner performs substantive symbolic and numerical calculations rather than printing imported expected results: it constructs H, diagonalizes it, forms projectors and thermal correlators, and derives the determinant formula. The finite thermal comparisons are stated with matching bounded scope, and the note explicitly leaves carrier exhaustion and other surfaces open. The cited axiom and realized-state authorities are accepted premises and introduce no automatic conditional downgrade.
 - **auditor confidence:** high
 
 ### `coulomb_stability_upper_bound_support_note_2026-05-20`

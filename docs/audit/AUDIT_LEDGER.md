@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 946 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1728 |
+| unaudited | 1727 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 138 |
+| ~~audited_conditional~~ | 139 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -72,12 +72,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1368 |
-| `audited_conditional` | 138 |
+| `audited_conditional` | 139 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 35 |
-| `unaudited` | 2075 |
+| `unaudited` | 2074 |
 
 | claim_type | count |
 |---|---:|
@@ -1617,6 +1617,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -18768,6 +18769,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** W_{a,a+1} M_per W_{a,a+1}^T = M_per and W_{a,a+1} M_ap(a) W_{a,a+1}^T = M_ap(a+1) for adjacent exchanges, plus adjacent transpositions generating S4.  _(class `A`)_
 - **chain closes:** False — The finite L=4 transport chain closes from the runner's constructed matrices, but the source note's broader robustness/generalization does not close from the available runner packet.
 - **rationale:** Issue: The source note says the runner also checks m=1.7, L=(6,6,6,6), and an equivalent staggered-phase convention, but the runner source/output only cover m=0.3, L=(4,4,4,4), and the odd L=(3,3,3,3) falsifier. Why this blocks: The clean finite core closes, but the current note's even-block/robustness scope is broader than the completed runner evidence in the restricted packet. Repair target: Either narrow the source scope to the actually tested finite surface, or extend the runner/proof to cover m=1.7, L=(6,6,6,6), the equivalent phase convention, and the intended all-even cubic-symmetric scope. Claim boundary until fixed: The packet supports the L=(4,4,4,4) signed-exchange transport and W-inert parity grading, not the broader robustness statement.
+- **auditor confidence:** high
+
+### `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17`
+
+- **Note:** [`SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md`](../../docs/SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The B-AXIS.1 split between the internally fixed two-step denominator for supplied T_hat^2 and the underived absolute physical clock unit represented by a_tau.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00001-single_clock_blocked_time_un`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the same dimensionless transfer T_hat^2, functional calculus fixes the supplied two-step reconstruction to H_block = -(1/(2 a_tau)) log(T_hat^2/M_T), while replacing the block time by 2 c a_tau rescales the generator to H_block/c.  _(class `A`)_
+- **chain closes:** False — The transfer and Record-relative algebra closes, but the framework-wide N2b conclusion also consumes docs/MINIMAL_AXIOMS_2026-06-05.md, which is not supplied as a one-hop authority with an effective status. The runner only verifies selected text anchors from that omitted file.
+- **rationale:** Issue: the proof's framework-wide N2b conclusion consumes docs/MINIMAL_AXIOMS_2026-06-05.md without a direct dependency edge or full retained-grade authority packet. Why this blocks: the supplied retained no-go authorities establish transfer- and Record-relative clock underdetermination, but do not alone establish the absence of clock content from every minimal Lattice or Quantum axiom. Repair target: wire the minimal-axioms note as a direct dependency and re-audit its exact exclusions and status. Claim boundary until fixed: N2a and the transfer-/Record-relative rescaling no-go remain supported, while the framework-wide absolute-unit conclusion remains conditional.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17`

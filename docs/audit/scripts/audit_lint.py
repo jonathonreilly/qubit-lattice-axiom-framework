@@ -233,23 +233,45 @@ def mask_nonrendered_markdown(text: str) -> str:
     paragraph_open = False
     indented_code = False
     list_content_indent: int | None = None
+    prior_quote_depth = 0
     for line in text.splitlines(keepends=True):
         content = line
         container_offset = 0
+        quote_depth = 0
         while True:
             container = re.match(r"[ \t]{0,3}>[ \t]?", content)
             if not container:
                 break
             container_offset += container.end()
+            quote_depth += 1
             content = content[container.end():]
+        if quote_depth != prior_quote_depth:
+            # A list item cannot continue across a block-quote boundary. The
+            # new container also starts its own paragraph/code-block context.
+            list_content_indent = None
+            paragraph_open = False
+            indented_code = False
+        prior_quote_depth = quote_depth
         stripped = content.lstrip(" \t")
         indent = len(content) - len(stripped)
         list_opener = re.match(
-            r"[ ]{0,3}(?:[*+-]|\d{1,9}[.)])(?:[ \t]+|(?=\r?$))",
+            r"(?P<leading>[ ]{0,3})(?P<marker>[*+-]|\d{1,9}[.)])"
+            r"(?P<spacing>[ \t]+|(?=\r?$))",
             content,
         )
+        list_item_code_on_marker_line = False
         if list_opener:
-            list_content_indent = list_opener.end()
+            spacing = list_opener.group("spacing") or ""
+            # CommonMark accepts one to four spaces after a list marker. With
+            # five or more, only the first is marker padding and the remaining
+            # four spaces start an indented code block inside the item.
+            padding = len(spacing) if 1 <= len(spacing) <= 4 else min(len(spacing), 1)
+            list_content_indent = (
+                len(list_opener.group("leading"))
+                + len(list_opener.group("marker"))
+                + padding
+            )
+            list_item_code_on_marker_line = len(spacing) >= 5
         elif stripped.strip() and list_content_indent is not None and indent < list_content_indent:
             list_content_indent = None
         container_indent = (
@@ -284,6 +306,11 @@ def mask_nonrendered_markdown(text: str) -> str:
             masked_lines.append(line)
             paragraph_open = False
             indented_code = False
+            continue
+        if list_item_code_on_marker_line:
+            masked_lines.append("".join("\n" if ch == "\n" else " " for ch in line))
+            paragraph_open = False
+            indented_code = True
             continue
         if container_indent >= 4 and (
             indented_code or not paragraph_open

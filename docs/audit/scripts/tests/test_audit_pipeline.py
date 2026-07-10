@@ -1429,6 +1429,9 @@ class AuditLintTest(unittest.TestCase):
             "    [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
             ">\n>     [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
             "- item\n\n        [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "- item\n\n>     [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "-     [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "1.     [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
         )
         for text in examples:
             with self.subTest(text=text):
@@ -1446,6 +1449,8 @@ class AuditLintTest(unittest.TestCase):
             "Paragraph\n    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
             "- item\n    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
             "- item\n\n    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "-    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "1.    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
         )
         for text in examples:
             with self.subTest(text=text):

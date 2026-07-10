@@ -3,7 +3,7 @@
     "critical": 393,
     "high": 265,
     "leaf": 755,
-    "medium": 510
+    "medium": 509
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -19984,33 +19984,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_atomic_hydrogen_helium_probe.py",
       "transitive_descendants": 19
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "yt_source_action_support_packet_note_2026-05-22",
-        "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.67,
-      "note_path": "docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_ew_neutral_projector_same_surface_carrier.py",
-      "transitive_descendants": 17
     },
     {
       "audit_independence_required": "any_non_self",
@@ -57531,6 +57504,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 211,
-  "total_pending": 1923
+  "ready_count": 210,
+  "total_pending": 1922
 }

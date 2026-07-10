@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 932 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1843 |
+| unaudited | 1842 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
-| ~~audited_renaming~~ | 24 |
+| ~~audited_renaming~~ | 25 |
 | ~~audited_conditional~~ | 65 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -68,8 +68,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
-| `audited_renaming` | 24 |
-| `unaudited` | 2188 |
+| `audited_renaming` | 25 |
+| `unaudited` | 2187 |
 
 | claim_type | count |
 |---|---:|
@@ -1660,6 +1660,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | weak | codex-current | F | - |
+| `yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 
 
@@ -21358,6 +21359,22 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** The packet supplies the algebraic fraction F_adj = 8/9 but does not contain a retained selector promoting it to exact physical EW matching rule M, so exact physical R_conn = 8/9 is not derived by this packet.  _(class `A`)_
 - **chain closes:** True — The cited retained no-go parent supplies the open selector boundary, and the cited decoration authority supplies only the finite-dimensional SU(3) channel fraction. The source note does not claim an absolute finite-N_c impossibility or an exhaustive no-go over future selectors.
 - **rationale:** The restricted packet cleanly supports the narrowed no-go boundary: F_adj = (N_c^2 - 1) / N_c^2 gives 8/9 at N_c = 3, and no selector deriving physical R_conn = 8/9 is supplied. Independent formula checks of the kappa-family, Fierz normalization, channel dimensions, and listed specializations found no coefficient or normalization defect. The no-go discipline gate passes because the note explicitly limits itself to current-packet absence, leaves future non-perturbative selector routes open, and avoids absolute no-go rhetoric.
+- **auditor confidence:** high
+
+### `yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18`
+
+- **Note:** [`YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md`](../../docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact projector algebra on the declared one-Higgs EW doublet and the asserted identification of its neutral projector with the signed-record source ray.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-yt_ew_neutral_projector_-060`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The P_- source ray used by the Y_T signed-record source is the neutral electroweak Higgs ray because both are asserted to be the same spectral projector P_neut = 1_0(Q_H) on the same one-Higgs doublet carrier.  _(class `F`)_
+- **chain closes:** False — The EW authority closes Q_H = diag(1,0) and its neutral spectral projector, while the source-action authority supplies an abstract signed-record generator. No cited authority maps that generator and its carrier onto the physical EW Higgs doublet, so defining epsilon_H on the EW carrier does not establish the claimed same-surface identity.
+- **rationale:** The matrix and normalized-weight identities are correct conditional algebra. The load-bearing cross-carrier step merely identifies the existing signed-record P_- concept with the EW neutral projector; neither the source-action packet nor the minimal qubit algebra establishes that they inhabit the same physical carrier. The runner verifies matrices and textual wiring but never computes or proves this missing bridge.
+- **open / conditional deps cited:**
+  - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
+  - `YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md`
 - **auditor confidence:** high
 
 ### `yt_lsp_signed_record_source_readout_support_note_2026-05-24`

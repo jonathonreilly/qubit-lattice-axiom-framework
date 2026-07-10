@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 955 |
+| **retained_bounded** | 956 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1705 |
+| unaudited | 1704 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1372 |
+| `audited_clean` | 1373 |
 | `audited_conditional` | 135 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2050 |
+| `unaudited` | 2049 |
 
 | claim_type | count |
 |---|---:|
@@ -1154,6 +1154,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_formation_append_certification_bounded_note_2026-07-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -17689,6 +17690,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The surviving no-go is only: the current minimal axioms do not force the formation rule/process/state/site/weight/rate.  _(class `A`)_
 - **chain closes:** True — The source note has narrowed away the old unforced-occurrence claim: the minimal axiom memo explicitly says Records form while leaving formation rules and record-production dynamics outside axiom content. The finite-dimensional negative controls support the same boundary by showing that trivial, decoupled, and eigenstate unitary surfaces do not supply a concrete process, rule, state trigger, site, weight, or rate.
 - **rationale:** The current runner completed with TOTAL: PASS=6 FAIL=0 and its cached output matches the narrowed target. The load-bearing claim follows from the accepted minimal axiom boundary plus exact finite-dimensional negative controls; it no longer asserts that generic record occurrence is absent. Residual risk is downstream only: a later admitted or derived record-production model could supply formation details, but that would be outside the minimal axiom baseline audited here.
+
+### `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`
+
+- **Note:** [`RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md`](../../docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact all-state flow and unitary-step pointer-persistence commutator criteria, the explicit finite controlled-copy record construction, and its stated counterexample and transfer-sector boundaries, conditional on the supplied carrier, pointer, Darwinism, singleton-readout, and fresh-or-idle-fragment hypotheses.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-row5-b-20260710`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the supplied finite model, all-state pointer populations are constant for the continuous flow iff [H_int, Pi_S] = 0 and across a unitary step iff [U, Pi_S] = 0, while H_int = g sigma_z(S) tensor sum_k sigma_x(E_k) at t = pi/(4g) produces orthogonal conditional fragment states and hence full redundant pointer records under the supplied readout bridges.  _(class `C`)_
+- **chain closes:** True — The spectral-projector Heisenberg identity proves both all-state iff statements, and the controlled rotations at t = pi/(4g) make the two conditional states of every fresh fragment orthogonal. Exact finite counterexamples establish the claimed quantifier boundaries without importing a dynamics or observable selection theorem.
+- **rationale:** The exact projector identities, controlled-rotation construction, and finite witnesses close on the explicitly supplied bounded model, and the SHA-pinned runner completes with PASS=56 FAIL=0. An independent closed-form/product-unitary recomputation verified every displayed coefficient and numerical surface, including H(Pi_S), the plateau surplus, interpolation sequence, noncommuting-log norm, fresh-subspace commutator, nonlocal-control excess, and transfer-sector weight. The N1-N8 gate passes at the note's narrow scope: five distinct overextension routes have exact counterexamples, the four collapsed bound groups are independent, no hidden wall or residual mismatch remains, no new-axiom claim is made, and the strongest all-state steelman is already stated as the quantifier boundary. Residual risk is explicit rather than hidden: the carrier, pointer, Darwinism interpretation, singleton readout bridge, interaction, and persistence setup are supplied hypotheses, so this result remains bounded and does not derive physical record-production dynamics.
+- **auditor confidence:** high
 
 ### `record_function_finite_sector_algebra_2026-06-05`
 

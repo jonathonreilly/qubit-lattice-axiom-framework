@@ -29,16 +29,16 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3733 |
-| Applied audit verdicts | 1622 |
+| Applied audit verdicts | 1623 |
 | Retained-grade rows, including boxed decorations | 1407 |
 | Retained positive theorems | 196 |
 | Retained no-go rows | 211 |
 | Retained bounded rows | 938 |
 | Boxed decorations under retained parents | 62 |
 | Open gates | 27 |
-| Unaudited rows | 1750 |
+| Unaudited rows | 1749 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 121 |
+| Audited conditional rows | 122 |
 | Audited renaming rows | 34 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 10 |

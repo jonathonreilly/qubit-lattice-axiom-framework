@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 198 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 934 |
+| **retained_bounded** | 932 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1749 |
-| audit_in_progress | 2 |
+| unaudited | 1750 |
+| audit_in_progress | 3 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 33 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 17 |
-| `audited_clean` | 1340 |
+| `audited_clean` | 1339 |
 | `audited_conditional` | 136 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 33 |
-| `unaudited` | 2096 |
+| `unaudited` | 2097 |
 
 | claim_type | count |
 |---|---:|
@@ -148,7 +148,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
-| `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-current | C | - |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-current | B | - |
 | `lattice_nn_light_cone_note` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -776,7 +776,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_narrow_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_factor_split_does_not_force_carrier_value_bridge_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
-| `koide_fisher_rao_spherical_reorganization_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_full_lattice_schur_inheritance_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -11480,19 +11479,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The value and carrier axes commute but have all four joint sign sectors nonempty, so neither equality nor sign-reversed equality follows from the product algebra.  _(class `A`)_
 - **chain closes:** True — Independently, the value involution has eigenspace dimensions 1 and 2, while the carrier swap has eigenspace dimensions 3 and 1, giving joint dimensions {(1,1):3,(1,-1):1,(-1,1):6,(-1,-1):2}. The mixed sectors are counterexamples to any forced equality or sign-reversed equality within the scoped product model.
 - **rationale:** The runner source is self-contained and computes finite matrix identities rather than printing a hard-coded verdict. The load-bearing calculation is an algebraic identity check: tensor-embedded involutions commute, are not equal up to sign, and have nonempty mixed eigensectors. The note's no-go is properly scoped to the bare product-factor route and explicitly leaves later physical welding theorems or admissions open.
-- **auditor confidence:** high
-
-### `koide_fisher_rao_spherical_reorganization_note_2026-06-01`
-
-- **Note:** [`KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md`](../../docs/KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The exact identity cos^2(theta_p)=1/(3Q), its Q=2/3 equivalence, and the bounded metric-tensor no-go that the round Fisher-Rao geometry does not select an azimuth; PDG masses are comparators only.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-koide_fisher_rao_spheric-080`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Because the round Fisher-Rao metric has g_phi_phi = sin^2(theta), independent of phi, the azimuthal direction is Killing and the metric alone supplies no preferred longitude such as 2/9.  _(class `A`)_
-- **chain closes:** True — The polar identity follows directly from the definitions of Q and the angle to the democratic axis. The phi-independence of the round metric directly establishes the stated azimuthal Killing symmetry and hence the scoped metric-only nonselection result.
-- **rationale:** The load-bearing conclusions are transparent algebraic and differential-geometric identities, and the provided runner performs the relevant symbolic checks. Every cited authority has retained-grade effective status, and none of its explicitly open physical identifications is consumed by this bounded reorganization. The PDG, mass-drift, and tuned-tau checks are external comparators and are not load-bearing on the theorem or no-go boundary.
 - **auditor confidence:** high
 
 ### `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`

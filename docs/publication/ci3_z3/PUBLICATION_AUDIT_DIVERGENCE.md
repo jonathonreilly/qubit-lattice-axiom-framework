@@ -26,12 +26,13 @@ publication tables phrase it.
 | medium | `open_gate` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_failed` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `retained_pending_chain` | 1 |
 | high | `audited_numerical_match` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 426
+**Total non-retained-grade rows in publication tables:** 427
 
 ## Per-row breakdown
 
@@ -113,6 +114,7 @@ publication tables phrase it.
 | critical | `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20` | `audited_numerical_match` | `audited_numerical_match` | DERIVATION_ATLAS.md |
 | critical | `koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `koide_q_delta_closure_package_readme_2026-04-21` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
+| critical | `koide_q_readout_factorization_theorem_2026-04-22` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `lepton_shared_higgs_universality_collapse_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `lepton_shared_higgs_universality_underdetermination_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `lepton_single_higgs_pmns_triviality_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |

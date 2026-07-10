@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 944 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1730 |
+| unaudited | 1729 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 132 |
+| ~~audited_conditional~~ | 133 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1360 |
-| `audited_conditional` | 132 |
+| `audited_conditional` | 133 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 35 |
-| `unaudited` | 2077 |
+| `unaudited` | 2076 |
 
 | claim_type | count |
 |---|---:|
@@ -1634,6 +1634,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_gluing_flow_nonsourcing_pair_level_seed_localization_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `theta_mass_determinant_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `three_family_card_missing_distance_live_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
@@ -21216,6 +21217,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting V → V† and using w(X†) = w(X) for real class weights gives G(S₁†,…,Sₖ†) = G(S₁,…,Sₖ), which combined with the SU(2) symmetric-trace identity makes the star pairwise-reducible.  _(class `A`)_
 - **chain closes:** False — A real-valued class weight on a general compact group need not satisfy w(g†) = w(g); for example, positive real class functions on U(1) can contain an inversion-odd sine component. The runner tests only SU(2), where inversion preserves conjugacy classes, so it cannot establish the advertised group-general theorem or its SU(3) transfer.
 - **rationale:** The 14 runner checks genuinely support the stated finite SU(2) examples and algebraic identities, with no external comparator or imported numerical premise. However, the load-bearing generalization incorrectly treats real-valued centrality as dagger-evenness; an explicit inversion-even hypothesis is missing. Moreover, diagonal-conjugation invariance and one independent-conjugation witness establish factorization through joint orbits and nontrivial joint dependence, but not that the observables separate or expose precisely all diagonal-orbit data.
+- **auditor confidence:** high
+
+### `theta_mass_determinant_axiom_update_no_go_note_2026-07-04`
+
+- **Note:** [`THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`](../../docs/THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded non-supply result: the four axioms and currently approved primitives do not themselves provide the theta mass-side determinant-channel interface or physical-exhaustion bridge; the k=0 determinant-character result remains conditional on supplying that interface.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00021-theta_mass_determinant_axiom`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The cited axiom and primitive surfaces contain no readout context, determinant channel, K/CPT structure, action/mass surface, or physical-observable identification, so they do not themselves supply the physical arg det(M_u M_d) exhaustion bridge.  _(class `B`)_
+- **chain closes:** True — Within the restricted packet, the cited premise texts explicitly withhold the required physical readout structures, and the conditional determinant-character algebra is correct. The conclusion is limited to present-premise non-supply and does not establish a universal impossibility or alter theta's retirement.
+- **rationale:** The runner genuinely checks the character and K-evenness algebra, but its load-bearing non-supply result is primarily cross-note boundary verification rather than a first-principles physical derivation. The Tier-A registry authority has effective status meta and is not flagged as an accepted premise, so the rubric prevents an audited-clean verdict despite the bounded conclusion following from the supplied texts. No external comparator, tuned value, renaming, or fabricated physical bridge is used.
+- **open / conditional deps cited:**
+  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
 - **auditor confidence:** high
 
 ### `theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01`

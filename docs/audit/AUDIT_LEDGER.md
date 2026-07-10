@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 937 |
+| **retained_bounded** | 938 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
 | unaudited | 1810 |
-| audit_in_progress | 10 |
+| audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
@@ -62,8 +62,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 12 |
-| `audited_clean` | 1347 |
+| `audit_in_progress` | 11 |
+| `audited_clean` | 1348 |
 | `audited_conditional` | 84 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
@@ -138,7 +138,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | audit_in_progress | audit_in_progress | - | - | - | - |
-| `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
@@ -883,6 +882,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `linear_response_true_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `literature_backmatch_live_scan_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
+| `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `local_zsym_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `localized_source_response_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_boost_covariance_2d_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12761,6 +12761,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** A published widefield diamond NV lock-in microscopy result with per-pixel I/Q readout and dynamic imaging is a credible retrospective analog/backmatch candidate, but not validation of the retained prediction.  _(class `D`)_
 - **chain closes:** True — The cited paper's abstract-level record supports the note's narrow factual predicates: widefield NV magnetometry, lock-in PL detection over multiple pixels, in-phase/quadrature image formation, and sub-second dynamic magnetic imaging. The note explicitly limits the conclusion to analog-platform resemblance and denies validation of the framework's target observables.
 - **rationale:** The external source check closes the bounded backmatch claim: the paper is in the same diamond NV lock-in/quadrature/dynamic-imaging measurement family described by the note. The note does not overclaim this as evidence for the retained gravitational or causal-field observables, and it correctly preserves the distinction between resemblance and validation. Residual risk is only that this is a single retrospective analog candidate, not a prediction test.
+- **auditor confidence:** high
+
+### `local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03`
+
+- **Note:** [`LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md`](../../docs/LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The generated ordinary shared-scalar complex two-qubit tensor product M_4(C) is locally tomographic by self-adjoint dimension count, while the corresponding ordinary real rebit tensor product fails that count.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00002-local_tomography_from_qubit_`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** On the supplied ordinary complex tensor product M_2(C) tensor_C M_2(C) ~= M_4(C), the self-adjoint dimension satisfies 16 = 4 * 4, establishing finite-dimensional local tomography.  _(class `A`)_
+- **chain closes:** True — The accepted Qubit premise and retained per-site and finite-block authorities supply the complex two-dimensional site factors and ordinary tensor-product carrier. Standard finite-dimensional matrix algebra then gives the claimed 16 = 4 * 4 count, while the retained no-go correctly limits the result to the explicitly supplied generated composite.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs and an explicitly accepted axiom premise. The runner performs exact symbolic matrix and rank calculations rather than merely printing expected outcomes or importing a contested numerical result. The note also preserves the necessary boundary that operational locality alone does not derive the ordinary tensor-product composite.
 - **auditor confidence:** high
 
 ### `local_zsym_predictor_note`

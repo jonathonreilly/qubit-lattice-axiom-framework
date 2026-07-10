@@ -804,6 +804,8 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
 
     cross_cycle_path = no_go_discipline_gate.cross_cycle_index_path(cid)
     cross_cycle_context = str(evidence_manifest[cross_cycle_path]["text"])
+    partial_closure_path = no_go_discipline_gate.partial_closure_index_path(cid)
+    partial_closure_context = str(evidence_manifest[partial_closure_path]["text"])
     evidence_manifest_text = no_go_discipline_gate.render_evidence_manifest(
         evidence_manifest
     )
@@ -828,6 +830,7 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         "{{RUNNER_SOURCE}}": runner_source or "(no source available)",
         "{{HELPER_RUNNER_SOURCES}}": helper_runner_sources,
         "{{FRAMEWORK_PREMISE_CONTEXT}}": premise_context,
+        "{{NO_GO_PARTIAL_CLOSURE_INDEX}}": partial_closure_context,
         "{{NO_GO_CROSS_CYCLE_INDEX}}": cross_cycle_context,
     }
     foreach_pattern = (

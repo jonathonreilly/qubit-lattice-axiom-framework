@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1722 |
+| unaudited | 1721 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 128 |
+| ~~audited_conditional~~ | 129 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1364 |
-| `audited_conditional` | 128 |
+| `audited_conditional` | 129 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2067 |
+| `unaudited` | 2066 |
 
 | claim_type | count |
 |---|---:|
@@ -1619,6 +1619,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `reta_conversion_factor_carrier_class_elimination_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `ring_monodromy_does_not_force_car_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `shapiro_family_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
@@ -18124,6 +18125,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** R* clauses 1-2 map to the Record axiom's finite additivity and content-determination sentences, and D-totality maps to the law sentence requiring exactly one answer at every state in the supplied domain.  _(class `A`)_
 - **chain closes:** True — The cited axiom and primitive text contain the exact finite-additivity, content-determination, exactly-one-answer, and pointwise-evaluation boundary clauses, and the note explicitly excludes sibling PR adjudication, wall/gate closure, motion closure, pointwise-domain closure, and audit/status changes.
 - **rationale:** The note stays within a bounded text-instance claim: the relevant Record and law-domain sentences are present in the minimal axioms, and the realized-state primitive supports only pointwise evaluation without supplying a domain certificate. The runner checks finite witnesses for additivity, fixed-content exclusion of unsupplied auxiliary basis variation, exactly-one-answer totality, and firewall language. I found no overclaim of sibling PR adjudication, wall/gate closure, motion closure, pointwise-domain closure, or audit/status changes.
+- **auditor confidence:** high
+
+### `rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04`
+
+- **Note:** [`RULE_ACHIRALITY_FROM_MINIMALITY_QUALIFICATION_LICENSING_LAW_ACHIRAL_STATE_FREE_BOUNDED_THEOREM_NOTE_2026-07-04.md`](../../docs/RULE_ACHIRALITY_FROM_MINIMALITY_QUALIFICATION_LICENSING_LAW_ACHIRAL_STATE_FREE_BOUNDED_THEOREM_NOTE_2026-07-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The defined six-direction toy rules exhibit a reflection-fixed rule and a size-two J2-conjugate pair, but the audit does not establish the claimed framework-level licensing or record-state reachability.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00096-rule_achirality_from_minimal`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The finite chiral witness depends on an unfixed handedness choice because its outputs depend on J2 while the tested mirror-even data do not determine J2, so the Qualification requires a supplied source for that choice.  _(class `C`)_
+- **chain closes:** False — The packet lacks a bridge identifying spatial axis-sign flips with non-primitive Cl(3,0) presentation freedom and proving that the tested base-value multiset exhausts the supplied structure relevant to selecting the rule. It also lacks a valid mapping from the runner's sequential directional-condition replay to an admissible one-record-per-site state under the stated axioms.
+- **rationale:** The runner constructs the finite groups and rules rather than merely printing expected constants, and reports all 14 checks passing. However, several purportedly exact covariance and orbit statements are tested only on random samples rather than exhaustively or by an encoded analytic proof. More importantly, neither the spatial-to-Clifford presentation bridge nor the asserted completeness of the mirror-even supplied data follows from the cited axiom, while E3 introduces a sequential reachability semantics absent from that axiom.
 - **auditor confidence:** high
 
 ### `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10`

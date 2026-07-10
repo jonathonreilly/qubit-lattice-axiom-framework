@@ -344,14 +344,14 @@
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "claim_id": "axiom_first_spectrum_condition_theorem_note_2026-04-29",
       "claim_scope": "On finite free or fixed-background staggered-only two-step carriers, a strictly positive Hermitian transfer matrix with block spacing 2 a_tau yields a self-adjoint vacuum-subtracted H >= 0; a positive gap requires a non-degenerate top eigenvalue, and temporal decay is conditional on that gap.",
       "claim_type": "positive_theorem",
       "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": "disagreement",
       "deps": [
         "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
         "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",

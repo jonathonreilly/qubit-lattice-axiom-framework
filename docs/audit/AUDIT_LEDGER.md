@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 940 |
+| **retained_bounded** | 941 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1778 |
+| unaudited | 1777 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1350 |
+| `audited_clean` | 1351 |
 | `audited_conditional` | 104 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2123 |
+| `unaudited` | 2122 |
 
 | claim_type | count |
 |---|---:|
@@ -156,6 +156,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_ambient_equivariant_heat_trace_face_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1889,6 +1890,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing contribution is an algebraic re-expression of one retained parent result using standard cycle-graph spectral mathematics, with no external-comparator check. The runner genuinely computes the fixed-point and pseudoinverse identities, but its physical-wall block assigns delta = 2/9 and then checks consistency rather than deriving that assignment. Consequently the exact transport face is decoration-grade, while the note correctly leaves the physical wall open.
 - **decoration parent:** `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`
 - **auditor confidence:** high
+
+### `acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01`
+
+- **Note:** [`ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md`](../../docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Over the enumerated homogeneous Record, covariance, consistency, and primitive-boundary surface: the rescale obstruction to c=1, count normalization c=9/2, retained C3 angular rigidity up to sign, and unit-blindness of four named interfaces; no terminal no-go or derivation of the density-to-angle bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00038-acphilambda_defect_identity_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because every enumerated readout clause is homogeneous under I -> lambda I, the premise-satisfying set contains the full I_c rescale orbit and cannot uniquely select the nonzero member c = 1.  _(class `A`)_
+- **chain closes:** True — Record additivity plus the stipulated single-density factorization gives I_c, and every enumerated clause is homogeneous or value-free. The retained circulant algebra supports the angular-rigidity and interface conclusions; consolidation with R-eta is dependency de-duplication, not closure of that admitted bridge.
+- **rationale:** The substantive bounded conclusions are exact class-A consequences of the accepted Record premise and retained-grade fixed-locus and circulant inputs, without external comparators or tuned data. The cited open bridge is preserved as the residual target rather than imported to derive c=1. Runner bookkeeping and coverage have non-load-bearing defects, but the analytic bounded chain still closes.
+- **auditor confidence:** medium
 
 ### `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12`
 

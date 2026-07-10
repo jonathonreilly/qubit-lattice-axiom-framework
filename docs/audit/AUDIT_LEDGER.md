@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 944 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1729 |
+| unaudited | 1728 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 133 |
+| ~~audited_conditional~~ | 134 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1360 |
-| `audited_conditional` | 133 |
+| `audited_conditional` | 134 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 35 |
-| `unaudited` | 2076 |
+| `unaudited` | 2075 |
 
 | claim_type | count |
 |---|---:|
@@ -1649,6 +1649,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `yt_ward_tadpole_cancellation_premise_derivation_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `yt_zero_import_authority_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `acphilambda_cycle_flux_transport_face_inventory_2026-07-01` | decoration | ~~audited_decoration~~ | `decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | cross_family | codex-gpt-5.6 | A | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` |
@@ -23500,6 +23501,22 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
   - `U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md`
   - `YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md`
   - `YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md`
+- **auditor confidence:** high
+
+### `yt_zero_import_authority_note`
+
+- **Note:** [`YT_ZERO_IMPORT_AUTHORITY_NOTE.md`](../../docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The exact bounded canonical-bare ratio and the conditional Planck-surface and low-energy y_t/m_t package, including its selector and precision qualifications.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T160258Z-55b61261-00001-yt_zero_import_authority_not`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The canonical-bare matrix-element ratio is exact on the bounded Ward surface: y_t_bare / g_bare = 1 / sqrt(6).  _(class `C`)_
+- **chain closes:** False — The runner closes the canonical-bare matrix-element ratio through explicit lattice, representation, Fierz, Clifford, and normalization computations. It does not close the shared-dressing/physical-readout lift, derive kappa_Y = 0, or compute the quoted low-energy values and precision budget from the supplied authorities.
+- **rationale:** The helper's hard-coded plaquette quantities occur only in context blocks and do not contaminate the runner's load-bearing bare-ratio computation, which is consistent with class C. The Planck-surface bridge is not supplied or certified, while the retained color-projection no-go explicitly establishes that the required kappa_Y = 0 selector remains underived. Consequently, the bare core is supported but the numerical Planck-to-IR package and its precision claims remain conditional.
+- **open / conditional deps cited:**
+  - `ALPHA_S_DERIVED_NOTE.md`
+  - `YT_COLOR_PROJECTION_CORRECTION_NOTE.md`
 - **auditor confidence:** high
 
 ### `yt_zero_import_chain_note`

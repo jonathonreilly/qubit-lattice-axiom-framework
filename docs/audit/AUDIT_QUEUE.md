@@ -16,7 +16,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | non_terminal_conditional | critical | 1292 | 11.34 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py` |
-| 2 | `yt_zero_import_authority_note` | positive_theorem | unaudited | critical | 905 | 15.32 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
+| 2 | `yt_zero_import_authority_note` | positive_theorem | non_terminal_conditional | critical | 905 | 15.32 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
 | 3 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | bounded_theorem | non_terminal_conditional | critical | 772 | 13.59 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_p1_h_unit_renormalization.py` |
 | 4 | `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15` | bounded_theorem | non_terminal_conditional | critical | 714 | 11.48 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_neutrino_bosonic_normalization_theorem.py` |
 | 5 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | non_terminal_conditional | critical | 611 | 14.76 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py` |

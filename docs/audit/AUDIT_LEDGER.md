@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1800 |
+| unaudited | 1799 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 87 |
+| ~~audited_conditional~~ | 88 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1348 |
-| `audited_conditional` | 87 |
+| `audited_conditional` | 88 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2145 |
+| `unaudited` | 2144 |
 
 | claim_type | count |
 |---|---:|
@@ -1558,6 +1558,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
@@ -16656,6 +16657,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** "This is occurrence strength only" plus "Succession, wherever it exists, is monotone."  _(class `A`)_
 - **chain closes:** True — The axiom text supports occurrence and, conditional on an actual formation-successor, permanence plus per-site uniqueness force strict extension; the note explicitly excludes any formation rule, universal successor law, rate, clock, selector, or dynamics.
 - **rationale:** The citable axiom text contains 'Records form.' and the Qualification blocks extra physical structure absent derivation/admission. Read minimally, that supports occurrence and excludes empty-forever history, but it does not supply a total transition law, availability domain, site or possibility selector, rate, clock, stochastic process, or dynamics. The extension lemma closes only under the explicit conditional 'for any realized formation-successor': permanence preserves old records, per-site uniqueness forbids overwrite, and formation adds a record. The runner verifies exact text needles and finite toy consequences; it is not an independent dynamics derivation, but the note does not claim one.
+- **auditor confidence:** high
+
+### `record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05`
+
+- **Note:** [`RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md`](../../docs/RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite free-field linear-algebra verification that an explicitly supplied monotone occupancy profile, under the assumed occupancy-to-mass map, produces localized opposite-chirality domain-wall modes and a projected Cl(3,0) Weyl cone.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00013-record_formation_front_is_th`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Diagonalizing the finite Wilson-Dirac operator with the modeled mass profile m(s)=M(2 theta(s)-1) yields a near-zero chiral Weyl subspace localized at the occupancy midpoint, with chirality reversed when the occupancy gradient is reversed.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the stated spectral and projected-operator witnesses, but the occupancy-to-mass identification m(s)=M(2 theta(s)-1) is an explicit bridge not derived or otherwise closed by the cited authorities. Thus the diagnostic closes only conditional on that additional modeled premise.
+- **rationale:** The source computes a nontrivial finite spectrum rather than printing or importing the claimed results, so the load-bearing numerical step is class C. The retained bounded parent supports the domain-wall operator construction, and the minimal axioms are an accepted premise, but neither supplies the occupancy profile or derives its identification with the mass wall. The note accurately limits its claim, yet the rubric requires an explicit unclosed bridge to remain conditional.
 - **auditor confidence:** high
 
 ### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`

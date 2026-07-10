@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
-runner_sha256: b8fc4b1bd8969b028bd77e1aaf434bf08450c18087f4b444154ca6d71c05ad99
+runner_sha256: ce2d4ef40ce82ef74c05308e14d0b5bf73e90930bd24c7bbfc94a8a5ea2af614
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.23
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -100,11 +100,12 @@ PASS locality probe: non-local env-env gate still commutes with Pi_S
 PASS non-local destructive control erases acted-on singleton records and injects EXCESS pairwise correlation I(E_1:E_2) > H_S :: J(singletons)=[-0.0, -0.0, 0.5224, 0.5224]; I(E_1:E_2)=1.4776, excess=0.9553
 
 ------------------------------------------------------------------------------
-Part 8: supplied conserved-charge transfer block class check
+Part 8: supplied conserved-charge transfer block check
 ------------------------------------------------------------------------------
 PASS supplied transfer block: hopping (XX+YY) conserves total charge Q_total on the bond :: ||[H_T,Q_tot]||=0.00e+00
 PASS supplied transfer block: Euclidean-style transfer e^{-H} is positive :: min eig = 0.3679
-PASS supplied transfer block: commutes with the conserved charge => lies in the all-state persistence class :: ||[T,Q_tot]||=0.00e+00
+PASS supplied transfer block: commutes with the conserved charge => charge-sector block diagonal :: ||[T,Q_tot]||=0.00e+00
+PASS nonunitary boundary: charge-sector commutation does NOT preserve normalized sector weights :: weights (1/2,1/2) -> (0.119203,0.880797)
 
 ------------------------------------------------------------------------------
 Part 9: NOT pinned -- coupling strength / action magnitude / beta
@@ -178,9 +179,10 @@ BOUNDED ALGEBRAIC RESULTS, with explicit scope:
     (c) its local single-fragment sum produces independent conditional copies;
         a specific non-local env-env scramble erases the acted-on singleton
         records and injects EXCESS pairwise correlation I(E_a:E_b) > H_S,
-    (d) a supplied number-conserving reflection-positive OS-style transfer
-        block T = e^{-H} with [T,Q]=0 lies in the all-state conserved-charge
-        class. The runner does not establish reflection positivity itself.
+    (d) a supplied Euclidean-style transfer block T=e^{-H} with [T,Q]=0 is
+        charge-sector block diagonal. It need not preserve normalized sector
+        weights; the runner gives an exact counterexample and does not establish
+        reflection positivity itself.
 
   Relative to the two-endpoint Gauss-law gauge-structure companion, this note
   adds exact all-state temporal commutator criteria and a separate sufficient
@@ -207,8 +209,9 @@ HONEST LIMITS (no over-claim):
     transfer-matrix magnitude, or beta=6. It proves all-state conservation
     criteria and tests one explicit local controlled-copy channel as a
     sufficient record-writing construction.
-  - It does NOT prove that a physical framework OS transfer writes records.
-    Part 8 checks only conserved-charge transfer-class membership.
+  - It does NOT prove that a physical framework OS transfer writes records or
+    preserves normalized charge-sector populations. Part 8 checks block
+    diagonality and exhibits the nonunitary population-change boundary.
   - Pointer non-demolition is necessary and sufficient for all-state pointer
     persistence -- at the FLOW level for the generator ([H,Pi_S]=0, Part 6b)
     and at the STEP level for the unitary ([U,Pi_S]=0, Part 6d). The
@@ -222,7 +225,7 @@ HONEST LIMITS (no over-claim):
     sufficient construction on the explicit system, given the bounded bridges.
 
 ==============================================================================
-SUMMARY: PASS=55 FAIL=0
+SUMMARY: PASS=56 FAIL=0
 ==============================================================================
 
 ----- stderr -----

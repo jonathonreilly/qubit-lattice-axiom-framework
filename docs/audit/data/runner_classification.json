@@ -461,7 +461,7 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 2,
+        "C": 4,
         "D": 0
       },
       "decoration_candidate": false,
@@ -28588,11 +28588,11 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 1,
+        "B": 2,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py"
     },
@@ -42918,7 +42918,7 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 2,
+        "C": 4,
         "D": 0
       },
       "decoration_candidate": false,
@@ -88811,11 +88811,11 @@
       ],
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 1,
+        "B": 2,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "B",
       "exists": true
     },
@@ -93124,7 +93124,7 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 709,
+    "decoration_candidates": 710,
     "dominant_class_distribution": {
       "A": 507,
       "B": 659,
@@ -93133,7 +93133,7 @@
       "none": 459
     },
     "runners_classified": 3393,
-    "runners_with_C": 1793,
+    "runners_with_C": 1792,
     "runners_with_D": 1091
   }
 }

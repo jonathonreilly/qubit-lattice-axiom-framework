@@ -57422,6 +57422,10 @@
     },
     {
       "from": "publication.ci3_z3.usable_derived_values_index",
+      "to": "yt_color_projection_correction_note"
+    },
+    {
+      "from": "publication.ci3_z3.usable_derived_values_index",
       "to": "r_base_group_theory_derivation_theorem_note_2026-04-24"
     },
     {
@@ -57634,6 +57638,10 @@
     },
     {
       "from": "publication.ci3_z3.usable_derived_values_index",
+      "to": "yt_zero_import_authority_note"
+    },
+    {
+      "from": "publication.ci3_z3.usable_derived_values_index",
       "to": "yt_ward_identity_derivation_theorem"
     },
     {
@@ -57786,11 +57794,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+      "to": "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09"
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
     {
       "from": "repo.repo_organization",
@@ -58919,7 +58927,7 @@
         "admitted_input_registry_tier_a_note_2026-05-23"
       ],
       "helper_runner_paths": [],
-      "note_hash": "97aa78a7793163263936075639f99607c186b94dab02fe43ed601e643576e745",
+      "note_hash": "306ca2c85b3869888194982ce67f07ed57134e3ec13ad9f11f74e97d7e9a7f4e",
       "path": "docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
       "runner_path": "scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py",
       "title": "AC_phi_lambda Occupancy Formation-Append Non-Supply No-Go"
@@ -103643,7 +103651,7 @@
         "kinetic_isotropy_composition_closure_bounded_theorem_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "60e2d80447c5c1a2a3ef86c0a2e3cbb2259169ee5ec94adcfd05710675faf752",
+      "note_hash": "67670fb0879da1de5f4eb46acf657a391c013dc2c4316b757e46de5b72adf819",
       "path": "docs/PRIMITIVE_RETIREMENT_REVIEW_AFTER_FOUR_AXIOM_RESET_NOTE_2026-07-05.md",
       "runner_path": "scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py",
       "title": "Primitive Retirement Review After the Four-Axiom Reset"
@@ -106144,6 +106152,7 @@
         "ew_current_matching_rule_open_gate_note_2026-05-03",
         "rconn_derived_note",
         "yukawa_color_projection_theorem",
+        "yt_color_projection_correction_note",
         "r_base_group_theory_derivation_theorem_note_2026-04-24",
         "matter_radiation_equality_structural_identity_theorem_note_2026-04-24",
         "n_eff_from_three_generations_theorem_note_2026-04-24",
@@ -106197,6 +106206,7 @@
         "ckm_jarlskog_exact_nlo_closed_form_theorem_note_2026-04-25",
         "ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26",
         "ckm_kaon_epsilon_k_jarlskog_decomposition_theorem_note_2026-04-25",
+        "yt_zero_import_authority_note",
         "yt_ward_identity_derivation_theorem",
         "yt_uv_to_ir_transport_obstruction_theorem_note_2026-04-17",
         "yt_p1_bz_quadrature_full_staggered_pt_note_2026-04-18",
@@ -106209,7 +106219,7 @@
         "neutrino_retained_observable_bounds_theorem_note_2026-04-24"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cd885694b492b0d37121a2d2effc8a1a1e60bffdb7c25f3c2a767189387ca861",
+      "note_hash": "88d9aa9735469b9baa577d6e52db01a5091d35b38ac08f666fc2fe0972f05d8a",
       "path": "docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md",
       "runner_path": null,
       "title": "Usable Derived Values Index"
@@ -111911,7 +111921,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cc49f5c62dda8974823352a16ad164d7c6ee72257d795ec6cd4c63fe1f061a98",
+      "note_hash": "c5699bed38a59376890ef82d121df13d9f7d779c17ff6c97baa9912e04ff91f6",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": null,
       "title": "Active Review Queue"
@@ -111960,11 +111970,11 @@
         "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+        "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "60d3872069532f75ee3ec9f9f9993cb0501256d2a5d5935e5bd29bc7f6408de2",
+      "note_hash": "8b617ce922e599d6d613a0328fd6b55017cc81d58dc8a483e25c9bfe36b07180",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -126044,14 +126054,14 @@
     },
     "yt_explicit_systematic_budget_note": {
       "claim_id": "yt_explicit_systematic_budget_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "yt_exact_schur_normal_form_uniqueness_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b9fd91681d427d01c41a41644c98796d6b88002a23c8499cd27ef115cb811c88",
+      "note_hash": "82be9785f0d7f1a2fac0abaa447acf06f20a9536e43467714a0d82d4be292a4c",
       "path": "docs/YT_EXPLICIT_SYSTEMATIC_BUDGET_NOTE.md",
       "runner_path": "scripts/frontier_yt_explicit_systematic_budget.py",
       "title": "`y_t` Residual-Budget and Bridge Cross-Check Note"
@@ -126109,8 +126119,8 @@
     },
     "yt_flagship_boundary_note": {
       "claim_id": "yt_flagship_boundary_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "yt_zero_import_authority_note",
@@ -126119,7 +126129,7 @@
         "yt_explicit_systematic_budget_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8dc2c0b1bf200a9d96769fc5ef9925ac42b95746921042e95279ae09f51b0782",
+      "note_hash": "79318b2f7e0389cf0d769097a4b297b397b5a7c4fdc8366a5d6f707a49ca83cf",
       "path": "docs/YT_FLAGSHIP_BOUNDARY_NOTE.md",
       "runner_path": "scripts/frontier_yt_flagship_boundary_contract.py",
       "title": "y_t Flagship Boundary Note"
@@ -127586,8 +127596,8 @@
     },
     "yt_zero_import_authority_note": {
       "claim_id": "yt_zero_import_authority_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "alpha_s_derived_note",
@@ -127596,7 +127606,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "83079a33d1e2afe1c28784de3ecfc652858215d65e2e1340f37be22951273cdc",
+      "note_hash": "bb362874ba20ed94ba4908135aea83ffdca87891821f278a985ca3d10b3c25cf",
       "path": "docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md",
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "title": "y_t Lane: Zero-Import Authority"
@@ -128868,9 +128878,9 @@
       "decoration": 3,
       "meta": 328,
       "no_go": 333,
-      "none": 1212,
+      "none": 1209,
       "open_gate": 132,
-      "positive_theorem": 275
+      "positive_theorem": 278
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 2025,
@@ -128881,7 +128891,7 @@
       "open_gate": 206,
       "positive_theorem": 658
     },
-    "edge_count": 14547,
+    "edge_count": 14549,
     "leaf_count": 1315,
     "node_count": 3904,
     "root_count": 1109,

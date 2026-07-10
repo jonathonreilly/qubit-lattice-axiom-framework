@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 944 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1728 |
+| unaudited | 1729 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 134 |
+| ~~audited_conditional~~ | 133 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1360 |
-| `audited_conditional` | 134 |
+| `audited_conditional` | 133 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 35 |
-| `unaudited` | 2075 |
+| `unaudited` | 2076 |
 
 | claim_type | count |
 |---|---:|
@@ -102,9 +102,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 ### Runner classification (static heuristic)
 
 - runners classified: 3393
-- runners with (C) first-principles compute hits: 1793
+- runners with (C) first-principles compute hits: 1792
 - runners with (D) external comparator hits: 1091
-- decoration candidates (no C, no D): 709
+- decoration candidates (no C, no D): 710
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -1649,7 +1649,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `yt_ward_tadpole_cancellation_premise_derivation_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
-| `yt_zero_import_authority_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `acphilambda_cycle_flux_transport_face_inventory_2026-07-01` | decoration | ~~audited_decoration~~ | `decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | cross_family | codex-gpt-5.6 | A | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` |
@@ -23501,21 +23500,6 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
   - `U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md`
   - `YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md`
   - `YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md`
-- **auditor confidence:** high
-
-### `yt_zero_import_authority_note`
-
-- **Note:** [`YT_ZERO_IMPORT_AUTHORITY_NOTE.md`](../../docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Supported core is the lattice-scale Ward ratio y_t/g_s = 1/sqrt(6); the note's low-energy sqrt(8/9) physical package remains unclosed.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019f3fe1-e385-7de0-952f-5c4dcb8bf259`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note claims that the physical low-energy Yukawa is the Ward value times the derived color-projection factor sqrt(8/9), yielding zero-external-observable low-energy y_t and m_t central values.  _(class `B`)_
-- **chain closes:** False — The runner closes the lattice Ward identity and y_t_bare/g_bare = 1/sqrt(6), but explicitly does not certify the physical top-Yukawa readout, transport, or precision package. The missing step is a retained theorem deriving kappa_Y = 0, since the direct color-projection no-go says sqrt(8/9) is only a conditional connected-trace specialization.
-- **rationale:** Issue: the note calls sqrt(8/9) a derived color-projection factor for the physical low-energy Yukawa, but its retained no-go dependency says K_Y(0)=8/9 is only the connected-trace specialization and kappa_Y=0 is not derived. Why this blocks: the low-energy y_t/m_t package depends on that physical Yukawa-side selector, so the claimed zero-import derived central values do not follow from the allowed packet. Repair target: add a retained scalar/taste-condensate matching theorem deriving kappa_Y=0 and a runner/authority for the low-energy transport package, or narrow the note to a conditional scenario. Claim boundary until fixed: y_t/g_s=1/sqrt(6) is runner-supported on the lattice surface; the sqrt(8/9) low-energy y_t/m_t package is conditional.
-- **open / conditional deps cited:**
-  - `YT_COLOR_PROJECTION_CORRECTION_NOTE.md`
 - **auditor confidence:** high
 
 ### `yt_zero_import_chain_note`

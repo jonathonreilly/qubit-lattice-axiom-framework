@@ -1,0 +1,54 @@
+loop_slug: d3-bar-location
+created: 2026-07-10
+mode: campaign (owner-commissioned "commission the d=3 successor":
+  pin the registration bar location on Z^3, the measurement the
+  registration-bar synthesis deferred and the d3 pilot bounded)
+execution_split: workhorse (codex exec workers on gpt-5.6-sol at
+  reasoning effort max; supervisor writes bounded specs, reviews every
+  worker line, executes all runners personally; overnight full run on
+  the owner's machine under the hard memory guard)
+predecessors: >
+  d=1 block (REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09):
+  criterion shape derived; d=1 geometry blocks R >= 2 structurally.
+  d3 pilot (D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10, PR
+  #5116): BAR-NOT-PINNED — single-qubit registers under the uniform
+  quench peak at 0.051 bits vs the ~0.66-bit content gate and
+  recohere; six channels measured near-independent (geometric
+  obstruction absent in d=3); blocker = register capacity/persistence.
+design_mandate: >
+  Same Z^3 open 3^3 cube and orbit-reduced invariant-sector machinery.
+  Two predeclared changes, separately or together, chosen by the
+  design scout and frozen before any code: (i) coarser registers —
+  disjoint multi-qubit fragment blocks with declared tie-breaks;
+  (ii) pointer-contrast preparation — per-site-class Bloch vectors
+  (rotation-invariant), a recording inner shell against a quiet
+  exterior, mirroring the d=1 kicked-charge protocol. d=2 is not a
+  substitute; the bar location can be dimension-dependent.
+machine_budget: 16 GB RAM / 10-core M4; RSS guard 10 GiB; overnight
+  wall-clock envelope <= 14 h; pilot cadence was ~128 s/step at
+  1-2-qubit marginals — larger/more marginals multiply this and the
+  design must budget it explicitly.
+blocks: >
+  Block01: design scout memo (worker draft, supervisor line review,
+  protocol frozen). Block02: engine extension (k-qubit fragment
+  marginals, per-class preparation) + runner, worker-drafted to the
+  frozen protocol. Block03: supervisor validate execution. Block04:
+  overnight full run, bounded note, PR (base = the d3 pilot branch).
+success_bar: >
+  The deferred questions, answered on Z^3: does excess-gated
+  R_ind >= 2 onset occur; theta* with delta-insensitivity factor
+  < 1.5 over delta in {0.05, 0.10, 0.20}; bar location vs the sparse
+  window theta >= 0.2. BAR-NOT-PINNED and BAR-BELOW-WINDOW remain
+  substantive outcomes; physics absence is never MACHINERY-FAIL; no
+  retuning after the freeze.
+current_block: block01 — design scout worker
+current_branch: physics-loop/d3-bar-location-block01-20260710
+  (base = d3-registration-pilot-block01 branch)
+worktree: /Users/jonBridger/tp-matter-mass-wep
+imports: the QD record reading (standing convention); the pilot's
+  declared-comparator caveats retained verbatim (not basis-neutral;
+  TFIM is not the gauge-native substrate; finite volume).
+discipline: physics-loop standard; vocab_lint before commits; commit
+  early; stop and write up on any axiom trigger.
+next_exact_action: launch design-scout worker; review memo line-by-line
+stop_condition_hit: none

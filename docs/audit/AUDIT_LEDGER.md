@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 944 |
+| **retained_bounded** | 945 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 26 |
-| unaudited | 1756 |
+| unaudited | 1755 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1357 |
+| `audited_clean` | 1358 |
 | `audited_conditional` | 114 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 32 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 29 |
-| `unaudited` | 2101 |
+| `unaudited` | 2100 |
 
 | claim_type | count |
 |---|---:|
@@ -559,6 +559,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `free_dirac_poincare_stone_differential_generator_coincidence_common_core_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-current | A | - |
@@ -8281,6 +8282,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For G^-1(p)=m^2+sum_mu(2 sin(p_mu/2))^2, qhat_mu V^mu(p,q)=G^-1(p+q)-G^-1(p) with qhat_mu=2 sin(q_mu/2) and V^mu=2 sin(p_mu+q_mu/2).  _(class `A`)_
 - **chain closes:** True — Per component, [2 sin((p_mu+q_mu)/2)]^2-[2 sin(p_mu/2)]^2=4 sin(q_mu/2) sin(p_mu+q_mu/2)=qhat_mu V^mu, and the mass term cancels. The naive residual sign follows by subtracting the point-split identity from qhat dot V_naive.
 - **rationale:** The load-bearing identity is a direct trigonometric algebraic closure over the definitions stated in the packet, not a renaming or tuned numerical match. The runner source genuinely samples random momenta and computes both the Ward residual and the naive-current seagull residual, rather than printing hard-coded pass values. The source note's scope is narrow and its guardrails explicitly exclude full stress-tensor, cubic-seagull, Belinfante, diffeomorphism, and gravity-sign closure.
+- **auditor confidence:** high
+
+### `frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03`
+
+- **Note:** [`FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md`](../../docs/FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** T1–T3 were audited only for the note's site-functional binary-tag record model and exhibited covariant availability rule; T4 was audited only for finite-initial-support, finite-registration-per-stage histories, with no dynamics, rate, clock, or GR interpretation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00062-frozen_region_record_saturat`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Permanence makes realized record configurations nested with agreeing values, so recorded-site domains and recorded-neighbor value sets are monotone; consequently saturation prevents further first-registrations locally and preserves the exhibited rule's possibility-level containment.  _(class `C`)_
+- **chain closes:** True — The accepted Record and Lattice axioms supply permanence, one-record-per-site uniqueness, and the infinite lattice; the remaining conclusions follow by exact finite constructions, set monotonicity, and elementary finiteness arguments. Rule-dependent and realized-sector conclusions are explicitly restricted to their stated model and scope.
+- **rationale:** The primary runner performs substantive exact set and lattice computations rather than merely printing verdicts or importing contested results. Its exhaustive T1 enumeration, explicit T2 histories, T3 relaxation and cavity witnesses, covariance checks, and T4 finite/infinite counting agree with the scoped statements. The sole cited authority is explicitly flagged as an accepted axiom premise, and the note clearly records the additional model and sector restrictions needed for closure.
 - **auditor confidence:** high
 
 ### `frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18`

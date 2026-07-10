@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 387,
     "high": 265,
-    "leaf": 740,
+    "leaf": 739,
     "medium": 498
   },
   "cycle_break_target_count": 10,
@@ -36088,30 +36088,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_frozen_region_saturation_finality_2026_07_03.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "graded_constraint_interface_consistency_bounded_note_2026-07-04",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -56645,6 +56621,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 183,
-  "total_pending": 1890
+  "ready_count": 182,
+  "total_pending": 1889
 }

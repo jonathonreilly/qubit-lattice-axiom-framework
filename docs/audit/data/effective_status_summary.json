@@ -33,7 +33,7 @@
   ],
   "cycles_detected": 10,
   "effective_status_counts": {
-    "audit_in_progress": 7,
+    "audit_in_progress": 6,
     "audited_conditional": 138,
     "audited_failed": 14,
     "audited_numerical_match": 9,
@@ -78,7 +78,7 @@
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "meta": 347,
     "open_gate": 28,
-    "retained": 196,
+    "retained": 197,
     "retained_bounded": 945,
     "retained_no_go": 212,
     "retained_pending_chain": 13,

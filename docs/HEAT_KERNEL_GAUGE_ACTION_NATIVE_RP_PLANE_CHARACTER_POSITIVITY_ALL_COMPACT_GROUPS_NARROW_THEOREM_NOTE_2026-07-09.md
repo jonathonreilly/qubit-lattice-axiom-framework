@@ -1,15 +1,14 @@
-# Heat-Kernel Gauge Action: The Reflection-Plane Character-Positivity Step Is Manifest for ALL Compact Groups (Native RP Mechanism, No Group-Dependent Certificate)
+# Heat-Kernel Gauge Action: Manifest Reflection-Plane Character Positivity for a Specified Central Heat Semigroup
 
 **Date:** 2026-07-09
 **Claim type:** bounded_theorem
-**Status authority:** independent audit lane only. This source note does not set
-or predict an audit outcome.
+**Status:** source-side bounded proposal; independent audit required.
 **Primary runner:**
 [`scripts/audit_companion_heat_kernel_native_rp_plane_character_positivity_2026_07_09.py`](../scripts/audit_companion_heat_kernel_native_rp_plane_character_positivity_2026_07_09.py)
 **Cached output:**
 [`logs/runner-cache/audit_companion_heat_kernel_native_rp_plane_character_positivity_2026_07_09.txt`](../logs/runner-cache/audit_companion_heat_kernel_native_rp_plane_character_positivity_2026_07_09.txt)
 
-## The gap this note addresses
+## Comparison boundary
 
 The retained-bounded Wilson temporal-gauge RP bridge
 ([`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md),
@@ -17,26 +16,27 @@ ledger `effective_status = retained_bounded`) runs a three-step mechanism on the
 Wilson plane weight: (W1) reflection split of the action across the temporal
 reflection plane, (W2) **nonnegativity of the character coefficients of the
 plane (straddling) factor**, (W3) the integrated reflected Gram matrix is PSD
-because the plane factor is a norm-square kernel. Step (W2) is the load-bearing
-positivity input, and on the **Wilson** weight it is **group-dependent**:
+because the plane factor is a norm-square kernel. Step (W2) is load-bearing.
 
-- `Z_N`: exact finite DFT — coefficients computed and checked nonneg.
-- `U(1)`: modified Bessel `I_n(β) > 0` — positive-series certificate.
-- `SU(2)`: numeric/Monte-Carlo evidence only.
-- `SU(N≥3)`: **not derivable by that route.** Positivity of a class function
-  does not imply nonnegative character coefficients on a nonabelian group, and
-  the note's §4 conformance repair (PR #5050) rescoped its `SU(N≥3)` Wilson
-  positivity statement to the Osterwalder–Seiler **literature comparator**,
-  naming the heat-kernel action as the forward derivation path.
-
-This note takes exactly that named forward path.
+This note does **not** claim that the Wilson weight lacks a general positivity
+route. For a finite-dimensional unitary representation `R`,
+`exp[(β/2N)(χ_R+χ_R̄)]` expands as a positive power series in tensor-product
+characters, and every tensor product decomposes into irreducible characters
+with nonnegative integer multiplicities. That representation-ring route gives
+nonnegative Wilson character coefficients for compact `G`. The earlier
+group-dependent obstruction framing is therefore not an authority used here
+and requires separate source repair. This note instead proves the parallel
+heat-semigroup construction, whose coefficients and semigroup law are
+manifest from the spectral definition.
 
 ## Claim (narrow theorem, bounded)
 
-Let `G` be any compact group, `λ` its irreps with dimension `d_λ` and Casimir
-`C₂(λ)` (for the Lie cases, `C₂` in the retained trace-form normalization
-`Tr(T_a T_b) = δ_ab/2`; for finite/abelian testbeds, any nonnegative-spectrum
-group-Laplacian eigenvalue `λ_q ≥ 0` in place of `C₂`). Define the heat-kernel
+Let `G` be a compact Lie group equipped with a specified positive
+bi-invariant Laplacian, and let `λ` label its irreducible representations with
+dimension `d_λ` and nonnegative Laplacian eigenvalue `C₂(λ)`. For the `SU(N)`
+cases, `C₂` uses the retained trace-form normalization
+`Tr(T_a T_b) = δ_ab/2`. The finite and abelian runner testbeds use the explicitly
+specified nonnegative central generators stated below. Define the heat-kernel
 (HK) single-plaquette weight
 
 ```
@@ -49,12 +49,12 @@ unaudited; the SU(3) fundamental coefficient there, `exp(−2/3)` at `t = 1`,
 is `exp(−t·C₂/2)` with `C₂(fund) = 4/3` — the runner cross-checks this
 convention alignment). Then:
 
-- **H1 (spectral positivity — manifest, all compact `G`).**
-  `c_λ(t) = d_λ e^{−t C₂(λ)/2} > 0` for **every** irrep of **every** compact
-  group and every `t > 0`. The (W2)-analog on the HK weight requires **no**
-  group-dependent certificate: no DFT, no Bessel positivity, no Monte-Carlo
-  estimate. In particular it holds for `SU(3)` and all `SU(N)` — exactly the
-  cases where the Wilson-weight route is not derivable.
+- **H1 (spectral positivity — manifest for the specified heat semigroup).**
+  `c_λ(t) = d_λ e^{−t C₂(λ)/2} > 0` for **every** irrep of every compact Lie
+  group carrying the specified positive bi-invariant Laplacian and every
+  `t > 0`. The (W2)-analog on the HK weight follows directly from the spectral
+  definition. In particular it holds for `SU(3)` and all `SU(N)` with the
+  displayed Casimir convention.
 
 - **H2 (plane factor is a norm-square kernel).** `K_t` is real (the spectrum
   is closed under conjugation with `d_λ̄ = d_λ`, `C₂(λ̄) = C₂(λ)`), and by the
@@ -66,7 +66,7 @@ convention alignment). Then:
   ```
 
   a positive combination (`c_λ > 0`) of manifest Gram products — a norm-square
-  kernel in matrix-element features, for every compact `G`.
+  kernel in matrix-element features on this heat-semigroup surface.
 
 - **H3 (integrated two-slice RP Gram PSD, natively).** On the bridge note's
   two-slice temporal-gauge carrier (temporal gauge `U_0 = 1`, periodic spatial
@@ -80,13 +80,15 @@ convention alignment). Then:
   `G = W diag(κ) W†` with `κ ≥ 0`. This instantiates the retained gauge-half
   Cauchy–Schwarz hypotheses
   ([`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md),
-  ledger `effective_status = retained`) on the HK weight for **all** compact
-  `G` — including `SU(3)`, where the runner runs the integrated Gram check the
-  Wilson bridge could not derive.
+  ledger `effective_status = retained`) on the HK weight for compact Lie `G`
+  with the specified heat semigroup. The runner exercises the integrated Gram
+  numerically for `SU(2)` and `SU(3)` and exactly for the listed finite
+  testbeds; those checks support the factorization but are not its proof.
 
-- **H4 (pointwise positivity — Boltzmann sensibility).** `K_t > 0` pointwise,
+- **H4 (checked pointwise positivity — Boltzmann sensibility).** For the
+  groups and parameter values exercised by the runner, `K_t > 0` pointwise,
   so `S_HK = −log K_t` is a real action and the HK weight is a genuine
-  Boltzmann factor. Certified per group: `Z_N` exact evaluation; `U(1)` via
+  Boltzmann factor on those checked surfaces. Certified per group: `Z_N` exact evaluation; `U(1)` via
   the Poisson-summation (Jacobi theta) identity
   `Σ_n e^{−tn²/2} e^{inθ} = √(2π/t) Σ_m e^{−(θ−2πm)²/(2t)}` — a sum of
   manifestly positive Gaussian terms; `SU(2)` and `SU(3)` by a
@@ -94,24 +96,21 @@ convention alignment). Then:
   exceeds the certified evaluation error), exercised at the runner's printed
   `t` values. H4 is **not** needed for H3 (the
   Gram argument uses realness and spectral positivity, not pointwise
-  positivity); it is stated because a candidate *action* must have one.
+  positivity). No all-compact-group pointwise-positivity claim is inferred
+  from these finite testbeds.
 
-**Bounded scope.** The theorem is about the HK **candidate** weight on the
-narrow two-slice carrier. It upgrades the RP *mechanism* from
-group-dependent-certificate to manifest **on that candidate**; it does not
-select the candidate (see boundary below).
+**Bounded scope.** The theorem is about the HK **candidate** weight for a
+specified central heat semigroup on the narrow two-slice carrier. It makes
+the RP coefficient step manifest on that candidate; it does not select the
+candidate or establish pointwise positivity beyond the checked groups and
+parameters (see boundary below).
 
-## Why this is the structurally honest fix
+## Why the heat-semigroup form is useful
 
-The Wilson-weight (W2) obstruction is real mathematics: `exp(β·Re χ_fund)` has
-character coefficients given by group integrals that are not sign-definite
-term-by-term for nonabelian `G`, and no general positivity theorem applies.
-The HK weight **defines** the plane factor spectrally — positivity is not a
-property to be certified after the fact; it is the *definition's first line*.
-The group-dependence of (W2) is thereby located precisely: it is a property of
-the **Wilson parametrization** of the plane weight, not of the RP mechanism,
-the carrier, the reflection, or the gauge group. On the spectral (HK)
-parametrization the mechanism is uniform in `G`.
+The HK weight defines the plane factor spectrally, so coefficient positivity
+is the definition's first line and the semigroup law is explicit. This is a
+clean construction in its own right. It is not evidence for a Wilson-side
+obstruction, and the theorem's value does not depend on such an obstruction.
 
 Two structural bonuses, both re-proved in the runner rather than cited:
 
@@ -160,12 +159,9 @@ Two structural bonuses, both re-proved in the runner rather than cited:
 | `SU(3)` | manifest + tail bound | exact to 1e−11 (fund + adjoint) | seeded MC, tolerance-gated | grid + Lipschitz + tail certificate |
 
 The `SU(2)`/`SU(3)` integrated Grams are Monte-Carlo estimates (fixed seeds,
-printed tolerances) — same evidentiary class as the bridge note's Part E
-`SU(2)` check, now including the `SU(3)` case that the Wilson route had no
-derivable (W2) for. The deterministic content (H1, H2, semigroup,
-normalization, H4 certificates) is exact or certified with explicit error
-budgets, and is where the theorem's force lives: **the group-dependent step of
-the mechanism is gone by construction.**
+printed tolerances). The deterministic H1/H2 coefficient algebra and
+semigroup/normalization identities are exact on their stated surface. H4 is
+certified only for the groups and parameter values listed in the table.
 
 ## What this note does NOT claim
 
@@ -180,22 +176,24 @@ the mechanism is gone by construction.**
   (`RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06`) is **audit_in_progress**
   on the live ledger. Nothing here leans on any of them; they are context
   pointers only.
-- **No modification of the Wilson bridge note.** Its Wilson-side scoping
-  (including the `SU(N≥3)` Osterwalder–Seiler comparator framing after
-  PR #5050) stands as audited. This note adds a parallel result on a different
-  weight; it does not edit, retire, or re-grade anything.
+- **No Wilson obstruction claim.** This note adds a parallel result on a
+  different weight. It neither endorses nor depends on the Wilson bridge's
+  `SU(N≥3)` comparator framing; the representation-ring route above shows
+  that framing requires separate source repair.
 - **No fermion factor, no full OS reconstruction.** Two-slice gauge-sector
   Gram positivity on a narrow carrier — not multi-slice transfer-matrix
   positivity (`AXIOM_FIRST_RP_TWO_STEP...` lineage), not a Hamiltonian, not a
   continuum limit, and no coupling value is fixed (`t` is a free positive
   parameter throughout; results are exercised at several `t`).
-- **No new axiom, no import.** The HK candidate, the carrier, the reflection,
+- **No new axiom.** The HK candidate, the carrier, the reflection,
   the observable algebra, and the trace-form normalization are existing
   framework content; character theory and Poisson summation are standard
   mathematical methods re-verified numerically by the runner. The
   Osterwalder–Seiler and textbook references below are **comparators only**
-  (already the bridge note's comparators — no new comparator is introduced);
-  every positivity statement used here is re-proved by the paired runner.
+  (already the bridge note's comparators — no new comparator is introduced).
+  The broad H1/H2 statement follows from the specified spectral definition;
+  the paired runner verifies its listed finite, abelian, and `SU(2)`/`SU(3)`
+  instances rather than exhaustively testing every compact Lie group.
 - **No audit-status statement.** Grades are set exclusively by the independent
   audit lane; this note predicts nothing.
 
@@ -252,8 +250,7 @@ above):** `HEAT_KERNEL_UNIQUE_DIFFUSION_KERNEL_AMONG_CANDIDATE_GAUGE_ACTIONS_NAR
   `t ∈ {0.3, 1.0, 2.5}`), plus the manifest factorization `G = W diag(κ) W†`
   with plane-kernel eigenvalues `κ ≥ 0` reproducing the direct Gram; the
   **dropped-conjugation negative control** (non-PSD); `U(1)` quadrature Gram;
-  `SU(2)` seeded MC Gram; **`SU(3)` seeded MC Gram** — the check the Wilson
-  bridge could not derivably run.
+  `SU(2)` seeded MC Gram; **`SU(3)` seeded MC Gram**.
 
 All checks are deterministic (fixed seeds); the runner prints
 `TOTAL: PASS=N FAIL=0` on success.
@@ -271,14 +268,10 @@ All checks are deterministic (fixed seeds); the runner prints
 
 ## Closing
 
-The bridge note ends its `SU(N≥3)` discussion at a comparator because the
-Wilson plane weight's character positivity is not derivable there. On the
-spectral heat-kernel parametrization of the same plane weight, that entire
-step is manifest for every compact group, the retained gauge-half
-Cauchy–Schwarz mechanism runs natively (including the integrated `SU(3)` Gram
-exercised here), the weight is automatically Haar-normalized and pointwise
-positive, and the antilinear-reflection control still separates the mechanism
-from vacuous positivity. The next path this opens: connecting this native-RP
-property to the action-*selection* question (the unaudited HK-candidate lanes
-above), where RP-for-all-`G` is now a structural property the HK candidate
-carries and the Wilson parametrization does not derivably share.
+On the spectral heat-semigroup parametrization, coefficient positivity is
+manifest, the retained gauge-half Cauchy–Schwarz mechanism runs natively, and
+the antilinear-reflection control still separates the mechanism from vacuous
+positivity. The runner checks the integrated `SU(3)` Gram as a numerical
+instance and certifies pointwise positivity only on its enumerated group and
+parameter surfaces. The remaining open path is action selection; this note
+does not choose the heat-kernel candidate or rule out the Wilson route.

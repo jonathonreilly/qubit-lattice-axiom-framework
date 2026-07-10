@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 938 |
+| **retained_bounded** | 939 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 27 |
-| unaudited | 1749 |
+| unaudited | 1748 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 15 |
-| `audited_clean` | 1352 |
+| `audited_clean` | 1353 |
 | `audited_conditional` | 122 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2096 |
+| `unaudited` | 2095 |
 
 | claim_type | count |
 |---|---:|
@@ -1144,6 +1144,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
+| `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -17336,6 +17337,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the supplied finite model, all-state pointer populations are constant for the continuous flow iff [H_int, Pi_S] = 0 and across a unitary step iff [U, Pi_S] = 0, while H_int = g sigma_z(S) tensor sum_k sigma_x(E_k) at t = pi/(4g) produces orthogonal conditional fragment states and hence full redundant pointer records under the supplied readout bridges.  _(class `C`)_
 - **chain closes:** True — The spectral-projector Heisenberg identity proves both all-state iff statements, and the controlled rotations at t = pi/(4g) make the two conditional states of every fresh fragment orthogonal. Exact finite counterexamples establish the claimed quantifier boundaries without importing a dynamics or observable selection theorem.
 - **rationale:** The exact projector identities, controlled-rotation construction, and finite witnesses close on the explicitly supplied bounded model, and the SHA-pinned runner completes with PASS=56 FAIL=0. An independent closed-form/product-unitary recomputation verified every displayed coefficient and numerical surface, including H(Pi_S), the plateau surplus, interpolation sequence, noncommuting-log norm, fresh-subspace commutator, nonlocal-control excess, and transfer-sector weight. The N1-N8 gate passes at the note's narrow scope: five distinct overextension routes have exact counterexamples, the four collapsed bound groups are independent, no hidden wall or residual mismatch remains, no new-axiom claim is made, and the strongest all-state steelman is already stated as the quantifier boundary. Residual risk is explicit rather than hidden: the carrier, pointer, Darwinism interpretation, singleton readout bridge, interaction, and persistence setup are supplied hypotheses, so this result remains bounded and does not derive physical record-production dynamics.
+- **auditor confidence:** high
+
+### `record_formation_to_kraus_isometry_bridge_2026-06-06`
+
+- **Note:** [`RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md`](../../docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The explicit finite qubit pointer model with fresh blank fragments and the cited controlled-copy dynamics yields a calibrated projective record-write isometry and hence a projective Kraus/CPTP instrument with repeat-stable selective branches.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153334Z-4f7da8c1-00004-record_formation_to_kraus_is`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** At theta = pi/4 the controlled-copy kick produces orthogonal record states, so a fixed record-basis calibration gives W|psi> = sum_r P_r|psi> tensor |r>, and projector completeness then gives W^dagger W = sum_r P_r = I.  _(class `A`)_
+- **chain closes:** True — The retained-bounded controlled-copy authority algebraically derives the orthogonal record labels and calibrated W, while the retained-bounded Kraus authority and the note's projector calculation establish the resulting instrument properties. Closure is only for the stated finite controlled-copy/fresh-fragment model.
+- **rationale:** The load-bearing bridge is a direct finite-dimensional operator calculation over independent retained-bounded inputs, not a definition, tuned numerical match, or external comparison. The supplied proof correctly derives orthogonal controlled-copy record states, and the subsequent isometry, Kraus resolution, CPTP map, and repeat-read properties follow algebraically. The primary runner independently checks the downstream projector/Kraus algebra, although its controlled-copy-to-W scope flag is hard-coded; that link remains established by the fully supplied cited-authority proof.
 - **auditor confidence:** high
 
 ### `record_function_finite_sector_algebra_2026-06-05`

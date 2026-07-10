@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/rp_coupled_two_slice_gauge_staggered_berezin_gram_2026_07_10.py
+runner_sha256: 11733beae536c075c055cb5a36cead85640ed1cc0a440a62733c9f61a5bfb464
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 4.88
+status: ok
+----- stdout -----
+Coupled two-slice SU(3) + staggered Berezin/OS Gram runner
+parameters: d=1 L_s=2 N_c=3 beta=0.75 m=0.8 samples=100000 batches=10 seed=20260710
+
+----------------------------------------------------------------------------------------
+BLOCK 1: one-site, one-color exact Berezin Gram
+----------------------------------------------------------------------------------------
+  basis = {1, bar_chi_1, chi_1, bar_chi_1 chi_1}, m=1
+  Gram =
+   [[5/4, 0, 0, -1],
+      [0, 1/2, 0, 0],
+      [0, 0, 1/2, 0],
+      [-1, 0, 0, 1]]
+  principal minors = 5/4, 1/2, 1/2, 1, 5/8, 5/8, 1/4, 1/4, 1/2, 1/2, 5/16, 1/8, 1/8, 1/4, 1/16
+  [PASS] toy Gram is exactly Hermitian
+  [PASS] all toy principal minors are nonnegative exact rationals  (min principal minor=1/16)
+  [PASS] toy Gram matches the sign-fixing anchor
+
+----------------------------------------------------------------------------------------
+BLOCK 2: exact sign and reflection falsifiers
+----------------------------------------------------------------------------------------
+  [PASS] flipped relative temporal-hop sign is decisively non-PSD  (min exact principal minor=-1/2)
+  [PASS] theta without scalar conjugation fails on the complex complete basis  (wrong G_00=-5/4 and wrong G_03=G_30=-i (non-Hermitian))
+  [PASS] site-reflection plane on slice 0 is non-PSD  (min exact principal minor=-5/4)
+
+----------------------------------------------------------------------------------------
+BLOCK 3: two-site, one-color exact tensor test
+----------------------------------------------------------------------------------------
+  basis masks=(0, 1, 2, 4, 8, 5, 10, 15); principal minors checked=255
+  [PASS] two-site exact Gram is Hermitian
+  [PASS] two-site exact Gram is PSD by every exact principal minor  (min principal minor=5625/1048576)
+
+----------------------------------------------------------------------------------------
+BLOCKS 4-6: coupled d=1, L_s=2, N_c=3 Haar x exact-Wick Monte Carlo
+----------------------------------------------------------------------------------------
+  completed batch 1/10
+  completed batch 2/10
+  completed batch 3/10
+  completed batch 4/10
+  completed batch 5/10
+  completed batch 6/10
+  completed batch 7/10
+  completed batch 8/10
+  completed batch 9/10
+  completed batch 10/10
+  BLOCK 4 baseline: min_eig=+3.290451e-05, mc_noise=4.531e-03, 3*mc_noise=1.359e-02, herm_err=3.076e-03
+  baseline eigenvalues=[3.290451e-05 1.317074e-04 4.467463e-04 5.018293e-04 5.535184e-04
+ 2.600731e-03 3.766304e-03 5.884291e-03 9.838389e-03 1.665369e-02
+ 3.842133e-02 4.628815e-02 7.250166e-02 1.996639e+00]
+  [PASS] BLOCK 4 coupled mixed Gram is PSD within 3*mc_noise  (min eig=+3.290451e-05, negative allowance=1.359e-02)
+  [PASS] BLOCK 4 Hermiticity residual is sampling-sized  (herm_err=3.076e-03, allowance=4.531e-02)
+  [PASS] BLOCK 4 sampling noise is controlled  (mc_noise=4.531e-03)
+  BLOCK 5 flipped crossing: min_eig=-2.487113e-02, mc_noise=3.497e-03, 3*mc_noise=1.049e-02
+  BLOCK 5 no conjugation: min_eig=-5.651289e-02, mc_noise=4.531e-03, 3*mc_noise=1.359e-02, herm_err=1.634e-01
+  [PASS] BLOCK 5 flipped crossing-hop sign is decisively non-PSD  (min eig=-2.487113e-02, decisive threshold=-1.049e-02)
+  [PASS] BLOCK 5 no-conjugation reflection is decisively non-PSD  (min eig=-5.651289e-02, decisive threshold=-1.359e-02)
+  [PASS] BLOCK 6 staggered hopping matrix is anti-Hermitian  (max ||M+M^dag||_max=0.000e+00)
+  [PASS] BLOCK 6 det(M+mI) is real and strictly positive per sample  (max |Im det|=3.851e-15, min Re det=7.652436e-01)
+
+----------------------------------------------------------------------------------------
+BLOCK 7: retained dependency-status guard
+----------------------------------------------------------------------------------------
+  [PASS] all four load-bearing dependency rows are clean retained-grade  (su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09:audited_clean/retained; gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10:audited_clean/retained; staggered_only_det_positivity_case_a_note_2026-05-17:audited_clean/retained; axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:audited_clean/retained_bounded)
+
+TOTAL PASS=16 FAIL=0
+
+----- stderr -----
+

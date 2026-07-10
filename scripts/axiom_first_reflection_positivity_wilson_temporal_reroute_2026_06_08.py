@@ -27,6 +27,8 @@ import su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09 as 
 
 
 NOTE_PATH = ROOT / "docs" / "AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
+COUPLED_SUPPLIER_NAME = "RP_COUPLED_TWO_SLICE_GAUGE_STAGGERED_BEREZIN_GRAM_NARROW_THEOREM_NOTE_2026-07-10.md"
+COUPLED_SUPPLIER_PATH = ROOT / "docs" / COUPLED_SUPPLIER_NAME
 LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 BASE_RUNNER_PATH = ROOT / "scripts" / "axiom_first_rp_two_step_transfer_matrix_positivity.py"
 
@@ -148,6 +150,17 @@ def check_reroute_guard() -> None:
     stale = [phrase for phrase in forbidden_phrases if phrase in text]
     check("required reroute phrases present", not missing, detail=", ".join(missing))
     check("stale Wilson sign-repair phrases absent", not stale, detail=", ".join(stale))
+    check(
+        "parent note links the coupled-Gram supplier",
+        f"[{COUPLED_SUPPLIER_NAME}]({COUPLED_SUPPLIER_NAME})" in text,
+    )
+    coupled_text = COUPLED_SUPPLIER_PATH.read_text(encoding="utf-8") if COUPLED_SUPPLIER_PATH.exists() else ""
+    check(
+        "coupled-Gram supplier exists and pins tensor-product entangled coverage",
+        COUPLED_SUPPLIER_PATH.exists()
+        and "tensor product" in coupled_text.lower()
+        and "entangled" in coupled_text.lower(),
+    )
 
     retained_grades = {"retained", "retained_bounded", "retained_no_go"}
     required_claim_types = {

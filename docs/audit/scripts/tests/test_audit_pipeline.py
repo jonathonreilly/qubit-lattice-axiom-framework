@@ -2600,6 +2600,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "No alternate route is needed because the construction removes the scoped obstruction.",
             "Neither admission is needed once the theorem resolves the obstruction.",
             "Nothing further is required because the theorem closes the remaining boundary.",
+            "No obstruction exists after the exact construction.",
+            "No wall exists because the identity closes it.",
         ):
             with self.subTest(rationale=rationale):
                 self.assertFalse(

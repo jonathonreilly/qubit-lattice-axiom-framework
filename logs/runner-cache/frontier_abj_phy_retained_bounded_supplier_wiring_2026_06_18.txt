@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py
-runner_sha256: e5e00b1ace48ad66925e50e30cbc31682339d8d85b17915069c1b960cc5d1c65
-timeout_sec: 120
+runner_sha256: 9b7f0f58cf9dde46b8e931713366860c27dd8b865a461b53528899e4d1251052
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.44
 status: ok
 ----- stdout -----
 == T1: current supplier status and scope ==
@@ -13,6 +13,8 @@ status: ok
 [PASS] ledger scope carries the derived LH charge-table clause
 [PASS] ledger scope includes current LH-doublet surface needles
 [PASS] ledger scope includes current exclusion needles
+[PASS] L2 matter-assignment authority is retained-grade or decoration under a retained parent  -- decoration_under_graph_first_su3_integration_note (parent graph_first_su3_integration_note: retained)
+[PASS] L3 alpha=1/3 normalization authority is retained-grade in the current ledger  -- retained_bounded
 == T2: source-note wiring and guardrails ==
 [PASS] ABJ note cites the new P-HY supplier wiring note
 [PASS] ABJ note routes B1 through retained-bounded P-HY supplier
@@ -21,6 +23,8 @@ status: ok
 [PASS] supplier note names the exact target blocker
 [PASS] supplier note forbids new axioms or admissions
 [PASS] supplier note keeps remaining ABJ blockers explicit
+[PASS] supplier note carries a direct dependency edge to the L2 matter-assignment authority
+[PASS] supplier note carries a direct dependency edge to the L3 alpha=1/3 normalization authority
 [PASS] hypercharge note supplies the complete operator/eigenblock mapping
 [PASS] hypercharge note declares normalization and full-spectrum boundaries
 == T3: exact B1 anomaly arithmetic from supplied LH Y values ==
@@ -31,7 +35,7 @@ status: ok
 [PASS] Tr[SU(3)^3] LH = 2  -- 2
 [PASS] anti-fundamental edge case reverses the cubic-anomaly sign
 [PASS] B1 still has exactly three nonzero ABJ-relevant traces
-TOTAL: PASS=22 FAIL=0
+TOTAL: PASS=26 FAIL=0
 
 ----- stderr -----
 

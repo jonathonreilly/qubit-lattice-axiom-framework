@@ -2,7 +2,8 @@
 
 **Date:** 2026-04-17 (residual-env structural identification);
 2026-05-16 (witness replaced by computed Wilson coefficients on finite box);
-2026-05-23 (scope repaired to a bounded finite coefficient packet).
+2026-05-23 (scope repaired to a bounded finite coefficient packet);
+2026-07-10 (exact geometry-dependence boundary added).
 **Type:** bounded_theorem
 **Claim scope (post-2026-05-23 narrowing):** the load-bearing claim is only
 the finite source-sector coefficient packet checked by
@@ -28,6 +29,18 @@ equals the compressed unmarked spatial Wilson environment. It also does not
 claim all-weight closure, a full unmarked spatial-environment tensor-transfer
 operator, explicit `beta = 6` Perron/Jacobi data, analytic `P(6)`, or any
 repo-wide plaquette repinning.
+
+The 2026-07-10 deep-hard companion proves that the actual finite Wilson
+environment cannot carry a geometry-free coefficient sequence: the first
+allowed strong-coupling order of the fundamental environment coefficient is
+three on the standard `L_s=2` periodic spatial complex and five on the
+standard `L_s=3` periodic spatial complex. Consequently every physical target
+in this note must carry `L_s`; the selected boundary condition must also be
+stated when defining the finite measure. We write the fully specified objects
+as `rho_(p,q)^(env,L_s,BC)(beta)` and `R_(L_s,beta,BC)^env`. The exact result
+rules out universal identification of the finite single-link packet with both
+tested PBC multi-link environments; it does not classify every finite complex
+or boundary condition.
 
 ## Question
 
@@ -98,7 +111,7 @@ identity named by the earlier parent theorem wording.
 
 The remaining theorem-grade target is still:
 
-`R_beta^actual = compressed unmarked spatial Wilson environment`,
+`R_(L_s,beta,BC)^actual = compressed unmarked spatial Wilson environment`,
 
 after stripping the marked half-slice factors and the normalized local
 mixed-kernel factor from the source-sector transfer law.
@@ -108,6 +121,52 @@ actual stripped residual operator, not merely insert the finite Wilson
 coefficient packet. It must also handle all-weight support, the full
 spatial-environment tensor-transfer/Perron construction, and the boundary
 readout at `beta = 6`.
+
+### 2026-07-10 exact geometry-dependence boundary
+
+The companion
+[`GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_GEOMETRY_DEPENDENCE_NO_GO_NOTE_2026-07-10.md`](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_GEOMETRY_DEPENDENCE_NO_GO_NOTE_2026-07-10.md)
+constructs the actual finite Wilson environment coefficient before source-
+sector compression as
+
+`rho_lambda^(env,L_s,BC)(beta)
+ = d_lambda^(-1) E_(unmarked Wilson,L_s,BC)[conj(chi_lambda(U_m))]`.
+
+It then gives an exact triality-filling certificate that the fundamental
+coefficient has a positive `beta^3` term for standard `L_s=2` PBC, while all
+terms below `beta^5` vanish for standard `L_s=3` PBC. This is an exact no-go
+for the prior geometry-suppressed target, not a computation of either
+coefficient at `beta=6`.
+
+The repair target is therefore sharper and has two independent parts:
+
+1. select and state the actual finite geometry/boundary condition (or prove a
+   controlled large-`L_s` limit), then compute
+   `rho_(p,q)^(env,L_s,BC)(6)` from the multi-link integral above;
+2. prove the separate temporal mixed-kernel compression theorem needed to
+   identify the stripped source-sector residual with that environment action.
+
+Until both parts are supplied, replacing the generic witness by normalized
+single-link coefficients does not close the physical identification.
+
+### 2026-07-10 direct finite-volume coefficient attempt
+
+The bounded companion
+[`GAUGE_VACUUM_PLAQUETTE_L2_PBC_ACTUAL_ENVIRONMENT_MC_BOUNDED_NOTE_2026-07-10.md`](GAUGE_VACUUM_PLAQUETTE_L2_PBC_ACTUAL_ENVIRONMENT_MC_BOUNDED_NOTE_2026-07-10.md)
+selects the standard `L_s=2` PBC geometry explicitly and samples its actual
+23-active-plaquette unmarked Wilson measure at `beta=6`. It obtains
+
+`rho_(1,0)^(env,L_s=2,PBC)(6) = 0.0688943 +/- 0.0047454`
+
+as a nominal batch-diagnostic estimate. The corresponding single-link packet
+value is `0.422531740`; the difference is 74.5 declared batch-error units.
+This strongly distinguishes the selected multi-link environment from the
+single-link packet under the declared stochastic diagnostic.
+
+The computation is stochastic bounded support, not a rigorous coefficient
+certificate, and it does not prove the separate temporal mixed-kernel
+stripping bridge. It therefore sharpens and partially executes repair part 1
+without promoting this parent row.
 
 ## What This Closes
 
@@ -123,6 +182,8 @@ readout at `beta = 6`.
 
 - equality of the stripped residual source-sector operator with the compressed
   unmarked spatial Wilson environment;
+- an `L_s`-suppressed residual coefficient sequence covering both tested PBC
+  transfer surfaces (now exactly ruled out);
 - all-weight closure beyond the finite dominant-weight box;
 - full unmarked spatial Wilson environment tensor-transfer/Perron data;
 - explicit `beta = 6` Perron moments or Jacobi coefficients;
@@ -162,7 +223,7 @@ close the full residual-environment identification theorem.
   computes the bounded normalized single-link Wilson coefficients on a finite
   weight box by two independent methods. This is the load-bearing coefficient
   authority for the finite packet used here.
-- [gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- `GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md`
   supplies the source-side all-weight **formal diagonal-convolution**
   bridge for the stripped residual eigenvalue sequence:
   `R_beta^env chi_(p,q) = (1/lambda_env) C_(Z_beta^env) chi_(p,q)`.
@@ -179,3 +240,20 @@ all-weight formal bridge above, the remaining physical bridge is the
 independent derivation of the environment coefficient sequence from the
 unmarked DOF integral / tensor-transfer construction, not the formal
 Peter-Weyl diagonal-convolution dictionary itself.
+
+The 2026-07-10 geometry-dependence companion is also load-bearing for the
+repaired target statement:
+
+- [gauge_vacuum_plaquette_residual_environment_geometry_dependence_no_go_note_2026-07-10](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_GEOMETRY_DEPENDENCE_NO_GO_NOTE_2026-07-10.md)
+  proves that the `L_s` index cannot be suppressed, via
+  exact strong-coupling triality-filling orders `3` and `5` on standard
+  `L_s=2` and `L_s=3` PBC complexes. The boundary condition must be declared
+  to specify the measure, but fixed-`L_s` BC dependence is not proved here.
+  It prunes a universal single-link or geometry-free environment
+  identification; it does not compute the selected
+  geometry's `beta=6` data.
+- [gauge_vacuum_plaquette_l2_pbc_actual_environment_mc_bounded_note_2026-07-10](GAUGE_VACUUM_PLAQUETTE_L2_PBC_ACTUAL_ENVIRONMENT_MC_BOUNDED_NOTE_2026-07-10.md)
+  supplies a direct stochastic `beta=6` computation on one selected finite
+  geometry and strongly distinguishes its coupled fundamental coefficient
+  from the single-link packet. It remains bounded support and does not close
+  the temporal stripping theorem.

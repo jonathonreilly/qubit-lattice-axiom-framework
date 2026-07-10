@@ -127,9 +127,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 1019 | 38.99 | `audited_clean` | **retained_bounded** |
 | 15 | `yt_ew_color_projection_theorem` | no_go | critical | 855 | 37.74 | `audited_clean` | **retained_no_go** |
 | 16 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 540 | 36.58 | `unaudited` | unaudited |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 733 | 36.02 | `audited_clean` | **retained** |
-| 18 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
-| 19 | `kinetic_isotropy_primitive` | meta | critical | 468 | 35.37 | `unaudited` | meta |
+| 17 | `kinetic_isotropy_primitive` | meta | critical | 468 | 36.37 | `unaudited` | meta |
+| 18 | `cpt_exact_note` | positive_theorem | critical | 733 | 36.02 | `audited_clean` | **retained** |
+| 19 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
 | 20 | `three_generation_structure_note` | bounded_theorem | critical | 1011 | 34.98 | `audited_clean` | **retained_bounded** |
 | 21 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 296 | 34.71 | `unaudited` | unaudited |
 | 22 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 589 | 34.20 | `audited_conditional` | ~~audited_conditional~~ |

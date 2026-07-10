@@ -57798,7 +57798,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+      "to": "yt_ew_m_residual_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -111971,10 +111971,10 @@
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
         "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+        "yt_ew_m_residual_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5364e5d853124ef88a97ec530e6022052e6a2c679908afa312629890eb544588",
+      "note_hash": "9b5357bf596c77fa73f4a94ce27014fbf33476b04617dbede3bcc3d9494447fe",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

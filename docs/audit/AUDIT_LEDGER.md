@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 195 |
-| **retained_no_go** | 210 |
+| **retained_no_go** | 211 |
 | **retained_bounded** | 929 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1747 |
+| unaudited | 1746 |
 | audit_in_progress | 9 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 13 |
-| `audited_clean` | 1344 |
+| `audited_clean` | 1345 |
 | `audited_conditional` | 136 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 39 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 35 |
-| `unaudited` | 2094 |
+| `unaudited` | 2093 |
 
 | claim_type | count |
 |---|---:|
@@ -538,6 +538,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `formation_rate_law_class_reduction_bounded_note_2026-07-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
@@ -7843,6 +7844,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the stated bounded scope, the conclusion follows from the retained Koide identification Q=2/3 iff r=1/2 plus exact algebra/calculus on the displayed maps and supplied path. No framework-native derivation of r(t)=tanh(t)^4 or physical arrow selection is established or needed for the narrowed claim.
 - **rationale:** The load-bearing calculation is an exact algebraic and differential check on supplied inputs: the maps are inverse branches with fixed points {0,1/2}, their multipliers at 1/2 flip stability, and tanh(t)^4 is monotone from 0 to 1 for finite t>0. The retained Koide lightcone authority supplies the only upstream identification needed, Q=2/3 iff r=1/2 on this C3-circulant line. The runner source genuinely recomputes the symbolic identities and path checks rather than merely printing expected PASS lines. This clean verdict applies only to the bounded route-pruning statement and does not ratify any unclaimed framework-native beta law or physical heat-kernel arrow selection.
 - **auditor confidence:** high
+
+### `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`
+
+- **Note:** [`FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md`](../../docs/FLAVOR_TRACIAL_REFERENCE_DOES_NOT_SELECT_Q23_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Under the formal F1-F3 finite C3-carrier hypotheses, the tracial state and its product and trivial-modular extensions weight the rank-one/rank-two central blocks as 1:2, yielding Q=1 rather than equal-block Q=2/3; no physical flavor or measured-mass bridge was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T181128Z-79c35c5e-00003-flavor_tracial_reference_doe`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the tracial state rho=I_3/3, the rank-one and rank-two central projectors receive weights 1/3 and 2/3, so the route yields dimension weighting (1,2), hence Q=1 rather than equal-block Q=2/3.  _(class `A`)_
+- **chain closes:** True — The conclusion follows by exact finite-dimensional trace algebra plus the retained r/Q coordinate and endpoint dictionary. The expressly unproved physical identification of the formal carrier and readout is outside the audited claim.
+- **rationale:** The scoped conclusion is an exact consequence of F1-F3: normalized trace assigns each central projection its rank divided by three, and the retained coordinate algebra maps the resulting 1:2 weighting to Q=1. The equal-block C3-invariant state is admissible but non-tracial, while product extension and the trace's trivial modular flow do not alter the trace ratio. The source explicitly excludes any claim that the formal carrier, flavor sector, or mass readout is physically selected.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `flavor_value_campaign_capstone_four_channel_2026-05-31`
 

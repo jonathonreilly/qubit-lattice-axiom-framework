@@ -1,20 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_charged_lepton_value_full_chain_2026_06_02.py
-runner_sha256: d54fc630f5ccfcff4441191a7f3e5a9ae324f3d5fb3f9470a8520e4f9a777b69
+runner_sha256: 56036ae3790c726bdbec23030d2f12f1b2174792e5442d3674fe37884b5f803a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 [PASS] L1 one-qubit local algebra carries the unique j=1/2 su(2) module (Casimir=3/4) [per_site_su2_spin_half]
-[PASS] L3 3-gen carrier: hw=1 BZ corners are a 3-element C_3 orbit; eig(C)={1,w,w^2} [three_generation_observable]
-[PASS] L4 carrier momentum-type forced: the 3 corners carry DISTINCT translation characters [this session]
-[PASS] L5/L6 C_3-equivariant circulant H=aI+bC+conj(b)C^2 -> exact Q=1/3+(2/3)r [koide_kappa_*]
+[PASS] L3 abstract hw=1 carrier: BZ corners form a 3-element C_3 orbit; eig(C)={1,w,w^2} [three_generation_observable]
+[PASS] L4 supplied-carrier labels: the 3 corners carry distinct translation characters [flavor_carrier_momentum_type_from_translation]
+[PASS] L5/L6 abstract circulant H=aI+bC+conj(b)C^2 -> exact spectral ratio Q_H=1/3+(2/3)r [koide_kappa_*]
        r=|b|^2/a^2; verified at r in {0,1/4,1/2,3/4,1}
-[PASS] L7 topological asymmetry datum delta=2/9 = L_3(1,2) Atiyah-Bott density [axiom_first_z_n_equivariant_spectral_asymmetry]
+[PASS] L7 local cyclotomic density L_3(1,2)=2/9; no physical-delta identification [axiom_first_z_n_equivariant_spectral_asymmetry]
        L_3(1,2)=0.222222
-[PASS] L8 endpoint exclusion: r=0 -> [1,1,1] (degenerate), r=1 -> [0,0,3] (two massless) both excluded for distinct massive e,mu,tau [this session]
-       r=0 [1.0, 1.0, 1.0], r=1 [-0.0, -0.0, 3.0] -> leptons forced to the open interior (0,1)
+[PASS] L8 positive-spectrum boundary: r=0 is degenerate; at r=1 positivity forces cos(3 delta)=1 and spectrum [0,0,3]
+       r=0 [1.0, 1.0, 1.0], max determinant-formula error=2.66e-15, largest sampled minimum eigenvalue=-3.33e-16
 [PASS] L9 r=1/2 = HS 2-sector equipartition (||aI||^2=||bC+conj(b)C^2||^2) = max 2-sector entropy (stationary point) [this session; koide_kappa_two_orbit_dimension_factorization]
        equipartition at r=1/2; 2-sector entropy argmax=0.499
 [PASS] L10 Q=2/3 <=> r=1/2 (cone biconditional) [charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem]
@@ -25,7 +25,7 @@ status: ok
 SCORECARD PASS=9 FAIL=0
 CHAIN CONSISTENCY CHECK: nine representative local algebra/registry checks passed.
 The runner does not prove or audit the chain's cited dependency claims.
-The structural formulas assemble to Q=1/3+(2/3)r, while the VALUE Q=2/3
+The structural formulas assemble to abstract Q_H=1/3+(2/3)r, while physical Q=2/3
 requires the still-open physical selection r=1/2.
 There are zero live Tier-A targets, and the owner-governed AC_phi_lambda boundary supplies no r value.
 Independent audit decides claim type/status after landing.

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 939 |
+| **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1794 |
+| unaudited | 1793 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -67,13 +67,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1349 |
+| `audited_clean` | 1350 |
 | `audited_conditional` | 92 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2139 |
+| `unaudited` | 2138 |
 
 | claim_type | count |
 |---|---:|
@@ -153,6 +153,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1810,6 +1811,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The note correctly narrows its scope to conditional scenarios and withdraws uniqueness, falsification, and audited-framework-prediction language. The runner likewise computes downstream scenario arithmetic after P1..P6 are supplied; it does not derive those premises from framework primitives. ACTION_NORMALIZATION_NOTE is retained_no_go, but it explicitly says the scalar-potential and Poisson source normalization conventions are not convention-free derived, so retained status does not close P1. Therefore the reduced conditional packet is coherent, but it remains conditional on missing bridge theorems.
 - **open / conditional deps cited:**
   - `ACTION_NORMALIZATION_NOTE.md`
+- **auditor confidence:** high
+
+### `acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02`
+
+- **Note:** [`ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md`](../../docs/ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Real scalar-Laplacian equivariant traces cannot separate conjugate C3 isotypes; complex hopping provides an explicit algebraic rejector, while the spin-1/2 C3[111] lift satisfies U^3 = -I and the signed trace identity as a named projective seed, without establishing carrier realization or a phase value.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00020-acphilambda_ambient_scalar_k`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For real orthogonal R with R^3 = I and real-symmetric O = f(Delta), Tr(O R^2) = conjugate(Tr(O R)) = Tr(O R), so the conjugate C3 isotypic traces coincide.  _(class `A`)_
+- **chain closes:** True — The scalar blindness and isotypic equality follow by exact finite-dimensional trace algebra. The retained-bounded authority supplies the scoped per-site C^2 carrier surface, and the note correctly limits the projective conclusion to exact group-theoretic identities rather than physical realization.
+- **rationale:** The runner symbolically verifies the load-bearing trace identities, the isotypic corollary, the complex-hopping counterexample, and the projective-lift algebra; its finite torus checks genuinely construct the Laplacian and rotation operators. No external comparator, tuned physical value, or hard-coded disputed bridge enters the bounded conclusion. Physical selection of the projective carrier remains explicitly outside the audited scope.
 - **auditor confidence:** high
 
 ### `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12`

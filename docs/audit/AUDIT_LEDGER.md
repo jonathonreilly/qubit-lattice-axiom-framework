@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 935 |
+| **retained_bounded** | 936 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1823 |
+| unaudited | 1822 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 12 |
-| `audited_clean` | 1344 |
+| `audited_clean` | 1345 |
 | `audited_conditional` | 75 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2168 |
+| `unaudited` | 2167 |
 
 | claim_type | count |
 |---|---:|
@@ -1456,6 +1456,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_extremum_curvature_readout_boundary_certificate_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_m_h_tree_at_extremum_algebraic_core_split_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -21326,6 +21327,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Taking the sign-flipped curvature magnitude termwise and dividing by the declared diagnostic all-corners count 16 yields the normalized diagnostic core Q_W.  _(class `A`)_
 - **chain closes:** True — The displayed finite sum reduces by exact centered binomial moments: sum C(4,k)=16, sum C(4,k)(k-2)^2=16, and sum C(4,k)(k-2)^4=40. The physical readout, channel-selection, and nonzero Wilson-coefficient questions are explicitly outside the audited scope.
 - **rationale:** The claim is a bounded algebraic split, not a physical Higgs-mass derivation. The retained one-hop authorities supply the Hamming multiplicities, diagnostic-boundary discipline, and admitted B1 plaquette reuse value; the load-bearing reductions from the displayed Q_W formula are exact finite algebra. The runner source computes the finite sum, moments, Taylor coefficients, B1 sanity values, and scope guards, and the cached run reports PASS=49 FAIL=0 with the two relevant residuals left open.
+- **auditor confidence:** high
+
+### `wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08`
+
+- **Note:** [`WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Part I only: the exact finite-sum diagnostic curvature-scale identity Q_W, including its r=0 and small-r reductions; Part II's physical Higgs-matching interpretation remains explicitly conditional.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-wilson_m_h_tree_at_extre-086`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Sign-flipping the retained exact curvature at m* = -4r and dividing by the declared uniform all-corners diagnostic count 16 yields Q_W(r,u_0) = (1/64) Σ_k binomial(4,k)(u_0^2-(k-2)^2r^2)/((k-2)^2r^2+u_0^2)^2.  _(class `A`)_
+- **chain closes:** True — For Part I, multiplying the retained exact curvature formula by -1/16 directly gives equation (2), and the stated reductions follow by exact binomial moments and scalar Taylor expansion. No physical readout bridge is needed within this narrowed diagnostic scope.
+- **rationale:** The scoped load-bearing result is a genuine class-A algebraic closure over retained-bounded curvature and multiplicity authorities, with the uniform-16 factor used only as a declared diagnostic normalization. The runner genuinely evaluates the finite sum and verifies the r=0 and Taylor reductions in exact rational arithmetic. Its PDG-dependent root and shift checks are class-D checks fenced inside Part II and do not support a physical-mass or canonical-Wilson-coefficient conclusion.
 - **auditor confidence:** high
 
 ### `wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08`

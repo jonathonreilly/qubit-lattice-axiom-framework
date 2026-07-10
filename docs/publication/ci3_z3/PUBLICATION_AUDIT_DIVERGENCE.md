@@ -18,9 +18,9 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | critical | `unaudited` | 172 |
-| high | `unaudited` | 140 |
+| high | `unaudited` | 139 |
 | medium | `unaudited` | 90 |
-| high | `audited_conditional` | 6 |
+| high | `audited_conditional` | 7 |
 | critical | `audited_conditional` | 5 |
 | medium | `open_gate` | 3 |
 | critical | `audited_numerical_match` | 2 |
@@ -326,7 +326,7 @@ publication tables phrase it.
 | high | `primordial_spectrum_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md |
 | high | `proton_lifetime_derived_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | `audited_conditional` | `audited_conditional` | DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
-| high | `quark_endpoint_ratio_chain_law_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
+| high | `quark_endpoint_ratio_chain_law_note_2026-04-19` | `audited_conditional` | `audited_conditional` | DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | high | `quark_endpoint_readout_constraints_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | high | `quark_mass_ratio_full_solve_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `quark_mass_ratio_note_2026-04-18` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |

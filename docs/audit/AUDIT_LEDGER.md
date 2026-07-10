@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1788 |
+| unaudited | 1787 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 96 |
+| ~~audited_conditional~~ | 97 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1350 |
-| `audited_conditional` | 96 |
+| `audited_conditional` | 97 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2133 |
+| `unaudited` | 2132 |
 
 | claim_type | count |
 |---|---:|
@@ -1536,6 +1536,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_action_predicts_q1_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `flavor_record_readout_form_not_weight_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
+| `fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7776,6 +7777,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The cached current runner completes and computes the quadrant-reflection connectivity, source propagation, detector centroid shifts, and row gate rather than printing preset outcomes. It confirms a nonempty narrow basin: the note's quick subset has 5/9 passing rows and the current full default sweep has 23/45 passing rows, so the bounded non-universal claim closes.
 - **rationale:** The load-bearing claim is bounded to existence of a narrow computational basin, not family-wide or geometry-generic closure. The runner constructs the quadrant-reflection adjacency rule, evaluates zero, plus, minus, neutral, and double-source responses, and counts passing rows under explicit gates; it does not hard-code the pass count or target response signs. The note overstates the representative drift=0.50 quick row as mostly passing, but that wording is not needed for the audited bounded conclusion and the current runner output still supports the stated safe read. Residual risk is limited to the unexpanded imported grown-slice generator, which was not a listed one-hop note in the restricted packet.
 - **auditor confidence:** medium
+
+### `fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18`
+
+- **Note:** [`FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md`](../../docs/FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The fractional-sector action coefficient obtained by combining twisted-T4 charge arithmetic with the fixed Euclidean Bogomolny normalization.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00026-fractional_instanton_action_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting Q = k/N into the saturated Bogomolny bound gives S_frac(k,N) = (8*pi^2/g^2)|k/N|.  _(class `A`)_
+- **chain closes:** False — The topological authority supplies Q = k/N only modulo integers, whereas the source note uses the exact equality Q = k/N. A specified integer lift or minimal representative is required before the asserted exact action follows.
+- **rationale:** The substitution and numerical evaluations are correct once an exact representative Q = k/N is assumed. However, the cited authority establishes only Q = k/N mod Z, so the runner hard-codes the disputed exact representative rather than checking the integer-lift ambiguity. The bounded action formula therefore closes only conditionally on a representative choice and self-dual or anti-self-dual saturation.
+- **auditor confidence:** high
 
 ### `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25`
 

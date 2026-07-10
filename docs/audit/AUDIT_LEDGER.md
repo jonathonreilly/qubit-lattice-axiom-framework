@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 199 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 947 |
+| **retained_bounded** | 948 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 29 |
-| unaudited | 1720 |
+| unaudited | 1719 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 36 |
@@ -71,13 +71,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1371 |
+| `audited_clean` | 1372 |
 | `audited_conditional` | 144 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 36 |
-| `unaudited` | 2067 |
+| `unaudited` | 2066 |
 
 | claim_type | count |
 |---|---:|
@@ -603,6 +603,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_sd_loop_equation_beta_coupled_plaquette_bracket_note_2026-07-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -9068,6 +9069,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The attempted bridge <P>_full = R_O(beta_eff) is not supplied by this stretch note or the surveyed routes, and remains open absent an exact nonperturbative escape-hatch primitive.  _(class `A`)_
 - **chain closes:** True — The chain closes for the scoped open-gate statement: the retained completion theorem supplies only kernel-level support, and the retained no-go authority supplies the two-witness underdetermination of beta_eff(6). The positive bridge itself is not closed or audited as derived.
 - **rationale:** The runner is structural class A only, but the source note also scopes itself narrowly as an obstruction/open-gate packet rather than a positive theorem. The cited authorities are retained-grade or retained_no_go, and the no-go witness arithmetic checks independently: c * 6^6 = 0.0046656, so injectivity of R_O separates the two completion readouts. The N1-N8 boundary prevents upgrading this to an absolute no-go: fewer than five routes are surveyed and explicit escape hatches remain.
+- **auditor confidence:** high
+
+### `gauge_sd_loop_equation_beta_coupled_plaquette_bracket_note_2026-07-10`
+
+- **Note:** [`GAUGE_SD_LOOP_EQUATION_BETA_COUPLED_PLAQUETTE_BRACKET_NOTE_2026-07-10.md`](../../docs/GAUGE_SD_LOOP_EQUATION_BETA_COUPLED_PLAQUETTE_BRACKET_NOTE_2026-07-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact certification of w_P in [-10000001/20000000, 903482039/1000000000] for the embedded N=3, beta=6, D=2 truncated constraint model; exact all-ones refutation for the D=2 and D=4 models; D=4 bound restricted to the kinematic box [-1/2,1].
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T164715Z-1ebf2b3d-00003-gauge_sd_loop_equation_beta_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The embedded D=2 dual certificates are verified coefficient-by-coefficient against the rebuilt exact model, including nonnegative box multipliers and exact rational LDLT positivity of every PSD multiplier, thereby proving the quoted upper and lower bounds.  _(class `A`)_
+- **chain closes:** True — The verifier rebuilds the finite model and proves the dual affine identities and multiplier positivity in exact rational arithmetic, so every feasible functional satisfies the certified D=2 bracket. The all-ones box, PSD, and equation evaluations are likewise exact.
+- **rationale:** The certificate path is substantive: it rebuilds the SHA-pinned model, verifies every dual multiplier by exact rational LDLT, and checks the dual identity coefficient-by-coefficient. The quoted bounds are also hard-coded as drift pins, but their validity comes from the verified proof objects, making the load-bearing step class A rather than C or G. The retained_no_go authority supplies the acceptance contract, while the bounded result closes self-containedly; the fenced 0.5934 comparator contributes no derivation input.
 - **auditor confidence:** high
 
 ### `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10`

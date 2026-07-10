@@ -1,4 +1,4 @@
 # PR Backlog
 
-No PR attempt has been made. This file will record an exact recovery command
-only if push or PR creation fails.
+No delivery recovery is pending. Review PR 5140 opened successfully:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5140

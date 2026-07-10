@@ -50,10 +50,11 @@ review_findings:
   - completed N1-N8 route, wall, phrase-scan, witness, resolution, registry, steelman, and prior-wall records
   - removed non-load-bearing Markdown citation edges so the exact theorem parses with no dependencies
 review_disposition: pass
-pr_status: ready_to_open
+pr_status: opened
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5140
 next_exact_action: >-
-  Open the branch-local review PR and request an independent claim audit of
-  the self-contained no-go row; do not assign retained status before that audit.
+  Independently audit PR 5140's self-contained no-go row; do not assign
+  retained status before that audit.
 stop_condition: >-
   A reviewable proposed_retained certificate, or the strongest exact
   obstruction/demotion after orthogonal fan-out and review-loop.

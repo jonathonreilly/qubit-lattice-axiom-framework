@@ -41,7 +41,7 @@ success_bar: >
   window theta >= 0.2. BAR-NOT-PINNED and BAR-BELOW-WINDOW remain
   substantive outcomes; physics absence is never MACHINERY-FAIL; no
   retuning after the freeze.
-current_block: block04 — overnight full run EXECUTING (launched
+current_block: CLOSED 2026-07-10 — measurement complete, note + PR shipped (was: block04 executing (launched
   2026-07-10 ~13:40 EDT, detached PID 47861 re-parented to launchd,
   caffeinate held, checkpoints every 10 steps; owner authorization
   "launch the overnight run once validate passes" on record; supervisor
@@ -49,7 +49,7 @@ current_block: block04 — overnight full run EXECUTING (launched
   logs/runner-cache/d3_bar_location_validate_2026_07_10.txt; preflight
   gate True at 13.45 h floor-clamped / 3.04 GiB). Blocks 01 (frozen
   memo, supervisor baseline correction) and 02/03 (engine ext + runner,
-  line-reviewed, validate) DONE. On reconnect read RESUME.md.
+  line-reviewed, validate) DONE. On reconnect read RESUME.md.)
 current_branch: physics-loop/d3-bar-location-block01-20260710
   (base = d3-registration-pilot-block01 branch)
 worktree: /Users/jonBridger/tp-matter-mass-wep

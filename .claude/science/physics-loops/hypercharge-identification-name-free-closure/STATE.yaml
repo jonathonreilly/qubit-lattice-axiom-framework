@@ -1,0 +1,22 @@
+loop: hypercharge-identification-name-free-closure
+mode: run
+target: bounded-support
+current_goal: "Harden the bounded LH-doublet hypercharge chain while separating module algebra, physical species naming, relative-charge readout, and U(1) coordinate normalization."
+current_surface_before_block: retained_bounded
+current_surface_source: docs/audit/data/audit_ledger.json
+actual_current_surface_status: bounded-support
+cycle_count: 1
+active_route: name_free_module_decomposition_and_bounded_normalization_readout
+hard_residual: null
+files_touched:
+  - docs/HYPERCHARGE_IDENTIFICATION_NOTE.md
+  - scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py
+open_imports:
+  - structural_groups_and_carrier_as_physical_SM_weak_color_LH_fermions
+  - lower_color_singlet_relative_charge_readout
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit and open the bounded-theorem review PR; after landing, let the independent audit lane re-audit the target and its two invalidated dependents."
+stop_condition: "Review PR opened with physical readout and coordinate convention separated; independent re-audit remains authoritative."

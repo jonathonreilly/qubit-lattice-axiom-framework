@@ -92,8 +92,9 @@ surface).** Let C^8 = (C²)^{⊗3} be the LH-doublet sector with SU(2)_weak
 on factor 1 (from the graph-first selector + bipartite lattice structure)
 and SWAP_{23} on factors 2, 3 (from the Z₂ spatial permutation symmetry).
 Let Y_α = α(P_sym − 3 P_anti) be the
-one-parameter family of traceless U(1) generators in the (gl(3) ⊕
-gl(1))-commutant of {SU(2)_weak, SWAP_{23}}, parameterized by α ∈ ℝ. Then:
+one-parameter family of traceless central block-scalar generators in the
+(gl(3) ⊕ gl(1))-commutant of {SU(2)_weak, SWAP_{23}}, parameterized by
+α ∈ ℝ. Then:
 
 1. *(Ratio)* The eigenvalues of Y_α on the (2, 3) and (2, 1) sub-blocks
    stand in the ratio 1 : (−3) for every α ≠ 0. *Source:*
@@ -178,6 +179,84 @@ L_L ↔ (2, 1) is **forced** by SU(3) representation content. The labels
 "what fermion species an SU(3) fundamental rep at this scale should be
 called" is naming, not physics derivation.
 
+## Name-free carrier decomposition and explicit normalization boundary
+
+The representation carrier can be decomposed before the symbols `Q_L`,
+`L_L`, or any target hypercharge values are introduced.  Write
+
+```text
+H_+ = P_sym C⁴,       H_- = P_anti C⁴,
+F_L = (C²_weak ⊗ H_+) ⊕ (C²_weak ⊗ H_-).
+```
+
+Because `P_sym = (I + SWAP_23)/2` and
+`P_anti = (I - SWAP_23)/2`, these two summands are spectral subspaces of a
+supplied operator, not sectors selected by their desired phenomenological
+names.  The embedded structural `SU(3)` acts as its three-dimensional
+fundamental representation on `H_+` and trivially on `H_-`.  Hence, as an
+`SU(2)_weak × SU(3)` module,
+
+```text
+F_L ≅ (2,3) ⊕ (2,1).
+```
+
+This is the carrier decomposition at representation-class level.  A choice
+of basis inside the triplet is immaterial; the two summands cannot mix
+under an intertwiner because their `SU(3)` representations are inequivalent.
+Only after this construction are the conventional SM names attached:
+the structural-`SU(3)` fundamental weak doublet is read as color-charged and
+called `Q_L`, while its singlet is called `L_L`.  Thus the names do no work in constructing the
+decomposition.  This algebra does **not** select a unique physical species:
+another field or copy with the same representation content would have the
+same module.  The particle names remain a conventional readout applied after
+the structural result.
+
+The same separation removes the apparent normalization circularity.  Set
+
+```text
+Y_0 = P_sym - 3 P_anti,       Y_alpha = alpha Y_0.
+```
+
+The two-dimensional center of the compact commutant, together with
+tracelessness, determines the line `R Y_0` among the central block-scalar
+directions.  It does not say that the full `gl(3) ⊕ gl(1)` algebra has only
+one traceless element.  On the joint matter-plus-Higgs readout surface, write
+the Higgs hypercharge as a nonzero coordinate `h = Y_H`.  A common abelian
+rescaling has the redundancy
+
+```text
+(Y_alpha, h, g_Y) -> (c Y_alpha, c h, g_Y/c),       c != 0,
+```
+
+which leaves both the covariant-derivative products and the ratio
+`Y_alpha/h` unchanged.  Consequently the basis-independent readout can fix
+`alpha/h`; the separate coordinate values of `alpha` and `h` require a
+normalization convention.
+
+Chain link L4 gives the unbroken generator `Q = T_3 + Y/(2h)` from the
+supplied neutral lower-component Higgs-vev record; its displayed
+`Q = T_3 + Y/2` is the conventional coordinate `h = +1`.
+On the lower component of the structural-`SU(3)`-singlet doublet, the constructed
+operators give `T_3 = -1/2` and `Y_alpha = -3 alpha`.  Defining that
+component's electric charge to be `-1` relative to the unit weak-isospin
+charge step gives
+
+```text
+-1 = -1/2 - 3 alpha/(2h),       so alpha/h = 1/3.
+```
+
+This is precisely the bounded normalization implication proved by
+[`HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md),
+expressed without using `Q_L`, `L_L`, or `e_L` as premise labels.  The
+relative charge `-1` of the lower structural-`SU(3)`-singlet component is nevertheless an
+explicit physical readout premise, not a consequence of the commutant and
+not a vacuous unit choice.  Choosing the conventional Higgs coordinate
+`h = Y_H = +1` then gives `alpha = 1/3`, so `Y_alpha = +1/3` on the
+structural-`SU(3)` fundamental doublet and `Y_alpha = -1` on its singlet.
+Applying the conventional particle names afterward gives the stated bounded
+SM left-handed hypercharge table.  No global compact-U(1) charge lattice or
+physical species selection is claimed by this finite Lie-algebra argument.
+
 ## Structural consequences (downstream of the chain)
 
 Each consequence below follows from the chain (1) + (2) + the
@@ -219,15 +298,16 @@ the electron (`T_3(e_L) = −1/2`) is the vev-direction convention (runner
 check 9e): the opposite direction derives the component-swapped conjugate
 table, so the physical content is the charge PATTERN, not the labeling.
 
-### 3. Uniqueness (structural part of the chain)
+### 3. Uniqueness of the central block-scalar direction
 
-The argument that the traceless U(1) is unique up to scale is purely
+The argument that the traceless central block-scalar direction is unique up
+to scale is purely
 algebraic and is the load-bearing step of the narrow ratio theorem cited
 above:
 
-1. The commutant contains a 2-dimensional space of U(1) generators
-   (two independent projectors P_sym and P_anti on the Sym² and Anti²
-   sub-blocks).
+1. The center of the compact commutant contains a 2-dimensional space of
+   block-scalar generators (the two independent projectors P_sym and P_anti
+   on the Sym² and Anti² sub-blocks).
 2. The tracelessness condition 6α + 2β = 0 imposes one linear constraint.
 3. This reduces the space to **dimension 1** — a unique generator up to
    normalization.
@@ -342,8 +422,8 @@ boundary):**
 - **Projector algebra on C⁴.** `P_sym + P_anti = I_4`,
   `rank(P_sym) = 3`, `rank(P_anti) = 1`, `P_sym² = P_sym`,
   `P_anti² = P_anti`, `P_sym P_anti = 0` (see runner lines 91, 155–157).
-- **Traceless ratio on (Sym², Anti²).** The unique traceless
-  U(1) generator in the gl(3) ⊕ gl(1) commutant of {SU(2)_weak,
+- **Traceless ratio on (Sym², Anti²).** The unique traceless central
+  block-scalar direction in the gl(3) ⊕ gl(1) commutant of {SU(2)_weak,
   SWAP_{23}} on C^8 carries eigenvalues in the ratio +1 : (−3) across
   the (2, 3) and (2, 1) sub-blocks. This is α-independent.
 - **Charge table.** Under the chained matter-assignment and the α = 1/3
@@ -383,7 +463,8 @@ Status authority remains independent audit lane only. This edit does not set
 
 ## Auditor responsiveness (2026-05-02 verdict → 2026-05-05 rewrite map)
 
-The most recent independent audit (2026-05-02, `codex-audit-loop:fresh-
+The historical independent audit that motivated this repair (2026-05-02,
+`codex-audit-loop:fresh-
 2026-05-02-hypercharge-mcclintock`, terminal second pass with first audit
 2026-04-30) returned `audited_renaming` on this note with the following
 verdict-rationale (verbatim, archived in the ledger row):
@@ -414,8 +495,8 @@ What this note's load-bearing surface is, in one sentence: *under the
 two cited chain links (L1 structural ratio, retained; L2 LHCM matter
 assignment, separate audit row) and the L3 normalization boundary
 (either the retained 2026-05-25 bridge after audit, or admitted SM
-convention until then), the unique traceless U(1) in the gl(3)+gl(1)
-commutant of {SU(2)_weak, SWAP_{23}} reproduces the SM hypercharge
+convention until then), the unique traceless central block-scalar direction
+in the gl(3)+gl(1) commutant of {SU(2)_weak, SWAP_{23}} reproduces the SM hypercharge
 pattern on the LH-doublet surface.* This is the auditor's stated "safe
 statement" elevated to the load-bearing chain itself.
 
@@ -447,8 +528,8 @@ What this note is **not** claiming, post-rewrite:
   commutation, multiplicity) or a chain-consequent (matter-assignment
   labels, charges, anomaly traces). The matter-assignment labels are
   explicitly tagged as imported from the LHCM matter-assignment note.
-- [`scripts/frontier_su3_commutant.py`](../scripts/frontier_su3_commutant.py):
-  Prior result establishing the gl(3) ⊕ gl(1) commutant.
+- [`scripts/frontier_graph_first_su3_integration.py`](../scripts/frontier_graph_first_su3_integration.py):
+  Current result establishing the selected-axis gl(3) ⊕ gl(1) commutant.
 - [`scripts/frontier_lh_doublet_traceless_abelian_ratio.py`](../scripts/frontier_lh_doublet_traceless_abelian_ratio.py):
   Independent runner for the structural ratio theorem.
 - [`scripts/frontier_lhcm_matter_assignment.py`](../scripts/frontier_lhcm_matter_assignment.py):

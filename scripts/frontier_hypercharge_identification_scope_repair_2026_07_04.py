@@ -8,9 +8,9 @@ The commutant of {SU(2)_weak, SWAP_{23}} in End(C^8) is gl(3) + gl(1).
 This runner verifies a CHAIN claim, not an internal SM-Y derivation. The
 chain has three independently-cited links:
 
-  (L1)  STRUCTURAL RATIO. The unique traceless U(1) generator in the commutant
-        has eigenvalue ratio +1:(-3) on the (2,3) and (2,1) sub-blocks of
-        the LH-doublet sector. -- Source:
+  (L1)  STRUCTURAL RATIO. The unique traceless central block-scalar direction
+        in the commutant has eigenvalue ratio +1:(-3) on the (2,3) and (2,1)
+        sub-blocks of the LH-doublet sector. -- Source:
         LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md
 
   (L2)  MATTER ASSIGNMENT. Sym^2(C^2) carries the SU(3) fundamental
@@ -82,6 +82,7 @@ def check_source_boundary() -> tuple[int, int]:
         "derive the (Sym², Anti²) ↔ (triplet, singlet) assignment internally",
         "derive the absolute normalization `a = 1/3` internally",
         "Downstream squared-trace/GUT catalog quarantine (2026-07-04)",
+        "Name-free carrier decomposition and explicit normalization boundary",
         "Tr_C8[Y_alpha^2] = 24 alpha^2",
         "GUT normalization, `sin^2(theta_W)`, and full-spectrum",
         "Bounded source scope (what the runner numerically verifies",
@@ -234,7 +235,7 @@ P_anti_8 = np.kron(I2, P_anti_4)
 Y_raw_4 = (1.0 / 3) * P_sym_4 - 1.0 * P_anti_4
 Y_raw_8 = np.kron(I2, Y_raw_4)
 
-print("The traceless U(1) generator in the commutant:")
+print("The traceless central block-scalar generator in the commutant:")
 print(f"  Y = (1/3)*P_sym - 1*P_anti")
 print(f"  Tr[Y] on C^8 = {np.trace(Y_raw_8).real:.6f}  (should be 0)")
 print()
@@ -323,8 +324,8 @@ print("AUDIT CHECKPOINT 1 (after STRUCTURAL Parts 1-2):")
 print("-" * 72)
 print("  Verified STRUCTURALLY (no SM-target import; alpha-free where stated):")
 print("    * gl(3)+gl(1) commutant decomposition exists [upstream retained]")
-print("    * Y_alpha = alpha (P_sym - 3 P_anti) is the UNIQUE traceless U(1)")
-print("      generator in the commutant, up to scale [Part 1 STRUCTURAL]")
+print("    * Y_alpha = alpha (P_sym - 3 P_anti) is the UNIQUE traceless")
+print("      central block-scalar direction, up to scale [Part 1 STRUCTURAL]")
 print("    * eigenvalue ratio on (Sym^2, Anti^2) sub-blocks = +1 : (-3)")
 print("      [Part 1 STRUCTURAL; cited from narrow ratio theorem]")
 print("    * [Y, S_i] = [Y, SWAP_23] = [Y, T_a] = 0 for all weak, perm,")
@@ -540,11 +541,11 @@ print(f"    SU(2)^2-U(1) mixed anomaly vanishes: {abs(su2_mixed_anomaly) < 1e-10
 
 
 # ============================================================================
-# PART 5: Uniqueness -- Y is the unique traceless U(1) direction
+# PART 5: Uniqueness of the traceless central block-scalar direction
 # ============================================================================
 print()
 print("=" * 72)
-print("PART 5: Uniqueness of the traceless U(1) direction  [STRUCTURAL]")
+print("PART 5: Uniqueness of the traceless central block-scalar direction  [STRUCTURAL]")
 print("=" * 72)
 print()
 
@@ -567,7 +568,8 @@ print()
 # This matches the Standard Model hypercharge assignments on the
 # left-handed doublet surface.
 
-print("  The commutant contains a 2-parameter family of U(1) generators:")
+print("  The center of the compact commutant contains a 2-parameter family")
+print("  of block-scalar generators:")
 print("    Y(alpha, beta) = alpha * P_sym + beta * P_anti")
 print()
 print("  Requiring Tr[Y] = 0 (remove the overall phase):")
@@ -596,8 +598,8 @@ print()
 # The KEY point: within our 8-dimensional left-handed sector,
 # Tr[Y] = 0 UNIQUELY fixes Y up to normalization.
 print("  STRUCTURAL UNIQUENESS THEOREM:")
-print("  Within the commutant of {SU(2), SWAP_23} in End(C^8),")
-print("  there is exactly ONE traceless U(1) generator (up to normalization).")
+print("  Within the center of the compact commutant of {SU(2), SWAP_23},")
+print("  there is exactly ONE traceless block-scalar direction (up to scale).")
 print("  Its eigenvalues are in the ratio 1:(-3) on the (Sym^2, Anti^2) sub-blocks.")
 print()
 print("  This matches the SM hypercharge ratio on the LH-doublet surface ONLY")
@@ -735,7 +737,7 @@ print(Q_sa.real)
 # ============================================================================
 print()
 print("=" * 72)
-print("PART 8: No other traceless U(1) exists on this surface  [STRUCTURAL]")
+print("PART 8: No other traceless central block-scalar direction  [STRUCTURAL]")
 print("=" * 72)
 print()
 
@@ -783,15 +785,15 @@ print("  SM convention): alpha = 1/3.")
 print("  Combined: Y(Q_L) = +1/3, Y(L_L) = -1.   [CHAIN-L2 + CHAIN-L3]")
 print()
 
-# Verify: no OTHER traceless U(1) exists
-# In the 2-dim space of U(1) generators, the traceless condition
+# Verify: no OTHER traceless central block-scalar direction exists.
+# In the 2-dim center spanned by the two block projectors, tracelessness
 # removes one dimension, leaving exactly 1.  QED.
 print("  PROOF OF STRUCTURAL UNIQUENESS:")
-print("    dim(U(1) space in commutant) = 2  (center of u(3), plus u(1))")
+print("    dim(center of compact commutant) = 2  (center of u(3), plus u(1))")
 print("    dim(traceless subspace) = 1       (one linear constraint)")
-print("    => UNIQUE traceless U(1) generator (up to normalization)  [STRUCTURAL]")
+print("    => UNIQUE traceless central block-scalar direction (up to scale)")
 print()
-print("  Therefore: the commutant U(1) is uniquely fixed on this surface")
+print("  Therefore: the traceless central block-scalar direction is unique")
 print("  up to scale, and -- under chain L2 + L3 -- its eigenvalues coincide")
 print("  with the SM hypercharge values for the LH-doublet sector.")
 
@@ -904,10 +906,115 @@ print()
 print("  Remaining admitted content in the charge table after L4:")
 print("    * alpha = 1/3 scale -- chain L3 (bounded normalization bridge /")
 print("      Y0 vacuous rescaling convention)")
-print("    * the electromagnetic charge UNIT (electron charge as unit anchor)")
-print("      -- a unit convention, same class as the Y-scale")
+print("    * the lower color-singlet relative charge q = -1 -- an explicit")
+print("      physical readout premise, not a commutant consequence")
 print("    * the L4 support carrier has its own audit row; this runner")
 print("      recomputes, the audit lane grades.")
+
+
+# ============================================================================
+# PART 10: Name-free carrier decomposition and normalization boundary
+# ============================================================================
+print()
+print("=" * 72)
+print("PART 10: Name-free carrier decomposition + normalization boundary  [L2 + L3]")
+print("=" * 72)
+print()
+
+part10_pass, part10_fail = 0, 0
+
+
+def check10(name: str, cond: bool, detail: str = "") -> None:
+    global part10_pass, part10_fail
+    if cond:
+        part10_pass += 1
+        tag = "[PASS]"
+    else:
+        part10_fail += 1
+        tag = "[FAIL]"
+    print(f"  {tag} {name}" + (f"  ({detail})" if detail else ""))
+
+
+# The sectors are spectral projectors of SWAP_23, constructed before any
+# particle labels or target hypercharge values are introduced.
+check10(
+    "10a carrier sectors are the SWAP_23 spectral projectors",
+    np.allclose(P_sym_8, (np.eye(8) + SWAP_8) / 2)
+    and np.allclose(P_anti_8, (np.eye(8) - SWAP_8) / 2),
+)
+check10(
+    "10b label-free carrier dimensions are dim(C2 x H_+) = 6 and "
+    "dim(C2 x H_-) = 2",
+    matrix_rank(P_sym_8) == 6 and matrix_rank(P_anti_8) == 2,
+)
+
+# Implementation check for the upstream-supplied representation action: its
+# quadratic color Casimir distinguishes the two spectral sectors without
+# importing the words quark/lepton. This does not independently derive the
+# physical color action; it verifies the explicit embedding used by the runner.
+color_casimir = sum(Ta @ Ta for Ta in T_color_8)
+check10(
+    "10c embedded SU(3)-action implementation has Casimir 4/3 on H_+ "
+    "and 0 on H_-",
+    np.allclose(color_casimir @ P_sym_8, (4.0 / 3.0) * P_sym_8, atol=1e-12)
+    and np.allclose(color_casimir @ P_anti_8, np.zeros((8, 8)), atol=1e-12),
+)
+
+# For general Higgs hypercharge coordinate h, L4 gives Q=T3+Y/(2h).
+# On the lower color-singlet component T3=-1/2 and Y0=-3. The relative
+# electric-charge readout q=-1 is an explicit physical premise; it fixes the
+# invariant ratio alpha/h, not alpha alone.
+t3_lower_singlet = -0.5
+y0_singlet = -3.0
+q_lower_singlet = -1.0
+alpha_over_h = 2.0 * (q_lower_singlet - t3_lower_singlet) / y0_singlet
+check10(
+    "10d supplied relative-charge readout gives invariant alpha/Y_H = 1/3",
+    abs(alpha_over_h - 1.0 / 3.0) < 1e-12,
+    f"alpha/Y_H={alpha_over_h:.12f}",
+)
+
+# Check the relevant common rescaling at a nontrivial h: matter and Higgs
+# hypercharges scale together, the coupling scales reciprocally, the L4
+# coefficient changes to 1/(2h), and the physical Q operator is invariant.
+c_scale = 7.0 / 5.0
+g_y = 0.37
+h_coordinate = 5.0 / 7.0
+alpha_coordinate = alpha_over_h * h_coordinate
+Y_coordinate = alpha_coordinate * (P_sym_8 - 3.0 * P_anti_8)
+Q_coordinate = T3 + Y_coordinate / (2.0 * h_coordinate)
+Y_scaled = c_scale * Y_coordinate
+h_scaled = c_scale * h_coordinate
+Q_scaled = T3 + Y_scaled / (2.0 * h_scaled)
+check10(
+    "10e joint (Y,Y_H,g_Y) rescaling leaves both Q and g_Y Y invariant",
+    np.allclose(Q_coordinate, Q_scaled, atol=1e-12)
+    and np.allclose(g_y * Y_coordinate,
+                    (g_y / c_scale) * Y_scaled, atol=1e-12),
+)
+
+# In the conventional h=Y_H=+1 coordinate, the invariant ratio is displayed
+# as alpha=1/3 and gives the usual two eigenvalues.
+Y_conventional = alpha_over_h * (P_sym_8 - 3.0 * P_anti_8)
+check10(
+    "10f choosing Y_H=+1 gives alpha=1/3 and eigenvalues (+1/3,-1)",
+    np.allclose(Y_conventional @ P_sym_8,
+                (1.0 / 3.0) * P_sym_8, atol=1e-12)
+    and np.allclose(Y_conventional @ P_anti_8,
+                    -1.0 * P_anti_8, atol=1e-12),
+)
+
+print()
+print(f"  PART 10 CHECKS: PASS={part10_pass} FAIL={part10_fail}")
+if part10_fail or part10_pass != 6:
+    raise AssertionError(
+        f"PART 10 name-free map/normalization checks failed: "
+        f"PASS={part10_pass} FAIL={part10_fail}"
+    )
+print()
+print("  The module decomposition uses no particle labels. The readout is bounded:")
+print("  q(lower color-singlet)=-1 is an explicit physical premise, which fixes")
+print("  alpha/Y_H=1/3; alpha=1/3 is its conventional Y_H=+1 coordinate.")
 
 
 # ============================================================================
@@ -922,7 +1029,8 @@ print()
 print("  CHAIN ASSEMBLY THEOREM (this note):")
 print("  Under the chain (L1 ratio + L2 matter assignment + L3 scale +")
 print("  L4 GMN/EWSB readout),")
-print("  the unique traceless U(1) in the gl(3)+gl(1) commutant of")
+print("  the unique traceless central block-scalar direction in the")
+print("  gl(3)+gl(1) commutant of")
 print("  {SU(2)_weak, SWAP_{23}} reproduces SM hypercharge on the LH-doublet")
 print("  surface. The runner above checks each link of the chain numerically")
 print("  and tags every block as STRUCTURAL / CHAIN-L2 / CHAIN-L3 /")
@@ -942,6 +1050,10 @@ print("    * Y_alpha at alpha = 1/3 reproduces (+1/3, -1) on (Q_L, L_L)")
 print("    * Q = T_3 + Y/2 -- DERIVED (L4, PART 9) as the unique unbroken")
 print("      generator annihilating the neutral Higgs vev record with the")
 print("      chained Y_H = +1; reproduces SM charges (2/3, -1/3, 0, -1)")
+print("    * Part 10 constructs the carrier sectors from SWAP_23 projectors before")
+print("      attaching particle names; under the supplied lower-singlet charge")
+print("      readout it derives alpha/Y_H=1/3, displayed as alpha=1/3 only in")
+print("      the conventional Y_H=+1 coordinate")
 print()
 print("  WHAT IS NOT CLAIMED:")
 print("    * Internal derivation of (Sym^2 = SU(3)-fundamental) -- chained")

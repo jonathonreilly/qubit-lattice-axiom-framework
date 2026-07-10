@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1745 |
+| unaudited | 1744 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 123 |
+| ~~audited_conditional~~ | 124 |
 | ~~audited_failed~~ | 13 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 15 |
 | `audited_clean` | 1355 |
-| `audited_conditional` | 123 |
+| `audited_conditional` | 124 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2092 |
+| `unaudited` | 2091 |
 
 | claim_type | count |
 |---|---:|
@@ -1595,6 +1595,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | F | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -17251,6 +17252,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** S + D = S^{1/2}(I+B)S^{1/2} with B real antisymmetric, so det(S+D)=det(S) det(I+B)>0; multiplicativity over disjoint blocks plus explicit continuity gives W_c=c log det, with c=1 chosen by convention.  _(class `A`)_
 - **chain closes:** True — The determinant positivity and derivative-patch sign constancy follow from finite-dimensional real linear algebra, while the log readout is explicitly bounded by the stated continuity and normalization conventions rather than claimed from Record alone.
 - **rationale:** The load-bearing determinant argument is correct: congruence by S^{1/2} reduces the positive diagonal source case to I+B with B real antisymmetric, whose eigenvalues occur as 0 or +/- i lambda and therefore give positive factors 1+lambda^2. For the derivative patch, ||D^{-1}J||<1 keeps D+tJ invertible for t in [0,1], so the real determinant cannot cross zero and preserves the positive sign of invertible real antisymmetric D. The log-readout step does not overclaim Record: continuity on R_{>0} and c=1 are explicit bounded conventions, so the result is clean only at bounded-theorem scope.
+- **auditor confidence:** high
+
+### `realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02`
+
+- **Note:** [`REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md`](../../docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Representative-level conditional discrimination on the retained two-flux-class surface, restricted to availability maps defined by spectral projectors of the kinetic coefficient algebras.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00002-realized_kinetic_branch_cond`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** If the supplied realized record stack contains a neighbor-conditioned qubit record, T-A excludes K0 while T-B realizes K1.  _(class `A`)_
+- **chain closes:** False — The algebraic K0/K1 projector distinction closes, but no cited authority derives the framework's Admissibility/Record availability rule from the kinetic coefficient algebra. The runner stipulates that identification when constructing its record witness rather than computing a bridge to an axiom-level record.
+- **rationale:** Issue: the note identifies kinetic-coefficient spectral projectors with the available possibilities locked by a realized record without a cited bridge theorem. Why this blocks: the runner proves the discriminator only inside its stipulated spectral-projector availability model, so a framework-level neighbor-conditioned record does not yet imply that K0 is excluded. Repair target: derive and cite an exhaustive covariant map from the kinetic coefficient algebra to the Admissibility/Record rule, with a runner that constructs rather than assumes this link. Claim boundary until fixed: K0 has only the full spectral projector while K1 has two rank-one direction projectors, yielding conditional discrimination within that explicitly supplied projector model.
 - **auditor confidence:** high
 
 ### `realized_kinetic_branch_d4_pattern_dichotomy_narrow_theorem_note_2026-07-03`

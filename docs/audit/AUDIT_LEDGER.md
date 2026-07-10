@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 947 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 28 |
-| unaudited | 1738 |
+| unaudited | 1737 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -53,6 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_mirror_mutual_information_chokepoint_note` | 1 |
 | `decoration_under_moving_source_retarded_portability_note` | 1 |
 | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | 1 |
+| `decoration_under_observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | 1 |
 | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_plaquette_self_consistency_note` | 1 |
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
@@ -70,16 +71,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1362 |
 | `audited_conditional` | 122 |
-| `audited_decoration` | 63 |
+| `audited_decoration` | 64 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 32 |
-| `unaudited` | 2083 |
+| `unaudited` | 2082 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2032 |
-| `decoration` | 65 |
+| `bounded_theorem` | 2031 |
+| `decoration` | 66 |
 | `meta` | 352 |
 | `no_go` | 481 |
 | `open_gate` | 183 |
@@ -1674,6 +1675,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mirror_mutual_information_note` | decoration | ~~audited_decoration~~ | `decoration_under_mirror_mutual_information_chokepoint_note` | cross_family | codex-gpt-5.5 | A | `mirror_mutual_information_chokepoint_note` |
 | `momentum_charge_commute_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.6 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `observable_principle_p1_exact_additivity_zero_offset_repair_note_2026-06-13` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | cross_family | codex-gpt-5.6 | A | `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` |
 | `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
 | `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
@@ -15111,6 +15113,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The route's P1 derivation requires identifying the framework scalar generator W with Tr K and then using log(ρ_A ⊗ ρ_B) = log ρ_A ⊗ I + I ⊗ log ρ_B, so the Tomita-Gibbs route imports the additive-log/P1 content rather than deriving it.  _(class `A`)_
 - **chain closes:** True — The scoped no-go closes: the presented forward derivation of P1 explicitly depends on the underived W = Tr K identification plus the tensor-product log identity. The runner verifies the algebraic factorization, modular-Hamiltonian additivity, F_p contrast, and spectral Cauchy step; it does not establish a positive derivation of P1.
 - **rationale:** The load-bearing obstruction is an algebraic proof-dependency check, not a numerical match or external comparator. The runner source performs actual symbolic/numerical algebra checks and source/ledger bookkeeping checks; it does not merely print constants or import a contested value. The no-go discipline gate passes for the scoped boundary: the packet enumerates more than five attack routes, collapses the walls to the identification-plus-Cauchy residual, scans hidden assumptions, and keeps the claim narrower than global impossibility of P1.
+- **auditor confidence:** high
+
+### `observable_principle_p1_exact_additivity_zero_offset_repair_note_2026-06-13`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_EXACT_ADDITIVITY_ZERO_OFFSET_REPAIR_NOTE_2026-06-13.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_EXACT_ADDITIVITY_ZERO_OFFSET_REPAIR_NOTE_2026-06-13.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Given W_b(r)=c log r+b and exact multiplicative-to-additive composition on positive reals, the additive offset must vanish; the shifted family instead obeys a distinct shifted law.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00080-observable_principle_p1_exac`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting W_b(r)=c log r+b into exact additivity gives W_b(r_1r_2)-W_b(r_1)-W_b(r_2)=-b, so exact additivity forces b=0.  _(class `A`)_
+- **chain closes:** True — Within the stated conditional scope, the logarithm product identity reduces the exact-additivity defect to -b, and setting that defect to zero gives b=0. This does not derive the exact-additivity premise or P1.
+- **rationale:** The runner genuinely checks the symbolic defect, its solution, the unit argument, and the distinction between exact and shifted additivity. The conclusion is solely a class-(A) algebraic consequence of the exact-additivity premise isolated by the single cited parent, with no external-comparator check or independent derivation of that premise. It therefore supplies decoration-grade normalization detail rather than new closure of P1.
+- **open / conditional deps cited:**
+  - `OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md`
+- **decoration parent:** `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`
 - **auditor confidence:** high
 
 ### `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10`

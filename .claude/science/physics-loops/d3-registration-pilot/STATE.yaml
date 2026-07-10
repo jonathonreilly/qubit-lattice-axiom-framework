@@ -1,0 +1,56 @@
+loop_slug: d3-registration-pilot
+created: 2026-07-09
+mode: campaign (owner-commissioned "run the pilot": the d=3
+  registration-onset measurement named as successor by the
+  registration-bar campaign, PR #5091; owner reminder — Z^3 is the
+  target, d=2 at most a stepping stone)
+execution_split: workhorse (codex exec workers on gpt-5.6-sol at
+  reasoning effort max; supervisor reviews line-by-line and executes
+  all runners personally; the overnight full run executes on the
+  owner's machine under a hard memory guard)
+design_basis: docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md
+  (route C: open 3^3 qubit cube, uniform TFIM
+  H = -J sum ZZ - lambda J sum X, lambda in {0.05, 0.10, 0.20};
+  center pointer Z_S; six axial single-qubit fragments; R_ind >= 2
+  with pairwise conditional-independence gate C_ab <= 0.02 bit;
+  excess-over-GS certification; theta* = GS-subtracted mean center-bond
+  linear entropy; five d=1-analog checks; onset must occur by Jt <= 1)
+machine_budget: 16 GB RAM / 10-core M4 — BOTTOM of the scout envelope.
+  Hard requirements: fully orbit-reduced representation (5,605,504
+  proper-cubic orbits; never materialize 2^27 vectors in full mode);
+  RSS guard 10 GB with clean abort; checkpoint/resume per (lambda,
+  time-chunk); the invariant-sector argument (symmetric preparation +
+  invariant H) makes per-fragment observables equal orbit averages.
+blocks: >
+  Block01a: engine — cubic-orbit basis, matrix-free matvec (ZZ
+  diagonal + X-flip transition table), Lanczos GS, Krylov stepping,
+  symmetry-adapted local Pauli / conditional 1-2 qubit reduced-state
+  toolkit; self-validation vs dense 3x3x2 slab (< 10 min).
+  Block01b: pilot runner — the scout memo's protocol and five checks,
+  --validate (slab + GS controls + D-route bit-model bookkeeping) and
+  --full (overnight 3-lambda sweep) modes. Block02: execute overnight,
+  measure, note, PR. Block03: close + handoff (further blocks only if
+  the pilot demands iteration).
+success_bar: >
+  The three questions of the derivation synthesis answered on the
+  minimum claim-bearing volume: excess-gated R_ind >= 2 onset
+  (occurs / does not), delta-insensitivity of theta* (factor < 1.5
+  over delta in {0.05, 0.10, 0.20}), and bar location vs the sparse
+  window theta >= 0.2. BAR-NOT-PINNED and BAR-BELOW-WINDOW are
+  substantive outcomes, not failures. The two predeclared risk
+  signatures (empty QND window; correlated-channel fake redundancy)
+  are reported exactly as measured; no retuning around them.
+current_block: block01a engine worker launching
+current_branch: physics-loop/d3-registration-pilot-block01-20260709
+  (base = registration-bar-block03)
+worktree: /Users/jonBridger/tp-matter-mass-wep
+imports: the QD record reading (standing convention); the d=1
+  registration protocol conventions by citation; the TFIM, preparation,
+  pointer basis, tolerances, and theta map are DECLARED comparator
+  inputs (the scout memo's "not basis-neutral" caveat is retained
+  verbatim on every surface).
+discipline: physics-loop standard; vocab_lint before commits; commit
+  early (branch state must survive automation resets); stop and write
+  up on any axiom trigger.
+next_exact_action: review engine worker draft line-by-line
+stop_condition_hit: none

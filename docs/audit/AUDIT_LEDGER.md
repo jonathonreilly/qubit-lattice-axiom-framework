@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 941 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1773 |
+| unaudited | 1772 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 107 |
+| ~~audited_conditional~~ | 108 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1352 |
-| `audited_conditional` | 107 |
+| `audited_conditional` | 108 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2118 |
+| `unaudited` | 2117 |
 
 | claim_type | count |
 |---|---:|
@@ -1515,6 +1515,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_real_holonomy_locus_identity_2026-07-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2172,6 +2173,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Then the supplied context satisfies the Record-registrability algebra needed by the parent R-eta narrowing.  _(class `A`)_
 - **chain closes:** None — The chain closes for the supplied finite-context registrability bridge because the needed projectors, additivity, K/CPT orbit action, symmetric-function readout, complement equivalence, and realized-record assignment rigidity are either direct finite algebra in the note/runner or inherited from retained-bounded/meta direct dependencies. It does not close the physical charged-lepton carrier/context realization, chirality gate, or A_R-eta value, all of which the note excludes from scope.
 - **rationale:** The audited claim is explicitly bounded to the supplied finite circulant context, not to physical carrier realization or the downstream R-eta value. Within that scope the source note plus retained/meta direct dependencies close by finite algebra: Fourier projectors give central sectors, disjoint-sector scalar additivity is well-defined, K/CPT conjugates the sectors, symmetric readout data are K-even, the orientation line is K-odd, and the hw-complement/species-registration facts used here are rechecked on the finite model. The primary runner completed successfully with TOTAL: PASS=35 FAIL=0 and checks the load-bearing symbolic identities rather than a fitted comparator. Residual downstream parent promotion remains outside this audit boundary.
+
+### `acphilambda_real_holonomy_locus_identity_2026-07-01`
+
+- **Note:** [`ACPHILAMBDA_REAL_HOLONOMY_LOCUS_IDENTITY_2026-07-01.md`](../../docs/ACPHILAMBDA_REAL_HOLONOMY_LOCUS_IDENTITY_2026-07-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The asserted equality of the K-real G-orbit, real-holonomy locus, and retained modulus-stationary set on the charged-lepton circulant surface, together with the off-locus status of delta = 2/9.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00043-acphilambda_real_holonomy_lo`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** With real b giving delta in {0, pi}, the G-orbit of those phases is exactly {k pi/3}, which is also equivalent to cos(3 delta) = ±1 and to the retained modulus-stationary set.  _(class `A`)_
+- **chain closes:** False — The algebra closes for |b| > 0, but that domain restriction is absent from the claim. At b = 0, the spectrum does not determine cos(3 delta), arg(b^3) is undefined, and K-reality does not select the claimed phase subset.
+- **rationale:** Issue: Lemma R and Phi = arg(b^3) are stated over the circulant surface without requiring |b| > 0, while the runner silently imposes rho > 0. Why this blocks: at b = 0 the spectrum is {a, a, a}, so it cannot determine cos(3 delta), and the holonomy phase is undefined. Repair target: propagate an explicit nonzero-coupling hypothesis through the claim, lemma, theorem, and runner contract, or separately define the zero-coupling stratum. Claim boundary until fixed: for |b| > 0, the exact G-orbit/locus identity and off-locus arithmetic follow from the retained inputs.
+- **auditor confidence:** high
 
 ### `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11`
 

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 934 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1826 |
+| unaudited | 1825 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 73 |
+| ~~audited_conditional~~ | 74 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1343 |
-| `audited_conditional` | 73 |
+| `audited_conditional` | 74 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2171 |
+| `unaudited` | 2170 |
 
 | claim_type | count |
 |---|---:|
@@ -1556,6 +1556,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `theta_gauge_winding_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -19780,6 +19781,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** By L1 and L2, all populated sector masses m(q) are real and non-negative; requiring e^{i theta q} m_tilde(q) with m_tilde(q)>0 to reproduce native sector ratios forces every nonvacuous relative phase to be positive real, hence theta is zero modulo support aliases.  _(class `A`)_
 - **chain closes:** True — The proof uses retained-grade or meta one-hop inputs for the positive native measure/transfer carrier and then only pushforward positivity plus elementary phase-ratio algebra. Context handles are plain-text/non-dependency handles, and the note explicitly leaves Q-existence, integrality derivation, susceptibility, arbitrary UV completions, and arbitrary positive factorization outside scope.
 - **rationale:** The L1 attribution split is correct: pointwise Wilson positivity is elementary, while cited Wilson rows support coefficient/kernel positivity for slicing. L2 weak-limit positivity is stated at measure/test-function level, not as an unsupported per-sector convergence theorem. The runner tests finite connectivity, pushforward positivity, theta-phase discrimination, sparse-support aliases, marginal/weak positivity, gauge miniature positivity, and dependency-link guards; it does not hard-code a desired theta branch as the theorem's proof. Residual scope is bounded to the supplied positive class and cannot be cited as a Q-structure existence theorem.
+- **auditor confidence:** high
+
+### `theta_gauge_winding_axiom_update_no_go_note_2026-07-04`
+
+- **Note:** [`THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`](../../docs/THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Historical bounded non-supply result: the stated axioms and approved primitives do not themselves provide the gauge-action, Q-sector, branch/readout, or weighting structure needed for the theta gauge-side winding account; no universal exclusion or retirement is established.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-theta_gauge_winding_axio-083`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The four axioms and approved primitives do not supply a gauge measure/action, topological-sector functional, branch or section choice, or nonvacuous theta-gauge weighting law.  _(class `B`)_
+- **chain closes:** True — The accepted axiom and primitive authorities explicitly restrict their content, while the retained-bounded theta authorities preserve the stated action/Q/readout gaps. This closes the narrow repository-surface non-supply claim, but only as cross-note boundary verification.
+- **rationale:** The runner performs 133 textual, ledger, and cross-note checks plus 24 exact finite or symbolic sanity checks; it contains no first-principles class-C closure and no external-comparator checks. Its finite U(1), SU(2), and mixed-derivative calculations support the stated boundaries but are not the load-bearing proof of non-supply. Moreover, the cited Tier-A registry authority is meta rather than retained-grade, so the rubric prevents an audited-clean verdict even though the narrowly scoped bookkeeping conclusion follows.
+- **open / conditional deps cited:**
+  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
 - **auditor confidence:** high
 
 ### `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02`

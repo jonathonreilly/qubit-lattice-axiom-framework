@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_vacuum_plaquette_residual_environment_spectrum_actual_l3.py
+runner_sha256: 1b5a82ca657326bd917cbf068f26587d6a7dccd980c2c8c9425fd0edea488291
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 117.39
+status: ok
+----- stdout -----
+===============================================================================
+L_s=3 TWO-SLICE LITERAL-FACTOR-DELETION MATRIX DISCRIMINATOR
+===============================================================================
+beta=6.0, chains=4, therm=900, measure=3200, sample_every=4
+
+Implementation checks
+  [PASS] local update delta equals full literal-deletion weight delta: residual=0.000e+00
+  [PASS] literal-deletion census is 80+80 spatial half-factors and 77 mixed factors: spatial=80+80 mixed=77
+
+Independent literal-factor-deletion chains
+  seed=73009 marked= 0 init=cold acc=0.539 n=800 diag10=-0.03058 diag01=-0.03058 diag11=-0.00083
+  seed=73013 marked= 1 init=hot  acc=0.537 n=800 diag10=+0.00082 diag01=+0.00082 diag11=+0.02502
+  seed=73019 marked=27 init=cold acc=0.553 n=800 diag10=-0.01982 diag01=-0.01982 diag11=+0.04710
+  seed=73037 marked=54 init=hot  acc=0.538 n=800 diag10=-0.00041 diag01=-0.00041 diag11=-0.08004
+
+Normalized literal-factor-deletion character matrix
+  row (0, 0): +1.00000+0.00000i  +0.02661-0.00089i  +0.02661+0.00089i  +0.00549-0.00000i
+  row (1, 0): +0.01554-0.01296i  -0.01237-0.00240i  -0.00493+0.03061i  +0.01601-0.02612i
+  row (0, 1): +0.01554+0.01296i  -0.00493-0.03061i  -0.01237+0.00240i  +0.01601+0.02612i
+  row (1, 1): -0.00844-0.00000i  +0.00008-0.01176i  +0.00008+0.01176i  -0.00238-0.00000i
+
+Diagonal with block-jackknife errors
+  (0, 0): +1.0000000 +0.00e+00i +/- 0.000e+00
+  (1, 0): -0.0123653 -2.40e-03i +/- 1.864e-02
+  (0, 1): -0.0123653 +2.40e-03i +/- 1.864e-02
+  (1, 1): -0.0023780 -1.46e-18i +/- 1.635e-02
+
+Discriminating checks
+  [PASS] trivial literal-deletion matrix element normalizes to one: residual=0.000e+00
+  [PASS] all off-diagonal character elements are consistent with zero: max=1.77 SE
+  [PASS] fundamental and antifundamental diagonal elements agree: residual=4.792e-03, error=2.636e-02
+  [PASS] chain acceptance is nondegenerate: range=0.537..0.553
+
+This runner is not the algebraically stripped post-compression operator.
+A nonzero off-diagonal element falsifies only the naive literal-deletion-as-convolution route.
+A diagonal result cannot establish the desired residual equality by itself.
+
+SUMMARY: PASS=6 FAIL=0
+
+----- stderr -----
+

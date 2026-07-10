@@ -20,6 +20,7 @@ import sys
 from dataclasses import dataclass
 from fractions import Fraction
 from math import gcd
+from pathlib import Path
 
 
 @dataclass(frozen=True)
@@ -53,6 +54,27 @@ def evaluate() -> list[Check]:
     casimir_ratio = numerator / denominator
     r_base = gut_norm * casimir_ratio
 
+    registered_y_squared_trace = (
+        6 * Fraction(1, 6) ** 2
+        + 3 * Fraction(2, 3) ** 2
+        + 3 * Fraction(1, 3) ** 2
+        + 2 * Fraction(1, 2) ** 2
+        + Fraction(1, 1)
+    )
+    registered_t3_squared_trace = 8 * Fraction(1, 4)
+    registered_gut_norm = registered_t3_squared_trace / registered_y_squared_trace
+    registered_r_base = registered_gut_norm * Fraction(155, 27)
+
+    root = Path(__file__).resolve().parents[1]
+    bridge_name = (
+        "HYPERCHARGE_GUT_NORMALIZATION_THREE_FIFTHS_"
+        "ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-07-10.md"
+    )
+    note_path = root / "docs" / "R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md"
+    bridge_path = root / "docs" / bridge_name
+    note_text = note_path.read_text(encoding="utf-8") if note_path.is_file() else ""
+    bridge_text = bridge_path.read_text(encoding="utf-8") if bridge_path.is_file() else ""
+
     checks = [
         Check("C_2(SU(3)_fund) = 4/3", c2_3 == Fraction(4, 3), str(c2_3)),
         Check("C_2(SU(2)_fund) = 3/4", c2_2 == Fraction(3, 4), str(c2_2)),
@@ -77,6 +99,20 @@ def evaluate() -> list[Check]:
         Check("3/5 remains an admitted normalization input here", gut_norm == Fraction(3, 5), "not derived by this runner"),
         Check("no observed cosmology value enters the exact arithmetic", all(isinstance(x, Fraction) for x in [c2_3, c2_2, gut_norm, numerator, denominator, r_base]), "Fraction arithmetic only"),
     ]
+    checks.extend(
+        [
+            Check("registered-premise arithmetic: Tr(Y^2) = 10/3", registered_y_squared_trace == Fraction(10, 3), str(registered_y_squared_trace)),
+            Check("registered-premise arithmetic: Tr(T_3^2) = 2", registered_t3_squared_trace == Fraction(2, 1), str(registered_t3_squared_trace)),
+            Check("registered-premise arithmetic: 2/(10/3) = 3/5", registered_gut_norm == Fraction(3, 5), str(registered_gut_norm)),
+            Check("registered-premise composition: (3/5)*(155/27) = 31/9", registered_r_base == Fraction(31, 9), str(registered_r_base)),
+            Check("r_base note contains the bridge filename", bridge_name in note_text),
+            Check("r_base note names explicit accepted-premise registration", "explicit accepted-premise registration" in note_text),
+            Check("r_base note removes stale hypercharge-lane admission text", "retained/admitted from the hypercharge-identification lane" not in note_text),
+            Check("accepted-premise bridge note exists", bridge_path.is_file(), str(bridge_path)),
+            Check("accepted-premise bridge contains (P1a)", "(P1a)" in bridge_text),
+            Check("accepted-premise bridge contains (P1b)", "(P1b)" in bridge_text),
+        ]
+    )
     return checks
 
 

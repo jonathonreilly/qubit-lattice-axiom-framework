@@ -51,6 +51,9 @@ inputs. You must not assume access to any other note.
 
 ### 3. Runner output (if available)
 
+The evidence path for this exact rendered stdout block is
+`{{RUNNER_STDOUT_EVIDENCE_PATH}}`.
+
 ```
 {{RUNNER_STDOUT}}
 ```
@@ -195,6 +198,16 @@ characters. The manifest is an allow-list, not evidence by itself:
 {{NO_GO_EVIDENCE_MANIFEST}}
 ```
 
+For N8, the orchestrator has also supplied a cross-cycle search index. It is
+constructed from this row's audit history, one-hop authority audit history,
+Tier-A retirements, and owner-governed retirements. You must disposition every
+listed `candidate_id`; `packet_complete` is valid only when the N8 evidence
+path names this index.
+
+```json
+{{NO_GO_CROSS_CYCLE_INDEX}}
+```
+
 Record all eight checks in `no_go_discipline`. A gate `FAIL` is allowed with a
 conservative non-clean verdict, `chain_closes=false`, an explicitly narrowed
 `claim_scope`, a corrected wall set, and the next untested route. It can never
@@ -319,6 +332,7 @@ Use `null` only when the gate is not required. Otherwise replace it with:
       "outcome": "<why the attempt closes the route or why it remains open>",
       "honesty_marker": "<ATTEMPTED | RULED OUT BY PRIOR>",
       "disposition": "<CLOSED | OPEN | UNTESTED>",
+      "prior_witness_id": "<required only for RULED OUT BY PRIOR: matching N4 witness_id>",
       "evidence_path": "<path from NO_GO_EVIDENCE_MANIFEST>",
       "evidence_locator": "<12+ character quote/locator actually present at evidence_path>"
     }
@@ -340,6 +354,7 @@ Use `null` only when the gate is not required. Otherwise replace it with:
     "evidence_locator": "<actual locator>"
   },
   "N3_hidden_wall_scan": {
+    "scan_scope": "<phrases and restricted packet surfaces checked>",
     "hits": [
       {
         "phrase": "<scanned phrase>",
@@ -349,13 +364,17 @@ Use `null` only when the gate is not required. Otherwise replace it with:
         "evidence_locator": "<actual locator>"
       }
     ],
+    "none_found_reason": "<required when hits is empty>",
     "unresolved": [],
     "evidence_path": "<manifest path covering the scan>",
     "evidence_locator": "<actual locator>"
   },
   "N4_residual_matching": {
+    "scan_scope": "<witness and residual surfaces checked>",
     "witnesses": [
       {
+        "witness_id": "<unique id referenced by a prior-ruled N1 route>",
+        "route_id": "<matching N1 route_id>",
         "witness_residual": "<residual in cited witness>",
         "claim_residual": "<residual asserted here>",
         "match": true,
@@ -363,11 +382,13 @@ Use `null` only when the gate is not required. Otherwise replace it with:
         "evidence_locator": "<actual locator>"
       }
     ],
+    "none_found_reason": "<required when witnesses is empty; forbidden as a substitute for prior-route evidence>",
     "unresolved": [],
     "evidence_path": "<manifest path covering the scan>",
     "evidence_locator": "<actual locator>"
   },
   "N5_rhetoric_audit": {
+    "scan_scope": "<negative-resolution language checked>",
     "statements": [
       {
         "phrase": "<negative or resolution phrase>",
@@ -377,11 +398,20 @@ Use `null` only when the gate is not required. Otherwise replace it with:
         "evidence_locator": "<actual locator>"
       }
     ],
+    "none_found_reason": "<required when statements is empty>",
     "unresolved": [],
     "evidence_path": "<manifest path covering the scan>",
     "evidence_locator": "<actual locator>"
   },
   "N6_partial_closure_scan": {
+    "scan_scope": "<primitive, owner-governed, Tier-A, convention, definition, and scope surfaces checked>",
+    "premise_classes_checked": [
+      "axiom_or_approved_primitive",
+      "owner_governed_residual",
+      "tier_a_derivation_target",
+      "tier_a_convention_not_accepted",
+      "definition_or_scope_reframe"
+    ],
     "candidates": [
       {
         "kind": "<approved_primitive | owner_governed | tier_a | convention_reframe | definition_refactor>",
@@ -392,11 +422,13 @@ Use `null` only when the gate is not required. Otherwise replace it with:
         "evidence_locator": "<actual locator>"
       }
     ],
+    "none_found_reason": "<required when candidates is empty>",
     "unresolved": [],
     "evidence_path": "<manifest path covering the scan>",
     "evidence_locator": "<actual locator>"
   },
   "N7_steelman": {
+    "route_id": "<the evidenced N1 route that instantiates the strongest steelman>",
     "argument": "<strongest argument against the no-go>",
     "resolution": "<why it succeeds or fails in the scoped packet>",
     "resolved": true,
@@ -407,6 +439,7 @@ Use `null` only when the gate is not required. Otherwise replace it with:
     "packet_complete": true,
     "echoes": [
       {
+        "candidate_id": "<candidate_id from the orchestrator cross-cycle index>",
         "mechanism": "<earlier wall/admission mechanism>",
         "retired": false,
         "applicable": true,
@@ -415,19 +448,27 @@ Use `null` only when the gate is not required. Otherwise replace it with:
         "evidence_locator": "<actual locator>"
       }
     ],
+    "none_found_reason": "<required only when the orchestrator index contains zero candidates>",
     "unresolved": [],
     "evidence_path": "<manifest path covering the restricted search>",
     "evidence_locator": "<actual locator>"
   },
   "failures": ["<failing N-item; empty only for PASS>"],
-  "demotion": "<for FAIL only: partial_attempt_with_named_untested_routes | partial_narrowing | bounded_with_corrected_wall_count | stretch_attempt_with_honest_residual>",
+  "demotion": "<for FAIL only: partial-attempt-with-named-untested-routes | partial-narrowing | bounded-with-corrected-wall-count | stretch-attempt-with-honest-residual>",
+  "prior_claim_scope": "<for FAIL only: exact pre-audit ledger scope supplied by the orchestrator>",
   "narrowed_claim_scope": "<for FAIL only: exact same text as top-level claim_scope>",
   "corrected_wall_set": ["<for FAIL only: honest walls still supported>"],
-  "next_route": "<for FAIL only: cheapest concrete untested route>"
+  "next_route": {
+    "route_id": "<for FAIL only: OPEN or UNTESTED N1 route_id>",
+    "reason_untested": "<why this route remains the next concrete target>"
+  }
 }
 ```
 
-For `PASS`, omit the four FAIL-only fields. For `FAIL`, all four are required.
+For `PASS`, omit the five FAIL-only fields. For `FAIL`, all five are required.
+The orchestrator adds `evidence_snapshot` after validating the exact rendered
+packet; do not emit or fabricate that field. An `audited_clean` PASS must carry
+`chain_closes=true`.
 Any `OPEN`/`UNTESTED` route, unresolved N2-N6/N8 item, mismatched witness,
 untested rhetoric resolution, unaddressed partial-closure candidate, unresolved
 steelman, incomplete N8 packet, or applicable unaddressed echo forces `FAIL`.

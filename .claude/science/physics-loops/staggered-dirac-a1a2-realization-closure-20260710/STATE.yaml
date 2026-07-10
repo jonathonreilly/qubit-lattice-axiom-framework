@@ -50,10 +50,13 @@ no_go_routes:
   - target-zero-set selection is not present in the minimal surface
 trace_gate_classification: direct_blocker_closure
 review_disposition: iteration_3_pass
-pr_status: not_started
+audit_compatibility_validation: >-
+  PASS at source commit 1dce05887 in a disposable worktree: full 16-stage
+  pipeline and audit_lint --strict returned no errors; the new no_go row is
+  ready, leaf, unaudited, and has zero inbound edges.
+pr_status: pending_push
 next_exact_action: >-
-  Run disposable-worktree audit compatibility validation, then package the
-  reviewed branch in one no-go PR without merging.
+  Push the reviewed branch and open one no-go review PR without merging.
 stop_condition: >-
   Review passes the scoped no-go and its audit compatibility, or the artifact
   is demoted to the strongest finite exact support boundary.

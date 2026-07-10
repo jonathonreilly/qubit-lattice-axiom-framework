@@ -28,8 +28,9 @@ lanes after those fixes.
 
 ## Exact next action
 
-Run disposable-worktree audit compatibility validation, then commit/rebase as
-needed, push, and open one no-go review PR. Do not apply an audit verdict.
+The disposable-worktree audit pipeline and strict lint passed: the sibling is
+seeded `no_go`, `unaudited`, ready, leaf, and without inbound edges. Push the
+branch and open one no-go review PR. Do not apply an audit verdict.
 
 ## Later weaving proposal
 

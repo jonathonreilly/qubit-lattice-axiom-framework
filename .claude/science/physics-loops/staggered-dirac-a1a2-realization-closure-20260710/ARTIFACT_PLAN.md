@@ -12,9 +12,9 @@
 - Canonical bounded realization parent restored byte-for-byte to `origin/main`.
 - Review iteration 3 passed code/math, physics-boundary, and no-go/governance
   lanes.
+- Disposable full audit pipeline and strict lint passed; generated authority
+  remained isolated and was discarded with the validation worktree.
 
 ## Remaining
 
-1. Run vocabulary, runner, independent math, and disposable-worktree audit
-   compatibility checks.
-2. Commit, rebase, push, and open one review PR.
+1. Push and open one review PR.

@@ -10,9 +10,9 @@
 
 ## Comparison boundary
 
-The retained-bounded Wilson temporal-gauge RP bridge
+The Wilson temporal-gauge RP bridge
 ([`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md),
-ledger `effective_status = retained_bounded`) runs a three-step mechanism on the
+whose current standing is recorded in the live audit ledger) runs a three-step mechanism on the
 Wilson plane weight: (W1) reflection split of the action across the temporal
 reflection plane, (W2) **nonnegativity of the character coefficients of the
 plane (straddling) factor**, (W3) the integrated reflected Gram matrix is PSD
@@ -34,7 +34,7 @@ manifest from the spectral definition.
 Let `G` be a compact Lie group equipped with a specified positive
 bi-invariant Laplacian, and let `λ` label its irreducible representations with
 dimension `d_λ` and nonnegative Laplacian eigenvalue `C₂(λ)`. For the `SU(N)`
-cases, `C₂` uses the retained trace-form normalization
+cases, `C₂` uses the specified trace-form normalization
 `Tr(T_a T_b) = δ_ab/2`. The finite and abelian runner testbeds use the explicitly
 specified nonnegative central generators stated below. Define the heat-kernel
 (HK) single-plaquette weight
@@ -44,8 +44,8 @@ K_t = Σ_λ c_λ(t) χ_λ ,   c_λ(t) = d_λ · exp(−t · C₂(λ)/2) ,   t > 
 ```
 
 the same candidate object and convention as the HK candidate notes
-(`HEAT_KERNEL_UNIQUE_DIFFUSION_KERNEL_AMONG_CANDIDATE_GAUGE_ACTIONS_NARROW_THEOREM_NOTE_2026-06-08`,
-unaudited; the SU(3) fundamental coefficient there, `exp(−2/3)` at `t = 1`,
+(`HEAT_KERNEL_UNIQUE_DIFFUSION_KERNEL_AMONG_CANDIDATE_GAUGE_ACTIONS_NARROW_THEOREM_NOTE_2026-06-08`;
+the SU(3) fundamental coefficient there, `exp(−2/3)` at `t = 1`,
 is `exp(−t·C₂/2)` with `C₂(fund) = 4/3` — the runner cross-checks this
 convention alignment). Then:
 
@@ -77,10 +77,10 @@ convention alignment). Then:
   (H2 realness — the property the reflected-Gram argument actually consumes),
   the plane factor is a norm-square kernel (H2), so the reflected Gram
   `G_IJ = ⟨Θ(F_I) F_J⟩` over positive-half observables is PSD:
-  `G = W diag(κ) W†` with `κ ≥ 0`. This instantiates the retained gauge-half
+  `G = W diag(κ) W†` with `κ ≥ 0`. This instantiates the gauge-half
   Cauchy–Schwarz hypotheses
-  ([`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md),
-  ledger `effective_status = retained`) on the HK weight for compact Lie `G`
+  ([`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md);
+  consult the live audit ledger for current standing) on the HK weight for compact Lie `G`
   with the specified heat semigroup. The runner exercises the integrated Gram
   numerically for `SU(2)` and `SU(3)` and exactly for the listed finite
   testbeds; those checks support the factorization but are not its proof.
@@ -169,14 +169,14 @@ proved for `Z_N`/`U(1)` as stated and is support-only for the sampled
 - **No claim that the HK weight is the framework's realized/selected action.**
   HK is the Casimir-native *candidate*; the uniqueness-among-candidates note
   (`HEAT_KERNEL_UNIQUE_DIFFUSION_KERNEL_AMONG_CANDIDATE_GAUGE_ACTIONS_NARROW_THEOREM_NOTE_2026-06-08`)
-  is **unaudited**, the semigroup-selection boundary
+  is a context pointer, as are the semigroup-selection boundary
   (`SEMIGROUP_CLOSURE_DOES_NOT_FORCE_HEAT_KERNEL_QUADRATIC_CONDITION_BOUNDED_NOTE_2026-07-02`)
-  is **unaudited**, the registration-induced step-kernel route
+  and the registration-induced step-kernel route
   (`GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02`)
-  is **unaudited**, and the dynamical premise boundary
-  (`RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06`) is **audit_in_progress**
-  on the live ledger. Nothing here leans on any of them; they are context
-  pointers only.
+  and the dynamical premise boundary
+  (`RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06`). Nothing here leans on
+  any of them; consult the live audit ledger for current standing. They are
+  context pointers only.
 - **No Wilson obstruction claim.** This note adds a parallel result on a
   different weight. It neither endorses nor depends on the Wilson bridge's
   `SU(N≥3)` comparator framing; the representation-ring route above shows
@@ -200,26 +200,27 @@ proved for `Z_N`/`U(1)` as stated and is support-only for the sampled
 
 ## Dependencies
 
-**Load-bearing (valid retained tiers on the live ledger):**
+**Load-bearing dependencies** (current standing is audit-lane-owned; consult
+the live audit ledger):
 
 - [`REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10`](REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — `retained`. The abstract norm-square/Cauchy–Schwarz mechanism whose
+  — the abstract norm-square/Cauchy–Schwarz mechanism whose
   hypotheses H2–H3 instantiate on the HK weight.
 - [`AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05`](AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
-  — `retained_bounded`. Supplies the carrier, the antilinear reflection, the
+  — supplies the carrier, the antilinear reflection, the
   observable bases, the (W1)–(W3) decomposition, and the negative control
   design; this note swaps its plane weight and re-proves everything on the
   swap.
 
-**Context pointers (NOT load-bearing; unaudited / in-progress statuses stated
-above):** `HEAT_KERNEL_UNIQUE_DIFFUSION_KERNEL_AMONG_CANDIDATE_GAUGE_ACTIONS_NARROW_THEOREM_NOTE_2026-06-08`,
+**Context pointers (NOT load-bearing; consult the live audit ledger for current
+standing):** `HEAT_KERNEL_UNIQUE_DIFFUSION_KERNEL_AMONG_CANDIDATE_GAUGE_ACTIONS_NARROW_THEOREM_NOTE_2026-06-08`,
 `EMERGENT_GAUGE_HEAT_KERNEL_CLT_ATTRACTOR_CONDITIONAL_ON_BI_INVARIANT_DYNAMICS_NARROW_THEOREM_NOTE_2026-06-08`,
 `SEMIGROUP_CLOSURE_DOES_NOT_FORCE_HEAT_KERNEL_QUADRATIC_CONDITION_BOUNDED_NOTE_2026-07-02`,
 `GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02`,
 `RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06`,
 `RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06`,
-`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29` (the root RP row,
-`audited_conditional` — this note neither cites it as retained nor repairs it).
+`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29` (the root RP row;
+this note neither uses it as load-bearing authority nor repairs it).
 
 ## Runner test plan (Parts A–E ↔ claims)
 
@@ -270,7 +271,7 @@ All checks are deterministic (fixed seeds); the runner prints
 ## Closing
 
 On the spectral heat-semigroup parametrization, coefficient positivity is
-manifest, the retained gauge-half Cauchy–Schwarz mechanism runs natively, and
+manifest, the gauge-half Cauchy–Schwarz mechanism runs natively, and
 the antilinear-reflection control still separates the mechanism from vacuous
 positivity. The runner checks the integrated `SU(3)` Gram as a numerical
 instance. It proves pointwise positivity for the stated `Z_N`/`U(1)` surfaces

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 933 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1830 |
+| unaudited | 1829 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 71 |
+| ~~audited_conditional~~ | 72 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1342 |
-| `audited_conditional` | 71 |
+| `audited_conditional` | 72 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2175 |
+| `unaudited` | 2174 |
 
 | claim_type | count |
 |---|---:|
@@ -1524,6 +1524,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_q_eq_3delta_identity_note_2026-04-21` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -11312,6 +11313,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Within finite diagnostics only, the supplied faithful spin-1/2 input gives a soft-Bose/CAR boundedness discriminator, the retained CCR cardinality obstruction is blind to the same sigma_+ hard-core boson, the scalar toy kernel is PSD on the sampled surface, and the two-site NN bilinear spectra match across JW-fermion and hard-core-boson frames.  _(class `A`)_
 - **chain closes:** True — The finite matrix and spectrum statements follow by direct algebra, and the sole cited cardinality authority is retained-grade for the soft CCR finite-dimensional obstruction. The note explicitly excludes continuum spin-statistics, OS/Wightman, scalar microcausality, GL(F), and faithful-carrier closure from the audited claim.
 - **rationale:** The load-bearing content is a bounded finite-algebra package, not a continuum bridge claim. The included runner source performs the relevant sigma_+ nilpotence, trace/anticommutator, sampled PSD, and two-site spectrum computations rather than merely printing constants, and an independent recomputation matches those identities. The supplied faithful spin input is used only as a declared hypothesis for the finite discriminator, not as a derived carrier theorem.
+- **auditor confidence:** high
+
+### `koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The supplied C3 fixed-locus inputs algebraically give the local density 2/9, while the circulant phase is parity-odd with fixed loci at 0 and pi; global APS identification, eta parity, canonical branch selection, and the physical identification delta = eta_APS remain unproved.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-koide_phase_aps_eta_pari-079`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the forced transverse weights (1,2), the fixed-point sum evaluates to 2/9 and is treated as an APS eta spectral asymmetry rather than a 2pi-periodic angle.  _(class `A`)_
+- **chain closes:** False — The local root-of-unity arithmetic closes, but the cited APS authority retains only a local fixed-point density and explicitly leaves global ABSS applicability and the ambient APS invariant open. Parity supplies two fixed loci and neither the authorities nor the runner proves that eta is parity-odd or canonically selects the delta=0 branch.
+- **rationale:** The runner computes the finite sum and nearby weight alternatives correctly, although the claimed weight forcing is inserted as an unconditional True rather than independently derived. More importantly, the retained APS authority supports only the local density 2/9 and expressly withholds the global ABSS/ambient-eta bridge used by this note's route-reopening language. The parity authority proves delta maps to -delta, but it does not establish eta's parity transformation or select 0 rather than pi as a canonical physical basepoint.
+- **open / conditional deps cited:**
+  - `KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md`
 - **auditor confidence:** high
 
 ### `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04`

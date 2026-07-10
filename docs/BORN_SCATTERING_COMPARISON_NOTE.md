@@ -1,256 +1,358 @@
-# Born/Eikonal Scattering Comparison with Lattice Lensing
+# Born/Eikonal Scattering Comparison — Gaussian Pole Theorem and Finite-Harness Negative Boundary
 
-**Date:** 2026-04-08 (originally); 2026-04-08 (updated same day with 3D corrections); 2026-05-10 (rigorize PATH B — bounded numerical observation demotion)
-**Status:** bounded — bounded finite-run numerical comparison between a runner-computed plane-wave finite-path eikonal slope and an imported lattice slope, on a fixed parameter envelope (not a first-principles closure of the lattice lensing observable, not a derivation of the lattice slope, not a chain-closing theorem)
-**Claim type:** bounded_theorem (bounded numerical observation only for the fixed-envelope runner-computed eikonal and Gaussian-beam slopes versus the imported lattice slope; not a positive theorem, not a closure of the grown-DAG lensing readout)
-**Claim scope:** the runner-computed plane-wave eikonal slope is `−1.28` and the runner-computed 2D and 3D Gaussian-beam-corrected eikonal slopes are `−0.35` and `−0.77` respectively, all on the fixed envelope `L=15, x_src=5, β=0.8, b ∈ {3..6}`; the **lattice slope `−1.43` is an imported observational input** with retained authority cited below; the comparison is **diagnostic only**, not a first-principles closure of the lattice lensing observable, and not a derivation of either the lattice slope or the eikonal slope from the cited framework baseline.
+**Date:** 2026-04-08; 2026-07-10 exact-observable and Gaussian-integrability
+revision.
+**Claim type:** no_go
+**Actual current-surface status:** bounded negative boundary with an exact
+Gaussian pole subtheorem and a deterministic floating-point finite-harness
+ray/adjoint discriminator; independent audit is required.
+**Status authority:** independent audit lane only.
+**Runner:**
+[`scripts/gaussian_beam_eikonal.py`](../scripts/gaussian_beam_eikonal.py)
+**Runner cache:**
+[`logs/runner-cache/gaussian_beam_eikonal.txt`](../logs/runner-cache/gaussian_beam_eikonal.txt)
+**Claim scope:** on the supplied Fam1 finite propagation harness at
+`H=0.25`, historically empirical/tuned `beta=0.8`, Fam1 seed `0`, drift
+`0.20`, restore `0.70`, physical half-width `6`, `k H=2.5`, source fraction
+`1/3`, maximum connection distance `3`, field regularizer `0.1`, normalized
+last-layer `z`-centroid detector, `b in {3,4,5,6}`, and
+`T_phys in {7.5,15}`, neither the finite-path plane-ray function nor the
+old 2D/3D Gaussian ray formulas provide a derivation of the literal
+first-order detector-centroid response. The plane-ray function has a
+discriminated path-length shape change, while the exact signed-adjoint
+detector response has a stable four-point shape on the two supplied harnesses.
+The Gaussian ray formulas, as written, cross a zero-impact pole and do not
+define ordinary angular expectations. This is not a global no-go against
+geometric optics, a core-regularized ray model, or a coherent 3D
+amplitude/adjoint construction.
 
-## Rigorize-pass disposition (2026-05-10) — PATH B: bounded numerical observation
+## Result
 
-The 2026-05-05 audit verdict (`audited_numerical_match`, see
-`docs/audit/data/audit_ledger.json`) explicitly recorded
-`chain_closes: false` with the rationale that "the runner verifies the
-plane-wave and 2D Gaussian computations, but the lattice measurement,
-the 3D beam correction, and the physical identification of this
-eikonal comparison with the grown-DAG observable are imported rather
-than closed in the packet." The notes-for-re-audit field requested a
-retained-grade lattice measurement, retained-grade 3D beam-correction
-artifacts, and a bridge theorem identifying the finite-path eikonal
-observable with the grown-DAG lensing readout — none of which are
-available on the current retained surface.
+The old positive comparison does not close. The reason is now a derivation,
+not an appeal to the numerical gap between two imported slopes.
 
-The 2026-05-10 rigorize pass selects **PATH B**: this note is hereby
-reframed as a **bounded numerical observation**, not a positive
-theorem. The two PATH options at audit time were:
+There are two independent walls.
 
-- **PATH A** (derive from first principles): close all three audit
-  gaps (retained-grade lattice slope at the audited geometry,
-  retained-grade 3D beam correction, and bridge theorem identifying
-  the finite-path eikonal observable with the grown-DAG lensing
-  readout). This is genuine theorem-level work; the audit explicitly
-  rated this row "hard" with the reason that "closing it requires
-  first-principles lattice/dispersion and 3D beam/L-independence
-  derivations, not a small writeup or runner fix." This is **deferred
-  to future work** as a separate retained promotion.
-- **PATH B** (demote to bounded numerical observation): explicitly
-  scope the runner output as a fixed-envelope numerical comparison
-  with the imported lattice slope held as an observational input.
-  This is the disposition selected by this rigorize pass.
+1. **Bounded wrong path-length shape.** The finite-path ray law has the exact scale
+   form
 
-The prior independent audit verdict on the old source hash was
-`audited_numerical_match`. This source edit does not request or write a
-new verdict; the generated audit pipeline owns the row status after this
-claim-scope correction. PATH B simply makes the **claim scope** in this
-note honest about what the runner verifies versus what is imported.
+   ```text
+   I_ray(b; L, qL) = b^-1 F_q(b/L).
+   ```
 
-## Imported observational inputs (NOT derived in this packet)
+   Using the literal last-layer endpoints, its four-point slopes are
+   `-1.561304` and `-1.279251`. The literal first-order detector-centroid response, recomputed
+   as the exact signed-adjoint edge sum without ingesting a target exponent,
+   has slopes `-1.4356` and `-1.433549`. Thus the ray shape changes by
+   about `0.282`, while the literal response shape changes by about `0.002`.
+   This is a deterministic floating-point finite-harness comparison, not an
+   interval-certified exact inequality.
 
-The following inputs are **observational imports** held with retained
-authority cited; they are NOT derived from the cited framework baseline in this
-note:
+2. **The old Gaussian ray averages do not exist as ordinary expectations.**
+   For every fitted `b`, the angular family contains a ray satisfying
+   `b_eff = b - x_src tan(theta) = 0`. Near that ray,
 
-- **Lattice slope `−1.43`** on `b ∈ {3..6}` — imported from the
-  `gauss_lensing_*` lattice runners under
-  [`scripts/`](../scripts/) and the dispersion-relation
-  characterization. The retained-grade authority for this measurement
-  remains
-  [`DISPERSION_RELATION_NOTE.md`](DISPERSION_RELATION_NOTE.md), which
-  is itself `audited_conditional` (Schrödinger ≈ Klein-Gordon on the
-  grown DAG, R² Δ=0.002 — too close to distinguish). Until that note
-  closes, the lattice slope `−1.43` retains its imported-observational
-  character even where the comparison runner reports it.
-- **Lattice configuration `L=15, x_src=5, β=0.8`** — imported as the
-  fixed audit envelope from the directional-measure architecture
-  (see
-  [`ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md`](ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md),
-  `audited_conditional`, where `β = 0.8` is itself recorded as
-  **tuned support, not derived** per its 2026-05-10 PATH B
-  disposition). The eikonal-slope comparison here is at this fixed
-  point and is not claimed outside it.
-- **Identification of the eikonal integral with the grown-DAG
-  lensing readout** — the audit explicitly named this as
-  not-closed-in-packet ("the physical identification of this
-  eikonal comparison with the grown-DAG observable [is] imported
-  rather than closed"). No bridge theorem is on the retained surface.
+   ```text
+   I_ray(b_eff) = 2/b_eff + O(b_eff).
+   ```
 
-## What this note's runner DOES verify (under PATH B scope)
+   Both the 2D Gaussian weight and the old 3D angular marginal are strictly
+   positive at the pole. The left and right one-sided angular integrals
+   therefore diverge with opposite signs. The historical code obtained finite
+   values only by skipping `|b_eff| < 0.05`, which is an extra excision/core
+   cutoff and not a derived Gaussian-beam expectation. A Cauchy principal
+   value is a separate possible limiting prescription.
 
-The runner [`scripts/gaussian_beam_eikonal.py`](../scripts/gaussian_beam_eikonal.py)
-genuinely computes the following from chosen parameter values
-`L=15, x_src=5, β=0.8, b ∈ {3..6}`:
+The prior claim that the plane value is scientifically preferred because its
+slope is numerically closer to a separately supplied lattice value is
+withdrawn. Numerical proximity between two different observables is not an
+observable bridge.
 
-- The plane-wave finite-path eikonal slope is **`−1.28`** (R² = 0.999).
-- The 2D Gaussian-beam-corrected eikonal slope at `β = 0.8` is
-  **`−0.35`**.
-- The 3D Gaussian-beam-corrected eikonal slope at `β = 0.8` (with the
-  `1/L²` kernel factor) is **`−0.77`**, per
-  [`scripts/eikonal_3d_corrected.py`](../scripts/eikonal_3d_corrected.py).
-- Among these three runner-computed eikonal predictions, **`−1.28`
-  (plane-wave)** is numerically closest to the imported lattice slope
-  `−1.43`, with `Δ = 0.15`.
+## Minimal premises and forbidden imports
 
-The runner is not merely printing constants; it computes the finite-path
-eikonal integral and the Gaussian-beam-averaged integral from the
-formulas given below. The bounded numerical observation is precisely
-this: AT the fixed envelope `(L=15, x_src=5, β=0.8, b ∈ {3..6})`, the
-plane-wave eikonal slope `−1.28` is the closest of the three tested
-runner-computed predictions to the imported lattice slope `−1.43`.
+The runner uses the following supplied structure:
 
-## What this note does NOT establish
+- the supplied finite directed propagation rule and its declared harness
+  parameters;
+- complex-linear forward propagation;
+- the derivative of the supplied detector-centroid functional with respect to
+  the weak source parameter;
+- finite-dimensional adjoint differentiation, elementary calculus, and
+  log-log regression.
 
-- Not a derivation of the lattice slope `−1.43` from the cited framework baseline.
-- Not a closure of the lattice lensing observable.
-- Not a bridge theorem identifying the finite-path eikonal integral
-  with the grown-DAG lensing readout (this remains an audit-named
-  open gap).
-- Not a parameter-independent claim outside the fixed audit envelope
-  `(L=15, x_src=5, β=0.8, b ∈ {3..6})`.
-- Not an explanation of the L-independence of the lattice
-  measurement (the eikonal IS L-dependent; the lattice is NOT, at
-  fine H — this remains unexplained).
-- Not a determination of whether the 3D grown-DAG dispersion is
-  Schrödinger or Klein-Gordon (the dispersion authority itself is
-  `audited_conditional` with R² Δ=0.002 between forms).
+### Complete supplied finite-harness inventory
 
-## Future-work first-principles derivation target (deferred)
+| Input | Value / definition | Role |
+|---|---|---|
+| refinement | `H=0.25` | converts physical extents to layer/node counts |
+| nominal durations | `T_phys={7.5,15}` | set `NL=round(T_phys/H)` |
+| literal ray endpoints | `L_det=(NL-1)H={7.25,14.75}` | endpoint-matched plane-ray comparison |
+| transverse half-width | `PW_PHYS=6` | finite node window and detector slice width |
+| phase scale | `K_PER_H=kH=2.5`, hence `k=10` | free phase and source derivative |
+| source layer | `SRC_LAYER_FRAC=1/3`, rounded to the lattice | gives `x_src={2.5,5}` |
+| angular fixture | `beta=0.8` | historically empirical/tuned; weights the propagator |
+| grown geometry | Fam1 seed `0`, drift `0.20`, restore `0.70`, `max_d_phys=3` | fixes the finite directed edge set |
+| field/source | `1/(sqrt((x-x_src)^2+(z-b)^2)+0.1)` | supplied 2D denominator and core regularizer |
+| impact window | `b={3,4,5,6}` | four-point log-log fit domain |
+| detector | normalized intensity-weighted `z` centroid on layer `NL-1` | literal response functional |
 
-A retained promotion of this comparison to a chain-closing positive
-theorem would require, per the audit's
-`notes_for_re_audit_if_any` field, ALL of:
+These choices are premises of the bounded adjoint calculation. In particular,
+`beta=0.8` is recorded as empirical/tuned in the directional-measure history;
+the present runner holds it fixed and does not derive it.
 
-1. A retained-grade lattice measurement of the lensing slope on the
-   grown DAG at the audited geometry (closing the dispersion
-   authority dependency).
-2. A retained-grade 3D beam-correction derivation that explains the
-   Δ=0.15 residual without observable-tuning of `β`.
-3. A bridge theorem identifying the finite-path eikonal integral
-   with the grown-DAG lensing readout, including an explanation of
-   the L-independence.
+The following are forbidden and are not supplied to the runner:
 
-None of these are in scope for this PATH B rigorize pass. The audit
-rated this work "hard" — closing all three is theorem-level effort
-deferred to future work and would file as a separate retained note,
-not a status change to this row.
+- the exponent `-1.43` as a target or fitted input;
+- any within-packet retuning of the supplied `beta=0.8` fixture or finite
+  window to improve agreement with a target constant;
+- a Schrodinger, Klein-Gordon, Fermat, gravitational-lensing, or eikonal label
+  used as an unproved semantic bridge;
+- the centered finite-path surrogate used as the literal detector observable;
+- an incoherent Gaussian ray mixture substituted for coherent complex
+  propagation without derivation.
 
-## Context
+The four minimal framework axioms do not themselves supply a transfer
+operator, source law, `beta`, packet geometry, or detector observable. This
+note therefore establishes a reproducible bounded finite-harness negative
+result. It does not claim a zero-input numerical prediction from those axioms.
 
-The [dispersion relation measurement](DISPERSION_RELATION_NOTE.md) originally established Schrödinger on 2D lattice, but 3D follow-up showed **Schrödinger ≈ Klein-Gordon on the actual grown DAG** (R² Δ=0.002). The eikonal comparison is valid regardless of the dispersion type — it's a geometric-optics prediction for the deflection integral along a straight path through a 1/r potential.
+`beta=0.8` is not derived here. The directional-measure history classifies it
+as an empirical/tuned supplied value. It is load-bearing for the two literal
+adjoint tables, while the Gaussian pole theorem needs only that the displayed
+angular weights remain positive at the zero-impact ray. The runner does not
+ingest the target exponent, but that does not make the supplied harness
+first-principles.
 
-## The prediction
+## Derivation 1: the plane-ray law and its scale response
 
-For a non-relativistic particle on a straight path from x=0 to x=L, passing a 2D 1/r potential at (x_src, b), the eikonal deflection integral gives:
+For a straight ray with transverse distance `b` from a source at `x_src`, the
+finite-path transverse-gradient integral is
 
-```
-I_geom(b) = (1/b) · [(L-x_src)/√((L-x_src)²+b²) + x_src/√(x_src²+b²)]
+```text
+I_ray(b; x_src, L)
+  = integral_0^L b dx / ((x-x_src)^2+b^2)^(3/2)
+  = (1/b) [
+      x_src/sqrt(x_src^2+b^2)
+      + (L-x_src)/sqrt((L-x_src)^2+b^2)
+    ].
 ```
 
-At the lattice configuration (L=15, x_src=5):
+Set `x_src=qL` and `u=b/L`. Then
 
-| b | I_geom | local slope |
-| ---: | ---: | ---: |
-| 3 | 0.605 | — |
-| 4 | 0.427 | −1.21 |
-| 5 | 0.320 | −1.29 |
-| 6 | 0.250 | −1.37 |
+```text
+I_ray(b; L, qL) = b^-1 F_q(u),
 
-Power-law fit on b ∈ {3..6}: **I_geom ≈ 2.48 · b^(−1.28)**, R² = 0.999.
+F_q(u) = q/sqrt(q^2+u^2)
+       + (1-q)/sqrt((1-q)^2+u^2).
+```
 
-## Comparison
+Each term in `F_q` has logarithmic `u`-derivative
 
-| Quantity | Eikonal prediction | Lattice measurement |
-| --- | ---: | ---: |
-| Slope on b ∈ {3..6} | −1.28 | −1.43 |
-| Local slope at b=5→6 | −1.37 | ≈−1.43 |
-| R² of power-law fit | 0.999 | 0.998 |
-| Steepening with b? | Yes | Yes |
-| L-dependent? | Yes (strongly) | **No** (Lane L++) |
+```text
+-u^2/(a^2+u^2),
+```
 
-## The discrepancy (open-gap diagnosis, NOT explained in this packet)
+strictly between `-1` and `0`. Hence the local log-slope of `I_ray` is
+strictly between `-2` and `-1` at finite positive `u`; it approaches `-2` in
+the short-path limit and `-1` in the long-path limit. The runner also checks
+the exact covariance
 
-The slope difference `Δ = 0.15` between the runner-computed plane-wave
-eikonal slope and the imported lattice slope is **not explained** by
-any correction tested in this note. Three candidate explanations were
-considered, none of which the runner closes:
+```text
+I_ray(rho b; rho x_src, rho L) = rho^-1 I_ray(b; x_src, L).
+```
 
-1. **Gaussian beam profile (TESTED AND FALSIFIED below)**: A Gaussian
-   angular weight `exp(−β·θ²)` on the eikonal integral was tested in
-   both 2D and 3D forms at `β = 0.8`; both **worsen** the match
-   (`Δ = 1.08` and `Δ = 0.66` respectively, see the Beam-averaging
-   table). The β sweep does show the slope crosses `−1.43` at large
-   `β ≈ 10–20`, but at the audited `β = 0.8` the beam correction is
-   not in the right direction. The 2026-04-08 note text previously
-   asserted "β = 0.8 provides the specific correction that shifts
-   −1.28 → −1.43"; that earlier claim is **withdrawn** by this
-   PATH B pass — the runner output above refutes it.
+The path-length dependence is part of the candidate's theorem, not a numerical
+artifact.
 
-2. **Wave-mechanical corrections (NOT TESTED HERE)**: The eikonal is
-   a classical-path approximation; diffraction corrections of order
-   `λ/b` would modify the slope. No retained-grade derivation of the
-   relevant `λ` (which presumes a closed dispersion relation) is on
-   the surface in this packet, and no runner test is provided.
+### Target-constant-free plane-ray computation
 
-3. **L-independence (UNEXPLAINED)**: The finite-path eikonal formula
-   used here IS strongly `L`-dependent, while the lattice measurement
-   is `L`-independent at fine `H`. This packet does not derive an
-   `L`-independent observable; it is one of the three explicit
-   audit-named open gaps deferred to future-work retained promotion.
+The DAG contains layers `0,...,NL-1`, so the literal ray endpoint is
+`L_det=(NL-1)H`, not the nominal `T_phys`. The historical target formula used
+the nominal convention `L=15`; the runner replays that value separately, then
+uses the literal endpoints for the cross-harness discriminator.
 
-## Interpretation (under PATH B scope — diagnostic only, no structural claim)
+| `T_phys` | `L_det` | `x_src` | values on `b={3,4,5,6}` | fitted slope | `R^2` |
+|---:|---:|---:|---|---:|---:|
+| `7.5` | `7.25` | `2.5` | `0.495224, 0.323728, 0.227193, 0.167553` | `-1.561304` | `0.999237` |
+| `15` | `14.75` | `5` | `0.604424, 0.426509, 0.319385, 0.248640` | `-1.279251` | `0.999221` |
+| historical nominal convention | `15` | `5` | `0.605106, 0.427336, 0.320307, 0.249613` | `-1.275288` | `0.999242` |
 
-Under PATH B, this note offers **no structural interpretation** of
-why the runner-computed plane-wave slope happens to land closer to
-the imported lattice slope than the beam-corrected variants tested.
-The earlier "right functional form" / "wave-mechanical effect"
-language is **withdrawn**; it overclaimed a structural mechanism
-that the runner does not establish. The remaining bounded statement
-is just the numerical observation in 'What this bounded numerical
-observation establishes' below.
+No detector-centroid values enter this calculation.
 
-## Beam-averaging corrections (BOTH TESTED AND FALSIFIED)
+## Derivation 2: the Gaussian-ray pole obstruction
 
-The queued follow-up was to compute beam-corrected eikonals. Both 2D and 3D beam corrections were tested and both **WORSEN** the match:
+The historical 2D expression attempted to define
 
-| Model | Slope | Δ from −1.43 | Status |
-| --- | ---: | ---: | --- |
-| Plane-wave (single ray) | −1.28 | 0.15 | **BEST** |
-| 2D beam average (β=0.8) | −0.35 | 1.08 | Falsified |
-| 3D beam average (β=0.8, 1/L²) | −0.77 | 0.66 | Falsified |
-| Canonical 1/b | −1.00 | 0.43 | Wrong |
-| Lattice measurement | −1.43 | 0.00 | Target |
+```text
+G_2(b) = integral w_2(theta) I_ray(b-x_src tan(theta)) dtheta
+         / integral w_2(theta) dtheta,
 
-Scripts: [`gaussian_beam_eikonal.py`](../scripts/gaussian_beam_eikonal.py), [`eikonal_3d_corrected.py`](../scripts/eikonal_3d_corrected.py)
+w_2(theta) = exp(-beta theta^2).
+```
 
-**Why beam averaging fails:** At β=0.8, the beam width at the source position is σ_z ≈ 3.5–4.0, comparable to the impact parameters b ∈ {3..6}. Averaging over this wide beam smears out the 1/b structure, flattening the slope. The 3D correction (1/L² kernel factor) tightens the beam slightly (σ_z: 3.95 → 3.54) but not enough.
+The historical 3D expression replaces `w_2` by a positive marginal
 
-## What this bounded numerical observation establishes (under PATH B scope)
+```text
+w_3(theta_z) = integral exp[-beta(theta_y^2+theta_z^2)]
+                       cos^2(sqrt(theta_y^2+theta_z^2)) dtheta_y.
+```
 
-- AT the fixed envelope `(L=15, x_src=5, β=0.8, b ∈ {3..6})`, the
-  runner-computed plane-wave finite-path eikonal slope is `−1.28`,
-  numerically closer to the imported lattice slope `−1.43`
-  (`Δ = 0.15`) than the runner-computed 2D and 3D Gaussian-beam
-  corrections at `β = 0.8` (`Δ = 1.08` and `Δ = 0.66` respectively).
-- The picture remains **INCOMPLETE** as a first-principles closure:
-  the `Δ = 0.15` gap and the lattice L-independence are unexplained
-  by any correction tested in this packet, and the bridge to the
-  grown-DAG lensing readout is not derived here.
-- The original "non-relativistic" framing does not transfer
-  cleanly: the grown-DAG dispersion is too close to distinguish
-  Schrödinger from Klein-Gordon (R² Δ=0.002).
+For each declared `b` there is a pole inside the integrated angular chart at
 
-## Bottom line (bounded numerical observation)
+```text
+theta_0 = arctan(b/x_src),
+b_eff(theta_0) = 0.
+```
 
-> "Under PATH B (bounded numerical observation, 2026-05-10 rigorize
-> pass): AT the fixed envelope `(L=15, x_src=5, β=0.8, b ∈ {3..6})`,
-> the runner-computed plane-wave finite-path eikonal slope is `−1.28`,
-> numerically closer to the imported lattice slope `−1.43` (`Δ = 0.15`)
-> than the runner-computed 2D and 3D Gaussian-beam-corrected eikonal
-> slopes at `β = 0.8` (`−0.35` and `−0.77`, with `Δ = 1.08` and
-> `Δ = 0.66` respectively). The lattice slope is an **imported
-> observational input** (retained-grade authority pending dispersion
-> closure); the comparison is **diagnostic only**, not a
-> first-principles closure of the lattice lensing observable. The
-> `Δ = 0.15` residual, the L-independence, and the identification of
-> the finite-path eikonal integral with the grown-DAG lensing
-> readout are explicit audit-named open gaps and are deferred to a
-> future-work retained promotion (see 'Future-work first-principles
-> derivation target' above)."
+Because the source lies strictly inside the path,
+
+```text
+lim_(y -> 0) y I_ray(y; x_src,L) = 2.
+```
+
+Also
+
+```text
+db_eff/dtheta at theta_0 = -x_src sec^2(theta_0) != 0.
+```
+
+Thus each weighted integrand is a nonzero constant times
+`1/(theta-theta_0)` plus a bounded term. Its two one-sided improper integrals
+do not converge. The 3D factor cannot cure the pole because `w_3(theta_0)>0`:
+its integration domain contains a neighborhood of `theta_y=0` on which the
+integrand defining `w_3` is positive.
+
+The runner makes the logarithmic divergence visible without relying on an
+unstable uniform angular grid. For `b=3`, each shrinking decade surrounding
+the pole carries the following absolute integral:
+
+| shell in `|b_eff|` | absolute integral |
+|---|---:|
+| `0.01 .. 0.1` | `1.072283716050` |
+| `0.001 .. 0.01` | `1.072252843496` |
+| `0.0001 .. 0.001` | `1.072252534442` |
+| analytic limiting mass per decade | `1.072252531320` |
+
+Since infinitely many shrinking decades each carry the same nonzero absolute
+mass, the absolute integral diverges logarithmically. A symmetric principal
+value, a finite source core, diffraction, or another regularization may define
+a new model. None is selected by a Gaussian angular weight alone.
+
+Consequently the old quoted `-0.35` 2D and `-0.77` 3D slopes are withdrawn as
+beam-correction predictions. They were outputs of an exposed numerical excision
+rule, and the 3D angular factor did not resolve the mathematical wall.
+
+## Derivation 3: the literal first-order detector observable
+
+For the supplied coherent propagator, let `A_i` be the free forward amplitude,
+`W_ij` the free edge transfer, and `lambda_j` the reverse detector-centroid
+sensitivity. Differentiating the source phase and then the normalized detector
+centroid gives
+
+```text
+alpha_adj(b)
+  = 2 Re sum_(i->j) lambda_j A_i W_ij
+      [-i k L_ij / (r_ij(b)+0.1)]
+  = sum_e c_e / (r_e(b)+0.1),
+
+c_e = 2 Re[lambda_j A_i W_ij (-i k L_ij)].
+```
+
+This is the exact signed-adjoint edge identity derived in
+[`LENSING_ADJOINT_KERNEL_NOTE.md`](LENSING_ADJOINT_KERNEL_NOTE.md). The target
+runner does not read that note's four response values. It rebuilds the directed
+geometry, propagates `A`, backpropagates `lambda`, constructs every `c_e`, and
+sums the field denominators for each `b`.
+
+### Direct recomputation
+
+| `T_phys` | edge terms | signed-adjoint values on `b={3,4,5,6}` | fitted slope | `R^2` |
+|---:|---:|---|---:|---:|
+| `7.5` | `31,245,797` | `2.455550, 1.668763, 1.211138, 0.903854` | `-1.4356` | `0.9985` |
+| `15` | `65,528,627` | `5.986043, 3.819639, 2.826383, 2.211718` | `-1.433549` | `0.998404` |
+
+The overall response changes strongly with path length, but its four-point
+shape barely changes. The finite-path ray primitive predicts the opposite kind
+of change on this window. This is a direct discriminator between the two
+observables, not a fit of the ray model to the adjoint result.
+
+## What the revision retires
+
+- **Imported lattice exponent:** retired from the no-go proof. The target
+  runner computes the literal finite-harness response before fitting its
+  exponent.
+- **Open dispersion label:** removed. No dispersion classification is needed
+  for the finite-dimensional derivative or the ray-family existence theorem.
+- **2D and 3D Gaussian beam corrections:** withdrawn as ordinary expectations;
+  their zero-impact poles require an additional regularization premise.
+- **The old proximity conclusion:** withdrawn as physics. The plane value at
+  one path can be numerically near the adjoint value without identifying the
+  observables.
+- **Universal L-independence language:** not claimed. The runner establishes
+  shape stability only on the two declared finite harnesses.
+
+## What remains open
+
+This packet does not derive an analytic closed form for the signed-adjoint
+four-point exponent. It computes that exponent directly from the supplied
+finite propagation law. The remaining positive problem is to reduce
+
+```text
+sum_e c_e/(r_e(b)+0.1)
+```
+
+to a controlled analytic `b`-law while preserving the signed, detector-adjoint
+coefficients. A coherent 3D extension would likewise have to derive the
+forward amplitude, source derivative, and detector adjoint in 3D; an
+incoherent ray average is not a substitute.
+
+The harness choices enumerated above remain supplied finite-model inputs rather
+than consequences of the minimal framework axioms. For that reason this source
+note does not use
+`proposed_retained` wording for a zero-input numerical theorem.
+
+## No-go discipline gate
+
+**Disposition:** PASS for the declared ray/eikonal-to-detector-centroid bridge
+on the two supplied finite harnesses.
+
+- **Alternative routes:** plane finite-path ray (executed and discriminated);
+  2D Gaussian rays (undefined without a new pole prescription); 3D Gaussian
+  rays (same pole); centered surrogate (already ruled out); signed-adjoint
+  finite response (executed); coherent 3D amplitude/adjoint route (open).
+- **Independent walls:** plane path-length shape and Gaussian nonintegrability
+  are independent. Removing the Gaussian pole does not repair the plane
+  shape, and changing the path length does not define the Gaussian integral.
+- **Hidden-input scan:** the target constant and observational target values
+  are not ingested, and no within-packet retuning occurs. The historically
+  tuned `beta=0.8` and every other supplied harness input are listed above.
+- **Residual matching:** the no-go addresses only the claimed identification
+  of these ray formulas with the literal detector centroid. It does not rule
+  out geometric optics for a different observable.
+- **Rhetoric audit:** `no_go` is restricted to the displayed model class and
+  two finite harnesses.
+- **Partial-closure path:** the exact signed-adjoint edge law is the valid
+  current finite-harness route and is recomputed here.
+- **Steelman:** a finite-core or principal-value ray model can be constructed,
+  and a coherent geometric-optics limit might govern another readout. Either
+  is a new theorem target, not a repair of the old unregularized comparison.
+- **Cross-cycle consistency:** the conclusion agrees with the independently
+  audited centered finite-path negative boundary in
+  [`LENSING_FINITE_PATH_EXPLANATION_NOTE.md`](LENSING_FINITE_PATH_EXPLANATION_NOTE.md)
+  within that note's scope. The related
+  `LENSING_CENTROID_MULTIPOLE_NO_GO_BOUNDED_THEOREM_NOTE_2026-06-08.md` is
+  context only because it attacks a different nonnegative `1/r` residual; it
+  is not a load-bearing dependency here.
+
+## Bottom line
+
+> The plane finite-path formula is a legitimate ray surrogate, but it is not a
+> derivation of the supplied detector-centroid response: its endpoint-matched
+> four-point shape changes materially across the two paths, while a
+> target-constant-free signed-adjoint recomputation gives a stable shape on the
+> same two finite harnesses. The old 2D and 3D Gaussian ray formulas are even less complete:
+> their zero-impact rays make the ordinary angular expectations divergent, and
+> the historical finite slopes came from an added excision rule. The numerical
+> proximity of the long-path plane slope to the adjoint slope therefore does
+> not close an observable bridge. The positive residual preserved here
+> is the signed-adjoint edge law itself, not another unregularized ray average.

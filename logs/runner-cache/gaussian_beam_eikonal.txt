@@ -1,72 +1,93 @@
 ===== runner cache v1 =====
 runner: scripts/gaussian_beam_eikonal.py
-runner_sha256: 9415a164aef2688959a9825a872cb7a90dc220f7e024cf17a600094a6a3dbafc
-timeout_sec: 120
+runner_sha256: 7232e2dcfbee548aa2cd0f3b9a49cd68db5528521c8753e442dbc2970dbe5c3c
+helper_sha256: scripts/kubo_continuum_limit.py 0ca51f85c0dbab8c2062d423306b36c566d9a2cb1901c8079dbe3d651128ce5d
+helper_sha256: scripts/lensing_adjoint_kernel_probe.py 14b1fba9b5c73699a127bb4d884a17b394da71f8451ee0d9f30bfe7ec2a53c5c
+helper_sha256: scripts/lensing_adjoint_kernel_reduced_model.py d9ff59274d5fad3e94d82029239463fe034eeb66725702911224051e62354566
+timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 192.52
 status: ok
 ----- stdout -----
-================================================================================
-GAUSSIAN-BEAM-CORRECTED EIKONAL DEFLECTION
-  β=0.8, L=15.0, x_src=5.0
-  Beam width at source: σ_y = x_src/√(2β) = 3.953
-  Beam angular width: σ_θ = 1/√(2β) = 0.791 rad = 45.3°
-================================================================================
+============================================================================================
+BORN/EIKONAL OBSERVABLE DISCRIMINATOR
+============================================================================================
+No target exponent is supplied to this runner.
+Helper source provenance:
+  scripts/kubo_continuum_limit.py: 0ca51f85c0dbab8c2062d423306b36c566d9a2cb1901c8079dbe3d651128ce5d
+  scripts/lensing_adjoint_kernel_probe.py: 14b1fba9b5c73699a127bb4d884a17b394da71f8451ee0d9f30bfe7ec2a53c5c
+  scripts/lensing_adjoint_kernel_reduced_model.py: d9ff59274d5fad3e94d82029239463fe034eeb66725702911224051e62354566
 
-      b       I_plane       I_gauss     ratio
-  --------------------------------------------------
-    1.0      1.975618      0.099310    0.0503
-    2.0      0.954529      0.275624    0.2888
-    3.0      0.605106      0.305465    0.5048
-    4.0      0.427336      0.257168    0.6018
-    5.0      0.320307      0.273525    0.8539
-    6.0      0.249613      0.228613    0.9159
-    8.0      0.163858      0.169583    1.0349
-   10.0      0.115432      0.124584    1.0793
+[A] Plane-ray finite-path law
+  I(b;L,qL) = b^-1 F_q(b/L)
+  local slopes are strictly between -2 and -1 for finite positive b/L
+  short harness: T_phys=7.5, L_det=7.25, x_src=2.5
+  b=3: +0.495224434
+  b=4: +0.323727535
+  b=5: +0.227192611
+  b=6: +0.167553055
+  fit: 2.780822477 * b^(-1.561303798), R^2=0.999236502
+  long harness:  T_phys=15, L_det=14.75, x_src=5
+  b=3: +0.604423978
+  b=4: +0.426509357
+  b=5: +0.319384849
+  b=6: +0.248640453
+  fit: 2.485003030 * b^(-1.279250536), R^2=0.999220585
+  historical nominal convention: L=15, x_src=5
+  b=3: +0.605106404
+  b=4: +0.427336375
+  b=5: +0.320306794
+  b=6: +0.249612888
+  fit: 2.476646577 * b^(-1.275287795), R^2=0.999242491
 
-  POWER-LAW FITS on b ∈ {3..6}:
-    Plane-wave:    I ≈ 2.4766 · b^(-1.2753)   R²=0.999242
-    Gaussian-beam: I ≈ 0.4421 · b^(-0.3485)   R²=0.741117
-    LATTICE:       kubo ≈ 28.4 · b^(−1.43)
+[A] Gaussian ray-family existence test
+  b=3: theta0=0.540419500, angular cap=1.560796327, w2(theta0)=0.791644708, w3_marg(theta0)=0.709377781
+  b=4: theta0=0.674740942, angular cap=1.560796327, w2(theta0)=0.694738147, w3_marg(theta0)=0.504475654
+  b=5: theta0=0.785398163, angular cap=1.560796327, w2(theta0)=0.610498025, w3_marg(theta0)=0.354301008
+  b=6: theta0=0.876058051, angular cap=1.560796327, w2(theta0)=0.541191458, w3_marg(theta0)=0.250596739
+  absolute integral in successive pole decades (b=3):
+    0.01 < |b_eff| < 0.1: 1.072283716050
+    0.001 < |b_eff| < 0.01: 1.072252843496
+    0.0001 < |b_eff| < 0.001: 1.072252534442
+    analytic decade limit:             1.072252531320
+  consequence: the left and right one-sided angular integrals diverge with opposite signs; only an added principal-value/core prescription is finite.
 
-    Plane-wave  Δslope = 0.1547
-    Gauss-beam  Δslope = 1.0815
-    → Gaussian correction does NOT improve the match
+[C] Exact signed-adjoint detector-centroid laws
+  short harness: T_phys=7.5, x_src=2.5, edges=31245797
+  b=3: +2.455550034
+  b=4: +1.668763391
+  b=5: +1.211137714
+  b=6: +0.903854475
+  fit: 12.034907217 * b^(-1.435642062), R^2=0.998481109
+  long harness:  T_phys=15, x_src=5, edges=65528627
+  b=3: +5.986043447
+  b=4: +3.819638525
+  b=5: +2.826383104
+  b=6: +2.211718339
+  fit: 28.505369164 * b^(-1.433548534), R^2=0.998404436
+  adjoint slope change=0.002093528; plane-ray slope change=0.282053262
+  long-harness adjoint/plane slope separation=0.154297998
 
-  L-INDEPENDENCE TEST:
-  Does the Gaussian-beam slope depend on L?
-  (Lattice shows L-independence: slope ≈ −1.43 at both T=7.5 and T=15)
+Checks
+  PASS [A] plane law obeys exact one-over-length scale covariance
+  PASS [A] endpoint-matched plane four-point shape changes materially across paths
+  PASS [A] every fitted ray family contains its zero-impact pole
+  PASS [A] 2D and 3D angular weights are positive at every pole
+  PASS [A] pole coefficient b_eff*I(b_eff) tends to 2 (-1 side)
+  PASS [A] pole coefficient b_eff*I(b_eff) tends to 2 (+1 side)
+  PASS [A] each shrinking pole decade carries nonzero absolute mass
+  PASS [C] both adjoint edge lists are nonempty large finite computations
+  PASS [C] literal adjoint values are finite and positive on the declared window
+  PASS [C] literal adjoint four-point shape is stable across the two path lengths
+  PASS [C] plane-ray shape change is at least twenty times the adjoint shape change
+  PASS [C] long-harness slopes are discriminated without ingesting the target exponent
 
-       L   x_src     slope        R²
-  ----------------------------------------
-     7.5    2.50   -1.2287  0.996115
-    10.0    3.33   -0.9680  0.945004
-    15.0    5.00   -0.3485  0.741117
-    22.5    7.50   -0.0605  0.022701
-    30.0   10.00    0.0619  0.052317
-    45.0   15.00    6.1355  0.826788
+runner_check_breakdown = {A: 7, B: 0, C: 5, D: 0, total_pass: 12}
+TOTAL: PASS=12 FAIL=0
 
-  BETA SWEEP of Gaussian-beam slope (L=15.0, x_src=5.0):
-  Does varying β predict the lattice β-sweep?
-
-       β       σ_y     slope        R²
-  ----------------------------------------
-    0.10    11.180   -0.6293  0.492800
-    0.20     7.906   -0.3157  0.401950
-    0.40     5.590    0.1835  0.136022
-    0.80     3.953   -0.3485  0.741117
-    1.50     2.887   -0.5851  0.882670
-    3.00     2.041   -0.9424  0.966265
-    5.00     1.581   -1.3022  0.990428
-   10.00     1.118   -1.4868  0.999844
-   20.00     0.791   -1.3923  0.999966
-
-================================================================================
-VERDICT
-================================================================================
-  Plane-wave eikonal:     slope = -1.2753 (Δ = 0.1547 from lattice)
-  Gaussian-beam eikonal:  slope = -0.3485 (Δ = 1.0815 from lattice)
-  Lattice measurement:    slope = −1.43
+NARROW VERDICT
+  The plane-ray law is a well-defined finite-path surrogate, but its path-length shape response is not the literal signed-adjoint centroid response.
+  The old 2D/3D Gaussian ray formulas do not define ordinary beam expectations because they cross a nonintegrable zero-impact pole.
+  Therefore numerical proximity at one path length cannot provide the missing observable bridge.
 
 ----- stderr -----
-

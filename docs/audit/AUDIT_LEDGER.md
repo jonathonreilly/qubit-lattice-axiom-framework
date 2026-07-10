@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 953 |
+| **retained_bounded** | 954 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1706 |
+| unaudited | 1705 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1370 |
+| `audited_clean` | 1371 |
 | `audited_conditional` | 136 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2051 |
+| `unaudited` | 2050 |
 
 | claim_type | count |
 |---|---:|
@@ -1446,6 +1446,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `valley_linear_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `valley_linear_wide_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `wave_3plus1d_promotions_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_3plus1d_radiation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_amplification_near_horizon_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -22474,6 +22475,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The mass readout solves M_W=g_2(M_W)v/2 using the supplied same-surface g_2(v) at kappa_EW=0 and the SM one-loop SU(2) coefficient b_2=19/6, then compares the resulting M_W values to experimental pole measurements.  _(class `B`)_
 - **chain closes:** False — The deterministic arithmetic closes only after supplying kappa_EW=0, the same-surface EW normalization values, and the SM one-loop running/pole-comparator infrastructure; the direct YT dependency is a no-go that explicitly does not select kappa_EW=0.
 - **rationale:** Issue: the W-mass readout consumes the connected-trace specialization kappa_EW=0 and SM one-loop running/pole-comparator infrastructure as supplied inputs, while the direct color-projection dependency explicitly retains only the kappa-family algebra/no-go and says kappa_EW=0 is not derived. Why this blocks: the runner reproduces the same-surface arithmetic, but a hostile auditor can reject any retained W-mass derivation because the EW selector and physical running/pole-mass bridge are not closed by the cited retained authorities. Repair target: supply a retained EW-current selector theorem fixing kappa_EW=0 and a scoped retained bridge from the framework EW normalization surface through the chosen SM RGE/pole-mass infrastructure, or keep the row explicitly as a supplied-input diagnostic. Claim boundary until fixed: the row may be cited only as a bounded consistency calculation over the supplied kappa_EW=0 surface and standard one-loop running, not as a retained mass prediction or as evidence that the EW selector is derived.
+
+### `ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11`
+
+- **Note:** [`WARD_BOGOLIUBOV_NO_CONTINUOUS_SSB_LOW_D_BRIDGE_THEOREM_NOTE_2026-06-11.md`](../../docs/WARD_BOGOLIUBOV_NO_CONTINUOUS_SSB_LOW_D_BRIDGE_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the displayed nearest-neighbor U(1)-symmetric XY qubit Hamiltonian on finite periodic d-dimensional blocks, the audited chain proves the finite-volume order-parameter bound and, for fixed finite beta and d <= 2, vanishing transverse magnetization in the thermodynamic-limit-first weak-field limit.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00112-ward_bogoliubov_no_continuou`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The first-principles double-commutator bound 0 <= <[[Q_k,H],Q_{-k}]> <= N(J E(k)+h|m(h)|), combined with the Ward identity, Bogoliubov inequality, and mode sum rule, yields m(h)^2 S_Lambda(h|m(h)|) <= beta/4.  _(class `C`)_
+- **chain closes:** True — The qubit commutator algebra and bond-norm estimate establish the regulated lattice kernel bound, while the retained IR-threshold authority supplies the required d <= 2 divergence. Since |m| <= 1/2, the implicit regulator h|m| tends to zero with h, completing the weak-field conclusion.
+- **rationale:** The runner genuinely constructs the spin operators, Hamiltonians, Gibbs states, Fourier modes, and commutators; it does not merely print expected results or import a calibrated value. The analytic B1-B5 chain agrees with those computations and closes from the accepted lattice/qubit premise plus the independently retained IR threshold. The clean scope is the explicitly displayed nearest-neighbor XY family, not arbitrary finite-range U(1)-symmetric interactions.
+- **auditor confidence:** high
 
 ### `wave_3plus1d_promotions_note`
 

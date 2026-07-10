@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 387,
     "high": 265,
-    "leaf": 714,
+    "leaf": 713,
     "medium": 498
   },
   "cycle_break_target_count": 10,
@@ -36885,31 +36885,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/WARD_BOGOLIUBOV_NO_CONTINUOUS_SSB_LOW_D_BRIDGE_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/ward_bogoliubov_no_continuous_ssb_low_d_bridge_2026_06_11.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "wilson_temporal_kernel_casimir_generator_beta_gbare_transport_theorem_note_2026-07-01",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -55972,6 +55947,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 157,
-  "total_pending": 1864
+  "ready_count": 156,
+  "total_pending": 1863
 }

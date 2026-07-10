@@ -2,9 +2,9 @@
 runner: scripts/acphilambda_retirement_basis_rematch_claim_surface_2026_07_06.py
 runner_sha256: 44f3bc16c52a9087f20a6a54e054cf14cee3b5279bf2c3dd3549223934c9a885
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.14
-status: ok
+exit_code: 1
+elapsed_sec: 0.18
+status: nonzero_exit
 ----- stdout -----
 === AC_phi_lambda retirement-basis re-match + claim-surface audit ===
 
@@ -21,7 +21,7 @@ status: ok
 
 [M2] audited basis grades (live ledger)
 
-[PASS] all 16 basis rows are retained-grade
+[FAIL] all 16 basis rows are retained-grade  [[('acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11', 'unaudited'), ('koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09', 'audited_failed'), ('acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05', 'unaudited'), ('acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11', 'unaudited'), ('acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18', 'unaudited'), ('acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11', 'unaudited'), ('charged_lepton_koide_value_full_chain_of_custody_2026-06-02', 'open_gate')]]
 
 [M3] atom-match witnesses
 
@@ -35,13 +35,13 @@ status: ok
 [M4] boundary witnesses
 
 [PASS] value-face note labels the PDG comparison a comparator (exactness residual open)
-[PASS] custody capstone carries the structure/value split (value modulo the named input)
+[FAIL] custody capstone carries the structure/value split (value modulo the named input)
 
 [M5] claim-surface sweep over the retired gate row's dependents
 
-[PASS] dependent set is substantial (>= 50 direct dependents)  [54 dependents]
-[PASS] every checked dependent mentioning the values also carries admission/conditionality vocabulary (zero flagged)  [checked=54, no-path=0, flagged=[]]
-[PASS] sweep coverage: at least 45 dependent notes read from disk  [checked=54]
+[PASS] dependent set is substantial (>= 50 direct dependents)  [53 dependents]
+[PASS] every checked dependent mentioning the values also carries admission/conditionality vocabulary (zero flagged)  [checked=53, no-path=0, flagged=[]]
+[PASS] sweep coverage: at least 45 dependent notes read from disk  [checked=53]
 
 [M6] cross-admission separation (theta)
 
@@ -49,7 +49,7 @@ status: ok
 [PASS] adoption note records the theta disposition (approval context only; retained-derivation retirement untouched)
 
 ============================================================================
-TOTAL: PASS=22 FAIL=0
+TOTAL: PASS=20 FAIL=2
 ============================================================================
 
 ----- stderr -----

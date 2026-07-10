@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py
-runner_sha256: ffb0d58b8ae35e060ea229bd618acfca707b83b2fcecb19f0bf01ac443392819
+runner_sha256: a572bbd0ae4c4c04df04c1893b98a5401bfeb0bb542acc36a6596a22919589ea
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -72,15 +72,28 @@ Ledger classification checks
 
 Review-note conclusion checks
 [PASS] review note states no primitive is presently retireable
+[PASS] review note uses canonical meta claim type
 [PASS] review note keeps scale primitive
 [PASS] review note keeps kinetic primitive but marks it targetable
 [PASS] review note keeps realized-state primitive
 [PASS] review note forbids registry edit from this review
 [PASS] review note records kinetic bridge stack needed for retirement
-[PASS] review note records hygiene debt separately
+[PASS] review note records completed hygiene repairs without science reclassification
 [PASS] review note has current-main posture line
 [PASS] review note records live Tier-A zero posture
 [PASS] review note says premise registries are not reopened
+[PASS] review note carries N1 no-go-discipline section
+[PASS] review note carries N2 no-go-discipline section
+[PASS] review note carries N3 no-go-discipline section
+[PASS] review note carries N4 no-go-discipline section
+[PASS] review note carries N5 no-go-discipline section
+[PASS] review note carries N6 no-go-discipline section
+[PASS] review note carries N7 no-go-discipline section
+[PASS] review note carries N8 no-go-discipline section
+[PASS] N1 records at least five attempted routes
+[PASS] N2 records the collapsed pairwise independence table
+[PASS] N3 classifies registered and supplied phrase hits
+[PASS] N4 distinguishes exact, support-only, and partial residual matches
 
 Hygiene diagnostic checks
 [PASS] scale boundary runner carries the current Tier-A count gate
@@ -91,7 +104,7 @@ Verdicts
   kinetic_isotropy_primitive: KEEP -- best future retirement lane, not closed now
   realized_state_primitive: KEEP -- laws remain state-blind; no selector supplied
 
-TOTAL: PASS=61 FAIL=0
+TOTAL: PASS=74 FAIL=0
 
 ----- stderr -----
 

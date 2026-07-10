@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 932 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1836 |
+| unaudited | 1835 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 67 |
+| ~~audited_conditional~~ | 68 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1341 |
-| `audited_conditional` | 67 |
+| `audited_conditional` | 68 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2181 |
+| `unaudited` | 2180 |
 
 | claim_type | count |
 |---|---:|
@@ -1503,6 +1503,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `confinement_string_tension_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5215,6 +5216,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** "The weaker-coupling sweep does not show a strength-driven rescue of the remaining periodic Dirac gravity failures" because cross-strength sign-stability counts are unchanged and the signed delta-law fit never becomes available.  _(class `A`)_
 - **chain closes:** True — The note's numerical summaries match the supplied completed runner stdout, and the bounded negative conclusion follows directly from the unchanged 6/12 stable-row and 2/12 positive-stable counts across all strengths. The claim does not close as a general physics theorem beyond this scan grid, so the audited scope must remain bounded to the supplied harness and outputs.
 - **rationale:** The load-bearing claim is a bounded arithmetic summary of the completed runner output, not a first-principles derivation or external comparator. The stdout supports the stated cross-strength invariance, absence of signed delta-law fits, and lambda-dependent |bias| fit improvement. Clean status applies only to the reported scan-grid conclusion, not to any broader Dirac-gravity theorem or unsupplied v4 helper implementation.
+- **auditor confidence:** high
+
+### `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28`
+
+- **Note:** [`DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md`](../../docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite Dirac and fixed-chirality Weyl branch-rank counts for the supplied first-order mass-shell operator, excluding derivation of that operator, physical labels, and the thermal inventory itself.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-dirac_weyl_fermion_dof_f-072`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The supplied Dirac operator has kernel dimension two on each massive energy-sign branch and fixed-chirality kernel dimension one on each massless energy-sign branch, giving Dirac and Weyl counts 2+2=4 and 1+1=2.  _(class `A`)_
+- **chain closes:** False — The exact runner establishes the asserted ranks only at selected rest, moving, and lightlike momenta, not for every on-shell momentum as claimed. The packet also lacks a retained or explicitly accepted bridge from complex solution-space dimensions to physical thermal degrees of freedom.
+- **rationale:** The displayed matrix calculations genuinely verify the finite ranks at the enumerated momenta, so the result is not a renaming or numerical fit. However, the note generalizes those examples to all on-shell branches without a general rank argument, while the Dirac equation and its thermal-inventory interpretation remain explicit unclosed premises. Additionally, the runner labels its first Clifford construction a real 4×4 realization even though several constructed matrices have imaginary entries; retained Q1 supplies the algebra cell independently, but the runner does not verify that claimed real presentation.
 - **auditor confidence:** high
 
 ### `directional_b_density_stencil_note`

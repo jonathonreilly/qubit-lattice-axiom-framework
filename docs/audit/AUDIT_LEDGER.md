@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 945 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 26 |
-| unaudited | 1753 |
+| unaudited | 1752 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 115 |
+| ~~audited_conditional~~ | 116 |
 | ~~audited_failed~~ | 10 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1358 |
-| `audited_conditional` | 115 |
+| `audited_conditional` | 116 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 32 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 30 |
-| `unaudited` | 2098 |
+| `unaudited` | 2097 |
 
 | claim_type | count |
 |---|---:|
@@ -1567,6 +1567,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `hw_complement_equivalence_extends_to_free_corner_transfer_dynamics_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -11007,6 +11008,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The single-projector identities P_T1 Gamma_1 P_O0 Gamma_1 P_T1 = diag(1,0,0), P_T1 Gamma_1 P_(1,1,0) Gamma_1 P_T1 = diag(0,1,0), P_T1 Gamma_1 P_(1,0,1) Gamma_1 P_T1 = diag(0,0,1), and P_T1 Gamma_1 P_(0,1,1) Gamma_1 P_T1 = 0, with linearity in the weights, give diag(w_O0,w_a,w_b).  _(class `A`)_
 - **chain closes:** True — On the supplied basis, Gamma_1 flips the first spatial bit, so each T1 species returns through exactly the stated intermediate projector and the fourth T2 state is not reached. The retained cited authorities supply the Gamma_1/T1 surface, and the runner independently constructs the 16x16 matrices supporting the projector identities.
 - **rationale:** The load-bearing identities are exact finite-dimensional algebra on the supplied Gamma_1 bit-flip and spatial projectors. Both one-hop authorities are retained-grade for the scoped carrier/generation surface, and the runner source actually constructs the Clifford/projector matrices rather than printing constants. The runner's UNDERDETERMINED hierarchy verdict is consistent with the note's boundary because the note does not claim to derive the three weight values.
+- **auditor confidence:** high
+
+### `hw_complement_equivalence_extends_to_free_corner_transfer_dynamics_bounded_note_2026-06-12`
+
+- **Note:** [`HW_COMPLEMENT_EQUIVALENCE_EXTENDS_TO_FREE_CORNER_TRANSFER_DYNAMICS_BOUNDED_NOTE_2026-06-12.md`](../../docs/HW_COMPLEMENT_EQUIVALENCE_EXTENDS_TO_FREE_CORNER_TRANSFER_DYNAMICS_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite U=1, L_s=2 corner-cube surface with the supplied Hermitian circulant and 64-dimensional second-quantized two-step transfer object, including the explicitly computed spectral, trace, and Berezin readouts.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00065-hw_complement_equivalence_ex`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Every registrable free-transfer readout in the cited additive and K/CPT-orbit-constant class is asserted to be channel-symmetric by M2 and therefore equal for the two complement readings.  _(class `A`)_
+- **chain closes:** False — The runner establishes the stipulated channel-permutation conjugacy and the listed spectral, trace, and Berezin equalities. It does not establish that additivity plus K/CPT-orbit constancy implies invariance under arbitrary channel relabeling or unitary conjugation, nor that this transfer surface satisfies the cited authority's supplied registrability context.
+- **rationale:** The finite algebraic checks are substantive: the runner constructs the corner maps, six-mode kernels, 64-dimensional Fock permutation, transfer matrices, traces, dispersions, and explicit one-pair Grassmann expansion. However, M3's universal readout conclusion is broader than those checks, and the cited registrability authority expressly operates on a conditional supplied readout context. Additivity and K/CPT constancy alone do not supply channel-permutation or general unitary invariance, so the theorem requires an additional bridge or a narrower conclusion.
+- **open / conditional deps cited:**
+  - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
 - **auditor confidence:** high
 
 ### `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`

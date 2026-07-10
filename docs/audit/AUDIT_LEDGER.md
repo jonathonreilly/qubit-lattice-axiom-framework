@@ -21,10 +21,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 196 |
 | **retained_no_go** | 209 |
 | **retained_bounded** | 931 |
-| _retained_pending_chain_ | 17 |
+| _retained_pending_chain_ | 16 |
 | open_gate | 27 |
 | unaudited | 1753 |
-| audit_in_progress | 4 |
+| audit_in_progress | 5 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 33 |
@@ -96,7 +96,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 942 |
 | `leaf` | 1645 |
 
-- **Retained pending chain closure:** 17
+- **Retained pending chain closure:** 16
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -150,7 +150,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-current | C | - |
-| `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-current | B | - |
+| `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-current | B | - |
 | `lattice_nn_light_cone_note` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |

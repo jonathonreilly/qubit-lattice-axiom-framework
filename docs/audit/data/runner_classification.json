@@ -18180,6 +18180,18 @@
       "dominant_class": "B",
       "runner": "scripts/kinetic_bw_os0_identification_bridge_interface_2026_06_16.py"
     },
+    "kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09": {
+      "assert_count": 1,
+      "counts": {
+        "A": 5,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/kinetic_isotropy_3d_factorized_protocol_selection_2026_07_09.py"
+    },
     "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10": {
       "assert_count": 1,
       "counts": {
@@ -36299,6 +36311,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py"
+    },
+    "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09": {
+      "assert_count": 10,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 10
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py"
     },
     "su3_z3_apbc_variant_probe_2026-05-04": {
       "assert_count": 1,
@@ -84956,6 +84980,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/kinetic_isotropy_3d_factorized_protocol_selection_2026_07_09.py": {
+      "assert_count": 1,
+      "claims": [
+        "kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09"
+      ],
+      "counts": {
+        "A": 5,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/kinetic_isotropy_3d_simultaneous_tick_2026_06_10.py": {
       "assert_count": 1,
       "claims": [
@@ -91423,6 +91462,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py": {
+      "assert_count": 10,
+      "claims": [
+        "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 10
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/symmetry_generated_paired_chokepoint.py": {
       "assert_count": 0,
       "claims": [
@@ -93072,14 +93126,14 @@
   "stats": {
     "decoration_candidates": 710,
     "dominant_class_distribution": {
-      "A": 506,
+      "A": 507,
       "B": 659,
       "C": 1311,
-      "D": 456,
+      "D": 457,
       "none": 459
     },
-    "runners_classified": 3391,
-    "runners_with_C": 1790,
-    "runners_with_D": 1090
+    "runners_classified": 3393,
+    "runners_with_C": 1792,
+    "runners_with_D": 1091
   }
 }

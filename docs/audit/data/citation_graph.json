@@ -20521,6 +20521,22 @@
       "to": "kinetic_isotropy_primitive_irreducibility_support_2026-06-09"
     },
     {
+      "from": "kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09",
+      "to": "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09"
+    },
+    {
+      "from": "kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09",
+      "to": "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10"
+    },
+    {
+      "from": "kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09",
+      "to": "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09"
+    },
+    {
+      "from": "kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10",
       "to": "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09"
     },
@@ -41675,6 +41691,10 @@
     {
       "from": "su3_wilson_closed_form_fanout_theorem_note_2026-05-04",
       "to": "plaquette_self_consistency_note"
+    },
+    {
+      "from": "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
+      "to": "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
     },
     {
       "from": "su3_z3_apbc_variant_probe_2026-05-04",
@@ -87550,6 +87570,23 @@
       "runner_path": "scripts/kinetic_bw_os0_identification_bridge_interface_2026_06_16.py",
       "title": "Kinetic B-W OS0 Identification Bridge Interface No-Go"
     },
+    "kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09": {
+      "claim_id": "kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09",
+        "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10",
+        "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09",
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "cf34226b18369eaf50353c551782f7876e92008aa7ca8281498adc8ba583d441",
+      "path": "docs/KINETIC_ISOTROPY_3D_FACTORIZED_PROTOCOL_SELECTION_ON_ANALYZED_CLASSES_BOUNDED_THEOREM_NOTE_2026-07-09.md",
+      "runner_path": "scripts/kinetic_isotropy_3d_factorized_protocol_selection_2026_07_09.py",
+      "title": "Conditional 3D Protocol-Factor Filtering on the Analyzed Period-2 Classes"
+    },
     "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10": {
       "claim_id": "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -111920,7 +111957,7 @@
         "axiom_first_spectrum_condition_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a962f4b25929e6186183c6d57aff829c3c04ada8e0830b95bc026fa94c1a9d8e",
+      "note_hash": "061f669eb84f17b9c36279f7690f8914c368b5ad1ab3a1ac477c54ec2dda1b9d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118788,6 +118825,22 @@
       "path": "docs/SU3_WILSON_CLOSED_FORM_FANOUT_THEOREM_NOTE_2026-05-04.md",
       "runner_path": "scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py",
       "title": "SU(3) Wilson Plaquette Closed-Form Fan-Out at \u03b2 = 6"
+    },
+    "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09": {
+      "claim_id": "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
+      ],
+      "helper_runner_paths": [
+        "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py"
+      ],
+      "note_hash": "eec29a2cca6fbe571ce1bcbd2564d957b1232834bb82919c766e76905ba37671",
+      "path": "docs/SU3_WILSON_PLANE_KERNEL_CHARACTER_POSITIVITY_AND_COMPOSED_GRAM_NARROW_THEOREM_NOTE_2026-07-09.md",
+      "runner_path": "scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py",
+      "title": "SU(3) Wilson plane-kernel character positivity and composed two-slice Gram \u2014 narrow theorem note"
     },
     "su3_z3_apbc_variant_probe_2026-05-04": {
       "claim_id": "su3_z3_apbc_variant_probe_2026-05-04",
@@ -128804,27 +128857,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1620,
+      "bounded_theorem": 1621,
       "decoration": 3,
       "meta": 328,
       "no_go": 333,
       "none": 1212,
       "open_gate": 132,
-      "positive_theorem": 274
+      "positive_theorem": 275
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2024,
+      "bounded_theorem": 2025,
       "decoration": 3,
       "meta": 328,
       "no_go": 436,
       "none": 248,
       "open_gate": 206,
-      "positive_theorem": 657
+      "positive_theorem": 658
     },
-    "edge_count": 14541,
-    "leaf_count": 1315,
-    "node_count": 3902,
+    "edge_count": 14546,
+    "leaf_count": 1316,
+    "node_count": 3904,
     "root_count": 1109,
-    "runners_with_path": 3524
+    "runners_with_path": 3526
   }
 }

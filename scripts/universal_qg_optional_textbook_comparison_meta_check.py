@@ -22,7 +22,7 @@ NOTE_PATH = REPO_ROOT / NOTE_REL
 RUNNER_REL = Path("scripts/universal_qg_optional_textbook_comparison_meta_check.py")
 CACHE_REL = Path("logs/runner-cache/universal_qg_optional_textbook_comparison_meta_check.txt")
 TARGET_NAME = NOTE_REL.name
-EXPECTED_NOTE_SHA256 = "3c80bb709d12151857e95375720b64f31f7977a14f8a1f98850c56ebecc2e591"
+EXPECTED_NOTE_SHA256 = "c55da42c9bd275697d8d5cc94272b24efe28a9c3ae494ac07adcd7ad40afabee"
 DOC_LINK_RE = re.compile(r"\[[^\]]+\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 
@@ -211,6 +211,7 @@ def main() -> int:
                 "S(N) to mean that N satisfies the source-local guards Z0-Z4",
                 "I(N,D) to mean that every current inbound occurrence",
                 "Z(N,D) := S(N) AND I(N,D)",
+                "excluding N itself and the entire docs/audit/ subtree",
                 "a passing run closes Z(N,D) for the checked checkout by finite inspection",
             )
         ),

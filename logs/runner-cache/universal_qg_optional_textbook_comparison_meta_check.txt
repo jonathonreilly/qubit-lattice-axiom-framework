@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/universal_qg_optional_textbook_comparison_meta_check.py
-runner_sha256: 286dfce08688326981e9cd56dac8ad23799f54ef2a1acb0f6a5e673d6269da44
+runner_sha256: 1277e3dcf94291d1c2ad5dc554f2f5ac20ff05ba66a85c71bae8fb46639df3aa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 ========================================================================
 UNIVERSAL QG OPTIONAL TEXTBOOK COMPARISON META CHECK
 ========================================================================
 [PASS (A)] note title is the expected optional textbook comparison note: docs/UNIVERSAL_QG_OPTIONAL_TEXTBOOK_COMPARISON_NOTE.md
-[PASS (A)] Source note matches the reviewed byte-for-byte predicate surface: 3c80bb709d12151857e95375720b64f31f7977a14f8a1f98850c56ebecc2e591
+[PASS (A)] Source note matches the reviewed byte-for-byte predicate surface: c55da42c9bd275697d8d5cc94272b24efe28a9c3ae494ac07adcd7ad40afabee
 [PASS (A)] Type field is exactly meta: meta
 [PASS (A)] Status field negates theorem, claim, and new authority roles: audit-checkable packaging hub for optional textbook-comparison crosswalks against the universal-QG canonical textbook closure target. **Not** a theorem, claim, or new authority surface.
 [PASS (A)] Authority role is zero: zero — this row exists only to anchor a citation hub for downstream universal-QG notes that need a stable target for "optional textbook comparison" callouts.

@@ -61,8 +61,10 @@ geometric-action, or textbook-equivalence theorem.
 
 ### Finite closure certificate
 
-Let `N` be this source file and let `D` be the finite set of current markdown
-files under `docs/`, excluding audit-history artifacts. Define:
+Let `N` be this source file and let `D` be the finite set of current Markdown
+files under `docs/`, excluding `N` itself and the entire `docs/audit/` subtree.
+That subtree contains audit infrastructure, generated audit surfaces, and
+audit history rather than current dependent claim notes. Define:
 
 - `S(N)` to mean that `N` satisfies the source-local guards `Z0`-`Z4`;
 - `I(N,D)` to mean that every current inbound occurrence of this filename in

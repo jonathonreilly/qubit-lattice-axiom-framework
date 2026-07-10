@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 949 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1719 |
+| unaudited | 1718 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 129 |
+| ~~audited_conditional~~ | 130 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1366 |
-| `audited_conditional` | 129 |
+| `audited_conditional` | 130 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2064 |
+| `unaudited` | 2063 |
 
 | claim_type | count |
 |---|---:|
@@ -1632,6 +1632,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `spectral_trajectory_theorem_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -19489,6 +19490,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the cached configuration, the runner-printed finite table of d_TV, overlap, 1-pur_min, Lyapunov gap, and Lindeberg ratio is binding, together with the monotone Lindeberg-ratio decrease from 0.119 at N=12 to 0.017 at N=80.  _(class `C`)_
 - **chain closes:** True — The inlined runner genuinely computes the random DAGs, transfer matrices, single-slit propagation observables, Lyapunov gaps, Lindeberg ratios, and log-log fits rather than printing imported constants. The cached stdout matches the source-note tables after rounding, and independent arithmetic checks reproduce the power-law fits and monotone Lindeberg trend.
 - **rationale:** The narrowed finite measurement claim closes from the primary runner and helper source included in the packet. The displayed fit coefficients match an independent log-log regression on the cached table, the Lyapunov gaps decrease, and the Lindeberg ratios are strictly monotone with N*ratio approximately constant on the cached range. The broader CLT-mechanism and power-law-asymptotic readings are explicitly non-binding, so they are not retained by this verdict.
+- **auditor confidence:** high
+
+### `spectral_trajectory_theorem_2026-04-11`
+
+- **Note:** [`SPECTRAL_TRAJECTORY_THEOREM_2026-04-11.md`](../../docs/SPECTRAL_TRAJECTORY_THEOREM_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The asserted structural spectral–trajectory dichotomy, including its Born-rule-independence and BMV entanglement-before-force consequences, as synthesized from the supplied one-hop authorities.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00099-spectral_trajectory_theorem_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The note asserts a sharp algebraic distinction whereby spectral observables inherit gravitational content from the one-body self-consistent Hamiltonian, while trajectory observables necessarily require a many-body Hilbert space to reproduce gravitational scaling laws.  _(class `B`)_
+- **chain closes:** False — The supplied authorities establish only bounded numerical observations on specific surfaces; they do not prove that Axioms A–B imply the universal spectral–trajectory dichotomy. A retained bridge theorem is missing for the claimed gravitational interpretation, categorical many-body necessity, Born-rule independence, and experimental BMV ordering.
+- **rationale:** Issue: the formal dichotomy is an interpretive generalization, not a derivation from the two axioms or the cited bounded results; moreover, the signed-gravity authority is meta rather than retained-grade, and the boundary-law authority does not supply the quoted coefficient-shift result. Why this blocks: existence of a self-consistent one-body spectrum does not by itself establish gravitational phenomenology or prove that trajectory expectations categorically require many-body dynamics, while the externally imposed branch protocols do not establish the stated BMV experimental ordering. Repair target: provide retained bridge theorems and direct dependencies for the CDT, coefficient-shift, Born-rule, external-source, and BMV-ordering claims, or remove those extensions. Claim boundary until fixed: the note may summarize the supplied fixed-surface boundary-law, Wilson mutual-attraction, and externally imposed branch-entanglement observations, but not promote them to a structural theorem about gravity.
+- **open / conditional deps cited:**
+  - `SIGNED_GRAVITY_MECHANISM_SEPARATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28`

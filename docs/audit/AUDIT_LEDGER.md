@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1782 |
+| unaudited | 1781 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 101 |
+| ~~audited_conditional~~ | 102 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1350 |
-| `audited_conditional` | 101 |
+| `audited_conditional` | 102 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2127 |
+| `unaudited` | 2126 |
 
 | claim_type | count |
 |---|---:|
@@ -1599,6 +1599,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `yt_ward_tadpole_cancellation_premise_derivation_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `yt_zero_import_authority_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
@@ -22506,6 +22507,23 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** Under SAME-1PI, equating C_A = c_S*g_bare^2/(2*N_c) and C_B = 1/(N_c*N_iso) gives c_S*g_bare^2 = 2/N_iso; without SAME-1PI the residual remains (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso).  _(class `A`)_
 - **chain closes:** True — The direct dependencies are now retained-grade or retained-bounded, and the target note does not ask the audit lane to derive SAME-1PI. At the stated bounded conditional scope, the displayed coefficient formulas reduce exactly to the gate equation under the antecedent and to the nonzero residual off it.
 - **rationale:** The source note is clean at its narrowed bounded scope: it treats SAME-1PI as a named supplied antecedent, not a derived bridge or accepted premise, and it explicitly preserves the no-equality residual branch without that antecedent. The runner checks the note boundary, coefficient formulas, displayed residuals, SU(3) Fierz coefficient, and H_unit normalization; an independent exact projection check reproduced the -1/6 singlet coefficient, residual (N_iso*c_S*g_bare^2 - 2)/(2*N_c*N_iso), canonical residual (g_bare^2 - 1)/6, and g_bare=2 residual 1/2. Residual risk is downstream citation widening: the gate equation and g_bare^2=1 surface must remain cited only under SAME-1PI.
+- **auditor confidence:** high
+
+### `yt_ward_tadpole_cancellation_premise_derivation_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`YT_WARD_TADPOLE_CANCELLATION_PREMISE_DERIVATION_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/YT_WARD_TADPOLE_CANCELLATION_PREMISE_DERIVATION_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact common-dressing cancellation, link-monomial homogeneity, and strength-to-coupling square-root algebra were audited, together with the conditional gauge-side single-link count; the Yukawa/gauge equal-dressing identification remains an explicit premise.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00032-yt_ward_tadpole_cancellation`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For any common dressing factor shared by g_s and y_t, the factor cancels from y_t/g_s; applying this physically requires the structural equality n_link(y_t)=n_link(g_s).  _(class `A`)_
+- **chain closes:** False — The algebra closes once identical dressing is supplied, but the restricted packet does not derive n_link(y_t)=n_link(g_s). The cited same-1PI authority expressly leaves that bridge open, and the staggered-Dirac realization is also admitted rather than derived.
+- **rationale:** The runner genuinely verifies the elementary homogeneity, square-root, and cancellation identities, but it does not compute the load-bearing Yukawa equal-dressing relation. Its Block E closure and admission checks are hard-coded true assertions, while the cited same-1PI note explicitly forbids treating the required bridge as established. The gauge-side count also remains conditional on the staggered-Dirac realization and link convention.
+- **open / conditional deps cited:**
+  - `U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md`
+  - `YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md`
+  - `YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `yt_zero_import_authority_note`

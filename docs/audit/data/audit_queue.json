@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 387,
     "high": 265,
-    "leaf": 738,
+    "leaf": 737,
     "medium": 498
   },
   "cycle_break_target_count": 10,
@@ -36138,31 +36138,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_inner_automorphism_invariance_tracial_identification.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_carrier_locus_decomposition_note_2026-06-01",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -56589,6 +56564,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 181,
-  "total_pending": 1888
+  "ready_count": 180,
+  "total_pending": 1887
 }

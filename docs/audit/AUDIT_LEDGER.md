@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 945 |
+| **retained_bounded** | 946 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 26 |
-| unaudited | 1752 |
+| unaudited | 1751 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1358 |
+| `audited_clean` | 1359 |
 | `audited_conditional` | 116 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 32 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 30 |
-| `unaudited` | 2097 |
+| `unaudited` | 2096 |
 
 | claim_type | count |
 |---|---:|
@@ -744,6 +744,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11140,6 +11141,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The all-ones assignment p1 = p2 = p3 = p4 = r1 = r2 = q1 = q2 = pr = pq = rq = 1 is feasible for the encoded PSD/Hausdorff/Gram/area-law SDP surface, so together with p1 <= 1 it proves max p1 = 1.  _(class `A`)_
 - **chain closes:** True — The certificate is an algebraic feasibility check: the Hankel and Gram matrices are rank-one PSD, the Hausdorff upper matrix is zero PSD, the lower matrix is PSD, and all stated inequalities are saturated or satisfied. Since the same surface also imposes p1 <= 1, no nontrivial upper bound p1 < 1 follows from these constraints.
 - **rationale:** The load-bearing claim is not the numerical bracket or the comparator values; it is the exact all-ones obstruction certificate. The runner source actually constructs the SDP and separately checks the solver-independent certificate, rather than merely printing PASS lines. The note correctly fences 0.4225, 0.5934, 0.59353, and literature brackets as comparison or admitted context, and it preserves the open gate by saying loop equations or another strict framework-native relation would change the surface.
+- **auditor confidence:** high
+
+### `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For each finite qubit region A_Lambda ~= M_d(C), every density matrix invariant under conjugation by all U(d) equals I_d/d; no identification with a pre-record reference state was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00066-inner_automorphism_invarianc`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Full unitary-conjugation invariance makes rho commute with U(d), whose commutant is scalar, and Tr(rho)=1 then gives rho=I_d/d.  _(class `A`)_
+- **chain closes:** True — The accepted Qubit axiom supplies the finite-region full matrix algebra, and the elementary commutant and trace-normalization argument proves the conditional theorem. The retained UHF authority concerns the separately scoped quasi-local extension and is not needed for this finite-region conclusion.
+- **rationale:** The conclusion follows by exact finite-dimensional algebra without importing PRR or any reference-state identification. The runner correctly checks the sign-unitary, permutation, normalization, and partial-trace steps, although nine of its passes enforce source-boundary wording rather than add mathematical evidence. The general all-d conclusion is supplied transparently by the note's commutant proof, so the runner's finite samples do not limit closure.
 - **auditor confidence:** high
 
 ### `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16`

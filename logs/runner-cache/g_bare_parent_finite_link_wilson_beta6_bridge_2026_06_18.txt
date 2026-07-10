@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
-runner_sha256: ad8c080fb9b14c468601fbaf504ed7be590c377d2a77fcff547bd0696f965a1c
+runner_sha256: 45eb4235cb993ebb3252ffcf72908702583a65d37c71e1a3eb0b9133268062e6
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.09
@@ -86,17 +86,18 @@ SECTION E: link slot readback and slot COMPARISON (never assigned)
 [PASS] mismatched-slot exhibit at beta = 3/2: gamma*(3/2) != s (gamma*^2=3.998639)
 [PASS] mismatched-slot exhibit at beta = 12: gamma*(12) != s (gamma*^2=0.499830)
 
-SECTION F: exact composition under the declared surface definition (SD)
+SECTION F: definition-level composition under (SD): context only
 ------------------------------------------------------------------------------
-[PASS] under (SD): g_bare^2 = s^2 = 1
-[PASS] under (SD): beta = 2 N_c / g_bare^2 = 6 (beta=6)
-[PASS] under (SD): beta * g_bare^2 = 2 N_c
-[PASS] pin equivalence forward: beta = 6 gives gamma*^2 = 1 = s^2
-[PASS] pin equivalence backward: gamma* = s = 1 gives beta = 6
-[PASS] mismatched split gamma^2=1/2 gives beta=12 != 6 (family, not the pin) (beta=12)
-[PASS] mismatched split gamma^2=2 gives beta=3 != 6 (family, not the pin) (beta=3)
-[PASS] mismatched split gamma^2=9/4 gives beta=8/3 != 6 (family, not the pin) (beta=8/3)
-[PASS] exhibit beta=24: gamma*^2 = 1/4 != s^2 while beta*gamma*^2 = 2 N_c holds
+definition-level composition under (SD): context only, no PASS/FAIL attached (2026-07-10 separation)
+  under (SD): g_bare^2 = s^2 = 1
+  under (SD): beta = 2 N_c / g_bare^2 = 6
+  under (SD): beta * g_bare^2 = 6 = 2 N_c
+  pin equivalence context: beta = 6 gives gamma*^2 = 1 = s^2
+  pin equivalence context: gamma* = s = 1 gives beta = 6
+  mismatched-family context: gamma^2=1/2, beta=12, beta*gamma^2=6
+  mismatched-family context: gamma^2=2, beta=3, beta*gamma^2=6
+  mismatched-family context: gamma^2=9/4, beta=8/3, beta*gamma^2=6
+  exhibit context at beta=24: gamma*^2=1/4, s^2=1, beta*gamma*^2=6
 
 SECTION G: source-boundary guards
 ------------------------------------------------------------------------------
@@ -117,6 +118,10 @@ SECTION G: source-boundary guards
 [PASS] bridge contains marker: a dynamical fixed point
 [PASS] bridge contains marker: an audit verdict or any effective-status promotion
 [PASS] bridge contains marker: finite-link canonical Wilson surface
+[PASS] bridge contains marker: After the 2026-07-10 separation, this note's audited claim surface is ex
+[PASS] bridge contains marker: ### Composition under (SD) — definition-level, excluded from claim surfa
+[PASS] bridge contains marker: 2026-07-10 downstream hygiene.** This note's citable surface is Theorems
+[PASS] bridge contains marker: ## Repair Note
 [PASS] bridge omits forbidden marker: effective_status:
 [PASS] bridge omits forbidden marker: audit_status:
 [PASS] bridge omits forbidden marker: This note proves that the scalar in those two statements
@@ -133,7 +138,7 @@ SECTION G: source-boundary guards
 
 Summary
 ------------------------------------------------------------------------------
-TOTAL: PASS=100 FAIL=0
+TOTAL: PASS=95 FAIL=0
 Bridge check passed.
 
 ----- stderr -----

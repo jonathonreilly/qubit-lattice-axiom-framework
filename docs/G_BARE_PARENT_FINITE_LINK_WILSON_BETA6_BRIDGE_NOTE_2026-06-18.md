@@ -16,9 +16,9 @@ does not set, predict, or apply an audit verdict.
 ## Purpose
 
 The parent note `G_BARE_DERIVATION_NOTE.md` needs a non-circular supply of
-the `beta = 6` surface. This sentence names the target parent but is not a
-citation-graph dependency of this bridge note. The older route mixed two
-steps:
+the normalization surface named in this note's title. This sentence names
+the target parent but is not a citation-graph dependency of this bridge note.
+The older route mixed two steps:
 
 ```text
 beta = 2 N_c = 6
@@ -95,6 +95,16 @@ Setup (supplied surfaces, cited at audited scope):
    `(1/4) F^a_{mu nu} F^a_{mu nu}`. Inside that surface,
    `beta g_bare^2 = 2 N_c`.
 
+**2026-07-10 audited claim-surface statement (verbatim).**
+
+> After the 2026-07-10 separation, this note's audited claim surface is exactly
+> Theorems 1–3 and the mismatched-slot exhibit — the independently
+> auditable construction-level facts. The Composition under `(SD)` (and every
+> `beta = 6` / `g_bare = 1` value it produces) is definition-level bookkeeping
+> EXCLUDED from the claim surface: per the audit, the `(SD)` identification
+> between existing scalar concepts performs the selection, so it cannot be
+> carried as a theorem-grade output of this row.
+
 **Theorem 1 (plaquette exponent construction).** For plaquettes built from
 links in canonical coordinates, the small-`a` exponent is
 
@@ -144,7 +154,11 @@ gamma*(beta) = s      if and only if      beta = 2 N_c.
 The same-slot statement is exactly equivalent to the normalization point
 `beta = 2 N_c`.
 
-**Composition (under `(SD)`).** Under the declared surface definition,
+### Composition under (SD) — definition-level, excluded from claim surface
+
+This definition-level bookkeeping is explicitly excluded from the audited
+claim surface stated above; no value in this subsection is a theorem-grade
+output of this row. Under the declared surface definition,
 `g_bare = s = 1` on the canonical coordinate branch, and the Wilson
 coefficient identity gives, in exact rational arithmetic,
 
@@ -207,8 +221,9 @@ plane at `1/2`, i.e. `beta gamma*^2 / (4 N_c) = 1/2`, hence
 `gamma*(beta)^2 = 2 N_c / beta`. Setting `gamma*(beta) = s = 1` gives
 `beta = 2 N_c`; conversely `beta = 2 N_c` gives `gamma* = 1`.
 
-**Composition.** Substitute the declared `(SD)` value `g_bare := s = 1`
-into the Wilson coefficient identity:
+**Definition-level composition detail (excluded from claim surface).**
+Substitute the declared `(SD)` value `g_bare := s = 1` into the Wilson
+coefficient identity:
 
 ```text
 beta g_bare^2 = 2 N_c
@@ -230,8 +245,8 @@ gamma*(24)^2 = 6/24 = 1/4,    gamma*(24) = 1/2 != 1 = s,
 
 with the Wilson identity holding as `24 * (1/4) = 6 = 2 N_c`, and the
 same-slot statement false. Nothing in the constructed surface data
-changed between `beta = 6` and `beta = 24`. This exhibits that the
-same-slot identification does real selecting work — it is the choice of
+changed between the same-slot pin `beta = 2 N_c` and `beta = 24`. This
+exhibits that the same-slot identification does real selecting work — it is the choice of
 the `beta = 2 N_c` point on the one-parameter family
 `beta = 2 N_c / gamma*^2` — and is therefore a declaration, not a
 construction-level consequence.
@@ -258,8 +273,18 @@ heat-kernel route) would upgrade `(SD)` from declared definition to
 theorem; that is the next derivation surface this separation opens, and
 it is outside this row.
 
-The result is a bounded composition theorem internal to the finite-link
-canonical Wilson surface, conditional on the declared `(SD)`.
+**2026-07-10 downstream hygiene.** This note's citable surface is Theorems
+1–3 and the mismatched-slot exhibit. Downstream notes must not cite this
+note as deriving `beta = 6`, `g_bare = 1`, or the same-slot identification:
+those follow only under the declared surface definition `(SD)`, which is a
+definition-level selection, not a derived bridge. A retained derivation of
+the same-slot identification from the operator/Hamiltonian surface remains
+the named open target. This dated line itself moves the note hash so the row
+re-enters for re-audit.
+
+The bounded theorem surface internal to the finite-link canonical Wilson
+surface is exactly Theorems 1–3 plus the mismatched-slot exhibit; the
+`(SD)`-conditional composition is definition-level context only.
 
 ## Falsifiers
 
@@ -276,8 +301,6 @@ The packet would fail if any of the following were true:
 - the constructed link-canonical readback gave `s != 1`;
 - the two constructed slots agreed at some tested `beta != 2 N_c` or
   disagreed at `beta = 2 N_c` (pin equivalence);
-- exact rational arithmetic failed to give `beta = 6` at `N_c = 3` under
-  `(SD)`.
 
 The runner checks these as source-boundary and construction checks rather
 than audit verdicts.
@@ -290,10 +313,10 @@ Run:
 python3 scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
 ```
 
-Expected:
+Expected after the 2026-07-10 separation:
 
 ```text
-TOTAL: PASS=100 FAIL=0
+TOTAL: PASS=95 FAIL=0
 ```
 
 ## 2026-07-01 same-slot surface-definition repair
@@ -353,8 +376,38 @@ The repair:
 - The parent note `G_BARE_DERIVATION_NOTE.md` is not edited by this
   repair; its sentence that the scalar-slot compatibility is "recorded
   and checked" by this row matches the declared-definition reading.
-- The claim type remains `bounded_theorem`; the theorem content is
-  Theorems 1–3 plus the `(SD)`-conditional composition.
+- The claim type remains `bounded_theorem`; after the 2026-07-10 separation,
+  the theorem content is Theorems 1–3 plus the mismatched-slot exhibit, while
+  the `(SD)`-conditional composition is excluded definition-level context.
 - Status authority: the independent audit lane retains sole authority
   over the effective status of this row. This repair does not promote,
   retain, or change any audit status.
+
+## Repair Note
+
+**Date:** 2026-07-10
+
+**Notes for re-audit (verbatim):**
+
+> "missing_bridge_theorem: supply retained authority deriving the same-slot
+> identification from the operator/Hamiltonian surface, or separate the
+> beta=6 definition-level contribution from the independently auditable
+> Theorems 1–3."
+
+This repair takes the **SEPARATION arm**. It makes the following bounded
+changes:
+
+1. pins the audited claim surface to exactly Theorems 1–3 and the
+   mismatched-slot exhibit;
+2. retitles and fences the Composition under `(SD)` as definition-level
+   bookkeeping excluded from that claim surface;
+3. adds the dated downstream-hygiene boundary forbidding citation of this
+   row as a derivation of the definition-selected values or same-slot
+   identification;
+4. pins those separation statements in the paired runner and regenerates
+   its cache.
+
+The runner no longer attaches PASS/FAIL to the `(SD)`-substitution
+composition that produces `beta = 6`; it prints that arithmetic as context
+only. Checks for Theorems 1–3 and the mismatched-slot exhibit remain on the
+audited PASS/FAIL surface.

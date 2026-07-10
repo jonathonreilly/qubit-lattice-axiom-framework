@@ -2,7 +2,7 @@
 """Exact Casimir block localization on the direct universal GR route.
 
 This runner constructs the symmetric 3+1 polarization representation and the
-SO(3) generators over exact SymPy radicals. It verifies that Pi_A1 fixes the
+SO(3) generators over exact SymPy radicals. It verifies that Pi_lapse_trace fixes the
 lapse/spatial-trace core and that the complement Casimir splits the remaining
 channels into the shift vector and traceless spatial-shear blocks.
 
@@ -58,7 +58,7 @@ def frob(a: sp.Matrix, b: sp.Matrix) -> sp.Expr:
     return sp.simplify(sum(a[i, j] * b[i, j] for i in range(a.rows) for j in range(a.cols)))
 
 
-def canonical_polarization_frame() -> list[sp.Matrix]:
+def fixed_polarization_frame() -> list[sp.Matrix]:
     """Orthonormal symmetric 3+1 polarization basis.
 
     Coordinate order is (t, x, y, z). Basis order:
@@ -103,7 +103,7 @@ def so3_generator(axis: str) -> sp.Matrix:
 def lifted_generator(axis: str) -> sp.Matrix:
     """Generator of h -> R(theta)^T h R(theta) on the 10D basis."""
 
-    frame = canonical_polarization_frame()
+    frame = fixed_polarization_frame()
     a = so3_generator(axis)
     out = sp.zeros(len(frame), len(frame))
     for j, basis in enumerate(frame):
@@ -113,7 +113,7 @@ def lifted_generator(axis: str) -> sp.Matrix:
     return sp.simplify(out)
 
 
-def pi_a1() -> sp.Matrix:
+def pi_lapse_trace() -> sp.Matrix:
     p = sp.zeros(10, 10)
     p[0, 0] = 1
     p[4, 4] = 1
@@ -132,13 +132,17 @@ def lift_complement_projector(projector_c: sp.Matrix, comp_idx: list[int]) -> sp
     return out
 
 
-def diagonal_projector_from_casimir(casimir: sp.Matrix, eigenvalue: int) -> sp.Matrix:
-    diag_entries = [1 if sp.simplify(casimir[i, i] - eigenvalue) == 0 else 0 for i in range(casimir.rows)]
-    return sp.diag(*diag_entries)
-
-
 def compact_diag(mat: sp.Matrix) -> list[int]:
     return [int(sp.simplify(mat[i, i])) for i in range(mat.rows)]
+
+
+def compact_rows(mat: sp.Matrix) -> list[list[str]]:
+    """Stable exact row representation for the restricted audit packet."""
+
+    return [
+        [sp.sstr(sp.simplify(mat[i, j])) for j in range(mat.cols)]
+        for i in range(mat.rows)
+    ]
 
 
 def commutator(a: sp.Matrix, b: sp.Matrix) -> sp.Matrix:
@@ -147,16 +151,18 @@ def commutator(a: sp.Matrix, b: sp.Matrix) -> sp.Matrix:
 
 def closes_so3(gx: sp.Matrix, gy: sp.Matrix, gz: sp.Matrix) -> bool:
     pairs = ((gx, gy, gz), (gy, gz, gx), (gz, gx, gy))
-    return all(is_zero(commutator(a, b) - c) or is_zero(commutator(a, b) + c) for a, b, c in pairs)
+    # h -> R^T h R is an anti-representation for the chosen composition
+    # order, so the fixed convention gives one uniform minus sign.
+    return all(is_zero(commutator(a, b) + c) for a, b, c in pairs)
 
 
 def main() -> int:
-    frame = canonical_polarization_frame()
+    frame = fixed_polarization_frame()
     gram = sp.Matrix([[frob(a, b) for b in frame] for a in frame])
     gx = lifted_generator("x")
     gy = lifted_generator("y")
     gz = lifted_generator("z")
-    pi = pi_a1()
+    pi = pi_lapse_trace()
     comp = sp.eye(10) - pi
 
     p_lapse = sp.zeros(10, 10)
@@ -168,10 +174,27 @@ def main() -> int:
     gc = [submatrix(g, comp_idx) for g in (gx, gy, gz)]
     casimir = sp.simplify(sum((g * g for g in gc), sp.zeros(8, 8)))
     casimir_diag = compact_diag(casimir)
-    casimir_offdiag_zero = all(casimir[i, j] == 0 for i in range(8) for j in range(8) if i != j)
+    casimir_offdiag_zero = all(
+        casimir[i, j] == 0 for i in range(8) for j in range(8) if i != j
+    )
+    identity_c = sp.eye(8)
+    casimir_polynomial_zero = is_zero(
+        (casimir + 2 * identity_c) * (casimir + 6 * identity_c)
+    )
 
-    p_shift_c = diagonal_projector_from_casimir(casimir, -2)
-    p_shear_c = diagonal_projector_from_casimir(casimir, -6)
+    # Lagrange spectral-projector polynomials.  These formulas construct the
+    # projectors from C itself; they do not assume coordinate landing.
+    p_shift_c = sp.simplify((casimir + 6 * identity_c) / 4)
+    p_shear_c = sp.simplify(-(casimir + 2 * identity_c) / 4)
+    spectral_polynomials_exact = (
+        casimir_polynomial_zero
+        and is_zero(p_shift_c * p_shift_c - p_shift_c)
+        and is_zero(p_shear_c * p_shear_c - p_shear_c)
+        and is_zero(p_shift_c * p_shear_c)
+        and is_zero(p_shift_c + p_shear_c - identity_c)
+        and is_zero(casimir * p_shift_c + 2 * p_shift_c)
+        and is_zero(casimir * p_shear_c + 6 * p_shear_c)
+    )
     p_shift = lift_complement_projector(p_shift_c, comp_idx)
     p_shear = lift_complement_projector(p_shear_c, comp_idx)
 
@@ -185,7 +208,9 @@ def main() -> int:
     comm_trace = all(is_zero(commutator(p_trace, g)) for g in (gx, gy, gz))
     comm_shift = all(is_zero(commutator(p_shift, g)) for g in (gx, gy, gz))
     comm_shear = all(is_zero(commutator(p_shear, g)) for g in (gx, gy, gz))
-    a1_mixing_zero = all(is_zero(pi * g * comp) and is_zero(comp * g * pi) for g in (gx, gy, gz))
+    lapse_trace_mixing_zero = all(
+        is_zero(pi * g * comp) and is_zero(comp * g * pi) for g in (gx, gy, gz)
+    )
     closure_ok = closes_so3(gx, gy, gz)
 
     ranks = {
@@ -202,9 +227,14 @@ def main() -> int:
     print("basis_order = [lapse, shift_x, shift_y, shift_z, trace, shear_1, shear_2, shear_xy, shear_xz, shear_yz]")
     print(f"basis_orthonormal = {gram == sp.eye(10)}")
     print(f"so3_closure_exact = {closure_ok}")
-    print(f"A1_complement_mixing_zero = {a1_mixing_zero}")
+    print(f"lapse_trace_complement_mixing_zero = {lapse_trace_mixing_zero}")
+    for axis, generator in zip(("x", "y", "z"), gc):
+        print(f"G_{axis} complement rows = {compact_rows(generator)}")
+    print(f"Casimir complement rows = {compact_rows(casimir)}")
     print(f"Casimir diagonal on complement = {casimir_diag}")
     print(f"Casimir off-diagonal zero on complement = {casimir_offdiag_zero}")
+    print(f"Casimir polynomial identity (C+2I)(C+6I) zero = {casimir_polynomial_zero}")
+    print(f"spectral projector polynomial formulas exact = {spectral_polynomials_exact}")
     print(f"ranks = {ranks}")
     print(f"projector complete = {complete}")
     print(f"projector orthogonal = {orthogonal}")
@@ -221,22 +251,25 @@ def main() -> int:
     record(
         "the lifted spatial generators close the SO(3) Lie algebra exactly",
         closure_ok,
-        "all three commutators match the embedded generators up to orientation sign",
+        "all three cyclic commutators equal the negative fixed-axis generator",
     )
     record(
-        "Pi_A1 is invariant and its complement is an invariant subrepresentation",
-        a1_mixing_zero,
-        "Pi_A1 G (I-Pi_A1) and (I-Pi_A1) G Pi_A1 are zero for all generators",
+        "Pi_lapse_trace is invariant and its complement is an invariant subrepresentation",
+        lapse_trace_mixing_zero,
+        "Pi_lapse_trace G (I-Pi_lapse_trace) and its transpose block vanish",
     )
     record(
         "the complement Casimir has exactly the j=1 and j=2 split",
-        casimir_diag == [-2, -2, -2, -6, -6, -6, -6, -6] and casimir_offdiag_zero,
-        f"Casimir diagonal={casimir_diag}",
+        casimir_diag == [-2, -2, -2, -6, -6, -6, -6, -6]
+        and casimir_offdiag_zero
+        and casimir_polynomial_zero,
+        f"Casimir diagonal={casimir_diag}; (C+2I)(C+6I)=0",
     )
     record(
         "the spectral projectors define a canonical shift/shear split on the complement",
-        ranks == {"lapse": 1, "shift": 3, "trace": 1, "shear": 5},
-        f"ranks={ranks}",
+        spectral_polynomials_exact
+        and ranks == {"lapse": 1, "shift": 3, "trace": 1, "shear": 5},
+        f"P_shift=(C+6I)/4, P_shear=-(C+2I)/4; ranks={ranks}",
     )
     record(
         "the four block projectors are exact, orthogonal, and complete",
@@ -249,7 +282,7 @@ def main() -> int:
         f"commutes=({comm_lapse},{comm_trace},{comm_shift},{comm_shear})",
     )
     record(
-        "in the current canonical basis the Casimir projectors land on the expected coordinates",
+        "in the displayed fixed basis the Casimir projectors land on the expected coordinates",
         diag_shift == [1, 1, 1, 0, 0, 0, 0, 0] and diag_shear == [0, 0, 0, 1, 1, 1, 1, 1],
         "P_shift selects h0i and P_shear selects spatial traceless-symmetric channels",
     )

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 389,
     "high": 268,
-    "leaf": 736,
+    "leaf": 735,
     "medium": 498
   },
   "cycle_break_target_count": 10,
@@ -36759,31 +36759,6 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "rstar_dtotality_axiom_text_instances_bounded_note_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "realized_state_primitive"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/RSTAR_DTOTALITY_AXIOM_TEXT_INSTANCES_BOUNDED_NOTE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_rstar_dtotality_axiom_text_instances_2026_07_02.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04",
@@ -56687,6 +56662,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 157,
-  "total_pending": 1891
+  "ready_count": 156,
+  "total_pending": 1890
 }

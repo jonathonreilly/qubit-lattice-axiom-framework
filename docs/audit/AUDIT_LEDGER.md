@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 944 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1733 |
+| unaudited | 1732 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 34 |
+| ~~audited_renaming~~ | 35 |
 | ~~audited_conditional~~ | 130 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -77,8 +77,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 34 |
-| `unaudited` | 2080 |
+| `audited_renaming` | 35 |
+| `unaudited` | 2079 |
 
 | claim_type | count |
 |---|---:|
@@ -1791,6 +1791,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_retained_unbounded_dynamics_gate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `record_axiom_audit_application_map_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `record_markov_generator_premise_classifier_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `rstar_dtotality_axiom_text_instances_bounded_note_2026-07-02` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | weak | codex-current | F | - |
@@ -17950,6 +17951,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The retained_bounded parent supplies the singular-mode matrix, and its characteristic polynomial, eigenvalue signs, and squared spectrum follow by elementary algebra. No Grassmann/Berezin bridge or broader reflection-positivity conclusion is needed or established.
 - **rationale:** The runner genuinely evaluates the stated matrices and eigenvalue formulas, but all load-bearing checks are algebraic identities over the single retained parent convention. With no external-comparator checks and no independent framework-level construction, the row is a correct algebraic decoration of the parent claim.
 - **decoration parent:** `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`
+- **auditor confidence:** high
+
+### `rstar_dtotality_axiom_text_instances_bounded_note_2026-07-02`
+
+- **Note:** [`RSTAR_DTOTALITY_AXIOM_TEXT_INSTANCES_BOUNDED_NOTE_2026-07-02.md`](../../docs/RSTAR_DTOTALITY_AXIOM_TEXT_INSTANCES_BOUNDED_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The quoted R* and D-totality clauses were audited only as labels for requirements already stated in the accepted Record and law-domain premises, with finite illustrative witnesses and the stated realized-state boundary.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00018-rstar_dtotality_axiom_text_i`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The R* clauses are the Record axiom's finite-additivity and content-determination requirements, while D-totality is the law sentence applied to a rule's stated supplied domain.  _(class `F`)_
+- **chain closes:** True — The cited premises directly contain the mapped requirements, and the exclusion and domain-relative consequences are correctly stated. The runner verifies finite examples and boundary language, but the chain establishes only the claimed clause correspondence.
+- **rationale:** The note explicitly presents R* and D-totality as names for clauses already contained in the accepted axiom text, so its load-bearing move is a class-F identification rather than a new derivation. The runner genuinely evaluates finite examples, but those examples instantiate definitions chosen to pass or fail the quoted requirements and produce no new framework consequence. The accepted-premise carve-out prevents a conditional downgrade but does not convert a direct re-labeling of premise text into class C.
 - **auditor confidence:** high
 
 ### `rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04`

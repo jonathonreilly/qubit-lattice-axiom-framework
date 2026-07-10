@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 390,
+    "critical": 389,
     "high": 265,
     "leaf": 754,
     "medium": 500
@@ -710,7 +710,7 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+      "claim_id": "gravity_clean_derivation_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -718,18 +718,23 @@
       "criticality_rank": 3,
       "cross_confirmation_status": null,
       "deps": [
+        "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
+        "self_consistency_forces_poisson_note",
+        "poisson_exhaustive_uniqueness_note",
+        "gravity_full_self_consistency_note",
+        "staggered_fermion_card_2026-04-11",
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-        "minimal_axioms"
+        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 21,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 8.781,
-      "note_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+      "load_bearing_score": 18.776,
+      "note_path": "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
-      "transitive_descendants": 310
+      "runner_path": "scripts/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.py",
+      "transitive_descendants": 309
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -8897,36 +8902,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_gauge_scalar_bridge_3plus1_native_tube_staging.py",
       "transitive_descendants": 311
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gravity_clean_derivation_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
-        "self_consistency_forces_poisson_note",
-        "poisson_exhaustive_uniqueness_note",
-        "gravity_full_self_consistency_note",
-        "staggered_fermion_card_2026-04-11",
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
-      ],
-      "direct_in_degree": 21,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 18.776,
-      "note_path": "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.py",
-      "transitive_descendants": 309
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -57154,5 +57129,5 @@
     }
   ],
   "ready_count": 201,
-  "total_pending": 1909
+  "total_pending": 1908
 }

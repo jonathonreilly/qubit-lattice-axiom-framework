@@ -20742,12 +20742,12 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "teleportation_resource_from_poisson_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded offline extraction of retained-axis logical two-qubit Bell resources from the stated mass-zero Poisson/CHSH ground states on 1D N=8 and 2D 4x4, including the G=0 null control.",
       "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -20764,13 +20764,13 @@
         "teleportation_operator_consistent_end_to_end_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [
         "scripts/frontier_bell_inequality.py"
       ],
       "load_bearing_score": 2.585,
       "note_path": "docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_teleportation_resource_from_poisson.py",
       "transitive_descendants": 2

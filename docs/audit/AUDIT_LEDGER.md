@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 936 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1815 |
+| unaudited | 1814 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 82 |
+| ~~audited_conditional~~ | 83 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1345 |
-| `audited_conditional` | 82 |
+| `audited_conditional` | 83 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2160 |
+| `unaudited` | 2159 |
 
 | claim_type | count |
 |---|---:|
@@ -1565,6 +1565,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `theta_gauge_winding_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_torus_dual_abelianization_shifted_weight_lattice_gaussian_gluing_stable_weyl_shift_obstruction_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -19748,6 +19749,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For an arbitrary supplied physical two-qubit resource density matrix rho_RB, the fixed Bell-basis measurement with fixed Bob Pauli correction induces a Pauli channel whose weights are the Bell-basis diagonal overlaps p_g=<beta_g|rho_RB|beta_g>; hence the identity entanglement fidelity is p_00=<Phi+|rho_RB|Phi+> and the qubit average fidelity is F_avg=(1+2 p_00)/3, giving the fixed-protocol threshold p_00>1/2 for beating 2/3.  _(class `C`)_
 - **chain closes:** True — Within the stated fixed protocol, the note supplies the algebraic channel reduction and the completed runner independently implements the same three-qubit protocol, exact Choi average fidelity, threshold brackets, no-record Bob diagnostics, and trace-preservation checks. The reported formula error is numerical roundoff scale and all acceptance gates pass. The broader native resource-preparation and non-ideal operational questions are explicitly outside scope rather than hidden premises for this bounded theorem.
 - **rationale:** The claim is narrowly bounded and does not overstate beyond the fixed supplied-resource protocol. The load-bearing formula and threshold follow from the stated teleportation-channel derivation and are corroborated by the completed runner across representative resource families and arbitrary random density matrices. No external comparator, tuned numerical match, unsupported physical identification, or unclosed dependency is needed for the scoped conclusion.
+- **auditor confidence:** high
+
+### `teleportation_resource_from_poisson_note`
+
+- **Note:** [`TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Bounded offline extraction of retained-axis logical two-qubit Bell resources from the stated mass-zero Poisson/CHSH ground states on 1D N=8 and 2D 4x4, including the G=0 null control.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-teleportation_resource_f-095`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On the finite 1D N=8 and 2D 4x4 surfaces, diagonalizing the Poisson/CHSH Hamiltonian and tracing cells and spectator tastes while retaining the last taste bit yields high-fidelity logical Bell resources, whereas the G=0 control does not.  _(class `C`)_
+- **chain closes:** True — The included runner and helper construct and diagonalize the finite Hamiltonians, perform the logical/environment factorization and partial trace, and independently compute Bell overlap, negativity, CHSH, and teleportation fidelity. This closes the bounded finite extraction claim only; it does not close native physical preparation, readout, or apparatus realization.
+- **rationale:** The primary runner is substantive rather than print-only: together with the included helper it computes the finite ground states and reduced logical resources, producing the reported diagnostics. The bounded extraction therefore closes on the named surfaces, but the source expressly leaves the native preparation/readout/apparatus theorem open. In addition, the cited operator-consistent end-to-end authority is meta and explicitly conditional, so the broader physical deterministic-resource gate is not closed by the restricted packet.
+- **open / conditional deps cited:**
+  - `TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md`
 - **auditor confidence:** high
 
 ### `teleportation_retained_axis_operator_algebra_closure_note`

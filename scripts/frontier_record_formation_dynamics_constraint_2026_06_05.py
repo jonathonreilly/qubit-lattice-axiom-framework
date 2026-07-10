@@ -891,10 +891,9 @@ def main() -> int:
     # -----------------------------------------------------------------------
     section("Part 9: NOT pinned -- coupling strength / action magnitude / beta")
     # -----------------------------------------------------------------------
-    # The objective-record / non-demolition structure is INDEPENDENT of the
-    # coupling g: any g>0 yields a perfect non-demolition record at the
-    # appropriately rescaled time t = pi/(4g). So the formation constraint
-    # fixes the FORM ([H,Pi_S]=0) but not the MAGNITUDE.
+    # Within the displayed controlled-copy family, any g>0 yields the same
+    # perfect record at the rescaled time t = pi/(4g). This construction does
+    # not pin g and is not a universal formation constraint on other steps.
     forms_record_at = []
     for g_test in [0.25, 0.5, 1.0, 2.0, 3.7]:
         H_g = H_nondemolition(n_env, g_test)
@@ -902,7 +901,7 @@ def main() -> int:
         rho_g = density(U_g @ psi0)
         q = min(holevo_pointer_info(rho_g, 0, [k], n) for k in range(1, n))
         forms_record_at.append(q)
-    record("NOT pinned: any coupling g>0 forms an equally good record (form, not magnitude)",
+    record("NOT pinned in the controlled-copy family: rescaling g only rescales the recording time",
            all(abs(x - H_S_initial) < 1e-6 for x in forms_record_at),
            f"record quality across g = {[round(x,4) for x in forms_record_at]} (all=H_S)")
 

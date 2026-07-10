@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py
-runner_sha256: aa2966659052c6b208080ef98a4ee498b5f71446cabb408331c4005cfabf6bb7
+runner_sha256: b8fc4b1bd8969b028bd77e1aaf434bf08450c18087f4b444154ca6d71c05ad99
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.23
@@ -109,7 +109,7 @@ PASS supplied transfer block: commutes with the conserved charge => lies in the 
 ------------------------------------------------------------------------------
 Part 9: NOT pinned -- coupling strength / action magnitude / beta
 ------------------------------------------------------------------------------
-PASS NOT pinned: any coupling g>0 forms an equally good record (form, not magnitude) :: record quality across g = [0.5224, 0.5224, 0.5224, 0.5224, 0.5224] (all=H_S)
+PASS NOT pinned in the controlled-copy family: rescaling g only rescales the recording time :: record quality across g = [0.5224, 0.5224, 0.5224, 0.5224, 0.5224] (all=H_S)
 
 ------------------------------------------------------------------------------
 Part 10: source-note firewall (scope claims present in the note)

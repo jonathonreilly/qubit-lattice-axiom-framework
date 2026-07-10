@@ -2,10 +2,10 @@
 
 **Claim type:** meta (process plan; `docs/repo/**` is outside the audit ledger
 per `docs/audit/data/excluded_source_patterns.txt`)
-**Status:** plan only. This PR executes no scrub edits except the front-door
-rewrite (`README.md`) shipped alongside it. Every other change described here
-lands in later waves, each through its own PR and the owner-operated
-review-loop.
+**Status:** plan only. The initial wave executed only the front-door rewrite
+(`README.md`) shipped alongside this plan. Every other change described here
+lands in later waves, each through its own reviewed landing and the
+owner-operated review-loop.
 **Owner landing:** review-loop special landing, per owner instruction
 2026-07-04.
 **Retirement:** this plan is transient coordination, not registry content
@@ -34,8 +34,9 @@ The complete current foundation surface is:
 - **Approved primitives (3):** `scale_reference_primitive`,
   `kinetic_isotropy_primitive`, `realized_state_primitive`
   (`docs/audit/data/axiom_premise_nodes.json`).
-- **Tier-A admitted derivation targets (2):** `AC_phi_lambda`, `theta`
-  (`docs/audit/data/tier_a_admissions.json`).
+- **Tier-A admitted derivation targets (0):** the two targets present when this
+  plan was written, `AC_phi_lambda` and `theta`, have since been retired; their
+  history remains in `docs/audit/data/tier_a_admissions.json`.
 - **Scope condition (not a premise):** the past-hypothesis low-entropy
   magnitude (2026-06-16 classification).
 
@@ -173,7 +174,7 @@ Each wave is one bounded PR, prepared under the workhorse split (supervisor
 specs and line-reviews; codex worker executes), landed by the owner through
 review-loop.
 
-- **Wave 0 (this PR):** this plan + the rewritten front door (`README.md`).
+- **Wave 0 (completed initial wave):** this plan + the rewritten front door (`README.md`).
 - **Wave 1 — front-door chain remainder (~15 files, hand-reviewed):**
   `docs/START_HERE.md`; `docs/publication/ci3_z3/README.md` backbone list and
   memo pointers; `FALSIFIABLE_PREDICTIONS_2026-06-08.md` axiom-set phrase;

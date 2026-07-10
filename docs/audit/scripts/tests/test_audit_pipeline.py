@@ -49,6 +49,27 @@ def _import_codex_audit_runner():
     return module
 
 
+def _import_repo_script(filename: str):
+    """Import one repo-root runner under a fresh, test-specific name."""
+    module_name = f"repo_script_under_test_{Path(filename).stem}"
+    if module_name in sys.modules:
+        del sys.modules[module_name]
+    scripts_dir = PROJECT_ROOT / "scripts"
+    spec = importlib.util.spec_from_file_location(module_name, scripts_dir / filename)
+    module = importlib.util.module_from_spec(spec)
+    assert spec and spec.loader
+    sys.modules[module_name] = module
+    sys.path.insert(0, str(scripts_dir))
+    try:
+        spec.loader.exec_module(module)
+    except Exception:
+        sys.modules.pop(module_name, None)
+        raise
+    finally:
+        sys.path.remove(str(scripts_dir))
+    return module
+
+
 class CleanLedgerFixture:
     """Build a minimal but valid audit_ledger.json + citation_graph.json
     on a temporary REPO_ROOT for unit-style testing."""
@@ -113,6 +134,108 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
         module.SUMMARY_PATH = module.DATA_DIR / "effective_status_summary.json"
     if hasattr(module, "OUTPUT_PATH"):
         module.OUTPUT_PATH = module.DATA_DIR / "auditor_reliability.json"
+
+
+class ChangedRunnerFailureGateTest(unittest.TestCase):
+    def test_record_census_returns_nonzero_when_constituent_check_fails(self):
+        import contextlib
+        import io
+
+        m = _import_repo_script(
+            "record_saturation_availability_census_2026_07_08.py"
+        )
+        with mock.patch.object(
+            m, "load_text_authorities", return_value=(False, True)
+        ), contextlib.redirect_stdout(io.StringIO()) as output:
+            rc = m.run()
+        self.assertEqual(rc, 1)
+        self.assertIn("TOTAL: MACHINERY-FAIL", output.getvalue())
+
+    def test_schwinger_rotor_coupling_check_is_decisive(self):
+        import contextlib
+        import io
+
+        m = _import_repo_script(
+            "gauged_schwinger_staggered_ed_engine_2026_07_08.py"
+        )
+        with (
+            mock.patch.object(m, "check_exact_rotor_g0_couples_w", return_value=False),
+            mock.patch.object(m, "check_01", return_value=(True, "ok")),
+            mock.patch.object(m, "check_02", return_value=(True, "ok", {})),
+            mock.patch.object(m, "check_03", return_value=(True, "ok")),
+            mock.patch.object(m, "check_06", return_value=(True, "ok")),
+            contextlib.redirect_stdout(io.StringIO()) as output,
+        ):
+            rc = m.main()
+        self.assertEqual(rc, 1)
+        self.assertIn("CHECK-04=FAIL", output.getvalue())
+
+    def test_wep_comparator_rejects_bad_curvature_fit(self):
+        import contextlib
+        import io
+
+        m = _import_repo_script(
+            "wep_source_reduction_scaling_window_2026_07_08.py"
+        )
+        m.PASS_COUNT = 0
+        m.FAIL_COUNT = 0
+        with (
+            mock.patch.object(
+                m,
+                "tune_to_energy",
+                side_effect=lambda length, mass, target: (1.0, target),
+            ),
+            mock.patch.object(
+                m,
+                "fitted_curvature_mass",
+                side_effect=[(1.0, 999.0), (2.0, 999.0)],
+            ),
+            contextlib.redirect_stdout(io.StringIO()) as output,
+        ):
+            m.check_finite_same_energy_comparator()
+        self.assertEqual(m.FAIL_COUNT, 1)
+        self.assertIn("fit_residual_tolerance=1.0e-06", output.getvalue())
+
+    def test_wep_fit_residual_is_overdetermined(self):
+        m = _import_repo_script(
+            "wep_source_reduction_scaling_window_2026_07_08.py"
+        )
+
+        def adversarial_energy(length, mass_a, mass_b, coupling, index):
+            momentum = m.signed_momentum_value(index, length)
+            return 1.0 + momentum**2 + 1.0e8 * momentum**8
+
+        with mock.patch.object(
+            m, "lowest_pblock_energy", side_effect=adversarial_energy
+        ):
+            _, residual = m.fitted_curvature_mass(64, 0.5, 1.0)
+        self.assertGreater(residual, m.FIT_RESID_TOL)
+
+    def test_wep_comparator_rejects_nan_fit_residual(self):
+        import contextlib
+        import io
+
+        m = _import_repo_script(
+            "wep_source_reduction_scaling_window_2026_07_08.py"
+        )
+        m.PASS_COUNT = 0
+        m.FAIL_COUNT = 0
+        with (
+            mock.patch.object(
+                m,
+                "tune_to_energy",
+                side_effect=lambda length, mass, target: (1.0, target),
+            ),
+            mock.patch.object(
+                m,
+                "fitted_curvature_mass",
+                side_effect=[(1.0, float("nan")), (2.0, float("nan"))],
+            ),
+            contextlib.redirect_stdout(io.StringIO()) as output,
+        ):
+            m.check_finite_same_energy_comparator()
+        self.assertEqual(m.FAIL_COUNT, 1)
+        self.assertIn("max_fit_residual=inf", output.getvalue())
 
 
 class ApplyAuditTest(unittest.TestCase):
@@ -442,6 +565,8 @@ class SeedLedgerTest(unittest.TestCase):
         row_with_snapshot = {
             "claim_id": "test",
             "audit_status": "audited_clean",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
             "audit_state_snapshot": {"criticality": "high", "deps": []},
             "previous_audits": [],
         }
@@ -450,6 +575,14 @@ class SeedLedgerTest(unittest.TestCase):
         self.assertIsNone(new_row.get("audit_state_snapshot"))
         # Prior values archived
         self.assertEqual(len(new_row["previous_audits"]), 1)
+        self.assertEqual(
+            new_row["previous_audits"][0]["auditor_model"], "gpt-5.6-sol"
+        )
+        self.assertEqual(
+            new_row["previous_audits"][0]["auditor_reasoning_effort"], "xhigh"
+        )
+        self.assertIsNone(new_row["auditor_model"])
+        self.assertIsNone(new_row["auditor_reasoning_effort"])
 
     def test_existing_unaudited_row_clears_stale_audit_residue(self):
         m = _import("seed_audit_ledger")
@@ -485,10 +618,18 @@ class SeedLedgerTest(unittest.TestCase):
                         "runner_path": None,
                         "deps": [],
                         "note_hash": note_hash,
-                        "previous_audits": [{"verdict": "old"}],
+                        "previous_audits": [
+                            {
+                                "verdict": "old",
+                                "auditor": "stale-auditor",
+                                "auditor_family": "codex-gpt-5",
+                            }
+                        ],
                         "audit_status": "unaudited",
                         "auditor": "stale-auditor",
                         "auditor_family": "codex-gpt-5",
+                        "auditor_model": "gpt-5",
+                        "auditor_reasoning_effort": "high",
                         "independence": "fresh_context",
                         "load_bearing_step": "stale step",
                         "chain_closes": True,
@@ -508,6 +649,8 @@ class SeedLedgerTest(unittest.TestCase):
         self.assertEqual(row["audit_status"], "unaudited")
         self.assertIsNone(row["auditor"])
         self.assertIsNone(row["auditor_family"])
+        self.assertIsNone(row["auditor_model"])
+        self.assertIsNone(row["auditor_reasoning_effort"])
         self.assertIsNone(row["independence"])
         self.assertIsNone(row["load_bearing_step"])
         self.assertIsNone(row["chain_closes"])
@@ -516,7 +659,74 @@ class SeedLedgerTest(unittest.TestCase):
         self.assertEqual(row["claim_type"], "no_go")
         self.assertEqual(row["claim_type_provenance"], "migration_hint")
         self.assertIsNone(row["claim_scope"])
-        self.assertEqual(row["previous_audits"], [{"verdict": "old"}])
+        self.assertEqual(
+            row["previous_audits"],
+            [
+                {
+                    "verdict": "old",
+                    "auditor": "stale-auditor",
+                    "auditor_family": "codex-gpt-5",
+                    "auditor_model": "gpt-5",
+                    "auditor_reasoning_effort": "high",
+                }
+            ],
+        )
+
+    def test_unaudited_sole_history_recovers_exact_provenance_without_live_identity(self):
+        m = _import("seed_audit_ledger")
+        row = {
+            "audit_status": "unaudited",
+            "auditor": None,
+            "auditor_family": None,
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "previous_audits": [
+                {
+                    "audit_status": "audited_clean",
+                    "auditor": "archived-auditor",
+                    "auditor_family": "codex-gpt-5.6",
+                }
+            ],
+        }
+
+        m.reset_unaudited_audit_fields(row)
+
+        archived = row["previous_audits"][0]
+        self.assertEqual(archived["auditor_model"], "gpt-5.6-sol")
+        self.assertEqual(archived["auditor_reasoning_effort"], "xhigh")
+        self.assertIsNone(row["auditor_model"])
+        self.assertIsNone(row["auditor_reasoning_effort"])
+
+    def test_unaudited_ambiguous_history_retains_unattributed_exact_provenance(self):
+        m = _import("seed_audit_ledger")
+        row = {
+            "audit_status": "unaudited",
+            "auditor": None,
+            "auditor_family": None,
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "previous_audits": [
+                {"audit_status": "audited_clean", "auditor": "first"},
+                {"audit_status": "audited_conditional", "auditor": "second"},
+            ],
+        }
+
+        m.reset_unaudited_audit_fields(row)
+
+        self.assertNotIn("auditor_model", row["previous_audits"][0])
+        self.assertNotIn("auditor_model", row["previous_audits"][1])
+        self.assertEqual(
+            row["unattributed_audit_provenance"],
+            [
+                {
+                    "auditor_model": "gpt-5.6-sol",
+                    "auditor_reasoning_effort": "xhigh",
+                    "reason": "legacy_unaudited_exact_provenance_without_unique_history_match",
+                }
+            ],
+        )
+        self.assertIsNone(row["auditor_model"])
+        self.assertIsNone(row["auditor_reasoning_effort"])
 
     def test_archived_failed_row_refreshes_note_hash(self):
         m = _import("seed_audit_ledger")
@@ -1185,6 +1395,109 @@ class AuditLintTest(unittest.TestCase):
             row.setdefault("deps", [])
         self.fx.write_ledger({"schema_version": 1, "rows": rows})
 
+    def test_front_door_current_markdown_link_passes(self):
+        m = _import("audit_lint")
+        errors = m.front_door_axiom_pointer_errors(
+            "docs/START_HERE.md",
+            "See [the current axioms](MINIMAL_AXIOMS_2026-06-29.md#scope).\n",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            ["docs/MINIMAL_AXIOMS_2026-06-05.md"],
+        )
+        self.assertEqual(errors, [])
+
+    def test_front_door_prose_or_code_path_does_not_count(self):
+        m = _import("audit_lint")
+        errors = m.front_door_axiom_pointer_errors(
+            "README.md",
+            "Current memo: `docs/MINIMAL_AXIOMS_2026-06-29.md`.\n",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            ["docs/MINIMAL_AXIOMS_2026-06-05.md"],
+        )
+        self.assertEqual(len(errors), 1)
+        self.assertIn("does not cite the current axiom memo", errors[0])
+
+    def test_front_door_nonrendered_markdown_links_do_not_count(self):
+        m = _import("audit_lint")
+        current = "docs/MINIMAL_AXIOMS_2026-06-29.md"
+        examples = (
+            "`[example](docs/MINIMAL_AXIOMS_2026-06-29.md)`\n",
+            "```md\n[example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n```\n",
+            "<!-- [example](docs/MINIMAL_AXIOMS_2026-06-29.md) -->\n",
+            "\\[example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "> ~~~md\n> [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n> ~~~\n",
+            "> ```md\n> [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n> ````\n",
+            "    [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            ">\n>     [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "- item\n\n        [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "- item\n\n>     [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "-     [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "1.     [example](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+        )
+        for text in examples:
+            with self.subTest(text=text):
+                errors = m.front_door_axiom_pointer_errors(
+                    "README.md", text, current, []
+                )
+                self.assertEqual(len(errors), 1)
+                self.assertIn("does not cite the current axiom memo", errors[0])
+
+    def test_front_door_rendered_links_in_continuations_count(self):
+        m = _import("audit_lint")
+        current = "docs/MINIMAL_AXIOMS_2026-06-29.md"
+        examples = (
+            "\\`[current](docs/MINIMAL_AXIOMS_2026-06-29.md)\\`\n",
+            "Paragraph\n    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "- item\n    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "- item\n\n    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "-    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+            "1.    [current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n",
+        )
+        for text in examples:
+            with self.subTest(text=text):
+                self.assertEqual(
+                    m.front_door_axiom_pointer_errors(
+                        "README.md", text, current, []
+                    ),
+                    [],
+                )
+
+    def test_front_door_superseded_link_after_blank_list_paragraph_fails(self):
+        m = _import("audit_lint")
+        errors = m.front_door_axiom_pointer_errors(
+            "README.md",
+            "[current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n\n"
+            "- item\n\n"
+            "    [old](docs/MINIMAL_AXIOMS_2026-06-05.md)\n",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            ["docs/MINIMAL_AXIOMS_2026-06-05.md"],
+        )
+        self.assertEqual(len(errors), 1)
+        self.assertIn("cites superseded axiom memo", errors[0])
+
+    def test_front_door_backslash_does_not_escape_code_span_closer(self):
+        m = _import("audit_lint")
+        errors = m.front_door_axiom_pointer_errors(
+            "README.md",
+            "[current](docs/MINIMAL_AXIOMS_2026-06-29.md)\n\n"
+            "`code\\` [old](docs/MINIMAL_AXIOMS_2026-06-05.md) `\n",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            ["docs/MINIMAL_AXIOMS_2026-06-05.md"],
+        )
+        self.assertEqual(len(errors), 1)
+        self.assertIn("cites superseded axiom memo", errors[0])
+
+    def test_front_door_superseded_markdown_link_fails(self):
+        m = _import("audit_lint")
+        errors = m.front_door_axiom_pointer_errors(
+            "README.md",
+            "[current](docs/MINIMAL_AXIOMS_2026-06-29.md) and "
+            "[old](docs/MINIMAL_AXIOMS_2026-06-05.md)\n",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            ["docs/MINIMAL_AXIOMS_2026-06-05.md"],
+        )
+        self.assertEqual(len(errors), 1)
+        self.assertIn("cites superseded axiom memo", errors[0])
+
     def test_conditional_without_repair_class_warns(self):
         m = _import("audit_lint")
         _patch_repo_root(m, self.tmp_root)
@@ -1516,6 +1829,27 @@ class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):
         if cc_status is not None:
             row["cross_confirmation"] = {"status": cc_status}
         return m._categorize_criticality_bump(row, target)
+
+    def test_hard_invalidation_archives_and_clears_exact_model_provenance(self):
+        m = _import("invalidate_stale_audits")
+        row = {
+            "claim_id": "test",
+            "audit_status": "audited_clean",
+            "auditor": "unique-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "claim_type": "bounded_theorem",
+            "claim_type_author_hint": "bounded_theorem",
+            "previous_audits": [],
+        }
+        reset = m.archive_and_reset(row, "note_hash_changed:old->new")
+        archived = reset["previous_audits"][-1]
+        self.assertEqual(archived["auditor_model"], "gpt-5.6-sol")
+        self.assertEqual(archived["auditor_reasoning_effort"], "xhigh")
+        self.assertIsNone(reset["auditor_model"])
+        self.assertIsNone(reset["auditor_reasoning_effort"])
 
     def test_bump_to_medium_is_always_noop(self):
         # No special requirement at medium. Even weak audits stay live.
@@ -1890,6 +2224,28 @@ class CodexAuditRunnerReauditCandidatesTest(unittest.TestCase):
 
         dep_only = m.load_reaudit_candidates(include_runner_drift=False)
         self.assertEqual([r["claim_id"] for r in dep_only], ["medium_dep"])
+
+
+class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
+    def test_select_named_targets_preserves_requested_order(self):
+        m = _import_codex_audit_runner()
+        queue = [
+            {"claim_id": "first", "score": 100},
+            {"claim_id": "second", "score": 10},
+        ]
+
+        selected = m.select_named_targets(queue, ["second", "first"])
+
+        self.assertEqual([row["claim_id"] for row in selected], ["second", "first"])
+
+    def test_select_named_targets_rejects_missing_and_duplicate_ids(self):
+        m = _import_codex_audit_runner()
+        queue = [{"claim_id": "first"}]
+
+        with self.assertRaisesRegex(ValueError, "absent from the selected queue"):
+            m.select_named_targets(queue, ["missing"])
+        with self.assertRaisesRegex(ValueError, "duplicate --claim-id"):
+            m.select_named_targets(queue, ["first", "first"])
 
 
 class RelabelUnverifiedCodexAuditsTest(unittest.TestCase):

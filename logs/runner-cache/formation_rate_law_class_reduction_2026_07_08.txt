@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: scripts/formation_rate_law_class_reduction_2026_07_08.py
+runner_sha256: 17a4396f2889ab27770d89d7d0f48f6162df41bee71a076878ef486720dc91d4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
+HYPOTHESES: A differentiable at r0; A0>0; F differentiable at A0; F(A0)>0; supplied examples only
+EXAMPLES: linear6/linear:A0=5,F0=5,g=1,response=-0.2,fd_error=4.662e-13 | linear6/square_root:A0=5,F0=2.2360679775,g=0.5,response=-0.1,fd_error=7.595e-13 | linear6/quadratic:A0=5,F0=25,g=2,response=-0.4,fd_error=5.770e-13 | linear6/saturating:A0=5,F0=0.833333333333,g=0.166666666667,response=-0.0333333333333,fd_error=6.698e-13 | linear6/exponential:A0=5,F0=0.993262053001,g=0.0339182745315,response=-0.0067836549063,fd_error=3.505e-14 | convex6/linear:A0=4.16666666667,F0=4.16666666667,g=1,response=-0.4,fd_error=3.993e-13 | convex6/square_root:A0=4.16666666667,F0=2.04124145232,g=0.5,response=-0.2,fd_error=2.507e-13 | convex6/quadratic:A0=4.16666666667,F0=17.3611111111,g=2,response=-0.8,fd_error=1.069e-12 | convex6/saturating:A0=4.16666666667,F0=0.806451612903,g=0.193548387097,response=-0.0774193548387,fd_error=4.353e-13 | convex6/exponential:A0=4.16666666667,F0=0.984496146401,g=0.0656167017332,response=-0.0262466806933,fd_error=1.147e-13 | horizon6/linear:A0=5,F0=5,g=1,response=-0.8,fd_error=3.842e-13 | horizon6/square_root:A0=5,F0=2.2360679775,g=0.5,response=-0.4,fd_error=5.556e-13 | horizon6/quadratic:A0=5,F0=25,g=2,response=-1.6,fd_error=1.598e-12 | horizon6/saturating:A0=5,F0=0.833333333333,g=0.166666666667,response=-0.133333333333,fd_error=9.634e-14 | horizon6/exponential:A0=5,F0=0.993262053001,g=0.0339182745315,response=-0.0271346196252,fd_error=6.059e-13
+CHECKS: chain_rule=True max_identity_error=1.598e-12 closed_forms=True max_closed_form_error=0.000e+00
+TOTAL: CHAIN-RULE-VALIDATED
+
+----- stderr -----
+

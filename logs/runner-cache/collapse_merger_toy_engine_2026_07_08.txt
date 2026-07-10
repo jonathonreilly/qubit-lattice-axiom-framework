@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/collapse_merger_toy_engine_2026_07_08.py
+runner_sha256: 9883b4366c21dd49dbc0f57e2952ebc4f69bcb19985add6ab8e6202b090faa59
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.30
+status: ok
+----- stdout -----
+CHECK-01 CONSERVATION: PASS exact every step; record monotone; kappa=0.002 samples(step:R:P)=[0:0:200,1:0:200,10:5:200,100:45:200,500:144:200,1000:212:200,2000:262:200] | kappa=0.01 samples(step:R:P)=[0:0:200,1:0:200,10:17:200,100:142:200,500:279:200,1000:333:200,2000:399:200]
+CHECK-02 IMPOSED BIAS RESPONSE: PASS accepted gradient-entry flux patch=29.25+/-3.60 (t_df19=8.13,toward) null=0.40+/-3.56 (t_df19=0.11); seeds=20,steps=200,sign-exact=True
+CHECK-03 IMPOSED DEPOSITION RESPONSE: PASS pinned-hops-off=60/10 active-fill=0.80 first-0.8-step=31 parcel-free-control=0.00 | CHECK-04 SUPPLIED-CROWDING CHOKE: PASS fit slopes offered=-0.6986,empirical=-1.2283; offered-rate=0.6000->0.1271/step
+CHECK-05 BLOCKED-SITE SOFTWARE: PASS inside-max=0 transmission=0 blocked-hops=1167 deposition=off; boundary-profile offsets[-12..-1],last50mean=[4.44,5.38,6.16,6.24,6.18,6.30,6.18,6.34,7.04,7.02,8.38,14.16]
+CHECK-06 DETERMINISM: PASS full state+clock+RNG hash identical across same-seed reruns (kappa=0.002:734dbb7b88de6578,kappa=0.01:2c7ff9076795c80b)
+TOTAL: ENGINE-VALID; flags(L=400,parcels=200,A=[2.1, 1.1, 0.10000000000000009],N=A/A0,beta=0.6,clip=0.45,kappa=(0.002, 0.01),dt=1.0;sign=pR-pL=clip(beta*(N_L-N_R)/2,[-clip,clip]);lower-probe-target-favored,blocked-hop=wait,displacement=nearest-post-open/tie-seeded-binomial/terminal-refuge); SPEC-NOTE: p_deposit=kappa*parcels*A/A0*dt on open parcel-bearing sites; fall bias, parcel model, availability, deposition, and kappa are supplied; deposition displacement conserves but relocates parcels; the last-open refuge is part of that imposed rule; parcels are indistinguishable multi-occupancy counts; software validation only, no physics or audit result.
+
+----- stderr -----
+

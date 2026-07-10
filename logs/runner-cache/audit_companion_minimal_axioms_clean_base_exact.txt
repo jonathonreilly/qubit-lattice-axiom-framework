@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_minimal_axioms_clean_base_exact.py
-runner_sha256: efb20a41810c763fd7b4fcfb40a8995317d0084aa18557f21b05186e2b0cb57b
+runner_sha256: 3131e7297c563d671f6ba5991de56d6fdb2a49a88f5f6d0373e90c1ced946584
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 PASS: Source note exists
@@ -48,6 +48,12 @@ PASS: Registry note records 2026-07-02/03 no-privilege/readout/state/law/record 
       
 PASS: Policy records 2026-07-02 foundation wording additions
       
+PASS: Memo Record axiom carries the 2026-07-04 formation sentence
+      occurrence is axiom content; formation rules stay downstream
+PASS: Registry note records the formation sentence
+      
+PASS: Policy records 2026-07-04 formation-sentence entry
+      
 PASS: Policy records 2026-07-03 Record permanence restoration
       
 PASS: Policy records 2026-07-03 Record section polish
@@ -56,8 +62,8 @@ PASS: Policy records 2026-06-29 foundation reset
       
 PASS: Policy no-laundering clause lists Admissibility and Record boundaries
       
-PASS: Tier-A genuine admitted input count remains two
-      2
+PASS: Tier-A genuine admitted input count is zero after the 2026-07-05 retirements
+      0
 PASS: minimal_axioms is not a Tier-A derivation target
       
 PASS: Tier-A registry records Record as reclassified primitive
@@ -104,7 +110,7 @@ PASS: Open gates outside axioms include staggered realization
       
 PASS: Open gates outside axioms include theta
       
-PASS: Open gates outside axioms include context selection and occurrence rules
+PASS: Open gates outside axioms include context selection and formation rules
       
 PASS: Open gates outside axioms include physical persistence dynamics
       
@@ -137,8 +143,8 @@ PASS: Qualification: supplied-condition law gives one answer where its condition
 PASS: Boundary: runner imports no context-selection/log-det/P2/measurement/dynamics/scale conclusion
       script checks only algebraic notation, graph adjacency, local availability bookkeeping, fixed record readout, and finite additivity
 
-runner_check_breakdown = {A: 65, B: 0, C: 0, D: 0, total_pass: 65}
-TOTAL: PASS=65 FAIL=0
+runner_check_breakdown = {A: 68, B: 0, C: 0, D: 0, total_pass: 68}
+TOTAL: PASS=68 FAIL=0
 RESULT: PASS
 
 ----- stderr -----

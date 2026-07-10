@@ -24,21 +24,19 @@ non-retained dependency is this scale-reference primitive should not become
 
 ## Why It Is A Primitive
 
-The framework baseline, Lattice + Quantum + Record, carries no dimensionful
-number. Any derived quantity from that structural core is dimensionless or
-carries a power of the lattice spacing `[a]^n`; its physical unit is
-undetermined until one dimensionful reference is supplied.
-
-That reference is irreducible by dimensional analysis. A dimensionful scale
-cannot be derived from purely dimensionless structure, and treating this one
-scale choice as a Tier-A admitted derivation target incorrectly bounds lanes
-whose dimensionless content is otherwise clean.
+This declaration supplies the units conversion that the Lattice + Qubit +
+Admissibility + Record baseline does not itself specify. Quantities on the
+structural surface remain dimensionless or carry a power of the lattice
+spacing `[a]^n` until that reference is supplied. No derivation of the chosen
+physical scale is claimed here; treating the units reference as a Tier-A
+admitted derivation target would incorrectly bound lanes whose dimensionless
+content is otherwise clean.
 
 ## What This Does Not Do
 
 - It does not add or amend an axiom. The minimal framework baseline is the
-  three named axioms in `MINIMAL_AXIOMS_2026-06-04.md`: Lattice, Quantum, and
-  Record.
+  [four named axioms](MINIMAL_AXIOMS_2026-06-29.md): Lattice, Qubit,
+  Admissibility, and Record.
 - It does not assert `a/l_P = 1` as a derived theorem. The self-consistency
   question that the framework's natural unit equals the Planck length remains
   a separate open gravity derivation.

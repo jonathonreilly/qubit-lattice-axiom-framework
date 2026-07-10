@@ -19,15 +19,15 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 173 |
 | high | `unaudited` | 142 |
-| medium | `unaudited` | 94 |
+| medium | `unaudited` | 93 |
 | critical | `audited_conditional` | 5 |
 | high | `audited_conditional` | 4 |
 | medium | `open_gate` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_failed` | 2 |
+| medium | `audited_conditional` | 2 |
 | critical | `audit_in_progress` | 1 |
 | high | `open_gate` | 1 |
-| medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
 **Total non-retained-grade rows in publication tables:** 429
@@ -372,7 +372,7 @@ publication tables phrase it.
 | medium | `dm_abcc_exact_target_surface_source_cubic_closure_theorem_note_2026-04-21` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `dm_abcc_five_basin_chamber_dple_support_theorem_note_2026-04-21` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `dm_candidate_mass_window_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | medium | `dm_flagship_closure_review_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `dm_leptogenesis_pmns_even_response_sole_axiom_boundary_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |

@@ -1,0 +1,31 @@
+loop_slug: gauge-wilson-isotropy-boundary-closure-20260710
+mode: run
+target_status: candidate-retained-grade
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: no_go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "Exact negative boundary for the two named PR #528 mechanisms only."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+runtime: bounded_interactive
+cycle_count: 1
+block_count: 1
+active_route: formal_orientation_signature_hardening
+hard_residual: null
+files_touched:
+  - docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md
+  - scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py
+  - logs/runner-cache/frontier_gauge_wilson_isotropy_boundary_2026_05_04.txt
+open_imports: []
+no_go_routes:
+  - pseudoscalar_as_fourth_generator
+  - staggered_eta_as_orientation_split
+trace_gate: negative_route_pruning
+review_disposition: pass
+pr_status: ready_to_open
+next_exact_action: submit_source_note_runner_and_cache_for_independent_reaudit
+stop_condition: reviewed_no_go_ready_for_independent_reaudit

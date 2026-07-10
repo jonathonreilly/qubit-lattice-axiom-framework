@@ -11,6 +11,10 @@ The runner verifies two narrow algebraic facts used by the companion note:
    coupling split from an isotropic input lattice.
 
 These are boundary checks, not a derivation of the accepted Wilson surface.
+The final check treats the six eta plaquette signs only as an orientation
+signature and verifies that this signature has no anisotropic component. It
+does not assume a fermion-determinant or source/action map from eta signs to
+physical Wilson coefficients.
 """
 
 from __future__ import annotations
@@ -22,6 +26,9 @@ import numpy as np
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+ORIENTATIONS = tuple(itertools.combinations(range(4), 2))
+SPATIAL_ORIENTATIONS = ((0, 1), (0, 2), (1, 2))
+TEMPORAL_ORIENTATIONS = ((0, 3), (1, 3), (2, 3))
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -58,6 +65,13 @@ def eta_plaquette_product(mu: int, nu: int, x: tuple[int, int, int, int]) -> int
         * staggered_eta(nu, tuple(x_mu))
         * staggered_eta(mu, tuple(x_nu))
         * staggered_eta(nu, x)
+    )
+
+
+def spatial_temporal_contrast(pattern: dict[tuple[int, int], int]) -> int:
+    """Return three times the spatial-average minus temporal-average entry."""
+    return sum(pattern[pair] for pair in SPATIAL_ORIENTATIONS) - sum(
+        pattern[pair] for pair in TEMPORAL_ORIENTATIONS
     )
 
 
@@ -106,7 +120,7 @@ def main() -> int:
     print("\nPart 2: staggered eta-product orientation check")
     sites = list(itertools.product((0, 1), repeat=4))
     products: dict[tuple[int, int], set[int]] = {}
-    for mu, nu in itertools.combinations(range(4), 2):
+    for mu, nu in ORIENTATIONS:
         values = {eta_plaquette_product(mu, nu, site) for site in sites}
         products[(mu, nu)] = values
         labels = "xyzt"
@@ -118,9 +132,16 @@ def main() -> int:
         all_values == {-1},
         detail=f"orientation value sets = {products}",
     )
+    eta_signature = {pair: next(iter(products[pair])) for pair in ORIENTATIONS}
     check(
-        "the eta-product check supplies no spatial/temporal gauge-coupling split",
-        all(values == {-1} for values in products.values()),
+        "the eta orientation signature has no anisotropic component or spatial/temporal split",
+        all(values == {-1} for values in products.values())
+        and set(eta_signature.values()) == {-1}
+        and spatial_temporal_contrast(eta_signature) == 0,
+        detail=(
+            f"E = {eta_signature}; "
+            f"3(mean_spatial - mean_temporal) = {spatial_temporal_contrast(eta_signature)}"
+        ),
     )
 
     print()

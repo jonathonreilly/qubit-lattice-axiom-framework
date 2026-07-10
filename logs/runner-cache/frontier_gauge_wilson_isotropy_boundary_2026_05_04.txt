@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py
-runner_sha256: dd411687cae540d9a4524b91fbc4bb6663624c48eee90aa66164d6d9d48f3685
+runner_sha256: 97cc2cd693c5dfc9becc6b427160e0c7121f9b8f429d88d700341942060259ca
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -42,7 +42,8 @@ Part 2: staggered eta-product orientation check
   zt values: [-1]
   [PASS] all six staggered plaquette orientation products have the same sign
          orientation value sets = {(0, 1): {-1}, (0, 2): {-1}, (0, 3): {-1}, (1, 2): {-1}, (1, 3): {-1}, (2, 3): {-1}}
-  [PASS] the eta-product check supplies no spatial/temporal gauge-coupling split
+  [PASS] the eta orientation signature has no anisotropic component or spatial/temporal split
+         E = {(0, 1): -1, (0, 2): -1, (0, 3): -1, (1, 2): -1, (1, 3): -1, (2, 3): -1}; 3(mean_spatial - mean_temporal) = 0
 
 ==============================================================================
 SUMMARY: PASS=19 FAIL=0

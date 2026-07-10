@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 931 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 23 |
-| unaudited | 1849 |
+| unaudited | 1848 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1337 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2194 |
+| `unaudited` | 2193 |
 
 | claim_type | count |
 |---|---:|
@@ -1532,6 +1532,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -16624,6 +16625,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Xi_R^(0) := (Theta_R^(0)(e0) - Theta_R^(0)(s/sqrt(6))) / (delta_A1(e0) - delta_A1(s/sqrt(6))).  _(class `A`)_
 - **chain closes:** True — The cited retained_bounded dependency supplies the exact seven-site A1 support scalar and the bounded affine gamma_E/gamma_T staging surface to stated tolerances. The note derives only the finite-difference/affine-response Jacobian over those inputs and explicitly excludes an exact tensor observable, endpoint coefficient theorem, support-to-slice time coupling, and GR closure.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained bounded inputs: the denominator is the retained support scalar endpoint gap, and the numerator is the current bounded Theta_R^(0) endpoint pair. The runner computes Xi_R^(0) from live support_delta and gamma_pair endpoint values, reports PASS=7 FAIL=0, and checks canonical plus audited-family affine compatibility to the note's tolerances. The result is clean only inside the bounded staging scope; citing it as an exact tensor observable, exact endpoint coefficient theorem, time-coupling law, or GR closure would exceed the audited claim.
+- **auditor confidence:** high
+
+### `s3_time_primitive_chain_note`
+
+- **Note:** [`S3_TIME_PRIMITIVE_CHAIN_NOTE.md`](../../docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact Route-2 endpoint algebra and the restricted-class non-selection no-go, with P_R and Xi_R pinned only under the three named supplied premises and P4 excluded.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-s3_time_primitive_chain_-043`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Under ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT, the normalized readout is P_R^prem = [[1,0,21/4,0],[0,-2,0,2]], which conditionally pins Xi_R^prem.  _(class `A`)_
+- **chain closes:** True — The displayed matrix, endpoint images, coupling family, and no-go boundary follow exactly at the stated conditional scope. The packet does not close an unconditional readout theorem because none of the three endpoint premises is derived.
+- **rationale:** Issue: ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT are supplied premise values rather than consequences of the cited authorities. Why this blocks: the runner consumes those values and verifies exact consistency algebra, but does not derive the endpoint ratios or uniquely select P_R. Repair target: provide a retained derivation of the missing E-center/source/readout primitive, together with retained derivations or approved premises for the T-side inputs. Claim boundary until fixed: the endpoint identities and restricted-class no-go are supported, while P_R and Xi_R remain conditional on the named premises.
+- **open / conditional deps cited:**
+  - `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`
+  - `QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`
 - **auditor confidence:** high
 
 ### `s3_time_tensor_build_memo`

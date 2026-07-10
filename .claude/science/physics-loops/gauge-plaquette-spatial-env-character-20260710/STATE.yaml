@@ -41,7 +41,8 @@ review_findings:
   - "The static 80-plaquette coefficient identities and computations are valid bounded support."
   - "A doubled-slice literal-deletion character matrix localizes but does not retire the compression-ordering blocker."
 review_disposition: pass
-pr_status: ready_to_open
+science_commit: a2fcb7f31
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5142"
 lock_status: "dedicated worktree; shared default lock path was inaccessible, so no shared-checkout lock is used"
 next_exact_action: "construct the full marked-class compression P_cls T_beta P_cls^*, perform algebraic M and D_loc stripping after compression, and compute its covariance-resolved low-rank matrix before comparing with the static rho packet"
 stop_condition: "bounded salvage passes re-review and is committed/pushed for independent review; retained-grade target remains open"

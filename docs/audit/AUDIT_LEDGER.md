@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 28 |
-| unaudited | 1735 |
+| unaudited | 1734 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 122 |
+| ~~audited_conditional~~ | 123 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -71,12 +71,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1363 |
-| `audited_conditional` | 122 |
+| `audited_conditional` | 123 |
 | `audited_decoration` | 65 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 32 |
-| `unaudited` | 2080 |
+| `unaudited` | 2079 |
 
 | claim_type | count |
 |---|---:|
@@ -1594,6 +1594,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -16483,6 +16484,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For any finite law P on record words and its reversed law P^R(w)=P(reverse(w)), the count pushforward is invariant under reversal: count_* P = count_* P^R.  _(class `A`)_
 - **chain closes:** True — The reversal map is a bijection on every count fiber, so count(w)=count(reverse(w)) and count_*P=count_*P^R follow by change of variables. Therefore any statistic, event, p-value, or certificate that factors only through counts has identical distribution under the two opposite orientations and cannot decide between them.
 - **rationale:** Formula inventory checked: w -> wv, count(wv)=count(w)+count(v), count(w)=count(reverse(w)), P^R(w)=P(reverse(w)), count_*P=count_*P^R, I(count(w))=I(count(reverse(w))), and transitions(reverse(w))=transpose(transitions(w)) are all finite-word identities. The independent proof is that reversal preserves letter multiplicities while reversing ordered adjacent pairs, so count-only data cannot distinguish P from P^R although transition or endpoint data can. The runner source supports this with exact finite enumeration and Fraction-valued law checks plus source-anchor and firewall-flag checks; it does not import tuned external numerics or a hidden comparator. N1-N8 no-go stress test passes for the narrowed count-only scope because routes through a supplied boundary, clock, oriented law, transition data, or production kernel remain explicitly outside the claim.
+- **auditor confidence:** high
+
+### `post_record_character_path_channel_weight_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_CHARACTER_PATH_CHANNEL_WEIGHT_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact normalization and multiplicative composition of finite hand-supplied path, channel, and character weights, together with a read-only scan reporting 21 current character/path/channel ledger rows.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00083-post_record_character_path_c`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** A supplied finite carrier with nonnegative local weights of positive total can be normalized exactly, with path weights composing multiplicatively, to form a finite path/channel/character weight packet.  _(class `A`)_
+- **chain closes:** False — The finite arithmetic implication closes for the supplied examples, but no restricted authority derives the carrier, weights, or physical selector from Record. The note also claims coverage of 10 rows while the completed runner certifies 21, leaving its stated coverage certificate inconsistent.
+- **rationale:** The Fraction-based normalization and path-product calculations are genuine class-A checks, not a first-principles framework computation. The carrier and weights are supplied inputs, while the firewall conclusions are hard-coded false flags and do not derive a physical measure or rule. The 10-versus-21 row-count mismatch is additional evidence that the source certificate is stale, although the bounded finite arithmetic remains valid.
 - **auditor confidence:** high
 
 ### `post_record_clock_rate_interface_2026-06-06`

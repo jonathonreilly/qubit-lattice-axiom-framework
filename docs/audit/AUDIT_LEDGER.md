@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 933 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1831 |
+| unaudited | 1830 |
 | audit_in_progress | 10 |
 | meta | 345 |
-| ~~audited_numerical_match~~ | 8 |
+| ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
 | ~~audited_conditional~~ | 71 |
 | ~~audited_failed~~ | 3 |
@@ -67,9 +67,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 71 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
-| `audited_numerical_match` | 8 |
+| `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2176 |
+| `unaudited` | 2175 |
 
 | claim_type | count |
 |---|---:|
@@ -1643,6 +1643,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | weak | codex-current | G | - |
+| `lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26` | open_gate | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.6 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -12473,6 +12474,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** At H=0.25, the T_phys=7.5 kubo_true fit gives slope -1.4356 on b in {3,4,5,6}, essentially matching the retained T_phys=15 slope near -1.43 while the finite-path formula predicts -1.7336 at T_phys=7.5.  _(class `C`)_
 - **chain closes:** True — The primary runner recomputes the T_phys=7.5 kubo_true values from the DAG/Kubo propagator and the helper source does not hard-code the contested short-path slope. The T_phys=15 comparison slope is supplied by a retained_no_go cited authority, and no open positive layer-weighted bridge is needed to falsify the surrogate prediction.
 - **rationale:** Independent recomputation of the displayed finite-path formula slopes gives -1.7336, -1.4188, and -1.0776 for L_eff=5, 10, and 30, matching the packet. Independently fitting the stdout T_phys=7.5, H=0.25 kubo_true values gives slope -1.4356 with R2=0.9985, also matching the packet. The runner source instantiates the lattice/DAG propagation and first-order Kubo calculation rather than reading the contested value from another note. The audited conclusion is limited to falsifying this finite-path surrogate's regime-transition prediction, not deriving the unknown positive mechanism for the observed slope.
+- **auditor confidence:** high
+
+### `lepton_mass_scale_mw_over_256_empirical_open_gate_note_2026-05-26`
+
+- **Note:** [`LEPTON_MASS_SCALE_MW_OVER_256_EMPIRICAL_OPEN_GATE_NOTE_2026-05-26.md`](../../docs/LEPTON_MASS_SCALE_MW_OVER_256_EMPIRICAL_OPEN_GATE_NOTE_2026-05-26.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** The audited claim is only that the chosen m_W/256 scale is a sharp empirical charged-lepton comparator; no derivation of m_W, 1/256, delta=2/9, or the lepton masses was audited.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-lepton_mass_scale_mw_ove-078`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Using imported PDG charged-lepton masses and PDG m_W, a_lepton^2 and m_W/256 agree to approximately 0.033%.  _(class `G`)_
+- **chain closes:** True — The runner genuinely calculates the stated offsets from its explicit empirical inputs, and the reported values agree with the source note. The structural identification of 1/256 as a physical lepton scale remains open, but that identification is explicitly outside the claim.
+- **rationale:** The runner performs real comparator arithmetic rather than merely printing the expected result, but it hard-codes PDG masses, m_W, delta=2/9, and the selected exponent-four scale. The retained bounded authority establishes only 4^4=256; it does not derive why its reciprocal controls the lepton scale. The observed agreement is therefore a class-G numerical match, consistently presented as an empirical open gate rather than a theorem.
 - **auditor confidence:** high
 
 ### `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10`

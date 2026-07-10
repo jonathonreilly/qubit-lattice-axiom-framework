@@ -20,12 +20,44 @@ truth surface.
 
 ## Current State
 
-As of `2026-04-18`, there are **no live repo-governance or claim-surface
-blockers** waiting in the review queue. The remaining items are science-facing
-open lanes rather than review-hygiene debt.
+As of `2026-07-10`, the queue includes the four runner/cache audit-readiness
+items below together with the existing science-facing open lanes. The runner
+failures are recorded honestly; no claim or content gate is weakened to clear
+them.
 
 Current science/open-lane follow-ups:
 
+- `2026-07-10-record-p1-dependency-audit-drift`
+  Scope: `RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md` and
+  `scripts/frontier_record_p1_dependency_audit_verifier.py`.
+  Finding: the live dependency graph no longer matches the frozen June 4
+  counts/classification; the runner now fails honestly, and PR #5115 refreshes
+  its previously stale-green cache without changing the content gate.
+  Disposition: `fix on main`.
+- `2026-07-10-acphilambda-retirement-rematch-drift`
+  Scope: `ACPHILAMBDA_RETIREMENT_BASIS_REMATCH_AND_CLAIM_SURFACE_NOTE_2026-07-06.md`
+  and `scripts/acphilambda_retirement_basis_rematch_claim_surface_2026_07_06.py`.
+  Finding: seven of the sixteen rematch basis rows are currently non-retained
+  and the custody-capstone structure/value split fails; PR #5115 refreshes the
+  previously stale-green cache but does not weaken or rewrite the gate.
+  Disposition: `science-needed`.
+- `2026-07-10-runner-cache-input-freshness`
+  Scope: `scripts/runner_cache.py`, `scripts/codex_audit_runner.py`, and runners
+  whose results depend on mutable notes, registries, or ledger data.
+  Finding: cache freshness is keyed only to runner-source SHA, so a cache can
+  remain classified `fresh` after a load-bearing input changes and can be
+  consumed before a live fallback; add a dependency-aware input fingerprint or
+  equivalent manifest design.
+  Disposition: `fix on main`.
+- `2026-07-10-residual-tier-a-runner-pin-sweep`
+  Scope: eight older `acphilambda_*` runners that still index the retired AC
+  entry under live `derivation_targets`, plus
+  `audit_companion_observable_principle_p2_phase_blindness_sector_resolved_2026_06_04.py`.
+  Finding: the sibling pin sweep for PR #5115 found additional pre-existing
+  post-retirement crashes and one stale Tier-A count-of-two gate outside the
+  four-runner repair slice; repoint them to the retired/owner-governed registry
+  boundary without weakening their content checks.
+  Disposition: `fix on main`.
 - irregular off-lattice sign lane: portability beyond the bounded centered
   core-packet surface remains open
 - periodic 2D torus diagnostics: nearby torus probes still need code audit

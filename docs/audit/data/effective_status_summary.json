@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2035,
-    "decoration": 63,
-    "meta": 351,
-    "no_go": 481,
-    "open_gate": 183,
-    "positive_theorem": 602
+    "bounded_theorem": 2039,
+    "decoration": 72,
+    "meta": 355,
+    "no_go": 483,
+    "open_gate": 184,
+    "positive_theorem": 600
   },
   "cycle_examples": [
     [
@@ -33,11 +33,11 @@
   ],
   "cycles_detected": 10,
   "effective_status_counts": {
-    "audit_in_progress": 9,
-    "audited_conditional": 91,
-    "audited_failed": 5,
+    "audited_conditional": 145,
+    "audited_failed": 16,
     "audited_numerical_match": 9,
-    "audited_renaming": 27,
+    "audited_renaming": 36,
+    "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 1,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note": 1,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 6,
@@ -52,6 +52,7 @@
     "decoration_under_hierarchy_matsubara_decomposition_note": 1,
     "decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": 1,
     "decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": 1,
+    "decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": 1,
     "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 3,
     "decoration_under_koide_dweh_cyclic_compression_note_2026-04-18": 1,
     "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18": 1,
@@ -60,35 +61,42 @@
     "decoration_under_mirror_mutual_information_chokepoint_note": 1,
     "decoration_under_moving_source_retarded_portability_note": 1,
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
+    "decoration_under_observable_principle_from_axiom_note": 1,
+    "decoration_under_observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": 1,
     "decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_plaquette_self_consistency_note": 1,
     "decoration_under_pmns_hw1_source_transfer_boundary_note": 1,
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
     "decoration_under_quark_route2_exact_readout_map_note_2026-04-19": 1,
+    "decoration_under_realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02": 1,
     "decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": 1,
     "decoration_under_strong_cp_theta_zero_note": 1,
     "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": 4,
     "decoration_under_three_generation_observable_theorem_note": 4,
     "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
-    "meta": 345,
-    "open_gate": 24,
-    "retained": 195,
-    "retained_bounded": 939,
-    "retained_no_go": 210,
-    "retained_pending_chain": 9,
-    "unaudited": 1795
+    "meta": 347,
+    "open_gate": 29,
+    "retained": 199,
+    "retained_bounded": 947,
+    "retained_no_go": 215,
+    "retained_pending_chain": 13,
+    "unaudited": 1715
   },
-  "retained_pending_chain_count": 9,
+  "retained_pending_chain_count": 13,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
     "gate_b_context_independence_no_go_note_2026-06-17",
     "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",
     "gravity_clean_derivation_note",
+    "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01",
     "koide_mru_demotion_note_2026-04-20",
     "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
     "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",
-    "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+    "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22",
+    "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
+    "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20"
   ]
 }

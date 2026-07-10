@@ -159,3 +159,15 @@ python3 scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py
 ```
 
 Measured local close: `TOTAL: PASS=134 FAIL=0`.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01](ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md)
+- [acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01](ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md)
+- [acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02](ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02.md)
+- [acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02](ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md)
+- [acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02](ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md)
+- [acphilambda_projective_equivariance_k_odd_trace_2026-07-02](ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md)
+- [acphilambda_k_even_registration_correction_registered_pattern_2026-07-02](ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md)

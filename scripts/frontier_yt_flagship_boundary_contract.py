@@ -8,10 +8,15 @@ authority contract:
 * the note is a supporting boundary note, not sole lane authority;
 * the current central values and residual budgets agree with the YT authority
   notes on ``origin/main``;
-* the positive statements stay scoped to derived central values and exact
-  lattice-scale support;
+* the positive statements stay scoped to an exact canonical-bare core and a
+  conditional Planck-surface / low-energy package;
 * the note explicitly forbids fully-retained UV-to-IR closure, a native
-  continuum-limit theorem, and a direct-lattice low-energy bypass claim.
+  continuum-limit theorem, and a direct-lattice low-energy bypass claim;
+* the zero-import and flagship authorities condition the Planck-surface lift
+  on shared dressing/readout and the low-energy package on the additional
+  underived ``kappa_Y = 0`` selector;
+* the residual-budget note carries those same conditions on its central-value
+  propagation.
 
 It deliberately does not certify effective retained status.  Independent
 audit owns that decision.
@@ -119,23 +124,31 @@ def main() -> int:
     mt3 = decimal_after("m_t(pole)", note)
     check("flagship y_t(v) central value is 0.9176", yt == 0.9176, str(yt))
     check("flagship 3-loop pole-mass central value is 173.10 GeV", mt3 == 173.10, str(mt3))
-    check("flagship note carries retained 2-loop support value 172.57 GeV", "172.57 GeV" in note)
+    check("flagship note carries conditional 2-loop value 172.57 GeV", "172.57 GeV" in note)
     check("zero-import authority agrees on y_t(v)=0.9176", "`0.9176`" in zero)
     check("zero-import authority agrees on 172.57/173.10 GeV mass pair", "172.57 GeV" in zero and "173.10 GeV" in zero)
     check("flagship note states standard-method residual budget about 1.95%", "~1.95%" in note)
     check("zero-import authority carries same standard-method residual budget", "~1.95%" in zero)
 
-    print("\nPart 3: exact/support ingredients are present")
-    exact_section = section(note, "## What is exact")
+    print("\nPart 3: exact/conditional ingredients are scoped")
+    exact_section = section(note, "## What is exact and what is conditional")
+    exact_section_n = norm(exact_section)
     check(
-        "exact section contains Ward ratio identity",
-        "y_t(M_Pl) / g_s(M_Pl) = 1 / sqrt(6)" in exact_section,
+        "scope section contains exact canonical-bare Ward ratio",
+        "y_t_bare / g_bare = 1 / sqrt(6)" in exact_section,
     )
     check(
         "exact section contains same-surface alpha_s/g_s input",
-        "alpha_s" in exact_section and "g_s(M_Pl)" in exact_section and "plaquette chain" in exact_section,
+        "alpha_s" in exact_section_n
+        and "g_s(M_Pl)" in exact_section_n
+        and "plaquette chain" in exact_section_n,
     )
-    check("exact section contains color projection sqrt(8/9)", "sqrt(8/9)" in exact_section)
+    check(
+        "scope section makes sqrt(8/9) conditional on kappa_Y=0",
+        "sqrt(8/9)" in exact_section
+        and "conditional on the underived" in exact_section
+        and "kappa_Y = 0" in exact_section,
+    )
     check(
         "exact section contains hierarchy/electroweak matching scale",
         "hierarchy / electroweak matching scale" in exact_section,
@@ -162,6 +175,19 @@ def main() -> int:
                 "standard pole-mass conversion",
             ],
         ),
+    )
+    check(
+        "flagship status scopes the physical package as conditional",
+        "**Status:** supported canonical-bare Ward-ratio core + conditional" in note
+        and "Planck-surface and low-energy package" in note,
+    )
+    check(
+        "live primary route keeps both physical lifts conditional",
+        "conditional Planck-surface lift" in limited
+        and "conditional connected-trace specialization" in limited
+        and "kappa_Y = 0" in limited
+        and "derived Planck-surface lift" not in limited
+        and "derived color projection" not in limited,
     )
     check(
         "limited section refuses framework-internal theorem status",
@@ -191,6 +217,34 @@ def main() -> int:
         )
         and "from `M_Pl` to `v`" in zero_n,
     )
+    check(
+        "zero-import authority demotes sqrt(8/9) to a conditional connected-trace specialization",
+        "conditional connected-trace specialization" in zero_n,
+    )
+    check(
+        "zero-import authority keeps the exact core on the canonical-bare ratio",
+        "y_t_bare / g_bare = 1 / sqrt(6)" in zero_n,
+    )
+    check(
+        "zero-import authority makes the Planck-surface lift conditional",
+        "planck-surface ratio is conditional on the shared-dressing" in zero_n.lower(),
+    )
+    check(
+        "zero-import authority conditions the low-energy package on the underived selector",
+        "underived Yukawa-side selector `kappa_Y = 0`" in zero_n,
+    )
+    check(
+        "zero-import authority carries a conditionality section for both package lifts",
+        "## Conditionality of the Planck-surface and low-energy package" in zero,
+    )
+    check(
+        "flagship cannot-claim firewall covers the Planck-surface readout",
+        "unconditional physical Planck-surface readout" in norm(cannot),
+    )
+    check(
+        "flagship cannot-claim firewall covers kappa_Y and sqrt(8/9)",
+        "`kappa_Y = 0`" in cannot and "`sqrt(8/9)`" in cannot,
+    )
 
     print("\nPart 5: bridge cross-check budget alignment")
     check("flagship note preserves conservative Schur budget 1.2147511%", "1.2147511%" in note)
@@ -200,6 +254,12 @@ def main() -> int:
     check(
         "budget note says Schur budget is not live primary classification",
         "no longer the package's load-bearing qualifier" in budget,
+    )
+    check(
+        "budget note conditions central values on both named bridges",
+        "conditional quantitative rows" in budget_n.lower()
+        and "planck-surface ward lift requires shared dressing and physical readout" in budget_n.lower()
+        and "`kappa_Y = 0`" in budget,
     )
     check(
         "flagship note classifies Schur route as independent cross-check",
@@ -221,6 +281,7 @@ def main() -> int:
     )
 
     print("\nPart 7: no hidden observed-input promotion")
+    paper_safe_n = norm(section(note, "## Paper-safe claim").replace(">", "")).lower()
     forbidden_positive_phrases = [
         "fully retained from `M_Pl` to `v`.",
         "framework-internal continuum-limit theorem on this exact composite surface has been proved.",
@@ -232,13 +293,13 @@ def main() -> int:
             phrase not in note_n or phrase in norm(cannot),
         )
     check(
-        "paper-safe wording keeps zero external SM observables on framework side",
-        "zero external SM observables on the framework side" in note,
+        "paper-safe wording distinguishes fitted/observational SM inputs",
+        "without fitted or observational sm inputs on the framework side" in paper_safe_n,
     )
     check(
-        "paper-safe wording calls current values central values, not retained closure",
-        "`y_t` and `m_t` central" in norm(section(note, "## Paper-safe claim"))
-        and "values are strong and near observation" in norm(section(note, "## Paper-safe claim"))
+        "paper-safe wording makes current central values conditional, not retained closure",
+        "conditional on an accepted planck-surface" in paper_safe_n
+        and "underived yukawa-side selector `kappa_y = 0`" in paper_safe_n
         and "fully retained" not in section(note, "## Paper-safe claim"),
     )
 

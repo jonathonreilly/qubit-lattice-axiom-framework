@@ -46,19 +46,18 @@ realized state is registered data, not derivation output.
 
 ## Why It Is A Primitive
 
-The framework baseline, Lattice + Quantum + Record, does not select which
-law-admissible state is realized. Any state-dependent quantity from that
-structural core is undetermined until one realized state is supplied.
-
-That reference is irreducible as a laws-versus-state distinction. A realized
-state cannot be derived from state-blind laws, and treating this supplied
-state as a Tier-A admitted derivation target incorrectly bounds lanes whose
+This declaration supplies one law-admissible realized-state reference. The
+Lattice + Qubit + Admissibility + Record baseline is not used here as a
+state-selection theorem, and no state selection is claimed. The primitive
+records the laws-versus-state interface without treating the supplied state as
+a Tier-A admitted derivation target, which would incorrectly bound lanes whose
 structural content is otherwise clean.
 
 ## What This Does Not Do
 
 - It does not add or amend an axiom. The minimal framework baseline remains
-  the three named axioms in `docs/MINIMAL_AXIOMS_2026-06-05.md`.
+  the [four named axioms](MINIMAL_AXIOMS_2026-06-29.md): Lattice,
+  Qubit, Admissibility, and Record.
 - It does not supply a state, state-selection rule, averaging over
   alternatives, measure, weighting, probability rule, typicality claim,
   genericity claim, preferred state, default state, boundary condition,

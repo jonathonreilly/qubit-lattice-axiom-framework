@@ -33,11 +33,13 @@ Beyond the axioms, the complete foundation surface is deliberately small:
   interface (a slot for one law-admissible realized state, never a state
   selection). Registered in
   [`docs/audit/data/axiom_premise_nodes.json`](docs/audit/data/axiom_premise_nodes.json).
-- **Tier-A admitted derivation targets (2):** `AC_phi_lambda` and the
-  strong-CP `theta`, tracked with their no-go portfolios in
+- **Tier-A admitted derivation targets (0):** the former `AC_phi_lambda` and
+  strong-CP `theta` targets are retired. Their historical statements, no-go
+  portfolios, and retirement records remain in
   [`docs/audit/data/tier_a_admissions.json`](docs/audit/data/tier_a_admissions.json).
-  Dependents of a Tier-A admission remain bounded until it is retired by a
-  retained derivation.
+  The residual owner-governed premise boundaries are recorded separately in
+  [`docs/audit/data/owner_governed_premise_nodes.json`](docs/audit/data/owner_governed_premise_nodes.json);
+  they are not axioms, primitives, or theorem derivations.
 - **Scope condition (not a premise):** the past-hypothesis low-entropy
   magnitude; results that need it are explicit conditionals.
 
@@ -67,12 +69,14 @@ Use these entrypoints in order:
 
 ## Current Status
 
-The repo is in an audit-transition state, deepened by the 2026-06-29
-foundation reset: replacing the three-axiom base with the four-axiom base
-intentionally invalidated every audit that rested directly on the axiom text
-(the premise-hash guard enforces this), and the affected rows are draining
-back through the independent audit lane. Expect a sizable unaudited cohort
-until that re-audit completes; the generated
+The repo remains in an audit-transition state. The 2026-06-29 foundation
+reset from the three-axiom base to the four-axiom base invalidated every audit
+that rested directly on the old axiom text; the premise-hash guard enforced
+that reset. Some direct `minimal_axioms` dependents have since received
+post-reset audits, while many remain unaudited or in progress. A much larger
+legacy cohort still predates the reset, but those rows are not automatically
+axiom-dependent: their scoped ledger entries and citation edges determine
+whether re-audit is required. The generated
 [`docs/repo/FRONT_DOOR_STATUS.md`](docs/repo/FRONT_DOOR_STATUS.md) always has
 the current counts, refreshed by `bash docs/audit/scripts/run_pipeline.sh`.
 

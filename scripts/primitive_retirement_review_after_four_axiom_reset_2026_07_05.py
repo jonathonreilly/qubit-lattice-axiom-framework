@@ -127,8 +127,12 @@ def main() -> int:
     check("scale source forbids dimensionless content", "zero dimensionless" in scale)
     check("scale source does not derive a/l_P=1", "It does not assert `a/l_P = 1` as a derived theorem." in scale)
     check("kinetic source declares c_t=c_s", "c_t = c_s" in kinetic)
-    check("kinetic source says baseline does not fix ratio", "does **not** fix the kinetic\nisotropy `c_t = c_s`" in kinetic)
-    check("kinetic source says scale fixes no dimensionless ratio", "the scale reference fixes no\ndimensionless ratio" in kinetic)
+    check("kinetic source says c_t = c_s is supplied rather than derived", "`c_t = c_s` is supplied rather than derived" in kinetic)
+    check(
+        "kinetic source lists scale reference among structures not used as a derivation",
+        "scale reference, and records' causal order" in kinetic
+        and "are not used here as a derivation of that equality" in kinetic,
+    )
     check("realized source says laws do not pick state", "The laws do not pick the state; the world does" in realized)
     check("realized source says pointwise evaluation only", "Derivations may evaluate at the realized state, pointwise." in realized)
     check("realized source forbids state-selection content", "It does not supply a state, state-selection rule" in realized)
@@ -153,25 +157,40 @@ def main() -> int:
 
     print("Review-note conclusion checks")
     check("review note states no primitive is presently retireable", "No primitive is presently retireable" in note)
+    check("review note uses canonical meta claim type", "**Claim type:** meta" in note and "**Type:** meta" in note)
     check("review note keeps scale primitive", "`scale_reference_primitive` | keep" in note)
     check("review note keeps kinetic primitive but marks it targetable", "`kinetic_isotropy_primitive` | keep, but targetable" in note)
     check("review note keeps realized-state primitive", "`realized_state_primitive` | keep" in note)
     check("review note forbids registry edit from this review", "No registry edit is warranted" in note)
     check("review note records kinetic bridge stack needed for retirement", "the B-W/OS0 readout rule" in note and "single-tick kernel" in note)
-    check("review note records hygiene debt separately", "hygiene issues, not retirement evidence" in note)
+    check(
+        "review note records completed hygiene repairs without science reclassification",
+        "Hygiene Repairs Verified On 2026-07-10" in note
+        and "completed hygiene repairs are not retirement evidence" in note,
+    )
     check("review note has current-main posture line", "Current-main posture (2026-07-06)" in note)
     check("review note records live Tier-A zero posture", "Tier-A count\nzero" in note or "Tier-A count zero" in note)
     check("review note says premise registries are not reopened", "`axiom_premise_nodes.json`" in note and "does not reopen, modify, or\nre-grade either Tier-A retirement record" in note)
+    for idx in range(1, 9):
+        check(f"review note carries N{idx} no-go-discipline section", f"**N{idx}" in note)
+    check("N1 records at least five attempted routes", note.count("`ATTEMPTED`") >= 5)
+    check("N2 records the collapsed pairwise independence table", "closing first closes second?" in note and "dimensionful scale / kinetic-form ratio" in note)
+    check("N3 classifies registered and supplied phrase hits", "cited machine-registry authority" in note and "cited primitive-source boundary" in note)
+    check("N4 distinguishes exact, support-only, and partial residual matches", "support-only witness" in note and "route map only, not a witness" in note)
     print()
 
     print("Hygiene diagnostic checks")
     stale_count_check = "Tier-A registry genuine count remains two" in scale_runner
-    check("scale boundary runner stale Tier-A count diagnostic is detected", stale_count_check)
+    current_count_check = "Tier-A registry genuine count is zero after the 2026-07-05 retirements" in scale_runner
+    check(
+        "scale boundary runner carries the current Tier-A count gate",
+        current_count_check and not stale_count_check,
+    )
     old_baseline_refs = [
         p.name for p, text in [(SCALE, scale), (KINETIC, kinetic), (REALIZED, realized)]
         if re.search(r"three named axioms|Lattice \+ Quantum \+ Record|MINIMAL_AXIOMS_2026-06-0[45]", text)
     ]
-    check("primitive source notes still need four-axiom narrative scrub", bool(old_baseline_refs), ", ".join(old_baseline_refs))
+    check("primitive source notes carry no pre-reset baseline narrative", not old_baseline_refs, ", ".join(old_baseline_refs))
     print()
 
     print("Verdicts")

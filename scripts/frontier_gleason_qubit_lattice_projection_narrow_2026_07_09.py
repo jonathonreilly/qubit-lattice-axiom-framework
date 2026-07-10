@@ -11,6 +11,7 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md"
+SUBSTRATE = ROOT / "docs/QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md"
 
 PASS = 0
 FAIL = 0
@@ -50,14 +51,18 @@ txt = NOTE.read_text(encoding="utf-8")
 flat = " ".join(txt.split())
 
 check("A1 raw trace-form needle", "m(P) = Tr" in txt)
-check("A1 raw Born-rule needle", "Born rule" in txt)
+check(
+    "A1 physical Born/readout identification remains outside the claim",
+    "does **not** identify the projections as physical measurement outcomes" in flat
+    and "framework-generated physical probability" in flat,
+)
 check(
     "A2 finite-region Hilbert-space needle",
     "specific Hilbert space `H_Λ = ⊗_{x ∈ Λ} ℂ²` for finite `Λ ⊂ Z^3`" in flat,
 )
 check(
-    "A3 unique Born-form needle",
-    "Reading off Born form `p(P) = Tr(σ P)` as the unique probability measure on the qubit-lattice projection lattice."
+    "A3 unique trace-form representation needle",
+    "Deriving the unique trace-form representation `m(P) = Tr(σ P)` for measures satisfying the stated mathematical hypotheses."
     in flat,
 )
 check("A4 live axiom-memo link present", "](MINIMAL_AXIOMS_2026-06-29.md)" in flat)
@@ -66,6 +71,14 @@ check(
     "A5 joint-presentation tensor-substrate bridge link present",
     "](QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md)"
     in flat,
+)
+substrate_text = SUBSTRATE.read_text(encoding="utf-8") if SUBSTRATE.exists() else ""
+check(
+    "A5 linked tensor-substrate dependency resolves with its bounded input surface",
+    SUBSTRATE.exists()
+    and "**Type:** bounded_theorem" in substrate_text
+    and "supplied commuting joint presentation" in substrate_text.lower()
+    and "minimality selection `m = 1`" in substrate_text,
 )
 forbidden_readout_vocabulary = ("log-scale response", "z W'", "zW'")
 check(

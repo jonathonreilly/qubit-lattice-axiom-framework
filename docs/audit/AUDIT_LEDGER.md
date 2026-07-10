@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1780 |
+| unaudited | 1779 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -44,6 +44,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
 | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | 1 |
 | `decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | 1 |
+| `decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | 1 |
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 3 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
 | `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | 1 |
@@ -69,16 +70,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1350 |
 | `audited_conditional` | 103 |
-| `audited_decoration` | 61 |
+| `audited_decoration` | 62 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2125 |
+| `unaudited` | 2124 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2034 |
-| `decoration` | 63 |
+| `bounded_theorem` | 2033 |
+| `decoration` | 64 |
 | `meta` | 352 |
 | `no_go` | 481 |
 | `open_gate` | 183 |
@@ -1603,6 +1604,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_zero_import_authority_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
+| `acphilambda_cycle_flux_transport_face_inventory_2026-07-01` | decoration | ~~audited_decoration~~ | `decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | cross_family | codex-gpt-5.6 | A | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
 | `charged_lepton_koide_cone_algebraic_equivalence_note` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | weak | codex-current | A | `three_generation_observable_theorem_note` |
@@ -1871,6 +1873,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md`
   - `ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md`
   - `ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md`
+- **auditor confidence:** high
+
+### `acphilambda_cycle_flux_transport_face_inventory_2026-07-01`
+
+- **Note:** [`ACPHILAMBDA_CYCLE_FLUX_TRANSPORT_FACE_INVENTORY_2026-07-01.md`](../../docs/ACPHILAMBDA_CYCLE_FLUX_TRANSPORT_FACE_INVENTORY_2026-07-01.md)
+- **claim_type:** `decoration`
+- **claim_scope:** The retained C3 (1,2) fixed-locus sums admit an exact cycle-Laplacian Green-trace and per-site-diagonal presentation; the physical flux-equals-return wall was not audited as derived.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00036-acphilambda_cycle_flux_trans`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the forced conjugate pair, each fixed-point denominator is the modulus-squared nonzero cycle-Laplacian eigenvalue, yielding S_sum(1,2) = Tr L_3^+ = 2/3 and L3(1,2) = (L_3^+)vv = 2/9.  _(class `A`)_
+- **chain closes:** True — Exact algebra and pseudoinverse computations establish the fixed-point/Green correspondence from the retained forced-pair result. They do not derive the separately acknowledged physical identification Phi = Tr L^+.
+- **rationale:** The load-bearing contribution is an algebraic re-expression of one retained parent result using standard cycle-graph spectral mathematics, with no external-comparator check. The runner genuinely computes the fixed-point and pseudoinverse identities, but its physical-wall block assigns delta = 2/9 and then checks consistency rather than deriving that assignment. Consequently the exact transport face is decoration-grade, while the note correctly leaves the physical wall open.
+- **decoration parent:** `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`
 - **auditor confidence:** high
 
 ### `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12`

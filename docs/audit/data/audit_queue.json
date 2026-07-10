@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 387,
     "high": 265,
-    "leaf": 749,
+    "leaf": 748,
     "medium": 498
   },
   "cycle_break_target_count": 10,
@@ -35495,32 +35495,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "acphilambda_cycle_flux_transport_face_inventory_2026-07-01",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-        "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
-        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_CYCLE_FLUX_TRANSPORT_FACE_INVENTORY_2026-07-01.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/acphilambda_cycle_flux_transport_face_inventory_2026_07_01.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "acphilambda_defect_identity_unit_rescale_obstruction_2026-07-01",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -56890,6 +56864,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 192,
-  "total_pending": 1899
+  "ready_count": 191,
+  "total_pending": 1898
 }

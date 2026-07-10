@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 15 |
-| `audited_clean` | 1340 |
+| `audit_in_progress` | 14 |
+| `audited_clean` | 1341 |
 | `audited_conditional` | 134 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 38 |
@@ -152,7 +152,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-current | C | - |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-current | B | - |
 | `lattice_nn_light_cone_note` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.6 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
@@ -889,6 +888,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lp_two_band_exact_completion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
+| `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -13305,6 +13305,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Contracting the canonical isometry with the apparatus outcome bra gives K_r=P_r, while orthogonality reduces a twisted operator to K_r†K_r=Σ_s|⟨r|V_A|s⟩|²P_s.  _(class `A`)_
 - **chain closes:** True — The canonical identity and the label-mixing result follow directly from contraction, projector orthogonality, completeness, and finite-dimensional isometry extension. No measurement axiom, empirical input, or unresolved authority is needed for this explicitly conditional scope.
 - **rationale:** The load-bearing steps are genuine finite-dimensional algebraic closures rather than definitions, renamings, or imported numerical matches. The supplied runner source actually constructs the projectors, isometry, Kraus operators, twists, and zero-projector cases using exact symbolic and independent numerical calculations, with 53 checks passing and no hard-coded contested conclusion. The randomized tests are supplementary; the inline orthogonality argument proves the general scoped statement.
+- **auditor confidence:** high
+
+### `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For a finite-dimensional projective measurement, the explicitly defined canonical premeasurement isometry yields K_r=P_r and hence K_P†EK_P=PEP; a system-side unitary twist UP preserves the first-outcome effect while rotating subsequent effects.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00017-lsp_projective_derivation_fr`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Substituting the explicitly constructed premeasurement isometry into K_r = ⟨r|U_int(𝟙⊗|0⟩) gives K_r = Σ_{r'}P_{r'}δ_{r,r'} = P_r.  _(class `A`)_
+- **chain closes:** True — The projective-measurement identities make the displayed map an isometry, finite dimensionality permits a unitary extension, and direct contraction with the apparatus outcome basis gives K_r=P_r. The system-unitary twist and sequential-composition statements then follow algebraically.
+- **rationale:** The audited result is a genuine algebraic closure from the supplied projective-measurement hypotheses and explicit dilation construction, rather than a definition of the Kraus operator. The accepted minimal-axiom authority supplies the finite qubit-region setting and creates no retention downgrade. No runner or runner source was provided, so this judgment rests on the complete inline proof. The broader statement that an arbitrary apparatus rotation V_A preserves the same labeled POVM is generally false, but it is non-load-bearing because the claimed twist analysis immediately specializes to V_A=𝟙_A.
 - **auditor confidence:** high
 
 ### `m2_tensor_d4_dimension_256_bounded_note_2026-05-26`

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 428,
+    "critical": 427,
     "high": 250,
     "leaf": 746,
     "medium": 495
@@ -1684,30 +1684,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py",
       "transitive_descendants": 443
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
-      "claim_scope": "The canonical projective-measurement isometry yields the L\u00fcders Kraus operator K_r = P_r and hence the sequential effect P_r E P_r; no uniqueness among all instruments implementing the same POVM is claimed.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 9,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 17.281,
-      "note_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 439
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -58476,6 +58452,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 173,
-  "total_pending": 1919
+  "ready_count": 172,
+  "total_pending": 1918
 }

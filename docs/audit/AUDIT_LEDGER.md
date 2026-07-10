@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 944 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1731 |
+| unaudited | 1730 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 131 |
+| ~~audited_conditional~~ | 132 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1360 |
-| `audited_conditional` | 131 |
+| `audited_conditional` | 132 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 35 |
-| `unaudited` | 2078 |
+| `unaudited` | 2077 |
 
 | claim_type | count |
 |---|---:|
@@ -1628,6 +1628,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `theta_cartan_valued_cross_plane_pairing_diagonal_weyl_frame_theorems_and_triality_fractional_values_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -20358,6 +20359,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Taking logs of the stated K-tube ansatz gives Δ ln ρ_R = (2/π) ln(c_R(6)/c_(0,0)(6)), so the relevant denominator is ln(c_R/c_(0,0)) rather than C_2(R).  _(class `A`)_
 - **chain closes:** True — The algebra follows directly from the displayed power-law ansatz relative to the exponent-12 baseline, and independent arithmetic from the cited c_R(6) values reproduces the table ratios and Δlnρ/ln(c/c_(0,0)) = 2/π to the displayed precision. This does not audit or establish the K-tube ansatz itself or a one-loop Feynman derivation of 2/π.
 - **rationale:** The one-hop cited authority is retained_bounded, which is retained-grade under the rubric. Recomputing from the packet values gives the displayed c_R/c_(0,0) ratios and Δlnρ values, and dividing by ln(c_R/c_(0,0)) returns 0.63661977 = 2/π for each tested irrep. The note explicitly bounds itself to the denominator correction; broader statements about the physical one-loop origin and MC comparison are not established by this audit.
+- **auditor confidence:** high
+
+### `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09`
+
+- **Note:** [`SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09.md`](../../docs/SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The explicit sufficient interval 0 < β ≤ 0.0047 for analyticity, exponential clustering, and exclusion of bulk criticality in four-dimensional pure SU(3) fundamental-Wilson lattice gauge theory.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00020-su3_bulk_criticality_premise`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The asserted polymer bound |z(X)| ≤ η^{|X|}, combined with the displayed Kotecký–Preiss sum, is claimed to imply analyticity and exponential clustering throughout 0 < β ≤ β₀.  _(class `C`)_
+- **chain closes:** False — The runner computes the graph counts, convergence-threshold arithmetic, and β₀, but it does not establish the proof-grade bridge from the Wilson integral to the claimed polymer activities and correlation-decay estimate. It also substitutes a finite Weyl-grid check for an analytic proof of the continuum character range.
+- **rationale:** The numerical and combinatorial calculations are internally consistent and genuinely generate the stated conservative threshold. However, decisive consequences are asserted in the runner using literal true-valued checks, while the restricted packet does not supply a rigorous polymer-factorization/KP-to-thermodynamic-analyticity-and-clustering bridge or justify the quoted mass-rate bound. The continuum SU(3) character extremum is likewise sampled rather than proven, so the advertised rigorous bounded theorem remains conditional on missing bridge lemmas.
 - **auditor confidence:** high
 
 ### `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`

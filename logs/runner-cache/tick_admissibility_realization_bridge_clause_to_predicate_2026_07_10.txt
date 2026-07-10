@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py
+runner_sha256: 917c13bb5441fd930970c455856d4cf673f131c7db0cd639085dc04043b0e0cc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+tick--Admissibility realization bridge checks (2026-07-10)
+PASS: [A1] uniform right mover is unitary and nearest-neighbor supported | rejectors: 0.9 mover is nonunitary; Fourier unitary is not NN-supported
+PASS: [A2] right mover is exactly translation covariant and has M=0 | M(U_R)=0.000e+00; rejector M(U_giv)=0.783327
+PASS: [A3] M is invariant under two fixed nontrivial local U(1) frames | nonunit-modulus diagonal rejector M=1.562500
+PASS: [A4] O distinguishes the mover from an on-site tick | O(U_R)=True, O(onsite)=False
+PASS: [B1] covariant varying rule has translation-invariant V and site-independent v_x(d) | |V|=6, v-columns={-1: (1, 1, 1, 1, 1, 1), 0: (0, 0, 0, 0, 0, 0), 1: (0, 0, 0, 0, 0, 0)}; constant-rule rejector has empty V
+PASS: [B2] fixed assignment builds an exactly translation-covariant right mover | T-invariance residual=0.000e+00
+PASS: [B3] a nontrivially framed R1 tick has the derived modulus shadow M=0 | M(gU0g^dag)=2.220e-16; nonframe rejector=1.562500
+PASS: [B4] a second fixed assignment gives a translation-covariant left mover with M=0 | left residual=0.000e+00
+PASS: [B5] alternating on-site tick has M=0 despite alternating phase | M(U_alt)=0.000e+00; modulus-alternating rejector=0.300
+PASS: [B6] U_alt is frame-rigid and no diagonal frame can make it one-site covariant | frames=9, rigidity=2.220e-16; diagonal matrices commute identically
+PASS: [B7] Givens direct sum is unitary and nearest-neighbor supported | unitarity residual=1.110e-16
+PASS: [B8] Givens witness requires differing site-dependent assignment tables | site-0 amplitudes=[np.float64(0.0), np.float64(0.29552020666134), np.float64(0.95533648912561)], site-2 amplitudes=[np.float64(0.0), np.float64(0.62160996827066), np.float64(0.78332690962748)]
+PASS: [B9] Givens witness has a strict computed modulus-covariance defect | M(U_giv)=0.783326909627; uniform-mover rejector M=0.000e+00
+PASS: [B10] L=6 cumulative-product gauge exactly uniformizes the fixed mover phases and closes | uniformization=3.342e-16, closure=2.628e-16
+PASS: [B11] L=8 spot-check cumulative-product gauge uniformizes and closes | uniformization=9.930e-16, closure=4.456e-16
+PASS: [C1] nonempty nearest-neighbor V is carried by U0 and forces O(U0)=true | |V|=6, O(U0)=True; identity fails R2
+PASS: [C2] dropping R2 lets the same varying rule coexist with the identity tick | O(I)=False, O(R2 witness)=True
+PASS: [C3] converse fails: a constant rule has empty V while its fixed-F mover has O=true | |V(A_const)|=0, O(U_R)=True
+PASS: [C4] covariance checker rejects a deliberately site-dependent availability rule | rejector=False, covariant control=True
+PASS: [D1] on-site representative has M=0 and O=false, so it fails the combined filter | M=1.110e-16, O=False
+PASS: [D2] mixed p/r representative is unitary but has M>0 and fails the filter | M(p/r)=0.361615431965
+PASS: [D3] mixed q/s representative is unitary but has M>0 and fails the filter | M(q/s)=0.572867460100
+PASS: [D4] phase-decorated q/r mover passes and has one displacement sign | M=1.110e-16, displacement y-x=[-1]
+PASS: [D5] phase-decorated p/s mover passes with the opposite displacement sign | M=0.000e+00, displacement y-x=[1]
+PASS: [D6] combined filter leaves exactly the two opposite movers | survivors=['q/r mover', 'p/s mover']
+PASS: [E1] clause-1 sentence is present verbatim in the axioms and new note
+PASS: [E2] clause-2 sentence is present verbatim in the axioms and new note
+PASS: [E3] note contains the full-covariance phrase
+PASS: [E4] note contains the support phrase
+PASS: [E5] M(U) and O(U) definition lines are copied verbatim from the selector | M line='M(U) = max_xy ||T U T^dag|[x,y] - |U|[x,y]| = 0.'; O line='O(U) = true  iff  U[x,y] != 0 for at least one x != y.'
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

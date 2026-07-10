@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py
-runner_sha256: 9b7f0f58cf9dde46b8e931713366860c27dd8b865a461b53528899e4d1251052
-timeout_sec: 600
+runner_sha256: e9b64ef0fbcadbfd28297f12129f6f7c7bcd262cc34db7b83bd17fd947f3d73c
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.44
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 == T1: current supplier status and scope ==
@@ -13,8 +13,8 @@ status: ok
 [PASS] ledger scope carries the derived LH charge-table clause
 [PASS] ledger scope includes current LH-doublet surface needles
 [PASS] ledger scope includes current exclusion needles
-[PASS] L2 matter-assignment authority is retained-grade or decoration under a retained parent  -- decoration_under_graph_first_su3_integration_note (parent graph_first_su3_integration_note: retained)
-[PASS] L3 alpha=1/3 normalization authority is retained-grade in the current ledger  -- retained_bounded
+[PASS] L2 matter-assignment authority satisfies current dependency-chain policy  -- decoration_under_graph_first_su3_integration_note (parent graph_first_su3_integration_note: retained)
+[PASS] L3 alpha=1/3 normalization authority satisfies current dependency-chain policy  -- retained_bounded
 == T2: source-note wiring and guardrails ==
 [PASS] ABJ note cites the new P-HY supplier wiring note
 [PASS] ABJ note routes B1 through retained-bounded P-HY supplier

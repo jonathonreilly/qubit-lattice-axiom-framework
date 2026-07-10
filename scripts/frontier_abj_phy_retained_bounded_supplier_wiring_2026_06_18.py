@@ -148,15 +148,13 @@ def test_current_supplier_status() -> None:
     )
     l2_ok, l2_detail = retained_or_decoration_under_retained(L2_MATTER_CLAIM_ID)
     check(
-        "L2 matter-assignment authority is retained-grade or decoration under a "
-        "retained parent",
+        "L2 matter-assignment authority satisfies current dependency-chain policy",
         l2_ok,
         l2_detail,
     )
     l3_status = ledger_row(L3_ALPHA_CLAIM_ID).get("effective_status")
     check(
-        "L3 alpha=1/3 normalization authority is retained-grade in the current "
-        "ledger",
+        "L3 alpha=1/3 normalization authority satisfies current dependency-chain policy",
         l3_status in RETAINED_POSITIVE_GRADES,
         str(l3_status),
     )

@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gleason_qubit_lattice_projection_narrow_2026_07_09.py
+runner_sha256: 24533765271e2cabb5f148be16207f5e408372dc143102a92d5c7a46b86a90e2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+[PASS] A1 raw trace-form needle
+[PASS] A1 physical Born/readout identification remains outside the claim
+[PASS] A2 finite-region Hilbert-space needle
+[PASS] A3 unique trace-form representation needle
+[PASS] A4 live axiom-memo link present
+[PASS] A4 historical axiom-memo link absent
+[PASS] A5 joint-presentation tensor-substrate bridge link present
+[PASS] A5 linked tensor-substrate dependency resolves with its bounded input surface
+[PASS] A6 forbidden readout vocabulary absent
+[PASS] A7 independent-audit status present
+[PASS] A7 retained status absent
+[PASS] B1 dimension threshold and load-bearing region restriction
+[PASS] B2 exact positive density matrix on C^4
+[PASS] B2 measure normalization
+[PASS] B2 exact orthogonal-resolution additivity
+[PASS] B2 pairwise projection additivity
+[PASS] B3 rank-1 projections span the full Hermitian space
+[PASS] B4 commuting-only span deficiency detected
+[PASS] B5 non-positive trace-one matrix violates measure positivity
+TOTAL: PASS=19 FAIL=0
+VERDICT: PASS
+
+----- stderr -----
+

@@ -3,12 +3,17 @@
 
 This runner checks the exact finite algebra behind the source-side repair:
 
+* the (P-REC) accepted-premise packet parses from the note, and the
+  theorem's selections (atoms, readout context, conjugation, unit weights,
+  sites, instance rule) are CONSTRUCTED from the parsed packet rather than
+  freestanding in code (2026-07-10 repair; a corrupted-packet negative
+  control shows the construction is live);
 * Z^3 supplies arbitrary finite lists of distinct supports;
-* a declared one-site diagonal context inside M_2(C) has two nonzero
+* the registered one-site diagonal context inside M_2(C) has two nonzero
   K-fixed orthogonal readout atoms;
-* a declared covariant admissibility instance makes the chosen atom available
-  at each site; a contrasting covariant instance defeats it (the premise is
-  selective, not vacuous);
+* the registered covariant admissibility instance makes the chosen atom
+  available at each site; a contrasting covariant instance defeats it (the
+  premise is selective, not vacuous);
 * the finite Boolean unit-count functional is additive on disjoint support
   tags;
 * the result is availability/readout-context algebra only, not production,
@@ -17,6 +22,7 @@ This runner checks the exact finite algebra behind the source-side repair:
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from itertools import permutations
 from pathlib import Path
@@ -28,6 +34,7 @@ PASS = 0
 FAIL = 0
 
 ROOT = Path(__file__).resolve().parents[1]
+NOTE_REL = "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> bool:
@@ -47,9 +54,65 @@ def mat(entries: list[list[int]]) -> sp.Matrix:
     return sp.Matrix(entries)
 
 
+@dataclass(frozen=True)
+class RecPacket:
+    rule_name: str
+    basis: str
+    p0_diag: tuple[int, ...]
+    p1_diag: tuple[int, ...]
+    sites_line: str
+
+
+def parse_rec_packet(note_text: str, corrupt_swap_atoms: bool = False) -> RecPacket:
+    """Parse the fenced (P-REC) packet out of the note.
+
+    The theorem's selections are constructed from this parse; nothing about
+    the atoms, basis, rule, or sites is hard-coded past this point. The
+    corrupt_swap_atoms flag builds a deliberately corrupted COPY (atom specs
+    swapped) for the negative control; it never touches the real parse.
+    """
+    fence = re.search(
+        r"```text\n\(P-REC\) Record-availability selection packet \(2026-07-10\)\.(.*?)```",
+        note_text,
+        re.DOTALL,
+    )
+    if not fence:
+        raise ValueError("(P-REC) packet block not found in note")
+    body = fence.group(1)
+    rule = re.search(r"^RULE:\s*(\S+)\s*$", body, re.MULTILINE)
+    basis = re.search(r"^BASIS:\s*(\S+)\s*$", body, re.MULTILINE)
+    atoms_line = re.search(
+        r"^ATOMS:\s*P_0 = diag\(([^)]*)\)\s*;\s*P_1 = diag\(([^)]*)\)\s*$",
+        body,
+        re.MULTILINE,
+    )
+    sites = re.search(r"^SITES:\s*(.+)$", body, re.MULTILINE)
+    if not (rule and basis and atoms_line and sites):
+        raise ValueError("(P-REC) packet is missing RULE/BASIS/ATOMS/SITES fields")
+    p0_spec, p1_spec = atoms_line.group(1), atoms_line.group(2)
+    if corrupt_swap_atoms:
+        p0_spec, p1_spec = p1_spec, p0_spec
+    p0_diag = tuple(int(x) for x in p0_spec.split(","))
+    p1_diag = tuple(int(x) for x in p1_spec.split(","))
+    return RecPacket(
+        rule_name=rule.group(1),
+        basis=basis.group(1),
+        p0_diag=p0_diag,
+        p1_diag=p1_diag,
+        sites_line=sites.group(1).strip(),
+    )
+
+
+def atoms_from_packet(packet: RecPacket) -> tuple[sp.Matrix, sp.Matrix]:
+    return sp.diag(*packet.p0_diag), sp.diag(*packet.p1_diag)
+
+
+_NOTE_TEXT = (ROOT / NOTE_REL).read_text(encoding="utf-8")
+PACKET = parse_rec_packet(_NOTE_TEXT)
+
 I2 = sp.eye(2)
-P0 = mat([[1, 0], [0, 0]])
-P1 = mat([[0, 0], [0, 1]])
+# Constructed from the registered (P-REC) packet, not freestanding:
+P0, P1 = atoms_from_packet(PACKET)
 X = mat([[0, 1], [1, 0]])
 
 
@@ -104,6 +167,12 @@ def r_varying(condition: NeighborCondition) -> AvailableSet:
     return frozenset({"P0", "P1"}) if all(label is None for label in condition) else frozenset({"P0"})
 
 
+RULE_LIBRARY = {"R_all": r_all, "R_p0only": r_p0only, "R_varying": r_varying}
+# The registered instance premise (P-REC-a) is the packet-named rule; the
+# other library members remain as the rejector / neighbor-varying exhibits.
+PREMISE_RULE = RULE_LIBRARY[PACKET.rule_name]
+
+
 def neighbor_condition(
     site: tuple[int, int, int], locked: dict[tuple[int, int, int], str]
 ) -> NeighborCondition:
@@ -130,10 +199,35 @@ def main() -> int:
     print("proposal_allowed: false")
     print()
 
-    print("A. source authority and boundary text")
+    print("P. registered (P-REC) packet: parse, construct, negative control")
+    check(
+        "P1 packet parses with all four fields",
+        PACKET.rule_name == "R_all"
+        and PACKET.basis == "computational-diagonal"
+        and PACKET.sites_line.startswith("x_k = (k,0,0)"),
+        f"rule={PACKET.rule_name}, basis={PACKET.basis}, sites={PACKET.sites_line!r}",
+    )
+    check(
+        "P2 constructed atoms match the theorem's displayed projectors",
+        P0 == mat([[1, 0], [0, 0]]) and P1 == mat([[0, 0], [0, 1]]),
+        "anchor comparison against the Result-section display",
+    )
+    check(
+        "P3 packet-named instance rule resolves in the rule library",
+        PREMISE_RULE is RULE_LIBRARY["R_all"],
+    )
+    corrupted = parse_rec_packet(_NOTE_TEXT, corrupt_swap_atoms=True)
+    c_p0, c_p1 = atoms_from_packet(corrupted)
+    check(
+        "P4 corrupted-packet negative control is detected by the anchor comparison",
+        c_p1 != P1 and c_p1 == P0 and c_p0 == P1,
+        "swapping the ATOMS specs flips the constructed projectors, so the construction is live",
+    )
+
+    print("\nA. source authority and boundary text")
     minimal = read_text("docs/MINIMAL_AXIOMS_2026-06-29.md")
     nogo = read_text("docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md")
-    note = read_text("docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md")
+    note = read_text(NOTE_REL)
     minimal_flat = " ".join(minimal.split())
     nogo_flat = " ".join(nogo.split())
     note_flat = " ".join(note.split())
@@ -147,6 +241,15 @@ def main() -> int:
     check("A8 narrowed no-go withholds the formation rule/process/state/site/weight/rate", "It does not supply the formation rule/process/state/site/weight/rate." in nogo_flat)
     check("A9 theorem boundary explicitly does not derive production", "record production or realization dynamics" in note)
     check("A10 theorem names the declared availability premise and record eligibility", "declared admissibility-instance premise" in note_flat and "record-eligible" in note)
+    check(
+        "A11 note registers all four (P-REC) premises in named form",
+        all(tag in note for tag in ("(P-REC-a)", "(P-REC-b)", "(P-REC-c)", "(P-REC-d)"))
+        and "accepted-premise packet entry" in note_flat,
+    )
+    check(
+        "A12 note carries the dated 2026-07-10 Repair Note with the construct-from-packet statement",
+        "constructs the theorem's selections" in note_flat and "2026-07-10" in note,
+    )
 
     print("\nB. one-site diagonal readout context")
     check("B1 P0 is idempotent", P0 * P0 == P0)
@@ -179,8 +282,9 @@ def main() -> int:
     )
     empty_condition: NeighborCondition = (None, None, None, None, None, None)
     check(
-        "AD2 R_all makes the declared P1 premise hold at every constructed site",
-        all("P1" in r_all(empty_condition) for n in (1, 3, 8) for _site in line_sites(n)),
+        "AD2 packet-registered rule (P-REC-a) makes the declared P1 premise hold at every constructed site",
+        all("P1" in PREMISE_RULE(empty_condition) for n in (1, 3, 8) for _site in line_sites(n)),
+        f"registered rule: {PACKET.rule_name}",
     )
     check(
         "AD3 R_p0only rejector detects failure of the declared P1 premise at every site",
@@ -197,12 +301,13 @@ def main() -> int:
     admissible_at_lock: list[bool] = []
     for record in atoms(8):
         condition_at_lock = neighbor_condition(record.site, locked)
-        admissible_at_lock.append(record.label in r_all(condition_at_lock))
+        admissible_at_lock.append(record.label in PREMISE_RULE(condition_at_lock))
         locked[record.site] = record.label
         realized_stack.append(record)
     check(
-        "AD5 toy realized stack locks only possibilities available at lock time under R_all",
+        "AD5 toy realized stack locks only possibilities available at lock time under the registered rule",
         len(realized_stack) == 8 and all(admissible_at_lock),
+        f"registered rule: {PACKET.rule_name}",
     )
     print("[NAMED] AD5 live presence-conditional layer: by the Record wording, a present record locks an admissible local possibility")
 

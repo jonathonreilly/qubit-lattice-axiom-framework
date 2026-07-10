@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 950 |
+| **retained_bounded** | 951 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 28 |
-| unaudited | 1715 |
+| unaudited | 1714 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1367 |
+| `audited_clean` | 1368 |
 | `audited_conditional` | 132 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2060 |
+| `unaudited` | 2059 |
 
 | claim_type | count |
 |---|---:|
@@ -1385,6 +1385,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `theta_p2_k_cpt_determinant_character_phase_erasure_bounded_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `theta_sector_level_loop_insertions_closed_surface_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `third_grown_family_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `third_grown_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -21425,6 +21426,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Requiring the determinant phase character to be K/CPT-invariant gives exp(i k phi) = exp(-i k phi) for all phi, hence sin(k phi) = 0 for all phi, so k = 0.  _(class `A`)_
 - **chain closes:** True — The direct non-axiom dependencies are retained_bounded and the minimal-axiom node is an accepted premise/meta dependency. Within the explicitly supplied determinant-character channel, the conclusion is exact U(1) character algebra and the note expressly excludes gauge/action theta closure, Tier-A registry edits, and broader physical-readout exhaustion.
 - **rationale:** The audited scope is narrow enough to close: once the determinant-character readout class and K/CPT conjugation z -> conj(z) are supplied, the phase-character invariance equation forces k=0 without a hidden physical bridge. The retained bounded bridge notes supply only the bounded determinant-channel/readout context, while the strong-CP parent is consumed only as the retained bounded selected-surface premise allowed for this row. The live runner returns PASS=15 FAIL=0 and checks both the exact algebra and the source/dependency boundary guards; its legacy 2026-06-05 axiom path is not load-bearing because the current 2026-06-29 axiom note was read directly and preserves the needed no-readout-context boundary.
+- **auditor confidence:** high
+
+### `theta_sector_level_loop_insertions_closed_surface_bounded_theorem_note_2026-07-02`
+
+- **Note:** [`THETA_SECTOR_LEVEL_LOOP_INSERTIONS_CLOSED_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-02.md`](../../docs/THETA_SECTOR_LEVEL_LOOP_INSERTIONS_CLOSED_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-window U(1) loop shifts on the 2x2 torus at beta=0.7, quadrature-tested SU(2) class-trace fusion identities and orthogonality in the stated spin window, the resulting two-cell sector-pair structure, and a numerical counterexample to the generic-argument gluing sketch.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00103-theta_sector_level_loop_inse`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Direct constrained enumeration gives each U(1) exterior sector weight as c_n^3 c_{n+q}, while independent SU(2) Haar quadrature gives the class-trace integral as the spin-1/2 fusion multiplicity and rejects the proposed generic-argument proportionality.  _(class `C`)_
+- **chain closes:** True — The supplied runner performs the constrained enumeration and Haar quadrature directly, with discriminating wrong-fusion and non-fusion checks. Its results support the note's explicitly bounded numerical and structural claims without relying on an uncited upstream result.
+- **rationale:** The runner computes rather than merely printing expected constants, and its independent rejectors distinguish the asserted shift and fusion structures from specified alternatives. The only cited authority is explicitly marked as an accepted axiom premise and is background rather than load-bearing. The note also correctly confines the nonabelian assembly to a structural consequence and leaves generic-argument recoupling and the 4D assembly open.
 - **auditor confidence:** high
 
 ### `theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1804 |
+| unaudited | 1803 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 26 |
+| ~~audited_renaming~~ | 27 |
 | ~~audited_conditional~~ | 86 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 59 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 26 |
-| `unaudited` | 2149 |
+| `audited_renaming` | 27 |
+| `unaudited` | 2148 |
 
 | claim_type | count |
 |---|---:|
@@ -1688,6 +1688,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | weak | codex-current | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
@@ -10975,6 +10976,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Every retained Wilson/APS-derived boundary mark restricts to a scalar lambda I on the rank-two M_zeta multiplicity space, so it commutes with all rank-one selectors and cannot select a unique line.  _(class `A`)_
 - **chain closes:** True — The cited retained bridge supplies the scalar-on-M_zeta theorem, and the parent runner checks the downstream algebraic consequences plus endpoint countermodels. No non-retained selector or boundary-section theorem deriving c=0 is present in the restricted packet.
 - **rationale:** The load-bearing scalar-mark step is an algebraic closure over the retained bridge theorem, not a definition substitution or numerical match. The runner source does more than print constants: it symbolically checks the residual structure and re-verifies representative scalar restrictions by importing the sibling Wilson construction. Within the stated no-go scope, the conclusion follows from retained inputs and explicit countermodels showing marked relative cobordism does not force selected-line closure or c=0.
+- **auditor confidence:** high
+
+### `koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The records-level assertion that the Vandermonde sign distinguishing the Brannen mirror pair is the same global orientation Z₂ used to select A₃=C₃ from S₃, excluding realized handedness and phase magnitude.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00009-koide_delta_phase_and_genera`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because Δ(σ·p)=sgn(σ)Δ(p) and sgn(σ)=det(ρ_perm(σ)), sign(Δ) is asserted to be the same global Z₂/Cl(3) orientation object used for the S₃→C₃ count breaker.  _(class `F`)_
+- **chain closes:** False — The runner proves that the Vandermonde and permutation determinant transform under the same S₃ sign character. It does not prove that the state-dependent sign(Δ) and the global lattice volume-form handedness are one shared physical variable rather than two carriers of isomorphic sign representations.
+- **rationale:** The runner genuinely verifies the Brannen reflection, Vandermonde alternation, determinant character, mirror multiset, and firewall identities; the final PDG comparison is non-load-bearing. Those checks establish common S₃ covariance but not the asserted identity with the global Cl(3)/volume-form handedness. The central step therefore renames two sign-representation carriers as one object while the cited POSITIVITY authorities explicitly leave the physical global-orientation bridge open.
+- **open / conditional deps cited:**
+  - `POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md`
+  - `POSITIVITY_ORIENTATION_SELECTS_C3_NARROW_THEOREM_NOTE_2026-05-23.md`
 - **auditor confidence:** high
 
 ### `koide_dimensionless_note_2026-04-24`

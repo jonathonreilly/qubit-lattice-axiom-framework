@@ -3,7 +3,7 @@
     "critical": 387,
     "high": 265,
     "leaf": 754,
-    "medium": 500
+    "medium": 499
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -19909,36 +19909,6 @@
       "ready": true,
       "runner_path": "scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py",
       "transitive_descendants": 14
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
-        "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
-        "three_generation_observable_theorem_note",
-        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
-        "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.807,
-      "note_path": "docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_delta_phase_count_one_z2_orientation.py",
-      "transitive_descendants": 13
     },
     {
       "audit_independence_required": "any_non_self",
@@ -57074,6 +57044,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 199,
-  "total_pending": 1906
+  "ready_count": 198,
+  "total_pending": 1905
 }

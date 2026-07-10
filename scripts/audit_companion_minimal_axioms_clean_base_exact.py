@@ -215,7 +215,7 @@ def source_boundary_checks() -> list[Check]:
             and contains(policy, "Record does not supply readout-context selection, central decomposition, `K`/CPT structure"),
             "",
         ),
-        Check("Tier-A genuine admitted input count remains two", tier_a.get("genuine_admitted_input_count") == 2, str(tier_a.get("genuine_admitted_input_count"))),
+        Check("Tier-A genuine admitted input count is zero after the 2026-07-05 retirements", tier_a.get("genuine_admitted_input_count") == 0, str(tier_a.get("genuine_admitted_input_count"))),
         Check("minimal_axioms is not a Tier-A derivation target", CLAIM_ID not in derivation_targets, ""),
         Check("Tier-A registry records Record as reclassified primitive", bool(record_reclass), ""),
         Check("Tier-A Record reclassification source is current memo", record_reclass.get("source") == rel(NOTE), str(record_reclass.get("source"))),

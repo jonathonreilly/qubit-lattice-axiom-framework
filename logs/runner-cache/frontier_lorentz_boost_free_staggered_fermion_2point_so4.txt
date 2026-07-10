@@ -1,16 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py
-runner_sha256: c5caa0e09a30f24e369d89a9dda5038114ab105e014003c94f422a57bd136699
+runner_sha256: cc4f729dc0d9a85b071630beeda27d7316f2ec5d9f2d5d5637d26a32e0d99d11
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 18.30
+elapsed_sec: 18.56
 status: ok
 ----- stdout -----
 ==============================================================================
 SO(4) Covariance of the FREE Staggered-Dirac 2-Point Schwinger Function
 ==============================================================================
 
-THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
+THEOREM (conditional on (A-free)):
+         lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
          the SO(4)-covariant Euclidean Dirac/Kahler-Dirac propagator;
          taste-singlet scalar-spectrum leading correction = dim-6 ell=4
          cubic harmonic, O(a^2) (full spin x taste leading corr is O(a)).
@@ -74,8 +75,8 @@ THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
   [PASS] 4D isotropic average <sum n_mu^4>_{S^3} = 1/2  (numeric = 0.50026, exact 3/(d+2) = 1/2 at d=4)
   [PASS] No ell=2 contamination: <f * (n_a n_b - delta/4)>_{S^3} ~ 0  (max ell=2 projection = 1.81e-04 (pure ell=4))
   [PASS] Sympy: H4 = sum x_mu^4 - (1/2) r^4 is harmonic (pure 4D ell=4)  (Laplacian(H4) = 0 (=> no ell=0,2,6 admixture))
-  [PASS] Scalar-spectrum leading LV operator is dimension-6 (O(a^2 p^4), two extra momenta)  (sum_mu p_mu^4 with coeff a^2/3; CPT-even, parity-even (even powers); taste-singlet Delta(p) sector (full spin x taste leading corr is O(a)))
-  [PASS] Parity-even: Delta(-p) = Delta(p) (no dim-5 / CPT-odd dispersion term)  (max|Delta(-p)-Delta(p)| = 0.0e+00)
+  [PASS] Displayed Q4=sum_mu p_mu^4 is degree-4 and exactly P/CPT-even  (exact coefficient maps under P:(p1,p2,p3,ptau)->(-p1,-p2,-p3,ptau) and scalar-operator CPT:p->-p)
+  [PASS] Finite-a scalar spectrum is momentum-inversion even: Delta(-p)=Delta(p)  (max|Delta(-p)-Delta(p)| = 0.0e+00)
 
 === Part 5: free-scalar bridge consistency ===
 
@@ -98,24 +99,30 @@ THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
   [PASS] Axis vs body-diagonal (all-even, equal physical R=2.0) anisotropy shrinks with a  (rel anisotropy: a=0.5 -> 5.814e-01, a=0.25 -> 2.620e-01 (dim-6 ell=4, O(a^2)))
   [PASS] Trace Euclidean Schwinger function real (Im~0) and positive (even sep)  (tr G_E(2,0,0,0) = 7.2004e-02, |Im| = 1.1e-15)
 
-=== Part 7: combined SO(4) statement + relation to scalar note ===
+=== Part 7: conditional Euclidean theorem surface + context ===
 
+  [PASS] Note pin: premise (A-free) is present
+  [PASS] Note pin: theorem header is conditional on (A-free)
+  [PASS] Note pin: Minkowski/Wightman sentence is an OS-reconstruction non-claim
+  [PASS] Note pin: 2026-07-10 downstream-hygiene boundary is present
+  [PASS] Note pin: old unconditional Wick-rotation equivalence is absent
   [PASS] Z^3 x Z_tau has hypercubic point symmetry, NOT SO(4)  (SO(4) is non-compact-completion of the cubic group; emergent only)
   [PASS] Continuum-limit D~(p) = m 1 + (i/a) sum gamma_mu sin(p_mu a) (KS basis)  (phases eta_0=1, eta_mu=(-1)^{sum_{nu<mu} n_nu}; 1_taste spectator is the a->0 form, finite-a taste enters as 4-fold spectral mult (Part 1a))
   [PASS] THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2+m^2)  (standard SO(4) Euclidean Dirac/Kahler-Dirac propagator)
   [PASS] Scalar-spectrum leading lattice correction: dim-6, ell=4 cubic harmonic, O(a^2)  (sum_mu p_mu^4; iso 1/2, axis/diag ratio 4 (4D); no ell=2,6 (taste-singlet Delta(p)/D~ sector; full spin x taste leading corr is O(a)))
-  [PASS] Parity-even + CPT-even: only even powers of p (no dim-3, dim-5)  (Delta(-p)=Delta(p); matches scalar/dispersion-note structure)
-  [PASS] Wick rotation: continuum Wightman 2-pt is SO(3,1)-covariant  (SO(4) Euclidean invariance <=> SO(3,1) boost covariance (t=-i tau))
+  [CONTEXT] Displayed-polynomial P/CPT classification  (real algebraic check is Part 4.6; CPT_EXACT_NOTE is context, not support)
+  [CONTEXT] Minkowski/Wightman extension excluded  (no Wick-rotation PASS: OS reconstruction is outside this claim surface)
   [PASS] MATTER-SECTOR ANALOGUE of free-scalar boost note Step 6 (SO(4))  (same mechanism: cubic dispersion -> isotropic continuum limit)
   [PASS] Free-scalar bridge: spatial 3-slice reduces to scalar note's 3D K_4  (iso 3/5, ratio 3 on the slice; full 4D is iso 1/2, ratio 4)
-  [PASS] Unconditional for the FREE 2-point function (free theory limit exists)  (NOT interacting, NOT n-point, NOT OS reconstruction, NOT FS)
+  [PASS] Conditional on (A-free): free 2-point Euclidean limit exists  (NOT a framework-carrier, interacting, n-point, OS, or Minkowski claim)
 
 ==============================================================================
-SCORECARD: PASS=54  FAIL=0
+SCORECARD: PASS=57  FAIL=0
 ==============================================================================
 
-All checks passed. The FREE staggered-Dirac 2-point Schwinger
-function becomes SO(4)-covariant in the continuum limit, with the
+All checks passed. Conditional on (A-free), the explicitly specified
+FREE staggered-Dirac 2-point Schwinger function becomes SO(4)-covariant
+in the continuum limit, with the
 taste-singlet scalar spectrum's leading anisotropy a dim-6 ell=4
 cubic harmonic at O(a^2) (full spin x taste leading corr is O(a)).
 Matter-sector analogue of the free-scalar boost note.

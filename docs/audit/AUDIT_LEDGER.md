@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 946 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1725 |
+| unaudited | 1724 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 36 |
-| ~~audited_conditional~~ | 139 |
+| ~~audited_conditional~~ | 140 |
 | ~~audited_failed~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -72,12 +72,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1368 |
-| `audited_conditional` | 139 |
+| `audited_conditional` | 140 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 36 |
-| `unaudited` | 2072 |
+| `unaudited` | 2071 |
 
 | claim_type | count |
 |---|---:|
@@ -1569,6 +1569,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | B | - |
 | `hw_complement_equivalence_extends_to_free_corner_transfer_dynamics_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_first_order_selector_bounded_localization_certificate_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -11099,6 +11100,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Given the supplied Bogomolny/self-duality normalization, setting F = *F and Q = 1 saturates S[A] >= (8 pi^2/g^2)|Q|, hence S_inst = 8 pi^2/g^2.  _(class `A`)_
 - **chain closes:** True — The conclusion is a direct algebraic substitution into the supplied retained-bounded Bogomolny normalization. The displayed component normalization Q = (1/(32 pi^2)) int Tr(F_mu nu *F^mu nu) and S = (1/(4g^2)) int Tr(F_mu nu F^mu nu) give S = 8 pi^2 Q/g^2 under self-duality, so Q = 1 closes the claim.
 - **rationale:** The load-bearing step is class A algebra over fixed standard normalizations and the one-hop cited authority is retained_bounded. The note explicitly narrows away Atiyah-Singer integrality, BPST existence, Luescher lattice topology, framework substrate identification, and hierarchy/scale-ratio claims, so no hidden external bridge is needed for the audited scope. The runner source performs the symbolic specialization, arithmetic evaluations, saturation identity, and boundary text checks rather than merely printing a pass line.
+- **auditor confidence:** high
+
+### `interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30`
+
+- **Note:** [`INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md`](../../docs/INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The fixed-background one-fermion energy floor E_j[U]≥arcsinh(m), together with its attempted identification as a matter-sector gap of the U-integrated interacting transfer theory.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00004-interacting_transfer_matter_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For every real λ_j(U) and m>0, sqrt(m²+λ_j(U)²)≥m and monotonicity of arcsinh gives E_j[U]≥arcsinh(m), uniformly in U and volume.  _(class `A`)_
+- **chain closes:** False — The algebraic floor closes for each fixed gauge background. The cited authorities do not supply an operator-level bridge from those fixed-U fibers to the spectrum of the dynamical U-integrated, matter–gauge-coupled transfer matrix.
+- **rationale:** The fixed-background inequality is a valid class-(A) corollary of the retained-bounded per-configuration dispersion input, and the runner checks the constructed staggered hop and bound without an external comparator. However, the gauge-extension authority expressly stops at fixed U, while determinant positivity supplies only a positive measure rather than a coupled spectral inequality. Thus inf_{j,U} E_j[U] is not established as the matter-sector gap of the interacting U-integrated theory, although the note correctly leaves the full gap open.
+- **open / conditional deps cited:**
+  - `RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`
+  - `AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06`

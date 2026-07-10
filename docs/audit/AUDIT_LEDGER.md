@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 947 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 27 |
-| unaudited | 1744 |
+| unaudited | 1743 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 119 |
+| ~~audited_conditional~~ | 120 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1361 |
-| `audited_conditional` | 119 |
+| `audited_conditional` | 120 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 30 |
-| `unaudited` | 2089 |
+| `unaudited` | 2088 |
 
 | claim_type | count |
 |---|---:|
@@ -1580,6 +1580,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_q_eq_3delta_identity_note_2026-04-21` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `koide_r_half_durability_stationarity_conditional_chain_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `koide_r_polarization_orbit_quotient_gate_sharpening_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -12503,6 +12504,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The registered Koide-block parameter is identified with the sector-weight ratio `r = w_doublet/(2 w_singlet)`.  _(class `F`)_
 - **chain closes:** False — The projector identities, rank counts, Q arithmetic, density-state block traces, and D_S block-weight conservation check out as finite-dimensional algebra. The missing step is an independent bridge deriving the Koide-block r readout from sector weights rather than identifying r with that ratio by stipulation.
 - **rationale:** Issue: the finite-dimensional projector algebra and D_S block-weight conservation are correct, but the theorem’s load-bearing move identifies the already-named Koide r with the sector-weight ratio. Why this blocks: the runner defines `r_from_weights` as `w_doublet/(2*w_singlet)` and then verifies arithmetic, so it does not derive the r/readout bridge from the cited authorities. Repair target: supply a retained bridge deriving the Koide-block r from the sector-weighted density/readout, or present this note explicitly as a definition of the weighting dial. Claim boundary until fixed: dimension and equal-sector weights map to the advertised r,Q values under the stipulated formula, and D_S preserves those weights.
+- **auditor confidence:** high
+
+### `koide_r_polarization_orbit_quotient_gate_sharpening_note_2026-06-09`
+
+- **Note:** [`KOIDE_R_POLARIZATION_ORBIT_QUOTIENT_GATE_SHARPENING_NOTE_2026-06-09.md`](../../docs/KOIDE_R_POLARIZATION_ORBIT_QUOTIENT_GATE_SHARPENING_NOTE_2026-06-09.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** The finite R[Z3] algebra classifies compatible complex structures as ±J and computes the K-orbit partition, while the claimed Record-based readout factorization remains conditional on separate K/CPT readout-context authority.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00074-koide_r_polarization_orbit_q`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Every record-readout is a function on K/CPT orbits, so the computed orbit partition {e0}, {e1,e2} entails conjugation-invariance and excludes phase-resolved doublet readouts.  _(class `B`)_
+- **chain closes:** False — The current accepted Record authority supplies fixed records and additive scalar readout, but expressly places K/CPT orbit structure and central-sector decomposition outside the axiom. Consequently, the algebraic orbit computation alone cannot entail that physical record readouts factor through those orbits.
+- **rationale:** Issue: the runner hard-codes the superseded premise that a Record outcome is a K/CPT orbit, including a check(True), rather than deriving it from the supplied current authority. Why this blocks: MINIMAL_AXIOMS_2026-06-29 explicitly identifies K/CPT orbit structure as downstream readout-context content, so the asserted phase exclusion and gate unification do not follow from the restricted inputs. Repair target: supply a retained theorem constructing the central-sector readout context, fixed conjugation, and orbit-factorization rule. Claim boundary until fixed: the ±J classification, K pairing, and conditional consequences of an assumed orbit-valued readout remain supportable.
 - **auditor confidence:** high
 
 ### `koide_readout_lane_demarcation_note_2026-05-30`

@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-20
 **Substrate authority update:** 2026-07-09 — the substrate citation moved from the historical `MINIMAL_AXIOMS_2026-05-20.md` (legacy `A1`/`A2` numbering) to the live `MINIMAL_AXIOMS_2026-06-29.md` plus the joint-presentation tensor-substrate bridge; the theorem content is unchanged.
-**Type:** positive_theorem candidate (narrow theorem)
+**Type:** bounded_theorem
 **Status:** source-side proposal — independent audit lane owns the verdict
 **Primary runner:** [`scripts/frontier_gleason_qubit_lattice_projection_narrow_2026_07_09.py`](../scripts/frontier_gleason_qubit_lattice_projection_narrow_2026_07_09.py)
 **Cached output:** [`logs/runner-cache/frontier_gleason_qubit_lattice_projection_narrow_2026_07_09.txt`](../logs/runner-cache/frontier_gleason_qubit_lattice_projection_narrow_2026_07_09.txt)
@@ -26,8 +26,8 @@ is:
    hypotheses (`dim ≥ 3`).
 2. Verifying the probability-measure structure on the projection
    lattice `P(H_Λ)` matches Gleason's setup.
-3. Reading off Born form `p(P) = Tr(σ P)` as the unique probability
-   measure on the qubit-lattice projection lattice.
+3. Deriving the unique trace-form representation `m(P) = Tr(σ P)` for
+   measures satisfying the stated mathematical hypotheses.
 
 This is the same narrow-theorem granularity as `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 (which applies the standard Clifford-algebra complexification
@@ -51,9 +51,11 @@ m(P) = Tr(σ · P)                                                         (1)
 
 for a unique density matrix `σ ∈ M_d(ℂ)` (positive, `Tr σ = 1`).
 
-This is Gleason 1957 applied to the qubit-lattice substrate. The
-form `m(P) = Tr(σ P)` is the **Born rule** for projection-valued
-measurements on the qubit-lattice projection lattice.
+This is Gleason 1957 applied to the qubit-lattice substrate. The trace form
+`m(P) = Tr(σ P)` is the algebraic representation conventionally used in the
+Born rule. This note does **not** identify the projections as physical
+measurement outcomes, derive a readout bridge, or establish that the
+mathematical measure `m` is a framework-generated physical probability.
 
 ## Setup
 
@@ -226,7 +228,7 @@ measure.
 
 ## Risk classification
 
-This is a `positive_theorem` candidate at the narrow-theorem granularity.
+This is a `bounded_theorem` candidate at the narrow-theorem granularity.
 The argument is textbook Gleason theory applied to the framework's
 specific Hilbert space `⊗_x ℂ²`. The narrow contribution is the
 explicit application to the qubit-lattice substrate plus the

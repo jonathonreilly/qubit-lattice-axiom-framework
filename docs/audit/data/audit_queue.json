@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 396,
+    "critical": 395,
     "high": 266,
     "leaf": 755,
     "medium": 512
@@ -672,30 +672,6 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_local_tomography_from_complex_structure_exact.py",
       "transitive_descendants": 389
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
-      "claim_scope": "Quantum's local M_2(C) algebra alone does not force the physical matter boost to be the Pauli/Weyl operator-frame action.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.604,
-      "note_path": "docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py",
-      "transitive_descendants": 388
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -57693,6 +57669,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 216,
-  "total_pending": 1929
+  "ready_count": 215,
+  "total_pending": 1928
 }

@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 194 |
-| **retained_no_go** | 206 |
+| **retained_no_go** | 207 |
 | **retained_bounded** | 931 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
 | unaudited | 1852 |
-| audit_in_progress | 13 |
+| audit_in_progress | 12 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
@@ -62,8 +62,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 15 |
-| `audited_clean` | 1334 |
+| `audit_in_progress` | 14 |
+| `audited_clean` | 1335 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
@@ -143,7 +143,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
-| `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08` | open_gate | audit_in_progress | audit_in_progress | - | - | - | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
@@ -1093,6 +1092,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `quantum_horizon_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `quark_bicac_endpoint_obstruction_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_bimodule_norm_existence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_bimodule_norm_naturality_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -15586,6 +15586,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The one-hop dependency is retained_bounded for the same runner-defined absorbing proxy family, and the primary runner reuses that harness to compute the k sweep directly. The source keeps the negative claim narrow to this observable and family, and the no-go discipline gate leaves other wavelength-dependent trapping or spectral routes explicitly open.
 - **rationale:** Fresh-context audit agreed that the runner genuinely computes the finite k/alpha sweep and that the cached output matches the note: alpha_crit stays near 0.08-0.09 with a sub-Nyquist exponent around 0.03. The N1-N8 gate does not expose an overbroad no-go because the source does not rule out all trapping, all spectral effects, or other horizon observables. This is clean only as the finite-envelope no-go for the declared alpha_crit observable on the declared retained-bounded proxy family.
 - **auditor confidence:** high
+
+### `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02`
+
+- **Note:** [`QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`](../../docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Quantum/Qubit local M_2(C) structure alone does not force attachment of the Pauli/Weyl action to a physical matter-field boost action.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-quantum_local_algebra_do-024`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The same C^2 carrier can support the faithful Pauli local algebra and an independently scalar boost action, so Quantum alone does not identify the physical boost with the operator-frame Pauli action.  _(class `A`)_
+- **chain closes:** True — The accepted Qubit axiom supplies the local operator algebra but no Lorentz-action or matter-attachment law. The supplied scalar-action countermodel therefore establishes the narrowly scoped non-entailment.
+- **rationale:** The Pauli/Clifford calculations and conditional Lorentz-bracket checks are genuine finite algebraic checks, while the accepted axiom explicitly leaves downstream physical structure unspecified. The scalar one-parameter action demonstrates that the carrier and local algebra do not themselves select the Pauli/Weyl matter action. The conclusion is limited to this Quantum-alone route and does not claim that faithful boost attachment is impossible.
+- **auditor confidence:** medium
 
 ### `quark_bicac_endpoint_obstruction_theorem_note_2026-04-19`
 

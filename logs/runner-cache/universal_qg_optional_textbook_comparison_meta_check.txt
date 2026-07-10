@@ -1,28 +1,35 @@
 ===== runner cache v1 =====
 runner: scripts/universal_qg_optional_textbook_comparison_meta_check.py
-runner_sha256: 3fbdece80a784fc3782f9ceb4c99d9fcf9ffdf6fc59feb051c482cdbfb0b31db
+runner_sha256: 1277e3dcf94291d1c2ad5dc554f2f5ac20ff05ba66a85c71bae8fb46639df3aa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 ========================================================================
 UNIVERSAL QG OPTIONAL TEXTBOOK COMPARISON META CHECK
 ========================================================================
 [PASS (A)] note title is the expected optional textbook comparison note: docs/UNIVERSAL_QG_OPTIONAL_TEXTBOOK_COMPARISON_NOTE.md
+[PASS (A)] Source note matches the reviewed byte-for-byte predicate surface: c55da42c9bd275697d8d5cc94272b24efe28a9c3ae494ac07adcd7ad40afabee
 [PASS (A)] Type field is exactly meta: meta
 [PASS (A)] Status field negates theorem, claim, and new authority roles: audit-checkable packaging hub for optional textbook-comparison crosswalks against the universal-QG canonical textbook closure target. **Not** a theorem, claim, or new authority surface.
 [PASS (A)] Authority role is zero: zero — this row exists only to anchor a citation hub for downstream universal-QG notes that need a stable target for "optional textbook comparison" callouts.
+[PASS (A)] Audit target is the finite Z0-Z5 repository predicate only: the finite repository predicate `Z := Z0 AND ... AND Z5` below, and no scientific proposition.
+[PASS (A)] Status authority remains with the independent audit lane: independent audit lane only; the runner supplies a repository-state certificate, not an audit verdict.
 [PASS (A)] Primary runner points to this replay script: `scripts/universal_qg_optional_textbook_comparison_meta_check.py`
 [PASS (A)] Runner cache points to the cached replay transcript: `logs/runner-cache/universal_qg_optional_textbook_comparison_meta_check.txt`
 [PASS (A)] Audit-readiness metadata repair preserves zero-authority scope: source-side cache metadata is not a status promotion
+[PASS (A)] Z0-Z5 are each declared exactly once: 0,1,2,3,4,5
+[PASS (A)] Finite closure certificate defines source and inbound predicates: Z(N,D) source/inbound conjunction
+[PASS (A)] Finite certificate disclaims all physics-grade implications: physics and audit-grade firewall present
+[PASS (A)] Finite certificate states executable falsifiers: source pin, edge, inbound-context, and Z4 falsifiers present
 [PASS (A)] Source note has no markdown links to other docs: none
 [PASS (A)] Source note has no authority-style Citations section: Citations heading absent
 [PASS (A)] Informational cross-reference rows exist as separate claim files: all present as code spans
 [PASS (A)] Own-row substantive comparison firewall is explicit: claim-row firewall present
 [PASS (B)] Inbound mentions are guarded as optional packaging callouts: 21 mentions checked
 ------------------------------------------------------------------------
-SUMMARY: PASS A=11 B=1 C=0 D=0 total_pass=12
+SUMMARY: PASS A=18 B=1 C=0 D=0 total_pass=19
 
 ----- stderr -----
 

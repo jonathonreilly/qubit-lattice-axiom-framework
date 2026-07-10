@@ -2536,6 +2536,18 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "There remains an obstruction.",
             "The attempted construction fails to close.",
             "The construction does not supply an admission.",
+            "No route closes the remaining obstruction.",
+            "No argument closes the wall.",
+            "Nothing closes the remaining obstruction.",
+            "Neither route closes the remaining obstruction.",
+            "Zero candidates close the wall.",
+            "No available route can close the wall.",
+            "No route is able to close the obstruction.",
+            "None of the tested routes closes the obstruction.",
+            "The retained inputs are unable to determine the selector.",
+            "The theorem does not yet fully close the remaining obstruction.",
+            "The construction cannot ever completely remove the scoped obstruction.",
+            "The attempt fails completely to resolve the remaining obstruction.",
         ):
             with self.subTest(body=body):
                 self.assertTrue(
@@ -2574,6 +2586,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "This does not require a new axiom.",
             "The construction does not introduce an admission.",
             "The identity cannot produce an obstruction.",
+            "This cannot require a new axiom.",
+            "This doesn't require a new axiom.",
         ):
             with self.subTest(rationale=rationale):
                 self.assertFalse(

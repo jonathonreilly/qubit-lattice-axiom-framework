@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 944 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1729 |
+| unaudited | 1728 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 133 |
+| ~~audited_conditional~~ | 134 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1360 |
-| `audited_conditional` | 133 |
+| `audited_conditional` | 134 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 35 |
-| `unaudited` | 2076 |
+| `unaudited` | 2075 |
 
 | claim_type | count |
 |---|---:|
@@ -1640,6 +1640,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_family_card_missing_distance_live_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-current | A | - |
 | `u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `universal_gr_induced_cosmological_constant_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `unordered_mass_pdep_record_independence_no_go_note_2026-06-18` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `w_mass_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `wilson_m_h_per_channel_closure_bounded_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -21962,6 +21963,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The exact staggered Kähler-Dirac block gives a finite-BZ Zener diagnostic A≈0.97, N-stable and mass-robust, while the naive Dirac control gives A≈2.1 with O(1) anisotropy.  _(class `C`)_
 - **chain closes:** True — The runner source directly constructs the continuum, naive lattice, and staggered hypercube operators and computes the Zener components rather than importing or hard-coding the contested values. Closure is only for the bounded finite-scheme diagnostic, not for the W-native stress vertex, continuum extrapolation, or physical spin-2 isotropy theorem.
 - **rationale:** The scoped claim is deliberately bounded to the finite-BZ diagnostic actually computed in the packet. The source code contains no helper imports, external comparators, or hard-coded expected anisotropy constants; the reported continuum, naive, and staggered A values are produced by explicit operator sums. The displayed Zener normalization is internally consistent with A=1 for isotropic cubic stiffness, and the staggered scalar-spectrum identity follows from the eta-phase Clifford anticommutation in the 16x16 block. The note explicitly excludes the conserved vertex, W metric-Hessian bridge, continuum a->0 limit, and physical spin-2 theorem, so those open items do not block this bounded claim.
+- **auditor confidence:** high
+
+### `universal_gr_induced_cosmological_constant_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_INDUCED_COSMOLOGICAL_CONSTANT_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The implemented finite staggered-carrier calculation produces finite O(1) vacuum-energy values and a nonzero SO(4)-isotropic runner-defined tadpole diagnostic at the tested lattice sizes and masses.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00022-universal_gr_induced_cosmolo`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The finite-Brillouin-zone evaluation of trace(G(P) Vst0(P,mu,nu)) yields a nonzero isotropic tensor with diagonal entries 0.8744 and negligible off-diagonal components.  _(class `C`)_
+- **chain closes:** False — The numerical result follows from the supplied code, but the restricted packet does not derive Vst0 as the correctly normalized metric-source first variation of the W functional. Consequently, the computed tensor is not yet established as a W-native vacuum stress tadpole rather than a runner-defined diagnostic.
+- **rationale:** The runner genuinely constructs the staggered operator, propagator, and vertex and evaluates finite Brillouin-zone sums; it does not merely print or match hard-coded results. However, the stress-vertex identification is load-bearing and is not derived from a metric variation of W in the packet. The cited stress authority explicitly leaves the corresponding W-native metric-source bridge open, so the physical stress-tadpole wording remains conditional even though the runner-defined isotropy and nonzero value are reproducible.
+- **open / conditional deps cited:**
+  - `UNIVERSAL_GR_STRESS_WARD_TRANSVERSE_SEAGULL_BOUNDED_THEOREM_NOTE_2026-06-08.md`
+  - `UNIVERSAL_GR_INDUCED_GRAVITON_W_NATIVE_FINITE_K_BOUNDED_THEOREM_NOTE_2026-06-08.md`
+  - `UNIVERSAL_GR_STAGGERED_TT_STIFFNESS_POSITIVE_BOUNDED_THEOREM_NOTE_2026-06-08.md`
 - **auditor confidence:** high
 
 ### `universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08`

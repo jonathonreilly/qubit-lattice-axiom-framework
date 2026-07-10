@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 194 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 929 |
+| **retained_bounded** | 930 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
-| unaudited | 1854 |
+| unaudited | 1853 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 18 |
-| `audited_clean` | 1330 |
+| `audited_clean` | 1331 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2199 |
+| `unaudited` | 2198 |
 
 | claim_type | count |
 |---|---:|
@@ -744,6 +744,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10402,6 +10403,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The exact wall is {q*pi : q in Q} cap Q = {0}, so a nonzero pure rational such as 2/9 is not supplied as a literal radian by the listed finite periodic phase sources; finite Wilson/root-of-unity escape routes remain q*pi as well.  _(class `A`)_
 - **chain closes:** True — Within the bounded scope of the listed finite periodic phase sources and finite Wilson constructions, the chain closes by exact rational-pi arithmetic and the irrationality/transcendence wall for pi. The note explicitly does not claim Koide closure, P_A1 retention, or a no-go against future nonlisted bridge theorems.
 - **rationale:** The note's retained claim is negative and carefully bounded: periodic phase sources give rational multiples of pi, while the Brannen selected-line target is the pure rational 2/9 used as radians. The cached runner exits 0 with 36/36 PASS checks and verifies the finite-source, rational-witness, finite-Wilson, and A1-route-elimination arithmetic without promoting the missing Type-B-to-radian map. No one-hop dependencies are listed for the claim, and the source note's boundary language prevents the result from being overstated as charged-lepton Koide closure.
+- **auditor confidence:** high
+
+### `koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02`
+
+- **Note:** [`KOIDE_ADJOINT_MAP_QUOTIENTS_SPINOR_Z2_NARROW_NO_GO_NOTE_2026-06-02.md`](../../docs/KOIDE_ADJOINT_MAP_QUOTIENTS_SPINOR_Z2_NARROW_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the SU(2) adjoint action on Im(H), the central spinor sign is quotiented and is distinct from the Gamma_chi involution; consequently this rotation-equivariant candidate does not close the spinor-to-value-sign bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-koide_adjoint_map_quotie-077`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because the adjoint action has kernel exactly {+1,-1}, the central spinor element z=-1 maps to I_3 and therefore cannot become the nontrivial Gamma_chi eigenvalue partition on the vector module.  _(class `A`)_
+- **chain closes:** True — Quaternion conjugation gives Ad(-1)=I_3, while the displayed lift q_gc has Ad(q_gc)=Gamma_chi and q_gc^2=-1, so the two involutive structures are demonstrably distinct. Equivariance with the standard vector target likewise makes z act trivially, without requiring the still-open physical carrier identification.
+- **rationale:** The load-bearing result is a genuine algebraic closure: the central element is killed by the adjoint representation, whereas Gamma_chi is a nonidentity vector-space involution. All cited authorities are retained-grade in the supplied packet, and the parent note's open physical identification is not imported as a premise because this claim excludes only the stated natural route. The runner correctly computes the decisive identities, although its random-sampling test alone would not prove exactness of the kernel or the universal equivariant-map statement; those follow analytically from quaternion commutation and equivariance as presented in the packet.
 - **auditor confidence:** high
 
 ### `koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01`

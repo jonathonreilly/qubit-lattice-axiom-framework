@@ -1,9 +1,9 @@
 {
   "by_criticality": {
-    "critical": 427,
-    "high": 250,
+    "critical": 426,
+    "high": 251,
     "leaf": 746,
-    "medium": 495
+    "medium": 496
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -1781,28 +1781,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py",
       "transitive_descendants": 433
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "lattice_nn_light_cone_note",
-      "claim_scope": "For finite vertex set V, one-step dependency relation R, and any R-local update rule with shared external randomness, initial differences on S can affect only vertices in C_t(S) after t ticks.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 6,
-      "effective_status": "retained",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.755,
-      "note_path": "docs/LATTICE_NN_LIGHT_CONE_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/lattice_nn_topological_causal_bound_check.py",
-      "transitive_descendants": 431
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -14028,6 +14006,31 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint_after_invalidation",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "lattice_nn_light_cone_note",
+        "kinetic_isotropy_primitive"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.709,
+      "note_path": "docs/PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_per_plaquette_from_adjacency_license_2026_06_09.py",
+      "transitive_descendants": 36
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "audited_failed",
       "blocker": null,
       "claim_id": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
@@ -14078,30 +14081,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py",
       "transitive_descendants": 21
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "audited_conditional",
-      "blocker": null,
-      "claim_id": "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
-      "claim_scope": "Within the supplied class A = sum_P f(U_P), no single local summand contains a cross-plane F tilde F coefficient.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "audited_conditional",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.892,
-      "note_path": "docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md",
-      "queue_reason": "non_terminal_conditional",
-      "ready": true,
-      "runner_path": "scripts/frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09.py",
-      "transitive_descendants": 20
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -19997,6 +19976,30 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint_after_invalidation",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.892,
+      "note_path": "docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09.py",
+      "transitive_descendants": 20
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "su3_adjoint_casimir_theorem_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -21519,6 +21522,32 @@
       "ready": true,
       "runner_path": "scripts/frontier_atomic_hydrogen_helium_probe.py",
       "transitive_descendants": 27
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint_after_invalidation",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "lattice_nn_light_cone_note",
+        "post_record_clock_rate_interface_2026-06-06",
+        "record_clock_rate_normalization_gate_2026-06-06"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.822,
+      "note_path": "docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/min_time_step_tied_to_lattice_edge_by_locality_runner.py",
+      "transitive_descendants": 19
     },
     {
       "audit_independence_required": "any_non_self",
@@ -58453,5 +58482,5 @@
     }
   ],
   "ready_count": 167,
-  "total_pending": 1918
+  "total_pending": 1919
 }

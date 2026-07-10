@@ -20,15 +20,15 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 929 |
+| **retained_bounded** | 928 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1756 |
+| unaudited | 1759 |
 | audit_in_progress | 8 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 133 |
+| ~~audited_renaming~~ | 31 |
+| ~~audited_conditional~~ | 132 |
 | ~~audited_failed~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -71,14 +71,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 14 |
+| `audit_in_progress` | 13 |
 | `audited_clean` | 1341 |
-| `audited_conditional` | 133 |
+| `audited_conditional` | 132 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 32 |
-| `unaudited` | 2103 |
+| `audited_renaming` | 31 |
+| `unaudited` | 2106 |
 
 | claim_type | count |
 |---|---:|
@@ -151,7 +151,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-current | C | - |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-current | B | - |
-| `lattice_nn_light_cone_note` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.6 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
@@ -850,6 +849,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_nn_deterministic_rescale_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_high_precision_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `lattice_nn_light_cone_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `lattice_nn_rg_alpha_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_rg_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_rg_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
@@ -992,7 +992,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `periodic_2d_wraparound_fix_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `persistent_inertial_object_probe_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -1610,7 +1609,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `theta_cartan_valued_cross_plane_pairing_diagonal_weyl_frame_theorems_and_triality_fractional_values_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
-| `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_gluing_flow_nonsourcing_pair_level_seed_localization_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `theta_mass_determinant_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
@@ -1765,7 +1763,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
-| `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -12686,6 +12683,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The load-bearing step is an actual first-principles numerical computation of the raw kernel row from the supplied lattice algorithm, not merely a printed constant or a definition substitution. The runner does hard-code deterministic-rescale comparison values, but the audited positive core is the raw mpmath h = 0.125 row and Born-clean result, which is computed directly. The deterministic-rescale match is checked only to rounded/displayed precision for the main observables, with Born differing at about float64 roundoff scale, so the clean verdict is limited to the note's narrow numerical gate and not a broader exact-invariance theorem.
 - **auditor confidence:** medium
 
+### `lattice_nn_light_cone_note`
+
+- **Note:** [`LATTICE_NN_LIGHT_CONE_NOTE.md`](../../docs/LATTICE_NN_LIGHT_CONE_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00020-lattice_nn_light_cone_note`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For any vertex outside C_{t+1}(S), every predecessor used by its local update lies outside C_t(S), so all update inputs agree between the two histories and the vertex values remain equal.  _(class `A`)_
+- **chain closes:** True — The induction follows directly from R-locality and the recursive definition of C_t(S). No metric, continuum, Lorentzian, or physical-speed conclusion is needed.
+- **rationale:** The universal claim is established by a valid induction over update ticks: a vertex outside C_{t+1}(S) has no predecessor in C_t(S), so locality forces equal outputs when the predecessor values agree. The runner independently computes dependency supports and reachability on four finite graph families and performs 678 genuine set-containment or equality checks, although these finite cases are supplementary rather than the proof of universality. The note expressly excludes physical-spacetime, Lorentz-invariance, metric-speed, and distance-law interpretations.
+- **auditor confidence:** high
+
 ### `lattice_nn_mass_response_note`
 
 - **Note:** [`LATTICE_NN_MASS_RESPONSE_NOTE.md`](../../docs/LATTICE_NN_MASS_RESPONSE_NOTE.md)
@@ -13630,19 +13640,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the retained 2D family, the stage-2 broad surrogate built from the stage-1 sourced response reproduces the stage-1 surrogate rows at printed precision across the tested topN values.  _(class `C`)_
 - **chain closes:** True — The provided runner constructs the 2D lattice, propagates the probe, builds stage-1 and stage-2 compressed surrogate source profiles, and computes the displayed ratios, TV distances, captures, spreads, and overlap. The bounded conclusion is limited to the frozen family and printed-precision two-stage stability.
 - **rationale:** The primary runner does not merely print constants: it generates the lattice, propagates amplitudes under distributed and point-source fields, compresses computed profiles, and compares the second-stage surrogate against the first. The helper source supplies lattice generation and constants used by the computation rather than importing the contested result from another note. The cited authorities are retained_bounded and the note's conclusion stays bounded: mesoscopic two-stage stability, not localized persistent-mass closure.
-- **auditor confidence:** high
-
-### `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08`
-
-- **Note:** [`MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The finite 6-NN graph-reachability facts, the effect of excluding diagonal dependencies, and the claimed identification of an update index with a record tick and minimum time step were audited; no absolute physical time or length scale was established.
-- **audit_status:** ~~audited_renaming~~
-- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00003-min_time_step_tied_to_the_la`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** The minimum time step is identified with one elementary dynamical update and one record tick, so the computed one-hop-per-update reachability is asserted to mean one tick equals one lattice edge.  _(class `F`)_
-- **chain closes:** False — The retained reachability theorem bounds influence by update-graph distance, but it does not identify an update with a record tick or derive that either is a physical or emergent minimum time step. The runner computes graph reachability only and assumes this missing identity in its labels and conclusions.
-- **rationale:** The source boundary explicitly concedes that the identity among update tick, record tick, a_tau, and one lattice edge is introduced as a naming convention. BFS verifies one graph hop per declared 6-NN update and the clock-rate authority correctly leaves absolute timing undetermined, but neither result supplies the missing time-coordinate bridge. Thus the claimed ratio derivation reduces to renaming the update index as a time step rather than deriving that identification.
 - **auditor confidence:** high
 
 ### `minimal_absorbing_horizon_probe_note`
@@ -14904,19 +14901,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Apply the Pauli multiplication identity repeatedly to enumerate P_1 = <sigma_1,sigma_2,sigma_3> as {+/-I,+/-iI,+/-sigma_a,+/-i sigma_a}.  _(class `A`)_
 - **chain closes:** True — The retained dependency supplies the abstract two-dimensional chiral Cl(3) modules, and the group generated by either chirality's three Pauli/Clifford images is the same 16-element phase-closed Pauli group up to isomorphism. An independent symbolic multiplication-table enumeration gives 16 elements, 4 scalar central elements, quotient size 4 with all nonidentity cosets order 2, and E^4=I for every element.
 - **rationale:** Clean under the narrowed abstract single-qubit Pauli-group scope. The load-bearing algebra is ordinary Pauli multiplication: phases i^k times I,X,Y,Z give 4 x 4 distinct trace-orthogonal matrices, close under multiplication, have scalar center of order 4, and produce a Klein-four quotient. Residual risk is scope, not algebra: the source's physical per-site H_x language and downstream stabilizer/Clifford/multisite corollaries are outside this retained audit scope because the cited dependency excludes physical per-site Hilbert-space identification and chirality selection.
-- **auditor confidence:** high
-
-### `per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09`
-
-- **Note:** [`PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md`](../../docs/PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Under the explicitly defined unit-neighborhood endpoint license, the rooted cubic-lattice loops of lengths 4 and 6 have counts 24 and 264 respectively, with license acceptance counts 24 and 0; no gauge-action derivation is included.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.6-sol-20260710-124556-b32a85dc-per_plaquette_from_adjac-008`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** At length 4, all 24 rooted simple closed loops are plaquettes satisfying the unit-neighborhood license, while none of the 264 length-6 loops satisfies it.  _(class `C`)_
-- **chain closes:** True — The runner exhaustively generates the stated finite loop domain and applies the stated license directly. An independent self-avoiding-walk enumeration reproduces the 24/264 loop counts and 24/0 license split.
-- **rationale:** The load-bearing finite enumeration is genuinely computed rather than imported or tuned, and its results independently reproduce. Both cited authorities are admissible: the reachability note is retained, and the kinetic-isotropy note is explicitly flagged as an accepted framework premise, although neither supplies the enumerated result. The verdict applies only under the stipulated link-support license and does not promote that license into a derived gauge-action principle.
 - **auditor confidence:** high
 
 ### `per_site_su2_spin_half_theorem_note_2026-05-02`
@@ -20821,19 +20805,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Because Q_G is invariant under the diagonal Weyl action but changes under independent per-plane Weyl actions, separate per-plane orbit data underdetermine Q_G and a relative-frame datum is required.  _(class `A`)_
 - **chain closes:** False — The exact Gram, cochain, fractional-value, and Weyl-frame calculations support the central algebraic results. However, the claimed 2D gluing witness is not derived: runner Section E merely reuses the weight-orbit predicate dom_ok without constructing the glued dual or proving that its sector label is a dominant weight.
 - **rationale:** The runner performs genuine exact class-(A) calculations supporting the pairing, triality table, odd integer witness, and diagonal/independent Weyl conclusions. Its Section E check nevertheless embeds the contested glued-label identification in the check description and tests only dom_ok, so the advertised fourth finite result lacks its carrier bridge. The 4D correlation is appropriately left open, but the asserted 2D witness prevents the full note from closing as written.
-- **auditor confidence:** high
-
-### `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09`
-
-- **Note:** [`THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md`](../../docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Within the supplied class A = sum_P f(U_P), no single local summand contains a cross-plane F tilde F coefficient.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153334Z-4f7da8c1-00003-theta_cross_plane_term_absen`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** For an action that is a sum of single-plane functions, every mixed derivative with respect to field strengths from two complementary plaquette planes vanishes identically.  _(class `A`)_
-- **chain closes:** True — The mixed-derivative identity and direction count establish the stated exclusion for the supplied additive per-plaquette class. The packet does not derive that action-class premise, so the closure remains conditional on it.
-- **rationale:** The load-bearing result is a genuine class-A algebraic identity, and the runner actually computes the relevant mixed derivatives rather than printing a predetermined outcome. The theorem nevertheless imports the per-plaquette action class as an explicit premise, and the retained-bounded cited authority expressly does not derive that class. The result therefore closes only within its carefully stated conditional scope and does not establish full theta-term absence.
 - **auditor confidence:** high
 
 ### `theta_defect_closure_necessity_linking_obstruction_bounded_theorem_note_2026-07-02`

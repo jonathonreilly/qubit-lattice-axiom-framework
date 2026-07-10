@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 940 |
+| **retained_bounded** | 941 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1780 |
+| unaudited | 1779 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -67,13 +67,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1350 |
+| `audited_clean` | 1351 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2125 |
+| `unaudited` | 2124 |
 
 | claim_type | count |
 |---|---:|
@@ -153,6 +153,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_ambient_equivariant_heat_trace_face_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -1824,6 +1825,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The note correctly narrows its scope to conditional scenarios and withdraws uniqueness, falsification, and audited-framework-prediction language. The runner likewise computes downstream scenario arithmetic after P1..P6 are supplied; it does not derive those premises from framework primitives. ACTION_NORMALIZATION_NOTE is retained_no_go, but it explicitly says the scalar-potential and Poisson source normalization conventions are not convention-free derived, so retained status does not close P1. Therefore the reduced conditional packet is coherent, but it remains conditional on missing bridge theorems.
 - **open / conditional deps cited:**
   - `ACTION_NORMALIZATION_NOTE.md`
+- **auditor confidence:** high
+
+### `acphilambda_ambient_equivariant_heat_trace_face_2026-07-02`
+
+- **Note:** [`ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md`](../../docs/ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-lattice equivariant heat-trace reduction, stated diffusive continuum normalization bookkeeping, and the resulting nontrivial-sector C3 average of 2/9; no physical normalization, dynamics, or readout was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00034-acphilambda_ambient_equivari`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The condition R^j k = k restricts the trace to k = (κ,κ,κ), yielding Tr(exp(-tΔ)R^j) = Σ_m exp[-t(6-6cos(2πm/N))], whose per-unit-[111]-length continuum coefficient is (1/3)(4πt)^(-1/2).  _(class `C`)_
+- **chain closes:** True — The cyclic lattice action and nearest-neighbor Laplacian determine the fixed momenta, dispersion, and normalization factors directly. The retained-bounded authority independently supplies the matching fixed-locus density and explicitly excludes physical readout.
+- **rationale:** The runner genuinely constructs the finite-lattice Laplacian and rotation operators, checks their dense equivariant traces, and computes the continuum and transverse factors rather than merely printing imported constants. The fixed-momentum localization and √3 site-to-length conversion close from the stated lattice objects, while the sole cited authority has retained_bounded status. The note keeps physical normalization and readout outside its bounded conclusion.
 - **auditor confidence:** high
 
 ### `acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02`

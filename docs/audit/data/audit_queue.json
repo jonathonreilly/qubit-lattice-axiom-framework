@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 387,
     "high": 265,
-    "leaf": 751,
+    "leaf": 750,
     "medium": 497
   },
   "cycle_break_target_count": 10,
@@ -35471,30 +35471,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "acphilambda_ambient_equivariant_heat_trace_face_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "acphilambda_cross_arc_unit_classification_wiring_2026-07-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -56916,6 +56892,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 194,
-  "total_pending": 1900
+  "ready_count": 193,
+  "total_pending": 1899
 }

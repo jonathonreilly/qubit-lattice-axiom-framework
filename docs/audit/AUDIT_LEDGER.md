@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1787 |
+| unaudited | 1786 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 27 |
+| ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 97 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -72,8 +72,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 61 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 27 |
-| `unaudited` | 2132 |
+| `audited_renaming` | 28 |
+| `unaudited` | 2131 |
 
 | claim_type | count |
 |---|---:|
@@ -1705,6 +1705,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | weak | codex-current | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -9530,6 +9531,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The runner genuinely computes finite linear algebra for H, G0, neutral sources, and a perturbed-kernel failure, but only after defining the weak-field response to be G0 rho. That verifies consistency and uniqueness within the stipulated response model; it does not derive that gravity is mediated by the same lattice propagator. The note's own boundary explicitly demotes this to renaming / bounded weak-field support and forbids citing it as a retained derivation of L^{-1}=G0 or the gravitational response kernel.
 - **open / conditional deps cited:**
   - `GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`
+- **auditor confidence:** high
+
+### `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16`
+
+- **Note:** [`GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](../../docs/GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The one-axis lattice dispersion's fixed-energy wavenumber and normalized phase-density expansion, including the proposed optical-index/Fermat identification on slowly varying piecewise-constant paths.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00027-gravity_fixed_energy_eikonal`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** After assuming Phase[s] = sum_j k_{s_j} Delta l_j, the note introduces n_j := k_{s_j}/k0 and identifies S_eik[s] = sum_j n_j Delta l_j as the Fermat functional.  _(class `E`)_
+- **chain closes:** False — The dispersion inversion and coefficient expansion close algebraically, but the optical-index/Fermat conclusion is introduced by definition after assuming local phase additivity. No supplied theorem derives the lattice eikonal phase law or Fermat ray variational principle from the spatially varying generator.
+- **rationale:** Issue: the load-bearing step defines n as k_s/k0 and then names the resulting normalized phase sum the Fermat functional. Why this blocks: the runner verifies the ensuing algebra and numerical expansions but constructs the optical functional using that same definition, without deriving phase additivity or ray stationarity from H_0+s(x)I. Repair target: supply a bounded discrete-lattice eikonal theorem establishing local phase accumulation and the Fermat variational law for the stated slowly varying packet. Claim boundary until fixed: the exact fixed-energy wavenumber, sign, derivative, and c_E expansion remain valid algebraic results.
 - **auditor confidence:** high
 
 ### `gravity_full_self_consistency_note`

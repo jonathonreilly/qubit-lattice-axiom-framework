@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1735 |
+| unaudited | 1734 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 129 |
+| ~~audited_conditional~~ | 130 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 15 |
 | `audited_clean` | 1358 |
-| `audited_conditional` | 129 |
+| `audited_conditional` | 130 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2082 |
+| `unaudited` | 2081 |
 
 | claim_type | count |
 |---|---:|
@@ -1525,6 +1525,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -2117,6 +2118,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   - `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+- **auditor confidence:** high
+
+### `acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04`
+
+- **Note:** [`ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded no-go against deriving the R-eta h-unit coefficient beta = 1 from the four named approved axioms/primitives plus nonexhaustive rival-carrier elimination; broader owner-governed premise surfaces were not audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00014-acphilambda_r_eta_hunit_appr`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The declared contents of the four approved axioms and primitives supply no angle-readout bridge, and eliminating several nonidentity conversion carriers cannot derive beta = 1 without an exhaustive carrier theorem and a licensed identity rule.  _(class `A`)_
+- **chain closes:** False — The premise-boundary texts support the logical non-supply argument, but the restricted packet does not provide the current axiom-premise registry contents needed to prove that those four nodes are exhaustive. The runner aborts before that check because it assumes a now-removed live Tier-A derivation-target entry.
+- **rationale:** The substantive inference is a sound class-(A) bounded no-go if the approved-premise registry contains only the four asserted nodes. That exhaustiveness is load-bearing and is neither independently exposed in the packet nor verified by the failed runner. The supplied Tier-A authority also records later AC retirement through owner governance, so the repaired check must distinguish approved axioms/primitives from the newer owner-governed surface.
+- **open / conditional deps cited:**
+  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
 - **auditor confidence:** high
 
 ### `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04`

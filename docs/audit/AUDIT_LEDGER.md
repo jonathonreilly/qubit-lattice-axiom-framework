@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1790 |
+| unaudited | 1789 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 94 |
+| ~~audited_conditional~~ | 95 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1350 |
-| `audited_conditional` | 94 |
+| `audited_conditional` | 95 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2135 |
+| `unaudited` | 2134 |
 
 | claim_type | count |
 |---|---:|
@@ -1507,6 +1507,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_angle_native_frontier_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
@@ -1974,6 +1975,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The existence on the same finite record frame of several additive scalar readouts, together with the family Phi_beta = beta S_sum, shows that Record additivity selects neither the fixed-locus readout class nor the identity unit beta = 1.  _(class `A`)_
 - **chain closes:** False — The algebraic witnesses support the narrow non-entailment argument, but the claimed current Tier-A boundary is contradicted by the supplied registry, which reports zero live Tier-A targets and owner-governed retirement of AC_phi_lambda. The missing step is a rematch showing that the audited surface excludes or correctly incorporates the adopted owner-governed premise.
 - **rationale:** The counterexample families are genuine class-A checks showing that additivity alone does not determine either h-class or h-unit. However, the runner terminates on a KeyError because it expects an obsolete live derivation-target entry, while the supplied registry explicitly says AC_phi_lambda has been retired from live Tier-A through owner governance. The fixed-locus authority also explicitly leaves the physical readout identification open, so the broader current-surface claim is not closed by this packet.
+- **open / conditional deps cited:**
+  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
+  - `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+- **auditor confidence:** high
+
+### `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04`
+
+- **Note:** [`ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded no-go showing that generic record formation and occupancy-reading occurrence streams do not entail the R-eta phase/readout identification or its normalization.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00024-acphilambda_r_eta_occurrence`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The Record axiom supplies occurrence-as-fact but no event predicate, coherence-reading interface, rate normalization, reset protocol, or bridge identifying an occurrence statistic with Phi = 2/3.  _(class `A`)_
+- **chain closes:** True — The axiom expressly withholds the required formation and readout laws, while the supplied carrier algebra shows occupancy laws are delta-blind and the proposed rate ratio retains the free parameters |b| and a_act. This suffices for the scoped non-entailment without ruling out a separately supplied coherence-event theorem.
+- **rationale:** The scientific no-go is a genuine class-A closure over the stated axiom boundary and retained-bounded carrier inputs. However, the runner aborts before executing its load-bearing algebra because it assumes the superseded live Tier-A derivation_targets layout, whereas the cited current registry records AC_phi_lambda as owner-governance-retired. The claimed 139-pass verification and current registry-boundary checks therefore remain uncertified by the supplied executable artifact.
 - **open / conditional deps cited:**
   - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   - `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`

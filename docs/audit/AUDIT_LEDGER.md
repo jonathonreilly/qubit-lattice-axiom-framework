@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 929 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1749 |
+| unaudited | 1748 |
 | audit_in_progress | 9 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 34 |
 | ~~audited_conditional~~ | 136 |
-| ~~audited_failed~~ | 16 |
+| ~~audited_failed~~ | 17 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -75,10 +75,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1343 |
 | `audited_conditional` | 136 |
 | `audited_decoration` | 69 |
-| `audited_failed` | 38 |
+| `audited_failed` | 39 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2096 |
+| `unaudited` | 2095 |
 
 | claim_type | count |
 |---|---:|
@@ -1728,6 +1728,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `registration_reinstates_chirality_no_go_note_2026-06-07` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `shapiro_diamond_bridge_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | F | - |
@@ -17539,6 +17540,29 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The current minimal Record axiom supplies only finite additivity/content-determination, while the retained_bounded K/CPT bridge supplies the orbit-constancy and determinant-character/log-character homomorphism boundary as explicit supplied-context structure. Over those inputs the odd-plus-even algebra forces the zero phase functional, and the note explicitly excludes physical strong-CP, mass, species, and non-homomorphic phase-readout bridges.
 - **rationale:** The repaired/current claim is a bounded algebraic closure, not a derivation of the homomorphism boundary from Record or a physical-readout theorem. The direct non-axiom dependency is already audited_clean with effective_status retained_bounded, and the minimal-axiom dependency is accepted premise/meta context rather than an open physics bridge. The current runner completes with PASS=38 and FAIL=0, checking the algebraic identities, hostile non-homomorphic controls, and source-boundary guards without asserting downstream physical bridge closure.
 - **auditor confidence:** high
+
+### `registration_reinstates_chirality_no_go_note_2026-06-07`
+
+- **Note:** [`REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md`](../../docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Conditional finite-dimensional result for the two explicitly tested partitions {P0,P1,P2} and {P0,P1+P2}: D annihilates every Gamma_chi-anticommuting Hermitian operator; no general Record-selected-partition or Koide-value no-go was established.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T174516Z-d2660b50-00009-registration_reinstates_chir`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because every chosen registration block lies wholly within one Gamma_chi eigenspace, P_k M P_k vanishes for every block whenever {M,Gamma_chi}=0, hence D(M)=0.  _(class `A`)_
+- **chain closes:** False — The annihilation identity closes for D3 and D2. The broader chain fails because the C3-invariant coarsening {P0+P1,P2} straddles Gamma_chi eigenspaces and can register an anticommuting carrier, while the cited authority proves only anticommutation implies Q=2/3, not the asserted converse or circulant implies Q=1.
+- **rationale:** Issue: although the D3 and D2 annihilation calculation is correct, the no-go generalizes falsely because the C3-invariant central coarsening {P0+P1,P2} straddles Gamma_chi eigenspaces and registers a P0-to-P1 anticommuting carrier, while the cited theorem proves only anticommutation implies Q=2/3 and the runner never computes Q=1. Why this blocks: the claimed exclusion of all legitimate central decompositions and the inference that registration cannot source Q=2/3 do not follow. Repair target: restrict the theorem to the two stated partitions and add a retained partition-selection theorem plus valid Koide-necessity and Q=1 bridges before restoring the broader conclusion. Claim boundary until fixed: only the exact finite-dimensional annihilation identity for D3 and D2 is supported.
+- **open / conditional deps cited:**
+  - `KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md`
+  - `G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md`
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial_narrowing`)
+  - **gate failures:**
+    - N1: a C3-invariant central coarsening survives and several cited alternative routes remain open or untested.
+    - N2-N3: the Record-to-D bridge, Koide necessity converse, K-reality selector, and circulant-to-Q=1 bridge are unresolved.
+    - N5: the all-partitions, iff, and Q=1 rhetoric exceeds the tested resolutions.
+    - N7: the strongest central-coarsening steelman succeeds against the broad no-go.
+    - N8: the cross-cycle packet omits three applicable route authorities.
 
 ### `relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10`
 

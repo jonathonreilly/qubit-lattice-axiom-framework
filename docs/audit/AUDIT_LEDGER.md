@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 945 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 26 |
-| unaudited | 1754 |
+| unaudited | 1753 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 29 |
+| ~~audited_renaming~~ | 30 |
 | ~~audited_conditional~~ | 115 |
 | ~~audited_failed~~ | 10 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,8 +73,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 62 |
 | `audited_failed` | 32 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 29 |
-| `unaudited` | 2099 |
+| `audited_renaming` | 30 |
+| `unaudited` | 2098 |
 
 | claim_type | count |
 |---|---:|
@@ -1739,6 +1739,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
+| `hierarchy_formula_ew_vev_observable_identification_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -10545,6 +10546,25 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For any lambda > 0, rho_star -> lambda^4 rho_star and v_i -> lambda v_i leave all endpoint ratios unchanged, while multiple positive endpoint coefficient surfaces remain compatible with the same fixed-density algebra and no predicate selects the physical Higgs-density endpoint.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from exact positive-real algebra: absolute density rescaling preserves all endpoint ratios, and the supplied fixed-density map admits multiple positive endpoint coefficients without a selector predicate. No observed EW value, fitted selector, or physical VEV identification is used.
 - **rationale:** The proof is an algebraic invariance and non-selection result over the cited fixed-density readout, not a positive physical identification. The D4 bridge is retained-grade via decoration-under-retained status, and the EW bridge is retained_bounded; the no-go uses their explicit boundary rather than importing an open selector as a premise. The runner mixes cross-note boundary checks with exact algebraic consistency checks and uses no external comparator. The N1-N8 no-go gate is present and the claim remains narrow: it blocks only reuse of fixed-density algebra alone, not future independent selector theorems.
+- **auditor confidence:** high
+
+### `hierarchy_formula_ew_vev_observable_identification_bridge_bounded_note_2026-05-26`
+
+- **Note:** [`HIERARCHY_FORMULA_EW_VEV_OBSERVABLE_IDENTIFICATION_BRIDGE_BOUNDED_NOTE_2026-05-26.md`](../../docs/HIERARCHY_FORMULA_EW_VEV_OBSERVABLE_IDENTIFICATION_BRIDGE_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the proposed bounded identification of the dimension-one hierarchy-formula scalar with the one-doublet electroweak Higgs VEV parameter, given C1-C4; the canonical numerical match was treated as illustrative only.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00064-hierarchy_formula_ew_vev_obs`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** In (B7), scalarity from C4 plus mass dimension one from C2-C3 is taken to imply that the hierarchy output can be assigned to the EW Higgs VEV parameter v.  _(class `F`)_
+- **chain closes:** False — The inputs establish that the hierarchy output is a dimension-one scalar, while the EW authority establishes the mass dictionary conditional on an independently supplied Higgs doublet. No cited theorem constructs a map giving the hierarchy output the Higgs doublet representation or otherwise distinguishes v from other dimension-one scalars.
+- **rationale:** Issue: B7 assigns two existing concepts to one another after checking only scalarity and dimensional compatibility. Why this blocks: neither C4 nor the EW diagonalization theorem derives the physical observable map, and the runner checks arithmetic after the assignment without constructing that map. Repair target: a retained bridge deriving the Higgs-doublet carrier and its VEV readout from the hierarchy output, with a runner that computes the map. Claim boundary until fixed: the formula supplies a dimension-one scalar candidate with a bounded canonical-surface numerical match, not a derived identification with the EW VEV.
+- **open / conditional deps cited:**
+  - `BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md`
+  - `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
+  - `EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`
 - **auditor confidence:** high
 
 ### `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10`

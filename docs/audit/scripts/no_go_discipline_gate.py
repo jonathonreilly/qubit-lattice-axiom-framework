@@ -64,16 +64,12 @@ SOURCE_NEGATIVE_RE = re.compile(
     r"(?:^|\n)\s*(?:walls?|admissions?)\s*:",
     re.IGNORECASE,
 )
-OUTPUT_NEGATIVE_RE = re.compile(
-    r"structurally (?:closed|undecidable)|no route exists|"
-    r"no retained primitive(?: supplies)?|requires? (?:a )?new axiom|"
-    r"cannot be derived from|does not lift|cannot lift|"
-    r"conditional on [^\n]{0,120}\b(?:walls?|admissions?)\b|"
-    r"residual wall|named walls?|"
-    r"\b(?:walls?|admissions?|obstruction)\b|"
-    r"\b(?:route|attempt|construction)\b[^\n]{0,80}\bdoes not close\b",
-    re.IGNORECASE,
-)
+# Verdict prose uses the same assertion-shaped trigger as source prose. Bare
+# vocabulary such as "admission", "wall", or "obstruction" is not enough:
+# positive rows routinely name supplied inputs or explicitly disclaim that a
+# scope clause is a live wall. The structured gate is required only when the
+# output actually asserts a negative boundary.
+OUTPUT_NEGATIVE_RE = SOURCE_NEGATIVE_RE
 OUTPUT_BOUNDARY_FIELDS = (
     "claim_scope",
     "load_bearing_step",
@@ -272,6 +268,28 @@ def build_cross_cycle_index(
             for field in ("claim_id", "claim_scope", "verdict_rationale", "note_path")
         )
     )
+
+    loop_ledger_glob = ".claude/science/physics-loops/**/NO_GO_LEDGER.md"
+    loop_ledger_paths = sorted(root.glob(loop_ledger_glob))
+    for ledger_path in loop_ledger_paths:
+        try:
+            ledger_text = ledger_path.read_text(encoding="utf-8", errors="replace")
+        except OSError as exc:
+            ledger_text = f"[could not read loop no-go ledger: {exc}]"
+        relative_path = ledger_path.relative_to(root).as_posix()
+        candidates.append(
+            {
+                "candidate_id": f"physics_loop_no_go_ledger:{relative_path}",
+                "kind": "physics_loop_no_go_ledger",
+                "source_claim_id": relative_path,
+                "note_path": relative_path,
+                "content_sha256": hashlib.sha256(ledger_text.encode("utf-8")).hexdigest(),
+                "content_excerpt": ledger_text[:4000],
+                "content_truncated": len(ledger_text) > 4000,
+                "matching_terms": sorted(current_terms.intersection(terms(ledger_text))),
+            }
+        )
+
     similar: list[tuple[int, str, dict[str, Any], list[str]]] = []
     for other_id, other in ledger_rows.items():
         if other_id == cid or other.get("claim_type") != "no_go":
@@ -304,10 +322,25 @@ def build_cross_cycle_index(
         {
             "schema": "no_go_cross_cycle_index_v1",
             "claim_id": cid,
-            "search_scope": (
-                "current-row audit history, one-hop authority audit history, "
-                "Tier-A retirements, and owner-governed retirements"
-            ),
+            "search_scope": {
+                "current_row_audit_history": True,
+                "one_hop_authority_audit_history": True,
+                "tier_a_retirements": True,
+                "owner_governed_retirements": True,
+                "similar_no_go_rows": {
+                    "source": "audit ledger rows with claim_type=no_go",
+                    "minimum_shared_terms": 2,
+                    "candidate_limit": 25,
+                },
+                "physics_loop_no_go_ledgers": {
+                    "glob": loop_ledger_glob,
+                    "scanned_count": len(loop_ledger_paths),
+                    "scanned_paths": [
+                        path.relative_to(root).as_posix() for path in loop_ledger_paths
+                    ],
+                    "candidate_policy": "every tracked ledger is included",
+                },
+            },
             "candidates": candidates,
         },
         indent=2,

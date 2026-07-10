@@ -2531,6 +2531,19 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "verdict_rationale": "This is not an admission; the identity closes.",
             })
         )
+        for rationale in (
+            "These are scope boundaries, not live admissions; the positive identity closes.",
+            "The explicit admission that beta=6 is supplied remains open, but does not block the theorem.",
+            "This is not a bounded wall claim; the exact construction closes.",
+            "The arithmetic follows from one admitted input and makes no negative claim.",
+        ):
+            with self.subTest(rationale=rationale):
+                self.assertFalse(
+                    m.output_requires_no_go_discipline({
+                        "claim_type": "positive_theorem",
+                        "verdict_rationale": rationale,
+                    })
+                )
         self.assertTrue(
             m.source_requires_no_go_discipline(
                 "docs/spatial_anisotropy_no_go_note.md",
@@ -2544,6 +2557,56 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "This is not an admission; it is an exact identity.",
                 "positive_theorem",
             )
+        )
+
+    def test_cross_cycle_index_walks_every_physics_loop_no_go_ledger(self):
+        m = _import("no_go_discipline_gate")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            first = (
+                root
+                / ".claude/science/physics-loops/first-cycle/NO_GO_LEDGER.md"
+            )
+            second = (
+                root
+                / ".claude/science/physics-loops/second-cycle/NO_GO_LEDGER.md"
+            )
+            first.parent.mkdir(parents=True, exist_ok=True)
+            second.parent.mkdir(parents=True, exist_ok=True)
+            first.write_text("# No-Go Ledger\nselector obstruction retired\n", encoding="utf-8")
+            second.write_text("# No-Go Ledger\ndynamics wall remains\n", encoding="utf-8")
+
+            rendered = json.loads(
+                m.build_cross_cycle_index(
+                    {
+                        "claim_id": "target",
+                        "claim_scope": "selector obstruction",
+                        "deps": [],
+                    },
+                    {},
+                    root,
+                )
+            )
+
+        scope = rendered["search_scope"]["physics_loop_no_go_ledgers"]
+        expected_paths = [
+            ".claude/science/physics-loops/first-cycle/NO_GO_LEDGER.md",
+            ".claude/science/physics-loops/second-cycle/NO_GO_LEDGER.md",
+        ]
+        self.assertEqual(scope["glob"], ".claude/science/physics-loops/**/NO_GO_LEDGER.md")
+        self.assertEqual(scope["scanned_count"], 2)
+        self.assertEqual(scope["scanned_paths"], expected_paths)
+        loop_candidates = [
+            candidate
+            for candidate in rendered["candidates"]
+            if candidate["kind"] == "physics_loop_no_go_ledger"
+        ]
+        self.assertEqual(
+            [candidate["note_path"] for candidate in loop_candidates],
+            expected_paths,
+        )
+        self.assertTrue(
+            all(candidate["content_sha256"] for candidate in loop_candidates)
         )
 
     def test_pass_requires_five_distinct_routes(self):
@@ -3391,7 +3454,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             claim_type="positive_theorem",
             invalidation_reason="criticality_increased:leaf->medium",
         )
-        archived["claim_scope"] = "No obstruction remains in this scope."
+        archived["claim_scope"] = "A scoped obstruction rules out the carrier."
         archived["chain_closes"] = True
         row = self._seed_with_archived(cid, archived)
         row["note_path"] = note_path

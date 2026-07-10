@@ -1535,6 +1535,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `confinement_string_tension_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `corner_axis_free_transfer_extension_per_channel_trace_correspondence_and_mode_set_fork_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `corner_mode_set_fork_resolution_layer_is_record_dynamics_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1582,7 +1583,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
-| `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -4819,6 +4819,23 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **rationale:** The runner genuinely checks the finite-dimensional transfer and trace identities rather than merely printing expected results. However, its fork_bookkeeping function stipulates Z_d = 2 or 1 and pi_over_g = 1, so it verifies consequences of the proposed fork rather than deriving its exhaustiveness or normalization. The registrability authority explicitly leaves weighting, normalization, physical-readout identification, and related occupancy content outside its theorem, so it cannot close that missing bridge.
 - **open / conditional deps cited:**
   - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+- **auditor confidence:** high
+
+### `corner_mode_set_fork_resolution_layer_is_record_dynamics_bounded_note_2026-06-12`
+
+- **Note:** [`CORNER_MODE_SET_FORK_RESOLUTION_LAYER_IS_RECORD_DYNAMICS_BOUNDED_NOTE_2026-06-12.md`](../../docs/CORNER_MODE_SET_FORK_RESOLUTION_LAYER_IS_RECORD_DYNAMICS_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The two formal branch functionals on the supplied free U=1, three-channel, L_s=2 transfer class and the claimed inference from registration blindness to a record-dynamics resolution layer.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00050-corner_mode_set_fork_resolut`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because both unequal branch constructions satisfy log-additivity and K/CPT-orbit constancy, registrability cannot select between them, so the claimed resolution layer is record dynamics.  _(class `A`)_
+- **chain closes:** False — The packet verifies positivity, symmetry, log-additivity, and inequality of the formal branch functions. It does not supply a retained bridge identifying the channels and geometric-mean orbit slot as disjoint Record readouts, or establish that the named dynamics routes exhaust the possible resolution layer.
+- **rationale:** Issue: the note upgrades transfer-factor bookkeeping—especially the defined square-root orbit factor—to Record-registrable readouts and then to an exhaustive record-dynamics layer statement without a retained bridge. Why this blocks: the registrability authority explicitly leaves the physical-readout identification open, while the runner checks only algebra and textual firewalls, not the Record carrier or resolver exhaustiveness. Repair target: supply a retained bridge constructing the relevant disjoint Record factors and wire the R-D and orbit-occupancy authorities as load-bearing dependencies establishing the dynamics-layer classification. Claim boundary until fixed: the packet supports only that the two formal functions are positive, K/CPT-even, log-additive, and unequal on the supplied free class.
+- **open / conditional deps cited:**
+  - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+  - `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`
+  - `KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md`
 - **auditor confidence:** high
 
 ### `coulomb_stability_upper_bound_support_note_2026-05-20`
@@ -17089,19 +17106,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The surviving no-go is only: the current minimal axioms do not force the formation rule/process/state/site/weight/rate.  _(class `A`)_
 - **chain closes:** True — The source note has narrowed away the old unforced-occurrence claim: the minimal axiom memo explicitly says Records form while leaving formation rules and record-production dynamics outside axiom content. The finite-dimensional negative controls support the same boundary by showing that trivial, decoupled, and eigenstate unitary surfaces do not supply a concrete process, rule, state trigger, site, weight, or rate.
 - **rationale:** The current runner completed with TOTAL: PASS=6 FAIL=0 and its cached output matches the narrowed target. The load-bearing claim follows from the accepted minimal axiom boundary plus exact finite-dimensional negative controls; it no longer asserts that generic record occurrence is absent. Residual risk is downstream only: a later admitted or derived record-production model could supply formation details, but that would be outside the minimal axiom baseline audited here.
-
-### `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`
-
-- **Note:** [`RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md`](../../docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The explicit finite S plus E_1..E_n model: all-state, all-continuous-time pointer-population conservation and the displayed controlled-copy record construction with fresh or idle fragments.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-record_formation_pointer-045`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Under the stated quantum-Darwinism convention, persistent objective pointer-record formation requires [H_int, Pi_S] = 0, while H_int = g sigma_z(S) tensor sum_k sigma_x(E_k) at t = pi/(4g), with fresh or idle fragments, is a sufficient finite construction.  _(class `C`)_
-- **chain closes:** False — The runner establishes the all-state, all-time pointer-conservation iff theorem and the particular sufficient construction, but it does not establish that persistent record formation under the stated fixed initial state and further discrete U steps generally implies [H_int, Pi_S] = 0. Its additivity check also defines a separate record-mass by summing singleton information rather than proving that the stated Holevo information is additive over fragment unions.
-- **rationale:** The dense-operator runner genuinely computes the finite controlled-copy construction and correctly verifies the Heisenberg pointer-conservation equivalence. However, the note promotes that equivalence into a broader necessity claim for persistent objective record formation without supplying the required quantifier and dynamics argument. The runner’s tautologically additive record-mass is also not the same functional as the union-fragment Holevo information specified in the claim.
-- **auditor confidence:** high
 
 ### `record_function_finite_sector_algebra_2026-06-05`
 

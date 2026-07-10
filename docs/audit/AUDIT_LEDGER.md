@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 934 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 27 |
-| unaudited | 1755 |
+| unaudited | 1754 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 120 |
+| ~~audited_conditional~~ | 121 |
 | ~~audited_failed~~ | 13 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1349 |
-| `audited_conditional` | 120 |
+| `audited_conditional` | 121 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2102 |
+| `unaudited` | 2101 |
 
 | claim_type | count |
 |---|---:|
@@ -1516,6 +1516,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_r_eta_doublet_clock_rate_normalization_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `activity_energy_bound_witnesses_bounded_note_2026-07-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -2214,6 +2215,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the fixed ordered-lattice family, valley actions stay TOWARD and the F~M exponent follows the weak-field power of f, with weak-field-linear valleys giving F~M = 1.00.  _(class `C`)_
 - **chain closes:** True — The included runner source genuinely constructs the lattice, field, slit geometry, propagation, Born diagnostic, TOWARD counts, and log-log mass-scaling fit rather than printing expected constants. Its completed output matches the note's load-bearing table for the scoped tested actions.
 - **rationale:** Within the stated fixed-family and tested-action scope, the claim is supported by a first-principles numerical computation from the model operators and fixed parameters. The cited companion sweep is retained_bounded and independently supports the same F~M = p pattern for S = L(1-f^p) on a closely matched fixed family. The clean result should not be read as proving arbitrary g(f) universality or architecture-independent tail laws.
+- **auditor confidence:** high
+
+### `activity_energy_bound_witnesses_bounded_note_2026-07-08`
+
+- **Note:** [`ACTIVITY_ENERGY_BOUND_WITNESSES_BOUNDED_NOTE_2026-07-08.md`](../../docs/ACTIVITY_ENERGY_BOUND_WITNESSES_BOUNDED_NOTE_2026-07-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact finite-dimensional local-activity inequality and the declared dense-model and one-particle finite toy diagnostics, including the note's thresholded-support characterization; no record-formation or gravity theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-131002-abb23e4d-activity_energy_bound_wi-001`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Terms disjoint from R vanish after the partial trace, while trace-norm contractivity, the triangle inequality, and ||[h_X,rho]||_1 <= 2||h_X||||rho||_1 yield a_R <= 2 sum_(X intersects R)||h_X||.  _(class `A`)_
+- **chain closes:** False — The operator inequality closes by standard partial-trace and trace-norm arguments, and the runner genuinely computes the reported stationary, far-region, overlap, and centroid diagnostics. The diagnostic chain is incomplete because the note says the profile comparisons use thresholded supports, but the runner defines no support threshold and evaluates full-array overlaps and centroids.
+- **rationale:** Issue: the note characterizes the profile comparisons as using thresholded supports, but the supplied runner contains no thresholded-support computation. Why this blocks: the exact bound closes, but the restricted packet does not substantiate that declared diagnostic methodology. Repair target: remove the thresholded-support statement or implement and report the stated thresholding in the runner and cache. Claim boundary until fixed: the exact activity bound and unthresholded finite-time toy diagnostics are supported, while AO remains only an explicit optional premise.
 - **auditor confidence:** high
 
 ### `adaptive_coevolving_geometry_no_go`

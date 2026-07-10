@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 944 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1734 |
+| unaudited | 1733 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 129 |
+| ~~audited_conditional~~ | 130 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 1360 |
-| `audited_conditional` | 129 |
+| `audited_conditional` | 130 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2081 |
+| `unaudited` | 2080 |
 
 | claim_type | count |
 |---|---:|
@@ -1556,6 +1556,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `energy_gauss_constraint_obstruction_route_b_note_2026-07-08` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -6683,6 +6684,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Since H_oo - E I = (mu - E)I, the Schur complement gives mu' = mu - 2t^2/(mu - E) and t' = t^2/(mu - E), hence mu' - E = (mu - E)(1 - 2h^2) and h' = h^2/(1 - 2h^2).  _(class `A`)_
 - **chain closes:** True — The independent Schur-complement calculation gives the stated diagonal and nearest-neighbor effective parameters with the correct signs and factors. The singular gate mu = E and the displayed-map pole at h^2 = 1/2 are excluded by the stated domain/chart.
 - **rationale:** The load-bearing step is a direct algebraic closure, not a definition, renaming, tuned numerical match, or external comparator. The runner source genuinely constructs finite-ring Hamiltonians, performs the Schur complement, and checks the formula, singular gate, threshold covariance, length diagnostic, sign quotient, and chart boundary without importing a contested premise. No cited authority or open bridge is needed for this bounded free-chain statement.
+- **auditor confidence:** high
+
+### `energy_gauss_constraint_obstruction_route_b_note_2026-07-08`
+
+- **Note:** [`ENERGY_GAUSS_CONSTRAINT_OBSTRUCTION_ROUTE_B_NOTE_2026-07-08.md`](../../docs/ENERGY_GAUSS_CONSTRAINT_OBSTRUCTION_ROUTE_B_NOTE_2026-07-08.md)
+- **claim_type:** `no_go`
+- **claim_scope:** For the declared cell-energy apportioning and coupling point, with mutually commuting auxiliaries that also commute with the matter densities, the adjacent constraints G_0 and G_1 have a nonzero commutator.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00017-energy_gauss_constraint_obst`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** At the displayed coupling point, the computed adjacent matter commutator [h_0,h_1] is nonzero, so the identity [G_0,G_1]=[h_0,h_1] makes the commuting-auxiliary constraint pair nonabelian.  _(class `C`)_
+- **chain closes:** False — The primary runner delegates the load-bearing construction and operator algebra to scripts/noether_source_current_classification_2026_07_08.py, whose source is absent from the packet. Consequently, the restricted packet cannot verify that the reported nonzero commutator is genuinely computed from the declared Hamiltonian rather than produced by opaque helper behavior.
+- **rationale:** The displayed expansion of the constraint commutator is algebraically sound under the two explicit auxiliary-commutation premises, and the completed runner reports all five checks passing. However, the runner dynamically imports its load-bearing Hamiltonian construction, normal-ordering engine, commutator primitives, and matrix representation from an omitted helper source, despite the packet claiming that no helper imports were detected. This runner-artifact defect prevents verification of the first-principles computation and therefore prevents a clean verdict.
 - **auditor confidence:** high
 
 ### `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07`

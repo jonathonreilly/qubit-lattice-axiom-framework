@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 196 |
-| **retained_no_go** | 211 |
+| **retained_no_go** | 212 |
 | **retained_bounded** | 944 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1728 |
+| unaudited | 1727 |
 | audit_in_progress | 12 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
@@ -72,13 +72,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 14 |
-| `audited_clean` | 1360 |
+| `audited_clean` | 1361 |
 | `audited_conditional` | 134 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 35 |
-| `unaudited` | 2075 |
+| `unaudited` | 2074 |
 
 | claim_type | count |
 |---|---:|
@@ -167,6 +167,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_projective_equivariance_k_odd_trace_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | C | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2034,6 +2035,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The narrow axiom-and-primitive non-supply conclusion is well supported, and the finite algebra is explicitly conditional rather than presented as selection of a measure. However, the non-retained meta registry now reports zero live Tier-A targets and owner-governed retirement of AC_phi_lambda, contradicting the note's current-live-survivor framing. The runner confirms this stale dependency assumption by raising KeyError before reaching its substantive algebra checks.
 - **open / conditional deps cited:**
   - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
+- **auditor confidence:** high
+
+### `acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04`
+
+- **Note:** [`ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The Record formation append and finite Record additivity do not supply the historical AC_phi_lambda(i) measure-side doublet occupancy dictionary; the later owner-governance supply is a separate mechanism.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T160258Z-55b61261-00002-acphilambda_occupancy_format`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Two completions preserve occurrence, permanence, one-record-per-site uniqueness, and finite additivity while assigning distinct count-once and count-twice dictionaries, so the formation append cannot select between them.  _(class `A`)_
+- **chain closes:** True — The explicit finite countermodel pair satisfies the relevant Record axioms under both dictionaries yet yields distinct readings r=1 and r=1/2. Therefore the shared axiom content does not entail either dictionary.
+- **rationale:** The load-bearing argument is an exact model-separation check over the accepted Minimal Axioms authority, not a definition presented as a derivation. Hard-coding the two alternative dictionaries is appropriate here because they are countermodel witnesses; the runner independently verifies their shared formation, uniqueness, and additivity properties and their distinct readings. The registry authority is used only to establish the separate current governance posture and is not needed for the non-supply proof.
 - **auditor confidence:** high
 
 ### `acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02`

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 929 |
 | _retained_pending_chain_ | 16 |
 | open_gate | 27 |
-| unaudited | 1750 |
+| unaudited | 1749 |
 | audit_in_progress | 9 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 34 |
-| ~~audited_conditional~~ | 135 |
+| ~~audited_conditional~~ | 136 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -73,12 +73,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 13 |
 | `audited_clean` | 1343 |
-| `audited_conditional` | 135 |
+| `audited_conditional` | 136 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 34 |
-| `unaudited` | 2097 |
+| `unaudited` | 2096 |
 
 | claim_type | count |
 |---|---:|
@@ -1522,6 +1522,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `c2_w_supplier_reading_fork_fixed_point_unidentifiability_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
+| `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `confinement_string_tension_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -4214,6 +4215,26 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The mathematical chain is internally correct and closes from the retained one-hop authority plus standard finite-dimensional complex representation theory. The primary runner performs exact symbolic Pauli/idempotent/intertwiner checks and reports PASS=42, FAIL=0, with no helper opacity. Under the rubric, however, every load-bearing step is class A, there are zero D checks, and the note reduces to an algebraic consequence of a single retained upstream split theorem rather than a new independent first-principles computation.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** high
+
+### `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04`
+
+- **Note:** [`CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md`](../../docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Conditional on the stipulated V=R3 cyclic representation, Gamma_chi, and real self-adjoint operator class, anticommuting H has singlet-doublet form and no C3-equivariant operator selects a real doublet line; the claimed minimal-baseline forcing of the chosen [111] axis was not established.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T174516Z-d2660b50-00006-cl3_chiral_body_diagonal_axi`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** In the singlet-plus-doublet basis, anticommutation forces a real symmetric H to be purely singlet-doublet off-diagonal, while the real self-adjoint C3 commutant is scalar on the doublet and therefore selects no line h.  _(class `A`)_
+- **chain closes:** False — The restricted linear-algebra no-go closes, but the packet does not derive the hw=1 generation carrier, the selected C3 embedding, or its [111] axis from the full cubic minimal baseline. The cited generation-degeneracy theorem also addresses S3-to-proper-subgroup mass splitting, not the stricter selection of a real h under C3.
+- **rationale:** The runner correctly verifies the finite-dimensional commutant, anticommutant, orbit, staggered-hop, and J_cs identities, although several concluding PASS entries use unconditional True values and cannot establish framework sourcing. The advertised baseline-native conclusion additionally assumes the hw=1 generation/C3 embedding and treats one of the cube's four body diagonals as the selected singlet axis without a retained bridge from the minimal axioms. The safe result is the conditional algebraic no-go on a stipulated C3 representation.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial_narrowing`)
+  - **gate failures:**
+    - N1: The baseline generation/C3/[111] embedding route remains open.
+    - N2-N3: The advertised native-axis conclusion contains an unresolved carrier and subgroup-selection wall.
+    - N4: The generation-degeneracy authority does not match the stricter C3-breaking h-selection residual.
+    - N5: Baseline-forced axis rhetoric exceeds the tested conditional algebra.
+    - N7: The strongest full-cubic-symmetry steelman is unresolved.
 
 ### `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 

@@ -1,6 +1,7 @@
 # Record Local Finite Atom Availability Narrow Theorem
 
 **Date:** 2026-06-17
+**Surface update:** 2026-07-09 — restated on the live four-axiom memo (`Lattice`/`Qubit`/`Admissibility`/`Record`, 2026-06-29): the availability claim now names its declared admissibility-instance premise, the presence-conditional layer cites the live Record wording, and the legacy axiom name and 2026-06-05 memo citation are replaced. Finite-algebra content unchanged.
 **Claim type:** positive_theorem
 **Type:** positive_theorem
 **Status authority:** independent audit lane only. This source note does not
@@ -13,13 +14,16 @@ with cache
 
 **Depends on:**
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
+- [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md)
 
 ## Result
 
-For every finite `n`, the Lattice and Quantum axioms admit a concrete finite
-local readout context with `n` pairwise support-disjoint nonzero
-record-eligible readout atoms.
+For every finite `n`, the Lattice and Qubit axioms admit a concrete finite
+local readout context with `n` pairwise support-disjoint nonzero readout
+atoms. Under the declared admissibility instance named below — an instance
+premise, not axiom content — each chosen atom is available at its site, so
+the collection is record-eligible in the sense of the live Record axiom.
 
 Choose the lattice sites
 
@@ -27,7 +31,7 @@ Choose the lattice sites
 x_k = (k,0,0),    k = 0, ..., n-1.
 ```
 
-At each site, Quantum supplies a one-site copy of `M_2(C)`. In a declared local
+At each site, Qubit supplies a one-site copy of `M_2(C)`. In a declared local
 diagonal readout context choose
 
 ```text
@@ -54,14 +58,42 @@ record-eligible readout atoms is framework-native:
 - `Z^3` supplies arbitrary finite lists of distinct sites.
 - `M_2(C)` supplies nonzero orthogonal rank-one projectors in any declared
   one-site diagonal context.
-- Entrywise conjugation fixes the chosen projectors, so the Record axiom's
-  fixed `K`/CPT-orbit wording has a concrete finite model.
+- Entrywise conjugation fixes the chosen projectors inside the declared
+  context. On the live memo, `K`/CPT orbit structure is downstream
+  readout-context content, not generic axiom content; the `K`-fixedness here
+  is a property of this declared context, not an axiom-level requirement.
 - The finite Boolean count functional on the declared context can be declared
   additively unit-normalized.
 
 The repair does **not** say that this context is physically selected. It only
 proves that the source packet no longer has to import arbitrary finite nonzero
 readout atoms as mathematical objects.
+
+## Admissibility layer (declared instance premise)
+
+The live memo adds Admissibility: one fixed nearest-neighbor rule, covariant
+under lattice translations and proper cubic rotations, under which the
+available possibilities at each site are determined by, and vary with, the
+nearest-neighbor conditions. The axioms name this rule but do not supply its
+content. Whether the atom `P_1` is available at a given site therefore
+depends on the unspecified fixed rule and the neighbor conditions: it is
+instance content, and this note does not derive it.
+
+**Declared admissibility-instance premise.** The availability-side claim is
+stated under a declared instance: an admissibility rule and neighbor
+condition under which the chosen atom `P_1` lies in the available set at each
+chosen site `x_k`. The paired runner exhibits covariant toy instances in
+which the premise holds at every site, a covariant toy instance in which it
+fails (so the premise does real selective work and is not vacuous), and a
+toy instance whose available set varies with the neighbor conditions
+(matching the live memo's wording). None of these toy instances is claimed
+to be the framework's fixed rule.
+
+**Presence-conditional layer (axiom-native).** No instance premise is needed
+to read a realized stack: by the live Record axiom, when present, a record
+locks exactly one admissible local possibility. Realized records carry their
+admissibility by axiom. The declared instance premise is load-bearing only
+for the pre-record availability/eligibility claim above.
 
 ## Proof
 
@@ -105,13 +137,20 @@ This theorem does not derive:
 - a physical `K`/CPT bridge beyond the declared finite context;
 - a canonical normalization rule for all readout contexts;
 - a clock/rate, persistence dynamics, occupancy rule, or dial selector;
+- the content of the fixed admissibility rule, or that any particular atom
+  is admissible at any particular site (instance content; the declared
+  admissibility-instance premise above is named, not derived);
+- any claim that the toy admissibility instances in the runner are the
+  framework's fixed rule.
 - a completed infinite record.
 
 The retained no-go
 `RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`
-is respected: Lattice, Quantum, and Record alone still do not force any
-particular atom to be produced. This theorem only supplies the finite local
-availability/readout-context side of later conditional production claims.
+is respected on its current narrowed text: occurrence is axiom-forced by
+"Records form.", and the axioms still do not supply the formation
+rule/process/state/site/weight/rate. This theorem only supplies the finite
+local availability/readout-context side of later conditional production
+claims; it does not supply a formation rule.
 
 ## Runner Summary
 
@@ -125,5 +164,10 @@ The runner verifies:
 - the finite Boolean unit-count functional is additive;
 - for any proposed finite bound `B`, the construction has `B+1` finite
   nonzero record-eligible readout atoms;
-- production, probability, physical context selection, clock/rate, and dial
-  selection remain open gates.
+- covariant toy admissibility instances: one under which the declared
+  premise holds at every chosen site, one under which it fails (rejector),
+  and one whose available set varies with the neighbor conditions;
+- the presence-conditional reading: the live Record axiom's admissible-lock
+  wording is pinned from the memo text;
+- production, probability, physical context selection, clock/rate, dial
+  selection, and admissibility-instance selection remain open gates.

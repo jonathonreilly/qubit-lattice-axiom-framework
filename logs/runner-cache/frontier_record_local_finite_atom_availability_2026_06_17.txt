@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_local_finite_atom_availability_2026_06_17.py
-runner_sha256: 970fea5b752a83b4c4a20599d616361c37f030791bcd84167566949768a5906a
-timeout_sec: 120
+runner_sha256: 2824c826e50148a5951381b693ca77f2e9983217ad134b3cf2fe5fee783b7cc0
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.60
 status: ok
 ----- stdout -----
 Record local finite readout-atom availability theorem
@@ -12,13 +12,16 @@ audit_required_before_effective_retained: true
 proposal_allowed: false
 
 A. source authority and boundary text
-[PASS] A1 minimal axioms expose Lattice Z^3
-[PASS] A2 minimal axioms expose one-site M_2(C)
-[PASS] A3 minimal Record requires a supplied readout context
-[PASS] A4 minimal Record excludes production/probability/context selection
-[PASS] A5 retained no-go boundary keeps record formation unforced
-[PASS] A6 theorem boundary explicitly does not derive production
-[PASS] A7 theorem names record-eligible readout atoms, not produced records
+[PASS] A1 live Lattice axiom exposes cubic Z^3 sites
+[PASS] A2 live Qubit axiom exposes one-site M_2(C)
+[PASS] A3 live Admissibility axiom names one fixed covariant NN rule
+[PASS] A4 live Admissibility axiom requires neighbor-varying availability
+[PASS] A5 live Record axiom locks one admissible possibility
+[PASS] A6 live memo leaves formation-rule details downstream
+[PASS] A7 live memo keeps downstream bridges open
+[PASS] A8 narrowed no-go withholds the formation rule/process/state/site/weight/rate
+[PASS] A9 theorem boundary explicitly does not derive production
+[PASS] A10 theorem names the declared availability premise and record eligibility
 
 B. one-site diagonal readout context
 [PASS] B1 P0 is idempotent
@@ -29,6 +32,14 @@ B. one-site diagonal readout context
 [PASS] B6 both atoms are fixed by entrywise K
 [PASS] B7 atoms commute inside the declared readout algebra
 [PASS] B8 atoms are not central in all M_2(C)
+
+AD. declared toy admissibility instances
+[PASS] AD1 each toy NN-multiset rule is invariant under all neighbor permutations -- permutation invariance implies translation/proper-cubic-rotation covariance
+[PASS] AD2 R_all makes the declared P1 premise hold at every constructed site
+[PASS] AD3 R_p0only rejector detects failure of the declared P1 premise at every site -- the availability premise is selective, not vacuous
+[PASS] AD4 R_varying makes P1 availability vary with the neighbor condition
+[PASS] AD5 toy realized stack locks only possibilities available at lock time under R_all
+[NAMED] AD5 live presence-conditional layer: by the Record wording, a present record locks an admissible local possibility
 
 C. arbitrary finite disjoint supports on Z^3
 [PASS] C1 n=0: distinct line supports and one atom per support
@@ -63,8 +74,9 @@ E. boundary classifier
 [PASS] E6 physical context selection remains open
 [PASS] E7 clock/rate remains open
 [PASS] E8 dial selection remains open
+[PASS] E9 admissibility-instance selection remains open
 
-SCORECARD: PASS=43 FAIL=0
+SCORECARD: PASS=52 FAIL=0
 VERDICT: exact finite local readout-atom/context availability closes; production, probability, physical context selection, clock/rate, and dial selection remain open.
 
 ----- stderr -----

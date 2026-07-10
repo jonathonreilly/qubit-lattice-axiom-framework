@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 941 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1771 |
+| unaudited | 1770 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 109 |
+| ~~audited_conditional~~ | 110 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1352 |
-| `audited_conditional` | 109 |
+| `audited_conditional` | 110 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2116 |
+| `unaudited` | 2115 |
 
 | claim_type | count |
 |---|---:|
@@ -1518,6 +1518,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_real_holonomy_locus_identity_2026-07-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
@@ -2470,6 +2471,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Because the physical Sommer scale, QCD running and threshold matching, and g_bare = 1 normalization authority remain imported or open, the broad physical alpha_s(M_Z) route is not eligible for candidate retained-grade status and is only bounded support.  _(class `A`)_
 - **chain closes:** True — The retained-bounded parent explicitly excludes the physical scale, running, threshold, and sea-quark bridges; the accepted axiom memo does not supply g_bare = 1, and the retained-bounded Wilson matching theorem does not select it. Those supplied facts algebraically support the note's open-gate and bounded-support conclusion.
 - **rationale:** The conclusion being audited is the demotion and source-boundary claim, and that conclusion follows from the supplied retained-grade authorities and accepted axiom premise. The runner validates a supplied certificate and textual boundary conditions rather than computing alpha_s(M_Z) from framework primitives; it also performs external comparator checks against the PDG value and the 0.1181 target. This prevents promotion of the numerical result but directly corroborates the note's stated bounded-support status.
+- **auditor confidence:** high
+
+### `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`
+
+- **Note:** [`ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md`](../../docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The one-loop SU(3) Lambda-parameter transition and finite multi-threshold inverse-coupling composition, conditional on coupling continuity at each abstract one-flavor threshold.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00045-alpha_s_heavy_threshold_matc`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Imposing x_hi(M) = x_lo(M) on the one-loop solutions yields Lambda_lo = M * (Lambda_hi / M) ** [b0(n_f_hi) / b0(n_f_lo)].  _(class `A`)_
+- **chain closes:** False — The runner correctly verifies the Lambda transition and piecewise composition after copying x across each threshold. The unrestricted chain does not close because the LO no-jump matching condition is neither derived nor supplied by a retained or explicitly accepted-premise authority.
+- **rationale:** Issue: The runner sets x_below equal to x_above at every threshold, so it assumes rather than derives the load-bearing LO no-jump matching condition. Why this blocks: The Lambda transition and piecewise map are valid algebraic consequences, but the restricted packet provides no retained or accepted-premise authority for physical threshold continuity. Repair target: Supply and cite a retained derivation or explicitly approved-premise registration of alpha_s^hi(M) = alpha_s^lo(M). Claim boundary until fixed: Only the conditional one-loop algebraic kernel, not an unconditional heavy-threshold matching theorem or downstream alpha_s(M_Z), is supported.
 - **auditor confidence:** high
 
 ### `alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18`

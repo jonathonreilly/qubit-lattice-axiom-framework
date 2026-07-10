@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1785 |
+| unaudited | 1784 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 98 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1350 |
-| `audited_conditional` | 98 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2130 |
+| `unaudited` | 2129 |
 
 | claim_type | count |
 |---|---:|
@@ -1573,6 +1573,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `s3_time_primitive_chain_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `shapiro_family_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
@@ -17100,6 +17101,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** False — The retained-bounded authority closes the lattice shell-localization step, but the packet does not derive or cite a retained authority for the static-conformal constraint pair and its physical readout identification. Likewise, defining j = Lambda_R f_* makes stationarity algebraic without independently establishing that j is the claimed microscopic flux.
 - **rationale:** The shell-source and Dirichlet-uniqueness portions are genuine algebraic consequences of the retained-bounded shell-localization authority and positive-definite finite-box operator. The static-conformal equations and their interpretation as density and stress are introduced without a closed upstream bridge, while the sourced Schur action selects the target trace through j = Lambda_R f_*. Moreover, the supplied runner source is only a subprocess harness; the six component sources needed to validate the reported 41 checks are absent.
 - **auditor confidence:** medium
+
+### `reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12`
+
+- **Note:** [`RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md`](../../docs/RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The algebraic no-pin characterization of cos(3 delta) versus L_3(1,2) on the supplied circulant, including the claimed failure of covariance, determinant-phase, and spectral-stationary pinning routes.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00029-reta_algebraic_irreducibilit`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because cos(3 delta) is a free operator coordinate while L_3(1,2)=2/9 is parameter-free, no retained polynomial relation pins the former to the latter, so R-eta is a genuine readout admission on the supplied surface.  _(class `A`)_
+- **chain closes:** False — I1-I3 and I4a-I4b close algebraically, but I4c does not: neither the note nor a cited authority specifies the claimed spectral scalar or derives its complete stationary set. The runner assumes delta=n*pi/3 and only checks that 2/9 is not in that assumed set.
+- **rationale:** Issue: I4c imports an unspecified “retained nondegenerate conjugation-even spectral-scalar branch,” while the runner hard-codes its stationary set rather than computing it. Why this blocks: without restrictions on the spectral scalar, conjugation-even functions of cos(3 delta) can have additional nondegenerate interior stationary points, so the three-route no-pin claim and resulting admission characterization are not established. Repair target: specify the scalar action and derive its complete stationary set symbolically, or cite a retained authority proving that result. Claim boundary until fixed: the invariant formulas, fixed-locus arithmetic, covariance, determinant positivity, and operational freedom of cos(3 delta) remain supported on the supplied surface.
+- **auditor confidence:** high
 
 ### `retardation_discriminator_note`
 

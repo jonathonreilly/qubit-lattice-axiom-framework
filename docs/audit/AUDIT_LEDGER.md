@@ -18,17 +18,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 197 |
+| **retained** | 198 |
 | **retained_no_go** | 213 |
 | **retained_bounded** | 945 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
-| unaudited | 1727 |
-| audit_in_progress | 5 |
+| unaudited | 1728 |
+| audit_in_progress | 4 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
-| ~~audited_conditional~~ | 138 |
+| ~~audited_conditional~~ | 137 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -71,14 +71,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 7 |
-| `audited_clean` | 1364 |
-| `audited_conditional` | 138 |
+| `audit_in_progress` | 6 |
+| `audited_clean` | 1365 |
+| `audited_conditional` | 137 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 35 |
-| `unaudited` | 2074 |
+| `unaudited` | 2075 |
 
 | claim_type | count |
 |---|---:|
@@ -145,7 +145,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | C | - |
 | `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -1139,6 +1138,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `reading_note_final_derivations_motion_closure_bounded_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | C | - |
 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.6 | A | - |
+| `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.6 | A | - |
 | `record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1619,7 +1619,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
-| `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -17582,6 +17581,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The note gives a self-contained algebraic closure from the stipulated finite function algebra: its atom idempotents force all derivations to vanish, and its automorphisms are precisely permutations. The runner performs actual enumeration and linear-algebra checks rather than importing or printing the contested conclusions; its append/count and Markov examples also support the stated boundary. The operative claim is a no-go result excluding intrinsic continuous reversible post-record dynamics, with the positive algebraic facts serving as its proof.
 - **auditor confidence:** high
 
+### `record_clock_rate_normalization_gate_2026-06-06`
+
+- **Note:** [`RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md`](../../docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The finite three-atom construction for s=1,2,3 proves that explicit reversible Markov generators stabilize the sampled dial distributions, while positive rescaling preserves those stationary distributions and leaves absolute rate distinguishable only after fixing a clock unit.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-record_clock_rate_no-judge-1`  (codex-gpt-5.6; independence=judicial_review)
+- **load-bearing step:** For each s in {1,2,3}, the explicitly constructed complete-graph generator has nonnegative off-diagonal entries, zero column sums, Q pi(s)=0, and one zero eigenmode with negative transverse eigenmodes.  _(class `A`)_
+- **chain closes:** True — The load-bearing construction is directly checkable algebra: Q is formed from the stated positive pi(s), and the generator, stationarity, and spectral properties are computed rather than imported or asserted through an open bridge. The rescaling and two-state semigroup claims likewise follow algebraically. The note carefully excludes derivation of a physical production generator, probability-origin bridge, dial value, and clock unit, so those unproved physical matters do not condition the narrowly stated interface theorem.
+- **rationale:** The load-bearing construction is directly checkable algebra: Q is formed from the stated positive pi(s), and the generator, stationarity, and spectral properties are computed rather than imported or asserted through an open bridge. The rescaling and two-state semigroup claims likewise follow algebraically. The note carefully excludes derivation of a physical production generator, probability-origin bridge, dial value, and clock unit, so those unproved physical matters do not condition the narrowly stated interface theorem.
+- **auditor confidence:** high
+
 ### `record_comparability_import_discipline_support_fork_exhibit_and_conditional_arrow_bounded_note_2026-07-07`
 
 - **Note:** [`RECORD_COMPARABILITY_IMPORT_DISCIPLINE_SUPPORT_FORK_EXHIBIT_AND_CONDITIONAL_ARROW_BOUNDED_NOTE_2026-07-07.md`](../../docs/RECORD_COMPARABILITY_IMPORT_DISCIPLINE_SUPPORT_FORK_EXHIBIT_AND_CONDITIONAL_ARROW_BOUNDED_NOTE_2026-07-07.md)
@@ -18744,21 +18756,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** W_{a,a+1} M_per W_{a,a+1}^T = M_per and W_{a,a+1} M_ap(a) W_{a,a+1}^T = M_ap(a+1) for adjacent exchanges, plus adjacent transpositions generating S4.  _(class `A`)_
 - **chain closes:** False — The finite L=4 transport chain closes from the runner's constructed matrices, but the source note's broader robustness/generalization does not close from the available runner packet.
 - **rationale:** Issue: The source note says the runner also checks m=1.7, L=(6,6,6,6), and an equivalent staggered-phase convention, but the runner source/output only cover m=0.3, L=(4,4,4,4), and the odd L=(3,3,3,3) falsifier. Why this blocks: The clean finite core closes, but the current note's even-block/robustness scope is broader than the completed runner evidence in the restricted packet. Repair target: Either narrow the source scope to the actually tested finite surface, or extend the runner/proof to cover m=1.7, L=(6,6,6,6), the equivalent phase convention, and the intended all-even cubic-symmetric scope. Claim boundary until fixed: The packet supports the L=(4,4,4,4) signed-exchange transport and W-inert parity grading, not the broader robustness statement.
-- **auditor confidence:** high
-
-### `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17`
-
-- **Note:** [`SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md`](../../docs/SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The audit checked the factor-of-two denominator for the supplied two-step transfer and the bounded claim that its dimensionless spectrum and Record histories do not determine an absolute physical clock unit.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-single_clock_blocked_tim-027`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** For the same dimensionless transfer T_hat^2, the aligned two-step reconstruction uses 2 a_tau, while replacing the block time by 2 c a_tau rescales the generator to H_block/c without changing T_hat^2.  _(class `A`)_
-- **chain closes:** False — The factor-of-two and transfer-rescaling algebra closes over the retained-grade authorities. The broader framework-level no-unit conclusion additionally consumes docs/MINIMAL_AXIOMS_2026-06-05.md, whose full content, effective status, and accepted-premise classification are absent from the restricted authority packet.
-- **rationale:** The runner genuinely evaluates the elementary diagonal-transfer and clock-map identities rather than merely printing expected results, and those calculations support the narrow algebraic split. However, its framework-exclusion check only string-searches an unprovided MINIMAL_AXIOMS file, so the packet cannot verify the load-bearing assertion that no other minimal-framework axiom supplies the clock metric. Under the restricted-input and accepted-premise rules, that missing authority edge prevents an audited-clean verdict.
-- **open / conditional deps cited:**
-  - `MINIMAL_AXIOMS_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17`

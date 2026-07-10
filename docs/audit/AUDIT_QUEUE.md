@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1886
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 162
+**Total pending:** 1885
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 163
 
 By criticality:
-- `critical`: 386
+- `critical`: 385
 - `high`: 268
 - `medium`: 497
 - `leaf`: 735
@@ -30,9 +30,9 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 13 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | non_terminal_conditional | critical | 415 | 10.70 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_axis_alignment.py` |
 | 14 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | non_terminal_conditional | critical | 411 | 12.69 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 15 | `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | audit_in_progress | critical | 408 | 14.68 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_spatial_cubic_time_anisotropy_gate_2026_06_06.py` |
-| 16 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | critical | 404 | 11.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_clock_rate_normalization_gate_2026_06_06.py` |
-| 17 | `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10` | bounded_theorem | non_terminal_conditional | critical | 398 | 9.64 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_p1_exponent_attack_2026_06_10.py` |
-| 18 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | non_terminal_conditional | critical | 398 | 9.14 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_local_finite_atom_availability_2026_06_17.py` |
+| 16 | `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10` | bounded_theorem | non_terminal_conditional | critical | 398 | 9.64 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_p1_exponent_attack_2026_06_10.py` |
+| 17 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | non_terminal_conditional | critical | 398 | 9.14 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_local_finite_atom_availability_2026_06_17.py` |
+| 18 | `single_clock_blocked_time_unit_split_n2_support_note_2026-06-17` | bounded_theorem | unaudited | critical | 394 | 9.13 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py` |
 | 19 | `single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17` | bounded_theorem | non_terminal_conditional | critical | 394 | 9.13 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py` |
 | 20 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | non_terminal_conditional | critical | 318 | 11.32 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_higgs_mass_status_audit.py` |
 | 21 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | non_terminal_conditional | critical | 284 | 9.15 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py` |

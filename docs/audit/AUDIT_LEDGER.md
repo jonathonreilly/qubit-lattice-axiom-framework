@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1763 |
+| unaudited | 1762 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 113 |
-| ~~audited_failed~~ | 8 |
+| ~~audited_failed~~ | 9 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -71,10 +71,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1354 |
 | `audited_conditional` | 113 |
 | `audited_decoration` | 62 |
-| `audited_failed` | 30 |
+| `audited_failed` | 31 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2108 |
+| `unaudited` | 2107 |
 
 | claim_type | count |
 |---|---:|
@@ -1686,6 +1686,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `corner_transfer_extends_to_fixed_gauge_backgrounds_bounded_note_2026-06-12` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -7025,6 +7026,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** At E=0 and m != 0, because h_oo=-mI, the Schur complement h_eff=h_ee-h_eo h_oo^{-1} h_oe has uniform diagonal m+2t^2/m, coarse nearest-neighbor entries t^2/m, zero staggered mass, and no beyond-NN terms.  _(class `A`)_
 - **chain closes:** True — The block calculation gives h_oo-E=-mI, so the Schur correction adds (1/m) times the two-hop even-to-even path matrix: 2t^2/m on-site and t^2/m on adjacent coarse sites, with no longer paths. The retained-resolvent identity and the two-step/direct-by-four consistency are standard Schur-complement algebra within the stated finite free-chain scope.
 - **rationale:** The runner source constructs the finite Hamiltonian, computes Schur complements and resolvents, and checks nontrivial controls; it is not a constant-printing runner. The disjoint-grid language is numerical corroboration rather than the symbolic source of the formula, but the displayed coefficients and signs close by direct block algebra from the matrix in the packet. No cited authority, primitive import, open bridge, or external comparator is needed for this bounded free-chain statement, and the m=0 singular case is not used as part of the m != 0 theorem.
+- **auditor confidence:** high
+
+### `exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11`
+
+- **Note:** [`EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md`](../../docs/EXP_DECAY_LIEB_ROBINSON_QUASILOCAL_BRIDGE_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The claimed finite-block Lieb-Robinson envelope for arbitrary finite-dimensional interactions with finite F_{mu,alpha} pair norm, together with its cone, finite-range, and conditional log-transfer corollaries.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00055-exp_decay_lieb_robinson_quas`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Equation (20) asserts that every k-th nested-commutator contribution is bounded by the linear weighted path sum P_k(x,y).  _(class `A`)_
+- **chain closes:** False — Equation (20) does not follow from the raw expansion (18): a later interaction can attach to an earlier part of the accumulated support rather than form the linear chain counted by P_k. For example, a small term supported on {x,z,y} followed by a large term supported on {z,w} can produce a second-order contribution proportional to their product, while P_2(x,y) contains no corresponding product.
+- **rationale:** The reproducing inequality and the resulting bound on the formal path powers P_k are sound, but the load-bearing identification of those path powers with the raw Duhamel contributions is not valid for the arbitrary multi-site interactions allowed by the theorem. The runner checks P_2 and P_3 themselves and one particular numerical Hamiltonian; it does not test or establish equation (20) for general branching interaction sequences. The displayed bound also silently requires x != y, since otherwise the omitted zeroth-order commutator need not vanish.
 - **auditor confidence:** high
 
 ### `exponent_derivation`

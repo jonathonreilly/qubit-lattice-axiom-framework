@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/frontier_lattice_greens_next_order_r5_anisotropy.py
+runner_sha256: dcc67ecd58c93d85faea2fb47c4e4a34042ca9533debe6a3cbddeb45b1caf323
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 15.28
+status: ok
+----- stdout -----
+PASS S1a tail_mellin(Gt) = 1/(4 pi r) exactly
+PASS S1b order-1 tail = [5/(32 pi)] K4/r^3 exactly
+PASS S1c direct SymPy integral agrees with tail_mellin at order 1
+PASS S2a order-2 Mellin tail equals the claimed raw degree-8 polynomial
+PASS S2b raw and S-basis forms agree as a zero polynomial on the sphere
+PASS S2c raw and K4/K6/K8 harmonic forms agree on the sphere
+PASS S3a exact spherical average of f is zero
+PASS S3b K6 has zero mean and is orthogonal to K4
+PASS S3c K8 has zero mean and is orthogonal to K4 and K6
+PASS S3d f(1, 0, 0) equals its exact rational/pi anchor
+PASS S3d f(1, 1, 0) equals its exact rational/pi anchor
+PASS S3d f(1, 1, 1) equals its exact rational/pi anchor
+PASS S3d f(2, 1, 0) equals its exact rational/pi anchor
+PASS S3d f(2, 1, 1) equals its exact rational/pi anchor
+PASS S3d f(3, 2, 1) equals its exact rational/pi anchor
+PASS S3d f(3, 1, 0) equals its exact rational/pi anchor
+PASS S4 formal order n=1 has polynomial isotropic contact grading
+PASS S4 formal order n=2 has polynomial isotropic contact grading
+PASS S4 formal order n=3 has polynomial isotropic contact grading
+PASS S4 formal order n=4 has polynomial isotropic contact grading
+PASS N1a origin delta-identity error 2.068e-25 < 1e-18
+PASS N1b lattice-equation error at (7,4,2) 7.033e-17 < 1e-12
+PASS N1c lattice-equation error at (4,2,1) 0.000e+00 < 1e-12
+PASS N2a f(1, 0, 0) extrapolation 0.0572505905, error 5.428e-05 < 2e-4
+PASS N2a f(1, 1, 0) extrapolation 0.0278282781, error 7.248e-06 < 2e-4
+PASS N2a f(1, 1, 1) extrapolation -0.00663140384, error 5.212e-08 < 2e-4
+PASS N2a f(2, 1, 0) extrapolation -0.00295945052, error 4.810e-06 < 2e-4
+PASS N2a f(2, 1, 1) extrapolation -0.024402988, error 1.302e-06 < 2e-4
+PASS N2b f(1, 0, 0) last-pair ratio 2.30913 in [1.575, 3.0375]
+PASS N2b f(1, 1, 0) last-pair ratio 2.29611 in [1.49527, 2.88373]
+PASS N2b f(1, 1, 1) last-pair ratio 2.22167 in [1.575, 3.0375]
+PASS N2b f(2, 1, 0) last-pair ratio 2.1423 in [1.46049, 2.81667]
+PASS N2b f(2, 1, 1) last-pair ratio 1.85534 in [1.42857, 2.7551]
+PASS CTRL1 5 percent wrong axial value is rejected by extrapolation
+PASS CTRL2 5 percent wrong axial value is rejected by last-pair ratio
+PASS CTRL3 coefficient 622 in place of 621 is symbolically rejected
+PASS CTRL4 decisive exit mapping rejects one simulated failure
+
+RESULT: G(x) = 1/(4 pi r) + [5/(32 pi)] K4(nhat)/r^3 + f(nhat)/r^5 + O(1/r^7); extrapolations (1, 0, 0)=0.0572505905 (1, 1, 0)=0.0278282781 (1, 1, 1)=-0.00663140384 (2, 1, 0)=-0.00295945052 (2, 1, 1)=-0.024402988
+TOTAL: PASS=37 FAIL=0
+
+----- stderr -----
+

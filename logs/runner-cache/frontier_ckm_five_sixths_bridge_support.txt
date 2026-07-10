@@ -1,14 +1,28 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_five_sixths_bridge_support.py
-runner_sha256: d21d88ea3ed968239d23ca3df3850621eb18858dd2eda2dece0c8ec935989f8b
-timeout_sec: 120
+runner_sha256: 261772bf8b7406ab2347a47f7a6a590b494df6e74b067b5d0297a07478d135bb
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================
   FRONTIER: CKM Five-Sixths Bridge Support
 ========================================================================
+
+========================================================================
+PART 0: Exact exponent and transport derivation
+========================================================================
+  [PASS] P0.1: C_F exact derivation
+  [PASS] P0.2: T_F exact input
+  [PASS] P0.3: exponent exact derivation
+  [PASS] P0.4: exact values reproduce existing float constants (exponent within 1 ulp)  (C_F,T_F exact; float(C_F-T_F) vs exact 5/6 gap = 1.11e-16)
+  [PASS] P0.5: N=3 is unique in the N=2..6 scan  (identity=True, matching ranks=[3])
+  [PASS] P0.6: exact one-loop inputs at N=3 and n_f=4
+  [PASS] P0.7: exact threshold-local transport power
+  [PASS] P0.8: n_f=3 transport rejector detected  (wrong-input value=4/9)
+  [PASS] P0.9: n_f=5 transport rejector detected  (wrong-input value=12/23)
+  [PASS] P0.10: N=2 exponent rejector detected  (wrong-input value=1/4)
 
 ========================================================================
 PART 1: Exact SU(3) and promoted CKM surface
@@ -70,7 +84,7 @@ PART 4: Exact multiplicative deviation decomposition
 ========================================================================
 SUMMARY
 ========================================================================
-  EXACT PASS=5
+  EXACT PASS=15
   BOUNDED PASS=7
   FAIL=0
   Status: bounded support tool for the down-type mass-ratio lane

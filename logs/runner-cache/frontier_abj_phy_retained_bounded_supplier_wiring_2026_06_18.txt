@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py
-runner_sha256: e9b64ef0fbcadbfd28297f12129f6f7c7bcd262cc34db7b83bd17fd947f3d73c
+runner_sha256: dcd1fadc9e5d6c3b9e68eed324c9149f0c53f99708e8b24fc116cf8d203a4c3f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 == T1: current supplier status and scope ==

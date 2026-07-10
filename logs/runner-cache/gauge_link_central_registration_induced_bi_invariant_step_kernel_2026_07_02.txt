@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_link_central_registration_induced_bi_invariant_step_kernel_2026_07_02.py
-runner_sha256: bda9d6e41f80c810f6857f5ce5ae9677949ae585f4df14289cdd30205c422853
-timeout_sec: 600
+runner_sha256: 317b726df0cf682d2bce47ff839b2e0ed7c1fa3aa56d08e824d3d4676b46f466
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 PASS: A1 S3 projectors idempotent 
@@ -126,7 +126,17 @@ PASS: F note forbidden string absent needle='closes the route'
 PASS: F runner forbidden string absent needle='closes the route'
 PASS: F note forbidden string absent needle='covariance implies the step-measure premise'
 PASS: F runner forbidden string absent needle='covariance implies the step-measure premise'
-TOTAL: PASS=117 FAIL=0
+PASS: F note forbidden string absent needle='# Gauge-Link Record Step: Central Registration Induces Bi-Invariant Step Kernels'
+PASS: F runner forbidden string absent needle='# Gauge-Link Record Step: Central Registration Induces Bi-Invariant Step Kernels'
+PASS: F note forbidden string absent needle='## Theorem 2 (central registration induces bi-invariant positive step kernels)'
+PASS: F runner forbidden string absent needle='## Theorem 2 (central registration induces bi-invariant positive step kernels)'
+PASS: F note forbidden string absent needle='## Theorem 4 (registration softness sets the step size; derived rates)'
+PASS: F runner forbidden string absent needle='## Theorem 4 (registration softness sets the step size; derived rates)'
+PASS: F note forbidden string absent needle='Each registration channel therefore has a derived rate'
+PASS: F runner forbidden string absent needle='Each registration channel therefore has a derived rate'
+PASS: F note forbidden string absent needle='the load-bearing input is registration-centrality, not kinematic covariance'
+PASS: F runner forbidden string absent needle='the load-bearing input is registration-centrality, not kinematic covariance'
+TOTAL: PASS=127 FAIL=0
 
 ----- stderr -----
 

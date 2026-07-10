@@ -11,8 +11,8 @@ convolutional, Ad-invariant, inversion-symmetric, positive step kernels.
 T3: intra-block frame-picking, deterministic drift, and exact negative-coefficient
 central witnesses show what the positive Lueders central scalar registration
 hypothesis supplies and what centrality alone does not.
-T4: registration softness controls the per-step variance in a stated convention,
-while the per-step soft kernel is not asserted to be a heat kernel.
+T4: the tested registration-softness family orders per-step variance in a stated
+convention, while the per-step soft kernel is not asserted to be a heat kernel.
 """
 
 import numpy as np
@@ -873,6 +873,11 @@ def run_source_guards():
         "exh" + "austed",
         "closes" + " " + "the" + " " + "route",
         "covariance" + " " + "implies" + " " + "the" + " " + "step-measure" + " " + "premise",
+        "# Gauge-Link Record Step: Central" + " Registration Induces Bi-Invariant Step Kernels",
+        "## Theorem 2 (central" + " registration induces bi-invariant positive step kernels)",
+        "## Theorem 4 (registration softness sets the step size;" + " derived rates)",
+        "Each registration channel therefore has a derived" + " rate",
+        "the load-bearing input is registration-centrality," + " not kinematic covariance",
     ]
     for marker in forbidden:
         require_absent("F note forbidden string absent", note_text, marker)

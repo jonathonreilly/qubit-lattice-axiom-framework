@@ -19,13 +19,13 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 172 |
 | high | `unaudited` | 139 |
-| medium | `unaudited` | 90 |
+| medium | `unaudited` | 89 |
 | high | `audited_conditional` | 7 |
 | critical | `audited_conditional` | 5 |
+| medium | `audited_conditional` | 3 |
 | medium | `open_gate` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_failed` | 2 |
-| medium | `audited_conditional` | 2 |
 | critical | `audit_in_progress` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_numerical_match` | 1 |
@@ -440,7 +440,7 @@ publication tables phrase it.
 | medium | `retained_cross_lane_consistency_support_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `s3_time_tensorized_schur_primitive_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `scalar_trace_tensor_no_go_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `shapiro_family_portability_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `shapiro_family_portability_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | medium | `shapiro_qa_retest_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `shapiro_unique_discriminator_v2_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `teleportation_native_axioms_theory_note` | `open_gate` | `audited_clean` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |

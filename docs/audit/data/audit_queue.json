@@ -3,7 +3,7 @@
     "critical": 393,
     "high": 265,
     "leaf": 755,
-    "medium": 507
+    "medium": 506
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -20159,38 +20159,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_charged_lepton_koide_two_gate_tier_a_bounded_verifier.py",
       "transitive_descendants": 11
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "complex_selectivity_compare_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "second_grown_family_complex_note",
-        "alt_connectivity_family_sign_note",
-        "third_grown_family_sign_note",
-        "fourth_family_quadrant_note",
-        "claude_complex_action_grown_companion_note",
-        "alt_connectivity_family_complex_failure_note",
-        "second_grown_family_complex_boundary_note",
-        "minimal_axioms",
-        "alt_connectivity_family_fm_transfer_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.959,
-      "note_path": "docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/COMPLEX_SELECTIVITY_COMPARE.py",
-      "transitive_descendants": 10
     },
     {
       "audit_independence_required": "any_non_self",
@@ -57448,6 +57416,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 209,
-  "total_pending": 1920
+  "ready_count": 208,
+  "total_pending": 1919
 }

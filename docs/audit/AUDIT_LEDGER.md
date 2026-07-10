@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 946 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 29 |
-| unaudited | 1723 |
+| unaudited | 1722 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 36 |
-| ~~audited_conditional~~ | 140 |
+| ~~audited_conditional~~ | 141 |
 | ~~audited_failed~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -72,12 +72,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1369 |
-| `audited_conditional` | 140 |
+| `audited_conditional` | 141 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 36 |
-| `unaudited` | 2070 |
+| `unaudited` | 2069 |
 
 | claim_type | count |
 |---|---:|
@@ -1562,6 +1562,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_link_binary_registration_capacity_step_kernel_pin_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -8909,6 +8910,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** There exist non-factor-local choices of U for which U S U* is not the original factorwise embedding, while S, U S U*, and full u(6) share the relevant invariant/commutant profiles; therefore those carrier-level invariant data cannot select the factorwise embedding.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from exact finite-dimensional linear algebra on the supplied C^3 x C^2 carrier plus the minimal-axiom boundary that Lattice/Qubit/Record do not themselves supply carrier factorization, gauge action, MR_color, or chirality. No hidden physical bridge is used inside the audited scope.
 - **rationale:** The load-bearing step is a finite-dimensional algebraic witness: S is closed, 12-dimensional, irreducible with scalar commutant; a non-factor-local unitary conjugate has the same invariant profile but is not the factorwise embedding; and full u(6) shares the scalar-commutant irreducibility profile. The runner completed with SCORECARD PASS=8 FAIL=0 and checks matrix rank, Lie closure residuals, commutant dimension, center dimension, distinctness, and operator-Schmidt non-factor-locality. The source note keeps the no-go narrowly bounded to route pruning and does not claim a broad no-go against future gauge selection.
+- **auditor confidence:** high
+
+### `gauge_link_binary_registration_capacity_step_kernel_pin_theorem_note_2026-07-02`
+
+- **Note:** [`GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md`](../../docs/GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Binary rank capacity, the fixed {P_3,P_1} kernel calculation, its composed moments, and the informative-fraction mixture on the finite native carrier.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00006-gauge_link_binary_registrati`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because the native {P_3,P_1} partition saturates the binary record capacity, the admissibility-supported family collapses to {delta,T_V}, pinning the informative-step kernel.  _(class `A`)_
+- **chain closes:** False — The rank argument bounds an orthogonal partition to two cells but does not establish a unique sharp binary instrument or identify it with {P_3,P_1}. The restricted authorities supply neither that record-to-gauge-sector bridge nor an exclusion of unsharp or alternative binary registrations.
+- **rationale:** Issue: The inference from at most two orthogonal cells to the unique family {delta,T_V} is unsupported; binary POVMs can be unsharp, and binary projective contexts need not equal {P_3,P_1}. Why this blocks: the cited axiom supplies no measurement/readout context or map from admissible site possibilities to gauge-central sectors, while the controlled-copy authority covers only its explicit P_0/P_1 model. Repair target: a retained theorem deriving the unique gauge-link record instrument {P_3,P_1} and excluding other binary effects or contexts, with a runner that tests this uniqueness. Claim boundary until fixed: the runner validates T_V, its moments, and the lazy-mixture algebra only after {P_3,P_1} has been fixed.
 - **auditor confidence:** high
 
 ### `gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02`

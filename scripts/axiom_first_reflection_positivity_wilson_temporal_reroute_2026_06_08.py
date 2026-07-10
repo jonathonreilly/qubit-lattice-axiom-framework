@@ -149,36 +149,30 @@ def check_reroute_guard() -> None:
     check("required reroute phrases present", not missing, detail=", ".join(missing))
     check("stale Wilson sign-repair phrases absent", not stale, detail=", ".join(stale))
 
-    required_effective_statuses = {
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": {
-            "retained_bounded"
-        },
-        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": {
-            "retained"
-        },
-        "staggered_only_det_positivity_case_a_note_2026-05-17": {"retained"},
-        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": {
-            "retained"
-        },
-        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": {
-            "retained_bounded"
-        },
-        "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09": {
-            "retained",
-            "retained_bounded",
-        },
+    retained_grades = {"retained", "retained_bounded", "retained_no_go"}
+    required_claim_types = {
+        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
+        "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem",
+        "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+        "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09": "positive_theorem",
     }
     status_ok = True
     status_details = []
     failed_statuses = {"audited_failed", "failed", "rejected"}
-    for claim_id, allowed_effective in required_effective_statuses.items():
+    for claim_id, expected_claim_type in required_claim_types.items():
         row = rows.get(claim_id)
         if row is None:
             status_ok = False
             status_details.append(f"{claim_id}:missing")
             continue
-        got = (row.get("audit_status"), row.get("effective_status"))
-        ok = row.get("effective_status") in allowed_effective and row.get("audit_status") not in failed_statuses
+        got = (row.get("claim_type"), row.get("audit_status"), row.get("effective_status"))
+        ok = (
+            row.get("claim_type") == expected_claim_type
+            and row.get("effective_status") in retained_grades
+            and row.get("audit_status") not in failed_statuses
+        )
         status_ok = status_ok and ok
         status_details.append(f"{claim_id}:{got}")
     check("live dependency statuses retained-grade", status_ok, detail="; ".join(status_details))
@@ -210,12 +204,12 @@ def check_reroute_guard() -> None:
     composed_min = float(composed["eigenvalues"][0])
     composed_threshold = max(3.0 * composed["mc_noise"], 5e-3)
     check(
-        "actual composed two-slice SU(3) Gram is PSD within sampling error",
+        "actual composed two-slice pure-gauge SU(3) Gram is PSD within sampling error",
         composed_min > -composed_threshold,
         detail=f"min eig={composed_min:+.6e}, negative allowance={composed_threshold:.3e}",
     )
     check(
-        "composed-form sampling error is controlled",
+        "pure-gauge composed-form sampling error is controlled",
         composed["mc_noise"] < 0.05,
         detail=f"mc_noise={composed['mc_noise']:.3e}",
     )
@@ -223,7 +217,7 @@ def check_reroute_guard() -> None:
     control = su3_supplier.composed_mc(1.0, 100_000, rng, conjugate_reflected=False)
     control_min = float(control["eigenvalues"][0])
     check(
-        "no-conjugation composed control is non-PSD",
+        "no-conjugation pure-gauge composed control is non-PSD",
         control_min < -1e-3,
         detail=f"min eig={control_min:+.6e}",
     )

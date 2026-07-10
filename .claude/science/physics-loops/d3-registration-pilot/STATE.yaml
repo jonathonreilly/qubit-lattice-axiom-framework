@@ -40,7 +40,7 @@ success_bar: >
   substantive outcomes, not failures. The two predeclared risk
   signatures (empty QND window; correlated-channel fake redundancy)
   are reported exactly as measured; no retuning around them.
-current_block: block01a engine worker launching
+current_block: block03 close (blocks 01a/01b/02 DONE)
 current_branch: physics-loop/d3-registration-pilot-block01-20260709
   (base = registration-bar-block03)
 worktree: /Users/jonBridger/tp-matter-mass-wep
@@ -52,5 +52,22 @@ imports: the QD record reading (standing convention); the d=1
 discipline: physics-loop standard; vocab_lint before commits; commit
   early (branch state must survive automation resets); stop and write
   up on any axiom trigger.
-next_exact_action: review engine worker draft line-by-line
+outcome_2026-07-10: >
+  Overnight detached full run completed (11.2 h wall, RSS peak
+  4.11 GiB, no resume needed). TOTAL: BAR-NOT-PINNED (exit 1),
+  machinery green including the dt-halving subsample. Zero events at
+  every (lambda, delta) over the full grid Jt <= 10; R_ind = 0 at
+  every row (verified in the committed streams). Measured physics:
+  single-fragment imprint peaks at 0.0509 bits at Jt = 0.3
+  (lambda-independent to three digits) vs the ~0.66-bit content gate,
+  then recoheres; pointer QND-stable (TV <= 0.056); fragments near
+  conditionally independent (max C_ab = 0.023 bits — no
+  correlated-channel fake); theta ~ 0.5 with abundant activity and no
+  registration. The d=1 geometric obstruction is absent in d=3; the
+  blocker moves to single-qubit register capacity/persistence. Bounded
+  note: docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md.
+  Named successor (design, not claim): coarser multi-qubit fragments
+  and/or pointer-contrast preparation, still on Z^3.
+next_exact_action: block03 — PR to registration-bar-block03 base,
+  reviewer handoff brief, pack close after owner sees the verdict
 stop_condition_hit: none

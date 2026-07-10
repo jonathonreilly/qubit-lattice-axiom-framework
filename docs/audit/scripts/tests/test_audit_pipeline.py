@@ -2530,12 +2530,23 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "Bounded negative theorem: checked channels do not derive the Lorentzian sign.",
             "An obstruction remains.",
             "The theorem does not close the remaining obstruction.",
+            "No route closes.",
+            "No four-action distinct shell closes the observed boundary.",
+            "The carrier is blocked by a selector wall.",
+            "There remains an obstruction.",
+            "The attempted construction fails to close.",
         ):
             with self.subTest(body=body):
                 self.assertTrue(
                     m.source_requires_no_go_discipline(
                         "docs/BOUNDARY.md", body, "bounded_theorem"
                     )
+                )
+                self.assertTrue(
+                    m.output_requires_no_go_discipline({
+                        "claim_type": "bounded_theorem",
+                        "verdict_rationale": body,
+                    })
                 )
         self.assertTrue(
             m.output_requires_no_go_discipline({
@@ -2559,8 +2570,16 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "All residual walls are discharged by the exact identity.",
             "The remaining admission is explicitly supplied, so the theorem closes.",
             "No obstruction remains after the exact construction.",
+            "This does not require a new axiom.",
+            "The construction does not supply an admission.",
+            "The identity cannot produce an obstruction.",
         ):
             with self.subTest(rationale=rationale):
+                self.assertFalse(
+                    m.source_requires_no_go_discipline(
+                        "docs/POSITIVE.md", rationale, "positive_theorem"
+                    )
+                )
                 self.assertFalse(
                     m.output_requires_no_go_discipline({
                         "claim_type": "positive_theorem",

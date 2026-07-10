@@ -59,6 +59,14 @@ NEGATIVE_ASSERTION_RE = re.compile(
     r"\b(?:cannot|does not|do not)\s+(?:select|orient|factor|factorize|derive|supply|"
     r"determine|fix|close|produce|recover)\b|"
     r"\bno\s+(?!obstruction\s+(?:remains?|persists?)\b)[^\n.;:]{1,100}\s+exists\b|"
+    r"\bno\s+[^\n.;:]{1,100}\s+(?:closes?|supplies?|selects?|orients?|"
+    r"derives?|determines?|fixes?|produces?|recovers?)\b|"
+    r"\bthere\s+(?:still\s+)?(?:remains?|persists?)\s+(?:an?\s+)?"
+    r"(?:scoped\s+|residual\s+|unresolved\s+)?(?:wall|admission|obstruction)\b|"
+    r"\bfails?\s+to\s+(?:close|resolve|remove|discharge|supply|derive|select)\b|"
+    r"\b[^\n.;:]{1,80}\s+(?:is|are|was|were)\s+"
+    r"(?:blocked|prevented|precluded)\b[^\n.;:]{0,80}\b"
+    r"(?:walls?|admissions?|obstructions?)\b|"
     r"\b(?:walls?|admissions?|obstructions?)\b[^\n.;:]{0,80}"
     r"\b(?:blocks?|prevents?|precludes?|rules?\s+out|persists?|remains?)\b|"
     r"bounded with named walls|conditional on [^\n]{0,120}\b(?:walls?|admissions?)\b|"
@@ -103,6 +111,13 @@ NEGATED_BOUNDARY_RE = re.compile(
     r"\b(?:no|not|never|without)\s+(?:an?\s+|live\s+)?"
     r"(?:residual\s+|remaining\s+|scoped\s+|unresolved\s+)?"
     r"(?:walls?|admissions?|obstructions?)\b",
+    re.IGNORECASE,
+)
+NEGATED_NEGATIVE_ASSURANCE_RE = re.compile(
+    r"\b(?:(?:does|do|did)\s+not\s+(?:require|introduce|add|supply|create|produce)|"
+    r"cannot\s+(?:introduce|add|supply|create|produce))\s+"
+    r"(?:an?\s+|any\s+|the\s+)?(?:new\s+)?"
+    r"(?:axioms?|walls?|admissions?|obstructions?)\b",
     re.IGNORECASE,
 )
 OUTPUT_BOUNDARY_FIELDS = (
@@ -839,9 +854,10 @@ def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] |
 
 
 def _has_negative_boundary_assertion(text: str) -> bool:
-    if EXPLICIT_NEGATIVE_CLOSURE_RE.search(text):
+    cleaned = NEGATED_NEGATIVE_ASSURANCE_RE.sub("", text)
+    if EXPLICIT_NEGATIVE_CLOSURE_RE.search(cleaned):
         return True
-    cleaned = POSITIVE_BOUNDARY_CLOSURE_RE.sub("", text)
+    cleaned = POSITIVE_BOUNDARY_CLOSURE_RE.sub("", cleaned)
     cleaned = NEGATED_BOUNDARY_RE.sub("", cleaned)
     return bool(NEGATIVE_ASSERTION_RE.search(cleaned))
 

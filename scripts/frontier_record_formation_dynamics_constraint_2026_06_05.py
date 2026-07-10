@@ -4,21 +4,23 @@ qubit lattice patch.
 
 Temporal sequel to the timeless gauge-STRUCTURE corollary
 (`TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05`,
-the #2667 family): that result constrains the gauge-invariant *algebra* at a
+the two-endpoint Gauss-law companion): that result constrains the gauge-invariant *algebra* at a
 fixed time. Here we ask what the Record axiom -- additivity of the record
 readout over disjoint record collections -- plus its dynamical realization
 (quantum Darwinism: an objective record is redundantly imprinted on many
 disjoint environment fragments) plus persistence (decoherence-stability)
 imposes on the transfer step U / T that FORMS the record.
 
-Framework anchors (named axioms, MINIMAL_AXIOMS_2026-06-05.md):
-  - Quantum: per-site algebra M_2(C) (qubits).
-  - Lattice: Z^3, finite-range local adjacency (here: a single system site S
-    coupled to its neighbour environment qubits E_1..E_n).
+Framework anchors (named axioms, MINIMAL_AXIOMS_2026-06-29.md):
+  - Qubit: per-site possibility domain with algebraic presentation M_2(C).
+  - Lattice and Admissibility: Z^3 nearest-neighbor structure and one fixed
+    local admissibility rule. The selected S + E_1..E_n carrier and its
+    couplings are bounded model inputs, not the full six-neighbor star.
   - Record: scalar record readout is additive over disjoint collections,
     I(R_1 sqcup R_2) = I(R_1) + I(R_2), timeless. The axiom explicitly does
-    NOT supply record production / persistence / decoherence -- which is the
-    exact gap this runner probes.
+    NOT identify I with Holevo information or supply record production,
+    persistence, or decoherence. This model separately supplies the singleton
+    bridge I({k}) := J({k}).
 
 The runner is fully self-contained (numpy only), uses <= 6 qubits, exact dense
 operators, and emits a PASS/FAIL self-check. It proves the Heisenberg
@@ -35,7 +37,6 @@ Memory care: largest object is a 64x64 density matrix (n=5 environment qubits
 
 from __future__ import annotations
 
-import sys
 from itertools import combinations
 from pathlib import Path
 
@@ -288,7 +289,7 @@ def redundancy_singletons(rho: np.ndarray, n_env: int, delta: float, H_S: float)
 def main() -> int:
     print("=" * 78)
     print("Record-formation dynamics constraint -- explicit S + E_1..E_n test")
-    print("temporal sequel to the timeless gauge-structure corollary (#2667)")
+    print("temporal sequel to the two-endpoint Gauss-law gauge-structure companion")
     print("=" * 78)
 
     n_env = 4              # 5 qubits total
@@ -303,7 +304,7 @@ def main() -> int:
     # -----------------------------------------------------------------------
     n = n_env + 1
     Pi_S = op(SZ, 0, n)
-    record("Quantum: per-site carrier is a qubit (2-dim), Pi_S = sigma_z(S)",
+    record("Qubit: per-site carrier is a qubit (2-dim), Pi_S = sigma_z(S)",
            Pi_S.shape == (2 ** n, 2 ** n))
     psi0 = make_state(n_env)
     rho0 = density(psi0)
@@ -350,7 +351,7 @@ def main() -> int:
     # -----------------------------------------------------------------------
     section("Part 2: ADDITIVITY of the record readout over disjoint fragments")
     # -----------------------------------------------------------------------
-    # Two DISTINCT record functionals -- do not conflate (post-audit repair):
+    # Two DISTINCT record functionals -- do not conflate:
     #
     #   J(F) := holevo_pointer_info(S, F) -- the recoverable pointer content
     #       of a fragment F: dephase S in the pointer basis, take the S<->F
@@ -359,19 +360,19 @@ def main() -> int:
     #       = H_S. It is strictly SUB-additive, NOT additive: reading two
     #       copies of the same registered fact yields the fact once.
     #
-    #   I_mass(F) := sum_{k in F} J({k}) -- the scalar record readout over
-    #       the disjoint singleton records {k}. THIS is the functional the
-    #       Record axiom's additivity clause governs (additivity of the
-    #       readout over finite pairwise-disjoint record collections).
+    #   I_mass(F) := sum_{k in F} I({k}), with the bounded model bridge
+    #       I({k}) := J({k}) for each singleton pointer record. Record grants
+    #       finite additivity of I; it does NOT grant this singleton Holevo
+    #       normalization. The latter is an explicit model input.
     #
     # The bridge between the two at the perfect-recording plateau is exact
-    # and NON-trivial:
+    # and discriminating:
     #   I_mass(F1 u F2) - J(F1 u F2) = (m - 1) * H_S   (m disjoint fragments)
     # -- the surplus counts the SAME registered pointer fact once per disjoint
     # record (redundancy), not additional pointer content. The gates below
-    # compute I_mass, J, and H_S INDEPENDENTLY and check the bridge identity
-    # and the strict sub-additivity; a tautological I_mass-vs-sum-of-J gate
-    # (which would hold by definition) is deliberately NOT used as evidence.
+    # compute singleton J values, union J values, and H_S separately, then
+    # check compatibility of the supplied singleton bridge with the additive
+    # extension. They do not claim to derive Record additivity or I({k})=J({k}).
 
     P0 = op(PROJ0, 0, n)
     P1 = op(PROJ1, 0, n)
@@ -380,14 +381,14 @@ def main() -> int:
     J = {k: mutual_information(rho_nd_deph, [0], [k], n) for k in range(1, n)}
     F1, F2 = [1, 2], [3, 4]
     m_frag = len(F1 + F2)
-    # record-mass = sum of singleton readouts (the axiom's additive readout);
+    # record-mass = additive extension of the supplied singleton readouts;
     # recoverable content J(F) = JOINT dephased mutual information (saturates).
     I_mass_union = sum(J[k] for k in F1 + F2)
     J_F1 = mutual_information(rho_nd_deph, [0], F1, n)
     J_F2 = mutual_information(rho_nd_deph, [0], F2, n)
     J_union = mutual_information(rho_nd_deph, [0], F1 + F2, n)
-    record("two-functional bridge: I_mass(F1 U F2) - J(F1 U F2) = (m-1)*H_S "
-           "(all three computed independently)",
+    record("supplied singleton bridge plus Record additivity is compatible with "
+           "I_mass(F1 U F2) - J(F1 U F2) = (m-1)*H_S",
            abs((I_mass_union - J_union) - (m_frag - 1) * H_S_initial) < 1e-6,
            f"{I_mass_union:.4f} - {J_union:.4f} = {m_frag - 1}*{H_S_initial:.4f}")
     record("recoverable content J is strictly SUB-additive (saturation, NOT "
@@ -399,14 +400,13 @@ def main() -> int:
            f"J(F1)={J_F1:.4f}, J(F2)={J_F2:.4f}, J(union)={J_union:.4f}, "
            f"sum-minus-union={J_F1 + J_F2 - J_union:.4f}")
 
-    # The physically NON-trivial content of additivity: the recovered pointer
-    # information about the H_S-bit pointer SATURATES at H_S (no
-    # super-additivity). Reading more disjoint fragments adds redundant copies,
-    # never more than the H_S bits that exist -- this is what makes the additive
-    # set-function a CONSISTENT record rather than an unbounded one. Verify
+    # Compatibility boundary: the recovered pointer information about the
+    # H_S-bit pointer SATURATES at H_S (no super-additivity). Reading more
+    # disjoint fragments adds redundant copies, never more recoverable content
+    # than H_S. Verify
     # I(S : F1 U F2) = H_S even though the record-mass = 4 * H_S (4 copies).
     I_union_recovered = holevo_pointer_info(rho_nd, 0, F1 + F2, n)
-    record("additivity is consistent: recovered pointer info saturates at H_S "
+    record("two-functional split: recovered pointer info saturates at H_S "
            "(no super-additivity) despite redundant copies",
            abs(I_union_recovered - H_S_initial) < 1e-6 and I_mass_union > 1.9 * H_S_initial,
            f"I(S:F1F2)={I_union_recovered:.4f}=H_S, record-mass={I_mass_union:.4f}={4}*H_S")
@@ -451,9 +451,9 @@ def main() -> int:
     #
     # (4a) FUNDAMENTAL invariant: because Pi_S is a constant of motion
     #      ([U,Pi_S]=0), the system's pointer POPULATIONS are time-invariant for
-    #      ALL evolution times. The recorded VALUE can never change, so no
-    #      already-stored classical record can ever be falsified. This is the
-    #      decoherence-stability guarantee at its root and it holds for every t.
+    #      ALL evolution times. The pointer value therefore cannot conflict
+    #      with an idle completed record. This does not by itself preserve the
+    #      fragment state; the separate caveat below makes that distinction.
     U_step = unitary(H_nd, t_rec)
     psi_p = psi_nd.copy()
     pops_over_time = []
@@ -619,27 +619,23 @@ def main() -> int:
         A = rng.normal(size=(2 ** m, 2 ** m)) + 1j * rng.normal(size=(2 ** m, 2 ** m))
         return (A + A.conj().T) / 2
 
-    def rand_state(m_env: int) -> np.ndarray:
-        th, ph = rng.uniform(0.3, 2.8), rng.uniform(0, 2 * np.pi)
-        return kron_list([bloch_ket(th, ph)] + [KET0] * m_env)
-
     w_pi, V_pi = np.linalg.eigh(Pi_S)
     pop_mask = np.abs(w_pi[:, None] - w_pi[None, :]) < 1e-9
+    P0_op = op(PROJ0, 0, n)
 
     def project_commutant(H: np.ndarray) -> np.ndarray:
         Hd = V_pi.conj().T @ H @ V_pi
         return V_pi @ (Hd * pop_mask) @ V_pi.conj().T
 
     # SUFFICIENCY FOR POINTER CONSERVATION: ANY random H commuting with Pi_S
-    # conserves pointer populations for all sampled states & times.
+    # conserves pointer populations for all states & times. The operator
+    # identity U^dag P_0 U=P_0 is the exact all-state check.
     preservation_fail = 0
     for _ in range(60):
         H = project_commutant(rand_herm(n))
-        psi = rand_state(n_env)
         t = rng.uniform(0, 3)
-        p0 = np.real(np.diag(partial_trace(density(psi), [0], n)))
-        p1 = np.real(np.diag(partial_trace(density(unitary(H, t) @ psi), [0], n)))
-        if not np.allclose(p0, p1, atol=1e-8):
+        U_h = unitary(H, t)
+        if np.linalg.norm(U_h.conj().T @ P0_op @ U_h - P0_op) > 1e-8:
             preservation_fail += 1
     record("pointer-conservation sufficiency: any random H with [H,Pi_S]=0 "
            "conserves pointer populations (not a record-formation claim)",
@@ -648,7 +644,6 @@ def main() -> int:
     # NECESSITY FOR POINTER CONSERVATION: every random H with [H,Pi_S]!=0 admits
     # a state instantaneously moving a pointer population, via
     # max|eig(i[H,P_0])| > 0.
-    P0_op = op(PROJ0, 0, n)
     nec_detect = 0
     nec_total = 0
     for _ in range(60):
@@ -668,7 +663,7 @@ def main() -> int:
     # -----------------------------------------------------------------------
     section("Part 6c: QND alone is NOT record-sufficient")
     # -----------------------------------------------------------------------
-    # This is the post-audit repair: [H,Pi_S]=0 is necessary for persistent
+    # Scope boundary: [H,Pi_S]=0 is necessary for all-state persistent
     # pointer values, but it is not sufficient to make fragments carry records.
     # A record also needs a nontrivial imprint channel from S to the fragments.
     H_zero = np.zeros_like(H_nd)
@@ -711,29 +706,29 @@ def main() -> int:
            f"eigenstate max I={max(info_env_eigenstate):.2e}")
 
     # -----------------------------------------------------------------------
-    section("Part 6d: STEP-LEVEL iff [U,Pi_S]=0 and the noncommuting-log witness")
+    section("Part 6d: STEP-LEVEL iff [U,Pi_S]=0 and scope witnesses")
     # -----------------------------------------------------------------------
     # The generator-level iff (Part 6b) is a statement about the continuous
     # flow (all states, ALL TIMES). The single-step analogue is:
     #     pointer populations preserved for ALL states by the step U
     #        <=>  U^dag P_k U = P_k  <=>  [U, Pi_S] = 0.
-    # Certified over random unitaries both ways. Then the WITNESS: a perfect
+    # Certified over random unitaries both ways. Then two witnesses separate
+    # the quantifiers. First, a perfect
     # record-forming step (controlled-NOT) has [U, Pi_S] = 0 but admits a
     # Hermitian generator H_log with [H_log, Pi_S] != 0 and exp(-i H_log) = U
     # EXACTLY -- so generator-level commutation [H_int, Pi_S] = 0 is a flow
     # property, NOT a necessary condition read off one finite record-forming
-    # step.
+    # step. Second, a globally noncommuting unitary can agree with CNOT on the
+    # entire fresh-fragment input subspace and form the same record there, so
+    # record formation on that subspace does not force global [U,Pi_S]=0.
 
     step_suff_fail = 0
     for _ in range(60):
         U_c = unitary(project_commutant(rand_herm(n)), 1.0)
-        psi = rand_state(n_env)
-        p0 = np.real(np.diag(partial_trace(density(psi), [0], n)))
-        p1 = np.real(np.diag(partial_trace(density(U_c @ psi), [0], n)))
-        if not np.allclose(p0, p1, atol=1e-8):
+        if np.linalg.norm(U_c.conj().T @ P0_op @ U_c - P0_op) > 1e-8:
             step_suff_fail += 1
     record("step-level sufficiency: any random U with [U,Pi_S]=0 preserves "
-           "pointer populations for all sampled states",
+           "pointer populations for all states (operator-identity check)",
            step_suff_fail == 0, f"failures = {step_suff_fail}/60")
 
     step_nec_detect = 0
@@ -790,33 +785,46 @@ def main() -> int:
            and np.allclose(pops_w_before, pops_w_after, atol=1e-12),
            f"J = {J_w:.6f} = H_S = {H_S_w:.6f}; pops preserved")
 
+    # Fresh-subspace boundary witness. In computational-basis column order,
+    # U_fresh maps |00>->|00>, |01>->|10>, |10>->|11>, |11>->|01>.
+    # Its columns on the complete fresh-fragment subspace span{|00>,|10>}
+    # equal CNOT's columns, so it makes the same record for every system input
+    # a|0>+b|1> with E initially |0>. Its extension away from that occupied
+    # subspace is globally noncommuting with Pi_S.
+    U_fresh = np.zeros((4, 4), dtype=complex)
+    U_fresh[[0, 2, 3, 1], np.arange(4)] = 1.0
+    rho_fresh = density(U_fresh @ psi_w)
+    J_fresh = holevo_pointer_info(rho_fresh, 0, [1], n2q)
+    pops_fresh = np.real(np.diag(partial_trace(rho_fresh, [0], n2q)))
+    fresh_comm = float(np.linalg.norm(comm(U_fresh, Pi_S2)))
+    record("scope witness: perfect recording on every fresh-fragment input does "
+           "not force global [U,Pi_S]=0",
+           np.allclose(U_fresh.conj().T @ U_fresh, np.eye(4), atol=1e-12)
+           and np.allclose(U_fresh[:, [0, 2]], CNOT[:, [0, 2]], atol=1e-12)
+           and abs(J_fresh - H_S_w) < 1e-9
+           and np.allclose(pops_fresh, pops_w_before, atol=1e-12)
+           and fresh_comm > 1e-6,
+           f"J={J_fresh:.6f}=H_S; ||[U_fresh,Pi_S]||={fresh_comm:.6f}")
+
     # -----------------------------------------------------------------------
-    section("Part 7: FORCED-CLASS structure -- conserved pointer + imprint + locality")
+    section("Part 7: ALL-STATE-PERSISTENCE class and construction controls")
     # -----------------------------------------------------------------------
     # (i) Conserved pointer: [H_int, Pi_S]=0 => Pi_S commutes with U => Pi_S
     #     is a constant of motion (Heisenberg). Verify U^dag Pi_S U = Pi_S.
     Pi_evolved = U_nd.conj().T @ Pi_S @ U_nd
-    record("forced class (conserved pointer): U^dag Pi_S U = Pi_S for non-demolition",
+    record("all-state persistence: U^dag Pi_S U = Pi_S for the controlled-copy step",
            np.allclose(Pi_evolved, Pi_S, atol=1e-10))
     Pi_evolved_dm = U_dm.conj().T @ Pi_S @ U_dm
-    record("forced class: demolition U does NOT conserve Pi_S",
+    record("demolition control does NOT conserve Pi_S",
            not np.allclose(Pi_evolved_dm, Pi_S, atol=1e-6))
 
-    # (ii) Locality: what locality (a SUM of finite-range single-fragment
-    #     couplings) buys is CONDITIONAL INDEPENDENCE of the fragments given the
-    #     pointer -- i.e. each fragment is an INDEPENDENT redundant copy. On the
-    #     dephased (classical-record) state this shows up as
-    #         I(E_a : E_b) = H_S = 1 bit   (exactly the one shared pointer bit),
-    #     so the redundant copies carry NO excess correlation. Adding a NON-LOCAL
-    #     env-env coupling (still commuting with Pi_S, so single-fragment pointer
-    #     info can survive) injects EXCESS pairwise correlation I(E_a:E_b) > 1:
-    #     the fragments are no longer independent copies, and the clean additive
-    #     "redundant independent records" structure is broken. So non-demolition
-    #     fixes the conserved pointer; LOCALITY fixes the independent-copy
-    #     (additive-over-disjoint-fragments) structure.
-    #
-    #     First, the LOCAL non-demolition baseline: dephased pairwise corr = H_S
-    #     (exactly the one shared pointer record, no excess).
+    # (ii) Construction control. The local single-fragment sum produces a
+    #      product of conditional fragment states: dephased pairwise correlation
+    #      is exactly the shared pointer entropy H_S, with no excess. A specific
+    #      non-local env-env scramble below is a destructive control: it keeps
+    #      the system pointer fixed but erases the two acted-on singleton records
+    #      and injects excess pairwise correlation. This does not prove that
+    #      every non-local record channel fails.
     base_pair = [mutual_information(rho_nd_deph, [a], [b], n)
                  for a, b in combinations(range(1, n), 2)]
     record("locality (local baseline): fragments are independent copies, "
@@ -824,12 +832,10 @@ def main() -> int:
            all(abs(x - H_S_initial) < 1e-6 for x in base_pair),
            f"pairwise I = {[round(x,4) for x in base_pair]} (H_S={H_S_initial:.4f})")
 
-    # Now form the SAME local record, THEN apply a NON-LOCAL env-env entangling
-    # unitary (commuting with Pi_S, acting only on the environment) that
-    # correlates fragments E_1,E_2 in their NON-pointer content. This adds
-    # excess correlation I(E_1:E_2) > H_S: the fragments are no longer
-    # conditionally-independent redundant copies. (We apply it AFTER recording
-    # so it cannot be confused with a disturbance of the record itself.)
+    # Now form the local record, then apply a non-local env-env entangling
+    # unitary (commuting with Pi_S and acting only on the environment). It
+    # destroys the acted-on singleton records while producing excess E_1:E_2
+    # correlation; record erasure is part of the control, not held fixed.
     n2 = n_env + 1
     # env-env entangler: exp(-i (pi/4) sigma_x(E_1) sigma_x(E_2)) -- a genuine
     # 2-fragment entangling gate that commutes with Pi_S = sigma_z(S).
@@ -844,17 +850,21 @@ def main() -> int:
     rho_ec_deph = P0e @ rho_ec @ P0e + P1e @ rho_ec @ P1e
     pair_12 = mutual_information(rho_ec_deph, [1], [2], n2)  # the entangled pair
     excess = pair_12 - H_S_initial
-    record("locality probe: non-local env-env coupling injects EXCESS pairwise "
-           "correlation I(E_1:E_2) > H_S (fragments stop being independent copies)",
-           excess > 1e-3,
-           f"I(E_1:E_2) = {pair_12:.4f} > H_S={H_S_initial:.4f} (excess={excess:.4f})")
+    scrambled_J = [holevo_pointer_info(rho_ec, 0, [k], n2) for k in range(1, n2)]
+    record("non-local destructive control erases acted-on singleton records and "
+           "injects EXCESS pairwise correlation I(E_1:E_2) > H_S",
+           scrambled_J[0] < 1e-9 and scrambled_J[1] < 1e-9
+           and all(abs(x - H_S_initial) < 1e-6 for x in scrambled_J[2:])
+           and excess > 1e-3,
+           f"J(singletons)={[round(x,4) for x in scrambled_J]}; "
+           f"I(E_1:E_2)={pair_12:.4f}, excess={excess:.4f}")
 
     # -----------------------------------------------------------------------
     section("Part 8: supplied conserved-charge transfer block class check")
     # -----------------------------------------------------------------------
     # A supplied OS-style transfer block T = exp(-H) built from a
     # reflection-positive, number-/charge-conserving action has the
-    # forced-class signature: a conserved pointer/charge observable that
+    # all-state-persistence signature: a conserved pointer/charge observable that
     # commutes with T.
     # Model T by a positive, Hermitian (=> reflection-symmetric in the simplest
     # case) transfer operator that commutes with a conserved charge Q. This is a
@@ -869,13 +879,12 @@ def main() -> int:
     record("supplied transfer block: hopping (XX+YY) conserves total charge Q_total on the bond",
            np.linalg.norm(comm(H_T, Q_total)) < 1e-10,
            f"||[H_T,Q_tot]||={np.linalg.norm(comm(H_T, Q_total)):.2e}")
-    T_op = unitary(H_T, 0.3)  # Euclidean-like; here use unitary for the class check
     # Positivity of the genuine Euclidean transfer e^{-H_T}:
     T_eucl = (lambda w, V: (V * np.exp(-w)) @ V.conj().T)(*np.linalg.eigh(H_T))
     eig_T = np.linalg.eigvalsh(T_eucl)
-    record("supplied transfer block: Euclidean transfer e^{-H} is positive (reflection-positive class)",
+    record("supplied transfer block: Euclidean-style transfer e^{-H} is positive",
            np.all(eig_T > 0), f"min eig = {eig_T.min():.4f}")
-    record("supplied transfer block: commutes with the conserved charge => lies in the forced class",
+    record("supplied transfer block: commutes with the conserved charge => lies in the all-state persistence class",
            np.linalg.norm(comm(T_eucl, Q_total)) < 1e-10,
            f"||[T,Q_tot]||={np.linalg.norm(comm(T_eucl, Q_total)):.2e}")
 
@@ -909,6 +918,7 @@ def main() -> int:
             "It does not pin the coupling strength",
             "says **nothing** about `beta = 6`",
             "does not derive the quantum-Darwinism bridge",
+            "does not claim that either generator-level",
             "does not use OS-transfer membership as a record-formation proof",
             "does not establish the lattice/continuum or interacting-field",
         ]:
@@ -921,37 +931,45 @@ def main() -> int:
     section("VERDICT (honest)")
     # -----------------------------------------------------------------------
     print("""
-GENUINE CONSTRAINT, with explicit scope:
+BOUNDED ALGEBRAIC RESULTS, with explicit scope:
 
-  On this explicit S + E_1..E_n model there are two separate results:
+  On this explicit S + E_1..E_n model there are three load-bearing results,
+  followed by scope witnesses and controls:
 
     - Exact pointer-conservation theorem (Part 6b): by the Heisenberg equation
       d<P_k>/dt = i<[H,P_k]>, the pointer populations are frozen for ALL states
       and ALL times IFF [H,Pi_S]=0. Verified over random H (60/60
-      sufficiency, 60/60 necessity). This is a theorem about the commutation
-      property, not a claim that every commuting H writes a record.
+      exact operator-identity sufficiency, 60/60 necessity). This is a theorem
+      about the commutation property, not a record-formation necessity claim.
+
+    - Exact all-state step theorem (Part 6d): pointer populations are preserved
+      for ALL joint input states by U IFF [U,Pi_S]=0. The random sufficiency
+      gate checks U^dag P_0 U=P_0 directly; the necessity gate finds a moving
+      state from the nonzero Hermitian difference U^dag P_0 U-P_0.
 
     - Positive controlled-copy construction (Parts 1-4): the explicit nonzero
       local Hamiltonian H = g sigma_z(S) x sum_k sigma_x(E_k), at
       t = pi/(4g), forms a perfect redundant persistent objective record:
       R_delta = n_env, plateau = H_S, finished idle fragments persist, and
-      fragments objectively agree. Two record functionals are kept distinct:
-      the record-mass I_mass(F) = sum_k J({k}) is the axiom's additive
-      readout over disjoint records, while the recoverable pointer content
-      J(F) SATURATES at H_S (strictly sub-additive; bridge identity
-      I_mass - J = (m-1) H_S on the plateau, Part 2).
+      fragments objectively agree. The bounded model supplies the singleton
+      bridge I({k}) := J({k}); Record additivity extends it to
+      I_mass(F)=sum_k J({k}), while recoverable union content J(F) SATURATES
+      at H_S. Part 2 checks the plateau compatibility identity
+      I_mass-J=(m-1)H_S without claiming to derive the singleton bridge.
 
     - QND-alone counterexamples (Part 6c): H=0, a system-only pointer phase,
       and a nonzero commuting S-E interaction with E held in an eigenstate
       conserve Pi_S but write no environment record.
 
-    - Step-level iff + noncommuting-log witness (Part 6d): for a single step
-      U, all-state pointer persistence holds IFF [U,Pi_S]=0 (60/60 both
-      directions). The controlled-NOT step has [CNOT,Pi_S]=0, forms the full
-      fresh-fragment record, and admits a Hermitian generator H_log with
+    - Scope witnesses (Part 6d): the controlled-NOT step has [CNOT,Pi_S]=0,
+      forms the full fresh-fragment record, and admits a Hermitian generator H_log with
       exp(-i H_log) = CNOT exactly and ||[H_log,Pi_S]|| = 2*sqrt(2)*pi != 0:
       generator-level commutation [H_int,Pi_S]=0 is the continuous-flow
-      condition (Part 6b), NOT a property forced by one record-forming step.
+      condition, not a property forced by one record-forming step. Separately,
+      a globally noncommuting U_fresh agrees with CNOT on the complete
+      span{|00>,|10>} fresh-fragment input subspace and forms the same record.
+      Record formation on that subspace therefore does not force global
+      [U,Pi_S]=0.
 
     - Demolition controls (Parts 5-6): a noncommuting sigma_x(S) handle records
       the wrong observable, collapses redundancy, makes the pointer populations
@@ -959,57 +977,54 @@ GENUINE CONSTRAINT, with explicit scope:
       shows this controlled-copy quality degrades as ||[H,Pi_S]|| grows for
       the tested handle family.
 
-  Forced CLASS on U/T (Part 7-8):
-    (a) a CONSERVED pointer/charge observable [U,Pi_S]=0 (preferred basis),
-    (b) a nontrivial fragment-imprinting channel for sufficiency,
-    (c) LOCALITY: a sum of finite-range fragment couplings -- locality is what
-        gives conditional independence of fragments given the pointer (clean
-        independent redundant copies); a non-local env-env coupling injects
-        EXCESS pairwise correlation I(E_a:E_b) > H_S and destroys it,
+  All-state-persistence class and construction controls (Part 7-8):
+    (a) [U,Pi_S]=0 characterizes all-state pointer persistence,
+    (b) the positive construction has a nontrivial fragment-imprinting channel,
+    (c) its local single-fragment sum produces independent conditional copies;
+        a specific non-local env-env scramble erases the acted-on singleton
+        records and injects EXCESS pairwise correlation I(E_a:E_b) > H_S,
     (d) a supplied number-conserving reflection-positive OS-style transfer
-        block T = e^{-H} with [T,Q]=0 lies in the conserved-charge part of
-        this class.
+        block T = e^{-H} with [T,Q]=0 lies in the all-state conserved-charge
+        class. The runner does not establish reflection positivity itself.
 
-  This ADDS a temporal/FORMATION constraint to the timeless #2667 corollary:
-  #2667 fixes which ALGEBRA is observable (gauge-invariant) at fixed time;
-  this fixes a necessary feature of the time step U/T (a conserved pointer)
-  and exhibits the extra local controlled-copy structure that builds a record.
+  Relative to the two-endpoint Gauss-law gauge-structure companion, this note
+  adds exact all-state temporal commutator criteria and a separate sufficient
+  finite controlled-copy construction. It does not derive a universal
+  formation constraint on U/T.
 
 HONEST LIMITS (no over-claim):
-  - This is RELOCATION-RESISTANT but NOT a from-nothing derivation of dynamics.
-    The positive record-formation result is a controlled-copy construction on
+  - This is not a from-nothing derivation of dynamics. The positive
+    record-formation result is a controlled-copy construction on
     the explicit finite model, conditional on modelling 'record' as a
     redundantly-imprinted, objective, persistent system observable (the
-    quantum-Darwinism bridge). That bridge is a supplied bounded model
-    identification: {Quantum, Lattice, Record} give the qubits, the locality,
-    and the ADDITIVITY of the readout, but they do NOT by themselves assert
-    that a record is a redundant imprint of a system observable.
+    quantum-Darwinism bridge) and on I({k}) := J({k}). The Lattice, Qubit,
+    Admissibility, and Record axioms do not supply those identifications, the
+    selected carrier/pointer, or the dynamics.
   - We do NOT claim arbitrary pointer-non-demolition Hamiltonians form records.
     H=0 is pointer-non-demolishing and writes no fragment. The sufficient
     record-forming construction uses the nonzero controlled-copy coupling,
     recording time, and fresh-fragment/idle-fragment persistence hypotheses.
     The runner also shows that re-using the same coherent fragment can erase
     the copy, so persistence is the fresh/idle/decoupled-fragment statement.
-  - The pointer Pi_S is NOT an extra free input: einselection runs the other
-    way -- given H, the pointer is whatever observable H conserves; given the
-    demand for a persistent objective record, H must possess such a conserved
-    observable. (ii) is therefore self-consistency, not a second admission.
+  - The pointer Pi_S=sigma_z(S) is an explicit bounded model input. Conservation
+    does not uniquely select it from a possibly trivial or non-unique commutant.
   - It does NOT derive the action, the coupling g (Part 9: any g works), the
-    transfer-matrix magnitude, or beta=6. It isolates pointer conservation as
-    the necessary form and tests one explicit local controlled-copy channel as
-    a sufficient record-writing construction.
+    transfer-matrix magnitude, or beta=6. It proves all-state conservation
+    criteria and tests one explicit local controlled-copy channel as a
+    sufficient record-writing construction.
   - It does NOT prove that a physical framework OS transfer writes records.
     Part 8 checks only conserved-charge transfer-class membership.
   - Pointer non-demolition is necessary and sufficient for all-state pointer
     persistence -- at the FLOW level for the generator ([H,Pi_S]=0, Part 6b)
     and at the STEP level for the unitary ([U,Pi_S]=0, Part 6d). The
-    generator-level condition is NOT forced by a single record-forming step
-    (noncommuting-logarithm witness, Part 6d); it is not by itself sufficient
-    for record formation either. The lattice/continuum and interacting
-    generalization is NOT established here.
+    generator-level condition is not forced by a single record-forming step,
+    and the global step condition is not forced by formation on the supplied
+    fresh-fragment subspace. Neither condition is by itself sufficient for
+    record formation. The lattice/continuum and interacting generalization is
+    not established here.
   - We do NOT claim 'derived the action' or 'derived the dynamics'. We claim a
-    pointer-conservation constraint and a controlled-copy sufficient
-    construction on the explicit system, given the Darwinism bridge.
+    pair of all-state pointer-conservation criteria and a controlled-copy
+    sufficient construction on the explicit system, given the bounded bridges.
 """)
 
     print("=" * 78)

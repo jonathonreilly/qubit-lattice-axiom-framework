@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py
+runner_sha256: 91c60a02617cecaa9188bba7ba374925872974ac0383a03d9fe89cd882e9ee3a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+conditional equivariant tick-realization lemma checks (2026-07-10)
+PASS: [surface-locality] uniform right mover is unitary and nearest-neighbor supported | rejectors: 0.9 mover is nonunitary; Fourier unitary is not NN-supported
+PASS: [surface-modulus] right mover is exactly translation covariant and has M=0 | M(U_R)=0.000e+00; rejector M(U_giv)=0.783327
+PASS: [frame-modulus] M is invariant under two fixed nontrivial local U(1) frames | nonunit-modulus diagonal rejector M=1.562500
+PASS: [surface-support] O distinguishes the mover from an on-site tick | O(U_R)=True, O(onsite)=False
+PASS: [rule-variation] covariant varying rule has translation-invariant V and site-independent v_x(d) | |V|=6, v-columns={-1: (1, 1, 1, 1, 1, 1), 0: (0, 0, 0, 0, 0, 0), 1: (0, 0, 0, 0, 0, 0)}; constant-rule rejector has empty V
+PASS: [fixed-assignment-right] fixed assignment builds an exactly translation-covariant right mover | T-invariance residual=0.000e+00
+PASS: [framed-shadow] a nontrivially framed fixed-assignment tick has the derived modulus shadow M=0 | M(gU0g^dag)=2.220e-16; nonframe rejector=1.562500
+PASS: [fixed-assignment-left] a second fixed assignment gives a translation-covariant left mover with M=0 | left residual=0.000e+00
+PASS: [modulus-strictness] alternating on-site tick has M=0 despite alternating phase | M(U_alt)=0.000e+00; modulus-alternating rejector=0.300
+PASS: [diagonal-frame-rigidity] U_alt is frame-rigid and no diagonal frame can make it one-site covariant | frames=9, rigidity=2.220e-16; diagonal matrices commute identically
+PASS: [assignment-rejector-unitary] Givens direct sum is unitary and nearest-neighbor supported | unitarity residual=1.110e-16
+PASS: [assignment-rejector-tables] Givens witness requires differing site-dependent assignment tables | site-0 amplitudes=[np.float64(0.0), np.float64(0.29552020666134), np.float64(0.95533648912561)], site-2 amplitudes=[np.float64(0.0), np.float64(0.62160996827066), np.float64(0.78332690962748)]
+PASS: [assignment-rejector-defect] Givens witness has a strict computed modulus-covariance defect | M(U_giv)=0.783326909627; uniform-mover rejector M=0.000e+00
+PASS: [mover-gauge-right-l6] L=6 cumulative-product gauge exactly uniformizes the fixed mover phases and closes | uniformization=3.342e-16, closure=2.628e-16
+PASS: [mover-gauge-left-l8] L=8 opposite-direction cumulative-product gauge uniformizes and closes | uniformization=8.083e-16, closure=4.457e-16
+PASS: [conditioning-support] nonempty nearest-neighbor V is carried by U0 and forces O(U0)=true | |V|=6, O(U0)=True; identity fails conditioning faithfulness
+PASS: [conditioning-sharpness] dropping conditioning faithfulness lets the same varying rule coexist with the identity tick | O(I)=False, O(conditioning witness)=True
+PASS: [support-converse] converse fails: a constant rule has empty V while its fixed-F mover has O=true | |V(A_const)|=0, O(U_R)=True
+PASS: [rule-covariance-rejector] covariance checker rejects a deliberately site-dependent availability rule | rejector=False, covariant control=True
+PASS: [source-clause-translation] clause-1 sentence is present verbatim in the axioms and new note
+PASS: [source-clause-variation] clause-2 sentence is present verbatim in the axioms and new note
+PASS: [scope-frame-phrase] note contains the full-covariance phrase
+PASS: [scope-support-phrase] note contains the support phrase
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

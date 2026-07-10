@@ -8,11 +8,16 @@ This runner certifies a narrow source-side repair:
 * The absolute physical clock/rate unit carried by a_tau is still not derived
   by minimal Lattice/Quantum/Record, by Record counts, or by the transfer
   spectrum alone.
+* The note wires MINIMAL_AXIOMS_2026-06-05.md as a markdown dependency edge
+  (2026-07-10 repair); that path is an aliased path of the canonical
+  minimal_axioms premise node, so the edge resolves to the live axiom
+  authority.
 
 It intentionally does not apply audit verdicts or edit audit surfaces.
 """
 from __future__ import annotations
 
+import json
 import math
 from pathlib import Path
 
@@ -26,6 +31,7 @@ SC2 = ROOT / "docs" / "AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION
 MIN_AX = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
 POST_RECORD = ROOT / "docs" / "POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md"
 RECORD_GATE = ROOT / "docs" / "RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md"
+PREMISE_NODES = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 
 PASS = 0
 FAIL = 0
@@ -77,6 +83,9 @@ def block_text_anchors() -> None:
     record("SC2 bridge forbids physical mass/unit overread", "No physical mass" in sc2 and "free construction parameters" in sc2)
     record("minimal Lattice excludes metric scale/lattice spacing/unit conversion", "metric scale" in min_ax and "lattice spacing" in min_ax and "physical unit conversion" in min_ax)
     record("minimal Record excludes time metric/dynamics/probability", "time metric" in min_ax and "dynamics" in min_ax and "probability" in min_ax)
+    record("note wires MINIMAL_AXIOMS_2026-06-05 as a markdown dependency edge", "[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)" in note)
+    min_ax_node = json.loads(read(PREMISE_NODES))["nodes"]["minimal_axioms"]
+    record("linked 2026-06-05 path aliases the canonical minimal_axioms premise node", MIN_AX.relative_to(ROOT).as_posix() in min_ax_node["aliased_paths"] and (ROOT / min_ax_node["current_path"]).exists())
     record("post-record interface says counts do not supply clock metric", "does not supply physical elapsed time" in post and "clock metric" in post)
     record("post-record interface supports rates only with supplied clock map", "supplied clock map" in post and "conditional on the clock map" in post)
     record("record rate gate separates stable dial from physical rate unit", "physical rate claim" in gate and "clock/rate unit" in gate)

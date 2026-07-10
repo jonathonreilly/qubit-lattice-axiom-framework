@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py
+runner_sha256: 4b54bb3dc73e6337b2d73cce17ea9b7708441ccfdf1998994604ff8f796a0c61
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
 ==============================================================================
 SINGLE-CLOCK B-AXIS.1 BLOCKED-TIME UNIT SPLIT CHECK
 ==============================================================================
@@ -13,6 +21,8 @@ SINGLE-CLOCK B-AXIS.1 BLOCKED-TIME UNIT SPLIT CHECK
   [PASS] SC2 bridge forbids physical mass/unit overread
   [PASS] minimal Lattice excludes metric scale/lattice spacing/unit conversion
   [PASS] minimal Record excludes time metric/dynamics/probability
+  [PASS] note wires MINIMAL_AXIOMS_2026-06-05 as a markdown dependency edge
+  [PASS] linked 2026-06-05 path aliases the canonical minimal_axioms premise node
   [PASS] post-record interface says counts do not supply clock metric
   [PASS] post-record interface supports rates only with supplied clock map
   [PASS] record rate gate separates stable dial from physical rate unit
@@ -48,5 +58,8 @@ SINGLE-CLOCK B-AXIS.1 BLOCKED-TIME UNIT SPLIT CHECK
   [PASS] note explicitly says no audit-surface update
 
 ==============================================================================
-TOTAL: PASS=35 FAIL=0
+TOTAL: PASS=37 FAIL=0
 ==============================================================================
+
+----- stderr -----
+

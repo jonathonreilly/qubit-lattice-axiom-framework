@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 390,
     "high": 268,
-    "leaf": 740,
+    "leaf": 739,
     "medium": 498
   },
   "cycle_break_target_count": 10,
@@ -35059,30 +35059,6 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "realized_state_primitive"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.5,
-      "note_path": "docs/DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_det_phase_capture_vs_order_2026_06_12.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09",
@@ -35152,6 +35128,32 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
+        "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
+        "realized_state_primitive"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.085,
+      "note_path": "docs/HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_depth_weight_distribution_2026_06_12.py",
       "transitive_descendants": 2
     },
     {
@@ -37939,32 +37941,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/gauge_vacuum_plaquette_word_count_rescaled_tail_support_2026_06_18.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
-        "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
-        "realized_state_primitive"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_depth_weight_distribution_2026_06_12.py",
       "transitive_descendants": 2
     },
     {
@@ -56820,5 +56796,5 @@
     }
   ],
   "ready_count": 161,
-  "total_pending": 1896
+  "total_pending": 1895
 }

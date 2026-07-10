@@ -161,23 +161,50 @@ The orchestrator's source-shape check says this row requires the gate:
 
 Run the N1-N8 gate whenever that value is `true`, whenever you classify the
 row as `no_go`, or whenever your rationale would name walls, admissions,
-obstructions, "no route exists," "no retained primitive supplies this," or
-"requires a new axiom." The restricted-input rule still applies: do not search
-the wider repository. For N8, judge only the source note and one-hop authorities
-provided here; missing cross-cycle evidence is a checklist failure, not
-permission to browse. For N6, the approved premises are exactly the registered
-four-axiom node (Lattice, Qubit, Admissibility, Record) plus any authority this
-packet explicitly flags as an approved primitive. The currently registered
-primitives grant only: scale reference as units conversion, structural kinetic
-isotropy `c_t = c_s`, and pointwise evaluation at a supplied realized state.
-They do not supply selectors, dynamics, probability, normalization, arbitrary
-observable identifications, or empirical matches.
+obstructions, "does not lift," "no route exists," "no retained primitive
+supplies this," or "requires a new axiom." The restricted-input rule still
+applies: do not search the wider repository. For N8, judge only the source note,
+runner/helper sources, one-hop authorities, and premise registries supplied
+here. Missing cross-cycle evidence is a checklist failure, not permission to
+browse.
+
+The complete current premise registries and their canonical source notes are
+included below. Use their actual text and boundaries; do not infer a primitive
+from a desired conclusion and do not use a superseded axiom summary.
+
+```text
+{{FRAMEWORK_PREMISE_CONTEXT}}
+```
+
+The accepted-premise types have different effects:
+
+- `axiom_or_approved_primitive`: accepted, does not bound downstream status.
+- `owner_governed_residual`: accepted only inside the registry boundary, is
+  not an axiom or theorem derivation, and does not bound downstream status.
+- `tier_a_derivation_target`: accepted only at the bounded tier and forces
+  downstream `retained_bounded` until retired.
+- `tier_a_convention_not_accepted`: survey metadata, not a chain-satisfying
+  premise. Do not treat it as an admission.
+
+Every N1-N8 evidence reference must use a path from this restricted manifest
+and a locator that occurs verbatim in that file's supplied content (whitespace
+normalization is allowed). A locator must contain at least 12 normalized
+characters. The manifest is an allow-list, not evidence by itself:
+
+```json
+{{NO_GO_EVIDENCE_MANIFEST}}
+```
 
 Record all eight checks in `no_go_discipline`. A gate `FAIL` is allowed with a
-conservative non-clean verdict and must name its failure items. It can never
+conservative non-clean verdict, `chain_closes=false`, an explicitly narrowed
+`claim_scope`, a corrected wall set, and the next untested route. It can never
 support `audited_clean`. A gate `PASS` requires at least five genuinely distinct
-N1 routes, complete N2-N8 answers, and no failure items. Do not turn five
-phrasings of one route into five routes.
+N1 mechanism classes, every route closed, complete structured N2-N8 records,
+no unresolved items, a resolved steelman, a complete cross-cycle scan, and no
+failure items. Do not turn five phrasings of one route into five routes. A
+`RULED OUT BY PRIOR` route must cite either a retained-grade one-hop authority
+or the registered text of an accepted axiom/primitive or owner-governed premise.
+Tier-A conventions and unretained ordinary dependencies cannot rule out a route.
 
 Definitions you must use:
 
@@ -285,22 +312,125 @@ Use `null` only when the gate is not required. Otherwise replace it with:
   "status": "<PASS | FAIL>",
   "N1_alternative_routes": [
     {
-      "route": "<distinct attack route>",
-      "outcome": "<why it fails or remains open>",
+      "route_id": "<stable short id unique inside this packet>",
+      "route_class": "<one of algebraic_rearrangement, symmetry_or_representation, alternate_carrier_or_sector, boundary_or_initial_condition, normalization_or_units, dynamical_or_effective_action, lattice_scale_or_limit, numerical_or_finite_case, convention_or_relabeling, alternate_observable_or_readout, topology_or_global_structure, dependency_or_registry_reclassification>",
+      "mechanism": "<physical or mathematical mechanism, distinct from every other route>",
+      "attempt": "<what calculation or restricted-packet test was actually performed>",
+      "outcome": "<why the attempt closes the route or why it remains open>",
       "honesty_marker": "<ATTEMPTED | RULED OUT BY PRIOR>",
-      "authority": "<restricted-packet authority, or explicit packet gap>"
+      "disposition": "<CLOSED | OPEN | UNTESTED>",
+      "evidence_path": "<path from NO_GO_EVIDENCE_MANIFEST>",
+      "evidence_locator": "<12+ character quote/locator actually present at evidence_path>"
     }
   ],
-  "N2_wall_independence": "<pairwise collapse result>",
-  "N3_hidden_wall_scan": "<classified hidden-wall phrase hits>",
-  "N4_residual_matching": "<witness/residual match result>",
-  "N5_rhetoric_audit": "<resolutions actually tested>",
-  "N6_partial_closure_scan": "<primitive/convention/reframe result>",
-  "N7_steelman": "<strongest argument against the no-go>",
-  "N8_cross_cycle_echo": "<restricted-packet prior-wall result or missing evidence>",
-  "failures": ["<failing N-item; empty only for PASS>"]
+  "N2_wall_independence": {
+    "walls": ["<every wall claimed by the scoped negative result>"],
+    "pairwise_checks": [
+      {
+        "left": "<wall from walls>",
+        "right": "<different wall from walls>",
+        "left_closes_right": false,
+        "right_closes_left": false,
+        "independent": true
+      }
+    ],
+    "collapsed_wall_set": ["<minimal wall set after pairwise collapse>"],
+    "unresolved": [],
+    "evidence_path": "<manifest path>",
+    "evidence_locator": "<actual locator>"
+  },
+  "N3_hidden_wall_scan": {
+    "hits": [
+      {
+        "phrase": "<scanned phrase>",
+        "classification": "<retained_authority | hidden_admission | non_load_bearing>",
+        "promoted_wall": "<matching N2 wall when hidden_admission, otherwise omit>",
+        "evidence_path": "<manifest path>",
+        "evidence_locator": "<actual locator>"
+      }
+    ],
+    "unresolved": [],
+    "evidence_path": "<manifest path covering the scan>",
+    "evidence_locator": "<actual locator>"
+  },
+  "N4_residual_matching": {
+    "witnesses": [
+      {
+        "witness_residual": "<residual in cited witness>",
+        "claim_residual": "<residual asserted here>",
+        "match": true,
+        "evidence_path": "<manifest path>",
+        "evidence_locator": "<actual locator>"
+      }
+    ],
+    "unresolved": [],
+    "evidence_path": "<manifest path covering the scan>",
+    "evidence_locator": "<actual locator>"
+  },
+  "N5_rhetoric_audit": {
+    "statements": [
+      {
+        "phrase": "<negative or resolution phrase>",
+        "tested_resolutions": ["<resolution actually tested>"],
+        "untested_resolutions": [],
+        "evidence_path": "<manifest path>",
+        "evidence_locator": "<actual locator>"
+      }
+    ],
+    "unresolved": [],
+    "evidence_path": "<manifest path covering the scan>",
+    "evidence_locator": "<actual locator>"
+  },
+  "N6_partial_closure_scan": {
+    "candidates": [
+      {
+        "kind": "<approved_primitive | owner_governed | tier_a | convention_reframe | definition_refactor>",
+        "could_close_wall": false,
+        "addressed": true,
+        "disposition": "<why the candidate does or does not close the scoped wall>",
+        "evidence_path": "<manifest path>",
+        "evidence_locator": "<actual locator>"
+      }
+    ],
+    "unresolved": [],
+    "evidence_path": "<manifest path covering the scan>",
+    "evidence_locator": "<actual locator>"
+  },
+  "N7_steelman": {
+    "argument": "<strongest argument against the no-go>",
+    "resolution": "<why it succeeds or fails in the scoped packet>",
+    "resolved": true,
+    "evidence_path": "<manifest path>",
+    "evidence_locator": "<actual locator>"
+  },
+  "N8_cross_cycle_echo": {
+    "packet_complete": true,
+    "echoes": [
+      {
+        "mechanism": "<earlier wall/admission mechanism>",
+        "retired": false,
+        "applicable": true,
+        "addressed": true,
+        "evidence_path": "<manifest path>",
+        "evidence_locator": "<actual locator>"
+      }
+    ],
+    "unresolved": [],
+    "evidence_path": "<manifest path covering the restricted search>",
+    "evidence_locator": "<actual locator>"
+  },
+  "failures": ["<failing N-item; empty only for PASS>"],
+  "demotion": "<for FAIL only: partial_attempt_with_named_untested_routes | partial_narrowing | bounded_with_corrected_wall_count | stretch_attempt_with_honest_residual>",
+  "narrowed_claim_scope": "<for FAIL only: exact same text as top-level claim_scope>",
+  "corrected_wall_set": ["<for FAIL only: honest walls still supported>"],
+  "next_route": "<for FAIL only: cheapest concrete untested route>"
 }
 ```
+
+For `PASS`, omit the four FAIL-only fields. For `FAIL`, all four are required.
+Any `OPEN`/`UNTESTED` route, unresolved N2-N6/N8 item, mismatched witness,
+untested rhetoric resolution, unaddressed partial-closure candidate, unresolved
+steelman, incomplete N8 packet, or applicable unaddressed echo forces `FAIL`.
 
 ### 6. What you are not asked to do
 

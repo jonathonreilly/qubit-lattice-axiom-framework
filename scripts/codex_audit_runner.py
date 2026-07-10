@@ -635,6 +635,16 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
 
     # Cited authorities: one-hop deps from the ledger row
     led_row = ledger_rows.get(cid, {})
+    packet_row = {**led_row, **row, "claim_id": cid}
+    evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
+        packet_row, ledger_rows, REPO_ROOT
+    )
+    evidence_manifest_text = no_go_discipline_gate.render_evidence_manifest(
+        evidence_manifest
+    )
+    premise_context = no_go_discipline_gate.render_framework_premise_context(
+        evidence_manifest
+    )
     deps = led_row.get("deps", [])
     cited_blocks = []
     for dep_cid in deps:
@@ -643,17 +653,33 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         dep_body = read_note_body(dep_path) or f"[dep note missing: {dep_path}]"
         eff = dep_row.get("effective_status") or "unaudited"
         ct = dep_row.get("claim_type") or "?"
-        premise_line = ""
+        accepted = False
+        accepted_type = "none"
+        bounds_downstream = False
         if premise_nodes.is_axiom_premise(dep_cid):
-            premise_line = (
-                "=== Cited authority axiom_or_approved_primitive_premise: true "
-                "(accepted framework premise; see rubric carve-out) ===\n"
-            )
+            accepted = True
+            accepted_type = "axiom_or_approved_primitive"
+        elif premise_nodes.is_owner_governed_premise(dep_cid):
+            accepted = True
+            accepted_type = "owner_governed_residual"
+        elif premise_nodes.is_admitted_derivation_target(dep_cid):
+            accepted = True
+            accepted_type = "tier_a_derivation_target"
+            bounds_downstream = True
+        elif premise_nodes.is_admitted_convention(dep_cid):
+            accepted_type = "tier_a_convention_not_accepted"
+        premise_lines = (
+            f"=== Cited authority accepted_premise: {str(accepted).lower()} ===\n"
+            f"=== Cited authority accepted_premise_type: {accepted_type} ===\n"
+            f"=== Cited authority bounds_downstream: {str(bounds_downstream).lower()} ===\n"
+            f"=== Cited authority axiom_premise: "
+            f"{str(accepted_type == 'axiom_or_approved_primitive').lower()} ===\n"
+        )
         cited_blocks.append(
             f"=== BEGIN CITED AUTHORITY: {dep_path} ===\n"
             f"=== Cited authority effective_status: {eff} ===\n"
             f"=== Cited authority claim_type: {ct} ===\n"
-            f"{premise_line}"
+            f"{premise_lines}"
             f"{dep_body}\n"
             f"=== END CITED AUTHORITY: {dep_path} ==="
         )
@@ -752,20 +778,18 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         else "(no helper runner imports detected)"
     )
 
-    # Inline-substitute the {{...}} variables. We only replace the variables
-    # actually appearing in the template; the FOREACH block uses cited_str.
+    # Substitute orchestrator-controlled fields before inserting any raw note,
+    # runner, helper, authority, or registry content. Otherwise a literal
+    # ``{{CLAIM_ID}}`` (etc.) inside evidence would be rewritten after the fact.
     prompt = template
     prompt = prompt.replace("{{CLAIM_ID}}", cid)
     prompt = prompt.replace("{{NOTE_PATH}}", note_path)
     prompt = prompt.replace("{{CLAIM_TYPE_HINT}}", claim_type_hint or "(none)")
     prompt = prompt.replace("{{RUNNER_PATH}}", runner_path or "(none)")
-    prompt = prompt.replace("{{NOTE_BODY}}", note_body)
-    prompt = prompt.replace("{{RUNNER_STDOUT}}", runner_stdout or "(no stdout captured)")
-    prompt = prompt.replace("{{RUNNER_SOURCE}}", runner_source or "(no source available)")
-    prompt = prompt.replace("{{HELPER_RUNNER_SOURCES}}", helper_runner_sources)
     prompt = prompt.replace(
         "{{NO_GO_DISCIPLINE_REQUIRED}}", "true" if no_go_required else "false"
     )
+    prompt = prompt.replace("{{NO_GO_EVIDENCE_MANIFEST}}", evidence_manifest_text)
 
     # Replace the FOREACH ... ENDFOREACH block with the rendered cited authorities
     foreach_re = re.compile(
@@ -774,6 +798,14 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     )
     # Use a lambda so cited_str isn't interpreted as a re replacement template
     prompt = foreach_re.sub(lambda _m: cited_str, prompt)
+
+    # Raw packet content is inserted last and is never subject to another
+    # placeholder or FOREACH substitution pass.
+    prompt = prompt.replace("{{NOTE_BODY}}", note_body)
+    prompt = prompt.replace("{{RUNNER_STDOUT}}", runner_stdout or "(no stdout captured)")
+    prompt = prompt.replace("{{RUNNER_SOURCE}}", runner_source or "(no source available)")
+    prompt = prompt.replace("{{HELPER_RUNNER_SOURCES}}", helper_runner_sources)
+    prompt = prompt.replace("{{FRAMEWORK_PREMISE_CONTEXT}}", premise_context)
 
     # Append a tightening footer so we get clean JSON back. We DELIBERATELY
     # do not suppress the COMPUTE_REQUIRED escape — the audit-lane policy
@@ -988,6 +1020,7 @@ def validate_verdict(
     expected_cid: str,
     *,
     source_requires_no_go: bool = False,
+    evidence_manifest: dict[str, dict] | None = None,
 ) -> str | None:
     """Return an error string if the verdict is unusable, else None."""
     missing = REQUIRED_VERDICT_FIELDS - set(blob)
@@ -996,7 +1029,9 @@ def validate_verdict(
     if blob.get("claim_id") != expected_cid:
         return f"claim_id mismatch: expected {expected_cid!r}, got {blob.get('claim_id')!r}"
     no_go_error = no_go_discipline_gate.validate_no_go_discipline(
-        blob, source_required=source_requires_no_go
+        blob,
+        source_required=source_requires_no_go,
+        evidence_manifest=evidence_manifest,
     )
     if no_go_error:
         return no_go_error
@@ -1388,7 +1423,12 @@ def main() -> int:
                 )
             )
             err = validate_verdict(
-                blob, cid, source_requires_no_go=source_requires_no_go
+                blob,
+                cid,
+                source_requires_no_go=source_requires_no_go,
+                evidence_manifest=no_go_discipline_gate.build_evidence_manifest(
+                    {**full_led_row, **row, "claim_id": cid}, ledger_rows, REPO_ROOT
+                ),
             )
             if err:
                 print(f"  FAIL validate: {err}")

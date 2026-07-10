@@ -28,29 +28,102 @@ SCRIPTS_DIR = REPO_ROOT / "audit" / "scripts"
 sys.path.insert(0, str(SCRIPTS_DIR))
 
 
-def _no_go_packet(*, status: str = "PASS", route_count: int = 5) -> dict:
+def _no_go_packet(
+    *,
+    status: str = "PASS",
+    route_count: int = 5,
+    evidence_path: str = "docs/TEST_NO_GO.md",
+    evidence_locator: str = "No-go obstruction",
+    claim_scope: str = "the scoped obstruction",
+) -> dict:
     failures = [] if status == "PASS" else ["N1: fewer than five routes close"]
-    return {
+    route_classes = [
+        "algebraic_rearrangement",
+        "symmetry_or_representation",
+        "alternate_carrier_or_sector",
+        "boundary_or_initial_condition",
+        "normalization_or_units",
+        "dynamical_or_effective_action",
+    ]
+    packet = {
         "required": True,
         "status": status,
         "N1_alternative_routes": [
             {
-                "route": f"route {index}",
+                "route_id": f"route-{index}",
+                "route_class": route_classes[index],
+                "mechanism": f"distinct mechanism {index}",
+                "attempt": f"distinct restricted-packet test {index}",
                 "outcome": "closed by the restricted packet",
                 "honesty_marker": "ATTEMPTED",
-                "authority": "provided authority",
+                "disposition": "CLOSED",
+                "evidence_path": evidence_path,
+                "evidence_locator": evidence_locator,
             }
             for index in range(route_count)
         ],
-        "N2_wall_independence": "pairwise wall table checked",
-        "N3_hidden_wall_scan": "no hidden admissions found",
-        "N4_residual_matching": "each cited residual matches",
-        "N5_rhetoric_audit": "the claimed resolution is the tested resolution",
-        "N6_partial_closure_scan": "registered primitives and reframes checked",
-        "N7_steelman": "the strongest counter-route is explicitly answered",
-        "N8_cross_cycle_echo": "restricted packet contains no untested retirement echo",
+        "N2_wall_independence": {
+            "walls": ["selector wall", "dynamics wall"],
+            "pairwise_checks": [{
+                "left": "selector wall",
+                "right": "dynamics wall",
+                "left_closes_right": False,
+                "right_closes_left": False,
+                "independent": True,
+            }],
+            "collapsed_wall_set": ["selector wall", "dynamics wall"],
+            "unresolved": [],
+            "evidence_path": evidence_path,
+            "evidence_locator": evidence_locator,
+        },
+        "N3_hidden_wall_scan": {
+            "hits": [],
+            "unresolved": [],
+            "evidence_path": evidence_path,
+            "evidence_locator": evidence_locator,
+        },
+        "N4_residual_matching": {
+            "witnesses": [],
+            "unresolved": [],
+            "evidence_path": evidence_path,
+            "evidence_locator": evidence_locator,
+        },
+        "N5_rhetoric_audit": {
+            "statements": [],
+            "unresolved": [],
+            "evidence_path": evidence_path,
+            "evidence_locator": evidence_locator,
+        },
+        "N6_partial_closure_scan": {
+            "candidates": [],
+            "unresolved": [],
+            "evidence_path": evidence_path,
+            "evidence_locator": evidence_locator,
+        },
+        "N7_steelman": {
+            "argument": "the strongest counter-route",
+            "resolution": "the restricted packet answers it",
+            "resolved": True,
+            "evidence_path": evidence_path,
+            "evidence_locator": evidence_locator,
+        },
+        "N8_cross_cycle_echo": {
+            "packet_complete": True,
+            "echoes": [],
+            "unresolved": [],
+            "evidence_path": evidence_path,
+            "evidence_locator": evidence_locator,
+        },
         "failures": failures,
     }
+    if status == "FAIL":
+        packet.update({
+            "demotion": "partial_attempt_with_named_untested_routes",
+            "narrowed_claim_scope": claim_scope,
+            "corrected_wall_set": ["selector wall", "dynamics wall"],
+            "next_route": "test the alternate carrier route",
+        })
+    return packet
 
 
 def _import(module_name: str):
@@ -492,17 +565,72 @@ class ApplyAuditTest(unittest.TestCase):
             "second_auditor_error": "treated a supplied authority as absent",
         }
 
+        before_rejected = json.dumps(led, sort_keys=True)
         ok, msg = m.apply_one(led, dict(judgment))
         self.assertFalse(ok)
         self.assertIn("N1-N8 packet is required", msg)
+        self.assertEqual(json.dumps(led, sort_keys=True), before_rejected)
 
-        judgment["no_go_discipline"] = _no_go_packet()
+        judgment["no_go_discipline"] = _no_go_packet(
+            evidence_path="docs/TEST_JUDICIAL_NO_GO.md"
+        )
         ok, msg = m.apply_one(led, judgment)
         self.assertTrue(ok, msg)
         self.assertEqual(
             led["rows"]["test_judicial_no_go"]["no_go_discipline"]["status"],
             "PASS",
         )
+
+    def test_judicial_neither_validates_before_recording_blocker(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_judicial_neither_no_go",
+            audit_status="audit_in_progress",
+            claim_type="no_go",
+            note_body="# No-go obstruction\n",
+        )
+        led = self.fx.read_ledger()
+        led["rows"]["test_judicial_neither_no_go"]["cross_confirmation"] = {
+            "status": "disagreement",
+            "first_audit": {
+                "auditor": "first-auditor",
+                "auditor_family": "codex-gpt-5.6",
+                "verdict": "audited_clean",
+                "claim_type": "no_go",
+                "claim_scope": "the scoped obstruction",
+                "load_bearing_step_class": "A",
+            },
+            "second_audit": {
+                "auditor": "second-auditor",
+                "auditor_family": "codex-gpt-5.6",
+                "verdict": "audited_conditional",
+                "claim_type": "no_go",
+                "claim_scope": "the scoped obstruction",
+                "load_bearing_step_class": "A",
+            },
+        }
+        judgment = {
+            "claim_id": "test_judicial_neither_no_go",
+            "third_auditor": "panel-neither",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "judicial_review",
+            "sided_with": "neither",
+            "ratified_verdict": "audited_conditional",
+            "ratified_claim_type": "no_go",
+            "ratified_claim_scope": "the scoped obstruction",
+            "ratified_load_bearing_step_class": "A",
+            "judgment_rationale": "both readings overstate the packet",
+            "first_auditor_error": "overclosed",
+            "second_auditor_error": "miscounted the walls",
+        }
+        before = json.dumps(led, sort_keys=True)
+        ok, msg = m.apply_one(led, judgment)
+        self.assertFalse(ok)
+        self.assertIn("N1-N8 packet is required", msg)
+        self.assertEqual(json.dumps(led, sort_keys=True), before)
 
 
 class BuildCitationGraphParserTest(unittest.TestCase):
@@ -1523,6 +1651,60 @@ class AuditLintTest(unittest.TestCase):
         )
         self.assertEqual(errors, [])
 
+    def test_lint_validates_live_and_cross_confirmation_no_go_packets(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        live_path = "docs/linted_no_go.md"
+        rows = {
+            "linted_no_go": {
+                "claim_id": "linted_no_go",
+                "note_path": live_path,
+                "_body": "# No-go obstruction\n",
+                "audit_status": "audited_clean",
+                "claim_type": "no_go",
+                "claim_scope": "the scoped obstruction",
+                "chain_closes": True,
+                "effective_status": "retained_no_go",
+                "auditor": "lint-auditor",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
+                "independence": "cross_family",
+                "criticality": "leaf",
+                "load_bearing_step_class": "A",
+                "no_go_discipline": _no_go_packet(evidence_path=live_path),
+            }
+        }
+        self._write_minimal_ledger(rows)
+        import contextlib, io
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        self.assertEqual(rc, 0, buf.getvalue())
+
+        bad = _no_go_packet(evidence_path=live_path)
+        bad["N7_steelman"]["resolved"] = False
+        ledger = self.fx.read_ledger()
+        ledger["rows"]["linted_no_go"]["cross_confirmation"] = {
+            "status": "awaiting_second",
+            "first_audit": {
+                "auditor": "first-auditor",
+                "auditor_family": "codex-gpt-5.6",
+                "verdict": "audited_clean",
+                "claim_type": "no_go",
+                "claim_scope": "the scoped obstruction",
+                "load_bearing_step_class": "A",
+                "no_go_discipline": bad,
+            },
+            "second_audit": None,
+        }
+        self.fx.write_ledger(ledger)
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        self.assertEqual(rc, 1)
+        self.assertIn("cross_confirmation.first_audit invalid", buf.getvalue())
+
     def test_front_door_prose_or_code_path_does_not_count(self):
         m = _import("audit_lint")
         errors = m.front_door_axiom_pointer_errors(
@@ -2216,20 +2398,40 @@ class ComputeAuditQueueTest(unittest.TestCase):
 
 
 class NoGoDisciplineGateTest(unittest.TestCase):
+    @staticmethod
+    def _manifest() -> dict:
+        return {
+            "docs/TEST_NO_GO.md": {
+                "path": "docs/TEST_NO_GO.md",
+                "roles": ["source"],
+                "text": "No-go obstruction with a selector wall and dynamics wall.",
+                "effective_status": None,
+                "accepted_premise_type": None,
+            }
+        }
+
     def test_source_and_output_triggers_are_conservative(self):
         m = _import("no_go_discipline_gate")
         self.assertTrue(
             m.source_requires_no_go_discipline(
                 "docs/BOUNDARY.md",
-                "This bounded theorem names two residual walls.",
+                "This result is bounded with named walls.",
                 "bounded_theorem",
+            )
+        )
+        self.assertFalse(
+            m.output_requires_no_go_discipline(
+                {
+                    "claim_type": "bounded_theorem",
+                    "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the carrier",
+                }
             )
         )
         self.assertTrue(
             m.output_requires_no_go_discipline(
                 {
                     "claim_type": "bounded_theorem",
-                    "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the carrier",
+                    "claim_scope": "The candidate construction does not lift to the full sector.",
                 }
             )
         )
@@ -2238,21 +2440,110 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "docs/POSITIVE.md", "An exact positive identity.", "positive_theorem"
             )
         )
+        self.assertTrue(
+            m.source_requires_no_go_discipline(
+                "docs/spatial_anisotropy_no_go_note.md",
+                "A scoped negative boundary.",
+                "bounded_theorem",
+            )
+        )
+        self.assertFalse(
+            m.source_requires_no_go_discipline(
+                "docs/POSITIVE.md",
+                "This is not an admission; it is an exact identity.",
+                "positive_theorem",
+            )
+        )
 
     def test_pass_requires_five_distinct_routes(self):
         m = _import("no_go_discipline_gate")
         audit = {
             "claim_type": "no_go",
             "verdict": "audited_clean",
+            "chain_closes": True,
             "no_go_discipline": _no_go_packet(route_count=4),
         }
         self.assertIn(
-            "at least 5 distinct N1 routes",
+            "at least 5 distinct route_class values",
             m.validate_no_go_discipline(audit) or "",
         )
 
         audit["no_go_discipline"] = _no_go_packet(route_count=5)
         self.assertIsNone(m.validate_no_go_discipline(audit))
+
+    def test_pass_rejects_duplicate_route_classes_and_open_routes(self):
+        m = _import("no_go_discipline_gate")
+        packet = _no_go_packet()
+        for route in packet["N1_alternative_routes"]:
+            route["route_class"] = "algebraic_rearrangement"
+        audit = {
+            "claim_type": "no_go",
+            "verdict": "audited_clean",
+            "chain_closes": True,
+            "no_go_discipline": packet,
+        }
+        self.assertIn(
+            "distinct route_class",
+            m.validate_no_go_discipline(
+                audit, evidence_manifest=self._manifest()
+            ) or "",
+        )
+
+        packet = _no_go_packet()
+        packet["N1_alternative_routes"][0]["disposition"] = "OPEN"
+        audit["no_go_discipline"] = packet
+        self.assertIn(
+            "disposition=OPEN",
+            m.validate_no_go_discipline(
+                audit, evidence_manifest=self._manifest()
+            ) or "",
+        )
+
+    def test_pass_rejects_packet_gaps_and_unresolved_sections(self):
+        m = _import("no_go_discipline_gate")
+        packet = _no_go_packet()
+        packet["N1_alternative_routes"][0]["evidence_locator"] = (
+            "language that is absent from the packet"
+        )
+        audit = {
+            "claim_type": "no_go",
+            "verdict": "audited_clean",
+            "chain_closes": True,
+            "no_go_discipline": packet,
+        }
+        self.assertIn(
+            "is not present",
+            m.validate_no_go_discipline(
+                audit, evidence_manifest=self._manifest()
+            ) or "",
+        )
+
+        packet = _no_go_packet()
+        packet["N2_wall_independence"]["unresolved"] = ["pair remains open"]
+        audit["no_go_discipline"] = packet
+        self.assertIn(
+            "N2.unresolved",
+            m.validate_no_go_discipline(
+                audit, evidence_manifest=self._manifest()
+            ) or "",
+        )
+
+    def test_failed_gate_requires_applied_narrowing(self):
+        m = _import("no_go_discipline_gate")
+        packet = _no_go_packet(status="FAIL", route_count=3)
+        audit = {
+            "claim_type": "no_go",
+            "verdict": "audited_conditional",
+            "claim_scope": "a different applied scope",
+            "chain_closes": False,
+            "no_go_discipline": packet,
+        }
+        self.assertIn(
+            "must equal the applied claim_scope",
+            m.validate_no_go_discipline(
+                audit, evidence_manifest=self._manifest()
+            ) or "",
+        )
 
     def test_failed_gate_allows_non_clean_but_never_clean(self):
         m = _import("no_go_discipline_gate")
@@ -2260,6 +2551,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         non_clean = {
             "claim_type": "no_go",
             "verdict": "audited_conditional",
+            "claim_scope": "the scoped obstruction",
+            "chain_closes": False,
             "no_go_discipline": packet,
         }
         self.assertIsNone(m.validate_no_go_discipline(non_clean))
@@ -2292,6 +2585,62 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             )
             or "",
         )
+
+    def test_prompt_preserves_raw_placeholders_and_types_every_premise(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            notes = {
+                "target": "literal {{CLAIM_ID}} inside source evidence",
+                "axiom": "axiom authority",
+                "owner": "owner authority",
+                "tier": "tier authority",
+                "convention": "literal {{RUNNER_PATH}} inside authority",
+            }
+            for name, body in notes.items():
+                path = root / "docs" / f"{name}.md"
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(body, encoding="utf-8")
+            rows = {
+                name: {
+                    "claim_id": name,
+                    "note_path": f"docs/{name}.md",
+                    "effective_status": "unaudited",
+                    "claim_type": "bounded_theorem",
+                    "deps": [],
+                }
+                for name in notes
+            }
+            rows["target"]["deps"] = ["axiom", "owner", "tier", "convention"]
+            template = (
+                "control={{CLAIM_ID}}\n"
+                "{{FOREACH cited_authority IN CITED_AUTHORITIES}}ignored"
+                "{{ENDFOREACH}}\n"
+                "note={{NOTE_BODY}}\n"
+                "manifest={{NO_GO_EVIDENCE_MANIFEST}}\n"
+                "premises={{FRAMEWORK_PREMISE_CONTEXT}}\n"
+                "gate={{NO_GO_DISCIPLINE_REQUIRED}}\n"
+                "stdout={{RUNNER_STDOUT}}\nsource={{RUNNER_SOURCE}}\n"
+                "helpers={{HELPER_RUNNER_SOURCES}}"
+            )
+            with (
+                mock.patch.object(m.premise_nodes, "is_axiom_premise", side_effect=lambda x: x == "axiom"),
+                mock.patch.object(m.premise_nodes, "is_owner_governed_premise", side_effect=lambda x: x == "owner"),
+                mock.patch.object(m.premise_nodes, "is_admitted_derivation_target", side_effect=lambda x: x == "tier"),
+                mock.patch.object(m.premise_nodes, "is_admitted_convention", side_effect=lambda x: x == "convention"),
+            ):
+                prompt = m.render_prompt(
+                    rows["target"], rows, template, 1, skip_runner_stdout=True
+                )
+            self.assertIn("control=target", prompt)
+            self.assertIn("literal {{CLAIM_ID}} inside source evidence", prompt)
+            self.assertIn("literal {{RUNNER_PATH}} inside authority", prompt)
+            self.assertIn("accepted_premise_type: axiom_or_approved_primitive", prompt)
+            self.assertIn("accepted_premise_type: owner_governed_residual", prompt)
+            self.assertIn("accepted_premise_type: tier_a_derivation_target", prompt)
+            self.assertIn("accepted_premise_type: tier_a_convention_not_accepted", prompt)
+            self.assertIn("bounds_downstream: true", prompt)
 
     def test_invalidation_archives_and_clears_packet(self):
         m = _import("invalidate_stale_audits")
@@ -2618,6 +2967,39 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             m.categorize_criticality_bump_for_archived(
                 self._archived_audit(independence="cross_family"), "critical"),
             "soft_reset",
+        )
+
+    def test_restore_round_trips_and_validates_no_go_packet(self):
+        m = self._import_and_patch()
+        cid = "restore_no_go"
+        note_path = "docs/RESTORE_NO_GO.md"
+        self.fx.write_note(note_path, "# No-go obstruction\n")
+        archived = self._archived_audit(
+            claim_type="no_go",
+            invalidation_reason="criticality_increased:leaf->medium",
+        )
+        archived["claim_scope"] = "the scoped obstruction"
+        archived["chain_closes"] = True
+        archived["no_go_discipline"] = _no_go_packet(
+            evidence_path=note_path
+        )
+        row = self._seed_with_archived(cid, archived)
+        row["note_path"] = note_path
+        rows = {cid: row}
+
+        restored = m.restore_audit_from_previous(row, rows)
+        self.assertIsNotNone(restored)
+        self.assertEqual(
+            restored["no_go_discipline"], archived["no_go_discipline"]
+        )
+
+        archived_bad = dict(archived)
+        archived_bad["no_go_discipline"] = dict(archived["no_go_discipline"])
+        archived_bad["no_go_discipline"]["status"] = "BROKEN"
+        bad_row = self._seed_with_archived(cid, archived_bad)
+        bad_row["note_path"] = note_path
+        self.assertIsNone(
+            m.restore_audit_from_previous(bad_row, {cid: bad_row})
         )
 
     def test_select_restore_candidates_picks_criticality_increased(self):

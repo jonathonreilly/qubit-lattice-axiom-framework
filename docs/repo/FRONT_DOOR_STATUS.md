@@ -29,16 +29,16 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3739 |
-| Applied audit verdicts | 1649 |
+| Applied audit verdicts | 1648 |
 | Retained-grade rows, including boxed decorations | 1424 |
 | Retained positive theorems | 199 |
 | Retained no-go rows | 215 |
 | Retained bounded rows | 948 |
 | Boxed decorations under retained parents | 62 |
 | Open gates | 29 |
-| Unaudited rows | 1719 |
+| Unaudited rows | 1720 |
 | Retained-pending-chain rows | 13 |
-| Audited conditional rows | 145 |
+| Audited conditional rows | 144 |
 | Audited renaming rows | 36 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 10 |
@@ -51,19 +51,19 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Metric | Value |
 |---|---:|
 | Total pending rows | 1904 |
-| Ready rows | 181 |
+| Ready rows | 179 |
 | Cycle-break targets | 49 |
-| Critical pending | 435 |
+| Critical pending | 437 |
 | High pending | 247 |
 | Medium pending | 486 |
-| Leaf pending | 736 |
+| Leaf pending | 734 |
 
 Next ready rows by queue order:
 
 - [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
 - [`yt_zero_import_authority_note`](../../docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md) - critical; non_terminal_conditional
 - [`yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md) - critical; non_terminal_conditional
-- [`dm_neutrino_bosonic_normalization_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md) - critical; unaudited
+- [`neutrino_gamma1_wsource_application_bridge_note_2026-07-09`](../../docs/NEUTRINO_GAMMA1_WSOURCE_APPLICATION_BRIDGE_NOTE_2026-07-09.md) - critical; non_terminal_conditional
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; non_terminal_conditional
 - [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; non_terminal_conditional
 - [`yt_ew_m_residual_note_2026-05-02`](../../docs/YT_EW_M_RESIDUAL_NOTE_2026-05-02.md) - critical; non_terminal_conditional
@@ -98,10 +98,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3911 |
-| Critical nodes | 761 |
+| Critical nodes | 763 |
 | High nodes | 401 |
 | Medium nodes | 989 |
-| Leaf nodes | 1760 |
+| Leaf nodes | 1758 |
 
 Top load-bearing rows by graph score:
 

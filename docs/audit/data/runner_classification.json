@@ -15420,6 +15420,18 @@
       "dominant_class": "C",
       "runner": "scripts/gl_f_multiloop_cocycle_check_2026_06_10.py"
     },
+    "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": {
+      "assert_count": 1,
+      "counts": {
+        "A": 3,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_gleason_qubit_lattice_projection_narrow_2026_07_09.py"
+    },
     "global_coherence_held_out2_note": {
       "assert_count": 3,
       "counts": {
@@ -62715,6 +62727,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/frontier_gleason_qubit_lattice_projection_narrow_2026_07_09.py": {
+      "assert_count": 1,
+      "claims": [
+        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_gr_class_expansion_finite_rank_target.py": {
       "assert_count": 1,
       "claims": [
@@ -93286,15 +93313,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 712,
+    "decoration_candidates": 713,
     "dominant_class_distribution": {
-      "A": 510,
+      "A": 511,
       "B": 660,
       "C": 1313,
       "D": 457,
       "none": 459
     },
-    "runners_classified": 3399,
+    "runners_classified": 3400,
     "runners_with_C": 1795,
     "runners_with_D": 1094
   }

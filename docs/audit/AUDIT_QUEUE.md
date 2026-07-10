@@ -1,13 +1,13 @@
 # Audit Queue
 
 **Total pending:** 1904
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 181
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 179
 
 By criticality:
-- `critical`: 435
+- `critical`: 437
 - `high`: 247
 - `medium`: 486
-- `leaf`: 736
+- `leaf`: 734
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -18,7 +18,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 1 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | non_terminal_conditional | critical | 1321 | 15.37 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py` |
 | 2 | `yt_zero_import_authority_note` | positive_theorem | non_terminal_conditional | critical | 936 | 19.37 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
 | 3 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | bounded_theorem | non_terminal_conditional | critical | 803 | 17.65 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_p1_h_unit_renormalization.py` |
-| 4 | `dm_neutrino_bosonic_normalization_theorem_note_2026-04-15` | bounded_theorem | unaudited | critical | 745 | 15.54 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_neutrino_bosonic_normalization_theorem.py` |
+| 4 | `neutrino_gamma1_wsource_application_bridge_note_2026-07-09` | bounded_theorem | non_terminal_conditional | critical | 746 | 14.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.py` |
 | 5 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | non_terminal_conditional | critical | 642 | 18.83 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py` |
 | 6 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | non_terminal_conditional | critical | 636 | 16.32 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py` |
 | 7 | `yt_ew_m_residual_note_2026-05-02` | no_go | non_terminal_conditional | critical | 625 | 15.29 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/yt_ew_m_residual_channel_check.py` |
@@ -45,8 +45,8 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 28 | `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | audit_in_progress | critical | 447 | 14.81 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py` |
 | 29 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | non_terminal_conditional | critical | 446 | 14.80 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_axis_alignment.py` |
 | 30 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | critical | 443 | 13.79 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py` |
-| 31 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | audit_in_progress | critical | 443 | 13.29 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py` |
-| 32 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | non_terminal_conditional | critical | 442 | 16.79 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
+| 31 | `qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09` | bounded_theorem | non_terminal_conditional | critical | 443 | 13.29 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py` |
+| 32 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | audit_in_progress | critical | 443 | 13.29 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py` |
 | 33 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | non_terminal_conditional | critical | 442 | 15.79 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py` |
 | 34 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | audit_in_progress | critical | 439 | 17.28 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 35 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | non_terminal_conditional | critical | 436 | 14.27 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_luders_sequential_product_conditional_bridge.py` |

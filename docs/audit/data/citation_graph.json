@@ -10177,6 +10177,10 @@
       "to": "observable_principle_from_axiom_note"
     },
     {
+      "from": "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15",
+      "to": "neutrino_gamma1_wsource_application_bridge_note_2026-07-09"
+    },
+    {
       "from": "dm_neutrino_breaking_triplet_axiom_law_attempt_note_2026-04-15",
       "to": "dm_neutrino_positive_polar_h_cp_theorem_note_2026-04-15"
     },
@@ -16559,6 +16563,10 @@
     {
       "from": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
       "to": "minimal_axioms"
+    },
+    {
+      "from": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+      "to": "qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09"
     },
     {
       "from": "global_coherence_held_out2_note",
@@ -57838,11 +57846,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+      "to": "yt_ew_m_residual_note_2026-05-02"
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_ew_m_residual_note_2026-05-02"
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
     {
       "from": "repo.repo_organization",
@@ -72037,14 +72045,15 @@
     },
     "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15": {
       "claim_id": "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "observable_principle_from_axiom_note"
+        "observable_principle_from_axiom_note",
+        "neutrino_gamma1_wsource_application_bridge_note_2026-07-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e29757c66a2dbd2163ea05894028541a686a0f1f3c99bfd3606dc955bf9b2b8e",
+      "note_hash": "6b7d32036f8828e1b62baee2d6cce15d501335c41ec6327d48050aef574812fe",
       "path": "docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
       "runner_path": "scripts/frontier_dm_neutrino_bosonic_normalization_theorem.py",
       "title": "DM Neutrino Bosonic Normalization Theorem (Conditional)"
@@ -83568,16 +83577,17 @@
     },
     "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": {
       "claim_id": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "minimal_axioms"
+        "minimal_axioms",
+        "qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "272c80c669e28414489c08d779f652fc3af9a5694148a2ae4af6bff9f9d4c191",
+      "note_hash": "036c82a6b474306529aa37014a1dec37e6f2ed37ebd181c5f29840967e765777",
       "path": "docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_gleason_qubit_lattice_projection_narrow_2026_07_09.py",
       "title": "Gleason's Theorem on the Qubit-Lattice Projection Lattice (Narrow)"
     },
     "global_coherence_held_out2_note": {
@@ -112115,11 +112125,11 @@
         "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "yt_ew_m_residual_note_2026-05-02"
+        "yt_ew_m_residual_note_2026-05-02",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3d1b8ba0b4f3b10c2a6beb1f6c47312bbc9d28470c2a45765c4d7326b79cc8be",
+      "note_hash": "53fa20f00fe4ddf63bd4ad4d00415e1f857b878036f4b5edf606a7dce68fba15",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -129035,27 +129045,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1628,
+      "bounded_theorem": 1630,
       "decoration": 3,
       "meta": 329,
       "no_go": 333,
-      "none": 1208,
+      "none": 1207,
       "open_gate": 132,
-      "positive_theorem": 278
+      "positive_theorem": 277
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2031,
+      "bounded_theorem": 2032,
       "decoration": 3,
       "meta": 329,
       "no_go": 436,
       "none": 248,
       "open_gate": 206,
-      "positive_theorem": 658
+      "positive_theorem": 657
     },
-    "edge_count": 14563,
-    "leaf_count": 1320,
+    "edge_count": 14565,
+    "leaf_count": 1318,
     "node_count": 3911,
     "root_count": 1109,
-    "runners_with_path": 3533
+    "runners_with_path": 3534
   }
 }

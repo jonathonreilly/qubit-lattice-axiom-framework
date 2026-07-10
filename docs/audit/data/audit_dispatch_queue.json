@@ -202,7 +202,7 @@
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
       "queue_order": 4,
       "ready": false,
-      "ready_blocker": "blocked_by_dependency:gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20:audited_conditional,busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20:unaudited,pre_record_reference_state_tracial_derivation_note_2026-05-20:retained_pending_chain,luders_rule_from_composition_consistency_note_2026-05-20:audited_conditional,luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22:audited_conditional",
+      "ready_blocker": "blocked_by_dependency:gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20:unaudited,busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20:unaudited,pre_record_reference_state_tracial_derivation_note_2026-05-20:retained_pending_chain,luders_rule_from_composition_consistency_note_2026-05-20:audited_conditional,luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22:audited_conditional",
       "runner_path": "scripts/born_rule_framework_bridge_check.py",
       "source_json_path": "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",

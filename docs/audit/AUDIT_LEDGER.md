@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 941 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1772 |
+| unaudited | 1771 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 108 |
+| ~~audited_conditional~~ | 109 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1352 |
-| `audited_conditional` | 108 |
+| `audited_conditional` | 109 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2117 |
+| `unaudited` | 2116 |
 
 | claim_type | count |
 |---|---:|
@@ -1516,6 +1516,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_real_holonomy_locus_identity_2026-07-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2185,6 +2186,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** With real b giving delta in {0, pi}, the G-orbit of those phases is exactly {k pi/3}, which is also equivalent to cos(3 delta) = ±1 and to the retained modulus-stationary set.  _(class `A`)_
 - **chain closes:** False — The algebra closes for |b| > 0, but that domain restriction is absent from the claim. At b = 0, the spectrum does not determine cos(3 delta), arg(b^3) is undefined, and K-reality does not select the claimed phase subset.
 - **rationale:** Issue: Lemma R and Phi = arg(b^3) are stated over the circulant surface without requiring |b| > 0, while the runner silently imposes rho > 0. Why this blocks: at b = 0 the spectrum is {a, a, a}, so it cannot determine cos(3 delta), and the holonomy phase is undefined. Repair target: propagate an explicit nonzero-coupling hypothesis through the claim, lemma, theorem, and runner contract, or separately define the zero-coupling stratum. Claim boundary until fixed: for |b| > 0, the exact G-orbit/locus identity and off-locus arithmetic follow from the retained inputs.
+- **auditor confidence:** high
+
+### `acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01`
+
+- **Note:** [`ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md`](../../docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact circulant-spectrum invariant cos(3 delta), equal-modulus cycle-holonomy normal form, and the conditional algebraic re-coordination Phi(c) = c S_sum were audited; no derivation of the physical value Phi = 2/3 was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00044-acphilambda_registrable_cycl`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Under the c-parameterized readout family, delta(c) = c L3 and Phi = 3 delta imply Phi(c) = c S_sum, hence c = 1 iff Phi = 2/3.  _(class `A`)_
+- **chain closes:** False — The finite spectral, gauge, holonomy, and fixed-point-sum algebra closes exactly. The physical re-coordination additionally assumes the in-flight readout relation delta(c) = c L3 and the same-object identification of the two factors 1/3, neither of which is closed by the restricted cited packet.
+- **rationale:** The runner genuinely performs the advertised symbolic matrix and trigonometric calculations rather than merely printing expected constants. Those calculations establish T-A1, T-A2, S_sum = 2/3, and the formal implication from the assumed c-family. However, the fixed-locus authority explicitly excludes the physical single-summand readout, while the radian authority retains the Type-B-to-radian identification as an open primitive, so the claimed physical-junction re-coordination is conditional.
+- **open / conditional deps cited:**
+  - `KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+  - `KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`
 - **auditor confidence:** high
 
 ### `acphilambda_species_bridge_realized_state_decomposition_note_2026-06-11`

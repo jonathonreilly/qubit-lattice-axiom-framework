@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 936 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1818 |
+| unaudited | 1817 |
 | audit_in_progress | 10 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 79 |
+| ~~audited_conditional~~ | 80 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1345 |
-| `audited_conditional` | 79 |
+| `audited_conditional` | 80 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2163 |
+| `unaudited` | 2162 |
 
 | claim_type | count |
 |---|---:|
@@ -1540,6 +1540,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -15621,6 +15622,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The same rational target vector can select different kernels under different supplied weight choices, so target values and loss weights are supplied rule inputs rather than outputs of the finite selection algebra.  _(class `A`)_
 - **chain closes:** True — The finite witness computes the Markov laws, statistic vectors, weighted squared losses, and unique minimizers exactly. This closes only the scoped supplied-rule firewall, not any broader Record-alone target or weight derivation claim.
 - **rationale:** The runner genuinely computes the finite algebra with exact rational arithmetic; independently, the endpoint-heavy rule selects k4 and the second-coordinate-heavy rule selects k3 for the same target vector. The cited supplied-rule interface and directed-certificate kernel firewall are retained-grade inputs for this bounded surface. The clean verdict is limited to the finite supplied-rule interface and does not assert a broad Record-alone impossibility theorem for every possible target or weight derivation.
+- **auditor confidence:** high
+
+### `post_record_selector_tangent_readout_weight_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Exact normalization and 2×2 positive-definite quadratic/readout-weight arithmetic for one explicitly supplied finite packet, excluding derivation of selector, readout, tangent, or physical-measure authority.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-post_record_selector_tan-091`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** A supplied finite carrier, positive tangent metric or Hessian, and nonnegative readout weights permit exact normalization and quadratic-form checks within that supplied packet.  _(class `A`)_
+- **chain closes:** False — The finite arithmetic closes for the supplied example, but the restricted packet does not derive or accept as framework primitives the carrier, readout weights/map, or positive metric/Hessian. A retained bridge supplying those structures is missing.
+- **rationale:** The runner performs class-A exact arithmetic on hard-coded supplied data rather than deriving that data from the framework axioms. The measure/weight subdivision is conditional meta support, and the note explicitly leaves the carrier, weights/readout, and metric/Hessian supplied. The completed runner also exits 1 with 79 passes and 2 failures, including a live count of 20 rows against a hard-coded expectation of 17, confirming stale diagnostic assertions even though row counts are not theorem premises.
+- **open / conditional deps cited:**
+  - `POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `post_record_source_measure_trace_normalization_prototype_2026-06-06`

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 195 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 941 |
+| **retained_bounded** | 940 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 24 |
-| unaudited | 1779 |
+| unaudited | 1780 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -67,19 +67,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 11 |
-| `audited_clean` | 1351 |
+| `audited_clean` | 1350 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2124 |
+| `unaudited` | 2125 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2035 |
+| `bounded_theorem` | 2034 |
 | `decoration` | 63 |
-| `meta` | 351 |
+| `meta` | 352 |
 | `no_go` | 481 |
 | `open_gate` | 183 |
 | `positive_theorem` | 602 |
@@ -434,7 +434,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | C | - |
 | `doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dynamics_coupling_residual_classifier_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `dynamics_nontriviality_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -1502,6 +1501,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_cross_arc_unit_classification_wiring_2026-07-02` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `acphilambda_k_even_registration_correction_registered_pattern_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1569,7 +1569,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
-| `record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
@@ -1851,6 +1850,27 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For real orthogonal R with R^3 = I and real-symmetric O = f(Delta), Tr(O R^2) = conjugate(Tr(O R)) = Tr(O R), so the conjugate C3 isotypic traces coincide.  _(class `A`)_
 - **chain closes:** True — The scalar blindness and isotypic equality follow by exact finite-dimensional trace algebra. The retained-bounded authority supplies the scoped per-site C^2 carrier surface, and the note correctly limits the projective conclusion to exact group-theoretic identities rather than physical realization.
 - **rationale:** The runner symbolically verifies the load-bearing trace identities, the isotypic corollary, the complex-hopping counterexample, and the projective-lift algebra; its finite torus checks genuinely construct the Laplacian and rotation operators. No external comparator, tuned physical value, or hard-coded disputed bridge enters the bounded conclusion. Physical selection of the projective carrier remains explicitly outside the audited scope.
+- **auditor confidence:** high
+
+### `acphilambda_cross_arc_unit_classification_wiring_2026-07-02`
+
+- **Note:** [`ACPHILAMBDA_CROSS_ARC_UNIT_CLASSIFICATION_WIRING_2026-07-02.md`](../../docs/ACPHILAMBDA_CROSS_ARC_UNIT_CLASSIFICATION_WIRING_2026-07-02.md)
+- **claim_type:** `meta`
+- **claim_scope:** The bookkeeping claim that Arc B path 2 maps to fifteen Arc A conversion-source dispositions, excluding any value derivation, terminal no-go, or registry change.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00035-acphilambda_cross_arc_unit_c`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Arc B's path 2 is answered at the classification level by the landed unit-classification arc, with all audit statuses pending.  _(class `B`)_
+- **chain closes:** False — The mapping imports its substantive dispositions from PR-scoped Arc A notes whose audit statuses are explicitly pending and whose full contents are absent from the restricted authority packet. The runner verifies quotations, arithmetic spot checks, and document discipline but does not independently establish those dispositions.
+- **rationale:** The load-bearing operation is cross-note input verification, not a first-principles computation or independent algebraic closure. Although the runner performs genuine integrity checks and reports 134 passes, it reads the disposition claims from separate landed documents and checks that their text was reproduced. Because those load-bearing Arc A sources remain pending independent audit, the classification-wiring conclusion is conditional.
+- **open / conditional deps cited:**
+  - `ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md`
+  - `ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md`
+  - `ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02.md`
+  - `ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md`
+  - `ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md`
+  - `ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md`
+  - `ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md`
 - **auditor confidence:** high
 
 ### `acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12`
@@ -6175,19 +6195,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The exact Schur factorization gives I_e^* D_-^(-1) I_e = L_e^(-1), and under D_- = D_-^* > 0 the completed-square identity gives u^* L_e u = min_v [u; v]^* D_- [u; v].  _(class `A`)_
 - **chain closes:** True — The note proves the scoped conclusions directly by finite-dimensional block factorization and positive-Hermitian quadratic completion. There are no one-hop dependencies and no imported physical bridge inside the audited finite-dimensional boundary theorem.
 - **rationale:** The finite-dimensional algebra closes under the note's explicit hypotheses: invertible F and L_e for the resolvent identity, and D_- = D_-^* > 0 for the variational and monotonicity statements. The runner is not a first-principles microscopic computation, but it consistently checks exact Schur/Feshbach/Dirichlet algebra and scope hygiene, with 46 PASS and 0 FAIL in the supplied live summary. Residual risk is limited to scope discipline: this clean verdict covers only the supplied-block theorem and does not certify any Wilson-native construction of D_-, charged support selection, or final DM closure.
-- **auditor confidence:** high
-
-### `domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04`
-
-- **Note:** [`DOMAIN_WALL_CHIRAL_EDGE_FROM_ACHIRAL_CL3_BULK_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-04.md`](../../docs/DOMAIN_WALL_CHIRAL_EDGE_FROM_ACHIRAL_CL3_BULK_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-04.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite free-field linear-algebra diagnostic: from the current minimal-axiom spatial Z^3/M_2(C) input plus explicitly imposed diagnostic chiral embedding, Wilson-Dirac regulator, and record-time mass wall, the runner verifies naive Cl(3,0) doubling, direct Wilson chiral breaking, one localized Weyl species on the wall and the opposite species on the anti-wall, zero net torus chirality, and a gapped uniform bulk; no gauge coupling, interaction, anomaly matching, dynamical wall origin, electroweak structure, or framework derivation of the higher-dimensional regulator is audited.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop`  (codex-current; independence=cross_family)
-- **load-bearing step:** The finite higher-dimensional Wilson-Dirac domain-wall diagnostic localizes one two-component Weyl species on the wall and the opposite species on the anti-wall, while the native Cl(3,0) spatial operator is doubled and direct Wilson lifting breaks chiral anticommutation.  _(class `C`)_
-- **chain closes:** True — The source makes every extra diagnostic ingredient explicit and excludes them from framework derivation. The runner computes the Brillouin-corner zeros and chiralities, Wilson anticommutator, actual finite record-time wall spectrum and localization, edge chirality, projected Weyl cones, M-flip, uniform-bulk gap, and wall/anti-wall net-zero count with TOTAL PASS=19 FAIL=0.
-- **rationale:** The bounded diagnostic closes: the spatial Cl(3,0) input is supplied by the current minimal axiom memo, and all non-axiom domain-wall ingredients are explicitly imposed rather than smuggled in as derived framework structure. The runner performs the load-bearing finite-matrix computations and verifies both halves of the contrast: naive doubling/direct Wilson chiral breaking, and localized opposite-chirality wall/anti-wall Weyl species with a gapped uniform bulk and zero net torus chirality. Residual risk is exactly the stated scope boundary: this is not a gauge-coupled, interacting, anomaly-matching, dynamical-origin, or electroweak derivation.
 - **auditor confidence:** high
 
 ### `doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12`
@@ -16854,19 +16861,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** "This is occurrence strength only" plus "Succession, wherever it exists, is monotone."  _(class `A`)_
 - **chain closes:** True — The axiom text supports occurrence and, conditional on an actual formation-successor, permanence plus per-site uniqueness force strict extension; the note explicitly excludes any formation rule, universal successor law, rate, clock, selector, or dynamics.
 - **rationale:** The citable axiom text contains 'Records form.' and the Qualification blocks extra physical structure absent derivation/admission. Read minimally, that supports occurrence and excludes empty-forever history, but it does not supply a total transition law, availability domain, site or possibility selector, rate, clock, stochastic process, or dynamics. The extension lemma closes only under the explicit conditional 'for any realized formation-successor': permanence preserves old records, per-site uniqueness forbids overwrite, and formation adds a record. The runner verifies exact text needles and finite toy consequences; it is not an independent dynamics derivation, but the note does not claim one.
-- **auditor confidence:** high
-
-### `record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05`
-
-- **Note:** [`RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md`](../../docs/RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite free-field linear-algebra verification that an explicitly supplied monotone occupancy profile, under the assumed occupancy-to-mass map, produces localized opposite-chirality domain-wall modes and a projected Cl(3,0) Weyl cone.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00013-record_formation_front_is_th`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Diagonalizing the finite Wilson-Dirac operator with the modeled mass profile m(s)=M(2 theta(s)-1) yields a near-zero chiral Weyl subspace localized at the occupancy midpoint, with chirality reversed when the occupancy gradient is reversed.  _(class `C`)_
-- **chain closes:** False — The runner genuinely computes the stated spectral and projected-operator witnesses, but the occupancy-to-mass identification m(s)=M(2 theta(s)-1) is an explicit bridge not derived or otherwise closed by the cited authorities. Thus the diagnostic closes only conditional on that additional modeled premise.
-- **rationale:** The source computes a nontrivial finite spectrum rather than printing or importing the claimed results, so the load-bearing numerical step is class C. The retained bounded parent supports the domain-wall operator construction, and the minimal axioms are an accepted premise, but neither supplies the occupancy profile or derives its identification with the mass wall. The note accurately limits its claim, yet the rubric requires an explicit unclosed bridge to remain conditional.
 - **auditor confidence:** high
 
 ### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`

@@ -2,8 +2,8 @@
   "by_criticality": {
     "critical": 387,
     "high": 265,
-    "leaf": 750,
-    "medium": 497
+    "leaf": 749,
+    "medium": 498
   },
   "cycle_break_target_count": 10,
   "cycle_break_targets": [
@@ -20188,6 +20188,30 @@
     },
     {
       "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint_after_invalidation",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.5,
+      "note_path": "docs/DOMAIN_WALL_CHIRAL_EDGE_FROM_ACHIRAL_CL3_BULK_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/domain_wall_chiral_edge_from_achiral_cl3_bulk_2026_07_04.py",
+      "transitive_descendants": 3
+    },
+    {
+      "audit_independence_required": "any_non_self",
       "audit_status": "audited_failed",
       "blocker": null,
       "claim_id": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
@@ -20422,31 +20446,6 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
-      "blocker": null,
-      "claim_id": "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05",
-      "claim_scope": "Finite free-field linear-algebra verification that an explicitly supplied monotone occupancy profile, under the assumed occupancy-to-mass map, produces localized opposite-chirality domain-wall modes and a projected Cl(3,0) Weyl cone.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "audited_conditional",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md",
-      "queue_reason": "non_terminal_conditional",
-      "ready": true,
-      "runner_path": "scripts/record_formation_front_chiral_edge_2026_07_05.py",
       "transitive_descendants": 2
     },
     {
@@ -34543,6 +34542,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint_after_invalidation",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/record_formation_front_chiral_edge_2026_07_05.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "s3_time_observable_hessian_route_note",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -35465,32 +35489,6 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_accessible_prediction.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "acphilambda_cross_arc_unit_classification_wiring_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
-        "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
-        "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_CROSS_ARC_UNIT_CLASSIFICATION_WIRING_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/acphilambda_cross_arc_unit_classification_wiring_2026_07_02.py",
       "transitive_descendants": 0
     },
     {
@@ -56892,6 +56890,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 193,
+  "ready_count": 192,
   "total_pending": 1899
 }

@@ -35,6 +35,8 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+import no_go_discipline_gate
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 AXIOM_PREMISE_NODES_PATH = REPO_ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
@@ -250,7 +252,7 @@ def third_confirmation_error(cross_confirmation: dict, audit: dict) -> str | Non
 
 def audit_summary_from_row(row: dict) -> dict:
     """Build the restricted summary used for later comparison."""
-    return {
+    summary = {
         "auditor": row.get("auditor"),
         "auditor_family": row.get("auditor_family"),
         "auditor_model": row.get("auditor_model"),
@@ -262,10 +264,13 @@ def audit_summary_from_row(row: dict) -> dict:
         "load_bearing_step_class": row.get("load_bearing_step_class"),
         "verdict": row.get("audit_status"),
     }
+    if row.get("no_go_discipline") is not None:
+        summary["no_go_discipline"] = row.get("no_go_discipline")
+    return summary
 
 
 def audit_summary_from_blob(audit: dict) -> dict:
-    return {
+    summary = {
         "auditor": audit.get("auditor"),
         "auditor_family": audit.get("auditor_family"),
         "auditor_model": audit.get("auditor_model"),
@@ -277,6 +282,9 @@ def audit_summary_from_blob(audit: dict) -> dict:
         "load_bearing_step_class": audit.get("load_bearing_step_class"),
         "verdict": audit.get("verdict"),
     }
+    if audit.get("no_go_discipline") is not None:
+        summary["no_go_discipline"] = audit.get("no_go_discipline")
+    return summary
 
 
 def judicial_summary_from_blob(judgment: dict) -> dict:
@@ -304,6 +312,8 @@ def judicial_summary_from_blob(judgment: dict) -> dict:
         summary["decoration_parent_claim_id"] = decoration_parent
     if "runner_check_breakdown" in judgment:
         summary["runner_check_breakdown"] = judgment["runner_check_breakdown"]
+    if judgment.get("no_go_discipline") is not None:
+        summary["no_go_discipline"] = judgment.get("no_go_discipline")
     return summary
 
 
@@ -670,6 +680,29 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     if ratified_verdict == "audited_decoration" and not ratified_decoration_parent:
         return False, "judicial audited_decoration requires decoration_parent_claim_id"
     ratified_class = judgment.get("ratified_load_bearing_step_class")
+    final_claim_type = ratified_claim_type or chosen_claim_type or row.get("claim_type")
+    note_path = row.get("note_path") or ""
+    note_body = ""
+    if note_path:
+        try:
+            note_body = (REPO_ROOT / note_path).read_text(encoding="utf-8")
+        except OSError:
+            pass
+    gate_blob = {
+        "claim_type": final_claim_type,
+        "verdict": ratified_verdict,
+        "verdict_rationale": judgment.get("judgment_rationale"),
+        "notes_for_re_audit_if_any": judgment.get("notes_for_re_audit_if_any"),
+        "no_go_discipline": judgment.get("no_go_discipline"),
+    }
+    no_go_error = no_go_discipline_gate.validate_no_go_discipline(
+        gate_blob,
+        source_required=no_go_discipline_gate.source_requires_no_go_discipline(
+            note_path, note_body, row.get("claim_type") or final_claim_type
+        ),
+    )
+    if no_go_error:
+        return False, no_go_error
 
     row["cross_confirmation"]["status"] = {
         "first": "third_confirmed_first",
@@ -683,7 +716,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     row["auditor_reasoning_effort"] = judgment["auditor_reasoning_effort"]
     row["independence"] = judgment["independence"]
     row["audit_date"] = third["audit_date"]
-    row["claim_type"] = ratified_claim_type or chosen_claim_type or row.get("claim_type")
+    row["claim_type"] = final_claim_type
     row["claim_scope"] = judgment.get("ratified_claim_scope") or chosen.get("claim_scope") or row.get("claim_scope")
     row["claim_type_provenance"] = "judicial_review"
     row["claim_type_last_reviewed"] = row["audit_date"]
@@ -706,6 +739,10 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     else:
         row["decoration_parent_claim_id"] = judgment.get("decoration_parent_claim_id")
     row["auditor_confidence"] = judgment.get("auditor_confidence", "judicial")
+    if judgment.get("no_go_discipline") is None:
+        row.pop("no_go_discipline", None)
+    else:
+        row["no_go_discipline"] = judgment.get("no_go_discipline")
     row["blocker"] = None
     row["audit_state_snapshot"] = snapshot_audit_state(row, rows)
     rows[cid] = row
@@ -738,6 +775,26 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     claim_scope = audit.get("claim_scope")
     if not isinstance(claim_scope, str) or not claim_scope.strip():
         return False, "claim_scope must be a non-empty string"
+
+    note_path = row.get("note_path") or ""
+    note_body = ""
+    if note_path:
+        try:
+            note_body = (REPO_ROOT / note_path).read_text(encoding="utf-8")
+        except OSError:
+            pass
+    source_requires_no_go = (
+        no_go_discipline_gate.source_requires_no_go_discipline(
+            note_path,
+            note_body,
+            row.get("claim_type") or claim_type,
+        )
+    )
+    no_go_error = no_go_discipline_gate.validate_no_go_discipline(
+        audit, source_required=source_requires_no_go
+    )
+    if no_go_error:
+        return False, no_go_error
 
     if verdict == "audited_clean" and claim_type in {"decoration", "meta"}:
         return False, f"audited_clean cannot ratify claim_type={claim_type!r}"
@@ -1088,6 +1145,10 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     row["open_dependency_paths"] = audit.get("open_dependency_paths", [])
     row["decoration_parent_claim_id"] = audit.get("decoration_parent_claim_id")
     row["auditor_confidence"] = audit.get("auditor_confidence")
+    if audit.get("no_go_discipline") is None:
+        row.pop("no_go_discipline", None)
+    else:
+        row["no_go_discipline"] = audit.get("no_go_discipline")
     if "runner_check_breakdown" in audit:
         row["runner_check_breakdown"] = audit["runner_check_breakdown"]
     row["blocker"] = third_pass_blocker if third_pass else terminal_second_pass_blocker

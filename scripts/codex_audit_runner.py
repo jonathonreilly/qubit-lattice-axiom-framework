@@ -58,6 +58,7 @@ AUDIT_DIR = REPO_ROOT / "docs" / "audit"
 # prompt and the deterministic pipeline cannot drift.
 sys.path.insert(0, str(AUDIT_DIR / "scripts"))
 import premise_nodes
+import no_go_discipline_gate
 
 LEDGER_PATH = AUDIT_DIR / "data" / "audit_ledger.json"
 QUEUE_PATH = AUDIT_DIR / "data" / "audit_queue.json"
@@ -628,6 +629,9 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     )
 
     note_body = read_note_body(note_path) or f"[note missing on disk: {note_path}]"
+    no_go_required = no_go_discipline_gate.source_requires_no_go_discipline(
+        note_path, note_body, claim_type_hint
+    )
 
     # Cited authorities: one-hop deps from the ledger row
     led_row = ledger_rows.get(cid, {})
@@ -759,6 +763,9 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     prompt = prompt.replace("{{RUNNER_STDOUT}}", runner_stdout or "(no stdout captured)")
     prompt = prompt.replace("{{RUNNER_SOURCE}}", runner_source or "(no source available)")
     prompt = prompt.replace("{{HELPER_RUNNER_SOURCES}}", helper_runner_sources)
+    prompt = prompt.replace(
+        "{{NO_GO_DISCIPLINE_REQUIRED}}", "true" if no_go_required else "false"
+    )
 
     # Replace the FOREACH ... ENDFOREACH block with the rendered cited authorities
     foreach_re = re.compile(
@@ -976,13 +983,23 @@ def parse_verdict_json(reply: str) -> dict | None:
             cursor = first_open + 1
 
 
-def validate_verdict(blob: dict, expected_cid: str) -> str | None:
+def validate_verdict(
+    blob: dict,
+    expected_cid: str,
+    *,
+    source_requires_no_go: bool = False,
+) -> str | None:
     """Return an error string if the verdict is unusable, else None."""
     missing = REQUIRED_VERDICT_FIELDS - set(blob)
     if missing:
         return f"missing fields: {sorted(missing)}"
     if blob.get("claim_id") != expected_cid:
         return f"claim_id mismatch: expected {expected_cid!r}, got {blob.get('claim_id')!r}"
+    no_go_error = no_go_discipline_gate.validate_no_go_discipline(
+        blob, source_required=source_requires_no_go
+    )
+    if no_go_error:
+        return no_go_error
     return None
 
 
@@ -1361,7 +1378,18 @@ def main() -> int:
                     }) + "\n")
                 continue
 
-            err = validate_verdict(blob, cid)
+            note_path = row.get("note_path") or full_led_row.get("note_path") or ""
+            note_body = read_note_body(note_path) or ""
+            source_requires_no_go = (
+                no_go_discipline_gate.source_requires_no_go_discipline(
+                    note_path,
+                    note_body,
+                    row.get("claim_type") or full_led_row.get("claim_type"),
+                )
+            )
+            err = validate_verdict(
+                blob, cid, source_requires_no_go=source_requires_no_go
+            )
             if err:
                 print(f"  FAIL validate: {err}")
                 failed += 1

@@ -154,6 +154,31 @@ include that limitation in `verdict_rationale`.
 
 ### 4. The audit rubric
 
+#### 4a. No-Go Discipline gate
+
+The orchestrator's source-shape check says this row requires the gate:
+`{{NO_GO_DISCIPLINE_REQUIRED}}`.
+
+Run the N1-N8 gate whenever that value is `true`, whenever you classify the
+row as `no_go`, or whenever your rationale would name walls, admissions,
+obstructions, "no route exists," "no retained primitive supplies this," or
+"requires a new axiom." The restricted-input rule still applies: do not search
+the wider repository. For N8, judge only the source note and one-hop authorities
+provided here; missing cross-cycle evidence is a checklist failure, not
+permission to browse. For N6, the approved premises are exactly the registered
+four-axiom node (Lattice, Qubit, Admissibility, Record) plus any authority this
+packet explicitly flags as an approved primitive. The currently registered
+primitives grant only: scale reference as units conversion, structural kinetic
+isotropy `c_t = c_s`, and pointwise evaluation at a supplied realized state.
+They do not supply selectors, dynamics, probability, normalization, arbitrary
+observable identifications, or empirical matches.
+
+Record all eight checks in `no_go_discipline`. A gate `FAIL` is allowed with a
+conservative non-clean verdict and must name its failure items. It can never
+support `audited_clean`. A gate `PASS` requires at least five genuinely distinct
+N1 routes, complete N2-N8 answers, and no failure items. Do not turn five
+phrasings of one route into five routes.
+
 Definitions you must use:
 
 - **Load-bearing step.** The single sentence or equation in the source
@@ -247,15 +272,42 @@ Return a single JSON object with exactly these fields. No other prose.
   "decoration_parent_claim_id": "<claim_id of the upstream parent if verdict = audited_decoration, else null>",
   "open_dependency_paths": ["<note path of any cited authority that is itself support / open / conditional>"],
   "auditor_confidence": "<low | medium | high>",
-  "notes_for_re_audit_if_any": "<for audited_conditional and audited_renaming, prefix exactly one repair class from missing_dependency_edge, dependency_not_retained, missing_bridge_theorem, scope_too_broad, runner_artifact_issue, compute_required, other, then name the cheapest next repair action; if that action is dependent-side (for example narrowing downstream citing sentences), it must also name adding a dated downstream-hygiene line to this note's own boundary, because only this note's own hash drift (or a dispatcher sidecar) re-enters the row into the audit queue; otherwise short note flagging anything a second auditor should re-check, or empty>"
+  "notes_for_re_audit_if_any": "<for audited_conditional and audited_renaming, prefix exactly one repair class from missing_dependency_edge, dependency_not_retained, missing_bridge_theorem, scope_too_broad, runner_artifact_issue, compute_required, other, then name the cheapest next repair action; if that action is dependent-side (for example narrowing downstream citing sentences), it must also name adding a dated downstream-hygiene line to this note's own boundary, because only this note's own hash drift (or a dispatcher sidecar) re-enters the row into the audit queue; otherwise short note flagging anything a second auditor should re-check, or empty>",
+  "no_go_discipline": null
+}
+```
+
+Use `null` only when the gate is not required. Otherwise replace it with:
+
+```json
+{
+  "required": true,
+  "status": "<PASS | FAIL>",
+  "N1_alternative_routes": [
+    {
+      "route": "<distinct attack route>",
+      "outcome": "<why it fails or remains open>",
+      "honesty_marker": "<ATTEMPTED | RULED OUT BY PRIOR>",
+      "authority": "<restricted-packet authority, or explicit packet gap>"
+    }
+  ],
+  "N2_wall_independence": "<pairwise collapse result>",
+  "N3_hidden_wall_scan": "<classified hidden-wall phrase hits>",
+  "N4_residual_matching": "<witness/residual match result>",
+  "N5_rhetoric_audit": "<resolutions actually tested>",
+  "N6_partial_closure_scan": "<primitive/convention/reframe result>",
+  "N7_steelman": "<strongest argument against the no-go>",
+  "N8_cross_cycle_echo": "<restricted-packet prior-wall result or missing evidence>",
+  "failures": ["<failing N-item; empty only for PASS>"]
 }
 ```
 
 ### 6. What you are not asked to do
 
-- Do not propose alternative derivations. The audit checks whether the
-  presented derivation closes from cited inputs, not whether a different
-  derivation would.
+- Do not propose alternative positive derivations. The audit checks whether
+  the presented derivation closes from cited inputs. The only exception is the
+  mandatory N1/N7 stress test for a negative claim: enumerate attack routes
+  and steelman them, but do not promote an unpresented route into a theorem.
 - Do not recompute the underlying physics from scratch.
 - Do not consult external sources (PDG, lattice QCD literature, the
   arXiv) beyond what is quoted in the source note.

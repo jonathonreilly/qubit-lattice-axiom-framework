@@ -28,6 +28,31 @@ SCRIPTS_DIR = REPO_ROOT / "audit" / "scripts"
 sys.path.insert(0, str(SCRIPTS_DIR))
 
 
+def _no_go_packet(*, status: str = "PASS", route_count: int = 5) -> dict:
+    failures = [] if status == "PASS" else ["N1: fewer than five routes close"]
+    return {
+        "required": True,
+        "status": status,
+        "N1_alternative_routes": [
+            {
+                "route": f"route {index}",
+                "outcome": "closed by the restricted packet",
+                "honesty_marker": "ATTEMPTED",
+                "authority": "provided authority",
+            }
+            for index in range(route_count)
+        ],
+        "N2_wall_independence": "pairwise wall table checked",
+        "N3_hidden_wall_scan": "no hidden admissions found",
+        "N4_residual_matching": "each cited residual matches",
+        "N5_rhetoric_audit": "the claimed resolution is the tested resolution",
+        "N6_partial_closure_scan": "registered primitives and reframes checked",
+        "N7_steelman": "the strongest counter-route is explicitly answered",
+        "N8_cross_cycle_echo": "restricted packet contains no untested retirement echo",
+        "failures": failures,
+    }
+
+
 def _import(module_name: str):
     """Force a fresh import each test."""
     if module_name in sys.modules:
@@ -331,6 +356,42 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertFalse(ok)
         self.assertIn("weak", msg)
 
+    def test_no_go_requires_and_preserves_discipline_packet(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_no_go",
+            claim_type="no_go",
+            note_body="# No-go obstruction\n",
+        )
+        led = self.fx.read_ledger()
+        base = {
+            "claim_id": "test_no_go",
+            "verdict": "audited_clean",
+            "claim_type": "no_go",
+            "claim_scope": "the scoped obstruction",
+            "auditor": "fresh-no-go-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "load_bearing_step_class": "A",
+        }
+
+        ok, msg = m.apply_one(led, dict(base))
+        self.assertFalse(ok)
+        self.assertIn("N1-N8 packet is required", msg)
+
+        audit = {**base, "no_go_discipline": _no_go_packet()}
+        ok, msg = m.apply_one(led, audit)
+        self.assertTrue(ok, msg)
+        row = led["rows"]["test_no_go"]
+        self.assertEqual(row["no_go_discipline"]["status"], "PASS")
+        self.assertEqual(
+            m.audit_summary_from_blob(audit)["no_go_discipline"]["status"],
+            "PASS",
+        )
+
     def test_hybrid_judicial_review_records_applyable_third_tuple(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
@@ -385,6 +446,63 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertEqual(row["claim_type"], "bounded_theorem")
         self.assertEqual(row["load_bearing_step_class"], "C")
         self.assertIsNone(row["blocker"])
+
+    def test_judicial_no_go_requires_discipline_packet(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_judicial_no_go",
+            audit_status="audit_in_progress",
+            claim_type="no_go",
+            note_body="# No-go obstruction\n",
+        )
+        led = self.fx.read_ledger()
+        led["rows"]["test_judicial_no_go"]["cross_confirmation"] = {
+            "status": "disagreement",
+            "first_audit": {
+                "auditor": "first-auditor",
+                "auditor_family": "codex-gpt-5.6",
+                "verdict": "audited_clean",
+                "claim_type": "no_go",
+                "claim_scope": "the obstruction",
+                "load_bearing_step_class": "A",
+            },
+            "second_audit": {
+                "auditor": "second-auditor",
+                "auditor_family": "codex-gpt-5.6",
+                "verdict": "audited_conditional",
+                "claim_type": "no_go",
+                "claim_scope": "the obstruction",
+                "load_bearing_step_class": "A",
+            },
+        }
+        judgment = {
+            "claim_id": "test_judicial_no_go",
+            "third_auditor": "panel-majority",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "judicial_review",
+            "sided_with": "first",
+            "ratified_verdict": "audited_clean",
+            "ratified_claim_type": "no_go",
+            "ratified_load_bearing_step_class": "A",
+            "judgment_rationale": "the scoped obstruction closes",
+            "first_auditor_error": "none on the scoped result",
+            "second_auditor_error": "treated a supplied authority as absent",
+        }
+
+        ok, msg = m.apply_one(led, dict(judgment))
+        self.assertFalse(ok)
+        self.assertIn("N1-N8 packet is required", msg)
+
+        judgment["no_go_discipline"] = _no_go_packet()
+        ok, msg = m.apply_one(led, judgment)
+        self.assertTrue(ok, msg)
+        self.assertEqual(
+            led["rows"]["test_judicial_no_go"]["no_go_discipline"]["status"],
+            "PASS",
+        )
 
 
 class BuildCitationGraphParserTest(unittest.TestCase):
@@ -2095,6 +2213,99 @@ class ComputeAuditQueueTest(unittest.TestCase):
             self.assertTrue(m.is_ready(rows["discharge_note"], rows))
             self.assertTrue(m.is_ready(rows["owner_governed_discharge_note"], rows))
             self.assertFalse(m.is_ready(rows["blocked_note"], rows))
+
+
+class NoGoDisciplineGateTest(unittest.TestCase):
+    def test_source_and_output_triggers_are_conservative(self):
+        m = _import("no_go_discipline_gate")
+        self.assertTrue(
+            m.source_requires_no_go_discipline(
+                "docs/BOUNDARY.md",
+                "This bounded theorem names two residual walls.",
+                "bounded_theorem",
+            )
+        )
+        self.assertTrue(
+            m.output_requires_no_go_discipline(
+                {
+                    "claim_type": "bounded_theorem",
+                    "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the carrier",
+                }
+            )
+        )
+        self.assertFalse(
+            m.source_requires_no_go_discipline(
+                "docs/POSITIVE.md", "An exact positive identity.", "positive_theorem"
+            )
+        )
+
+    def test_pass_requires_five_distinct_routes(self):
+        m = _import("no_go_discipline_gate")
+        audit = {
+            "claim_type": "no_go",
+            "verdict": "audited_clean",
+            "no_go_discipline": _no_go_packet(route_count=4),
+        }
+        self.assertIn(
+            "at least 5 distinct N1 routes",
+            m.validate_no_go_discipline(audit) or "",
+        )
+
+        audit["no_go_discipline"] = _no_go_packet(route_count=5)
+        self.assertIsNone(m.validate_no_go_discipline(audit))
+
+    def test_failed_gate_allows_non_clean_but_never_clean(self):
+        m = _import("no_go_discipline_gate")
+        packet = _no_go_packet(status="FAIL", route_count=3)
+        non_clean = {
+            "claim_type": "no_go",
+            "verdict": "audited_conditional",
+            "no_go_discipline": packet,
+        }
+        self.assertIsNone(m.validate_no_go_discipline(non_clean))
+
+        clean = {**non_clean, "verdict": "audited_clean"}
+        self.assertIn(
+            "audited_clean is forbidden",
+            m.validate_no_go_discipline(clean) or "",
+        )
+
+    def test_runner_validation_enforces_source_trigger(self):
+        m = _import_codex_audit_runner()
+        positive = {
+            "claim_id": "positive",
+            "load_bearing_step": "an exact identity",
+            "load_bearing_step_class": "A",
+            "claim_type": "positive_theorem",
+            "claim_scope": "the exact identity",
+            "chain_closes": True,
+            "chain_closure_explanation": "the identity closes",
+            "verdict": "audited_clean",
+            "verdict_rationale": "the algebra closes",
+            "no_go_discipline": None,
+        }
+        self.assertIsNone(m.validate_verdict(positive, "positive"))
+        self.assertIn(
+            "N1-N8 packet is required",
+            m.validate_verdict(
+                positive, "positive", source_requires_no_go=True
+            )
+            or "",
+        )
+
+    def test_invalidation_archives_and_clears_packet(self):
+        m = _import("invalidate_stale_audits")
+        packet = _no_go_packet()
+        row = {
+            "audit_status": "audited_clean",
+            "claim_type": "no_go",
+            "claim_type_author_hint": "no_go",
+            "no_go_discipline": packet,
+            "previous_audits": [],
+        }
+        reset = m.archive_and_reset(row, "test invalidation")
+        self.assertEqual(reset["previous_audits"][0]["no_go_discipline"], packet)
+        self.assertNotIn("no_go_discipline", reset)
 
 
 class CodexAuditRunnerModelPolicyTest(unittest.TestCase):

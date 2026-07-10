@@ -127,8 +127,12 @@ def main() -> int:
     check("scale source forbids dimensionless content", "zero dimensionless" in scale)
     check("scale source does not derive a/l_P=1", "It does not assert `a/l_P = 1` as a derived theorem." in scale)
     check("kinetic source declares c_t=c_s", "c_t = c_s" in kinetic)
-    check("kinetic source says baseline does not fix ratio", "does **not** fix the kinetic\nisotropy `c_t = c_s`" in kinetic)
-    check("kinetic source says scale fixes no dimensionless ratio", "the scale reference fixes no\ndimensionless ratio" in kinetic)
+    check("kinetic source says c_t = c_s is supplied rather than derived", "`c_t = c_s` is supplied rather than derived" in kinetic)
+    check(
+        "kinetic source lists scale reference among structures not used as a derivation",
+        "scale reference, and records' causal order" in kinetic
+        and "are not used here as a derivation of that equality" in kinetic,
+    )
     check("realized source says laws do not pick state", "The laws do not pick the state; the world does" in realized)
     check("realized source says pointwise evaluation only", "Derivations may evaluate at the realized state, pointwise." in realized)
     check("realized source forbids state-selection content", "It does not supply a state, state-selection rule" in realized)
@@ -166,12 +170,16 @@ def main() -> int:
 
     print("Hygiene diagnostic checks")
     stale_count_check = "Tier-A registry genuine count remains two" in scale_runner
-    check("scale boundary runner stale Tier-A count diagnostic is detected", stale_count_check)
+    current_count_check = "Tier-A registry genuine count is zero after the 2026-07-05 retirements" in scale_runner
+    check(
+        "scale boundary runner carries the current Tier-A count gate",
+        current_count_check and not stale_count_check,
+    )
     old_baseline_refs = [
         p.name for p, text in [(SCALE, scale), (KINETIC, kinetic), (REALIZED, realized)]
         if re.search(r"three named axioms|Lattice \+ Quantum \+ Record|MINIMAL_AXIOMS_2026-06-0[45]", text)
     ]
-    check("primitive source notes still need four-axiom narrative scrub", bool(old_baseline_refs), ", ".join(old_baseline_refs))
+    check("primitive source notes carry no pre-reset baseline narrative", not old_baseline_refs, ", ".join(old_baseline_refs))
     print()
 
     print("Verdicts")

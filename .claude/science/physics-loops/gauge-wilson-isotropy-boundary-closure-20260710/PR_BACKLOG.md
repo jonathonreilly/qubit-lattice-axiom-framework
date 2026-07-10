@@ -1,5 +1,5 @@
 # PR Backlog
 
-No block is backlogged. The source, runner, cache, N1-N8 packet, review-loop,
-and audit-compatibility gates pass, so the block is ready for its required
-review PR. Independent re-audit remains outside this author branch.
+No block is backlogged. Required review PR
+[#5127](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5127)
+is open. Independent re-audit remains outside this author branch.

@@ -13,3 +13,6 @@ pipeline recognizes the row as `claim_type: no_go`, preserves the three named
 dependencies, and places it in the ready queue; generated validation outputs
 are not part of this branch. Do not write or apply an audit verdict from this
 branch.
+
+Review PR:
+[#5127](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5127).

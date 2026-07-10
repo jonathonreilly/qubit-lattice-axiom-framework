@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 389,
+    "critical": 388,
     "high": 265,
     "leaf": 754,
     "medium": 500
@@ -839,30 +839,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_record_classical_semigroup_boundary_2026_06_06.py",
       "transitive_descendants": 45
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "quark_route2_e_center_blindness_no_go_note_2026-06-17",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "quark_route2_exact_readout_map_note_2026-04-19"
-      ],
-      "direct_in_degree": 22,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.524,
-      "note_path": "docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_quark_route2_e_center_blindness_no_go.py",
-      "transitive_descendants": 22
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -57128,6 +57104,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 201,
-  "total_pending": 1908
+  "ready_count": 200,
+  "total_pending": 1907
 }

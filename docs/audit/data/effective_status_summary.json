@@ -1,9 +1,9 @@
 {
   "claim_type_counts": {
     "bounded_theorem": 2037,
-    "decoration": 59,
+    "decoration": 60,
     "meta": 351,
-    "no_go": 482,
+    "no_go": 481,
     "open_gate": 183,
     "positive_theorem": 603
   },
@@ -63,6 +63,7 @@
     "decoration_under_plaquette_self_consistency_note": 1,
     "decoration_under_pmns_hw1_source_transfer_boundary_note": 1,
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
+    "decoration_under_quark_route2_exact_readout_map_note_2026-04-19": 1,
     "decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": 1,
     "decoration_under_strong_cp_theta_zero_note": 1,
     "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": 4,
@@ -75,7 +76,7 @@
     "retained_bounded": 938,
     "retained_no_go": 210,
     "retained_pending_chain": 8,
-    "unaudited": 1807
+    "unaudited": 1806
   },
   "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [

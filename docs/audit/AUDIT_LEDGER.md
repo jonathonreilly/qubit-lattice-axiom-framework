@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 24 |
-| unaudited | 1807 |
+| unaudited | 1806 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
@@ -55,6 +55,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_plaquette_self_consistency_note` | 1 |
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
+| `decoration_under_quark_route2_exact_readout_map_note_2026-04-19` | 1 |
 | `decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
 | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 4 |
@@ -67,18 +68,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1348 |
 | `audited_conditional` | 85 |
-| `audited_decoration` | 57 |
+| `audited_decoration` | 58 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2152 |
+| `unaudited` | 2151 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2037 |
-| `decoration` | 59 |
+| `decoration` | 60 |
 | `meta` | 351 |
-| `no_go` | 482 |
+| `no_go` | 481 |
 | `open_gate` | 183 |
 | `positive_theorem` | 603 |
 
@@ -1622,6 +1623,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | `minimal_axioms` |
 | `quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `quark_c3_oriented_ward_splitter_support_note_2026-04-28` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
+| `quark_route2_e_center_blindness_no_go_note_2026-06-17` | decoration | ~~audited_decoration~~ | `decoration_under_quark_route2_exact_readout_map_note_2026-04-19` | cross_family | codex-gpt-5.6 | A | `quark_route2_exact_readout_map_note_2026-04-19` |
 | `rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08` | decoration | ~~audited_decoration~~ | `decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | cross_family | codex-gpt-5.5 | A | `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` |
 | `realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02` | decoration | ~~audited_decoration~~ | `decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | cross_family | codex-gpt-5.6 | A | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` |
 | `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -16218,6 +16220,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** If a future proof derives the double-local projector normalization, then lambda=(w_E/w_T1)^-2=9/4 and the endpoint chain closes.  _(class `A`)_
 - **chain closes:** None — The endpoint algebra closes only after supplying the double reciprocal local projector-normalization law q_X proportional to w_X^-2; that bridge is an explicit primitive/premise in the packet, not a derived result.
 - **rationale:** Issue: the double reciprocal local projector-normalization law q_X proportional to w_X^-2 is not derived from packet inputs; it is the named missing primitive. Why this blocks: the endpoint rho_E=21/4 follows only after that normalization bridge is admitted. Repair target: derive the double-local normalization from Route-2 source/tensor/readout structure, with a runner that computes the bridge rather than selecting p=-2 against lambda=9/4. Claim boundary until fixed: the note cleanly isolates the conditional algebra and falsifies nearby monomial laws, but it is not a current-surface derivation.
+
+### `quark_route2_e_center_blindness_no_go_note_2026-06-17`
+
+- **Note:** [`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md`](../../docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Exact algebraic corollary that, on the cited reduced Route-2 carrier and granted T-side setup, constraints omitting the E-center column cannot select rho_E=21/4.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_quark_route2_exact_readout_map_note_2026-04-19`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00006-quark_route2_e_center_blindn`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the family P(rho_E), all E-center-blind endpoint data are independent of rho_E, while P(rho_E)E-center=(1+rho_E/6,0) varies with rho_E.  _(class `A`)_
+- **chain closes:** True — The cited retained parent supplies the carrier, channelwise readout form, and conditional T-side values. Exact linear algebra then shows that rho_E is absent from every blind-column image and appears only in the E-center image.
+- **rationale:** The runner performs genuine exact rational and rank calculations, and its negative conclusion follows correctly from the retained parent's carrier and conditional readout family. It does not derive a new framework primitive or invoke an independent comparator; every load-bearing check is class (A) mathematics over one upstream parent. Under the decoration tie-break rule, this is an algebraic corollary of the exact readout-map claim rather than an independent no-go claim.
+- **decoration parent:** `quark_route2_exact_readout_map_note_2026-04-19`
+- **auditor confidence:** high
 
 ### `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`
 

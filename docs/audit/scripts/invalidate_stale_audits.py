@@ -37,6 +37,9 @@ Triggers (any of):
      This handles classifier upgrades — most relevantly the 2026-05-10
      alias-resolution fix which made `sp.simplify(...)` calls visible as
      class-A patterns. Only invalidates `audited_conditional` rows.
+  7. A clean negative-boundary audit has no structured No-Go Discipline
+     packet. Legacy packetless authority is archived and returned to fresh
+     audit under `no_go_discipline_packet_missing` rather than grandfathered.
 
 When triggered, the prior audit fields are archived into previous_audits
 with an `invalidation_reason`, and audit_status is reset to unaudited.
@@ -74,6 +77,7 @@ def axiom_premise_ids() -> set[str]:
     return _AXIOM_PREMISE_IDS
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 import runner_cache as rc  # noqa: E402
+import no_go_discipline_gate  # noqa: E402
 
 
 def _load_runner_classification() -> dict:
@@ -232,6 +236,24 @@ def status_rank(status: str | None) -> int:
 
 
 def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
+    if row.get("audit_status") == "audited_clean" and row.get("no_go_discipline") is None:
+        note_path = str(row.get("note_path") or "")
+        note_body = ""
+        try:
+            note_body = (REPO_ROOT / note_path).read_text(
+                encoding="utf-8", errors="replace"
+            )
+        except OSError:
+            pass
+        source_required = no_go_discipline_gate.source_requires_no_go_discipline(
+            note_path, note_body, row.get("claim_type")
+        )
+        output_required = no_go_discipline_gate.output_requires_no_go_discipline(
+            {**row, "verdict": row.get("audit_status")}
+        )
+        if source_required or output_required:
+            return "no_go_discipline_packet_missing"
+
     snap = row.get("audit_state_snapshot")
     if snap is not None:
         snap_runner_hash = snap.get("runner_hash")

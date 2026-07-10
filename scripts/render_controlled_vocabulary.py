@@ -281,6 +281,14 @@ def render_audit_lane_field_vocabulary(data: dict) -> str:
     for name, entry in tf["no_go_demotion"]["values"].items():
         lines.append(f"- `{name}` — {entry['definition']}")
     lines.append("")
+    lines.append(
+        "Packetless legacy negative authority is invalidated with the controlled "
+        "reason:"
+    )
+    lines.append("")
+    for name, entry in tf["no_go_discipline_invalidation"]["values"].items():
+        lines.append(f"- `{name}` — {entry['definition']}")
+    lines.append("")
 
     # independence
     lines.append("### Independence tiers")

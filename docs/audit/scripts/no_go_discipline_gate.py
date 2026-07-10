@@ -9,6 +9,7 @@ negative verdict.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from itertools import combinations
@@ -36,10 +37,10 @@ ROUTE_CLASSES = {
     "dependency_or_registry_reclassification",
 }
 DEMOTIONS = {
-    "partial_attempt_with_named_untested_routes",
-    "partial_narrowing",
-    "bounded_with_corrected_wall_count",
-    "stretch_attempt_with_honest_residual",
+    "partial-attempt-with-named-untested-routes",
+    "partial-narrowing",
+    "bounded-with-corrected-wall-count",
+    "stretch-attempt-with-honest-residual",
 }
 NON_CLEAN_VERDICTS = {
     "audited_conditional",
@@ -56,6 +57,10 @@ SOURCE_NEGATIVE_RE = re.compile(
     r"no retained primitive(?: supplies)?|requires? (?:a )?new axiom|"
     r"cannot be derived from|does not lift|cannot lift|"
     r"bounded with named walls|conditional on [^\n]{0,120}\b(?:walls?|admissions?)\b|"
+    r"\b(?:residual|named|independent|unclosed|remaining|unresolved) (?:walls?|admissions?)\b|"
+    r"\b(?:scoped|structural|bounded|remaining|unresolved) obstruction\b|"
+    r"\bobstruction (?:to|rules out|blocks|precludes|prevents)\b|"
+    r"\b(?:route|attempt|construction)\b[^\n]{0,80}\bdoes not close\b|"
     r"(?:^|\n)\s*(?:walls?|admissions?)\s*:",
     re.IGNORECASE,
 )
@@ -64,7 +69,9 @@ OUTPUT_NEGATIVE_RE = re.compile(
     r"no retained primitive(?: supplies)?|requires? (?:a )?new axiom|"
     r"cannot be derived from|does not lift|cannot lift|"
     r"conditional on [^\n]{0,120}\b(?:walls?|admissions?)\b|"
-    r"residual wall|named walls?",
+    r"residual wall|named walls?|"
+    r"\b(?:walls?|admissions?|obstruction)\b|"
+    r"\b(?:route|attempt|construction)\b[^\n]{0,80}\bdoes not close\b",
     re.IGNORECASE,
 )
 OUTPUT_BOUNDARY_FIELDS = (
@@ -72,12 +79,19 @@ OUTPUT_BOUNDARY_FIELDS = (
     "load_bearing_step",
     "chain_closure_explanation",
     "verdict_rationale",
-    "notes_for_re_audit_if_any",
 )
+OUTPUT_NOTES_NEGATIVE_RE = SOURCE_NEGATIVE_RE
 
 AXIOM_REGISTRY = "docs/audit/data/axiom_premise_nodes.json"
 OWNER_REGISTRY = "docs/audit/data/owner_governed_premise_nodes.json"
 TIER_A_REGISTRY = "docs/audit/data/tier_a_admissions.json"
+PREMISE_CLASSES_CHECKED = {
+    "axiom_or_approved_primitive",
+    "owner_governed_residual",
+    "tier_a_derivation_target",
+    "tier_a_convention_not_accepted",
+    "definition_or_scope_reframe",
+}
 
 
 def _read_text(repo_root: Path, path: str | None) -> str:
@@ -156,6 +170,151 @@ def _add_evidence(
         entry["accepted_premise_type"] = premise_type
 
 
+def set_packet_evidence(
+    manifest: dict[str, dict],
+    *,
+    path: str,
+    role: str,
+    text: str,
+    effective_status: str | None = None,
+    premise_type: str | None = None,
+) -> None:
+    """Insert or replace one exact rendered packet surface."""
+    _add_evidence(
+        manifest,
+        path=path,
+        role=role,
+        text=text,
+        effective_status=effective_status,
+        premise_type=premise_type,
+    )
+    if path in manifest:
+        manifest[path]["text"] = text
+
+
+def cross_cycle_index_path(claim_id: str) -> str:
+    return f"audit-packet://cross-cycle-index/{claim_id}"
+
+
+def runner_stdout_evidence_path(claim_id: str) -> str:
+    return f"audit-packet://runner-stdout/{claim_id}"
+
+
+def build_cross_cycle_index(
+    row: dict[str, Any],
+    ledger_rows: dict[str, dict],
+    repo_root: str | Path,
+) -> str:
+    """Render the orchestrator-owned N8 search surface supplied to the auditor."""
+    candidates: list[dict[str, Any]] = []
+    cid = str(row.get("claim_id") or "")
+
+    def add_history(source_id: str, history: list[Any]) -> None:
+        for index, archived in enumerate(history):
+            if not isinstance(archived, dict):
+                continue
+            candidates.append(
+                {
+                    "candidate_id": f"{source_id}:previous_audit:{index}",
+                    "kind": "prior_audit_cycle",
+                    "source_claim_id": source_id,
+                    "audit_status": archived.get("audit_status"),
+                    "claim_type": archived.get("claim_type"),
+                    "claim_scope": archived.get("claim_scope"),
+                    "verdict_rationale": archived.get("verdict_rationale"),
+                    "invalidation_reason": archived.get("invalidation_reason"),
+                }
+            )
+
+    add_history(cid, list(row.get("previous_audits") or []))
+    for dep_id in row.get("deps") or []:
+        add_history(dep_id, list(ledger_rows.get(dep_id, {}).get("previous_audits") or []))
+
+    root = Path(repo_root)
+    tier_a = _load_json(root, TIER_A_REGISTRY)
+    for retired_id, record in sorted((tier_a.get("retired_derivation_targets") or {}).items()):
+        candidates.append(
+            {
+                "candidate_id": f"tier_a_retirement:{retired_id}",
+                "kind": "tier_a_retirement",
+                "source_claim_id": retired_id,
+                "record": record,
+            }
+        )
+    owners = _load_json(root, OWNER_REGISTRY)
+    for owner_id, record in sorted((owners.get("nodes") or {}).items()):
+        candidates.append(
+            {
+                "candidate_id": f"owner_governed_retirement:{owner_id}",
+                "kind": "owner_governed_retirement",
+                "source_claim_id": owner_id,
+                "record": record,
+            }
+        )
+
+    stopwords = {
+        "about", "after", "against", "before", "bounded", "claim", "clean",
+        "conditional", "current", "derived", "framework", "note", "result",
+        "route", "scope", "supplied", "theorem", "their", "there", "these",
+        "this", "under", "using", "with", "without",
+    }
+
+    def terms(text: str) -> set[str]:
+        return {
+            token
+            for token in re.findall(r"[a-z0-9_]{5,}", text.casefold())
+            if token not in stopwords
+        }
+
+    current_terms = terms(
+        " ".join(
+            str(row.get(field) or "")
+            for field in ("claim_id", "claim_scope", "verdict_rationale", "note_path")
+        )
+    )
+    similar: list[tuple[int, str, dict[str, Any], list[str]]] = []
+    for other_id, other in ledger_rows.items():
+        if other_id == cid or other.get("claim_type") != "no_go":
+            continue
+        other_text = " ".join(
+            str(other.get(field) or "")
+            for field in ("claim_id", "claim_scope", "verdict_rationale", "note_path")
+        )
+        overlap = sorted(current_terms.intersection(terms(other_text)))
+        if len(overlap) < 2:
+            continue
+        similar.append((len(overlap), other_id, other, overlap))
+    for _score, other_id, other, overlap in sorted(
+        similar, key=lambda item: (-item[0], item[1])
+    )[:25]:
+        candidates.append(
+            {
+                "candidate_id": f"similar_negative_boundary:{other_id}",
+                "kind": "similar_negative_boundary",
+                "source_claim_id": other_id,
+                "note_path": other.get("note_path"),
+                "audit_status": other.get("audit_status"),
+                "effective_status": other.get("effective_status"),
+                "claim_scope": other.get("claim_scope"),
+                "verdict_rationale": other.get("verdict_rationale"),
+                "matching_terms": overlap,
+            }
+        )
+    return json.dumps(
+        {
+            "schema": "no_go_cross_cycle_index_v1",
+            "claim_id": cid,
+            "search_scope": (
+                "current-row audit history, one-hop authority audit history, "
+                "Tier-A retirements, and owner-governed retirements"
+            ),
+            "candidates": candidates,
+        },
+        indent=2,
+        sort_keys=True,
+    )
+
+
 def build_evidence_manifest(
     row: dict[str, Any],
     ledger_rows: dict[str, dict],
@@ -228,7 +387,13 @@ def build_evidence_manifest(
         path=TIER_A_REGISTRY,
         role="premise_registry",
         text=_read_text(root, TIER_A_REGISTRY),
-        premise_type="tier_a_derivation_target_registry",
+        premise_type="tier_a_registry_mixed_entries",
+    )
+    _add_evidence(
+        manifest,
+        path=cross_cycle_index_path(str(row.get("claim_id") or "")),
+        role="cross_cycle_index",
+        text=build_cross_cycle_index(row, ledger_rows, root),
     )
     return manifest
 
@@ -264,6 +429,100 @@ def render_framework_premise_context(manifest: dict[str, dict]) -> str:
     return "\n\n".join(blocks)
 
 
+def _evidence_references(value: Any) -> list[tuple[str, str]]:
+    refs: list[tuple[str, str]] = []
+    if isinstance(value, dict):
+        path = value.get("evidence_path")
+        locator = value.get("evidence_locator")
+        if _text(path) and _text(locator):
+            refs.append((path, locator))
+        for child in value.values():
+            refs.extend(_evidence_references(child))
+    elif isinstance(value, list):
+        for child in value:
+            refs.extend(_evidence_references(child))
+    return refs
+
+
+def _cross_cycle_candidate_ids(entry: dict[str, Any]) -> set[str] | None:
+    stored = entry.get("cross_cycle_candidate_ids")
+    if isinstance(stored, list) and all(_text(item) for item in stored):
+        return set(stored)
+    try:
+        parsed = json.loads(str(entry.get("text") or ""))
+    except json.JSONDecodeError:
+        return None
+    if parsed.get("schema") != "no_go_cross_cycle_index_v1":
+        return None
+    candidates = parsed.get("candidates")
+    if not isinstance(candidates, list):
+        return None
+    ids = {
+        str(candidate.get("candidate_id"))
+        for candidate in candidates
+        if isinstance(candidate, dict) and _text(candidate.get("candidate_id"))
+    }
+    if len(ids) != len(candidates):
+        return None
+    return ids
+
+
+def build_evidence_snapshot(
+    packet: dict[str, Any], manifest: dict[str, dict]
+) -> dict[str, Any]:
+    """Persist exact locators authenticated against the rendered packet."""
+    grouped: dict[str, set[str]] = {}
+    for path, locator in _evidence_references(packet):
+        grouped.setdefault(path, set()).add(locator)
+    entries: dict[str, dict[str, Any]] = {}
+    for path, locators in sorted(grouped.items()):
+        entry = manifest.get(path)
+        if not entry:
+            raise ValueError(f"evidence path {path!r} missing while building snapshot")
+        text = str(entry.get("text") or "")
+        snapshot_entry: dict[str, Any] = {
+            "path": path,
+            "roles": list(entry.get("roles") or []),
+            "effective_status": entry.get("effective_status"),
+            "accepted_premise_type": entry.get("accepted_premise_type"),
+            "content_sha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
+            "verified_locators": sorted(locators),
+        }
+        if "cross_cycle_index" in set(entry.get("roles") or []):
+            candidate_ids = _cross_cycle_candidate_ids(entry)
+            if candidate_ids is None:
+                raise ValueError("cross-cycle index is not orchestrator-authenticated")
+            snapshot_entry["cross_cycle_candidate_ids"] = sorted(candidate_ids)
+        entries[path] = snapshot_entry
+    return {"schema": "no_go_evidence_snapshot_v1", "entries": entries}
+
+
+def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] | None:
+    snapshot = packet.get("evidence_snapshot")
+    if not isinstance(snapshot, dict) or snapshot.get("schema") != "no_go_evidence_snapshot_v1":
+        return None
+    raw_entries = snapshot.get("entries")
+    if not isinstance(raw_entries, dict):
+        return None
+    manifest: dict[str, dict] = {}
+    for path, stored in raw_entries.items():
+        if not _text(path) or not isinstance(stored, dict):
+            return None
+        locators = stored.get("verified_locators")
+        if not isinstance(locators, list) or not all(_text(x) for x in locators):
+            return None
+        manifest[path] = {
+            "path": path,
+            "roles": list(stored.get("roles") or []),
+            "text": "\n".join(locators),
+            "effective_status": stored.get("effective_status"),
+            "accepted_premise_type": stored.get("accepted_premise_type"),
+            "content_sha256": stored.get("content_sha256"),
+            "cross_cycle_candidate_ids": stored.get("cross_cycle_candidate_ids"),
+        }
+    return manifest
+
+
 def source_requires_no_go_discipline(
     note_path: str | None,
     note_body: str | None,
@@ -285,7 +544,15 @@ def output_requires_no_go_discipline(audit: dict[str, Any]) -> bool:
     if audit.get("claim_type") == "no_go":
         return True
     boundary = "\n".join(str(audit.get(field) or "") for field in OUTPUT_BOUNDARY_FIELDS)
-    return bool(OUTPUT_NEGATIVE_RE.search(boundary))
+    boundary = re.sub(
+        r"\b(?:not|never|without)\s+(?:an?\s+)?(?:wall|admission|obstruction)s?\b",
+        "",
+        boundary,
+        flags=re.IGNORECASE,
+    )
+    if OUTPUT_NEGATIVE_RE.search(boundary):
+        return True
+    return bool(OUTPUT_NOTES_NEGATIVE_RE.search(str(audit.get("notes_for_re_audit_if_any") or "")))
 
 
 def _text(value: Any) -> bool:
@@ -298,6 +565,24 @@ def _list(value: Any) -> bool:
 
 def _norm(value: str) -> str:
     return re.sub(r"\s+", " ", value.strip().casefold())
+
+
+def _semantic_norm(value: str) -> str:
+    normalized = re.sub(
+        r"\b(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|first|second|third|fourth|fifth)\b|\d+",
+        " ",
+        value.casefold(),
+    )
+    normalized = re.sub(r"[^a-z]+", " ", normalized)
+    return _norm(normalized)
+
+
+def _none_found_error(section: dict, items: list[Any], label: str) -> str | None:
+    if items:
+        return None
+    if not _text(section.get("none_found_reason")):
+        return f"{label} requires an explicit none_found_reason when its result list is empty"
+    return None
 
 
 def _locator_error(
@@ -379,14 +664,18 @@ def _validate_n1(packet: dict, status: str, manifest: dict[str, dict] | None) ->
                 and entry.get("accepted_premise_type") not in PRIOR_AUTHORITY_PREMISE_TYPES
             ):
                 return f"N1 route {index} prior authority is not retained-grade or an accepted premise"
+            if not _text(route.get("prior_witness_id")):
+                return f"N1 route {index} RULED OUT BY PRIOR requires prior_witness_id"
         if status == "PASS" and disposition != "CLOSED":
             return f"No-Go Discipline PASS cannot contain N1 route {index} disposition={disposition}"
         route_ids.add(route_id)
         route_classes.add(route_class)
     if status == "PASS" and len(route_classes) < 5:
         return "No-Go Discipline PASS requires at least 5 distinct route_class values"
-    mechanisms = [_norm(route["mechanism"]) for route in routes]
-    attempts = [_norm(route["attempt"]) for route in routes]
+    mechanisms = [_semantic_norm(route["mechanism"]) for route in routes]
+    attempts = [_semantic_norm(route["attempt"]) for route in routes]
+    if not all(mechanisms) or not all(attempts):
+        return "N1 mechanisms and attempts must contain semantic content beyond numbering"
     if len(set(mechanisms)) != len(mechanisms):
         return "N1 routes must name distinct mechanisms, not numbered paraphrases"
     if len(set(attempts)) != len(attempts):
@@ -450,12 +739,17 @@ def _validate_n3(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     if error:
         return error
     assert section is not None
+    if not _text(section.get("scan_scope")):
+        return "N3.scan_scope must name the phrases and packet surfaces checked"
     error = _locator_error(section.get("evidence_path"), section.get("evidence_locator"), manifest, "N3 scan")
     if error:
         return error
     hits = section.get("hits")
     if not _list(hits):
         return "N3.hits must be a list"
+    error = _none_found_error(section, hits, "N3")
+    if error:
+        return error
     walls = {_norm(w) for w in packet["N2_wall_independence"].get("walls") or []}
     for index, hit in enumerate(hits, 1):
         if not isinstance(hit, dict) or not _text(hit.get("phrase")):
@@ -466,6 +760,15 @@ def _validate_n3(packet: dict, status: str, manifest: dict[str, dict] | None) ->
         error = _locator_error(hit.get("evidence_path"), hit.get("evidence_locator"), manifest, f"N3 hit {index}")
         if error:
             return error
+        if manifest is not None and classification == "retained_authority":
+            entry = manifest[hit["evidence_path"]]
+            roles = set(entry.get("roles") or [])
+            supported = (
+                entry.get("effective_status") in RETAINED_GRADE
+                or entry.get("accepted_premise_type") in PRIOR_AUTHORITY_PREMISE_TYPES
+            )
+            if not roles.intersection({"authority", "framework_premise", "premise_registry"}) or not supported:
+                return f"N3 retained_authority hit {index} is not retained or accepted in the manifest"
         if classification == "hidden_admission":
             if not _text(hit.get("promoted_wall")) or _norm(hit["promoted_wall"]) not in walls:
                 return f"N3 hidden admission {index} must be promoted into N2.walls"
@@ -477,15 +780,29 @@ def _validate_n4(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     if error:
         return error
     assert section is not None
+    if not _text(section.get("scan_scope")):
+        return "N4.scan_scope must name the witness/residual surfaces checked"
     witnesses = section.get("witnesses")
     if not _list(witnesses):
         return "N4.witnesses must be a list"
+    error = _none_found_error(section, witnesses, "N4")
+    if error:
+        return error
+    witness_ids: set[str] = set()
+    witness_routes: dict[str, str] = {}
     for index, witness in enumerate(witnesses, 1):
         if not isinstance(witness, dict):
             return f"N4 witness {index} must be an object"
-        for field in ("witness_residual", "claim_residual"):
+        for field in ("witness_id", "route_id", "witness_residual", "claim_residual"):
             if not _text(witness.get(field)):
                 return f"N4 witness {index}.{field} must be non-empty"
+        witness_id = _norm(witness["witness_id"])
+        route_id = _norm(witness["route_id"])
+        if witness_id in witness_ids:
+            return f"N4 witness_id {witness['witness_id']!r} is duplicated"
+        route_ids = {_norm(route.get("route_id") or "") for route in packet.get("N1_alternative_routes") or []}
+        if route_id not in route_ids:
+            return f"N4 witness {index}.route_id does not name an N1 route"
         if not isinstance(witness.get("match"), bool):
             return f"N4 witness {index}.match must be boolean"
         error = _locator_error(witness.get("evidence_path"), witness.get("evidence_locator"), manifest, f"N4 witness {index}")
@@ -493,6 +810,16 @@ def _validate_n4(packet: dict, status: str, manifest: dict[str, dict] | None) ->
             return error
         if status == "PASS" and not witness["match"]:
             return f"No-Go Discipline PASS cannot retain mismatched N4 witness {index}"
+        witness_ids.add(witness_id)
+        witness_routes[witness_id] = route_id
+    for index, route in enumerate(packet.get("N1_alternative_routes") or [], 1):
+        if str(route.get("honesty_marker") or "").strip().upper() != "RULED OUT BY PRIOR":
+            continue
+        witness_id = _norm(str(route.get("prior_witness_id") or ""))
+        if witness_id not in witness_routes:
+            return f"N1 route {index} prior_witness_id does not name an N4 witness"
+        if witness_routes[witness_id] != _norm(str(route.get("route_id") or "")):
+            return f"N1 route {index} prior_witness_id is linked to a different route"
     error = _locator_error(section.get("evidence_path"), section.get("evidence_locator"), manifest, "N4 scan")
     return error or _unresolved_error(section, "N4", status)
 
@@ -502,9 +829,14 @@ def _validate_n5(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     if error:
         return error
     assert section is not None
+    if not _text(section.get("scan_scope")):
+        return "N5.scan_scope must name the negative rhetoric checked"
     statements = section.get("statements")
     if not _list(statements):
         return "N5.statements must be a list"
+    error = _none_found_error(section, statements, "N5")
+    if error:
+        return error
     for index, statement in enumerate(statements, 1):
         if not isinstance(statement, dict) or not _text(statement.get("phrase")):
             return f"N5 statement {index} must name a phrase"
@@ -526,9 +858,17 @@ def _validate_n6(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     if error:
         return error
     assert section is not None
+    if not _text(section.get("scan_scope")):
+        return "N6.scan_scope must name the primitive/reframe surfaces checked"
+    checked = section.get("premise_classes_checked")
+    if not _list(checked) or set(checked) != PREMISE_CLASSES_CHECKED:
+        return f"N6.premise_classes_checked must equal {sorted(PREMISE_CLASSES_CHECKED)}"
     candidates = section.get("candidates")
     if not _list(candidates):
         return "N6.candidates must be a list"
+    error = _none_found_error(section, candidates, "N6")
+    if error:
+        return error
     allowed_kinds = {"approved_primitive", "owner_governed", "tier_a", "convention_reframe", "definition_refactor"}
     for index, candidate in enumerate(candidates, 1):
         if not isinstance(candidate, dict) or candidate.get("kind") not in allowed_kinds:
@@ -541,6 +881,23 @@ def _validate_n6(packet: dict, status: str, manifest: dict[str, dict] | None) ->
         error = _locator_error(candidate.get("evidence_path"), candidate.get("evidence_locator"), manifest, f"N6 candidate {index}")
         if error:
             return error
+        if manifest is not None:
+            entry = manifest[candidate["evidence_path"]]
+            expected_type = {
+                "approved_primitive": "axiom_or_approved_primitive",
+                "owner_governed": "owner_governed_residual",
+                "tier_a": "tier_a_derivation_target",
+                "convention_reframe": "tier_a_convention_not_accepted",
+            }.get(candidate["kind"])
+            if expected_type and entry.get("accepted_premise_type") != expected_type:
+                return (
+                    f"N6 candidate {index} kind={candidate['kind']!r} does not "
+                    f"match manifest premise type {entry.get('accepted_premise_type')!r}"
+                )
+            if candidate["kind"] == "definition_refactor" and not set(entry.get("roles") or []).intersection(
+                {"source", "authority", "runner", "helper"}
+            ):
+                return f"N6 definition_refactor candidate {index} must cite a source or code surface"
         if status == "PASS" and candidate["could_close_wall"] and not candidate["addressed"]:
             return f"No-Go Discipline PASS leaves N6 candidate {index} unaddressed"
     error = _locator_error(section.get("evidence_path"), section.get("evidence_locator"), manifest, "N6 scan")
@@ -552,13 +909,22 @@ def _validate_n7(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     if error:
         return error
     assert section is not None
-    if not _text(section.get("argument")) or not _text(section.get("resolution")):
-        return "N7.argument and N7.resolution must be non-empty"
+    if not _text(section.get("route_id")) or not _text(section.get("argument")) or not _text(section.get("resolution")):
+        return "N7.route_id, N7.argument, and N7.resolution must be non-empty"
     if not isinstance(section.get("resolved"), bool):
         return "N7.resolved must be boolean"
     error = _locator_error(section.get("evidence_path"), section.get("evidence_locator"), manifest, "N7")
     if error:
         return error
+    routes = {
+        _norm(str(route.get("route_id") or "")): route
+        for route in packet.get("N1_alternative_routes") or []
+    }
+    steelman_route = routes.get(_norm(section["route_id"]))
+    if not steelman_route:
+        return "N7.route_id must name an evidenced N1 route"
+    if status == "PASS" and str(steelman_route.get("disposition") or "").upper() != "CLOSED":
+        return "No-Go Discipline PASS requires the N7 steelman route to be CLOSED"
     if status == "PASS" and not section["resolved"]:
         return "No-Go Discipline PASS requires the N7 steelman to be resolved"
     return None
@@ -568,6 +934,14 @@ def _validate_n8(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     section, error = _section(packet, "N8_cross_cycle_echo")
     if error:
         return error
+    candidate_ids: set[str] | None = None
+    if manifest is not None:
+        entry = manifest[section["evidence_path"]]
+        if "cross_cycle_index" not in set(entry.get("roles") or []):
+            return "N8 must cite the orchestrator-owned cross_cycle_index surface"
+        candidate_ids = _cross_cycle_candidate_ids(entry)
+        if candidate_ids is None:
+            return "N8 cross-cycle index is malformed or not orchestrator-authenticated"
     assert section is not None
     if not isinstance(section.get("packet_complete"), bool):
         return "N8.packet_complete must be boolean"
@@ -577,9 +951,18 @@ def _validate_n8(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     echoes = section.get("echoes")
     if not _list(echoes):
         return "N8.echoes must be a list"
+    error = _none_found_error(section, echoes, "N8")
+    if error:
+        return error
+    seen_candidate_ids: set[str] = set()
     for index, echo in enumerate(echoes, 1):
-        if not isinstance(echo, dict) or not _text(echo.get("mechanism")):
-            return f"N8 echo {index} must name a mechanism"
+        if not isinstance(echo, dict) or not _text(echo.get("candidate_id")) or not _text(echo.get("mechanism")):
+            return f"N8 echo {index} must name candidate_id and mechanism"
+        candidate_id = str(echo["candidate_id"])
+        if candidate_id in seen_candidate_ids:
+            return f"N8 echo {index}.candidate_id is duplicated"
+        if candidate_ids is not None and candidate_id not in candidate_ids:
+            return f"N8 echo {index}.candidate_id is absent from the cross-cycle index"
         for field in ("retired", "applicable", "addressed"):
             if not isinstance(echo.get(field), bool):
                 return f"N8 echo {index}.{field} must be boolean"
@@ -588,6 +971,10 @@ def _validate_n8(packet: dict, status: str, manifest: dict[str, dict] | None) ->
             return error
         if status == "PASS" and echo["applicable"] and not echo["addressed"]:
             return f"No-Go Discipline PASS leaves applicable N8 echo {index} unaddressed"
+        seen_candidate_ids.add(candidate_id)
+    if candidate_ids is not None and seen_candidate_ids != candidate_ids:
+        missing = sorted(candidate_ids - seen_candidate_ids)
+        return f"N8.echoes must disposition every cross-cycle candidate; missing {missing[:3]}"
     if status == "PASS" and not section["packet_complete"]:
         return "No-Go Discipline PASS requires packet_complete=true for N8"
     return _unresolved_error(section, "N8", status)
@@ -598,6 +985,7 @@ def validate_no_go_discipline(
     *,
     source_required: bool = False,
     evidence_manifest: dict[str, dict] | None = None,
+    prior_claim_scope: str | None = None,
 ) -> str | None:
     required = source_required or output_requires_no_go_discipline(audit)
     packet = audit.get("no_go_discipline")
@@ -610,6 +998,8 @@ def validate_no_go_discipline(
         return "No-Go Discipline N1-N8 packet is required for this audit"
     if packet is None:
         return None
+    if evidence_manifest is None:
+        evidence_manifest = evidence_manifest_from_snapshot(packet)
     if packet.get("required") is not True:
         return "no_go_discipline.required must be true"
     status = packet.get("status")
@@ -629,6 +1019,8 @@ def validate_no_go_discipline(
     if status == "PASS":
         if failures:
             return "No-Go Discipline PASS cannot carry failure items"
+        if audit.get("verdict") == "audited_clean" and audit.get("chain_closes") is not True:
+            return "audited_clean with No-Go Discipline PASS requires chain_closes=true"
         if audit.get("verdict") != "audited_clean" and audit.get("chain_closes") is True:
             return "non-clean verdict cannot carry chain_closes=true"
     else:
@@ -644,9 +1036,28 @@ def validate_no_go_discipline(
             return "No-Go Discipline FAIL requires narrowed_claim_scope"
         if _norm(packet["narrowed_claim_scope"]) != _norm(str(audit.get("claim_scope") or "")):
             return "No-Go Discipline FAIL narrowed_claim_scope must equal the applied claim_scope"
+        if not _text(packet.get("prior_claim_scope")):
+            return "No-Go Discipline FAIL requires prior_claim_scope"
+        if prior_claim_scope and _norm(packet["prior_claim_scope"]) != _norm(prior_claim_scope):
+            return "No-Go Discipline FAIL prior_claim_scope must equal the pre-audit ledger scope"
+        if _norm(packet["prior_claim_scope"]) == _norm(packet["narrowed_claim_scope"]):
+            return "No-Go Discipline FAIL must actually narrow the pre-audit claim scope"
         if not _list(packet.get("corrected_wall_set")) or not all(_text(x) for x in packet["corrected_wall_set"]):
             return "No-Go Discipline FAIL corrected_wall_set must be a list of non-empty strings"
-        if not _text(packet.get("next_route")):
-            return "No-Go Discipline FAIL requires next_route"
+        collapsed = packet.get("N2_wall_independence", {}).get("collapsed_wall_set") or []
+        if {_norm(x) for x in packet["corrected_wall_set"]} != {_norm(x) for x in collapsed}:
+            return "No-Go Discipline FAIL corrected_wall_set must equal N2.collapsed_wall_set"
+        next_route = packet.get("next_route")
+        if not isinstance(next_route, dict):
+            return "No-Go Discipline FAIL next_route must be an object"
+        if not _text(next_route.get("route_id")) or not _text(next_route.get("reason_untested")):
+            return "No-Go Discipline FAIL next_route requires route_id and reason_untested"
+        routes = {
+            _norm(str(route.get("route_id") or "")): route
+            for route in packet.get("N1_alternative_routes") or []
+        }
+        queued = routes.get(_norm(next_route["route_id"]))
+        if not queued or str(queued.get("disposition") or "").upper() not in {"OPEN", "UNTESTED"}:
+            return "No-Go Discipline FAIL next_route must identify an OPEN or UNTESTED N1 route"
 
     return None

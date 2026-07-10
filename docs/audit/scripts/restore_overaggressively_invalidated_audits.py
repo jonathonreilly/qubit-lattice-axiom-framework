@@ -423,10 +423,23 @@ def restore_audit_from_previous(
     for field in ARCHIVED_FIELDS:
         if field in archived:
             new_row[field] = archived[field]
-    # Legacy archives with no packet are grandfathered for this one-shot
-    # migration. If a packet is present, however, restoration must preserve
-    # and validate it; silently dropping or reviving a malformed packet would
-    # bypass the current no-go gate.
+    note_body = ""
+    note_path = str(new_row.get("note_path") or "")
+    try:
+        note_body = (REPO_ROOT / note_path).read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        pass
+    source_required = no_go_discipline_gate.source_requires_no_go_discipline(
+        note_path, note_body, new_row.get("claim_type")
+    )
+    if (
+        new_row.get("audit_status") == "audited_clean"
+        and source_required
+        and new_row.get("no_go_discipline") is None
+    ):
+        return None
+    # A present packet must round-trip and validate. Packetless negative clean
+    # authority is deliberately not restorable under the current gate.
     if new_row.get("no_go_discipline") is not None:
         ledger_rows = rows or {str(new_row.get("claim_id") or ""): new_row}
         gate_blob = {
@@ -440,11 +453,17 @@ def restore_audit_from_previous(
             "notes_for_re_audit_if_any": new_row.get("notes_for_re_audit_if_any"),
             "no_go_discipline": new_row.get("no_go_discipline"),
         }
+        evidence_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
+            new_row["no_go_discipline"]
+        )
+        if evidence_manifest is None:
+            evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
+                new_row, ledger_rows, REPO_ROOT
+            )
         if no_go_discipline_gate.validate_no_go_discipline(
             gate_blob,
-            evidence_manifest=no_go_discipline_gate.build_evidence_manifest(
-                new_row, ledger_rows, REPO_ROOT
-            ),
+            source_required=source_required,
+            evidence_manifest=evidence_manifest,
         ):
             return None
     return new_row

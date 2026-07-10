@@ -610,7 +610,8 @@ def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
 def render_prompt(row: dict, ledger_rows: dict[str, dict],
                   template: str, runner_timeout_sec: int,
                   use_cache: bool = True,
-                  skip_runner_stdout: bool = False) -> str:
+                  skip_runner_stdout: bool = False,
+                  evidence_manifest_out: dict[str, dict] | None = None) -> str:
     """Substitute the prompt template's variables for one queue row.
 
     If ``skip_runner_stdout`` is True, do NOT invoke the runner subprocess
@@ -638,9 +639,6 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     packet_row = {**led_row, **row, "claim_id": cid}
     evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
         packet_row, ledger_rows, REPO_ROOT
-    )
-    evidence_manifest_text = no_go_discipline_gate.render_evidence_manifest(
-        evidence_manifest
     )
     premise_context = no_go_discipline_gate.render_framework_premise_context(
         evidence_manifest
@@ -692,6 +690,13 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         runner_stdout = "(stdout suppressed by --no-runner)"
     else:
         runner_stdout = get_runner_stdout(runner_path, runner_timeout_sec, use_cache=use_cache)
+    runner_stdout_path = no_go_discipline_gate.runner_stdout_evidence_path(cid)
+    no_go_discipline_gate.set_packet_evidence(
+        evidence_manifest,
+        path=runner_stdout_path,
+        role="runner_stdout",
+        text=runner_stdout or "(no stdout captured)",
+    )
 
     # Read the runner source code so the auditor can inspect what the runner
     # actually does, not just what it printed. Catches fake-pass runners
@@ -718,6 +723,13 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
                 runner_source = f"[could not read runner: {e}]"
         else:
             runner_source = f"[runner missing on disk: {runner_path}]"
+    if runner_path:
+        no_go_discipline_gate.set_packet_evidence(
+            evidence_manifest,
+            path=runner_path,
+            role="runner",
+            text=runner_source or "(no source available)",
+        )
 
     # Read each transitive helper script the primary runner imports (via
     # build_citation_graph's helper_runner_paths field on the ledger row).
@@ -735,10 +747,14 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         hp = canonical_runner_path(hp_raw)
         full_hp = REPO_ROOT / hp
         if not full_hp.exists():
-            helper_sources_blocks.append(
+            helper_block = (
                 f"=== BEGIN HELPER RUNNER: {hp} ===\n"
                 f"[helper missing on disk: {hp}]\n"
                 f"=== END HELPER RUNNER: {hp} ==="
+            )
+            helper_sources_blocks.append(helper_block)
+            no_go_discipline_gate.set_packet_evidence(
+                evidence_manifest, path=hp, role="helper", text=helper_block
             )
             continue
         try:
@@ -758,7 +774,7 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
                 if hcache is None:
                     cache_name = rc.cache_path_for(hp).relative_to(REPO_ROOT)
                     hcache = f"[helper runner cache missing or stale: {cache_name}]"
-            helper_sources_blocks.append(
+            helper_block = (
                 f"=== BEGIN HELPER RUNNER: {hp} ===\n"
                 f"{hsrc}\n"
                 f"=== BEGIN HELPER RUNNER CACHE: {hp} ===\n"
@@ -766,17 +782,34 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
                 f"=== END HELPER RUNNER CACHE: {hp} ===\n"
                 f"=== END HELPER RUNNER: {hp} ==="
             )
+            helper_sources_blocks.append(helper_block)
+            no_go_discipline_gate.set_packet_evidence(
+                evidence_manifest, path=hp, role="helper", text=helper_block
+            )
         except OSError as e:
-            helper_sources_blocks.append(
+            helper_block = (
                 f"=== BEGIN HELPER RUNNER: {hp} ===\n"
                 f"[could not read helper: {e}]\n"
                 f"=== END HELPER RUNNER: {hp} ==="
+            )
+            helper_sources_blocks.append(helper_block)
+            no_go_discipline_gate.set_packet_evidence(
+                evidence_manifest, path=hp, role="helper", text=helper_block
             )
     helper_runner_sources = (
         "\n\n".join(helper_sources_blocks)
         if helper_sources_blocks
         else "(no helper runner imports detected)"
     )
+
+    cross_cycle_path = no_go_discipline_gate.cross_cycle_index_path(cid)
+    cross_cycle_context = str(evidence_manifest[cross_cycle_path]["text"])
+    evidence_manifest_text = no_go_discipline_gate.render_evidence_manifest(
+        evidence_manifest
+    )
+    if evidence_manifest_out is not None:
+        evidence_manifest_out.clear()
+        evidence_manifest_out.update(evidence_manifest)
 
     # Render every template token in one regex pass. Python's ``re.sub`` does
     # not rescan replacement text, so literal template-looking strings inside
@@ -791,9 +824,11 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         "{{NO_GO_EVIDENCE_MANIFEST}}": evidence_manifest_text,
         "{{NOTE_BODY}}": note_body,
         "{{RUNNER_STDOUT}}": runner_stdout or "(no stdout captured)",
+        "{{RUNNER_STDOUT_EVIDENCE_PATH}}": runner_stdout_path,
         "{{RUNNER_SOURCE}}": runner_source or "(no source available)",
         "{{HELPER_RUNNER_SOURCES}}": helper_runner_sources,
         "{{FRAMEWORK_PREMISE_CONTEXT}}": premise_context,
+        "{{NO_GO_CROSS_CYCLE_INDEX}}": cross_cycle_context,
     }
     foreach_pattern = (
         r"\{\{FOREACH cited_authority IN CITED_AUTHORITIES\}\}"
@@ -1022,6 +1057,7 @@ def validate_verdict(
     *,
     source_requires_no_go: bool = False,
     evidence_manifest: dict[str, dict] | None = None,
+    prior_claim_scope: str | None = None,
 ) -> str | None:
     """Return an error string if the verdict is unusable, else None."""
     missing = REQUIRED_VERDICT_FIELDS - set(blob)
@@ -1033,6 +1069,7 @@ def validate_verdict(
         blob,
         source_required=source_requires_no_go,
         evidence_manifest=evidence_manifest,
+        prior_claim_scope=prior_claim_scope,
     )
     if no_go_error:
         return no_go_error
@@ -1340,15 +1377,18 @@ def main() -> int:
                     continue
 
             use_cache = not args.no_cache_runner
+            exact_evidence_manifest: dict[str, dict] = {}
             if args.no_runner:
                 # Skip the runner subprocess + cache, but keep Section 3a
                 # (runner source code) so the auditor can still inspect what
                 # the runner does. Pass timeout=0 since it is unused.
                 prompt = render_prompt(row, ledger_rows, template, 0,
-                                       use_cache=False, skip_runner_stdout=True)
+                                       use_cache=False, skip_runner_stdout=True,
+                                       evidence_manifest_out=exact_evidence_manifest)
             else:
                 prompt = render_prompt(row, ledger_rows, template, args.runner_timeout_sec,
-                                       use_cache=use_cache)
+                                       use_cache=use_cache,
+                                       evidence_manifest_out=exact_evidence_manifest)
 
             if args.dry_run:
                 print(f"  [dry-run] prompt size: {len(prompt)} chars")
@@ -1427,9 +1467,8 @@ def main() -> int:
                 blob,
                 cid,
                 source_requires_no_go=source_requires_no_go,
-                evidence_manifest=no_go_discipline_gate.build_evidence_manifest(
-                    {**full_led_row, **row, "claim_id": cid}, ledger_rows, REPO_ROOT
-                ),
+                evidence_manifest=exact_evidence_manifest,
+                prior_claim_scope=full_led_row.get("claim_scope"),
             )
             if err:
                 print(f"  FAIL validate: {err}")
@@ -1446,6 +1485,8 @@ def main() -> int:
                 auditor_model=audit_model,
                 auditor_reasoning_effort=reasoning_effort,
             )
+            if blob.get("no_go_discipline") is not None:
+                full_blob["_no_go_evidence_manifest"] = exact_evidence_manifest
             ok, msg = apply_one(full_blob, propagate=not args.no_propagate)
             if ok:
                 print(f"  OK ({elapsed:.1f}s)  verdict={blob.get('verdict')}  "

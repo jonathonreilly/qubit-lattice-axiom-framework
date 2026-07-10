@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 395,
+    "critical": 394,
     "high": 266,
     "leaf": 755,
     "medium": 512
@@ -778,27 +778,30 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
-      "claim_scope": "The internal complex-Clifford-algebra volume-element identity, the existence of an internal chirality involution exactly in even total dimension, and the consequent requirement that d_t be odd when the accepted Z^3 lattice premise fixes d_s=3.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "minimal_axioms"
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
       ],
       "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.155,
-      "note_path": "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 9.15,
+      "note_path": "docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_clifford_chirality_dimension_narrow.py",
-      "transitive_descendants": 284
+      "runner_path": "scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py",
+      "transitive_descendants": 283
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -9791,33 +9794,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_a3_route1_higgs_yukawa_2026_05_08_r1.py",
-      "transitive_descendants": 283
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
-        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
-        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.15,
-      "note_path": "docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py",
       "transitive_descendants": 283
     },
     {
@@ -57670,5 +57646,5 @@
     }
   ],
   "ready_count": 215,
-  "total_pending": 1928
+  "total_pending": 1927
 }

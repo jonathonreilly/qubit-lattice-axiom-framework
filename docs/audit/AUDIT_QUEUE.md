@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1928
+**Total pending:** 1927
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 215
 
 By criticality:
-- `critical`: 395
+- `critical`: 394
 - `high`: 266
 - `medium`: 512
 - `leaf`: 755
@@ -39,7 +39,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 22 | `koide_berry_bundle_obstruction_theorem_note_2026-04-19` | positive_theorem | unaudited | critical | 323 | 10.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_berry_bundle_obstruction_theorem.py` |
 | 23 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | audit_in_progress | critical | 317 | 11.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_higgs_mass_status_audit.py` |
 | 24 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | unaudited | critical | 310 | 8.78 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py` |
-| 25 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | critical | 284 | 9.15 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_clifford_chirality_dimension_narrow.py` |
+| 25 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | unaudited | critical | 283 | 9.15 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py` |
 | 26 | `self_gravity_entropy_note_2026-04-11` | bounded_theorem | audit_in_progress | critical | 267 | 8.57 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_self_gravity_entropy.py` |
 | 27 | `confinement_string_tension_note` | bounded_theorem | non_terminal_conditional | critical | 114 | 18.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_confinement_string_tension.py` |
 | 28 | `rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08` | open_gate | audit_in_progress | critical | 65 | 14.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_rconn_kappa_ew_register_not_read.py` |

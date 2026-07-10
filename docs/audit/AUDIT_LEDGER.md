@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 194 |
+| **retained** | 195 |
 | **retained_no_go** | 207 |
 | **retained_bounded** | 931 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
 | unaudited | 1852 |
-| audit_in_progress | 12 |
+| audit_in_progress | 11 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
@@ -62,8 +62,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 14 |
-| `audited_clean` | 1335 |
+| `audit_in_progress` | 13 |
+| `audited_clean` | 1336 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 25 |
@@ -135,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `axiom_first_spectrum_condition_theorem_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -305,6 +304,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -4017,6 +4017,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The runner source performs an actual amplitude propagation, detector probability, centroid, Born-proxy, weak-source scaling, and gamma sweep computation rather than printing constants. Within the explicitly bounded runner-defined row, the stdout reproduces the note's load-bearing numerical claims up to the stated machine-precision Born-proxy variation.
 - **rationale:** The claim is narrow enough to match the evidence: it asserts only survival on the runner-defined grown row at fixed drift, restore, and seeds. The runner code computes the reported quantities from generated geometry and propagation rules, and the completed runner output supports exact gamma=0 reduction, machine-clean Born proxy, weak-field F~M near 1, and the TOWARD-to-AWAY crossover. No external comparator, cross-note input, or definitional renaming is load-bearing for the scoped conclusion.
 - **auditor confidence:** medium
+
+### `clifford_chirality_dimension_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For an internal element of the complex Clifford algebra Cl(p,q), a chirality involution exists exactly when n=p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise then forces d_t to be odd.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-clifford_chirality_dimen-029`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The monomial parity condition implies that an element can anticommute with every Clifford generator only when it is proportional to the full volume element and the total generator count n is even.  _(class `A`)_
+- **chain closes:** True — The Clifford-basis parity argument proves necessity for odd n, while the phase-normalized volume element proves sufficiency for even n. The accepted Lattice premise supplies d_s=3, making even d_s+d_t equivalent to odd d_t under the explicitly stated total-Clifford-algebra hypothesis.
+- **rationale:** The source gives a general symbolic Clifford-algebra proof rather than relying on the finite runner enumeration or an imported numerical value. The supplied runner genuinely constructs generators and checks the asserted relations for n=1 through 6, although its floating-point checks are only a smoke test of the general proof. The sole cited authority is explicitly flagged as an accepted axiom premise and correctly supplies the Z^3 spatial dimension used in the conditional framework specialization.
+- **auditor confidence:** high
 
 ### `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`
 

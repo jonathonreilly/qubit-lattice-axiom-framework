@@ -20,8 +20,8 @@ does not produce a certified `D = 4` bracket beyond the box, and does not
 introduce any strong-coupling series, Monte-Carlo input, or literature value
 as a derivation input.
 
-Status authority: independent audit lane only. This source note does not set,
-predict, promote, or demote any audit outcome.
+This source note does not set, predict, promote, or demote any audit outcome;
+independent audit is required.
 
 Primary runner:
 `scripts/frontier_gauge_sd_loop_equation_beta_coupled_plaquette_bracket.py`
@@ -80,7 +80,7 @@ This note lands that object and its first exact outputs:
    re-verified by the runner, and with the exact `D = 2` transfer-matrix value
    inside the bracket;
 5. an honest floating-point-only `D = 4` disclosure (§6), including the
-   quantified failure of exact certification at the current Gram depth.
+   quantified residual of the submitted rationalize-and-absorb attempt.
 
 Normalization used throughout: `w_P = <(1/3) Re Tr U_P>` for the fundamental
 plaquette, so the single-variable kinematic range is `w_P in [-1/2, 1]`
@@ -279,26 +279,26 @@ rationalize-and-absorb certification used in §5 on the `D = 4` records
 produces certified bounds that land OUTSIDE the box — upper
 `1.0000002983566258` at denominator cap `10^7`, `~1.00000031` at cap `10^10`;
 lower `-0.5000004220856789` at cap `10^10` (a 14192-digit-numerator
-certificate that verifies exactly and is weaker than the floor). Increasing
-the rational precision does not help, because the obstruction is the dual
-infeasibility of the float solution, not the rounding. So at this Gram depth
-the exactly-certifiable `D = 4` statement is the box, and this note says so
-rather than embedding a decorative certificate.
+certificate that verifies exactly and is weaker than the floor). For these
+float records and this rationalize-and-absorb procedure, increasing the
+denominator cap did not help: the limiting residual is the submitted float
+dual's infeasibility rather than coefficient rounding. Thus this certificate
+attempt adds no `D = 4` statement beyond the box. It does not exclude a
+different exact dual point, exact solver, facial reduction, interval
+certificate, or symmetry reduction at the same Gram depth.
 
 The `D = 4` float interval `[-0.4999999361, 0.9999986557]` does contain the
 fenced comparator `0.5934` (audit-only context, one-hop authority's license;
 gate G7 checks the comparator lies inside the certified `D = 4` content, i.e.
 the box). No claim beyond the box is made in `D = 4`.
 
-What this opens (named dial): the Gram DEPTH. The `D = 4` word basis behind
-the 63-dim `local_gram` block is the shallowest one that carries all 9
-equations. The next path this opens is a deeper Gram basis (longer words in
-the Gram vectors, keeping the same 9 equations) and/or a `D = 4` solve
-converging to `optimal` (not `optimal_inaccurate`) so the §5
-rationalize-and-absorb certification closes in `D = 4` the way it closes in
-`D = 2`; the §5 pipeline needs no modification to consume such a solution —
-the runner's verifier is dimension-agnostic and already builds and pins the
-full `D = 4` model.
+What this opens: both same-depth certificate repair and the Gram-depth dial.
+The `D = 4` word basis behind the 63-dim `local_gram` block is the shallowest
+one that carries all 9 equations. Viable next attempts include an alternative
+same-depth dual point, an exact or interval solve, facial/symmetry reduction,
+a solve converging to `optimal` rather than `optimal_inaccurate`, or a deeper
+Gram basis with longer words. The runner's verifier is dimension-agnostic and
+already builds and pins the full `D = 4` model.
 
 ## 7. Runner gate map (51 checks)
 

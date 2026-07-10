@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_sd_loop_equation_beta_coupled_plaquette_bracket.py
-runner_sha256: 4a61ba41702ca827385a60a102e592d71a5ba6e2546b9fbcc053b4302271c4ef
+runner_sha256: 6ff5805be1da70492d6f616630ae6b1938cf89394d14628d0bd49f29d0b9cfbd
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 63.90
+elapsed_sec: 41.49
 status: ok
 ----- stdout -----
 frontier_gauge_sd_loop_equation_beta_coupled_plaquette_bracket
@@ -12,13 +12,13 @@ payload sd_equations_beta6_2d.json sha256=b512c0fbb43e568c4adc333ff5f7146ab18314
 payload sd_equations_beta6_4d.json sha256=bed5ead58e68dcb5f2b7dd10af2c304231a7494604171bc6a2de44051bbb5e8d
 payload cert_2d_upper_compact.json sha256=733b45e35f0a986d5341e201962d197e8387eb94290a017e245b238825ad3776
 payload cert_2d_lower_compact.json sha256=d66b660f180809e89e220c332c60ad5006253b0147bec2cac9323918657a877d
-PASS: G1 Haar <chi> = 0 | err=5.880e-16
-PASS: G1 Haar <|chi|^2> = 1 | err=9.326e-15
-PASS: G1 Haar <chi^2> = 0 | err=3.239e-16
-PASS: G1 Haar <chi^2 chibar> = 0 (N-ality; corrects the lane spec's 1) | err=1.691e-15
-PASS: G1 Haar <chi^3> = 1 | err=4.663e-15
-PASS: G1 Haar <|chi|^4> = 2 | err=1.066e-14
-PASS: G2 one-link beta=6 SD residual == 0 | residual=1.021e-14
+PASS: G1 Haar <chi> = 0 | err=6.078e-16
+PASS: G1 Haar <|chi|^2> = 1 | err=9.104e-15
+PASS: G1 Haar <chi^2> = 0 | err=3.765e-16
+PASS: G1 Haar <chi^2 chibar> = 0 (N-ality; corrects the lane spec's 1) | err=1.727e-15
+PASS: G1 Haar <chi^3> = 1 | err=4.885e-15
+PASS: G1 Haar <|chi|^4> = 2 | err=1.044e-14
+PASS: G2 one-link beta=6 SD residual == 0 | residual=9.326e-15
 PASS: G3 2D payload meta (D=2, N=3, beta=6, L_min=5)
 PASS: G3 4D payload meta (D=4, N=3, beta=6, L_min=5)
 PASS: G3 2D JSON inventory: 19 variables (1 const), 3 equations
@@ -47,15 +47,15 @@ PASS: G4 4D PSD block plaquette_localize_hi is PSD at all-ones
 PASS: G4 4D every SD equation evaluates to exactly +-4/3 at all-ones | values=['4/3']
 PASS: G4 cross-dim: all 12 SD equations share one signed all-ones value | 2D=4/3, 4D=4/3
 PASS: G5 oracle self-check <x_P> == w1 | delta=0.000e+00
-PASS: G5 oracle self-check <Tr V^2>/3 == <p2>/3 | delta=2.776e-17
-PASS: G5 oracle self-check <(Tr V)^2>/9 == <chi^2>/9 | delta=5.551e-17
+PASS: G5 oracle self-check <Tr V^2>/3 == <p2>/3 | delta=0.000e+00
+PASS: G5 oracle self-check <(Tr V)^2>/9 == <chi^2>/9 | delta=0.000e+00
 PASS: G5 oracle self-check <Tr V Tr Vd>/9 == <|chi|^2>/9 | delta=0.000e+00
-PASS: G5 2D JSON equation SD_P_orbit1 residual < 1e-10 | residual=5.274e-15
-PASS: G5 2D JSON equation SD_R12_long residual < 1e-10 | residual=1.416e-15
-PASS: G5 2D JSON equation SD_R12_short residual < 1e-10 | residual=1.416e-15
-PASS: G5 2D model equation SD_P_orbit1 residual < 1e-10 | residual=5.329e-15
-PASS: G5 2D model equation SD_R12_long residual < 1e-10 | residual=1.416e-15
-PASS: G5 2D model equation SD_R12_short residual < 1e-10 | residual=1.416e-15
+PASS: G5 2D JSON equation SD_P_orbit1 residual < 1e-10 | residual=5.024e-15
+PASS: G5 2D JSON equation SD_R12_long residual < 1e-10 | residual=1.332e-15
+PASS: G5 2D JSON equation SD_R12_short residual < 1e-10 | residual=1.332e-15
+PASS: G5 2D model equation SD_P_orbit1 residual < 1e-10 | residual=4.996e-15
+PASS: G5 2D model equation SD_R12_long residual < 1e-10 | residual=1.325e-15
+PASS: G5 2D model equation SD_R12_short residual < 1e-10 | residual=1.325e-15
 CERTIFIED UPPER: 903482039/1000000000
 PASS: G6 2D upper certificate verifies, bound == 903482039/1000000000 | 903482039/1000000000
 CERTIFIED LOWER: -10000001/20000000

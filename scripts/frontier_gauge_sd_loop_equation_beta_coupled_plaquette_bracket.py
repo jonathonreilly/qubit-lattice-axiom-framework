@@ -1268,8 +1268,8 @@ def gate_g7(oracle, bound_up, bound_lo):
     """Containment and ordering: the certified 2D bracket contains the exact 2D
     value; the upper side is strictly inside the kinematic box; the lower side
     is epsilon-weaker than the kinematic floor (disclosed, not hidden); the 4D
-    MC comparator (audit-only, never a derivation input) sits inside the
-    certified 4D content, which at this Gram depth is the kinematic box."""
+    MC comparator (audit-only, never a derivation input) sits inside this
+    runner's certified 4D content, which is only the kinematic box."""
     w1 = oracle.w1
     check("G7 2D exact plaquette w1(beta=6) matches pinned 0.42253173965",
           abs(w1 - 0.42253173965) < 1e-9, f"w1={w1:.12f}")

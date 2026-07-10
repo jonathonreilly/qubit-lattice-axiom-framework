@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 198 |
-| **retained_no_go** | 213 |
+| **retained_no_go** | 214 |
 | **retained_bounded** | 946 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 28 |
 | unaudited | 1728 |
-| audit_in_progress | 3 |
+| audit_in_progress | 2 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 35 |
@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
-| `audited_clean` | 1366 |
+| `audit_in_progress` | 4 |
+| `audited_clean` | 1367 |
 | `audited_conditional` | 137 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 36 |
@@ -145,7 +145,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1246,6 +1245,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_wavefield_green_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_wavefield_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.6 | A | - |
 | `spectral_closure_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `spectral_symmetry_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -19419,6 +19419,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Expanding by Duhamel, only interaction chains from X to Y contribute, each length-n chain is bounded by (2J)^n||A|| with a final 2||B|| factor, and Lemma B gives the factorial tail in (C.1).  _(class `A`)_
 - **chain closes:** True — The finite-Λ LR bound follows from the stated bounded local Hamiltonian hypotheses, Duhamel expansion, inclusive interaction-chain counting, and the factorial tail estimate. The cluster-decomposition route still needs a filter/gap bridge, but the note explicitly removes that from the audited theorem surface.
 - **rationale:** The load-bearing LR proof is an operator-norm and combinatorial closure over explicit finite-volume hypotheses, not a definition, tuned numerical match, or external comparator. Independent checking of the chain count, repeated-term inclusive degree, tail estimate, and coarse light-cone packaging supports (C.1)-(C.3). The cited mass-gap bridge and Δ_T discussion are non-load-bearing for this scoped claim, so their open spatial-clustering role does not block the LR theorem.
+- **auditor confidence:** high
+
+### `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06`
+
+- **Note:** [`SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`](../../docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On a Z^3 x Z_tau quadratic kinetic surface, spatial O_h symmetry and time parity permit independent temporal and spatial coefficients, so spatial cubic and quartic-artifact checks alone cannot establish SO(4) covariance.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-spatial_cubic_time_a-judge-1`  (codex-gpt-5.6; independence=judicial_review)
+- **load-bearing step:** The spatial signed-permutation invariants contain both p_tau^2 and p_x^2+p_y^2+p_z^2 independently, furnishing an O_h-invariant anisotropic quadratic form that fails a time-space SO(4) transformation.  _(class `A`)_
+- **chain closes:** True — The load-bearing result is an exact algebraic invariant-space calculation plus an explicit counterexample: 2 p_tau^2+|p_spatial|^2 is spatially invariant but not SO(4)-invariant. The runner genuinely enumerates the signed-permutation groups, computes invariant dimensions, and evaluates the counterexample; its hard-coded review-language checks are non-load-bearing. This establishes the scoped no-go without importing the cited isotropy primitive, which is relevant only to the stated salvage path.
+- **rationale:** The load-bearing result is an exact algebraic invariant-space calculation plus an explicit counterexample: 2 p_tau^2+|p_spatial|^2 is spatially invariant but not SO(4)-invariant. The runner genuinely enumerates the signed-permutation groups, computes invariant dimensions, and evaluates the counterexample; its hard-coded review-language checks are non-load-bearing. This establishes the scoped no-go without importing the cited isotropy primitive, which is relevant only to the stated salvage path.
 - **auditor confidence:** high
 
 ### `species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13`

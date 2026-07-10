@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 29 |
-| unaudited | 1719 |
+| unaudited | 1718 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 36 |
-| ~~audited_conditional~~ | 144 |
+| ~~audited_conditional~~ | 145 |
 | ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -72,12 +72,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1372 |
-| `audited_conditional` | 144 |
+| `audited_conditional` | 145 |
 | `audited_decoration` | 70 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 36 |
-| `unaudited` | 2066 |
+| `unaudited` | 2065 |
 
 | claim_type | count |
 |---|---:|
@@ -1589,6 +1589,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `native_carrier_registration_kernel_rate_vs_unit_variance_point_theorem_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `neutrino_gamma1_wsource_application_bridge_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -14692,6 +14693,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For the Clifford-folded hops the plaquette commutator is -I, and for the graph-first cube shifts it is +I, so in both native hop identifications W_mu_nu is scalar and its traceless su(3) component vanishes exactly.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from the retained Clifford anticommutation relations and the graph cube-shift construction, plus finite-dimensional trace decomposition. The note explicitly limits the no-go to these bare-hop identifications and leaves separate action, locality, variational, or minimal-coupling routes open.
 - **rationale:** The runner source directly instantiates the Pauli/tensor Clifford hops and cube bit-flip shifts, forms the group commutators, and checks scalarity and zero traceless content; it is not merely printing constants or importing a fitted comparator. Both cited authorities are retained-grade, and the load-bearing step is a genuine algebraic closure over those inputs. The negative-claim gate passes within the restricted packet: at least five attack routes are enumerated, the only wall is native bare hopping lacking traceless plaquette flux, hidden compatibility language is non-load-bearing, the residual matches the holonomy-generation residual, and the strongest steelman is conceded as an open separate route rather than overclaimed closed.
+- **auditor confidence:** high
+
+### `neutrino_gamma1_wsource_application_bridge_note_2026-07-09`
+
+- **Note:** [`NEUTRINO_GAMMA1_WSOURCE_APPLICATION_BRIDGE_NOTE_2026-07-09.md`](../../docs/NEUTRINO_GAMMA1_WSOURCE_APPLICATION_BRIDGE_NOTE_2026-07-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional exact C^16 determinant, response-normalization, chiral-ratio, and direct-sum identities for the stipulated W functional, comparator D = mI₁₆, and identified Y/Γ₁ source family; the physical identification and comparator selection were not derived.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T164715Z-1ebf2b3d-00004-neutrino_gamma1_wsource_appl`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** From Γ₁² = I₁₆ and Tr(Γ₁) = 0, the note obtains eight eigenvalues of each sign and hence det(mI₁₆ + jΓ₁) = (m² - j²)⁸, which yields the stated W response and normalization identities.  _(class `A`)_
+- **chain closes:** False — The determinant, trace, and additivity identities close exactly after stipulating W, P1, and P2. The application chain remains conditional because P1 supplies the neutrino readout identification and P2 supplies the scalar comparator without derivation in the restricted packet.
+- **rationale:** Issue: P1 supplies the neutrino-family readout identification and P2 supplies D = mI₁₆; neither is derived by the cited authority or runner. Why this blocks: the runner rigorously verifies only downstream finite-matrix identities after those choices, while the W authority itself retains a declared readout-identification Boundary. Repair target: provide a retained bridge deriving P1 and, if the baseline is intended physically rather than stipulatively, a retained justification for P2. Claim boundary until fixed: T1–T5 are valid exact algebra for the stipulated matrices and comparator, without a certified neutrino readout or physical baseline.
+- **open / conditional deps cited:**
+  - `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
 - **auditor confidence:** high
 
 ### `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28`

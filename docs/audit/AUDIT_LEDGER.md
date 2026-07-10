@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 947 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 28 |
-| unaudited | 1739 |
+| unaudited | 1738 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 32 |
-| ~~audited_conditional~~ | 121 |
+| ~~audited_conditional~~ | 122 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1362 |
-| `audited_conditional` | 121 |
+| `audited_conditional` | 122 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 32 |
-| `unaudited` | 2084 |
+| `unaudited` | 2083 |
 
 | claim_type | count |
 |---|---:|
@@ -1585,6 +1585,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kreality_predicate_one_shared_atom_one_consumer_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -14962,6 +14963,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On Fraction-coefficient formal power series, finite partial sums, scalar powers, Cauchy products, geometric truncation errors, and the toy truncated Langevin update close order-by-order in Fraction arithmetic.  _(class `A`)_
 - **chain closes:** True — The narrowed conclusion follows from standard finite Fraction arithmetic and polynomial/Cauchy-product algebra as exercised by the runner. The note explicitly excludes the physics claims that would require external NSPT or lattice-gauge authorities.
 - **rationale:** The operative claim is narrowed to elementary algebra over rational formal series, not a physical NSPT computation. The runner source performs finite Fraction arithmetic, Cauchy products, a geometric truncation calculation, and boundary-text checks; it does not import contested external constants or rely on a calibrated numerical match. Hard-coded expected values are used only as elementary algebraic test expectations for worked examples, not as imported premises for a broader physical conclusion.
+- **auditor confidence:** high
+
+### `observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the homogeneous J=jI sector with real-antisymmetric D and positive determinant, phase-sensitive and phase-blind logarithmic candidates coincide; the further claim that the parent is bounded by AC_φλ alone was also audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00079-observable_principle_consume`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because det(D+jI) is real-positive on the homogeneous consumed sector, arg Z=0 makes P2 vacuous, after which Record additivity and continuity are asserted to force W(Z)=c log Z with AC_φλ as the sole residual.  _(class `A`)_
+- **chain closes:** False — The P2-elimination algebra closes, but the generator classification does not follow from Record plus analyticity alone. The cited parent explicitly retains T1-d: W must be a determinant-only continuous readout on all of R_{>0}, and disjoint source blocks must register as disjoint records; neither Berezin forcing nor AC_φλ supplies that bridge in this packet.
+- **rationale:** Determinant positivity genuinely removes phase discrimination on the stated sector, so that narrow algebraic result is sound. However, polynomial analyticity of j↦det(D+jI) does not establish continuity of the physical readout W on all positive amplitudes, nor does Record identify source-block factorization with disjoint records. The current parent authority expressly declares this T1-d boundary and records its independence obstruction; the runner's claims that AC_φλ is the sole residual are unconditional True checks rather than computations of that missing bridge.
+- **open / conditional deps cited:**
+  - `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `observable_principle_from_axiom_note`

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 25 |
-| unaudited | 1759 |
+| unaudited | 1758 |
 | audit_in_progress | 9 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 113 |
+| ~~audited_conditional~~ | 114 |
 | ~~audited_failed~~ | 10 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_charged_lepton_koide_cone_algebraic_equivalence_note` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 11 |
 | `audited_clean` | 1355 |
-| `audited_conditional` | 113 |
+| `audited_conditional` | 114 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 32 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 29 |
-| `unaudited` | 2104 |
+| `unaudited` | 2103 |
 
 | claim_type | count |
 |---|---:|
@@ -1553,6 +1553,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_action_predicts_q1_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
+| `flavor_r_half_assumptions_audit_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `flavor_record_readout_form_not_weight_2026-06-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -7872,6 +7873,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Wilson-loop Berry calculation gives -pi for the pure phase loop and |gamma| = pi(1 - 1/sqrt(1+r)) for the gapped loop, so at r=1/2 the value is about 0.5765 rad and misses the tested 2/9 normalizations.  _(class `C`)_
 - **chain closes:** True — The runner explicitly constructs the Pauli Hamiltonians and computes the Wilson-loop phase rather than importing the contested values. Independent checks of the displayed formulas agree for nonzero |b| and physical r>=0.
 - **rationale:** The source claim is bounded to this holonomy probe and does not assert a global no-go over all possible holonomies. The quantitative steps close from the displayed one-qubit Pauli loop: the equatorial loop gives the topological pi phase, the gapped latitude gives pi(1 - 1/sqrt(1+r)), and the Q crossing equation has the physical solution r=1/2 only. No cited upstream authority is needed for the scoped negative result.
+- **auditor confidence:** high
+
+### `flavor_r_half_assumptions_audit_note_2026-05-30`
+
+- **Note:** [`FLAVOR_R_HALF_ASSUMPTIONS_AUDIT_NOTE_2026-05-30.md`](../../docs/FLAVOR_R_HALF_ASSUMPTIONS_AUDIT_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A bounded audit of whether four proposed assumption relaxations—RG dynamics, cross-sector input, readout forcing, and target relaxation—derive or materially loosen r=1/2.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00059-flavor_r_half_assumptions_au`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Across all four challenges, the framework reaches discrete data and fixed-point endpoints but never supplies a selector for the continuous modulus r.  _(class `B`)_
+- **chain closes:** False — The runner verifies the B3 algebra and an approximate A5 comparator, but it does not establish the A3 no-go, the claimed cubic-RGE behavior, the anomaly/readout exclusions, or the overarching category-mismatch theorem. The restricted authorities instead leave the physical partition/map selection open and reach the value only modulo AC_φλ.
+- **rationale:** The B3 identity is genuinely computed, and the A5 shortfall estimate is computed from embedded comparator inputs. The A7 uncertainty and nearest-fraction figures are merely printed, while several other load-bearing exclusions receive no executable or cited proof in the packet. Moreover, both superseding authorities explicitly retain an open physical-selection gate, with the custody chain admitting AC_φλ, so the full 0-of-4 and irreducible-pin conclusion is not cleanly closed.
+- **open / conditional deps cited:**
+  - `FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md`
+  - `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`
 - **auditor confidence:** high
 
 ### `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`

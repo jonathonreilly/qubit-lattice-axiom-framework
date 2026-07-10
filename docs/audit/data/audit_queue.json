@@ -11819,12 +11819,12 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "quark_endpoint_ratio_chain_law_note_2026-04-19",
-      "claim_scope": null,
+      "claim_scope": "Under the supplied premises ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT, exact endpoint-chain algebra maps {5/6, -2, -8/9} to q_E = 15/8, r_E = 21/4, and D_E = 21/8; the retained Route-2 no-go leaves the E-center leg non-derived.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
@@ -11832,7 +11832,7 @@
         "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
       ],
       "direct_in_degree": 7,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [
         "scripts/_frontier_loader.py",
         "scripts/canonical_plaquette_surface.py",
@@ -11862,7 +11862,7 @@
       ],
       "load_bearing_score": 9.65,
       "note_path": "docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_quark_endpoint_ratio_chain_law.py",
       "transitive_descendants": 70

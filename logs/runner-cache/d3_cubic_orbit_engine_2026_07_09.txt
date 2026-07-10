@@ -1,0 +1,7 @@
+orbit-count: cube=5605504 expected=5605504 group=24 OK
+tables: slab-basis=built slab-H=built group=D4/8 orbits=33168 cache=2.2MiB wall=25.9s
+Hermiticity: sparse=0.00e+00 random-red=1.73e-16 random-dense=1.43e-16 GS-dE=4.26e-14 GS-res=1.97e-10
+slab-maxdev: pointer=3.55e-13 fragment=3.94e-13 pair=1.27e-13 center-bond=3.15e-13 direct-P=4.54e-13
+norm/info: dense=2.24e-13 reduced=2.66e-15 t0-chi=1.87e-12 rho-worst=2.68e-13
+RSS peak: 0.729 GiB (guard=10.0, validation-cap=4.0)
+TOTAL: ENGINE-VALID

@@ -4,6 +4,8 @@
 
 **Status:** source-side proposal — independent audit lane owns the verdict
 
+**Type:** bounded_theorem
+
 **Primary runner:** [`scripts/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.py`](../scripts/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.py)
 
 **Cached output:** [`logs/runner-cache/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.txt`](../logs/runner-cache/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.txt)

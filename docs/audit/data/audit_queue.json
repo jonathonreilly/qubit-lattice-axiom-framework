@@ -476,14 +476,14 @@
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "claim_id": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
       "claim_scope": "For the explicitly constructed Kawamoto\u2013Smit K1 and scalar nearest-neighbor K0 kernels, K1 has eight point-like linear cones with (V,C,r)=(2I\u2083,2/3,1), while K0 has an exact zero line and fails hypothesis (Z); no realized-flux selection or thermal conclusion is audited.",
       "claim_type": "positive_theorem",
       "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": "disagreement",
       "deps": [
         "minimal_axioms",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"

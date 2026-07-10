@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 927 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 22 |
-| unaudited | 1859 |
+| unaudited | 1858 |
 | audit_in_progress | 15 |
 | meta | 345 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 22 |
 | ~~audited_conditional~~ | 58 |
-| ~~audited_failed~~ | 2 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -66,10 +66,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1327 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 54 |
-| `audited_failed` | 24 |
+| `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2204 |
+| `unaudited` | 2203 |
 
 | claim_type | count |
 |---|---:|
@@ -1601,6 +1601,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `koide_reviewer_stress_test_note_2026-04-21` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | weak | codex-current | B | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -13683,6 +13684,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The C5 family F_p[J]=r(J)^p inherits multiplicative factorization from r(J_A ⊕ J_B)=r_A r_B but, for every p != 0, admits witness pairs with r_A^p r_B^p != r_A^p + r_B^p, so multiplicative factorization does not force additive scalar-generator factorization.  _(class `A`)_
 - **chain closes:** True — Independently, set x=r_A^p and y=r_B^p; additivity would require xy=x+y, while multiplicative factorization only gives xy. For any p != 0, choose x=y=1+epsilon with 0<epsilon<1 and r_A=r_B=x^(1/p), giving defect x^2-2x != 0 with positive r values arbitrarily close to 1.
 - **rationale:** The load-bearing step is an elementary algebraic separation, not a definition, external comparator, tuned numerical match, or imported open dependency. The runner source performs actual symbolic/rational determinant, tensor-trace, logarithm, and F_p defect checks; its ledger and source-boundary checks are non-load-bearing artifact checks. The source note is scoped as a bounded negative result for this operator-algebraic scaffold and explicitly does not claim P1 closure or a global no-go beyond the stated primitives.
+- **auditor confidence:** high
+
+### `observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_E_TAO_CROSS_DISCIPLINARY_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_E_TAO_CROSS_DISCIPLINARY_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The ten-candidate Route E classification and its claimed F_p obstruction to deriving scalar additivity from determinant factorization alone.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-observable_principle_p1_-071`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Every surveyed candidate either invokes logarithms to obtain additivity or uses additive functorial structure inapplicable to scalar real-valued partition functions, so none derives the required scalar additivity from independence.  _(class `A`)_
+- **chain closes:** False — The runner hard-codes the candidate classifications and checks only representative algebra; it does not establish the cited literature-wide claim that each discipline supplies no other applicable theorem. The note also incorrectly says F_0=r^0 is additive, although F_0=1 violates binary additivity.
+- **rationale:** The determinant, logarithm, and nonzero-power calculations are valid algebraic examples, but the runner encodes rather than derives the load-bearing ten-discipline classification. It neither audits the cited disciplinary authorities nor proves that the stated L/D dichotomy exhausts their potentially applicable constructions. The explicit false p=0 additivity statement additionally prevents the claim from closing on its own terms.
 - **auditor confidence:** high
 
 ### `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`

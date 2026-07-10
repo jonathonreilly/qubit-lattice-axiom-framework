@@ -73,7 +73,8 @@ family to the same measured \(K=0\) energy and extracts their curvature masses
 from nearby momentum blocks. It prints the tuned couplings, energy mismatch,
 fit residuals, and measured mass separation. Its PASS gate requires both
 fitted curvature masses to be finite and positive and the maximum fit residual
-to be at most `1e-10`. This finite observation is not promoted to a statement
+from an overdetermined five-point-in-`p^2` window to be at most `1e-6`. This
+finite observation is not promoted to a statement
 about all static interactions or all composites.
 
 ## Boundaries

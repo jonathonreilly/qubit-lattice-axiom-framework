@@ -18,7 +18,7 @@ from composite_mass_additivity_binding_defect_2026_07_08 import (
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
-FIT_RESID_TOL = 1.0e-10
+FIT_RESID_TOL = 1.0e-6
 
 
 def report(name: str, ok: bool, residual: float, detail: str) -> None:
@@ -88,7 +88,10 @@ def check_small_parameter_formulas() -> None:
 
 
 def fitted_curvature_mass(length: int, mass: float, coupling: float) -> tuple[float, float]:
-    indices = near_zero_indices(length, 3)
+    # Five distinct p^2 values constrain four even-polynomial coefficients.
+    # The former radius-3 window had only four distinct p^2 values and therefore
+    # interpolated every even input exactly, making its fit residual vacuous.
+    indices = near_zero_indices(length, 4)
     momenta = np.array([signed_momentum_value(index, length) for index in indices], dtype=float)
     energies = np.array(
         [lowest_pblock_energy(length, mass, mass, coupling, index) for index in indices],
@@ -130,13 +133,13 @@ def check_finite_same_energy_comparator() -> None:
     rows: list[str] = []
     energies: list[float] = []
     fitted_masses: list[float] = []
-    max_fit_residual = 0.0
+    fit_residuals: list[float] = []
     for mass in masses:
         coupling, measured = tune_to_energy(length, mass, target)
         fitted_mass, fit_residual = fitted_curvature_mass(length, mass, coupling)
         energies.append(measured)
         fitted_masses.append(fitted_mass)
-        max_fit_residual = max(max_fit_residual, fit_residual)
+        fit_residuals.append(fit_residual)
         rows.append(
             f"m={mass:.1f},U={coupling:.10e},E0={measured:.12e},"
             f"Mcurv={fitted_mass:.12e},fit_resid={fit_residual:.3e}"
@@ -151,11 +154,17 @@ def check_finite_same_energy_comparator() -> None:
         if fitted_masses_ok
         else float("nan")
     )
-    fit_ok = np.isfinite(max_fit_residual) and max_fit_residual <= FIT_RESID_TOL
+    fit_residuals_ok = all(
+        np.isfinite(value) and value <= FIT_RESID_TOL for value in fit_residuals
+    )
+    max_fit_residual = (
+        max(fit_residuals) if all(np.isfinite(value) for value in fit_residuals)
+        else float("inf")
+    )
     ok = (
         energy_mismatch <= 1.0e-10
         and fitted_masses_ok
-        and fit_ok
+        and fit_residuals_ok
         and np.isfinite(relative_mass_separation)
         and relative_mass_separation >= 0.05
     )

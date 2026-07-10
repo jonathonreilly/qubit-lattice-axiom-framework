@@ -61,6 +61,6 @@ review_findings:
   - physics and Nature review PASS WITH BOUNDED CLAIMS after exact-versus-numerical separation
   - no-go discipline PASS; governance PASS; labeling NA
 review_disposition: pass
-pr_status: ready_to_open
-next_exact_action: commit the PR packet, push the dedicated branch, and open one review PR without merging
+pr_status: open at https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5137
+next_exact_action: independent audit/review of PR 5137; do not merge from the physics-loop lane
 stop_condition: target receives an honest audit-ready certificate, or all four attack frames are executed and the strongest bounded support/no-go blocker is packaged

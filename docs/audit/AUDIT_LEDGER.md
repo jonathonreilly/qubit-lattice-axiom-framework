@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 21 |
-| `audited_clean` | 1340 |
+| `audit_in_progress` | 20 |
+| `audited_clean` | 1341 |
 | `audited_conditional` | 139 |
 | `audited_decoration` | 69 |
 | `audited_failed` | 38 |
@@ -150,7 +150,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-current | C | - |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-current | B | - |
 | `lattice_nn_light_cone_note` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -815,6 +814,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_source_domain_canonical_descent_theorem_note_2026-04-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_readout_lane_demarcation_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -12074,6 +12074,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** At the scoped equal-weight Frobenius extremum a^2 = 2|b|^2, the Fourier identities give lambda_0^2+lambda_1^2+lambda_2^2 = 6a^2 and (lambda_0+lambda_1+lambda_2)^2 = 9a^2, hence Q_alg(lambda)=2/3.  _(class `A`)_
 - **chain closes:** True — The cited circulant theorem supplies the needed Fourier sums, and the cited Frobenius theorem supplies the scoped extremum a^2 = 2|b|^2. Substitution gives the claimed ratio exactly, with the denominator excluded by the stated domain/positive-energy extremum scope.
 - **rationale:** The load-bearing step is exact algebra over retained-grade cited inputs, not a definition, external comparator, or tuned numerical match. The runner checks the same rational formula under several exact extremal and non-extremal cases and includes chamber-boundary sanity checks; it does not import PDG data or a physical charged-lepton readout. The open question in the Frobenius authority concerns canonical physical weighting selection, but this row explicitly confines itself to the scoped equal-weight algebraic extremum and signed ratio.
+- **auditor confidence:** high
+
+### `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10`
+
+- **Note:** [`KOIDE_Q_TWO_THIRDS_Z3_CHARACTER_NORM_SPLIT_RECASTING_THEOREM_NOTE_2026-05-10.md`](../../docs/KOIDE_Q_TWO_THIRDS_Z3_CHARACTER_NORM_SPLIT_RECASTING_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For every positive real three-vector under the stated unit-normalized Z_3 Fourier transform, Q(v) = 2/3 if and only if |c_0|² = |c_1|² + |c_2|².
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00005-koide_q_two_thirds_z3_charac`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting Plancherel and |c_0|² = (1/3)(Σv_g)² into Σv_g² = (2/3)(Σv_g)² gives |c_1|² + |c_2|² = |c_0|², with the reverse implication obtained by reversing the steps.  _(class `A`)_
+- **chain closes:** True — Unitarity gives the required Plancherel identity, and the trivial-character component supplies the squared sum with the correct factor of 1/3. Direct substitution proves both directions without an additional physical premise or bridge.
+- **rationale:** The result is a genuine exact algebraic equivalence between two independently stated conditions, not a definition or unsupported physical identification. The runner constructs the Fourier coefficients explicitly and symbolically verifies that the Koide and norm-split residuals differ by the nonzero constant factor -3; it does not hard-code a contested solution or import numerical data. The note confines its conclusion to this equivalence and explicitly excludes any framework-level derivation of Koide or an operator-level realization.
 - **auditor confidence:** high
 
 ### `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08`

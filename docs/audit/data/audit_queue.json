@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 434,
+    "critical": 433,
     "high": 249,
     "leaf": 741,
     "medium": 492
@@ -1509,28 +1509,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_koide_generation_id_cl3_grade1_bridge.py",
       "transitive_descendants": 502
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10",
-      "claim_scope": "Zero-dependency algebraic recasting theorem: for any positive real 3-vector v and unit-normalized Z_3 Fourier components c_k, the scalar condition Q(v)=(sum v_i^2)/(sum v_i)^2=2/3 holds iff |c_0|^2=|c_1|^2+|c_2|^2, equivalently the standard 45-degree form. No framework derivation of Koide, lepton mass operator, or norm-split mechanism is audited.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "retained",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.969,
-      "note_path": "docs/KOIDE_Q_TWO_THIRDS_Z3_CHARACTER_NORM_SPLIT_RECASTING_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_q_two_thirds_z3_character_norm_split.py",
-      "transitive_descendants": 500
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -58388,6 +58366,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 181,
-  "total_pending": 1916
+  "ready_count": 180,
+  "total_pending": 1915
 }

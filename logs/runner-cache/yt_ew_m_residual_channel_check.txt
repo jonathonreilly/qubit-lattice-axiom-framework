@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/yt_ew_m_residual_channel_check.py
-runner_sha256: 540ff06a30b3d44aaadbff8ffadd088767863ee698b6f0ee47bce91decafafe8
+runner_sha256: 1d8e215d4a9ad9973aaabecb8190d97a9f97a18220da8313d415431e7873e778
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 ========================================================================
@@ -44,11 +44,31 @@ TEST 4: Color-diagonal G = g · I_N has S = N · g², C = 0
   ⇒ Color-diagonal (static) G has ONLY singlet content; adjoint requires V fluctuations.
 
 ------------------------------------------------------------------------
-TEST 5: G_full = u_0 · G_V factorization: S_full = u_0² · S_V, C_full = u_0² · C_V
-        (CMT inherits to channel decomposition with overall u_0² scaling)
+TEST 5a: S(lambda G) and C(lambda G) scale by |lambda|²
+         for general complex scalar action on G
 ------------------------------------------------------------------------
-  N=2: u_0² scaling on both S and C, max dev = 8.882e-16
-  N=3: u_0² scaling on both S and C, max dev = 3.553e-15
+  N=2: negative-real, genuinely-complex, and random lambda samples checked
+  N=3: negative-real, genuinely-complex, and random lambda samples checked
+  (P-G)-conditional bookkeeping, previously Test 5: lambda = u_0
+  max scalar-channel deviation = 2.842e-14
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 5b: Massless derivation on a one-link L=7 SU(3) ring
+------------------------------------------------------------------------
+  accepted hopping after 0 reroll(s), cond(H[V]) = 2.119e+01
+  H[u_0 V] == u_0 H[V]: max deviation = 0.000e+00
+  G_full == u_0^-1 G_V: relative deviation = 1.252e-15
+  all 49 site-pair color blocks: S,C scale by u_0^-2
+  max relative channel deviation = 1.576e-15
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 5c: Massive rejector for scalar propagator action at m = 1/2
+------------------------------------------------------------------------
+  R = G_m[u_0 V] @ inv(G_m[V])
+  relative deviation from (tr R / dim) I = 7.064665e-02
+  decisive threshold: deviation > 1e-2
   STATUS: PASS
 
 ------------------------------------------------------------------------
@@ -58,10 +78,10 @@ TEST 6: Haar SU(N) link V generates non-trivial adjoint content
 
   N | mean(C/(S+C)) over 5000 Haar-SU(N) trials | expected (N²-1)/N²
   ---|----------------------------------------|------------------
-  2 | 0.7535                                 | 0.7500
-      max ||V†V-I||=3.34e-15, max |det(V)-1|=1.89e-15
-  3 | 0.8878                                 | 0.8889
-      max ||V†V-I||=3.96e-15, max |det(V)-1|=2.78e-15
+  2 | 0.7515                                 | 0.7500
+      max ||V†V-I||=2.95e-15, max |det(V)-1|=2.00e-15
+  3 | 0.8917                                 | 0.8889
+      max ||V†V-I||=3.57e-15, max |det(V)-1|=2.66e-15
   STATUS: PASS
   ⇒ Haar SU(N) links statistically realize the (N²-1)/N² adjoint fraction.
 
@@ -70,10 +90,21 @@ TEST 7: At N=3 (framework's N_c), adjoint fraction = 8/9 ≈ 0.8889
 ------------------------------------------------------------------------
 
   N=3 with 5000 Haar-SU(3) link trials:
-    mean(C/(S+C)) = 0.8860 ± 0.0016
+    mean(C/(S+C)) = 0.8877 ± 0.0016
     expected (N²-1)/N² = 8/9 = 0.8889
-    deviation = 0.0029
-    max ||V†V-I||=3.50e-15, max |det(V)-1|=2.66e-15
+    deviation = 0.0011
+    max ||V†V-I||=3.46e-15, max |det(V)-1|=2.33e-15
+  STATUS: PASS
+
+------------------------------------------------------------------------
+TEST 8: Repaired note-surface pins
+------------------------------------------------------------------------
+  (P-G) in claim scope: PASS
+  (P-G) in key finding: PASS
+  (P-G) in yaml: PASS
+  "Massless derivation" present: PASS
+  2026-07-11 Repair Note present: PASS
+  old unconditional claim-scope sentence absent: PASS
   STATUS: PASS
 
 ========================================================================
@@ -81,23 +112,26 @@ TEST 7: At N=3 (framework's N_c), adjoint fraction = 8/9 ≈ 0.8889
   Test 2 (channel fraction (N²-1)/N²):                    PASS
   Test 3 (channel decomposition on random G):             PASS
   Test 4 (color-diagonal G has only singlet, no adjoint): PASS
-  Test 5 (CMT u_0 factorization preserves S, C):          PASS
+  Test 5a (scalar-action blindness lemma):                PASS
+  Test 5b (massless link-to-propagator derivation):        PASS
+  Test 5c (massive scalar-action rejector):                PASS
   Test 6 (Haar SU(N) V-fluctuation generates adjoint):   PASS
   Test 7 (N=3 adjoint fraction = 8/9):                    PASS
+  Test 8 (repaired note-surface pins):                     PASS
+  TOTAL: PASS=10 FAIL=0
   OVERALL: PASS
 
 RESIDUAL (sharpened obstruction):
-  The numerical channel bookkeeping is exact (Tests 1-7 PASS at machine
-  precision). What remains for full closure of (M):
+  The scalar-action lemma and massless link-to-propagator bridge are exact
+  at machine precision. What remains for full closure of (M):
 
   (i)  Define the framework's lattice EW current as a Wilson-line bilinear
        (currently implicit; needs explicit formula in framework primitives).
   (ii) Show: physical (CMT-improved) EW vacuum polarization corresponds to
        the adjoint channel C, while the singlet channel S is absorbed into
-       the link improvement u_0^n_link. Test 5 shows BOTH S and C inherit
-       u_0² factors; the M residual asks: does CMT improvement REPLACE the
-       bare singlet content with u_0^n_link absorption, or does it leave
-       both channels physically observable?
+       the link improvement u_0^n_link. Scalar action is channel-blind:
+       it is derived with u_0^-2 channel scaling at m=0, and is conditional
+       on (P-G) at m!=0, where Test 5c rejects automatic scalar action.
 
   Until (ii) is closed, (M) remains a structural input. This stretch
   attempt sharpens (M) to a single named question: which channel survives

@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 353 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2812 |
-| audit_in_progress | 22 |
+| unaudited | 2811 |
+| audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
@@ -44,14 +44,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 26 |
+| `audit_in_progress` | 27 |
 | `audited_clean` | 444 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3162 |
+| `unaudited` | 3161 |
 
 | claim_type | count |
 |---|---:|
@@ -140,6 +140,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `strong_cp_theta_zero_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |

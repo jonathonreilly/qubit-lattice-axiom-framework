@@ -166,7 +166,7 @@ That is a supplied normalization, not an axiom consequence. Changing `|b|` or
    phase, including its physical trigger and interface.
 3. **Rate-normalization theorem.** Derive the dimensionless ratio eliminating
    `|b| / a_act` without importing the target value.
-4. **Owner governance route.** Approve a narrow readout or event primitive.
+4. **Approved-primitive route.** Approve a narrow readout or event primitive.
    That would be governance, not derivation.
 
 ## No-Go Discipline Gate
@@ -174,7 +174,7 @@ That is a supplied normalization, not an axiom consequence. Changing `|b|` or
 **N1 alternative route enumeration.** The generic Record occurrence route is
 closed as an R-eta license. Occupancy-reading streams are closed for phase
 registration. Coherence-reading events, rate-normalization theorems, direct
-angle-native R-eta theorems, and owner-governance routes remain open.
+angle-native R-eta theorems, and approved-primitive proposals remain open.
 
 **N2 wall independence.** The wall is still
 `W_cycle_holonomy_value == delta_readout_identification_R_eta`. No new wall is
@@ -216,5 +216,5 @@ PYTHONPATH=scripts python3 scripts/acphilambda_r_eta_occurrence_axiom_hygiene_no
 Expected close:
 
 ```text
-TOTAL: PASS=139 FAIL=0
+TOTAL: PASS=140 FAIL=0
 ```

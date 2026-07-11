@@ -27,28 +27,20 @@ def foundation_surface_lines() -> list[str]:
     """Registry-derived foundation block.
 
     The front door must never hand-state the foundation surface: this block is
-    generated from the premise registries, so an axiom memo re-date or a
-    primitive/Tier-A registry change lands here on the next pipeline run
+    generated from the premise registry, so an axiom memo re-date or an
+    approved-primitive registry change lands here on the next pipeline run
     without anyone editing prose. audit_lint separately warns when a
     front-door surface cites a superseded axiom-memo path.
     """
     premise = load_json(DATA_DIR / "axiom_premise_nodes.json")
-    owner_governed = load_json(DATA_DIR / "owner_governed_premise_nodes.json")
-    tier_a = load_json(DATA_DIR / "tier_a_admissions.json")
+    obligations = load_json(DATA_DIR / "derivation_obligations.json")
     nodes = premise.get("nodes", {})
-    owner_nodes = owner_governed.get("nodes", {})
-    primitive_count = sum(
-        1 for cid in premise.get("canonical_ids", []) if cid != "minimal_axioms"
-    )
-    owner_node_count = len(owner_nodes)
-    owner_atom_count = sum(
-        len(node.get("adopted_residual_candidates") or [])
-        for node in owner_nodes.values()
-    )
     lines = [
         "## Foundation Surface",
         "",
-        "| Premise (stable id) | Class | Current source |",
+        "The only supplied premise types are **axioms** and **approved primitives**.",
+        "",
+        "| Premise (stable id) | Type | Current source |",
         "|---|---|---|",
     ]
     for cid in premise.get("canonical_ids", []):
@@ -57,34 +49,23 @@ def foundation_surface_lines() -> list[str]:
         klass = "axiom set" if cid == "minimal_axioms" else "approved primitive"
         link = f"[`{path}`](../../{path})" if path != "-" else "-"
         lines.append(f"| `{cid}` | {klass} | {link} |")
-    for cid in owner_governed.get("canonical_ids", []):
-        node = owner_nodes.get(cid, {})
-        path = node.get("current_path") or "-"
-        label = node.get("label") or cid
-        link = f"[`{path}`](../../{path})" if path != "-" else "-"
-        lines.append(
-            f"| `{cid}` | owner-governed residual premise (`{label}`) | {link} |"
-        )
-    targets = sorted(
-        (tier_a.get("derivation_targets") or {}).items(),
-        key=lambda kv: kv[1].get("label") or kv[0],
-    )
-    target_names = ", ".join(
-        f"`{entry.get('label') or cid}` (row `{cid}`)" for cid, entry in targets
-    ) or "none"
     lines.extend(
         [
             "",
-            f"Tier-A admitted derivation targets ({len(targets)}): {target_names}.",
-            f"Approved primitive nodes: {primitive_count}.",
-            f"Owner-governed residual premise nodes: {owner_node_count}.",
-            f"Owner-governed residual atoms: {owner_atom_count}.",
-            "These are class-specific counts: zero live Tier-A targets does not mean",
-            "zero live owner-governed residual atoms.",
-            "Live Tier-A dependents chain-satisfy only at `retained_bounded` until an",
-            "admission is retired by retained derivation or explicit owner-governance adoption.",
+            "Open derivation obligations are tracked separately and carry **zero premise weight**:",
             "",
-            "Owner-approval history for every axiom/primitive/governance change:",
+        ]
+    )
+    obligation_nodes = obligations.get("nodes") or {}
+    for cid in obligations.get("canonical_ids", []):
+        node = obligation_nodes.get(cid, {})
+        path = node.get("current_path") or "-"
+        link = f"[`{path}`](../../{path})" if path != "-" else "-"
+        lines.append(f"- `{cid}` — {link}")
+    lines.extend(
+        [
+            "",
+            "Owner-approval history for axioms and primitives:",
             "[`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) section 6.",
             "",
         ]

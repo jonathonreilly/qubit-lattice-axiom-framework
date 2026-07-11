@@ -362,7 +362,7 @@ not descend to `Z_N` fluxes, so the center dual alone cannot carry it.
 | abelianized (torus) dual of glued 4D SU(3) weight | OPEN — sharpened carrier residual (i-b) |
 | framework derivation of the `F u F` insertion | OPEN — sharpened pairing residual (ii') |
 | scaling-limit sector functional | OPEN — unchanged live path |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

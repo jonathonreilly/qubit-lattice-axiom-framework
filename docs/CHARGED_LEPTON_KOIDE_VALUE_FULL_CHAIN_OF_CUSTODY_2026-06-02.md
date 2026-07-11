@@ -5,8 +5,8 @@
 **Claim boundary:** chain-of-custody map from the framework baseline through the
 abstract positive-spectrum Hermitian-circulant relation
 `Q_H=1/3+(2/3)r` and the biconditional `Q_H=2/3 <=> r=1/2`.
-The former `AC_phi_lambda` Tier-A slot has been retired, and its owner-governed
-replacement explicitly supplies no value of `r`. The physical selection
+The former `AC_phi_lambda` admission supplies no authority. Its occupancy and
+R-eta statements are open derivation obligations with zero premise weight. The physical selection
 `r=1/2` therefore remains open. Identifying `Q_H` with the physical
 charged-lepton Koide ratio is not supplied by this row. Independent audit owns
 the row classification and status.
@@ -14,15 +14,13 @@ the row classification and status.
 (nine local algebra/registry consistency checks; not a dependency audit).
 **Purpose:** give downstream work one end-to-end map of the exact algebra and
 the unresolved selector, so no consumer treats `Q=2/3` as physically selected.
-**Premise-surface correction:** 2026-07-09 — the live Tier-A count is zero.
-The owner-governed `AC_phi_lambda` boundary supplies occupancy/readout licenses
-but explicitly no `r`, `delta`, or charged-lepton mass value. The old
-"value modulo one Tier-A input" wording is withdrawn.
+**Premise-surface correction:** 2026-07-11 — only axioms and approved
+primitives are supplied premises. The AC occupancy/readout statements are open
+derivation obligations and supply no `r`, `delta`, or charged-lepton mass value.
 **Dependency-surface update:** 2026-07-05 — edge hygiene: open-gate and superseded-generation citations were demoted to context handles or re-pointed to current narrow authorities; no custody claim changed.
 **Historical dependency-surface update (3):** 2026-07-05 — the then-current
 Tier-A row was added as a direct dependency. This statement is superseded by
-the 2026-07-09 correction above: the live Tier-A count is now zero and the
-owner-governed replacement supplies no `r` value.
+the current correction above: historical admissions have no premise authority.
 **Dependency-surface update (2):** 2026-07-05 — L4 was re-pointed to the narrow carrier-type authority [FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md](FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md), and the L4 cell was restated at that carrier-only scope. The 2026-05-31 parent, which additionally bundles an open physical-locus bridge not consumed by this chain, is now only a historical context handle. The 2026-04-25 Plancherel support note is likewise a consistency-only context handle. The L1 per-site `su(2)` and L7 finite spectral-asymmetry citations are unchanged. No other custody claim changed.
 
 ## The chain (framework baseline -> open `Q=2/3` selector), every link scoped
@@ -39,7 +37,7 @@ owner-governed replacement supplies no `r` value.
 | L8 | on the positive-spectrum surface, distinct positive components imply `0<r<1`; at `r=0` the spectrum is degenerate, while at `r=1` positivity forces `cos(3 delta)=1` and hence the boundary spectrum `[0,0,3a]` up to cyclic ordering | algebraic boundary checked here; no physical assignment | [FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md](FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md) |
 | L9 | `r=1/2` characterizes HS **2-sector equipartition** (`‖aI‖²=‖bC+b̄C²‖²`) and the maximum of the supplied two-sector entropy; it does not select that coarse-graining physically | two-sector characterization authorities; `KOIDE_KAPPA_TWO_ORBIT_DIMENSION_FACTORIZATION_NOTE_2026-04-19` is historical parent context, not a citation-graph dependency | [FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md](FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md), [FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md](FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md) |
 | L10 | on the abstract positive three-vector Koide cone, `Q=2/3 <=> r=1/2`; no charged-lepton mass-square-root assignment is supplied | positive-cone algebraic equivalence | [CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md) |
-| **OPEN SELECTOR** | **choose the physical interior value `r`; `Q=2/3` requires `r=1/2`** | no live Tier-A target; the owner-governed `AC_phi_lambda` boundary explicitly supplies no value of `r` | [TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md](TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md), [ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md) |
+| **OPEN SELECTOR** | **choose the physical interior value `r`; `Q=2/3` requires `r=1/2`** | the occupancy statistical-grain and R-eta statements are open obligations with zero premise weight | [AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md), [AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md) |
 
 The runner reproduces representative local algebra for the chain and checks the
 live selector registries. It does not prove the cited source claims, audit their
@@ -56,7 +54,7 @@ dependencies, or turn the assembled chain into a physical value derivation.
   **2-sector-equipartition / balance stationary point**. These ingredients do
   not by themselves identify charged-lepton species, masses, or phase.
 - **Value — OPEN** (the selection of `r=1/2` over the other interior values):
-  the retired Tier-A slot and its owner-governed replacement do not supply a
+  the historical Tier-A slot and open obligations do not supply a
   value of `r`. The following historical candidate pieces remain explicit
   selector hypotheses rather than accepted premises:
   1. **K-reality** (time-reversal-reality of the generation coupling / δ=0 / transpose `b=c̄`) — selects
@@ -71,8 +69,8 @@ dependencies, or turn the assembled chain into a physical value derivation.
 
 ## Honest standing (a claim description, not an audit grade)
 The chain is an algebraic/checkable custody map to an open physical selector.
-It does not claim `Q=2/3` is selected by the [four framework axioms](MINIMAL_AXIOMS_2026-06-29.md), the retired Tier-A
-slot, or the owner-governed replacement. The exact structural formulas remain
+It does not claim `Q=2/3` is selected by the [four framework axioms](MINIMAL_AXIOMS_2026-06-29.md), historical admissions,
+or the open obligations. The exact structural formulas remain
 useful; the charged-lepton value does not close until a separate `r=1/2`
 selector is derived or explicitly approved.
 
@@ -105,6 +103,6 @@ selection lane without assigning any point to a physical sector.
 ## Provenance (verified 2026-06-02)
 - Nine representative local algebra/registry checks pass. They are consistency
   evidence only and do not substitute for source-claim or dependency audits.
-- The live Tier-A registry contains zero targets; the owner-governed
-  `AC_phi_lambda` boundary supplies no value of `r`.
+- The historical Tier-A registry contains zero live targets; the AC
+  derivation obligations carry zero premise weight and supply no value of `r`.
 - This note assembles the cited source authorities and explicitly named bridge candidates into one citable chain. It does not load-bear on `closure_c_staggered_dirac_gate` / `koide_phase_aps_eta_parity_route`.

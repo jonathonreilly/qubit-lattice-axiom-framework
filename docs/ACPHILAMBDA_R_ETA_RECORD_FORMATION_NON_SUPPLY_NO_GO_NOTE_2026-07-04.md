@@ -8,12 +8,10 @@ effective-status change. This note does not derive R-eta, does not retire
 `AC_phi_lambda` or `AC_phi_lambda(ii)`, does not edit any Tier-A registry,
 axiom, primitive, audit verdict, or publication surface, and does not claim
 that all future occurrence-lane or readout-context routes are closed.
-**Current-main posture (2026-07-06):** live `main` now records Tier-A count
-zero: theta was retired 2026-07-05 by retained derivation, and
-`AC_phi_lambda` was retired by owner-governance adoption. This note banks the
-historical R-eta Record-formation non-supply no-go only; it does not reopen,
-modify, or re-grade either retirement record, `tier_a_admissions.json`, or
-owner-governed premise data.
+**Current-main posture (2026-07-11):** R-eta is an open derivation obligation
+with zero premise weight. The historical governance decision is provenance
+only. This note banks the Record-formation non-supply result and does not close
+or re-grade the obligation.
 **Primary runner:**
 [`scripts/acphilambda_r_eta_record_formation_non_supply_no_go_2026_07_04.py`](../scripts/acphilambda_r_eta_record_formation_non_supply_no_go_2026_07_04.py)
 
@@ -94,7 +92,7 @@ owner-approved primitive, or explicit admission.
 
 - `AC_phi_lambda` is not retired.
 - `AC_phi_lambda(ii)` / R-eta is not derived, refuted, or removed from Tier A.
-- `AC_phi_lambda(i)`, theta, determinant-readout routes, and owner-governance
+- `AC_phi_lambda(i)`, theta, determinant-readout routes, and approved-primitive
   routes are untouched.
 - A future occurrence-lane theorem is not ruled out. It must add content beyond
   the generic fact that records form.

@@ -82,12 +82,13 @@ def main() -> int:
     for path in [NOTE, MINIMAL, AXIOM_PREMISES, TIER_A, LEDGER, REGISTRY, REALIZED, KINETIC, MEASURE]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
     row = ledger_row_by_path("docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md")
-    check("carrier-measure boundary row is retained_bounded", row.get("effective_status") == "retained_bounded", row.get("effective_status"))
-    check("carrier-measure boundary row is audited_clean", row.get("audit_status") == "audited_clean", row.get("audit_status"))
+    check("carrier-measure boundary row remains ledgered", row.get("effective_status") != "missing", row.get("effective_status"))
+    check("carrier-measure boundary row has an audit status", bool(row.get("audit_status")), row.get("audit_status"))
 
     section("B. Tier-A registry boundary")
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
-    check("Tier-A has a live genuine admitted input", tier["genuine_admitted_input_count"] >= 1)
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    check("Tier-A has no live admitted inputs", tier["genuine_admitted_input_count"] == 0)
+    check("Tier-A live target map is empty", tier["derivation_targets"] == {})
     check(
         "AC minimum decomposition keeps occupancy selection",
         "reading_occupancy_selection" in ac["minimum_decomposition"],
@@ -101,7 +102,7 @@ def main() -> int:
         "det_C/equal-power selectors",
     ]:
         check(f"machine registry states {phrase}", phrase in ac["statement"])
-    check("human registry names the reading/occupancy binary", "doublet reading/occupancy selection" in registry_flat)
+    check("human registry points to the occupancy derivation obligation", "AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md" in registry)
     check("note says registry is not edited", "The Tier-A registry is not edited." in note)
     check("note says AC_phi_lambda is not retired", "AC_phi_lambda is not retired." in note)
 

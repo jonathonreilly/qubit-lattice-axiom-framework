@@ -1,70 +1,39 @@
-# Tier-A Residual Owner Adoption and Retirement
+# Historical Tier-A Residual Governance Decision
 
-**Date:** 2026-07-04
+**Original date:** 2026-07-04
+
+**Superseded:** 2026-07-11
+
 **Type:** meta
-**Claim type:** meta
-**Status authority:** owner-governance registry action plus independent audit
-lane mechanics. This note records explicit owner adoption of the Block49
-residual governance candidates and retires the remaining live Tier-A registry
-row through `docs/audit/data/owner_governed_premise_nodes.json`. It does not
-derive `AC_phi_lambda` or theta as theorems, does not add or amend an axiom,
-does not add an approved framework primitive, and does not set any audit
-verdict for source-side support or no-go packets.
-**Primary runner:**
-[`scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py`](../scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py)
-**Cached output:**
-[`logs/runner-cache/tier_a_residual_owner_adoption_retirement_2026_07_04.txt`](../logs/runner-cache/tier_a_residual_owner_adoption_retirement_2026_07_04.txt)
 
-## Current-Main Landing Posture
+**Premise weight:** none. This file preserves governance provenance only.
+**Current status:** the former governance-only premise channel is withdrawn.
+The supplied foundation now contains exactly axioms and approved primitives.
 
-This landing is applied against current main, not against the stale PR branch
-state.
+## Current disposition
 
-- Theta was already retired from live Tier-A on 2026-07-05 by retained
-  derivation, with its record preserved under `retired_derivation_targets`.
-  This note does not resurrect theta as an owner-governed premise and does not
-  replace that retained-derivation retirement.
-- `AC_phi_lambda` remains the live Tier-A target on current main before this
-  landing. Its source surface,
-  `staggered_dirac_realization_gate_note_2026-05-03`, has itself landed
-  through the audit lane as `audited_clean` / `retained_bounded` at main commit
-  `5d8df21fe`, with its full basis terminal-grade.
-- The registry delta therefore retires the remaining live AC Tier-A slot and
-  records the owner-governed AC boundary in
-  `owner_governed_premise_nodes.json`.
+The 2026-07-05 decision below no longer retires or satisfies any physics
+dependency. Its two AC scientific statements are open derivation obligations:
 
-Accordingly, [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json)
-now has:
+- [AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)
+- [AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)
 
-```text
-genuine_admitted_input_count = 0
-canonical_ids = []
-derivation_targets = {}
-```
+The machine registry is
+[derivation_obligations.json](audit/data/derivation_obligations.json). Entries
+there have zero premise weight and never make an audit dependency ready.
 
-Historical details for `AC_phi_lambda` and theta remain in
-`retired_derivation_targets`. The live chain-satisfying AC governance premise
-id is registered in
-[`docs/audit/data/owner_governed_premise_nodes.json`](audit/data/owner_governed_premise_nodes.json).
+## Historical decision text
 
-## Owner Approval
-
-The owner approval in the landing thread was:
+The owner approval recorded in the 2026-07-05 landing thread was:
 
 ```text
 I approve #4991's owner-governance adoption of the four Block49 residual candidates, with the exact boundaries in owner_governed_premise_nodes.json, retiring live Tier-A admissions without treating them as axioms, primitives, or audit-ratified theorem closures.
 ```
 
-Because theta was already retired by retained derivation on current main, the
-two theta candidates are approval context only in this landing. The owner
-governed premise registry carries the remaining live AC target.
+At that time theta had already been retired by a retained-derivation record, so
+the attempted live effect applied only to `AC_phi_lambda`.
 
-## Adopted AC Text and Boundary
-
-The owner-governed `AC_phi_lambda` premise is the AC part of the Block49
-decision: Candidate 1 plus Candidate 2.
-
-**Candidate 1 adopted text:**
+### Historical Candidate 1
 
 ```text
 For the AC_phi_lambda charged-lepton matter-action surface, the physical
@@ -74,7 +43,7 @@ channel. This premise supplies only the matter-action occupancy grain needed
 to discharge the surviving AC(i) measure-side realization binary.
 ```
 
-**Candidate 2 adopted text:**
+### Historical Candidate 2
 
 ```text
 For the AC_phi_lambda charged-lepton R-eta surface, the physical readout is
@@ -84,65 +53,25 @@ between the retained fixed-locus density class and the charged-lepton eta
 readout.
 ```
 
-**Registry boundary:** this adoption retires only the current minimum
-`AC_phi_lambda` Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii)
-R-eta h-class/h-unit readout license. It supplies no value of `r`, `delta`,
-charged-lepton mass, mixing angle, probability rule, above-C3
-taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law. It
-does not set any audit status for the AC support or no-go packet stack.
+The old boundary said these statements supplied no value of `r`, `delta`,
+charged-lepton mass, mixing angle, probability rule, above-`C3`
+taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.
 
-## Theta Disposition
+## Why the channel was withdrawn
 
-The owner approval also named:
+The repo's TOE objective requires physical selectors and readout bridges to be
+derived or to remain visibly open. An owner decision can approve an axiom or a
+primitive, but it cannot create a third kind of supplied physics authority.
+Accordingly:
 
-- `theta_gauge_sector_phase_source_premise`;
-- `theta_mass_determinant_channel_w2_premise`.
+- the historical decision remains provenance;
+- neither historical candidate is an axiom or approved primitive;
+- neither statement chain-satisfies or bounds a dependent claim;
+- no audit verdict is changed by this meta note;
+- downstream status changes are computed mechanically by the audit pipeline.
 
-On current main those candidates no longer retire a live Tier-A target,
-because theta is already retired by the retained-derivation basis recorded in
-`tier_a_admissions.json`. The theta source row remains a
-retained-bounded selected-action-surface theorem in the audit ledger. This
-landing does not edit the theta source row, its audit verdict, or its
-retirement basis.
+## Theta disposition
 
-## Registry and Pipeline Effect
-
-This block introduces a third accepted-premise registry class:
-
-```text
-owner-governed residual premises
-```
-
-Those entries are Class B owner-governed governance premises. They are distinct
-from both:
-
-- `axiom_premise_nodes.json`: axioms and approved framework primitives;
-- `tier_a_admissions.json`: live Tier-A derivation targets that bound
-  otherwise clean dependents to `retained_bounded`.
-
-Owner-governed residual premises chain-satisfy without Tier-A bounding, but
-only inside the exact boundary recorded in
-`owner_governed_premise_nodes.json` and this note. They do not make the
-underlying support/no-go packets audited clean or theorem-derived.
-
-## Firewalls
-
-- No axiom is added or amended.
-- No approved framework primitive is added or amended.
-- No Tier-A target remains live.
-- The prior `AC_phi_lambda` and theta rows are preserved only as historical
-  `retired_derivation_targets`.
-- `Y0` and `g0` remain vacuous survey conventions, not accepted premises.
-- The source-side theorem/no-go packets retain their own audit statuses.
-- The adoption cannot be broadened by title or summary; cite the registry id
-  and exact boundary text.
-
-## Verification
-
-Run:
-
-```bash
-PYTHONPATH=scripts python3 scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py
-```
-
-Expected close: `FAIL=0`.
+The historical approval also named two theta candidates. Theta already had a
+separate retained-derivation disposition, so this correction does not reopen or
+reclassify theta. It removes only the governance-only premise mechanism.

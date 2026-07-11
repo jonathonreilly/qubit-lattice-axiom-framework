@@ -118,13 +118,13 @@ def main() -> int:
     record_clock_flat = flat(record_clock)
     dynamics_flat = flat(dynamics)
 
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     decomp = ac["minimum_decomposition"]
-    check("AC_phi_lambda remains the live Tier-A target", tier["genuine_admitted_input_count"] >= 1)
+    check("Tier-A has no live admitted inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
     check("AC minimum decomposition keeps R-eta", "delta_readout_identification_R_eta" in decomp, decomp)
     check("AC minimum decomposition keeps occupancy separate", "reading_occupancy_selection" in decomp, decomp)
     check("AC statement names density-read-as-angle R-eta", "density-read-as-angle" in ac["statement"] and "R-eta" in ac["statement"])
-    check("human registry names R-eta", ("R-eta" in registry_flat or "R-η" in registry_flat) and "density-read-as-angle" in registry_flat)
+    check("human registry points to the R-eta derivation obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
     check("note declares no_go Type", "**Type:** no_go" in note and "**Claim type:** no_go" in note)
     check("note says R-eta is not retired", "R-eta is not derived, refuted, re-graded, or removed from Tier-A" in note)
     check("note says AC_phi_lambda is not retired", "AC_phi_lambda is not retired." in note)
@@ -134,8 +134,8 @@ def main() -> int:
     expected_status = {
         "docs/ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md": {"unaudited"},
         "docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md": {"retained_bounded", "unaudited"},
-        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md": {"retained_bounded"},
-        "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md": {"retained_bounded"},
+        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md": {"retained_bounded", "unaudited"},
+        "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md": {"retained_bounded", "unaudited"},
     }
     for path, allowed in expected_status.items():
         row = ledger_row_by_path(path)
@@ -288,7 +288,7 @@ def main() -> int:
         "Direct R-eta readout-license theorem",
         "Coherence-event theorem",
         "Non-minimal transport theorem",
-        "Owner governance",
+        "Approved-primitive proposal",
     ]
     for phrase in required_phrases:
         check(f"note contains required boundary: {phrase[:50]}", phrase in note_flat)

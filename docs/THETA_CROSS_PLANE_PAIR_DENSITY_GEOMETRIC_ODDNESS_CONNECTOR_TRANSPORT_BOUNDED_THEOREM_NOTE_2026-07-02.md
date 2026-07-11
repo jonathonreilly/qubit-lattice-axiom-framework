@@ -243,7 +243,7 @@ the parity is located geometrically.
 | epsilon-assembled cross-plane pair density | CONSTRUCTED: exact quadratic form, exact geometric oddness, gauge-invariant, connector-borne frame data |
 | per-plaquette cross-plane slot | ABSENT in the supplied class (registry-tracked statement) — consistent: the slot lives at pair level |
 | derivation of the density from the framework surface | OPEN in this historical support surface — (ii'-derive), the theta-side target |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

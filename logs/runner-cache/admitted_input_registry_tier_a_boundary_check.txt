@@ -1,78 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/admitted_input_registry_tier_a_boundary_check.py
-runner_sha256: 3a4361f31dd5d037542605b9e5961eda9ccf62534e9b0ccb7d2cee1b0b3e3213
+runner_sha256: 0c0b8a48b89fcf5faa3e086c729424c04c1316739518cfe76910101fb822ae57
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
-==============================================================================
-TIER-A ADMITTED-INPUT REGISTRY BOUNDARY CHECK
-==============================================================================
-Scope: source/registry alignment only; no audit verdict changes.
-
-[PASS] source note exists -- docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
-[PASS] machine Tier-A registry exists -- docs/audit/data/tier_a_admissions.json
-[PASS] owner-governed registry exists -- docs/audit/data/owner_governed_premise_nodes.json
-[PASS] axiom premise registry exists -- docs/audit/data/axiom_premise_nodes.json
-[PASS] audit ledger exists -- docs/audit/data/audit_ledger.json
-[PASS] source claim type is meta
-[PASS] source status authority is audit lane only
-[PASS] source says it sets no audit status
-[PASS] source registers this primary runner
-[PASS] source registers this cached output
-[PASS] machine schema version is 1 -- 1
-[PASS] genuine admitted input count is zero -- 0
-[PASS] canonical ids are empty -- []
-[PASS] derivation targets are empty -- {}
-[PASS] retired target keys are AC and theta -- ['staggered_dirac_realization_gate_note_2026-05-03', 'strong_cp_theta_zero_note']
-[PASS] AC retired row exists -- staggered_dirac_realization_gate_note_2026-05-03
-[PASS] AC retired label matches -- AC_phi_lambda
-[PASS] AC no-go portfolio preserved -- ['koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24', 'koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24', 'koide_delta_marked_relative_cobordism_no_go_note_2026-04-24']
-[PASS] AC historical minimum decomposition preserved -- ['reading_occupancy_selection', 'delta_readout_identification_R_eta', 'species_bridge']
-[PASS] AC retirement record present
-[PASS] AC retirement mechanism is owner governance on audited surface -- retired_by_owner_governance_on_audited_surface
-[PASS] AC retirement records owner-governed premise node -- staggered_dirac_realization_gate_note_2026-05-03
-[PASS] AC retirement records audited surface -- docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md audited_clean / retained_bounded at adoption commit 5d8df21fe; current effective status is ledger-owned
-[PASS] AC retirement candidates exact -- ['ac_orbit_occupancy_statistical_grain_premise', 'ac_reta_hclass_hunit_readout_premise']
-[PASS] AC retirement boundary exact -- Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.
-[PASS] theta retired row exists -- strong_cp_theta_zero_note
-[PASS] theta retirement mechanism is retained derivation -- retired_by_retained_derivation
-[PASS] theta no-go portfolio preserved -- ['strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16']
-[PASS] theta not in owner-governed registry -- ['staggered_dirac_realization_gate_note_2026-05-03']
-[PASS] owner-governed schema version is 1 -- 1
-[PASS] owner-governed canonical ids are AC only -- ['staggered_dirac_realization_gate_note_2026-05-03']
-[PASS] owner-governed node keys match canonical ids -- ['staggered_dirac_realization_gate_note_2026-05-03']
-[PASS] owner-governed AC label matches -- AC_phi_lambda
-[PASS] owner-governed AC current path points to adoption note -- docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md
-[PASS] owner-governed AC candidates exact -- ['ac_orbit_occupancy_statistical_grain_premise', 'ac_reta_hclass_hunit_readout_premise']
-[PASS] owner-governed AC boundary exact -- Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.
-[PASS] owner-governed registry disjoint from axiom premises -- []
-[PASS] Record lives in axiom-premise registry -- ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
-[PASS] Scale reference lives in axiom-premise registry -- ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
-[PASS] convention rows are present -- ['g_bare_rigidity_theorem_note', 'hypercharge_identification_note']
-[PASS] reclassified primitives are present -- ['minimal_axioms_record', 'scale_reference_primitive']
-[PASS] AC adoption-time audited bounded surface is preserved in ledger history -- ('bounded_theorem', 'unaudited', 'unaudited')
-[PASS] theta source row remains audited retained-bounded bounded theorem -- ('bounded_theorem', 'audited_clean', 'retained_bounded')
-[PASS] note states zero live Tier-A targets
-[PASS] note states theta retained-derivation retirement
-[PASS] note states AC owner-governance retirement
-[PASS] note states historical audited AC surface
-[PASS] note delegates current AC status to ledger
-[PASS] note names owner-governed registry
-[PASS] note says no hand-maintained backlinks
-[PASS] note says audit status remains audit-lane-only
-[PASS] forbidden positive status claim absent: sets audit status
-[PASS] forbidden positive status claim absent: promotes rows to retained
-[PASS] forbidden positive status claim absent: changes rows' effective_status
-[PASS] forbidden positive status claim absent: Tier-A derivation targets chain-satisfy without bounding
-[PASS] forbidden positive status claim absent: Record is a Tier-A admission
-[PASS] forbidden positive status claim absent: scale-reference primitive is a Tier-A admission
-[PASS] forbidden positive status claim absent: theta is owner-governed premise
-[PASS] forbidden positive status claim absent: theta is theorem-derived
-[PASS] forbidden positive status claim absent: AC_phi_lambda is theorem-derived
-
-SUMMARY: TIER-A REGISTRY BOUNDARY PASS=60 FAIL=0
+[PASS] historical admission count is zero
+[PASS] historical admission ids are empty
+[PASS] historical derivation-target map is empty
+[PASS] retired governance registry is absent
+[PASS] exact AC obligations are live
+[PASS] foundation contains axiom plus three approved primitives
+[PASS] accepted ids equal foundation ids
+[PASS] open obligations are not supplied premises
+TOTAL: PASS=8 FAIL=0
 
 ----- stderr -----
 

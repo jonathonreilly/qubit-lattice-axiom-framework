@@ -233,7 +233,7 @@ and AC_phi_lambda(iii) has an external second relatum.
   failure of this ratification path, not a claim that no path-extension or
   owner ratification can exist.
 - **N6 partial-closure path scan:** the path-extension route is left open as an
-  owner/governance decision, not called a new axiom or a closed no-go wall.
+  retained derivation or approved-primitive decision, not called a new axiom or a closed no-go wall.
 - **N7 steelman:** a reviewer could argue that abstract-to-physical naming is
   itself a convention at this grade; the note preserves that route by leaving
   path-extension undecided.

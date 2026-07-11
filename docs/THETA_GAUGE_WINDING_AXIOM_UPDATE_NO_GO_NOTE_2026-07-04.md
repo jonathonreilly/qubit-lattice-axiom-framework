@@ -9,12 +9,10 @@ This note does not derive, refute, re-grade, retire, or remove theta, does not
 set `theta_bar = 0`, and does not edit any Tier-A registry, axiom, primitive,
 audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
-**Current-main posture (2026-07-06):** live `main` now records Tier-A count
-zero: theta was retired 2026-07-05 by retained derivation, and
-`AC_phi_lambda` was retired by owner-governance adoption. This note banks the
-historical gauge-side escape-route no-go only; it does not reopen, modify, or
-re-grade either retirement record, `tier_a_admissions.json`, or owner-governed
-premise data.
+**Current-main posture (2026-07-11):** theta's gauge-side retained disposition
+remains; its mass-side K-real leg is conditional on the open AC occupancy
+obligation. The AC governance-only channel was withdrawn;
+that correction does not affect this historical gauge-side result.
 **Primary runner:**
 [`scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py`](../scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py)
 
@@ -143,7 +141,7 @@ all gauge-side routes.
    supplying it.
 4. **Joint gauge/mass theorem.** Keep the invariant combination
    `theta_bar = theta_gauge + arg det(M_u M_d)` honest while moving either side.
-5. **Owner governance route.** Approve a narrow gauge-action or sector-readout
+5. **Approved-primitive route.** Approve a narrow gauge-action or sector-readout
    primitive. That would be governance, not derivation.
 
 ## No-Go Discipline Gate
@@ -152,7 +150,7 @@ all gauge-side routes.
 realized-state, and kinetic-isotropy surfaces are checked and do not supply the
 gauge-side winding bridge. The finite per-site connected-gauge observation,
 per-plaquette cross-plane absence, action-class theorem, emergent-Q bridge,
-branch/section readout, joint gauge/mass, and owner-governance routes remain
+branch/section readout, joint gauge/mass, and approved-primitive proposals remain
 separate.
 
 **N2 wall independence.** The wall is the gauge-side winding account: the

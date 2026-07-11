@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.py
+runner_sha256: b85a4f20b1bf4b6fa481c5a5f3673012e21f1caff5aa128c8e694b4920aaeca5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.16
+status: ok
+----- stdout -----
 AC_phi_lambda R-eta h-unit approved-primitive non-supply no-go verifier
 
 ========================================================================================
@@ -17,11 +25,11 @@ A. source presence and Tier-A boundary
 [PASS] exists: docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md
 [PASS] exists: docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md
-[PASS] AC_phi_lambda remains the live Tier-A target
+[PASS] Tier-A has no live admitted inputs
 [PASS] AC minimum decomposition keeps R-eta
 [PASS] AC minimum decomposition keeps occupancy separate
 [PASS] AC statement names R-eta
-[PASS] human registry names R-eta
+[PASS] human registry points to the R-eta derivation obligation
 [PASS] note declares Type no_go
 [PASS] note declares Claim type no_go
 [PASS] note declares independent audit boundary
@@ -139,7 +147,9 @@ E. dependency row status checks
 [PASS] ledger row exists or approved premise for ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md
 [PASS] ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md has claim type
 [PASS] ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md is not unbounded retained import for h-unit
-[PASS] new row not required before audit pipeline seeding
+[PASS] new row claim_type is no_go
+[PASS] new row audit status remains non-promoted
+[PASS] new row effective status remains non-promoted
 
 ========================================================================================
 F. exact h-unit algebra and type checks
@@ -173,7 +183,7 @@ G. note discipline and no-overclaim checks
 [PASS] note contains required boundary: That implication is invalid
 [PASS] note contains required boundary: A future h-unit theorem remains possible
 [PASS] note contains required boundary: h-unit theorem
-[PASS] note contains required boundary: owner governance
+[PASS] note contains required boundary: Approved-primitive proposal
 [PASS] note contains N1 no-go gate
 [PASS] note contains N2 no-go gate
 [PASS] note contains N3 no-go gate
@@ -189,4 +199,7 @@ G. note discipline and no-overclaim checks
 [PASS] note links conversion source
 [PASS] note does not use generated audit ledger as authority
 
-TOTAL: PASS=161 FAIL=0 CHECKS=161
+TOTAL: PASS=163 FAIL=0 CHECKS=163
+
+----- stderr -----
+

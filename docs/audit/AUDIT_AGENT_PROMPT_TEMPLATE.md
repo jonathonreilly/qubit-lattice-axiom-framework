@@ -179,15 +179,14 @@ from a desired conclusion and do not use a superseded axiom summary.
 {{FRAMEWORK_PREMISE_CONTEXT}}
 ```
 
-The accepted-premise types have different effects:
+The supplied premise types are:
 
-- `axiom_or_approved_primitive`: accepted, does not bound downstream status.
-- `owner_governed_residual`: accepted only inside the registry boundary, is
-  not an axiom or theorem derivation, and does not bound downstream status.
-- `tier_a_derivation_target`: accepted only at the bounded tier and forces
-  downstream `retained_bounded` until retired.
-- `tier_a_convention_not_accepted`: survey metadata, not a chain-satisfying
-  premise. Do not treat it as an admission.
+- axioms; and
+- approved primitives.
+
+Both are flagged `axiom_or_approved_primitive` and do not bound downstream
+status. Open derivation obligations, historical admissions, governance
+decisions, and conventions are not chain-satisfying premises.
 
 Every N1-N8 evidence reference must use a path from this restricted manifest
 and a locator that occurs verbatim in that file's supplied content (whitespace
@@ -199,7 +198,7 @@ characters. The manifest is an allow-list, not evidence by itself:
 ```
 
 For N6, the orchestrator has supplied a partial-closure index built from all
-registered premise classes, the controlled vocabulary, every ledger-indexed
+the foundation and open-obligation registries, the controlled vocabulary, every ledger-indexed
 meta note, the active review queue, and repository-visible physics-loop
 handoff/status surfaces. Its metadata declares every scanned path and the
 similarity thresholds and candidate limits. You must disposition every listed
@@ -212,7 +211,7 @@ index.
 
 For N8, the orchestrator has also supplied a cross-cycle search index. It is
 constructed from this row's audit history, one-hop authority audit history,
-Tier-A retirements, owner-governed retirements, similar `no_go` rows in the
+historical dispositions, open derivation obligations, similar `no_go` rows in the
 audit ledger, and every tracked
 `.claude/science/physics-loops/**/NO_GO_LEDGER.md` file. The index metadata
 states the exact glob, scanned file count and paths, similarity threshold, and
@@ -231,8 +230,9 @@ N1 mechanism classes, every route closed, complete structured N2-N8 records,
 no unresolved items, a resolved steelman, a complete cross-cycle scan, and no
 failure items. Do not turn five phrasings of one route into five routes. A
 `RULED OUT BY PRIOR` route must cite either a retained-grade one-hop authority
-or the registered text of an accepted axiom/primitive or owner-governed premise.
-Tier-A conventions and unretained ordinary dependencies cannot rule out a route.
+or the registered text of an axiom/approved primitive. Conventions, open
+obligations, historical records, and unretained ordinary dependencies cannot
+rule out a route.
 
 Definitions you must use:
 
@@ -278,15 +278,8 @@ Definitions you must use:
     non-retained-grade upstream is the axiom/primitive premise, and whose
     load-bearing step genuinely closes from that premise content plus
     retained-grade inputs, is eligible for `audited_clean`.
-    Owner-governed residual premises are also accepted premises inside their
-    recorded registry boundaries. They are not axioms, primitives, or theorem
-    derivations, but they do not impose Tier-A boundedness once adopted.
-    Tier-A admitted derivation targets are different: they are accepted
-    non-axiom premises only at the bounded tier. A clean row depending on a
-    Tier-A admitted derivation target may become `retained_bounded` after the
-    pipeline computes effective status, but it is not eligible for full
-    unbounded `retained` until that admission is retired by a retained
-    derivation or explicit owner-governance adoption.
+    No governance decision, historical admission, or open derivation
+    obligation is covered by this carve-out.
     **This is not a free pass.** The carve-out removes only the automatic
     downgrade; the load-bearing step must still correctly use the axiom
     content. If the step merely re-reads the axiom's wording or asserts a
@@ -419,18 +412,17 @@ Use `null` only when the gate is not required. Otherwise replace it with:
     "evidence_locator": "<actual locator>"
   },
   "N6_partial_closure_scan": {
-    "scan_scope": "<primitive, owner-governed, Tier-A, convention, definition, and scope surfaces checked>",
+    "scan_scope": "<axiom, approved-primitive, open-obligation, convention, definition, and scope surfaces checked>",
     "premise_classes_checked": [
       "axiom_or_approved_primitive",
-      "owner_governed_residual",
-      "tier_a_derivation_target",
-      "tier_a_convention_not_accepted",
+      "open_derivation_obligation",
+      "convention_not_accepted",
       "definition_or_scope_reframe"
     ],
     "candidates": [
       {
         "candidate_id": "<candidate_id from the orchestrator partial-closure index>",
-        "kind": "<approved_primitive | owner_governed | tier_a | convention_reframe | definition_refactor>",
+        "kind": "<approved_primitive | derivation_obligation | convention_reframe | definition_refactor>",
         "could_close_wall": false,
         "addressed": true,
         "disposition": "<why the candidate does or does not close the scoped wall>",

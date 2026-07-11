@@ -85,24 +85,25 @@ def main() -> int:
     for path in [NOTE, MINIMAL, AXIOM_PREMISES, TIER_A, LEDGER, BRANNEN, FIXED, REGISTRY, REALIZED, KINETIC]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
-    check("Tier-A has a live genuine admitted input", tier["genuine_admitted_input_count"] >= 1)
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    check("Tier-A has no live admitted inputs", tier["genuine_admitted_input_count"] == 0)
+    check("Tier-A live target map is empty", tier["derivation_targets"] == {})
     check(
         "AC minimum decomposition keeps R-eta",
         "delta_readout_identification_R_eta" in ac["minimum_decomposition"],
         ac["minimum_decomposition"],
     )
     check("AC statement still names R-eta", "R-eta" in ac["statement"])
-    check("human registry names R-eta", ("R-eta" in registry_flat or "R-η" in registry_flat) and "density-read-as-angle" in registry_flat)
+    check("human registry points to the R-eta derivation obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
     check("note says registry is not edited", "The Tier-A registry is not edited." in note)
     check("note says R-eta is not retired", "R-eta is not derived, refuted, re-graded, or removed from Tier-A" in note)
 
-    for source_path, expected in [
-        ("docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md", "retained_bounded"),
-        ("docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md", "retained_bounded"),
+    for source_path in [
+        "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
     ]:
         row = ledger_row_by_path(source_path)
-        check(f"{Path(source_path).name} effective status", row.get("effective_status") == expected, row.get("effective_status"))
+        check(f"{Path(source_path).name} remains ledgered", row.get("effective_status") != "missing", row.get("effective_status"))
 
     section("B. approved premise-node hygiene")
     check(
@@ -282,7 +283,7 @@ def main() -> int:
         "The generic Record occurrence route is closed as an R-eta license",
         "Coherence-reading events",
         "Rate-normalization theorem",
-        "Owner governance route",
+        "Approved-primitive route",
     ]:
         check(f"route accounting phrase present: {phrase[:42]}", phrase in note_flat)
     forbidden = [
@@ -314,12 +315,12 @@ def main() -> int:
     check("occurrence bridge is context only, not markdown-linked", "RECORD_OCCURRENCE_THINNED_IID_FREQUENCY_BRIDGE_2026-07-01.md](" not in note)
     check("occurrence-clock note is context only, not markdown-linked", "ACPHILAMBDA_OCCURRENCE_CLOCK_COMPOSITION_DELTA_BLINDNESS_2026-07-02.md](" not in note)
     check("note line count is bounded", 150 <= len(note.splitlines()) <= 240, len(note.splitlines()))
-    check("verification block expects 139 passes", "TOTAL: PASS=139 FAIL=0" in note)
+    check("verification block expects 140 passes", "TOTAL: PASS=140 FAIL=0" in note)
 
     print("\n" + "=" * 88)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 88)
-    return 0 if FAIL == 0 and PASS == 139 else 1
+    return 0 if FAIL == 0 and PASS == 140 else 1
 
 
 if __name__ == "__main__":

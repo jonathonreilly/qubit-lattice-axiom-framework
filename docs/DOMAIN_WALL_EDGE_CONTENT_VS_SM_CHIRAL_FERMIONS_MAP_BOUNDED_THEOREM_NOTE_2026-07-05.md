@@ -16,7 +16,7 @@ predict, or request an audit status.
 ## Source Context
 
 Current-main posture on 2026-07-07: the Tier-A admitted-input count is zero.
-This note does not edit `tier_a_admissions.json`, owner-governed-premise
+This note does not edit `tier_a_admissions.json`, derivation-obligation
 registries, effective-status surfaces, or either Tier-A retirement record.
 
 The map depends on the landed domain-wall edge diagnostics and respects these

@@ -279,7 +279,7 @@ stars.
 | phase-type (complex) insertion for the odd branch | OPEN — exactly residual (ii'), now triply motivated |
 | SU(3) even-ring beyond-pairwise data | OPEN — named (i-b''-a); the evenness identity holds, the reduction question does not transfer |
 | per-plaquette chamber conventions | NOT LICENSED (block 5, clarified Record axiom) and unnecessary here |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

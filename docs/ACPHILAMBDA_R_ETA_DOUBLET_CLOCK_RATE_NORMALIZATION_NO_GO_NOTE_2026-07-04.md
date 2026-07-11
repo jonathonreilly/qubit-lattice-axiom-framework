@@ -180,7 +180,7 @@ measurement semantics, new primitive, or owner decision enters the proof.
    and scalar weighting/readout context.
 5. **Theta residuals.** Continue the independent Tier-A theta gauge/mass
    residuals if AC R-eta stays blocked.
-6. **Owner governance.** Register a narrow readout/event primitive explicitly
+6. **Approved-primitive proposal.** Register a narrow readout/event primitive explicitly
    if derivation is intentionally bypassed; this would be governance, not a
    derivation.
 

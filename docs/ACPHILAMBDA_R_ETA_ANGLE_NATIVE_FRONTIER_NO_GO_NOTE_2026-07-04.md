@@ -140,7 +140,7 @@ selectors, or a chosen occurrence rate.
    than the count member or the zero member.
 3. **Occurrence-lane clock/event route.** Supply an occurrence theorem whose
    event-rate ratio licenses the same value without importing it.
-4. **Owner governance route.** Approve a narrow readout-selection primitive or
+4. **Approved-primitive route.** Approve a narrow readout-selection primitive or
    premise explicitly. That is governance, not derivation.
 
 ## No-Go Discipline Gate
@@ -150,7 +150,7 @@ closed by the retained radian no-go. Canonical `2*pi` packaging is checked
 here and misses. Homogeneous self-consistency maps are checked here and do
 not pin. Real/K-real holonomy is checked here and misses the off-locus value.
 The affine `Phi = S_sum` map is live only as a license target. Occurrence,
-source/action, and owner-governance routes are outside this no-go.
+source/action and approved-primitive routes are outside this no-go.
 
 **N2 wall independence.** The wall is the R-eta density-read-as-angle license
 in holonomy form:

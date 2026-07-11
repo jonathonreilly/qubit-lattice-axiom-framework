@@ -427,7 +427,7 @@ parity `(-1)^Q` can be carried by them.
 | scaling-limit / effective-action sector functional | OPEN — named live path (b) |
 | emergent abelian dual surface (`U(1)` dual = `Z`) | OPEN — named live path (c); the obstruction vanishes in the abelian dual |
 | even-N structural witness (`SU(2)` parity with odd support) | CONSTRUCTED as interface witness; no physical identification claimed |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed here (standing direction is 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed here (standing direction is 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

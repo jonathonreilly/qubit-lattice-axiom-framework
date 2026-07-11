@@ -232,7 +232,7 @@ not close the action wall.
   kernel witness; "not in-class" is scoped to the spatial wrap coefficient witness;
   "nearest-neighbor heat" is a named-candidate survivor/witness, not a global selector.
 - **N6 partial-closure path scan:** possible homes for C-add are explicitly listed as
-  owner-governed options: primitive, banked Dynamics proposal, or named conditional
+  available options: approved primitive, banked Dynamics proposal, or named conditional
   premise. None is adopted here.
 - **N7 steelman:** a positive local convolution semigroup outside the named list, an
   asymmetric nearest-neighbor generator, or an SU(3)-specific action could evade the

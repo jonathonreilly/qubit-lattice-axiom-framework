@@ -252,7 +252,7 @@ blocks and is not claimed here.
 | single-plaquette phased seed as continuous-theta source | NOT DECIDED HERE; T3 identifies the real Im-trace seed direction, while flow/source exclusion requires the separate flow/shadow blocks |
 | matter-sector conjugation-odd coupling | THE NAMED CHANNEL (T4): determinant phases — the registry's mass side; not this lane |
 | direct multi-plaquette anisotropic weighting supply | would need its own framework derivation — no candidate route exists in the repo's current construction pattern (named, not foreclosed) |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

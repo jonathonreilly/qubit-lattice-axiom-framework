@@ -106,7 +106,7 @@ attachment selector.
 ### N6 - Partial-Closure Path Scan
 
 Two closure paths remain open: derive the matter-attachment selector from the
-framework, or explicitly admit it under owner governance. After either path, the
+framework, or explicitly approve it as a primitive. After either path, the
 operator-frame bracket and kinetic-kernel checks can be reused to exclude scalar
 boost action.
 

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py
+runner_sha256: f201a57f0a14394e4f17f574feb9a29e795775bdc9fc7abd5210791fcb4749fc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
 AC_phi_lambda measure binary axiom-update no-go verifier
 
 ========================================================================================
@@ -12,20 +20,21 @@ A. source presence and audit anchors
 [PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
 [PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
 [PASS] exists: docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md
-[PASS] carrier-measure boundary row is retained_bounded
-[PASS] carrier-measure boundary row is audited_clean
+[PASS] carrier-measure boundary row remains ledgered
+[PASS] carrier-measure boundary row has an audit status
 
 ========================================================================================
 B. Tier-A registry boundary
 ========================================================================================
-[PASS] Tier-A has a live genuine admitted input
+[PASS] Tier-A has no live admitted inputs
+[PASS] Tier-A live target map is empty
 [PASS] AC minimum decomposition keeps occupancy selection
 [PASS] machine registry states doublet reading/occupancy selection
 [PASS] machine registry states sector-tied vs orbit/holomorphic count
 [PASS] machine registry states r in {1, 1/2}
 [PASS] machine registry states custody K-reality
 [PASS] machine registry states det_C/equal-power selectors
-[PASS] human registry names the reading/occupancy binary
+[PASS] human registry points to the occupancy derivation obligation
 [PASS] note says registry is not edited
 [PASS] note says AC_phi_lambda is not retired
 
@@ -175,5 +184,8 @@ K. markdown dependency and context control
 [PASS] verification block states fail-zero threshold
 
 ========================================================================================
-TOTAL: PASS=130 FAIL=0
+TOTAL: PASS=131 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

@@ -140,7 +140,7 @@ coordinates are supplied. Additivity does not rank them.
 2. **Readout-partition theorem.** Derive that the physical generation readout
    partition is exhausted by the framework-supplied generator channels, rather
    than by a per-mode or idempotent/eigenvalue frame.
-3. **Owner governance route.** Approve a narrow generation-measure primitive.
+3. **Approved-primitive route.** Approve a narrow generation-measure primitive.
    That would be governance, not derivation.
 
 ## No-Go Discipline Gate
@@ -150,7 +150,7 @@ checked and does not select a measure. Updated Admissibility is checked and
 does not select a Hamiltonian, transfer operator, probability, or scoring
 partition. Realized-state and kinetic-isotropy primitives are checked and do
 not supply the measure rule. Future matter-action, readout-partition, and
-owner-governance routes remain open.
+approved-primitive proposals remain open.
 
 **N2 wall independence.** The wall remains the same AC(i) binary:
 which grain/statistics the matter action implements. No new wall is added.

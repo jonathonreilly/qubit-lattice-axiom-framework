@@ -66,7 +66,7 @@ def ledger_rows() -> tuple[dict, dict]:
 
 def tier_a_statement() -> str:
     data = json.loads(read_text(TIER_A))
-    return data["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]["statement"]
+    return data["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]["statement"]
 
 
 def not_zero(expr: sp.Expr) -> bool:

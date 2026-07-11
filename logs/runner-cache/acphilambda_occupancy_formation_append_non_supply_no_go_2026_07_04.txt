@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py
-runner_sha256: 0513cf70d73ff26ac608cc487264030bef589dd4e9ea8c96bd9abd76def3a29b
+runner_sha256: 49b8a496501e75ea589d5092e807fd9f0c9bb12e71a6ed78496b55a349830ed0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.89
+elapsed_sec: 1.26
 status: ok
 ----- stdout -----
 AC_phi_lambda occupancy formation-append non-supply verifier
@@ -13,7 +13,7 @@ A. source presence, metadata, and no-overclaim firewall
 ================================================================================================
 [PASS] exists: docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/audit/data/tier_a_admissions.json
-[PASS] exists: docs/audit/data/owner_governed_premise_nodes.json
+[PASS] exists: docs/audit/data/derivation_obligations.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
@@ -47,11 +47,11 @@ B. Tier-A registry state on current main
 ================================================================================================
 [PASS] Tier-A live derivation targets are empty after the 2026-07-05 retirements
 [PASS] AC entry preserved intact under retired_derivation_targets
-[PASS] AC retirement mechanism is owner governance, not the formation append
-[PASS] owner-governed registry carries the retired AC premise node
-[PASS] owner-governed registry adopts the exact AC occupancy and R-eta residual candidates
-[PASS] owner-governed boundary names the exact AC(i) occupancy and AC(ii) R-eta supply
-[PASS] owner-governed boundary supplies no r value or sector-weight law
+[PASS] AC governance retirement is withdrawn and obligations are reopened
+[PASS] derivation registry carries exactly the two AC obligations
+[PASS] occupancy obligation is explicitly open and non-premise
+[PASS] R-eta obligation is explicitly open and non-premise
+[PASS] obligations are separate from the supplied foundation
 [PASS] AC minimum decomposition contains occupancy binary
 [PASS] AC minimum decomposition keeps R-eta separate
 [PASS] AC minimum decomposition keeps species bridge separate
@@ -60,7 +60,7 @@ B. Tier-A registry state on current main
 [PASS] AC statement names orbit/holomorphic branch
 [PASS] AC statement keeps r as a binary
 [PASS] AC statement keeps R-eta separate
-[PASS] human registry names occupancy survivor
+[PASS] human registry names occupancy obligation
 
 ================================================================================================
 C. formation append and axiom boundary
@@ -151,7 +151,7 @@ G. note theorem and no-go discipline
 [PASS] note contains synthesis phrase: the outcome-to-component dictionary
 [PASS] note contains synthesis phrase: Formation-rule theorem
 [PASS] note contains synthesis phrase: Matter-action theorem
-[PASS] note contains synthesis phrase: Owner-governance retirement path already taken
+[PASS] note contains synthesis phrase: Approved-primitive route
 [PASS] N1 gate present
 [PASS] N2 gate present
 [PASS] N3 gate present
@@ -161,9 +161,9 @@ G. note theorem and no-go discipline
 [PASS] N7 gate present
 [PASS] N8 gate present
 [PASS] N1 records at least five attempted routes
-[PASS] N1 cites the current human registry for owner-governance supply
+[PASS] N1 checks the approved-primitive registry route
 [PASS] N2 separates occurrence from dictionary
-[PASS] N4 matches retired registry and owner-governed current posture
+[PASS] N4 matches historical registry and current open obligation
 [PASS] steelman preserves occurrence support
 
 ================================================================================================

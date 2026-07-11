@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "description": "Allowlist of canonical axiom and explicitly approved primitive premise nodes. Each entry binds a STABLE un-dated claim_id to the current (possibly dated) source-doc path. build_citation_graph.py canonicalizes the claim_id of any listed path to the stable id, so inbound citation edges and the premise status survive re-dating of the source doc. PR3 attaches the axiom_premise meta-subtype + auditor carve-out to these ids; PR3's structural guard enforces that each listed doc contains only approved premise content (no framework-rule / ratification clauses). These premises chain-satisfy without bounding downstream rows; Tier-A derivation-target admissions live in tier_a_admissions.json and are the only accepted premises that bound otherwise retained rows.",
+  "description": "Allowlist of canonical axiom and explicitly approved primitive premise nodes. These are the only supplied physics premise types. Each entry binds a stable un-dated claim_id to the current source-doc path. build_citation_graph.py canonicalizes listed paths to stable ids, so inbound citation edges and premise status survive re-dating. The structural guard enforces that each listed document contains only approved premise content. These premises chain-satisfy without bounding downstream rows; every other scientific input must be retained-grade or remain conditional/open.",
   "canonical_ids": [
     "minimal_axioms",
     "scale_reference_primitive",

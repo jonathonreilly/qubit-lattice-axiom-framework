@@ -429,8 +429,8 @@ def main() -> int:
           "Type-B-to-radian identification remains primitive" in note)
     check("note names the angle-native live route",
           "Angle-native route" in note)
-    check("note keeps the owner-governance route explicit",
-          "Owner-governance primitive" in note)
+    check("note keeps the approved-primitive route explicit",
+          "Approved-primitive proposal" in note)
     linked_authorities = [
         "(MINIMAL_AXIOMS_2026-06-29.md)",
         "(KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)",

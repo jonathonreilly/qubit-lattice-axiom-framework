@@ -299,7 +299,7 @@ readout under the clarified readout discipline.
 | relative-frame correlation derived from 4D gluing/recoupling | OPEN — named residual (i-b''); 2D case settled affirmatively |
 | frame registered as record content | LOGICALLY OPEN — would need a derivation that records form on frame data; not pursued, not claimed |
 | center-projected (Z_3) data alone | insufficient for the integer pairing (block 3); here seen as exactly the fractional part |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

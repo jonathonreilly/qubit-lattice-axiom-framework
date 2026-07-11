@@ -9,14 +9,10 @@
 **Purpose:** primitive-retirement gate map
 **Status authority:** independent audit lane only. This source note does not
 set, predict, promote, demote, or apply any audit verdict.
-**Current-main posture (2026-07-06):** live `main` now records Tier-A count
-zero: theta was retired 2026-07-05 by retained derivation, and
-`AC_phi_lambda` was retired by owner-governance adoption. This note banks the
-historical primitive-retirement gate map only; it does not reopen, modify, or
-re-grade either Tier-A retirement record, `tier_a_admissions.json`,
-`axiom_premise_nodes.json`, or owner-governed premise data.
-The zero Tier-A count is class-specific: the separate AC governance node still
-contains two live owner-governed atoms, AC(i) and AC(ii).
+**Current-main posture (2026-07-11):** the approved scale-reference,
+kinetic-isotropy, and realized-state primitives remain intact. This historical
+retirement gate map neither changes them nor treats an open derivation
+obligation as a premise.
 **Primary runner:**
 [`scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py`](../scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py)
 **Cached runner output:**
@@ -157,7 +153,7 @@ universal no-go against future retirement.
 | derive OS0 kinetic normalization from a unit real-time tick | `ATTEMPTED` | the approved kinetic source does not supply a B-W/OS0 readout bridge; the cited interface note records that residual as current unaudited support. |
 | derive the realized state from the state/law qualification | `ATTEMPTED` | the minimal axioms say laws privilege no states, and [`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) supplies pointwise evaluation without selecting a state. |
 | derive the realized state from `Records form` | `ATTEMPTED` | occurrence does not choose which law-admissible record configuration is realized; the realized-state source keeps selection, weighting, and boundary data outside the primitive. |
-| retire a primitive through current owner governance | `ATTEMPTED` | the machine registries record the four approved premise nodes and the separate owner-governed AC residual only; no registered primitive has an owner-adoption retirement entry. |
+| retire a primitive by removing its explicit approval and registry entry | `ATTEMPTED` | no such approval has been withdrawn; all three primitive source boundaries remain current. |
 
 **N2 wall-independence audit.** The collapsed residual set has three distinct
 contents:
@@ -217,12 +213,10 @@ time-space normalization, dimensionful self-consistency, and state-selection
 steps as separate. This snapshot therefore keeps the primitives while leaving
 those routes open.
 
-**N8 cross-cycle echo.** Theta retired through retained derivation, and
-AC_phi_lambda retired through explicit owner governance on an audited surface.
-Both mechanisms were checked here. Neither automatically applies to a
-registered primitive: current main records no retained derivation or explicit
-owner-adoption retirement for the scale, kinetic-isotropy, or realized-state
-primitive.
+**N8 cross-cycle echo.** Theta has a retained-derivation disposition, while the
+AC statements are open obligations. Neither affects the approved primitives:
+current main records no withdrawal or retained derivation making the scale,
+kinetic-isotropy, or realized-state primitive redundant.
 
 ## Dependencies
 

@@ -9,12 +9,11 @@ does not set `theta_bar = 0`, does not edit any Tier-A registry, primitive,
 axiom, audit verdict, or publication-status surface, and does not claim that a
 future constraint-level or dynamical defect-suppression route is impossible.
 **Audit boundary:** independent audit lane only.
-**Current-main posture (2026-07-06):** live `main` now records Tier-A count
-zero: theta was retired 2026-07-05 by retained derivation, and
-`AC_phi_lambda` was retired by owner-governance adoption. This note banks the
-historical G1 defect-closure no-go only; it does not reopen, modify, or
-re-grade either retirement record, `tier_a_admissions.json`, or owner-governed
-premise data.
+**Current-main posture (2026-07-11):** theta's gauge-side retained disposition
+remains; its mass-side K-real leg is conditional on the open AC occupancy
+obligation. The AC governance-only channel was withdrawn
+and its two atoms are open obligations; that correction does not affect this
+historical G1 defect-closure result.
 **Primary runner:**
 [`scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py`](../scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py)
 

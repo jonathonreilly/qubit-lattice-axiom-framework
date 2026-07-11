@@ -10,11 +10,9 @@ Admissibility variation, Record permanence, or finite Record additivity. This
 note does not derive, refute, re-grade, or remove the historical AC_phi_lambda
 decomposition, and it does not edit any Tier-A registry, axiom, primitive,
 audit verdict, or publication-status surface.
-**Current-main posture (2026-07-10):** the live Tier-A target set is empty.
-AC_phi_lambda was retired on 2026-07-05 by owner-governance adoption on its
-audited surface, while its historical three-part decomposition remains
-preserved under `retired_derivation_targets`. That later governance action is
-explicit premise supply, not a derivation from the Record formation append.
+**Current-main posture (2026-07-11):** historical admissions have zero premise
+weight. The AC occupancy grain is an exact open derivation obligation. The
+2026-07-05 governance decision is provenance only, not premise supply.
 **Audit boundary:** independent audit lane only.
 **Primary runner:**
 [`scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py`](../scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py)
@@ -47,8 +45,8 @@ which admissible possibility, at which site, with what weight, or at what rate.
 At the time of the formation append, AC_phi_lambda(i) occupied exactly that
 unsupplied rule/dictionary slot: whether the physical matter action implements
 the sector-tied/count-twice or orbit/holomorphic/count-once doublet grain. On
-current main, owner governance supplies the recorded residual premise within
-its declared boundary; the formation append still does not derive it.
+current main, the occupancy atom remains open; the formation append still does
+not derive it.
 
 ## Load-Bearing Input And Context Handles
 
@@ -69,9 +67,9 @@ its declared boundary; the formation append still does not derive it.
   and [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json)
   preserve the doublet reading/occupancy selection in the historical
   `AC_phi_lambda` decomposition under `retired_derivation_targets`. The
-  current chain-satisfying boundary is recorded in
-  `docs/audit/data/owner_governed_premise_nodes.json`. This is registry context
-  only; it does not prove the no-supply statement.
+  current open atom is tracked in
+  [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md).
+  This is work tracking only; it does not prove the no-supply statement.
 
 ## No-Go Statement
 
@@ -94,10 +92,8 @@ It does not supply:
 4. the no-imported-frame condition or equal-Hilbert-Schmidt-energy theorem needed
    by the current conditional discriminator.
 
-Therefore the historical AC_phi_lambda(i) atom is preserved exactly where the
-retired registry entry puts it: the measure-side doublet occupancy realization
-binary, not generic Record occurrence. Current chain satisfaction comes from
-the separately recorded owner-governance adoption, not from this axiom append.
+Therefore the AC_phi_lambda(i) atom remains the measure-side doublet occupancy
+realization binary, not generic Record occurrence. It is not chain-satisfying.
 
 ## Finite Separation Check
 
@@ -123,7 +119,7 @@ axiom append cannot select between them.
 | Before | After |
 |---|---|
 | "Records form" could be overread as supplying the AC(i) formation/dictionary rule. | Formation occurrence is isolated from the occupancy dictionary. |
-| The historical AC(i) residual could be confused with the already-reclassified value face. | The preserved retired decomposition names the measure-side realization residual; current supply is owner-governed. |
+| The historical AC(i) residual could be confused with the already-reclassified value face. | The exact open obligation names the measure-side realization residual and supplies no premise. |
 | Record additivity or C3 outcome equipartition could be mistaken for a cell selector. | Additivity/equipartition are compatible with both dictionary completions. |
 
 ## What Does Not Move Under The Formation Append
@@ -134,7 +130,7 @@ axiom append cannot select between them.
   argument.
 - Theta is not moved by this argument.
 - No value of `r`, `delta`, `Phi`, a mass, or a species assignment is selected
-  by the formation append or by the owner-governed boundary.
+  by the formation append or by the open obligation.
 - No axiom, primitive, registry, audit verdict, or publication-status surface is
   edited.
 
@@ -148,9 +144,9 @@ axiom append cannot select between them.
    left by the carrier-measure discriminator.
 4. **Graded-constraint or carrier theorem.** Derive a narrow structural carrier
    that fixes the dictionary without importing a frame.
-5. **Owner-governance retirement path already taken.** The current premise
-   registry supplies the exact residual boundary, but that explicit supply does
-   not turn the formation append into a derivation.
+5. **Approved-primitive route.** A future owner-approved primitive could add
+   the missing grain to the foundation, but no such primitive currently exists;
+   proposing one does not turn the formation append into a derivation.
 
 ## No-Go Discipline Gate
 
@@ -164,19 +160,17 @@ axiom append cannot select between them.
 | finite Record additivity | `ATTEMPTED` | the finite separation checks additivity exactly for both `x=r` and `x=2r`. |
 | supplied C3 singlet/doublet context | `ATTEMPTED` | the same supplied outcome labels support both dictionaries; the context is held fixed rather than used as a selector. |
 | outcome-equipartition flow | `ATTEMPTED` | setting the same outcome-side value `x=1` yields distinct lawful readings `r=1` and `r=1/2`, so equipartition alone does not close the dictionary. |
-| owner-governance supply | `ATTEMPTED` | the current [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md) records explicit residual-premise adoption; that closes the live Tier-A slot without deriving it from formation occurrence. |
+| approved-primitive search | `ATTEMPTED` | the current axiom/approved-primitive registry contains no occupancy-grain primitive; the open obligation remains unsupplied. |
 
 **N2 wall independence.** The claim has one residual distinction, not an
 inflated multi-wall count: formation occurrence and the measure-side
 dictionary/formation rule are different contents. Closing occurrence does not
-close the dictionary. Owner-governance supply closes the registry admission
-without changing that derivational distinction.
+close the dictionary. Historical governance does not close either distinction.
 
 **N3 hidden-wall scan.** The phrase `canonical C3 singlet/doublet context` is a
 supplied, fixed two-outcome context for the countermodel and is
-non-load-bearing: both dictionaries use it. The registered owner decision is
-cited only to state current-main posture and the partial-closure mechanism; it
-is not a premise in the finite non-supply proof. No observed mass, PDG
+non-load-bearing: both dictionaries use it. The historical owner decision is
+not a premise in the finite non-supply proof. No observed mass, PDG
 comparator, fitted selector, probability law, Born rule, action/source bridge,
 new primitive, or registry edit is hidden in the argument.
 
@@ -185,8 +179,8 @@ exactly:
 
 | cited surface | cited residual | residual checked here | match |
 |---|---|---|---|
-| `tier_a_admissions.json` retired AC entry | historical `reading_occupancy_selection` atom | formation occurrence does not select the count-once/count-twice dictionary | yes |
-| `owner_governed_premise_nodes.json` AC node | explicit supply of the AC(i) matter-action occupancy grain, with no value of `r` | current supply is separate from derivation by the formation append | yes |
+| `tier_a_admissions.json` historical AC entry | historical `reading_occupancy_selection` atom | formation occurrence does not select the count-once/count-twice dictionary | yes |
+| `derivation_obligations.json` AC occupancy row | exact open matter-action occupancy-grain target | current open target is separate from derivation by the formation append | yes |
 
 The value face, R-eta, and species-bridge lanes remain distinct from this
 formation-rule/dictionary residual.
@@ -196,22 +190,18 @@ formation append and Record-additivity surfaces. This is not a terminal no-go
 against future occupancy-dictionary or matter-action theorems.
 
 **N6 partial closure.** The block removes one overread of the axiom update:
-occurrence strength does not become dictionary selection. Owner governance has
-since retired the Tier-A slot by explicit supply, which is a valid partial
-closure path but not a derivation from the append.
+occurrence strength does not become dictionary selection. The exact occupancy
+obligation remains an unclosed partial-closure target.
 
-**N7 steelman.** The strongest challenge is that the owner-governed premise now
-supplies the occupancy residual, so a broad claim that AC_phi_lambda remains a
-live admission would be false. The revised claim does not make that statement:
-formed records remain necessary for occupancy readout, and current governance
-supplies the premise, while neither fact turns occurrence into the physical
-doublet grain.
+**N7 steelman.** The strongest challenge is that a future approved primitive
+could supply the occupancy grain. None exists today. Formed records remain
+necessary for occupancy readout, but that fact does not turn occurrence into
+the physical doublet grain.
 
-**N8 cross-cycle echo.** Theta was retired by retained derivation and
-AC_phi_lambda by owner governance. Those mechanisms show exactly why the
-current claim must stay narrow: a cleaned-up axiom or context is not the
-downstream physical readout/action bridge, while a later derivation or explicit
-governance action can retire the admission by a separate route.
+**N8 cross-cycle echo.** Theta's independent retained-derivation disposition
+shows why the current claim must stay narrow: a cleaned-up axiom or context is
+not the downstream physical readout/action bridge. The AC obligation closes
+only through a retained derivation or a separately approved primitive.
 
 ## Verification
 

@@ -20,7 +20,6 @@ from typing import Any
 RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go"}
 PRIOR_AUTHORITY_PREMISE_TYPES = {
     "axiom_or_approved_primitive",
-    "owner_governed_residual",
 }
 ROUTE_CLASSES = {
     "algebraic_rearrangement",
@@ -181,11 +180,20 @@ OUTPUT_BOUNDARY_FIELDS = (
 )
 
 AXIOM_REGISTRY = "docs/audit/data/axiom_premise_nodes.json"
-OWNER_REGISTRY = "docs/audit/data/owner_governed_premise_nodes.json"
+OBLIGATION_REGISTRY = "docs/audit/data/derivation_obligations.json"
 TIER_A_REGISTRY = "docs/audit/data/tier_a_admissions.json"
 CONTROLLED_VOCABULARY = "docs/repo/controlled_vocabulary.yaml"
 ACTIVE_REVIEW_QUEUE = "docs/repo/ACTIVE_REVIEW_QUEUE.md"
 PREMISE_CLASSES_CHECKED = {
+    "axiom_or_approved_primitive",
+    "open_derivation_obligation",
+    "convention_not_accepted",
+    "definition_or_scope_reframe",
+}
+# Validation-only compatibility for packets signed before the 2026-07-11
+# authority reset. New packets are always built with PREMISE_CLASSES_CHECKED;
+# accepting this exact historical shape does not restore any premise authority.
+LEGACY_PREMISE_CLASSES_CHECKED = {
     "axiom_or_approved_primitive",
     "owner_governed_residual",
     "tier_a_derivation_target",
@@ -228,14 +236,6 @@ def premise_type_for_id(repo_root: Path, claim_id: str) -> str | None:
     axioms = _load_json(repo_root, AXIOM_REGISTRY)
     if claim_id in set(axioms.get("canonical_ids") or []):
         return "axiom_or_approved_primitive"
-    owners = _load_json(repo_root, OWNER_REGISTRY)
-    if claim_id in set(owners.get("canonical_ids") or []):
-        return "owner_governed_residual"
-    tier_a = _load_json(repo_root, TIER_A_REGISTRY)
-    if claim_id in set((tier_a.get("derivation_targets") or {}).keys()):
-        return "tier_a_derivation_target"
-    if claim_id in set((tier_a.get("conventions") or {}).keys()):
-        return "tier_a_convention_not_accepted"
     return None
 
 
@@ -370,13 +370,13 @@ def build_cross_cycle_index(
                 "record": record,
             }
         )
-    owners = _load_json(root, OWNER_REGISTRY)
-    for owner_id, record in sorted((owners.get("nodes") or {}).items()):
+    obligations = _load_json(root, OBLIGATION_REGISTRY)
+    for obligation_id, record in sorted((obligations.get("nodes") or {}).items()):
         candidates.append(
             {
-                "candidate_id": f"owner_governed_retirement:{owner_id}",
-                "kind": "owner_governed_retirement",
-                "source_claim_id": owner_id,
+                "candidate_id": f"open_derivation_obligation:{obligation_id}",
+                "kind": "open_derivation_obligation",
+                "source_claim_id": obligation_id,
                 "record": record,
             }
         )
@@ -439,8 +439,8 @@ def build_cross_cycle_index(
             "search_scope": {
                 "current_row_audit_history": True,
                 "one_hop_authority_audit_history": True,
-                "tier_a_retirements": True,
-                "owner_governed_retirements": True,
+                "historical_dispositions": True,
+                "open_derivation_obligations": True,
                 "similar_no_go_rows": {
                     "source": "audit ledger rows with claim_type=no_go",
                     "minimum_shared_terms": 2,
@@ -504,31 +504,22 @@ def build_partial_closure_index(
             content=(axioms.get("nodes") or {}).get(premise_id, {}),
             accepted_premise_type="axiom_or_approved_primitive",
         )
-    owners = _load_json(root, OWNER_REGISTRY)
-    for premise_id in sorted(owners.get("canonical_ids") or []):
+    obligations = _load_json(root, OBLIGATION_REGISTRY)
+    for obligation_id in sorted(obligations.get("canonical_ids") or []):
         add_candidate(
-            candidate_id=f"owner_governed:{premise_id}",
-            kind="owner_governed",
-            source_path=OWNER_REGISTRY,
-            content=(owners.get("nodes") or {}).get(premise_id, {}),
-            accepted_premise_type="owner_governed_residual",
+            candidate_id=f"derivation_obligation:{obligation_id}",
+            kind="derivation_obligation",
+            source_path=OBLIGATION_REGISTRY,
+            content=(obligations.get("nodes") or {}).get(obligation_id, {}),
         )
     tier_a = _load_json(root, TIER_A_REGISTRY)
-    for premise_id, record in sorted((tier_a.get("derivation_targets") or {}).items()):
-        add_candidate(
-            candidate_id=f"tier_a:{premise_id}",
-            kind="tier_a",
-            source_path=TIER_A_REGISTRY,
-            content=record,
-            accepted_premise_type="tier_a_derivation_target",
-        )
     for premise_id, record in sorted((tier_a.get("conventions") or {}).items()):
         add_candidate(
             candidate_id=f"convention_reframe:{premise_id}",
             kind="convention_reframe",
             source_path=TIER_A_REGISTRY,
             content=record,
-            accepted_premise_type="tier_a_convention_not_accepted",
+            accepted_premise_type="convention_not_accepted",
         )
 
     keyword_re = re.compile(
@@ -634,7 +625,9 @@ def build_partial_closure_index(
             "schema": "no_go_partial_closure_index_v1",
             "claim_id": cid,
             "search_scope": {
-                "premise_registries": [AXIOM_REGISTRY, OWNER_REGISTRY, TIER_A_REGISTRY],
+                "foundation_registry": AXIOM_REGISTRY,
+                "open_obligation_registry": OBLIGATION_REGISTRY,
+                "historical_registry": TIER_A_REGISTRY,
                 "controlled_vocabulary": {
                     "path": CONTROLLED_VOCABULARY,
                     "content_sha256": hashlib.sha256(vocabulary_text.encode("utf-8")).hexdigest(),
@@ -711,7 +704,6 @@ def build_evidence_manifest(
 
     for registry_path, premise_type in (
         (AXIOM_REGISTRY, "axiom_or_approved_primitive"),
-        (OWNER_REGISTRY, "owner_governed_residual"),
     ):
         registry = _load_json(root, registry_path)
         _add_evidence(
@@ -734,10 +726,15 @@ def build_evidence_manifest(
 
     _add_evidence(
         manifest,
+        path=OBLIGATION_REGISTRY,
+        role="open_obligation_registry",
+        text=_read_text(root, OBLIGATION_REGISTRY),
+    )
+    _add_evidence(
+        manifest,
         path=TIER_A_REGISTRY,
-        role="premise_registry",
+        role="historical_registry",
         text=_read_text(root, TIER_A_REGISTRY),
-        premise_type="tier_a_registry_mixed_entries",
     )
     _add_evidence(
         manifest,
@@ -1282,7 +1279,8 @@ def _validate_n6(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     if not _text(section.get("scan_scope")):
         return "N6.scan_scope must name the primitive/reframe surfaces checked"
     checked = section.get("premise_classes_checked")
-    if not _list(checked) or set(checked) != PREMISE_CLASSES_CHECKED:
+    checked_set = set(checked) if _list(checked) else set()
+    if checked_set not in (PREMISE_CLASSES_CHECKED, LEGACY_PREMISE_CLASSES_CHECKED):
         return f"N6.premise_classes_checked must equal {sorted(PREMISE_CLASSES_CHECKED)}"
     candidates = section.get("candidates")
     if not _list(candidates):
@@ -1290,7 +1288,9 @@ def _validate_n6(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     error = _none_found_error(section, candidates, "N6")
     if error:
         return error
-    allowed_kinds = {"approved_primitive", "owner_governed", "tier_a", "convention_reframe", "definition_refactor"}
+    allowed_kinds = {"approved_primitive", "derivation_obligation", "convention_reframe", "definition_refactor"}
+    if checked_set == LEGACY_PREMISE_CLASSES_CHECKED:
+        allowed_kinds.add("owner_governed")
     seen_candidate_ids: set[str] = set()
     for index, candidate in enumerate(candidates, 1):
         if not isinstance(candidate, dict) or candidate.get("kind") not in allowed_kinds:
@@ -1322,9 +1322,7 @@ def _validate_n6(packet: dict, status: str, manifest: dict[str, dict] | None) ->
                 continue
             expected_type = {
                 "approved_primitive": "axiom_or_approved_primitive",
-                "owner_governed": "owner_governed_residual",
-                "tier_a": "tier_a_derivation_target",
-                "convention_reframe": "tier_a_convention_not_accepted",
+                "convention_reframe": "convention_not_accepted",
             }.get(candidate["kind"])
             if expected_type and entry.get("accepted_premise_type") != expected_type:
                 return (

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py
-runner_sha256: 5428a6d9e3390f94cb4f422fc4289d37966c8d08fe79efeafb2f74cb2cbbfd42
+runner_sha256: 10171a995f4058b79747c51159b06182314a8d90647e39937ffd7f72e2a5b07d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.33
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 === AC_phi_lambda defect identity-unit rescale obstruction ===
@@ -109,7 +109,7 @@ PART H -- note discipline
 [PASS] note consolidates onto R-eta sub-admission (ii)
 [PASS] note quotes the radian-bridge primitive residual
 [PASS] note names the angle-native live route
-[PASS] note keeps the owner-governance route explicit
+[PASS] note keeps the approved-primitive route explicit
 [PASS] note graph-links authority (MINIMAL_AXIOMS_2026-06-29.md)
 [PASS] note graph-links authority (KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
 [PASS] note graph-links authority (SCALE_REFERENCE_PRIMITIVE_NOTE.md)

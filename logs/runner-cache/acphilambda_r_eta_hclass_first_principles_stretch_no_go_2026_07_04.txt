@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py
+runner_sha256: 2fc56248270f79536979075f8f00fe2998a270c8f1aff6b9c386120e6ca1f639
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
 AC_phi_lambda R-eta h-class first-principles stretch no-go verifier
 
 ========================================================================================
@@ -10,11 +18,11 @@ A. source presence and Tier-A boundary
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 [PASS] exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
-[PASS] Tier-A has a live genuine admitted input
+[PASS] Tier-A has no live admitted inputs
 [PASS] AC minimum decomposition keeps R-eta
 [PASS] AC minimum decomposition keeps occupancy separate
 [PASS] AC statement names R-eta
-[PASS] human registry names R-eta
+[PASS] human registry points to the R-eta derivation obligation
 [PASS] note declares Type no_go
 [PASS] note declares Claim type no_go
 [PASS] note declares independent audit boundary
@@ -140,3 +148,6 @@ F. route accounting and audit row
 [PASS] new row dependency includes koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05
 
 TOTAL: PASS=115 FAIL=0 CHECKS=115
+
+----- stderr -----
+

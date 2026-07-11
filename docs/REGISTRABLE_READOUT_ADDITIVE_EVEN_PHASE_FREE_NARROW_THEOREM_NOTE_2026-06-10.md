@@ -375,7 +375,7 @@ homomorphism class.
 ### N8 — Cross-cycle echo
 
 The Record reclassification (Record moved from Tier-A to an approved axiom node)
-retired a wall by an owner governance decision plus the minimality policy, not by
+historically attempted to retire a wall by governance, not by
 a new axiom. That is the template the AC_phi_lambda convention-class move would
 follow — but only **after** this theory chain lands and the audit lane acts. This
 note records conditional algebra for that path without enacting it. No structurally

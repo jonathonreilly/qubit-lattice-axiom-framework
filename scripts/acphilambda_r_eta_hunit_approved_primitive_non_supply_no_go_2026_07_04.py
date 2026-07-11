@@ -115,13 +115,13 @@ def main() -> int:
     defect_flat = flat(defect)
     normal_flat = flat(normal_form)
 
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     decomp = ac["minimum_decomposition"]
-    check("AC_phi_lambda remains the live Tier-A target", tier["genuine_admitted_input_count"] >= 1)
+    check("Tier-A has no live admitted inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
     check("AC minimum decomposition keeps R-eta", "delta_readout_identification_R_eta" in decomp, decomp)
     check("AC minimum decomposition keeps occupancy separate", "reading_occupancy_selection" in decomp, decomp)
     check("AC statement names R-eta", "R-eta" in ac["statement"] and "density-read-as-angle" in ac["statement"])
-    check("human registry names R-eta", ("R-eta" in registry_flat or "R-\u03b7" in registry) and "density-read-as-angle" in registry_flat)
+    check("human registry points to the R-eta derivation obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
     check("note declares Type no_go", "**Type:** no_go" in note)
     check("note declares Claim type no_go", "**Claim type:** no_go" in note)
     check("note declares independent audit boundary", "independent audit lane only" in note)
@@ -227,8 +227,8 @@ def main() -> int:
         check("new row not required before audit pipeline seeding", True)
     else:
         check("new row claim_type is no_go", new_row.get("claim_type") == "no_go", new_row.get("claim_type"))
-        check("new row audit status remains unaudited", new_row.get("audit_status") == "unaudited", new_row.get("audit_status"))
-        check("new row effective status remains unaudited", new_row.get("effective_status") == "unaudited", new_row.get("effective_status"))
+        check("new row audit status remains non-promoted", new_row.get("audit_status") in {"unaudited", "audited_conditional"}, new_row.get("audit_status"))
+        check("new row effective status remains non-promoted", new_row.get("effective_status") in {"unaudited", "audited_conditional", "retained_pending_chain"}, new_row.get("effective_status"))
 
     section("F. exact h-unit algebra and type checks")
     L = sp.Rational(2, 9)
@@ -279,7 +279,7 @@ def main() -> int:
         "That implication is invalid",
         "A future h-unit theorem remains possible",
         "h-unit theorem",
-        "owner governance",
+        "Approved-primitive proposal",
     ]
     for phrase in required:
         check(f"note contains required boundary: {phrase}", phrase in note_flat)

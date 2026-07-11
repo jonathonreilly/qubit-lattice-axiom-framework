@@ -1,15 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_local_finite_atom_availability_2026_06_17.py
-runner_sha256: b669d1447af6b84f67a2ebb5fc7b355176ae204d8b730049b29702fa50d18450
+runner_sha256: d1cd6f366f8e0888adb05e5953ce4391c94f81e0c137295336844bf00836b92e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.28
 status: ok
 ----- stdout -----
 Record local finite readout-atom availability theorem
 actual_current_surface_status: source-side candidate theorem
 audit_required_before_effective_retained: true
 proposal_allowed: false
+
+P. declared bounded (P-REC) packet: parse, construct, negative control
+[PASS] P1 packet parses with all four fields -- rule=R_varying, basis=computational-diagonal, sites='x_k = (2k,0,0) on Z^3, arbitrary finite k-count'
+[PASS] P2 constructed atoms match the theorem's displayed projectors -- anchor comparison against the Result-section display
+[PASS] P3 packet-named instance rule resolves in the rule library
+[PASS] P4 corrupted-packet negative control is detected by the anchor comparison -- swapping the ATOMS specs flips the constructed projectors, so the construction is live
 
 A. source authority and boundary text
 [PASS] A1 live Lattice axiom exposes cubic Z^3 sites
@@ -22,6 +28,8 @@ A. source authority and boundary text
 [PASS] A8 narrowed no-go withholds the formation rule/process/state/site/weight/rate
 [PASS] A9 theorem boundary explicitly does not derive production
 [PASS] A10 theorem names the declared availability premise and record eligibility
+[PASS] A11 note declares all four (P-REC) premises in named form
+[PASS] A12 note carries the dated 2026-07-10 Repair Note with the construct-from-packet statement
 
 B. one-site diagonal readout context
 [PASS] B1 P0 is idempotent
@@ -35,22 +43,22 @@ B. one-site diagonal readout context
 
 AD. declared toy admissibility instances
 [PASS] AD1 each toy NN-multiset rule is invariant under all neighbor permutations -- permutation invariance implies translation/proper-cubic-rotation covariance
-[PASS] AD2 R_all makes the declared P1 premise hold at every constructed site
+[PASS] AD2 packet-declared rule (P-REC-a) makes P1 available under empty-neighbor conditions -- declared rule: R_varying
 [PASS] AD3 R_p0only rejector detects failure of the declared P1 premise at every site -- the availability premise is selective, not vacuous
 [PASS] AD4 R_varying makes P1 availability vary with the neighbor condition
-[PASS] AD5 toy realized stack locks only possibilities available at lock time under R_all
+[PASS] AD5 declared empty-NN locking history keeps P1 available under R_varying -- declared rule: R_varying
 [NAMED] AD5 live presence-conditional layer: by the Record wording, a present record locks an admissible local possibility
 
 C. arbitrary finite disjoint supports on Z^3
-[PASS] C1 n=0: distinct line supports and one atom per support
-[PASS] C1 n=1: distinct line supports and one atom per support
-[PASS] C1 n=2: distinct line supports and one atom per support
-[PASS] C1 n=3: distinct line supports and one atom per support
-[PASS] C1 n=5: distinct line supports and one atom per support
-[PASS] C1 n=8: distinct line supports and one atom per support
-[PASS] C1 n=13: distinct line supports and one atom per support
-[PASS] C1 n=21: distinct line supports and one atom per support
-[PASS] C1 n=55: distinct line supports and one atom per support
+[PASS] C1 n=0: distinct pairwise-nonadjacent line supports and one atom per support
+[PASS] C1 n=1: distinct pairwise-nonadjacent line supports and one atom per support
+[PASS] C1 n=2: distinct pairwise-nonadjacent line supports and one atom per support
+[PASS] C1 n=3: distinct pairwise-nonadjacent line supports and one atom per support
+[PASS] C1 n=5: distinct pairwise-nonadjacent line supports and one atom per support
+[PASS] C1 n=8: distinct pairwise-nonadjacent line supports and one atom per support
+[PASS] C1 n=13: distinct pairwise-nonadjacent line supports and one atom per support
+[PASS] C1 n=21: distinct pairwise-nonadjacent line supports and one atom per support
+[PASS] C1 n=55: distinct pairwise-nonadjacent line supports and one atom per support
 [PASS] C2 symbolic bound escape uses finite B+1
 [PASS] C3 no fixed finite atom cap B=0 -- constructed n=1
 [PASS] C3 no fixed finite atom cap B=1 -- constructed n=2
@@ -76,7 +84,7 @@ E. boundary classifier
 [PASS] E8 dial selection remains open
 [PASS] E9 admissibility-instance selection remains open
 
-SCORECARD: PASS=52 FAIL=0
+SCORECARD: PASS=58 FAIL=0
 VERDICT: exact finite local readout-atom/context availability closes only under the declared admissibility instance, diagonal readout context, K/conjugation context, and unit-count normalization; selection of those inputs, production, probability, clock/rate, and dial selection remain open.
 
 ----- stderr -----

@@ -37,6 +37,9 @@ The complete current foundation surface is:
 - **Tier-A admitted derivation targets (0):** the two targets present when this
   plan was written, `AC_phi_lambda` and `theta`, have since been retired; their
   history remains in `docs/audit/data/tier_a_admissions.json`.
+- **Owner-governed residual premises (1 node; 2 atoms):** the AC governance
+  node contains AC(i) occupancy-grain and AC(ii) R-eta readout-license atoms.
+  This class is separate from the zero live Tier-A count.
 - **Scope condition (not a premise):** the past-hypothesis low-entropy
   magnitude (2026-06-16 classification).
 

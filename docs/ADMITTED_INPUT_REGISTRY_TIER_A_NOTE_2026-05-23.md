@@ -38,8 +38,8 @@ the older `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` is not promoted: it
 remains a broader conditional parent carrying readout/log-det/modulus material
 beyond Record. **Theta was retired from Tier A on 2026-07-05 by retained
 derivation. AC_φλ was retired from live Tier A by owner-governance adoption
-applied to the audited-clean / retained-bounded gate surface on current main at
-`5d8df21fe`.**
+applied to the audited-clean / retained-bounded gate surface at adoption commit
+`5d8df21fe`. Current effective status is always read from the ledger.**
 
 The machine Tier-A registry now has:
 
@@ -54,6 +54,19 @@ in [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json)
 The live chain-satisfying AC governance boundary is
 [`docs/audit/data/owner_governed_premise_nodes.json`](audit/data/owner_governed_premise_nodes.json),
 not an axiom, primitive, or audit-ratified theorem closure.
+
+The class-specific live counts are therefore:
+
+```text
+approved_primitive_nodes = 3
+tier_a_admitted_derivation_targets = 0
+owner_governed_residual_premise_nodes = 1
+owner_governed_residual_atoms = 2
+```
+
+The Tier-A count is not a count of every non-theorem premise class. In
+particular, `genuine_admitted_input_count = 0` does not report zero live
+owner-governed residual atoms.
 
 Curated to inputs that are irreducible (no-go portfolio) **and not vacuous**,
 the historical Tier-A admitted derivation targets were the rows below. The

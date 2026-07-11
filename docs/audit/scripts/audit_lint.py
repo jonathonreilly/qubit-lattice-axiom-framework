@@ -106,6 +106,27 @@ def is_chain_satisfying_status(status):
     return status == "meta" or is_retained_grade(status)
 
 
+def owner_governed_count_errors(owner_governed: dict) -> list[str]:
+    """Validate class-specific owner-governed node and atom counts."""
+    nodes = owner_governed.get("nodes") or {}
+    errors: list[str] = []
+    if owner_governed.get("owner_governed_premise_node_count") != len(nodes):
+        errors.append(
+            "owner_governed_premise_nodes.json owner_governed_premise_node_count "
+            "must equal nodes"
+        )
+    computed_atom_count = sum(
+        len(entry.get("adopted_residual_candidates") or [])
+        for entry in nodes.values()
+    )
+    if owner_governed.get("owner_governed_residual_atom_count") != computed_atom_count:
+        errors.append(
+            "owner_governed_premise_nodes.json owner_governed_residual_atom_count "
+            "must equal adopted_residual_candidates across nodes"
+        )
+    return errors
+
+
 ALLOWED_EFFECTIVE_STATUSES = {
     "retained",
     "retained_no_go",
@@ -603,6 +624,7 @@ def main() -> int:
             errors.append(
                 "owner_governed_premise_nodes.json canonical_ids must equal nodes"
             )
+        errors.extend(owner_governed_count_errors(owner_governed))
         axiom_ids = premise_nodes.axiom_premise_ids()
         tier_a_ids = premise_nodes.admitted_derivation_target_ids()
         overlap_axiom = listed_ids & axiom_ids

@@ -12,16 +12,19 @@ This note is the shortest package-level answer to:
 
 ## 1. Framework statement
 
-The accepted package statement is:
+The current package uses the four named axioms in
+[MINIMAL_AXIOMS_2026-06-29.md](../../MINIMAL_AXIOMS_2026-06-29.md): Lattice,
+Qubit, Admissibility, and Record. The equivalent `Cl(3,0)` reading is the
+local-algebra language for the Qubit axiom, not a separate premise.
 
-> We take a qubit at every site of `Z^3` as the physical axiom surface.
-
-The operational memo
-[MINIMAL_AXIOMS_2026-05-20.md](../../MINIMAL_AXIOMS_2026-05-20.md)
-records the accepted implementation boundary used to audit the current package:
-A1 is the per-site qubit local algebra, and A2 is the cubic lattice `Z^3`.
-The equivalent `Cl(3,0)` reading is the local-algebra language, not a separate
-title-level primitive.
+The registered non-axiom premise classes are three approved primitive nodes,
+zero live Tier-A admitted derivation targets, and one owner-governed residual
+premise node containing two charged-lepton atoms, AC(i) and AC(ii). These are
+class-specific counts: the zero Tier-A count does not state that the
+charged-lepton lane has zero live owner-governed atoms. The machine authorities
+are `docs/audit/data/axiom_premise_nodes.json`,
+`docs/audit/data/tier_a_admissions.json`, and
+`docs/audit/data/owner_governed_premise_nodes.json`.
 
 The optional compression notes
 

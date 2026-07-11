@@ -73,7 +73,7 @@ so the heavy-basis diagonal normalization is
 
 `K00 = 2`.
 
-Both italicised premises are explicitly admitted inputs of this
+Both italicised premises are explicitly declared conditions of this
 conditional packet; neither is derived inside this note or its runner.
 
 ## Honest conditional scope

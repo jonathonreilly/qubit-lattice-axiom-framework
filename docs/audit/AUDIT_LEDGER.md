@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 83 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 357 |
+| **retained_bounded** | 358 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2804 |
-| audit_in_progress | 21 |
+| audit_in_progress | 20 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 15 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 25 |
-| `audited_clean` | 449 |
+| `audit_in_progress` | 24 |
+| `audited_clean` | 450 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 26 |
@@ -133,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.6 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
@@ -421,6 +420,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pl_topology_infrastructure_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5240,6 +5240,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The restricted packet includes the primary runner source and completed output, and the code performs nontrivial symbolic series construction, ODE residual testing, ODE evolution, and direct Weyl quadrature rather than merely printing PASS. An independent Weyl constant-term coefficient check verified the listed Taylor coefficients, recurrence, indicial roots, and residual through degree 21, and an independent Gauss-Legendre Weyl quadrature matched the ODE Frobenius-branch values at the five sample points.
 - **rationale:** The claim is explicitly narrowed to a finite certificate, and the supplied runner output supports exactly that bounded scope. There are no cited upstream authorities or open dependency paths in the packet, and the all-order Picard-Fuchs and Frobenius-branch assertions are excluded from scope. The beta=6 decimal is hard-coded as a displayed-value tolerance check in the runner, but it is also recomputed by direct Weyl integration and independently reproduced, so the bounded result does not reduce to an external numerical match.
 - **auditor confidence:** high
+
+### `pmns_graph_axis_to_active_lane_bridge_note`
+
+- **Note:** [`PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md`](../../docs/PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional bridge identifying the residual S_3 transposition stabilizer of a selected hw=1 cube axis with its permutation action on Herm(V_1), specifically P_23 after relabeling the selected axis to e_1; active-sector assignment and PMNS values are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00064-pmns_graph_axis_to_active_la`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The residual graph-axis transposition restricts to the same permutation matrix on V_1, so residual-Z_2 invariance of H is exactly P_tau_k H P_tau_k = H, and for k=1 this is P_23 H P_23 = H.  _(class `A`)_
+- **chain closes:** True — The cited retained authorities supply the cube shifts, hw=1 carrier, and residual axis stabilizer. Direct restriction of the explicitly constructed tensor-factor permutation unitary gives P_tau_k on V_1, making the stated invariance equation an exact operator identity.
+- **rationale:** The runner constructs the cube shifts, tensor-factor permutation unitaries, hw=1 basis, restriction blocks, and invariant Hermitian operators rather than importing or printing the contested bridge. All 87 checks are finite-dimensional algebraic checks, and the cited authorities are retained-grade. The statement that the natural three-dimensional permutation carrier is irreducible is inaccurate—it decomposes as trivial plus standard—but that incidental wording is not used by the scoped bridge proof.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `pmns_oriented_cycle_channel_value_law_note`
 

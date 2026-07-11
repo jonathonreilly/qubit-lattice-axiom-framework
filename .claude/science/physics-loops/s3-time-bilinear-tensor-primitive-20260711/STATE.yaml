@@ -29,10 +29,12 @@ open_imports: []
 no_go_routes:
   - homogeneous carrier properties do not select lambda=1 within O_lambda=lambda K_R
 review_disposition: pass
-pr_status: pending
+pr_status: open_draft
+pr_number: 5192
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5192
 next_exact_action: >-
-  Push the reviewed branch and open one draft PR; verify the PR is clean
-  against main and record its URL in HANDOFF.md.
+  Review PR #5192 without merging; after any source landing, run the
+  independent audit lane on the no_go row.
 stop_condition: >-
   Stop after one independently reviewed science-block PR is opened and
   verified, or record a complete PR backlog if publication tooling fails.

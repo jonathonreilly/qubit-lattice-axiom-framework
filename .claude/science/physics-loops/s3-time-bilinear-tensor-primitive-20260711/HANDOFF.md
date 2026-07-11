@@ -7,6 +7,14 @@ derives the exact seven-star isotypic/commutant core and proves a narrow
 algebraic no-go: inside `O_lambda=lambda K_R`, the homogeneous carrier
 properties do not select `lambda=1`.
 
+## Review PR
+
+- Draft PR: [#5192](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5192)
+- Remote branch: `physics-loop/s3-time-bilinear-tensor-block01-20260711`
+- Base: `main`
+- PR is intentionally unmerged; independent audit remains downstream of any
+  reviewed source landing.
+
 ## Artifacts
 
 - source note: `docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`
@@ -41,5 +49,5 @@ or audit authority file is changed in this block.
 
 ## Exact next action
 
-Commit the review-clean block, rebase onto current `origin/main`, validate and
-strip the audit pipeline, then publish one draft review PR.  Do not merge.
+Review PR #5192 without merging.  If its source content later lands, run the
+independent audit lane on `s3_time_bilinear_tensor_primitive_note`.

@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2786 |
-| audit_in_progress | 28 |
+| unaudited | 2785 |
+| audit_in_progress | 29 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
@@ -44,14 +44,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 32 |
+| `audit_in_progress` | 33 |
 | `audited_clean` | 453 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3136 |
+| `unaudited` | 3135 |
 
 | claim_type | count |
 |---|---:|
@@ -131,6 +131,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |

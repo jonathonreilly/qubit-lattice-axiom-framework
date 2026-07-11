@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_r_base_group_theory_derivation.py
-runner_sha256: d48763cad77aa606898849acc46e13cd52bc69282bc9e24d3cb1407c9eea3fc5
+runner_sha256: 9ec25cf7877d25097f46689f8439d6d1048623b860f1b2fd6ae4aff11ce3b8b2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 R_base = 31/9 group-theory identity verification
@@ -31,8 +31,19 @@ Exact arithmetic; no cosmology observation is used in the identity.
 [PASS] Sommerfeld factor is not included in this exact identity (full R is bounded elsewhere)
 [PASS] 3/5 remains an admitted normalization input here (not derived by this runner)
 [PASS] no observed cosmology value enters the exact arithmetic (Fraction arithmetic only)
+[PASS] declared-premise arithmetic: Tr(Y^2) = 10/3 (10/3)
+[PASS] declared-premise arithmetic: Tr(T_3^2) = 2 (2)
+[PASS] declared-premise arithmetic: 2/(10/3) = 3/5 (3/5)
+[PASS] declared-premise composition: (3/5)*(155/27) = 31/9 (31/9)
+[PASS] r_base note contains the bridge filename
+[PASS] r_base note names declared bounded premise packet
+[PASS] r_base note removes stale hypercharge-lane admission text
+[PASS] bounded-premise bridge note exists (/private/tmp/review-loop-governance-fixes-20260711-5128/docs/HYPERCHARGE_GUT_NORMALIZATION_THREE_FIFTHS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-07-10.md)
+[PASS] bounded-premise bridge contains (D1)
+[PASS] bounded-premise bridge contains (D2)
+[PASS] D1/D2 are supplied admissions
 
-TOTAL: PASS=22 FAIL=0
+TOTAL: PASS=33 FAIL=0
 
 ----- stderr -----
 

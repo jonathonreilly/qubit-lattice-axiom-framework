@@ -651,13 +651,13 @@
     "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04": {
       "assert_count": 1,
       "counts": {
-        "A": 5,
-        "B": 9,
-        "C": 1,
+        "A": 17,
+        "B": 2,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "B",
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "runner": "scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py"
     },
     "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01": {
@@ -43264,13 +43264,13 @@
         "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04"
       ],
       "counts": {
-        "A": 5,
-        "B": 9,
-        "C": 1,
+        "A": 17,
+        "B": 2,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "B",
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py": {
@@ -93502,16 +93502,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 717,
+    "decoration_candidates": 718,
     "dominant_class_distribution": {
-      "A": 513,
-      "B": 664,
+      "A": 514,
+      "B": 663,
       "C": 1317,
       "D": 455,
       "none": 458
     },
     "runners_classified": 3407,
-    "runners_with_C": 1798,
+    "runners_with_C": 1797,
     "runners_with_D": 1096
   }
 }

@@ -730,23 +730,7 @@
     },
     {
       "from": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
-      "to": "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12"
-    },
-    {
-      "from": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
-      "to": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11"
-    },
-    {
-      "from": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
-      "to": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
-    },
-    {
-      "from": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
-      "to": "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04"
-    },
-    {
-      "from": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
-      "to": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04"
+      "to": "realized_state_primitive"
     },
     {
       "from": "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01",
@@ -59202,17 +59186,13 @@
       "claim_type_seed_hint": "no_go",
       "deps": [
         "minimal_axioms",
-        "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12",
-        "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
-        "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
-        "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04",
-        "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04"
+        "realized_state_primitive"
       ],
       "helper_runner_paths": [],
-      "note_hash": "501711fe79947113d72fe35c20865fe65fcaf583c80e4954603718033db498e3",
+      "note_hash": "427b02d422103f26f39ce1d2e13d74560c620cd287ff0a57f12a14226a96b00f",
       "path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
       "runner_path": "scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py",
-      "title": "AC_phi_lambda Record Outcome-Orbit Occupancy Non-Supply No-Go"
+      "title": "The Axiom Surface Does Not Select a Complex-vs-Realified Determinant Power"
     },
     "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01": {
       "claim_id": "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01",
@@ -112089,7 +112069,7 @@
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b7e249a300d388954f8c041bd8f1a82f9b6b52b5346b5d9e35f64812fd6a2c94",
+      "note_hash": "a9553bc20ab29a462315ad6ea3d3d3dea025c94752c2c5adacf6f7d8d7e7e46a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -129111,8 +129091,8 @@
       "open_gate": 206,
       "positive_theorem": 660
     },
-    "edge_count": 14549,
-    "leaf_count": 1326,
+    "edge_count": 14545,
+    "leaf_count": 1329,
     "node_count": 3920,
     "root_count": 1114,
     "runners_with_path": 3541

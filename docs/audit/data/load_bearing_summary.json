@@ -2,8 +2,8 @@
   "criticality_counts": {
     "critical": 759,
     "high": 401,
-    "leaf": 1766,
-    "medium": 994
+    "leaf": 1767,
+    "medium": 993
   },
   "flagship_signal_used": false,
   "node_count": 3920,
@@ -31,8 +31,8 @@
     {
       "claim_id": "three_generation_observable_theorem_note",
       "criticality": "critical",
-      "load_bearing_score": 62.711,
-      "transitive_descendants": 1184
+      "load_bearing_score": 62.709,
+      "transitive_descendants": 1183
     },
     {
       "claim_id": "quark_route2_exact_readout_map_note_2026-04-19",
@@ -109,8 +109,8 @@
     {
       "claim_id": "kinetic_isotropy_primitive",
       "criticality": "critical",
-      "load_bearing_score": 36.425,
-      "transitive_descendants": 485
+      "load_bearing_score": 36.422,
+      "transitive_descendants": 484
     },
     {
       "claim_id": "s3_time_theta_to_slice_coupling_note",
@@ -145,8 +145,8 @@
     {
       "claim_id": "cpt_exact_note",
       "criticality": "critical",
-      "load_bearing_score": 31.508,
-      "transitive_descendants": 727
+      "load_bearing_score": 31.506,
+      "transitive_descendants": 726
     },
     {
       "claim_id": "charged_lepton_koide_cone_algebraic_equivalence_note",

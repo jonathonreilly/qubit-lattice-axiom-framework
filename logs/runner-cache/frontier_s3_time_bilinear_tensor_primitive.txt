@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_time_bilinear_tensor_primitive.py
+runner_sha256: 45c5f70d3c82ae72e3e50e4a966ecfdfe7ee33cd71819a53cdbf6e000ffe7f9c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.15
+status: ok
+----- stdout -----
 Seven-star bilinear carrier: exact support and homogeneous-normalization no-go
 ==============================================================================
 [EXACT] PASS: the signed-permutation construction gives the proper cubic group
@@ -28,3 +36,6 @@ SUMMARY
 ==============================================================================
 PASS=11 FAIL=0 TOTAL=11
 FINAL_TAG: S3_TIME_BILINEAR_CARRIER_HOMOGENEOUS_NORMALIZATION_NO_GO_EXACT
+
+----- stderr -----
+

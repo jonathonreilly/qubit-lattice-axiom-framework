@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/rp_multislice_halfspace_os_gram_certificate.py
+runner_sha256: bea52b0027ecaef0eb2119cb888cab4f1f77fc9ec11e60af7434c771841fab18
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.63
+status: ok
+----- stdout -----
+RP coupled SU(3)+staggered multi-slice half-space OS Gram — class-A certificate
+geometry {-1,0,1,2}, L_s=2, N_c=3; reflection theta(t)=1-t, theta(U_{cc'})=conj(U_{cc'}) at 1-t
+
+[PASS] G0_engine_anchor_exact: max entrywise mismatch from exact 4x4 anchor = 2.220e-16
+[PASS] G0_engine_unphased_discriminates: unphased odd diagonals = -0.500,-0.500; min-eig = -0.500
+[PASS] L4a_open_even_det_positive: open-even {-1,0,1,2}: min Re(det)=1.8444e-05>0, max |det-prod(m^2+lam^2)|_rel=1.36e-15, max pairing err=1.55e-15, max ||{eps,M}||_F=0.00e+00
+[PASS] L4b_open_odd_det_positive: open-odd {0,1,2}: min Re(det)=4.9951e-04>0, max |det-prod(m^2+lam^2)|_rel=2.04e-15, max pairing err=1.33e-15, max ||{eps,M}||_F=0.00e+00
+[PASS] L4c_periodic_control_breaks: periodic-odd: ||{eps,M}||_F=3.464e+00>1e-6 (breaks), det leaves R_>0 = True
+[PASS] L2a_multislice_side_covariance: max |I_-[theta(A)] - conj(I_+[A])| over 4 multi-slice/gauge-dressed A (conj rule) = 1.694e-16
+[PASS] L2b_noconj_gauge_discriminates: no-conj gauge reflection residual = 6.253e-02 vs signal scale 3.229e-01 (conj-rule residual 1.7e-16)
+[PASS] L3a_exact_per_config_hermitian: max ||G-G^dagger||_F over 3 reflected backgrounds = 3.943e-13 (no Hermitization applied)
+[PASS] L3b_exact_per_config_psd: min lambda_min(G) over 3 backgrounds = 8.370126e-01
+[PASS] L3c_crossing_flip_discriminates: worst (largest) crossing-flip lambda_min = -1.8544e+02 << 0
+[PASS] L3d_unphased_discriminates: worst (largest) unphased lambda_min = -1.8544e+02 << 0
+[PASS] H1a_union_gram_psd: 19-dim union min-eig = 3.514747e-01; ||G-G^dagger||_F = 1.061e-14
+[PASS] H1b_collapse_matches_anchor: one-site/one-color H=1 Gram vs exact anchor: max mismatch = 2.220e-16
+
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

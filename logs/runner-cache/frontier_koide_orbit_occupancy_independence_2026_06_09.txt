@@ -1,20 +1,13 @@
-===== runner cache v1 =====
-runner: scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py
-runner_sha256: 965eff0dda05695ee3f66943e624a28c540661bdf654febee2cadb3bfea7cf18
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.51
-status: ok
------ stdout -----
 ========================================================================================
-KOIDE OCCUPANCY ATOM: INDEPENDENCE + THE ORBIT-OCCUPANCY PREMISE CANDIDATE
+KOIDE OCCUPANCY ATOM: INDEPENDENCE + THE PER-CELL EQUIPARTITION-GRANULARITY PREMISE CANDIDATE
+(repaired 2026-07-11 for audit 2026-07-10)
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
 O1: ground-truth cross-checks (the #3138 guard)
 ----------------------------------------------------------------------------------------
   [PASS] orbit partition under canonical K: {e0}, {e1,e2} (K(e1)=e2)
-  [PASS] Q-lever re-verified (100 draws)
+  [PASS] Q-lever re-verified: Q = (1 + 2 |b|^2/a^2)/3 (100 draws)
 
 ----------------------------------------------------------------------------------------
 O2: live axiom-surface boundary checks (mechanical source checks)
@@ -22,59 +15,69 @@ O2: live axiom-surface boundary checks (mechanical source checks)
   [PASS] LIVE(06-29 memo): Qualification clauses present verbatim (named primitive content only; non-fixed choices require admission; laws privilege no states and give one answer on their supplied domain)  --  grep on MINIMAL_AXIOMS_2026-06-29.md
   [PASS] LIVE(realized_state_primitive): state-side non-supply present ('The laws do not pick the state'; 'no averaging over alternatives')  --  grep on REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
   [PASS] HISTORICAL(06-05 memo): superseded Record wording supplies 'no ... weighting, normalization, probability ... or occupancy rule'  --  historical corroboration only
-  [PASS] the doublet measure-weight class IS a weighting/occupancy rule => the current axiom surface plus realized-state primitive does NOT supply it  --  classification of the atom under the live non-supply boundary
+  [PASS] the granularity of the realized-state equipartition law (the r/Q-class selector) is a state-privileging law / a choice not fixed by the supplied structure => the current axiom surface plus realized-state primitive does NOT supply it  --  classification of the atom under the live non-supply boundary; 06-05 clause corroborates historically
 
 ----------------------------------------------------------------------------------------
-O3: independence by exhibition -- two consistent models, different occupancy
+O3: independence by exhibition -- two consistent witnesses, one differing law granularity
 ----------------------------------------------------------------------------------------
-  [PASS] exact weights: M_sector doublet Z_d = 2*pi/g; M_orbit doublet Z_d = pi/g; singlet weight common to both  --  Z_sector=2*pi/g, Z_orbit=pi/g
-  [PASS] the two models differ EXACTLY by the occupancy factor 2 = the fiber count of the 2:1 sector->orbit map (counted twice per outcome vs once)
-  [PASS] Z_3-equivariance: both weights depend on (a, |b|) only -- invariant under the Z_3 rotation b -> w b (checked: |w b| = |b|)
-  [PASS] K-invariance / orbit-definedness: both weights invariant under b -> conj(b); outcomes-as-K/CPT-orbits is supplied-context via bridge T1
-  [PASS] positivity + normalizability: both weights positive with finite Z (computed above)
-  [PASS] finite additivity: each model induces a finitely-additive readout on the 2-orbit outcome algebra (I(orbit union) = sum, exhibited on the partition)
-  [PASS] => independence: both occupancy rules are consistent with the checked constraint set, and the live boundary checks (O2) decline to choose -- the occupancy rule is not supplied by the current checked premise surface  --  exhibition + live boundary; no no-go claim beyond this
-  [PASS] refuted-route history mechanized: every refuted derivation route smuggled an occupancy rule (the CW/fluctuation-modulus route is a sector-side occupancy choice -- supplied, never retained; refs #2624/#2688)
+  [PASS] Z_3-equivariance: both witnesses' weights AND laws (in invariant form) depend on (a, |b|) only -- invariant under the Z_3 rotation b -> w b (checked: |w b| = |b|)
+  [PASS] K-invariance / orbit-definedness: both weights and laws invariant under b -> conj(b); outcomes-as-K/CPT-orbits is supplied-context via bridge T1
+  [PASS] positivity + normalizability: both witnesses carry a positive weight with finite Z (computed in O3A/O4)
+  [PASS] finite additivity: each witness induces a finitely-additive readout on the 2-orbit outcome algebra (I(orbit union) = sum, exhibited on the partition)
+  [PASS] refuted-route history mechanized: every refuted derivation route smuggled an equipartition-granularity/occupancy law (the CW/fluctuation-modulus route is a per-mode-side choice -- supplied, never retained; refs #2624/#2688)
 
 ----------------------------------------------------------------------------------------
-DERIVED CELLS
+O3A: MOMENT-HONESTY DIAGNOSTIC -- the Gaussian moment gives r=1, normalization-independent (reproduces the 2026-07-10 audit finding; NO hard-coded per-slot quantum)
 ----------------------------------------------------------------------------------------
-  [PASS] DERIVED CELLS: real-Gaussian two-real-slot partition integral int_R int_R exp(-g*(x^2+y^2)/2) dx dy  --  Z_d=2*pi/g
-  [PASS] DERIVED CELLS: holomorphic-Gaussian one-complex-slot partition integral int_0^oo 2*pi*rho*exp(-g*rho^2) d rho  --  Z_d=pi/g
-  [PASS] DERIVED CELLS: Majorana Berezin pair integral int dtheta_2 dtheta_1 exp((2*pi/g)*theta_1*theta_2) = Pf([[0,p],[-p,0]])  --  p=2*pi/g; Z_d=2*pi/g
-  [PASS] DERIVED CELLS: holomorphic Berezin pair integral int dpsi_bar dpsi exp((pi/g)*psi_bar*psi) = det([pi/g])  --  Z_d=pi/g
-  [PASS] DERIVED CELLS: circulant Q theorem lever E_s=3*a^2, E_d=6*|b|^2; two-real-slot equipartition integral gives the Gaussian r per M_sector  --  <x^2>=1/(12*beta); <|b|^2>=2*<x^2>=1/(6*beta); <a^2>=1/(6*beta); r=1
-  [PASS] DERIVED CELLS: circulant Q theorem lever E_s=3*a^2, E_d=6*|b|^2; holomorphic one-complex-slot r per M_orbit from per-slot equipartition quantum, slot count from the measure definition  --  per-slot quantum=1/(2*beta); slots=1; <E_d>=1/(2*beta); <|b|^2>=1/(12*beta); <a^2>=1/(6*beta); r=1/2
-  [PASS] DERIVED CELLS: rho-map identity for M_sector follows from the partition integral and equipartition r  --  rho=(pi/g)/Z_d=1/2; r=1
-  [PASS] DERIVED CELLS: rho-map identity for M_orbit follows from the partition integral and equipartition r  --  rho=(pi/g)/Z_d=1; r=1/2
-  [PASS] derived cells match the landed four-cell table (consistency cross-check)  --  {'real_gaussian': (2*pi/g, 1, 1), 'majorana_berezin': (2*pi/g, 1, 1), 'holo_gaussian': (pi/g, 1/2, 2/3), 'holo_berezin': (pi/g, 1/2, 2/3)}
+  [PASS] singlet moment derived by honest integral: <a^2> = 1/(6 beta)  --  <a^2>=1/(6*beta)
+  [PASS] AUDIT FINDING reproduced: holomorphic one-complex-slot Gaussian gives Z_d = pi/(6 beta) = pi/g and <|b|^2> = 1/(6 beta) = 1/g (with g = 6 beta); hence r = <|b|^2>/<a^2> = 1, NOT 1/2  --  Z_d(holo)=pi/(6*beta); <|b|^2>=1/(6*beta); r_moment(holo)=1
+  [PASS] realified two-real-slot Gaussian gives the SAME moment <|b|^2> = 1/(6 beta) and r = 1: the Gaussian moment is measure/normalization-independent  --  <|b|^2>(real)=1/(6*beta); r_moment(real)=1
+  [PASS] normalization-independence stated sharply: r_moment(holo) == r_moment(real) == 1 -- the doublet bookkeeping (one complex slot vs two real slots) does NOT fix r
+  [PASS] DIAGNOSTIC EXPLAINED: the Gaussian moments satisfy per-REAL-MODE equipartition in expectation, <3 a^2> = <6 x^2> = <6 y^2> = 1/(2 beta), hence <E_d> = 2 <E_s> and r_moment = 1; they do NOT satisfy the per-cell law in expectation (<E_d> != <E_s>) -- no Gaussian moment can give r = 1/2  --  <3a^2>=1/(2*beta); <6x^2>=1/(2*beta); <E_d>=1/beta = 2*<E_s>
+
+----------------------------------------------------------------------------------------
+O3B: THE TWO LAWS -- both witnesses as realized-state equipartition laws, differing only in granularity; exact solutions, quantum cancels
+----------------------------------------------------------------------------------------
+  [PASS] M_sector law (per-REAL-MODE, componentwise): 3 a^2 = 6 x^2 = 6 y^2 solved exactly: x^2 = y^2 = a^2/2, hence |b|^2 = x^2 + y^2 = a^2 and E_d = 2 E_s (the invariant content, depending on (a, |b|) only)  --  x^2=a_v**2/2; y^2=a_v**2/2; |b|^2=a_v**2
+  [PASS] M_sector law (invariant form): one quantum per real mode => E_s = eps, E_d = 2 eps (three modes a; x; y); solved exactly: |b|^2 = a^2, r = 1 -- the quantum eps cancels in r (nothing hard-coded)  --  |b|^2(law)=a_v**2; eps=3*a_v**2; r_mode=1
+  [PASS] M_orbit law (per-OUTCOME-CELL): one quantum per outcome cell => E_s = E_d (3 a^2 = 6 |b|^2); solved exactly: |b|^2 = a^2/2, r = 1/2 -- the quantum eps cancels in r (nothing hard-coded)  --  |b|^2(law)=a_v**2/2; eps=3*a_v**2; r_cell=1/2
+  [PASS] landed circulant dictionary Q = (1 + 2 r)/3 at both law endpoints: per-mode Q = 1; per-cell Q = 2/3, exactly  --  Q_mode=1; Q_cell=2/3
+  [PASS] the granularity is a DISTINCT supplied element, not a moment and not a bookkeeping: r_cell (=1/2) differs from r_mode (=1) and from the Gaussian-moment r (=1); r = 1/2 is NOT a consequence of one-slot Gaussian bookkeeping
+
+----------------------------------------------------------------------------------------
+O3C: PARITY TABLE -- both witnesses satisfy the same checked premise surface with EXACTLY ONE differing named element (the law's granularity)
+----------------------------------------------------------------------------------------
+  [PASS] shared premise elements match across both witnesses: carrier, measure family, normalization convention, outcome dictionary, K-reality restriction, equipartition-law type (realized-state law, one quantum per counting unit)  --  shared=['K_reality_restriction', 'carrier', 'equipartition_law_type', 'measure_family', 'normalization_convention', 'outcome_dictionary']
+  [PASS] EXACTLY ONE differing named element, and it is the GRANULARITY of the realized-state equipartition law (per real mode vs per outcome cell)  --  differing=['equipartition_law_granularity']; sector='per REAL MODE (a; x; y): E_s = eps, E_d = 2 eps'; orbit='per OUTCOME CELL ({e0}; {e1,e2}): E_s = eps, E_d = eps'
+  [PASS] TOGGLE 1 (normalization convention holomorphic<->realified): the Gaussian-moment r is UNCHANGED (= 1) -- confirms normalization is a shared, non-differentiating element  --  r(holo bookkeeping)=1; r(realified bookkeeping)=1
+  [PASS] TOGGLE 2 (law granularity per-mode<->per-cell): r FLIPS between 1 and 1/2 -- confirms the granularity is the sole r-differentiator  --  r(per-mode)=1; r(per-cell)=1/2
+  [PASS] witness endpoints derived (not hard-coded): sector/per-mode (r, Q) = (1, 1); orbit/per-cell (r, Q) = (1/2, 2/3)  --  sector=(1,1); orbit=(1/2,2/3)
 
 ----------------------------------------------------------------------------------------
 O4: consequence map at the LANDED bookkeeping level (no new bridge invented)
 ----------------------------------------------------------------------------------------
-  [PASS] orientation guard part 1: the candidate rho := Z_d/(2*pi/g) gives the inverted r-per-model assignment, REJECTED by the derived cell integrals  --  candidate r_pair=(1/2, 1); derived r_pair=(1, 1/2)
-  [PASS] orientation guard part 2: under r = 1/(2 rho), the derived r-per-model values require rho = (pi/g)/Z_d  --  required rho_pair=(1/2, 1); partition rho_pair=(1/2, 1)
-  [PASS] landed orientation pinned by derived cells: rho = (pi/g)/Z_d reproduces the derived r and Q values per model  --  r_pair=(1, 1/2); Q_pair=(1, 2/3)
-  [PASS] CONVENTION-FREE core fact: r_sector / r_orbit = Z_d_sector / Z_d_orbit = 2 exactly -- the cell ratio is the occupancy factor, independent of any normalization convention
+  [PASS] landed partition-normalization cells (true integrals): realified two-real-slot Z_d = 2 pi/g (Gaussian and Majorana-Berezin); holomorphic one-complex-slot Z_d = pi/g (Gaussian and Berezin)  --  Z_real=2*pi/g, Z_majorana=2*pi/g, Z_holo_gauss=pi/g, Z_holo_berezin=pi/g
+  [PASS] the partition normalizations differ by the fiber-count factor 2 (2 pi/g vs pi/g) -- a NORMALIZATION/det-power fact only
+  [PASS] AUDIT FINDING corollary: the factor-2 normalization does NOT enter r -- the retracted rho-map r = 1/(2 rho) with rho = (pi/g)/Z_d is withdrawn; r is fixed by the law's granularity (per-mode 1, per-cell 1/2), never by Z_d  --  Z_d cancels in the moment ratio; see O3A/O3B
+  [PASS] honest consequence map: M_sector (per-real-mode equipartition) -> r = 1 -> Q = 1; M_orbit (per-outcome-cell equipartition) -> r = 1/2 -> Q = 2/3
+  [PASS] labeled comparison (never an input): r_mode / r_cell = 2 = the doublet's modes-per-cell count (two real modes in one outcome cell) = the landed count-twice/count-once binary in law form; the partition normalizations also differ by 2, but Z_d does not set r (the granularity does)
 
 ----------------------------------------------------------------------------------------
-O5: the premise candidate -- ORBIT-OCCUPANCY (proposal content; NOT adopted)
+O5: the premise candidate -- PER-CELL EQUIPARTITION GRANULARITY (proposal content; NOT adopted)
 ----------------------------------------------------------------------------------------
-  [PASS] granularity matching: among the two exhibited slot choices, the orbit-occupancy model is the unique choice whose statistical slot-groups biject with record-outcomes (2 = 2); the sector model mismatches (3 slots vs 2 outcomes)  --  outcomes=2; orbit-model slots=2; sector-model slots=3
-  [PASS] category parallel to the approved kinetic_isotropy_primitive: 'the tick is grained like the edge' :: 'the statistics is grained like the outcomes' -- dimensionless, structural, binary, no fitted number (proposal category only)
-  [PASS] COMPARATOR (labeled, never an input): PDG Q = 0.666661 sits on the orbit-occupancy cell (2/3) to 6e-6; the sector-occupancy cell (Q=1) is excluded empirically by ~50%  --  Q_PDG=0.666661
+  [PASS] granularity matching: the per-cell law grains one equal energy quantum per record-OUTCOME cell (2 outcome cells <-> 2 equal channel energies E_s = E_d); per-mode graining instead grains at 3 real modes and mismatches the 2 outcomes  --  outcome cells=2; equal channel energies=2; real modes=3
+  [PASS] category parallel to the approved kinetic_isotropy_primitive: 'the tick is grained like the edge' :: 'the equipartition law is grained like the outcomes' -- dimensionless, structural, binary, no fitted number (proposal category only)
+  [PASS] COMPARATOR (labeled, never an input): PDG Q = 0.666661 sits on the per-cell-granularity cell (2/3) to 6e-6; the per-mode cell (Q=1) is excluded empirically by ~50%  --  Q_PDG=0.666661
 
 ----------------------------------------------------------------------------------------
 O6: scope
 ----------------------------------------------------------------------------------------
-  [PASS] NOT a derivation of r=1/2; NOT adoption of the premise (owner-decision, the xi=1 playbook: independence => honest resolution is an explicit structural premise, never a smuggled one)
-  [PASS] no new microscopic moment-bridge invented: cell assignments are derived from the explicit per-cell integrals and rho-map identity, with the landed table kept only as a consistency cross-check; only the cell RATIO (=2) is claimed convention-free
+  [PASS] NOT a derivation of r=1/2 from the axiom surface; NOT adoption of the premise (owner-decision, the xi=1 playbook: independence => honest resolution is an explicit structural law, never a smuggled one)
+  [PASS] r = 1/2 is the consequence of the SUPPLIED per-outcome-cell equipartition granularity (E_s = E_d, an exact constraint on the realized configuration) -- NOT a Gaussian moment of one-slot bookkeeping (the retracted 2026-07-10 claim)
+  [PASS] no new microscopic moment-bridge invented: the partition normalizations are true integrals kept only as normalization/det-power facts and are decoupled from r
   [PASS] the phase delta remains a separate admission (radian-period note); this atom concerns r only
-  [PASS] consequence IF the owner approves orbit-occupancy: r=1/2 and Q=2/3 follow from the landed lever -- the Koide ratio becomes a consequence of counting outcomes rather than sectors; stated as the proposal's payoff, not as a result
+  [PASS] consequence IF the owner approves the per-cell equipartition granularity: r=1/2 and Q=2/3 follow from the landed dictionary -- the Koide ratio becomes a consequence of equipartitioning energy per outcome cell rather than per real mode; stated as the proposal's payoff, not as a result
 
 ========================================================================================
-SUMMARY: PASS=34 FAIL=0
+SUMMARY: PASS=39 FAIL=0
 ========================================================================================
-
------ stderr -----
-

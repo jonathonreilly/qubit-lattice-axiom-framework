@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Meta cross-note comparison over two frozen seed-0 source packets.
+"""Bounded cross-note proposition over two frozen seed-0 source packets.
 
 This runner verifies the exact identity and SHA-256 of the two frozen source
 logs and their parent runners, parses only those packets, and reports the
-two-row sign/order comparison. It deliberately has no expected direct-dM
-magnitudes or expected R_hist values and makes no theorem-grade claim.
+two-row sign/order implication. It deliberately has no expected direct-dM
+magnitudes or expected R_hist values. Its theorem grade is bounded to the
+exact SHA-pinned packets, coordinates, and finite inequalities checked here.
 """
 
 from __future__ import annotations
@@ -21,6 +22,7 @@ from statistics import mean
 AUDIT_TIMEOUT_SEC = 60
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER_PATH = ROOT / "docs/audit/data/audit_ledger.json"
+NOTE_PATH = ROOT / "docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md"
 SELECTED_STRENGTH = 0.004
 EXPECTED_STRENGTHS = {0.0, 0.002, 0.004, 0.008}
 RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go"}
@@ -88,6 +90,29 @@ def ledger_rows() -> dict[str, dict[str, object]]:
     rows = data["rows"]
     require(isinstance(rows, dict), "audit ledger rows must be keyed by claim_id")
     return rows
+
+
+def check_claim_surface() -> None:
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    flat_note = " ".join(note.split())
+    required = (
+        "**Type:** bounded_theorem",
+        "**Claim type:** bounded_theorem",
+        "bounded finite cross-note proposition",
+        "exact SHA-pinned",
+        "Independent re-audit is required",
+        "SHA_PINNED_TWO_ROW_CONDITIONAL_NUMERICAL_PROPOSITION",
+        "does not inherit a retained verdict",
+    )
+    require(
+        all(marker in flat_note for marker in required),
+        "source note drifted from the bounded two-row claim surface",
+    )
+    require(
+        "**Claim type:** meta" not in note
+        and "WAVE_DIRECT_DM_H025_SEED0_CLAIM_TYPE=META" not in note,
+        "source note retained stale meta classification",
+    )
 
 
 def check_dependency(spec: SourceSpec, rows: dict[str, dict[str, object]]) -> None:
@@ -195,6 +220,7 @@ def parse_log(spec: SourceSpec) -> dict[str, object]:
 
 
 def main() -> int:
+    check_claim_surface()
     audit_rows = ledger_rows()
     for spec in SOURCES:
         check_dependency(spec, audit_rows)
@@ -213,8 +239,8 @@ def main() -> int:
     print("WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_ASSERTIONS=TRUE")
     print("WAVE_DIRECT_DM_H025_SEED0_DEPENDENCIES_RETAINED_GRADE=TRUE")
     print("WAVE_DIRECT_DM_H025_SEED0_ARTIFACT_SHA256_PINS=TRUE")
-    print("WAVE_DIRECT_DM_H025_SEED0_CLAIM_TYPE=META")
-    print("WAVE_DIRECT_DM_H025_SEED0_ROLE=TWO_ROW_CROSS_NOTE_COMPARISON_SUPPORT")
+    print("WAVE_DIRECT_DM_H025_SEED0_CLAIM_TYPE=BOUNDED_THEOREM")
+    print("WAVE_DIRECT_DM_H025_SEED0_ROLE=SHA_PINNED_TWO_ROW_CONDITIONAL_NUMERICAL_PROPOSITION")
     for family in ("Fam1", "Fam2"):
         row = parsed[family]["rows"][SELECTED_STRENGTH]  # type: ignore[index]
         spread = parsed[family]["computed_spread_percent"]

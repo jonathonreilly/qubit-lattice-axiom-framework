@@ -3,13 +3,15 @@
 SO(4) Covariance of the FREE Staggered-Dirac 2-Point Schwinger Function
 =======================================================================
 
-STATUS: bounded theorem on the continuum limit of the FREE (U=1) staggered
+STATUS: bounded theorem, conditional on premise (A-free), on the continuum
+        limit of the explicitly specified FREE (U=1) staggered
         2-point Euclidean Schwinger function, with explicit characterisation
         of the leading dim-6, ell=4 cubic-harmonic anisotropy at O(a^2) OF THE
         TASTE-SINGLET SCALAR SPECTRUM Delta(p) / displayed taste-spectator D~
         sector. (For the full free staggered spin x taste propagator the
-        leading finite-a correction is the O(a) non-spectator taste-mixing
-        admitted below, vanishing as a->0; no O(a^2) leading-correction claim
+        leading finite-a correction in a local hypercube basis is O(a)
+        non-spectator spin-taste mixing, vanishing as a->0 while the free
+        spectrum stays exactly fourfold degenerate; no O(a^2) leading-correction claim
         is made for the full spin x taste propagator.)
         Status authority: independent audit lane only.
 
@@ -18,7 +20,13 @@ boost note:
   docs/LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md
   scripts/frontier_lorentz_boost_3plus1d.py  (free scalar; Step 6 SO(4)).
 
-THEOREM (free staggered-Dirac 2-point SO(4) covariance):
+PREMISE (A-free): the explicitly specified free (U=1) staggered
+  (Kogut-Susskind) Euclidean action with the framework's canonical phases.
+  This runner analyzes that action; it does not identify (A-free) as the
+  framework's physical carrier.
+
+THEOREM (free staggered-Dirac 2-point SO(4) covariance, conditional on
+(A-free)):
   On the free (U=1) staggered (Kogut-Susskind) lattice with the framework's
   canonical phases eta_0 = 1, eta_mu(n) = (-1)^{n_0 + ... + n_{mu-1}}, the
   CONTINUUM-LIMIT (a -> 0) spin(x)taste form of the free staggered Dirac
@@ -37,15 +45,17 @@ THEOREM (free staggered-Dirac 2-point SO(4) covariance):
   The clean 1_taste spin(x)taste factorisation is the a -> 0 form, NOT an
   exact finite-a reduced-BZ lattice-operator identity: at finite a the honest
   hypercube spin(x)taste reconstruction (Kawamoto-Smit / Kluberg-Stern) carries
-  O(a) non-spectator taste-mixing channels (e.g. gamma_S (x) xi_5), the standard
-  staggered taste-breaking, and a dimension count forbids the factorisation as
+  O(a) non-spectator spin-taste mixing channels (e.g. gamma_S (x) xi_5).
+  This is local-basis mixing, not physical splitting of the exactly
+  fourfold-degenerate free spectrum. A dimension count forbids the factorisation as
   a single-spacing identity (16 spin(x)taste components carrying one dof/site
   live on the block lattice (L/2)^4 at spacing 2a: 16*(L/2)^4 = L^4). What IS
   exact at finite a is the SCALAR SPECTRUM Delta(p) = m^2 + (1/a^2) sum_mu
   sin^2(p_mu a): taste does not enter the eigenvalue but appears as a 4-FOLD
   SPECTRAL MULTIPLICITY (every eigenvalue multiplicity divisible by 4). The
   taste-spectator statement is therefore a continuum-limit / 4-fold-spectral-
-  multiplicity statement; finite-a taste-breaking is O(a) and vanishes as a->0.
+  multiplicity statement; local-basis spin-taste mixing is O(a) and vanishes
+  as a->0. Interacting taste violation is a separate O(a^2) effect.
   (Part 1a verifies the exact spectrum + 4-fold multiplicity on the genuine
   position-space staggered operator.)
   Its inverse (the 2-point Schwinger function in momentum space) is
@@ -65,17 +75,19 @@ THEOREM (free staggered-Dirac 2-point SO(4) covariance):
   the STANDARD SO(4)-COVARIANT Euclidean Dirac/Kahler-Dirac propagator
   (in this a -> 0 limit taste is a spectator 1_taste; at finite a taste does
   not enter the scalar spectrum Delta(p) and appears only as a 4-fold spectral
-  multiplicity, with O(a) taste-breaking that vanishes as a -> 0). In position
+  multiplicity, with O(a) local-basis spin-taste mixing that vanishes as
+  a -> 0 without splitting the free spectrum). In position
   space this is the SO(4)-rotation-invariant kernel built from the scalar
   Euclidean propagator G_E^scal(R) = m K_1(m R)/(4 pi^2 R) and its
-  derivative; equivalently (Wick rotation t -> -i tau) the Wightman
-  2-point function is SO(3,1)-covariant in the continuum limit.
+  derivative. A corresponding Minkowski/Wightman statement is outside this
+  runner's claim surface: OS reconstruction is neither performed nor cited at
+  retained grade.
 
   Leading lattice correction OF THE TASTE-SINGLET SCALAR SPECTRUM Delta(p) /
   displayed taste-spectator D~ sector: O(a^2), dimension-6, parity-even,
   CPT-even, ell=4 CUBIC HARMONIC. (For the FULL free staggered spin x taste
   propagator the leading finite-a correction is the O(a) non-spectator
-  taste-mixing above, not this O(a^2) term.) It enters through
+  spin-taste mixing above, not this O(a^2) term.) It enters through
       sin(p_mu a)/a = p_mu - (a^2/6) p_mu^3 + O(a^4)              (numerator)
       Delta(p) = m^2 + |p|^2 - (a^2/3) sum_mu p_mu^4 + O(a^4)     (denominator)
   The unique anisotropic structure is sum_mu p_mu^4. As a 4D Euclidean
@@ -92,8 +104,8 @@ SCOPE (deliberately narrow; the audit lane is harsh):
   * FREE (U=1) fermion 2-POINT function ONLY.
   * NOT the interacting theory, NOT n-point, NOT full OS reconstruction,
     NOT a continuum-existence claim. The continuum LIMIT of the free 2-pt
-    function is well-defined (free theory), so the result is UNCONDITIONAL
-    for the free 2-pt.
+    function is well-defined for the analyzed action, so the result follows
+    conditional on (A-free), without a framework physical-carrier claim.
   * Matter-sector analogue of the existing free-scalar SO(4)/boost result;
     NO new vocabulary, NO emergent-Lorentz claim for the interacting theory.
 
@@ -109,12 +121,13 @@ CONVENTIONS verified against the repo:
     STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE
     _2026-05-17.md.
 
-This runner verifies the theorem with >= 30 PASS checks across 8 parts.
+This runner verifies the theorem with >= 30 PASS checks across 9 parts.
 Self-contained: numpy + scipy.special (+ optional sympy).
 """
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 import numpy as np
 import scipy.special as sp
 
@@ -137,6 +150,14 @@ def check(name, condition, detail="", kind="EXACT"):
         msg += f"  ({detail})"
     print(msg)
     return condition
+
+
+def context_log(name, detail=""):
+    """Print non-verdict context without changing PASS/FAIL accounting."""
+    msg = f"  [CONTEXT] {name}"
+    if detail:
+        msg += f"  ({detail})"
+    print(msg)
 
 
 # =============================================================================
@@ -845,22 +866,36 @@ def test_part4_l4_cubic_harmonic():
               np.max(np.abs(lap)) < 1e-9,
               "sympy not installed; pointwise Laplacian check used")
 
-    # 4.6 dimension-6 classification: the scalar-spectrum LV operator is
-    #     O(a^2 p^4), i.e. two extra powers of momentum beyond the dim-4
-    #     kinetic term -> dimension 6.
-    check("Scalar-spectrum leading LV operator is dimension-6 (O(a^2 p^4), two extra momenta)",
-          True,
-          "sum_mu p_mu^4 with coeff a^2/3; CPT-even, parity-even (even powers); "
-          "taste-singlet Delta(p) sector (full spin x taste leading corr is O(a))")
+    # 4.6 Exact finite-polynomial classification of the DISPLAYED dim-6 term.
+    #     P flips the three spatial momenta and CPT reverses all four momenta;
+    #     charge conjugation acts trivially on this real scalar coefficient.
+    q4_terms = {
+        tuple(4 if nu == mu else 0 for nu in range(4)): -1
+        for mu in range(4)
+    }
 
-    # 4.7 parity-even / CPT-even: Delta(-p) = Delta(p) (no odd-power terms).
+    def sign_transform(terms, signs):
+        return {
+            powers: coeff * np.prod([sign ** power for sign, power in zip(signs, powers)])
+            for powers, coeff in terms.items()
+        }
+
+    parity_image = sign_transform(q4_terms, (-1, -1, -1, 1))
+    cpt_image = sign_transform(q4_terms, (-1, -1, -1, -1))
+    degree_four = all(sum(powers) == 4 for powers in q4_terms)
+    check("Displayed Q4=sum_mu p_mu^4 is degree-4 and exactly P/CPT-even",
+          degree_four and parity_image == q4_terms and cpt_image == q4_terms,
+          "exact coefficient maps under P:(p1,p2,p3,ptau)->(-p1,-p2,-p3,ptau) "
+          "and scalar-operator CPT:p->-p")
+
+    # 4.7 Separate finite-a scalar-spectrum inversion evenness check.
     rng3 = np.random.default_rng(9)
     max_par = 0.0
     a = 0.3
     for _ in range(50):
         p = rng3.uniform(-2, 2, 4)
         max_par = max(max_par, abs(Delta_lat(p, a, m) - Delta_lat(-p, a, m)))
-    check("Parity-even: Delta(-p) = Delta(p) (no dim-5 / CPT-odd dispersion term)",
+    check("Finite-a scalar spectrum is momentum-inversion even: Delta(-p)=Delta(p)",
           max_par < 1e-13, f"max|Delta(-p)-Delta(p)| = {max_par:.1e}")
 
     return True
@@ -1001,11 +1036,32 @@ def test_part6_position_space_so4():
 
 
 # =============================================================================
-# Part 7: combined statement + relation to existing notes
+# Part 7: conditional Euclidean statement, note-surface pins, and context
 # =============================================================================
 
 def test_part7_combined():
-    print("\n=== Part 7: combined SO(4) statement + relation to scalar note ===\n")
+    print("\n=== Part 7: conditional Euclidean theorem surface + context ===\n")
+
+    note_path = (Path(__file__).resolve().parents[1] / "docs" /
+                 "LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md")
+    note_text = note_path.read_text(encoding="utf-8")
+    note_surface = " ".join(note_text.split())
+    wightman_nonclaim = (
+        "the corresponding Minkowski/Wightman statement is NOT part of this "
+        "note's claim surface: passing from the Euclidean Schwinger function "
+        "to a Wightman function requires an OS-reconstruction step that this "
+        "note neither performs nor cites at retained grade (see What stays open)."
+    )
+    check("Note pin: premise (A-free) is present", "(A-free)" in note_text)
+    check("Note pin: theorem header is conditional on (A-free)",
+          "Theorem (free staggered-Dirac 2-point SO(4) covariance, conditional on (A-free))"
+          in note_surface)
+    check("Note pin: Minkowski/Wightman sentence is an OS-reconstruction non-claim",
+          wightman_nonclaim in note_surface)
+    check("Note pin: 2026-07-10 downstream-hygiene boundary is present",
+          "**2026-07-10 downstream hygiene.**" in note_text)
+    check("Note pin: old unconditional Wick-rotation equivalence is absent",
+          "equivalently (Wick rotation" not in note_text)
 
     check("Z^3 x Z_tau has hypercubic point symmetry, NOT SO(4)",
           True, "SO(4) is non-compact-completion of the cubic group; emergent only")
@@ -1019,13 +1075,14 @@ def test_part7_combined():
 
     check("Scalar-spectrum leading lattice correction: dim-6, ell=4 cubic harmonic, O(a^2)",
           True, "sum_mu p_mu^4; iso 1/2, axis/diag ratio 4 (4D); no ell=2,6 "
-          "(taste-singlet Delta(p)/D~ sector; full spin x taste leading corr is O(a))")
+          "(taste-singlet Delta(p)/D~ sector; local-basis spin-taste mixing is O(a), "
+          "free spectrum exactly fourfold degenerate)")
 
-    check("Parity-even + CPT-even: only even powers of p (no dim-3, dim-5)",
-          True, "Delta(-p)=Delta(p); matches scalar/dispersion-note structure")
+    context_log("Displayed-polynomial P/CPT classification",
+                "real algebraic check is Part 4.6; CPT_EXACT_NOTE is context, not support")
 
-    check("Wick rotation: continuum Wightman 2-pt is SO(3,1)-covariant",
-          True, "SO(4) Euclidean invariance <=> SO(3,1) boost covariance (t=-i tau)")
+    context_log("Minkowski/Wightman extension excluded",
+                "no Wick-rotation PASS: OS reconstruction is outside this claim surface")
 
     check("MATTER-SECTOR ANALOGUE of free-scalar boost note Step 6 (SO(4))",
           True, "same mechanism: cubic dispersion -> isotropic continuum limit")
@@ -1033,8 +1090,8 @@ def test_part7_combined():
     check("Free-scalar bridge: spatial 3-slice reduces to scalar note's 3D K_4",
           True, "iso 3/5, ratio 3 on the slice; full 4D is iso 1/2, ratio 4")
 
-    check("Unconditional for the FREE 2-point function (free theory limit exists)",
-          True, "NOT interacting, NOT n-point, NOT OS reconstruction, NOT FS")
+    check("Conditional on (A-free): free 2-point Euclidean limit exists",
+          True, "NOT a framework-carrier, interacting, n-point, OS, or Minkowski claim")
 
     return True
 
@@ -1067,10 +1124,12 @@ def main():
     print("SO(4) Covariance of the FREE Staggered-Dirac 2-Point Schwinger Function")
     print("=" * 78)
     print()
-    print("THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),")
+    print("THEOREM (conditional on (A-free)):")
+    print("         lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),")
     print("         the SO(4)-covariant Euclidean Dirac/Kahler-Dirac propagator;")
     print("         taste-singlet scalar-spectrum leading correction = dim-6 ell=4")
-    print("         cubic harmonic, O(a^2) (full spin x taste leading corr is O(a)).")
+    print("         cubic harmonic, O(a^2) (local-basis spin-taste mixing is O(a);")
+    print("         the free spectrum remains exactly fourfold degenerate).")
     print()
 
     test_part0_canonical_staggered_to_spin_taste()
@@ -1092,10 +1151,12 @@ def main():
         print("\n*** FAILURES DETECTED ***")
         sys.exit(1)
     else:
-        print("\nAll checks passed. The FREE staggered-Dirac 2-point Schwinger")
-        print("function becomes SO(4)-covariant in the continuum limit, with the")
+        print("\nAll checks passed. Conditional on (A-free), the explicitly specified")
+        print("FREE staggered-Dirac 2-point Schwinger function becomes SO(4)-covariant")
+        print("in the continuum limit, with the")
         print("taste-singlet scalar spectrum's leading anisotropy a dim-6 ell=4")
-        print("cubic harmonic at O(a^2) (full spin x taste leading corr is O(a)).")
+        print("cubic harmonic at O(a^2) (local-basis spin-taste mixing is O(a);")
+        print("the free spectrum remains exactly fourfold degenerate).")
         print("Matter-sector analogue of the free-scalar boost note.")
         sys.exit(0)
 

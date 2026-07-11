@@ -1,7 +1,7 @@
 # C₃ Body-Diagonal Fixed Locus and Local Inverse-Determinant Density
 
 **Date:** 2026-06-05; exact supplier repair 2026-07-11
-**Claim type:** bounded_theorem
+**Claim type:** positive_theorem
 **Status authority:** independent audit lane. This source proposal does not
 set or predict an audit verdict.
 **Primary runner:**
@@ -11,24 +11,25 @@ set or predict an audit verdict.
 
 ## Narrow claim
 
-Take the proper cubic rotation by `2*pi/3` about the body diagonal of the
-`Z^3` lattice. On its real two-dimensional normal plane, both nonidentity
-elements of the generated `C3` group have
+Take the proper cubic rotation by `2*pi/3` about the coordinate body diagonal
+spanned by `(1,1,1)` in the `Z^3` lattice. This is a representative group
+element, not a selected physical axis. On its real two-dimensional normal
+plane, both nonidentity elements of the generated `C_3` group have
 
 ```text
 det_R(I-g|_N)=3.
 ```
 
-Define the finite `C3` inverse-normal-determinant density by
+Define the finite `C_3` inverse-normal-determinant density by
 
 ```text
-L_C3(N) = (1/3) sum_{k=1}^{2} 1/det_R(I-g^k|_N).
+L_C_3(N) = (1/3) sum_{k=1}^{2} 1/det_R(I-g^k|_N).
 ```
 
 Then
 
 ```text
-L_C3(N) = (1/3)(1/3+1/3) = 2/9.
+L_C_3(N) = (1/3)(1/3+1/3) = 2/9.
 ```
 
 This is an exact local representation-theory statement. It does not identify
@@ -40,8 +41,9 @@ APS index, a probability, a readout normalization, or a value of `r`.
 The [current minimal-axiom memo](MINIMAL_AXIOMS_2026-06-29.md) supplies the
 `Z^3` lattice and its proper cubic rotations. The proof below selects no site,
 state, action, matter carrier, readout context, or charged-lepton parameter.
-Standard exact linear algebra and finite-group averaging are the mathematical
-infrastructure.
+Standard exact linear algebra is the mathematical infrastructure. The finite
+average is the mathematical functional defined in the claim; this theorem
+evaluates it but does not derive a physical rule that selects that functional.
 
 ## Proof
 
@@ -117,7 +119,7 @@ both nonidentity group elements.
 Substitution into the stated finite average gives
 
 ```text
-L_C3(N)
+L_C_3(N)
   =(1/3) [det_R(I-P|_N)^(-1)+det_R(I-P^2|_N)^(-1)]
   =(1/3)(1/3+1/3)
   =2/9.
@@ -164,28 +166,6 @@ consume their status.
 
 These boundaries are precisely why this row can supply the local number while
 remaining neutral on AC(i), AC(ii), and every registered value of `r`.
-
-## Bounded-wall stress test
-
-The negative boundary is narrow: the local matrix theorem does not perform a
-physical readout identification.
-
-1. **Alternative observable.** Replacing the stated finite average by another
-   additive functional changes the observable; it does not change the exact
-   value of the functional defined here.
-2. **Generator reversal.** `P` and `P^2` exchange and yield the same value.
-3. **Basis change.** Similarity on the real normal plane preserves both
-   determinants.
-4. **Global topology.** Global PL or APS structure is unnecessary for the
-   finite normal-representation calculation and is not inferred from it.
-5. **Physical readout.** Identifying `2/9` with a charged-lepton phase remains
-   a separate action/readout theorem; the present result provides no such map.
-6. **Normalization.** Multiplying a downstream scalar readout by a constant
-   leaves Record additivity intact, so this theorem does not select h-units.
-7. **Partial reuse.** Downstream work may cite the local value while retaining
-   its own physical-carrier and readout obligations.
-8. **Prior-cycle lesson.** Finite local arithmetic must not be expanded into a
-   global index or phenomenological identification without a separate bridge.
 
 ## Validation
 

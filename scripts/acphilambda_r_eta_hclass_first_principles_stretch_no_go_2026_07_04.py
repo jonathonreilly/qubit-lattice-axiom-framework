@@ -109,9 +109,9 @@ def main() -> int:
     registry_flat = flat(registry)
     fixed_flat = flat(fixed_locus)
 
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     decomp = ac["minimum_decomposition"]
-    check("Tier-A has a live genuine admitted input", tier["genuine_admitted_input_count"] >= 1)
+    check("Tier-A has no live admitted inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
     check(
         "AC minimum decomposition keeps R-eta",
         "delta_readout_identification_R_eta" in decomp,
@@ -119,7 +119,7 @@ def main() -> int:
     )
     check("AC minimum decomposition keeps occupancy separate", "reading_occupancy_selection" in decomp, decomp)
     check("AC statement names R-eta", "R-eta" in ac["statement"] and "density-read-as-angle" in ac["statement"])
-    check("human registry names R-eta", ("R-eta" in registry_flat or "R-\u03b7" in registry) and "density-read-as-angle" in registry_flat)
+    check("human registry points to the R-eta derivation obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
     check("note declares Type no_go", "**Type:** no_go" in note)
     check("note declares Claim type no_go", "**Claim type:** no_go" in note)
     check("note declares independent audit boundary", "independent audit lane only" in note)

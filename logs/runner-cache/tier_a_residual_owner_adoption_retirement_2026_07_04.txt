@@ -1,108 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py
-runner_sha256: 5ac7a79302ad282065293dc22e93f4c41d9cee35a0ce0a9e8231be685fa57d19
+runner_sha256: 5ada691c3c0032dbc5c030d547c6f8f266d406c9865a628ffd451abb84735783
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
-Tier-A residual owner adoption and retirement verifier
-========================================================================================
-
-----------------------------------------------------------------------------------------
-A - source presence and explicit adoption boundary
-----------------------------------------------------------------------------------------
-PASS: exists: docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md
-PASS: exists: docs/audit/data/tier_a_admissions.json
-PASS: exists: docs/audit/data/axiom_premise_nodes.json
-PASS: exists: docs/audit/data/owner_governed_premise_nodes.json
-PASS: exists: docs/audit/data/audit_ledger.json
-PASS: exists: docs/audit/AXIOM_MINIMALITY_POLICY.md
-PASS: exists: docs/audit/DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md
-PASS: exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
-PASS: exists: docs/audit/scripts/premise_nodes.py
-PASS: note declares Type meta
-PASS: note declares Claim type meta
-PASS: runner path is wired in note
-PASS: adoption firewall phrase present: does not derive `AC_phi_lambda` or theta as theorems
-PASS: adoption firewall phrase present: does not add or amend an axiom
-PASS: adoption firewall phrase present: does not add an approved framework primitive
-PASS: adoption firewall phrase present: does not set any audit verdict
-PASS: adoption firewall phrase present: retiring live Tier-A admissions without treating them as axioms, primitives, or audit-ratified theorem closures
-
-----------------------------------------------------------------------------------------
-B - Tier-A registry is zeroed and historical data preserved
-----------------------------------------------------------------------------------------
-PASS: Tier-A genuine admitted input count is zero
-PASS: Tier-A canonical_ids is empty
-PASS: Tier-A derivation_targets is empty
-PASS: retired_derivation_targets preserves AC and theta
-PASS: staggered_dirac_realization_gate_note_2026-05-03 no longer live Tier-A
-PASS: staggered_dirac_realization_gate_note_2026-05-03 historical retired entry has no_go_portfolio
-PASS: strong_cp_theta_zero_note no longer live Tier-A
-PASS: strong_cp_theta_zero_note historical retired entry has no_go_portfolio
-PASS: AC retirement mechanism is owner-governance on audited surface
-PASS: AC retirement records audited surface
-PASS: AC adopted candidates exact
-PASS: AC boundary exact in retired record
-PASS: theta remains retained-derivation retired
-
-----------------------------------------------------------------------------------------
-C - owner-governed registry is separate from axioms/primitives
-----------------------------------------------------------------------------------------
-PASS: approved axiom/primitive allowlist unchanged
-PASS: owner-governed canonical ids are AC only
-PASS: owner-governed node keys match canonical ids
-PASS: theta is not owner-governed
-PASS: no overlap with axiom/primitive ids
-PASS: AC current_path points to adoption note
-PASS: AC prior source path points to audited gate note
-PASS: AC owner-governed candidates exact
-PASS: AC owner-governed boundary exact
-PASS: AC node records audited surface
-
-----------------------------------------------------------------------------------------
-D - accepted-premise policy recognizes only the current live owner-governed class
-----------------------------------------------------------------------------------------
-PASS: premise_nodes sees AC owner-governed id
-PASS: AC accepted premise
-PASS: AC owner-governed premise
-PASS: AC not live Tier-A admission
-PASS: theta not owner-governed premise
-PASS: theta not live Tier-A admission
-PASS: candidate id itself is not accepted premise: ac_orbit_occupancy_statistical_grain_premise
-PASS: candidate id itself is not accepted premise: ac_reta_hclass_hunit_readout_premise
-PASS: candidate id itself is not accepted premise: theta_gauge_sector_phase_source_premise
-PASS: candidate id itself is not accepted premise: theta_mass_determinant_channel_w2_premise
-
-----------------------------------------------------------------------------------------
-E - ledger, policy, and human registry surfaces are updated
-----------------------------------------------------------------------------------------
-PASS: AC adoption-time audited bounded surface is preserved in ledger history
-PASS: theta source row is audited retained-bounded
-PASS: minimality policy records: owner-governed residual premises
-PASS: minimality policy records: AC_phi_lambda retired from live Tier-A by owner-governance
-PASS: minimality policy records: genuine_admitted_input_count
-PASS: document policy names owner-governed residual premises
-PASS: human Tier-A registry records: Current live Tier-A admitted derivation targets: zero
-PASS: human Tier-A registry records: owner-governed residual premises
-PASS: human Tier-A registry records: retired_derivation_targets
-PASS: human Tier-A registry records: 5d8df21fe
-
-----------------------------------------------------------------------------------------
-F - overclaim guardrails
-----------------------------------------------------------------------------------------
-PASS: forbidden overclaim absent: AC_phi_lambda is theorem-derived
-PASS: forbidden overclaim absent: theta is theorem-derived
-PASS: forbidden overclaim absent: added to axiom_premise_nodes
-PASS: forbidden overclaim absent: approved framework primitive for theta
-PASS: forbidden overclaim absent: approved framework primitive for AC_phi_lambda
-PASS: firewall present: No axiom is added or amended
-PASS: firewall present: No approved framework primitive is added or amended
-PASS: firewall present: The source-side theorem/no-go packets retain their own audit statuses
-
-========================================================================================
-RESULT: PASS=68 FAIL=0 CHECKS=68
-========================================================================================
+[PASS] historical admission count is zero
+[PASS] historical admission ids are empty
+[PASS] historical derivation-target map is empty
+[PASS] retired governance registry is absent
+[PASS] exact AC obligations are live
+[PASS] foundation contains axiom plus three approved primitives
+[PASS] accepted ids equal foundation ids
+[PASS] open obligations are not supplied premises
+TOTAL: PASS=8 FAIL=0
+[PASS] historical note: Premise weight:** none
+[PASS] historical note: former governance-only premise channel is withdrawn
+[PASS] historical note: AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md
+[PASS] historical note: AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md
+HISTORICAL NOTE: PASS=4 FAIL=0
 
 ----- stderr -----
+

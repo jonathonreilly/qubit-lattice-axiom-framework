@@ -74,27 +74,22 @@ foundational premises without explicit owner approval. Approval must be
 recorded in this policy and in the relevant machine registry before the new
 premise can chain-satisfy downstream claims.
 
-Framework primitives are distinct from Tier-A admitted derivation targets:
+The supplied foundation has exactly two premise types:
 
 - **Axioms and approved primitives** are foundational framework premises. They
   are tracked in `docs/audit/data/axiom_premise_nodes.json`, chain-satisfy
   dependencies without bounding downstream status, and are guarded by
   `check_axiom_premise_clean.py`.
-- **Owner-governed residual premises** are explicit owner-governance
-  retirements of formerly Tier-A residuals. They are tracked in
-  `docs/audit/data/owner_governed_premise_nodes.json`, chain-satisfy
-  dependencies without Tier-A bounding, and are not axioms, approved
-  primitives, or theorem derivations.
-- **Tier-A admitted derivation targets** are non-axiom inputs with no-go
-  portfolios. They are tracked in `docs/audit/data/tier_a_admissions.json` and
-  chain-satisfy only at `retained_bounded` until retired by a retained
-  derivation or explicit owner-governance adoption.
+
+Everything else must be an audited derivation or remain conditional/open.
+`docs/audit/data/derivation_obligations.json` tracks exact open work but carries
+zero premise weight. `docs/audit/data/tier_a_admissions.json` is historical
+registry provenance only; its live premise lists must remain empty.
 
 Entries below are the historical record of approvals and their validation
 provenance. They carry no premise or interpretive weight: effect statements
 are informative summaries, and any load-bearing content must be carried by
-axiom text, approved primitives, Tier-A admissions, or audited derivation
-(section 1).
+axiom text, approved primitives, or audited derivation (section 1).
 
 Recorded explicitly approved axiom updates:
 
@@ -530,11 +525,11 @@ registry's designed discharge path, not an axiom or primitive change):
     (2026-07-05). Review-loop must verify that approval comment exists
     before landing the registry edit.
 
-Recorded Tier-A retirement (explicit owner-governance adoption; not an axiom,
-primitive, or audit-ratified theorem closure):
+Recorded historical Tier-A retirement attempt (superseded 2026-07-11; never an
+axiom, primitive, or audit-ratified theorem closure):
 
-- **2026-07-05 -- AC_phi_lambda retired from live Tier-A by owner-governance
-  adoption on an audited surface.** Owner approval recorded in-thread:
+- **2026-07-05 -- historical AC_phi_lambda governance adoption.** Owner
+  approval recorded in-thread:
   "I approve #4991's owner-governance adoption of the four Block49 residual
   candidates, with the exact boundaries in owner_governed_premise_nodes.json,
   retiring live Tier-A admissions without treating them as axioms, primitives,
@@ -545,17 +540,14 @@ primitive, or audit-ratified theorem closure):
   target source surface itself had already landed through the audit lane as
   `audited_clean` / `retained_bounded` at main commit `5d8df21fe`, with its
   full basis terminal-grade.
-  - **Registry effect.** `AC_phi_lambda` is moved from
+  - **Historical registry effect.** `AC_phi_lambda` was moved from
     `derivation_targets` to `retired_derivation_targets` in
     `docs/audit/data/tier_a_admissions.json`; `genuine_admitted_input_count`
     becomes zero, `canonical_ids` becomes empty, and `derivation_targets`
-    becomes empty. The live owner-governed boundary is registered in
-    `docs/audit/data/owner_governed_premise_nodes.json` under
-    `staggered_dirac_realization_gate_note_2026-05-03`. Theta stays under its
-    existing retained-derivation retirement record and is not resurrected as
-    an owner-governed premise.
-  - **Adopted AC residuals.** The adopted AC owner-governed residual
-    candidates are exactly `ac_orbit_occupancy_statistical_grain_premise` and
+    became empty. That governance channel is now removed. Theta stays under
+    its existing retained-derivation retirement record.
+  - **Historical AC residuals.** The decision named
+    `ac_orbit_occupancy_statistical_grain_premise` and
     `ac_reta_hclass_hunit_readout_premise`. The owner approval also covered
     the two theta residual candidates, but on current main those candidates no
     longer retire a live slot because the theta slot was already closed by the
@@ -566,10 +558,33 @@ primitive, or audit-ratified theorem closure):
     mixing angle, probability rule, above-C3 taste/Dirac/chirality content,
     CKM/PMNS alignment, or sector-weight law. Source-side theorem/no-go packet
     statuses remain audit-lane-owned.
-  - **Scope.** Chain-satisfying authority is the owner-governed registry entry
-    plus its exact boundary, not this policy prose. Dependents re-grade solely
-    through the automatic effective-status pipeline; no hand retagging or
-    audit result is applied by this entry.
+  - **Current scope.** This entry is provenance only and supplies no authority.
+    The two AC statements are open derivation obligations.
+
+Recorded premise-channel correction:
+
+- **2026-07-11 -- only axioms and approved primitives may be supplied physics
+  premises.** Owner direction in the Codex task: approved primitives remain a
+  necessary and acceptable component of the foundation, including the
+  scale/unit reference; governance-only residual statements may not bear
+  physics load. The former AC governance channel is therefore withdrawn, the
+  registry file is removed, and its two exact scientific statements are
+  reopened in `docs/audit/data/derivation_obligations.json`. These obligations
+  do not chain-satisfy, bound, or promote any claim. The audit pipeline must
+  compute all resulting status changes mechanically.
+  - **PR #5167 review.** Its options A/B would restore two admitted premises,
+    which is incompatible with the present two-type foundation. Option C
+    correctly observes that the running G3/kappa program is self-liquidating,
+    but retaining the governance premises while waiting would preserve the
+    objection. The adopted disposition is immediate withdrawal into two
+    zero-weight obligations. If retained G3 and kappa/counting theorems close
+    their exact targets, the obligation rows disappear by derivation.
+  - **Theta blast radius.** The gauge-side retained work is unchanged. The
+    mass-side reading that reused the AC occupancy grain is conditional on the
+    occupancy obligation and must re-bound or remain pending-chain until that
+    obligation is derived. Theta is therefore not represented as an
+    unconditional all-legs retirement merely because its historical registry
+    row remains preserved.
 
 Recorded Tier-A registry refinement (admissions remain Tier-A; nothing is
 promoted to axiom or primitive class):

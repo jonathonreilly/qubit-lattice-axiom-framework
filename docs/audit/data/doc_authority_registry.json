@@ -1,12 +1,30 @@
 {
   "schema_version": 1,
-  "description": "Document-authority registry: one row per registered document, per docs/audit/DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md. Classes: A axiom memo, B owner registries, C runner-carried claim notes, D proposals, E process policies, F orientation memos (no premise or interpretive weight), G operational surfaces. Status landed | in_flight_pr (carry pr).",
+  "description": "Document-authority registry: one row per registered document, per docs/audit/DOCUMENT_AUTHORITY_AND_CITATION_POLICY.md. Classes: A foundational axiom/approved-primitive notes, C runner-carried claim notes, D proposals, E process policies, F orientation memos (no premise or interpretive weight), G operational surfaces. Status landed | in_flight_pr (carry pr).",
   "rows": [
     {
       "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
       "class": "A",
       "status": "landed",
       "note": "The axiom memo; machine mirror is the minimal_axioms node; changes owner-approved and logged in AXIOM_MINIMALITY_POLICY.md."
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "class": "A",
+      "status": "landed",
+      "note": "Approved scale-reference primitive; units conversion only."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "class": "A",
+      "status": "landed",
+      "note": "Approved kinetic-isotropy primitive."
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "class": "A",
+      "status": "landed",
+      "note": "Approved realized-state interface primitive."
     },
     {
       "path": "docs/audit/AXIOM_MINIMALITY_POLICY.md",

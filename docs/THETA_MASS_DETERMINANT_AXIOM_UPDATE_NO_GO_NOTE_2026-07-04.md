@@ -9,12 +9,10 @@ primitives. This note does not derive, refute, re-grade, retire, or remove
 theta, does not set `theta_bar = 0`, and does not edit any Tier-A registry,
 axiom, primitive, audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
-**Current-main posture (2026-07-06):** live `main` now records Tier-A count
-zero: theta was retired 2026-07-05 by retained derivation, and
-`AC_phi_lambda` was retired by owner-governance adoption. This note banks the
-historical mass-side escape-route no-go only; it does not reopen, modify, or
-re-grade either retirement record, `tier_a_admissions.json`, or owner-governed
-premise data.
+**Current-main posture (2026-07-11):** theta's gauge-side retained disposition
+remains; its mass-side K-real leg is conditional on the open AC occupancy
+obligation. The AC governance-only channel was withdrawn;
+that correction does not affect this historical mass-side result.
 **Primary runner:**
 [`scripts/theta_mass_determinant_axiom_update_no_go_2026_07_04.py`](../scripts/theta_mass_determinant_axiom_update_no_go_2026_07_04.py)
 
@@ -146,7 +144,7 @@ extra bridge.
 3. **Joint gauge/mass theorem.** Keep the invariant combination
    `theta_bar = theta_gauge + arg det(M_u M_d)` honest while moving the mass
    side.
-4. **Owner governance route.** Approve a narrow determinant-readout primitive.
+4. **Approved-primitive route.** Approve a narrow determinant-readout primitive.
    That would be governance, not derivation.
 
 ## No-Go Discipline Gate
@@ -155,7 +153,7 @@ extra bridge.
 realized-state, and kinetic-isotropy surfaces are checked and do not supply the
 mass determinant-channel bridge. K/CPT determinant-character erasure remains a
 conditional route. Scalar-mass action-surface, determinant-channel, joint
-gauge/mass, and owner-governance routes remain open.
+gauge/mass, and approved-primitive proposals remain open.
 
 **N2 wall independence.** The wall is the mass-side determinant-readout bridge:
 physical `arg det(M_u M_d)` exhaustion by a Record-registrable determinant

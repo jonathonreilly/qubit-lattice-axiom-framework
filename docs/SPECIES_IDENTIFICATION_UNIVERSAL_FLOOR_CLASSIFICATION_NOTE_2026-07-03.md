@@ -19,11 +19,9 @@ registry ruling).
 **Owner-gated surface:** the owner rules on Tier-A registry placement. This
 note assembles the argument, the counterargument, and the scope limits for the
 owner. It does not adopt, reclassify, or edit anything.
-**Current-main posture (2026-07-07):** the owner-governance retirement of
-`AC_phi_lambda` is already recorded on main. This note is banked only as
-historical meta/provenance for the species-identification universal-floor
-classification argument; it does not reopen, modify, or supply authority for
-that retirement record or any registry placement.
+**Current-main posture (2026-07-11):** the former AC governance decision is
+historical only and supplies no premise. This note is banked only as
+meta/provenance for the species-identification classification argument.
 **Audit lane:** audit statuses are untouched.
 **Runner:**
 [`scripts/frontier_species_universal_floor_classification_2026_07_03.py`](../scripts/frontier_species_universal_floor_classification_2026_07_03.py)
@@ -170,7 +168,7 @@ weight.
 - It hides nothing. If the owner accepts the classification, the identification
   should stay listed, moved bucket rather than hidden.
 - It did not, at drafting time, retire `AC_phi_lambda`. The later
-  owner-governance retirement on main is a separate record; this note is
+  historical governance record is separate; this note is
   historical support only and changes no live count or registry row.
 - It does not touch CKM/PMNS, taste/Dirac/chirality content, or any above-C3
   carrier question.

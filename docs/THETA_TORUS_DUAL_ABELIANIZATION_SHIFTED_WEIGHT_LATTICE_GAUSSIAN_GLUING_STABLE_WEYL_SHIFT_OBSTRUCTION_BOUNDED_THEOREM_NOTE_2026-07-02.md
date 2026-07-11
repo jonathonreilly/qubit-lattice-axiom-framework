@@ -289,7 +289,7 @@ irreps and `beta = 6`.
 | W-frame (abelian-projection) construction on glued surfaces | OPEN — named residual (i-b') |
 | defect closure | OPEN — residual (i-a), unchanged |
 | scaling-limit sector functional | OPEN — unchanged live path |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

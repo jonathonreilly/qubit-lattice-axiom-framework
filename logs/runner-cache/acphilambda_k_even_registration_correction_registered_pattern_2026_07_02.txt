@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py
-runner_sha256: 71a1dc23b8dc795eb61d396a83b407d9efae49cba34f37d87fdf8bca0b91650a
+runner_sha256: 63c1fd856047a516dbf482c97e753e5096ffa0aed9a02537c2c48f77cb32c8de
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.63
+elapsed_sec: 0.82
 status: ok
 ----- stdout -----
 
@@ -27,10 +27,10 @@ PART A - sources and authority gates
 [PASS] Brannen file pin present: (a, |b|, delta)
 [PASS] note quotes Brannen pin: (a, |b|, delta)
 [PASS] record ledger row exists in audit ledger
-       record ledger row live audit fields (informational; the audit lane owns them): effective_status=retained_bounded, claim_scope=present
+       record ledger row live audit fields (informational; the audit lane owns them): effective_status=unaudited, claim_scope=null
 [PASS] record note path pinned
 [PASS] Brannen ledger row exists in audit ledger
-       Brannen ledger row live audit fields (informational; the audit lane owns them): effective_status=retained_bounded, claim_scope=present
+       Brannen ledger row live audit fields (informational; the audit lane owns them): effective_status=unaudited, claim_scope=null
 [PASS] Brannen note path pinned
 [PASS] RECORD premise-quote line present exactly once
 [PASS] RECORD premise quote count is 2

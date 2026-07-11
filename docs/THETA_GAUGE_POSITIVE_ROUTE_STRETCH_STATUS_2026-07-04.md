@@ -9,12 +9,10 @@ derive, refute, re-grade, retire, or remove theta, does not set
 `theta_bar = 0`, and does not edit any Tier-A registry, axiom, primitive,
 audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
-**Current-main posture (2026-07-06):** live `main` now records Tier-A count
-zero: theta was retired 2026-07-05 by retained derivation, and
-`AC_phi_lambda` was retired by owner-governance adoption. This note banks the
-historical gauge-side route map only; it does not reopen, modify, or re-grade
-either retirement record, `tier_a_admissions.json`, or owner-governed premise
-data.
+**Current-main posture (2026-07-11):** theta's gauge-side retained disposition
+remains; its mass-side K-real leg is conditional on the open AC occupancy
+obligation. The AC governance-only channel was withdrawn;
+that correction does not affect this historical gauge-side route map.
 **Primary runner:**
 [`scripts/theta_gauge_positive_route_stretch_status_2026_07_04.py`](../scripts/theta_gauge_positive_route_stretch_status_2026_07_04.py)
 

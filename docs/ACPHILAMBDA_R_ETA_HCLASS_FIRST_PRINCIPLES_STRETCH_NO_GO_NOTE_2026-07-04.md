@@ -138,7 +138,7 @@ the missing physical-observable bridge.
 
 Thus h-class remains a genuine part of `A_R-eta`. A future proof must derive a
 physical readout/license theorem that selects the fixed-locus-density class, or
-owner governance must register a narrow readout primitive/premise explicitly.
+a retained theorem must derive the readout or an approved primitive must supply it explicitly.
 
 ## Exact Checks
 
@@ -201,8 +201,8 @@ decision enters the proof.
 4. **physical carrier/source-action theorem.** Supply the physical observable
    bridge that ties the charged-lepton carrier to the fixed-locus-density
    functional.
-5. **owner governance.** Register a narrow readout primitive or premise
-   explicitly if derivation is intentionally bypassed.
+5. **Approved-primitive proposal.** Seek approval for a narrow readout
+   primitive if derivation is intentionally bypassed.
 
 ## No-Go Discipline Gate
 

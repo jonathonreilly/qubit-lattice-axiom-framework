@@ -670,15 +670,6 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         if premise_nodes.is_axiom_premise(dep_cid):
             accepted = True
             accepted_type = "axiom_or_approved_primitive"
-        elif premise_nodes.is_owner_governed_premise(dep_cid):
-            accepted = True
-            accepted_type = "owner_governed_residual"
-        elif premise_nodes.is_admitted_derivation_target(dep_cid):
-            accepted = True
-            accepted_type = "tier_a_derivation_target"
-            bounds_downstream = True
-        elif premise_nodes.is_admitted_convention(dep_cid):
-            accepted_type = "tier_a_convention_not_accepted"
         premise_lines = (
             f"=== Cited authority accepted_premise: {str(accepted).lower()} ===\n"
             f"=== Cited authority accepted_premise_type: {accepted_type} ===\n"

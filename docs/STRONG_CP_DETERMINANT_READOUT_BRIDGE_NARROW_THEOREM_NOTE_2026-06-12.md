@@ -53,11 +53,12 @@ The Record axiom supplies the orbit/additivity discipline only after this
 readout interface is supplied. It does not supply the determinant channel by
 itself.
 
-The Tier-A registry localizes theta(b)'s mass-side residual onto this
-determinant-readout bridge and records its shared K-real structure with
-AC_phi_lambda(i). That registry statement is context only here: it does not
-supply the determinant channel, close the exhaustion bridge, or create a
-dependency edge that upgrades this note.
+Theta(b)'s mass-side residual shares the K-real counting structure with
+AC_phi_lambda(i). That physical grain is now the explicit
+[AC orbit-occupancy statistical-grain derivation obligation](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md).
+It carries zero premise weight. Consequently the mass-side physical reading is
+conditional/pending until that obligation is retained-derived; the algebraic
+character result below does not itself close the physical grain.
 
 ## Theorem
 

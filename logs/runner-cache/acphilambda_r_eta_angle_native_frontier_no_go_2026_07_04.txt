@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py
+runner_sha256: 2502176fe21fc5a5793b00c18af3defbc7810a71767c609ec5dbf4ff0abd6a9b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.87
+status: ok
+----- stdout -----
 AC_phi_lambda R-eta angle-native frontier no-go verifier
 
 ========================================================================================
@@ -11,15 +19,15 @@ A. source and registry boundaries
 [PASS] exists: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
 [PASS] exists: docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
-[PASS] AC_phi_lambda remains the live Tier-A target
+[PASS] Tier-A has no live admitted inputs
 [PASS] AC minimum decomposition still includes R-eta
 [PASS] note explicitly does not edit registry
 [PASS] note says R-eta is not retired
-[PASS] human registry names R-eta
-[PASS] KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md effective status
-[PASS] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md effective status
-[PASS] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md effective status
-[PASS] RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md effective status
+[PASS] human registry points to the R-eta derivation obligation
+[PASS] KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md remains ledgered
+[PASS] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md remains ledgered
+[PASS] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md remains ledgered
+[PASS] RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md remains ledgered
 
 ========================================================================================
 B. exact target arithmetic and off-locus status
@@ -159,3 +167,6 @@ G. note/source cross-checks
 ========================================================================================
 TOTAL: PASS=128 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

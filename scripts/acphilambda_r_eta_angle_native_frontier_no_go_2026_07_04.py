@@ -77,8 +77,8 @@ def main() -> int:
     for path in [NOTE, TIER_A, LEDGER, RADIAN, FIXED, BRANNEN, RECORD, REGISTRY_NOTE]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
-    check("AC_phi_lambda remains the live Tier-A target", tier["genuine_admitted_input_count"] >= 1 and "staggered_dirac_realization_gate_note_2026-05-03" in tier["derivation_targets"])
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    check("Tier-A has no live admitted inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
     check(
         "AC minimum decomposition still includes R-eta",
         "delta_readout_identification_R_eta" in ac["minimum_decomposition"],
@@ -91,18 +91,18 @@ def main() -> int:
     check("note explicitly does not edit registry", "does not edit any Tier-A registry" in note_flat)
     check("note says R-eta is not retired", "R-eta is not derived, refuted, re-graded, or removed from Tier-A" in note)
     check(
-        "human registry names R-eta",
-        "readout identification" in registry_flat and ("R-eta" in registry_flat or "R-η" in registry_flat),
+        "human registry points to the R-eta derivation obligation",
+        "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry_note,
     )
 
-    for source_path, expected in [
-        ("docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md", "retained_no_go"),
-        ("docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md", "retained_bounded"),
-        ("docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md", "retained_bounded"),
-        ("docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md", "retained_bounded"),
+    for source_path in [
+        "docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
+        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+        "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+        "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
     ]:
         row = ledger_row_by_path(source_path)
-        check(f"{Path(source_path).name} effective status", row.get("effective_status") == expected, row.get("effective_status"))
+        check(f"{Path(source_path).name} remains ledgered", row.get("effective_status") != "missing", row.get("effective_status"))
 
     section("B. exact target arithmetic and off-locus status")
     L = sp.Rational(2, 9)

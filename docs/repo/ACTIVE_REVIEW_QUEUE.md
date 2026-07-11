@@ -88,8 +88,8 @@ Current science/open-lane follow-ups:
   `audit_companion_observable_principle_p2_phase_blindness_sector_resolved_2026_06_04.py`.
   Finding: the sibling pin sweep for PR #5115 found additional pre-existing
   post-retirement crashes and one stale Tier-A count-of-two gate outside the
-  four-runner repair slice; repoint them to the retired/owner-governed registry
-  boundary without weakening their content checks.
+  four-runner repair slice; repoint them to the historical registry plus exact
+  open obligations without weakening their content checks.
   Disposition: `fix on main`.
 - irregular off-lattice sign lane: portability beyond the bounded centered
   core-packet surface remains open

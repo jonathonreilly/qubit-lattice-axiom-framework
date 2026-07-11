@@ -240,10 +240,10 @@ The obstruction is constructive about what a winning theorem looks like:
   fixing a singleton readout value from named retained structure. T2 shows
   the bare count is available but pins `9/2`; a winning clause must pin the
   density-line member, and must derive rather than declare it.
-- **Owner-governance primitive.** The narrow operational selector
+- **Approved-primitive proposal.** The narrow operational selector
   (`P_readout_selection` instance for this lane) remains an explicit
-  owner-approval option if bridge-first work is intentionally bypassed. It is
-  a governance route, not a derivation.
+  approval option if bridge-first work is intentionally bypassed. It has no
+  premise weight until approved.
 
 ## Non-Claims
 

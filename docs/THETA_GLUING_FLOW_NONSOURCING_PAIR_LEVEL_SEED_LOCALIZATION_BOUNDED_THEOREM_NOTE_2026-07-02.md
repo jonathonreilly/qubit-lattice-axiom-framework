@@ -247,7 +247,7 @@ can do otherwise (exact combinatorial cancellation).
 | phased seeds | TRANSPORT ONLY (T3): the flow moves seed oddness, channel-structured; content localizes at the seed |
 | orientation-anisotropic seed structure | OPEN — exactly (ii'-seed)'s subject: does the framework surface supply it? (the axioms' isotropy/covariance content bears here; not asserted) |
 | defect-mediated sourcing | OPEN — ties to (i-a); not analyzed here |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

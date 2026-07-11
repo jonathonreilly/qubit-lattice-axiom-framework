@@ -257,7 +257,7 @@ tested generic point (exact rank certificate).
 | phase-type (complex) insertion | OPEN — residual (ii'), sharpened: must read the chiral sign |
 | quadratic-order even data (e.g. modulus-squared words) | NOT SETTLED here (beyond the multilinear scope; not claimed either way) |
 | a further global sheet | NOT FOUND (bounded search); proof = named sliver (i-b''-a') |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

@@ -160,7 +160,7 @@ proof.
 2. **h-class theorem.** Derive the fixed-locus density class as the physical
    charged-lepton readout class.
 3. **combined R-eta theorem.** Derive both components in one bridge.
-4. **owner governance.** Register a narrow h-unit or full R-eta premise
+4. **Approved-primitive proposal.** Register a narrow h-unit or full R-eta primitive
    explicitly if derivation is intentionally bypassed.
 5. **theta residuals.** Continue the independent Tier-A theta campaign if AC
    R-eta remains blocked.

@@ -33,17 +33,11 @@ Beyond the axioms, the complete foundation surface is deliberately small:
   interface (a slot for one law-admissible realized state, never a state
   selection). Registered in
   [`docs/audit/data/axiom_premise_nodes.json`](docs/audit/data/axiom_premise_nodes.json).
-- **Tier-A admitted derivation targets (0):** the former `AC_phi_lambda` and
-  strong-CP `theta` targets are retired. Their historical statements, no-go
-  portfolios, and retirement records remain in
+- **Open derivation obligations (2):** the AC occupancy statistical grain and
+  R-eta h-class/h-unit readout. They carry zero premise weight and are tracked
+  in [`docs/audit/data/derivation_obligations.json`](docs/audit/data/derivation_obligations.json).
+  Historical Tier-A records remain provenance only in
   [`docs/audit/data/tier_a_admissions.json`](docs/audit/data/tier_a_admissions.json).
-  The residual owner-governed premise boundaries are recorded separately in
-  [`docs/audit/data/owner_governed_premise_nodes.json`](docs/audit/data/owner_governed_premise_nodes.json);
-  they are not axioms, primitives, or theorem derivations.
-- **Owner-governed residual premises (1 node; 2 atoms):** the live
-  `AC_phi_lambda` governance node contains AC(i), the matter-action occupancy
-  grain, and AC(ii), the R-eta h-class/h-unit readout license. Thus the Tier-A
-  count of zero does not report zero live owner-governed atoms.
 - **Scope condition (not a premise):** the past-hypothesis low-entropy
   magnitude; results that need it are explicit conditionals.
 
@@ -52,8 +46,9 @@ contexts, record-formation rules (which admissible possibility a new record
 locks, at which site, with what weight, at what rate), dynamics and time
 metric, kinetic branch selection, source/action structure,
 physical-observable identification — is downstream content that must be
-derived, bridged, explicitly admitted, or registered before it can bear
-load. That discipline is what the audit ledger enforces.
+derived through retained-grade work or added through explicit axiom/approved-
+primitive review before it can bear load. That discipline is what the audit
+ledger enforces.
 
 ## Read First
 

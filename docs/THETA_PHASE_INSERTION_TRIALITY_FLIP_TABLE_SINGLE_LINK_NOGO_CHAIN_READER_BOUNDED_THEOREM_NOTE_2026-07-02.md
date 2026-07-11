@@ -256,7 +256,7 @@ d flips sign with |d| = 0.667).
 | path-antisymmetrized multi-link chain observables | CONSTRUCTED: read d exactly, frame-licensed, configurational |
 | multi-link cross-plane phase insertion (abelian reduction = e^{i theta Q}) | OPEN — (ii'-final), the derivation half |
 | non-class-function weights | NOT LICENSED here as frame-free insertions; not pursued |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

@@ -110,8 +110,8 @@ def main() -> int:
     check("live derivation targets are empty on current main", tier.get("derivation_targets", {}) == {}, tier.get("derivation_targets"))
     retirement = ac.get("retirement", {})
     check("AC retired-target record is preserved", bool(ac))
-    check("AC retirement date is recorded", retirement.get("date") == "2026-07-05", retirement)
-    check("AC retirement mechanism is owner governance", retirement.get("mechanism") == "retired_by_owner_governance_on_audited_surface", retirement)
+    check("AC obligation correction date is recorded", retirement.get("date") == "2026-07-11", retirement)
+    check("AC obligations are reopened", retirement.get("mechanism") == "historical_governance_retirement_withdrawn_obligations_reopened", retirement)
     check(
         "historical AC decomposition retains R-eta",
         ac["minimum_decomposition"] == [
@@ -121,12 +121,12 @@ def main() -> int:
         ],
         ac["minimum_decomposition"],
     )
-    check("registry prose names density-read-as-angle", "density-read-as-angle" in registry_flat)
+    check("registry prose names R-eta obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
     check("note denies AC retirement", "does not retire" in note_flat and "`AC_phi_lambda(ii)` / R-eta is not derived" in note)
     check("note denies registry/axiom/primitive edits", "does not edit any Tier-A registry" in note_flat and "No registry, axiom, primitive" in note)
-    check("note has current-main posture line", "Current-main posture (2026-07-06)" in note)
-    check("note records live Tier-A zero posture", "Tier-A count\nzero" in note or "Tier-A count zero" in note)
-    check("note says retirement records are not reopened", "does not reopen,\nmodify, or re-grade either retirement record" in note)
+    check("note has current-main posture line", "Current-main posture (2026-07-11)" in note)
+    check("note records open-obligation posture", "open derivation obligation\nwith zero premise weight" in note)
+    check("note says governance is provenance only", "historical governance decision is provenance\nonly" in note)
 
     section("B - Record formation axiom boundary")
 

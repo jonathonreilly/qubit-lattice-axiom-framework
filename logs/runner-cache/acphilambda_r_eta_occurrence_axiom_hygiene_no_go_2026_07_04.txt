@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_r_eta_occurrence_axiom_hygiene_no_go_2026_07_04.py
+runner_sha256: d68f38394537ac939f6a37d228c9f379edabbc5c6a697817678160e64470c900
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
 AC_phi_lambda R-eta occurrence axiom-hygiene no-go verifier
 
 ========================================================================================
@@ -13,14 +21,15 @@ A. source presence and Tier-A boundary
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 [PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
 [PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
-[PASS] Tier-A has a live genuine admitted input
+[PASS] Tier-A has no live admitted inputs
+[PASS] Tier-A live target map is empty
 [PASS] AC minimum decomposition keeps R-eta
 [PASS] AC statement still names R-eta
-[PASS] human registry names R-eta
+[PASS] human registry points to the R-eta derivation obligation
 [PASS] note says registry is not edited
 [PASS] note says R-eta is not retired
-[PASS] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md effective status
-[PASS] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md effective status
+[PASS] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md remains ledgered
+[PASS] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md remains ledgered
 
 ========================================================================================
 B. approved premise-node hygiene
@@ -164,7 +173,7 @@ J. no-go discipline and route accounting
 [PASS] route accounting phrase present: The generic Record occurrence route is clo
 [PASS] route accounting phrase present: Coherence-reading events
 [PASS] route accounting phrase present: Rate-normalization theorem
-[PASS] route accounting phrase present: Owner governance route
+[PASS] route accounting phrase present: Approved-primitive route
 [PASS] forbidden phrase absent: R-eta is derived
 [PASS] forbidden phrase absent: R-eta is retired
 [PASS] forbidden phrase absent: AC_phi_lambda is retired
@@ -181,8 +190,11 @@ K. markdown dependency and context-link control
 [PASS] occurrence bridge is context only, not markdown-linked
 [PASS] occurrence-clock note is context only, not markdown-linked
 [PASS] note line count is bounded
-[PASS] verification block expects 139 passes
+[PASS] verification block expects 140 passes
 
 ========================================================================================
-TOTAL: PASS=139 FAIL=0
+TOTAL: PASS=140 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

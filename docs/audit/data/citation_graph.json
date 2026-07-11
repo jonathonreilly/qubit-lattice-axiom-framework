@@ -115409,7 +115409,7 @@
         "post_record_clock_rate_interface_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "30821dc376f71ebe5e0f7e40fcc2fb1bbf335c11ad6a5356641d0a06a3ea5dec",
+      "note_hash": "ff9c7668bd94cd1cf5b072a6d97abaf53dd0ad5a93e4b85a140d70f21c7f28f6",
       "path": "docs/SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md",
       "runner_path": "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py",
       "title": "Single-Clock Physical-Clock Admission Inventory N5 Support"

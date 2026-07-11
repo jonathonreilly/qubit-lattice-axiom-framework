@@ -33772,12 +33772,12 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 6,
-        "D": 7
+        "B": 2,
+        "C": 5,
+        "D": 4
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": "C",
       "runner": "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py"
     },
     "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": {
@@ -90631,12 +90631,12 @@
       ],
       "counts": {
         "A": 0,
-        "B": 1,
-        "C": 6,
-        "D": 7
+        "B": 2,
+        "C": 5,
+        "D": 4
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/site_license_tick_dichotomy_all_periods_2026_06_11.py": {
@@ -93371,8 +93371,8 @@
     "dominant_class_distribution": {
       "A": 511,
       "B": 661,
-      "C": 1314,
-      "D": 457,
+      "C": 1315,
+      "D": 456,
       "none": 459
     },
     "runners_classified": 3402,

@@ -37929,6 +37929,18 @@
       "to": "quark_e_channel_endpoint_quotient_law_note_2026-04-19"
     },
     {
+      "from": "rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11",
+      "to": "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10"
+    },
+    {
+      "from": "rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11",
+      "to": "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09"
+    },
+    {
+      "from": "rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11",
+      "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
+    },
+    {
       "from": "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10",
       "to": "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09"
     },
@@ -112569,6 +112581,22 @@
       "runner_path": "scripts/frontier_route2_readout_record_positivity_no_go.py",
       "title": "Registration and Positivity Conditions Do Not Fix the Route-2 Readout rho_E"
     },
+    "rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11": {
+      "claim_id": "rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10",
+        "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
+        "staggered_only_det_positivity_case_a_note_2026-05-17"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "676d31c07eb5c8f10176cd29cae578d9c8bafc1091544efc07654f994a41cc80",
+      "path": "docs/RP_COUPLED_MULTISLICE_HALFSPACE_GAUGE_STAGGERED_OS_GRAM_NARROW_THEOREM_NOTE_2026-07-11.md",
+      "runner_path": "scripts/rp_multislice_halfspace_os_gram_certificate.py",
+      "title": "Coupled multi-slice half-space SU(3) gauge + staggered OS Gram \u2014 narrow theorem note"
+    },
     "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10": {
       "claim_id": "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10",
       "claim_type_author_hint": "positive_theorem",
@@ -129129,7 +129157,7 @@
       "no_go": 336,
       "none": 1205,
       "open_gate": 132,
-      "positive_theorem": 277
+      "positive_theorem": 278
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 2032,
@@ -129138,12 +129166,12 @@
       "no_go": 439,
       "none": 248,
       "open_gate": 206,
-      "positive_theorem": 657
+      "positive_theorem": 658
     },
-    "edge_count": 14560,
-    "leaf_count": 1324,
-    "node_count": 3918,
+    "edge_count": 14563,
+    "leaf_count": 1325,
+    "node_count": 3919,
     "root_count": 1112,
-    "runners_with_path": 3539
+    "runners_with_path": 3540
   }
 }

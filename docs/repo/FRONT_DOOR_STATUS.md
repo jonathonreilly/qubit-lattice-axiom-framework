@@ -28,17 +28,17 @@ Owner-approval history for every axiom/primitive/governance change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3746 |
-| Applied audit verdicts | 548 |
-| Retained-grade rows, including boxed decorations | 473 |
-| Retained positive theorems | 81 |
-| Retained no-go rows | 24 |
+| Ledger rows | 3747 |
+| Applied audit verdicts | 554 |
+| Retained-grade rows, including boxed decorations | 477 |
+| Retained positive theorems | 82 |
+| Retained no-go rows | 27 |
 | Retained bounded rows | 350 |
 | Boxed decorations under retained parents | 18 |
 | Open gates | 4 |
-| Unaudited rows | 2819 |
+| Unaudited rows | 2817 |
 | Retained-pending-chain rows | 9 |
-| Audited conditional rows | 44 |
+| Audited conditional rows | 46 |
 | Audited renaming rows | 14 |
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 10 |
@@ -50,13 +50,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2894 |
+| Total pending rows | 2891 |
 | Ready rows | 598 |
 | Cycle-break targets | 49 |
-| Critical pending | 671 |
+| Critical pending | 667 |
 | High pending | 332 |
 | Medium pending | 760 |
-| Leaf pending | 1131 |
+| Leaf pending | 1132 |
 
 Next ready rows by queue order:
 
@@ -74,15 +74,15 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **563**.
+- Non-retained-grade cited rows in publication tables: **559**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 244 |
+| critical | `unaudited` | 243 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 124 |
-| critical | `audit_in_progress` | 9 |
-| critical | `audited_conditional` | 4 |
+| critical | `audit_in_progress` | 5 |
+| critical | `audited_conditional` | 5 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_conditional` | 1 |
 | high | `audited_failed` | 1 |
@@ -96,11 +96,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3918 |
+| Citation-graph nodes | 3919 |
 | Critical nodes | 764 |
 | High nodes | 398 |
 | Medium nodes | 993 |
-| Leaf nodes | 1763 |
+| Leaf nodes | 1764 |
 
 Top load-bearing rows by graph score:
 

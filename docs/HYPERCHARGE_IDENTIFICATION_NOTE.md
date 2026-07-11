@@ -73,7 +73,7 @@ gl(3) ⊕ gl(1) commutant theorem, that:
 
 The names attached to those representation classes are not theorem content.
 The conventional `quark`/`lepton`, `Q_L`/`L_L` readout is separated into
-`HYPERCHARGE_QUARK_LEPTON_NAMING_CONVENTION_META_NOTE_2026-07-11.md`.
+`HYPERCHARGE_QUARK_LEPTON_NAMING_CONVENTION_NOTE_2026-07-11.md`.
 The theorem below remains fully name-free.
 
 This note does **not** claim to:
@@ -172,7 +172,7 @@ mapping is supplied by
 
 This fixes the two representation classes but no physical species name.
 Conventional quark/lepton naming is meta content in
-`HYPERCHARGE_QUARK_LEPTON_NAMING_CONVENTION_META_NOTE_2026-07-11.md` and is
+`HYPERCHARGE_QUARK_LEPTON_NAMING_CONVENTION_NOTE_2026-07-11.md` and is
 not a load-bearing step here.
 
 ## Name-free carrier decomposition and explicit normalization boundary

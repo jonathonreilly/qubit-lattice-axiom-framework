@@ -84,7 +84,7 @@ def check_source_boundary() -> tuple[int, int]:
         "Downstream squared-trace/GUT catalog quarantine (2026-07-04)",
         "Name-free carrier decomposition and explicit normalization boundary",
         "The theorem below remains fully name-free.",
-        "HYPERCHARGE_QUARK_LEPTON_NAMING_CONVENTION_META_NOTE_2026-07-11.md",
+        "HYPERCHARGE_QUARK_LEPTON_NAMING_CONVENTION_NOTE_2026-07-11.md",
         "Tr_C8[Y_alpha^2] = 24 alpha^2",
         "GUT normalization, `sin^2(theta_W)`, and full-spectrum",
         "Bounded source scope (what the runner numerically verifies",

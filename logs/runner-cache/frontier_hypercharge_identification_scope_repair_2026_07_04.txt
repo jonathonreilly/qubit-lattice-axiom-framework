@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py
-runner_sha256: 1f45a427d6e0fd126ea8ea5f7e3a0c76581289d212c2eab78c48061aa15066b6
+runner_sha256: 5fc0298be698faf47a5f27ad7434dcba4aece165ad73139f9cb2b34ad3deaf47
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13

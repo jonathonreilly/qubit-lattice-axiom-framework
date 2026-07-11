@@ -3,7 +3,7 @@ runner: scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py
 runner_sha256: 97cc2cd693c5dfc9becc6b427160e0c7121f9b8f429d88d700341942060259ca
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================

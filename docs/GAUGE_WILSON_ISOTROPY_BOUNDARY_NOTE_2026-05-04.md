@@ -6,7 +6,7 @@
 **Type:** no_go
 **Claim type:** no_go
 **Claim scope:** route-specific exact negative boundary for the accepted
-Wilson gauge-action isotropy surface: the two PR #528 mechanisms checked here
+Wilson gauge-action isotropy surface: the two named mechanisms checked here
 do not produce a spatial/temporal or orientation-dependent gauge-coupling
 split, and therefore do not justify replacing the accepted isotropic Wilson
 surface by a new anisotropic Wilson action.
@@ -61,8 +61,8 @@ only after independent re-audit.
 
 ## Question
 
-PR #528 asked whether the accepted Wilson gauge action should be changed or
-re-described by a derived anisotropy. The repo governance constraint is that
+The two named mechanisms ask whether the accepted Wilson gauge action should
+be changed or re-described by a derived anisotropy. The repo governance constraint is that
 review-loop must not add new axioms, new foundational premises, or new theory
 language without explicit user approval.
 
@@ -83,7 +83,7 @@ Two narrow boundary checks close as a route-specific no-go:
 
 These checks support the exact negative boundary statement:
 
-> on the accepted Wilson nearest-neighbor plaquette surface, the two PR #528
+> on the accepted Wilson nearest-neighbor plaquette surface, the two named
 > mechanisms checked here do not derive orientation-dependent plaquette
 > coefficients. They provide no basis for replacing the accepted isotropic
 > surface by an anisotropic Wilson action.
@@ -127,7 +127,7 @@ Pi_aniso(c) = c - c_bar 1_6.
 A new anisotropic Wilson action requires `Pi_aniso(c_new) != 0`; a
 spatial/temporal split in particular requires unequal averages over
 `{xy,xz,yz}` and `{xt,yt,zt}`. The accepted input has `c = w 1_6` and
-`Pi_aniso(c) = 0`. The question is exactly whether either proposed PR #528
+`Pi_aniso(c) = 0`. The question is exactly whether either named
 mechanism supplies a nonzero anisotropic orientation datum. In the eta route,
 the object tested below is only the six-entry sign signature `E`; no
 fermion-determinant, hopping-expansion, or source/action map from `E` to a
@@ -237,7 +237,7 @@ Combining the two checks:
 3. the staggered eta route supplies the signature `E = -1_6`, whose
    anisotropic projection vanishes.
 
-Therefore these two PR #528 routes do not derive a new anisotropic Wilson
+Therefore these two named routes do not derive a new anisotropic Wilson
 gauge action: neither supplies the orientation-dependent structure needed for
 a coefficient vector with nonzero anisotropic projection. This conclusion is
 an exact negative boundary for these two mechanisms, not a derivation of
@@ -251,8 +251,8 @@ orientation-dependent coefficient pattern.
 [`GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md`](GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md)
 states the accepted Wilson nearest-neighbor plaquette grammar with one common
 coefficient across the six plaquette orientations. This note does not promote
-that statement or re-axiomatize it. It records that two candidate mechanisms
-from PR #528 do not force a different action surface.
+that statement or re-axiomatize it. It records that the two named candidate
+mechanisms do not force a different action surface.
 
 [`GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md)
 also remains in force on its own narrower scope: an exact reduction

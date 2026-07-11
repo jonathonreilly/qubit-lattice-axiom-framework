@@ -22034,47 +22034,7 @@
     },
     {
       "from": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "to": "three_generation_observable_theorem_note"
-    },
-    {
-      "from": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "to": "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
-    },
-    {
-      "from": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "to": "flavor_asymmetry_2over9_forced_weight_2026-05-31"
-    },
-    {
-      "from": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "to": "flavor_operator_realization_local_density_2026-05-31"
-    },
-    {
-      "from": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "to": "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23"
-    },
-    {
-      "from": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "to": "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
-    },
-    {
-      "from": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "to": "koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16"
-    },
-    {
-      "from": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "to": "s3_cap_uniqueness_note"
-    },
-    {
-      "from": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "to": "pl_topology_infrastructure_textbook_import_note_2026-05-17"
-    },
-    {
-      "from": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "to": "s3_general_r_derivation_note"
+      "to": "minimal_axioms"
     },
     {
       "from": "koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02",
@@ -88652,27 +88612,17 @@
     },
     "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": {
       "claim_id": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "three_generation_observable_theorem_note",
-        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-        "flavor_asymmetry_2over9_forced_weight_2026-05-31",
-        "flavor_operator_realization_local_density_2026-05-31",
-        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
-        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
-        "koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16",
-        "s3_cap_uniqueness_note",
-        "pl_topology_infrastructure_textbook_import_note_2026-05-17",
-        "s3_general_r_derivation_note"
+        "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b80ef4ce70fd6a429e5849a4ad20acfd66c7994c410af015d88cd2e8e78b5668",
+      "note_hash": "fe76b1d61009771c96afc45085393397deb34fe64c2891211aa130e9ca85986d",
       "path": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
       "runner_path": "scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py",
-      "title": "Koide APS C\u2083 Fixed-Locus (1,2) Weights And Local Density \u2014 Narrow Bounded Theorem Note"
+      "title": "C\u2083 Body-Diagonal Fixed Locus and Local Inverse-Determinant Density"
     },
     "koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02": {
       "claim_id": "koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02",
@@ -112165,7 +112115,7 @@
         "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1245283431826017df9ca8e608e1b9b8e63ebfd7e681250eb4631c3cfd193ec9",
+      "note_hash": "89fe36c7ef176de6f6bdc11c1901fb80b1d89374092a21b7398d2aea1002f37e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -129169,24 +129119,24 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1633,
+      "bounded_theorem": 1632,
       "decoration": 3,
       "meta": 333,
       "no_go": 336,
       "none": 1205,
       "open_gate": 132,
-      "positive_theorem": 278
+      "positive_theorem": 279
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2033,
+      "bounded_theorem": 2032,
       "decoration": 3,
       "meta": 333,
       "no_go": 439,
       "none": 248,
       "open_gate": 206,
-      "positive_theorem": 658
+      "positive_theorem": 659
     },
-    "edge_count": 14564,
+    "edge_count": 14554,
     "leaf_count": 1325,
     "node_count": 3920,
     "root_count": 1113,

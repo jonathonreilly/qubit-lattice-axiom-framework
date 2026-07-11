@@ -18709,12 +18709,12 @@
       "runner": "scripts/frontier_koide_aps_block_by_block_forcing.py"
     },
     "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
-        "A": 41,
-        "B": 0,
-        "C": 2,
-        "D": 2
+        "A": 13,
+        "B": 1,
+        "C": 1,
+        "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -45016,15 +45016,15 @@
       "exists": true
     },
     "scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
       ],
       "counts": {
-        "A": 41,
-        "B": 0,
-        "C": 2,
-        "D": 2
+        "A": 13,
+        "B": 1,
+        "C": 1,
+        "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -93512,6 +93512,6 @@
     },
     "runners_classified": 3407,
     "runners_with_C": 1799,
-    "runners_with_D": 1097
+    "runners_with_D": 1096
   }
 }

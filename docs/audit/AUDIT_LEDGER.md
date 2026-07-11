@@ -55,18 +55,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2045 |
+| `bounded_theorem` | 2044 |
 | `decoration` | 26 |
 | `meta` | 357 |
 | `no_go` | 463 |
 | `open_gate` | 195 |
-| `positive_theorem` | 662 |
+| `positive_theorem` | 663 |
 
 | criticality | count |
 |---|---:|
-| `critical` | 756 |
-| `high` | 395 |
-| `medium` | 946 |
+| `critical` | 750 |
+| `high` | 398 |
+| `medium` | 949 |
 | `leaf` | 1651 |
 
 - **Retained pending chain closure:** 9
@@ -76,7 +76,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 - runners classified: 3407
 - runners with (C) first-principles compute hits: 1799
-- runners with (D) external comparator hits: 1097
+- runners with (D) external comparator hits: 1096
 - decoration candidates (no C, no D): 716
 
 ## Top 25 by load-bearing score (topology only)
@@ -85,9 +85,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1960 | 223.44 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1970 | 223.94 | `unaudited` | meta |
 | 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1601 | 64.65 | `audited_clean` | **retained** |
-| 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1226 | 63.26 | `unaudited` | unaudited |
+| 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1185 | 62.71 | `unaudited` | unaudited |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 61.64 | `unaudited` | unaudited |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1046 | 61.53 | `unaudited` | unaudited |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1172 | 50.20 | `audited_clean` | **retained_bounded** |

@@ -132,7 +132,8 @@ def check_reroute_guard() -> None:
         "REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md",
         "RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md",
         "retained-bounded bridge",
-        "factorized reduction target",
+        "joint cross-configuration Gram expansion",
+        "ingredient inventory, not a pointwise product identity",
         "G = W diag(kappa) W^dag",
         "composed parent claim still requires independent audit",
         "does **not** claim",
@@ -145,6 +146,8 @@ def check_reroute_guard() -> None:
         "the sign-repair bridge remains subject to independent audit",
         "conditional Wilson-plane claim still travels with that companion note",
         "This dependency is a source-packet candidate for re-audit",
+        "parent reflected form decomposes into the product/integral of four non-negative factors",
+        "beyond this explicitly scoped factorized reduction target",
     ]
     missing = [phrase for phrase in required_phrases if phrase not in text]
     stale = [phrase for phrase in forbidden_phrases if phrase in text]

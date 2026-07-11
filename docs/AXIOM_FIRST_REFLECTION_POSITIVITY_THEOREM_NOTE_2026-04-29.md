@@ -13,7 +13,7 @@ Wilson temporal-gauge bridge).
 **Primary runner:** [`scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py`](../scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py)
 (parent reroute guard: replays the free staggered 2-step checks C1-C6 through
 the construction runner below, then verifies the retained-bounded Wilson
-temporal-gauge reroute and factorized reduction guard C7).
+temporal-gauge reroute and joint cross-configuration Gram guard C7).
 **Cached primary-runner output:** [`logs/runner-cache/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.txt`](../logs/runner-cache/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.txt)
 **Free-case construction runner:** [`scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py`](../scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py)
 (positive 2-step exhibit; in-repo construction + proof: the free staggered-KS
@@ -182,13 +182,13 @@ gauge-case reduction, plus the single-step no-go runner:
   dependency of this parent row.
 
 The det-positivity and Cauchy-Schwarz authorities are cited only for
-their stated narrow surfaces, each covering one named factor of the
-proposed gauge-case reduction. The free-case derivation below (now
+their stated narrow surfaces, each supplying one named ingredient of the
+joint gauge-case construction. The free-case derivation below (now
 captured in the standalone free-case note) is the load-bearing positive
 theorem support, and the fixed-`SU(3)` gauge-extension note carries it
-to nontrivial background; the full interacting gauge closure remains limited
-to the named factorized reduction claim and must be judged by the independent
-audit lane. This note does not import any fitted value,
+to nontrivial background; the full interacting gauge closure is limited to
+the named joint-Gram claim and must be judged by the independent audit lane.
+This note does not import any fitted value,
 observed target value, literature numerical comparator, same-surface
 family selector, or admitted unit convention.
 
@@ -226,7 +226,8 @@ Wilson plaquette temporal-gauge / gauge-half application:
 This row is therefore rerouted through that bridge rather than through the
 unaudited June 6 sign-repair packet.
 
-On the finite factorized `A_+^(2)` surface above, for generators
+For the bridge's restricted factorized-generator diagnostic (not the general
+mixed-observable claim), take generators
 
 ```text
     F(U,chi) = F_G(U) F_f(chi),
@@ -248,20 +249,25 @@ three-factor RP form
     G = W diag(kappa) W^dag,      kappa >= 0
 ```
 
-on the stated `A_+^(2)` observable basis. Under that bridge, the parent
-reflected form decomposes into the product/integral of four non-negative
-factors:
+on the stated `A_+^(2)` observable basis. The historical pointwise
+four-factor display is **not an identity for a general mixed observable**:
+an arbitrary `F` need not split as `F_G F_f`, and the Wilson plane kernel is
+a cross-configuration Gram kernel rather than a pointwise norm square at one
+`U`.
+
+The valid coupled result is the joint cross-configuration Gram expansion
+proved by the coupled supplier. In its notation,
 
 ```text
-    <Theta(F) F>
-      = integral dU
-          K_mixed(U)
-          det(M_KS[U] + m I)
-          || exp(-S_+(U)) F_G(U) ||^2
-          <vac_U | F_f^dag T_hat^2[U] F_f | vac_U>.
+    G_ij = sum_(gamma,alpha,alpha')
+             kappa_gamma (C_f)_(alpha,alpha')
+             overline(V_(gamma,alpha),i) V_(gamma,alpha'),j,
+    V_(gamma,alpha),i = I_+[Phi_gamma N_alpha F_i],
+    kappa_gamma >= 0,   C_f >= 0.
 ```
 
-The signs of the four factors are supplied one hop:
+The four formerly multiplied quantities form an
+ingredient inventory, not a pointwise product identity. Their valid roles are:
 
 - `K_mixed(U) > 0` from the temporal-gauge mixed-kernel factorization
   theorem
@@ -275,10 +281,10 @@ The signs of the four factors are supplied one hop:
   two-step transfer positivity theorem, with the free construction below as
   its explicit specialization.
 
-Finite linear combinations inherit a positive semidefinite Gram form by
-polarization over these same factorized generators — superseded 2026-07-10:
-the coupled-Gram supplier below establishes the joint PSD kernel directly on
-the full mixed algebra, with no polarization step. This reroute supplies the
+Finite linear combinations are included directly through the moment vector
+`V_(gamma,alpha),i`; no factorized-generator polarization step is used. The
+coupled-Gram supplier below establishes the joint PSD kernel on the full mixed
+algebra. This reroute supplies the
 missing Wilson-plane application named in this row's latest conditional verdict
 from a retained-bounded source. This note still does not mark this parent row
 or any downstream row retained; independent audit must judge the composed
@@ -311,12 +317,10 @@ polynomial, and the joint two-slice Gram is positive semidefinite as the
 tensor product of the plane-kernel Gram and an explicitly computed
 nonnegative fermionic crossing coefficient matrix — for arbitrary finite
 linear combinations on the full mixed `A_+^(2)`, including gauge x fermion
-entangled elements. Accordingly, the four-factor display above should be
-read as the INGREDIENT list of that joint cross-configuration Gram (its sign
-inputs), not as a pointwise-in-`U` product with a norm-square gauge factor;
-the earlier factorized-generators + polarization sentence is superseded by
-the joint-kernel statement. This dated line moves the note hash so the row
-re-enters for re-audit.
+entangled elements. Accordingly, the ingredient inventory above supplies
+sign inputs only; the joint-kernel statement is the authority for mixed
+observables. This dated line moves the note hash so the row re-enters for
+re-audit.
 
 ### In-repo first-principles construction and proof (free case)
 
@@ -427,17 +431,23 @@ The runner builds it explicitly on the Fock space and confirms it is
 Hermitian with `min eig = 0` (PSD), in direct contrast to the
 single-step naive Lagrangian Gram (`min eig = -0.80`). R1 and R2 agree.
 
-### Gauge-case reduction target
+### Gauge-case joint-Gram target
 
-The intended `SU(3)`-gauged staggered 2-step RP closure is the
-following reduction target:
+The intended `SU(3)`-gauged staggered 2-step RP closure is the following
+joint-Gram target, not a pointwise multiplication of four scalar factors:
 
 ```text
-    (temporal-gauge mixed kernel K_mixed(U) > 0)          [retained dep]
-  x (positive determinant weight det(M_KS + m I) > 0)     [retained dep]
-  x (Wilson gauge-half plane-kernel/norm-square bridge)   [retained_bounded dep]
-  x (fixed-background 2-step fermion transfer positivity) [retained_bounded dep]
+    G_ij = sum_(gamma,alpha,alpha')
+             kappa_gamma (C_f)_(alpha,alpha')
+             overline(V_(gamma,alpha),i) V_(gamma,alpha'),j
+
+    with kappa_gamma >= 0 and C_f >= 0 on the full mixed algebra.
 ```
+
+The temporal-gauge mixed kernel, determinant positivity, Wilson plane-kernel
+positivity, and fixed-background two-step transfer positivity are the named
+ingredient authorities used to construct and bound this joint object; they
+are not independent scalar factors whose pointwise product equals the Gram.
 
 The fermion-sector 2-step transfer-matrix positivity is supplied
 in-repo: the free `U = 1` case is the construction above (Steps 1–4 +
@@ -452,9 +462,9 @@ The positive gauge weight is the retained Case A determinant note
 config-by-config on every `SU(3)` background). The gauge/bosonic half is
 now routed through the retained-bounded Wilson temporal-gauge bridge plus the
 abstract gauge-half Cauchy-Schwarz identity, rather than through the abstract
-identity alone. The full interacting `U`-integrated positivity is not claimed
-beyond this explicitly scoped factorized reduction target and remains subject
-to independent audit of this parent row.
+identity alone. The full interacting `U`-integrated positivity is claimed
+only through this explicitly scoped joint-Gram construction and remains
+subject to independent audit of this parent row.
 
 This replaces the prior citation-only treatment: the 2-step blocked
 positivity is now the in-repo first-principles result above (free case

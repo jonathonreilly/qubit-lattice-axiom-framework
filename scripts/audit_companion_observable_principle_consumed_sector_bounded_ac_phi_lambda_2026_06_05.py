@@ -149,7 +149,9 @@ lhs = c*sp.log(x*y)
 rhs = c*sp.log(x) + c*sp.log(y)
 chk("c*log(x) solves f(xy)=f(x)+f(y) identically", sp.simplify(lhs - rhs) == 0)
 # and a constant term is forbidden by the equation (f(1)=f(1)+f(1) => f(1)=0)
-chk("additive constant is forbidden: f(1)=0 forced (no free constant)", True,
+f_one = sp.symbols("f_one", real=True)
+chk("additive constant is forbidden: f(1)=0 forced (no free constant)",
+    sp.solve(sp.Eq(f_one, f_one + f_one), f_one) == [0],
     "f(1*1)=f(1)+f(1) => f(1)=0; Cauchy/Aczel uniqueness gives c*log only")
 # numeric uniqueness: fit c from two points of the consumed amplitude's log, check global
 cfit = (np.log(Zvals[1].real) - np.log(Zvals[0].real))  # arbitrary scale check shape

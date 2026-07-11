@@ -92,7 +92,7 @@ complement decomposes representation-theoretically as a `j = 1` mixed
 time-space block plus a `j = 2` traceless-spatial block, and the rank-two
 trivial block decomposes into `h_tt` and spatial trace. Conventional ADM names
 and the possible Universal-GR interpretation are separated into
-`UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_CONTEXT_META_NOTE.md`; they are not
+`UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_CONTEXT_NOTE_2026-07-11.md`; they are not
 part of this theorem's claim surface.
 
 ## Scope and audit boundary
@@ -356,7 +356,7 @@ constants.
 The theorem closes from (BA-1)–(BA-5) plus the explicit construction of
 `(B, Pi_lapse_trace, G_a, C, P_block)` in the runner. Universal-GR, ADM,
 Hessian, spacetime-background, and Einstein/Regge interpretation is moved in
-full to `UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_CONTEXT_META_NOTE.md` and is
+full to `UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_CONTEXT_NOTE_2026-07-11.md` and is
 not a load-bearing dependency. The live dependency arrows of this note are
 only to its exact runner and cached output.
 

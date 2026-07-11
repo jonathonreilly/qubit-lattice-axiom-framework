@@ -17,11 +17,11 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 244 |
+| critical | `unaudited` | 243 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 124 |
 | critical | `audit_in_progress` | 5 |
-| critical | `audited_conditional` | 4 |
+| critical | `audited_conditional` | 5 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_conditional` | 1 |
 | high | `audited_failed` | 1 |
@@ -105,7 +105,7 @@ publication tables phrase it.
 | critical | `g_bare_rigidity_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | critical | `g_bare_structural_normalization_theorem_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
 | critical | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
-| critical | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
+| critical | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_local_environment_factorization_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |

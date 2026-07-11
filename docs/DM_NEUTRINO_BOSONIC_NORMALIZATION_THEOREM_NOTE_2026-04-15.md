@@ -229,8 +229,8 @@ Authorities cited:
   `W[jGamma_1] = 8 log|1 - j^2/m^2|`, and the weak-coupling per-mode
   normalization identity
   `-m^2 W''(0)/16 = Tr(Gamma_1^dag Gamma_1)/16 = 1`. Its two named
-  premises — the family identification (readout-identification
-  admission class) and the comparator-point declaration — are stated
+  conditions — the family identification (readout-identification
+  condition) and the comparator-point declaration — are stated
   in that note.
 
 The runner-checked content of this note (Part 1 algebra: `Y` nilpotent,

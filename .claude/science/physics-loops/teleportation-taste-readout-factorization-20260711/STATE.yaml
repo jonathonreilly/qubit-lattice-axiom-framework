@@ -1,0 +1,19 @@
+loop_slug: teleportation-taste-readout-factorization-20260711
+mode: run
+target_status: best-honest-status
+runtime_budget: 15m
+cycle_count: 1
+active_route: exact native-parity block certificate
+hard_residual: "Show directly that native sublattice parity has spectator-dependent logical Z blocks in dim > 1."
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md
+  - scripts/frontier_teleportation_taste_readout_operator_model.py
+open_imports: []
+no_go_routes: []
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit the review-clean block, push its science-fix branch, and open the review PR."
+stop_condition: "The scoped factorization artifact is review-clean and packaged for independent re-audit."

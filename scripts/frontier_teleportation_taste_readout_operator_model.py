@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Taste-only readout/operator model for native taste-qubit teleportation.
 
-Status: planning / first artifact. This runner audits native site/taste
+Status: finite operator-factorization open gate. This runner audits native site/taste
 operators against the operational condition needed by the traced logical
 teleportation lane:
 
@@ -97,6 +97,18 @@ class PairOperatorAudit:
 
 
 @dataclasses.dataclass(frozen=True)
+class NativeParityCertificate:
+    cell_sectors: int
+    spectator_sectors: int
+    positive_blocks: int
+    negative_blocks: int
+    sign_sum: int
+    factorizes: bool
+    max_block_identity_error: float
+    passes: bool
+
+
+@dataclasses.dataclass(frozen=True)
 class CaseAudit:
     dim: int
     side: int
@@ -104,6 +116,7 @@ class CaseAudit:
     n_sites: int
     n_env: int
     fixed_pair_equals_axis_x: float
+    native_parity_certificate: NativeParityCertificate
     single_register: tuple[OperatorAudit, ...]
     pair_register: tuple[PairOperatorAudit, ...]
 
@@ -205,6 +218,67 @@ def build_sublattice_z(dim: int, side: int) -> np.ndarray:
         coords = coords_from_index(site, dim, side)
         parity.append((-1) ** sum(coords))
     return np.diag([float(value) for value in parity]).astype(complex)
+
+
+def certify_native_parity(
+    native_z: np.ndarray,
+    factors: SiteFactorization,
+    tolerance: float,
+) -> NativeParityCertificate:
+    """Certify the exact spectator-sign obstruction behind the residual test.
+
+    The signs are integer data from the environment labels.  The matrix check
+    separately verifies that the constructed native operator has precisely the
+    predicted blocks sigma_s Z_logical and no environment off-diagonal terms.
+    """
+
+    signs = tuple(
+        -1 if sum(spectator) % 2 else 1
+        for _, spectator in factors.env_labels
+    )
+    positive_blocks = signs.count(1)
+    negative_blocks = signs.count(-1)
+    sign_sum = sum(signs)
+    cell_sectors = (factors.side // 2) ** factors.dim
+    spectator_sectors = 2 ** (factors.dim - 1)
+
+    predicted_blocks = np.zeros_like(blocks_by_logical_env(native_z, factors))
+    for env_index, sign in enumerate(signs):
+        predicted_blocks[:, env_index, :, env_index] = sign * Z2
+    actual_blocks = blocks_by_logical_env(native_z, factors)
+    max_block_identity_error = float(
+        np.max(np.abs(actual_blocks - predicted_blocks))
+    )
+
+    factorizes = len(set(signs)) == 1
+    if spectator_sectors == 1:
+        exact_counting = (
+            positive_blocks == factors.n_env
+            and negative_blocks == 0
+            and sign_sum == factors.n_env
+        )
+    else:
+        exact_counting = (
+            positive_blocks == negative_blocks == factors.n_env // 2
+            and sign_sum == 0
+        )
+
+    passes = bool(
+        factors.n_env == cell_sectors * spectator_sectors
+        and exact_counting
+        and factorizes == (spectator_sectors == 1)
+        and max_block_identity_error <= tolerance
+    )
+    return NativeParityCertificate(
+        cell_sectors=cell_sectors,
+        spectator_sectors=spectator_sectors,
+        positive_blocks=positive_blocks,
+        negative_blocks=negative_blocks,
+        sign_sum=sign_sum,
+        factorizes=factorizes,
+        max_block_identity_error=max_block_identity_error,
+        passes=passes,
+    )
 
 
 def build_fixed_pair_hop_x(dim: int, side: int) -> np.ndarray:
@@ -375,6 +449,9 @@ def audit_case(dim: int, side: int, tolerance: float) -> CaseAudit:
     identity = np.eye(factors.n_sites, dtype=complex)
 
     native_z = build_sublattice_z(dim, side)
+    native_parity_certificate = certify_native_parity(
+        native_z, factors, tolerance
+    )
     axis_z = build_axis_taste_operator(dim, side, logical_axis, Z2)
     axis_x = build_axis_taste_operator(dim, side, logical_axis, X2)
     fixed_x = build_fixed_pair_hop_x(dim, side)
@@ -529,6 +606,7 @@ def audit_case(dim: int, side: int, tolerance: float) -> CaseAudit:
         n_sites=factors.n_sites,
         n_env=factors.n_env,
         fixed_pair_equals_axis_x=float(np.max(np.abs(fixed_x - axis_x))),
+        native_parity_certificate=native_parity_certificate,
         single_register=audits,
         pair_register=pair_audits,
     )
@@ -720,6 +798,17 @@ def print_case(case: CaseAudit, tolerance: float) -> None:
         "  fixed pair-hop X versus axis-adapted retained-bit X: "
         f"max difference={fmt_float(case.fixed_pair_equals_axis_x)}"
     )
+    certificate = case.native_parity_certificate
+    print(
+        "  native-parity block certificate: "
+        f"{'PASS' if certificate.passes else 'FAIL'}, "
+        f"cells={certificate.cell_sectors}, "
+        f"spectator sectors={certificate.spectator_sectors}, "
+        f"blocks=+{certificate.positive_blocks}/-{certificate.negative_blocks}, "
+        f"sign sum={certificate.sign_sum}, "
+        f"factorizes={certificate.factorizes}, "
+        f"max block error={fmt_float(certificate.max_block_identity_error)}"
+    )
     print("  single-register O_logical tensor I_env tests:")
     for audit in case.single_register:
         print_single_audit(audit, tolerance)
@@ -846,7 +935,7 @@ def main() -> int:
             raise ValueError("--dims supports only 1, 2, and 3")
 
     print("TELEPORTATION TASTE READOUT/OPERATOR MODEL")
-    print("Status: planning / first artifact; quantum state teleportation only")
+    print("Status: finite operator-factorization open gate; quantum state teleportation only")
     print(
         "Criterion: native operator must factor as O_logical tensor I_env for "
         "the retained last KS taste bit"
@@ -883,6 +972,11 @@ def main() -> int:
 
     unexpected: list[str] = []
     for case in cases:
+        if not case.native_parity_certificate.passes:
+            unexpected.append(
+                f"dim={case.dim} side={case.side} native-parity block "
+                "certificate failed"
+            )
         for audit in case.single_register:
             expected = expected_single_pass(case, audit)
             if audit.passes != expected:

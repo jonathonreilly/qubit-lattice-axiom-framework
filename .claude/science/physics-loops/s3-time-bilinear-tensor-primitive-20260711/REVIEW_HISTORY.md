@@ -70,3 +70,13 @@ Final review-loop disposition: **pass**.
 - All pipeline-regenerated audit, publication effective-status, divergence,
   and front-door files restored from `origin/main`; no authority output is in
   the science diff.
+
+## Delivery-cache validation
+
+- The first PR audit run passed but reported an advisory stale-cache finding:
+  the changed runner output predated the repository's SHA-pinned cache header.
+- Rebased cleanly again onto current `origin/main`, regenerated the sole
+  PR-diff runner cache with `precompute_audit_runners.py`, and confirmed
+  `--check-only` reports `fresh: 1`, `stale: 0`, `missing: 0`.
+- This correction changes packaging metadata only; the exact runner remains
+  PASS=11, FAIL=0 and the review-loop science disposition remains pass.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_occurrence_axiom_hygiene_no_go_2026_07_04.py
-runner_sha256: d68f38394537ac939f6a37d228c9f379edabbc5c6a697817678160e64470c900
+runner_sha256: 6ca9d9b79effe69132a32e1bc540d6a0116e44a3a8fc965ddc680bd75b421d4a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.60
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta occurrence axiom-hygiene no-go verifier
@@ -14,7 +14,7 @@ A. source presence and Tier-A boundary
 [PASS] exists: docs/ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
 [PASS] exists: docs/audit/data/axiom_premise_nodes.json
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
 [PASS] exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md

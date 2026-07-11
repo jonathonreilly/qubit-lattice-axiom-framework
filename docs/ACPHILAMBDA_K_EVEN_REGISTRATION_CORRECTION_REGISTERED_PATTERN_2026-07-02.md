@@ -40,7 +40,7 @@ The dependency premise quotes below are verbatim sentences from the dependency n
 Premise scope quotes (RECORD Claim): "A record-preserving generation dynamics — forced block-diagonal in the singlet (+) doublet decomposition by `[H, S] = 0` — **conserves** the realized state's singlet/doublet block weight under `H`-evolution" and "The within-sector measure `(r, delta)` is therefore conserved/preserved by the record-preserving dynamics, **not** a relaxation outcome of it."
 Premise scope quotes (BRANNEN Claim): "On the supplied C3[111] generation 3-space, a local Hermitian generator commuting with the [111] 3-fold rotation `C`, namely `[H,C]=0`, has the circulant form `H = a I + b C + conj(b) C^T`." and "It has exactly three real couplings, written as `(a, |b|, delta)`, and is non-demolition for the supplied einselected pointer `S = C + C^2`."
 
-The Tier-A registry data path is `docs/audit/data/tier_a_admissions.json`.
+The former admission data is preserved without authority at `docs/audit/data/premise_decision_history.json`.
 Its sub-admission (ii) is quoted here as the residual owner text:
 "the delta readout identification R-eta (density-read-as-angle; the magnitude 2/9 is retained-bounded fixed-locus arithmetic conditional on R-eta, not an admitted number)".
 

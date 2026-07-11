@@ -291,7 +291,7 @@ print("\n=== Part E: residual analysis -- P2 routes into the (M)/AC_phi_lambda "
 # P2 itself is therefore neither an independent theorem nor a hidden
 # third admission.
 repo_root = Path(__file__).resolve().parents[1]
-tier_a_path = repo_root / "docs/audit/data/tier_a_admissions.json"
+tier_a_path = repo_root / "docs/audit/data/premise_decision_history.json"
 tier_a = json.loads(tier_a_path.read_text())
 labels = {v["label"] for v in tier_a["derivation_targets"].values()}
 tier_a_registry_ok = (

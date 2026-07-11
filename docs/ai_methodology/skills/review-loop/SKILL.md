@@ -82,25 +82,24 @@ bounded theorem surfaces when they are scoped, labelled, and
 dependency-checked; repo-wide axiom additions and primitive additions are not
 review-loop fixes.
 
-Review-loop must keep accepted premise classes distinct. Repo-wide axioms and
+Review-loop must enforce the two supplied premise types. Repo-wide axioms and
 explicitly approved framework primitives are registered in
 `docs/audit/data/axiom_premise_nodes.json` and chain-satisfy dependencies
-without making downstream rows `retained_bounded`. Tier-A admitted derivation
-targets are registered in `docs/audit/data/tier_a_admissions.json` and
-chain-satisfy only at `retained_bounded` until retired by a retained
-derivation. Record is part of the approved `minimal_axioms` node in its narrow
-permanent-record form, not a Tier-A admission; the older
+without making downstream rows `retained_bounded`. No admission class exists;
+`docs/audit/data/premise_decision_history.json` is provenance only and never
+chain-satisfies. Record is part of the approved `minimal_axioms` node in its
+narrow permanent-record form; the older
 `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` parent is not an axiom-premise node.
-The scale-reference primitive is the approved units primitive, not a Tier-A
+The scale-reference primitive is the approved units primitive, not an
 admission or a bounded Planck import. The kinetic-isotropy primitive is the
-approved structural OS0 kinetic-form isotropy `c_t = c_s`, not a Tier-A
+approved structural OS0 kinetic-form isotropy `c_t = c_s`, not an
 admission or a bounded-status source; it supplies no dynamics, Lorentz-closure
 theorem, absolute scale, spacing-ratio theorem, mass ratio, coupling, mixing
 angle, phase, selector, readout bridge, probability rule, normalization rule,
 or empirical match. New axioms and new primitives both require explicit owner
 approval and a reviewed registry/policy update before review-loop may treat
 them as accepted premises.
-Before naming a changed dependency as an import, wall, Tier-A admission, or
+Before naming a changed dependency as an import, wall, or
 bounded-status source, perform the primitive registry check in
 `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. In particular, if
 the dependency is only the registered `scale_reference_primitive`, treat the
@@ -206,7 +205,7 @@ Parse:
    - `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`
    - `docs/audit/data/axiom_premise_nodes.json` and the source notes named by
      relevant primitive nodes
-   - `docs/audit/data/tier_a_admissions.json`
+   - `docs/audit/data/premise_decision_history.json`
    - `docs/publication/ci3_z3/` when publication-facing files changed
    - `docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md` when
      quantitative or imported-value claims changed

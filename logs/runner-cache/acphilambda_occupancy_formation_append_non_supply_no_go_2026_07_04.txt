@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py
-runner_sha256: 49b8a496501e75ea589d5092e807fd9f0c9bb12e71a6ed78496b55a349830ed0
+runner_sha256: 486a769980e5f8d92f8c33eda36e0d72b9f9adefbb6072b7c8d61b85e58b2d02
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.26
+elapsed_sec: 1.41
 status: ok
 ----- stdout -----
 AC_phi_lambda occupancy formation-append non-supply verifier
@@ -12,7 +12,7 @@ AC_phi_lambda occupancy formation-append non-supply verifier
 A. source presence, metadata, and no-overclaim firewall
 ================================================================================================
 [PASS] exists: docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/audit/data/derivation_obligations.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md

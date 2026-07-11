@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py
+runner_sha256: 39c9124bc712c6db08288ac1d618fb899b304327ba03a943c4c72e9e35b6c608
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.52
+status: ok
+----- stdout -----
 theta G1 defect-closure current-surface no-go verifier
 
 ========================================================================================
@@ -6,20 +14,20 @@ A. source presence and ledger grounding
 [PASS] exists: docs/THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md
 [PASS] exists: docs/THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md
 [PASS] exists: docs/THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
-[PASS] positive source is present on current main
-[PASS] positive has no pre-generated ledger authority requirement
+[PASS] positive ledger row resolves
+[PASS] positive row has note path
 [PASS] carrier4d ledger row resolves
 [PASS] carrier4d row has note path
-[PASS] axiom_no_go source is present on current main
-[PASS] axiom_no_go has no pre-generated ledger authority requirement
-[PASS] g3_no_go source is present on current main
-[PASS] g3_no_go has no pre-generated ledger authority requirement
+[PASS] axiom_no_go ledger row resolves
+[PASS] axiom_no_go row has note path
+[PASS] g3_no_go ledger row resolves
+[PASS] g3_no_go row has note path
 [PASS] minimal ledger row resolves
 [PASS] minimal row has note path
 [PASS] registry ledger row resolves
@@ -32,19 +40,19 @@ A. source presence and ledger grounding
 [PASS] new note has Claim type no_go
 
 ========================================================================================
-B. Tier-A registry remains untouched
+B. admission-era decision history
 ========================================================================================
-[PASS] live Tier-A genuine count is zero
+[PASS] decision history preserves zero final admission count
 [PASS] canonical Tier-A IDs are empty on current main
 [PASS] live derivation targets are empty on current main
 [PASS] theta retired-target record is preserved
-[PASS] theta retirement date is recorded
+[PASS] theta disposition correction date is recorded
 [PASS] AC retired-target record is preserved
-[PASS] AC retirement date is recorded
+[PASS] AC disposition correction date is recorded
 [PASS] historical theta minimum decomposition preserves gauge plus mass
 [PASS] historical AC decomposition preserves three old atoms
 [PASS] note preserves boundary: Theta is not retired.
-[PASS] note preserves boundary: The Tier-A registry is not edited.
+[PASS] note preserves boundary: No admission registry is created.
 [PASS] note preserves boundary: No axiom or primitive is changed.
 [PASS] note preserves boundary: No audit status or effective status is changed.
 [PASS] note preserves boundary: No mass-side determinant-channel bridge is supplied.
@@ -52,11 +60,11 @@ B. Tier-A registry remains untouched
 [PASS] machine registry theta text includes mass_side_orientation_determinant_readout_bridge
 [PASS] machine registry theta text includes multi-plaquette / large-gauge-winding account
 [PASS] machine registry theta text includes determinant-readout bridge
-[PASS] human registry theta text includes multi-plaquette / large-gauge-winding account
-[PASS] human registry theta text includes determinant-readout bridge
+[PASS] decision history theta text includes multi-plaquette / large-gauge-winding account
+[PASS] decision history theta text includes determinant-readout bridge
 [PASS] note has current-main posture line
-[PASS] note records live Tier-A zero posture
-[PASS] note says retirement records are not reopened
+[PASS] note records absence of an admission registry
+[PASS] note does not create an admission registry
 
 ========================================================================================
 C. source-packet boundary checks
@@ -81,7 +89,7 @@ C. source-packet boundary checks
 [PASS] minimal axioms withhold: Only records are readable
 [PASS] axiom-update no-go supports G1 boundary: does not supply the theta gauge-side winding
 [PASS] axiom-update no-go supports G1 boundary: physical topological-sector/gauge-action bridge
-[PASS] axiom-update no-go supports G1 boundary: The Tier-A registry is not edited.
+[PASS] axiom-update no-go supports G1 boundary: No admission registry is created.
 [PASS] axiom-update no-go supports G1 boundary: Theta is not retired.
 [PASS] G3 block leaves G1 live: G1 defect closure in parallel
 [PASS] G3 block leaves G1 live: prove or refute physical suppression of `dn != 0`
@@ -101,7 +109,7 @@ D. note fan-out and no-go claim
 [PASS] route fan-out row present: Record/readout rule
 [PASS] route fan-out row present: Admissibility
 [PASS] route fan-out row present: G3 phase insertion work
-[PASS] route fan-out row present: Tier-A registry
+[PASS] route fan-out row present: admission registry
 [PASS] movement sentence present: G1 is now isolated as the missing closedness-or-suppress
 [PASS] movement sentence present: The carrier is explicitly conditional on `dn = 0`
 [PASS] movement sentence present: It is only an unrestricted-branch-sum no-go
@@ -204,7 +212,7 @@ I. note discipline and controlled links
 [PASS] forbidden overclaim absent: Theta is retired
 [PASS] forbidden overclaim absent: theta_bar = 0 is derived
 [PASS] forbidden overclaim absent: future defect-closure work is ruled out
-[PASS] forbidden overclaim absent: we edit the Tier-A registry
+[PASS] forbidden overclaim absent: we create an admission registry
 [PASS] forbidden overclaim absent: audit status is upgraded
 [PASS] forbidden overclaim absent: effective status is upgraded
 [PASS] markdown link inventory is controlled
@@ -214,3 +222,6 @@ I. note discipline and controlled links
 ========================================================================================
 TOTAL: PASS=175 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

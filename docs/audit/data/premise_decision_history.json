@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "description": "Historical registry provenance only. Live admitted derivation targets are forbidden: the supplied premise surface contains exactly axioms and approved primitives from axiom_premise_nodes.json. Historical AC_phi_lambda and theta statements, no-go portfolios, and prior disposition records remain under retired_derivation_targets. The two unresolved AC scientific statements are current open, non-premise entries in derivation_obligations.json. Y0 and g0 are vacuous survey conventions only: not inputs, derivation targets, accepted premises, or status-bounding dependencies. Standard textbook theorems must earn retained-grade inline. Human-readable history: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md.",
+  "description": "Non-authoritative premise-decision history. This file preserves superseded admission-era statements and dispositions solely for provenance. It is not a premise registry, is never read by chain-closure tooling, and supplies no physics content. The live supplied foundation is exactly the axioms and approved primitives in axiom_premise_nodes.json. Unresolved scientific work lives only in derivation_obligations.json.",
   "genuine_admitted_input_count": 0,
   "canonical_ids": [],
   "derivation_targets": {},

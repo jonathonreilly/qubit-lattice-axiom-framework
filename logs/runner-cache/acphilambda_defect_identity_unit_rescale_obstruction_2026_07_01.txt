@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py
-runner_sha256: 10171a995f4058b79747c51159b06182314a8d90647e39937ffd7f72e2a5b07d
+runner_sha256: 152813aa293b06d725a460d86505c16afbede26b440aad3b3695b62261c71683
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.61
@@ -12,7 +12,7 @@ PART A -- cited sources and boundary text
 [PASS] docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md exists
 [PASS] docs/MINIMAL_AXIOMS_2026-06-29.md exists
 [PASS] docs/audit/data/axiom_premise_nodes.json exists
-[PASS] docs/audit/data/tier_a_admissions.json exists
+[PASS] docs/audit/data/premise_decision_history.json exists
 [PASS] docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md exists
 [PASS] docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md exists
 [PASS] docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md exists

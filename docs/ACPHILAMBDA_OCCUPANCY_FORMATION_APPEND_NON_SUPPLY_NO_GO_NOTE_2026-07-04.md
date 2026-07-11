@@ -64,7 +64,7 @@ not derive it.
   avoid contradicting the current lane vocabulary; the proof does not require
   them to be retained-grade.
 - [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
-  and [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json)
+  and [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json)
   preserve the doublet reading/occupancy selection in the historical
   `AC_phi_lambda` decomposition under `retired_derivation_targets`. The
   current open atom is tracked in
@@ -179,7 +179,7 @@ exactly:
 
 | cited surface | cited residual | residual checked here | match |
 |---|---|---|---|
-| `tier_a_admissions.json` historical AC entry | historical `reading_occupancy_selection` atom | formation occurrence does not select the count-once/count-twice dictionary | yes |
+| `premise_decision_history.json` historical AC entry | historical `reading_occupancy_selection` atom | formation occurrence does not select the count-once/count-twice dictionary | yes |
 | `derivation_obligations.json` AC occupancy row | exact open matter-action occupancy-grain target | current open target is separate from derivation by the formation append | yes |
 
 The value face, R-eta, and species-bridge lanes remain distinct from this

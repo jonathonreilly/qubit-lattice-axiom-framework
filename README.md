@@ -36,8 +36,9 @@ Beyond the axioms, the complete foundation surface is deliberately small:
 - **Open derivation obligations (2):** the AC occupancy statistical grain and
   R-eta h-class/h-unit readout. They carry zero premise weight and are tracked
   in [`docs/audit/data/derivation_obligations.json`](docs/audit/data/derivation_obligations.json).
-  Historical Tier-A records remain provenance only in
-  [`docs/audit/data/tier_a_admissions.json`](docs/audit/data/tier_a_admissions.json).
+  Superseded admission-era decisions are non-authoritative provenance in
+  [`docs/audit/data/premise_decision_history.json`](docs/audit/data/premise_decision_history.json).
+  There is no admission registry or third supplied-premise class.
 - **Scope condition (not a premise):** the past-hypothesis low-entropy
   magnitude; results that need it are explicit conditionals.
 

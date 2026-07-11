@@ -91,7 +91,7 @@ the Tier-A registry.
    `exp((beta/3) Re Tr W)` and character basis used for the nonabelian
    contrast (Section F of the runner).
 
-3. **Tier-A theta registry text** (docs/audit/data/tier_a_admissions.json,
+3. **Tier-A theta registry text** (docs/audit/data/premise_decision_history.json,
    gauge side, quoted exactly):
 
    > "(a) gauge side -- theta_gauge = 0 in the topological-sector weighting,

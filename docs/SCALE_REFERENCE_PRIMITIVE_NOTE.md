@@ -48,13 +48,12 @@ content is otherwise clean.
 
 ## Audit-Pipeline Treatment
 
-The machine-readable distinction is:
+The machine-readable rule is:
 
 - `docs/audit/data/axiom_premise_nodes.json` lists framework axioms and
   explicitly approved framework primitives. These dependencies chain-satisfy
   without bounding downstream rows.
-- `docs/audit/data/tier_a_admissions.json` lists non-axiom derivation-target
-  admissions. These dependencies chain-satisfy only at `retained_bounded`
-  until the relevant admission is retired by a retained derivation.
+- no admission registry or third premise class exists. Every other scientific
+  dependency must be retained-derived or remain conditional/open.
 
-The scale-reference primitive belongs to the first registry, not the second.
+The scale-reference primitive belongs to the sole foundation registry.

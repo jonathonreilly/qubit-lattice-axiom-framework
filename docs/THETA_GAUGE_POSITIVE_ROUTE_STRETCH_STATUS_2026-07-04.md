@@ -6,7 +6,7 @@
 **Scope boundary:** route-status synthesis for the positive theta gauge-side
 winding route after the axiom-update shortcut checks. This note does not
 derive, refute, re-grade, retire, or remove theta, does not set
-`theta_bar = 0`, and does not edit any Tier-A registry, axiom, primitive,
+`theta_bar = 0`, and does not create any admission registry, axiom, primitive,
 audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
 **Current-main posture (2026-07-11):** theta's gauge-side retained disposition
@@ -114,7 +114,7 @@ The runner rechecks the small algebra that makes the synthesis sharp:
 ## What Does Not Move
 
 - Theta is not retired.
-- The Tier-A registry is not edited.
+- No admission registry is created.
 - No positive retained-grade proposal is made.
 - No source packet's audit status is changed.
 - No physical `SU(3)` theta sector, continuum limit, or record/readout

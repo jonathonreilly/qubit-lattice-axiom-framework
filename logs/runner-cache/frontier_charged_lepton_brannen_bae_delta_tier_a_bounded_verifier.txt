@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.py
-runner_sha256: 194b967d1c29b89e94a35e6b5ae6615b07532f5ab71efc0fa84a06134e0234ee
+runner_sha256: 0250bef7eeaf8f7a9b84bd538fb842495039b42d073d561de1c562435730542f
 timeout_sec: 120
-exit_code: 0
+exit_code: 1
 elapsed_sec: 0.13
-status: ok
+status: nonzero_exit
 ----- stdout -----
 
 === Charged-Lepton Brannen-BAE Delta Tier-A Bounded Theorem ===
@@ -17,7 +17,7 @@ Scope: bounded_theorem on Brannen-BAE algebraic chain under EXPLICIT
 [PASS] S1.b: amplitude coefficient is sqrt(2) (BAE Tier-A admission)  (sqrt(2) is the BAE amplitude; part of AC_phi_lambda Tier-A bundle per registry)
 [PASS] S1.c: phase increment is the Z_3 native step 2*pi/3  (Z_3 character step (framework-native angular unit alpha_2))
 [PASS] S2.ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md: Tier-A authority present on origin/main  (registry classifies AC_phi_lambda as Tier-A admitted input)
-[PASS] S2.tier_a_admissions.json: Tier-A authority present on origin/main  (registry classifies AC_phi_lambda as Tier-A admitted input)
+[FAIL] S2.premise_decision_history.json: Tier-A authority present on origin/main  (registry classifies AC_phi_lambda as Tier-A admitted input)
 [PASS] S2.no_go_portfolio: AC_phi_lambda no_go portfolio members present on origin/main  (3/3 no_go rows present (acknowledged as boundary, not weakened))
 [PASS] S3.electron: sorted positive ratio matches independent target exactly  (computed 0.040349908219207, target 0.040349908219207)
 [PASS] S3.muon: sorted positive ratio matches independent target exactly  (computed 0.580211920147537, target 0.580211920147537)
@@ -35,10 +35,9 @@ Scope: bounded_theorem on Brannen-BAE algebraic chain under EXPLICIT
 [PASS] H7: does NOT make any neutrino-sector claim  (charged-lepton chamber only; neutrino sector entirely out of scope)
 [PASS] H8: does NOT propose new axiom or new theory-language extension  (uses the framework baseline, retained Koide theorems, and Tier-A registry only)
 
-PASS=21  FAIL=0
+PASS=20  FAIL=1
 
-All bounded-theorem checks PASSED under Tier-A admission framing.
-Independent audit and generated pipeline status decide post-landing standing.
+1 CHECK(S) FAILED.
 
 ----- stderr -----
 

@@ -48,11 +48,11 @@ Minimum refresher surfaces:
   primitives enter assumption, import, wall, and bounded-status judgments;
 - `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` for the approved scale-reference
   primitive boundary;
-- `docs/audit/data/axiom_premise_nodes.json` and
-  `docs/audit/data/tier_a_admissions.json` for accepted-premise class
-  distinctions;
+- `docs/audit/data/axiom_premise_nodes.json` for the complete supplied
+  foundation, and `docs/audit/data/premise_decision_history.json` only when
+  historical provenance is relevant;
 - `docs/ai_methodology/skills/review-loop/SKILL.md` for current review/audit
-  boundaries, especially the axiom/primitive/Tier-A distinction and Record
+  boundaries, especially the axiom/approved-primitive distinction and Record
   guardrails;
 - `docs/repo/CONTROLLED_VOCABULARY.md` when proposing names, statuses, or new
   surfaces.
@@ -140,7 +140,7 @@ Rules:
 - Treat existing framework content as useful evidence, not as immune from
   challenge. A retained row can still reveal a hidden premise or a route that
   should be attacked differently.
-- Separate accepted premises, Tier-A admissions, bounded dependencies, empirical
+- Separate axioms/primitives, open obligations, bounded dependencies, empirical
   comparators, conventions, and mere prose habits.
 - For each assumption, write a real "what if wrong?" entry. If no consequence is
   visible, say what would have to be inspected to know.

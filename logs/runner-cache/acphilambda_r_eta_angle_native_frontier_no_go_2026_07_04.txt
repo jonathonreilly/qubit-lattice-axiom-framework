@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py
-runner_sha256: 2502176fe21fc5a5793b00c18af3defbc7810a71767c609ec5dbf4ff0abd6a9b
+runner_sha256: c87699a919785637127c0be290e410dd2e5df5973d6f629fc66cc6b2990c8520
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.87
+elapsed_sec: 1.02
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta angle-native frontier no-go verifier
@@ -12,7 +12,7 @@ AC_phi_lambda R-eta angle-native frontier no-go verifier
 A. source and registry boundaries
 ========================================================================================
 [PASS] exists: docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md
 [PASS] exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_occupancy_readout_exponent_berezin_subsumption_2026_06_09.py
-runner_sha256: dc2651a080f942e01a10630b7ba5fce498392e33940ccb144dcd4944e048a87b
+runner_sha256: c3737e0f1030b634c7622793aa74d3b046cbac2d0f33813995baf314533fd851
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.51
-status: ok
+exit_code: 1
+elapsed_sec: 0.39
+status: nonzero_exit
 ----- stdout -----
 ========================================================================================
 OCCUPANCY EXPONENT SUBSUMPTION: CONDITIONAL ON THE EXISTING STAGGERED GATE
@@ -34,7 +34,7 @@ B3: Berezin uniqueness + the engine reproduces det_C (Dirac) and Pf (Majorana)
 B4: THE SUBSUMPTION -- polarization from the EXISTING gate decides the cell
 ----------------------------------------------------------------------------------------
   [PASS] cell map cross-checked VERBATIM against the landed fork table: exponent 1 (Dirac/det_C) -> holo cells (r=1/2, Q=2/3); exponent 2 (Majorana/Pf^2=det_R) -> real cells (r=1, Q=1)  (the #3138 guard)
-  [PASS] the polarization supplier is the EXISTING registered Tier-A gate (staggered_dirac_realization_gate, mechanically verified in tier_a_admissions.json) => the occupancy exponent is CONDITIONAL under {existing gate, K/CPT covariance}; MAXENT-R is not consumed; no additional Tier-A node is introduced  --  canonical_ids contains the gate: True
+  [FAIL] the polarization supplier is the EXISTING registered Tier-A gate (staggered_dirac_realization_gate, historically recorded in premise_decision_history.json) => the occupancy exponent is CONDITIONAL under {existing gate, K/CPT covariance}; MAXENT-R is not consumed; no additional Tier-A node is introduced  --  canonical_ids contains the gate: False
 
 ----------------------------------------------------------------------------------------
 B5: Kraus closure of D1's classical-only gap (general quantum channels)
@@ -67,7 +67,7 @@ B9: net
   [PASS] what was NOT shown: an unconditional derivation (impossible); any change to the gate's own Tier-A status; any audit status
 
 ========================================================================================
-SUMMARY: PASS=20 FAIL=0
+SUMMARY: PASS=19 FAIL=1
 ========================================================================================
 
 ----- stderr -----

@@ -282,7 +282,7 @@ audit dependency transparent.
   dimensionless generation-pattern part of that admission (occupancy/`Q`
   selection and `delta` readout) is the Tier-A `AC_phi_lambda` entry,
   [STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-  (`docs/audit/data/tier_a_admissions.json`); the absolute scale pin `m_*`
+  (`docs/audit/data/premise_decision_history.json`); the absolute scale pin `m_*`
   remains the separate open scale residual.
 
 The chart/readout constants `E1 = sqrt(8/3)`, `E2 = sqrt(8)/3`, `gamma = 1/2`,

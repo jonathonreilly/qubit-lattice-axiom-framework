@@ -22,7 +22,7 @@ addendum adds no new claim.
 - The owner ruling followed option 1: theta was retired from live Tier-A by
   retained derivation on 2026-07-05 (PR #3511), admitted-input count 2 -> 1,
   with the discharge basis and scope recorded in
-  `docs/audit/data/tier_a_admissions.json` and the Tier-A retirement record
+  `docs/audit/data/premise_decision_history.json` and the Tier-A retirement record
   in `docs/audit/AXIOM_MINIMALITY_POLICY.md`. Both cite this artifact at
   this path; this landing resolves that citation.
 - A later 2026-07-05 governance decision attempted to retire

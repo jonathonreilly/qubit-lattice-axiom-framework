@@ -161,7 +161,7 @@ is an `R`-valued transport coordinate.
 ## Cross-Lane Observation (context only)
 Observation, not a derivation; no dependency is created. The theta mass-side
 admission also lives on an `arg det` surface: the Tier-A registry entry
-`strong_cp_theta_zero_note` (label `theta`, `docs/audit/data/tier_a_admissions.json`)
+`strong_cp_theta_zero_note` (label `theta`, `docs/audit/data/premise_decision_history.json`)
 reads "the discrete orientation arg det M in {0, pi} -> 0 on the K-real
 reading", while PR #4783 and this note place the charged-lepton unit wall on
 `arg det(b C)`. Both Tier-A admissions are therefore arg-det-phase selections.

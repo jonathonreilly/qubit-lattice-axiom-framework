@@ -122,7 +122,7 @@ into two named sub-walls, and residual (ii) acquires its exact 4D template:
    not claimed.
 
 2. **Tier-A theta registry text**
-   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
+   ([`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json),
    gauge side, quoted exactly):
 
    > "(a) gauge side -- theta_gauge = 0 in the topological-sector weighting,

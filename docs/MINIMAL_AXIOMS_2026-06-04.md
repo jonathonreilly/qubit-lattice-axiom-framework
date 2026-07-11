@@ -84,7 +84,7 @@ Axioms and approved primitives are not Tier-A admitted derivation targets.
 Depending on the Lattice, Quantum, or Record axiom, or on an explicitly
 approved primitive such as `scale_reference_primitive`, must not be treated as
 a source of bounded status. Bounded status belongs to non-axiom Tier-A
-admissions recorded in `docs/audit/data/tier_a_admissions.json`.
+admissions recorded in `docs/audit/data/premise_decision_history.json`.
 
 ## Relation To The Older Observable-Principle Parent
 

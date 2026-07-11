@@ -88,9 +88,10 @@ action, positivity/reality, and mass/readout surfaces named by
 dependencies. It must not be generalized to every admissible action or to an
 unrestricted solution of the Standard Model strong-CP problem.
 
-The former `theta` Tier-A target is retired in the registry, but registry
-retirement is not a universal theorem and does not widen any source row's
-audited claim scope.
+The former `theta` admission is preserved only as decision history. No
+admission registry exists, and historical disposition does not widen any
+source row's audited claim scope. The mass-side occupancy/readout leg remains
+an explicit non-premise derivation obligation.
 
 ## Quantitative Electroweak, QCD, Yukawa, and Higgs Work
 

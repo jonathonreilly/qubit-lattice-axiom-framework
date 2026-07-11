@@ -59,7 +59,7 @@ DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 GRAPH_PATH = DATA_DIR / "citation_graph.json"
 AUDIT_DISPATCH_QUEUE_PATH = DATA_DIR / "audit_dispatch_queue.json"
-TIER_A_ADMISSIONS_PATH = DATA_DIR / "tier_a_admissions.json"
+RETIRED_ADMISSIONS_PATH = DATA_DIR / "tier_a_admissions.json"
 DERIVATION_OBLIGATIONS_PATH = DATA_DIR / "derivation_obligations.json"
 
 ALLOWED_AUDIT_STATUSES = {
@@ -543,33 +543,11 @@ def main() -> int:
     excluded_source_patterns = _load_pattern_file("excluded_source_patterns.txt")
     never_gate_source_paths = frozenset(_load_pattern_file("never_gate_source_paths.txt"))
 
-    if TIER_A_ADMISSIONS_PATH.exists():
-        try:
-            tier_a = load_json(TIER_A_ADMISSIONS_PATH)
-        except Exception as exc:
-            errors.append(f"tier_a_admissions.json could not be parsed: {exc}")
-            tier_a = {}
-        derivation_targets = tier_a.get("derivation_targets") or {}
-        conventions = tier_a.get("conventions") or {}
-        listed_ids = set(tier_a.get("canonical_ids") or [])
-        if listed_ids:
-            errors.append(
-                "tier_a_admissions.json canonical_ids must stay empty; "
-                "only axioms and approved primitives may be supplied premises"
-            )
-        if derivation_targets:
-            errors.append(
-                "tier_a_admissions.json derivation_targets must stay empty; "
-                "use derivation_obligations.json for non-premise open work"
-            )
-        admitted_count = tier_a.get("genuine_admitted_input_count")
-        if admitted_count not in {None, 0}:
-            errors.append(
-                "tier_a_admissions.json genuine_admitted_input_count must be zero"
-            )
-        for dep_id in sorted(conventions):
-            if dep_id not in rows:
-                errors.append(f"tier_a_admissions.json convention {dep_id!r} has no ledger row")
+    if RETIRED_ADMISSIONS_PATH.exists():
+        errors.append(
+            "tier_a_admissions.json must not exist; the only supplied premise "
+            "registry is axiom_premise_nodes.json"
+        )
 
     if DERIVATION_OBLIGATIONS_PATH.exists():
         try:

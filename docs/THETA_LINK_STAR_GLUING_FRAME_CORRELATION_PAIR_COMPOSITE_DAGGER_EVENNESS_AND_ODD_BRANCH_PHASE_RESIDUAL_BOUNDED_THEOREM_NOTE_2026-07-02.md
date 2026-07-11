@@ -143,7 +143,7 @@ transport; and by Theorem 2 the glued objects expose exactly the joint-orbit
    algebra). No landed note is consumed as a premise.
 
 3. **Tier-A theta registry text**
-   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
+   ([`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json),
    gauge side): the residual is "localized to the multi-plaquette /
    large-gauge-winding account"; link-star gluing is that account's local
    structure.

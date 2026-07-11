@@ -966,7 +966,7 @@ unregistered conditional blocker.
 3. **The registered target is retained as plain-text context only.**
    The canonical staggered-Dirac realization parent
    remains the registered Tier-A derivation target `AC_φλ` in the
-   admission registry (`docs/audit/data/tier_a_admissions.json`), but
+   admission registry (`docs/audit/data/premise_decision_history.json`), but
    this Noether row no longer uses a markdown edge to that parent alias
    as a one-hop dependency. The current dependency graph follows the
    explicit supplier cascade above. This note does **not** close the

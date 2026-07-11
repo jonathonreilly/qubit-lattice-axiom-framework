@@ -42,32 +42,32 @@
     },
     "support_statuses": {
       "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       },
       "yt_lsp_signed_record_source_readout_support_note_2026-05-24": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       },
       "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       },
       "yt_source_action_support_packet_note_2026-05-22": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       },
       "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       },
       "yt_source_covariance_normalization_support_note_2026-05-24": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       },
       "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       }
     }
   },
@@ -76,13 +76,13 @@
       "lambda=1",
       "y_33=1/sqrt(6)"
     ],
-    "fail": 0,
+    "fail": 9,
     "not_closed_unbounded": [
       "P-cal/P1 derivation or native RN/Fisher source-measure acceptance",
       "strict same-source top/W pole-response evidence",
       "physical-scale g_2 and matching/running"
     ],
-    "pass": 73,
+    "pass": 64,
     "source_boundary": "Tier-A source-measure surface only",
     "status_authority": "independent audit lane only",
     "tier_a_input": "P-cal/source-measure primitive normalized RN/Fisher coordinate"

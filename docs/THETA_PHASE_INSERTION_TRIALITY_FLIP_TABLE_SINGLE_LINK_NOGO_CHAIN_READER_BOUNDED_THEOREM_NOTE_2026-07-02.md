@@ -12,7 +12,7 @@ re-grade any Tier-A admission, or claim Strong-CP closure.
 Tier-A by retained derivation. This note banks a historical bounded support
 calculation for the theta-side phase-insertion campaign; it does not reopen,
 modify, or re-grade the theta retirement record or
-`tier_a_admissions.json`.
+`premise_decision_history.json`.
 **Primary runner:**
 [`scripts/theta_phase_insertion_triality_flip_table_single_link_nogo_chain_reader_2026_07_02.py`](../scripts/theta_phase_insertion_triality_flip_table_single_link_nogo_chain_reader_2026_07_02.py)
 **Runner cache:**
@@ -123,7 +123,7 @@ multi-link phase insertion whose abelian reduction is the linked
    [`THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md`](THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md).
 
 4. **Retired theta registry text**
-   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
+   ([`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json),
    gauge side): the historical residual was "localized to the
    multi-plaquette / large-gauge-winding account"; this note shows the
    theta-capable insertion is necessarily multi-link in this support

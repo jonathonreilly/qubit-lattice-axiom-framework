@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_koide_two_gate_tier_a_bounded_verifier.py
-runner_sha256: ad7f58d53f7c524e2eebc461ba79a9fee363f4a3f16e6ababea555d055979307
+runner_sha256: d04861fb2b1a05e0533d3c0b09b8b482db106bd5af516105b96c9c969241535e
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.32
-status: ok
+exit_code: 1
+elapsed_sec: 0.24
+status: nonzero_exit
 ----- stdout -----
 
 === Charged-Lepton Koide Two-Gate Bounded Companion ===
@@ -19,7 +19,7 @@ Scope: bounded_theorem on Koide two-gate algebraic chain under EXPLICIT
 [PASS] S1.b: c² = 2 ⇔ r²/a² = 1/2 by direct algebra  (c² at r²/a² = 1/2 equals 2)
 [PASS] S1.c: Q = 2/3 implies r²/a² = 1/2 by direct algebra  (implied r²/a² = 1/2)
 [PASS] S2.ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md: Tier-A authority present on origin/main  (registry classifies AC_phi_lambda as Tier-A admitted input)
-[PASS] S2.tier_a_admissions.json: Tier-A authority present on origin/main  (registry classifies AC_phi_lambda as Tier-A admitted input)
+[FAIL] S2.premise_decision_history.json: Tier-A authority present on origin/main  (registry classifies AC_phi_lambda as Tier-A admitted input)
 [PASS] S2.gate1_no_go_portfolio: Gate-1 (r=1/2 selection) no_go portfolio members present on origin/main  (3/3 no_go rows present (acknowledged as boundary))
 [PASS] S3.gate2_no_go_portfolio: Gate-2 (delta = 2/9 radian-bridge) no_go portfolio members present on origin/main  (3/3 no_go rows present (acknowledged as boundary))
 [PASS] S3.delta_readout: delta = Q/3 readout at Q = 2/3 equals 2/9 exactly  (delta = 2/9 = 2/9)
@@ -41,10 +41,9 @@ Scope: bounded_theorem on Koide two-gate algebraic chain under EXPLICIT
 [PASS] H9: does NOT modify the parent CHARGED_LEPTON_KOIDE_NOTE_2026-04-18  (companion source note pattern; parent text unchanged)
 [PASS] H10: does NOT modify the chain-of-custody CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02  (cited as sidecar reference; not modified)
 
-PASS=25  FAIL=0
+PASS=24  FAIL=1
 
-All bounded-companion checks PASSED under explicit existing-registry framing.
-Audit lane decides status; this runner proposes no effective status.
+1 CHECK(S) FAILED.
 
 ----- stderr -----
 

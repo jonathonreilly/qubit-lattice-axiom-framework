@@ -27,7 +27,7 @@ DOCS = ROOT / "docs"
 OUTPUT = ROOT / "outputs" / "yt_tier_a_source_action_top_premise_closure_2026-05-29.json"
 
 NOTE = DOCS / "YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md"
-TIER_A_REGISTRY = DOCS / "audit" / "data" / "tier_a_admissions.json"
+TIER_A_REGISTRY = DOCS / "audit" / "data" / "premise_decision_history.json"
 AXIOM_PREMISE_REGISTRY = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
 TIER_A_NOTE = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
 P1P2_SYNTHESIS = DOCS / "OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md"

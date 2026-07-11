@@ -129,9 +129,8 @@ now repaired, separately from any science reclassification:
 
 - the three primitive source notes now cite the current four-axiom
   `minimal_axioms` surface without changing primitive content;
-- `scripts/scale_reference_primitive_boundary_check.py` now pins the current
-  Tier-A genuine-admitted-input count of zero after the theta and
-  `AC_phi_lambda` retirements.
+- `scripts/scale_reference_primitive_boundary_check.py` now pins the sole
+  axiom/approved-primitive foundation and the absence of an admission registry.
 
 These completed hygiene repairs are not retirement evidence. They do not
 justify changing `docs/audit/data/axiom_premise_nodes.json`.
@@ -230,7 +229,7 @@ kinetic-isotropy, or realized-state primitive redundant.
 - [KINETIC_ISOTROPY_COMPOSITION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-06-09.md](KINETIC_ISOTROPY_COMPOSITION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-06-09.md)
 - [AXIOM_MINIMALITY_POLICY.md](audit/AXIOM_MINIMALITY_POLICY.md)
 - [axiom_premise_nodes.json](audit/data/axiom_premise_nodes.json)
-- [tier_a_admissions.json](audit/data/tier_a_admissions.json)
+- [premise_decision_history.json](audit/data/premise_decision_history.json)
 
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency, primitive, or registry row. The independent

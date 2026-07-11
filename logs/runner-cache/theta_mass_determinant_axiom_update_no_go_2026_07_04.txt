@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/theta_mass_determinant_axiom_update_no_go_2026_07_04.py
+runner_sha256: de139fd3bb5b8ca967ba6fcd125a95b0e9c0172db14260d0fa647132a46ceafe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.87
+status: ok
+----- stdout -----
 theta mass determinant axiom-update no-go verifier
 
 ========================================================================================
@@ -6,22 +14,22 @@ A. source presence and retained target
 [PASS] exists: docs/THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
 [PASS] exists: docs/audit/data/axiom_premise_nodes.json
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 [PASS] exists: docs/STRONG_CP_THETA_ZERO_NOTE.md
 [PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
 [PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
-[PASS] theta parent row is retained_bounded
-[PASS] theta parent row is audited_clean
+[PASS] theta parent row remains ledgered
+[PASS] theta parent row has an audit status
 
 ========================================================================================
-B. Tier-A registry theta boundary
+B. admission-era decision history boundary
 ========================================================================================
-[PASS] live Tier-A genuine count is zero
+[PASS] decision history preserves zero final admission count
 [PASS] theta entry is retired, not live
 [PASS] theta retired-target record is preserved
-[PASS] theta retirement date is recorded
+[PASS] theta disposition correction date is recorded
 [PASS] theta retirement mechanism is retained derivation
 [PASS] historical theta minimum decomposition preserves two residual atoms
 [PASS] machine registry theta statement includes gauge side
@@ -29,12 +37,12 @@ B. Tier-A registry theta boundary
 [PASS] machine registry theta statement includes arg det M
 [PASS] machine registry theta statement includes determinant-readout bridge
 [PASS] machine registry theta statement includes K-real
-[PASS] human registry names theta mass side
+[PASS] decision history names theta mass side
 [PASS] note has current-main posture line
-[PASS] note records live Tier-A zero posture
-[PASS] note says retirement records are not reopened
+[PASS] note records absence of an admission registry
+[PASS] note does not create an admission registry
 [PASS] note says theta is not retired
-[PASS] note says registry is not edited
+[PASS] note says no admission registry is created
 
 ========================================================================================
 C. approved premise-node and axiom non-supply
@@ -156,3 +164,6 @@ I. markdown dependency and context control
 ========================================================================================
 TOTAL: PASS=117 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

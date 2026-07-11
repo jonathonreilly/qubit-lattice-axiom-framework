@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_tier_a_source_action_top_premise_closure.py
-runner_sha256: 0fc09a91a8ad8f5ce36c4a79fd77e0d0ab669d5cd183c813a227b7d69cb93c08
+runner_sha256: ca34935cca2a640be46119351ffcb89da7a4972729568c0192fc7e08819e6dde
 timeout_sec: 120
 exit_code: 1
-elapsed_sec: 0.90
+elapsed_sec: 0.82
 status: nonzero_exit
 ----- stdout -----
 
 Part 1: anchors and status boundary
 [PASS] docs/YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md exists
-[PASS] docs/audit/data/tier_a_admissions.json exists
+[PASS] docs/audit/data/premise_decision_history.json exists
 [PASS] docs/audit/data/axiom_premise_nodes.json exists
 [PASS] docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md exists
 [PASS] docs/OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md exists
@@ -32,7 +32,7 @@ Part 1: anchors and status boundary
 [PASS] note contains section/phrase: Claim-Status Certificate
 [PASS] note contains section/phrase: Non-Claims
 [FAIL] P1 is in Tier-A derivation targets
-[PASS] Tier-A P1 is chain-satisfying only at bounded tier
+[FAIL] Tier-A P1 is chain-satisfying only at bounded tier
 [PASS] scale reference is not a Tier-A derivation target
 [PASS] scale reference moved to approved primitive registry
 [PASS] Tier-A registry records scale primitive reclassification
@@ -42,7 +42,7 @@ Part 1: anchors and status boundary
 [PASS] source/action candidate states action derivatives define insertions
 [PASS] source/action candidate is open_gate, not unilateral closure
 [FAIL] LSP source support is retained_bounded
-[PASS] source covariance support is retained_bounded
+[FAIL] source covariance support is retained_bounded
 [PASS] primitive unit source/action no-go row is present and non-positive: unaudited
 [PASS] source-scale boundary row does not claim unbounded closure: unaudited
 
@@ -92,7 +92,7 @@ Part 5: firewalls and claim status
 [PASS] status certificate records: bare_retained_allowed: false
 
 wrote outputs/yt_tier_a_source_action_top_premise_closure_2026-05-29.json
-SUMMARY: PASS=72 FAIL=2
+SUMMARY: PASS=70 FAIL=4
 
 ----- stderr -----
 

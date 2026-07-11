@@ -12,7 +12,7 @@ re-grade any Tier-A admission, or claim Strong-CP closure.
 Tier-A by retained derivation. This note banks a historical bounded support
 calculation for the theta-side gluing-flow non-sourcing campaign; it does not
 reopen, modify, or re-grade the theta retirement record or
-`tier_a_admissions.json`.
+`premise_decision_history.json`.
 **Primary runner:**
 [`scripts/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.py`](../scripts/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.py)
 **Runner cache:**
@@ -122,7 +122,7 @@ the flow generates.
    [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)):
    background discipline only; record occurrence is not claimed.
 
-3. **Retired theta registry text** (docs/audit/data/tier_a_admissions.json,
+3. **Retired theta registry text** (docs/audit/data/premise_decision_history.json,
    historical gauge-side context): the residual was "localized to the multi-plaquette /
    large-gauge-winding account", with reality tracked as a
    "non-forcing/non-sourcing route surface" — this note supplies the exact

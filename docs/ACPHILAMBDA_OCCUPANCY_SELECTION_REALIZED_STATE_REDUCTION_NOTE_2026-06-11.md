@@ -4,7 +4,7 @@
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
 set, predict, or estimate any audit verdict, and it does **not** edit the
-Tier-A registry (`docs/audit/data/tier_a_admissions.json` /
+Tier-A registry (`docs/audit/data/premise_decision_history.json` /
 `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`). The registry
 consequence stated in the Consequence section is named as **available to a
 future gated, owner-approved registry lane** — not executed here.
@@ -127,7 +127,7 @@ approved `realized_state_primitive`:
 **Net:** sub-admission (i) decomposes as
 `(i) = (i-value) ⊕ (i-realization)`, with `(i-value)` reclassifying to
 realized-state registration (the Record-retirement pattern: compare the
-`reclassified_primitives` block in `tier_a_admissions.json`, S7.4) and
+`reclassified_primitives` block in `premise_decision_history.json`, S7.4) and
 `(i-realization)` surviving as a named, smaller, rule-shaped frontier that no
 longer bounds the value chain.
 
@@ -320,7 +320,7 @@ and the law-freeness). Status remains for the audit lane.
 | `koide_r_half_polarization_selector_tested_static_readout_no_go_note_2026-06-08` | context: measure-neutrality, dynamical opening (reproduced in runner) | unaudited (context only) |
 | `charged_lepton_koide_value_full_chain_of_custody_2026-06-02` | context: what the value chain consumes | unaudited (context only) |
 | `record_outcome_observable_principle_canonical_proposal_note_2026-06-05` | G3 wording home | meta |
-| `docs/audit/data/tier_a_admissions.json`, `docs/audit/data/axiom_premise_nodes.json` | machine registries; `reclassified_primitives` precedent | registry data |
+| `docs/audit/data/premise_decision_history.json`, `docs/audit/data/axiom_premise_nodes.json` | machine registries; `reclassified_primitives` precedent | registry data |
 
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency, and does not modify any registry. The

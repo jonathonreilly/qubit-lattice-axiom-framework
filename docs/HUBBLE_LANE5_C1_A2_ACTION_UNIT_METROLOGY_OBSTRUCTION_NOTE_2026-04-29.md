@@ -196,7 +196,7 @@ This graph-bookkeeping section records the dependency-routing case without
 asserting any audit or effective-status outcome.
 
 - [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-- `AC_phi_lambda` in `docs/audit/data/tier_a_admissions.json`
+- `AC_phi_lambda` in `docs/audit/data/premise_decision_history.json`
 - [g_bare_derivation_note](G_BARE_DERIVATION_NOTE.md)
 
 The staggered-carrier input is routed through the registered Tier-A target.

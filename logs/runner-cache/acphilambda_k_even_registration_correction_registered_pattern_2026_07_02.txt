@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py
-runner_sha256: 63c1fd856047a516dbf482c97e753e5096ffa0aed9a02537c2c48f77cb32c8de
+runner_sha256: d779556637ba7745275c82cee7f775def794644a51b427acd789a21b8dd67c68
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.82
+elapsed_sec: 0.88
 status: ok
 ----- stdout -----
 
@@ -17,7 +17,7 @@ PART A - sources and authority gates
 [PASS] ledger exists
        docs/audit/data/audit_ledger.json
 [PASS] Tier-A data exists
-       docs/audit/data/tier_a_admissions.json
+       docs/audit/data/premise_decision_history.json
 [PASS] record file pin present: only a finer character-basis record would touch it
 [PASS] note quotes record pin: only a finer character-basis record would touch it
 [PASS] record file pin present: neither produced nor relaxed by the record-preserving dynamics
@@ -140,7 +140,7 @@ PART D - note discipline
 [PASS] instruction marker absent: execute it exactly
 [PASS] instruction marker absent: ANTI-FABRICATION
 [PASS] retained_bounded token absent from note
-[PASS] Tier-A path is not markdown linked
+[PASS] retired admission path is not markdown linked
 [PASS] no campaign note path markdown links
 [PASS] note line count in requested band
        243

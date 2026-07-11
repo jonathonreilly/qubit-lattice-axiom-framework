@@ -38,7 +38,7 @@ or predict an audit outcome.
 4. **The subsumption (B4):** which Berezin cell applies is conditional on the
    **polarization of the matter realization** supplied by the existing
    staggered Tier-A gate (mechanically verified present in
-   `tier_a_admissions.json`). Complex/Dirac realization → `det_C` → `r = 1/2`
+   `premise_decision_history.json`). Complex/Dirac realization → `det_C` → `r = 1/2`
    (`Q = 2/3`); K-fixed/Majorana → `Pf/det_R` → `r = 1` (`Q = 1`). The cell map
    is cross-checked against the fork table, but that upstream source still has
    its own audit status.

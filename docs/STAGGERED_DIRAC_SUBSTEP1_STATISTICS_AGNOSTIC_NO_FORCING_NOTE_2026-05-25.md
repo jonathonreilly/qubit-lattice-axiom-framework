@@ -263,7 +263,7 @@ review-loop landing does **not** ratify it into Tier A. The correct process is:
    independent audit lane;
 2. if the no-go audits clean and the user explicitly approves the admission,
    update `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` and, if desired,
-   the audit-lane-owned `tier_a_admissions.json` accounting;
+   the audit-lane-owned `premise_decision_history.json` accounting;
 3. until then, downstream rows may cite this as an unaudited no-go candidate,
    not as a chain-satisfying accepted premise.
 

@@ -11,7 +11,7 @@ re-grade any Tier-A admission, or claim Strong-CP closure.
 **Current-main posture (2026-07-07):** theta is already retired from live
 Tier-A by retained derivation. This note banks a historical bounded support
 calculation for the theta-side seed-kernel campaign; it does not reopen,
-modify, or re-grade the theta retirement record or `tier_a_admissions.json`.
+modify, or re-grade the theta retirement record or `premise_decision_history.json`.
 **Primary runner:**
 [`scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py`](../scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py)
 **Runner cache:**
@@ -119,7 +119,7 @@ above is exact either way.
    weights ..."). Used as quoted discipline; the bridge candidate is named,
    not asserted.
 
-3. **Retired theta registry text** (docs/audit/data/tier_a_admissions.json):
+3. **Retired theta registry text** (docs/audit/data/premise_decision_history.json):
    the historical gauge-side/mass-side split (`theta_bar = theta_gauge +
    arg det M`) that result 4's hand-off lands on. The retired registry text
    is context only, not a proof premise.

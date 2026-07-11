@@ -33,7 +33,7 @@ locus. The delta-value admission sits off that locus.
 - [docs/KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md](KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md) supplies the modulus-stationary set and boundary. Quoted fragment: "stationary **only** at `δ = k·60°`" and "its stationary candidates are degenerate."
 - [docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md](CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md) supplies the K-reality definition. Quoted fragment: "time-reversal-reality of the generation coupling / δ=0 / transpose `b=c̄`."
 Context without dependency edges: PR #4783 `ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01` (unit wall = R-eta junction; rescale obstruction), and the sibling in-flight note PR #4788 `ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01` (registrable content of the Brannen dial = `cos(3 delta)`; cycle holonomy `Phi = 3 delta`; `W_cycle_holonomy_value`: `Phi = 2/3`).
-Tier-A registry context, cited as data path only: `docs/audit/data/tier_a_admissions.json`.
+Tier-A registry context, cited as data path only: `docs/audit/data/premise_decision_history.json`.
 Quoted fragments: "the discrete orientation arg det M in {0, pi} -> 0 on the K-real reading" and
 "The mass-side K-real structure is the same C_3 conjugate-symmetric object as AC_phi_lambda sub-admission (i)."
 

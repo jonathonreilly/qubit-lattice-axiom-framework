@@ -27,7 +27,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 AXIOM_NODES = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+TIER_A = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 AUDIT_NOTE = ROOT / "docs" / "RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md"
 MIN_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-04.md"
 OBSERVABLE_PRINCIPLE = ROOT / "docs" / "OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md"

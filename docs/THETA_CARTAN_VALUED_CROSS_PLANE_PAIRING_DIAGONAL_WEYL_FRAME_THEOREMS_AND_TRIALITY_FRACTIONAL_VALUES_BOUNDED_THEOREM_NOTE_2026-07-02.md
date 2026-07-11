@@ -123,7 +123,7 @@ The residual (i-b') accordingly sharpens to:
    `T^4_2`); no landed note is consumed as a premise.
 
 3. **Tier-A theta registry text**
-   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
+   ([`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json),
    gauge side): the residual is "localized to the multi-plaquette /
    large-gauge-winding account"; the object constructed here is that
    account's SU(3)-shaped pairing.

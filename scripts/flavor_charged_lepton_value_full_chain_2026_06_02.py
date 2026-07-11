@@ -120,7 +120,7 @@ def main():
     # Open selector: derivation obligations never supply a value.
     born_blocks = (1 / 3, 2 / 3)   # rho=I/3 dimension weighting -> r=1
     repo = Path(__file__).resolve().parents[1]
-    tier_a = json.loads((repo / "docs/audit/data/tier_a_admissions.json").read_text())
+    tier_a = json.loads((repo / "docs/audit/data/premise_decision_history.json").read_text())
     obligations = json.loads((repo / "docs/audit/data/derivation_obligations.json").read_text())
     obligation_ids = set(obligations["canonical_ids"])
     selector_open = (

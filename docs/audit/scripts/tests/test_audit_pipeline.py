@@ -270,8 +270,8 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
     # audit_lint reads these at main() time; without redirecting them the lint
     # validates a synthetic temp ledger against the REAL repo's premise and
     # queue registries and emits spurious errors (rows the test never created).
-    if hasattr(module, "TIER_A_ADMISSIONS_PATH"):
-        module.TIER_A_ADMISSIONS_PATH = module.DATA_DIR / "tier_a_admissions.json"
+    if hasattr(module, "RETIRED_ADMISSIONS_PATH"):
+        module.RETIRED_ADMISSIONS_PATH = module.DATA_DIR / "tier_a_admissions.json"
     if hasattr(module, "DERIVATION_OBLIGATIONS_PATH"):
         module.DERIVATION_OBLIGATIONS_PATH = (
             module.DATA_DIR / "derivation_obligations.json"
@@ -1308,7 +1308,7 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
     def test_metadata_dependencies_satisfy_clean_chain_without_bounding(self):
         """Metadata rows are stable audit-governance inputs. They satisfy a
         clean theorem's dependency chain without turning the theorem into
-        retained_pending_chain and without imposing Tier-A boundedness."""
+        retained_pending_chain without creating any admission-class exception."""
         m = _import("compute_effective_status")
         rows = {
             "key_terminology": {
@@ -2811,7 +2811,6 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             for path, payload in (
                 (m.AXIOM_REGISTRY, {"canonical_ids": [], "nodes": {}}),
                 (m.OBLIGATION_REGISTRY, {"canonical_ids": [], "nodes": {}}),
-                (m.TIER_A_REGISTRY, {"derivation_targets": {}, "conventions": {}}),
             ):
                 target = root / path
                 target.parent.mkdir(parents=True, exist_ok=True)

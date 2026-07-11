@@ -23,7 +23,7 @@ SCRIPT = ROOT / "scripts" / "acphilambda_real_holonomy_locus_identity_2026_07_01
 BRANNEN = ROOT / "docs" / "BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md"
 MODULUS = ROOT / "docs" / "KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md"
 CUSTODY = ROOT / "docs" / "CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md"
-REGISTRY = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+REGISTRY = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 
 
 def check(name: str, ok: bool, detail: str = "") -> bool:

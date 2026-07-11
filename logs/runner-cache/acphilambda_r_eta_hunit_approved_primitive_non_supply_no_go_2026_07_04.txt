@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.py
-runner_sha256: b85a4f20b1bf4b6fa481c5a5f3673012e21f1caff5aa128c8e694b4920aaeca5
+runner_sha256: a9299bf32f49ee421d1c384a483dd3ca98b6dcec8f7f4b9911ab40f5a3a0bd46
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.16
+elapsed_sec: 1.40
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta h-unit approved-primitive non-supply no-go verifier
@@ -12,7 +12,7 @@ AC_phi_lambda R-eta h-unit approved-primitive non-supply no-go verifier
 A. source presence and Tier-A boundary
 ========================================================================================
 [PASS] exists: docs/ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
 [PASS] exists: docs/audit/data/axiom_premise_nodes.json

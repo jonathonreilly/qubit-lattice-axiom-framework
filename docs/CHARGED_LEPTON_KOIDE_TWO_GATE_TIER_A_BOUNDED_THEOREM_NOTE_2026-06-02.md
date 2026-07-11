@@ -58,7 +58,7 @@ This note does not derive `r^2/a^2=1/2`. It states the conditional consequence
 of consuming the already-registered `AC_phi_lambda` bounded premise — carried
 by the registered Tier-A target
 [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-per `docs/audit/data/tier_a_admissions.json` — for the
+per `docs/audit/data/premise_decision_history.json` — for the
 charged-lepton K-reality / determinant-selector input. Under that premise,
 S1 gives `Q=2/3` exactly.
 
@@ -157,7 +157,7 @@ retained inventory alone.
 |---|---|
 | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | baseline one-qubit operator algebra and `Z^3` spatial substrate |
 | [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md) | human-readable Tier-A registry |
-| [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json) | machine-readable registry for `AC_phi_lambda` |
+| [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json) | non-authoritative historical record for `AC_phi_lambda` |
 | [`CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`](CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md) | chain-of-custody source reference |
 | [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md) | registered Tier-A `AC_phi_lambda` carrier consumed as the S2/S3 bounded premise |
 | `CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md` (backticked, context only) | parent open-gate row preserved, not consumed, by this companion |

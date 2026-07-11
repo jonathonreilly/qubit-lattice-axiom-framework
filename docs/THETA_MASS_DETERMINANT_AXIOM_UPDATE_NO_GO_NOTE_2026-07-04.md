@@ -6,7 +6,7 @@
 **Scope boundary:** bounded no-go against retiring the theta mass-side
 determinant-readout bridge by appeal to the updated four axioms or approved
 primitives. This note does not derive, refute, re-grade, retire, or remove
-theta, does not set `theta_bar = 0`, and does not edit any Tier-A registry,
+theta, does not set `theta_bar = 0`, and does not create any admission registry,
 axiom, primitive, audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
 **Current-main posture (2026-07-11):** theta's gauge-side retained disposition
@@ -18,7 +18,7 @@ that correction does not affect this historical mass-side result.
 
 ## Target
 
-The current Tier-A registry keeps theta live through two residual atoms:
+The admission-era decision history recorded two residual atoms:
 
 ```text
 gauge_side_winding_account
@@ -126,7 +126,7 @@ extra bridge.
 ## What Does Not Move
 
 - Theta is not retired.
-- The Tier-A registry is not edited.
+- No admission registry is created.
 - The gauge-side winding account is untouched.
 - No physical quark-sector determinant readout is derived.
 - No positive real mass orientation is derived from the axioms.
@@ -163,7 +163,7 @@ channel. No new wall is added.
 comparator, no fitted value, no axion assumption, no determinant-channel
 primitive, no positive mass-orientation primitive, and no registry edit.
 
-**N4 residual matching.** The result matches the Tier-A registry's mass-side
+**N4 residual matching.** The result matches the admission-era decision history's mass-side
 residual and does not touch the gauge-side winding account.
 
 **N5 proven surface.** Proven here is an axiom/primitives non-supply result

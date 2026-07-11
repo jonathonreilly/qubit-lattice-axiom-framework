@@ -356,7 +356,7 @@ check("S7.3 primitive register item 4 already houses the G3 discipline: "
 nodes = json.loads((REPO / "docs/audit/data/axiom_premise_nodes.json"
                     ).read_text())
 flat = json.dumps(nodes)
-tier_a = json.loads((REPO / "docs/audit/data/tier_a_admissions.json"
+tier_a = json.loads((REPO / "docs/audit/data/premise_decision_history.json"
                      ).read_text())
 check("S7.4 registries: realized_state_primitive in axiom_premise_nodes; "
       "AC_phi_lambda sub-admission (i) in tier_a_admissions minimum "

@@ -29,8 +29,8 @@ composition, or no-go boundary, not by amending that surface inside the lane.
 - Citing policy text as a premise or interpretive authority — including
   section 6 approval entries, their effect statements, and any reading note.
   Approval entries are historical record only. The citable premise surfaces
-  are axiom text, approved framework primitives, Tier-A admissions, and
-  audited derivations; ambiguity resolves by derivation or owner-approved
+  are axiom text, approved framework primitives, and audited derivations;
+  ambiguity resolves by derivation or owner-approved
   axiom clarity, never by ruling.
 
 ## 2. Allowed moves
@@ -83,8 +83,8 @@ The supplied foundation has exactly two premise types:
 
 Everything else must be an audited derivation or remain conditional/open.
 `docs/audit/data/derivation_obligations.json` tracks exact open work but carries
-zero premise weight. `docs/audit/data/tier_a_admissions.json` is historical
-registry provenance only; its live premise lists must remain empty.
+zero premise weight. Superseded admission-era decisions are provenance only in
+`docs/audit/data/premise_decision_history.json`; no admission registry exists.
 
 Entries below are the historical record of approvals and their validation
 provenance. They carry no premise or interpretive weight: effect statements
@@ -121,8 +121,9 @@ Recorded explicitly approved axiom updates:
   of the approval only.
 
 - **2026-07-02 -- Reading-note retirement, complete (no rulings, only
-  clarity).** Owner rule of 2026-07-02: the only owner-approved premise
-  surfaces are axiom updates, framework primitives, and Tier-A admissions;
+  clarity).** Historical owner rule of 2026-07-02 then recognized axiom
+  updates, framework primitives, and an admission channel; the 2026-07-11
+  correction below removed that third channel. In all periods,
   policy text carries no premise or interpretive weight (section 1 bullet and
   the preamble above, added with this entry). Dispositions for the 2026-07-02
   foundation entry's formerly citable reading-note paragraph -- its text
@@ -436,10 +437,9 @@ Recorded explicitly approved axiom updates:
     parent and is not an axiom-premise node. Record does not import
     P2/modulus, log-det, source/action, measurement, Born weights, time arrow,
     normalization, scale, or arbitrary observable identification.
-  - **Scope.** Dependencies on the three framework axioms chain-satisfy without
-    bounding downstream rows. Record/P1 scalar additivity is retired from
-    Tier-A; the remaining Tier-A derivation targets are non-axiom admissions
-    and continue to bound dependents until retired by retained derivations.
+  - **Historical scope.** Dependencies on the three framework axioms
+    chain-satisfied without bounding downstream rows. The former admission
+    channel described here was removed on 2026-07-11 and has no present effect.
 
 Recorded explicitly approved primitive:
 
@@ -488,12 +488,12 @@ Recorded explicitly approved primitive:
     fixed. It supplies no dynamics, no fourth spatial dimension, and no
     dimensionless observable.
 
-Recorded Tier-A retirement (admission discharged by retained derivation; the
-registry's designed discharge path, not an axiom or primitive change):
+Recorded admission-era retirement history (superseded; no present premise
+effect):
 
 - **2026-07-05 -- theta retired from Tier-A.** `strong_cp_theta_zero_note` is
   moved from `derivation_targets` to `retired_derivation_targets` in
-  `docs/audit/data/tier_a_admissions.json`, with its statement, class, and
+  `docs/audit/data/premise_decision_history.json`, with its statement and
   no-go portfolio preserved; `genuine_admitted_input_count` 2 -> 1. The
   remaining admitted derivation target is `AC_phi_lambda` alone.
   - **Basis.** Every discharge-basis row is retained-grade (full list in the
@@ -525,8 +525,8 @@ registry's designed discharge path, not an axiom or primitive change):
     (2026-07-05). Review-loop must verify that approval comment exists
     before landing the registry edit.
 
-Recorded historical Tier-A retirement attempt (superseded 2026-07-11; never an
-axiom, primitive, or audit-ratified theorem closure):
+Recorded historical admission retirement attempt (superseded 2026-07-11;
+never an axiom, primitive, or audit-ratified theorem closure):
 
 - **2026-07-05 -- historical AC_phi_lambda governance adoption.** Owner
   approval recorded in-thread:
@@ -542,7 +542,8 @@ axiom, primitive, or audit-ratified theorem closure):
   full basis terminal-grade.
   - **Historical registry effect.** `AC_phi_lambda` was moved from
     `derivation_targets` to `retired_derivation_targets` in
-    `docs/audit/data/tier_a_admissions.json`; `genuine_admitted_input_count`
+    `docs/audit/data/premise_decision_history.json`; the historical
+    `genuine_admitted_input_count`
     becomes zero, `canonical_ids` becomes empty, and `derivation_targets`
     became empty. That governance channel is now removed. Theta stays under
     its existing retained-derivation retirement record.
@@ -586,8 +587,15 @@ Recorded premise-channel correction:
     unconditional all-legs retirement merely because its historical registry
     row remains preserved.
 
-Recorded Tier-A registry refinement (admissions remain Tier-A; nothing is
-promoted to axiom or primitive class):
+- **2026-07-11 -- admission class removed.** Owner direction: there is no
+  third supplied-premise class. The former admission registry is deleted.
+  `premise_decision_history.json` preserves old decisions without authority,
+  is not read by chain-closure tooling, and cannot supply or bound a dependency.
+  The live foundation is exactly axioms plus approved primitives; all other
+  scientific content must be retained-derived or remain an open obligation.
+
+Recorded historical admission-era refinement (superseded; nothing in this
+section supplies a premise):
 
 - **2026-06-11 -- realized-state primitive.** The realized-state interface --
   the axioms select no state; a physical history fixes one law-admissible
@@ -632,7 +640,7 @@ promoted to axiom or primitive class):
   derivation targets (`AC_phi_lambda`, `theta`) are restated at their
   sharpest landed decomposition in
   `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` (minimum-statement
-  section) and `docs/audit/data/tier_a_admissions.json`:
+  section) and `docs/audit/data/premise_decision_history.json`:
   `AC_phi_lambda` = the doublet reading/occupancy selection + the R-eta delta
   readout identification + the species bridge; `theta` = the gauge-side
   winding account + the mass-side orientation localized onto the
@@ -656,16 +664,16 @@ promoted to axiom or primitive class):
     `sharpening_sources` fields list landed source notes whose audit status
     is set only by the audit lane.
 
-Approved scope classification (no axiom, primitive, or Tier-A change; nothing
-added to or removed from any premise registry):
+Approved scope classification (no axiom or primitive change; nothing added to
+the supplied foundation):
 
 - **2026-06-16 -- past-hypothesis magnitude is a scope condition, not a
   premise.** Owner approval recorded 2026-06-16. The thermodynamic past
   hypothesis -- the low-entropy *magnitude* of the initial
   boundary ("why the boundary was so atypically special"; Penrose
   ~1-in-10^(10^123)) -- is classified as the framework's
-  **scope / domain-of-applicability condition**, not as a premise in any of the
-  three categories (axiom, primitive, Tier-A). It is the residual named in
+  **scope / domain-of-applicability condition**, not as an axiom or primitive.
+  It is the residual named in
   `docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`
   and the input carved out of the realized-state primitive (2026-06-11 entry
   above, "Past-hypothesis classification").
@@ -679,23 +687,24 @@ added to or removed from any premise registry):
     time-symmetric microdynamics is equally consistent with a high-entropy past
     (Loschmidt), so not an axiom/law; (iii) *provably non-retirable* -- needed
     identically by every time-symmetric theory (CM/QM/QFT/GR) and underivable
-    from time-symmetric microdynamics, so not a Tier-A derivation target (which
-    must be retirable). An input that can never be discharged is not a premise
+    from time-symmetric microdynamics, so it remains a conditional scope wall
+    rather than supplied foundation content. An input that can never be
+    discharged is not a premise
     the chain rests *on*; it is the antecedent the relevant claims are scoped
     *by* -- results that use it are honest conditionals ("given a low-entropy
     past, X"), in the standard laws-versus-initial-conditions sense. A scope
-    condition creates no derivation debt (Tier-A's bounding mechanism), so it
-    does not bound dependents.
-  - **Guardrails.** The low-entropy magnitude must remain absent from both
-    premise registries (`axiom_premise_nodes.json`, `tier_a_admissions.json`)
+    condition creates no supplied-premise exception, so it does not
+    chain-satisfy dependents.
+  - **Guardrails.** The low-entropy magnitude must remain absent from the
+    foundation registry (`axiom_premise_nodes.json`)
     and must not be cited by retained/shipped rows as a dependency. The scope
     classification is bound to the magnitude *alone*: the derived direction,
     boundary existence, and time-axis stay unconditional and acquire no
     conditional tag. No typicality, measure, or specialness assumption is
     laundered under the "scope" label; the realized-state primitive's
     counterfactual test continues to police that boundary.
-  - **Machinery.** The three premise categories are unchanged and the
-    past hypothesis is outside all three by construction (this generalizes the
+  - **Machinery.** The two premise types are unchanged and the past hypothesis
+    is outside both by construction (this generalizes the
     realized-state primitive's existing carve-out). No registry row, no
     `canonical_id`, no `premise_nodes.py` / `compute_effective_status` / schema
     change; the audited source notes (arrow, existence reduction, realized-state)

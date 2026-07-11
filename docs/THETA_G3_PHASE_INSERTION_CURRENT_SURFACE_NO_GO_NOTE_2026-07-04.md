@@ -5,8 +5,8 @@
 **Claim type:** no_go
 **Scope boundary:** first-principles route test for G3, the phase-type
 `F cup F` insertion named by the theta gauge positive-route stretch. This note
-does not retire theta, does not set `theta_bar = 0`, does not edit any Tier-A
-registry, primitive, axiom, audit verdict, or publication-status surface, and
+does not retire theta, does not set `theta_bar = 0`, does not create any
+admission registry, primitive, axiom, audit verdict, or publication-status surface, and
 does not claim that a phase-type route is impossible in future work.
 **Audit boundary:** independent audit lane only.
 **Current-main posture (2026-07-11):** theta's gauge-side retained disposition
@@ -84,7 +84,7 @@ on where a successful insertion would have to live.
 | Continuous Weyl label shift | Obstructed: the `A2` Weyl fixed Cartan subspace is zero. This rules out the wrong slot; it does not create the phase slot. |
 | Real class-weight gluing | Orientation-reversal-even real weights cannot register the odd branch. This motivates a phase-type insertion but does not supply one. |
 | Multiplaquette/clover admissibility | The route remains admissible and not clean-closeable. Admissibility is not selection, coefficient, or physical registration. |
-| Tier-A registry | The gauge-side winding residual remains present; the registry is not edited by this block. |
+| admission-era decision history | The gauge-side winding residual remains present; the registry is not edited by this block. |
 
 ## Exact Algebraic Boundary
 
@@ -117,7 +117,7 @@ the current surfaces do not derive it.
 ## What Does Not Move
 
 - Theta is not retired.
-- The Tier-A registry is not edited.
+- No admission registry is created.
 - No axiom or primitive is changed.
 - No audit status or effective status is changed.
 - No claim is made that future action-side or measure-side work cannot derive

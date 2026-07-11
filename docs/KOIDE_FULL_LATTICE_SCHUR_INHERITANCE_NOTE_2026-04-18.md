@@ -245,7 +245,7 @@ realization.
    parent `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is the
    registered Tier-A derivation target `AC_phi_lambda` (display
    `AC_φλ`) in the admission registry
-   (`docs/audit/data/tier_a_admissions.json`). This note
+   (`docs/audit/data/premise_decision_history.json`). This note
    routes the carrier naming **into** that registered target; it does
    **not** close the gate. Under the published chain rule
    (`docs/audit/scripts/compute_effective_status.py`), a clean

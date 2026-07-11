@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_p1_dependency_audit_verifier.py
-runner_sha256: 90fad320927fcdc56f06753df5032121965cb759601f5d58904ca8c419bef2b0
+runner_sha256: 5cd7136f6b31ebe0c42e8db3eb0d8277d0a19762a714626cac67685453268a42
 timeout_sec: 120
 exit_code: 1
-elapsed_sec: 0.13
+elapsed_sec: 0.18
 status: nonzero_exit
 ----- stdout -----
 Record/P1 dependency audit re-derivation check
@@ -17,7 +17,7 @@ audit_note: docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md
 [FAIL] live direct-dependent count includes this meta report (92)  (observed=101)
 [FAIL] audited pre-existing direct-dependent count matches audit claim (91)  (observed=100)
 [PASS] all direct dependents have note_path entries  (paths=100, dependents=100)
-[FAIL] effective_status=unaudited count matches audit (81)  (observed=79)
+[FAIL] effective_status=unaudited count matches audit (81)  (observed=87)
 [FAIL] claim_type=meta count matches audit (10)  (observed=13)
 [PASS] effective_status=retained among direct dependents is 0  (observed=0)
 [PASS] effective_status=retained_bounded among direct dependents is 0  (observed=0)
@@ -31,8 +31,8 @@ audit_note: docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md
 [PASS] report exposes all seven blocking categories  (observed=['Dynamics', 'Measurement/Born/decoherence', 'Normalization/scale', 'Observable bridge', 'P2/modulus', 'Source/action', 'log-det generator'])
 [PASS] report category path counts match heading/table counts  (log-det generator=59/59, Observable bridge=18/18, P2/modulus=5/5, Source/action=4/4, Dynamics=3/3, Measurement/Born/decoherence=2/2, Normalization/scale=0/0)
 [PASS] per-category path list has no duplicates  (duplicates=0)
-[FAIL] per-category lists cover every live direct dependent  (missing=['docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md', 'docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md', 'docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md'])
-[FAIL] per-category lists contain no non-dependent paths  (extra=['docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md', 'docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md', 'docs/ai_methodology/raw/repo_audit.md'])
+[FAIL] per-category lists cover every live direct dependent  (missing=['docs/NEUTRINO_GAMMA1_WSOURCE_APPLICATION_BRIDGE_NOTE_2026-07-09.md', 'docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md', 'docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md'])
+[FAIL] per-category lists contain no non-dependent paths  (extra=['docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md', 'docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md', 'docs/UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_NOTE.md'])
 [FAIL] REWRITE + SPLIT + LEAVE = 91 (total direct dependents)  (REWRITE=0, SPLIT=0, LEAVE=91, total=91, n_direct=100)
 [PASS] blocking-content categories sum to LEAVE count (91)  (sum=91, LEAVE=91)
 [PASS] audit note records 'log-det generator' category (59 rows)  (expected substring='log-det generator' in audit note)
@@ -56,10 +56,10 @@ TOTAL: PASS=34 FAIL=7
 FAILURES:
   [FAIL] live direct-dependent count includes this meta report (92)  (observed=101)
   [FAIL] audited pre-existing direct-dependent count matches audit claim (91)  (observed=100)
-  [FAIL] effective_status=unaudited count matches audit (81)  (observed=79)
+  [FAIL] effective_status=unaudited count matches audit (81)  (observed=87)
   [FAIL] claim_type=meta count matches audit (10)  (observed=13)
-  [FAIL] per-category lists cover every live direct dependent  (missing=['docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md', 'docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md', 'docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md'])
-  [FAIL] per-category lists contain no non-dependent paths  (extra=['docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md', 'docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md', 'docs/ai_methodology/raw/repo_audit.md'])
+  [FAIL] per-category lists cover every live direct dependent  (missing=['docs/NEUTRINO_GAMMA1_WSOURCE_APPLICATION_BRIDGE_NOTE_2026-07-09.md', 'docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md', 'docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md'])
+  [FAIL] per-category lists contain no non-dependent paths  (extra=['docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md', 'docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md', 'docs/UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_NOTE.md'])
   [FAIL] REWRITE + SPLIT + LEAVE = 91 (total direct dependents)  (REWRITE=0, SPLIT=0, LEAVE=91, total=91, n_direct=100)
 
 ----- stderr -----

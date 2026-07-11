@@ -21,10 +21,11 @@ Both are registered in
 No admission, convention, governance decision, or derivation target satisfies
 a physics dependency.
 
-The machine file
-[`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json)
-is retained solely to preserve historical statements, no-go portfolios, and
-disposition provenance. Its live fields are permanently empty:
+The former admission registry has been deleted. Its statements, no-go
+portfolios, and disposition provenance were moved to the explicitly
+non-authoritative
+[`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json).
+The old live fields survive there only as historical data:
 
 ```text
 genuine_admitted_input_count = 0
@@ -58,9 +59,9 @@ chain-satisfy without bounding, and are guarded with the axiom memo by
 `check_axiom_premise_clean.py`. The Record content remains part of the current
 four-axiom memo.
 
-## Convention metadata
+## Historical convention metadata
 
-The historical JSON continues to list `Y0` and `g0` for survey completeness as
+The decision-history JSON continues to list `Y0` and `g0` for provenance as
 vacuous rescaling conventions. They are not supplied inputs, do not satisfy a
 dependency, and do not carry broader parent-note physics.
 

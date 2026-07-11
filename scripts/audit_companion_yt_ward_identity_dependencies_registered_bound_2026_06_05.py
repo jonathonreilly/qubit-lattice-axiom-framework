@@ -93,7 +93,7 @@ import sympy as sp
 # --------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parents[1]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
-TIER_A_PATH = REPO_ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+TIER_A_PATH = REPO_ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 NOTE_PATH = REPO_ROOT / "docs" / "YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md"
 
 PASS = 0

@@ -15,7 +15,7 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md"
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
-TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+TIER_A = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 RECORD = ROOT / "docs" / "RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md"
 BRANNEN = ROOT / "docs" / "BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md"
 
@@ -286,7 +286,7 @@ def part_d_note_discipline(note: str) -> None:
         check(f"instruction marker absent: {fragment}", fragment not in note)
 
     check("retained_bounded token absent from note", note.count("retained_bounded") == 0)
-    check("Tier-A path is not markdown linked", not any("tier_a_admissions.json" in target for _, target in links))
+    check("retired admission path is not markdown linked", not any("tier_a_admissions.json" in target for _, target in links))
     check("no campaign note path markdown links", not any("ACPHILAMBDA_" in target for _, target in links))
 
     line_count = len(note.splitlines())

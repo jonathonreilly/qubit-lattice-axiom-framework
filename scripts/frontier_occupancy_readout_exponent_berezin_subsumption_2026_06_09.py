@@ -20,7 +20,7 @@ The chain, every link checked below:
   B4  THE SUBSUMPTION: which Berezin cell applies is decided by the
       POLARIZATION of the matter realization, conditional on the EXISTING
       staggered Tier-A gate (mechanically verified present in
-      tier_a_admissions.json). Complex/Dirac realization -> det_C -> r = 1/2
+      premise_decision_history.json). Complex/Dirac realization -> det_C -> r = 1/2
       (Q = 2/3); K-fixed/Majorana -> Pf/det_R -> r = 1 (Q = 1). Cell map
       cross-checked verbatim against the landed fork table (#3138 guard).
       => the occupancy exponent has no separate admission in this route: it is
@@ -222,11 +222,11 @@ def main():
           "real cells (r=1, Q=1)  (the #3138 guard)",
           cell_from_exponent[1] == landed_table["holo_berezin"]
           and cell_from_exponent[2] == landed_table["majorana_berezin"])
-    reg_path = os.path.join(os.path.dirname(__file__), "..", "docs", "audit", "data", "tier_a_admissions.json")
+    reg_path = os.path.join(os.path.dirname(__file__), "..", "docs", "audit", "data", "premise_decision_history.json")
     reg = json.load(open(reg_path))
     gate_present = "staggered_dirac_realization_gate_note_2026-05-03" in reg.get("canonical_ids", [])
     check("the polarization supplier is the EXISTING registered Tier-A gate "
-          "(staggered_dirac_realization_gate, mechanically verified in tier_a_admissions.json) "
+          "(staggered_dirac_realization_gate, historically recorded in premise_decision_history.json) "
           "=> the occupancy exponent is CONDITIONAL under {existing gate, K/CPT "
           "covariance}; MAXENT-R is not consumed; no additional Tier-A node is introduced",
           gate_present, detail=f"canonical_ids contains the gate: {gate_present}")

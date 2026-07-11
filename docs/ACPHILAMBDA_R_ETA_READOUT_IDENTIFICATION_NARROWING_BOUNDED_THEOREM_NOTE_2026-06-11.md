@@ -5,7 +5,7 @@
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome and does not edit the audit-lane-owned Tier-A
-registry (`docs/audit/data/tier_a_admissions.json`), ledger, queue, or any
+registry (`docs/audit/data/premise_decision_history.json`), ledger, queue, or any
 publication-status surface.
 **Primary runner:**
 [`scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py`](../scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py)

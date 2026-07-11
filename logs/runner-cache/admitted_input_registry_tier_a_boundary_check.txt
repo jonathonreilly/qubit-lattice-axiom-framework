@@ -1,11 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/admitted_input_registry_tier_a_boundary_check.py
-runner_sha256: 0c0b8a48b89fcf5faa3e086c729424c04c1316739518cfe76910101fb822ae57
+runner_sha256: 6e0f3beba82dd0b1b40ffcfc22c775e06dfeff4c7b4da74945620d9711f2b70b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
+[PASS] admission registry is absent
+[PASS] decision history is explicitly non-authoritative
 [PASS] historical admission count is zero
 [PASS] historical admission ids are empty
 [PASS] historical derivation-target map is empty
@@ -14,7 +16,7 @@ status: ok
 [PASS] foundation contains axiom plus three approved primitives
 [PASS] accepted ids equal foundation ids
 [PASS] open obligations are not supplied premises
-TOTAL: PASS=8 FAIL=0
+TOTAL: PASS=10 FAIL=0
 
 ----- stderr -----
 

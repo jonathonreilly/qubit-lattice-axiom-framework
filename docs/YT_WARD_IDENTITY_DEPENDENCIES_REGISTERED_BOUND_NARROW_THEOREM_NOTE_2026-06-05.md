@@ -233,7 +233,7 @@ not assert any `effective_status`.
 - Record-axiom-invariance companion (meta):
   `YT_WARD_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md`
 - Tier-A admission registry (registered targets and conventions):
-  `docs/audit/data/tier_a_admissions.json`
+  `docs/audit/data/premise_decision_history.json`
 - Published chain rule:
   `docs/audit/scripts/compute_effective_status.py`
 - Accepted-premise policy:

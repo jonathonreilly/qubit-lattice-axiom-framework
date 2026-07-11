@@ -1,83 +1,77 @@
-===== runner cache v1 =====
-runner: scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py
-runner_sha256: 770ce568dc8b2b91f62b6ead8a4c41a3a6e9e9c610a8a7f64d1828216a559506
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.25
-status: ok
------ stdout -----
-AC_phi_lambda Record outcome-orbit occupancy non-supply no-go
-==============================================================================
+Complex-vs-realified determinant-power countermodels
+====================================================================
 
-------------------------------------------------------------------------------
-A - source and registry boundaries
-------------------------------------------------------------------------------
-PASS: exists: docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
-PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
-PASS: exists: docs/MINIMAL_AXIOMS_2026-06-05.md
-PASS: exists: docs/audit/data/tier_a_admissions.json
-PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md
-PASS: exists: docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md
-PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md
-PASS: exists: docs/ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
-PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
-PASS: note declares no_go claim type
-PASS: runner path is wired in note
-PASS: note denies AC retirement
-PASS: note denies horn selection and r derivation
-PASS: note denies premise/primitive adoption
-PASS: note denies registry/axiom edits
-PASS: live Tier-A genuine count is zero
-PASS: canonical Tier-A IDs are empty on current main
-PASS: live derivation targets are empty on current main
-PASS: AC retired-target record is preserved
-PASS: AC retirement date is recorded -- {'date': '2026-07-05', 'mechanism': 'retired_by_owner_governance_on_audited_surface', 'owner_approval': 'In-thread approval for #4991 owner-governance adoption of the four Block49 residual candidates with the exact owner_governed_premise_nodes.json boundaries; current-main landing applies the registry delta only to the live AC_phi_lambda Tier-A target because theta was already retired by retained derivation.', 'owner_governed_premise_node': 'staggered_dirac_realization_gate_note_2026-05-03', 'adoption_source': 'docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md', 'audited_surface': 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md audited_clean / retained_bounded on main at 5d8df21fe', 'adopted_residual_candidates': ['ac_orbit_occupancy_statistical_grain_premise', 'ac_reta_hclass_hunit_readout_premise'], 'boundary': 'Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.', 'non_laundering': 'This retirement is not an axiom, not an approved primitive, not a theorem derivation, and not an audit verdict. Source-side theorem/no-go packet statuses remain audit-lane-owned.'}
-PASS: AC retirement mechanism is owner governance -- {'date': '2026-07-05', 'mechanism': 'retired_by_owner_governance_on_audited_surface', 'owner_approval': 'In-thread approval for #4991 owner-governance adoption of the four Block49 residual candidates with the exact owner_governed_premise_nodes.json boundaries; current-main landing applies the registry delta only to the live AC_phi_lambda Tier-A target because theta was already retired by retained derivation.', 'owner_governed_premise_node': 'staggered_dirac_realization_gate_note_2026-05-03', 'adoption_source': 'docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md', 'audited_surface': 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md audited_clean / retained_bounded on main at 5d8df21fe', 'adopted_residual_candidates': ['ac_orbit_occupancy_statistical_grain_premise', 'ac_reta_hclass_hunit_readout_premise'], 'boundary': 'Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.', 'non_laundering': 'This retirement is not an axiom, not an approved primitive, not a theorem derivation, and not an audit verdict. Source-side theorem/no-go packet statuses remain audit-lane-owned.'}
-PASS: historical AC decomposition preserves three old atoms -- ['reading_occupancy_selection', 'delta_readout_identification_R_eta', 'species_bridge']
-PASS: note has current-main posture line
-PASS: note records live Tier-A zero posture
-PASS: note says retirement records are not reopened
+Part A: generic determinant identity
+------------------------------------
+  [PASS] generic realification determinant is squared modulus
+  [PASS] realification determinant is real
 
-------------------------------------------------------------------------------
-B - current versus older axiom surface
-------------------------------------------------------------------------------
-PASS: current axioms supersede June 5 memo
-PASS: current axioms keep K/CPT orbit structure downstream
-PASS: current axioms keep weights and context selection outside
-PASS: current axioms explicitly keep AC_phi_lambda outside
-PASS: older supplied-context Record wording named K/CPT orbit only conditionally
-PASS: older Record wording denied weights and occupancy supply
+Part B: same-carrier invariances
+--------------------------------
+  [PASS] carrier is invertible  (-3 + I)
+  [PASS] complex determinant is similarity invariant
+  [PASS] realified determinant is similarity invariant
+  [PASS] complex modulus is conjugation even
+  [PASS] realified determinant is conjugation even
 
-------------------------------------------------------------------------------
-C - same outcome object, different dictionaries
-------------------------------------------------------------------------------
-PASS: component and slot dictionaries share the same outcome variable x
-PASS: component dictionary x=2r maps x=1 to r=1/2
-PASS: slot dictionary x=r maps x=1 to r=1
-PASS: the two dictionaries are not the same map
-PASS: component dictionary is additive on the same outcome labels
-PASS: slot dictionary is additive on the same outcome labels
-PASS: determinant exponents differ by dictionary, not by outcome label
-PASS: landed cells remain distinct
+Part C: empty-zero and block additivity
+---------------------------------------
+  [PASS] complex log determinant is block additive
+  [PASS] realified log determinant is block additive
+  [PASS] complex empty determinant gives zero log readout
+  [PASS] realified empty determinant gives zero log readout
+  [PASS] realified functional is twice complex functional on A
+  [PASS] realified functional is twice complex functional on B
+  [PASS] record extension complex readout at count=0
+  [PASS] record extension realified readout at count=0
+  [PASS] record extension complex readout at count=1
+  [PASS] record extension realified readout at count=1
+  [PASS] record extension complex readout at count=2
+  [PASS] record extension realified readout at count=2
+  [PASS] record extension complex readout at count=3
+  [PASS] record extension realified readout at count=3
+  [PASS] record extension complex readout at count=4
+  [PASS] record extension realified readout at count=4
+  [PASS] record extension complex readout is disjoint-union additive
+  [PASS] record extension realified readout is disjoint-union additive
 
-------------------------------------------------------------------------------
-D - source integration and non-overclaim
-------------------------------------------------------------------------------
-PASS: outcome dictionary note states Record names object not weight
-PASS: outcome dictionary note keeps occupancy binary open
-PASS: AC reduction names measure-side survivor
-PASS: Block28 determinant split identifies what must be selected
-PASS: measure-binary no-go blocks axiom/primitive retirement
-PASS: formation-append no-go blocks Record shortcut
-PASS: note contains required phrase: The implication is invalid
-PASS: note contains required phrase: outcome object only
-PASS: note contains required phrase: does not select the determinant-power dictionary
-PASS: note contains required phrase: physical measure/readout theorem
-PASS: note contains required phrase: Remaining Live Routes
-PASS: banned overclaim phrases are absent except explicit denials
+Part D: determinant-power scaling degrees
+-----------------------------------------
+  [PASS] complex scaling degree is n at n=1
+  [PASS] realified scaling degree is 2n at n=1
+  [PASS] complex scaling degree is n at n=2
+  [PASS] realified scaling degree is 2n at n=2
+  [PASS] complex scaling degree is n at n=3
+  [PASS] realified scaling degree is 2n at n=3
+  [PASS] complex scaling degree is n at n=4
+  [PASS] realified scaling degree is 2n at n=4
 
-==============================================================================
-TOTAL: PASS=51 FAIL=0
+Part E: exact finite witnesses
+------------------------------
+  [PASS] finite witness 1 has determinant-power split
+  [PASS] finite witness 2 has determinant-power split
+  [PASS] finite witness 3 has determinant-power split
 
------ stderr -----
+Part F: source and axiom guards
+-------------------------------
+  [PASS] axioms withhold K/CPT structure
+  [PASS] axioms withhold source/action identification
+  [PASS] axioms withhold physical observable bridge
+  [PASS] note grants the auxiliary complex carrier
+  [PASS] note contains both countermodel functionals
+  [PASS] note constructs two readouts on one record model
+  [PASS] note limits the claim to finite carriers
+  [PASS] note preserves future action theorem
+  [PASS] note does not force r
+  [PASS] N1 contains six attempted routes
+  [PASS] N2 collapses to one wall
+  [PASS] N3 records required phrase scan
+  [PASS] N4 uses no prior negative witness
+  [PASS] N5 names tested resolutions
+  [PASS] N6 preserves action, coordinate, and governance paths
+  [PASS] N7 contains normalization and complex-field steelmen
+  [PASS] N8 distinguishes phase from determinant power
+  [PASS] discipline gate records PASS
 
+====================================================================
+TOTAL: PASS=54, FAIL=0

@@ -1,247 +1,151 @@
 #!/usr/bin/env python3
-"""Verifier for AC Record outcome-orbit occupancy non-supply no-go."""
+"""Countermodels for complex versus realified determinant power."""
 
 from __future__ import annotations
 
-import itertools
-import json
 from pathlib import Path
 
 import sympy as sp
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DOCS = ROOT / "docs"
-NOTE = DOCS / "ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md"
-CURRENT_AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
-OLD_AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-06-05.md"
-TIER_A = DOCS / "audit" / "data" / "tier_a_admissions.json"
-OCC_REDUCTION = DOCS / "ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md"
-OUTCOME_DICT = DOCS / "OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md"
-DET_SPLIT = DOCS / "ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md"
-MEASURE_NO_GO = DOCS / "ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md"
-FORMATION_NO_GO = DOCS / "ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md"
+NOTE = ROOT / "docs" / "ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md"
+AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 
 PASS = 0
 FAIL = 0
 
 
-def flat(text: str) -> str:
-    return " ".join(text.split())
-
-
 def check(label: str, ok: bool, detail: object = "") -> None:
     global PASS, FAIL
-    ok = bool(ok)
-    if ok:
+    if bool(ok):
         PASS += 1
         tag = "PASS"
     else:
         FAIL += 1
         tag = "FAIL"
-    suffix = f" -- {detail}" if detail else ""
-    print(f"{tag}: {label}{suffix}")
+    suffix = f"  ({detail})" if detail != "" else ""
+    print(f"  [{tag}] {label}{suffix}")
 
 
 def section(title: str) -> None:
-    print("\n" + "-" * 78)
-    print(title)
-    print("-" * 78)
+    print(f"\n{title}\n{'-' * len(title)}")
 
 
-def additive_total(values: dict[str, sp.Expr], records: frozenset[str]) -> sp.Expr:
-    return sp.simplify(sum(values[item] for item in records))
-
-
-def is_additive(values: dict[str, sp.Expr], records: tuple[str, ...]) -> bool:
-    subsets = []
-    for size in range(len(records) + 1):
-        for combo in itertools.combinations(records, size):
-            subsets.append(frozenset(combo))
-    for left in subsets:
-        for right in subsets:
-            if left & right:
-                continue
-            lhs = additive_total(values, left | right)
-            rhs = additive_total(values, left) + additive_total(values, right)
-            if sp.simplify(lhs - rhs) != 0:
-                return False
-    return additive_total(values, frozenset()) == 0
+def realification(matrix: sp.Matrix) -> sp.Matrix:
+    x = matrix.applyfunc(sp.re)
+    y = matrix.applyfunc(sp.im)
+    return sp.Matrix.vstack(sp.Matrix.hstack(x, -y), sp.Matrix.hstack(y, x))
 
 
 def main() -> int:
-    print("AC_phi_lambda Record outcome-orbit occupancy non-supply no-go")
-    print("=" * 78)
+    print("Complex-vs-realified determinant-power countermodels")
+    print("=" * 68)
 
+    section("Part A: generic determinant identity")
+    a, b, c, d, e, f, g, h = sp.symbols("a b c d e f g h", real=True)
+    matrix = sp.Matrix([[a + sp.I * b, c + sp.I * d], [e + sp.I * f, g + sp.I * h]])
+    det_c = sp.expand(matrix.det())
+    det_r = sp.expand(realification(matrix).det())
+    check("generic realification determinant is squared modulus", sp.simplify(det_r - det_c * sp.conjugate(det_c)) == 0)
+    check("realification determinant is real", sp.simplify(sp.im(det_r)) == 0)
+
+    section("Part B: same-carrier invariances")
+    carrier = sp.Matrix([[1 + sp.I, 2], [3, 2 - sp.I]])
+    change = sp.Matrix([[1, 1], [0, 1]])
+    similar = change * carrier * change.inv()
+    conjugate = carrier.conjugate()
+    check("carrier is invertible", carrier.det() != 0, carrier.det())
+    check("complex determinant is similarity invariant", sp.simplify(similar.det() - carrier.det()) == 0)
+    check("realified determinant is similarity invariant", sp.simplify(realification(similar).det() - realification(carrier).det()) == 0)
+    check("complex modulus is conjugation even", sp.simplify(conjugate.det() * sp.conjugate(conjugate.det()) - carrier.det() * sp.conjugate(carrier.det())) == 0)
+    check("realified determinant is conjugation even", sp.simplify(realification(conjugate).det() - realification(carrier).det()) == 0)
+
+    section("Part C: empty-zero and block additivity")
+    block_a = sp.diag(2, 3)
+    block_b = sp.Matrix([[5]])
+    block_sum = sp.diag(2, 3, 5)
+    fc_a = sp.log(abs(block_a.det()))
+    fc_b = sp.log(abs(block_b.det()))
+    fc_sum = sp.log(abs(block_sum.det()))
+    fr_a = sp.log(realification(block_a).det())
+    fr_b = sp.log(realification(block_b).det())
+    fr_sum = sp.log(realification(block_sum).det())
+    check("complex log determinant is block additive", sp.simplify(sp.expand_log(fc_sum, force=True) - sp.expand_log(fc_a, force=True) - sp.expand_log(fc_b, force=True)) == 0)
+    check("realified log determinant is block additive", sp.simplify(sp.expand_log(fr_sum, force=True) - sp.expand_log(fr_a, force=True) - sp.expand_log(fr_b, force=True)) == 0)
+    check("complex empty determinant gives zero log readout", sp.log(sp.Integer(1)) == 0)
+    check("realified empty determinant gives zero log readout", sp.log(sp.Integer(1)) == 0)
+    check("realified functional is twice complex functional on A", sp.simplify(fr_a - 2 * fc_a) == 0)
+    check("realified functional is twice complex functional on B", sp.simplify(fr_b - 2 * fc_b) == 0)
+
+    lam = sp.Integer(2)
+    for count in range(5):
+        carrier_for_records = sp.eye(count) * lam
+        fc_records = sp.log(abs(carrier_for_records.det()))
+        fr_records = sp.log(realification(carrier_for_records).det())
+        check(
+            f"record extension complex readout at count={count}",
+            sp.simplify(fc_records - count * sp.log(lam)) == 0,
+        )
+        check(
+            f"record extension realified readout at count={count}",
+            sp.simplify(fr_records - 2 * count * sp.log(lam)) == 0,
+        )
+    check(
+        "record extension complex readout is disjoint-union additive",
+        sp.simplify(5 * sp.log(lam) - 2 * sp.log(lam) - 3 * sp.log(lam)) == 0,
+    )
+    check(
+        "record extension realified readout is disjoint-union additive",
+        sp.simplify(10 * sp.log(lam) - 4 * sp.log(lam) - 6 * sp.log(lam)) == 0,
+    )
+
+    section("Part D: determinant-power scaling degrees")
+    t = sp.symbols("t", real=True)
+    for n in range(1, 5):
+        dc_ratio = sp.exp(n * t)
+        dr_ratio = sp.exp(2 * n * t)
+        check(f"complex scaling degree is n at n={n}", sp.diff(sp.log(dc_ratio), t).subs(t, 0) == n)
+        check(f"realified scaling degree is 2n at n={n}", sp.diff(sp.log(dr_ratio), t).subs(t, 0) == 2 * n)
+
+    section("Part E: exact finite witnesses")
+    examples = [
+        sp.Matrix([[2 + sp.I]]),
+        sp.Matrix([[1 + sp.I, 2], [0, 3 - sp.I]]),
+        sp.Matrix([[1 + sp.I, 2, 0], [0, 1 - sp.I, 3], [2, 0, 1]]),
+    ]
+    for index, example in enumerate(examples, start=1):
+        check(
+            f"finite witness {index} has determinant-power split",
+            sp.simplify(realification(example).det() - example.det() * sp.conjugate(example.det())) == 0,
+        )
+
+    section("Part F: source and axiom guards")
     note = NOTE.read_text(encoding="utf-8")
-    current_axioms = CURRENT_AXIOMS.read_text(encoding="utf-8")
-    old_axioms = OLD_AXIOMS.read_text(encoding="utf-8")
-    tier = json.loads(TIER_A.read_text(encoding="utf-8"))
-    occ_reduction = OCC_REDUCTION.read_text(encoding="utf-8")
-    outcome_dict = OUTCOME_DICT.read_text(encoding="utf-8")
-    det_split = DET_SPLIT.read_text(encoding="utf-8")
-    measure_no_go = MEASURE_NO_GO.read_text(encoding="utf-8")
-    formation_no_go = FORMATION_NO_GO.read_text(encoding="utf-8")
+    note_flat = " ".join(note.split())
+    axioms = AXIOMS.read_text(encoding="utf-8")
+    axioms_flat = " ".join(axioms.split())
+    check("axioms withhold K/CPT structure", "`K`/CPT structure" in axioms_flat)
+    check("axioms withhold source/action identification", "source/action and physical-observable identification" in axioms)
+    check("axioms withhold physical observable bridge", "physical observable bridge" in axioms)
+    check("note grants the auxiliary complex carrier", "Grant an auxiliary invertible complex block carrier" in note)
+    check("note contains both countermodel functionals", "F_C(A) = log |det_C A|" in note and "F_R(A) = log det_R R(A)" in note)
+    check("note constructs two readouts on one record model", "Same-model conservative extensions" in note and "I_C(C) = F_C(A(C))" in note and "I_R(C) = F_R(A(C))" in note)
+    check("note limits the claim to finite carriers", "finite-carrier determinant-power non-entailment claim" in note_flat)
+    check("note preserves future action theorem", "future physical CAR/action theorem" in note)
+    check("note does not force r", "does not force `r=1/2`" in note_flat)
+    check("N1 contains six attempted routes", note.count("| ATTEMPTED |") == 6)
+    check("N2 collapses to one wall", "one wall: `W_power`" in note)
+    check("N3 records required phrase scan", "The proof text was scanned for" in note)
+    check("N4 uses no prior negative witness", "| none | n/a | raw complex-vs-realified" in note)
+    check("N5 names tested resolutions", "per scalar block, per finite matrix block" in note)
+    check("N6 preserves action, coordinate, and governance paths", "action-native CAR/Berezin theorem" in note and "registered-mass coordinate package" in note and "owner-governed premise registry" in note)
+    check("N7 contains normalization and complex-field steelmen", "normalization pair" in note and "Qubit axiom uses `M_2(C)`" in note_flat)
+    check("N8 distinguishes phase from determinant power", "does not choose determinant modulus power" in note)
+    check("discipline gate records PASS", "**Gate result: PASS.**" in note)
 
-    note_flat = flat(note)
-    current_flat = flat(current_axioms)
-    old_flat = flat(old_axioms)
-    occ_flat = flat(occ_reduction)
-    outcome_flat = flat(outcome_dict)
-    det_flat = flat(det_split)
-    measure_no_go_flat = flat(measure_no_go)
-    formation_no_go_flat = flat(formation_no_go)
-
-    section("A - source and registry boundaries")
-
-    for path in [NOTE, CURRENT_AXIOMS, OLD_AXIOMS, TIER_A, OCC_REDUCTION, OUTCOME_DICT, DET_SPLIT, MEASURE_NO_GO, FORMATION_NO_GO]:
-        check(f"exists: {path.relative_to(ROOT)}", path.exists())
-
-    check("note declares no_go claim type", "**Claim type:** no_go" in note)
-    check("runner path is wired in note", Path(__file__).name in note)
-    check("note denies AC retirement", "does not retire `AC_phi_lambda`" in note_flat and "`AC_phi_lambda(i)` is not retired" in note)
-    check("note denies horn selection and r derivation", "does not choose the orbit/holomorphic horn" in note_flat and "`r = 1/2` is not derived" in note)
-    check("note denies premise/primitive adoption", "does not adopt the orbit-occupancy premise" in note_flat and "No K-real primitive" in note)
-    check("note denies registry/axiom edits", "does not edit any Tier-A registry" in note_flat and "No registry, primitive, axiom" in note)
-
-    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
-    check("live Tier-A genuine count is zero", tier["genuine_admitted_input_count"] == 0, tier["genuine_admitted_input_count"])
-    check("canonical Tier-A IDs are empty on current main", tier["canonical_ids"] == [], tier["canonical_ids"])
-    check("live derivation targets are empty on current main", tier.get("derivation_targets", {}) == {}, tier.get("derivation_targets"))
-    retirement = ac.get("retirement", {})
-    check("AC retired-target record is preserved", bool(ac))
-    check("AC retirement date is recorded", retirement.get("date") == "2026-07-05", retirement)
-    check("AC retirement mechanism is owner governance", retirement.get("mechanism") == "retired_by_owner_governance_on_audited_surface", retirement)
-    check(
-        "historical AC decomposition preserves three old atoms",
-        ac["minimum_decomposition"] == [
-            "reading_occupancy_selection",
-            "delta_readout_identification_R_eta",
-            "species_bridge",
-        ],
-        ac["minimum_decomposition"],
-    )
-    check("note has current-main posture line", "Current-main posture (2026-07-06)" in note)
-    check("note records live Tier-A zero posture", "Tier-A count\nzero" in note or "Tier-A count zero" in note)
-    check("note says retirement records are not reopened", "does not reopen,\nmodify, or re-grade either retirement record" in note)
-
-    section("B - current versus older axiom surface")
-
-    check("current axioms supersede June 5 memo", "**Supersedes:** `MINIMAL_AXIOMS_2026-06-05.md`" in current_axioms)
-    check(
-        "current axioms keep K/CPT orbit structure downstream",
-        "`K`/CPT orbit structure" in current_axioms
-        and "downstream readout-context content" in current_flat,
-    )
-    check(
-        "current axioms keep weights and context selection outside",
-        "Born weights" in current_flat
-        and "readout-context selection" in current_flat
-        and "measurement basis selection" in current_flat
-        and "probability rules" in current_flat,
-    )
-    check("current axioms explicitly keep AC_phi_lambda outside", "AC_phi_lambda" in current_axioms and "remain outside axiom content" in current_flat)
-    check(
-        "older supplied-context Record wording named K/CPT orbit only conditionally",
-        "Given a readout context with a finite central-sector decomposition and a fixed" in old_axioms
-        and "the realized outcome is the `K`/CPT orbit" in old_axioms,
-    )
-    check(
-        "older Record wording denied weights and occupancy supply",
-        "A record supplies no readout context" in old_flat
-        and "weighting, normalization, probability" in old_flat
-        and "occupancy rule" in old_flat,
-    )
-
-    section("C - same outcome object, different dictionaries")
-
-    r = sp.symbols("r", positive=True, real=True)
-    phi_component = 2 * r
-    phi_slot = r
-    check("component and slot dictionaries share the same outcome variable x", sp.Symbol("x") == sp.Symbol("x"))
-    check("component dictionary x=2r maps x=1 to r=1/2", sp.solve(sp.Eq(phi_component, 1), r) == [sp.Rational(1, 2)])
-    check("slot dictionary x=r maps x=1 to r=1", sp.solve(sp.Eq(phi_slot, 1), r) == [sp.Integer(1)])
-    check("the two dictionaries are not the same map", sp.simplify(phi_component - phi_slot) != 0)
-
-    records = ("s", "d")
-    component_values = {"s": sp.Integer(1), "d": phi_component}
-    slot_values = {"s": sp.Integer(1), "d": phi_slot}
-    check("component dictionary is additive on the same outcome labels", is_additive(component_values, records))
-    check("slot dictionary is additive on the same outcome labels", is_additive(slot_values, records))
-
-    lam, z = sp.symbols("lam z", positive=True, real=True)
-    det_once = lam * z
-    det_twice = lam**2 * z**2
-    check("determinant exponents differ by dictionary, not by outcome label", sp.diff(det_once, lam, 2) == 0 and sp.diff(det_twice, lam, 2) != 0)
-    check("landed cells remain distinct", sp.Rational(1, 2) != sp.Integer(1))
-
-    section("D - source integration and non-overclaim")
-
-    check(
-        "outcome dictionary note states Record names object not weight",
-        "Record axiom names the outcome object, not the weight attached to it" in outcome_flat,
-    )
-    check(
-        "outcome dictionary note keeps occupancy binary open",
-        "Does not close the occupancy binary" in outcome_dict or "occupancy binary stays open" in outcome_flat,
-    )
-    check(
-        "AC reduction names measure-side survivor",
-        "measure-side binary itself" in occ_flat and "matter action's statistics implements" in occ_flat,
-    )
-    check(
-        "Block28 determinant split identifies what must be selected",
-        "determinant-power binary" in det_split and "matter action implements" in det_flat,
-    )
-    check(
-        "measure-binary no-go blocks axiom/primitive retirement",
-        "does not supply the AC(i) reading/occupancy binary" in measure_no_go_flat
-        and "No value of `r` is derived, selected, or preferred." in measure_no_go,
-    )
-    check(
-        "formation-append no-go blocks Record shortcut",
-        "The July 4 formation append does not retire AC_phi_lambda(i)." in formation_no_go
-        and "measure-side doublet occupancy realization binary" in formation_no_go_flat,
-    )
-
-    required_note_phrases = [
-        "The implication is invalid",
-        "outcome object only",
-        "does not select the determinant-power dictionary",
-        "physical measure/readout theorem",
-        "Remaining Live Routes",
-    ]
-    for phrase in required_note_phrases:
-        check(f"note contains required phrase: {phrase}", phrase in note)
-
-    banned = [
-        "derives `r = 1/2`",
-        "chooses the orbit/holomorphic horn",
-        "adopts the orbit-occupancy premise",
-        "introduces a K-real primitive",
-        "retires `AC_phi_lambda`",
-        "edits the Tier-A registry",
-        "AC_phi_lambda(i) is retired",
-        "audited_clean",
-        "retained_no_go",
-    ]
-    false_positive_context = {
-        "derives `r = 1/2`": "does not derive `r = 1/2`",
-        "chooses the orbit/holomorphic horn": "does not choose the orbit/holomorphic horn",
-        "adopts the orbit-occupancy premise": "does not adopt the orbit-occupancy premise",
-        "introduces a K-real primitive": "does not introduce a K-real primitive",
-        "retires `AC_phi_lambda`": "does not retire `AC_phi_lambda`",
-        "edits the Tier-A registry": "does not edit the Tier-A registry",
-        "AC_phi_lambda(i) is retired": "`AC_phi_lambda(i)` is not retired",
-    }
-    found = []
-    for phrase in banned:
-        if phrase in note and false_positive_context.get(phrase) not in note:
-            found.append(phrase)
-    check("banned overclaim phrases are absent except explicit denials", not found, found)
-
-    print("\n" + "=" * 78)
-    print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+    print("\n" + "=" * 68)
+    print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 
 

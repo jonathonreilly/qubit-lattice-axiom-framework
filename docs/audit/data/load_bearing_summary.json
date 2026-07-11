@@ -1,9 +1,9 @@
 {
   "criticality_counts": {
-    "critical": 759,
-    "high": 403,
-    "leaf": 1773,
-    "medium": 989
+    "critical": 760,
+    "high": 402,
+    "leaf": 1774,
+    "medium": 988
   },
   "flagship_signal_used": false,
   "node_count": 3924,
@@ -19,7 +19,7 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 223.943,
+      "load_bearing_score": 222.943,
       "transitive_descendants": 1968
     },
     {
@@ -107,12 +107,6 @@
       "transitive_descendants": 611
     },
     {
-      "claim_id": "kinetic_isotropy_primitive",
-      "criticality": "critical",
-      "load_bearing_score": 36.422,
-      "transitive_descendants": 484
-    },
-    {
       "claim_id": "s3_time_theta_to_slice_coupling_note",
       "criticality": "critical",
       "load_bearing_score": 35.989,
@@ -135,6 +129,12 @@
       "criticality": "critical",
       "load_bearing_score": 33.771,
       "transitive_descendants": 617
+    },
+    {
+      "claim_id": "kinetic_isotropy_primitive",
+      "criticality": "critical",
+      "load_bearing_score": 33.422,
+      "transitive_descendants": 484
     },
     {
       "claim_id": "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",

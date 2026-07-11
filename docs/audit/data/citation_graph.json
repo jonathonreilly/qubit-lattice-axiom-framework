@@ -57738,7 +57738,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "tier_a_residual_owner_adoption_retirement_2026-07-04"
+      "to": "ac_orbit_occupancy_statistical_grain_derivation_obligation"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "ac_reta_hclass_hunit_readout_derivation_obligation"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "theta_quark_determinant_cross_sector_readout_derivation_obligation"
     },
     {
       "from": "repo.front_door_status",
@@ -112095,7 +112103,9 @@
         "scale_reference_primitive",
         "kinetic_isotropy_primitive",
         "realized_state_primitive",
-        "tier_a_residual_owner_adoption_retirement_2026-07-04",
+        "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+        "ac_reta_hclass_hunit_readout_derivation_obligation",
+        "theta_quark_determinant_cross_sector_readout_derivation_obligation",
         "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
         "fermion_parity_z2_grading_theorem_note_2026-05-02",
         "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
@@ -112106,7 +112116,7 @@
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "da5ae5b22ec0a6436897b0693916477a831c4ea93cddb1f7e6be876020e7c0ac",
+      "note_hash": "3e91fda31726ddeac683546262658d1c5d17e9f3ed4c9a7ada87ca9f59541433",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -129143,8 +129153,8 @@
       "open_gate": 209,
       "positive_theorem": 661
     },
-    "edge_count": 14545,
-    "leaf_count": 1333,
+    "edge_count": 14547,
+    "leaf_count": 1334,
     "node_count": 3924,
     "root_count": 1116,
     "runners_with_path": 3541

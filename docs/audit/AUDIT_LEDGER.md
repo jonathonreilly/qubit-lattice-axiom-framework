@@ -63,10 +63,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 750 |
-| `high` | 400 |
-| `medium` | 942 |
-| `leaf` | 1660 |
+| `critical` | 751 |
+| `high` | 399 |
+| `medium` | 941 |
+| `leaf` | 1661 |
 
 - **Retained pending chain closure:** 1
 - **Citation cycles detected:** 10
@@ -84,7 +84,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1968 | 223.94 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1968 | 222.94 | `unaudited` | meta |
 | 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1598 | 64.64 | `audited_clean` | **retained** |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1182 | 62.71 | `unaudited` | unaudited |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 61.64 | `unaudited` | unaudited |
@@ -99,11 +99,11 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `alpha_s_derived_note` | bounded_theorem | critical | 1047 | 39.03 | `unaudited` | unaudited |
 | 14 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1053 | 37.04 | `unaudited` | unaudited |
 | 15 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 611 | 36.76 | `unaudited` | unaudited |
-| 16 | `kinetic_isotropy_primitive` | meta | critical | 484 | 36.42 | `unaudited` | meta |
-| 17 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
-| 18 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 434 | 35.27 | `unaudited` | unaudited |
-| 19 | `yt_ew_color_projection_theorem` | no_go | critical | 884 | 33.79 | `audited_clean` | **retained_no_go** |
-| 20 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 617 | 33.77 | `unaudited` | unaudited |
+| 16 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
+| 17 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 434 | 35.27 | `unaudited` | unaudited |
+| 18 | `yt_ew_color_projection_theorem` | no_go | critical | 884 | 33.79 | `audited_clean` | **retained_no_go** |
+| 19 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 617 | 33.77 | `unaudited` | unaudited |
+| 20 | `kinetic_isotropy_primitive` | meta | critical | 484 | 33.42 | `unaudited` | meta |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 863 | 32.76 | `unaudited` | unaudited |
 | 22 | `cpt_exact_note` | positive_theorem | critical | 725 | 31.50 | `audited_failed` | ~~audited_failed~~ |
 | 23 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 465 | 31.36 | `unaudited` | unaudited |

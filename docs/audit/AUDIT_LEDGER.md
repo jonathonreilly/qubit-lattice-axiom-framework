@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 83 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 355 |
+| **retained_bounded** | 356 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 4 |
 | unaudited | 2826 |
-| audit_in_progress | 25 |
+| audit_in_progress | 24 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
@@ -43,8 +43,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 25 |
-| `audited_clean` | 447 |
+| `audit_in_progress` | 24 |
+| `audited_clean` | 448 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 28 |
@@ -133,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -373,6 +372,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lp_two_band_exact_completion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
+| `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4551,6 +4551,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** From K_r=Σ_s⟨r|V_A|s⟩P_s and P_sP_{s'}=δ_{ss'}P_s, one obtains K_r†K_r=Σ_s|⟨r|V_A|s⟩|²P_s, with the canonical case giving K_r=P_r.  _(class `A`)_
 - **chain closes:** True — The conclusions follow directly from projection orthogonality, completeness, and the stated apparatus contraction. The accepted finite-carrier premise supplies the setting, while no measurement-probability rule, fitted value, or open physical-selection bridge is used.
 - **rationale:** The load-bearing identities are genuine finite-dimensional algebraic consequences of the stated hypotheses. The runner constructs the projectors, isometry, Kraus contractions, phase/permutation twists, mixing examples, and zero-projector cases rather than printing or importing the conclusions; all 53 checks pass. The necessity statement is correctly limited to nonzero displayed sectors, and the note does not claim instrument uniqueness or derive physical measurement semantics.
+- **auditor confidence:** high
+
+### `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional matrix theorem: for the stated projections, effects, and density operator, PEP is a supported effect and satisfies the trace, boundary, and nested-compression identities, without any Lüders-update, Born-rule, or probability interpretation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00351-luders_sequential_effect_com`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Congruence preserves positivity and finite-dimensional trace cyclicity gives 0 <= PEP <= P <= I, Tr(rho PEP) = Tr(P rho P E), and P(QFQ)P = (QP)^*F(QP).  _(class `A`)_
+- **chain closes:** True — Each conclusion follows directly from the stated finite-matrix hypotheses by positivity under congruence, projection order, adjoints, and trace cyclicity. No measurement-side bridge is used.
+- **rationale:** The source is correctly narrowed to finite matrix algebra and explicitly excludes measurement and probability semantics. The runner substantively performs exact symbolic and randomized checks, including a Jordan-symmetrization guard, rather than printing constants or importing a contested premise. The cited minimal-axiom authority is an accepted premise used only for matrix-carrier context, while the theorem itself closes from its explicit hypotheses.
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

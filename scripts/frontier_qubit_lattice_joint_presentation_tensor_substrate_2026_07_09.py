@@ -302,19 +302,23 @@ check(
     "E2 source note disclaims audit-outcome authority",
     "does not set or predict an audit outcome" in flat_note,
 )
-check("E2 accepted-premise tag (P1a) is present", "(P1a)" in note_text)
-check("E2 accepted-premise tag (P1b) is present", "(P1b)" in note_text)
+check("E2 declared-premise tag (J1) is present", "(J1)" in note_text)
+check("E2 declared-premise tag (J2) is present", "(J2)" in note_text)
 check(
-    "E2 accepted-premise packet header is present",
-    "(P1) Joint-presentation accepted-premise packet." in note_text,
+    "E2 declared bounded-premise packet header is present",
+    "(J) Joint-presentation declared bounded-premise packet." in note_text,
 )
 check(
     "E2 dated 2026-07-10 Repair Note is present",
     "## Repair Note (2026-07-10)" in note_text,
 )
 check(
-    "E2 accepted-premise packet status phrase is present",
-    "accepted-premise packet entry" in note_text,
+    "E2 declared bounded-premise status phrase is present",
+    "declared bounded-premise packet" in note_text,
+)
+check(
+    "E2 economy does not derive m = 1",
+    "Economy does not derive or justify `m = 1`" in note_text,
 )
 forbidden_overclaims = [
     "closes " + "the",

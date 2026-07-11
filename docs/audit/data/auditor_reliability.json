@@ -74,7 +74,7 @@
       "third_pass_overturn_rate": 0.333,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
       "total_audits": 119,
-      "verdict_changed_after_re_audit": 249,
+      "verdict_changed_after_re_audit": 250,
       "verdict_counts": {
         "audited_clean": 97,
         "audited_failed": 22
@@ -118,7 +118,7 @@
       "third_pass_overturn_rate": 0.541,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
       "total_audits": 359,
-      "verdict_changed_after_re_audit": 402,
+      "verdict_changed_after_re_audit": 404,
       "verdict_counts": {
         "audited_clean": 320,
         "audited_conditional": 9,
@@ -129,10 +129,10 @@
     },
     "codex-gpt-5.6": {
       "audits_with_runner_class": {
-        "A": 64,
+        "A": 66,
         "C": 11,
         "D": 1,
-        "E": 3,
+        "E": 4,
         "F": 2,
         "G": 2
       },
@@ -140,34 +140,34 @@
         "same_severity": 1
       },
       "criticality_counts": {
-        "critical": 47,
+        "critical": 50,
         "high": 4,
         "leaf": 24,
         "medium": 8
       },
-      "cross_confirmation_agreement_rate": 0.875,
+      "cross_confirmation_agreement_rate": 0.88,
       "cross_confirmation_outcomes": {
-        "confirmed": 21,
+        "confirmed": 22,
         "third_confirmed_second": 3
       },
-      "cross_confirmation_pairs_agreed_first_try": 21,
-      "cross_confirmation_pairs_n": 24,
-      "cross_confirmation_pairs_seen": 24,
+      "cross_confirmation_pairs_agreed_first_try": 22,
+      "cross_confirmation_pairs_n": 25,
+      "cross_confirmation_pairs_seen": 25,
       "judicial_third_pass_count": 3,
       "overturned_by_third": 1,
       "ratified_by_third": 3,
       "third_pass_decisions_n": 4,
       "third_pass_overturn_rate": 0.25,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 83,
+      "total_audits": 86,
       "verdict_changed_after_re_audit": 1,
       "verdict_counts": {
-        "audited_clean": 29,
+        "audited_clean": 30,
         "audited_conditional": 35,
         "audited_decoration": 8,
-        "audited_failed": 5,
+        "audited_failed": 6,
         "audited_numerical_match": 2,
-        "audited_renaming": 4
+        "audited_renaming": 5
       }
     }
   },
@@ -202,10 +202,10 @@
   "policy_summary": "Per-auditor-family verdict and cross-confirmation aggregate. Informational only \u2014 humans set audit-lane policy. PRIMARY SIGNALS (unbiased): cross_confirmation_agreement_rate (rate at which this auditor's first-look verdict matched the other independent auditor without needing a third), bias_direction_breakdown (when overturned, was the auditor more_lenient or more_strict?), verdict_changed_after_re_audit (independent re-audit produced a different verdict). DIAGNOSTIC ONLY (selection-biased): third_pass_overturn_rate is the fraction of disputed cases where the auditor was on the losing side; expected value for a competent auditor is ~0.5 because disputes arise on genuinely ambiguous cases. See script docstring for the full read-with-care guide.",
   "totals": {
     "auditor_families_observed": 5,
-    "overall_agreement_rate": 0.82,
-    "total_audits_recorded": 575,
-    "total_cross_confirmation_family_participations": 150,
-    "total_cross_confirmation_pairs": 128,
+    "overall_agreement_rate": 0.822,
+    "total_audits_recorded": 578,
+    "total_cross_confirmation_family_participations": 151,
+    "total_cross_confirmation_pairs": 129,
     "total_third_pass_decisions": 44
   }
 }

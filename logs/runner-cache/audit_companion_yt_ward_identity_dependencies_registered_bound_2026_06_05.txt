@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.py
-runner_sha256: 86107f964e2412beb29031ae5f70927e302de50d5a23e6b809536d1a3097e657
+runner_sha256: d58e10c292d11898a271a542a0c286c85a4b62b8f3a111301bf67646ec9c8e91
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 

@@ -1,6 +1,6 @@
 {
   "actual_current_surface_status": "bounded-support",
-  "claim": "Tier-A source-measure surface closes lambda=1 for normalized top source",
+  "claim": "open source-measure hypothesis gives lambda=1 conditionally for the normalized top source",
   "claim_status_certificate": {
     "actual_current_surface_status": "bounded-support",
     "bare_retained_allowed": false,

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_tier_a_source_action_top_premise_closure.py
-runner_sha256: 7d55a9bb9e576dab48c50df7d7ee3d8931d85f2ab464418c9e722e2fdd94dcff
+runner_sha256: 467345901d04bbee3bfaf77ddb6a964aadee77d373fa4fd2dee6c9317526ac09
 timeout_sec: 120
 exit_code: 1
-elapsed_sec: 0.79
+elapsed_sec: 0.84
 status: nonzero_exit
 ----- stdout -----
 
@@ -59,7 +59,7 @@ Part 3: normalized six-component top operator
 [PASS] six-component top vector is unit normalized: 1
 [PASS] each component is 1/sqrt(6): sqrt(6)/6
 [PASS] lambda family is lambda/sqrt(6): sqrt(6)*lambda/6
-[PASS] Tier-A primitive source unit selects y=1/sqrt(6): sqrt(6)/6
+[PASS] conditional unit-source hypothesis gives y=1/sqrt(6): sqrt(6)/6
 [PASS] positive lambda preserves normalized top source ray: Matrix([[sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6], [sqrt(6)/6]])
 [PASS] projective component probability remains 1/6: 1/6
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit companion: y_t Ward-identity dependencies route to registered sources.
+"""Audit companion: y_t Ward-identity dependencies remain explicitly open.
 
 Companion runner for
 docs/YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md
@@ -10,22 +10,19 @@ The parent narrow theorem `yt_ward_identity_derivation_theorem`
 (docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md) carries an
 `audited_conditional` effective_status whose recorded repair target is:
 
-    "dependency_not_retained: provide retained or explicitly
-     registered Tier-A sources for the staggered-Dirac/canonical Q_L
-     surface and the g_bare = 1 canonical-surface convention, then
-     rerun the restricted audit."
+    "dependency_not_retained: provide retained sources for the
+     staggered-Dirac/canonical Q_L surface and the g_bare = 1
+     canonical-surface convention, then rerun the restricted audit."
 
 This companion does NOT re-prove the entire parent and does NOT close
 AC_phi_lambda. It reproves, from framework primitives + exact group
 theory + elementary polynomial algebra, exactly the two load-bearing
 facts the parent's core identity (T1)
-`y_t_bare = g_bare / sqrt(2 N_c) = g_bare / sqrt(6)` relies on, and shows
-that each of (T1)'s load-bearing dependency routes now has a *registered*
-source:
+`y_t_bare = g_bare / sqrt(2 N_c) = g_bare / sqrt(6)` relies on, and checks
+the current open status of each load-bearing dependency:
 
-  Dep 1 (staggered-Dirac / canonical Q_L surface) = AC_phi_lambda, the
-        REGISTERED Tier-A derivation target
-        `staggered_dirac_realization_gate_note_2026-05-03`
+  Dep 1 (staggered-Dirac / canonical Q_L surface) = the open AC_phi_lambda
+        carrier target `staggered_dirac_realization_gate_note_2026-05-03`
         (canonical parent: docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md).
 
   Dep 2 (g_bare = 1 canonical-surface convention) = (a) a vacuous
@@ -66,15 +63,10 @@ Block plan
            beta(g/c) = c^2 beta(g); reproves the retained basis identity.
   Block 8  Normalized form factor F := y_t_bare / g_bare is g_bare-FLAT
            (independent of g_bare): the g_bare = 1 dependence is vacuous.
-  Block 9  Dependency-registration check: Dep 1 is a registered Tier-A
-           derivation target; Dep 2's abstract basis and finite-link
-           convention authority are retained-grade in the ledger and exposed
-           as one-hop note links.
-  Block 10 Re-audit CASE arithmetic: a clean bounded_theorem row whose
-           one-hop deps are {Tier-A derivation target, retained rescaling
-           note, retained convention note}
-           is a registered Tier-A-bounded candidate under the published
-           chain rule. (No status is written.)
+  Block 9  Dependency check: Dep 1 is not an accepted premise; Dep 2's
+           abstract basis and finite-link convention are checked independently.
+  Block 10 Re-audit arithmetic: an open or non-retained dependency keeps the
+           row pending-chain. (No status is written.)
 
 Each check prints [PASS]/[FAIL]; the script prints
 'TOTAL: N PASS / 0 FAIL' and exits non-zero on any FAIL.
@@ -517,7 +509,7 @@ check(
 )
 # Counterfactual honesty: had the note instead linked the conditional target
 # row, the chain would NOT close (the conditional dep is not retained-grade
-# nor a Tier-A target) -> retained_pending_chain.  This documents WHY the note
+# nor an accepted premise) -> retained_pending_chain. This documents why the note
 # backticks the target row.
 resolved_bad = resolve_clean_bounded([DEP1_TIER_A, DEP2_BASIS, GBARE_CONVENTION, TARGET_ROW])
 check(

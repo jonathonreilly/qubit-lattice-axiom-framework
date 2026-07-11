@@ -1,7 +1,8 @@
 # Teleportation Initial-State Preparation Probe
 
 **Date:** 2026-04-25
-**Status:** planning / first artifact; not a manuscript claim surface
+**Status:** exact boundary theorem on an open gate; operational preparation remains open
+**Type:** open_gate
 **Runner:** `scripts/frontier_teleportation_initial_state_preparation_probe.py`
 
 ## Scope
@@ -57,30 +58,46 @@ single-species `H1` ground states:
 
 ## Derivation Closure
 
-For the two default cases the runner uses `mass=0` and `G=0`. The
-single-species Hamiltonian is therefore the negative adjacency operator on the
-periodic lattice,
+For the two default cases the runner uses `mass=0`, `G=0`, and `t_hop=1`.
+The single-species Hamiltonian is therefore the negative adjacency operator on
+the periodic lattice,
 
 ```text
 H1 = -A,
 ```
 
-with `t_hop=1`. The `1D N=8` cycle is connected and degree `2`; the `2D 4x4`
-torus is connected and degree `4`. For a connected regular graph, the constant
-vector is the Perron eigenvector of `A` with eigenvalue equal to the degree, and
-that top eigenvalue is simple. Hence the `H1=-A` ground state is the unique
+The `1D N=8` cycle is connected and degree `2`; the `2D 4x4` torus is
+connected and degree `4`. Equivalently, periodic Fourier vectors diagonalize
+the two audited Hamiltonians. On a `d`-dimensional side-`L` periodic lattice,
+
+```text
+H1 |k> = -2 sum_(a=1)^d cos(2 pi k_a/L) |k>.
+```
+
+Every cosine is at most one, and equality for every factor occurs only at the
+single momentum `k=(0,...,0)`. Thus the ground vector is unique and is the
 uniform native-site vector
 
 ```text
 |u_N> = N^(-1/2) sum_i |i>,
 ```
 
-with energies `-2` and `-4` in the two audited cases. The finite gaps in the
-table are the runner-computed differences from this simple ground eigenspace to
-the next `H1` eigenspace.
+with energies `-2` and `-4` in the two audited cases. Changing one momentum
+component to the smallest nonzero value gives the exact first gap
 
-At `G=0`, `build_H2_tensor` drops the Poisson diagonal term and the
-two-species Hamiltonian is the Kronecker sum
+```text
+Delta_1 = 2[1 - cos(2 pi/L)].
+```
+
+It is therefore `2-sqrt(2)` for `1D N=8` and `2` for the `2D 4x4` torus,
+matching `0.585786` and `2.000000` in the table. This is an analytic
+finite-surface result; the eigensolver is a check rather than the source of the
+uniqueness or gap claim.
+
+Species `A` and `B` are distinguishable registers in the ordered basis
+`|i>_A x |j>_B`; no bosonic or fermionic symmetrization is imposed. At `G=0`,
+`build_H2_tensor` drops the Poisson diagonal term and the two-species
+Hamiltonian is the Kronecker sum
 
 ```text
 H(G=0) = H1 x I + I x H1.
@@ -124,6 +141,31 @@ single-species factor has the analogous full support, participation ratio `N`,
 and `PR/dim = 1`. Thus the state is maximally delocalized in the native basis
 even though it is unique, exactly product, and separable.
 
+## Executable Derivation Certificate
+
+The runner treats this chain as a failing certificate, not only as printed
+diagnostics. For each default case it checks:
+
+- the graph is connected, regular, and has degree `2d`;
+- the constructed matrices satisfy `H1=-A` and
+  `H(G=0)=H1 x I + I x H1` with residual at most `1e-10`;
+- the uniform vectors obey the predicted one- and two-species eigenvalue
+  equations and the exact Fourier energies and gaps above;
+- the numerical ground vector has unit fidelity, within tolerance, to both the
+  `H1`-ground tensor product and the uniform tensor product;
+- every stated separability cut has numerical Schmidt rank one;
+- the one- and two-species states have full native support and `PR/dim=1`;
+- the uniform site vector factors as `|+>_logical x |u_env>` in the actual
+  `factor_sites` indexing.
+
+Any failed item makes the runner return a nonzero exit code. The default run
+prints `derivation certificate: PASS`, with zero structural and eigenvector
+residuals on both surfaces.
+
+This certificate closes only the finite diagnostic chain. It does not turn
+native-basis delocalization into an operational obstruction theorem, nor does
+it supply a method for creating, cooling, controlling, or verifying the state.
+
 ## Separability Diagnostics
 
 The state is product-like on the audited partitions. Entropies are numerical
@@ -131,11 +173,11 @@ zero, purities are `1`, and numerical Schmidt rank is `1`.
 
 | case | partition | entropy bits | purity | max Schmidt weight | numerical rank |
 | --- | --- | ---: | ---: | ---: | ---: |
-| `1d_null_initial` | species A / species B | `6.269359e-28` | `1.000000` | `1.000000` | `1` |
-| `1d_null_initial` | logical pair / environment pair | `8.721861e-28` | `1.000000` | `1.000000` | `1` |
+| `1d_null_initial` | species A / species B | `6.218312e-28` | `1.000000` | `1.000000` | `1` |
+| `1d_null_initial` | logical pair / environment pair | `1.229403e-27` | `1.000000` | `1.000000` | `1` |
 | `1d_null_initial` | single `H1` logical / environment | `1.234057e-28` | `1.000000` | `1.000000` | `1` |
-| `2d_null_initial` | species A / species B | `3.069446e-29` | `1.000000` | `1.000000` | `1` |
-| `2d_null_initial` | logical pair / environment pair | `2.410512e-29` | `1.000000` | `1.000000` | `1` |
+| `2d_null_initial` | species A / species B | `1.847779e-29` | `1.000000` | `1.000000` | `1` |
+| `2d_null_initial` | logical pair / environment pair | `1.800077e-29` | `1.000000` | `1.000000` | `1` |
 | `2d_null_initial` | single `H1` logical / environment | `1.808875e-29` | `1.000000` | `1.000000` | `1` |
 
 The traced logical resource at `G=0` is not an entangled teleportation
@@ -144,8 +186,10 @@ dimensions.
 
 ## Native-Basis Support
 
-The gap is not spectral uniqueness or species entanglement. The gap is that
-the assumed state is maximally delocalized in the native site basis.
+The finite diagnostic fact is that the assumed state is maximally delocalized
+in the native site basis. Delocalization alone is not an operational
+obstruction; the preparation gap is the absence of a supplied physical
+protocol and scaling argument.
 
 | case | state | basis dim | support | participation ratio | `PR/dim` | max probability | site entropy bits |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -164,8 +208,8 @@ The only exact candidate is the delocalized `H1` ground-state tensor product.
 
 | case | candidate | energy excess `E-E0` | ground fidelity | `PR/dim` | logical/env entropy | Bell overlap | negativity |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| `1d_null_initial` | `H1` ground tensor product | `-8.881784e-16` | `1.000000` | `1.000000` | `2.548015e-28` | `0.500000` | `0.000000` |
-| `1d_null_initial` | uniform site product | `0` | `1.000000` | `1.000000` | `9.230725e-31` | `0.500000` | `0.000000` |
+| `1d_null_initial` | `H1` ground tensor product | `-2.664535e-15` | `1.000000` | `1.000000` | `2.548015e-28` | `0.500000` | `0.000000` |
+| `1d_null_initial` | uniform site product | `-1.776357e-15` | `1.000000` | `1.000000` | `9.230725e-31` | `0.500000` | `0.000000` |
 | `1d_null_initial` | localized `|0>_A |0>_B` | `4.000000` | `0.015625` | `0.015625` | `0` | `0.500000` | `0.000000` |
 | `1d_null_initial` | single-env logical `|+>` product | `2.000000` | `0.062500` | `0.062500` | `0` | `0.500000` | `0.000000` |
 | `2d_null_initial` | `H1` ground tensor product | `0` | `1.000000` | `1.000000` | `4.855549e-29` | `0.500000` | `0.000000` |
@@ -197,7 +241,8 @@ initial-state preparation gap.
 ## Limitations
 
 - Exact small surfaces only: `1D N=8` and `2D 4x4`.
-- No scaling study for the `G=0` gap or preparation time.
+- The displayed Fourier formula is used here only to certify the two default
+  surfaces; no operational preparation-time scaling law follows from it.
 - No bath, cooling, control-noise, calibration, or state-verification model.
 - The native-basis localization threshold is diagnostic, not a theorem.
 - Logical Bell measurement and readout remain idealized in adjacent artifacts.

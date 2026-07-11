@@ -1,0 +1,28 @@
+loop_slug: teleportation-initial-state-preparation-closure
+mode: run
+target_status: best-honest-status
+runtime_budget: "roughly 15 minutes of code-writing, per user gate"
+cycle: 1
+science_block: 1
+branch: claude/science-fix/teleportation_initial_state_preparation_probe_note-81ffb53c
+base: origin/main
+active_route: analytic-fourier-and-executable-certificate
+hard_residual: null
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/TELEPORTATION_INITIAL_STATE_PREPARATION_PROBE_NOTE.md
+  - scripts/frontier_teleportation_initial_state_preparation_probe.py
+  - logs/runner-cache/frontier_teleportation_initial_state_preparation_probe.txt
+open_imports:
+  - operational cooling/control/readout protocol
+  - noise model
+  - preparation-time scaling proof
+no_go_routes: []
+review_disposition: pass
+pr_status: pending
+lock_mode: branch-local isolated worktree
+lock_note: "scripts/automation_lock.py failed with permission denied at /Users/jonreilly"
+next_exact_action: send the changed open-gate row to the independent audit lane
+stop_condition: achieved; target finite derivation certified and review disposition pass

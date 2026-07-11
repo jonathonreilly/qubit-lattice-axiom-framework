@@ -1,206 +1,156 @@
-# P1 H_unit 1-Loop Renormalization: Framework-Native Symbolic Reduction
+# P1 H_unit 1-Loop Renormalization: Framework-Native IR Diagnostic
 
-**Date:** 2026-04-17
-**Status:** proposed_retained framework-native **symbolic reduction** of the 1-loop
-renormalization of the composite-Higgs scalar bilinear `H_unit =
-(1/√6) Σ ψ̄ ψ` on the `Cl(3) × Z^3` Wilson-plaquette + 1-link
-staggered-Dirac tadpole-improved canonical surface. This is **not** a
-full numerical Brillouin-zone integration. It is a symbolic structural
-identification of:
-  1. the retained Feynman diagrams that contribute in the `C_F` channel;
-  2. the retained Feynman rules that enter the 1-loop amplitude;
-  3. the tadpole subtraction induced by the canonical `u_0 = ⟨P⟩^{1/4}`;
-  4. the residual (non-tadpole) BZ integral structure `I_S^{framework} =
-     I_S^{log} + I_S^{fin}`;
-  5. a **retained envelope bound** on `I_S^{framework}` derived from
-     the retained `u_0` tadpole and the retained canonical coupling
-     `α_LM`, and its consistency with the externally cited range
-     `I_S ∈ [4, 10]`.
-**Primary runner:** `scripts/frontier_yt_p1_h_unit_renormalization.py`
-**Log:** `logs/retained/yt_p1_h_unit_renormalization_2026-04-17.log`
+**Date:** 2026-04-17 (re-authored as an infrared diagnostic)
 
----
+This note documents the framework-native 1-loop renormalization of the
+composite-scalar bilinear `H_unit = (1/√6) Σ_{α,a} ψ̄_{α,a} ψ_{α,a}` on
+the `Cl(3) × Z^3` Wilson-plaquette + 1-link staggered-Dirac canonical
+surface. It carries the symbolic diagram/Feynman-rule reduction of the
+`C_F` channel to the single gluon-sandwich stand-in `D_S1`, and then
+**certifies an infrared obstruction**: the displayed zero-external-momentum
+scalar kernel is not integrable at the Brillouin-zone origin, so the
+displayed reduction does not by itself deliver a finite matching
+coefficient. The obstruction is stated through structural constants only
+(the small-momentum ray slope, the halving factor, the leading
+coefficient, and the quadratic growth of the origin-ball integral), with
+no external numerical target.
 
-## Authority notice
+## What earlier drafts claimed and this revision withdraws
 
-This note is a retained **framework-native symbolic reduction** layer
-on top of the prior P1 citation/verification chain. It does **not**:
+An earlier draft of this note carried a numerical **envelope bound** and a
+consistency argument. Those are withdrawn here, for the reasons the
+diagnostic below makes explicit:
 
-- modify the master obstruction theorem
-  (`YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md`);
-- modify the retained Ward-identity theorem
-  (`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`, which is exact tree-level
-  algebraic and makes no NLO claim);
-- modify the packaged `delta_PT = 1.92%` support note
-  (`UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md`);
-- modify the prior P1 citation note
-  (`YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`, which retains
-  the cited bracket `I_S ∈ [4, 10]`);
-- modify the prior P1 verification note
-  (`YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md`, which
-  adjudicates Possibilities A / B / C);
-- modify the retained symbolic reduction
-  (`scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py`, 21/21 PASS),
-  whose structural result `I_1 = I_S` on the retained conserved-current
-  surface is unchanged by this note;
-- modify the retained geometric-tail bound
-  (`YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md`), whose loop-tail
-  envelope is independent of the 1-loop `I_S` numerical question.
+1. **Envelope bound withdrawn.** The earlier "`|I_S^{framework}| ≤ …`"
+   magnitude bound was constructed as `16 · (1 − 1/⟨P⟩)^{-1}` from an
+   imported plaquette average. A max-integrand × BZ-volume envelope does
+   not exist for this kernel: the integrand's supremum over the zone is
+   `+∞` (§4.3), so no finite envelope brackets it. The bound is retracted.
+2. **External comparator withdrawn.** The earlier draft compared the
+   would-be value to an externally cited bracket and reported a
+   fraction-of-envelope figure. The cited bracket belongs to the
+   comparator class `imported_literature_series` and is not a
+   framework-native derivation input; the comparison and the fraction are
+   retracted. No external numeric appears in this note.
+3. **Lower "continuum floor" withdrawn.** The earlier `I_S ≥ 2·(1 − u_0)`
+   floor depended on the same imported constants and is retracted.
+4. **"External-leg `Z_q` cancellation" withdrawn.** The earlier draft
+   asserted that the two external-leg self-energy diagrams are absorbed so
+   that the amplitude reduces to a single diagram with nothing left over.
+   That absorption is an assembly *convention*, not a computed
+   cancellation; the independent external-leg `Z_q` is **currently
+   omitted** from the displayed kernel (§2.2). The clean-cancellation
+   claim is retracted.
+5. **Three-piece "bounded reduction" framing withdrawn.** The earlier
+   `I_S^{framework} = I_S^{tadpole} + I_S^{log} + I_S^{fin}` split, with a
+   log-coefficient asserted "exactly 1", is retracted as a *derivation of
+   a finite coefficient*. The displayed scalar kernel is preserved below
+   only as a historical stand-in (a pseudo-kernel under stress test), and
+   it hits the quadratic IR obstruction of §4 rather than yielding a
+   finite residue.
 
-What this note adds is strictly narrower: a **framework-native symbolic
-reduction** of the 1-loop H_unit renormalization integral, exposing
-exactly which pieces are retained (functions of `u_0`, `β = 6`, `α_LM`,
-`C_F`, `N_c`, `N_iso`) and which pieces remain BZ-integration-external
-(functions requiring explicit 4D quadrature over the lattice propagators).
+Consistent with points 1–3, the two dependency edges that existed only to
+supply those imported constants — the plaquette self-consistency note and
+`scripts/canonical_plaquette_surface.py` — are demoted from links to
+backticked context mentions below (the paired runner likewise carries no
+import from that module). The structural edges that support the kept
+kernel, tree anchor, and axiom foundation are preserved.
 
-The purpose is to replace the *external-citation-only* status of `I_S`
-with a *framework-native structural reduction*: identify exactly which
-symbolic components are retained, state a retained envelope bound, and
-document the remaining quadrature as the single open reduction step
-(not an open conceptual primitive).
+## Historical cross-references (dependency pointers; no numeric import)
 
-## Cross-references
+The following are preserved as neutral pointers to the surrounding P1
+chain. This diagnostic imports **no** numerical value from any of them.
 
-- **Master obstruction:** `YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md`.
-- **Prior P1 chain:**
-  - `YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md` — retained
-    color-tensor decomposition `Δ_R = C_F · I_1 + C_A · I_2 + T_F n_f · I_3`.
-  - `YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md` — no
-    algebraic shortcut between `I_1`, `I_2`, `I_3`.
-  - [`scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py`](../scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py) — retained
-    `I_V = 0` conserved-current reduction giving `I_1 = I_S`.
-  - `YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md` — cited
-    range `I_S ∈ [4, 10]` (central `~6`) for the closest analogue.
-  - `YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md` — verdict
-    A (magnitude) + C (semantics) on the cited upward revision.
-  - `YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md` — retained
-    geometric tail bound on the loop-expansion axis.
-- **Canonical surface authority:**
-  - [`docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) — `⟨P⟩ = 0.5934`,
-    `u_0 = 0.87768`, `α_LM = 0.0907`.
-  - [`docs/YT_VERTEX_POWER_DERIVATION.md`](YT_VERTEX_POWER_DERIVATION.md) — `n_link = 1` per single
-    vertex (D15).
-  - [`scripts/canonical_plaquette_surface.py`](../scripts/canonical_plaquette_surface.py) — retained evaluation.
-- **Ward/action authorities:**
-  - [`docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md) — `H_unit =
-    (1/√6) Σ ψ̄ ψ` on `Q_L`.
-  - [`docs/MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) — canonical Wilson-plaquette
-    + staggered-Dirac action.
-
-## Abstract
-
-On the retained `Cl(3) × Z^3` Wilson-plaquette + 1-link staggered-Dirac
-tadpole-improved canonical surface at `β = 6`, `u_0 = ⟨P⟩^{1/4} =
-0.87768`, the 1-loop renormalization of the composite-Higgs scalar
-bilinear `H_unit = (1/√6) Σ_{α,a} ψ̄_{α,a} ψ_{α,a}` decomposes, after
-external-leg `Z_q` cancellation, into a single 1PI gluon-sandwich
-diagram `D_S1`. The amplitude symbolically factors as
-
-```
-    <0| H_unit |tt̄>^{(1)}  =  (1/√6) · (α_LM · C_F / (4π)) · I_S^{framework}
-    I_S^{framework}  =  16 π² · ∫_{BZ} d^4k / (2π)^4 ·
-                         [ N_S(k) / ( D_ψ(p+k) · D_ψ(p-k) · D_g(k) ) ]
-                       |_{p=0, tadpole-subtracted}                        (R1)
-```
-
-with the retained lattice Feynman rules:
-
-```
-    D_ψ(k)   =  Σ_μ sin²(k_μ a) / a²                            (staggered; D2–D4)
-    D_g(k)   =  (4 / a²) Σ_ρ sin²(k_ρ a / 2)                    (Wilson plaquette; D13)
-    N_S(k)   =  4 Σ_μ cos²(k_μ a/2) / a²   (scalar-bilinear numerator, staggered
-                                             taste-diagonal, D3)                (R2)
-```
-
-where `p = 0` amputation projects onto the MSbar-matching kernel and
-the tadpole-subtracted `|_{TS}` symbol denotes removal of the piece
-absorbed by `u_0 = ⟨P⟩^{1/4}` through the retained change-of-variables
-identity `U = u_0 V` (D14).
-
-### Structural decomposition
-
-`I_S^{framework}` splits retained-framework-natively into three pieces:
-
-```
-    I_S^{framework}  =  I_S^{tadpole}(u_0)  +  I_S^{log}  +  I_S^{fin}    (R3)
-```
-
-with structural identifications:
-
-- **`I_S^{tadpole}(u_0)`** = contribution of the constant-propagator
-  tadpole, proportional to `⟨sin²(k/2)⟩_{BZ}` over the staggered-gluon
-  loop; absorbed into `u_0` by D14. **Retained** (removed by TI).
-- **`I_S^{log}`** = logarithmic piece setting the MSbar matching scale
-  `μ = 1/a`; proportional to `log(μa)` in the continuum limit.
-  **Retained structurally** (coefficient is exactly `1` in the standard
-  MSbar convention, independent of lattice regulator details).
-- **`I_S^{fin}`** = finite non-logarithmic residue; contains all
-  lattice-artifact content (staggered taste sum + Wilson plaquette
-  gluon `O((k a)^4)` deviation from continuum `k²`). **Structurally
-  retained** as a sum of three named BZ sub-integrals (`I_S^{taste}`,
-  `I_S^{Wilson}`, `I_S^{mix}`); **numerical value requires explicit 4D
-  BZ quadrature** (not performed here).
-
-### Retained envelope bound
-
-Under the retained tadpole structure and the canonical-surface
-`u_0 = 0.87768`, the framework-native `I_S^{framework}` is
-upper-bounded by
-
-```
-    I_S^{framework}  ≤  I_S^{max-retained}  :=  16 · (1 - u_0^{-4})^{-1}
-                                             =  16 · (1 - 1/⟨P⟩)^{-1}        (B0)
-```
-
-where `⟨P⟩ = 0.5934` is the retained plaquette. The RHS evaluates to
-a bound on the residual magnitude of `I_S` when the BZ integrand is
-enveloped by its maximum-magnitude integrand value times the BZ volume
-factor. Numerically:
-
-```
-    I_S^{max-retained}  ≃  16 · ( 1 / (1 - 1/0.5934) )  =  -23.49
-                          ≃  23.49  in absolute value               (B0-eval)
-```
-
-Since the tadpole subtraction is strictly reducing (`I_S^{tadpole}`
-contribution is absorbed, not added), and the logarithmic piece
-contributes a bounded `~log(1/u_0) · C_F`-scaled coefficient, the
-retained envelope gives
-
-```
-    |I_S^{framework}|  ≤  23.5   (retained envelope)                  (B1)
-```
-
-which comfortably encloses the externally cited range `I_S ∈ [4, 10]`
-(§4 below). **This is a structural consistency check, not a
-replacement:** the retained envelope is too loose to pin a specific
-numerical value; it confirms the cited range is *structurally
-compatible* with the retained framework without requiring the cited
-number as a derivation input.
-
-### Safe claim boundary
-
-On the retained canonical surface, the 1-loop H_unit matrix element
-reduces symbolically to the single `D_S1` diagram with retained
-Feynman rules (R2), tadpole-subtraction via D14, and a structural
-three-piece decomposition `I_S = I_S^{tadpole} + I_S^{log} + I_S^{fin}`.
-The retained envelope bound `|I_S^{framework}| ≤ 23.5` is structurally
-consistent with the cited range `[4, 10]`. **Pinning a specific
-numerical value** of `I_S^{fin}` — and thus a specific `I_S^{framework}`
-— requires explicit 4D numerical quadrature over the retained lattice
-propagators; this is deferred as an open retention step. The note
-therefore promotes `I_S` from *externally cited* to *framework-natively
-bounded with retained symbolic reduction*, without claiming a specific
-framework-native numerical value.
+- **Master obstruction context:** `YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md`.
+- **Color-tensor decomposition:** `YT_P1_COLOR_FACTOR_RETENTION_NOTE_2026-04-17.md`
+  — `Δ_R = C_F · I_1 + C_A · I_2 + T_F n_f · I_3`.
+- **Fierz sub-theorem:** `YT_P1_SHARED_FIERZ_NO_GO_SUB_THEOREM_NOTE_2026-04-17.md`
+  — no algebraic shortcut between `I_1`, `I_2`, `I_3`.
+- **Conserved-current reduction:** [`scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py`](../scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py)
+  — `I_V = 0` giving `I_1 = I_S`; source of the displayed lattice Feynman rules.
+- **Prior citation / verification context:** `YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`,
+  `YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md` — external comparator
+  material; not an input here.
+- **Loop-tail context:** `YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md`.
+- **Vertex power:** [`docs/YT_VERTEX_POWER_DERIVATION.md`](YT_VERTEX_POWER_DERIVATION.md)
+  — `n_link = 1` per single vertex (D15).
+- **Ward / action authorities:** [`docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
+  (`H_unit = (1/√6) Σ ψ̄ ψ` on `Q_L`);
+  [`docs/MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
+  (Wilson-plaquette + staggered-Dirac action).
+- **Demoted context (formerly linked; imported constants withdrawn):**
+  `docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md`, `scripts/canonical_plaquette_surface.py`.
 
 ---
 
-## 1. Retained foundations
+## Abstract — the infrared diagnostic
 
-### 1.1 Retained `Cl(3) × Z^3` canonical action
+On the framework's `Cl(3) × Z^3` canonical surface, the `C_F`-channel
+1-loop renormalization of `H_unit` reduces symbolically to a single
+gluon-sandwich diagram `D_S1`, whose zero-external-momentum scalar
+stand-in kernel is
 
-From `docs/MINIMAL_AXIOMS_2026-04-11.md:18–20` and the retained
-derivation chain D1–D17:
+```
+    K(k)  =  N_S(k) · [ D_ψ(k)^{-1} ]^2 · D_g(k)^{-1}
+```
+
+with the framework's lattice forms (§1.2)
+
+```
+    D_ψ(k)  =  Σ_μ sin²(k_μ)                       (staggered fermion)
+    D_g(k)  =  4 Σ_ρ sin²(k_ρ / 2)                 (Wilson plaquette gluon)
+    N_S(k)  =  Σ_μ cos²(k_μ / 2)                    (scalar-bilinear numerator)
+```
+
+At small momentum `k = r·q̂` (unit direction `q̂`, `r = |k| → 0`),
+
+```
+    D_ψ(k) → r²,     D_g(k) → r²,     N_S(k) → 4,
+    K(k)   → 4 · r^{-6}.
+```
+
+The four-dimensional measure factorizes as `d^4k = r³ dr dΩ_3` with the
+unit-3-sphere area `|S^3| = 2π²`. The origin-ball integral therefore
+behaves as
+
+```
+    J(ε; R)  =  ∫_ε^R r³ · ⟨K⟩_{S^3}(r) · |S^3| dr
+             ≈  8π² ∫_ε^R r^{-3} dr
+             =  4π² ( ε^{-2} − R^{-2} )   →   4π² · ε^{-2}   as ε → 0,
+```
+
+a **quadratic** infrared divergence (integrand degree `6`, spatial
+dimension `4`, so `6 − 4 = 2`). Equivalently, halving the inner cutoff `ε`
+multiplies `J` by `4 = 2²`, and `ε² · J(ε; R) → 4π² ≈ 39.478`.
+
+Because `K(k) → +∞` as `k → 0`, the supremum of the integrand over the
+zone is unbounded: there is **no** finite "maximum-integrand × BZ-volume"
+envelope for this kernel. The displayed scalar reduction, taken by itself,
+does not deliver a finite matching coefficient. What the reduction is
+missing — a full staggered-vertex/gauge-tensor contraction, an independent
+external-leg `Z_q` with a specified assembly convention, and a specified
+tadpole-subtraction prescription — is set out in §5 as the paths this
+diagnostic opens.
+
+Note on the numerator. An earlier draft wrote the numerator inconsistently
+(with and without a stray overall factor of `4`, and once with an
+incorrect continuum limit `→ 1`). The framework-native form is
+`N_S(k) = Σ_μ cos²(k_μ / 2)`, whose small-momentum limit is
+`N_S → 4` (four unit terms), fixing the leading coefficient of `r^6 K(k)`
+to `4`. The historical amplitude also carried an overall `16π² · C_F`
+normalization; that is an overall constant and does not affect any
+power-law or divergence statement in this note (the paired runner works
+with the normalization-stripped `K` above).
+
+---
+
+## 1. Framework-native foundations
+
+### 1.1 Canonical action
+
+From the framework's canonical action (Wilson plaquette + 1-link
+staggered Dirac; `docs/MINIMAL_AXIOMS_2026-04-11.md` and the derivation
+chain D1–D17):
 
 ```
     S[ψ, ψ̄, U]  =  S_staggered[ψ, ψ̄, U]  +  S_Wilson[U]
@@ -208,557 +158,304 @@ derivation chain D1–D17:
                                     − U†_{x−μ̂,μ} ψ_{x−μ̂} ) ]
     S_Wilson     =  β · Σ_plaq  ( 1 − (1/N_c) · Re Tr[U_plaq] )
     η_μ(x)       =  (-1)^{Σ_{ν<μ} x_ν}                (staggered sign; D2)
-    β            =  2 N_c / g_bare²  =  6  at g_bare = 1, N_c = 3
-                                                       (canonical surface, D13; C1+C2)
+    β            =  2 N_c / g_bare²                    (canonical surface, D13)
 ```
 
-The staggered η-phases carry the retained `Cl(3)` action in taste
-space (D4), the retained SU(2) weak structure (D5), and — through the
-graph-first selector on taste-cube complementary axes — the retained
-`su(3)` color structure (D6–D7).
+The staggered η-phases carry the `Cl(3)` action in taste space (D4), the
+SU(2) weak structure (D5), and — through the graph-first selector on
+taste-cube complementary axes — the `su(3)` color structure (D6–D7). No
+numerical value of the plaquette average, mean link, or coupling is used
+in this note.
 
-### 1.2 Retained tadpole improvement (D14, D15)
+### 1.2 Lattice Feynman rules
 
-Under the retained change-of-variables identity (D14)
-
-```
-    U_{x,μ}  =  u_0 · V_{x,μ}      (tadpole decomposition)
-```
-
-with `V_{x,μ}` the *tadpole-improved* link and `u_0 = ⟨P⟩^{1/4}` the
-retained plaquette average, the retained rewrite of any lattice
-expectation value is
+From [`scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py`](../scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py)
+(Block 1), the framework's lattice propagators and scalar-bilinear
+numerator are, in lattice units (`a = 1`):
 
 ```
-    ⟨ O(U) ⟩  =  u_0^{n_link(O)} · ⟨ O_V(V) ⟩_eff                       (D14)
+    D_ψ(k)  =  Σ_μ sin²(k_μ)                    (staggered fermion)        (FR1)
+    D_g(k)  =  4 Σ_ρ sin²(k_ρ / 2)             (Wilson plaquette gluon)   (FR2)
+    N_S(k)  =  Σ_μ cos²(k_μ / 2)               (scalar-bilinear numerator)(FR3)
 ```
 
-where `n_link(O)` = number of gauge links in `O`. For the single-vertex
-scalar bilinear coupling `ψ̄ ψ` the retained factor is `n_link = 0` for
-the bare operator but becomes `n_link = 1` per vertex after
-attach-to-gauge (D15). On the canonical surface,
+Small-momentum limits: `D_ψ(k) → |k|²`, `D_g(k) → |k|²`, `N_S(k) → 4`.
+Both propagators reduce to the continuum `k²` at small momentum, as
+required. These are the forms used throughout the diagnostic and in the
+paired runner.
+
+### 1.3 The composite operator and tree anchor
+
+From [`docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
+(T1, T2), the composite scalar `H_unit = (1/√6) Σ_{α,a} ψ̄_{α,a} ψ_{α,a}`
+is the unique unit-norm `(1,1)` singlet on the `Q_L` block, with the
+tree-level anchor
 
 ```
-    u_0  =  ⟨P⟩^{1/4}  =  0.5934^{1/4}  =  0.87768138                 (D14–C1)
+    <0 | H_unit | tt̄ >^{(0)}  =  1 / √6                                    (WT)
 ```
 
-### 1.3 Retained Feynman rules on the canonical action
-
-From `scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py` (Block 1, 21/21
-PASS), the retained lattice propagators are:
-
-```
-    D_ψ(k)   =   Σ_μ sin²(k_μ a) / a²           (staggered fermion)           (FR1)
-    D_g(k)   =   (4 / a²) · Σ_ρ sin²(k_ρ a / 2) (Wilson plaquette gluon)      (FR2)
-```
-
-Both reduce to the continuum `k²` at small momentum (Block 1, Check 3–4,
-PASS), as required. The retained vertices on the canonical surface are:
-
-- **Gluon-fermion vertex** (retained from D5 + D7 + D16): the standard
-  staggered vertex `V^A_μ(p, q)`, with explicit `η_μ(x)` sign and
-  on-link `Re[U − U†]` structure giving the perturbative vertex
-  `V^A_μ = i g_s T^A · cos(k_μ a / 2)` in the `α_LM`-perturbative
-  expansion of `U = u_0 · exp(i g_bare A · a)`.
-- **Scalar-bilinear vertex** (retained from D9 + D17): the composite
-  scalar `H_unit = (1/√6) · Σ_{α,a} ψ̄_{α,a} ψ_{α,a}` — the unique
-  unit-norm `(1,1)` singlet on the `Q_L` block (D17, Block 5 PASS in
-  the Ward theorem).
-
-### 1.4 Retained Ward tree-level
-
-From `docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md` (T1, T2):
-
-```
-    <0 | H_unit | tt̄ >^{(0)}  =  1 / √6                                      (WT)
-```
-
-at tree level on the canonical surface. This is the anchor value the
-1-loop correction perturbs around. The 1-loop renormalization
-constant `Z_S` is defined by
-
-```
-    <0 | H_unit | tt̄ >^{ren}  =  Z_S^{lat → MSbar}(μ = 1/a) · (1/√6)       (R0)
-```
-
-so that the MSbar-renormalized matrix element matches the continuum
-fundamental-Yukawa value at the matching scale.
+The 1-loop renormalization constant `Z_S` is defined by
+`<0 | H_unit | tt̄ >^{ren} = Z_S(μ = 1/a) · (1/√6)`; the diagnostic below
+concerns the `C_F`-channel contribution to `Z_S`.
 
 ---
 
-## 2. 1-loop diagram enumeration (retained)
+## 2. 1-loop diagrams and the currently-omitted external leg
 
 ### 2.1 Diagram topologies
 
-From `scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py` (Block 2, PASS),
-the 1-loop `C_F`-channel topologies contributing to `<0 | H_unit | tt̄>`
-are three in number:
+From [`scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py`](../scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py)
+(Block 2), the `C_F`-channel 1-loop topologies contributing to
+`<0 | H_unit | tt̄>` are three:
 
 ```
-    D_S1  :  gluon sandwich  — gluon line connecting the two legs
-                                of H_unit inside the blob
+    D_S1  :  gluon sandwich       — gluon line connecting the two legs
+                                     of H_unit inside the blob
     D_S2  :  left-leg self-energy  — 1PI gluon self-energy on the incoming
                                       fermion line
-    D_S3  :  right-leg self-energy  — 1PI gluon self-energy on the outgoing
-                                       fermion line
+    D_S3  :  right-leg self-energy — 1PI gluon self-energy on the outgoing
+                                      fermion line
 ```
 
-Each of `D_S2`, `D_S3` is a fermion self-energy insertion on the
-external leg. Under MSbar external-leg amputation (i.e. the
-multiplicative `Z_q^{1/2}` on each external line), the self-energy
-diagrams are absorbed into the external-leg wavefunction
-renormalization:
+`D_S2` and `D_S3` are mirror-symmetric under charge-conjugation × parity
+on the amputated 2-point function (Block 2); their contributions to the
+external-leg factor are equal.
+
+### 2.2 Assembly convention and the currently-omitted external-leg Z_q
+
+Assembling the renormalization constant from the vertex diagram and the
+external-leg factor is a *convention*, not a computed cancellation. Write
+the vertex coefficient of `D_S1` as `v_{D_S1}` and the external-leg
+coefficient as `z_q`; to one loop the assembled constant is
 
 ```
-    Z_S^{total}  =  Z_S^{D_S1}  ·  Z_q^{-1}                                (R4)
+    Z_S^{total}  =  Z_S^{D_S1} · Z_q^{-1}
+                 =  1  +  g² ( v_{D_S1} − z_q )  +  O(g⁴)                  (A1)
 ```
 
-where `Z_q` is the retained fermion wavefunction renormalization. The
-residual *non-trivial* matching is entirely carried by `D_S1`:
-
-```
-    Z_S^{lat → MSbar}  =  1  +  (α_LM · C_F / (4π)) · I_S^{D_S1}         (R5)
-```
-
-with `I_S^{D_S1}` the single gluon-sandwich BZ integral defined in §3.
-
-This absorption is a *retained structural property* of MSbar
-renormalization (standard lattice-PT fact; cf. Kilcup–Sharpe 1987;
-retained in Block 2 of the prior symbolic runner). The key point for
-this note is that the **number of independent BZ integrals** in the
-`C_F` channel of `Δ_R` is **exactly one** — `I_S^{D_S1}` — after
-external-leg absorption. This is the `I_S` of the cited literature
-and the prior P1 chain.
-
-### 2.2 Left–right mirror symmetry (retained)
-
-The diagrams `D_S2` and `D_S3` are mirror-symmetric under
-charge-conjugation × parity on the amputated 2-point Green's function
-(Block 2, PASS). Their contributions to `Z_q` are equal; the retained
-constraint is
-
-```
-    Σ_{D_S2} = Σ_{D_S3}                  (C-parity mirror, D_S2 ↔ D_S3)   (MS)
-```
-
-which is a retained structural identity absorbed into the single
-scalar `Z_q` normalization.
+so that the assembled result depends on **both** `v_{D_S1}` and the
+external-leg coefficient `z_q`. The independent external-leg `Z_q` — the
+quantity carrying `z_q` — is **currently omitted** from the displayed
+scalar kernel of §3: that kernel carries the `D_S1` vertex structure only.
+An earlier draft asserted that the external-leg self-energies are absorbed
+so that nothing remains beyond a single diagram; that clean absorption is
+withdrawn. Computing the assembled `Z_S^{total}` requires an independent
+determination of the **external-leg `Z_q`** together with a specified
+assembly convention (§5).
 
 ---
 
-## 3. D_S1 symbolic BZ integral
+## 3. The `D_S1` scalar stand-in kernel (historical, under stress test)
+
+The formula displayed here is preserved from the earlier draft as a
+**historical stand-in** for the `D_S1` contribution — a pseudo-kernel
+whose infrared behaviour §4 stress-tests. It is **not** a derivation of a
+finite matching coefficient, and it is not the full staggered-taste +
+gauge-tensor vertex contraction (§5).
 
 ### 3.1 Kernel structure
 
-After amputation at zero external momentum (`p = 0`), the `D_S1`
-diagram evaluates to
+After amputation at zero external momentum (`p = 0`), the displayed
+`D_S1` stand-in is
 
 ```
     I_S^{D_S1}(p=0)  =  16 π² · ∫_{BZ} d^4k / (2π)^4
                          · N_S(k)
                          · [ D_ψ(k)^{-1} ]^2
                          · D_g(k)^{-1}
-                         · T_S^{C_F}                                     (R6)
+                         · C_F                                            (R6)
 ```
 
-with:
-- `D_ψ(k) = Σ_μ sin²(k_μ a) / a²` (FR1);
-- `D_g(k) = (4 / a²) · Σ_ρ sin²(k_ρ a / 2)` (FR2);
-- `N_S(k) = Σ_μ cos²(k_μ a / 2) / a²` — the scalar-bilinear vertex
-  numerator on the staggered taste-diagonal operator (retained from
-  D9 + D17; equivalent to the "cosine-squared" staggered vertex
-  factor that appears in Kilcup–Sharpe);
-- `T_S^{C_F} = Tr_color[T^A T^A] / N_c = (N_c² − 1) / (2 N_c) = C_F`
-  (retained from D7 + S1 via the exact SU(N_c) Fierz of D12).
+with `D_ψ(k)`, `D_g(k)`, `N_S(k)` the framework forms (FR1–FR3) and
+`C_F = (N_c² − 1) / (2 N_c)` the group-theory color Casimir (from D7 + D12;
+a framework-native constant, not an import). The overall `16 π² · C_F` is
+an overall normalization and does not affect the power-law or divergence
+statements of §4; the normalization-stripped kernel
+`K(k) = N_S(k) · [D_ψ(k)]^{-2} · D_g(k)^{-1}` is what the paired runner
+probes.
 
-The 16 π² normalization is chosen so that `I_S^{D_S1}` is dimensionless
-and in the `α/(4π)` convention of the prior P1 citation note.
+### 3.2 Tadpole bookkeeping (historical pointer, not a numerical subtraction)
 
-### 3.2 Tadpole subtraction (D14 applied)
-
-The integrand in (R6) contains a *constant* gauge-invariant piece when
-both gluon momenta are zero — the so-called **lattice tadpole** — which
-on the unimproved Wilson action would give the dominant contribution.
-Under the retained D14 change-of-variables `U = u_0 V`, this constant
-piece is factored out of `I_S^{D_S1}` and absorbed into `u_0`:
+The following symbolic bookkeeping line is preserved from the earlier
+draft as a historical pointer to the tadpole-subtraction *structure*. It
+is **not** a derivation of a numerical subtraction, and no value of `u_0`
+is imported here:
 
 ```
-    I_S^{D_S1}  =  I_S^{tadpole}  +  I_S^{D_S1, TI}                      (R7)
+    I_S^{D_S1}  =  I_S^{tadpole}  +  I_S^{D_S1, TI}                       (R7)
     I_S^{tadpole}  =  constant-propagator piece   (absorbed by u_0 via D14)
-    I_S^{D_S1, TI}  =  tadpole-subtracted piece   (retained for matching)
+    I_S^{D_S1, TI}  =  tadpole-subtracted piece
 ```
 
-The retained tadpole factor is
-
-```
-    1 / u_0  =  ⟨P⟩^{-1/4}  =  0.5934^{-1/4}  =  1.13937...              (R8)
-```
-
-(evaluated from the retained plaquette). Under the retained
-convention,
-
-```
-    I_S^{framework}  :=  I_S^{D_S1, TI}  =  I_S^{D_S1}  −  I_S^{tadpole}  (R9)
-```
-
-is the residual **tadpole-improved** matching coefficient. This is
-the object that the literature matches to (cited range `[4, 10]`).
-
-### 3.3 Three-piece residual decomposition
-
-Under the standard lattice-PT reduction (consistent with the retained
-Feynman rules of §1.3, applied to (R6) after tadpole subtraction), the
-tadpole-improved residual admits a structural three-piece decomposition:
-
-```
-    I_S^{framework}  =  I_S^{log}  +  I_S^{fin}                         (R10)
-    I_S^{log}  =  − log(μ² a²)  ·  (coefficient = 1 in standard MSbar)
-    I_S^{fin}  =  I_S^{taste}  +  I_S^{Wilson}  +  I_S^{mix}             (R11)
-```
-
-with:
-- **`I_S^{log}`** — the logarithmic piece; coefficient exactly `1` in
-  the MSbar convention at `μ = 1/a`; the retained tadpole-improvement
-  subtracts the constant-term deviation from `log(μ² a²)`, leaving the
-  logarithmic coefficient unchanged. This piece is *retained
-  framework-native exactly*.
-- **`I_S^{taste}`** — finite residue from the staggered taste sum
-  (16 taste-degenerate species after summing η-phases over the unit
-  cube). Contains the Z³ lattice-artifact content specific to
-  staggered fermions (from D2–D4).
-- **`I_S^{Wilson}`** — finite residue from the `O((k a)^4)` deviation
-  of the Wilson gluon propagator `D_g(k)` from the continuum `k²`
-  (from D13). Absent in the continuum fundamental-Yukawa analogue
-  (which has `I_S^{continuum} = 2`, i.e. trivial-coefficient log only).
-- **`I_S^{mix}`** — cross-term between `I_S^{taste}` and `I_S^{Wilson}`.
-
-Each of `I_S^{taste}`, `I_S^{Wilson}`, `I_S^{mix}` is a **retained
-framework-native BZ sub-integral** over the retained propagators
-(FR1, FR2) and retained numerator `N_S(k)` on the retained BZ domain
-`(-π/a, π/a)^4`. Their **symbolic form is retained; their numerical
-values require 4D BZ quadrature, not performed here.**
-
-### 3.4 Continuum-limit cross-check
-
-In the continuum limit `a → 0` with the retained propagators:
-
-```
-    D_ψ(k)   →   k²                  (FR1, Block 1, PASS)
-    D_g(k)   →   k²                  (FR2, Block 1, PASS)
-    N_S(k)   →   1                    (cos²(k_μ a/2) → 1 as a → 0)
-```
-
-Substituting into (R6) and matching against the standard continuum
-fundamental-Yukawa vertex correction gives
-
-```
-    I_S^{framework} |_{a → 0, no lattice artifacts}  =  2              (CL)
-```
-
-recovering the standard `I_S^{continuum} = 2` value of the continuum
-vertex correction (`α/(4π) · C_F · 2 = α · C_F / (2π)` in the
-`α/(2π)` convention). The **difference from `2`** is entirely due to
-the retained lattice artifacts `I_S^{taste} + I_S^{Wilson} +
-I_S^{mix}`. This is the framework-native identification of *why* the
-cited `I_S ≈ 6` is larger than the continuum `2`: it is the sum of
-the retained taste and Wilson-plaquette finite-residue contributions.
+Which constant piece is removed, and with what coefficient, is a
+scheme choice (a tadpole-subtraction *prescription*); the diagnostic of §4
+concerns the origin behaviour of the displayed kernel *before* any such
+prescription is fixed, and the prescription itself is listed among the
+paths of §5. See [`docs/YT_VERTEX_POWER_DERIVATION.md`](YT_VERTEX_POWER_DERIVATION.md)
+for the `n_link = 1` single-vertex bookkeeping context.
 
 ---
 
-## 4. Retained envelope bound
+## 4. The infrared obstruction
 
-### 4.1 Magnitude envelope
+The displayed kernel `K(k) = N_S(k) · [D_ψ(k)]^{-2} · D_g(k)^{-1}` is
+singular at the Brillouin-zone origin. This section certifies the
+singularity through structural constants only — the ray slope, the
+halving factor, the leading coefficient, and the quadratic growth of the
+origin-ball integral — with no external target.
 
-The retained lattice propagators are bounded below on the retained BZ
-domain away from the origin by
+### 4.1 Small-momentum asymptotics
 
-```
-    D_ψ(k)  ≥  0                   (vanishes at k_μ = 0, π)              (E1)
-    D_g(k)  ≥  0                   (vanishes at k_ρ = 0)                 (E2)
-    N_S(k)  ≤  4 / a²              (cos² ≤ 1)                            (E3)
-```
-
-The BZ volume is `(2π/a)^4` and the integrand in (R6) has the
-standard 1-loop structure. Under the retained tadpole subtraction,
-the dominant constant piece is removed; the residual integrand is
-bounded by its worst-case magnitude on the BZ minus the origin.
-
-A retained framework-native envelope bound is therefore
+Along any fixed ray `k = r·q̂` with unit direction `q̂` (the runner uses
+`q̂ = (1, 2, 3, 4) / √30`), the small-`r` limits of §1.2 give
 
 ```
-    |I_S^{framework}|  ≤  16 π² · (Vol_BZ)  · (max integrand)            (E4)
+    K(r·q̂)  =  N_S / (D_ψ² · D_g)  →  4 / r^6.
 ```
 
-with the retained tadpole-subtraction factor `(1 − u_0^{-4})` appearing
-as the residual magnitude after removing the dominant `u_0`-absorbed
-piece. The retained closed form is
+Two structural constants follow, each falsifiable by a wrong kernel:
+
+- **Ray log-slope `−6`.** `log K` versus `log r` has slope `−6` as
+  `r → 0`. A kernel with one fewer inverse-propagator (an `r^{-4}`
+  softening) gives slope `−4` and is rejected.
+- **Halving factor `64 = 2^6`.** Halving `r` multiplies `K` by
+  `2^6 = 64`. The successive ratios `K(r/2) / K(r)` approach `64` from
+  below (`≈ 63.83, 63.96, 63.99, …`); the `r^{-4}` softening gives `16`
+  and is rejected.
+- **Leading coefficient `4`.** `r^6 · K(r·q̂) → 4` (the `N_S → 4` limit).
+  The approach is `O(r²)`, so successive errors contract by a factor near
+  `2^{-2} = 0.25` per halving (band `[0.20, 0.30]`). A kernel missing the
+  `N_S` numerator gives leading coefficient `0` and is rejected.
+
+### 4.2 Origin-ball partial integral and quadratic growth
+
+With the four-dimensional measure `d^4k = r³ dr dΩ_3` and unit-3-sphere
+area `|S^3| = 2π²`, define the origin-ball partial integral out to a fixed
+outer radius `R = 1/4`:
 
 ```
-    I_S^{max-retained}   :=   16  ·  (1 − u_0^{-4})^{-1}
-                          =   16  ·  (1 − 1/⟨P⟩)^{-1}                    (B0)
+    J(ε; R)  =  |S^3| · ∫_ε^R r³ · ⟨K⟩_{S^3}(r) dr
+             =  2π² ∫_ε^R r³ · ⟨K⟩_{S^3}(r) dr.
 ```
 
-Numerically at `⟨P⟩ = 0.5934`:
+Using the leading angular average `⟨K⟩_{S^3}(r) → 4 / r^6`,
 
 ```
-    1 / ⟨P⟩  =  1.6852
-    1 − 1/⟨P⟩  =  -0.6852
-    I_S^{max-retained}  =  16 · 1 / (-0.6852)  =  -23.35
-    |I_S^{max-retained}|  =  23.35                                      (B0-eval)
+    J(ε; R)  ≈  8π² ∫_ε^R r^{-3} dr  =  4π² ( ε^{-2} − R^{-2} ).
 ```
 
-This is the retained envelope magnitude. The retained interpretation:
-**the retained tadpole subtraction reduces the raw magnitude
-of the BZ integrand by the factor `(1 − 1/⟨P⟩)`**, and the 16
-normalization is the retained `C_F`-channel numerator combinatorics.
+Two structural facts, each falsifiable:
 
-The cited `I_S ∈ [4, 10]` lies strictly inside this envelope. The
-retained envelope is therefore **structurally consistent** with the
-cited range without requiring the cited value as a derivation input.
+- **Quadratic growth exponent `2`.** As `ε → 0`, halving `ε` multiplies
+  `J` by `4 = 2²`; equivalently `log( J(ε/2) / J(ε) ) / log 2 → 2`. A
+  kernel that diverges only logarithmically gives exponent `0` and is
+  rejected.
+- **Coefficient `ε² · J → 4π² ≈ 39.478`.** The rescaled integral
+  approaches `4π²`, with the `O(ε²/R²)` tail contracting by a factor near
+  `0.25` per halving (band `[0.20, 0.30]`).
 
-### 4.2 Lower bound from the logarithmic piece
+The origin-ball integral therefore grows without bound as the inner
+cutoff shrinks: the displayed kernel is not integrable at the origin.
 
-The retained `I_S^{log} = − log(μ² a²)` at matching scale `μ = 1/a`
-gives `I_S^{log} = 0` at the matching anchor. The *derivative* of
-`I_S^{log}` with respect to the tadpole-improvement scale, however,
-is retained as the MSbar β-function coefficient of the scalar
-operator:
+### 4.3 No finite maximum-integrand × volume envelope
 
-```
-    d I_S^{log} / d log(1/a)  =  1                                      (L0)
-```
-
-which fixes the retained coefficient of the logarithmic piece. This
-is a framework-native retained constraint: the logarithmic coefficient
-is exactly `1` in the MSbar convention, independent of the residual
-`I_S^{fin}`.
-
-The retained lower-bound envelope, derived from the continuum limit
-(CL) plus the retained tadpole attenuation:
-
-```
-    I_S^{framework}  ≥  2 · (1 − u_0)         (retained continuum floor) (B2)
-                      =  2 · (1 − 0.87768)
-                      =  2 · 0.12232
-                      =  0.24464
-```
-
-This is a very loose lower floor; tighter retained lower bounds
-require explicit evaluation of the finite-residue pieces.
-
-### 4.3 Summary of retained bounds
-
-| Bound                          | Value (retained)         | Notes                                 |
-|--------------------------------|---------------------------|---------------------------------------|
-| `I_S^{max-retained}` (upper)   | `23.35`                   | Retained tadpole-subtraction envelope |
-| `I_S^{continuum}` (exact)      | `2`                       | Continuum fundamental-Yukawa analogue |
-| `I_S^{min-retained}` (lower)   | `0.245`                   | Continuum-limit × `(1 − u_0)` floor   |
-| Cited `I_S` range              | `[4, 10]` (central `~6`)  | External literature bracket           |
-
-The retained envelope `[0.245, 23.35]` comfortably encloses the cited
-bracket `[4, 10]`. No contradiction; structural consistency.
+Because `K(k) → +∞` as `k → 0`, the supremum of the integrand over the
+zone is `+∞`. Concretely, the shell maximum `S_m = max_{|k| = r_m} K(k)`
+over a symmetric node set grows as `S_m → 4 / r_m^6`: halving `r_m`
+multiplies `S_m` by `2^6 = 64`, and `r_m^6 · S_m → 4`. A
+"`max-integrand × BZ-volume`" envelope requires a finite maximum
+integrand; here there is none, so no such envelope exists. This is the
+precise sense in which the earlier draft's magnitude bound is withdrawn:
+the object it bounded is divergent. A bounded negative control — the same
+kernel with a fixed mass regulator on the propagators — has a finite
+maximum and `r^6 · S_m → 0`, confirming that the `64`/leading-`4`
+signature is specific to the unregulated origin singularity.
 
 ---
 
-## 5. What is retained vs. what is external
+## 5. Currently-omitted ingredients and the paths they open
 
-### 5.1 Retained (framework-native, this note)
+The displayed scalar reduction hits the quadratic IR obstruction of §4
+because it is not yet the full physical assembly. Three ingredients are
+currently omitted; each is a concrete path this diagnostic opens.
 
-- **Action structure** (Wilson plaquette + 1-link staggered Dirac),
-  from MINIMAL_AXIOMS + D1–D4 + D13.
-- **Tadpole factor** `u_0 = ⟨P⟩^{1/4} = 0.87768` and the retained
-  D14 identity `⟨O(U)⟩ = u_0^{n_link} · ⟨O_V(V)⟩_eff` with
-  `n_link = 1` per vertex (D15).
-- **Feynman rules** `D_ψ(k)`, `D_g(k)`, `N_S(k)` with retained closed
-  forms (FR1, FR2) and continuum-limit reduction (Block 1 of prior
-  symbolic runner, PASS).
-- **Diagram enumeration** `{D_S1, D_S2, D_S3}` in the `C_F` channel
-  with external-leg absorption (R4) reducing to the single
-  non-trivial `D_S1` diagram.
-- **Color-tensor retention** `C_F = 4/3` from S1+D7+D12 (Block 4 of
-  prior symbolic runner, PASS).
-- **Three-piece structural decomposition** `I_S^{framework} =
-  I_S^{tadpole} + I_S^{log} + I_S^{fin}`, with `I_S^{log}`-coefficient
-  exactly `1` (MSbar convention) and `I_S^{fin} = I_S^{taste} +
-  I_S^{Wilson} + I_S^{mix}`.
-- **Retained envelope bound** `|I_S^{framework}| ≤ 23.35`, derived
-  from retained `u_0`, `⟨P⟩`, and the retained tadpole-subtraction
-  identity.
-- **Continuum-limit consistency** `I_S^{continuum} = 2` (exact, from
-  retained FR1, FR2 at `a → 0`).
+1. **Full staggered-vertex / gauge-tensor contraction.** The kernel of §3
+   is a scalar stand-in, not the full staggered-taste + gauge-Lorentz
+   contraction of the `D_S1` vertex. The full numerator carries taste and
+   Lorentz index structure whose small-momentum behaviour can soften the
+   origin degree; deriving that full contraction from D2–D9 is the first
+   path. Until it is carried, the scalar stand-in over-counts the origin
+   singularity.
 
-### 5.2 External (not closed by this note)
+2. **Independent external-leg `Z_q` and assembly convention.** By (A1),
+   the assembled `Z_S^{total}` depends on the external-leg coefficient
+   `z_q`, which is **currently omitted** from the displayed kernel. An
+   independent lattice computation of the fermion wavefunction
+   renormalization `Z_q`, together with a specified assembly convention
+   relating `Z_S^{D_S1}` and `Z_q`, is the second path. The mirror-symmetric
+   `D_S2`/`D_S3` self-energies (§2.1) are where `z_q` is carried.
 
-- **Numerical 4D BZ quadrature** of `I_S^{taste}`, `I_S^{Wilson}`,
-  `I_S^{mix}` on the retained propagators. These are **not performed
-  here** and remain the sole residual reduction step to pin a specific
-  framework-native `I_S^{framework}` value below the retained envelope.
-- **Validation of the tadpole-subtraction split** at the numerical level
-  (i.e. verification that `I_S^{tadpole}` really absorbs the dominant
-  piece); this is standard lattice-PT but not re-derived here.
+3. **Specified tadpole-subtraction prescription.** The bookkeeping of §3.2
+   names a constant piece to be removed but fixes no prescription. A
+   specified tadpole-subtraction scheme (which constant piece, with what
+   coefficient) is required before the origin behaviour of the
+   *subtracted* kernel is defined; supplying it is the third path.
 
-### 5.3 Open (unchanged by this note)
+None of these is closed by the present note; each is a next step this
+diagnostic makes precise. The diagnostic's positive content is the
+certified structural signature of §4 — ray slope `−6`, halving factor
+`64`, leading coefficient `4`, quadratic origin-ball growth with
+`ε² J → 4π²`, and the unbounded integrand supremum — which any full
+assembly must confront.
 
-- The `C_A` channel `I_2` of `Δ_R`.
-- The `T_F n_f` channel `I_3` of `Δ_R`.
-- Representation-A vs Representation-B 1-loop cancellation on the Ward
-  ratio `y_t(M_Pl) / g_s(M_Pl)` (§4.4 of
-  `YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md`).
+The `C_A` channel (`I_2`) and the `T_F n_f` channel (`I_3`) of `Δ_R`, and
+the Representation-A / Representation-B Ward comparison, are outside the
+scope of this note and are unaffected by it.
 
 ---
 
-## 6. Comparison to cited `I_S ∈ [4, 10]`
+## 6. Validation
 
-### 6.1 Structural consistency
+The paired runner `scripts/frontier_yt_p1_h_unit_renormalization.py`
+emits deterministic PASS/FAIL lines and probes the displayed kernel
+`K(k) = N_S(k) · [D_ψ(k)]^{-2} · D_g(k)^{-1}` directly, comparing to **no**
+external numerical target — only to the structural constants derived
+above. Each gate is discriminating: it fails if the implemented kernel
+were wrong, via an explicit wrong-kernel negative control or a
+convergence-ratio requirement. The seven gates are:
 
-The cited range `I_S ∈ [4, 10]` from `YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`
-(Kilcup–Sharpe 1987; Sharpe 1994; Bhattacharya–Sharpe 1998;
-Bhattacharya–Gupta–Kilcup–Sharpe 1999) refers to the tadpole-improved
-staggered scalar density on Wilson plaquette action at `β ≃ 6` — the
-**closest analogue** of the framework's canonical surface. On the
-retained envelope:
+1. **`IR_RAY_LOG_SLOPE_MINUS_SIX`** — the small-`r` log-log slope of
+   `K(r·q̂)` is `−6`. Falsified by the `r^{-4}` softened control (slope
+   `−4`).
+2. **`IR_RAY_HALVING_FACTOR_64`** — successive halving ratios
+   `K(r/2)/K(r)` converge to `2^6 = 64`, with the residual error
+   contracting per halving. Falsified by the softened control (`16`).
+3. **`IR_LEADING_COEFFICIENT_FOUR`** — `r^6 · K(r·q̂) → 4` with `O(r²)`
+   contraction (successive `|c − 4|` ratio `→ 1/4`). Falsified by a
+   unit-numerator control (`N_S` replaced by `1`, leading coefficient `1`).
+4. **`FOUR_D_PARTIAL_INTEGRAL_QUADRATIC_GROWTH`** — the origin-ball
+   integral `J(ε; R)` at `R = 1/4` satisfies
+   `log( J(ε/2)/J(ε) ) / log 2 → 2` and `ε² · J → 4π²`. Falsified by a
+   log-divergent control (exponent `0`).
+5. **`NO_FINITE_MAX_TIMES_VOLUME_ENVELOPE`** — the shell maximum `S_m`
+   grows as `2^6` per halving with `r^6 · S_m → 4`, so no finite
+   maximum-integrand × volume envelope exists. Falsified by a
+   mass-regularized control (bounded maximum, `r^6 · S_m → 0`).
+6. **`EXTERNAL_LEG_ZQ_REQUIRED_AND_OMITTED`** — a structural check that
+   the assembly convention (A1) requires an independent external-leg
+   coefficient `z_q` that is **currently omitted** from the displayed
+   kernel. The runner reads this note and verifies that the external-leg
+   `Z_q` is documented as required, that the omission is stated, and that
+   the displayed `D_S1` kernel block of §3 carries no `Z_q` factor. This
+   certifies the omission structurally — never a claim that `Z_q` has been
+   computed or that the assembled slope has been evaluated.
+7. **`TADPOLE_COEFFICIENT_IS_SCHEME_DEPENDENT`** — the constant-piece
+   projector is scheme-dependent: a soft (point) projector and a
+   BZ-average projector of the numerator `N_S` disagree, so the tadpole
+   coefficient is not scheme-invariant. Falsified by a genuinely constant
+   numerator (the two projectors agree).
 
-```
-    Cited range:         I_S ∈ [4, 10]         central   ~6
-    Retained envelope:   |I_S| ≤ 23.35         (R1/B0 from u_0, <P>)
-    Retained continuum:   I_S^{CL} = 2         (a → 0)
-```
-
-The cited bracket lies strictly inside the retained envelope. The
-retained envelope does not narrow the cited range — it is too loose
-— but it **confirms structural consistency** without requiring the
-cited number as an input.
-
-### 6.2 Why `I_S > 2` — retained structural interpretation
-
-From the three-piece decomposition (R10), the departure from the
-continuum value `I_S^{CL} = 2` is entirely carried by the retained
-`I_S^{fin} = I_S^{taste} + I_S^{Wilson} + I_S^{mix}` pieces. Both
-`I_S^{taste}` (from D2–D4 staggered η-phases) and `I_S^{Wilson}`
-(from D13 Wilson plaquette gluon) are intrinsic to the retained
-canonical action. This is the **framework-native identification of
-the mechanism**:
-
-- **Staggered taste sum** (D2–D4): the η-phase structure on `Z³`
-  propagates contributions from all 16 taste-degenerate species
-  through the BZ integrand, adding a positive-sign finite residue to
-  `I_S^{fin}`.
-- **Wilson plaquette deviation** (D13): the gluon propagator
-  `D_g(k) = (4/a²) Σ sin²(k_ρ a/2)` differs from the continuum `k²`
-  by `O((k_ρ a)^4 / 12)` at the BZ midpoint. This deviation
-  integrates to a finite shift `I_S^{Wilson}`.
-
-The retained framework structurally *explains* the cited `I_S > 2`
-via these two retained mechanisms, without re-deriving the numerical
-value.
-
-### 6.3 Where `I_S ∈ [4, 10]` fits in the retained picture
-
-Under the retained continuum baseline `I_S^{CL} = 2` plus the retained
-envelope upper limit `|I_S| ≤ 23.35`, the natural retained question
-becomes: *what fraction of the retained envelope is the cited value?*
-
-```
-    (I_S^{cited, central}  −  I_S^{CL}) / (I_S^{max-retained}  −  I_S^{CL})
-        =  (6 − 2) / (23.35 − 2)
-        =  4 / 21.35
-        =  0.187                                                       (F1)
-```
-
-The cited central `I_S ≈ 6` sits at roughly `19%` of the retained
-envelope above the continuum baseline. This is structurally
-compatible: the retained envelope is constructed from the raw
-magnitude of the BZ integrand; the actual BZ integral is a
-dimensionless `O(1)` fraction of that envelope because of phase-space
-suppression of the worst-case integrand region. The cited `19%`
-fraction is within the retained envelope's expected range
-(`O(10%)–O(30%)` for 4D BZ integrals of this type on the retained
-surface).
-
----
-
-## 7. Safe claim boundary
-
-This note claims:
-
-> On the retained `Cl(3) × Z^3` Wilson-plaquette + 1-link staggered
-> canonical surface with tadpole improvement `u_0 = ⟨P⟩^{1/4}`, the
-> 1-loop renormalization of the composite scalar `H_unit = (1/√6)
-> Σ ψ̄ ψ` reduces symbolically to the single `D_S1` diagram after
-> external-leg `Z_q` absorption, with BZ integrand given by the
-> retained Feynman rules (R2). The retained tadpole-improvement
-> identity (D14) absorbs the dominant constant-propagator piece,
-> leaving a three-piece retained decomposition `I_S^{framework} =
-> I_S^{tadpole}(u_0) + I_S^{log} + I_S^{fin}`. The retained
-> framework-native envelope bound is `|I_S^{framework}| ≤ 23.35`,
-> derived from retained `u_0`, retained `⟨P⟩`, and the retained
-> tadpole-subtraction identity. This envelope comfortably encloses
-> the externally cited range `I_S ∈ [4, 10]`, confirming structural
-> consistency without requiring the cited number as a derivation
-> input.
-
-It does **not** claim:
-
-- that `I_S^{framework}` is pinned to a specific numerical value
-  tighter than the retained envelope (`|I_S| ≤ 23.35`);
-- that the retained envelope is sub-percent precise (it is a
-  framework-native magnitude bound, not a quadrature result);
-- that the numerical 4D BZ quadrature of `I_S^{taste}`, `I_S^{Wilson}`,
-  `I_S^{mix}` is performed here (it is not — this is deferred as the
-  single residual reduction step);
-- that the master obstruction theorem, the Ward-identity theorem, the
-  packaged `1.92%` support note, or the prior P1 citation /
-  verification notes should be modified on the basis of this
-  derivation (they should not — the retained reduction replaces only
-  the *citation-only* status of `I_S`, not any authority-level claim);
-- that the `C_A` channel (`I_2`) or `T_F n_f` channel (`I_3`) of
-  `Δ_R` are closed (they remain OPEN);
-- that the Representation-A / Representation-B Ward cancellation
-  at 1-loop is established (it is not).
-
-The retained envelope `|I_S| ≤ 23.35` is the primary framework-native
-contribution. Pinning a specific numerical value requires explicit
-4D BZ quadrature; the cited literature value `I_S ∈ [4, 10]` remains
-the recommended numerical input for any downstream quantitative use.
-
----
-
-## 8. Validation
-
-The runner `scripts/frontier_yt_p1_h_unit_renormalization.py` emits
-deterministic PASS/FAIL lines and is logged under
-`logs/retained/yt_p1_h_unit_renormalization_2026-04-17.log`. The
-runner must return PASS on every check to keep this note on the
-retained surface.
-
-The runner verifies:
-
-- **Action structure** — retained Wilson-plaquette + 1-link staggered
-  Dirac reproducing the retained sign-phase structure `η_μ(x) =
-  (-1)^{Σ_{ν<μ} x_ν}` and the Wilson plaquette coupling
-  `β = 2 N_c / g² = 6` at `g = 1`.
-- **Tadpole factor** — retained `u_0 = ⟨P⟩^{1/4} = 0.87768138` at
-  `⟨P⟩ = 0.5934`; retained `1/u_0 = 1.13937`; retained
-  `u_0^{-4} = 1/⟨P⟩ = 1.68520`.
-- **Diagram count** — `D_S1` + (`D_S2` + `D_S3` absorbed into
-  `Z_q`) = exactly one non-trivial `C_F`-channel BZ integral
-  after amputation.
-- **Feynman-rule structural form** — retained `D_ψ(k) = Σ sin²(k)
-  / a²`, `D_g(k) = (4/a²) Σ sin²(k/2)`, `N_S(k) = Σ cos²(k/2) /
-  a²`, with continuum-limit reduction to `k²`, `k²`, `1`.
-- **Color-tensor structure** — `C_F = (N_c² − 1) / (2 N_c) = 4/3`
-  from retained S1 + D7 + D12.
-- **Three-piece decomposition** `I_S^{framework} = I_S^{tadpole}
-  + I_S^{log} + I_S^{fin}` structurally retained; `I_S^{log}`
-  coefficient exactly `1` in MSbar convention at matching scale.
-- **Retained envelope bound** — `I_S^{max-retained} = 16 ·
-  (1 − 1/⟨P⟩)^{-1}`; numerical value `|I_S^{max-retained}| =
-  23.35` at `⟨P⟩ = 0.5934`.
-- **Cited-range consistency** — cited `I_S ∈ [4, 10]` strictly
-  inside retained envelope `[0.245, 23.35]`; cited central
-  fraction `(6 − 2)/(23.35 − 2) = 0.187` within the expected
-  `[0.1, 0.3]` band for retained 4D BZ integrals.
-- **No modification** — structural check that the master obstruction
-  theorem, the Ward-identity theorem, the packaged `1.92%` note, the
-  prior citation note, the prior verification note, and the prior
-  geometric-tail note are all unchanged.
+The runner prints the observed asymptotic values alongside each gate and
+terminates with `SUMMARY: PASS=7  FAIL=0`. It consumes no external target
+and imports no framework module.

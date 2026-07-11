@@ -20,8 +20,8 @@ publication tables phrase it.
 | critical | `unaudited` | 255 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 124 |
-| critical | `audit_in_progress` | 2 |
 | critical | `audited_conditional` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | high | `audited_conditional` | 1 |
 | high | `audited_failed` | 1 |
@@ -29,7 +29,7 @@ publication tables phrase it.
 | medium | `audited_conditional` | 1 |
 | medium | `open_gate` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 564
+**Total non-retained-grade rows in publication tables:** 563
 
 ## Per-row breakdown
 
@@ -233,7 +233,6 @@ publication tables phrase it.
 | critical | `s3_anomaly_spacetime_lift_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `s3_boundary_link_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | critical | `s3_general_r_derivation_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| critical | `s3_mass_matrix_no_go_note` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `s3_time_bilinear_tensor_action_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `s3_time_bilinear_tensor_primitive_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `s3_time_constructed_support_tensor_primitive_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

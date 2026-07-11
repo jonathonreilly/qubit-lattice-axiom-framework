@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 81 |
-| **retained_no_go** | 22 |
+| **retained_no_go** | 23 |
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2842 |
-| audit_in_progress | 11 |
+| audit_in_progress | 10 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 15 |
-| `audited_clean` | 434 |
+| `audit_in_progress` | 14 |
+| `audited_clean` | 435 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
@@ -130,7 +130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
-| `s3_mass_matrix_no_go_note` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -420,6 +419,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `retarded_field_compact_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `s3_cap_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_endpoint_fiber_uniform_lift_support_2026-06-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
+| `s3_mass_matrix_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `s3_taste_cube_decomposition_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `scalar_3plus1_temporal_ratio_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `scalar_kg_rerun_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -5522,6 +5522,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The finite enumerative consequence closes under the stated quotient-lift premises; the note names physical quotient, same-source readout, and calibration bridges as out-of-scope future targets rather than consuming them.
 - **rationale:** The finite claim closes as an exact algebraic/enumerative consequence of the stated quotient-lift premises. The note explicitly does not claim the physical four-to-three quotient, physical fiber-uniform lift, same-source readout, or typing/calibration bridges; those are named as remaining theorem targets rather than silently imported. A physical endpoint-use claim would be conditional, but the audited bounded support theorem is scoped only to the algebraic consequence under those premises.
 - **auditor confidence:** high
+
+### `s3_mass_matrix_no_go_note`
+
+- **Note:** [`S3_MASS_MATRIX_NO_GO_NOTE.md`](../../docs/S3_MASS_MATRIX_NO_GO_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** For the explicitly stated natural permutation representation of S_3 on V = span(X_1,X_2,X_3), every invariant Hermitian operator has at most two distinct eigenvalues; for the stated axis-fixing Z_2 subgroup, the invariant Hermitian space has real dimension 5. No physical generation-carrier identification was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T140442Z-413aaba4-00004-s3_mass_matrix_no_go_note`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Because the natural permutation representation decomposes as V ≅ A_1 ⊕ E, every S_3-invariant Hermitian operator is M = αI_3 + βP_(A_1), with spectrum {α, α, α+β}.  _(class `A`)_
+- **chain closes:** True — The group-averaging computation gives a two-dimensional commutant containing I_3 and J_3, so these span it; restricting to Hermitian elements gives real α and β, and the rank-one projector spectrum proves the degeneracy. The same computation gives commutant dimension 5 for the stated Z_2 subgroup.
+- **rationale:** The result is a finite-dimensional algebraic no-go on a sharply specified representation and symmetry class. The runner constructs all six permutation matrices, computes the group-averaging projector and its rank, verifies the spanning invariant matrices and projector properties, checks the forced spectra, and independently computes the residual Z_2 dimension. The note does not establish that this triplet is a physical generation carrier, so that interpretation is excluded from the audited scope.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `s3_taste_cube_decomposition_note`
 

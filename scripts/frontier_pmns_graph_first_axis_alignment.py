@@ -8,9 +8,12 @@ Question:
   route?
 
 Answer:
-  Yes, partially. The canonical cube-shift selector has exactly three axis
-  minima with residual `Z_2` stabilizer. Pushing that selected axis onto the
-  active triplet Hermitian lane forces the exact aligned core law
+  Yes, partially. The canonical cube-shift selector has exactly three
+  degenerate coordinate-axis minima with residual `Z_2` stabilizer; it does
+  not choose uniquely among them. After one minimum is supplied, and under the
+  explicit symmetry premise (E) that the active Hermitian operator carries the
+  residual `Z_2` equivariantly, the bridge authority identifies the exact
+  aligned core law
 
       P_23 H P_23 = H
 
@@ -22,8 +25,8 @@ Answer:
   real/CP/phase-gauge specialization z=b in R; unitary P_23 invariance alone
   does not force Im(z)=0.
 
-  This is a real positive law from the graph-first route, but it still does not
-  fix the values `(a,z,c,d)` or the active sector.
+  This is a conditional positive law from the graph-first route, but it does
+  not choose among the three axes, fix `(a,z,c,d)`, or select the active sector.
 """
 
 from __future__ import annotations
@@ -31,6 +34,7 @@ from __future__ import annotations
 import itertools
 import math
 import sys
+from pathlib import Path
 
 import numpy as np
 
@@ -38,6 +42,7 @@ np.set_printoptions(precision=8, suppress=True, linewidth=120)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+NOTE_PATH = Path(__file__).resolve().parents[1] / "docs" / "PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md"
 
 I2 = np.eye(2, dtype=complex)
 SX = np.array([[0, 1], [1, 0]], dtype=complex)
@@ -45,14 +50,14 @@ I8 = np.eye(8, dtype=complex)
 P23 = np.array([[1, 0, 0], [0, 0, 1], [0, 1, 0]], dtype=complex)
 
 
-def check(name: str, condition: bool, detail: str = "") -> bool:
+def check(name: str, condition: bool, detail: str = "", cls: str = "A") -> bool:
     global PASS_COUNT, FAIL_COUNT
     status = "PASS" if condition else "FAIL"
     if condition:
         PASS_COUNT += 1
     else:
         FAIL_COUNT += 1
-    msg = f"  [{status}] {name}"
+    msg = f"  [{status} ({cls})] {name}"
     if detail:
         msg += f"  ({detail})"
     print(msg)
@@ -144,7 +149,7 @@ def part1_graph_first_selector_has_exact_axis_minima() -> None:
 
     check("The normalized graph-first selector has exactly three minima", len(mins) == 3, f"count={len(mins)}")
     check("Those minima are exactly the three coordinate axes", abs(min_val) < 1e-12 and exact_vertices)
-    print("  [INFO] The graph-first route derives a weak-axis selector on the hw=1 triplet")
+    print("  [INFO] The selector restricts minima to three axes; it makes no unique-axis choice")
 
 
 def part2_selected_axis_carries_residual_z2_stabilizer() -> None:
@@ -166,12 +171,12 @@ def part2_selected_axis_carries_residual_z2_stabilizer() -> None:
     check("The selected axis e1 is fixed by the 2<->3 swap", np.allclose(swap23 @ e1, e1, atol=1e-12))
     check("The selected axis is strictly lower than the democratic diagonal under the selector", f_e1 < f_diag,
           f"F_axis={f_e1:.6f}, F_diag={f_diag:.6f}")
-    print("  [INFO] The selected axis leaves an exact residual Z2 stabilizer")
+    print("  [INFO] After one minimum is supplied, that axis leaves an exact residual Z2 stabilizer")
 
 
-def part3_residual_z2_forces_the_active_hermitian_core() -> None:
+def part3_premise_e_residual_z2_yields_the_active_hermitian_core() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: THE RESIDUAL Z2 FORCES THE ACTIVE HERMITIAN CORE LAW")
+    print("PART 3: UNDER PREMISE (E), RESIDUAL Z2 YIELDS THE ACTIVE HERMITIAN CORE LAW")
     print("=" * 88)
 
     h = p23_hermitian_core(1.10, 0.26 + 0.19j, 0.81, 0.17)
@@ -189,9 +194,9 @@ def part3_residual_z2_forces_the_active_hermitian_core() -> None:
     print(f"  [INFO] The active aligned Hermitian lane has exact form [[a,z,z],[z*,c,d],[z*,d,c]]  (r23={r23:.6f}, triangle_phase={phi:.6f})")
 
 
-def part4_this_route_derives_alignment_but_not_values_or_sector_choice() -> None:
+def part4_premise_e_gives_alignment_but_not_values_or_sector_choice() -> None:
     print("\n" + "=" * 88)
-    print("PART 4: THIS ROUTE DERIVES ALIGNMENT, BUT NOT VALUES OR ACTIVE-SECTOR CHOICE")
+    print("PART 4: PREMISE (E) GIVES ALIGNMENT, BUT NOT VALUES OR ACTIVE-SECTOR CHOICE")
     print("=" * 88)
 
     h1 = p23_hermitian_core(1.10, 0.26 + 0.19j, 0.81, 0.17)
@@ -200,10 +205,36 @@ def part4_this_route_derives_alignment_but_not_values_or_sector_choice() -> None
     pair_nu = np.block([[h1, np.zeros((3, 3), dtype=complex)], [np.zeros((3, 3), dtype=complex), np.diag([0.1, 0.2, 0.3])]])
     pair_e = sigma @ pair_nu @ sigma
 
-    check("Two distinct aligned Hermitian cores survive the same graph-first axis law", np.linalg.norm(h1 - h2) > 1e-6)
+    check("Two distinct aligned Hermitian cores survive the same premised P23 law", np.linalg.norm(h1 - h2) > 1e-6)
     check("Exact sector exchange still flips which lepton sector carries the active aligned block", np.linalg.norm(pair_e - sigma @ pair_nu @ sigma) < 1e-12)
-    print("  [INFO] The graph-first route fixes alignment but not the aligned-core values")
+    print("  [INFO] Under premise (E), the route fixes alignment but not the aligned-core values")
     print("  [INFO] It does not by itself fix whether the active block sits on E_nu or E_e")
+
+
+def part5_note_surface_pins() -> None:
+    print("\n" + "=" * 88)
+    print("PART 5: CONDITIONAL-INVARIANCE NOTE-SURFACE PINS")
+    print("=" * 88)
+
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
+
+    check("The source note names premise (E)", "premise (E)" in note_text, cls="B")
+    check(
+        "The source note carries the dated downstream-hygiene line",
+        "2026-07-10 downstream hygiene." in note_text,
+        cls="B",
+    )
+    check(
+        "The unconditional lane-forces-alignment sentence is absent",
+        "lane forces the aligned law" not in note_text,
+        cls="B",
+    )
+    check(
+        "Theorem item 3 requires an axis choice and premise (E)",
+        "3. after that choice and under premise (E), residual `Z_2` equivariance" in note_flat,
+        cls="B",
+    )
 
 
 def main() -> int:
@@ -218,19 +249,22 @@ def main() -> int:
 
     part1_graph_first_selector_has_exact_axis_minima()
     part2_selected_axis_carries_residual_z2_stabilizer()
-    part3_residual_z2_forces_the_active_hermitian_core()
-    part4_this_route_derives_alignment_but_not_values_or_sector_choice()
+    part3_premise_e_residual_z2_yields_the_active_hermitian_core()
+    part4_premise_e_gives_alignment_but_not_values_or_sector_choice()
+    part5_note_surface_pins()
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
     print("  Positive graph-first result:")
-    print("    - the hw=1 cube selector derives a weak-axis choice")
-    print("    - the selected axis carries residual Z2")
-    print("    - that residual Z2 forces the aligned active Hermitian core")
+    print("    - the hw=1 cube selector has exactly three degenerate axis minima")
+    print("    - after one minimum is supplied, that axis carries residual Z2")
+    print("    - after that choice and under premise (E), residual Z2 gives the aligned core")
     print("    - the core keeps the complex off-axis coupling allowed by Hermiticity")
     print()
     print("  Boundary:")
+    print("    - this route does not choose uniquely among the three axis minima")
+    print("    - this route does not derive residual-Z2 equivariance of the active operator")
     print("    - this route does not fix the aligned-core values")
     print("    - this route does not fix whether the active sector is neutrino or charged-lepton")
     print()

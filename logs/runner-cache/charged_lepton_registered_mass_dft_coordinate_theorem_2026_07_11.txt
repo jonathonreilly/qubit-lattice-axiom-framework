@@ -8,6 +8,8 @@ Part A: inverse C3 Fourier transform
   [PASS] inverse transform reconstructs z1
   [PASS] inverse transform reconstructs z2
   [PASS] Fourier mean is positive on a positive triple
+  [PASS] generating cycle sends c to omega c
+  [PASS] generating reflection sends c to conjugate(c)
 
 Part B: symmetric r coordinate
 ------------------------------
@@ -31,15 +33,21 @@ Part D: folded phase and unordered reconstruction
   [PASS] r is invariant under every permutation
   [PASS] folded phase is invariant under every permutation
   [PASS] inverse cosine formula reconstructs ordered roots
+  [PASS] folded phase reconstructs the unordered roots
   [PASS] folded phase lies in [0,pi/3]
+  [PASS] fold boundary is permutation invariant
+  [PASS] both fold-boundary representatives give pi/3
+  [PASS] r is invariant under common positive mass scaling
   [PASS] degenerate triple has c=0 and r=0
+  [PASS] c=0 reconstruction is phase independent
 
 Scope guards
 ------------
-  [PASS] source states registered-data scope
+  [PASS] source requires an independently defined mass functional
+  [PASS] source says primitive is not a mathematical premise
   [PASS] source does not retire owner atoms
   [PASS] source does not force r
   [PASS] source excludes observed comparators
 
 ====================================================================
-TOTAL: PASS=25, FAIL=0
+TOTAL: PASS=33, FAIL=0

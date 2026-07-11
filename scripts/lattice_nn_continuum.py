@@ -10,7 +10,8 @@ The beam confinement that gives 1/b is preserved: each step shifts
 y by at most ±h.
 
 Test: the finite-window refinement observables at h = 2.0, 1.0, 0.5, 0.25, 0.125.
-Safe claim: Born-clean positive refinement trend through h = 0.25.
+Safe claim: a Born-clean finite tested window through h = 0.25, with positive
+gravity at the two finest successful rows.
 The h = 0.125 point is still unresolved for the raw kernel because the
 unrescaled path sum overflows there.
 """
@@ -33,6 +34,10 @@ PHYS_W = 20.0
 PHYS_L = 40.0
 SLIT_Y = 3.0
 MASS_Y = 8.0
+H_FINITE = (2.0, 1.0, 0.5, 0.25)
+H_GATE = 0.125
+BORN_TOL = 1e-10
+POSITIVE_GRAVITY_ROWS = (0.5, 0.25)
 
 
 def generate_nn_lattice(spacing):
@@ -253,6 +258,44 @@ def measure_full(spacing):
     }
 
 
+def certify_finite_window(rows, outcomes):
+    """Check exactly the bounded claim made by the companion note."""
+    failures = []
+    finite_keys = ("gravity", "gk0", "MI", "pur_cl", "dtv", "born")
+
+    for h in H_FINITE:
+        if h not in rows or h not in outcomes:
+            failures.append(f"h={h:g}: spacing was not evaluated")
+            continue
+        row = rows.get(h)
+        if row is None:
+            failures.append(f"h={h:g}: missing finite-window row")
+            continue
+        nonfinite = [key for key in finite_keys if not math.isfinite(row[key])]
+        if nonfinite:
+            failures.append(f"h={h:g}: non-finite values in {', '.join(nonfinite)}")
+        if not row["born"] < BORN_TOL:
+            failures.append(
+                f"h={h:g}: Born residual {row['born']:.3e} is not below {BORN_TOL:.1e}"
+            )
+        if row["gk0"] != 0.0:
+            failures.append(f"h={h:g}: k=0 response {row['gk0']:.3e} is not exactly zero")
+
+    for h in POSITIVE_GRAVITY_ROWS:
+        row = rows.get(h)
+        if row is not None and not row["gravity"] > 0.0:
+            failures.append(f"h={h:g}: gravity response is not positive")
+
+    if H_GATE not in rows or H_GATE not in outcomes:
+        failures.append(f"h={H_GATE:g}: gate spacing was not evaluated")
+    elif rows[H_GATE] is not None or outcomes[H_GATE] != "overflow":
+        failures.append(
+            f"h={H_GATE:g}: expected raw-kernel overflow, got {outcomes[H_GATE]}"
+        )
+
+    return failures
+
+
 def main():
     print("=" * 95)
     print("NEAREST-NEIGHBOR LATTICE REFINEMENT STUDY")
@@ -265,12 +308,18 @@ def main():
           f"{'MI':>8s}  {'1-pur':>8s}  {'d_TV':>8s}  {'Born':>10s}  {'time':>5s}")
     print(f"  {'-' * 88}")
 
-    for h in [2.0, 1.0, 0.5, 0.25, 0.125]:
+    rows = {}
+    outcomes = {}
+    for h in (*H_FINITE, H_GATE):
         t0 = time.time()
         try:
             r = measure_full(h)
+            outcome = "row" if r is not None else "no-row"
         except OverflowError:
             r = None
+            outcome = "overflow"
+        rows[h] = r
+        outcomes[h] = outcome
         dt = time.time() - t0
         if r:
             born_s = f"{r['born']:.2e}" if not math.isnan(r['born']) else "       nan"
@@ -278,13 +327,29 @@ def main():
                   f"{r['gk0']:+10.2e}  {r['MI']:8.4f}  {1-r['pur_cl']:8.4f}  "
                   f"{r['dtv']:8.4f}  {born_s}  {dt:4.0f}s")
         else:
-            print(f"  {h:5.3f}  FAIL  {dt:4.0f}s")
+            print(f"  {h:5.3f}  FAIL ({outcome})  {dt:4.0f}s")
 
+    failures = certify_finite_window(rows, outcomes)
     print()
-    print("SAFE CLAIM: Born-clean positive refinement trend through h = 0.25")
-    print("BORN: must stay < 1e-10 on the finite window")
-    print("h = 0.125 remains unresolved for the raw kernel")
+    if failures:
+        print("FINITE-WINDOW CERTIFICATE: FAIL")
+        for failure in failures:
+            print(f"  - {failure}")
+        return 1
+
+    worst_born = max(rows[h]["born"] for h in H_FINITE)
+    print("FINITE-WINDOW CERTIFICATE: PASS")
+    print(f"  H_finite = {H_FINITE}")
+    print(
+        f"  all finite-window observables are finite; "
+        f"max Born = {worst_born:.2e} < {BORN_TOL:.1e}"
+    )
+    print("  k=0 response = 0 exactly on H_finite")
+    print(f"  gravity > 0 on the two finest successful rows {POSITIVE_GRAVITY_ROWS}")
+    print(f"  h = {H_GATE:g} raises raw-kernel overflow and remains outside H_finite")
+    print("SCOPE: finite tested rows only; no monotonic or continuum-limit claim")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

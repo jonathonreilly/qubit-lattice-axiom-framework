@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 651,
     "high": 334,
-    "leaf": 1147,
+    "leaf": 1146,
     "medium": 756
   },
   "cycle_break_target_count": 49,
@@ -51042,28 +51042,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "generation_dial_local_stability_grammar_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/generation_dial_local_stability_grammar_2026_06_05.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -82264,6 +82242,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 598,
-  "total_pending": 2888
+  "ready_count": 597,
+  "total_pending": 2887
 }

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 84 |
+| **retained** | 85 |
 | **retained_no_go** | 27 |
 | **retained_bounded** | 358 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 4 |
-| unaudited | 2824 |
+| unaudited | 2823 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 451 |
+| `audited_clean` | 452 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3174 |
+| `unaudited` | 3173 |
 
 | claim_type | count |
 |---|---:|
@@ -304,6 +304,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_su3_full_slice_product_fubini_factorization_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `generation_dial_local_stability_grammar_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `global_coherence_held_out2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -3458,6 +3459,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The supplied translation-character projectors and C3 cycle generator generate the full nine-dimensional M_3(C) observable algebra on H_hw=1 and have scalar commutant.  _(class `A`)_
 - **chain closes:** True — Within the bounded scope, the runner constructs the stated 3x3 generators, computes the generated algebra dimension, and computes the commutant dimension. The conclusion follows for those supplied generators without using the out-of-scope physical bridges.
 - **rationale:** The runner performs actual finite-dimensional linear algebra rather than printing constants: it constructs the translation-sign matrices, the C3 permutation, projectors, algebra span, and commutant constraints. All four checks are algebraic identity/closure checks on the supplied local generators. Because the source note already bounds the claim to this local H_hw=1 M_3(C) reconstruction and explicitly excludes physical-species and substrate conclusions, no split is needed before audit; it should remain a bounded_theorem, not a positive_theorem.
+- **auditor confidence:** high
+
+### `generation_dial_local_stability_grammar_2026-06-05`
+
+- **Note:** [`GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md`](../../docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For r > 0, s = 1 + log(r)/log(2) is a smooth monotone coordinate equivalent to r for local one-dimensional map and flow stability, and the named maps become s' = 2s and s' = s/2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00393-generation_dial_local_stabil`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** By the chain rule at a fixed point, the derivatives of the inverse coordinate maps cancel, so the conjugated map has multiplier F'(s*) = G'(r*) and the transformed flow has the same linearization coefficient.  _(class `A`)_
+- **chain closes:** True — The inverse-coordinate identities, derivative cancellation, and named-map transformations follow directly from elementary algebra and the chain rule. No external datum, fitted value, physical selector, or uncited bridge is needed for the scoped local-stability theorem.
+- **rationale:** The claim is a self-contained algebraic and calculus result about a smooth positive-coordinate reparametrization. The runner performs substantive symbolic checks of the inverse identities, map and flow linearizations, and the two named maps, with no imported measurements or tuned constants. The tautological S1.2 definition check is not load-bearing, and the source correctly confines the result to local stability classification without asserting physical selection.
 - **auditor confidence:** high
 
 ### `geometry_lane_head_to_head_note`

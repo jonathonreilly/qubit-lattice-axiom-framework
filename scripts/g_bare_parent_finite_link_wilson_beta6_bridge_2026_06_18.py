@@ -33,7 +33,8 @@ surface:
       (mismatched-slot exhibit; pin equivalence gamma* = s iff
       beta = 2 N_c).
   T6  source-boundary guards: convention content is absent from the bounded
-      theorem and present on the separate Type: meta convention note.
+      theorem. The separate meta convention surface is outside this theorem
+      certificate's dependency set.
 """
 
 from __future__ import annotations
@@ -44,7 +45,6 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 BRIDGE = ROOT / "docs" / "G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md"
-CONVENTION_META = ROOT / "docs" / "G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md"
 PARENT = ROOT / "docs" / "G_BARE_DERIVATION_NOTE.md"
 RIGIDITY = ROOT / "docs" / "G_BARE_RIGIDITY_THEOREM_NOTE.md"
 WILSON = ROOT / "docs" / "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md"
@@ -441,7 +441,6 @@ def section_G() -> None:
     print("-" * 78)
     paths = {
         "bounded theorem note": BRIDGE,
-        "meta convention note": CONVENTION_META,
         "parent note": PARENT,
         "finite-link rigidity note": RIGIDITY,
         "Wilson small-a note": WILSON,
@@ -451,23 +450,16 @@ def section_G() -> None:
         check(f"{label} exists", path.exists(), rel_path)
 
     bridge_text = BRIDGE.read_text(encoding="utf-8")
-    convention_text = CONVENTION_META.read_text(encoding="utf-8")
     parent_text = PARENT.read_text(encoding="utf-8")
     rigidity_text = RIGIDITY.read_text(encoding="utf-8")
     wilson_text = WILSON.read_text(encoding="utf-8")
     bridge_flat = flat(bridge_text)
-    convention_flat = flat(convention_text)
     parent_flat = flat(parent_text)
     rigidity_flat = flat(rigidity_text)
     wilson_flat = flat(wilson_text)
 
     require_contains("theorem", bridge_flat, "set only by the independent audit lane")
     require_contains("theorem", bridge_flat, "non-load-bearing convention context")
-    require_contains(
-        "theorem",
-        bridge_text,
-        "G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md",
-    )
     require_contains("theorem", bridge_flat, "This theorem locates the pin but does not choose it")
     require_contains("bridge", bridge_flat, "mismatched-slot")
     require_contains("bridge", bridge_flat, "does not claim:")
@@ -496,19 +488,6 @@ def section_G() -> None:
     require_absent("theorem", bridge_text, "A^a := C^a")
     require_absent("theorem", bridge_text, "g_bare := s")
     require_absent("theorem", bridge_text, "At `N_c = 3`, exact rational arithmetic gives `beta = 6`")
-
-    require_contains("convention", convention_text, "**Type:** meta")
-    require_contains("convention", convention_flat, "this note is not a theorem")
-    require_contains("convention", convention_text, "(SD)")
-    require_contains("convention", convention_text, "A^a := C^a")
-    require_contains("convention", convention_text, "g_bare := s")
-    require_contains("convention", convention_text, "beta = 6")
-    require_contains("convention", convention_flat, "definition-level bookkeeping")
-    require_contains(
-        "convention",
-        convention_text,
-        "G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md",
-    )
 
     require_contains(
         "parent", parent_text, "G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md"

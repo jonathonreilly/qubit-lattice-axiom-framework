@@ -243,7 +243,7 @@ python3 scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
 Expected after the 2026-07-11 algebra/convention split:
 
 ```text
-TOTAL: PASS=105 FAIL=0
+TOTAL: PASS=95 FAIL=0
 ```
 
 ## Repair Note
@@ -260,6 +260,7 @@ TOTAL: PASS=105 FAIL=0
 This repair takes the **SEPARATION arm** literally. The bounded theorem now
 contains only Theorems 1–3 and the mismatched-slot exhibit. The same-slot
 definition and its displayed normalization values live in the separate
-`Type: meta` convention note linked above. The paired runner checks the
-algebraic theorem and verifies that the convention content is absent here and
-present only on the meta surface. No audit output or status is authored.
+`Type: meta` convention note named above. The primary theorem runner checks
+the algebraic theorem and verifies that the convention content is absent here;
+it does not read or certify the separate meta surface. No audit output or
+status is authored.

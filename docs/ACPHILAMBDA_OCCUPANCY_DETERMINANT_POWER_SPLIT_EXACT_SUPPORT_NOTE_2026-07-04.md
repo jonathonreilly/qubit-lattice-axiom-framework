@@ -1,152 +1,111 @@
-# AC_phi_lambda Occupancy Determinant-Power Split Exact Support
+# Complex Determinant and Realification Determinant Power
 
-**Date:** 2026-07-04
-**Claim type:** bounded_theorem
-**Status:** source-side exact support; independent audit required before any
-effective-status change. This note does not derive `r = 1/2`, does not choose
-the orbit/holomorphic horn, does not adopt the orbit-occupancy premise, does
-not introduce a K-real primitive, does not retire `AC_phi_lambda` or
-`AC_phi_lambda(i)`, and does not edit any Tier-A registry, axiom, primitive,
-audit verdict, or publication surface.
-**Current-main posture (2026-07-06):** live `main` now records Tier-A count
-zero: theta was retired 2026-07-05 by retained derivation, and
-`AC_phi_lambda` was retired by owner-governance adoption. This note banks the
-historical determinant-power split support only; it does not reopen, modify,
-or re-grade either retirement record, `tier_a_admissions.json`, or
-owner-governed premise data.
+**Date:** 2026-07-04; exact supplier repair 2026-07-11
+**Claim type:** positive_theorem
+**Status authority:** independent audit lane. This source proposal does not
+set or predict an audit verdict.
 **Primary runner:**
 [`scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py`](../scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py)
 **Runner cache:**
 [`logs/runner-cache/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.txt`](../logs/runner-cache/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.txt)
 
-## Target
+## Exact theorem
 
-The July 4 hygiene reclassified the per-lane `r` value of
-`AC_phi_lambda(i)` to realized-state registration. The live Tier-A residual is
-now narrower:
+Let `K=X+iY` be an `n x n` complex matrix, with `X` and `Y` real, and let
 
 ```text
-which grain/statistics the matter action implements:
-sector-tied/count-twice or orbit/holomorphic/count-once
+R(K) = [[X,-Y],
+        [Y, X]]
 ```
 
-The first-order staggered determinant theorem already shows that the
-one-component staggered matter measure gives a first-order holomorphic
-generation determinant and that count-twice behavior appears on the K-real
-restriction `c = conj(b)`. Current-main no-supply packets correctly block the
-shortcut from determinant or Record/axiom support to immediate retirement. This
-note adds the missing reusable algebraic support underneath the fork: for any
-complex kernel, the realified count is
-exactly the squared-modulus determinant, while the holomorphic Berezin count is
-the complex determinant to first power.
-
-## Exact Statement
-
-Let `K = X + iY` be an `n x n` complex matrix, with `X` and `Y` real. Its real
-linear representation is
+be its realification. Then
 
 ```text
-R(K) = [[X, -Y],
-        [Y,  X]].
+det_R R(K)
+  = det_C(K) det_C(conjugate(K))
+  = |det_C(K)|^2.
 ```
 
-Then
+With the displayed Berezin ordering convention, the holomorphic Gaussian on
+independent Grassmann variables satisfies
 
 ```text
-det_R R(K) = det_C(K) * conjugate(det_C(K)) = |det_C(K)|^2.
+integral d(chibar_n)d(chi_n)...d(chibar_1)d(chi_1)
+         exp(sum_ij chibar_i K_ij chi_j)
+  = det_C(K).
 ```
 
-The runner proves this symbolically for a generic `2 x 2` complex kernel and
-checks the scalar and scaling cases exactly. It also computes the holomorphic
-Berezin Gaussian directly by exterior algebra and obtains
+Thus a complex Gaussian determinant and the determinant of its realification
+carry first and second determinant powers, respectively.
+
+## Proof of the realification identity
+
+Complexify the real `2n`-dimensional representation. The invertible complex
+change of basis
 
 ```text
-Integral exp(chibar K chi) = det_C(K)
+S = [[I, iI],
+     [I,-iI]]
 ```
 
-to the first power. Therefore the count-once/count-twice binary is a
-determinant-power binary:
+intertwines `R(K)` with the block diagonal matrix
 
-| Reading | Kernel object | Determinant power | Slot interpretation |
-|---|---|---|---|
-| Holomorphic/orbit | `K` complex-linear | `det_C(K)` | one complex/K-orbit slot |
-| Realified/sector-tied | `R(K)` real-linear | `|det_C(K)|^2` | two real sector slots |
+```text
+diag(K,conjugate(K)).
+```
 
-The same identity is the abstract reason the C3 first-order theorem localizes
-count-twice to `c = conj(b)`: imposing the K-real/tied section turns the
-holomorphic independent variables into a conjugate pair and supplies the
-mixed `b*bbar` term. With `c` independent the determinant is holomorphic; on
-the tied section it is squared-modulus/count-twice data.
+Determinant is invariant under similarity, so
 
-## What Moves
+```text
+det_R R(K)
+  = det_C K det_C(conjugate(K))
+  = det_C K conjugate(det_C K).
+```
 
-This block strengthens the AC(i) route map:
+The result is real and nonnegative. No invertibility assumption is needed;
+the identity is polynomial and includes singular matrices.
 
-1. The remaining occupancy atom is not an unexplained phrase. It is exactly
-   the choice between a complex determinant counted once and its realified
-   determinant counted twice.
-2. The determinant-power split is source-side algebra, independent of fitted
-   lepton values or owner governance.
-3. The first-order staggered determinant theorem and the current-main
-   no-supply packets are reconciled: the first-order theorem supplies the
-   holomorphic branch as valid route material; the no-go boundary remains
-   correct because a physical theorem must still select that branch as the
-   matter action's readout.
+## Berezin determinant power
 
-## What Does Not Move
+Expand the Grassmann exponential. Terms beyond degree `2n` vanish. The top
+degree coefficient is the alternating sum over permutations of the matrix
+entries, which is `det_C(K)`. The displayed integration ordering extracts that
+coefficient with positive sign. The companion runner performs this exterior
+algebra calculation directly for a generic `2 x 2` kernel.
 
-- `AC_phi_lambda` is not retired.
-- `AC_phi_lambda(i)` is not retired.
-- The orbit/holomorphic horn is not selected.
-- The sector/K-real horn is not selected.
-- `r = 1/2` is not derived, predicted, or preferred.
-- The orbit-occupancy premise candidate is not adopted.
-- No physical generation Yukawa coupling form is derived.
-- No K/CPT-site-basis physical predicate is derived.
-- No registry, primitive, axiom, audit status, or publication status is edited.
-- `AC_phi_lambda(ii)` / R-eta and theta are untouched.
+## Exact checks
 
-## Relation To Existing Blocks
+The runner verifies:
 
-- [`ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md`](ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md)
-  reclassifies the value face and names the measure-side realization binary as
-  the survivor. This note supplies exact determinant-power support for that
-  survivor.
-- [`KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md`](KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md)
-  computes the staggered surface and localizes the count-twice term to
-  `c = conj(b)`. This note abstracts the same fork as
-  `det_C` versus `det_R(realification)`.
-- [`ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`](ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md)
-  remains valid: axioms and approved primitives do not select the physical
-  matter-action statistics horn.
-- [`ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`](ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md)
-  remains valid: Record formation/additivity does not identify the occupancy
-  dictionary or formation rule.
-- [`CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md`](CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md)
-  and [`GENERATION_WEIGHT_DIAL_STRUCTURE_2026-06-05.md`](GENERATION_WEIGHT_DIAL_STRUCTURE_2026-06-05.md)
-  already identify the value-facing fork as `det_C`/block-count versus
-  `det_R`/dimension. This note makes the determinant-power identity explicit.
+- the generic symbolic `2 x 2` realification identity;
+- scalar, diagonal, singular, and exact `3 x 3` instances;
+- first-power versus second-power scaling;
+- the generic `2 x 2` Berezin Gaussian coefficient;
+- the phase sensitivity of `det_C(K)` and phase blindness of
+  `det_R R(K)`;
+- source guards that keep the physical AC(i) selector and `r` outside this
+  theorem.
 
-## Remaining Live Routes
+## Charged-lepton scope boundary
 
-1. **Physical horn-selection theorem.** Derive that the actual matter action
-   implements the holomorphic/K-orbit readout or the realified/K-real readout.
-2. **Physical coupling theorem.** Derive the relevant generation coupling
-   channel rather than supplying a probe kernel.
-3. **K/CPT-site-basis bridge.** Derive the physical antiunitary predicate whose
-   tied section is being read.
-4. **Durability or governance route.** Adopt a narrow owner-ratified premise if
-   derivation is not required.
-5. **R-eta route.** Separately derive the density-read-as-angle identification.
+This theorem supplies the determinant-power fork used to state AC(i)
+precisely. It does not identify the physical charged-lepton matter carrier
+with the complex Gaussian or its realification. It does not select a
+K/CPT-orbit occupancy grain, establish a path-integral measure, choose a
+physical action, register or predict `r`, force `r=1/2`, derive `delta`, or
+supply the R-eta readout license.
+
+The two mathematical determinant constructions are both present in the
+theorem. A separate physical carrier theorem or an explicitly governed premise
+is required before either construction can be used as the charged-lepton
+occupancy rule.
 
 ## Verification
 
 Run:
 
 ```bash
-PYTHONPATH=scripts python3 scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py
+python3 scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py
 ```
 
-Expected close: `FAIL=0`.
-
-**Independent audit required.** This note asserts no effective-status change.
+Expected result: `PASS=16`, `FAIL=0`.

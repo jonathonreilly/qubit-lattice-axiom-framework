@@ -349,9 +349,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_failed",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audited_failed",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1018,9 +1018,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_conditional",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audited_conditional",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",

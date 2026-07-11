@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 655,
-    "high": 336,
+    "high": 335,
     "leaf": 1149,
     "medium": 756
   },
@@ -19772,28 +19772,6 @@
       "ready": true,
       "runner_path": "scripts/matter_inertial_closure.py",
       "transitive_descendants": 59
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "ac_orbit_occupancy_statistical_grain_derivation_obligation",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 14,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.883,
-      "note_path": "docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 58
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -82454,6 +82432,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 602,
-  "total_pending": 2896
+  "ready_count": 601,
+  "total_pending": 2895
 }

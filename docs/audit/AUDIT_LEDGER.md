@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 353 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 4 |
-| unaudited | 2828 |
+| unaudited | 2827 |
 | audit_in_progress | 27 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
-| ~~audited_renaming~~ | 16 |
+| ~~audited_renaming~~ | 17 |
 | ~~audited_conditional~~ | 35 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 18 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 6 |
-| `audited_renaming` | 16 |
-| `unaudited` | 3178 |
+| `audited_renaming` | 17 |
+| `unaudited` | 3177 |
 
 | claim_type | count |
 |---|---:|
@@ -673,6 +673,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.6 | G | - |
+| `ac_orbit_occupancy_statistical_grain_derivation_obligation` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
@@ -705,6 +706,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The cited parent supplies the 6/2 split and 1:-3 traceless abelian ratio; the audited note only rescales that ratio and evaluates standard finite anomaly sums. The completion branch is an explicit algebraic witness whose displayed traces match the left-handed values with the stated opposite-chirality sign.
 - **rationale:** The load-bearing work is exact algebra over the single retained-grade decorated parent and standard T(F)=1/2 normalization. The runner source performs symbolic and rational arithmetic for the anomaly identities and witness, while the remaining PASS checks are source-firewall string checks rather than independent physics derivations. No external comparator, fitted normalization, or tuned scale is used. Because the chain is a class-A corollary of one upstream surface rather than a new first-principles computation, the conservative verdict is audited_decoration.
 - **decoration parent:** `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23`
+- **auditor confidence:** high
+
+### `ac_orbit_occupancy_statistical_grain_derivation_obligation`
+
+- **Note:** [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](../../docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** The note records, but does not discharge, the obligation to derive the physical charged-lepton determinant-counting grain.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00346-ac_orbit_occupancy_statistic`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** A closing theorem must derive the physical matter action and its measure, then distinguish the count-once det_C/holomorphic realization from the count-twice |det_C|^2/realified realization.  _(class `E`)_
+- **chain closes:** False — The source specifies the theorem required for closure but supplies neither the physical matter action and measure nor an argument selecting one determinant realization.
+- **rationale:** The source honestly defines an open derivation obligation and expressly selects neither counting horn. It contains no derivation from the framework premises, cited authority, or computational certificate. With no runner source available, the classification rests on the note text alone.
 - **auditor confidence:** high
 
 ### `ac_reta_hclass_hunit_readout_derivation_obligation`

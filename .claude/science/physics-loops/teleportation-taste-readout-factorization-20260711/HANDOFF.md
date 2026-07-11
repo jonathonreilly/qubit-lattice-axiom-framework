@@ -6,4 +6,6 @@ The full runner presently reaches the downstream boundary guard and exits nonzer
 
 Review-loop disposition: PASS. The validation pipeline and strict lint completed without errors, and its generated audit surfaces were restored to `origin/main`. A separate exhaustive enumeration reproduced every block sign and count without importing the runner.
 
-Exact next action: commit the review-clean block, push its science-fix branch, and open the review PR for independent re-audit after landing.
+Delivery: [PR #5194](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5194) is open against `main`. Its audit-pipeline check was pending at initial verification.
+
+Exact next action: let PR #5194 complete CI and receive independent post-landing re-audit; do not broaden the claim to physical apparatus closure.

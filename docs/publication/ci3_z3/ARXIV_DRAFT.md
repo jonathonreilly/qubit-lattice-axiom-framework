@@ -818,17 +818,17 @@ Figure A2 summarizes the current Yukawa/top transport lane together with its
 explicit systematic budget. Figure A3 records the older bounded CKM route
 history separately from the live promoted algebraic CKM package.
 
-### 6.3 The remaining charged-lepton bridge package
+### 6.3 The charged-lepton bridge package
 
-The only remaining open flagship problem is the charged-lepton Koide bridge
-package. The current executable support stack already isolates the Koide point
-by the Frobenius-isotype / AM-GM route and isolates the ambient Brannen-phase
-value `η = 2/9` by the ABSS fixed-point / topological-robustness route. What
-remains open are the two physical bridges: why the physical charged-lepton
-packet must extremize the block-total Frobenius functional, and why the
-physical selected-line Brannen phase equals the ambient APS invariant. The
-selected-line witness `m_* / (w/v)` remains downstream of the second bridge,
-and the overall lepton scale `v_0` remains outside the package.
+The charged-lepton Koide package contains exact algebra on its registered-mass
+surface, while two physical premise atoms remain owner-governed. AC(i) is the
+matter-action occupancy grain that selects between sector-tied and
+orbit/holomorphic determinant counting. AC(ii) is the R-eta h-class/h-unit
+license identifying the fixed-locus density with the physical folded phase.
+The realized-state interface permits the sector weight `r` to be registered;
+it does not force `r=1/2`. Consequently the machine Tier-A count of zero is not
+a theorem that these two physical roles derive from the axioms. The overall
+lepton scale `v_0` remains outside this package.
 
 The cosmology family is now cleaner than before and no longer needs to be
 treated as several unrelated blockers. The public package now carries a

@@ -24,9 +24,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2844 |
-| audit_in_progress | 10 |
-| meta | 349 |
-| ~~audited_numerical_match~~ | 6 |
+| audit_in_progress | 11 |
+| meta | 350 |
+| ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
 | ~~audited_conditional~~ | 38 |
 | ~~audited_failed~~ | 2 |
@@ -43,20 +43,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 14 |
+| `audit_in_progress` | 15 |
 | `audited_clean` | 434 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 24 |
-| `audited_numerical_match` | 6 |
+| `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3193 |
+| `unaudited` | 3194 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2044 |
 | `decoration` | 25 |
-| `meta` | 356 |
+| `meta` | 357 |
 | `no_go` | 462 |
 | `open_gate` | 195 |
 | `positive_theorem` | 663 |
@@ -65,8 +65,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 755 |
 | `high` | 395 |
-| `medium` | 947 |
-| `leaf` | 1648 |
+| `medium` | 946 |
+| `leaf` | 1650 |
 
 - **Retained pending chain closure:** 9
 - **Citation cycles detected:** 10
@@ -85,7 +85,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1960 | 223.44 | `unaudited` | meta |
-| 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1600 | 64.64 | `audited_clean` | **retained** |
+| 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1601 | 64.65 | `audited_clean` | **retained** |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1226 | 63.26 | `unaudited` | unaudited |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 61.64 | `unaudited` | unaudited |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1046 | 61.53 | `unaudited` | unaudited |
@@ -96,7 +96,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1311 | 39.86 | `unaudited` | unaudited |
 | 11 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 424 | 39.73 | `unaudited` | unaudited |
 | 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1050 | 39.04 | `unaudited` | unaudited |
-| 13 | `native_gauge_closure_note` | positive_theorem | critical | 1556 | 37.10 | `audited_clean` | **retained** |
+| 13 | `native_gauge_closure_note` | positive_theorem | critical | 1557 | 37.10 | `audited_clean` | **retained** |
 | 14 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 613 | 36.76 | `unaudited` | unaudited |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1056 | 36.55 | `unaudited` | unaudited |
 | 16 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
@@ -125,6 +125,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-current | B | - |
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.6 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
+| `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
@@ -652,7 +653,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
-| `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -7446,19 +7446,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The seed-1 control runner is the load-bearing H=0.25 point and reproduces the S=0.004 row with dM_early=+0.004411, dM_late=+0.006255, delta_hist=-0.001843, and R_hist=-29.47%, hardened by the S=0 null and S=0.002/0.004/0.008 ladder.  _(class `C`)_
 - **chain closes:** True — The one-hop dependency is retained_bounded for the same Fam1 seed-1 H=0.25 control ladder, and the primary no-argument wrapper pins exactly family=Fam1, seed=1, H=0.25 before delegating to the included computation helpers. The cached runner output matches the source row and summary; independent arithmetic from the printed values confirms the negative signs, R_hist scale, and approximately 5.2% scaled-spread.
 - **rationale:** Clean within the stated bounded scope. The runner is not a constant-printer: the wrapper pins the intended Fam1/seed1/H=0.25 arguments, the helper constructs source histories and wave/beam responses, and the cache completes under the declared 1800 s budget. The note also correctly demotes the H=0.5/H=0.35 comparison rows and broader cross-seed/portability discussion to non-load-bearing context.
-- **auditor confidence:** high
-
-### `wave_direct_dm_h025_seed0_crossfamily_note`
-
-- **Note:** [`WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Frozen Fam1/Fam2 seed-0, H=0.25, strength-0.004 direct-dM comparison with per-family null, sign, spread, and selected-row ordering checks; no portability or stable amplitude law.
-- **audit_status:** ~~audited_numerical_match~~
-- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-wave_direct_dm_h025_seed0_crossfamily_note-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note compresses two preselected Fam1/Fam2 seed-0 H=0.25 control rows and concludes that both share negative sign and weak-field control while Fam2 is deeper than Fam1 at strength 0.004.  _(class `G`)_
-- **chain closes:** True — The bounded two-row compression follows from the cited retained-grade control notes and the frozen logs parsed by the runner. The packet does not derive the magnitudes, H/seed selection, or a family-wide law, but those are explicitly outside the audited scope.
-- **rationale:** Issue: the runner verifies hard-coded expected values against frozen logs for two preselected H=0.25, seed-0 rows, so the load-bearing step is numerical-match compression rather than first-principles derivation. Why this blocks: the packet does not derive the row magnitudes, the H/seed selection, or a portability law from the framework baseline. Repair target: provide a class-C derivation selecting the surface and computing the direct-dM magnitudes/order, or keep the claim at the current two-row numerical scope. Claim boundary until fixed: the Fam1/Fam2 seed-0 sign, weak-field control, and Fam2-deeper-than-Fam1 ordering are supported only on the frozen tuned surface.
 - **auditor confidence:** high
 
 ### `wave_direct_dm_h025_seed1_crossfamily_note`

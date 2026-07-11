@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 674,
     "high": 332,
-    "leaf": 1131,
+    "leaf": 1132,
     "medium": 761
   },
   "cycle_break_target_count": 49,
@@ -1355,15 +1355,15 @@
       "criticality_rank": 3,
       "cross_confirmation_status": null,
       "deps": [],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 10.861,
+      "load_bearing_score": 11.362,
       "note_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
-      "transitive_descendants": 1314
+      "transitive_descendants": 1315
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1552,12 +1552,12 @@
       "helper_runner_paths": [
         "scripts/frontier_su3_holonomy_exponential_bridge.py"
       ],
-      "load_bearing_score": 18.61,
+      "load_bearing_score": 18.611,
       "note_path": "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_g_bare_rigidity_theorem.py",
-      "transitive_descendants": 1104
+      "transitive_descendants": 1105
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2052,12 +2052,12 @@
       "direct_in_degree": 8,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.472,
+      "load_bearing_score": 13.474,
       "note_path": "docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py",
-      "transitive_descendants": 709
+      "transitive_descendants": 710
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -3468,22 +3468,22 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "persistent_record_as_kraus_operator_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "For arbitrary finite d and R, a given linear isometry W:H_sys\u2192H_sys\u2297H_record with an orthonormal record-block decomposition yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states; no persistent-record construction of W is audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [],
       "direct_in_degree": 6,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 11.811,
       "note_path": "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/persistent_record_kraus_instrument_certificate.py",
       "transitive_descendants": 448
@@ -8574,6 +8574,31 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "g_bare_rigidity_theorem_note",
+        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.455,
+      "note_path": "docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py",
+      "transitive_descendants": 701
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gauge_matter_closure_gates_2026-04-12",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -8594,31 +8619,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_gauge_matter_closure_gates_source_packet.py",
-      "transitive_descendants": 700
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_rigidity_theorem_note",
-        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.953,
-      "note_path": "docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py",
       "transitive_descendants": 700
     },
     {
@@ -30963,28 +30963,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gmn_vev_annihilator_l4_support_note_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_hypercharge_identification.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "universal_gr_invariant_frame_obstruction_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -31743,6 +31721,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+      "transitive_descendants": 7
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "wave_direct_dm_h025_seed0_crossfamily_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wave_direct_dm_h025_fam1_seed0_control_note",
+        "wave_direct_dm_h025_fam2_seed0_control_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.0,
+      "note_path": "docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py",
       "transitive_descendants": 7
     },
     {
@@ -54872,6 +54875,28 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_generation_triplet_dimension_parity_no_faithful_z.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gmn_vev_annihilator_l4_support_note_2026-07-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_hypercharge_identification.py",
       "transitive_descendants": 0
     },
     {
@@ -82516,6 +82541,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 600,
-  "total_pending": 2898
+  "ready_count": 601,
+  "total_pending": 2899
 }

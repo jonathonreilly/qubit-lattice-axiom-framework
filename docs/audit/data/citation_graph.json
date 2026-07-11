@@ -17573,6 +17573,10 @@
       "to": "native_gauge_closure_note"
     },
     {
+      "from": "g_bare_same_slot_beta6_convention_note_2026-07-11",
+      "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
+    },
+    {
       "from": "g_bare_structural_normalization_theorem_note_2026-04-18",
       "to": "g_bare_derivation_note"
     },
@@ -44917,22 +44921,6 @@
       "to": "wave_direct_dm_h025_fam2_seed0_control_note"
     },
     {
-      "from": "wave_direct_dm_h025_seed0_crossfamily_note",
-      "to": "wave_direct_dm_h025_fam2_two_point_synthesis_note"
-    },
-    {
-      "from": "wave_direct_dm_h025_seed0_crossfamily_note",
-      "to": "wave_direct_dm_h025_fam2_seed1_control_note"
-    },
-    {
-      "from": "wave_direct_dm_h025_seed0_crossfamily_note",
-      "to": "wave_direct_dm_h025_high_band_boundary_note"
-    },
-    {
-      "from": "wave_direct_dm_h025_seed0_crossfamily_note",
-      "to": "wave_direct_dm_h025_fam2_seed0_boundary_note"
-    },
-    {
       "from": "wave_direct_dm_h025_seed1_crossfamily_note",
       "to": "wave_direct_dm_h025_fam1_seed1_control_note"
     },
@@ -57830,10 +57818,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gmn_vev_annihilator_l4_support_note_2026-07-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
     },
     {
@@ -57843,6 +57827,10 @@
     {
       "from": "repo.front_door_status",
       "to": "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -79708,10 +79696,10 @@
         "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "663fc359cfcad9f4ed81d036a55744eb90be9d5a8f73b1ce5cb3a1362590b5b6",
+      "note_hash": "a1042ce35bad3c192306cab45f9075f6f73dd50c0db13128fbf66891e4402d14",
       "path": "docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md",
       "runner_path": "scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py",
-      "title": "G Bare Parent Finite-Link/Wilson Beta=6 Bridge"
+      "title": "G Bare Finite-Link/Wilson Split-Redundancy and Pin-Equivalence Theorem"
     },
     "g_bare_parent_promotion_gate_map_note_2026-06-06": {
       "claim_id": "g_bare_parent_promotion_gate_map_note_2026-06-06",
@@ -79775,6 +79763,20 @@
       "path": "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_g_bare_rigidity_theorem.py",
       "title": "Gauge-Normalization Rigidity Theorem"
+    },
+    "g_bare_same_slot_beta6_convention_note_2026-07-11": {
+      "claim_id": "g_bare_same_slot_beta6_convention_note_2026-07-11",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e432051b91b42959d827d6216858bc2192830cbf34f07b000bca8c88745b7c66",
+      "path": "docs/G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md",
+      "runner_path": null,
+      "title": "G Bare Same-Slot and Beta=6 Convention"
     },
     "g_bare_structural_normalization_theorem_note_2026-04-18": {
       "claim_id": "g_bare_structural_normalization_theorem_note_2026-04-18",
@@ -112141,13 +112143,13 @@
         "fermion_parity_z2_grading_theorem_note_2026-05-02",
         "s3_mass_matrix_no_go_note",
         "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
-        "gmn_vev_annihilator_l4_support_note_2026-07-02",
         "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
         "abj_epsilon_index_square_block_no_go_note_2026-05-30",
-        "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18"
+        "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+        "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "21b6731701ab28b50b11085b05a5719426af3a92c8dc6f4d0c8545d31ca442e6",
+      "note_hash": "419f7b33c31961ea8016af8b05e973bc69852ad6ebf17a290bfa927cc41719db",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -123944,17 +123946,13 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "wave_direct_dm_h025_fam1_seed0_control_note",
-        "wave_direct_dm_h025_fam2_seed0_control_note",
-        "wave_direct_dm_h025_fam2_two_point_synthesis_note",
-        "wave_direct_dm_h025_fam2_seed1_control_note",
-        "wave_direct_dm_h025_high_band_boundary_note",
-        "wave_direct_dm_h025_fam2_seed0_boundary_note"
+        "wave_direct_dm_h025_fam2_seed0_control_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b711d28212d65d5e3a6f90204082b73ac9ce488f36e50e1101fadb5acdad0961",
+      "note_hash": "b3c5e23ae8306b70bc90615d06765b19f8d0cc6a703dadabf686b7ecd459e5f5",
       "path": "docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md",
       "runner_path": "scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py",
-      "title": "Wave Direct-dM H=0.25 Seed0 Cross-Family Compression Note"
+      "title": "Wave Direct-dM H=0.25 Seed0 Cross-Family Bounded Synthesis Note"
     },
     "wave_direct_dm_h025_seed1_crossfamily_note": {
       "claim_id": "wave_direct_dm_h025_seed1_crossfamily_note",
@@ -129127,7 +129125,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 1632,
       "decoration": 3,
-      "meta": 332,
+      "meta": 333,
       "no_go": 336,
       "none": 1205,
       "open_gate": 132,
@@ -129136,15 +129134,15 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 2032,
       "decoration": 3,
-      "meta": 332,
+      "meta": 333,
       "no_go": 439,
       "none": 248,
       "open_gate": 206,
       "positive_theorem": 657
     },
-    "edge_count": 14563,
-    "leaf_count": 1322,
-    "node_count": 3917,
+    "edge_count": 14560,
+    "leaf_count": 1324,
+    "node_count": 3918,
     "root_count": 1112,
     "runners_with_path": 3539
   }

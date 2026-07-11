@@ -6,8 +6,8 @@ docs/TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-0
 (orientation-only since 2026-06-10; the note states the lemma on the supplied
 circulant class stipulated in-note; the determinant-character lemma moved to
 THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md
-with its own runner). It intentionally does not claim that the Tier-A
-registry has changed.
+with its own runner). It intentionally does not claim any premise-policy
+change.
 """
 from __future__ import annotations
 

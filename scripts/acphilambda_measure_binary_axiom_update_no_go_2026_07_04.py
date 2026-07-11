@@ -87,8 +87,8 @@ def main() -> int:
 
     section("B. historical decision boundary and current open gate")
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
-    check("Tier-A has no live admitted inputs", tier["genuine_admitted_input_count"] == 0)
-    check("Tier-A live target map is empty", tier["derivation_targets"] == {})
+    check("decision history has no live premise inputs", tier["genuine_admitted_input_count"] == 0)
+    check("decision history live target map is empty", tier["derivation_targets"] == {})
     check(
         "AC minimum decomposition keeps occupancy selection",
         "reading_occupancy_selection" in ac["minimum_decomposition"],

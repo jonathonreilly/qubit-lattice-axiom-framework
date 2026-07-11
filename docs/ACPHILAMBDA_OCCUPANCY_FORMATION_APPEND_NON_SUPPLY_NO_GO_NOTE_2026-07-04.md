@@ -8,7 +8,7 @@ the historical AC_phi_lambda sub-admission (i), the measure-side doublet
 occupancy realization binary, from the July 4 Record formation append,
 Admissibility variation, Record permanence, or finite Record additivity. This
 note does not derive, refute, re-grade, or remove the historical AC_phi_lambda
-decomposition, and it does not edit any Tier-A registry, axiom, primitive,
+decomposition, and it does not create or edit any premise registry, axiom, primitive,
 audit verdict, or publication-status surface.
 **Current-main posture (2026-07-11):** historical admissions have zero premise
 weight. The AC occupancy grain is an exact open derivation obligation. The

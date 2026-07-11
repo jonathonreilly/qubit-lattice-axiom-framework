@@ -93,7 +93,7 @@ def main() -> int:
         FIXED_LOCUS,
     ]
 
-    section("A. source presence and Tier-A boundary")
+    section("A. source presence and current premise boundary")
     for path in paths:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
@@ -111,7 +111,7 @@ def main() -> int:
 
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     decomp = ac["minimum_decomposition"]
-    check("Tier-A has no live admitted inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
+    check("decision history has no live premise inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
     check(
         "AC minimum decomposition keeps R-eta",
         "delta_readout_identification_R_eta" in decomp,
@@ -172,7 +172,7 @@ def main() -> int:
         HUNIT.name,
     ]:
         check(f"context handle is backticked in note: {phrase}", f"`{phrase}`" in note)
-    for phrase in ["2/9", "forced transverse weights", "physical single-summand readout"]:
+    for phrase in ["2/9", "conjugate complex weights", "physical single-summand readout"]:
         check(f"fixed-locus source contains {phrase}", phrase in fixed_flat)
     for phrase in ["h-class:", "h-unit:", "physical carrier realization", "Phi(c)=c S_sum", "h-unit is not imported"]:
         check(f"note reproduces context boundary: {phrase}", phrase in note_flat)

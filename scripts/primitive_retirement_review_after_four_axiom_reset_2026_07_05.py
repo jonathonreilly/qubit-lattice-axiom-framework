@@ -96,8 +96,8 @@ def main() -> int:
     check("scale primitive current path is stable", nodes["scale_reference_primitive"]["current_path"] == "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md")
     check("kinetic primitive current path is stable", nodes["kinetic_isotropy_primitive"]["current_path"] == "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md")
     check("realized-state primitive current path is stable", nodes["realized_state_primitive"]["current_path"] == "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md")
-    check("Tier-A registry now has zero active admitted derivation targets", tier_a.get("genuine_admitted_input_count") == 0, str(tier_a.get("genuine_admitted_input_count")))
-    check("canonical Tier-A IDs are empty on current main", tier_a.get("canonical_ids") == [], str(tier_a.get("canonical_ids")))
+    check("decision history has zero active premise targets", tier_a.get("genuine_admitted_input_count") == 0, str(tier_a.get("genuine_admitted_input_count")))
+    check("decision history canonical live IDs are empty", tier_a.get("canonical_ids") == [], str(tier_a.get("canonical_ids")))
     check("live derivation targets are empty on current main", tier_a.get("derivation_targets", {}) == {}, str(tier_a.get("derivation_targets", {})))
     retired_targets = tier_a.get("retired_derivation_targets", {})
     check("theta retirement is recorded separately", "strong_cp_theta_zero_note" in retired_targets)
@@ -180,7 +180,7 @@ def main() -> int:
     print()
 
     print("Hygiene diagnostic checks")
-    stale_count_check = "Tier-A registry genuine count remains two" in scale_runner
+    stale_count_check = "historical registry genuine count remains two" in scale_runner
     current_count_check = "note rejects an admission registry" in scale_runner
     check(
         "scale boundary runner rejects an admission registry",

@@ -134,7 +134,7 @@ def main() -> int:
     )
     check(
         "fixed-locus note excludes the physical readout from its scope",
-        "does **not** supply the physical single-summand readout" in fixed_locus,
+        "No physical single-summand readout is derived." in fixed_locus,
     )
     check(
         "planck boundary note records the native dimensionless phase unit",

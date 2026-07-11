@@ -78,7 +78,7 @@ def main() -> int:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
-    check("Tier-A has no live admitted inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
+    check("decision history has no live premise inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
     check(
         "AC minimum decomposition still includes R-eta",
         "delta_readout_identification_R_eta" in ac["minimum_decomposition"],

@@ -1,12 +1,12 @@
 {
   "algebra": {
+    "conditional_unit_branch": "lambda=1",
     "fisher_scaled": "lambda^2",
     "source_side_result": "y_33=1/sqrt(6)",
-    "tier_a_selected": "lambda=1",
     "unit_vector": "(1,1,1,1,1,1)/sqrt(6)"
   },
   "documents": {
-    "source_boundary": "Tier-A source-measure surface only",
+    "source_boundary": "open source-measure condition only",
     "status_authority": "independent audit lane only"
   },
   "ledger": {
@@ -72,19 +72,19 @@
     }
   },
   "summary": {
-    "closed_on_tier_a_surface": [
+    "conditional_calculation_result": [
       "lambda=1",
       "y_33=1/sqrt(6)"
     ],
-    "fail": 7,
+    "fail": 0,
     "not_closed_unbounded": [
       "P-cal/P1 derivation or native RN/Fisher source-measure acceptance",
       "strict same-source top/W pole-response evidence",
       "physical-scale g_2 and matching/running"
     ],
-    "pass": 66,
-    "source_boundary": "Tier-A source-measure surface only",
-    "status_authority": "independent audit lane only",
-    "tier_a_input": "P-cal/source-measure primitive normalized RN/Fisher coordinate"
+    "open_condition": "P-cal/source-measure normalized RN/Fisher coordinate",
+    "pass": 73,
+    "source_boundary": "open source-measure condition only",
+    "status_authority": "independent audit lane only"
   }
 }

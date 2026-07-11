@@ -66,16 +66,16 @@ def main() -> int:
     note = read(NOTE)
     policy = read(POLICY)
     registry = load_json(REGISTRY)
-    tier_a = load_json(DECISION_HISTORY)
+    history = load_json(DECISION_HISTORY)
     registry_node = (registry.get("nodes") or {}).get(CLAIM_ID, {})
-    derivation_targets = tier_a.get("derivation_targets") or {}
-    reclassified_primitives = tier_a.get("reclassified_primitives") or {}
-    tier_a_scale = reclassified_primitives.get(CLAIM_ID, {})
+    derivation_targets = history.get("derivation_targets") or {}
+    reclassified_primitives = history.get("reclassified_primitives") or {}
+    scale_history = reclassified_primitives.get(CLAIM_ID, {})
 
     check("source note exists", NOTE.exists(), str(NOTE.relative_to(ROOT)))
     check("policy exists", POLICY.exists(), str(POLICY.relative_to(ROOT)))
     check("registry exists", REGISTRY.exists(), str(REGISTRY.relative_to(ROOT)))
-    check("Tier-A registry exists", DECISION_HISTORY.exists(), str(DECISION_HISTORY.relative_to(ROOT)))
+    check("decision-history file exists", DECISION_HISTORY.exists(), str(DECISION_HISTORY.relative_to(ROOT)))
     check("source type is meta", "**Type:** meta" in note)
     check("source declares framework primitive status", "**Status:** framework primitive declaration" in note)
     check("registry canonical ids include scale primitive", CLAIM_ID in registry.get("canonical_ids", []))
@@ -119,14 +119,14 @@ def main() -> int:
 
     check(
         "decision history preserves zero final admission count",
-        tier_a.get("genuine_admitted_input_count") == 0,
-        str(tier_a.get("genuine_admitted_input_count")),
+        history.get("genuine_admitted_input_count") == 0,
+        str(history.get("genuine_admitted_input_count")),
     )
     check("scale primitive was never a historical derivation target", CLAIM_ID not in derivation_targets)
-    check("decision history records scale reclassification provenance", bool(tier_a_scale))
+    check("decision history records scale reclassification provenance", bool(scale_history))
     check(
         "historical reclassification says not status-bounding",
-        "not a status-bounding dependency" in tier_a_scale.get("statement", ""),
+        "not a status-bounding dependency" in scale_history.get("statement", ""),
     )
 
     check("note declares exactly one dimensionful reference", "exactly one dimensionful reference" in note)

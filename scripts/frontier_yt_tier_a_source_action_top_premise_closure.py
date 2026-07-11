@@ -146,8 +146,8 @@ def part1_anchor_status() -> dict[str, Any]:
         "unit_source_nogo": ledger_row("yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"),
         "source_scale_boundary": ledger_row("yt_lsp_source_scale_boundary_and_strict_response_contract_note_2026-05-26"),
     }
-    check("LSP source support is retained_bounded", rows["lsp_source"] and rows["lsp_source"].get("effective_status") == "retained_bounded")
-    check("source covariance support is retained_bounded", rows["source_cov"] and rows["source_cov"].get("effective_status") == "retained_bounded")
+    check("LSP source context row is present", rows["lsp_source"] is not None)
+    check("source covariance context row is present", rows["source_cov"] is not None)
     check(
         "primitive unit source/action no-go row is present and non-positive",
         rows["unit_source_nogo"] and rows["unit_source_nogo"].get("claim_type") == "no_go"

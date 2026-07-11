@@ -178,9 +178,9 @@ def main() -> int:
     print(f"files: {all_files}")
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print(
-        "classification claim: AC_phi_lambda(iii)'s C3-grade species "
-        "identification belongs beside the past hypothesis as a universal-floor "
-        "candidate, subject to owner ruling."
+        "historical classification proposal: AC_phi_lambda(iii)'s C3-grade "
+        "species identification was compared with the past hypothesis; this "
+        "proposal supplies no premise or status movement."
     )
     print(
         "counterargument: every theory needing an input does not make it free; "
@@ -188,8 +188,8 @@ def main() -> int:
         "discriminator."
     )
     print(
-        "uncertainties: owner registry ruling, audit-lane handling, and any "
-        "above-C3 or CKM/PMNS content remain outside this runner."
+        "uncertainties: a retained species-identification theorem, audit-lane "
+        "handling, and any above-C3 or CKM/PMNS content remain outside this runner."
     )
     return 0 if FAIL == 0 and total_checks == 8 else 1
 

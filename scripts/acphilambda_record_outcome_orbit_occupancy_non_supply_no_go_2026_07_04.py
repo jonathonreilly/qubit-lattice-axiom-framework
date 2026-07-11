@@ -139,7 +139,7 @@ def main() -> int:
     check("N3 records required phrase scan", "The proof text was scanned for" in note)
     check("N4 uses no prior negative witness", "| none | n/a | raw complex-vs-realified" in note)
     check("N5 names tested resolutions", "per scalar block, per finite matrix block" in note)
-    check("N6 preserves action, coordinate, and governance paths", "action-native CAR/Berezin theorem" in note and "registered-mass coordinate package" in note and "owner-governed premise registry" in note)
+    check("N6 preserves action, coordinate, and open-obligation paths", "action-native CAR/Berezin theorem" in note and "registered-mass coordinate package" in note and "current zero-weight occupancy obligation" in note)
     check("N7 contains normalization and complex-field steelmen", "normalization pair" in note and "Qubit axiom uses `M_2(C)`" in note_flat)
     check("N8 distinguishes phase from determinant power", "does not choose determinant modulus power" in note)
     check("discipline gate records PASS", "**Gate result: PASS.**" in note)

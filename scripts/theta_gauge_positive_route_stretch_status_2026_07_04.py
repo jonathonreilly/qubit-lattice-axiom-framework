@@ -103,7 +103,7 @@ def main() -> int:
     check("new route status note has Type open_gate", "**Type:** open_gate" in note)
     check("new route status note has Claim type open_gate", "**Claim type:** open_gate" in note)
 
-    section("B. Tier-A target and axiom boundary")
+    section("B. historical target and current axiom boundary")
     tier = json.loads(read(DECISION_HISTORY))
     theta = tier["retired_derivation_targets"]["strong_cp_theta_zero_note"]
     check("decision history preserves zero final admission count", tier["genuine_admitted_input_count"] == 0, tier["genuine_admitted_input_count"])

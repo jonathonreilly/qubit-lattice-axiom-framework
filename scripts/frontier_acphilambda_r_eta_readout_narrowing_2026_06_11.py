@@ -4,9 +4,8 @@
 Class-A finite-dimensional verifier (3x3 exact sympy; tiny memory).
 
 Target: separate, inside the R-eta "density-read-as-angle" readout
-identification (Tier-A AC_phi_lambda sub-admission (ii)), the parts that are
-FORCED by the Record registrability machinery + exact circulant algebra from
-the single ADMITTED identification atom that remains.
+identification open obligation, the parts forced by Record registrability and
+exact circulant algebra from the physical identification that remains open.
 
 Sections:
   S1  context: the AC_phi_lambda Hermitian circulant; K/CPT = delta -> -delta
@@ -298,8 +297,8 @@ def main() -> int:
     check("NOT addressed here: sub-admission (i) occupancy selection, "
           "sub-admission (iii) species bridge, the R1b anchor, the R2 global "
           "PL/ABSS bridge, the carrier gate realization", True)
-    check("no Tier-A registry edit, no downstream status set, no admission retired; "
-          "this is a source-side narrowing of WHAT sub-admission (ii) admits",
+    check("no premise registry edit, no downstream status set, no obligation closed; "
+          "this is a source-side narrowing of the R-eta condition",
           True)
     note_text = NOTE.read_text(encoding="utf-8") if NOTE.exists() else ""
     note_flat = " ".join(note_text.split())

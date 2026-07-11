@@ -49,13 +49,15 @@ theorem from the framework axioms.
    <e_i, u_dem> = 1/sqrt(6).
    ```
 
-2. **Signed-record/source-action support.**
-   The retained-grade bounded source-action packets supply finite RN/source-action
-   support, signed-record readout, and source covariance normalization
+2. **Signed-record/source-action context.**
+   The source-action packets propose finite RN/source-action support,
+   signed-record readout, and source covariance normalization at their current
+   audit-lane statuses
    ([`YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`](YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md),
    [`YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`](YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md),
    [`YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md`](YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md)).
-   These are support surfaces, not independent Y_T closure claims.
+   These are context surfaces, not retained dependencies or independent Y_T
+   closure claims. The runner recomputes the finite algebra used below.
 
 3. **Conditional source-measure calculation of lambda.**
    [`YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md`](YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md)

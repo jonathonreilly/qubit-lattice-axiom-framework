@@ -91,7 +91,7 @@ def main() -> int:
         SCALE,
     ]
 
-    section("A. source presence and Tier-A boundary")
+    section("A. source presence and current premise boundary")
     for path in paths:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
@@ -120,7 +120,7 @@ def main() -> int:
 
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     decomp = ac["minimum_decomposition"]
-    check("Tier-A has no live admitted inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
+    check("decision history has no live premise inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
     check("AC minimum decomposition keeps R-eta", "delta_readout_identification_R_eta" in decomp, decomp)
     check("AC minimum decomposition keeps occupancy separate", "reading_occupancy_selection" in decomp, decomp)
     check("AC statement names density-read-as-angle R-eta", "density-read-as-angle" in ac["statement"] and "R-eta" in ac["statement"])
@@ -192,8 +192,7 @@ def main() -> int:
     fixed_flat = flat(fixed).lower()
     check(
         "fixed-locus source excludes physical readout bridge",
-        ("physical readout" in fixed_flat or "physical single-summand" in fixed_flat)
-        and ("separate named open bridge" in fixed_flat or "does not touch that readout" in fixed_flat),
+        "no physical single-summand readout is derived" in fixed_flat,
     )
     check("Brannen source carries supplied dial", "(a, |b|, delta)" in brannen)
 

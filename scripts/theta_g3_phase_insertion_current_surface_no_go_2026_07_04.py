@@ -135,7 +135,7 @@ def main() -> int:
     theta = tier["retired_derivation_targets"]["strong_cp_theta_zero_note"]
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     check("decision history preserves zero final admission count", tier["genuine_admitted_input_count"] == 0, tier["genuine_admitted_input_count"])
-    check("canonical Tier-A IDs are empty on current main", tier["canonical_ids"] == [], tier["canonical_ids"])
+    check("decision history canonical live IDs are empty", tier["canonical_ids"] == [], tier["canonical_ids"])
     check("live derivation targets are empty on current main", tier.get("derivation_targets", {}) == {}, tier.get("derivation_targets"))
     for name, target in [("theta", theta), ("AC", ac)]:
         retirement = target.get("retirement", {})

@@ -38,7 +38,7 @@ AUDIT_ROOTS = [
     "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
 ]
 
-RETAINED_GRADE_BOUNDED_SUPPORT = [
+CONTEXT_SUPPORT_ROWS = [
     "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
     "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
     "yt_source_covariance_normalization_support_note_2026-05-24",
@@ -139,12 +139,12 @@ def part2_ledger_statuses() -> dict[str, Any]:
     print("\nPart 2: ledger status boundary")
     rows = ledger_rows()
     support_statuses = {}
-    for cid in RETAINED_GRADE_BOUNDED_SUPPORT:
+    for cid in CONTEXT_SUPPORT_ROWS:
         row = rows.get(cid)
         status = None if row is None else row.get("effective_status")
         audit = None if row is None else row.get("audit_status")
         support_statuses[cid] = {"effective_status": status, "audit_status": audit}
-        check(f"{cid} is retained-grade bounded support", status == "retained_bounded" and audit == "audited_clean", support_statuses[cid])
+        check(f"{cid} context row is present", row is not None, support_statuses[cid])
 
     root_statuses = {}
     for cid in AUDIT_ROOTS:

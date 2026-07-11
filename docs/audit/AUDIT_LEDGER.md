@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2844 |
+| unaudited | 2843 |
 | audit_in_progress | 11 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 15 |
 | `audited_clean` | 434 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3194 |
+| `unaudited` | 3193 |
 
 | claim_type | count |
 |---|---:|
@@ -596,6 +596,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `tick_admissibility_realization_bridge_clause_to_predicate_narrow_theorem_note_2026-07-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-current | A | - |
@@ -6301,6 +6302,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner directly evaluates the three layered DAG-derived configurations and reproduces the load-bearing 6/6 score surface, TOWARD forces, N-stability, Born linearity, forward-depth fraction, and state-family robustness. The small norm-row roundoff difference remains at machine precision and does not affect the bounded compatibility claim.
 - **rationale:** The source note is narrowly framed as a compatibility control, not a proof of truly directed DAG Hamiltonian transport. The current runner gives 6/6 on all three configurations, with TOWARD force, 14/14 N-stability, machine-clean norm/Born behavior, forward-depth fraction 0.1266, and 3/3 state families. Residual risk is limited to the symmetrized-adjacency scope boundary, which the note states explicitly.
 - **auditor confidence:** high
+
+### `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional single-site carrier result: given P-QBIT, the physical Cl(3) carrier is the two-dimensional Pauli module and is unitarily equivalent as a *-representation; without P-QBIT, finite-dimensional faithful Cl(3) modules admit every multiplicity k>=1.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T140442Z-413aaba4-00002-staggered_dirac_substep1_u4_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Under the declared bounded carrier premise (P-QBIT), the physical carrier has k(x)=1 and dim_C H_x=2; the retained Cl(3) split then identifies it with one faithful two-dimensional Pauli module.  _(class `A`)_
+- **chain closes:** False — The algebraic consequences of P-QBIT and the retained Cl(3) split close, including the polar-decomposition upgrade. The physical k=1 selection itself is explicitly declared in P-QBIT rather than derived from or registered as an accepted premise in the restricted packet.
+- **rationale:** The retained Cl(3) authority and standard semisimple representation theory support M1, C1, the invertible-equivalence statement, and the k>=2 counterexamples. The repaired *-module premise also makes the polar-decomposition proof of unitary equivalence sound. However, Q1 obtains physical irreducibility by assuming P-QBIT, whose text already declares the standard two-dimensional irreducible carrier; the runner guards that declaration and checks its consequences but does not derive or independently authorize it.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `staggered_fermion_card_2026-04-10`
 

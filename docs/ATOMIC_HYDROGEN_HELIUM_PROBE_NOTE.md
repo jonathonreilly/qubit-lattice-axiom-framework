@@ -118,10 +118,21 @@ The script demonstrates that:
 
 1. on this codebase, with `numpy + scipy` already in `requirements.txt`,
    standard QM with textbook inputs reproduces the hydrogen spectrum to
-   `~10^-4` relative error and the helium ground state to `~2%` (variational)
-   /  exact (within available basis), in physical eV units;
+   `~10^-4` relative error and the helium ground state to the computed
+   one-parameter variational benchmark (`~2%`, `-77.4887 eV` vs the external
+   comparator), in physical eV units;
 2. the harness is structurally ready to accept framework-derived inputs in
    place of textbook constants, if and when those become available.
+
+**2026-07-11 downstream hygiene.** The prior wording claimed the helium
+result "/ exact (within available basis)"; that phrase was unsupported (the
+helium runner evaluates only the textbook independent-electron and
+one-parameter variational formulas, with the experimental value as an
+external comparator) and is removed. This note's bounded helium claim is
+exactly the computed one-parameter variational benchmark above; downstream
+notes must not cite this note for any exact or basis-converged helium
+result. This dated line itself moves the note hash so the row re-enters the
+audit queue.
 
 The script does **not** claim that the framework derives any of:
 
@@ -205,3 +216,17 @@ python scripts/frontier_atomic_hydrogen_helium_probe.py
 Requires `numpy >= 1.24` and `scipy >= 1.10` (already in
 `requirements.txt`). Runs in a few seconds on a single core. No GPU, no MPI,
 no external data.
+
+## Repair Note
+
+**2026-07-11 helium-claim narrowing.** The audit of this row returned
+`audited_conditional` with, verbatim:
+
+> scope_too_broad: remove the unsupported helium '/ exact (within available
+> basis)' wording, restrict the bounded claim to the computed one-parameter
+> variational benchmark, and add a dated downstream-hygiene line to this
+> note's own boundary recording that narrowing so its hash drift re-enters
+> the audit queue.
+
+All three instructions are applied in the Bounded claims section above. No
+computational content changed; the runner and its outputs are untouched.

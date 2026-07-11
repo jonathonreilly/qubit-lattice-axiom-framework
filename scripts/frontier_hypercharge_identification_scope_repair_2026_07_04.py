@@ -1,59 +1,11 @@
 #!/usr/bin/env python3
-"""Hypercharge U(1)_Y identification from commutant + left-handed consistency.
+"""Verify the bounded name-free U(1) two-block algebra.
 
-Physics context (rewritten 2026-05-05 as a bounded chain claim)
-----------------------------------------------------------------
-The commutant of {SU(2)_weak, SWAP_{23}} in End(C^8) is gl(3) + gl(1).
-
-This runner verifies a name-free CHAIN claim, not an internal SM-Y derivation. The
-chain has three independently-cited links:
-
-  (L1)  STRUCTURAL RATIO. The unique traceless central block-scalar direction
-        in the commutant has eigenvalue ratio +1:(-3) on the (2,3) and (2,1)
-        sub-blocks of the LH-doublet sector. -- Source:
-        LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md
-
-  (L2)  REPRESENTATION CLASSES. Sym^2(C^2) carries the SU(3) fundamental
-        representation; Anti^2(C^2) carries the SU(3) trivial representation.
-        Particle naming is separated into a meta convention note and is not
-        part of the theorem checked here.
-        -- Source:
-        LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md
-
-  (L3)  ABSOLUTE NORMALIZATION (bounded bridge or admitted convention). Setting alpha = 1/3
-        in Y_alpha = alpha (P_sym - 3 P_anti) reproduces the SM convention
-        Y(L_L) = -1. This is *not* derived internally in this parent note:
-        it is supplied by the bounded 2026-05-25 normalization bridge if
-        independently retained, and otherwise remains an admitted convention.
-
-  (L4)  ELECTRIC-CHARGE READOUT. Q = T_3 + Y/2 is chained to the acyclic
-        GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md support carrier
-        rather than admitted here; PART 9 recomputes the vev-record
-        annihilator and keeps the chain unaudited until the independent audit
-        lane grades the cited row.
-
-This runner reports each numerical block with one of five labels:
-
-   [STRUCTURAL]   = follows from algebra alone, no SM-target import,
-                    matches link (L1) of the chain;
-   [CHAIN-L2]     = matter-assignment labels imported from LHCM matter
-                    assignment note;
-   [CHAIN-L3]     = uses the upstream normalization bridge if retained,
-                    otherwise the admitted SM convention alpha = 1/3;
-   [CHAIN-L4]     = recomputes the chained GMN/EWSB readout from cited
-                    L4 authorities without asserting their audit grade;
-   [CONSISTENCY]  = downstream consistency check under the chain
-                    (informational only; not load-bearing).
-   [QUARANTINED]  = downstream support/refutation display only; not parent
-                    evidence and not a GUT or sin^2(theta_W) claim.
-
-The current header makes the chain assembly explicit and routes the
-matter-assignment step through the LHCM matter-assignment note's authority
-instead of treating the SM-Y identification as an internal assertion.
-
-PStack experiment: frontier-hypercharge-identification
-Depends on: frontier-su3-commutant, frontier-lh-doublet-traceless-abelian-ratio,
-            frontier-lhcm-matter-assignment
+The theorem surface is deliberately limited to the structural
+(2,3)+(2,1) decomposition, the unique traceless +1:(-3) block-scalar
+direction, and the supplied-scale (+1/3,-1) spectrum. Particle naming,
+SM readout tables, and convention-chain material must live only in the
+canonical meta note.
 """
 
 from __future__ import annotations
@@ -61,1022 +13,171 @@ from __future__ import annotations
 from pathlib import Path
 
 import numpy as np
-from numpy.linalg import matrix_rank
-
-np.set_printoptions(precision=6, suppress=True, linewidth=100)
-
-REPO_ROOT = Path(__file__).resolve().parents[1]
-NOTE_PATH = REPO_ROOT / "docs" / "HYPERCHARGE_IDENTIFICATION_NOTE.md"
 
 
-def check_source_boundary() -> tuple[int, int]:
-    """Fail closed if the source note drifts back into an unbounded claim."""
-    note = NOTE_PATH.read_text(encoding="utf-8")
-    required = [
-        "**Status:** bounded/conditional name-free chain assembly.",
-        "**Status authority:** independent audit lane only.",
-        "**Primary runner:** `scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py`",
-        "**Runner cache:** `logs/runner-cache/frontier_hypercharge_identification_scope_repair_2026_07_04.txt`",
-        "**Source-side boundary firewall (2026-06-17).**",
-        "This note does **not** claim to:",
-        "derive the (Sym², Anti²) ↔ (triplet, singlet) assignment internally",
-        "derive the absolute normalization `a = 1/3` internally",
-        "Downstream squared-trace/GUT catalog quarantine (2026-07-04)",
-        "Name-free carrier decomposition and explicit normalization boundary",
-        "The theorem below remains fully name-free.",
-        "HYPERCHARGE_QUARK_LEPTON_NAMING_CONVENTION_NOTE_2026-07-11.md",
-        "Tr_C8[Y_alpha^2] = 24 alpha^2",
-        "GUT normalization, `sin^2(theta_W)`, and full-spectrum",
-        "Bounded source scope (what the runner numerically verifies",
-        "not retag the ledger and does not assert an audit verdict",
-    ]
-    forbidden = [
-        "**Status:** proposed chain claim",
-        "**Status:** proposed " + "retained",
-        "**Status:** proposed-" + "retained",
-    ]
-    missing = [snippet for snippet in required if snippet not in note]
-    present_forbidden = [snippet for snippet in forbidden if snippet in note]
-    if missing or present_forbidden:
-        lines = []
-        if missing:
-            lines.append("missing boundary markers: " + ", ".join(missing))
-        if present_forbidden:
-            lines.append("forbidden stale markers: " + ", ".join(present_forbidden))
-        raise AssertionError("; ".join(lines))
-    return len(required), len(forbidden)
+ROOT = Path(__file__).resolve().parents[1]
+THEOREM_PATH = ROOT / "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md"
+
+PASS = 0
+FAIL = 0
 
 
-BOUNDARY_REQUIRED, BOUNDARY_FORBIDDEN = check_source_boundary()
-
-# ============================================================================
-# Setup: reproduce the commutant construction from frontier_su3_commutant.py
-# ============================================================================
-I2 = np.eye(2, dtype=complex)
-sigma_x = np.array([[0, 1], [1, 0]], dtype=complex)
-sigma_y = np.array([[0, -1j], [1j, 0]], dtype=complex)
-sigma_z = np.array([[1, 0], [0, -1]], dtype=complex)
-
-
-def kron3(A, B, C):
-    """Kronecker product of three matrices: A otimes B otimes C."""
-    return np.kron(A, np.kron(B, C))
-
-
-# SU(2)_weak generators: S_i = sigma_i/2 on factor 1
-S = [kron3(sig / 2, I2, I2) for sig in [sigma_x, sigma_y, sigma_z]]
-
-# SWAP_{23}: exchanges factors 2 and 3
-SWAP_4 = np.zeros((4, 4), dtype=complex)
-for b in range(2):
-    for c in range(2):
-        SWAP_4[2 * c + b, 2 * b + c] = 1.0
-SWAP_8 = np.kron(I2, SWAP_4)
-
-# Change of basis: C^4 = C^2 x C^2  -->  Sym^2(C^2) + Anti^2(C^2)
-# Basis: |00>, |01>, |10>, |11> with index = 2*b + c
-# Sym:  |s0>=|00>, |s1>=(|01>+|10>)/sqrt(2), |s2>=|11>  [3-dim]
-# Anti: |a0>=(|01>-|10>)/sqrt(2)                          [1-dim]
-U_sym_anti = np.zeros((4, 4), dtype=complex)
-U_sym_anti[0, 0] = 1.0                    # s0 <- 00
-U_sym_anti[1, 1] = 1 / np.sqrt(2)         # s1 <- 01
-U_sym_anti[1, 2] = 1 / np.sqrt(2)         # s1 <- 10
-U_sym_anti[2, 3] = 1.0                    # s2 <- 11
-U_sym_anti[3, 1] = 1 / np.sqrt(2)         # a0 <- 01
-U_sym_anti[3, 2] = -1 / np.sqrt(2)        # a0 <- 10
-
-assert np.allclose(U_sym_anti @ U_sym_anti.conj().T, np.eye(4))
-
-# Full 8x8 change of basis
-U8 = np.kron(I2, U_sym_anti)
-
-# ============================================================================
-# The 8 taste states and their quantum numbers
-# ============================================================================
-# In the tensor product C^2_weak x C^2_b x C^2_c, the 8 basis states are:
-#   |a, b, c>  with a, b, c in {0, 1}
-#
-# After the sym/anti decomposition on factors (b,c):
-#   C^8 = C^2_weak x (C^3_sym + C^1_anti)
-#       = (C^2 x C^3) + (C^2 x C^1)
-#       = (2, 3)       + (2, 1)         under SU(2) x SU(3)
-#
-# The (2,3) = 6 states are the quark doublet (3 colors x 2 weak)
-# The (2,1) = 2 states are the lepton doublet (1 singlet x 2 weak)
-
-print("=" * 72)
-print("HYPERCHARGE U(1)_Y IDENTIFICATION (CHAIN VERIFICATION)")
-print("=" * 72)
-print()
-print(
-    "Source boundary firewall: "
-    f"{BOUNDARY_REQUIRED} required markers present; "
-    f"{BOUNDARY_FORBIDDEN} stale-promotion markers absent"
-)
-print()
-print("Setup: C^8 = (C^2)^{x3}, SU(2)_weak on factor 1, SWAP_{23} on factors 2,3")
-print("Commutant of {SU(2), SWAP_{23}} = gl(3,C) + gl(1,C)  [upstream]")
-print()
-print("CHAIN UNDER VERIFICATION:")
-print("  (L1) [STRUCTURAL]  ratio +1:(-3) on (Sym^2, Anti^2) sub-blocks")
-print("                     -- supplied by LH_DOUBLET_TRACELESS_ABELIAN_")
-print("                        EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02")
-print("  (L2) [CHAIN-L2]    Sym^2 -> SU(3) fundamental, Anti^2 -> SU(3) singlet")
-print("                     -- supplied by LHCM_MATTER_ASSIGNMENT_FROM_SU3_")
-print("                        REPRESENTATION_NOTE_2026-05-02")
-print("  (L3) [CHAIN-L3]    alpha = 1/3 (bounded bridge if retained;")
-print("                     otherwise admitted SM convention)")
-print("  (L4) [CHAIN-L4]    Q = T_3 + Y/2 from the acyclic")
-print("                     GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02")
-print()
-
-# ============================================================================
-# PART 1: The U(1) generator from the commutant
-# ============================================================================
-print("=" * 72)
-print("PART 1: The U(1) generator from the commutant  [STRUCTURAL + CHAIN-L3]")
-print("=" * 72)
-print()
-
-# The commutant gl(3) + gl(1) acting on C^4 = C^3 + C^1 has two U(1) generators:
-#   (a) The center of gl(3): proportional to P_sym (projector onto C^3)
-#   (b) The explicit gl(1): proportional to P_anti (projector onto C^1)
-# These are related: P_sym + P_anti = I_4, so they span a 2-dim space.
-# One combination is the identity (decouples); the other is the nontrivial U(1).
-
-# Projectors in the original basis
-P_sym_4 = np.zeros((4, 4), dtype=complex)
-P_anti_4 = np.zeros((4, 4), dtype=complex)
-for b1 in range(2):
-    for c1 in range(2):
-        for b2 in range(2):
-            for c2 in range(2):
-                i = 2 * b1 + c1
-                j = 2 * b2 + c2
-                P_sym_4[i, j] = (int(b1 == b2 and c1 == c2)
-                                 + int(b1 == c2 and c1 == b2)) / 2
-                P_anti_4[i, j] = (int(b1 == b2 and c1 == c2)
-                                  - int(b1 == c2 and c1 == b2)) / 2
-
-assert np.allclose(P_sym_4 + P_anti_4, np.eye(4))
-assert matrix_rank(P_sym_4) == 3
-assert matrix_rank(P_anti_4) == 1
-
-# Embed in 8x8
-P_sym_8 = np.kron(I2, P_sym_4)
-P_anti_8 = np.kron(I2, P_anti_4)
-
-# The NONTRIVIAL U(1) generator (traceless on C^8):
-# Y_raw = alpha * P_sym + beta * P_anti  with  Tr_{C^8}[Y_raw] = 0
-# Tr_{C^8}[P_sym_8] = 2 * 3 = 6   (2 from weak factor, 3 from sym)
-# Tr_{C^8}[P_anti_8] = 2 * 1 = 2   (2 from weak factor, 1 from anti)
-# Traceless condition: 6*alpha + 2*beta = 0  =>  beta = -3*alpha
-# Choose alpha = 1/3:
-#   Y_raw = (1/3)*P_sym - P_anti    [eigenvalues: 1/3 on quarks, -1 on leptons]
-
-Y_raw_4 = (1.0 / 3) * P_sym_4 - 1.0 * P_anti_4
-Y_raw_8 = np.kron(I2, Y_raw_4)
-
-print("The traceless central block-scalar generator in the commutant:")
-print(f"  Y = (1/3)*P_sym - 1*P_anti")
-print(f"  Tr[Y] on C^8 = {np.trace(Y_raw_8).real:.6f}  (should be 0)")
-print()
-
-# Eigenvalues of Y on C^8
-eigvals_Y = np.linalg.eigvalsh(Y_raw_8)
-unique_eigvals = sorted(set(np.round(eigvals_Y, 10)))
-print(f"  Eigenvalues of Y on C^8: {unique_eigvals}")
-print(f"  Multiplicities:")
-for ev in unique_eigvals:
-    mult = sum(1 for e in eigvals_Y if abs(e - ev) < 1e-8)
-    print(f"    Y = {ev:+.4f}  multiplicity {mult}")
-
-print()
-print("  Structural ratio (alpha-independent):")
-print("    Y_alpha eigenvalues stand in ratio +1:(-3) on (Sym^2, Anti^2)")
-print("    [STRUCTURAL: cited from narrow ratio theorem]")
-print()
-print("  At admitted SM-convention scale alpha = 1/3 [CHAIN-L3]:")
-print("    Y = +1/3 on 6 states = (2,3) sub-block")
-print("    Y = -1   on 2 states = (2,1) sub-block")
-print()
-print("  Identification with SM Y(Q_L) = +1/3 and Y(L_L) = -1 [CHAIN-L2 + CHAIN-L3]:")
-print("    requires the LHCM matter-assignment chain (color-triplet sector = Q_L,")
-print("    color-singlet sector = L_L) plus the admitted alpha = 1/3 normalization.")
-print("    Neither is internal to this runner; both are imported one-hop above.")
-
-# ============================================================================
-# PART 2: Verify commutation with SU(2) and SU(3)
-# ============================================================================
-print()
-print("=" * 72)
-print("PART 2: Commutation relations  [STRUCTURAL]")
-print("=" * 72)
-print()
-
-# Y must commute with SU(2)_weak
-su2_ok = all(np.allclose(Si @ Y_raw_8 - Y_raw_8 @ Si, 0, atol=1e-12)
-             for Si in S)
-print(f"  [Y, S_i] = 0 for all i (commutes with SU(2)_weak): {su2_ok}")
-
-# Y must commute with SWAP_{23}
-swap_ok = np.allclose(SWAP_8 @ Y_raw_8 - Y_raw_8 @ SWAP_8, 0, atol=1e-12)
-print(f"  [Y, SWAP_23] = 0 (commutes with SWAP): {swap_ok}")
-
-# Y must commute with SU(3)_color generators
-# Build Gell-Mann matrices embedded in 4x4 via the sym/anti basis
-gell_mann_3x3 = [
-    np.array([[0, 1, 0], [1, 0, 0], [0, 0, 0]], dtype=complex),
-    np.array([[0, -1j, 0], [1j, 0, 0], [0, 0, 0]], dtype=complex),
-    np.array([[1, 0, 0], [0, -1, 0], [0, 0, 0]], dtype=complex),
-    np.array([[0, 0, 1], [0, 0, 0], [1, 0, 0]], dtype=complex),
-    np.array([[0, 0, -1j], [0, 0, 0], [1j, 0, 0]], dtype=complex),
-    np.array([[0, 0, 0], [0, 0, 1], [0, 1, 0]], dtype=complex),
-    np.array([[0, 0, 0], [0, 0, -1j], [0, 1j, 0]], dtype=complex),
-    np.array([[1, 0, 0], [0, 1, 0], [0, 0, -2]], dtype=complex) / np.sqrt(3),
-]
-
-# Embed in 4x4 (in sym/anti basis, top-left 3x3 block)
-T_color_4_new = []
-for lam in gell_mann_3x3:
-    T = np.zeros((4, 4), dtype=complex)
-    T[:3, :3] = lam / 2
-    T_color_4_new.append(T)
-
-# Transform to original basis: T_orig = U^dag T_new U
-T_color_4_orig = [U_sym_anti.conj().T @ T @ U_sym_anti for T in T_color_4_new]
-T_color_8 = [np.kron(I2, T) for T in T_color_4_orig]
-
-su3_ok = all(np.allclose(Ta @ Y_raw_8 - Y_raw_8 @ Ta, 0, atol=1e-12)
-             for Ta in T_color_8)
-print(f"  [Y, T_a] = 0 for all a (commutes with SU(3)_color): {su3_ok}")
-print()
-print("  Y commutes with BOTH SU(2) and SU(3) -- it is a valid U(1) gauge")
-print("  generator in the Standard Model sense.")
-
-# ----------------------------------------------------------------------
-# Mid-runner audit-checkpoint: what is verified by STRUCTURAL blocks ONLY
-# ----------------------------------------------------------------------
-# This block exists so a re-auditor can confirm the chain decomposition
-# without scanning all 9 parts of the runner. It states explicitly which
-# facts have been verified WITHOUT any chain-L2 or chain-L3 imports.
-print()
-print("-" * 72)
-print("AUDIT CHECKPOINT 1 (after STRUCTURAL Parts 1-2):")
-print("-" * 72)
-print("  Verified STRUCTURALLY (no SM-target import; alpha-free where stated):")
-print("    * gl(3)+gl(1) commutant decomposition exists [upstream retained]")
-print("    * Y_alpha = alpha (P_sym - 3 P_anti) is the UNIQUE traceless")
-print("      central block-scalar direction, up to scale [Part 1 STRUCTURAL]")
-print("    * eigenvalue ratio on (Sym^2, Anti^2) sub-blocks = +1 : (-3)")
-print("      [Part 1 STRUCTURAL; cited from narrow ratio theorem]")
-print("    * [Y, S_i] = [Y, SWAP_23] = [Y, T_a] = 0 for all weak, perm,")
-print("      and color generators [Part 2 STRUCTURAL]")
-print()
-print("  NOT yet performed at this checkpoint (deferred to chain L2 + L3 + L4):")
-print("    * any identification of (Sym^2, Anti^2) sub-blocks with SM quark")
-print("      or lepton doublets")
-print("    * any choice of absolute scale alpha")
-print("    * the electric-charge readout via Q = T_3 + Y/2")
-print()
-print("  The chain claim of this note is precisely that, ONCE chain L2")
-print("  (LHCM matter assignment, separate audit row) and chain L3 (admitted")
-print("  SM convention alpha = 1/3) are layered on top of these structural")
-print("  facts, the SM hypercharge pattern follows; electric-charge readout is")
-print("  then chained through L4. The next parts perform that layering and tag")
-print("  every block accordingly.")
-print("-" * 72)
-
-
-# ============================================================================
-# PART 3: Electric charge Q = T_3 + Y/2
-# ============================================================================
-print()
-print("=" * 72)
-print("PART 3: Electric charge Q = T_3 + Y/2  [CHAIN-L2 + CHAIN-L3 + CHAIN-L4]")
-print("=" * 72)
-print()
-print("  Note: Q = T_3 + Y/2 (Gell-Mann--Nishijima) is chained through L4,")
-print("  not admitted here as a standalone SM-convention bridge. This block")
-print("  applies the chained readout to display charge-table consequents;")
-print("  PART 9 recomputes the vev-record annihilator directly. The")
-print("  matter-assignment labels below ('u-type quark', 'electron', etc.)")
-print("  are imported from the LHCM matter-assignment note's chain to the")
-print("  SM-definition convention.")
-print()
-
-T3 = S[2]  # S_3 = sigma_z / 2 on factor 1
-Q = T3 + Y_raw_8 / 2
-
-print("  Q = T_3 + Y/2 as 8x8 matrix")
-print(f"  Q is Hermitian: {np.allclose(Q, Q.conj().T)}")
-print()
-
-eigvals_Q = np.linalg.eigvalsh(Q)
-unique_Q = sorted(set(np.round(eigvals_Q, 10)))
-print(f"  Eigenvalues of Q: {unique_Q}")
-print(f"  Multiplicities:")
-for ev in unique_Q:
-    mult = sum(1 for e in eigvals_Q if abs(e - ev) < 1e-8)
-    print(f"    Q = {ev:+.4f}  multiplicity {mult}")
-
-print()
-
-# Work out the full quantum numbers for each of the 8 states
-# In the sym/anti basis, the 8 states are:
-# |weak, color> where weak in {up, down} (T3 = +1/2, -1/2)
-#                      color in {s0, s1, s2, a0} (first 3 sym, last anti)
-#
-# Transform Q to the sym/anti basis
-Q_diag = U8 @ Q @ U8.conj().T
-T3_diag = U8 @ T3 @ U8.conj().T
-Y_diag = U8 @ Y_raw_8 @ U8.conj().T
-
-print("  Complete quantum number table (in sym/anti basis):")
-print(f"  {'State':20s} {'T_3':>8s} {'Y':>8s} {'Q=T3+Y/2':>10s}  {'Particle':>12s}")
-print("  " + "-" * 65)
-
-state_labels = [
-    (0, "up, s0", "+1/2", "quark"),
-    (1, "up, s1", "+1/2", "quark"),
-    (2, "up, s2", "+1/2", "quark"),
-    (3, "up, a0", "+1/2", "lepton"),
-    (4, "down, s0", "-1/2", "quark"),
-    (5, "down, s1", "-1/2", "quark"),
-    (6, "down, s2", "-1/2", "quark"),
-    (7, "down, a0", "-1/2", "lepton"),
-]
-
-def identify_particle(t3_val, y_val):
-    """Identify particle from quantum numbers using approximate matching."""
-    if abs(t3_val - 0.5) < 1e-6 and abs(y_val - 1.0/3) < 1e-6:
-        return "u-type quark", 2.0/3
-    if abs(t3_val + 0.5) < 1e-6 and abs(y_val - 1.0/3) < 1e-6:
-        return "d-type quark", -1.0/3
-    if abs(t3_val - 0.5) < 1e-6 and abs(y_val + 1.0) < 1e-6:
-        return "neutrino", 0.0
-    if abs(t3_val + 0.5) < 1e-6 and abs(y_val + 1.0) < 1e-6:
-        return "electron", -1.0
-    return "???", None
-
-all_charges_correct = True
-for idx, label, t3_str, ptype in state_labels:
-    t3_val = T3_diag[idx, idx].real
-    y_val = Y_diag[idx, idx].real
-    q_val = Q_diag[idx, idx].real
-
-    name, expected_q = identify_particle(t3_val, y_val)
-    if expected_q is not None:
-        match = abs(q_val - expected_q) < 1e-8
-        if not match:
-            all_charges_correct = False
+def check(label: str, ok: bool, detail: str = "") -> None:
+    global PASS, FAIL
+    if ok:
+        PASS += 1
+        tag = "PASS"
     else:
-        all_charges_correct = False
-
-    print(f"  |{label:18s}> {t3_val:+8.4f} {y_val:+8.4f} {q_val:+10.4f}  {name:>12s}")
-
-print()
-if all_charges_correct:
-    print("  ALL CHARGES CORRECT:")
-    print("    u-type quarks: Q = +2/3  (3 colors)")
-    print("    d-type quarks: Q = -1/3  (3 colors)")
-    print("    neutrino:      Q =  0    (1 singlet)")
-    print("    electron:      Q = -1    (1 singlet)")
-else:
-    print("  WARNING: Some charges do not match Standard Model values!")
-
-
-# ============================================================================
-# PART 4: Consistency checks on the left-handed surface
-# ============================================================================
-print()
-print("=" * 72)
-print("PART 4: Consistency checks on the left-handed surface  [CONSISTENCY]")
-print("=" * 72)
-print()
-
-# Standard Model anomaly conditions for one generation:
-# The anomaly coefficients involve traces over all fermion species in a
-# representation.  For our 8 states:
-#
-# 1. Tr[Y] = 0  (gravitational anomaly / gauge-gravity)
-# 2. Tr[Y^3] = 0  (U(1)^3 anomaly)
-# 3. Tr[Y T_a T_b] = 0  for SU(3) generators  (mixed U(1)-SU(3)^2)
-# 4. Tr[Y {T_i, T_j}] = 0  for SU(2) generators  (mixed U(1)-SU(2)^2)
-
-# The Y eigenvalues on the 8 states:
-# 6 quarks with Y = 1/3, 2 leptons with Y = -1
-
-y_quarks = 1.0 / 3
-y_leptons = -1.0
-n_quarks = 6
-n_leptons = 2
-
-# Condition 1: Tr[Y] = 0
-trY = n_quarks * y_quarks + n_leptons * y_leptons
-print(f"  Consistency check 1: Tr[Y] = {n_quarks}*({y_quarks:.4f}) + {n_leptons}*({y_leptons:.4f})")
-print(f"    = {trY:.6f}")
-print(f"    Satisfied on this surface: {abs(trY) < 1e-10}")
-print()
-
-# Condition 2: Tr[Y^3] = 0
-trY3 = n_quarks * y_quarks**3 + n_leptons * y_leptons**3
-print(f"  Consistency check 2: Tr[Y^3] = {n_quarks}*({y_quarks:.4f})^3 + {n_leptons}*({y_leptons:.4f})^3")
-print(f"    = {n_quarks * y_quarks**3:.6f} + {n_leptons * y_leptons**3:.6f}")
-print(f"    = {trY3:.6f}")
-print(f"    Satisfied: {abs(trY3) < 1e-10}")
-print("    NOTE: For a left-handed-only surface, Tr[Y^3] is expected to be nonzero.")
-print()
-
-# Condition 3: Tr[Y T_a^2] for SU(3) generators
-# T_a acts only on the color-triplet (quark) sector.
-# In the (2,3) sector, Tr[T_a^2] = C_2(3) * dim(2) = (1/2) * 2 = 1
-# (since T_a = lambda_a/2, Tr[T_a^2] on fundamental 3 = 1/2, times 2 for weak doublet)
-# In the (2,1) sector, T_a = 0, so Tr[T_a^2] = 0.
-# Therefore Tr[Y T_a^2] = y_quarks * Tr[T_a^2]_quarks + y_leptons * 0
-# This is NOT zero -- it's 1/3 * 1 = 1/3.
-# BUT: this anomaly coefficient tells us Y is consistent -- it's the
-# ABSOLUTE anomaly that must cancel between different representations.
-# For a single left-handed generation (our 8 states), we check
-# proportionality.
-
-# More precisely: Tr[Y T_a T_b] = Tr_Y * C(r) * delta_{ab}
-# where the trace is over the full 8-dim space.
-# Let's compute it directly:
-print(f"  Consistency check 3: Tr[Y T_a T_b] for SU(3)")
-for a_idx in range(8):
-    for b_idx in range(a_idx, min(a_idx + 1, 8)):
-        val = np.trace(Y_raw_8 @ T_color_8[a_idx] @ T_color_8[b_idx]).real
-        if abs(val) > 1e-12:
-            print(f"    Tr[Y T_{a_idx+1} T_{b_idx+1}] = {val:.6f}")
-
-# The mixed SU(3)^2-U(1) anomaly for a SINGLE representation is:
-# A_{SU(3)^2 U(1)} = sum_reps Y_r * C(r) * dim_{SU(2)}(r)
-# For quarks (2,3): Y=1/3, C(3)=1/2, dim_SU2=2  => 1/3 * 1/2 * 2 = 1/3
-# For leptons (2,1): Y=-1, C(1)=0, dim_SU2=2     => 0
-# Total: 1/3 (non-zero)
-#
-# In the SM, anomaly cancellation happens between LEFT and RIGHT chiralities.
-# For LEFT-handed only (our case), the anomaly doesn't need to vanish --
-# it cancels when RIGHT-handed fermions (u_R, d_R, e_R) are included.
-print()
-print("  NOTE: For a single chirality, Tr[Y T_a^2] need not vanish.")
-print("  Full anomaly cancellation requires the right-handed fermions as well.")
-print("  The LEFT-HANDED sector alone is a consistency check, not a full anomaly test.")
-print()
-
-# Condition 4: Tr[Y {T_i, T_j}] for SU(2) generators
-# T_i = S_i = sigma_i/2 on weak doublet factor
-# {T_i, T_j} = delta_{ij}/2 * I_2 (on the weak factor)
-# So Tr[Y {T_i, T_j}] = delta_{ij}/2 * Tr_color[Y]
-# = delta_{ij}/2 * (3 * 1/3 + 1 * (-1)) = delta_{ij}/2 * 0 = 0
-print(f"  Consistency check 4: Tr[Y {{T_i, T_j}}] for SU(2)")
-for i in range(3):
-    for j in range(i, i + 1):
-        anti = S[i] @ S[j] + S[j] @ S[i]
-        val = np.trace(Y_raw_8 @ anti).real
-        print(f"    Tr[Y {{S_{i+1}, S_{j+1}}}] = {val:.6f}")
-
-su2_mixed_anomaly = np.trace(Y_raw_8 @ (S[0] @ S[0] + S[1] @ S[1] + S[2] @ S[2])).real
-print(f"    Tr[Y * sum_i S_i^2] = {su2_mixed_anomaly:.6f}")
-print(f"    SU(2)^2-U(1) mixed anomaly vanishes: {abs(su2_mixed_anomaly) < 1e-10}")
-
-
-# ============================================================================
-# PART 5: Uniqueness of the traceless central block-scalar direction
-# ============================================================================
-print()
-print("=" * 72)
-print("PART 5: Uniqueness of the traceless central block-scalar direction  [STRUCTURAL]")
-print("=" * 72)
-print()
-
-# In the commutant algebra u(3) + u(1), the U(1) generators form a 2-dim space:
-#   Y(alpha, beta) = alpha * P_sym + beta * P_anti   (on the C^4 factor)
-# Embedded in C^8: Y_8 = I_2 x Y(alpha, beta)
-#
-# The eigenvalues on C^8:
-#   6 quark states: alpha    (multiplicity 6 = 2_weak x 3_color)
-#   2 lepton states: beta   (multiplicity 2 = 2_weak x 1_singlet)
-#
-# Condition: Tr[Y] = 0 on C^8
-#   6*alpha + 2*beta = 0  =>  beta = -3*alpha
-#
-# So the traceless U(1) is: Y = alpha * (P_sym - 3*P_anti)
-# Up to normalization, there is only ONE choice: Y ~ P_sym - 3*P_anti.
-#
-# This gives eigenvalues alpha on quarks, -3*alpha on leptons.
-# Choosing alpha = 1/3: Y = 1/3 on quarks, -1 on leptons.
-# This matches the Standard Model hypercharge assignments on the
-# left-handed doublet surface.
-
-print("  The center of the compact commutant contains a 2-parameter family")
-print("  of block-scalar generators:")
-print("    Y(alpha, beta) = alpha * P_sym + beta * P_anti")
-print()
-print("  Requiring Tr[Y] = 0 (remove the overall phase):")
-print("    6*alpha + 2*beta = 0  =>  beta = -3*alpha")
-print("  This leaves a ONE-parameter family: Y = alpha * (P_sym - 3*P_anti)")
-print()
-print("  The normalization alpha is fixed by SM convention [CHAIN-L3, admitted].")
-print("  Standard choice alpha = 1/3 gives Y_(Sym^2 sub-block) = +1/3,")
-print("  Y_(Anti^2 sub-block) = -1.")
-print()
-
-# Verify: Tr[Y^3] on the left-handed surface is not zero
-alpha = 1.0  # generic
-Y_generic = alpha * P_sym_8 - 3 * alpha * P_anti_8
-trY3_generic = np.trace(Y_generic @ Y_generic @ Y_generic).real
-# = 6*(alpha)^3 + 2*(-3*alpha)^3 = 6*alpha^3 - 54*alpha^3 = -48*alpha^3
-print(f"  Check Tr[Y^3] for generic alpha:")
-print(f"    Tr[Y^3] = 6*(alpha)^3 + 2*(-3*alpha)^3 = 6*alpha^3 - 54*alpha^3 = -48*alpha^3")
-print(f"    This is NOT zero for a single left-handed generation.")
-print()
-print("  The U(1)^3 anomaly cancels only in the FULL SM when right-handed")
-print("  fermions are included.  For a single left-handed generation, Tr[Y^3] != 0")
-print("  is expected.")
-print()
-
-# The KEY point: within our 8-dimensional left-handed sector,
-# Tr[Y] = 0 UNIQUELY fixes Y up to normalization.
-print("  STRUCTURAL UNIQUENESS THEOREM:")
-print("  Within the center of the compact commutant of {SU(2), SWAP_23},")
-print("  there is exactly ONE traceless block-scalar direction (up to scale).")
-print("  Its eigenvalues are in the ratio 1:(-3) on the (Sym^2, Anti^2) sub-blocks.")
-print()
-print("  This matches the SM hypercharge ratio on the LH-doublet surface ONLY")
-print("  via the chain (L1 ratio + L2 matter assignment + L3 admitted scale).")
-print("  No internal SM-Y identification is performed in this note.")
-
-
-# ============================================================================
-# PART 6: downstream squared-trace quarantine
-# ============================================================================
-print()
-print("=" * 72)
-print("PART 6: downstream squared-trace quarantine  [QUARANTINED]")
-print("=" * 72)
-print()
-
-part6_pass = 0
-part6_fail = 0
-
-
-def check6(name: str, cond: bool, detail: str = "") -> None:
-    global part6_pass, part6_fail
-    if cond:
-        part6_pass += 1
-        tag = "[PASS]"
-    else:
-        part6_fail += 1
-        tag = "[FAIL]"
-    suffix = f"  ({detail})" if detail else ""
-    print(f"  {tag} {name}{suffix}")
-
-
-print("  This parent row does not claim GUT normalization, a sin^2(theta_W)")
-print("  prediction, or full-generation squared-trace closure. This block only")
-print("  checks the LH-doublet arithmetic and explicitly quarantines it from")
-print("  the parent theorem.")
-print()
-
-trY2_generic_coeff = np.trace((P_sym_8 - 3 * P_anti_8) @ (P_sym_8 - 3 * P_anti_8)).real
-check6(
-    "generic LH-doublet squared trace is Tr[(P_sym - 3P_anti)^2] = 24",
-    abs(trY2_generic_coeff - 24.0) < 1e-12,
-    f"coefficient={trY2_generic_coeff:.6f}",
-)
-
-trY2 = np.trace(Y_raw_8 @ Y_raw_8).real
-check6(
-    "at L3 scale alpha=1/3, LH-doublet Tr[Y^2] = 8/3",
-    abs(trY2 - 8.0 / 3.0) < 1e-12,
-    f"Tr[Y^2]={trY2:.6f}",
-)
-
-trT2_su2 = sum(np.trace(Si @ Si).real for Si in S)
-check6(
-    "LH-doublet Tr[sum_i T_i^2] = 6",
-    abs(trT2_su2 - 6.0) < 1e-12,
-    f"Tr[sum_i T_i^2]={trT2_su2:.6f}",
-)
-
-trT2_single = np.trace(S[0] @ S[0]).real
-check6(
-    "LH-doublet per-generator SU(2) trace is Tr[T_1^2] = 2",
-    abs(trT2_single - 2.0) < 1e-12,
-    f"Tr[T_1^2]={trT2_single:.6f}",
-)
-
-trT2_su3 = np.trace(T_color_8[0] @ T_color_8[0]).real
-check6(
-    "LH-doublet displayed SU(3) trace is finite-sector bookkeeping only",
-    trT2_su3 > 0.0,
-    f"Tr[T_1^2]_SU3={trT2_su3:.6f}",
-)
-
-ratio = trY2 / (2 * trT2_single)
-check6(
-    "LH-doublet ratio Tr[Y^2] / (2 Tr[T_1^2]) = 2/3, not a GUT factor",
-    abs(ratio - 2.0 / 3.0) < 1e-12,
-    f"ratio={ratio:.6f}",
-)
-
-trT3sq = np.trace(T3 @ T3).real
-trQsq = np.trace(Q @ Q).real
-ratio_weinberg = trT3sq / trQsq
-check6(
-    "LH-doublet-only trace ratio is not the GUT sin^2(theta_W)=3/8 claim",
-    abs(ratio_weinberg - 3.0 / 8.0) > 1e-2,
-    f"Tr[T3^2]/Tr[Q^2]={ratio_weinberg:.6f}",
-)
-
-print()
-print(f"  PART 6 CHECKS: PASS={part6_pass} FAIL={part6_fail}")
-if part6_fail or part6_pass != 7:
-    raise AssertionError(f"PART 6 quarantine checks failed: PASS={part6_pass} FAIL={part6_fail}")
-print()
-print("  Quarantine: no GUT-normalized hypercharge, sin^2(theta_W), or")
-print("  full-generation squared-trace result is claimed by this parent row.")
-print("  Use the downstream squared-trace catalog row for those questions.")
-
-
-# ============================================================================
-# PART 7: Explicit 8x8 matrix form
-# ============================================================================
-print()
-print("=" * 72)
-print("PART 7: Explicit matrices  [STRUCTURAL display, alpha = 1/3 for readability]")
-print("=" * 72)
-print()
-
-print("  Y (hypercharge) in original basis |a,b,c>:")
-print(Y_raw_8.real)
-print()
-
-# In sym/anti basis
-Y_sa = U8 @ Y_raw_8 @ U8.conj().T
-print("  Y in sym/anti basis |weak, color>:")
-print(Y_sa.real)
-print()
-print("  Y is diagonal in the sym/anti basis with entries:")
-for i in range(8):
-    print(f"    Y[{i},{i}] = {Y_sa[i,i].real:+.4f}")
-print()
-
-print("  T_3 (weak isospin) in sym/anti basis:")
-T3_sa = U8 @ T3 @ U8.conj().T
-print(T3_sa.real)
-print()
-
-print("  Q = T_3 + Y/2 in sym/anti basis:")
-Q_sa = U8 @ Q @ U8.conj().T
-print(Q_sa.real)
-
-
-# ============================================================================
-# PART 8: Alternative U(1) choices and why the traceless one is singled out
-# ============================================================================
-print()
-print("=" * 72)
-print("PART 8: No other traceless central block-scalar direction  [STRUCTURAL]")
-print("=" * 72)
-print()
-
-# The commutant u(3) + u(1) has two independent U(1) generators:
-#   Y_1 = P_sym    (center of u(3))
-#   Y_2 = P_anti   (the explicit u(1))
-# Any U(1) is a linear combination: Y = a*Y_1 + b*Y_2.
-#
-# Embed in C^8: Y_8 = I_2 x (a*P_sym_4 + b*P_anti_4)
-# Eigenvalues: a on 6 states, b on 2 states.
-#
-# Physical constraints:
-#
-# (i) Traceless (remove overall phase):
-#     6a + 2b = 0  =>  b = -3a
-#     One-parameter family: Y = a*(P_sym - 3*P_anti)
-#
-# (ii) SU(2)^2-U(1) mixed anomaly = 0:
-#     This is Tr[Y * {S_i, S_j}] = 0.
-#     Since {S_i, S_j} = delta_{ij}/2 * I_8 (up to terms proportional
-#     to identity on the 8-dim space), this reduces to Tr[Y] = 0.
-#     Already satisfied by (i).
-#
-# (iii) Q = T_3 + Y/2 gives INTEGER or third-integer charges:
-#     For a = 1/3:  Q_quarks = 1/2 + 1/6 = 2/3,  -1/2 + 1/6 = -1/3
-#                   Q_leptons = 1/2 - 1/2 = 0,    -1/2 - 1/2 = -1
-#     These are the ONLY charges that give 0 mod 1/3.
-#
-# CONCLUSION: The tracelessness condition UNIQUELY determines the RATIO
-# of hypercharges (quarks : leptons = 1 : -3).  The overall normalization
-# is a convention (we choose a = 1/3 to match the SM).
-
-print("  General U(1) in commutant: Y = a*P_sym + b*P_anti")
-print("  Eigenvalues: a (x6 on Sym^2 sub-block), b (x2 on Anti^2 sub-block)")
-print()
-print("  Constraint Tr[Y] = 0:  6a + 2b = 0  =>  b = -3a")
-print()
-print("  This is the ONLY constraint needed to fix Y up to normalization!")
-print("  Result: Y_(Sym^2) : Y_(Anti^2) = 1 : (-3)        [STRUCTURAL, alpha-free]")
-print()
-print("  Under chain L2 (LHCM matter assignment): Sym^2 sector = Q_L (color")
-print("  triplet), Anti^2 sector = L_L (color singlet).")
-print("  Under chain L3 (normalization bridge if retained; otherwise admitted")
-print("  SM convention): alpha = 1/3.")
-print("  Combined: Y(Q_L) = +1/3, Y(L_L) = -1.   [CHAIN-L2 + CHAIN-L3]")
-print()
-
-# Verify: no OTHER traceless central block-scalar direction exists.
-# In the 2-dim center spanned by the two block projectors, tracelessness
-# removes one dimension, leaving exactly 1.  QED.
-print("  PROOF OF STRUCTURAL UNIQUENESS:")
-print("    dim(center of compact commutant) = 2  (center of u(3), plus u(1))")
-print("    dim(traceless subspace) = 1       (one linear constraint)")
-print("    => UNIQUE traceless central block-scalar direction (up to scale)")
-print()
-print("  Therefore: the traceless central block-scalar direction is unique")
-print("  up to scale, and -- under chain L2 + L3 -- its eigenvalues coincide")
-print("  with the SM hypercharge values for the LH-doublet sector.")
-
-
-# ============================================================================
-# PART 9: Gell-Mann--Nishijima DERIVED as the unique vev-record annihilator
-# ============================================================================
-print()
-print("=" * 72)
-print("PART 9: GMN derived as the unique vev-record annihilator  [CHAIN-L4]")
-print("=" * 72)
-print()
-print("  2026-07-01 premise rewire: Q = T_3 + Y/2 is no longer admitted as an")
-print("  SM-convention bridge. It is chained (L4) to the acyclic support carrier")
-print("  GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md, which")
-print("  computes the unique unbroken generator annihilating the supplied")
-print("  neutral Higgs vev record at supplied Y_H = +1.")
-print("  This block RECOMPUTES that derivation and its consequents; the")
-print("  chain's audit grade is owned by the independent audit lane.")
-print()
-
-part9_pass, part9_fail = 0, 0
-
-def check9(name: str, cond: bool, detail: str = "") -> None:
-    global part9_pass, part9_fail
-    if cond:
-        part9_pass += 1
-        tag = "[PASS]"
-    else:
-        part9_fail += 1
-        tag = "[FAIL]"
-    print(f"  {tag} {name}" + (f"  ({detail})" if detail else ""))
-
-T3_weak = np.diag([0.5, -0.5])
-Y_H = 1.0  # chained Higgs hypercharge (L4 supply)
-vev_neutral = np.array([0.0, 1.0])
-
-# 9a: stabilizer of the vev record inside span{T_3, Y} is EXACTLY 1-dim.
-#     Solve (a*T3 + b*Y_H*I) vev = 0 by nullspace of the 2x2 coefficient map.
-coeff_map = np.column_stack([T3_weak @ vev_neutral, Y_H * vev_neutral])
-_, sv, Vt = np.linalg.svd(coeff_map)
-null_dim = int(np.sum(sv < 1e-12))
-check9("9a [L4] stabilizer of the neutral vev record in span{T_3, Y} is "
-       "exactly 1-dimensional (unique unbroken generator)",
-       null_dim == 1, f"singular values = {np.round(sv, 6)}")
-
-# 9b: the derived coefficient ratio is b/a = +1/2, i.e. Q = T_3 + Y/2,
-#     COMPUTED from the annihilation condition (not asserted).
-null_vec = Vt[-1]
-ratio = null_vec[1] / null_vec[0]
-check9("9b [L4] derived unbroken generator is Q = T_3 + (1/2) Y: coefficient "
-       "computed from the annihilation nullspace",
-       abs(ratio - 0.5) < 1e-12, f"b/a = {ratio:.12f}")
-
-# 9c: charge table COMPUTED from the derived Q on the 8 LH states
-#     (t3, y eigenvalues from the constructed operators, coeff from 9b).
-derived_Q = {}
-table_ok = True
-expected_multiset = sorted([2.0/3] * 3 + [-1.0/3] * 3 + [0.0, -1.0])
-got = []
-for idx, label, t3_str, ptype in state_labels:
-    t3_val = T3_diag[idx, idx].real
-    y_val = Y_diag[idx, idx].real
-    got.append(t3_val + ratio * y_val)
-check9("9c [L4] charge table computed from the DERIVED Q on all 8 states "
-       "equals {+2/3 x3, -1/3 x3, 0, -1}",
-       np.allclose(sorted(got), expected_multiset, atol=1e-9),
-       f"computed multiset = {np.round(sorted(got), 4)}")
-
-# 9d: refutation -- with Y_H = 0 the derived annihilator is PURE Y (a = 0):
-#     no T_3 content, no GMN mixing, and the computed charge table
-#     degenerates (u_L and d_L receive equal charge). The chained Y_H = +1
-#     supply is load-bearing for the GMN form and the SM pattern.
-coeff_map0 = np.column_stack([T3_weak @ vev_neutral, 0.0 * vev_neutral])
-Vt0 = np.linalg.svd(coeff_map0)[2]
-nv0 = Vt0[-1]
-a0 = nv0[0]
-got0 = sorted(T3_diag[idx, idx].real * 0.0 + Y_diag[idx, idx].real
-              for idx, *_ in state_labels) if abs(a0) < 1e-12 else None
-degenerate = (got0 is not None
-              and not np.allclose(got0, expected_multiset, atol=1e-9))
-check9("9d [L4/refutation] Y_H = 0 derives a T_3-free generator (a = 0, pure "
-       "Y): no GMN mixing, u_L/d_L charges degenerate -- the chained "
-       "Higgs-hypercharge supply is load-bearing for the SM pattern",
-       abs(a0) < 1e-12 and degenerate,
-       f"a = {a0:.2e}, pure-Y table = {np.round(got0, 4) if got0 is not None else 'n/a'}")
-
-# 9e: refutation/naming -- the OTHER vev direction (1,0) derives the
-#     component-swapped conjugate table: which doublet component is neutral
-#     (the 'T3(e_L)' assignment) is the vev-direction convention, not an
-#     independent import. Pattern identical up to relabeling.
-vev_charged = np.array([1.0, 0.0])
-coeff_map2 = np.column_stack([T3_weak @ vev_charged, Y_H * vev_charged])
-Vt2 = np.linalg.svd(coeff_map2)[2]
-ratio2 = Vt2[-1][1] / Vt2[-1][0]
-got2 = sorted(T3_diag[idx, idx].real + ratio2 * Y_diag[idx, idx].real
-              for idx, *_ in state_labels)
-swapped_conjugate = sorted([-x for x in expected_multiset])
-check9("9e [L4/naming] the opposite vev direction derives b/a = -1/2 and the "
-       "component-swapped conjugate table: the T3(e_L) component assignment "
-       "is the vev-direction convention",
-       abs(ratio2 + 0.5) < 1e-12 and np.allclose(got2, swapped_conjugate, atol=1e-9),
-       f"b/a = {ratio2:+.4f}, table = {np.round(got2, 4)}")
-
-print()
-print(f"  PART 9 CHECKS: PASS={part9_pass} FAIL={part9_fail}")
-if part9_fail or part9_pass != 5:
-    raise AssertionError(f"PART 9 L4 checks failed: PASS={part9_pass} FAIL={part9_fail}")
-print()
-print("  Remaining admitted content in the charge table after L4:")
-print("    * alpha = 1/3 scale -- chain L3 (bounded normalization bridge /")
-print("      Y0 vacuous rescaling convention)")
-print("    * the lower color-singlet relative charge q = -1 -- an explicit")
-print("      physical readout premise, not a commutant consequence")
-print("    * the L4 support carrier has its own audit row; this runner")
-print("      recomputes, the audit lane grades.")
-
-
-# ============================================================================
-# PART 10: Name-free carrier decomposition and normalization boundary
-# ============================================================================
-print()
-print("=" * 72)
-print("PART 10: Name-free carrier decomposition + normalization boundary  [L2 + L3]")
-print("=" * 72)
-print()
-
-part10_pass, part10_fail = 0, 0
-
-
-def check10(name: str, cond: bool, detail: str = "") -> None:
-    global part10_pass, part10_fail
-    if cond:
-        part10_pass += 1
-        tag = "[PASS]"
-    else:
-        part10_fail += 1
-        tag = "[FAIL]"
-    print(f"  {tag} {name}" + (f"  ({detail})" if detail else ""))
-
-
-# The sectors are spectral projectors of SWAP_23, constructed before any
-# particle labels or target hypercharge values are introduced.
-check10(
-    "10a carrier sectors are the SWAP_23 spectral projectors",
-    np.allclose(P_sym_8, (np.eye(8) + SWAP_8) / 2)
-    and np.allclose(P_anti_8, (np.eye(8) - SWAP_8) / 2),
-)
-check10(
-    "10b label-free carrier dimensions are dim(C2 x H_+) = 6 and "
-    "dim(C2 x H_-) = 2",
-    matrix_rank(P_sym_8) == 6 and matrix_rank(P_anti_8) == 2,
-)
-
-# Implementation check for the upstream-supplied representation action: its
-# quadratic color Casimir distinguishes the two spectral sectors without
-# importing the words quark/lepton. This does not independently derive the
-# physical color action; it verifies the explicit embedding used by the runner.
-color_casimir = sum(Ta @ Ta for Ta in T_color_8)
-check10(
-    "10c embedded SU(3)-action implementation has Casimir 4/3 on H_+ "
-    "and 0 on H_-",
-    np.allclose(color_casimir @ P_sym_8, (4.0 / 3.0) * P_sym_8, atol=1e-12)
-    and np.allclose(color_casimir @ P_anti_8, np.zeros((8, 8)), atol=1e-12),
-)
-
-# For general Higgs hypercharge coordinate h, L4 gives Q=T3+Y/(2h).
-# On the lower color-singlet component T3=-1/2 and Y0=-3. The relative
-# electric-charge readout q=-1 is an explicit physical premise; it fixes the
-# invariant ratio alpha/h, not alpha alone.
-t3_lower_singlet = -0.5
-y0_singlet = -3.0
-q_lower_singlet = -1.0
-alpha_over_h = 2.0 * (q_lower_singlet - t3_lower_singlet) / y0_singlet
-check10(
-    "10d supplied relative-charge readout gives invariant alpha/Y_H = 1/3",
-    abs(alpha_over_h - 1.0 / 3.0) < 1e-12,
-    f"alpha/Y_H={alpha_over_h:.12f}",
-)
-
-# Check the relevant common rescaling at a nontrivial h: matter and Higgs
-# hypercharges scale together, the coupling scales reciprocally, the L4
-# coefficient changes to 1/(2h), and the physical Q operator is invariant.
-c_scale = 7.0 / 5.0
-g_y = 0.37
-h_coordinate = 5.0 / 7.0
-alpha_coordinate = alpha_over_h * h_coordinate
-Y_coordinate = alpha_coordinate * (P_sym_8 - 3.0 * P_anti_8)
-Q_coordinate = T3 + Y_coordinate / (2.0 * h_coordinate)
-Y_scaled = c_scale * Y_coordinate
-h_scaled = c_scale * h_coordinate
-Q_scaled = T3 + Y_scaled / (2.0 * h_scaled)
-check10(
-    "10e joint (Y,Y_H,g_Y) rescaling leaves both Q and g_Y Y invariant",
-    np.allclose(Q_coordinate, Q_scaled, atol=1e-12)
-    and np.allclose(g_y * Y_coordinate,
-                    (g_y / c_scale) * Y_scaled, atol=1e-12),
-)
-
-# In the conventional h=Y_H=+1 coordinate, the invariant ratio is displayed
-# as alpha=1/3 and gives the usual two eigenvalues.
-Y_conventional = alpha_over_h * (P_sym_8 - 3.0 * P_anti_8)
-check10(
-    "10f choosing Y_H=+1 gives alpha=1/3 and eigenvalues (+1/3,-1)",
-    np.allclose(Y_conventional @ P_sym_8,
-                (1.0 / 3.0) * P_sym_8, atol=1e-12)
-    and np.allclose(Y_conventional @ P_anti_8,
-                    -1.0 * P_anti_8, atol=1e-12),
-)
-
-print()
-print(f"  PART 10 CHECKS: PASS={part10_pass} FAIL={part10_fail}")
-if part10_fail or part10_pass != 6:
-    raise AssertionError(
-        f"PART 10 name-free map/normalization checks failed: "
-        f"PASS={part10_pass} FAIL={part10_fail}"
+        FAIL += 1
+        tag = "FAIL"
+    suffix = f" -- {detail}" if detail else ""
+    print(f"[{tag}] {label}{suffix}")
+
+
+def close(a: np.ndarray, b: np.ndarray) -> bool:
+    return bool(np.allclose(a, b, atol=1e-12, rtol=0.0))
+
+
+def main() -> int:
+    theorem = THEOREM_PATH.read_text(encoding="utf-8")
+
+    required_theorem_markers = (
+        "**Type:** bounded_theorem",
+        "**Claim type:** bounded_theorem",
+        "bounded/conditional name-free algebra",
+        "(2,3)+(2,1)",
+        "+1:(-3)",
+        "normalized (+1/3,-1)",
+        "Status authority:** independent audit lane only",
+        "All particle naming, conventional readout tables, and convention-chain",
     )
-print()
-print("  The module decomposition uses no particle labels. The readout is bounded:")
-print("  q(lower color-singlet)=-1 is an explicit physical premise, which fixes")
-print("  alpha/Y_H=1/3; alpha=1/3 is its conventional Y_H=+1 coordinate.")
+    check(
+        "source theorem pins the bounded name-free surface",
+        all(marker in theorem for marker in required_theorem_markers),
+    )
+
+    forbidden_theorem_tokens = (
+        "Q_L",
+        "L_L",
+        "u_L",
+        "d_L",
+        "nu_L",
+        "e_L",
+        "quark",
+        "lepton",
+        "Standard Model",
+        "Gell-Mann",
+        "Higgs",
+        "electric charge",
+        "electric-charge",
+        "CHAIN-L",
+    )
+    check(
+        "source theorem contains no particle-name or SM readout material",
+        all(token not in theorem for token in forbidden_theorem_tokens),
+        ", ".join(
+            token
+            for token in forbidden_theorem_tokens
+            if token in theorem
+        ),
+    )
+
+    swap4 = np.array(
+        [
+            [1, 0, 0, 0],
+            [0, 0, 1, 0],
+            [0, 1, 0, 0],
+            [0, 0, 0, 1],
+        ],
+        dtype=complex,
+    )
+    i4 = np.eye(4, dtype=complex)
+    p_sym4 = (i4 + swap4) / 2
+    p_anti4 = (i4 - swap4) / 2
+
+    check(
+        "SWAP_23 is a self-adjoint involution",
+        close(swap4 @ swap4, i4) and close(swap4.conj().T, swap4),
+    )
+    check("P_sym is idempotent", close(p_sym4 @ p_sym4, p_sym4))
+    check("P_anti is idempotent", close(p_anti4 @ p_anti4, p_anti4))
+    check(
+        "P_sym and P_anti are complementary and orthogonal",
+        close(p_sym4 + p_anti4, i4)
+        and close(p_sym4 @ p_anti4, np.zeros((4, 4), dtype=complex)),
+    )
+    check(
+        "last-two-factor projector ranks are 3 and 1",
+        np.linalg.matrix_rank(p_sym4) == 3
+        and np.linalg.matrix_rank(p_anti4) == 1,
+    )
+
+    i2 = np.eye(2, dtype=complex)
+    p_sym8 = np.kron(i2, p_sym4)
+    p_anti8 = np.kron(i2, p_anti4)
+    swap8 = np.kron(i2, swap4)
+    check(
+        "embedded structural block ranks are 6 and 2",
+        np.linalg.matrix_rank(p_sym8) == 6
+        and np.linalg.matrix_rank(p_anti8) == 2,
+    )
+    check(
+        "the (2,3)+(2,1) decomposition is complete on dimension 8",
+        int(round(np.trace(p_sym8).real + np.trace(p_anti8).real)) == 8,
+    )
+
+    y0 = p_sym8 - 3 * p_anti8
+    check("Y_0 is traceless", abs(np.trace(y0)) < 1e-12)
+    y0_eigs = np.linalg.eigvalsh(y0)
+    check(
+        "Y_0 spectrum is +1 with multiplicity 6 and -3 with multiplicity 2",
+        np.count_nonzero(np.isclose(y0_eigs, 1.0, atol=1e-12)) == 6
+        and np.count_nonzero(np.isclose(y0_eigs, -3.0, atol=1e-12)) == 2,
+    )
+
+    trace_constraint = np.array([[6.0, 2.0]])
+    check(
+        "traceless central block-scalar kernel is one-dimensional",
+        2 - np.linalg.matrix_rank(trace_constraint) == 1
+        and close(trace_constraint @ np.array([[1.0], [-3.0]]), np.zeros((1, 1))),
+    )
+
+    y_normalized = y0 / 3
+    normalized_eigs = np.linalg.eigvalsh(y_normalized)
+    check(
+        "supplied scale gives normalized (+1/3,-1) spectrum",
+        np.count_nonzero(np.isclose(normalized_eigs, 1 / 3, atol=1e-12)) == 6
+        and np.count_nonzero(np.isclose(normalized_eigs, -1.0, atol=1e-12)) == 2,
+    )
+    check(
+        "the two block eigenvalues have ratio +1:(-3)",
+        np.isclose((-1.0) / (1 / 3), -3.0, atol=1e-12),
+    )
+
+    sigma_x = np.array([[0, 1], [1, 0]], dtype=complex)
+    sigma_y = np.array([[0, -1j], [1j, 0]], dtype=complex)
+    sigma_z = np.array([[1, 0], [0, -1]], dtype=complex)
+    weak_generators = [np.kron(sigma / 2, i4) for sigma in (sigma_x, sigma_y, sigma_z)]
+    check(
+        "Y_0 commutes with all first-factor SU(2) generators",
+        all(close(generator @ y0 - y0 @ generator, np.zeros((8, 8))) for generator in weak_generators),
+    )
+    check(
+        "Y_0 commutes with SWAP_23",
+        close(swap8 @ y0 - y0 @ swap8, np.zeros((8, 8))),
+    )
+
+    print()
+    print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
+    if FAIL:
+        print("VERDICT: source split or name-free algebra failed")
+        return 1
+    if PASS != 16:
+        print(f"VERDICT: unexpected check count {PASS}; expected 16")
+        return 1
+    print("VERDICT: bounded name-free two-block algebra verified")
+    return 0
 
 
-# ============================================================================
-# FINAL SUMMARY
-# ============================================================================
-print()
-print()
-print("=" * 72)
-print("FINAL SUMMARY  (chain-claim verification)")
-print("=" * 72)
-print()
-print("  NAME-FREE CHAIN ASSEMBLY THEOREM (this note):")
-print("  Under the chain (L1 ratio + L2 representation classes + L3 readout +")
-print("  L4 GMN/EWSB readout),")
-print("  the unique traceless central block-scalar direction in the")
-print("  gl(3)+gl(1) commutant of")
-print("  {SU(2)_weak, SWAP_{23}} gives the normalized (+1/3,-1) pattern on")
-print("  the structural (2,3)+(2,1) blocks without particle names.")
-print("  The runner checks each link and tags every block as STRUCTURAL /")
-print("  CHAIN-L2 / CHAIN-L3 /")
-print("  CHAIN-L4 / CONSISTENCY.")
-print()
-print("  STRUCTURAL FACTS verified (no SM-target import):")
-print("    * gl(3)+gl(1) commutant decomposition (upstream)")
-print("    * tracelessness on (Sym^2, Anti^2) gives ratio +1:(-3)")
-print("    * uniqueness up to alpha (one-parameter traceless family)")
-print("    * commutation [Y, S_i] = [Y, T_a] = 0 with weak and color")
-print("    * Part 6 quarantines squared-trace/GUT/sin^2 material outside")
-print("      this parent theorem; it is not retained-source evidence here")
-print()
-print("  NON-LOAD-BEARING NAMING/CONSISTENCY CONSEQUENTS")
-print("  (under L2 matter assignment, L3 scale, L4 GMN):")
-print("    * Sym^2 sector identified with Q_L (color triplet); Anti^2 with L_L")
-print("    * Y_alpha at alpha = 1/3 reproduces (+1/3, -1) on (Q_L, L_L)")
-print("    * Q = T_3 + Y/2 -- DERIVED (L4, PART 9) as the unique unbroken")
-print("      generator annihilating the neutral Higgs vev record with the")
-print("      chained Y_H = +1; reproduces SM charges (2/3, -1/3, 0, -1)")
-print("    * Part 10 constructs the carrier sectors from SWAP_23 projectors before")
-print("      attaching particle names; under the supplied lower-singlet charge")
-print("      readout it derives alpha/Y_H=1/3, displayed as alpha=1/3 only in")
-print("      the conventional Y_H=+1 coordinate")
-print("    * quark/lepton names are meta convention content, not theorem output")
-print()
-print("  WHAT IS NOT CLAIMED:")
-print("    * Internal derivation of (Sym^2 = SU(3)-fundamental) -- chained")
-print("      to LHCM matter-assignment note (its own audit row)")
-print("    * Internal derivation of alpha = 1/3 in this parent -- chained to")
-print("      the bounded normalization bridge if retained, otherwise admitted")
-print("      as an SM convention here")
-print("    * Internal SM-Y identification step; the rewrite removes it from")
-print("      the load-bearing chain and routes matter assignment through L2")
-print()
-print("  AUDITOR RESPONSIVENESS MAP (cross-reference to source note):")
-print("    Auditor (2026-05-02) verdict-rationale items mapped to chain links:")
-print("      [carrier identification    ] -> CHAIN-L2 (LHCM matter assignment)")
-print("      [conventional normalization] -> CHAIN-L3 (admitted SM convention)")
-print("      [carrier-after identification problem] -> the load-bearing surface")
-print("        is now the chain-assembly statement itself; the structural")
-print("        ratio half is supplied by the retained graph-first surface")
-print("        through its ratio-decoration row")
-print("    See docs/HYPERCHARGE_IDENTIFICATION_NOTE.md section 'Auditor")
-print("    responsiveness' for the full complaint-to-rewrite table.")
-print("=" * 72)
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -28,17 +28,17 @@ Owner-approval history for every axiom/primitive/governance change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3741 |
-| Applied audit verdicts | 539 |
+| Ledger rows | 3744 |
+| Applied audit verdicts | 538 |
 | Retained-grade rows, including boxed decorations | 469 |
 | Retained positive theorems | 81 |
 | Retained no-go rows | 22 |
 | Retained bounded rows | 349 |
 | Boxed decorations under retained parents | 17 |
 | Open gates | 4 |
-| Unaudited rows | 2842 |
+| Unaudited rows | 2844 |
 | Retained-pending-chain rows | 9 |
-| Audited conditional rows | 39 |
+| Audited conditional rows | 38 |
 | Audited renaming rows | 14 |
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 10 |
@@ -50,19 +50,19 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2896 |
-| Ready rows | 598 |
+| Total pending rows | 2898 |
+| Ready rows | 600 |
 | Cycle-break targets | 49 |
-| Critical pending | 673 |
-| High pending | 335 |
-| Medium pending | 757 |
+| Critical pending | 675 |
+| High pending | 332 |
+| Medium pending | 760 |
 | Leaf pending | 1131 |
 
 Next ready rows by queue order:
 
 - [`cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; non_terminal_conditional
 - [`fermion_parity_z2_grading_theorem_note_2026-05-02`](../../docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) - critical; non_terminal_failed
-- [`s3_mass_matrix_no_go_note`](../../docs/S3_MASS_MATRIX_NO_GO_NOTE.md) - critical; unaudited
+- [`s3_mass_matrix_no_go_note`](../../docs/S3_MASS_MATRIX_NO_GO_NOTE.md) - critical; audit_in_progress
 - [`hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`](../../docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md) - critical; unaudited
 - [`gmn_vev_annihilator_l4_support_note_2026-07-02`](../../docs/GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md) - critical; unaudited
 - [`clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
@@ -78,11 +78,11 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 256 |
+| critical | `unaudited` | 255 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 124 |
+| critical | `audit_in_progress` | 2 |
 | critical | `audited_conditional` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | high | `audited_conditional` | 1 |
 | high | `audited_failed` | 1 |
@@ -96,19 +96,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3913 |
-| Critical nodes | 763 |
-| High nodes | 401 |
-| Medium nodes | 990 |
-| Leaf nodes | 1759 |
+| Citation-graph nodes | 3916 |
+| Critical nodes | 765 |
+| High nodes | 398 |
+| Medium nodes | 993 |
+| Leaf nodes | 1760 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1967 descendants; score 223.943
-- `graph_first_su3_integration_note` - critical; 1604 descendants; score 65.648
+- `minimal_axioms` - critical; 1960 descendants; score 223.437
+- `graph_first_su3_integration_note` - critical; 1599 descendants; score 65.144
 - `three_generation_observable_theorem_note` - critical; 1226 descendants; score 63.261
-- `observable_principle_from_axiom_note` - critical; 1047 descendants; score 62.033
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 61.644
+- `observable_principle_from_axiom_note` - critical; 1046 descendants; score 61.532
 - `plaquette_self_consistency_note` - critical; 1172 descendants; score 50.196
 - `minimal_axioms_2026-05-03` - critical; 1072 descendants; score 45.067
 - `key_terminology` - critical; 1184 descendants; score 43.711

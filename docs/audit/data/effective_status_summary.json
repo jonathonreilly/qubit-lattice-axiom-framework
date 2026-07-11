@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2076,
-    "decoration": 29,
-    "meta": 355,
-    "no_go": 481,
-    "open_gate": 185,
-    "positive_theorem": 614
+    "bounded_theorem": 2045,
+    "decoration": 25,
+    "meta": 354,
+    "no_go": 458,
+    "open_gate": 195,
+    "positive_theorem": 663
   },
   "cycle_examples": [
     [
@@ -48,13 +48,13 @@
     "decoration_under_mirror_mutual_information_chokepoint_note": 1,
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
     "decoration_under_plaquette_self_consistency_note": 1,
-    "meta": 348,
+    "meta": 347,
     "open_gate": 4,
     "retained": 80,
     "retained_bounded": 349,
     "retained_no_go": 22,
     "retained_pending_chain": 9,
-    "unaudited": 2843
+    "unaudited": 2844
   },
   "retained_pending_chain_count": 9,
   "retained_pending_chain_examples": [

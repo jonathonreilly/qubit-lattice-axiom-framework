@@ -57842,35 +57842,35 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18"
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_zero_import_authority_note"
+      "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17"
+      "to": "fermion_parity_z2_grading_theorem_note_2026-05-02"
     },
     {
       "from": "repo.front_door_status",
-      "to": "neutrino_gamma1_wsource_application_bridge_note_2026-07-09"
+      "to": "s3_mass_matrix_no_go_note"
     },
     {
       "from": "repo.front_door_status",
-      "to": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
+      "to": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+      "to": "gmn_vev_annihilator_l4_support_note_2026-07-02"
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_ew_m_residual_note_2026-05-02"
+      "to": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+      "to": "abj_epsilon_index_square_block_no_go_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -112142,17 +112142,17 @@
         "kinetic_isotropy_primitive",
         "realized_state_primitive",
         "tier_a_residual_owner_adoption_retirement_2026-07-04",
-        "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
-        "yt_zero_import_authority_note",
-        "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17",
-        "neutrino_gamma1_wsource_application_bridge_note_2026-07-09",
-        "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
-        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "yt_ew_m_residual_note_2026-05-02",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+        "fermion_parity_z2_grading_theorem_note_2026-05-02",
+        "s3_mass_matrix_no_go_note",
+        "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+        "gmn_vev_annihilator_l4_support_note_2026-07-02",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+        "abj_epsilon_index_square_block_no_go_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7c04a33de398737f32cf594ece0a33ae0b9772ef05958ffc7540d39e17211d82",
+      "note_hash": "67f09e337a34e0a01f6ca18b7ec41f5ef42c0889e9d56c8a395e32898eacc919",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

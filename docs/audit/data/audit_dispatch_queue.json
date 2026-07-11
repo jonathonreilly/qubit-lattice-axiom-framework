@@ -596,7 +596,7 @@
     },
     {
       "actual_audit_status": "unaudited",
-      "actual_claim_type": "positive_theorem",
+      "actual_claim_type": "open_gate",
       "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
@@ -975,7 +975,7 @@
     },
     {
       "actual_audit_status": "unaudited",
-      "actual_claim_type": "bounded_theorem",
+      "actual_claim_type": "positive_theorem",
       "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
@@ -1790,7 +1790,7 @@
     },
     {
       "actual_audit_status": "unaudited",
-      "actual_claim_type": "bounded_theorem",
+      "actual_claim_type": "open_gate",
       "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
@@ -3045,7 +3045,7 @@
     },
     {
       "actual_audit_status": "unaudited",
-      "actual_claim_type": "bounded_theorem",
+      "actual_claim_type": "positive_theorem",
       "actual_effective_status": "unaudited",
       "audit_question": null,
       "claim_id": "koide_circulant_wilson_target_note_2026-04-18",

@@ -1986,12 +1986,12 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "pmns_twisted_flux_transfer_holonomy_boundary_note",
-      "claim_scope": null,
+      "claim_scope": "Exact finite cyclic-frame moment identities and the rank-one fixed-angle holonomy functional on the three-real reduced oriented-cycle carrier; global parameter identifiability and the physical PMNS carrier identification were also checked.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
@@ -1999,13 +1999,13 @@
         "staggered_dirac_realization_gate_note_2026-05-03"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [
         "scripts/pmns_lower_level_utils.py"
       ],
       "load_bearing_score": 10.392,
       "note_path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
       "transitive_descendants": 671

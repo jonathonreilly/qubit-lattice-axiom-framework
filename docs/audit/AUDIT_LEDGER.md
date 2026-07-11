@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 357 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2808 |
+| unaudited | 2807 |
 | audit_in_progress | 20 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 48 |
+| ~~audited_conditional~~ | 49 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 24 |
 | `audited_clean` | 449 |
-| `audited_conditional` | 48 |
+| `audited_conditional` | 49 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 15 |
-| `unaudited` | 3158 |
+| `unaudited` | 3157 |
 
 | claim_type | count |
 |---|---:|
@@ -614,6 +614,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -5260,6 +5261,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The conclusions follow algebraically from the explicitly stipulated residual hypotheses and standard PMNS parametrization. The nonzero phase factor is stated as a hypothesis, and the excluded endpoint is handled correctly.
 - **rationale:** The proof is a genuine class-A algebraic closure within its expressly bounded conditional scope and does not claim to derive the stipulated residuals from the framework. The runner performs the stated exact identities and endpoint checks rather than merely printing a verdict or importing external values. No cited open authority or unclosed bridge is required for the audited implication itself.
 - **auditor confidence:** high
+
+### `pmns_twisted_flux_transfer_holonomy_boundary_note`
+
+- **Note:** [`PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md`](../../docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite cyclic-frame moment identities and the rank-one fixed-angle holonomy functional on the three-real reduced oriented-cycle carrier; global parameter identifiability and the physical PMNS carrier identification were also checked.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00058-pmns_twisted_flux_transfer_h`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The identities tr(T)/3 = xbar and tr(C^2 T)/3 = ybar e^{i phi}, together with h(u,v,w) = 2cos(phi)u + 2sin(phi)v + w, establish the transfer moments and the two-real-dimensional kernel of one fixed-angle probe.  _(class `A`)_
+- **chain closes:** False — The matrix identities and two-real-dimensional kernel close algebraically, but exact recovery of ybar and phi requires unstated nonzero-sign and phase-branch conventions. The owner-governed dependency boundary explicitly supplies no PMNS alignment, so it does not close the physical PMNS carrier naming.
+- **rationale:** The runner genuinely evaluates finite 3x3 algebra, and the fixed-angle functional is nonzero because its w coefficient is one, so rank-nullity gives an exact two-real kernel. However, the asserted recovery of ybar and phi is not globally injective without ybar > 0, ybar != 0, and a specified phase branch or modulo-2pi interpretation; the sampled positive fixture does not supply those hypotheses. Moreover, the registered owner-governed boundary expressly supplies no CKM/PMNS alignment, leaving the physical PMNS naming outside the accepted-premise carve-out.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `pmns_uniform_scalar_deformation_boundary_note`
 

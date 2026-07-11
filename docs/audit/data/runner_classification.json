@@ -461,7 +461,7 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 4,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
@@ -472,8 +472,8 @@
       "assert_count": 2,
       "counts": {
         "A": 0,
-        "B": 5,
-        "C": 11,
+        "B": 6,
+        "C": 10,
         "D": 5
       },
       "decoration_candidate": false,
@@ -521,7 +521,7 @@
       "counts": {
         "A": 6,
         "B": 1,
-        "C": 2,
+        "C": 1,
         "D": 3
       },
       "decoration_candidate": false,
@@ -673,14 +673,14 @@
       "runner": "scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py"
     },
     "acphilambda_retirement_basis_rematch_and_claim_surface_note_2026-07-06": {
-      "assert_count": 2,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 11,
-        "C": 5,
-        "D": 4
+        "B": 2,
+        "C": 0,
+        "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/acphilambda_retirement_basis_rematch_claim_surface_2026_07_06.py"
     },
@@ -904,7 +904,7 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 2,
+        "B": 1,
         "C": 0,
         "D": 0
       },
@@ -3508,9 +3508,9 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
-        "D": 14
+        "D": 15
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -3580,9 +3580,9 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
-        "D": 2
+        "D": 3
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -3593,7 +3593,7 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 7,
+        "C": 6,
         "D": 0
       },
       "decoration_candidate": false,
@@ -25155,10 +25155,10 @@
     "observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05": {
       "assert_count": 0,
       "counts": {
-        "A": 8,
-        "B": 0,
+        "A": 9,
+        "B": 1,
         "C": 5,
-        "D": 2
+        "D": 3
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -25564,8 +25564,8 @@
       "assert_count": 0,
       "counts": {
         "A": 9,
-        "B": 2,
-        "C": 4,
+        "B": 4,
+        "C": 3,
         "D": 0
       },
       "decoration_candidate": false,
@@ -25709,7 +25709,7 @@
       "counts": {
         "A": 22,
         "B": 0,
-        "C": 4,
+        "C": 2,
         "D": 1
       },
       "decoration_candidate": false,
@@ -31722,10 +31722,10 @@
         "A": 0,
         "B": 4,
         "C": 0,
-        "D": 8
+        "D": 2
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": "B",
       "runner": "scripts/frontier_record_p1_dependency_audit_verifier.py"
     },
     "record_pointer_broadcast_circuit_interface_2026-06-05": {
@@ -34720,7 +34720,7 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 2,
         "C": 0,
         "D": 0
       },
@@ -37601,7 +37601,7 @@
       "counts": {
         "A": 4,
         "B": 1,
-        "C": 29,
+        "C": 28,
         "D": 0
       },
       "decoration_candidate": false,
@@ -38087,18 +38087,6 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py"
-    },
-    "tier_a_residual_owner_adoption_retirement_2026-07-04": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 1,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "B",
-      "runner": "scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py"
     },
     "time_axis_is_the_history_index_record_monotone_direction_bounded_note_2026-07-03": {
       "assert_count": 1,
@@ -43098,7 +43086,7 @@
       "counts": {
         "A": 0,
         "B": 1,
-        "C": 4,
+        "C": 2,
         "D": 0
       },
       "decoration_candidate": false,
@@ -43158,7 +43146,7 @@
       "counts": {
         "A": 6,
         "B": 1,
-        "C": 2,
+        "C": 1,
         "D": 3
       },
       "decoration_candidate": false,
@@ -43301,17 +43289,17 @@
       "exists": true
     },
     "scripts/acphilambda_retirement_basis_rematch_claim_surface_2026_07_06.py": {
-      "assert_count": 2,
+      "assert_count": 1,
       "claims": [
         "acphilambda_retirement_basis_rematch_and_claim_surface_note_2026-07-06"
       ],
       "counts": {
         "A": 0,
-        "B": 11,
-        "C": 5,
-        "D": 4
+        "B": 2,
+        "C": 0,
+        "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "B",
       "exists": true
     },
@@ -43502,7 +43490,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 2,
+        "B": 1,
         "C": 0,
         "D": 0
       },
@@ -45529,10 +45517,10 @@
         "observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05"
       ],
       "counts": {
-        "A": 8,
-        "B": 0,
+        "A": 9,
+        "B": 1,
         "C": 5,
-        "D": 2
+        "D": 3
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -45620,8 +45608,8 @@
       ],
       "counts": {
         "A": 9,
-        "B": 2,
-        "C": 4,
+        "B": 4,
+        "C": 3,
         "D": 0
       },
       "decoration_candidate": false,
@@ -51090,7 +51078,7 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 7,
+        "C": 6,
         "D": 0
       },
       "decoration_candidate": false,
@@ -52379,8 +52367,8 @@
       ],
       "counts": {
         "A": 0,
-        "B": 5,
-        "C": 11,
+        "B": 6,
+        "C": 10,
         "D": 5
       },
       "decoration_candidate": false,
@@ -54000,9 +53988,9 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
-        "D": 14
+        "D": 15
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -54060,9 +54048,9 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
-        "D": 2
+        "D": 3
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -69940,7 +69928,7 @@
       "counts": {
         "A": 22,
         "B": 0,
-        "C": 4,
+        "C": 2,
         "D": 1
       },
       "decoration_candidate": false,
@@ -75169,10 +75157,10 @@
         "A": 0,
         "B": 4,
         "C": 0,
-        "D": 8
+        "D": 2
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_record_pointer_broadcast_circuit_interface_2026_06_05.py": {
@@ -76924,7 +76912,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 1,
+        "B": 2,
         "C": 0,
         "D": 0
       },
@@ -92100,7 +92088,7 @@
       "counts": {
         "A": 4,
         "B": 1,
-        "C": 29,
+        "C": 28,
         "D": 0
       },
       "decoration_candidate": false,
@@ -92390,21 +92378,6 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "exists": true
-    },
-    "scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py": {
-      "assert_count": 1,
-      "claims": [
-        "tier_a_residual_owner_adoption_retirement_2026-07-04"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 1,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "B",
       "exists": true
     },
     "scripts/topological_instanton_bounded_certificate.py": {
@@ -93529,16 +93502,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 718,
+    "decoration_candidates": 719,
     "dominant_class_distribution": {
       "A": 515,
       "B": 663,
       "C": 1317,
-      "D": 455,
+      "D": 454,
       "none": 458
     },
-    "runners_classified": 3408,
-    "runners_with_C": 1797,
-    "runners_with_D": 1097
+    "runners_classified": 3407,
+    "runners_with_C": 1795,
+    "runners_with_D": 1096
   }
 }

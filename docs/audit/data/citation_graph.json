@@ -997,6 +997,10 @@
       "to": "minimal_axioms"
     },
     {
+      "from": "acphilambda_r_eta_value_face_registered_angle_functional_exactness_relocation_note_2026-07-05",
+      "to": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11"
+    },
+    {
       "from": "acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18",
       "to": "minimal_axioms"
     },
@@ -59238,10 +59242,11 @@
         "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
         "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
         "realized_state_primitive",
-        "minimal_axioms"
+        "minimal_axioms",
+        "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1e5effc6ac0a5e5e0f8cf807f16c90194a739e315e052bd9e65bea2334140406",
+      "note_hash": "fb59f306588544e676e42224213fe7f866ed6028c911b83ef5629839bd6a944c",
       "path": "docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md",
       "runner_path": "scripts/frontier_acphilambda_r_eta_value_face_registered_angle_2026_07_05.py",
       "title": "AC_phi_lambda Sub-Admission (ii) Value Face: Registered-Angle Functional, Law-Freeness, and Exactness Relocation"
@@ -87692,7 +87697,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "74286d3f8999553d6fb5125ddb629944b8a07f30dd09dc26fc0f9dba18cfcdd5",
+      "note_hash": "ce92a69b0b76b293859cd5c63e86982f6ad88f850bfe7c78abaee04ee69c690b",
       "path": "docs/KEY_TERMINOLOGY.md",
       "runner_path": "scripts/render_controlled_vocabulary.py",
       "title": "Key Terminology"
@@ -112109,7 +112114,7 @@
         "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9db46d25390128595d8f1bfbba02f0272fa6ed0960877d396d9bd5113c07cec3",
+      "note_hash": "9b8250e611db26f05adec2811169694753ea68ff59b2a37f8c2219b0dcf605b2",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"
@@ -129095,7 +129100,7 @@
       "open_gate": 206,
       "positive_theorem": 657
     },
-    "edge_count": 14569,
+    "edge_count": 14570,
     "leaf_count": 1319,
     "node_count": 3912,
     "root_count": 1109,

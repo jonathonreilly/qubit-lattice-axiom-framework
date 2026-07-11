@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Bounded non-ideal Bell-resource teleportation-fidelity harness.
 
-Status: planning / first artifact. This runner tests ordinary quantum state
-teleportation with imperfect or arbitrary two-qubit resource density matrices.
-It does not claim matter teleportation, mass transfer, charge transfer, or
-faster-than-light transport.
+Status: proposed_retained bounded fixed-protocol theorem; independent audit
+required. This runner tests ordinary quantum state teleportation with imperfect
+or arbitrary two-qubit resource density matrices. It does not claim matter
+teleportation, mass transfer, charge transfer, or faster-than-light transport.
 
 The protocol is the standard three-qubit teleportation circuit:
 
@@ -241,6 +241,37 @@ def exact_average_fidelity(resource_rho: np.ndarray) -> float:
     phi = bell_state(0, 0)
     entanglement_fidelity = float(np.real(np.vdot(phi, choi @ phi)))
     return float((2.0 * entanglement_fidelity + 1.0) / 3.0)
+
+
+def bell_operator_basis_pauli_reduction_error() -> float:
+    """Exhaust the linear basis behind the fixed-protocol Pauli reduction.
+
+    For every Bell resource operator |beta_g><beta_h| and every input matrix
+    unit |i><j|, compare the explicitly measured-and-corrected channel with
+    delta_(g,h) P_g |i><j| P_g^dagger.  These 16 resource operators and four
+    input operators span the full linear claim, including Bell coherences.
+    """
+    max_error = 0.0
+    for g_bits in OUTCOME_ORDER:
+        bell_g = bell_state(*g_bits)
+        pauli_g = correction_operator(*g_bits)
+        for h_bits in OUTCOME_ORDER:
+            bell_h = bell_state(*h_bits)
+            resource_op = np.outer(bell_g, bell_h.conj())
+            for row in range(2):
+                for col in range(2):
+                    input_op = np.zeros((2, 2), dtype=complex)
+                    input_op[row, col] = 1.0
+                    actual = teleport_channel_apply(input_op, resource_op)
+                    if g_bits == h_bits:
+                        expected = pauli_g @ input_op @ pauli_g.conj().T
+                    else:
+                        expected = np.zeros((2, 2), dtype=complex)
+                    max_error = max(
+                        max_error,
+                        float(np.max(np.abs(actual - expected))),
+                    )
+    return max_error
 
 
 def bell_overlaps(resource_rho: np.ndarray) -> dict[tuple[int, int], float]:
@@ -522,6 +553,7 @@ def print_thresholds(diagnostics: list[ResourceDiagnostics]) -> None:
         abs(item.exact_avg_fidelity - item.predicted_avg_fidelity)
         for item in diagnostics
     )
+    reduction_error = bell_operator_basis_pauli_reduction_error()
     random_items = [item for item in diagnostics if item.label.startswith("random two-qubit")]
     random_above = sum(
         item.exact_avg_fidelity > CLASSICAL_AVG_FIDELITY + 1e-10
@@ -547,6 +579,10 @@ def print_thresholds(diagnostics: list[ResourceDiagnostics]) -> None:
     print(
         "  max exact-vs-Bell-overlap formula error in this run: "
         f"{formula_error:.3e}"
+    )
+    print(
+        "  max Bell-operator-basis Pauli-reduction error in this run: "
+        f"{reduction_error:.3e}"
     )
     if random_items:
         print(
@@ -597,6 +633,7 @@ def print_acceptance_gates(
         abs(item.exact_avg_fidelity - item.predicted_avg_fidelity)
         for item in diagnostics
     )
+    reduction_error = bell_operator_basis_pauli_reduction_error()
     max_pairwise = max(item.max_pairwise_no_record_distance for item in diagnostics)
     max_no_record_change = max(item.max_no_record_change for item in diagnostics)
     max_trace_error = max(item.max_trace_error_after_correction for item in diagnostics)
@@ -604,6 +641,7 @@ def print_acceptance_gates(
     gates = {
         "all resource matrices physical": all(item.checks.valid for item in diagnostics),
         "ideal resource fidelity": abs(ideal.exact_avg_fidelity - 1.0) <= 10 * tolerance,
+        "Bell-operator-basis Pauli reduction": reduction_error <= 10 * tolerance,
         "fixed Bell-overlap formula": max_formula_error <= 10 * tolerance,
         "isotropic threshold bracket": (
             below.exact_avg_fidelity < CLASSICAL_AVG_FIDELITY
@@ -664,7 +702,10 @@ def main() -> int:
     ]
 
     print("BOUNDED NON-IDEAL BELL-RESOURCE TELEPORTATION-FIDELITY HARNESS")
-    print("Status: planning / first artifact; quantum state teleportation only")
+    print(
+        "Status: proposed_retained bounded fixed-protocol theorem; "
+        "independent audit required"
+    )
     print(f"Random input states: {args.trials} plus 6 Pauli-axis probes (seed={args.seed})")
     print(f"Random arbitrary resource matrices: {args.random_resources}")
     print()

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_observable_principle_p2_phase_blindness_sector_resolved_2026_06_04.py
-runner_sha256: 590c060514b627a9861759abbe91f97862ff04d5149ebecf3f88b0f9ff242e21
+runner_sha256: 34e7c31c194344baa202bc2485079647932646b3aa21c11a28bbd15664d4781a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.72
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 
@@ -20,7 +20,7 @@ status: ok
 [PASS] n=4 antisymmetric: det(A+mI) = (m^2+l1^2)(m^2+l2^2) (real, >0)  [det = (lambda1**2 + m**2)*(lambda2**2 + m**2)]
 [PASS] real antisymmetric (6x6) + real mass: det real (Im/|det| ~ 0) over 200 seeds  [max |Im det|/|det| = 0.00e+00]
 [PASS] real antisymmetric (6x6) + real mass: det = prod(m^2+lambda^2) > 0 over 200 seeds  [min Re det = 1.7309]
-[PASS] epsilon-graded anti-Hermitian ({eps,A}=0) + mass: det real-positive  [||{eps,A}||=0.0e+00, det=198.4895+2.0e-14j]
+[PASS] epsilon-graded anti-Hermitian ({eps,A}=0) + mass: det real-positive  [||{eps,A}||=0.0e+00, det=198.4895+1.1e-14j]
 [PASS] mass-like sector: arg(det)=0 so |det|=det (P2 automatic by positivity)  [det=2.180000, arg=0]
 
 === Part C: generic (non-self-adjoint) source => det complex, arg != 0 (where the Part A compactness lemma does the work) ===
@@ -31,16 +31,16 @@ status: ok
 [PASS] mass-like sector has arg(det)=0 => Part A compactness adds nothing there  [honest scope: compactness is non-vacuous only on the generic sector]
 [PASS] two sectors are complementary and EXHAUST det(D+J) in C* (R_{>0} via positivity; the rest via single-valued-real phase-blindness)  [documented: every det value is either real-positive (B) or carries a phase (A)]
 
-=== Part E: residual analysis -- P2 routes into the (M)/AC_phi_lambda determinant identification; admission count unchanged ===
+=== Part E: residual analysis -- P2 routes into the (M)/AC_phi_lambda determinant identification; no extra premise class ===
 [PASS] residual is (M)/Berezin det-identification (AC_phi_lambda-gated), NOT P2 itself  [P2 has no separate residual beyond AC_phi_lambda plus named regularity hypotheses]
-[PASS] admission count unchanged: genuine Tier-A admissions stay {AC_phi_lambda, theta}  [no new admission introduced; Record supplies additivity only]
+[PASS] no admission authority exists; the AC occupancy dependency remains an open gate  [Record supplies additivity only; the open gate supplies no premise]
 [PASS] continuity attributed to finite-block analyticity of j->det(D+jI), NOT to Record  [det polynomial=j**2 + 5*j - 2; Record boundary states no P2 import]
 
 ======================================================================
 TOTAL: 19 PASS / 0 FAIL  (out of 19 checks)
 ======================================================================
 
-All checks passed: P2 phase-blindness is sector-resolved (audit-ratified positivity on the mass-like sector; prior compact-phase lemma on the generic sector); its only residual is the (M)/AC_phi_lambda determinant identification plus named regularity hypotheses. No new admission.
+All checks passed: P2 phase-blindness is sector-resolved (audit-ratified positivity on the mass-like sector; prior compact-phase lemma on the generic sector); its only residual is the (M)/AC_phi_lambda determinant identification plus named regularity hypotheses. No new premise.
 
 ----- stderr -----
 

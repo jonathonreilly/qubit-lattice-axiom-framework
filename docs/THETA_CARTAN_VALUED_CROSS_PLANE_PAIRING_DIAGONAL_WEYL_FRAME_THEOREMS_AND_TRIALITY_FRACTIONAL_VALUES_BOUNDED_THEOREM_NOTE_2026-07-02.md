@@ -1,6 +1,9 @@
 # The Cartan-Valued Cross-Plane Pairing: Diagonal-Weyl-Invariant Joint-Orbit Data, Provably Underdetermined by Per-Plane Weyl Orbits; Values in (1/3)Z with the Fractional Part Exactly the Mod-3 Center Pairing and an Integer Odd Witness on the Center-Trivial Subsector — the Frame Residual Sharpens to Relative-Frame Correlation Across the 4D Gluing (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Claim type:** bounded_theorem (exact finite constructions plus scoped frame
 obstructions; not a terminal no-go, not a discharge of the theta admission).
 **Audit-status authority:** independent audit lane only. This note does not set an
@@ -123,7 +126,7 @@ The residual (i-b') accordingly sharpens to:
    `T^4_2`); no landed note is consumed as a premise.
 
 3. **Tier-A theta registry text**
-   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
+   ([`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json),
    gauge side): the residual is "localized to the multi-plaquette /
    large-gauge-winding account"; the object constructed here is that
    account's SU(3)-shaped pairing.
@@ -299,7 +302,7 @@ readout under the clarified readout discipline.
 | relative-frame correlation derived from 4D gluing/recoupling | OPEN — named residual (i-b''); 2D case settled affirmatively |
 | frame registered as record content | LOGICALLY OPEN — would need a derivation that records form on frame data; not pursued, not claimed |
 | center-projected (Z_3) data alone | insufficient for the integer pairing (block 3); here seen as exactly the fractional part |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

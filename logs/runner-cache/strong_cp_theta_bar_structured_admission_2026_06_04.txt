@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/strong_cp_theta_bar_structured_admission_2026_06_04.py
-runner_sha256: 2260355ca229bfbca07062d2f667497e99260a4ffd0d2927a63bb16be2123bb4
+runner_sha256: dea1a27253371753d4938ccace9ec87bbdb866279ed672e790731d65a14f04fe
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 [PASS] form-degree check: C(3,4)=0 and C(4,4)=1
@@ -22,7 +22,7 @@ status: ok
 SCORECARD PASS=6 FAIL=0
 FINDING: the runner supports a structured open gate for theta_bar.
 It verifies finite form-degree, O_h pseudoscalar, and C_3 circulant facts;
-it does not retire the Strong-CP Tier-A admission, change registry counts,
+it does not close the Strong-CP open problem or change premise policy,
 or establish a Strong-CP solution. No audit status.
 
 ----- stderr -----

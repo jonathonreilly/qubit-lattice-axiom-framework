@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py
+runner_sha256: c7b309b53705d7cad0bc2a5bbdb5ede002d424bcea9e6e9db7e0ff17ab19073d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.05
+status: ok
+----- stdout -----
 theta gauge winding axiom-update no-go verifier
 
 ========================================================================================
@@ -6,7 +14,7 @@ A. source presence and retained target
 [PASS] exists: docs/THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
 [PASS] exists: docs/audit/data/axiom_premise_nodes.json
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 [PASS] exists: docs/STRONG_CP_THETA_ZERO_NOTE.md
@@ -17,16 +25,16 @@ A. source presence and retained target
 [PASS] exists: docs/THETA_EMERGENT_Q_WEIGHTING_REALITY_RG_STABLE_BOUNDED_THEOREM_NOTE_2026-06-13.md
 [PASS] exists: docs/STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_IS_ADMISSIBLE_NOT_CLEAN_CLOSEABLE_BOUNDED_NOTE_2026-06-07.md
 [PASS] exists: docs/STRONG_CP_THETA_BAR_STRUCTURED_ADMISSION_2026-06-04.md
-[PASS] theta parent row is retained_bounded
+[PASS] theta parent row is retained-grade
 [PASS] theta parent row is audited_clean
 
 ========================================================================================
-B. Tier-A registry theta boundary
+B. admission-era decision history boundary
 ========================================================================================
-[PASS] live Tier-A genuine count is zero
+[PASS] decision history preserves zero final admission count
 [PASS] theta entry is retired, not live
 [PASS] theta retired-target record is preserved
-[PASS] theta retirement date is recorded
+[PASS] theta disposition correction date is recorded
 [PASS] theta retirement mechanism is retained derivation
 [PASS] historical theta minimum decomposition preserves two residual atoms
 [PASS] machine registry theta statement includes gauge side
@@ -35,11 +43,11 @@ B. Tier-A registry theta boundary
 [PASS] machine registry theta statement includes per-plaquette class
 [PASS] machine registry theta statement includes mass side
 [PASS] machine registry theta statement includes determinant-readout bridge
-[PASS] human registry names theta gauge side
-[PASS] human registry names theta mass side
+[PASS] decision history names theta gauge side
+[PASS] decision history names theta mass side
 [PASS] note has current-main posture line
-[PASS] note records live Tier-A zero posture
-[PASS] note says retirement records are not reopened
+[PASS] note records absence of an admission registry
+[PASS] note does not create an admission registry
 [PASS] note says theta is not retired
 [PASS] note says registry is not edited
 
@@ -63,7 +71,7 @@ C. approved premise-node and axiom non-supply
 [PASS] minimal axiom excludes/scopes transition probabilities or weights
 [PASS] minimal axiom excludes/scopes context selection
 [PASS] minimal axiom excludes/scopes source/action and physical-observable identificati
-[PASS] minimal axiom excludes/scopes the strong-CP theta admission
+[PASS] minimal axiom excludes/scopes the strong-CP theta gauge and mass-side derivation
 [PASS] minimal axiom excludes/scopes Records form.
 [PASS] note theorem names missing gauge bridge: topological-sector account
 [PASS] note theorem names missing gauge bridge: a derived full gauge-measure/action premise
@@ -94,8 +102,8 @@ D. approved primitive non-supply
 ========================================================================================
 E. existing theta gauge support cannot be used as retirement shortcut
 ========================================================================================
-[PASS] cross-plane row is audited_clean
-[PASS] cross-plane row is retained_bounded
+[PASS] cross-plane context row is present
+[PASS] cross-plane context is not promoted by this runner
 [PASS] cross-plane scope is supplied per-plaquette only
 [PASS] substrate no-winding row remains unaudited
 [PASS] substrate row depends on multiplaquette boundary
@@ -115,10 +123,10 @@ E. existing theta gauge support cannot be used as retirement shortcut
 [PASS] multiplaquette packet keeps route open: admissibly realizable
 [PASS] multiplaquette packet keeps route open: not clean-closeable
 [PASS] multiplaquette packet keeps route open: single-plaquette / minimality admission
-[PASS] structured admission keeps open boundary: large-gauge-winding account
-[PASS] structured admission keeps open boundary: does not remove a canonical large-gauge-winding 
-[PASS] structured admission keeps open boundary: does not retire or split
-[PASS] structured admission keeps open boundary: does not turn axioms or primitives into bounded-
+[PASS] structured theta note keeps open boundary: large-gauge-winding account
+[PASS] structured theta note keeps open boundary: does not remove a canonical large-gauge-winding 
+[PASS] structured theta note keeps open boundary: does not close or split
+[PASS] structured theta note keeps open boundary: does not turn axioms or primitives into bounded-
 
 ========================================================================================
 F. exact finite gauge-carrier sanity checks
@@ -172,7 +180,7 @@ H. note discipline
 [PASS] note carries boundary phrase: No full gauge-measure/action premise is derived.
 [PASS] note carries boundary phrase: No continuum/scaling-limit sector functional `Q`
 [PASS] note carries boundary phrase: No branch/section choice or topological-sector r
-[PASS] note carries boundary phrase: derive the action/Q/readout bridge or keep theta
+[PASS] note carries boundary phrase: derive the action, integer-Q, branch-readout, an
 [PASS] forbidden phrase absent: Theta is retired
 [PASS] forbidden phrase absent: theta_bar = 0 is derived
 [PASS] forbidden phrase absent: audited_clean
@@ -196,3 +204,6 @@ I. markdown dependency and context control
 ========================================================================================
 TOTAL: PASS=157 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

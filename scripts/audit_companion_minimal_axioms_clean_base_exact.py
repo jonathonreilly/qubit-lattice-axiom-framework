@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 POLICY = ROOT / "docs" / "audit" / "AXIOM_MINIMALITY_POLICY.md"
 REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+DECISION_HISTORY = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 PURITY_GUARD = ROOT / "docs" / "audit" / "scripts" / "check_axiom_premise_clean.py"
 RUNNER = "scripts/audit_companion_minimal_axioms_clean_base_exact.py"
 CLAIM_ID = "minimal_axioms"
@@ -108,18 +108,18 @@ def source_boundary_checks() -> list[Check]:
     note = read(NOTE)
     policy = read(POLICY)
     registry = load_json(REGISTRY)
-    tier_a = load_json(TIER_A)
+    history = load_json(DECISION_HISTORY)
     node = (registry.get("nodes") or {}).get(CLAIM_ID, {})
     aliases = set(node.get("aliased_paths") or [])
     legacy_ids = set(node.get("legacy_claim_ids") or [])
-    derivation_targets = tier_a.get("derivation_targets") or {}
-    record_reclass = (tier_a.get("reclassified_primitives") or {}).get("minimal_axioms_record", {})
+    derivation_targets = history.get("derivation_targets") or {}
+    record_reclass = (history.get("reclassified_primitives") or {}).get("minimal_axioms_record", {})
 
     checks = [
         Check("Source note exists", NOTE.exists(), rel(NOTE)),
         Check("Policy exists", POLICY.exists(), rel(POLICY)),
         Check("Axiom-premise registry exists", REGISTRY.exists(), rel(REGISTRY)),
-        Check("Tier-A registry exists", TIER_A.exists(), rel(TIER_A)),
+        Check("Decision-history file exists", DECISION_HISTORY.exists(), rel(DECISION_HISTORY)),
         Check("Source type is meta", "**Type:** meta" in note, "framework memo, not theorem row"),
         Check(
             "Source status is current public framework axiom memo",
@@ -215,12 +215,12 @@ def source_boundary_checks() -> list[Check]:
             and contains(policy, "Record does not supply readout-context selection, central decomposition, `K`/CPT structure"),
             "",
         ),
-        Check("Tier-A genuine admitted input count is zero after the 2026-07-05 retirements", tier_a.get("genuine_admitted_input_count") == 0, str(tier_a.get("genuine_admitted_input_count"))),
-        Check("minimal_axioms is not a Tier-A derivation target", CLAIM_ID not in derivation_targets, ""),
-        Check("Tier-A registry records Record as reclassified primitive", bool(record_reclass), ""),
-        Check("Tier-A Record reclassification source is current memo", record_reclass.get("source") == rel(NOTE), str(record_reclass.get("source"))),
+        Check("Decision history has zero live premise inputs", history.get("genuine_admitted_input_count") == 0, str(history.get("genuine_admitted_input_count"))),
+        Check("minimal_axioms is not a historical derivation target", CLAIM_ID not in derivation_targets, ""),
+        Check("Decision history records Record primitive provenance", bool(record_reclass), ""),
+        Check("Record provenance source is current memo", record_reclass.get("source") == rel(NOTE), str(record_reclass.get("source"))),
         Check(
-            "Tier-A Record boundary forbids P2/log-det/source-action/context-selection laundering",
+            "Record provenance boundary forbids P2/log-det/source-action/context-selection laundering",
             "P2/modulus" in record_reclass.get("boundary", "")
             and "log-det" in record_reclass.get("boundary", "")
             and "source/action" in record_reclass.get("boundary", "")
@@ -322,7 +322,7 @@ def source_boundary_checks() -> list[Check]:
         Check("Audit-pipeline treatment says chain-satisfy without bounding", "chain-satisfy without making downstream rows\n`retained_bounded`" in note, ""),
         Check("Observable-principle parent is explicitly outside the axiom node", "must not be moved wholesale into\n`docs/audit/data/axiom_premise_nodes.json`" in note, ""),
         Check("Open gates outside axioms include staggered realization", "staggered-Dirac/finite-Grassmann realization" in note, ""),
-        Check("Open gates outside axioms include theta", "strong-CP theta admission" in note, ""),
+        Check("Open gates outside axioms include theta", "strong-CP theta gauge and mass-side derivation obligations" in note, ""),
         Check("Open gates outside axioms include context selection and formation rules", "context selection" in note and "formation rules (which\n  admissible possibility a new record locks, at which site, with what weight,\n  or at what rate)" in note, ""),
         Check("Open gates outside axioms include physical persistence dynamics", "physical persistence dynamics" in note, ""),
         Check("Open gates outside axioms include g_bare", "`g_bare = 1` convention handling" in note, ""),

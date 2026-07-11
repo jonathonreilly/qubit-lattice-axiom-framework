@@ -1,5 +1,9 @@
 # AC_phi_lambda Defect Identity-Unit Rescale Obstruction And Junction Localization
 
+**Current authority (2026-07-11):** every admission/index label below is
+historical terminology. The live dependency is the R-eta `open_gate`; decision
+history supplies no premise and cannot satisfy that dependency.
+
 **Date:** 2026-07-01
 **Claim type:** bounded_theorem
 **Scope:** bounded route no-go / selector narrowing + wall consolidation over
@@ -167,10 +171,10 @@ distinct readouts. The entire one-parameter freedom therefore sits at the
 density-to-angle junction — the identification of the fixed-locus density
 number `2/9` with the angular offset `delta` — and nowhere else.
 
-That junction already has two registered names:
+That junction has two historical/source-side names:
 
-- Tier-A `AC_phi_lambda` sub-admission (ii), verbatim from
-  [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json):
+- the former AC_phi_lambda R-eta target, preserved as non-authoritative
+  provenance in `docs/audit/data/premise_decision_history.json`:
   "the delta readout identification
   R-eta (density-read-as-angle; the magnitude 2/9 is retained-bounded
   fixed-locus arithmetic conditional on R-eta, not an admitted number)".
@@ -178,12 +182,12 @@ That junction already has two registered names:
   [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md),
   scope: the
   listed sources "do not derive the literal 2/9-radian selected-line bridge;
-  the Type-B-to-radian identification remains primitive."
+  the Type-B-to-radian identification remains open."
 
 **Consolidation.** `W_defect_identity_unit` names no new wall. In normal-form
 coordinates it is the unit coefficient of the R-eta density-read-as-angle
 junction. One wall, three names: `W_defect_identity_unit` (unit normal form),
-R-eta sub-admission (ii) (Tier-A registry), Type-B-to-radian identification
+the R-eta open obligation, and the Type-B-to-radian identification
 (radian-bridge row). Audit surfaces should treat these as one dependency, not
 two or three.
 
@@ -240,10 +244,10 @@ The obstruction is constructive about what a winning theorem looks like:
   fixing a singleton readout value from named retained structure. T2 shows
   the bare count is available but pins `9/2`; a winning clause must pin the
   density-line member, and must derive rather than declare it.
-- **Owner-governance primitive.** The narrow operational selector
+- **Approved-primitive proposal.** The narrow operational selector
   (`P_readout_selection` instance for this lane) remains an explicit
-  owner-approval option if bridge-first work is intentionally bypassed. It is
-  a governance route, not a derivation.
+  approval option if bridge-first work is intentionally bypassed. It has no
+  premise weight until approved.
 
 ## Non-Claims
 
@@ -273,7 +277,7 @@ selected C3 defect-density line
 with three additions from this note: (i) the selector is not derivable on the
 scanned homogeneous premise surface; (ii) it is not a vacuous convention, so
 convention adoption is not the disposal route; (iii) it is the same
-dependency as Tier-A sub-admission (ii) R-eta — dependency graphs should not
+dependency as the R-eta open obligation — dependency graphs should not
 count `W_defect_identity_unit` and R-eta as independent walls.
 
 ## No-Go Discipline Gate
@@ -334,7 +338,7 @@ No hidden admission is used; no new admission is proposed.
 | in-flight PR #4771 unit normal form | `W_defect_identity_unit` open | same wall, now obstructed on the scanned surface and consolidated onto R-eta | yes |
 | in-flight PR #4762 independence witness | current premises do not select the readout class | upgraded from a two-point witness to orbit closure under rescale (T1) | yes |
 | `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | Type-B-to-radian identification primitive | same junction, reached from the normal-form side | yes |
-| Tier-A sub-admission (ii) R-eta | density-read-as-angle identification admitted | shown to be the same dependency as the unit selector | yes |
+| R-eta open obligation | density-read-as-angle identification remains underived | shown to be the same dependency as the unit selector | yes |
 | `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25` | absolute dimensional action quantum not derived (U(1) phase native) | same wall-class on a different lane: absolute unit identifications need non-homogeneous input | yes |
 
 ### N5 - Rhetoric Audit

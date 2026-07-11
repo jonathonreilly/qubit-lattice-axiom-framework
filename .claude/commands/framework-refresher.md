@@ -14,8 +14,9 @@ statuses all change; only current repo surfaces are authoritative.
 2. `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`, then the
    registry `docs/audit/data/axiom_premise_nodes.json` and each approved
    primitive's source note.
-3. `docs/audit/data/tier_a_admissions.json` — the only accepted non-axiom
-   premises; they bound otherwise-retained rows until retired.
+3. `docs/audit/data/derivation_obligations.json` — exact zero-weight open
+   targets. These never satisfy a dependency; decision history is provenance
+   only.
 4. `docs/repo/CONTROLLED_VOCABULARY.md` — status taxonomy, claim-strength
    labels, science naming rules, filename taxonomy. Skim the sections
    relevant to the task.
@@ -50,7 +51,7 @@ The minimal-axioms memo states explicitly what the axiom baseline does NOT
 supply (dynamics, Born rule, readout context, species identification, gauge
 group, time metric, unit conversion, ...). Treat those exclusion lists as
 binding: anything on them enters only through a named derivation lane with
-retained status, an approved primitive, or an explicit Tier-A admission.
+retained status or an approved primitive; otherwise it remains conditional/open.
 
 ## Standing Discipline
 
@@ -88,5 +89,6 @@ retained status, an approved primitive, or an explicit Tier-A admission.
 ## Output
 
 Confirm in one short block: current axiom memo path read, approved primitives
-list, any Tier-A admissions relevant to the task, and the lane surfaces read.
+list, any conditional/open dependencies relevant to the task, and the lane
+surfaces read.
 Then proceed to the actual task.

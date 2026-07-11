@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=4e3a666317ee83e7a5e2e2a87b3bfff4f7c3ad1b0cc8adde1db0c88df2552d62 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=de0c15a28d0872427a798a7d0f9eb99389c46cac72ab4ed43d93ef2f8e48e700 -->
 # Key Terminology
 
 **Claim type:** meta
@@ -51,7 +51,7 @@ Every vocab / policy / process doc in the repo references back here.
 ## B
 
 - **bounded** — publication-capture disposition: live captured family outside the main paper core with explicit caveats. Also a claim-strength family (`bounded_theorem`, `bounded companion`, `bounded support theorem`, etc.). → `docs/repo/CONTROLLED_VOCABULARY.md §Publication-Capture Dispositions`, `§Claim-Strength / Release Labels`
-- **bounded_theorem** — `claim_type` value: theorem with named bounds / admissions; can earn `effective_status: retained_bounded` after clean audit + retained-grade deps. → [docs/audit/README.md](audit/README.md)
+- **bounded_theorem** — `claim_type` value: theorem with named bounds / conditions; can earn `effective_status: retained_bounded` after clean audit + retained-grade deps. → [docs/audit/README.md](audit/README.md)
 - **boxing** — decoration handling: rolling up an `audited_decoration` cluster into a single corollary line under the parent claim's row. → [docs/audit/ALGEBRAIC_DECORATION_POLICY.md](audit/ALGEBRAIC_DECORATION_POLICY.md)
 
 ## C

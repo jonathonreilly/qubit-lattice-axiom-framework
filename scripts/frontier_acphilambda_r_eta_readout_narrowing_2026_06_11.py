@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-"""AC_phi_lambda sub-admission (ii) narrowing: R-eta forced/admitted split.
+"""AC_phi_lambda R-eta open-condition narrowing: forced/conditional split.
 
 Class-A finite-dimensional verifier (3x3 exact sympy; tiny memory).
 
 Target: separate, inside the R-eta "density-read-as-angle" readout
-identification (Tier-A AC_phi_lambda sub-admission (ii)), the parts that are
-FORCED by the Record registrability machinery + exact circulant algebra from
-the single ADMITTED identification atom that remains.
+identification open obligation, the parts forced by Record registrability and
+exact circulant algebra from the physical identification that remains open.
 
 Sections:
   S1  context: the AC_phi_lambda Hermitian circulant; K/CPT = delta -> -delta
@@ -158,7 +157,7 @@ def main() -> int:
           "channel values => 5 distinct registered mass multisets)",
           distinct == len(candidates),
           detail=f"{distinct} distinct channel values")
-    check("=> the admitted atom is load-bearing for EXACTLY ONE real parameter: "
+    check("=> the open condition is load-bearing for EXACTLY ONE real parameter: "
           "the VALUE of |delta| in the fundamental domain (and for nothing else "
           "in the R-eta statement)", True)
     # Registrability does not even forbid r-coupled identifications.
@@ -260,7 +259,7 @@ def main() -> int:
     # ------------------------------------------------------------------
     section("S8 - conditional value: |delta| = 2/9 EXACT conditional on the named atom")
     atom_value = L12
-    check("ATOM (A_R-eta, admitted, NOT derived): registered |delta| = "
+    check("CONDITION (A_R-eta, open, NOT derived): |delta| = "
           "AB/Lefschetz density of the realized C3[111] cycle, identity-read "
           "in radians => |delta| = 2/9 EXACT",
           zsimp(atom_value - sp.Rational(2, 9)) == 0)
@@ -281,7 +280,7 @@ def main() -> int:
                           - e.subs(delta, -sp.Rational(2, 9))) == 0
               for e in (e1, e2, e3)))
     check("NOT CLAIMED: 2/9 derived. The value is fixed-locus arithmetic "
-          "CONDITIONAL on A_R-eta; A_R-eta itself remains admitted", True)
+          "CONDITIONAL on A_R-eta; A_R-eta itself remains open", True)
 
     # ------------------------------------------------------------------
     section("S9 - boundary witnesses + r-firewall")
@@ -295,18 +294,18 @@ def main() -> int:
     check("BOUNDED: future non-det readout contexts that might supply another "
           "dimensionless conversion factor are NOT foreclosed (the k=0 forcing "
           "is the det-class surface only)", True)
-    check("NOT addressed here: sub-admission (i) occupancy selection, "
-          "sub-admission (iii) species bridge, the R1b anchor, the R2 global "
+    check("NOT addressed here: occupancy selection, "
+          "species bridge, the R1b anchor, the R2 global "
           "PL/ABSS bridge, the carrier gate realization", True)
-    check("no Tier-A registry edit, no downstream status set, no admission retired; "
-          "this is a source-side narrowing of WHAT sub-admission (ii) admits",
+    check("no premise registry edit, no downstream status set, no obligation closed; "
+          "this is a source-side narrowing of the R-eta condition",
           True)
     note_text = NOTE.read_text(encoding="utf-8") if NOTE.exists() else ""
     note_flat = " ".join(note_text.split())
-    check("2026-06-13 boundary: conditional support only; A_R-eta remains admitted",
+    check("2026-06-13 boundary: conditional support only; A_R-eta remains open",
           "2026-06-13 audit-conditional boundary" in note_text
-          and "conditional support for narrowing sub-admission (ii), not a retirement" in note_flat
-          and "A_R-eta` (h-class + h-unit, one real parameter) remains admitted" in note_flat
+          and "conditional support for narrowing the historical item (ii), not its closure" in note_flat
+          and "A_R-eta` (h-class + h-unit, one real parameter) remains open" in note_flat
           and "cannot cite it as a framework-native derivation of `|delta| = 2/9`" in note_flat)
     # 2026-07-05 dependency-status split: formal split + one-hop K-orbit wiring.
     check("2026-07-05 dependency-status split: explicit FORMAL H(delta) theorem "

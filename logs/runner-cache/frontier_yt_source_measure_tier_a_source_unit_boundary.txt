@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_source_measure_tier_a_source_unit_boundary.py
-runner_sha256: bd4c20135c7a4df169b343f06efd268dfee540cd5bf78d7d7382db2d538f3f79
+runner_sha256: 71066114c75018c82befc0f7c92e1b14d9c936bff481b7b39070df14e4359599
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.62
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.63
+status: ok
 ----- stdout -----
 ========================================================================================
-Y_T SOURCE-MEASURE TIER-A SOURCE-UNIT BOUNDARY
+Y_T CONDITIONAL SOURCE-MEASURE SOURCE-UNIT BOUNDARY
 ========================================================================================
 
 Part 1: documents and source boundary
@@ -22,7 +22,7 @@ Part 1: documents and source boundary
 [PASS] docs/YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md exists
 [PASS] docs/SOURCE_MEASURE_PCAL_RETIREMENT_SYNTHESIS_NOTE_2026-05-30.md exists
 [PASS] docs/SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md exists
-[PASS] docs/audit/data/tier_a_admissions.json exists
+[PASS] docs/audit/data/premise_decision_history.json exists
 [PASS] docs/audit/data/audit_ledger.json exists
 [PASS] package note contains section: Statement
 [PASS] package note contains section: Load-Bearing Chain
@@ -35,20 +35,20 @@ Part 1: documents and source boundary
 [PASS] package keeps audit status authority independent
 [PASS] package does not claim a unilateral status change
 [PASS] package avoids retained-status promotion language
-[PASS] Tier-A YT note says answer is yes on accepted bounded surface
-[PASS] Tier-A YT note closes lambda=1
-[PASS] Tier-A YT note does not claim unbounded closure
+[PASS] YT note states the calculation is conditional
+[PASS] YT note computes lambda=1 under that hypothesis
+[PASS] YT note does not claim premise closure
 [PASS] P-cal synthesis names narrow source-measure bridge
 [PASS] log boundary keeps finite-record-alone route pruned
 
 Part 2: ledger status boundary
-[PASS] yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25 is retained-grade bounded support: {'effective_status': 'retained_bounded', 'audit_status': 'audited_clean'}
-[FAIL] yt_lsp_signed_record_source_readout_support_note_2026-05-24 is retained-grade bounded support: {'effective_status': 'audited_renaming', 'audit_status': 'audited_renaming'}
-[PASS] yt_source_covariance_normalization_support_note_2026-05-24 is retained-grade bounded support: {'effective_status': 'retained_bounded', 'audit_status': 'audited_clean'}
-[PASS] yt_source_action_support_packet_note_2026-05-22 is retained-grade bounded support: {'effective_status': 'retained_bounded', 'audit_status': 'audited_clean'}
-[PASS] yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25 is retained-grade bounded support: {'effective_status': 'retained_bounded', 'audit_status': 'audited_clean'}
-[PASS] yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25 is retained-grade bounded support: {'effective_status': 'retained_bounded', 'audit_status': 'audited_clean'}
-[FAIL] yt_ew_higgs_source_intertwiner_gate_note_2026-05-25 is retained-grade bounded support: {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
+[PASS] yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25 context row is present: {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
+[PASS] yt_lsp_signed_record_source_readout_support_note_2026-05-24 context row is present: {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
+[PASS] yt_source_covariance_normalization_support_note_2026-05-24 context row is present: {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
+[PASS] yt_source_action_support_packet_note_2026-05-22 context row is present: {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
+[PASS] yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25 context row is present: {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
+[PASS] yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25 context row is present: {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
+[PASS] yt_ew_higgs_source_intertwiner_gate_note_2026-05-25 context row is present: {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
 [PASS] yt_tier_a_source_action_top_premise_closure_note_2026-05-29 is present
 [PASS] yt_tier_a_source_action_top_premise_closure_note_2026-05-29 is not silently promoted: {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
 [PASS] yt_primitive_source_unit_fisher_normalization_support_note_2026-05-25 is present
@@ -63,15 +63,15 @@ Part 2: ledger status boundary
 [PASS] sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26 is not silently promoted: {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
 [PASS] standard_model_hypercharge_uniqueness_theorem_note_2026-04-24 is present
 [PASS] standard_model_hypercharge_uniqueness_theorem_note_2026-04-24 is not silently promoted: {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
-[FAIL] Tier-A registry contains P1/P-cal parent
-[PASS] Tier-A registry treats derivation targets as bounded-tier
+[PASS] decision history contains no live P1 premise
+[PASS] decision history is non-authoritative
 
 Part 3: source-side algebra
 [PASS] democratic six-component top source is unit: 1
 [PASS] top component of unit source is 1/sqrt(6): sqrt(6)/6
 [PASS] scaled top source has Fisher norm lambda^2: lambda**2
 [PASS] scaled top coefficient is lambda/sqrt(6): sqrt(6)*lambda/6
-[PASS] Tier-A primitive source unit selects lambda=1
+[PASS] conditional primitive source unit gives lambda=1
 [PASS] selected Y_T source-side coefficient is 1/sqrt(6): sqrt(6)/6
 
 Part 4: firewalls and overclaim checks
@@ -92,7 +92,7 @@ Part 4: firewalls and overclaim checks
 [PASS] forbidden overclaim absent: old Ward chain is repaired
 
 ========================================================================================
-SUMMARY: PASS=70 FAIL=3
+SUMMARY: PASS=73 FAIL=0
 Wrote outputs/yt_source_measure_tier_a_source_unit_boundary_2026-05-30.json
 
 ----- stderr -----

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_species_bridge_ratification_class_2026_07_02.py
-runner_sha256: 20ffdb8822385d637621db3afaafed048d71bcef0c31524179e409807666c5c0
+runner_sha256: 2b6db251b90cffc579e3b49db49e522497f3ba6a7bcb965f87226078771a7f04
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.06
 status: ok
 ----- stdout -----
 CHECK 01: PASS -- parent note carries the minimum-form residual identification sentence
@@ -27,15 +27,15 @@ CHECK 18: PASS -- axioms note keeps the derived surface OUTSIDE axiom content: Q
 CHECK 19: PASS -- Distinction-Clause Analogy within-triplet witness: C3 acts as an order-3 3-cycle with a single transitive orbit {0,1,2} on the three corner labels
 CHECK 20: PASS -- Distinction-Clause Analogy carrier witness: distinct integer carriers C1 != C2 with a unitary intertwiner E (E^T E = I, E != I) satisfying E*C1 = C2*E, and a broken shift E' with E'*C1 != C2*E' -- the intertwining is falsifiable, exact integer arithmetic
 CHECK 21: PASS -- Distinction-Clause Analogy corner-weight witness: generic rational diagonal separates (spread = 6 > 0); C3 orbit-average equalizes (spread = 0), Havg = 3*I, commutes with C3 -- exact
-CHECK 22: PASS -- Grade Scope: note states the bracketed above-grade content (taste/Dirac/chirality), that sub-admissions (i) and (ii) are untouched, and the owner-class wording (carried by whatever class the owner rules)
-CHECK 23: PASS -- Governance Map boundary: note carries the boundary tokens (owner decision; owner review list; nothing adopted; grade; does not retire) and the repair tokens (fails; path-extension; argued; not exhaustively proven; separate residual)
-CHECK 24: PASS -- Governance Map: note states the two-part owner decision with internal-only precedent, and the extended residue carries item 8 (CKM/PMNS separate residual) and item 9 (the invariant-ring proof-strength gap)
+CHECK 22: PASS -- Historical Grade Scope: note preserves the bracketed above-grade content, former sub-admissions, and owner-class proposal as provenance
+CHECK 23: PASS -- Historical governance map: note preserves owner-decision proposal tokens and the repair tokens as provenance
+CHECK 24: PASS -- Historical governance map: note records the former two-part owner proposal and the extended scientific residue
 
 DECLARED-OPEN RESIDUE (conserved; owner surface, nothing adopted here):
-  RESIDUE: the AC_phi_lambda(iii) identification -- pending the owner two-part (path-extension, then ratify/decline) decision
+  RESIDUE: the AC_phi_lambda(iii) identification -- open scientific dependency; historical owner proposal is provenance only
   RESIDUE: the bracketed above-C3-grade content (taste/Dirac/chirality; hw=1 vs hw=2 beyond C3)
-  RESIDUE: sub-admission (i) (occupancy/reading selection) -- untouched
-  RESIDUE: sub-admission (ii) (R-eta identification) -- untouched
+  RESIDUE: historical sub-admission (i) wording -- current occupancy obligation remains open
+  RESIDUE: historical sub-admission (ii) wording -- current R-eta obligation remains open
   RESIDUE: adjacent review-pending K-arc PRs #4831/#4835/#4837/#4840/#4845 (non-overlapping)
   RESIDUE: adjacent note-level two-cell family PR #4853 (context only)
   RESIDUE: audit statuses of all cited notes -- owned by the independent audit lane

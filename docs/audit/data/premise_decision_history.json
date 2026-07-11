@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "description": "Audit-lane owned registry for live Tier-A accepted non-axiom premise handling. Genuine admitted derivation targets are now zero: theta was retired on 2026-07-05 by retained derivation, and AC_phi_lambda is retired by explicit owner-governance adoption applied against the audited_clean / retained_bounded gate surface at adoption commit 5d8df21fe. Historical AC_phi_lambda and theta entries, statements, no-go portfolios, and retirement records are preserved under retired_derivation_targets. Record is no longer Tier-A; Admissibility and Record are included in the explicitly approved four-axiom minimal_axioms node. The scale reference a^-1 is likewise not a Tier-A admission; it is registered as the explicitly approved framework primitive scale_reference_primitive in axiom_premise_nodes.json. Y0 and g0 are vacuous rescaling conventions listed for survey completeness only: not admitted inputs, not derivation targets, not accepted premises, and not status-bounding dependencies. This registry is distinct from axiom_premise_nodes.json, owner_governed_premise_nodes.json, and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md.",
+  "description": "Non-authoritative premise-decision history. This file preserves superseded admission-era statements and dispositions solely for provenance. It is not a premise registry, is never read by chain-closure tooling, and supplies no physics content. The live supplied foundation is exactly the axioms and approved primitives in axiom_premise_nodes.json. Unresolved scientific work lives only in derivation_obligations.json.",
   "genuine_admitted_input_count": 0,
   "canonical_ids": [],
   "derivation_targets": {},
@@ -70,8 +70,13 @@
         "strong_cp_gauge_theta_multiplaquette_ftf_is_admissible_not_clean_closeable_bounded_note_2026-06-07"
       ],
       "retirement": {
-        "date": "2026-07-05",
-        "mechanism": "retired_by_retained_derivation",
+        "date": "2026-07-11",
+        "mechanism": "gauge_side_retained_mass_side_conditional_on_two_independent_open_obligations",
+        "current_status": "The gauge-side disposition remains derived. The mass-side K-real reading is conditional on both the charged-lepton occupancy statistical grain and an independent quark-determinant cross-sector readout; closing either one does not close the other.",
+        "open_derivation_obligations": [
+          "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+          "theta_quark_determinant_cross_sector_readout_derivation_obligation"
+        ],
         "owner_approval": "recorded in the PR #3511 thread (2026-07-05); review-loop must verify the approval comment exists before landing",
         "discharge_basis_rows_all_retained_grade": {
           "gauge_side_local": [
@@ -92,8 +97,8 @@
           ]
         },
         "gauge_side_theta_value_cross_confirmation": "explicit second seat, clean-room, confirmed 2026-07-05",
-        "retired_target_source_row": "strong_cp_theta_zero_note remains an audited_clean / retained_bounded selected-action-surface source row; retirement removes only the active Tier-A admitted-premise slot",
-        "scope": "canonical imported Wilson + staggered-Wilson class; the mass-side K-real reading rides on AC_phi_lambda sub-admission (i) exactly as the admission statement recorded; Q-structure lanes (emergent-Q nonvacuous weighting, 4D-carrier model of the emergent OS0 surface, defect closure, W_anomaly_covariant_assembly, SU(3) abelianization) remain open physics outside the retired admission \u2014 they are topological-susceptibility structure, not theta-value content",
+        "retired_target_source_row": "strong_cp_theta_zero_note remains an ordinary bounded selected-action-surface source row whose current audit status is independent; the historical Tier-A slot supplies no authority",
+        "scope": "canonical imported Wilson + staggered-Wilson class; the mass-side K-real reading is conditional on both ac_orbit_occupancy_statistical_grain_derivation_obligation and theta_quark_determinant_cross_sector_readout_derivation_obligation. The running kappa/counting and G3/angle-readout programs can self-liquidate the AC obligations only; they do not supply or close the independent theta cross-sector bridge. Q-structure lanes (emergent-Q nonvacuous weighting, 4D-carrier model of the emergent OS0 surface, defect closure, W_anomaly_covariant_assembly, SU(3) abelianization) remain open physics outside the gauge-side disposition.",
         "decision_artifact": "PR #4995 artifact path docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md (2026-07-05 updated verdict; decision artifact not shipped as a live source note in this registry PR)"
       }
     },
@@ -120,18 +125,17 @@
         "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
       ],
       "retirement": {
-        "date": "2026-07-05",
-        "mechanism": "retired_by_owner_governance_on_audited_surface",
-        "owner_approval": "In-thread approval for #4991 owner-governance adoption of the four Block49 residual candidates with the exact owner_governed_premise_nodes.json boundaries; current-main landing applies the registry delta only to the live AC_phi_lambda Tier-A target because theta was already retired by retained derivation.",
-        "owner_governed_premise_node": "staggered_dirac_realization_gate_note_2026-05-03",
+        "date": "2026-07-11",
+        "mechanism": "historical_governance_retirement_withdrawn_obligations_reopened",
+        "owner_direction": "Only axioms and approved primitives may be supplied physics premises; the prior governance-only AC channel is withdrawn.",
+        "historical_owner_approval": "On 2026-07-05 the owner approved #4991's governance adoption of four Block49 residual candidates. That decision remains provenance only and no longer supplies a physics dependency.",
         "adoption_source": "docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md",
-        "audited_surface": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md audited_clean / retained_bounded at adoption commit 5d8df21fe; current effective status is ledger-owned",
-        "adopted_residual_candidates": [
-          "ac_orbit_occupancy_statistical_grain_premise",
-          "ac_reta_hclass_hunit_readout_premise"
+        "open_derivation_obligations": [
+          "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+          "ac_reta_hclass_hunit_readout_derivation_obligation"
         ],
-        "boundary": "Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.",
-        "non_laundering": "This retirement is not an axiom, not an approved primitive, not a theorem derivation, and not an audit verdict. Source-side theorem/no-go packet statuses remain audit-lane-owned."
+        "boundary": "The historical record supplies no physics content. AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout are open until retained derivations close their exact obligation rows.",
+        "non_laundering": "No governance record, historical admission, or open obligation chain-satisfies a dependency. Source-side theorem/no-go packet statuses remain audit-lane-owned."
       }
     }
   }

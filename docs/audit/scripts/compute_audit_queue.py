@@ -55,15 +55,13 @@ def is_ready(row: dict, rows: dict[str, dict]) -> bool:
     """All deps are stable auditor inputs.
 
     A dep is a stable input when its effective_status is retained-grade /
-    meta / decoration_under_*, or when it is an accepted premise
-    (axiom/primitive premise node, owner-governed residual premise, or Tier-A
-    admitted derivation target) per `premise_nodes.is_accepted_premise_dep`.
-    The latter mirrors `compute_effective_status`: a row whose only
-    non-retained dep is a Tier-A target is auditable now and resolves to
-    `retained_bounded` on a clean verdict, while owner-governed residual
-    premises do not bound downstream status.
+    meta / decoration_under_*, or when it is a supplied axiom or approved
+    primitive per `premise_nodes.is_accepted_premise_dep`. Open derivation
+    obligations and historical admissions are not ready evidence.
     """
     for d in row.get("deps", []):
+        if premise_nodes.is_non_evidence_context_dep(d):
+            return False
         if premise_nodes.is_accepted_premise_dep(d):
             continue
         d_eff = rows.get(d, {}).get("effective_status") or "unknown"
@@ -228,7 +226,7 @@ def main() -> int:
         "# Audit Queue",
         "",
         f"**Total pending:** {queue['total_pending']}",
-        f"**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** {queue['ready_count']}",
+        f"**Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** {queue['ready_count']}",
         "",
         "By criticality:",
     ]

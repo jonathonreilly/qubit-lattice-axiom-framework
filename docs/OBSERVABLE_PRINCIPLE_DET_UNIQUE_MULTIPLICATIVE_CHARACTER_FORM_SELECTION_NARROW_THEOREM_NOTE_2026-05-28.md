@@ -1,6 +1,9 @@
 # Observable Principle — `det` Unique by Multiplicative-Character Form Selection Narrow Theorem Note
 
 **Date:** 2026-05-28
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does
@@ -337,7 +340,7 @@ This note is deliberately narrow. It does **not**:
   free input — not a derivation from retained primitives. See §7.
 - **Reduce the admission count below 4.** The framework's Tier-A
   admitted inputs are P1, AC_φλ, S, θ
-  ([`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)).
+  (`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`).
   This note shows the **det-vs-tr piece** of the scalar-readout question
   is a *theorem* (given `(M)`), not a separate admission; it does not
   remove P1, AC_φλ, S, or θ. The residual `(M)` is grounded in, and
@@ -368,7 +371,7 @@ substantive realization is explicitly open). That gate carries the
 AC_φλ admitted-context residual (the C₃-breaking mass pattern + the
 abstract-sector → physical-species identification), which is admission
 #2 of the canonical four
-([`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)).
+(`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`).
 The gate note itself records that its AC_φλ residual is "structurally
 analogous to the P1 admitted-context residual on
 `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`." Until that gate closes, the
@@ -476,7 +479,7 @@ makes this theorem new.
   [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
   (open gate).
 - The canonical admitted-input registry (admission count unchanged):
-  [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md).
+  `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`.
 - Direct-sum no-go portfolio (axis distinction): the six
   `retained_no_go` rows and the consolidated Route D no-go listed in §8.
 
@@ -524,3 +527,11 @@ set the audit status of `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
 (stays `audited_conditional`), the six `retained_no_go` rows, the
 Route D consolidated no-go, the staggered-Dirac realization gate, or any
 other upstream row. The audit lane is the only status authority.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)

@@ -74,10 +74,9 @@ alone. For any finite collection of pairwise-disjoint records, scalar readout
 ## Qualification
 
 These axioms state only their named primitive content. Further physical
-structure requires derivation, bridge, explicit admission, or approved
-primitive registration before use as a premise. In particular, a law may not
-depend on a choice not fixed by the supplied structure, unless that choice is
-admitted.
+structure requires a retained derivation or bridge, or explicit approved-
+primitive registration, before use as a premise. A choice not fixed by the
+supplied structure remains a named conditional or open dependency.
 
 A state is a configuration of records.
 
@@ -95,11 +94,11 @@ entry in `docs/audit/data/axiom_premise_nodes.json`. Dependencies on
 checks only elementary algebra/notation sanity for the four axiom names. It
 does not derive or enlarge the axiom set.
 
-Axioms and approved primitives are not Tier-A admitted derivation targets.
+Axioms and approved primitives are the complete supplied foundation.
 Depending on the Lattice, Qubit, Admissibility, or Record axiom, or on an
 explicitly approved primitive such as `scale_reference_primitive`, must not be
-treated as a source of bounded status. Bounded status belongs to non-axiom
-Tier-A admissions recorded in `docs/audit/data/tier_a_admissions.json`.
+treated as a source of bounded status. No admission class exists: every other
+scientific dependency must be retained-derived or remain conditional/open.
 
 ## Relation To Dynamics And Kinetic Branch Selection
 
@@ -113,8 +112,8 @@ physical persistence dynamics.
 
 Static spatial kinetic questions, probability/process questions, and temporal
 evolution questions should be tracked separately. A realized kinetic branch, if
-proposed, is downstream content: it needs derivation, bridge, explicit
-admission, or approved primitive registry update before audit rows may use it
+proposed, is downstream content: it needs a retained derivation or bridge, or
+an approved-primitive registry update, before audit rows may use it
 as load-bearing content. The four axioms are compatible with such later
 content, but do not include it.
 
@@ -154,13 +153,13 @@ readout structure:
   generation rule are downstream readout-context content, not generic axiom
   content.
 
-## Open Gates And Admissions Outside The Axioms
+## Open Gates Outside The Axioms
 
 The four axioms do not close, import, or rename the framework's downstream open
 gates. In particular, the following remain outside axiom content:
 
 - the staggered-Dirac/finite-Grassmann realization and `AC_phi_lambda`;
-- the strong-CP theta admission;
+- the strong-CP theta gauge and mass-side derivation obligations;
 - P2/modulus/phase-blindness and any log-det readout theorem;
 - context selection, measurement basis selection, Born weights, probability
   rules, update laws, decoherence mechanisms, and formation rules (which

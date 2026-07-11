@@ -2,9 +2,8 @@
 """EW kappa_EW is not derivable from the approved axiom baseline alone.
 
 The runner checks repo facts used by the source note: count-versus-weight
-algebra, minimal axiom exclusions, primitive registry boundaries, current
-Tier-A registry state, and guardrail prose. It does not approve or register
-kappa_EW as a Tier-A admission.
+algebra, minimal axiom exclusions, primitive registry boundaries, and
+guardrail prose. It does not approve or register `kappa_EW` as a premise.
 """
 from __future__ import annotations
 
@@ -18,7 +17,6 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md"
 AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
-TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
 AXIOM_PREMISES = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 
 PASS = 0
@@ -84,25 +82,29 @@ def primitive_boundary_check() -> tuple[bool, str]:
     return has_required and no_kappa_primitive and source_ok, ", ".join(details)
 
 
-def tier_a_registry_check() -> tuple[bool, str]:
-    registry = json.loads(TIER_A.read_text(encoding="utf-8"))
-    ids = [str(item).lower() for item in registry["canonical_ids"]]
-    absent = not any("kappa" in item or "ew" in item for item in ids)
-    count_ok = registry["genuine_admitted_input_count"] == len(registry["canonical_ids"])
-    return absent and count_ok, f"count={registry['genuine_admitted_input_count']}; ids={registry['canonical_ids']}"
+def foundation_registry_check() -> tuple[bool, str]:
+    registry = json.loads(AXIOM_PREMISES.read_text(encoding="utf-8"))
+    ids = set(registry["canonical_ids"])
+    expected = {
+        "minimal_axioms",
+        "scale_reference_primitive",
+        "kinetic_isotropy_primitive",
+        "realized_state_primitive",
+    }
+    absent = not any("kappa" in item.lower() or "ew" in item.lower() for item in ids)
+    return ids == expected and absent, f"ids={sorted(ids)}"
 
 
 def note_guardrails() -> tuple[bool, list[str]]:
     text = re.sub(r"\s+", " ", NOTE.read_text(encoding="utf-8"))
     required = [
         "not derivable from the current approved axiom/primitive baseline alone",
-        "candidate admission is descriptive",
-        "review-loop does not register it",
+        "Decision history supplies no alternative premise channel",
         "Cannot claim",
         "No-Go Discipline Gate",
         "OPEN",
-        "future derivation, owner-approved admission",
-        "Do not audit it as an approved Tier-A",
+        "future retained derivation",
+        "Do not audit it as a supplied premise",
     ]
     missing = [phrase for phrase in required if phrase not in text]
     return not missing, missing
@@ -144,8 +146,8 @@ def main() -> int:
     primitive_ok, primitive_detail = primitive_boundary_check()
     check("approved primitives do not include a kappa_EW weighting primitive", primitive_ok, primitive_detail)
 
-    tier_a_ok, tier_a_detail = tier_a_registry_check()
-    check("current Tier-A registry does not register kappa_EW", tier_a_ok, tier_a_detail)
+    foundation_ok, foundation_detail = foundation_registry_check()
+    check("the complete axiom/primitive foundation does not register kappa_EW", foundation_ok, foundation_detail)
 
     sin2_ok, sin2_detail = sin2_common_factor_cancels()
     check("within the existing construction a common K_EW factor cancels from sin^2(theta_W)", sin2_ok, sin2_detail)
@@ -160,7 +162,7 @@ def main() -> int:
     print(f"\nRUNNER STATUS: {'PASS' if FAIL == 0 else 'FAIL'} (PASS={PASS} FAIL={FAIL})")
     print(
         "SCOPE: kappa_EW is not derivable from the current approved axiom/primitive baseline alone; "
-        "future derivation or owner-approved admission remains open."
+        "future derivation or approved-primitive review remains open."
     )
     return 0 if FAIL == 0 else 1
 

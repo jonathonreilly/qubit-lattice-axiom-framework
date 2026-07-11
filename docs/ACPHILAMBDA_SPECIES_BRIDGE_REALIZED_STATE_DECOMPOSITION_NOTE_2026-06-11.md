@@ -1,5 +1,10 @@
 # AC_phi_lambda Sub-Admission (iii): Species-Bridge Decomposition Under the Realized-State Primitive
 
+**Current authority (2026-07-11):** all registry/admission language below is a
+historical snapshot. The realized-state primitive is accepted, but it does not
+turn the physical-species bridge into premise content. That bridge remains an
+open conditional dependency.
+
 **Date:** 2026-06-11
 **Type:** bounded_theorem (decomposition / relocation)
 **Claim type:** bounded_theorem
@@ -22,9 +27,9 @@ change.
 
 ## Statement
 
-The Tier-A registry
-([`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md),
-`meta`) carries AC_phi_lambda sub-admission **(iii)**: the abstract-sector ->
+The historical admitted-input index
+(`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`,
+`meta`) recorded AC_phi_lambda item **(iii)**: the abstract-sector ->
 physical-species **bridge**, described there as "an interpretive bridge, akin
 to the abstract-su(3) -> physical-color gap," with the R1b anchor sentence
 (owner review record on PR #3428): *"the hw=1 triplet is the physical
@@ -80,8 +85,7 @@ empirical-anchor step (matching the registered pattern to measured values,
 is **(iii)-partially-each**: part dissolves into the supplied-context premise,
 and the surviving genuinely-additional content is exactly the already-named
 chirality gate plus the standing readout-context input plus the external
-empirical anchor. **No admitted content beyond named, already-tracked items
-survives in sub-admission (iii) on this surface.**
+empirical anchor. **No premise content is supplied by this decomposition.**
 
 ## Why the realized-state primitive moves the generation case and not the color case
 
@@ -194,11 +198,9 @@ family `M(a,B,delta) = aI + bJ + conj(b)J^2`, `b = B e^{i delta}`, with
 
 ## Boundary
 
-- This note does **not** edit the Tier-A registry, retire or re-grade any
-  admission, change the admission count, unbound any consumer, or move
-  AC_phi_lambda or any sub-admission to another class. Any registry
-  consequence of this decomposition is named here as **available to a future
-  gated owner-approved lane**, after independent audit of this note.
+- This note does **not** change premise authority or unbind any consumer. Any
+  scientific consequence requires a future retained derivation and independent
+  audit.
 - It does **not** derive the carrier locus, the readout context, the K-reality
   predicate, a record-formation dynamics (G4), the value of `r`, the value of
   `delta`, or any species mass; it does **not** select `r=1/2` (dial
@@ -246,7 +248,7 @@ operator class from the bosonic qubit substrate) would move sub-admission
 | id | role | effective_status |
 |---|---|---|
 | [`realized_state_primitive`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) (axiom_premise node; note row) | the pointwise-evaluation license + counterfactual test | `meta` (approved framework primitive; chain-satisfying) |
-| [`admitted_input_registry_tier_a_note_2026-05-23`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md) | the sub-admission (iii) wording + de-naming row | `meta` |
+| `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` | the sub-admission (iii) wording + de-naming row | `meta` |
 | [`record_outcome_observable_principle_canonical_proposal_note_2026-06-05`](RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md) | G1-G4 guardrails; registration map | `meta` |
 | [`three_generation_observable_theorem_note`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) | the C^3 / hw=1 triplet observable algebra | `retained` |
 | [`staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`](STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md) | corner-cube Hamming orbit structure | `retained` |
@@ -274,3 +276,11 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   (color-contrast surface located for orientation; the consumed arithmetic is replicated by this note's runner D1/D2, and the contrast is explanatory, not load-bearing for the registration decomposition — context handle, not a citation-graph dependency)
 
 **Dependency-surface update:** 2026-07-05 — edge hygiene: the two remaining non-retained entries in this section (the 2026-05-31 carrier consolidator and the 2026-06-09 color-einselection contrast surface) demoted to context handles per the pattern already applied to the hw-complementation entry; both consumptions are re-verified/replicated by this note's own runner as recorded in the dependency table. No decomposition claim changed.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)

@@ -10,7 +10,7 @@ approved primitive. The current approved-premise registry contains only
 and `realized_state_primitive`. None supplies the identity conversion that
 reads the fixed-locus density as the bare charged-lepton holonomy angle with
 coefficient `1`. This note does not derive, refute, re-grade, retire, or
-remove R-eta or AC_phi_lambda, and it does not edit any Tier-A registry,
+remove R-eta or AC_phi_lambda, and it does not create or edit any premise registry,
 axiom, primitive, audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
 **Primary runner:**
@@ -70,9 +70,11 @@ approved primitive, or derived theorem.
   adjacent route vocabulary. The proof below checks the approved-premise
   registry and beta-family/type mismatch directly rather than importing those
   unaudited rows as retained-grade proof.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
-  and [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json)
-  still name `delta_readout_identification_R_eta` as a live AC_phi_lambda atom.
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` and
+  `docs/audit/data/premise_decision_history.json` preserve the former
+  `delta_readout_identification_R_eta` wording as non-authoritative provenance.
+  The current scientific target is the zero-weight `open_gate` in
+  [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md).
 
 ## Theorem
 
@@ -146,7 +148,7 @@ proof.
 ## What Does Not Move
 
 - AC_phi_lambda is not retired.
-- R-eta is not derived, refuted, re-graded, or removed from Tier-A.
+- R-eta is not derived or refuted; its open gate remains.
 - h-class and h-unit are not selected.
 - No registry, axiom, primitive, audit verdict, publication surface, or
   downstream dependency status is edited.
@@ -160,10 +162,10 @@ proof.
 2. **h-class theorem.** Derive the fixed-locus density class as the physical
    charged-lepton readout class.
 3. **combined R-eta theorem.** Derive both components in one bridge.
-4. **owner governance.** Register a narrow h-unit or full R-eta premise
+4. **Approved-primitive proposal.** Register a narrow h-unit or full R-eta primitive
    explicitly if derivation is intentionally bypassed.
-5. **theta residuals.** Continue the independent Tier-A theta campaign if AC
-   R-eta remains blocked.
+5. **theta residuals.** Continue the independent theta derivation program if
+   AC R-eta remains blocked.
 
 ## No-Go Discipline Gate
 
@@ -181,7 +183,7 @@ selector, event law, Born/interface rule, physical carrier theorem,
 activation-rate premise, readout primitive, source/action bridge, or owner
 decision.
 
-**N4 residual matching.** The residual matches the Tier-A registry: the fixed
+**N4 residual matching.** The residual matches the zero-weight R-eta open obligation: the fixed
 number `2/9` is retained arithmetic conditional on R-eta; the h-unit residual
 is the physical identity-angle conversion.
 
@@ -197,7 +199,7 @@ exhaustiveness or supply the identity rule.
 on the scanned surface is the direct reading. Correct. Compatibility after
 eliminating alternatives is still weaker than a derived readout-license rule.
 
-**N8 cross-cycle echo.** This mirrors the broader Tier-A hygiene rule: approved
+**N8 cross-cycle echo.** This mirrors the broader premise-hygiene rule: approved
 primitives chain-satisfy only their declared content. A value or readout bridge
 cannot be imported just because an approved premise contains the numeral `1` in
 another slot.
@@ -215,3 +217,11 @@ Expected close:
 ```text
 TOTAL: PASS>=120 FAIL=0
 ```
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)

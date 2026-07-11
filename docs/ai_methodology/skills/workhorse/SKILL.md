@@ -33,7 +33,7 @@ The supervising agent:
 
 - reads current repo context and the relevant command/skill instructions;
 - writes the task spec, allowed files, evidence bar, and stopping conditions;
-- keeps claim-status, primitive/axiom/Tier-A, no-go, and audit boundaries
+- keeps claim-status, foundation/conditional, no-go, and audit boundaries
   current;
 - reviews every worker diff line-by-line before accepting it;
 - runs the appropriate repo checks;
@@ -50,7 +50,7 @@ The worker must not:
 
 - synthesize final verdicts that the supervising agent merely rubber-stamps;
 - apply audit verdicts, effective-status changes, or retained promotions;
-- add axioms, primitives, or Tier-A admissions;
+- add axioms, primitives, or any unregistered supplied-premise class;
 - decide to land, merge, or close PRs;
 - route science work through visual/image-generation tooling.
 

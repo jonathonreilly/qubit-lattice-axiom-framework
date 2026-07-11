@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit companion: y_t Ward-identity dependencies route to registered sources.
+"""Audit companion: y_t Ward-identity dependencies remain explicitly open.
 
 Companion runner for
 docs/YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md
@@ -10,22 +10,19 @@ The parent narrow theorem `yt_ward_identity_derivation_theorem`
 (docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md) carries an
 `audited_conditional` effective_status whose recorded repair target is:
 
-    "dependency_not_retained: provide retained or explicitly
-     registered Tier-A sources for the staggered-Dirac/canonical Q_L
-     surface and the g_bare = 1 canonical-surface convention, then
-     rerun the restricted audit."
+    "dependency_not_retained: provide retained sources for the
+     staggered-Dirac/canonical Q_L surface and the g_bare = 1
+     canonical-surface convention, then rerun the restricted audit."
 
 This companion does NOT re-prove the entire parent and does NOT close
 AC_phi_lambda. It reproves, from framework primitives + exact group
 theory + elementary polynomial algebra, exactly the two load-bearing
 facts the parent's core identity (T1)
-`y_t_bare = g_bare / sqrt(2 N_c) = g_bare / sqrt(6)` relies on, and shows
-that each of (T1)'s load-bearing dependency routes now has a *registered*
-source:
+`y_t_bare = g_bare / sqrt(2 N_c) = g_bare / sqrt(6)` relies on, and checks
+the current open status of each load-bearing dependency:
 
-  Dep 1 (staggered-Dirac / canonical Q_L surface) = AC_phi_lambda, the
-        REGISTERED Tier-A derivation target
-        `staggered_dirac_realization_gate_note_2026-05-03`
+  Dep 1 (staggered-Dirac / canonical Q_L surface) = the open AC_phi_lambda
+        carrier target `staggered_dirac_realization_gate_note_2026-05-03`
         (canonical parent: docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md).
 
   Dep 2 (g_bare = 1 canonical-surface convention) = (a) a vacuous
@@ -66,15 +63,10 @@ Block plan
            beta(g/c) = c^2 beta(g); reproves the retained basis identity.
   Block 8  Normalized form factor F := y_t_bare / g_bare is g_bare-FLAT
            (independent of g_bare): the g_bare = 1 dependence is vacuous.
-  Block 9  Dependency-registration check: Dep 1 is a registered Tier-A
-           derivation target; Dep 2's abstract basis and finite-link
-           convention authority are retained-grade in the ledger and exposed
-           as one-hop note links.
-  Block 10 Re-audit CASE arithmetic: a clean bounded_theorem row whose
-           one-hop deps are {Tier-A derivation target, retained rescaling
-           note, retained convention note}
-           is a registered Tier-A-bounded candidate under the published
-           chain rule. (No status is written.)
+  Block 9  Dependency check: Dep 1 is not an accepted premise; Dep 2's
+           abstract basis and finite-link convention are checked independently.
+  Block 10 Re-audit arithmetic: an open or non-retained dependency keeps the
+           row pending-chain. (No status is written.)
 
 Each check prints [PASS]/[FAIL]; the script prints
 'TOTAL: N PASS / 0 FAIL' and exits non-zero on any FAIL.
@@ -93,7 +85,7 @@ import sympy as sp
 # --------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parents[1]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
-TIER_A_PATH = REPO_ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+DECISION_HISTORY_PATH = REPO_ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 NOTE_PATH = REPO_ROOT / "docs" / "YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md"
 
 PASS = 0
@@ -433,26 +425,26 @@ check(
 
 
 # ==========================================================================
-banner("BLOCK 9: Dependency-registration check (reads registry/ledger; writes nothing)")
+banner("BLOCK 9: Open-dependency check (reads history/ledger; writes nothing)")
 # ==========================================================================
-DEP1_TIER_A = "staggered_dirac_realization_gate_note_2026-05-03"
+DEP1_OPEN_GATE = "staggered_dirac_realization_gate_note_2026-05-03"
 DEP2_BASIS = "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
 GBARE_CONVENTION = "g_bare_rigidity_theorem_note"
 TARGET_ROW = "yt_ward_identity_derivation_theorem"
 
-tier_a = json.loads(TIER_A_PATH.read_text(encoding="utf-8"))
+history = json.loads(DECISION_HISTORY_PATH.read_text(encoding="utf-8"))
 ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
 note_text = NOTE_PATH.read_text(encoding="utf-8")
 rows = ledger["rows"]
 RETAINED_GRADES = {"retained", "retained_no_go", "retained_bounded"}
 
-deriv_targets = set((tier_a.get("derivation_targets") or {}).keys())
-conventions = set((tier_a.get("conventions") or {}).keys())
+deriv_targets = set((history.get("derivation_targets") or {}).keys())
+conventions = set((history.get("conventions") or {}).keys())
 
 check(
-    f"Dep 1 '{DEP1_TIER_A}' is a REGISTERED Tier-A derivation target (AC_phi_lambda)",
-    DEP1_TIER_A in deriv_targets,
-    f"derivation_targets = {sorted(deriv_targets)}",
+    f"Dep 1 '{DEP1_OPEN_GATE}' is not an accepted premise",
+    DEP1_OPEN_GATE not in deriv_targets,
+    f"historical derivation_targets = {sorted(deriv_targets)}",
 )
 check(
     f"Dep 2 basis '{DEP2_BASIS}' is retained-grade in the ledger",
@@ -461,10 +453,10 @@ check(
     f"ledger_effective_status:{rows.get(DEP2_BASIS, {}).get('effective_status')}",
 )
 check(
-    f"g_bare=1 convention '{GBARE_CONVENTION}' is registered (Tier-A conventions) and retained-grade",
+    f"g_bare=1 convention '{GBARE_CONVENTION}' is historical and not retained-grade supply",
     GBARE_CONVENTION in conventions
-    and rows.get(GBARE_CONVENTION, {}).get("effective_status") in RETAINED_GRADES,
-    f"in conventions={GBARE_CONVENTION in conventions}, "
+    and rows.get(GBARE_CONVENTION, {}).get("effective_status") not in RETAINED_GRADES,
+    f"historical conventions={GBARE_CONVENTION in conventions}, "
     f"ledger_effective_status:{rows.get(GBARE_CONVENTION, {}).get('effective_status')}",
 )
 check(
@@ -498,43 +490,30 @@ check(
 # ==========================================================================
 banner("BLOCK 10: Re-audit CASE arithmetic (no status is written)")
 # ==========================================================================
-# Mirror the PUBLISHED compute_effective_status chain rule for a clean
-# bounded_theorem row whose one-hop deps are exactly:
-#   {Dep1 = Tier-A derivation target, Dep2 = retained rescaling note,
-#    Dep2 convention edge = retained rigidity note}.
-# Rule (compute_effective_status.clean_status):
-#   - a dep that is retained-grade  -> satisfies, does not bound;
-#   - a dep that is a Tier-A derivation target -> satisfies AND bounds to
-#     retained_bounded;
-#   - otherwise -> retained_pending_chain.
-# So the resolved class is Tier-A-bounded. This is the case the note makes for
-# the PARENT row once the parent's deps route to registered sources.
+# Mirror the current chain rule: only retained-grade rows and registered
+# axioms/primitives satisfy dependencies. Historical decisions and conventions
+# do not satisfy or bound the chain.
 def resolve_clean_bounded(dep_ids: list[str]) -> str:
-    has_tier_a = False
     for d in dep_ids:
         if d in rows and rows[d].get("effective_status") in RETAINED_GRADES:
             continue
-        # axiom premises would also satisfy; none of these deps are axioms
-        if d in deriv_targets:
-            has_tier_a = True
-            continue
         return "retained_pending_chain"
-    return "retained_bounded" if has_tier_a else "retained"
+    return "retained_bounded"
 
 
-resolved = resolve_clean_bounded([DEP1_TIER_A, DEP2_BASIS, GBARE_CONVENTION])
+resolved = resolve_clean_bounded([DEP1_OPEN_GATE, DEP2_BASIS, GBARE_CONVENTION])
 check(
-    "Clean bounded_theorem row with deps {Tier-A target, retained rescaling note, retained convention note} -> Tier-A-bounded candidate",
-    resolved == "retained_bounded",
+    "Open Dep 1 and non-retained convention keep the bounded row pending-chain",
+    resolved == "retained_pending_chain",
     f"resolved = {resolved} (published compute_effective_status rule)",
 )
 # Counterfactual honesty: had the note instead linked the conditional target
 # row, the chain would NOT close (the conditional dep is not retained-grade
-# nor a Tier-A target) -> retained_pending_chain.  This documents WHY the note
+# nor an accepted premise) -> retained_pending_chain. This documents why the note
 # backticks the target row.
-resolved_bad = resolve_clean_bounded([DEP1_TIER_A, DEP2_BASIS, GBARE_CONVENTION, TARGET_ROW])
+resolved_bad = resolve_clean_bounded([DEP1_OPEN_GATE, DEP2_BASIS, GBARE_CONVENTION, TARGET_ROW])
 check(
-    "Counterfactual: linking the conditional target row would cap the row (not Tier-A-bounded)",
+    "Linking another conditional target also leaves the row pending-chain",
     resolved_bad == "retained_pending_chain",
     f"resolved = {resolved_bad} (this is why the note backticks the target row)",
 )

@@ -68,9 +68,10 @@ The framework currently has the neutrino sector labeled as "different carriers"
 in the `CHARGED_LEPTON_KOIDE_REVIEW_PACKET`
 (`CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md`, backticked historical reference:
 that row was narrowed 2026-05-26 to an open-gate two-gate certificate and no
-longer carries the quoted carrier-labeling language; the species/carrier-bridge
-admission class is registered as Tier-A `AC_phi_lambda` sub-admission (iii) in
-`docs/audit/data/tier_a_admissions.json`)
+longer carries the quoted carrier-labeling language; the species/carrier bridge
+is an open scientific dependency, while
+`docs/audit/data/premise_decision_history.json` preserves only historical
+provenance)
 — meaning the neutrino mass-spectrum questions live on a separate carrier than
 the charged-lepton Koide structure. The DM closed package gives δ_CP ≈ -81° and
 θ_23 upper octant, but absolute mass scales and Δm² values are bounded
@@ -163,14 +164,14 @@ the global lift is a structural extension.
 (matter-radiation equality, N_eff support, neutrino retained observable
 bounds).
 
-**Approachability:** Tier B. Connects to Lane 5.
+**Approachability:** Medium. Connects to Lane 5.
 
 ### 4G. Cross-validation with retained δ_CP and θ_23
 
 **Target:** verify the now-retained mass spectrum is consistent with the
 already-retained δ_CP ≈ -81° and θ_23 upper octant predictions.
 
-**Approachability:** Tier A. Internal consistency check.
+**Approachability:** High. Internal consistency check.
 
 ## 4. Existing scaffolding to build on
 

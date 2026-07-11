@@ -8,6 +8,7 @@ needed for the owner-gated classification argument.
 
 from __future__ import annotations
 
+import json
 import pathlib
 import re
 import sys
@@ -20,6 +21,7 @@ DOCS = ROOT / "docs"
 ARROW = DOCS / "ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md"
 PARENT = DOCS / "SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md"
 REGISTRY = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 
 PASS = 0
 FAIL = 0
@@ -108,15 +110,15 @@ def main() -> int:
         "live quote guard: arrow universal-floor sentence",
     )
 
-    arrow_registry_quote = (
+    historical_registry_quote = (
         "the past hypothesis sits with the universal-floor admissions (scale "
         "reference / strong-CP-style shared problems), not the framework-specific "
         "Tier A-1 derivation targets (AC_phi_lambda, theta)."
     )
     check(
         4,
-        arrow_registry_quote in arrow,
-        "live quote guard: past-hypothesis placement sentence",
+        historical_registry_quote in arrow,
+        "historical quote guard: superseded past-hypothesis placement sentence",
     )
 
     parent_same_id_quote = (
@@ -144,21 +146,21 @@ def main() -> int:
         "direct text extraction: species residual statement names no tested number",
     )
 
-    theta_section = section(
-        registry,
-        "### θ — minimum decomposition (two named residuals)",
-        "### Pending-review sharpenings",
+    history = json.loads(DECISION_HISTORY.read_text(encoding="utf-8"))
+    theta_section = json.dumps(
+        history["retired_derivation_targets"]["strong_cp_theta_zero_note"],
+        ensure_ascii=False,
     )
     theta_names_number = (
-        "θ̄ = θ_gauge + arg det(M_q)" in theta_section
-        and "θ_gauge = 0" in theta_section
-        and "arg det M ∈ {0, π}" in theta_section
-        and "orientation to `0`" in theta_section
+        "theta_bar = theta_gauge + arg det(M_q)" in theta_section
+        and "theta_gauge = 0" in theta_section
+        and "arg det M in {0, pi}" in theta_section
+        and "orientation arg det M" in theta_section
     )
     check(
         7,
         theta_names_number,
-        "direct text extraction: registry theta entry names theta-bar numbers",
+        "historical provenance preserves the former theta decomposition",
     )
 
     ckm_quote = (
@@ -176,9 +178,9 @@ def main() -> int:
     print(f"files: {all_files}")
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print(
-        "classification claim: AC_phi_lambda(iii)'s C3-grade species "
-        "identification belongs beside the past hypothesis as a universal-floor "
-        "candidate, subject to owner ruling."
+        "historical classification proposal: AC_phi_lambda(iii)'s C3-grade "
+        "species identification was compared with the past hypothesis; this "
+        "proposal supplies no premise or status movement."
     )
     print(
         "counterargument: every theory needing an input does not make it free; "
@@ -186,8 +188,8 @@ def main() -> int:
         "discriminator."
     )
     print(
-        "uncertainties: owner registry ruling, audit-lane handling, and any "
-        "above-C3 or CKM/PMNS content remain outside this runner."
+        "uncertainties: a retained species-identification theorem, audit-lane "
+        "handling, and any above-C3 or CKM/PMNS content remain outside this runner."
     )
     return 0 if FAIL == 0 and total_checks == 8 else 1
 

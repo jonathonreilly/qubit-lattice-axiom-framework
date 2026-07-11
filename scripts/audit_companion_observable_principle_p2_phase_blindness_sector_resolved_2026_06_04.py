@@ -4,19 +4,19 @@
 
 Load-bearing content of the narrow note
 ---------------------------------------
-After the Record baseline absorbed the P1 (finite scalar additivity) premise of
-`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, the sole remaining scalar-selection
-admission of that parent is **P2**:
+After the Record baseline absorbed the P1 (finite scalar additivity) condition of
+`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, the remaining scalar-selection
+condition of that parent is **P2**:
 
     P2: the scalar record generator `W[J]` depends on `|Z| = |det(D+J)|`
         alone, not on `arg Z` (the fermionic phase).
 
 This runner reproves, from explicit finite-dimensional hypotheses, that P2 is
-**not an independent admission** once the determinant-readout regularity
+**not an independent premise** once the determinant-readout regularity
 hypotheses are granted. It is SECTOR-RESOLVED, and its only residual is the
 `(M)`/Berezin determinant-identification, which is already `AC_phi_lambda`-gated
-(form-selection note, that note's section 7).  The admission count is unchanged
-(genuine Tier-A admissions stay at two: `AC_phi_lambda`, `theta`).
+(form-selection note, that note's section 7). Historical admission counts have
+zero authority; the unresolved condition remains open.
 
 The two complementary sectors:
 
@@ -60,7 +60,7 @@ The two complementary sectors:
           -gated -- exactly as the det-vs-tr form selection is.  P2 therefore
           has no separate residual beyond `AC_phi_lambda` plus the named
           determinant-readout regularity hypotheses; it is neither independent
-          authority nor a hidden third admission.
+          authority nor a hidden third premise class.
 
 Companion role: not a new claim row beyond the source note; provides
 audit-friendly evidence that the load-bearing algebra holds at exact /
@@ -282,21 +282,22 @@ check("two sectors are complementary and EXHAUST det(D+J) in C* "
 # Part E -- residual: P2 routes into the (M)/AC_phi_lambda gate
 # ===========================================================================
 print("\n=== Part E: residual analysis -- P2 routes into the (M)/AC_phi_lambda "
-      "determinant identification; admission count unchanged ===")
+      "determinant identification; no extra premise class ===")
 
 # Documentation/assertion checks (mirroring the form-selection runner's Part 7):
 # the ONLY premise left after sector resolution is that the physical readout IS
 # the multiplicative-character determinant Z=det(D+J) -- the (M) premise of the
 # form-selection note, routed into the AC_phi_lambda/Berezin realization gate.
 # P2 itself is therefore neither an independent theorem nor a hidden
-# third admission.
+# third premise class.
 repo_root = Path(__file__).resolve().parents[1]
-tier_a_path = repo_root / "docs/audit/data/tier_a_admissions.json"
-tier_a = json.loads(tier_a_path.read_text())
-labels = {v["label"] for v in tier_a["derivation_targets"].values()}
-tier_a_registry_ok = (
-    tier_a["genuine_admitted_input_count"] == 2
-    and labels == {"AC_phi_lambda", "theta"}
+history_path = repo_root / "docs/audit/data/premise_decision_history.json"
+history = json.loads(history_path.read_text())
+obligations = json.loads((repo_root / "docs/audit/data/derivation_obligations.json").read_text())
+open_gate_ok = (
+    history["genuine_admitted_input_count"] == 0
+    and history["derivation_targets"] == {}
+    and obligations["nodes"]["ac_orbit_occupancy_statistical_grain_derivation_obligation"]["status"] == "open_gate"
 )
 residual_files_ok = all(
     (repo_root / rel).exists()
@@ -313,13 +314,13 @@ det_poly = sp.expand(poly_D.det())
 finite_block_continuity_ok = sp.Poly(det_poly, j).is_univariate
 minimal_axioms_text = (repo_root / "docs/MINIMAL_AXIOMS_2026-06-04.md").read_text()
 record_boundary_ok = "P2/modulus/phase-blindness" in minimal_axioms_text
-residual_ok = sector_resolution_ok and residual_files_ok and tier_a_registry_ok
+residual_ok = sector_resolution_ok and residual_files_ok and open_gate_ok
 check("residual is (M)/Berezin det-identification (AC_phi_lambda-gated), NOT P2 itself",
       residual_ok,
       "P2 has no separate residual beyond AC_phi_lambda plus named regularity hypotheses")
-check("admission count unchanged: genuine Tier-A admissions stay {AC_phi_lambda, theta}",
-      tier_a_registry_ok,
-      "no new admission introduced; Record supplies additivity only")
+check("no admission authority exists; the AC occupancy dependency remains an open gate",
+      open_gate_ok,
+      "Record supplies additivity only; the open gate supplies no premise")
 check("continuity attributed to finite-block analyticity of j->det(D+jI), NOT to Record",
       finite_block_continuity_ok and record_boundary_ok,
       f"det polynomial={det_poly}; Record boundary states no P2 import")
@@ -342,5 +343,5 @@ if FAIL:
 print("\nAll checks passed: P2 phase-blindness is sector-resolved "
       "(audit-ratified positivity on the mass-like sector; prior compact-phase "
       "lemma on the generic sector); its only residual is the "
-      "(M)/AC_phi_lambda determinant identification plus named regularity hypotheses. No new admission.")
+      "(M)/AC_phi_lambda determinant identification plus named regularity hypotheses. No new premise.")
 sys.exit(0)

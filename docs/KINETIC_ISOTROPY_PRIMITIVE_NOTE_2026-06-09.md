@@ -68,8 +68,7 @@ claims; they are not supplied by this primitive declaration.
   derived; this primitive normalizes only the one graining ratio `c_t / c_s`.
 - It does not supply any dimensionless dynamical quantity. No mass ratio,
   coupling, mixing angle, phase, or selector is supplied; dimensionless physics
-  must still derive from the framework baseline or be recorded as a bounded
-  Tier-A admission.
+  must derive from retained-grade framework content or remain conditional/open.
 - It does not supply the absolute scale (`scale_reference_primitive`) or the
   spacing ratio (derived from the no-diagonal clause); it supplies only the
   kinetic-form isotropy.
@@ -78,14 +77,13 @@ claims; they are not supplied by this primitive declaration.
 
 ## Audit-Pipeline Treatment
 
-The machine-readable distinction is:
+The machine-readable rule is:
 
 - `docs/audit/data/axiom_premise_nodes.json` lists framework axioms and
   explicitly approved framework primitives. These dependencies chain-satisfy
   without bounding downstream rows.
-- `docs/audit/data/tier_a_admissions.json` lists non-axiom derivation-target
-  admissions. These dependencies chain-satisfy only at `retained_bounded`
-  until the relevant admission is retired by a retained derivation.
+- no admission registry or third premise class exists. Every other scientific
+  dependency must be retained-derived or remain conditional/open.
 
 The structural purity guard `docs/audit/scripts/check_axiom_premise_clean.py`
 keeps this source note inside the approved-premise boundary (no framework-rule or

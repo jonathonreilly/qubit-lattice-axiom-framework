@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/theta_gauge_positive_route_stretch_status_2026_07_04.py
+runner_sha256: 6746850abeb13796054d7a0fda45f4a8081f21deff73c3dbc5eb2cbdad79b447
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.90
+status: ok
+----- stdout -----
 theta gauge positive-route stretch status verifier
 
 ========================================================================================
@@ -5,7 +13,7 @@ A. source presence and ledger status
 ========================================================================================
 [PASS] exists: docs/THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md
 [PASS] exists: docs/audit/data/audit_ledger.json
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
 [PASS] exists: docs/THETA_SUPPLIER_FLAVORED_GRADING_SPECTRAL_FLOW_REGISTERS_WINDING_2D_NARROW_THEOREM_NOTE_2026-07-02.md
 [PASS] exists: docs/THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md
@@ -26,33 +34,33 @@ A. source presence and ledger status
 [PASS] link_star row is not an effective retirement authority
 [PASS] assembly row exists with expected claim_id
 [PASS] assembly row is not an effective retirement authority
-[PASS] axiom_no_go source is present on current main
-[PASS] axiom_no_go has no pre-generated ledger authority requirement
+[PASS] axiom_no_go row exists with expected claim_id
+[PASS] axiom_no_go row is not an effective retirement authority
 [PASS] new route status note has Type open_gate
 [PASS] new route status note has Claim type open_gate
 
 ========================================================================================
-B. Tier-A target and axiom boundary
+B. historical target and current axiom boundary
 ========================================================================================
-[PASS] live Tier-A genuine count is zero
+[PASS] decision history preserves zero final admission count
 [PASS] theta entry is retired, not live
 [PASS] theta retired-target record is preserved
-[PASS] theta retirement date is recorded
+[PASS] theta disposition correction date is recorded
 [PASS] theta retirement mechanism is retained derivation
 [PASS] historical theta decomposition preserves gauge and mass atoms
 [PASS] note scope has gauge-side winding account
 [PASS] note scope has mass-side determinant-channel bridge
 [PASS] note scope has does not derive, refute, re-grade, retire, or
-[PASS] note scope has does not edit any Tier-A registry
+[PASS] note scope has does not create any admission registry
 [PASS] note scope has route-status synthesis
 [PASS] note has current-main posture line
-[PASS] note records live Tier-A zero posture
-[PASS] note says retirement records are not reopened
+[PASS] note records absence of an admission registry
+[PASS] note does not create an admission registry
 [PASS] minimal axiom boundary present: Only records are readable
 [PASS] minimal axiom boundary present: A readout value is determined by record conte
 [PASS] minimal axiom boundary present: A law privileges no states
 [PASS] minimal axiom boundary present: source/action and physical-observable identif
-[PASS] minimal axiom boundary present: the strong-CP theta admission
+[PASS] minimal axiom boundary present: the strong-CP theta gauge and mass-side deriv
 
 ========================================================================================
 C. source-packet boundary checks
@@ -161,3 +169,6 @@ H. note discipline
 ========================================================================================
 TOTAL: PASS=126 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

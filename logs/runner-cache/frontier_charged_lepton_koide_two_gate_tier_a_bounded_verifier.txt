@@ -1,49 +1,50 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_koide_two_gate_tier_a_bounded_verifier.py
-runner_sha256: ad7f58d53f7c524e2eebc461ba79a9fee363f4a3f16e6ababea555d055979307
+runner_sha256: 4bac7d6fa6c528498ec0821f666869eae27ef975c00c070fe8ce69c24d2f9759
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 
 === Charged-Lepton Koide Two-Gate Bounded Companion ===
 
 Scope: bounded_theorem on Koide two-gate algebraic chain under EXPLICIT
-       Tier-A AC_φλ admission of both gates (r=1/2 and delta=2/9). Does
+       explicit open hypotheses for both gates (r=1/2 and delta=2/9). Does
        NOT derive r=1/2 or delta=2/9. Does NOT promote AC_φλ. Does NOT
        weaken any retained no_go. Companion to parent open_gate row +
-       chain-of-custody (neither modified).
+       chain-of-custody (both non-authoritative context here).
 
 [PASS] S1.a: Q = 1/3 + (2/3) r at r²/a² = 1/2 equals 2/3 exactly  (Q = 2/3 = 2/3)
 [PASS] S1.b: c² = 2 ⇔ r²/a² = 1/2 by direct algebra  (c² at r²/a² = 1/2 equals 2)
 [PASS] S1.c: Q = 2/3 implies r²/a² = 1/2 by direct algebra  (implied r²/a² = 1/2)
-[PASS] S2.ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md: Tier-A authority present on origin/main  (registry classifies AC_phi_lambda as Tier-A admitted input)
-[PASS] S2.tier_a_admissions.json: Tier-A authority present on origin/main  (registry classifies AC_phi_lambda as Tier-A admitted input)
+[PASS] S2.ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md: context surface present  (history is provenance only; current gate is open and non-premise)
+[PASS] S2.premise_decision_history.json: context surface present  (history is provenance only; current gate is open and non-premise)
+[PASS] S2.AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION: context surface present  (history is provenance only; current gate is open and non-premise)
 [PASS] S2.gate1_no_go_portfolio: Gate-1 (r=1/2 selection) no_go portfolio members present on origin/main  (3/3 no_go rows present (acknowledged as boundary))
 [PASS] S3.gate2_no_go_portfolio: Gate-2 (delta = 2/9 radian-bridge) no_go portfolio members present on origin/main  (3/3 no_go rows present (acknowledged as boundary))
 [PASS] S3.delta_readout: delta = Q/3 readout at Q = 2/3 equals 2/9 exactly  (delta = 2/9 = 2/9)
 [PASS] S4: phase-independent Koide guardrail Q = 2/3 holds at five sample deltas  (max deviation: 3.33e-16)
-[PASS] S5: chain-of-custody anchor present on origin/main  (sidecar reference; the chain-of-custody documents L1-L10 + AC_φλ admission)
+[PASS] S5: chain-of-custody anchor present on origin/main  (sidecar reference; the chain-of-custody documents L1-L10 + AC_φλ open conditions)
 [PASS] S5.sister: sister delta companion present on origin/main  (delta-piece companion; this note is the umbrella twin)
 [PASS] S5.parent: parent open_gate row present on origin/main  (companion to (not modified by) this note)
-[PASS] S1.retained_algebra: S1 retained algebraic authorities present on origin/main  (3/3 retained authorities present)
-[PASS] S3.topological: Z_N spectral-asymmetry weight-sum theorem present on origin/main  (retained_bounded; supplies delta = L_3(1,2) = 2/9 topological readout)
+[PASS] S1.context_algebra: three algebraic context surfaces are present  (3/3 context surfaces present; authority is not inferred)
+[PASS] S3.topological: Z_N spectral-asymmetry context surface present  (context only; the identity is recomputed below and no audit authority is inferred)
 [PASS] S3.topological_identity: L_3(1,2) = (N-1)/N² at N=3 equals 2/9 exactly  (L_3(1,2) = 2/9)
-[PASS] H1: does NOT derive r = 1/2 or Q = 2/3; Gate-1 explicit Tier-A AC_φλ admission  (Tier-A registry classifies as AC_phi_lambda; no derivation attempted here)
-[PASS] H2: does NOT promote AC_φλ Tier-A admission to retained  (registry retains its current meta status; this note is downstream consumer only)
+[PASS] H1: does NOT derive r = 1/2 or Q = 2/3; Gate 1 is an explicit hypothesis  (no derivation attempted here; the open gate remains)
+[PASS] H2: does NOT promote an AC_φλ hypothesis to retained  (historical decisions are provenance only; this note is conditional)
 [PASS] H3: does NOT weaken any retained no_go in Gate-1 + Gate-2 portfolios  (all 6 portfolio members acknowledged as boundary, not retired)
-[PASS] H4: does NOT consume PDG values as load-bearing inputs  (S1-S5 use only algebraic identities + retained authorities + Tier-A admission)
-[PASS] H5: does NOT derive the √2 BAE amplitude; part of AC_φλ bundle  (sqrt(2) accepted as part of AC_phi_lambda Tier-A admission per registry)
-[PASS] H6: does NOT derive overall charged-lepton scale a  (scale a is separate Tier-A S admission; not consumed here)
+[PASS] H4: does NOT consume PDG values as load-bearing inputs  (S1-S5 use algebraic identities, retained authorities, and explicit hypotheses)
+[PASS] H5: does NOT derive the √2 BAE amplitude; part of AC_φλ bundle  (sqrt(2) is an explicit open hypothesis)
+[PASS] H6: does NOT derive overall charged-lepton scale a  (scale a is outside this dimensionless conditional calculation)
 [PASS] H7: does NOT make any neutrino-sector claim  (charged-lepton chamber only; neutrino sector entirely out of scope)
-[PASS] H8: does NOT propose new axiom or new theory-language extension  (uses the baseline one-qubit/Z^3 substrate, retained Koide theorems, existing Tier-A registry, and chain-of-custody (sidecar) only)
-[PASS] H9: does NOT modify the parent CHARGED_LEPTON_KOIDE_NOTE_2026-04-18  (companion source note pattern; parent text unchanged)
-[PASS] H10: does NOT modify the chain-of-custody CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02  (cited as sidecar reference; not modified)
+[PASS] H8: does NOT propose new axiom or new theory-language extension  (uses the baseline one-qubit/Z^3 substrate, retained Koide theorems, explicit hypotheses, and chain-of-custody sidecar)
+[PASS] H9: parent CHARGED_LEPTON_KOIDE_NOTE is context only  (relationship checked from paired-note text, not git history)
+[PASS] H10: chain-of-custody note is a non-authoritative source reference  (relationship checked from paired-note text, not a false unchanged-file assertion)
 
-PASS=25  FAIL=0
+PASS=26  FAIL=0
 
-All bounded-companion checks PASSED under explicit existing-registry framing.
+All bounded-companion checks PASSED under explicit conditional framing.
 Audit lane decides status; this runner proposes no effective status.
 
 ----- stderr -----

@@ -41,15 +41,14 @@ The auditable claims of this note are **(W1)-(W3)** (the Ward-identity
 derivation and its symmetry corollaries) and **(T1)** (the `H_unit`
 scalar-singlet matrix element). The explicit boundaries:
 
-- **(B1) Staggered-Dirac realization surface — the expected bound.** The
-  staggered `Q_L` action on which (W1)-(W3) and (T1) are stated is taken
-  on the registered Tier-A derivation target `AC_phi_lambda`, whose
-  canonical parent identity is the claim
+- **(B1) Staggered-Dirac realization surface — an explicit condition.** The
+  staggered `Q_L` action on which (W1)-(W3) and (T1) are stated is the
+  condition tracked by the claim
   `staggered_dirac_realization_gate_note_2026-05-03`
   ([`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)).
-  That gate is cited as a **declared boundary by claim id**: this note
-  does not close it, does not depend on any in-flight rewrite of its
-  content, and every theorem below is conditional on that admitted
+  That gate is cited as a **declared condition by claim id**: this note
+  does not close it, and the condition supplies no premise or dependency
+  readiness. Every theorem below is conditional on that stated action
   surface. Inside the surface, the derivations are exact
   finite-dimensional mathematics.
 - **(B2) `g_bare = 1` is a rescaling convention.** The form
@@ -221,7 +220,7 @@ separate accepted physical readout map.
 | D13 | Wilson plaquette coupling `β = 2 N_c/g_bare²` at canonical surface | DERIVED from D5 + D7 + standard Wilson action | standard lattice QFT applied to D5, D7 |
 | D14 | CMT change-of-variables tadpole identity | NON-LOAD-BEARING CONTEXT for the older Planck-ratio statement | not used in `(W1)`-`(T1)` |
 | D15 | `n_link` power counting for shared tadpole transport | NON-LOAD-BEARING CONTEXT for the older Planck-ratio statement | not used in `(W1)`-`(T1)` |
-| C1 | Canonical `Q_L = (2,3)` staggered-Dirac action surface, Eq. (0.1) | REGISTERED Tier-A derivation target / **declared boundary B1**; routes to `AC_phi_lambda`, cited by claim id, not closed here | [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md); [`YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md`](YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md) |
+| C1 | Canonical `Q_L = (2,3)` staggered-Dirac action surface, Eq. (0.1) | **declared condition B1**; routes to `AC_phi_lambda`, cited by claim id, not closed here and carrying zero premise weight | [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md); [`YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md`](YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md) |
 | C2 | `g_bare = 1` on canonical surface | RESCALING CONVENTION with accepted algebraic basis (boundary B2); the load-bearing form factor `y_t_bare/g_bare = 1/sqrt(6)` is `g_bare`-flat | [`BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md`](BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md); [`YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md`](YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md) |
 | SU(3) Casimir | SU(3) fundamental Casimir `C_F = (N_c²-1)/(2N_c) = 4/3` | STANDARD Lie-algebra fact | applied to D7 |
 | Lorentz-Clifford Fierz | Lorentz-group Fierz: `(γ^μ)(γ_μ)` scalar coefficient `|c_S| = 1` | STANDARD Clifford-algebra identity | Itzykson-Zuber §2-5; verified by Block 8 of runner |
@@ -749,8 +748,9 @@ What is identified where:
   number. Runner: 58 PASS / 0 FAIL. Boundaries restated crisply as
   (B1)-(B4); claim-type author hint stays `bounded_theorem` with the
   staggered-Dirac realization gate (B1) as the expected bound.
-- **2026-06-06**: dependency-registration repair (C1 → registered Tier-A
-  `AC_phi_lambda`; C2 → β–g_bare rescaling basis).
+- **2026-06-06 (historical):** dependency-registration attempt (C1 was then
+  labeled Tier-A `AC_phi_lambda`; that label now supplies no premise; C2 →
+  β–g_bare rescaling basis).
 - **2026-05-25**: audit-prep refresh; claim narrowed to the
   matrix-element core; SM-map and tadpole transport moved outside the
   auditable boundary.

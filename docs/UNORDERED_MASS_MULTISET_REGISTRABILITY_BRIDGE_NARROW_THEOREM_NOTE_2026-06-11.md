@@ -1,6 +1,9 @@
 # Unordered-Mass-Multiset Registrability Bridge — Conditional Narrow Bounded Theorem
 
 **Date:** 2026-06-11
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
 set or predict downstream status and does not edit the Tier-A registry,
@@ -30,7 +33,7 @@ algebraic orientation lemma, also provide a retained unordered-mass-multiset
 registrability bridge").
 
 It does **not** enact any registry reduction, edit
-`docs/audit/data/tier_a_admissions.json`, retire any Tier-A admission or
+`docs/audit/data/premise_decision_history.json`, create or retire any premise or
 `theta` (PR #3511's gated lane owns that question), derive `|delta| = 2/9`,
 consume the staggered-Dirac gate's authority (the gate's own retention drains
 in the audit lane, separately), or touch the occupancy dial `r` (see the

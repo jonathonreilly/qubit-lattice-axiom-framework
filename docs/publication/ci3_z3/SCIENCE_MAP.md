@@ -26,8 +26,8 @@ The current ontology is the four named axioms in
 These axioms do not supply probability, Born weights, a measurement basis,
 record-formation rates, dynamics, a time metric, a kinetic branch, a
 source/action, or a physical-observable identification. Approved primitives
-and owner-governed residual premises are separate registries; neither may be
-silently promoted into an extra axiom.
+are the only supplied foundation beyond the axioms. Open derivation
+obligations carry zero premise weight and may not be silently promoted.
 
 ## Spacetime, Gravity, and Continuum Work
 
@@ -88,9 +88,10 @@ action, positivity/reality, and mass/readout surfaces named by
 dependencies. It must not be generalized to every admissible action or to an
 unrestricted solution of the Standard Model strong-CP problem.
 
-The former `theta` Tier-A target is retired in the registry, but registry
-retirement is not a universal theorem and does not widen any source row's
-audited claim scope.
+The former `theta` admission is preserved only as decision history. No
+admission registry exists, and historical disposition does not widen any
+source row's audited claim scope. The mass-side occupancy/readout leg remains
+an explicit non-premise derivation obligation.
 
 ## Quantitative Electroweak, QCD, Yukawa, and Higgs Work
 
@@ -117,12 +118,9 @@ the atlas does not make every member an independently retained physical claim;
 read the effective-status mirror and decoration roll-ups.
 
 Charged-lepton Koide structure, the phase/readout bridge, and the absolute
-mass scale remain scope-sensitive. Retirement of the former
-`AC_phi_lambda` Tier-A slot leaves the physical `r=1/2` selector open: the
-owner-governed replacement explicitly supplies no `r`, `delta`, or
-charged-lepton mass value. The zero Tier-A count is therefore not a zero-premise
-claim for this lane: its owner-governed node still contains the AC(i)
-matter-action occupancy grain and AC(ii) R-eta readout-license atoms.
+mass scale remain scope-sensitive. The former `AC_phi_lambda` admission has no
+premise authority. Its two exact open derivation obligations supply no `r`,
+`delta`, or charged-lepton mass value.
 
 Start with:
 

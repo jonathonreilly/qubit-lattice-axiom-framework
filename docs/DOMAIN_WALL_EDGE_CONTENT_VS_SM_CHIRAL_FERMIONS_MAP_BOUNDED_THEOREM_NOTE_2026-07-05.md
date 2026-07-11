@@ -1,6 +1,9 @@
 # Domain-Wall Edge Content vs SM Chiral Fermions Map: Bounded Theorem
 
 **Date:** 2026-07-05
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** bounded_theorem
 **Claim scope:** an exact finite-dimensional map and obstruction report. The
 runner enumerates the landed domain-wall edge content, re-earns the existing
@@ -16,7 +19,7 @@ predict, or request an audit status.
 ## Source Context
 
 Current-main posture on 2026-07-07: the Tier-A admitted-input count is zero.
-This note does not edit `tier_a_admissions.json`, owner-governed-premise
+This note does not edit `premise_decision_history.json`, derivation-obligation
 registries, effective-status surfaces, or either Tier-A retirement record.
 
 The map depends on the landed domain-wall edge diagnostics and respects these

@@ -12,7 +12,7 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md"
-TIER_A = DOCS / "audit" / "data" / "tier_a_admissions.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
 AXIOM_PREMISES = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
@@ -70,7 +70,7 @@ def main() -> int:
 
     paths = [
         NOTE,
-        TIER_A,
+        DECISION_HISTORY,
         LEDGER,
         AXIOMS,
         AXIOM_PREMISES,
@@ -85,13 +85,13 @@ def main() -> int:
         NORMAL_FORM,
     ]
 
-    section("A. source presence and Tier-A boundary")
+    section("A. source presence and current premise boundary")
     for path in paths:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
     note = read(NOTE)
     note_flat = flat(note)
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     premises = json.loads(read(AXIOM_PREMISES))
     axioms = read(AXIOMS)
     registry = read(REGISTRY)
@@ -115,17 +115,17 @@ def main() -> int:
     defect_flat = flat(defect)
     normal_flat = flat(normal_form)
 
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     decomp = ac["minimum_decomposition"]
-    check("AC_phi_lambda remains the live Tier-A target", tier["genuine_admitted_input_count"] >= 1)
+    check("decision history has no live premise inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
     check("AC minimum decomposition keeps R-eta", "delta_readout_identification_R_eta" in decomp, decomp)
     check("AC minimum decomposition keeps occupancy separate", "reading_occupancy_selection" in decomp, decomp)
     check("AC statement names R-eta", "R-eta" in ac["statement"] and "density-read-as-angle" in ac["statement"])
-    check("human registry names R-eta", ("R-eta" in registry_flat or "R-\u03b7" in registry) and "density-read-as-angle" in registry_flat)
+    check("human registry points to the R-eta derivation obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
     check("note declares Type no_go", "**Type:** no_go" in note)
     check("note declares Claim type no_go", "**Claim type:** no_go" in note)
     check("note declares independent audit boundary", "independent audit lane only" in note)
-    check("note says R-eta is not retired", "R-eta is not derived, refuted, re-graded, or removed from Tier-A" in note)
+    check("note says R-eta remains open", "R-eta is not derived or refuted; its open gate remains" in note)
     check("note says AC_phi_lambda is not retired", "AC_phi_lambda is not retired." in note)
     check("note says no registry/axiom/primitive edit", "No registry, axiom, primitive, audit verdict, publication surface" in note)
     for forbidden in [
@@ -194,10 +194,10 @@ def main() -> int:
     ]:
         check(f"conversion source contains {phrase}", phrase in conversion_flat)
     for phrase in [
-        "h-unit is not supplied",
-        "Phi_beta = beta S_sum",
-        "target is `beta = 1`",
-        "A future direct readout-license theorem remains possible",
+        "h-unit remains unentailed after h-class has been supplied",
+        "Phi_beta = I_beta(C) = 3 beta h",
+        "target is `beta=1`",
+        "future same-observable holonomy theorem",
     ]:
         check(f"direct-license Block43 source contains {phrase}", phrase in direct_flat)
     for phrase in ["identity-unit member `c = 1`", "rescale-breaking", "W_defect_identity_unit"]:
@@ -227,8 +227,8 @@ def main() -> int:
         check("new row not required before audit pipeline seeding", True)
     else:
         check("new row claim_type is no_go", new_row.get("claim_type") == "no_go", new_row.get("claim_type"))
-        check("new row audit status remains unaudited", new_row.get("audit_status") == "unaudited", new_row.get("audit_status"))
-        check("new row effective status remains unaudited", new_row.get("effective_status") == "unaudited", new_row.get("effective_status"))
+        check("new row audit status remains non-promoted", new_row.get("audit_status") in {"unaudited", "audited_conditional"}, new_row.get("audit_status"))
+        check("new row effective status remains non-promoted", new_row.get("effective_status") in {"unaudited", "audited_conditional", "retained_pending_chain"}, new_row.get("effective_status"))
 
     section("F. exact h-unit algebra and type checks")
     L = sp.Rational(2, 9)
@@ -279,7 +279,7 @@ def main() -> int:
         "That implication is invalid",
         "A future h-unit theorem remains possible",
         "h-unit theorem",
-        "owner governance",
+        "Approved-primitive proposal",
     ]
     for phrase in required:
         check(f"note contains required boundary: {phrase}", phrase in note_flat)

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_theta_mass_side_composition_close_2026_07_03.py
-runner_sha256: 1cb7b8aee6c43578adf6c2d7ce3eb10c28a4bc608af32ae84a372ea4547f5297
+runner_sha256: 637aeeda435538d4429342df97de1fdf2419118228358194aa8df2bb35c84737
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 CHECK 01: PASS -- shared occupancy bridge sentence is present verbatim
@@ -20,11 +20,11 @@ CHECK 11: PASS -- signed-Brannen exact dials stay on the zero branch -- 3 dials 
 CHECK 12: PASS -- phase characters compose exactly on explicit independent blocks
 CHECK 13: PASS -- K/CPT equality exp(i k phi) = exp(-i k phi) leaves only k=0 -- sampled integer characters with formal all-phi guard: [0]
 CHECK 14: PASS -- hostile guard stays excluded: cos(phi+psi) violates block multiplication -- cos(2*pi/3)=-1/2, cos(pi/3)^2=1/4
-CHECK 15: PASS -- composition conditional-input count is one -- the 2026-06-12 supplied channel is this mass-side use of the shared bridge
+CHECK 15: PASS -- composition conditional-input count is two -- charged-lepton occupancy statistical grain; quark-determinant cross-sector readout
 CHECK 16: PASS -- 2026-07-01 T3c documented cross-check value is guarded -- roots = [-0.7606  0.4678  3.2928], det = 2.262e+10
 FILES: docs/THETA_MASS_SIDE_COMPOSITION_CLOSE_ON_SHARED_OCCUPANCY_BRIDGE_BOUNDED_NOTE_2026-07-03.md; scripts/frontier_theta_mass_side_composition_close_2026_07_03.py
 TOTAL: PASS=16 FAIL=0; CHECK_COUNT=16
-SURVIVING CONDITIONALS: count=1; "one record locking one admissible local possibility is one statistical slot, and the relevant locked possibilities for the generation doublet are the K/CPT record-outcome orbits rather than the real components of the fluctuation coordinate."
+SURVIVING CONDITIONALS: count=2; "charged-lepton occupancy statistical grain"; "quark-determinant cross-sector readout"
 CROSS-CHECK: 2026-07-01 T3c roots = [-0.7606  0.4678  3.2928], det = 2.262e+10
 UNCERTAINTIES: gauge side untouched: theta_gauge, real-positive Wilson action surface, multi-plaquette/large-winding gauge data; registry untouched.
 

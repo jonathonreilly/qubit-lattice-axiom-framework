@@ -6,9 +6,9 @@
 **Scope boundary:** bounded route no-go for one tempting post-axiom-update
 shortcut: treating the Record sentence "Records form" as if it supplied the
 coherence-reading event law, activation/rate normalization, or fixed-locus
-density-to-angle readout license needed for AC_phi_lambda sub-admission (ii)
+density-to-angle readout license tracked by the AC R-eta open obligation
 R-eta. This note does not derive, refute, re-grade, retire, or remove R-eta,
-and it does not edit any Tier-A registry, axiom, primitive, audit verdict, or
+and it does not create or edit any premise registry, axiom, primitive, audit verdict, or
 publication-status surface.
 **Audit boundary:** independent audit lane only.
 **Primary runner:**
@@ -22,7 +22,7 @@ The 2026-07-04 axiom refresh appended the Record sentence:
 Records form.
 ```
 
-That matters for Tier-A hygiene. A generic "occurrence exists/forms" worry is
+That matters for premise hygiene. A generic "occurrence exists/forms" worry is
 now axiom content through
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md). But the same
 axiom memo explicitly withholds every formation rule:
@@ -50,8 +50,10 @@ version of R-eta. It is not.
 - [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
   supplies the fixed-locus arithmetic `L3(1,2) = 2/9`, hence
   `S_sum = 3 L3(1,2) = 2/3`.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
-  keeps the delta readout identification R-eta as a live AC_phi_lambda atom.
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` preserves the former
+  R-eta admission wording as non-authoritative provenance. The current
+  scientific target is the zero-weight `open_gate` in
+  [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md).
 - [`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md)
   supplies only pointwise realized-state evaluation, not a state, measure,
   weighting, probability, or value.
@@ -150,8 +152,8 @@ That is a supplied normalization, not an axiom consequence. Changing `|b|` or
 ## What Does Not Move
 
 - AC_phi_lambda is not retired.
-- R-eta is not derived, refuted, re-graded, or removed from Tier-A.
-- The Tier-A registry is not edited.
+- R-eta is not derived or refuted; its open gate remains.
+- No premise registry is created or edited.
 - A future occurrence theorem is not ruled out. It must derive or explicitly
   supply the event predicate, coherence-reading interface, reset/preparation,
   activation/rate normalization, and the final readout license.
@@ -166,7 +168,7 @@ That is a supplied normalization, not an axiom consequence. Changing `|b|` or
    phase, including its physical trigger and interface.
 3. **Rate-normalization theorem.** Derive the dimensionless ratio eliminating
    `|b| / a_act` without importing the target value.
-4. **Owner governance route.** Approve a narrow readout or event primitive.
+4. **Approved-primitive route.** Approve a narrow readout or event primitive.
    That would be governance, not derivation.
 
 ## No-Go Discipline Gate
@@ -174,7 +176,7 @@ That is a supplied normalization, not an axiom consequence. Changing `|b|` or
 **N1 alternative route enumeration.** The generic Record occurrence route is
 closed as an R-eta license. Occupancy-reading streams are closed for phase
 registration. Coherence-reading events, rate-normalization theorems, direct
-angle-native R-eta theorems, and owner-governance routes remain open.
+angle-native R-eta theorems, and approved-primitive proposals remain open.
 
 **N2 wall independence.** The wall is still
 `W_cycle_holonomy_value == delta_readout_identification_R_eta`. No new wall is
@@ -184,9 +186,9 @@ introduced.
 measurement basis, no reset/preparation protocol, no rate, no comparator, no
 fitted value, and no new primitive.
 
-**N4 residual matching.** The result matches the Tier-A registry: the fixed
+**N4 residual matching.** The result matches the zero-weight R-eta open obligation: the fixed
 number `2/9` is retained fixed-locus arithmetic conditional on R-eta; the
-surviving admission is the readout identification, not generic record
+surviving obligation is the readout identification, not generic record
 formation.
 
 **N5 proven surface.** Proven here is a bounded no-go against laundering the
@@ -216,5 +218,13 @@ PYTHONPATH=scripts python3 scripts/acphilambda_r_eta_occurrence_axiom_hygiene_no
 Expected close:
 
 ```text
-TOTAL: PASS=139 FAIL=0
+TOTAL: PASS=140 FAIL=0
 ```
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)

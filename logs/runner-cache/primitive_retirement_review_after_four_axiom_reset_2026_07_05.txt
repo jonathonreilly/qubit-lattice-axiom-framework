@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py
-runner_sha256: a572bbd0ae4c4c04df04c1893b98a5401bfeb0bb542acc36a6596a22919589ea
+runner_sha256: e99263441a6aca2cef0a5dd8347300c708833c1921c2b3673485ef217ddcd905
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -17,8 +17,8 @@ Registry/front-door checks
 [PASS] scale primitive current path is stable
 [PASS] kinetic primitive current path is stable
 [PASS] realized-state primitive current path is stable
-[PASS] Tier-A registry now has zero active admitted derivation targets -- 0
-[PASS] canonical Tier-A IDs are empty on current main -- []
+[PASS] decision history has zero active premise targets -- 0
+[PASS] decision history canonical live IDs are empty -- []
 [PASS] live derivation targets are empty on current main -- {}
 [PASS] theta retirement is recorded separately
 [PASS] AC_phi_lambda retirement is recorded separately
@@ -30,7 +30,7 @@ Updated axiom-surface checks
 [PASS] axiom memo contains boundary: Records form.
 [PASS] axiom memo contains boundary: A state is a configuration of records.
 [PASS] axiom memo contains boundary: A law privileges no states.
-[PASS] axiom memo contains boundary: a law may not depend on a choice not fixed by the su
+[PASS] axiom memo contains boundary: A choice not fixed by the supplied structure remains
 [PASS] axiom memo contains boundary: Admissibility is not a dynamics axiom.
 [PASS] axiom memo contains boundary: It does not choose a Hamiltonian or transfer operato
 [PASS] axiom memo contains boundary: define a time metric
@@ -80,8 +80,8 @@ Review-note conclusion checks
 [PASS] review note records kinetic bridge stack needed for retirement
 [PASS] review note records completed hygiene repairs without science reclassification
 [PASS] review note has current-main posture line
-[PASS] review note records live Tier-A zero posture
-[PASS] review note says premise registries are not reopened
+[PASS] review note records the sole foundation
+[PASS] review note records absence of an admission registry
 [PASS] review note carries N1 no-go-discipline section
 [PASS] review note carries N2 no-go-discipline section
 [PASS] review note carries N3 no-go-discipline section
@@ -96,7 +96,7 @@ Review-note conclusion checks
 [PASS] N4 distinguishes exact, support-only, and partial residual matches
 
 Hygiene diagnostic checks
-[PASS] scale boundary runner carries the current Tier-A count gate
+[PASS] scale boundary runner rejects an admission registry
 [PASS] primitive source notes carry no pre-reset baseline narrative
 
 Verdicts

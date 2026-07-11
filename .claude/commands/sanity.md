@@ -39,12 +39,12 @@ the immune system against self-deception.
   predicate, and no state-contingent number quoted as derived?
 - Does it smuggle in assumptions the axioms exclude? (continuum space,
   fields, Born weights, species identifications, measurement dynamics —
-  each enters only via a named lane, retained theorem, or explicit
-  admission.)
+  each enters only via a named lane, retained theorem, or explicit theorem
+  condition that does not satisfy a framework dependency.)
 - Could you state this result using only framework vocabulary (sites,
   qubits, operators, sectors, records, named lanes)?
 - **RED FLAG:** Result requires vocabulary outside the framework ontology
-  with no named lane or admission supplying it.
+  with no named lane, retained theorem, or disclosed open condition.
 
 ### 2. Scale Reasonableness
 - Are observable magnitudes reasonable for the regime? Order-of-magnitude

@@ -1,5 +1,8 @@
 # Koide Full-Lattice Schur-Inheritance Note
 
+**Current authority (2026-07-11):** legacy Tier-A routing below is historical
+provenance only; it cannot satisfy any dependency.
+
 **Date:** 2026-04-18
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
 **Admitted context inputs:** staggered-Dirac realization derivation target (canonical parent: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`).
@@ -245,7 +248,7 @@ realization.
    parent `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is the
    registered Tier-A derivation target `AC_phi_lambda` (display
    `AC_φλ`) in the admission registry
-   (`docs/audit/data/tier_a_admissions.json`). This note
+   (`docs/audit/data/premise_decision_history.json`). This note
    routes the carrier naming **into** that registered target; it does
    **not** close the gate. Under the published chain rule
    (`docs/audit/scripts/compute_effective_status.py`), a clean

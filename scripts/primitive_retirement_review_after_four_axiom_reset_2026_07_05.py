@@ -26,7 +26,7 @@ KINETIC_B4_NOGO = ROOT / "docs" / "KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_
 KINETIC_BW_NOGO = ROOT / "docs" / "KINETIC_BW_OS0_IDENTIFICATION_BRIDGE_INTERFACE_NO_GO_NOTE_2026-06-16.md"
 KINETIC_COMPOSITION = ROOT / "docs" / "KINETIC_ISOTROPY_COMPOSITION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-06-09.md"
 REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+DECISION_HISTORY = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 SCALE_RUNNER = ROOT / "scripts" / "scale_reference_primitive_boundary_check.py"
 
@@ -78,7 +78,7 @@ def main() -> int:
     kinetic_bw = read(KINETIC_BW_NOGO)
     kinetic_composition = read(KINETIC_COMPOSITION)
     registry = load_json(REGISTRY)
-    tier_a = load_json(TIER_A)
+    tier_a = load_json(DECISION_HISTORY)
     ledger_rows = load_json(LEDGER)["rows"]
     scale_runner = read(SCALE_RUNNER)
 
@@ -96,8 +96,8 @@ def main() -> int:
     check("scale primitive current path is stable", nodes["scale_reference_primitive"]["current_path"] == "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md")
     check("kinetic primitive current path is stable", nodes["kinetic_isotropy_primitive"]["current_path"] == "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md")
     check("realized-state primitive current path is stable", nodes["realized_state_primitive"]["current_path"] == "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md")
-    check("Tier-A registry now has zero active admitted derivation targets", tier_a.get("genuine_admitted_input_count") == 0, str(tier_a.get("genuine_admitted_input_count")))
-    check("canonical Tier-A IDs are empty on current main", tier_a.get("canonical_ids") == [], str(tier_a.get("canonical_ids")))
+    check("decision history has zero active premise targets", tier_a.get("genuine_admitted_input_count") == 0, str(tier_a.get("genuine_admitted_input_count")))
+    check("decision history canonical live IDs are empty", tier_a.get("canonical_ids") == [], str(tier_a.get("canonical_ids")))
     check("live derivation targets are empty on current main", tier_a.get("derivation_targets", {}) == {}, str(tier_a.get("derivation_targets", {})))
     retired_targets = tier_a.get("retired_derivation_targets", {})
     check("theta retirement is recorded separately", "strong_cp_theta_zero_note" in retired_targets)
@@ -112,7 +112,7 @@ def main() -> int:
         "Records form.",
         "A state is a configuration of records.",
         "A law privileges no states.",
-        "a law may not depend on a choice not fixed by the supplied structure",
+        "A choice not fixed by the supplied structure remains a named conditional or open dependency.",
         "Admissibility is not a dynamics axiom.",
         "It does not choose a Hamiltonian or transfer operator",
         "define a time metric",
@@ -168,9 +168,9 @@ def main() -> int:
         "Hygiene Repairs Verified On 2026-07-10" in note
         and "completed hygiene repairs are not retirement evidence" in note,
     )
-    check("review note has current-main posture line", "Current-main posture (2026-07-06)" in note)
-    check("review note records live Tier-A zero posture", "Tier-A count\nzero" in note or "Tier-A count zero" in note)
-    check("review note says premise registries are not reopened", "`axiom_premise_nodes.json`" in note and "does not reopen, modify, or\nre-grade either Tier-A retirement record" in note)
+    check("review note has current-main posture line", "Current-main posture (2026-07-11)" in note)
+    check("review note records the sole foundation", "sole\n  axiom/approved-primitive foundation" in note)
+    check("review note records absence of an admission registry", "absence of an admission registry" in note)
     for idx in range(1, 9):
         check(f"review note carries N{idx} no-go-discipline section", f"**N{idx}" in note)
     check("N1 records at least five attempted routes", note.count("`ATTEMPTED`") >= 5)
@@ -180,10 +180,10 @@ def main() -> int:
     print()
 
     print("Hygiene diagnostic checks")
-    stale_count_check = "Tier-A registry genuine count remains two" in scale_runner
-    current_count_check = "Tier-A registry genuine count is zero after the 2026-07-05 retirements" in scale_runner
+    stale_count_check = "historical registry genuine count remains two" in scale_runner
+    current_count_check = "note rejects an admission registry" in scale_runner
     check(
-        "scale boundary runner carries the current Tier-A count gate",
+        "scale boundary runner rejects an admission registry",
         current_count_check and not stale_count_check,
     )
     old_baseline_refs = [

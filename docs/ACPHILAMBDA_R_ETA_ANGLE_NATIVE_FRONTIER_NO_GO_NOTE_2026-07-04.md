@@ -4,21 +4,21 @@
 **Type:** no_go
 **Claim type:** no_go
 **Scope boundary:** bounded route no-go over the current same-surface
-angle-native candidate classes for AC_phi_lambda sub-admission (ii) R-eta:
+angle-native candidate classes for the AC R-eta open obligation:
 periodic/torsion `q*pi` phase sources, homogeneous self-consistency/readout
 maps, canonical `U(1)` packagings of the `C3` fixed-locus density,
 real/K-real holonomy loci, and unlicensed `Phi = S_sum` maps. This does not
-derive, refute, re-grade, or retire R-eta, and it does not edit any Tier-A
-registry, axiom, primitive, or publication-status surface.
+derive, refute, re-grade, or retire R-eta, and it does not create or edit any
+premise registry, axiom, primitive, or publication-status surface.
 **Audit boundary:** independent audit lane only.
 **Primary runner:**
 [`scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py`](../scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py)
 
 ## Target
 
-After the 2026-07-04 Tier-A hygiene and partial AC_phi_lambda retirements, the
-machine registry still lists AC_phi_lambda as the live Tier-A target, with
-residual atoms including:
+After the 2026-07-04 premise-hygiene work, decision history preserves the
+former AC_phi_lambda residual atoms only as provenance. The current R-eta
+derivation obligation includes:
 
 ```text
 reading_occupancy_selection
@@ -55,9 +55,9 @@ fixed-locus density to the registered charged-lepton holonomy value.
 - [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
   supplies the retained no-go that the retained periodic finite/lattice phase
   sources do not derive the literal `2/9`-radian selected-line bridge.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
-  is registry metadata, not a retained theorem input; it names the live
-  residual as the delta readout identification R-eta.
+- `docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`
+  states the current open R-eta target; the historical admitted-input note is
+  provenance only.
 
 Unaudited July route-map notes are context only when named in prose. Their
 finite algebra needed below is rechecked directly by the runner.
@@ -69,7 +69,7 @@ boundary, no route derives the off-locus holonomy value
 `Phi_target = 2/3` without supplying an inhomogeneous fixed-locus-to-angle
 license.
 
-Equivalently, the surviving R-eta atom has the narrow license form:
+Equivalently, the surviving R-eta obligation has the narrow license form:
 
 ```text
 licensed bridge:
@@ -122,7 +122,7 @@ selectors, or a chosen occurrence rate.
 ## What Does Not Move
 
 - AC_phi_lambda is not retired.
-- R-eta is not derived, refuted, re-graded, or removed from Tier-A.
+- R-eta is not derived or refuted; its open gate remains.
 - AC(i), species_bridge, theta, occurrence-lane clocks, source/action gates,
   and owner primitive decisions are untouched.
 - A future angle-native theorem is not ruled out. It must supply the
@@ -140,7 +140,7 @@ selectors, or a chosen occurrence rate.
    than the count member or the zero member.
 3. **Occurrence-lane clock/event route.** Supply an occurrence theorem whose
    event-rate ratio licenses the same value without importing it.
-4. **Owner governance route.** Approve a narrow readout-selection primitive or
+4. **Approved-primitive route.** Approve a narrow readout-selection primitive or
    premise explicitly. That is governance, not derivation.
 
 ## No-Go Discipline Gate
@@ -150,7 +150,7 @@ closed by the retained radian no-go. Canonical `2*pi` packaging is checked
 here and misses. Homogeneous self-consistency maps are checked here and do
 not pin. Real/K-real holonomy is checked here and misses the off-locus value.
 The affine `Phi = S_sum` map is live only as a license target. Occurrence,
-source/action, and owner-governance routes are outside this no-go.
+source/action and approved-primitive routes are outside this no-go.
 
 **N2 wall independence.** The wall is the R-eta density-read-as-angle license
 in holonomy form:
@@ -166,7 +166,7 @@ state selection, no probability rule, no occurrence count, no theta premise,
 and no new primitive. The fixed-locus density is retained-bounded arithmetic;
 turning it into the charged-lepton angle is exactly the open license.
 
-**N4 residual matching.** The residual matches the Tier-A registry statement:
+**N4 residual matching.** The residual matches the R-eta `open_gate`:
 R-eta is the density-read-as-angle identification, with the magnitude
 arithmetic conditional on that identification.
 
@@ -201,3 +201,11 @@ Expected close:
 ```text
 TOTAL: PASS=128 FAIL=0
 ```
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)

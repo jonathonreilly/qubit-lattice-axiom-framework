@@ -11,7 +11,7 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md"
-TIER_A = DOCS / "audit" / "data" / "tier_a_admissions.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 AXIOM_PREMISES = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
 AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
@@ -85,7 +85,7 @@ def main() -> int:
 
     paths = [
         NOTE,
-        TIER_A,
+        DECISION_HISTORY,
         LEDGER,
         AXIOM_PREMISES,
         AXIOMS,
@@ -93,12 +93,12 @@ def main() -> int:
         FIXED_LOCUS,
     ]
 
-    section("A. source presence and Tier-A boundary")
+    section("A. source presence and current premise boundary")
     for path in paths:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
     note = read(NOTE)
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     premises = json.loads(read(AXIOM_PREMISES))
     axioms = read(AXIOMS)
     registry = read(REGISTRY)
@@ -109,9 +109,9 @@ def main() -> int:
     registry_flat = flat(registry)
     fixed_flat = flat(fixed_locus)
 
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     decomp = ac["minimum_decomposition"]
-    check("Tier-A has a live genuine admitted input", tier["genuine_admitted_input_count"] >= 1)
+    check("decision history has no live premise inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
     check(
         "AC minimum decomposition keeps R-eta",
         "delta_readout_identification_R_eta" in decomp,
@@ -119,11 +119,11 @@ def main() -> int:
     )
     check("AC minimum decomposition keeps occupancy separate", "reading_occupancy_selection" in decomp, decomp)
     check("AC statement names R-eta", "R-eta" in ac["statement"] and "density-read-as-angle" in ac["statement"])
-    check("human registry names R-eta", ("R-eta" in registry_flat or "R-\u03b7" in registry) and "density-read-as-angle" in registry_flat)
+    check("human registry points to the R-eta derivation obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
     check("note declares Type no_go", "**Type:** no_go" in note)
     check("note declares Claim type no_go", "**Claim type:** no_go" in note)
     check("note declares independent audit boundary", "independent audit lane only" in note)
-    check("note says R-eta is not retired", "R-eta is not derived, refuted, re-graded, or removed from Tier-A" in note)
+    check("note says R-eta remains open", "R-eta is not derived or refuted; its open gate remains" in note)
     check("note says AC_phi_lambda is not retired", "AC_phi_lambda is not retired." in note)
     check("note says no registry/axiom/primitive edit", "No registry, axiom, primitive, audit verdict" in note)
     for forbidden in [
@@ -172,7 +172,7 @@ def main() -> int:
         HUNIT.name,
     ]:
         check(f"context handle is backticked in note: {phrase}", f"`{phrase}`" in note)
-    for phrase in ["2/9", "forced transverse weights", "physical single-summand readout"]:
+    for phrase in ["2/9", "conjugate complex weights", "physical single-summand readout"]:
         check(f"fixed-locus source contains {phrase}", phrase in fixed_flat)
     for phrase in ["h-class:", "h-unit:", "physical carrier realization", "Phi(c)=c S_sum", "h-unit is not imported"]:
         check(f"note reproduces context boundary: {phrase}", phrase in note_flat)
@@ -268,19 +268,14 @@ def main() -> int:
         check("new row claim_type is no_go", new_row.get("claim_type") == "no_go", new_row.get("claim_type"))
         check("new row audit status remains unaudited", new_row.get("audit_status") == "unaudited", new_row.get("audit_status"))
         check("new row effective status remains unaudited", new_row.get("effective_status") == "unaudited", new_row.get("effective_status"))
-        deps = new_row.get("deps") or []
-        allowed_deps = {
-            "minimal_axioms",
-            "admitted_input_registry_tier_a_note_2026-05-23",
-            "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-        }
-        check("new row has no unaudited sibling dependencies", set(deps).issubset(allowed_deps), deps)
-        for dep in [
-            "minimal_axioms",
-            "admitted_input_registry_tier_a_note_2026-05-23",
-            "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-        ]:
-            check(f"new row dependency includes {dep}", dep in deps, deps)
+        check(
+            "source note links the current R-eta open obligation",
+            "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](" in note,
+        )
+        check(
+            "source note treats decision history as non-authoritative provenance",
+            "non-authoritative provenance" in note,
+        )
 
     print("\nTOTAL: PASS=%d FAIL=%d CHECKS=%d" % (PASS, FAIL, PASS + FAIL))
     return 0 if FAIL == 0 else 1

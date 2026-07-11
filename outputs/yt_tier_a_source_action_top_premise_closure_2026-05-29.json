@@ -1,13 +1,13 @@
 {
   "actual_current_surface_status": "bounded-support",
-  "claim": "Tier-A source-measure surface closes lambda=1 for normalized top source",
+  "claim": "open source-measure hypothesis gives lambda=1 conditionally for the normalized top source",
   "claim_status_certificate": {
     "actual_current_surface_status": "bounded-support",
     "bare_retained_allowed": false,
     "proposal_allowed": false,
     "trace_class": "direct_blocker_closure"
   },
-  "closed_on_tier_a_surface": {
+  "conditional_calculation_result": {
     "lambda": "1",
     "y_33": "1/sqrt(6)"
   },
@@ -29,9 +29,10 @@
     "scaled_fisher_norm": "lambda^2"
   },
   "status": {
+    "historical_p1_record": {},
     "ledger_statuses": {
-      "lsp_source": "retained_bounded",
-      "source_cov": "retained_bounded",
+      "lsp_source": "unaudited",
+      "source_cov": "unaudited",
       "source_scale_boundary": "unaudited",
       "unit_source_nogo": "unaudited"
     },
@@ -42,25 +43,11 @@
       "current_path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
       "legacy_claim_ids": [],
       "note": "Explicitly approved framework primitive for the single dimensionful scale reference a^{-1}. Units conversion only: carries no dimensionless content and does not assert a/l_P=1. Dependencies on this primitive chain-satisfy without bounding downstream rows."
-    },
-    "tier_a_p1": {
-      "class": "extensivity principle (mild)",
-      "label": "P1",
-      "leverage": 88,
-      "no_go_portfolio": [
-        "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21"
-      ],
-      "statement": "scalar observables are additive over independent subsystems; forces W = log|det(D+J)|"
     }
   },
   "top_operator": {
+    "conditional_unit_branch": "lambda=1",
     "lambda_family": "lambda/sqrt(6)",
-    "tier_a_selected_branch": "lambda=1",
     "unit_top_operator": "sum_i O_i/sqrt(6)"
   },
   "trace_class": "direct_blocker_closure"

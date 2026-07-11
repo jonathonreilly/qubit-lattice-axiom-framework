@@ -5,16 +5,22 @@ status_authority: independent_audit_lane_only
 direct_effective_status_change_allowed_from_this_note: false
 ---
 
-# Y_T Tier-A Source-Action Top-Premise Closure
+# Y_T Source-Action Unit Conditional Calculation
+
+**Current authority (2026-07-11):** the filename and all older admission
+taxonomy below are historical provenance only. This note supplies no premise
+and closes no dependency. Its `lambda=1` result is conditional on an open
+source-measure hypothesis; current premise authority is axioms and approved
+primitives only.
 
 **Claim type:** bounded_theorem
-**Role:** direct closure of the remaining `lambda = 1` top-source unit premise
-on the accepted Tier-A source-measure surface.
-**Status:** bounded-support / Tier-A-dependent closure candidate; not
+**Role:** conditional calculation of `lambda = 1` under an open source-measure hypothesis.
+**Status:** bounded conditional support; not
 unbounded retained Y_T closure by this note alone.
 **Source-measure input:** physical scalar source coordinates are canonical
 normalized trace Gibbs/RN/Fisher coordinates, with `<1> = 1`.  In this
-framework, this input is tracked as the Tier-A P1/P-cal premise.
+framework, this input is an explicit open P1/P-cal condition with zero premise
+weight.
 **Primary runner:** `scripts/frontier_yt_tier_a_source_action_top_premise_closure.py`
 **Generated output:** `outputs/yt_tier_a_source_action_top_premise_closure_2026-05-29.json`
 
@@ -42,13 +48,13 @@ physical scalar source coordinates are canonical normalized
 trace Gibbs/RN/Fisher coordinates, with <1> = 1.
 ```
 
-In this framework, that input is tracked as the Tier-A P1/P-cal premise already
-used by the observable-principle lane.
+Historically that input was tracked under P1/P-cal. It is now an open
+source-measure hypothesis and supplies no premise.
 
 ## Answer
 
-Yes, on that accepted bounded surface.  Under the Tier-A source-measure
-premise, a physical source coordinate for a normalized local operator is the
+Conditionally. Under the explicit open source-measure hypothesis, a physical
+source coordinate for a normalized local operator is the
 primitive RN/Fisher coordinate.  For the normalized top operator `O_top`, this
 forces
 
@@ -64,16 +70,15 @@ S_h = S_0 - h lambda O_top + c_lambda(h) I,   lambda != 1,
 
 as a rescaled source coordinate with Fisher norm `lambda^2`.
 
-Therefore, on the Tier-A source-measure surface,
+Therefore, under the explicit source-measure hypothesis,
 
 ```text
 lambda = 1,
 y_33 = 1 / sqrt(6).
 ```
 
-This closes the last scalar top-source normalization premise on the accepted
-source-measure input.  In repo bookkeeping that input is a Tier-A premise, so
-the result is bounded at the Tier-A level.  The bound is narrow: it is not a
+This computes the last scalar top-source normalization only under the open
+source-measure input. The result remains conditional. The bound is narrow: it is not a
 measured target value, fitted selector, Ward matrix-element definition,
 Planck-scale input, plaquette input, or running bridge.  This note does **not**
 derive P-cal/P1 from the two axioms, and therefore it does not by itself promote
@@ -83,11 +88,11 @@ Y_T to unbounded retained status.
 
 Load-bearing inputs:
 
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
-  and `docs/audit/data/tier_a_admissions.json`: P1 is an accepted Tier-A
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
+  and `docs/audit/data/premise_decision_history.json`: historically P1 was treated as an admitted
   derivation target, chain-satisfying only at the bounded tier.
 - [`OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md`](OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md):
-  reduces the observable-principle admission surface to the P-cal premise.
+  reduces the observable-principle conditional surface to the P-cal condition.
 - [`OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md`](OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md):
   records the local source/action convention whose finite RN identity is used
   here.
@@ -97,13 +102,14 @@ Load-bearing inputs:
 - [`YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md`](YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md):
   fixes the source-side covariance row in the chosen RN source coordinate.
 - [`YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md`](YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md):
-  proves `lambda = 1` once the primitive source unit is accepted.
+  proves `lambda = 1` once the primitive source unit is assumed as an explicit
+  condition.
 - [`YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md`](YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md):
   proves the finite RN/log-density source-action identity under operational
   source calibration.
 - [`YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md`](YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md):
   records the exact current-surface `lambda` counterfamily when the primitive
-  source/action premise is not accepted.
+  source/action condition is not derived.
 
 Context-only input:
 
@@ -159,8 +165,8 @@ O_top = sum_i u_i O_i,
 u_i = 1/sqrt(6),   i = 1,...,6.
 ```
 
-The six-component vector `u` has unit norm.  Applying the Tier-A source-measure
-premise to this normalized operator gives
+The six-component vector `u` has unit norm. Applying the open source-measure
+hypothesis to this normalized operator gives
 
 ```text
 S_h = S_0 - h O_top + c(h) I.
@@ -178,7 +184,7 @@ In the old obstruction notation,
 y_33(lambda) = lambda/sqrt(6)
 ```
 
-and the Tier-A source-measure premise fixes the physical source coordinate to
+and the conditional source-measure hypothesis fixes the physical source coordinate to
 `lambda = 1`.
 
 ## Relation To The Current No-Go
@@ -189,8 +195,8 @@ The recorded no-go remains correct on the smaller current surface:
 qubit/LSP/projective support alone does not force lambda = 1.
 ```
 
-This note does not dispute that.  It adds the missing accepted bounded premise:
-the Tier-A source-measure / P-cal surface.  With that premise, the
+This note does not dispute that. It makes the missing source-measure/P-cal
+hypothesis explicit. Under that hypothesis, the
 counterfamily member `lambda != 1` is not a new physical top Yukawa
 coefficient; it is a non-primitive source-coordinate rescaling.
 
@@ -217,10 +223,10 @@ target_blocker_text: "physical top source = primitive unit source/action tangent
 source_of_blocker_text: "YT primitive-unit source/action no-go and source-scale boundary notes"
 reachability_to_target: partially_closes
 artifact_role: theorem
-tier_a_dependencies:
+open_conditions:
   - observable_principle_from_axiom_note / P1
-  - P-cal source-measure premise from the 2026-05-28 two-stage synthesis
-closed_on_tier_a_surface:
+  - P-cal source-measure condition from the 2026-05-28 two-stage synthesis
+conditional_calculation_result:
   - lambda = 1
   - y_33 = 1/sqrt(6)
 not_closed_unbounded:
@@ -228,9 +234,8 @@ not_closed_unbounded:
   - strict same-source top/W pole response certificate
 proposal_allowed: false
 proposal_allowed_reason: >
-  The scalar source-unit premise closes only using an accepted Tier-A
-  source-measure premise.  A clean audit could make this retained_bounded
-  support, but not unbounded retained Y_T closure unless P-cal/P1 is retired
+  The scalar source-unit calculation uses an open source-measure hypothesis.
+  It cannot provide retained Y_T closure unless that hypothesis is derived
   by a retained derivation or strict same-source top/W evidence is supplied.
 bare_retained_allowed: false
 audit_required_before_effective_retained: true

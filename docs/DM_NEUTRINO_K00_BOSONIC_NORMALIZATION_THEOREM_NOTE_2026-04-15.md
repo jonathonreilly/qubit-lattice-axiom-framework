@@ -25,8 +25,8 @@ coefficient law or the source-amplitude branch values.
 ## Framework sentence
 
 In this note, the baseline physical framework is `Cl(3)` local algebra on the
-`Z^3` spatial substrate. Everything else is a derived atlas row or an admitted
-lane premise.
+`Z^3` spatial substrate. Everything else is a derived atlas row or an
+explicitly declared conditional input that does not chain-satisfy.
 
 ## Question
 
@@ -73,7 +73,7 @@ so the heavy-basis diagonal normalization is
 
 `K00 = 2`.
 
-Both italicised premises are explicitly admitted inputs of this
+Both italicised premises are explicitly declared conditions of this
 conditional packet; neither is derived inside this note or its runner.
 
 ## Honest conditional scope
@@ -279,8 +279,8 @@ unchanged by this addendum.
 
 ## Scope of this rigorization
 
-This rigorization is class B (graph-bookkeeping citation) with an
-explicit class D upstream gap registration. It does not change any
+This rigorization uses graph-bookkeeping citation with an
+explicit upstream-gap registration. It does not change any
 algebraic content, runner output, or load-bearing step classification.
 It records the upstream authorities the audit verdict expected and
 matches the live cite-chain pattern used by the

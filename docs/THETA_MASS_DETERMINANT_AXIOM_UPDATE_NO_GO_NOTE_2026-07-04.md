@@ -6,21 +6,19 @@
 **Scope boundary:** bounded no-go against retiring the theta mass-side
 determinant-readout bridge by appeal to the updated four axioms or approved
 primitives. This note does not derive, refute, re-grade, retire, or remove
-theta, does not set `theta_bar = 0`, and does not edit any Tier-A registry,
+theta, does not set `theta_bar = 0`, and does not create any admission registry,
 axiom, primitive, audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
-**Current-main posture (2026-07-06):** live `main` now records Tier-A count
-zero: theta was retired 2026-07-05 by retained derivation, and
-`AC_phi_lambda` was retired by owner-governance adoption. This note banks the
-historical mass-side escape-route no-go only; it does not reopen, modify, or
-re-grade either retirement record, `tier_a_admissions.json`, or owner-governed
-premise data.
+**Current-main posture (2026-07-11):** theta's gauge-side retained disposition
+remains; its mass-side K-real leg is conditional on the open AC occupancy and
+quark-determinant cross-sector readout obligations. The AC governance-only channel was withdrawn;
+that correction does not affect this historical mass-side result.
 **Primary runner:**
 [`scripts/theta_mass_determinant_axiom_update_no_go_2026_07_04.py`](../scripts/theta_mass_determinant_axiom_update_no_go_2026_07_04.py)
 
 ## Target
 
-The current Tier-A registry keeps theta live through two residual atoms:
+The admission-era decision history recorded two residual atoms:
 
 ```text
 gauge_side_winding_account
@@ -44,7 +42,7 @@ premise. They do not.
   supplies pointwise realized-state evaluation only.
 - [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
   supplies only the structural kinetic-form ratio `c_t = c_s`.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   names the theta mass-side determinant-readout bridge.
 
 Context only, not dependency links: the June determinant-character and
@@ -128,7 +126,7 @@ extra bridge.
 ## What Does Not Move
 
 - Theta is not retired.
-- The Tier-A registry is not edited.
+- No admission registry is created.
 - The gauge-side winding account is untouched.
 - No physical quark-sector determinant readout is derived.
 - No positive real mass orientation is derived from the axioms.
@@ -146,42 +144,85 @@ extra bridge.
 3. **Joint gauge/mass theorem.** Keep the invariant combination
    `theta_bar = theta_gauge + arg det(M_u M_d)` honest while moving the mass
    side.
-4. **Owner governance route.** Approve a narrow determinant-readout primitive.
+4. **Approved-primitive route.** Approve a narrow determinant-readout primitive.
    That would be governance, not derivation.
 
 ## No-Go Discipline Gate
 
-**N1 alternative route enumeration.** Updated Qubit, Admissibility, Record,
-realized-state, and kinetic-isotropy surfaces are checked and do not supply the
-mass determinant-channel bridge. K/CPT determinant-character erasure remains a
-conditional route. Scalar-mass action-surface, determinant-channel, joint
-gauge/mass, and owner-governance routes remain open.
+**N1 alternative route enumeration.** Each route is tested against current
+foundation text and direct runner evidence:
 
-**N2 wall independence.** The wall is the mass-side determinant-readout bridge:
-physical `arg det(M_u M_d)` exhaustion by a Record-registrable determinant
-channel. No new wall is added.
+| Route | Marker | Evidence and disposition |
+|---|---|---|
+| Qubit/Admissibility/Record shortcut | ATTEMPTED | The [axiom memo](MINIMAL_AXIOMS_2026-06-29.md) withholds K/CPT structure, quark determinant carrier, action, and physical readout; runner sections C-D. |
+| realized-state shortcut | ATTEMPTED | The [realized-state primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) supplies pointwise evaluation only, not the determinant channel; runner section D. |
+| kinetic-isotropy shortcut | ATTEMPTED | The [kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) fixes only kinetic graining; runner section D. |
+| K/CPT determinant-character route | ATTEMPTED | Runner sections F-G independently recover `k=0` inside the explicit multiplicative character class; this does not identify the physical quark channel. |
+| scalar-mass action route | ATTEMPTED | Signed-mass pairing algebra is preserved as conditional support; the physical scalar-mass action remains open. |
+| cross-sector determinant-readout route | ATTEMPTED | The exact zero-weight [theta obligation](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md) records the missing carrier/readout theorem without supplying it. |
+| joint gauge/mass route | ATTEMPTED | The runner preserves `theta_bar`; no mass-side step closes the gauge-side winding account. |
 
-**N3 hidden-wall scan.** The proof imports no measured neutron-EDM bound, no
-comparator, no fitted value, no axion assumption, no determinant-channel
-primitive, no positive mass-orientation primitive, and no registry edit.
+**N2 wall independence.** The mass-side target contains four independently
+closable steps:
 
-**N4 residual matching.** The result matches the Tier-A registry's mass-side
-residual and does not touch the gauge-side winding account.
+| Step | Closing it does not close |
+|---|---|
+| scalar-mass action surface | determinant-channel identification, K/CPT registration, exhaustion |
+| determinant-channel identification | action selection, K/CPT registration, exhaustion |
+| K/CPT registration | action selection, determinant identification, exhaustion |
+| physical-channel exhaustion | action selection, determinant identification, K/CPT registration |
+
+This note establishes only their joint non-supply by the current foundation;
+it does not collapse them into one wall.
+
+**N3 hidden-wall scan.** The note and runner were scanned for `assume`,
+`supplied`, `registered`, `canonical`, `standard`, `background`, `naturally`,
+`obviously`, `primitive`, and `by construction`.
+
+| Hit | Classification |
+|---|---|
+| supplied determinant/mass channel wording | explicit theorem condition, not foundation content |
+| registered determinant character/readout | scoped mathematical class or target vocabulary, not physical carrier authority |
+| approved-primitive route | future governance path, not used in the proof |
+| historical decision text | provenance only and non-evidence |
+
+No measured neutron-EDM bound, comparator, fitted value, axion assumption,
+determinant-channel primitive, or positive mass-orientation primitive is
+imported.
+
+**N4 residual matching.** The cited surfaces are matched to the exact current
+residual:
+
+| Surface | Residual there | Residual here | Match/disposition |
+|---|---|---|---|
+| [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) | no K/CPT, quark determinant carrier, action, or readout | the four independent mass walls | exact foundation-boundary match |
+| `THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md` | `k=0` inside a conditional determinant-character class | K/CPT registration only | partial closure; does not supply carrier/exhaustion |
+| `THETA_MASS_SIDE_COMPOSITION_CLOSE_ON_SHARED_OCCUPANCY_BRIDGE_BOUNDED_NOTE_2026-07-03.md` | occupancy and cross-sector readout are independent conditions | cross-sector determinant readout | exact split match |
+| [theta cross-sector obligation](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md) | construct carrier, readout, and cross-sector correspondence | same physical-channel exhaustion wall | exact target match; zero premise weight |
+| historical decision text | former target wording | none | provenance, dropped as evidence |
 
 **N5 proven surface.** Proven here is an axiom/primitives non-supply result
 plus exact determinant-character checks. It is not a universal no-go against
 future determinant-channel or scalar-mass action-surface theorems.
 
-**N6 partial closure.** The target is sharpened: derive the determinant-channel
-exhaustion bridge or keep theta admitted.
+**N6 partial closure.** The target is sharpened: derive the action,
+determinant-channel, K/CPT registration, and exhaustion steps. Partial closure
+is recorded stepwise.
 
 **N7 steelman.** A reviewer can say the determinant-character `k = 0` algebra
 is exactly the right mass-side route. Correct: this note preserves that route.
 It only says the route's interface is not in the current axioms/primitives.
 
-**N8 cross-cycle echo.** This repeats the AC(i) and R-eta accounting pattern:
-a useful conditional algebraic normal form is not the physical readout bridge
-unless the framework derives or explicitly supplies the bridge.
+**N8 cross-cycle echo.** Repo cross-cycle inventory:
+
+| Cycle | Prior retirement/closure mechanism | Applicability here |
+|---|---|---|
+| AC occupancy | remains a zero-weight statistical-grain obligation | closing it does not identify the quark determinant channel |
+| R-eta | same-observable/readout theorem remains open after countermodels | confirms that algebraic equality is not physical readout authority |
+| theta mass composition | explicitly split into occupancy and cross-sector obligations | exact current mechanism; both must close independently |
+| determinant-character phase erasure | closes the character coefficient only inside its stated class | does not construct the physical carrier, action, or exhaustion theorem |
+
+No prior cycle provides a retained mechanism that closes all four mass walls.
 
 ## Verification
 
@@ -192,3 +233,11 @@ PYTHONPATH=scripts python3 scripts/theta_mass_determinant_axiom_update_no_go_202
 ```
 
 Expected close: `FAIL=0` with at least 100 checks.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md)

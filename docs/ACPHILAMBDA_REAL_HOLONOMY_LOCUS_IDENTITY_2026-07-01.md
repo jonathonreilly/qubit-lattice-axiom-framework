@@ -1,4 +1,9 @@
 # AC_phi_lambda Real-Holonomy Locus Identity
+
+**Current authority (2026-07-11):** all admission/index language in this note is
+historical provenance only. The index supplies no premise. The live conclusion
+is conditional: the K-reality surface and off-locus angle value remain open
+readout conditions tracked by the R-eta `open_gate`.
 **Date:** 2026-07-01
 **Claim type:** bounded_theorem
 **Scope:** locus identity plus wall coupling.
@@ -33,7 +38,7 @@ locus. The delta-value admission sits off that locus.
 - [docs/KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md](KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md) supplies the modulus-stationary set and boundary. Quoted fragment: "stationary **only** at `δ = k·60°`" and "its stationary candidates are degenerate."
 - [docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md](CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md) supplies the K-reality definition. Quoted fragment: "time-reversal-reality of the generation coupling / δ=0 / transpose `b=c̄`."
 Context without dependency edges: PR #4783 `ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01` (unit wall = R-eta junction; rescale obstruction), and the sibling in-flight note PR #4788 `ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01` (registrable content of the Brannen dial = `cos(3 delta)`; cycle holonomy `Phi = 3 delta`; `W_cycle_holonomy_value`: `Phi = 2/3`).
-Tier-A registry context, cited as data path only: `docs/audit/data/tier_a_admissions.json`.
+Historical decision context, cited as provenance only: `docs/audit/data/premise_decision_history.json`.
 Quoted fragments: "the discrete orientation arg det M in {0, pi} -> 0 on the K-real reading" and
 "The mass-side K-real structure is the same C_3 conjugate-symmetric object as AC_phi_lambda sub-admission (i)."
 
@@ -187,7 +192,8 @@ Hidden-wall scan:
 Residual matching:
 - The modulus no-go row gives `delta = k pi/3` and degeneracy.
 - The custody-chain note supplies the K-reality face.
-- The Tier-A registry supplies the theta mass-side K-real statement.
+- Historical decision prose recorded the theta mass-side K-real statement; it
+  does not supply that statement today.
 - The in-flight holonomy note `ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01` supplies sibling context for the full normal form.
 
 ### N5

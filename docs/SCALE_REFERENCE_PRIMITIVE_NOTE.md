@@ -28,9 +28,8 @@ This declaration supplies the units conversion that the Lattice + Qubit +
 Admissibility + Record baseline does not itself specify. Quantities on the
 structural surface remain dimensionless or carry a power of the lattice
 spacing `[a]^n` until that reference is supplied. No derivation of the chosen
-physical scale is claimed here; treating the units reference as a Tier-A
-admitted derivation target would incorrectly bound lanes whose dimensionless
-content is otherwise clean.
+physical scale is claimed here. The units reference is an approved primitive,
+so it does not bound lanes whose dimensionless content is otherwise closed.
 
 ## What This Does Not Do
 
@@ -41,20 +40,18 @@ content is otherwise clean.
   question that the framework's natural unit equals the Planck length remains
   a separate open gravity derivation.
 - It does not supply any dimensionless quantity. Dimensionless physics must
-  still derive from the framework baseline or be explicitly recorded as a
-  bounded Tier-A admission.
+  derive from retained-grade framework content or remain conditional/open.
 - It does not change any audit verdict. Audit status remains set only by the
   independent audit lane.
 
 ## Audit-Pipeline Treatment
 
-The machine-readable distinction is:
+The machine-readable rule is:
 
 - `docs/audit/data/axiom_premise_nodes.json` lists framework axioms and
   explicitly approved framework primitives. These dependencies chain-satisfy
   without bounding downstream rows.
-- `docs/audit/data/tier_a_admissions.json` lists non-axiom derivation-target
-  admissions. These dependencies chain-satisfy only at `retained_bounded`
-  until the relevant admission is retired by a retained derivation.
+- no admission registry or third premise class exists. Every other scientific
+  dependency must be retained-derived or remain conditional/open.
 
-The scale-reference primitive belongs to the first registry, not the second.
+The scale-reference primitive belongs to the sole foundation registry.

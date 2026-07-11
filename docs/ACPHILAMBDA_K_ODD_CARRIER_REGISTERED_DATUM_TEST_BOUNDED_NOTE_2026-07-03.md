@@ -8,10 +8,9 @@ projective-carrier constructions; the broader escape path remains open)
 **Runner cache:** [`logs/runner-cache/frontier_acphilambda_k_odd_carrier_datum_2026_07_03.txt`](../logs/runner-cache/frontier_acphilambda_k_odd_carrier_datum_2026_07_03.txt)
 **Outcome:** OBSTRUCTION
 **Audit boundary:** The audit lane owns statuses. This note does not edit a registry, set a grade, register a primitive, change an axiom, or claim an `AC_phi_lambda` derivation.
-**Current-main posture (2026-07-07):** `AC_phi_lambda` is already retired on
-main by owner-governance adoption. This note is banked only as a scoped
-historical/supporting obstruction for one R-eta escape path; it does not reopen,
-modify, or supply authority for that retirement record.
+**Current-main posture (2026-07-11):** R-eta is an open derivation obligation
+with zero premise weight. This note remains scoped support for one escape-path
+test and does not close or re-grade that obligation.
 
 ## Dependencies
 

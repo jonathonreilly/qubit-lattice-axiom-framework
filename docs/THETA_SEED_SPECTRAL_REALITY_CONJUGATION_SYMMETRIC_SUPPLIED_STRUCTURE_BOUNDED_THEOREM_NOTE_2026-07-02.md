@@ -1,6 +1,9 @@
 # The Seed-Class Kernel Dissected: Spectrally-Constructed Weights Are Automatically Flip-Even, the Pure-Gauge Supplied Structure Is Exactly Conjugation-Symmetric, a Phased Seed's Odd Direction Is the Real Im-Trace Reweighting, and Conjugation-Odd Data of the Theta Type Live in Determinant-Phase (Mass-Side) Structures (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite theorems plus a graded,
 explicitly-named bridge candidate; not a terminal no-go and not a change to
@@ -8,10 +11,10 @@ the theta retirement record).
 **Status authority:** independent audit lane only. This note does not set an
 audit verdict, edit registries, register primitives, change axioms, retire or
 re-grade any Tier-A admission, or claim Strong-CP closure.
-**Current-main posture (2026-07-07):** theta is already retired from live
-Tier-A by retained derivation. This note banks a historical bounded support
-calculation for the theta-side seed-kernel campaign; it does not reopen,
-modify, or re-grade the theta retirement record or `tier_a_admissions.json`.
+**Historical posture (2026-07-07):** the repo then described theta as retired
+under an older admission taxonomy. **Current posture (2026-07-11):** that
+taxonomy has no premise authority. This note supplies conditional gauge-side
+support only; the mass-side cross-sector determinant readout is an `open_gate`.
 **Primary runner:**
 [`scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py`](../scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py)
 **Runner cache:**
@@ -119,7 +122,7 @@ above is exact either way.
    weights ..."). Used as quoted discipline; the bridge candidate is named,
    not asserted.
 
-3. **Retired theta registry text** (docs/audit/data/tier_a_admissions.json):
+3. **Retired theta registry text** (docs/audit/data/premise_decision_history.json):
    the historical gauge-side/mass-side split (`theta_bar = theta_gauge +
    arg det M`) that result 4's hand-off lands on. The retired registry text
    is context only, not a proof premise.
@@ -252,7 +255,7 @@ blocks and is not claimed here.
 | single-plaquette phased seed as continuous-theta source | NOT DECIDED HERE; T3 identifies the real Im-trace seed direction, while flow/source exclusion requires the separate flow/shadow blocks |
 | matter-sector conjugation-odd coupling | THE NAMED CHANNEL (T4): determinant phases — the registry's mass side; not this lane |
 | direct multi-plaquette anisotropic weighting supply | would need its own framework derivation — no candidate route exists in the repo's current construction pattern (named, not foreclosed) |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

@@ -5,16 +5,15 @@
 **Claim type:** no_go
 **Scope boundary:** first-principles route test for G3, the phase-type
 `F cup F` insertion named by the theta gauge positive-route stretch. This note
-does not retire theta, does not set `theta_bar = 0`, does not edit any Tier-A
-registry, primitive, axiom, audit verdict, or publication-status surface, and
+does not retire theta, does not set `theta_bar = 0`, does not create any
+admission registry, primitive, axiom, audit verdict, or publication-status surface, and
 does not claim that a phase-type route is impossible in future work.
 **Audit boundary:** independent audit lane only.
-**Current-main posture (2026-07-06):** live `main` now records Tier-A count
-zero: theta was retired 2026-07-05 by retained derivation, and
-`AC_phi_lambda` was retired by owner-governance adoption. This note banks the
-historical G3 escape-route no-go only; it does not reopen, modify, or re-grade
-either retirement record, `tier_a_admissions.json`, or owner-governed premise
-data.
+**Current-main posture (2026-07-11):** theta's gauge-side retained disposition
+remains; its mass-side K-real leg is conditional on the open AC occupancy and
+quark-determinant cross-sector readout obligations. The AC governance-only channel was withdrawn
+and its two atoms are open obligations; that correction does not affect this
+historical G3 result.
 **Primary runner:**
 [`scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py`](../scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py)
 
@@ -39,9 +38,9 @@ physical-sector registration needed to close G3.
 - [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
   withholds source/action, weighting, context-selection, and arbitrary
   physical-observable identification.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
-  leaves theta as a Tier-A derivation target with gauge-side winding and
-  mass-side determinant residual atoms.
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` preserves historical
+  theta target wording only; the current gauge and mass-side work remains open
+  with zero premise weight.
 - [`THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md`](THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md)
   proves the closed-branch carrier reduction: if an `F cup F` insertion is
   given, it reduces to the cross-plane intersection charge.
@@ -85,7 +84,7 @@ on where a successful insertion would have to live.
 | Continuous Weyl label shift | Obstructed: the `A2` Weyl fixed Cartan subspace is zero. This rules out the wrong slot; it does not create the phase slot. |
 | Real class-weight gluing | Orientation-reversal-even real weights cannot register the odd branch. This motivates a phase-type insertion but does not supply one. |
 | Multiplaquette/clover admissibility | The route remains admissible and not clean-closeable. Admissibility is not selection, coefficient, or physical registration. |
-| Tier-A registry | The gauge-side winding residual remains present; the registry is not edited by this block. |
+| admission-era decision history | The gauge-side winding residual remains present; the registry is not edited by this block. |
 
 ## Exact Algebraic Boundary
 
@@ -118,7 +117,7 @@ the current surfaces do not derive it.
 ## What Does Not Move
 
 - Theta is not retired.
-- The Tier-A registry is not edited.
+- No admission registry is created.
 - No axiom or primitive is changed.
 - No audit status or effective status is changed.
 - No claim is made that future action-side or measure-side work cannot derive
@@ -126,6 +125,65 @@ the current surfaces do not derive it.
 - No physical `SU(3)` theta sector, continuum limit, or record/readout
   registration is asserted.
 - No mass-side determinant-channel bridge is supplied.
+
+## No-Go Discipline Gate
+
+**N1 alternative route enumeration.** The route fan-out above is exhaustive
+for the current packet and every route has an explicit ATTEMPTED disposition:
+
+| Route | Marker | Evidence and disposition |
+|---|---|---|
+| axiom/primitive shortcut | ATTEMPTED | no action, phase weight, or physical-registration law is supplied |
+| additive per-plaquette functional | ATTEMPTED | the runner recomputes its zero complementary-plane mixed derivative |
+| closed-branch carrier | ATTEMPTED | it evaluates a supplied insertion but does not select one |
+| continuous Weyl-label shift | ATTEMPTED | the runner finds no nonzero Weyl-fixed Cartan shift |
+| real class-weight gluing | ATTEMPTED | even real weights cannot distinguish the oriented branch |
+| multiplaquette/clover route | ATTEMPTED | it remains a live construction route, but admissibility does not select its coefficient |
+
+**N2 wall independence.** G3 has three independently closable walls:
+
+| Wall | Closing it does not close |
+|---|---|
+| oriented multiplaquette functional | phase coefficient or physical registration |
+| phase/action coefficient | functional construction or physical registration |
+| physical gauge-sector registration | functional construction or coefficient selection |
+
+The runner checks these as distinct omissions; this note does not compress
+them into one missing premise.
+
+**N3 hidden-wall scan.** The note and runner were scanned for `assume`,
+`supplied`, `registered`, `canonical`, `standard`, `background`, `naturally`,
+`obviously`, `primitive`, and `by construction`. The supplied per-plaquette
+class is an explicit theorem condition; historical decision language is
+provenance only; and multiplaquette admissibility is not treated as selection.
+No measured bound, fitted coefficient, action primitive, topological-sector
+primitive, or physical-registration bridge is imported.
+
+**N4 residual matching.** The carrier packet leaves insertion selection open;
+the Weyl packet rules out only a continuous shift slot; the real-gluing packet
+leaves a complex phase slot; and the per-plaquette packet rules out only an
+additive local class. Those residuals match the three G3 walls above. The
+mass-side quark-determinant readout is a separate obligation and is neither a
+dependency nor evidence for this gauge-side no-go.
+
+**N5 proven surface.** Proven here is current-packet non-supply plus finite
+algebraic route pruning. It is not a universal no-go against a future
+multiplaquette action, phase coefficient, or gauge-sector registration.
+
+**N6 partial closure.** A construction may close any of the functional,
+coefficient, or registration walls independently. Such progress narrows G3
+without creating a premise or claiming the other walls.
+
+**N7 steelman.** A reviewer can argue that the clover/multiplaquette route is
+the natural action-native candidate. Correct: it remains live. The result here
+is only that the current framework has not selected its functional,
+coefficient, and physical interpretation.
+
+**N8 cross-cycle echo.** G1 defect discipline, G2 readout registration, and G3
+phase insertion remain separate gauge-side gates. The AC occupancy and R-eta
+programs can liquidate their own zero-weight obligations, while the theta
+mass-side quark-determinant readout remains independent. None of those cycles
+supplies any of G3's three gauge-side walls.
 
 ## Next Attack Plan
 
@@ -149,3 +207,10 @@ PYTHONPATH=scripts python3 scripts/theta_g3_phase_insertion_current_surface_no_g
 ```
 
 Expected close: `FAIL=0` with at least 95 checks.
+
+## Dependency Separation (2026-07-11)
+
+Historical decision records have zero premise weight. G3 is a gauge-side open
+target and has no dependency edge to the mass-side
+`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`.
+That obligation is tracked independently and cannot make this note ready.

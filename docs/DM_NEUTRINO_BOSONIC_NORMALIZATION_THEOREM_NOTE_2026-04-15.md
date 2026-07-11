@@ -229,8 +229,8 @@ Authorities cited:
   `W[jGamma_1] = 8 log|1 - j^2/m^2|`, and the weak-coupling per-mode
   normalization identity
   `-m^2 W''(0)/16 = Tr(Gamma_1^dag Gamma_1)/16 = 1`. Its two named
-  premises — the family identification (readout-identification
-  admission class) and the comparator-point declaration — are stated
+  conditions — the family identification (readout-identification
+  condition) and the comparator-point declaration — are stated
   in that note.
 
 The runner-checked content of this note (Part 1 algebra: `Y` nilpotent,
@@ -261,7 +261,7 @@ is unchanged by the source edit.
 
 ## Scope of this rigorization
 
-This rigorization is class B (graph-bookkeeping citation). It does not
+This rigorization uses graph-bookkeeping citation. It does not
 change any algebraic content, runner output, or load-bearing step
 classification. It records the upstream authority named by the repair target
 and matches the live cite-chain pattern used by the

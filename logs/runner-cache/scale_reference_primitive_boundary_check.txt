@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/scale_reference_primitive_boundary_check.py
-runner_sha256: 8f32952c4dc78a9d4de99ce0042faaf37dd13a9b3cbe627cc442204d85a65d07
+runner_sha256: 9731bbd2d4f6a127295f6e266822db623645045ea9967d2e0bc130fb5d8df267
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -14,7 +14,7 @@ Scope: primitive registry/source firewall only; no downstream theorem.
 [PASS] source note exists -- docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
 [PASS] policy exists -- docs/audit/AXIOM_MINIMALITY_POLICY.md
 [PASS] registry exists -- docs/audit/data/axiom_premise_nodes.json
-[PASS] Tier-A registry exists -- docs/audit/data/tier_a_admissions.json
+[PASS] decision-history file exists -- docs/audit/data/premise_decision_history.json
 [PASS] source type is meta
 [PASS] source declares framework primitive status
 [PASS] registry canonical ids include scale primitive
@@ -29,10 +29,10 @@ Scope: primitive registry/source firewall only; no downstream theorem.
 [PASS] policy records dimensional irreducibility
 [PASS] policy records no-laundering boundary
 [PASS] policy keeps Planck-length self-consistency separate
-[PASS] Tier-A registry genuine count is zero after the 2026-07-05 retirements -- 0
-[PASS] scale primitive is not a Tier-A derivation target
-[PASS] Tier-A registry records scale as reclassified primitive
-[PASS] Tier-A reclassification says not status-bounding
+[PASS] decision history preserves zero final admission count -- 0
+[PASS] scale primitive was never a historical derivation target
+[PASS] decision history records scale reclassification provenance
+[PASS] historical reclassification says not status-bounding
 [PASS] note declares exactly one dimensionful reference
 [PASS] note names Planck mass scale reference
 [PASS] note says units conversion not physics axiom
@@ -42,8 +42,8 @@ Scope: primitive registry/source firewall only; no downstream theorem.
 [PASS] note says it does not assert a/l_P = 1 as derived
 [PASS] note says it does not supply dimensionless quantity
 [PASS] note says it does not change audit verdicts
-[PASS] note distinguishes axiom-premise registry from Tier-A admissions
-[PASS] note assigns scale primitive to first registry
+[PASS] note names the sole foundation registry
+[PASS] note rejects an admission registry
 [PASS] forbidden overclaim absent: derives?\s+(?:the\s+)?Planck length
 [PASS] forbidden overclaim absent: derives?\s+(?:the\s+)?Planck mass
 [PASS] forbidden overclaim absent: a/l_P\s*=\s*1\s+is\s+derived

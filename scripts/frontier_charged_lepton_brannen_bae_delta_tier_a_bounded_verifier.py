@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
-"""Verifier for the charged-lepton Brannen-BAE delta Tier-A bounded theorem.
+"""Verifier for the charged-lepton Brannen-BAE conditional algebra note.
 
 Pair runner for:
 docs/CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md
 
 The runner exercises ONLY:
 - S1: algebraic Brannen-BAE ansatz x_k/a = 1 + sqrt(2)*cos(delta + 2*pi*k/3)
-- S2: presence on origin/main of the Tier-A registry files cited
+- S2: current open-gate routing and historical provenance
 - S3: exact algebraic sorted positive ratios match independent targets
 - S4: Q = 2/3 holds exactly on the computed values (retained guardrail)
 - S5: sidecar empirical PDG match within stated tolerance (NOT load-bearing)
-- H1-H8: hostile-audit checks (no Tier-A promotion, no no_go weakening,
+- H1-H8: hostile-audit checks (no premise promotion, no no_go weakening,
   no new delta derivation, no PDG load-bearing in S1-S4, etc.)
 
-This is a bounded-theorem verifier. It does NOT claim to derive
-delta=2/9; that is the Tier-A AC_phi_lambda admission per the
-existing registry on origin/main.
+This verifier does NOT claim to derive delta=2/9. The value and sqrt(2)
+coefficient are explicit conditional hypotheses; historical decisions supply
+no premise.
 """
 
 from __future__ import annotations
@@ -25,6 +25,7 @@ import os
 import subprocess
 import sys
 from fractions import Fraction
+from pathlib import Path
 
 
 PASS = 0
@@ -46,7 +47,7 @@ def record(name: str, ok: bool, detail: str = "") -> None:
 # S1: Algebraic Brannen-BAE ansatz form
 # ======================================================================
 
-DELTA = 2.0 / 9.0  # Tier-A AC_phi_lambda admission per registry; not derived here.
+DELTA = 2.0 / 9.0  # Explicit conditional hypothesis; not derived here.
 SQRT2 = math.sqrt(2.0)
 
 
@@ -63,16 +64,16 @@ values_by_k = [brannen_bae(k, DELTA) for k in (0, 1, 2)]
 abs_values = sorted(abs(v) for v in values_by_k)
 
 record(
-    "S1.a: Brannen-BAE algebra computes three values from (B)+(TA)",
+    "S1.a: Brannen-BAE algebra computes three values from explicit hypotheses",
     len(values_by_k) == 3,
     f"values_by_k = {values_by_k}",
 )
 
-# S1.b: amplitude coefficient is exactly sqrt(2) (BAE part of AC_phi_lambda)
+# S1.b: amplitude coefficient is exactly sqrt(2), assumed conditionally
 record(
-    "S1.b: amplitude coefficient is sqrt(2) (BAE Tier-A admission)",
+    "S1.b: amplitude coefficient is sqrt(2) (explicit conditional hypothesis)",
     abs(SQRT2 - math.sqrt(2.0)) < 1e-15,
-    "sqrt(2) is the BAE amplitude; part of AC_phi_lambda Tier-A bundle per registry",
+    "sqrt(2) is an open BAE amplitude input, not a premise",
 )
 
 # S1.c: phase increment is exactly 2*pi/3 (Z_3 native step)
@@ -84,7 +85,7 @@ record(
 )
 
 # ======================================================================
-# S2: Tier-A registry files present on origin/main
+# S2: current open gate and historical provenance
 # ======================================================================
 
 
@@ -116,23 +117,26 @@ def repo_root() -> str:
 
 
 ROOT = repo_root()
+PAIR_NOTE = Path(ROOT) / "docs/CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md"
+PAIR_TEXT = PAIR_NOTE.read_text(encoding="utf-8")
 
-TIER_A_AUTHORITIES = [
+CONTEXT_SURFACES = [
     "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
-    "docs/audit/data/tier_a_admissions.json",
+    "docs/audit/data/premise_decision_history.json",
+    "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
 ]
 
-for relpath in TIER_A_AUTHORITIES:
-    exists = file_exists_on_origin_main(ROOT, relpath)
+for relpath in CONTEXT_SURFACES:
+    exists = os.path.exists(os.path.join(ROOT, relpath))
     short = relpath.split("/")[-1][:55]
     record(
-        f"S2.{short}: Tier-A authority present on origin/main",
+        f"S2.{short}: context surface present",
         exists is True,
-        "registry classifies AC_phi_lambda as Tier-A admitted input",
+        "history is provenance only; current gate is open and non-premise",
     )
 
 # S2.no_go_portfolio: the three retained_no_go rows in AC_phi_lambda's
-# no_go portfolio per the Tier-A registry
+# historical no-go portfolio retained as a boundary
 NO_GO_PORTFOLIO = [
     "docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
     "docs/KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24.md",
@@ -246,16 +250,16 @@ record(
 
 # H1: this note does NOT derive delta = 2/9
 record(
-    "H1: this note does NOT derive delta = 2/9; explicit Tier-A AC_phi_lambda admission",
-    True,
-    "Tier-A registry classifies delta as AC_phi_lambda admission; no derivation attempted here",
+    "H1: this note does NOT derive delta = 2/9; it is an explicit hypothesis",
+    "This note does not derive (TA)." in PAIR_TEXT,
+    "no derivation attempted here; the open gate remains",
 )
 
-# H2: does NOT promote Tier-A admission to retained
+# H2: does NOT promote a conditional hypothesis to retained
 record(
-    "H2: does NOT promote AC_phi_lambda Tier-A admission to retained",
-    True,
-    "registry retains its current meta status; this note is downstream consumer only",
+    "H2: does NOT promote an AC_phi_lambda hypothesis to retained",
+    "historical treatment has no current authority" in PAIR_TEXT,
+    "historical decisions are provenance only; this note is conditional",
 )
 
 # H3: does NOT weaken any retained no_go
@@ -269,51 +273,51 @@ record(
 # (S1-S4 use DELTA = 2/9 directly without PDG; only S5 uses PDG)
 record(
     "H4: PDG values are sidecar in S5 only; NOT load-bearing for S1-S4",
-    True,
-    "DELTA = 2/9 is admitted per Tier-A registry; not extracted from PDG",
+    "sidecar empirical comparator, not a derivation input" in PAIR_TEXT,
+    "DELTA = 2/9 is an explicit hypothesis; not extracted from PDG",
 )
 
 # H5: does NOT derive the sqrt(2) amplitude (BAE)
 record(
     "H5: does NOT derive the sqrt(2) BAE amplitude; that's part of AC_phi_lambda bundle",
-    True,
-    "sqrt(2) accepted as part of AC_phi_lambda Tier-A admission",
+    "another explicit conditional input" in PAIR_TEXT,
+    "sqrt(2) is an explicit open hypothesis",
 )
 
 # H6: does NOT derive overall scale a
 record(
     "H6: does NOT derive overall charged-lepton scale a",
-    True,
-    "scale a is Tier-A 'S' (absolute scale) admission per registry; separate from AC_phi_lambda",
+    "Does **not** derive the overall charged-lepton scale `a`" in PAIR_TEXT,
+    "scale a is outside this dimensionless conditional calculation",
 )
 
 # H7: does NOT make neutrino claims
 record(
     "H7: does NOT make any neutrino-sector claim",
-    True,
+    "Does **not** make any neutrino-sector claim." in PAIR_TEXT,
     "charged-lepton chamber only; neutrino sector entirely out of scope",
 )
 
 # H8: does NOT propose new axiom or theory-language extension
 record(
     "H8: does NOT propose new axiom or new theory-language extension",
-    True,
-    "uses the framework baseline, retained Koide theorems, and Tier-A registry only",
+    "does not introduce an axiom" in PAIR_TEXT,
+    "uses the framework baseline, retained Koide theorems, and explicit hypotheses only",
 )
 
 # ======================================================================
 # Summary
 # ======================================================================
 
-print("\n=== Charged-Lepton Brannen-BAE Delta Tier-A Bounded Theorem ===\n")
-print("Scope: bounded_theorem on Brannen-BAE algebraic chain under EXPLICIT")
-print("       Tier-A AC_phi_lambda admission of delta=2/9. Does NOT derive")
-print("       delta, sqrt(2) BAE, or scale a. Does NOT promote Tier-A.\n")
+print("\n=== Charged-Lepton Brannen-BAE Delta Conditional Algebra ===\n")
+print("Scope: bounded algebraic chain under explicit open hypotheses.")
+print("       Does NOT derive delta=2/9 or sqrt(2).")
+print("       delta, sqrt(2) BAE, or scale a. Does NOT promote a premise.\n")
 for line in LOG:
     print(line)
 print(f"\nPASS={PASS}  FAIL={FAIL}\n")
 if FAIL == 0:
-    print("All bounded-theorem checks PASSED under Tier-A admission framing.")
+    print("All bounded-theorem checks PASSED under explicit conditional framing.")
     print("Independent audit and generated pipeline status decide post-landing standing.")
 else:
     print(f"{FAIL} CHECK(S) FAILED.")

@@ -1,12 +1,12 @@
 {
   "algebra": {
+    "conditional_unit_branch": "lambda=1",
     "fisher_scaled": "lambda^2",
     "source_side_result": "y_33=1/sqrt(6)",
-    "tier_a_selected": "lambda=1",
     "unit_vector": "(1,1,1,1,1,1)/sqrt(6)"
   },
   "documents": {
-    "source_boundary": "Tier-A source-measure surface only",
+    "source_boundary": "open source-measure condition only",
     "status_authority": "independent audit lane only"
   },
   "ledger": {
@@ -42,37 +42,37 @@
     },
     "support_statuses": {
       "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       },
       "yt_lsp_signed_record_source_readout_support_note_2026-05-24": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       },
       "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       },
       "yt_source_action_support_packet_note_2026-05-22": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       },
       "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       },
       "yt_source_covariance_normalization_support_note_2026-05-24": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       },
       "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25": {
-        "audit_status": "audited_clean",
-        "effective_status": "retained_bounded"
+        "audit_status": "unaudited",
+        "effective_status": "unaudited"
       }
     }
   },
   "summary": {
-    "closed_on_tier_a_surface": [
+    "conditional_calculation_result": [
       "lambda=1",
       "y_33=1/sqrt(6)"
     ],
@@ -82,9 +82,9 @@
       "strict same-source top/W pole-response evidence",
       "physical-scale g_2 and matching/running"
     ],
+    "open_condition": "P-cal/source-measure normalized RN/Fisher coordinate",
     "pass": 73,
-    "source_boundary": "Tier-A source-measure surface only",
-    "status_authority": "independent audit lane only",
-    "tier_a_input": "P-cal/source-measure primitive normalized RN/Fisher coordinate"
+    "source_boundary": "open source-measure condition only",
+    "status_authority": "independent audit lane only"
   }
 }

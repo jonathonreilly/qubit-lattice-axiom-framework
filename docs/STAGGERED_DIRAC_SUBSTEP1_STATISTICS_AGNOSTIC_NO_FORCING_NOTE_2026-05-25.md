@@ -14,9 +14,9 @@ that the Axiom 1 / Axiom 2 baseline — one-qubit operator algebra at every site
 on the `Z^3` spatial substrate — does **not** derive Grassmann/fermionic
 statistics from operator-algebra and dimension facts alone. It is compatible
 with a fermionic Jordan-Wigner frame, but the hard-core-boson reading remains
-on equal ungraded-algebra footing. Any future Tier A `FS` admission is a
-separate governance decision after audit and explicit user approval, not a
-status change made by this source note.
+on equal ungraded-algebra footing. Fermionic-statistics selection therefore
+remains an open derivation target unless a retained theorem closes it or an
+explicitly approved primitive declares the exact additional scope.
 
 ## 1. Claim scope
 
@@ -221,9 +221,8 @@ not part of the Axiom 1 / Axiom 2 baseline and is not derived in this note.
 Similar CAR/statistics walls appear in the area-law Clifford/CAR and staggered
 Dirac lanes. Those lanes sometimes proceed by explicitly accepting a
 statistics/edge-CAR premise and then proving bounded consequences. The same
-mechanism would apply here: if the no-go audits clean and the user approves a
-Tier A admission, a future registry update can record `FS`; this source note
-does not do that registration.
+mechanism would apply here only through a retained selector theorem or an
+explicitly approved primitive. This source note supplies neither one.
 
 ## 6. What this note claims / does not claim
 
@@ -232,9 +231,9 @@ does not do that registration.
   / Axiom 2 baseline plus the tested operator-algebra, dimension, and finite
   local-ordering facts do not derive fermionic statistics. (no-go on the
   forcing.)
-- If the framework uses Grassmann/fermionic matter, that statistics choice is a
-  candidate admitted input unless a separate retained selector theorem later
-  derives it.
+- If the framework uses Grassmann/fermionic matter, that statistics choice
+  remains an explicit open condition unless a retained selector theorem later
+  derives it or an approved primitive declares it.
 
 **Does not claim:**
 - Does **not** claim the framework is *inconsistent* with fermions — it is fully
@@ -249,23 +248,20 @@ does not do that registration.
   `axiom_first_spin_statistics_theorem`).
 - Sets, promotes, or changes **no** row's effective status; proposes no edit to
   audit-lane-owned data.
-- Does **not** update the Tier A registry or approve `FS` as an accepted
-  premise. That requires independent audit of this no-go and explicit user
-  approval.
+- Does **not** create or update a premise registry or approve `FS` as a
+  primitive.
 
-## 7. Registry implication (candidate only; registry update held)
+## 7. Current open target
 
-This identifies a candidate **admitted input**: the **fermionic-statistics
-selection** of the staggered-Dirac matter sector (substep 1), but this
-review-loop landing does **not** ratify it into Tier A. The correct process is:
+This identifies an open **fermionic-statistics selection** target for the
+staggered-Dirac matter sector (substep 1). The correct process is:
 
 1. land this source no-go as `claim_type: no_go` with `audit_status` left to the
    independent audit lane;
-2. if the no-go audits clean and the user explicitly approves the admission,
-   update `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` and, if desired,
-   the audit-lane-owned `tier_a_admissions.json` accounting;
+2. pursue a retained selector theorem or separately approve a narrowly scoped
+   framework primitive;
 3. until then, downstream rows may cite this as an unaudited no-go candidate,
-   not as a chain-satisfying accepted premise.
+   never as a chain-satisfying premise.
 
 ## 8. Forbidden imports check / cross-references
 

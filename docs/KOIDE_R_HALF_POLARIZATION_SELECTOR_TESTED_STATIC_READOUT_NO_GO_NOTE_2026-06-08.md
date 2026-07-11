@@ -5,6 +5,9 @@
 > canonical source-of-truth doc.
 
 **Date:** 2026-06-08
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** named-obstruction no-go (tested static-selector class)
 **Claim type:** no_go
 **Status:** no-go proposal. Sharpens the standing Koide r=1/2 admission (`AC_φλ`):
@@ -100,7 +103,7 @@ matter action deliver a *first-order* `det D` (Pfaffian/index, count-once) or th
 The tested static-selector class does not derive Koide `r=1/2`. The polarization
 therefore remains an explicit unresolved sub-residual inside the `AC_φλ` Tier-A
 target
-([`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md));
+(`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`);
 it is not a new axiom and not a new primitive. `r=1/2` is **not forbidden** — it is
 the un-forced one-complex-slot readout — but it is measure-neutral to every tested
 static framework structure. This static-readout class does not derive Koide
@@ -124,7 +127,8 @@ static framework structure. This static-readout class does not derive Koide
 - [`KOIDE_FLUCTUATION_MODULUS_GIVES_R_ONE_CHIRALITY_IS_PHASE_ONLY_FRONTIER_CORRECTION_NOTE_2026-06-04.md`](KOIDE_FLUCTUATION_MODULUS_GIVES_R_ONE_CHIRALITY_IS_PHASE_ONLY_FRONTIER_CORRECTION_NOTE_2026-06-04.md) — prior modulus/chirality route correction.
 - [`KOIDE_KAHLER_DIRAC_REALIZATION_GIVES_R_ONE_INDEX_ROUTE_CLOSED_BOUNDED_NO_GO_NOTE_2026-06-08.md`](KOIDE_KAHLER_DIRAC_REALIZATION_GIVES_R_ONE_INDEX_ROUTE_CLOSED_BOUNDED_NO_GO_NOTE_2026-06-08.md) — explicit Kähler-Dirac/index route boundary.
 - [`KOIDE_DOUBLET_IS_FROBENIUS_SCHUR_COMPLEX_TYPE_ORIENTATION_BOUNDED_NOTE_2026-06-07.md`](KOIDE_DOUBLET_IS_FROBENIUS_SCHUR_COMPLEX_TYPE_ORIENTATION_BOUNDED_NOTE_2026-06-07.md) — complex-type/orientation support boundary.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md) — current Tier-A admission registry.
+- [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md) — current zero-weight open dependency for the physical occupancy grain.
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` — historical provenance only.
 
 Graveyard context (plain references — what this no-go confirms/sharpens, not
 load-bearing deps): `KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05`.
@@ -190,3 +194,11 @@ by sharpening the residual rather than adding axioms: Record orbit count,
 modulus/chirality, and explicit Kähler-Dirac/index. The same mechanism applies
 here: narrow the no-go to the tested static class and leave the dynamical
 first-order/index route open.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)

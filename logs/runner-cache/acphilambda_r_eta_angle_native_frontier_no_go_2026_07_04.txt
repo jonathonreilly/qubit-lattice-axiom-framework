@@ -1,25 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py
+runner_sha256: 7f0f9361a168da15c7d7e7ccea9268e4fa325afcdd570e6ef09c08be8884498b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.81
+status: ok
+----- stdout -----
 AC_phi_lambda R-eta angle-native frontier no-go verifier
 
 ========================================================================================
 A. source and registry boundaries
 ========================================================================================
 [PASS] exists: docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md
 [PASS] exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
 [PASS] exists: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
 [PASS] exists: docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
-[PASS] AC_phi_lambda remains the live Tier-A target
+[PASS] decision history has no live premise inputs
 [PASS] AC minimum decomposition still includes R-eta
-[PASS] note explicitly does not edit registry
-[PASS] note says R-eta is not retired
-[PASS] human registry names R-eta
-[PASS] KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md effective status
-[PASS] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md effective status
-[PASS] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md effective status
-[PASS] RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md effective status
+[PASS] note routes current residual to open gate
+[PASS] note says R-eta remains open
+[PASS] human registry points to the R-eta derivation obligation
+[PASS] KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md context row is present
+[PASS] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md context row is present
+[PASS] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md context row is present
+[PASS] RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md context row is present
 
 ========================================================================================
 B. exact target arithmetic and off-locus status
@@ -47,7 +55,7 @@ C. periodic/torsion and canonical packaging checks
 [PASS] canonical U(1) packaging 2*pi*L misses Phi
 [PASS] canonical U(1) packaging 2*pi*S misses Phi
 [PASS] C3 root angle 2*pi/3 is not 2/3
-[PASS] fixed-locus source carries L3(1,2)=2/9
+[PASS] fixed-locus source carries exact 2/9 density
 [PASS] fixed-locus source excludes physical readout
 
 ========================================================================================
@@ -159,3 +167,6 @@ G. note/source cross-checks
 ========================================================================================
 TOTAL: PASS=128 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

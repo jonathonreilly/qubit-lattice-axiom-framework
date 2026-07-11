@@ -16,6 +16,7 @@ import os
 import subprocess
 import sys
 from fractions import Fraction
+from pathlib import Path
 
 
 PASS = 0
@@ -74,7 +75,7 @@ record(
 
 
 # ======================================================================
-# S2 + S3: Tier-A registry files + Gate-1 + Gate-2 no_go portfolios
+# S2 + S3: open-gate routing + Gate-1 + Gate-2 no_go portfolios
 # ======================================================================
 
 
@@ -106,19 +107,22 @@ def repo_root() -> str:
 
 
 ROOT = repo_root()
+PAIR_NOTE = Path(ROOT) / "docs/CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md"
+PAIR_TEXT = PAIR_NOTE.read_text(encoding="utf-8")
 
-TIER_A_AUTHORITIES = [
+CONTEXT_SURFACES = [
     "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
-    "docs/audit/data/tier_a_admissions.json",
+    "docs/audit/data/premise_decision_history.json",
+    "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
 ]
 
-for relpath in TIER_A_AUTHORITIES:
-    exists = file_exists_on_origin_main(ROOT, relpath)
+for relpath in CONTEXT_SURFACES:
+    exists = os.path.exists(os.path.join(ROOT, relpath))
     short = relpath.split("/")[-1][:50]
     record(
-        f"S2.{short}: Tier-A authority present on origin/main",
+        f"S2.{short}: context surface present",
         exists is True,
-        "registry classifies AC_phi_lambda as Tier-A admitted input",
+        "history is provenance only; current gate is open and non-premise",
     )
 
 GATE1_NO_GOS = [
@@ -195,7 +199,7 @@ chain_present = file_exists_on_origin_main(ROOT, CHAIN_OF_CUSTODY_PATH)
 record(
     "S5: chain-of-custody anchor present on origin/main",
     chain_present is True,
-    "sidecar reference; the chain-of-custody documents L1-L10 + AC_φλ admission",
+    "sidecar reference; the chain-of-custody documents L1-L10 + AC_φλ open conditions",
 )
 
 # Also the sister delta companion should be present.
@@ -221,17 +225,17 @@ record(
 # Retained algebraic authorities for S1
 # ======================================================================
 
-S1_RETAINED = [
+S1_CONTEXT = [
     "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
     "docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md",
     "docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
 ]
 
-s1_present = sum(1 for p in S1_RETAINED if file_exists_on_origin_main(ROOT, p) is True)
+s1_present = sum(1 for p in S1_CONTEXT if os.path.exists(os.path.join(ROOT, p)))
 record(
-    "S1.retained_algebra: S1 retained algebraic authorities present on origin/main",
-    s1_present == len(S1_RETAINED),
-    f"{s1_present}/{len(S1_RETAINED)} retained authorities present",
+    "S1.context_algebra: three algebraic context surfaces are present",
+    s1_present == len(S1_CONTEXT),
+    f"{s1_present}/{len(S1_CONTEXT)} context surfaces present; authority is not inferred",
 )
 
 
@@ -240,11 +244,11 @@ record(
 # ======================================================================
 
 ZN_TOPOLOGICAL = "docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md"
-zn_present = file_exists_on_origin_main(ROOT, ZN_TOPOLOGICAL)
+zn_present = os.path.exists(os.path.join(ROOT, ZN_TOPOLOGICAL))
 record(
-    "S3.topological: Z_N spectral-asymmetry weight-sum theorem present on origin/main",
+    "S3.topological: Z_N spectral-asymmetry context surface present",
     zn_present is True,
-    "retained_bounded; supplies delta = L_3(1,2) = 2/9 topological readout",
+    "context only; the identity is recomputed below and no audit authority is inferred",
 )
 
 # Topological identity check: L_3(1,2) = (N-1)/N² at N=3 = 2/9
@@ -263,16 +267,16 @@ record(
 
 # H1: does NOT derive r = 1/2 or Q = 2/3
 record(
-    "H1: does NOT derive r = 1/2 or Q = 2/3; Gate-1 explicit Tier-A AC_φλ admission",
-    True,
-    "Tier-A registry classifies as AC_phi_lambda; no derivation attempted here",
+    "H1: does NOT derive r = 1/2 or Q = 2/3; Gate 1 is an explicit hypothesis",
+    "This note does not derive `r^2/a^2=1/2`." in PAIR_TEXT,
+    "no derivation attempted here; the open gate remains",
 )
 
-# H2: does NOT promote Tier-A admission to retained
+# H2: does NOT promote an open hypothesis to retained
 record(
-    "H2: does NOT promote AC_φλ Tier-A admission to retained",
-    True,
-    "registry retains its current meta status; this note is downstream consumer only",
+    "H2: does NOT promote an AC_φλ hypothesis to retained",
+    "does not restore or promote the historical admission index" in PAIR_TEXT,
+    "historical decisions are provenance only; this note is conditional",
 )
 
 # H3: does NOT weaken any retained no_go
@@ -286,50 +290,52 @@ record(
 # H4: does NOT consume PDG values
 record(
     "H4: does NOT consume PDG values as load-bearing inputs",
-    True,
-    "S1-S5 use only algebraic identities + retained authorities + Tier-A admission",
+    "consume PDG values" in PAIR_TEXT
+    and "does not derive charged-lepton masses" in PAIR_TEXT,
+    "S1-S5 use algebraic identities, retained authorities, and explicit hypotheses",
 )
 
 # H5: does NOT derive √2 BAE amplitude
 record(
     "H5: does NOT derive the √2 BAE amplitude; part of AC_φλ bundle",
-    True,
-    "sqrt(2) accepted as part of AC_phi_lambda Tier-A admission per registry",
+    "It does not derive `r^2/a^2=1/2`, `Q=2/3`, `delta=2/9`, or the `sqrt(2)`" in PAIR_TEXT,
+    "sqrt(2) is an explicit open hypothesis",
 )
 
 # H6: does NOT derive overall scale a
 record(
     "H6: does NOT derive overall charged-lepton scale a",
-    True,
-    "scale a is separate Tier-A S admission; not consumed here",
+    "It does not derive the absolute charged-lepton scale." in PAIR_TEXT,
+    "scale a is outside this dimensionless conditional calculation",
 )
 
 # H7: does NOT make neutrino claim
 record(
     "H7: does NOT make any neutrino-sector claim",
-    True,
+    "It does not make neutrino-sector claims." in PAIR_TEXT,
     "charged-lepton chamber only; neutrino sector entirely out of scope",
 )
 
 # H8: does NOT propose new axiom or theory-language extension
 record(
     "H8: does NOT propose new axiom or new theory-language extension",
-    True,
-    "uses the baseline one-qubit/Z^3 substrate, retained Koide theorems, existing Tier-A registry, and chain-of-custody (sidecar) only",
+    "It does not add an axiom or new theory language." in PAIR_TEXT,
+    "uses the baseline one-qubit/Z^3 substrate, retained Koide theorems, explicit hypotheses, and chain-of-custody sidecar",
 )
 
-# H9: does NOT modify the parent open_gate row
+# H9: parent is context only; no authority is inferred from its file presence
 record(
-    "H9: does NOT modify the parent CHARGED_LEPTON_KOIDE_NOTE_2026-04-18",
-    True,
-    "companion source note pattern; parent text unchanged",
+    "H9: parent CHARGED_LEPTON_KOIDE_NOTE is context only",
+    "parent open-gate row preserved, not consumed" in PAIR_TEXT,
+    "relationship checked from paired-note text, not git history",
 )
 
-# H10: does NOT modify the chain-of-custody note
+# H10: chain-of-custody is a source reference, not a status authority
 record(
-    "H10: does NOT modify the chain-of-custody CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02",
-    True,
-    "cited as sidecar reference; not modified",
+    "H10: chain-of-custody note is a non-authoritative source reference",
+    "chain-of-custody source reference" in PAIR_TEXT
+    and "neither is treated as an\n  audit verdict or as authority" in PAIR_TEXT,
+    "relationship checked from paired-note text, not a false unchanged-file assertion",
 )
 
 
@@ -339,15 +345,15 @@ record(
 
 print("\n=== Charged-Lepton Koide Two-Gate Bounded Companion ===\n")
 print("Scope: bounded_theorem on Koide two-gate algebraic chain under EXPLICIT")
-print("       Tier-A AC_φλ admission of both gates (r=1/2 and delta=2/9). Does")
+print("       explicit open hypotheses for both gates (r=1/2 and delta=2/9). Does")
 print("       NOT derive r=1/2 or delta=2/9. Does NOT promote AC_φλ. Does NOT")
 print("       weaken any retained no_go. Companion to parent open_gate row +")
-print("       chain-of-custody (neither modified).\n")
+print("       chain-of-custody (both non-authoritative context here).\n")
 for line in LOG:
     print(line)
 print(f"\nPASS={PASS}  FAIL={FAIL}\n")
 if FAIL == 0:
-    print("All bounded-companion checks PASSED under explicit existing-registry framing.")
+    print("All bounded-companion checks PASSED under explicit conditional framing.")
     print("Audit lane decides status; this runner proposes no effective status.")
 else:
     print(f"{FAIL} CHECK(S) FAILED.")

@@ -25,7 +25,7 @@ OUT = ROOT / "outputs" / "source_measure_planck_action_rn_source_unit_bridge_202
 
 NOTE = DOCS / "SOURCE_MEASURE_PLANCK_ACTION_RN_SOURCE_UNIT_BRIDGE_NOTE_2026-05-30.md"
 BOUNDARY = DOCS / "SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md"
-TIER_A = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+SCALE_PRIMITIVE = DOCS / "SCALE_REFERENCE_PRIMITIVE_NOTE.md"
 PLANCK_UNIT = DOCS / "PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md"
 YT_FISHER = DOCS / "YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md"
 YT_LSP = DOCS / "YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
@@ -57,7 +57,7 @@ def zero(expr: sp.Expr) -> bool:
 
 def part1_document_boundary() -> dict[str, Any]:
     print("\nPart 1: document and dependency boundary")
-    for path in (NOTE, BOUNDARY, TIER_A, PLANCK_UNIT, YT_FISHER, YT_LSP, YT_NOGO):
+    for path in (NOTE, BOUNDARY, SCALE_PRIMITIVE, PLANCK_UNIT, YT_FISHER, YT_LSP, YT_NOGO):
         check(f"{path.relative_to(ROOT)} exists", path.exists())
 
     note = read(NOTE)
@@ -78,15 +78,15 @@ def part1_document_boundary() -> dict[str, Any]:
 
     boundary = read(BOUNDARY)
     check("boundary exposes lambda family", "lambda" in boundary and "lambda^2" in boundary)
-    tier_a = read(TIER_A)
-    check("Tier-A registry names Planck anchor", "a^{-1} = M_Pl" in tier_a)
+    scale = read(SCALE_PRIMITIVE)
+    check("approved scale primitive names Planck anchor", "a^{-1} = M_Pl" in scale)
     planck = read(PLANCK_UNIT)
     check("Planck source-unit support names lambda=1", "lambda = 1" in planck and "G_Newton,lat = 1" in planck)
 
     return {
         "claim_type_author_hint": "bounded_theorem",
         "depends_on": [
-            "Tier-A Planck anchor / natural Planck units",
+            "approved scale-reference primitive / natural Planck units",
             "finite source-action/RN support",
             "normalized signed-record top source support",
         ],

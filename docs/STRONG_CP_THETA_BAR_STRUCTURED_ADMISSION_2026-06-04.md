@@ -3,10 +3,9 @@
 **Date:** 2026-06-04
 **Type:** open_gate
 **Claim type:** open_gate
-**Claim scope:** runner-backed organization of the existing
-`strong_cp_theta_zero_note` Tier-A admission into gauge-side and mass-side
-residuals. This note does not retire, split, add, remove, or re-grade any
-Tier-A registry entry.
+**Claim scope:** runner-backed organization of the `strong_cp_theta_zero_note`
+open problem into gauge-side and mass-side residuals. This note creates or
+edits no premise registry.
 **Status authority:** independent audit lane only. This note sets no audit
 status and assigns no effective grade.
 **Runner:** [scripts/strong_cp_theta_bar_structured_admission_2026_06_04.py](../scripts/strong_cp_theta_bar_structured_admission_2026_06_04.py)
@@ -15,20 +14,18 @@ status and assigns no effective grade.
 ```yaml
 target_claim_type: open_gate
 proposed_claim_type: open_gate
-trace_class: admission_structure
-tier_a_registry_change: false
-admission_count_change: false
+trace_class: open_gate_structure
+premise_registry_change: false
 audit_status_authority: independent_audit_lane
 ```
 
 ## Governance Boundary
 
 The existing [STRONG_CP_THETA_ZERO_NOTE.md](STRONG_CP_THETA_ZERO_NOTE.md)
-admission remains the operative Tier-A entry unless a separate reviewed
-registry change lands. The runner here gives finite checks that help organize
+remains an ordinary audit-lane-owned claim surface. The runner here gives finite checks that help organize
 the residual. It does not prove `theta_bar = 0`, does not prove every route to
 `theta_bar = 0` impossible, and does not establish that the framework has
-retired the Strong-CP admission.
+closed the Strong-CP open problem.
 
 The related bridge-specific result
 [STRONG_CP_JOINT_BRIDGE_FAILS_HOLOMORPHIC_RESIDUAL_2026-06-04.md](STRONG_CP_JOINT_BRIDGE_FAILS_HOLOMORPHIC_RESIDUAL_2026-06-04.md)
@@ -67,7 +64,7 @@ The runner verifies six finite facts.
    nonzero imaginary part in the runner. The AC_phi_lambda/holomorphic
    residual is therefore not free.
 
-These facts support a structured residual map, not a Tier-A-count reduction.
+These facts support a structured residual map, not premise closure.
 
 ## Residual Map
 
@@ -81,7 +78,7 @@ These facts support a structured residual map, not a Tier-A-count reduction.
   quark-sector transport remains separate.
 - **AC_phi_lambda relation:** the mass-side algebra overlaps an existing
   AC_phi_lambda surface. That relation may guide future work, but it does not
-  by itself retire a Tier-A admission or promote the AC_phi_lambda parent.
+  by itself close a theta obligation or promote the AC_phi_lambda parent.
 
 ## Negative Boundary Check
 
@@ -100,8 +97,7 @@ claimed as `PASS`. The open routes are explicit:
 ## What This Does Not Claim
 
 - It does not solve Strong CP.
-- It does not retire or split `strong_cp_theta_zero_note` in
-  `docs/audit/data/tier_a_admissions.json`.
-- It does not introduce a new axiom, primitive, or Tier-A admission.
+- It does not close or split `strong_cp_theta_zero_note` by premise policy.
+- It does not introduce a new axiom, primitive, or premise class.
 - It does not turn axioms or primitives into bounded-status sources.
 - It does not apply an audit verdict.

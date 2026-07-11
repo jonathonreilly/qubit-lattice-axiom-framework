@@ -20,6 +20,6 @@ no_go_routes:
   - dimension_fraction_equals_scalar_wavefunction_factor
   - connected_cumulant_equals_adjoint_projection
 review_disposition: pass
-pr_status: not_opened
-next_exact_action: "Commit and push the coherent block, open one unmerged review PR, then send the source row to independent re-audit after landing."
-stop_condition: "Scoped artifact, checks, review-loop pass, and one verified unmerged review PR."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5196; mergeable; remote audit_pipeline pending at final checkpoint"
+next_exact_action: "Review PR 5196; after landing, run the independent audit lane on yt_color_projection_correction_note."
+stop_condition: "Reached: scoped artifact, checks, review-loop pass, and one verified unmerged review PR."

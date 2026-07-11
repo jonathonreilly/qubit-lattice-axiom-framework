@@ -56,12 +56,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Metric | Value |
 |---|---:|
 | Total pending rows | 2879 |
-| Ready rows | 595 |
+| Ready rows | 596 |
 | Cycle-break targets | 49 |
 | Critical pending | 651 |
 | High pending | 333 |
-| Medium pending | 763 |
-| Leaf pending | 1132 |
+| Medium pending | 761 |
+| Leaf pending | 1134 |
 
 Next ready rows by queue order:
 
@@ -105,16 +105,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3920 |
 | Critical nodes | 759 |
 | High nodes | 401 |
-| Medium nodes | 996 |
-| Leaf nodes | 1764 |
+| Medium nodes | 994 |
+| Leaf nodes | 1766 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1970 descendants; score 223.945
-- `graph_first_su3_integration_note` - critical; 1601 descendants; score 64.646
-- `three_generation_observable_theorem_note` - critical; 1185 descendants; score 62.712
+- `minimal_axioms` - critical; 1969 descendants; score 223.944
+- `graph_first_su3_integration_note` - critical; 1599 descendants; score 64.644
+- `three_generation_observable_theorem_note` - critical; 1184 descendants; score 62.711
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 61.644
-- `observable_principle_from_axiom_note` - critical; 1046 descendants; score 61.532
-- `plaquette_self_consistency_note` - critical; 1172 descendants; score 50.196
-- `minimal_axioms_2026-05-03` - critical; 1072 descendants; score 45.067
-- `key_terminology` - critical; 1184 descendants; score 43.711
+- `observable_principle_from_axiom_note` - critical; 1044 descendants; score 61.529
+- `plaquette_self_consistency_note` - critical; 1170 descendants; score 50.194
+- `minimal_axioms_2026-05-03` - critical; 1070 descendants; score 45.065
+- `key_terminology` - critical; 1182 descendants; score 43.708

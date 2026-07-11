@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Y_T Tier-A source-action top-premise closure runner.
+"""Y_T source-action conditional-calculation runner.
 
 Verifies the narrow claim:
 
-  accepted Tier-A source-measure/P-cal surface
+  explicit open source-measure/P-cal hypothesis
     + normalized top source operator
     -> primitive RN/Fisher source coordinate
     -> lambda = 1
     -> y_33 = 1/sqrt(6)
 
-It also verifies the status boundary: the result is bounded/Tier-A-dependent
-support, not unbounded retained Y_T closure.
+It also verifies the status boundary: the result is conditional support, not
+retained Y_T closure or premise supply.
 """
 
 from __future__ import annotations
@@ -209,7 +209,7 @@ def part3_top_operator() -> dict[str, str]:
     check("six-component top vector is unit normalized", norm_sq == 1, norm_sq)
     check("each component is 1/sqrt(6)", is_zero(component - 1 / sp.sqrt(6)), component)
     check("lambda family is lambda/sqrt(6)", is_zero(y_lambda - lam / sp.sqrt(6)), y_lambda)
-    check("Tier-A primitive source unit selects y=1/sqrt(6)", is_zero(y_lambda.subs(lam, 1) - 1 / sp.sqrt(6)), y_lambda.subs(lam, 1))
+    check("conditional unit-source hypothesis gives y=1/sqrt(6)", is_zero(y_lambda.subs(lam, 1) - 1 / sp.sqrt(6)), y_lambda.subs(lam, 1))
 
     # Projective probabilities do not select lambda: the normalized ray is
     # independent of positive lambda.
@@ -291,7 +291,7 @@ def main() -> int:
     planck = part4_planck_scope()
     claim = part5_firewalls()
     result = {
-        "claim": "Tier-A source-measure surface closes lambda=1 for normalized top source",
+        "claim": "open source-measure hypothesis gives lambda=1 conditionally for the normalized top source",
         "actual_current_surface_status": "bounded-support",
         "trace_class": "direct_blocker_closure",
         "reachability_to_target": "partially_closes",

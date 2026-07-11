@@ -3192,6 +3192,72 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             or "",
         )
 
+    def test_validation_repair_prompt_reuses_packet_and_preserves_strict_gate(self):
+        m = _import_codex_audit_runner()
+        original_prompt = "restricted packet with EXACT EVIDENCE LOCATOR"
+        rejected = {
+            "claim_id": "target",
+            "verdict": "audited_conditional",
+            "claim_scope": "bounded target scope",
+            "no_go_discipline": {
+                "required": True,
+                "status": "FAIL",
+            },
+        }
+        error = (
+            "N1 route 2 evidence_locator is not present in "
+            "'docs/TARGET.md'"
+        )
+
+        prompt = m.render_validation_repair_prompt(
+            original_prompt, rejected, error, 1
+        )
+        flat_prompt = " ".join(prompt.split())
+
+        self.assertIn(original_prompt, prompt)
+        self.assertIn(error, prompt)
+        self.assertIn('"claim_id": "target"', prompt)
+        self.assertIn(
+            "ordinary validator and apply gate remain unchanged", flat_prompt
+        )
+        self.assertIn("12+ character verbatim substring", flat_prompt)
+        self.assertIn("Do not invent evidence", flat_prompt)
+        self.assertIn("this pass may not change the verdict itself", flat_prompt)
+        self.assertNotIn("accept despite", prompt.casefold())
+
+    def test_validation_repair_cannot_change_scientific_judgment(self):
+        m = _import_codex_audit_runner()
+        rejected = {
+            "claim_id": "target",
+            "load_bearing_step": "the exact obstruction",
+            "load_bearing_step_class": "A",
+            "claim_type": "no_go",
+            "claim_scope": "bounded obstruction",
+            "chain_closes": False,
+            "chain_closure_explanation": "one route remains open",
+            "verdict": "audited_conditional",
+            "verdict_rationale": "the packet is incomplete",
+            "no_go_discipline": {"required": True, "status": "FAIL"},
+        }
+        locator_repair = {
+            **rejected,
+            "no_go_discipline": {
+                "required": True,
+                "status": "FAIL",
+                "N1_alternative_routes": [],
+            },
+        }
+        changed_verdict = {**locator_repair, "verdict": "audited_clean"}
+
+        self.assertIsNone(
+            m.validation_repair_preservation_error(rejected, locator_repair)
+        )
+        self.assertIn(
+            "changed preserved scientific field 'verdict'",
+            m.validation_repair_preservation_error(rejected, changed_verdict)
+            or "",
+        )
+
     def test_prompt_preserves_raw_placeholders_and_types_every_premise(self):
         m = _import_codex_audit_runner()
         with tempfile.TemporaryDirectory() as tmp:

@@ -1,63 +1,28 @@
 #!/usr/bin/env python3
 """
-sigma_hier uniqueness theorem
-==============================
+sigma_hier supplied-input S3 table uniqueness theorem
+======================================================
 
-STATUS: conditional support theorem on the open DM gate — sigma_hier = (2, 1, 0) is the
-unique hierarchy pairing with:
-  (a) all 9 |U_PMNS| entries inside the NuFit 5.3 NO 3-sigma ranges, AND
-  (b) sin(delta_CP) < 0, consistent with the T2K/NOvA preferred region.
+The theorem note registers packet (P-SIG): a supplied chamber pin, nine
+external magnitude comparator windows, and an external CP-sign comparator
+gate. This runner parses that fenced packet and constructs every scan input
+from it. It then performs exact finite enumeration of S_3.
 
-Framework convention: "axiom" means only Cl(3) on Z^3.
-
-Context
--------
-The P3 closure pins the chamber point
-
-    (m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042)
-
-using three PMNS observational inputs (s12^2, s13^2, s23^2) and the
-imposed branch-choice rule (A-BCC). The hierarchy pairing sigma_hier was
-listed as an independent conditional — an S_3 permutation choice assigning
-eigenvectors of H to the charged-lepton rows (e, mu, tau).
-
-This runner proves a two-step uniqueness theorem:
-
-STEP 1 (9/9 magnitude filter):
-    Among all 6 elements of S_3, exactly TWO — sigma=(2,0,1) and
-    sigma=(2,1,0) — place all 9 |U_PMNS|_{ij} entries inside the NuFit
-    5.3 NO 3-sigma ranges. The other 4 permutations each fail >= 4 entries.
-
-STEP 2 (CP-phase discriminator):
-    The two 9/9-passing permutations are related by a mu<->tau row swap,
-    which preserves all |U| magnitudes but reverses the sign of the
-    Jarlskog invariant J, hence reverses sin(delta_CP):
-      sigma=(2,1,0): sin(delta_CP) = -0.9874  (delta_CP ~ -81 deg)
-      sigma=(2,0,1): sin(delta_CP) = +0.9874  (delta_CP ~ +81 deg)
-    T2K (2021, NO, normal hierarchy) measures delta_CP in the range
-    [-200, -15] deg at 1-sigma (central ~ -108 deg), strongly preferring
-    sin(delta_CP) < 0 and disfavoring sin(delta_CP) = +0.987 (> +sin 60deg)
-    at the 3-sigma level. (NOvA similarly prefers the lower half-plane.)
-
-Conclusion:
-    The combination of the 9/9 NuFit 3-sigma magnitude check AND the
-    experimental CP-phase sign preference (sin(delta_CP) < 0) uniquely
-    selects sigma = (2, 1, 0) from the 6-element S_3 at the pinned point.
-
-    This is a conditional support theorem under the observational-promotion
-    framework: sigma_hier is not derivable from Cl(3)/Z^3 alone, but it is
-    uniquely forced by the joint requirement that all 9 PMNS magnitudes
-    pass NuFit 5.3 3-sigma AND that sin(delta_CP) is negative.
-
-    The CP phase prediction sin(delta_CP) = -0.9874 is then a falsifiable
-    geometric consequence of the full 4-observable PMNS constraint, not a
-    separately imposed input.
+The result is deliberately narrow: sigma=(2,1,0) is the unique table row that
+passes all nine supplied windows and the supplied sign gate. The runner does
+not ratify the pin, the physical-sheet choice, or the observational authority
+behind the comparator context, and it does not present those inputs as
+framework derivations.
 """
 
 from __future__ import annotations
 
 import itertools
 import math
+import operator
+import re
+from dataclasses import dataclass
+from pathlib import Path
 
 import numpy as np
 
@@ -65,6 +30,119 @@ np.set_printoptions(precision=6, suppress=True, linewidth=120)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+
+NOTE_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "docs"
+    / "SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md"
+)
+WINDOW_LABELS = (
+    "U_e1",
+    "U_e2",
+    "U_e3",
+    "U_mu1",
+    "U_mu2",
+    "U_mu3",
+    "U_tau1",
+    "U_tau2",
+    "U_tau3",
+)
+GATE_OPERATORS = {
+    "<": operator.lt,
+    "<=": operator.le,
+    ">": operator.gt,
+    ">=": operator.ge,
+}
+
+
+@dataclass(frozen=True)
+class SuppliedPacket:
+    pin: tuple[float, float, float]
+    window_labels: tuple[str, ...]
+    pdg_lo: np.ndarray
+    pdg_hi: np.ndarray
+    sign_variable: str
+    sign_operator: str
+    sign_bound: float
+    sign_gate_text: str
+    block_text: str
+    note_text: str
+
+
+def parse_supplied_packet(note_path: Path) -> SuppliedPacket:
+    note_text = note_path.read_text(encoding="utf-8")
+    block_match = re.search(
+        r"## Supplied-Input Registration \(P-SIG\)\s+"
+        r"```text\n(?P<block>.*?)\n```",
+        note_text,
+        flags=re.DOTALL,
+    )
+    if block_match is None:
+        raise ValueError("missing fenced (P-SIG) supplied-input packet")
+    block_text = block_match.group("block")
+
+    number = r"[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?"
+    pin_match = re.search(
+        rf"^PIN:\s*m_\*\s*=\s*({number})\s*;\s*"
+        rf"delta_\*\s*=\s*({number})\s*;\s*"
+        rf"q_\+\*\s*=\s*({number})\s*$",
+        block_text,
+        flags=re.MULTILINE,
+    )
+    if pin_match is None:
+        raise ValueError("missing or malformed PIN line in (P-SIG)")
+    pin_values = tuple(float(value) for value in pin_match.groups())
+
+    window_rows = re.findall(
+        rf"^(U_(?:e|mu|tau)[123]):\s*"
+        rf"\[\s*({number})\s*,\s*({number})\s*\]\s*$",
+        block_text,
+        flags=re.MULTILINE,
+    )
+    window_labels = tuple(row[0] for row in window_rows)
+    if window_labels != WINDOW_LABELS:
+        raise ValueError(
+            "WINDOWS must contain the nine labeled entries in PMNS row-major order"
+        )
+    pdg_lo = np.array([float(row[1]) for row in window_rows]).reshape(3, 3)
+    pdg_hi = np.array([float(row[2]) for row in window_rows]).reshape(3, 3)
+
+    sign_match = re.search(
+        rf"^SIGN-GATE:\s*(sin_delta_cp)\s*(<=|>=|<|>)\s*({number})\s*$",
+        block_text,
+        flags=re.MULTILINE,
+    )
+    if sign_match is None:
+        raise ValueError("missing or malformed SIGN-GATE line in (P-SIG)")
+    sign_variable, sign_operator, sign_bound_text = sign_match.groups()
+
+    return SuppliedPacket(
+        pin=pin_values,
+        window_labels=window_labels,
+        pdg_lo=pdg_lo,
+        pdg_hi=pdg_hi,
+        sign_variable=sign_variable,
+        sign_operator=sign_operator,
+        sign_bound=float(sign_bound_text),
+        sign_gate_text=sign_match.group(0).split(":", 1)[1].strip(),
+        block_text=block_text,
+        note_text=note_text,
+    )
+
+
+def sign_gate_accepts(value: float, packet: SuppliedPacket) -> bool:
+    comparator = GATE_OPERATORS[packet.sign_operator]
+    return bool(comparator(value, packet.sign_bound))
+
+
+def windows_are_well_formed(pdg_lo: np.ndarray, pdg_hi: np.ndarray) -> bool:
+    return bool(
+        pdg_lo.shape == (3, 3)
+        and pdg_hi.shape == (3, 3)
+        and np.all(np.isfinite(pdg_lo))
+        and np.all(np.isfinite(pdg_hi))
+        and np.all(pdg_lo <= pdg_hi)
+    )
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -79,6 +157,66 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
         msg += f"  ({detail})"
     print(msg)
     return condition
+
+
+def echo_and_check_packet(packet: SuppliedPacket) -> None:
+    print()
+    print("=" * 80)
+    print("Parsed supplied-input packet (P-SIG)")
+    print("=" * 80)
+    print(
+        "  PIN: "
+        f"m_* = {packet.pin[0]:.6f} ; "
+        f"delta_* = {packet.pin[1]:.6f} ; "
+        f"q_+* = {packet.pin[2]:.6f}"
+    )
+    print("  WINDOWS:")
+    for label, lo, hi in zip(
+        packet.window_labels, packet.pdg_lo.flat, packet.pdg_hi.flat
+    ):
+        print(f"    {label}: [{lo:.3f}, {hi:.3f}]")
+    print(f"  SIGN-GATE: {packet.sign_gate_text}")
+    print()
+
+    check(
+        "(P-SIG) PIN contains exactly three finite supplied values",
+        len(packet.pin) == 3 and all(math.isfinite(value) for value in packet.pin),
+    )
+    check(
+        "(P-SIG) WINDOWS contains all nine labeled row-major entries",
+        packet.window_labels == WINDOW_LABELS
+        and packet.pdg_lo.shape == (3, 3)
+        and packet.pdg_hi.shape == (3, 3),
+    )
+    check(
+        "(P-SIG) WINDOWS has finite ordered [lo, hi] pairs",
+        windows_are_well_formed(packet.pdg_lo, packet.pdg_hi),
+    )
+    check(
+        "(P-SIG) SIGN-GATE is a supported parsed comparator",
+        packet.sign_variable == "sin_delta_cp"
+        and packet.sign_operator in GATE_OPERATORS
+        and math.isfinite(packet.sign_bound),
+        packet.sign_gate_text,
+    )
+
+    note_surface_needles = (
+        "(P-SIG-a)",
+        "(P-SIG-b)",
+        "(P-SIG-c)",
+        "supplied-input packet entry",
+        "## Repair Note (2026-07-11)",
+    )
+    for needle in note_surface_needles:
+        check(
+            f"Note surface contains {needle!r}",
+            needle in packet.note_text,
+        )
+    forbidden = "observationally unique at the live pin"
+    check(
+        "Note surface omits the superseded live-pin observational phrase",
+        forbidden not in packet.note_text,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -107,23 +245,8 @@ H_BASE = np.array(
     dtype=complex,
 )
 
-# Pinned chamber point (P3 observational closure, unique under A-BCC + sigma)
-M_STAR = 0.657061
-DELTA_STAR = 0.933806
-Q_PLUS_STAR = 0.715042
-
-
 def H_mat(m: float, delta: float, q_plus: float) -> np.ndarray:
     return H_BASE + m * T_M + delta * T_DELTA + q_plus * T_Q
-
-
-# NuFit 5.3 NO 3-sigma ranges on |U_PMNS|_{ij}
-PDG_LO = np.array(
-    [[0.801, 0.513, 0.143], [0.234, 0.471, 0.637], [0.271, 0.477, 0.613]]
-)
-PDG_HI = np.array(
-    [[0.845, 0.579, 0.155], [0.500, 0.689, 0.776], [0.525, 0.694, 0.756]]
-)
 
 
 def pmns_for_permutation(
@@ -139,8 +262,10 @@ def pmns_for_permutation(
     return V[list(perm), :]
 
 
-def count_passes(U_abs: np.ndarray) -> int:
-    return int(np.sum((U_abs >= PDG_LO) & (U_abs <= PDG_HI)))
+def count_passes(
+    U_abs: np.ndarray, pdg_lo: np.ndarray, pdg_hi: np.ndarray
+) -> int:
+    return int(np.sum((U_abs >= pdg_lo) & (U_abs <= pdg_hi)))
 
 
 def jarlskog_sin_dcp(P: np.ndarray) -> float:
@@ -166,13 +291,13 @@ def jarlskog_sin_dcp(P: np.ndarray) -> float:
 # ---------------------------------------------------------------------------
 
 
-def part1_h_at_pin() -> np.ndarray:
+def part1_h_at_pin(pin: tuple[float, float, float]) -> np.ndarray:
     print()
     print("=" * 80)
     print("Part 1: H at pinned chamber point — eigendecomposition")
     print("=" * 80)
 
-    Hpin = H_mat(M_STAR, DELTA_STAR, Q_PLUS_STAR)
+    Hpin = H_mat(*pin)
     check("H_pin is Hermitian", np.allclose(Hpin, Hpin.conj().T, atol=1e-14))
 
     w, V = np.linalg.eigh(Hpin)
@@ -204,27 +329,52 @@ def part1_h_at_pin() -> np.ndarray:
 
 
 # ---------------------------------------------------------------------------
-# Part 2: Enumerate all 6 S_3 permutations — magnitude filter
+# Part 2: Enumerate all 6 S_3 permutations — supplied magnitude filter
 # ---------------------------------------------------------------------------
 
 
-def part2_magnitude_filter(V: np.ndarray) -> dict:
+def scan_permutations(
+    V: np.ndarray, pdg_lo: np.ndarray, pdg_hi: np.ndarray
+) -> dict:
+    results = {}
+    for perm in itertools.permutations([0, 1, 2]):
+        P = pmns_for_permutation(V, perm)
+        U_abs = np.abs(P)
+        results[perm] = {
+            "P": P,
+            "U_abs": U_abs,
+            "n_pass": count_passes(U_abs, pdg_lo, pdg_hi),
+            "sin_dcp": jarlskog_sin_dcp(P),
+        }
+    return results
+
+
+def selected_permutations(
+    results: dict, packet: SuppliedPacket
+) -> list[tuple[int, int, int]]:
+    return [
+        perm
+        for perm, result in results.items()
+        if result["n_pass"] == 9
+        and sign_gate_accepts(result["sin_dcp"], packet)
+    ]
+
+
+def part2_magnitude_filter(
+    V: np.ndarray, pdg_lo: np.ndarray, pdg_hi: np.ndarray
+) -> dict:
     print()
     print("=" * 80)
-    print("Part 2: STEP 1 — magnitude filter: which sigmas pass 9/9 NuFit ranges")
+    print("Part 2: STEP 1 — magnitude filter: supplied (P-SIG-b) windows")
     print("=" * 80)
     print()
     print(f"  {'sigma':14s}  {'n_pass':8s}  {'sin(dCP)':10s}  note")
     print("  " + "-" * 64)
 
-    all_perms = list(itertools.permutations([0, 1, 2]))
-    results = {}
-    for perm in all_perms:
-        P = pmns_for_permutation(V, perm)
-        U_abs = np.abs(P)
-        n = count_passes(U_abs)
-        sin_dcp = jarlskog_sin_dcp(P)
-        results[perm] = {"P": P, "U_abs": U_abs, "n_pass": n, "sin_dcp": sin_dcp}
+    results = scan_permutations(V, pdg_lo, pdg_hi)
+    for perm, result in results.items():
+        n = result["n_pass"]
+        sin_dcp = result["sin_dcp"]
         note = ""
         if n == 9:
             note = "  <-- passes all 9 magnitudes"
@@ -234,7 +384,7 @@ def part2_magnitude_filter(V: np.ndarray) -> dict:
 
     passing_9 = [p for p, r in results.items() if r["n_pass"] == 9]
     check(
-        "Exactly 2 of 6 S_3 permutations pass all 9 NuFit 3-sigma magnitudes",
+        "Exactly 2 of 6 S_3 permutations pass all 9 supplied magnitude windows",
         len(passing_9) == 2,
         f"passing: {passing_9}",
     )
@@ -247,7 +397,7 @@ def part2_magnitude_filter(V: np.ndarray) -> dict:
         9 - r["n_pass"] for p, r in results.items() if p not in [(2, 0, 1), (2, 1, 0)]
     )
     check(
-        "All other 4 permutations fail >= 4 NuFit entries",
+        "All other 4 permutations fail >= 4 supplied magnitude windows",
         min_fail_others >= 4,
         f"minimum failures in excluded permutations: {min_fail_others}",
     )
@@ -256,14 +406,16 @@ def part2_magnitude_filter(V: np.ndarray) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Part 3: STEP 2 — CP-phase discriminator
+# Part 3: STEP 2 — supplied CP-sign discriminator
 # ---------------------------------------------------------------------------
 
 
-def part3_cp_phase_discriminator(results: dict) -> None:
+def part3_cp_phase_discriminator(
+    results: dict, packet: SuppliedPacket
+) -> None:
     print()
     print("=" * 80)
-    print("Part 3: STEP 2 — CP-phase discriminator between (2,0,1) and (2,1,0)")
+    print("Part 3: STEP 2 — supplied (P-SIG-c) CP-sign discriminator")
     print("=" * 80)
 
     r_201 = results[(2, 0, 1)]
@@ -299,24 +451,25 @@ def part3_cp_phase_discriminator(results: dict) -> None:
     )
 
     print()
-    print("  T2K (2021, NO) 1-sigma: delta_CP in [-200, -15] deg, central ~ -108 deg.")
-    print("  NOvA (2021, NO) similarly prefers sin(delta_CP) < 0.")
-    print("  Both experiments exclude sin(delta_CP) = +0.987 at better than 3-sigma.")
+    print(f"  Applying parsed SIGN-GATE: {packet.sign_gate_text}")
+    print("  Its external observational authority is comparator context, not ratified here.")
     print()
 
-    # T2K 3-sigma exclusion: approximate bound sin(delta_CP) > 0 excluded at ~3-sigma
-    # We use the conservative statement: T2K 2-sigma bound excludes sin(dCP) > +0.5
-    T2K_3SIGMA_BOUND = 0.5  # conservative: T2K excludes sin(dCP) > 0.5 at 2-3 sigma
     check(
-        "sigma=(2,0,1): sin(delta_CP)=+0.987 is excluded by T2K/NOvA at >=2-sigma "
-        "(T2K disfavors sin(dCP) > +0.5)",
-        abs(s201) > T2K_3SIGMA_BOUND,
-        f"sin(dCP) = {s201:+.4f} > {T2K_3SIGMA_BOUND}",
+        "sigma=(2,0,1) fails the supplied SIGN-GATE",
+        not sign_gate_accepts(s201, packet),
+        f"sin(dCP) = {s201:+.4f}; gate: {packet.sign_gate_text}",
     )
     check(
-        "sigma=(2,1,0): sin(delta_CP)=-0.987 is inside T2K/NOvA 2-sigma preferred region",
-        s210 < 0.0,
-        f"sin(dCP) = {s210:+.4f} < 0",
+        "sigma=(2,1,0) passes the supplied SIGN-GATE",
+        sign_gate_accepts(s210, packet),
+        f"sin(dCP) = {s210:+.4f}; gate: {packet.sign_gate_text}",
+    )
+    selected = selected_permutations(results, packet)
+    check(
+        "The supplied packet uniquely selects sigma=(2,1,0) from S_3",
+        selected == [(2, 1, 0)],
+        f"selected: {selected}",
     )
 
 
@@ -325,10 +478,12 @@ def part3_cp_phase_discriminator(results: dict) -> None:
 # ---------------------------------------------------------------------------
 
 
-def part4_physical_sigma_detail(results: dict) -> None:
+def part4_physical_sigma_detail(
+    results: dict, pdg_lo: np.ndarray, pdg_hi: np.ndarray
+) -> None:
     print()
     print("=" * 80)
-    print("Part 4: Physical sigma = (2, 1, 0) — full 9/9 NuFit detail")
+    print("Part 4: Selected sigma = (2, 1, 0) — full 9/9 supplied-window detail")
     print("=" * 80)
 
     r = results[(2, 1, 0)]
@@ -344,11 +499,11 @@ def part4_physical_sigma_detail(results: dict) -> None:
     print()
     for i in range(3):
         for j in range(3):
-            inside = PDG_LO[i, j] <= U[i, j] <= PDG_HI[i, j]
+            inside = pdg_lo[i, j] <= U[i, j] <= pdg_hi[i, j]
             flavor = ["e", "mu", "tau"][i]
             mass = ["1", "2", "3"][j]
             check(
-                f"|U_{flavor}{mass}| in [{PDG_LO[i,j]:.3f}, {PDG_HI[i,j]:.3f}]",
+                f"|U_{flavor}{mass}| in [{pdg_lo[i,j]:.3f}, {pdg_hi[i,j]:.3f}]",
                 inside,
                 f"val = {U[i,j]:.4f}",
             )
@@ -361,7 +516,7 @@ def part4_physical_sigma_detail(results: dict) -> None:
         f"sin(dCP) = {sin_dcp:+.4f}",
     )
     check(
-        "delta_CP ~ -81 deg (consistent with T2K/NOvA preferred region)",
+        "delta_CP ~ -81 deg at the supplied pin",
         sin_dcp < -0.9,
         f"sin(dCP) = {sin_dcp:+.4f}",
     )
@@ -372,7 +527,9 @@ def part4_physical_sigma_detail(results: dict) -> None:
 # ---------------------------------------------------------------------------
 
 
-def part5_non_passing_failures(results: dict) -> None:
+def part5_non_passing_failures(
+    results: dict, pdg_lo: np.ndarray, pdg_hi: np.ndarray
+) -> None:
     print()
     print("=" * 80)
     print("Part 5: Non-magnitude-passing permutations — failure entries")
@@ -387,12 +544,12 @@ def part5_non_passing_failures(results: dict) -> None:
         failures = []
         for i in range(3):
             for j in range(3):
-                if not (PDG_LO[i, j] <= U[i, j] <= PDG_HI[i, j]):
+                if not (pdg_lo[i, j] <= U[i, j] <= pdg_hi[i, j]):
                     fl = ["e", "mu", "tau"][i]
                     ms = ["1", "2", "3"][j]
                     failures.append(
                         f"|U_{fl}{ms}|={U[i,j]:.3f} "
-                        f"not in [{PDG_LO[i,j]:.3f},{PDG_HI[i,j]:.3f}]"
+                        f"not in [{pdg_lo[i,j]:.3f},{pdg_hi[i,j]:.3f}]"
                     )
         if n_fail < 4:
             all_ge4 = False
@@ -406,57 +563,110 @@ def part5_non_passing_failures(results: dict) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Part 6: Corrupted-parse negative control on copies
+# ---------------------------------------------------------------------------
+
+
+def part6_corrupted_parse_negative_control(
+    V: np.ndarray, packet: SuppliedPacket, real_results: dict
+) -> None:
+    print()
+    print("=" * 80)
+    print("Part 6: corrupted-parse negative control (copy only)")
+    print("=" * 80)
+
+    real_lo_before = packet.pdg_lo.copy()
+    real_hi_before = packet.pdg_hi.copy()
+    corrupt_lo = packet.pdg_lo.copy()
+    corrupt_hi = packet.pdg_hi.copy()
+
+    original_lo = float(corrupt_lo[0, 0])
+    original_hi = float(corrupt_hi[0, 0])
+    corrupt_lo[0, 0] = original_hi
+    corrupt_hi[0, 0] = original_lo
+
+    corrupt_well_formed = windows_are_well_formed(corrupt_lo, corrupt_hi)
+    corrupt_results = scan_permutations(V, corrupt_lo, corrupt_hi)
+    real_selected = selected_permutations(real_results, packet)
+    corrupt_selected = selected_permutations(corrupt_results, packet)
+    uniqueness_flipped = corrupt_selected != real_selected
+
+    check(
+        "Swapping one copied window's lo/hi fails validation or flips uniqueness",
+        (not corrupt_well_formed) or uniqueness_flipped,
+        "window U_e1 copied as "
+        f"[{corrupt_lo[0,0]:.3f}, {corrupt_hi[0,0]:.3f}]; "
+        f"well_formed={corrupt_well_formed}; selected={corrupt_selected}",
+    )
+    check(
+        "Corrupted-parse negative control does not mutate the real packet arrays",
+        np.array_equal(packet.pdg_lo, real_lo_before)
+        and np.array_equal(packet.pdg_hi, real_hi_before),
+    )
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
 
 def main() -> int:
+    try:
+        packet = parse_supplied_packet(NOTE_PATH)
+    except (OSError, ValueError) as exc:
+        print("=" * 80)
+        print("sigma_hier SUPPLIED-INPUT S3 TABLE UNIQUENESS")
+        print("=" * 80)
+        check("Parse fenced supplied-input packet (P-SIG)", False, str(exc))
+        print()
+        print(f"PASS = {PASS_COUNT}")
+        print(f"FAIL = {FAIL_COUNT}")
+        return 1
+
     print("=" * 80)
-    print("sigma_hier UNIQUENESS THEOREM (two-step)")
+    print("sigma_hier SUPPLIED-INPUT S3 TABLE UNIQUENESS (two-step)")
     print()
-    print("  Step 1 (9/9 magnitude filter): reduces S_3 from 6 to 2 permutations.")
-    print("  Step 2 (CP-phase discriminator): selects sigma=(2,1,0) uniquely.")
-    print("  Conclusion: sigma_hier = (2,1,0) is uniquely forced by the joint")
-    print("  requirement [9/9 NuFit 3-sigma magnitudes] AND [sin(delta_CP) < 0].")
+    print("  Inputs: parsed PIN, WINDOWS, and SIGN-GATE from note packet (P-SIG).")
+    print("  Step 1: 9/9 supplied-window filter reduces S_3 from 6 to 2 rows.")
+    print("  Step 2: supplied sign gate selects sigma=(2,1,0) uniquely.")
+    print("  Scope: finite table arithmetic on supplied inputs; no authority ratification.")
     print("=" * 80)
 
-    V = part1_h_at_pin()
-    results = part2_magnitude_filter(V)
-    part3_cp_phase_discriminator(results)
-    part4_physical_sigma_detail(results)
-    part5_non_passing_failures(results)
+    echo_and_check_packet(packet)
+    V = part1_h_at_pin(packet.pin)
+    results = part2_magnitude_filter(V, packet.pdg_lo, packet.pdg_hi)
+    part3_cp_phase_discriminator(results, packet)
+    part4_physical_sigma_detail(results, packet.pdg_lo, packet.pdg_hi)
+    part5_non_passing_failures(results, packet.pdg_lo, packet.pdg_hi)
+    part6_corrupted_parse_negative_control(V, packet, results)
 
     print()
     print("=" * 80)
-    print("Theorem statement (conditional on PMNS observation):")
+    print("Theorem statement (on supplied packet (P-SIG)):")
     print()
-    print("  At the pinned chamber point (m_*, delta_*, q_+*) = (0.657061, 0.933806,")
-    print("  0.715042), the hierarchy pairing sigma_hier = (2, 1, 0) is the unique")
+    print(
+        "  Supplied PIN: (m_*, delta_*, q_+*) = "
+        f"({packet.pin[0]:.6f}, {packet.pin[1]:.6f}, {packet.pin[2]:.6f})."
+    )
+    print("  Given (P-SIG-a)-(P-SIG-c), sigma_hier = (2, 1, 0) is the unique")
     print("  element of S_3 satisfying both:")
-    print("    (1) all 9 |U_PMNS|_{ij} inside NuFit 5.3 NO 3-sigma ranges, AND")
-    print("    (2) sin(delta_CP) < 0, consistent with T2K/NOvA experimental preference.")
+    print("    (1) all 9 |U_PMNS|_{ij} inside the supplied windows, AND")
+    print(f"    (2) the supplied SIGN-GATE: {packet.sign_gate_text}.")
     print()
     print("  Proof structure:")
     print("    - The 9/9 magnitude check reduces 6 S_3 elements to 2: (2,0,1) and")
     print("      (2,1,0), which differ only by a mu<->tau row swap.")
     print("    - The mu<->tau swap preserves all |U| magnitudes but reverses Jarlskog:")
-    print("        sigma=(2,0,1): sin(delta_CP) = +0.9874 (excluded by T2K/NOvA)")
-    print("        sigma=(2,1,0): sin(delta_CP) = -0.9874 (preferred by T2K/NOvA)")
-    print("    - T2K (2021, NO) and NOvA disfavor sin(delta_CP) > +0.5 at >=2-sigma.")
-    print("    - Therefore sigma=(2,0,1) is observationally disfavored and sigma=(2,1,0)")
-    print("      is the unique physically admissible pairing.")
+    print("        sigma=(2,0,1): sin(delta_CP) = +0.9874 (fails supplied gate)")
+    print("        sigma=(2,1,0): sin(delta_CP) = -0.9874 (passes supplied gate)")
+    print("    - Therefore the supplied packet selects only sigma=(2,1,0).")
     print()
-    print("  This promotes sigma_hier from an 'independent conditional' to an")
-    print("  'observationally unique' choice at the live pin: not derived from")
-    print("  Cl(3)/Z^3 alone, but uniquely fixed there by the combined")
-    print("  4-observable PMNS constraint.")
-    print("  This is a pinned-point theorem only, not a chamber-wide or")
-    print("  all-basin uniqueness theorem; other admitted basins must be")
-    print("  checked separately.")
+    print("  This is a supplied-input selection statement. It neither derives")
+    print("  sigma_hier from Cl(3)/Z^3 nor ratifies the pin, windows, sign gate,")
+    print("  physical sheet, or wider chamber/basin uniqueness.")
     print()
-    print("  The CP-phase prediction sin(delta_CP) = -0.9874 is then a")
-    print("  falsifiable geometric consequence: a confirmed >3-sigma positive sin(delta_CP)")
-    print("  measurement at DUNE/Hyper-K would rule out this pairing.")
+    print("  Conditional on supplied pin (P-SIG-a), sin(delta_CP) = -0.9874 is")
+    print("  the falsifiable computed prediction for the selected table row.")
     print("=" * 80)
     print()
     print(f"PASS = {PASS_COUNT}")

@@ -64,6 +64,10 @@ def main() -> int:
         reconstructed = sp.simplify(a + c * omega**j + cbar * omega ** (-j))
         check(f"inverse transform reconstructs z{j}", sp.simplify(reconstructed - zj) == 0)
     check("Fourier mean is positive on a positive triple", a.is_positive is True)
+    c_cycle = sp.simplify((z1 + omega**2 * z2 + omega * z0) / 3)
+    c_reflection = sp.simplify((z0 + omega**2 * z2 + omega * z1) / 3)
+    check("generating cycle sends c to omega c", sp.simplify(c_cycle - omega * c) == 0)
+    check("generating reflection sends c to conjugate(c)", sp.simplify(c_reflection - cbar) == 0)
 
     section("Part B: symmetric r coordinate")
     abs_c_sq = sp.simplify(c * cbar)
@@ -106,13 +110,34 @@ def main() -> int:
     phi = math.atan2(c_num.imag, c_num.real)
     reconstructed = tuple(a_num + 2 * abs(c_num) * math.cos(phi + 2 * math.pi * j / 3) for j in range(3))
     check("inverse cosine formula reconstructs ordered roots", all(math.isclose(x, y, abs_tol=1e-12) for x, y in zip(reconstructed, values)))
+    reconstructed_folded = tuple(a_num + 2 * abs(c_num) * math.cos(delta + 2 * math.pi * j / 3) for j in range(3))
+    check("folded phase reconstructs the unordered roots", all(math.isclose(x, y, abs_tol=1e-12) for x, y in zip(sorted(reconstructed_folded), sorted(values))))
     check("folded phase lies in [0,pi/3]", 0 <= delta <= math.pi / 3)
+    boundary_values = (2.0, 1.0, 2.0)
+    boundary_deltas = []
+    for permuted in itertools.permutations(boundary_values):
+        _, c_boundary, _ = coords(permuted)
+        boundary_deltas.append(fold_phase(math.atan2(c_boundary.imag, c_boundary.real)))
+    check("fold boundary is permutation invariant", all(math.isclose(item, math.pi / 3, abs_tol=1e-12) for item in boundary_deltas))
+    check("both fold-boundary representatives give pi/3", math.isclose(fold_phase(math.pi / 3), math.pi / 3, abs_tol=1e-12) and math.isclose(fold_phase(-math.pi / 3), math.pi / 3, abs_tol=1e-12))
+    masses = (1.0, 4.0, 16.0)
+    scaled_masses = tuple(7.0 * mass for mass in masses)
+    _, _, r_masses = coords(tuple(math.sqrt(mass) for mass in masses))
+    _, _, r_scaled_masses = coords(tuple(math.sqrt(mass) for mass in scaled_masses))
+    check("r is invariant under common positive mass scaling", math.isclose(r_masses, r_scaled_masses, abs_tol=1e-12))
     equal_a, equal_c, equal_r = coords((3.0, 3.0, 3.0))
     check("degenerate triple has c=0 and r=0", math.isclose(abs(equal_c), 0.0, abs_tol=1e-12) and math.isclose(equal_r, 0.0, abs_tol=1e-12) and equal_a == 3.0)
+    equal_reconstruction_a = tuple(equal_a + 2 * abs(equal_c) * math.cos(0.17 + 2 * math.pi * j / 3) for j in range(3))
+    equal_reconstruction_b = tuple(equal_a + 2 * abs(equal_c) * math.cos(1.91 + 2 * math.pi * j / 3) for j in range(3))
+    check(
+        "c=0 reconstruction is phase independent",
+        all(math.isclose(x, equal_a, abs_tol=1e-12) for x in equal_reconstruction_a + equal_reconstruction_b),
+    )
 
     section("Scope guards")
     note = NOTE.read_text(encoding="utf-8")
-    check("source states registered-data scope", "reconstructs\ncoordinates of a supplied positive mass triple" in note)
+    check("source requires an independently defined mass functional", "independently defined registered-mass functional" in note)
+    check("source says primitive is not a mathematical premise", "does not use that primitive as a mathematical premise" in note)
     check("source does not retire owner atoms", "does not retire AC(i) or AC(ii)" in note)
     check("source does not force r", "does not force `r=1/2`" in note)
     check("source excludes observed comparators", "No observed mass table, fit, comparator" in note)

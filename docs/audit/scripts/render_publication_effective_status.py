@@ -15,6 +15,7 @@ retained-grade. This is the work queue for "which retained claims aren't
 actually retained yet."
 
 Outputs (all under docs/publication/ci3_z3/):
+  ARXIV_DRAFT_EFFECTIVE_STATUS.md
   CLAIMS_TABLE_EFFECTIVE_STATUS.md
   DERIVATION_ATLAS_EFFECTIVE_STATUS.md
   PUBLICATION_MATRIX_EFFECTIVE_STATUS.md
@@ -41,6 +42,8 @@ LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
 # Tables to render. Each entry: (source_basename, output_basename, scope_label)
 TABLES = [
+    ("ARXIV_DRAFT.md", "ARXIV_DRAFT_EFFECTIVE_STATUS.md",
+     "public manuscript"),
     ("CLAIMS_TABLE.md", "CLAIMS_TABLE_EFFECTIVE_STATUS.md",
      "manuscript claim surface"),
     ("DERIVATION_ATLAS.md", "DERIVATION_ATLAS_EFFECTIVE_STATUS.md",
@@ -68,6 +71,107 @@ RETAINED_GRADE = {
     "retained_bounded",
     "retained_no_go",
 }
+AUDIT_BADGE_RE = re.compile(r"\[audit:([^\]]+)\]")
+PROTECTED_INLINE_RE = re.compile(
+    r"(\[[^\]]+\]\([^)]+\)|\[audit:[^\]]+\]|`[^`]*`)"
+)
+
+
+def _neutralize_source_status_words(line: str) -> str:
+    parts = PROTECTED_INLINE_RE.split(line)
+    for index in range(0, len(parts), 2):
+        parts[index] = re.sub(
+            r"\b(?:retained|promoted)\b",
+            "unratified-source-label",
+            parts[index],
+            flags=re.IGNORECASE,
+        )
+    return "".join(parts)
+
+
+def demote_nonretained_table_rows(body: str) -> str:
+    """Make audit-effective views impossible to read as retained prose.
+
+    Source tables preserve author history. In the generated effective view,
+    any table row citing at least one non-retained authority receives an
+    explicit row marker and retained/promoted source labels are neutralized.
+    """
+    rendered: list[str] = []
+    in_table = False
+    data_row_index = 0
+    for line in body.splitlines():
+        if not line.lstrip().startswith("|"):
+            in_table = False
+            data_row_index = 0
+            rendered.append(line)
+            continue
+        if not in_table:
+            in_table = True
+            data_row_index = 0
+        is_separator = bool(
+            re.fullmatch(r"\s*\|(?:\s*:?-+:?\s*\|)+\s*", line)
+        )
+        is_header = data_row_index == 0
+        data_row_index += 1
+        if is_separator or is_header:
+            rendered.append(line)
+            continue
+        badges = AUDIT_BADGE_RE.findall(line)
+        # Missing/unresolved authority badges are non-retained by default.
+        # A row is publication-safe only when it carries at least one badge and
+        # every badge is retained-grade (or a boxed retained decoration).
+        nonretained = not badges or any(
+            status not in RETAINED_GRADE
+            and not status.startswith("decoration_under_")
+            for status in badges
+        )
+        if not nonretained:
+            rendered.append(line)
+            continue
+        line = _neutralize_source_status_words(line)
+        line = re.sub(
+            r"^(\s*\|\s*)",
+            r"\1**AUDIT-NONRETAINED ROW** — ",
+            line,
+            count=1,
+        )
+        rendered.append(line)
+    return "\n".join(rendered) + ("\n" if body.endswith("\n") else "")
+
+
+def strip_non_table_narrative(body: str) -> str:
+    """Generated table views must not publish unbadged author prose."""
+    rendered: list[str] = []
+    omitted = False
+    section_index = 0
+    for line in body.splitlines():
+        keep = (
+            not line.strip()
+            or line.lstrip().startswith("#")
+            or line.lstrip().startswith("|")
+        )
+        if keep:
+            if omitted:
+                rendered.append(
+                    "> **Author-side narrative omitted from this audit-derived view.**"
+                )
+                rendered.append("")
+                omitted = False
+            if line.lstrip().startswith("##"):
+                section_index += 1
+                hashes = line[: len(line) - len(line.lstrip("#"))]
+                rendered.append(
+                    f"{hashes} Audit-badged section {section_index}"
+                )
+            else:
+                rendered.append(line)
+        else:
+            omitted = True
+    if omitted:
+        rendered.append(
+            "> **Author-side narrative omitted from this audit-derived view.**"
+        )
+    return "\n".join(rendered) + ("\n" if body.endswith("\n") else "")
 
 
 def load_ledger() -> dict[str, dict]:
@@ -167,16 +271,61 @@ def render_table(source_name: str, output_name: str, scope_label: str,
         return None, []
     body = src.read_text(encoding="utf-8")
     annotated, lookups = annotate_links(body, src, by_path)
+    if source_name == "ARXIV_DRAFT.md":
+        counts: dict[str, int] = {}
+        manuscript_rows = {
+            lookup["claim_id"]: lookup for lookup in lookups
+        }
+        for lookup in manuscript_rows.values():
+            status = str(lookup.get("effective_status") or "unaudited")
+            counts[status] = counts.get(status, 0) + 1
+        annotated = (
+            "## Current audit-derived manuscript gateway\n\n"
+            "The author-side manuscript is intentionally **not reproduced** in "
+            "this public gateway because prose-level labels cannot override the "
+            "claim ledger. Counts below cover unique claims linked directly by "
+            "the author manuscript. Use the generated surfaces below; any claim absent "
+            "from a retained-grade row remains non-retained.\n\n"
+            f"- `retained`: {counts.get('retained', 0)}\n"
+            f"- `retained_bounded`: {counts.get('retained_bounded', 0)}\n"
+            f"- `retained_no_go`: {counts.get('retained_no_go', 0)}\n"
+            f"- `unaudited`: {counts.get('unaudited', 0)}\n\n"
+            "Author source: [ARXIV_DRAFT.md](ARXIV_DRAFT.md) "
+            "(non-authoritative narrative).\n\n"
+            "Audit-derived claim surfaces: "
+            "[CLAIMS_TABLE_EFFECTIVE_STATUS.md](CLAIMS_TABLE_EFFECTIVE_STATUS.md), "
+            "[DERIVATION_ATLAS_EFFECTIVE_STATUS.md](DERIVATION_ATLAS_EFFECTIVE_STATUS.md), "
+            "[RESULTS_INDEX_EFFECTIVE_STATUS.md](RESULTS_INDEX_EFFECTIVE_STATUS.md), "
+            "and [PUBLICATION_AUDIT_DIVERGENCE.md](PUBLICATION_AUDIT_DIVERGENCE.md).\n"
+        )
+        lookups = []
+    else:
+        annotated = strip_non_table_narrative(
+            demote_nonretained_table_rows(annotated)
+        )
 
+    if source_name == "ARXIV_DRAFT.md":
+        view_description = (
+            f"**Auto-generated.** This is the audit-derived public gateway for "
+            f"[`{source_name}`]({source_name}); it deliberately withholds the "
+            "non-authoritative narrative and routes readers to generated claim "
+            "surfaces. Edit the source file; this gateway refreshes via "
+            "`docs/audit/scripts/run_pipeline.sh`.\n\n"
+        )
+    else:
+        view_description = (
+            f"**Auto-generated.** This is a parallel view of "
+            f"[`{source_name}`]({source_name}) with each linked note annotated "
+            f"with its audit-derived `effective_status` badge `[audit:STATUS]`. "
+            "Edit the source file; this view refreshes via "
+            "`docs/audit/scripts/run_pipeline.sh`.\n\n"
+        )
     header = (
         f"<!-- AUTO-GENERATED by docs/audit/scripts/render_publication_effective_status.py -->\n"
         f"<!-- Source: {source_name}  generated: {generated_label} -->\n"
         f"<!-- DO NOT EDIT THIS FILE BY HAND. Edit the source above; this view auto-refreshes. -->\n\n"
         f"# {scope_label.title()} - Audit-Derived Effective-Status View\n\n"
-        f"**Auto-generated.** This is a parallel view of [`{source_name}`]({source_name}) "
-        f"with each linked note annotated with its audit-derived `effective_status` "
-        f"badge `[audit:STATUS]`. Edit the source file; this view refreshes via "
-        f"`docs/audit/scripts/run_pipeline.sh`.\n\n"
+        f"{view_description}"
         f"**Retained-grade values:** `retained`, `retained_bounded`, `retained_no_go`. "
         f"Anything else means the audit lane has NOT confirmed the claim, regardless of "
         f"the author-side status text in the row.\n\n"

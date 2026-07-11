@@ -93,6 +93,8 @@ ARCHIVED_FIELDS = (
     "audit_date",
     "auditor",
     "auditor_family",
+    "auditor_model",
+    "auditor_reasoning_effort",
     "independence",
     "load_bearing_step",
     "load_bearing_step_class",
@@ -228,6 +230,12 @@ def archived_audit_is_lint_compatible(archived: dict) -> bool:
             return False
 
     fam = archived.get("auditor_family")
+    if archived.get("audit_status") == "audited_clean" and (
+        fam != "codex-gpt-5.6"
+        or archived.get("auditor_model") != "gpt-5.6-sol"
+        or archived.get("auditor_reasoning_effort") != "xhigh"
+    ):
+        return False
     if fam is not None:
         if fam not in CANONICAL_AUDITOR_FAMILIES and fam not in LEGACY_AUDITOR_FAMILIES:
             if not (isinstance(fam, str) and fam.startswith("codex-gpt-")):
@@ -236,6 +244,20 @@ def archived_audit_is_lint_compatible(archived: dict) -> bool:
             return False
         if isinstance(fam, str) and fam.startswith("codex-gpt-"):
             if not codex_family_meets_minimum(fam):
+                return False
+
+    cross = archived.get("cross_confirmation") or {}
+    if isinstance(cross, dict):
+        for seat_name in ("first_audit", "second_audit", "third_audit"):
+            seat = cross.get(seat_name)
+            if not isinstance(seat, dict) or seat.get("verdict") != "audited_clean":
+                continue
+            seat_family = seat.get("auditor_family")
+            if (
+                seat_family != "codex-gpt-5.6"
+                or seat.get("auditor_model") != "gpt-5.6-sol"
+                or seat.get("auditor_reasoning_effort") != "xhigh"
+            ):
                 return False
 
     return True
@@ -452,17 +474,51 @@ def restore_audit_from_previous(
         and new_row.get("no_go_discipline") is None
     ):
         return None
+    cross = new_row.get("cross_confirmation") or {}
+    cross_has_packet = isinstance(cross, dict) and any(
+        isinstance(cross.get(audit_key), dict)
+        and isinstance(cross[audit_key].get("no_go_discipline"), dict)
+        for audit_key in ("first_audit", "second_audit", "third_audit")
+    )
+    current_manifest = None
+    if new_row.get("no_go_discipline") is not None or cross_has_packet:
+        ledger_rows = rows or {str(new_row.get("claim_id") or ""): new_row}
+        current_manifest = no_go_discipline_gate.build_evidence_manifest(
+            new_row, ledger_rows, REPO_ROOT
+        )
+    if isinstance(cross, dict):
+        for audit_key in ("first_audit", "second_audit", "third_audit"):
+            summary = cross.get(audit_key)
+            if not isinstance(summary, dict) or summary.get("verdict") != "audited_clean":
+                continue
+            packet = summary.get("no_go_discipline")
+            manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
+                packet if isinstance(packet, dict) else {}
+            )
+            if manifest is None:
+                return None
+            if no_go_discipline_gate.evidence_snapshot_current_error(
+                packet, current_manifest or {}
+            ):
+                return None
+            if no_go_discipline_gate.validate_no_go_discipline(
+                {**summary, "chain_closes": True},
+                source_required=source_required,
+                evidence_manifest=manifest,
+            ):
+                return None
     # A present packet must round-trip and validate. Packetless negative clean
     # authority is deliberately not restorable under the current gate.
     if new_row.get("no_go_discipline") is not None:
-        ledger_rows = rows or {str(new_row.get("claim_id") or ""): new_row}
         evidence_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
             new_row["no_go_discipline"]
         )
         if evidence_manifest is None:
-            evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
-                new_row, ledger_rows, REPO_ROOT
-            )
+            return None
+        if no_go_discipline_gate.evidence_snapshot_current_error(
+            new_row["no_go_discipline"], current_manifest or {}
+        ):
+            return None
         if no_go_discipline_gate.validate_no_go_discipline(
             gate_blob,
             source_required=source_required,
@@ -533,6 +589,33 @@ def select_restore_candidates(rows: dict[str, dict]) -> tuple[dict[str, str], li
     return crit_set, dep_weakened_set
 
 
+def select_false_positive_no_go_candidates(rows: dict[str, dict]) -> dict[str, str]:
+    """Find clean audits invalidated only by a trigger that no longer fires.
+
+    This is deliberately restricted to the packet-missing reason. Invalid
+    packets and cross-confirmation failures still require fresh audit rather
+    than schema-era restoration.
+    """
+    selected: dict[str, str] = {}
+    for cid, row in rows.items():
+        if row.get("audit_status") != "unaudited":
+            continue
+        history = row.get("previous_audits") or []
+        if not history:
+            continue
+        archived = history[-1]
+        if archived.get("invalidation_reason") != "no_go_discipline_packet_missing":
+            continue
+        if not archived_audit_is_lint_compatible(archived):
+            continue
+        if restore_audit_from_previous(row, rows) is None:
+            continue
+        if noncritical_invalidation_after_restore(row, rows) is not None:
+            continue
+        selected[cid] = archived.get("audit_status") or "?"
+    return selected
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
@@ -551,6 +634,14 @@ def main() -> int:
         default=None,
         help="Cap the number of rows restored (per category). For testing.",
     )
+    parser.add_argument(
+        "--false-positive-no-go-only",
+        action="store_true",
+        help=(
+            "Skip the older criticality restoration scan and process only "
+            "packet-missing rows whose current no-go trigger no longer fires."
+        ),
+    )
     args = parser.parse_args()
 
     if not LEDGER_PATH.exists():
@@ -560,12 +651,17 @@ def main() -> int:
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
     rows: dict[str, dict] = ledger.get("rows", {})
 
-    crit_set, dep_weakened_set = select_restore_candidates(rows)
+    if args.false_positive_no_go_only:
+        crit_set, dep_weakened_set = {}, []
+    else:
+        crit_set, dep_weakened_set = select_restore_candidates(rows)
+    false_positive_set = select_false_positive_no_go_candidates(rows)
 
     if args.limit is not None:
         crit_items = sorted(crit_set.items())[: args.limit]
         crit_set = dict(crit_items)
         dep_weakened_set = dep_weakened_set[: args.limit]
+        false_positive_set = dict(sorted(false_positive_set.items())[: args.limit])
 
     print(f"Identified {len(crit_set)} criticality_increased restore candidates:")
     crit_status_counts: dict[str, int] = {}
@@ -582,6 +678,16 @@ def main() -> int:
     for status, n in sorted(dep_status_counts.items(), key=lambda x: -x[1]):
         print(f"    {n:5d}  was {status}")
 
+    print(
+        f"Identified {len(false_positive_set)} false-positive no-go trigger "
+        "restore candidates:"
+    )
+    false_positive_counts: dict[str, int] = {}
+    for prev_status in false_positive_set.values():
+        false_positive_counts[prev_status] = false_positive_counts.get(prev_status, 0) + 1
+    for status, n in sorted(false_positive_counts.items(), key=lambda x: -x[1]):
+        print(f"    {n:5d}  was {status}")
+
     if args.dry_run:
         print("\nDry run: no changes written.")
         return 0
@@ -594,6 +700,12 @@ def main() -> int:
         rows[cid] = new_row
         restored_count += 1
     for cid, _dep, _prev in dep_weakened_set:
+        new_row = restore_audit_from_previous(rows[cid], rows)
+        if new_row is None:
+            continue
+        rows[cid] = new_row
+        restored_count += 1
+    for cid in false_positive_set:
         new_row = restore_audit_from_previous(rows[cid], rows)
         if new_row is None:
             continue

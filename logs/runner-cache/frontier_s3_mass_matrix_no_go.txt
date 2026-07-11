@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_s3_mass_matrix_no_go.py
-runner_sha256: b9e9480816a49471c6f84dbd984bb6bf7cda5a8007e8b4cc8071b68c3bd94c6c
+runner_sha256: e0e4c9c075be0cb26bfb874f8b83408a77baf9e8e55df43b13b78bb903ee7e34
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================
-S_3 MASS-MATRIX NO-GO ON THE hw=1 TRIPLET
+S_3 CONDITIONAL MASS-MATRIX DEGENERACY LEMMA
 ========================================================================
 
 ========================================================================
-PART 1: S_3-invariant Hermitian algebra on hw=1
+PART 1: S_3-invariant Hermitian algebra on A_1 direct-sum E
 ========================================================================
   [PASS] dim End(C^3)^(S_3) = 2  (rank = 2)
   [PASS] I_3 is S_3-invariant
@@ -30,7 +30,7 @@ PART 2: Forced two-value spectrum
   [PASS] beta != 0 gives exactly two distinct eigenvalues  (distinct = 2)
 
 ========================================================================
-PART 3: Random audit of the exact S_3 class
+PART 3: Random check of the exact S_3 class
 ========================================================================
   [PASS] no random S_3-invariant sample exceeds two spectral values  (max distinct = 2)
 

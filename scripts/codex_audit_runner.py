@@ -38,6 +38,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 import uuid
 from datetime import datetime, timezone
@@ -69,15 +70,16 @@ ISOLATED_BASE = Path("/tmp/codex-audit-isolated")
 LOG_DIR = REPO_ROOT / "logs" / "codex-audit-runs"
 
 # These fields are NOT controlled by the LLM; we set them on the runner side.
-# The model selector prefers the strongest full GPT model published in
-# Codex's local model cache and always pairs it with xhigh reasoning. When
-# Codex refreshes that cache with a newer frontier GPT, the runner adopts it
-# automatically and records the exact family in the ledger.
+# Clean authority is pinned to the exact model/family accepted atomically by
+# apply_audit.py, invalidation, and lint. A newer or fallback model must first
+# go through an explicit policy migration rather than silently changing the
+# authority contract.
 # Independence is determined PER ROW (see determine_audit_role) because it
 # depends on whether this is a first-pass (typically cross_family vs Claude
 # autopilot authors) or a same-family second-pass (must be fresh_context).
 AUDIT_REASONING_EFFORT = "xhigh"
-MODEL_FALLBACK = "gpt-5.5"
+REQUIRED_AUDIT_MODEL = "gpt-5.6-sol"
+MODEL_FALLBACK = REQUIRED_AUDIT_MODEL
 SUPPORTED_AUDIT_MODEL_RE = re.compile(
     r"gpt-(?P<version>\d+(?:\.\d+)*)(?:-sol)?$"
 )
@@ -88,14 +90,30 @@ SUPPORTED_AUDIT_MODEL_RE = re.compile(
 # CODEX_AUDIT_MODEL env var, or a forced env override that points
 # below the floor will all be rejected. Setting this to (5, 5) means
 # only gpt-5.5 and newer are accepted.
-MIN_AUDIT_MODEL_RANK = (5, 5)
+MIN_AUDIT_MODEL_RANK = (5, 6)
 
 # The prompt template promises source visibility, and several current
 # runner-artifact blockers hinge on elided load-bearing functions. Keep the
 # packet bounded, but high enough to include the largest ordinary runners and
 # helpers now used by the audit queue.
-RUNNER_SOURCE_CHAR_LIMIT = 120_000
-HELPER_SOURCE_CHAR_LIMIT = 120_000
+RUNNER_SOURCE_CHAR_LIMIT = 40_000
+HELPER_SOURCE_CHAR_LIMIT = 40_000
+NOTE_BODY_CHAR_LIMIT = 30_000
+AUTHORITY_TOTAL_CHAR_LIMIT = 60_000
+AUTHORITY_PER_NOTE_MAX = 10_000
+AUTHORITY_PER_NOTE_MIN = 2_000
+
+
+def clip_packet_text(text: str, limit: int, label: str) -> str:
+    """Deterministically retain head/tail evidence within a packet budget."""
+    if len(text) <= limit:
+        return text
+    head = text[: limit // 2]
+    tail = text[-limit // 2 :]
+    return (
+        f"{head}\n\n... [packet-clipped {label}; {len(text)} chars total] ...\n\n"
+        f"{tail}"
+    )
 
 
 def _meets_floor(model: str | None) -> bool:
@@ -205,52 +223,33 @@ def best_cached_codex_model() -> tuple[str | None, str | None]:
 
 
 def resolve_audit_model() -> tuple[str, str, str, list[str]]:
-    """Choose the audit model and return model, family, source, warnings.
-
-    Default behavior is auto-update: follow Codex's local model cache ordering.
-    CODEX_AUDIT_MODEL is treated as a fallback/preference but not allowed to
-    pin the runner below a newer detected best model. CODEX_AUDIT_FORCE_MODEL
-    is the explicit break-glass override and is flagged in the run log.
-    """
+    """Return the exact audit-authority model and provenance contract."""
     warnings: list[str] = []
     detected, detected_note = best_cached_codex_model()
     configured = os.environ.get("CODEX_AUDIT_MODEL")
     forced = os.environ.get("CODEX_AUDIT_FORCE_MODEL")
 
-    if forced:
+    if forced and forced != REQUIRED_AUDIT_MODEL:
         warnings.append(
-            "CODEX_AUDIT_FORCE_MODEL is set; using forced model instead of "
-            "auto-updating from the Codex model cache."
+            f"Ignoring CODEX_AUDIT_FORCE_MODEL={forced!r}; clean audit authority "
+            f"is pinned to {REQUIRED_AUDIT_MODEL!r}."
         )
-        return forced, codex_family_for_model(forced), "forced-env", warnings
-
-    if detected:
-        if configured and configured != detected:
-            if _model_newer_than(configured, detected):
-                warnings.append(
-                    f"CODEX_AUDIT_MODEL={configured!r} is newer than cached "
-                    f"best {detected!r}; using configured model and recording "
-                    "that model family."
-                )
-                return configured, codex_family_for_model(configured), "configured-env-newer", warnings
-            warnings.append(
-                f"CODEX_AUDIT_MODEL={configured!r} is stale relative to "
-                f"detected best {detected!r}; using detected best."
-            )
-        return detected, codex_family_for_model(detected), detected_note or "models-cache", warnings
-
-    if configured:
+    if configured and configured != REQUIRED_AUDIT_MODEL:
         warnings.append(
-            f"Using CODEX_AUDIT_MODEL={configured!r} because model cache "
-            f"selection failed: {detected_note}"
+            f"Ignoring CODEX_AUDIT_MODEL={configured!r}; clean audit authority "
+            f"is pinned to {REQUIRED_AUDIT_MODEL!r}."
         )
-        return configured, codex_family_for_model(configured), "configured-env", warnings
-
-    warnings.append(
-        f"Using fallback audit model {MODEL_FALLBACK!r}; model cache selection "
-        f"failed: {detected_note}"
+    if detected != REQUIRED_AUDIT_MODEL:
+        warnings.append(
+            f"Cached best model is {detected!r} ({detected_note}); using pinned "
+            f"audit authority {REQUIRED_AUDIT_MODEL!r}."
+        )
+    return (
+        REQUIRED_AUDIT_MODEL,
+        codex_family_for_model(REQUIRED_AUDIT_MODEL),
+        "pinned-exact-policy",
+        warnings,
     )
-    return MODEL_FALLBACK, codex_family_for_model(MODEL_FALLBACK), "fallback", warnings
 
 
 # Statuses where this runner SHOULD NOT proceed automatically. Disagreements
@@ -526,6 +525,19 @@ def read_note_body(note_path: str) -> str | None:
     return p.read_text(encoding="utf-8", errors="replace")
 
 
+def prior_claim_scope_for_row(row: dict) -> str | None:
+    scope = row.get("claim_scope")
+    if isinstance(scope, str) and scope.strip():
+        return scope
+    for archived in reversed(row.get("previous_audits") or []):
+        if not isinstance(archived, dict):
+            continue
+        scope = archived.get("claim_scope")
+        if isinstance(scope, str) and scope.strip():
+            return scope
+    return None
+
+
 # Timeout resolution is shared with the precompute helper. It honors
 # `AUDIT_TIMEOUT_SEC = N` declared at the top of the runner, falling
 # back to a small legacy substring map and finally to default_sec.
@@ -642,26 +654,49 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         or ""
     )
 
-    note_body = read_note_body(note_path) or f"[note missing on disk: {note_path}]"
+    full_note_body = read_note_body(note_path) or f"[note missing on disk: {note_path}]"
     no_go_required = no_go_discipline_gate.source_requires_no_go_discipline(
-        note_path, note_body, claim_type_hint
+        note_path, full_note_body, claim_type_hint
     )
+    note_body = clip_packet_text(full_note_body, NOTE_BODY_CHAR_LIMIT, note_path)
 
     # Cited authorities: one-hop deps from the ledger row
     led_row = ledger_rows.get(cid, {})
+    prior_claim_scope = prior_claim_scope_for_row(led_row) or "(none recorded)"
     packet_row = {**led_row, **row, "claim_id": cid}
     evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
         packet_row, ledger_rows, REPO_ROOT
+    )
+    no_go_discipline_gate.set_packet_evidence(
+        evidence_manifest, path=note_path, role="source", text=note_body,
+        invocation_bound_rendered_text=True,
     )
     premise_context = no_go_discipline_gate.render_framework_premise_context(
         evidence_manifest
     )
     deps = led_row.get("deps", [])
+    authority_limit = min(
+        AUTHORITY_PER_NOTE_MAX,
+        max(AUTHORITY_PER_NOTE_MIN, AUTHORITY_TOTAL_CHAR_LIMIT // max(1, len(deps))),
+    )
     cited_blocks = []
     for dep_cid in deps:
         dep_row = ledger_rows.get(dep_cid, {})
         dep_path = dep_row.get("note_path") or ""
-        dep_body = read_note_body(dep_path) or f"[dep note missing: {dep_path}]"
+        dep_body = clip_packet_text(
+            read_note_body(dep_path) or f"[dep note missing: {dep_path}]",
+            authority_limit,
+            dep_path,
+        )
+        no_go_discipline_gate.set_packet_evidence(
+            evidence_manifest,
+            path=dep_path,
+            role="authority",
+            text=dep_body,
+            effective_status=dep_row.get("effective_status"),
+            premise_type=no_go_discipline_gate.premise_type_for_id(REPO_ROOT, dep_cid),
+            invocation_bound_rendered_text=True,
+        )
         eff = dep_row.get("effective_status") or "unaudited"
         ct = dep_row.get("claim_type") or "?"
         accepted = False
@@ -693,12 +728,28 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         # may return COMPUTE_REQUIRED if the missing stdout is load-bearing.
         runner_stdout = "(stdout suppressed by --no-runner)"
     else:
-        runner_stdout = get_runner_stdout(runner_path, runner_timeout_sec, use_cache=use_cache)
+        # Negative authority requires evidence from this audit cycle. A
+        # runner-SHA cache is useful for ordinary review, but it does not bind
+        # transitive inputs and therefore cannot certify N1/N5 execution.
+        runner_stdout = get_runner_stdout(
+            runner_path,
+            runner_timeout_sec,
+            use_cache=(use_cache and not no_go_required),
+        )
     runner_stdout_path = no_go_discipline_gate.runner_stdout_evidence_path(cid)
+    if skip_runner_stdout:
+        runner_stdout_role = "runner_stdout_suppressed"
+    elif no_go_required or not use_cache:
+        runner_stdout_role = "runner_stdout"
+    else:
+        # Conservative provenance: this call may have used the SHA-only cache.
+        # If the model later emits an output-side negative claim, N1/N5 must
+        # reject this surface and the row must be rerun with --no-cache.
+        runner_stdout_role = "runner_stdout_cache_eligible"
     no_go_discipline_gate.set_packet_evidence(
         evidence_manifest,
         path=runner_stdout_path,
-        role="runner_stdout",
+        role=runner_stdout_role,
         text=runner_stdout or "(no stdout captured)",
     )
 
@@ -733,6 +784,7 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
             path=runner_path,
             role="runner",
             text=runner_source or "(no source available)",
+            invocation_bound_rendered_text=True,
         )
 
     # Read each transitive helper script the primary runner imports (via
@@ -758,7 +810,8 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
             )
             helper_sources_blocks.append(helper_block)
             no_go_discipline_gate.set_packet_evidence(
-                evidence_manifest, path=hp, role="helper", text=helper_block
+                evidence_manifest, path=hp, role="helper", text=helper_block,
+                invocation_bound_rendered_text=True,
             )
             continue
         try:
@@ -788,7 +841,8 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
             )
             helper_sources_blocks.append(helper_block)
             no_go_discipline_gate.set_packet_evidence(
-                evidence_manifest, path=hp, role="helper", text=helper_block
+                evidence_manifest, path=hp, role="helper", text=helper_block,
+                invocation_bound_rendered_text=True,
             )
         except OSError as e:
             helper_block = (
@@ -798,7 +852,8 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
             )
             helper_sources_blocks.append(helper_block)
             no_go_discipline_gate.set_packet_evidence(
-                evidence_manifest, path=hp, role="helper", text=helper_block
+                evidence_manifest, path=hp, role="helper", text=helper_block,
+                invocation_bound_rendered_text=True,
             )
     helper_runner_sources = (
         "\n\n".join(helper_sources_blocks)
@@ -827,6 +882,7 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         "{{CLAIM_TYPE_HINT}}": claim_type_hint or "(none)",
         "{{RUNNER_PATH}}": runner_path or "(none)",
         "{{NO_GO_DISCIPLINE_REQUIRED}}": "true" if no_go_required else "false",
+        "{{PRIOR_CLAIM_SCOPE}}": prior_claim_scope,
         "{{NO_GO_EVIDENCE_MANIFEST}}": evidence_manifest_text,
         "{{NOTE_BODY}}": note_body,
         "{{RUNNER_STDOUT}}": runner_stdout or "(no stdout captured)",
@@ -934,6 +990,8 @@ AUDIT_DATA_FILES = [
     "docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md",
     "docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md",
     "docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md",
+    "docs/publication/ci3_z3/ARXIV_DRAFT_EFFECTIVE_STATUS.md",
+    "docs/repo/FRONT_DOOR_STATUS.md",
 ]
 
 
@@ -1031,14 +1089,16 @@ def parse_verdict_json(reply: str) -> dict | None:
         reply = reply.split("\ntokens used", 1)[0].rstrip()
     # Try direct parse first
     try:
-        return json.loads(reply)
+        parsed = json.loads(reply)
+        return parsed if isinstance(parsed, dict) else None
     except json.JSONDecodeError:
         pass
     # Strip markdown fences if present
     if reply.startswith("```"):
         stripped = reply.strip("`").lstrip("json").strip()
         try:
-            return json.loads(stripped)
+            parsed = json.loads(stripped)
+            return parsed if isinstance(parsed, dict) else None
         except json.JSONDecodeError:
             pass
 
@@ -1053,7 +1113,10 @@ def parse_verdict_json(reply: str) -> dict | None:
             return None
         candidate = reply[first_open : last_close + 1]
         try:
-            return json.loads(candidate)
+            parsed = json.loads(candidate)
+            if isinstance(parsed, dict):
+                return parsed
+            cursor = first_open + 1
         except json.JSONDecodeError:
             cursor = first_open + 1
 
@@ -1067,6 +1130,8 @@ def validate_verdict(
     prior_claim_scope: str | None = None,
 ) -> str | None:
     """Return an error string if the verdict is unusable, else None."""
+    if not isinstance(blob, dict):
+        return "verdict must be a JSON object"
     missing = REQUIRED_VERDICT_FIELDS - set(blob)
     if missing:
         return f"missing fields: {sorted(missing)}"
@@ -1185,18 +1250,38 @@ def validation_repair_eligible(
     )
 
 
-def apply_one(verdict_blob: dict, propagate: bool) -> tuple[bool, str]:
+def apply_one(
+    verdict_blob: dict,
+    propagate: bool,
+    evidence_manifest: dict[str, dict] | None = None,
+) -> tuple[bool, str]:
     """Pipe a verdict blob through apply_audit.py via stdin."""
+    verdict_blob = dict(verdict_blob)
+    invocation_id = uuid.uuid4().hex
+    verdict_blob["audit_invocation_id"] = invocation_id
     cmd = [sys.executable, str(APPLY_AUDIT_SCRIPT)]
     if not propagate:
         cmd.append("--no-propagate")
-    proc = subprocess.run(
-        cmd,
-        input=json.dumps(verdict_blob),
-        text=True,
-        capture_output=True,
-        cwd=REPO_ROOT,
-    )
+    with tempfile.TemporaryDirectory(prefix="codex-audit-evidence-") as tmp:
+        env = dict(os.environ)
+        if evidence_manifest is not None:
+            manifest_path = Path(tmp) / "manifest.json"
+            manifest_path.write_text(json.dumps({
+                "schema": "codex_audit_trusted_manifest_v1",
+                "claim_id": verdict_blob.get("claim_id"),
+                "audit_invocation_id": invocation_id,
+                "issued_at": datetime.now(timezone.utc).isoformat(),
+                "entries": evidence_manifest,
+            }, sort_keys=True), encoding="utf-8")
+            env["CODEX_AUDIT_TRUSTED_EVIDENCE_MANIFEST"] = str(manifest_path)
+        proc = subprocess.run(
+            cmd,
+            input=json.dumps(verdict_blob),
+            text=True,
+            capture_output=True,
+            cwd=REPO_ROOT,
+            env=env,
+        )
     return proc.returncode == 0, (proc.stdout + proc.stderr).strip()
 
 
@@ -1284,7 +1369,7 @@ def main() -> int:
                         "unaudited rows.")
     p.add_argument("--allow-low-model", action="store_true",
                    help="Permit running with an audit model below the "
-                        "MIN_AUDIT_MODEL_RANK floor (currently gpt-5.5). "
+                        "MIN_AUDIT_MODEL_RANK floor (currently gpt-5.6). "
                         "Break-glass for testing only — verdicts produced "
                         "this way will be tagged with the actual sub-floor "
                         "family and won't satisfy the standard "
@@ -1294,24 +1379,22 @@ def main() -> int:
     if not 0 <= args.validation_repair_attempts <= 3:
         print("REFUSING: --validation-repair-attempts must be between 0 and 3.")
         return 2
+    if args.no_propagate and args.push_mode != "none":
+        p.error("--no-propagate is allowed only with --push-mode none")
 
     # Reasoning-effort policy: per repo audit-lane decision (2026-05-04),
     # ALL audits run at xhigh. We do not expose a knob to lower it.
     reasoning_effort = AUDIT_REASONING_EFFORT
     audit_model, auditor_family, model_source, model_warnings = resolve_audit_model()
 
-    # Model-quality floor: the audit lane refuses to run on anything
-    # below MIN_AUDIT_MODEL_RANK (currently gpt-5.5). A stale model
-    # cache, a misconfigured CODEX_AUDIT_MODEL, or a forced env
-    # override that resolves to gpt-5 / gpt-4 / etc. is a quality
-    # regression that silently degrades verdicts. Refuse to start.
+    # Defense in depth beneath the exact pinned-model policy above.
     if not _meets_floor(audit_model) and not args.allow_low_model:
         floor_str = ".".join(str(x) for x in MIN_AUDIT_MODEL_RANK)
         print(
             f"\nREFUSING to run: resolved audit model {audit_model!r} "
             f"is below the MIN_AUDIT_MODEL_RANK floor (gpt-{floor_str}+).\n"
             f"  Source: {model_source}\n"
-            f"  Set CODEX_AUDIT_MODEL to a 5.5+ slug, refresh the local\n"
+            f"  Refresh Codex access to the pinned {REQUIRED_AUDIT_MODEL} model.\n"
             f"  models_cache.json, or pass --allow-low-model for testing only.\n"
             f"  Existing audits at sub-floor model versions will be re-audited\n"
             f"  on the next batch once this is resolved."
@@ -1588,7 +1671,7 @@ def main() -> int:
                 cid,
                 source_requires_no_go=source_requires_no_go,
                 evidence_manifest=exact_evidence_manifest,
-                prior_claim_scope=full_led_row.get("claim_scope"),
+                prior_claim_scope=prior_claim_scope_for_row(full_led_row),
             )
             initial_validation_error = err
             initial_rejected_blob = blob
@@ -1645,7 +1728,7 @@ def main() -> int:
                             cid,
                             source_requires_no_go=source_requires_no_go,
                             evidence_manifest=exact_evidence_manifest,
-                            prior_claim_scope=full_led_row.get("claim_scope"),
+                            prior_claim_scope=prior_claim_scope_for_row(full_led_row),
                         )
                     with run_log.open("a", encoding="utf-8") as f:
                         f.write(json.dumps({
@@ -1684,9 +1767,15 @@ def main() -> int:
                 auditor_model=audit_model,
                 auditor_reasoning_effort=reasoning_effort,
             )
-            if blob.get("no_go_discipline") is not None:
-                full_blob["_no_go_evidence_manifest"] = exact_evidence_manifest
-            ok, msg = apply_one(full_blob, propagate=not args.no_propagate)
+            ok, msg = apply_one(
+                full_blob,
+                propagate=not args.no_propagate,
+                evidence_manifest=(
+                    exact_evidence_manifest
+                    if blob.get("no_go_discipline") is not None
+                    else None
+                ),
+            )
             if ok:
                 print(f"  OK ({elapsed:.1f}s)  verdict={blob.get('verdict')}  "
                       f"class={blob.get('load_bearing_step_class')}  "

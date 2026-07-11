@@ -9,9 +9,10 @@ The current arXiv figure set now exists as live manuscript assets in
 
 ### Figure 1. Retained derivation backbone
 
-A qubit at every site of `Z^3` is taken as the physical axiom surface, with
-`Cl(3,0)` as the equivalent per-site local-algebra language. On the retained
-surface, this single discrete framework yields weak-field gravity through the
+Lattice, Qubit, Admissibility, and Record are the four named framework axioms,
+with `Cl(3,0)` as equivalent per-site local-algebra language. Scale reference,
+kinetic isotropy, and realized state are separately registered approved
+primitives, not additional axioms. On the retained surface, this discrete framework yields weak-field gravity through the
 Poisson/Newton chain together with weak-field WEP and time dilation, exact
 native `SU(2)`, graph-first structural `SU(3)`, anomaly-forced `3+1`, a
 retained `S^3` compactification / topology closure, a full-framework

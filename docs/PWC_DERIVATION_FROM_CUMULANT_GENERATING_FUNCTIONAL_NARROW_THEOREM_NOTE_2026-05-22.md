@@ -230,7 +230,7 @@ selection is required on that scope. ∎
 
 Load-bearing markdown-link upstream:
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — supplies the current Lattice/Quantum/Record axiom memo; this row uses only the Lattice and Quantum finite-region algebra surface on which `ρ_ref` lives
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — supplies the current Lattice/Qubit/Admissibility/Record axiom memo; this row uses only the Lattice and Qubit finite-region algebra surface on which the separately supplied `ρ_ref` lives. Admissibility and Record are not used here to derive or select `ρ_ref`
 
 Parallel provenance (not load-bearing premises):
 

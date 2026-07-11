@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import importlib
 import importlib.util
+import hashlib
 import json
 import os
 import sys
@@ -28,14 +29,191 @@ SCRIPTS_DIR = REPO_ROOT / "audit" / "scripts"
 sys.path.insert(0, str(SCRIPTS_DIR))
 
 
+NO_GO_MECHANISMS = (
+    "symbolic cancellation", "representation change", "alternate carrier sector",
+    "boundary data selection", "normalization transport",
+    "effective action deformation",
+)
+NO_GO_ATTEMPTS = (
+    "expand and cancel the defining algebra",
+    "decompose every supplied representation",
+    "test the alternate carrier against the source",
+    "vary the allowed boundary data",
+    "transport every supplied normalization",
+    "insert the effective action candidate",
+)
+NO_GO_N5_RESOLUTION_CLASSES = (
+    "per_element", "per_site", "per_mode", "per_block", "lattice_wide",
+)
+NO_GO_N2_RATIONALE = (
+    "selector wall and dynamics wall remain distinct because neither evidenced "
+    "residual closes the other"
+)
+NO_GO_N5_TESTED_RESOLUTIONS = tuple(
+    f"{resolution_class}: tested this rhetoric against the complete evidenced route inventory"
+    for resolution_class in NO_GO_N5_RESOLUTION_CLASSES
+)
+NO_GO_N7_RESOLUTION = (
+    "The restricted packet tests the manipulation against the selector wall "
+    "and dynamics wall; both residuals remain distinct, so the route does "
+    "not remove either evidenced obstruction."
+)
+NO_GO_N7_ARGUMENT = (
+    "The strongest counter-route uses symbolic cancellation: expand and "
+    "cancel the defining algebra, then ask whether that exact manipulation "
+    "evades the stated obstruction without adding any new primitive."
+)
+
+
+def _no_go_evidence_text(locator: str = "No-go obstruction") -> str:
+    return "\n".join((
+        locator, "selector wall", "dynamics wall", "closed by the restricted packet",
+        "the route residual", NO_GO_N2_RATIONALE, *NO_GO_MECHANISMS,
+        *NO_GO_ATTEMPTS, *NO_GO_N5_TESTED_RESOLUTIONS, NO_GO_N7_ARGUMENT,
+    ))
+
+
+def _no_go_resolution_text(locator: str = "Steelman resolution") -> str:
+    return "\n".join((locator, NO_GO_N7_RESOLUTION))
+
+
+def _set_no_go_scan_coverage(packet: dict, manifest: dict[str, dict]) -> None:
+    import no_go_discipline_gate as gate
+
+    claim_id = str(
+        packet["N8_cross_cycle_echo"]["evidence_path"]
+    ).rsplit("/", 1)[-1]
+    stdout_path = f"audit-packet://runner-stdout/{claim_id}"
+    runner_entry = next(
+        (entry for entry in manifest.values() if "runner" in set(entry.get("roles") or [])),
+        None,
+    )
+    if stdout_path not in manifest:
+        manifest[stdout_path] = {
+            "path": stdout_path, "roles": ["runner_stdout"],
+            "text": (runner_entry or {}).get("text") or _no_go_evidence_text(),
+            "effective_status": None, "accepted_premise_type": None,
+        }
+    resolution_path = f"audit-packet://runner-stdout-independent/{claim_id}"
+    if resolution_path not in manifest:
+        manifest[resolution_path] = {
+            "path": resolution_path, "roles": ["runner_stdout_independent"],
+            "text": _no_go_resolution_text(), "effective_status": None,
+            "accepted_premise_type": None,
+        }
+
+    cross_entry = manifest[packet["N8_cross_cycle_echo"]["evidence_path"]]
+    cross_payload = json.loads(cross_entry["text"])
+    universe = cross_payload.get("no_go_row_universe") or []
+    universe_count = cross_payload.get("no_go_row_universe_count", len(universe))
+    universe_digest = cross_payload.get("no_go_row_universe_sha256") or hashlib.sha256(
+        json.dumps(universe, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
+    if "no_go_row_universe_sha256" not in cross_payload:
+        cross_payload["no_go_row_universe"] = universe
+        cross_payload["no_go_row_universe_count"] = universe_count
+        cross_payload["no_go_row_universe_sha256"] = universe_digest
+        cross_entry["text"] = json.dumps(cross_payload, sort_keys=True)
+    packet["N8_cross_cycle_echo"]["no_go_row_universe_count"] = universe_count
+    packet["N8_cross_cycle_echo"]["no_go_row_universe_sha256"] = universe_digest
+    records = {
+        str(candidate.get("candidate_id")): candidate
+        for candidate in cross_payload.get("candidates") or []
+        if isinstance(candidate, dict)
+    }
+    for echo in packet["N8_cross_cycle_echo"]["echoes"]:
+        record = records.get(str(echo.get("candidate_id")))
+        if record is not None:
+            if echo.get("retired") is None and record.get("lifecycle_state") != "unknown":
+                echo["retired"] = record.get("retired")
+        if not isinstance(echo.get("applicable"), bool):
+            echo["applicable"] = False
+
+    def replace_runner_path(item: dict) -> None:
+        entry = manifest.get(str(item.get("evidence_path") or ""), {})
+        if set(entry.get("roles") or []).intersection({"runner", "helper"}):
+            item["evidence_path"] = stdout_path
+
+    for route in packet["N1_alternative_routes"]:
+        if route.get("honesty_marker") == "ATTEMPTED":
+            replace_runner_path(route)
+    for check in packet["N2_wall_independence"]["pairwise_checks"]:
+        replace_runner_path(check)
+    replace_runner_path(packet["N2_wall_independence"])
+    replace_runner_path(packet["N7_steelman"])
+    packet["N7_steelman"]["resolution_evidence_path"] = resolution_path
+    packet["N7_steelman"]["resolution_evidence_locator"] = "Steelman resolution"
+
+    def paths_for(*roles: str) -> list[str]:
+        role_set = set(roles)
+        return sorted(
+            path for path, entry in manifest.items()
+            if role_set.intersection(set(entry.get("roles") or []))
+        )
+
+    packet["N3_hidden_wall_scan"]["scanned_evidence_paths"] = paths_for(
+        "source", "authority"
+    )
+    packet["N4_residual_matching"]["scanned_evidence_paths"] = paths_for(
+        "authority"
+    )
+    packet["N5_rhetoric_audit"]["scanned_evidence_paths"] = paths_for("source")
+    n3_occurrences = gate.required_phrase_groups(
+        manifest, {"source", "authority"}, gate.N3_SCAN_PHRASES
+    )
+    packet["N3_hidden_wall_scan"]["hits"] = [
+        {
+            "phrase": phrase,
+            "occurrence_group_id": group["occurrence_group_id"],
+            "occurrence_count": group["occurrence_count"],
+            "occurrence_locator_sha256": group["occurrence_locator_sha256"],
+            "classification": "non_load_bearing",
+            "rationale": (
+                "This exact phrase is catalogued but supplies no premise and "
+                "closes no evidenced wall in this packet."
+            ),
+            "evidence_path": path,
+            "evidence_locator": group["evidence_locator"],
+        }
+        for (path, phrase, _group_id), group
+        in sorted(n3_occurrences.items())
+    ]
+    n5_occurrences = gate.required_phrase_groups(
+        manifest, {"source"}, gate.N5_SCAN_PHRASES
+    )
+    n5_resolution_path = stdout_path
+    resolution_locator = manifest[n5_resolution_path]["text"].splitlines()[0]
+    packet["N5_rhetoric_audit"]["statements"] = [
+        {
+            "phrase": phrase,
+            "occurrence_group_id": group["occurrence_group_id"],
+            "occurrence_count": group["occurrence_count"],
+            "occurrence_locator_sha256": group["occurrence_locator_sha256"],
+            "resolution_classes_checked": list(NO_GO_N5_RESOLUTION_CLASSES),
+            "tested_resolutions": list(NO_GO_N5_TESTED_RESOLUTIONS),
+            "untested_resolutions": [],
+            "evidence_path": path,
+            "evidence_locator": group["evidence_locator"],
+            "resolution_evidence_path": n5_resolution_path,
+            "resolution_evidence_locator": resolution_locator,
+        }
+        for (path, phrase, _group_id), group
+        in sorted(n5_occurrences.items())
+    ]
+
+
 def _no_go_packet(
     *,
     status: str = "PASS",
     route_count: int = 5,
-    evidence_path: str = "docs/TEST_NO_GO.md",
+    evidence_path: str = "audit-packet://runner-stdout/test_no_go",
     evidence_locator: str = "No-go obstruction",
+    source_path: str = "docs/TEST_NO_GO.md",
+    source_locator: str = "No-go obstruction",
+    resolution_path: str = "audit-packet://runner-stdout-independent/test_no_go",
+    resolution_locator: str = "Steelman resolution",
     claim_scope: str = "the scoped obstruction",
-    prior_claim_scope: str = "the unrestricted obstruction",
+    prior_claim_scope: str = "the scoped unrestricted obstruction",
     claim_id: str = "test_no_go",
     cross_cycle_candidates: tuple[str, ...] = (),
 ) -> dict:
@@ -48,22 +226,6 @@ def _no_go_packet(
         "normalization_or_units",
         "dynamical_or_effective_action",
     ]
-    mechanisms = [
-        "symbolic cancellation",
-        "representation change",
-        "alternate carrier sector",
-        "boundary data selection",
-        "normalization transport",
-        "effective action deformation",
-    ]
-    attempts = [
-        "expand and cancel the defining algebra",
-        "decompose every supplied representation",
-        "test the alternate carrier against the source",
-        "vary the allowed boundary data",
-        "transport every supplied normalization",
-        "insert the effective action candidate",
-    ]
     cross_cycle_path = f"audit-packet://cross-cycle-index/{claim_id}"
     partial_closure_path = f"audit-packet://partial-closure-index/{claim_id}"
     packet = {
@@ -73,8 +235,8 @@ def _no_go_packet(
             {
                 "route_id": f"route-{index}",
                 "route_class": route_classes[index],
-                "mechanism": mechanisms[index],
-                "attempt": attempts[index],
+                "mechanism": NO_GO_MECHANISMS[index],
+                "attempt": NO_GO_ATTEMPTS[index],
                 "outcome": "closed by the restricted packet",
                 "honesty_marker": "ATTEMPTED",
                 "disposition": "CLOSED",
@@ -91,6 +253,9 @@ def _no_go_packet(
                 "left_closes_right": False,
                 "right_closes_left": False,
                 "independent": True,
+                "rationale": NO_GO_N2_RATIONALE,
+                "evidence_path": evidence_path,
+                "evidence_locator": evidence_locator,
             }],
             "collapsed_wall_set": ["selector wall", "dynamics wall"],
             "unresolved": [],
@@ -99,14 +264,16 @@ def _no_go_packet(
         },
         "N3_hidden_wall_scan": {
             "scan_scope": "all wall and admission phrases in the restricted packet",
+            "scanned_evidence_paths": [source_path],
             "hits": [],
             "none_found_reason": "the scan found no hidden wall phrases",
             "unresolved": [],
-            "evidence_path": evidence_path,
-            "evidence_locator": evidence_locator,
+            "evidence_path": source_path,
+            "evidence_locator": source_locator,
         },
         "N4_residual_matching": {
             "scan_scope": "all witness and residual statements in the restricted packet",
+            "scanned_evidence_paths": [],
             "witnesses": [],
             "none_found_reason": "no route was ruled out by a prior witness",
             "unresolved": [],
@@ -115,11 +282,12 @@ def _no_go_packet(
         },
         "N5_rhetoric_audit": {
             "scan_scope": "all negative resolution phrases in the restricted packet",
+            "scanned_evidence_paths": [source_path],
             "statements": [],
             "none_found_reason": "the source has no additional rhetoric phrases",
             "unresolved": [],
-            "evidence_path": evidence_path,
-            "evidence_locator": evidence_locator,
+            "evidence_path": source_path,
+            "evidence_locator": source_locator,
         },
         "N6_partial_closure_scan": {
             "scan_scope": "all registered premise classes and definition reframes",
@@ -137,11 +305,13 @@ def _no_go_packet(
         },
         "N7_steelman": {
             "route_id": "route-0",
-            "argument": "the strongest counter-route",
-            "resolution": "the restricted packet answers it",
+            "argument": NO_GO_N7_ARGUMENT,
+            "resolution": NO_GO_N7_RESOLUTION,
             "resolved": True,
             "evidence_path": evidence_path,
             "evidence_locator": evidence_locator,
+            "resolution_evidence_path": resolution_path,
+            "resolution_evidence_locator": resolution_locator,
         },
         "N8_cross_cycle_echo": {
             "packet_complete": True,
@@ -149,9 +319,13 @@ def _no_go_packet(
                 {
                     "candidate_id": candidate_id,
                     "mechanism": "the indexed prior retirement mechanism",
-                    "retired": True,
+                    "retired": None,
                     "applicable": False,
                     "addressed": True,
+                    "disposition": (
+                        "The indexed prior retirement mechanism is retired or inapplicable to the "
+                        "current residual and therefore does not reopen this wall."
+                    ),
                     "evidence_path": cross_cycle_path,
                     "evidence_locator": candidate_id,
                 }
@@ -176,6 +350,44 @@ def _no_go_packet(
                 "reason_untested": "this is the cheapest remaining route",
             },
         })
+    default_manifest = {
+        source_path: {
+            "path": source_path, "roles": ["source"],
+            "text": _no_go_evidence_text(source_locator),
+        },
+        evidence_path: {
+            "path": evidence_path, "roles": ["runner"],
+            "text": _no_go_evidence_text(evidence_locator),
+        },
+        f"audit-packet://runner-stdout/{claim_id}": {
+            "path": f"audit-packet://runner-stdout/{claim_id}",
+            "roles": ["runner_stdout"],
+            "text": _no_go_evidence_text(evidence_locator),
+        },
+        resolution_path: {
+            "path": resolution_path, "roles": ["runner_stdout"],
+            "text": _no_go_resolution_text(resolution_locator),
+            "effective_status": None,
+        },
+        cross_cycle_path: {
+            "path": cross_cycle_path, "roles": ["cross_cycle_index"],
+            "text": json.dumps({
+                "schema": "no_go_cross_cycle_index_v1", "claim_id": claim_id,
+                "no_go_row_universe": [],
+                "no_go_row_universe_count": 0,
+                "no_go_row_universe_sha256": hashlib.sha256(b"[]").hexdigest(),
+                "candidates": [],
+            }),
+        },
+        partial_closure_path: {
+            "path": partial_closure_path, "roles": ["partial_closure_index"],
+            "text": json.dumps({
+                "schema": "no_go_partial_closure_index_v1", "claim_id": claim_id,
+                "candidates": [],
+            }),
+        },
+    }
+    _set_no_go_scan_coverage(packet, default_manifest)
     return packet
 
 
@@ -258,6 +470,56 @@ class CleanLedgerFixture:
 
     def read_ledger(self) -> dict:
         return json.loads((self.data_dir / "audit_ledger.json").read_text(encoding="utf-8"))
+
+
+class PublicationEffectiveStatusRenderTest(unittest.TestCase):
+    def test_nonretained_badge_neutralizes_retained_source_language(self):
+        m = _import("render_publication_effective_status")
+        body = (
+            "| Claim | Status | Authority |\n"
+            "|---|---|---|\n"
+            "| Retained theorem | promoted | [X](X.md)&nbsp;[audit:unaudited] |\n"
+            "| Clean theorem | retained | [Y](Y.md)&nbsp;[audit:retained] |\n"
+        )
+        rendered = m.demote_nonretained_table_rows(body)
+        first = rendered.splitlines()[2]
+        self.assertIn("AUDIT-NONRETAINED ROW", first)
+        self.assertNotRegex(first.lower(), r"\b(?:retained|promoted)\b")
+        self.assertIn("| Clean theorem | retained |", rendered)
+        self.assertIn("[audit:retained]", rendered)
+
+    def test_unbadged_table_row_fails_closed(self):
+        m = _import("render_publication_effective_status")
+        body = (
+            "| Claim | Status | Authority |\n"
+            "|---|---|---|\n"
+            "| Unlinked claim | retained | missing |\n"
+        )
+        rendered = m.demote_nonretained_table_rows(body)
+        row = rendered.splitlines()[2]
+        self.assertIn("AUDIT-NONRETAINED ROW", row)
+        self.assertNotRegex(row.lower(), r"\b(?:retained|promoted)\b")
+
+    def test_generated_table_view_omits_unbadged_narrative(self):
+        m = _import("render_publication_effective_status")
+        body = (
+            "# Results\n\n"
+            "This author paragraph claims an exact result.\n\n"
+            "| Claim | Status |\n|---|---|\n| X | [audit:retained] |\n"
+        )
+        rendered = m.strip_non_table_narrative(body)
+        self.assertNotIn("claims an exact result", rendered)
+        self.assertIn("Author-side narrative omitted", rendered)
+        self.assertIn("| X | [audit:retained] |", rendered)
+
+    def test_generated_table_view_neutralizes_author_status_headings(self):
+        m = _import("render_publication_effective_status")
+        rendered = m.strip_non_table_narrative(
+            "# Matrix\n\n## Promoted retained publication core\n\n"
+            "| Claim | Status |\n|---|---|\n| X | [audit:retained] |\n"
+        )
+        self.assertNotIn("Promoted retained publication core", rendered)
+        self.assertIn("## Audit-badged section 1", rendered)
 
 
 def _patch_repo_root(module, tmp_root: Path) -> None:
@@ -445,8 +707,8 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_type": "positive_theorem",
             "claim_scope": "test scope",
             "auditor": "test-auditor",
-            "auditor_family": "codex-gpt-5.5",
-            "auditor_model": "gpt-5.5",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
             "independence": "cross_family",
             "load_bearing_step_class": "C",
@@ -476,8 +738,8 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_type": "positive_theorem",
             "claim_scope": "test",
             "auditor": "weak-auditor",
-            "auditor_family": "claude-opus",
-            "auditor_model": "claude-opus-4.1",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
             "independence": "weak",
             "load_bearing_step_class": "C",
@@ -486,20 +748,127 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertFalse(ok)
         self.assertIn("weak", msg)
 
+    def test_exact_clean_provenance_rejects_gpt_5_5(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_old_model")
+        led = self.fx.read_ledger()
+        audit = {
+            "claim_id": "test_old_model",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "test scope",
+            "auditor": "old-model-auditor",
+            "auditor_family": "codex-gpt-5.5",
+            "auditor_model": "gpt-5.5",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "load_bearing_step_class": "C",
+        }
+        ok, msg = m.apply_one(led, audit)
+        self.assertFalse(ok)
+        self.assertIn("require exact provenance", msg)
+
+    def test_rejected_cross_confirmation_does_not_commit_prose_fix(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        note_path, old_hash = self._seed_one_row(
+            "test_prose_transaction",
+            audit_status="audit_in_progress",
+            claim_type="positive_theorem",
+            criticality="critical",
+            note_body="# old wording\n",
+        )
+        new_body = "# corrected wording\n"
+        self.fx.write_note(note_path, new_body)
+        new_hash = hashlib.sha256(new_body.encode("utf-8")).hexdigest()
+        led = self.fx.read_ledger()
+        led["rows"]["test_prose_transaction"]["cross_confirmation"] = {
+            "status": "awaiting_second",
+            "first_audit": {
+                "auditor": "same-session",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
+                "verdict": "audited_clean",
+                "claim_type": "positive_theorem",
+                "claim_scope": "test scope",
+                "load_bearing_step_class": "C",
+            },
+            "second_audit": None,
+        }
+        audit = {
+            "claim_id": "test_prose_transaction",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "test scope",
+            "auditor": "same-session",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "C",
+            "pre_audit_prose_fix": {
+                "old_hash": old_hash,
+                "new_hash": new_hash,
+                "prose_status": "auto_corrected",
+                "prose_corrections": [{
+                    "rule_id": "test",
+                    "before": "old wording",
+                    "after": "corrected wording",
+                }],
+            },
+        }
+        before = json.dumps(led, sort_keys=True)
+        ok, msg = m.apply_one(led, audit)
+        self.assertFalse(ok)
+        self.assertIn("distinct auditor identity", msg)
+        self.assertEqual(json.dumps(led, sort_keys=True), before)
+
+    def test_audit_invocation_id_is_one_use_per_claim(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_invocation_replay")
+        led = self.fx.read_ledger()
+        audit = {
+            "claim_id": "test_invocation_replay",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "test scope",
+            "auditor": "invocation-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "load_bearing_step_class": "C",
+            "audit_invocation_id": "a" * 32,
+        }
+        ok, msg = m.apply_one(led, audit)
+        self.assertTrue(ok, msg)
+        ok, msg = m.apply_one(led, audit)
+        self.assertFalse(ok)
+        self.assertIn("already been consumed", msg)
+
     def test_no_go_requires_and_preserves_discipline_packet(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
         self._seed_one_row(
             "test_no_go",
             claim_type="no_go",
-            note_body="# No-go obstruction\n",
+            note_body=_no_go_evidence_text(),
         )
         led = self.fx.read_ledger()
+        runner_path = "scripts/TEST_NO_GO.py"
+        self.fx.write_runner(runner_path, _no_go_evidence_text())
+        led["rows"]["test_no_go"]["runner_path"] = runner_path
+        resolution_path = "scripts/TEST_NO_GO_RESOLUTION.py"
+        self.fx.write_runner(resolution_path, _no_go_resolution_text())
+        led["rows"]["test_no_go"]["helper_runner_paths"] = [resolution_path]
         base = {
             "claim_id": "test_no_go",
             "verdict": "audited_clean",
             "claim_type": "no_go",
-            "claim_scope": "the scoped obstruction",
+            "claim_scope": "the scoped selector obstruction mechanism",
             "chain_closes": True,
             "auditor": "fresh-no-go-auditor",
             "auditor_family": "codex-gpt-5.6",
@@ -513,8 +882,14 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertFalse(ok)
         self.assertIn("N1-N8 packet is required", msg)
 
-        audit = {**base, "no_go_discipline": _no_go_packet()}
-        ok, msg = m.apply_one(led, audit)
+        packet = _no_go_packet()
+        manifest = m.no_go_discipline_gate.build_evidence_manifest(
+            led["rows"]["test_no_go"], led["rows"], self.tmp_root
+        )
+        _set_no_go_scan_coverage(packet, manifest)
+        audit = {**base, "no_go_discipline": packet}
+        with mock.patch.object(m, "trusted_evidence_manifest", return_value=manifest):
+            ok, msg = m.apply_one(led, audit)
         self.assertTrue(ok, msg)
         row = led["rows"]["test_no_go"]
         self.assertEqual(row["no_go_discipline"]["status"], "PASS")
@@ -522,6 +897,206 @@ class ApplyAuditTest(unittest.TestCase):
             m.audit_summary_from_blob(audit)["no_go_discipline"]["status"],
             "PASS",
         )
+
+    def test_no_go_evidence_transport_is_out_of_band_and_fails_closed(self):
+        m = _import("apply_audit")
+        ok, msg = m.apply_one(
+            {"rows": {}},
+            {
+                "claim_id": "fabricated",
+                "_no_go_evidence_manifest": {"docs/FAKE.md": {"text": "fake"}},
+            },
+        )
+        self.assertFalse(ok)
+        self.assertIn("reserved for the orchestrator transport", msg)
+        with mock.patch.dict(
+            os.environ,
+            {"CODEX_AUDIT_TRUSTED_EVIDENCE_MANIFEST": "/missing/manifest.json"},
+        ):
+            with self.assertRaisesRegex(ValueError, "transport failed"):
+                m.trusted_evidence_manifest()
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "manifest.json"
+            path.write_text("[]", encoding="utf-8")
+            with mock.patch.dict(
+                os.environ,
+                {"CODEX_AUDIT_TRUSTED_EVIDENCE_MANIFEST": str(path)},
+            ):
+                with self.assertRaisesRegex(ValueError, "must contain an object"):
+                    m.trusted_evidence_manifest()
+
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "manifest.json"
+            payload = {
+                "schema": "codex_audit_trusted_manifest_v1",
+                "claim_id": "target",
+                "audit_invocation_id": "b" * 32,
+                "issued_at": m.datetime.now(m.timezone.utc).isoformat(),
+                "entries": {"docs/TARGET.md": {"text": "exact evidence"}},
+            }
+            path.write_text(json.dumps(payload), encoding="utf-8")
+            with mock.patch.dict(
+                os.environ,
+                {"CODEX_AUDIT_TRUSTED_EVIDENCE_MANIFEST": str(path)},
+            ):
+                self.assertEqual(
+                    m.trusted_evidence_manifest("target", "b" * 32),
+                    payload["entries"],
+                )
+                with self.assertRaisesRegex(ValueError, "claim_id mismatch"):
+                    m.trusted_evidence_manifest("other", "b" * 32)
+                with self.assertRaisesRegex(ValueError, "audit_invocation_id mismatch"):
+                    m.trusted_evidence_manifest("target", "c" * 32)
+            payload["issued_at"] = (
+                m.datetime.now(m.timezone.utc) - m.timedelta(hours=3)
+            ).isoformat()
+            path.write_text(json.dumps(payload), encoding="utf-8")
+            with mock.patch.dict(
+                os.environ,
+                {"CODEX_AUDIT_TRUSTED_EVIDENCE_MANIFEST": str(path)},
+            ):
+                with self.assertRaisesRegex(ValueError, "expired"):
+                    m.trusted_evidence_manifest("target", "b" * 32)
+
+    def test_positive_prior_cross_seat_needs_no_no_go_snapshot(self):
+        m = _import("apply_audit")
+        summary = {
+            "verdict": "audited_clean", "claim_type": "positive_theorem",
+            "claim_scope": "an exact positive identity",
+        }
+        self.assertIsNone(
+            m.cross_summary_no_go_error(
+                summary, source_required=False, current_evidence_manifest={}
+            )
+        )
+        self.assertIn(
+            "N1-N8 packet is required",
+            m.cross_summary_no_go_error(
+                {**summary, "claim_type": "no_go"},
+                source_required=True,
+                current_evidence_manifest={},
+            ) or "",
+        )
+
+    def test_packeted_audit_archives_invalid_first_and_requires_fresh_n8_packet(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        note_path, _ = self._seed_one_row(
+            "legacy_pending_no_go",
+            audit_status="audit_in_progress",
+            claim_type="no_go",
+            criticality="critical",
+            note_body=_no_go_evidence_text(),
+        )
+        led = self.fx.read_ledger()
+        row = led["rows"]["legacy_pending_no_go"]
+        runner_path = "scripts/LEGACY_PENDING_NO_GO.py"
+        self.fx.write_runner(runner_path, _no_go_evidence_text())
+        resolution_path = "scripts/TEST_NO_GO_RESOLUTION.py"
+        self.fx.write_runner(resolution_path, _no_go_resolution_text())
+        row.update({
+            "runner_path": runner_path,
+            "helper_runner_paths": [resolution_path],
+            "claim_scope": "the scoped obstruction",
+            "blocker": "awaiting_cross_confirmation",
+            "cross_confirmation": {
+                "first_audit": {
+                    "auditor": "legacy-first", "auditor_family": "codex-gpt-5.5",
+                    "verdict": "audited_clean", "claim_type": "no_go",
+                    "claim_scope": "the scoped selector obstruction mechanism",
+                    "load_bearing_step_class": "A",
+                },
+                "second_audit": None,
+                "status": "awaiting_second",
+            },
+        })
+        packet = _no_go_packet(
+            evidence_path=runner_path, source_path=note_path,
+            claim_id="legacy_pending_no_go",
+        )
+        audit = {
+            "claim_id": "legacy_pending_no_go", "verdict": "audited_clean",
+            "claim_type": "no_go",
+            "claim_scope": "the scoped selector obstruction mechanism",
+            "chain_closes": True, "auditor": "fresh-packeted-first",
+            "auditor_family": "codex-gpt-5.6", "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh", "independence": "cross_family",
+            "load_bearing_step_class": "A", "no_go_discipline": packet,
+        }
+        manifest = m.no_go_discipline_gate.build_evidence_manifest(row, led["rows"], self.tmp_root)
+        _set_no_go_scan_coverage(packet, manifest)
+        with mock.patch.object(m, "trusted_evidence_manifest", return_value=manifest):
+            ok, msg = m.apply_one(led, audit)
+        self.assertTrue(ok, msg)
+        self.assertIn("incoming packet not applied", msg)
+        pending = led["rows"]["legacy_pending_no_go"]
+        self.assertNotIn("cross_confirmation", pending)
+        self.assertEqual(pending["audit_status"], "unaudited")
+        self.assertEqual(
+            pending["blocker"],
+            "invalid_cross_confirmation_first_archived_reaudit_required",
+        )
+        self.assertEqual(pending["previous_audits"][-1]["auditor"], "legacy-first")
+        self.assertEqual(
+            pending["previous_audits"][-1]["invalidation_reason"],
+            "no_go_discipline_cross_confirmation_packet_invalid",
+        )
+
+        # Replaying the pre-archive packet/manifest must fail because N8 now
+        # includes the archived first seat.
+        with mock.patch.object(m, "trusted_evidence_manifest", return_value=manifest):
+            ok, msg = m.apply_one(led, audit)
+        self.assertFalse(ok)
+        self.assertIn("trusted evidence manifest is stale", msg)
+
+        fresh_row = led["rows"]["legacy_pending_no_go"]
+        fresh_manifest = m.no_go_discipline_gate.build_evidence_manifest(
+            fresh_row, led["rows"], self.tmp_root
+        )
+        cross_path = m.no_go_discipline_gate.cross_cycle_index_path(
+            "legacy_pending_no_go"
+        )
+        candidates = json.loads(fresh_manifest[cross_path]["text"])["candidates"]
+        candidate_ids = tuple(candidate["candidate_id"] for candidate in candidates)
+        fresh_packet = _no_go_packet(
+            evidence_path=runner_path, source_path=note_path,
+            claim_id="legacy_pending_no_go",
+            cross_cycle_candidates=candidate_ids,
+        )
+        records = {candidate["candidate_id"]: candidate for candidate in candidates}
+        for echo in fresh_packet["N8_cross_cycle_echo"]["echoes"]:
+            record = records[echo["candidate_id"]]
+            mechanism = record["claim_scope"]
+            echo.update({
+                "mechanism": mechanism,
+                "retired": record["retired"],
+                "applicable": record["applicable"],
+                "addressed": True,
+                "disposition": (
+                    f"The {mechanism} history is explicitly addressed as an "
+                    "applicable prior mechanism in this fresh packet."
+                ),
+            })
+        _set_no_go_scan_coverage(fresh_packet, fresh_manifest)
+        fresh_audit = {**audit, "no_go_discipline": fresh_packet}
+        with mock.patch.object(
+            m, "trusted_evidence_manifest", return_value=fresh_manifest
+        ):
+            ok, msg = m.apply_one(led, fresh_audit)
+        self.assertTrue(ok, msg)
+        self.assertIn("first audit recorded", msg)
+
+        second_audit = {
+            **fresh_audit,
+            "auditor": "fresh-packeted-second",
+            "independence": "fresh_context",
+        }
+        with mock.patch.object(
+            m, "trusted_evidence_manifest", return_value=fresh_manifest
+        ):
+            ok, msg = m.apply_one(led, second_audit)
+        self.assertTrue(ok, msg)
+        self.assertEqual(led["rows"]["legacy_pending_no_go"]["audit_status"], "audited_clean")
 
     def test_hybrid_judicial_review_records_applyable_third_tuple(self):
         m = _import("apply_audit")
@@ -553,8 +1128,8 @@ class ApplyAuditTest(unittest.TestCase):
         audit = {
             "claim_id": "test_hybrid",
             "third_auditor": "second-stage-panel",
-            "auditor_family": "codex-gpt-5.5",
-            "auditor_model": "gpt-5.5",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
             "independence": "judicial_review",
             "sided_with": "hybrid",
@@ -585,9 +1160,15 @@ class ApplyAuditTest(unittest.TestCase):
             "test_judicial_no_go",
             audit_status="audit_in_progress",
             claim_type="no_go",
-            note_body="# No-go obstruction\n",
+            note_body=_no_go_evidence_text(),
         )
         led = self.fx.read_ledger()
+        runner_path = "scripts/TEST_JUDICIAL_NO_GO.py"
+        self.fx.write_runner(runner_path, _no_go_evidence_text())
+        led["rows"]["test_judicial_no_go"]["runner_path"] = runner_path
+        resolution_path = "scripts/TEST_NO_GO_RESOLUTION.py"
+        self.fx.write_runner(resolution_path, _no_go_resolution_text())
+        led["rows"]["test_judicial_no_go"]["helper_runner_paths"] = [resolution_path]
         led["rows"]["test_judicial_no_go"]["cross_confirmation"] = {
             "status": "disagreement",
             "first_audit": {
@@ -630,10 +1211,32 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertEqual(json.dumps(led, sort_keys=True), before_rejected)
 
         judgment["no_go_discipline"] = _no_go_packet(
-            evidence_path="docs/TEST_JUDICIAL_NO_GO.md",
+            evidence_path=runner_path,
+            source_path="docs/TEST_JUDICIAL_NO_GO.md",
             claim_id="test_judicial_no_go",
         )
-        ok, msg = m.apply_one(led, judgment)
+        manifest = m.no_go_discipline_gate.build_evidence_manifest(
+            led["rows"]["test_judicial_no_go"], led["rows"], self.tmp_root
+        )
+        _set_no_go_scan_coverage(judgment["no_go_discipline"], manifest)
+        with mock.patch.object(m, "trusted_evidence_manifest", return_value=manifest):
+            ok, msg = m.apply_one(led, judgment)
+        self.assertFalse(ok)
+        self.assertIn("cannot ratify invalid first audit", msg)
+        prior_packet = _no_go_packet(
+            evidence_path=runner_path,
+            source_path="docs/TEST_JUDICIAL_NO_GO.md",
+            claim_id="test_judicial_no_go",
+        )
+        _set_no_go_scan_coverage(prior_packet, manifest)
+        prior_packet["evidence_snapshot"] = (
+            m.no_go_discipline_gate.build_evidence_snapshot(prior_packet, manifest)
+        )
+        led["rows"]["test_judicial_no_go"]["cross_confirmation"]["first_audit"][
+            "no_go_discipline"
+        ] = prior_packet
+        with mock.patch.object(m, "trusted_evidence_manifest", return_value=manifest):
+            ok, msg = m.apply_one(led, judgment)
         self.assertTrue(ok, msg)
         self.assertEqual(
             led["rows"]["test_judicial_no_go"]["no_go_discipline"]["status"],
@@ -1199,6 +1802,23 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
         new_rows, _cycles = m.compute_effective(rows)
         self.assertEqual(new_rows["parent"]["effective_status"], "retained")
         self.assertEqual(new_rows["child"]["effective_status"], "retained")
+
+    def test_archived_failed_no_go_is_not_promoted_to_retained_authority(self):
+        m = _import("compute_effective_status")
+        rows = {
+            "failed_negative": {
+                "claim_id": "failed_negative", "deps": [],
+                "audit_status": "audited_failed", "claim_type": "no_go",
+                "note_path": "archive_unlanded/example/FAILED.md",
+            },
+            "downstream": {
+                "claim_id": "downstream", "deps": ["failed_negative"],
+                "audit_status": "audited_clean", "claim_type": "positive_theorem",
+            },
+        }
+        new_rows, _cycles = m.compute_effective(rows)
+        self.assertEqual(new_rows["failed_negative"]["effective_status"], "audited_failed")
+        self.assertEqual(new_rows["downstream"]["effective_status"], "retained_pending_chain")
 
     def test_clean_with_unaudited_dep_is_pending_chain(self):
         m = _import("compute_effective_status")
@@ -1766,12 +2386,21 @@ class AuditLintTest(unittest.TestCase):
         m = _import("audit_lint")
         _patch_repo_root(m, self.tmp_root)
         live_path = "docs/linted_no_go.md"
+        runner_path = "scripts/LINTED_NO_GO.py"
+        self.fx.write_runner(runner_path, _no_go_evidence_text())
+        resolution_path = "scripts/TEST_NO_GO_RESOLUTION.py"
+        self.fx.write_runner(resolution_path, _no_go_resolution_text())
         rows = {
             "linted_no_go": {
                 "claim_id": "linted_no_go",
                 "note_path": live_path,
-                "_body": "# No-go obstruction\n",
+                "runner_path": runner_path,
+                "helper_runner_paths": [resolution_path],
+                "_body": _no_go_evidence_text(),
                 "audit_status": "audited_clean",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
                 "claim_type": "no_go",
                 "claim_scope": "the scoped obstruction",
                 "chain_closes": True,
@@ -1784,18 +2413,34 @@ class AuditLintTest(unittest.TestCase):
                 "criticality": "leaf",
                 "load_bearing_step_class": "A",
                 "no_go_discipline": _no_go_packet(
-                    evidence_path=live_path, claim_id="linted_no_go"
+                    evidence_path=runner_path,
+                    source_path=live_path,
+                    claim_id="linted_no_go",
                 ),
             }
         }
         self._write_minimal_ledger(rows)
+        ledger = self.fx.read_ledger()
+        packet = ledger["rows"]["linted_no_go"]["no_go_discipline"]
+        manifest = m.no_go_discipline_gate.build_evidence_manifest(
+            ledger["rows"]["linted_no_go"], ledger["rows"], self.tmp_root
+        )
+        _set_no_go_scan_coverage(packet, manifest)
+        packet["evidence_snapshot"] = m.no_go_discipline_gate.build_evidence_snapshot(
+            packet, manifest
+        )
+        self.fx.write_ledger(ledger)
         import contextlib, io
         buf = io.StringIO()
         with contextlib.redirect_stdout(buf):
             rc = m.main()
         self.assertEqual(rc, 0, buf.getvalue())
 
-        bad = _no_go_packet(evidence_path=live_path, claim_id="linted_no_go")
+        bad = _no_go_packet(
+            evidence_path=runner_path,
+            source_path=live_path,
+            claim_id="linted_no_go",
+        )
         bad["N7_steelman"]["resolved"] = False
         ledger = self.fx.read_ledger()
         ledger["rows"]["linted_no_go"]["cross_confirmation"] = {
@@ -1952,7 +2597,9 @@ class AuditLintTest(unittest.TestCase):
                 "claim_scope": "real scope here",
                 "effective_status": "audited_conditional",
                 "notes_for_re_audit_if_any": "re-audit when X is closed",
-                "auditor_family": "codex-gpt-5.5",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
                 "criticality": "leaf",
             },
         }
@@ -1978,7 +2625,9 @@ class AuditLintTest(unittest.TestCase):
                 "claim_scope": f"{m.BACKFILL_SCOPE_PREFIX}; placeholder",
                 "effective_status": "audited_conditional",
                 "notes_for_re_audit_if_any": "missing_bridge_theorem: repair",
-                "auditor_family": "codex-gpt-5.5",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
                 "criticality": "leaf",
             },
         }
@@ -2036,7 +2685,9 @@ class AuditLintTest(unittest.TestCase):
                 "claim_scope": "bounded theorem with glossary link",
                 "effective_status": "retained_bounded",
                 "auditor": "synthetic-auditor",
-                "auditor_family": "codex-gpt-5.5",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
                 "criticality": "leaf",
                 "load_bearing_step_class": "A",
             },
@@ -2085,7 +2736,9 @@ class AuditLintTest(unittest.TestCase):
                 "effective_status": "retained_bounded",
                 "deps": ["key_terminology"],
                 "auditor": "unit-test-auditor",
-                "auditor_family": "codex-gpt-5.5",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
                 "criticality": "leaf",
                 "load_bearing_step_class": "A",
             },
@@ -2370,6 +3023,9 @@ class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):
             # Soft reset path: audited_clean + cross_family + bump to critical, no cc.
             row_soft = {
                 "audit_status": "audited_clean",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
                 "deps": [],
                 "criticality": "critical",
                 "independence": "cross_family",
@@ -2383,6 +3039,9 @@ class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):
             # Hard invalidate path: weak indep at high.
             row_hard = {
                 "audit_status": "audited_clean",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
                 "deps": [],
                 "criticality": "high",
                 "independence": "weak",
@@ -2396,6 +3055,9 @@ class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):
             # Noop path: audited_clean + cross_family + bump to high.
             row_noop = {
                 "audit_status": "audited_clean",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
                 "deps": [],
                 "criticality": "high",
                 "independence": "cross_family",
@@ -2580,7 +3242,28 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "docs/TEST_NO_GO.md": {
                 "path": "docs/TEST_NO_GO.md",
                 "roles": ["source"],
-                "text": "No-go obstruction with a selector wall and dynamics wall.",
+                "text": _no_go_evidence_text(),
+                "effective_status": None,
+                "accepted_premise_type": None,
+            },
+            "scripts/TEST_NO_GO.py": {
+                "path": "scripts/TEST_NO_GO.py",
+                "roles": ["runner"],
+                "text": _no_go_evidence_text(),
+                "effective_status": None,
+                "accepted_premise_type": None,
+            },
+            "audit-packet://runner-stdout/test_no_go": {
+                "path": "audit-packet://runner-stdout/test_no_go",
+                "roles": ["runner_stdout"],
+                "text": _no_go_evidence_text(),
+                "effective_status": None,
+                "accepted_premise_type": None,
+            },
+            "audit-packet://runner-stdout-independent/test_no_go": {
+                "path": "audit-packet://runner-stdout-independent/test_no_go",
+                "roles": ["runner_stdout_independent"],
+                "text": _no_go_resolution_text(),
                 "effective_status": None,
                 "accepted_premise_type": None,
             },
@@ -2590,6 +3273,9 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "text": json.dumps({
                     "schema": "no_go_cross_cycle_index_v1",
                     "claim_id": "test_no_go",
+                    "no_go_row_universe": [],
+                    "no_go_row_universe_count": 0,
+                    "no_go_row_universe_sha256": hashlib.sha256(b"[]").hexdigest(),
                     "candidates": [],
                 }),
                 "effective_status": None,
@@ -2617,6 +3303,24 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "bounded_theorem",
             )
         )
+        for body in (
+            "The nonexistence of an admissible route follows.",
+            "The absence of a selector derivation is exact.",
+            "The impossibility of closure is the scoped result.",
+            "The failure of every route establishes the boundary.",
+            "The lack of a solution is proved on this carrier.",
+            "Non-derivability holds on this carrier.",
+            "Underdetermination is the scoped result.",
+            "Inability to supply the selector is proved.",
+            "Non-supply of the bridge closes this bounded negative result.",
+            "Non-closure holds for the stated route family.",
+        ):
+            with self.subTest(noun_form=body):
+                self.assertTrue(
+                    m.source_requires_no_go_discipline(
+                        "docs/NOUN_BOUNDARY.md", body, "bounded_theorem"
+                    )
+                )
         self.assertFalse(
             m.output_requires_no_go_discipline(
                 {
@@ -2691,6 +3395,12 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "No methods exist.",
             "No operators exist.",
             "No theorems exist.",
+            "The charged-lepton selector firewall remains a negative boundary.",
+            "The mass is not derivable from the four axioms.",
+            "The finite construction fails to lift to the continuum sector.",
+            "The result is conditional on an imported selector.",
+            "No admissible route exists within the restricted packet.",
+            "There is no uniform sign across the finite ring.",
         ):
             with self.subTest(body=body):
                 self.assertTrue(
@@ -2740,6 +3450,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "No obstruction exists after the exact construction.",
             "No wall exists because the identity closes it.",
             "No admission affects the proof as the theorem closes the wall.",
+            "The heat-kernel theorem does not, by itself, rule out the Wilson route.",
+            "The finite-Lambda exclusions are scope boundaries, not live admissions or obstructions.",
         ):
             with self.subTest(rationale=rationale):
                 self.assertFalse(
@@ -2802,7 +3514,81 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             )
         )
 
-    def test_cross_cycle_index_walks_every_physics_loop_no_go_ledger(self):
+    def test_trigger_handles_negated_labels_local_scope_and_noun_form(self):
+        m = _import("no_go_discipline_gate")
+        for body in (
+            "This is an exact positive theorem, not a no-go.",
+            "The microscopic Wilson law and selector are not derived here.",
+            "See [the portability helper](ARCHITECTURE_PORTABILITY_FIREWALL.md) for implementation details.",
+        ):
+            with self.subTest(body=body):
+                self.assertFalse(
+                    m.source_requires_no_go_discipline(
+                        "docs/POSITIVE.md", body, "positive_theorem"
+                    )
+                )
+        self.assertTrue(
+            m.source_requires_no_go_discipline(
+                "docs/BOUNDARY.md",
+                "No derivation of the sign from the four axioms.",
+                "bounded_theorem",
+            )
+        )
+
+    def test_malformed_top_level_index_and_snapshot_fail_closed(self):
+        m = _import("no_go_discipline_gate")
+        entry = {"text": "[]", "roles": ["cross_cycle_index"]}
+        self.assertIsNone(
+            m._index_candidates(
+                entry, schema="no_go_cross_cycle_index_v1",
+                stored_field="cross_cycle_candidate_ids",
+                stored_records_field="cross_cycle_candidates",
+            )
+        )
+        self.assertIsNone(
+            m.evidence_manifest_from_snapshot(
+                {"evidence_snapshot": {"schema": "no_go_evidence_snapshot_v1", "entries": []}}
+            )
+        )
+
+    def test_attempted_route_cannot_cite_authority_and_n8_rejects_trivial_mechanism(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        manifest["docs/AUTH.md"] = {
+            "path": "docs/AUTH.md", "roles": ["authority"],
+            "text": _no_go_evidence_text("Authority witness"),
+            "effective_status": "retained", "accepted_premise_type": None,
+        }
+        packet = _no_go_packet()
+        packet["N1_alternative_routes"][0].update({
+            "evidence_path": "docs/AUTH.md", "evidence_locator": "Authority witness",
+        })
+        _set_no_go_scan_coverage(packet, manifest)
+        audit = {"claim_type": "no_go", "verdict": "audited_clean", "chain_closes": True, "no_go_discipline": packet}
+        self.assertIn(
+            "live runner_stdout",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+        )
+
+        candidate_id = "prior:test"
+        cross_path = "audit-packet://cross-cycle-index/test_no_go"
+        manifest = self._manifest()
+        manifest[cross_path]["text"] = json.dumps({
+            "schema": "no_go_cross_cycle_index_v1", "claim_id": "test_no_go",
+            "candidates": [{"candidate_id": candidate_id, "kind": "prior_audit_cycle", "mechanism": "no"}],
+        })
+        packet = _no_go_packet(cross_cycle_candidates=(candidate_id,))
+        packet["N8_cross_cycle_echo"]["echoes"][0].update({
+            "mechanism": "no", "disposition": "no is recorded as the purported indexed mechanism for this candidate",
+        })
+        _set_no_go_scan_coverage(packet, manifest)
+        audit["no_go_discipline"] = packet
+        self.assertIn(
+            "substantive indexed mechanism",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+        )
+
+    def test_cross_cycle_index_scans_every_loop_ledger_and_selects_relevant_candidates(self):
         m = _import("no_go_discipline_gate")
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -2831,7 +3617,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             rendered = json.loads(
                 m.build_cross_cycle_index(
                     {
-                        "claim_id": "target",
+                        "claim_id": "selector_obstruction_target",
                         "claim_scope": "selector obstruction",
                         "deps": [],
                     },
@@ -2847,7 +3633,12 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         ]
         self.assertEqual(scope["glob"], ".claude/science/physics-loops/**/NO_GO_LEDGER.md")
         self.assertEqual(scope["scanned_count"], 2)
-        self.assertEqual(scope["scanned_paths"], expected_paths)
+        self.assertEqual(
+            scope["scanned_paths_sha256"],
+            __import__("hashlib").sha256(
+                json.dumps(expected_paths, separators=(",", ":")).encode("utf-8")
+            ).hexdigest(),
+        )
         loop_candidates = [
             candidate
             for candidate in rendered["candidates"]
@@ -2855,8 +3646,9 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         ]
         self.assertEqual(
             [candidate["note_path"] for candidate in loop_candidates],
-            expected_paths,
+            [expected_paths[0]],
         )
+        self.assertIn("every tracked ledger is scanned", scope["candidate_policy"])
         self.assertTrue(
             all(candidate["content_sha256"] for candidate in loop_candidates)
         )
@@ -2865,8 +3657,124 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             for candidate in loop_candidates
             if candidate["note_path"] == expected_paths[0]
         )
-        self.assertIn(tail_marker, first_candidate["content"])
-        self.assertFalse(first_candidate["content_truncated"])
+        self.assertTrue(
+            any("selector obstruction retired" in line for line in first_candidate["content"])
+        )
+        self.assertTrue(first_candidate["content_truncated"])
+
+    def test_n8_source_corpus_excludes_generated_markdown(self):
+        m = _import("no_go_discipline_gate")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / "docs" / "SOURCE_NO_GO.md"
+            generated = root / "docs" / "SOURCE_NO_GO_EFFECTIVE_STATUS.md"
+            source.parent.mkdir(parents=True, exist_ok=True)
+            source.write_text("No-go: no admissible selector route.\n", encoding="utf-8")
+            generated.write_text(
+                "<!-- AUTO-GENERATED by test -->\nNo-go: no admissible selector route.\n",
+                encoding="utf-8",
+            )
+            paths, records = m._docs_negative_corpus(root)
+        self.assertEqual([path.name for path in paths], ["SOURCE_NO_GO.md"])
+        self.assertEqual([record["path"].name for record in records], ["SOURCE_NO_GO.md"])
+
+    def test_cross_cycle_index_is_bounded_and_ignores_mutable_peer_audit_state(self):
+        m = _import("no_go_discipline_gate")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for path, payload in (
+                (m.OBLIGATION_REGISTRY, {"canonical_ids": [], "nodes": {}}),
+            ):
+                target = root / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_text(json.dumps(payload), encoding="utf-8")
+            target_row = {
+                "claim_id": "selector_obstruction_target",
+                "claim_scope": "absence of selector obstruction closure",
+                "note_path": "docs/TARGET.md", "deps": [],
+            }
+            rows = {"selector_obstruction_target": target_row}
+            for index in range(100):
+                note_path = f"docs/PEER_{index}.md"
+                note = root / note_path
+                note.parent.mkdir(parents=True, exist_ok=True)
+                note.write_text(
+                    "No-go: absence of selector obstruction closure on this carrier.\n",
+                    encoding="utf-8",
+                )
+                rows[f"peer_{index}"] = {
+                    "claim_id": f"peer_{index}", "note_path": note_path,
+                    "claim_type": "no_go", "audit_status": "audited_clean",
+                    "effective_status": "retained_no_go",
+                    "verdict_rationale": "mutable first verdict",
+                }
+            first = m.build_cross_cycle_index(target_row, rows, root)
+            parsed = json.loads(first)
+            self.assertLessEqual(len(parsed["candidates"]), m.CROSS_CYCLE_CANDIDATE_LIMIT)
+            self.assertEqual(parsed["no_go_row_universe_count"], 100)
+            self.assertEqual(
+                {item["claim_id"] for item in parsed["no_go_row_universe"]},
+                {f"peer_{index}" for index in range(100)},
+            )
+            self.assertTrue(any(
+                candidate["kind"] == "similar_negative_boundary"
+                for candidate in parsed["candidates"]
+            ))
+            self.assertLess(len(first), 250_000)
+            for peer_id, row in rows.items():
+                if peer_id == "selector_obstruction_target":
+                    continue
+                row["audit_status"] = "unaudited"
+                row["effective_status"] = "unaudited"
+                row["verdict_rationale"] = "different mutable verdict"
+            self.assertEqual(first, m.build_cross_cycle_index(target_row, rows, root))
+            target_row["claim_scope"] = "different mutable target scope"
+            target_row["verdict_rationale"] = "different mutable target verdict"
+            self.assertEqual(first, m.build_cross_cycle_index(target_row, rows, root))
+
+    def test_previous_audit_candidates_are_live_unless_explicitly_retired(self):
+        m = _import("no_go_discipline_gate")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for path, payload in (
+                (m.OBLIGATION_REGISTRY, {"canonical_ids": [], "nodes": {}}),
+            ):
+                target = root / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_text(json.dumps(payload), encoding="utf-8")
+            row = {
+                "claim_id": "selector_target",
+                "note_path": "docs/SELECTOR_TARGET.md",
+                "deps": [],
+                "previous_audits": [
+                    {
+                        "claim_scope": "selector target stale packet",
+                        "invalidation_reason": "no_go_discipline_packet_missing",
+                    },
+                    {
+                        "claim_scope": "selector target superseded mechanism",
+                        "invalidation_reason": "superseded",
+                    },
+                ],
+            }
+            candidates = json.loads(
+                m.build_cross_cycle_index(row, {"selector_target": row}, root)
+            )["candidates"]
+        history = {
+            candidate["candidate_id"]: candidate
+            for candidate in candidates
+            if candidate["kind"] == "prior_audit_cycle"
+        }
+        self.assertEqual(
+            (history["selector_target:previous_audit:0"]["retired"],
+             history["selector_target:previous_audit:0"]["applicable"]),
+            (False, None),
+        )
+        self.assertEqual(
+            (history["selector_target:previous_audit:1"]["retired"],
+             history["selector_target:previous_audit:1"]["applicable"]),
+            (True, None),
+        )
 
     def test_partial_closure_index_scans_vocab_meta_and_in_flight_surfaces(self):
         m = _import("no_go_discipline_gate")
@@ -2969,6 +3877,12 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         for index, route in enumerate(packet["N1_alternative_routes"]):
             route["mechanism"] = f"same mechanism {index}"
             route["attempt"] = f"same test {index}"
+        manifest = self._manifest()
+        manifest["audit-packet://runner-stdout/test_no_go"]["text"] += "\n" + "\n".join(
+            value
+            for route in packet["N1_alternative_routes"]
+            for value in (route["mechanism"], route["attempt"])
+        )
         audit = {
             "claim_type": "no_go",
             "verdict": "audited_clean",
@@ -2978,7 +3892,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertIn(
             "numbered paraphrases",
             m.validate_no_go_discipline(
-                audit, evidence_manifest=self._manifest()
+                audit, evidence_manifest=manifest
             ) or "",
         )
 
@@ -2997,12 +3911,16 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         manifest["docs/AUTH.md"] = {
             "path": "docs/AUTH.md",
             "roles": ["authority"],
-            "text": "Retained authority closes the route residual exactly.",
+            "text": (
+                "Retained authority closes the route residual exactly.\n"
+                + _no_go_evidence_text()
+            ),
             "effective_status": "retained",
             "accepted_premise_type": None,
         }
         packet = _no_go_packet()
-        route = packet["N1_alternative_routes"][0]
+        _set_no_go_scan_coverage(packet, manifest)
+        route = packet["N1_alternative_routes"][1]
         route.update({
             "honesty_marker": "RULED OUT BY PRIOR",
             "prior_witness_id": "witness-0",
@@ -3021,7 +3939,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         )
         packet["N4_residual_matching"]["witnesses"] = [{
             "witness_id": "witness-0",
-            "route_id": "route-0",
+            "route_id": "route-1",
             "witness_residual": "the route residual",
             "claim_residual": "the route residual",
             "match": True,
@@ -3048,17 +3966,20 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "chain_closes": True,
             "no_go_discipline": _no_go_packet(),
         }
-        audit["no_go_discipline"]["N3_hidden_wall_scan"]["hits"] = [{
-            "phrase": "convention authority",
-            "classification": "retained_authority",
-            "evidence_path": "docs/CONVENTION.md",
-            "evidence_locator": "Convention metadata does not supply theorem authority",
-        }]
+        _set_no_go_scan_coverage(audit["no_go_discipline"], manifest)
+        convention_hit = next(
+            hit
+            for hit in audit["no_go_discipline"]["N3_hidden_wall_scan"]["hits"]
+            if hit["evidence_path"] == "docs/CONVENTION.md"
+            and hit["phrase"] == "convention"
+        )
+        convention_hit["classification"] = "retained_authority"
         self.assertIn(
             "not retained or accepted",
             m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
         )
         audit["no_go_discipline"] = _no_go_packet()
+        _set_no_go_scan_coverage(audit["no_go_discipline"], manifest)
         partial_index_path = "audit-packet://partial-closure-index/test_no_go"
         manifest[partial_index_path]["text"] = json.dumps({
             "schema": "no_go_partial_closure_index_v1",
@@ -3066,14 +3987,22 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "candidates": [{
                 "candidate_id": "approved_primitive:convention",
                 "kind": "approved_primitive",
+                "content": "approved primitive convention candidate without retained authority",
             }],
         })
         audit["no_go_discipline"]["N6_partial_closure_scan"]["candidates"] = [{
             "candidate_id": "approved_primitive:convention",
             "kind": "approved_primitive",
+            "indexed_basis": "approved primitive convention candidate without retained authority",
+            "affected_wall": "selector wall",
+            "closure_mechanism": (
+                "The approved primitive convention candidate without retained authority cannot "
+                "close selector wall because it "
+                "does not supply retained theorem authority."
+            ),
             "could_close_wall": False,
             "addressed": True,
-            "disposition": "does not close the wall",
+            "disposition": "does not close selector wall",
             "evidence_path": "docs/CONVENTION.md",
             "evidence_locator": "Convention metadata does not supply theorem authority",
         }]
@@ -3109,9 +4038,16 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         audit["no_go_discipline"]["N6_partial_closure_scan"]["candidates"] = [{
             "candidate_id": candidate_id,
             "kind": "convention_reframe",
+            "indexed_basis": "selector_label convention reframe candidate",
+            "affected_wall": "selector wall",
+            "closure_mechanism": (
+                "The selector_label convention reframe candidate could relabel "
+                "selector wall but cannot "
+                "supply the retained derivation needed to close it."
+            ),
             "could_close_wall": False,
             "addressed": True,
-            "disposition": "the indexed convention does not close this wall",
+            "disposition": "the indexed convention does not close selector wall",
             "evidence_path": index_path,
             "evidence_locator": "selector_label convention reframe candidate",
         }]
@@ -3182,6 +4118,267 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             ) or "",
         )
 
+    def test_evidence_snapshot_round_trips_and_detects_current_byte_drift(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        packet = _no_go_packet()
+        _set_no_go_scan_coverage(packet, manifest)
+        audit = {
+            "claim_type": "no_go", "verdict": "audited_clean",
+            "chain_closes": True, "no_go_discipline": packet,
+        }
+        self.assertIsNone(m.validate_no_go_discipline(audit, evidence_manifest=manifest))
+        packet["evidence_snapshot"] = m.build_evidence_snapshot(packet, manifest)
+        snapshot_manifest = m.evidence_manifest_from_snapshot(packet)
+        self.assertIsNotNone(snapshot_manifest)
+        self.assertIsNone(m.validate_no_go_discipline(audit, evidence_manifest=snapshot_manifest))
+        self.assertIsNone(m.evidence_snapshot_current_error(packet, manifest))
+        changed = json.loads(json.dumps(manifest))
+        changed["docs/TEST_NO_GO.md"]["text"] += "\nchanged bytes"
+        self.assertIn(
+            "rendered content drifted",
+            m.evidence_snapshot_current_error(packet, changed) or "",
+        )
+        changed = json.loads(json.dumps(manifest))
+        cross_path = "audit-packet://cross-cycle-index/test_no_go"
+        changed[cross_path]["text"] = json.dumps({
+            "schema": "no_go_cross_cycle_index_v1", "claim_id": "test_no_go",
+            "candidates": [{"candidate_id": "new:cycle", "kind": "prior_audit_cycle"}],
+        })
+        self.assertIn(
+            "rendered content drifted",
+            m.evidence_snapshot_current_error(packet, changed) or "",
+        )
+        changed = json.loads(json.dumps(manifest))
+        cross_payload = json.loads(changed[cross_path]["text"])
+        cross_payload["search_scope"] = {"scanned_count": 9999}
+        changed[cross_path]["text"] = json.dumps(cross_payload)
+        self.assertIn(
+            "rendered content drifted",
+            m.evidence_snapshot_current_error(packet, changed) or "",
+        )
+
+    def test_snapshot_reauthenticates_authority_metadata_and_path_universe(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        manifest["docs/AUTH.md"] = {
+            "path": "docs/AUTH.md", "roles": ["authority"],
+            "text": "Retained authority text with a canonical boundary.",
+            "effective_status": "retained", "accepted_premise_type": None,
+        }
+        packet = _no_go_packet()
+        _set_no_go_scan_coverage(packet, manifest)
+        packet["evidence_snapshot"] = m.build_evidence_snapshot(packet, manifest)
+        changed = json.loads(json.dumps(manifest))
+        changed["docs/AUTH.md"]["effective_status"] = "audited_conditional"
+        self.assertIn(
+            "effective_status drifted",
+            m.evidence_snapshot_current_error(packet, changed) or "",
+        )
+        changed = json.loads(json.dumps(manifest))
+        changed["docs/NEW_AUTH.md"] = {
+            "path": "docs/NEW_AUTH.md", "roles": ["authority"],
+            "text": "new authority", "effective_status": "retained",
+            "accepted_premise_type": None,
+        }
+        self.assertIn(
+            "path universe changed",
+            m.evidence_snapshot_current_error(packet, changed) or "",
+        )
+
+    def test_directional_wall_collapse_removes_the_dependent_wall(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        packet = _no_go_packet()
+        check = packet["N2_wall_independence"]["pairwise_checks"][0]
+        check.update({"left_closes_right": True, "right_closes_left": False, "independent": False})
+        packet["N2_wall_independence"]["collapsed_wall_set"] = ["dynamics wall"]
+        audit = {"claim_type": "no_go", "verdict": "audited_clean", "chain_closes": True, "no_go_discipline": packet}
+        self.assertIn(
+            "retain exactly the walls not closed",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+        )
+        packet["N2_wall_independence"]["collapsed_wall_set"] = ["selector wall"]
+        self.assertIsNone(m.validate_no_go_discipline(audit, evidence_manifest=manifest))
+
+    def test_occurrence_scans_and_resolution_classes_fail_closed(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        manifest["docs/TEST_NO_GO.md"]["text"] += (
+            "\nWe assume a bridge context for this sector."
+            "\nWe assume a bridge context for this boundary."
+        )
+        packet = _no_go_packet()
+        _set_no_go_scan_coverage(packet, manifest)
+        assume_hits = [
+            hit for hit in packet["N3_hidden_wall_scan"]["hits"]
+            if hit["phrase"] == "we assume"
+        ]
+        self.assertEqual(len(assume_hits), 2)
+        self.assertEqual(len({hit["occurrence_group_id"] for hit in assume_hits}), 2)
+        audit = {"claim_type": "no_go", "verdict": "audited_clean", "chain_closes": True, "no_go_discipline": packet}
+        self.assertIsNone(m.validate_no_go_discipline(audit, evidence_manifest=manifest))
+        packet["N3_hidden_wall_scan"]["hits"].pop()
+        self.assertIn(
+            "exactly disposition orchestrator phrase scan",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+        )
+        packet = _no_go_packet()
+        _set_no_go_scan_coverage(packet, manifest)
+        packet["N5_rhetoric_audit"]["statements"][0]["tested_resolutions"] = [
+            "an arbitrary non-empty resolution that does not enumerate scales"
+        ] * 5
+        audit["no_go_discipline"] = packet
+        self.assertIn(
+            "lacks a substantive",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+        )
+
+    def test_n8_mechanism_is_bound_to_exact_candidate_record(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        candidate_id = "prior:previous_audit:0"
+        mechanism = "selector residual retired after a retained derivation"
+        cross_path = "audit-packet://cross-cycle-index/test_no_go"
+        manifest[cross_path]["text"] = json.dumps({
+            "schema": "no_go_cross_cycle_index_v1", "claim_id": "test_no_go",
+            "candidates": [{
+                "candidate_id": candidate_id, "kind": "prior_audit_cycle",
+                "mechanism": mechanism, "lifecycle_state": "retired",
+                "retired": True, "applicable": False,
+            }],
+        })
+        packet = _no_go_packet(cross_cycle_candidates=(candidate_id,))
+        packet["N8_cross_cycle_echo"]["echoes"][0]["mechanism"] = mechanism
+        packet["N8_cross_cycle_echo"]["echoes"][0]["disposition"] = (
+            f"The indexed mechanism {mechanism} is retired or inapplicable to the "
+            "current residual and therefore does not reopen this wall."
+        )
+        _set_no_go_scan_coverage(packet, manifest)
+        audit = {"claim_type": "no_go", "verdict": "audited_clean", "chain_closes": True, "no_go_discipline": packet}
+        self.assertIsNone(m.validate_no_go_discipline(audit, evidence_manifest=manifest))
+        packet["N8_cross_cycle_echo"]["echoes"][0]["mechanism"] = "invented unrelated mechanism"
+        packet["N8_cross_cycle_echo"]["echoes"][0]["disposition"] = (
+            "The invented unrelated mechanism is retired or inapplicable to the "
+            "current residual and therefore does not reopen this wall."
+        )
+        self.assertIn(
+            "not evidenced in its indexed candidate",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+        )
+
+    def test_n8_live_candidate_cannot_be_laundered_as_retired(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        candidate_id = "similar_negative_boundary:live"
+        mechanism = "live retained selector obstruction mechanism"
+        cross_path = "audit-packet://cross-cycle-index/test_no_go"
+        manifest[cross_path]["text"] = json.dumps({
+            "schema": "no_go_cross_cycle_index_v1", "claim_id": "test_no_go",
+            "candidates": [{
+                "candidate_id": candidate_id, "kind": "similar_negative_boundary",
+                "mechanism": mechanism, "lifecycle_state": "active",
+                "retired": False, "applicable": True,
+            }],
+        })
+        packet = _no_go_packet(cross_cycle_candidates=(candidate_id,))
+        echo = packet["N8_cross_cycle_echo"]["echoes"][0]
+        echo.update({
+            "mechanism": mechanism, "retired": True, "applicable": False,
+            "disposition": f"The {mechanism} is declared retired and inapplicable in this packet.",
+        })
+        _set_no_go_scan_coverage(packet, manifest)
+        audit = {"claim_type": "no_go", "verdict": "audited_clean", "chain_closes": True, "no_go_discipline": packet}
+        self.assertIn(
+            "retired contradicts",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+        )
+
+    def test_n8_unknown_lifecycle_remains_null_but_must_be_addressed(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        candidate_id = "repo_negative_scan:docs/UNKNOWN.md"
+        mechanism = "unclassified historical selector obstruction mechanism"
+        cross_path = "audit-packet://cross-cycle-index/test_no_go"
+        manifest[cross_path]["text"] = json.dumps({
+            "schema": "no_go_cross_cycle_index_v1", "claim_id": "test_no_go",
+            "candidates": [{
+                "candidate_id": candidate_id, "kind": "repo_negative_phrase_hit",
+                "mechanism": mechanism, "lifecycle_state": "unknown",
+                "retired": None, "applicable": None,
+            }],
+        })
+        packet = _no_go_packet(cross_cycle_candidates=(candidate_id,))
+        echo = packet["N8_cross_cycle_echo"]["echoes"][0]
+        echo.update({
+            "mechanism": mechanism, "retired": None, "applicable": None,
+            "addressed": True,
+            "disposition": (
+                f"The {mechanism} has unknown lifecycle, so this packet "
+                "addresses its mechanism without inventing retirement authority."
+            ),
+        })
+        _set_no_go_scan_coverage(packet, manifest)
+        audit = {"claim_type": "no_go", "verdict": "audited_clean", "chain_closes": True, "no_go_discipline": packet}
+        self.assertIsNone(m.validate_no_go_discipline(audit, evidence_manifest=manifest))
+        echo["retired"] = False
+        self.assertIn(
+            "preserve unknown retirement as null",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+        )
+
+    def test_n7_rejects_unaudited_authority_and_accepts_retained_byte_bound_authority(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        manifest["docs/AUTH.md"] = {
+            "path": "docs/AUTH.md", "roles": ["authority"],
+            "text": _no_go_resolution_text(), "effective_status": "unaudited",
+            "accepted_premise_type": None,
+            "full_content_sha256": "a" * 64, "full_phrase_groups": [],
+        }
+        packet = _no_go_packet()
+        _set_no_go_scan_coverage(packet, manifest)
+        packet["N7_steelman"].update({
+            "resolution_evidence_path": "docs/AUTH.md",
+            "resolution_evidence_locator": "Steelman resolution",
+        })
+        audit = {"claim_type": "no_go", "verdict": "audited_clean", "chain_closes": True, "no_go_discipline": packet}
+        self.assertIn(
+            "retained/accepted authority",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+        )
+        manifest["docs/AUTH.md"]["effective_status"] = "retained"
+        self.assertIsNone(m.validate_no_go_discipline(audit, evidence_manifest=manifest))
+
+    def test_malformed_nested_packet_values_return_errors_not_exceptions(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        mutations = (
+            lambda packet: packet.update({"status": []}),
+            lambda packet: packet["N3_hidden_wall_scan"]["hits"][0].update({"classification": []}),
+            lambda packet: packet["N6_partial_closure_scan"].update({"premise_classes_checked": [{"bad": "shape"}]}),
+        )
+        for mutate in mutations:
+            packet = _no_go_packet()
+            _set_no_go_scan_coverage(packet, manifest)
+            mutate(packet)
+            audit = {"claim_type": "no_go", "verdict": "audited_clean", "chain_closes": True, "no_go_discipline": packet}
+            with self.subTest(mutate=mutate):
+                self.assertIsInstance(m.validate_no_go_discipline(audit, evidence_manifest=manifest), str)
+
+    def test_fail_narrowing_cannot_reverse_logical_polarity(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        prior = "no route derives mass without selector"
+        narrowed = "route derives mass without selector"
+        packet = _no_go_packet(status="FAIL", route_count=3, prior_claim_scope=prior, claim_scope=narrowed)
+        _set_no_go_scan_coverage(packet, manifest)
+        audit = {"claim_type": "no_go", "verdict": "audited_conditional", "claim_scope": narrowed, "chain_closes": False, "no_go_discipline": packet}
+        self.assertIn(
+            "preserve logical polarity",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest, prior_claim_scope=prior) or "",
+        )
+
     def test_failed_gate_requires_applied_narrowing(self):
         m = _import("no_go_discipline_gate")
         packet = _no_go_packet(status="FAIL", route_count=3)
@@ -3192,6 +4389,13 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "chain_closes": False,
             "no_go_discipline": packet,
         }
+        self.assertIn(
+            "must equal the applied claim_scope",
+            m.validate_no_go_discipline(
+                audit, evidence_manifest=self._manifest()
+            ) or "",
+        )
+        packet["narrowed_claim_scope"] = "a different applied scope "
         self.assertIn(
             "must equal the applied claim_scope",
             m.validate_no_go_discipline(
@@ -3214,17 +4418,17 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             m.validate_no_go_discipline(
                 audit,
                 evidence_manifest=self._manifest(),
-                prior_claim_scope="a different old scope",
+                prior_claim_scope="the scoped obstruction different old scope",
             ) or "",
         )
-        packet["prior_claim_scope"] = "a different old scope"
+        packet["prior_claim_scope"] = "the scoped obstruction different old scope"
         packet["corrected_wall_set"] = ["invented wall"]
         self.assertIn(
             "must equal N2.collapsed_wall_set",
             m.validate_no_go_discipline(
                 audit,
                 evidence_manifest=self._manifest(),
-                prior_claim_scope="a different old scope",
+                prior_claim_scope="the scoped obstruction different old scope",
             ) or "",
         )
         packet["corrected_wall_set"] = ["selector wall", "dynamics wall"]
@@ -3234,7 +4438,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             m.validate_no_go_discipline(
                 audit,
                 evidence_manifest=self._manifest(),
-                prior_claim_scope="a different old scope",
+                prior_claim_scope="the scoped obstruction different old scope",
             ) or "",
         )
 
@@ -3248,7 +4452,11 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "chain_closes": False,
             "no_go_discipline": packet,
         }
-        self.assertIsNone(m.validate_no_go_discipline(non_clean))
+        self.assertIsNone(
+            m.validate_no_go_discipline(
+                non_clean, prior_claim_scope="the scoped unrestricted obstruction"
+            )
+        )
 
         clean = {**non_clean, "verdict": "audited_clean"}
         self.assertIn(
@@ -3445,6 +4653,40 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             )
         )
 
+    def test_runner_uses_latest_archived_scope_after_live_reset(self):
+        m = _import_codex_audit_runner()
+        row = {
+            "claim_scope": None,
+            "previous_audits": [
+                {"claim_scope": "older scope"},
+                {"claim_scope": "  latest archived bounded scope  "},
+            ],
+        }
+        self.assertEqual(
+            m.prior_claim_scope_for_row(row),
+            "  latest archived bounded scope  ",
+        )
+
+    def test_prompt_renders_prior_claim_scope_for_fail_narrowing(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            note = root / "docs" / "TARGET.md"
+            note.parent.mkdir(parents=True, exist_ok=True)
+            note.write_text("Exact source.\n", encoding="utf-8")
+            row = {
+                "claim_id": "target", "note_path": "docs/TARGET.md",
+                "previous_audits": [{"claim_scope": "archived unrestricted scope"}],
+                "deps": [],
+            }
+            prompt = m.render_prompt(
+                row, {"target": row}, "prior={{PRIOR_CLAIM_SCOPE}}", 1,
+                skip_runner_stdout=True,
+            )
+        self.assertIn("prior=archived unrestricted scope", prompt)
+        self.assertNotIn("{{PRIOR_CLAIM_SCOPE}}", prompt)
+
     def test_prompt_preserves_raw_placeholders_and_types_every_premise(self):
         m = _import_codex_audit_runner()
         with tempfile.TemporaryDirectory() as tmp:
@@ -3513,22 +4755,27 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             m.RUNNER_SOURCE_CHAR_LIMIT = 120
             note_path = root / "docs" / "target.md"
             runner_path = root / "scripts" / "large_runner.py"
+            helper_path = root / "scripts" / "TEST_NO_GO_RESOLUTION.py"
             note_path.parent.mkdir(parents=True, exist_ok=True)
             runner_path.parent.mkdir(parents=True, exist_ok=True)
-            note_path.write_text("# No-go obstruction\n", encoding="utf-8")
+            note_path.write_text(_no_go_evidence_text(), encoding="utf-8")
             hidden = "HIDDEN_MIDDLE_LOCATOR_NOT_RENDERED"
             runner_path.write_text(
                 "VISIBLE_RUNNER_HEAD_LOCATOR\n"
                 + ("x" * 180)
                 + hidden
                 + ("y" * 180)
-                + "\nVISIBLE_RUNNER_TAIL_LOCATOR",
+                + "\nVISIBLE_RUNNER_TAIL_LOCATOR\n"
+                + _no_go_resolution_text()
+                + "\nSteelman resolution",
                 encoding="utf-8",
             )
+            helper_path.write_text(_no_go_resolution_text(), encoding="utf-8")
             row = {
                 "claim_id": "target",
                 "note_path": "docs/target.md",
                 "runner_path": "scripts/large_runner.py",
+                "helper_runner_paths": ["scripts/TEST_NO_GO_RESOLUTION.py"],
                 "claim_type": "no_go",
                 "deps": [],
             }
@@ -3541,7 +4788,13 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             )
             manifest: dict[str, dict] = {}
             with mock.patch.object(
-                m, "get_runner_stdout", return_value="VISIBLE_STDOUT_ONLY_LOCATOR"
+                m,
+                "get_runner_stdout",
+                return_value=_no_go_evidence_text("VISIBLE_STDOUT_ONLY_LOCATOR"),
+            ), mock.patch.object(
+                m.rc,
+                "cache_path_for",
+                side_effect=lambda path: root / "logs" / "runner-cache" / f"{Path(path).stem}.txt",
             ):
                 m.render_prompt(
                     row,
@@ -3563,9 +4816,11 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "no_go_discipline": _no_go_packet(
                     evidence_path="scripts/large_runner.py",
                     evidence_locator=hidden,
+                    source_path="docs/target.md",
                     claim_id="target",
                 ),
             }
+            _set_no_go_scan_coverage(audit["no_go_discipline"], manifest)
             self.assertIn(
                 "is not present",
                 m.no_go_discipline_gate.validate_no_go_discipline(
@@ -3575,12 +4830,153 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             audit["no_go_discipline"] = _no_go_packet(
                 evidence_path=stdout_path,
                 evidence_locator="VISIBLE_STDOUT_ONLY_LOCATOR",
+                source_path="docs/target.md",
                 claim_id="target",
             )
+            _set_no_go_scan_coverage(audit["no_go_discipline"], manifest)
             self.assertIsNone(
                 m.no_go_discipline_gate.validate_no_go_discipline(
                     audit, evidence_manifest=manifest
                 )
+            )
+
+    def test_source_scan_groups_authenticate_full_bytes_before_display_clipping(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            m.NOTE_BODY_CHAR_LIMIT = 160
+            note_path = root / "docs" / "target.md"
+            runner_path = root / "scripts" / "runner.py"
+            note_path.parent.mkdir(parents=True, exist_ok=True)
+            runner_path.parent.mkdir(parents=True, exist_ok=True)
+            full_note = (
+                "No derivation closes the stated boundary.\n"
+                + ("x" * 500)
+                + "\nWe assume the hidden bridge cannot supply a selector.\n"
+                + ("y" * 500)
+                + "\nThe bounded negative statement ends here.\n"
+            )
+            note_path.write_text(full_note, encoding="utf-8")
+            runner_path.write_text("print('positive check')\n", encoding="utf-8")
+            row = {
+                "claim_id": "target", "note_path": "docs/target.md",
+                "runner_path": "scripts/runner.py", "claim_type": "no_go", "deps": [],
+            }
+            manifest: dict[str, dict] = {}
+            with mock.patch.object(m, "get_runner_stdout", return_value="positive check\n"):
+                m.render_prompt(
+                    row, {"target": row}, "{{NO_GO_EVIDENCE_MANIFEST}}", 1,
+                    use_cache=False, evidence_manifest_out=manifest,
+                )
+            entry = manifest["docs/target.md"]
+            self.assertNotIn("hidden bridge", entry["text"])
+            self.assertEqual(
+                entry["full_content_sha256"],
+                __import__("hashlib").sha256(full_note.encode("utf-8")).hexdigest(),
+            )
+            groups = {group["phrase"]: group for group in entry["full_phrase_groups"]}
+            self.assertEqual(groups["we assume"]["occurrence_count"], 1)
+            self.assertEqual(groups["cannot"]["occurrence_count"], 1)
+
+    def test_raw_bytes_and_clipped_runner_helpers_reauthenticate(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            m.NOTE_BODY_CHAR_LIMIT = 80
+            m.RUNNER_SOURCE_CHAR_LIMIT = 80
+            note = root / "docs" / "target.md"
+            runner = root / "scripts" / "runner.py"
+            helper = root / "scripts" / "helper.py"
+            note.parent.mkdir(parents=True, exist_ok=True)
+            runner.parent.mkdir(parents=True, exist_ok=True)
+            note_bytes = b"No derivation closes.\r\n" + (b"x" * 300)
+            runner_bytes = b"print('runner')\r\n" + (b"r" * 300)
+            helper_bytes = b"print('helper')\r\n" + (b"h" * 300)
+            note.write_bytes(note_bytes)
+            runner.write_bytes(runner_bytes)
+            helper.write_bytes(helper_bytes)
+            row = {
+                "claim_id": "target", "note_path": "docs/target.md",
+                "runner_path": "scripts/runner.py",
+                "helper_runner_paths": ["scripts/helper.py"],
+                "claim_type": "no_go", "deps": [],
+            }
+            manifest: dict[str, dict] = {}
+            with mock.patch.object(
+                m, "get_runner_stdout", return_value="runner witness"
+            ), mock.patch.object(
+                m.rc, "cache_path_for",
+                side_effect=lambda path: root / "logs" / "runner-cache" / f"{Path(path).stem}.txt",
+            ):
+                m.render_prompt(
+                    row, {"target": row}, "{{NO_GO_EVIDENCE_MANIFEST}}", 1,
+                    use_cache=False, evidence_manifest_out=manifest,
+                )
+            import hashlib
+            self.assertEqual(manifest["docs/target.md"]["full_content_sha256"], hashlib.sha256(note_bytes).hexdigest())
+            self.assertEqual(manifest["scripts/runner.py"]["full_content_sha256"], hashlib.sha256(runner_bytes).hexdigest())
+            self.assertEqual(manifest["scripts/helper.py"]["full_content_sha256"], hashlib.sha256(helper_bytes).hexdigest())
+            packet = _no_go_packet(
+                evidence_path="audit-packet://runner-stdout/target",
+                source_path="docs/target.md", claim_id="target",
+            )
+            _set_no_go_scan_coverage(packet, manifest)
+            packet["evidence_snapshot"] = m.no_go_discipline_gate.build_evidence_snapshot(packet, manifest)
+            current = m.no_go_discipline_gate.build_evidence_manifest(row, {"target": row}, root)
+            self.assertIsNone(
+                m.no_go_discipline_gate.evidence_snapshot_current_error(packet, current)
+            )
+
+    def test_verdict_parser_rejects_non_object_json(self):
+        m = _import_codex_audit_runner()
+        self.assertIsNone(m.parse_verdict_json("42"))
+        self.assertIsNone(m.parse_verdict_json('["not", "an", "object"]'))
+        self.assertIn("JSON object", m.validate_verdict(42, "target") or "")
+
+    def test_cache_eligible_stdout_cannot_certify_output_triggered_no_go(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            note_path = root / "docs" / "positive.md"
+            runner_path = root / "scripts" / "runner.py"
+            note_path.parent.mkdir(parents=True, exist_ok=True)
+            runner_path.parent.mkdir(parents=True, exist_ok=True)
+            note_path.write_text("An exact positive identity.\n", encoding="utf-8")
+            runner_path.write_text("print('runner witness')\n", encoding="utf-8")
+            row = {
+                "claim_id": "positive", "note_path": "docs/positive.md",
+                "runner_path": "scripts/runner.py", "claim_type": "positive_theorem",
+                "deps": [],
+            }
+            manifest: dict[str, dict] = {}
+            with mock.patch.object(m, "get_runner_stdout", return_value=_no_go_evidence_text()):
+                m.render_prompt(
+                    row, {"positive": row}, "{{NO_GO_EVIDENCE_MANIFEST}}", 1,
+                    use_cache=True, evidence_manifest_out=manifest,
+                )
+            stdout_path = "audit-packet://runner-stdout/positive"
+            self.assertEqual(
+                manifest[stdout_path]["roles"], ["runner_stdout_cache_eligible"]
+            )
+            packet = _no_go_packet(
+                evidence_path=stdout_path,
+                source_path="docs/positive.md",
+                claim_id="positive",
+            )
+            _set_no_go_scan_coverage(packet, manifest)
+            audit = {
+                "claim_type": "no_go", "verdict": "audited_clean",
+                "claim_scope": "the scoped obstruction", "chain_closes": True,
+                "no_go_discipline": packet,
+            }
+            self.assertIn(
+                "live runner_stdout",
+                m.no_go_discipline_gate.validate_no_go_discipline(
+                    audit, evidence_manifest=manifest
+                ) or "",
             )
 
     def test_invalidation_archives_and_clears_packet(self):
@@ -3609,6 +5005,9 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "claim_id": "legacy_no_go",
                 "note_path": "docs/LEGACY_NO_GO.md",
                 "audit_status": "audited_clean",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
                 "claim_type": "no_go",
                 "claim_scope": "legacy obstruction",
                 "chain_closes": True,
@@ -3645,6 +5044,9 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         first_audit = {
             "verdict": "audited_clean",
             "claim_type": "no_go",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
             "no_go_discipline": {"required": True, "status": "FAIL"},
         }
         row = {
@@ -3675,6 +5077,54 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "cross_confirmation_first_audit_no_go_packet_invalid:"
             )
         )
+
+    def test_clean_no_go_packet_without_authenticated_snapshot_is_invalidated(self):
+        m = _import("invalidate_stale_audits")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            note = root / "docs" / "LEGACY_NO_GO.md"
+            runner = root / "scripts" / "LEGACY_NO_GO.py"
+            note.parent.mkdir(parents=True, exist_ok=True)
+            runner.parent.mkdir(parents=True, exist_ok=True)
+            note.write_text(_no_go_evidence_text(), encoding="utf-8")
+            runner.write_text(_no_go_evidence_text(), encoding="utf-8")
+            row = {
+                "claim_id": "legacy_no_go", "note_path": "docs/LEGACY_NO_GO.md",
+                "runner_path": "scripts/LEGACY_NO_GO.py", "deps": [],
+                "audit_status": "audited_clean", "claim_type": "no_go",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
+                "claim_scope": "legacy obstruction", "chain_closes": True,
+                "no_go_discipline": _no_go_packet(
+                    evidence_path="scripts/LEGACY_NO_GO.py",
+                    source_path="docs/LEGACY_NO_GO.md",
+                    claim_id="legacy_no_go",
+                ),
+            }
+            self.assertEqual(
+                m.detect_invalidation(row, {"legacy_no_go": row}),
+                "no_go_discipline_packet_invalid",
+            )
+
+    def test_clean_authority_without_exact_model_provenance_is_invalidated(self):
+        m = _import("invalidate_stale_audits")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            note = root / "docs" / "POSITIVE.md"
+            note.parent.mkdir(parents=True, exist_ok=True)
+            note.write_text("An exact positive identity.\n", encoding="utf-8")
+            row = {
+                "claim_id": "positive", "note_path": "docs/POSITIVE.md",
+                "audit_status": "audited_clean", "claim_type": "positive_theorem",
+                "auditor": "legacy", "auditor_family": "codex-gpt-5.6",
+            }
+            self.assertEqual(
+                m.detect_invalidation(row, {"positive": row}),
+                "auditor_provenance_incomplete",
+            )
 
 
 class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
@@ -3715,6 +5165,28 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
 
         self.assertEqual(model, "gpt-5.5")
         self.assertIn("models_cache.json", source)
+
+    def test_resolve_model_is_pinned_to_gpt_5_6_sol(self):
+        m = _import_codex_audit_runner()
+        with mock.patch.object(
+            m, "best_cached_codex_model", return_value=("gpt-5.5", "test cache")
+        ), mock.patch.dict(
+            os.environ,
+            {"CODEX_AUDIT_MODEL": "gpt-5.5", "CODEX_AUDIT_FORCE_MODEL": "gpt-6"},
+        ):
+            model, family, source, warnings = m.resolve_audit_model()
+        self.assertEqual((model, family, source), (
+            "gpt-5.6-sol", "codex-gpt-5.6", "pinned-exact-policy"
+        ))
+        self.assertEqual(len(warnings), 3)
+
+    def test_no_propagate_is_rejected_for_push_capable_mode(self):
+        m = _import_codex_audit_runner()
+        with mock.patch.object(
+            sys, "argv", ["codex_audit_runner.py", "--dry-run", "--no-propagate"]
+        ), self.assertRaises(SystemExit) as caught:
+            m.main()
+        self.assertEqual(caught.exception.code, 2)
 
 
 class CodexAuditRunnerReauditCandidatesTest(unittest.TestCase):
@@ -3910,13 +5382,15 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
                         independence="cross_family", cc_status=None,
                         invalidation_reason="criticality_increased:medium->critical",
                         claim_type="positive_theorem",
-                        auditor_family="codex-gpt-5.5",
+                        auditor_family="codex-gpt-5.6",
                         notes_for_re_audit_if_any=None):
         archived = {
             "audit_status": audit_status,
             "independence": independence,
             "auditor": "codex-test",
             "auditor_family": auditor_family,
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
             "claim_type": claim_type,
             "claim_scope": "test scope",
             "load_bearing_step_class": "A",
@@ -3929,7 +5403,12 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             archived["notes_for_re_audit_if_any"] = notes_for_re_audit_if_any
         if cc_status is not None:
             archived["cross_confirmation"] = {
-                "first_audit": {"verdict": "audited_clean"},
+                "first_audit": {
+                    "verdict": "audited_clean",
+                    "auditor_family": "codex-gpt-5.6",
+                    "auditor_model": "gpt-5.6-sol",
+                    "auditor_reasoning_effort": "xhigh",
+                },
                 "second_audit": None,
                 "status": cc_status,
             }
@@ -3989,11 +5468,28 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             "soft_reset",
         )
 
+    def test_clean_codex_restore_requires_exact_model_and_xhigh_provenance(self):
+        m = self._import_and_patch()
+        archived = self._archived_audit()
+        self.assertTrue(m.archived_audit_is_lint_compatible(archived))
+        for field in ("auditor_model", "auditor_reasoning_effort"):
+            missing = dict(archived)
+            missing.pop(field)
+            with self.subTest(field=field):
+                self.assertFalse(m.archived_audit_is_lint_compatible(missing))
+        missing_family = dict(archived)
+        missing_family["auditor_family"] = None
+        self.assertFalse(m.archived_audit_is_lint_compatible(missing_family))
+
     def test_restore_round_trips_and_validates_no_go_packet(self):
         m = self._import_and_patch()
         cid = "restore_no_go"
         note_path = "docs/RESTORE_NO_GO.md"
-        self.fx.write_note(note_path, "# No-go obstruction\n")
+        self.fx.write_note(note_path, _no_go_evidence_text())
+        runner_path = "scripts/RESTORE_NO_GO.py"
+        self.fx.write_runner(runner_path, _no_go_evidence_text())
+        resolution_path = "scripts/TEST_NO_GO_RESOLUTION.py"
+        self.fx.write_runner(resolution_path, _no_go_resolution_text())
         archived = self._archived_audit(
             claim_type="no_go",
             invalidation_reason="criticality_increased:leaf->medium",
@@ -4001,12 +5497,26 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         archived["claim_scope"] = "the scoped obstruction"
         archived["chain_closes"] = True
         archived["no_go_discipline"] = _no_go_packet(
-            evidence_path=note_path,
+            evidence_path=runner_path,
+            source_path=note_path,
             claim_id=cid,
         )
         row = self._seed_with_archived(cid, archived)
         row["note_path"] = note_path
+        row["runner_path"] = runner_path
+        row["helper_runner_paths"] = [resolution_path]
         rows = {cid: row}
+        manifest_row = dict(row)
+        manifest_row["previous_audits"] = []
+        manifest = m.no_go_discipline_gate.build_evidence_manifest(
+            manifest_row, {cid: manifest_row}, self.tmp_root
+        )
+        _set_no_go_scan_coverage(archived["no_go_discipline"], manifest)
+        archived["no_go_discipline"]["evidence_snapshot"] = (
+            m.no_go_discipline_gate.build_evidence_snapshot(
+                archived["no_go_discipline"], manifest
+            )
+        )
 
         restored = m.restore_audit_from_previous(row, rows)
         self.assertIsNotNone(restored)
@@ -4038,6 +5548,59 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         self.assertIsNone(
             m.restore_audit_from_previous(row, {cid: row})
         )
+
+    def test_selects_only_packet_missing_rows_whose_trigger_no_longer_fires(self):
+        m = self._import_and_patch()
+        restored_id = "positive_identity"
+        live_id = "live_negative_boundary"
+        self.fx.write_note(
+            f"docs/{restored_id.upper()}.md",
+            "This is an exact positive theorem, not a no-go.\n",
+        )
+        self.fx.write_note(
+            f"docs/{live_id.upper()}.md",
+            "No derivation of the sign from the four axioms.\n",
+        )
+        archived = self._archived_audit(
+            invalidation_reason="no_go_discipline_packet_missing",
+        )
+        rows = {
+            restored_id: self._seed_with_archived(restored_id, dict(archived)),
+            live_id: self._seed_with_archived(live_id, dict(archived)),
+        }
+        selected = m.select_false_positive_no_go_candidates(rows)
+        self.assertEqual(selected, {restored_id: "audited_clean"})
+
+    def test_restore_refuses_packetless_clean_cross_confirmation_seat(self):
+        m = self._import_and_patch()
+        cid = "packetless_cross_no_go"
+        note_path = "docs/PACKETLESS_CROSS_NO_GO.md"
+        runner_path = "scripts/PACKETLESS_CROSS_NO_GO.py"
+        self.fx.write_note(note_path, _no_go_evidence_text())
+        self.fx.write_runner(runner_path, _no_go_evidence_text())
+        archived = self._archived_audit(
+            claim_type="no_go",
+            invalidation_reason="criticality_increased:leaf->medium",
+        )
+        archived.update({
+            "claim_scope": "the scoped obstruction",
+            "chain_closes": True,
+            "cross_confirmation": {
+                "status": "awaiting_second",
+                "first_audit": {
+                    "verdict": "audited_clean", "claim_type": "no_go",
+                    "claim_scope": "the scoped obstruction",
+                },
+                "second_audit": None,
+            },
+        })
+        packet = _no_go_packet(evidence_path=runner_path, source_path=note_path, claim_id=cid)
+        archived["no_go_discipline"] = packet
+        row = self._seed_with_archived(cid, archived)
+        row.update({"note_path": note_path, "runner_path": runner_path})
+        manifest = m.no_go_discipline_gate.build_evidence_manifest(row, {cid: row}, self.tmp_root)
+        _set_no_go_scan_coverage(packet, manifest)
+        self.assertIsNone(m.restore_audit_from_previous(row, {cid: row}))
 
     def test_restore_refuses_packetless_clean_output_negative_authority(self):
         m = self._import_and_patch()

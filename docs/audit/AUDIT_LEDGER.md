@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 357 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2806 |
+| unaudited | 2805 |
 | audit_in_progress | 21 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 50 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 25 |
 | `audited_clean` | 449 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 50 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 15 |
-| `unaudited` | 3156 |
+| `unaudited` | 3155 |
 
 | claim_type | count |
 |---|---:|
@@ -632,6 +632,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `tick_admissibility_realization_bridge_clause_to_predicate_narrow_theorem_note_2026-07-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-current | A | - |
@@ -6889,6 +6890,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Given the stated off-diagonal anti-Hermitian block form M_KS=[[0,K],[-K†,0]] with equal ε-sublattice dimensions, the SVD of K reduces γ₅M to independent 2x2 blocks. The determinant sign from γ₅ is explicitly counted and cancels, leaving a strictly positive product because m>0 and σ_i²≥0.
 - **rationale:** The proof is a genuine closed-form algebraic determinant factorization over the stated staggered block decomposition, not a renaming or numerical fit. The runner source actually constructs finite canonical staggered SU(3) operators and recomputes the block structure, γ₅-Hermiticity, sign reconciliation, and positivity scan; it does not hard-code the contested determinant value or import an opaque helper. The finite runner is only supporting evidence; the audit verdict rests on the exact SVD/block determinant argument.
 - **auditor confidence:** high
+
+### `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11`
+
+- **Note:** [`STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md`](../../docs/STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional on the explicitly supplied free one-component Kogut-Susskind action and canonical phases, exact blocking gives the displayed 16-component reduced operator, a Cl_4(C) representation, and four Dirac-spin taste modules; no physical-carrier identification is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00061-staggered_os0_supplied_actio`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The Clifford relations and character (16,0,...,0), together with Cl_4(C)=M_4(C), imply that the 16-dimensional blocked carrier is four copies of the unique four-dimensional irreducible module.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional algebra closes on the supplied action. The unrestricted framework chain does not close because the packet neither derives that action from the framework baseline nor registers it as an accepted premise.
+- **rationale:** The runner genuinely constructs the blocked matrices, verifies the rephasing, Clifford relations, word rank, character, inverse identity, and singular boundary rather than merely printing expected results. These are class-A exact checks on the action supplied inside the claim, not a class-C derivation of that action from the framework baseline. The module-multiplicity conclusion is sound on that premise, but the explicit action premise triggers the conditional verdict under the rubric.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16`
 

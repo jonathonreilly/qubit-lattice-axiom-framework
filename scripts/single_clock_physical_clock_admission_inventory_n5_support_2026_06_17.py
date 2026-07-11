@@ -132,7 +132,10 @@ def main() -> int:
     assert_contains(NOTE, "MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE")
     assert_contains(NOTE, "Does not mathematically exclude independent commuting transfer factors")
     assert_contains(NOTE, "Does not add an axiom")
-    assert_contains(NOTE, "**Claim boundary:** source-inventory support")
+    assert_contains(NOTE, "**Claim boundary:** dated source-inventory metadata")
+    assert_contains(NOTE, "**Claim type:** meta", "inventory is metadata, not a theorem")
+    assert_contains(NOTE, "**Type:** meta", "canonical source type is meta")
+    assert_contains(NOTE, "This is a metadata inventory, not a negative physics claim")
     assert_contains(NOTE, "No second physical-clock transfer is currently admitted.")
     assert_contains(NOTE, MANIFEST_HEADER, "note pins the dated admission manifest")
     assert_contains(NOTE, "## Repair Note", "note records the 2026-07-10 repair")
@@ -283,8 +286,8 @@ def main() -> int:
     counterfactual_is_sole = sum(counterfactual.values()) == 1
     check(sum(counterfactual.values()) == 2 and not counterfactual_is_sole,
           "counterfactual comparator admission visibly breaks sole admission")
-    check("not a theorem over all positive operators" in read(NOTE),
-          "note states why the support is source-inventory, not algebraic exclusion")
+    check("This is a metadata inventory, not a negative physics claim" in read(NOTE),
+          "note states why the inventory is not an algebraic exclusion")
 
     passed = sum(1 for c in checks if c.ok)
     failed = sum(1 for c in checks if not c.ok)

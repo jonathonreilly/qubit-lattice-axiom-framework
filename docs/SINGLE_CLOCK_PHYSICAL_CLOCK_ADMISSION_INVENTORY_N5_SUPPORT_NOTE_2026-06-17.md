@@ -1,13 +1,13 @@
 # Single-Clock Physical-Clock Admission Inventory N5 Support
 
 **Date:** 2026-06-17
-**Claim type:** bounded_theorem
-**Type:** exact source-inventory support / N5 physical-clock-admission
-boundary
-**Claim boundary:** source-inventory support for the current source-packet
-statement that no independent commuting transfer factor is **admitted as a
-second physical clock**; not a mathematical exclusion of all commuting
-positive factor transfers.
+**Claim type:** meta
+**Type:** meta
+**Claim boundary:** dated source-inventory metadata for the current
+single-clock packet. The 2026-07-10 manifest designates only
+`(T_hat^2, 2 a_tau)` as its physical-clock transfer/spacing pair. This is not
+a uniqueness theorem, a physics no-go, or a mathematical exclusion of other
+commuting positive factor transfers.
 **Primary runner:**
 [`scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py`](../scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py)
 with cached output
@@ -135,7 +135,7 @@ No second physical-clock transfer is currently admitted.
 
 The Lattice axiom supplies the `Z^3` site set and finite-range locality notion,
 but no dynamics, boundary condition, metric scale, lattice spacing, causal
-cone, or physical unit conversion. The Quantum axiom supplies the one-qubit
+cone, or physical unit conversion. The Qubit axiom supplies the one-qubit
 local algebra at each site, but no dynamics or physical-observable bridge. The
 Record axiom supplies durable realized-outcome readout and finite additivity,
 but no time metric, dynamics, production process, or physical persistence
@@ -196,31 +196,15 @@ that supplies one of the following:
 Until then, factor transfers remain mathematical comparators, not admitted
 physical clocks.
 
-## No-Go Discipline
+## Source-Inventory Scope
 
-- **N1: route quantified.** This is a source-inventory theorem about admitted
-  physical clocks, not a theorem over all positive operators.
-- **N2: wall independence.** This supports the admission half of N5 only. It
-  does not derive the blocked time step N2 or the axis/transfer-construction
-  selector N4.
-- **N3: hidden-wall scan.** The definition of physical-clock admission is
-  explicit and checked by source anchors; arbitrary local transfers are not
-  silently promoted to clocks.
-- **N4: residual matching.** The matched residual is the phrase "admitted as a
-  second physical clock." The stronger phrase "no independent commuting
-  transfer factor exists" is not claimed.
-- **N5: rhetoric audit.** "No second physical clock is admitted" means the
-  current source packet contains no such authority. It does not forbid future
-  source additions.
-- **N6: partial closure path.** A future source can still close stronger N5 by
-  irreducibility, physical-clock derivation, or gauge/redundancy.
-- **N7: steelman.** A hostile reviewer can point out that a source inventory is
-  weaker than a physical uniqueness theorem. Correct: this support is enough
-  only for the admission wording and does not claim Nature-grade uniqueness of
-  time.
-- **N8: cross-cycle echo.** This is consistent with the post-record clock/rate
-  interface and finite Stone scope boundary: supplied clocks can define rates;
-  unadmitted operators do not become clocks by algebra alone.
+This is a metadata inventory, not a negative physics claim. Its finite scope is
+exactly the six `PACKET-SOURCES` entries and five candidates in the dated
+manifest. The manifest designates only `(T_hat^2, 2 a_tau)` as the packet's
+physical-clock transfer/spacing pair. It does not establish that no other
+clock can exist, that no future source can designate another clock, or that
+the minimal framework uniquely selects this pair. Consequently no no-go or
+Nature-grade uniqueness status follows from this inventory.
 
 ## Boundaries
 
@@ -240,7 +224,7 @@ python3 scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_
 Expected summary:
 
 ```text
-SUMMARY: PASS=57 FAIL=0
+SUMMARY: PASS=60 FAIL=0
 ADMITTED_PHYSICAL_CLOCK_TRANSFERS=1
 B_AXIS_DERIVED=FALSE
 MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE

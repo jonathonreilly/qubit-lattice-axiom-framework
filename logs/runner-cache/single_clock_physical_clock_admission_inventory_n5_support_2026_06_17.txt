@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py
-runner_sha256: 8a9934653bae326fda6fc51f76403a15dca706e98fc84d5ee3e03099202ffa15
+runner_sha256: fb0190a6ae6eaea117e3104ce5ef9f8a9059b2483f5cd16970e47700f16cb27c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 single-clock physical-clock admission inventory N5 support
@@ -12,7 +12,10 @@ PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE'
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'Does not mathematically exclude independent commuting transfer factors'
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'Does not add an axiom'
-PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains '**Claim boundary:** source-inventory support'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains '**Claim boundary:** dated source-inventory metadata'
+PASS: inventory is metadata, not a theorem
+PASS: canonical source type is meta
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'This is a metadata inventory, not a negative physics claim'
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'No second physical-clock transfer is currently admitted.'
 PASS: note pins the dated admission manifest
 PASS: note records the 2026-07-10 repair
@@ -64,9 +67,9 @@ PASS: mathematical comparator transfers commute -- resid=0.00e+00
 PASS: factor comparator tangent space is two-dimensional -- rank=2
 PASS: two positive factor transfers exist as mathematical comparators
 PASS: counterfactual comparator admission visibly breaks sole admission
-PASS: note states why the support is source-inventory, not algebraic exclusion
+PASS: note states why the inventory is not an algebraic exclusion
 
-SUMMARY: PASS=57 FAIL=0
+SUMMARY: PASS=60 FAIL=0
 COMPUTED_ADMITTED_SET={(T_hat^2, 2 a_tau)}
 ADMITTED_PHYSICAL_CLOCK_TRANSFERS=1
 B_AXIS_DERIVED=FALSE

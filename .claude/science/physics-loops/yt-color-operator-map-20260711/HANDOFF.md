@@ -21,5 +21,11 @@ Review-loop iteration 1 passed after five narrow fixes. Strict audit lint had
 zero errors, the target was ready in the validation queue, and generated audit
 authority files were stripped.
 
-Next exact action: commit and push this coherent block, open one unmerged
-review PR, and request independent re-audit of the source row after landing.
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5196
+
+The PR is open, non-draft, mergeable, and intentionally unmerged. The remote
+`audit_pipeline` check was still pending at the final checkpoint; all local
+equivalent validation stages passed.
+
+Next exact action: review PR 5196; after landing, run the independent audit
+lane on `yt_color_projection_correction_note`.

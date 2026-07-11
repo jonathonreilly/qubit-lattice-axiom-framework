@@ -42,3 +42,14 @@
   them as proof witnesses; the explicit model and conservative expansions
   independently prove the sibling theorem.
 - Code/runner, physics/import/Nature, N1-N8, labeling, and governance all pass.
+
+## Audit compatibility validation
+
+- Full 16-stage pipeline completed in a disposable worktree at `c518d8fc4`.
+- Strict lint: 3747 rows checked, 0 errors (pre-existing warnings/notices only).
+- Sibling row: `no_go`, `unaudited`, dependency `[minimal_axioms]`, leaf,
+  zero inbound edges, queue `ready=true`.
+- Original row: still `bounded_theorem` with the original runner and two
+  original dependencies.
+- Generated audit/queue/effective-status changes were discarded with the
+  disposable worktree and are absent from this branch.

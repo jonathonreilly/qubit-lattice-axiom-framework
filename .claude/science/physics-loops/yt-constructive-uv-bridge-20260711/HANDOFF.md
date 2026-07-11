@@ -19,10 +19,17 @@ and corrected deviation/span wording.
 Lock mode is degraded but isolated: the repo-wide lock path is inaccessible;
 this dedicated worktree uses a branch-local `/tmp` supervisor lock.
 
+Audit compatibility passed in a disposable worktree: the full pipeline and
+strict lint returned zero errors. The new sibling seeds as an unaudited
+`no_go` leaf with only `minimal_axioms` as dependency and is ready for
+independent audit. The original row remains a bounded theorem. No generated
+audit authority surface is present on this branch.
+
 ## Next exact action
 
-Run the audit pipeline and strict lint in a disposable validation worktree,
-then commit/push this block and open one unmerged review PR.
+After the review PR is open, the exact next science action is an independent
+audit of the sibling no-go. Do not use a future negative status as a positive
+dependency and do not interpret it as a derivation of `0.9176`.
 
 ## Proposed later weaving
 

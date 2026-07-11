@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py
-runner_sha256: 000e36dbc87c43c18890fb9a4f8342990cc2b467adcb0dca36109f6b94e4f650
+runner_sha256: 80e4e1381a3173bafb0713dc977aa6a94dc19560a47cae8d7a0dff2c5b47364d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.17
+elapsed_sec: 1.95
 status: ok
 ----- stdout -----
 theta G1 defect-closure current-surface no-go verifier
@@ -215,12 +215,23 @@ I. note discipline and controlled links
 [PASS] forbidden overclaim absent: we create an admission registry
 [PASS] forbidden overclaim absent: audit status is upgraded
 [PASS] forbidden overclaim absent: effective status is upgraded
+[PASS] No-Go Discipline N1 present
+[PASS] No-Go Discipline N2 present
+[PASS] No-Go Discipline N3 present
+[PASS] No-Go Discipline N4 present
+[PASS] No-Go Discipline N5 present
+[PASS] No-Go Discipline N6 present
+[PASS] No-Go Discipline N7 present
+[PASS] No-Go Discipline N8 present
+[PASS] route markers are explicit
+[PASS] mass-side obligation is explicitly non-dependent
 [PASS] markdown link inventory is controlled
+[PASS] mass-side obligation is not a markdown dependency
 [PASS] note line count is bounded
 [PASS] verification block states fail-zero threshold
 
 ========================================================================================
-TOTAL: PASS=175 FAIL=0
+TOTAL: PASS=186 FAIL=0
 ========================================================================================
 
 ----- stderr -----

@@ -37,12 +37,15 @@ CAPSTONE CLAIM (narrow, bounded):
   PDG/fitted/beta=6 inputs.
 """
 from __future__ import annotations
+from pathlib import Path
 import numpy as np
 import sympy as sp
 
 np.set_printoptions(precision=6, suppress=True)
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_TEXT = (ROOT / "docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md").read_text(encoding="utf-8")
 
 
 def chk(name, cond, d=""):
@@ -182,18 +185,24 @@ print("    P1 (additivity)        <- Record axiom (minimal_axioms)")
 print("    P2 (phase-blindness)   <- ELIMINATED on consumed sector by positivity (this runner, (1)-(4))")
 print("    (M) amplitude=det(D+J) <- Berezin forcing bridge (retained_bounded)")
 print("    physical identification<- AC_phi_lambda staggered-Dirac realization open gate")
-chk("no separate unregistered P2 residual remains on the consumed sector", True,
+chk("no separate unregistered P2 residual remains on the consumed sector",
+    all(g > 0 for g in args) and "no separate, unregistered P2" in NOTE_TEXT,
     "phase-blind/phase-sensitive candidates coincide on R_{>0} => P2 imposes nothing")
-chk("the sole remaining residual is the registered AC_phi_lambda determinant identification", True,
+chk("the sole remaining residual is the open AC_phi_lambda determinant identification",
+    "physical determinant identification" in NOTE_TEXT and "open gate" in NOTE_TEXT,
     "=> conditional re-audit target; status set only by audit lane")
 
 # ===========================================================================
 # scope / honesty
 # ===========================================================================
 print("\n=== scope / honesty flags ===")
-chk("OFF the consumed sector P2 is genuinely non-trivial (handled by prior sector-resolution)", True,
+chk("OFF the consumed sector P2 is genuinely non-trivial (handled by prior sector-resolution)",
+    "off the consumed sector" in NOTE_TEXT,
     "this note bounds the LOAD-BEARING (consumed, mass-like) content only")
-chk("does NOT set audit status; does NOT close AC_phi_lambda; no PDG/fitted/beta=6 inputs", True)
+chk("does NOT set audit status; does NOT close AC_phi_lambda; no PDG/fitted/beta=6 inputs",
+    "Status authority" in NOTE_TEXT
+    and "does not set status" in NOTE_TEXT
+    and "No fitted/PDG/lattice-MC/`β=6`/`g_bare` inputs." in NOTE_TEXT)
 
 print("\n" + "="*72)
 print(f"TOTAL: {PASS} PASS / {FAIL} FAIL")
@@ -212,3 +221,6 @@ RE-AUDIT CASE (status set by audit lane, not here): the parent
   because the P2 blocker is eliminated on
   the consumed sector. Final status remains audit-lane authority.
 """)
+
+if FAIL:
+    raise SystemExit(1)

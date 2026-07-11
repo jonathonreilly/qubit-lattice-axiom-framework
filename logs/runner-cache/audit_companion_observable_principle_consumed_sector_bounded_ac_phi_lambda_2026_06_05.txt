@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_observable_principle_consumed_sector_bounded_ac_phi_lambda_2026_06_05.py
-runner_sha256: 5886031367467c687716001f8541e2193ec7f8eb80c8759e71c9a02823bf7f9f
+runner_sha256: fd2e7fda8043529296fcc1bfde7a6d1cd5741bb8bf1de898bd536fea1fb39ac6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.44
 status: ok
 ----- stdout -----
 
@@ -12,7 +12,7 @@ status: ok
 [PASS] n=4 real-antisym: det(A+jI) = (j^2+a^2)(j^2+b^2) (>0)  [det = (a**2 + j**2)*(b**2 + j**2)]
 [PASS] 300 real-antisym seeds (n=5,6,8): det(D+jI) is real to 1e-7
 [PASS] 300 real-antisym seeds: det(D+jI) > 0 for j>0 (incl. odd dim)
-[PASS] real-antisym spectrum is purely imaginary (Re=0)  [max|Re eig|=3.4e-16]
+[PASS] real-antisym spectrum is purely imaginary (Re=0)  [max|Re eig|=4.8e-16]
 
 === (2) P2 is eliminated on the consumed sector (arg Z = 0) ===
 [PASS] consumed amplitudes Z are real-positive  [Z=[26.2114, 70.4463, 371.0404, 1180.9344]]
@@ -34,9 +34,9 @@ status: ok
     P1 (additivity)        <- Record axiom (minimal_axioms)
     P2 (phase-blindness)   <- ELIMINATED on consumed sector by positivity (this runner, (1)-(4))
     (M) amplitude=det(D+J) <- Berezin forcing bridge (retained_bounded)
-    physical identification<- AC_phi_lambda staggered-Dirac realization gate (REGISTERED Tier-A)
+    physical identification<- AC_phi_lambda staggered-Dirac realization open gate
 [PASS] no separate unregistered P2 residual remains on the consumed sector  [phase-blind/phase-sensitive candidates coincide on R_{>0} => P2 imposes nothing]
-[PASS] the sole remaining residual is the registered AC_phi_lambda determinant identification  [=> re-audit target: Tier-A-bounded class, status set only by audit lane]
+[PASS] the sole remaining residual is the open AC_phi_lambda determinant identification  [=> conditional re-audit target; status set only by audit lane]
 
 === scope / honesty flags ===
 [PASS] OFF the consumed sector P2 is genuinely non-trivial (handled by prior sector-resolution)  [this note bounds the LOAD-BEARING (consumed, mass-like) content only]
@@ -52,11 +52,11 @@ LOAD-BEARING RESULT (bounded):
   and phase-sensitive candidate generators agree (arg Z = 0), so the generator
   W = log|det(D+jI)| is fixed by Record additivity + finite-block continuity alone
   (Cauchy on R_{>0}). The parent's load-bearing residual is therefore the
-  (M)/Berezin determinant identification gated by the REGISTERED AC_phi_lambda
-  Tier-A target -- not a separate unregistered P2 premise.
+  (M)/Berezin determinant identification gated by the AC_phi_lambda open
+  target -- not a separate P2 premise.
 RE-AUDIT CASE (status set by audit lane, not here): the parent
-  `observable_principle_from_axiom_note` is a candidate for the registered
-  Tier-A-bounded class because the unregistered P2 blocker is eliminated on
+  `observable_principle_from_axiom_note` is a conditional re-audit candidate
+  because the P2 blocker is eliminated on
   the consumed sector. Final status remains audit-lane authority.
 
 

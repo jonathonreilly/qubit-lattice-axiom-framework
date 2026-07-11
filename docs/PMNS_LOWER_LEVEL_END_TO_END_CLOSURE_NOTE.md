@@ -91,14 +91,14 @@ importing target PMNS objects."
 ## Honest auditor read
 
 The 2026-05-05 audit recorded this row as `audited_conditional` with
-load-bearing-step class B and `chain_closes=False`, observing that the
+load-bearing cross-note verification and `chain_closes=False`, observing that the
 note asserts an end-to-end reconstruction but the restricted packet
 contains no derivation, runner source, or stdout. The audit ledger
 records `runner_path: None` for this row because the audit was
 performed on the text-only restricted packet. The runner
 `scripts/frontier_pmns_lower_level_end_to_end_closure.py` exists in the
 repository and verifies each reconstruction step end-to-end (PASS=26
-FAIL=0 on 2026-05-10), but its checks are class B closure-of-package
+FAIL=0 on 2026-05-10), but its checks are closure-of-package
 algebra given the retained lepton supports and the
 `pmns_lower_level_utils.py` reconstruction primitives. The cite chain
 above wires the adjacent active-source sibling and registers both
@@ -108,8 +108,8 @@ The note's `audit_status` is unchanged by this addendum.
 
 ## Scope of this rigorization
 
-This rigorization is class B (graph-bookkeeping citation) plus class D
-(open-target registration). It does not change any algebraic content,
+This rigorization uses graph-bookkeeping citation plus open-target
+registration. It does not change any algebraic content,
 runner output, or load-bearing step classification. It records the
 upstream authority the audit verdict expected, the runner that
 exercises each reconstruction step, and the helper-module and

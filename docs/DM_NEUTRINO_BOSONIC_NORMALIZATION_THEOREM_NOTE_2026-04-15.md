@@ -261,7 +261,7 @@ is unchanged by the source edit.
 
 ## Scope of this rigorization
 
-This rigorization is class B (graph-bookkeeping citation). It does not
+This rigorization uses graph-bookkeeping citation. It does not
 change any algebraic content, runner output, or load-bearing step
 classification. It records the upstream authority named by the repair target
 and matches the live cite-chain pattern used by the

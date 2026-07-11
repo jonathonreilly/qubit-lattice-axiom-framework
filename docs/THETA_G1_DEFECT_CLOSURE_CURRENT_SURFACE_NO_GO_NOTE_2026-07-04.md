@@ -123,6 +123,64 @@ future constraint-level, defect-energy, or scaling-limit route cannot close G1.
   registration is asserted.
 - No mass-side determinant-channel bridge is supplied.
 
+## No-Go Discipline Gate
+
+**N1 alternative route enumeration.** Every current route is explicitly
+attempted rather than rhetorically dismissed:
+
+| Route | Marker | Evidence and disposition |
+|---|---|---|
+| `d^2 = 0` identity | ATTEMPTED | exact moves are closed, but an arbitrary branch two-cochain need not be |
+| imposed closed-branch carrier | ATTEMPTED | exact once `dn = 0` is given; it does not derive the condition |
+| defect witness | ATTEMPTED | proves unrestricted instability, not physical suppression |
+| axiom/primitive shortcut | ATTEMPTED | no branch action, update law, defect energy, or probability rule is supplied |
+| record/readout route | ATTEMPTED | reads content after formation; it cannot manufacture closedness |
+| dynamical/scaling route | ATTEMPTED | remains live, but no suppressing measure or limit theorem is present |
+
+**N2 wall independence.** Three distinct steps must not be conflated:
+
+| Wall | Closing it does not close |
+|---|---|
+| native constraint forcing `dn = 0` | G2 physical registration or G3 phase insertion |
+| dynamical suppression of `dn != 0` | G2 registration or G3 phase insertion |
+| registration of the surviving carrier | either closure/suppression route or G3 |
+
+The first two are alternative ways to close G1; the third is a later gauge
+gate. The mass-side determinant readout is separate from all three.
+
+**N3 hidden-wall scan.** The note and runner were scanned for `assume`,
+`supplied`, `registered`, `canonical`, `standard`, `background`, `naturally`,
+`obviously`, `primitive`, and `by construction`. The condition `dn = 0` is
+always labeled conditional or targeted; decision-history text is provenance;
+and no defect-energy, probability measure, action coefficient, continuum
+limit, or physical-sector primitive is imported.
+
+**N4 residual matching.** The carrier theorem's exact residual is physical
+closedness or suppression. The minimal foundation withholds the action,
+measure, and dynamics that could provide it. G3 leaves the phase insertion
+open but cannot bypass defect discipline. These residuals match G1 exactly;
+the mass-side quark-determinant readout is neither a dependency nor evidence
+for this gauge-side no-go.
+
+**N5 proven surface.** Proven here is non-supply on the current surface and an
+explicit finite defect counterexample. It is not a universal theorem that no
+constraint, defect energy, measure, or scaling limit can close G1.
+
+**N6 partial closure.** A native constraint theorem or a dynamical suppression
+theorem would close G1 without closing G2 or G3. Either route is useful partial
+progress and creates no new supplied premise.
+
+**N7 steelman.** A reviewer can argue that closedness may be the correct
+physical configuration-space definition rather than a derived dynamical fact.
+Correct: a future framework-native constraint theorem would close G1. This
+note only shows that the present carrier calculation assumes rather than
+derives that restriction.
+
+**N8 cross-cycle echo.** G1, G2, and G3 are independent gauge-side gates. The
+AC occupancy and R-eta programs can liquidate only their own zero-weight
+obligations, and theta's mass-side determinant readout stays independent.
+No prior cycle supplies physical closedness or defect suppression here.
+
 ## Next Attack Plan
 
 1. **Constraint-level route:** search for a native branch law that forces
@@ -144,10 +202,9 @@ PYTHONPATH=scripts python3 scripts/theta_g1_defect_closure_current_surface_no_go
 
 Expected close: `FAIL=0` with at least 105 checks.
 
-## Current Dependency Routing (2026-07-11)
+## Dependency Separation (2026-07-11)
 
-Historical decision records have zero premise weight. The unresolved content
-used by this note is routed through the following current foundation or
-zero-weight open obligation:
-
-- [`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md)
+Historical decision records have zero premise weight. G1 is a gauge-side open
+target and has no dependency edge to the mass-side
+`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`.
+That obligation is tracked independently and cannot make this note ready.

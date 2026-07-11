@@ -481,7 +481,7 @@ verdict as `missing_bridge_theorem`:
 ## Honest auditor read
 
 The 2026-05-05 audit recorded this row as `audited_conditional` with
-load-bearing-step class B and `chain_closes=False`, observing that
+load-bearing cross-note verification and `chain_closes=False`, observing that
 the note does not attempt to close the bridges; it explicitly names
 the missing closure steps. The audit explicitly identified the two
 missing closure steps as the physical/source-law extremal principle
@@ -502,8 +502,8 @@ status.
 
 ## Scope of this rigorization
 
-This rigorization is class B (graph-bookkeeping citation) plus class D
-(open-target registration). It does not change any inventory content,
+This rigorization uses graph-bookkeeping citation plus open-target
+registration. It does not change any inventory content,
 priority ordering, §0a closeout list, §3 reproduction table, or
 load-bearing step classification. It records the upstream authority
 candidates the audit verdict expected and the missing-bridge-theorem

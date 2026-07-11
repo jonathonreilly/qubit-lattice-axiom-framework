@@ -395,18 +395,29 @@ def main() -> int:
     ]
     for phrase in forbidden:
         check(f"forbidden overclaim absent: {phrase}", phrase not in note)
+    for gate in range(1, 9):
+        check(f"No-Go Discipline N{gate} present", f"**N{gate}" in note)
+    check("route markers are explicit", note.count("ATTEMPTED") >= 6, note.count("ATTEMPTED"))
+    check(
+        "mass-side obligation is explicitly non-dependent",
+        "has no dependency edge to the mass-side" in note
+        and "cannot make this note ready" in note,
+    )
     links = set(re.findall(r"\[[^\]]+\]\(([^)]+)\)", note))
     expected_links = {
         "../scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py",
         "THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md",
         "THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
         "MINIMAL_AXIOMS_2026-06-29.md",
-        "THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md",
         "THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md",
         "THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md",
     }
     check("markdown link inventory is controlled", links == expected_links, sorted(links))
-    check("note line count is bounded", 130 <= len(note.splitlines()) <= 240, len(note.splitlines()))
+    check(
+        "mass-side obligation is not a markdown dependency",
+        "THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md" not in links,
+    )
+    check("note line count is bounded", 180 <= len(note.splitlines()) <= 340, len(note.splitlines()))
     check("verification block states fail-zero threshold", "Expected close: `FAIL=0` with at least 105 checks." in note)
 
     print("\n" + "=" * 88)

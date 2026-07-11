@@ -113,7 +113,7 @@ identification, residual `Z_2` stabilizer verification on each
 selected axis, the swap action on the active Hermitian triplet lane,
 and explicit construction of the aligned core
 `H = [[a,z,z],[z*,c,d],[z*,d,c]]` consistent with `P_23 H P_23 = H`. Four
-class B note-surface pins enforce the conditional-invariance boundary.
+cross-note verification pins enforce the conditional-invariance boundary.
 
 ## Audit dependency repair links
 
@@ -229,8 +229,8 @@ this addendum does not request promotion.
 
 ## Scope of this rigorization
 
-This rigorization is class B (graph-bookkeeping citation) plus class D
-(open-target registration). It does not derive or promote premise (E), or
+This rigorization uses graph-bookkeeping citation plus open-target
+registration. It does not derive or promote premise (E), or
 change the audit verdict. It narrows the displayed aligned-core algebra to the
 full unitary `P_23`-invariant Hermitian normal form and keeps the real
 four-parameter core as a separately premised specialization. It records the

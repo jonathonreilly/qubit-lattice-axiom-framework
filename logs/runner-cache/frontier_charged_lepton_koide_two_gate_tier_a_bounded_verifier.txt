@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_koide_two_gate_tier_a_bounded_verifier.py
-runner_sha256: d7cc1cca0e2a2f04c5072cea8b3738412231d4d29a1163d0190e4156bf9fcc56
+runner_sha256: 4bac7d6fa6c528498ec0821f666869eae27ef975c00c070fe8ce69c24d2f9759
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.27
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 
@@ -13,7 +13,7 @@ Scope: bounded_theorem on Koide two-gate algebraic chain under EXPLICIT
        explicit open hypotheses for both gates (r=1/2 and delta=2/9). Does
        NOT derive r=1/2 or delta=2/9. Does NOT promote AC_φλ. Does NOT
        weaken any retained no_go. Companion to parent open_gate row +
-       chain-of-custody (neither modified).
+       chain-of-custody (both non-authoritative context here).
 
 [PASS] S1.a: Q = 1/3 + (2/3) r at r²/a² = 1/2 equals 2/3 exactly  (Q = 2/3 = 2/3)
 [PASS] S1.b: c² = 2 ⇔ r²/a² = 1/2 by direct algebra  (c² at r²/a² = 1/2 equals 2)
@@ -28,8 +28,8 @@ Scope: bounded_theorem on Koide two-gate algebraic chain under EXPLICIT
 [PASS] S5: chain-of-custody anchor present on origin/main  (sidecar reference; the chain-of-custody documents L1-L10 + AC_φλ open conditions)
 [PASS] S5.sister: sister delta companion present on origin/main  (delta-piece companion; this note is the umbrella twin)
 [PASS] S5.parent: parent open_gate row present on origin/main  (companion to (not modified by) this note)
-[PASS] S1.retained_algebra: S1 retained algebraic authorities present on origin/main  (3/3 retained authorities present)
-[PASS] S3.topological: Z_N spectral-asymmetry weight-sum theorem present on origin/main  (retained_bounded; supplies delta = L_3(1,2) = 2/9 topological readout)
+[PASS] S1.context_algebra: three algebraic context surfaces are present  (3/3 context surfaces present; authority is not inferred)
+[PASS] S3.topological: Z_N spectral-asymmetry context surface present  (context only; the identity is recomputed below and no audit authority is inferred)
 [PASS] S3.topological_identity: L_3(1,2) = (N-1)/N² at N=3 equals 2/9 exactly  (L_3(1,2) = 2/9)
 [PASS] H1: does NOT derive r = 1/2 or Q = 2/3; Gate 1 is an explicit hypothesis  (no derivation attempted here; the open gate remains)
 [PASS] H2: does NOT promote an AC_φλ hypothesis to retained  (historical decisions are provenance only; this note is conditional)
@@ -39,8 +39,8 @@ Scope: bounded_theorem on Koide two-gate algebraic chain under EXPLICIT
 [PASS] H6: does NOT derive overall charged-lepton scale a  (scale a is outside this dimensionless conditional calculation)
 [PASS] H7: does NOT make any neutrino-sector claim  (charged-lepton chamber only; neutrino sector entirely out of scope)
 [PASS] H8: does NOT propose new axiom or new theory-language extension  (uses the baseline one-qubit/Z^3 substrate, retained Koide theorems, explicit hypotheses, and chain-of-custody sidecar)
-[PASS] H9: does NOT modify the parent CHARGED_LEPTON_KOIDE_NOTE_2026-04-18  (companion source note pattern; parent text unchanged)
-[PASS] H10: does NOT modify the chain-of-custody CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02  (cited as sidecar reference; not modified)
+[PASS] H9: parent CHARGED_LEPTON_KOIDE_NOTE is context only  (relationship checked from paired-note text, not git history)
+[PASS] H10: chain-of-custody note is a non-authoritative source reference  (relationship checked from paired-note text, not a false unchanged-file assertion)
 
 PASS=26  FAIL=0
 

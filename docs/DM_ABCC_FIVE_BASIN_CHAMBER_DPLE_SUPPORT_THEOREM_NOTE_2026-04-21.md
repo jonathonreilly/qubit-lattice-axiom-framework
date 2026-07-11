@@ -281,8 +281,8 @@ note does not by itself close that gap.
 
 ## Scope of this rigorization
 
-This rigorization is class B (graph-bookkeeping citation) with an
-explicit class D upstream gap registration. It does not change any
+This rigorization uses graph-bookkeeping citation with an
+explicit upstream-gap registration. It does not change any
 algebraic content, runner output, or load-bearing step classification.
 It records the upstream authorities the prior feedback requested and
 matches the live cite-chain pattern used by the

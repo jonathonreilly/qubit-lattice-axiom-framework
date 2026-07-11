@@ -87,7 +87,7 @@ term_families:
       positive_theorem:
         definition: "Derived positive result."
       bounded_theorem:
-        definition: "Theorem with named bounds / admissions."
+        definition: "Theorem with named bounds / conditions."
       no_go:
         definition: "Negative-result theorem foreclosing a route."
       open_gate:

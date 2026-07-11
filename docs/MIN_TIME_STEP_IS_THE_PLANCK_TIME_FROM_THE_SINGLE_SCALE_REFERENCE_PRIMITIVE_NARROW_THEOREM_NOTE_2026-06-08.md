@@ -37,7 +37,7 @@ retained-bounded surface. The approved *kinetic-isotropy* primitive supplies
 the structural OS0 normalization `c_t = c_s`, i.e. the lattice-unit bridge
 `c_lattice = 1` for the edge/tick surface; it does not supply a physical
 seconds/metres value. The approved *scale-reference* primitive is the
-framework's single dimensionful ruler, not a Tier-A admitted premise. With the
+framework's single dimensionful ruler. With the
 retained companion, the kinetic-form bridge, and explicit physical-`c` unit
 normalization, the arithmetic identifies `a_τ = l_P/c = t_P`.
 
@@ -52,7 +52,7 @@ minima once the retained tick/edge bridge is read in SI units).**
    reference: `a⁻¹ = M_Pl` (the `PLANCK_SCALE_LANE_STATUS` package pin). Hence the lattice spacing
    `a_s` = the **Planck length** `l_P` — *already supplied*, carrying **zero** dimensionless content.
    Per `AXIOM_MINIMALITY_POLICY` §6 this is an approved framework primitive
-   rather than a new axiom, Tier-A admission, or bounded-status source. The
+   rather than a new axiom or bounded-status source. The
    independent audit lane still decides this row's actual status from the
    repaired source packet.
 2. **The one-tick-one-edge tie gives `a_τ = a_s/c`.** One minimum time step (one record tick) spans
@@ -113,10 +113,11 @@ So the picture completes:
 
 ## Primitive note (the type matters)
 
-The scale reference is **not** a Tier-A admitted premise; it is an **approved framework primitive**
+The scale reference is an **approved framework primitive**
 (`scale_reference_primitive`, registered in `axiom_premise_nodes.json`, owner-approved per
 `AXIOM_MINIMALITY_POLICY` §6). Per that policy, approved primitives **chain-satisfy dependencies
-without bounding downstream status**, whereas Tier-A admitted derivation targets chain-satisfy only at `retained_bounded`.
+without bounding downstream status**. No admission class exists; unresolved
+derivation conditions remain open and carry zero premise weight.
 The scale reference is not the blocker in this row. The kinetic-form bridge is
 also now explicit: the approved kinetic-isotropy primitive supplies
 `c_lattice = 1` at structural scope. The physical-`c` normalization is exposed
@@ -126,7 +127,7 @@ accepts the repaired bridge surface.
 
 ## Forbidden premise check
 
-No **new** axiom, admitted premise, **or** primitive. It *uses* the
+No **new** axiom or primitive. It *uses* the
 already-approved scale-reference primitive (`a⁻¹ = M_Pl`), the
 already-approved kinetic-isotropy primitive (`c_t = c_s`, structural
 kinetic form only), and the companion locality tie; it adds no second

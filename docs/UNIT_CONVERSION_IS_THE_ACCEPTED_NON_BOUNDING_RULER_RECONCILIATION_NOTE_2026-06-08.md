@@ -29,8 +29,8 @@ emergent-spacetime/gravity arc and separates the genuinely-different "unit" obje
    `m_phys = (m/M_Pl)·M_Pl`). So the **only** dimensionful input any prediction needs is the single
    accepted ruler.
 3. **The ruler is an approved, non-bounding primitive.** Per `AXIOM_MINIMALITY_POLICY` §6, approved
-   framework primitives **chain-satisfy dependencies without bounding downstream status**, whereas
-   Tier-A admitted imports chain-satisfy only at `retained_bounded`. So a row whose **only**
+   framework primitives **chain-satisfy dependencies without bounding downstream status**. No
+   admission class exists. So a row whose **only**
    non-retained dependency is the ruler is **retention-eligible at the full tier** — the ruler neither
    blocks nor caps it.
 4. **Reconciliation.** "The absolute scale is the clock-rate no-go"
@@ -52,8 +52,8 @@ emergent-spacetime/gravity arc and separates the genuinely-different "unit" obje
 ## What this is NOT (genuinely different objects)
 
 - **The `Y_T` source-measure / `g_bare` action-unit "no-go" notes** concern a **dimensionless**
-  path-integral source/measure normalization (a separate Tier-A question) — **not** the dimensionful
-  ruler. They are correctly bounded by *that* admission, not by the scale reference.
+  path-integral source/measure normalization (a separate open derivation condition) — **not** the dimensionful
+  ruler. That condition carries zero premise weight and is not resolved by the scale reference.
 - **The dimensionful-value lanes** (e.g. the atomic Rydberg eV scale,
   `ATOMIC_LANE2_PHYSICAL_UNIT_LIMIT_BOUNDARY`) need the ruler **plus** dimensionless ratios
   (`m_e/M_Pl`, `α`). The ruler being accepted resolves the *unit*; the **residual is dimensionless**
@@ -81,7 +81,7 @@ No new axiom, import, or primitive. It *uses* the already-approved scale-referen
 ## Runner check breakdown
 
 Class A: (A1) dimensionless data is ruler-invariant; (A2) dimensionful = dimensionless × the one ruler;
-(A3) the ruler is non-bounding (vs Tier-A which caps); (A4) the records' clock-rate no-go is resolved by
+(A3) the approved primitive is non-bounding; (A4) the records' clock-rate no-go is resolved by
 the accepted ruler ⟹ dimensionful results are scale-resolved. Expected `runner_check_breakdown = {A: 4,
 B: 0, C: 0, D: 0, total_pass: 4}`.
 

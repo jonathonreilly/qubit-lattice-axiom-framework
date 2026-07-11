@@ -172,7 +172,7 @@ conditional on the four admitted premises P1-P4. The note's
 
 ## Scope of this rigorization
 
-This rigorization is class B (graph-bookkeeping citation). It does not
+This rigorization uses graph-bookkeeping citation. It does not
 change any algebraic content, runner output, or load-bearing step
 classification. It records the upstream authorities the audit citation
 graph expects and matches the live cite-chain pattern used by the

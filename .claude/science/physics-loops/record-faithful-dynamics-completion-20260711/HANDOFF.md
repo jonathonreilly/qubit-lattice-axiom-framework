@@ -9,6 +9,11 @@ https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 is open and mergeable; the audit-lane workflow was running at the delivery
 checkpoint.
 
+Record-observable and formation-outcome stacked review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
+is open and mergeable against the cubic neighbor-response branch; its
+audit-lane workflow was running at the delivery checkpoint.
+
 ## Central thesis
 
 The next move is not another sector Hamiltonian or continuum fit. It is to make

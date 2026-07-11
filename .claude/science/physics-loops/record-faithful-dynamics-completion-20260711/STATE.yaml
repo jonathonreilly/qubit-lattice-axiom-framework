@@ -59,12 +59,13 @@ no_go_routes:
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
 review_disposition: cubic_response_pass_outcome_operation_pass_bounded
-pr_status: cubic_response_pr_open_outcome_operation_pr_ready
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
+pr_status: cubic_response_checks_passed_outcome_operation_open_checks_running
+block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
+block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 next_exact_action: >-
-  Open and verify the stacked outcome-operation PR, then classify minimal local Stinespring
-  dilations and attempt a covariant scalar/SWAP instrument whose record weights
-  vary faithfully after all record-null factors are quotiented.
+  Classify minimal local Stinespring dilations and attempt a covariant
+  scalar/SWAP instrument whose record weights vary faithfully after all
+  record-null factors are quotiented.
 stop_condition: >-
   Stop the campaign only after either (a) an exact selector theorem
   with every new premise isolated, or (b) a strengthened faithful countermodel

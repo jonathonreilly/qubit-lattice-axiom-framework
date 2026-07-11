@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 353 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2816 |
+| unaudited | 2815 |
 | audit_in_progress | 19 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 47 |
+| ~~audited_conditional~~ | 48 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 444 |
-| `audited_conditional` | 47 |
+| `audited_conditional` | 48 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3166 |
+| `unaudited` | 3165 |
 
 | claim_type | count |
 |---|---:|
@@ -590,6 +590,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
+| `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
@@ -1561,6 +1562,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The provided runner and helper sources actually generate matched graphs, compute gravity deltas for the declared modes and mass counts, and fit the declared positive window without hard-coded target values. The cached stdout matches the note's numerical claims and supports the bounded, mixed conclusion.
 - **rationale:** The source note makes a narrow bounded claim about the runner's computed mass-window fits, not a full gravity-law rescue. The runner source and helper chain compute the graph, pruning, propagation, deltas, and log-log fits directly from the declared simulation setup, and the reported R^2 comparisons are reproduced in the provided stdout. No cited non-retained authority, external comparator, renaming, or tuned imported value is load-bearing in this packet.
 - **auditor confidence:** high
+
+### `charged_lepton_two_higgs_canonical_reduction_note`
+
+- **Note:** [`CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`](../../docs/CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Conditional algebraic reduction and seven-parameter count for a supplied charged-lepton texture with two distinct effective Z_3 offsets, up to generation relabeling and field rephasings.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00041-charged_lepton_two_higgs_can`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** After reducing D_a P_a + D_b P_b to A_e + B_e C, the diagonal left/right rephasing action has rank five on the six coefficient phases, leaving one phase and hence seven real quantities.  _(class `A`)_
+- **chain closes:** False — The finite Z_3 support reduction and rank-five rephasing count close algebraically once the two-offset charged-lepton lane is supplied. The restricted packet provides no one-hop authority establishing the imported effective-offset support language or its charged-lepton applicability.
+- **rationale:** Issue: the runner correctly verifies the canonical support and seven-parameter count, but the note explicitly reuses the single-Higgs PMNS triviality theorem, neutrino two-Higgs escape theorem, and effective charged-lepton offset language without supplying them as one-hop authorities. Why this blocks: the runner begins with the two-offset texture family and therefore does not establish that this family follows from the claimed framework inputs. Repair target: add retained-grade direct dependencies for the imported lepton support results. Claim boundary until fixed: an exact conditional normal-form/counting theorem for a supplied charged-lepton two-offset lane.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: dependency_wiring remains OPEN because the named lepton support authorities are absent from the one-hop packet.
 
 ### `chiral_3plus1d_boundary_phase_note`
 

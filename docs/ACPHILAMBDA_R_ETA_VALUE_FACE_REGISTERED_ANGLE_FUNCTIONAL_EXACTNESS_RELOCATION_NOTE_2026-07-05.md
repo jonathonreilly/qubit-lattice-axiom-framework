@@ -266,3 +266,9 @@ note names those points rather than resolving them.
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency, and does not modify any registry. The
 independent audit lane is the only status authority.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11](ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md)

@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 83 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 355 |
+| **retained_bounded** | 356 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2811 |
-| audit_in_progress | 21 |
+| audit_in_progress | 20 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 25 |
-| `audited_clean` | 447 |
+| `audit_in_progress` | 24 |
+| `audited_clean` | 448 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 25 |
@@ -139,7 +139,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `strong_cp_theta_zero_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -504,6 +503,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_only_det_positivity_case_a_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_test_mass_companion_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `structured_mirror_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `structureless_dag_gravity_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `structureless_dag_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -6847,6 +6847,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner directly computes the static source packet, normalized test packet, source-only Poisson field, exact inward force, and blocked-envelope acceleration. Its current output reproduces the load-bearing 45/45 inward rows, source-mass exponent tables, representative rows, and max weak-field phi_peak bound.
 - **rationale:** The note is explicit that this is a bounded source-only test-mass lane, not both-masses or self-consistent mass-law closure. The current runner reproduces the exact-force source-mass exponent range 1.0000..1.0001, blocked-accel exponent range 1.0093..1.0197, 45/45 inward force rows, 45/45 inward blocked-accel rows, and the representative values used in the note. Residual risk is limited to the bounded open-cubic static-source surface and to a stale non-load-bearing lower phi_peak range bound; the max weak-field bound remains current.
 - **auditor confidence:** high
+
+### `strong_cp_theta_zero_note`
+
+- **Note:** [`STRONG_CP_THETA_ZERO_NOTE.md`](../../docs/STRONG_CP_THETA_ZERO_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact θ_eff = 0 closure and absence of a generated determinant/effective-action phase only on the explicitly θ-free Wilson-plus-staggered action surface with positive real scalar quark masses; no derivation or dynamical selection of that surface was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00053-strong_cp_theta_zero_note`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** On the explicitly θ-free, positive-real scalar-mass surface, θ_bare = 0 and arg det(M_u M_d) = 0, hence θ_eff = θ_bare + arg det(M_u M_d) = 0.  _(class `A`)_
+- **chain closes:** True — Within the stated surface hypotheses, the conclusion is an exact algebraic closure: determinant positivity and ε-pairing remove the fermion phase, admissible axial transformations cannot introduce a phase while remaining on the surface, and positive sector weights give the θ = 0 free-energy minimum. The packet does not close any stronger claim that the framework uniquely selects this action surface.
+- **rationale:** The runner genuinely constructs staggered operators and sampled SU(3) configurations, checks anti-Hermiticity, spectral pairing, determinant and effective-action reality, axial deformation, and the positive-weight θ-sum inequality. The decisive θ_eff calculation is nevertheless an algebraic consequence of the explicitly scoped θ-free and positive-real-mass hypotheses, which the note consistently labels as selected-surface premises rather than derived physics. Clean status therefore applies only to the bounded selected-surface theorem and does not ratify an unrestricted or dynamically selected solution of strong CP.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `structured_mirror_reconciliation_note`
 

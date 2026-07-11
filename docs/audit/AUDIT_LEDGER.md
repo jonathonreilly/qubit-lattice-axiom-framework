@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 81 |
-| **retained_no_go** | 23 |
+| **retained_no_go** | 24 |
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2831 |
+| unaudited | 2830 |
 | audit_in_progress | 18 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 22 |
-| `audited_clean` | 435 |
+| `audited_clean` | 436 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3181 |
+| `unaudited` | 3180 |
 
 | claim_type | count |
 |---|---:|
@@ -158,6 +158,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `asymmetry_persistence_mass_scaling_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_mass_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_pilot_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `atomic_lane2_physical_unit_limit_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | D | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1055,6 +1056,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The runner genuinely performs the hydrogen diagonalization and helium variational calculation, but the chain imports the textbook Hamiltonian, physical conversion constant, analytic Bohr spectrum, and experimental helium value without deriving or independently closing them. It also does not compute an exact helium result within any basis.
 - **rationale:** The source code constructs and diagonalizes the finite-difference hydrogen Hamiltonian rather than merely printing the cached values, and its output supports the tabulated finite-grid comparison. The helium runner evaluates only the stated textbook independent-electron and one-parameter variational formulas, with the experimental value embedded as an external comparator. Consequently this is a valid bounded standard-QM scaffold, not a class-(C) framework derivation, and the phrase claiming helium is exact within an available basis is unsupported.
 - **auditor confidence:** high
+
+### `atomic_lane2_physical_unit_limit_boundary_note_2026-04-29`
+
+- **Note:** [`ATOMIC_LANE2_PHYSICAL_UNIT_LIMIT_BOUNDARY_NOTE_2026-04-29.md`](../../docs/ATOMIC_LANE2_PHYSICAL_UNIT_LIMIT_BOUNDARY_NOTE_2026-04-29.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The dimensionless hydrogen spectrum and its level ratios alone do not determine the absolute physical-unit Rydberg energy scale.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T140442Z-413aaba4-00409-atomic_lane2_physical_unit_l`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For every positive scale S, E_n=S[-1/(2n^2)] has the same 1/n^2 ratios, so those ratios cannot determine an absolute eV scale.  _(class `A`)_
+- **chain closes:** True — The one-parameter family of positive rescalings is an exact counterexample to uniqueness of the absolute energy scale. The no-go does not require the imported numerical electron mass, alpha(0), or the runner's hard-coded status declarations.
+- **rationale:** The narrowly scoped no-go is an exact algebraic non-identifiability result: arbitrary positive Hartree rescalings preserve every stated spectral ratio while changing E_1. The runner genuinely constructs several such spectra, although its empirical Hartree checks, cross-file string checks, and hard-coded status checks are not first-principles evidence. Those weaker runner sections are unnecessary for the audited implication, so the algebraic negative boundary still closes cleanly.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `atomic_rydberg_dependency_firewall_note_2026-04-27`
 

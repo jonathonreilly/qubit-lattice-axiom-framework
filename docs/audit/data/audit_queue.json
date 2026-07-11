@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 673,
     "high": 332,
-    "leaf": 1132,
+    "leaf": 1131,
     "medium": 760
   },
   "cycle_break_target_count": 49,
@@ -53265,28 +53265,6 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "atomic_lane2_physical_unit_limit_boundary_note_2026-04-29",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ATOMIC_LANE2_PHYSICAL_UNIT_LIMIT_BOUNDARY_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_atomic_lane2_physical_unit_limit_boundary.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28",
@@ -82495,6 +82473,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 601,
-  "total_pending": 2897
+  "ready_count": 600,
+  "total_pending": 2896
 }

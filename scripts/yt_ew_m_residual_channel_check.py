@@ -1,37 +1,21 @@
-"""yt_ew M-residual stretch attempt: explicit Fierz channel bookkeeping under CMT.
+"""yt_ew M-residual repair: Fierz channels and the propagator-scaling bridge.
 
-The matching rule (M) of the EW vacuum polarization claims that, after the
-framework's Coupling Map Theorem (CMT) factorization U → u_0 V, the physical
-EW correlator projects onto the adjoint channel C(x,y) and the singlet
-S(x,y) is absorbed into u_0 powers via mean-field improvement.
+The exact lemma is that both degree-2 Fierz channels scale by |lambda|²
+whenever the propagator is multiplied by any complex scalar lambda.  This
+runner then separates the link-to-propagator question by mass sector: for a
+massless one-link, link-linear hopping matrix it derives
+G[u_0 V] = u_0^{-1} G[V], while at nonzero mass it computes a rejector for
+overall scalar action.  Thus the massive conclusion requires the named
+premise (P-G); the old imposed G_full = u_0 G_V relation is retained only as
+conditional bookkeeping context.
 
-This runner does NOT close M (which requires explicit framework EW
-Wilson-line construction). It does:
-
-(1) Verify the Fierz channel decomposition of Tr_color[G(x,y) G(y,x)] on
-    explicit complex matrix backgrounds for N_c = 2, 3.
-
-(2) Verify the CMT-style factorization: when the link variable U is
-    written as u_0 · V with V trace-normalized, the propagator inherits
-    a u_0^L scaling on its singlet trace.
-
-(3) Verify the channel-fraction count: dim(adj)/dim(N_c ⊗ N_c-bar) =
-    (N_c² − 1)/N_c² exactly for N = 2, 3, 4, 5.
-
-(4) Document numerically: the static-CMT singlet S vanishes after
-    u_0-normalization improvement.
-
-Tests:
-  (T1) Fierz identity on random complex matrices: Tr[M† M] = (1/N) |Tr M|² + 2 Σ_A |Tr[M t^A]|²
-  (T2) Adjoint channel fraction (N²-1)/N² exact for N = 2..5
-  (T3) Random complex propagator-like matrices satisfy the channel decomposition
-  (T4) Singlet content (1/N) |Tr G|² scales as Tr[G]² on identity background
-  (T5) Adjoint content vanishes on color-diagonal G (proves: static CMT background
-       has only singlet, no adjoint — confirming need for V fluctuations to
-       generate adjoint channel)
-  (T6) Adjoint content survives under random non-diagonal G (V-fluctuation analog)
+Tests 1-4 and 6-7 retain the original channel checks.  Test 5 is split into
+the general scalar blindness lemma (5a), massless derivation (5b), and
+massive rejector (5c).  Test 8 pins the repaired note surface and date.
 """
 from __future__ import annotations
+
+from pathlib import Path
 
 import numpy as np
 
@@ -81,6 +65,30 @@ def random_su_n(N: int, rng: np.random.Generator) -> np.ndarray:
     # Multiplying one column by det(q)^* preserves unitarity and fixes det=1.
     q[:, 0] *= np.linalg.det(q).conjugate()
     return q
+
+
+def channel_values(G: np.ndarray, generators: list[np.ndarray]) -> tuple[float, float]:
+    """Return the singlet and adjoint degree-2 Fierz channels for G."""
+
+    N = G.shape[0]
+    singlet = float((1 / N) * abs(np.trace(G)) ** 2)
+    adjoint = float(2 * sum(abs(np.trace(G @ t)) ** 2 for t in generators))
+    return singlet, adjoint
+
+
+def one_link_ring_hopping(links: list[np.ndarray]) -> np.ndarray:
+    """Forward-minus-backward antihermitian hopping on a periodic 1D ring."""
+
+    L = len(links)
+    N = links[0].shape[0]
+    H = np.zeros((L * N, L * N), dtype=complex)
+    for x, link in enumerate(links):
+        y = (x + 1) % L
+        xs = slice(x * N, (x + 1) * N)
+        ys = slice(y * N, (y + 1) * N)
+        H[xs, ys] += link
+        H[ys, xs] -= link.conj().T
+    return H
 
 
 def main() -> None:
@@ -169,28 +177,104 @@ def main() -> None:
     print(f"  ⇒ Color-diagonal (static) G has ONLY singlet content; adjoint requires V fluctuations.")
     print()
 
-    # ----- Test 5: CMT factorization preserves channel structure -----
+    # ----- Test 5a: exact channel blindness for every overall scalar action -----
     print("-" * 72)
-    print("TEST 5: G_full = u_0 · G_V factorization: S_full = u_0² · S_V, C_full = u_0² · C_V")
-    print("        (CMT inherits to channel decomposition with overall u_0² scaling)")
+    print("TEST 5a: S(lambda G) and C(lambda G) scale by |lambda|²")
+    print("         for general complex scalar action on G")
     print("-" * 72)
-    max_cmt_dev = 0.0
+    max_scalar_dev = 0.0
+    scalar_samples = [
+        -1.25 + 0.0j,
+        0.70 + 0.40j,
+        0.85 + 0.0j,
+        complex(*rng.standard_normal(2)),
+        complex(*rng.standard_normal(2)),
+    ]
     for N in [2, 3]:
         T = random_traceless_hermitian(N, rng)
-        for trial in range(5):
-            u_0 = 0.85  # typical CMT mean-field value
-            G_V = rng.standard_normal((N, N)) + 1j * rng.standard_normal((N, N))
-            G_full = u_0 * G_V
-            S_V = (1 / N) * abs(np.trace(G_V)) ** 2
-            C_V = 2 * sum(abs(np.trace(G_V @ t)) ** 2 for t in T)
-            S_full = (1 / N) * abs(np.trace(G_full)) ** 2
-            C_full = 2 * sum(abs(np.trace(G_full @ t)) ** 2 for t in T)
-            d_S = abs(S_full - u_0 ** 2 * S_V)
-            d_C = abs(C_full - u_0 ** 2 * C_V)
-            max_cmt_dev = max(max_cmt_dev, d_S, d_C)
-        print(f"  N={N}: u_0² scaling on both S and C, max dev = {max_cmt_dev:.3e}")
-    t5_ok = max_cmt_dev < 1e-10
-    print(f"  STATUS: {'PASS' if t5_ok else 'FAIL'}")
+        for scalar in scalar_samples:
+            G = rng.standard_normal((N, N)) + 1j * rng.standard_normal((N, N))
+            S, C = channel_values(G, T)
+            S_scaled, C_scaled = channel_values(scalar * G, T)
+            factor = abs(scalar) ** 2
+            max_scalar_dev = max(
+                max_scalar_dev,
+                abs(S_scaled - factor * S),
+                abs(C_scaled - factor * C),
+            )
+        print(f"  N={N}: negative-real, genuinely-complex, and random lambda samples checked")
+    print("  (P-G)-conditional bookkeeping, previously Test 5: lambda = u_0")
+    print(f"  max scalar-channel deviation = {max_scalar_dev:.3e}")
+    t5a_ok = max_scalar_dev < 1e-10
+    print(f"  STATUS: {'PASS' if t5a_ok else 'FAIL'}")
+    print()
+
+    # ----- Test 5b: derive scalar action for massless link-linear hopping -----
+    print("-" * 72)
+    print("TEST 5b: Massless derivation on a one-link L=7 SU(3) ring")
+    print("-" * 72)
+    L = 7
+    N = 3
+    dim = L * N
+    u_0 = 0.85
+    cond_H = np.inf
+    for reroll in range(100):
+        links_V = [random_su_n(N, rng) for _ in range(L)]
+        H_V = one_link_ring_hopping(links_V)
+        cond_H = np.linalg.cond(H_V)
+        if cond_H <= 1e8:
+            break
+    else:
+        raise RuntimeError("could not sample an invertible, well-conditioned massless hopping")
+
+    H_full = one_link_ring_hopping([u_0 * V for V in links_V])
+    linear_dev = np.linalg.norm(H_full - u_0 * H_V)
+    G_V = np.linalg.inv(H_V)
+    G_full = np.linalg.inv(H_full)
+    inverse_rel_dev = np.linalg.norm(G_full - (u_0 ** -1) * G_V) / np.linalg.norm(G_full)
+
+    T = gell_mann_su3()
+    factor = u_0 ** -2
+    channel_abs_dev = 0.0
+    channel_scale = 1.0
+    for x in range(L):
+        for y in range(L):
+            xs = slice(x * N, (x + 1) * N)
+            ys = slice(y * N, (y + 1) * N)
+            S_V, C_V = channel_values(G_V[xs, ys], T)
+            S_full, C_full = channel_values(G_full[xs, ys], T)
+            channel_abs_dev = max(
+                channel_abs_dev,
+                abs(S_full - factor * S_V),
+                abs(C_full - factor * C_V),
+            )
+            channel_scale = max(channel_scale, factor * S_V, factor * C_V)
+    channel_rel_dev = channel_abs_dev / channel_scale
+    t5b_ok = linear_dev < 1e-13 and inverse_rel_dev < 1e-12 and channel_rel_dev < 1e-12
+    print(f"  accepted hopping after {reroll} reroll(s), cond(H[V]) = {cond_H:.3e}")
+    print(f"  H[u_0 V] == u_0 H[V]: max deviation = {linear_dev:.3e}")
+    print(f"  G_full == u_0^-1 G_V: relative deviation = {inverse_rel_dev:.3e}")
+    print(f"  all {L * L} site-pair color blocks: S,C scale by u_0^-2")
+    print(f"  max relative channel deviation = {channel_rel_dev:.3e}")
+    print(f"  STATUS: {'PASS' if t5b_ok else 'FAIL'}")
+    print()
+
+    # ----- Test 5c: massive inverse rejects overall scalar action -----
+    print("-" * 72)
+    print("TEST 5c: Massive rejector for scalar propagator action at m = 1/2")
+    print("-" * 72)
+    mass = 0.5
+    identity = np.eye(dim, dtype=complex)
+    G_m_V = np.linalg.inv(mass * identity + H_V)
+    G_m_full = np.linalg.inv(mass * identity + u_0 * H_V)
+    ratio = G_m_full @ np.linalg.inv(G_m_V)
+    ratio_scalar = np.trace(ratio) / dim
+    massive_relative_deviation = np.linalg.norm(ratio - ratio_scalar * identity) / np.linalg.norm(ratio)
+    t5c_ok = massive_relative_deviation > 1e-2
+    print("  R = G_m[u_0 V] @ inv(G_m[V])")
+    print(f"  relative deviation from (tr R / dim) I = {massive_relative_deviation:.6e}")
+    print("  decisive threshold: deviation > 1e-2")
+    print(f"  STATUS: {'PASS' if t5c_ok else 'FAIL'}")
     print()
 
     # ----- Test 6: Haar SU(N) V-fluctuation generates adjoint content -----
@@ -255,29 +339,65 @@ def main() -> None:
     print(f"  STATUS: {'PASS' if t7_ok else 'FAIL'}")
     print()
 
+    # ----- Test 8: repaired note-surface pins -----
+    print("-" * 72)
+    print("TEST 8: Repaired note-surface pins")
+    print("-" * 72)
+    note_path = Path(__file__).resolve().parents[1] / "docs" / "YT_EW_M_RESIDUAL_NOTE_2026-05-02.md"
+    note_text = note_path.read_text(encoding="utf-8")
+    claim_scope_block = note_text.split("**Claim scope:**", 1)[1].split("**Status authority:**", 1)[0]
+    key_finding_block = note_text.split("## Key finding", 1)[1].split("## Where the actual selection", 1)[0]
+    yaml_block = note_text.split("```yaml", 1)[1].split("```", 1)[0]
+    repair_block = note_text.split("## Repair Note", 1)[1].split("## Background", 1)[0]
+    old_unconditional_scope = (
+        "The runner verifies that under U → u_0 V factorization, both S and C inherit "
+        "the same u_0² factor uniformly"
+    )
+    note_pins = {
+        "(P-G) in claim scope": "(P-G)" in claim_scope_block,
+        "(P-G) in key finding": "(P-G)" in key_finding_block,
+        "(P-G) in yaml": "(P-G)" in yaml_block,
+        '"Massless derivation" present': "Massless derivation" in note_text,
+        "2026-07-11 Repair Note present": "2026-07-11" in repair_block,
+        "old unconditional claim-scope sentence absent": old_unconditional_scope not in " ".join(
+            claim_scope_block.replace("**", "").split()
+        ),
+    }
+    for label, passed in note_pins.items():
+        print(f"  {label}: {'PASS' if passed else 'FAIL'}")
+    t8_ok = all(note_pins.values())
+    print(f"  STATUS: {'PASS' if t8_ok else 'FAIL'}")
+    print()
+
     print("=" * 72)
     print(f"  Test 1 (Fierz identity exact):                          {'PASS' if t1_ok else 'FAIL'}")
     print(f"  Test 2 (channel fraction (N²-1)/N²):                    {'PASS' if t2_ok else 'FAIL'}")
     print(f"  Test 3 (channel decomposition on random G):             {'PASS' if t3_ok else 'FAIL'}")
     print(f"  Test 4 (color-diagonal G has only singlet, no adjoint): {'PASS' if t4_ok else 'FAIL'}")
-    print(f"  Test 5 (CMT u_0 factorization preserves S, C):          {'PASS' if t5_ok else 'FAIL'}")
+    print(f"  Test 5a (scalar-action blindness lemma):                {'PASS' if t5a_ok else 'FAIL'}")
+    print(f"  Test 5b (massless link-to-propagator derivation):        {'PASS' if t5b_ok else 'FAIL'}")
+    print(f"  Test 5c (massive scalar-action rejector):                {'PASS' if t5c_ok else 'FAIL'}")
     print(f"  Test 6 (Haar SU(N) V-fluctuation generates adjoint):   {'PASS' if t6_ok else 'FAIL'}")
     print(f"  Test 7 (N=3 adjoint fraction = 8/9):                    {'PASS' if t7_ok else 'FAIL'}")
-    all_ok = all([t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok, t7_ok])
+    print(f"  Test 8 (repaired note-surface pins):                     {'PASS' if t8_ok else 'FAIL'}")
+    results = [t1_ok, t2_ok, t3_ok, t4_ok, t5a_ok, t5b_ok, t5c_ok, t6_ok, t7_ok, t8_ok]
+    pass_count = sum(results)
+    fail_count = len(results) - pass_count
+    all_ok = all(results)
+    print(f"  TOTAL: PASS={pass_count} FAIL={fail_count}")
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()
     print("RESIDUAL (sharpened obstruction):")
-    print("  The numerical channel bookkeeping is exact (Tests 1-7 PASS at machine")
-    print("  precision). What remains for full closure of (M):")
+    print("  The scalar-action lemma and massless link-to-propagator bridge are exact")
+    print("  at machine precision. What remains for full closure of (M):")
     print()
     print("  (i)  Define the framework's lattice EW current as a Wilson-line bilinear")
     print("       (currently implicit; needs explicit formula in framework primitives).")
     print("  (ii) Show: physical (CMT-improved) EW vacuum polarization corresponds to")
     print("       the adjoint channel C, while the singlet channel S is absorbed into")
-    print("       the link improvement u_0^n_link. Test 5 shows BOTH S and C inherit")
-    print("       u_0² factors; the M residual asks: does CMT improvement REPLACE the")
-    print("       bare singlet content with u_0^n_link absorption, or does it leave")
-    print("       both channels physically observable?")
+    print("       the link improvement u_0^n_link. Scalar action is channel-blind:")
+    print("       it is derived with u_0^-2 channel scaling at m=0, and is conditional")
+    print("       on (P-G) at m!=0, where Test 5c rejects automatic scalar action.")
     print()
     print("  Until (ii) is closed, (M) remains a structural input. This stretch")
     print("  attempt sharpens (M) to a single named question: which channel survives")

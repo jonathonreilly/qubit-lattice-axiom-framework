@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 359 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2798 |
+| unaudited | 2797 |
 | audit_in_progress | 22 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 26 |
 | `audited_clean` | 451 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 15 |
-| `unaudited` | 3148 |
+| `unaudited` | 3147 |
 
 | claim_type | count |
 |---|---:|
@@ -598,6 +598,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
+| `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1170,6 +1171,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — From the action recurrence, with q=m^2+sin^2(p), T_odd T_even has trace 2+4q=2 cosh(2E) and determinant 1, so its eigenvalues are e^{+/-2E}. The decaying eigenvalue is positive, Gamma has positive product eigenvalues, and the one-step non-positivity follows from complex spectra off sin(p)=0 plus eigenvalues -m+/-sqrt(m^2+1) at sin(p)=0.
 - **rationale:** The cached runner reports only C1-C6 and PASS=6 FAIL=0. C1 executes the mass sweep over m in {0.05, 0.1, 0.5, 1.0, 2.0, 5.0}; the independent closed-form product check reproduces the sweep minimum eigenvalue 7.912e-13 at m=5, L_s=6. C1-C6 witness the note's bounded free two-step positivity and one-step non-positivity claim. They do not witness any gauge-background or U-integrated RP extension.
 - **auditor confidence:** high
+
+### `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the finite free staggered two-step transfer-matrix surface supplied by the retained-bounded parent, T_hat^2 advances 2 a_τ and therefore reconstructs the vacuum-subtracted Hamiltonian and conditional gap with the factor 1/(2 a_τ); interacting, continuum, universal-nondegeneracy, clustering, and physical-mass claims are excluded.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00072-axiom_first_spectrum_conditi`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because T_hat^2 advances one two-step block, the logarithmic generator is H := -(1/(2 a_τ)) log(T_hat^2/M_T), while using 1/a_τ doubles every excitation energy and gap.  _(class `A`)_
+- **chain closes:** False — The factor-of-two algebra closes on the scoped retained-bounded parent, but the mandatory source-shape no-go discipline gate does not close because alternate-carrier, interacting, and continuum routes remain outside the tested packet. A terminal clean or decoration verdict is therefore unavailable under the binding gate.
+- **rationale:** The load-bearing operation is finite-dimensional logarithmic spectral calculus applied to one upstream parent that already supplies the two-step spacing and T_hat^2=exp(-2a_τH_hat). The runner performs substantive matrix computations and correctly re-exhibits the factor-of-two normalization on the bounded free finite-Fock-space surface. However, the binding no-go discipline gate fails because several required alternative-route classes remain explicitly untested, so the result must remain conditional despite the correctness of the scoped algebra.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the mandatory no-go gate cannot pass because alternate-carrier, interacting-dynamics, and continuum-limit routes are explicitly outside the tested positive normalization claim and remain OPEN or UNTESTED.
 
 ### `background_independence_note`
 

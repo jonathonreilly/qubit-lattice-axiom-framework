@@ -50,7 +50,8 @@ no_go_routes:
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
 review_disposition: independent_source_review_pass
-pr_status: not_ready
+pr_status: open_mergeable_checks_running
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 next_exact_action: >-
   Derive the absorbing-classical-record plus coherent-dilation block form for
   a local CP instrument, formalize the record-observable quotient, and attempt

@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_constructive_uv_bridge_minimal_surface_nonidentifiability_2026_07_11.py
+runner_sha256: 43ab52f01533b4c8d2bf3b015feeabd590a7b393a2db46bd26dcbe4e60f107f9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+===============================================================================
+YT CONSTRUCTIVE UV BRIDGE MINIMAL-SURFACE NON-IDENTIFIABILITY CERTIFICATE
+===============================================================================
+
+--- [A] allowed-premise source guards
+[PASS] (A01) current one-site algebra is M_2(C)
+[PASS] (A02) current lattice is nearest-neighbor Z^3
+[PASS] (A03) Admissibility explicitly does not choose a Hamiltonian or transfer operator
+[PASS] (A04) source/action and physical-observable identification remain outside the axioms
+[PASS] (A05) dimensionless coupling content requires a separate derivation/bridge/admission
+
+--- [M] explicit nonempty shared axiom reduct
+[PASS] (M01) record projectors are exact idempotents
+[PASS] (M02) empty and scalar-tie conditions allow the full domain
+[PASS] (M03) the fixed rule varies between two aligned neighbor conditions
+[PASS] (M04) the tested rule is neighbor-order blind and covariant under a frame swap
+[PASS] (M05) the three-record history is sequentially admissible and permanent
+[PASS] (M06) finite scalar record readout is exactly additive on disjoint domains  [2+1=3]
+[PASS] (M07) a constant law gives one answer and privileges no tested record state
+
+--- [E] conservative endpoint expansions
+[PASS] (E01) the two displayed endpoint assignments are exact and distinct  [1147/1250 != 1]
+[PASS] (E02) the historical decimal is exactly 1147/1250
+  Analytic gate: conservative expansion of the disjoint theory is proved in the note, not self-certified here.
+
+--- [B] exact endpoint-preserving bridge witnesses
+[PASS] (B01) quintic switch has exact endpoints q(0)=0 and q(1)=1
+[PASS] (B02) constant joins are C2 at both ends
+[PASS] (B03) transition density is nonnegative: q'=30u^2(1-u)^2
+[PASS] (B04) switch transition mass is exactly one
+[PASS] (B05) unit-interval transition centroid is exactly 1/2
+[PASS] (B06) IR, diffuse, and UV switches preserve identical endpoints
+[PASS] (B07) their transition centroids are exactly separated  [1/40, 1/2, 39/40]
+[PASS] (B08) the UV witness transition is confined to x>=0.95
+[PASS] (B09) the exact UV predicate separates the UV switch from diffuse and IR switches
+
+--- [F] infinite endpoint-preserving profile freedom
+[PASS] (F01) twelve polynomial perturbations preserve both endpoints exactly
+[PASS] (F02) the twelve perturbations are exactly linearly independent  [rank=12]
+[PASS] (F03) exact calculus gives min h_n'=-1 and w_n'>=1-epsilon=1/2 for n=1..12
+
+--- [C] analytic-proof firewall
+  The runner certifies explicit finite witnesses only.
+  The conservative-expansion implication and physical-identification boundary remain analytic.
+
+===============================================================================
+FINAL TALLY: 26 PASS / 0 FAIL
+Claim boundary: free-symbol selection no-go on current minimal surface; no positive endpoint derived.
+===============================================================================
+
+----- stderr -----
+

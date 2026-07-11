@@ -13,7 +13,8 @@ to a UV-localized class. It is a bounded *consistency check*: given an
 imported physical endpoint `y_t(v) = 0.9176`, three endpoint-preserving
 profile families (logistic, error-function, smoothstep) can each be tuned
 within a narrow UV-localized window so that their best fit reproduces the
-imported endpoint with cross-family spread `<= 0.0252%`.
+imported endpoint with maximum absolute target deviation `<= 0.0252%`. The
+family-to-family endpoint span is about `0.0258%` relative to the target.
 
 The endpoint `y_t(v) = 0.9176` is imported, not derived. The runner's best
 rows are explicitly chosen by minimizing deviation from that imported target.
@@ -64,8 +65,8 @@ The bounded claim this note licenses is narrow:
 
 > *Conditional on* the imported endpoint `y_t(v)=0.9176` and *conditional on*
 > restricting to a pre-selected UV-localized window with three chosen
-> endpoint-preserving profile families, the per-family best fit reproduces the
-> imported endpoint with cross-family spread `<= 0.0252%`.
+> endpoint-preserving profile families, every per-family best fit reproduces
+> the imported endpoint with maximum absolute target deviation `<= 0.0252%`.
 
 It does not establish that the interacting lattice bridge actually belongs to
 the UV-localized class, nor that the UV-localized class is uniquely selected
@@ -74,9 +75,8 @@ not a derivation.
 
 ## What remains open (load-bearing gaps)
 
-To upgrade this row from `audited_numerical_match` to `audited_clean`, the
-following structural gaps must be closed, none of which the present runner
-addresses:
+For a first-principles positive endpoint/class claim, the following structural
+gaps must be closed, none of which the present runner addresses:
 
 1. derive the endpoint `y_t(v) = 0.9176` from the framework axioms rather
    than importing it as a target;
@@ -89,6 +89,17 @@ addresses:
 All three are operator/theorem problems and are out of scope for this note.
 The note therefore stops at the bounded numerical-match claim and does not
 attempt to upgrade beyond it.
+
+## Exact current-premise boundary (non-load-bearing see-also)
+
+`YT_CONSTRUCTIVE_UV_BRIDGE_MINIMAL_SURFACE_NONIDENTIFIABILITY_NO_GO_NOTE_2026-07-11.md`
+proves a separate exact negative boundary: on the current minimal axiom
+surface, freely adjoined Yukawa-endpoint and bridge-switch symbols are not
+physically identified or selected. That sibling no-go does not replace this
+row's positive bounded content and is intentionally not a dependency edge.
+The old target-conditioned scan remains what it was; the sibling result
+isolates why profile retuning cannot turn it into a first-principles
+derivation.
 
 ## Audit history
 

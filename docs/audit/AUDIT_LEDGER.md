@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2843 |
+| unaudited | 2842 |
 | audit_in_progress | 10 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,21 +45,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 433 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3190 |
+| `unaudited` | 3189 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2045 |
+| `bounded_theorem` | 2044 |
 | `decoration` | 25 |
 | `meta` | 354 |
 | `no_go` | 458 |
 | `open_gate` | 195 |
-| `positive_theorem` | 663 |
+| `positive_theorem` | 664 |
 
 | criticality | count |
 |---|---:|
@@ -569,6 +569,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
+| `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
@@ -1606,6 +1607,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The arithmetic closes after assuming the bridge and supplied numerical inputs, but neither the bridge nor the selection of the mixed-scale comparator is derived from the restricted packet.
 - **rationale:** Issue: the runner assumes the contested five-sixths bridge by evaluating v_cb**(6/5), imports alpha_s(v) from a helper rooted in the hard-coded CANONICAL_PLAQUETTE = 0.5934, and uses mixed-scale PDG values as the close comparator. Why this blocks: it verifies algebra and a scale-dependent numerical coincidence rather than deriving the bridge or scale-selection rule from framework premises. Repair target: independently derive both the bridge and comparator-scale selection, then make the runner construct them without hard-coding the contested inputs. Claim boundary until fixed: the SU(3) identity, one-loop transport exponent, and conditional numerical decompositions are supported, but the claimed physical preference for the mixed/self-scale surface is not.
 - **auditor confidence:** high
+
+### `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The Clifford relations imply Pauli existence, central omega with square -I, and exactly two 2-dimensional irreducible complex representations up to complex-linear isomorphism; unitary uniqueness was not established.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T120935Z-e9b7665b-00002-cl3_pauli_irrep_uniqueness_n`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Each chirality summand maps to M_2(C), so Schur's lemma forces dimension 2 and unitary uniqueness.  _(class `A`)_
+- **chain closes:** False — The algebraic classification up to complex-linear isomorphism closes from Cl(3,0) as the real algebra M_2(C), its complexification, and Schur's lemma. The stronger unitary-equivalence statement needs a supplied compatible Hermitian/*-representation structure; otherwise a non-unitary similarity of the Pauli matrices need not be unitarily equivalent in the fixed inner product.
+- **rationale:** The runner genuinely performs 56 exact algebraic checks for the canonical Pauli realizations, pseudoscalar relations, chirality projectors, and finite-dimensional probes. It does not establish uniqueness for arbitrary representations, and Schur's lemma plus the Wedderburn decomposition yields complex-linear equivalence, not unitary equivalence without a *-representation or compatible-inner-product hypothesis. Thus the algebraic core is sound, but U3 is broader than the supplied assumptions.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: nonunitary_similarity remains open and supplies a counterexample to unitary uniqueness under the representation definition actually stated.
 
 ### `claude_complex_action_carryover_note`
 

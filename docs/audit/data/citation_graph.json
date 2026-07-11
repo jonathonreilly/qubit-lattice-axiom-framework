@@ -40829,6 +40829,10 @@
       "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+      "to": "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11"
+    },
+    {
       "from": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
       "to": "minimal_axioms"
     },
@@ -112161,7 +112165,7 @@
         "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fb6b6e40d946dfb5088ca74580f69c5a6a32bb6b9e0dfcc2c204d8d8a47a789f",
+      "note_hash": "dd9e14148fae4a97aca8c256b75311bc2e070a270b028501f18e4d68d37e106c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -117578,10 +117582,11 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c54a55a7ebd6424671ebb1d385c0e5fedc22759d03741fc01d2a5dc87a1f909d",
+      "note_hash": "50cd09dea1a24ac7ff2581c0c8a1f6082079fb2ca23166375c693d161e20a089",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 3 \u2014 Species Reduction Bridge Narrow Theorem"
@@ -117989,6 +117994,18 @@
       "path": "docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md",
       "runner_path": "scripts/staggered_only_det_positivity_case_a_2026-05-17.py",
       "title": "Staggered-Only det(M_KS + m\u00b7I) > 0 \u2014 Sub-Theorem Note (Case A standalone)"
+    },
+    "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11": {
+      "claim_id": "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "b47084709d0cf1cae866328bda2bbcf3ceaf63e293c1da548d6783e87773ac2c",
+      "path": "docs/STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md",
+      "runner_path": "scripts/frontier_staggered_os0_supplied_action_ks_blocking_four_taste_module_2026_07_11.py",
+      "title": "Supplied OS0 Staggered Action: KS Blocking and Four-Taste Module Narrow Theorem"
     },
     "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03": {
       "claim_id": "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03",
@@ -128972,6 +128989,7 @@
     "staggered_newton_blocking_sensitivity_note_2026-04-11",
     "staggered_newton_reproduction_note_2026-04-11",
     "staggered_only_det_positivity_case_a_note_2026-05-17",
+    "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11",
     "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16",
     "staggered_self_consistent_two_body_note_2026-04-11",
     "staggered_test_mass_companion_note_2026-04-11",
@@ -129151,7 +129169,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1632,
+      "bounded_theorem": 1633,
       "decoration": 3,
       "meta": 333,
       "no_go": 336,
@@ -129160,7 +129178,7 @@
       "positive_theorem": 278
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2032,
+      "bounded_theorem": 2033,
       "decoration": 3,
       "meta": 333,
       "no_go": 439,
@@ -129168,10 +129186,10 @@
       "open_gate": 206,
       "positive_theorem": 658
     },
-    "edge_count": 14563,
+    "edge_count": 14564,
     "leaf_count": 1325,
-    "node_count": 3919,
-    "root_count": 1112,
-    "runners_with_path": 3540
+    "node_count": 3920,
+    "root_count": 1113,
+    "runners_with_path": 3541
   }
 }

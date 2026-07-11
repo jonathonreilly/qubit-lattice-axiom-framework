@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 664,
+    "critical": 665,
     "high": 332,
     "leaf": 1132,
     "medium": 760
@@ -1566,28 +1566,25 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audited_conditional",
+      "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
-      "claim_scope": "Only the exact d=4 identities 2^4=16=4\u00b74 and dim_C V_+ + dim_C V_-=4 were checked; the asserted staggered-taste interpretation and framework-specific non-sufficiency boundary were not closed from the restricted authorities.",
+      "claim_id": "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
-      "deps": [
-        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "audited_conditional",
+      "deps": [],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.593,
-      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "queue_reason": "non_terminal_conditional",
+      "load_bearing_score": 10.594,
+      "note_path": "docs/STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
-      "transitive_descendants": 1091
+      "runner_path": "scripts/frontier_staggered_os0_supplied_action_ks_blocking_four_taste_module_2026_07_11.py",
+      "transitive_descendants": 1092
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4803,6 +4800,32 @@
       "ready": false,
       "runner_path": "scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py",
       "transitive_descendants": 1116
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11"
+      ],
+      "direct_in_degree": 7,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 13.593,
+      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
+      "transitive_descendants": 1091
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -82277,5 +82300,5 @@
     }
   ],
   "ready_count": 596,
-  "total_pending": 2888
+  "total_pending": 2889
 }

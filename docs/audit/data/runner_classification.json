@@ -35344,12 +35344,12 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 0,
         "D": 1
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": "B",
       "runner": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py"
     },
     "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17": {
@@ -35663,6 +35663,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/staggered_only_det_positivity_case_a_2026-05-17.py"
+    },
+    "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11": {
+      "assert_count": 1,
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_staggered_os0_supplied_action_ks_blocking_four_taste_module_2026_07_11.py"
     },
     "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03": {
       "assert_count": 1,
@@ -46211,12 +46223,12 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 0,
         "D": 1
       },
       "decoration_candidate": false,
-      "dominant_class": "D",
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/audit_companion_staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_2026_05_17.py": {
@@ -77466,6 +77478,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_staggered_os0_supplied_action_ks_blocking_four_taste_module_2026_07_11.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11"
+      ],
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_staggered_scalar_parity_lapse_coupling_external_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -93477,14 +93504,14 @@
   "stats": {
     "decoration_candidates": 716,
     "dominant_class_distribution": {
-      "A": 513,
-      "B": 662,
+      "A": 514,
+      "B": 663,
       "C": 1317,
-      "D": 456,
+      "D": 455,
       "none": 458
     },
-    "runners_classified": 3406,
+    "runners_classified": 3407,
     "runners_with_C": 1799,
-    "runners_with_D": 1096
+    "runners_with_D": 1097
   }
 }

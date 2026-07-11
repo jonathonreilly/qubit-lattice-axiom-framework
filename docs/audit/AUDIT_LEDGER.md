@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 353 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2810 |
+| unaudited | 2812 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 48 |
+| ~~audited_conditional~~ | 47 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,16 +46,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 27 |
 | `audited_clean` | 444 |
-| `audited_conditional` | 48 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3160 |
+| `unaudited` | 3162 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2044 |
+| `bounded_theorem` | 2045 |
 | `decoration` | 26 |
 | `meta` | 357 |
 | `no_go` | 462 |
@@ -64,7 +64,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 755 |
+| `critical` | 756 |
 | `high` | 395 |
 | `medium` | 946 |
 | `leaf` | 1651 |
@@ -74,9 +74,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3406
+- runners classified: 3407
 - runners with (C) first-principles compute hits: 1799
-- runners with (D) external comparator hits: 1096
+- runners with (D) external comparator hits: 1097
 - decoration candidates (no C, no D): 716
 
 ## Top 25 by load-bearing score (topology only)
@@ -627,7 +627,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
-| `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `tick_admissibility_realization_bridge_clause_to_predicate_narrow_theorem_note_2026-07-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-current | A | - |
@@ -6613,27 +6612,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The retained Cl(3) authority and standard semisimple representation theory support M1, C1, the invertible-equivalence statement, and the k>=2 counterexamples. The repaired *-module premise also makes the polar-decomposition proof of unitary equivalence sound. However, Q1 obtains physical irreducibility by assuming P-QBIT, whose text already declares the standard two-dimensional irreducible carrier; the runner guards that declaration and checks its consequences but does not derive or independently authorize it.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
-
-### `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16`
-
-- **Note:** [`STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Only the exact d=4 identities 2^4=16=4·4 and dim_C V_+ + dim_C V_-=4 were checked; the asserted staggered-taste interpretation and framework-specific non-sufficiency boundary were not closed from the restricted authorities.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-20260711-143506-1ca58681-staggered_dirac_substep3-003`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** At d = 4, 16 = 4·4, and the Cl(3,0) chirality-pair module dimension 2+2=4 matches the factor labeled N_spinor.  _(class `A`)_
-- **chain closes:** False — The arithmetic and Cl(3) dimension match close, but the identification of one factor as the standard four-taste count and the account of its origin from Hamming grading plus spin-diagonal reduction require an uncited staggered-fermion theorem. The runner assigns those facts as constants and does not derive the missing blocking/projection bridge.
-- **rationale:** The exact arithmetic and Cl(3) module-dimension match are genuine class-A consequences of the two retained authorities. However, R2 and R4 additionally import the standard staggered taste count and spin-diagonal reduction despite the note admitting no physics convention beyond arithmetic. The runner hard-codes the regulator counts and taste formula, while its Hamming enumeration establishes only 16 corners, not four projected tastes. The No-Go Discipline gate also fails because the constructive Kogut-Susskind route remains untested and the current kinetic-isotropy primitive partially changes the note's substrate-wall accounting.
-- **auditor confidence:** high
-- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
-  - **gate failures:**
-    - N1: the constructive Kawamoto-Smit projection route is untested.
-    - N2: the source's three-wall presentation is not the current minimal wall set after accounting for OS0 geometry and collapsing projection with its taste-count consequence.
-    - N3: standard staggered taste counting and projection are hidden admitted physics despite the stated arithmetic-only context.
-    - N5: Hamming-weight enumeration is overextended into an untested lattice-block taste assertion.
-    - N6: the kinetic-isotropy primitive partially retires the generic substrate wall but is not incorporated into the source boundary.
-    - N7: the strongest constructive staggered-reduction steelman remains unresolved.
 
 ### `staggered_fermion_card_2026-04-10`
 

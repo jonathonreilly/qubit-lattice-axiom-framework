@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Class-A certificate over retained inputs for the seed-0 synthesis.
+"""Meta cross-note comparison over two frozen seed-0 source packets.
 
-The two family control computations are retained-grade inputs. This runner
-performs class-B dependency/provenance verification, parses the frozen source
-outputs, and then checks the class-A finite sign/order implication. It
-deliberately has no expected direct-dM magnitudes or expected R_hist values.
+This runner verifies the exact identity and SHA-256 of the two frozen source
+logs and their parent runners, parses only those packets, and reports the
+two-row sign/order comparison. It deliberately has no expected direct-dM
+magnitudes or expected R_hist values and makes no theorem-grade claim.
 """
 
 from __future__ import annotations
 
 import json
+import hashlib
 import math
 import re
 from dataclasses import dataclass
@@ -47,6 +48,8 @@ class SourceSpec:
     note_path: str
     runner_path: str
     log_path: str
+    runner_sha256: str
+    log_sha256: str
 
 
 SOURCES = (
@@ -56,6 +59,8 @@ SOURCES = (
         note_path="docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md",
         runner_path="scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py",
         log_path="logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt",
+        runner_sha256="ad4671d0c347b6ec9c6c7602e83e262986425306bf7b6018893f653bf3f7b183",
+        log_sha256="487297bd521bea04dbafdce12e3c59d8faa9acb59e169b9982a6a31104be0737",
     ),
     SourceSpec(
         family="Fam2",
@@ -63,6 +68,8 @@ SOURCES = (
         note_path="docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md",
         runner_path="scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py",
         log_path="logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt",
+        runner_sha256="06127f24dfc9a2efd0e86c1e7a921e10e423e7bbb083d973ca7d10902dbeb22d",
+        log_sha256="9a14b49586473ad0f5ef3a81b559fee26dfc85156e9e9b160390d8e1c2a1c619",
     ),
 )
 
@@ -97,6 +104,16 @@ def check_dependency(spec: SourceSpec, rows: dict[str, dict[str, object]]) -> No
     require(spec.log_path in note, f"{spec.claim_id}: frozen log not registered in source note")
     require((ROOT / spec.runner_path).is_file(), f"{spec.claim_id}: source runner is missing")
     require((ROOT / spec.log_path).is_file(), f"{spec.claim_id}: frozen log is missing")
+    runner_sha = hashlib.sha256((ROOT / spec.runner_path).read_bytes()).hexdigest()
+    log_sha = hashlib.sha256((ROOT / spec.log_path).read_bytes()).hexdigest()
+    require(
+        runner_sha == spec.runner_sha256,
+        f"{spec.claim_id}: parent runner SHA-256 drifted: {runner_sha}",
+    )
+    require(
+        log_sha == spec.log_sha256,
+        f"{spec.claim_id}: frozen log SHA-256 drifted: {log_sha}",
+    )
 
 
 def parse_log(spec: SourceSpec) -> dict[str, object]:
@@ -195,8 +212,9 @@ def main() -> int:
 
     print("WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_ASSERTIONS=TRUE")
     print("WAVE_DIRECT_DM_H025_SEED0_DEPENDENCIES_RETAINED_GRADE=TRUE")
-    print("WAVE_DIRECT_DM_H025_SEED0_DEPENDENCY_CLASS=B_CROSS_NOTE_INPUT_VERIFICATION")
-    print("WAVE_DIRECT_DM_H025_SEED0_LOAD_BEARING_CLASS=A_ALGEBRAIC_INEQUALITY_CLOSURE")
+    print("WAVE_DIRECT_DM_H025_SEED0_ARTIFACT_SHA256_PINS=TRUE")
+    print("WAVE_DIRECT_DM_H025_SEED0_CLAIM_TYPE=META")
+    print("WAVE_DIRECT_DM_H025_SEED0_ROLE=TWO_ROW_CROSS_NOTE_COMPARISON_SUPPORT")
     for family in ("Fam1", "Fam2"):
         row = parsed[family]["rows"][SELECTED_STRENGTH]  # type: ignore[index]
         spread = parsed[family]["computed_spread_percent"]

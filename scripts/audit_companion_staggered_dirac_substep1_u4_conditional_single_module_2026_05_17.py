@@ -3,7 +3,7 @@
 `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`.
 
 The repaired source note separates two surfaces: the current Qubit-
-axiom possibility-domain algebra plus the registered physical-carrier
+axiom possibility-domain algebra plus the declared bounded physical-carrier
 premise (P-QBIT), where the single-module piece is premise-conditional,
 and the abstract Cl(3)-module surface, where multi-copy faithful
 representations remain counterexamples to any algebra-only U4
@@ -22,10 +22,10 @@ Load-bearing content:
   (C1) On the abstract representation surface, if k(x) = 1
        (single-module-per-site selection), then
        dim_C H_x = 2.
-  (C2a) Under the canonical positive-chirality convention, H_x = ρ_+
+  Premise-free invertible equivalence (alias C2a): under the canonical positive-chirality convention, H_x = ρ_+
         and ρ_x(γ_i) = σ_i on H_x ≅ ℂ² up to invertible algebra
         equivalence (no inner product consumed).
-  (C2b) Under the *-module part of (P-QBIT), polar decomposition
+  Unitary *-equivalence upgrade (alias C2b): under the *-module part of (P-QBIT), polar decomposition
         upgrades the invertible intertwiner to a unitary intertwiner.
 
 The runner ALSO exhibits the counter-example surface k >= 2:
@@ -36,9 +36,9 @@ The runner ALSO exhibits the counter-example surface k >= 2:
 
 Companion role: not a new claim row, not a new source note, no status
 promotion. Provides audit-friendly evidence at exact precision that
-(a) Q1 explicitly consumes the registered physical-carrier premise,
+(a) Q1 explicitly consumes the declared bounded physical-carrier premise,
 (b) the conditional sub-claim (C1) closes on the cited retained narrow
-theorem, (c) C2a and C2b remain distinct on non-* and * copies, and
+theorem, (c) the invertible and unitary equivalence claims remain distinct on non-* and * copies, and
 (d) the Cl(3)-algebra-only route does NOT close the
 single-module statement on the abstract algebraic surface alone
 (counter-example construction).
@@ -195,7 +195,7 @@ def main() -> int:
     print("Audit companion (exact-symbolic) for")
     print("staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17")
     print("Goal: sympy verification of premise-pinned Q1, abstract")
-    print("  (M1)-(M2), (C1), (C2a)-(C2b), and the k >= 2 counterexample surface")
+    print("  (M1)-(M2), (C1), invertible/unitary equivalence (aliases C2a/C2b), and the k >= 2 counterexample surface")
     print("=" * 88)
 
     # ---------------------------------------------------------------------
@@ -211,22 +211,22 @@ def main() -> int:
     sigmas_m = [-sigma_1, -sigma_2, -sigma_3]
 
     # ---------------------------------------------------------------------
-    section("Part -1: Registered-premise and current-authority surface guard")
+    section("Part -1: Declared bounded-premise and current-authority surface guard")
     # ---------------------------------------------------------------------
     note_text = NOTE_PATH.read_text(encoding="utf-8")
     normalized_note_text = " ".join(note_text.split())
-    p_qbit_registered = (
-        "## Accepted Premise Registration (P-QBIT)" in note_text
+    p_qbit_declared = (
+        "## Declared Bounded Carrier Premise (P-QBIT)" in note_text
         and "(P-QBIT) Physical one-site carrier packet." in note_text
-        and "**Status:** accepted-premise packet entry." in note_text
+        and "**Status:** declared bounded-premise packet." in note_text
     )
     check(
-        "source note registers the accepted physical-carrier premise (P-QBIT)",
-        p_qbit_registered,
-        detail="named accepted-premise packet, not a derived carrier theorem",
+        "source note declares the bounded physical-carrier premise (P-QBIT)",
+        p_qbit_declared,
+        detail="named bounded-premise packet, not a derived carrier theorem",
     )
     q1_consumes_p_qbit = (
-        "Under the registered carrier premise (P-QBIT), the physical carrier has "
+        "Under the declared bounded carrier premise (P-QBIT), the physical carrier has "
         "`k(x) = 1` and `dim_C H_x = 2`; the retained Cl(3) split then identifies "
         "that carrier with one faithful two-dimensional Pauli module."
     ) in normalized_note_text
@@ -258,8 +258,8 @@ def main() -> int:
     check(
         "source note classifies k>=2 as spectator relative to (P-QBIT)",
         "spectator" in note_text
-        and "registered physical one-site carrier" in normalized_note_text,
-        detail="multi-copy reps are excluded by the registered premise, not the algebra",
+        and "declared physical one-site carrier" in normalized_note_text,
+        detail="multi-copy reps are excluded by the declared premise, not the algebra",
     )
     check(
         "old bare non-closure wording removed",
@@ -357,7 +357,7 @@ def main() -> int:
         )
 
     # ---------------------------------------------------------------------
-    section("Part 4: (C2a) invertible equivalence and (C2b) unitary upgrade")
+    section("Part 4: premise-free invertible equivalence (alias C2a) and unitary upgrade (alias C2b)")
     # ---------------------------------------------------------------------
 
     # Schur's lemma: only a scalar multiple of I commutes with all three
@@ -389,7 +389,7 @@ def main() -> int:
     #   [σ_2, Q] = 0 forces b = -c (combined with above: b = c = 0)
     #   [σ_3, Q] = 0 forces b = c = 0, a, d free
     check(
-        "(C2a) Schur within ρ_+: only 2x2 commuting with all σ_i is scalar*I",
+        "Premise-free invertible equivalence (alias C2a): Schur commutant is scalar*I",
         schur_holds,
         detail="intertwiner uniqueness up to scalar multiple"
     )
@@ -405,14 +405,14 @@ def main() -> int:
     A = Matrix([[seeded_entries[0], seeded_entries[1]],
                 [seeded_entries[2], seeded_entries[3]]])
     check(
-        "(C2a) seeded complex A is invertible and not unitary",
+        "Premise-free invertible equivalence (alias C2a): seeded A is invertible and not unitary",
         simplify(A.det()) != 0 and not mat_eq(A.H * A, I2),
         detail=f"seed=20260710, det(A)={simplify(A.det())}",
     )
 
     rho_nonstar = [simplify(A * sigma * A.inv()) for sigma in sigmas_p]
     check(
-        "(C2a) A-conjugated copy is algebraic Cl(3) but not a *-representation",
+        "Premise-free invertible equivalence (alias C2a): A-conjugated copy is not a *-representation",
         clifford_relations_ok(rho_nonstar)
         and any(not mat_eq(gamma, gamma.H) for gamma in rho_nonstar),
         detail="self-adjoint Pauli generators become non-self-adjoint",
@@ -424,12 +424,12 @@ def main() -> int:
         mat_eq(S * sigmas_p[i], rho_nonstar[i] * S) for i in range(3)
     )
     check(
-        "(C2a) exact intertwiner equations give a one-dimensional Schur space",
+        "Premise-free invertible equivalence (alias C2a): intertwiner space is one-dimensional",
         len(nonstar_intertwiners) == 1 and s_intertwines,
         detail="computed from T rho(gamma_i) = rho'(gamma_i) T",
     )
     check(
-        "(C2a) computed algebra intertwiner exists, is invertible, and is not unitary",
+        "Premise-free invertible equivalence (alias C2a): computed intertwiner is invertible and non-unitary",
         simplify(S.det()) != 0 and not mat_eq(S.H * S, I2),
         detail="invertible equivalence does not imply unitary conjugacy",
     )
@@ -441,7 +441,7 @@ def main() -> int:
     W = Matrix([[1, sym_I], [sym_I, 1]]) / sympy.sqrt(2)
     rho_star = [simplify(W * sigma * W.H) for sigma in sigmas_p]
     check(
-        "(C2b) unitary-conjugated copy is an exact *-representation",
+        "Unitary *-equivalence upgrade (alias C2b): conjugated copy is an exact *-representation",
         mat_eq(W.H * W, I2)
         and clifford_relations_ok(rho_star)
         and all(mat_eq(gamma, gamma.H) for gamma in rho_star),
@@ -455,12 +455,12 @@ def main() -> int:
         mat_eq(T * sigmas_p[i], rho_star[i] * T) for i in range(3)
     )
     check(
-        "(C2b) exact *-to-* intertwiner equations have Schur dimension one",
+        "Unitary *-equivalence upgrade (alias C2b): *-intertwiner space has dimension one",
         len(star_intertwiners) == 1,
         detail="a nonzero solution was computed from all three generators",
     )
     check(
-        "(C2b) chosen computed intertwiner T is invertible and exact",
+        "Unitary *-equivalence upgrade (alias C2b): computed intertwiner T is invertible",
         simplify(T.det()) != 0 and t_intertwines and not mat_eq(T.H * T, I2),
         detail="T is a non-unitary scalar multiple of the computed basis",
     )
@@ -475,19 +475,19 @@ def main() -> int:
         and all(mat_eq(abs_T * sigma, sigma * abs_T) for sigma in sigmas_p)
     )
     check(
-        "(C2b) |T|=(T†T)^(1/2) is a positive scalar intertwiner",
+        "Unitary *-equivalence upgrade (alias C2b): |T| is a positive scalar intertwiner",
         abs_t_positive_scalar,
         detail=f"T†T={gram_scalar} I_2, |T|={simplify(abs_T[0, 0])} I_2",
     )
 
     U = simplify(T * abs_T.inv())
     check(
-        "(C2b) polar factor U=T|T|^{-1} is unitary",
+        "Unitary *-equivalence upgrade (alias C2b): polar factor U is unitary",
         mat_eq(U.H * U, I2) and mat_eq(U * U.H, I2),
         detail="exact symbolic polar normalization",
     )
     check(
-        "(C2b) polar unitary U exactly intertwines all three generators",
+        "Unitary *-equivalence upgrade (alias C2b): U intertwines all three generators",
         all(mat_eq(U * sigmas_p[i], rho_star[i] * U) for i in range(3)),
         detail="unitary conjugacy follows only on the *-to-* surface",
     )
@@ -565,7 +565,7 @@ def main() -> int:
 
     enumeration = [
         (0, [(0, 0)], 0, "non-Clifford (zero-rep)"),
-        (1, [(1, 0), (0, 1)], 2, "registered (P-QBIT) carrier; conditional C1 on abstract surface"),
+        (1, [(1, 0), (0, 1)], 2, "declared bounded (P-QBIT) carrier; conditional C1 on abstract surface"),
         (2, [(2, 0), (0, 2), (1, 1)], 4, "counter-example to Cl(3)-algebra-only closure"),
         (3, [(3, 0), (2, 1), (1, 2), (0, 3)], 6, "counter-example to Cl(3)-algebra-only closure"),
         (4, [(4, 0), (3, 1), (2, 2), (1, 3), (0, 4)], 8, "counter-example to Cl(3)-algebra-only closure"),
@@ -591,12 +591,12 @@ def main() -> int:
     # ---------------------------------------------------------------------
 
     # The whole point of this note:
-    # - (Q1) closes under the registered carrier premise (P-QBIT).
+    # - (Q1) closes under the declared bounded carrier premise (P-QBIT).
     # - (C1) closes conditionally on the cited retained narrow theorem.
     # - Cl(3) algebra alone does not close the selection (counterexamples exist).
     check(
-        "Current Qubit-surface (Q1) is pinned to the registered carrier premise",
-        p_qbit_registered and q1_consumes_p_qbit
+        "Current Qubit-surface (Q1) is pinned to the declared bounded carrier premise",
+        p_qbit_declared and q1_consumes_p_qbit
         and current_axiom_link and stale_axiom_link not in note_text,
         klass="A",
         detail="source guard, not a hard-coded physical-dimension check"

@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py
-runner_sha256: 7a35702606434110b82c46ee70172fb7df66e38ffe2d51caf5e46e3cefc62d43
+runner_sha256: 532cbb2fb98740096280d8678dd344f84fe4962a044498f63eb0202e7eb1476e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.85
+elapsed_sec: 1.03
 status: ok
 ----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17
 Goal: sympy verification of premise-pinned Q1, abstract
-  (M1)-(M2), (C1), (C2a)-(C2b), and the k >= 2 counterexample surface
+  (M1)-(M2), (C1), invertible/unitary equivalence (aliases C2a/C2b), and the k >= 2 counterexample surface
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
@@ -18,14 +18,14 @@ Part 0: Pauli realization and positive/negative chirality
 ----------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------
-Part -1: Registered-premise and current-authority surface guard
+Part -1: Declared bounded-premise and current-authority surface guard
 ----------------------------------------------------------------------------------------
-  [PASS (A)] source note registers the accepted physical-carrier premise (P-QBIT)  (named accepted-premise packet, not a derived carrier theorem)
+  [PASS (A)] source note declares the bounded physical-carrier premise (P-QBIT)  (named bounded-premise packet, not a derived carrier theorem)
   [PASS (A)] source note's current-framework Q1 explicitly consumes (P-QBIT)  (physical k=1/dim_C=2 is premise-pinned)
   [PASS (A)] source note links the current 2026-06-29 four-axiom authority  (Qubit axiom supplies the possibility-domain algebra only)
   [PASS (A)] source note has no markdown link to the stale 2026-06-05 path  (historical path may appear only as non-link provenance)
   [PASS (A)] source note keeps abstract representation counterexample surface  (counterexamples survive when (P-QBIT) is removed)
-  [PASS (A)] source note classifies k>=2 as spectator relative to (P-QBIT)  (multi-copy reps are excluded by the registered premise, not the algebra)
+  [PASS (A)] source note classifies k>=2 as spectator relative to (P-QBIT)  (multi-copy reps are excluded by the declared premise, not the algebra)
   [PASS (A)] old bare non-closure wording removed  (full realization gate remains separate)
   [PASS (A)] Pauli basis spans M_2(C) as the one-qubit operator algebra  (rank{I,sigma_1,sigma_2,sigma_3}=4)
   [PASS (A)] Pauli ρ_+ satisfies Cl(3) relations
@@ -69,19 +69,19 @@ Part 3: Conditional sub-claim (C1): k=1 ⇒ dim_C = 2
   [PASS (A)] (C1) k=1 case (n_+, n_-) = (0, 1): dim_C = 2  (conditional single-module sub-claim verified)
 
 ----------------------------------------------------------------------------------------
-Part 4: (C2a) invertible equivalence and (C2b) unitary upgrade
+Part 4: premise-free invertible equivalence (alias C2a) and unitary upgrade (alias C2b)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (C2a) Schur within ρ_+: only 2x2 commuting with all σ_i is scalar*I  (intertwiner uniqueness up to scalar multiple)
-  [PASS (A)] (C2a) seeded complex A is invertible and not unitary  (seed=20260710, det(A)=4 + 2*I)
-  [PASS (A)] (C2a) A-conjugated copy is algebraic Cl(3) but not a *-representation  (self-adjoint Pauli generators become non-self-adjoint)
-  [PASS (A)] (C2a) exact intertwiner equations give a one-dimensional Schur space  (computed from T rho(gamma_i) = rho'(gamma_i) T)
-  [PASS (A)] (C2a) computed algebra intertwiner exists, is invertible, and is not unitary  (invertible equivalence does not imply unitary conjugacy)
-  [PASS (A)] (C2b) unitary-conjugated copy is an exact *-representation  (both source and target preserve gamma_i*=gamma_i)
-  [PASS (A)] (C2b) exact *-to-* intertwiner equations have Schur dimension one  (a nonzero solution was computed from all three generators)
-  [PASS (A)] (C2b) chosen computed intertwiner T is invertible and exact  (T is a non-unitary scalar multiple of the computed basis)
-  [PASS (A)] (C2b) |T|=(T†T)^(1/2) is a positive scalar intertwiner  (T†T=50 I_2, |T|=5*sqrt(2) I_2)
-  [PASS (A)] (C2b) polar factor U=T|T|^{-1} is unitary  (exact symbolic polar normalization)
-  [PASS (A)] (C2b) polar unitary U exactly intertwines all three generators  (unitary conjugacy follows only on the *-to-* surface)
+  [PASS (A)] Premise-free invertible equivalence (alias C2a): Schur commutant is scalar*I  (intertwiner uniqueness up to scalar multiple)
+  [PASS (A)] Premise-free invertible equivalence (alias C2a): seeded A is invertible and not unitary  (seed=20260710, det(A)=4 + 2*I)
+  [PASS (A)] Premise-free invertible equivalence (alias C2a): A-conjugated copy is not a *-representation  (self-adjoint Pauli generators become non-self-adjoint)
+  [PASS (A)] Premise-free invertible equivalence (alias C2a): intertwiner space is one-dimensional  (computed from T rho(gamma_i) = rho'(gamma_i) T)
+  [PASS (A)] Premise-free invertible equivalence (alias C2a): computed intertwiner is invertible and non-unitary  (invertible equivalence does not imply unitary conjugacy)
+  [PASS (A)] Unitary *-equivalence upgrade (alias C2b): conjugated copy is an exact *-representation  (both source and target preserve gamma_i*=gamma_i)
+  [PASS (A)] Unitary *-equivalence upgrade (alias C2b): *-intertwiner space has dimension one  (a nonzero solution was computed from all three generators)
+  [PASS (A)] Unitary *-equivalence upgrade (alias C2b): computed intertwiner T is invertible  (T is a non-unitary scalar multiple of the computed basis)
+  [PASS (A)] Unitary *-equivalence upgrade (alias C2b): |T| is a positive scalar intertwiner  (T†T=50 I_2, |T|=5*sqrt(2) I_2)
+  [PASS (A)] Unitary *-equivalence upgrade (alias C2b): polar factor U is unitary  (exact symbolic polar normalization)
+  [PASS (A)] Unitary *-equivalence upgrade (alias C2b): U intertwines all three generators  (unitary conjugacy follows only on the *-to-* surface)
 
 ----------------------------------------------------------------------------------------
 Part 5: Counter-example surface k >= 2 (no Cl(3)-algebra-only closure)
@@ -108,7 +108,7 @@ Part 7: No-k-from-Schur-alone counterexample
 Part 8: Enumeration table consistency
 ----------------------------------------------------------------------------------------
   [PASS (C)] enumeration row k=0: dim_C = 0 (zero-rep)  (non-Clifford (zero-rep))
-  [PASS (C)] enumeration row k=1: dim_C = 2k = 2 via (n_+,n_-)=(1,0)  (registered (P-QBIT) carrier; conditional C1 on abstract surface)
+  [PASS (C)] enumeration row k=1: dim_C = 2k = 2 via (n_+,n_-)=(1,0)  (declared bounded (P-QBIT) carrier; conditional C1 on abstract surface)
   [PASS (C)] enumeration row k=2: dim_C = 2k = 4 via (n_+,n_-)=(2,0)  (counter-example to Cl(3)-algebra-only closure)
   [PASS (C)] enumeration row k=3: dim_C = 2k = 6 via (n_+,n_-)=(3,0)  (counter-example to Cl(3)-algebra-only closure)
   [PASS (C)] enumeration row k=4: dim_C = 2k = 8 via (n_+,n_-)=(4,0)  (counter-example to Cl(3)-algebra-only closure)
@@ -116,7 +116,7 @@ Part 8: Enumeration table consistency
 ----------------------------------------------------------------------------------------
 Part 9: Final consistency — current surface vs abstract surface
 ----------------------------------------------------------------------------------------
-  [PASS (A)] Current Qubit-surface (Q1) is pinned to the registered carrier premise  (source guard, not a hard-coded physical-dimension check)
+  [PASS (A)] Current Qubit-surface (Q1) is pinned to the declared bounded carrier premise  (source guard, not a hard-coded physical-dimension check)
   [PASS (A)] Abstract conditional (C1) verified: k=1 ⇒ dim_C = 2  (closed on retained Cl(3) classification)
   [PASS (A)] Cl(3) algebra alone does not select k=1 (counter-examples k>=2 admissible)  (multi-copy reps reappear when (P-QBIT) is removed)
   [PASS (B)] Remaining open gates are realization gates beyond the single-module carrier  (Grassmann/JW/Kawamoto-Smit/physical-species rows remain separate)

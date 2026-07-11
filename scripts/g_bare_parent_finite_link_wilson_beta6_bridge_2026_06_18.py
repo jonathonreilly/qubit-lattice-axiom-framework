@@ -39,6 +39,7 @@ surface:
 
 from __future__ import annotations
 
+import math
 from pathlib import Path
 
 import numpy as np
@@ -336,7 +337,12 @@ def section_D(cfg: FieldConfig, F_lat: np.ndarray) -> dict[float, float]:
     FF = float(Fa @ Fa)
     a = 2e-3
     out: dict[float, float] = {}
-    for beta in (2.0 * N_C, 24.0, 1.5, 12.0):
+    betas = (2.0 * N_C, 24.0, 1.5, 12.0)
+    check(
+        "tested Wilson matching domain has beta > 0",
+        all(beta > 0.0 for beta in betas),
+    )
+    for beta in betas:
         UP = cfg.plaquette(a)
         s_val = beta * (1.0 - np.trace(UP).real / N_C)
         k = s_val / (a**4 * FF)
@@ -352,6 +358,12 @@ def section_D(cfg: FieldConfig, F_lat: np.ndarray) -> dict[float, float]:
             f"beta={beta}: constructed matched slot gamma*^2 -> 2 N_c / beta",
             abs(g2 - g2_pred) / g2_pred < 5e-3,
             f"gamma*^2={g2:.6f}, pred={g2_pred:.6f}",
+        )
+        gamma_star = math.sqrt(g2)
+        check(
+            f"beta={beta}: gamma* is the positive matched-coupling root",
+            gamma_star > 0.0 and abs(gamma_star**2 - g2) < 1e-12,
+            f"gamma*={gamma_star:.6f}",
         )
         check(
             f"beta={beta}: constructed product beta * gamma*^2 -> 2 N_c",
@@ -411,25 +423,29 @@ def section_E(configs: list[FieldConfig], matched: dict[float, float]) -> None:
     s_link = s_readbacks[0]
 
     pin_beta = 2.0 * N_C
+    gamma_pin = math.sqrt(matched[pin_beta])
     check(
-        "slots agree exactly at the algebraic pin beta = 2 N_c",
-        abs(matched[pin_beta] - s_link**2) < 5e-3,
-        f"gamma*^2={matched[pin_beta]:.6f}, s^2={s_link**2:.6f}",
+        "positive slots agree at the algebraic pin beta = 2 N_c",
+        abs(gamma_pin - s_link) < 5e-3,
+        f"gamma*={gamma_pin:.6f}, s={s_link:.6f}",
     )
+    gamma_24 = math.sqrt(matched[24.0])
     check(
         "mismatched-slot exhibit at beta = 24: gamma*(24) != s on identical data",
-        abs(matched[24.0] - s_link**2) > 0.5,
-        f"gamma*^2={matched[24.0]:.6f} vs s^2={s_link**2:.6f}",
+        abs(gamma_24 - s_link) > 0.49,
+        f"gamma*={gamma_24:.6f} vs s={s_link:.6f}",
     )
+    gamma_1p5 = math.sqrt(matched[1.5])
     check(
         "mismatched-slot exhibit at beta = 3/2: gamma*(3/2) != s",
-        abs(matched[1.5] - s_link**2) > 0.5,
-        f"gamma*^2={matched[1.5]:.6f}",
+        abs(gamma_1p5 - s_link) > 0.5,
+        f"gamma*={gamma_1p5:.6f}",
     )
+    gamma_12 = math.sqrt(matched[12.0])
     check(
         "mismatched-slot exhibit at beta = 12: gamma*(12) != s",
-        abs(matched[12.0] - s_link**2) > 0.3,
-        f"gamma*^2={matched[12.0]:.6f}",
+        abs(gamma_12 - s_link) > 0.25,
+        f"gamma*={gamma_12:.6f}",
     )
 
 # ---------------------------------------------------------------------------
@@ -461,6 +477,8 @@ def section_G() -> None:
     require_contains("theorem", bridge_flat, "set only by the independent audit lane")
     require_contains("theorem", bridge_flat, "non-load-bearing convention context")
     require_contains("theorem", bridge_flat, "This theorem locates the pin but does not choose it")
+    require_contains("theorem", bridge_text, "gamma*(beta) := +sqrt(2 N_c / beta) > 0")
+    require_contains("theorem", bridge_flat, "equality of the squares is equivalent to equality of the slots themselves")
     require_contains("bridge", bridge_flat, "mismatched-slot")
     require_contains("bridge", bridge_flat, "does not claim:")
     require_contains("bridge", bridge_flat, "Wilson plaquette action-surface selection")

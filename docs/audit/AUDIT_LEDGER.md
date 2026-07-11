@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 81 |
+| **retained** | 82 |
 | **retained_no_go** | 27 |
 | **retained_bounded** | 350 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2819 |
-| audit_in_progress | 22 |
+| audit_in_progress | 21 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 26 |
-| `audited_clean` | 440 |
+| `audit_in_progress` | 25 |
+| `audited_clean` | 441 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
@@ -120,7 +120,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_taste_generation_theorem` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
@@ -147,6 +146,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `action_power_scaling_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alt_connectivity_family_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `alt_connectivity_family_failure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
@@ -833,6 +833,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `stale embedded PASS=41/JTS-residue transcript state conflicts with live PASS=13/JTS-derived runner state`
   - `canonical ISSR1/JTS theorem notes are not registered as this row's one-hop dependencies`
 - **auditor confidence:** high
+
+### `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24`
+
+- **Note:** [`ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md`](../../docs/ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For abstract positive scalars α_bare and u_0, with α_LM := α_bare/u_0 and α_s(v) := α_bare/u_0², the geometric-mean, logarithmic-mean, and equal-ratio identities hold; no numerical plaquette value or physical coupling identification was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00029-alpha_lm_geometric_mean_iden`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Substituting α_LM = α_bare/u_0 and α_s(v) = α_bare/u_0² gives α_LM² = α_bare·α_s(v).  _(class `A`)_
+- **chain closes:** True — The conclusions follow exactly by substitution, positivity of the defined quantities, and elementary logarithm and ratio laws. The helper's hard-coded retained values are used only in non-load-bearing numerical checks.
+- **rationale:** The load-bearing proof is a genuine class-(A) symbolic closure on abstract positive inputs, and the primary runner independently performs the corresponding SymPy substitutions. The imported plaquette constants affect only illustrative checks and are explicitly excluded from the theorem's scope. This is not class (E) or (F): the conclusion is a constraint among three defined quantities, rather than the introduction or identification of a symbol.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`
 

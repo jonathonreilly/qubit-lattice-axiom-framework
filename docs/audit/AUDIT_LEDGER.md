@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 81 |
 | **retained_no_go** | 24 |
-| **retained_bounded** | 349 |
+| **retained_bounded** | 350 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2819 |
-| audit_in_progress | 26 |
+| audit_in_progress | 25 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 30 |
-| `audited_clean` | 436 |
+| `audit_in_progress` | 29 |
+| `audited_clean` | 437 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
@@ -140,7 +140,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rconn_derived_note` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
-| `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -476,6 +475,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `spectral_closure_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `spectral_symmetry_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `stable_post_record_dial_location_certificate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.6 | A | - |
 | `staggered_backreaction_capture_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_iterative_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_live_capture_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6307,6 +6307,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The affine contraction identity follows by direct subtraction, and 0<alpha<1 gives attraction. Substitution into pi_s, r(s), and Q(s) gives (1/2,1/2), 1/2, and 2/3 at s=0, with the table's s=1 entries also checking algebraically.
 - **rationale:** The audited claim is deliberately bounded to stability under a supplied affine reset map and a supplied dial parametrization, not selection of that map or a physical dial value. Independent algebra confirms the contraction, stationarity, and displayed dial substitutions without using the runner implementation path. The runner contains many documentation and sibling-note string checks, but the source note's load-bearing mathematical claim closes from the displayed definitions and standard algebra.
 - **auditor confidence:** high
+
+### `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite even periodic L^3 staggered-eta kinematics: every S3 axis ordering is related to the identity ordering by a site-local Z2 gauge transformation. No physical generation-carrier identification, positivity-to-C3 mechanism, continuum limit, or thermodynamic-limit claim was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-sol-xhigh-five-judge-panel-axis-r2-20260711`  (codex-gpt-5.6; independence=judicial_review)
+- **load-bearing step:** Substitute the supplied staggered eta formulas into the plaquette, Polyakov-holonomy, and site-sign coboundary relations and verify the resulting identities for all six axis orderings.  _(class `A`)_
+- **chain closes:** True — A mandatory five-judge Sol/xhigh panel voted unanimously 5-0 for the second audit tuple. The eta field, finite even periodic lattice, target relations, and axis permutations are supplied; the runner verifies their algebraic consequences and does not generate new framework-baseline content, so class A is correct. The bounded clean scope excludes generation-carrier identification, positivity-to-C3 dynamics, and continuum or thermodynamic claims.
+- **rationale:** A mandatory five-judge Sol/xhigh panel voted unanimously 5-0 for the second audit tuple. The eta field, finite even periodic lattice, target relations, and axis permutations are supplied; the runner verifies their algebraic consequences and does not generate new framework-baseline content, so class A is correct. The bounded clean scope excludes generation-carrier identification, positivity-to-C3 dynamics, and continuum or thermodynamic claims.
+- **auditor confidence:** judicial
+- **No-Go Discipline:** `PASS`
 
 ### `staggered_backreaction_capture_closure_note`
 

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 672,
+    "critical": 671,
     "high": 332,
     "leaf": 1131,
     "medium": 760
@@ -2793,28 +2793,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_generation_degeneracy_minimal_breaking_discriminator.py",
       "transitive_descendants": 525
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "cross_confirmation_disagreement",
-      "claim_id": "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
-      "claim_scope": "For the standard staggered eta link field on a finite even periodic L^3 lattice, every one of the six axis-ordering conventions is site-locally Z2 gauge-equivalent, so the eta convention itself does not distinguish an S3 ordering; no positivity-to-C3 mechanism, kinetic-law derivation, continuum limit, or species interpretation was audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "disagreement",
-      "deps": [],
-      "direct_in_degree": 7,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.531,
-      "note_path": "docs/STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_staggered_axis_symmetry_s3_discriminator.py",
-      "transitive_descendants": 522
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -82433,6 +82411,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 599,
-  "total_pending": 2895
+  "ready_count": 598,
+  "total_pending": 2894
 }

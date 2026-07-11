@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/newton_law_potential_kernel_scope_check.py
-runner_sha256: 7ee59c9cc2a282fd4523243e6203d03bb90a78af4307b30ec3fbca0c85989638
+runner_sha256: 90ff66e407f454fe06ed6602afdabd57b1a8d1a3908d26c21491d424a444a8ee
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.24
@@ -14,6 +14,10 @@ Newton potential-kernel algebra scope check
 [PASS] source note contains scope phrase: not yet a physical Newton force law
 [PASS] source note contains scope phrase: test-mass force/source response rule
 [PASS] source note contains scope phrase: BA3_TEST_MASS_COUPLING_DERIVED=FALSE
+[PASS] source note contains scope phrase: [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
+[PASS] source note contains scope phrase: (P-LIN)
+[PASS] source note contains scope phrase: accepted-premise packet entry
+[PASS] source note contains scope phrase: 2026-07-11 premise wiring
 [PASS] source note excludes overclaim phrase: No additional physics is imported beyond
 [PASS] source note excludes overclaim phrase: unconditional closure from the framework baseline
 [PASS] source note excludes overclaim phrase: retained Newton-law closure
@@ -25,7 +29,7 @@ Newton potential-kernel algebra scope check
 ==============================================================================
 SUMMARY
 ==============================================================================
-PASSED: 12/12
+PASSED: 16/16
 NEWTON_POTENTIAL_KERNEL_ALGEBRA=TRUE
 POTENTIAL_GRADIENT_INVERSE_SQUARE=TRUE
 PHYSICAL_FORCE_LAW_CLAIMED=FALSE

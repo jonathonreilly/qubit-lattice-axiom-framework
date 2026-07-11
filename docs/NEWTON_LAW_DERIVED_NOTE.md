@@ -33,6 +33,31 @@ not yet a physical Newton force law.
 No new axiom is introduced. No observed gravitational value, fitted coupling,
 or test-mass response rule is load-bearing.
 
+## Premise wiring (2026-07-11)
+
+The two granted premises now carry explicit authorities:
+
+- **Kernel form.** The supplied radial scalar kernel `G(r) = 1/(4 pi r)` is
+  the continuum-limit asymptotic normalization of the `Z^3` graph-Laplacian
+  Green function carried by the retained-bounded import authority
+  [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md),
+  cited at its bounded scope: this note consumes only the functional form
+  `1/(4 pi r)` of the leading asymptotic, not any first-principles
+  derivation claim (which that authority explicitly does not make).
+- **Source-linearity.** Registered as an explicit accepted premise:
+
+```text
+(P-LIN)  Source-linearity accepted-premise entry (2026-07-11).
+         The formal scalar potential responds linearly to the formal
+         source coefficient: phi(r) = M G(r). This is a modeling premise
+         of the potential-kernel algebra packet; it is registered, not
+         derived, and no superposition dynamics is claimed.
+```
+
+**Status:** accepted-premise packet entry. Deriving source-linearity from a
+lattice field equation (and the physical response bridge listed under
+Non-Claims) remains outside this row.
+
 ## In-Scope Theorem
 
 Let `r > 0`, `M` be a formal source coefficient, and define the supplied
@@ -42,7 +67,8 @@ radial scalar kernel
 G(r) = 1/(4 pi r).
 ```
 
-By source-linearity, the formal scalar potential is
+(kernel form per the wired import authority above). By source-linearity
+(P-LIN), the formal scalar potential is
 
 ```text
 phi(r) = M G(r) = M/(4 pi r).
@@ -60,7 +86,25 @@ Therefore the scalar gradient magnitude is
 |grad phi| = M/(4 pi r^2).
 ```
 
-This is class-A algebra/calculus on the supplied kernel and source-linearity.
+This is class-A algebra/calculus on the wired kernel authority and the
+registered source-linearity premise (P-LIN).
+
+## Repair Note
+
+**2026-07-11 premise wiring.** The audit of this row returned
+`audited_conditional` with, verbatim:
+
+> missing_dependency_edge: cite a retained-grade or explicitly accepted
+> premise establishing the supplied kernel and source-linearity, then
+> re-audit the updated note.
+
+Both granted premises are now carried explicitly: the kernel form is wired
+(markdown link = dependency edge) to the retained-bounded `Z^3`
+Green-asymptotic import authority at its bounded scope, and source-linearity
+is registered as the explicit accepted premise (P-LIN). No claim content
+changed; the narrowed potential-kernel algebra and every Non-Claims item are
+exactly as before. This dated line moves the note hash so the row re-enters
+for re-audit.
 
 ## Non-Claims
 

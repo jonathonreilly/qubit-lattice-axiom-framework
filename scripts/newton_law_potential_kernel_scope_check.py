@@ -33,6 +33,12 @@ def main() -> int:
         "not yet a physical Newton force law",
         "test-mass force/source response rule",
         "BA3_TEST_MASS_COUPLING_DERIVED=FALSE",
+        # 2026-07-11 premise wiring pins:
+        "[`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`]"
+        "(LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)",
+        "(P-LIN)",
+        "accepted-premise packet entry",
+        "2026-07-11 premise wiring",
     ]
     forbidden = [
         "No additional physics is imported beyond",

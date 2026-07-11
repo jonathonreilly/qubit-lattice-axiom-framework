@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 359 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2802 |
+| unaudited | 2801 |
 | audit_in_progress | 21 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 50 |
+| ~~audited_conditional~~ | 51 |
 | ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 25 |
 | `audited_clean` | 451 |
-| `audited_conditional` | 50 |
+| `audited_conditional` | 51 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 15 |
-| `unaudited` | 3152 |
+| `unaudited` | 3151 |
 
 | claim_type | count |
 |---|---:|
@@ -629,6 +629,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
@@ -5821,6 +5822,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The registered runner cache is complete and matches the source note's two-family table and safe-read boundary. The audited result is only the finite smoke-probe noncollapse/partial-survival statement, not a universal retarded-gravity law or refinement-stability theorem.
 - **rationale:** The current cache supports the note's bounded table exactly: the retarded field differs from the instantaneous field on both compact and refined families, but the sign/direction is row-dependent. The source already confines the claim to a causality/scheduling smoke probe and disclaims a full wave theory or universal law. Residual risk is limited to the small two-family sample and lack of assertion gates, which does not block the audited finite readout.
 - **auditor confidence:** high
+
+### `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28`
+
+- **Note:** [`RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md`](../../docs/RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Static fixed-background classical staggered two-step recurrence positivity and finite permutation-conjugation invariance of det/spec/trace; the quantum transfer-kernel/second-quantization identification and all U-integrated, P2, and AC_phi_lambda consequences are excluded.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00068-rp_p2_gauge_extension_and_re`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because h[U] is anti-Hermitian, the two-step classical transfer decomposes into 2x2 modal blocks with positive reciprocal eigenvalues, whose decaying eigenvalues are then identified with the single-particle quantum kernel t1^(2)[U].  _(class `A`)_
+- **chain closes:** False — The modal calculation proves positive eigenvalues for the static classical recurrence matrix, but the packet does not construct the physical one-particle quantum transfer operator or justify identifying the selected decaying roots alone with a positive Hermitian kernel. It also does not cover time-dependent temporal-gauge spatial links despite using broad arbitrary-background language.
+- **rationale:** Issue: the runner sorts the decaying eigenvalues of T2cl and defines a diagonal positive kernel from those numbers, rather than deriving the physical quantum transfer operator and its inner product from the Grassmann action. Why this blocks: positive roots of a classical recurrence do not by themselves establish that the corresponding quantum transfer kernel is positive Hermitian or that its many-body transfer is Gamma(t1). Repair target: construct the one-particle transfer operator, including its eigenvectors/metric and canonical Grassmann-to-Fock map, and separately state the static-background restriction. Claim boundary until fixed: the modal spectrum of the static classical recurrence and the determinant/spectrum/trace similarity invariances are valid finite linear-algebra results.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 has OPEN and UNTESTED routes for the physical transfer-kernel construction, time-dependent backgrounds, integrated gauge measure, and P2/readout bridge.
+    - N5 finds arbitrary-background rhetoric broader than the static slice-independent carrier tested.
+    - The strongest modal steelman does not supply the missing Grassmann-to-Fock operator construction.
 
 ### `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20`
 

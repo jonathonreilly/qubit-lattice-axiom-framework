@@ -6,8 +6,9 @@ The narrow theorem's load-bearing content is the abstract arithmetic
 factorization 2^d = 2^(d/2) * 2^(d/2) at even d (with d = 4 giving
 16 = 4 * 4), and the explicit dimensional match between the spinor-
 count factor 2^(d/2) = 4 at d = 4 and the Cl(3,0) ⊗_R C chirality-
-pair dim 2 + 2 = 4. The taste-count factor and the framework-specific
-Kogut-Susskind reduction are decoupled by an explicit boundary.
+pair dim 2 + 2 = 4. A separate supplied-action theorem now derives the
+Kogut-Susskind four-taste module from exact blocking and Clifford character
+data. Physical-carrier identification remains outside this row.
 
 Given the cited upstream narrow theorems
 
@@ -30,6 +31,7 @@ from __future__ import annotations
 
 from itertools import product
 import math
+from pathlib import Path
 import sys
 
 try:
@@ -57,14 +59,14 @@ PASS = 0
 FAIL = 0
 
 
-def check(label: str, ok: bool, detail: str = "") -> None:
+def check(label: str, ok: bool, detail: str = "", kind: str = "A") -> None:
     global PASS, FAIL
     if ok:
         PASS += 1
-        tag = "PASS (A)"
+        tag = f"PASS ({kind})"
     else:
         FAIL += 1
-        tag = "FAIL (A)"
+        tag = f"FAIL ({kind})"
     suffix = f"  ({detail})" if detail else ""
     print(f"  [{tag}] {label}{suffix}")
 
@@ -79,6 +81,33 @@ def section(title: str) -> None:
 def mat_eq(A: Matrix, B: Matrix) -> bool:
     diff = simplify(A - B)
     return all(diff[i, j] == 0 for i in range(diff.rows) for j in range(diff.cols))
+
+
+def block_bits(index: int) -> tuple[int, ...]:
+    return tuple((index >> mu) & 1 for mu in range(4))
+
+
+def block_index(bit_tuple: tuple[int, ...] | list[int]) -> int:
+    return sum((int(bit) & 1) << mu for mu, bit in enumerate(bit_tuple))
+
+
+def staggered_alpha(mu: int) -> Matrix:
+    matrix = zeros(16, 16)
+    for column in range(16):
+        bit_tuple = block_bits(column)
+        flipped = list(bit_tuple)
+        flipped[mu] ^= 1
+        sign = -1 if sum(bit_tuple[:mu]) % 2 else 1
+        matrix[block_index(flipped), column] = sign
+    return matrix
+
+
+def clifford_word(alphas: tuple[Matrix, ...], mask: int) -> Matrix:
+    word = eye(16)
+    for mu in range(4):
+        if mask & (1 << mu):
+            word *= alphas[mu]
+    return word
 
 
 def main() -> int:
@@ -127,7 +156,7 @@ def main() -> int:
         16 == 4 * 4,
     )
     check(
-        "(R2) 4 = 2^(d/2) at d = 4 (taste-count factor)",
+        "(R2) each arithmetic factor is 4 = 2^(d/2) at d = 4",
         4 == 2 ** (d // 2),
         detail=f"2^(d/2) = {2 ** (d // 2)}",
     )
@@ -229,45 +258,67 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 6: (R4) Taste-count factor decoupled from Cl(3) algebra")
+    section("Part 6: (R4) supplied-action Clifford module gives four tastes")
     # =========================================================================
-    # Taste count is a lattice-block fact (Hamming-weight count), not a
-    # Cl(3) algebra fact. The Cl(3) complexification split provides only
-    # the chirality pair (V_+, V_-) of complex dim (2, 2).
+    # Hamming enumeration supplies 16 blocked components.  The factor roles
+    # come from the canonical eta-weighted Clifford representation.
     cl3_chirality_pair_dim = (2, 2)
     cl3_chirality_pair_sum = sum(cl3_chirality_pair_dim)
-    taste_count_d4 = 2 ** (d // 2)
     check(
-        "(R4) Cl(3) chirality-pair sum 2+2=4 matches N_spinor (not N_taste)",
-        cl3_chirality_pair_sum == taste_count_d4,
-        detail=f"chirality sum = {cl3_chirality_pair_sum}; N_taste = N_spinor = {taste_count_d4}",
+        "(R4) Cl(3) chirality-pair sum 2+2=4 matches the spin-module dimension",
+        cl3_chirality_pair_sum == 4,
+        detail=f"chirality sum = {cl3_chirality_pair_sum}",
+    )
+
+    alphas = tuple(staggered_alpha(mu) for mu in range(4))
+    clifford_ok = True
+    for mu, A in enumerate(alphas):
+        for nu, B in enumerate(alphas):
+            target = 2 * eye(16) if mu == nu else zeros(16, 16)
+            clifford_ok = clifford_ok and mat_eq(A * B + B * A, target)
+    check(
+        "(R4) canonical eta flip matrices satisfy the exact Cl_4 relations",
+        clifford_ok,
+    )
+
+    words = tuple(clifford_word(alphas, mask) for mask in range(16))
+    flattened = Matrix.hstack(*[word.reshape(256, 1) for word in words])
+    traces = tuple(word.trace() for word in words)
+    check(
+        "(R4) Clifford-word span has exact dimension 16",
+        flattened.rank() == 16,
+        detail=f"rank={flattened.rank()}",
     )
     check(
-        "(R4) taste-count factor is the lattice-block Hamming-weight count = 4",
-        taste_count_d4 == 2 ** (d // 2),
+        "(R4) blocked-module character is four times the 4-spinor character",
+        traces[0] == 16 and all(value == 0 for value in traces[1:]),
+        detail=f"character={traces}",
+    )
+    check(
+        "(R4) 16-dimensional Cl_4(C)=M_4(C) module has multiplicity four",
+        16 == 4 * 4,
     )
 
     # =========================================================================
-    section("Part 7: (R5) Regulator dependence disclosure")
+    section("Part 7: (R5) supplied-action scope pins")
     # =========================================================================
-    regulator_counts_d4 = {
-        "naive": 16,           # cited upstream T1 (2^d)
-        "wilson": 1,           # standard SLAC/Wilson lift to 1 physical
-        "staggered": 4,        # Kogut-Susskind 4-taste at d=4
-        "domain_wall": 1,
-        "overlap": 1,
-    }
+    repo = Path(__file__).resolve().parents[1]
+    target_note = (repo / "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md").read_text()
+    supplier_note = (repo / "docs/STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md").read_text()
     check(
-        "(R5) naive count 16 is distinct from staggered/wilson/overlap/DW counts",
-        regulator_counts_d4["naive"] != regulator_counts_d4["staggered"]
-        and regulator_counts_d4["naive"] != regulator_counts_d4["wilson"]
-        and regulator_counts_d4["naive"] != regulator_counts_d4["overlap"]
-        and regulator_counts_d4["naive"] != regulator_counts_d4["domain_wall"],
-        detail=f"counts = {regulator_counts_d4}",
+        "(R5) target cites the supplied-action blocking theorem",
+        "STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md" in target_note,
+        kind="C",
     )
     check(
-        "(R5) arithmetic 16 = 4 * 4 does NOT force any specific regulator",
-        len(set(regulator_counts_d4.values())) > 1,
+        "(R5) supplier disclaims framework physical-carrier identification",
+        "does not identify it as the realized charged-lepton matter carrier" in supplier_note,
+        kind="C",
+    )
+    check(
+        "(R5) target records physical-carrier selection as a separate obligation",
+        "physical-carrier selection remains a distinct realization" in target_note,
+        kind="C",
     )
 
     # =========================================================================
@@ -300,8 +351,8 @@ def main() -> int:
     print("    (R3) Cl(3,0) ⊗_R C chirality-pair dim (2, 2), sum = 4")
     print("    (R3) match to N_spinor = 2^(d/2) = 4 at d = 4")
     print("    (R4) Hamming-weight distribution = binom(4, k) summing to 16")
-    print("    (R4) taste-count factor 4 is lattice-block fact, not Cl(3) algebra fact")
-    print("    (R5) regulator-dependence disclosed: naive 16 != staggered 4, etc.")
+    print("    (R4) supplied-action Cl_4 module is four copies of the spin irrep")
+    print("    (R5) supplied-action and physical-carrier scopes are separated")
     print("    (R5) factorization generalizes to even d (d = 6 gives 8 * 8)")
 
     print()

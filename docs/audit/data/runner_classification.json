@@ -3648,6 +3648,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py"
     },
+    "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11": {
+      "assert_count": 1,
+      "counts": {
+        "A": 39,
+        "B": 1,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py"
+    },
     "charged_lepton_selected_line_generation_selector_no_go_note_2026-04-27": {
       "assert_count": 1,
       "counts": {
@@ -47717,6 +47729,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py": {
+      "assert_count": 1,
+      "claims": [
+        "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11"
+      ],
+      "counts": {
+        "A": 39,
+        "B": 1,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/charged_lepton_value_one_counting_bit.py": {
@@ -93504,14 +93531,14 @@
   "stats": {
     "decoration_candidates": 718,
     "dominant_class_distribution": {
-      "A": 514,
+      "A": 515,
       "B": 663,
       "C": 1317,
       "D": 455,
       "none": 458
     },
-    "runners_classified": 3407,
+    "runners_classified": 3408,
     "runners_with_C": 1797,
-    "runners_with_D": 1096
+    "runners_with_D": 1097
   }
 }

@@ -65261,6 +65261,18 @@
       "runner_path": "scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py",
       "title": "Charged-Lepton Radiative Tau Selector Firewall"
     },
+    "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11": {
+      "claim_id": "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "70a4f934a134aeaf5ab2a92c36f4a7dcf7036a6a51f6126137f3aadfa9d40cc8",
+      "path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+      "runner_path": "scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py",
+      "title": "Registered Positive Mass Triple: Exact C3 Fourier Coordinates and Koide Identity"
+    },
     "charged_lepton_selected_line_generation_selector_no_go_note_2026-04-27": {
       "claim_id": "charged_lepton_selected_line_generation_selector_no_go_note_2026-04-27",
       "claim_type_author_hint": null,
@@ -112069,7 +112081,7 @@
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a9553bc20ab29a462315ad6ea3d3d3dea025c94752c2c5adacf6f7d8d7e7e46a",
+      "note_hash": "1ff4d0025a6f6dea4e87895eb8e69b715c64172dafd3109bc0b4d88bc2e82ad8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -128139,6 +128151,7 @@
     "charged_lepton_mass_hierarchy_review_note_2026-04-17_note_2026-05-17",
     "charged_lepton_op_local_source_selected_line_selector_no_go_note_2026-04-27",
     "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+    "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
     "charged_lepton_selected_line_generation_selector_no_go_note_2026-04-27",
     "charged_lepton_two_higgs_canonical_reduction_note",
     "charged_lepton_typeb_radian_readout_generation_selector_no_go_note_2026-04-27",
@@ -129080,7 +129093,7 @@
       "no_go": 336,
       "none": 1205,
       "open_gate": 132,
-      "positive_theorem": 280
+      "positive_theorem": 281
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 2031,
@@ -129089,12 +129102,12 @@
       "no_go": 439,
       "none": 248,
       "open_gate": 206,
-      "positive_theorem": 660
+      "positive_theorem": 661
     },
     "edge_count": 14545,
-    "leaf_count": 1329,
-    "node_count": 3920,
-    "root_count": 1114,
-    "runners_with_path": 3541
+    "leaf_count": 1330,
+    "node_count": 3921,
+    "root_count": 1115,
+    "runners_with_path": 3542
   }
 }

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 649,
     "high": 333,
-    "leaf": 1135,
+    "leaf": 1136,
     "medium": 760
   },
   "cycle_break_target_count": 49,
@@ -52967,6 +52967,28 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "charged_lepton_selected_line_generation_selector_no_go_note_2026-04-27",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -81996,6 +82018,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 596,
-  "total_pending": 2877
+  "ready_count": 597,
+  "total_pending": 2878
 }

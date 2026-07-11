@@ -4,10 +4,13 @@
 
 **Revised:** 2026-07-10
 
-**Status:** meta cross-note comparison/support on the frozen seed-`0`, `H=0.25`
-source packets; no theorem-grade or retained-status proposal
+**Type:** bounded_theorem
 
-**Claim type:** meta
+**Claim type:** bounded_theorem
+
+**Status:** bounded finite cross-note proposition on the exact SHA-pinned
+seed-`0`, `H=0.25` source packets. The proposition requires independent
+re-audit and carries no retained-status assignment.
 
 **Status authority:** source-note proposal only; the independent audit lane sets
 `audit_status` and `effective_status`.
@@ -96,16 +99,18 @@ from the same two retained-bounded controls. Thus the selected rows share
 negative sign and common depth ordering while remaining inside their respective
 controlled weak-field ladders.
 
-## Meta/support classification
+## Bounded-proposition classification
 
 The source computations are the load-bearing first-principles numerical work
 for the two family/seed ladders. This note does not redo that work and does not
 compare either output with an experimental or hand-selected target. It reads
 two retained-bounded inputs and applies sign and order relations.
 
-Reading, SHA-pinning, and comparing the two retained source packets is exact
-cross-note support. The sign tests and strict order comparisons do not turn the
-two hand-selected numerical rows into a new physics theorem.
+Reading, SHA-pinning, and comparing the two retained source packets supports
+the exact finite proposition stated above. Its theorem scope is only the
+conditional sign/order implication over those two frozen rows and their
+declared control ladders. It is not a structural law, a surface-selection
+result, or a portability theorem.
 
 No class-`(G)` numerical match remains: there is no target value in the runner
 and no observed or fitted comparator in the claim.
@@ -118,9 +123,11 @@ The current ledger's re-audit instruction is quoted verbatim:
 > runner and that no later source revision expands the claim beyond the two-row
 > tuned surface.
 
-This repair keeps exactly that two-row tuned surface, retypes it as `meta`, and
-adds exact log and parent-runner SHA-256 pins so the word “frozen” is enforced
-before either transcript is parsed.
+This repair keeps exactly that two-row tuned surface, types the evidence-bearing
+finite implication as `bounded_theorem`, and retains exact log and
+parent-runner SHA-256 pins so the word “frozen” is enforced before either
+transcript is parsed. Independent re-audit is required before any retained
+disposition.
 
 The distinction is scope, not rhetoric: a structural claim explaining the
 magnitudes or selecting `H = 0.25` and seed `0` would require a different
@@ -160,13 +167,14 @@ The runner prints, among its computed values:
 
 - `WAVE_DIRECT_DM_H025_SEED0_DEPENDENCIES_RETAINED_GRADE=TRUE`
 - `WAVE_DIRECT_DM_H025_SEED0_ARTIFACT_SHA256_PINS=TRUE`
-- `WAVE_DIRECT_DM_H025_SEED0_CLAIM_TYPE=META`
-- `WAVE_DIRECT_DM_H025_SEED0_ROLE=TWO_ROW_CROSS_NOTE_COMPARISON_SUPPORT`
+- `WAVE_DIRECT_DM_H025_SEED0_CLAIM_TYPE=BOUNDED_THEOREM`
+- `WAVE_DIRECT_DM_H025_SEED0_ROLE=SHA_PINNED_TWO_ROW_CONDITIONAL_NUMERICAL_PROPOSITION`
 - `WAVE_DIRECT_DM_H025_SEED0_SHARED_SIGN=negative`
 - `WAVE_DIRECT_DM_H025_SEED0_COMMON_ORDERING=Fam2_deeper_than_Fam1_at_strength_0.004`
 - `WAVE_DIRECT_DM_H025_SEED0_WEAK_FIELD_CONTROL=TRUE`
 - `WAVE_DIRECT_DM_H025_SEED0_PORTABILITY_LAW=FALSE`
 - `WAVE_DIRECT_DM_H025_STABLE_AMPLITUDE_LAW=FALSE`
 
-This meta row carries no retained-status proposal. Its two source rows retain
-their own independent audit grades.
+This bounded source proposition requires independent re-audit. It does not
+inherit a retained verdict merely because its two source rows retain their own
+independent audit grades.

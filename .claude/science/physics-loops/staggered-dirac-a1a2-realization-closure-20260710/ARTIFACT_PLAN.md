@@ -1,0 +1,24 @@
+# Artifact Plan
+
+## Completed
+
+- Separate source claim:
+  `docs/STAGGERED_DIRAC_MINIMAL_SURFACE_KINETIC_CORNER_NONFORCING_NO_GO_NOTE_2026-07-10.md`.
+- Deterministic runner:
+  `scripts/staggered_dirac_minimal_surface_kinetic_corner_nonforcing_2026_07_10.py`.
+- Fresh runner cache under `logs/runner-cache/`.
+- Exact infinite-`Z^3` quasi-local interaction and Fourier proof.
+- Full no-go-discipline N1-N8 packet.
+- Canonical bounded realization parent restored byte-for-byte to `origin/main`.
+- Review iteration 3 passed code/math, physics-boundary, and no-go/governance
+  lanes.
+- Disposable full audit pipeline and strict lint passed; generated authority
+  remained isolated and was discarded with the validation worktree.
+- Review PR
+  [#5125](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5125)
+  is open and unmerged.
+
+## Remaining
+
+Independent audit of the new `no_go` row is intentionally outside this science
+branch. No merge or audit verdict is part of this loop.

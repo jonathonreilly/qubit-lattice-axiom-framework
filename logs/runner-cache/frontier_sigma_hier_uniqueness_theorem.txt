@@ -1,19 +1,46 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sigma_hier_uniqueness_theorem.py
-runner_sha256: 0cdf363f44a3cc43ceb6a0110c5283b1140e5524976726810e712450fb6bdc30
+runner_sha256: 6be833668f1c1a72c8436daf81e0ceb72657c23e485e89e996f9928818099d6b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ================================================================================
-sigma_hier UNIQUENESS THEOREM (two-step)
+sigma_hier SUPPLIED-INPUT S3 TABLE UNIQUENESS (two-step)
 
-  Step 1 (9/9 magnitude filter): reduces S_3 from 6 to 2 permutations.
-  Step 2 (CP-phase discriminator): selects sigma=(2,1,0) uniquely.
-  Conclusion: sigma_hier = (2,1,0) is uniquely forced by the joint
-  requirement [9/9 NuFit 3-sigma magnitudes] AND [sin(delta_CP) < 0].
+  Inputs: parsed PIN, WINDOWS, and SIGN-GATE from note packet (P-SIG).
+  Step 1: 9/9 supplied-window filter reduces S_3 from 6 to 2 rows.
+  Step 2: supplied sign gate selects sigma=(2,1,0) uniquely.
+  Scope: finite table arithmetic on supplied inputs; no authority ratification.
 ================================================================================
+
+================================================================================
+Parsed supplied-input packet (P-SIG)
+================================================================================
+  PIN: m_* = 0.657061 ; delta_* = 0.933806 ; q_+* = 0.715042
+  WINDOWS:
+    U_e1: [0.801, 0.845]
+    U_e2: [0.513, 0.579]
+    U_e3: [0.143, 0.155]
+    U_mu1: [0.234, 0.500]
+    U_mu2: [0.471, 0.689]
+    U_mu3: [0.637, 0.776]
+    U_tau1: [0.271, 0.525]
+    U_tau2: [0.477, 0.694]
+    U_tau3: [0.613, 0.756]
+  SIGN-GATE: sin_delta_cp < 0
+
+  [PASS] (P-SIG) PIN contains exactly three finite supplied values
+  [PASS] (P-SIG) WINDOWS contains all nine labeled row-major entries
+  [PASS] (P-SIG) WINDOWS has finite ordered [lo, hi] pairs
+  [PASS] (P-SIG) SIGN-GATE is a supported parsed comparator  (sin_delta_cp < 0)
+  [PASS] Note surface contains '(P-SIG-a)'
+  [PASS] Note surface contains '(P-SIG-b)'
+  [PASS] Note surface contains '(P-SIG-c)'
+  [PASS] Note surface contains 'supplied-input packet entry'
+  [PASS] Note surface contains '## Repair Note (2026-07-11)'
+  [PASS] Note surface omits the superseded live-pin observational phrase
 
 ================================================================================
 Part 1: H at pinned chamber point — eigendecomposition
@@ -26,7 +53,7 @@ Part 1: H at pinned chamber point — eigendecomposition
   [PASS] signature(H_base) = (2, 0, 1) — same as H_pin (Sylvester)
 
 ================================================================================
-Part 2: STEP 1 — magnitude filter: which sigmas pass 9/9 NuFit ranges
+Part 2: STEP 1 — magnitude filter: supplied (P-SIG-b) windows
 ================================================================================
 
   sigma           n_pass    sin(dCP)    note
@@ -37,12 +64,12 @@ Part 2: STEP 1 — magnitude filter: which sigmas pass 9/9 NuFit ranges
   sigma=(1, 2, 0)  5/9 pass    sin(dCP)=+0.9998
   sigma=(2, 0, 1)  9/9 pass    sin(dCP)=+0.9874  <-- passes all 9 magnitudes
   sigma=(2, 1, 0)  9/9 pass    sin(dCP)=-0.9874  <-- passes all 9 magnitudes
-  [PASS] Exactly 2 of 6 S_3 permutations pass all 9 NuFit 3-sigma magnitudes  (passing: [(2, 0, 1), (2, 1, 0)])
+  [PASS] Exactly 2 of 6 S_3 permutations pass all 9 supplied magnitude windows  (passing: [(2, 0, 1), (2, 1, 0)])
   [PASS] The 2 magnitude-passing permutations are (2,0,1) and (2,1,0)  (found: [(2, 0, 1), (2, 1, 0)])
-  [PASS] All other 4 permutations fail >= 4 NuFit entries  (minimum failures in excluded permutations: 4)
+  [PASS] All other 4 permutations fail >= 4 supplied magnitude windows  (minimum failures in excluded permutations: 4)
 
 ================================================================================
-Part 3: STEP 2 — CP-phase discriminator between (2,0,1) and (2,1,0)
+Part 3: STEP 2 — supplied (P-SIG-c) CP-sign discriminator
 ================================================================================
 
   The two magnitude-passing permutations differ only by mu<->tau swap.
@@ -54,15 +81,15 @@ Part 3: STEP 2 — CP-phase discriminator between (2,0,1) and (2,1,0)
   [PASS] sigma=(2,0,1) gives sin(delta_CP) = +0.9874 (positive, delta_CP ~ +81 deg)  (sin(dCP) = +0.9874)
   [PASS] sigma=(2,1,0) gives sin(delta_CP) = -0.9874 (negative, delta_CP ~ -81 deg)  (sin(dCP) = -0.9874)
 
-  T2K (2021, NO) 1-sigma: delta_CP in [-200, -15] deg, central ~ -108 deg.
-  NOvA (2021, NO) similarly prefers sin(delta_CP) < 0.
-  Both experiments exclude sin(delta_CP) = +0.987 at better than 3-sigma.
+  Applying parsed SIGN-GATE: sin_delta_cp < 0
+  Its external observational authority is comparator context, not ratified here.
 
-  [PASS] sigma=(2,0,1): sin(delta_CP)=+0.987 is excluded by T2K/NOvA at >=2-sigma (T2K disfavors sin(dCP) > +0.5)  (sin(dCP) = +0.9874 > 0.5)
-  [PASS] sigma=(2,1,0): sin(delta_CP)=-0.987 is inside T2K/NOvA 2-sigma preferred region  (sin(dCP) = -0.9874 < 0)
+  [PASS] sigma=(2,0,1) fails the supplied SIGN-GATE  (sin(dCP) = +0.9874; gate: sin_delta_cp < 0)
+  [PASS] sigma=(2,1,0) passes the supplied SIGN-GATE  (sin(dCP) = -0.9874; gate: sin_delta_cp < 0)
+  [PASS] The supplied packet uniquely selects sigma=(2,1,0) from S_3  (selected: [(2, 1, 0)])
 
 ================================================================================
-Part 4: Physical sigma = (2, 1, 0) — full 9/9 NuFit detail
+Part 4: Selected sigma = (2, 1, 0) — full 9/9 supplied-window detail
 ================================================================================
 
   |U_PMNS| at pinned point, sigma=(2,1,0):
@@ -81,7 +108,7 @@ Part 4: Physical sigma = (2, 1, 0) — full 9/9 NuFit detail
   [PASS] |U_tau3| in [0.613, 0.756]  (val = 0.6671)
 
   [PASS] sin(delta_CP) = -0.9874 ± 0.001 at the physical sigma  (sin(dCP) = -0.9874)
-  [PASS] delta_CP ~ -81 deg (consistent with T2K/NOvA preferred region)  (sin(dCP) = -0.9874)
+  [PASS] delta_CP ~ -81 deg at the supplied pin  (sin(dCP) = -0.9874)
 
 ================================================================================
 Part 5: Non-magnitude-passing permutations — failure entries
@@ -93,38 +120,37 @@ Part 5: Non-magnitude-passing permutations — failure entries
   [PASS] All 4 magnitude-excluded permutations have >= 4 NuFit failures
 
 ================================================================================
-Theorem statement (conditional on PMNS observation):
+Part 6: corrupted-parse negative control (copy only)
+================================================================================
+  [PASS] Swapping one copied window's lo/hi fails validation or flips uniqueness  (window U_e1 copied as [0.845, 0.801]; well_formed=False; selected=[])
+  [PASS] Corrupted-parse negative control does not mutate the real packet arrays
 
-  At the pinned chamber point (m_*, delta_*, q_+*) = (0.657061, 0.933806,
-  0.715042), the hierarchy pairing sigma_hier = (2, 1, 0) is the unique
+================================================================================
+Theorem statement (on supplied packet (P-SIG)):
+
+  Supplied PIN: (m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042).
+  Given (P-SIG-a)-(P-SIG-c), sigma_hier = (2, 1, 0) is the unique
   element of S_3 satisfying both:
-    (1) all 9 |U_PMNS|_{ij} inside NuFit 5.3 NO 3-sigma ranges, AND
-    (2) sin(delta_CP) < 0, consistent with T2K/NOvA experimental preference.
+    (1) all 9 |U_PMNS|_{ij} inside the supplied windows, AND
+    (2) the supplied SIGN-GATE: sin_delta_cp < 0.
 
   Proof structure:
     - The 9/9 magnitude check reduces 6 S_3 elements to 2: (2,0,1) and
       (2,1,0), which differ only by a mu<->tau row swap.
     - The mu<->tau swap preserves all |U| magnitudes but reverses Jarlskog:
-        sigma=(2,0,1): sin(delta_CP) = +0.9874 (excluded by T2K/NOvA)
-        sigma=(2,1,0): sin(delta_CP) = -0.9874 (preferred by T2K/NOvA)
-    - T2K (2021, NO) and NOvA disfavor sin(delta_CP) > +0.5 at >=2-sigma.
-    - Therefore sigma=(2,0,1) is observationally disfavored and sigma=(2,1,0)
-      is the unique physically admissible pairing.
+        sigma=(2,0,1): sin(delta_CP) = +0.9874 (fails supplied gate)
+        sigma=(2,1,0): sin(delta_CP) = -0.9874 (passes supplied gate)
+    - Therefore the supplied packet selects only sigma=(2,1,0).
 
-  This promotes sigma_hier from an 'independent conditional' to an
-  'observationally unique' choice at the live pin: not derived from
-  Cl(3)/Z^3 alone, but uniquely fixed there by the combined
-  4-observable PMNS constraint.
-  This is a pinned-point theorem only, not a chamber-wide or
-  all-basin uniqueness theorem; other admitted basins must be
-  checked separately.
+  This is a supplied-input selection statement. It neither derives
+  sigma_hier from Cl(3)/Z^3 nor ratifies the pin, windows, sign gate,
+  physical sheet, or wider chamber/basin uniqueness.
 
-  The CP-phase prediction sin(delta_CP) = -0.9874 is then a
-  falsifiable geometric consequence: a confirmed >3-sigma positive sin(delta_CP)
-  measurement at DUNE/Hyper-K would rule out this pairing.
+  Conditional on supplied pin (P-SIG-a), sin(delta_CP) = -0.9874 is
+  the falsifiable computed prediction for the selected table row.
 ================================================================================
 
-PASS = 24
+PASS = 37
 FAIL = 0
 
 ----- stderr -----

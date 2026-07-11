@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/frontier_graded_constraint_menu_uniformity_c3_zero_info_2026_07_11.py
+runner_sha256: 9e35a7ad5694c870878941eff3e3e8c9cdc2c16207a3152edcd72d743a0c5e7a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+CHECK 01: PASS -- guard: proposal zero-information advertisement quoted verbatim
+CHECK 02: PASS -- guard: Class F memo uniform-on-symmetric-menus sentence quoted verbatim
+CHECK 03: PASS -- guard: Born note R4 full-symmetry premise quoted verbatim
+CHECK 04: PASS -- guard: C_3 canonical note carries the ratified dictionary p_s=a^2, p_d=2|b|^2
+CHECK 05: PASS -- A: {Ps,Pd} and {Ps,P1,P2} are eligible resolutions with Pd = P1 + P2
+CHECK 06: PASS -- A: uniformity gives w(Ps)=1/2 (2-menu) vs 1/3 (3-menu); H3 forbids both
+CHECK 07: PASS -- A: H2 forces w(Pd)=2/3 from the refinement, contradicting 2-menu 1/2
+CHECK 08: PASS -- A-cor: full group makes {Ps,P1,P2} a single orbit; uniformity there is forced
+CHECK 09: PASS -- B: rho=I/3 => w=(1/3,2/3), odds x=2, r=x/2=1 (dimension-weighting point)
+CHECK 10: PASS -- B: rho=diag(1/2,1/4,1/4) => w=(1/2,1/2), x=1, r=1/2 (equipartition point)
+CHECK 11: PASS -- B: exhibited automorphism X breaks diag(1/2,1/4,1/4); fixes I/3
+CHECK 12: PASS -- B: commutant of <Z,X> is 1-dimensional (scalar) => I/3 is the unique invariant rho
+CHECK 13: PASS -- B-fwd (sanity): supplied C_3 + doublet exchange fix diag(p_s,p_d/2,p_d/2) only
+CHECK 14: PASS -- C: R4 symmetry pays r=1; r=1/2 needs designation + equipartition (extra supply)
+CHECK 15: PASS -- C: rank(Ps)=1 != rank(Pd)=2; no automorphism maps Ps->Pd (menu not symmetric)
+CHECK 16: PASS -- dict: r=|b|^2/a^2=p_d/(2p_s); channel energies (3a^2,6|b|^2); odds x=2r
+CHECK 17: PASS -- dict: r=1 at |b|^2=a^2 (I/3); r=1/2 at a^2=2|b|^2 (equipartition)
+CHECK 18: PASS -- tie: DFT is unitary and carries J/3 (position) to diag(1,0,0)=Ps (character)
+SUMMARY note: docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md
+SUMMARY A: 'uniform on every menu' contradicts H2+H3 (2-menu 1/2 vs 3-menu 1/3).
+SUMMARY B: C_3 zero-information point under full symmetry is rho=I/3 => r=1; r=1/2 is diag(1/2,1/4,1/4), not full-group invariant.
+SUMMARY C: r=1/2 requires menu designation + per-cell equipartition; the two-cell menu is not symmetric (rank 1 vs rank 2 cells).
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----

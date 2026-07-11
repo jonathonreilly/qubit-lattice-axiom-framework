@@ -1,3 +1,3 @@
 # PR Backlog
 
-No PR failure has occurred. PR creation is pending branch delivery.
+No PR failure occurred. PR 5189 is open and mergeable.

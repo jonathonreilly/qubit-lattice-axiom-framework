@@ -1,5 +1,7 @@
 # Handoff
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5189
+
 The stale prompt describes the May 2 numerical-match audit. Current `main`
 already contains the May 6 live certificate and a May 7 independent
 `audited_clean` / `retained_bounded` row. This block preserves that narrow
@@ -14,6 +16,5 @@ weakens seven direct dependents (twenty transitive descendants) until an
 independent re-audit ratifies the repaired bounded scope. Validation confirmed
 the target becomes ready/unaudited; generated audit outputs are not shipped.
 
-Exact next action: commit the reviewed block, rebase onto current `origin/main`,
-push the science-fix branch, and open the review PR for independent audit after
-landing.
+Exact next action: land PR 5189 after review, then send
+`mirror_chokepoint_boundary_fit_note` to the independent audit lane.

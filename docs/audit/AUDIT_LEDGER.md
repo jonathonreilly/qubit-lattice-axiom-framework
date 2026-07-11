@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2796 |
+| unaudited | 2795 |
 | audit_in_progress | 21 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 53 |
-| ~~audited_failed~~ | 5 |
+| ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -48,19 +48,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 452 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 23 |
-| `audited_failed` | 27 |
+| `audited_failed` | 28 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 16 |
-| `unaudited` | 3146 |
+| `unaudited` | 3145 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2044 |
+| `bounded_theorem` | 2045 |
 | `decoration` | 26 |
 | `meta` | 357 |
 | `no_go` | 463 |
 | `open_gate` | 195 |
-| `positive_theorem` | 663 |
+| `positive_theorem` | 662 |
 
 | criticality | count |
 |---|---:|
@@ -676,6 +676,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
+| `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -3444,6 +3445,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The rank-one propagation identity follows algebraically from T_min = lambda vv^T with lambda^3 v_0 ||v||^4 = 1. Independently recomputing the finite matrices gives det(M)=1, ||offdiag(D_back)||_F=0.250338180104, and reconstruction error at numerical precision, so the diagonal-subfamily exclusion follows.
 - **rationale:** The source and helpers compute the finite objects from the displayed SU(3)/recurrence definitions rather than importing a contested premise or merely printing constants. The load-bearing membership exclusion is stronger than the optimizer residual: invertibility of M makes the pullback unique, and the independently recomputed pullback is plainly non-diagonal. The helper notes contain broader open Wilson-environment language, but the audited claim explicitly stays within the finite diagonal factorized-class packet and does not rely on closing that broader identification.
 - **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Only the conditional algebraic identity T=M D M and its matrix formula for a supplied diagonal D were established; no Wilson-derived diagonality of the stripped residual compression was established.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00077-gauge_vacuum_plaquette_sourc`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The note infers that the stripped residual compression is central and therefore character-diagonal solely because its weight is real, positive, and invariant under simultaneous conjugation.  _(class `A`)_
+- **chain closes:** False — Simultaneous-conjugation invariance preserves the class-function sector but does not imply that an operator is a central convolution operator or diagonal in irreducible characters. The packet supplies neither the stronger bi-invariance/commutation theorem nor an explicit Wilson-kernel computation establishing that property.
+- **rationale:** Issue: Theorem 2 conflates simultaneous-conjugation invariance with centrality in the representation-theoretic sense required for character diagonality. Why this blocks: even a positive self-adjoint kernel invariant under simultaneous conjugation can mix character sectors, while the runner assumes a diagonal D and verifies only the resulting matrix multiplication. Repair target: derive bi-invariance/convolution centrality for the actual stripped Wilson compression or compute its character matrix and prove that all off-diagonal entries vanish. Claim boundary until fixed: the factorized matrix formula is valid only conditionally for a supplied diagonal residual operator.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 has open and untested routes for proving actual Wilson residual centrality.
+    - N5 identifies untested resolution levels behind the note's closure rhetoric.
+    - The strongest N7 representation-theoretic steelman requires a symmetry not established in the packet.
 
 ### `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10`
 

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 651,
+    "critical": 650,
     "high": 333,
     "leaf": 1134,
     "medium": 761
@@ -2034,35 +2034,6 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py",
-      "transitive_descendants": 640
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py",
-        "scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py",
-        "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
-        "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
-      ],
-      "load_bearing_score": 14.324,
-      "note_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
       "transitive_descendants": 640
     },
     {
@@ -82050,6 +82021,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 596,
-  "total_pending": 2879
+  "ready_count": 595,
+  "total_pending": 2878
 }

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2789 |
+| unaudited | 2788 |
 | audit_in_progress | 27 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
-| ~~audited_renaming~~ | 16 |
+| ~~audited_renaming~~ | 17 |
 | ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -50,8 +50,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 23 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 6 |
-| `audited_renaming` | 16 |
-| `unaudited` | 3139 |
+| `audited_renaming` | 17 |
+| `unaudited` | 3138 |
 
 | claim_type | count |
 |---|---:|
@@ -710,6 +710,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.6 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -2432,6 +2433,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner constructs Y(delta) symbolically, computes Y Y^dagger, and checks the formula, Hermiticity, conjugation parity, representative invariant readouts, numerical samples, and phase-sensitive negative controls. No selector, normalization, action, KKT classification, physical PMNS-column identification, or external numerical input is load-bearing after the source repair. The result is therefore clean at the explicitly bounded formal matrix-algebra scope, not as a leptogenesis or PMNS-selector theorem.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open-gate post-axiom diagnostic: after adopting I_seed and imposing favored-column closure, the runner reports a feasible low-cost off-seed source; selector derivation, global minimality, and baseline PMNS closure are excluded.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00085-dm_leptogenesis_pmns_minimum`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Define I_seed as the KL-plus-phase cost and choose the positive off-seed source minimizing it subject to eta_{i_*}/eta_obs = 1.  _(class `E`)_
+- **chain closes:** False — The numerical optimization closes conditionally after the selector objective, fixed seed surface, favored column, and eta equality are supplied. No cited authority derives those selector inputs from the framework baseline.
+- **rationale:** Issue: the source-selecting rule is introduced as an explicit information-geometric definition together with an imposed observational equality. Why this blocks: the genuine optimizer computes consequences of those choices but cannot convert the choices into a framework-derived selector law. Repair target: supply a retained bridge deriving the objective, fixed selector surface, favored-column authority, and closure constraint. Claim boundary until fixed: this row is a reproducible post-axiom optimization diagnostic only.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: relative_action_sister, multistart_global, and closure_constraint_derivation remain OPEN.
+    - N5: the global stationary classification and framework-internal sister-selector resolutions remain untested.
 
 ### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
 

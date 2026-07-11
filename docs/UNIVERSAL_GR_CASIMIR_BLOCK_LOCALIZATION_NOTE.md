@@ -1,4 +1,4 @@
-# Universal GR Casimir Block Localization on `PL S^3 x R`
+# Spatial `SO(3)` Casimir Decomposition on `Sym^2(R^4)`
 
 **Claim type:** positive_theorem
 **Status authority:** source-note proposal only; audit verdict and effective
@@ -6,12 +6,13 @@ status are set by the independent audit lane.
 **Date:** 2026-04-14
 **Updated:** 2026-07-10 (restricted-packet closure: explicit complement
 generator matrices, Casimir multiplication, and polynomial projectors)
-**Role:** direct universal route / fixed-`3 + 1` block-localization theorem step
+**Role:** neutral finite-dimensional representation theorem on a stipulated
+`R + R^3` decomposition
 **Primary runner:** [`scripts/frontier_universal_gr_casimir_block_localization.py`](../scripts/frontier_universal_gr_casimir_block_localization.py)
 **Cached runner output:** [`logs/runner-cache/frontier_universal_gr_casimir_block_localization.txt`](../logs/runner-cache/frontier_universal_gr_casimir_block_localization.txt)
-(`runner_sha256 = 716ef5d1ac9e3e605e7ff71c45c249763424af5bd8d37285a2cbca3684e07309`; `exit_code = 0`; `status = ok`; `PASS=8 FAIL=0 TOTAL=8`).
+(`runner_sha256 = 5f4a8545b623e294b886754017fbe9b3e666a26fc474b215daf6fc738f2a322e`; `exit_code = 0`; `status = ok`; `PASS=8 FAIL=0 TOTAL=8`).
 
-## Claim (block-localization theorem)
+## Claim (neutral representation theorem)
 
 Let `V := Sym^2(R^4)` be the real 10-dimensional space of symmetric `4 x 4`
 real matrices in coordinate order `(t, x, y, z)`, equipped with the
@@ -48,7 +49,7 @@ of `C` together with the trivial-irrep refinement on
 - `P_shift := lift_to_V(Pi_{C = -2} on range(Pi_perp))`
 - `P_shear := lift_to_V(Pi_{C = -6} on range(Pi_perp))`
 
-**Theorem (block-localization).** With definitions as above, the following
+**Theorem (spatial `SO(3)` Casimir decomposition).** With definitions as above, the following
 exact identities hold over `Q[sqrt 2, sqrt 3, sqrt 6]` SymPy radicals:
 
 1. **(T1) Basis is orthonormal.** The Gram matrix `(<e_i, e_j>)_{i,j}` of
@@ -85,46 +86,39 @@ exact identities hold over `Q[sqrt 2, sqrt 3, sqrt 6]` SymPy radicals:
    projects exactly onto the traceless-symmetric spatial coordinates
    `(q_1, q_2, h_{xy}, h_{xz}, h_{yz})`.
 
-**Interpretation.** With the real anti-Hermitian convention used here, the
+**Neutral representation interpretation.** With the real anti-Hermitian convention used here, the
 eigenvalues `-2` and `-6` are `-j(j+1)` for `j = 1` and `j = 2`. So the
-complement decomposes representation-theoretically as the `j = 1`
-shift-vector block plus the `j = 2` traceless spatial-shear block, and the
-`Pi_lapse_trace` block decomposes into the two trivial-irrep summands lapse and
-spatial trace.
+complement decomposes representation-theoretically as a `j = 1` mixed
+time-space block plus a `j = 2` traceless-spatial block, and the rank-two
+trivial block decomposes into `h_tt` and spatial trace. Conventional ADM names
+and the possible Universal-GR interpretation are separated into
+`UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_CONTEXT_META_NOTE.md`; they are not
+part of this theorem's claim surface.
 
 ## Scope and audit boundary
 
-This is a representation-level block-localization theorem on
+This is a representation-level decomposition theorem on
 `V = Sym^2(R^4)` with the spatial-block right `SO(3)` action
 `rho(R) h = R^T h R`, `R = diag(1, R_3)`. Relative to the stipulated
 temporal line, Euclidean spatial complement, and Frobenius metric, the note
 proves the four-block decomposition
 `V = range(P_lapse) (+) range(P_shift) (+) range(P_trace) (+) range(P_shear)`
 with explicit ranks, exact projector algebra, and exact `so(3)`-equivariance.
-The shift/shear split is canonical on `range(Pi_perp)` because its two pieces
+The `j=1`/`j=2` split is canonical on `range(Pi_perp)` because its two pieces
 are distinct Casimir eigenspaces. The lapse/trace split is canonical only
 relative to the stipulated `R e_0 (+) R^3` temporal/spatial decomposition;
 `SO(3)` alone cannot distinguish the two trivial irreducible summands.
 
-It does **not** prove:
+It does **not** prove a preferred frame inside either irreducible eigenspace,
+or any spacetime, Hessian, connection, dynamics, or physical-observable
+identification. Those interpretations are outside the neutral theorem and are
+listed only in the separate meta context note.
 
-- a choice of preferred frame inside the degenerate `j = 1` (shift) block or
-  the `j = 2` (shear) block — these are `SO(3)`-irreducible representation
-  spaces, so no canonical frame exists internally without an external
-  selector;
-- a full complement-frame bundle on the spatial section of `PL S^3 x R`;
-- a distinguished connection on the spatial section;
-- the identification of the block-localized universal Hessian with the
-  Einstein/Regge operator blockwise; that requires a separate dynamics step
-  named in
-  `UNIVERSAL_GR_CONSTRAINT_ACTION_STATIONARITY_NOTE.md` (named as context,
-  not cited as a load-bearing dependency here).
-
-## Bounded admissions
+## Standard finite-dimensional mathematical inputs
 
 Every step in the proof-walk below relies only on the elementary
-linear-algebra facts collected here. These are bounded textbook inputs, not
-new repo axioms.
+linear-algebra facts collected here. These are standard mathematical inputs,
+not physical admissions and not new repo axioms.
 
 - **(BA-1) Real linear algebra on `Sym^2(R^4)`.** Frobenius inner product
   `<a, b> = sum_{i,j} a_{ij} b_{ij}`, additivity, and standard matrix
@@ -150,7 +144,7 @@ new repo axioms.
   its eigenspaces. Specialization: a real diagonal matrix has spectral
   projectors equal to the indicator diagonals on its eigenvalues.
 
-(BA-1) through (BA-5) are the only bounded admissions. No physical input is
+(BA-1) through (BA-5) are the only mathematical inputs. No physical input is
 load-bearing in the present theorem.
 
 ## Representation fixed in the packet
@@ -265,10 +259,10 @@ The factorization immediately gives idempotence, orthogonality, and
 `P_shift^perp + P_shear^perp = I_8`; the displayed diagonals give ranks
 three and five.  Lifting these two matrices by zero on `(e_0,e_4)` and
 adjoining `P_lapse = e_0 e_0^T`, `P_trace = e_4 e_4^T` proves the four
-projectors and their coordinate landing.  The names *shift* and *shear*
-refer only to the already displayed `3 + 1` tensor coordinates: `h_ti`
-and the traceless spatial `h_ij`.  No Einstein/Regge dynamics or preferred
-frame inside either eigenspace is inferred.
+projectors and their coordinate landing. The runner-facing names *shift* and
+*shear* are coordinate mnemonics only: they select `h_ti` and traceless
+spatial `h_ij`. No ADM, Universal-GR, Einstein/Regge, or preferred-frame
+interpretation is part of the positive theorem.
 
 ## Proof-walk
 
@@ -291,7 +285,7 @@ in
 | 8 | (T8) coordinate-landing diagonals | By the definition of the projectors as spectral projectors of the diagonal Casimir on the complement in basis `B`, `P_shift = diag(1, 1, 1, 0, 0, 0, 0, 0)` on the complement (selecting `(h_{tx}, h_{ty}, h_{tz})`) and `P_shear = diag(0, 0, 0, 1, 1, 1, 1, 1)` on the complement (selecting `(q_1, q_2, h_{xy}, h_{xz}, h_{yz})`). | `diag P_shift on complement = [1, 1, 1, 0, 0, 0, 0, 0]`; `diag P_shear on complement = [0, 0, 0, 1, 1, 1, 1, 1]` |
 
 Every load-bearing input above is in (BA-1)–(BA-5). Chain closes from the
-admitted bounded textbook linear-algebra package alone. No retained-grade
+standard finite-dimensional linear-algebra package alone. No retained-grade
 upstream theorem is invoked as a premise for the block-localization claim
 on the abstract pair `(V, rho)`; the cluster's upstream notes (listed in
 [Provenance and non-dependencies](#provenance-and-non-dependencies)) supply
@@ -303,7 +297,7 @@ labels, but are not load-bearing for the algebraic theorem itself.
 The runner is fully reproducible and self-contained (imports `sympy` only;
 constructs every check from scratch). Cached output is at
 [`logs/runner-cache/frontier_universal_gr_casimir_block_localization.txt`](../logs/runner-cache/frontier_universal_gr_casimir_block_localization.txt)
-with `runner_sha256 = 716ef5d1ac9e3e605e7ff71c45c249763424af5bd8d37285a2cbca3684e07309`
+with `runner_sha256 = 5f4a8545b623e294b886754017fbe9b3e666a26fc474b215daf6fc738f2a322e`
 and `exit_code = 0`. Key cached values:
 
 ```text
@@ -359,40 +353,12 @@ constants.
 
 ## Provenance and non-dependencies
 
-The following cluster siblings are cited for **context**, not as
-load-bearing premises of the block-localization theorem above:
-
-- `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
-  records the exact scalar observable generator `W[J]` used to motivate the
-  Hessian whose representation-theoretic block structure is the present
-  theorem's subject.
-- `S3_ANOMALY_SPACETIME_LIFT_NOTE.md`
-  motivates the kinematic background label `PL S^3 x R`; it does not supply
-  the stipulated pair `(Sym^2(R^4), rho)` as a proof input here.
-- `UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md`
-  records the tensor-valued variational candidate
-  `S_GR^cand[h] := (1/2) D^2 W[g_*](h, h)` whose perturbation space the
-  present projectors decompose into representation sectors. No commutation or
-  block-diagonalization of that candidate operator is asserted here.
-- `UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md`
-  records the symmetric `3 + 1` quotient kernel of that candidate.
-- `UNIVERSAL_GR_A1_INVARIANT_SECTION_NOTE.md`
-  records the historical rank-2 `Pi_A1` projector, called
-  `Pi_lapse_trace` here, onto lapse + spatial trace as the
-  exact invariant section of the localization orbit. The present note
-  proves the orthogonal-complement `SO(3)`-decomposition of `Pi_perp` into
-  the `j = 1` shift block and the `j = 2` shear block, extending that
-  lapse/trace picture to a complete four-block decomposition.
-
-None of these sibling notes is invoked as a load-bearing premise for the
-present block-localization theorem on the abstract pair `(V, rho)`. The
-theorem closes from (BA-1)–(BA-5) plus the explicit construction of
-`(B, Pi_lapse_trace, G_a, C, P_block)` in the runner. The cluster references are
-**informational** pointers that anchor the physical interpretation of the
-algebraic blocks as lapse / shift / trace / shear in the universal GR route.
-They are deliberately code-formatted rather than Markdown-linked because the
-citation graph treats links as proof dependencies. The live dependency arrows
-of this note are only to its exact runner and cached output.
+The theorem closes from (BA-1)–(BA-5) plus the explicit construction of
+`(B, Pi_lapse_trace, G_a, C, P_block)` in the runner. Universal-GR, ADM,
+Hessian, spacetime-background, and Einstein/Regge interpretation is moved in
+full to `UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_CONTEXT_META_NOTE.md` and is
+not a load-bearing dependency. The live dependency arrows of this note are
+only to its exact runner and cached output.
 
 ## Forbidden-imports check
 
@@ -405,10 +371,8 @@ of this note are only to its exact runner and cached output.
   a generic spatial-block `SO(3)` action. The framework `MINIMAL_AXIOMS_2026-06-29`
   baseline is named in plain text only as the broader cluster context and
   is not load-bearing for the block-localization claim.
-- No new repo vocabulary — block labels (lapse, shift, trace, shear) are
-  standard `3 + 1` ADM terminology and the runner's record strings use
-  only those plus standard linear-algebra terms (Casimir, projector,
-  rank, commutator, idempotent, orthogonal, complete).
+- Runner-facing block identifiers are coordinate mnemonics; their ADM names
+  carry no theorem content.
 - Runner imports: `sympy` only. No `numpy`, no I/O, no external data.
 
 ## What this theorem does NOT close
@@ -417,11 +381,5 @@ of this note are only to its exact runner and cached output.
   or the `j = 2` shear block. These are irreducible `SO(3)`
   representations; no canonical internal frame exists without an external
   selector.
-- No full complement-frame bundle or distinguished connection on the
-  spatial section of `PL S^3 x R` is claimed.
-- No identification of the block-localized universal Hessian with the
-  Einstein/Regge operator is claimed. That requires a separate dynamics
-  theorem inside the shift and shear channels.
-- No promotion of any upstream cluster sibling (observable principle,
-  spacetime lift, variational candidate, quotient uniqueness, lapse/trace
-  invariant section) is implied. Each remains at its current audit row.
+- No spacetime, Hessian, connection, Universal-GR, or Einstein/Regge
+  identification is claimed; those interpretations are outside this theorem.

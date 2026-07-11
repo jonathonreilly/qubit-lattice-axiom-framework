@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Exact Casimir block localization on the direct universal GR route.
+"""Exact spatial SO(3) Casimir decomposition on Sym^2(R^4).
 
 This runner constructs the symmetric 3+1 polarization representation and the
-SO(3) generators over exact SymPy radicals. It verifies that Pi_lapse_trace fixes the
-lapse/spatial-trace core and that the complement Casimir splits the remaining
-channels into the shift vector and traceless spatial-shear blocks.
+SO(3) generators over exact SymPy radicals. It verifies that the rank-two
+trivial block contains h_tt and spatial trace and that the complement Casimir
+splits the remaining channels into the j=1 mixed and j=2 traceless-spatial
+blocks.
 
-Scope: representation-level block localization only. This does not identify
-the block-localized universal Hessian with Einstein/Regge dynamics.
+Scope: neutral representation-level decomposition only. Runner-facing
+"lapse/shift/shear" identifiers are coordinate mnemonics, not a GR theorem.
 """
 
 from __future__ import annotations
@@ -222,7 +223,7 @@ def main() -> int:
     diag_shift = [int(p_shift[i, i]) for i in comp_idx]
     diag_shear = [int(p_shear[i, i]) for i in comp_idx]
 
-    print("UNIVERSAL GR CASIMIR BLOCK LOCALIZATION")
+    print("SPATIAL SO(3) CASIMIR DECOMPOSITION ON SYM^2(R^4)")
     print("=" * 78)
     print("basis_order = [lapse, shift_x, shift_y, shift_z, trace, shear_1, shear_2, shear_xy, shear_xz, shear_yz]")
     print(f"basis_orthonormal = {gram == sp.eye(10)}")
@@ -266,7 +267,7 @@ def main() -> int:
         f"Casimir diagonal={casimir_diag}; (C+2I)(C+6I)=0",
     )
     record(
-        "the spectral projectors define a canonical shift/shear split on the complement",
+        "the spectral projectors define the canonical j=1/j=2 split on the complement",
         spectral_polynomials_exact
         and ranks == {"lapse": 1, "shift": 3, "trace": 1, "shear": 5},
         f"P_shift=(C+6I)/4, P_shear=-(C+2I)/4; ranks={ranks}",
@@ -289,8 +290,8 @@ def main() -> int:
 
     print("\nBoundary:")
     print(
-        "This proves the representation-level lapse/shift/trace/shear block split. "
-        "It does not prove Einstein/Regge dynamics for the block-localized Hessian."
+        "This proves the neutral representation-level 1+3+1+5 coordinate-block split. "
+        "It does not identify a Universal-GR Hessian or Einstein/Regge dynamics."
     )
 
     print("\n" + "=" * 78)

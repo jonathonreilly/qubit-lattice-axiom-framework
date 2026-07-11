@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_initial_state_preparation_probe.py
-runner_sha256: 4614dde7863ba6c83fbced70006a2f2b141c7b6a52565d9c105304f790db98bb
+runner_sha256: 85796e632aa623bdd45b6baa72f128ed542b8910c2cd7a9cd4ee1517a20ca52b
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 TELEPORTATION INITIAL-STATE PREPARATION PROBE
-Status: planning / first artifact; ordinary quantum state teleportation only
+Status: exact boundary theorem on an open gate; ordinary quantum state teleportation only
 Claim boundary: no matter, mass, charge, energy, object, or faster-than-light transport
 Question: is the G=0 two-species ground state unique, product-like, separable, native-basis simple/localized, and operationally plausible?
 Thresholds: degeneracy_tol=1e-09, support_prob>1e-12, gap>=1e-06, localized_PR_fraction<=0.25
@@ -16,6 +16,8 @@ Case: 1d_null_initial
   setup: dim=1 side=8 N=8 envs/logical_qubit=4 mass=0 G=0
   single-species H1: E0=-2.000000, E1=-1.414214, degeneracy=1, gap_after_ground_space=0.585786
   two-species H(G=0): E0=-4.000000, E1=-3.414214, degeneracy=1, gap_after_ground_space=0.585786
+  analytic derivation certificate: connected=True, regular=True, degree=2/2, E0(H1)=-2.000000, E0(H2)=-4.000000, gap=0.585786
+    residuals: H1+A=0, H2-KroneckerSum=0, H1|u>-E0|u>=0, H2|uu>-2E0|uu>=0, logical/env factor=0
   exact-product checks: |<g_G0|g_H1 x g_H1>|^2=1.000000, |<g_G0|uniform x uniform>|^2=1.000000
   traced logical resource at G=0: Phi+=0.500000, Bell*=0.500000 (Phi+), CHSH=2.000000, negativity=0.000000, purity=1.000000
   separability diagnostics:
@@ -41,6 +43,8 @@ Case: 2d_null_initial
   setup: dim=2 side=4 N=16 envs/logical_qubit=8 mass=0 G=0
   single-species H1: E0=-4.000000, E1=-2.000000, degeneracy=1, gap_after_ground_space=2.000000
   two-species H(G=0): E0=-8.000000, E1=-6.000000, degeneracy=1, gap_after_ground_space=2.000000
+  analytic derivation certificate: connected=True, regular=True, degree=4/4, E0(H1)=-4.000000, E0(H2)=-8.000000, gap=2.000000
+    residuals: H1+A=0, H2-KroneckerSum=0, H1|u>-E0|u>=0, H2|uu>-2E0|uu>=0, logical/env factor=0
   exact-product checks: |<g_G0|g_H1 x g_H1>|^2=1.000000, |<g_G0|uniform x uniform>|^2=1.000000
   traced logical resource at G=0: Phi+=0.500000, Bell*=0.500000 (Phi+), CHSH=2.000000, negativity=0.000000, purity=1.000000
   separability diagnostics:
@@ -68,6 +72,7 @@ Conclusion:
   native-basis localized by participation threshold: 0/2
   verdict: unresolved preparation gap, not a spectral/product no-go. The assumed state is unique and separable on these small G=0 surfaces, but it is a fully delocalized coherent native-site superposition.
   Operational read: preparing the state reduces to preparing two independent single-species H1 ground states. This is simple analytically, but this artifact does not supply a cooling/control/readout protocol, noise model, or scaling proof.
+  derivation certificate: PASS
 
 ----- stderr -----
 

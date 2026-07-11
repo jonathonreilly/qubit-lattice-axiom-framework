@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Initial-state preparation audit for the Poisson teleportation ramp.
 
-Status: planning / first artifact. This bounded diagnostic audits the
-assumption used by the finite-time adiabatic ramp: the two-species ground
-state of the native G=0 Hamiltonian is already available.
+Status: exact boundary theorem on an open gate. This bounded diagnostic
+audits the assumption used by the finite-time adiabatic ramp: the two-species
+ground state of the native G=0 Hamiltonian is already available.
 
 Scope boundary: ordinary quantum state teleportation resources only. This
 does not claim matter transfer, mass transfer, charge transfer, energy
@@ -86,6 +86,22 @@ class ResourceDiagnostics:
 
 
 @dataclasses.dataclass(frozen=True)
+class DerivationCertificate:
+    graph_connected: bool
+    graph_regular: bool
+    graph_degree: int
+    expected_degree: int
+    expected_h1_ground_energy: float
+    expected_h2_ground_energy: float
+    expected_gap: float
+    h1_negative_adjacency_residual: float
+    h2_kronecker_sum_residual: float
+    h1_uniform_eigen_residual: float
+    h2_uniform_eigen_residual: float
+    logical_env_uniform_factor_residual: float
+
+
+@dataclasses.dataclass(frozen=True)
 class CandidateDiagnostics:
     label: str
     energy: float
@@ -105,6 +121,7 @@ class CaseDiagnostics:
     n_env: int
     h1_spectrum: SpectrumDiagnostics
     h2_spectrum: SpectrumDiagnostics
+    derivation: DerivationCertificate
     h1_tensor_ground_fidelity: float
     uniform_tensor_ground_fidelity: float
     ground_resource: ResourceDiagnostics
@@ -146,6 +163,25 @@ def spectrum_diagnostics(evals: np.ndarray, tolerance: float) -> SpectrumDiagnos
         gap_after_ground_space=gap_after_ground_space,
         min_gap_unique=min_gap_unique,
     )
+
+
+def adjacency_matrix(adjacency: list[list[int]]) -> np.ndarray:
+    matrix = np.zeros((len(adjacency), len(adjacency)), dtype=complex)
+    for site, neighbors in enumerate(adjacency):
+        matrix[site, neighbors] = 1.0
+    return matrix
+
+
+def graph_is_connected(adjacency: list[list[int]]) -> bool:
+    visited = {0}
+    frontier = [0]
+    while frontier:
+        site = frontier.pop()
+        for neighbor in adjacency[site]:
+            if neighbor not in visited:
+                visited.add(neighbor)
+                frontier.append(neighbor)
+    return len(visited) == len(adjacency)
 
 
 def probability_entropy_bits(probabilities: np.ndarray) -> float:
@@ -321,6 +357,53 @@ def run_case(
     factors = factor_sites(case.dim, case.side)
     amp = amplitudes_by_logical_env(h2_ground, n_sites, factors)
     single_h1_tensor = single_species_logical_env_tensor(h1_ground, n_sites, factors)
+    uniform_logical_env = single_species_logical_env_tensor(
+        uniform_single, n_sites, factors
+    )
+
+    adjacency = adjacency_matrix(adj)
+    identity = np.eye(n_sites, dtype=complex)
+    expected_degree = 2 * case.dim
+    expected_h1_ground_energy = -float(expected_degree)
+    expected_h2_ground_energy = 2.0 * expected_h1_ground_energy
+    expected_gap = 2.0 * (1.0 - math.cos(2.0 * math.pi / case.side))
+    expected_logical_env = np.full(
+        (2, len(factors.env_labels)), 1.0 / math.sqrt(n_sites), dtype=complex
+    )
+    derivation = DerivationCertificate(
+        graph_connected=graph_is_connected(adj),
+        graph_regular=all(len(neighbors) == len(adj[0]) for neighbors in adj),
+        graph_degree=len(adj[0]),
+        expected_degree=expected_degree,
+        expected_h1_ground_energy=expected_h1_ground_energy,
+        expected_h2_ground_energy=expected_h2_ground_energy,
+        expected_gap=expected_gap,
+        h1_negative_adjacency_residual=float(np.max(np.abs(h1 + adjacency))),
+        h2_kronecker_sum_residual=float(
+            np.max(
+                np.abs(
+                    h2
+                    - (
+                        np.kron(h1, identity)
+                        + np.kron(identity, h1)
+                    )
+                )
+            )
+        ),
+        h1_uniform_eigen_residual=float(
+            np.linalg.norm(
+                h1 @ uniform_single - expected_h1_ground_energy * uniform_single
+            )
+        ),
+        h2_uniform_eigen_residual=float(
+            np.linalg.norm(
+                h2 @ uniform_tensor - expected_h2_ground_energy * uniform_tensor
+            )
+        ),
+        logical_env_uniform_factor_residual=float(
+            np.max(np.abs(uniform_logical_env - expected_logical_env))
+        ),
+    )
 
     bipartitions = (
         bipartition_from_tensor(
@@ -344,7 +427,11 @@ def run_case(
     )
     supports = (
         support_diagnostics("single H1 ground in native sites", h1_ground, support_threshold),
-        support_diagnostics("two-species G=0 ground in native site pairs", h2_ground, support_threshold),
+        support_diagnostics(
+            "two-species G=0 ground in native site pairs",
+            h2_ground,
+            support_threshold,
+        ),
     )
 
     localized_00 = np.kron(site_basis_state(n_sites, 0), site_basis_state(n_sites, 0))
@@ -413,17 +500,23 @@ def run_case(
         ),
     )
 
-    unique = h2_spectrum.degeneracy == 1 and h2_spectrum.gap_after_ground_space >= gap_threshold
+    unique = (
+        h2_spectrum.degeneracy == 1
+        and h2_spectrum.gap_after_ground_space + 1e-10 >= gap_threshold
+    )
     separable = all(row.entropy_bits <= 1e-8 for row in bipartitions)
     tensor_match = float(abs(np.vdot(h2_ground, h1_tensor_ground)) ** 2)
     product_simple = tensor_match >= 1.0 - 1e-10
     native_local = supports[1].participation_fraction <= localization_fraction_threshold
     if unique and separable and product_simple and native_local:
-        verdict = "preparable candidate"
+        verdict = "finite diagnostic candidate; operational preparation untested"
     elif unique and separable and product_simple:
-        verdict = "unresolved gap: analytic product ground, but maximally delocalized in native site basis"
+        verdict = (
+            "unresolved gap: analytic product ground, but maximally "
+            "delocalized in native site basis"
+        )
     else:
-        verdict = "diagnostic no-go for the assumed initial state"
+        verdict = "diagnostic failure for the assumed initial-state checks"
 
     return CaseDiagnostics(
         case=case,
@@ -431,6 +524,7 @@ def run_case(
         n_env=len(factors.env_labels),
         h1_spectrum=h1_spectrum,
         h2_spectrum=h2_spectrum,
+        derivation=derivation,
         h1_tensor_ground_fidelity=tensor_match,
         uniform_tensor_ground_fidelity=float(abs(np.vdot(h2_ground, uniform_tensor)) ** 2),
         ground_resource=resource_diagnostics(h2_ground, n_sites, factors),
@@ -461,6 +555,25 @@ def print_case(result: CaseDiagnostics, localization_fraction_threshold: float) 
     )
     print_spectrum("single-species H1", result.h1_spectrum)
     print_spectrum("two-species H(G=0)", result.h2_spectrum)
+    derivation = result.derivation
+    print(
+        "  analytic derivation certificate: "
+        f"connected={derivation.graph_connected}, "
+        f"regular={derivation.graph_regular}, "
+        f"degree={derivation.graph_degree}/{derivation.expected_degree}, "
+        f"E0(H1)={fmt_float(derivation.expected_h1_ground_energy)}, "
+        f"E0(H2)={fmt_float(derivation.expected_h2_ground_energy)}, "
+        f"gap={fmt_float(derivation.expected_gap)}"
+    )
+    print(
+        "    residuals: "
+        f"H1+A={fmt_float(derivation.h1_negative_adjacency_residual)}, "
+        f"H2-KroneckerSum={fmt_float(derivation.h2_kronecker_sum_residual)}, "
+        f"H1|u>-E0|u>={fmt_float(derivation.h1_uniform_eigen_residual)}, "
+        f"H2|uu>-2E0|uu>={fmt_float(derivation.h2_uniform_eigen_residual)}, "
+        "logical/env factor="
+        f"{fmt_float(derivation.logical_env_uniform_factor_residual)}"
+    )
     print(
         "  exact-product checks: "
         f"|<g_G0|g_H1 x g_H1>|^2={fmt_float(result.h1_tensor_ground_fidelity)}, "
@@ -597,12 +710,106 @@ def validate_args(args: argparse.Namespace) -> None:
         raise ValueError("--localization-fraction-threshold must be in (0, 1]")
 
 
+def derivation_failures(
+    result: CaseDiagnostics,
+    gap_threshold: float,
+    tolerance: float = 1e-10,
+) -> list[str]:
+    derivation = result.derivation
+    failures: list[str] = []
+
+    def require(condition: bool, label: str) -> None:
+        if not condition:
+            failures.append(f"{result.case.label}: {label}")
+
+    require(result.case.mass == 0.0 and result.case.G == 0.0, "case is not mass=G=0")
+    require(derivation.graph_connected, "periodic graph is not connected")
+    require(derivation.graph_regular, "periodic graph is not regular")
+    require(
+        derivation.graph_degree == derivation.expected_degree,
+        "periodic graph does not have degree 2*dim",
+    )
+    require(derivation.h1_negative_adjacency_residual <= tolerance, "H1 != -A")
+    require(derivation.h2_kronecker_sum_residual <= tolerance, "H2 is not the G=0 Kronecker sum")
+    require(
+        derivation.h1_uniform_eigen_residual <= tolerance,
+        "uniform state is not the predicted H1 eigenstate",
+    )
+    require(
+        derivation.h2_uniform_eigen_residual <= tolerance,
+        "uniform tensor is not the predicted H2 eigenstate",
+    )
+    require(
+        derivation.logical_env_uniform_factor_residual <= tolerance,
+        "uniform state does not factor as |+> times |u_env>",
+    )
+    require(result.h1_spectrum.degeneracy == 1, "H1 ground state is not unique")
+    require(result.h2_spectrum.degeneracy == 1, "H2 ground state is not unique")
+    require(
+        result.h2_spectrum.min_gap_unique + tolerance >= gap_threshold,
+        "H2 gap does not meet the configured uniqueness/gap threshold",
+    )
+    require(
+        abs(
+            result.h1_spectrum.ground_energy
+            - derivation.expected_h1_ground_energy
+        )
+        <= tolerance,
+        "H1 ground energy disagrees with Fourier prediction",
+    )
+    require(
+        abs(
+            result.h2_spectrum.ground_energy
+            - derivation.expected_h2_ground_energy
+        )
+        <= tolerance,
+        "H2 ground energy disagrees with Kronecker-sum prediction",
+    )
+    require(
+        abs(result.h1_spectrum.min_gap_unique - derivation.expected_gap)
+        <= tolerance,
+        "H1 gap disagrees with Fourier prediction",
+    )
+    require(
+        abs(result.h2_spectrum.min_gap_unique - derivation.expected_gap)
+        <= tolerance,
+        "H2 gap disagrees with Kronecker-sum prediction",
+    )
+    require(
+        result.h1_tensor_ground_fidelity >= 1.0 - tolerance,
+        "H2 ground is not the H1-ground tensor product",
+    )
+    require(
+        result.uniform_tensor_ground_fidelity >= 1.0 - tolerance,
+        "H2 ground is not the uniform tensor product",
+    )
+    require(
+        all(row.numerical_rank == 1 for row in result.bipartitions),
+        "a claimed separability partition has rank != 1",
+    )
+    require(
+        all(row.support_count == row.dimension for row in result.supports),
+        "uniform ground state does not have full native support",
+    )
+    require(
+        all(
+            abs(row.participation_fraction - 1.0) <= tolerance
+            for row in result.supports
+        ),
+        "uniform ground state does not have PR/dim=1",
+    )
+    return failures
+
+
 def main() -> int:
     args = parse_args()
     validate_args(args)
 
     print("TELEPORTATION INITIAL-STATE PREPARATION PROBE")
-    print("Status: planning / first artifact; ordinary quantum state teleportation only")
+    print(
+        "Status: exact boundary theorem on an open gate; "
+        "ordinary quantum state teleportation only"
+    )
     print(
         "Claim boundary: no matter, mass, charge, energy, object, or faster-than-light transport"
     )
@@ -633,6 +840,12 @@ def main() -> int:
     for result in results:
         print_case(result, args.localization_fraction_threshold)
 
+    certificate_failures = [
+        failure
+        for result in results
+        for failure in derivation_failures(result, args.gap_threshold)
+    ]
+
     unique_count = sum(result.h2_spectrum.degeneracy == 1 for result in results)
     product_count = sum(result.h1_tensor_ground_fidelity >= 1.0 - 1e-10 for result in results)
     localized_count = sum(
@@ -640,7 +853,9 @@ def main() -> int:
         for result in results
     )
     unresolved = [result for result in results if result.verdict.startswith("unresolved")]
-    no_go = [result for result in results if result.verdict.startswith("diagnostic no-go")]
+    failed = [
+        result for result in results if result.verdict.startswith("diagnostic failure")
+    ]
 
     print("Conclusion:")
     print(f"  unique G=0 two-species ground states: {unique_count}/{len(results)}")
@@ -649,8 +864,11 @@ def main() -> int:
         "  native-basis localized by participation threshold: "
         f"{localized_count}/{len(results)}"
     )
-    if no_go:
-        print("  diagnostic no-go cases: " + ", ".join(row.case.label for row in no_go))
+    if failed:
+        print(
+            "  diagnostic failure cases: "
+            + ", ".join(row.case.label for row in failed)
+        )
     elif unresolved:
         print(
             "  verdict: unresolved preparation gap, not a spectral/product no-go. "
@@ -658,13 +876,22 @@ def main() -> int:
             "but it is a fully delocalized coherent native-site superposition."
         )
     else:
-        print("  verdict: preparable candidate under the current small-surface diagnostics")
+        print(
+            "  verdict: finite diagnostic candidate; operational preparation "
+            "remains untested"
+        )
     print(
         "  Operational read: preparing the state reduces to preparing two independent "
         "single-species H1 ground states. This is simple analytically, but this "
         "artifact does not supply a cooling/control/readout protocol, noise model, "
         "or scaling proof."
     )
+    if certificate_failures:
+        print("  derivation certificate: FAIL")
+        for failure in certificate_failures:
+            print(f"    - {failure}")
+        return 1
+    print("  derivation certificate: PASS")
     return 0
 
 

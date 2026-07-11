@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2840 |
-| audit_in_progress | 11 |
+| unaudited | 2839 |
+| audit_in_progress | 12 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
@@ -44,14 +44,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 15 |
+| `audit_in_progress` | 16 |
 | `audited_clean` | 435 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3190 |
+| `unaudited` | 3189 |
 
 | claim_type | count |
 |---|---:|
@@ -116,6 +116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |

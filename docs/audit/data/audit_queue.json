@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 671,
+    "critical": 670,
     "high": 332,
     "leaf": 1131,
     "medium": 760
@@ -1636,28 +1636,6 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
       "transitive_descendants": 1053
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "rconn_derived_note",
-      "claim_scope": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives `F_adj = 8/9`, but the supplied premises do not derive the physical connected-trace selector `kappa_EW = 0`; `K_EW = 9/8` is only that conditional specialization.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 32,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 25.916,
-      "note_path": "docs/RCONN_DERIVED_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/rconn_matching_rule_nogo_certificate.py",
-      "transitive_descendants": 965
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4520,6 +4498,34 @@
       "ready": true,
       "runner_path": "scripts/flavor_r_half_is_the_records_flow_separatrix_2026_06_02.py",
       "transitive_descendants": 69
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "rconn_derived_note",
+        "ew_current_fierz_channel_decomposition_note_2026-05-01",
+        "graph_first_su3_integration_note",
+        "native_gauge_closure_note",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 16,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.044,
+      "note_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_rconn_kappa_ew_register_not_read.py",
+      "transitive_descendants": 65
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -19276,34 +19282,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_koide_q_background_zero_z_erasure_criterion.py",
       "transitive_descendants": 83
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "rconn_derived_note",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "graph_first_su3_integration_note",
-        "native_gauge_closure_note",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 16,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.044,
-      "note_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_rconn_kappa_ew_register_not_read.py",
-      "transitive_descendants": 65
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -82412,5 +82390,5 @@
     }
   ],
   "ready_count": 598,
-  "total_pending": 2894
+  "total_pending": 2893
 }

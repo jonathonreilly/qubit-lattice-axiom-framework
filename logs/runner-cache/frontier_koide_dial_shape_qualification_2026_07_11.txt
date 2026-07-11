@@ -1,0 +1,20 @@
+CHECK 01: PASS -- U (cyclic shift) is unitary of order 3 (supplied C3 action)
+CHECK 02: PASS -- U eigenvalues are {1, w, wbar}, all distinct (three inequivalent C3 characters)
+CHECK 03: PASS -- F (DFT) diagonalizes U: U is diag in the character basis with distinct entries
+CHECK 04: PASS -- commutant of the C3 rep has complex dim 3 = circulant algebra (char-diagonal)
+CHECK 05: PASS -- C3-invariance ALONE leaves the two doublet weights free (p1 != p2 for non-real b)
+CHECK 06: PASS -- antiunitary K: commutes with real U, swaps w<->wbar doublet eigenspaces, fixes singlet
+CHECK 07: PASS -- K-invariance forces p1 = p2: joint-invariant states = {diag(p_s, p_d/2, p_d/2)} (real dim 2)
+CHECK 08: PASS -- robustness: 200 random Hermitian states project onto diag(p, q, q)
+CHECK 09: PASS -- cell rank obstruction: singlet=rank1, doublet=rank2; no group element maps singlet->doublet
+CHECK 10: PASS -- cell orbit obstruction: both cells are group-invariant; split is a free invariant
+CHECK 11: PASS -- T2 dimension rule rho = I/3 is invariant and gives r = 1
+CHECK 12: PASS -- T2 cell-equipartition rule rho = diag(1/2,1/4,1/4) is invariant and gives r = 1/2
+CHECK 13: PASS -- admission dichotomy: two lawful invariant rules give r = 1 vs r = 1/2 (value not fixed)
+CHECK 14: PASS -- T3 dictionary: r = |b|^2/a^2 = p_d/(2 p_s), Q = (1+2r)/3, r=1/2 iff E_+ = E_perp
+CHECK 15: PASS -- T3 recovers file-4: C3 leaves the split free; no unitary singlet/doublet swap (1 != 2)
+--------------------------------------------------------------------
+Runner: generation weight dial shape forced, value unfixed (Qualification)
+T1 dial shape forced; T2 value unfixed (admission dichotomy); T3 consistency
+Supplied elements: C3 shift U (context); antiunitary K/CPT exchange (context)
+TOTAL: PASS=15 FAIL=0

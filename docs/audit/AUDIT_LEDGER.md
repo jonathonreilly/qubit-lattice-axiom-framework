@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2828 |
+| unaudited | 2827 |
 | audit_in_progress | 19 |
 | meta | 350 |
-| ~~audited_numerical_match~~ | 5 |
+| ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
 | ~~audited_conditional~~ | 43 |
 | ~~audited_failed~~ | 2 |
@@ -49,9 +49,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 43 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
-| `audited_numerical_match` | 5 |
+| `audited_numerical_match` | 6 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3178 |
+| `unaudited` | 3177 |
 
 | claim_type | count |
 |---|---:|
@@ -670,6 +670,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.6 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -6994,6 +6995,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The stated KS block decomposition directly gives O_logical x I_env for retained-axis operators, spectator-sign cancellation for native-Z when d>1, and environment flipping for fixed-X when a != d-1. The Bell projector and teleportation claims then reduce to standard two-qubit Pauli/Bell algebra on the logical factor.
 - **rationale:** The theorem is self-contained in the restricted packet and closes by finite block-matrix algebra. Independent formula checks confirm the Bell-projector signs, the 1/4 normalization, the native-Z spectator average to zero for d>1, the fixed-X iff a=d-1 condition, and the correction/fidelity identity up to irrelevant branch phase. The runner genuinely constructs the relevant operators and verifies 96 algebraic cases without hidden helper imports or external comparators, while explicitly leaving physical apparatus, noise, preparation, and durable record gates outside scope.
 - **auditor confidence:** high
+
+### `tensor_support_center_excess_law_note`
+
+- **Note:** [`TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md`](../../docs/TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact finite-box support-side center-excess identity and bounded numerical affine compatibility on six canonical A1 samples and two named A1 baselines were audited; no exact tensor observable, endpoint-coefficient derivation, continuous-family theorem, or full tensor completion was audited as closed.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00016-tensor_support_center_excess`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The affine law fixed by the two A1 endpoint tensor coefficients reproduces the current bright tensor coefficients to about 1e-8 on six sampled canonical backgrounds and a few times 1e-6 on two named baselines.  _(class `G`)_
+- **chain closes:** False — The support-side identity is genuinely computed, but the headline tensor consequence remains an endpoint-fitted numerical match using an imported tensor observable and imported source-family constructions. An exact derivation of that observable and its endpoint coefficients is missing.
+- **rationale:** The runner genuinely constructs the finite Dirichlet lattice Green matrix and computes the endpoint arm equality, the 1/6 center excess, and the sampled delta_A1 formula rather than merely printing expected constants. The tensor portion instead defines an affine interpolant from two computed endpoints and measures agreement on a finite sample, while its observable comes from a helper chain containing chosen metric perturbations, finite-difference settings, source-family parameters, and normalization machinery not derived in this note. The safe result is therefore an exact support-side finite-lattice identity plus a bounded numerical compatibility pattern, not an exact affine tensor law.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1: the exact tensor-observable, endpoint-coefficient, continuous-family, and lattice-size routes remain open or untested.
+    - N3: the selected tensor readout and finite-difference endpoint construction are hidden load-bearing inputs rather than derived microscopic objects.
+    - N5: the affine-law rhetoric exceeds the finite parameter, family, and volume resolutions actually tested.
 
 ### `testable_predictions_map_note`
 

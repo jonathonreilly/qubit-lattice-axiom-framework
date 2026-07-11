@@ -36,7 +36,7 @@
     "audit_in_progress": 19,
     "audited_conditional": 43,
     "audited_failed": 2,
-    "audited_numerical_match": 5,
+    "audited_numerical_match": 6,
     "audited_renaming": 14,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 1,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
@@ -55,7 +55,7 @@
     "retained_bounded": 349,
     "retained_no_go": 24,
     "retained_pending_chain": 9,
-    "unaudited": 2828
+    "unaudited": 2827
   },
   "retained_pending_chain_count": 9,
   "retained_pending_chain_examples": [

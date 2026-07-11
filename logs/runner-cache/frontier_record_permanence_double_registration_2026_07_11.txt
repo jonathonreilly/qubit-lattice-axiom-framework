@@ -1,0 +1,29 @@
+CHECK 01: PASS -- axiom guard: 'Records form.'
+CHECK 02: PASS -- axiom guard: a record locks exactly one admissible local possibility
+CHECK 03: PASS -- axiom guard: one-record-per-site AND permanence sentence
+CHECK 04: PASS -- axiom guard: readout is determined by record content alone
+CHECK 05: PASS -- axiom guard: additive scalar readout I over disjoint records
+CHECK 06: PASS -- T1: admissible history <=> injective site sequence (fresh-site registration)
+CHECK 07: PASS -- T1: every admissible history retains all prior records (count k after k events)
+CHECK 08: PASS -- T1: inadmissible <=> same-site second registration, forbidden under BOTH readings
+CHECK 09: PASS -- T1<->G1: same-site re-pinch D is idempotent (D(D(M))=D(M)); axioms force fresh-site reading
+CHECK 10: PASS -- T2: supplied agreement-conditioned kernel p_i'=p_i^2/(p_s^2+p_d^2) reduces to r->2r^2
+CHECK 11: PASS -- T2 forward: lane-value persistence => registered value is a kernel fixed point
+CHECK 12: PASS -- T2 backward: kernel fixed point => constant readout across epochs (persistence)
+CHECK 13: PASS -- T2: interior/degenerate finite fixed set on the grid is exactly {0, 1/2}
+CHECK 14: PASS -- EXH: coexisting permanent records disagree (r1=1/2, r2=1) and the pooled ratio 2/3 is a third value
+CHECK 15: PASS -- EXH: quadratic aggregates are additive but the ratio readout r=B/A is not; additivity does not force epoch-independence
+CHECK 16: PASS -- EXH positive control: equal epoch values pool to the common value (mediant of equal ratios)
+CHECK 17: PASS -- T3: local expansion multiplier |f'(r*)| = 2 at the interior fixed point r* = 1/2
+CHECK 18: PASS -- T3: linear escape count computed from (eps,band)=(1e-5,0.1) is 14 = ceil(log2(band/eps))
+CHECK 19: PASS -- T3: exact-map escape (14, 25) agrees with linear (14, 25) within one step
+CHECK 20: PASS -- T3: a second (eps,band)=(1e-8,0.2) gives a different count 25 (formula, not hard-coded)
+CHECK 21: PASS -- T3: observed persistence across the escape window <=> exact fixed point (permanence forbids re-preparation)
+CHECK 22: PASS -- T3: at r*=1/2 equipartition (p_s=p_d=1/2), per-step agreement-survival prob p_s^2+p_d^2 = 1/2
+CHECK 23: PASS -- T3: fixed-point persistence is survivorship of the agreeing subpopulation ((1/2)^n), not stasis of every history
+CHECK 24: PASS -- NOT: psi(r)=r^2 has interior fixed point r=1 (mult 2), != f's r=1/2; this note excludes neither (kappa question)
+SUMMARY escape arithmetic: (eps=1e-5, band=0.1) -> linear 14 steps, exact 14 steps; (eps=1e-8, band=0.2) -> linear 25 steps, exact 25 steps.
+SUMMARY necessity exhibit: r1=1/2, r2=1 permanent & coexisting; pooled ratio 2/3 is a third value; ratio readout is not additive.
+SUMMARY discharged: T1 fresh-site double-registration geometry (axiom-forced). Named premise: epoch-independent lane readout (necessity exhibited). Open: outcome factorization; bookkeeping multiplicity (kappa lane).
+SUMMARY files: docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md; scripts/frontier_record_permanence_double_registration_2026_07_11.py
+TOTAL: PASS=24 FAIL=0

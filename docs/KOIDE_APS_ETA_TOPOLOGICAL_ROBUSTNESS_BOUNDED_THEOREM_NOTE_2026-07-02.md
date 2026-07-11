@@ -1,5 +1,8 @@
 # APS `η = 2/9` Topological Robustness at the `Z_3` Fixed Locus — Bounded Member Note
 
+**Current authority (2026-07-11):** older admission labels below are historical
+provenance only. The R-eta readout remains an `open_gate`.
+
 **Date:** 2026-07-02
 **Type:** bounded_theorem
 This source note does not set or predict an audit outcome.

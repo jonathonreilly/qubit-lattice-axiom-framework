@@ -3,7 +3,7 @@ runner: scripts/theta_gauge_positive_route_stretch_status_2026_07_04.py
 runner_sha256: d1942002ca3d3881537722bd68377fcb42cf64232d41025ab40916fef7f5ddae
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.15
+elapsed_sec: 1.89
 status: ok
 ----- stdout -----
 theta gauge positive-route stretch status verifier

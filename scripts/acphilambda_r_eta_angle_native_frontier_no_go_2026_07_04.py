@@ -88,8 +88,8 @@ def main() -> int:
     registry_flat = flat(registry_note)
     fixed_flat = flat(fixed)
 
-    check("note explicitly does not edit registry", "does not edit any Tier-A registry" in note_flat)
-    check("note says R-eta is not retired", "R-eta is not derived, refuted, re-graded, or removed from Tier-A" in note)
+    check("note routes current residual to open gate", "R-eta `open_gate`" in note)
+    check("note says R-eta remains open", "R-eta is not derived or refuted; its open gate remains" in note)
     check(
         "human registry points to the R-eta derivation obligation",
         "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry_note,

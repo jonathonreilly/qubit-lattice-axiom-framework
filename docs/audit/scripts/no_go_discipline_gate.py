@@ -185,7 +185,7 @@ CONTROLLED_VOCABULARY = "docs/repo/controlled_vocabulary.yaml"
 ACTIVE_REVIEW_QUEUE = "docs/repo/ACTIVE_REVIEW_QUEUE.md"
 PREMISE_CLASSES_CHECKED = {
     "axiom_or_approved_primitive",
-    "open_derivation_obligation",
+    "open_gate",
     "convention_not_accepted",
     "definition_or_scope_reframe",
 }
@@ -363,8 +363,8 @@ def build_cross_cycle_index(
     for obligation_id, record in sorted((obligations.get("nodes") or {}).items()):
         candidates.append(
             {
-                "candidate_id": f"open_derivation_obligation:{obligation_id}",
-                "kind": "open_derivation_obligation",
+                "candidate_id": f"open_gate:{obligation_id}",
+                "kind": "open_gate",
                 "source_claim_id": obligation_id,
                 "record": record,
             }
@@ -429,7 +429,7 @@ def build_cross_cycle_index(
                 "current_row_audit_history": True,
                 "one_hop_authority_audit_history": True,
                 "historical_dispositions": True,
-                "open_derivation_obligations": True,
+                "open_gates": True,
                 "similar_no_go_rows": {
                     "source": "audit ledger rows with claim_type=no_go",
                     "minimum_shared_terms": 2,
@@ -496,8 +496,8 @@ def build_partial_closure_index(
     obligations = _load_json(root, OBLIGATION_REGISTRY)
     for obligation_id in sorted(obligations.get("canonical_ids") or []):
         add_candidate(
-            candidate_id=f"derivation_obligation:{obligation_id}",
-            kind="derivation_obligation",
+            candidate_id=f"open_gate:{obligation_id}",
+            kind="open_gate",
             source_path=OBLIGATION_REGISTRY,
             content=(obligations.get("nodes") or {}).get(obligation_id, {}),
         )
@@ -1260,7 +1260,7 @@ def _validate_n6(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     error = _none_found_error(section, candidates, "N6")
     if error:
         return error
-    allowed_kinds = {"approved_primitive", "derivation_obligation", "convention_reframe", "definition_refactor"}
+    allowed_kinds = {"approved_primitive", "open_gate", "convention_reframe", "definition_refactor"}
     if checked_set == LEGACY_PREMISE_CLASSES_CHECKED:
         allowed_kinds.add("owner_governed")
     seen_candidate_ids: set[str] = set()

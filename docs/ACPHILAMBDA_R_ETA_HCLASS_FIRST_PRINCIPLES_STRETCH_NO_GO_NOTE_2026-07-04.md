@@ -144,8 +144,8 @@ a retained theorem must derive the readout or an approved primitive must supply 
 
 The paired runner verifies:
 
-- the Tier-A registry keeps the live AC_phi_lambda target and keeps
-  `delta_readout_identification_R_eta` in its decomposition;
+- decision history preserves `delta_readout_identification_R_eta` as
+  provenance while the current R-eta obligation carries the open target;
 - the approved premise registry contains only the four canonical axiom or
   primitive nodes and contains no h-class/R-eta bridge;
 - the minimal axioms keep context selection, formation rules, and
@@ -179,7 +179,7 @@ decision enters the proof.
 ## What Does Not Move
 
 - AC_phi_lambda is not retired.
-- R-eta is not derived, refuted, re-graded, or removed from Tier-A.
+- R-eta is not derived or refuted; its open gate remains.
 - No value of `delta`, `Phi`, h-class, h-unit, `alpha`, `c`, or `beta` is
   selected as the physical readout.
 - The fixed-locus arithmetic `L3(1,2)=2/9` remains valid support.

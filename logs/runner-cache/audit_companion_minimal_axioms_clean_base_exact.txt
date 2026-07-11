@@ -3,7 +3,7 @@ runner: scripts/audit_companion_minimal_axioms_clean_base_exact.py
 runner_sha256: 538a03551910698ad3659c51b894fb381f0f94095dcb94bd4014536c22773d2d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 PASS: Source note exists

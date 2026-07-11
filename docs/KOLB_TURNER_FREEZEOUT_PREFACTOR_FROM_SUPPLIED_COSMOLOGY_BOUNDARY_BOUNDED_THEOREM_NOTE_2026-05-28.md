@@ -1,5 +1,9 @@
 # Kolb-Turner Freeze-Out Prefactor from Supplied Cosmology Boundary — Bounded Narrow Theorem
 
+**Current authority (2026-07-11):** legacy admission routing below is
+historical provenance only. Any unresolved cosmology input remains conditional
+and supplies no premise.
+
 **Date:** 2026-05-28
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does

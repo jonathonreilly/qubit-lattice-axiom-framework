@@ -281,7 +281,7 @@ def main() -> int:
                           - e.subs(delta, -sp.Rational(2, 9))) == 0
               for e in (e1, e2, e3)))
     check("NOT CLAIMED: 2/9 derived. The value is fixed-locus arithmetic "
-          "CONDITIONAL on A_R-eta; A_R-eta itself remains admitted", True)
+          "CONDITIONAL on A_R-eta; A_R-eta itself remains open", True)
 
     # ------------------------------------------------------------------
     section("S9 - boundary witnesses + r-firewall")
@@ -303,10 +303,10 @@ def main() -> int:
           True)
     note_text = NOTE.read_text(encoding="utf-8") if NOTE.exists() else ""
     note_flat = " ".join(note_text.split())
-    check("2026-06-13 boundary: conditional support only; A_R-eta remains admitted",
+    check("2026-06-13 boundary: conditional support only; A_R-eta remains open",
           "2026-06-13 audit-conditional boundary" in note_text
-          and "conditional support for narrowing sub-admission (ii), not a retirement" in note_flat
-          and "A_R-eta` (h-class + h-unit, one real parameter) remains admitted" in note_flat
+          and "conditional support for narrowing the historical item (ii), not its closure" in note_flat
+          and "A_R-eta` (h-class + h-unit, one real parameter) remains open" in note_flat
           and "cannot cite it as a framework-native derivation of `|delta| = 2/9`" in note_flat)
     # 2026-07-05 dependency-status split: formal split + one-hop K-orbit wiring.
     check("2026-07-05 dependency-status split: explicit FORMAL H(delta) theorem "

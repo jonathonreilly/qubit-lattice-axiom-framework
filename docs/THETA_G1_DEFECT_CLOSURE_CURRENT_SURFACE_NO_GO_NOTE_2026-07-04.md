@@ -39,9 +39,9 @@ restriction or suppression. It does not.
 - [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
   withholds source/action, weighting, dynamics, context-selection, and
   arbitrary physical-observable identification.
-- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
-  keeps theta in Tier-A, with a gauge-side winding residual and a mass-side
-  determinant residual.
+- `docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`
+  tracks the open mass-side cross-sector readout without supplying a premise;
+  the gauge-side winding work is a separate retained-science target.
 - [`THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`](THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md)
   blocks the shortcut that the updated axioms/primitives already supply the
   gauge-side action/Q/readout/weighting structure.
@@ -82,7 +82,7 @@ The present framework surface therefore localizes G1; it does not close it.
 | Record/readout rule | Reads existing record content; it does not manufacture closedness or select a defect-free sector. |
 | Admissibility | Allows possibilities; it is not a dynamics axiom and does not select the closed branch. |
 | G3 phase insertion work | The phase slot remains open and cannot bypass the carrier's need for defect discipline. |
-| admission-era decision history | The gauge-side winding residual remains present; the registry is not edited by this block. |
+| historical decision provenance | Records the earlier decomposition only; it supplies no current residual or premise. |
 
 ## Exact Algebraic Boundary
 
@@ -128,7 +128,7 @@ future constraint-level, defect-energy, or scaling-limit route cannot close G1.
 1. **Constraint-level route:** search for a native branch law that forces
    `dn = 0` before summing the theta carrier.
 2. **Dynamical route:** search for an action, measure, or scaling-limit
-   argument that suppresses `dn != 0` without adding a Tier-A premise.
+   argument that suppresses `dn != 0` from axioms and approved primitives.
 3. **G2 registration after G1:** if either route closes, register the flux and
    intersection data as record/readout content on the nonabelian sector.
 4. **G4 assembly last:** only after G1-G3 and the mass-side bridge are supplied

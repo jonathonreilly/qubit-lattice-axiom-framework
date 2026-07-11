@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_source_measure_planck_action_rn_source_unit_bridge.py
-runner_sha256: 402589d5433eb146b39b8a40292562238a5b147ea9f9edd5d34929af6c24056d
+runner_sha256: e9cd801115f7519ba8e5d1983d7c4286a9c3172f8f1f388a39d55c4b5469346f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.36
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -13,7 +13,7 @@ SOURCE/MEASURE PLANCK-ACTION RN SOURCE-UNIT BRIDGE
 Part 1: document and dependency boundary
 [PASS] docs/SOURCE_MEASURE_PLANCK_ACTION_RN_SOURCE_UNIT_BRIDGE_NOTE_2026-05-30.md exists
 [PASS] docs/SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md exists
-[PASS] docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md exists
+[PASS] docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md exists
 [PASS] docs/PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md exists
 [PASS] docs/YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md exists
 [PASS] docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md exists
@@ -28,7 +28,7 @@ Part 1: document and dependency boundary
 [PASS] note forbids closure without top-source identification
 [PASS] note names top-source hinge
 [PASS] boundary exposes lambda family
-[PASS] Tier-A registry names Planck anchor
+[PASS] approved scale primitive names Planck anchor
 [PASS] Planck source-unit support names lambda=1
 
 Part 2: Planck-action source equals RN natural parameter

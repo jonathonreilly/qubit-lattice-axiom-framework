@@ -1,11 +1,15 @@
-# AC_phi_lambda Sub-Admission (ii) Narrowing: R-eta Decomposes Into a Forced Form Layer Plus One Identification Atom — Bounded Theorem
+# AC_phi_lambda R-eta Narrowing: Forced Form Layer Plus One Open Identification Gate
+
+**Current authority (2026-07-11):** the former admission terminology below is
+historical provenance only. `A_R-eta` is an `open_gate`, not an accepted
+premise. This note's forced-form algebra does not satisfy that gate.
 
 **Date:** 2026-06-11
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
-set or predict an audit outcome and does not edit the audit-lane-owned Tier-A
-registry (`docs/audit/data/premise_decision_history.json`), ledger, queue, or any
+set or predict an audit outcome. The decision-history file is non-authoritative
+provenance; this note does not edit the ledger, queue, or any
 publication-status surface.
 **Primary runner:**
 [`scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py`](../scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py)
@@ -17,20 +21,19 @@ superseded `MINIMAL_AXIOMS_2026-06-05.md` to the current four-axiom memo
 supplied-context from [T1, KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md).
 No claim is strengthened; this is premise relocation only.
 
-> **What this is.** The live Tier-A registry states AC_phi_lambda
-> sub-admission (ii) as "the delta readout identification (R-eta:
+> **What this is.** The historical decision record stated AC_phi_lambda
+> sub-target (ii) as "the delta readout identification (R-eta:
 > density-read-as-angle; the magnitude 2/9 is fixed-locus arithmetic
 > conditional on R-eta, not an admitted number)". This note decomposes that
 > R-eta package into (1) a **forced form layer** — derived from the Record
 > axiom's registrability constraints plus exact circulant algebra, re-proven
 > from scratch in the runner — and (2) a **single named identification atom**
-> `A_R-eta` that is the honest admitted residual. The admission is narrowed,
-> not retired: `A_R-eta` remains genuinely admitted, and the note quantifies
+> `A_R-eta` that is the honest open residual. `A_R-eta` remains an open gate,
+> and the note quantifies
 > exactly how much work it does (one real parameter: the value of `|delta|`
 > in the forced fundamental domain). The delta sign, the channel, the
 > orientation-freeness, the r-decoupling of the named atom, the forced
-> weights, and the magnitude arithmetic are all shown to be derived or exact,
-> not admitted.
+> weights, and the magnitude arithmetic are all shown to be derived or exact.
 
 ## r-firewall declaration (read first)
 
@@ -44,11 +47,11 @@ comparator, which uses `r = 1/2`, is **not consumed**).
 
 ## 2026-06-13 audit-conditional boundary
 
-This is conditional support for narrowing sub-admission (ii), not a retirement
-of that admission. The forced form layer is finite algebra on the supplied
+This is conditional support for narrowing the historical item (ii), not its
+closure. The forced form layer is finite algebra on the supplied
 AC_phi_lambda circulant/K-orbit/readout context. The surviving atom
-`A_R-eta` (h-class + h-unit, one real parameter) remains admitted, and the
-standing physical readout-context premise remains supplied. A consumer may
+`A_R-eta` (h-class + h-unit, one real parameter) remains open, and the
+physical readout context remains conditional. A consumer may
 cite this note only for the form/value split: it cannot cite it as a
 framework-native derivation of `|delta| = 2/9`, as a registry edit, or as a
 closure of the carrier gate / R2 / `r` lanes.
@@ -183,7 +186,7 @@ four distinguishable contents:
    (Runner S6; the arithmetic cross-checks the retained-bounded fixed-locus
    note.)
 
-**The minimal admitted atom.** What remains admitted in sub-admission (ii) is
+**The minimal open atom.** What remains open from historical item (ii) is
 the single identification
 
 ```text
@@ -218,9 +221,9 @@ exactly (runner S4):
   forced or exact independently of it.
 
 Before this note, sub-admission (ii) read as the whole "density-read-as-angle"
-package; after it, the honest admitted content is the one-parameter
-identification `A_R-eta` (equivalently: h-class + h-unit). That is a strictly
-smaller residual with the same admitted status — narrowed, not retired.
+package; after it, the honest open content is the one-parameter identification
+`A_R-eta` (equivalently: h-class + h-unit). That is a strictly smaller open
+residual, not premise content.
 
 ## Hostile guard (a): no circularity
 
@@ -235,9 +238,8 @@ isolated as the atom.
 
 ## Boundary
 
-- **Not retired.** Sub-admission (ii) remains a Tier-A admission; this note
-  narrows what it admits to `A_R-eta` and proves the rest of the package.
-  Registry wording changes are audit-lane / owner business, not enacted here.
+- **Not closed.** `A_R-eta` remains an open gate; this note narrows its content
+  and proves only the forced-form layer.
 - **Not derived.** `|delta| = 2/9` remains conditional on `A_R-eta`. No claim
   that `A_R-eta` is forced; the runner shows the opposite (the form layer
   cannot select it).
@@ -279,9 +281,9 @@ downstream status.
 ## Honest-auditor-read
 
 An auditor should read this note as: *a bounded structural theorem that
-re-partitions the content of an existing Tier-A sub-admission, with all
+re-partitions a historical residual into conditional support plus an open gate, with all
 load-bearing algebra re-derived in an exact 55-check runner, and with the
-admitted residual restated in a strictly smaller, named form (`A_R-eta` =
+open residual restated in a strictly smaller, named form (`A_R-eta` =
 h-class + h-unit, one real parameter of load).* The note's value is the
 honest split, not a value derivation. Soft spots an auditor should press:
 
@@ -294,7 +296,7 @@ honest split, not a value derivation. Soft spots an auditor should press:
    context; the formal H(delta) algebra of section "Formal theorem (H(delta)
    layer)" depends on the retained circulant form alone;
 2. "weights forced" is forced *within* the AB/Lefschetz class — class
-   membership is h-class, i.e. still admitted; the note does not hide this;
+   membership is h-class, i.e. still open; the note does not hide this;
 3. the additive+even sign-strip is re-derived here, but its application to
    the physical readout assumes the standing premise that the physical
    readout context satisfies the Record registrability constraints (the
@@ -306,8 +308,7 @@ honest split, not a value derivation. Soft spots an auditor should press:
 ## Dependencies (current-main status reviewed 2026-07-05)
 
 - `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
-  — meta (the live registry; source of the sub-admission (ii) text being
-  narrowed).
+  — historical meta only; source of the old item (ii) wording.
 - [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — approved
   axiom surface (Record finite additivity, the axiom input).
 - [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)

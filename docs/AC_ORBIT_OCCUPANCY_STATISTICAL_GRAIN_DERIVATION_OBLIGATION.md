@@ -1,9 +1,9 @@
 # AC Orbit-Occupancy Statistical-Grain Derivation Obligation
 
-**Date:** 2026-07-11  
-**Type:** open_gate  
+**Date:** 2026-07-11
+**Type:** open_gate
 **Premise weight:** none. This is an open derivation obligation, not an axiom,
-approved primitive, accepted premise, convention, or theorem.  
+approved primitive, accepted premise, convention, or theorem.
 **Status authority:** independent audit lane only.
 
 ## Exact target

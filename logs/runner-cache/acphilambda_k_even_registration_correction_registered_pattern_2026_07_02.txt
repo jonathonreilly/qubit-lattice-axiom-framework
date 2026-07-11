@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py
-runner_sha256: 48f233b0f416b354f2fcf47913a34a7d8638ee3fa6ffd4c219a5a79743d7ca5b
+runner_sha256: e53e08b73bd2cee830351ad670fa154e27c191a11b31895d7d924460794b2c77
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.05
+elapsed_sec: 0.79
 status: ok
 ----- stdout -----
 
@@ -16,8 +16,10 @@ PART A - sources and authority gates
        docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
 [PASS] ledger exists
        docs/audit/data/audit_ledger.json
-[PASS] Tier-A data exists
+[PASS] decision-history provenance exists
        docs/audit/data/premise_decision_history.json
+[PASS] open-gate registry exists
+       docs/audit/data/derivation_obligations.json
 [PASS] record file pin present: only a finer character-basis record would touch it
 [PASS] note quotes record pin: only a finer character-basis record would touch it
 [PASS] record file pin present: neither produced nor relaxed by the record-preserving dynamics
@@ -56,9 +58,9 @@ PART A - sources and authority gates
 [PASS] BRANNEN premise quote 2 is verbatim in the dependency claim section
 [PASS] retired ledger-scope embedding absent
 [PASS] retired citation-authority wording absent
-[PASS] Tier-A statement contains sub-admission (ii)
-[PASS] note quotes Tier-A sub-admission (ii)
-[PASS] Tier-A path is inline code, not markdown link
+[PASS] current open gate names the eta-angle readout
+[PASS] decision history is non-authoritative
+[PASS] decision-history path is provenance-only inline context
 
 PART B - C1 exact K-parity
 [PASS] bare spectrum cos(3 delta) is K-even
@@ -103,8 +105,8 @@ PART D - note discipline
 [PASS] required sentence embedded: every registrable layer derived in this campaign
 [PASS] required sentence present: the K-odd trace is a reconstruction-layer detect
 [PASS] required sentence embedded: the K-odd trace is a reconstruction-layer detect
-[PASS] required sentence present: on the current retained surface the value is rea
-[PASS] required sentence embedded: on the current retained surface the value is rea
+[PASS] required sentence present: the value is realized-state registered data whil
+[PASS] required sentence embedded: the value is realized-state registered data whil
 [PASS] required sentence present: this is the registered-pattern normal form, not 
 [PASS] required sentence embedded: this is the registered-pattern normal form, not 
 [PASS] normal-form sentence present
@@ -143,11 +145,11 @@ PART D - note discipline
 [PASS] retired admission path is not markdown linked
 [PASS] no campaign note path markdown links
 [PASS] note line count in requested band
-       243
+       247
 [PASS] Verification section present
 [PASS] Primary runner header present
 
-TOTAL: PASS=111 FAIL=0
+TOTAL: PASS=112 FAIL=0
 
 ----- stderr -----
 

@@ -8,6 +8,7 @@ needed for the owner-gated classification argument.
 
 from __future__ import annotations
 
+import json
 import pathlib
 import re
 import sys
@@ -20,6 +21,7 @@ DOCS = ROOT / "docs"
 ARROW = DOCS / "ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md"
 PARENT = DOCS / "SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md"
 REGISTRY = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 
 PASS = 0
 FAIL = 0
@@ -144,21 +146,21 @@ def main() -> int:
         "direct text extraction: species residual statement names no tested number",
     )
 
-    theta_section = section(
-        registry,
-        "### θ — minimum decomposition (two named residuals)",
-        "### Pending-review sharpenings",
+    history = json.loads(DECISION_HISTORY.read_text(encoding="utf-8"))
+    theta_section = json.dumps(
+        history["retired_derivation_targets"]["strong_cp_theta_zero_note"],
+        ensure_ascii=False,
     )
     theta_names_number = (
-        "θ̄ = θ_gauge + arg det(M_q)" in theta_section
-        and "θ_gauge = 0" in theta_section
-        and "arg det M ∈ {0, π}" in theta_section
-        and "orientation to `0`" in theta_section
+        "theta_bar = theta_gauge + arg det(M_q)" in theta_section
+        and "theta_gauge = 0" in theta_section
+        and "arg det M in {0, pi}" in theta_section
+        and "orientation arg det M" in theta_section
     )
     check(
         7,
         theta_names_number,
-        "direct text extraction: registry theta entry names theta-bar numbers",
+        "historical provenance preserves the former theta decomposition",
     )
 
     ckm_quote = (

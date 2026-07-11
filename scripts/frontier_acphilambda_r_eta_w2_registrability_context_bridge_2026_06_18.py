@@ -236,7 +236,7 @@ def main() -> int:
         "source-side bounded support only",
         "closes only piece 1",
         "Piece 2 remains the named carrier-gate / chirality-gate residual",
-        "The value atom `A_R-eta` remains admitted",
+        "The value atom `A_R-eta` remains open",
         "No new axiom, primitive, admission, normalization, probability rule",
         "does not set or predict the downstream status",
         "physical carrier/context realization plus R-eta value",

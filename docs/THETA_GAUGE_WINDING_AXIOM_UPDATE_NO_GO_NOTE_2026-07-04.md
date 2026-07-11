@@ -153,24 +153,33 @@ per-plaquette cross-plane absence, action-class theorem, emergent-Q bridge,
 branch/section readout, joint gauge/mass, and approved-primitive proposals remain
 separate.
 
-**N2 wall independence.** The wall is the gauge-side winding account: the
-physical topological-sector/gauge-action bridge for `theta_gauge`. No new wall
-is added.
+**N2 wall independence.** The gauge-side target contains four independently
+closable steps:
+
+| Step | Closing it does not close |
+|---|---|
+| scalar/gauge action class | emergent integer `Q`, branch readout, weighting |
+| emergent integer `Q` | action selection, branch readout, weighting |
+| branch/section readout | action selection, integer-`Q` theorem, weighting |
+| sector weighting | action selection, integer-`Q` theorem, branch readout |
+
+This note establishes only their joint non-supply by the current foundation;
+it does not collapse them into one wall.
 
 **N3 hidden-wall scan.** The proof imports no measured neutron-EDM bound, no
 comparator, no fitted value, no axion assumption, no topological-sector
 primitive, no action-class primitive, no branch/section primitive, and no
 registry edit.
 
-**N4 residual matching.** The result matches the admission-era decision history's gauge-side
-residual and does not touch the mass-side determinant-readout bridge.
+**N4 residual matching.** The result matches the four gauge-side steps stated
+above. Historical decision prose is provenance only and supplies none of them.
 
 **N5 proven surface.** Proven here is an axiom/primitives non-supply result plus
 finite carrier sanity checks. It is not a universal no-go against future
 gauge-action, emergent-Q, or topological-sector readout theorems.
 
-**N6 partial closure.** The target is sharpened: derive the action/Q/readout
-bridge or keep theta admitted.
+**N6 partial closure.** The target is sharpened: derive the action, integer-Q,
+branch-readout, and weighting steps. Partial closure is recorded stepwise.
 
 **N7 steelman.** A reviewer can say the finite-lattice connected-gauge
 observation and per-plaquette cross-plane absence are exactly the right

@@ -11,12 +11,12 @@
     "lambda": "1",
     "y_33": "1/sqrt(6)"
   },
-  "fail_count": 4,
+  "fail_count": 2,
   "not_closed_unbounded": [
     "P-cal/P1 derivation from A1+A2",
     "strict same-source top/W pole-response certificate"
   ],
-  "pass_count": 70,
+  "pass_count": 72,
   "planck_scope": {
     "planck_role": "dimensionful scale/source-unit analogy only",
     "yt_dimensionless_proof_input": "not Planck"

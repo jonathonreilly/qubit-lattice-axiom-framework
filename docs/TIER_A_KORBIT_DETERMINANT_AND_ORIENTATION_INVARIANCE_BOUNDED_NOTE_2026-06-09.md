@@ -1,4 +1,8 @@
-# Tier-A K/CPT Orientation Invariance For The AC_phi_lambda Gate: Bounded Candidate Route
+# K/CPT Orientation Invariance for the AC_phi_lambda Open Gate
+
+**Current authority (2026-07-11):** the filename and older registry language are
+historical provenance only. This note proves conditional algebra and supplies
+no premise. The physical-gate identification and occupancy grain remain open.
 
 **Date:** 2026-06-09 (2026-06-10: the determinant-character phase-erasure
 lemma moved to its own note,
@@ -20,8 +24,8 @@ registry.
 
 ## Boundary
 
-This note preserves a useful algebraic route without claiming the Tier-A
-registry has already changed.
+This note preserves a useful conditional algebraic route without restoring any
+admission authority.
 
 It proves one bounded fact:
 
@@ -66,8 +70,8 @@ Physically, this family is the `AC_phi_lambda` gate surface of the
 staggered-Dirac realization lane
 (`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`, context, not
 load-bearing: the identification of the physical gate surface with this class
-is carried by the `AC_phi_lambda` admission itself, which supplies its own gate
-surface). Write the relevant Hermitian circulant as
+was historically associated with `AC_phi_lambda`; it is now an open condition).
+Write the relevant Hermitian circulant as
 
 ```text
 H(delta) = a I + B exp(i delta) C + B exp(-i delta) C^T.
@@ -89,12 +93,12 @@ This does not derive the magnitude `|delta| = 2/9`. It also does not rule out a
 future orientation-sensitive bridge if the registrable surface is enlarged
 beyond the unordered multiset.
 
-## Registry Consequence
+## Open-gate consequence
 
-The only supported consequence is a candidate route for future Tier-A registry
-review:
+The only supported consequence is a candidate route for future retained
+derivation:
 
-- `AC_phi_lambda`: the orientation lemma may help reduce the admission to a
+- `AC_phi_lambda`: the orientation lemma may help reduce the open gate to a
   magnitude-only atom only after the unordered-multiset registrability bridge is
   retained or confirmed as already supplied by existing audited surfaces.
 

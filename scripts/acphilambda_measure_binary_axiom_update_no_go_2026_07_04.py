@@ -85,7 +85,7 @@ def main() -> int:
     check("carrier-measure boundary row is retained-grade", row.get("effective_status") in {"retained", "retained_bounded", "retained_no_go"}, row.get("effective_status"))
     check("carrier-measure boundary row is audited_clean", row.get("audit_status") == "audited_clean", row.get("audit_status"))
 
-    section("B. Tier-A registry boundary")
+    section("B. historical decision boundary and current open gate")
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     check("Tier-A has no live admitted inputs", tier["genuine_admitted_input_count"] == 0)
     check("Tier-A live target map is empty", tier["derivation_targets"] == {})
@@ -103,7 +103,7 @@ def main() -> int:
     ]:
         check(f"machine registry states {phrase}", phrase in ac["statement"])
     check("human registry points to the occupancy derivation obligation", "AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md" in registry)
-    check("note says registry is not edited", "The Tier-A registry is not edited." in note)
+    check("note routes the residual to the occupancy open gate", "occupancy `open_gate`" in note)
     check("note says AC_phi_lambda is not retired", "AC_phi_lambda is not retired." in note)
 
     section("C. approved premise-node registry")

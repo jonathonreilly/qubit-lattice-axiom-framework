@@ -1,5 +1,8 @@
 # Lane 5 `(C1)` A2 Action-Unit Metrology Obstruction Note
 
+**Current authority (2026-07-11):** legacy Tier-A routing below is historical
+provenance only. The associated scientific input is an open dependency.
+
 **Date:** 2026-04-29
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
 **Claim type:** bounded_theorem

@@ -61,6 +61,7 @@ def main() -> int:
         "docs/MINIMAL_AXIOMS_2026-06-29.md",
         "docs/audit/data/axiom_premise_nodes.json",
         "docs/audit/data/premise_decision_history.json",
+        "docs/audit/data/derivation_obligations.json",
         "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
         "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
         "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
@@ -77,7 +78,8 @@ def main() -> int:
     flat_note = flat(note)
     axioms = read("docs/MINIMAL_AXIOMS_2026-06-29.md")
     registry = read("docs/audit/data/axiom_premise_nodes.json")
-    tier_a = read("docs/audit/data/premise_decision_history.json")
+    decision_history = read("docs/audit/data/premise_decision_history.json")
+    obligations = read("docs/audit/data/derivation_obligations.json")
     scale = flat(read("docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md"))
     kinetic = flat(read("docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"))
     realized = flat(read("docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"))
@@ -119,8 +121,12 @@ def main() -> int:
         "pointwise evaluation, not a state-selection rule" in realized,
     )
     check(
-        "tier-A sub-admission (ii) names density-read-as-angle",
-        "density-read-as-angle" in tier_a,
+        "current R-eta open gate names density-read-as-angle",
+        "density class" in obligations and "eta angle" in obligations,
+    )
+    check(
+        "decision history is provenance only",
+        "Non-authoritative" in decision_history and "supplies no physics content" in decision_history,
     )
     check(
         "radian-bridge note carries the Type-B-to-radian primitive residual",

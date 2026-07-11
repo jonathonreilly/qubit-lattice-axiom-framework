@@ -8,11 +8,10 @@ discharge of the theta admission).
 **Status authority:** independent audit lane only. This note does not set an
 audit verdict, edit registries, register primitives, change axioms, retire or
 re-grade any Tier-A admission, or claim Strong-CP closure.
-**Current-main posture (2026-07-07):** theta is already retired from live
-Tier-A by retained derivation. This note banks a historical bounded support
-calculation for the theta-side local link-star campaign; it does not reopen,
-modify, or re-grade the theta retirement record or
-`premise_decision_history.json`.
+**Historical posture (2026-07-07):** the repo then described theta as retired
+under an older admission taxonomy. **Current posture (2026-07-11):** that
+taxonomy has no premise authority. This note supplies conditional gauge-side
+support only; the mass-side cross-sector determinant readout is an `open_gate`.
 **Primary runner:**
 [`scripts/theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02.py`](../scripts/theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02.py)
 **Runner cache:**

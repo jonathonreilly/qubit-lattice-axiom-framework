@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_tier_a_source_action_top_premise_closure.py
-runner_sha256: ca34935cca2a640be46119351ffcb89da7a4972729568c0192fc7e08819e6dde
+runner_sha256: 7d55a9bb9e576dab48c50df7d7ee3d8931d85f2ab464418c9e722e2fdd94dcff
 timeout_sec: 120
 exit_code: 1
-elapsed_sec: 0.82
+elapsed_sec: 0.79
 status: nonzero_exit
 ----- stdout -----
 
@@ -31,11 +31,11 @@ Part 1: anchors and status boundary
 [PASS] note contains section/phrase: Relation To Planck And Scale Setting
 [PASS] note contains section/phrase: Claim-Status Certificate
 [PASS] note contains section/phrase: Non-Claims
-[FAIL] P1 is in Tier-A derivation targets
-[FAIL] Tier-A P1 is chain-satisfying only at bounded tier
-[PASS] scale reference is not a Tier-A derivation target
+[PASS] decision history contains no live P1 premise
+[PASS] decision history is non-authoritative
+[PASS] scale reference is not an admission target
 [PASS] scale reference moved to approved primitive registry
-[PASS] Tier-A registry records scale primitive reclassification
+[PASS] history preserves scale primitive reclassification provenance
 [PASS] g0 convention is not an accepted derivation target
 [PASS] P1P2 synthesis names P-cal residual
 [PASS] P1P2 synthesis does not close parent scalar-additivity premise
@@ -92,7 +92,7 @@ Part 5: firewalls and claim status
 [PASS] status certificate records: bare_retained_allowed: false
 
 wrote outputs/yt_tier_a_source_action_top_premise_closure_2026-05-29.json
-SUMMARY: PASS=70 FAIL=4
+SUMMARY: PASS=72 FAIL=2
 
 ----- stderr -----
 

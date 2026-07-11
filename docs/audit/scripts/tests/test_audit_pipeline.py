@@ -125,7 +125,7 @@ def _no_go_packet(
             "scan_scope": "all registered premise classes and definition reframes",
             "premise_classes_checked": [
                 "axiom_or_approved_primitive",
-                "open_derivation_obligation",
+                "open_gate",
                 "convention_not_accepted",
                 "definition_or_scope_reframe",
             ],

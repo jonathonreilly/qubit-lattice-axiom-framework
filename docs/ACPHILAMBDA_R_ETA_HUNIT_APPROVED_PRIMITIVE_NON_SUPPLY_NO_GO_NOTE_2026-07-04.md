@@ -146,7 +146,7 @@ proof.
 ## What Does Not Move
 
 - AC_phi_lambda is not retired.
-- R-eta is not derived, refuted, re-graded, or removed from Tier-A.
+- R-eta is not derived or refuted; its open gate remains.
 - h-class and h-unit are not selected.
 - No registry, axiom, primitive, audit verdict, publication surface, or
   downstream dependency status is edited.

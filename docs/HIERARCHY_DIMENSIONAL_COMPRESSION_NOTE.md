@@ -1,5 +1,8 @@
 # Hierarchy Dimensional Compression Note
 
+**Current authority (2026-07-11):** legacy admission routing below is
+historical provenance only and supplies no premise.
+
 **Type:** open_gate / conditional-support
 **Claim type:** open_gate / conditional D=4 arithmetic support
 **Status:** conditional D=4 arithmetic support (source proposal; audit lane ratifies effective status)

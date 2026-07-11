@@ -222,7 +222,7 @@ def main() -> int:
         "The gauge-side winding account is untouched.",
         "No physical quark-sector determinant readout is derived.",
         "No positive real mass orientation is derived from the axioms.",
-        "derive the determinant-channel exhaustion bridge or keep theta admitted",
+        "derive the action, determinant-channel, K/CPT registration, and exhaustion steps",
     ]:
         check(f"note carries boundary phrase: {phrase[:48]}", phrase in note_flat)
     forbidden = [

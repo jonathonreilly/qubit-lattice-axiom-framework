@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py
-runner_sha256: 8b77abf01cdb9250519133a94c06996b2fa6f151c237144fcde0f6cb144e1c23
+runner_sha256: 03338e9fe07c89d9592e1ae347644ce51cecb0a3974a0c24736c75efe8d25669
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.73
+elapsed_sec: 1.46
 status: ok
 ----- stdout -----
 AC_phi_lambda occupancy formation-append non-supply verifier

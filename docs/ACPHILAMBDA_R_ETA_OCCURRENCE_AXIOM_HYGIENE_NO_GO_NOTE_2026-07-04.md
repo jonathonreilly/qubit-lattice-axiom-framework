@@ -150,7 +150,7 @@ That is a supplied normalization, not an axiom consequence. Changing `|b|` or
 ## What Does Not Move
 
 - AC_phi_lambda is not retired.
-- R-eta is not derived, refuted, re-graded, or removed from Tier-A.
+- R-eta is not derived or refuted; its open gate remains.
 - The Tier-A registry is not edited.
 - A future occurrence theorem is not ruled out. It must derive or explicitly
   supply the event predicate, coherence-reading interface, reset/preparation,

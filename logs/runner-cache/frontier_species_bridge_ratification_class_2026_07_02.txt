@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_species_bridge_ratification_class_2026_07_02.py
-runner_sha256: 20ffdb8822385d637621db3afaafed048d71bcef0c31524179e409807666c5c0
+runner_sha256: 066cc3f14a1233916bc967c938d648c4182f845cc9a9f525fbea74acd7fb2834
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05

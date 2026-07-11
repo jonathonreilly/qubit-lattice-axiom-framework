@@ -1,5 +1,8 @@
 # AC_phi_lambda R-eta Record-Registrability Context Bridge -- Bounded Support Theorem
 
+**Current authority (2026-07-11):** `A_R-eta` is an `open_gate`, not an admitted
+premise. Historical admission terminology in this note has no authority.
+
 **Date:** 2026-06-18
 **Claim type:** bounded_theorem
 **Type:** bounded_support_theorem
@@ -29,7 +32,7 @@ This note separates that premise into two pieces:
    instantiates that supplied finite context.
 
 The theorem below closes only piece 1. Piece 2 remains the named carrier-gate /
-chirality-gate residual. The value atom `A_R-eta` remains admitted.
+chirality-gate residual. The value atom `A_R-eta` remains open.
 
 ## Theorem
 

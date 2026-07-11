@@ -117,9 +117,9 @@ def part1_documents() -> dict[str, Any]:
     check("package avoids retained-status promotion language", conditional_key not in note and proposal_key not in note)
 
     tier = read(TIER_A_YT)
-    check("Tier-A YT note says answer is yes on accepted bounded surface", "Yes, on that accepted bounded surface" in tier)
-    check("Tier-A YT note closes lambda=1", "lambda = 1" in tier and "y_33 = 1 / sqrt(6)" in tier)
-    check("Tier-A YT note does not claim unbounded closure", "does not by itself promote" in tier)
+    check("YT note states the calculation is conditional", "Conditionally. Under the explicit open source-measure hypothesis" in tier)
+    check("YT note computes lambda=1 under that hypothesis", "lambda = 1" in tier and "y_33 = 1 / sqrt(6)" in tier)
+    check("YT note does not claim premise closure", "supplies no premise" in tier)
 
     pcal = read(PCAL_SYNTHESIS)
     boundary = read(LOG_BOUNDARY)
@@ -157,8 +157,8 @@ def part2_ledger_statuses() -> dict[str, Any]:
 
     tier_registry = json.loads(read(TIER_A_REGISTRY))
     derivation_targets = tier_registry.get("derivation_targets", {})
-    check("Tier-A registry contains P1/P-cal parent", "observable_principle_from_axiom_note" in derivation_targets)
-    check("Tier-A registry treats derivation targets as bounded-tier", "bounded tier" in tier_registry.get("description", ""))
+    check("decision history contains no live P1 premise", "observable_principle_from_axiom_note" not in derivation_targets)
+    check("decision history is non-authoritative", "Non-authoritative" in tier_registry.get("description", ""))
     return {"support_statuses": support_statuses, "root_statuses": root_statuses}
 
 

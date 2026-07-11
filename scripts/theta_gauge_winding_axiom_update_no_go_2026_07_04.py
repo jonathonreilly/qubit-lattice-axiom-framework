@@ -329,7 +329,7 @@ def main() -> int:
         "No full gauge-measure/action premise is derived.",
         "No continuum/scaling-limit sector functional `Q` is derived.",
         "No branch/section choice or topological-sector readout primitive is adopted.",
-        "derive the action/Q/readout bridge or keep theta admitted",
+        "derive the action, integer-Q, branch-readout, and weighting steps",
     ]:
         check(f"note carries boundary phrase: {phrase[:48]}", phrase in note_flat)
     forbidden = [

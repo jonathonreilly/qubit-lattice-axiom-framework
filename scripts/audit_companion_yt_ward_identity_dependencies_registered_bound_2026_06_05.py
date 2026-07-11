@@ -433,7 +433,7 @@ check(
 
 
 # ==========================================================================
-banner("BLOCK 9: Dependency-registration check (reads registry/ledger; writes nothing)")
+banner("BLOCK 9: Open-dependency check (reads history/ledger; writes nothing)")
 # ==========================================================================
 DEP1_TIER_A = "staggered_dirac_realization_gate_note_2026-05-03"
 DEP2_BASIS = "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
@@ -450,9 +450,9 @@ deriv_targets = set((tier_a.get("derivation_targets") or {}).keys())
 conventions = set((tier_a.get("conventions") or {}).keys())
 
 check(
-    f"Dep 1 '{DEP1_TIER_A}' is a REGISTERED Tier-A derivation target (AC_phi_lambda)",
-    DEP1_TIER_A in deriv_targets,
-    f"derivation_targets = {sorted(deriv_targets)}",
+    f"Dep 1 '{DEP1_TIER_A}' is not an accepted premise",
+    DEP1_TIER_A not in deriv_targets,
+    f"historical derivation_targets = {sorted(deriv_targets)}",
 )
 check(
     f"Dep 2 basis '{DEP2_BASIS}' is retained-grade in the ledger",
@@ -461,10 +461,10 @@ check(
     f"ledger_effective_status:{rows.get(DEP2_BASIS, {}).get('effective_status')}",
 )
 check(
-    f"g_bare=1 convention '{GBARE_CONVENTION}' is registered (Tier-A conventions) and retained-grade",
+    f"g_bare=1 convention '{GBARE_CONVENTION}' is historical and not retained-grade supply",
     GBARE_CONVENTION in conventions
-    and rows.get(GBARE_CONVENTION, {}).get("effective_status") in RETAINED_GRADES,
-    f"in conventions={GBARE_CONVENTION in conventions}, "
+    and rows.get(GBARE_CONVENTION, {}).get("effective_status") not in RETAINED_GRADES,
+    f"historical conventions={GBARE_CONVENTION in conventions}, "
     f"ledger_effective_status:{rows.get(GBARE_CONVENTION, {}).get('effective_status')}",
 )
 check(
@@ -498,34 +498,21 @@ check(
 # ==========================================================================
 banner("BLOCK 10: Re-audit CASE arithmetic (no status is written)")
 # ==========================================================================
-# Mirror the PUBLISHED compute_effective_status chain rule for a clean
-# bounded_theorem row whose one-hop deps are exactly:
-#   {Dep1 = Tier-A derivation target, Dep2 = retained rescaling note,
-#    Dep2 convention edge = retained rigidity note}.
-# Rule (compute_effective_status.clean_status):
-#   - a dep that is retained-grade  -> satisfies, does not bound;
-#   - a dep that is a Tier-A derivation target -> satisfies AND bounds to
-#     retained_bounded;
-#   - otherwise -> retained_pending_chain.
-# So the resolved class is Tier-A-bounded. This is the case the note makes for
-# the PARENT row once the parent's deps route to registered sources.
+# Mirror the current chain rule: only retained-grade rows and registered
+# axioms/primitives satisfy dependencies. Historical decisions and conventions
+# do not satisfy or bound the chain.
 def resolve_clean_bounded(dep_ids: list[str]) -> str:
-    has_tier_a = False
     for d in dep_ids:
         if d in rows and rows[d].get("effective_status") in RETAINED_GRADES:
             continue
-        # axiom premises would also satisfy; none of these deps are axioms
-        if d in deriv_targets:
-            has_tier_a = True
-            continue
         return "retained_pending_chain"
-    return "retained_bounded" if has_tier_a else "retained"
+    return "retained"
 
 
 resolved = resolve_clean_bounded([DEP1_TIER_A, DEP2_BASIS, GBARE_CONVENTION])
 check(
-    "Clean bounded_theorem row with deps {Tier-A target, retained rescaling note, retained convention note} -> Tier-A-bounded candidate",
-    resolved == "retained_bounded",
+    "Open Dep 1 and non-retained convention keep the bounded row pending-chain",
+    resolved == "retained_pending_chain",
     f"resolved = {resolved} (published compute_effective_status rule)",
 )
 # Counterfactual honesty: had the note instead linked the conditional target
@@ -534,7 +521,7 @@ check(
 # backticks the target row.
 resolved_bad = resolve_clean_bounded([DEP1_TIER_A, DEP2_BASIS, GBARE_CONVENTION, TARGET_ROW])
 check(
-    "Counterfactual: linking the conditional target row would cap the row (not Tier-A-bounded)",
+    "Linking another conditional target also leaves the row pending-chain",
     resolved_bad == "retained_pending_chain",
     f"resolved = {resolved_bad} (this is why the note backticks the target row)",
 )

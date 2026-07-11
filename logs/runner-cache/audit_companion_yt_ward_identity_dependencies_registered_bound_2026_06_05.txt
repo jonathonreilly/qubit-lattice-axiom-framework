@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.py
-runner_sha256: 2cb58fe65b9bf7ab7863da0c75ed8496b95711911f300a86e89336dd9441e94c
+runner_sha256: 86107f964e2412beb29031ae5f70927e302de50d5a23e6b809536d1a3097e657
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.55
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
 ----- stdout -----
 
 ========================================================================
@@ -65,11 +65,11 @@ BLOCK 8: Normalized form factor F = y_t_bare/g_bare is g_bare-FLAT
 [PASS] F invariant under joint rescaling (g_bare, beta) -> (g_bare/c, c^2 beta)  --  the load-bearing ratio is rescaling-invariant
 
 ========================================================================
-BLOCK 9: Dependency-registration check (reads registry/ledger; writes nothing)
+BLOCK 9: Open-dependency check (reads history/ledger; writes nothing)
 ========================================================================
-[FAIL] Dep 1 'staggered_dirac_realization_gate_note_2026-05-03' is a REGISTERED Tier-A derivation target (AC_phi_lambda)  --  derivation_targets = []
+[PASS] Dep 1 'staggered_dirac_realization_gate_note_2026-05-03' is not an accepted premise  --  historical derivation_targets = []
 [PASS] Dep 2 basis 'beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10' is retained-grade in the ledger  --  ledger_effective_status:retained
-[FAIL] g_bare=1 convention 'g_bare_rigidity_theorem_note' is registered (Tier-A conventions) and retained-grade  --  in conventions=True, ledger_effective_status:unaudited
+[PASS] g_bare=1 convention 'g_bare_rigidity_theorem_note' is historical and not retained-grade supply  --  historical conventions=True, ledger_effective_status:unaudited
 [PASS] Source note exposes G_BARE_RIGIDITY_THEOREM_NOTE.md as a one-hop convention dependency  --  the re-audit blocker requested the retained convention/rigidity edge
 [PASS] Source note preserves the finite-link scope boundary for the rigidity dependency  --  prevents using rigidity as a Wilson/beta or measured-coupling theorem
 [PASS] Target row 'yt_ward_identity_derivation_theorem' is NOT retained-grade (so it must be backticked, not linked)  --  ledger_effective_status:unaudited
@@ -77,11 +77,11 @@ BLOCK 9: Dependency-registration check (reads registry/ledger; writes nothing)
 ========================================================================
 BLOCK 10: Re-audit CASE arithmetic (no status is written)
 ========================================================================
-[FAIL] Clean bounded_theorem row with deps {Tier-A target, retained rescaling note, retained convention note} -> Tier-A-bounded candidate  --  resolved = retained_pending_chain (published compute_effective_status rule)
-[PASS] Counterfactual: linking the conditional target row would cap the row (not Tier-A-bounded)  --  resolved = retained_pending_chain (this is why the note backticks the target row)
+[PASS] Open Dep 1 and non-retained convention keep the bounded row pending-chain  --  resolved = retained_pending_chain (published compute_effective_status rule)
+[PASS] Linking another conditional target also leaves the row pending-chain  --  resolved = retained_pending_chain (this is why the note backticks the target row)
 
 ========================================================================
-TOTAL: 30 PASS / 3 FAIL
+TOTAL: 33 PASS / 0 FAIL
 ========================================================================
 
 ----- stderr -----

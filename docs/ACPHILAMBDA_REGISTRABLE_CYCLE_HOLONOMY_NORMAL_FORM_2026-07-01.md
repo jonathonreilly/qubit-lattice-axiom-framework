@@ -1,4 +1,8 @@
 # AC_phi_lambda Registrable Cycle-Holonomy Normal Form
+
+**Current authority (2026-07-11):** older admission labels below are historical
+provenance only. The physical R-eta readout remains an `open_gate`; this note's
+normal-form algebra does not supply it.
 **Date:** 2026-07-01
 **Claim type:** bounded_theorem
 **Scope:** registrable normal form plus selector re-coordination.

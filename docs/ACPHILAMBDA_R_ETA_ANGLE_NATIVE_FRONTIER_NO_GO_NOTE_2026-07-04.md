@@ -16,9 +16,9 @@ registry, axiom, primitive, or publication-status surface.
 
 ## Target
 
-After the 2026-07-04 Tier-A hygiene and partial AC_phi_lambda retirements, the
-machine registry still lists AC_phi_lambda as the live Tier-A target, with
-residual atoms including:
+After the 2026-07-04 premise-hygiene work, decision history preserves the
+former AC_phi_lambda residual atoms only as provenance. The current R-eta
+derivation obligation includes:
 
 ```text
 reading_occupancy_selection
@@ -55,9 +55,9 @@ fixed-locus density to the registered charged-lepton holonomy value.
 - [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
   supplies the retained no-go that the retained periodic finite/lattice phase
   sources do not derive the literal `2/9`-radian selected-line bridge.
-- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
-  is registry metadata, not a retained theorem input; it names the live
-  residual as the delta readout identification R-eta.
+- `docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`
+  states the current open R-eta target; the historical admitted-input note is
+  provenance only.
 
 Unaudited July route-map notes are context only when named in prose. Their
 finite algebra needed below is rechecked directly by the runner.
@@ -122,7 +122,7 @@ selectors, or a chosen occurrence rate.
 ## What Does Not Move
 
 - AC_phi_lambda is not retired.
-- R-eta is not derived, refuted, re-graded, or removed from Tier-A.
+- R-eta is not derived or refuted; its open gate remains.
 - AC(i), species_bridge, theta, occurrence-lane clocks, source/action gates,
   and owner primitive decisions are untouched.
 - A future angle-native theorem is not ruled out. It must supply the
@@ -166,7 +166,7 @@ state selection, no probability rule, no occurrence count, no theta premise,
 and no new primitive. The fixed-locus density is retained-bounded arithmetic;
 turning it into the charged-lepton angle is exactly the open license.
 
-**N4 residual matching.** The residual matches the Tier-A registry statement:
+**N4 residual matching.** The residual matches the R-eta `open_gate`:
 R-eta is the density-read-as-angle identification, with the magnitude
 arithmetic conditional on that identification.
 

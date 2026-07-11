@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_occurrence_axiom_hygiene_no_go_2026_07_04.py
-runner_sha256: 747c629a69453925ffa526d28ac1226bf3442f18b1e79b9d806b6ad1fd75e17f
+runner_sha256: d860d96f7d5fe9da258129c0319bae1289dfceb2950ca68e7ab044d1b4d22acd
 timeout_sec: 120
 exit_code: 1
-elapsed_sec: 1.22
+elapsed_sec: 0.65
 status: nonzero_exit
 ----- stdout -----
 AC_phi_lambda R-eta occurrence axiom-hygiene no-go verifier
@@ -27,7 +27,7 @@ A. source presence and Tier-A boundary
 [PASS] AC statement still names R-eta
 [PASS] human registry points to the R-eta derivation obligation
 [PASS] note says registry is not edited
-[PASS] note says R-eta is not retired
+[PASS] note says R-eta remains open
 [FAIL] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md is retained-grade :: unaudited
 [FAIL] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md is retained-grade :: unaudited
 

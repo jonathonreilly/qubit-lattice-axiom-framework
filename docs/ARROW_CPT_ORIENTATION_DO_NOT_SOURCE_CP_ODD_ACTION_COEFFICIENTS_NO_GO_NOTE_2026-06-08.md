@@ -1,5 +1,8 @@
 # Arrow, CPT, Orientation, and Real Readout Do Not Source CP-Odd Action Coefficients
 
+**Current authority (2026-07-11):** any admission-index terminology below is a
+historical snapshot. It supplies no premise or closure today.
+
 > **Key terms used in this doc** are indexed A-Z at
 > [docs/KEY_TERMINOLOGY.md](KEY_TERMINOLOGY.md); each row points to the
 > canonical source-of-truth doc.

@@ -155,23 +155,34 @@ mass determinant-channel bridge. K/CPT determinant-character erasure remains a
 conditional route. Scalar-mass action-surface, determinant-channel, joint
 gauge/mass, and approved-primitive proposals remain open.
 
-**N2 wall independence.** The wall is the mass-side determinant-readout bridge:
-physical `arg det(M_u M_d)` exhaustion by a Record-registrable determinant
-channel. No new wall is added.
+**N2 wall independence.** The mass-side target contains four independently
+closable steps:
+
+| Step | Closing it does not close |
+|---|---|
+| scalar-mass action surface | determinant-channel identification, K/CPT registration, exhaustion |
+| determinant-channel identification | action selection, K/CPT registration, exhaustion |
+| K/CPT registration | action selection, determinant identification, exhaustion |
+| physical-channel exhaustion | action selection, determinant identification, K/CPT registration |
+
+This note establishes only their joint non-supply by the current foundation;
+it does not collapse them into one wall.
 
 **N3 hidden-wall scan.** The proof imports no measured neutron-EDM bound, no
 comparator, no fitted value, no axion assumption, no determinant-channel
 primitive, no positive mass-orientation primitive, and no registry edit.
 
-**N4 residual matching.** The result matches the admission-era decision history's mass-side
-residual and does not touch the gauge-side winding account.
+**N4 residual matching.** The result matches the four mass-side steps stated
+above and the cross-sector readout `open_gate`. Historical decision prose is
+provenance only and does not touch the gauge-side winding account.
 
 **N5 proven surface.** Proven here is an axiom/primitives non-supply result
 plus exact determinant-character checks. It is not a universal no-go against
 future determinant-channel or scalar-mass action-surface theorems.
 
-**N6 partial closure.** The target is sharpened: derive the determinant-channel
-exhaustion bridge or keep theta admitted.
+**N6 partial closure.** The target is sharpened: derive the action,
+determinant-channel, K/CPT registration, and exhaustion steps. Partial closure
+is recorded stepwise.
 
 **N7 steelman.** A reviewer can say the determinant-character `k = 0` algebra
 is exactly the right mass-side route. Correct: this note preserves that route.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py
-runner_sha256: c7b1b48c70a44debb4f52293e8246e5190a4b4a13b347770ea0b755ae4095dc0
+runner_sha256: 02adc743cb7503f437189a0725dfa0d480e912cb8b71c17262ebf3a20f840395
 timeout_sec: 120
 exit_code: 1
-elapsed_sec: 1.42
+elapsed_sec: 0.92
 status: nonzero_exit
 ----- stdout -----
 AC_phi_lambda R-eta angle-native frontier no-go verifier
@@ -21,8 +21,8 @@ A. source and registry boundaries
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 [PASS] Tier-A has no live admitted inputs
 [PASS] AC minimum decomposition still includes R-eta
-[PASS] note explicitly does not edit registry
-[PASS] note says R-eta is not retired
+[PASS] note routes current residual to open gate
+[PASS] note says R-eta remains open
 [PASS] human registry points to the R-eta derivation obligation
 [FAIL] KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md is retained-grade :: unaudited
 [FAIL] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md is retained-grade :: unaudited

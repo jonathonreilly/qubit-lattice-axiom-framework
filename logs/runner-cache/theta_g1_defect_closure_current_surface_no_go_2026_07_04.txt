@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py
-runner_sha256: c7e85d7899da1792e059f1ec615a50bd0f803ace3a28c13ad8e2ea3d35376374
+runner_sha256: 0bd9d697b02e569d41fd535650de59b39263e4deca5f278bc58e84009039544d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.30
+elapsed_sec: 2.09
 status: ok
 ----- stdout -----
 theta G1 defect-closure current-surface no-go verifier
@@ -88,7 +88,7 @@ C. source-packet boundary checks
 [PASS] minimal axioms withhold: the strong-CP theta gauge and mass-side derivation
 [PASS] minimal axioms withhold: Only records are readable
 [PASS] axiom-update no-go supports G1 boundary: does not supply the theta gauge-side winding
-[PASS] axiom-update no-go supports G1 boundary: physical topological-sector/gauge-action bridge
+[PASS] axiom-update no-go supports G1 boundary: gauge action, Q-sector, branch/section, and weightin
 [PASS] axiom-update no-go supports G1 boundary: No admission registry is created.
 [PASS] axiom-update no-go supports G1 boundary: Theta is not retired.
 [PASS] G3 block leaves G1 live: G1 defect closure in parallel

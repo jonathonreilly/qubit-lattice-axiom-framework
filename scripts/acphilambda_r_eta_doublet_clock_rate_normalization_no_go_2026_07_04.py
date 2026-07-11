@@ -126,7 +126,7 @@ def main() -> int:
     check("AC statement names density-read-as-angle R-eta", "density-read-as-angle" in ac["statement"] and "R-eta" in ac["statement"])
     check("human registry points to the R-eta derivation obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
     check("note declares no_go Type", "**Type:** no_go" in note and "**Claim type:** no_go" in note)
-    check("note says R-eta is not retired", "R-eta is not derived, refuted, re-graded, or removed from Tier-A" in note)
+    check("note says R-eta remains open", "R-eta is not derived or refuted; its open gate remains" in note)
     check("note says AC_phi_lambda is not retired", "AC_phi_lambda is not retired." in note)
     check("note says registry not edited", "No registry, axiom, primitive, audit verdict, publication surface" in note)
 
@@ -305,7 +305,7 @@ def main() -> int:
     ]
     for phrase in forbidden:
         check(f"forbidden phrase absent: {phrase}", phrase not in note)
-    check("note links minimal current residual to Tier-A registry", "delta_readout_identification_R_eta" in note)
+    check("note links the current R-eta residual", "delta_readout_identification_R_eta" in note)
     check("note does not link generated audit ledger as authority", "AUDIT_LEDGER.md](" not in note)
 
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL} CHECKS={PASS + FAIL}")

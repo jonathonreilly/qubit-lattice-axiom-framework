@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py
-runner_sha256: 0c5ebd8441a1a20635177cd22f0f741011b31acd79fef5d3bf3d1435536017ce
+runner_sha256: 8b2e25e2139b18a08dcdd77760dd45fa24e8ffca721082bd64361a83ffbe5a0c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.69
 status: ok
 ----- stdout -----
 K/CPT orientation invariance checks for the AC_phi_lambda gate
 ============================================================================
-PASS source does not claim a completed Tier-A registry change
+PASS source states historical taxonomy has no authority
 PASS source avoids the rejected theta shortcut
 PASS source names the AC_phi_lambda conditional registrability bridge
 PASS source keeps audit status authority external

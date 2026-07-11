@@ -1,5 +1,9 @@
 # AC_phi_lambda K-Even Registration Correction And The Registered-Pattern Normal Form
 
+**Current authority (2026-07-11):** all admission/index language below is
+historical provenance. The occupancy and R-eta conditions are open gates, not
+premises; only axioms and approved primitives can supply foundations.
+
 **Date:** 2026-07-02
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem (bounded framing correction + panel-synthesis normal form)
@@ -25,7 +29,7 @@ The companion sentence is that the K-odd trace is a reconstruction-layer detecto
 C2 records the panel synthesis on the value wall.
 On the current retained surface the value equation `delta = 2/9`, `Phi = 2/3`,
 off-locus, has no derivation route among the checked homogeneous candidates.
-The honest current classification is that on the current retained surface the value is realized-state registered data; the residual identification is exactly the R-eta sub-admission in its narrowed coordinates.
+The honest current classification is that the value is realized-state registered data while the residual identification is exactly the R-eta `open_gate` in its narrowed coordinates.
 Accordingly, this is the registered-pattern normal form, not a terminal no-go.
 
 ## Frame And Retained Inputs

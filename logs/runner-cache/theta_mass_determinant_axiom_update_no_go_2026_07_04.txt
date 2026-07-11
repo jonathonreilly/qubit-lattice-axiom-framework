@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/theta_mass_determinant_axiom_update_no_go_2026_07_04.py
-runner_sha256: 6692b2ab05f0fd16ff5cdb3e9493873eb4fa7d1528f59512ef2105c7184116bd
+runner_sha256: 39b3e65a286cd83df1f242a4807629179c183a211b04149e0194b7a3eaab0843
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.85
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.58
+status: ok
 ----- stdout -----
 theta mass determinant axiom-update no-go verifier
 
@@ -20,8 +20,8 @@ A. source presence and retained target
 [PASS] exists: docs/STRONG_CP_THETA_ZERO_NOTE.md
 [PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
 [PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
-[FAIL] theta parent row is retained-grade :: unaudited
-[FAIL] theta parent row is audited_clean :: unaudited
+[PASS] theta parent row is retained-grade
+[PASS] theta parent row is audited_clean
 
 ========================================================================================
 B. admission-era decision history boundary
@@ -142,7 +142,7 @@ H. note discipline
 [PASS] note carries boundary phrase: The gauge-side winding account is untouched.
 [PASS] note carries boundary phrase: No physical quark-sector determinant readout is 
 [PASS] note carries boundary phrase: No positive real mass orientation is derived fro
-[PASS] note carries boundary phrase: derive the determinant-channel exhaustion bridge
+[PASS] note carries boundary phrase: derive the action, determinant-channel, K/CPT re
 [PASS] forbidden phrase absent: Theta is retired
 [PASS] forbidden phrase absent: theta_bar = 0 is derived
 [PASS] forbidden phrase absent: audited_clean
@@ -162,7 +162,7 @@ I. markdown dependency and context control
 [PASS] verification block states fail-zero threshold
 
 ========================================================================================
-TOTAL: PASS=115 FAIL=2
+TOTAL: PASS=117 FAIL=0
 ========================================================================================
 
 ----- stderr -----

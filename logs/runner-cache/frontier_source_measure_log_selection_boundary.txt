@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_source_measure_log_selection_boundary.py
-runner_sha256: 5d450f5ef9805571627b61cc1c1f8ff59fa09b3e1be3fdf180c492d93ba227df
+runner_sha256: b815871eceddcfea77dc8f97b85afb18f2d37a2f009b0def68798ecec7fb572a
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.72
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
 ----- stdout -----
 ========================================================================================
 SOURCE/MEASURE LOG-SELECTION BOUNDARY
@@ -16,7 +16,7 @@ Part 1: document boundary
 [PASS] docs/OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md exists
 [PASS] docs/YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md exists
 [PASS] docs/YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md exists
-[PASS] docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md exists
+[PASS] docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md exists
 [PASS] note contains required phrase: Theorem
 [PASS] note contains required phrase: Relation to the `F_p` wall
 [PASS] note contains required phrase: Consequence for PR #2373
@@ -30,7 +30,7 @@ Part 1: document boundary
 [PASS] note names remaining source-unit route
 [PASS] parent P1/P2 synthesis records F_p wall
 [PASS] parent P1/P2 synthesis records P-cal residual
-[FAIL] Tier-A registry records Planck-mass anchor
+[PASS] approved scale primitive records the Planck-mass anchor
 
 Part 2: product composition selects log only up to scale
 [PASS] c log is additive on products
@@ -84,7 +84,7 @@ Part 8: forbidden-import firewall
 [PASS] note names forbidden route: fitted selectors
 
 ========================================================================================
-SUMMARY: PASS=56 FAIL=1
+SUMMARY: PASS=57 FAIL=0
 Wrote outputs/source_measure_log_selection_boundary_2026-05-30.json
 
 ----- stderr -----

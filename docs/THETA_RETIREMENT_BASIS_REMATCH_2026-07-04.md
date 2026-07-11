@@ -1,5 +1,10 @@
 # Theta Retirement Basis Re-Match Against The 2026-06-11 Refined Minimum Statement
 
+**Current authority (2026-07-11):** this is a historical decision artifact.
+Its Tier-A/admission wording has no premise authority. The gauge-side retained
+science remains usable on its audited scope; the mass-side cross-sector
+determinant readout is an `open_gate`.
+
 **Date:** 2026-07-04
 **Claim type:** meta
 **Status:** owner-decision artifact for PR #3511 gate 4. This note maps the

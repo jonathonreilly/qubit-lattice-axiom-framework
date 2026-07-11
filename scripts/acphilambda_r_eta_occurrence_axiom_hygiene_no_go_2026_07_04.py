@@ -96,7 +96,7 @@ def main() -> int:
     check("AC statement still names R-eta", "R-eta" in ac["statement"])
     check("human registry points to the R-eta derivation obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
     check("note says registry is not edited", "The Tier-A registry is not edited." in note)
-    check("note says R-eta is not retired", "R-eta is not derived, refuted, re-graded, or removed from Tier-A" in note)
+    check("note says R-eta remains open", "R-eta is not derived or refuted; its open gate remains" in note)
 
     for source_path in [
         "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",

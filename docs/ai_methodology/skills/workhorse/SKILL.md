@@ -33,7 +33,7 @@ The supervising agent:
 
 - reads current repo context and the relevant command/skill instructions;
 - writes the task spec, allowed files, evidence bar, and stopping conditions;
-- keeps claim-status, primitive/axiom/Tier-A, no-go, and audit boundaries
+- keeps claim-status, foundation/conditional, no-go, and audit boundaries
   current;
 - reviews every worker diff line-by-line before accepting it;
 - runs the appropriate repo checks;

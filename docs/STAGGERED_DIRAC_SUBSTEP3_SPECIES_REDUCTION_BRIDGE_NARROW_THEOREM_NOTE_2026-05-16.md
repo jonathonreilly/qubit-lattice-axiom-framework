@@ -9,11 +9,11 @@ audit pipeline after independent review.
 audit verdict and downstream status are set only by the independent
 audit lane.
 **Primary runner:** [`scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py`](../scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py)
-**Authority role:** narrow algebraic bridge between two retained
-substrate primitives — the naive lattice fermion `2^d` species count
-on the hypercubic lattice and the `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)`
-complexification split — that isolates the substep-3 algebraic
-species-count vs. spinor-irrep content of the open
+**Authority role:** narrow algebraic bridge using the retained naive-lattice
+`2^d` species count, the retained `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)`
+complexification split, and the bounded supplied-action Kogut-Susskind
+blocking theorem. It isolates the substep-3 algebraic species-count versus
+spinor-irrep content of the open
 `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` gate.
 
 ## 1. Claim scope
@@ -32,12 +32,10 @@ spatial substrate. The following abstract-algebraic identities hold:
 
 - **(R2) Algebraic product decomposition.** The integer `16` admits
   the exact arithmetic factorization
-  `16 = 4 · 4 = 2^2 · 2^2`. The first factor "`4`" is the standard
-  algebraic taste-count `N_taste = 2^{d/2} = 4` at `d = 4`; the second
-  factor "`4`" is the standard algebraic spinor-count
-  `N_spinor = 2^{d/2} = 4` at `d = 4`. The factorization `16 = 4 · 4`
-  is an arithmetic identity in `Z`, not a derivation that the framework
-  must realize this specific factorization.
+  `16 = 4 · 4 = 2^2 · 2^2`. This arithmetic identity does not assign
+  physical roles to its factors. On the supplied one-component free OS0
+  staggered action, the cited action-level blocking theorem separately
+  derives a 4-dimensional irreducible spin module with multiplicity four.
 
 - **(R3) Spinor-count factor matches Cl(3,0) ⊗_R C dim.** The factor
   `N_spinor = 4` at `d = 4` matches the complex dimension of the
@@ -56,28 +54,26 @@ spatial substrate. The following abstract-algebraic identities hold:
   matches `N_spinor = 4`. This is an exact algebraic-dimensional
   identity, conditional on the cited complexification split.
 
-- **(R4) Taste-count factor decoupled from the Cl(3) algebra.** The
-  factor `N_taste = 4` at `d = 4` is an arithmetic count on the
-  hypercubic-lattice BZ corner structure (Hamming weights `0..d`),
-  not a Cl(3) algebra fact. The cited complexification split bounds
-  only the spinor-count factor (R3); the taste-count factor is **not**
-  forced by the cited upstream and remains an open structural
-  ingredient of the realization gate's substep 3.
+- **(R4) Action-derived taste multiplicity, distinct from Hamming
+  enumeration.** The Hamming-weight distribution `(1,4,6,4,1)` supplies
+  the 16 blocked components and their grading. It does not derive a taste
+  multiplicity. On the explicitly supplied one-component free OS0 staggered
+  action, the cited blocking theorem derives exact `Cl_4(C)` generators on
+  those 16 components and proves that the module is four copies of the unique
+  4-dimensional irreducible spin module. Thus `N_taste=4` is derived for that
+  supplied action. The cited `Cl(3,0)` complexification split contributes the
+  separate chirality-pair dimension match in (R3).
 
-- **(R5) Reduction-as-arithmetic-identity boundary.** The arithmetic
-  factorization `16 = 4 · 4` is **not** the same as a derivation that
-  the framework's specific staggered-Dirac realization implements a
-  Kogut-Susskind `4`-taste reduction. The naive operator carries the
-  full `2^d = 16` zero locus; the standard Kogut-Susskind staggered
-  reduction trades `2^d` doublers for `2^{d/2}` tastes via a
-  spin-diagonal projection, **inside** the staggered formalism. The
-  arithmetic identity `16 = 4 · 4` is necessary but **not sufficient**
-  to derive that the framework realizes that specific reduction.
+- **(R5) Supplied-action boundary.** The action-level theorem establishes
+  the Kogut-Susskind four-taste module conditional on its displayed free OS0
+  staggered action. It does not identify that action as the framework's
+  realized physical matter carrier. The remaining boundary is therefore
+  physical-carrier selection, rather than a missing taste derivation on the
+  supplied action.
 
-Facts (R1)-(R5) are abstract finite-dim lattice-field-theory and
-complex algebra statements. The final two items are explicit
-boundary disclaimers separating the **arithmetic identity** from a
-framework-realization claim.
+Facts (R1)-(R5) separate three layers: the naive-corner count, the exact
+Kogut-Susskind module on the supplied free OS0 action, and the unresolved
+framework physical-carrier identification.
 
 ## 2. Why this note exists
 
@@ -88,7 +84,10 @@ Hamming-weight-graded triplet `1 + 1 + 3 + 3 = 2^3` on `Z^3` (or the
 analogous structure on `Z^4` at `d = 4`), and whether the resulting
 species-count is forced to be the specific framework count.
 
-Two pieces of that chain have since landed retained narrow theorems:
+Two audited suppliers establish the naive count and the `Cl(3,0)` split.
+The supplied-action blocking theorem cited below now provides the missing
+action-level Kogut-Susskind module derivation. Ledger status for every row is
+set by the independent audit lane.
 
 - `NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md`
   (retained / audited_clean per the 2026-05-16 ledger) — provides
@@ -100,15 +99,12 @@ Two pieces of that chain have since landed retained narrow theorems:
   which gives the spinor-rep dim `2 + 2 = 4` matching the `d = 4`
   spinor-count factor.
 
-This narrow theorem isolates the **abstract arithmetic factorization**
-`16 = 4 · 4` and the **spinor-count match** between `N_spinor = 4` at
-`d = 4` and the Cl(3) complexification split's chirality-pair dim
-`2 + 2 = 4`, plus the **explicit boundary** that the taste-count
-factor is **not** forced by the cited upstream. The boundary records
-that the substep-3 closure of the open gate — i.e., the framework's
-specific `4`-taste reduction on `Z^3` — is **not** retired by this
-note. The narrow theorem closes only the arithmetic-factorization +
-spinor-count-match half (R1)-(R3) and the explicit boundary (R4)-(R5).
+This revised narrow theorem keeps the arithmetic identity and the
+`Cl(3,0)` chirality-pair dimension match, and adds the independently
+checkable action-level result: the supplied free OS0 staggered action blocks
+to four copies of the 4-dimensional `Cl_4(C)` spin module. The remaining
+scope boundary is identification of that supplied action with the framework's
+realized physical matter carrier.
 
 ## 3. Cited authorities (one hop)
 
@@ -122,6 +118,10 @@ Load-bearing markdown-link upstream dependencies:
   — provides the `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` split (R3). Status
   authority: independent audit lane only; effective status
   pipeline-derived.
+- [`STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md`](STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md)
+  — derives the exact blocked `Cl_4(C)` module and multiplicity four on the
+  explicitly supplied one-component free OS0 staggered action (R2, R4, R5).
+  Status authority: independent audit lane; effective status pipeline-derived.
 
 No other note's effective status is consumed.
 
@@ -130,13 +130,16 @@ No other note's effective status is consumed.
 - **Standard integer arithmetic.** The factorization `16 = 4 · 4 = 2^2
   · 2^2 = 2^{d/2} · 2^{d/2}` at `d = 4`. Admitted-context
   mathematical infrastructure.
-- **Standard finite-dim complex linear algebra.**
+- **Standard finite-dim complex linear algebra and complex Clifford
+  classification.**
   `dim_C (V ⊕ W) = dim_C V + dim_C W` for finite-dim complex vector
-  spaces. Admitted-context.
+  spaces and `Cl_4(C)=M_4(C)`. Admitted-context mathematical infrastructure.
+- **Supplied free OS0 staggered action.** The one-component action and its
+  canonical eta phases are the disclosed physical premise of the bounded
+  action-level theorem.
 
-No physics conventions admitted beyond the abstract integer
-arithmetic. No PDG value consumed. No staggered-Dirac-on-specific-
-lattice-substrate / `g_bare` / framework-instance-specific input.
+No PDG value, `g_bare`, generation identification, or framework physical-
+carrier selection is consumed.
 
 ## 5. Proof
 
@@ -151,9 +154,11 @@ At `d = 4`, the count is `2^4 = 16`. ∎
 ### 5.2 (R2) Algebraic product decomposition
 
 By integer arithmetic, `16 = 4 · 4 = 2^2 · 2^2 = 2^{d/2} · 2^{d/2}`
-at `d = 4`. The two factors are the standard algebraic taste-count
-and spinor-count at `d = 4`. The factorization is an integer
-identity. ∎
+at `d = 4`. This establishes the product identity but does not name either
+factor. The cited supplied-action blocking theorem derives the factor roles
+from the action: `Cl_4(C)=M_4(C)` acts irreducibly on a 4-dimensional spin
+module, and its exact 16-component blocked representation has multiplicity
+four. ∎
 
 ### 5.3 (R3) Spinor-count factor matches Cl(3,0) ⊗_R C chirality-pair dim
 
@@ -172,58 +177,44 @@ narrow's (K4)). The chirality pair of complex-dim values is
 `dim_C V_+ + dim_C V_- = 2 + 2 = 4` matches the algebraic
 `N_spinor = 2^{d/2} = 4` at `d = 4`. ∎
 
-### 5.4 (R4) Taste-count factor decoupled from Cl(3) algebra
+### 5.4 (R4) Action-derived taste multiplicity
 
-The factor `N_taste = 4` at `d = 4` arises from the hypercubic-lattice
-BZ corner Hamming-weight grading on `Z^d`:
+The hypercubic block labels have Hamming-weight grading
 
 ```text
 (Hamming-weight count on {0, π}^d)  =  binomial(d, k),  k = 0..d.
 ```
 
-At `d = 4`, the Hamming-weight count is `binom(4, k) = (1, 4, 6, 4, 1)`,
-summing to `2^4 = 16`. The Kogut-Susskind reduction at even `d`
-identifies pairs of opposite-chirality corner clusters via a
-spin-diagonal projection, producing `2^{d/2}` tastes. The cited
-upstream `Cl(3,0) ⊗_R C` split provides only the chirality-pair
-dimensional content `(2, 2)`, not the lattice-block taste structure.
-The taste-count factor is therefore decoupled from the cited Cl(3)
-algebra at the level of the narrow theorem's claim. ∎
+At `d = 4`, this gives `(1,4,6,4,1)`, summing to 16. This enumeration
+establishes the blocked-component count and grading, not the taste
+multiplicity.
 
-### 5.5 (R5) Reduction-as-arithmetic-identity boundary
+The cited supplied-action theorem starts from the displayed canonical
+staggered finite difference, blocks `n=2y+b`, and rephases it to
 
-The arithmetic identity `16 = 4 · 4` is exact. It says only that
-the integer `16` has the factorization `4 · 4`; it does **not**
-prove that the framework's lattice realization implements a specific
-Kogut-Susskind `4`-taste reduction. Three structurally distinct
-ingredients enter such a reduction, none of which is forced by the
-arithmetic identity:
+```text
+D_red(p)=mI_16+i sum_mu alpha_mu sin(p_mu a)/a.
+```
 
-(i) **Specific lattice substrate.** Whether the framework lives on
-    `Z^3` (spatial), `Z^4` (space-time), or another lattice substrate
-    determines `d` and changes the BZ corner count. The cited upstream
-    `2^d` theorem records the count for any `d ≥ 1` but does not
-    select a specific framework substrate.
+It proves `{alpha_mu,alpha_nu}=2 delta_(mu nu) I_16`, exact rank 16 for
+the Clifford-word span, and character `(16,0,...,0)`. Since
+`Cl_4(C)=M_4(C)` has a unique 4-dimensional irreducible module, the
+16-dimensional block module is four copies of that spin module. Therefore
+`N_taste=4` is derived on the supplied action. The `Cl(3,0)` split remains
+the separate chirality-pair dimensional match of (R3). ∎
 
-(ii) **Specific regulator (naive / staggered / Wilson / etc.).** The
-    `2^d` count is for the **naive** operator (per the cited upstream
-    boundary, §"Boundary"). The staggered (Kogut-Susskind) reduction
-    is a **different** regulator with a **different** count
-    (`2^{d/2}` tastes at even `d`). The framework's regulator choice
-    is **not** forced by the cited upstream.
+### 5.5 (R5) Supplied-action boundary
 
-(iii) **Specific spin-diagonal projection.** The Kogut-Susskind
-    reduction requires a specific spin-diagonal staggered phase
-    structure (Kawamoto-Smit form), which is the substep-2 content
-    of the open gate. The arithmetic identity `16 = 4 · 4` does not
-    derive the Kawamoto-Smit form.
+The arithmetic identity does not establish the Kogut-Susskind module. The
+cited action-level theorem now supplies that missing derivation for its
+explicitly displayed free OS0 staggered action and canonical phases.
 
-None of (i)-(iii) is closed by the arithmetic identity. The boundary
-records that this narrow theorem closes only the **arithmetic
-factorization + spinor-count match** half. The full substep-3
-closure of the open gate — i.e., the framework's specific
-`4`-taste reduction on its specific lattice substrate — remains
-open work. ∎
+That theorem is conditional on the action. Neither it nor the present note
+derives the action from the four framework axioms or identifies it as the
+realized physical charged-lepton matter carrier. Consequently the algebraic
+species-reduction step is established on the supplied action, while the
+framework physical-carrier selection remains a distinct realization
+obligation. ∎
 
 ## 6. What this note does NOT claim
 
@@ -235,16 +226,16 @@ open work. ∎
 - Does **not** force the framework's regulator to be naive or
   staggered. The cited upstream explicitly disclaims regulator
   independence; this narrow theorem inherits that disclaimer.
-- Does **not** derive the Kogut-Susskind staggered reduction or the
-  Kawamoto-Smit phase form. Those are downstream substep-2 substep-3
-  content carried by separate notes.
+- Does **not** derive the supplied free OS0 staggered action or its canonical
+  phase form from the four framework axioms. Conditional on that displayed
+  action, the cited blocking theorem does derive the Kogut-Susskind
+  four-taste module.
 - Does **not** identify the `2^{d/2} = 4` algebraic spinor-count with
   the framework's physical-spinor-content on its specific substrate.
   The match is at the level of the abstract algebraic factorization,
   not the framework's physical-spinor identification.
-- Does **not** make any physical / observational claim, consume any
-  PDG value, fitted constant, or admit any lattice convention beyond
-  the cited upstream narrow theorems and standard integer arithmetic.
+- Does **not** make an observational claim or consume a PDG value or fitted
+  constant. The supplied free OS0 staggered action is disclosed explicitly.
 - Does **not** assert that the three physical SM matter generations
   correspond to a specific subset of the `16` corner states. That
   identification is in substep 4 (the AC_φλ residual carried by the
@@ -260,29 +251,19 @@ open work. ∎
 - No same-surface family arguments.
 - No staggered-Dirac realization gate output consumed.
 - No `g_bare = 1` derivation output consumed.
-- No lattice-action carrier (Wilson plaquette, staggered phases,
-  per-site Hilbert-space-on-physical-lattice) load-bearing.
+- The explicitly displayed free OS0 staggered action is load-bearing and is
+  disclosed as the supplied-action premise of the bounded theorem.
 - No new foundational premise beyond the baseline physical Cl(3) local
   algebra on the Z^3 spatial substrate.
 
-## 8. Open derivation gap
+## 8. Remaining derivation gap
 
-The step from "abstract arithmetic factorization `16 = 4 · 4` plus
-spinor-dim match `2 + 2 = 4`" (R2-R3) to "the framework's specific
-staggered-Dirac realization implements the Kogut-Susskind `4`-taste
-reduction with the spinor-count factor identified with the Cl(3,0)
-chirality pair" is **not** in scope of this note. That step
-requires (a) selection of the specific framework lattice substrate
-and dimension, (b) selection of the specific regulator (staggered
-over naive / Wilson / overlap / etc.), and (c) the substep-2
-Kawamoto-Smit phase-form forcing argument. None of (a)-(c) is
-closed here.
-
-Closing the gap is the open work of the parent realization gate's
-substep 3, with substep-2 (Kawamoto-Smit forcing) as a load-bearing
-input. This narrow theorem closes only the arithmetic-factorization
-+ spinor-count-match content within the abstract upstream narrow
-theorems, and explicitly records the boundary.
+The supplied-action theorem derives the Kogut-Susskind four-taste module and
+therefore repairs the prior action-level algebra gap. It does not derive the
+free OS0 staggered action from Lattice, Qubit, Admissibility, and Record, or
+show that this action is the framework's realized charged-lepton matter
+carrier. That physical-carrier identification remains the realization
+obligation upstream of charged-lepton use.
 
 ## 9. Validation
 
@@ -309,30 +290,25 @@ verifies via sympy exact symbolic arithmetic:
 5. **(R4) Hamming-weight count on `{0, π}^4`.** The Hamming-weight
    distribution `binom(4, k)` for `k = 0..4` is `(1, 4, 6, 4, 1)`,
    summing to `16`. Verified by exhaustive corner enumeration.
-6. **(R4) Taste-count not forced by Cl(3) algebra.** The taste-count
-   factor `N_taste = 4` is recorded as a lattice-block fact (Hamming-
-   weight count) decoupled from the cited Cl(3) complexification
-   split dim. Verified by structural enumeration.
-7. **(R5) Regulator-dependence disclosure.** The `2^d = 16` naive
-   count is recorded alongside the Wilson `1`-fermion count, the
-   staggered-`d=4` `4`-taste count, and overlap/domain-wall
-   `1`-fermion counts as **different** regulator counts. The
-   arithmetic identity `16 = 4 · 4` does **not** force any specific
-   regulator on the framework.
-8. **(R5) Counterfactual: at `d = 6`, `2^6 = 64 = 8 · 8`.** The same
-   arithmetic factorization `2^d = 2^{d/2} · 2^{d/2}` holds at any
-   even `d`; at `d = 6`, `N_spinor = N_taste = 8`. This confirms the
-   `d = 4` factorization is not specific to a `(4, 4)` choice; it is
-   the generic even-`d` algebraic identity.
+6. **(R4) Action-level taste multiplicity.** The companion constructs the
+   canonical eta-weighted flip matrices, verifies the exact Clifford
+   relations, proves rank 16 for their word span, and checks character
+   `(16,0,...,0)`, giving four irreducible spin modules.
+7. **(R5) Supplied-action boundary.** Source pins verify that the action is
+   disclosed as a premise and that no framework physical-carrier selection is
+   claimed.
+8. **Arithmetic counterfactual.** At `d=6`, the identity becomes
+   `64=8*8`, confirming that arithmetic alone does not assign factor roles.
 
 Expected output: `PASS=N FAIL=0` with `N ≥ 12`.
 
 ## 10. Cross-references
 
-Load-bearing markdown-link upstream (two one-hop dependencies):
+Load-bearing markdown-link upstream (three one-hop dependencies):
 
 - [`NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md`](NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md)
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+- [`STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md`](STAGGERED_OS0_SUPPLIED_ACTION_KS_BLOCKING_FOUR_TASTE_MODULE_NARROW_THEOREM_NOTE_2026-07-11.md)
 
 Plain-text (non-load-bearing) reader pointers; following the PR #306
 cleanup pattern, these are written without markdown links so the
@@ -346,24 +322,22 @@ edges:
   — pre-existing bounded-support packaging of the BZ corner
   Hamming-weight grading on `Z^3`.
 - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
-  — substep-2 note carrying the Kawamoto-Smit phase-form forcing
-  that would be needed to close substep-3 on the framework's
-  specific lattice substrate.
+  — substep-2 context for the canonical phase form.
 - `STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md`
   — substep-4 note carrying the SM-matter-generation reading of the
   Hamming-weight triplet (out of scope here).
 - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
   — sister narrow theorem one hop downstream of the cited
   complexification split.
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-06-29.md`
   — framework baseline memo for the physical Cl(3) local algebra and
   Z^3 spatial substrate; the narrow theorem does not consume its
   effective status.
 
 ## 11. Citation-graph note
 
-Load-bearing markdown-link upstream consists of exactly the two narrow
-sibling theorems listed in Section 3. Cross-references to the open
+Load-bearing markdown-link upstream consists of the three narrow
+theorems listed in Section 3. Cross-references to the open
 gate, substep-2/3/4 in-flight notes, the Cl(3) faithful-irrep
 sister narrow, and the minimal-axioms memo are plain-text reader
 pointers (not markdown links); the theorem does not consume their

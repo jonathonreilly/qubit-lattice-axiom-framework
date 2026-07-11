@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/frontier_staggered_os0_supplied_action_ks_blocking_four_taste_module_2026_07_11.py
+runner_sha256: 33a5a791252dbb62cf9b1887cff27410ef028031ed7a0f069d488051296d6bea
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+========================================================================================
+Supplied-action KS blocking and four-taste module: exact companion
+========================================================================================
+
+Part 1: exact block carrier and canonical staggered phases
+----------------------------------------------------------
+  [PASS (A)] b in {0,1}^4 gives 16 blocked components
+  [PASS (A)] Hamming-weight multiplicities are (1,4,6,4,1)  (observed=(1, 4, 6, 4, 1))
+  [PASS (A)] canonical eta signs depend on preceding block bits
+
+Part 2: exact Laurent-polynomial blocking identity
+--------------------------------------------------
+  [PASS (A)] rephasing turns every blocked direction into alpha_mu (t_mu-t_mu^-1)/(2a)  (directions=[True, True, True, True])
+  [PASS (A)] the full blocked operator has the exact reduced Laurent-polynomial form
+  [PASS (A)] on t_mu=exp(i p_mu a), the Laurent coefficient is i sin(p_mu a)/a
+
+Part 3: exact Cl_4(C) representation
+------------------------------------
+  [PASS (A)] each alpha_mu is a real symmetric involution  (squares=[True, True, True, True])
+  [PASS (A)] distinct alpha generators anticommute  (pairs=[True, True, True, True, True, True])
+  [PASS (A)] the 16 Clifford words are linearly independent  (exact rank=16)
+  [PASS (A)] the block-module character is 16 on the identity and 0 on 15 nonidentity words  (character=(16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
+
+Part 4: module multiplicity and inverse
+---------------------------------------
+  [PASS (A)] Cl_4(C)=M_4(C) gives four irreducible spin modules in the 16-component carrier  (16=4*4)
+  [PASS (A)] the exact character equals four times the irreducible Cl_4(C) character
+  [PASS (A)] the Clifford kinetic square is (sum_mu s_mu^2) I_16
+  [PASS (A)] the blocked operator has the exact scalar-denominator inverse identity
+
+Scope guard
+-----------
+  [PASS (C)] source note discloses the action premise and disclaims physical-carrier selection
+
+========================================================================================
+TOTAL: PASS=15, FAIL=0
+========================================================================================
+
+----- stderr -----
+

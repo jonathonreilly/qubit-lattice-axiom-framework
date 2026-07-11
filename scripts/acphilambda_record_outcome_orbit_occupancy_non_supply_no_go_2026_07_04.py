@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Countermodels for complex versus realified determinant occupancy grain."""
+"""Countermodels for complex versus realified determinant power."""
 
 from __future__ import annotations
 
@@ -39,7 +39,7 @@ def realification(matrix: sp.Matrix) -> sp.Matrix:
 
 
 def main() -> int:
-    print("Complex-vs-realified occupancy-grain countermodels")
+    print("Complex-vs-realified determinant-power countermodels")
     print("=" * 68)
 
     section("Part A: generic determinant identity")
@@ -71,14 +71,36 @@ def main() -> int:
     fr_a = sp.log(realification(block_a).det())
     fr_b = sp.log(realification(block_b).det())
     fr_sum = sp.log(realification(block_sum).det())
-    check("complex log determinant is block additive", sp.simplify(sp.expand_log(fc_sum, force=True) - sp.expand_log(fc_a + fc_b, force=True)) == 0)
-    check("realified log determinant is block additive", sp.simplify(sp.expand_log(fr_sum, force=True) - sp.expand_log(fr_a + fr_b, force=True)) == 0)
+    check("complex log determinant is block additive", sp.simplify(sp.expand_log(fc_sum, force=True) - sp.expand_log(fc_a, force=True) - sp.expand_log(fc_b, force=True)) == 0)
+    check("realified log determinant is block additive", sp.simplify(sp.expand_log(fr_sum, force=True) - sp.expand_log(fr_a, force=True) - sp.expand_log(fr_b, force=True)) == 0)
     check("complex empty determinant gives zero log readout", sp.log(sp.Integer(1)) == 0)
     check("realified empty determinant gives zero log readout", sp.log(sp.Integer(1)) == 0)
     check("realified functional is twice complex functional on A", sp.simplify(fr_a - 2 * fc_a) == 0)
     check("realified functional is twice complex functional on B", sp.simplify(fr_b - 2 * fc_b) == 0)
 
-    section("Part D: occupancy scaling degrees")
+    lam = sp.Integer(2)
+    for count in range(5):
+        carrier_for_records = sp.eye(count) * lam
+        fc_records = sp.log(abs(carrier_for_records.det()))
+        fr_records = sp.log(realification(carrier_for_records).det())
+        check(
+            f"record extension complex readout at count={count}",
+            sp.simplify(fc_records - count * sp.log(lam)) == 0,
+        )
+        check(
+            f"record extension realified readout at count={count}",
+            sp.simplify(fr_records - 2 * count * sp.log(lam)) == 0,
+        )
+    check(
+        "record extension complex readout is disjoint-union additive",
+        sp.simplify(5 * sp.log(lam) - 2 * sp.log(lam) - 3 * sp.log(lam)) == 0,
+    )
+    check(
+        "record extension realified readout is disjoint-union additive",
+        sp.simplify(10 * sp.log(lam) - 4 * sp.log(lam) - 6 * sp.log(lam)) == 0,
+    )
+
+    section("Part D: determinant-power scaling degrees")
     t = sp.symbols("t", real=True)
     for n in range(1, 5):
         dc_ratio = sp.exp(n * t)
@@ -100,24 +122,26 @@ def main() -> int:
 
     section("Part F: source and axiom guards")
     note = NOTE.read_text(encoding="utf-8")
+    note_flat = " ".join(note.split())
     axioms = AXIOMS.read_text(encoding="utf-8")
     axioms_flat = " ".join(axioms.split())
     check("axioms withhold K/CPT structure", "`K`/CPT structure" in axioms_flat)
     check("axioms withhold source/action identification", "source/action and physical-observable identification" in axioms)
     check("axioms withhold physical observable bridge", "physical observable bridge" in axioms)
-    check("note grants the complex carrier", "Grant an invertible complex matter block" in note)
+    check("note grants the auxiliary complex carrier", "Grant an auxiliary invertible complex block carrier" in note)
     check("note contains both countermodel functionals", "F_C(A) = log |det_C A|" in note and "F_R(A) = log det_R R(A)" in note)
-    check("note limits the claim to finite carriers", "finite-carrier non-entailment claim" in note)
+    check("note constructs two readouts on one record model", "Same-model conservative extensions" in note and "I_C(C) = F_C(A(C))" in note and "I_R(C) = F_R(A(C))" in note)
+    check("note limits the claim to finite carriers", "finite-carrier determinant-power non-entailment claim" in note_flat)
     check("note preserves future action theorem", "future physical CAR/action theorem" in note)
-    check("note does not force r", "does not force `r=1/2`" in note)
+    check("note does not force r", "does not force `r=1/2`" in note_flat)
     check("N1 contains six attempted routes", note.count("| ATTEMPTED |") == 6)
-    check("N2 collapses to one wall", "one wall: `W_grain`" in note)
+    check("N2 collapses to one wall", "one wall: `W_power`" in note)
     check("N3 records required phrase scan", "The proof text was scanned for" in note)
-    check("N4 uses no prior negative witness", "| none | n/a | AC(i)" in note)
+    check("N4 uses no prior negative witness", "| none | n/a | raw complex-vs-realified" in note)
     check("N5 names tested resolutions", "per scalar block, per finite matrix block" in note)
-    check("N6 preserves action, coordinate, and governance paths", "action-native CAR/Berezin theorem" in note and "registered-mass coordinate package" in note and "owner-approved narrow premise" in note)
-    check("N7 contains the complex-field steelman", "Qubit axiom uses `M_2(C)`" in note)
-    check("N8 distinguishes phase from determinant power", "phase erasure does not choose determinant modulus power" in note)
+    check("N6 preserves action, coordinate, and governance paths", "action-native CAR/Berezin theorem" in note and "registered-mass coordinate package" in note and "owner-governed premise registry" in note)
+    check("N7 contains normalization and complex-field steelmen", "normalization pair" in note and "Qubit axiom uses `M_2(C)`" in note_flat)
+    check("N8 distinguishes phase from determinant power", "does not choose determinant modulus power" in note)
     check("discipline gate records PASS", "**Gate result: PASS.**" in note)
 
     print("\n" + "=" * 68)

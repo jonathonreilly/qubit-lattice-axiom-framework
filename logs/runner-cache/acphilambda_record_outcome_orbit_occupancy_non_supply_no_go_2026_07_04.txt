@@ -1,4 +1,4 @@
-Complex-vs-realified occupancy-grain countermodels
+Complex-vs-realified determinant-power countermodels
 ====================================================================
 
 Part A: generic determinant identity
@@ -22,9 +22,21 @@ Part C: empty-zero and block additivity
   [PASS] realified empty determinant gives zero log readout
   [PASS] realified functional is twice complex functional on A
   [PASS] realified functional is twice complex functional on B
+  [PASS] record extension complex readout at count=0
+  [PASS] record extension realified readout at count=0
+  [PASS] record extension complex readout at count=1
+  [PASS] record extension realified readout at count=1
+  [PASS] record extension complex readout at count=2
+  [PASS] record extension realified readout at count=2
+  [PASS] record extension complex readout at count=3
+  [PASS] record extension realified readout at count=3
+  [PASS] record extension complex readout at count=4
+  [PASS] record extension realified readout at count=4
+  [PASS] record extension complex readout is disjoint-union additive
+  [PASS] record extension realified readout is disjoint-union additive
 
-Part D: occupancy scaling degrees
----------------------------------
+Part D: determinant-power scaling degrees
+-----------------------------------------
   [PASS] complex scaling degree is n at n=1
   [PASS] realified scaling degree is 2n at n=1
   [PASS] complex scaling degree is n at n=2
@@ -45,8 +57,9 @@ Part F: source and axiom guards
   [PASS] axioms withhold K/CPT structure
   [PASS] axioms withhold source/action identification
   [PASS] axioms withhold physical observable bridge
-  [PASS] note grants the complex carrier
+  [PASS] note grants the auxiliary complex carrier
   [PASS] note contains both countermodel functionals
+  [PASS] note constructs two readouts on one record model
   [PASS] note limits the claim to finite carriers
   [PASS] note preserves future action theorem
   [PASS] note does not force r
@@ -56,9 +69,9 @@ Part F: source and axiom guards
   [PASS] N4 uses no prior negative witness
   [PASS] N5 names tested resolutions
   [PASS] N6 preserves action, coordinate, and governance paths
-  [PASS] N7 contains the complex-field steelman
+  [PASS] N7 contains normalization and complex-field steelmen
   [PASS] N8 distinguishes phase from determinant power
   [PASS] discipline gate records PASS
 
 ====================================================================
-TOTAL: PASS=41, FAIL=0
+TOTAL: PASS=54, FAIL=0

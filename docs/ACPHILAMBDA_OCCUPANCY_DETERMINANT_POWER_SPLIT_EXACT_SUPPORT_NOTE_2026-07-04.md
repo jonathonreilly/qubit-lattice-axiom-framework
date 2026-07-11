@@ -101,8 +101,8 @@ physical action, register or predict `r`, force `r=1/2`, derive `delta`, or
 supply the R-eta readout license.
 
 The two mathematical determinant constructions are both present in the
-theorem. A separate physical carrier theorem or an explicitly governed premise
-is required before either construction can be used as the charged-lepton
+theorem. A separate retained physical-carrier theorem or approved primitive is
+required before either construction can be used as the charged-lepton
 occupancy rule.
 
 ## Verification

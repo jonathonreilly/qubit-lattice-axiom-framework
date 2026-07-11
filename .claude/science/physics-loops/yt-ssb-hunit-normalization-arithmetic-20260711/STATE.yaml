@@ -17,6 +17,7 @@ open_imports: []
 no_go_routes: []
 trace_class: direct_blocker_closure
 review_disposition: pass
-pr_status: pending
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5173
 next_exact_action: "Independent audit reviews the queued positive-theorem row after landing."
 stop_condition: "Scoped source/runner pair passes review and is packaged for independent audit."

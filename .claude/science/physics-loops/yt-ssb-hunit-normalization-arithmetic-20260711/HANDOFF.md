@@ -25,3 +25,8 @@ operator-matching problem remains outside the claim.
 After landing, send `yt_ssb_matching_gap_analysis_note_2026-04-18` through the
 independent audit lane on the scoped finite-dimensional theorem. Do not reuse
 this result as a physical SSB/Yukawa matching theorem.
+
+## Delivery
+
+- Commit: `95411079c` plus delivery-metadata follow-up.
+- Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5173

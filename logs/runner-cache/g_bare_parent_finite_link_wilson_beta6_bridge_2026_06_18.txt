@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
-runner_sha256: 92b2b7f48cec95f8e9e9b74983c6e0effd004e0e2d65c845689cfb5d28d34358
+runner_sha256: 315d047ff3c816c5cfa2eee2f44a65883795386aea7fc11e20acf9b800d0593d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 G_BARE finite-link/Wilson split-redundancy theorem check
@@ -89,13 +89,11 @@ SECTION E: link slot readback and slot COMPARISON (never assigned)
 SECTION G: source-boundary guards
 ------------------------------------------------------------------------------
 [PASS] bounded theorem note exists (docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
-[PASS] meta convention note exists (docs/G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md)
 [PASS] parent note exists (docs/G_BARE_DERIVATION_NOTE.md)
 [PASS] finite-link rigidity note exists (docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
 [PASS] Wilson small-a note exists (docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
 [PASS] theorem contains marker: set only by the independent audit lane
 [PASS] theorem contains marker: non-load-bearing convention context
-[PASS] theorem contains marker: G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md
 [PASS] theorem contains marker: This theorem locates the pin but does not choose it
 [PASS] bridge contains marker: mismatched-slot
 [PASS] bridge contains marker: does not claim:
@@ -114,14 +112,6 @@ SECTION G: source-boundary guards
 [PASS] theorem omits forbidden marker: A^a := C^a
 [PASS] theorem omits forbidden marker: g_bare := s
 [PASS] theorem omits forbidden marker: At `N_c = 3`, exact rational arithmetic gives `beta = 6`
-[PASS] convention contains marker: **Type:** meta
-[PASS] convention contains marker: this note is not a theorem
-[PASS] convention contains marker: (SD)
-[PASS] convention contains marker: A^a := C^a
-[PASS] convention contains marker: g_bare := s
-[PASS] convention contains marker: beta = 6
-[PASS] convention contains marker: definition-level bookkeeping
-[PASS] convention contains marker: G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md
 [PASS] parent contains marker: G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md
 [PASS] parent contains marker: G_BARE_RIGIDITY_THEOREM_NOTE.md
 [PASS] parent contains marker: WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md
@@ -135,7 +125,7 @@ SECTION G: source-boundary guards
 
 Summary
 ------------------------------------------------------------------------------
-TOTAL: PASS=105 FAIL=0
+TOTAL: PASS=95 FAIL=0
 Bridge check passed.
 
 ----- stderr -----

@@ -3,15 +3,15 @@
 
 This runner checks the exact finite algebra behind the source-side repair:
 
-* the (P-REC) accepted-premise packet parses from the note, and the
+* the (P-REC) declared bounded-premise packet parses from the note, and the
   theorem's selections (atoms, readout context, conjugation, unit weights,
   sites, instance rule) are CONSTRUCTED from the parsed packet rather than
   freestanding in code (2026-07-10 repair; a corrupted-packet negative
   control shows the construction is live);
 * Z^3 supplies arbitrary finite lists of distinct supports;
-* the registered one-site diagonal context inside M_2(C) has two nonzero
+* the declared one-site diagonal context inside M_2(C) has two nonzero
   K-fixed orthogonal readout atoms;
-* the registered covariant admissibility instance makes the chosen atom
+* the declared covariant varying-rule instance makes the chosen atom
   available at each site; a contrasting covariant instance defeats it (the
   premise is selective, not vacuous);
 * the finite Boolean unit-count functional is additive on disjoint support
@@ -61,6 +61,7 @@ class RecPacket:
     p0_diag: tuple[int, ...]
     p1_diag: tuple[int, ...]
     sites_line: str
+    locking_history: str
 
 
 def parse_rec_packet(note_text: str, corrupt_swap_atoms: bool = False) -> RecPacket:
@@ -87,8 +88,9 @@ def parse_rec_packet(note_text: str, corrupt_swap_atoms: bool = False) -> RecPac
         re.MULTILINE,
     )
     sites = re.search(r"^SITES:\s*(.+)$", body, re.MULTILINE)
-    if not (rule and basis and atoms_line and sites):
-        raise ValueError("(P-REC) packet is missing RULE/BASIS/ATOMS/SITES fields")
+    locking_history = re.search(r"^LOCKING-HISTORY:\s*(.+)$", body, re.MULTILINE)
+    if not (rule and basis and atoms_line and sites and locking_history):
+        raise ValueError("(P-REC) packet is missing RULE/BASIS/ATOMS/SITES/LOCKING-HISTORY fields")
     p0_spec, p1_spec = atoms_line.group(1), atoms_line.group(2)
     if corrupt_swap_atoms:
         p0_spec, p1_spec = p1_spec, p0_spec
@@ -100,6 +102,7 @@ def parse_rec_packet(note_text: str, corrupt_swap_atoms: bool = False) -> RecPac
         p0_diag=p0_diag,
         p1_diag=p1_diag,
         sites_line=sites.group(1).strip(),
+        locking_history=locking_history.group(1).strip(),
     )
 
 
@@ -111,7 +114,7 @@ _NOTE_TEXT = (ROOT / NOTE_REL).read_text(encoding="utf-8")
 PACKET = parse_rec_packet(_NOTE_TEXT)
 
 I2 = sp.eye(2)
-# Constructed from the registered (P-REC) packet, not freestanding:
+# Constructed from the declared bounded (P-REC) packet, not freestanding:
 P0, P1 = atoms_from_packet(PACKET)
 X = mat([[0, 1], [1, 0]])
 
@@ -125,7 +128,7 @@ class LocalReadoutAtom:
 
 
 def line_sites(n: int) -> list[tuple[int, int, int]]:
-    return [(k, 0, 0) for k in range(n)]
+    return [(2 * k, 0, 0) for k in range(n)]
 
 
 def atoms(n: int) -> list[LocalReadoutAtom]:
@@ -135,6 +138,15 @@ def atoms(n: int) -> list[LocalReadoutAtom]:
 def pairwise_disjoint_support(records: list[LocalReadoutAtom]) -> bool:
     sites = [record.site for record in records]
     return len(sites) == len(set(sites))
+
+
+def pairwise_nonadjacent(records: list[LocalReadoutAtom]) -> bool:
+    sites = [record.site for record in records]
+    return all(
+        sum(abs(a_i - b_i) for a_i, b_i in zip(a, b)) > 1
+        for index, a in enumerate(sites)
+        for b in sites[index + 1 :]
+    )
 
 
 def unit_count_readout(records: list[LocalReadoutAtom]) -> int:
@@ -168,7 +180,7 @@ def r_varying(condition: NeighborCondition) -> AvailableSet:
 
 
 RULE_LIBRARY = {"R_all": r_all, "R_p0only": r_p0only, "R_varying": r_varying}
-# The registered instance premise (P-REC-a) is the packet-named rule; the
+# The declared bounded instance premise (P-REC-a) is the packet-named rule; the
 # other library members remain as the rejector / neighbor-varying exhibits.
 PREMISE_RULE = RULE_LIBRARY[PACKET.rule_name]
 
@@ -199,12 +211,13 @@ def main() -> int:
     print("proposal_allowed: false")
     print()
 
-    print("P. registered (P-REC) packet: parse, construct, negative control")
+    print("P. declared bounded (P-REC) packet: parse, construct, negative control")
     check(
         "P1 packet parses with all four fields",
-        PACKET.rule_name == "R_all"
+        PACKET.rule_name == "R_varying"
         and PACKET.basis == "computational-diagonal"
-        and PACKET.sites_line.startswith("x_k = (k,0,0)"),
+        and PACKET.sites_line.startswith("x_k = (2k,0,0)")
+        and PACKET.locking_history == "chosen sites have empty nearest-neighbor slots at lock time",
         f"rule={PACKET.rule_name}, basis={PACKET.basis}, sites={PACKET.sites_line!r}",
     )
     check(
@@ -214,7 +227,7 @@ def main() -> int:
     )
     check(
         "P3 packet-named instance rule resolves in the rule library",
-        PREMISE_RULE is RULE_LIBRARY["R_all"],
+        PREMISE_RULE is RULE_LIBRARY["R_varying"],
     )
     corrupted = parse_rec_packet(_NOTE_TEXT, corrupt_swap_atoms=True)
     c_p0, c_p1 = atoms_from_packet(corrupted)
@@ -242,9 +255,9 @@ def main() -> int:
     check("A9 theorem boundary explicitly does not derive production", "record production or realization dynamics" in note)
     check("A10 theorem names the declared availability premise and record eligibility", "declared admissibility-instance premise" in note_flat and "record-eligible" in note)
     check(
-        "A11 note registers all four (P-REC) premises in named form",
+        "A11 note declares all four (P-REC) premises in named form",
         all(tag in note for tag in ("(P-REC-a)", "(P-REC-b)", "(P-REC-c)", "(P-REC-d)"))
-        and "accepted-premise packet entry" in note_flat,
+        and "declared bounded-premise packet" in note_flat,
     )
     check(
         "A12 note carries the dated 2026-07-10 Repair Note with the construct-from-packet statement",
@@ -282,9 +295,9 @@ def main() -> int:
     )
     empty_condition: NeighborCondition = (None, None, None, None, None, None)
     check(
-        "AD2 packet-registered rule (P-REC-a) makes the declared P1 premise hold at every constructed site",
+        "AD2 packet-declared rule (P-REC-a) makes P1 available under empty-neighbor conditions",
         all("P1" in PREMISE_RULE(empty_condition) for n in (1, 3, 8) for _site in line_sites(n)),
-        f"registered rule: {PACKET.rule_name}",
+        f"declared rule: {PACKET.rule_name}",
     )
     check(
         "AD3 R_p0only rejector detects failure of the declared P1 premise at every site",
@@ -299,15 +312,19 @@ def main() -> int:
     locked: dict[tuple[int, int, int], str] = {}
     realized_stack: list[LocalReadoutAtom] = []
     admissible_at_lock: list[bool] = []
+    conditions_at_lock: list[NeighborCondition] = []
     for record in atoms(8):
         condition_at_lock = neighbor_condition(record.site, locked)
+        conditions_at_lock.append(condition_at_lock)
         admissible_at_lock.append(record.label in PREMISE_RULE(condition_at_lock))
         locked[record.site] = record.label
         realized_stack.append(record)
     check(
-        "AD5 toy realized stack locks only possibilities available at lock time under the registered rule",
-        len(realized_stack) == 8 and all(admissible_at_lock),
-        f"registered rule: {PACKET.rule_name}",
+        "AD5 declared empty-NN locking history keeps P1 available under R_varying",
+        len(realized_stack) == 8
+        and all(admissible_at_lock)
+        and all(condition == empty_condition for condition in conditions_at_lock),
+        f"declared rule: {PACKET.rule_name}",
     )
     print("[NAMED] AD5 live presence-conditional layer: by the Record wording, a present record locks an admissible local possibility")
 
@@ -316,8 +333,11 @@ def main() -> int:
     for n in tested_lengths:
         rs = atoms(n)
         check(
-            f"C1 n={n}: distinct line supports and one atom per support",
-            len(rs) == n and pairwise_disjoint_support(rs) and all(r.projector == P1 for r in rs),
+            f"C1 n={n}: distinct pairwise-nonadjacent line supports and one atom per support",
+            len(rs) == n
+            and pairwise_disjoint_support(rs)
+            and pairwise_nonadjacent(rs)
+            and all(r.projector == P1 for r in rs),
         )
 
     B = sp.symbols("B", integer=True, nonnegative=True)
@@ -334,7 +354,7 @@ def main() -> int:
     print("\nD. finite Boolean unit-count readout")
     empty: list[LocalReadoutAtom] = []
     first = atoms(4)
-    second = [LocalReadoutAtom(site=(k, 0, 0), label="P1", projector=P1) for k in range(4, 9)]
+    second = [LocalReadoutAtom(site=(2 * k, 0, 0), label="P1", projector=P1) for k in range(4, 9)]
     combined = first + second
     check("D1 empty unit-count readout is zero", unit_count_readout(empty) == 0)
     check("D2 finite support tags are disjoint before additivity", pairwise_disjoint_support(combined))

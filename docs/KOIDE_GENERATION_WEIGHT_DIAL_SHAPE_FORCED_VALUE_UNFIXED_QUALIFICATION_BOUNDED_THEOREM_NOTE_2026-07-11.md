@@ -91,7 +91,12 @@ leaves `K`/CPT structure downstream:
   measurement basis selection, Born weights, probability rules" remain outside
   axiom content. **`K`/CPT structure is therefore a supplied readout-context
   element, not axiom content.** T1 below is conditional on S2; the note names it
-  as such and does not silently upgrade it.
+  as such and does not silently upgrade it. The canonical definition note is a
+  naming ratification only and supplies no structure; the supplied-context
+  class that carries a fixed `K`/CPT action on this surface is the one used by
+  `KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`
+  (supplied ORBIT-INDEXING with fixed `K`/CPT action, cited at its claim scope
+  as the established supplied-context class, not as a derivation of S2).
 
 **Provenance note on S2 (read carefully).** In the standard basis `U` is a real
 permutation, so `K` (coordinate conjugation) commutes with `U` as operators.

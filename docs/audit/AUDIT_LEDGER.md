@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 357 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2809 |
+| unaudited | 2808 |
 | audit_in_progress | 20 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 47 |
+| ~~audited_conditional~~ | 48 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,21 +46,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 24 |
 | `audited_clean` | 449 |
-| `audited_conditional` | 47 |
+| `audited_conditional` | 48 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 15 |
-| `unaudited` | 3159 |
+| `unaudited` | 3158 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2045 |
 | `decoration` | 26 |
 | `meta` | 357 |
-| `no_go` | 462 |
+| `no_go` | 463 |
 | `open_gate` | 195 |
-| `positive_theorem` | 663 |
+| `positive_theorem` | 662 |
 
 | criticality | count |
 |---|---:|
@@ -614,6 +614,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -5259,6 +5260,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The conclusions follow algebraically from the explicitly stipulated residual hypotheses and standard PMNS parametrization. The nonzero phase factor is stated as a hypothesis, and the excluded endpoint is handled correctly.
 - **rationale:** The proof is a genuine class-A algebraic closure within its expressly bounded conditional scope and does not claim to derive the stipulated residuals from the framework. The runner performs the stated exact identities and endpoint checks rather than merely printing a verdict or importing external values. No cited open authority or unclosed bridge is required for the audited implication itself.
 - **auditor confidence:** high
+
+### `pmns_uniform_scalar_deformation_boundary_note`
+
+- **Note:** [`PMNS_UNIFORM_SCALAR_DEFORMATION_BOUNDARY_NOTE.md`](../../docs/PMNS_UNIFORM_SCALAR_DEFORMATION_BOUNDARY_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Conditional on the encoded staggered uniform-scalar Hamiltonian and encoded one-sided-minimal retained PMNS classifier, uniform scalar deformations keep the hw=1 triplets sector-scalar and are rejected by that classifier.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00057-pmns_uniform_scalar_deformat`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** A uniform generation-blind scalar deformation leaves the retained pair sector-scalar, (D_0^trip, D_-^trip) = (u_0 I_3, u_- I_3), so its scalar response profiles fail the encoded one-sided-minimal PMNS closure criterion.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional algebra closes once the staggered Hamiltonian and one-sided-minimal PMNS criterion are supplied. The restricted packet does not derive those two physical inputs from retained-grade authorities, and the minimal axioms explicitly do not select a Hamiltonian.
+- **rationale:** The runner genuinely constructs the finite corner Hamiltonians, resolvents, scalar blocks, and classifier rejection; it is not a print-only or tuned-value runner. However, the staggered scalar Hamiltonian is an imported realization rather than an axiom-derived operator, and the physical sufficiency of the one-sided-minimal PMNS criterion is encoded in helper code rather than established by a retained-grade cited authority. The result is therefore a sound conditional boundary against the encoded uniform-scalar lane, not a standalone first-principles PMNS no-go.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the direct physical-PMNS-observable route remains open, so rejection is established only relative to the encoded one-sided-minimal classifier.
 
 ### `poisson_backreaction_live_threshold_packet_note_2026-05-29`
 

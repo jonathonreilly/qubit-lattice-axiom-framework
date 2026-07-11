@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 83 |
 | **retained_no_go** | 28 |
-| **retained_bounded** | 361 |
+| **retained_bounded** | 362 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2783 |
+| unaudited | 2782 |
 | audit_in_progress | 29 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 33 |
-| `audited_clean` | 454 |
+| `audited_clean` | 455 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3133 |
+| `unaudited` | 3132 |
 
 | claim_type | count |
 |---|---:|
@@ -439,6 +439,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | A | - |
@@ -5807,6 +5808,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** If a future proof derives the double-local projector normalization, then lambda=(w_E/w_T1)^-2=9/4 and the endpoint chain closes.  _(class `A`)_
 - **chain closes:** None — The endpoint algebra closes only after supplying the double reciprocal local projector-normalization law q_X proportional to w_X^-2; that bridge is an explicit primitive/premise in the packet, not a derived result.
 - **rationale:** Issue: the double reciprocal local projector-normalization law q_X proportional to w_X^-2 is not derived from packet inputs; it is the named missing primitive. Why this blocks: the endpoint rho_E=21/4 follows only after that normalization bridge is admitted. Repair target: derive the double-local normalization from Route-2 source/tensor/readout structure, with a runner that computes the bridge rather than selecting p=-2 against lambda=9/4. Claim boundary until fixed: the note cleanly isolates the conditional algebra and falsifies nearby monomial laws, but it is not a current-surface derivation.
+
+### `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Target-continuum linearized Einstein-tensor algebra only: gauge annihilation, the supplied TT-sample response, conformal-sector distinction, and explicit exclusion of Regge, emergent-metric, continuum-limit, normalization, and physical-graviton closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00304-r3_geometric_regge_lineariza`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the supplied linearized Einstein tensor, pure-gauge perturbations vanish, the supplied transverse-traceless sample has response G_lin(h_TT)=(1/2)k^2 h_TT, and the conformal sample has a distinct response.  _(class `A`)_
+- **chain closes:** True — The displayed G_lin implementation performs the tensor contractions underlying all three algebraic claims, and the completed runner agrees with the stated fixed-frame results. The conclusion closes only at the expressly bounded target-operator scope.
+- **rationale:** The runner computes the supplied continuum operator rather than printing asserted outcomes: gauge cancellation, the TT coefficient with k^2=2.890, and the distinct conformal response follow from its tensor contractions. This is a genuine class-A closure for the narrow target-operator statement, with no external comparator or tuned physical input. The verdict supplies no Regge Hessian, edge-length metric, continuum bridge, Newton normalization, or physical graviton theorem.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02`
 

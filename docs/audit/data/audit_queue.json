@@ -3,7 +3,7 @@
     "critical": 649,
     "high": 333,
     "leaf": 1136,
-    "medium": 759
+    "medium": 758
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -31083,28 +31083,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hubble_c1_a1_grassmann_no_go.py",
-      "transitive_descendants": 7
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/R3_GEOMETRIC_REGGE_LINEARIZATION_GIVES_HEALTHY_LAMBDA1_GRAVITON_NARROW_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/r3_regge_linearization_lambda1_healthy_graviton_2026_06_08.py",
       "transitive_descendants": 7
     },
     {
@@ -81994,6 +81972,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 596,
-  "total_pending": 2877
+  "ready_count": 595,
+  "total_pending": 2876
 }

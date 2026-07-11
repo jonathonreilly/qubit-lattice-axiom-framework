@@ -53,18 +53,24 @@ FORBIDDEN_INPUT_PATTERNS = [
 ]
 
 NEGATIVE_CLOSEOUT_EMISSION_PATTERN = re.compile(
-    r"^[A-Z0-9_]*CLOSES[A-Z0-9_]*\s*=\s*FALSE\s*$",
+    r"^(?!CONDITIONAL(?:_|$))(?:[A-Z0-9]+_)*CLOSES(?:_[A-Z0-9]+)*"
+    r"\s*=\s*FALSE\s*$",
     re.I,
 )
 POSITIVE_CLOSEOUT_EMISSION_PATTERN = re.compile(
-    r"^[A-Z0-9_]*CLOSES[A-Z0-9_]*\s*=\s*TRUE\s*$",
+    r"^(?!CONDITIONAL(?:_|$))(?:[A-Z0-9]+_)*CLOSES(?:_[A-Z0-9]+)*"
+    r"\s*=\s*TRUE\s*$",
     re.I,
 )
 CONDITIONAL_TRUE_CLOSEOUT_PATTERN = re.compile(
-    r"^CONDITIONAL[A-Z0-9_]*CLOSES[A-Z0-9_]*IF[A-Z0-9_]*\s*=\s*TRUE\s*$",
+    r"^CONDITIONAL(?:_[A-Z0-9]+)*_CLOSES(?:_[A-Z0-9]+)*"
+    r"_IF(?:_[A-Z0-9]+)*\s*=\s*TRUE\s*$",
     re.I,
 )
-RESIDUAL_EMISSION_PATTERN = re.compile(r"^RESIDUAL[A-Z0-9_]*\s*=", re.I)
+RESIDUAL_EMISSION_PATTERN = re.compile(
+    r"^RESIDUAL[A-Z0-9_]*\s*=\s*\S.*$",
+    re.I,
+)
 
 
 PASS_COUNT = 0
@@ -151,7 +157,19 @@ def pattern_hits(text: str, patterns: list[re.Pattern[str]]) -> list[str]:
     return hits
 
 
-def run_script_for_emissions(path: Path) -> ScriptEmission:
+def normalize_subprocess_text(value: str | bytes | None) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, bytes):
+        return value.decode("utf-8", errors="replace")
+    return value
+
+
+def run_script_for_emissions(
+    path: Path,
+    *,
+    timeout_seconds: float = SCRIPT_TIMEOUT_SECONDS,
+) -> ScriptEmission:
     try:
         script_arg = str(path.relative_to(ROOT))
     except ValueError:
@@ -163,14 +181,14 @@ def run_script_for_emissions(path: Path) -> ScriptEmission:
             check=False,
             capture_output=True,
             text=True,
-            timeout=SCRIPT_TIMEOUT_SECONDS,
+            timeout=timeout_seconds,
         )
     except subprocess.TimeoutExpired as exc:
         return ScriptEmission(
             path=path,
             returncode=None,
-            stdout=exc.stdout or "",
-            stderr=exc.stderr or "",
+            stdout=normalize_subprocess_text(exc.stdout),
+            stderr=normalize_subprocess_text(exc.stderr),
             timed_out=True,
         )
     return ScriptEmission(
@@ -229,6 +247,26 @@ def run_self_tests() -> int:
             print("NO_EMITTED_GUARD_LABELS")
             """,
         )
+        unrelated_output_script = temporary_script(
+            tmp_path,
+            "unrelated_output_does_not_count.py",
+            """
+            print("UNRELATED_FALSE=FALSE")
+            print("TEXT=RESIDUAL_SCALAR=embedded_but_not_a_label")
+            print("RESIDUAL_SCALAR=")
+            """,
+        )
+        timeout_script = temporary_script(
+            tmp_path,
+            "timeout_output_is_normalized.py",
+            """
+            import time
+
+            print("Q_TIMEOUT_CLOSES_Q=FALSE", flush=True)
+            print("RESIDUAL_Q=emitted_before_timeout", flush=True)
+            time.sleep(1)
+            """,
+        )
         good_script = temporary_script(
             tmp_path,
             "emitted_labels_pass.py",
@@ -255,6 +293,11 @@ def run_self_tests() -> int:
         )
 
         dead_emission = run_script_for_emissions(dead_literal_script)
+        unrelated_emission = run_script_for_emissions(unrelated_output_script)
+        timeout_emission = run_script_for_emissions(
+            timeout_script,
+            timeout_seconds=0.05,
+        )
         good_emission = run_script_for_emissions(good_script)
         true_emission = run_script_for_emissions(true_script)
         conditional_true_emission = run_script_for_emissions(conditional_true_script)
@@ -268,6 +311,33 @@ def run_self_tests() -> int:
         "comments, dead strings, and dead print branches do not count as emitted residuals",
         dead_emission.returncode == 0 and not dead_emission.residuals,
         detail="stdout=" + repr(dead_emission.stdout.strip()),
+    )
+    record(
+        "unrelated emitted FALSE text does not count as a negative CLOSES label",
+        unrelated_emission.returncode == 0
+        and not unrelated_emission.negative_closeouts,
+        detail="stdout=" + repr(unrelated_emission.stdout.strip()),
+    )
+    record(
+        "embedded or empty emitted RESIDUAL text does not count as a residual label",
+        unrelated_emission.returncode == 0 and not unrelated_emission.residuals,
+        detail="stdout=" + repr(unrelated_emission.stdout.strip()),
+    )
+    record(
+        "conditional or embedded CLOSES tokens do not count as unconditional negative closeouts",
+        not NEGATIVE_CLOSEOUT_EMISSION_PATTERN.fullmatch(
+            "CONDITIONAL_Q_CLOSES_IF_BACKGROUND_Z_ZERO=FALSE"
+        )
+        and not NEGATIVE_CLOSEOUT_EMISSION_PATTERN.fullmatch("DISCLOSES=FALSE"),
+    )
+    record(
+        "timed-out captured stdout is normalized without changing timeout failure semantics",
+        timeout_emission.timed_out
+        and isinstance(timeout_emission.stdout, str)
+        and timeout_emission.negative_closeouts == ["Q_TIMEOUT_CLOSES_Q=FALSE"]
+        and timeout_emission.residuals == ["RESIDUAL_Q=emitted_before_timeout"]
+        and not timeout_emission.promotion_hits,
+        detail="stdout=" + repr(timeout_emission.stdout.strip()),
     )
     record(
         "real stdout negative CLOSES labels are detected",
@@ -320,11 +390,11 @@ def format_emission_lines(
 
 
 def audit_no_go_docs() -> None:
-    section("A. No-go notes retain residuals and do not promote closure")
+    section("A. Selected packet notes retain residuals and do not promote closure")
 
     docs = gather_files(DOC_GLOBS)
     check(
-        "A.1 no-go note set is non-empty",
+        "A.1 selected packet note set is non-empty",
         len(docs) > 0,
         detail=f"notes={len(docs)}",
     )
@@ -347,28 +417,28 @@ def audit_no_go_docs() -> None:
             forbidden_inputs.append(f"{rel}: {input_hits}")
 
     check(
-        "A.2 every no-go note names a residual scalar or residual primitive",
+        "A.2 every selected packet note names a residual scalar or residual primitive",
         not missing_residual,
         detail="\n".join(missing_residual),
     )
     check(
-        "A.3 no no-go note promotes closure with a TRUE closeout flag",
+        "A.3 no selected packet note promotes closure with a TRUE closeout flag",
         not promotion_hits,
         detail="\n".join(promotion_hits),
     )
     check(
-        "A.4 no no-go note states a forbidden target as an assumption",
+        "A.4 no selected packet note states a forbidden target as an assumption",
         not forbidden_inputs,
         detail="\n".join(forbidden_inputs),
     )
 
 
 def audit_no_go_scripts() -> None:
-    section("B. No-go scripts expose negative closeout flags")
+    section("B. Selected packet scripts expose negative closeout flags")
 
     scripts = gather_files(SCRIPT_GLOBS)
     check(
-        "B.1 no-go script set is non-empty",
+        "B.1 selected packet script set is non-empty",
         len(scripts) > 0,
         detail=f"scripts={len(scripts)}",
     )
@@ -388,7 +458,7 @@ def audit_no_go_scripts() -> None:
             promotion_hits.append(f"{emission.rel}: {hits}")
 
     check(
-        "B.2 every no-go script emits an explicit negative CLOSES flag",
+        "B.2 every selected packet script emits an explicit negative CLOSES flag",
         not timed_out and not missing_false_flag,
         detail="\n".join(timed_out)
         or format_emission_lines(
@@ -398,7 +468,7 @@ def audit_no_go_scripts() -> None:
         ),
     )
     check(
-        "B.3 every no-go script emits an explicit residual label",
+        "B.3 every selected packet script emits an explicit residual label",
         not timed_out and not missing_residual,
         detail="\n".join(timed_out)
         or format_emission_lines(
@@ -408,7 +478,7 @@ def audit_no_go_scripts() -> None:
         ),
     )
     check(
-        "B.4 no no-go script output promotes closure with a TRUE closeout flag",
+        "B.4 no selected packet script output promotes closure with a TRUE closeout flag",
         not promotion_hits,
         detail="\n".join(promotion_hits),
     )

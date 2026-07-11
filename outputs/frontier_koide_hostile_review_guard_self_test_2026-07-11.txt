@@ -1,0 +1,31 @@
+========================================================================================
+Koide hostile-review guard self-test
+========================================================================================
+Purpose: prove script checks consume emitted stdout lines, not source comments, dead branches, or unrelated literals.
+  [PASS] comments, dead strings, and dead print branches do not count as emitted negative closeouts
+       stdout='NO_EMITTED_GUARD_LABELS'
+  [PASS] comments, dead strings, and dead print branches do not count as emitted residuals
+       stdout='NO_EMITTED_GUARD_LABELS'
+  [PASS] unrelated emitted FALSE text does not count as a negative CLOSES label
+       stdout='UNRELATED_FALSE=FALSE\nTEXT=RESIDUAL_SCALAR=embedded_but_not_a_label\nRESIDUAL_SCALAR='
+  [PASS] embedded or empty emitted RESIDUAL text does not count as a residual label
+       stdout='UNRELATED_FALSE=FALSE\nTEXT=RESIDUAL_SCALAR=embedded_but_not_a_label\nRESIDUAL_SCALAR='
+  [PASS] conditional or embedded CLOSES tokens do not count as unconditional negative closeouts
+  [PASS] timed-out captured stdout is normalized without changing timeout failure semantics
+       stdout='Q_TIMEOUT_CLOSES_Q=FALSE\nRESIDUAL_Q=emitted_before_timeout'
+  [PASS] real stdout negative CLOSES labels are detected
+       Q_SELFTEST_CLOSES_Q=FALSE
+  [PASS] real stdout RESIDUAL labels are detected
+       RESIDUAL_SCALAR=self_test_residual
+  [PASS] real stdout TRUE closeout labels are rejected
+       Q_SELFTEST_CLOSES_Q=TRUE
+  [PASS] conditional TRUE closeout labels are not treated as promoted closure
+       CONDITIONAL_Q_CLOSES_IF_BACKGROUND_Z_ZERO=TRUE
+       RESIDUAL_Q=background_zero_law
+
+========================================================================================
+Self-test summary
+========================================================================================
+SELF_TEST_PASSED=TRUE
+SELF_TEST_PASS_COUNT=10
+SELF_TEST_FAIL_COUNT=0

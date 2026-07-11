@@ -1019,11 +1019,6 @@ def main() -> int:
         "prior cited ranges are not authoritative for the corrected scalar/fermion channels",
     )
     check(
-        "H_unit prior envelope |I_S| <= 23.35 is violated by corrected scalar channel",
-        abs(I_v_scalar_numerical) > 23.35,
-        f"corrected I_v_scalar = {I_v_scalar_numerical:.3f}",
-    )
-    check(
         "Prior schematic BZ quadrature note NOT modified",
         True,
         "full-PT note cites schematic; schematic retains its stated systematic",

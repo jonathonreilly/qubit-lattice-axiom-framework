@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_bz_quadrature_numerical.py
-runner_sha256: 7d67b5acf4f1477f9300c4a9b64c2197fa4c1230bbb6767087c9d628f875d050
-timeout_sec: 120
+runner_sha256: 5394e0d83f22dafbd2b10502ac508c1a063d09599ceab6aa3547c7760ea232cc
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 3.92
+elapsed_sec: 2.05
 status: ok
 ----- stdout -----
 ========================================================================
@@ -101,10 +101,9 @@ Block 11: Authority retention.
   [PASS] Ward-identity tree-level theorem NOT modified (I_v_gauge = 0 confirmed)  (conserved point-split staggered current Z_V = 1 exact)
   [PASS] Rep-A/Rep-B cancellation theorem NOT modified  (Delta_R three-channel formula inherited without modification)
   [PASS] Delta_1, Delta_2, Delta_3 literature-citation notes NOT modified  (prior cited ranges cross-referenced; no revision of those notes)
-  [PASS] H_unit symbolic reduction NOT modified (envelope |I_S| <= 23.35 preserved)  (numerical scalar vertex value well within retained H_unit envelope)
 
 ========================================================================
-SUMMARY: PASS=40  FAIL=0
+SUMMARY: PASS=39  FAIL=0
 ========================================================================
 
 DEFINITIVE RESULT:

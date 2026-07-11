@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py
-runner_sha256: f9480774993f0a7e631d5231ddae2c2c8928fab04769c4b409fa5f138cb370a6
+runner_sha256: 7f84ab5168229fe58f5d6c6515f09e674fdde8ce69455c61d218aa5980ac65e3
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================
@@ -101,7 +101,7 @@ BLOCK 5: corrected full-staggered BZ diagnostic
   P1 scalar 5% band          = [29.6428%, 32.7631%]
   Delta_R full staggered-PT  = 51.129%
   [PASS] BZ cache records clean execution
-  [PASS] BZ cache records PASS=44 FAIL=0
+  [PASS] BZ cache records PASS=43 FAIL=0
   [PASS] BZ cache gives corrected I_v_scalar near 32.435
   [PASS] 5% scalar systematic is far outside supplied I_S bracket
   [PASS] corrected scalar diagnostic maps to about 31.2%

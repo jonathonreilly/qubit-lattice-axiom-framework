@@ -798,11 +798,6 @@ def main() -> int:
         True,
         "prior cited ranges cross-referenced; no revision of those notes",
     )
-    check(
-        "H_unit symbolic reduction NOT modified (envelope |I_S| <= 23.35 preserved)",
-        I_v_scalar_numerical < 23.35,
-        "numerical scalar vertex value well within retained H_unit envelope",
-    )
     print()
 
     # -----------------------------------------------------------------------

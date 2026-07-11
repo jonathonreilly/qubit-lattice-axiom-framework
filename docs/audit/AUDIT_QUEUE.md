@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 2882
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 596
+**Total pending:** 2881
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 595
 
 By criticality:
-- `critical`: 658
+- `critical`: 657
 - `high`: 332
 - `medium`: 760
 - `leaf`: 1132
@@ -51,20 +51,20 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 34 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | non_terminal_conditional | critical | 671 | 12.39 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_uniform_scalar_deformation_boundary.py` |
 | 35 | `pmns_twisted_flux_transfer_holonomy_boundary_note` | bounded_theorem | non_terminal_conditional | critical | 671 | 10.39 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py` |
 | 36 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | unaudited | critical | 669 | 11.89 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_hw1_source_transfer_boundary.py` |
-| 37 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | audit_in_progress | critical | 667 | 17.88 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py` |
-| 38 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | unaudited | critical | 663 | 12.88 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py` |
-| 39 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | unaudited | critical | 643 | 10.33 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_pmns_he_parity_repair.py` |
-| 40 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | unaudited | critical | 642 | 15.83 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py` |
-| 41 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | non_terminal_conditional | critical | 636 | 11.81 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py` |
-| 42 | `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | unaudited | critical | 625 | 11.29 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py` |
-| 43 | `yt_ew_m_residual_note_2026-05-02` | no_go | non_terminal_conditional | critical | 624 | 10.79 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/yt_ew_m_residual_channel_check.py` |
-| 44 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | unaudited | critical | 621 | 26.78 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py` |
-| 45 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | unaudited | critical | 618 | 11.77 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cluster_decomposition_mass_gap_bridge_check.py` |
-| 46 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | unaudited | critical | 605 | 11.74 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05.py` |
-| 47 | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | positive_theorem | unaudited | critical | 600 | 23.73 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py` |
-| 48 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | unaudited | critical | 583 | 14.19 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py` |
-| 49 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | unaudited | critical | 582 | 22.19 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py` |
-| 50 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem | unaudited | critical | 576 | 13.17 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py` |
+| 37 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | unaudited | critical | 663 | 12.88 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py` |
+| 38 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | unaudited | critical | 643 | 10.33 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_pmns_he_parity_repair.py` |
+| 39 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | unaudited | critical | 642 | 15.83 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py` |
+| 40 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | non_terminal_conditional | critical | 636 | 11.81 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py` |
+| 41 | `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | unaudited | critical | 625 | 11.29 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py` |
+| 42 | `yt_ew_m_residual_note_2026-05-02` | no_go | non_terminal_conditional | critical | 624 | 10.79 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/yt_ew_m_residual_channel_check.py` |
+| 43 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | unaudited | critical | 621 | 26.78 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py` |
+| 44 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | unaudited | critical | 618 | 11.77 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cluster_decomposition_mass_gap_bridge_check.py` |
+| 45 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | unaudited | critical | 605 | 11.74 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_spectrum_condition_blocked_time_normalization_2026_06_05.py` |
+| 46 | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | positive_theorem | unaudited | critical | 600 | 23.73 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py` |
+| 47 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | unaudited | critical | 583 | 14.19 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py` |
+| 48 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | unaudited | critical | 582 | 22.19 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py` |
+| 49 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem | unaudited | critical | 576 | 13.17 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py` |
+| 50 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | unaudited | critical | 570 | 30.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_circulant_q_two_thirds_algebraic_narrow.py` |
 
 ## Citation cycle break targets
 

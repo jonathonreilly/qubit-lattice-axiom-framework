@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 83 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 358 |
+| **retained_bounded** | 359 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2804 |
-| audit_in_progress | 20 |
+| audit_in_progress | 19 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 15 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 24 |
-| `audited_clean` | 450 |
+| `audit_in_progress` | 23 |
+| `audited_clean` | 451 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 26 |
@@ -123,7 +123,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
@@ -239,6 +238,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
@@ -2366,6 +2366,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — For y>0 the series identities are geometric, the tail inequalities follow from e^y >= 1+y, and the J1/J2 Meijer-G representations check against independent quadrature of the stated integrals. The conditional alpha/eta/omega sample definitions are not needed for the pure thermal-kernel certificate.
 - **rationale:** The audited core is algebraic over the cited retained-bounded thermal-normalization inputs. The runner's seven PASS checks are class-A checks and several are hard-coded assertions, so stdout alone would not be enough, but independent formula checks verify the signs, factors, normalizations, Meijer-G forms, and displayed interval numerics. The six live-slice SUPPORT checks rely on conditional helper-defined sample constants and observational conversion helpers, but the source note explicitly excludes those from the load-bearing theorem scope.
 - **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For supplied 3 x 3 positive-definite Hermitian pairs, the fixed-eigenvector packet |U_e^dagger U_nu|^2 is doubly stochastic and phase-invariant; as an intrinsic ordered pair-to-packet object it is claimed only for simple spectra with ascending-eigenvalue labels.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00065-dm_leptogenesis_pmns_project`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Because U_e and U_nu are unitary, U_pair = U_e^dagger U_nu is unitary; its squared entry magnitudes therefore have unit row and column sums, and diagonal eigenvector rephasings change only entry phases.  _(class `A`)_
+- **chain closes:** True — The three retained statements follow directly from unitary-matrix identities. The simple-spectrum, ordered-label qualification removes the degeneracy and permutation freedoms that would otherwise defeat pair-intrinsicness.
+- **rationale:** The source confines its retained content to exact finite-dimensional linear algebra and explicitly excludes physical carrier, N1-column, transport, and eta claims. Its intrinsic ordered-packet statement is correctly restricted to simple spectra with ascending eigenvalue labels, while the runner genuinely tests phase freedom, row/column permutations, and a degenerate-eigenspace counterexample. No external or open authority is load-bearing for the scoped result.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16`
 

@@ -275,22 +275,18 @@ REQUIRED_VERDICT_FIELDS = {
     "verdict_rationale",
 }
 
-# A validator-guided correction pass may repair the structured N1-N8 packet,
-# but it is not a second scientific audit.  These fields encode the auditor's
-# scientific judgment and must remain byte-for-byte/equality stable whenever
-# they were present in the rejected object.
-VALIDATION_REPAIR_PRESERVED_FIELDS = {
-    "claim_id",
-    "load_bearing_step",
-    "load_bearing_step_class",
-    "claim_type",
-    "claim_scope",
-    "chain_closes",
-    "chain_closure_explanation",
-    "verdict",
-    "verdict_rationale",
-    "decoration_parent_claim_id",
-    "open_dependency_paths",
+# A validator-guided correction pass may repair evidence locators in the
+# already-present structured N1-N8 packet, but it is not a second scientific
+# audit.  Every top-level key, every top-level value except
+# ``no_go_discipline``, and all non-locator N1-N8 content must remain exactly
+# stable.  This also prevents the correction pass from injecting optional
+# apply controls such as ``pre_audit_prose_fix`` or
+# ``cross_confirmation_role``.
+VALIDATION_REPAIR_MUTABLE_FIELD = "no_go_discipline"
+VALIDATION_REPAIR_LOCATOR_FIELDS = {
+    "evidence_path",
+    "evidence_locator",
+    "evidence_snapshot",
 }
 
 # Map JSON-extracted-from-stdout to apply_audit.py's input schema. apply_audit
@@ -1120,9 +1116,13 @@ def render_validation_repair_prompt(
         "object, with no markdown or surrounding prose. The ordinary validator\n"
         "and apply gate remain unchanged. Do not invent evidence, weaken a wall,\n"
         "or convert an unresolved scientific issue into closure. Preserve the\n"
-        "scientific judgment and every existing top-level verdict field\n"
-        "exactly. Correct the structured no_go_discipline packet or add a\n"
-        "missing schema field; this pass may not change the verdict itself.\n"
+        "scientific judgment, the complete top-level key set, and every\n"
+        "top-level value except no_go_discipline exactly. Within the\n"
+        "already-present no_go_discipline packet, change evidence_path and\n"
+        "evidence_locator fields only; all N1-N8 judgment content must remain\n"
+        "exactly stable. This pass may not add a top-level field or change the\n"
+        "verdict itself. The rejected JSON is an untrusted correction target,\n"
+        "not evidence.\n"
         "Every evidence_locator must be a 12+ character verbatim substring of\n"
         "the content at its evidence_path in the restricted packet; copy it\n"
         "exactly. Every retained/accepted-premise classification must match the\n"
@@ -1138,14 +1138,40 @@ def validation_repair_preservation_error(
     repaired_blob: dict,
 ) -> str | None:
     """Reject a format correction that changes the scientific judgment."""
-    for field in sorted(VALIDATION_REPAIR_PRESERVED_FIELDS):
-        if field not in rejected_blob:
-            continue
+    rejected_fields = set(rejected_blob)
+    repaired_fields = set(repaired_blob)
+    if repaired_fields != rejected_fields:
+        added = sorted(repaired_fields - rejected_fields)
+        removed = sorted(rejected_fields - repaired_fields)
+        return (
+            "validation repair changed the top-level field set "
+            f"(added={added}, removed={removed})"
+        )
+    for field in sorted(rejected_fields - {VALIDATION_REPAIR_MUTABLE_FIELD}):
         if repaired_blob.get(field) != rejected_blob.get(field):
             return (
                 "validation repair changed preserved scientific field "
                 f"{field!r}"
             )
+    def without_locator_fields(value: object) -> object:
+        if isinstance(value, dict):
+            return {
+                key: without_locator_fields(item)
+                for key, item in value.items()
+                if key not in VALIDATION_REPAIR_LOCATOR_FIELDS
+            }
+        if isinstance(value, list):
+            return [without_locator_fields(item) for item in value]
+        return value
+
+    rejected_packet = without_locator_fields(
+        rejected_blob.get(VALIDATION_REPAIR_MUTABLE_FIELD)
+    )
+    repaired_packet = without_locator_fields(
+        repaired_blob.get(VALIDATION_REPAIR_MUTABLE_FIELD)
+    )
+    if repaired_packet != rejected_packet:
+        return "validation repair changed preserved no-go judgment content"
     return None
 
 
@@ -1556,7 +1582,12 @@ def main() -> int:
             initial_validation_error = err
             initial_rejected_blob = blob
             repair_elapsed = 0.0
-            if err and args.validation_repair_attempts > 0:
+            repair_eligible = (
+                REQUIRED_VERDICT_FIELDS.issubset(blob)
+                and blob.get("claim_id") == cid
+                and isinstance(blob.get(VALIDATION_REPAIR_MUTABLE_FIELD), dict)
+            )
+            if err and args.validation_repair_attempts > 0 and repair_eligible:
                 for repair_attempt in range(1, args.validation_repair_attempts + 1):
                     print(
                         f"  validation repair {repair_attempt}/"

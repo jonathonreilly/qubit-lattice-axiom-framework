@@ -3222,7 +3222,9 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         )
         self.assertIn("12+ character verbatim substring", flat_prompt)
         self.assertIn("Do not invent evidence", flat_prompt)
-        self.assertIn("this pass may not change the verdict itself", flat_prompt)
+        self.assertIn("or change the verdict itself", flat_prompt)
+        self.assertIn("untrusted correction target, not evidence", flat_prompt)
+        self.assertIn("may not add a top-level field", flat_prompt)
         self.assertNotIn("accept despite", prompt.casefold())
 
     def test_validation_repair_cannot_change_scientific_judgment(self):
@@ -3237,16 +3239,22 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "chain_closure_explanation": "one route remains open",
             "verdict": "audited_conditional",
             "verdict_rationale": "the packet is incomplete",
-            "no_go_discipline": {"required": True, "status": "FAIL"},
-        }
-        locator_repair = {
-            **rejected,
             "no_go_discipline": {
                 "required": True,
                 "status": "FAIL",
-                "N1_alternative_routes": [],
+                "N1_alternative_routes": [{
+                    "route_id": "route-1",
+                    "disposition": "UNTESTED",
+                    "evidence_path": "docs/WRONG.md",
+                    "evidence_locator": "wrong locator text",
+                }],
             },
         }
+        locator_repair = json.loads(json.dumps(rejected))
+        locator_repair["no_go_discipline"]["N1_alternative_routes"][0].update({
+            "evidence_path": "docs/TARGET.md",
+            "evidence_locator": "exact packet locator",
+        })
         changed_verdict = {**locator_repair, "verdict": "audited_clean"}
 
         self.assertIsNone(
@@ -3255,6 +3263,74 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertIn(
             "changed preserved scientific field 'verdict'",
             m.validation_repair_preservation_error(rejected, changed_verdict)
+            or "",
+        )
+
+        changed_notes = {
+            **locator_repair,
+            "notes_for_re_audit_if_any": "a new scientific instruction",
+        }
+        self.assertIn(
+            "changed the top-level field set",
+            m.validation_repair_preservation_error(rejected, changed_notes)
+            or "",
+        )
+
+        rejected_with_optional_fields = {
+            **rejected,
+            "notes_for_re_audit_if_any": "original repair instruction",
+            "auditor_confidence": "medium",
+            "runner_check_breakdown": {
+                "A": 1,
+                "B": 0,
+                "C": 0,
+                "D": 0,
+                "total_pass": 1,
+            },
+        }
+        changed_confidence = {
+            **rejected_with_optional_fields,
+            "auditor_confidence": "high",
+        }
+        self.assertIn(
+            "changed preserved scientific field 'auditor_confidence'",
+            m.validation_repair_preservation_error(
+                rejected_with_optional_fields, changed_confidence
+            )
+            or "",
+        )
+
+        injected_apply_control = {
+            **rejected,
+            "cross_confirmation_role": "second_seat",
+        }
+        self.assertIn(
+            "changed the top-level field set",
+            m.validation_repair_preservation_error(
+                rejected, injected_apply_control
+            )
+            or "",
+        )
+
+        changed_route_disposition = json.loads(json.dumps(locator_repair))
+        changed_route_disposition["no_go_discipline"][
+            "N1_alternative_routes"
+        ][0]["disposition"] = "CLOSED"
+        self.assertIn(
+            "changed preserved no-go judgment content",
+            m.validation_repair_preservation_error(
+                rejected, changed_route_disposition
+            )
+            or "",
+        )
+
+        changed_packet_status = json.loads(json.dumps(locator_repair))
+        changed_packet_status["no_go_discipline"]["status"] = "PASS"
+        self.assertIn(
+            "changed preserved no-go judgment content",
+            m.validation_repair_preservation_error(
+                rejected, changed_packet_status
+            )
             or "",
         )
 

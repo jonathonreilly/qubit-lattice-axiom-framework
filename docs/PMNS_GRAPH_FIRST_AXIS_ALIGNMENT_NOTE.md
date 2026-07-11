@@ -12,17 +12,19 @@ route?
 
 ## Answer
 
-Yes, partially.
+Yes, partially, but the selector does not choose a unique axis.
 
 We name the needed extra input once and for all as **premise (E): residual-Z_2
 equivariance of the active Hermitian operator**.
 
 The canonical cube-shift selector on the `hw=1` triplet has exactly three
-coordinate-axis minima, each with residual `Z_2` stabilizer. Under the explicit
-symmetry premise (E) — that the active Hermitian operator carries the selected
-axis's residual `Z_2` equivariantly, a premise NOT derived by this route — the
-aligned law `P_23 H P_23 = H` follows (per the bridge authority,
-residual-`Z_2` invariance of `H` is equivalent to `P_23` invariance).
+degenerate coordinate-axis minima, each with residual `Z_2` stabilizer. It
+restricts the minimizing set to the three axes but supplies no unique-axis
+choice. After one minimum is supplied, and under the explicit symmetry premise
+(E) — that the active Hermitian operator carries that axis's residual `Z_2`
+equivariantly, a premise NOT derived by this route — the aligned law
+`P_23 H P_23 = H` follows (per the bridge authority, residual-`Z_2` invariance
+of `H` is equivalent to `P_23` invariance).
 
 Therefore the active aligned Hermitian core
 
@@ -38,9 +40,9 @@ The older real four-parameter display
 
 On the graph-first `hw=1` route:
 
-1. the normalized cube-shift selector has exactly three axis minima,
-2. each selected axis has exact residual `Z_2` stabilizer,
-3. under premise (E), residual `Z_2` equivariance of the active Hermitian
+1. the normalized cube-shift selector has exactly three degenerate coordinate-axis minima and does not choose uniquely among them,
+2. after one minimum is supplied, that axis has exact residual `Z_2` stabilizer,
+3. after that choice and under premise (E), residual `Z_2` equivariance of the active Hermitian
    operator is equivalent (bridge authority) to `P_23 H P_23 = H`,
 4. hence, under premise (E), the active aligned Hermitian core is exactly
    `[[a,z,z],[z*,c,d],[z*,d,c]]`, with `a,c,d in R` and `z in C`.
@@ -49,7 +51,8 @@ On the graph-first `hw=1` route:
 
 This is a real positive native law:
 
-- it derives weak-axis selection,
+- it restricts the minima exactly to the three coordinate axes, without
+  selecting uniquely among them,
 - it derives the aligned active Hermitian grammar *conditionally on premise
   (E)*, including the complex off-axis coupling allowed by Hermiticity,
 - it does so from the graph-native `hw=1` corner structure rather than from
@@ -59,8 +62,9 @@ This is a real positive native law:
 
 This route does **not** by itself determine:
 
+- which of the three degenerate axis minima is chosen,
 - residual-`Z_2` equivariance of the active Hermitian operator itself (premise
-  (E)): axis selection and identification of the group action do not by
+  (E)): restriction to the axis-minimum set and identification of the group action do not by
   themselves imply operator equivariance,
 - the aligned-core values `(a,z,c,d)`,
 - which lepton sector carries the active block,
@@ -69,8 +73,9 @@ This route does **not** by itself determine:
 So it is a positive partial closure route, not full closure.
 
 **2026-07-10 downstream hygiene.** This note's citable surface is: the three
-selector axis minima, the exact residual `Z_2` stabilizer per axis, and the
-CONDITIONAL alignment law under the explicit symmetry premise (E). Downstream
+degenerate selector axis minima; the exact residual `Z_2` stabilizer after one
+minimum is supplied; and the CONDITIONAL alignment law after that choice and
+under the explicit symmetry premise (E). Downstream
 notes must not cite this note as authority for an unconditional
 `P_23 H P_23 = H` alignment or an unconditional aligned-core grammar; the
 equivariance premise (E) is underived and its derivation (or retained-premise
@@ -85,8 +90,8 @@ partial laws.
 
 The graph-first route derives:
 
-- axis selection
-- alignment, conditionally on premise (E)
+- restriction to three degenerate coordinate-axis minima
+- alignment after an axis choice, conditionally on premise (E)
 
 but leaves:
 

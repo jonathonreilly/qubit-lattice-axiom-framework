@@ -1,29 +1,36 @@
 # Artifact Plan
 
-## Block 01: observational quotient and object separation
+## Cubic neighbor-response classification — delivered
 
-- exact note defining record-history/readout equivalence of laws;
-- application to the July-10 SWAP coupling;
-- lemma showing why permanent record formation is not a same-carrier unitary;
-- adversarial examples separating `H`, strict `U`, and instrument `J`;
-- deterministic finite-region runner.
+- exact proper-cubic scalar-even/vector-odd intertwiner theorem;
+- conditional spectral-faithfulness corollary;
+- oriented-link response-to-symbol bridge kept explicit;
+- deterministic exact runner and review PR.
 
-## Block 02: instrument normal form and faithful carrier
+## Record-observable quotient and formation outcome — current
 
-- absorbing classical-record sector plus coherent dilation decomposition;
+- record-history/readout operational quotient;
+- insertion-only versus continual-admissibility semantic comparison;
+- finite same-carrier Hamiltonian and unitary obstructions;
+- rank-one locked-output CP outcome-operation normal form;
+- mutation-sensitive runner, cache, N1--N8 packet, and stacked review PR.
+
+## Minimal dilation and faithful scalar escape — next
+
+- absorbing classical record register plus coherent dilation decomposition;
 - inventory of independent Kraus/unitary freedoms;
-- exact cubic intertwiner classification;
-- scalar-branch countermodel search.
+- controlled-copy, measure-and-prepare, scalar/SWAP, and vector controls;
+- decisive scalar-branch countermodel search.
 
-## Block 03: time and probability
+## Time and probability
 
 - distinguish partial event order, integer tick count, and physical rate;
 - test whether instrument composition plus exclusive-menu additivity yields a
   frame function on neighbor composites;
 - state the exact remaining premise behind Born weights.
 
-## Block 04: continuum gateway
+## Continuum gateway
 
-- only if Blocks 01--03 fix a microscopic process class;
-- define a single scaling family and common renormalization conditions;
+- only after a microscopic process class is fixed;
+- define one scaling family and common renormalization conditions;
 - test Lorentz/unitarity/QFT behavior before attaching SM or GR labels.

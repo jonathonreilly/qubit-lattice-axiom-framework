@@ -1,0 +1,26 @@
+loop: mirror-chokepoint-boundary-fit-closure-20260711
+date: 2026-07-11
+branch: claude/science-fix/mirror_chokepoint_boundary_fit_note-a22a3ff3
+base: origin/main
+mode: run
+target: retained
+cycle: 1
+active_route: estimator-validity diagnostic and bounded certificate repair
+hard_residual: dependency-aware cache freshness beyond the explicit companion SHA pin
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md
+  - scripts/mirror_chokepoint_boundary_fit_certificate.py
+  - logs/runner-cache/mirror_chokepoint_boundary_fit_certificate.txt
+  - .claude/science/physics-loops/mirror-chokepoint-boundary-fit-closure-20260711/
+open_imports: []
+no_go_routes:
+  - physical zero-gravity inference from the N=120 default sentinel
+  - asymptotic or mirror-family promotion from the four-point fit
+trace_gate: direct closure of the review finding that N=120 default zeros were misclassified as gravity
+review_disposition: pass
+pr_status: pending
+next_exact_action: commit the reviewed block, rebase onto current origin/main, push, and open the review PR
+stop_condition: passing certificate, fresh cache, pass review, and review PR or recovery backlog

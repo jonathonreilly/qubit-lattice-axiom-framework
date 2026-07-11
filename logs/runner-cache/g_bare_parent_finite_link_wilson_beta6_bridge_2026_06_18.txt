@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
-runner_sha256: 47dd415e5f668844683a61556536bb5f816243333bf2672cf597d76b2b2745c5
+runner_sha256: 92b2b7f48cec95f8e9e9b74983c6e0effd004e0e2d65c845689cfb5d28d34358
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 G_BARE finite-link/Wilson split-redundancy theorem check
@@ -89,13 +89,13 @@ SECTION E: link slot readback and slot COMPARISON (never assigned)
 SECTION G: source-boundary guards
 ------------------------------------------------------------------------------
 [PASS] bounded theorem note exists (docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
-[PASS] meta convention note exists (docs/G_BARE_SAME_SLOT_BETA6_CONVENTION_META_NOTE_2026-07-11.md)
+[PASS] meta convention note exists (docs/G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md)
 [PASS] parent note exists (docs/G_BARE_DERIVATION_NOTE.md)
 [PASS] finite-link rigidity note exists (docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
 [PASS] Wilson small-a note exists (docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
 [PASS] theorem contains marker: set only by the independent audit lane
 [PASS] theorem contains marker: non-load-bearing convention context
-[PASS] theorem contains marker: G_BARE_SAME_SLOT_BETA6_CONVENTION_META_NOTE_2026-07-11.md
+[PASS] theorem contains marker: G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md
 [PASS] theorem contains marker: This theorem locates the pin but does not choose it
 [PASS] bridge contains marker: mismatched-slot
 [PASS] bridge contains marker: does not claim:

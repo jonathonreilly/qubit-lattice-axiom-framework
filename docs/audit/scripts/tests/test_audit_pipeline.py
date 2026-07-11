@@ -3616,6 +3616,42 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertIsNotNone(reason)
         self.assertTrue(reason.startswith("no_go_discipline_packet_invalid:"))
 
+    def test_cross_confirmation_packet_invalid_under_current_policy_is_invalidated(self):
+        m = _import("invalidate_stale_audits")
+        first_audit = {
+            "verdict": "audited_clean",
+            "claim_type": "no_go",
+            "no_go_discipline": {"required": True, "status": "FAIL"},
+        }
+        row = {
+            "claim_id": "stale_cross_confirmation_packet",
+            "note_path": "docs/STALE_CROSS_CONFIRMATION_PACKET.md",
+            "audit_status": "audit_in_progress",
+            "claim_type": "no_go",
+            "cross_confirmation": {
+                "status": "awaiting_cross_confirmation",
+                "first_audit": first_audit,
+            },
+        }
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "evidence_manifest_from_snapshot",
+            return_value={},
+        ), mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value="prior authority is not accepted",
+        ):
+            reason = m.detect_invalidation(
+                row, {"stale_cross_confirmation_packet": row}
+            )
+        self.assertIsNotNone(reason)
+        self.assertTrue(
+            reason.startswith(
+                "cross_confirmation_first_audit_no_go_packet_invalid:"
+            )
+        )
+
 
 class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
     def setUp(self):

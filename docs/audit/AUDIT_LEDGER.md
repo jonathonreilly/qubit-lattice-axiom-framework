@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2843 |
+| unaudited | 2842 |
 | audit_in_progress | 11 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
@@ -32,6 +32,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
+| `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
@@ -46,16 +47,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 15 |
 | `audited_clean` | 434 |
 | `audited_conditional` | 39 |
-| `audited_decoration` | 22 |
+| `audited_decoration` | 23 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3193 |
+| `unaudited` | 3192 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2044 |
-| `decoration` | 25 |
+| `bounded_theorem` | 2043 |
+| `decoration` | 26 |
 | `meta` | 357 |
 | `no_go` | 462 |
 | `open_gate` | 195 |
@@ -623,6 +624,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | `minimal_axioms` |
 | `rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | `minimal_axioms` |
 | `rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.6 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
+| `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.6 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | `minimal_axioms` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -6302,6 +6304,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner directly evaluates the three layered DAG-derived configurations and reproduces the load-bearing 6/6 score surface, TOWARD forces, N-stability, Born linearity, forward-depth fraction, and state-family robustness. The small norm-row roundoff difference remains at machine precision and does not affect the bounded compatibility claim.
 - **rationale:** The source note is narrowly framed as a compatibility control, not a proof of truly directed DAG Hamiltonian transport. The current runner gives 6/6 on all three configurations, with TOWARD force, 14/14 N-stability, machine-clean norm/Born behavior, forward-depth fraction 0.1266, and 3/3 state families. Residual risk is limited to the symmetrized-adjacency scope boundary, which the note states explicitly.
 - **auditor confidence:** high
+
+### `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Given the retained two-dimensional Pauli Cl(3) carrier and a fixed ordering of finitely many tensor factors, the Jordan-Wigner operators satisfy the stated finite-mode CAR, nilpotency, generated-algebra, and number-operator identities; no physical-lattice or Grassmann-forcing identification was audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T140442Z-413aaba4-00003-staggered_dirac_substep1_jw_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For π(x)<π(y), the σ3 factor for site x in S_y anticommutes with the ladder at x, producing the minus sign that makes the Jordan-Wigner operators anticommute across sites.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional algebra is correct within the narrowed scope, but it does not close as an independent non-decoration theorem: it reduces to the single retained Cl(3) carrier claim plus standard Jordan-Wigner/Fock algebra.
+- **rationale:** The source proof correctly obtains the cross-site sign from the Jordan-Wigner σ3 string, and the runner genuinely constructs the tensor-product matrices and reports PASS=44 FAIL=0 rather than hard-coding a target value. J3 relies on the standard finite-mode Fock irreducibility theorem, while the physical U4 identification is explicitly outside scope. With zero external-comparator checks and only one retained parent supplying the Pauli carrier, the binding clean-versus-decoration rule classifies this exact algebraic corollary as audited_decoration.
+- **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`
 

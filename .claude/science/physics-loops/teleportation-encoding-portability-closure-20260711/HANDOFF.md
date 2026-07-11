@@ -25,4 +25,6 @@ proof dependencies.
 
 After review and landing, send `teleportation_encoding_portability_note` to
 the independent audit lane. Do not copy or author an audit verdict in this
-branch.
+branch. Review PR
+[#5157](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5157)
+is open and unmerged.

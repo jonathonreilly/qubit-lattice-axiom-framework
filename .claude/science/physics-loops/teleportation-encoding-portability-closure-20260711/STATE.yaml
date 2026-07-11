@@ -39,7 +39,8 @@ audit_compatibility_validation: >-
   PASS in a disposable worktree: the full 16-stage pipeline and strict lint
   returned no errors; the target seeded as bounded_theorem, unaudited, ready,
   with no open dependency path. Generated audit authority was discarded.
-pr_status: pending_delivery
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5157
 next_exact_action: >-
   Run independent audit on teleportation_encoding_portability_note after landing.
 stop_condition: >-

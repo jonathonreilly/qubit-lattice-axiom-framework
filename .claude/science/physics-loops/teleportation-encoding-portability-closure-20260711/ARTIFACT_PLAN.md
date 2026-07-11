@@ -8,6 +8,9 @@
 - An independent exhaustive coordinate/count check recorded in the handoff.
 - Disposable full audit-pipeline validation with strict lint and no errors;
   generated audit authority was not copied to the branch.
+- Review PR
+  [#5157](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5157)
+  is open and unmerged.
 
 ## Remaining
 

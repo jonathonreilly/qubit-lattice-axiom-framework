@@ -1720,6 +1720,16 @@ class AuditLintTest(unittest.TestCase):
         }
         self.assertEqual(m.owner_governed_count_errors(registry), [])
 
+        registry["owner_governed_premise_node_count"] = 0
+        self.assertEqual(
+            m.owner_governed_count_errors(registry),
+            [
+                "owner_governed_premise_nodes.json "
+                "owner_governed_premise_node_count must equal nodes"
+            ],
+        )
+
+        registry["owner_governed_premise_node_count"] = 1
         registry["owner_governed_residual_atom_count"] = 0
         self.assertEqual(
             m.owner_governed_count_errors(registry),

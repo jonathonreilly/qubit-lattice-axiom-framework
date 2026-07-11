@@ -179,7 +179,7 @@ The exact SymPy runner verifies:
 6. `det_R(I-P^k|_N)=3` for `k=1,2`;
 7. the finite average `2/9`;
 8. generator-reversal invariance;
-9. independence from `r` and `delta`; and
+9. absence of free parameters in the computed density; and
 10. source-scope and citation-edge guards.
 
 Expected result: `TOTAL: PASS=16, FAIL=0`.

@@ -155,11 +155,9 @@ def main() -> int:
         and determinant_k1 == determinant_k2,
     )
 
-    r = sp.symbols("r", real=True)
-    delta = sp.symbols("delta", real=True)
     check(
-        "the fixed-locus density is independent of charged-lepton r and delta",
-        sp.diff(density, r) == 0 and sp.diff(density, delta) == 0,
+        "the computed fixed-locus density has no free parameters",
+        density.free_symbols == set(),
     )
 
     section("Scope guard")
@@ -170,6 +168,8 @@ def main() -> int:
     note = note_path.read_text(encoding="utf-8")
     normalized_note = " ".join(note.split())
     stale_link_targets = (
+        "THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
+        "THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
         "FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md",
         "FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md",
         "HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md",
@@ -179,13 +179,13 @@ def main() -> int:
     check(
         "source note has no load-bearing links to the former seven-row supplier stack",
         all(f"]({target})" not in note for target in stale_link_targets),
-        kind="C",
+        kind="B",
     )
     check(
         "source note excludes physical R-eta and charged-lepton angle identification",
         "does not identify this number with a physical charged-lepton angle"
         in normalized_note,
-        kind="C",
+        kind="B",
     )
 
     print()

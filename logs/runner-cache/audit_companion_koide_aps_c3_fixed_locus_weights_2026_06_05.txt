@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py
-runner_sha256: 1cfcf0f247dd8618252fb74f86ef3fd5e1aa61337213a72297416a1ebfd9013b
+runner_sha256: e1cd0337737d1d88e481420ae5d5fdb0acff05423d7f971e95679c61ca237410
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -31,12 +31,12 @@ Part C: finite C3 inverse-determinant density
 ---------------------------------------------
   [PASS (A)] the group-averaged inverse normal determinant is 2/9  (L=(1/3)(1/3+1/3)=2/9)
   [PASS (A)] the density is real, positive, and invariant under reversing the C3 generator
-  [PASS (A)] the fixed-locus density is independent of charged-lepton r and delta
+  [PASS (A)] the computed fixed-locus density has no free parameters
 
 Scope guard
 -----------
-  [PASS (C)] source note has no load-bearing links to the former seven-row supplier stack
-  [PASS (C)] source note excludes physical R-eta and charged-lepton angle identification
+  [PASS (B)] source note has no load-bearing links to the former seven-row supplier stack
+  [PASS (B)] source note excludes physical R-eta and charged-lepton angle identification
 
 ========================================================================================
 TOTAL: PASS=16, FAIL=0

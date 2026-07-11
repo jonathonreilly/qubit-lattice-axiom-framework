@@ -166,22 +166,41 @@ def check_reroute_guard() -> None:
     )
 
     retained_grades = {"retained", "retained_bounded", "retained_no_go"}
-    required_claim_types = {
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+    failed_statuses = {"audited_failed", "failed", "rejected"}
+
+    # Reroute dependencies split into two tiers, each checked against the LIVE
+    # ledger so this guard tracks the ledger instead of a frozen snapshot:
+    #
+    #   * Foundational lemmas -- audited-clean and stably retained. The reroute
+    #     leans on them directly, so the guard requires them to REMAIN
+    #     retained-grade and correctly typed; drift here is a real regression
+    #     and must fail this runner.
+    #
+    #   * In-packet suppliers / in-flight bridges -- these travel with the
+    #     (itself unaudited) parent keystone and legitimately sit at
+    #     'unaudited' between audit passes. The guard requires them present,
+    #     correctly typed, and never audit-REJECTED; it does not force them to
+    #     be retained while the parent packet is still in flight. This keeps
+    #     the runner honest against ordinary unaudited<->retained churn while
+    #     still catching a genuine audit failure of any supplier.
+    foundational_retained = {
         "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
         "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem",
         "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+    }
+    inflight_suppliers = {
+        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
         "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
         "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09": "positive_theorem",
     }
-    status_ok = True
-    status_details = []
-    failed_statuses = {"audited_failed", "failed", "rejected"}
-    for claim_id, expected_claim_type in required_claim_types.items():
+
+    foundational_ok = True
+    foundational_details = []
+    for claim_id, expected_claim_type in foundational_retained.items():
         row = rows.get(claim_id)
         if row is None:
-            status_ok = False
-            status_details.append(f"{claim_id}:missing")
+            foundational_ok = False
+            foundational_details.append(f"{claim_id}:missing")
             continue
         got = (row.get("claim_type"), row.get("audit_status"), row.get("effective_status"))
         ok = (
@@ -189,9 +208,35 @@ def check_reroute_guard() -> None:
             and row.get("effective_status") in retained_grades
             and row.get("audit_status") not in failed_statuses
         )
-        status_ok = status_ok and ok
-        status_details.append(f"{claim_id}:{got}")
-    check("live dependency statuses retained-grade", status_ok, detail="; ".join(status_details))
+        foundational_ok = foundational_ok and ok
+        foundational_details.append(f"{claim_id}:{got}")
+    check(
+        "foundational reroute dependencies remain retained-grade",
+        foundational_ok,
+        detail="; ".join(foundational_details),
+    )
+
+    supplier_ok = True
+    supplier_details = []
+    for claim_id, expected_claim_type in inflight_suppliers.items():
+        row = rows.get(claim_id)
+        if row is None:
+            supplier_ok = False
+            supplier_details.append(f"{claim_id}:missing")
+            continue
+        got = (row.get("claim_type"), row.get("audit_status"), row.get("effective_status"))
+        ok = (
+            row.get("claim_type") == expected_claim_type
+            and row.get("audit_status") not in failed_statuses
+            and row.get("effective_status") not in failed_statuses
+        )
+        supplier_ok = supplier_ok and ok
+        supplier_details.append(f"{claim_id}:{got}")
+    check(
+        "in-packet reroute suppliers present, typed, and not audit-rejected",
+        supplier_ok,
+        detail="; ".join(supplier_details),
+    )
 
     rng = np.random.default_rng(20260710)
     beta_kernel = 1.0

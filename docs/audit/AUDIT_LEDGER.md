@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 83 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 356 |
+| **retained_bounded** | 357 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2809 |
-| audit_in_progress | 21 |
+| audit_in_progress | 20 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 15 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 25 |
-| `audited_clean` | 448 |
+| `audit_in_progress` | 24 |
+| `audited_clean` | 449 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 25 |
@@ -133,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
@@ -421,6 +420,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pl_topology_infrastructure_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -5233,6 +5233,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - **gate failures:**
     - N1 leaves the projected-cycle provenance, physical readout bridge, dynamical selector, and realized-state value routes open.
     - N5 confirms that the sole-axiom readout and value-selection resolutions were not tested.
+
+### `pmns_oriented_cycle_selection_structure_note`
+
+- **Note:** [`PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md`](../../docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Only the three displayed finite 3 x 3 matrix identities for C, I_3, P_23, A_fwd(c), and the prescribed map S(A)=P_23 A^dagger P_23; no physical carrier, observable law, graph-derived interpretation, or PMNS prediction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00056-pmns_oriented_cycle_selectio`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Direct multiplication gives C A_fwd(c) C^dagger = A_fwd(c_2,c_3,c_1) and S(A_fwd(c)) = A_fwd(conjugate(c_3),conjugate(c_2),conjugate(c_1)), from which the stated fixed loci follow.  _(class `A`)_
+- **chain closes:** True — The identities follow directly from the displayed matrix definitions: cyclic conjugation fixes exactly equal coefficient triples, I_3 has zero entries in the three forward-cycle slots, and the swap-conjugation fixed equation is equivalent to c_1=conjugate(c_3) with c_2 real.
+- **rationale:** The source has narrowed the claim to dependency-free finite matrix algebra and explicitly excludes every physical or graph-derived bridge previously responsible for conditional verdicts. The runner constructs the displayed matrices and performs genuine matrix operations rather than importing or printing contested values; its eleven firewall checks and eight algebraic checks all pass. Although the runner demonstrates the fixed families through representative checks rather than symbolically proving exhaustiveness, the componentwise map displayed by its definitions makes the exact fixed-locus conclusions immediate.
+- **auditor confidence:** high
 
 ### `pmns_tm2_residual_consequence_bounded_note_2026-05-26`
 

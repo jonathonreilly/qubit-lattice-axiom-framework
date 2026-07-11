@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_first_order_section_question_2026_07_11.py
+runner_sha256: 77d1bff0d01a179f735003ad1ac7f859874a93d6d4873912d41f87c2f5a30b3b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
 ========================================================================
 Koide first-order section question -- tie-at-weight vs label-at-outcome
 box: Z^3 torus, L = 4 (periodic sector; corner momenta exact)
@@ -12,7 +20,7 @@ box: Z^3 torus, L = 4 (periodic sector; corner momenta exact)
 --- B. untied holomorphic section vs K-real tied section
 [PASS] (05) UNTIED section (b, c independent): the doublet weight lam_omega*lam_omegabar is a HOLOMORPHIC polynomial in (a,b,c) -- no conjugate appears, d/dbbar = 0 identically; the doublet is ONE complex slot per K-orbit (count-once)
 [PASS] (06) K-REAL TIED section c = conj(b): the first-power weight becomes NON-holomorphic -- Wirtinger d^2 det3/db dbbar = -3a (Laplacian -12a), the doublet weight depends on |b|^2 -- count-twice enters EXACTLY and ONLY through the tie (PR #3551 localization, reproven)
-[PASS] (07) fork-cell landing (note 6 + rho-map, reproven): untied/holomorphic one-slot -> r = 1/2, Q = 2/3; tied/two-slot -> r = 1, Q = 1.  This is exactly PR #3551's localization: count-twice iff the tie
+[PASS] (07) fork-cell landing (note 6 + equipartition-granularity laws, reproven; withdrawn rho-map NOT used): untied/holomorphic = per-outcome-cell law -> r = 1/2, Q = 2/3; tied = per-real-mode law -> r = 1, Q = 1.  This is exactly PR #3551's localization: count-twice iff the tie
 RESIDUAL (declared-open): the coupling on the hw=1 triplet is the C_3[111] rotation-channel circulant W = a*I + b*C + c*C^2, a DECLARED probe coupling (PR #3551), not a derived Yukawa; the channel-space companion 2026-06-11 shows the holomorphy/tie split is channel-independent across the full M_4+M_2+M_2 equivariant space.
 
 --- C. reflection positivity: does it touch the first-order measure?
@@ -33,3 +41,6 @@ RESIDUAL (declared-open): inherited gate-note residuals remain at their declared
 
 TOTAL: PASS=16 FAIL=0
 VERDICT: UNDECIDED WITH EXACT RESIDUAL.  On the first-order surface the one-component staggered measure is holomorphic in the untied couplings (count-once) and the count-twice |b|^2 structure enters exactly on the K-real tied section c=conj(b) (PR #3551, reproven). The landed r=1 wall (|det M|^2) and RP second-order wall both act on the Hermitian/second-order TRANSFER family; on the corner sector every spatial reflection is the identity, so RP's positivity content is the same antiunitary K that IS the binary. The landed surface fixes the measure's holomorphy and each cell's arithmetic but is SILENT on whether K-reality ties the weight (r=1) or labels the outcomes (r=1/2).  The binary is exactly the weight-vs-outcome stage of K-reality -- read on the antiunitary-tied section (Hermitian corner Dirac, |det M|^2) or as the unrestricted holomorphic measure with K-orbit outcome grouping -- = the custody note's admitted K-reality selector.  No premise adopted; no audit status.
+
+----- stderr -----
+

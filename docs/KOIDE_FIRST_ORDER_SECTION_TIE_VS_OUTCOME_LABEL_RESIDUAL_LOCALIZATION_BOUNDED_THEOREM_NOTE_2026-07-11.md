@@ -75,9 +75,12 @@ not produce `|det|²`.
   **non-holomorphic** — Wirtinger `∂²det3/∂b∂b̄ = −3a` (Laplacian `−12a`),
   the doublet weight depends on `|b|²`; count-twice enters **exactly and
   only** through the tie (check 6, PR #3551 localization reproven).
-- **Fork-cell landing** (note 6 + the landed ρ-map arithmetic, reproven):
-  untied/holomorphic one-slot → `r = 1/2`, `Q = 2/3`; tied/two-slot →
-  `r = 1`, `Q = 1` (check 7). This is exactly PR #3551's localization:
+- **Fork-cell landing** (note 6 + the two realized-state equipartition
+  laws, reproven; the ρ-map / Z-ratio arithmetic withdrawn by the
+  2026-07-11 repairs is **not** used): the untied holomorphic section is
+  the per-outcome-cell law `E_s = E_d` → `r = 1/2`, `Q = 2/3`; the tied
+  section is the per-real-mode law `E_s = ε, E_d = 2ε` → `r = 1`, `Q = 1`
+  (check 7, exact solves). This is exactly PR #3551's localization:
   count-twice **iff** the tie.
 
 ### C. Reflection positivity does not touch the first-order measure
@@ -239,8 +242,10 @@ exhibited as lawful cells.
 - **Reproven here (runner):** the Grassmann/Berezin first-power identity by
   explicit exterior-algebra expansion; the hw=1 triplet circulant and its
   singlet/doublet factorization; the untied holomorphy (`∂/∂b̄ = 0`) and
-  the tied Wirtinger `−3a` localization; the fork-cell arithmetic and the
-  ρ-map cross-check; the `W_h` non-self-adjointness and the `|det M|²`
+  the tied Wirtinger `−3a` localization; the fork-cell arithmetic
+  re-derived from the two equipartition-granularity laws (the withdrawn
+  ρ-map is not used; see the 2026-07-11 repair companions); the `W_h`
+  non-self-adjointness and the `|det M|²`
   second-order object at a complex point; the first-power measure `det(D+A)`;
   the corner-reflection triviality on all 8 modes; the two discriminators;
   both lawful cells with the shared real spectrum; the theta-structure

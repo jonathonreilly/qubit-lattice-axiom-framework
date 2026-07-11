@@ -2,7 +2,7 @@
 """Koide first-order section question -- tie-at-weight vs label-at-outcome.
 
 Companion runner for
-    docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_bounded_residual_NOTE_2026-07-11.md
+    docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md
 
 The staggered first-order block (PR #3551,
 KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_..._2026-06-11) proved:
@@ -304,28 +304,31 @@ check(6, "K-REAL TIED section c = conj(b): the first-power weight becomes "
          "count-twice enters EXACTLY and ONLY through the tie (PR #3551 "
          "localization, reproven)", ok)
 
-# fork-cell landing (PR #3551 / note 6): slot count -> (r, Q)
-def r_from_slots(slot_count):
-    return sp.Rational(slot_count, 2)
-
-
+# fork-cell landing (PR #3551 / note 6): section -> granularity -> (r, Q).
+# The r-endpoints are re-derived from the two realized-state equipartition
+# laws (the corrected attribution of the 2026-07-11 repairs; the WITHDRAWN
+# rho-map / Z-ratio arithmetic is NOT used anywhere in this runner):
+#   untied holomorphic section = one complex slot per K-orbit = per-OUTCOME-
+#     CELL law  E_s = E_d  (3a^2 = 6|b|^2)   =>  r = 1/2, Q = 2/3
+#   K-real tied section = doublet weight a function of |b|^2 over two real
+#     parameters = per-REAL-MODE law  E_s = eps, E_d = 2 eps  =>  r = 1, Q = 1
 def q_from_r(r):
     return (1 + 2 * r) / 3
 
 
-r_label = r_from_slots(1)        # holomorphic: 1 complex slot per K-orbit
-r_tie = r_from_slots(2)          # tied: 2 real slots (|b|^2)
-# independent cross-check via the landed rho-map arithmetic
-g_sym = sp.Symbol("g", positive=True)
-rho_sector = (sp.pi / g_sym) / (2 * sp.pi / g_sym)      # count-twice
-rho_orbit = (sp.pi / g_sym) / (sp.pi / g_sym)           # count-once
-ok = (q_from_r(r_label) == sp.Rational(2, 3) and r_label == sp.Rational(1, 2)
-      and q_from_r(r_tie) == 1 and r_tie == 1
-      and sp.simplify(1 / (2 * rho_sector) - 1) == 0
-      and sp.simplify(1 / (2 * rho_orbit) - sp.Rational(1, 2)) == 0)
-check(7, "fork-cell landing (note 6 + rho-map, reproven): untied/"
-         "holomorphic one-slot -> r = 1/2, Q = 2/3; tied/two-slot -> "
-         "r = 1, Q = 1.  This is exactly PR #3551's localization: "
+a_eq, b2_eq, eps_eq = sp.symbols("a_eq b2_eq eps_eq", positive=True)
+sol_cell = sp.solve([sp.Eq(3 * a_eq**2, eps_eq), sp.Eq(6 * b2_eq, eps_eq)],
+                    [b2_eq, eps_eq], dict=True)[0]
+r_label = sp.simplify(sol_cell[b2_eq] / a_eq**2)   # per-outcome-cell law
+sol_mode = sp.solve([sp.Eq(3 * a_eq**2, eps_eq), sp.Eq(6 * b2_eq, 2 * eps_eq)],
+                    [b2_eq, eps_eq], dict=True)[0]
+r_tie = sp.simplify(sol_mode[b2_eq] / a_eq**2)     # per-real-mode law
+ok = (r_label == sp.Rational(1, 2) and q_from_r(r_label) == sp.Rational(2, 3)
+      and r_tie == 1 and q_from_r(r_tie) == 1)
+check(7, "fork-cell landing (note 6 + equipartition-granularity laws, "
+         "reproven; withdrawn rho-map NOT used): untied/holomorphic = "
+         "per-outcome-cell law -> r = 1/2, Q = 2/3; tied = per-real-mode "
+         "law -> r = 1, Q = 1.  This is exactly PR #3551's localization: "
          "count-twice iff the tie", ok)
 residual("the coupling on the hw=1 triplet is the C_3[111] rotation-"
          "channel circulant W = a*I + b*C + c*C^2, a DECLARED probe "

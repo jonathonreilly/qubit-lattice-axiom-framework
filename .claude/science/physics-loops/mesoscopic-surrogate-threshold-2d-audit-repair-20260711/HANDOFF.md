@@ -24,8 +24,15 @@ bounded scope and the same two stability gates.
 - minimum carry: `1.0000000`
 - runner summary: `PASS=5 FAIL=0`
 
+## Delivery
+
+- commit: `e744af7e0`
+- draft review PR:
+  [#5183](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5183)
+- review-loop disposition: `pass`
+
 ## Exact next action
 
-Commit and open the review PR. After landing, independently re-audit this same
+Obtain review and land the source packet, then independently re-audit this same
 bounded claim. Do not weave this author-side block into repo-wide authority
 surfaces before independent audit.

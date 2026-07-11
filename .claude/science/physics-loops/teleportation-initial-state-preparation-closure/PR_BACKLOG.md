@@ -1,4 +1,5 @@
 # PR Backlog
 
-PR delivery is pending focused verification and review-loop disposition for
-science block 01.
+No backlog. Science block 01 is available as draft PR #5174:
+
+`https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5174`

@@ -21,7 +21,7 @@ open_imports:
   - preparation-time scaling proof
 no_go_routes: []
 review_disposition: pass
-pr_status: pending
+pr_status: "draft PR #5174 open and mergeable"
 lock_mode: branch-local isolated worktree
 lock_note: "scripts/automation_lock.py failed with permission denied at /Users/jonreilly"
 next_exact_action: send the changed open-gate row to the independent audit lane

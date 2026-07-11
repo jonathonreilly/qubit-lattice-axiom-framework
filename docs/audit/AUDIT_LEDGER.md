@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2842 |
+| unaudited | 2841 |
 | audit_in_progress | 10 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 39 |
+| ~~audited_conditional~~ | 40 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 435 |
-| `audited_conditional` | 39 |
+| `audited_conditional` | 40 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3192 |
+| `unaudited` | 3191 |
 
 | claim_type | count |
 |---|---:|
@@ -581,6 +581,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `graded_constraint_interface_consistency_bounded_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
@@ -3605,6 +3606,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The finite-model computation directly evaluates the claimed observable and fit comparison under the stated parameters; the conclusion is only the bounded numerical boundary-preference statement and coefficient shift.
 - **rationale:** The audited claim is tightly bounded to the finite-lattice runner's fixed model, observable, regions, and fit criterion. The provided runner output matches the note's numerical values, including global entropy fits, rank fits, per-side boundary preference, and the gravity/free coefficient ratio. No stronger holographic, continuum, Bekenstein-Hawking, AdS/CFT, or quantum-gravity conclusion is needed for the scoped statement.
 - **auditor confidence:** high
+
+### `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`
+
+- **Note:** [`HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](../../docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional arithmetic only: given the retained 6+2 traceless ratio and supplied P1-P4 readout, electroweak, isospin, and charge conventions, α = 1/3 and Y(L_L) = -1 follow; no derivation or physical normalization of P1-P4 is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T140442Z-413aaba4-00005-hypercharge_alpha_third_norm`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting P1-P4 into the retained ratio gives -1 = -1/2 + (-3α)/2, hence α = 1/3.  _(class `A`)_
+- **chain closes:** False — The exact rational arithmetic closes, but the scientific chain does not close from retained or accepted-premise inputs because P1-P4 are explicitly supplied, non-registry premises. In particular, the Anti²-to-L_L readout and physical electroweak charge conventions remain unproved.
+- **rationale:** The runner genuinely computes the 6+2 traceless ratio and exact Fraction solution rather than merely printing the result. Nevertheless, α = 1/3 follows only after importing P1-P4, which the note explicitly says are neither derived nor registry-accepted. The registry also classifies absolute hypercharge normalization as a vacuous Y↔g′ rescaling convention, so this packet does not establish an independently selected physical U(1) normalization.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1: the p1_readout, p2_gmn, p3_isospin, and p4_charge routes remain OPEN because the restricted packet supplies those inputs without deriving or accepting them.
 
 ### `i3_zero_exact_theorem_note`
 

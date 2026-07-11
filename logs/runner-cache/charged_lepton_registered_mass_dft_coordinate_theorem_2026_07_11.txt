@@ -1,0 +1,53 @@
+Registered positive-mass C3 Fourier coordinate theorem
+====================================================================
+
+Part A: inverse C3 Fourier transform
+------------------------------------
+  [PASS] omega has exact order three
+  [PASS] inverse transform reconstructs z0
+  [PASS] inverse transform reconstructs z1
+  [PASS] inverse transform reconstructs z2
+  [PASS] Fourier mean is positive on a positive triple
+  [PASS] generating cycle sends c to omega c
+  [PASS] generating reflection sends c to conjugate(c)
+
+Part B: symmetric r coordinate
+------------------------------
+  [PASS] variance identity is 6|c|^2
+  [PASS] Fourier and symmetric formulas for r agree
+  [PASS] r is common-scale invariant
+  [PASS] r is invariant under a generating transposition
+  [PASS] r is invariant under a generating cycle
+
+Part C: Koide identity
+----------------------
+  [PASS] Parseval identity
+  [PASS] Q equals 1/3+2r/3
+  [PASS] r=1/2 implies Q=2/3
+  [PASS] Q=2/3 has r=1/2
+  [PASS] Koide equivalence does not fix phase
+
+Part D: folded phase and unordered reconstruction
+-------------------------------------------------
+  [PASS] a is invariant under every permutation
+  [PASS] r is invariant under every permutation
+  [PASS] folded phase is invariant under every permutation
+  [PASS] inverse cosine formula reconstructs ordered roots
+  [PASS] folded phase reconstructs the unordered roots
+  [PASS] folded phase lies in [0,pi/3]
+  [PASS] fold boundary is permutation invariant
+  [PASS] both fold-boundary representatives give pi/3
+  [PASS] r is invariant under common positive mass scaling
+  [PASS] degenerate triple has c=0 and r=0
+  [PASS] c=0 reconstruction is phase independent
+
+Scope guards
+------------
+  [PASS] source requires an independently defined mass functional
+  [PASS] source says primitive is not a mathematical premise
+  [PASS] source does not retire owner atoms
+  [PASS] source does not force r
+  [PASS] source excludes observed comparators
+
+====================================================================
+TOTAL: PASS=33, FAIL=0

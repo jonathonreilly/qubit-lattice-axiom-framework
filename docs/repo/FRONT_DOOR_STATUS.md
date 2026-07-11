@@ -29,17 +29,17 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3748 |
-| Applied audit verdicts | 559 |
-| Retained-grade rows, including boxed decorations | 480 |
-| Retained positive theorems | 82 |
+| Applied audit verdicts | 567 |
+| Retained-grade rows, including boxed decorations | 485 |
+| Retained positive theorems | 83 |
 | Retained no-go rows | 27 |
-| Retained bounded rows | 353 |
+| Retained bounded rows | 357 |
 | Boxed decorations under retained parents | 18 |
 | Open gates | 4 |
-| Unaudited rows | 2812 |
+| Unaudited rows | 2806 |
 | Retained-pending-chain rows | 9 |
-| Audited conditional rows | 47 |
-| Audited renaming rows | 14 |
+| Audited conditional rows | 49 |
+| Audited renaming rows | 15 |
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 10 |
 
@@ -50,10 +50,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2889 |
-| Ready rows | 596 |
+| Total pending rows | 2883 |
+| Ready rows | 595 |
 | Cycle-break targets | 49 |
-| Critical pending | 665 |
+| Critical pending | 659 |
 | High pending | 332 |
 | Medium pending | 760 |
 | Leaf pending | 1132 |
@@ -74,16 +74,17 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **557**.
+- Non-retained-grade cited rows in publication tables: **554**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 240 |
+| critical | `unaudited` | 238 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 124 |
-| critical | `audited_conditional` | 6 |
-| critical | `audit_in_progress` | 5 |
+| critical | `audited_conditional` | 7 |
+| critical | `audit_in_progress` | 2 |
 | critical | `audited_numerical_match` | 2 |
+| critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |
 | high | `audited_failed` | 1 |
 | high | `audited_numerical_match` | 1 |

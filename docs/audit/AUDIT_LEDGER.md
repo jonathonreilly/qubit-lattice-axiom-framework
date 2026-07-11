@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 356 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2811 |
+| unaudited | 2810 |
 | audit_in_progress | 20 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
-| ~~audited_renaming~~ | 14 |
+| ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 47 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -50,8 +50,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 23 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
-| `audited_renaming` | 14 |
-| `unaudited` | 3161 |
+| `audited_renaming` | 15 |
+| `unaudited` | 3160 |
 
 | claim_type | count |
 |---|---:|
@@ -694,6 +694,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
+| `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `post_record_production_dynamics_needed_row_map_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -5214,6 +5215,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The restricted packet includes the primary runner source and completed output, and the code performs nontrivial symbolic series construction, ODE residual testing, ODE evolution, and direct Weyl quadrature rather than merely printing PASS. An independent Weyl constant-term coefficient check verified the listed Taylor coefficients, recurrence, indicial roots, and residual through degree 21, and an independent Gauss-Legendre Weyl quadrature matched the ODE Frobenius-branch values at the five sample points.
 - **rationale:** The claim is explicitly narrowed to a finite certificate, and the supplied runner output supports exactly that bounded scope. There are no cited upstream authorities or open dependency paths in the packet, and the all-order Picard-Fuchs and Frobenius-branch assertions are excluded from scope. The beta=6 decimal is hard-coded as a displayed-value tolerance check in the runner, but it is also recomputed by direct Weyl integration and independently reproduced, so the bounded result does not reduce to an external numerical match.
 - **auditor confidence:** high
+
+### `pmns_oriented_cycle_channel_value_law_note`
+
+- **Note:** [`PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md`](../../docs/PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For a supplied canonical 3x3 active block A, the runner verifies the projected-cycle basis identities and the coordinate extraction diag(A C^dagger); it does not derive a physical observable/readout map or select A or its coefficients from the framework premises.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00054-pmns_oriented_cycle_channel_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The coefficient extraction c = diag(A C^dagger) is asserted to equip the oriented-cycle channel with an exact native observable/value law.  _(class `F`)_
+- **chain closes:** False — The matrix-coordinate identity closes, but calling those coordinates an axiom-native observable/value law requires a missing physical readout bridge. The packet also supplies no law selecting the active block or coefficient values.
+- **rationale:** The runner genuinely checks ten finite-dimensional algebraic identities, including the projected cycle, edge basis, coefficient extraction, reconstruction, and response-profile round trip. Those checks establish coordinate bookkeeping for an already supplied active block, while the load-bearing observable identification is introduced by terminology rather than derived from Record or another retained readout authority. The hard-coded active-block fixture is legitimate for checking the identity but cannot establish physical value selection.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 leaves the projected-cycle provenance, physical readout bridge, dynamical selector, and realized-state value routes open.
+    - N5 confirms that the sole-axiom readout and value-selection resolutions were not tested.
 
 ### `pmns_tm2_residual_consequence_bounded_note_2026-05-26`
 

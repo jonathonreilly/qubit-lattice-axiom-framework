@@ -6,8 +6,8 @@ Something must convert lattice-natural units (powers of the spacing a) to physic
 prediction can be compared to experiment. The framework supplies exactly one such converter -- the
 SCALE_REFERENCE_PRIMITIVE (a^-1 = M_Pl), an owner-approved framework primitive registered in
 axiom_premise_nodes.json. Per AXIOM_MINIMALITY_POLICY section 6, approved primitives chain-satisfy
-dependencies WITHOUT bounding downstream status (unlike a Tier-A admission, which caps at
-retained_bounded). So a row whose only non-retained dependency is this ruler is retention-eligible at
+dependencies WITHOUT bounding downstream status. Other inputs remain conditional/open until
+independently derived. So a row whose only non-retained dependency is this ruler is retention-eligible at
 the full tier.
 
 This reconciles the session's emergent-spacetime/gravity arc (the EMERGENT_METRIC, gravity-lensing,
@@ -16,7 +16,7 @@ that no-go is about the RECORDS (they supply the tick/edge COUNT, not the physic
 accepted ruler supplies the unit. So those dimensionful results are scale-resolved, not blocked.
 
 It also separates the genuinely-different objects: the Y_T source-measure / g_bare action-unit notes
-concern a DIMENSIONLESS path-integral normalization (a separate Tier-A question), NOT the dimensionful
+concern a DIMENSIONLESS path-integral normalization (a separate open question), NOT the dimensionful
 ruler; and the dimensionful-value lanes (e.g. the atomic Rydberg eV scale) need the ruler PLUS
 dimensionless ratios (m_e/M_Pl, alpha) -- the residual there is dimensionless, not the ruler.
 
@@ -64,13 +64,12 @@ check("every dimensionful output = (dimensionless data) x (the single ruler a^-1
 
 print()
 print("=" * 78)
-print("A3. the ruler is an APPROVED, NON-BOUNDING primitive (policy section 6) -- not a Tier-A admitted premise")
+print("A3. the ruler is an APPROVED, NON-BOUNDING primitive (policy section 6)")
 print("=" * 78)
 # approved framework primitive: chain-satisfies WITHOUT bounding downstream status.
-# Tier-A admitted import: chain-satisfies ONLY at retained_bounded (caps the tier).
 approved_primitive_bounds = False                  # scale_reference_primitive does NOT bound
-tier_a_import_bounds = True                         # a Tier-A admission DOES cap at retained_bounded
-non_bounding = (approved_primitive_bounds is False) and (tier_a_import_bounds is True)
+other_inputs_chain_satisfy = False                 # non-foundational inputs remain open/conditional
+non_bounding = (approved_primitive_bounds is False) and (other_inputs_chain_satisfy is False)
 print("   scale_reference_primitive (axiom_premise_nodes.json, owner-approved): chain-satisfies WITHOUT bounding")
 print("   Admission classes are retired: non-foundational inputs do not chain-satisfy")
 check("a row whose only non-retained dependency is the ruler is retention-eligible at the FULL tier",
@@ -88,7 +87,7 @@ print("   absolute scale 'the clock-rate no-go': that no-go is about the RECORDS
 print("   the accepted ruler supplies the unit => those dimensionful results are SCALE-RESOLVED, not blocked")
 print("   (retention-eligible modulo their DIMENSIONLESS inputs).")
 print("   distinct objects (NOT this ruler): Y_T source-measure / g_bare action-unit = a dimensionless")
-print("   path-integral normalization (separate Tier-A); atomic Rydberg eV scale = ruler x (m_e, alpha)")
+print("   path-integral normalization (separate open dependency); atomic Rydberg eV scale = ruler x (m_e, alpha)")
 print("   dimensionless ratios -- the residual there is dimensionless, not the ruler.")
 check("dimensionful results are scale-resolved by the accepted non-bounding ruler; the real gaps are dimensionless",
       dimensionful_scale_resolved, "someone must convert lattice->physical units; that converter is the accepted ruler")

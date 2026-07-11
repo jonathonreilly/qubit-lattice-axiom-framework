@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/admitted_input_registry_tier_a_boundary_check.py
-runner_sha256: 6e0f3beba82dd0b1b40ffcfc22c775e06dfeff4c7b4da74945620d9711f2b70b
+runner_sha256: 350a82a594135e721d3b25fa8d95564adda2a191694bb7e5765cbe332234270d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 [PASS] admission registry is absent
@@ -12,7 +12,7 @@ status: ok
 [PASS] historical admission ids are empty
 [PASS] historical derivation-target map is empty
 [PASS] retired governance registry is absent
-[PASS] exact AC obligations are live
+[PASS] exact AC and theta obligations are live
 [PASS] foundation contains axiom plus three approved primitives
 [PASS] accepted ids equal foundation ids
 [PASS] open obligations are not supplied premises

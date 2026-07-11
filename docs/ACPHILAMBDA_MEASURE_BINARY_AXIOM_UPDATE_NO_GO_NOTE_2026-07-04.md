@@ -41,7 +41,7 @@ that survivor. They do not.
 - [`FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md`](FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md)
   is the retained-bounded carrier-measure boundary theorem: Record supplies
   finite additive readout coordinates, but not the missing weight selector.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   is the human Tier-A registry naming the live doublet reading/occupancy
   binary.
 
@@ -189,3 +189,11 @@ PYTHONPATH=scripts python3 scripts/acphilambda_measure_binary_axiom_update_no_go
 ```
 
 Expected close: `FAIL=0` with at least 120 checks.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)

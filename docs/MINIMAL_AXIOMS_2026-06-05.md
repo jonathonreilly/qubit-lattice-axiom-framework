@@ -78,11 +78,11 @@ entry in `docs/audit/data/axiom_premise_nodes.json`. Dependencies on
 checks only elementary algebra/notation sanity for the three axiom names. It
 does not derive or enlarge the axiom set.
 
-Axioms and approved primitives are not Tier-A admitted derivation targets.
+Axioms and approved primitives are the complete supplied foundation.
 Depending on the Lattice, Quantum, or Record axiom, or on an explicitly
 approved primitive such as `scale_reference_primitive`, must not be treated as
-a source of bounded status. Bounded status belongs to non-axiom Tier-A
-admissions recorded in `docs/audit/data/premise_decision_history.json`.
+a source of bounded status. Every other scientific dependency must be retained-
+derived or remain conditional/open; decision history supplies no premise.
 
 ## Relation To The Older Observable-Principle Parent
 
@@ -98,13 +98,13 @@ Born weights, record-production dynamics, physical persistence dynamics, or
 any other additional bridge must cite separate retained authorities or remain
 bounded/pending according to the audit ledger.
 
-## Open Gates And Admissions Outside The Axioms
+## Open Gates Outside The Axioms
 
 The three axioms do not close, import, or rename the framework's downstream
 open gates. In particular, the following remain outside axiom content:
 
 - the staggered-Dirac/finite-Grassmann realization and `AC_phi_lambda`;
-- the strong-CP theta admission;
+- the strong-CP theta derivation obligations;
 - P2/modulus/phase-blindness and any log-det readout theorem;
 - arrow, measurement, decoherence, record-production dynamics, and physical
   persistence dynamics;

@@ -392,7 +392,7 @@ audit process only; it carries no premise or interpretive weight.)
 When a claim's law domain (a supplied condition) is audited:
 
 - **Certificate demand.** Ask for the condition's certificate: its
-  derivation, bridge, explicit admission, or approved primitive registration.
+  retained derivation, bridge, or approved primitive registration.
   A condition with no certificate does not enter as load-bearing content.
 - **Covariance transport.** Transport the condition under lattice motions and
   check the selected state sets move covariantly; a condition whose selected

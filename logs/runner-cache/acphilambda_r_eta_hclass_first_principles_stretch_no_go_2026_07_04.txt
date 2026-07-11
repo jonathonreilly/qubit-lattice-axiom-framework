@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py
-runner_sha256: 256a356da6edf328f510d64bc4c46cb8efced170b44719c6ee6f9644a55038b5
+runner_sha256: 3e55912bae99adb29e75ecaabba4252e6cc47f14f371afe9843ba4eb8d53be37
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.59
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta h-class first-principles stretch no-go verifier

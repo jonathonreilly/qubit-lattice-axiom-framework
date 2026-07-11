@@ -39,7 +39,7 @@ restriction or suppression. It does not.
 - [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
   withholds source/action, weighting, dynamics, context-selection, and
   arbitrary physical-observable identification.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   keeps theta in Tier-A, with a gauge-side winding residual and a mass-side
   determinant residual.
 - [`THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`](THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md)
@@ -143,3 +143,11 @@ PYTHONPATH=scripts python3 scripts/theta_g1_defect_closure_current_surface_no_go
 ```
 
 Expected close: `FAIL=0` with at least 105 checks.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md)

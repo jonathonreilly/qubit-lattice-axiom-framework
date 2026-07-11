@@ -42,10 +42,11 @@ derivation_targets = {}
   governance decision attempted to retire its remaining atoms without making
   them axioms or primitives. That premise channel was withdrawn on 2026-07-11.
 
-The two unresolved AC atoms are now exact, non-premise open work:
+The unresolved historical atoms are now exact, non-premise open work:
 
 - [AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)
 - [AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)
+- [THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md)
 
 They are indexed in
 [`docs/audit/data/derivation_obligations.json`](audit/data/derivation_obligations.json)

@@ -60,6 +60,7 @@ LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 GRAPH_PATH = DATA_DIR / "citation_graph.json"
 AUDIT_DISPATCH_QUEUE_PATH = DATA_DIR / "audit_dispatch_queue.json"
 RETIRED_ADMISSIONS_PATH = DATA_DIR / "tier_a_admissions.json"
+RETIRED_OWNER_GOVERNANCE_PATH = DATA_DIR / "owner_governed_premise_nodes.json"
 DERIVATION_OBLIGATIONS_PATH = DATA_DIR / "derivation_obligations.json"
 
 ALLOWED_AUDIT_STATUSES = {
@@ -548,6 +549,11 @@ def main() -> int:
             "tier_a_admissions.json must not exist; the only supplied premise "
             "registry is axiom_premise_nodes.json"
         )
+    if RETIRED_OWNER_GOVERNANCE_PATH.exists():
+        errors.append(
+            "owner_governed_premise_nodes.json must not exist; the only "
+            "supplied premise registry is axiom_premise_nodes.json"
+        )
 
     if DERIVATION_OBLIGATIONS_PATH.exists():
         try:
@@ -581,6 +587,16 @@ def main() -> int:
                 errors.append(
                     f"derivation obligation {dep_id!r} current_path missing on disk: "
                     f"{source_path}"
+                )
+
+    for cid, row in rows.items():
+        if row.get("claim_type") == "meta":
+            continue
+        for dep_id in row.get("deps") or []:
+            if premise_nodes.is_non_evidence_context_dep(dep_id):
+                errors.append(
+                    f"{cid}: scientific row depends on non-evidence context "
+                    f"{dep_id!r}; cite the actual derivation/obligation instead"
                 )
 
     # Front-door axiom-pointer currency. The ledger side of an axiom change

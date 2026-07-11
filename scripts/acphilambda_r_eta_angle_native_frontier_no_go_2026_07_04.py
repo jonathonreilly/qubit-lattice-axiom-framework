@@ -13,7 +13,7 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md"
-TIER_A = DOCS / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 RADIAN = DOCS / "KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md"
 FIXED = DOCS / "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
@@ -66,7 +66,7 @@ def main() -> int:
     print("AC_phi_lambda R-eta angle-native frontier no-go verifier")
 
     note = read(NOTE)
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     radian = read(RADIAN)
     fixed = read(FIXED)
     brannen = read(BRANNEN)
@@ -74,7 +74,7 @@ def main() -> int:
     registry_note = read(REGISTRY_NOTE)
 
     section("A. source and registry boundaries")
-    for path in [NOTE, TIER_A, LEDGER, RADIAN, FIXED, BRANNEN, RECORD, REGISTRY_NOTE]:
+    for path in [NOTE, DECISION_HISTORY, LEDGER, RADIAN, FIXED, BRANNEN, RECORD, REGISTRY_NOTE]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
@@ -102,7 +102,7 @@ def main() -> int:
         "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
     ]:
         row = ledger_row_by_path(source_path)
-        check(f"{Path(source_path).name} remains ledgered", row.get("effective_status") != "missing", row.get("effective_status"))
+        check(f"{Path(source_path).name} is retained-grade", row.get("effective_status") in {"retained", "retained_bounded", "retained_no_go"}, row.get("effective_status"))
 
     section("B. exact target arithmetic and off-locus status")
     L = sp.Rational(2, 9)
@@ -219,7 +219,7 @@ def main() -> int:
         "BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
         "RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
         "KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
-        "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
+        "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
     }
     check("markdown link inventory is controlled", links == expected_links, sorted(links))
     check("note line count is bounded", 150 <= len(note.splitlines()) <= 230, len(note.splitlines()))

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_k_even_registration_correction_registered_pattern_2026_07_02.py
-runner_sha256: d779556637ba7745275c82cee7f775def794644a51b427acd789a21b8dd67c68
+runner_sha256: 48f233b0f416b354f2fcf47913a34a7d8638ee3fa6ffd4c219a5a79743d7ca5b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.88
+elapsed_sec: 1.05
 status: ok
 ----- stdout -----
 

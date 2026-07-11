@@ -142,7 +142,7 @@ within-sector data, occupancy rules, P2/modulus, log-det readouts,
 source/action bridges, scale, local observability, law-admissibility or
 transition relations, kinetic-branch selection, or arbitrary observable
 identification remain compatible downstream targets, but require derivation,
-bridge, explicit admission, or approved primitive registration before use as
+bridge, or approved primitive registration before use as
 load-bearing content. Do not
 land new science under bare letter-number names such as `A1`, `A2`, `G1`,
 or `R3`; those labels are overloaded with axioms, assumptions, Lie
@@ -150,7 +150,7 @@ types, lane stages, route codes, and branch blocks. Use the explicit
 scientific name on live science surfaces; archival aliases belong
 only in clearly historical work-history/archive material. Review-loop must
 not treat the framework baseline as a
-new axiom, new admitted premise, regulator interpretation, or optional
+new axiom, new supplied premise, regulator interpretation, or optional
 theory language. Correcting a PR back to this repo language is allowed. This
 does not promote downstream science by itself: physical-species
 identifications, `C_3`-breaking selectors, kinetic-branch selectors,

@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "SCALE_REFERENCE_PRIMITIVE_NOTE.md"
 POLICY = ROOT / "docs" / "audit" / "AXIOM_MINIMALITY_POLICY.md"
 REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 PURITY_GUARD = ROOT / "docs" / "audit" / "scripts" / "check_axiom_premise_clean.py"
 RUNNER = "scripts/scale_reference_primitive_boundary_check.py"
 CLAIM_ID = "scale_reference_primitive"
@@ -66,7 +66,7 @@ def main() -> int:
     note = read(NOTE)
     policy = read(POLICY)
     registry = load_json(REGISTRY)
-    tier_a = load_json(TIER_A)
+    tier_a = load_json(DECISION_HISTORY)
     registry_node = (registry.get("nodes") or {}).get(CLAIM_ID, {})
     derivation_targets = tier_a.get("derivation_targets") or {}
     reclassified_primitives = tier_a.get("reclassified_primitives") or {}
@@ -75,7 +75,7 @@ def main() -> int:
     check("source note exists", NOTE.exists(), str(NOTE.relative_to(ROOT)))
     check("policy exists", POLICY.exists(), str(POLICY.relative_to(ROOT)))
     check("registry exists", REGISTRY.exists(), str(REGISTRY.relative_to(ROOT)))
-    check("Tier-A registry exists", TIER_A.exists(), str(TIER_A.relative_to(ROOT)))
+    check("Tier-A registry exists", DECISION_HISTORY.exists(), str(DECISION_HISTORY.relative_to(ROOT)))
     check("source type is meta", "**Type:** meta" in note)
     check("source declares framework primitive status", "**Status:** framework primitive declaration" in note)
     check("registry canonical ids include scale primitive", CLAIM_ID in registry.get("canonical_ids", []))

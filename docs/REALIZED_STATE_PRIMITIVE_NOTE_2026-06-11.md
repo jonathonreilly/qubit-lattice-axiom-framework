@@ -49,9 +49,8 @@ realized state is registered data, not derivation output.
 This declaration supplies one law-admissible realized-state reference. The
 Lattice + Qubit + Admissibility + Record baseline is not used here as a
 state-selection theorem, and no state selection is claimed. The primitive
-records the laws-versus-state interface without treating the supplied state as
-a Tier-A admitted derivation target, which would incorrectly bound lanes whose
-structural content is otherwise clean.
+records the laws-versus-state interface directly and therefore does not bound
+lanes whose structural content is otherwise closed.
 
 ## What This Does Not Do
 

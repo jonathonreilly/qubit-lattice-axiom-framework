@@ -36,9 +36,9 @@ saving compute on ill-posed questions.
   pointwise evaluation at the supplied law-admissible realized state --
   no averaging over alternatives, no typicality or genericity predicate, and
   no state-contingent number quoted as derived (the counterfactual test)?
-- Any other premise must be a retained-grade theorem, a Tier-A admission
-  (which bounds the result), or an explicitly flagged new import requiring
-  user approval. Does it smuggle in external assumptions instead?
+- Any other scientific dependency must be a retained-grade theorem or remain
+  explicitly conditional/open. Does it smuggle in external assumptions or
+  treat decision history as authority instead?
 - Rate: COMPLIANT / PARTIAL / VIOLATING
 
 ### 2. Internal Consistency

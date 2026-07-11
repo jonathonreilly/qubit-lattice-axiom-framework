@@ -33,7 +33,7 @@ the qubit-lattice axiom framework.
 
 ### 1. Lane Census
 - Group active work by lane/domain. For each: retained-grade results,
-  bounded results with named admissions, open gates, standing no-gos.
+  bounded results with named conditions, open gates, standing no-gos.
 - Present as a table: | Lane | Retained | Bounded | Open gates | No-gos | Status |
 
 ### 2. Blocker Fanout (the keystone view)
@@ -43,8 +43,8 @@ the qubit-lattice axiom framework.
   they unblock. Closing a high-fanout root beats closing a leaf.
 
 ### 3. Premise Coverage
-- Which Tier-A admissions and named imports are still load-bearing, and
-  which lanes are queued to retire them?
+- Which named conditional inputs and imports are still load-bearing, and
+  which lanes are queued to derive or eliminate them?
 - Which named derivation lanes (dynamics, Born weights, readout bridges,
   species identification, ...) have no active work at all?
 

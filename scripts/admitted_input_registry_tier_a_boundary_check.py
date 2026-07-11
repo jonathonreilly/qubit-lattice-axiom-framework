@@ -40,11 +40,12 @@ def main() -> int:
     check("historical derivation-target map is empty", history.get("derivation_targets") == {})
     check("retired governance registry is absent", not OLD_OWNER_REGISTRY.exists())
     check(
-        "exact AC obligations are live",
+        "exact AC and theta obligations are live",
         obligation_ids
         == {
             "ac_orbit_occupancy_statistical_grain_derivation_obligation",
             "ac_reta_hclass_hunit_readout_derivation_obligation",
+            "theta_quark_determinant_cross_sector_readout_derivation_obligation",
         },
     )
     check(

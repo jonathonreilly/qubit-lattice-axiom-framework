@@ -3,7 +3,8 @@
   "description": "Non-premise registry of exact open derivation obligations. Entries never satisfy dependency closure, never bound or promote downstream rows, and may leave this registry only after a retained derivation closes the named target. The only supplied foundational premise types are axioms and approved primitives in axiom_premise_nodes.json.",
   "canonical_ids": [
     "ac_orbit_occupancy_statistical_grain_derivation_obligation",
-    "ac_reta_hclass_hunit_readout_derivation_obligation"
+    "ac_reta_hclass_hunit_readout_derivation_obligation",
+    "theta_quark_determinant_cross_sector_readout_derivation_obligation"
   ],
   "nodes": {
     "ac_orbit_occupancy_statistical_grain_derivation_obligation": {
@@ -20,6 +21,14 @@
       "target": "Derive from the retained framework chain that the physical charged-lepton readout is the fixed-locus density class, identity-read in h-units as the eta angle, with no extra normalization or transport factor.",
       "status": "open_non_premise",
       "self_liquidation_condition": "A retained G3/angle-readout theorem deriving this exact identity removes the obligation; until then it blocks dependent closure.",
+      "historical_governance_source": "docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md"
+    },
+    "theta_quark_determinant_cross_sector_readout_derivation_obligation": {
+      "label": "theta quark-determinant cross-sector readout",
+      "current_path": "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md",
+      "target": "Derive whether the charged-lepton K/CPT occupancy carrier is the same physical channel that controls the quark determinant readout and whether that identification forces arg det(M_q)=0.",
+      "status": "open_non_premise",
+      "self_liquidation_condition": "A retained cross-sector determinant-readout theorem removes the obligation; until then it blocks dependent theta closure.",
       "historical_governance_source": "docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md"
     }
   }

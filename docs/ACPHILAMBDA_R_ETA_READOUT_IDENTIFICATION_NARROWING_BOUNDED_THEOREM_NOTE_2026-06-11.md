@@ -305,7 +305,7 @@ honest split, not a value derivation. Soft spots an auditor should press:
 
 ## Dependencies (current-main status reviewed 2026-07-05)
 
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   — meta (the live registry; source of the sub-admission (ii) text being
   narrowed).
 - [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — approved
@@ -347,3 +347,11 @@ honest split, not a value derivation. Soft spots an auditor should press:
 **No-promotion statement:** this note does not promote, demote, or set the
 status of any dependency. The independent audit lane is the only status
 authority.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)

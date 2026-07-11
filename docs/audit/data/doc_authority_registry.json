@@ -63,6 +63,14 @@
       "note": "Generated status board (nightly automation)."
     },
     {
+      "path": "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
+      "claim_id": "admitted_input_registry_tier_a_note_2026-05-23",
+      "class": "G",
+      "status": "landed",
+      "chain_satisfying": false,
+      "note": "Historical decision index only. It has zero premise weight and cannot satisfy a scientific dependency."
+    },
+    {
       "path": "docs/GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md",
       "class": "F",
       "status": "landed",

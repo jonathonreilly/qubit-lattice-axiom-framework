@@ -38,9 +38,10 @@ evidence and mark weak answers LOW-CONFIDENCE.
 
 4. **What premises does it need?**
    - List the axioms, approved primitives, retained theorems (verify via
-     `/ledger`), and Tier-A admissions involved.
-   - If it needs a premise outside that list, it needs a new import — flag
-     for explicit user approval now, not after the work.
+     `/ledger`), and any named conditional/open dependencies involved.
+   - A dependency outside the supplied foundation must be independently
+     derived or remain explicitly conditional/open; decision history supplies
+     no premise.
 
 5. **What existing results bear on this?**
    - Cite specific notes, ledger rows, and runners found in preflight.

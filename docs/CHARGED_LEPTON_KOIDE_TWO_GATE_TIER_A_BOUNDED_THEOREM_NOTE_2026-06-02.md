@@ -156,7 +156,7 @@ retained inventory alone.
 | Authority | Role |
 |---|---|
 | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | baseline one-qubit operator algebra and `Z^3` spatial substrate |
-| [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md) | human-readable Tier-A registry |
+| `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` | human-readable Tier-A registry |
 | [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json) | non-authoritative historical record for `AC_phi_lambda` |
 | [`CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`](CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md) | chain-of-custody source reference |
 | [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md) | registered Tier-A `AC_phi_lambda` carrier consumed as the S2/S3 bounded premise |
@@ -179,3 +179,13 @@ sample phases, and hostile-review exclusions.
 
 Historical physics references for context only: Koide (1981), Brannen (2005),
 and Buckingham (1914). No external value is load-bearing here.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)
+- [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)
+- [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)

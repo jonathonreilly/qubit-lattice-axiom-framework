@@ -15,7 +15,7 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md"
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
-TIER_A = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 RECORD = ROOT / "docs" / "RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md"
 BRANNEN = ROOT / "docs" / "BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md"
 
@@ -65,7 +65,7 @@ def ledger_rows() -> tuple[dict, dict]:
 
 
 def tier_a_statement() -> str:
-    data = json.loads(read_text(TIER_A))
+    data = json.loads(read_text(DECISION_HISTORY))
     return data["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]["statement"]
 
 
@@ -106,7 +106,7 @@ def part_a_sources(note: str) -> None:
     check("record dependency exists", RECORD.exists(), str(RECORD.relative_to(ROOT)))
     check("Brannen dependency exists", BRANNEN.exists(), str(BRANNEN.relative_to(ROOT)))
     check("ledger exists", LEDGER.exists(), str(LEDGER.relative_to(ROOT)))
-    check("Tier-A data exists", TIER_A.exists(), str(TIER_A.relative_to(ROOT)))
+    check("Tier-A data exists", DECISION_HISTORY.exists(), str(DECISION_HISTORY.relative_to(ROOT)))
 
     record_text = read_text(RECORD)
     brannen_text = read_text(BRANNEN)
@@ -133,7 +133,7 @@ def part_a_sources(note: str) -> None:
     statement = tier_a_statement()
     check("Tier-A statement contains sub-admission (ii)", TIER_A_QUOTE in statement)
     check("note quotes Tier-A sub-admission (ii)", TIER_A_QUOTE in note)
-    check("Tier-A path is inline code, not markdown link", f"`{TIER_A.relative_to(ROOT)}`" in note)
+    check("Tier-A path is inline code, not markdown link", f"`{DECISION_HISTORY.relative_to(ROOT)}`" in note)
 
 
 def branch_product(sign: int, phi: sp.Symbol) -> sp.Expr:

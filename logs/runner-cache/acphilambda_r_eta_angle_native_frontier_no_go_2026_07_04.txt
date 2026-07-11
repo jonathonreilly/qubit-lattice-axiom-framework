@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py
-runner_sha256: c87699a919785637127c0be290e410dd2e5df5973d6f629fc66cc6b2990c8520
+runner_sha256: c7b1b48c70a44debb4f52293e8246e5190a4b4a13b347770ea0b755ae4095dc0
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 1.02
-status: ok
+exit_code: 1
+elapsed_sec: 1.42
+status: nonzero_exit
 ----- stdout -----
 AC_phi_lambda R-eta angle-native frontier no-go verifier
 
@@ -24,10 +24,10 @@ A. source and registry boundaries
 [PASS] note explicitly does not edit registry
 [PASS] note says R-eta is not retired
 [PASS] human registry points to the R-eta derivation obligation
-[PASS] KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md remains ledgered
-[PASS] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md remains ledgered
-[PASS] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md remains ledgered
-[PASS] RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md remains ledgered
+[FAIL] KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md is retained-grade :: unaudited
+[FAIL] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md is retained-grade :: unaudited
+[FAIL] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md is retained-grade :: unaudited
+[FAIL] RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md is retained-grade :: unaudited
 
 ========================================================================================
 B. exact target arithmetic and off-locus status
@@ -165,7 +165,7 @@ G. note/source cross-checks
 [PASS] note line count is bounded
 
 ========================================================================================
-TOTAL: PASS=128 FAIL=0
+TOTAL: PASS=124 FAIL=4
 ========================================================================================
 
 ----- stderr -----

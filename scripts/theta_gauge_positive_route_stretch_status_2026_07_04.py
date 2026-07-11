@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
-TIER_A = DOCS / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 MINIMAL = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
 
 SUPPLIER = DOCS / "THETA_SUPPLIER_FLAVORED_GRADING_SPECTRAL_FLOW_REGISTERS_WINDING_2D_NARROW_THEOREM_NOTE_2026-07-02.md"
@@ -83,7 +83,7 @@ def q_flux(m: tuple[int, int, int, int, int, int]) -> int:
 def main() -> int:
     print("theta gauge positive-route stretch status verifier")
 
-    paths = [NOTE, LEDGER, TIER_A, MINIMAL, SUPPLIER, CARRIER4D, TORUS_DUAL, CARTAN, LINK_STAR, ASSEMBLY, AXIOM_NO_GO]
+    paths = [NOTE, LEDGER, DECISION_HISTORY, MINIMAL, SUPPLIER, CARRIER4D, TORUS_DUAL, CARTAN, LINK_STAR, ASSEMBLY, AXIOM_NO_GO]
     texts = {p: read(p) for p in paths}
     note = texts[NOTE]
     note_flat = flat(note)
@@ -104,7 +104,7 @@ def main() -> int:
     check("new route status note has Claim type open_gate", "**Claim type:** open_gate" in note)
 
     section("B. Tier-A target and axiom boundary")
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     theta = tier["retired_derivation_targets"]["strong_cp_theta_zero_note"]
     check("decision history preserves zero final admission count", tier["genuine_admitted_input_count"] == 0, tier["genuine_admitted_input_count"])
     check("theta entry is retired, not live", "strong_cp_theta_zero_note" not in tier.get("derivation_targets", {}))
@@ -134,7 +134,7 @@ def main() -> int:
         "A readout value is determined by record content alone",
         "A law privileges no states",
         "source/action and physical-observable identification",
-        "the strong-CP theta admission",
+        "the strong-CP theta gauge and mass-side derivation obligations",
     ]:
         check(f"minimal axiom boundary present: {phrase[:45]}", phrase in minimal_flat)
 

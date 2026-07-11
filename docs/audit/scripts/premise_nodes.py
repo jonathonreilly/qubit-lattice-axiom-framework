@@ -24,8 +24,10 @@ from pathlib import Path
 
 _DATA_DIR = Path(__file__).resolve().parents[1] / "data"
 _AXIOM_PREMISE_NODES_PATH = _DATA_DIR / "axiom_premise_nodes.json"
+_DOC_AUTHORITY_REGISTRY_PATH = _DATA_DIR / "doc_authority_registry.json"
 
 _FOUNDATIONAL_PREMISE_IDS: set[str] | None = None
+_NON_EVIDENCE_CONTEXT_IDS: set[str] | None = None
 
 
 def foundational_premise_ids() -> set[str]:
@@ -65,6 +67,30 @@ def is_accepted_premise_dep(dep_id: str) -> bool:
     return dep_id in foundational_premise_ids()
 
 
+def non_evidence_context_ids() -> set[str]:
+    """Registered metadata/history ids that cannot satisfy science edges."""
+    global _NON_EVIDENCE_CONTEXT_IDS
+    if _NON_EVIDENCE_CONTEXT_IDS is None:
+        try:
+            data = json.loads(
+                _DOC_AUTHORITY_REGISTRY_PATH.read_text(encoding="utf-8")
+            )
+            _NON_EVIDENCE_CONTEXT_IDS = {
+                str(row["claim_id"])
+                for row in data.get("rows") or []
+                if row.get("chain_satisfying") is False and row.get("claim_id")
+            }
+        except Exception:
+            _NON_EVIDENCE_CONTEXT_IDS = set()
+    return _NON_EVIDENCE_CONTEXT_IDS
+
+
+def is_non_evidence_context_dep(dep_id: str) -> bool:
+    """True when registry policy forbids a metadata edge as theorem support."""
+    return dep_id in non_evidence_context_ids()
+
+
 def _reset_cache_for_tests() -> None:
-    global _FOUNDATIONAL_PREMISE_IDS
+    global _FOUNDATIONAL_PREMISE_IDS, _NON_EVIDENCE_CONTEXT_IDS
     _FOUNDATIONAL_PREMISE_IDS = None
+    _NON_EVIDENCE_CONTEXT_IDS = None

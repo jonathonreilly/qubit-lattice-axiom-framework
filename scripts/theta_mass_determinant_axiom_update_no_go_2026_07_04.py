@@ -13,7 +13,7 @@ DOCS = ROOT / "docs"
 NOTE = DOCS / "THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md"
 MINIMAL = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
 AXIOM_PREMISES = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = DOCS / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 REGISTRY = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
 THETA_PARENT = DOCS / "STRONG_CP_THETA_ZERO_NOTE.md"
@@ -63,7 +63,7 @@ def main() -> int:
     note = read(NOTE)
     minimal = read(MINIMAL)
     premises = json.loads(read(AXIOM_PREMISES))
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     registry = read(REGISTRY)
     theta_parent = read(THETA_PARENT)
     realized = read(REALIZED)
@@ -75,11 +75,11 @@ def main() -> int:
     theta_flat = flat(theta_parent)
 
     section("A. source presence and retained target")
-    for path in [NOTE, MINIMAL, AXIOM_PREMISES, TIER_A, LEDGER, REGISTRY, THETA_PARENT, REALIZED, KINETIC]:
+    for path in [NOTE, MINIMAL, AXIOM_PREMISES, DECISION_HISTORY, LEDGER, REGISTRY, THETA_PARENT, REALIZED, KINETIC]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
     row = ledger_row_by_path("docs/STRONG_CP_THETA_ZERO_NOTE.md")
-    check("theta parent row remains ledgered", row.get("effective_status") != "missing", row.get("effective_status"))
-    check("theta parent row has an audit status", bool(row.get("audit_status")), row.get("audit_status"))
+    check("theta parent row is retained-grade", row.get("effective_status") in {"retained", "retained_bounded", "retained_no_go"}, row.get("effective_status"))
+    check("theta parent row is audited_clean", row.get("audit_status") == "audited_clean", row.get("audit_status"))
 
     section("B. admission-era decision history boundary")
     theta = tier["retired_derivation_targets"]["strong_cp_theta_zero_note"]
@@ -142,7 +142,7 @@ def main() -> int:
         "K`/CPT orbit structure",
         "central-sector decomposition",
         "source/action and physical-observable identification",
-        "the strong-CP theta admission",
+        "the strong-CP theta gauge and mass-side derivation obligations",
     ]:
         check(f"minimal axiom excludes/scopes {phrase[:50]}", phrase in minimal_flat)
 
@@ -246,7 +246,7 @@ def main() -> int:
         "STRONG_CP_THETA_ZERO_NOTE.md",
         "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
         "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
-        "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
+        "THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md",
     }
     check("markdown link inventory is controlled", links == expected_links, sorted(links))
     for unlinked in [

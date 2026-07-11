@@ -26,7 +26,7 @@ KINETIC_B4_NOGO = ROOT / "docs" / "KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_
 KINETIC_BW_NOGO = ROOT / "docs" / "KINETIC_BW_OS0_IDENTIFICATION_BRIDGE_INTERFACE_NO_GO_NOTE_2026-06-16.md"
 KINETIC_COMPOSITION = ROOT / "docs" / "KINETIC_ISOTROPY_COMPOSITION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-06-09.md"
 REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 SCALE_RUNNER = ROOT / "scripts" / "scale_reference_primitive_boundary_check.py"
 
@@ -78,7 +78,7 @@ def main() -> int:
     kinetic_bw = read(KINETIC_BW_NOGO)
     kinetic_composition = read(KINETIC_COMPOSITION)
     registry = load_json(REGISTRY)
-    tier_a = load_json(TIER_A)
+    tier_a = load_json(DECISION_HISTORY)
     ledger_rows = load_json(LEDGER)["rows"]
     scale_runner = read(SCALE_RUNNER)
 
@@ -112,7 +112,7 @@ def main() -> int:
         "Records form.",
         "A state is a configuration of records.",
         "A law privileges no states.",
-        "a law may not depend on a choice not fixed by the supplied structure",
+        "A choice not fixed by the supplied structure remains a named conditional or open dependency.",
         "Admissibility is not a dynamics axiom.",
         "It does not choose a Hamiltonian or transfer operator",
         "define a time metric",

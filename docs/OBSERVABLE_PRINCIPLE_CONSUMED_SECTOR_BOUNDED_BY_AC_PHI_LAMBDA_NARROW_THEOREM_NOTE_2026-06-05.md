@@ -150,7 +150,7 @@ integral —
 identification is gated by the staggered-Dirac realization gate
 [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
 (`AC_φλ`), the **registered** Tier-A derivation target
-[`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md).
+`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`.
 
 So the bound assembles as:
 
@@ -287,7 +287,7 @@ positivity, not imported.
   [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md).
 - The canonical admitted-input registry (admission count unchanged; `AC_φλ`
   registered):
-  [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md).
+  `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`.
 
 **External mathematics (cited as comparator, reproven in the runner):**
 
@@ -324,3 +324,11 @@ functional equation," "polynomial analyticity") and repo-canonical "P2,"
 audit status of the parent, the positivity note, the Berezin bridge, the `AC_φλ`
 gate, the Record axiom, or any other row. The audit lane is the only status
 authority.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)

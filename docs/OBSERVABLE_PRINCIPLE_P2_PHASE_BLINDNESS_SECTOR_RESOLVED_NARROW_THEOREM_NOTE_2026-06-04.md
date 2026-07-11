@@ -234,7 +234,7 @@ This note is deliberately narrow. It does **not**:
   `(M)`/`AC_phi_lambda`-gated determinant identification.
 - **Reduce or increase the admission count.** The genuine Tier-A admissions
   remain `AC_phi_lambda` and `theta`
-  ([`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)).
+  (`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`).
   This note shows P2 is **not** a separate (third) admission under the named
   determinant-readout regularity hypotheses; it routes into the existing
   `AC_phi_lambda` gate plus those explicit hypotheses.
@@ -381,7 +381,7 @@ explicit bounded hypotheses.
 - The `AC_phi_lambda` realization gate (the residual):
   [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md).
 - The canonical admitted-input registry (admission count unchanged):
-  [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md).
+  `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`.
 - The Record baseline (additivity only; not the source of continuity/P2):
   [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md).
 
@@ -428,3 +428,13 @@ audit status of
 the form-selection note, the two-stage synthesis, the qubit-trace note, the
 exponent-fixing no-go, the staggered-Dirac realization gate, or any other
 upstream row. The audit lane is the only status authority.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)
+- [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)
+- [`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md)

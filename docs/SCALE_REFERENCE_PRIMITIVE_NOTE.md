@@ -28,9 +28,8 @@ This declaration supplies the units conversion that the Lattice + Qubit +
 Admissibility + Record baseline does not itself specify. Quantities on the
 structural surface remain dimensionless or carry a power of the lattice
 spacing `[a]^n` until that reference is supplied. No derivation of the chosen
-physical scale is claimed here; treating the units reference as a Tier-A
-admitted derivation target would incorrectly bound lanes whose dimensionless
-content is otherwise clean.
+physical scale is claimed here. The units reference is an approved primitive,
+so it does not bound lanes whose dimensionless content is otherwise closed.
 
 ## What This Does Not Do
 
@@ -41,8 +40,7 @@ content is otherwise clean.
   question that the framework's natural unit equals the Planck length remains
   a separate open gravity derivation.
 - It does not supply any dimensionless quantity. Dimensionless physics must
-  still derive from the framework baseline or be explicitly recorded as a
-  bounded Tier-A admission.
+  derive from retained-grade framework content or remain conditional/open.
 - It does not change any audit verdict. Audit status remains set only by the
   independent audit lane.
 

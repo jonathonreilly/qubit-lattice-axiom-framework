@@ -14,7 +14,7 @@ DOCS = ROOT / "docs"
 NOTE = DOCS / "THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md"
 MINIMAL = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
 AXIOM_PREMISES = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = DOCS / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 REGISTRY = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
 THETA_PARENT = DOCS / "STRONG_CP_THETA_ZERO_NOTE.md"
@@ -86,7 +86,7 @@ def main() -> int:
     note = read(NOTE)
     minimal = read(MINIMAL)
     premises = json.loads(read(AXIOM_PREMISES))
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     registry = read(REGISTRY)
     theta_parent = read(THETA_PARENT)
     realized = read(REALIZED)
@@ -112,7 +112,7 @@ def main() -> int:
         NOTE,
         MINIMAL,
         AXIOM_PREMISES,
-        TIER_A,
+        DECISION_HISTORY,
         LEDGER,
         REGISTRY,
         THETA_PARENT,
@@ -126,8 +126,8 @@ def main() -> int:
     ]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
     parent_row = ledger_row_by_path("docs/STRONG_CP_THETA_ZERO_NOTE.md")
-    check("theta parent row remains ledgered", parent_row.get("effective_status") != "missing", parent_row.get("effective_status"))
-    check("theta parent row has an audit status", bool(parent_row.get("audit_status")), parent_row.get("audit_status"))
+    check("theta parent row is retained-grade", parent_row.get("effective_status") in {"retained", "retained_bounded", "retained_no_go"}, parent_row.get("effective_status"))
+    check("theta parent row is audited_clean", parent_row.get("audit_status") == "audited_clean", parent_row.get("audit_status"))
 
     section("B. admission-era decision history boundary")
     theta = tier["retired_derivation_targets"]["strong_cp_theta_zero_note"]
@@ -191,7 +191,7 @@ def main() -> int:
         "transition probabilities or weights",
         "context selection",
         "source/action and physical-observable identification",
-        "the strong-CP theta admission",
+        "the strong-CP theta gauge and mass-side derivation obligations",
         "Records form.",
     ]:
         check(f"minimal axiom excludes/scopes {phrase[:50]}", phrase in minimal_flat)
@@ -234,12 +234,11 @@ def main() -> int:
     emergent_row = ledger_row_by_id("theta_emergent_q_weighting_reality_rg_stable_bounded_theorem_note_2026-06-13")
     multi_row = ledger_row_by_id("strong_cp_gauge_theta_multiplaquette_ftf_is_admissible_not_clean_closeable_bounded_note_2026-06-07")
     structured_row = ledger_row_by_id("strong_cp_theta_bar_structured_admission_2026-06-04")
-    check("cross-plane row has an audit status", bool(cross_row.get("audit_status")), cross_row.get("audit_status"))
-    check("cross-plane row remains ledgered", cross_row.get("effective_status") != "missing", cross_row.get("effective_status"))
+    check("cross-plane row is audited_clean", cross_row.get("audit_status") == "audited_clean", cross_row.get("audit_status"))
+    check("cross-plane row is retained-grade", cross_row.get("effective_status") in {"retained", "retained_bounded", "retained_no_go"}, cross_row.get("effective_status"))
     check(
-        "cross-plane scope is either unaudited or supplied per-plaquette only",
-        cross_row.get("audit_status") == "unaudited"
-        or "supplied additive per-plaquette action class" in (cross_row.get("claim_scope") or ""),
+        "cross-plane scope is supplied per-plaquette only",
+        "supplied additive per-plaquette action class" in (cross_row.get("claim_scope") or ""),
     )
     check("substrate no-winding row remains unaudited", substrate_row.get("effective_status") == "unaudited", substrate_row.get("effective_status"))
     check("substrate row depends on multiplaquette boundary", "strong_cp_gauge_theta_multiplaquette_ftf_is_admissible_not_clean_closeable_bounded_note_2026-06-07" in substrate_row.get("deps", []))
@@ -356,7 +355,6 @@ def main() -> int:
         "THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md",
         "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
         "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
-        "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
     }
     check("markdown link inventory is controlled", links == expected_links, sorted(links))
     for unlinked in [

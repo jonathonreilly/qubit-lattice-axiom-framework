@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.py
-runner_sha256: a9299bf32f49ee421d1c384a483dd3ca98b6dcec8f7f4b9911ab40f5a3a0bd46
+runner_sha256: 4dd23d94fa53e4bf9a2a10c1d2fdbe7de6711044735c0bba4dd3c4edf67a3647
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.40
+elapsed_sec: 1.50
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta h-unit approved-primitive non-supply no-go verifier

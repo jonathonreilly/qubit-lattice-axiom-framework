@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 359 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2804 |
-| audit_in_progress | 19 |
+| unaudited | 2803 |
+| audit_in_progress | 20 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 15 |
@@ -44,14 +44,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 23 |
+| `audit_in_progress` | 24 |
 | `audited_clean` | 451 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 15 |
-| `unaudited` | 3154 |
+| `unaudited` | 3153 |
 
 | claim_type | count |
 |---|---:|
@@ -123,6 +123,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |

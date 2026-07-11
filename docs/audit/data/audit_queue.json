@@ -3,7 +3,7 @@
     "critical": 649,
     "high": 333,
     "leaf": 1136,
-    "medium": 760
+    "medium": 759
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -29237,30 +29237,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_dm_abcc_pmns_nonsingularity_theorem.py",
       "transitive_descendants": 54
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.755,
-      "note_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/no_per_site_bosonic_ccr_check.py",
-      "transitive_descendants": 53
     },
     {
       "audit_independence_required": "any_non_self",
@@ -82018,6 +81994,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 597,
-  "total_pending": 2878
+  "ready_count": 596,
+  "total_pending": 2877
 }

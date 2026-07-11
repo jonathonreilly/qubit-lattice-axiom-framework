@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 83 |
-| **retained_no_go** | 27 |
+| **retained_no_go** | 28 |
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2785 |
+| unaudited | 2784 |
 | audit_in_progress | 29 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 33 |
-| `audited_clean` | 453 |
+| `audited_clean` | 454 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3135 |
+| `unaudited` | 3134 |
 
 | claim_type | count |
 |---|---:|
@@ -406,6 +406,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -5061,6 +5062,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The restricted packet provides the raw rows, retained_bounded upstream note, runner source, and successful frozen-log verifier output. An independent log-log least-squares check of the listed rows confirms peak z=4, far-tail slope -1.1685, R^2=0.9972, n=6.
 - **rationale:** The default runner is a frozen-log/raw-row verifier rather than a first-principles recompute, so the load-bearing closure is class A over supplied retained-grade bounded inputs. The note's safe wording is explicitly finite-window and rejects the universal-law overclaim. Within that bounded scope, the raw-row inventory, SHA-pinned verifier, and independent fit check agree.
 - **auditor confidence:** high
+
+### `no_per_site_bosonic_ccr_theorem_note_2026-05-02`
+
+- **Note:** [`NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** No exact bosonic CCR [a,a†]=I_2 is realizable by bounded operators inside one Qubit-axiom per-site algebra M_2(C).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00228-no_per_site_bosonic_ccr_theo`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Trace cyclicity gives tr([a,a†])=0 for all a,a† in M_2(C), whereas [a,a†]=I_2 would give tr([a,a†])=tr(I_2)=2.  _(class `A`)_
+- **chain closes:** True — The accepted Qubit axiom supplies the one-site algebra M_2(C), and the finite-dimensional trace identity directly contradicts the exact CCR. No additional carrier, normalization, or observable bridge is required.
+- **rationale:** The load-bearing step is an exact finite-dimensional algebraic obstruction over the accepted one-site M_2(C) premise. The runner's random matrices are illustrative rather than a universal proof, but the source note independently supplies the universal trace argument; the Pauli and truncated-Fock computations correctly test common counterroutes. The result excludes only exact single-site CCR, not hard-core, collective, approximate, or infinite-dimensional bosonic realizations.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `nonlabel_grown_basin_note`
 

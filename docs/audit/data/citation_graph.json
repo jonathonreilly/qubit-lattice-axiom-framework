@@ -57810,7 +57810,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "s3_mass_matrix_no_go_note"
+      "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
     },
     {
       "from": "repo.front_door_status",
@@ -112141,7 +112141,7 @@
         "tier_a_residual_owner_adoption_retirement_2026-07-04",
         "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
         "fermion_parity_z2_grading_theorem_note_2026-05-02",
-        "s3_mass_matrix_no_go_note",
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
         "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
         "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
         "abj_epsilon_index_square_block_no_go_note_2026-05-30",
@@ -112149,7 +112149,7 @@
         "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e7e0d1049e0a7053d82d4fd1c732544ff28a81a4f9184f53c8a3b3b3cd701f60",
+      "note_hash": "6990232f54090ecb1e0b0f6a58213ca2fab38a1fedecc3071ea7f8f81b9c75a3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

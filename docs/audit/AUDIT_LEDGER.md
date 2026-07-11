@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2829 |
+| unaudited | 2828 |
 | audit_in_progress | 19 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 42 |
+| ~~audited_conditional~~ | 43 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 436 |
-| `audited_conditional` | 42 |
+| `audited_conditional` | 43 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3179 |
+| `unaudited` | 3178 |
 
 | claim_type | count |
 |---|---:|
@@ -604,6 +604,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -5340,6 +5341,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The quoted Minimal Axioms sentences define records as admissible locks, require at most one record per site, define states as configurations of records, set I(empty)=0, and distinguish supplied condition textually.  _(class `A`)_
 - **chain closes:** None — The four T1-T4 conclusions follow from current Minimal Axioms text plus ordinary definitional/logical consequences, without using audit-policy or procedural status prose as proof content.
 - **rationale:** The four T1-T4 conclusions follow from current Minimal Axioms text plus ordinary definitional/logical consequences, not from audit-policy or procedural status prose. The runner checks exact text needles and finite definitional consequences; it is not a physics derivation, but that matches the bounded axiom-text theorem scope. The claim does not add axiom content or import an external bridge.
+
+### `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`
+
+- **Note:** [`REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** L1 and L2 establish finite-dimensional determinant positivity; L3 establishes c log det only conditional on an additional determinant-only readout bridge, with continuity and c=1 explicitly conventional.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00015-real_diagonal_source_det_pos`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Record finite additivity is combined with determinant multiplicativity and continuity to assert that the readout satisfies the multiplicative-to-additive Cauchy equation and hence equals c log det.  _(class `A`)_
+- **chain closes:** False — The determinant-positivity and Neumann-patch arguments close algebraically. The full L3 chain does not: Record additivity over disjoint records does not by itself identify readout as a function only of the determinant of direct-sum source blocks.
+- **rationale:** The L1 factorization and antisymmetric-spectrum argument are correct, and L2 follows from Neumann invertibility plus continuity of the real determinant. The runner genuinely checks finite instances and the relevant algebraic identities, without imported comparators, but its L3 check only verifies that log is one additive candidate. Neither the note nor the accepted Record premise supplies the missing determinant-only readout identification needed to infer the Cauchy equation for the physical scalar readout.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the determinant-only readout route remains OPEN, so the full L3 chain is not closed.
+    - N6: no supplied premise, registry entry, convention, or reframe closes the missing determinant-only readout bridge.
 
 ### `record_axiom_audit_application_map_2026-06-06`
 

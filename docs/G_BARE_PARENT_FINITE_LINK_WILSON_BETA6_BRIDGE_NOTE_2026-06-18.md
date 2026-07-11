@@ -30,7 +30,9 @@ beta g_bare^2 = 2 N_c.
 
 - Theorems 1–3 below prove the plaquette exponent construction, the exact
   split redundancy, and the pin equivalence
-  `gamma*(beta) = s` if and only if `beta = 2 N_c`.
+  `gamma*(beta) = s` if and only if `beta = 2 N_c`, on the Wilson
+  domain `beta > 0` with `gamma*(beta)` defined as the positive matched
+  coupling.
 
 ## Non-load-bearing convention context
 
@@ -56,7 +58,7 @@ Setup (supplied surfaces, cited at audited scope):
    `U = exp(i s C^a T_a a)` with `s != 1` changes the link; it is not a
    redundancy of the data.
 
-2. Standard Wilson plaquette surface (Wilson small-a note): action
+2. Standard Wilson plaquette surface (Wilson small-a note): `beta > 0` and action
    `S_W = beta sum (1 - (1/N_c) Re Tr U_P)` with canonical trace
    normalization, and the small-a matching demand that the matched gauge
    field carry the continuum kinetic normalization
@@ -101,16 +103,23 @@ identification convention. (Contrast with Setup item 1: the dilation
 rigidity theorem removes the first freedom. The second remains outside this
 theorem.)
 
-**Theorem 3 (matched-slot family and pin equivalence).** The Wilson
+**Theorem 3 (positive matched-slot family and pin equivalence).** The Wilson
 matching demand applied at action parameter `beta` to the constructed
-plaquette action determines the matched scalar
+plaquette action determines the squared matched scalar. For `beta > 0`,
+define `gamma*(beta)` to be the positive square root, so
+
+```text
+gamma*(beta) := +sqrt(2 N_c / beta) > 0,
+```
+
+and therefore
 
 ```text
 gamma*(beta)^2 = 2 N_c / beta,
 ```
 
-which is `beta`-dependent, while the link-canonical slot `s = 1` is
-`beta`-independent. Hence
+which is `beta`-dependent, while the link-canonical slot `s = 1 > 0` is
+`beta`-independent. Since both slots are positive, hence
 
 ```text
 gamma*(beta) = s      if and only if      beta = 2 N_c.
@@ -160,8 +169,11 @@ For a candidate split `A = C/gamma` the same value reads
 Theorem 2's identity componentwise, `F^a[C] = gamma F^a[A]`). The Wilson
 note's matching demand fixes the coefficient per unordered plaquette
 plane at `1/2`, i.e. `beta gamma*^2 / (4 N_c) = 1/2`, hence
-`gamma*(beta)^2 = 2 N_c / beta`. Because the constructed link-canonical
-slot is `s = 1`, the equality condition `gamma*(beta) = s` holds exactly
+`gamma*(beta)^2 = 2 N_c / beta`. On the declared Wilson domain
+`beta > 0`, the positive-root definition gives
+`gamma*(beta)=+sqrt(2 N_c/beta)>0`. Because the constructed
+link-canonical slot is `s = 1 > 0`, equality of the squares is equivalent
+to equality of the slots themselves. Thus `gamma*(beta) = s` holds exactly
 when `beta = 2 N_c`. No same-slot convention is chosen in this argument.
 
 ## Mismatched-slot exhibit
@@ -243,7 +255,7 @@ python3 scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
 Expected after the 2026-07-11 algebra/convention split:
 
 ```text
-TOTAL: PASS=95 FAIL=0
+TOTAL: PASS=102 FAIL=0
 ```
 
 ## Repair Note
@@ -264,3 +276,13 @@ definition and its displayed normalization values live in the separate
 the algebraic theorem and verifies that the convention content is absent here;
 it does not read or certify the separate meta surface. No audit output or
 status is authored.
+
+## Iteration-4 sign/domain repair
+
+The Wilson matching surface is now explicitly restricted to `beta > 0`, and
+`gamma*(beta)` is defined as the positive square root of
+`2 N_c / beta`. The runner independently checks the positive domain,
+constructs the positive root for every tested beta, and compares
+`gamma*(beta)` directly with the positive canonical slot `s=1`. It no
+longer substitutes a squared-slot comparison for the theorem's unsquared
+pin-equivalence statement.

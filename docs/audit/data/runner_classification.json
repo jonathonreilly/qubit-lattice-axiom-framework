@@ -447,12 +447,12 @@
     "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04": {
       "assert_count": 1,
       "counts": {
-        "A": 20,
-        "B": 10,
-        "C": 1,
+        "A": 17,
+        "B": 1,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py"
     },
@@ -43069,12 +43069,12 @@
         "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
       ],
       "counts": {
-        "A": 20,
-        "B": 10,
-        "C": 1,
+        "A": 17,
+        "B": 1,
+        "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
+      "decoration_candidate": true,
       "dominant_class": "A",
       "exists": true
     },
@@ -93502,7 +93502,7 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 716,
+    "decoration_candidates": 717,
     "dominant_class_distribution": {
       "A": 514,
       "B": 663,
@@ -93511,7 +93511,7 @@
       "none": 458
     },
     "runners_classified": 3407,
-    "runners_with_C": 1799,
+    "runners_with_C": 1798,
     "runners_with_D": 1096
   }
 }

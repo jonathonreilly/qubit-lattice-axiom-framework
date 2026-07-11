@@ -629,30 +629,6 @@
       "to": "admitted_input_registry_tier_a_note_2026-05-23"
     },
     {
-      "from": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
-      "to": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11"
-    },
-    {
-      "from": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
-      "to": "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11"
-    },
-    {
-      "from": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
-      "to": "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04"
-    },
-    {
-      "from": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
-      "to": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04"
-    },
-    {
-      "from": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
-      "to": "charged_lepton_value_reduces_to_one_counting_bit_synthesis_note_2026-06-05"
-    },
-    {
-      "from": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
-      "to": "generation_weight_dial_structure_2026-06-05"
-    },
-    {
       "from": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
       "to": "minimal_axioms"
     },
@@ -58922,22 +58898,15 @@
     },
     "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04": {
       "claim_id": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
-        "koide_staggered_first_order_generation_determinant_bounded_theorem_note_2026-06-11",
-        "acphilambda_measure_binary_axiom_update_no_go_note_2026-07-04",
-        "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
-        "charged_lepton_value_reduces_to_one_counting_bit_synthesis_note_2026-06-05",
-        "generation_weight_dial_structure_2026-06-05"
-      ],
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "7904699256f105584738c9602ab9addca6f06a784edb4637d7a075bdb0ef0562",
+      "note_hash": "0dbc33bea55dc312d6991d35b2225a97f81525c2f1a2af8c604fe7837d090222",
       "path": "docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md",
       "runner_path": "scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py",
-      "title": "AC_phi_lambda Occupancy Determinant-Power Split Exact Support"
+      "title": "Complex Determinant and Realification Determinant Power"
     },
     "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04": {
       "claim_id": "acphilambda_occupancy_formation_append_non_supply_no_go_note_2026-07-04",
@@ -59580,7 +59549,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "5b422d3ea7f8d2c7743bdb0f8cadb3ecf0efba78d7d3eb6a57291dfe33118de6",
+      "note_hash": "908b98f57132bd70dc26772e0c0e5407c7eb42e6f441d62e33e6b6c7b7353065",
       "path": "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
       "runner_path": "scripts/admitted_input_registry_tier_a_boundary_check.py",
       "title": "Admitted-Input Registry \u2014 Tier A (Central Index of Named Non-Axiom Admissions)"
@@ -103775,7 +103744,7 @@
         "kinetic_isotropy_composition_closure_bounded_theorem_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "67670fb0879da1de5f4eb46acf657a391c013dc2c4316b757e46de5b72adf819",
+      "note_hash": "79494087fa9e581ba5bad92b06cac379ccc0a88b32aaafea7b70b3a7a961ee3b",
       "path": "docs/PRIMITIVE_RETIREMENT_REVIEW_AFTER_FOUR_AXIOM_RESET_NOTE_2026-07-05.md",
       "runner_path": "scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py",
       "title": "Primitive Retirement Review After the Four-Axiom Reset"
@@ -103867,7 +103836,7 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "77f8d8ab2ce6526c4f0062d4e7ed5e32239f87d26059a7b01b5e695f0ec7293a",
+      "note_hash": "7a946e14c650d4cae61371d458bdc4fd5d87c92cb9f3ba4588658a5a87881c91",
       "path": "docs/publication/ci3_z3/ARXIV_DRAFT.md",
       "runner_path": null,
       "title": "Qubit-Lattice Axiom Framework:"
@@ -105386,7 +105355,7 @@
         "publication.ci3_z3.prediction_surface_2026-04-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f82594083b6f3549dc84d4bf412d3961a9abef82685de88dd2697b9a1cd480f1",
+      "note_hash": "15bb3bb8d97f25735f0afe3a8fdabec9fc1a5ff4f3cadcc39bcf8902ba72c153",
       "path": "docs/publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md",
       "runner_path": null,
       "title": "Inputs And Qualifiers"
@@ -106238,7 +106207,7 @@
         "publication.ci3_z3.reproduce"
       ],
       "helper_runner_paths": [],
-      "note_hash": "912e43e2881fc0ab0a77ea44ee9b6c60270b1d718ba5bc0e6e5f62cf2b20b615",
+      "note_hash": "a5f7714a38f461b14db1756171b07bef878e789c4ec0c71f87c27bebe065ca4d",
       "path": "docs/publication/ci3_z3/SCIENCE_MAP.md",
       "runner_path": null,
       "title": "Science Map"
@@ -112089,7 +112058,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "c375ab80baca5e5b91dd515cc7b13390d0c1e8c2e20f0e23ce65cfc2e337adbf",
+      "note_hash": "409f5ef92050f7c93da309b33554fa502267998d1f494cd6e00ec1f51c4f0eb0",
       "path": "docs/repo/FOUR_AXIOM_NARRATIVE_SCRUB_PLAN_2026-07-04.md",
       "runner_path": null,
       "title": "Four-Axiom Narrative Scrub \u2014 Plan And Attack (2026-07-04)"
@@ -112115,7 +112084,7 @@
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3c6a5b6ab33bf0e00e3e55b62ce93eb965e6510a97f2ba4263d74477fbb40a5a",
+      "note_hash": "61a57cb4fae446c3ce3b9aa861d55a84cbf23514f61e1c32ede9849521b34f90",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -128014,6 +127983,7 @@
     "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
     "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
     "acphilambda_hw_complementation_equivariance_support_note_2026-06-09",
+    "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
     "action_crossover_note",
     "action_geometry_bridge_note",
     "action_normalization_note",
@@ -129119,27 +129089,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1632,
+      "bounded_theorem": 1631,
       "decoration": 3,
       "meta": 333,
       "no_go": 336,
       "none": 1205,
       "open_gate": 132,
-      "positive_theorem": 279
+      "positive_theorem": 280
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2032,
+      "bounded_theorem": 2031,
       "decoration": 3,
       "meta": 333,
       "no_go": 439,
       "none": 248,
       "open_gate": 206,
-      "positive_theorem": 659
+      "positive_theorem": 660
     },
-    "edge_count": 14554,
-    "leaf_count": 1325,
+    "edge_count": 14548,
+    "leaf_count": 1326,
     "node_count": 3920,
-    "root_count": 1113,
+    "root_count": 1114,
     "runners_with_path": 3541
   }
 }

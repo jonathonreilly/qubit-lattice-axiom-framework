@@ -14,7 +14,9 @@ theta(t)=1-t):
         theta(U_k(x,t)_{c c'}) = conj( U_k(x,1-t)_{c c'} ).
   - The coupled Berezin OS Gram  G_ij = <theta(F_i) F_j>  on the full multi-slice
     positive-half algebra A_+^half (all monomials supported on slices t>=1) is Hermitian
-    and positive semidefinite, with partition function Z = det(D) = prod(m^2+lambda^2) > 0.
+    and positive semidefinite. At fixed links,
+    det(D) = prod(m^2+lambda^2) > 0, hence the joint gauge-fermion partition
+    function Z is strictly positive after integration over the gauge fields.
 
 Gate map (all deterministic):
   G0    engine anchor (exact 4x4) + engine unphased discriminator

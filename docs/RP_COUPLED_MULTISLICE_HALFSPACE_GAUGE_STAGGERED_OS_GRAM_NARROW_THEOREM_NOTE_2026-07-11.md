@@ -64,11 +64,13 @@ G_ij = <theta(F_i) F_j>.
 
 **Narrow claim.** For every `beta>=0`, `m>0`, every finite spatial dimension
 `d`, and every finite staggered-admissible open-time lattice, `G` is Hermitian
-positive semidefinite and `Z=<theta(1)1>=det(D)>0`. Because the reconstruction
-direction is open, the staggered temporal pairing `{epsilon,M_KS}=0` holds for
-every number of time slices, even or odd, with no balanced even-period temporal
-hypothesis. The `H=1` restriction to a single positive slice is the 2026-07-10
-supplier's algebra `A_+^(2)`. The numerical exercise is `d=1`, `L_s=2`,
+positive semidefinite, `det(D)>0` configuration by configuration, and the
+joint gauge-fermion normalization `Z=<theta(1)1>` is strictly positive. Because
+the reconstruction direction is open, the staggered temporal pairing
+`{epsilon,M_KS}=0` holds for every number of time slices, even or odd, with no
+balanced even-period temporal hypothesis. The `H=1` restriction to a single
+positive slice is the 2026-07-10 supplier's algebra `A_+^(2)`. The numerical
+exercise is `d=1`, `L_s=2`,
 `N_c=3`. This note is the in-packet supplier for the parent's Osterwalder-
 Schrader half-space reconstruction step; it makes no claim about the parent's
 audit status.

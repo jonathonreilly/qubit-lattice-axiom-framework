@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/rp_multislice_halfspace_os_gram_certificate.py
-runner_sha256: bea52b0027ecaef0eb2119cb888cab4f1f77fc9ec11e60af7434c771841fab18
+runner_sha256: 8d7cf1563c3dfd33df0a3b3f36b5009baf503dcdd82653f87ac63afae0cf8a91
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.63
+elapsed_sec: 0.81
 status: ok
 ----- stdout -----
 RP coupled SU(3)+staggered multi-slice half-space OS Gram — class-A certificate

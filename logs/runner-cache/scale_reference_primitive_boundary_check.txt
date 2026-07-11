@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/scale_reference_primitive_boundary_check.py
-runner_sha256: 59e249429603f0f52a979e603e621d27d4a1e6622486835d2af426cd1a42bfc0
+runner_sha256: 9731bbd2d4f6a127295f6e266822db623645045ea9967d2e0bc130fb5d8df267
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -14,7 +14,7 @@ Scope: primitive registry/source firewall only; no downstream theorem.
 [PASS] source note exists -- docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
 [PASS] policy exists -- docs/audit/AXIOM_MINIMALITY_POLICY.md
 [PASS] registry exists -- docs/audit/data/axiom_premise_nodes.json
-[PASS] Tier-A registry exists -- docs/audit/data/premise_decision_history.json
+[PASS] decision-history file exists -- docs/audit/data/premise_decision_history.json
 [PASS] source type is meta
 [PASS] source declares framework primitive status
 [PASS] registry canonical ids include scale primitive

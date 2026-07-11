@@ -13,6 +13,10 @@ generated only after independent audit review.
 dependents of the old `observable_principle_from_axiom_note` after the
 2026-06-04 adoption of [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md)
 as the framework's three-axiom baseline (Lattice, Quantum, Record).
+**Snapshot boundary:** the 91-row counts, status breakdown, and per-row lists
+below are a frozen 2026-06-04 historical inventory, not a query of the current
+ledger. They supply no current dependency readiness; live pipeline counts may
+and do evolve independently.
 **Status authority:** independent audit lane only. This note does not
 write or predict audit verdicts.
 **Primary runner:**
@@ -132,9 +136,10 @@ dependents only.
 
 ## Per-row decisions
 
-The durable per-row record is the category list below. The verifier parses
-these lists and checks that they cover exactly the live 91-row direct-dependent
-set from the ledger, with no missing paths, no extra paths, and no duplicates.
+The durable per-row record is the frozen category list below. The verifier
+parses these lists and checks that they internally cover exactly the historical
+91-row snapshot, with no duplicates. It does not mistake later live-ledger
+growth for a defect in this historical report.
 The runner verifies accounting and discipline; it does not independently
 adjudicate the semantic category assignment.
 

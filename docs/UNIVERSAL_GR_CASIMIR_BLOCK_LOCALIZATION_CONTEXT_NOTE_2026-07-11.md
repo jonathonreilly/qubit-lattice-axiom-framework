@@ -1,5 +1,6 @@
 # Universal-GR Context for the Spatial `SO(3)` Casimir Decomposition
 
+**Date:** 2026-07-11
 **Type:** meta
 **Claim type:** meta
 **Status authority:** not applicable; this note carries interpretation and

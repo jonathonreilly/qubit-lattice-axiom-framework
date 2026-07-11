@@ -89,7 +89,7 @@ PYTHONPATH=scripts python3 scripts/frontier_pmns_three_flux_holonomy_closure.py
 ```
 
 Last run (2026-05-10): `PASS=11 FAIL=0` on the present worktree. The
-runner exercises class A finite-dimensional algebra and class B
+runner exercises direct finite-dimensional algebra and cross-note
 construction-on-data: the reduced graph-first cycle family
 `A_fwd(u,v,w) = u B1 + v B2 + w B3`, the one-angle flux holonomy
 linear functional `h_phi(A_fwd) = 2 u cos(phi) + 2 v sin(phi) + w`,
@@ -174,7 +174,7 @@ feedback as `missing_dependency_edge`:
 ## Honest auditor read
 
 The independent 2026-05-10 audit on the previous note revision
-recorded this row as conditional with load-bearing-step class B and
+recorded this row as conditional with load-bearing cross-note verification and
 `chain_closes=False`, observing that the matrix-inversion step closes
 algebraically once the one-angle holonomy law is granted, but that the
 law is imported from an uncited runner module
@@ -195,8 +195,8 @@ this addendum does not request promotion.
 
 ## Scope of this rigorization
 
-This rigorization is class B (graph-bookkeeping citation) plus class D
-(open-target registration). It does not change any algebraic content,
+This rigorization uses graph-bookkeeping citation plus open-target
+registration. It does not change any algebraic content,
 runner output, or load-bearing step classification. It records the
 upstream authority candidates the prior feedback requested, the runner
 that exercises the conditional three-flux inversion, and the

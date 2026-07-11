@@ -159,8 +159,8 @@ helper modules are not registered as retained source notes. The note's
 
 ## Scope of this rigorization
 
-This rigorization is class B (graph-bookkeeping citation) plus class D
-(open-target registration). It does not change any algebraic content,
+This rigorization uses graph-bookkeeping citation plus open-target
+registration. It does not change any algebraic content,
 runner output, or load-bearing step classification. It records the
 upstream authority the audit verdict expected and explicitly registers
 the helper modules and the seed-to-class extension argument as open

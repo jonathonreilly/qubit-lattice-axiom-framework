@@ -162,13 +162,14 @@ lambda = 1,
 y_33 = 1/sqrt(6).
 ```
 
-This is the same scalar blocked in
+This is the same scalar targeted in
 [`YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md`](YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md)
-and closed at Tier-A level in
-[`YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md`](YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md).
+and discussed historically in
+`YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md`. That old
+decision supplies no premise or dependency readiness today.
 The new contribution is that the source unit is now expressed as a
-sharp-record RN-cocycle theorem rather than only as an admitted Tier-A source
-measure premise.
+sharp-record RN-cocycle theorem candidate; its authority depends on independent
+audit of the stated conditions, not on the historical decision.
 
 ## Status boundary
 

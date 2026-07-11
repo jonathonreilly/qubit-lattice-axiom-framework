@@ -141,7 +141,8 @@ retained inventory alone.
 - It does not derive the absolute charged-lepton scale.
 - It does not make neutrino-sector claims.
 - It does not restore or promote the historical admission index.
-- It does not modify the parent open-gate row or the chain-of-custody note.
+- It does not consume the parent open-gate row or the chain-of-custody note as
+  premise or status authority; provenance-only edits cannot close either gate.
 - It does not weaken any retained no-go.
 - It does not add an axiom or new theory language.
 - It does not set, predict, or propose an audit/effective-status outcome.

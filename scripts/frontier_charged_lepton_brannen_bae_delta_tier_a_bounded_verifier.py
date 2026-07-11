@@ -25,6 +25,7 @@ import os
 import subprocess
 import sys
 from fractions import Fraction
+from pathlib import Path
 
 
 PASS = 0
@@ -63,7 +64,7 @@ values_by_k = [brannen_bae(k, DELTA) for k in (0, 1, 2)]
 abs_values = sorted(abs(v) for v in values_by_k)
 
 record(
-    "S1.a: Brannen-BAE algebra computes three values from (B)+(TA)",
+    "S1.a: Brannen-BAE algebra computes three values from explicit hypotheses",
     len(values_by_k) == 3,
     f"values_by_k = {values_by_k}",
 )
@@ -116,6 +117,8 @@ def repo_root() -> str:
 
 
 ROOT = repo_root()
+PAIR_NOTE = Path(ROOT) / "docs/CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md"
+PAIR_TEXT = PAIR_NOTE.read_text(encoding="utf-8")
 
 CONTEXT_SURFACES = [
     "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
@@ -248,14 +251,14 @@ record(
 # H1: this note does NOT derive delta = 2/9
 record(
     "H1: this note does NOT derive delta = 2/9; it is an explicit hypothesis",
-    True,
+    "This note does not derive (TA)." in PAIR_TEXT,
     "no derivation attempted here; the open gate remains",
 )
 
 # H2: does NOT promote a conditional hypothesis to retained
 record(
     "H2: does NOT promote an AC_phi_lambda hypothesis to retained",
-    True,
+    "historical treatment has no current authority" in PAIR_TEXT,
     "historical decisions are provenance only; this note is conditional",
 )
 
@@ -270,35 +273,35 @@ record(
 # (S1-S4 use DELTA = 2/9 directly without PDG; only S5 uses PDG)
 record(
     "H4: PDG values are sidecar in S5 only; NOT load-bearing for S1-S4",
-    True,
+    "sidecar empirical comparator, not a derivation input" in PAIR_TEXT,
     "DELTA = 2/9 is an explicit hypothesis; not extracted from PDG",
 )
 
 # H5: does NOT derive the sqrt(2) amplitude (BAE)
 record(
     "H5: does NOT derive the sqrt(2) BAE amplitude; that's part of AC_phi_lambda bundle",
-    True,
+    "another explicit conditional input" in PAIR_TEXT,
     "sqrt(2) is an explicit open hypothesis",
 )
 
 # H6: does NOT derive overall scale a
 record(
     "H6: does NOT derive overall charged-lepton scale a",
-    True,
+    "Does **not** derive the overall charged-lepton scale `a`" in PAIR_TEXT,
     "scale a is outside this dimensionless conditional calculation",
 )
 
 # H7: does NOT make neutrino claims
 record(
     "H7: does NOT make any neutrino-sector claim",
-    True,
+    "Does **not** make any neutrino-sector claim." in PAIR_TEXT,
     "charged-lepton chamber only; neutrino sector entirely out of scope",
 )
 
 # H8: does NOT propose new axiom or theory-language extension
 record(
     "H8: does NOT propose new axiom or new theory-language extension",
-    True,
+    "does not introduce an axiom" in PAIR_TEXT,
     "uses the framework baseline, retained Koide theorems, and explicit hypotheses only",
 )
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py
-runner_sha256: a345c275069fe2b5f6381972d17f14fe19a2d104f317c3d3b9a11a0f343c798f
+runner_sha256: f2c6010bacf09523b326722efb5f15713095777d801feb9ac4677d751ccaee8e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.66
+elapsed_sec: 2.76
 status: ok
 ----- stdout -----
 theta G3 phase-insertion current-surface no-go verifier
@@ -213,12 +213,23 @@ J. note discipline and controlled links
 [PASS] next attack plan item present: G1 defect closure in parallel
 [PASS] next attack plan item present: G2 registration after G1/G3
 [PASS] next attack plan item present: G4 assembly last
+[PASS] No-Go Discipline N1 present
+[PASS] No-Go Discipline N2 present
+[PASS] No-Go Discipline N3 present
+[PASS] No-Go Discipline N4 present
+[PASS] No-Go Discipline N5 present
+[PASS] No-Go Discipline N6 present
+[PASS] No-Go Discipline N7 present
+[PASS] No-Go Discipline N8 present
+[PASS] route markers are explicit
+[PASS] mass-side obligation is explicitly non-dependent
 [PASS] markdown link inventory is controlled
+[PASS] mass-side obligation is not a markdown dependency
 [PASS] note line count is bounded
 [PASS] verification block states fail-zero threshold
 
 ========================================================================================
-TOTAL: PASS=169 FAIL=0
+TOTAL: PASS=180 FAIL=0
 ========================================================================================
 
 ----- stderr -----

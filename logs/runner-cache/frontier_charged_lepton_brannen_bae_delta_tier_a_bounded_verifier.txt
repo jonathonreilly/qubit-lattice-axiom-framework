@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.py
-runner_sha256: a2beaf7f266cba3a3cba951dd3ecf6c8edd4fb443d0d6353e96e8c954144f20c
+runner_sha256: bb7a810dece37fb661d2c2274171ff01d8277c2b824d06375cb6a647656130c4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -13,7 +13,7 @@ Scope: bounded algebraic chain under explicit open hypotheses.
        Does NOT derive delta=2/9 or sqrt(2).
        delta, sqrt(2) BAE, or scale a. Does NOT promote a premise.
 
-[PASS] S1.a: Brannen-BAE algebra computes three values from (B)+(TA)  (values_by_k = [2.3794381716332555, 0.040349908219207364, 0.5802119201475366])
+[PASS] S1.a: Brannen-BAE algebra computes three values from explicit hypotheses  (values_by_k = [2.3794381716332555, 0.040349908219207364, 0.5802119201475366])
 [PASS] S1.b: amplitude coefficient is sqrt(2) (explicit conditional hypothesis)  (sqrt(2) is an open BAE amplitude input, not a premise)
 [PASS] S1.c: phase increment is the Z_3 native step 2*pi/3  (Z_3 character step (framework-native angular unit alpha_2))
 [PASS] S2.ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md: context surface present  (history is provenance only; current gate is open and non-premise)

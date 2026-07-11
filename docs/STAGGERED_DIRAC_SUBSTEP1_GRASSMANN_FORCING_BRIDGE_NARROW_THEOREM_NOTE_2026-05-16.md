@@ -95,7 +95,7 @@ consumed by the staggered-Dirac spine (e.g. boundary B1 of
   the hard-core-boson frame has per-site dimension 2 and the same
   ungraded operator algebra — so the statistics selection remains an
   open input (S2/FS; `axiom_first_spin_statistics_theorem` is
-  unaudited and FS is not a Tier-A admission). §6 and §8 state this
+  unaudited and FS is not an approved primitive). §6 and §8 state this
   boundary; the runner computes the composition certificate, the
   falsification leg (the collapse fails without the one-qubit/dim-two
   input), and the scope-boundary witness.
@@ -176,7 +176,7 @@ Then the following hold:
   matter-generator measure on the framework's physical per-site
   Hilbert space, in its single-pair (`k = 1`-matched) form. The
   collapse is unconditional on this surface — no open per-site
-  Hilbert-space admission remains.
+  Hilbert-space condition remains.
 
 (D1)–(D5) close from the §3 one-hop authorities plus standard
 finite-dim complex representation theory. They make **no** claim that
@@ -254,12 +254,12 @@ Load-bearing markdown-link upstream dependencies:
   dimension count. Consumed strictly within its bounded scope: its premises (the
   anticommutation rules `(G1)-(G3)` and Berezin rules `(B1)-(B2)`) are
   the **definition** of candidate (G) in this note, not a physical
-  admission, so the boundedness does not propagate an open admission
+  premise, so the boundedness does not propagate an open condition
   into (D2)/(D4).
 
 No other note's effective status is consumed.
 
-## 4. Admitted-context inputs
+## 4. Standard-context inputs
 
 - **Standard finite-dim complex representation theory.** Tensor-product
   dimensional formula `dim(V ⊗ W) = dim V · dim W`; Schur's lemma;
@@ -447,7 +447,7 @@ The runner verifies this leg explicitly (§9, Part 9).
   readout used here. Excluding it requires the statistics-selection
   input (S2/FS), which is **open**: the candidate authority
   `axiom_first_spin_statistics_theorem_note_2026-04-29` is unaudited,
-  and FS is not registered as a Tier-A admission. See §8.
+  and FS is not registered as an approved primitive. See §8.
 - Does **not** close the staggered-Dirac realization gate. Substeps
   2–4 (Kawamoto-Smit kinetic class, substrate fundamentality,
   physical-species bridge) are separate authorities with their own
@@ -506,9 +506,8 @@ Therefore "the matter sector IS Grassmann" (statistics forcing) does
 (B-stat) are: a retained spin-statistics / graded-locality /
 fermion-parity superselection theorem (the S2 support input of the
 gate note; the row `axiom_first_spin_statistics_theorem_note_2026-04-29`
-is currently **unaudited**), or an explicitly approved Tier-A FS
-admission (currently **not registered** — the Tier-A registry carries
-only `AC_phi_lambda` and `theta`). Until one of those lands, downstream
+is currently **unaudited**), or an explicitly approved statistics-selection
+primitive (currently **not registered**). Until one of those lands, downstream
 consumers (e.g. the Kawamoto-Smit note's two-candidate premise / boundary B1,
 and the gate note's S2 support tier) should cite this note as: *the
 two-candidate surface is collapsed and the per-site identification is

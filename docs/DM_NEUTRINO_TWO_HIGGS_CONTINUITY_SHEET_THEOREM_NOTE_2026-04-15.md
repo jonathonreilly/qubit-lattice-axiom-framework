@@ -251,8 +251,8 @@ this addendum does not request promotion.
 
 ## Scope of this rigorization
 
-This rigorization is class B (graph-bookkeeping citation) plus class D
-(open-target registration). It does not change any algebraic content,
+This rigorization uses graph-bookkeeping citation plus open-target
+registration. It does not change any algebraic content,
 runner output, or load-bearing step classification. It records the
 upstream authority candidates the prior audit feedback expected, the runner
 that exercises the conditional sheet selection, and the

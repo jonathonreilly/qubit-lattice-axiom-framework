@@ -125,7 +125,7 @@ neither assumed nor derived.
 ## 2. Setup and definitions
 
 **Surface.** The `Z³` one-qubit single-ladder one-particle hopping
-surface: `MINIMAL_AXIOMS_2026-06-05.md` supplies the per-site
+surface: [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies the per-site
 one-qubit operator algebra, and the retained tensor-product fermion
 bridge supplies the finite periodic Fock/translation extension with
 local ladder operators.
@@ -271,8 +271,11 @@ numerically, boundary B-2.)
 ### 4.2 Step 1 (gapped remainder)
 
 Shrink each `r_j` so that `C_j r_j ≤ s_j/2` with `s_j` the smallest
-singular value of `V_jb`; the cone balls `B_j = B(p_j, r_j)` are
-finitely many and may be taken disjoint. Off `∪B_j`, every band obeys
+singular value of `V_jb`. Group the zero pairs `(p_j,b)` by distinct
+momentum point. Balls centered at distinct zero momenta may be taken
+disjoint; when several bands vanish at the same momentum, their branch
+contributions are summed inside the same ball. No disjointness between band
+labels at a shared momentum is assumed. Off the union of these balls, every band obeys
 `|E_b| ≥ Δ > 0` (compactness, §2), and `x n_F(x/T) ≤ x e^(−x/T)` is
 decreasing in `x ≥ Δ ≥ T`, so the off-cone contribution is at most
 `n_c · max|E_b| · e^(−Δ/T) = O(e^(−Δ/T))`, super-polynomially small.
@@ -350,7 +353,7 @@ certificates (boundary B-5).
 
 Load-bearing (markdown links):
 
-1. [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) —
+1. [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) —
    axiom premise node. License used: Lattice (`Z³`, translations, NN
    cubic adjacency) and Quantum (per-site qubit) for the kernel-class
    constructions. No dynamics drawn.

@@ -1,5 +1,9 @@
 # YT Ward-Identity Dependencies Route to Registered Sources (Bounded Bridge)
 
+**Current authority (2026-07-11):** all Tier-A/admission routing below is
+historical provenance only. Open scientific inputs cannot satisfy dependencies
+until retained derivations supply them.
+
 **Date:** 2026-06-05
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does
@@ -233,7 +237,7 @@ not assert any `effective_status`.
 - Record-axiom-invariance companion (meta):
   `YT_WARD_RECORD_AXIOM_INVARIANCE_COMPANION_NOTE_2026-06-04.md`
 - Tier-A admission registry (registered targets and conventions):
-  `docs/audit/data/tier_a_admissions.json`
+  `docs/audit/data/premise_decision_history.json`
 - Published chain rule:
   `docs/audit/scripts/compute_effective_status.py`
 - Accepted-premise policy:

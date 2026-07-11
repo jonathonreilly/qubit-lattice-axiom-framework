@@ -1,6 +1,9 @@
 # The Gluing Flow Does Not Source the Theta-Parity Pair Term: Real Class-Weight Seeds Produce Plane-Blind Couplings That Vanish Identically Under the Epsilon Assembly, and Phased Seeds Are Transported, Never Created — the Theta Admission's Gauge-Side Kernel Localizes at the Seed Class (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite non-sourcing theorems with a
 graded generality statement; not a terminal no-go and not a change to the
@@ -8,11 +11,10 @@ theta retirement record).
 **Status authority:** independent audit lane only. This note does not set an
 audit verdict, edit registries, register primitives, change axioms, retire or
 re-grade any Tier-A admission, or claim Strong-CP closure.
-**Current-main posture (2026-07-07):** theta is already retired from live
-Tier-A by retained derivation. This note banks a historical bounded support
-calculation for the theta-side gluing-flow non-sourcing campaign; it does not
-reopen, modify, or re-grade the theta retirement record or
-`tier_a_admissions.json`.
+**Historical posture (2026-07-07):** the repo then described theta as retired
+under an older admission taxonomy. **Current posture (2026-07-11):** that
+taxonomy has no premise authority. This note supplies conditional gauge-side
+support only; the mass-side cross-sector determinant readout is an `open_gate`.
 **Primary runner:**
 [`scripts/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.py`](../scripts/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.py)
 **Runner cache:**
@@ -122,7 +124,7 @@ the flow generates.
    [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)):
    background discipline only; record occurrence is not claimed.
 
-3. **Retired theta registry text** (docs/audit/data/tier_a_admissions.json,
+3. **Retired theta registry text** (docs/audit/data/premise_decision_history.json,
    historical gauge-side context): the residual was "localized to the multi-plaquette /
    large-gauge-winding account", with reality tracked as a
    "non-forcing/non-sourcing route surface" — this note supplies the exact
@@ -247,7 +249,7 @@ can do otherwise (exact combinatorial cancellation).
 | phased seeds | TRANSPORT ONLY (T3): the flow moves seed oddness, channel-structured; content localizes at the seed |
 | orientation-anisotropic seed structure | OPEN — exactly (ii'-seed)'s subject: does the framework surface supply it? (the axioms' isotropy/covariance content bears here; not asserted) |
 | defect-mediated sourcing | OPEN — ties to (i-a); not analyzed here |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

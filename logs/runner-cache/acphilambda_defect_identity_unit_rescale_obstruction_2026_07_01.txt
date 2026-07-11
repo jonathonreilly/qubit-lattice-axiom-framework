@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py
-runner_sha256: 5428a6d9e3390f94cb4f422fc4289d37966c8d08fe79efeafb2f74cb2cbbfd42
+runner_sha256: 7e9f0221dbc00cc73daa0ba02c7fa44d482d0d5b55b55f05a6f50e0e9bf9689c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.33
+elapsed_sec: 0.65
 status: ok
 ----- stdout -----
 === AC_phi_lambda defect identity-unit rescale obstruction ===
@@ -12,7 +12,8 @@ PART A -- cited sources and boundary text
 [PASS] docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md exists
 [PASS] docs/MINIMAL_AXIOMS_2026-06-29.md exists
 [PASS] docs/audit/data/axiom_premise_nodes.json exists
-[PASS] docs/audit/data/tier_a_admissions.json exists
+[PASS] docs/audit/data/premise_decision_history.json exists
+[PASS] docs/audit/data/derivation_obligations.json exists
 [PASS] docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md exists
 [PASS] docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md exists
 [PASS] docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md exists
@@ -29,7 +30,8 @@ PART A -- cited sources and boundary text
 [PASS] kinetic primitive: no selector/readout bridge clause
 [PASS] realized-state primitive: no normalization rule / value supplied
 [PASS] realized-state primitive: pointwise evaluation, not state-selection
-[PASS] tier-A sub-admission (ii) names density-read-as-angle
+[PASS] current R-eta open gate names density-read-as-angle
+[PASS] decision history is provenance only
 [PASS] radian-bridge note carries the Type-B-to-radian primitive residual
 [PASS] fixed-locus note excludes the physical readout from its scope
 [PASS] planck boundary note records the native dimensionless phase unit
@@ -106,10 +108,10 @@ PART H -- note discipline
 [PASS] note marks the in-flight stack's audit authority
 [PASS] note states the shape criterion
 [PASS] note localizes the freedom onto the density-to-angle junction
-[PASS] note consolidates onto R-eta sub-admission (ii)
+[PASS] note consolidates onto the R-eta open obligation
 [PASS] note quotes the radian-bridge primitive residual
 [PASS] note names the angle-native live route
-[PASS] note keeps the owner-governance route explicit
+[PASS] note keeps the approved-primitive route explicit
 [PASS] note graph-links authority (MINIMAL_AXIOMS_2026-06-29.md)
 [PASS] note graph-links authority (KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
 [PASS] note graph-links authority (SCALE_REFERENCE_PRIMITIVE_NOTE.md)
@@ -141,7 +143,7 @@ PART H -- note discipline
 [PASS] note preserves future bridge derivations explicitly
 [PASS] note does not import comparator data
 
-TOTAL: PASS=117 FAIL=0
+TOTAL: PASS=119 FAIL=0
 RESULT: PASS -- the scanned homogeneous premise surface cannot select the identity unit; the freedom is the R-eta density-read-as-angle junction coefficient; angle-native and rescale-breaking bridge routes remain live.
 
 ----- stderr -----

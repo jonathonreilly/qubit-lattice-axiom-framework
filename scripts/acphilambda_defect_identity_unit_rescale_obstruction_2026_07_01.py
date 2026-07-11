@@ -60,7 +60,8 @@ def main() -> int:
         "docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md",
         "docs/MINIMAL_AXIOMS_2026-06-29.md",
         "docs/audit/data/axiom_premise_nodes.json",
-        "docs/audit/data/tier_a_admissions.json",
+        "docs/audit/data/premise_decision_history.json",
+        "docs/audit/data/derivation_obligations.json",
         "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
         "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
         "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
@@ -77,7 +78,8 @@ def main() -> int:
     flat_note = flat(note)
     axioms = read("docs/MINIMAL_AXIOMS_2026-06-29.md")
     registry = read("docs/audit/data/axiom_premise_nodes.json")
-    tier_a = read("docs/audit/data/tier_a_admissions.json")
+    decision_history = read("docs/audit/data/premise_decision_history.json")
+    obligations = read("docs/audit/data/derivation_obligations.json")
     scale = flat(read("docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md"))
     kinetic = flat(read("docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"))
     realized = flat(read("docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"))
@@ -119,8 +121,12 @@ def main() -> int:
         "pointwise evaluation, not a state-selection rule" in realized,
     )
     check(
-        "tier-A sub-admission (ii) names density-read-as-angle",
-        "density-read-as-angle" in tier_a,
+        "current R-eta open gate names density-read-as-angle",
+        "density class" in obligations and "eta angle" in obligations,
+    )
+    check(
+        "decision history is provenance only",
+        "Non-authoritative" in decision_history and "supplies no physics content" in decision_history,
     )
     check(
         "radian-bridge note carries the Type-B-to-radian primitive residual",
@@ -128,7 +134,7 @@ def main() -> int:
     )
     check(
         "fixed-locus note excludes the physical readout from its scope",
-        "does **not** supply the physical single-summand readout" in fixed_locus,
+        "No physical single-summand readout is derived." in fixed_locus,
     )
     check(
         "planck boundary note records the native dimensionless phase unit",
@@ -423,14 +429,14 @@ def main() -> int:
           "rescale-breaking (inhomogeneous) readout clause" in note)
     check("note localizes the freedom onto the density-to-angle junction",
           "density-to-angle junction" in note)
-    check("note consolidates onto R-eta sub-admission (ii)",
-          "sub-admission (ii)" in note and "names no new wall" in note)
+    check("note consolidates onto the R-eta open obligation",
+          "R-eta open obligation" in note and "names no new wall" in note)
     check("note quotes the radian-bridge primitive residual",
-          "Type-B-to-radian identification remains primitive" in note)
+          "Type-B-to-radian identification remains open" in note)
     check("note names the angle-native live route",
           "Angle-native route" in note)
-    check("note keeps the owner-governance route explicit",
-          "Owner-governance primitive" in note)
+    check("note keeps the approved-primitive route explicit",
+          "Approved-primitive proposal" in note)
     linked_authorities = [
         "(MINIMAL_AXIOMS_2026-06-29.md)",
         "(KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)",

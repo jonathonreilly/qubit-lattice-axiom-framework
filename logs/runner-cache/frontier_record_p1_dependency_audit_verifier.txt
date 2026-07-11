@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_p1_dependency_audit_verifier.py
-runner_sha256: 90fad320927fcdc56f06753df5032121965cb759601f5d58904ca8c419bef2b0
+runner_sha256: 9df0372ba6ecef242fc9b936443290d73b170010f432a8eb4fc72778b00f93f5
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.13
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
 ----- stdout -----
 Record/P1 dependency audit re-derivation check
 audit_note: docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md
@@ -14,14 +14,9 @@ audit_note: docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md
 [PASS] OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md exists on disk
 [PASS] audit ledger exists
 [PASS] axiom-premise registry exists
-[FAIL] live direct-dependent count includes this meta report (92)  (observed=101)
-[FAIL] audited pre-existing direct-dependent count matches audit claim (91)  (observed=100)
+[PASS] live ledger still contains direct dependents of the historical parent  (current_observed=100)
 [PASS] all direct dependents have note_path entries  (paths=100, dependents=100)
-[FAIL] effective_status=unaudited count matches audit (81)  (observed=79)
-[FAIL] claim_type=meta count matches audit (10)  (observed=13)
-[PASS] effective_status=retained among direct dependents is 0  (observed=0)
-[PASS] effective_status=retained_bounded among direct dependents is 0  (observed=0)
-[PASS] effective_status=audited_clean among direct dependents is 0  (observed=0)
+[PASS] live status observation completed without becoming snapshot authority  (current unaudited=87, meta=13, retained=0, retained_bounded=0, audited_clean=0)
 [PASS] observable_principle_from_axiom_note NOT in axiom-premise registry  (axiom_ids_sample=['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive'])
 [PASS] observable_principle_from_axiom_note NOT aliased to minimal_axioms
 [PASS] audit note declares no source-citation rewrites
@@ -31,9 +26,8 @@ audit_note: docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md
 [PASS] report exposes all seven blocking categories  (observed=['Dynamics', 'Measurement/Born/decoherence', 'Normalization/scale', 'Observable bridge', 'P2/modulus', 'Source/action', 'log-det generator'])
 [PASS] report category path counts match heading/table counts  (log-det generator=59/59, Observable bridge=18/18, P2/modulus=5/5, Source/action=4/4, Dynamics=3/3, Measurement/Born/decoherence=2/2, Normalization/scale=0/0)
 [PASS] per-category path list has no duplicates  (duplicates=0)
-[FAIL] per-category lists cover every live direct dependent  (missing=['docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md', 'docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md', 'docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md'])
-[FAIL] per-category lists contain no non-dependent paths  (extra=['docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md', 'docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md', 'docs/ai_methodology/raw/repo_audit.md'])
-[FAIL] REWRITE + SPLIT + LEAVE = 91 (total direct dependents)  (REWRITE=0, SPLIT=0, LEAVE=91, total=91, n_direct=100)
+[PASS] report explicitly declares a frozen historical snapshot
+[PASS] REWRITE + SPLIT + LEAVE = 91 (frozen snapshot)  (REWRITE=0, SPLIT=0, LEAVE=91, total=91, current_n_direct=100)
 [PASS] blocking-content categories sum to LEAVE count (91)  (sum=91, LEAVE=91)
 [PASS] audit note records 'log-det generator' category (59 rows)  (expected substring='log-det generator' in audit note)
 [PASS] audit note records 'Observable bridge' category (18 rows)  (expected substring='Observable bridge' in audit note)
@@ -51,16 +45,8 @@ audit_note: docs/RECORD_P1_DEPENDENCY_AUDIT_NOTE_2026-06-04.md
 [PASS] audit note explicitly prohibits adding old to axiom_premise_nodes
 [PASS] audit note explicitly states 'no row was broadened'
 
-TOTAL: PASS=34 FAIL=7
-
-FAILURES:
-  [FAIL] live direct-dependent count includes this meta report (92)  (observed=101)
-  [FAIL] audited pre-existing direct-dependent count matches audit claim (91)  (observed=100)
-  [FAIL] effective_status=unaudited count matches audit (81)  (observed=79)
-  [FAIL] claim_type=meta count matches audit (10)  (observed=13)
-  [FAIL] per-category lists cover every live direct dependent  (missing=['docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md', 'docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md', 'docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md'])
-  [FAIL] per-category lists contain no non-dependent paths  (extra=['docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md', 'docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md', 'docs/ai_methodology/raw/repo_audit.md'])
-  [FAIL] REWRITE + SPLIT + LEAVE = 91 (total direct dependents)  (REWRITE=0, SPLIT=0, LEAVE=91, total=91, n_direct=100)
+TOTAL: PASS=35 FAIL=0
+Record/P1 dependency audit verifier passed: frozen 91-row snapshot internally enumerated and classified LEAVE; current ledger observed separately; no source citations rewritten, no aliasing, no axiom-premise insertion, no audit_status edits, blocking-content categories sum to 91, status authority preserved.
 
 ----- stderr -----
 

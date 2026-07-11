@@ -361,7 +361,7 @@ established by the infinite construction.
 | `docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md` — registered axiom-premise primitive (`meta`) | approved contextual rescue route | `c_t=c_s` only | dynamics, flux, zero set, or kinetic branch |
 | `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md` — registered axiom-premise primitive (`meta`) | approved contextual rescue route | pointwise evaluation at a supplied state | state or kinetic selection |
 | `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` — registered axiom-premise primitive (`meta`) | units-only rescue scan | conversion by one supplied dimensionful scale | every dimensionless selector, kinetic law, flux, or zero set |
-| `docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md:87-92` — registered owner-governed residual | flavor occupancy/readout governance only | its recorded AC atoms | above-`C3` taste/Dirac/chirality or kinetic content |
+| `docs/audit/data/derivation_obligations.json` — open, zero-weight obligations | AC occupancy/readout targets only | nothing until derived | above-`C3` taste/Dirac/chirality or kinetic content |
 | explicit wrap-sign convention in §6 — no authority status claimed | finite regulator convention | selects a finite torus sector | bulk physical law |
 
 No partial path is misclassified as a new axiom. A future derived bridge that
@@ -398,7 +398,7 @@ violated premise in the countermodel.
 | kinetic two-flux-class note (§6) | plus branch remains the explicit countermodel inside the licensed surface | no current retirement; a valid exhaustive Admissibility bridge could close only its flux sub-residual |
 | `docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md` — `audited_clean` / `retained_no_go` | physical names close by convention, not derivation | no; naming convention has no kinetic content |
 | canonical bounded realization parent | declares extra premises and composes consequences | no; it is the legitimate bounded path already preserved |
-| owner-governed AC adoption | governance retires specified occupancy/readout atoms with explicit boundaries | no; its boundary explicitly supplies no above-`C3` taste/Dirac/chirality content |
+| open AC derivation obligations | track specified occupancy/readout targets without supplying them | no; they carry zero premise weight and no kinetic content |
 | registered primitive route | kinetic isotropy was adopted with a narrow structural boundary | no; the primitive explicitly supplies no dynamics or selector |
 
 Every similar retirement mechanism has been tested against the actual kinetic

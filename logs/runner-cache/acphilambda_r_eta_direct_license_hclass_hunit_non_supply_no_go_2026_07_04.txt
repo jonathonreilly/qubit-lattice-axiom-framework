@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py
+runner_sha256: c0e6708a715a8539dadaf7c16a2831a9a37a06d6a5a892b845f43fded53ad2ab
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 Record additivity and the R-eta unit-calibration countermodel
 ========================================================================
 
@@ -49,9 +57,12 @@ Part D: source and axiom guards
   [PASS] N4 uses no prior negative witness
   [PASS] N5 names tested resolutions
   [PASS] N6 records convention and theorem paths
-  [PASS] N7 contains the owner-premise and coordinate steelman
-  [PASS] N8 considers governance, derivation, primitive, and coordinate mechanisms
+  [PASS] N7 contains the coordinate steelman
+  [PASS] N8 considers historical withdrawal, derivation, primitive, and coordinate mechanisms
   [PASS] discipline gate records PASS
 
 ========================================================================
 TOTAL: PASS=40, FAIL=0
+
+----- stderr -----
+

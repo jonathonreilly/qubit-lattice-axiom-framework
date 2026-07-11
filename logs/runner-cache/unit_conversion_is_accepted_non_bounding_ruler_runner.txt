@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/unit_conversion_is_accepted_non_bounding_ruler_runner.py
-runner_sha256: 4229c36491c43a26a8eb8a6ae9294ba930b53fea3e783e879af508be5713d3fa
+runner_sha256: 52c4c68b16b4663a631be0334bece96447f025023d1d85c0a3a53b3bc674e43c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -20,10 +20,10 @@ A2. dimensionFUL = (dimensionless) x (the ONE ruler) -- Buckingham-Pi
   [PASS] every dimensionful output = (dimensionless data) x (the single ruler a^-1=M_Pl)  | so the ONLY dimensionful input any prediction needs is the one accepted ruler
 
 ==============================================================================
-A3. the ruler is an APPROVED, NON-BOUNDING primitive (policy section 6) -- not a Tier-A admitted premise
+A3. the ruler is an APPROVED, NON-BOUNDING primitive (policy section 6)
 ==============================================================================
    scale_reference_primitive (axiom_premise_nodes.json, owner-approved): chain-satisfies WITHOUT bounding
-   Tier-A admitted import (tier_a_admissions.json): chain-satisfies only at retained_bounded
+   Admission classes are retired: non-foundational inputs do not chain-satisfy
   [PASS] a row whose only non-retained dependency is the ruler is retention-eligible at the FULL tier  | relying on the ruler neither blocks nor caps the result
 
 ==============================================================================
@@ -34,7 +34,7 @@ A4. reconciliation: 'scale = clock-rate no-go' is about the RECORDS; the ruler r
    the accepted ruler supplies the unit => those dimensionful results are SCALE-RESOLVED, not blocked
    (retention-eligible modulo their DIMENSIONLESS inputs).
    distinct objects (NOT this ruler): Y_T source-measure / g_bare action-unit = a dimensionless
-   path-integral normalization (separate Tier-A); atomic Rydberg eV scale = ruler x (m_e, alpha)
+   path-integral normalization (separate open dependency); atomic Rydberg eV scale = ruler x (m_e, alpha)
    dimensionless ratios -- the residual there is dimensionless, not the ruler.
   [PASS] dimensionful results are scale-resolved by the accepted non-bounding ruler; the real gaps are dimensionless  | someone must convert lattice->physical units; that converter is the accepted ruler
 

@@ -246,8 +246,8 @@ effective status.
 
 ## Scope of this rigorization
 
-This rigorization is class B (graph-bookkeeping citation) plus class D
-(open-target registration). It does not change any algebraic content,
+This rigorization uses graph-bookkeeping citation plus open-target
+registration. It does not change any algebraic content,
 runner output, or load-bearing step classification. It records the
 upstream authority candidates the audit verdict expected, the runner
 that exercises the conditional support, and the missing-bridge-theorem
@@ -316,7 +316,7 @@ That conditional statement is **closed by the runner** (`PASS=19,
 FAIL=0`; cache stdout above). The class-A chart-side identities
 (`SELECTOR^2 = Q_Koide`, `2*SELECTOR/sqrt(3) = E2`, `Tr(H_base) = 0`,
 `Tr(H) = m`, Hermiticity of `H` on real chart coordinates) are exact
-finite-dimensional algebra on the retained chart; the class-B
+finite-dimensional algebra on the retained chart; the cross-note
 numerical solution, class-C chamber/PMNS checks, and class-D
 multi-start chamber-cluster evidence are reproducible from the
 committed runner.

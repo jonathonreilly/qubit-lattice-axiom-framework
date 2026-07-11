@@ -1,6 +1,9 @@
 # Record/P1 Dependency Audit (2026-06-04)
 
 **Date:** 2026-06-04
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** meta
 **Claim type:** meta
 **Status:** repo-semantics audit report; no theorem promotion, no rewrites
@@ -10,6 +13,10 @@ generated only after independent audit review.
 dependents of the old `observable_principle_from_axiom_note` after the
 2026-06-04 adoption of [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md)
 as the framework's three-axiom baseline (Lattice, Quantum, Record).
+**Snapshot boundary:** the 91-row counts, status breakdown, and per-row lists
+below are a frozen 2026-06-04 historical inventory, not a query of the current
+ledger. They supply no current dependency readiness; live pipeline counts may
+and do evolve independently.
 **Status authority:** independent audit lane only. This note does not
 write or predict audit verdicts.
 **Primary runner:**
@@ -129,9 +136,10 @@ dependents only.
 
 ## Per-row decisions
 
-The durable per-row record is the category list below. The verifier parses
-these lists and checks that they cover exactly the live 91-row direct-dependent
-set from the ledger, with no missing paths, no extra paths, and no duplicates.
+The durable per-row record is the frozen category list below. The verifier
+parses these lists and checks that they internally cover exactly the historical
+91-row snapshot, with no duplicates. It does not mistake later live-ledger
+growth for a defect in this historical report.
 The runner verifies accounting and discipline; it does not independently
 adjudicate the semantic category assignment.
 
@@ -318,7 +326,7 @@ pipeline/audit-queue property after the generated surfaces are recomputed.
 - [docs/audit/data/axiom_premise_nodes.json](audit/data/axiom_premise_nodes.json) — machine-readable axiom
   node registry; `observable_principle_from_axiom_note` is NOT in
   this file and must not be added.
-- [docs/audit/data/tier_a_admissions.json](audit/data/tier_a_admissions.json) — admitted-input registry;
+- [docs/audit/data/premise_decision_history.json](audit/data/premise_decision_history.json) — non-authoritative admission-era history;
   `AC_phi_lambda` and other Tier-A admissions live here, not in
   axiom-premise nodes.
 

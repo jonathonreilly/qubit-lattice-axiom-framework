@@ -63,7 +63,7 @@ execution requests even when the user says only `run`.
    `proposed_retained` / `proposed_promoted` only when the certificate supports
    a theorem-grade proposal and marks the later independent audit requirement;
    otherwise demote branch-local, conditional, same-surface,
-   admitted-observation, or Axiom* consequences to the narrowest honest status.
+   comparator-dependent, or Axiom* consequences to the narrowest honest status.
 12. Checkpoint `STATE.yaml`, `TRACE_GATE.md`, and `HANDOFF.md` throughout
    unattended work.
 13. After two audit/no-go/blocker cycles in a row, run a stretch attempt before

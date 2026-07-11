@@ -1,42 +1,21 @@
 #!/usr/bin/env python3
-"""Centralized accepted-premise policy for the audit pipeline.
+"""Centralized foundational-premise policy for the audit pipeline.
 
-Single source of truth for which cited authorities count as *accepted
-premises* -- dependencies that satisfy chain closure even though their own
-effective_status is not in a retained-grade bucket.
+Exactly two kinds of supplied physics content satisfy a dependency without an
+audited theorem row: framework axioms and explicitly approved primitives. Both
+are registered in ``docs/audit/data/axiom_premise_nodes.json`` and neither
+bounds downstream status.
 
-There are three supported classes:
+Governance decisions, derivation targets, conventions, historical admissions,
+and open obligations never satisfy a physics dependency. They must instead be
+derived through the audit lane or remain explicit conditional/open content.
 
-* axiom/primitive premises from docs/audit/data/axiom_premise_nodes.json. These
-  are framework axioms or explicitly approved primitives, are not audited,
-  and do not bound downstream status.
-* owner-governed residual premises from
-  docs/audit/data/owner_governed_premise_nodes.json. These are explicit
-  owner-adopted governance premises that retire formerly Tier-A residuals
-  without making them axioms or approved primitives. They satisfy chain closure
-  without Tier-A bounding, but only inside the recorded boundaries.
-* Tier-A derivation-target admissions from docs/audit/data/tier_a_admissions.json.
-  These are named non-axiom inputs accepted as chain-satisfying only at the
-  bounded tier until a retained derivation lands and the entry is removed.
-  Conventions listed in that file are survey metadata, not accepted premises:
-  the existing convention parent rows contain more than the vacuous convention
-  itself and must not be laundered as chain-satisfying theorem inputs.
+Standard textbook theorems are deliberately not handled here. The framework
+proves consumed textbook results inline at framework rigor, so they must earn
+retained-grade through the normal audit path and need no carve-out.
 
-Standard textbook theorems are deliberately NOT handled here. Rather than
-admit them on citation, the framework proves them inline at framework rigor
-(e.g. the UHF tracial-uniqueness density argument in
-POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE..., and the explicit Naimark
-isometry construction in LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME...), so
-they must earn retained-grade through the normal audit path and need no
-carve-out.
-
-Every consumer that asks "is this dep satisfied as upstream?" -- the LLM
-prompt renderer, compute_effective_status, audit_lint, and
-compute_reaudit_candidates -- MUST go through `is_accepted_premise_dep` so the
-policy cannot drift between them.
-
-Reads registries lazily and tolerates absence, so the Tier-A path is inert
-until docs/audit/data/tier_a_admissions.json lands.
+Every consumer that asks whether a dependency is supplied as foundational
+upstream must go through ``is_accepted_premise_dep`` so policy cannot drift.
 """
 from __future__ import annotations
 
@@ -45,145 +24,73 @@ from pathlib import Path
 
 _DATA_DIR = Path(__file__).resolve().parents[1] / "data"
 _AXIOM_PREMISE_NODES_PATH = _DATA_DIR / "axiom_premise_nodes.json"
-_OWNER_GOVERNED_PREMISE_NODES_PATH = _DATA_DIR / "owner_governed_premise_nodes.json"
-_TIER_A_ADMISSIONS_PATH = _DATA_DIR / "tier_a_admissions.json"
+_DOC_AUTHORITY_REGISTRY_PATH = _DATA_DIR / "doc_authority_registry.json"
 
-_AXIOM_PREMISE_IDS: set[str] | None = None
-_OWNER_GOVERNED_PREMISE_IDS: set[str] | None = None
-_TIER_A_DATA: dict | None = None
-_TIER_A_DERIVATION_TARGET_IDS: set[str] | None = None
-_TIER_A_CONVENTION_IDS: set[str] | None = None
+_FOUNDATIONAL_PREMISE_IDS: set[str] | None = None
+_NON_EVIDENCE_CONTEXT_IDS: set[str] | None = None
 
 
-def axiom_premise_ids() -> set[str]:
-    """Canonical axiom/approved-primitive premise ids.
-
-    Historical function name retained for callers. Entries in
-    axiom_premise_nodes.json chain-satisfy without bounding downstream rows.
-    """
-    global _AXIOM_PREMISE_IDS
-    if _AXIOM_PREMISE_IDS is None:
+def foundational_premise_ids() -> set[str]:
+    """Canonical axiom and approved-primitive ids."""
+    global _FOUNDATIONAL_PREMISE_IDS
+    if _FOUNDATIONAL_PREMISE_IDS is None:
         if not _AXIOM_PREMISE_NODES_PATH.exists():
-            _AXIOM_PREMISE_IDS = set()
-        else:
-            try:
-                data = json.loads(_AXIOM_PREMISE_NODES_PATH.read_text(encoding="utf-8"))
-                _AXIOM_PREMISE_IDS = set(data.get("canonical_ids") or [])
-            except Exception:
-                _AXIOM_PREMISE_IDS = set()
-    return _AXIOM_PREMISE_IDS
-
-
-def owner_governed_premise_ids() -> set[str]:
-    """Canonical owner-governed residual premise ids.
-
-    Entries in owner_governed_premise_nodes.json chain-satisfy without bounding
-    downstream rows. They are not axioms, not approved primitives, and not
-    theorem derivations; they are explicit owner-governance retirements of
-    formerly Tier-A residuals.
-    """
-    global _OWNER_GOVERNED_PREMISE_IDS
-    if _OWNER_GOVERNED_PREMISE_IDS is None:
-        if not _OWNER_GOVERNED_PREMISE_NODES_PATH.exists():
-            _OWNER_GOVERNED_PREMISE_IDS = set()
+            _FOUNDATIONAL_PREMISE_IDS = set()
         else:
             try:
                 data = json.loads(
-                    _OWNER_GOVERNED_PREMISE_NODES_PATH.read_text(encoding="utf-8")
+                    _AXIOM_PREMISE_NODES_PATH.read_text(encoding="utf-8")
                 )
-                _OWNER_GOVERNED_PREMISE_IDS = set(data.get("canonical_ids") or [])
+                _FOUNDATIONAL_PREMISE_IDS = set(data.get("canonical_ids") or [])
             except Exception:
-                _OWNER_GOVERNED_PREMISE_IDS = set()
-    return _OWNER_GOVERNED_PREMISE_IDS
+                _FOUNDATIONAL_PREMISE_IDS = set()
+    return _FOUNDATIONAL_PREMISE_IDS
 
 
-def tier_a_admissions_data() -> dict:
-    """Raw Tier-A admission registry data, or {} when absent/invalid."""
-    global _TIER_A_DATA
-    if _TIER_A_DATA is None:
-        if not _TIER_A_ADMISSIONS_PATH.exists():
-            _TIER_A_DATA = {}
-        else:
-            try:
-                _TIER_A_DATA = json.loads(
-                    _TIER_A_ADMISSIONS_PATH.read_text(encoding="utf-8")
-                )
-            except Exception:
-                _TIER_A_DATA = {}
-    return _TIER_A_DATA
-
-
-def admitted_derivation_target_ids() -> set[str]:
-    """Tier-A admitted non-axiom derivation targets.
-
-    Inert-by-default: returns the empty set if the registry file is absent, so
-    landing the code patch alone changes no statuses. Distinct from axioms:
-    these are admitted-for-now with no-go portfolios and make dependents
-    bounded until the admission is retired by a retained derivation.
-    """
-    global _TIER_A_DERIVATION_TARGET_IDS
-    if _TIER_A_DERIVATION_TARGET_IDS is None:
-        data = tier_a_admissions_data()
-        _TIER_A_DERIVATION_TARGET_IDS = set((data.get("derivation_targets") or {}).keys())
-    return _TIER_A_DERIVATION_TARGET_IDS
-
-
-def admitted_convention_ids() -> set[str]:
-    """Tier-A convention rows listed for survey completeness only."""
-    global _TIER_A_CONVENTION_IDS
-    if _TIER_A_CONVENTION_IDS is None:
-        data = tier_a_admissions_data()
-        _TIER_A_CONVENTION_IDS = set((data.get("conventions") or {}).keys())
-    return _TIER_A_CONVENTION_IDS
-
-
-def tier_a_admission_ids() -> set[str]:
-    """All Tier-A accepted non-axiom premises."""
-    return admitted_derivation_target_ids()
+def axiom_premise_ids() -> set[str]:
+    """Compatibility name for callers; includes axioms and approved primitives."""
+    return foundational_premise_ids()
 
 
 def accepted_premise_ids() -> set[str]:
-    """Ids accepted as chain-satisfying premises."""
-    return axiom_premise_ids() | owner_governed_premise_ids() | tier_a_admission_ids()
+    """Ids supplied by the axiom or approved-primitive foundation."""
+    return foundational_premise_ids()
 
 
 def is_axiom_premise(dep_id: str) -> bool:
-    return dep_id in axiom_premise_ids()
-
-
-def is_owner_governed_premise(dep_id: str) -> bool:
-    return dep_id in owner_governed_premise_ids()
-
-
-def is_admitted_derivation_target(dep_id: str) -> bool:
-    return dep_id in admitted_derivation_target_ids()
-
-
-def is_admitted_convention(dep_id: str) -> bool:
-    return dep_id in admitted_convention_ids()
-
-
-def is_tier_a_admission(dep_id: str) -> bool:
-    return dep_id in tier_a_admission_ids()
+    """Compatibility predicate for an axiom or approved primitive."""
+    return dep_id in foundational_premise_ids()
 
 
 def is_accepted_premise_dep(dep_id: str) -> bool:
-    """True if dep_id is an accepted premise.
+    """True only for a registered axiom or explicitly approved primitive."""
+    return dep_id in foundational_premise_ids()
 
-    Such a dep satisfies chain closure even though its own effective_status is
-    not retained-grade. The citing row must still pass its own independent
-    audit. Axiom/primitive premises do not bound downstream rows;
-    `compute_effective_status` separately downgrades rows that depend on Tier-A
-    derivation targets to `retained_bounded`.
-    """
-    return dep_id in accepted_premise_ids()
+
+def non_evidence_context_ids() -> set[str]:
+    """Registered metadata/history ids that cannot satisfy science edges."""
+    global _NON_EVIDENCE_CONTEXT_IDS
+    if _NON_EVIDENCE_CONTEXT_IDS is None:
+        try:
+            data = json.loads(
+                _DOC_AUTHORITY_REGISTRY_PATH.read_text(encoding="utf-8")
+            )
+            _NON_EVIDENCE_CONTEXT_IDS = {
+                str(row["claim_id"])
+                for row in data.get("rows") or []
+                if row.get("chain_satisfying") is False and row.get("claim_id")
+            }
+        except Exception:
+            _NON_EVIDENCE_CONTEXT_IDS = set()
+    return _NON_EVIDENCE_CONTEXT_IDS
+
+
+def is_non_evidence_context_dep(dep_id: str) -> bool:
+    """True when registry policy forbids a metadata edge as theorem support."""
+    return dep_id in non_evidence_context_ids()
 
 
 def _reset_cache_for_tests() -> None:
-    global _AXIOM_PREMISE_IDS, _OWNER_GOVERNED_PREMISE_IDS, _TIER_A_DATA
-    global _TIER_A_DERIVATION_TARGET_IDS, _TIER_A_CONVENTION_IDS
-    _AXIOM_PREMISE_IDS = None
-    _OWNER_GOVERNED_PREMISE_IDS = None
-    _TIER_A_DATA = None
-    _TIER_A_DERIVATION_TARGET_IDS = None
-    _TIER_A_CONVENTION_IDS = None
+    global _FOUNDATIONAL_PREMISE_IDS, _NON_EVIDENCE_CONTEXT_IDS
+    _FOUNDATIONAL_PREMISE_IDS = None
+    _NON_EVIDENCE_CONTEXT_IDS = None

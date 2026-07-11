@@ -1,6 +1,9 @@
 # Koide Higgs-Dressed Resolvent Root Theorem
 
 **Date:** 2026-04-20
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Lane:** charged-lepton Koide, constructive transport avenue
 **Status:** exact scalar reduction of the proposed_retained Higgs-dressed intermediate-propagator route, **conditional on the imported upstream H3/readout package**, including the observational PMNS chamber pins `(M_STAR, DELTA_STAR, Q_PLUS_STAR)` that fix the missing-axis affine Hermitian `H_*` and the chart/readout constants used by `H3`. This does **not** finish a proposed_retained Koide derivation, but it turns the old broad transport ambiguity into one scalar root law on the most natural missing-axis lift, contingent on that upstream package.
 **Runner:** `scripts/frontier_koide_higgs_dressed_resolvent_root_theorem.py`
@@ -282,7 +285,7 @@ audit dependency transparent.
   dimensionless generation-pattern part of that admission (occupancy/`Q`
   selection and `delta` readout) is the Tier-A `AC_phi_lambda` entry,
   [STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-  (`docs/audit/data/tier_a_admissions.json`); the absolute scale pin `m_*`
+  (`docs/audit/data/premise_decision_history.json`); the absolute scale pin `m_*`
   remains the separate open scale residual.
 
 The chart/readout constants `E1 = sqrt(8/3)`, `E2 = sqrt(8)/3`, `gamma = 1/2`,

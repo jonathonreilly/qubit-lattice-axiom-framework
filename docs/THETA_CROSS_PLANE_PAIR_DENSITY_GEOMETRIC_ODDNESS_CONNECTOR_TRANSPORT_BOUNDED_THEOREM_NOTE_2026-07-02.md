@@ -1,6 +1,9 @@
 # The Cross-Plane Pair Density: an Epsilon-Assembled Two-Plaquette Object Whose Exact Quadratic Form Is a Coefficient-One Cartan Gram Pairing, Whose Theta Parity Is Geometric (Exactly Odd Under Reflection at All Orders, Internally Flip-Even), and Whose Frame and Ordering Content Enter Through Connectors — the (ii'-final) Insertion Structurally Assembled (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite identities and gauge-invariance
 certificates; not a terminal no-go and not a change to the theta retirement
@@ -8,11 +11,10 @@ record).
 **Status authority:** independent audit lane only. This note does not set an
 audit verdict, edit registries, register primitives, change axioms, retire or
 re-grade any Tier-A admission, or claim Strong-CP closure.
-**Current-main posture (2026-07-07):** theta is already retired from live
-Tier-A by retained derivation. This note banks a historical bounded support
-calculation for the theta-side cross-plane density campaign; it does not
-reopen, modify, or re-grade the theta retirement record or
-`tier_a_admissions.json`.
+**Historical posture (2026-07-07):** the repo then described theta as retired
+under an older admission taxonomy. **Current posture (2026-07-11):** that
+taxonomy has no premise authority. This note supplies conditional gauge-side
+support only; the mass-side cross-sector determinant readout is an `open_gate`.
 **Primary runner:**
 [`scripts/theta_cross_plane_pair_density_geometric_oddness_connector_transport_2026_07_02.py`](../scripts/theta_cross_plane_pair_density_geometric_oddness_connector_transport_2026_07_02.py)
 **Runner cache:**
@@ -118,7 +120,7 @@ note's runner.
    open sibling PRs.
 
 4. **Retired theta registry text**
-   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
+   ([`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json),
    historical gauge-side context, quoted from the retired entry): the
    residual was "localized to the multi-plaquette / large-gauge-winding
    account (within the supplied per-plaquette class the local cross-plane F
@@ -243,7 +245,7 @@ the parity is located geometrically.
 | epsilon-assembled cross-plane pair density | CONSTRUCTED: exact quadratic form, exact geometric oddness, gauge-invariant, connector-borne frame data |
 | per-plaquette cross-plane slot | ABSENT in the supplied class (registry-tracked statement) — consistent: the slot lives at pair level |
 | derivation of the density from the framework surface | OPEN in this historical support surface — (ii'-derive), the theta-side target |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

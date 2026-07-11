@@ -2,8 +2,8 @@
 """Finite checks for the Strong-CP theta_bar structured open gate.
 
 The runner verifies form-degree, O_h pseudoscalar, K-real circulant, chiral
-basis-shift, and AC_phi_lambda overlap facts. It does not change the Tier-A
-registry, retire the theta admission, or prove a Strong-CP solution.
+basis-shift, and AC_phi_lambda overlap facts. It does not change premise
+policy, close theta, or prove a Strong-CP solution.
 """
 
 from __future__ import annotations
@@ -128,7 +128,7 @@ def main() -> int:
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed) - sum(passed)}")
     print("FINDING: the runner supports a structured open gate for theta_bar.")
     print("It verifies finite form-degree, O_h pseudoscalar, and C_3 circulant facts;")
-    print("it does not retire the Strong-CP Tier-A admission, change registry counts,")
+    print("it does not close the Strong-CP open problem or change premise policy,")
     print("or establish a Strong-CP solution. No audit status.")
     return 0 if all(passed) else 1
 

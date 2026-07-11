@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py
+runner_sha256: 1462c33481306c33b760395e713485e2a089124ca1c2a01bf607d7b0f70c1108
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.11
+status: ok
+----- stdout -----
 AC_phi_lambda measure binary axiom-update no-go verifier
 
 ========================================================================================
@@ -6,28 +14,29 @@ A. source presence and audit anchors
 [PASS] exists: docs/ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
 [PASS] exists: docs/audit/data/axiom_premise_nodes.json
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 [PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
 [PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
 [PASS] exists: docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md
-[PASS] carrier-measure boundary row is retained_bounded
-[PASS] carrier-measure boundary row is audited_clean
+[PASS] carrier-measure boundary row is present
+[PASS] carrier-measure boundary status is audit-lane-owned
 
 ========================================================================================
-B. Tier-A registry boundary
+B. historical decision boundary and current open gate
 ========================================================================================
-[PASS] Tier-A has a live genuine admitted input
+[PASS] decision history has no live premise inputs
+[PASS] decision history live target map is empty
 [PASS] AC minimum decomposition keeps occupancy selection
 [PASS] machine registry states doublet reading/occupancy selection
 [PASS] machine registry states sector-tied vs orbit/holomorphic count
 [PASS] machine registry states r in {1, 1/2}
 [PASS] machine registry states custody K-reality
 [PASS] machine registry states det_C/equal-power selectors
-[PASS] human registry names the reading/occupancy binary
-[PASS] note says registry is not edited
-[PASS] note says AC_phi_lambda is not retired
+[PASS] human registry points to the occupancy derivation obligation
+[PASS] note routes the residual to the occupancy open gate
+[PASS] note keeps occupancy obligation open
 
 ========================================================================================
 C. approved premise-node registry
@@ -151,7 +160,7 @@ J. note discipline
 [PASS] N6 gate present
 [PASS] N7 gate present
 [PASS] N8 gate present
-[PASS] note carries boundary phrase: AC_phi_lambda is not retired
+[PASS] note carries boundary phrase: The AC occupancy derivation obligation remai
 [PASS] note carries boundary phrase: No value of `r` is derived, selected, or pre
 [PASS] note carries boundary phrase: R-eta and theta are untouched.
 [PASS] note carries boundary phrase: derive the physical generation readout parti
@@ -175,5 +184,8 @@ K. markdown dependency and context control
 [PASS] verification block states fail-zero threshold
 
 ========================================================================================
-TOTAL: PASS=130 FAIL=0
+TOTAL: PASS=131 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

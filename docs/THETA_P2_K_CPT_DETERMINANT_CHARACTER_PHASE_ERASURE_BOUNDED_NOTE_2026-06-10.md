@@ -1,5 +1,9 @@
 # Theta P2 K/CPT Determinant-Character Phase Erasure: Bounded Candidate Route
 
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
+
 **Date:** 2026-06-10 (split from
 `TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
 so the strong-CP mass-orientation route stands on the theta surface alone,
@@ -26,7 +30,7 @@ This note proves one bounded fact:
 
 It does not discharge the strong-CP mass-orientation premise by itself,
 derive the strong-CP action-form premise, or change
-`docs/audit/data/tier_a_admissions.json`. Those moves require later
+`docs/audit/data/premise_decision_history.json`. Those moves require later
 registry/audit handling and the determinant-readout bridge cited below, whose
 audit status is owned by the independent audit lane.
 

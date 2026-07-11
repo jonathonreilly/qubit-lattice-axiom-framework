@@ -26,14 +26,13 @@ Run `/framework-refresher` first if you have not this session.
 3. **Retained-grade theorems** — verify each via `/ledger` that
    `effective_status` is `retained`, `retained_bounded`, or `retained_no_go`
    on `origin/main`. A note's own `Status:` header is not evidence.
-4. **Tier-A admissions** from `docs/audit/data/tier_a_admissions.json`, with
-   the explicit consequence that the result is bounded until the admission is
-   retired.
+4. **Named conditional/open dependencies** — these carry zero premise weight
+   and must be independently derived before they can support retained closure.
 
 No continuum spacetime, fields, Hamiltonians/Lagrangians, Born weights,
 species identifications, gauge groups, or measurement dynamics may be assumed
-— each enters only as a named derivation lane with retained status, an
-explicit admission, or the disclosed target itself.
+— each enters only as a named derivation lane with retained status or as the
+disclosed conditional target itself.
 
 ## Derivation Protocol
 
@@ -45,7 +44,7 @@ explicit admission, or the disclosed target itself.
 
 ### 2. Build the Premise Ledger
 - List every axiom, approved primitive, retained theorem (with
-  `effective_status`), and admission the derivation will use.
+  `effective_status`), and open obligation the derivation will encounter.
 - Anything not on the allowed list above is a new import: stop and flag it
   for explicit user approval instead of using it silently.
 
@@ -95,7 +94,7 @@ Write the derivation to `.claude/science/derivations/{slug}-{date}.md`:
 {what is being derived, with quantitative characterization and source}
 
 ## Premise Ledger
-{axioms / approved primitives / retained deps with effective_status / admissions}
+{axioms / approved primitives / retained deps with effective_status / open obligations}
 
 ## Minimal Mechanism
 {smallest configuration exhibiting the behavior}

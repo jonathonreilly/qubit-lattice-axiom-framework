@@ -82,25 +82,24 @@ bounded theorem surfaces when they are scoped, labelled, and
 dependency-checked; repo-wide axiom additions and primitive additions are not
 review-loop fixes.
 
-Review-loop must keep accepted premise classes distinct. Repo-wide axioms and
+Review-loop must enforce the two supplied premise types. Repo-wide axioms and
 explicitly approved framework primitives are registered in
 `docs/audit/data/axiom_premise_nodes.json` and chain-satisfy dependencies
-without making downstream rows `retained_bounded`. Tier-A admitted derivation
-targets are registered in `docs/audit/data/tier_a_admissions.json` and
-chain-satisfy only at `retained_bounded` until retired by a retained
-derivation. Record is part of the approved `minimal_axioms` node in its narrow
-permanent-record form, not a Tier-A admission; the older
+without making downstream rows `retained_bounded`. No admission class exists;
+`docs/audit/data/premise_decision_history.json` is provenance only and never
+chain-satisfies. Record is part of the approved `minimal_axioms` node in its
+narrow permanent-record form; the older
 `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` parent is not an axiom-premise node.
-The scale-reference primitive is the approved units primitive, not a Tier-A
+The scale-reference primitive is the approved units primitive, not an
 admission or a bounded Planck import. The kinetic-isotropy primitive is the
-approved structural OS0 kinetic-form isotropy `c_t = c_s`, not a Tier-A
+approved structural OS0 kinetic-form isotropy `c_t = c_s`, not an
 admission or a bounded-status source; it supplies no dynamics, Lorentz-closure
 theorem, absolute scale, spacing-ratio theorem, mass ratio, coupling, mixing
 angle, phase, selector, readout bridge, probability rule, normalization rule,
 or empirical match. New axioms and new primitives both require explicit owner
 approval and a reviewed registry/policy update before review-loop may treat
 them as accepted premises.
-Before naming a changed dependency as an import, wall, Tier-A admission, or
+Before naming a changed dependency as an import, wall, or
 bounded-status source, perform the primitive registry check in
 `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. In particular, if
 the dependency is only the registered `scale_reference_primitive`, treat the
@@ -143,7 +142,7 @@ within-sector data, occupancy rules, P2/modulus, log-det readouts,
 source/action bridges, scale, local observability, law-admissibility or
 transition relations, kinetic-branch selection, or arbitrary observable
 identification remain compatible downstream targets, but require derivation,
-bridge, explicit admission, or approved primitive registration before use as
+bridge, or approved primitive registration before use as
 load-bearing content. Do not
 land new science under bare letter-number names such as `A1`, `A2`, `G1`,
 or `R3`; those labels are overloaded with axioms, assumptions, Lie
@@ -151,7 +150,7 @@ types, lane stages, route codes, and branch blocks. Use the explicit
 scientific name on live science surfaces; archival aliases belong
 only in clearly historical work-history/archive material. Review-loop must
 not treat the framework baseline as a
-new axiom, new admitted premise, regulator interpretation, or optional
+new axiom, new supplied premise, regulator interpretation, or optional
 theory language. Correcting a PR back to this repo language is allowed. This
 does not promote downstream science by itself: physical-species
 identifications, `C_3`-breaking selectors, kinetic-branch selectors,
@@ -206,7 +205,7 @@ Parse:
    - `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`
    - `docs/audit/data/axiom_premise_nodes.json` and the source notes named by
      relevant primitive nodes
-   - `docs/audit/data/tier_a_admissions.json`
+   - `docs/audit/data/premise_decision_history.json`
    - `docs/publication/ci3_z3/` when publication-facing files changed
    - `docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md` when
      quantitative or imported-value claims changed
@@ -324,10 +323,10 @@ locally and report that limitation.
   Inventory every measured, fitted, literature, PDG, cosmological,
   normalization, boundary-condition, or convention input. Classify each as
   `zero-input structural`, `framework-derived`, `one computed lattice input`,
-  `admitted normalization/boundary condition`, `standard/literature
+  `explicit normalization/boundary condition`, `standard/literature
   correction`, `observational comparator`, `support-only`, `insensitive
   nuisance`, or `unjustified import`. For a Nature-grade retention claim, every
-  import must be derived, admitted with a narrow role, quantitatively
+  import must be derived, disclosed as a non-satisfying condition with a narrow role, quantitatively
   insensitive, or the claim must be demoted.
 
 - `NatureRetentionReviewer`
@@ -365,8 +364,8 @@ locally and report that limitation.
   candidate whose load-bearing claim is a labeling/naming/convention
   statement (parallel to the u/c/t mass-ordering convention or the
   e/μ/τ charged-lepton naming) rather than an algebraic claim with
-  explicit named admissions. A labeling convention has no propositional
-  content to admit, so `retained_bounded` grade does not apply — the
+  explicit named conditions. A labeling convention has no propositional
+  premise content, so `retained_bounded` grade does not apply — the
   grade is for algebraic claims with explicit named premises, not for
   stipulations about names.
 
@@ -380,7 +379,7 @@ locally and report that limitation.
        ("If labeling, the right outcome is a `meta` convention note").
 
   Output `PASS` if the candidate is genuinely algebraic with named
-  admissions, `SPLIT-REQUIRED` if labeling content is bundled with
+  conditions, `SPLIT-REQUIRED` if labeling content is bundled with
   algebraic content (ship the algebraic theorem narrow + the convention
   as a separate `meta` note), or `DEMOTE-TO-META` if the candidate is
   purely convention with no derivation. The reviewer must not approve a
@@ -593,7 +592,7 @@ Otherwise apply the narrowest honest fix:
    false PASS checks, and code/prose mismatches.
 2. Demote overclaimed status when the artifact supports only support/bounded
    language.
-3. Mark imported values explicitly; distinguish derived, admitted, fitted,
+3. Mark imported values explicitly; distinguish derived, conditional, fitted,
    measured, literature, boundary-condition, and insensitive nuisance inputs.
 4. Add or repair paired runner/note references only when the artifact exists.
 5. Make audit-system hygiene fixes only when they do not change the science:
@@ -821,13 +820,13 @@ notes, apply the audit-hash churn guard above before landing any broad cleanup.
 
 ```bash
 # Source notes whose claim_type is no_go, or whose Status / Type line
-# names walls / admissions / "conditional on" content
+# names walls / open conditions / "conditional on" content
 git diff --name-only origin/main...HEAD -- 'docs/*NO_GO*.md' 'docs/*BOUNDED*.md' \
                                            'docs/*STRETCH_ATTEMPT*.md' \
                                            'docs/*OBSTRUCTION*.md'
 # Audit-data rows whose verdict_rationale or claim_type record walls
 git diff origin/main...HEAD -- docs/audit/data/audit_ledger.json \
-  | grep -E '"claim_type": "no_go"|"verdict_rationale".*wall|"verdict_rationale".*admission'
+  | grep -E '"claim_type": "no_go"|"verdict_rationale".*wall|"verdict_rationale".*condition'
 # Any source note touched on this branch whose body contains negative-claim shape
 git diff origin/main...HEAD -- 'docs/*.md' \
   | grep -E 'structurally undecidable|no retained primitive|requires new axiom|cannot be derived from A_min|conditional on .* walls?'

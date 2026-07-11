@@ -118,8 +118,8 @@ def main() -> int:
     check("N4 uses no prior negative witness", "No prior no-go row is cited as evidence" in note)
     check("N5 names tested resolutions", "empty collection, a singleton eta-angle" in note and "three-record cycle holonomy" in note)
     check("N6 records convention and theorem paths", "convention-only coordinate ratification" in note and "same-observable determinant-line/holonomy theorem" in note)
-    check("N7 contains the owner-premise and coordinate steelman", "current Class B AC(ii) premise already" in note and "same observable" in note)
-    check("N8 considers governance, derivation, primitive, and coordinate mechanisms", "Tier-A-to-Class-B adoption" in note and "theta retirement" in note and "scale-reference primitive" in note and "registered mass-coordinate reconstruction" in note)
+    check("N7 contains the coordinate steelman", "radians make the identity coefficient" in note and "same observable" in note)
+    check("N8 considers historical withdrawal, derivation, primitive, and coordinate mechanisms", "historical AC(ii) governance adoption and withdrawal" in note and "theta mass-side split" in note and "scale-reference primitive" in note and "registered mass-coordinate reconstruction" in note)
     check("discipline gate records PASS", "**Gate result: PASS.**" in note)
 
     print("\n" + "=" * 72)

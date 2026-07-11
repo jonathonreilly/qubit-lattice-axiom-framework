@@ -5,11 +5,10 @@
 **Status:** NON-AUTHORITATIVE PROPOSAL ONLY. Owner approved landing this file
 as discussion/backlog material on 2026-06-16, not as a live registry. It is
 NOT wired into the audit pipeline, NOT citable authority for audit verdicts,
-NOT a replacement for `docs/audit/data/tier_a_admissions.json`, and NOT a
+NOT a replacement for `docs/audit/data/premise_decision_history.json`, and NOT a
 mechanism for converting `audited_conditional` rows to `retained_bounded`.
-Any future live registry, Tier-A migration, schema wiring, or verdict effect
-requires a separate explicit owner approval and independent audit/tooling
-review.
+This proposal is closed: no admission registry or migration path is live.
+Current premise authority is limited to axioms and approved primitives.
 **Proposed artifact:** [`docs/BOUNDED_ADMISSION_REGISTRY_PROPOSAL_2026-06-15.json`](BOUNDED_ADMISSION_REGISTRY_PROPOSAL_2026-06-15.json)
 (first-pass populated draft; would eventually live at
 `docs/audit/data/bounded_admissions.json` once approved and wired).
@@ -34,10 +33,10 @@ is no atom-level index. Consequences:
 
 ## Proposed future structure: one registry, `tier` as a field
 
-This is a proposed future design, not current repo machinery. The live repo
-still uses `docs/audit/data/tier_a_admissions.json` for Tier-A admissions. If
-separately approved later, a bounded-admission catalog could make **"Tier-A"**
-the top value of a `tier` field rather than a separate file.
+This is a superseded historical proposal, not current repo machinery.
+`docs/audit/data/premise_decision_history.json` preserves provenance only and
+cannot supply or bound a dependency. The proposed catalog was never adopted;
+the current foundation contains only axioms and approved primitives.
 
 One entry per **deduplicated atom**:
 

@@ -1,4 +1,7 @@
 # PMNS Twisted Flux Transfer Holonomy Boundary
+
+**Current authority (2026-07-11):** legacy Tier-A routing below is historical
+provenance only and supplies no premise.
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem;
 Tier-A routing made explicit 2026-06-11 — see "Registered Tier-A routing")
 **Admitted context inputs:** staggered-Dirac realization derivation target
@@ -113,7 +116,7 @@ unregistered conditional blocker.
    parent `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is the
    registered Tier-A derivation target `AC_phi_lambda` (display
    `AC_φλ`) in the admission registry
-   (`docs/audit/data/tier_a_admissions.json`). This note
+   (`docs/audit/data/premise_decision_history.json`). This note
    routes the carrier naming **into** that registered target; it does
    **not** close the gate. Under the published chain rule
    (`docs/audit/scripts/compute_effective_status.py`), a clean

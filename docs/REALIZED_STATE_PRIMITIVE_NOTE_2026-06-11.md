@@ -49,9 +49,8 @@ realized state is registered data, not derivation output.
 This declaration supplies one law-admissible realized-state reference. The
 Lattice + Qubit + Admissibility + Record baseline is not used here as a
 state-selection theorem, and no state selection is claimed. The primitive
-records the laws-versus-state interface without treating the supplied state as
-a Tier-A admitted derivation target, which would incorrectly bound lanes whose
-structural content is otherwise clean.
+records the laws-versus-state interface directly and therefore does not bound
+lanes whose structural content is otherwise closed.
 
 ## What This Does Not Do
 
@@ -98,15 +97,14 @@ stronger input).
 
 ## Audit-Pipeline Treatment
 
-The machine-readable distinction is:
+The machine-readable rule is:
 
 - `docs/audit/data/axiom_premise_nodes.json` lists framework axioms and
   explicitly approved framework primitives. These dependencies chain-satisfy
   without bounding downstream rows.
-- `docs/audit/data/tier_a_admissions.json` lists non-axiom derivation-target
-  admissions. These dependencies chain-satisfy only at `retained_bounded`
-  until the relevant admission is retired by a retained derivation.
+- no admission registry or third premise class exists. Every other scientific
+  dependency must be retained-derived or remain conditional/open.
 
-The realized-state primitive belongs to the first registry, not the second. It
+The realized-state primitive belongs to the sole foundation registry. It
 carries no contingent content, so rows quoting realized-state data remain
 conditional on that supplied data.

@@ -10,6 +10,10 @@ runner: scripts/frontier_record_composition_bridge_positivity_2026_07_02.py
 
 # Record-Composition Bridge: C-add/POS/LOC Separate Named Semigroup Candidates; Nearest-Neighbor Heat Is the Finite-N Witness (Bounded Note)
 
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
+
 **Date:** 2026-07-02
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
@@ -232,7 +236,7 @@ not close the action wall.
   kernel witness; "not in-class" is scoped to the spatial wrap coefficient witness;
   "nearest-neighbor heat" is a named-candidate survivor/witness, not a global selector.
 - **N6 partial-closure path scan:** possible homes for C-add are explicitly listed as
-  owner-governed options: primitive, banked Dynamics proposal, or named conditional
+  available options: approved primitive, banked Dynamics proposal, or named conditional
   premise. None is adopted here.
 - **N7 steelman:** a positive local convolution semigroup outside the named list, an
   asymmetric nearest-neighbor generator, or an SU(3)-specific action could evade the

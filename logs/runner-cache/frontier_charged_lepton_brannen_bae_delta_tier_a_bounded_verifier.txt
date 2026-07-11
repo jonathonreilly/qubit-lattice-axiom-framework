@@ -1,23 +1,24 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.py
-runner_sha256: 194b967d1c29b89e94a35e6b5ae6615b07532f5ab71efc0fa84a06134e0234ee
+runner_sha256: bb7a810dece37fb661d2c2274171ff01d8277c2b824d06375cb6a647656130c4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
-=== Charged-Lepton Brannen-BAE Delta Tier-A Bounded Theorem ===
+=== Charged-Lepton Brannen-BAE Delta Conditional Algebra ===
 
-Scope: bounded_theorem on Brannen-BAE algebraic chain under EXPLICIT
-       Tier-A AC_phi_lambda admission of delta=2/9. Does NOT derive
-       delta, sqrt(2) BAE, or scale a. Does NOT promote Tier-A.
+Scope: bounded algebraic chain under explicit open hypotheses.
+       Does NOT derive delta=2/9 or sqrt(2).
+       delta, sqrt(2) BAE, or scale a. Does NOT promote a premise.
 
-[PASS] S1.a: Brannen-BAE algebra computes three values from (B)+(TA)  (values_by_k = [2.3794381716332555, 0.040349908219207364, 0.5802119201475366])
-[PASS] S1.b: amplitude coefficient is sqrt(2) (BAE Tier-A admission)  (sqrt(2) is the BAE amplitude; part of AC_phi_lambda Tier-A bundle per registry)
+[PASS] S1.a: Brannen-BAE algebra computes three values from explicit hypotheses  (values_by_k = [2.3794381716332555, 0.040349908219207364, 0.5802119201475366])
+[PASS] S1.b: amplitude coefficient is sqrt(2) (explicit conditional hypothesis)  (sqrt(2) is an open BAE amplitude input, not a premise)
 [PASS] S1.c: phase increment is the Z_3 native step 2*pi/3  (Z_3 character step (framework-native angular unit alpha_2))
-[PASS] S2.ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md: Tier-A authority present on origin/main  (registry classifies AC_phi_lambda as Tier-A admitted input)
-[PASS] S2.tier_a_admissions.json: Tier-A authority present on origin/main  (registry classifies AC_phi_lambda as Tier-A admitted input)
+[PASS] S2.ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md: context surface present  (history is provenance only; current gate is open and non-premise)
+[PASS] S2.premise_decision_history.json: context surface present  (history is provenance only; current gate is open and non-premise)
+[PASS] S2.AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md: context surface present  (history is provenance only; current gate is open and non-premise)
 [PASS] S2.no_go_portfolio: AC_phi_lambda no_go portfolio members present on origin/main  (3/3 no_go rows present (acknowledged as boundary, not weakened))
 [PASS] S3.electron: sorted positive ratio matches independent target exactly  (computed 0.040349908219207, target 0.040349908219207)
 [PASS] S3.muon: sorted positive ratio matches independent target exactly  (computed 0.580211920147537, target 0.580211920147537)
@@ -26,18 +27,18 @@ Scope: bounded_theorem on Brannen-BAE algebraic chain under EXPLICIT
 [PASS] S4.b: Q = 2/3 phase-independence verified at three other delta values  (confirms Q=2/3 is structural (sqrt(2) ansatz), NOT evidence for delta=2/9)
 [PASS] S5: PDG-extracted sorted ratios match Brannen-BAE values within 5e-5 per slot  (max per-slot relative deviation = 2.88e-05 (sidecar; not load-bearing))
 [PASS] S5.delta_PDG: empirical delta_PDG - 2/9 = 4.7e-5 rad (sidecar)  (delta_PDG - 2/9 = 0.000048 rad; PDG-extracted comparator only)
-[PASS] H1: this note does NOT derive delta = 2/9; explicit Tier-A AC_phi_lambda admission  (Tier-A registry classifies delta as AC_phi_lambda admission; no derivation attempted here)
-[PASS] H2: does NOT promote AC_phi_lambda Tier-A admission to retained  (registry retains its current meta status; this note is downstream consumer only)
+[PASS] H1: this note does NOT derive delta = 2/9; it is an explicit hypothesis  (no derivation attempted here; the open gate remains)
+[PASS] H2: does NOT promote an AC_phi_lambda hypothesis to retained  (historical decisions are provenance only; this note is conditional)
 [PASS] H3: does NOT weaken any retained no_go in the AC_phi_lambda no_go portfolio  (all three radian-bridge no_gos acknowledged as boundary, not retired)
-[PASS] H4: PDG values are sidecar in S5 only; NOT load-bearing for S1-S4  (DELTA = 2/9 is admitted per Tier-A registry; not extracted from PDG)
-[PASS] H5: does NOT derive the sqrt(2) BAE amplitude; that's part of AC_phi_lambda bundle  (sqrt(2) accepted as part of AC_phi_lambda Tier-A admission)
-[PASS] H6: does NOT derive overall charged-lepton scale a  (scale a is Tier-A 'S' (absolute scale) admission per registry; separate from AC_phi_lambda)
+[PASS] H4: PDG values are sidecar in S5 only; NOT load-bearing for S1-S4  (DELTA = 2/9 is an explicit hypothesis; not extracted from PDG)
+[PASS] H5: does NOT derive the sqrt(2) BAE amplitude; that's part of AC_phi_lambda bundle  (sqrt(2) is an explicit open hypothesis)
+[PASS] H6: does NOT derive overall charged-lepton scale a  (scale a is outside this dimensionless conditional calculation)
 [PASS] H7: does NOT make any neutrino-sector claim  (charged-lepton chamber only; neutrino sector entirely out of scope)
-[PASS] H8: does NOT propose new axiom or new theory-language extension  (uses the framework baseline, retained Koide theorems, and Tier-A registry only)
+[PASS] H8: does NOT propose new axiom or new theory-language extension  (uses the framework baseline, retained Koide theorems, and explicit hypotheses only)
 
-PASS=21  FAIL=0
+PASS=22  FAIL=0
 
-All bounded-theorem checks PASSED under Tier-A admission framing.
+All bounded-theorem checks PASSED under explicit conditional framing.
 Independent audit and generated pipeline status decide post-landing standing.
 
 ----- stderr -----

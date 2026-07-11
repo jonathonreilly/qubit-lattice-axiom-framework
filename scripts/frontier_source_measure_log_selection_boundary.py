@@ -28,9 +28,9 @@ OUT = ROOT / "outputs" / "source_measure_log_selection_boundary_2026-05-30.json"
 NOTE = DOCS / "SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md"
 RECORD = DOCS / "SOURCE_MEASURE_RECORD_INTERVENTION_THEOREM_NOTE_2026-05-30.md"
 P1P2 = DOCS / "OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md"
-YT_TIER_A = DOCS / "YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md"
+YT_PREMISE_HISTORY = DOCS / "YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md"
 YT_NOGO = DOCS / "YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md"
-TIER_A = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+SCALE_PRIMITIVE = DOCS / "SCALE_REFERENCE_PRIMITIVE_NOTE.md"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -58,7 +58,7 @@ def zero(expr: sp.Expr) -> bool:
 
 def part1_document_boundary() -> dict[str, Any]:
     print("\nPart 1: document boundary")
-    for path in (NOTE, RECORD, P1P2, YT_TIER_A, YT_NOGO, TIER_A):
+    for path in (NOTE, RECORD, P1P2, YT_PREMISE_HISTORY, YT_NOGO, SCALE_PRIMITIVE):
         check(f"{path.relative_to(ROOT)} exists", path.exists())
 
     note = read(NOTE)
@@ -67,7 +67,7 @@ def part1_document_boundary() -> dict[str, Any]:
         "Relation to the `F_p` wall",
         "Consequence for PR #2373",
         "Physical Lattice Assumption",
-        "Planck Scale Tier-A Anchor",
+        "Approved Scale-Reference Primitive",
         "Consequence for Y_T",
         "Claim Boundary",
         "Non-Claims",
@@ -82,10 +82,10 @@ def part1_document_boundary() -> dict[str, Any]:
     p1p2 = read(P1P2)
     check("parent P1/P2 synthesis records F_p wall", "F_p" in p1p2 and "Pattern-L wall" in p1p2)
     check("parent P1/P2 synthesis records P-cal residual", "P-cal" in p1p2 and "single residual premise" in p1p2)
-    tier_a = read(TIER_A)
+    scale = read(SCALE_PRIMITIVE)
     check(
-        "Tier-A registry records Planck-mass anchor",
-        "a^{-1} = M_Pl" in tier_a and "Planck-mass conventional anchor" in tier_a,
+        "approved scale primitive records the Planck-mass anchor",
+        "a^{-1} = M_Pl" in scale and "Planck mass scale" in scale,
     )
 
     return {
@@ -224,7 +224,7 @@ def part6_planck_scale_boundary() -> dict[str, Any]:
     check("Planck scale would need an extra source-coordinate bridge", y33.subs(lam, 2) != y33.subs(lam, 1))
 
     return {
-        "tier_a_scale_anchor": "a^{-1}=M_Pl",
+        "scale_reference_primitive_anchor": "a^{-1}=M_Pl",
         "result": "dimensionful scale setting does not select dimensionless source lambda",
         "open_positive_route": "derive Planck/action unit = RN/Fisher source coordinate",
     }

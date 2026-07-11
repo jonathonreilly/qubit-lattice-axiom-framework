@@ -1,5 +1,10 @@
 # Theta Retirement Basis Re-Match Against The 2026-06-11 Refined Minimum Statement
 
+**Current authority (2026-07-11):** this is a historical decision artifact.
+Its Tier-A/admission wording has no premise authority. The gauge-side retained
+science remains usable on its audited scope; the mass-side cross-sector
+determinant readout is an `open_gate`.
+
 **Date:** 2026-07-04
 **Claim type:** meta
 **Status:** owner-decision artifact for PR #3511 gate 4. This note maps the
@@ -22,18 +27,23 @@ addendum adds no new claim.
 - The owner ruling followed option 1: theta was retired from live Tier-A by
   retained derivation on 2026-07-05 (PR #3511), admitted-input count 2 -> 1,
   with the discharge basis and scope recorded in
-  `docs/audit/data/tier_a_admissions.json` and the Tier-A retirement record
+  `docs/audit/data/premise_decision_history.json` and the Tier-A retirement record
   in `docs/audit/AXIOM_MINIMALITY_POLICY.md`. Both cite this artifact at
   this path; this landing resolves that citation.
-- `AC_phi_lambda` was subsequently retired by explicit owner-governance
-  adoption (`docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`),
-  taking the admitted-input count to 0. The mass-side conditionality this
-  note relocates onto "the remaining `AC_phi_lambda` admission" accordingly
-  now rides on the owner-governed AC premise boundary in
-  `docs/audit/data/owner_governed_premise_nodes.json`, not on a live
-  admission. The AC-side re-match artifact
+- A later 2026-07-05 governance decision attempted to retire
+  `AC_phi_lambda`; on 2026-07-11 that premise channel was withdrawn. The
+  mass-side AC conditionality now rides on the exact non-premise derivation
+  obligations in `docs/audit/data/derivation_obligations.json`. The AC-side
+  re-match artifact
   (`docs/ACPHILAMBDA_RETIREMENT_BASIS_REMATCH_AND_CLAIM_SURFACE_NOTE_2026-07-06.md`)
   landed 2026-07-06 with verdict: supported.
+
+**2026-07-11 correction:** the gauge-side retained result remains intact, but
+the mass-side K-real leg is conditional on
+`ac_orbit_occupancy_statistical_grain_derivation_obligation`. It must re-bound
+or remain pending-chain until that obligation is retained-derived. A retained
+G3/kappa/counting closure is self-liquidating: it removes the obligation rather
+than creating a new supplied premise.
 
 This note remains a point-in-time gate-4 decision artifact: it sets no audit
 status and edits no registry.

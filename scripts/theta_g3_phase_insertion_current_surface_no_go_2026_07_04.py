@@ -15,7 +15,7 @@ DOCS = ROOT / "docs"
 NOTE = DOCS / "THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md"
 MINIMAL = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
 REGISTRY = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
-TIER_A = DOCS / "audit" / "data" / "tier_a_admissions.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 POSITIVE = DOCS / "THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md"
@@ -95,7 +95,7 @@ def main() -> int:
         NOTE,
         MINIMAL,
         REGISTRY,
-        TIER_A,
+        DECISION_HISTORY,
         LEDGER,
         POSITIVE,
         CARRIER4D,
@@ -124,23 +124,23 @@ def main() -> int:
         check(f"{label} row has note path", bool(r and r.get("note_path")), r.get("note_path") if r else None)
     for label in ["positive", "carrier4d", "torus_dual", "link_star", "multiplaquette", "axiom_no_go"]:
         r = row_or_none(SOURCE_ROWS[label])
-        check(f"{label} is not an effective theta-retirement authority", r is None or r.get("effective_status") != "retained", r.get("effective_status") if r else None)
+        check(f"{label} is not retained-grade theta-retirement authority", r is None or r.get("effective_status") not in {"retained", "retained_bounded", "retained_no_go"}, r.get("effective_status") if r else None)
     cross = row(SOURCE_ROWS["cross_plane"])
-    check("cross-plane absence is retained-bounded only", cross.get("effective_status") == "retained_bounded", cross.get("effective_status"))
+    check("cross-plane absence context row is present", bool(cross), cross.get("effective_status"))
     check("new note has Type no_go", "**Type:** no_go" in note)
     check("new note has Claim type no_go", "**Claim type:** no_go" in note)
 
-    section("B. Tier-A registry remains untouched")
-    tier = json.loads(read(TIER_A))
+    section("B. admission-era decision history")
+    tier = json.loads(read(DECISION_HISTORY))
     theta = tier["retired_derivation_targets"]["strong_cp_theta_zero_note"]
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
-    check("live Tier-A genuine count is zero", tier["genuine_admitted_input_count"] == 0, tier["genuine_admitted_input_count"])
-    check("canonical Tier-A IDs are empty on current main", tier["canonical_ids"] == [], tier["canonical_ids"])
+    check("decision history preserves zero final admission count", tier["genuine_admitted_input_count"] == 0, tier["genuine_admitted_input_count"])
+    check("decision history canonical live IDs are empty", tier["canonical_ids"] == [], tier["canonical_ids"])
     check("live derivation targets are empty on current main", tier.get("derivation_targets", {}) == {}, tier.get("derivation_targets"))
     for name, target in [("theta", theta), ("AC", ac)]:
         retirement = target.get("retirement", {})
         check(f"{name} retired-target record is preserved", bool(target))
-        check(f"{name} retirement date is recorded", retirement.get("date") == "2026-07-05", retirement)
+        check(f"{name} disposition correction date is recorded", retirement.get("date") == "2026-07-11", retirement)
     check(
         "historical theta minimum decomposition preserves gauge plus mass",
         theta["minimum_decomposition"] == [
@@ -160,7 +160,7 @@ def main() -> int:
     )
     for phrase in [
         "Theta is not retired.",
-        "The Tier-A registry is not edited.",
+        "No admission registry is created.",
         "No axiom or primitive is changed.",
         "No audit status or effective status is changed.",
         "No mass-side determinant-channel bridge is supplied.",
@@ -176,10 +176,10 @@ def main() -> int:
         "determinant-readout bridge",
     ]:
         check(f"machine registry theta text includes {phrase[:48]}", phrase in flat(json.dumps(theta)))
-        check(f"human registry theta text includes {phrase[:48]}", phrase in source_flat[REGISTRY])
-    check("note has current-main posture line", "Current-main posture (2026-07-06)" in note)
-    check("note records live Tier-A zero posture", "Tier-A count\nzero" in note or "Tier-A count zero" in note)
-    check("note says retirement records are not reopened", "does not reopen, modify, or re-grade\neither retirement record" in note)
+        check(f"decision history theta text includes {phrase[:48]}", phrase in flat(json.dumps(theta)))
+    check("note has current-main posture line", "Current-main posture (2026-07-11)" in note)
+    check("note records absence of an admission registry", "No admission registry is created." in note)
+    check("note does not create an admission registry", "does not create any" in note and "admission registry" in note)
 
     section("C. axiom and primitive non-supply")
     minimal_flat = source_flat[MINIMAL]
@@ -190,7 +190,7 @@ def main() -> int:
         "transition probabilities or weights",
         "context selection",
         "source/action and physical-observable identification",
-        "the strong-CP theta admission",
+        "the strong-CP theta gauge and mass-side derivation obligations",
         "Only records are readable",
         "A readout value is determined by record content alone",
     ]:
@@ -199,7 +199,7 @@ def main() -> int:
         "does not supply the theta gauge-side winding",
         "No proof excludes all multiplaquette or clover",
         "a nonvacuous theta_gauge sector-weighting law",
-        "The Tier-A registry is not edited.",
+        "No admission registry is created.",
         "Theta is not retired.",
     ]:
         check(f"axiom-update no-go supports boundary: {phrase[:48]}", phrase in axiom_flat)
@@ -263,7 +263,7 @@ def main() -> int:
         "Continuous Weyl label shift",
         "Real class-weight gluing",
         "Multiplaquette/clover admissibility",
-        "Tier-A registry",
+        "admission registry",
     ]:
         check(f"route fan-out row present: {route}", route in note)
     for move in [
@@ -355,7 +355,7 @@ def main() -> int:
     forbidden = [
         "Theta is retired",
         "theta_bar = 0 is derived",
-        "we edit the Tier-A registry",
+        "we create an admission registry",
         "future action-side or measure-side work cannot derive G3",
         "audit status is changed",
         "effective status is upgraded",
@@ -369,11 +369,18 @@ def main() -> int:
         "G4 assembly last",
     ]:
         check(f"next attack plan item present: {item}", item in note)
+    for gate in range(1, 9):
+        check(f"No-Go Discipline N{gate} present", f"**N{gate}" in note)
+    check("route markers are explicit", note.count("ATTEMPTED") >= 6, note.count("ATTEMPTED"))
+    check(
+        "mass-side obligation is explicitly non-dependent",
+        "has no dependency edge to the mass-side" in note
+        and "cannot make this note ready" in note,
+    )
     links = set(re.findall(r"\[[^\]]+\]\(([^)]+)\)", note))
     expected_links = {
         "../scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py",
         "MINIMAL_AXIOMS_2026-06-29.md",
-        "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
         "THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md",
         "THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
         "THETA_TORUS_DUAL_ABELIANIZATION_SHIFTED_WEIGHT_LATTICE_GAUSSIAN_GLUING_STABLE_WEYL_SHIFT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-02.md",
@@ -383,7 +390,11 @@ def main() -> int:
         "THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md",
     }
     check("markdown link inventory is controlled", links == expected_links, sorted(links))
-    check("note line count is bounded", 130 <= len(note.splitlines()) <= 240, len(note.splitlines()))
+    check(
+        "mass-side obligation is not a markdown dependency",
+        "THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md" not in links,
+    )
+    check("note line count is bounded", 180 <= len(note.splitlines()) <= 340, len(note.splitlines()))
     check("verification block states fail-zero threshold", "Expected close: `FAIL=0` with at least 95 checks." in note)
 
     print("\n" + "=" * 88)

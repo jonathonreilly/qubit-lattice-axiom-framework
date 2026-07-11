@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py
-runner_sha256: f7aaa8b39dd32f847f9a1062bde14cb23d87f1af89a98f56f96160c4402ec01e
+runner_sha256: 9a19032933eaaae657c87257bb5ce28e98b21431abdef5be0840dd759f35c744
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.80
 status: ok
 ----- stdout -----
 AC_phi_lambda real-holonomy locus identity runner
@@ -18,8 +18,8 @@ AC_phi_lambda real-holonomy locus identity runner
        docs/KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md
 [PASS] custody-chain source exists
        docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md
-[PASS] Tier-A registry data exists
-       docs/audit/data/tier_a_admissions.json
+[PASS] decision-history data exists
+       docs/audit/data/premise_decision_history.json
 [PASS] custody pins time-reversal-reality
 [PASS] custody pins b=c-bar definition
 [PASS] modulus pins stationary candidates

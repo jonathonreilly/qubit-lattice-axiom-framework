@@ -12,7 +12,7 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md"
-TIER_A = DOCS / "audit" / "data" / "tier_a_admissions.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
 AXIOM_PREMISES = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
@@ -75,7 +75,7 @@ def main() -> int:
 
     paths = [
         NOTE,
-        TIER_A,
+        DECISION_HISTORY,
         LEDGER,
         AXIOMS,
         AXIOM_PREMISES,
@@ -91,12 +91,12 @@ def main() -> int:
         SCALE,
     ]
 
-    section("A. source presence and Tier-A boundary")
+    section("A. source presence and current premise boundary")
     for path in paths:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
     note = read(NOTE)
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     axioms = read(AXIOMS)
     premises = json.loads(read(AXIOM_PREMISES))
     registry = read(REGISTRY)
@@ -118,15 +118,15 @@ def main() -> int:
     record_clock_flat = flat(record_clock)
     dynamics_flat = flat(dynamics)
 
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     decomp = ac["minimum_decomposition"]
-    check("AC_phi_lambda remains the live Tier-A target", tier["genuine_admitted_input_count"] >= 1)
+    check("decision history has no live premise inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
     check("AC minimum decomposition keeps R-eta", "delta_readout_identification_R_eta" in decomp, decomp)
     check("AC minimum decomposition keeps occupancy separate", "reading_occupancy_selection" in decomp, decomp)
     check("AC statement names density-read-as-angle R-eta", "density-read-as-angle" in ac["statement"] and "R-eta" in ac["statement"])
-    check("human registry names R-eta", ("R-eta" in registry_flat or "R-η" in registry_flat) and "density-read-as-angle" in registry_flat)
+    check("human registry points to the R-eta derivation obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
     check("note declares no_go Type", "**Type:** no_go" in note and "**Claim type:** no_go" in note)
-    check("note says R-eta is not retired", "R-eta is not derived, refuted, re-graded, or removed from Tier-A" in note)
+    check("note says R-eta remains open", "R-eta is not derived or refuted; its open gate remains" in note)
     check("note says AC_phi_lambda is not retired", "AC_phi_lambda is not retired." in note)
     check("note says registry not edited", "No registry, axiom, primitive, audit verdict, publication surface" in note)
 
@@ -134,8 +134,8 @@ def main() -> int:
     expected_status = {
         "docs/ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md": {"unaudited"},
         "docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md": {"retained_bounded", "unaudited"},
-        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md": {"retained_bounded"},
-        "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md": {"retained_bounded"},
+        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md": {"retained_bounded", "unaudited"},
+        "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md": {"retained_bounded", "unaudited"},
     }
     for path, allowed in expected_status.items():
         row = ledger_row_by_path(path)
@@ -192,8 +192,7 @@ def main() -> int:
     fixed_flat = flat(fixed).lower()
     check(
         "fixed-locus source excludes physical readout bridge",
-        ("physical readout" in fixed_flat or "physical single-summand" in fixed_flat)
-        and ("separate named open bridge" in fixed_flat or "does not touch that readout" in fixed_flat),
+        "no physical single-summand readout is derived" in fixed_flat,
     )
     check("Brannen source carries supplied dial", "(a, |b|, delta)" in brannen)
 
@@ -288,7 +287,7 @@ def main() -> int:
         "Direct R-eta readout-license theorem",
         "Coherence-event theorem",
         "Non-minimal transport theorem",
-        "Owner governance",
+        "Approved-primitive proposal",
     ]
     for phrase in required_phrases:
         check(f"note contains required boundary: {phrase[:50]}", phrase in note_flat)
@@ -305,7 +304,7 @@ def main() -> int:
     ]
     for phrase in forbidden:
         check(f"forbidden phrase absent: {phrase}", phrase not in note)
-    check("note links minimal current residual to Tier-A registry", "delta_readout_identification_R_eta" in note)
+    check("note links the current R-eta residual", "delta_readout_identification_R_eta" in note)
     check("note does not link generated audit ledger as authority", "AUDIT_LEDGER.md](" not in note)
 
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL} CHECKS={PASS + FAIL}")

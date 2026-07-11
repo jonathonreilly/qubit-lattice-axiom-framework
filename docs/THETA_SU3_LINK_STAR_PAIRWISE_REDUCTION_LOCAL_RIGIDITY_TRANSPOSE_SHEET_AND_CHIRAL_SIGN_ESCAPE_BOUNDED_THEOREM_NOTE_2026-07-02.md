@@ -1,6 +1,9 @@
 # SU(3) Link Stars: Pair Data Are Locally Rigid (Full-Rank Jacobian), the Known Global Degeneracy Is the Transpose Sheet Carrying Only the Chiral Sign, and Real-Weight Stars Are Even Across It — the SU(3) Star Reduces to Pairwise Data in the Local-Plus-Sheet Sense and the Chiral Sign Is an Exhibited Multilinear Escape (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite identities and certificates
 plus one locality-graded rigidity statement; not a terminal no-go, not a
@@ -8,11 +11,10 @@ discharge of the theta admission).
 **Status authority:** independent audit lane only. This note does not set an
 audit verdict, edit registries, register primitives, change axioms, retire or
 re-grade any Tier-A admission, or claim Strong-CP closure.
-**Current-main posture (2026-07-07):** theta is already retired from live
-Tier-A by retained derivation. This note banks a historical bounded support
-calculation for the theta-side local link-star campaign; it does not reopen,
-modify, or re-grade the theta retirement record or
-`tier_a_admissions.json`.
+**Historical posture (2026-07-07):** the repo then described theta as retired
+under an older admission taxonomy. **Current posture (2026-07-11):** that
+taxonomy has no premise authority. This note supplies conditional gauge-side
+support only; the mass-side cross-sector determinant readout is an `open_gate`.
 **Primary runner:**
 [`scripts/theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02.py`](../scripts/theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02.py)
 **Runner cache:**
@@ -128,7 +130,7 @@ search found none, but that is evidence, not proof — see Non-claims).
    runner. No sibling wall note is consumed as a premise.
 
 3. **Retired theta registry text**
-   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
+   ([`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json),
    gauge side): the historical residual was "localized to the
    multi-plaquette / large-gauge-winding account"; link stars are that
    account's local structure and this note answers their SU(3) reduction
@@ -257,7 +259,7 @@ tested generic point (exact rank certificate).
 | phase-type (complex) insertion | OPEN — residual (ii'), sharpened: must read the chiral sign |
 | quadratic-order even data (e.g. modulus-squared words) | NOT SETTLED here (beyond the multilinear scope; not claimed either way) |
 | a further global sheet | NOT FOUND (bounded search); proof = named sliver (i-b''-a') |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

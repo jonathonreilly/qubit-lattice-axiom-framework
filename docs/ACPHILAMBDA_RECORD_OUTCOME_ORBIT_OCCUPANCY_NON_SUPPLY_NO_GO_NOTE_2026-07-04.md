@@ -72,7 +72,7 @@ is used in every state, so neither law privileges a state. All non-readout
 parts of the four-axiom model are identical between the two extensions.
 
 This construction is a model interpretation for the non-entailment proof. It
-is not a derived or admitted physical record-to-action map, matter action, or
+is not a derived physical record-to-action map, matter action, or
 charged-lepton carrier, and it has no downstream authority as one.
 
 ## Exact determinant identities
@@ -116,12 +116,11 @@ structure, determinant line, polarization, orbit quotient, or physical
 record-to-action map. It does not set `r`, `delta`, or any mass, and it does
 not force `r=1/2`.
 
-The live governance target is recorded in
-`docs/audit/data/owner_governed_premise_nodes.json` as AC(i), the matter-action
-occupancy grain. That registry identifies the target and is not a proof
-premise here. This note does not discharge that physical target. It isolates a
-necessary non-selection subclaim beneath it: Record additivity does not choose
-the raw complex-versus-realified determinant power.
+The current target is the zero-weight `open_gate` in
+[`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md).
+This note does not discharge that physical target. It isolates a necessary
+non-selection subclaim beneath it: Record additivity does not choose the raw
+complex-versus-realified determinant power.
 
 ## No-Go Discipline Gate
 
@@ -153,7 +152,7 @@ standard`, `the framework provides`, `bridge context`, `background`,
 | Hit | Classification |
 |---|---|
 | granted auxiliary carrier assignment and determinant-style readout laws | explicit model interpretation used to strengthen the countermodel; not a physical bridge |
-| `registered` in governance/coordinate discussion | non-load-bearing target or route description |
+| historical-governance language in the target discussion | non-load-bearing provenance for the current open obligation |
 | `canonical` in the steelman | hypothetical determinant-line theorem target, not a proof step |
 | scan terms appearing in this checklist sentence | audit metadata, not proof steps |
 
@@ -185,7 +184,7 @@ carrier theorem.
 | real or Majorana action theorem | future physical theorem outside the four axioms and this note | derive a real determinant or Pfaffian grain if that action is selected |
 | normalized-readout convention | `F_R/2=F_C` is exact on this carrier | removes the factor-two distinction at the coordinate level; does not derive the matter action that AC(i) asks for |
 | registered-mass coordinate package (`docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md`) | contextual algebraic reconstruction after mass data are supplied; not a proof dependency here | removes the determinant explanation from the claim; does not discharge AC(i)'s physical role |
-| owner-governed premise registry (`docs/audit/data/owner_governed_premise_nodes.json`) | current governance treatment; not a proof dependency here | supplies the grain without deriving it |
+| current zero-weight occupancy obligation | open derivation target, not a premise | records the grain target without supplying it |
 
 These paths are preserved. The no-go does not propose a new primitive or
 classify a future action theorem as impossible.
@@ -209,7 +208,7 @@ and action routes remain available.
 |---|---|---|
 | strong-CP determinant-readout route (`docs/STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`) | contextual comparison; not a witness dependency | phase erasure on a supplied action/readout surface does not choose determinant modulus power; the residuals differ |
 | registered mass coordinates (`docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md`) | contextual comparison; not a witness dependency | reconstruction from a supplied realized state changes the explanatory scope and leaves the physical action grain unproved |
-| owner-governed AC adoption (`docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`) | contextual governance history; not a witness dependency | records the premise transparently but is not theorem derivation |
+| historical AC adoption and withdrawal (`docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`) | provenance only; not a witness dependency | records the superseded proposal but supplies no physics content |
 
 These mechanisms have been checked and do not refute the narrow
 current-surface result.

@@ -31,8 +31,8 @@ Purpose (profile-match exhibit + two-part governance map, NOT a verdict):
     control (E'*C1 != C2*E'); and the equivariant corner-weight contrast (a
     generic rational diagonal separates, the C3 orbit-average equalizes,
     spread 0);
-  - grep the note itself for the Grade Scope + owner-class wording and the
-    Governance Map boundary tokens (owner decision / owner review list / nothing adopted / grade /
+  - grep the note itself for the historical Grade Scope + owner-class wording and the
+    historical Governance Map boundary tokens (owner decision / owner review list / nothing adopted / grade /
     does not retire / fails / path-extension / argued / not exhaustively proven
     / separate residual) and the two-part decision + extended residue markers.
 
@@ -164,8 +164,8 @@ AX_LATTICE = (
     "structure alone."
 )
 AX_QUALIF = (
-    "Further physical structure requires derivation, bridge, explicit "
-    "admission, or approved primitive registration before use as a premise"
+    "Further physical structure requires a retained derivation or bridge, or "
+    "explicit approved- primitive registration, before use as a premise"
 )
 AX_OUTSIDE = "remain outside axiom content"
 AX_OPENGATE = "staggered-Dirac/finite-Grassmann realization and"
@@ -464,7 +464,7 @@ check(
 # Grade Scope -- grade-scope + owner-class wording grep on this note (check 22)
 # ----------------------------------------------------------------------------
 check(
-    "Grade Scope: note states the bracketed above-grade content (taste/Dirac/chirality), that sub-admissions (i) and (ii) are untouched, and the owner-class wording (carried by whatever class the owner rules)",
+    "Historical Grade Scope: note preserves the bracketed above-grade content, former sub-admissions, and owner-class proposal as provenance",
     has_all(NOTE, [N_BRACKET, N_UNTOUCHED, N_OWNERCLASS]),
 )
 
@@ -472,7 +472,7 @@ check(
 # Governance Map -- governance-boundary greps + two-part decision + extended residue (checks 23-24)
 # ----------------------------------------------------------------------------
 check(
-    "Governance Map boundary: note carries the boundary tokens (owner decision; owner review list; nothing adopted; grade; does not retire) and the repair tokens (fails; path-extension; argued; not exhaustively proven; separate residual)",
+    "Historical governance map: note preserves owner-decision proposal tokens and the repair tokens as provenance",
     has_all(
         NOTE,
         [
@@ -490,7 +490,7 @@ check(
     ),
 )
 check(
-    "Governance Map: note states the two-part owner decision with internal-only precedent, and the extended residue carries item 8 (CKM/PMNS separate residual) and item 9 (the invariant-ring proof-strength gap)",
+    "Historical governance map: note records the former two-part owner proposal and the extended scientific residue",
     has_all(NOTE, [N_TWOPART, N_INTERNALONLY, N_CKM, N_INVRING]),
 )
 
@@ -501,10 +501,10 @@ check(
 print("")
 print("DECLARED-OPEN RESIDUE (conserved; owner surface, nothing adopted here):")
 for line in (
-    "the AC_phi_lambda(iii) identification -- pending the owner two-part (path-extension, then ratify/decline) decision",
+    "the AC_phi_lambda(iii) identification -- open scientific dependency; historical owner proposal is provenance only",
     "the bracketed above-C3-grade content (taste/Dirac/chirality; hw=1 vs hw=2 beyond C3)",
-    "sub-admission (i) (occupancy/reading selection) -- untouched",
-    "sub-admission (ii) (R-eta identification) -- untouched",
+    "historical sub-admission (i) wording -- current occupancy obligation remains open",
+    "historical sub-admission (ii) wording -- current R-eta obligation remains open",
     "adjacent review-pending K-arc PRs #4831/#4835/#4837/#4840/#4845 (non-overlapping)",
     "adjacent note-level two-cell family PR #4853 (context only)",
     "audit statuses of all cited notes -- owned by the independent audit lane",

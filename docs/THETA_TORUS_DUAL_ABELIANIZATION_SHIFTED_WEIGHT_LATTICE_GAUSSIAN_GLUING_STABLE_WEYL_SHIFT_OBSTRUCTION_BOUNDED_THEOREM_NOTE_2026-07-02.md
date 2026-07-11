@@ -1,6 +1,9 @@
 # Torus-Dual Abelianization of SU(N) Class Weights: the Heat-Kernel Member Is an Exact Signed Gaussian on the Regular Rho-Shifted Weight Lattice, the Structure Is Gluing-Stable, the Block-1 Center Grading Is Its Coset Shadow — and a Continuous Weyl-Consistent Theta Shift-Slot on the Nonabelian Torus Dual Is Obstructed (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** bounded_theorem
 This source note does not set an audit verdict, edit registries, register
 primitives, change axioms, retire or re-grade any Tier-A admission, or claim
@@ -114,8 +117,8 @@ classifies; its fusion-visible shadow is precisely the `Z_N` grading.
    for the Wilson-member checks (dual support and the `tau_R/C2`
    form-instability witness at `beta = 6`).
 
-3. **Tier-A theta registry text** (docs/audit/data/tier_a_admissions.json,
-   gauge side): the residual is "localized to the multi-plaquette /
+3. **Historical theta decision text** (`docs/audit/data/premise_decision_history.json`,
+   gauge side, provenance only): the residual was "localized to the multi-plaquette /
    large-gauge-winding account"; this note supplies the abelianized
    structure of that account at the class-weight level.
 
@@ -289,7 +292,7 @@ irreps and `beta = 6`.
 | W-frame (abelian-projection) construction on glued surfaces | OPEN — named residual (i-b') |
 | defect closure | OPEN — residual (i-a), unchanged |
 | scaling-limit sector functional | OPEN — unchanged live path |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

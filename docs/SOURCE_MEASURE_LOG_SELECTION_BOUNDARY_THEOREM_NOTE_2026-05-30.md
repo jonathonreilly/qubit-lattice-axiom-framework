@@ -23,7 +23,7 @@ required before any repo-wide status movement.
 - [`OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md`](OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md)
   — records the earlier `F_p` / P-cal residual that this note compares to
   the RN source-scale residual.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   — records the Planck-mass conventional anchor; this note checks that the
   dimensionful scale anchor does not by itself fix the dimensionless RN
   source coordinate.
@@ -135,10 +135,10 @@ lattice regions is still a valid local record intervention, and its log
 density still adds over sites.  Therefore the physical-lattice premise removes
 continuum/regulator ambiguity but leaves the same source-unit ambiguity.
 
-## Planck Scale Tier-A Anchor
+## Approved Scale-Reference Primitive
 
-This boundary also allows the Tier-A scale convention recorded in
-[`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md):
+This boundary also allows the approved scale-reference primitive recorded in
+`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`:
 the lattice spacing is fixed by the Planck-mass anchor `a^{-1}=M_Pl`.
 
 That anchor fixes the single dimensionful unit of the physical lattice.  It is
@@ -191,7 +191,7 @@ N1 alternative routes checked:
    not a derivation from record algebra alone.
 5. Physical-lattice locality route: site-local factorized RN sources remain
    local on physical `Z^3` for every `lambda > 0`.
-6. Tier-A Planck-anchor route: `a^{-1}=M_Pl` fixes a dimensionful lattice
+6. Scale-reference route: `a^{-1}` fixes a dimensionful lattice
    scale, not the dimensionless RN source coordinate.
 
 N2 wall independence: the collapsed wall set has one wall, the missing
@@ -276,3 +276,11 @@ Expected result:
 ```text
 SUMMARY: PASS=... FAIL=0
 ```
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md)

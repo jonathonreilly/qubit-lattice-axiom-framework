@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py
+runner_sha256: f2c6010bacf09523b326722efb5f15713095777d801feb9ac4677d751ccaee8e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.76
+status: ok
+----- stdout -----
 theta G3 phase-insertion current-surface no-go verifier
 
 ========================================================================================
@@ -6,7 +14,7 @@ A. source presence and ledger grounding
 [PASS] exists: docs/THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md
 [PASS] exists: docs/THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md
@@ -15,8 +23,8 @@ A. source presence and ledger grounding
 [PASS] exists: docs/THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md
 [PASS] exists: docs/STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_IS_ADMISSIBLE_NOT_CLEAN_CLOSEABLE_BOUNDED_NOTE_2026-06-07.md
 [PASS] exists: docs/THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
-[PASS] positive source is present on current main
-[PASS] positive has no pre-generated ledger authority requirement
+[PASS] positive ledger row resolves
+[PASS] positive row has note path
 [PASS] carrier4d ledger row resolves
 [PASS] carrier4d row has note path
 [PASS] torus_dual ledger row resolves
@@ -27,48 +35,48 @@ A. source presence and ledger grounding
 [PASS] cross_plane row has note path
 [PASS] multiplaquette ledger row resolves
 [PASS] multiplaquette row has note path
-[PASS] axiom_no_go source is present on current main
-[PASS] axiom_no_go has no pre-generated ledger authority requirement
+[PASS] axiom_no_go ledger row resolves
+[PASS] axiom_no_go row has note path
 [PASS] minimal ledger row resolves
 [PASS] minimal row has note path
 [PASS] registry ledger row resolves
 [PASS] registry row has note path
-[PASS] positive is not an effective theta-retirement authority
-[PASS] carrier4d is not an effective theta-retirement authority
-[PASS] torus_dual is not an effective theta-retirement authority
-[PASS] link_star is not an effective theta-retirement authority
-[PASS] multiplaquette is not an effective theta-retirement authority
-[PASS] axiom_no_go is not an effective theta-retirement authority
-[PASS] cross-plane absence is retained-bounded only
+[PASS] positive is not retained-grade theta-retirement authority
+[PASS] carrier4d is not retained-grade theta-retirement authority
+[PASS] torus_dual is not retained-grade theta-retirement authority
+[PASS] link_star is not retained-grade theta-retirement authority
+[PASS] multiplaquette is not retained-grade theta-retirement authority
+[PASS] axiom_no_go is not retained-grade theta-retirement authority
+[PASS] cross-plane absence context row is present
 [PASS] new note has Type no_go
 [PASS] new note has Claim type no_go
 
 ========================================================================================
-B. Tier-A registry remains untouched
+B. admission-era decision history
 ========================================================================================
-[PASS] live Tier-A genuine count is zero
-[PASS] canonical Tier-A IDs are empty on current main
+[PASS] decision history preserves zero final admission count
+[PASS] decision history canonical live IDs are empty
 [PASS] live derivation targets are empty on current main
 [PASS] theta retired-target record is preserved
-[PASS] theta retirement date is recorded
+[PASS] theta disposition correction date is recorded
 [PASS] AC retired-target record is preserved
-[PASS] AC retirement date is recorded
+[PASS] AC disposition correction date is recorded
 [PASS] historical theta minimum decomposition preserves gauge plus mass
 [PASS] historical AC decomposition preserves three old atoms
 [PASS] note preserves boundary: Theta is not retired.
-[PASS] note preserves boundary: The Tier-A registry is not edited.
+[PASS] note preserves boundary: No admission registry is created.
 [PASS] note preserves boundary: No axiom or primitive is changed.
 [PASS] note preserves boundary: No audit status or effective status is changed.
 [PASS] note preserves boundary: No mass-side determinant-channel bridge is supplied.
 [PASS] machine registry theta text includes gauge_side_winding_account
 [PASS] machine registry theta text includes mass_side_orientation_determinant_readout_bridge
 [PASS] machine registry theta text includes multi-plaquette / large-gauge-winding account
-[PASS] human registry theta text includes multi-plaquette / large-gauge-winding account
+[PASS] decision history theta text includes multi-plaquette / large-gauge-winding account
 [PASS] machine registry theta text includes determinant-readout bridge
-[PASS] human registry theta text includes determinant-readout bridge
+[PASS] decision history theta text includes determinant-readout bridge
 [PASS] note has current-main posture line
-[PASS] note records live Tier-A zero posture
-[PASS] note says retirement records are not reopened
+[PASS] note records absence of an admission registry
+[PASS] note does not create an admission registry
 
 ========================================================================================
 C. axiom and primitive non-supply
@@ -78,13 +86,13 @@ C. axiom and primitive non-supply
 [PASS] minimal axioms withhold: transition probabilities or weights
 [PASS] minimal axioms withhold: context selection
 [PASS] minimal axioms withhold: source/action and physical-observable identificati
-[PASS] minimal axioms withhold: the strong-CP theta admission
+[PASS] minimal axioms withhold: the strong-CP theta gauge and mass-side derivation
 [PASS] minimal axioms withhold: Only records are readable
 [PASS] minimal axioms withhold: A readout value is determined by record content al
 [PASS] axiom-update no-go supports boundary: does not supply the theta gauge-side winding
 [PASS] axiom-update no-go supports boundary: No proof excludes all multiplaquette or clover
 [PASS] axiom-update no-go supports boundary: a nonvacuous theta_gauge sector-weighting law
-[PASS] axiom-update no-go supports boundary: The Tier-A registry is not edited.
+[PASS] axiom-update no-go supports boundary: No admission registry is created.
 [PASS] axiom-update no-go supports boundary: Theta is not retired.
 [PASS] new note states non-supply: No source/action, phase weighting, measure, context-select
 [PASS] new note states non-supply: They cannot select `exp(i theta Q)`.
@@ -125,7 +133,7 @@ E. note fan-out and no-go triple
 [PASS] route fan-out row present: Continuous Weyl label shift
 [PASS] route fan-out row present: Real class-weight gluing
 [PASS] route fan-out row present: Multiplaquette/clover admissibility
-[PASS] route fan-out row present: Tier-A registry
+[PASS] route fan-out row present: admission registry
 [PASS] movement sentence present: G3 is now split into a precise missing triple
 [PASS] movement sentence present: They are route-localizers only
 [PASS] movement sentence present: admissible is not selected, coefficiented, or regist
@@ -197,7 +205,7 @@ J. note discipline and controlled links
 ========================================================================================
 [PASS] forbidden overclaim absent: Theta is retired
 [PASS] forbidden overclaim absent: theta_bar = 0 is derived
-[PASS] forbidden overclaim absent: we edit the Tier-A registry
+[PASS] forbidden overclaim absent: we create an admission registry
 [PASS] forbidden overclaim absent: future action-side or measure-side work cannot derive G3
 [PASS] forbidden overclaim absent: audit status is changed
 [PASS] forbidden overclaim absent: effective status is upgraded
@@ -205,10 +213,24 @@ J. note discipline and controlled links
 [PASS] next attack plan item present: G1 defect closure in parallel
 [PASS] next attack plan item present: G2 registration after G1/G3
 [PASS] next attack plan item present: G4 assembly last
+[PASS] No-Go Discipline N1 present
+[PASS] No-Go Discipline N2 present
+[PASS] No-Go Discipline N3 present
+[PASS] No-Go Discipline N4 present
+[PASS] No-Go Discipline N5 present
+[PASS] No-Go Discipline N6 present
+[PASS] No-Go Discipline N7 present
+[PASS] No-Go Discipline N8 present
+[PASS] route markers are explicit
+[PASS] mass-side obligation is explicitly non-dependent
 [PASS] markdown link inventory is controlled
+[PASS] mass-side obligation is not a markdown dependency
 [PASS] note line count is bounded
 [PASS] verification block states fail-zero threshold
 
 ========================================================================================
-TOTAL: PASS=169 FAIL=0
+TOTAL: PASS=180 FAIL=0
 ========================================================================================
+
+----- stderr -----
+

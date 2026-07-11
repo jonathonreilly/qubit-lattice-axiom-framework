@@ -2,14 +2,12 @@
 
 **Date:** 2026-07-03
 **Type:** bounded_theorem
-**Claim type:** bounded_theorem (composition), conditional on the named shared bridge
+**Claim type:** bounded_theorem (composition), conditional on two independent bridges
 **Status authority:** independent audit lane only. This source note sets no
 audit outcome and changes no registry row.
-**Current-main posture (2026-07-07):** theta's Tier-A admission is already
-retired on main by the retained 2026-07-05 retirement decision. This note is
-banked only as bounded historical/supporting science for the mass-side
-composition surface; it does not reopen, modify, or supply authority for that
-retirement record.
+**Current posture (2026-07-11):** this is a conditional composition surface.
+Historical decisions supply no premise and current status is set only by the
+independent audit lane.
 **Primary runner:**
 [`scripts/frontier_theta_mass_side_composition_close_2026_07_03.py`](../scripts/frontier_theta_mass_side_composition_close_2026_07_03.py)
 **Runner cache:**
@@ -17,13 +15,16 @@ retirement record.
 
 ## Statement
 
-This note composes the theta mass-side chain on one named supplied bridge:
+This note composes the theta mass-side chain on two distinct conditional
+bridges:
 
-> one record locking one admissible local possibility is one statistical slot, and the relevant locked possibilities for the generation doublet are the K/CPT record-outcome orbits rather than the real components of the fluctuation coordinate.
+1. the charged-lepton matter action counts the `K`/CPT orbit once; and
+2. that charged-lepton carrier is the same physical channel that controls the
+   quark determinant readout.
 
-Conditional on that sentence, the mass-side K-real structure is read as the
+Conditional on both statements, the mass-side K-real structure is read as the
 same conjugate-symmetric `C_3` object as the flavor doublet's K/CPT
-record-outcome orbit reading. Under that single input, the determinant channel
+record-outcome orbit reading. Under those two inputs, the determinant channel
 reads the K-real conjugate-paired content.
 
 The composed conclusion on the stated mass surface is:
@@ -32,16 +33,18 @@ The composed conclusion on the stated mass surface is:
 arg det(M_q) = 0.
 ```
 
-No positive-mass convention, no independent K-real admission, and no separate
-determinant-channel identification is added beyond the shared bridge sentence.
+No positive-mass convention is added. The determinant-channel identification
+is explicitly separate from the charged-lepton occupancy grain.
 
 ## Composition
 
-**Leg 1: K-real reading from the shared bridge.** The supplied sentence says
-that one locked admissible local possibility is one statistical slot and that
-the relevant generation-doublet possibilities are K/CPT record-outcome orbits.
-For this composition, that is the only input that identifies the mass-side
-determinant channel with the K-real conjugate-paired reading.
+**Leg 1: charged-lepton occupancy grain.** The first conditional states that
+the physical charged-lepton matter action counts the `K`/CPT orbit once. It
+does not identify a quark determinant channel.
+
+**Leg 1b: cross-sector determinant readout.** The second conditional identifies
+the charged-lepton carrier with the physical quark determinant channel. This is
+an independent physical bridge, not a consequence of Leg 1.
 
 **Leg 2: orientation forced on both signs.** The 2026-07-01 mass-orientation
 note gives the pairing formula, in the ASCII form guarded by the runner:
@@ -62,41 +65,23 @@ determinant/block-composition class. K/CPT orbit registration forces
 `cos(arg det M)` is K-even, but it violates the multiplicative
 independent-block composition law.
 
-Together, Leg 1 supplies the K/CPT determinant-channel reading, Leg 2 removes
-the discrete sign branch, and Leg 3 removes continuous determinant phase
-characters. The theta mass-side supplied content therefore reduces to exactly
-the one bridge sentence quoted above.
+Together, Legs 1 and 1b conditionally supply the K/CPT determinant-channel
+reading, Leg 2 removes the discrete sign branch, and Leg 3 removes continuous
+determinant phase characters. The theta mass-side content therefore remains
+conditional on both the occupancy-grain bridge and the independent
+cross-sector determinant-readout bridge.
 
-## Single Supplied Sentence
+## Two Independent Open Dependencies
 
-The theta mass side and the flavor occupancy piece now share one supplied
-bridge:
-
-> one record locking one admissible local possibility is one statistical slot, and the relevant locked possibilities for the generation doublet are the K/CPT record-outcome orbits rather than the real components of the fluctuation coordinate.
-
-Retiring that sentence retires both the theta mass-side composition here and
-the flavor occupancy bridge from the 2026-07-03 occupancy note.
-
-Honest surviving-conditional count: **1**. The 2026-06-12 determinant note's
-Record registrability condition is read as absorbed here, on the registry's
-own identification: the Tier-A registry states that the mass-side K-real
-structure is "the same C_3 conjugate-symmetric object as AC_phi_lambda
-sub-admission (i)", and that piece (i)'s "custody K-reality and
-det_C/equal-power selectors are its two faces". The shared bridge sentence
-supplies the orbit reading of that one object, so both faces — the K-real
-custody reading and the determinant-channel selection — are the same supplied
-content, not two sentences. The 2026-06-12 conditional sentence guarded by the
-runner remains:
+The charged-lepton statistical grain and the quark determinant readout are
+separate derivation obligations. Closing the former does not close the latter.
+The 2026-06-12 conditional sentence guarded by the runner remains:
 
 > The statement is deliberately conditional on the supplied mass determinant channel.
 
-In this composition, that supplied channel is the mass-side use of the shared
-bridge sentence.
-
-Reviewer flag: this absorption reading is the single judgment call in this
-note. If a reviewer or the audit lane rejects it, the honest count is two
-sentences (the shared bridge plus the registrable-channel membership of the
-physical mass readout), and the composition otherwise stands unchanged.
+Historical decision text at
+`docs/audit/data/premise_decision_history.json` does not collapse those two
+conditions or supply either one.
 
 ## Boundaries
 
@@ -118,9 +103,11 @@ The audit lane owns statuses, and the registry is untouched.
 - [`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md)
   supplies the determinant phase-character erasure and the guarded supplied
   mass determinant-channel conditional used by Leg 3.
-- [`tier_a_admissions.json`](audit/data/tier_a_admissions.json) is used only
-  for the registry's own identification that warrants the one-sentence versus
-  two-sentence conditional count; it is not an audit-status authority.
+- [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)
+  records the zero-weight charged-lepton occupancy-grain obligation.
+- [`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md)
+  records the distinct zero-weight quark determinant cross-sector obligation.
+- `docs/audit/data/premise_decision_history.json` is provenance only.
 
 ## Runner
 
@@ -134,5 +121,4 @@ The runner uses exact rational arithmetic for the finite matrix checks. It
 guards the shared bridge sentence, the 2026-07-01 pairing formula content, and
 the 2026-06-12 conditional sentence; it checks signed scalar masses on the
 same grid used by the 2026-07-01 runner, exact signed-Brannen circulant dials,
-the phase-character erasure, the hostile guard, and the one-sentence
-conditional count.
+the phase-character erasure, the hostile guard, and the two-condition count.

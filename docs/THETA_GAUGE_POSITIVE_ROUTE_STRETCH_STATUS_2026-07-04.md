@@ -6,15 +6,13 @@
 **Scope boundary:** route-status synthesis for the positive theta gauge-side
 winding route after the axiom-update shortcut checks. This note does not
 derive, refute, re-grade, retire, or remove theta, does not set
-`theta_bar = 0`, and does not edit any Tier-A registry, axiom, primitive,
+`theta_bar = 0`, and does not create any admission registry, axiom, primitive,
 audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
-**Current-main posture (2026-07-06):** live `main` now records Tier-A count
-zero: theta was retired 2026-07-05 by retained derivation, and
-`AC_phi_lambda` was retired by owner-governance adoption. This note banks the
-historical gauge-side route map only; it does not reopen, modify, or re-grade
-either retirement record, `tier_a_admissions.json`, or owner-governed premise
-data.
+**Current-main posture (2026-07-11):** theta's gauge-side retained disposition
+remains; its mass-side K-real leg is conditional on the open AC occupancy and
+quark-determinant cross-sector readout obligations. The AC governance-only channel was withdrawn;
+that correction does not affect this historical gauge-side route map.
 **Primary runner:**
 [`scripts/theta_gauge_positive_route_stretch_status_2026_07_04.py`](../scripts/theta_gauge_positive_route_stretch_status_2026_07_04.py)
 
@@ -116,7 +114,7 @@ The runner rechecks the small algebra that makes the synthesis sharp:
 ## What Does Not Move
 
 - Theta is not retired.
-- The Tier-A registry is not edited.
+- No admission registry is created.
 - No positive retained-grade proposal is made.
 - No source packet's audit status is changed.
 - No physical `SU(3)` theta sector, continuum limit, or record/readout

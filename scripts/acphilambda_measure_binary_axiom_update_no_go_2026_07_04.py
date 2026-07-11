@@ -13,7 +13,7 @@ DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md"
 MINIMAL = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
 AXIOM_PREMISES = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = DOCS / "audit" / "data" / "tier_a_admissions.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 REGISTRY = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
 REALIZED = DOCS / "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
@@ -67,7 +67,7 @@ def main() -> int:
     note = read(NOTE)
     minimal = read(MINIMAL)
     premises = json.loads(read(AXIOM_PREMISES))
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     registry = read(REGISTRY)
     realized = read(REALIZED)
     kinetic = read(KINETIC)
@@ -79,15 +79,16 @@ def main() -> int:
     measure_flat = flat(measure)
 
     section("A. source presence and audit anchors")
-    for path in [NOTE, MINIMAL, AXIOM_PREMISES, TIER_A, LEDGER, REGISTRY, REALIZED, KINETIC, MEASURE]:
+    for path in [NOTE, MINIMAL, AXIOM_PREMISES, DECISION_HISTORY, LEDGER, REGISTRY, REALIZED, KINETIC, MEASURE]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
     row = ledger_row_by_path("docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md")
-    check("carrier-measure boundary row is retained_bounded", row.get("effective_status") == "retained_bounded", row.get("effective_status"))
-    check("carrier-measure boundary row is audited_clean", row.get("audit_status") == "audited_clean", row.get("audit_status"))
+    check("carrier-measure boundary row is present", bool(row), row.get("effective_status"))
+    check("carrier-measure boundary status is audit-lane-owned", row.get("effective_status") is not None, row.get("effective_status"))
 
-    section("B. Tier-A registry boundary")
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
-    check("Tier-A has a live genuine admitted input", tier["genuine_admitted_input_count"] >= 1)
+    section("B. historical decision boundary and current open gate")
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    check("decision history has no live premise inputs", tier["genuine_admitted_input_count"] == 0)
+    check("decision history live target map is empty", tier["derivation_targets"] == {})
     check(
         "AC minimum decomposition keeps occupancy selection",
         "reading_occupancy_selection" in ac["minimum_decomposition"],
@@ -101,9 +102,9 @@ def main() -> int:
         "det_C/equal-power selectors",
     ]:
         check(f"machine registry states {phrase}", phrase in ac["statement"])
-    check("human registry names the reading/occupancy binary", "doublet reading/occupancy selection" in registry_flat)
-    check("note says registry is not edited", "The Tier-A registry is not edited." in note)
-    check("note says AC_phi_lambda is not retired", "AC_phi_lambda is not retired." in note)
+    check("human registry points to the occupancy derivation obligation", "AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md" in registry)
+    check("note routes the residual to the occupancy open gate", "occupancy `open_gate`" in note)
+    check("note keeps occupancy obligation open", "The AC occupancy derivation obligation remains open." in note)
 
     section("C. approved premise-node registry")
     check(
@@ -251,10 +252,10 @@ def main() -> int:
     for idx in range(1, 9):
         check(f"N{idx} gate present", f"**N{idx}" in note)
     for phrase in [
-        "AC_phi_lambda is not retired",
+        "The AC occupancy derivation obligation remains open.",
         "No value of `r` is derived, selected, or preferred.",
         "R-eta and theta are untouched.",
-        "derive the physical generation readout partition or keep AC(i) live",
+        "derive the physical generation readout partition or keep the obligation open",
         "The target is now sharper",
     ]:
         check(f"note carries boundary phrase: {phrase[:44]}", phrase in note)
@@ -280,7 +281,7 @@ def main() -> int:
         "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
         "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
         "FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md",
-        "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
+        "AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md",
     }
     check("markdown link inventory is controlled", links == expected_links, sorted(links))
     check("newer AC(i) notes are context only, not linked", "ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md](" not in note)

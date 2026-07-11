@@ -3,11 +3,11 @@
 **Date:** 2026-07-04
 **Type:** no_go
 **Claim type:** no_go
-**Scope boundary:** bounded no-go against retiring the surviving
-AC_phi_lambda sub-admission (i) doublet reading/occupancy selection binary by
+**Scope boundary:** bounded no-go against closing the surviving
+AC_phi_lambda occupancy-grain derivation obligation by
 appeal to the updated four axioms or approved primitives. This note
 does not derive, refute, re-grade, retire, or remove AC_phi_lambda, does not
-select `r = 1/2` or `r = 1`, and does not edit any Tier-A registry, axiom,
+select `r = 1/2` or `r = 1`, and does not create or edit any premise registry, axiom,
 primitive, audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
 **Primary runner:**
@@ -16,8 +16,9 @@ primitive, audit verdict, or publication-status surface.
 ## Target
 
 The 2026-07-04 hygiene pass already moved the per-lane value face of AC(i) to
-realized-state registration. The current Tier-A registry leaves a sharper
-survivor:
+realized-state registration. The historical decision record identifies a
+sharper unresolved target, now carried only by the occupancy derivation
+obligation:
 
 ```text
 the doublet reading/occupancy selection binary:
@@ -41,9 +42,9 @@ that survivor. They do not.
 - [`FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md`](FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md)
   is the retained-bounded carrier-measure boundary theorem: Record supplies
   finite additive readout coordinates, but not the missing weight selector.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
-  is the human Tier-A registry naming the live doublet reading/occupancy
-  binary.
+- `docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`
+  states the current open occupancy gate; the historical admitted-input note
+  is provenance only.
 
 Context only, not dependency links: the June/July AC(i) notes already separate
 the value face from the measure-side realization frontier. The runner rechecks
@@ -119,12 +120,12 @@ coordinates are supplied. Additivity does not rank them.
 | The updated Admissibility or Record text might be read as supplying AC(i)'s grain. | It is now explicitly certified as non-supplying the measure binary. |
 | The realized-state primitive might be over-read as selecting the measure rule. | It covers lane values only; the rule-shaped measure binary remains outside it. |
 | Kinetic isotropy could be analogized into a generation-measure graining primitive. | It remains only `c_t = c_s`; no selector or readout bridge is imported. |
-| The carrier-measure residual could be described as an axiom-count issue. | It is a theorem/bridge target: derive the physical generation readout partition or keep AC(i) live. |
+| The carrier-measure residual could be described as an axiom-count issue. | It is a theorem/bridge target: derive the physical generation readout partition or keep the obligation open. |
 
 ## What Does Not Move
 
-- AC_phi_lambda is not retired.
-- The Tier-A registry is not edited.
+- The AC occupancy derivation obligation remains open.
+- No premise registry is created or edited.
 - No value of `r` is derived, selected, or preferred.
 - The orbit/holomorphic count-once route remains open if a future theorem
   derives the needed matter-action statistics.
@@ -140,7 +141,7 @@ coordinates are supplied. Additivity does not rank them.
 2. **Readout-partition theorem.** Derive that the physical generation readout
    partition is exhausted by the framework-supplied generator channels, rather
    than by a per-mode or idempotent/eigenvalue frame.
-3. **Owner governance route.** Approve a narrow generation-measure primitive.
+3. **Approved-primitive route.** Approve a narrow generation-measure primitive.
    That would be governance, not derivation.
 
 ## No-Go Discipline Gate
@@ -150,7 +151,7 @@ checked and does not select a measure. Updated Admissibility is checked and
 does not select a Hamiltonian, transfer operator, probability, or scoring
 partition. Realized-state and kinetic-isotropy primitives are checked and do
 not supply the measure rule. Future matter-action, readout-partition, and
-owner-governance routes remain open.
+approved-primitive proposals remain open.
 
 **N2 wall independence.** The wall remains the same AC(i) binary:
 which grain/statistics the matter action implements. No new wall is added.
@@ -159,8 +160,8 @@ which grain/statistics the matter action implements. No new wall is added.
 no fitted value, no Born rule, no event law, no determinant-order selector, no
 new primitive, and no registry edit.
 
-**N4 residual matching.** The result matches the Tier-A registry after the
-value-face reclassification: per-lane `r` values can be registered state data,
+**N4 residual matching.** The result matches the occupancy `open_gate` after
+the value-face reclassification: per-lane `r` values can be registered state data,
 while the doublet reading/occupancy selection binary remains open.
 
 **N5 proven surface.** Proven here is an axiom/primitives non-supply result,
@@ -169,7 +170,7 @@ no-go against future matter-action or readout-partition theorems.
 
 **N6 partial closure.** The block removes one hygiene ambiguity: the updated
 axioms do not retire AC(i)'s surviving binary. The target is now sharper:
-derive the measure rule or keep AC(i) admitted.
+derive the measure rule; until then the occupancy gate stays open.
 
 **N7 steelman.** A reviewer can say generator-channel Hilbert-Schmidt scoring
 is the most natural carrier-measure rule. Correct: this note does not dispute
@@ -189,3 +190,11 @@ PYTHONPATH=scripts python3 scripts/acphilambda_measure_binary_axiom_update_no_go
 ```
 
 Expected close: `FAIL=0` with at least 120 checks.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)

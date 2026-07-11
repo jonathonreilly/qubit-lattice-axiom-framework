@@ -14,7 +14,7 @@ Run the repo-native no-go discipline skill from:
 
 Before shipping ANY artifact that asserts a negative result, even outside a
 physics-loop campaign: a `no_go` note, a stretch-attempt-negative outcome, a
-`bounded_theorem` whose source note names walls/admissions, a derived no-go
+`bounded_theorem` whose source note names walls/open obligations, a derived no-go
 boundary inside a positive theorem, or a review/analysis verdict that names
 walls. Agents are good at finding one route that fails and bad at proving all
 routes fail; this gate makes that gap explicit.

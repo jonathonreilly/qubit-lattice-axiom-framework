@@ -1,5 +1,8 @@
 # APS `η = 2/9` Topological Robustness at the `Z_3` Fixed Locus — Bounded Member Note
 
+**Current authority (2026-07-11):** older admission labels below are historical
+provenance only. The R-eta readout remains an `open_gate`.
+
 **Date:** 2026-07-02
 **Type:** bounded_theorem
 This source note does not set or predict an audit outcome.
@@ -121,7 +124,7 @@ Tactic totals: 5 + 11 + 5 + 4 + 6 + 6 + 2 + 2 = 41; the runner prints
   identifies the ambient APS invariant with the physical selected-line
   observable. That identification is exactly the `R-η` readout
   identification registered as Tier-A `AC_phi_lambda` sub-admission (ii) in
-  `docs/audit/data/tier_a_admissions.json`, which treats the magnitude as
+  `docs/audit/data/premise_decision_history.json`, which treats the magnitude as
   fixed-locus arithmetic conditional on `R-eta`, not as an admitted number.
   This note is part of that fixed-locus arithmetic layer; it adds no admission
   and discharges none.

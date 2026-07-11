@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py
-runner_sha256: 1f3d882a27ab236b4c3eccbc33b647f63050e1c3a73038b056d965cda74b2f5f
+runner_sha256: a2573cb4e35b469b6a8c3904ccae22f0131fcfab5b618427d58e14a9374687dc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 
@@ -44,7 +44,7 @@ S4 - the machinery CANNOT select the value (hostile form-admissible family)
 [PASS] form-admissible candidate passes ALL forced constraints: c = 3/10 (generic rational)  [cos(3c) = cos(9/10)]
 [PASS] ALL 5 inequivalent candidates pass the FORCED form layer (registrability machinery selects NONE of them)
 [PASS] the candidates are PHYSICALLY inequivalent (5 distinct cos3delta channel values => 5 distinct registered mass multisets)  [5 distinct channel values]
-[PASS] => the admitted atom is load-bearing for EXACTLY ONE real parameter: the VALUE of |delta| in the fundamental domain (and for nothing else in the R-eta statement)
+[PASS] => the open condition is load-bearing for EXACTLY ONE real parameter: the VALUE of |delta| in the fundamental domain (and for nothing else in the R-eta statement)
 [PASS] HOSTILE r-coupled candidate |delta| = (1-r)/2 is ALSO form-admissible (K-even; r is delta-blind) - registrability does NOT forbid r-coupling; the named atom (pure C3-cycle data) is what keeps delta r-DECOUPLED  [r-firewall: no claim about the r VALUE is made or used here]
 
 ========================================================================================
@@ -76,12 +76,12 @@ S7 - circularity guard: the cos3delta channel does NOT assume R-eta
 ========================================================================================
 S8 - conditional value: |delta| = 2/9 EXACT conditional on the named atom
 ========================================================================================
-[PASS] ATOM (A_R-eta, admitted, NOT derived): registered |delta| = AB/Lefschetz density of the realized C3[111] cycle, identity-read in radians => |delta| = 2/9 EXACT
+[PASS] CONDITION (A_R-eta, open, NOT derived): |delta| = AB/Lefschetz density of the realized C3[111] cycle, identity-read in radians => |delta| = 2/9 EXACT
 [PASS] 2/9 lies in the forced fundamental domain (0, pi/3)
 [PASS] 2/9 NOT in {n pi/3}: the identification route is NOT a stationarity route (separation no-go boundary respected, not entered)  [n = []]
 [PASS] registered channel point cos(3 |delta|) = cos(2/3) EXACT
 [PASS] registered surface at the atom value is K-even: e_i(2/9) = e_i(-2/9) for i = 1,2,3 EXACT
-[PASS] NOT CLAIMED: 2/9 derived. The value is fixed-locus arithmetic CONDITIONAL on A_R-eta; A_R-eta itself remains admitted
+[PASS] NOT CLAIMED: 2/9 derived. The value is fixed-locus arithmetic CONDITIONAL on A_R-eta; A_R-eta itself remains open
 
 ========================================================================================
 S9 - boundary witnesses + r-firewall
@@ -89,9 +89,9 @@ S9 - boundary witnesses + r-firewall
 [PASS] r-FIREWALL: nothing in this runner constrains, forces, or derives r; the r-carrier e2 is delta-blind and is left untouched (r = the registered dial setting; sectors r in {0, 1/2, 1})
 [PASS] the delta channel (e3/cos3delta) and the r carrier (e2) are DISTINCT spectral invariants: the atom narrowing is delta-side work, r-blind
 [PASS] BOUNDED: future non-det readout contexts that might supply another dimensionless conversion factor are NOT foreclosed (the k=0 forcing is the det-class surface only)
-[PASS] NOT addressed here: sub-admission (i) occupancy selection, sub-admission (iii) species bridge, the R1b anchor, the R2 global PL/ABSS bridge, the carrier gate realization
-[PASS] no Tier-A registry edit, no downstream status set, no admission retired; this is a source-side narrowing of WHAT sub-admission (ii) admits
-[PASS] 2026-06-13 boundary: conditional support only; A_R-eta remains admitted
+[PASS] NOT addressed here: occupancy selection, species bridge, the R1b anchor, the R2 global PL/ABSS bridge, the carrier gate realization
+[PASS] no premise registry edit, no downstream status set, no obligation closed; this is a source-side narrowing of the R-eta condition
+[PASS] 2026-06-13 boundary: conditional support only; A_R-eta remains open
 [PASS] 2026-07-05 dependency-status split: explicit FORMAL H(delta) theorem present (physical readout identification is conditional/open)
 [PASS] 2026-07-05 dependency-status split: the two named non-proof authorities are marked context-only at their current grades
 [PASS] 2026-07-05 dependency-status split: the K-orbit circulant form is wired as a one-hop markdown-link authority at its current retained-bounded grade

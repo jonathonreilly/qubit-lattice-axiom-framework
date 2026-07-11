@@ -15,7 +15,8 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ACPHILAMBDA_K_EVEN_REGISTRATION_CORRECTION_REGISTERED_PATTERN_2026-07-02.md"
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
-TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+DECISION_HISTORY = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
+OBLIGATIONS = ROOT / "docs" / "audit" / "data" / "derivation_obligations.json"
 RECORD = ROOT / "docs" / "RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md"
 BRANNEN = ROOT / "docs" / "BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md"
 
@@ -29,7 +30,7 @@ TIER_A_QUOTE = (
 PRESERVED = [
     "every registrable layer derived in this campaign is K-even; the sign strip is K/CPT-orbit constancy",
     "the K-odd trace is a reconstruction-layer detector; its registrable image is K-even",
-    "on the current retained surface the value is realized-state registered data; the residual identification is exactly the R-eta sub-admission in its narrowed coordinates",
+    "the value is realized-state registered data while the residual identification is exactly the R-eta `open_gate` in its narrowed coordinates",
     "this is the registered-pattern normal form, not a terminal no-go",
 ]
 ALLOWED_WALLS = {
@@ -64,9 +65,9 @@ def ledger_rows() -> tuple[dict, dict]:
     return rows.get(RECORD_KEY, {}), rows.get(BRANNEN_KEY, {})
 
 
-def tier_a_statement() -> str:
-    data = json.loads(read_text(TIER_A))
-    return data["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]["statement"]
+def r_eta_target() -> str:
+    data = json.loads(read_text(OBLIGATIONS))
+    return data["nodes"]["ac_reta_hclass_hunit_readout_derivation_obligation"]["target"]
 
 
 def not_zero(expr: sp.Expr) -> bool:
@@ -106,7 +107,8 @@ def part_a_sources(note: str) -> None:
     check("record dependency exists", RECORD.exists(), str(RECORD.relative_to(ROOT)))
     check("Brannen dependency exists", BRANNEN.exists(), str(BRANNEN.relative_to(ROOT)))
     check("ledger exists", LEDGER.exists(), str(LEDGER.relative_to(ROOT)))
-    check("Tier-A data exists", TIER_A.exists(), str(TIER_A.relative_to(ROOT)))
+    check("decision-history provenance exists", DECISION_HISTORY.exists(), str(DECISION_HISTORY.relative_to(ROOT)))
+    check("open-gate registry exists", OBLIGATIONS.exists(), str(OBLIGATIONS.relative_to(ROOT)))
 
     record_text = read_text(RECORD)
     brannen_text = read_text(BRANNEN)
@@ -130,10 +132,11 @@ def part_a_sources(note: str) -> None:
     check("retired ledger-scope embedding absent", "ledger `claim_scope`:" not in note)
     check("retired citation-authority wording absent", "citation authority" not in note)
 
-    statement = tier_a_statement()
-    check("Tier-A statement contains sub-admission (ii)", TIER_A_QUOTE in statement)
-    check("note quotes Tier-A sub-admission (ii)", TIER_A_QUOTE in note)
-    check("Tier-A path is inline code, not markdown link", f"`{TIER_A.relative_to(ROOT)}`" in note)
+    target = r_eta_target()
+    check("current open gate names the eta-angle readout", "eta angle" in target)
+    history = json.loads(read_text(DECISION_HISTORY))
+    check("decision history is non-authoritative", "Non-authoritative" in history.get("description", ""))
+    check("decision-history path is provenance-only inline context", f"`{DECISION_HISTORY.relative_to(ROOT)}`" in note)
 
 
 def branch_product(sign: int, phi: sp.Symbol) -> sp.Expr:
@@ -286,7 +289,7 @@ def part_d_note_discipline(note: str) -> None:
         check(f"instruction marker absent: {fragment}", fragment not in note)
 
     check("retained_bounded token absent from note", note.count("retained_bounded") == 0)
-    check("Tier-A path is not markdown linked", not any("tier_a_admissions.json" in target for _, target in links))
+    check("retired admission path is not markdown linked", not any("tier_a_admissions.json" in target for _, target in links))
     check("no campaign note path markdown links", not any("ACPHILAMBDA_" in target for _, target in links))
 
     line_count = len(note.splitlines())

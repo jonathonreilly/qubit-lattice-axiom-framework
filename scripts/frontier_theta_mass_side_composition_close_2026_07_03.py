@@ -1,4 +1,4 @@
-"""Theta mass-side composition close on the shared occupancy bridge.
+"""Theta mass-side composition conditional on two independent bridges.
 
 This runner is deterministic and uses exact rational arithmetic for the finite
 matrix checks. It imports nothing from the 2026-07-01 runner; the small Case-A
@@ -21,6 +21,12 @@ ORIENTATION_NOTE = (
     "docs/THETA_MASS_ORIENTATION_ZERO_BRANCH_PAIRING_FORCED_ON_K_REAL_SURFACE_NARROW_THEOREM_NOTE_2026-07-01.md"
 )
 DETERMINANT_NOTE = "docs/STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md"
+OCCUPANCY_OBLIGATION = (
+    "docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md"
+)
+CROSS_SECTOR_OBLIGATION = (
+    "docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md"
+)
 
 SHARED_BRIDGE_SENTENCE = (
     "one record locking one admissible local possibility is one statistical slot, and the "
@@ -37,6 +43,8 @@ PAIRING_FORMULA_ASCII = (
 CONDITIONAL_SENTENCE_2026_06_12 = (
     "The statement is deliberately conditional on the supplied mass determinant channel."
 )
+OCCUPANCY_CONDITIONAL = "charged-lepton occupancy statistical grain"
+CROSS_SECTOR_CONDITIONAL = "quark-determinant cross-sector readout"
 CROSS_CHECK_2026_07_01 = "roots = [-0.7606  0.4678  3.2928], det = 2.262e+10"
 
 M_GRID = [
@@ -398,15 +406,23 @@ def test_hostile_guard() -> None:
 
 
 def test_composition_count() -> None:
-    surviving_conditionals = [SHARED_BRIDGE_SENTENCE]
+    surviving_conditionals = [OCCUPANCY_CONDITIONAL, CROSS_SECTOR_CONDITIONAL]
     bridge_absorbs_record_registration = (
         "one record locking one admissible local possibility" in SHARED_BRIDGE_SENTENCE
         and "K/CPT record-outcome orbits" in SHARED_BRIDGE_SENTENCE
     )
+    obligations_are_distinct = (
+        Path(OCCUPANCY_OBLIGATION).is_file()
+        and Path(CROSS_SECTOR_OBLIGATION).is_file()
+        and OCCUPANCY_OBLIGATION != CROSS_SECTOR_OBLIGATION
+        and source_contains(NOTE_FILE, "Closing the former does not close the latter.")
+    )
     check(
-        bridge_absorbs_record_registration and len(surviving_conditionals) == 1,
-        "composition conditional-input count is one",
-        "the 2026-06-12 supplied channel is this mass-side use of the shared bridge",
+        bridge_absorbs_record_registration
+        and obligations_are_distinct
+        and len(surviving_conditionals) == 2,
+        "composition conditional-input count is two",
+        "; ".join(surviving_conditionals),
     )
     check(
         CROSS_CHECK_2026_07_01
@@ -428,7 +444,10 @@ def main() -> int:
 
     print(f"FILES: {NOTE_FILE}; {RUNNER_FILE}")
     print(f"TOTAL: PASS={PASS_COUNT} FAIL={FAIL_COUNT}; CHECK_COUNT={CHECK_COUNT}")
-    print(f'SURVIVING CONDITIONALS: count=1; "{SHARED_BRIDGE_SENTENCE}"')
+    print(
+        "SURVIVING CONDITIONALS: count=2; "
+        + "; ".join(f'"{item}"' for item in [OCCUPANCY_CONDITIONAL, CROSS_SECTOR_CONDITIONAL])
+    )
     print(f"CROSS-CHECK: 2026-07-01 T3c {CROSS_CHECK_2026_07_01}")
     print(
         "UNCERTAINTIES: gauge side untouched: theta_gauge, real-positive Wilson action "

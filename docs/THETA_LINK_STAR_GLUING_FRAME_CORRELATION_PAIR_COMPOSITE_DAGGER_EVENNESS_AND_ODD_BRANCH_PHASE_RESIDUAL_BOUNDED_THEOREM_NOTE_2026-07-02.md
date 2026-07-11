@@ -1,6 +1,9 @@
 # Link-Star Gluing Frame Theorems: the Relative Frame Rides the Composite Holonomy (Pairs and Chains), Stars Are Exactly Diagonal-Conjugation Objects, and Real-Weight Gluing Is Orientation-Reversal-Even — so the SU(2) Star Reduces to Pairwise Classes and the Orientation-Odd Branch Requires a Phase Insertion (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Claim type:** bounded_theorem (exact finite gluing constructions plus a
 scoped evenness obstruction; not a terminal no-go, not a discharge of the
 theta admission).
@@ -143,7 +146,7 @@ transport; and by Theorem 2 the glued objects expose exactly the joint-orbit
    algebra). No landed note is consumed as a premise.
 
 3. **Tier-A theta registry text**
-   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
+   ([`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json),
    gauge side): the residual is "localized to the multi-plaquette /
    large-gauge-winding account"; link-star gluing is that account's local
    structure.
@@ -279,7 +282,7 @@ stars.
 | phase-type (complex) insertion for the odd branch | OPEN — exactly residual (ii'), now triply motivated |
 | SU(3) even-ring beyond-pairwise data | OPEN — named (i-b''-a); the evenness identity holds, the reduction question does not transfer |
 | per-plaquette chamber conventions | NOT LICENSED (block 5, clarified Record axiom) and unnecessary here |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

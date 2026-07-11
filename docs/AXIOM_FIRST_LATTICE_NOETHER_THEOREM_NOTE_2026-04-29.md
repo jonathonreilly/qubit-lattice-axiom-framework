@@ -1,5 +1,9 @@
 # Axiom-First Lattice Noether's Theorem on Cl(3) ⊗ Z^3
 
+**Current authority (2026-07-11):** legacy Tier-A routing below is historical
+provenance only. Any such dependency is open unless supplied by a retained
+derivation; it cannot satisfy the axiom/primitive foundation.
+
 **Date:** 2026-04-29 (originally); 2026-05-03 (sublattice repair); 2026-05-10 (gate-recategorization repair); 2026-05-10 (g_bare-removal repair); 2026-05-25 (Step 4b boundary repair); 2026-06-06 (onsite-generator scope, U(1) sign-directness, and KS chirality/parity bridge-support repairs); 2026-06-15 (registered-parent cycle-edge rescope)
 **Status:** source-note proposal — author-declared `bounded_theorem`; effective
 status set only by the independent audit lane.
@@ -966,7 +970,7 @@ unregistered conditional blocker.
 3. **The registered target is retained as plain-text context only.**
    The canonical staggered-Dirac realization parent
    remains the registered Tier-A derivation target `AC_φλ` in the
-   admission registry (`docs/audit/data/tier_a_admissions.json`), but
+   admission registry (`docs/audit/data/premise_decision_history.json`), but
    this Noether row no longer uses a markdown edge to that parent alias
    as a one-hop dependency. The current dependency graph follows the
    explicit supplier cascade above. This note does **not** close the

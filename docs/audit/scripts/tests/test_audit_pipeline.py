@@ -125,9 +125,8 @@ def _no_go_packet(
             "scan_scope": "all registered premise classes and definition reframes",
             "premise_classes_checked": [
                 "axiom_or_approved_primitive",
-                "owner_governed_residual",
-                "tier_a_derivation_target",
-                "tier_a_convention_not_accepted",
+                "open_gate",
+                "convention_not_accepted",
                 "definition_or_scope_reframe",
             ],
             "candidates": [],
@@ -271,11 +270,15 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
     # audit_lint reads these at main() time; without redirecting them the lint
     # validates a synthetic temp ledger against the REAL repo's premise and
     # queue registries and emits spurious errors (rows the test never created).
-    if hasattr(module, "TIER_A_ADMISSIONS_PATH"):
-        module.TIER_A_ADMISSIONS_PATH = module.DATA_DIR / "tier_a_admissions.json"
-    if hasattr(module, "OWNER_GOVERNED_PREMISE_NODES_PATH"):
-        module.OWNER_GOVERNED_PREMISE_NODES_PATH = (
+    if hasattr(module, "RETIRED_ADMISSIONS_PATH"):
+        module.RETIRED_ADMISSIONS_PATH = module.DATA_DIR / "tier_a_admissions.json"
+    if hasattr(module, "RETIRED_OWNER_GOVERNANCE_PATH"):
+        module.RETIRED_OWNER_GOVERNANCE_PATH = (
             module.DATA_DIR / "owner_governed_premise_nodes.json"
+        )
+    if hasattr(module, "DERIVATION_OBLIGATIONS_PATH"):
+        module.DERIVATION_OBLIGATIONS_PATH = (
+            module.DATA_DIR / "derivation_obligations.json"
         )
     if hasattr(module, "AUDIT_DISPATCH_QUEUE_PATH"):
         module.AUDIT_DISPATCH_QUEUE_PATH = module.DATA_DIR / "audit_dispatch_queue.json"
@@ -1238,12 +1241,8 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
         self.assertEqual(new_rows["glossary"]["effective_status"], "meta")
         self.assertEqual(new_rows["child"]["effective_status"], "retained_bounded")
 
-    def test_owner_governed_and_axiom_premises_do_not_bound_positive_theorem(self):
-        """Axioms and explicitly approved framework primitives satisfy chain
-        closure without forcing retained_bounded. Owner-governed residual
-        premises do the same without being axioms or primitives. Tier-A
-        derivation targets are the only accepted premises that bound an
-        otherwise clean positive theorem."""
+    def test_only_axioms_and_primitives_satisfy_positive_theorem_chain(self):
+        """Governance records and historical admissions remain blockers."""
         m = _import("compute_effective_status")
         rows = {
             "uses_minimal_axioms": {
@@ -1258,17 +1257,29 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
                 "audit_status": "audited_clean",
                 "claim_type": "positive_theorem",
             },
-            "uses_owner_governed_residual": {
-                "claim_id": "uses_owner_governed_residual",
-                "deps": ["staggered_dirac_realization_gate_note_2026-05-03"],
+            "uses_open_obligation": {
+                "claim_id": "uses_open_obligation",
+                "deps": ["ac_orbit_obligation"],
                 "audit_status": "audited_clean",
                 "claim_type": "positive_theorem",
             },
-            "uses_tier_a_admission": {
-                "claim_id": "uses_tier_a_admission",
-                "deps": ["observable_principle_from_axiom_note"],
+            "uses_historical_admission": {
+                "claim_id": "uses_historical_admission",
+                "deps": ["historical_admission"],
                 "audit_status": "audited_clean",
                 "claim_type": "positive_theorem",
+            },
+            "ac_orbit_obligation": {
+                "claim_id": "ac_orbit_obligation",
+                "deps": [],
+                "audit_status": "unaudited",
+                "claim_type": "open_gate",
+            },
+            "historical_admission": {
+                "claim_id": "historical_admission",
+                "deps": [],
+                "audit_status": "unaudited",
+                "claim_type": "meta",
             },
         }
         with mock.patch.object(
@@ -1278,14 +1289,8 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
             in {"minimal_axioms", "scale_reference_primitive"},
         ), mock.patch.object(
             m.premise_nodes,
-            "is_owner_governed_premise",
-            side_effect=lambda dep_id: dep_id
-            == "staggered_dirac_realization_gate_note_2026-05-03",
-        ), mock.patch.object(
-            m.premise_nodes,
-            "is_admitted_derivation_target",
-            side_effect=lambda dep_id: dep_id
-            == "observable_principle_from_axiom_note",
+            "is_non_evidence_context_dep",
+            side_effect=lambda dep_id: dep_id == "historical_admission",
         ):
             new_rows, _cycles = m.compute_effective(rows)
         self.assertEqual(
@@ -1296,22 +1301,22 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
             "retained",
         )
         self.assertEqual(
-            new_rows["uses_owner_governed_residual"]["effective_status"],
-            "retained",
+            new_rows["uses_open_obligation"]["effective_status"],
+            "retained_pending_chain",
         )
         self.assertEqual(
-            new_rows["uses_tier_a_admission"]["effective_status"],
-            "retained_bounded",
+            new_rows["uses_historical_admission"]["effective_status"],
+            "retained_pending_chain",
         )
         self.assertEqual(
-            new_rows["uses_tier_a_admission"]["effective_status_reason"],
-            "bounded_by_tier_a_admitted_derivation_target",
+            new_rows["uses_open_obligation"]["effective_status_reason"],
+            "chain_waiting_on:ac_orbit_obligation",
         )
 
     def test_metadata_dependencies_satisfy_clean_chain_without_bounding(self):
         """Metadata rows are stable audit-governance inputs. They satisfy a
         clean theorem's dependency chain without turning the theorem into
-        retained_pending_chain and without imposing Tier-A boundedness."""
+        retained_pending_chain without creating any admission-class exception."""
         m = _import("compute_effective_status")
         rows = {
             "key_terminology": {
@@ -1707,38 +1712,55 @@ class AuditLintTest(unittest.TestCase):
         )
         self.assertEqual(errors, [])
 
-    def test_owner_governed_class_counts_match_nodes_and_atoms(self):
+    def test_obsolete_premise_registries_are_rejected(self):
         m = _import("audit_lint")
-        registry = {
-            "owner_governed_premise_node_count": 1,
-            "owner_governed_residual_atom_count": 2,
-            "nodes": {
-                "ac": {
-                    "adopted_residual_candidates": ["ac_i", "ac_ii"],
-                }
+        _patch_repo_root(m, self.tmp_root)
+        self._write_minimal_ledger({})
+        for name in (
+            "tier_a_admissions.json",
+            "owner_governed_premise_nodes.json",
+        ):
+            path = self.fx.data_dir / name
+            path.write_text("{}\n", encoding="utf-8")
+            import contextlib, io
+            output = io.StringIO()
+            with contextlib.redirect_stdout(output):
+                rc = m.main()
+            self.assertEqual(rc, 1, output.getvalue())
+            self.assertIn(f"{name} must not exist", output.getvalue())
+            path.unlink()
+
+    def test_scientific_dependency_on_non_evidence_history_is_rejected(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        rows = {
+            "history": {
+                "claim_id": "history",
+                "audit_status": "unaudited",
+                "claim_type": "meta",
+                "effective_status": "meta",
+                "criticality": "leaf",
+            },
+            "science": {
+                "claim_id": "science",
+                "deps": ["history"],
+                "audit_status": "unaudited",
+                "claim_type": "bounded_theorem",
+                "effective_status": "unaudited",
+                "criticality": "leaf",
             },
         }
-        self.assertEqual(m.owner_governed_count_errors(registry), [])
-
-        registry["owner_governed_premise_node_count"] = 0
-        self.assertEqual(
-            m.owner_governed_count_errors(registry),
-            [
-                "owner_governed_premise_nodes.json "
-                "owner_governed_premise_node_count must equal nodes"
-            ],
-        )
-
-        registry["owner_governed_premise_node_count"] = 1
-        registry["owner_governed_residual_atom_count"] = 0
-        self.assertEqual(
-            m.owner_governed_count_errors(registry),
-            [
-                "owner_governed_premise_nodes.json "
-                "owner_governed_residual_atom_count must equal "
-                "adopted_residual_candidates across nodes"
-            ],
-        )
+        self._write_minimal_ledger(rows)
+        import contextlib, io
+        output = io.StringIO()
+        with mock.patch.object(
+            m.premise_nodes,
+            "is_non_evidence_context_dep",
+            side_effect=lambda dep_id: dep_id == "history",
+        ), contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("scientific row depends on non-evidence context", output.getvalue())
 
     def test_lint_validates_live_and_cross_confirmation_no_go_packets(self):
         m = _import("audit_lint")
@@ -2467,17 +2489,12 @@ class ComputeAuditQueueTest(unittest.TestCase):
         self.assertNotIn("runner_pipeline", targets[0]["instruction"])
         self.assertIn("source-graph repair", targets[0]["instruction"])
 
-    def test_is_ready_accepts_premise_deps(self):
-        """Queue readiness mirrors compute_effective_status's accepted-premise
-        policy: a row whose only non-retained deps are an axiom/primitive
-        premise node, an owner-governed residual premise, or a Tier-A admitted
-        derivation target is auditable now (a clean verdict resolves it to
-        retained / retained_bounded), so the queue must mark it ready instead
-        of holding it behind the premise row's own unaudited row."""
+    def test_is_ready_accepts_only_foundational_premise_deps(self):
+        """Open obligations remain queue blockers."""
         m = _import("compute_audit_queue")
         rows = {
-            "tier_a_gate": {
-                "claim_id": "tier_a_gate",
+            "open_obligation": {
+                "claim_id": "open_obligation",
                 "deps": [],
                 "effective_status": "unaudited",
             },
@@ -2491,31 +2508,69 @@ class ComputeAuditQueueTest(unittest.TestCase):
                 "deps": [],
                 "effective_status": "unaudited",
             },
+            "decision_history": {
+                "claim_id": "decision_history",
+                "deps": [],
+                "effective_status": "meta",
+            },
             "discharge_note": {
                 "claim_id": "discharge_note",
-                "deps": ["minimal_axioms", "tier_a_gate", "retained_dep"],
+                "deps": ["minimal_axioms", "retained_dep"],
                 "effective_status": "unaudited",
             },
-            "owner_governed_discharge_note": {
-                "claim_id": "owner_governed_discharge_note",
-                "deps": ["owner_governed_gate", "retained_dep"],
+            "obligation_discharge_note": {
+                "claim_id": "obligation_discharge_note",
+                "deps": ["open_obligation", "retained_dep"],
                 "effective_status": "unaudited",
             },
             "blocked_note": {
                 "claim_id": "blocked_note",
-                "deps": ["tier_a_gate", "unaudited_dep"],
+                "deps": ["open_obligation", "unaudited_dep"],
+                "effective_status": "unaudited",
+            },
+            "history_blocked_note": {
+                "claim_id": "history_blocked_note",
+                "deps": ["decision_history"],
                 "effective_status": "unaudited",
             },
         }
         with mock.patch.object(
             m.premise_nodes,
             "is_accepted_premise_dep",
-            side_effect=lambda dep_id: dep_id
-            in {"minimal_axioms", "tier_a_gate", "owner_governed_gate"},
+            side_effect=lambda dep_id: dep_id == "minimal_axioms",
+        ), mock.patch.object(
+            m.premise_nodes,
+            "is_non_evidence_context_dep",
+            side_effect=lambda dep_id: dep_id == "decision_history",
         ):
             self.assertTrue(m.is_ready(rows["discharge_note"], rows))
-            self.assertTrue(m.is_ready(rows["owner_governed_discharge_note"], rows))
+            self.assertFalse(m.is_ready(rows["obligation_discharge_note"], rows))
             self.assertFalse(m.is_ready(rows["blocked_note"], rows))
+            self.assertFalse(m.is_ready(rows["history_blocked_note"], rows))
+
+
+class ComputeReauditCandidatesTest(unittest.TestCase):
+    def test_non_evidence_history_cannot_make_candidate_ready(self):
+        m = _import("compute_reaudit_candidates")
+        rows = {
+            "history": {"effective_status": "meta"},
+            "retained_dep": {"effective_status": "retained_bounded"},
+        }
+        with mock.patch.object(
+            m.premise_nodes,
+            "is_non_evidence_context_dep",
+            side_effect=lambda dep_id: dep_id == "history",
+        ), mock.patch.object(
+            m.premise_nodes,
+            "is_accepted_premise_dep",
+            return_value=False,
+        ):
+            self.assertFalse(
+                m.current_deps_are_ratified({"deps": ["history"]}, rows)
+            )
+            self.assertTrue(
+                m.current_deps_are_ratified({"deps": ["retained_dep"]}, rows)
+            )
 
 
 class NoGoDisciplineGateTest(unittest.TestCase):
@@ -2819,8 +2874,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             root = Path(tmp)
             for path, payload in (
                 (m.AXIOM_REGISTRY, {"canonical_ids": [], "nodes": {}}),
-                (m.OWNER_REGISTRY, {"canonical_ids": [], "nodes": {}}),
-                (m.TIER_A_REGISTRY, {"derivation_targets": {}, "conventions": {}}),
+                (m.OBLIGATION_REGISTRY, {"canonical_ids": [], "nodes": {}}),
             ):
                 target = root / path
                 target.parent.mkdir(parents=True, exist_ok=True)
@@ -2986,7 +3040,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "roles": ["authority"],
             "text": "Convention metadata does not supply theorem authority.",
             "effective_status": "unaudited",
-            "accepted_premise_type": "tier_a_convention_not_accepted",
+            "accepted_premise_type": "convention_not_accepted",
         }
         audit = {
             "claim_type": "no_go",
@@ -3010,13 +3064,13 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "schema": "no_go_partial_closure_index_v1",
             "claim_id": "test_no_go",
             "candidates": [{
-                "candidate_id": "tier_a:convention",
-                "kind": "tier_a",
+                "candidate_id": "approved_primitive:convention",
+                "kind": "approved_primitive",
             }],
         })
         audit["no_go_discipline"]["N6_partial_closure_scan"]["candidates"] = [{
-            "candidate_id": "tier_a:convention",
-            "kind": "tier_a",
+            "candidate_id": "approved_primitive:convention",
+            "kind": "approved_primitive",
             "could_close_wall": False,
             "addressed": True,
             "disposition": "does not close the wall",
@@ -3436,9 +3490,6 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             )
             with (
                 mock.patch.object(m.premise_nodes, "is_axiom_premise", side_effect=lambda x: x == "axiom"),
-                mock.patch.object(m.premise_nodes, "is_owner_governed_premise", side_effect=lambda x: x == "owner"),
-                mock.patch.object(m.premise_nodes, "is_admitted_derivation_target", side_effect=lambda x: x == "tier"),
-                mock.patch.object(m.premise_nodes, "is_admitted_convention", side_effect=lambda x: x == "convention"),
             ):
                 prompt = m.render_prompt(
                     rows["target"], rows, template, 1, skip_runner_stdout=True
@@ -3449,10 +3500,9 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             self.assertIn("literal {{RUNNER_PATH}} and", prompt)
             self.assertIn("{{NOTE_BODY}} inside authority", prompt)
             self.assertIn("accepted_premise_type: axiom_or_approved_primitive", prompt)
-            self.assertIn("accepted_premise_type: owner_governed_residual", prompt)
-            self.assertIn("accepted_premise_type: tier_a_derivation_target", prompt)
-            self.assertIn("accepted_premise_type: tier_a_convention_not_accepted", prompt)
-            self.assertIn("bounds_downstream: true", prompt)
+            self.assertNotIn("accepted_premise_type: owner_governed_residual", prompt)
+            self.assertNotIn("accepted_premise_type: tier_a_derivation_target", prompt)
+            self.assertIn("bounds_downstream: false", prompt)
             self.assertIn("no_go_partial_closure_index_v1", prompt)
 
     def test_exact_manifest_matches_truncated_source_and_visible_stdout(self):
@@ -3567,6 +3617,64 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 m.detect_invalidation(row, {"legacy_no_go": row}),
                 "no_go_discipline_packet_missing",
             )
+
+    def test_live_packet_invalid_under_current_policy_is_invalidated(self):
+        m = _import("invalidate_stale_audits")
+        row = {
+            "claim_id": "stale_policy_packet",
+            "note_path": "docs/STALE_POLICY_PACKET.md",
+            "audit_status": "audited_conditional",
+            "claim_type": "bounded_theorem",
+            "no_go_discipline": {"required": True, "status": "FAIL"},
+        }
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "evidence_manifest_from_snapshot",
+            return_value={},
+        ), mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value="prior authority is not accepted",
+        ):
+            reason = m.detect_invalidation(row, {"stale_policy_packet": row})
+        self.assertIsNotNone(reason)
+        self.assertTrue(reason.startswith("no_go_discipline_packet_invalid:"))
+
+    def test_cross_confirmation_packet_invalid_under_current_policy_is_invalidated(self):
+        m = _import("invalidate_stale_audits")
+        first_audit = {
+            "verdict": "audited_clean",
+            "claim_type": "no_go",
+            "no_go_discipline": {"required": True, "status": "FAIL"},
+        }
+        row = {
+            "claim_id": "stale_cross_confirmation_packet",
+            "note_path": "docs/STALE_CROSS_CONFIRMATION_PACKET.md",
+            "audit_status": "audit_in_progress",
+            "claim_type": "no_go",
+            "cross_confirmation": {
+                "status": "awaiting_cross_confirmation",
+                "first_audit": first_audit,
+            },
+        }
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "evidence_manifest_from_snapshot",
+            return_value={},
+        ), mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value="prior authority is not accepted",
+        ):
+            reason = m.detect_invalidation(
+                row, {"stale_cross_confirmation_packet": row}
+            )
+        self.assertIsNotNone(reason)
+        self.assertTrue(
+            reason.startswith(
+                "cross_confirmation_first_audit_no_go_packet_invalid:"
+            )
+        )
 
 
 class CodexAuditRunnerModelPolicyTest(unittest.TestCase):

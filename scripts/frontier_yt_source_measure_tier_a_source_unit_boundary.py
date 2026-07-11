@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Y_T source-measure Tier-A source-unit boundary gate."""
+"""Y_T conditional source-measure source-unit boundary gate."""
 
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ DOCS = ROOT / "docs"
 OUT = ROOT / "outputs" / "yt_source_measure_tier_a_source_unit_boundary_2026-05-30.json"
 
 NOTE = DOCS / "YT_SOURCE_MEASURE_TIER_A_SOURCE_UNIT_BOUNDARY_NOTE_2026-05-30.md"
-TIER_A_YT = DOCS / "YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md"
+CONDITIONAL_YT = DOCS / "YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md"
 DEMOCRATIC = DOCS / "YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md"
 SOURCE_ACTION = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
 LSP_SOURCE = DOCS / "YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
@@ -25,7 +25,7 @@ TOP_RATIO = DOCS / "YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05
 EW_INTERTWINER = DOCS / "YT_EW_HIGGS_SOURCE_INTERTWINER_GATE_NOTE_2026-05-25.md"
 PCAL_SYNTHESIS = DOCS / "SOURCE_MEASURE_PCAL_RETIREMENT_SYNTHESIS_NOTE_2026-05-30.md"
 LOG_BOUNDARY = DOCS / "SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md"
-TIER_A_REGISTRY = DOCS / "audit" / "data" / "tier_a_admissions.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 AUDIT_ROOTS = [
@@ -38,7 +38,7 @@ AUDIT_ROOTS = [
     "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
 ]
 
-RETAINED_GRADE_BOUNDED_SUPPORT = [
+CONTEXT_SUPPORT_ROWS = [
     "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
     "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
     "yt_source_covariance_normalization_support_note_2026-05-24",
@@ -82,7 +82,7 @@ def part1_documents() -> dict[str, Any]:
     print("\nPart 1: documents and source boundary")
     for path in (
         NOTE,
-        TIER_A_YT,
+        CONDITIONAL_YT,
         DEMOCRATIC,
         SOURCE_ACTION,
         LSP_SOURCE,
@@ -92,7 +92,7 @@ def part1_documents() -> dict[str, Any]:
         EW_INTERTWINER,
         PCAL_SYNTHESIS,
         LOG_BOUNDARY,
-        TIER_A_REGISTRY,
+        DECISION_HISTORY,
         LEDGER,
     ):
         check(f"{path.relative_to(ROOT)} exists", path.exists())
@@ -116,10 +116,10 @@ def part1_documents() -> dict[str, Any]:
     proposal_key = "proposal_" + "allowed"
     check("package avoids retained-status promotion language", conditional_key not in note and proposal_key not in note)
 
-    tier = read(TIER_A_YT)
-    check("Tier-A YT note says answer is yes on accepted bounded surface", "Yes, on that accepted bounded surface" in tier)
-    check("Tier-A YT note closes lambda=1", "lambda = 1" in tier and "y_33 = 1 / sqrt(6)" in tier)
-    check("Tier-A YT note does not claim unbounded closure", "does not by itself promote" in tier)
+    tier = read(CONDITIONAL_YT)
+    check("YT note states the calculation is conditional", "Conditionally. Under the explicit open source-measure hypothesis" in tier)
+    check("YT note computes lambda=1 under that hypothesis", "lambda = 1" in tier and "y_33 = 1 / sqrt(6)" in tier)
+    check("YT note does not claim premise closure", "supplies no premise" in tier)
 
     pcal = read(PCAL_SYNTHESIS)
     boundary = read(LOG_BOUNDARY)
@@ -130,7 +130,7 @@ def part1_documents() -> dict[str, Any]:
     check("log boundary keeps finite-record-alone route pruned", "finite record-intervention theorem alone retires P-cal" in boundary)
 
     return {
-        "source_boundary": "Tier-A source-measure surface only",
+        "source_boundary": "open source-measure condition only",
         "status_authority": "independent audit lane only",
     }
 
@@ -139,12 +139,12 @@ def part2_ledger_statuses() -> dict[str, Any]:
     print("\nPart 2: ledger status boundary")
     rows = ledger_rows()
     support_statuses = {}
-    for cid in RETAINED_GRADE_BOUNDED_SUPPORT:
+    for cid in CONTEXT_SUPPORT_ROWS:
         row = rows.get(cid)
         status = None if row is None else row.get("effective_status")
         audit = None if row is None else row.get("audit_status")
         support_statuses[cid] = {"effective_status": status, "audit_status": audit}
-        check(f"{cid} is retained-grade bounded support", status == "retained_bounded" and audit == "audited_clean", support_statuses[cid])
+        check(f"{cid} context row is present", row is not None, support_statuses[cid])
 
     root_statuses = {}
     for cid in AUDIT_ROOTS:
@@ -155,10 +155,10 @@ def part2_ledger_statuses() -> dict[str, Any]:
         check(f"{cid} is present", row is not None)
         check(f"{cid} is not silently promoted", status != "retained", root_statuses[cid])
 
-    tier_registry = json.loads(read(TIER_A_REGISTRY))
+    tier_registry = json.loads(read(DECISION_HISTORY))
     derivation_targets = tier_registry.get("derivation_targets", {})
-    check("Tier-A registry contains P1/P-cal parent", "observable_principle_from_axiom_note" in derivation_targets)
-    check("Tier-A registry treats derivation targets as bounded-tier", "bounded tier" in tier_registry.get("description", ""))
+    check("decision history contains no live P1 premise", "observable_principle_from_axiom_note" not in derivation_targets)
+    check("decision history is non-authoritative", "Non-authoritative" in tier_registry.get("description", ""))
     return {"support_statuses": support_statuses, "root_statuses": root_statuses}
 
 
@@ -174,13 +174,13 @@ def part3_algebra() -> dict[str, str]:
     check("top component of unit source is 1/sqrt(6)", zero(u[0] - 1 / sp.sqrt(6)), u[0])
     check("scaled top source has Fisher norm lambda^2", zero(fisher_lambda - lam**2), fisher_lambda)
     check("scaled top coefficient is lambda/sqrt(6)", zero(y33_lambda - lam / sp.sqrt(6)), y33_lambda)
-    check("Tier-A primitive source unit selects lambda=1", sp.solve(sp.Eq(fisher_lambda, 1), lam) == [1])
+    check("conditional primitive source unit gives lambda=1", sp.solve(sp.Eq(fisher_lambda, 1), lam) == [1])
     check("selected Y_T source-side coefficient is 1/sqrt(6)", zero(y33_lambda.subs(lam, 1) - 1 / sp.sqrt(6)), y33_lambda.subs(lam, 1))
 
     return {
         "unit_vector": "(1,1,1,1,1,1)/sqrt(6)",
         "fisher_scaled": "lambda^2",
-        "tier_a_selected": "lambda=1",
+        "conditional_unit_branch": "lambda=1",
         "source_side_result": "y_33=1/sqrt(6)",
     }
 
@@ -214,7 +214,7 @@ def part4_firewalls() -> None:
 
 def main() -> int:
     print("=" * 88)
-    print("Y_T SOURCE-MEASURE TIER-A SOURCE-UNIT BOUNDARY")
+    print("Y_T CONDITIONAL SOURCE-MEASURE SOURCE-UNIT BOUNDARY")
     print("=" * 88)
 
     result = {
@@ -227,10 +227,10 @@ def main() -> int:
     result["summary"] = {
         "pass": PASS_COUNT,
         "fail": FAIL_COUNT,
-        "source_boundary": "Tier-A source-measure surface only",
+        "source_boundary": "open source-measure condition only",
         "status_authority": "independent audit lane only",
-        "tier_a_input": "P-cal/source-measure primitive normalized RN/Fisher coordinate",
-        "closed_on_tier_a_surface": ["lambda=1", "y_33=1/sqrt(6)"],
+        "open_condition": "P-cal/source-measure normalized RN/Fisher coordinate",
+        "conditional_calculation_result": ["lambda=1", "y_33=1/sqrt(6)"],
         "not_closed_unbounded": [
             "P-cal/P1 derivation or native RN/Fisher source-measure acceptance",
             "strict same-source top/W pole-response evidence",

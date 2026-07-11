@@ -9,7 +9,7 @@ primitive registry, retained C3 fixed-locus arithmetic, supplied finite
 registrability context, and holonomy normal form already force the physical
 charged-lepton readout to be the fixed-locus density class of the realized C3
 cycle. They do not. This note does not derive, refute, re-grade, retire, or
-remove R-eta or AC_phi_lambda, and it does not edit any Tier-A registry, axiom,
+remove R-eta or AC_phi_lambda, and it does not create or edit any premise registry, axiom,
 primitive, audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
 **Primary runner:**
@@ -60,9 +60,11 @@ allowed as a load-bearing step.
   `kinetic_isotropy_primitive`, and `realized_state_primitive` as approved
   axiom/primitive premise nodes. None registers h-class, R-eta, or a physical
   observable bridge.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
-  and [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json)
-  still name `delta_readout_identification_R_eta` as a live AC_phi_lambda atom.
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` and
+  `docs/audit/data/premise_decision_history.json` preserve the former
+  `delta_readout_identification_R_eta` wording as non-authoritative provenance.
+  The current scientific target is the zero-weight `open_gate` in
+  [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md).
 - [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
   supplies the forced C3 fixed-locus weights `(1,2)` and the local density
   `L3(1,2) = 2/9`, while excluding the physical single-summand readout bridge.
@@ -138,14 +140,14 @@ the missing physical-observable bridge.
 
 Thus h-class remains a genuine part of `A_R-eta`. A future proof must derive a
 physical readout/license theorem that selects the fixed-locus-density class, or
-owner governance must register a narrow readout primitive/premise explicitly.
+a retained theorem must derive the readout or an approved primitive must supply it explicitly.
 
 ## Exact Checks
 
 The paired runner verifies:
 
-- the Tier-A registry keeps the live AC_phi_lambda target and keeps
-  `delta_readout_identification_R_eta` in its decomposition;
+- decision history preserves `delta_readout_identification_R_eta` as
+  provenance while the current R-eta obligation carries the open target;
 - the approved premise registry contains only the four canonical axiom or
   primitive nodes and contains no h-class/R-eta bridge;
 - the minimal axioms keep context selection, formation rules, and
@@ -179,7 +181,7 @@ decision enters the proof.
 ## What Does Not Move
 
 - AC_phi_lambda is not retired.
-- R-eta is not derived, refuted, re-graded, or removed from Tier-A.
+- R-eta is not derived or refuted; its open gate remains.
 - No value of `delta`, `Phi`, h-class, h-unit, `alpha`, `c`, or `beta` is
   selected as the physical readout.
 - The fixed-locus arithmetic `L3(1,2)=2/9` remains valid support.
@@ -201,8 +203,8 @@ decision enters the proof.
 4. **physical carrier/source-action theorem.** Supply the physical observable
    bridge that ties the charged-lepton carrier to the fixed-locus-density
    functional.
-5. **owner governance.** Register a narrow readout primitive or premise
-   explicitly if derivation is intentionally bypassed.
+5. **Approved-primitive proposal.** Seek approval for a narrow readout
+   primitive if derivation is intentionally bypassed.
 
 ## No-Go Discipline Gate
 
@@ -218,9 +220,9 @@ selector, event law, Born/interface rule, physical carrier theorem,
 activation-rate premise, readout primitive, source/action bridge, h-unit
 assumption, or owner decision.
 
-**N4 residual matching.** The residual matches the Tier-A registry: the fixed
+**N4 residual matching.** The residual matches the zero-weight R-eta open obligation: the fixed
 number `2/9` is retained fixed-locus arithmetic conditional on R-eta, while
-the surviving atom is the density-read-as-angle / holonomy-readout
+the surviving obligation is the density-read-as-angle / holonomy-readout
 identification.
 
 **N5 proven surface.** Proven here is a bounded no-go against deriving h-class
@@ -237,7 +239,7 @@ selection rule.
 
 **N8 cross-cycle echo.** This is the same audit pattern as the Record update
 and AC(i) value-face hygiene: readable content and realized data are not
-automatically the physical law or selector needed for Tier-A retirement.
+automatically the physical law or selector needed to close an open obligation.
 
 ## Verification
 
@@ -252,3 +254,11 @@ Expected close:
 ```text
 TOTAL: PASS>=120 FAIL=0
 ```
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)

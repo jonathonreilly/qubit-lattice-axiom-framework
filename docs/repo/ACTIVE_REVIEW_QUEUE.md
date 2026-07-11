@@ -82,14 +82,14 @@ Current science/open-lane follow-ups:
   consumed before a live fallback; add a dependency-aware input fingerprint or
   equivalent manifest design.
   Disposition: `fix on main`.
-- `2026-07-10-residual-tier-a-runner-pin-sweep`
+- `2026-07-10-residual-admission-runner-pin-sweep`
   Scope: eight older `acphilambda_*` runners that still index the retired AC
   entry under live `derivation_targets`, plus
   `audit_companion_observable_principle_p2_phase_blindness_sector_resolved_2026_06_04.py`.
   Finding: the sibling pin sweep for PR #5115 found additional pre-existing
-  post-retirement crashes and one stale Tier-A count-of-two gate outside the
-  four-runner repair slice; repoint them to the retired/owner-governed registry
-  boundary without weakening their content checks.
+  post-retirement crashes and one stale admission-count gate outside the
+  four-runner repair slice; repoint them to the historical registry plus exact
+  open obligations without weakening their content checks.
   Disposition: `fix on main`.
 - irregular off-lattice sign lane: portability beyond the bounded centered
   core-packet surface remains open
@@ -189,20 +189,6 @@ Current science/open-lane follow-ups:
   compute/establish the relevant `UD_2` homotopy or land only the narrower
   base-connection area-flux theorem.
   Disposition: `science-needed`.
-- `2026-06-12-pr3511-theta-tier-a-retirement-gate`
-  Scope: PR #3511, `docs/audit/data/tier_a_admissions.json`, and
-  `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`.
-  Finding: the owner is favorable to retiring `strong_cp_theta_zero_note` from
-  Tier-A, but only after the dependency chain independently supports the
-  retirement. Do not land PR #3511 until the cross-plane basis remains
-  audited-clean/retained-bounded, the determinant/K-CPT basis and
-  registrable-readout bridge are audited-clean/retained-grade, and owner
-  approval is recorded in the PR thread per `AXIOM_MINIMALITY_POLICY.md`.
-  Current gate check on 2026-06-12: cross-plane is clean; `theta_p2...` and
-  `tier_a_korbit...` are still `audited_conditional`; `registrable_readout...`
-  is still `unaudited`.
-  Disposition: `science-needed`.
-
 ## Intake Format
 
 Record each new finding as one bullet:
@@ -220,6 +206,12 @@ Record each new finding as one bullet:
   optional link to a longer packet in work history
 
 ## Queue History
+
+- `2026-06-12-pr3511-theta-retirement-gate`
+  PR #3511 preserved a review of the former admission-era theta treatment.
+  The supplied-premise class was later removed; the scientific gaps are now
+  ordinary derivation obligations. Historical grade language in that review
+  does not describe current pipeline status.
 
 - `2026-04-18`
   repo-wide review/backlog cleanup completed; the old operational review

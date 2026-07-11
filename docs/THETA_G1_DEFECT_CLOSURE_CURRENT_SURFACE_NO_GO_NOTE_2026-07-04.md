@@ -5,16 +5,15 @@
 **Claim type:** no_go
 **Scope boundary:** first-principles route test for G1, the defect-closure
 gate on the abelianized theta gauge carrier. This note does not retire theta,
-does not set `theta_bar = 0`, does not edit any Tier-A registry, primitive,
+does not set `theta_bar = 0`, does not create any admission registry, primitive,
 axiom, audit verdict, or publication-status surface, and does not claim that a
 future constraint-level or dynamical defect-suppression route is impossible.
 **Audit boundary:** independent audit lane only.
-**Current-main posture (2026-07-06):** live `main` now records Tier-A count
-zero: theta was retired 2026-07-05 by retained derivation, and
-`AC_phi_lambda` was retired by owner-governance adoption. This note banks the
-historical G1 defect-closure no-go only; it does not reopen, modify, or
-re-grade either retirement record, `tier_a_admissions.json`, or owner-governed
-premise data.
+**Current-main posture (2026-07-11):** theta's gauge-side retained disposition
+remains; its mass-side K-real leg is conditional on the open AC occupancy and
+quark-determinant cross-sector readout obligations. The AC governance-only channel was withdrawn
+and its two atoms are open obligations; that correction does not affect this
+historical G1 defect-closure result.
 **Primary runner:**
 [`scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py`](../scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py)
 
@@ -40,9 +39,9 @@ restriction or suppression. It does not.
 - [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
   withholds source/action, weighting, dynamics, context-selection, and
   arbitrary physical-observable identification.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
-  keeps theta in Tier-A, with a gauge-side winding residual and a mass-side
-  determinant residual.
+- `docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`
+  tracks the open mass-side cross-sector readout without supplying a premise;
+  the gauge-side winding work is a separate retained-science target.
 - [`THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`](THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md)
   blocks the shortcut that the updated axioms/primitives already supply the
   gauge-side action/Q/readout/weighting structure.
@@ -83,7 +82,7 @@ The present framework surface therefore localizes G1; it does not close it.
 | Record/readout rule | Reads existing record content; it does not manufacture closedness or select a defect-free sector. |
 | Admissibility | Allows possibilities; it is not a dynamics axiom and does not select the closed branch. |
 | G3 phase insertion work | The phase slot remains open and cannot bypass the carrier's need for defect discipline. |
-| Tier-A registry | The gauge-side winding residual remains present; the registry is not edited by this block. |
+| historical decision provenance | Records the earlier decomposition only; it supplies no current residual or premise. |
 
 ## Exact Algebraic Boundary
 
@@ -115,7 +114,7 @@ future constraint-level, defect-energy, or scaling-limit route cannot close G1.
 ## What Does Not Move
 
 - Theta is not retired.
-- The Tier-A registry is not edited.
+- No admission registry is created.
 - No axiom or primitive is changed.
 - No audit status or effective status is changed.
 - No claim is made that future defect-closure or defect-suppression work is
@@ -124,12 +123,70 @@ future constraint-level, defect-energy, or scaling-limit route cannot close G1.
   registration is asserted.
 - No mass-side determinant-channel bridge is supplied.
 
+## No-Go Discipline Gate
+
+**N1 alternative route enumeration.** Every current route is explicitly
+attempted rather than rhetorically dismissed:
+
+| Route | Marker | Evidence and disposition |
+|---|---|---|
+| `d^2 = 0` identity | ATTEMPTED | exact moves are closed, but an arbitrary branch two-cochain need not be |
+| imposed closed-branch carrier | ATTEMPTED | exact once `dn = 0` is given; it does not derive the condition |
+| defect witness | ATTEMPTED | proves unrestricted instability, not physical suppression |
+| axiom/primitive shortcut | ATTEMPTED | no branch action, update law, defect energy, or probability rule is supplied |
+| record/readout route | ATTEMPTED | reads content after formation; it cannot manufacture closedness |
+| dynamical/scaling route | ATTEMPTED | remains live, but no suppressing measure or limit theorem is present |
+
+**N2 wall independence.** Three distinct steps must not be conflated:
+
+| Wall | Closing it does not close |
+|---|---|
+| native constraint forcing `dn = 0` | G2 physical registration or G3 phase insertion |
+| dynamical suppression of `dn != 0` | G2 registration or G3 phase insertion |
+| registration of the surviving carrier | either closure/suppression route or G3 |
+
+The first two are alternative ways to close G1; the third is a later gauge
+gate. The mass-side determinant readout is separate from all three.
+
+**N3 hidden-wall scan.** The note and runner were scanned for `assume`,
+`supplied`, `registered`, `canonical`, `standard`, `background`, `naturally`,
+`obviously`, `primitive`, and `by construction`. The condition `dn = 0` is
+always labeled conditional or targeted; decision-history text is provenance;
+and no defect-energy, probability measure, action coefficient, continuum
+limit, or physical-sector primitive is imported.
+
+**N4 residual matching.** The carrier theorem's exact residual is physical
+closedness or suppression. The minimal foundation withholds the action,
+measure, and dynamics that could provide it. G3 leaves the phase insertion
+open but cannot bypass defect discipline. These residuals match G1 exactly;
+the mass-side quark-determinant readout is neither a dependency nor evidence
+for this gauge-side no-go.
+
+**N5 proven surface.** Proven here is non-supply on the current surface and an
+explicit finite defect counterexample. It is not a universal theorem that no
+constraint, defect energy, measure, or scaling limit can close G1.
+
+**N6 partial closure.** A native constraint theorem or a dynamical suppression
+theorem would close G1 without closing G2 or G3. Either route is useful partial
+progress and creates no new supplied premise.
+
+**N7 steelman.** A reviewer can argue that closedness may be the correct
+physical configuration-space definition rather than a derived dynamical fact.
+Correct: a future framework-native constraint theorem would close G1. This
+note only shows that the present carrier calculation assumes rather than
+derives that restriction.
+
+**N8 cross-cycle echo.** G1, G2, and G3 are independent gauge-side gates. The
+AC occupancy and R-eta programs can liquidate only their own zero-weight
+obligations, and theta's mass-side determinant readout stays independent.
+No prior cycle supplies physical closedness or defect suppression here.
+
 ## Next Attack Plan
 
 1. **Constraint-level route:** search for a native branch law that forces
    `dn = 0` before summing the theta carrier.
 2. **Dynamical route:** search for an action, measure, or scaling-limit
-   argument that suppresses `dn != 0` without adding a Tier-A premise.
+   argument that suppresses `dn != 0` from axioms and approved primitives.
 3. **G2 registration after G1:** if either route closes, register the flux and
    intersection data as record/readout content on the nonabelian sector.
 4. **G4 assembly last:** only after G1-G3 and the mass-side bridge are supplied
@@ -144,3 +201,10 @@ PYTHONPATH=scripts python3 scripts/theta_g1_defect_closure_current_surface_no_go
 ```
 
 Expected close: `FAIL=0` with at least 105 checks.
+
+## Dependency Separation (2026-07-11)
+
+Historical decision records have zero premise weight. G1 is a gauge-side open
+target and has no dependency edge to the mass-side
+`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`.
+That obligation is tracked independently and cannot make this note ready.

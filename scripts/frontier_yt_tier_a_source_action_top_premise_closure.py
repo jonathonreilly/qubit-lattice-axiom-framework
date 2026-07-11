@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Y_T Tier-A source-action top-premise closure runner.
+"""Y_T source-action conditional-calculation runner.
 
 Verifies the narrow claim:
 
-  accepted Tier-A source-measure/P-cal surface
+  explicit open source-measure/P-cal hypothesis
     + normalized top source operator
     -> primitive RN/Fisher source coordinate
     -> lambda = 1
     -> y_33 = 1/sqrt(6)
 
-It also verifies the status boundary: the result is bounded/Tier-A-dependent
-support, not unbounded retained Y_T closure.
+It also verifies the status boundary: the result is conditional support, not
+retained Y_T closure or premise supply.
 """
 
 from __future__ import annotations
@@ -27,9 +27,9 @@ DOCS = ROOT / "docs"
 OUTPUT = ROOT / "outputs" / "yt_tier_a_source_action_top_premise_closure_2026-05-29.json"
 
 NOTE = DOCS / "YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md"
-TIER_A_REGISTRY = DOCS / "audit" / "data" / "tier_a_admissions.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 AXIOM_PREMISE_REGISTRY = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A_NOTE = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+HISTORICAL_INDEX = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
 P1P2_SYNTHESIS = DOCS / "OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md"
 SOURCE_ACTION_CANDIDATE = DOCS / "OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md"
 LSP_SOURCE = DOCS / "YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
@@ -84,9 +84,9 @@ def part1_anchor_status() -> dict[str, Any]:
     print("\nPart 1: anchors and status boundary")
     required = (
         NOTE,
-        TIER_A_REGISTRY,
+        DECISION_HISTORY,
         AXIOM_PREMISE_REGISTRY,
-        TIER_A_NOTE,
+        HISTORICAL_INDEX,
         P1P2_SYNTHESIS,
         SOURCE_ACTION_CANDIDATE,
         LSP_SOURCE,
@@ -115,16 +115,16 @@ def part1_anchor_status() -> dict[str, Any]:
     ):
         check(f"note contains section/phrase: {phrase}", phrase in note)
 
-    registry = json.loads(read(TIER_A_REGISTRY))
+    registry = json.loads(read(DECISION_HISTORY))
     axiom_registry = json.loads(read(AXIOM_PREMISE_REGISTRY))
     derivation_targets = registry.get("derivation_targets", {})
     conventions = registry.get("conventions", {})
     reclassified_primitives = registry.get("reclassified_primitives", {})
-    check("P1 is in Tier-A derivation targets", "observable_principle_from_axiom_note" in derivation_targets)
-    check("Tier-A P1 is chain-satisfying only at bounded tier", "bounded tier" in registry.get("description", ""))
-    check("scale reference is not a Tier-A derivation target", "scale_reference_primitive" not in derivation_targets)
+    check("decision history contains no live P1 premise", "observable_principle_from_axiom_note" not in derivation_targets)
+    check("decision history is non-authoritative", "Non-authoritative" in registry.get("description", ""))
+    check("scale reference is not an admission target", "scale_reference_primitive" not in derivation_targets)
     check("scale reference moved to approved primitive registry", "scale_reference_primitive" in axiom_registry.get("canonical_ids", []))
-    check("Tier-A registry records scale primitive reclassification", "scale_reference_primitive" in reclassified_primitives)
+    check("history preserves scale primitive reclassification provenance", "scale_reference_primitive" in reclassified_primitives)
     check("g0 convention is not an accepted derivation target", "g_bare_rigidity_theorem_note" in conventions)
 
     p1p2 = read(P1P2_SYNTHESIS)
@@ -146,8 +146,8 @@ def part1_anchor_status() -> dict[str, Any]:
         "unit_source_nogo": ledger_row("yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"),
         "source_scale_boundary": ledger_row("yt_lsp_source_scale_boundary_and_strict_response_contract_note_2026-05-26"),
     }
-    check("LSP source support is retained_bounded", rows["lsp_source"] and rows["lsp_source"].get("effective_status") == "retained_bounded")
-    check("source covariance support is retained_bounded", rows["source_cov"] and rows["source_cov"].get("effective_status") == "retained_bounded")
+    check("LSP source context row is present", rows["lsp_source"] is not None)
+    check("source covariance context row is present", rows["source_cov"] is not None)
     check(
         "primitive unit source/action no-go row is present and non-positive",
         rows["unit_source_nogo"] and rows["unit_source_nogo"].get("claim_type") == "no_go"
@@ -160,7 +160,7 @@ def part1_anchor_status() -> dict[str, Any]:
         None if rows["source_scale_boundary"] is None else rows["source_scale_boundary"].get("effective_status"),
     )
     return {
-        "tier_a_p1": derivation_targets.get("observable_principle_from_axiom_note", {}),
+        "historical_p1_record": derivation_targets.get("observable_principle_from_axiom_note", {}),
         "scale_reference_primitive": axiom_registry.get("nodes", {}).get("scale_reference_primitive", {}),
         "ledger_statuses": {k: None if v is None else v.get("effective_status") for k, v in rows.items()},
     }
@@ -209,7 +209,7 @@ def part3_top_operator() -> dict[str, str]:
     check("six-component top vector is unit normalized", norm_sq == 1, norm_sq)
     check("each component is 1/sqrt(6)", is_zero(component - 1 / sp.sqrt(6)), component)
     check("lambda family is lambda/sqrt(6)", is_zero(y_lambda - lam / sp.sqrt(6)), y_lambda)
-    check("Tier-A primitive source unit selects y=1/sqrt(6)", is_zero(y_lambda.subs(lam, 1) - 1 / sp.sqrt(6)), y_lambda.subs(lam, 1))
+    check("conditional unit-source hypothesis gives y=1/sqrt(6)", is_zero(y_lambda.subs(lam, 1) - 1 / sp.sqrt(6)), y_lambda.subs(lam, 1))
 
     # Projective probabilities do not select lambda: the normalized ray is
     # independent of positive lambda.
@@ -220,7 +220,7 @@ def part3_top_operator() -> dict[str, str]:
     return {
         "unit_top_operator": "sum_i O_i/sqrt(6)",
         "lambda_family": "lambda/sqrt(6)",
-        "tier_a_selected_branch": "lambda=1",
+        "conditional_unit_branch": "lambda=1",
     }
 
 
@@ -291,11 +291,11 @@ def main() -> int:
     planck = part4_planck_scope()
     claim = part5_firewalls()
     result = {
-        "claim": "Tier-A source-measure surface closes lambda=1 for normalized top source",
+        "claim": "open source-measure hypothesis gives lambda=1 conditionally for the normalized top source",
         "actual_current_surface_status": "bounded-support",
         "trace_class": "direct_blocker_closure",
         "reachability_to_target": "partially_closes",
-        "closed_on_tier_a_surface": {
+        "conditional_calculation_result": {
             "lambda": "1",
             "y_33": "1/sqrt(6)",
         },

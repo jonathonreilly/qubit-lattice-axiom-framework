@@ -1,5 +1,9 @@
 # The Phase-Type Insertion Characterized: the Triality Phase Extends the Abelian Theta Slot Exactly and Carries a Theta-Like Flip Table, but Reads Only the Center/Abelian Shadow — No Single-Link Class-Weight Insertion Reads the Chiral Sign, Which the Path-Antisymmetrized Multi-Link Chain Observable Reads Exactly (Bounded Theorem)
 
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
+
 **Date:** 2026-07-02
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite constructions plus one scoped
@@ -8,11 +12,10 @@ admission).
 **Status authority:** independent audit lane only. This note does not set an
 audit verdict, edit registries, register primitives, change axioms, retire or
 re-grade any Tier-A admission, or claim Strong-CP closure.
-**Current-main posture (2026-07-07):** theta is already retired from live
-Tier-A by retained derivation. This note banks a historical bounded support
-calculation for the theta-side phase-insertion campaign; it does not reopen,
-modify, or re-grade the theta retirement record or
-`tier_a_admissions.json`.
+**Historical posture (2026-07-07):** the repo then described theta as retired
+under an older admission taxonomy. **Current posture (2026-07-11):** that
+taxonomy has no premise authority. This note supplies conditional gauge-side
+support only; the mass-side cross-sector determinant readout is an `open_gate`.
 **Primary runner:**
 [`scripts/theta_phase_insertion_triality_flip_table_single_link_nogo_chain_reader_2026_07_02.py`](../scripts/theta_phase_insertion_triality_flip_table_single_link_nogo_chain_reader_2026_07_02.py)
 **Runner cache:**
@@ -123,7 +126,7 @@ multi-link phase insertion whose abelian reduction is the linked
    [`THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md`](THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md).
 
 4. **Retired theta registry text**
-   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
+   ([`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json),
    gauge side): the historical residual was "localized to the
    multi-plaquette / large-gauge-winding account"; this note shows the
    theta-capable insertion is necessarily multi-link in this support
@@ -256,7 +259,7 @@ d flips sign with |d| = 0.667).
 | path-antisymmetrized multi-link chain observables | CONSTRUCTED: read d exactly, frame-licensed, configurational |
 | multi-link cross-plane phase insertion (abelian reduction = e^{i theta Q}) | OPEN — (ii'-final), the derivation half |
 | non-class-function weights | NOT LICENSED here as frame-free insertions; not pursued |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

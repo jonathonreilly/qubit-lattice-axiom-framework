@@ -272,8 +272,8 @@ derivation of `H_inf/H_0`) is unchanged and remains an explicit class D
 
 ## Scope of this rigorization
 
-This rigorization is class B (runner registration and cycle-safe
-candidate-reference bookkeeping) plus class D (residual-gap
+This rigorization uses runner registration and cycle-safe
+candidate-reference bookkeeping plus residual-gap
 registration). It does not
 change any algebraic content, claim type, or load-bearing step
 classification. It addresses the two specific complaints in the audit

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_density_square_primitive_gap_2026_06_21.py
-runner_sha256: f85ecf67bca402914135ec7c374a0f5b8ccc6667938f61802e80b8000f95a18c
+runner_sha256: cd323f7ad29f90b465b6d59d02f09687729599a8003a8b6561ce779d3ddb1d8b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.10
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Route-2 p=-2 density-square primitive gap
@@ -50,7 +50,7 @@ PASS: registered premise surfaces do not name `density-square`
 PASS: registered premise surfaces do not name `inverse-square-of-projector-weight`
 PASS: registered premise surfaces do not name `w_x^-2`
 PASS: registered premise surfaces do not name `route2_density_square`
-PASS: registered premise JSON is parseable -- axiom_premise_nodes.json, tier_a_admissions.json
+PASS: registered premise JSON is parseable -- axiom_premise_nodes.json, premise_decision_history.json
 
 PART 6: typed reachability
 PASS: current graph reaches the value kappa^2=9/4 only as value arithmetic -- oh_projector_weights -> kappa_3_2 -> kappa_square_value_9_4

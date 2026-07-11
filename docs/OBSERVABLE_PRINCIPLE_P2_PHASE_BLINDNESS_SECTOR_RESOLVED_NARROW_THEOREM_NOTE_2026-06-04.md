@@ -12,9 +12,9 @@ claim-boundary declaration, not an audit verdict.
 
 ## Claim
 
-After the Record baseline absorbed the P1 (finite scalar additivity) premise of
+After the Record baseline made P1 (finite scalar additivity) axiom content for
 [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md),
-the sole remaining scalar-selection admission of that parent is **P2**: the
+the remaining scalar-selection condition of that parent is **P2**: the
 scalar record generator `W[J]` depends on `|Z| = |det(D + J)|` alone, not on
 `arg Z` (the fermionic phase). This note bounds where P2 sits.
 
@@ -23,7 +23,7 @@ scalar record generator `W[J]` depends on `|Z| = |det(D + J)|` alone, not on
 > generator be, per the Record baseline, a real-valued additive scalar readout,
 > and (regularity) continuous and single-valued as a functional of the
 > finite-block amplitude `Z = det(D + J) ∈ C*`. Then P2 is **not** an
-> independent admitted premise under those determinant-readout hypotheses:
+> independent premise under those determinant-readout hypotheses:
 >
 > - **(A) Generic sector — compact-phase lemma (standard; prior-stated).** A
 >   continuous single-valued real-additive functional of `Z ∈ C*` is
@@ -39,14 +39,14 @@ scalar record generator `W[J]` depends on `|Z| = |det(D + J)|` alone, not on
 >   determinant-positivity theorem. There the phase is identically
 >   zero, so P2 holds **automatically by positivity** and the compactness
 >   argument (A) is **vacuous**.
-> - **(C) Residual.** The only premise that survives sector resolution is the
+> - **(C) Residual.** The only condition that survives sector resolution is the
 >   `(M)` requirement that the physical readout **is** the multiplicative-
->   character determinant `Z = det(D + J)` — the same `(M)` premise of the
+>   character determinant `Z = det(D + J)` — the same `(M)` condition of the
 >   form-selection note, routed into the `AC_phi_lambda`/Berezin realization
 >   gate. P2 therefore has **no separate residual beyond `AC_phi_lambda` plus
 >   the named determinant-readout regularity hypotheses**: it is neither an
->   independent theorem nor a hidden third admission. The genuine
->   Tier-A admission count is unchanged (`AC_phi_lambda`, `theta`).
+>   independent theorem nor a hidden third premise. Historical admission
+>   counts have zero authority; the determinant-readout condition remains open.
 
 This note closes **only** the bounded residual-placement question for P2. It does
 **not** retag the parent row or set a terminal status; the parent remains
@@ -55,7 +55,7 @@ conditional on the `AC_phi_lambda`-gated determinant identification; see §6 and
 
 ## 0. Honest framing up front
 
-The parent note's last conditional premise after the 2026-06-04 Record repair
+The parent note's last conditional requirement after the 2026-06-04 Record repair
 is P2 (phase-blindness). Two prior in-repo routes attack it, both **by
 positivity** and both context-only here: `OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md`
 and `OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md`
@@ -71,7 +71,7 @@ grounds the mass-like half on the determinant-positivity theorem
 explicit hypotheses (continuity sourced from finite-block analyticity, **not**
 from Record; single-valuedness), and draws the conclusion the prior notes did
 not draw cleanly: **P2 has no independent residual of its own — what remains is
-exactly the `(M)`/determinant-identification premise, which is already
+exactly the `(M)`/determinant-identification condition, which is already
 `AC_phi_lambda`-gated.** This is the precise analogue, for the phase-blindness
 half, of what the form-selection note
 ([`OBSERVABLE_PRINCIPLE_DET_UNIQUE_MULTIPLICATIVE_CHARACTER_FORM_SELECTION_NARROW_THEOREM_NOTE_2026-05-28.md`](OBSERVABLE_PRINCIPLE_DET_UNIQUE_MULTIPLICATIVE_CHARACTER_FORM_SELECTION_NARROW_THEOREM_NOTE_2026-05-28.md))
@@ -183,7 +183,7 @@ The honest scope, recorded in the runner (Parts C, D):
 
 - The compact-phase lemma (§2) is **non-vacuous only on the generic sector**
   (`det` complex). There it is the operative mechanism, but it relies on the
-  added regularity premises (continuity, single-valuedness) of §1.1, and the
+  added regularity conditions (continuity, single-valuedness) of §1.1, and the
   parent's reflection/CPT-even reduction is not established on that sector.
 - On the **mass-like sector** the lemma is **vacuous** (`arg det = 0` already),
   and P2 holds by the positivity of §3.
@@ -211,8 +211,8 @@ verifies the following at exact `sympy` / machine precision, **19 PASS / 0 FAIL*
 - **Part D (scope guard):** compactness is vacuous on the mass-like sector; the
   two sectors are complementary and exhaust `C*`.
 - **Part E (residual):** documents that the only residual is the
-  `(M)`/Berezin determinant identification (`AC_phi_lambda`-gated); the admission
-  count is unchanged; continuity is attributed to finite-block analyticity, not
+  `(M)`/Berezin determinant identification (`AC_phi_lambda`-gated); no extra
+  premise is created; continuity is attributed to finite-block analyticity, not
   to Record.
 
 ## 6. What this does NOT claim
@@ -227,15 +227,14 @@ This note is deliberately narrow. It does **not**:
   stated in the two-stage synthesis note §2 step 3 (`unaudited`).
 - **Close P2 on the generic sector unconditionally.** There the parent's
   reflection/CPT-even reduction is not established; the lemma is the right
-  mechanism but is conditional on the regularity premises of §1.1.
+  mechanism but is conditional on the regularity conditions of §1.1.
 - **Retag the parent.** It does not move
   [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
   to any terminal status. The parent remains conditional on the
   `(M)`/`AC_phi_lambda`-gated determinant identification.
-- **Reduce or increase the admission count.** The genuine Tier-A admissions
-  remain `AC_phi_lambda` and `theta`
-  ([`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)).
-  This note shows P2 is **not** a separate (third) admission under the named
+- **Create another premise class.** Historical admission counts are
+  non-authoritative provenance only. This note shows P2 is **not** a separate
+  premise under the named
   determinant-readout regularity hypotheses; it routes into the existing
   `AC_phi_lambda` gate plus those explicit hypotheses.
 - **Promote, demote, or set the audit status of any cited row.** All status is
@@ -246,7 +245,7 @@ This note is deliberately narrow. It does **not**:
 After both sectors are accounted for, the only thing standing between P2 and a
 clean theorem is the step that makes the physical readout a **determinant** at
 all: that the scalar response **is** the multiplicative-character amplitude
-`Z = det(D + J)`. That is the `(M)` premise of the form-selection note
+`Z = det(D + J)`. That is the `(M)` condition of the form-selection note
 ([`OBSERVABLE_PRINCIPLE_DET_UNIQUE_MULTIPLICATIVE_CHARACTER_FORM_SELECTION_NARROW_THEOREM_NOTE_2026-05-28.md`](OBSERVABLE_PRINCIPLE_DET_UNIQUE_MULTIPLICATIVE_CHARACTER_FORM_SELECTION_NARROW_THEOREM_NOTE_2026-05-28.md)
 §7), grounded in the Berezin identity
 [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
@@ -255,16 +254,15 @@ the open staggered-Dirac realization gate
 [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
 (`AC_phi_lambda`).
 
-**Net effect on the ledger picture.** Previously P2 stood as an independent
-admitted premise of the parent — neither independently settled nor registered in Tier-A. This
-note shows that is not the right bookkeeping: P2's modulus/phase content is
+**Net effect on the ledger picture.** Historical text treated P2 as an
+independent premise of the parent. That is not the current bookkeeping: P2's modulus/phase content is
 covered on the mass-like sector by determinant positivity and on the generic
 sector by the standard compactness fact, and what is *left* is the same
 `(M)`/`AC_phi_lambda`-gated determinant identification that already gates the
 det-vs-tr form selection. **P2 has no separate residual beyond `AC_phi_lambda`
 plus the determinant-readout regularity hypotheses.** Consequently the parent
 and its P2-blocked siblings should be read as bounded by that same gate and
-hypothesis set, not by a separate unregistered P2 premise.
+hypothesis set, not by a separate P2 premise.
 
 ## 8. Relation to the prior P2 portfolio
 
@@ -287,7 +285,7 @@ not P2 itself.
 **Status:** PASS for the bounded residual-placement claim only. The claim is not
 "P2 is unconditionally derived" and not "Record supplies P2." It is: once the
 physical readout is a continuous, single-valued real additive functional of the
-determinant amplitude, the phase-blindness residual is not a separate admission;
+determinant amplitude, the phase-blindness residual is not a separate premise;
 it routes into the same `(M)`/`AC_phi_lambda` determinant-identification package.
 
 ### N1 — Alternative route enumeration
@@ -331,7 +329,7 @@ is external mathematics, not a repo axiom or primitive.
 
 ### N5 — Rhetoric audit
 
-"No separate P2 residual" means no extra admission beyond the bounded package
+"No separate P2 residual" means no extra premise beyond the bounded package
 named here; it does not mean P2 is derived from Record, does not retag the
 parent, and does not remove the `AC_phi_lambda` gate. "Sector-resolved" means
 mass-like positivity and generic compact-phase regularity cover different
@@ -370,7 +368,7 @@ explicit bounded hypotheses.
 
 **Dependency surfaces:**
 
-- Parent (the P2 premise this note places):
+- Parent (the P2 condition this note places):
   [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md).
 - Determinant positivity on the mass-like sector (step B):
   [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md).
@@ -380,8 +378,8 @@ explicit bounded hypotheses.
   [`OBSERVABLE_PRINCIPLE_DET_UNIQUE_MULTIPLICATIVE_CHARACTER_FORM_SELECTION_NARROW_THEOREM_NOTE_2026-05-28.md`](OBSERVABLE_PRINCIPLE_DET_UNIQUE_MULTIPLICATIVE_CHARACTER_FORM_SELECTION_NARROW_THEOREM_NOTE_2026-05-28.md).
 - The `AC_phi_lambda` realization gate (the residual):
   [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md).
-- The canonical admitted-input registry (admission count unchanged):
-  [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md).
+- The current zero-weight AC readout obligation:
+  [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md).
 - The Record baseline (additivity only; not the source of continuity/P2):
   [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md).
 
@@ -428,3 +426,13 @@ audit status of
 the form-selection note, the two-stage synthesis, the qubit-trace note, the
 exponent-fixing no-go, the staggered-Dirac realization gate, or any other
 upstream row. The audit lane is the only status authority.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)
+- [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)
+- [`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md)

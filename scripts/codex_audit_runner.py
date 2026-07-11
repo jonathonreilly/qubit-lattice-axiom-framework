@@ -52,8 +52,8 @@ import runner_cache as rc
 REPO_ROOT = Path(__file__).resolve().parent.parent
 AUDIT_DIR = REPO_ROOT / "docs" / "audit"
 
-# Centralized accepted-premise policy (axiom node + admitted external
-# imports). Shared with compute_effective_status / audit_lint /
+# Centralized accepted-premise policy (axioms + explicitly approved framework
+# primitives). Shared with compute_effective_status / audit_lint /
 # compute_reaudit_candidates via docs/audit/scripts/premise_nodes.py so the
 # prompt and the deterministic pipeline cannot drift.
 sys.path.insert(0, str(AUDIT_DIR / "scripts"))
@@ -670,15 +670,6 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         if premise_nodes.is_axiom_premise(dep_cid):
             accepted = True
             accepted_type = "axiom_or_approved_primitive"
-        elif premise_nodes.is_owner_governed_premise(dep_cid):
-            accepted = True
-            accepted_type = "owner_governed_residual"
-        elif premise_nodes.is_admitted_derivation_target(dep_cid):
-            accepted = True
-            accepted_type = "tier_a_derivation_target"
-            bounds_downstream = True
-        elif premise_nodes.is_admitted_convention(dep_cid):
-            accepted_type = "tier_a_convention_not_accepted"
         premise_lines = (
             f"=== Cited authority accepted_premise: {str(accepted).lower()} ===\n"
             f"=== Cited authority accepted_premise_type: {accepted_type} ===\n"

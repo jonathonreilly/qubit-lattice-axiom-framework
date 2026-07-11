@@ -15,7 +15,7 @@ DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md"
 MINIMAL = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
 AXIOM_PREMISES = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = DOCS / "audit" / "data" / "tier_a_admissions.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 BRANNEN = DOCS / "BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md"
 FIXED = DOCS / "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
@@ -70,7 +70,7 @@ def main() -> int:
     note = read(NOTE)
     minimal = read(MINIMAL)
     premises = json.loads(read(AXIOM_PREMISES))
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     brannen = read(BRANNEN)
     fixed = read(FIXED)
     registry = read(REGISTRY)
@@ -81,28 +81,29 @@ def main() -> int:
     minimal_flat = flat(minimal)
     registry_flat = flat(registry)
 
-    section("A. source presence and Tier-A boundary")
-    for path in [NOTE, MINIMAL, AXIOM_PREMISES, TIER_A, LEDGER, BRANNEN, FIXED, REGISTRY, REALIZED, KINETIC]:
+    section("A. source presence and current premise boundary")
+    for path in [NOTE, MINIMAL, AXIOM_PREMISES, DECISION_HISTORY, LEDGER, BRANNEN, FIXED, REGISTRY, REALIZED, KINETIC]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
-    check("Tier-A has a live genuine admitted input", tier["genuine_admitted_input_count"] >= 1)
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    check("decision history has no live premise inputs", tier["genuine_admitted_input_count"] == 0)
+    check("decision history live target map is empty", tier["derivation_targets"] == {})
     check(
         "AC minimum decomposition keeps R-eta",
         "delta_readout_identification_R_eta" in ac["minimum_decomposition"],
         ac["minimum_decomposition"],
     )
     check("AC statement still names R-eta", "R-eta" in ac["statement"])
-    check("human registry names R-eta", ("R-eta" in registry_flat or "R-η" in registry_flat) and "density-read-as-angle" in registry_flat)
-    check("note says registry is not edited", "The Tier-A registry is not edited." in note)
-    check("note says R-eta is not retired", "R-eta is not derived, refuted, re-graded, or removed from Tier-A" in note)
+    check("human registry points to the R-eta derivation obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
+    check("note says registry is not edited", "No premise registry is created or edited." in note)
+    check("note says R-eta remains open", "R-eta is not derived or refuted; its open gate remains" in note)
 
-    for source_path, expected in [
-        ("docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md", "retained_bounded"),
-        ("docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md", "retained_bounded"),
+    for source_path in [
+        "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
     ]:
         row = ledger_row_by_path(source_path)
-        check(f"{Path(source_path).name} effective status", row.get("effective_status") == expected, row.get("effective_status"))
+        check(f"{Path(source_path).name} context row is present", bool(row), row.get("effective_status"))
 
     section("B. approved premise-node hygiene")
     check(
@@ -182,7 +183,7 @@ def main() -> int:
     check("S_sum = 3L = 2/3", S_sum == sp.Rational(2, 3))
     check("Phi target is 2/3", phi_target == S_sum)
     check("target positive and below pi", bool(0 < phi_target < sp.pi))
-    check("fixed source contains L3(1,2)", any(token in fixed for token in ["L3(1,2)", "L_3(1,2)", "L₃(1,2)"]))
+    check("fixed source contains exact density definition", "L_C_3(N)" in fixed)
     check("fixed source contains 2/9", "2/9" in fixed)
     check("fixed source flags physical readout as separate", "physical single-summand" in fixed)
     check("note states S_sum target", "S_sum = 3 L3(1,2) = 2/3" in note)
@@ -282,7 +283,7 @@ def main() -> int:
         "The generic Record occurrence route is closed as an R-eta license",
         "Coherence-reading events",
         "Rate-normalization theorem",
-        "Owner governance route",
+        "Approved-primitive route",
     ]:
         check(f"route accounting phrase present: {phrase[:42]}", phrase in note_flat)
     forbidden = [
@@ -306,7 +307,7 @@ def main() -> int:
         "MINIMAL_AXIOMS_2026-06-29.md",
         "BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
         "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-        "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
+        "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
         "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
         "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
     }
@@ -314,12 +315,12 @@ def main() -> int:
     check("occurrence bridge is context only, not markdown-linked", "RECORD_OCCURRENCE_THINNED_IID_FREQUENCY_BRIDGE_2026-07-01.md](" not in note)
     check("occurrence-clock note is context only, not markdown-linked", "ACPHILAMBDA_OCCURRENCE_CLOCK_COMPOSITION_DELTA_BLINDNESS_2026-07-02.md](" not in note)
     check("note line count is bounded", 150 <= len(note.splitlines()) <= 240, len(note.splitlines()))
-    check("verification block expects 139 passes", "TOTAL: PASS=139 FAIL=0" in note)
+    check("verification block expects 140 passes", "TOTAL: PASS=140 FAIL=0" in note)
 
     print("\n" + "=" * 88)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 88)
-    return 0 if FAIL == 0 and PASS == 139 else 1
+    return 0 if FAIL == 0 and PASS == 140 else 1
 
 
 if __name__ == "__main__":

@@ -136,9 +136,12 @@ def collect_runners_from_ledger() -> list[str]:
 
 
 def collect_runners_from_staged() -> list[str]:
-    """Return staged python files under scripts/ that are referenced as a
-    primary runner by any ledger row. Skips staged files that aren't
-    actually runners (e.g. scripts/codex_audit_runner.py, helpers).
+    """Return staged cached runners under scripts/.
+
+    A runner is in scope when it is ledger-registered OR already has a
+    canonical cache. The latter covers sibling/boundary runners whose output
+    is committed even though no ledger row names them directly. Uncached
+    helpers remain excluded.
     """
     res = subprocess.run(
         ["git", "diff", "--cached", "--name-only", "--diff-filter=ACMR"],
@@ -151,7 +154,7 @@ def collect_runners_from_staged() -> list[str]:
     out: list[str] = []
     for p in staged:
         canonical = canonical_runner_path(p)
-        if canonical in known_runners:
+        if canonical in known_runners or rc.cache_path_for(canonical).exists():
             out.append(canonical)
     return out
 
@@ -172,9 +175,9 @@ def collect_runners_from_pr_diff(base_ref: str) -> list[str]:
 
     Uses three-dot diff so we compare against the merge-base — intervening
     commits on the base branch don't pollute the diff. Filters changed
-    scripts/*.py files down to those actually registered as runners in
-    the ledger (matches `collect_runners_from_staged` semantics; helpers
-    like runner_cache.py / precompute itself are excluded). If a
+    scripts/*.py files down to ledger-registered runners plus scripts with an
+    existing canonical cache (matching `collect_runners_from_staged`;
+    uncached helpers like precompute itself are excluded). If a
     cache-invalidator helper changed, escalates to the full ledger
     because every cache header is potentially stale.
     """
@@ -202,7 +205,7 @@ def collect_runners_from_pr_diff(base_ref: str) -> list[str]:
     out: list[str] = []
     for p in changed:
         canonical = canonical_runner_path(p)
-        if canonical in known_runners:
+        if canonical in known_runners or rc.cache_path_for(canonical).exists():
             out.append(canonical)
     return out
 

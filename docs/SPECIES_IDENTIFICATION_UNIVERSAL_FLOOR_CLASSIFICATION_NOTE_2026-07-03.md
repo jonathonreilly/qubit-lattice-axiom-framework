@@ -1,7 +1,7 @@
 ---
 claim_id: species_identification_universal_floor_classification_note_2026-07-03
 claim_type: meta
-claim_scope: "Owner-gated classification-support note: assembles the case that AC_phi_lambda(iii), the abstract-sector to physical-species identification, meets the universal-floor/no-number standard beside the past hypothesis. The owner rules on Tier-A registry placement; this note adopts, reclassifies, and edits nothing."
+claim_scope: "Historical classification-support note preserved as provenance; no owner classification creates premise authority, and the species identification remains an ordinary scientific derivation question."
 upstream_dependencies:
   - species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13
   - species_bridge_residual_is_ratification_class_grade_scoped_bounded_note_2026-07-02
@@ -10,20 +10,15 @@ upstream_dependencies:
 runner: scripts/frontier_species_universal_floor_classification_2026_07_03.py
 ---
 
-# Species Identification Universal-Floor Classification Support (Owner-Gated)
+# Historical Species Identification Universal-Floor Classification Proposal
 
 **Date:** 2026-07-03
 **Type:** meta
-**Claim type:** meta (owner-gated classification support; no audit verdict or
-registry ruling).
-**Owner-gated surface:** the owner rules on Tier-A registry placement. This
-note assembles the argument, the counterargument, and the scope limits for the
-owner. It does not adopt, reclassify, or edit anything.
-**Current-main posture (2026-07-07):** the owner-governance retirement of
-`AC_phi_lambda` is already recorded on main. This note is banked only as
-historical meta/provenance for the species-identification universal-floor
-classification argument; it does not reopen, modify, or supply authority for
-that retirement record or any registry placement.
+**Claim type:** meta (historical classification proposal; no audit verdict or
+premise authority).
+**Current-main posture (2026-07-11):** the former AC governance decision is
+historical only and supplies no premise. This note is banked only as
+meta/provenance for the species-identification classification argument.
 **Audit lane:** audit statuses are untouched.
 **Runner:**
 [`scripts/frontier_species_universal_floor_classification_2026_07_03.py`](../scripts/frontier_species_universal_floor_classification_2026_07_03.py)
@@ -32,17 +27,18 @@ that retirement record or any registry placement.
 
 ## Purpose
 
-This note prepares the governance question left open by the species-bridge
-parent: whether AC_phi_lambda(iii), the abstract-sector to physical-species
-identification, belongs with universal-floor inputs beside the past hypothesis
-rather than inside the framework-specific admitted derivation-target bucket.
+This note preserves a superseded governance question about whether
+AC_phi_lambda(iii), the abstract-sector to physical-species identification,
+could be treated as universal-floor context. That route is no longer live:
+the identification must be derived, remain an explicit theorem condition, or
+remain open.
 
-The classification claim prepared for the owner is narrow: at the C3-structural
+The historical classification claim was narrow: at the C3-structural
 grade, the species identification has the same universal abstract-to-physical
 shape as ordinary gauge-theory species naming and carries no tested C3-grade
 number, selector, ordering, or weight. If the owner accepts the past-hypothesis
-precedent as the universal-floor standard, this identification is a candidate
-for the same bucket. The note itself does not make that ruling.
+precedent as the universal-floor standard, the proposal put this identification
+in the same bucket. It supplies no present premise or status movement.
 
 ## Leg 1 — The Universal-Floor Test
 
@@ -170,7 +166,7 @@ weight.
 - It hides nothing. If the owner accepts the classification, the identification
   should stay listed, moved bucket rather than hidden.
 - It did not, at drafting time, retire `AC_phi_lambda`. The later
-  owner-governance retirement on main is a separate record; this note is
+  historical governance record is separate; this note is
   historical support only and changes no live count or registry row.
 - It does not touch CKM/PMNS, taste/Dirac/chirality content, or any above-C3
   carrier question.

@@ -1,13 +1,14 @@
-# AC_φλ Sub-Admission (i): the Occupancy Selection's Value Face Reduces to Realized-State Registration; the Measure-Side Realization Survives as the Named Frontier
+# AC_φλ Occupancy Selection: the Value Face Reduces to Realized-State Registration; the Measure-Side Realization Remains Open
+
+**Current authority (2026-07-11):** all admission/index language below records
+the former policy only. The realized-state primitive is accepted, but the
+physical occupancy grain remains an `open_gate` and is not premise content.
 
 **Date:** 2026-06-11
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
-set, predict, or estimate any audit verdict, and it does **not** edit the
-Tier-A registry (`docs/audit/data/tier_a_admissions.json` /
-`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`). The registry
-consequence stated in the Consequence section is named as **available to a
-future gated, owner-approved registry lane** — not executed here.
+set, predict, or estimate any audit verdict, and it creates or edits no premise
+registry. Historical decision text supplies no authority.
 **Primary runner:**
 [`scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py`](../scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py)
 **Cached runner output:**
@@ -24,14 +25,14 @@ No claim is strengthened; the value-face reduction and measure-side frontier
 are unchanged.
 
 > **Not claimed:** a derivation of `r = 1/2` (FIREWALL — see below), adoption
-> or rejection of the orbit-occupancy premise candidate, any registry edit,
+> or rejection of an occupancy-grain premise candidate, any registry edit,
 > any audit status, or that measure-side derivation routes are settled.
 > **Claimed:** under the owner-approved `realized_state_primitive`
 > (`docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`), the **value-bearing
-> face** of AC_φλ sub-admission (i) — "which occupancy/weight setting a lane
+> face** of the AC_φλ occupancy question — "which occupancy/weight setting a lane
 > carries" — is realized-state **registration** (per-lane registered pattern,
-> the same standing as the masses themselves), not a rule-shaped Tier-A
-> admitted input; and the precisely-named **survivor** is the measure-side /
+> the same standing as the masses themselves), not a rule-shaped premise; and
+> the precisely-named **survivor** is the measure-side /
 > dynamical-realization question (which grain the matter action's statistics
 > implements), which is a derivation frontier, not a value admission.
 
@@ -127,7 +128,7 @@ approved `realized_state_primitive`:
 **Net:** sub-admission (i) decomposes as
 `(i) = (i-value) ⊕ (i-realization)`, with `(i-value)` reclassifying to
 realized-state registration (the Record-retirement pattern: compare the
-`reclassified_primitives` block in `tier_a_admissions.json`, S7.4) and
+`reclassified_primitives` block in `premise_decision_history.json`, S7.4) and
 `(i-realization)` surviving as a named, smaller, rule-shaped frontier that no
 longer bounds the value chain.
 
@@ -223,10 +224,10 @@ the `(i-realization)` frontier, the next path this opens.
 
 **(c) "The primitive's register item 4 already says this — the note is
 vacuous."** Item 4 records the G3 discipline as an *example* of
-state-contingent data; the Tier-A registry simultaneously carries
-sub-admission (i) as a *derivation-target admission*. On the value face the
-two registries are in tension: the same content cannot be both supplied
-registered data and a rule awaiting derivation. This note proves the
+state-contingent data; historical decision text simultaneously described the
+occupancy question as a derivation target. On the value face those descriptions
+are in tension: the same content cannot be both registered data and a rule
+awaiting derivation. This note proves the
 decomposition that resolves the tension (`(i-value)` vs `(i-realization)`)
 and maps exactly what survives — content neither registry states.
 
@@ -320,7 +321,7 @@ and the law-freeness). Status remains for the audit lane.
 | `koide_r_half_polarization_selector_tested_static_readout_no_go_note_2026-06-08` | context: measure-neutrality, dynamical opening (reproduced in runner) | unaudited (context only) |
 | `charged_lepton_koide_value_full_chain_of_custody_2026-06-02` | context: what the value chain consumes | unaudited (context only) |
 | `record_outcome_observable_principle_canonical_proposal_note_2026-06-05` | G3 wording home | meta |
-| `docs/audit/data/tier_a_admissions.json`, `docs/audit/data/axiom_premise_nodes.json` | machine registries; `reclassified_primitives` precedent | registry data |
+| `docs/audit/data/premise_decision_history.json`, `docs/audit/data/axiom_premise_nodes.json` | machine registries; `reclassified_primitives` precedent | registry data |
 
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency, and does not modify any registry. The

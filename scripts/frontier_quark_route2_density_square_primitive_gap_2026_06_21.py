@@ -217,7 +217,7 @@ def part4_quote_anchors() -> None:
 def part5_registered_premise_scan() -> None:
     print("\nPART 5: registered premise scan for the missing primitive")
     premise_path = AUDIT_DATA / "axiom_premise_nodes.json"
-    tier_a_path = AUDIT_DATA / "tier_a_admissions.json"
+    tier_a_path = AUDIT_DATA / "premise_decision_history.json"
     premise = premise_path.read_text(encoding="utf-8")
     tier_a = tier_a_path.read_text(encoding="utf-8")
     combined = (premise + "\n" + tier_a).lower()

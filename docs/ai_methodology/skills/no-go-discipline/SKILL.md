@@ -28,7 +28,7 @@ runner, or review verdict that asserts:
 - a `no_go` result ("structurally closed," "no route exists," "no retained
   primitive supplies this");
 - a `stretch_attempt_negative` outcome ("the attempted route does not close");
-- a `bounded_with_named_walls` result ("conditional on N admissions/walls");
+- a `bounded_with_named_walls` result ("conditional on N open conditions/walls");
 - a derived no-go boundary inside a positive theorem ("the per-element
   identity does not lift");
 - an audit-conditional verdict rationale that names a residual wall.
@@ -73,7 +73,7 @@ out of four overclaims in the v-scale-planck-convention campaign (see
 
 ### N2 — Wall-independence audit
 
-If claiming multiple walls / admissions / load-bearing conditionals, produce
+If claiming multiple walls / open conditions / load-bearing conditionals, produce
 a pairwise table. For each pair `(W_i, W_j)`:
 
 - does closing `W_i` automatically close `W_j`? (yes / no);
@@ -105,10 +105,10 @@ Re-read your own proof. Search for these phrases and any close variants:
 For each hit, classify:
 
 - cited retained authority (with link) — keep as-is;
-- hidden admission — **promote to explicit wall** and re-run N2;
+- hidden condition — **promote to explicit wall** and re-run N2;
 - genuine non-load-bearing context — annotate that it is non-load-bearing.
 
-**Failure condition:** any hidden admission promoted to a wall means the
+**Failure condition:** any hidden condition promoted to a wall means the
 wall count was wrong; revise the claim.
 
 ### N4 — Residual matching
@@ -156,9 +156,8 @@ registered in `docs/audit/data/axiom_premise_nodes.json`, such as the
 scale-reference or kinetic-isotropy primitive, chain-satisfies dependencies
 without making the claim bounded. The kinetic-isotropy primitive supplies only
 structural OS0 kinetic-form isotropy `c_t = c_s`, not dynamics or a
-Lorentz-closure theorem. A proposed but unapproved primitive is an
-owner-governance question, not a silent Tier-A admission and not an automatic
-no-go wall.
+Lorentz-closure theorem. A proposed but unapproved primitive has zero premise
+weight until explicit approval; it is not an automatic no-go wall.
 Run `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` before writing
 "no retained primitive supplies this" or any equivalent wall language.
 
@@ -283,9 +282,9 @@ The cases illustrate:
 - N1 requires 5 distinct routes, not 5 phrasings of the same route.
 - N7 steelman must be the strongest counter-argument, not a token paragraph.
 - N6 "convention reframe vs new axiom" distinction must respect
-  `feedback_no_new_axioms.md` — bounded admission with named import-retirement
+  `feedback_no_new_axioms.md` — bounded condition with named import-retirement
   audit is the legitimate path, approved primitives are not bounded walls, and
-  proposed new primitives require owner-governance approval rather than
+  proposed new primitives require explicit approval rather than
   silent use or automatic foreclosure.
 - Do not weaken the gate by lowering the failure thresholds. If a cycle
   cannot pass N1-N8, the negative claim is not yet ready to ship; that is

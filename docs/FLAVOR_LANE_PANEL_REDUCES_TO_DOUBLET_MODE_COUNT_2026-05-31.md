@@ -83,8 +83,9 @@ The single escape the adversarial no-go specialist could **not** kill from first
 **holomorphic / Kähler collapse**: Axiom 1's qubit complex structure `J` makes the Bargmann coherent-state
 (det_C) measure canonical, counting `b` as **one complex mode** (phase = gauge) → (1,1) → `r=1/2`. It is
 honest precisely because it openly imports `J` as the measure-canonicalizer — a genuine, non-circular
-*missing ingredient* (a measure choice), not a forcing. Its appeal: it would simultaneously explain why
-`δ=arg b` is a free Tier-A admission (the gauge phase).
+*missing ingredient* (a measure choice), not a forcing. Its appeal is that it
+would simultaneously address why `δ=arg b` is a free gauge phase; that
+selection remains open and carries zero premise weight.
 
 The panel synthesis makes the open datum a **single, sharply-posed, framework-internal calculation** if its
 exhaustiveness premise is later proved: derive the field-space metric on the doublet coefficient `b` from

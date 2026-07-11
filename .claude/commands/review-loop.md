@@ -31,8 +31,8 @@ Run the repo-native physics review loop from:
 7. For math-bearing runner/proof changes, do not trust PASS output alone:
    independently cross-check load-bearing formulas, signs, factors,
    normalizations, expected values, and edge cases before landing.
-8. Before classifying a dependency as an import, wall, Tier-A admission, or
-   bounded-status source, read
+8. Before classifying a dependency as an import, wall, conditional/open input,
+   or bounded-status source, read
    `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`,
    `docs/audit/data/axiom_premise_nodes.json`, and any relevant primitive
    source note. The registered `scale_reference_primitive` grants the Planck
@@ -91,14 +91,14 @@ Run the repo-native physics review loop from:
   grades are valid.
 - Approved primitives listed in `docs/audit/data/axiom_premise_nodes.json`
   chain-satisfy dependencies without making rows `retained_bounded`. Do not
-  call the registered `scale_reference_primitive` a Planck import, Tier-A
-  admission, missing premise, no-go wall, or bounded-status source. Do not
+  call the registered `scale_reference_primitive` a Planck import, missing
+  premise, no-go wall, or bounded-status source. Do not
   grant it more than `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` declares. Do not
-  call the registered `kinetic_isotropy_primitive` a Tier-A admission, missing
+  call the registered `kinetic_isotropy_primitive` a missing
   premise, no-go wall, bounded-status source, Lorentz theorem, dynamics, scale,
   spacing-ratio theorem, selector, or empirical input; do not grant it more
   than `docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md` declares. Do not
-  call the registered `realized_state_primitive` a Tier-A admission, missing
+  call the registered `realized_state_primitive` a missing
   premise, no-go wall, bounded-status source, state-selection rule, measure,
   typicality assumption, weighting, or value source; do not grant it more
   than `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md` declares.
@@ -136,7 +136,7 @@ Run the repo-native physics review loop from:
 - The repo baseline is the four named axioms in
   `MINIMAL_AXIOMS_2026-06-29.md`: Lattice, Qubit, Admissibility, and Record.
   Name them explicitly; do not compress them to bare `A1` / `A2` / `A3` /
-  `A4` labels. Do not classify that baseline as a new admitted premise,
+  `A4` labels. Do not classify that baseline as a new premise,
   regulator interpretation, or optional theory language. Do not let that
   baseline silently promote separate species identifications, selectors,
   probability or occurrence rules, K/CPT or central-sector structure,
@@ -148,7 +148,7 @@ Run the repo-native physics review loop from:
   content alone; a state is a configuration of records; and a law privileges
   no states, has a supplied condition as its domain, and gives exactly one
   answer where that condition holds.
-- Nature-grade retention requires derived or explicitly admitted inputs,
+- Nature-grade retention requires axioms, approved primitives, or retained dependencies,
   decisive artifact support, clear falsifiers, and no hidden semantic bridge.
 - Math-bearing runners require independent formula review: PASS lines do not
   establish that the runner's expression, sign, factor, normalization, or

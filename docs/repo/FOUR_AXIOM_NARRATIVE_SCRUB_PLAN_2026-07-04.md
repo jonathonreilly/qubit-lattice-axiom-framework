@@ -1,5 +1,9 @@
 # Four-Axiom Narrative Scrub — Plan And Attack (2026-07-04)
 
+**Current premise authority (2026-07-11):** every older Tier-A/admission/
+owner-governed reference below is historical process record only. The current
+foundation is exactly axioms plus approved primitives.
+
 **Claim type:** meta (process plan; `docs/repo/**` is outside the audit ledger
 per `docs/audit/data/excluded_source_patterns.txt`)
 **Status:** plan only. The initial wave executed only the front-door rewrite
@@ -34,12 +38,9 @@ The complete current foundation surface is:
 - **Approved primitives (3):** `scale_reference_primitive`,
   `kinetic_isotropy_primitive`, `realized_state_primitive`
   (`docs/audit/data/axiom_premise_nodes.json`).
-- **Tier-A admitted derivation targets (0):** the two targets present when this
-  plan was written, `AC_phi_lambda` and `theta`, have since been retired; their
-  history remains in `docs/audit/data/tier_a_admissions.json`.
-- **Owner-governed residual premises (1 node; 2 atoms):** the AC governance
-  node contains AC(i) occupancy-grain and AC(ii) R-eta readout-license atoms.
-  This class is separate from the zero live Tier-A count.
+- **Open scientific work (zero premise weight):** the former admission-era
+  targets survive only as historical provenance or explicit open gates in
+  `docs/audit/data/derivation_obligations.json`.
 - **Scope condition (not a premise):** the past-hypothesis low-entropy
   magnitude (2026-06-16 classification).
 

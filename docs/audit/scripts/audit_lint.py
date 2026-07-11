@@ -17,9 +17,8 @@ Checks (all hard rules from FRESH_LOOK_REQUIREMENTS.md and README.md):
        already retained-grade.
      - effective_status in a retained-grade bucket requires audit_status =
        audited_clean (or archived audited_failed for legacy retained_no_go)
-       AND every dep's effective_status is retained-grade or an accepted
-       premise. Tier-A derivation-target premises bound dependents to
-       retained_bounded until retired.
+       AND every dep's effective_status is retained-grade or a supplied axiom
+       or approved primitive. Open obligations never satisfy the chain.
      - effective_status = retained_no_go has two paths:
        (a) claim_type = no_go and audit_status = audited_clean ratifies it.
        (b) audit_status = audited_failed AND the note has been moved to
@@ -60,8 +59,9 @@ DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 GRAPH_PATH = DATA_DIR / "citation_graph.json"
 AUDIT_DISPATCH_QUEUE_PATH = DATA_DIR / "audit_dispatch_queue.json"
-TIER_A_ADMISSIONS_PATH = DATA_DIR / "tier_a_admissions.json"
-OWNER_GOVERNED_PREMISE_NODES_PATH = DATA_DIR / "owner_governed_premise_nodes.json"
+RETIRED_ADMISSIONS_PATH = DATA_DIR / "tier_a_admissions.json"
+RETIRED_OWNER_GOVERNANCE_PATH = DATA_DIR / "owner_governed_premise_nodes.json"
+DERIVATION_OBLIGATIONS_PATH = DATA_DIR / "derivation_obligations.json"
 
 ALLOWED_AUDIT_STATUSES = {
     "unaudited",
@@ -104,27 +104,6 @@ def is_chain_satisfying_status(status):
     decoration-parent retention.
     """
     return status == "meta" or is_retained_grade(status)
-
-
-def owner_governed_count_errors(owner_governed: dict) -> list[str]:
-    """Validate class-specific owner-governed node and atom counts."""
-    nodes = owner_governed.get("nodes") or {}
-    errors: list[str] = []
-    if owner_governed.get("owner_governed_premise_node_count") != len(nodes):
-        errors.append(
-            "owner_governed_premise_nodes.json owner_governed_premise_node_count "
-            "must equal nodes"
-        )
-    computed_atom_count = sum(
-        len(entry.get("adopted_residual_candidates") or [])
-        for entry in nodes.values()
-    )
-    if owner_governed.get("owner_governed_residual_atom_count") != computed_atom_count:
-        errors.append(
-            "owner_governed_premise_nodes.json owner_governed_residual_atom_count "
-            "must equal adopted_residual_candidates across nodes"
-        )
-    return errors
 
 
 ALLOWED_EFFECTIVE_STATUSES = {
@@ -565,98 +544,59 @@ def main() -> int:
     excluded_source_patterns = _load_pattern_file("excluded_source_patterns.txt")
     never_gate_source_paths = frozenset(_load_pattern_file("never_gate_source_paths.txt"))
 
-    if TIER_A_ADMISSIONS_PATH.exists():
-        try:
-            tier_a = load_json(TIER_A_ADMISSIONS_PATH)
-        except Exception as exc:
-            errors.append(f"tier_a_admissions.json could not be parsed: {exc}")
-            tier_a = {}
-        derivation_targets = tier_a.get("derivation_targets") or {}
-        conventions = tier_a.get("conventions") or {}
-        expected_ids = set(derivation_targets)
-        listed_ids = set(tier_a.get("canonical_ids") or [])
-        if listed_ids != expected_ids:
-            errors.append(
-                "tier_a_admissions.json canonical_ids must equal "
-                "derivation_targets; conventions are survey metadata, not "
-                "accepted premises"
-            )
-        admitted_count = tier_a.get("genuine_admitted_input_count")
-        if admitted_count is not None and admitted_count != len(derivation_targets):
-            errors.append(
-                "tier_a_admissions.json genuine_admitted_input_count must equal "
-                "derivation_targets; conventions and reclassified primitives "
-                "are not admitted inputs"
-            )
-        for dep_id, entry in sorted(derivation_targets.items()):
-            if dep_id not in rows:
-                errors.append(f"tier_a_admissions.json derivation target {dep_id!r} has no ledger row")
-            portfolio = entry.get("no_go_portfolio") or []
-            if not portfolio:
-                errors.append(f"tier_a_admissions.json derivation target {dep_id!r} lacks no_go_portfolio")
-            for witness_id in portfolio:
-                witness = rows.get(witness_id)
-                if witness is None:
-                    errors.append(
-                        f"tier_a_admissions.json witness {witness_id!r} for {dep_id!r} "
-                        "has no ledger row"
-                    )
-                elif witness.get("effective_status") != "retained_no_go":
-                    errors.append(
-                        f"tier_a_admissions.json witness {witness_id!r} for {dep_id!r} "
-                        f"has effective_status={witness.get('effective_status')!r}, "
-                        "expected 'retained_no_go'"
-                    )
-        for dep_id in sorted(conventions):
-            if dep_id not in rows:
-                errors.append(f"tier_a_admissions.json convention {dep_id!r} has no ledger row")
+    if RETIRED_ADMISSIONS_PATH.exists():
+        errors.append(
+            "tier_a_admissions.json must not exist; the only supplied premise "
+            "registry is axiom_premise_nodes.json"
+        )
+    if RETIRED_OWNER_GOVERNANCE_PATH.exists():
+        errors.append(
+            "owner_governed_premise_nodes.json must not exist; the only "
+            "supplied premise registry is axiom_premise_nodes.json"
+        )
 
-    if OWNER_GOVERNED_PREMISE_NODES_PATH.exists():
+    if DERIVATION_OBLIGATIONS_PATH.exists():
         try:
-            owner_governed = load_json(OWNER_GOVERNED_PREMISE_NODES_PATH)
+            obligations = load_json(DERIVATION_OBLIGATIONS_PATH)
         except Exception as exc:
-            errors.append(f"owner_governed_premise_nodes.json could not be parsed: {exc}")
-            owner_governed = {}
-        nodes = owner_governed.get("nodes") or {}
-        listed_ids = set(owner_governed.get("canonical_ids") or [])
-        owner_governed_ids = set(nodes)
-        if listed_ids != owner_governed_ids:
+            errors.append(f"derivation_obligations.json could not be parsed: {exc}")
+            obligations = {}
+        nodes = obligations.get("nodes") or {}
+        listed_ids = set(obligations.get("canonical_ids") or [])
+        if listed_ids != set(nodes):
             errors.append(
-                "owner_governed_premise_nodes.json canonical_ids must equal nodes"
+                "derivation_obligations.json canonical_ids must equal nodes"
             )
-        errors.extend(owner_governed_count_errors(owner_governed))
-        axiom_ids = premise_nodes.axiom_premise_ids()
-        tier_a_ids = premise_nodes.admitted_derivation_target_ids()
-        overlap_axiom = listed_ids & axiom_ids
-        if overlap_axiom:
+        overlap = listed_ids & premise_nodes.accepted_premise_ids()
+        if overlap:
             errors.append(
-                "owner_governed_premise_nodes.json overlaps axiom_premise_nodes.json: "
-                + ", ".join(sorted(overlap_axiom))
-            )
-        overlap_tier_a = listed_ids & tier_a_ids
-        if overlap_tier_a:
-            errors.append(
-                "owner_governed_premise_nodes.json overlaps live tier_a_admissions.json "
-                "derivation targets: "
-                + ", ".join(sorted(overlap_tier_a))
+                "derivation_obligations.json overlaps the axiom/primitive foundation: "
+                + ", ".join(sorted(overlap))
             )
         for dep_id, entry in sorted(nodes.items()):
             if dep_id not in rows:
-                errors.append(f"owner-governed premise {dep_id!r} has no ledger row")
-            candidates = entry.get("adopted_residual_candidates") or []
-            if not candidates:
-                errors.append(
-                    f"owner-governed premise {dep_id!r} lacks adopted_residual_candidates"
-                )
-            if not entry.get("boundary"):
-                errors.append(f"owner-governed premise {dep_id!r} lacks boundary")
+                errors.append(f"derivation obligation {dep_id!r} has no ledger row")
+            if premise_nodes.is_accepted_premise_dep(dep_id):
+                errors.append(f"derivation obligation {dep_id!r} is incorrectly accepted")
+            if not entry.get("target"):
+                errors.append(f"derivation obligation {dep_id!r} lacks target")
             source_path = entry.get("current_path")
             if not source_path:
-                errors.append(f"owner-governed premise {dep_id!r} lacks current_path")
+                errors.append(f"derivation obligation {dep_id!r} lacks current_path")
             elif not (REPO_ROOT / source_path).exists():
                 errors.append(
-                    f"owner-governed premise {dep_id!r} current_path missing on disk: "
+                    f"derivation obligation {dep_id!r} current_path missing on disk: "
                     f"{source_path}"
+                )
+
+    for cid, row in rows.items():
+        if row.get("claim_type") == "meta":
+            continue
+        for dep_id in row.get("deps") or []:
+            if premise_nodes.is_non_evidence_context_dep(dep_id):
+                errors.append(
+                    f"{cid}: scientific row depends on non-evidence context "
+                    f"{dep_id!r}; cite the actual derivation/obligation instead"
                 )
 
     # Front-door axiom-pointer currency. The ledger side of an axiom change
@@ -1194,15 +1134,11 @@ def main() -> int:
                 )
 
     # Effective-status propagation sanity. A retained-grade row's deps must
-    # themselves be retained-grade, metadata context, or accepted premises.
-    # Open gates and retained_pending_chain are explicit blockers, not support
-    # for downstream theorem retention. Axioms can satisfy a dep without
-    # bounding the row.
-    # Owner-governed residual premises chain-satisfy without bounding, but are
-    # not axioms or approved primitives. Tier-A derivation targets can satisfy a
-    # dep only at the bounded tier until the target is retired by a retained
-    # derivation or explicit owner-governance adoption. Convention rows listed
-    # in the Tier-A registry are not accepted premises.
+    # themselves be retained-grade, metadata context, axioms, or approved
+    # primitives.
+    # Open gates, obligations, and retained_pending_chain are explicit blockers,
+    # not support for downstream theorem retention. Axioms and approved
+    # primitives can satisfy a dep without bounding the row.
     # Metadata deps are chain-satisfying context, not retained-grade theorem
     # support. `decoration_under_<parent>` deps count as retained-grade because
     # decoration_status() only assigns that status when the parent is itself
@@ -1211,15 +1147,6 @@ def main() -> int:
     for cid, row in rows.items():
         if row.get("effective_status") in RETAINED_GRADES:
             for d in row.get("deps", []):
-                if (
-                    row.get("effective_status") != "retained_bounded"
-                    and premise_nodes.is_admitted_derivation_target(d)
-                ):
-                    errors.append(
-                        f"{cid}: effective_status={row.get('effective_status')!r} "
-                        f"depends on Tier-A admitted derivation target {d!r}; "
-                        "expected retained_bounded until the admission is retired"
-                    )
                 if premise_nodes.is_accepted_premise_dep(d):
                     continue
                 d_eff = rows.get(d, {}).get("effective_status")

@@ -1,5 +1,9 @@
 # The 4D Carrier Template: on Finite T^4 the Emergent Sector Labels Are the Six Flux-Cohomology Integers and the Theta Charge Is Their Cross-Plane Intersection Pairing, Exact on the Closed-Branch Abelian Surface — Defect (Monopole) Closure Is the Carrier Residual, and the Center Dual Alone Carries Only the Mod-N Pairing (Bounded Theorem)
 
+**Current authority (2026-07-11):** the decision-history quotation below is
+historical provenance only and supplies no premise. This carrier calculation
+is conditional on independently closing the gauge-side steps.
+
 **Date:** 2026-07-02
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite cochain constructions on a
@@ -121,8 +125,8 @@ into two named sub-walls, and residual (ii) acquires its exact 4D template:
    decomposition is derived, not supplied by Record; record occurrence is
    not claimed.
 
-2. **Tier-A theta registry text**
-   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
+2. **Historical theta decision text (non-authoritative)**
+   (`docs/audit/data/premise_decision_history.json`,
    gauge side, quoted exactly):
 
    > "(a) gauge side -- theta_gauge = 0 in the topological-sector weighting,
@@ -362,7 +366,7 @@ not descend to `Z_N` fluxes, so the center dual alone cannot carry it.
 | abelianized (torus) dual of glued 4D SU(3) weight | OPEN — sharpened carrier residual (i-b) |
 | framework derivation of the `F u F` insertion | OPEN — sharpened pairing residual (ii') |
 | scaling-limit sector functional | OPEN — unchanged live path |
-| operational primitive registration | OWNER-GOVERNANCE ROUTE, not proposed (standing direction 2 -> 0) |
+| operational primitive registration | APPROVED-PRIMITIVE PROPOSAL, not proposed (standing direction 2 -> 0) |
 
 ### N2 — Wall-independence audit
 

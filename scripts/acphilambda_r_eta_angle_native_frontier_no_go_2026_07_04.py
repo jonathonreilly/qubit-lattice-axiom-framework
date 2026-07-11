@@ -13,7 +13,7 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md"
-TIER_A = DOCS / "audit" / "data" / "tier_a_admissions.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 RADIAN = DOCS / "KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md"
 FIXED = DOCS / "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
@@ -66,7 +66,7 @@ def main() -> int:
     print("AC_phi_lambda R-eta angle-native frontier no-go verifier")
 
     note = read(NOTE)
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     radian = read(RADIAN)
     fixed = read(FIXED)
     brannen = read(BRANNEN)
@@ -74,11 +74,11 @@ def main() -> int:
     registry_note = read(REGISTRY_NOTE)
 
     section("A. source and registry boundaries")
-    for path in [NOTE, TIER_A, LEDGER, RADIAN, FIXED, BRANNEN, RECORD, REGISTRY_NOTE]:
+    for path in [NOTE, DECISION_HISTORY, LEDGER, RADIAN, FIXED, BRANNEN, RECORD, REGISTRY_NOTE]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
-    ac = tier["derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
-    check("AC_phi_lambda remains the live Tier-A target", tier["genuine_admitted_input_count"] >= 1 and "staggered_dirac_realization_gate_note_2026-05-03" in tier["derivation_targets"])
+    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    check("decision history has no live premise inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
     check(
         "AC minimum decomposition still includes R-eta",
         "delta_readout_identification_R_eta" in ac["minimum_decomposition"],
@@ -88,21 +88,21 @@ def main() -> int:
     registry_flat = flat(registry_note)
     fixed_flat = flat(fixed)
 
-    check("note explicitly does not edit registry", "does not edit any Tier-A registry" in note_flat)
-    check("note says R-eta is not retired", "R-eta is not derived, refuted, re-graded, or removed from Tier-A" in note)
+    check("note routes current residual to open gate", "R-eta `open_gate`" in note)
+    check("note says R-eta remains open", "R-eta is not derived or refuted; its open gate remains" in note)
     check(
-        "human registry names R-eta",
-        "readout identification" in registry_flat and ("R-eta" in registry_flat or "R-η" in registry_flat),
+        "human registry points to the R-eta derivation obligation",
+        "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry_note,
     )
 
-    for source_path, expected in [
-        ("docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md", "retained_no_go"),
-        ("docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md", "retained_bounded"),
-        ("docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md", "retained_bounded"),
-        ("docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md", "retained_bounded"),
+    for source_path in [
+        "docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
+        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+        "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+        "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
     ]:
         row = ledger_row_by_path(source_path)
-        check(f"{Path(source_path).name} effective status", row.get("effective_status") == expected, row.get("effective_status"))
+        check(f"{Path(source_path).name} context row is present", bool(row), row.get("effective_status"))
 
     section("B. exact target arithmetic and off-locus status")
     L = sp.Rational(2, 9)
@@ -134,7 +134,7 @@ def main() -> int:
     check("canonical U(1) packaging 2*pi*S misses Phi", exact_nonzero(two_pi_S - phi_target))
     root_angle = 2 * sp.pi / 3
     check("C3 root angle 2*pi/3 is not 2/3", exact_nonzero(root_angle - phi_target))
-    check("fixed-locus source carries L3(1,2)=2/9", any(token in fixed_flat for token in ["L3(1,2)", "L_3(1,2)", "L₃(1,2)"]) and "2/9" in fixed_flat)
+    check("fixed-locus source carries exact 2/9 density", "L_C_3(N)" in fixed_flat and "2/9" in fixed_flat)
     check("fixed-locus source excludes physical readout", "physical single-summand" in fixed)
 
     section("D. homogeneous self-consistency/readout maps")
@@ -219,7 +219,7 @@ def main() -> int:
         "BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
         "RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
         "KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
-        "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
+        "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
     }
     check("markdown link inventory is controlled", links == expected_links, sorted(links))
     check("note line count is bounded", 150 <= len(note.splitlines()) <= 230, len(note.splitlines()))

@@ -17,21 +17,20 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 233 |
-| high | `unaudited` | 175 |
-| medium | `unaudited` | 123 |
+| critical | `unaudited` | 234 |
+| high | `unaudited` | 176 |
+| medium | `unaudited` | 124 |
 | critical | `audited_conditional` | 8 |
 | critical | `audit_in_progress` | 3 |
 | critical | `audited_failed` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |
-| high | `audited_failed` | 1 |
 | high | `audited_numerical_match` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `open_gate` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 553
+**Total non-retained-grade rows in publication tables:** 555
 
 ## Per-row breakdown
 
@@ -62,6 +61,7 @@ publication tables phrase it.
 | critical | `ckm_third_row_magnitudes_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `cl3_color_automorphism_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `cl3_sm_embedding_theorem` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
+| critical | `cl3_taste_generation_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `confinement_string_tension_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `cosmological_constant_spectral_gap_identity_theorem_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `cpt_exact_note` | `audited_failed` | `audited_failed` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
@@ -436,7 +436,7 @@ publication tables phrase it.
 | high | `shapiro_static_discriminator_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `sigma_hier_uniqueness_theorem_note_2026-04-19` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | high | `signed_gravity_response_lane_status_note_2026-04-26` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| high | `single_axiom_hilbert_note` | `audited_failed` | `audited_failed` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
+| high | `single_axiom_hilbert_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | high | `star_supported_bridge_class_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | high | `teleportation_protocol_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | high | `three_generation_chirality_boundary_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
@@ -546,6 +546,7 @@ publication tables phrase it.
 | medium | `neutrino_majorana_algebraic_bridge_obstruction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `neutrino_majorana_no_stationary_scale_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `neutrino_sole_axiom_full_closure_boundary_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `one_parameter_reduced_shell_law_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `pauli_group_order_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `plaquette_bootstrap_framework_integration_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

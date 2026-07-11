@@ -9,42 +9,40 @@ It is not a physics claim surface and should not be edited by hand.
 
 ## Foundation Surface
 
-| Premise (stable id) | Class | Current source |
+The only supplied premise types are **axioms** and **approved primitives**.
+
+| Premise (stable id) | Type | Current source |
 |---|---|---|
 | `minimal_axioms` | axiom set | [`docs/MINIMAL_AXIOMS_2026-06-29.md`](../../docs/MINIMAL_AXIOMS_2026-06-29.md) |
 | `scale_reference_primitive` | approved primitive | [`docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md`](../../docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md) |
 | `kinetic_isotropy_primitive` | approved primitive | [`docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](../../docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) |
 | `realized_state_primitive` | approved primitive | [`docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](../../docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) |
-| `staggered_dirac_realization_gate_note_2026-05-03` | owner-governed residual premise (`AC_phi_lambda`) | [`docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`](../../docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md) |
 
-Tier-A admitted derivation targets (0): none.
-Approved primitive nodes: 3.
-Owner-governed residual premise nodes: 1.
-Owner-governed residual atoms: 2.
-These are class-specific counts: zero live Tier-A targets does not mean
-zero live owner-governed residual atoms.
-Live Tier-A dependents chain-satisfy only at `retained_bounded` until an
-admission is retired by retained derivation or explicit owner-governance adoption.
+Open derivation obligations are tracked separately and carry **zero premise weight**:
 
-Owner-approval history for every axiom/primitive/governance change:
+- `ac_orbit_occupancy_statistical_grain_derivation_obligation` — [`docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](../../docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)
+- `ac_reta_hclass_hunit_readout_derivation_obligation` — [`docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](../../docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)
+- `theta_quark_determinant_cross_sector_readout_derivation_obligation` — [`docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`](../../docs/THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md)
+
+Owner-approval history for axioms and primitives:
 [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) section 6.
 
 ## Audit Surface
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3749 |
-| Applied audit verdicts | 584 |
-| Retained-grade rows, including boxed decorations | 491 |
-| Retained positive theorems | 83 |
-| Retained no-go rows | 28 |
-| Retained bounded rows | 362 |
-| Boxed decorations under retained parents | 18 |
+| Ledger rows | 3752 |
+| Applied audit verdicts | 546 |
+| Retained-grade rows, including boxed decorations | 479 |
+| Retained positive theorems | 82 |
+| Retained no-go rows | 27 |
+| Retained bounded rows | 353 |
+| Boxed decorations under retained parents | 17 |
 | Open gates | 4 |
-| Unaudited rows | 2782 |
-| Retained-pending-chain rows | 9 |
-| Audited conditional rows | 54 |
-| Audited renaming rows | 17 |
+| Unaudited rows | 2833 |
+| Retained-pending-chain rows | 1 |
+| Audited conditional rows | 34 |
+| Audited renaming rows | 16 |
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 10 |
 
@@ -55,13 +53,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2876 |
-| Ready rows | 595 |
+| Total pending rows | 2896 |
+| Ready rows | 602 |
 | Cycle-break targets | 49 |
-| Critical pending | 649 |
-| High pending | 333 |
-| Medium pending | 758 |
-| Leaf pending | 1136 |
+| Critical pending | 655 |
+| High pending | 336 |
+| Medium pending | 756 |
+| Leaf pending | 1149 |
 
 Next ready rows by queue order:
 
@@ -79,22 +77,22 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **553**.
+- Non-retained-grade cited rows in publication tables: **555**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 233 |
-| high | `unaudited` | 175 |
-| medium | `unaudited` | 123 |
+| critical | `unaudited` | 234 |
+| high | `unaudited` | 176 |
+| medium | `unaudited` | 124 |
 | critical | `audited_conditional` | 8 |
 | critical | `audit_in_progress` | 3 |
 | critical | `audited_failed` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |
-| high | `audited_failed` | 1 |
 | high | `audited_numerical_match` | 1 |
 | medium | `audited_conditional` | 1 |
+| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 
@@ -102,19 +100,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3921 |
+| Citation-graph nodes | 3924 |
 | Critical nodes | 759 |
-| High nodes | 401 |
-| Medium nodes | 993 |
-| Leaf nodes | 1768 |
+| High nodes | 403 |
+| Medium nodes | 989 |
+| Leaf nodes | 1773 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1969 descendants; score 223.944
-- `graph_first_su3_integration_note` - critical; 1599 descendants; score 64.644
-- `three_generation_observable_theorem_note` - critical; 1183 descendants; score 62.709
+- `minimal_axioms` - critical; 1968 descendants; score 223.943
+- `graph_first_su3_integration_note` - critical; 1598 descendants; score 64.643
+- `three_generation_observable_theorem_note` - critical; 1182 descendants; score 62.708
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 61.644
-- `observable_principle_from_axiom_note` - critical; 1044 descendants; score 61.529
-- `plaquette_self_consistency_note` - critical; 1170 descendants; score 50.194
-- `minimal_axioms_2026-05-03` - critical; 1070 descendants; score 45.065
-- `key_terminology` - critical; 1182 descendants; score 43.708
+- `observable_principle_from_axiom_note` - critical; 1043 descendants; score 61.528
+- `plaquette_self_consistency_note` - critical; 1169 descendants; score 50.192
+- `minimal_axioms_2026-05-03` - critical; 1069 descendants; score 45.063
+- `key_terminology` - critical; 1181 descendants; score 43.707

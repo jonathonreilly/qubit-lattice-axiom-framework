@@ -1,0 +1,19 @@
+loop_slug: wave-direct-dm-h025-seed0-crossfamily-closure
+mode: run
+goal: "Close the bounded seed-0 Fam1/Fam2 H=0.25 cross-note synthesis for independent re-audit."
+target_status: proposed_retained
+cycle_count: 1
+active_route: class-A inequalities over retained controls with class-B input verification
+hard_residual: null
+files_touched:
+  - docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md
+  - scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py
+  - outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-07-10.txt
+open_imports: []
+no_go_routes:
+  - structural magnitude or H/seed-selection theorem is outside the bounded claim
+trace_gate_classification: direct_blocker_closure
+review_disposition: pass
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5130"
+next_exact_action: "Rebuild the claim's audit packet and submit the changed source/runner hashes to the independent audit lane."
+stop_condition: "Achieved: scoped checks and review pass, leaving an independently auditable bounded-theorem candidate."

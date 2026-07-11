@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 81 |
-| **retained_no_go** | 25 |
+| **retained_no_go** | 26 |
 | **retained_bounded** | 350 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2819 |
-| audit_in_progress | 24 |
+| audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 28 |
-| `audited_clean` | 438 |
+| `audit_in_progress` | 27 |
+| `audited_clean` | 439 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
@@ -142,7 +142,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `yt_color_projection_correction_note` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `yt_ew_color_projection_theorem` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -581,6 +580,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `activity_energy_bound_witnesses_bounded_note_2026-07-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -7957,6 +7957,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The runner source does perform the stated finite-grid solve_ivp/brentq checks and the cache reports 31 PASS, 0 FAIL. The retained chain does not close because the plaquette constants, Ward target, RGE/threshold procedure, fixed thresholds, and EW initial-condition surface are admitted inputs rather than derived or supplied by retained authorities in the restricted packet.
 - **rationale:** Issue: the audited result is a reproducible finite-grid diagnostic over admitted implementation inputs, not a derivation of those inputs. Why this blocks: without retained derivations or dependency edges for I1-I5, the row cannot be promoted to a retained boundary-transfer theorem even though the narrow computation appears internally consistent. Repair target: add retained-grade authorities or self-contained derivations for the plaquette constants, Ward target, RGE normalization/threshold procedure, threshold scales, and EW surface. Claim boundary until fixed: the safe statement is the conditional finite-grid runner diagnostic only.
 - **auditor confidence:** high
+
+### `yt_color_projection_correction_note`
+
+- **Note:** [`YT_COLOR_PROJECTION_CORRECTION_NOTE.md`](../../docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Packet-level no-go that the cited SU(3) Fierz/channel-count fractions plus color-blind scaling do not derive the Yukawa-side selector kappa_Y = 0 or an unconditional sqrt(8/9) correction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00026-yt_color_projection_correcti`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Models A and B share the retained Fierz fractions and color-blind scaling law but set kappa_Y to 0 and 1 respectively, producing different K_Y values, so the selector is not derivable from those premises.  _(class `A`)_
+- **chain closes:** True — The two-completion independence witness is a genuine algebraic closure over the retained-grade Fierz authority: identical stated premises admit distinct selector values and physical correction factors. The conclusion is restricted to non-derivability from this packet and does not exclude a future operator-level matching theorem.
+- **rationale:** The load-bearing step is the algebraic independence witness, not the runner's source-text guards or a numerical comparator. The cited Fierz authority has retained-grade decoration status and supplies only the exact channel fractions; its admitted EW matching rule is not imported into this Yukawa no-go. The runner independently checks the rational family, common-scaling invariance, and disagreement of the two completions, while the source consistently limits the conclusion to the restricted packet.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `yt_ew_m_residual_note_2026-05-02`
 

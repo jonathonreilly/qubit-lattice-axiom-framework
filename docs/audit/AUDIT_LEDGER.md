@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2835 |
+| unaudited | 2834 |
 | audit_in_progress | 16 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 40 |
+| ~~audited_conditional~~ | 41 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 20 |
 | `audited_clean` | 435 |
-| `audited_conditional` | 40 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3185 |
+| `unaudited` | 3184 |
 
 | claim_type | count |
 |---|---:|
@@ -602,6 +602,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -5519,6 +5520,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The packet lacks a bridge identifying spatial axis-sign flips with non-primitive Cl(3,0) presentation freedom and proving that the tested base-value multiset exhausts the supplied structure relevant to selecting the rule. It also lacks a valid mapping from the runner's sequential directional-condition replay to an admissible one-record-per-site state under the stated axioms.
 - **rationale:** The runner constructs the finite groups and rules rather than merely printing expected constants, and reports all 14 checks passing. However, several purportedly exact covariance and orbit statements are tested only on random samples rather than exhaustively or by an encoded analytic proof. More importantly, neither the spatial-to-Clifford presentation bridge nor the asserted completeness of the mirror-even supplied data follows from the cited axiom, while E3 introduces a sequential reachability semantics absent from that axiom.
 - **auditor confidence:** high
+
+### `s3_boundary_link_theorem_note`
+
+- **Note:** [`S3_BOUNDARY_LINK_THEOREM_NOTE.md`](../../docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The R=2..6 cubical-link result supported by the bridge cross-check, together with Proposition Z for every octahedral K_simp(P) whose two Q_3 sides are connected.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T140442Z-413aaba4-00012-s3_boundary_link_theorem_not`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The R=2..10 runner verifies Properties 1-5 on the actual link K(v,B_R) at every boundary vertex, regardless of whether K equals K_simp(P).  _(class `C`)_
+- **chain closes:** False — The runner's vertex_link_BR receives only the vertex-site set and infers link simplices from site membership, rather than constructing the link from cells of the cube set. Its comparison with K_simp(P) covers only R=2..6, so the asserted verification of actual cubical links for R=7..10 is not established.
+- **rationale:** Issue: vertex_link_BR(v, sites) computes a site-induced proxy, while the claimed cubical link is determined by cells contributed by the cube set; the runner checks equality with K_simp(P) only through R=6. Why this blocks: the claimed R=7..10 actual-link verification relies on an unverified observable identification despite all printed checks passing. Repair target: compute links directly from cube incidence for R=2..10, or extend the bridge comparison through R=10 and reconcile the source's concrete link definition with the standard cubical link. Claim boundary until fixed: R=2..6 plus the independent Proposition Z certificate.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the direct cube-cell link computation remains untested and the large-coordinate/site-proxy identification remains open.
+    - N3: the claim relies on the unsupported full-subcomplex/site-membership identification.
+    - N5: actual-link verification at R=7..10 is asserted without the corresponding bridge check.
 
 ### `s3_cap_uniqueness_note`
 

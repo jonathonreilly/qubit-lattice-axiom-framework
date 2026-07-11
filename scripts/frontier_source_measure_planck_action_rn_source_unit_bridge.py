@@ -86,7 +86,7 @@ def part1_document_boundary() -> dict[str, Any]:
     return {
         "claim_type_author_hint": "bounded_theorem",
         "depends_on": [
-            "Tier-A Planck anchor / natural Planck units",
+            "approved scale-reference primitive / natural Planck units",
             "finite source-action/RN support",
             "normalized signed-record top source support",
         ],

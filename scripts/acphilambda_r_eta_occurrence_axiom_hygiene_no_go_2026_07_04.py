@@ -81,13 +81,13 @@ def main() -> int:
     minimal_flat = flat(minimal)
     registry_flat = flat(registry)
 
-    section("A. source presence and Tier-A boundary")
+    section("A. source presence and current premise boundary")
     for path in [NOTE, MINIMAL, AXIOM_PREMISES, DECISION_HISTORY, LEDGER, BRANNEN, FIXED, REGISTRY, REALIZED, KINETIC]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
-    check("Tier-A has no live admitted inputs", tier["genuine_admitted_input_count"] == 0)
-    check("Tier-A live target map is empty", tier["derivation_targets"] == {})
+    check("decision history has no live premise inputs", tier["genuine_admitted_input_count"] == 0)
+    check("decision history live target map is empty", tier["derivation_targets"] == {})
     check(
         "AC minimum decomposition keeps R-eta",
         "delta_readout_identification_R_eta" in ac["minimum_decomposition"],

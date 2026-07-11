@@ -3,10 +3,10 @@
 **Date:** 2026-07-02
 **Claim type:** bounded_theorem
 **Scope:** exact finite witness-surface constructions plus wall-sharpening; not
-a terminal no-go and not a discharge of the theta admission.
+a terminal no-go and not a discharge of the theta open problem.
 **Status authority:** independent audit lane only. This note does not set an
-audit verdict, edit registries, register primitives, change axioms, retire or
-re-grade any Tier-A admission, or claim Strong-CP closure.
+audit verdict, edit premise registries, register primitives, change axioms, or
+claim Strong-CP closure.
 **Primary runner:**
 [`scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py`](../scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py)
 **Runner cache:**
@@ -14,7 +14,7 @@ re-grade any Tier-A admission, or claim Strong-CP closure.
 
 ## Question
 
-The gauge side of the Tier-A theta admission needs an emergent integer sector
+The gauge side of the theta open problem needs an emergent integer sector
 label. The campaign theta sector Born-measure bridge states the wall as
 
 ```text
@@ -26,7 +26,7 @@ W_theta_Q_context:
 The companion center-grading context says that on the per-plaquette character
 surface no additive sector label can be `Z`-valued (and none can carry the
 `SU(3)` parity), localizing the wall onto the
-multi-plaquette / large-gauge-winding account named by the Tier-A registry.
+multi-plaquette / large-gauge-winding account named by the current route map.
 The landed substrate no-winding-carrier note (2026-06-11, unaudited; not
 consumed as a premise here) had already relocated the gauge side to an
 emergent integer sector functional, and recorded that the geometric
@@ -91,8 +91,8 @@ the Tier-A registry.
    `exp((beta/3) Re Tr W)` and character basis used for the nonabelian
    contrast (Section F of the runner).
 
-3. **Tier-A theta registry text** (docs/audit/data/premise_decision_history.json,
-   gauge side, quoted exactly):
+3. **Historical theta decision text** (`docs/audit/data/premise_decision_history.json`,
+   gauge side, quoted as provenance only):
 
    > "(a) gauge side -- theta_gauge = 0 in the topological-sector weighting,
    > residual localized to the multi-plaquette / large-gauge-winding account

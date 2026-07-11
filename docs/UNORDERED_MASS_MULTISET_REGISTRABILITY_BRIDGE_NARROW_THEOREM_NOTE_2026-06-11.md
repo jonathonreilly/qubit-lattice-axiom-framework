@@ -30,7 +30,7 @@ algebraic orientation lemma, also provide a retained unordered-mass-multiset
 registrability bridge").
 
 It does **not** enact any registry reduction, edit
-`docs/audit/data/premise_decision_history.json`, retire any Tier-A admission or
+`docs/audit/data/premise_decision_history.json`, create or retire any premise or
 `theta` (PR #3511's gated lane owns that question), derive `|delta| = 2/9`,
 consume the staggered-Dirac gate's authority (the gate's own retention drains
 in the audit lane, separately), or touch the occupancy dial `r` (see the

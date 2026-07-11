@@ -7,16 +7,16 @@
     "proposal_allowed": false,
     "trace_class": "direct_blocker_closure"
   },
-  "closed_on_tier_a_surface": {
+  "conditional_calculation_result": {
     "lambda": "1",
     "y_33": "1/sqrt(6)"
   },
-  "fail_count": 2,
+  "fail_count": 0,
   "not_closed_unbounded": [
     "P-cal/P1 derivation from A1+A2",
     "strict same-source top/W pole-response certificate"
   ],
-  "pass_count": 72,
+  "pass_count": 74,
   "planck_scope": {
     "planck_role": "dimensionful scale/source-unit analogy only",
     "yt_dimensionless_proof_input": "not Planck"
@@ -29,6 +29,7 @@
     "scaled_fisher_norm": "lambda^2"
   },
   "status": {
+    "historical_p1_record": {},
     "ledger_statuses": {
       "lsp_source": "unaudited",
       "source_cov": "unaudited",
@@ -42,12 +43,11 @@
       "current_path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
       "legacy_claim_ids": [],
       "note": "Explicitly approved framework primitive for the single dimensionful scale reference a^{-1}. Units conversion only: carries no dimensionless content and does not assert a/l_P=1. Dependencies on this primitive chain-satisfy without bounding downstream rows."
-    },
-    "tier_a_p1": {}
+    }
   },
   "top_operator": {
+    "conditional_unit_branch": "lambda=1",
     "lambda_family": "lambda/sqrt(6)",
-    "tier_a_selected_branch": "lambda=1",
     "unit_top_operator": "sum_i O_i/sqrt(6)"
   },
   "trace_class": "direct_blocker_closure"

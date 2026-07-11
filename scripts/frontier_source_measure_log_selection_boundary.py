@@ -67,7 +67,7 @@ def part1_document_boundary() -> dict[str, Any]:
         "Relation to the `F_p` wall",
         "Consequence for PR #2373",
         "Physical Lattice Assumption",
-        "Planck Scale Tier-A Anchor",
+        "Approved Scale-Reference Primitive",
         "Consequence for Y_T",
         "Claim Boundary",
         "Non-Claims",

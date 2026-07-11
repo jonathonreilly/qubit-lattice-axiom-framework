@@ -105,8 +105,8 @@ def main() -> int:
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     check("note declares no-go claim type", "**Claim type:** no_go" in note)
     check("runner path is wired in note", Path(__file__).name in note)
-    check("live Tier-A genuine count is zero", tier["genuine_admitted_input_count"] == 0, tier["genuine_admitted_input_count"])
-    check("canonical Tier-A IDs are empty on current main", tier["canonical_ids"] == [], tier["canonical_ids"])
+    check("decision history live premise count is zero", tier["genuine_admitted_input_count"] == 0, tier["genuine_admitted_input_count"])
+    check("decision history canonical live IDs are empty", tier["canonical_ids"] == [], tier["canonical_ids"])
     check("live derivation targets are empty on current main", tier.get("derivation_targets", {}) == {}, tier.get("derivation_targets"))
     retirement = ac.get("retirement", {})
     check("AC retired-target record is preserved", bool(ac))
@@ -122,7 +122,7 @@ def main() -> int:
         ac["minimum_decomposition"],
     )
     check("registry prose names R-eta obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
-    check("note denies AC retirement", "does not retire" in note_flat and "`AC_phi_lambda(ii)` / R-eta is not derived" in note)
+    check("note keeps R-eta open", "does not retire" in note_flat and "The R-eta derivation obligation remains open." in note)
     check("note denies registry/axiom/primitive edits", "does not create or edit any premise registry" in note_flat and "No registry, axiom, primitive" in note)
     check("note has current-main posture line", "Current-main posture (2026-07-11)" in note)
     check("note records open-obligation posture", "open derivation obligation\nwith zero premise weight" in note)
@@ -155,7 +155,7 @@ def main() -> int:
     density = sp.simplify((term_1 + term_2) / 3)
     check("each fixed-locus summand is 1/3", term_1 == sp.Rational(1, 3) and term_2 == sp.Rational(1, 3))
     check("averaged fixed-locus density is 2/9", density == sp.Rational(2, 9), density)
-    check("fixed-locus note carries 2/9 arithmetic", "2/9" in fixed_flat and ("fixed-locus" in fixed_flat or "fixed locus" in fixed_flat))
+    check("fixed-locus note carries 2/9 arithmetic", "2/9" in fixed_flat and ("fixed-locus" in fixed_flat.lower() or "fixed locus" in fixed_flat.lower()))
 
     formed = {"j1": True, "j2": True}
     check("bare formation fact is the same for both summands", all(formed.values()) and set(formed) == {"j1", "j2"})
@@ -191,8 +191,8 @@ def main() -> int:
     )
     check(
         "direct-license no-go keeps Record readout license unsupplied",
-        "Record content and finite context make the readout domain available" in direct_license_flat
-        and "they do not choose the fixed-locus density as the physical observable" in direct_license_flat,
+        "Every real `beta` satisfies empty-zero" in direct_license_flat
+        and "do not entail `beta=1`" in direct_license_flat,
     )
     check("angle no-go keeps occurrence-lane clock/event route live", "Occurrence-lane clock/event route" in angle)
     check(

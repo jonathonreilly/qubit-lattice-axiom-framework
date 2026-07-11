@@ -104,7 +104,7 @@ def main() -> int:
     check("runner link is wired", Path(__file__).name in note)
     for phrase in [
         "does not derive, refute, re-grade, or remove the historical AC_phi_lambda decomposition",
-        "does not edit any Tier-A registry",
+        "does not create or edit any premise registry",
         "No axiom, primitive, registry, audit verdict, or publication-status surface is edited.",
         "future occupancy-dictionary or matter-action theorems",
     ]:
@@ -121,7 +121,7 @@ def main() -> int:
     ]:
         check(f"banned overclaim absent: {banned}", banned not in note_flat)
 
-    section("B. Tier-A registry state on current main")
+    section("B. decision-history boundary on current main")
     tier = json.loads(read(DECISION_HISTORY))
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     decomp = ac["minimum_decomposition"]
@@ -129,7 +129,7 @@ def main() -> int:
     obligations = json.loads(read(OBLIGATIONS))
     obligation_ids = obligations["canonical_ids"]
     check(
-        "Tier-A live derivation targets are empty after the 2026-07-05 retirements",
+        "decision history has no live derivation targets",
         tier["genuine_admitted_input_count"] == 0
         and tier["derivation_targets"] == {}
         and tier["canonical_ids"] == [],

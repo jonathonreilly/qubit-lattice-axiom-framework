@@ -114,8 +114,8 @@ classifies; its fusion-visible shadow is precisely the `Z_N` grading.
    for the Wilson-member checks (dual support and the `tau_R/C2`
    form-instability witness at `beta = 6`).
 
-3. **Tier-A theta registry text** (docs/audit/data/premise_decision_history.json,
-   gauge side): the residual is "localized to the multi-plaquette /
+3. **Historical theta decision text** (`docs/audit/data/premise_decision_history.json`,
+   gauge side, provenance only): the residual was "localized to the multi-plaquette /
    large-gauge-winding account"; this note supplies the abelianized
    structure of that account at the class-weight level.
 

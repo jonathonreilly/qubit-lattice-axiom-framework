@@ -111,7 +111,7 @@ def main() -> int:
     check("Brannen circulant source exists", BRANNEN.exists(), str(BRANNEN.relative_to(ROOT)))
     check("modulus no-go source exists", MODULUS.exists(), str(MODULUS.relative_to(ROOT)))
     check("custody-chain source exists", CUSTODY.exists(), str(CUSTODY.relative_to(ROOT)))
-    check("Tier-A registry data exists", REGISTRY.exists(), str(REGISTRY.relative_to(ROOT)))
+    check("decision-history data exists", REGISTRY.exists(), str(REGISTRY.relative_to(ROOT)))
     check("custody pins time-reversal-reality", "time-reversal-reality" in custody)
     check("custody pins b=c-bar definition", "b=c̄" in custody or ("K-reality" in custody and "δ=0" in custody))
     check("modulus pins stationary candidates", "stationary candidates are" in modulus or "δ=k·60°" in modulus)

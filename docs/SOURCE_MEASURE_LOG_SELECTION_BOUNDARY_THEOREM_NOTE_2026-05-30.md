@@ -135,9 +135,9 @@ lattice regions is still a valid local record intervention, and its log
 density still adds over sites.  Therefore the physical-lattice premise removes
 continuum/regulator ambiguity but leaves the same source-unit ambiguity.
 
-## Planck Scale Tier-A Anchor
+## Approved Scale-Reference Primitive
 
-This boundary also allows the Tier-A scale convention recorded in
+This boundary also allows the approved scale-reference primitive recorded in
 `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`:
 the lattice spacing is fixed by the Planck-mass anchor `a^{-1}=M_Pl`.
 
@@ -191,7 +191,7 @@ N1 alternative routes checked:
    not a derivation from record algebra alone.
 5. Physical-lattice locality route: site-local factorized RN sources remain
    local on physical `Z^3` for every `lambda > 0`.
-6. Tier-A Planck-anchor route: `a^{-1}=M_Pl` fixes a dimensionful lattice
+6. Scale-reference route: `a^{-1}` fixes a dimensionful lattice
    scale, not the dimensionless RN source coordinate.
 
 N2 wall independence: the collapsed wall set has one wall, the missing

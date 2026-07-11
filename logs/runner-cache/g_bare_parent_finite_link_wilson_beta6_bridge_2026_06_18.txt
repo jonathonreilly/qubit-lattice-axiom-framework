@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
-runner_sha256: 45eb4235cb993ebb3252ffcf72908702583a65d37c71e1a3eb0b9133268062e6
+runner_sha256: 47dd415e5f668844683a61556536bb5f816243333bf2672cf597d76b2b2745c5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
-G_BARE parent finite-link/Wilson beta=6 bridge check
-(same-slot surface-definition repair: construct and compare, no assignment)
+G_BARE finite-link/Wilson split-redundancy theorem check
+(algebraic theorem separated from same-slot convention metadata)
 ==============================================================================
 
 SECTION A: canonical su(3) basis guards
@@ -54,7 +54,7 @@ SECTION C: Theorem 2 — exact split redundancy (gamma, C/gamma)
 [PASS] gamma=1.4: Wilson action value identical under split
 [PASS] gamma=1.4: gamma * F[C/gamma; gamma] = F[C; 1] exactly (dev=8.23e-16)
 [PASS] genuine dilation s=2 changes the link matrix (dev=1.45e-01)
-[PASS] genuine dilation s=2 changes the Wilson action value (dev=2.63e-03)
+[PASS] genuine dilation s=2 changes the Wilson action value (dev=3.07e-03)
 
 SECTION D: Theorem 3 — matched slot gamma*(beta)^2 = 2 N_c / beta
 ------------------------------------------------------------------------------
@@ -81,36 +81,22 @@ SECTION E: link slot readback and slot COMPARISON (never assigned)
 [PASS] draw 1: constructed link-canonical slot s = 1 (s=1.000000000000)
 [PASS] draw 2: canonical readback log(U)/(i a) reproduces C (rel err=2.14e-14)
 [PASS] draw 2: constructed link-canonical slot s = 1 (s=1.000000000000)
-[PASS] slots AGREE at beta = 6: constructed gamma*(6)^2 == constructed s^2 (gamma*^2=0.999660, s^2=1.000000)
+[PASS] slots agree exactly at the algebraic pin beta = 2 N_c (gamma*^2=0.999660, s^2=1.000000)
 [PASS] mismatched-slot exhibit at beta = 24: gamma*(24) != s on identical data (gamma*^2=0.249915 vs s^2=1.000000)
 [PASS] mismatched-slot exhibit at beta = 3/2: gamma*(3/2) != s (gamma*^2=3.998639)
 [PASS] mismatched-slot exhibit at beta = 12: gamma*(12) != s (gamma*^2=0.499830)
 
-SECTION F: definition-level composition under (SD): context only
-------------------------------------------------------------------------------
-definition-level composition under (SD): context only, no PASS/FAIL attached (2026-07-10 separation)
-  under (SD): g_bare^2 = s^2 = 1
-  under (SD): beta = 2 N_c / g_bare^2 = 6
-  under (SD): beta * g_bare^2 = 6 = 2 N_c
-  pin equivalence context: beta = 6 gives gamma*^2 = 1 = s^2
-  pin equivalence context: gamma* = s = 1 gives beta = 6
-  mismatched-family context: gamma^2=1/2, beta=12, beta*gamma^2=6
-  mismatched-family context: gamma^2=2, beta=3, beta*gamma^2=6
-  mismatched-family context: gamma^2=9/4, beta=8/3, beta*gamma^2=6
-  exhibit context at beta=24: gamma*^2=1/4, s^2=1, beta*gamma*^2=6
-
 SECTION G: source-boundary guards
 ------------------------------------------------------------------------------
-[PASS] bridge note exists (docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
+[PASS] bounded theorem note exists (docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
+[PASS] meta convention note exists (docs/G_BARE_SAME_SLOT_BETA6_CONVENTION_META_NOTE_2026-07-11.md)
 [PASS] parent note exists (docs/G_BARE_DERIVATION_NOTE.md)
 [PASS] finite-link rigidity note exists (docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
 [PASS] Wilson small-a note exists (docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-[PASS] bridge contains marker: set only by the independent audit lane
-[PASS] bridge contains marker: same scalar slot
-[PASS] bridge contains marker: declared surface definition
-[PASS] bridge contains marker: (SD)
-[PASS] bridge contains marker: not derived from the cited authorities
-[PASS] bridge contains marker: exactly equivalent to the normalization point
+[PASS] theorem contains marker: set only by the independent audit lane
+[PASS] theorem contains marker: non-load-bearing convention context
+[PASS] theorem contains marker: G_BARE_SAME_SLOT_BETA6_CONVENTION_META_NOTE_2026-07-11.md
+[PASS] theorem contains marker: This theorem locates the pin but does not choose it
 [PASS] bridge contains marker: mismatched-slot
 [PASS] bridge contains marker: does not claim:
 [PASS] bridge contains marker: Wilson plaquette action-surface selection
@@ -118,13 +104,24 @@ SECTION G: source-boundary guards
 [PASS] bridge contains marker: a dynamical fixed point
 [PASS] bridge contains marker: an audit verdict or any effective-status promotion
 [PASS] bridge contains marker: finite-link canonical Wilson surface
-[PASS] bridge contains marker: After the 2026-07-10 separation, this note's audited claim surface is ex
-[PASS] bridge contains marker: ### Composition under (SD) — definition-level, excluded from claim surfa
-[PASS] bridge contains marker: 2026-07-10 downstream hygiene.** This note's citable surface is Theorems
+[PASS] bridge contains marker: This note's audited claim surface is exactly
+[PASS] bridge contains marker: 2026-07-11 downstream hygiene.** This note's citable surface is Theorems
 [PASS] bridge contains marker: ## Repair Note
 [PASS] bridge omits forbidden marker: effective_status:
 [PASS] bridge omits forbidden marker: audit_status:
 [PASS] bridge omits forbidden marker: This note proves that the scalar in those two statements
+[PASS] theorem omits forbidden marker: (SD)
+[PASS] theorem omits forbidden marker: A^a := C^a
+[PASS] theorem omits forbidden marker: g_bare := s
+[PASS] theorem omits forbidden marker: At `N_c = 3`, exact rational arithmetic gives `beta = 6`
+[PASS] convention contains marker: **Type:** meta
+[PASS] convention contains marker: this note is not a theorem
+[PASS] convention contains marker: (SD)
+[PASS] convention contains marker: A^a := C^a
+[PASS] convention contains marker: g_bare := s
+[PASS] convention contains marker: beta = 6
+[PASS] convention contains marker: definition-level bookkeeping
+[PASS] convention contains marker: G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md
 [PASS] parent contains marker: G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md
 [PASS] parent contains marker: G_BARE_RIGIDITY_THEOREM_NOTE.md
 [PASS] parent contains marker: WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md
@@ -138,7 +135,7 @@ SECTION G: source-boundary guards
 
 Summary
 ------------------------------------------------------------------------------
-TOTAL: PASS=95 FAIL=0
+TOTAL: PASS=105 FAIL=0
 Bridge check passed.
 
 ----- stderr -----

@@ -21,6 +21,17 @@ record-readout response law that identifies the physical carrier ray and fixes
 its overall and relative-channel normalizations.  This block prunes only the
 homogeneous-normalization shortcut.
 
+## Verification and review
+
+- Exact primary runner: `PASS=11 FAIL=0`.
+- Independent NumPy enumeration: group order/closure, fixed subspace,
+  commutant dimension, decoupling, covariance, and reachable witness agree.
+- Four pinned downstream carrier/readout guards: PASS.
+- Review-loop: PASS after four focused iterations; N1-N8 all PASS for W2.
+- Audit pipeline and strict lint: PASS with zero errors.
+- Validation seed: `no_go`, `unaudited`, ready, no open dependency paths.
+- Generated audit/publication/front-door outputs: stripped from the branch.
+
 ## Proposed later weaving
 
 After independent audit only, downstream definition-only consumers may cite

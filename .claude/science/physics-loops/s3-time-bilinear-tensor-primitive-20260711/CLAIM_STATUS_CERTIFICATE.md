@@ -51,3 +51,11 @@ source note.  Result PASS for the narrow algebraic W2 claim only.
 Review-loop disposition: **pass** after four focused iterations.  The source
 is ready to enter independent audit as a `no_go` author hint.  Independent
 audit is still required before any retained-grade effective status.
+
+Audit-system validation: **pass**.  On the post-rebase pipeline, the target
+seeded as `no_go`, `unaudited`, with dependencies
+`minimal_axioms`, `scale_reference_primitive`,
+`kinetic_isotropy_primitive`, `realized_state_primitive`, and
+`staggered_dirac_realization_gate_note_2026-05-03`; it had no open dependency
+paths and entered the ready queue.  All regenerated authority outputs were
+restored from `origin/main` before commit.

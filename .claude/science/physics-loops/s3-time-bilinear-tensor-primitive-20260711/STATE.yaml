@@ -31,8 +31,8 @@ no_go_routes:
 review_disposition: pass
 pr_status: pending
 next_exact_action: >-
-  Commit the reviewed block, rebase onto current origin/main, validate the
-  audit pipeline, strip generated audit outputs, push, and open one draft PR.
+  Push the reviewed branch and open one draft PR; verify the PR is clean
+  against main and record its URL in HANDOFF.md.
 stop_condition: >-
   Stop after one independently reviewed science-block PR is opened and
   verified, or record a complete PR backlog if publication tooling fails.

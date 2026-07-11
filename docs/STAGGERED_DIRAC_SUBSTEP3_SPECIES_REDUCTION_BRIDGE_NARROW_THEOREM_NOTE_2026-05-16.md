@@ -84,17 +84,17 @@ Hamming-weight-graded triplet `1 + 1 + 3 + 3 = 2^3` on `Z^3` (or the
 analogous structure on `Z^4` at `d = 4`), and whether the resulting
 species-count is forced to be the specific framework count.
 
-Two audited suppliers establish the naive count and the `Cl(3,0)` split.
+Two supplier theorems establish the naive count and the `Cl(3,0)` split.
 The supplied-action blocking theorem cited below now provides the missing
 action-level Kogut-Susskind module derivation. Ledger status for every row is
 set by the independent audit lane.
 
 - `NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md`
-  (retained / audited_clean per the 2026-05-16 ledger) — provides
+  — provides
   the abstract `2^d` corner-cardinality readout for the naive lattice
   Dirac operator.
 - `CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`
-  (retained / audited_clean per the 2026-05-16 ledger) — provides
+  — provides
   the `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` chirality-summand split,
   which gives the spinor-rep dim `2 + 2 = 4` matching the `d = 4`
   spinor-count factor.
@@ -220,9 +220,9 @@ obligation. ∎
 
 - Does **not** identify the framework's specific lattice substrate
   with `Z^4` or any other dimension-`d` lattice. The cited upstream
-  naive lattice theorem is regulator-independent and substrate-
-  independent on its own terms; this narrow theorem records only the
-  `d = 4` instance to exhibit the `16 = 4 · 4` factorization.
+  theorem concerns the naive lattice operator on its stated comparison
+  surface; this narrow theorem records only the `d = 4` instance to
+  exhibit the `16 = 4 · 4` factorization.
 - Does **not** force the framework's regulator to be naive or
   staggered. The cited upstream explicitly disclaims regulator
   independence; this narrow theorem inherits that disclaimer.

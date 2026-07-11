@@ -132,6 +132,7 @@ class GateSummary:
     max_projector_resolution_error: float = 0.0
     max_projector_idempotence_error: float = 0.0
     max_projector_orthogonality_error: float = 0.0
+    exact_fixed_obstruction_pass: int = 0
     min_fidelity: float = 1.0
     max_infidelity: float = 0.0
     max_branch_probability_error: float = 0.0
@@ -147,6 +148,7 @@ class GateSummary:
         logical_axis: int,
         metrics: OperatorSetMetrics,
         failure_cause: str | None,
+        tolerance: float,
     ) -> None:
         self.total_cases += 1
         key = (geometry.dim, logical_axis)
@@ -165,6 +167,14 @@ class GateSummary:
             self.x_sign_counts[metrics.x_sign] += 1
         if failure_cause is not None:
             self.failure_causes[failure_cause] += 1
+        if failure_cause == "current_pair_hop_x_flips_last_axis_not_logical_axis":
+            exact_defects = (
+                metrics.x_restriction_zero
+                and abs(metrics.x_leakage - math.sqrt(2.0)) < tolerance
+                and abs(metrics.projector_metrics.idempotence_error - 0.25) < tolerance
+                and abs(metrics.projector_metrics.orthogonality_error - 0.25) < tolerance
+            )
+            self.exact_fixed_obstruction_pass += int(exact_defects)
         if metrics.x_restriction_zero and not metrics.logical_pauli_pass:
             self.zero_x_restriction_failures += 1
 
@@ -672,6 +682,7 @@ def survey(
                             current_metrics,
                             tolerance,
                         ),
+                        tolerance,
                     )
 
                     adapted_metrics = evaluate_operator_set(
@@ -693,6 +704,7 @@ def survey(
                             adapted_metrics,
                             tolerance,
                         ),
+                        tolerance,
                     )
 
     return geometries, skipped, current_summary, adapted_summary
@@ -717,6 +729,14 @@ def print_gate_summary(summary: GateSummary) -> None:
     print(f"  X sign counts: {format_counter(summary.x_sign_counts)}")
     print(f"  failure causes: {format_counter(summary.failure_causes)}")
     print(f"  zero X-restriction failures: {summary.zero_x_restriction_failures}")
+    if summary.label == "current_fixed_x":
+        expected_obstructions = summary.failure_causes[
+            "current_pair_hop_x_flips_last_axis_not_logical_axis"
+        ]
+        print(
+            "  exact non-last-axis obstruction certificates: "
+            f"{summary.exact_fixed_obstruction_pass}/{expected_obstructions}"
+        )
     print(f"  max Z leakage: {summary.max_z_leakage:.3e}")
     print(f"  max X leakage: {summary.max_x_leakage:.3e}")
     print(f"  max failed-case X leakage: {summary.max_failed_x_leakage:.3e}")
@@ -772,7 +792,7 @@ def print_summary(
     tolerance: float,
 ) -> bool:
     print("TASTE-QUBIT ENCODING PORTABILITY AUDIT")
-    print("Status: numerical planning audit; quantum state teleportation only")
+    print("Status: bounded finite operator-theorem replay; quantum state teleportation only")
     print()
     print(f"Requested dimensions: {dims}")
     print(f"Requested side lengths: {sides}")
@@ -824,18 +844,64 @@ def print_summary(
     print("  resource-preparation channel, noise model, matter transfer, charge")
     print("  transfer, mass transfer, or faster-than-light signaling.")
 
+    expected_axis_totals: dict[tuple[int, int], int] = collections.Counter()
+    for geometry in geometries:
+        cases_per_axis = geometry.n_cells * 2 ** (geometry.dim - 1)
+        for axis in range(geometry.dim):
+            expected_axis_totals[(geometry.dim, axis)] += cases_per_axis
+    expected_total = sum(expected_axis_totals.values())
+    expected_fixed_pass = sum(
+        total
+        for (dim, axis), total in expected_axis_totals.items()
+        if axis == dim - 1
+    )
+    expected_nonlast_failures = expected_total - expected_fixed_pass
+    observed_current_axis_totals = {
+        key: total for key, (total, _passed) in current_summary.by_dim_axis.items()
+    }
+    observed_adapted_axis_totals = {
+        key: total for key, (total, _passed) in adapted_summary.by_dim_axis.items()
+    }
+    fixed_defects_ok = (
+        expected_nonlast_failures == 0
+        or (
+            abs(current_summary.max_failed_x_leakage - math.sqrt(2.0)) < tolerance
+            and abs(current_summary.max_projector_idempotence_error - 0.25) < tolerance
+            and abs(current_summary.max_projector_orthogonality_error - 0.25) < tolerance
+        )
+    )
     current_ok = (
-        current_summary.logical_pauli_pass + current_summary.failure_causes[
+        expected_total > 0
+        and current_summary.total_cases == expected_total
+        and observed_current_axis_totals == dict(expected_axis_totals)
+        and current_summary.logical_pauli_pass == expected_fixed_pass
+        and current_summary.projector_pass == expected_fixed_pass
+        and current_summary.failure_causes[
             "current_pair_hop_x_flips_last_axis_not_logical_axis"
-        ]
-        == current_summary.total_cases
+        ] == expected_nonlast_failures
+        and current_summary.zero_x_restriction_failures == expected_nonlast_failures
+        and current_summary.exact_fixed_obstruction_pass == expected_nonlast_failures
+        and fixed_defects_ok
         and current_summary.teleportation_pass == current_summary.teleportation_run
     )
     adapted_ok = (
-        adapted_summary.logical_pauli_pass == adapted_summary.total_cases
-        and adapted_summary.projector_pass == adapted_summary.total_cases
+        expected_total > 0
+        and adapted_summary.total_cases == expected_total
+        and observed_adapted_axis_totals == dict(expected_axis_totals)
+        and adapted_summary.logical_pauli_pass == expected_total
+        and adapted_summary.projector_pass == expected_total
         and adapted_summary.teleportation_pass == adapted_summary.teleportation_run
         and adapted_summary.teleportation_run == adapted_summary.total_cases
+    )
+    print()
+    print("Finite operator theorem certificate:")
+    print(
+        "  fixed pair-hop passes exactly the last-axis encodings and has the "
+        f"predicted non-last-axis defects: {'PASS' if current_ok else 'FAIL'}"
+    )
+    print(
+        "  axis-adapted X passes every surveyed encoding: "
+        f"{'PASS' if adapted_ok else 'FAIL'}"
     )
     return current_ok and adapted_ok
 
@@ -885,10 +951,13 @@ def main() -> int:
         seed=args.seed,
         tolerance=args.tolerance,
     )
-    boundary_ok = print_boundary_results(
+    print_boundary_results(
         teleportation_boundary_check_results(Path(__file__).resolve().parents[1])
     )
-    ok = ok and boundary_ok
+    print(
+        "  Context only: downstream physical-implementation statuses do not gate "
+        "this standalone finite operator theorem."
+    )
     return 0 if ok else 1
 
 

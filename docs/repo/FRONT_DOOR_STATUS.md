@@ -36,7 +36,7 @@ Owner-approval history for every axiom/primitive/governance change:
 | Retained bounded rows | 349 |
 | Boxed decorations under retained parents | 18 |
 | Open gates | 4 |
-| Unaudited rows | 2834 |
+| Unaudited rows | 2833 |
 | Retained-pending-chain rows | 9 |
 | Audited conditional rows | 41 |
 | Audited renaming rows | 14 |
@@ -78,11 +78,11 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 254 |
+| critical | `unaudited` | 253 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 124 |
 | critical | `audited_conditional` | 3 |
-| critical | `audit_in_progress` | 1 |
+| critical | `audit_in_progress` | 2 |
 | critical | `audited_numerical_match` | 1 |
 | high | `audited_conditional` | 1 |
 | high | `audited_failed` | 1 |

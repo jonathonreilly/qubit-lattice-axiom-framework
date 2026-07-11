@@ -57858,10 +57858,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
     },
     {
@@ -57887,6 +57883,10 @@
     {
       "from": "repo.front_door_status",
       "to": "abj_epsilon_index_square_block_no_go_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -112158,17 +112158,17 @@
         "kinetic_isotropy_primitive",
         "realized_state_primitive",
         "tier_a_residual_owner_adoption_retirement_2026-07-04",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
         "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
         "fermion_parity_z2_grading_theorem_note_2026-05-02",
         "s3_mass_matrix_no_go_note",
         "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
         "gmn_vev_annihilator_l4_support_note_2026-07-02",
         "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
-        "abj_epsilon_index_square_block_no_go_note_2026-05-30"
+        "abj_epsilon_index_square_block_no_go_note_2026-05-30",
+        "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f3d97ec89fd6ce9beea928b6e4cf27f67564f249f3c2879cd1e6fac041fecfa1",
+      "note_hash": "a5edd0e5fef11785a017d7b8d75f1da0650382d17c85975f07ec652093a315be",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

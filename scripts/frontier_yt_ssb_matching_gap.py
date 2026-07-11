@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 """Verifier for the scoped YT SSB matching-gap arithmetic boundary note.
 
-This runner intentionally checks only the finite-dimensional H_unit component
-overlap:
+This runner intentionally checks only the finite-dimensional H_unit
+normalization and component overlap. It starts from the unnormalized
+equal-weight diagonal direction
 
-    H_unit = I_(N_iso * N_c) / sqrt(N_iso * N_c)
+    S_D = sum_i E_i = I_D
 
-and therefore
+on an orthonormal contractor basis. It solves the positive unit-norm equation
+
+    1 = ||c S_D||_HS^2 = c^2 D
+
+before checking that
 
     <alpha_0,a_0 | H_unit | alpha_0,a_0> = 1 / sqrt(N_iso * N_c).
 
@@ -18,6 +23,7 @@ state normalization, and absence of extra factors are derived separately.
 
 from __future__ import annotations
 
+import inspect
 import math
 import sys
 from dataclasses import dataclass
@@ -48,13 +54,44 @@ class PairSpace:
     n_iso: int
     n_c: int
 
+    def __post_init__(self) -> None:
+        if self.n_iso <= 0 or self.n_c <= 0:
+            raise ValueError("n_iso and n_c must be positive")
+
     @property
     def dim(self) -> int:
         return self.n_iso * self.n_c
 
     @property
-    def h_unit_prefactor(self) -> float:
-        return 1.0 / math.sqrt(self.dim)
+    def equal_weight_coefficients(self) -> tuple[int, ...]:
+        """Coordinates of S_D in the orthonormal contractor basis."""
+        return (1,) * self.dim
+
+    @staticmethod
+    def hs_norm_squared(
+        coefficients: tuple[complex | float | int, ...],
+    ) -> float:
+        return float(sum(abs(value) ** 2 for value in coefficients))
+
+    @property
+    def unnormalized_norm_squared(self) -> float:
+        return self.hs_norm_squared(self.equal_weight_coefficients)
+
+    @property
+    def positive_unit_coefficient(self) -> float:
+        """Solve 1 = c^2 ||S_D||^2 on the positive ray."""
+        return 1.0 / math.sqrt(self.unnormalized_norm_squared)
+
+    @property
+    def h_unit_coefficients(self) -> tuple[float, ...]:
+        coefficient = self.positive_unit_coefficient
+        return tuple(
+            coefficient * value for value in self.equal_weight_coefficients
+        )
+
+    @property
+    def h_unit_norm_squared(self) -> float:
+        return self.hs_norm_squared(self.h_unit_coefficients)
 
     def index(self, alpha: int, color: int) -> int:
         if not (1 <= alpha <= self.n_iso):
@@ -74,7 +111,7 @@ class PairSpace:
         right = self.index(alpha_right, color_right)
         if left != right:
             return 0.0
-        return self.h_unit_prefactor
+        return self.h_unit_coefficients[left]
 
     def component_overlap(self, alpha: int, color: int) -> float:
         return self.h_unit_matrix_element(alpha, color, alpha, color)
@@ -84,8 +121,8 @@ def close(a: float, b: float) -> bool:
     return abs(a - b) < TOL
 
 
-def block_1_dimensions() -> PairSpace:
-    print("\n=== Block 1: canonical dimensions ===\n")
+def block_1_normalization_derivation() -> PairSpace:
+    print("\n=== Block 1: derive the H_unit normalization coefficient ===\n")
 
     space = PairSpace(n_iso=2, n_c=3)
 
@@ -97,9 +134,24 @@ def block_1_dimensions() -> PairSpace:
         f"D={space.dim}",
     )
     check(
-        "1.4  H_unit prefactor = 1/sqrt(6)",
-        close(space.h_unit_prefactor, 1.0 / math.sqrt(6.0)),
-        f"prefactor={space.h_unit_prefactor:.12f}",
+        "1.4  ||S_D||_HS^2 = D from six unit contractor coordinates",
+        close(space.unnormalized_norm_squared, float(space.dim)),
+        f"norm_squared={space.unnormalized_norm_squared:.1f}",
+    )
+    check(
+        "1.5  positive unit-norm equation derives c = 1/sqrt(6)",
+        close(space.positive_unit_coefficient, 1.0 / math.sqrt(6.0)),
+        f"c={space.positive_unit_coefficient:.12f}",
+    )
+    check(
+        "1.6  derived H_unit has Hilbert-Schmidt norm squared 1",
+        close(space.h_unit_norm_squared, 1.0),
+        f"norm_squared={space.h_unit_norm_squared:.12f}",
+    )
+    check(
+        "1.7  derived coefficient satisfies c^2 D = 1",
+        close(space.positive_unit_coefficient**2 * space.dim, 1.0),
+        f"c^2 D={space.positive_unit_coefficient**2 * space.dim:.12f}",
     )
 
     return space
@@ -147,7 +199,7 @@ def block_2_matrix_form(space: PairSpace) -> None:
 
 
 def block_3_component_overlaps(space: PairSpace) -> None:
-    print("\n=== Block 3: component overlap theorem ===\n")
+    print("\n=== Block 3: independently evaluated component overlaps ===\n")
 
     expected = 1.0 / math.sqrt(6.0)
     overlaps = []
@@ -161,21 +213,20 @@ def block_3_component_overlaps(space: PairSpace) -> None:
         f"overlaps={[round(value, 12) for value in overlaps]}",
     )
 
-    alpha_0, color_0 = 1, 1
-    ward_component_label = space.component_overlap(alpha_0, color_0)
-    candidate_component_label = space.component_overlap(alpha_0, color_0)
+    first_component = space.component_overlap(1, 1)
+    last_component = space.component_overlap(space.n_iso, space.n_c)
     check(
-        "3.2  two labels defined as the same H_unit component overlap agree",
-        close(ward_component_label, candidate_component_label),
+        "3.2  distinct first and last components are evaluated separately",
+        close(first_component, last_component),
         (
-            f"A={ward_component_label:.12f}, "
-            f"B={candidate_component_label:.12f}"
+            f"F(1,1)={first_component:.12f}, "
+            f"F({space.n_iso},{space.n_c})={last_component:.12f}"
         ),
     )
     check(
-        "3.3  the shared component value is 1/sqrt(6)",
-        close(ward_component_label, expected),
-        f"value={ward_component_label:.12f}",
+        "3.3  both separately evaluated values equal 1/sqrt(6)",
+        close(first_component, expected) and close(last_component, expected),
+        f"value={first_component:.12f}",
     )
 
 
@@ -203,19 +254,43 @@ def block_4_general_dimensions() -> None:
     )
 
 
-def block_5_forbidden_imports() -> None:
-    print("\n=== Block 5: forbidden physical-readout imports are absent ===\n")
+def block_5_falsifiers(space: PairSpace) -> None:
+    print("\n=== Block 5: normalization and representative falsifiers ===\n")
 
-    proof_symbols = {
-        "N_iso",
-        "N_c",
-        "D",
-        "I_D",
-        "E_alpha_a",
-        "H_unit",
-        "alpha_0",
-        "a_0",
-    }
+    c = space.positive_unit_coefficient
+    doubled_norm_squared = (2.0 * c) ** 2 * space.unnormalized_norm_squared
+    negative_norm_squared = (-c) ** 2 * space.unnormalized_norm_squared
+
+    check(
+        "5.1  doubling c fails the unit-norm equation",
+        not close(doubled_norm_squared, 1.0),
+        f"||2c S_D||^2={doubled_norm_squared:.1f}",
+    )
+    check(
+        "5.2  sign reversal preserves norm but violates c > 0",
+        close(negative_norm_squared, 1.0) and -c < 0.0,
+        f"||-c S_D||^2={negative_norm_squared:.1f}, -c={-c:.12f}",
+    )
+
+    perturbed = list(space.h_unit_coefficients)
+    perturbed[0] *= 2.0
+    perturbation_norm = math.sqrt(PairSpace.hs_norm_squared(tuple(perturbed)))
+    normalized_perturbation = tuple(
+        value / perturbation_norm for value in perturbed
+    )
+    check(
+        "5.3  a normalized nonuniform diagonal vector fails component equality",
+        not close(normalized_perturbation[0], normalized_perturbation[-1]),
+        (
+            f"first={normalized_perturbation[0]:.12f}, "
+            f"last={normalized_perturbation[-1]:.12f}"
+        ),
+    )
+
+
+def block_6_forbidden_imports() -> None:
+    print("\n=== Block 6: forbidden physical-readout imports are absent ===\n")
+
     forbidden_symbols = {
         "g_bare",
         "y_t_phys",
@@ -226,9 +301,12 @@ def block_5_forbidden_imports() -> None:
         "source_normalization",
     }
 
-    leaked = sorted(proof_symbols & forbidden_symbols)
+    normalization_implementation = inspect.getsource(PairSpace)
+    leaked = sorted(
+        symbol for symbol in forbidden_symbols if symbol in normalization_implementation
+    )
     check(
-        "5.1  algebraic proof uses no gauge-coupling/readout symbols",
+        "6.1  normalization implementation uses no physical-readout symbols",
         not leaked,
         f"leaked={leaked}",
     )
@@ -246,11 +324,12 @@ def main() -> int:
     print("YT SSB matching-gap arithmetic boundary verifier")
     print("=" * 72)
 
-    space = block_1_dimensions()
+    space = block_1_normalization_derivation()
     block_2_matrix_form(space)
     block_3_component_overlaps(space)
     block_4_general_dimensions()
-    block_5_forbidden_imports()
+    block_5_falsifiers(space)
+    block_6_forbidden_imports()
 
     print("\n" + "=" * 72)
     print(f"RESULT: {PASS_COUNT} PASS, {FAIL_COUNT} FAIL")
@@ -259,9 +338,9 @@ def main() -> int:
     if FAIL_COUNT == 0:
         print(
             "\n  OUTCOME: exact H_unit component-overlap arithmetic verified.\n"
-            "  Framework instance: <component|H_unit|component> = 1/sqrt(6).\n"
+            "  Stated instance: <component|H_unit|component> = 1/sqrt(6).\n"
             "  Boundary: this does NOT close the physical SSB/Yukawa matching\n"
-            "  theorem; that operator-matching problem remains open.\n"
+            "  theorem; that operator-matching problem remains open."
         )
         return 0
 

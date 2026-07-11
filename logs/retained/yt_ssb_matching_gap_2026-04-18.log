@@ -2,12 +2,15 @@
 YT SSB matching-gap arithmetic boundary verifier
 ========================================================================
 
-=== Block 1: canonical dimensions ===
+=== Block 1: derive the H_unit normalization coefficient ===
 
   [PASS] 1.1  N_iso is positive  (N_iso=2)
   [PASS] 1.2  N_c is positive  (N_c=3)
   [PASS] 1.3  D = N_iso * N_c = 6  (D=6)
-  [PASS] 1.4  H_unit prefactor = 1/sqrt(6)  (prefactor=0.408248290464)
+  [PASS] 1.4  ||S_D||_HS^2 = D from six unit contractor coordinates  (norm_squared=6.0)
+  [PASS] 1.5  positive unit-norm equation derives c = 1/sqrt(6)  (c=0.408248290464)
+  [PASS] 1.6  derived H_unit has Hilbert-Schmidt norm squared 1  (norm_squared=1.000000000000)
+  [PASS] 1.7  derived coefficient satisfies c^2 D = 1  (c^2 D=1.000000000000)
 
 === Block 2: explicit H_unit matrix form ===
 
@@ -15,20 +18,26 @@ YT SSB matching-gap arithmetic boundary verifier
   [PASS] 2.2  all off-diagonal entries vanish  (off-diagonal count=30)
   [PASS] 2.3  trace(H_unit) = sqrt(6)  (trace=2.449489742783)
 
-=== Block 3: component overlap theorem ===
+=== Block 3: independently evaluated component overlaps ===
 
   [PASS] 3.1  every basis component overlap is 1/sqrt(6)  (overlaps=[0.408248290464, 0.408248290464, 0.408248290464, 0.408248290464, 0.408248290464, 0.408248290464])
-  [PASS] 3.2  two labels defined as the same H_unit component overlap agree  (A=0.408248290464, B=0.408248290464)
-  [PASS] 3.3  the shared component value is 1/sqrt(6)  (value=0.408248290464)
+  [PASS] 3.2  distinct first and last components are evaluated separately  (F(1,1)=0.408248290464, F(2,3)=0.408248290464)
+  [PASS] 3.3  both separately evaluated values equal 1/sqrt(6)  (value=0.408248290464)
 
 === Block 4: general positive-dimension spot checks ===
 
   [PASS] 4.1  (N_iso,N_c)=(3,4) gives 1/sqrt(12) on every component  (value=0.288675134595)
   [PASS] 4.2  (N_iso,N_c)=(1,1) gives component overlap 1  (value=1.000000000000)
 
-=== Block 5: forbidden physical-readout imports are absent ===
+=== Block 5: normalization and representative falsifiers ===
 
-  [PASS] 5.1  algebraic proof uses no gauge-coupling/readout symbols  (leaked=[])
+  [PASS] 5.1  doubling c fails the unit-norm equation  (||2c S_D||^2=4.0)
+  [PASS] 5.2  sign reversal preserves norm but violates c > 0  (||-c S_D||^2=1.0, -c=-0.408248290464)
+  [PASS] 5.3  a normalized nonuniform diagonal vector fails component equality  (first=0.666666666667, last=0.333333333333)
+
+=== Block 6: forbidden physical-readout imports are absent ===
+
+  [PASS] 6.1  normalization implementation uses no physical-readout symbols  (leaked=[])
   [INFO] physical Yukawa matching closure is not claimed
   [INFO] HS/source normalization remains outside this proof
   [INFO] SSB VEV division remains outside this proof
@@ -37,11 +46,10 @@ YT SSB matching-gap arithmetic boundary verifier
   [INFO] absence of extra physical factors remains outside this proof
 
 ========================================================================
-RESULT: 13 PASS, 0 FAIL
+RESULT: 19 PASS, 0 FAIL
 ========================================================================
 
   OUTCOME: exact H_unit component-overlap arithmetic verified.
-  Framework instance: <component|H_unit|component> = 1/sqrt(6).
+  Stated instance: <component|H_unit|component> = 1/sqrt(6).
   Boundary: this does NOT close the physical SSB/Yukawa matching
   theorem; that operator-matching problem remains open.
-

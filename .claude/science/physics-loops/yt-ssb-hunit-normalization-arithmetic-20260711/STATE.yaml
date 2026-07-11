@@ -1,0 +1,22 @@
+slug: yt-ssb-hunit-normalization-arithmetic-20260711
+goal: "Close the bounded H_unit normalization arithmetic in the YT SSB matching-gap boundary note without asserting a physical Yukawa matching theorem."
+mode: run
+target_status: candidate-retained-grade
+current_status: candidate-retained-grade
+branch: claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c
+base_ref: origin/main
+cycle_count: 1
+active_route: derive-positive-unit-normalization-from-contractor-norm
+hard_residual: null
+files_touched:
+  - docs/YT_SSB_MATCHING_GAP_ANALYSIS_NOTE_2026-04-18.md
+  - scripts/frontier_yt_ssb_matching_gap.py
+  - logs/retained/yt_ssb_matching_gap_2026-04-18.log
+  - .claude/science/physics-loops/yt-ssb-hunit-normalization-arithmetic-20260711/
+open_imports: []
+no_go_routes: []
+trace_class: direct_blocker_closure
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Independent audit reviews the queued positive-theorem row after landing."
+stop_condition: "Scoped source/runner pair passes review and is packaged for independent audit."

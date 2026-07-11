@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_doublet_clock_rate_normalization_no_go_2026_07_04.py
-runner_sha256: 2709f936feb986b46be2d8a2242251be0383d7ab65d58b74d4d01793d4ef93f6
+runner_sha256: 7cabd7e2c102ee3b796953c99025e04d45956e9a4ff6361a4d5ce064340a38d9
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 1.14
@@ -32,7 +32,7 @@ A. source presence and Tier-A boundary
 [PASS] AC statement names density-read-as-angle R-eta
 [PASS] human registry points to the R-eta derivation obligation
 [PASS] note declares no_go Type
-[PASS] note says R-eta is not retired
+[PASS] note says R-eta remains open
 [PASS] note says AC_phi_lambda is not retired
 [PASS] note says registry not edited
 
@@ -172,7 +172,7 @@ G. note discipline and no-overclaim checks
 [PASS] forbidden phrase absent: audit_status: audited_clean
 [PASS] forbidden phrase absent: effective_status: retained
 [PASS] forbidden phrase absent: promoted to retained
-[PASS] note links minimal current residual to Tier-A registry
+[PASS] note links the current R-eta residual
 [PASS] note does not link generated audit ledger as authority
 
 TOTAL: PASS=139 FAIL=0 CHECKS=139

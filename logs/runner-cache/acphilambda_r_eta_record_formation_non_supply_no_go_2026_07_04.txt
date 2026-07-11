@@ -3,7 +3,7 @@ runner: scripts/acphilambda_r_eta_record_formation_non_supply_no_go_2026_07_04.p
 runner_sha256: f79ba40415b03dfca922211e4a5db92e3df6bf65f623fd3bc385cf8b76f4b3e1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta Record-formation non-supply no-go

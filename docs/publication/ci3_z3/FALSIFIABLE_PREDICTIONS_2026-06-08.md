@@ -139,7 +139,9 @@ publication surface identifies **no clean unconditional forward falsifier**.
 - [`CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md`](../../CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md)
   — T2 (J NLO closed form).
 - `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
-  — the two genuine admissions (`AC_φλ`, `θ`) the flavor forecasts are conditional on.
+  — the historical `AC_φλ` and `θ` decisions, now non-authoritative provenance.
+  The forecasts remain conditional on their unresolved scientific bridges; no
+  admission satisfies those dependencies.
 
 The PMNS `δ_CP` / `θ_23` NuFit-6.1 standing refresh is carried by the companion note
 `PMNS_DCP_FORECAST_STANDING_DEGRADES_UNDER_NUFIT6_BOUNDED_NOTE_2026-06-08` (cited by

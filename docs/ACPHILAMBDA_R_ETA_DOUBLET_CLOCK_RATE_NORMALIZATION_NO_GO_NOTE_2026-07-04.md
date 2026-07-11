@@ -127,8 +127,8 @@ license.
 
 The paired runner verifies:
 
-- the Tier-A registry keeps the live `AC_phi_lambda` target and keeps
-  `delta_readout_identification_R_eta` in its decomposition;
+- decision history preserves `delta_readout_identification_R_eta` as
+  provenance while the current R-eta obligation carries the open target;
 - the source surfaces above state the clock, the free `|b|` unit, the
   occurrence/rate boundary, and the rescale wall;
 - `L = 2/9` and `S_sum = 3L = 2/3`;
@@ -157,7 +157,7 @@ measurement semantics, new primitive, or owner decision enters the proof.
 ## What Does Not Move
 
 - AC_phi_lambda is not retired.
-- R-eta is not derived, refuted, re-graded, or removed from Tier-A.
+- R-eta is not derived or refuted; its open gate remains.
 - No value of `delta`, `Phi`, `|b|`, `a_act`, event law, or readout map is
   selected.
 - AC(i), theta, source/action gates, and owner primitive decisions are

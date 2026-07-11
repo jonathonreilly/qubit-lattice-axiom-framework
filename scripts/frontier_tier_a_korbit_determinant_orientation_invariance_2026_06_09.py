@@ -52,12 +52,12 @@ def main() -> int:
     axiom_text = AXIOM_NOTE.read_text(encoding="utf-8")
     axiom_flat = flat(axiom_text)
 
-    # Source-boundary checks: the note must be candidate-route, not registry edit.
+    # Source-boundary checks: the note must be conditional, not premise supply.
     check(
-        "source does not claim a completed Tier-A registry change",
-        "does not edit the audit-lane-owned Tier-A registry" in note_flat
-        and "It does not strip the `AC_phi_lambda` admission by itself" in note_flat
-        and "registry has already changed" in note_flat,
+        "source states historical taxonomy has no authority",
+        "historical provenance only" in note_flat
+        and "supplies no premise" in note_flat
+        and "open condition" in note_flat,
     )
     check(
         "source avoids the rejected theta shortcut",

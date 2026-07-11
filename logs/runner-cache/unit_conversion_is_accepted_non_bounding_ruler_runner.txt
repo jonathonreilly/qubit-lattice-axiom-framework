@@ -3,7 +3,7 @@ runner: scripts/unit_conversion_is_accepted_non_bounding_ruler_runner.py
 runner_sha256: 52c4c68b16b4663a631be0334bece96447f025023d1d85c0a3a53b3bc674e43c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 ==============================================================================

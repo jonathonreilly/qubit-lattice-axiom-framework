@@ -1,5 +1,9 @@
 # AC_phi_lambda Defect Identity-Unit Rescale Obstruction And Junction Localization
 
+**Current authority (2026-07-11):** every admission/index label below is
+historical terminology. The live dependency is the R-eta `open_gate`; decision
+history supplies no premise and cannot satisfy that dependency.
+
 **Date:** 2026-07-01
 **Claim type:** bounded_theorem
 **Scope:** bounded route no-go / selector narrowing + wall consolidation over

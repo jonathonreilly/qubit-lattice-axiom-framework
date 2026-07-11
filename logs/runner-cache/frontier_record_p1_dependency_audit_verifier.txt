@@ -3,7 +3,7 @@ runner: scripts/frontier_record_p1_dependency_audit_verifier.py
 runner_sha256: fefd261134b12f79e995aa08db8662a53eab9538bfe1237d38e36be5fc8f4c79
 timeout_sec: 120
 exit_code: 1
-elapsed_sec: 0.19
+elapsed_sec: 0.20
 status: nonzero_exit
 ----- stdout -----
 Record/P1 dependency audit re-derivation check

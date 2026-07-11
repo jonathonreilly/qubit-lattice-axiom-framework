@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_acphilambda_r_eta_w2_registrability_context_bridge_2026_06_18.py
-runner_sha256: 9a73b87fc4381f8adcbeb0c59f0e289c75be11605019ad78c32be68de604231d
+runner_sha256: f717e8db9930e3c496d7efae54a91a55af6c956220812e8cacd02497c1b937ad
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.40
+elapsed_sec: 1.35
 status: ok
 ----- stdout -----
 
@@ -55,7 +55,7 @@ A6 - note firewall and dependency sanity
 [PASS] note carries required boundary phrase: source-side bounded support only
 [PASS] note carries required boundary phrase: closes only piece 1
 [PASS] note carries required boundary phrase: Piece 2 remains the named carrier-gate / chirality-gate residual
-[PASS] note carries required boundary phrase: The value atom `A_R-eta` remains admitted
+[PASS] note carries required boundary phrase: The value atom `A_R-eta` remains open
 [PASS] note carries required boundary phrase: No new axiom, primitive, admission, normalization, probability rule
 [PASS] note carries required boundary phrase: does not set or predict the downstream status
 [PASS] note carries required boundary phrase: physical carrier/context realization plus R-eta value

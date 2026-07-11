@@ -15,7 +15,10 @@ def main() -> int:
     data = ROOT / "docs" / "audit" / "data"
     obligations = json.loads((data / "derivation_obligations.json").read_text(encoding="utf-8"))
     tier = json.loads((data / "premise_decision_history.json").read_text(encoding="utf-8"))
-    ids = set(obligations.get("canonical_ids") or [])
+    ids = {
+        cid for cid in obligations.get("canonical_ids") or []
+        if cid.startswith("ac_")
+    }
     expected = {
         "ac_orbit_occupancy_statistical_grain_derivation_obligation",
         "ac_reta_hclass_hunit_readout_derivation_obligation",

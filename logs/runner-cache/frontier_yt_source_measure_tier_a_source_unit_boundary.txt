@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_source_measure_tier_a_source_unit_boundary.py
-runner_sha256: 00ee82dc39e56c5e31df995cbb6204655e3a55b4e20b45ccf84a5100d82ab827
+runner_sha256: 021ab39da6fb6bf5cef32806380aafedc268397e2d5467d71cedbf08a779b325
 timeout_sec: 120
 exit_code: 1
-elapsed_sec: 0.55
+elapsed_sec: 0.45
 status: nonzero_exit
 ----- stdout -----
 ========================================================================================
@@ -35,9 +35,9 @@ Part 1: documents and source boundary
 [PASS] package keeps audit status authority independent
 [PASS] package does not claim a unilateral status change
 [PASS] package avoids retained-status promotion language
-[PASS] Tier-A YT note says answer is yes on accepted bounded surface
-[PASS] Tier-A YT note closes lambda=1
-[PASS] Tier-A YT note does not claim unbounded closure
+[PASS] YT note states the calculation is conditional
+[PASS] YT note computes lambda=1 under that hypothesis
+[PASS] YT note does not claim premise closure
 [PASS] P-cal synthesis names narrow source-measure bridge
 [PASS] log boundary keeps finite-record-alone route pruned
 
@@ -63,8 +63,8 @@ Part 2: ledger status boundary
 [PASS] sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26 is not silently promoted: {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
 [PASS] standard_model_hypercharge_uniqueness_theorem_note_2026-04-24 is present
 [PASS] standard_model_hypercharge_uniqueness_theorem_note_2026-04-24 is not silently promoted: {'effective_status': 'unaudited', 'audit_status': 'unaudited'}
-[FAIL] Tier-A registry contains P1/P-cal parent
-[FAIL] Tier-A registry treats derivation targets as bounded-tier
+[PASS] decision history contains no live P1 premise
+[PASS] decision history is non-authoritative
 
 Part 3: source-side algebra
 [PASS] democratic six-component top source is unit: 1
@@ -92,7 +92,7 @@ Part 4: firewalls and overclaim checks
 [PASS] forbidden overclaim absent: old Ward chain is repaired
 
 ========================================================================================
-SUMMARY: PASS=64 FAIL=9
+SUMMARY: PASS=66 FAIL=7
 Wrote outputs/yt_source_measure_tier_a_source_unit_boundary_2026-05-30.json
 
 ----- stderr -----

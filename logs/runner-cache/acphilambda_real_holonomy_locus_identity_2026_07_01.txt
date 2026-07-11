@@ -3,7 +3,7 @@ runner: scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py
 runner_sha256: acf9265efbdc41b66083aa3296023086ca0e021ba029802338b72fb174e73794
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.56
+elapsed_sec: 0.46
 status: ok
 ----- stdout -----
 AC_phi_lambda real-holonomy locus identity runner

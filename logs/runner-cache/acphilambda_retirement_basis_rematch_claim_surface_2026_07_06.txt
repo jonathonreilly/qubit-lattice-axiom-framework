@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_retirement_basis_rematch_claim_surface_2026_07_06.py
-runner_sha256: 8504964d8f73697171ecb817f1bd27ba3de1ea07a2c3f71ec80b2ade94218d65
+runner_sha256: eb0b53fe08730aba473cf5c529d1b58f40bc3c6861c110fe7669cf81fb121282
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 [PASS] exact two AC obligations

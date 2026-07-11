@@ -1,5 +1,10 @@
 # Observable Principle — On Its Consumed Sector, P2 Is Eliminated and the Parent Is Bounded by AC_φλ Alone (Narrow Theorem Note)
 
+**Current authority (2026-07-11):** this note supplies no admitted premise.
+Older registry language below is historical provenance. The determinant
+identification remains an open gate, so the displayed algebra is conditional
+and cannot propagate retained status through `AC_phi_lambda`.
+
 **Date:** 2026-06-05
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
@@ -29,8 +34,8 @@ every candidate generator `a·log|Z| + b·arg Z` collapses to `a·log Z` regardl
 `W = log|det(D + jI)|` is fixed by **Record additivity + finite-block continuity
 alone** (the Cauchy classifier on `R_{>0}`). The parent's load-bearing residual is
 therefore the `(M)`/Berezin determinant identification gated by the **registered**
-`AC_φλ` Tier-A target — not a separate unregistered P2 premise. This makes the
-parent a re-audit candidate for the registered Tier-A-bounded class. This note
+open `AC_φλ` target — not a separate P2 premise. This makes the
+parent a re-audit candidate only after that gate closes. This note
 does not set status and does not close `AC_φλ`.
 
 ## 1. The claim
@@ -60,7 +65,7 @@ does not set status and does not close `AC_φλ`.
 >   identification that the physical readout **is** the determinant amplitude
 >   `Z = det(D + J)` — grounded in the Berezin forcing bridge and gated by the
 >   `AC_φλ` staggered-Dirac realization gate. The parent's load-bearing content is
->   thus bounded by `AC_φλ` (a registered Tier-A derivation target) plus Record and
+>   thus conditional on the open `AC_φλ` gate plus Record and
 >   the retained positivity/Berezin facts — **no separate, unregistered P2
 >   premise.**
 
@@ -149,8 +154,8 @@ integral —
 (retained-grade) — and the physical "the readout *is* this determinant"
 identification is gated by the staggered-Dirac realization gate
 [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-(`AC_φλ`), the **registered** Tier-A derivation target
-`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`.
+(`AC_φλ`), currently an open dependency; the historical index
+`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` supplies no premise.
 
 So the bound assembles as:
 
@@ -159,7 +164,7 @@ So the bound assembles as:
 | P1 — finite scalar additivity | Record axiom ([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)) | axiom |
 | P2 — phase-blindness | **eliminated** by positivity (§3–§4); no admission | theorem (positivity) |
 | `(M)` — amplitude is `det(D+J)` | Berezin forcing bridge | retained-grade |
-| physical determinant identification | `AC_φλ` realization gate | registered Tier-A target |
+| physical determinant identification | `AC_φλ` realization gate | open gate |
 | continuity | finite-block analyticity of `j ↦ det(D+jI)` | regularity |
 
 There is **no separate, unregistered P2 premise** in the parent's load-bearing
@@ -178,11 +183,11 @@ Both legs are now satisfied on the load-bearing sector: additivity is the Record
 axiom, and CPT-even phase-blindness is a **consequence** of determinant positivity
 (eliminated, not admitted). With P1 axiomatic and P2 eliminated, the parent's
 load-bearing content is a clean row whose only derivation-target dependency is the
-registered `AC_φλ`. The re-audit case is:
+open `AC_φλ`. The re-audit case is:
 
-> `observable_principle_from_axiom_note` is a candidate for the registered
-> Tier-A-bounded class because the unregistered P2 blocker is eliminated on the
-> consumed sector; final status remains audit-lane authority.
+> `observable_principle_from_axiom_note` remains conditional because P2 is
+> eliminated on the consumed sector but the `AC_φλ` gate remains open; final
+> status remains audit-lane authority.
 
 This is a re-audit **case**, not a status assignment; the audit lane is the only
 authority. The same re-evaluation applies to the parent's P2-blocked siblings in
@@ -196,8 +201,8 @@ the observable-principle subtree.
   load-bearing for the parent's identities.
 - It does **not** close `AC_φλ`. The bound routes **into** the registered gate; it
   does not remove it.
-- It does **not** reduce or increase the Tier-A admission count. The genuine
-  admissions remain `AC_φλ` and `θ`.
+- It does **not** create any premise. `AC_φλ` and the relevant theta bridges are
+  open dependencies.
 - It does **not** retag the parent or any cited row, and it does not promote the
   Berezin, positivity, gate, or Record sources.
 - It claims no new mechanism: positivity and the Cauchy classifier are standard;
@@ -285,8 +290,7 @@ positivity, not imported.
   [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md).
 - The `AC_φλ` realization gate (the sole residual):
   [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md).
-- The canonical admitted-input registry (admission count unchanged; `AC_φλ`
-  registered):
+- The historical admitted-input index (provenance only):
   `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`.
 
 **External mathematics (cited as comparator, reproven in the runner):**

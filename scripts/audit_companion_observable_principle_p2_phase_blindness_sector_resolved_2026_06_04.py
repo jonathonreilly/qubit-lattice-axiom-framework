@@ -291,12 +291,13 @@ print("\n=== Part E: residual analysis -- P2 routes into the (M)/AC_phi_lambda "
 # P2 itself is therefore neither an independent theorem nor a hidden
 # third admission.
 repo_root = Path(__file__).resolve().parents[1]
-tier_a_path = repo_root / "docs/audit/data/premise_decision_history.json"
-tier_a = json.loads(tier_a_path.read_text())
-labels = {v["label"] for v in tier_a["derivation_targets"].values()}
-tier_a_registry_ok = (
-    tier_a["genuine_admitted_input_count"] == 2
-    and labels == {"AC_phi_lambda", "theta"}
+history_path = repo_root / "docs/audit/data/premise_decision_history.json"
+history = json.loads(history_path.read_text())
+obligations = json.loads((repo_root / "docs/audit/data/derivation_obligations.json").read_text())
+open_gate_ok = (
+    history["genuine_admitted_input_count"] == 0
+    and history["derivation_targets"] == {}
+    and obligations["nodes"]["ac_orbit_occupancy_statistical_grain_derivation_obligation"]["status"] == "open_gate"
 )
 residual_files_ok = all(
     (repo_root / rel).exists()
@@ -313,13 +314,13 @@ det_poly = sp.expand(poly_D.det())
 finite_block_continuity_ok = sp.Poly(det_poly, j).is_univariate
 minimal_axioms_text = (repo_root / "docs/MINIMAL_AXIOMS_2026-06-04.md").read_text()
 record_boundary_ok = "P2/modulus/phase-blindness" in minimal_axioms_text
-residual_ok = sector_resolution_ok and residual_files_ok and tier_a_registry_ok
+residual_ok = sector_resolution_ok and residual_files_ok and open_gate_ok
 check("residual is (M)/Berezin det-identification (AC_phi_lambda-gated), NOT P2 itself",
       residual_ok,
       "P2 has no separate residual beyond AC_phi_lambda plus named regularity hypotheses")
-check("admission count unchanged: genuine Tier-A admissions stay {AC_phi_lambda, theta}",
-      tier_a_registry_ok,
-      "no new admission introduced; Record supplies additivity only")
+check("no admission authority exists; the AC occupancy dependency remains an open gate",
+      open_gate_ok,
+      "Record supplies additivity only; the open gate supplies no premise")
 check("continuity attributed to finite-block analyticity of j->det(D+jI), NOT to Record",
       finite_block_continuity_ok and record_boundary_ok,
       f"det polynomial={det_poly}; Record boundary states no P2 import")

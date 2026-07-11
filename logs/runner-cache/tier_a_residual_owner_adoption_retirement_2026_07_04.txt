@@ -3,7 +3,7 @@ runner: scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py
 runner_sha256: 5ada691c3c0032dbc5c030d547c6f8f266d406c9865a628ffd451abb84735783
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 [PASS] admission registry is absent

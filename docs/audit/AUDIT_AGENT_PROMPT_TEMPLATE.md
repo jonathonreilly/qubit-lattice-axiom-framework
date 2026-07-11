@@ -415,14 +415,14 @@ Use `null` only when the gate is not required. Otherwise replace it with:
     "scan_scope": "<axiom, approved-primitive, open-obligation, convention, definition, and scope surfaces checked>",
     "premise_classes_checked": [
       "axiom_or_approved_primitive",
-      "open_derivation_obligation",
+      "open_gate",
       "convention_not_accepted",
       "definition_or_scope_reframe"
     ],
     "candidates": [
       {
         "candidate_id": "<candidate_id from the orchestrator partial-closure index>",
-        "kind": "<approved_primitive | derivation_obligation | convention_reframe | definition_refactor>",
+        "kind": "<approved_primitive | open_gate | convention_reframe | definition_refactor>",
         "could_close_wall": false,
         "addressed": true,
         "disposition": "<why the candidate does or does not close the scoped wall>",

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py
-runner_sha256: eec7f65d8539db2378f4de62a83812e972c9dd76326146075c33eac47fc02c3a
+runner_sha256: 124a7fb32f53591c4a8ed8071c7362daadb7f84c6c71eed7996f715c8a881281
 timeout_sec: 120
 exit_code: 1
-elapsed_sec: 1.37
+elapsed_sec: 1.02
 status: nonzero_exit
 ----- stdout -----
 theta gauge winding axiom-update no-go verifier
@@ -25,8 +25,8 @@ A. source presence and retained target
 [PASS] exists: docs/THETA_EMERGENT_Q_WEIGHTING_REALITY_RG_STABLE_BOUNDED_THEOREM_NOTE_2026-06-13.md
 [PASS] exists: docs/STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_IS_ADMISSIBLE_NOT_CLEAN_CLOSEABLE_BOUNDED_NOTE_2026-06-07.md
 [PASS] exists: docs/STRONG_CP_THETA_BAR_STRUCTURED_ADMISSION_2026-06-04.md
-[FAIL] theta parent row is retained-grade :: unaudited
-[FAIL] theta parent row is audited_clean :: unaudited
+[PASS] theta parent row is retained-grade
+[PASS] theta parent row is audited_clean
 
 ========================================================================================
 B. admission-era decision history boundary
@@ -180,7 +180,7 @@ H. note discipline
 [PASS] note carries boundary phrase: No full gauge-measure/action premise is derived.
 [PASS] note carries boundary phrase: No continuum/scaling-limit sector functional `Q`
 [PASS] note carries boundary phrase: No branch/section choice or topological-sector r
-[PASS] note carries boundary phrase: derive the action/Q/readout bridge or keep theta
+[PASS] note carries boundary phrase: derive the action, integer-Q, branch-readout, an
 [PASS] forbidden phrase absent: Theta is retired
 [PASS] forbidden phrase absent: theta_bar = 0 is derived
 [PASS] forbidden phrase absent: audited_clean
@@ -202,7 +202,7 @@ I. markdown dependency and context control
 [PASS] verification block states fail-zero threshold
 
 ========================================================================================
-TOTAL: PASS=152 FAIL=5
+TOTAL: PASS=154 FAIL=3
 ========================================================================================
 
 ----- stderr -----

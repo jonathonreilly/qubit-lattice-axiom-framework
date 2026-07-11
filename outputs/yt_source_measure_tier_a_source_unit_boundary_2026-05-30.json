@@ -76,13 +76,13 @@
       "lambda=1",
       "y_33=1/sqrt(6)"
     ],
-    "fail": 9,
+    "fail": 7,
     "not_closed_unbounded": [
       "P-cal/P1 derivation or native RN/Fisher source-measure acceptance",
       "strict same-source top/W pole-response evidence",
       "physical-scale g_2 and matching/running"
     ],
-    "pass": 64,
+    "pass": 66,
     "source_boundary": "Tier-A source-measure surface only",
     "status_authority": "independent audit lane only",
     "tier_a_input": "P-cal/source-measure primitive normalized RN/Fisher coordinate"

@@ -3,7 +3,7 @@ runner: scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py
 runner_sha256: 9a399483e7d34234ac115b252e5eef27fb4f5242afc5963889390d3b5a50a84c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.25
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ==============================================================================

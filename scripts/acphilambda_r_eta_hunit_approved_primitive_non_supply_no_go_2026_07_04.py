@@ -125,7 +125,7 @@ def main() -> int:
     check("note declares Type no_go", "**Type:** no_go" in note)
     check("note declares Claim type no_go", "**Claim type:** no_go" in note)
     check("note declares independent audit boundary", "independent audit lane only" in note)
-    check("note says R-eta is not retired", "R-eta is not derived, refuted, re-graded, or removed from Tier-A" in note)
+    check("note says R-eta remains open", "R-eta is not derived or refuted; its open gate remains" in note)
     check("note says AC_phi_lambda is not retired", "AC_phi_lambda is not retired." in note)
     check("note says no registry/axiom/primitive edit", "No registry, axiom, primitive, audit verdict, publication surface" in note)
     for forbidden in [

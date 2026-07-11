@@ -1,5 +1,8 @@
 # Koide Full-Lattice Schur-Inheritance Note
 
+**Current authority (2026-07-11):** legacy Tier-A routing below is historical
+provenance only; it cannot satisfy any dependency.
+
 **Date:** 2026-04-18
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
 **Admitted context inputs:** staggered-Dirac realization derivation target (canonical parent: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`).

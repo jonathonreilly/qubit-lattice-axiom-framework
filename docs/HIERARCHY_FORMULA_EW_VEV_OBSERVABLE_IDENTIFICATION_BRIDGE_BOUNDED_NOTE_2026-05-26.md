@@ -1,5 +1,9 @@
 # Hierarchy Formula EW Higgs VEV Bounded Observable-Identification Bridge
 
+**Current authority (2026-07-11):** legacy admission routing below is
+historical provenance only. The observable-identification bridge remains open
+and supplies no premise.
+
 **Date:** 2026-05-26
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does

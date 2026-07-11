@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.py
-runner_sha256: 4dd23d94fa53e4bf9a2a10c1d2fdbe7de6711044735c0bba4dd3c4edf67a3647
+runner_sha256: 74b217c54040f71e905408b94613e01893580e16a714a740e2dfda495a5b7233
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.50
+elapsed_sec: 1.37
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta h-unit approved-primitive non-supply no-go verifier
@@ -33,7 +33,7 @@ A. source presence and Tier-A boundary
 [PASS] note declares Type no_go
 [PASS] note declares Claim type no_go
 [PASS] note declares independent audit boundary
-[PASS] note says R-eta is not retired
+[PASS] note says R-eta remains open
 [PASS] note says AC_phi_lambda is not retired
 [PASS] note says no registry/axiom/primitive edit
 [PASS] forbidden overclaim absent: R-eta is retired

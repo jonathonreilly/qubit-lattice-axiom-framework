@@ -269,7 +269,7 @@ def main() -> int:
         check(f"minimal axioms withhold: {phrase[:50]}", phrase in source_flat[MINIMAL])
     for phrase in [
         "does not supply the theta gauge-side winding",
-        "physical topological-sector/gauge-action bridge",
+        "gauge action, Q-sector, branch/section, and weighting structure",
         "No admission registry is created.",
         "Theta is not retired.",
     ]:

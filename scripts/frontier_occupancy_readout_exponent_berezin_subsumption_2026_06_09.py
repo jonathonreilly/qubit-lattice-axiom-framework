@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Occupancy exponent subsumption: the factor 2 is a determinant EXPONENT,
 not a measure. In the fermionic realization, the cell is fixed only after the
-existing staggered Tier-A gate supplies the polarization.
+open matter-realization gate supplies the polarization.
 
 Route 1 of the wall-breaking exercise (three slices converged independently).
 The chain, every link checked below:
@@ -18,14 +18,14 @@ The chain, every link checked below:
       Majorana pairs give the Pfaffian with Pf^2 = det_R. NO measure freedom
       exists anywhere in the fermionic realization.
   B4  THE SUBSUMPTION: which Berezin cell applies is decided by the
-      POLARIZATION of the matter realization, conditional on the EXISTING
-      staggered Tier-A gate (mechanically verified present in
-      premise_decision_history.json). Complex/Dirac realization -> det_C -> r = 1/2
+      POLARIZATION of the matter realization, conditional on the open
+      occupancy gate (mechanically verified in derivation_obligations.json).
+      Complex/Dirac realization -> det_C -> r = 1/2
       (Q = 2/3); K-fixed/Majorana -> Pf/det_R -> r = 1 (Q = 1). Cell map
       cross-checked verbatim against the landed fork table (#3138 guard).
       => the occupancy exponent has no separate admission in this route: it is
-      CONDITIONAL under {existing gate, K/CPT covariance}. MAXENT-R is not
-      consumed. No additional Tier-A node is introduced here.
+      CONDITIONAL under {open gate, K/CPT covariance}. MAXENT-R is not
+      consumed. No additional premise is introduced here.
   B5  KRAUS CLOSURE of D1's classical-only gap: for ARBITRARY K-covariant
       quantum channels (random Kraus sets, symmetrized) and ALL K-invariant
       effects, the registrable statistics of e1 and e2 are identical to
@@ -45,7 +45,7 @@ The chain, every link checked below:
       predicts factor 4 -- a registered falsifier nobody chose. Jones-index
       sqrt(2) is a named negative (matches neither cell; excluded by the
       2.2e-5 admixture bound).
-  B9  NET: no additional Tier-A node; #3400 independence INTACT (it governs
+  B9  NET: no additional premise; #3400 independence INTACT (it governs
       the unconditional surface; this is a conditional subsumption, not an
       unconditional derivation).
 
@@ -207,7 +207,7 @@ def main():
           sp.simplify(pf - p) == 0 and sp.simplify(pf ** 2 - Mmaj.det()) == 0)
 
     # ------------------------------------------------------------------ B4
-    section("B4: THE SUBSUMPTION -- polarization from the EXISTING gate decides the cell")
+    section("B4: THE SUBSUMPTION -- an open polarization condition decides the cell")
     landed_table = {
         "real_gaussian": (sp.Integer(1), sp.Integer(1)),
         "majorana_berezin": (sp.Integer(1), sp.Integer(1)),
@@ -222,14 +222,14 @@ def main():
           "real cells (r=1, Q=1)  (the #3138 guard)",
           cell_from_exponent[1] == landed_table["holo_berezin"]
           and cell_from_exponent[2] == landed_table["majorana_berezin"])
-    reg_path = os.path.join(os.path.dirname(__file__), "..", "docs", "audit", "data", "premise_decision_history.json")
-    reg = json.load(open(reg_path))
-    gate_present = "staggered_dirac_realization_gate_note_2026-05-03" in reg.get("canonical_ids", [])
-    check("the polarization supplier is the EXISTING registered Tier-A gate "
-          "(staggered_dirac_realization_gate, historically recorded in premise_decision_history.json) "
-          "=> the occupancy exponent is CONDITIONAL under {existing gate, K/CPT "
-          "covariance}; MAXENT-R is not consumed; no additional Tier-A node is introduced",
-          gate_present, detail=f"canonical_ids contains the gate: {gate_present}")
+    obligation_path = os.path.join(os.path.dirname(__file__), "..", "docs", "audit", "data", "derivation_obligations.json")
+    obligations = json.load(open(obligation_path))
+    gate = obligations.get("nodes", {}).get("ac_orbit_occupancy_statistical_grain_derivation_obligation", {})
+    check("the matter-realization polarization and occupancy grain remain an open, non-premise gate; "
+          "the exponent algebra is CONDITIONAL under {open gate, K/CPT covariance}; "
+          "MAXENT-R is not consumed and no premise is introduced",
+          gate.get("status") == "open_gate",
+          detail=f"occupancy gate status: {gate.get('status')}")
 
     # ------------------------------------------------------------------ B5
     section("B5: Kraus closure of D1's classical-only gap (general quantum channels)")
@@ -315,8 +315,8 @@ def main():
     # ------------------------------------------------------------------ B9
     section("B9: net")
     net = {
-        "No additional Tier-A node: the occupancy exponent is conditional under "
-        "{staggered gate (existing Tier-A), K/CPT-covariant registration}; "
+        "No additional premise: the occupancy exponent is conditional under "
+        "{open matter-realization gate, K/CPT-covariant registration}; "
         "MAXENT-R is not consumed; Jaynes-vs-Liouville is moot in the Berezin "
         "realization because the functional has no measure freedom": True,
         "#3400 independence INTACT: it governs the UNCONDITIONAL surface; this subsumption "
@@ -325,7 +325,7 @@ def main():
         "gate closure contradicting the complex-mode realization; (iii) the earlier "
         "neutrino kill conditions where independently relevant": True,
         "what was NOT shown: an unconditional derivation (impossible); any change to the "
-        "gate's own Tier-A status; any audit status": True,
+        "promotion of the open gate to a premise; any audit status": True,
     }
     for k, v in net.items():
         check(k, v)

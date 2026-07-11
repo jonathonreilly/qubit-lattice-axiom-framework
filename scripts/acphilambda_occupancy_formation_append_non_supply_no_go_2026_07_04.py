@@ -156,12 +156,12 @@ def main() -> int:
     check(
         "occupancy obligation is explicitly open and non-premise",
         obligations["nodes"]["ac_orbit_occupancy_statistical_grain_derivation_obligation"]["status"]
-        == "open_non_premise",
+        == "open_gate",
     )
     check(
         "R-eta obligation is explicitly open and non-premise",
         obligations["nodes"]["ac_reta_hclass_hunit_readout_derivation_obligation"]["status"]
-        == "open_non_premise",
+        == "open_gate",
     )
     check(
         "obligations are separate from the supplied foundation",

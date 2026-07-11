@@ -1,4 +1,7 @@
 # PMNS Twisted Flux Transfer Holonomy Boundary
+
+**Current authority (2026-07-11):** legacy Tier-A routing below is historical
+provenance only and supplies no premise.
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem;
 Tier-A routing made explicit 2026-06-11 — see "Registered Tier-A routing")
 **Admitted context inputs:** staggered-Dirac realization derivation target

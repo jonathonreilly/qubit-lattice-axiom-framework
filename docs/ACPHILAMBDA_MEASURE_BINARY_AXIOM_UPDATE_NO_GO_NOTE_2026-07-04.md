@@ -16,8 +16,9 @@ primitive, audit verdict, or publication-status surface.
 ## Target
 
 The 2026-07-04 hygiene pass already moved the per-lane value face of AC(i) to
-realized-state registration. The current Tier-A registry leaves a sharper
-survivor:
+realized-state registration. The historical decision record identifies a
+sharper unresolved target, now carried only by the occupancy derivation
+obligation:
 
 ```text
 the doublet reading/occupancy selection binary:
@@ -41,9 +42,9 @@ that survivor. They do not.
 - [`FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md`](FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md)
   is the retained-bounded carrier-measure boundary theorem: Record supplies
   finite additive readout coordinates, but not the missing weight selector.
-- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
-  is the human Tier-A registry naming the live doublet reading/occupancy
-  binary.
+- `docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`
+  states the current open occupancy gate; the historical admitted-input note
+  is provenance only.
 
 Context only, not dependency links: the June/July AC(i) notes already separate
 the value face from the measure-side realization frontier. The runner rechecks
@@ -159,8 +160,8 @@ which grain/statistics the matter action implements. No new wall is added.
 no fitted value, no Born rule, no event law, no determinant-order selector, no
 new primitive, and no registry edit.
 
-**N4 residual matching.** The result matches the Tier-A registry after the
-value-face reclassification: per-lane `r` values can be registered state data,
+**N4 residual matching.** The result matches the occupancy `open_gate` after
+the value-face reclassification: per-lane `r` values can be registered state data,
 while the doublet reading/occupancy selection binary remains open.
 
 **N5 proven surface.** Proven here is an axiom/primitives non-supply result,
@@ -169,7 +170,7 @@ no-go against future matter-action or readout-partition theorems.
 
 **N6 partial closure.** The block removes one hygiene ambiguity: the updated
 axioms do not retire AC(i)'s surviving binary. The target is now sharper:
-derive the measure rule or keep AC(i) admitted.
+derive the measure rule; until then the occupancy gate stays open.
 
 **N7 steelman.** A reviewer can say generator-channel Hilbert-Schmidt scoring
 is the most natural carrier-measure rule. Correct: this note does not dispute

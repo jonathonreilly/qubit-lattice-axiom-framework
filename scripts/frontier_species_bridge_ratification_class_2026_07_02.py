@@ -164,8 +164,8 @@ AX_LATTICE = (
     "structure alone."
 )
 AX_QUALIF = (
-    "Further physical structure requires derivation, bridge, explicit "
-    "admission, or approved primitive registration before use as a premise"
+    "Further physical structure requires a retained derivation or bridge, or "
+    "explicit approved- primitive registration, before use as a premise"
 )
 AX_OUTSIDE = "remain outside axiom content"
 AX_OPENGATE = "staggered-Dirac/finite-Grassmann realization and"

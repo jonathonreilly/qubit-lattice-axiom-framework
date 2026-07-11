@@ -1,5 +1,10 @@
 # AC_phi_lambda Sub-Admission (iii): Species-Bridge Decomposition Under the Realized-State Primitive
 
+**Current authority (2026-07-11):** all registry/admission language below is a
+historical snapshot. The realized-state primitive is accepted, but it does not
+turn the physical-species bridge into premise content. That bridge remains an
+open conditional dependency.
+
 **Date:** 2026-06-11
 **Type:** bounded_theorem (decomposition / relocation)
 **Claim type:** bounded_theorem
@@ -22,9 +27,9 @@ change.
 
 ## Statement
 
-The Tier-A registry
+The historical admitted-input index
 (`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`,
-`meta`) carries AC_phi_lambda sub-admission **(iii)**: the abstract-sector ->
+`meta`) recorded AC_phi_lambda item **(iii)**: the abstract-sector ->
 physical-species **bridge**, described there as "an interpretive bridge, akin
 to the abstract-su(3) -> physical-color gap," with the R1b anchor sentence
 (owner review record on PR #3428): *"the hw=1 triplet is the physical
@@ -80,8 +85,7 @@ empirical-anchor step (matching the registered pattern to measured values,
 is **(iii)-partially-each**: part dissolves into the supplied-context premise,
 and the surviving genuinely-additional content is exactly the already-named
 chirality gate plus the standing readout-context input plus the external
-empirical anchor. **No admitted content beyond named, already-tracked items
-survives in sub-admission (iii) on this surface.**
+empirical anchor. **No premise content is supplied by this decomposition.**
 
 ## Why the realized-state primitive moves the generation case and not the color case
 
@@ -194,11 +198,9 @@ family `M(a,B,delta) = aI + bJ + conj(b)J^2`, `b = B e^{i delta}`, with
 
 ## Boundary
 
-- This note does **not** edit the Tier-A registry, retire or re-grade any
-  admission, change the admission count, unbound any consumer, or move
-  AC_phi_lambda or any sub-admission to another class. Any registry
-  consequence of this decomposition is named here as **available to a future
-  gated owner-approved lane**, after independent audit of this note.
+- This note does **not** change premise authority or unbind any consumer. Any
+  scientific consequence requires a future retained derivation and independent
+  audit.
 - It does **not** derive the carrier locus, the readout context, the K-reality
   predicate, a record-formation dynamics (G4), the value of `r`, the value of
   `delta`, or any species mass; it does **not** select `r=1/2` (dial

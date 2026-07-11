@@ -1,7 +1,7 @@
 ---
 claim_id: species_bridge_residual_is_ratification_class_grade_scoped_bounded_note_2026-07-02
 claim_type: bounded_theorem
-claim_scope: "Bounded-support exhibit: AC_phi_lambda(iii) matches the C3 ratification-class Does-NOT profile but fails that class's positive landed-surfaces condition; path-extension and any grade-scoped ratification remain owner decisions, and nothing is adopted, ratified, retired, or proposed into the Tier-A registry."
+claim_scope: "Historical governance exhibit plus conditional species-bridge decomposition. It supplies no premise; the physical-species bridge remains open."
 upstream_dependencies:
   - species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13
   - c3_generation_readout_context_canonical_definition_note_2026-07-02
@@ -11,18 +11,19 @@ runner: scripts/frontier_species_bridge_ratification_class_2026_07_02.py
 
 # The AC_phi_lambda(iii) Species-Bridge Residual Matches the Ratification Class's Does-NOT Profile but Fails Its Positive Landed-Surfaces Condition; Path-Extension Is the Owner Question (Bounded Theorem: Profile Exhibit + Two-Part Governance Map)
 
+**Current authority (2026-07-11):** this is a historical owner-review exhibit,
+not a live premise or adoption surface. Every reference below to a registry,
+admission, ratification, owner decision, or class describes the superseded
+proposal context. Current science retains only the conditional decomposition;
+the species bridge remains an open dependency and supplies no premise.
+
 **Date:** 2026-07-02
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Audit-status authority:** independent audit lane only. This note sets no audit
-status and predicts no audit outcome. Whether to ratify AC_phi_lambda(iii) is a
-Tier-A registry decision -- an owner surface -- and this note exhibits only the
-Does-NOT profile match and the positive-condition failure; it makes no owner
-call.
-**Actual current surface status:** the Tier-A registry carries AC_phi_lambda in
-its landed minimum form; sub-admission (iii) already stands in the weakest form
-the parent note established (the 2026-06-13 decomposition). Nothing on that
-surface changes here. AC_phi_lambda does not retire.
+status and predicts no audit outcome. Its former ratification proposal is
+historical only.
+**Actual current surface status:** the species bridge is open and non-premise.
 **Primary runner:**
 [`scripts/frontier_species_bridge_ratification_class_2026_07_02.py`](../scripts/frontier_species_bridge_ratification_class_2026_07_02.py)
 **Cached runner output:**
@@ -31,8 +32,7 @@ surface changes here. AC_phi_lambda does not retire.
 
 ## Firewall
 
-- **Nothing adopted, nothing ratified, nothing proposed *into* the registry.**
-  No Tier-A registry content is touched or proposed into the registry here.
+- **Nothing adopted, ratified, or supplied as premise.**
 - The ratification question is an **owner decision**, recorded below for the
   owner review list. This note only *exhibits* that the residual matches the
   import-retirement class's **Does-NOT (negative) profile** completely and

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py
-runner_sha256: 3e55912bae99adb29e75ecaabba4252e6cc47f14f371afe9843ba4eb8d53be37
+runner_sha256: 7b083186fe3bbcdd3718aaff51bede5427801d870f132946f6fcaae7d2646947
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.59
+elapsed_sec: 0.53
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta h-class first-principles stretch no-go verifier
@@ -26,7 +26,7 @@ A. source presence and Tier-A boundary
 [PASS] note declares Type no_go
 [PASS] note declares Claim type no_go
 [PASS] note declares independent audit boundary
-[PASS] note says R-eta is not retired
+[PASS] note says R-eta remains open
 [PASS] note says AC_phi_lambda is not retired
 [PASS] note says no registry/axiom/primitive edit
 [PASS] forbidden overclaim absent: R-eta is retired
@@ -142,10 +142,10 @@ F. route accounting and audit row
 [PASS] new row claim_type is no_go
 [PASS] new row audit status remains unaudited
 [PASS] new row effective status remains unaudited
-[PASS] new row has no unaudited sibling dependencies
+[PASS] new row uses only the current foundation, support, and open gate
 [PASS] new row dependency includes minimal_axioms
-[PASS] new row dependency includes admitted_input_registry_tier_a_note_2026-05-23
 [PASS] new row dependency includes koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05
+[PASS] new row dependency includes ac_reta_hclass_hunit_readout_derivation_obligation
 
 TOTAL: PASS=115 FAIL=0 CHECKS=115
 

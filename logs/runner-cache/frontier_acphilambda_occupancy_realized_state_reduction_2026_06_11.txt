@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py
-runner_sha256: 33037535cb2cf199cbd987cf1e94cca398b4b8c26bd8087a749681a8163e3c38
+runner_sha256: 4323ca79bdd9fa13374f738ec4dc00e2e9963185ce9c78a72f312212ea4f2482
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
 PASS: S1.1 C^3 = I and eigenvalues of C are {1, w, w^2}
@@ -25,11 +25,11 @@ PASS: S5.1 FIREWALL: the admissible family spans all distinguished dial settings
 PASS: S6.1 sharpening map r -> 2r^2: fixed points {0, 1/2}; r=1/2 UNSTABLE (|f'(1/2)| = 2 > 1), r=0 stable -- separatrix fact
 PASS: S6.2 2-sector entropy S(p), p = 1/(1+2r): maximized exactly at r=1/2 (p=1/2) -- the thermalizing-arrow attractor fact
 PASS: S6.3 dial geometry is sharp: fixed points of r->2r^2 on [0,inf) are exactly {0, 1/2}; the interior entropy maximum is unique (single sign change of dS/dr on the scanned dial)
-PASS: S7.1 live 06-29 Qualification clauses present verbatim (named primitive content only; non-fixed choices require admission; laws privilege no states and give one answer on their supplied domain)
+PASS: S7.1 live 06-29 Qualification clauses present verbatim (named primitive content only; non-fixed choices remain open; laws privilege no states and give one answer on their supplied domain)
 PASS: S7.1h historical 06-05 Record non-supply clause present as corroboration only (incl. 'weighting, normalization, probability' and 'occupancy rule')
 PASS: S7.2 realized-state primitive note clauses present: 'The laws do not pick the state', pointwise evaluation, no typical/generic, counterfactual test ('registered data, not derivation output')
 PASS: S7.3 primitive register item 4 already houses the G3 discipline: per-sector weight patterns registered, dial settings 'r = 0, 1/2, 1' named sector data, never forced
-PASS: S7.4 registries: realized_state_primitive in axiom_premise_nodes; AC_phi_lambda sub-admission (i) in tier_a_admissions minimum decomposition; the reclassified_primitives precedent block exists (Record retirement pattern)
+PASS: S7.4 authority: realized_state_primitive is accepted while the physical occupancy grain is an open gate with no premise weight
 PASS: S8.1 BOTH grain models (sector 2pi/g; orbit pi/g) satisfy every checked constraint -- the measure-side binary survives as a named derivation frontier; the reduction moves the VALUE face only (independence-by-exhibition reproduced)
 TOTAL: PASS=25 FAIL=0
 

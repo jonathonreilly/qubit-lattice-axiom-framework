@@ -1,5 +1,9 @@
 # The Retained Character Surface Carries Exactly One Finite Additive Sector-Record Context — the Center Z_N Grading — and No Z-Valued or (for SU(3)) Parity-Valued Refinement: the Theta Q-Context Wall Localizes onto the Multi-Plaquette / Large-Gauge-Winding Account (Bounded Theorem)
 
+**Current authority (2026-07-11):** the decision-history quotation below is
+historical provenance only and supplies no premise. The gauge-side scientific
+steps remain open unless retained derivations close them.
+
 **Date:** 2026-07-01
 **Claim type:** bounded_theorem
 **Scope:** positive finite construction plus an exact finite obstruction that
@@ -106,13 +110,13 @@ identification checkpoint below).
    > alone. For any finite collection of pairwise-disjoint records, scalar
    > readout `I` is additive, with `I(empty)=0`."
 
-   Per the axiom's non-supply clause and the Tier-A registry description,
+   Per the axiom's non-supply clause and the historical decision description,
    central-sector decompositions are downstream readout-context content: they
    must be **derived**, and this note derives one. Record contributes only the
    registration and additivity interface; no new admission is introduced.
 
-3. **Tier-A theta registry text**
-   ([`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json),
+3. **Historical theta decision text (non-authoritative)**
+   (`docs/audit/data/premise_decision_history.json`,
    gauge side, quoted exactly):
 
    > "(a) gauge side -- theta_gauge = 0 in the topological-sector weighting,

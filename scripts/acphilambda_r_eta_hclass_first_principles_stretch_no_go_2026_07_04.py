@@ -123,7 +123,7 @@ def main() -> int:
     check("note declares Type no_go", "**Type:** no_go" in note)
     check("note declares Claim type no_go", "**Claim type:** no_go" in note)
     check("note declares independent audit boundary", "independent audit lane only" in note)
-    check("note says R-eta is not retired", "R-eta is not derived, refuted, re-graded, or removed from Tier-A" in note)
+    check("note says R-eta remains open", "R-eta is not derived or refuted; its open gate remains" in note)
     check("note says AC_phi_lambda is not retired", "AC_phi_lambda is not retired." in note)
     check("note says no registry/axiom/primitive edit", "No registry, axiom, primitive, audit verdict" in note)
     for forbidden in [
@@ -271,14 +271,14 @@ def main() -> int:
         deps = new_row.get("deps") or []
         allowed_deps = {
             "minimal_axioms",
-            "admitted_input_registry_tier_a_note_2026-05-23",
             "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+            "ac_reta_hclass_hunit_readout_derivation_obligation",
         }
-        check("new row has no unaudited sibling dependencies", set(deps).issubset(allowed_deps), deps)
+        check("new row uses only the current foundation, support, and open gate", set(deps).issubset(allowed_deps), deps)
         for dep in [
             "minimal_axioms",
-            "admitted_input_registry_tier_a_note_2026-05-23",
             "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+            "ac_reta_hclass_hunit_readout_derivation_obligation",
         ]:
             check(f"new row dependency includes {dep}", dep in deps, deps)
 

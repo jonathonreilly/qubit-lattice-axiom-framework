@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py
-runner_sha256: 1f3d882a27ab236b4c3eccbc33b647f63050e1c3a73038b056d965cda74b2f5f
+runner_sha256: cfeec9133d8bccac03fa42fa31050eccc1206cb5ec9c869d7cd4b674c99686ac
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 
@@ -81,7 +81,7 @@ S8 - conditional value: |delta| = 2/9 EXACT conditional on the named atom
 [PASS] 2/9 NOT in {n pi/3}: the identification route is NOT a stationarity route (separation no-go boundary respected, not entered)  [n = []]
 [PASS] registered channel point cos(3 |delta|) = cos(2/3) EXACT
 [PASS] registered surface at the atom value is K-even: e_i(2/9) = e_i(-2/9) for i = 1,2,3 EXACT
-[PASS] NOT CLAIMED: 2/9 derived. The value is fixed-locus arithmetic CONDITIONAL on A_R-eta; A_R-eta itself remains admitted
+[PASS] NOT CLAIMED: 2/9 derived. The value is fixed-locus arithmetic CONDITIONAL on A_R-eta; A_R-eta itself remains open
 
 ========================================================================================
 S9 - boundary witnesses + r-firewall
@@ -91,7 +91,7 @@ S9 - boundary witnesses + r-firewall
 [PASS] BOUNDED: future non-det readout contexts that might supply another dimensionless conversion factor are NOT foreclosed (the k=0 forcing is the det-class surface only)
 [PASS] NOT addressed here: sub-admission (i) occupancy selection, sub-admission (iii) species bridge, the R1b anchor, the R2 global PL/ABSS bridge, the carrier gate realization
 [PASS] no Tier-A registry edit, no downstream status set, no admission retired; this is a source-side narrowing of WHAT sub-admission (ii) admits
-[PASS] 2026-06-13 boundary: conditional support only; A_R-eta remains admitted
+[PASS] 2026-06-13 boundary: conditional support only; A_R-eta remains open
 [PASS] 2026-07-05 dependency-status split: explicit FORMAL H(delta) theorem present (physical readout identification is conditional/open)
 [PASS] 2026-07-05 dependency-status split: the two named non-proof authorities are marked context-only at their current grades
 [PASS] 2026-07-05 dependency-status split: the K-orbit circulant form is wired as a one-hop markdown-link authority at its current retained-bounded grade

@@ -3,7 +3,7 @@ runner: scripts/scale_reference_primitive_boundary_check.py
 runner_sha256: 59e249429603f0f52a979e603e621d27d4a1e6622486835d2af426cd1a42bfc0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================

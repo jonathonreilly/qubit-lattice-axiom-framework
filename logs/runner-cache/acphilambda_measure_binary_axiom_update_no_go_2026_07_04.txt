@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py
-runner_sha256: 621f132d79f315aa8cfe3d19a65c71befcd74285dc5287cacfae89201706dfaa
+runner_sha256: b1c40eaf48acbd803ba038bef5c41ede507a350c6ef9cc2702311685499d2ab1
 timeout_sec: 120
 exit_code: 1
-elapsed_sec: 0.97
+elapsed_sec: 0.50
 status: nonzero_exit
 ----- stdout -----
 AC_phi_lambda measure binary axiom-update no-go verifier
@@ -24,7 +24,7 @@ A. source presence and audit anchors
 [FAIL] carrier-measure boundary row is audited_clean :: unaudited
 
 ========================================================================================
-B. Tier-A registry boundary
+B. historical decision boundary and current open gate
 ========================================================================================
 [PASS] Tier-A has no live admitted inputs
 [PASS] Tier-A live target map is empty
@@ -35,7 +35,7 @@ B. Tier-A registry boundary
 [PASS] machine registry states custody K-reality
 [PASS] machine registry states det_C/equal-power selectors
 [PASS] human registry points to the occupancy derivation obligation
-[PASS] note says registry is not edited
+[PASS] note routes the residual to the occupancy open gate
 [PASS] note says AC_phi_lambda is not retired
 
 ========================================================================================

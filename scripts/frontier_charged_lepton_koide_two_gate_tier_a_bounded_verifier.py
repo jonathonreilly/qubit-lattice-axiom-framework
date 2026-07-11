@@ -74,7 +74,7 @@ record(
 
 
 # ======================================================================
-# S2 + S3: Tier-A registry files + Gate-1 + Gate-2 no_go portfolios
+# S2 + S3: open-gate routing + Gate-1 + Gate-2 no_go portfolios
 # ======================================================================
 
 
@@ -107,18 +107,19 @@ def repo_root() -> str:
 
 ROOT = repo_root()
 
-TIER_A_AUTHORITIES = [
+CONTEXT_SURFACES = [
     "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
     "docs/audit/data/premise_decision_history.json",
+    "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
 ]
 
-for relpath in TIER_A_AUTHORITIES:
-    exists = file_exists_on_origin_main(ROOT, relpath)
+for relpath in CONTEXT_SURFACES:
+    exists = os.path.exists(os.path.join(ROOT, relpath))
     short = relpath.split("/")[-1][:50]
     record(
-        f"S2.{short}: Tier-A authority present on origin/main",
+        f"S2.{short}: context surface present",
         exists is True,
-        "registry classifies AC_phi_lambda as Tier-A admitted input",
+        "history is provenance only; current gate is open and non-premise",
     )
 
 GATE1_NO_GOS = [
@@ -263,16 +264,16 @@ record(
 
 # H1: does NOT derive r = 1/2 or Q = 2/3
 record(
-    "H1: does NOT derive r = 1/2 or Q = 2/3; Gate-1 explicit Tier-A AC_φλ admission",
+    "H1: does NOT derive r = 1/2 or Q = 2/3; Gate 1 is an explicit hypothesis",
     True,
-    "Tier-A registry classifies as AC_phi_lambda; no derivation attempted here",
+    "no derivation attempted here; the open gate remains",
 )
 
-# H2: does NOT promote Tier-A admission to retained
+# H2: does NOT promote an open hypothesis to retained
 record(
-    "H2: does NOT promote AC_φλ Tier-A admission to retained",
+    "H2: does NOT promote an AC_φλ hypothesis to retained",
     True,
-    "registry retains its current meta status; this note is downstream consumer only",
+    "historical decisions are provenance only; this note is conditional",
 )
 
 # H3: does NOT weaken any retained no_go
@@ -287,21 +288,21 @@ record(
 record(
     "H4: does NOT consume PDG values as load-bearing inputs",
     True,
-    "S1-S5 use only algebraic identities + retained authorities + Tier-A admission",
+    "S1-S5 use algebraic identities, retained authorities, and explicit hypotheses",
 )
 
 # H5: does NOT derive √2 BAE amplitude
 record(
     "H5: does NOT derive the √2 BAE amplitude; part of AC_φλ bundle",
     True,
-    "sqrt(2) accepted as part of AC_phi_lambda Tier-A admission per registry",
+    "sqrt(2) is an explicit open hypothesis",
 )
 
 # H6: does NOT derive overall scale a
 record(
     "H6: does NOT derive overall charged-lepton scale a",
     True,
-    "scale a is separate Tier-A S admission; not consumed here",
+    "scale a is outside this dimensionless conditional calculation",
 )
 
 # H7: does NOT make neutrino claim
@@ -315,7 +316,7 @@ record(
 record(
     "H8: does NOT propose new axiom or new theory-language extension",
     True,
-    "uses the baseline one-qubit/Z^3 substrate, retained Koide theorems, existing Tier-A registry, and chain-of-custody (sidecar) only",
+    "uses the baseline one-qubit/Z^3 substrate, retained Koide theorems, explicit hypotheses, and chain-of-custody sidecar",
 )
 
 # H9: does NOT modify the parent open_gate row
@@ -339,7 +340,7 @@ record(
 
 print("\n=== Charged-Lepton Koide Two-Gate Bounded Companion ===\n")
 print("Scope: bounded_theorem on Koide two-gate algebraic chain under EXPLICIT")
-print("       Tier-A AC_φλ admission of both gates (r=1/2 and delta=2/9). Does")
+print("       explicit open hypotheses for both gates (r=1/2 and delta=2/9). Does")
 print("       NOT derive r=1/2 or delta=2/9. Does NOT promote AC_φλ. Does NOT")
 print("       weaken any retained no_go. Companion to parent open_gate row +")
 print("       chain-of-custody (neither modified).\n")
@@ -347,7 +348,7 @@ for line in LOG:
     print(line)
 print(f"\nPASS={PASS}  FAIL={FAIL}\n")
 if FAIL == 0:
-    print("All bounded-companion checks PASSED under explicit existing-registry framing.")
+    print("All bounded-companion checks PASSED under explicit conditional framing.")
     print("Audit lane decides status; this runner proposes no effective status.")
 else:
     print(f"{FAIL} CHECK(S) FAILED.")

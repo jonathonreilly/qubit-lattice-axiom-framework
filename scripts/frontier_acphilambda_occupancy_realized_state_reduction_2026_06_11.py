@@ -27,7 +27,7 @@ tiny memory):
   S7  mechanical text checks: the current axiom memo's Qualification
       non-supply clauses, historical 06-05 corroboration, the
       realized-state primitive's clauses and register item,
-      the registry entries (incl. the reclassified_primitives precedent);
+      the axiom/primitive registry and current occupancy open gate;
   S8  residual map: BOTH grain models satisfy all checked constraints, so
       the measure-side binary survives as a derivation frontier (the
       reduction moves the value face only).
@@ -317,14 +317,14 @@ check("S6.3 dial geometry is sharp: fixed points of r->2r^2 on [0,inf) "
 axioms_txt = (REPO / "docs/MINIMAL_AXIOMS_2026-06-29.md").read_text()
 axioms_flat = " ".join(axioms_txt.split())
 q1 = ("These axioms state only their named primitive content. Further physical "
-      "structure requires derivation, bridge, explicit admission, or approved "
-      "primitive registration before use as a premise.")
-q2 = ("In particular, a law may not depend on a choice not fixed by the supplied "
-      "structure, unless that choice is admitted.")
+      "structure requires a retained derivation or bridge, or explicit approved- "
+      "primitive registration, before use as a premise.")
+q2 = ("A choice not fixed by the supplied structure remains a named conditional "
+      "or open dependency.")
 q3 = ("A law privileges no states. Its domain is a supplied condition, and at every "
       "state where the condition holds it gives exactly one answer.")
 check("S7.1 live 06-29 Qualification clauses present verbatim (named "
-      "primitive content only; non-fixed choices require admission; laws "
+      "primitive content only; non-fixed choices remain open; laws "
       "privilege no states and give one answer on their supplied domain)",
       q1 in axioms_flat and q2 in axioms_flat and q3 in axioms_flat)
 
@@ -356,16 +356,13 @@ check("S7.3 primitive register item 4 already houses the G3 discipline: "
 nodes = json.loads((REPO / "docs/audit/data/axiom_premise_nodes.json"
                     ).read_text())
 flat = json.dumps(nodes)
-tier_a = json.loads((REPO / "docs/audit/data/premise_decision_history.json"
-                     ).read_text())
-check("S7.4 registries: realized_state_primitive in axiom_premise_nodes; "
-      "AC_phi_lambda sub-admission (i) in tier_a_admissions minimum "
-      "decomposition; the reclassified_primitives precedent block exists "
-      "(Record retirement pattern)",
+obligations = json.loads((REPO / "docs/audit/data/derivation_obligations.json"
+                          ).read_text())
+check("S7.4 authority: realized_state_primitive is accepted while the physical "
+      "occupancy grain is an open gate with no premise weight",
       "realized_state_primitive" in flat
-      and "reading_occupancy_selection" in json.dumps(tier_a)
-      and "reclassified_primitives" in tier_a
-      and "minimal_axioms_record" in tier_a["reclassified_primitives"])
+      and obligations["nodes"]["ac_orbit_occupancy_statistical_grain_derivation_obligation"]["status"]
+      == "open_gate")
 
 # ---------------------------------------------------------------- S8
 # Residual map: both grain models satisfy all checked constraints

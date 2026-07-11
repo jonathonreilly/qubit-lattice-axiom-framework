@@ -1,5 +1,9 @@
 # AC_φλ Sub-Admission (i): the Occupancy Selection's Value Face Reduces to Realized-State Registration; the Measure-Side Realization Survives as the Named Frontier
 
+**Current authority (2026-07-11):** all admission/index language below records
+the former policy only. The realized-state primitive is accepted, but the
+physical occupancy grain remains an `open_gate` and is not premise content.
+
 **Date:** 2026-06-11
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not

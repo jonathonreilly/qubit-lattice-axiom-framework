@@ -5,8 +5,10 @@ Part A: exact beta family
 -------------------------
   [PASS] empty record reads zero for every tested beta
   [PASS] finite disjoint additivity holds for every tested beta
-  [PASS] target cycle value is 2/3
-  [PASS] countermodel cycle value is 4/3
+  [PASS] target singleton eta angle is 2/9
+  [PASS] countermodel singleton eta angle is 4/9
+  [PASS] target cycle holonomy is 2/3
+  [PASS] countermodel cycle holonomy is 4/3
   [PASS] target and countermodel share the same h
   [PASS] target and countermodel are distinct
 
@@ -33,20 +35,23 @@ Part D: source and axiom guards
   [PASS] current Record axiom contains empty-zero
   [PASS] current Record axiom contains finite additivity
   [PASS] current axioms withhold physical-observable identification
+  [PASS] scale reference withholds dimensionless readout content
+  [PASS] kinetic isotropy withholds phase and readout bridge
   [PASS] note grants h-class explicitly
   [PASS] note states the beta countermodel
+  [PASS] note matches singleton eta angle and cycle holonomy
   [PASS] note limits claim to current finite-record surface
   [PASS] note preserves a future same-observable theorem
   [PASS] note does not force r
-  [PASS] N1 contains six attempted routes
+  [PASS] N1 contains seven attempted routes
   [PASS] N2 collapses to one wall
   [PASS] N3 records the required phrase scan
   [PASS] N4 uses no prior negative witness
   [PASS] N5 names tested resolutions
   [PASS] N6 records convention and theorem paths
-  [PASS] N7 contains the radian steelman
-  [PASS] N8 considers the primitive and coordinate mechanisms
+  [PASS] N7 contains the owner-premise and coordinate steelman
+  [PASS] N8 considers governance, derivation, primitive, and coordinate mechanisms
   [PASS] discipline gate records PASS
 
 ========================================================================
-TOTAL: PASS=35, FAIL=0
+TOTAL: PASS=40, FAIL=0

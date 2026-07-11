@@ -12,13 +12,14 @@ set or predict an audit verdict.
 
 ## Narrow no-go claim
 
-Grant the R-eta h-class hypothesis: a three-record charged-lepton cycle is to
-be read through a fixed local scalar `h`. Even with that grant, the
-[four axioms](MINIMAL_AXIOMS_2026-06-29.md) do not entail the identity
-calibration
+Grant the R-eta h-class hypothesis: the charged-lepton eta readout lies in the
+fixed-locus density class represented by a nonzero local scalar `h`. This grants
+the class, not its identity calibration. Even with that grant, the
+[four axioms](MINIMAL_AXIOMS_2026-06-29.md) do not entail
 
 ```text
-Phi = 3h.
+|delta| = h,
+Phi = 3|delta| = 3h.
 ```
 
 They admit a real one-parameter family of readouts
@@ -31,6 +32,15 @@ where `N(R)` is the number of records in a finite pairwise-disjoint record
 collection. Every real `beta` satisfies empty-zero, record-content
 determination, and finite additivity. The target is `beta=1`; `beta=2` is an
 explicit countermodel with the same axiom structure and the same granted `h`.
+For a singleton record `x` and a three-record cycle `C`, respectively,
+
+```text
+|delta_beta| = I_beta({x}) = beta h,
+Phi_beta = I_beta(C) = 3 beta h.
+```
+
+Thus the same free coefficient changes the original AC(ii) eta-angle identity
+and its additive cycle-holonomy consequence.
 
 This is a no-go for the direct inference from Record additivity to the R-eta
 h-unit. It is not a claim against a future same-observable holonomy theorem,
@@ -53,16 +63,19 @@ I_beta(R disjoint-union S) = I_beta(R)+I_beta(S),
 I_beta(R) = beta h N(R).
 ```
 
-The first two equations follow directly from cardinality. For a three-record
-cycle `C`,
+The first two equations follow directly from cardinality. For a singleton
+record `x` and a three-record cycle `C`,
 
 ```text
+I_beta({x}) = beta h,
 I_beta(C) = 3 beta h.
 ```
 
-When `h=2/9` is granted, `beta=1` gives `2/3` and `beta=2` gives `4/3`.
-Both models obey the stated axiom requirements. Therefore those requirements
-do not entail `beta=1`.
+When `h=2/9` is granted, `beta=1` gives the eta angle `2/9` and cycle
+holonomy `2/3`, while `beta=2` gives `4/9` and `4/3`. Both models obey the
+stated axiom requirements. Therefore those requirements do not entail
+`beta=1` at either the singleton eta-angle resolution or the three-record
+cycle resolution.
 
 The countermodel is real and hence even under complex conjugation. Adding a
 K/CPT-evenness requirement does not remove the free coefficient.
@@ -90,22 +103,26 @@ used as a proof premise here.
 
 | Route tested against the countermodel | Marker | Result and authority/check |
 |---|---|---|
-| Record empty-zero | ATTEMPTED | `I_beta(empty)=0` for every real `beta`; Record clause in the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md), runner Part A. |
-| Record finite additivity | ATTEMPTED | Cardinality is additive on disjoint unions, so every `I_beta` is additive; Record clause in the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md), runner Parts A and C. |
-| Record-content determination | ATTEMPTED | `I_beta` depends on the finite record collection through `N(R)` and the granted scalar, with no site label; Record clause in the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md), runner Part B. |
+| Full Record readout route | ATTEMPTED | Empty-zero, record-content determination, and finite disjoint additivity all hold for every real `beta`; Record clause in the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md), runner Parts A--C. |
 | Lattice and cycle symmetry | ATTEMPTED | `N(R)` is invariant under translations, proper cubic rotations, and cycle-position permutations; Lattice clause in the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md), runner Part B. |
 | K/CPT-even real readout | ATTEMPTED | Real `beta` and real `h` make `I_beta` unchanged by complex conjugation; this is an extra grant checked in runner Part B, not axiom content. |
-| Pointwise realized-state evaluation | ATTEMPTED | Evaluating the same realized record state leaves the law-level coefficient `beta` free; [realized-state primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) boundary plus runner Parts A–C. |
+| Pointwise realized-state evaluation | ATTEMPTED | Evaluating the same realized record state leaves the law-level coefficient `beta` free; [realized-state primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) boundary plus runner Parts A--C. |
+| Dimensionful scale reference | ATTEMPTED | The [scale-reference primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md) supplies units conversion and no dimensionless phase, selector, or readout bridge; `beta` is dimensionless, runner Part D. |
+| Kinetic-form isotropy | ATTEMPTED | The [kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) supplies `c_t=c_s` and no phase, selector, or readout bridge; the family is unchanged, runner Part D. |
+| Exact fixed-locus value | ATTEMPTED | Granting the nonzero value `h=2/9` leaves both `beta=1` and `beta=2`; runner Part A checks the singleton and cycle values separately. |
 
-The runner checks all six routes. Their authority boundary is the current
-minimal axiom memo plus the explicit family above; no prior negative row is
-used as a witness.
+The runner checks all seven routes. Their authority boundary is the current
+minimal axiom memo, the approved primitive boundary notes, and the explicit
+family above; no prior negative row is used as a witness.
 
 ### N2 — wall independence
 
-The scoped claim carries one wall: `W_unit`, the coefficient `beta=1`.
-h-class is granted, not counted as a second wall. No pairwise wall table is
-needed after this collapse.
+The scoped claim carries one wall: `W_unit`, the coefficient `beta=1` in
+`|delta|=beta h`. The h-class face of AC(ii) is an explicit hypothesis, not a
+second unresolved wall in this theorem. The three-record relation
+`Phi=3|delta|` is an additive consequence of the same coefficient, not an
+independent normalization wall. No pairwise wall table is needed after this
+collapse.
 
 ### N3 — hidden-wall scan
 
@@ -116,57 +133,71 @@ standard`, `the framework provides`, `bridge context`, `background`,
 | Hit | Classification |
 |---|---|
 | granted h-class and `h` | explicit hypothesis that strengthens the countermodel |
-| `registered` in the mass-coordinate and governance discussions | non-load-bearing route/target description |
+| `registered` / `governance target` in the AC(ii) boundary discussion | non-load-bearing identification of the theorem target |
+| `registered` in the mass-coordinate path | non-load-bearing description of a partial route |
 | scan terms appearing in this checklist sentence | audit metadata, not proof steps |
 
 No other scan hit is used in the proof.
 
 ### N4 — residual matching
 
-No prior no-go row is cited as evidence.
+No prior no-go row is cited as evidence. The target itself is matched against
+`docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md:77-85`, whose
+adopted AC(ii) text says that the physical readout is the fixed-locus density
+class `h`, identity-read in h-units as the eta angle, with no intervening
+normalization factor.
 
-| Prior negative witness | Witness residual | Current residual | Match/disposition |
+| Target or prior negative witness | Residual there | Current residual | Match/disposition |
 |---|---|---|---|
-| none | n/a | h-unit face of AC(ii): identity reading of the fixed local scalar as cycle angle | direct countermodel; no witness citation to drop |
+| adopted AC(ii) text at the locator above | h-class plus identity h-unit for the eta angle | h-class granted; identity h-unit `|delta|=h` tested | exact match to the h-unit face |
+| prior negative witness: none | n/a | the same h-unit face, with `Phi=3|delta|` kept as a consequence | direct countermodel; no witness citation to drop |
 
 ### N5 — rhetoric and resolution audit
 
-The countermodel is checked for the empty collection, a single record, finite
-disjoint collections, a three-record cycle, and arbitrary finite cardinality.
-It supports the statement that the named finite-record axioms do not entail
-`beta=1`. It makes no claim about an added dynamical action, continuum limit,
-or future same-observable theorem.
+The countermodel is checked for the empty collection, a singleton eta-angle
+readout, finite disjoint collections, a three-record cycle holonomy, and
+arbitrary finite cardinality. It supports the statement that the named
+finite-record axioms do not entail `beta=1` at those resolutions. It makes no
+per-mode, per-action-block, continuum, or lattice-wide dynamical claim, and no
+claim against a future same-observable theorem.
 
 ### N6 — partial-closure paths
 
 | Candidate path | Current status | What it would address |
 |---|---|---|
-| owner-approved `beta=1` coordinate calibration | not approved as a separate convention | h-unit by governance ratification, not axiom derivation |
+| existing Class B AC(ii) owner premise | approved as a governance premise, not a theorem or convention | currently supplies h-class and h-unit inside its recorded boundary; it is the target to retire, not evidence of derivation |
+| convention-only coordinate ratification | not adopted as a separate convention | could dispose of h-unit only after the physical fixed-locus scalar and eta angle are shown to be the same observable |
 | same-observable determinant-line/holonomy theorem | no retained theorem on the current ledger surface | h-class and h-unit by physical derivation |
 | `ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md` | unaudited source context | registered value face; does not identify the physical fixed-locus observable |
 
-These paths remain compatible with the result. Neither is present in the four
-axioms or the approved primitive registry. This note does not classify them as
-impossible and does not propose a new primitive.
+These paths remain compatible with the result. The existing owner premise is
+present precisely as governance content; the derivational and convention-only
+paths are not supplied by the four axioms or approved primitive registry. This
+note does not classify them as impossible and does not propose a new primitive.
 
 ### N7 — steelman
 
-The strongest objection is that angles are already measured in radians, so
-`beta=1` may be a coordinate convention rather than new physics. That
-objection succeeds after the fixed-locus scalar and the physical holonomy have
-been proved to be the same observable in the same coordinate. The current
-axioms name neither object and contain no such identity. Thus the objection
-identifies a viable ratification or theorem path while leaving the present
-non-entailment countermodel intact.
+The strongest objection is that the current Class B AC(ii) premise already
+licenses `beta=1`, and that radians then make the identity coefficient a
+coordinate statement rather than new physics. The first point is correct on
+the owner-governed lane: the premise supplies the result, but does not derive
+it from the axioms. The coordinate objection succeeds if the fixed-locus scalar
+and the physical eta angle are first proved to be the same observable in the
+same coordinate. The current axioms name neither object and contain no such
+identity. Thus the objection identifies the governance and same-observable
+paths while leaving the present derivational non-entailment intact.
 
 ### N8 — cross-cycle echo
 
 | Similar mechanism | Was its wall retired? | Applicability here |
 |---|---|---|
-| scale-reference primitive | calibration made explicit by owner approval | an analogous h-unit primitive would be a premise, not a derivation of `beta=1` |
-| registered mass-coordinate reconstruction | phase reconstructed after state data are supplied | does not establish the h-unit identity for the physical fixed-locus observable |
+| AC(ii) Tier-A-to-Class-B adoption | removed from live Tier-A by owner governance; the two owner atoms remain premise content | records the present license but does not retire it by derivation |
+| theta retirement | the registry records a retained-derivation retirement mechanism at adoption; no theta theorem is used here | the analogous mechanism here is a retained same-observable/readout theorem that makes AC(ii) redundant |
+| scale-reference primitive | calibration made explicit by owner approval | an analogous h-unit primitive would relocate the premise, not derive `beta=1` |
+| registered mass-coordinate reconstruction | reconstructs phase after state data are supplied; current source row is unaudited | does not establish the h-unit identity for the physical fixed-locus observable |
+| identity-unit/radian-convention source routes | current relevant source rows are unaudited, so they are not used as authority here | they motivate convention tests but do not refute this direct countermodel |
 
-Both mechanisms have been considered and do not refute the narrow
+All listed mechanisms have been considered and do not refute the narrow
 current-surface claim.
 
 **Gate result: PASS.** N1–N8 support the finite-record, current-surface
@@ -180,4 +211,4 @@ Run:
 python3 scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py
 ```
 
-Expected result: `PASS=35`, `FAIL=0`.
+Expected result: `PASS=40`, `FAIL=0`.

@@ -11,6 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md"
 AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
+SCALE_REFERENCE = ROOT / "docs" / "SCALE_REFERENCE_PRIMITIVE_NOTE.md"
+KINETIC_ISOTROPY = ROOT / "docs" / "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
 
 PASS = 0
 FAIL = 0
@@ -46,6 +48,7 @@ def main() -> int:
     empty: frozenset[tuple[int, int, int]] = frozenset()
     r = frozenset({(0, 0, 0), (1, 0, 0)})
     s = frozenset({(0, 1, 0), (0, 0, 1), (1, 1, 0)})
+    singleton = frozenset({(0, 0, 0)})
     cycle = frozenset({(0, 0, 0), (1, 0, 0), (0, 1, 0)})
 
     section("Part A: exact beta family")
@@ -55,8 +58,10 @@ def main() -> int:
         "finite disjoint additivity holds for every tested beta",
         all(readout(beta, h, r | s) == readout(beta, h, r) + readout(beta, h, s) for beta in betas),
     )
-    check("target cycle value is 2/3", readout(beta_target, h, cycle) == Fraction(2, 3))
-    check("countermodel cycle value is 4/3", readout(beta_counter, h, cycle) == Fraction(4, 3))
+    check("target singleton eta angle is 2/9", readout(beta_target, h, singleton) == Fraction(2, 9))
+    check("countermodel singleton eta angle is 4/9", readout(beta_counter, h, singleton) == Fraction(4, 9))
+    check("target cycle holonomy is 2/3", readout(beta_target, h, cycle) == Fraction(2, 3))
+    check("countermodel cycle holonomy is 4/3", readout(beta_counter, h, cycle) == Fraction(4, 3))
     check("target and countermodel share the same h", h == Fraction(2, 9))
     check("target and countermodel are distinct", readout(beta_target, h, cycle) != readout(beta_counter, h, cycle))
 
@@ -92,22 +97,29 @@ def main() -> int:
     section("Part D: source and axiom guards")
     note = NOTE.read_text(encoding="utf-8")
     axioms = AXIOMS.read_text(encoding="utf-8")
+    scale_reference = SCALE_REFERENCE.read_text(encoding="utf-8")
+    kinetic_isotropy = KINETIC_ISOTROPY.read_text(encoding="utf-8")
+    scale_flat = " ".join(scale_reference.split())
+    kinetic_flat = " ".join(kinetic_isotropy.split())
     check("current Record axiom contains empty-zero", "I(empty)=0" in axioms)
     check("current Record axiom contains finite additivity", "scalar readout `I` is additive" in " ".join(axioms.split()))
     check("current axioms withhold physical-observable identification", "source/action and physical-observable identification" in axioms)
+    check("scale reference withholds dimensionless readout content", "no mass ratio, coupling, mixing angle, phase, selector, readout bridge" in scale_flat)
+    check("kinetic isotropy withholds phase and readout bridge", "No mass ratio, coupling, mixing angle, phase, or selector is supplied" in kinetic_flat and "readout bridge" in kinetic_flat)
     check("note grants h-class explicitly", "Grant the R-eta h-class hypothesis" in note)
     check("note states the beta countermodel", "I_beta(R) = beta h N(R)" in note)
+    check("note matches singleton eta angle and cycle holonomy", "|delta_beta| = I_beta({x}) = beta h" in note and "Phi_beta = I_beta(C) = 3 beta h" in note)
     check("note limits claim to current finite-record surface", "finite-record, current-surface" in note)
     check("note preserves a future same-observable theorem", "future same-observable holonomy theorem" in note)
     check("note does not force r", "does not force\n`r=1/2`" in note)
-    check("N1 contains six attempted routes", note.count("| ATTEMPTED |") == 6)
+    check("N1 contains seven attempted routes", note.count("| ATTEMPTED |") == 7)
     check("N2 collapses to one wall", "one wall: `W_unit`" in note)
     check("N3 records the required phrase scan", "The proof text was scanned for" in note)
     check("N4 uses no prior negative witness", "No prior no-go row is cited as evidence" in note)
-    check("N5 names tested resolutions", "empty collection, a single record, finite" in note)
-    check("N6 records convention and theorem paths", "owner-approved `beta=1` coordinate calibration" in note and "same-observable determinant-line/holonomy theorem" in note)
-    check("N7 contains the radian steelman", "angles are already measured in radians" in note)
-    check("N8 considers the primitive and coordinate mechanisms", "scale-reference primitive" in note and "registered mass-coordinate reconstruction" in note)
+    check("N5 names tested resolutions", "empty collection, a singleton eta-angle" in note and "three-record cycle holonomy" in note)
+    check("N6 records convention and theorem paths", "convention-only coordinate ratification" in note and "same-observable determinant-line/holonomy theorem" in note)
+    check("N7 contains the owner-premise and coordinate steelman", "current Class B AC(ii) premise already" in note and "same observable" in note)
+    check("N8 considers governance, derivation, primitive, and coordinate mechanisms", "Tier-A-to-Class-B adoption" in note and "theta retirement" in note and "scale-reference primitive" in note and "registered mass-coordinate reconstruction" in note)
     check("discipline gate records PASS", "**Gate result: PASS.**" in note)
 
     print("\n" + "=" * 72)

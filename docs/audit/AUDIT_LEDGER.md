@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 350 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2817 |
+| unaudited | 2816 |
 | audit_in_progress | 22 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 45 |
+| ~~audited_conditional~~ | 46 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 26 |
 | `audited_clean` | 441 |
-| `audited_conditional` | 45 |
+| `audited_conditional` | 46 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3167 |
+| `unaudited` | 3166 |
 
 | claim_type | count |
 |---|---:|
@@ -597,6 +597,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `graded_constraint_interface_consistency_bounded_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -3175,6 +3176,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The temporal-gauge plaquette reduction and product Haar measure give the tensor product kernel, and compact-group Schur orthogonality gives the stated c_lambda/d_lambda factor. The marked-link formula follows by applying the per-link identity to the fixed Peter-Weyl tensor factors and the trivial character on unmarked links.
 - **rationale:** The load-bearing mathematics is compact-group convolution algebra plus the temporal-gauge Wilson plaquette identity, not a numerical comparator, renaming, or imported framework-specific premise. Independent inspection of the displayed formulas confirms the c_lambda/d_lambda normalization, the a_0=1 trivial-channel normalization, and the c_0 contribution from unmarked links. The runner performs finite-group Z_N checks consistent with the algebra and does not import SU(3), beta=6, PDG data, or a downstream marked-plaquette premise.
 - **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_connected_hierarchy_theorem_note`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Claim that the exact connected plaquette hierarchy is the necessary remaining obstruction to explicit nonperturbative beta_eff closure on the finite Wilson surface, rather than merely one exact representation of that obstruction.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00035-gauge_vacuum_plaquette_conne`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because beta enters as a common source shift, d/d beta equals the sum of all plaquette-source derivatives, implying d C_n/d beta = sum_r C_(n+1).  _(class `A`)_
+- **chain closes:** False — The source-shift identity and resulting finite-volume cumulant hierarchy close algebraically. The packet does not prove the stronger necessity claim that every explicit beta=6 closure must close the full hierarchy or exclude alternative exact representations and direct evaluations.
+- **rationale:** The exact source-shift and connected-cumulant identities are genuine class-A algebra. The runner's claimed necessity result, however, is tested only by positivity of imported onset coefficients; nonzero two- and three-point corrections do not establish that no direct integral, resummation, environment-character, or other exact closure can bypass an explicit hierarchy solution. The safe theorem is therefore narrower than the note's claimed identification of the unique remaining obstruction.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 leaves finite truncation untested and multiple alternative exact closure routes open.
+    - N2 does not support the claimed exhaustion of nonhierarchy closure mechanisms.
+    - N5 necessity and equivalence rhetoric exceeds the resolutions actually tested.
 
 ### `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20`
 

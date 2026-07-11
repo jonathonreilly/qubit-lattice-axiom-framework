@@ -8,10 +8,12 @@ Question:
   route?
 
 Answer:
-  Yes, partially. The canonical cube-shift selector has exactly three axis
-  minima with residual `Z_2` stabilizer. Under the explicit symmetry premise
-  (E) that the active Hermitian operator carries the residual `Z_2`
-  equivariantly, the bridge authority identifies the exact aligned core law
+  Yes, partially. The canonical cube-shift selector has exactly three
+  degenerate coordinate-axis minima with residual `Z_2` stabilizer; it does
+  not choose uniquely among them. After one minimum is supplied, and under the
+  explicit symmetry premise (E) that the active Hermitian operator carries the
+  residual `Z_2` equivariantly, the bridge authority identifies the exact
+  aligned core law
 
       P_23 H P_23 = H
 
@@ -23,8 +25,8 @@ Answer:
   real/CP/phase-gauge specialization z=b in R; unitary P_23 invariance alone
   does not force Im(z)=0.
 
-  This is a real positive law from the graph-first route, but it still does not
-  fix the values `(a,z,c,d)` or the active sector.
+  This is a conditional positive law from the graph-first route, but it does
+  not choose among the three axes, fix `(a,z,c,d)`, or select the active sector.
 """
 
 from __future__ import annotations
@@ -147,7 +149,7 @@ def part1_graph_first_selector_has_exact_axis_minima() -> None:
 
     check("The normalized graph-first selector has exactly three minima", len(mins) == 3, f"count={len(mins)}")
     check("Those minima are exactly the three coordinate axes", abs(min_val) < 1e-12 and exact_vertices)
-    print("  [INFO] The graph-first route derives a weak-axis selector on the hw=1 triplet")
+    print("  [INFO] The selector restricts minima to three axes; it makes no unique-axis choice")
 
 
 def part2_selected_axis_carries_residual_z2_stabilizer() -> None:
@@ -169,7 +171,7 @@ def part2_selected_axis_carries_residual_z2_stabilizer() -> None:
     check("The selected axis e1 is fixed by the 2<->3 swap", np.allclose(swap23 @ e1, e1, atol=1e-12))
     check("The selected axis is strictly lower than the democratic diagonal under the selector", f_e1 < f_diag,
           f"F_axis={f_e1:.6f}, F_diag={f_diag:.6f}")
-    print("  [INFO] The selected axis leaves an exact residual Z2 stabilizer")
+    print("  [INFO] After one minimum is supplied, that axis leaves an exact residual Z2 stabilizer")
 
 
 def part3_premise_e_residual_z2_yields_the_active_hermitian_core() -> None:
@@ -229,8 +231,8 @@ def part5_note_surface_pins() -> None:
         cls="B",
     )
     check(
-        "Theorem item 3 is conditional on premise (E)",
-        "3. under premise (E), residual `Z_2` equivariance" in note_flat,
+        "Theorem item 3 requires an axis choice and premise (E)",
+        "3. after that choice and under premise (E), residual `Z_2` equivariance" in note_flat,
         cls="B",
     )
 
@@ -255,12 +257,13 @@ def main() -> int:
     print("RESULT")
     print("=" * 88)
     print("  Positive graph-first result:")
-    print("    - the hw=1 cube selector derives a weak-axis choice")
-    print("    - the selected axis carries residual Z2")
-    print("    - under premise (E), residual Z2 gives the aligned active Hermitian core")
+    print("    - the hw=1 cube selector has exactly three degenerate axis minima")
+    print("    - after one minimum is supplied, that axis carries residual Z2")
+    print("    - after that choice and under premise (E), residual Z2 gives the aligned core")
     print("    - the core keeps the complex off-axis coupling allowed by Hermiticity")
     print()
     print("  Boundary:")
+    print("    - this route does not choose uniquely among the three axis minima")
     print("    - this route does not derive residual-Z2 equivariance of the active operator")
     print("    - this route does not fix the aligned-core values")
     print("    - this route does not fix whether the active sector is neutrino or charged-lepton")

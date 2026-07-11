@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_graph_first_axis_alignment.py
-runner_sha256: 1c11a7d6de8c404774e721849f5c7942e2c518bec0fc67fb63ba7fbb3e1ad2fa
+runner_sha256: 38397d71dc2d682a7321d665957aca857706849d750a9dcf672438bc0b5f84dc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -26,14 +26,14 @@ PART 1: THE GRAPH-FIRST SELECTOR HAS EXACT AXIS MINIMA
   [PASS (A)] S_3^2 = I
   [PASS (A)] The normalized graph-first selector has exactly three minima  (count=3)
   [PASS (A)] Those minima are exactly the three coordinate axes
-  [INFO] The graph-first route derives a weak-axis selector on the hw=1 triplet
+  [INFO] The selector restricts minima to three axes; it makes no unique-axis choice
 
 ========================================================================================
 PART 2: EACH SELECTED AXIS HAS EXACT RESIDUAL Z2 STABILIZER
 ========================================================================================
   [PASS (A)] The selected axis e1 is fixed by the 2<->3 swap
   [PASS (A)] The selected axis is strictly lower than the democratic diagonal under the selector  (F_axis=0.000000, F_diag=0.333333)
-  [INFO] The selected axis leaves an exact residual Z2 stabilizer
+  [INFO] After one minimum is supplied, that axis leaves an exact residual Z2 stabilizer
 
 ========================================================================================
 PART 3: UNDER PREMISE (E), RESIDUAL Z2 YIELDS THE ACTIVE HERMITIAN CORE LAW
@@ -60,18 +60,19 @@ PART 5: CONDITIONAL-INVARIANCE NOTE-SURFACE PINS
   [PASS (B)] The source note names premise (E)
   [PASS (B)] The source note carries the dated downstream-hygiene line
   [PASS (B)] The unconditional lane-forces-alignment sentence is absent
-  [PASS (B)] Theorem item 3 is conditional on premise (E)
+  [PASS (B)] Theorem item 3 requires an axis choice and premise (E)
 
 ========================================================================================
 RESULT
 ========================================================================================
   Positive graph-first result:
-    - the hw=1 cube selector derives a weak-axis choice
-    - the selected axis carries residual Z2
-    - under premise (E), residual Z2 gives the aligned active Hermitian core
+    - the hw=1 cube selector has exactly three degenerate axis minima
+    - after one minimum is supplied, that axis carries residual Z2
+    - after that choice and under premise (E), residual Z2 gives the aligned core
     - the core keeps the complex off-axis coupling allowed by Hermiticity
 
   Boundary:
+    - this route does not choose uniquely among the three axis minima
     - this route does not derive residual-Z2 equivariance of the active operator
     - this route does not fix the aligned-core values
     - this route does not fix whether the active sector is neutrino or charged-lepton

@@ -51,23 +51,23 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Metric | Value |
 |---|---:|
 | Total pending rows | 2881 |
-| Ready rows | 595 |
+| Ready rows | 596 |
 | Cycle-break targets | 49 |
-| Critical pending | 657 |
-| High pending | 332 |
-| Medium pending | 760 |
+| Critical pending | 653 |
+| High pending | 333 |
+| Medium pending | 763 |
 | Leaf pending | 1132 |
 
 Next ready rows by queue order:
 
 - [`cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; non_terminal_conditional
 - [`fermion_parity_z2_grading_theorem_note_2026-05-02`](../../docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) - critical; non_terminal_failed
-- [`three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02`](../../docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`](../../docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md) - critical; non_terminal_conditional
 - [`clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
 - [`abj_epsilon_index_square_block_no_go_note_2026-05-30`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md) - critical; audit_in_progress
 - [`abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`](../../docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md) - critical; audit_in_progress
 - [`abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`](../../docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md) - critical; audit_in_progress
+- [`three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02`](../../docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -98,16 +98,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3920 |
-| Critical nodes | 765 |
-| High nodes | 398 |
-| Medium nodes | 993 |
+| Critical nodes | 759 |
+| High nodes | 401 |
+| Medium nodes | 996 |
 | Leaf nodes | 1764 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1960 descendants; score 223.437
+- `minimal_axioms` - critical; 1970 descendants; score 223.945
 - `graph_first_su3_integration_note` - critical; 1601 descendants; score 64.646
-- `three_generation_observable_theorem_note` - critical; 1226 descendants; score 63.261
+- `three_generation_observable_theorem_note` - critical; 1185 descendants; score 62.712
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 61.644
 - `observable_principle_from_axiom_note` - critical; 1046 descendants; score 61.532
 - `plaquette_self_consistency_note` - critical; 1172 descendants; score 50.196

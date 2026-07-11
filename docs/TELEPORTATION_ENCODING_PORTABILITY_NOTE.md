@@ -1,7 +1,9 @@
 # Taste-Qubit Encoding Portability Note
 
 **Date:** 2026-04-25
-**Status:** planning audit; not a manuscript claim surface
+**Type:** bounded_theorem
+**Status:** `proposed_retained` for the finite ideal operator-targeting theorem;
+independent audit is required before any effective retained status
 **Runner:** `scripts/frontier_teleportation_encoding_portability.py`
 
 ## Scope
@@ -41,7 +43,26 @@ The second set is a control: it shows what works if the taste `X` operator is
 retargeted to the selected logical axis.  It is not a claim that the current
 fixed pair-hop gate already implements every logical axis.
 
-## Algebraic Targeting Boundary
+## Finite Operator-Targeting Theorem
+
+For every audited dimension `d in {1,2,3}`, even side length
+`L in {2,4,6,8}`, cell, spectator assignment, and selected logical taste axis
+`a`, the following statements hold:
+
+1. sublattice parity restricts to a signed logical `Z`;
+2. the row-major pair-hop restricts to logical `X` with zero leakage if and
+   only if `a=d-1`;
+3. for `a != d-1`, its restriction is zero and its Frobenius leakage is
+   exactly `sqrt(2)`;
+4. the axis-adapted taste flip restricts to logical `X` with zero leakage for
+   every `a`.
+
+Consequently, the fixed operator passes exactly `470` of the `1330` audited
+encodings and fails the other `860`, whereas the adapted operator passes all
+`1330`. This is a theorem about the declared finite ideal operator surface,
+not a theorem about physical teleportation apparatus or dynamics.
+
+### Proof
 
 For a fixed cell `c`, selected logical taste axis `a`, and spectator taste bits
 `s_k` on all axes `k != a`, the checked two-dimensional encoded subspace is
@@ -61,10 +82,28 @@ so the restricted operator is `(+/-) Z_logical` for every checked cell, axis,
 and spectator choice.  The spectator-dependent sign is the sign-count effect
 reported below; it is not a portability obstruction.
 
-The current fixed `X` is the row-major pair-hop.  On an even side-length
-Kogut-Susskind cell/taste decomposition, each even-odd row-major pair used by
-that hop differs only in the last coordinate, so this operator acts inside each
-cell as
+It remains to derive which taste bit the current row-major pair-hop flips.
+With the runner's coordinate order, the row-major index of
+`x_j = 2 c_j + eta_j` is
+
+```text
+r(x) = sum_{j=0}^{d-1} x_j L^(d-1-j).
+```
+
+Because `L` is even, every `L^(d-1-j)` with `j<d-1` is even. Separating the
+last coordinate therefore gives
+
+```text
+r(2c+eta) = 2 q(c, eta_0,...,eta_{d-2}) + eta_{d-1},
+
+q = sum_{j<d-1} c_j L^(d-1-j)
+    + sum_{j<d-1} eta_j L^(d-1-j)/2
+    + c_{d-1}.
+```
+
+Here `q` is an integer independent of `eta_{d-1}`. The runner's pair-hop
+exchanges row-major basis indices `2q` and `2q+1`; hence it preserves `c` and
+all earlier taste bits and flips only `eta_{d-1}`. Thus
 
 ```text
 X_fixed |c> tensor |eta_0,...,eta_{d-1}>
@@ -89,17 +128,30 @@ operator is exactly
 P_encoded X_fixed P_encoded = 0
 ```
 
-for every non-last-axis encoding in dimensions 2 and 3.  The two encoded basis
-columns each leave the subspace with unit norm, so the runner's Frobenius
-leakage diagnostic is `sqrt(2)`.  With the restricted `X` equal to zero, the
-Bell-projector candidates collapse to duplicated half-projectors:
+for every non-last-axis encoding in dimensions 2 and 3. More explicitly,
+`X_fixed` is unitary and maps both orthonormal encoded basis columns into the
+orthogonal spectator sector, so
+
+```text
+||(I-P_encoded) X_fixed P_encoded||_F^2
+  = Tr(P_encoded X_fixed^dagger (I-P_encoded) X_fixed P_encoded)
+  = Tr(P_encoded) = 2.
+```
+
+The leakage diagnostic is therefore exactly `sqrt(2)`. With the restricted
+`X` equal to zero, the Bell-projector candidates collapse to duplicated
+half-projectors:
 
 ```text
 P_zx = (1/4) (I + (-1)^x Z tensor Z),
 ```
 
-because the `X tensor X` stabilizer factor vanishes.  This gives the observed
-worst-case idempotence and duplicate-branch orthogonality errors of `1/4`.
+because the `X tensor X` stabilizer factor vanishes. Writing
+`A_x = I + (-1)^x Z tensor Z`, one has `A_x^2=2A_x`, and therefore
+`P_zx^2-P_zx=-A_x/8`. Since the nonzero diagonal entries of `A_x` are `2`,
+the maximum-entry idempotence error is `1/4`. The two candidates with the same
+`x` are identical, so their product also has maximum entry `1/4`; this is the
+duplicate-branch orthogonality error reported by the runner.
 
 Retargeting `X` to `I_cells tensor sigma_x` on the selected axis replaces the
 last-bit flip in the displayed formula by an `a`-bit flip.  It therefore maps
@@ -107,6 +159,23 @@ last-bit flip in the displayed formula by an `a`-bit flip.  It therefore maps
 logical axis. This accounts for the finite-surface operator-targeting result
 surveyed here without claiming that the current fixed pair-hop implements every
 logical axis.
+
+Finally, the enumeration is fixed by the declared audit surface. For dimension
+`d` and side `L`, there are `(L/2)^d` cells, `d` logical axes, and `2^(d-1)`
+spectator assignments. Summing over `L=2,4,6,8` gives
+
+```text
+d=1: 10 cases,
+d=2: 120 cases = 60 per axis,
+d=3: 1200 cases = 400 per axis,
+total: 1330 cases.
+```
+
+Exactly one axis per dimension is the last axis, so the fixed-hop pass count
+is `10 + 60 + 400 = 470`, leaving `1330 - 470 = 860` non-last-axis failures.
+The adapted flip passes every term in the same count. This proves the stated
+finite classification; the runner supplies an independent matrix-level replay
+of each case. □
 
 ## Default Run
 
@@ -151,6 +220,7 @@ current_fixed_x:
   skipped before teleportation: 860
   failure cause: current_pair_hop_x_flips_last_axis_not_logical_axis=860
   zero X-restriction failures: 860
+  exact non-last-axis obstruction certificates: 860/860
   max failed-case X leakage: 1.414e+00
   max failed-case Bell-projector idempotence/orthogonality error: 2.500e-01
   minimum corrected-state fidelity on accepted encodings: 0.9999999999999996
@@ -245,12 +315,14 @@ preparation) remains open.
 
 ## Downstream Boundary Alignment (2026-06-13)
 
-The runner now requires the audited downstream teleportation boundary stack
-before this finite portability artifact can report success. The direct
-consumers are the retained-axis operator-algebra closure, cross-encoding maps,
-three-register cross-encoding, no-signaling, 3D-operator, and conclusion
-boundary anchors; the shared helper also verifies the measurement, resource,
-and causal-channel anchors needed by the full planning stack.
+The runner reports the audited downstream teleportation boundary stack as
+non-gating context. Those rows include the retained-axis operator-algebra
+closure, cross-encoding maps, three-register cross-encoding, no-signaling,
+3D-operator, conclusion, measurement, resource, and causal-channel anchors
+needed by the broader planning stack. Their status does not enter this
+standalone theorem's exit code: the finite operator-targeting result depends
+only on the displayed algebra and its matrix replay, not on whether physical
+implementation or cross-encoding consumers have themselves closed.
 
 This alignment keeps the result bounded. It supports finite even-side encoding
 portability and operator targeting on the audited state-teleportation surface,

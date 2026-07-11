@@ -1,0 +1,46 @@
+loop_slug: teleportation-encoding-portability-closure-20260711
+mode: run
+date_started: 2026-07-11
+runtime: 15m bounded science-fix block
+target: proposed_retained
+current_goal: >-
+  Close the row-major pair-hop derivation in the finite taste-qubit encoding
+  portability note without broadening it into a physical teleportation claim.
+branch: claude/science-fix/teleportation_encoding_portability_note-3b98d294
+base_commit_at_start: f9ad4ea5331346ab183020d7bb290f705fc14dee
+lock_status: >-
+  Dedicated science-fix worktree is the single-writer surface; shared-checkout
+  lock skipped per repository protocol.
+cycle_count: 1
+block_count: 1
+active_route: row_major_flattening_theorem
+hard_residual: null
+actual_current_surface_status: proposed_retained
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: true
+proposal_allowed_reason: >-
+  The finite theorem is self-contained, has a decisive matrix runner and an
+  independent finite check, and passed local review; independent audit remains required.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md
+  - scripts/frontier_teleportation_encoding_portability.py
+  - .claude/science/physics-loops/teleportation-encoding-portability-closure-20260711/
+open_imports: []
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_disposition: iteration_2_pass_with_bounded_claim
+audit_compatibility_validation: >-
+  PASS in a disposable worktree: the full 16-stage pipeline and strict lint
+  returned no errors; the target seeded as bounded_theorem, unaudited, ready,
+  with no open dependency path. Generated audit authority was discarded.
+pr_status: pending_delivery
+next_exact_action: >-
+  Run independent audit on teleportation_encoding_portability_note after landing.
+stop_condition: >-
+  The source theorem, decisive runner, review pass, and audit-compatible handoff are complete.

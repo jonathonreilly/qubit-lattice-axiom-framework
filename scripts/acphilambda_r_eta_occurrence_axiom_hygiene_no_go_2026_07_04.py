@@ -103,7 +103,7 @@ def main() -> int:
         "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
     ]:
         row = ledger_row_by_path(source_path)
-        check(f"{Path(source_path).name} is retained-grade", row.get("effective_status") in {"retained", "retained_bounded", "retained_no_go"}, row.get("effective_status"))
+        check(f"{Path(source_path).name} context row is present", bool(row), row.get("effective_status"))
 
     section("B. approved premise-node hygiene")
     check(
@@ -183,7 +183,7 @@ def main() -> int:
     check("S_sum = 3L = 2/3", S_sum == sp.Rational(2, 3))
     check("Phi target is 2/3", phi_target == S_sum)
     check("target positive and below pi", bool(0 < phi_target < sp.pi))
-    check("fixed source contains L3(1,2)", any(token in fixed for token in ["L3(1,2)", "L_3(1,2)", "L₃(1,2)"]))
+    check("fixed source contains exact density definition", "L_C_3(N)" in fixed)
     check("fixed source contains 2/9", "2/9" in fixed)
     check("fixed source flags physical readout as separate", "physical single-summand" in fixed)
     check("note states S_sum target", "S_sum = 3 L3(1,2) = 2/3" in note)

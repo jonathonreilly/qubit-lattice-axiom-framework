@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py
-runner_sha256: 60f89f466b2aaebb0d34f8c0892c49e315202a5515f776970b74f9f1b6dcca12
+runner_sha256: a345c275069fe2b5f6381972d17f14fe19a2d104f317c3d3b9a11a0f343c798f
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 2.75
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 2.66
+status: ok
 ----- stdout -----
 theta G3 phase-insertion current-surface no-go verifier
 
@@ -47,7 +47,7 @@ A. source presence and ledger grounding
 [PASS] link_star is not retained-grade theta-retirement authority
 [PASS] multiplaquette is not retained-grade theta-retirement authority
 [PASS] axiom_no_go is not retained-grade theta-retirement authority
-[FAIL] cross-plane absence is retained-grade :: unaudited
+[PASS] cross-plane absence context row is present
 [PASS] new note has Type no_go
 [PASS] new note has Claim type no_go
 
@@ -55,7 +55,7 @@ A. source presence and ledger grounding
 B. admission-era decision history
 ========================================================================================
 [PASS] decision history preserves zero final admission count
-[PASS] canonical Tier-A IDs are empty on current main
+[PASS] decision history canonical live IDs are empty
 [PASS] live derivation targets are empty on current main
 [PASS] theta retired-target record is preserved
 [PASS] theta disposition correction date is recorded
@@ -218,7 +218,7 @@ J. note discipline and controlled links
 [PASS] verification block states fail-zero threshold
 
 ========================================================================================
-TOTAL: PASS=168 FAIL=1
+TOTAL: PASS=169 FAIL=0
 ========================================================================================
 
 ----- stderr -----

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_gauge_positive_route_stretch_status_2026_07_04.py
-runner_sha256: d1942002ca3d3881537722bd68377fcb42cf64232d41025ab40916fef7f5ddae
+runner_sha256: 6746850abeb13796054d7a0fda45f4a8081f21deff73c3dbc5eb2cbdad79b447
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.89
+elapsed_sec: 1.90
 status: ok
 ----- stdout -----
 theta gauge positive-route stretch status verifier
@@ -40,7 +40,7 @@ A. source presence and ledger status
 [PASS] new route status note has Claim type open_gate
 
 ========================================================================================
-B. Tier-A target and axiom boundary
+B. historical target and current axiom boundary
 ========================================================================================
 [PASS] decision history preserves zero final admission count
 [PASS] theta entry is retired, not live

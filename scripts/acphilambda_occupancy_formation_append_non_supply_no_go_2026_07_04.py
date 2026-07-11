@@ -224,7 +224,8 @@ def main() -> int:
     c3 = flats[C3_CONTEXT]
     check(
         "occupancy reduction boundary: value-bearing face of AC_phi_lambda",
-        "**value-bearing" in texts[OCC_REDUCTION] and "face** of AC_φλ" in texts[OCC_REDUCTION],
+        "**value-bearing" in texts[OCC_REDUCTION]
+        and "face** of the AC_φλ occupancy question" in texts[OCC_REDUCTION],
     )
     for phrase in [
         "realized-state **registration**",

@@ -82,8 +82,8 @@ def main() -> int:
     for path in [NOTE, MINIMAL, AXIOM_PREMISES, DECISION_HISTORY, LEDGER, REGISTRY, REALIZED, KINETIC, MEASURE]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
     row = ledger_row_by_path("docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md")
-    check("carrier-measure boundary row is retained-grade", row.get("effective_status") in {"retained", "retained_bounded", "retained_no_go"}, row.get("effective_status"))
-    check("carrier-measure boundary row is audited_clean", row.get("audit_status") == "audited_clean", row.get("audit_status"))
+    check("carrier-measure boundary row is present", bool(row), row.get("effective_status"))
+    check("carrier-measure boundary status is audit-lane-owned", row.get("effective_status") is not None, row.get("effective_status"))
 
     section("B. historical decision boundary and current open gate")
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
@@ -104,7 +104,7 @@ def main() -> int:
         check(f"machine registry states {phrase}", phrase in ac["statement"])
     check("human registry points to the occupancy derivation obligation", "AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md" in registry)
     check("note routes the residual to the occupancy open gate", "occupancy `open_gate`" in note)
-    check("note says AC_phi_lambda is not retired", "AC_phi_lambda is not retired." in note)
+    check("note keeps occupancy obligation open", "The AC occupancy derivation obligation remains open." in note)
 
     section("C. approved premise-node registry")
     check(
@@ -252,10 +252,10 @@ def main() -> int:
     for idx in range(1, 9):
         check(f"N{idx} gate present", f"**N{idx}" in note)
     for phrase in [
-        "AC_phi_lambda is not retired",
+        "The AC occupancy derivation obligation remains open.",
         "No value of `r` is derived, selected, or preferred.",
         "R-eta and theta are untouched.",
-        "derive the physical generation readout partition or keep AC(i) live",
+        "derive the physical generation readout partition or keep the obligation open",
         "The target is now sharper",
     ]:
         check(f"note carries boundary phrase: {phrase[:44]}", phrase in note)

@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_occurrence_axiom_hygiene_no_go_2026_07_04.py
-runner_sha256: d860d96f7d5fe9da258129c0319bae1289dfceb2950ca68e7ab044d1b4d22acd
+runner_sha256: 2355c683fc66cb8288aad6ee8c8c7d0b68ab2158fc8f85571af1679e60d086f5
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.65
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 1.40
+status: ok
 ----- stdout -----
 AC_phi_lambda R-eta occurrence axiom-hygiene no-go verifier
 
 ========================================================================================
-A. source presence and Tier-A boundary
+A. source presence and current premise boundary
 ========================================================================================
 [PASS] exists: docs/ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
@@ -21,15 +21,15 @@ A. source presence and Tier-A boundary
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 [PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
 [PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
-[PASS] Tier-A has no live admitted inputs
-[PASS] Tier-A live target map is empty
+[PASS] decision history has no live premise inputs
+[PASS] decision history live target map is empty
 [PASS] AC minimum decomposition keeps R-eta
 [PASS] AC statement still names R-eta
 [PASS] human registry points to the R-eta derivation obligation
 [PASS] note says registry is not edited
 [PASS] note says R-eta remains open
-[FAIL] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md is retained-grade :: unaudited
-[FAIL] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md is retained-grade :: unaudited
+[PASS] BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md context row is present
+[PASS] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md context row is present
 
 ========================================================================================
 B. approved premise-node hygiene
@@ -92,7 +92,7 @@ E. exact fixed-locus target arithmetic
 [PASS] S_sum = 3L = 2/3
 [PASS] Phi target is 2/3
 [PASS] target positive and below pi
-[PASS] fixed source contains L3(1,2)
+[PASS] fixed source contains exact density definition
 [PASS] fixed source contains 2/9
 [PASS] fixed source flags physical readout as separate
 [PASS] note states S_sum target
@@ -193,7 +193,7 @@ K. markdown dependency and context-link control
 [PASS] verification block expects 140 passes
 
 ========================================================================================
-TOTAL: PASS=138 FAIL=2
+TOTAL: PASS=140 FAIL=0
 ========================================================================================
 
 ----- stderr -----

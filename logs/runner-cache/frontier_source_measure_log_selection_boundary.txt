@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_source_measure_log_selection_boundary.py
-runner_sha256: b815871eceddcfea77dc8f97b85afb18f2d37a2f009b0def68798ecec7fb572a
+runner_sha256: 3683c0a8b38c3ab41ab44cdf3160120245c3a0abafb822b90b6ef8b06bf1fbb3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 0.69
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -21,7 +21,7 @@ Part 1: document boundary
 [PASS] note contains required phrase: Relation to the `F_p` wall
 [PASS] note contains required phrase: Consequence for PR #2373
 [PASS] note contains required phrase: Physical Lattice Assumption
-[PASS] note contains required phrase: Planck Scale Tier-A Anchor
+[PASS] note contains required phrase: Approved Scale-Reference Primitive
 [PASS] note contains required phrase: Consequence for Y_T
 [PASS] note contains required phrase: Claim Boundary
 [PASS] note contains required phrase: Non-Claims

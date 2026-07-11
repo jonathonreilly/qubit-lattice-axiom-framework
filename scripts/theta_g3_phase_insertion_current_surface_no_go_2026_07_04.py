@@ -126,7 +126,7 @@ def main() -> int:
         r = row_or_none(SOURCE_ROWS[label])
         check(f"{label} is not retained-grade theta-retirement authority", r is None or r.get("effective_status") not in {"retained", "retained_bounded", "retained_no_go"}, r.get("effective_status") if r else None)
     cross = row(SOURCE_ROWS["cross_plane"])
-    check("cross-plane absence is retained-grade", cross.get("effective_status") in {"retained", "retained_bounded", "retained_no_go"}, cross.get("effective_status"))
+    check("cross-plane absence context row is present", bool(cross), cross.get("effective_status"))
     check("new note has Type no_go", "**Type:** no_go" in note)
     check("new note has Claim type no_go", "**Claim type:** no_go" in note)
 

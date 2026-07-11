@@ -1,19 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_universal_gr_casimir_block_localization.py
-runner_sha256: c5a083df65acce488cb6bff71b524452838db1a058578f02fdbf89fd8dbb0536
+runner_sha256: 5f4a8545b623e294b886754017fbe9b3e666a26fc474b215daf6fc738f2a322e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.68
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
-UNIVERSAL GR CASIMIR BLOCK LOCALIZATION
+SPATIAL SO(3) CASIMIR DECOMPOSITION ON SYM^2(R^4)
 ==============================================================================
 basis_order = [lapse, shift_x, shift_y, shift_z, trace, shear_1, shear_2, shear_xy, shear_xz, shear_yz]
 basis_orthonormal = True
 so3_closure_exact = True
-A1_complement_mixing_zero = True
+lapse_trace_complement_mixing_zero = True
+G_x complement rows = [['0', '0', '0', '0', '0', '0', '0', '0'], ['0', '0', '1', '0', '0', '0', '0', '0'], ['0', '-1', '0', '0', '0', '0', '0', '0'], ['0', '0', '0', '0', '0', '0', '0', '-1'], ['0', '0', '0', '0', '0', '0', '0', 'sqrt(3)'], ['0', '0', '0', '0', '0', '0', '1', '0'], ['0', '0', '0', '0', '0', '-1', '0', '0'], ['0', '0', '0', '1', '-sqrt(3)', '0', '0', '0']]
+G_y complement rows = [['0', '0', '-1', '0', '0', '0', '0', '0'], ['0', '0', '0', '0', '0', '0', '0', '0'], ['1', '0', '0', '0', '0', '0', '0', '0'], ['0', '0', '0', '0', '0', '0', '-1', '0'], ['0', '0', '0', '0', '0', '0', '-sqrt(3)', '0'], ['0', '0', '0', '0', '0', '0', '0', '-1'], ['0', '0', '0', '1', 'sqrt(3)', '0', '0', '0'], ['0', '0', '0', '0', '0', '1', '0', '0']]
+G_z complement rows = [['0', '1', '0', '0', '0', '0', '0', '0'], ['-1', '0', '0', '0', '0', '0', '0', '0'], ['0', '0', '0', '0', '0', '0', '0', '0'], ['0', '0', '0', '0', '0', '2', '0', '0'], ['0', '0', '0', '0', '0', '0', '0', '0'], ['0', '0', '0', '-2', '0', '0', '0', '0'], ['0', '0', '0', '0', '0', '0', '0', '1'], ['0', '0', '0', '0', '0', '0', '-1', '0']]
+Casimir complement rows = [['-2', '0', '0', '0', '0', '0', '0', '0'], ['0', '-2', '0', '0', '0', '0', '0', '0'], ['0', '0', '-2', '0', '0', '0', '0', '0'], ['0', '0', '0', '-6', '0', '0', '0', '0'], ['0', '0', '0', '0', '-6', '0', '0', '0'], ['0', '0', '0', '0', '0', '-6', '0', '0'], ['0', '0', '0', '0', '0', '0', '-6', '0'], ['0', '0', '0', '0', '0', '0', '0', '-6']]
 Casimir diagonal on complement = [-2, -2, -2, -6, -6, -6, -6, -6]
 Casimir off-diagonal zero on complement = True
+Casimir polynomial identity (C+2I)(C+6I) zero = True
+spectral projector polynomial formulas exact = True
 ranks = {'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}
 projector complete = True
 projector orthogonal = True
@@ -24,22 +30,22 @@ diag P_shear on complement = [0, 0, 0, 1, 1, 1, 1, 1]
 [EXACT] PASS: the displayed 10D polarization basis is exactly orthonormal
     Frobenius Gram matrix equals the 10D identity
 [EXACT] PASS: the lifted spatial generators close the SO(3) Lie algebra exactly
-    all three commutators match the embedded generators up to orientation sign
-[EXACT] PASS: Pi_A1 is invariant and its complement is an invariant subrepresentation
-    Pi_A1 G (I-Pi_A1) and (I-Pi_A1) G Pi_A1 are zero for all generators
+    all three cyclic commutators equal the negative fixed-axis generator
+[EXACT] PASS: Pi_lapse_trace is invariant and its complement is an invariant subrepresentation
+    Pi_lapse_trace G (I-Pi_lapse_trace) and its transpose block vanish
 [EXACT] PASS: the complement Casimir has exactly the j=1 and j=2 split
-    Casimir diagonal=[-2, -2, -2, -6, -6, -6, -6, -6]
-[EXACT] PASS: the spectral projectors define a canonical shift/shear split on the complement
-    ranks={'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}
+    Casimir diagonal=[-2, -2, -2, -6, -6, -6, -6, -6]; (C+2I)(C+6I)=0
+[EXACT] PASS: the spectral projectors define the canonical j=1/j=2 split on the complement
+    P_shift=(C+6I)/4, P_shear=-(C+2I)/4; ranks={'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}
 [EXACT] PASS: the four block projectors are exact, orthogonal, and complete
     complete=True, orthogonal=True, idempotent=True
 [EXACT] PASS: the block projectors commute with the universal SO(3) generators
     commutes=(True,True,True,True)
-[EXACT] PASS: in the current canonical basis the Casimir projectors land on the expected coordinates
+[EXACT] PASS: in the displayed fixed basis the Casimir projectors land on the expected coordinates
     P_shift selects h0i and P_shear selects spatial traceless-symmetric channels
 
 Boundary:
-This proves the representation-level lapse/shift/trace/shear block split. It does not prove Einstein/Regge dynamics for the block-localized Hessian.
+This proves the neutral representation-level 1+3+1+5 coordinate-block split. It does not identify a Universal-GR Hessian or Einstein/Regge dynamics.
 
 ==============================================================================
 SUMMARY

@@ -143,12 +143,18 @@ does not promote this note or change the audited claim scope.
 - [YT_BRIDGE_HIGHER_ORDER_CORRECTIONS_NOTE.md](YT_BRIDGE_HIGHER_ORDER_CORRECTIONS_NOTE.md)
   for the higher-order local scale `7.123842e-3` that bounds the local
   diagonal perturbation amplitude in the runner's admissible class.
-- [YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md](YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md)
-  for the nonlocal operator scale `5.023669e-3` that bounds the
-  quasi-local symmetric tail amplitude in the runner's admissible class.
+- `YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md` is context only after its
+  2026-07-11 affine-remainder repair. The hard-coded `5.023669e-3` scale in
+  this runner is a historical calibrated class radius, not a physical
+  nonlocal operator bound supplied by that theorem.
 - [YT_BRIDGE_HESSIAN_SELECTOR_NOTE.md](YT_BRIDGE_HESSIAN_SELECTOR_NOTE.md)
   for the leading-order Hessian selector that picks out the affine
   normal-form coordinate the runner checks across the perturbed class.
 - [YT_BRIDGE_REARRANGEMENT_PRINCIPLE_NOTE.md](YT_BRIDGE_REARRANGEMENT_PRINCIPLE_NOTE.md)
   for the rearrangement step that pushes admissible perturbation mass
   toward the UV window where the affine normal form is checked.
+
+**2026-07-11 downstream hygiene.** The repaired affine-remainder theorem does
+not chain-satisfy this note's quasi-local tail premise. Physical reuse of that
+premise requires a separate action-to-transport and locality-resolved operator
+bridge.

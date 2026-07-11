@@ -1,0 +1,32 @@
+loop_slug: yt-bridge-affine-remainder-20260711
+mode: run
+started_at: 2026-07-11T14:01:39-04:00
+goal: "Repair docs/YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md with the strongest honest first-principles derivation and one review PR."
+target_status: best-honest-status
+branch: physics-loop/yt-bridge-nonlocal-closure-block01-20260711
+cycle_count: 1
+block_count: 1
+active_route: calibration-free scalar endpoint-kernel and affine-remainder theorem
+hard_residual: "Derive the exact interacting lattice action-to-scalar-transport identification, or repeat the curvature proof for the actual operator derivative."
+files_touched:
+  - docs/YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md
+  - scripts/frontier_yt_bridge_affine_remainder_theorem.py
+  - scripts/frontier_yt_bridge_nonlocal_corrections.py
+  - .claude/science/physics-loops/yt-bridge-affine-remainder-20260711/
+open_imports:
+  theorem_claim: []
+  physical_reuse:
+    - exact interacting action-to-scalar-transport bridge
+    - locality-resolved operator support/range/decay bridge
+    - calibrated boundary data and explicitly disclosed diagnostic bridge profile
+no_go_routes: []
+invalidated_or_unselected_routes:
+  - "Historical code invalidation: the old 5.024e-3 endpoint-kernel diagnostic uses the wrong adjoint sign."
+  - "Route not selected: parameter-box certification leaves calibrated physical inputs load-bearing."
+narrow_negative_boundary: "Affine projection alone does not identify physical nonlocality; N1-N8 PASS is recorded."
+trace_gate: direct_blocker_closure
+reachability_to_target: partially_closes
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit and push the reviewed science block, open one proposed_retained review PR, and request independent re-audit of yt_bridge_nonlocal_corrections_note after landing."
+stop_condition: "One coherent reviewed PR is open and verified, with the physical action-to-transport blocker stated exactly."

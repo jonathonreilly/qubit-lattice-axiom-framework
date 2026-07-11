@@ -25,8 +25,8 @@ coefficient law or the source-amplitude branch values.
 ## Framework sentence
 
 In this note, the baseline physical framework is `Cl(3)` local algebra on the
-`Z^3` spatial substrate. Everything else is a derived atlas row or an admitted
-lane premise.
+`Z^3` spatial substrate. Everything else is a derived atlas row or an
+explicitly declared conditional input that does not chain-satisfy.
 
 ## Question
 

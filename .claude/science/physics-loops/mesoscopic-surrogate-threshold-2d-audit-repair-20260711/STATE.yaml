@@ -1,0 +1,26 @@
+loop_id: mesoscopic-surrogate-threshold-2d-audit-repair-20260711
+status: packaged_for_review
+created: 2026-07-11
+mode: run
+runtime_budget: approximately_15_minutes
+cycles_completed: 1
+target_claim_id: mesoscopic_surrogate_threshold_2d_note
+target_status: bounded-support
+source_note: docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md
+runner: scripts/mesoscopic_surrogate_threshold_2d.py
+runner_cache: logs/runner-cache/mesoscopic_surrogate_threshold_2d.txt
+active_route: exact_runner_packet_repair
+hard_residual: null
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md
+  - scripts/mesoscopic_surrogate_threshold_2d.py
+  - logs/runner-cache/mesoscopic_surrogate_threshold_2d.txt
+open_imports: []
+no_go_routes: []
+review_disposition: pass
+pr_status: pending
+next_exact_action: commit, push, and open the physics-loop review PR
+stop_condition: verified audit-ready bounded computation packet

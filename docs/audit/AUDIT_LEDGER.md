@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 359 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2800 |
+| unaudited | 2799 |
 | audit_in_progress | 22 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 51 |
-| ~~audited_failed~~ | 4 |
+| ~~audited_failed~~ | 5 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 451 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 23 |
-| `audited_failed` | 26 |
+| `audited_failed` | 27 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 15 |
-| `unaudited` | 3150 |
+| `unaudited` | 3149 |
 
 | claim_type | count |
 |---|---:|
@@ -674,6 +674,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
+| `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -3415,6 +3416,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The integrand separates as exp((beta/3)A^0) exp((beta/3)A^rim) exp((beta/3)A^far) on a finite product Haar space, and compactness/continuity gives bounded measurability, so the product integral factors. For the projection statement, only the W-independent far factor is pulled through P_cls; the W-dependent A^0 factor must be treated as part of the marked/rim factor.
 - **rationale:** The audited theorem is a standard finite product-measure factorization under an explicitly supplied support-separation hypothesis, not a derivation of the physical support partition. No cited upstream authority is needed for this bounded mathematical step, and the displayed beta/3 normalization cancels consistently through the separated exponential factors. The runner supports the claim with exact finite product and scalar-projection checks plus artifact checks, but the clean closure rests on the independent product-measure argument. The verdict does not cover the temporal-gauge compression bridge, the actual Wilson-slab rim/far partition, or beta-six numerical plaquette evaluation.
 - **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The claimed finite-lattice transfer-state realization of marked-plaquette expectations, including transfer-operator positivity and identification with the explicit SU(3) character-recurrence operator; the narrower local character recurrence was also audited.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00070-gauge_vacuum_plaquette_trans`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because the kernel is pointwise positive and symmetric, the note concludes that it defines a positive self-adjoint transfer operator and hence a positive transfer state.  _(class `A`)_
+- **chain closes:** False — Pointwise positivity of a symmetric integral kernel implies positivity preservation, not positive-semidefiniteness of the Hilbert-space operator. The packet also does not establish that an arbitrary marked plaquette, particularly a mixed temporal plaquette, is represented by the asserted one-slice multiplication operator.
+- **rationale:** The SU(3) character identities and the symmetry of the truncated recurrence matrix are valid algebraic checks, but they do not verify the load-bearing transfer construction. The runner never constructs the transfer kernel, tests operator positive-semidefiniteness, proves reflection positivity, or verifies the plaquette-insertion trace identity; its operator-realization PASS depends only on recurrence and truncated-matrix symmetry. Consequently the advertised transfer-state spectral-measure theorem does not follow from the restricted packet.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1 contains multiple OPEN or UNTESTED transfer-positivity and insertion routes.
+    - N2 retains two independent unresolved walls.
+    - N3 identifies hidden source-surface and observable-orientation assumptions.
+    - N5 finds untested resolutions behind the claim that only beta=6 state identification remains.
 
 ### `generation_axiom_boundary_note`
 

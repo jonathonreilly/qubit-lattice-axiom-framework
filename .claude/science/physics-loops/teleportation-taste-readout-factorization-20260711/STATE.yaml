@@ -14,6 +14,6 @@ files_touched:
 open_imports: []
 no_go_routes: []
 review_disposition: pass
-pr_status: pending
-next_exact_action: "Commit the review-clean block, push its science-fix branch, and open the review PR."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5194"
+next_exact_action: "Let PR #5194 complete CI and receive independent post-landing re-audit; do not broaden the claim to physical apparatus closure."
 stop_condition: "The scoped factorization artifact is review-clean and packaged for independent re-audit."

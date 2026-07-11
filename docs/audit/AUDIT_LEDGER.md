@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 83 |
+| **retained** | 84 |
 | **retained_no_go** | 27 |
 | **retained_bounded** | 356 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 4 |
 | unaudited | 2826 |
-| audit_in_progress | 24 |
+| audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
@@ -43,8 +43,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 24 |
-| `audited_clean` | 448 |
+| `audit_in_progress` | 23 |
+| `audited_clean` | 449 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 28 |
@@ -121,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
-| `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -200,6 +199,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1746,6 +1746,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source performs an actual amplitude propagation, detector probability, centroid, Born-proxy, weak-source scaling, and gamma sweep computation rather than printing constants. Within the explicitly bounded runner-defined row, the stdout reproduces the note's load-bearing numerical claims up to the stated machine-precision Born-proxy variation.
 - **rationale:** The claim is narrow enough to match the evidence: it asserts only survival on the runner-defined grown row at fixed drift, restore, and seeds. The runner code computes the reported quantities from generated geometry and propagation rules, and the completed runner output supports exact gamma=0 reduction, machine-clean Born proxy, weak-field F~M near 1, and the TOWARD-to-AWAY crossover. No external comparator, cross-note input, or definitional renaming is load-bearing for the scoped conclusion.
 - **auditor confidence:** medium
+
+### `clifford_chirality_dimension_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone complex Clifford-algebra parity theorem: an internal chirality involution in Cl(p,q) exists iff p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise d_s=3 implies d_t is odd.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00352-clifford_chirality_dimension`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Moving gamma_mu through the other n-1 generators gives omega gamma_mu = (-1)^(n-1) gamma_mu omega, while the Clifford-basis parity condition shows that an element anticommuting with every generator exists only for the full volume monomial when n is even.  _(class `A`)_
+- **chain closes:** True — The volume-element sign and the classification of the simultaneous anticommutant follow directly from the Clifford basis and pairwise anticommutation relations. The accepted Lattice premise supplies only d_s=3, after which the d_t parity conclusion is immediate under the explicitly stated total-Clifford hypothesis.
+- **rationale:** The general result closes through symbolic Clifford-algebra sign and basis-parity arguments, independently of the finite runner enumeration. The runner genuinely constructs matrix generators and computes the asserted relations for n=1 through 6; it neither prints unsupported constants nor imports fitted or external comparison values. Its finite floating-point checks are corroborative smoke tests, while the source proof supplies the all-n closure. The sole cited authority is an accepted axiom premise and is correctly used only to fix the spatial count d_s=3.
+- **auditor confidence:** high
 
 ### `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`
 

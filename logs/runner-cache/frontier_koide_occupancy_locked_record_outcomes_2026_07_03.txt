@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py
-runner_sha256: 4d7432857eb6fbbd3682b88bff1a4af3a353caf13f85cedf8482872900251340
+runner_sha256: 0148f7551343c471b947a9b6f2ac865ee65f4eb0130b67eaae8d9e7e47032d93
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.27
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 CHECK 01: PASS -- live quote guard: record locks exactly one admissible local possibility
@@ -17,12 +17,12 @@ CHECK 08: PASS -- T1 negative control: conjugate contamination before K-reality 
 CHECK 09: PASS -- T2 orbit grading assigns one slot to one locked record-outcome
 CHECK 10: PASS -- T2 sector grading makes one locked complex outcome into two registered data
 CHECK 11: PASS -- T2 sector grading changes the slot count by the Re/Im split rather than record content alone
-CHECK 12: PASS -- T2 negative control: two registered data change the doublet weight by factor 2
-CHECK 13: PASS -- T2 factor-2 slot change reproduces r=1 versus r=1/2 exactly
+CHECK 12: PASS -- T2 normalization fact DECOUPLED from r: Z_sector/Z_orbit=2 is a true normalization/det-power fact, but the honest Gaussian moment gives the same <|b|^2> and r=1 for both bookkeepings, so Z_d does NOT set r (rho-map withdrawn; companion PR #5162)
+CHECK 13: PASS -- T2 r-endpoints from equipartition-law GRANULARITY (not the Z-ratio): per-real-mode law (sector cell) solves exactly to r=1, Q=1; per-outcome-cell law E_s=E_d (orbit cell) solves exactly to r=1/2, Q=2/3 -- quantum eps cancels, nothing hard-coded
 SUMMARY files written: docs/KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md; scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py
 SUMMARY sharpest remaining bridge sentence: one record locking one admissible local possibility is one statistical slot, and the relevant locked possibilities for the generation doublet are the K/CPT record-outcome orbits rather than the real components of the fluctuation coordinate.
 SUMMARY walls dodged: category-slip by counting record-outcomes only; measure-neutrality by not using J_cs as selector.
-SUMMARY uncertainty for supervisor: T2 remains a collision exhibit under the supplied one-record-one-slot reading.
+SUMMARY repair 2026-07-11 (companion PR #5162): inherited rho-map r-attribution removed; Z_sector/Z_orbit=2 relabeled a normalization/det-power fact decoupled from r; r-endpoints now from equipartition-law granularity (per real mode r=1 / per outcome cell r=1/2). T2 remains a collision exhibit under the supplied one-record-one-slot reading.
 TOTAL: PASS=13 FAIL=0
 
 ----- stderr -----

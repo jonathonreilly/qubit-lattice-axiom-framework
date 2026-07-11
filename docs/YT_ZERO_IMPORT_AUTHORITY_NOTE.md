@@ -3,7 +3,10 @@
 **Date:** 2026-04-17
 **Type:** positive_theorem
 **Status:** supported canonical-bare Ward-ratio core (no fitted or observational
-SM inputs) + conditional Planck-surface and low-energy package
+SM inputs); the Planck-surface and low-energy package is excluded from this
+note's claim surface (2026-07-10 narrowing) and retained below as conditional
+context only, pending the shared-tadpole-dressing/physical-readout bridge
+theorem and the `kappa_Y = 0` selector theorem
 **Primary runner:** `scripts/frontier_yt_ward_identity_derivation.py` ([scripts/frontier_yt_ward_identity_derivation.py](../scripts/frontier_yt_ward_identity_derivation.py))
 **Additional primary runner:** `scripts/frontier_yt_color_projection_correction.py`
 **Supporting runners:** `scripts/frontier_yt_explicit_systematic_budget.py`,
@@ -41,7 +44,12 @@ Use this note together with:
 
 Do not treat older backward-Ward / route-history notes as competing authority.
 
-## Current strongest package read
+## Conditional context (excluded from claim surface): current strongest package read
+
+Nothing in this section is part of this note's citable claim surface
+(2026-07-10 narrowing; see the dated downstream-hygiene line in the Honest
+boundary section). The values are retained as conditional context for the
+record.
 
 | Observable | Framework result | Comparator | Deviation |
 |---|---|---|---|
@@ -57,10 +65,14 @@ under the selector condition stated below.
 
 ## Safe claim
 
-The current package can safely say:
+After the 2026-07-10 narrowing, this note's audited claim surface is exactly:
 
 - the canonical-bare matrix-element ratio is exact on the bounded Ward
   surface: `y_t_bare / g_bare = 1 / sqrt(6)`
+
+Everything below in this section is EXCLUDED from this note's claim surface
+and recorded as conditional context only:
+
 - conditional on an accepted shared-tadpole-dressing and physical-readout
   bridge, that bare ratio lifts to the Planck-surface statement
   `y_t(M_Pl) / g_s(M_Pl) = 1 / sqrt(6)`
@@ -171,13 +183,41 @@ The current package does **not** claim:
 - an unconditional derivation of the Yukawa-side selector `kappa_Y = 0` (the
   low-energy package is conditional on it)
 
+**2026-07-10 downstream hygiene.** This note's citable claim surface is
+exactly the canonical-bare Ward-ratio core
+`y_t_bare / g_bare = 1 / sqrt(6)` on the bounded Ward surface. Downstream
+notes must not cite this note as authority for the Planck-surface ratio
+`y_t(M_Pl) / g_s(M_Pl)`, the connected-trace factor `sqrt(8/9)`, the
+low-energy `y_t(v)` endpoint, either `m_t(pole)` central value, or any precision
+budget quoted here; those outputs are conditional context pending the
+shared-tadpole-dressing and physical-readout bridge theorem and the Yukawa-side
+selector theorem (`kappa_Y = 0`), and are to be audited separately once those
+authorities exist. This dated line itself moves the note hash so the row
+re-enters for re-audit.
+
 So the right read is:
 
 > the canonical-bare Ward ratio `y_t_bare/g_bare = 1/sqrt(6)` is the supported
-> core; its Planck-surface lift is conditional on shared dressing and physical
+> core and this note's only citable claim; everything else is conditional
+> context. Its Planck-surface lift is conditional on shared dressing and physical
 > readout, and the renormalized low-energy `y_t` / `m_t` package is additionally
 > conditional on the underived Yukawa-side selector `kappa_Y = 0`. No fitted or
 > observational SM input is used on the framework side. The current primary
 > precision caveat is a standard-method residual budget of order `~1.95%`, and
 > the older Schur bridge survives as an independent cross-check with its own
 > tighter but route-specific budget.
+
+## Repair Note
+
+**2026-07-10 claim-surface narrowing.** The audit of this row returned
+`audited_conditional` with repair class `scope_too_broad`: the audited claim
+surface bundled the exact canonical-bare ratio with the conditional
+Planck-surface and low-energy `y_t`/`m_t` package and its precision
+qualifications, while the shared-dressing/physical-readout bridge and the
+`kappa_Y = 0` selector remain underived. Per the auditor's repair instruction,
+the claim surface is now narrowed to the canonical-bare Ward-ratio core; the
+Planck-surface and low-energy package (including all precision budgets) is
+excluded from this note's claim surface and retained as conditional context
+only, with a dated downstream-hygiene line in the Honest boundary section. No
+computational content changed; the primary runner's load-bearing blocks are
+untouched, with new note-surface checks pinning the narrowed wording.

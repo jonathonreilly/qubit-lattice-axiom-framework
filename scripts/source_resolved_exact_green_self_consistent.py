@@ -32,8 +32,15 @@ PW = 3
 SOURCE_CLUSTER = [(0, 0), (1, 0), (-1, 0), (0, 1), (0, -1)]
 FIELD_TARGET_MAX = 0.02
 CALIBRATED_GAIN = 1.7578903308081324
+CALIBRATED_GAIN_ROLE = "frozen_input_not_independent_amplitude_prediction"
 GREEN_EPS = 0.5
 GREEN_MU = 0.08
+INSTANTANEOUS_EPS = 0.1
+SOURCE_Z = 3.0
+PROPAGATION_K = 5.0
+DECLARED_SOURCE_STRENGTHS = (0.001, 0.002, 0.004, 0.008)
+EXPECTED_IN_BOUNDS_SOURCE_NODES = 4
+EXPECTED_SOURCE_POSITIONS = [(2.0, 0.0, 3.0), (2.0, 0.25, 3.0), (2.0, -0.25, 3.0), (2.0, 0.0, 2.75)]
 ZERO_SOURCE_TOL = 1e-12
 EXPONENT_TARGET = 1.0
 EXPONENT_TOL = 5e-3
@@ -98,6 +105,20 @@ def _field_abs_max(layers: list[list[float]]) -> float:
     return max(abs(v) for row in layers for v in row)
 
 
+def _instantaneous_field_layers(lat: m.Lattice3D, source_strength: float) -> list[list[float]]:
+    """Frozen instantaneous comparator with its softening explicit locally."""
+    source_idx = lat.nmap[(lat.nl // 3, 0, round(SOURCE_Z / lat.h))]
+    sx, sy, sz = lat.pos[source_idx]
+    layers = [[0.0 for _ in range(lat.npl)] for _ in range(lat.nl)]
+    for layer in range(lat.nl):
+        ls = lat.layer_start[layer]
+        for i in range(lat.npl):
+            x, y, z = lat.pos[ls + i]
+            rho = math.sqrt((x - sx) ** 2 + (y - sy) ** 2 + (z - sz) ** 2) + INSTANTANEOUS_EPS
+            layers[layer][i] = source_strength / rho
+    return layers
+
+
 def _normalize_weights(vals: list[float]) -> list[float]:
     total = sum(vals)
     if total <= 1e-30:
@@ -113,7 +134,7 @@ def main() -> int:
     lat = m.Lattice3D.build(NL_PHYS, PW, H)
     source_nodes = _source_cluster_nodes(lat)
     zero_field = [[0.0 for _ in range(lat.npl)] for _ in range(lat.nl)]
-    free = lat.propagate(zero_field, m.K)
+    free = lat.propagate(zero_field, PROPAGATION_K)
     z_free = m._centroid_z(free, lat)
 
     print("=" * 84)
@@ -122,7 +143,7 @@ def main() -> int:
     print("  comparison: self-consistent field vs instantaneous 1/r field")
     print("=" * 84)
     print(f"h={H}, W={PW}, L={NL_PHYS}, source_cluster={len(source_nodes)} nodes")
-    print(f"field kernel: exp(-mu r)/(r+eps), mu={GREEN_MU}, eps={GREEN_EPS}")
+    print(f"field kernel: exp(-mu rho)/rho, rho=distance+eps, mu={GREEN_MU}, eps={GREEN_EPS}")
     print(f"source strengths: {m.SOURCE_STRENGTHS}")
     print(f"target max |f|: {FIELD_TARGET_MAX}")
     print(f"calibrated gain input: {CALIBRATED_GAIN:.12e}")
@@ -135,8 +156,11 @@ def main() -> int:
     gain = CALIBRATED_GAIN
 
     zero_dyn = _source_resolved_green_field(lat, 0.0, source_nodes, base_weights)
-    zero_amps = lat.propagate([[gain * v for v in row] for row in zero_dyn], m.K)
+    zero_scaled = [[gain * v for v in row] for row in zero_dyn]
+    zero_amps = lat.propagate(zero_scaled, PROPAGATION_K)
     zero_delta = m._centroid_z(zero_amps, lat) - z_free
+    zero_field_max = _field_abs_max(zero_scaled)
+    zero_state_max_delta = max(abs(a - b) for a, b in zip(zero_amps, free))
 
     print("REDUCTION CHECK")
     print(f"  zero-source dynamic shift: {zero_delta:+.6e}")
@@ -153,18 +177,18 @@ def main() -> int:
     max_fields: list[float] = []
 
     for s in m.SOURCE_STRENGTHS:
-        inst_field = m._instantaneous_field_layers(lat, s, m.SOURCE_Z)
+        inst_field = _instantaneous_field_layers(lat, s)
 
         # One self-consistency update: build a Green field, propagate once,
         # then reweight the source cluster from the propagated amplitudes.
         green0 = [[gain * v for v in row] for row in _source_resolved_green_field(lat, s, source_nodes, base_weights)]
-        amps0 = lat.propagate(green0, m.K)
+        amps0 = lat.propagate(green0, PROPAGATION_K)
         cluster_power = [abs(amps0[i]) ** 2 for i in source_nodes]
         weights_sc = _normalize_weights(cluster_power)
         green_field = [[gain * v for v in row] for row in _source_resolved_green_field(lat, s, source_nodes, weights_sc)]
 
-        inst_amps = lat.propagate(inst_field, m.K)
-        green_amps = lat.propagate(green_field, m.K)
+        inst_amps = lat.propagate(inst_field, PROPAGATION_K)
+        green_amps = lat.propagate(green_field, PROPAGATION_K)
 
         inst_delta = m._centroid_z(inst_amps, lat) - z_free
         green_delta = m._centroid_z(green_amps, lat) - z_free
@@ -199,12 +223,51 @@ def main() -> int:
     print("ASSERTION SUMMARY")
     print("-" * 84)
     record(
-        "zero-source exactness is preserved",
-        abs(zero_delta) <= ZERO_SOURCE_TOL,
-        f"zero_delta={zero_delta:+.12e}; tolerance={ZERO_SOURCE_TOL:.1e}",
+        "frozen finite-run inputs match the declared claim surface",
+        (
+            H == 0.25
+            and PW == 3
+            and NL_PHYS == 6
+            and SOURCE_CLUSTER == [(0, 0), (1, 0), (-1, 0), (0, 1), (0, -1)]
+            and len(source_nodes) == EXPECTED_IN_BOUNDS_SOURCE_NODES
+            and [lat.pos[i] for i in source_nodes] == EXPECTED_SOURCE_POSITIONS
+            and tuple(m.SOURCE_STRENGTHS) == DECLARED_SOURCE_STRENGTHS
+            and m.SOURCE_Z == SOURCE_Z == 3.0
+            and m.K == PROPAGATION_K == 5.0
+            and m.BETA == 0.8
+            and m.MAX_D_PHYS == 3.0
+            and CALIBRATED_GAIN == 1.7578903308081324
+            and CALIBRATED_GAIN_ROLE == "frozen_input_not_independent_amplitude_prediction"
+            and FIELD_TARGET_MAX == 0.02
+            and INSTANTANEOUS_EPS == 0.1
+            and GREEN_MU == 0.08
+            and GREEN_EPS == 0.5
+            and ZERO_SOURCE_TOL == 1e-12
+            and EXPONENT_TARGET == 1.0
+            and EXPONENT_TOL == 5e-3
+            and TABLE_REL_TOL == 5e-4
+            and TABLE_ABS_TOL == 5e-8
+        ),
+        (
+            f"h={H}, W={PW}, L={NL_PHYS}, source_nodes={len(source_nodes)}, "
+            f"source_positions={[lat.pos[i] for i in source_nodes]}, strengths={tuple(m.SOURCE_STRENGTHS)}, "
+            f"source_z={SOURCE_Z}, K={PROPAGATION_K}, beta={m.BETA}, max_d={m.MAX_D_PHYS}, "
+            f"gain={CALIBRATED_GAIN:.12e}, target={FIELD_TARGET_MAX}, mu={GREEN_MU}, "
+            f"green_eps={GREEN_EPS}, instantaneous_eps={INSTANTANEOUS_EPS}, "
+            f"zero_tol={ZERO_SOURCE_TOL}, exponent_tol={EXPONENT_TOL}, "
+            f"table_rel_tol={TABLE_REL_TOL}, table_abs_tol={TABLE_ABS_TOL}"
+        ),
     )
     record(
-        "calibrated gain is the frozen input that sets the base-field cap",
+        "zero source gives an exactly zero field and the identical free propagated state",
+        zero_field_max == 0.0 and zero_state_max_delta == 0.0 and abs(zero_delta) <= ZERO_SOURCE_TOL,
+        (
+            f"max|zero_field|={zero_field_max:.12e}; max|zero_amps-free|={zero_state_max_delta:.12e}; "
+            f"zero_delta={zero_delta:+.12e}; centroid_tolerance={ZERO_SOURCE_TOL:.1e}"
+        ),
+    )
+    record(
+        "calibration arithmetic reproduces the declared base-field cap",
         abs(gain * ref_max - FIELD_TARGET_MAX) <= TABLE_ABS_TOL,
         f"gain={gain:.12e}; base_cap={gain * ref_max:.12e}; target={FIELD_TARGET_MAX:.12e}",
     )
@@ -251,7 +314,10 @@ def main() -> int:
     print()
     print(f"PASSED: {n_pass}/{n_total}")
     print("SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_ASSERTIONS=" + ("TRUE" if n_pass == n_total else "FALSE"))
-    print("CALIBRATED_GAIN_IS_INPUT=TRUE")
+    gain_is_declared_input = CALIBRATED_GAIN_ROLE == "frozen_input_not_independent_amplitude_prediction"
+    print("CALIBRATED_GAIN_IS_INPUT=" + ("TRUE" if gain_is_declared_input else "FALSE"))
+    print(f"CALIBRATED_GAIN_DECLARED_ROLE={CALIBRATED_GAIN_ROLE}")
+    print("COMPARATOR_AMPLITUDE_IS_INDEPENDENT_PREDICTION=FALSE")
     print("SOURCE_RESOLVED_GREEN_FULL_SELF_CONSISTENT_FIELD_THEORY=FALSE")
     print("RESIDUAL_SCOPE=fully_converged_self_consistent_field_theory_and_uncalibrated_amplitude")
     return 0 if n_pass == n_total else 1

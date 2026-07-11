@@ -1,0 +1,21 @@
+loop: teleportation-resource-fidelity-closure-20260711
+mode: run
+target: retained
+target_claim_type: bounded_theorem
+runtime: 15m
+cycles_completed: 1
+active_route: self_contained_pauli_channel_and_bloch_average_derivation
+hard_residual: null
+actual_current_surface_status: proposed_retained
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/TELEPORTATION_RESOURCE_FIDELITY_NOTE.md
+  - scripts/frontier_teleportation_resource_fidelity.py
+  - logs/runner-cache/frontier_teleportation_resource_fidelity.txt
+open_imports: []
+no_go_routes: []
+review_disposition: pass
+pr_status: outer_science_fix_integrator_owned
+next_exact_action: independent re-audit of teleportation_resource_fidelity_note
+stop_condition: bounded fixed-protocol derivation and local review pass achieved

@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_resource_fidelity.py
-runner_sha256: d9ca0c36744f9aa71687c58e8fcd1437471a39eefac4857d920096d3a60e10e9
+runner_sha256: 6aa9f549682bfa1e54e433ac3d2d65536a714d0fbbd0f769842dc252d9c41f7a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.87
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 BOUNDED NON-IDEAL BELL-RESOURCE TELEPORTATION-FIDELITY HARNESS
-Status: planning / first artifact; quantum state teleportation only
+Status: proposed_retained bounded fixed-protocol theorem; independent audit required
 Random input states: 128 plus 6 Pauli-axis probes (seed=20260425)
 Random arbitrary resource matrices: 4
 
@@ -43,6 +43,7 @@ Thresholds and limitations:
   amplitude damping on both halves numeric fixed-protocol threshold: gamma < 0.9999999851
   amplitude damping on Bob half numeric fixed-protocol threshold: gamma < 0.8284271247
   max exact-vs-Bell-overlap formula error in this run: 4.441e-16
+  max Bell-operator-basis Pauli-reduction error in this run: 6.661e-16
   random arbitrary resources beating 2/3 in this seed: 0/4
   Bell relabeling may rescue a resource whose largest Bell overlap is not Phi+;
   this first harness reports that limitation but does not optimize measurements.
@@ -58,6 +59,7 @@ No-signaling diagnostics:
 Acceptance gates:
   all resource matrices physical: PASS
   ideal resource fidelity: PASS
+  Bell-operator-basis Pauli reduction: PASS
   fixed Bell-overlap formula: PASS
   isotropic threshold bracket: PASS
   Bob pre-message input-independence: PASS
@@ -68,4 +70,3 @@ Claim boundary:
   It is not matter teleportation, mass transfer, charge transfer, or FTL transport.
 
 ----- stderr -----
-

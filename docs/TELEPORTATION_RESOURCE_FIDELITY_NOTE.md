@@ -1,14 +1,15 @@
 # Teleportation Resource-Fidelity Note
 
 **Date:** 2026-04-25
-**Status:** bounded open-gate derivation artifact; not a manuscript claim surface
+**Status:** proposed_retained bounded fixed-protocol theorem; independent audit required
+**Type:** bounded_theorem
 **Runner:** `scripts/frontier_teleportation_resource_fidelity.py`
 
 ## Scope
 
-This note records a bounded stress test of the ideal Bell-resource assumption
-in the native teleportation lane. The scope is ordinary quantum state
-teleportation only.
+This note proves and stress-tests a bounded theorem about the ideal
+Bell-measurement/Pauli-correction protocol. The scope is ordinary quantum
+state teleportation only.
 
 The harness keeps the Bell measurement, two-bit classical record, and Bob-side
 Pauli correction ideal. It varies only the shared two-qubit resource density
@@ -62,8 +63,9 @@ the exact average fidelity obeys:
 F_avg = (1 + 2 * <Phi+|rho|Phi+>) / 3
 ```
 
-Therefore the fixed-protocol threshold for beating the qubit classical
-benchmark is:
+Therefore the fixed-protocol threshold for beating the optimal
+measure-and-prepare benchmark for a Haar-uniform unknown pure qubit, with no
+shared entanglement, is:
 
 ```text
 F_avg > 2/3  iff  <Phi+|rho|Phi+> > 1/2
@@ -156,22 +158,88 @@ just the identity-error probability
 F_e = <Phi+|J(T_rho)|Phi+> = p_00 = <Phi+|rho_RB|Phi+>.
 ```
 
-For a trace-preserving single-qubit channel, the Haar-average pure-state
-fidelity is related to entanglement fidelity by
+The standard Choi shortcut for a trace-preserving single-qubit channel would
+now give
 
 ```text
 F_avg = (2 F_e + 1) / 3.
 ```
 
-Combining the last two equations gives the fixed-protocol formula used by the
-runner:
+The same step follows directly here, without using that general
+channel-fidelity theorem. Write a pure input as
+
+```text
+sigma_r = (I + r_x X + r_y Y + r_z Z) / 2,    |r| = 1.
+```
+
+For the Pauli channel above (where `ZX` differs from `Y` only by phase), its
+input-output fidelity is
+
+```text
+Tr[sigma_r T_rho(sigma_r)]
+    = p_00 + p_01 r_x^2 + p_11 r_y^2 + p_10 r_z^2.
+```
+
+Rotational invariance of the Haar measure gives the three equal moments
+`<r_x^2> = <r_y^2> = <r_z^2>`; because their sum is `|r|^2=1`, each is `1/3`.
+Since the Bell probabilities sum to one,
+
+```text
+F_avg = p_00 + (p_01 + p_11 + p_10) / 3
+      = p_00 + (1 - p_00) / 3
+      = (1 + 2 p_00) / 3.
+```
+
+Thus the average-fidelity identity follows entirely from the displayed
+fixed-protocol Pauli reduction and the elementary unit-sphere moment. The Choi
+relation is a compact equivalent check, not a load-bearing external import.
+
+Both the direct Bloch-sphere average and the Choi shortcut give the
+fixed-protocol formula used by the runner:
 
 ```text
 F_avg = (1 + 2 * <Phi+|rho_RB|Phi+>) / 3.
 ```
 
-The qubit classical benchmark is `2/3`, so this fixed convention beats the
-benchmark exactly when:
+### Classical comparator
+
+The `2/3` comparator is also derivable on the stated input ensemble. Any
+measure-and-prepare qubit channel without shared entanglement has the form
+
+```text
+E_MP(sigma) = sum_y Tr(M_y sigma) tau_y,
+    M_y >= 0,    sum_y M_y = I,    tau_y >= 0,    Tr(tau_y) = 1.
+```
+
+For a Haar-uniform pure qubit `sigma`, the elementary second-moment identity
+is
+
+```text
+<sigma tensor sigma>_Haar = (I + Swap) / 6.
+```
+
+Indeed, the average is unitary-invariant, has unit trace, and is supported on
+the three-dimensional symmetric two-qubit subspace, so it is the normalized
+symmetric projector `(I+Swap)/6`.
+
+It follows that
+
+```text
+F_avg(E_MP)
+  = sum_y <Tr(M_y sigma) Tr(tau_y sigma)>_Haar
+  = (1/6) sum_y [Tr(M_y) + Tr(M_y tau_y)]
+  <= (1/6) sum_y [Tr(M_y) + Tr(M_y)]
+  = 2/3.
+```
+
+The inequality uses `0 <= tau_y <= I`, and the last equality uses
+`sum_y M_y=I` and `Tr(I)=2`. Equality is attained by measuring in any
+orthonormal qubit basis and preparing the recorded basis state, so `2/3` is
+the optimum for this comparator class rather than an admitted numerical
+convention.
+
+The fixed teleportation convention therefore beats that comparator exactly
+when:
 
 ```text
 <Phi+|rho_RB|Phi+> > 1/2.
@@ -200,6 +268,7 @@ isotropic CHSH Horodecki threshold: v > 0.7071067812
 amplitude damping on both halves numeric fixed-protocol threshold: gamma < 0.9999999851
 amplitude damping on Bob half numeric fixed-protocol threshold: gamma < 0.8284271247
 max exact-vs-Bell-overlap formula error in this run: 4.441e-16
+max Bell-operator-basis Pauli-reduction error in this run: 6.661e-16
 random arbitrary resources beating 2/3 in this seed: 0/4
 ```
 
@@ -244,6 +313,7 @@ The first run reported `PASS` for:
 
 - all resource matrices physical;
 - ideal resource fidelity;
+- Bell-operator-basis Pauli reduction;
 - fixed Bell-overlap formula;
 - isotropic threshold bracket;
 - Bob pre-message input-independence;
@@ -251,7 +321,8 @@ The first run reported `PASS` for:
 
 ## Limitations
 
-This is still a bounded open-gate artifact.
+This is a bounded fixed-protocol theorem, not closure of the broader native
+teleportation lane.
 
 - The Bell resource is supplied as a density matrix. The runner does not derive
   it from the Poisson-coupled CHSH Hamiltonian or any native preparation
@@ -268,8 +339,9 @@ This is still a bounded open-gate artifact.
 
 ## Status
 
-The ideal Bell-resource assumption is now bounded by a concrete fidelity
-harness. The useful fixed-protocol resource condition is explicit:
-`<Phi+|rho|Phi+> > 1/2`. This closes the supplied-density-matrix,
-fixed-protocol threshold derivation only; the broader teleportation lane
-remains open-gate outside this narrow scope.
+For every supplied physical two-qubit density matrix, the displayed ideal
+Bell-measurement/Pauli-correction protocol is exactly the Bell-diagonal Pauli
+channel proved above. Its useful-resource condition is therefore exactly
+`<Phi+|rho|Phi+> > 1/2`. This is proposed_retained only as a bounded theorem
+on that fixed protocol, pending independent re-audit; the broader native
+teleportation lane remains open-gate outside this narrow scope.

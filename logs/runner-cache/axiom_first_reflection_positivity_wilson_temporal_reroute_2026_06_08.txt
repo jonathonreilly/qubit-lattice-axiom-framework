@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py
-runner_sha256: 7495dca0c4eb20494165ab96791c01bde4c219d5232d09686e0241676eec03b7
+runner_sha256: 5cd408f9656f7ab2b9a1a5c8d6c2bcc039cc0499cf4393f929c6516e9b1a01bd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.19
+elapsed_sec: 1.12
 status: ok
 ----- stdout -----
 Axiom-first RP Wilson temporal-gauge reroute guard
-note: /Users/jonBridger/Toy Physics/.claude/worktrees/science-issues-audit-90e897/docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
-base runner: /Users/jonBridger/Toy Physics/.claude/worktrees/science-issues-audit-90e897/scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
+note: /private/tmp/review-loop-runner-fixes-20260711-5129/docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
+base runner: /private/tmp/review-loop-runner-fixes-20260711-5129/scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
 
 ----------------------------------------------------------------------------------------
 C1-C6 free staggered two-step construction reused from retained runner

@@ -11,6 +11,8 @@ cache, vocabulary lint, review loop, audit validation pipeline, strict audit
 lint, and `git diff --check` pass. Pipeline-generated authority files were
 stripped after validation.
 
-The exact next action is to open the review PR. After landing, the independent
-audit lane must decide the edited row's effective status and then recheck the
-dependent `lattice_nn_distance_law_note`; this branch authors neither verdict.
+The exact next action is to review and land
+[PR #5155](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5155).
+After landing, the independent audit lane must decide the edited row's
+effective status and then recheck the dependent
+`lattice_nn_distance_law_note`; this branch authors neither verdict.

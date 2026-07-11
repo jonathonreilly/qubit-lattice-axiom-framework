@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Check the finite-link/Wilson beta=6 bridge for the g_bare parent row.
+"""Check the finite-link/Wilson split-redundancy bounded theorem.
 
 This runner deliberately stays source-side. It does not read audit ledgers,
 audit queues, publication matrices, or effective-status files.
 
-2026-07-01 same-slot surface-definition repair: the runner now CONSTRUCTS
-both scalar slots from the supplied link/plaquette data and compares them,
-instead of assigning ``g_wilson_sq = g_link_sq``. The checked content:
+The runner constructs both scalar slots from the supplied link/plaquette data
+and compares them without assigning ``g_wilson_sq = g_link_sq``. The checked
+content is algebraic; the same-slot convention is guarded on a separate meta
+surface:
 
   T1  plaquette exponent construction: for links built from canonical
       su(3) coordinates C at spacing a, the plaquette exponent is
@@ -20,26 +21,25 @@ instead of assigning ``g_wilson_sq = g_link_sq``. The checked content:
       and gamma * F[C/gamma; gamma] = F[C; 1] exactly. The split scalar is
       not a function of the constructed surface data. Contrast: a genuine
       dilation exp(i a s C) with s != 1 CHANGES the link — that is the
-      freedom the rigidity theorem removes; the split freedom is what the
-      declared surface definition (SD) fixes.
+      freedom the rigidity theorem removes; choosing the split freedom is
+      outside this theorem.
   T3  matched slot, constructed: the Wilson small-a matching demand
       applied to the constructed plaquette action yields
       gamma*(beta)^2 = 2 N_c / beta for each tested beta (never assigned).
   T4  link slot, constructed: the canonical-coordinate readback of the
       constructed link via the principal logarithm gives s = 1.
-  T5  comparison: the two constructed slots agree at beta = 6 and disagree
-      at beta in {24, 3/2, 12} on identical link/plaquette data
+  T5  comparison: the two constructed slots agree at beta = 2 N_c and
+      disagree at beta in {24, 3/2, 12} on identical link/plaquette data
       (mismatched-slot exhibit; pin equivalence gamma* = s iff
       beta = 2 N_c).
-  T6  exact rational composition under the declared surface definition
-      (SD): g_bare := s = 1 and beta * g_bare^2 = 2 N_c give beta = 6 at
-      N_c = 3, plus the exact mismatched family beta = 2 N_c / gamma^2.
-  T7  source-boundary guards on the bridge/parent/rigidity/Wilson notes.
+  T6  source-boundary guards: convention content is absent from the bounded
+      theorem. The separate meta convention surface is outside this theorem
+      certificate's dependency set.
 """
 
 from __future__ import annotations
 
-from fractions import Fraction
+import math
 from pathlib import Path
 
 import numpy as np
@@ -259,7 +259,7 @@ def section_C(cfg: FieldConfig) -> None:
     a = 1e-2
     base_links = cfg.links(a)
     base_plaq = cfg.plaquette(a)
-    beta = 6.0
+    beta = 7.0
     base_action = beta * (1.0 - np.trace(base_plaq).real / N_C)
     F_lat = cfg.f_lattice()
 
@@ -337,7 +337,12 @@ def section_D(cfg: FieldConfig, F_lat: np.ndarray) -> dict[float, float]:
     FF = float(Fa @ Fa)
     a = 2e-3
     out: dict[float, float] = {}
-    for beta in (6.0, 24.0, 1.5, 12.0):
+    betas = (2.0 * N_C, 24.0, 1.5, 12.0)
+    check(
+        "tested Wilson matching domain has beta > 0",
+        all(beta > 0.0 for beta in betas),
+    )
+    for beta in betas:
         UP = cfg.plaquette(a)
         s_val = beta * (1.0 - np.trace(UP).real / N_C)
         k = s_val / (a**4 * FF)
@@ -354,6 +359,12 @@ def section_D(cfg: FieldConfig, F_lat: np.ndarray) -> dict[float, float]:
             abs(g2 - g2_pred) / g2_pred < 5e-3,
             f"gamma*^2={g2:.6f}, pred={g2_pred:.6f}",
         )
+        gamma_star = math.sqrt(g2)
+        check(
+            f"beta={beta}: gamma* is the positive matched-coupling root",
+            gamma_star > 0.0 and abs(gamma_star**2 - g2) < 1e-12,
+            f"gamma*={gamma_star:.6f}",
+        )
         check(
             f"beta={beta}: constructed product beta * gamma*^2 -> 2 N_c",
             abs(beta * g2 - 2.0 * N_C) / (2.0 * N_C) < 5e-3,
@@ -361,13 +372,14 @@ def section_D(cfg: FieldConfig, F_lat: np.ndarray) -> dict[float, float]:
         )
         out[beta] = g2
 
-    # Convergence of the constructed matched slot at beta = 6. The trace-level
+    # Convergence of the constructed matched slot at the algebraic pin
+    # beta = 2 N_c. The trace-level
     # O(a) correction cancels by cyclicity (Tr(F [C, F]) = 0 for the linear
     # fields used here), so the remainder is higher order; the check asserts
     # strict convergence plus accuracy, not a specific remainder order.
     Fa2 = float(Fa @ Fa)
-    e_a = abs(matched_slot_sq(cfg, 6.0, 2e-3, Fa2) - 1.0)
-    e_h = abs(matched_slot_sq(cfg, 6.0, 1e-3, Fa2) - 1.0)
+    e_a = abs(matched_slot_sq(cfg, 2.0 * N_C, 2e-3, Fa2) - 1.0)
+    e_h = abs(matched_slot_sq(cfg, 2.0 * N_C, 1e-3, Fa2) - 1.0)
     ratio = e_a / e_h if e_h > 0 else float("inf")
     check(
         "matched-slot construction converges as a -> 0",
@@ -410,73 +422,31 @@ def section_E(configs: list[FieldConfig], matched: dict[float, float]) -> None:
         s_readbacks.append(s_read)
     s_link = s_readbacks[0]
 
+    pin_beta = 2.0 * N_C
+    gamma_pin = math.sqrt(matched[pin_beta])
     check(
-        "slots AGREE at beta = 6: constructed gamma*(6)^2 == constructed s^2",
-        abs(matched[6.0] - s_link**2) < 5e-3,
-        f"gamma*^2={matched[6.0]:.6f}, s^2={s_link**2:.6f}",
+        "positive slots agree at the algebraic pin beta = 2 N_c",
+        abs(gamma_pin - s_link) < 5e-3,
+        f"gamma*={gamma_pin:.6f}, s={s_link:.6f}",
     )
+    gamma_24 = math.sqrt(matched[24.0])
     check(
         "mismatched-slot exhibit at beta = 24: gamma*(24) != s on identical data",
-        abs(matched[24.0] - s_link**2) > 0.5,
-        f"gamma*^2={matched[24.0]:.6f} vs s^2={s_link**2:.6f}",
+        abs(gamma_24 - s_link) > 0.49,
+        f"gamma*={gamma_24:.6f} vs s={s_link:.6f}",
     )
+    gamma_1p5 = math.sqrt(matched[1.5])
     check(
         "mismatched-slot exhibit at beta = 3/2: gamma*(3/2) != s",
-        abs(matched[1.5] - s_link**2) > 0.5,
-        f"gamma*^2={matched[1.5]:.6f}",
+        abs(gamma_1p5 - s_link) > 0.5,
+        f"gamma*={gamma_1p5:.6f}",
     )
+    gamma_12 = math.sqrt(matched[12.0])
     check(
         "mismatched-slot exhibit at beta = 12: gamma*(12) != s",
-        abs(matched[12.0] - s_link**2) > 0.3,
-        f"gamma*^2={matched[12.0]:.6f}",
+        abs(gamma_12 - s_link) > 0.25,
+        f"gamma*={gamma_12:.6f}",
     )
-
-
-# ---------------------------------------------------------------------------
-# Section F: exact rational composition under the declared (SD)
-# ---------------------------------------------------------------------------
-
-def section_F() -> None:
-    print("\nSECTION F: exact composition under the declared surface definition (SD)")
-    print("-" * 78)
-    n_c = Fraction(3)
-    two_n_c = Fraction(2) * n_c
-
-    # Under (SD) the parent surface's Wilson field is the canonical link
-    # coordinate, so g_bare equals the link-canonical slot s = 1 (Section E
-    # constructs s; here the composition is exact rational arithmetic).
-    s_slot = Fraction(1)
-    g_bare_sq = s_slot * s_slot
-    beta = two_n_c / g_bare_sq
-    check("under (SD): g_bare^2 = s^2 = 1", g_bare_sq == Fraction(1))
-    check("under (SD): beta = 2 N_c / g_bare^2 = 6", beta == Fraction(6), f"beta={beta}")
-    check("under (SD): beta * g_bare^2 = 2 N_c", beta * g_bare_sq == two_n_c)
-
-    # Pin equivalence, exact: gamma*^2 = 2 N_c / beta equals s^2 iff beta = 6.
-    check(
-        "pin equivalence forward: beta = 6 gives gamma*^2 = 1 = s^2",
-        two_n_c / Fraction(6) == s_slot**2,
-    )
-    check(
-        "pin equivalence backward: gamma* = s = 1 gives beta = 6",
-        two_n_c / (s_slot**2) == Fraction(6),
-    )
-
-    # Mismatched family: any other split scalar lands off beta = 6.
-    for g2 in (Fraction(1, 2), Fraction(2), Fraction(9, 4)):
-        b = two_n_c / g2
-        check(
-            f"mismatched split gamma^2={g2} gives beta={b} != 6 (family, not the pin)",
-            b != Fraction(6) and b * g2 == two_n_c,
-            f"beta={b}",
-        )
-    # Exact mismatched-slot exhibit at beta = 24.
-    g2_24 = two_n_c / Fraction(24)
-    check(
-        "exhibit beta=24: gamma*^2 = 1/4 != s^2 while beta*gamma*^2 = 2 N_c holds",
-        g2_24 == Fraction(1, 4) and g2_24 != s_slot**2 and Fraction(24) * g2_24 == two_n_c,
-    )
-
 
 # ---------------------------------------------------------------------------
 # Section G: source-boundary guards
@@ -486,7 +456,7 @@ def section_G() -> None:
     print("\nSECTION G: source-boundary guards")
     print("-" * 78)
     paths = {
-        "bridge note": BRIDGE,
+        "bounded theorem note": BRIDGE,
         "parent note": PARENT,
         "finite-link rigidity note": RIGIDITY,
         "Wilson small-a note": WILSON,
@@ -504,12 +474,11 @@ def section_G() -> None:
     rigidity_flat = flat(rigidity_text)
     wilson_flat = flat(wilson_text)
 
-    require_contains("bridge", bridge_flat, "set only by the independent audit lane")
-    require_contains("bridge", bridge_flat, "same scalar slot")
-    require_contains("bridge", bridge_flat, "declared surface definition")
-    require_contains("bridge", bridge_flat, "(SD)")
-    require_contains("bridge", bridge_flat, "not derived from the cited authorities")
-    require_contains("bridge", bridge_flat, "exactly equivalent to the normalization point")
+    require_contains("theorem", bridge_flat, "set only by the independent audit lane")
+    require_contains("theorem", bridge_flat, "non-load-bearing convention context")
+    require_contains("theorem", bridge_flat, "This theorem locates the pin but does not choose it")
+    require_contains("theorem", bridge_text, "gamma*(beta) := +sqrt(2 N_c / beta) > 0")
+    require_contains("theorem", bridge_flat, "equality of the squares is equivalent to equality of the slots themselves")
     require_contains("bridge", bridge_flat, "mismatched-slot")
     require_contains("bridge", bridge_flat, "does not claim:")
     require_contains("bridge", bridge_flat, "Wilson plaquette action-surface selection")
@@ -517,11 +486,26 @@ def section_G() -> None:
     require_contains("bridge", bridge_flat, "a dynamical fixed point")
     require_contains("bridge", bridge_flat, "an audit verdict or any effective-status promotion")
     require_contains("bridge", bridge_flat, "finite-link canonical Wilson surface")
+    require_contains(
+        "bridge",
+        bridge_flat,
+        "This note's audited claim surface is exactly",
+    )
+    require_contains(
+        "bridge",
+        bridge_flat,
+        "2026-07-11 downstream hygiene.** This note's citable surface is Theorems 1–3 and the mismatched-slot exhibit",
+    )
+    require_contains("bridge", bridge_text, "## Repair Note")
     require_absent("bridge", bridge_text, "effective_status:")
     require_absent("bridge", bridge_text, "audit_status:")
     require_absent(
         "bridge", bridge_flat, "This note proves that the scalar in those two statements"
     )
+    require_absent("theorem", bridge_text, "(SD)")
+    require_absent("theorem", bridge_text, "A^a := C^a")
+    require_absent("theorem", bridge_text, "g_bare := s")
+    require_absent("theorem", bridge_text, "At `N_c = 3`, exact rational arithmetic gives `beta = 6`")
 
     require_contains(
         "parent", parent_text, "G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md"
@@ -545,8 +529,8 @@ def section_G() -> None:
 
 
 def main() -> int:
-    print("G_BARE parent finite-link/Wilson beta=6 bridge check")
-    print("(same-slot surface-definition repair: construct and compare, no assignment)")
+    print("G_BARE finite-link/Wilson split-redundancy theorem check")
+    print("(algebraic theorem separated from same-slot convention metadata)")
     print("=" * 78)
 
     rng = np.random.default_rng(SEED)
@@ -557,7 +541,6 @@ def main() -> int:
     section_C(configs[0])
     matched = section_D(configs[0], f_constructed[0])
     section_E(configs, matched)
-    section_F()
     section_G()
 
     print("\nSummary")

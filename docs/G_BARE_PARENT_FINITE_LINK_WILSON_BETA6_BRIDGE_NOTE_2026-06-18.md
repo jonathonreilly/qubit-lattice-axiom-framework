@@ -1,12 +1,6 @@
-# G Bare Parent Finite-Link/Wilson Beta=6 Bridge
+# G Bare Finite-Link/Wilson Split-Redundancy and Pin-Equivalence Theorem
 
-**Date:** 2026-06-18 (same-slot surface-definition repair 2026-07-01: the
-same-scalar-slot identification is restated as an explicit declared surface
-definition `(SD)` on the theorem surface rather than an asserted
-cross-surface theorem, and the paired runner now constructs both scalar
-slots from the supplied link/plaquette data and compares them instead of
-assigning `g_wilson_sq = g_link_sq` — see
-`## 2026-07-01 same-slot surface-definition repair`.)
+**Date:** 2026-06-18; algebra/convention split completed 2026-07-11.
 **Claim type:** bounded_theorem
 **Audit status:** set only by the independent audit lane. This source note
 does not set, predict, or apply an audit verdict.
@@ -15,18 +9,10 @@ does not set, predict, or apply an audit verdict.
 
 ## Purpose
 
-The parent note `G_BARE_DERIVATION_NOTE.md` needs a non-circular supply of
-the `beta = 6` surface. This sentence names the target parent but is not a
-citation-graph dependency of this bridge note. The older route mixed two
-steps:
-
-```text
-beta = 2 N_c = 6
-g_bare^2 = 2 N_c / beta = 1
-```
-
-This bridge separates the supply into three ingredients and labels each
-honestly:
+The parent note `G_BARE_DERIVATION_NOTE.md` needs a non-circular account of
+the finite-link/Wilson scalar slots. This sentence names the target parent but
+is not a citation-graph dependency of this theorem note. The theorem surface
+contains only the following algebraic ingredients:
 
 - [`G_BARE_RIGIDITY_THEOREM_NOTE.md`](G_BARE_RIGIDITY_THEOREM_NOTE.md)
   (theorem, cited at its audited scope) supplies the finite-link canonical
@@ -42,35 +28,19 @@ honestly:
 beta g_bare^2 = 2 N_c.
 ```
 
-- The identification of the Wilson `g_bare` with the finite-link canonical
-  scalar `s` — the statement that both occupy the same scalar slot on the
-  parent surface — is **not** supplied by either cited authority and is
-  **not** a construction-level fact of the link/plaquette data (Theorem 2
-  below). It is supplied by this note as the explicit declared surface
-  definition `(SD)`.
+- Theorems 1–3 below prove the plaquette exponent construction, the exact
+  split redundancy, and the pin equivalence
+  `gamma*(beta) = s` if and only if `beta = 2 N_c`, on the Wilson
+  domain `beta > 0` with `gamma*(beta)` defined as the positive matched
+  coupling.
 
-The pre-repair version of this note asserted the identification as if the
-two cited authorities proved it. The 2026-06-21 audit graded that
-assertion a renaming; this repair answers the second-auditor question
-directly: the same-scalar-slot move is intentionally stipulated as a
-surface definition, and the note now declares it as such and proves
-exactly the bounded theorems that locate what the declaration does.
+## Non-load-bearing convention context
 
-## Declared surface definition
-
-```text
-(SD)  The parent surface instantiates the supplied standard Wilson
-      plaquette surface with its gauge field taken to be the finite-link
-      canonical coordinate:
-
-          A^a := C^a    (equivalently  g_bare := s).
-```
-
-`(SD)` is a definition of the parent surface, not a theorem. It is not
-derived from the cited authorities. Theorem 3 below shows it is exactly
-equivalent to the normalization point `beta = 2 N_c` on the Wilson
-surface: choosing `(SD)` and choosing `beta = 2 N_c` are the same choice,
-made once, and this note makes it in the open.
+The same-slot definition and its displayed `N_c = 3` bookkeeping are recorded
+separately in the meta convention note
+`G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md`.
+That note is non-load-bearing context for this theorem. Nothing here chooses
+the same-slot convention or treats its displayed values as theorem outputs.
 
 Notation: this note writes the canonical finite-link coefficients as `C^a`
 (the rigidity note writes them `A^a`) so that the Wilson-surface matched
@@ -88,12 +58,19 @@ Setup (supplied surfaces, cited at audited scope):
    `U = exp(i s C^a T_a a)` with `s != 1` changes the link; it is not a
    redundancy of the data.
 
-2. Standard Wilson plaquette surface (Wilson small-a note): action
+2. Standard Wilson plaquette surface (Wilson small-a note): `beta > 0` and action
    `S_W = beta sum (1 - (1/N_c) Re Tr U_P)` with canonical trace
    normalization, and the small-a matching demand that the matched gauge
    field carry the continuum kinetic normalization
    `(1/4) F^a_{mu nu} F^a_{mu nu}`. Inside that surface,
    `beta g_bare^2 = 2 N_c`.
+
+**Audited claim-surface statement.**
+
+> This note's audited claim surface is exactly Theorems 1–3 and the
+> mismatched-slot exhibit: independently auditable construction-level facts.
+> Same-slot naming and normalization conventions are outside this theorem and
+> live only in the linked meta convention note.
 
 **Theorem 1 (plaquette exponent construction).** For plaquettes built from
 links in canonical coordinates, the small-`a` exponent is
@@ -118,50 +95,38 @@ gamma * F[C/gamma; gamma] = F[C; 1]        (exactly, at finite a).
 ```
 
 The split scalar is therefore not a function of the constructed
-link/plaquette/action data. Whether the Wilson `g_bare` occupies the
-same scalar slot as the finite-link canonical scalar `s` is not a
-construction-level fact; within this packet's supplied surfaces it is
-fixed only by a normalization demand on the field variable itself, such
-as `(SD)`. (Contrast with Setup item 1: the dilation `C -> s C` changes
-the data; the split `(gamma, C/gamma)` does not. The rigidity theorem
-removes the first freedom. The second is what `(SD)` fixes.)
+link/plaquette/action data. Whether the Wilson `g_bare` occupies the same
+scalar slot as the finite-link canonical scalar `s` is not a
+construction-level fact; it can be fixed only by a separate normalization or
+identification convention. (Contrast with Setup item 1: the dilation
+`C -> s C` changes the data; the split `(gamma, C/gamma)` does not. The
+rigidity theorem removes the first freedom. The second remains outside this
+theorem.)
 
-**Theorem 3 (matched-slot family and pin equivalence).** The Wilson
+**Theorem 3 (positive matched-slot family and pin equivalence).** The Wilson
 matching demand applied at action parameter `beta` to the constructed
-plaquette action determines the matched scalar
+plaquette action determines the squared matched scalar. For `beta > 0`,
+define `gamma*(beta)` to be the positive square root, so
+
+```text
+gamma*(beta) := +sqrt(2 N_c / beta) > 0,
+```
+
+and therefore
 
 ```text
 gamma*(beta)^2 = 2 N_c / beta,
 ```
 
-which is `beta`-dependent, while the link-canonical slot `s = 1` is
-`beta`-independent. Hence
+which is `beta`-dependent, while the link-canonical slot `s = 1 > 0` is
+`beta`-independent. Since both slots are positive, hence
 
 ```text
 gamma*(beta) = s      if and only if      beta = 2 N_c.
 ```
 
-The same-slot statement is exactly equivalent to the normalization point
-`beta = 2 N_c`.
-
-**Composition (under `(SD)`).** Under the declared surface definition,
-`g_bare = s = 1` on the canonical coordinate branch, and the Wilson
-coefficient identity gives, in exact rational arithmetic,
-
-```text
-g_bare^2 = 1
-beta = 2 N_c.
-```
-
-For `N_c = 3`, this gives
-
-```text
-beta = 6.
-```
-
-Every downstream consumption of `beta = 6` from this row is a consumption
-of the pair {the two cited theorems, the declared `(SD)`}; the declaration
-is part of the supplied surface, not a derived output of this note.
+The equality condition `gamma*(beta) = s` is exactly equivalent to
+`beta = 2 N_c`. This theorem locates the pin but does not choose it.
 
 ## Proof
 
@@ -204,19 +169,12 @@ For a candidate split `A = C/gamma` the same value reads
 Theorem 2's identity componentwise, `F^a[C] = gamma F^a[A]`). The Wilson
 note's matching demand fixes the coefficient per unordered plaquette
 plane at `1/2`, i.e. `beta gamma*^2 / (4 N_c) = 1/2`, hence
-`gamma*(beta)^2 = 2 N_c / beta`. Setting `gamma*(beta) = s = 1` gives
-`beta = 2 N_c`; conversely `beta = 2 N_c` gives `gamma* = 1`.
-
-**Composition.** Substitute the declared `(SD)` value `g_bare := s = 1`
-into the Wilson coefficient identity:
-
-```text
-beta g_bare^2 = 2 N_c
-g_bare^2 = 1
-beta = 2 N_c.
-```
-
-At `N_c = 3`, exact rational arithmetic gives `beta = 6`.
+`gamma*(beta)^2 = 2 N_c / beta`. On the declared Wilson domain
+`beta > 0`, the positive-root definition gives
+`gamma*(beta)=+sqrt(2 N_c/beta)>0`. Because the constructed
+link-canonical slot is `s = 1 > 0`, equality of the squares is equivalent
+to equality of the slots themselves. Thus `gamma*(beta) = s` holds exactly
+when `beta = 2 N_c`. No same-slot convention is chosen in this argument.
 
 ## Mismatched-slot exhibit
 
@@ -230,8 +188,8 @@ gamma*(24)^2 = 6/24 = 1/4,    gamma*(24) = 1/2 != 1 = s,
 
 with the Wilson identity holding as `24 * (1/4) = 6 = 2 N_c`, and the
 same-slot statement false. Nothing in the constructed surface data
-changed between `beta = 6` and `beta = 24`. This exhibits that the
-same-slot identification does real selecting work — it is the choice of
+changed between the same-slot pin `beta = 2 N_c` and `beta = 24`. This
+exhibits that the same-slot identification does real selecting work — it is the choice of
 the `beta = 2 N_c` point on the one-parameter family
 `beta = 2 N_c / gamma*^2` — and is therefore a declaration, not a
 construction-level consequence.
@@ -240,10 +198,8 @@ construction-level consequence.
 
 This note does not claim:
 
-- that `(SD)` is derived — it is the declared instantiation definition of
-  the parent surface, not derived from the cited authorities, and
-  Theorems 2–3 locate precisely why a declaration (or an equivalent
-  normalization demand on the field variable) is required at this step;
+- that the Wilson field coordinate and finite-link canonical coordinate
+  occupy the same scalar slot; that convention is outside this theorem;
 - Wilson plaquette action-surface selection from framework axioms;
 - exclusion of improved or non-Wilson gauge actions;
 - a continuum running-coupling value;
@@ -252,14 +208,22 @@ This note does not claim:
 - a dynamical fixed point;
 - an audit verdict or any effective-status promotion.
 
-A framework-native derivation of the Wilson-surface normalization from
-the operator/Hamiltonian side (for example a transfer-matrix or
-heat-kernel route) would upgrade `(SD)` from declared definition to
-theorem; that is the next derivation surface this separation opens, and
-it is outside this row.
+A framework-native derivation of the same-slot identification from the
+operator/Hamiltonian side (for example a transfer-matrix or heat-kernel route)
+remains outside this row.
 
-The result is a bounded composition theorem internal to the finite-link
-canonical Wilson surface, conditional on the declared `(SD)`.
+**2026-07-11 downstream hygiene.** This note's citable surface is Theorems
+1–3 and the mismatched-slot exhibit. Downstream notes must not cite this
+note as choosing the same-slot identification or as deriving the convention
+recorded in
+`G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md`.
+That meta note is non-load-bearing convention context. A retained derivation
+of the same-slot identification from the operator/Hamiltonian surface remains
+the named open target. This dated line itself moves the note hash so the row
+re-enters for re-audit.
+
+The bounded theorem surface internal to the finite-link canonical Wilson
+surface is exactly Theorems 1–3 plus the mismatched-slot exhibit.
 
 ## Falsifiers
 
@@ -276,8 +240,6 @@ The packet would fail if any of the following were true:
 - the constructed link-canonical readback gave `s != 1`;
 - the two constructed slots agreed at some tested `beta != 2 N_c` or
   disagreed at `beta = 2 N_c` (pin equivalence);
-- exact rational arithmetic failed to give `beta = 6` at `N_c = 3` under
-  `(SD)`.
 
 The runner checks these as source-boundary and construction checks rather
 than audit verdicts.
@@ -290,71 +252,37 @@ Run:
 python3 scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
 ```
 
-Expected:
+Expected after the 2026-07-11 algebra/convention split:
 
 ```text
-TOTAL: PASS=100 FAIL=0
+TOTAL: PASS=102 FAIL=0
 ```
 
-## 2026-07-01 same-slot surface-definition repair
+## Repair Note
 
-This block is a source-only repair. No new axioms, no new imports, no
-audit verdict edits. Status authority remains with the independent audit
-lane.
+**Date:** 2026-07-11
 
-### Audit issue addressed
+**Notes for re-audit (verbatim):**
 
-The 2026-06-21 audit graded this row `audited_renaming`: the load-bearing
-move asserted that the Wilson plaquette `g_bare` is the same scalar slot
-as the finite-link canonical scalar `s`, while neither cited authority
-derives that scalar-slot identity across the finite-link and Wilson
-plaquette surfaces, and the paired runner assigned
-`g_wilson_sq = g_link_sq` rather than deriving it. The second auditor
-asked whether the same-scalar-slot move is intentionally stipulated as a
-surface definition.
+> "missing_bridge_theorem: supply retained authority deriving the same-slot
+> identification from the operator/Hamiltonian surface, or separate the
+> beta=6 definition-level contribution from the independently auditable
+> Theorems 1–3."
 
-### Answer
+This repair takes the **SEPARATION arm** literally. The bounded theorem now
+contains only Theorems 1–3 and the mismatched-slot exhibit. The same-slot
+definition and its displayed normalization values live in the separate
+`Type: meta` convention note named above. The primary theorem runner checks
+the algebraic theorem and verifies that the convention content is absent here;
+it does not read or certify the separate meta surface. No audit output or
+status is authored.
 
-It is a stipulation, and the note now says so. The decision is not a
-concession by default: the repair first checked whether the identity is
-derivable from the supplied constructions, and Theorems 2–3 record the
-outcome of that check as theorems. The constructed link/plaquette/action
-data is exactly invariant under the standard-convention split
-`(gamma, C/gamma)`, so no construct-and-compare path inside this packet's
-supplied surfaces determines the split scalar; and the Wilson-matched
-scalar is `beta`-dependent (`gamma*(beta)^2 = 2 N_c / beta`) while the
-link-canonical slot is `beta`-independent, so the same-slot statement is
-exactly equivalent to `beta = 2 N_c` — the very normalization the bridge
-supplies. An identification with that shape is a definition, and the
-honest form of this row is to declare it.
+## Iteration-4 sign/domain repair
 
-The repair:
-
-1. declares the identification explicitly as the surface definition
-   `(SD)` on the theorem surface (mirroring the explicit-premise pattern
-   of the rigidity note's `(HF)` repair);
-2. adds Theorems 1–3 as the derivable content in the neighborhood: the
-   plaquette exponent construction, the exact split redundancy, and the
-   matched-slot family with the pin equivalence
-   `gamma*(beta) = s iff beta = 2 N_c`;
-3. rewrites the paired runner to construct both scalar slots from the
-   link/plaquette data and compare them — the link slot via the
-   principal-logarithm readback of constructed links, the Wilson slot via
-   the matching demand applied to constructed plaquette actions — with
-   the mismatched-slot exhibit at `beta = 24` as the refutation-shaped
-   negative; the assignment `g_wilson_sq = g_link_sq` is gone;
-4. narrows every downstream-facing sentence to the `(SD)`-conditional
-   scope.
-
-### What did not change
-
-- The two citations and their audited scopes are used as before, at
-  scope.
-- The parent note `G_BARE_DERIVATION_NOTE.md` is not edited by this
-  repair; its sentence that the scalar-slot compatibility is "recorded
-  and checked" by this row matches the declared-definition reading.
-- The claim type remains `bounded_theorem`; the theorem content is
-  Theorems 1–3 plus the `(SD)`-conditional composition.
-- Status authority: the independent audit lane retains sole authority
-  over the effective status of this row. This repair does not promote,
-  retain, or change any audit status.
+The Wilson matching surface is now explicitly restricted to `beta > 0`, and
+`gamma*(beta)` is defined as the positive square root of
+`2 N_c / beta`. The runner independently checks the positive domain,
+constructs the positive root for every tested beta, and compares
+`gamma*(beta)` directly with the positive canonical slot `s=1`. It no
+longer substitutes a squared-slot comparison for the theorem's unsquared
+pin-equivalence statement.

@@ -25,7 +25,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | open_gate | 4 |
 | unaudited | 2844 |
 | audit_in_progress | 10 |
-| meta | 348 |
+| meta | 349 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
 | ~~audited_conditional~~ | 38 |
@@ -50,23 +50,23 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3192 |
+| `unaudited` | 3193 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2044 |
 | `decoration` | 25 |
-| `meta` | 355 |
+| `meta` | 356 |
 | `no_go` | 462 |
 | `open_gate` | 195 |
 | `positive_theorem` | 663 |
 
 | criticality | count |
 |---|---:|
-| `critical` | 756 |
+| `critical` | 755 |
 | `high` | 395 |
-| `medium` | 946 |
-| `leaf` | 1647 |
+| `medium` | 947 |
+| `leaf` | 1648 |
 
 - **Retained pending chain closure:** 9
 - **Citation cycles detected:** 10
@@ -85,7 +85,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1960 | 223.44 | `unaudited` | meta |
-| 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1599 | 65.14 | `audited_clean` | **retained** |
+| 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1600 | 64.64 | `audited_clean` | **retained** |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1226 | 63.26 | `unaudited` | unaudited |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 61.64 | `unaudited` | unaudited |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1046 | 61.53 | `unaudited` | unaudited |

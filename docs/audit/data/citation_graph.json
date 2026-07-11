@@ -20066,11 +20066,7 @@
     },
     {
       "from": "hypercharge_identification_note",
-      "to": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
-    },
-    {
-      "from": "hypercharge_identification_note",
-      "to": "gmn_vev_annihilator_l4_support_note_2026-07-02"
+      "to": "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
     },
     {
       "from": "hypercharge_identification_note",
@@ -20078,11 +20074,7 @@
     },
     {
       "from": "hypercharge_identification_note",
-      "to": "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
-    },
-    {
-      "from": "hypercharge_identification_note",
-      "to": "graph_first_su3_integration_note"
+      "to": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
     },
     {
       "from": "hypercharge_proof_walk_lattice_independence_bounded_note_2026-05-07",
@@ -20103,6 +20095,10 @@
     {
       "from": "hypercharge_proof_walk_lattice_independence_bounded_note_2026-05-07",
       "to": "lh_anomaly_trace_catalog_theorem_note_2026-04-25"
+    },
+    {
+      "from": "hypercharge_quark_lepton_naming_convention_note_2026-07-11",
+      "to": "hypercharge_identification_note"
     },
     {
       "from": "hypercharge_squared_trace_catalog_theorem_note_2026-04-25",
@@ -87097,17 +87093,15 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
-        "gmn_vev_annihilator_l4_support_note_2026-07-02",
-        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
         "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-        "graph_first_su3_integration_note"
+        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
+        "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "26c0b016a70a5b2d8fd7ced1aa04206dd03a254a6e765005b001787bac250292",
+      "note_hash": "16aa1e0bda291fee9840f15aa9ed2f93c3b5ef6240970e7a174d1e797caa220d",
       "path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
       "runner_path": "scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py",
-      "title": "Hypercharge U(1)_Y Identification from the Commutant"
+      "title": "Name-Free U(1) Two-Block Algebra"
     },
     "hypercharge_proof_walk_lattice_independence_bounded_note_2026-05-07": {
       "claim_id": "hypercharge_proof_walk_lattice_independence_bounded_note_2026-05-07",
@@ -87126,6 +87120,20 @@
       "path": "docs/HYPERCHARGE_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-07.md",
       "runner_path": "scripts/frontier_hypercharge_proof_walk_lattice_independence.py",
       "title": "Hypercharge Proof-Walk Lattice-Independence Bounded Note"
+    },
+    "hypercharge_quark_lepton_naming_convention_note_2026-07-11": {
+      "claim_id": "hypercharge_quark_lepton_naming_convention_note_2026-07-11",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "hypercharge_identification_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "62d1276bdf42af8b3a0f06dfb6394758b92c07a59c8f4964e00eff06cc1a4d4e",
+      "path": "docs/HYPERCHARGE_QUARK_LEPTON_NAMING_CONVENTION_NOTE_2026-07-11.md",
+      "runner_path": null,
+      "title": "Hypercharge Quark/Lepton Naming and SM Readout Convention"
     },
     "hypercharge_squared_trace_catalog_theorem_note_2026-04-25": {
       "claim_id": "hypercharge_squared_trace_catalog_theorem_note_2026-04-25",
@@ -129119,7 +129127,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 1632,
       "decoration": 3,
-      "meta": 331,
+      "meta": 332,
       "no_go": 336,
       "none": 1205,
       "open_gate": 132,
@@ -129128,15 +129136,15 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 2032,
       "decoration": 3,
-      "meta": 331,
+      "meta": 332,
       "no_go": 439,
       "none": 248,
       "open_gate": 206,
       "positive_theorem": 657
     },
-    "edge_count": 14564,
-    "leaf_count": 1321,
-    "node_count": 3916,
+    "edge_count": 14563,
+    "leaf_count": 1322,
+    "node_count": 3917,
     "root_count": 1112,
     "runners_with_path": 3539
   }

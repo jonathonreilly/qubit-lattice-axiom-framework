@@ -28,7 +28,7 @@ Owner-approval history for every axiom/primitive/governance change:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3744 |
+| Ledger rows | 3745 |
 | Applied audit verdicts | 538 |
 | Retained-grade rows, including boxed decorations | 469 |
 | Retained positive theorems | 81 |
@@ -53,9 +53,9 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Total pending rows | 2898 |
 | Ready rows | 600 |
 | Cycle-break targets | 49 |
-| Critical pending | 675 |
+| Critical pending | 674 |
 | High pending | 332 |
-| Medium pending | 760 |
+| Medium pending | 761 |
 | Leaf pending | 1131 |
 
 Next ready rows by queue order:
@@ -64,10 +64,10 @@ Next ready rows by queue order:
 - [`fermion_parity_z2_grading_theorem_note_2026-05-02`](../../docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) - critical; non_terminal_failed
 - [`s3_mass_matrix_no_go_note`](../../docs/S3_MASS_MATRIX_NO_GO_NOTE.md) - critical; audit_in_progress
 - [`hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`](../../docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md) - critical; unaudited
-- [`gmn_vev_annihilator_l4_support_note_2026-07-02`](../../docs/GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md) - critical; unaudited
 - [`clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`abj_epsilon_index_square_block_no_go_note_2026-05-30`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md) - critical; unaudited
 - [`abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`](../../docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md) - critical; unaudited
+- [`abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`](../../docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -96,16 +96,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3916 |
-| Critical nodes | 765 |
+| Citation-graph nodes | 3917 |
+| Critical nodes | 764 |
 | High nodes | 398 |
-| Medium nodes | 993 |
-| Leaf nodes | 1760 |
+| Medium nodes | 994 |
+| Leaf nodes | 1761 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1960 descendants; score 223.437
-- `graph_first_su3_integration_note` - critical; 1599 descendants; score 65.144
+- `graph_first_su3_integration_note` - critical; 1600 descendants; score 64.645
 - `three_generation_observable_theorem_note` - critical; 1226 descendants; score 63.261
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 61.644
 - `observable_principle_from_axiom_note` - critical; 1046 descendants; score 61.532

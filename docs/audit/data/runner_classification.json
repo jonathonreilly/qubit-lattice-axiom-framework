@@ -17797,11 +17797,11 @@
       "runner": "scripts/hypercharge_gut_normalization_three_fifths_accepted_premise_runner.py"
     },
     "hypercharge_identification_note": {
-      "assert_count": 8,
+      "assert_count": 1,
       "counts": {
-        "A": 2,
+        "A": 0,
         "B": 1,
-        "C": 6,
+        "C": 7,
         "D": 0
       },
       "decoration_candidate": false,
@@ -64847,14 +64847,14 @@
       "exists": true
     },
     "scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py": {
-      "assert_count": 8,
+      "assert_count": 1,
       "claims": [
         "hypercharge_identification_note"
       ],
       "counts": {
-        "A": 2,
+        "A": 0,
         "B": 1,
-        "C": 6,
+        "C": 7,
         "D": 0
       },
       "decoration_candidate": false,

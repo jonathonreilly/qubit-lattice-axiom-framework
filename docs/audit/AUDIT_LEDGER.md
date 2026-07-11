@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 82 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 350 |
+| **retained_bounded** | 351 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2817 |
-| audit_in_progress | 22 |
+| audit_in_progress | 21 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 26 |
-| `audited_clean` | 441 |
+| `audit_in_progress` | 25 |
+| `audited_clean` | 442 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
@@ -121,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
-| `cl3_taste_generation_theorem` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_neutrino_weak_vector_theorem_note_2026-04-15` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -201,6 +200,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
+| `cl3_taste_generation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
@@ -1695,6 +1695,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
   - **gate failures:**
     - N1: nonunitary_similarity remains open and supplies a counterexample to unitary uniqueness under the representation definition actually stated.
+
+### `cl3_taste_generation_theorem`
+
+- **Note:** [`CL3_TASTE_GENERATION_THEOREM.md`](../../docs/CL3_TASTE_GENERATION_THEOREM.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Abstract C^8 tensor-position S3 representation theorem, including the hw=1 Z3 orbit and restricted spectra of the explicitly defined Y and T3 operators, with no framework-carrier or physical-family identification.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00037-cl3_taste_generation_theorem`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Tensor-position permutations have character (8,4,2), whose S3 character inner products give C^8 = 4A1 + 0A2 + 2E, while restriction to hw=1 gives A1+E and the stated Z3 orbit and Y/T3 spectra.  _(class `A`)_
+- **chain closes:** True — The conclusions follow by exact finite-dimensional representation theory and diagonalization of explicitly constructed operators. The retained S3 authority supplies the abstract decomposition surface, and no physical carrier or family bridge is used.
+- **rationale:** The runner constructs the permutation matrices, hw=1 projector, Z3 action, and Y/T3 operators, then computes their group relations, characters, multiplicities, orbit action, and spectra rather than merely printing targets. The fixed-point characters (8,4,2) give 4A1+0A2+2E, and the hw=1 character (3,1,0) gives A1+E; direct restriction also gives the corrected T3(e3) sign and both stated spectra. The source explicitly excludes framework-carrier and physical-family interpretations, so no open identification is load-bearing.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `claude_complex_action_carryover_note`
 

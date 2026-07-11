@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 667,
+    "critical": 666,
     "high": 332,
     "leaf": 1132,
     "medium": 760
@@ -1636,31 +1636,6 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
       "transitive_descendants": 1053
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "cl3_taste_generation_theorem",
-      "claim_scope": "Abstract C^8 tensor-position S3 representation theorem, including the hw=1 Z3 orbit and restricted spectra of the explicitly defined Y and T3 operators, without a framework-carrier or physical-family identification.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "s3_taste_cube_decomposition_note",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 22,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 20.812,
-      "note_path": "docs/CL3_TASTE_GENERATION_THEOREM.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py",
-      "transitive_descendants": 898
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -82345,6 +82320,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 598,
-  "total_pending": 2891
+  "ready_count": 597,
+  "total_pending": 2890
 }

@@ -5,7 +5,7 @@ Physics context (rewritten 2026-05-05 as a bounded chain claim)
 ----------------------------------------------------------------
 The commutant of {SU(2)_weak, SWAP_{23}} in End(C^8) is gl(3) + gl(1).
 
-This runner verifies a CHAIN claim, not an internal SM-Y derivation. The
+This runner verifies a name-free CHAIN claim, not an internal SM-Y derivation. The
 chain has three independently-cited links:
 
   (L1)  STRUCTURAL RATIO. The unique traceless central block-scalar direction
@@ -13,10 +13,10 @@ chain has three independently-cited links:
         sub-blocks of the LH-doublet sector. -- Source:
         LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md
 
-  (L2)  MATTER ASSIGNMENT. Sym^2(C^2) carries the SU(3) fundamental
+  (L2)  REPRESENTATION CLASSES. Sym^2(C^2) carries the SU(3) fundamental
         representation; Anti^2(C^2) carries the SU(3) trivial representation.
-        Under the SM-definition convention `color-charged = quark, color-
-        singlet = lepton', this gives Q_L <-> (2,3) and L_L <-> (2,1).
+        Particle naming is separated into a meta convention note and is not
+        part of the theorem checked here.
         -- Source:
         LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md
 
@@ -73,7 +73,7 @@ def check_source_boundary() -> tuple[int, int]:
     """Fail closed if the source note drifts back into an unbounded claim."""
     note = NOTE_PATH.read_text(encoding="utf-8")
     required = [
-        "**Status:** bounded/conditional chain assembly.",
+        "**Status:** bounded/conditional name-free chain assembly.",
         "**Status authority:** independent audit lane only.",
         "**Primary runner:** `scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py`",
         "**Runner cache:** `logs/runner-cache/frontier_hypercharge_identification_scope_repair_2026_07_04.txt`",
@@ -83,6 +83,8 @@ def check_source_boundary() -> tuple[int, int]:
         "derive the absolute normalization `a = 1/3` internally",
         "Downstream squared-trace/GUT catalog quarantine (2026-07-04)",
         "Name-free carrier decomposition and explicit normalization boundary",
+        "The theorem below remains fully name-free.",
+        "HYPERCHARGE_QUARK_LEPTON_NAMING_CONVENTION_META_NOTE_2026-07-11.md",
         "Tr_C8[Y_alpha^2] = 24 alpha^2",
         "GUT normalization, `sin^2(theta_W)`, and full-spectrum",
         "Bounded source scope (what the runner numerically verifies",
@@ -1026,14 +1028,15 @@ print("=" * 72)
 print("FINAL SUMMARY  (chain-claim verification)")
 print("=" * 72)
 print()
-print("  CHAIN ASSEMBLY THEOREM (this note):")
-print("  Under the chain (L1 ratio + L2 matter assignment + L3 scale +")
+print("  NAME-FREE CHAIN ASSEMBLY THEOREM (this note):")
+print("  Under the chain (L1 ratio + L2 representation classes + L3 readout +")
 print("  L4 GMN/EWSB readout),")
 print("  the unique traceless central block-scalar direction in the")
 print("  gl(3)+gl(1) commutant of")
-print("  {SU(2)_weak, SWAP_{23}} reproduces SM hypercharge on the LH-doublet")
-print("  surface. The runner above checks each link of the chain numerically")
-print("  and tags every block as STRUCTURAL / CHAIN-L2 / CHAIN-L3 /")
+print("  {SU(2)_weak, SWAP_{23}} gives the normalized (+1/3,-1) pattern on")
+print("  the structural (2,3)+(2,1) blocks without particle names.")
+print("  The runner checks each link and tags every block as STRUCTURAL /")
+print("  CHAIN-L2 / CHAIN-L3 /")
 print("  CHAIN-L4 / CONSISTENCY.")
 print()
 print("  STRUCTURAL FACTS verified (no SM-target import):")
@@ -1044,7 +1047,8 @@ print("    * commutation [Y, S_i] = [Y, T_a] = 0 with weak and color")
 print("    * Part 6 quarantines squared-trace/GUT/sin^2 material outside")
 print("      this parent theorem; it is not retained-source evidence here")
 print()
-print("  CHAIN CONSEQUENTS (under L2 matter assignment, L3 scale, L4 GMN):")
+print("  NON-LOAD-BEARING NAMING/CONSISTENCY CONSEQUENTS")
+print("  (under L2 matter assignment, L3 scale, L4 GMN):")
 print("    * Sym^2 sector identified with Q_L (color triplet); Anti^2 with L_L")
 print("    * Y_alpha at alpha = 1/3 reproduces (+1/3, -1) on (Q_L, L_L)")
 print("    * Q = T_3 + Y/2 -- DERIVED (L4, PART 9) as the unique unbroken")
@@ -1054,6 +1058,7 @@ print("    * Part 10 constructs the carrier sectors from SWAP_23 projectors befo
 print("      attaching particle names; under the supplied lower-singlet charge")
 print("      readout it derives alpha/Y_H=1/3, displayed as alpha=1/3 only in")
 print("      the conventional Y_H=+1 coordinate")
+print("    * quark/lepton names are meta convention content, not theorem output")
 print()
 print("  WHAT IS NOT CLAIMED:")
 print("    * Internal derivation of (Sym^2 = SU(3)-fundamental) -- chained")

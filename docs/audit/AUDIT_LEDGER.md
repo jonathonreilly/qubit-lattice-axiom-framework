@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 353 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2811 |
+| unaudited | 2810 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
 | ~~audited_conditional~~ | 48 |
-| ~~audited_failed~~ | 2 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 444 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 23 |
-| `audited_failed` | 24 |
+| `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3161 |
+| `unaudited` | 3160 |
 
 | claim_type | count |
 |---|---:|
@@ -665,6 +665,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -3673,6 +3674,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N1 contains OPEN and UNTESTED endpoint, observable, normalization, spatial-boundary, and alpha_LM routes.
     - N5 identifies untested physical resolutions behind the maximal-gap and dimension-4 interpretation.
     - The mandatory gate therefore cannot certify audited_clean despite closure of the exact finite-operator algebra.
+
+### `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the literal claim that the lattice ratio, eta/zeta quotient, and integer alignment equation all coincide on 7/8 only at d=4, together with the narrower equality-and-uniqueness result.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00047-hierarchy_seven_eighths_riem`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The equality R_lat(d−1)=η(d)/ζ(d) is equivalent to 2^(d−2)=d, whose unique integer solution for d≥2 is d=4.  _(class `A`)_
+- **chain closes:** False — The proof closes the narrower statement R_lat(d−1)=η(d)/ζ(d)=7/8 with the alignment predicate true only at d=4. It does not establish that the alignment equation is a third rational quantity equal to 7/8; its sides equal 4 and its residual equals 0.
+- **rationale:** The exact algebra and uniqueness proof are correct, and they establish a valid narrower theorem: the two ratios agree exactly when d=4. However, the source repeatedly promotes the alignment equation or its residual into a third quantity that also evaluates to 7/8. The runner itself reports the correct distinction—two values equal 7/8 while the alignment residual is zero—so its successful checks do not support the literal triple-value claim.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `hierarchy_spatial_bc_and_u0_scaling_note`
 

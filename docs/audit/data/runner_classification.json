@@ -1912,7 +1912,7 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 2,
+        "B": 3,
         "C": 2,
         "D": 0
       },
@@ -2689,15 +2689,15 @@
       "runner": "scripts/born_rule_framework_bridge_check.py"
     },
     "born_scattering_comparison_note": {
-      "assert_count": 0,
+      "assert_count": 2,
       "counts": {
-        "A": 0,
+        "A": 2,
         "B": 0,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "runner": "scripts/gaussian_beam_eikonal.py"
     },
     "bougerol_lacroix_oseledets_met_external_narrow_theorem_note_2026-05-10": {
@@ -14693,12 +14693,12 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 12,
-        "D": 0
+        "C": 26,
+        "D": 2
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "runner": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py"
+      "runner": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py"
     },
     "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
@@ -15101,7 +15101,7 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 4,
+        "C": 5,
         "D": 0
       },
       "decoration_candidate": false,
@@ -17783,6 +17783,18 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/hypercharge_alpha_third_normalization_runner.py"
+    },
+    "hypercharge_gut_normalization_three_fifths_accepted_premise_bridge_bounded_note_2026-07-10": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/hypercharge_gut_normalization_three_fifths_accepted_premise_runner.py"
     },
     "hypercharge_identification_note": {
       "assert_count": 8,
@@ -22696,8 +22708,8 @@
       "assert_count": 1,
       "counts": {
         "A": 2,
-        "B": 1,
-        "C": 18,
+        "B": 2,
+        "C": 19,
         "D": 0
       },
       "decoration_candidate": false,
@@ -26679,14 +26691,14 @@
     "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30": {
       "assert_count": 1,
       "counts": {
-        "A": 5,
+        "A": 0,
         "B": 0,
-        "C": 17,
+        "C": 13,
         "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "runner": "scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py"
+      "runner": "scripts/frontier_planck_primitive_clifford_substrate_descent_obstruction.py"
     },
     "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25": {
       "assert_count": 1,
@@ -27304,7 +27316,7 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 3,
         "D": 0
       },
@@ -30844,7 +30856,7 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 0,
         "D": 3
       },
@@ -31612,7 +31624,7 @@
       "assert_count": 1,
       "counts": {
         "A": 1,
-        "B": 5,
+        "B": 6,
         "C": 0,
         "D": 0
       },
@@ -32219,6 +32231,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_route2_readout_record_positivity_no_go.py"
+    },
+    "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/rp_coupled_two_slice_gauge_staggered_berezin_gram_2026_07_10.py"
     },
     "rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06": {
       "assert_count": 1,
@@ -36660,6 +36684,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_teleportation_3d_resource_probe.py"
     },
+    "teleportation_acceptance_suite_note": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_teleportation_acceptance_suite_note_sync_check.py"
+    },
     "teleportation_adiabatic_convergence_robustness_note": {
       "assert_count": 0,
       "counts": {
@@ -38415,7 +38451,7 @@
     "universal_gr_casimir_block_localization_note": {
       "assert_count": 1,
       "counts": {
-        "A": 8,
+        "A": 10,
         "B": 0,
         "C": 0,
         "D": 0
@@ -46928,7 +46964,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 2,
+        "B": 3,
         "C": 2,
         "D": 0
       },
@@ -62435,7 +62471,7 @@
       "dominant_class": "C",
       "exists": true
     },
-    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py": {
+    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py": {
       "assert_count": 1,
       "claims": [
         "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note"
@@ -62443,8 +62479,8 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 12,
-        "D": 0
+        "C": 26,
+        "D": 2
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -62593,7 +62629,7 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 4,
+        "C": 5,
         "D": 0
       },
       "decoration_candidate": false,
@@ -68035,8 +68071,8 @@
       ],
       "counts": {
         "A": 2,
-        "B": 1,
-        "C": 18,
+        "B": 2,
+        "C": 19,
         "D": 0
       },
       "decoration_candidate": false,
@@ -70356,15 +70392,15 @@
       "dominant_class": null,
       "exists": true
     },
-    "scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py": {
+    "scripts/frontier_planck_primitive_clifford_substrate_descent_obstruction.py": {
       "assert_count": 1,
       "claims": [
         "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30"
       ],
       "counts": {
-        "A": 5,
+        "A": 0,
         "B": 0,
-        "C": 17,
+        "C": 13,
         "D": 0
       },
       "decoration_candidate": false,
@@ -70814,7 +70850,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 3,
         "D": 0
       },
@@ -74405,7 +74441,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 0,
         "D": 3
       },
@@ -75005,7 +75041,7 @@
       ],
       "counts": {
         "A": 1,
-        "B": 5,
+        "B": 6,
         "C": 0,
         "D": 0
       },
@@ -78277,6 +78313,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_teleportation_acceptance_suite_note_sync_check.py": {
+      "assert_count": 1,
+      "claims": [
+        "teleportation_acceptance_suite_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_teleportation_adiabatic_convergence_robustness.py": {
       "assert_count": 0,
       "claims": [
@@ -79589,7 +79640,7 @@
         "universal_gr_casimir_block_localization_note"
       ],
       "counts": {
-        "A": 8,
+        "A": 10,
         "B": 0,
         "C": 0,
         "D": 0
@@ -84231,18 +84282,18 @@
       "exists": true
     },
     "scripts/gaussian_beam_eikonal.py": {
-      "assert_count": 0,
+      "assert_count": 2,
       "claims": [
         "born_scattering_comparison_note"
       ],
       "counts": {
-        "A": 0,
+        "A": 2,
         "B": 0,
         "C": 0,
         "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": null,
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/gbare_root_su2_scale_transport_bridge_2026_06_17.py": {
@@ -84930,6 +84981,21 @@
       "counts": {
         "A": 0,
         "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/hypercharge_gut_normalization_three_fifths_accepted_premise_runner.py": {
+      "assert_count": 1,
+      "claims": [
+        "hypercharge_gut_normalization_three_fifths_accepted_premise_bridge_bounded_note_2026-07-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
         "C": 0,
         "D": 0
       },
@@ -89918,6 +89984,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/rp_coupled_two_slice_gauge_staggered_berezin_gram_2026_07_10.py": {
+      "assert_count": 2,
+      "claims": [
+        "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py": {
       "assert_count": 1,
       "claims": [
@@ -93367,16 +93448,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 713,
+    "decoration_candidates": 716,
     "dominant_class_distribution": {
-      "A": 511,
-      "B": 661,
-      "C": 1315,
+      "A": 512,
+      "B": 663,
+      "C": 1316,
       "D": 456,
-      "none": 459
+      "none": 458
     },
-    "runners_classified": 3402,
-    "runners_with_C": 1797,
-    "runners_with_D": 1095
+    "runners_classified": 3405,
+    "runners_with_C": 1798,
+    "runners_with_D": 1096
   }
 }

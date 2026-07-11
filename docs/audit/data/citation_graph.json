@@ -2358,6 +2358,10 @@
     },
     {
       "from": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+      "to": "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10"
+    },
+    {
+      "from": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
       "to": "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02"
     },
     {
@@ -3418,11 +3422,11 @@
     },
     {
       "from": "born_scattering_comparison_note",
-      "to": "dispersion_relation_note"
+      "to": "lensing_adjoint_kernel_note"
     },
     {
       "from": "born_scattering_comparison_note",
-      "to": "architecture_note_directional_measure"
+      "to": "lensing_finite_path_explanation_note"
     },
     {
       "from": "bougerol_lacroix_staggered_blocking_gouezel_karlsson_deterministic_cocycle_narrow_no_go_note_2026-05-16",
@@ -15758,15 +15762,15 @@
     },
     {
       "from": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
-      "to": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+      "to": "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
-      "to": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note"
+      "to": "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
     },
     {
       "from": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
-      "to": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17"
+      "to": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
@@ -20055,6 +20059,10 @@
     {
       "from": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
       "to": "graph_first_selector_derivation_note"
+    },
+    {
+      "from": "hypercharge_gut_normalization_three_fifths_accepted_premise_bridge_bounded_note_2026-07-10",
+      "to": "hypercharge_identification_note"
     },
     {
       "from": "hypercharge_identification_note",
@@ -26953,10 +26961,6 @@
       "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
     },
     {
-      "from": "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-      "to": "cpt_exact_note"
-    },
-    {
       "from": "lorentz_kernel_positive_closure_note",
       "to": "emergent_lorentz_invariance_note"
     },
@@ -31295,46 +31299,6 @@
     {
       "from": "planck_orientation_principle_bounded_note_2026-05-10_planckp3",
       "to": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac"
-    },
-    {
-      "from": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "to": "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30"
-    },
-    {
-      "from": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "to": "link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "to": "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25"
-    },
-    {
-      "from": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "to": "substrate_to_p_a_forcing_theorem_note_2026-04-30"
-    },
-    {
-      "from": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "to": "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30"
-    },
-    {
-      "from": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "to": "minimal_axioms"
-    },
-    {
-      "from": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "to": "native_gauge_closure_note"
-    },
-    {
-      "from": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "to": "graph_first_su3_integration_note"
-    },
-    {
-      "from": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "to": "anomaly_forces_time_theorem"
-    },
-    {
-      "from": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "to": "i3_zero_exact_theorem_note"
     },
     {
       "from": "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25",
@@ -37965,6 +37929,22 @@
       "to": "quark_e_channel_endpoint_quotient_law_note_2026-04-19"
     },
     {
+      "from": "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10",
+      "to": "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09"
+    },
+    {
+      "from": "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10",
+      "to": "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10",
+      "to": "staggered_only_det_positivity_case_a_note_2026-05-17"
+    },
+    {
+      "from": "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10",
+      "to": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+    },
+    {
       "from": "rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06",
       "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
@@ -38039,6 +38019,10 @@
     {
       "from": "rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04",
       "to": "minimal_axioms"
+    },
+    {
+      "from": "r_base_group_theory_derivation_theorem_note_2026-04-24",
+      "to": "hypercharge_gut_normalization_three_fifths_accepted_premise_bridge_bounded_note_2026-07-10"
     },
     {
       "from": "r_base_group_theory_derivation_theorem_note_2026-04-24",
@@ -43470,30 +43454,6 @@
     },
     {
       "from": "universal_gr_canonical_projector_connection_note",
-      "to": "universal_gr_a1_invariant_section_note"
-    },
-    {
-      "from": "universal_gr_casimir_block_localization_note",
-      "to": "universal_gr_constraint_action_stationarity_note"
-    },
-    {
-      "from": "universal_gr_casimir_block_localization_note",
-      "to": "observable_principle_from_axiom_note"
-    },
-    {
-      "from": "universal_gr_casimir_block_localization_note",
-      "to": "s3_anomaly_spacetime_lift_note"
-    },
-    {
-      "from": "universal_gr_casimir_block_localization_note",
-      "to": "universal_gr_tensor_variational_candidate_note"
-    },
-    {
-      "from": "universal_gr_casimir_block_localization_note",
-      "to": "universal_gr_tensor_quotient_uniqueness_note"
-    },
-    {
-      "from": "universal_gr_casimir_block_localization_note",
       "to": "universal_gr_a1_invariant_section_note"
     },
     {
@@ -62198,7 +62158,7 @@
         "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "169ebdac9be8dade55ca5f6525adb123d1cb21d18d352c35ae371c9de91049a7",
+      "note_hash": "f1d229a60143847bd946fb9baef407fb2389ca399c4513ef20846065bd58b805",
       "path": "docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md",
       "runner_path": "scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py",
       "title": "Axiom-First Fermionic Stefan-Boltzmann \u2014 the `T\u2074` Law with Finite `g_eff` for Every Realized-Class Kinetic Kernel with Point-Like Linear-Cone Zero Set (Narrow Theorem)"
@@ -62426,6 +62386,7 @@
         "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
         "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
         "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
+        "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10",
         "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02"
       ],
       "helper_runner_paths": [
@@ -62433,7 +62394,7 @@
         "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
         "scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py"
       ],
-      "note_hash": "04a3cb32eb0ff6dbcdf4ff83cad221c53357e3f79ed294d4439086007daba65b",
+      "note_hash": "8037b419a5268b96ae567510477de992292588587d93b61a25080ae78546d599",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py",
       "title": "Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation"
@@ -63635,18 +63596,23 @@
     },
     "born_scattering_comparison_note": {
       "claim_id": "born_scattering_comparison_note",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (bounded numerical observation only for the fixed-envelope runner-computed eikonal and Gaussian-beam slopes versus the imported lattice slope; not a positive theorem, not a closure of the grown-DAG lensing readout)",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
       "deps": [
-        "dispersion_relation_note",
-        "architecture_note_directional_measure"
+        "lensing_adjoint_kernel_note",
+        "lensing_finite_path_explanation_note"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "ee2617aafdce32d85fcf423b58f9e54a5c238a130c5f8fcef1b7dc92b98b0c34",
+      "helper_runner_paths": [
+        "scripts/kubo_continuum_limit.py",
+        "scripts/lensing_adjoint_kernel_probe.py",
+        "scripts/lensing_adjoint_kernel_reduced_model.py",
+        "scripts/lensing_deflection_sweep.py"
+      ],
+      "note_hash": "a0e9a8a523b1a63631da72a43e8fd79650f0ee6be8ec3b580e4f8257ae8492a4",
       "path": "docs/BORN_SCATTERING_COMPARISON_NOTE.md",
       "runner_path": "scripts/gaussian_beam_eikonal.py",
-      "title": "Born/Eikonal Scattering Comparison with Lattice Lensing"
+      "title": "Born/Eikonal Scattering Comparison \u2014 Gaussian Pole Theorem and Finite-Harness Negative Boundary"
     },
     "bougerol_lacroix_oseledets_met_external_narrow_theorem_note_2026-05-10": {
       "claim_id": "bougerol_lacroix_oseledets_met_external_narrow_theorem_note_2026-05-10",
@@ -82476,15 +82442,15 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09",
-        "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
-        "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17"
+        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+        "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5c20f399f7d5c974279d07f38302c016c6c728ac1ee99990f5e1588b4aafe12a",
+      "note_hash": "4a75cd1dc686aa5c6093e467e2f0fe61f8f66f776040a52697ceceef06fb606c",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md",
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
-      "title": "Gauge-Vacuum Plaquette Spatial Environment Character-Measure Finite Packet"
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py",
+      "title": "Gauge-Vacuum Plaquette Actual Spatial-Environment Character Measure"
     },
     "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10": {
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10",
@@ -83195,7 +83161,7 @@
         "gauge_vacuum_plaquette_constant_lift_obstruction_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6032397f30c5b8cb5e1d6ea4914f90c4ed5042a5660a4046105ddf2f41e7454a",
+      "note_hash": "bd8806d2fa6347177dc0bd586ce930528cb8512c33d5e0cd32f53aefca516732",
       "path": "docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md",
       "runner_path": "scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py",
       "title": "Gauge Wilson Isotropy Boundary Note"
@@ -87110,6 +87076,20 @@
       "path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
       "runner_path": "scripts/hypercharge_alpha_third_normalization_runner.py",
       "title": "Hypercharge \u03b1 = 1/3 Normalization Bridge"
+    },
+    "hypercharge_gut_normalization_three_fifths_accepted_premise_bridge_bounded_note_2026-07-10": {
+      "claim_id": "hypercharge_gut_normalization_three_fifths_accepted_premise_bridge_bounded_note_2026-07-10",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "hypercharge_identification_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "098e9065aea0522f2fcab096c83e5c713150d0d36d13b68fdd46e9e37689104a",
+      "path": "docs/HYPERCHARGE_GUT_NORMALIZATION_THREE_FIFTHS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-07-10.md",
+      "runner_path": "scripts/hypercharge_gut_normalization_three_fifths_accepted_premise_runner.py",
+      "title": "Hypercharge GUT-Normalization 3/5 Declared Bounded-Premise Bridge"
     },
     "hypercharge_identification_note": {
       "claim_id": "hypercharge_identification_note",
@@ -94956,11 +94936,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "kinetic_isotropy_primitive",
-        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-        "cpt_exact_note"
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0ddf9306bbe5c364fa157a1639a771b8565546a5082351f171605d4deb5caaf3",
+      "note_hash": "a71e6c268fa3369114fb10565e1987b31fa3f673872c5c5e884d98d981ccacad",
       "path": "docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md",
       "runner_path": "scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py",
       "title": "Free Staggered-Dirac 2-Point Schwinger Function: SO(4) Covariance in the Continuum Limit (Narrow)"
@@ -101115,26 +101094,17 @@
     },
     "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30": {
       "claim_id": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
-        "link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10",
-        "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25",
-        "substrate_to_p_a_forcing_theorem_note_2026-04-30",
-        "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30",
-        "minimal_axioms",
-        "native_gauge_closure_note",
-        "graph_first_su3_integration_note",
-        "anomaly_forces_time_theorem",
-        "i3_zero_exact_theorem_note"
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [
+        "scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "44db1046fd99a6baa1ef89f72295e172cd488baadd5802a4e961ca2f6a197610",
+      "note_hash": "bbca3332267730308fa39b22a3ed1313e74eeaf7c716af599f35bc8b0200e883",
       "path": "docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md",
-      "runner_path": "scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py",
-      "title": "Planck Primitive Clifford-Majorana Edge Derivation Theorem"
+      "runner_path": "scripts/frontier_planck_primitive_clifford_substrate_descent_obstruction.py",
+      "title": "Planck Primitive Clifford-Majorana Edge Substrate-Descent Obstruction"
     },
     "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25": {
       "claim_id": "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25",
@@ -102086,7 +102056,7 @@
         "pmns_graph_first_cycle_frame_support_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ea9186716db7e80dc900bf8cf17dc7dc91adb7c8679e1e52d3f00d5a068327a0",
+      "note_hash": "fd942b922f6eecbe16d6d879d1dee8cb49e68e11b73f52c2582f74da9b048dd2",
       "path": "docs/PMNS_GRAPH_FIRST_AXIS_ALIGNMENT_NOTE.md",
       "runner_path": "scripts/frontier_pmns_graph_first_axis_alignment.py",
       "title": "PMNS Graph-First Axis Alignment"
@@ -110459,7 +110429,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "63e525265705a06dc15a3913084302de0a7d1ee10c03bb98529ebbb44bc21fe3",
+      "note_hash": "3ed48ed831b33b320565363662b3ae317149767388377f954e1e4b75acc8e7c8",
       "path": "docs/QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md",
       "runner_path": "scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py",
       "title": "Qubit-Lattice Joint Presentation Tensor Substrate Bridge (Narrow)"
@@ -110495,16 +110465,17 @@
     },
     "r_base_group_theory_derivation_theorem_note_2026-04-24": {
       "claim_id": "r_base_group_theory_derivation_theorem_note_2026-04-24",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "hypercharge_gut_normalization_three_fifths_accepted_premise_bridge_bounded_note_2026-07-10",
         "hypercharge_identification_note",
         "graph_first_su3_integration_note",
         "native_gauge_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dcd6b70ca6cca2e031801c0921a748a5d34cc8f916287f237589396589b72279",
+      "note_hash": "52fe05b085f1ab0312b2650cb980dc11606f84628f1fb384cf9fa77c2253806f",
       "path": "docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_r_base_group_theory_derivation.py",
       "title": "R_base = 31/9 Group-Theory Derivation Theorem"
@@ -111554,7 +111525,7 @@
         "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1eef8bdbdc0e5be7948244f9f1d53f3bd3585383b055735f075c3438c412af1a",
+      "note_hash": "b85381077b5c466de1e4de23e1d9d11ff19235f63d6db8749f45991583edb30b",
       "path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
       "runner_path": "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py",
       "title": "Record Local Finite Atom Availability Narrow Theorem"
@@ -112587,6 +112558,26 @@
       "path": "docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md",
       "runner_path": "scripts/frontier_route2_readout_record_positivity_no_go.py",
       "title": "Registration and Positivity Conditions Do Not Fix the Route-2 Readout rho_E"
+    },
+    "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10": {
+      "claim_id": "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
+        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+      ],
+      "helper_runner_paths": [
+        "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py",
+        "scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py"
+      ],
+      "note_hash": "112e28df8715603287cd54b1333de845ca6d0b1d550151c780a8b232919113f6",
+      "path": "docs/RP_COUPLED_TWO_SLICE_GAUGE_STAGGERED_BEREZIN_GRAM_NARROW_THEOREM_NOTE_2026-07-10.md",
+      "runner_path": "scripts/rp_coupled_two_slice_gauge_staggered_berezin_gram_2026_07_10.py",
+      "title": "Coupled two-slice SU(3) gauge + staggered Berezin/OS Gram \u2014 narrow theorem note"
     },
     "rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06": {
       "claim_id": "rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06",
@@ -117501,18 +117492,18 @@
     },
     "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
       "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_axioms",
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "203e21eceb0f377d2523c52084cba1b7e7f3cc05d3d1b24b643a8ac90743c28d",
+      "note_hash": "e4e1e9d6f532b48bab0b7895e918825be560b64618b4bcf0de21899806466937",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
-      "title": "Staggered-Dirac Substep 1 \u2014 Minimal-Quantum Single-Module / U4 Conditional Repair"
+      "title": "Staggered-Dirac Substep 1 \u2014 Qubit-Axiom Single-Module / U4 Conditional Repair"
     },
     "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
       "claim_id": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
@@ -119445,14 +119436,16 @@
     },
     "teleportation_acceptance_suite_note": {
       "claim_id": "teleportation_acceptance_suite_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [],
-      "helper_runner_paths": [],
-      "note_hash": "808c147d6d61ba90defa39c0251910f7ed3a6b4144df4d2100f4c2aa9a3ba15d",
+      "helper_runner_paths": [
+        "scripts/frontier_teleportation_acceptance_suite.py"
+      ],
+      "note_hash": "36766f9393d3c0a3bd73d1864e343fb4862c5997b6508df298667e20c8b144d6",
       "path": "docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_teleportation_acceptance_suite_note_sync_check.py",
       "title": "Teleportation Acceptance Suite Note"
     },
     "teleportation_adiabatic_convergence_robustness_note": {
@@ -121954,24 +121947,29 @@
       "runner_path": "scripts/frontier_universal_gr_canonical_projector_connection.py",
       "title": "Universal GR Canonical Projector / Connection Candidate on `PL S^3 x R`"
     },
+    "universal_gr_casimir_block_localization_context_note_2026-07-11": {
+      "claim_id": "universal_gr_casimir_block_localization_context_note_2026-07-11",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "a8fbd82e6e2867989e966fc29c24a404fc1908ce2ba967353e200bcfddf38492",
+      "path": "docs/UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_CONTEXT_NOTE_2026-07-11.md",
+      "runner_path": null,
+      "title": "Universal-GR Context for the Spatial `SO(3)` Casimir Decomposition"
+    },
     "universal_gr_casimir_block_localization_note": {
       "claim_id": "universal_gr_casimir_block_localization_note",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [
-        "universal_gr_constraint_action_stationarity_note",
-        "observable_principle_from_axiom_note",
-        "s3_anomaly_spacetime_lift_note",
-        "universal_gr_tensor_variational_candidate_note",
-        "universal_gr_tensor_quotient_uniqueness_note",
-        "universal_gr_a1_invariant_section_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "b5403bfd224d09d5c06ad85a4292dd7bfff422804b249317953eb226fa30b1b7",
+      "note_hash": "200f4bfa882a5bd65ff48966b7c5c997e796e8b77b685314343596e410459222",
       "path": "docs/UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_NOTE.md",
       "runner_path": "scripts/frontier_universal_gr_casimir_block_localization.py",
-      "title": "Universal GR Casimir Block Localization on `PL S^3 x R`"
+      "title": "Spatial `SO(3)` Casimir Decomposition on `Sym^2(R^4)`"
     },
     "universal_gr_complement_canonical_note": {
       "claim_id": "universal_gr_complement_canonical_note",
@@ -128735,6 +128733,7 @@
     "planck_boundary_orientation_incidence_no_go_note_2026-04-30",
     "planck_hidden_character_delta_zero_positive_theorem_note_2026-05-10_planckp2_note_2026-05-17",
     "planck_parent_source_hidden_character_no_go_note_2026-04-24",
+    "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
     "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25",
     "plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27",
@@ -129018,6 +129017,8 @@
     "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
     "universal_gr_bd_congruence_invariance_bounded_note_2026-05-10",
     "universal_gr_block_normalization_note",
+    "universal_gr_casimir_block_localization_context_note_2026-07-11",
+    "universal_gr_casimir_block_localization_note",
     "universal_gr_complement_canonical_note",
     "universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08",
     "universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08",
@@ -129116,27 +129117,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1631,
+      "bounded_theorem": 1632,
       "decoration": 3,
-      "meta": 329,
-      "no_go": 334,
-      "none": 1207,
+      "meta": 331,
+      "no_go": 336,
+      "none": 1205,
       "open_gate": 132,
       "positive_theorem": 277
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2033,
+      "bounded_theorem": 2032,
       "decoration": 3,
-      "meta": 329,
-      "no_go": 437,
+      "meta": 331,
+      "no_go": 439,
       "none": 248,
       "open_gate": 206,
       "positive_theorem": 657
     },
-    "edge_count": 14574,
-    "leaf_count": 1320,
-    "node_count": 3913,
-    "root_count": 1109,
-    "runners_with_path": 3536
+    "edge_count": 14564,
+    "leaf_count": 1321,
+    "node_count": 3916,
+    "root_count": 1112,
+    "runners_with_path": 3539
   }
 }

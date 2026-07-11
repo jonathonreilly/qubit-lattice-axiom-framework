@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2841 |
+| unaudited | 2844 |
 | audit_in_progress | 10 |
-| meta | 347 |
+| meta | 348 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 39 |
+| ~~audited_conditional~~ | 38 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,38 +45,38 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 14 |
 | `audited_clean` | 434 |
-| `audited_conditional` | 39 |
+| `audited_conditional` | 38 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3188 |
+| `unaudited` | 3192 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2044 |
 | `decoration` | 25 |
-| `meta` | 354 |
-| `no_go` | 460 |
+| `meta` | 355 |
+| `no_go` | 462 |
 | `open_gate` | 195 |
 | `positive_theorem` | 663 |
 
 | criticality | count |
 |---|---:|
-| `critical` | 754 |
-| `high` | 398 |
-| `medium` | 943 |
-| `leaf` | 1646 |
+| `critical` | 756 |
+| `high` | 395 |
+| `medium` | 946 |
+| `leaf` | 1647 |
 
 - **Retained pending chain closure:** 9
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3402
-- runners with (C) first-principles compute hits: 1797
-- runners with (D) external comparator hits: 1095
-- decoration candidates (no C, no D): 713
+- runners classified: 3405
+- runners with (C) first-principles compute hits: 1798
+- runners with (D) external comparator hits: 1096
+- decoration candidates (no C, no D): 716
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -84,19 +84,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1967 | 223.94 | `unaudited` | meta |
-| 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1604 | 65.65 | `audited_clean` | **retained** |
+| 1 | `minimal_axioms` | meta | critical | 1960 | 223.44 | `unaudited` | meta |
+| 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1599 | 65.14 | `audited_clean` | **retained** |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1226 | 63.26 | `unaudited` | unaudited |
-| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1047 | 62.03 | `unaudited` | unaudited |
-| 5 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 61.64 | `unaudited` | unaudited |
+| 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 61.64 | `unaudited` | unaudited |
+| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1046 | 61.53 | `unaudited` | unaudited |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1172 | 50.20 | `audited_clean` | **retained_bounded** |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1072 | 45.07 | `unaudited` | meta |
 | 8 | `key_terminology` | meta | critical | 1184 | 43.71 | `unaudited` | meta |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 945 | 40.89 | `unaudited` | unaudited |
-| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1318 | 40.37 | `unaudited` | unaudited |
+| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1311 | 39.86 | `unaudited` | unaudited |
 | 11 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 424 | 39.73 | `unaudited` | unaudited |
 | 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1050 | 39.04 | `unaudited` | unaudited |
-| 13 | `native_gauge_closure_note` | positive_theorem | critical | 1562 | 37.61 | `audited_clean` | **retained** |
+| 13 | `native_gauge_closure_note` | positive_theorem | critical | 1556 | 37.10 | `audited_clean` | **retained** |
 | 14 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 613 | 36.76 | `unaudited` | unaudited |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1056 | 36.55 | `unaudited` | unaudited |
 | 16 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
@@ -105,7 +105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 19 | `yt_ew_color_projection_theorem` | no_go | critical | 887 | 33.79 | `unaudited` | unaudited |
 | 20 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 620 | 33.78 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 866 | 32.76 | `unaudited` | unaudited |
-| 22 | `cpt_exact_note` | positive_theorem | critical | 747 | 32.05 | `unaudited` | unaudited |
+| 22 | `cpt_exact_note` | positive_theorem | critical | 728 | 31.51 | `unaudited` | unaudited |
 | 23 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 467 | 31.37 | `unaudited` | unaudited |
 | 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 863 | 31.25 | `unaudited` | unaudited |
 | 25 | `three_generation_structure_note` | bounded_theorem | critical | 1043 | 31.03 | `unaudited` | unaudited |
@@ -591,7 +591,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
-| `qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `rule_achirality_from_minimality_qualification_licensing_law_achiral_state_free_bounded_theorem_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
@@ -5270,19 +5269,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** If a future proof derives the double-local projector normalization, then lambda=(w_E/w_T1)^-2=9/4 and the endpoint chain closes.  _(class `A`)_
 - **chain closes:** None — The endpoint algebra closes only after supplying the double reciprocal local projector-normalization law q_X proportional to w_X^-2; that bridge is an explicit primitive/premise in the packet, not a derived result.
 - **rationale:** Issue: the double reciprocal local projector-normalization law q_X proportional to w_X^-2 is not derived from packet inputs; it is the named missing primitive. Why this blocks: the endpoint rho_E=21/4 follows only after that normalization bridge is admitted. Repair target: derive the double-local normalization from Route-2 source/tensor/readout structure, with a runner that computes the bridge rather than selecting p=-2 against lambda=9/4. Claim boundary until fixed: the note cleanly isolates the conditional algebra and falsifies nearby monomial laws, but it is not a current-surface derivation.
-
-### `qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09`
-
-- **Note:** [`QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md`](../../docs/QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The finite-dimensional tensor-carrier, multiplicity decomposition, minimal-carrier dimension, Gleason dimension threshold, and projection-span conclusions were audited conditional on a supplied commuting joint presentation and the named selection m = 1.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260710T164715Z-1ebf2b3d-00005-qubit_lattice_joint_presenta`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Pairwise elementwise commutation makes the product map from the tensor product a unital *-homomorphism, and simplicity of the matrix-algebra source makes that map injective.  _(class `A`)_
-- **chain closes:** True — Given both declared inputs, standard finite-dimensional matrix-algebra representation theory proves the stated conclusions. Neither the common commuting presentation nor the selection m = 1 follows from the accepted four-axiom authority.
-- **rationale:** The algebraic argument is correct on its stated hypotheses, and the runner genuinely checks representative tensor-generation, commutant, dimension, and projection-span facts using exact symbolic calculations. However, the claim imports two load-bearing bridge inputs: a common pairwise-commuting joint presentation and the minimality selection m = 1. The restricted packet explicitly acknowledges that the accepted axioms supply neither input, so the result remains conditional on them.
-- **auditor confidence:** high
 
 ### `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02`
 

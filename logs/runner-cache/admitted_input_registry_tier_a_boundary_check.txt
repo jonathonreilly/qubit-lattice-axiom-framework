@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/admitted_input_registry_tier_a_boundary_check.py
+runner_sha256: 3a4361f31dd5d037542605b9e5961eda9ccf62534e9b0ccb7d2cee1b0b3e3213
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
 ==============================================================================
 TIER-A ADMITTED-INPUT REGISTRY BOUNDARY CHECK
 ==============================================================================
@@ -65,3 +73,6 @@ Scope: source/registry alignment only; no audit verdict changes.
 [PASS] forbidden positive status claim absent: AC_phi_lambda is theorem-derived
 
 SUMMARY: TIER-A REGISTRY BOUNDARY PASS=60 FAIL=0
+
+----- stderr -----
+

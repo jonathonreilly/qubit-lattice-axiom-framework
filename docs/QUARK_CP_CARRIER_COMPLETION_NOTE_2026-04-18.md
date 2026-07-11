@@ -46,7 +46,11 @@ fit.
 A scope-narrowing companion already records the same boundary explicitly:
 `QUARK_CP_CARRIER_COMPLETION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md`.
 A new exact-support companion,
-[`QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md`](QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md),
+`QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md`
+(backticked deliberately, 2026-07-11, to break the two-note citation cycle:
+that companion markdown-links this note as its parent, so the load-bearing
+citation direction runs from the companion to this note, not vice versa;
+this mention is informational for the bounded fit recorded here),
 repairs the slot-choice part of the old ansatz boundary under the fixed
 Schur-NNI-tree/Hermitian one-edge-extension assumptions: the `1-3` edge is the
 unique off-tree carrier slot and its phase is the unique cycle invariant. The
@@ -185,7 +189,9 @@ none of which the present runner addresses:
    than choosing it by ansatz. Other carrier slots (different index pairs,
    different determinant-charge sectors, non-Hermitian completions) are
    not ruled out by the present note. The exact-support companion
-   [`QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md`](QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md)
+   `QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md`
+   (backticked deliberately, 2026-07-11 — cycle break; see the annotation in
+   the companion paragraph above)
    now closes the fixed-Schur-NNI-tree/Hermitian one-edge version of this gap:
    the `1-3` edge is the unique off-tree carrier slot and its phase is the
    unique cycle invariant after tree gauge-fixing. It does not derive
@@ -255,3 +261,22 @@ Current expected results on this branch:
 - `frontier_quark_jarlskog_closure_scan.py`: `PASS=5 FAIL=0`
 - `frontier_quark_cp_primitive_projector_scan.py`: summary scan with strongest
   candidate `J/J_atlas = 1.075`
+
+## Repair Note
+
+**2026-07-11 co-cycle break.** The 2026-07 audit of this row
+(`audited_numerical_match`) recorded in its rationale:
+
+> The co-cycle citation to
+> docs/QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md is
+> non-load-bearing/informational for this bounded fit verdict; source-graph
+> repair is still needed to remove or rewrite that markdown link before
+> effective_status can leave retained_pending_chain.
+
+Both markdown links from this note to that companion are now backticked with
+dated annotations (the companion markdown-links this note as its parent, so
+the load-bearing citation direction runs companion → parent only), removing
+the two-note citation cycle. No claim content changed; the bounded
+numerical-match reading, its comparator boundary, and the open derivation
+targets are exactly as before. This dated line moves the note hash so the
+row re-enters for re-audit.

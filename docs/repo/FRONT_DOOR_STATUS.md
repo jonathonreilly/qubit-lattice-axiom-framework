@@ -29,16 +29,16 @@ Owner-approval history for every axiom/primitive/governance change:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3746 |
-| Applied audit verdicts | 537 |
-| Retained-grade rows, including boxed decorations | 469 |
+| Applied audit verdicts | 542 |
+| Retained-grade rows, including boxed decorations | 471 |
 | Retained positive theorems | 81 |
-| Retained no-go rows | 22 |
+| Retained no-go rows | 23 |
 | Retained bounded rows | 349 |
-| Boxed decorations under retained parents | 17 |
+| Boxed decorations under retained parents | 18 |
 | Open gates | 4 |
-| Unaudited rows | 2844 |
+| Unaudited rows | 2834 |
 | Retained-pending-chain rows | 9 |
-| Audited conditional rows | 38 |
+| Audited conditional rows | 41 |
 | Audited renaming rows | 14 |
 | Audited numerical-match rows | 5 |
 | Citation cycles detected | 10 |
@@ -50,39 +50,39 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2899 |
+| Total pending rows | 2897 |
 | Ready rows | 601 |
 | Cycle-break targets | 49 |
-| Critical pending | 674 |
+| Critical pending | 673 |
 | High pending | 332 |
-| Medium pending | 761 |
+| Medium pending | 760 |
 | Leaf pending | 1132 |
 
 Next ready rows by queue order:
 
 - [`cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; non_terminal_conditional
 - [`fermion_parity_z2_grading_theorem_note_2026-05-02`](../../docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md) - critical; non_terminal_failed
-- [`s3_mass_matrix_no_go_note`](../../docs/S3_MASS_MATRIX_NO_GO_NOTE.md) - critical; audit_in_progress
-- [`hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`](../../docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md) - critical; unaudited
-- [`clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
-- [`abj_epsilon_index_square_block_no_go_note_2026-05-30`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md) - critical; unaudited
-- [`abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`](../../docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md) - critical; unaudited
-- [`abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`](../../docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
+- [`three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02`](../../docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
+- [`hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25`](../../docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md) - critical; non_terminal_conditional
+- [`clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
+- [`abj_epsilon_index_square_block_no_go_note_2026-05-30`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md) - critical; audit_in_progress
+- [`abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`](../../docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md) - critical; audit_in_progress
+- [`abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`](../../docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **564**.
+- Non-retained-grade cited rows in publication tables: **563**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 255 |
+| critical | `unaudited` | 254 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 124 |
-| critical | `audit_in_progress` | 2 |
-| critical | `audited_conditional` | 2 |
+| critical | `audited_conditional` | 3 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | high | `audited_conditional` | 1 |
 | high | `audited_failed` | 1 |

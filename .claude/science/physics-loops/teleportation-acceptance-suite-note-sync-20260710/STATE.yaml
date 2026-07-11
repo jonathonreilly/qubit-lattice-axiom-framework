@@ -1,0 +1,22 @@
+loop_slug: teleportation-acceptance-suite-note-sync-20260710
+mode: run
+goal: "Repair the audited strict-lane documentation drift in docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md."
+target_status: best-honest-status
+runtime_budget: "approximately 15 minutes for a bounded source/documentation closure"
+cycle_count: 1
+block_count: 1
+active_route: exact_note_runner_sync_guard
+hard_residual: null
+files_touched:
+  - docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md
+  - scripts/frontier_teleportation_acceptance_suite_note_sync_check.py
+  - logs/runner-cache/frontier_teleportation_acceptance_suite_note_sync_check.txt
+  - docs/audit/scripts/build_citation_graph.py
+open_imports: []
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_disposition: pass
+pr_status: open
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5122"
+next_exact_action: "Review PR #5122 and preserve the meta-row policy boundary; do not merge or apply an audit verdict from this branch."
+stop_condition: "Review passes, the input-fingerprinted cache is fresh and passing, the meta-row policy boundary is recorded, and the block is committed and delivered."

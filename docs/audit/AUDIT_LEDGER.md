@@ -100,8 +100,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `alpha_s_derived_note` | bounded_theorem | critical | 1048 | 39.03 | `unaudited` | unaudited |
 | 14 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 611 | 36.76 | `unaudited` | unaudited |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1054 | 36.54 | `unaudited` | unaudited |
-| 16 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
-| 17 | `kinetic_isotropy_primitive` | meta | critical | 484 | 35.92 | `unaudited` | meta |
+| 16 | `kinetic_isotropy_primitive` | meta | critical | 485 | 36.42 | `unaudited` | meta |
+| 17 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
 | 18 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 434 | 35.27 | `unaudited` | unaudited |
 | 19 | `yt_ew_color_projection_theorem` | no_go | critical | 885 | 33.79 | `audited_clean` | **retained_no_go** |
 | 20 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 618 | 33.77 | `unaudited` | unaudited |

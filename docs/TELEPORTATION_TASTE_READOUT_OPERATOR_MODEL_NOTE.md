@@ -33,7 +33,12 @@ python3 -m py_compile scripts/frontier_teleportation_taste_readout_operator_mode
 python3 scripts/frontier_teleportation_taste_readout_operator_model.py
 ```
 
-Both commands completed successfully.
+The compile command succeeds, and the runner's local operator-factorization
+and no-record checks pass.  The runner then evaluates audit-controlled
+downstream boundary guards; its final process exit is zero only when those
+separate downstream rows are currently retained-grade.  A downstream status
+reset can therefore produce a nonzero final exit without changing the local
+factorization certificate reported above it.
 
 Default settings:
 
@@ -123,6 +128,29 @@ the full operator norm, giving relative residual `1.000000` and max residual
 `1.000000` in every 2D and 3D audited case.  The native `Z+` projector has
 blocks `(I + sigma_s Z_logical)/2`, so its projection is `I/2` and its residual
 is `sigma_s Z_logical/2`, giving the table's relative residual `0.707107`.
+
+The primary runner now emits an independent native-parity block certificate
+before applying its expected PASS/FAIL classification rules.  It enumerates
+the integer signs from the environment labels, verifies the constructed
+matrix block identity
+
+```text
+<b,e|Z_native|b',e'> = delta_(e,e') sigma_s (Z_logical)_(b,b'),
+```
+
+and checks the exact multiplicities.  With `C = side/2`, there are `C^dim`
+cell sectors and `2^(dim-1)` spectator sectors.  Hence each spectator sign is
+repeated `C^dim` times.  In 1D all `n_env = C` blocks have sign `+1`.  For
+`dim > 1`, the parity-flip involution on one spectator bit pairs every `+1`
+sector with a `-1` sector, so the runner must find
+
+```text
+n_plus = n_minus = n_env / 2,     sum_e sigma_s = 0.
+```
+
+This integer count plus the independently constructed matrix-block identity
+is the executable certificate for the factorization obstruction; the later
+expected-result table is only a consistency guard.
 
 The same sign is inherited by any native-parity correction or Bell stabilizer.
 Because the fixed row-major pair-hop equals `X_logical tensor I_env` only for

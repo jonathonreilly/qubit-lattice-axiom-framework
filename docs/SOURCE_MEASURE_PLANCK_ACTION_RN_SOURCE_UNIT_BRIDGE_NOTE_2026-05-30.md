@@ -19,7 +19,7 @@ unbounded Y_T closure by this note alone.
 
 - [`SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md`](SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md)
   — supplies the source-scale freedom that this bounded bridge narrows.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   — records the Planck-mass conventional anchor used for the physical lattice
   scale. This note still treats the source-coupled Planck-action
   normalization as an explicit bounded-surface input, not as a derivation from
@@ -102,7 +102,7 @@ score = - d(S / kappa_Pl) / dh - E[-d(S / kappa_Pl) / dh].
 ```
 
 The result is compatible with the Tier-A scale convention
-[`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md):
+`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`:
 the physical lattice has the Planck-mass anchor `a^{-1}=M_Pl`.  The
 source-coupled action exponent `S/kappa_Pl` is the additional bounded-surface
 input used here.  The theorem does not derive the SI decimal Planck scale and
@@ -195,3 +195,11 @@ Expected result:
 ```text
 SUMMARY: PASS=... FAIL=0
 ```
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md)

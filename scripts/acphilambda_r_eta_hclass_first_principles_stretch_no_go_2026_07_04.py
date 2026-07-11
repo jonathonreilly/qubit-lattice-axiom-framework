@@ -11,7 +11,7 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md"
-TIER_A = DOCS / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 AXIOM_PREMISES = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
 AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
@@ -85,7 +85,7 @@ def main() -> int:
 
     paths = [
         NOTE,
-        TIER_A,
+        DECISION_HISTORY,
         LEDGER,
         AXIOM_PREMISES,
         AXIOMS,
@@ -98,7 +98,7 @@ def main() -> int:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
     note = read(NOTE)
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     premises = json.loads(read(AXIOM_PREMISES))
     axioms = read(AXIOMS)
     registry = read(REGISTRY)

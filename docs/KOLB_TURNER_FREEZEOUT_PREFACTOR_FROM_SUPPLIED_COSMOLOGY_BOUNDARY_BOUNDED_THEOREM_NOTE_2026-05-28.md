@@ -437,4 +437,12 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 - [newton_poisson_flat_friedmann_textbook_import_note_2026-05-17](NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
 - [axiom_first_stefan_boltzmann_theorem_note_2026-05-01](AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md)
-- [admitted_input_registry_tier_a_note_2026-05-23](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md)

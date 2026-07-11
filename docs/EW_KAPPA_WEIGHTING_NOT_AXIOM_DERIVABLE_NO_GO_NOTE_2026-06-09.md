@@ -20,11 +20,11 @@ observable bridge.
 Therefore kappa_EW is not derivable from that baseline alone.
 ```
 
-The claim is not that no future theory can fix `kappa_EW`. A future derivation,
-owner-approved admission, or owner-approved registry update could change the
+The claim is not that no future theory can fix `kappa_EW`. A future retained
+derivation or an explicitly approved primitive update could change the
 status. This note only records that the current approved baseline,
-`Lattice + Quantum + Record` plus the registered scale-reference and
-kinetic-isotropy primitives, does not supply the missing weighting rule.
+Lattice + Qubit + Admissibility + Record plus the registered approved
+primitives, does not supply the missing weighting rule.
 
 ## Load-Bearing Facts
 
@@ -47,12 +47,11 @@ kinetic-isotropy primitives, does not supply the missing weighting rule.
    primitive supplies only unit conversion, and the kinetic-isotropy primitive
    supplies only the structural OS0 kinetic-form ratio `c_t = c_s`.
 
-5. `docs/audit/data/premise_decision_history.json` historically records two formerly admitted
-   derivation targets and does not register `kappa_EW`.
+5. `docs/audit/data/axiom_premise_nodes.json` is the complete supplied
+   foundation and contains no `kappa_EW` weighting or readout primitive.
 
 Together these facts show that `kappa_EW` is not derivable from the approved
-baseline alone. Calling it a candidate admission is descriptive, not an approval:
-review-loop does not register it, audit it, or grant it.
+baseline alone. Decision history supplies no alternative premise channel.
 
 ## Scope
 
@@ -60,8 +59,8 @@ Can claim:
 
 - `kappa_EW` is a weighting/readout-bridge choice.
 - The current approved axiom/primitive baseline does not supply such a rule.
-- The EW absolute normalization remains conditional on a future derivation or
-  explicit governance/admission action.
+- The EW absolute normalization remains conditional on a future retained
+  derivation or explicitly approved primitive update.
 - Within the existing construction, a common `K_EW` factor cancels from
   `sin^2(theta_W)`, so that ratio is insensitive to `kappa_EW` placement as
   implemented here.
@@ -69,10 +68,10 @@ Can claim:
 Cannot claim:
 
 - `kappa_EW = 0` or `kappa_EW = 1` is forced.
-- `kappa_EW` is approved as a Tier-A admission.
-- The Tier-A registry should be edited by review-loop.
+- `kappa_EW` is an approved primitive or derived result.
+- Decision history should be edited to make it a premise.
 - The framework is wrong or the axioms are defective.
-- No possible future non-axiom theory, convention, or owner-approved admission
+- No possible future non-axiom theory or approved-primitive update
   can close the wall.
 
 ## No-Go Discipline Gate
@@ -86,7 +85,7 @@ Cannot claim:
 | Use the Quantum axiom. | Fails: Quantum explicitly supplies no physical observable bridge. | RULED OUT BY AXIOM |
 | Use approved primitives. | Fails: the primitive registry contains only scale-reference and kinetic-isotropy primitives, neither of which supplies weighting or a readout bridge. | ATTEMPTED |
 | Use prior route-specific packets such as CMT/OZI/tracelessness/MC/register-not-read. | They are contextual support only; they do not supply an axiom-level weighting. | RULED OUT BY PRIOR |
-| Add a selector, readout convention, or admitted observable-bridge placement. | This can be a legitimate future closure route, but it is extra non-axiom content and therefore not a derivation from the approved baseline alone. | OPEN |
+| Add a selector, readout convention, or observable-bridge theorem. | This can be a legitimate future closure route, but it is extra non-axiom content and therefore not a derivation from the approved baseline alone. | OPEN |
 
 **N2 - Wall independence.** The collapsed wall set has one wall: the missing
 weighting/readout-bridge rule. The count-versus-weight algebra classifies the
@@ -107,8 +106,8 @@ for this note.
 supply the weighting/readout-bridge rule."
 
 **N6 - Partial-closure scan.** The legitimate closure path remains open: an
-explicit future derivation, owner-approved admission, or owner-approved registry
-update could supply the missing rule. Approved primitives were checked and do
+explicit future derivation or approved-primitive registry update could supply
+the missing rule. Approved primitives were checked and do
 not supply it.
 
 **N7 - Steelman.** A hostile reviewer could say: "The axioms permit a supplied
@@ -116,9 +115,10 @@ readout context, and a sufficiently constrained EW readout context might force
 `kappa_EW`." That would defeat a broad no-go, but not this one: supplying that
 readout context is exactly extra non-axiom content.
 
-**N8 - Cross-cycle echo.** The registered admissions and approved primitives show
-that governance can legitimately add baseline-adjacent content. The same kind
-of mechanism may eventually apply to `kappa_EW`; this note does not block it.
+**N8 - Cross-cycle echo.** Approved primitives show that an explicitly reviewed
+foundation update can add narrowly scoped structural content. A retained
+derivation is the ordinary closure route for `kappa_EW`; this note does not
+block either route.
 
 **No-go discipline status:** PASS for the narrow axiom-baseline no-go.
 
@@ -133,6 +133,6 @@ Expected: `RUNNER STATUS: PASS (PASS=7 FAIL=0)`.
 ## Honest Auditor Read
 
 Audit this as a narrow no-go: `kappa_EW` is not derivable from the current
-approved axiom/primitive baseline alone. Do not audit it as an approved Tier-A
-admission, an audit verdict, or a claim that no future non-axiom closure route
+approved axiom/primitive baseline alone. Do not audit it as a supplied premise,
+an audit verdict, or a claim that no future non-axiom closure route
 can exist.

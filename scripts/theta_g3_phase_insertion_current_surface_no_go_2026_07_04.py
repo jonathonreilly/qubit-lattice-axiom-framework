@@ -15,7 +15,7 @@ DOCS = ROOT / "docs"
 NOTE = DOCS / "THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md"
 MINIMAL = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
 REGISTRY = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
-TIER_A = DOCS / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 
 POSITIVE = DOCS / "THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md"
@@ -95,7 +95,7 @@ def main() -> int:
         NOTE,
         MINIMAL,
         REGISTRY,
-        TIER_A,
+        DECISION_HISTORY,
         LEDGER,
         POSITIVE,
         CARRIER4D,
@@ -124,14 +124,14 @@ def main() -> int:
         check(f"{label} row has note path", bool(r and r.get("note_path")), r.get("note_path") if r else None)
     for label in ["positive", "carrier4d", "torus_dual", "link_star", "multiplaquette", "axiom_no_go"]:
         r = row_or_none(SOURCE_ROWS[label])
-        check(f"{label} is not an effective theta-retirement authority", r is None or r.get("effective_status") != "retained", r.get("effective_status") if r else None)
+        check(f"{label} is not retained-grade theta-retirement authority", r is None or r.get("effective_status") not in {"retained", "retained_bounded", "retained_no_go"}, r.get("effective_status") if r else None)
     cross = row(SOURCE_ROWS["cross_plane"])
-    check("cross-plane absence row remains ledgered", cross.get("effective_status") != "missing", cross.get("effective_status"))
+    check("cross-plane absence is retained-grade", cross.get("effective_status") in {"retained", "retained_bounded", "retained_no_go"}, cross.get("effective_status"))
     check("new note has Type no_go", "**Type:** no_go" in note)
     check("new note has Claim type no_go", "**Claim type:** no_go" in note)
 
     section("B. admission-era decision history")
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     theta = tier["retired_derivation_targets"]["strong_cp_theta_zero_note"]
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     check("decision history preserves zero final admission count", tier["genuine_admitted_input_count"] == 0, tier["genuine_admitted_input_count"])
@@ -190,7 +190,7 @@ def main() -> int:
         "transition probabilities or weights",
         "context selection",
         "source/action and physical-observable identification",
-        "the strong-CP theta admission",
+        "the strong-CP theta gauge and mass-side derivation obligations",
         "Only records are readable",
         "A readout value is determined by record content alone",
     ]:
@@ -373,7 +373,7 @@ def main() -> int:
     expected_links = {
         "../scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py",
         "MINIMAL_AXIOMS_2026-06-29.md",
-        "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
+        "THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md",
         "THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md",
         "THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
         "THETA_TORUS_DUAL_ABELIANIZATION_SHIFTED_WEIGHT_LATTICE_GAUSSIAN_GLUING_STABLE_WEYL_SHIFT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-02.md",

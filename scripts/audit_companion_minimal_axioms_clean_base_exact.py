@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 POLICY = ROOT / "docs" / "audit" / "AXIOM_MINIMALITY_POLICY.md"
 REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 PURITY_GUARD = ROOT / "docs" / "audit" / "scripts" / "check_axiom_premise_clean.py"
 RUNNER = "scripts/audit_companion_minimal_axioms_clean_base_exact.py"
 CLAIM_ID = "minimal_axioms"
@@ -108,7 +108,7 @@ def source_boundary_checks() -> list[Check]:
     note = read(NOTE)
     policy = read(POLICY)
     registry = load_json(REGISTRY)
-    tier_a = load_json(TIER_A)
+    tier_a = load_json(DECISION_HISTORY)
     node = (registry.get("nodes") or {}).get(CLAIM_ID, {})
     aliases = set(node.get("aliased_paths") or [])
     legacy_ids = set(node.get("legacy_claim_ids") or [])
@@ -119,7 +119,7 @@ def source_boundary_checks() -> list[Check]:
         Check("Source note exists", NOTE.exists(), rel(NOTE)),
         Check("Policy exists", POLICY.exists(), rel(POLICY)),
         Check("Axiom-premise registry exists", REGISTRY.exists(), rel(REGISTRY)),
-        Check("Tier-A registry exists", TIER_A.exists(), rel(TIER_A)),
+        Check("Tier-A registry exists", DECISION_HISTORY.exists(), rel(DECISION_HISTORY)),
         Check("Source type is meta", "**Type:** meta" in note, "framework memo, not theorem row"),
         Check(
             "Source status is current public framework axiom memo",
@@ -322,7 +322,7 @@ def source_boundary_checks() -> list[Check]:
         Check("Audit-pipeline treatment says chain-satisfy without bounding", "chain-satisfy without making downstream rows\n`retained_bounded`" in note, ""),
         Check("Observable-principle parent is explicitly outside the axiom node", "must not be moved wholesale into\n`docs/audit/data/axiom_premise_nodes.json`" in note, ""),
         Check("Open gates outside axioms include staggered realization", "staggered-Dirac/finite-Grassmann realization" in note, ""),
-        Check("Open gates outside axioms include theta", "strong-CP theta admission" in note, ""),
+        Check("Open gates outside axioms include theta", "strong-CP theta gauge and mass-side derivation obligations" in note, ""),
         Check("Open gates outside axioms include context selection and formation rules", "context selection" in note and "formation rules (which\n  admissible possibility a new record locks, at which site, with what weight,\n  or at what rate)" in note, ""),
         Check("Open gates outside axioms include physical persistence dynamics", "physical persistence dynamics" in note, ""),
         Check("Open gates outside axioms include g_bare", "`g_bare = 1` convention handling" in note, ""),

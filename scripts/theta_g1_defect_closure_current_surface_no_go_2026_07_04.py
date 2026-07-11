@@ -14,7 +14,7 @@ DOCS = ROOT / "docs"
 NOTE = DOCS / "THETA_G1_DEFECT_CLOSURE_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md"
 MINIMAL = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
 REGISTRY = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
-TIER_A = DOCS / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 POSITIVE = DOCS / "THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md"
 CARRIER4D = DOCS / "THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md"
@@ -162,7 +162,7 @@ def q_int(mvec: dict[tuple[int, int], int]) -> int:
 def main() -> int:
     print("theta G1 defect-closure current-surface no-go verifier")
 
-    paths = [NOTE, MINIMAL, REGISTRY, TIER_A, LEDGER, POSITIVE, CARRIER4D, AXIOM_NO_GO, G3_NO_GO]
+    paths = [NOTE, MINIMAL, REGISTRY, DECISION_HISTORY, LEDGER, POSITIVE, CARRIER4D, AXIOM_NO_GO, G3_NO_GO]
     texts = {path: read(path) for path in paths}
     note = texts[NOTE]
     note_flat = flat(note)
@@ -191,7 +191,7 @@ def main() -> int:
     check("new note has Claim type no_go", "**Claim type:** no_go" in note)
 
     section("B. admission-era decision history")
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     theta = tier["retired_derivation_targets"]["strong_cp_theta_zero_note"]
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     check("decision history preserves zero final admission count", tier["genuine_admitted_input_count"] == 0, tier["genuine_admitted_input_count"])
@@ -263,7 +263,7 @@ def main() -> int:
         "transition probabilities or weights",
         "context selection",
         "source/action and physical-observable identification",
-        "the strong-CP theta admission",
+        "the strong-CP theta gauge and mass-side derivation obligations",
         "Only records are readable",
     ]:
         check(f"minimal axioms withhold: {phrase[:50]}", phrase in source_flat[MINIMAL])
@@ -401,7 +401,7 @@ def main() -> int:
         "THETA_GAUGE_POSITIVE_ROUTE_STRETCH_STATUS_2026-07-04.md",
         "THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
         "MINIMAL_AXIOMS_2026-06-29.md",
-        "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
+        "THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md",
         "THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md",
         "THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md",
     }

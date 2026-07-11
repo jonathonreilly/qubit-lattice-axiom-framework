@@ -40,6 +40,9 @@ Triggers (any of):
   7. A clean negative-boundary audit has no structured No-Go Discipline
      packet. Legacy packetless authority is archived and returned to fresh
      audit under `no_go_discipline_packet_missing` rather than grandfathered.
+  8. A live No-Go Discipline packet no longer validates against the current
+     evidence/premise policy. Archive it and return the row to fresh audit
+     instead of leaving strict lint blocked on stale authority.
 
 When triggered, the prior audit fields are archived into previous_audits
 with an `invalidation_reason`, and audit_status is reset to unaudited.
@@ -236,6 +239,38 @@ def status_rank(status: str | None) -> int:
 
 
 def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
+    packet = row.get("no_go_discipline")
+    if isinstance(packet, dict) and row.get("audit_status") not in {
+        None,
+        "unaudited",
+        "audit_in_progress",
+    }:
+        note_path = str(row.get("note_path") or "")
+        try:
+            note_body = (REPO_ROOT / note_path).read_text(
+                encoding="utf-8", errors="replace"
+            )
+        except OSError:
+            note_body = ""
+        source_required = no_go_discipline_gate.source_requires_no_go_discipline(
+            note_path, note_body, row.get("claim_type")
+        )
+        evidence_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
+            packet
+        )
+        if evidence_manifest is None:
+            evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
+                row, rows, REPO_ROOT
+            )
+        packet_error = no_go_discipline_gate.validate_no_go_discipline(
+            {**row, "verdict": row.get("audit_status")},
+            source_required=source_required,
+            evidence_manifest=evidence_manifest,
+        )
+        if packet_error:
+            digest = hashlib.sha256(packet_error.encode("utf-8")).hexdigest()[:12]
+            return f"no_go_discipline_packet_invalid:{digest}"
+
     if row.get("audit_status") == "audited_clean" and row.get("no_go_discipline") is None:
         note_path = str(row.get("note_path") or "")
         note_body = ""

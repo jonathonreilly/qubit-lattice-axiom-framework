@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_R_ETA_RECORD_FORMATION_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md"
 MINIMAL = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
-TIER_A = DOCS / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 OCCURRENCE_NO_GO = DOCS / "ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md"
 DIRECT_LICENSE_NO_GO = DOCS / "ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md"
 ANGLE_NO_GO = DOCS / "ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md"
@@ -80,7 +80,7 @@ def main() -> int:
 
     note = NOTE.read_text(encoding="utf-8")
     minimal = MINIMAL.read_text(encoding="utf-8")
-    tier = json.loads(TIER_A.read_text(encoding="utf-8"))
+    tier = json.loads(DECISION_HISTORY.read_text(encoding="utf-8"))
     occurrence = OCCURRENCE_NO_GO.read_text(encoding="utf-8")
     direct_license = DIRECT_LICENSE_NO_GO.read_text(encoding="utf-8")
     angle = ANGLE_NO_GO.read_text(encoding="utf-8")
@@ -99,7 +99,7 @@ def main() -> int:
 
     section("A - source and registry boundaries")
 
-    for path in [NOTE, MINIMAL, TIER_A, OCCURRENCE_NO_GO, DIRECT_LICENSE_NO_GO, ANGLE_NO_GO, DELTA_CHAIN, FIXED, REGISTRY]:
+    for path in [NOTE, MINIMAL, DECISION_HISTORY, OCCURRENCE_NO_GO, DIRECT_LICENSE_NO_GO, ANGLE_NO_GO, DELTA_CHAIN, FIXED, REGISTRY]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
@@ -145,7 +145,7 @@ def main() -> int:
     for needle in excluded_needles:
         check(f"minimal axioms keep outside content outside: {needle}", needle in minimal_flat)
     check("minimal axioms explicitly leave AC outside", "AC_phi_lambda" in minimal)
-    check("minimal axioms explicitly leave theta outside", "strong-CP theta admission" in minimal)
+    check("minimal axioms explicitly leave theta outside", "strong-CP theta gauge and mass-side derivation obligations" in minimal)
 
     section("C - fixed-locus arithmetic and formation-compatible family")
 

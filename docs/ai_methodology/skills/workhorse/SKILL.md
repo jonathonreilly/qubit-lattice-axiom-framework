@@ -50,7 +50,7 @@ The worker must not:
 
 - synthesize final verdicts that the supervising agent merely rubber-stamps;
 - apply audit verdicts, effective-status changes, or retained promotions;
-- add axioms, primitives, or Tier-A admissions;
+- add axioms, primitives, or any unregistered supplied-premise class;
 - decide to land, merge, or close PRs;
 - route science work through visual/image-generation tooling.
 

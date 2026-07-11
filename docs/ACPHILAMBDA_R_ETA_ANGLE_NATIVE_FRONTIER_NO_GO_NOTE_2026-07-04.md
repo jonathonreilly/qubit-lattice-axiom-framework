@@ -55,7 +55,7 @@ fixed-locus density to the registered charged-lepton holonomy value.
 - [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
   supplies the retained no-go that the retained periodic finite/lattice phase
   sources do not derive the literal `2/9`-radian selected-line bridge.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   is registry metadata, not a retained theorem input; it names the live
   residual as the delta readout identification R-eta.
 
@@ -201,3 +201,11 @@ Expected close:
 ```text
 TOTAL: PASS=128 FAIL=0
 ```
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)

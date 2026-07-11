@@ -27,7 +27,7 @@ Examples:
    the exercise. If a current repo-native `framework-refresher` skill or
    command exists, read/use it first; otherwise read the current minimal axioms,
    primitive registry check, approved primitive source notes, axiom-premise
-   registry, Tier-A admissions registry, review-loop skill, and controlled
+   registry, derivation-obligation registry, review-loop skill, and controlled
    vocabulary directly.
 4. If subagents are used, require every subagent to perform the same framework
    refresher read and state which refresher surfaces it read before giving

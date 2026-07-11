@@ -15,7 +15,7 @@ DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md"
 MINIMAL = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
 AXIOM_PREMISES = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = DOCS / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 BRANNEN = DOCS / "BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md"
 FIXED = DOCS / "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
@@ -70,7 +70,7 @@ def main() -> int:
     note = read(NOTE)
     minimal = read(MINIMAL)
     premises = json.loads(read(AXIOM_PREMISES))
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     brannen = read(BRANNEN)
     fixed = read(FIXED)
     registry = read(REGISTRY)
@@ -82,7 +82,7 @@ def main() -> int:
     registry_flat = flat(registry)
 
     section("A. source presence and Tier-A boundary")
-    for path in [NOTE, MINIMAL, AXIOM_PREMISES, TIER_A, LEDGER, BRANNEN, FIXED, REGISTRY, REALIZED, KINETIC]:
+    for path in [NOTE, MINIMAL, AXIOM_PREMISES, DECISION_HISTORY, LEDGER, BRANNEN, FIXED, REGISTRY, REALIZED, KINETIC]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
 
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
@@ -103,7 +103,7 @@ def main() -> int:
         "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
     ]:
         row = ledger_row_by_path(source_path)
-        check(f"{Path(source_path).name} remains ledgered", row.get("effective_status") != "missing", row.get("effective_status"))
+        check(f"{Path(source_path).name} is retained-grade", row.get("effective_status") in {"retained", "retained_bounded", "retained_no_go"}, row.get("effective_status"))
 
     section("B. approved premise-node hygiene")
     check(
@@ -307,7 +307,7 @@ def main() -> int:
         "MINIMAL_AXIOMS_2026-06-29.md",
         "BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
         "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-        "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
+        "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
         "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
         "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
     }

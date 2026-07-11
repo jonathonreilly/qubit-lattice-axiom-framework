@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py
-runner_sha256: 8fca6159c4303d7f5f1f0174e5326bc8e1c9497e5475eb9c907d661825ac78b6
+runner_sha256: 9a399483e7d34234ac115b252e5eef27fb4f5242afc5963889390d3b5a50a84c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -30,7 +30,7 @@ Updated axiom-surface checks
 [PASS] axiom memo contains boundary: Records form.
 [PASS] axiom memo contains boundary: A state is a configuration of records.
 [PASS] axiom memo contains boundary: A law privileges no states.
-[PASS] axiom memo contains boundary: a law may not depend on a choice not fixed by the su
+[PASS] axiom memo contains boundary: A choice not fixed by the supplied structure remains
 [PASS] axiom memo contains boundary: Admissibility is not a dynamics axiom.
 [PASS] axiom memo contains boundary: It does not choose a Hamiltonian or transfer operato
 [PASS] axiom memo contains boundary: define a time metric

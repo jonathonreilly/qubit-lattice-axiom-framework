@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/scale_reference_primitive_boundary_check.py
-runner_sha256: 192fdc2b744d5b97d57a1b763d6957f04589e0c14490f2a724ca971794cd5cce
+runner_sha256: 59e249429603f0f52a979e603e621d27d4a1e6622486835d2af426cd1a42bfc0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================

@@ -26,14 +26,13 @@ Run `/framework-refresher` first if you have not this session.
 3. **Retained-grade theorems** — verify each via `/ledger` that
    `effective_status` is `retained`, `retained_bounded`, or `retained_no_go`
    on `origin/main`. A note's own `Status:` header is not evidence.
-4. **Tier-A admissions** from `docs/audit/data/tier_a_admissions.json`, with
-   the explicit consequence that the result is bounded until the admission is
-   retired.
+4. **Named conditional/open dependencies** — these carry zero premise weight
+   and must be independently derived before they can support retained closure.
 
 No continuum spacetime, fields, Hamiltonians/Lagrangians, Born weights,
 species identifications, gauge groups, or measurement dynamics may be assumed
-— each enters only as a named derivation lane with retained status, an
-explicit admission, or the disclosed target itself.
+— each enters only as a named derivation lane with retained status or as the
+disclosed conditional target itself.
 
 ## Derivation Protocol
 

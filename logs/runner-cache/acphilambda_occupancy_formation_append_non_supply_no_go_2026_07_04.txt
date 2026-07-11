@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py
-runner_sha256: 486a769980e5f8d92f8c33eda36e0d72b9f9adefbb6072b7c8d61b85e58b2d02
+runner_sha256: 8b77abf01cdb9250519133a94c06996b2fa6f151c237144fcde0f6cb144e1c23
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.41
+elapsed_sec: 1.73
 status: ok
 ----- stdout -----
 AC_phi_lambda occupancy formation-append non-supply verifier
@@ -48,7 +48,7 @@ B. Tier-A registry state on current main
 [PASS] Tier-A live derivation targets are empty after the 2026-07-05 retirements
 [PASS] AC entry preserved intact under retired_derivation_targets
 [PASS] AC governance retirement is withdrawn and obligations are reopened
-[PASS] derivation registry carries exactly the two AC obligations
+[PASS] derivation registry carries the AC and theta obligations
 [PASS] occupancy obligation is explicitly open and non-premise
 [PASS] R-eta obligation is explicitly open and non-premise
 [PASS] obligations are separate from the supplied foundation

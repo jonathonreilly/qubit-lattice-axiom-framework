@@ -272,6 +272,10 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
     # queue registries and emits spurious errors (rows the test never created).
     if hasattr(module, "RETIRED_ADMISSIONS_PATH"):
         module.RETIRED_ADMISSIONS_PATH = module.DATA_DIR / "tier_a_admissions.json"
+    if hasattr(module, "RETIRED_OWNER_GOVERNANCE_PATH"):
+        module.RETIRED_OWNER_GOVERNANCE_PATH = (
+            module.DATA_DIR / "owner_governed_premise_nodes.json"
+        )
     if hasattr(module, "DERIVATION_OBLIGATIONS_PATH"):
         module.DERIVATION_OBLIGATIONS_PATH = (
             module.DATA_DIR / "derivation_obligations.json"
@@ -1275,7 +1279,7 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
                 "claim_id": "historical_admission",
                 "deps": [],
                 "audit_status": "unaudited",
-                "claim_type": "bounded_theorem",
+                "claim_type": "meta",
             },
         }
         with mock.patch.object(
@@ -1283,6 +1287,10 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
             "is_axiom_premise",
             side_effect=lambda dep_id: dep_id
             in {"minimal_axioms", "scale_reference_primitive"},
+        ), mock.patch.object(
+            m.premise_nodes,
+            "is_non_evidence_context_dep",
+            side_effect=lambda dep_id: dep_id == "historical_admission",
         ):
             new_rows, _cycles = m.compute_effective(rows)
         self.assertEqual(
@@ -1704,38 +1712,55 @@ class AuditLintTest(unittest.TestCase):
         )
         self.assertEqual(errors, [])
 
-    def test_owner_governed_class_counts_match_nodes_and_atoms(self):
+    def test_obsolete_premise_registries_are_rejected(self):
         m = _import("audit_lint")
-        registry = {
-            "owner_governed_premise_node_count": 1,
-            "owner_governed_residual_atom_count": 2,
-            "nodes": {
-                "ac": {
-                    "adopted_residual_candidates": ["ac_i", "ac_ii"],
-                }
+        _patch_repo_root(m, self.tmp_root)
+        self._write_minimal_ledger({})
+        for name in (
+            "tier_a_admissions.json",
+            "owner_governed_premise_nodes.json",
+        ):
+            path = self.fx.data_dir / name
+            path.write_text("{}\n", encoding="utf-8")
+            import contextlib, io
+            output = io.StringIO()
+            with contextlib.redirect_stdout(output):
+                rc = m.main()
+            self.assertEqual(rc, 1, output.getvalue())
+            self.assertIn(f"{name} must not exist", output.getvalue())
+            path.unlink()
+
+    def test_scientific_dependency_on_non_evidence_history_is_rejected(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        rows = {
+            "history": {
+                "claim_id": "history",
+                "audit_status": "unaudited",
+                "claim_type": "meta",
+                "effective_status": "meta",
+                "criticality": "leaf",
+            },
+            "science": {
+                "claim_id": "science",
+                "deps": ["history"],
+                "audit_status": "unaudited",
+                "claim_type": "bounded_theorem",
+                "effective_status": "unaudited",
+                "criticality": "leaf",
             },
         }
-        self.assertEqual(m.owner_governed_count_errors(registry), [])
-
-        registry["owner_governed_premise_node_count"] = 0
-        self.assertEqual(
-            m.owner_governed_count_errors(registry),
-            [
-                "owner_governed_premise_nodes.json "
-                "owner_governed_premise_node_count must equal nodes"
-            ],
-        )
-
-        registry["owner_governed_premise_node_count"] = 1
-        registry["owner_governed_residual_atom_count"] = 0
-        self.assertEqual(
-            m.owner_governed_count_errors(registry),
-            [
-                "owner_governed_premise_nodes.json "
-                "owner_governed_residual_atom_count must equal "
-                "adopted_residual_candidates across nodes"
-            ],
-        )
+        self._write_minimal_ledger(rows)
+        import contextlib, io
+        output = io.StringIO()
+        with mock.patch.object(
+            m.premise_nodes,
+            "is_non_evidence_context_dep",
+            side_effect=lambda dep_id: dep_id == "history",
+        ), contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("scientific row depends on non-evidence context", output.getvalue())
 
     def test_lint_validates_live_and_cross_confirmation_no_go_packets(self):
         m = _import("audit_lint")
@@ -2483,6 +2508,11 @@ class ComputeAuditQueueTest(unittest.TestCase):
                 "deps": [],
                 "effective_status": "unaudited",
             },
+            "decision_history": {
+                "claim_id": "decision_history",
+                "deps": [],
+                "effective_status": "meta",
+            },
             "discharge_note": {
                 "claim_id": "discharge_note",
                 "deps": ["minimal_axioms", "retained_dep"],
@@ -2498,15 +2528,25 @@ class ComputeAuditQueueTest(unittest.TestCase):
                 "deps": ["open_obligation", "unaudited_dep"],
                 "effective_status": "unaudited",
             },
+            "history_blocked_note": {
+                "claim_id": "history_blocked_note",
+                "deps": ["decision_history"],
+                "effective_status": "unaudited",
+            },
         }
         with mock.patch.object(
             m.premise_nodes,
             "is_accepted_premise_dep",
             side_effect=lambda dep_id: dep_id == "minimal_axioms",
+        ), mock.patch.object(
+            m.premise_nodes,
+            "is_non_evidence_context_dep",
+            side_effect=lambda dep_id: dep_id == "decision_history",
         ):
             self.assertTrue(m.is_ready(rows["discharge_note"], rows))
             self.assertFalse(m.is_ready(rows["obligation_discharge_note"], rows))
             self.assertFalse(m.is_ready(rows["blocked_note"], rows))
+            self.assertFalse(m.is_ready(rows["history_blocked_note"], rows))
 
 
 class NoGoDisciplineGateTest(unittest.TestCase):
@@ -3553,6 +3593,28 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 m.detect_invalidation(row, {"legacy_no_go": row}),
                 "no_go_discipline_packet_missing",
             )
+
+    def test_live_packet_invalid_under_current_policy_is_invalidated(self):
+        m = _import("invalidate_stale_audits")
+        row = {
+            "claim_id": "stale_policy_packet",
+            "note_path": "docs/STALE_POLICY_PACKET.md",
+            "audit_status": "audited_conditional",
+            "claim_type": "bounded_theorem",
+            "no_go_discipline": {"required": True, "status": "FAIL"},
+        }
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "evidence_manifest_from_snapshot",
+            return_value={},
+        ), mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value="prior authority is not accepted",
+        ):
+            reason = m.detect_invalidation(row, {"stale_policy_packet": row})
+        self.assertIsNotNone(reason)
+        self.assertTrue(reason.startswith("no_go_discipline_packet_invalid:"))
 
 
 class CodexAuditRunnerModelPolicyTest(unittest.TestCase):

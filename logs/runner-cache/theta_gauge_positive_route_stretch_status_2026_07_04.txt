@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_gauge_positive_route_stretch_status_2026_07_04.py
-runner_sha256: 8ab4ac1953f7b17f1707c464a7eb488b91e192dece570833a2e79dd3d21f07a1
+runner_sha256: d1942002ca3d3881537722bd68377fcb42cf64232d41025ab40916fef7f5ddae
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.31
+elapsed_sec: 2.15
 status: ok
 ----- stdout -----
 theta gauge positive-route stretch status verifier
@@ -60,7 +60,7 @@ B. Tier-A target and axiom boundary
 [PASS] minimal axiom boundary present: A readout value is determined by record conte
 [PASS] minimal axiom boundary present: A law privileges no states
 [PASS] minimal axiom boundary present: source/action and physical-observable identif
-[PASS] minimal axiom boundary present: the strong-CP theta admission
+[PASS] minimal axiom boundary present: the strong-CP theta gauge and mass-side deriv
 
 ========================================================================================
 C. source-packet boundary checks

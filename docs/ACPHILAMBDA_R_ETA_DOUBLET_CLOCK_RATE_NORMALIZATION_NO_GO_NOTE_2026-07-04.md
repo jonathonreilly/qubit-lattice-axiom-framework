@@ -65,7 +65,7 @@ It does not.
   supplies the fixed-locus arithmetic `L = L3(1,2) = 2/9`, hence
   `S_sum = 3L = 2/3`, while excluding the physical readout bridge. This is a
   target/comparator arithmetic surface, not a derivation of R-eta.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   and [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json)
   name the surviving R-eta atom as the density-read-as-angle / holonomy-readout
   identification.
@@ -232,3 +232,11 @@ Expected close:
 ```text
 TOTAL: PASS>=120 FAIL=0
 ```
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)

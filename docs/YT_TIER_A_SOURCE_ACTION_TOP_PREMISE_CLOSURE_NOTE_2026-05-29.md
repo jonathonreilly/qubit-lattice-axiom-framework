@@ -83,7 +83,7 @@ Y_T to unbounded retained status.
 
 Load-bearing inputs:
 
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   and `docs/audit/data/premise_decision_history.json`: historically P1 was treated as an admitted
   derivation target, chain-satisfying only at the bounded tier.
 - [`OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md`](OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md):

@@ -13,7 +13,7 @@ readout is the fixed-locus density class `h`, identity-read in `h`-units as the
 eta angle, with no extra clock-rate, transport, or normalization factor.
 
 The statement was historically adopted through a governance decision recorded
-in [TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md](TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md).
+in `TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`.
 That decision now has historical weight only and supplies no physics premise.
 
 ## Closure criterion
@@ -24,9 +24,9 @@ normalization theorem. It must derive the density-to-angle equality instead of
 packaging it as a convention or target-fitted readout. Relevant current route
 maps are:
 
-- [ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md](ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md)
-- [ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md](ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md)
-- [ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md](ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md)
+- `ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md`
+- `ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md`
+- `ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md`
 
 Until such a theorem is independently audited and retained, every result that
 uses this readout identification remains conditional or pending-chain.

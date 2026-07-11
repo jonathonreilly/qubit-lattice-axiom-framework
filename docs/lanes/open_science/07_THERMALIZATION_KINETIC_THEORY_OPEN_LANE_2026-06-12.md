@@ -213,7 +213,7 @@ claim to remove it.
   realized-record distinction; unbounded recorded history.
 - [AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01.md](../../AXIOM_FIRST_GENERALIZED_SECOND_LAW_THEOREM_NOTE_2026-05-01.md)
   — `δS_matter ≥ 0` under unital evolution (direction-relative).
-- [ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md](../../ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   — comparison only for how accepted inputs are governed; this lane does not
   register the past hypothesis there.
 - Born rule / `I_3 = 0` (derived) — within-sector outcome weights.

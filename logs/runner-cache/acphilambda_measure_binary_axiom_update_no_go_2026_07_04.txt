@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py
-runner_sha256: 82a2f9f2bbd24788ddf7c8d76f4fe86730d4be990d79c29c8f691d24be2f2aa8
+runner_sha256: 621f132d79f315aa8cfe3d19a65c71befcd74285dc5287cacfae89201706dfaa
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.56
-status: ok
+exit_code: 1
+elapsed_sec: 0.97
+status: nonzero_exit
 ----- stdout -----
 AC_phi_lambda measure binary axiom-update no-go verifier
 
@@ -20,8 +20,8 @@ A. source presence and audit anchors
 [PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
 [PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
 [PASS] exists: docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md
-[PASS] carrier-measure boundary row remains ledgered
-[PASS] carrier-measure boundary row has an audit status
+[FAIL] carrier-measure boundary row is retained-grade :: unaudited
+[FAIL] carrier-measure boundary row is audited_clean :: unaudited
 
 ========================================================================================
 B. Tier-A registry boundary
@@ -184,7 +184,7 @@ K. markdown dependency and context control
 [PASS] verification block states fail-zero threshold
 
 ========================================================================================
-TOTAL: PASS=131 FAIL=0
+TOTAL: PASS=129 FAIL=2
 ========================================================================================
 
 ----- stderr -----

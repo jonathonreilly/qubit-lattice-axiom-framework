@@ -122,7 +122,10 @@ def clean_status(row: dict, dep_effective: dict[str, str]) -> tuple[str, str]:
 
     for dep_id in sorted(row.get("deps", [])):
         dep_status = dep_effective.get(dep_id, "unaudited")
-        if is_chain_satisfying_status(dep_status):
+        if (
+            is_chain_satisfying_status(dep_status)
+            and not premise_nodes.is_non_evidence_context_dep(dep_id)
+        ):
             continue
         if premise_nodes.is_axiom_premise(dep_id):
             continue

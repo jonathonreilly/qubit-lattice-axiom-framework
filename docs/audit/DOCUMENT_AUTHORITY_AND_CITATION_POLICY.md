@@ -7,8 +7,8 @@ document classes and fixes citation discipline. It is itself Class E below:
 process authority only, never a physics premise.
 **Machine registry:** `docs/audit/data/doc_authority_registry.json`
 **Primary runner:** `scripts/audit_companion_doc_authority_registry.py`
-**Owner rule this implements:** structure enters as a premise only through
-derivation, bridge, explicit admission, or approved primitive registration
+**Owner rule this implements:** supplied structure enters as a premise only as
+an axiom, an approved primitive, or retained-grade derived/bridged content
 (the axiom memo's Qualification). Prose guidance is never a premise channel,
 no matter who wrote it or how often it is cited.
 
@@ -46,8 +46,9 @@ runner mechanically checks the invariants.
   named premise is supplied or derived.
 
 - **Class D — proposals.** Drafted axiom text, primitive drafts, owner
-  one-pagers. Premise weight: none until an owner channel consumes them.
-  Cite only as "proposed."
+  one-pagers. Premise weight: none. An owner decision can authorize a reviewed
+  Class-A registry/policy change, but the proposal never becomes a premise by
+  itself. Cite only as "proposed."
 
 - **Class E — process policies.** This document, the axiom-minimality policy,
   skills, methodology-lane operating notes. Premise weight: none for physics;

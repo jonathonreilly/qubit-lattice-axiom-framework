@@ -68,8 +68,7 @@ claims; they are not supplied by this primitive declaration.
   derived; this primitive normalizes only the one graining ratio `c_t / c_s`.
 - It does not supply any dimensionless dynamical quantity. No mass ratio,
   coupling, mixing angle, phase, or selector is supplied; dimensionless physics
-  must still derive from the framework baseline or be recorded as a bounded
-  Tier-A admission.
+  must derive from retained-grade framework content or remain conditional/open.
 - It does not supply the absolute scale (`scale_reference_primitive`) or the
   spacing ratio (derived from the no-diagonal clause); it supplies only the
   kinetic-form isotropy.

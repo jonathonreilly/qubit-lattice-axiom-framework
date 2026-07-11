@@ -13,7 +13,7 @@ Brannen-BAE mass-ratio chain at `delta = 2/9` as a named conditional
 value to be derived or rejected by later source science.
 
 In parallel, the framework's Tier-A admitted-input registry
-[`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
 (meta on origin/main) and its machine sibling
 [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json)
 classify the generation mass-pattern phase — "the C_3-breaking phase
@@ -192,7 +192,7 @@ falsifiability tracking only.
 | [`KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10`](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md) | retained positive_theorem | S4 guardrail (`Q = 2/3` for any delta with `sqrt(2)` ansatz) |
 | [`CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10`](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md) | retained positive_theorem | S4 supporting equivalence |
 | [`KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09`](KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md) | retained positive_theorem | S1 algebraic ansatz foundation |
-| [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md) | meta (audit-decided) | (TA) authority: classifies the Koide phase delta as `AC_phi_lambda` Tier-A admission |
+| `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` | meta (audit-decided) | (TA) authority: classifies the Koide phase delta as `AC_phi_lambda` Tier-A admission |
 | [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json) | non-authoritative history | provenance only; the pipeline does not read this for status propagation |
 | [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md) | retained_no_go | S2 no-go portfolio member; establishes (TA)'s irreducibility from A1-route content |
 | [`KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25`](KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md) | retained_bounded | sharpens (TA) boundary: pins what a radian-bridge postulate would have to supply |
@@ -308,3 +308,12 @@ The runner checks:
 - Buckingham, E. (1914). On Physically Similar Systems.
 
 All sidecar context only. No load-bearing import.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)
+- [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)

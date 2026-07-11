@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py
-runner_sha256: 49ffbeaa235dd7f643a4cb2310649e1f50406bdae8c14cce230ba9a34057da2d
+runner_sha256: 60f89f466b2aaebb0d34f8c0892c49e315202a5515f776970b74f9f1b6dcca12
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 3.27
-status: ok
+exit_code: 1
+elapsed_sec: 2.75
+status: nonzero_exit
 ----- stdout -----
 theta G3 phase-insertion current-surface no-go verifier
 
@@ -41,13 +41,13 @@ A. source presence and ledger grounding
 [PASS] minimal row has note path
 [PASS] registry ledger row resolves
 [PASS] registry row has note path
-[PASS] positive is not an effective theta-retirement authority
-[PASS] carrier4d is not an effective theta-retirement authority
-[PASS] torus_dual is not an effective theta-retirement authority
-[PASS] link_star is not an effective theta-retirement authority
-[PASS] multiplaquette is not an effective theta-retirement authority
-[PASS] axiom_no_go is not an effective theta-retirement authority
-[PASS] cross-plane absence row remains ledgered
+[PASS] positive is not retained-grade theta-retirement authority
+[PASS] carrier4d is not retained-grade theta-retirement authority
+[PASS] torus_dual is not retained-grade theta-retirement authority
+[PASS] link_star is not retained-grade theta-retirement authority
+[PASS] multiplaquette is not retained-grade theta-retirement authority
+[PASS] axiom_no_go is not retained-grade theta-retirement authority
+[FAIL] cross-plane absence is retained-grade :: unaudited
 [PASS] new note has Type no_go
 [PASS] new note has Claim type no_go
 
@@ -86,7 +86,7 @@ C. axiom and primitive non-supply
 [PASS] minimal axioms withhold: transition probabilities or weights
 [PASS] minimal axioms withhold: context selection
 [PASS] minimal axioms withhold: source/action and physical-observable identificati
-[PASS] minimal axioms withhold: the strong-CP theta admission
+[PASS] minimal axioms withhold: the strong-CP theta gauge and mass-side derivation
 [PASS] minimal axioms withhold: Only records are readable
 [PASS] minimal axioms withhold: A readout value is determined by record content al
 [PASS] axiom-update no-go supports boundary: does not supply the theta gauge-side winding
@@ -218,7 +218,7 @@ J. note discipline and controlled links
 [PASS] verification block states fail-zero threshold
 
 ========================================================================================
-TOTAL: PASS=169 FAIL=0
+TOTAL: PASS=168 FAIL=1
 ========================================================================================
 
 ----- stderr -----

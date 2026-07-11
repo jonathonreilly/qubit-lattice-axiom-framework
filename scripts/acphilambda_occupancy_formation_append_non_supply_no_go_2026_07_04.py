@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md"
-TIER_A = DOCS / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 OBLIGATIONS = DOCS / "audit" / "data" / "derivation_obligations.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 REGISTRY = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
@@ -76,7 +76,7 @@ def main() -> int:
 
     paths = [
         NOTE,
-        TIER_A,
+        DECISION_HISTORY,
         OBLIGATIONS,
         LEDGER,
         REGISTRY,
@@ -122,7 +122,7 @@ def main() -> int:
         check(f"banned overclaim absent: {banned}", banned not in note_flat)
 
     section("B. Tier-A registry state on current main")
-    tier = json.loads(read(TIER_A))
+    tier = json.loads(read(DECISION_HISTORY))
     ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
     decomp = ac["minimum_decomposition"]
     statement = ac["statement"]
@@ -145,10 +145,11 @@ def main() -> int:
         ac["retirement"]["mechanism"],
     )
     check(
-        "derivation registry carries exactly the two AC obligations",
+        "derivation registry carries the AC and theta obligations",
         obligation_ids == [
             "ac_orbit_occupancy_statistical_grain_derivation_obligation",
             "ac_reta_hclass_hunit_readout_derivation_obligation",
+            "theta_quark_determinant_cross_sector_readout_derivation_obligation",
         ],
         obligation_ids,
     )

@@ -138,7 +138,7 @@ publication surface identifies **no clean unconditional forward falsifier**.
   — T1 (n_s; the growth-noise correction flagged `missing_bridge_theorem`).
 - [`CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md`](../../CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md)
   — T2 (J NLO closed form).
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](../../ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   — the two genuine admissions (`AC_φλ`, `θ`) the flavor forecasts are conditional on.
 
 The PMNS `δ_CP` / `θ_23` NuFit-6.1 standing refresh is carried by the companion note

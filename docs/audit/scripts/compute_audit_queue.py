@@ -60,6 +60,8 @@ def is_ready(row: dict, rows: dict[str, dict]) -> bool:
     obligations and historical admissions are not ready evidence.
     """
     for d in row.get("deps", []):
+        if premise_nodes.is_non_evidence_context_dep(d):
+            return False
         if premise_nodes.is_accepted_premise_dep(d):
             continue
         d_eff = rows.get(d, {}).get("effective_status") or "unknown"

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_p1_dependency_audit_verifier.py
-runner_sha256: 5cd7136f6b31ebe0c42e8db3eb0d8277d0a19762a714626cac67685453268a42
+runner_sha256: fefd261134b12f79e995aa08db8662a53eab9538bfe1237d38e36be5fc8f4c79
 timeout_sec: 120
 exit_code: 1
-elapsed_sec: 0.18
+elapsed_sec: 0.19
 status: nonzero_exit
 ----- stdout -----
 Record/P1 dependency audit re-derivation check

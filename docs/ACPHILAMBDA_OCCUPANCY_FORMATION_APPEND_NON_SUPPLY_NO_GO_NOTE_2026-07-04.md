@@ -63,7 +63,7 @@ not derive it.
   locate open dictionary/discriminator routes. They are cited here only to
   avoid contradicting the current lane vocabulary; the proof does not require
   them to be retained-grade.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   and [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json)
   preserve the doublet reading/occupancy selection in the historical
   `AC_phi_lambda` decomposition under `retired_derivation_targets`. The
@@ -212,3 +212,11 @@ PYTHONPATH=scripts python3 scripts/acphilambda_occupancy_formation_append_non_su
 ```
 
 Expected close: `FAIL=0`.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md)

@@ -114,7 +114,7 @@ Load-bearing:
 - [`ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`](ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md)
   — retained-bounded arrow-as-boundary context; the runner also reproves the
   local time-symmetry check used here.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   — human-readable Tier-A target registry.
 
 Context only, not promoted here:
@@ -133,3 +133,11 @@ finite matrix checks and symbolic identities only. `theta = 0`, `delta`, and
 `r = 1/2` are named as coefficient targets, not as derivation inputs.
 
 **Independent audit required.** This note asserts no effective-status change.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md`](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md)

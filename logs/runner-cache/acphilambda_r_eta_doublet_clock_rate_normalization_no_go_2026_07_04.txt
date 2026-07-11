@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_doublet_clock_rate_normalization_no_go_2026_07_04.py
-runner_sha256: 1e97a812e50cd65812c49e7bf63d6e7c4ab6fef7f9847040551ff8926fc10d2f
+runner_sha256: 2709f936feb986b46be2d8a2242251be0383d7ab65d58b74d4d01793d4ef93f6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.08
+elapsed_sec: 1.14
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta doublet-clock rate-normalization no-go verifier

@@ -44,7 +44,7 @@ sector account needed to remove the gauge-side premise. They do not.
   supplies pointwise realized-state evaluation only.
 - [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
   supplies only the structural kinetic-form ratio `c_t = c_s`.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
   names the theta gauge-side winding account.
 
 Context only, not dependency links: the June theta gauge-substrate and

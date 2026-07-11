@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_minimal_axioms_clean_base_exact.py
-runner_sha256: ac7674b3c2b33ec50378e4db12a75bd8aade91317ccd0535741597cc092e8863
+runner_sha256: 538a03551910698ad3659c51b894fb381f0f94095dcb94bd4014536c22773d2d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 PASS: Source note exists

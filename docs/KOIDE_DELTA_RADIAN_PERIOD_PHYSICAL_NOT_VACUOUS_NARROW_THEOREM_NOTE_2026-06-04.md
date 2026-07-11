@@ -52,7 +52,7 @@ masses only as a comparator (not a proof input); see §5 and §6.
 The chased question was whether `AC_phi_lambda`'s δ leg could be reduced out of
 Tier-A the way `g_bare` and `Y₀` were — by showing the residual is a *vacuous
 rescaling convention* with no physical content
-([`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md):
+(`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`:
 `g_bare`/`Y₀` are listed as conventions, not admissions, because they cancel as
 `g↔β` / `Y↔g'` rescalings).
 
@@ -238,7 +238,7 @@ residual or supplying a new source theorem.
   (rescaling-invariance precedent).
 - The registry recording `AC_phi_lambda` (δ leg) and the `g_bare`/`Y₀`
   conventions:
-  [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md).
+  `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`.
 - The nearest prior art for the `Q = 2/3` invariance and the δ=2/9 PDG match
   (this note's §2 reuses those prior Brannen-lane facts; the new content is
   the alternative-period + rescaling-contrast classification):
@@ -277,3 +277,11 @@ derivation input; no `g_bare` output is consumed.
 audit status of the radian-bridge no-go, the convention-isolation note, the
 registry, the charged-lepton Brannen-δ row, or any other upstream row. The audit
 lane is the only status authority.
+
+## Current Dependency Routing (2026-07-11)
+
+Historical decision records have zero premise weight. The unresolved content
+used by this note is routed through the following current foundation or
+zero-weight open obligation:
+
+- [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)

@@ -36,8 +36,10 @@ derivation_targets = {}
 ## Historical targets
 
 - **theta:** historical naturalness admission. Its gauge-side disposition is
-  retained-derived; its mass-side K-real reading is conditional on the open AC
-  occupancy-grain obligation.
+  retained-derived; its mass-side K-real reading is conditional on two
+  independent zero-weight obligations: the AC occupancy grain and the theta
+  quark-determinant cross-sector readout. Closing either does not close the
+  other.
 - **AC_phi_lambda:** historical discrete-flavor admission. A 2026-07-05
   governance decision attempted to retire its remaining atoms without making
   them axioms or primitives. That premise channel was withdrawn on 2026-07-11.

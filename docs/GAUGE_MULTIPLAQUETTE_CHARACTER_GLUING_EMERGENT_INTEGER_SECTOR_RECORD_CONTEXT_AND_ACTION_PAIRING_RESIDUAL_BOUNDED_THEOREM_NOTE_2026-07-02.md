@@ -1,6 +1,9 @@
 # Multi-Plaquette Character Gluing Derives the Emergent Integer Sector-Record Context Exactly on the Finite 2D U(1) Surface — Branch-Datum-Free, With the Theta Pairing Coming From the Action Slot — and Sharpens the Remaining Theta Q-Context Wall to Action-Level Pairing Selection on the Physical 4D SU(3) Surface (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Claim type:** bounded_theorem
 **Scope:** exact finite witness-surface constructions plus wall-sharpening; not
 a terminal no-go and not a discharge of the theta open problem.

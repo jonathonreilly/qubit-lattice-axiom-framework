@@ -1,6 +1,9 @@
 # Domain-Wall Edge Content vs SM Chiral Fermions Map: Bounded Theorem
 
 **Date:** 2026-07-05
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** bounded_theorem
 **Claim scope:** an exact finite-dimensional map and obstruction report. The
 runner enumerates the landed domain-wall edge content, re-earns the existing

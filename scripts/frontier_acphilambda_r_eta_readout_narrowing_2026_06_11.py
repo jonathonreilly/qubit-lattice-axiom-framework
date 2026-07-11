@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""AC_phi_lambda sub-admission (ii) narrowing: R-eta forced/admitted split.
+"""AC_phi_lambda R-eta open-condition narrowing: forced/conditional split.
 
 Class-A finite-dimensional verifier (3x3 exact sympy; tiny memory).
 
@@ -157,7 +157,7 @@ def main() -> int:
           "channel values => 5 distinct registered mass multisets)",
           distinct == len(candidates),
           detail=f"{distinct} distinct channel values")
-    check("=> the admitted atom is load-bearing for EXACTLY ONE real parameter: "
+    check("=> the open condition is load-bearing for EXACTLY ONE real parameter: "
           "the VALUE of |delta| in the fundamental domain (and for nothing else "
           "in the R-eta statement)", True)
     # Registrability does not even forbid r-coupled identifications.
@@ -259,7 +259,7 @@ def main() -> int:
     # ------------------------------------------------------------------
     section("S8 - conditional value: |delta| = 2/9 EXACT conditional on the named atom")
     atom_value = L12
-    check("ATOM (A_R-eta, admitted, NOT derived): registered |delta| = "
+    check("CONDITION (A_R-eta, open, NOT derived): |delta| = "
           "AB/Lefschetz density of the realized C3[111] cycle, identity-read "
           "in radians => |delta| = 2/9 EXACT",
           zsimp(atom_value - sp.Rational(2, 9)) == 0)
@@ -294,8 +294,8 @@ def main() -> int:
     check("BOUNDED: future non-det readout contexts that might supply another "
           "dimensionless conversion factor are NOT foreclosed (the k=0 forcing "
           "is the det-class surface only)", True)
-    check("NOT addressed here: sub-admission (i) occupancy selection, "
-          "sub-admission (iii) species bridge, the R1b anchor, the R2 global "
+    check("NOT addressed here: occupancy selection, "
+          "species bridge, the R1b anchor, the R2 global "
           "PL/ABSS bridge, the carrier gate realization", True)
     check("no premise registry edit, no downstream status set, no obligation closed; "
           "this is a source-side narrowing of the R-eta condition",

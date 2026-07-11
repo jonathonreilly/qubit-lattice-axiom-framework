@@ -1,5 +1,10 @@
 # Axiom Minimality Policy
 
+**Current premise authority (2026-07-11):** every older Tier-A/admission/
+owner-governed reference below is historical policy record only. The current
+foundation is exactly axioms plus approved primitives; all other scientific
+conditions remain conditional/open and carry zero premise weight.
+
 > **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](../KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
 
 > **Related policy:** document classes, premise weight, and citation

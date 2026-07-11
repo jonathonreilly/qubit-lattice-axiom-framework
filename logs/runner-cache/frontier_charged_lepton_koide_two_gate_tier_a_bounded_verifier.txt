@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_koide_two_gate_tier_a_bounded_verifier.py
-runner_sha256: 910a37abddb8b0be40154b12987c995f5bb96ff7e0d79d9d86d533919d9f897f
+runner_sha256: d7cc1cca0e2a2f04c5072cea8b3738412231d4d29a1163d0190e4156bf9fcc56
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 
@@ -25,7 +25,7 @@ Scope: bounded_theorem on Koide two-gate algebraic chain under EXPLICIT
 [PASS] S3.gate2_no_go_portfolio: Gate-2 (delta = 2/9 radian-bridge) no_go portfolio members present on origin/main  (3/3 no_go rows present (acknowledged as boundary))
 [PASS] S3.delta_readout: delta = Q/3 readout at Q = 2/3 equals 2/9 exactly  (delta = 2/9 = 2/9)
 [PASS] S4: phase-independent Koide guardrail Q = 2/3 holds at five sample deltas  (max deviation: 3.33e-16)
-[PASS] S5: chain-of-custody anchor present on origin/main  (sidecar reference; the chain-of-custody documents L1-L10 + AC_φλ admission)
+[PASS] S5: chain-of-custody anchor present on origin/main  (sidecar reference; the chain-of-custody documents L1-L10 + AC_φλ open conditions)
 [PASS] S5.sister: sister delta companion present on origin/main  (delta-piece companion; this note is the umbrella twin)
 [PASS] S5.parent: parent open_gate row present on origin/main  (companion to (not modified by) this note)
 [PASS] S1.retained_algebra: S1 retained algebraic authorities present on origin/main  (3/3 retained authorities present)

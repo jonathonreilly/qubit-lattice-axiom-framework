@@ -1,5 +1,9 @@
 # The Phase-Type Insertion Characterized: the Triality Phase Extends the Abelian Theta Slot Exactly and Carries a Theta-Like Flip Table, but Reads Only the Center/Abelian Shadow — No Single-Link Class-Weight Insertion Reads the Chiral Sign, Which the Path-Antisymmetrized Multi-Link Chain Observable Reads Exactly (Bounded Theorem)
 
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
+
 **Date:** 2026-07-02
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite constructions plus one scoped

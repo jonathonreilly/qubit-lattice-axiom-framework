@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py
-runner_sha256: 124a7fb32f53591c4a8ed8071c7362daadb7f84c6c71eed7996f715c8a881281
+runner_sha256: c7b309b53705d7cad0bc2a5bbdb5ede002d424bcea9e6e9db7e0ff17ab19073d
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 1.02
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 1.05
+status: ok
 ----- stdout -----
 theta gauge winding axiom-update no-go verifier
 
@@ -102,9 +102,9 @@ D. approved primitive non-supply
 ========================================================================================
 E. existing theta gauge support cannot be used as retirement shortcut
 ========================================================================================
-[FAIL] cross-plane row is audited_clean :: unaudited
-[FAIL] cross-plane row is retained-grade :: unaudited
-[FAIL] cross-plane scope is supplied per-plaquette only
+[PASS] cross-plane context row is present
+[PASS] cross-plane context is not promoted by this runner
+[PASS] cross-plane scope is supplied per-plaquette only
 [PASS] substrate no-winding row remains unaudited
 [PASS] substrate row depends on multiplaquette boundary
 [PASS] emergent-Q row remains unaudited
@@ -123,10 +123,10 @@ E. existing theta gauge support cannot be used as retirement shortcut
 [PASS] multiplaquette packet keeps route open: admissibly realizable
 [PASS] multiplaquette packet keeps route open: not clean-closeable
 [PASS] multiplaquette packet keeps route open: single-plaquette / minimality admission
-[PASS] structured admission keeps open boundary: large-gauge-winding account
-[PASS] structured admission keeps open boundary: does not remove a canonical large-gauge-winding 
-[PASS] structured admission keeps open boundary: does not retire or split
-[PASS] structured admission keeps open boundary: does not turn axioms or primitives into bounded-
+[PASS] structured theta note keeps open boundary: large-gauge-winding account
+[PASS] structured theta note keeps open boundary: does not remove a canonical large-gauge-winding 
+[PASS] structured theta note keeps open boundary: does not close or split
+[PASS] structured theta note keeps open boundary: does not turn axioms or primitives into bounded-
 
 ========================================================================================
 F. exact finite gauge-carrier sanity checks
@@ -202,7 +202,7 @@ I. markdown dependency and context control
 [PASS] verification block states fail-zero threshold
 
 ========================================================================================
-TOTAL: PASS=154 FAIL=3
+TOTAL: PASS=157 FAIL=0
 ========================================================================================
 
 ----- stderr -----

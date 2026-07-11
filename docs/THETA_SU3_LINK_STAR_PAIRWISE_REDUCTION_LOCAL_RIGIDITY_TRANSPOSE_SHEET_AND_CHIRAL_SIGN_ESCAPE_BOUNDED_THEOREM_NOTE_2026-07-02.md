@@ -1,6 +1,9 @@
 # SU(3) Link Stars: Pair Data Are Locally Rigid (Full-Rank Jacobian), the Known Global Degeneracy Is the Transpose Sheet Carrying Only the Chiral Sign, and Real-Weight Stars Are Even Across It — the SU(3) Star Reduces to Pairwise Data in the Local-Plus-Sheet Sense and the Chiral Sign Is an Exhibited Multilinear Escape (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite identities and certificates
 plus one locality-graded rigidity statement; not a terminal no-go, not a

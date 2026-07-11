@@ -20,7 +20,7 @@
   "planck_scale_boundary": {
     "open_positive_route": "derive Planck/action unit = RN/Fisher source coordinate",
     "result": "dimensionful scale setting does not select dimensionless source lambda",
-    "tier_a_scale_anchor": "a^{-1}=M_Pl"
+    "scale_reference_primitive_anchor": "a^{-1}=M_Pl"
   },
   "rn_scaled_family": {
     "fisher_norm": "lambda^2",

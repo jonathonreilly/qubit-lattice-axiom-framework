@@ -149,11 +149,18 @@ extra bridge.
 
 ## No-Go Discipline Gate
 
-**N1 alternative route enumeration.** Updated Qubit, Admissibility, Record,
-realized-state, and kinetic-isotropy surfaces are checked and do not supply the
-mass determinant-channel bridge. K/CPT determinant-character erasure remains a
-conditional route. Scalar-mass action-surface, determinant-channel, joint
-gauge/mass, and approved-primitive proposals remain open.
+**N1 alternative route enumeration.** Each route is tested against current
+foundation text and direct runner evidence:
+
+| Route | Marker | Evidence and disposition |
+|---|---|---|
+| Qubit/Admissibility/Record shortcut | ATTEMPTED | The [axiom memo](MINIMAL_AXIOMS_2026-06-29.md) withholds K/CPT structure, quark determinant carrier, action, and physical readout; runner sections C-D. |
+| realized-state shortcut | ATTEMPTED | The [realized-state primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) supplies pointwise evaluation only, not the determinant channel; runner section D. |
+| kinetic-isotropy shortcut | ATTEMPTED | The [kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) fixes only kinetic graining; runner section D. |
+| K/CPT determinant-character route | ATTEMPTED | Runner sections F-G independently recover `k=0` inside the explicit multiplicative character class; this does not identify the physical quark channel. |
+| scalar-mass action route | ATTEMPTED | Signed-mass pairing algebra is preserved as conditional support; the physical scalar-mass action remains open. |
+| cross-sector determinant-readout route | ATTEMPTED | The exact zero-weight [theta obligation](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md) records the missing carrier/readout theorem without supplying it. |
+| joint gauge/mass route | ATTEMPTED | The runner preserves `theta_bar`; no mass-side step closes the gauge-side winding account. |
 
 **N2 wall independence.** The mass-side target contains four independently
 closable steps:
@@ -168,13 +175,31 @@ closable steps:
 This note establishes only their joint non-supply by the current foundation;
 it does not collapse them into one wall.
 
-**N3 hidden-wall scan.** The proof imports no measured neutron-EDM bound, no
-comparator, no fitted value, no axion assumption, no determinant-channel
-primitive, no positive mass-orientation primitive, and no registry edit.
+**N3 hidden-wall scan.** The note and runner were scanned for `assume`,
+`supplied`, `registered`, `canonical`, `standard`, `background`, `naturally`,
+`obviously`, `primitive`, and `by construction`.
 
-**N4 residual matching.** The result matches the four mass-side steps stated
-above and the cross-sector readout `open_gate`. Historical decision prose is
-provenance only and does not touch the gauge-side winding account.
+| Hit | Classification |
+|---|---|
+| supplied determinant/mass channel wording | explicit theorem condition, not foundation content |
+| registered determinant character/readout | scoped mathematical class or target vocabulary, not physical carrier authority |
+| approved-primitive route | future governance path, not used in the proof |
+| historical decision text | provenance only and non-evidence |
+
+No measured neutron-EDM bound, comparator, fitted value, axion assumption,
+determinant-channel primitive, or positive mass-orientation primitive is
+imported.
+
+**N4 residual matching.** The cited surfaces are matched to the exact current
+residual:
+
+| Surface | Residual there | Residual here | Match/disposition |
+|---|---|---|---|
+| [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) | no K/CPT, quark determinant carrier, action, or readout | the four independent mass walls | exact foundation-boundary match |
+| `THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md` | `k=0` inside a conditional determinant-character class | K/CPT registration only | partial closure; does not supply carrier/exhaustion |
+| `THETA_MASS_SIDE_COMPOSITION_CLOSE_ON_SHARED_OCCUPANCY_BRIDGE_BOUNDED_NOTE_2026-07-03.md` | occupancy and cross-sector readout are independent conditions | cross-sector determinant readout | exact split match |
+| [theta cross-sector obligation](THETA_QUARK_DETERMINANT_CROSS_SECTOR_READOUT_DERIVATION_OBLIGATION.md) | construct carrier, readout, and cross-sector correspondence | same physical-channel exhaustion wall | exact target match; zero premise weight |
+| historical decision text | former target wording | none | provenance, dropped as evidence |
 
 **N5 proven surface.** Proven here is an axiom/primitives non-supply result
 plus exact determinant-character checks. It is not a universal no-go against
@@ -188,9 +213,16 @@ is recorded stepwise.
 is exactly the right mass-side route. Correct: this note preserves that route.
 It only says the route's interface is not in the current axioms/primitives.
 
-**N8 cross-cycle echo.** This repeats the AC(i) and R-eta accounting pattern:
-a useful conditional algebraic normal form is not the physical readout bridge
-unless the framework derives or explicitly supplies the bridge.
+**N8 cross-cycle echo.** Repo cross-cycle inventory:
+
+| Cycle | Prior retirement/closure mechanism | Applicability here |
+|---|---|---|
+| AC occupancy | remains a zero-weight statistical-grain obligation | closing it does not identify the quark determinant channel |
+| R-eta | same-observable/readout theorem remains open after countermodels | confirms that algebraic equality is not physical readout authority |
+| theta mass composition | explicitly split into occupancy and cross-sector obligations | exact current mechanism; both must close independently |
+| determinant-character phase erasure | closes the character coefficient only inside its stated class | does not construct the physical carrier, action, or exhaustion theorem |
+
+No prior cycle provides a retained mechanism that closes all four mass walls.
 
 ## Verification
 

@@ -52,8 +52,8 @@ import runner_cache as rc
 REPO_ROOT = Path(__file__).resolve().parent.parent
 AUDIT_DIR = REPO_ROOT / "docs" / "audit"
 
-# Centralized accepted-premise policy (axiom node + admitted external
-# imports). Shared with compute_effective_status / audit_lint /
+# Centralized accepted-premise policy (axioms + explicitly approved framework
+# primitives). Shared with compute_effective_status / audit_lint /
 # compute_reaudit_candidates via docs/audit/scripts/premise_nodes.py so the
 # prompt and the deterministic pipeline cannot drift.
 sys.path.insert(0, str(AUDIT_DIR / "scripts"))

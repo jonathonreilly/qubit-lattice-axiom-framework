@@ -1,5 +1,9 @@
 # Theta P2 K/CPT Determinant-Character Phase Erasure: Bounded Candidate Route
 
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
+
 **Date:** 2026-06-10 (split from
 `TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
 so the strong-CP mass-orientation route stands on the theta surface alone,

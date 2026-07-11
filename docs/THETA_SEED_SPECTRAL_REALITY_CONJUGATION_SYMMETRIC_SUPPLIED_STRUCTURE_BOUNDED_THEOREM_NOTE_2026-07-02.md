@@ -1,6 +1,9 @@
 # The Seed-Class Kernel Dissected: Spectrally-Constructed Weights Are Automatically Flip-Even, the Pure-Gauge Supplied Structure Is Exactly Conjugation-Symmetric, a Phased Seed's Odd Direction Is the Real Im-Trace Reweighting, and Conjugation-Odd Data of the Theta Type Live in Determinant-Phase (Mass-Side) Structures (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite theorems plus a graded,
 explicitly-named bridge candidate; not a terminal no-go and not a change to

@@ -1,6 +1,9 @@
 # Observable Principle — `det` Unique by Multiplicative-Character Form Selection Narrow Theorem Note
 
 **Date:** 2026-05-28
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does

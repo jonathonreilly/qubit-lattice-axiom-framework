@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py
-runner_sha256: f99133b69ed84465cb335dac0cfe5d0806a2df34363c2e0bca7d9e08922a23fd
+runner_sha256: 7e9f0221dbc00cc73daa0ba02c7fa44d482d0d5b55b55f05a6f50e0e9bf9689c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.16
+elapsed_sec: 0.65
 status: ok
 ----- stdout -----
 === AC_phi_lambda defect identity-unit rescale obstruction ===
@@ -108,7 +108,7 @@ PART H -- note discipline
 [PASS] note marks the in-flight stack's audit authority
 [PASS] note states the shape criterion
 [PASS] note localizes the freedom onto the density-to-angle junction
-[PASS] note consolidates onto R-eta sub-admission (ii)
+[PASS] note consolidates onto the R-eta open obligation
 [PASS] note quotes the radian-bridge primitive residual
 [PASS] note names the angle-native live route
 [PASS] note keeps the approved-primitive route explicit

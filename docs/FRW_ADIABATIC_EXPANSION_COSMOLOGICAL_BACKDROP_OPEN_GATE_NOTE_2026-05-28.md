@@ -1,6 +1,9 @@
 # FRW + Adiabatic Expansion Cosmological-Backdrop Open Gate
 
 **Date:** 2026-05-28
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Claim type:** open_gate
 **Status authority:** independent audit lane only. This source note is a
 proposal that decomposes the FRW + adiabatic-expansion cosmological

@@ -5,6 +5,9 @@
 > canonical source-of-truth doc.
 
 **Date:** 2026-06-08
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** named-obstruction no-go (tested static-selector class)
 **Claim type:** no_go
 **Status:** no-go proposal. Sharpens the standing Koide r=1/2 admission (`AC_φλ`):

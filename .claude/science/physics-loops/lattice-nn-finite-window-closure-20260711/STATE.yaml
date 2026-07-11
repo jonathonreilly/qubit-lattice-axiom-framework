@@ -17,7 +17,7 @@ no_go_routes:
   - "No use of the failed h=0.125 row as positive evidence."
 trace_gate_classification: upstream_support
 review_findings: pass
-pr_status: pending_creation
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5155"
 lock_note: "Default automation lock unavailable because its configured path is owned by /Users/jonreilly; this task uses a dedicated isolated worktree."
-next_exact_action: "Open the review PR; after landing, the independent audit lane rechecks lattice_nn_continuum_note and its invalidated dependent."
+next_exact_action: "Review and land PR #5155; then the independent audit lane rechecks lattice_nn_continuum_note and its invalidated dependent."
 stop_condition: "Stop after the bounded packet passes checks and local review; independent audit owns effective status."

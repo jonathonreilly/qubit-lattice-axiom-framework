@@ -57786,10 +57786,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
     },
     {
@@ -57807,6 +57803,10 @@
     {
       "from": "repo.front_door_status",
       "to": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -112107,15 +112107,15 @@
         "tier_a_residual_owner_adoption_retirement_2026-07-04",
         "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
         "fermion_parity_z2_grading_theorem_note_2026-05-02",
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
         "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
         "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
         "abj_epsilon_index_square_block_no_go_note_2026-05-30",
         "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
-        "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18"
+        "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "89fe36c7ef176de6f6bdc11c1901fb80b1d89374092a21b7398d2aea1002f37e",
+      "note_hash": "3c6a5b6ab33bf0e00e3e55b62ce93eb965e6510a97f2ba4263d74477fbb40a5a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -16,14 +16,12 @@ Checks (all hard rules from FRESH_LOOK_REQUIREMENTS.md and README.md):
        bounded_theorem -> retained_bounded, provided the dependency chain is
        already retained-grade.
      - effective_status in a retained-grade bucket requires audit_status =
-       audited_clean (or archived audited_failed for legacy retained_no_go)
-       AND every dep's effective_status is retained-grade or a supplied axiom
-       or approved primitive. Open obligations never satisfy the chain.
-     - effective_status = retained_no_go has two paths:
-       (a) claim_type = no_go and audit_status = audited_clean ratifies it.
-       (b) audit_status = audited_failed AND the note has been moved to
-           archive_unlanded/ (legacy path).
-       Both paths represent ratified negative results, not active failures.
+       audited_clean AND every dep's effective_status is retained-grade or a
+       supplied axiom or approved primitive. Open obligations never satisfy
+       the chain.
+     - effective_status = retained_no_go requires claim_type = no_go,
+       audit_status = audited_clean, and a current valid No-Go Discipline
+       packet. Archived failures remain non-authoritative history.
      - independence = 'weak' cannot land audited_clean. Critical clean
        confirmations must be cross-family, strong/external, or same-family
        fresh_context from a distinct restricted-input session.
@@ -507,6 +505,14 @@ def main() -> int:
             return
         if packet is None:
             return
+
+        def report_invalid(detail: str) -> None:
+            message = f"{cid}: {label} invalid no_go_discipline packet: {detail}"
+            if verdict == "audited_clean":
+                errors.append(message)
+            else:
+                add_notice("non_authoritative_invalid_no_go_packet", message)
+
         normalized = {
             **audit_like,
             "verdict": verdict,
@@ -515,17 +521,25 @@ def main() -> int:
             ),
         }
         evidence_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(packet)
+        current_manifest = no_go_discipline_gate.build_evidence_manifest(
+            row, rows, REPO_ROOT
+        )
         if evidence_manifest is None:
-            evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
-                row, rows, REPO_ROOT
-            )
+            report_invalid("authenticated evidence_snapshot is required")
+            return
+        snapshot_error = no_go_discipline_gate.evidence_snapshot_current_error(
+            packet, current_manifest
+        )
+        if snapshot_error:
+            report_invalid(snapshot_error)
+            return
         error = no_go_discipline_gate.validate_no_go_discipline(
             normalized,
             source_required=source_required,
             evidence_manifest=evidence_manifest,
         )
         if error:
-            errors.append(f"{cid}: {label} invalid no_go_discipline packet: {error}")
+            report_invalid(error)
 
     def _load_pattern_file(name: str) -> tuple[str, ...]:
         path = DATA_DIR / name
@@ -923,6 +937,15 @@ def main() -> int:
                 errors.append(f"{cid}: audited_clean requires non-empty auditor")
             if not row.get("auditor_family"):
                 errors.append(f"{cid}: audited_clean requires auditor_family")
+            if (
+                row.get("auditor_family") != "codex-gpt-5.6"
+                or row.get("auditor_model") != "gpt-5.6-sol"
+                or row.get("auditor_reasoning_effort") != "xhigh"
+            ):
+                errors.append(
+                    f"{cid}: audited_clean requires exact "
+                    "codex-gpt-5.6/gpt-5.6-sol/xhigh provenance"
+                )
             expected = {
                 "positive_theorem": "retained",
                 "no_go": "retained_no_go",

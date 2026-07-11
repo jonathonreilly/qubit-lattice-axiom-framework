@@ -19,6 +19,9 @@ local-algebra language for the Qubit axiom, not a separate premise.
 
 The only registered non-axiom premises are the three approved primitive nodes.
 Together with the four axioms, they form the complete supplied foundation.
+The three approved primitives are scale reference, kinetic isotropy, and
+realized state; they are registered non-axiom premises rather than additions
+to the four-axiom set.
 The charged-lepton occupancy and R-eta roles are open gates with zero premise
 weight, not a third premise class. The sole machine premise authority is
 `docs/audit/data/axiom_premise_nodes.json`; open work is routed separately in
@@ -119,10 +122,11 @@ Current absolute-scale package rule:
 - the carrier-only parent-source scalar route is closed negatively; carrier
   data alone leave an affine hidden character `delta`, so scalar equality
   requires a separate no-hidden-character law
-- the simple-fiber Widom entropy-carrier route is closed negatively; straight
-  cuts with at most one occupied `k_x` interval per transverse momentum fiber,
-  plus consistently normalized Schur/direct-sum descendants, obey
-  `c_Widom <= 1/6`, not `1/4`
+- the simple-fiber Widom entropy-carrier route is an unaudited negative audit
+  target: its source argues that straight cuts with at most one occupied
+  `k_x` interval per transverse-momentum fiber, plus consistently normalized
+  Schur/direct-sum descendants, obey `c_Widom <= 1/6`, not `1/4`; this is not
+  a retained closure until the audit lane confirms it
 - the 2026-04-25 area-law selector packet closes the multipocket-selector,
   primitive finite-edge entropy, and algebraic finite-Schmidt-spectrum shortcuts
   negatively; its positive primitive-CAR carrier route is now supplied by the

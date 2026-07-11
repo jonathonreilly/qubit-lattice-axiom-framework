@@ -238,67 +238,109 @@ def status_rank(status: str | None) -> int:
     return RANK.get(status or "unaudited", -1)
 
 
+def exact_clean_auditor_provenance(value: dict) -> bool:
+    return (
+        value.get("auditor_family") == "codex-gpt-5.6"
+        and value.get("auditor_model") == "gpt-5.6-sol"
+        and value.get("auditor_reasoning_effort") == "xhigh"
+    )
+
+
 def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
+    audit_status = row.get("audit_status")
+    if audit_status == "audited_clean" and not exact_clean_auditor_provenance(row):
+        return "auditor_provenance_incomplete"
+    note_path = str(row.get("note_path") or "")
+    note_body = ""
+    try:
+        note_body = (REPO_ROOT / note_path).read_text(
+            encoding="utf-8", errors="replace"
+        )
+    except OSError:
+        pass
+    source_required = no_go_discipline_gate.source_requires_no_go_discipline(
+        note_path, note_body, row.get("claim_type")
+    )
+
     packet = row.get("no_go_discipline")
-    if isinstance(packet, dict) and row.get("audit_status") not in {
+    if isinstance(packet, dict) and audit_status not in {
         None,
         "unaudited",
         "audit_in_progress",
     }:
-        note_path = str(row.get("note_path") or "")
-        try:
-            note_body = (REPO_ROOT / note_path).read_text(
-                encoding="utf-8", errors="replace"
-            )
-        except OSError:
-            note_body = ""
-        source_required = no_go_discipline_gate.source_requires_no_go_discipline(
-            note_path, note_body, row.get("claim_type")
-        )
         evidence_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
             packet
         )
-        if evidence_manifest is None:
-            evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
-                row, rows, REPO_ROOT
-            )
+        current_manifest = no_go_discipline_gate.build_evidence_manifest(
+            row, rows, REPO_ROOT
+        )
+        if audit_status == "audited_clean":
+            if evidence_manifest is None:
+                return "no_go_discipline_packet_invalid"
+            if no_go_discipline_gate.evidence_snapshot_current_error(
+                packet, current_manifest
+            ):
+                return "no_go_discipline_packet_invalid"
+        elif evidence_manifest is None:
+            evidence_manifest = current_manifest
         packet_error = no_go_discipline_gate.validate_no_go_discipline(
-            {**row, "verdict": row.get("audit_status")},
+            {
+                **row,
+                "verdict": audit_status,
+                "chain_closes": row.get(
+                    "chain_closes", audit_status == "audited_clean"
+                ),
+            },
             source_required=source_required,
             evidence_manifest=evidence_manifest,
         )
         if packet_error:
+            if audit_status == "audited_clean":
+                return "no_go_discipline_packet_invalid"
             digest = hashlib.sha256(packet_error.encode("utf-8")).hexdigest()[:12]
             return f"no_go_discipline_packet_invalid:{digest}"
 
     cross = row.get("cross_confirmation") or {}
     if isinstance(cross, dict):
-        note_path = str(row.get("note_path") or "")
-        try:
-            note_body = (REPO_ROOT / note_path).read_text(
-                encoding="utf-8", errors="replace"
-            )
-        except OSError:
-            note_body = ""
-        source_required = no_go_discipline_gate.source_requires_no_go_discipline(
-            note_path, note_body, row.get("claim_type")
-        )
         for audit_key in ("first_audit", "second_audit", "third_audit"):
             summary = cross.get(audit_key)
             if not isinstance(summary, dict) or not summary:
                 continue
+            verdict = summary.get("verdict") or summary.get("audit_status")
+            if verdict == "audited_clean" and not exact_clean_auditor_provenance(
+                summary
+            ):
+                return "cross_confirmation_auditor_provenance_incomplete"
             nested_packet = summary.get("no_go_discipline")
-            if not isinstance(nested_packet, dict):
+            required = (
+                source_required
+                or no_go_discipline_gate.output_requires_no_go_discipline(summary)
+            )
+            if nested_packet is None:
+                if required and verdict == "audited_clean":
+                    return "no_go_discipline_cross_confirmation_packet_invalid"
                 continue
             evidence_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
-                nested_packet
+                nested_packet if isinstance(nested_packet, dict) else {}
             )
-            if evidence_manifest is None:
-                evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
-                    row, rows, REPO_ROOT
-                )
-            verdict = summary.get("verdict") or summary.get("audit_status")
-            packet_error = no_go_discipline_gate.validate_no_go_discipline(
+            current_manifest = no_go_discipline_gate.build_evidence_manifest(
+                row, rows, REPO_ROOT
+            )
+            if verdict == "audited_clean":
+                if evidence_manifest is None:
+                    packet_error = "authenticated evidence snapshot is required"
+                else:
+                    packet_error = (
+                        no_go_discipline_gate.evidence_snapshot_current_error(
+                            nested_packet, current_manifest
+                        )
+                    )
+            else:
+                packet_error = None
+                if evidence_manifest is None:
+                    evidence_manifest = current_manifest
+            if packet_error is None:
+                packet_error = no_go_discipline_gate.validate_no_go_discipline(
                 {
                     **summary,
                     "verdict": verdict,
@@ -313,23 +355,18 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
                 digest = hashlib.sha256(packet_error.encode("utf-8")).hexdigest()[:12]
                 return f"cross_confirmation_{audit_key}_no_go_packet_invalid:{digest}"
 
-    if row.get("audit_status") == "audited_clean" and row.get("no_go_discipline") is None:
-        note_path = str(row.get("note_path") or "")
-        note_body = ""
-        try:
-            note_body = (REPO_ROOT / note_path).read_text(
-                encoding="utf-8", errors="replace"
-            )
-        except OSError:
-            pass
-        source_required = no_go_discipline_gate.source_requires_no_go_discipline(
-            note_path, note_body, row.get("claim_type")
-        )
+    if audit_status == "audit_in_progress":
+        return None
+
+    if audit_status == "audited_clean":
         output_required = no_go_discipline_gate.output_requires_no_go_discipline(
-            {**row, "verdict": row.get("audit_status")}
+            {**row, "verdict": audit_status}
         )
-        if source_required or output_required:
+        required = source_required or output_required
+        if required and packet is None:
             return "no_go_discipline_packet_missing"
+        if packet is not None and not isinstance(packet, dict):
+            return "no_go_discipline_packet_invalid"
 
     snap = row.get("audit_state_snapshot")
     if snap is not None:

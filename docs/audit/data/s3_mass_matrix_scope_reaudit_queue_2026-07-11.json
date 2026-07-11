@@ -1,0 +1,38 @@
+{
+  "allowed_context_paths": [
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+    "docs/S3_MASS_MATRIX_NO_GO_NOTE.md"
+  ],
+  "forbidden_context": [
+    "this dispatcher manifest as evidence",
+    "the replacement conditional lemma as evidence",
+    "PR discussion as evidence",
+    "prior assistant discussion",
+    "prior audit rationales as evidence",
+    "generated audit queue output as evidence"
+  ],
+  "generated_date": "2026-07-11",
+  "groups": [
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "s3_mass_matrix_scope_fresh_context",
+      "order": 1,
+      "targets": [
+        {
+          "audit_question": "Fresh-context re-audit: does the current S3 mass-matrix no-go source justify retained_no_go authority under N1-N8 when its physical hw=1 generation-carrier identification and taste-cube reuse have no direct dependency edges, or must authority narrow to the abstract A1 direct-sum E commutant lemma?",
+          "claim_id": "s3_mass_matrix_no_go_note",
+          "current_audit_status": "unaudited",
+          "current_claim_type": "no_go",
+          "current_effective_status": "unaudited",
+          "note_path": "docs/S3_MASS_MATRIX_NO_GO_NOTE.md"
+        }
+      ]
+    }
+  ],
+  "must_not_apply_ledger_changes_from_this_file": true,
+  "schema": "promotion_reaudit_queue.v1",
+  "status": "dispatcher_only_not_audit_verdict"
+}

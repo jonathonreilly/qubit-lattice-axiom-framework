@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
-Exact S_3 mass-matrix no-go on the hw=1 triplet.
+Exact S_3 conditional mass-matrix degeneracy lemma.
 
 Safe statement:
-  On the hw=1 carrier V = span(X_1, X_2, X_3) with the natural permutation
-  action of S_3, every S_3-invariant Hermitian operator has the form
+  On a supplied three-dimensional permutation representation
+  V ~= A_1 direct-sum E, every S_3-invariant Hermitian operator has the form
   alpha I_3 + beta P_(A_1). Therefore the exact unbroken S_3 class allows at
-  most two distinct eigenvalues on this carrier. The residual axis-fixing Z_2
-  invariant Hermitian space has real dimension 5.
+  most two distinct eigenvalues on this representation. The residual
+  axis-fixing Z_2 invariant Hermitian space has real dimension 5. No physical
+  generation-carrier identification is tested or claimed here.
 """
 
 from __future__ import annotations
@@ -59,7 +60,7 @@ def invariant_projector(operators: dict[str, np.ndarray]) -> np.ndarray:
 
 def part1_invariant_algebra() -> None:
     print("\n" + "=" * 72)
-    print("PART 1: S_3-invariant Hermitian algebra on hw=1")
+    print("PART 1: S_3-invariant Hermitian algebra on A_1 direct-sum E")
     print("=" * 72)
 
     operators = hw1_s3_representation()
@@ -103,9 +104,9 @@ def part2_spectrum() -> None:
     check("beta != 0 gives exactly two distinct eigenvalues", distinct == 2, f"distinct = {distinct}")
 
 
-def part3_random_audit() -> None:
+def part3_random_check() -> None:
     print("\n" + "=" * 72)
-    print("PART 3: Random audit of the exact S_3 class")
+    print("PART 3: Random check of the exact S_3 class")
     print("=" * 72)
 
     rng = np.random.default_rng(42)
@@ -137,11 +138,11 @@ def part4_residual_z2_dimension() -> None:
 
 def main() -> int:
     print("=" * 72)
-    print("S_3 MASS-MATRIX NO-GO ON THE hw=1 TRIPLET")
+    print("S_3 CONDITIONAL MASS-MATRIX DEGENERACY LEMMA")
     print("=" * 72)
     part1_invariant_algebra()
     part2_spectrum()
-    part3_random_audit()
+    part3_random_check()
     part4_residual_z2_dimension()
     print("\n" + "=" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

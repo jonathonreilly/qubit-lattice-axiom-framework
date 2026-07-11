@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bh_entropy_derived.py
-runner_sha256: fb64437b80095ce94a671e39b1bdf690ccdad2077654917c196dd0929845a5f6
+runner_sha256: decd901f75507b597e29e5bf47f253613802eaae703f1ab293542538b60b308f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.14
+elapsed_sec: 2.30
 status: ok
 ----- stdout -----
 ========================================================================
@@ -11,7 +11,7 @@ BEKENSTEIN-HAWKING ENTROPY: BOUNDED LATTICE COMPANION
 Finite-L comparison to S_BH = A / (4 l_P^2)
 ========================================================================
 
-Bounded comparison lane: finite-L lattice entanglement is compared
+Bounded comparison lane: finite-L Gaussian correlation entropy is compared
 to the Ryu-Takayanagi / Bekenstein-Hawking target, but current main
 does not treat this runner as a retained derivation.
 
@@ -22,29 +22,29 @@ CHECK 1: AREA LAW VERIFICATION (S ~ A)
   2D lattice: half-space bipartition, S vs boundary length
     Nx   Ny   bnd       S_vN      S/bnd
   ----------------------------------------
-     8    8     8     4.0518     0.5065
-    12   12    12     7.5373     0.6281
-    16   16    16    10.8050     0.6753
-    20   20    20    13.4592     0.6730
-    24   24    24    17.4293     0.7262
-    32   32    32    24.4569     0.7643
+     8    8     8     6.0266     0.7533
+    12   12    12     9.7459     0.8122
+    16   16    16    13.6757     0.8547
+    20   20    20    17.7647     0.8882
+    24   24    24    21.9818     0.9159
+    32   32    32    30.7231     0.9601
 
-  2D fit: S = 0.8430 * bnd + -2.7790
-  R^2 = 0.998075
+  2D fit: S = 1.0308 * bnd + -2.5890
+  R^2 = 0.999010
 
   3D lattice: half-space bipartition, S vs boundary area
     L   bnd       S_vN      S/bnd
   ------------------------------
     4    16     5.8120     0.3632
     6    36    14.6473     0.4069
-    8    64    25.2497     0.3945
+    8    64    27.6511     0.4320
    10   100    40.6037     0.4060
 
-  3D fit: S = 0.4106 * bnd + -0.5933
-  R^2 = 0.999336
+  3D fit: S = 0.4166 * bnd + -0.3184
+  R^2 = 0.996339
 
-  PASS 2D area law (R^2 > 0.998): True  (R^2 = 0.998075)
-  PASS 3D area law (R^2 > 0.998): True  (R^2 = 0.999336)
+  PASS 2D finite boundary fit (R^2 > 0.99): True  (R^2 = 0.999010)
+  PASS 3D finite boundary fit (R^2 > 0.99): True  (R^2 = 0.996339)
 
 ========================================================================
 CHECK 2: FINITE-L RT COMPARISON  S / (|dA| * ln chi_eff)
@@ -54,27 +54,27 @@ CHECK 2: FINITE-L RT COMPARISON  S / (|dA| * ln chi_eff)
   2D lattice: half-space bipartition
     Nx   Ny  chi_eff  ln(chi)      S_max    S_exact   RT_ratio     dev%
   ------------------------------------------------------------------------
-     8    8        8   2.0794    16.6355     4.0518     0.2436    -2.6%
-    10   10       10   2.3026    23.0259     5.3796     0.2336    -6.5%
-    12   12       12   2.4849    29.8189     7.5373     0.2528    +1.1%
-    16   16       16   2.7726    44.3614    10.8050     0.2436    -2.6%
-    20   20       20   2.9957    59.9146    13.4592     0.2246   -10.1%
-    24   24       24   3.1781    76.2733    17.4293     0.2285    -8.6%
-    32   32       32   3.4657   110.9035    24.4569     0.2205   -11.8%
+     8    8        8   2.0794    16.6355     6.0266     0.3623   +44.9%
+    10   10       10   2.3026    23.0259     7.8553     0.3412   +36.5%
+    12   12       12   2.4849    29.8189     9.7459     0.3268   +30.7%
+    16   16       16   2.7726    44.3614    13.6757     0.3083   +23.3%
+    20   20       20   2.9957    59.9146    17.7647     0.2965   +18.6%
+    24   24       24   3.1781    76.2733    21.9818     0.2882   +15.3%
+    32   32       32   3.4657   110.9035    30.7231     0.2770   +10.8%
 
-  Mean RT ratio (2D): 0.2353  (dev 5.9%)
+  Mean RT ratio (2D): 0.3143  (dev 25.7%)
 
   3D lattice: half-space bipartition
     L   bnd  chi_eff  ln(chi)      S_max    S_exact   RT_ratio     dev%
   ----------------------------------------------------------------------
     4    16       10   2.3026    36.8414     5.8120     0.1578   -36.9%
     6    36       24   3.1781   114.4099    14.6473     0.1280   -48.8%
-    8    64       42   3.7377   239.2109    25.2497     0.1056   -57.8%
+    8    64       42   3.7377   239.2109    27.6511     0.1156   -53.8%
    10   100       62   4.1271   412.7134    40.6037     0.0984   -60.6%
 
-  Mean RT ratio (3D): 0.1224  (dev 51.0%)
+  Mean RT ratio (3D): 0.1249  (dev 50.0%)
 
-  Diagnostic only: 2D finite-L comparison within 15% of 1/4: True
+  Diagnostic only: 2D finite-L comparison within 15% of 1/4: False
   Diagnostic only: 3D finite-L comparison within 15% of 1/4: False
 
 ========================================================================
@@ -84,7 +84,7 @@ CHECK 3: GRAVITATIONAL MODULATION OF ENTROPY
   3D lattice L=8, boundary = 64 sites
        g           S       S/bnd   chi_eff    RT_ratio
   -------------------------------------------------------
-     0.0     25.2497      0.3945        42      0.1056
+     0.0     27.6511      0.4320        42      0.1156
      0.1     25.2397      0.3944        64      0.0948
      0.5     25.2304      0.3942        64      0.0948
      1.0     25.1839      0.3935        64      0.0946
@@ -114,7 +114,7 @@ CHECK 4: FROZEN STAR ENTROPY SCALING
 CHECK 5: SPECIES COUNTING AND HILBERT SPACE DIMENSION SCAN
 ========================================================================
 
-  2D lattice L=10, S_single = 5.3796, bnd = 10
+  2D lattice L=10, S_single = 7.8553, bnd = 10
   chi_eff = 10
 
   Species interpretation: if each site has d local DOF,
@@ -124,10 +124,10 @@ CHECK 5: SPECIES COUNTING AND HILBERT SPACE DIMENSION SCAN
 
    N_s     d_eff       S_tot    ln(d^Ns)       S_max    RT_ratio
   ------------------------------------------------------------
-     1     10.00      5.3796      2.3026     23.0259      0.2336
-     2      3.16     10.7592      4.6052     46.0517      0.2336
-     3      2.15     16.1388      6.9078     69.0776      0.2336
-     4      1.78     21.5184      9.2103     92.1034      0.2336
+     1     10.00      7.8553      2.3026     23.0259      0.3412
+     2      3.16     15.7106      4.6052     46.0517      0.3412
+     3      2.15     23.5659      6.9078     69.0776      0.3412
+     4      1.78     31.4212      9.2103     92.1034      0.3412
 
   RT ratio spread across species: 0.000000
   (Should be 0 -- species counting is universal)
@@ -139,57 +139,57 @@ CHECK 6: FINITE-SIZE TREND OF RT RATIO
   2D lattice:
      L  chi_eff    S_exact      S_max   RT_ratio
   ------------------------------------------------
-     6        6     2.6694    10.7506     0.2483
-     8        8     4.0518    16.6355     0.2436
-    10       10     5.3796    23.0259     0.2336
-    12       12     7.5373    29.8189     0.2528
-    16       16    10.8050    44.3614     0.2436
-    20       20    13.4592    59.9146     0.2246
-    24       24    17.4293    76.2733     0.2285
-    32       32    24.4569   110.9035     0.2205
-    40       40    32.1418   147.5552     0.2178
-    48       48    39.7618   185.8176     0.2140
+     6        6     4.2743    10.7506     0.3976
+     8        8     6.0266    16.6355     0.3623
+    10       10     7.8553    23.0259     0.3412
+    12       12     9.7459    29.8189     0.3268
+    16       16    13.6757    44.3614     0.3083
+    20       20    17.7647    59.9146     0.2965
+    24       24    21.9818    76.2733     0.2882
+    32       32    30.7231   110.9035     0.2770
+    40       40    39.7911   147.5552     0.2697
+    48       48    49.1210   185.8176     0.2644
 
-  2D linear-in-1/L tail-fit intercept (diagnostic): 0.2168
-  Deviation from 1/4: 13.3%
+  2D linear-in-1/L tail-fit intercept (diagnostic): 0.2492
+  Deviation from 1/4: 0.3%
 
   3D lattice:
      L  chi_eff    S_exact      S_max   RT_ratio
   ------------------------------------------------
      4       10     5.8120    36.8414     0.1578
      6       24    14.6473   114.4099     0.1280
-     8       42    25.2497   239.2109     0.1056
+     8       42    27.6511   239.2109     0.1156
     10       62    40.6037   412.7134     0.0984
 
-  3D linear-in-1/L tail-fit intercept (diagnostic): 0.0575
-  Deviation from 1/4: 77.0%
+  3D linear-in-1/L tail-fit intercept (diagnostic): 0.0644
+  Deviation from 1/4: 74.2%
 
 ========================================================================
-SYNTHESIS: BOUNDED BH ENTROPY COMPANION FROM LATTICE ENTANGLEMENT
+SYNTHESIS: BOUNDED BH ENTROPY COMPANION FROM GAUSSIAN CORRELATIONS
 ========================================================================
 
-  1a. AREA LAW (2D, R^2 > 0.998): PASS  R^2 = 0.998075
-  1b. AREA LAW (3D, R^2 > 0.998): PASS  R^2 = 0.999336
+  1a. FINITE BOUNDARY FIT (2D, R^2 > 0.99): PASS  R^2 = 0.999010
+  1b. FINITE BOUNDARY FIT (3D, R^2 > 0.99): PASS  R^2 = 0.996339
 
   2. RT RATIO finite-L observation (NOT a pass/fail vs 1/4):
-     2D mean: 0.2353  (dev from 1/4: 5.9%)
-     3D mean: 0.1224  (dev from 1/4: 51.0%)
+     2D mean: 0.3143  (dev from 1/4: 25.7%)
+     3D mean: 0.1249  (dev from 1/4: 50.0%)
      OBSERVATION ONLY — finite comparison, not a BH derivation.
 
   3. GRAVITY MODULATION: monotone for g >= 0.5: True
 
   4. FROZEN STAR SCALING: comparison identity when RT = 1/4 (sanity)
 
-  5. SPECIES UNIVERSALITY: RT ratio spread = 2.78e-17  (threshold < 1e-12)
+  5. SPECIES UNIVERSALITY: RT ratio spread = 0.00e+00  (threshold < 1e-12)
      PASS
 
   6a. FINITE-SIZE TAIL-FIT 2D (observation):
-     intercept = 0.2168, c_Widom(2D) = 0.1667
-     dev from c_Widom(2D) = 30.1%   (dev from 1/4 = 13.3%)
+     intercept = 0.2492, c_Widom(2D) = 0.1667
+     dev from c_Widom(2D) = 49.5%   (dev from 1/4 = 0.3%)
      OBSERVATION ONLY — no all-L OBC asymptotic theorem is claimed.
 
   6b. FINITE-SIZE TAIL-FIT 3D (observation):
-     intercept = 0.0575  (dev from 1/4: 77.0%)
+     intercept = 0.0644  (dev from 1/4: 74.2%)
      OBSERVATION ONLY — no 3D asymptotic theorem is claimed.
 
   ============================================================
@@ -201,19 +201,19 @@ SYNTHESIS: BOUNDED BH ENTROPY COMPANION FROM LATTICE ENTANGLEMENT
   COMPANION SUMMARY:
     (i)   Area-law-like scaling is numerically strong on the reviewed
           finite lattice sizes.
-    (ii)  The transfer-matrix construction defines a bounded
-          bond-dimension comparison scale chi_eff.
+    (ii)  The transfer-layer SVD defines a threshold-rank
+          comparison scale chi_eff; it is not a derived bond dimension.
     (iii) Finite-L RT ratios are:
-            S_ent / (|dA| * ln chi_eff)  =  0.2353 (2D)
-                                          =  0.1224 (3D)
+            S_corr / (|dA| * ln chi_eff) =  0.3143 (2D)
+                                          =  0.1249 (3D)
             comparison target: 1/4 = 0.2500
-    (iv)  On current main, this is a bounded BH-comparison lane only.
-          The linked Widom row is retained-bounded for finite-L evidence
-          and an exact 2D coefficient, not for an all-L OBC theorem.
+    (iv)  On current main, this is an open BH-comparison lane only.
+          The linked Widom row is an unaudited finite diagnostic plus
+          an author-side exact 2D integral, not an all-L OBC theorem.
     (v)   Therefore the script does not derive the Bekenstein-Hawking
           coefficient as a retained framework theorem.
 
-Total runtime: 2.0s
+Total runtime: 2.2s
 
 ----- stderr -----
 

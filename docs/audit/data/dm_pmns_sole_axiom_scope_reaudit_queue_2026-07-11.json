@@ -1,0 +1,39 @@
+{
+  "allowed_context_paths": [
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md"
+  ],
+  "forbidden_context": [
+    "this dispatcher manifest as evidence",
+    "PR discussion as evidence",
+    "prior assistant discussion",
+    "prior audit rationales as evidence",
+    "publication status prose as evidence",
+    "generated audit queue output as evidence"
+  ],
+  "generated_date": "2026-07-11",
+  "groups": [
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "dm_pmns_sole_axiom_scope_fresh_context",
+      "order": 1,
+      "targets": [
+        {
+          "audit_question": "Fresh-context re-audit: does the 2026-04-16 negative boundary proved only for the historical Cl(3)-on-Z3 subset remain a current positive_theorem under the four named axioms Lattice, Qubit, Admissibility, and Record, or must it be reclassified as historical/meta or conditional because the added axiom content was never tested?",
+          "claim_id": "dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16",
+          "current_audit_status": "unaudited",
+          "current_claim_type": "positive_theorem",
+          "current_effective_status": "unaudited",
+          "note_path": "docs/DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md"
+        }
+      ]
+    }
+  ],
+  "must_not_apply_ledger_changes_from_this_file": true,
+  "schema": "promotion_reaudit_queue.v1",
+  "status": "dispatcher_only_not_audit_verdict"
+}

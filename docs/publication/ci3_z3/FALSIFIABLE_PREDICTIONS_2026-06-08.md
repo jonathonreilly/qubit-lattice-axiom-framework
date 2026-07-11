@@ -55,7 +55,8 @@ structural feature, not a fragility (source: the P1 note).
 
 A dedicated chase (2026-06-08) found that the two predictions which look like they
 "move against the data" each **re-express an already-admitted chain** and **dissolve
-under their own uncertainties** — neither tests `{Lattice, Quantum, Record}`.
+under their own uncertainties** — neither tests
+`{Lattice, Qubit, Admissibility, Record}`.
 
 | # | Observable | Framework value | Current data (sourced) | Apparent pull | What it actually is |
 |---|---|---|---|---|---|

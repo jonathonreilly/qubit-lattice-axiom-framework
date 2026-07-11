@@ -1,3 +1,15 @@
+# Historical Author Manuscript Archive — Not Publication Authority
+
+This file preserves the superseded author narrative for revision provenance.
+It contains claims and status language that are ahead of the current audit
+ledger, including historical sole-/three-axiom framing. It must not be used as
+a scientific or publication authority. Use
+[ARXIV_DRAFT_EFFECTIVE_STATUS.md](./ARXIV_DRAFT_EFFECTIVE_STATUS.md) and the
+generated audit-badged surfaces instead.
+
+<details>
+<summary>Expand the quarantined historical manuscript</summary>
+
 # Qubit-Lattice Axiom Framework:
 # discrete $3+1$ gravity, gauge structure, matter closure, and quantitative tests
 
@@ -9,45 +21,32 @@ Public arXiv-first draft, April 15, 2026
 
 Keywords: discrete gravity, lattice gauge theory, Clifford algebra, CKM, strong CP, confinement
 
+> **CURRENT AUDIT STATUS GATE.** This author-side source is not itself a
+> retention verdict. The public entry point is
+> [`ARXIV_DRAFT_EFFECTIVE_STATUS.md`](ARXIV_DRAFT_EFFECTIVE_STATUS.md), and the
+> generated effective-status tables and divergence report govern every linked
+> claim. Any `retained`, `exact`, `closed`, or `promoted` wording below is
+> automatically non-authoritative wherever the cited authority is not
+> retained-grade in those generated views.
+
 ## Abstract
 
-We ask how much physics follows from two primitive commitments: a qubit at
-every site and the cubic site set $Z^3$. The equivalent $Cl(3,0)$ local-algebra
-reading supplies the audit-stable algebraic language, but the public framework
-is the qubit-lattice axiom framework rather than a title-level assumption of
-$Cl(3)$. The retained core is already broad. On the gravity side, the framework
-yields Poisson/Newton weak-field gravity, a restricted strong-field closure on
-an exact finite-rank class, exact full discrete $3+1$ Einstein-Regge gravity
-on $PL\,S^3 \times \mathbb{R}$, and an exact quantum-gravity/continuum
-identification chain on one chosen canonical textbook target. On the gauge and
-matter side, the same framework carries exact native $SU(2)$, graph-first
-structural $SU(3)$, anomaly-forced $3+1$, retained three-generation matter
-structure, exact $I_3=0$, exact CPT, retained Bell/CHSH support on explicit
-two-species lattice systems with KS taste measurements, emergent Lorentz
-invariance, retained action-surface strong-CP closure in the form
-$\theta_{\mathrm{eff}}=0$ on the retained Wilson-plus-staggered action
-surface, and exact $T=0$ confinement with bounded
-$\sqrt{\sigma}\approx 465\,\mathrm{MeV}$.
-Quantitatively, the current package gives the canonical hierarchy evaluation
-$v=246.282818290129\,\mathrm{GeV}$, retains
-$\alpha_s(M_Z)=0.1181$ and electroweak normalization lanes, records a
-support-tier lattice-scale Ward identification
-$y_t(M_{\mathrm{Pl}})/g_s(M_{\mathrm{Pl}})=1/\sqrt{6}$ (audited_renaming),
-carries a YT/top transport lane conditioned on that identification with
-canonical full-staggered-PT $\Delta_R=-3.77\% \pm 0.45\%$ and canonical
-$m_t(\mathrm{pole})=172.57 \pm 6.50\,\mathrm{GeV}$, promotes an algebraic CKM
-atlas/axiom package on the canonical tensor/projector surface with no
-quark-mass or fitted-CKM inputs, and keeps the Higgs/vacuum row as an
-identification-conditioned follow-on with an explicit retention-decomposed
-band.
-The package is already predictive beyond retrospective comparison,
-including proton lifetime, the CKM-only neutron-EDM corollary with bounded
-continuation, vacuum criticality, and benchmark gravitational decoherence.
-The dark-matter exact-target package is now closed on the manuscript surface;
-broader target-free global uniqueness is not claimed here. The remaining open
-flagship problem is the charged-lepton Koide bridge package. The paper separates exact,
-promoted, bounded, and open rows and pairs them with a public reproducibility
-surface.
+We ask how much physics follows from four named axioms—Lattice, Qubit,
+Admissibility, and Record—together with three separately registered and tightly
+limited primitives for scale reference, kinetic-form isotropy, and the
+pointwise realized-state interface. The equivalent $Cl(3,0)$ local-algebra
+reading is a presentation of the Qubit axiom, not an additional primitive.
+
+The repository contains candidate, bounded, historical, and audited work
+across gravity, gauge structure, matter, and quantitative phenomenology. This
+manuscript is a map of that program, not a blanket retention declaration. At
+publication time, each statement must be read through the generated
+audit-derived view: only rows badged `retained`, `retained_bounded`, or
+`retained_no_go` are retained-grade; all other rows remain unaudited,
+conditional, failed, open, or in progress regardless of the author-side prose.
+The paper therefore reports a reproducible claim surface while keeping broad
+discrete-GR, strong-CP, confinement, coupling, flavor, and prediction targets
+demoted whenever their current audit badge is non-retained.
 
 ## 1. Introduction
 
@@ -55,11 +54,13 @@ The central question of this paper is not whether a discrete framework can
 imitate isolated pieces of known physics, but whether one exact discrete
 surface can carry a nontrivial fraction of gravity, gauge structure, matter,
 and quantitative phenomenology without being treated as disposable
-scaffolding. We take that question literally. The framework has two primitives:
-a qubit at every lattice site and the cubic site set $Z^3$. The equivalent
-$Cl(3,0)$ local algebra is the audit-stable mathematical reading of the
-per-site qubit, and we retain only those rows that survive direct audit on that
-exact axiom surface.
+scaffolding. We take that question literally. The current framework has four
+named axioms: Lattice, Qubit, Admissibility, and Record. The equivalent
+$Cl(3,0)$ local algebra is the audit-stable mathematical reading of the Qubit
+axiom. Three separately registered primitives supply only a scale reference,
+kinetic-form isotropy, and a pointwise realized-state interface; they do not
+enlarge the four-axiom surface. We retain only those rows that survive direct
+audit on that exact axiom-and-registered-primitive surface.
 
 Ambitious unification programs often fail less because a local mechanism is
 missing than because claim boundaries dissolve: structural theorems, numerical
@@ -67,11 +68,17 @@ lanes, and open bridges are mixed together until it is no longer clear what
 has actually been shown. This paper takes the opposite approach. Every row is
 explicitly retained, bounded, or open.
 
-The framework sentence is therefore simple:
+The framework sentence is therefore explicit:
 
-> We take a qubit at every site of $Z^3$ as the physical axiom surface.
+> We take Lattice, Qubit, Admissibility, and Record as the four named
+> framework axioms.
 > Everything else in this paper is either retained, bounded, or explicitly
 > open.
+
+The equivalent $Cl(3,0)$ presentation is local-algebra language. Scale
+reference, kinetic isotropy, and realized state are separately registered
+approved primitives, not additional axioms; they do not import downstream
+kinetic/CPT, selector, probability, log-determinant, or source/action content.
 
 That sentence is stronger than a regulator interpretation and narrower than a
 blanket statement that every phenomenological sector has closed. The lattice is
@@ -864,8 +871,10 @@ carry the same bounded qualifier there.
 ## 8. Conclusion
 
 The central claim of this paper is no longer speculative. On the retained
-qubit-lattice axiom surface, with `Cl(3,0)` as the equivalent per-site
-local-algebra language, one exact discrete framework already carries a broad
+Lattice, Qubit, Admissibility, and Record axiom surface, with `Cl(3,0)` as the
+equivalent per-site local-algebra language and the separately registered scale
+reference, kinetic-form isotropy, and realized-state interface kept explicit,
+one exact discrete framework already carries a broad
 gravity backbone, gauge and matter structure, nontrivial exact support
 theorems, promoted quantitative outputs, and a bounded but genuine prediction
 surface.
@@ -1051,3 +1060,5 @@ boson,” *JHEP* **1312** (2013) 089.
 
 [15] R. H. Cameron and W. T. Martin, “Transformations of Wiener integrals under
 translations,” *Ann. of Math.* **45** (1944) 386-396.
+
+</details>

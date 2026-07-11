@@ -17,10 +17,10 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 246 |
+| critical | `unaudited` | 245 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 124 |
-| critical | `audit_in_progress` | 7 |
+| critical | `audit_in_progress` | 8 |
 | critical | `audited_conditional` | 4 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_conditional` | 1 |
@@ -254,7 +254,7 @@ publication tables phrase it.
 | critical | `three_generation_observable_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `three_generation_structure_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `unified_matter_content_ewsb_harness_theorem_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| critical | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md |
 | critical | `universal_gr_a1_invariant_section_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `universal_gr_discrete_global_closure_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `universal_gr_lorentzian_global_atlas_closure_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |

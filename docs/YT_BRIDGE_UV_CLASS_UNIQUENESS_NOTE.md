@@ -136,9 +136,14 @@ audited claim scope.
   for the leading positive local quadratic selector hypothesis.
 - [YT_BRIDGE_HIGHER_ORDER_CORRECTIONS_NOTE.md](YT_BRIDGE_HIGHER_ORDER_CORRECTIONS_NOTE.md)
   for the subleading higher-order hypothesis used as a filter.
-- [YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md](YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md)
-  for the small-nonlocal-residual hypothesis used as a filter.
+- `YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md` is context only after its
+  2026-07-11 affine-remainder repair. It no longer supplies a physical
+  small-nonlocal-residual hypothesis for this scan.
 - [YT_BRIDGE_REARRANGEMENT_PRINCIPLE_NOTE.md](YT_BRIDGE_REARRANGEMENT_PRINCIPLE_NOTE.md)
   and [YT_BRIDGE_MOMENT_CLOSURE_NOTE.md](YT_BRIDGE_MOMENT_CLOSURE_NOTE.md)
   for the rearrangement and moment-closure inputs that justify the
   `J_aff` / `c_2` band reading.
+
+**2026-07-11 downstream hygiene.** The scan's nonlocal-fraction filter is a
+historical calibrated input. It is not chain-satisfied by the repaired scalar
+affine-remainder theorem; a locality-resolved operator bridge remains required.

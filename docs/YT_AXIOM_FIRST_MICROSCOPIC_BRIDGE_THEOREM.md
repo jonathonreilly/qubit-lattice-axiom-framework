@@ -139,15 +139,23 @@ and [YT_BRIDGE_HESSIAN_SELECTOR_NOTE.md](./YT_BRIDGE_HESSIAN_SELECTOR_NOTE.md).
 
 ### 8. The remainder structure is explicit
 
-The next departures from the leading selector are no longer hidden:
+The next departures from the leading selector were evaluated in the original
+calibrated bridge packet:
 
 - higher-order local corrections are small
-- nonlocal corrections are small
+- the historical affine-fit remainder was numerically small
 - the induced endpoint shift is bounded explicitly
 
-See [YT_BRIDGE_HIGHER_ORDER_CORRECTIONS_NOTE.md](./YT_BRIDGE_HIGHER_ORDER_CORRECTIONS_NOTE.md),
-[YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md](./YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md),
+See [YT_BRIDGE_HIGHER_ORDER_CORRECTIONS_NOTE.md](./YT_BRIDGE_HIGHER_ORDER_CORRECTIONS_NOTE.md)
 and [YT_BRIDGE_ENDPOINT_SHIFT_BOUND_NOTE.md](./YT_BRIDGE_ENDPOINT_SHIFT_BOUND_NOTE.md).
+`YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md` is now context only: its repaired
+theorem controls an affine remainder on an explicitly stated scalar transport
+surface and does not supply a physical nonlocal-tail premise for this note.
+
+**2026-07-11 downstream hygiene.** The former dependency on the old
+`5.023669e-3` affine-fit diagnostic is removed. This note's interacting-lattice
+remainder statement remains conditional pending a separate action-to-transport
+and locality-resolved operator bridge.
 
 ### 9. The transport law is package-native at leading order
 

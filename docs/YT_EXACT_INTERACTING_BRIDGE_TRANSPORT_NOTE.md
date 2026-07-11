@@ -169,10 +169,15 @@ the audited claim scope.
 - [YT_BRIDGE_HIGHER_ORDER_CORRECTIONS_NOTE.md](YT_BRIDGE_HIGHER_ORDER_CORRECTIONS_NOTE.md)
   for the higher-order local ratio (`~7.1e-3`) used as the
   `Delta_higher` budget.
-- [YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md](YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md)
-  for the nonlocal operator ratio (`~5.0e-3`) used as the
-  `Delta_nonlocal` budget.
+- `YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md` is context only after its
+  2026-07-11 affine-remainder repair. It no longer supplies the historical
+  `~5.0e-3` physical `Delta_nonlocal` budget.
 - [YT_BRIDGE_ACTION_INVARIANT_NOTE.md](YT_BRIDGE_ACTION_INVARIANT_NOTE.md)
   for the dominant `I_2` invariant used in the moment form.
 - [YT_BRIDGE_MOMENT_CLOSURE_NOTE.md](YT_BRIDGE_MOMENT_CLOSURE_NOTE.md)
   for the two-moment closure `(I_2, c_2)` used in the moment form.
+
+**2026-07-11 downstream hygiene.** The `~5.0e-3` term above remains a
+calibrated historical input of this transport packet. It is not
+chain-satisfied by the repaired scalar affine-remainder theorem. A physical
+action-to-transport and locality-resolved operator bridge remains required.

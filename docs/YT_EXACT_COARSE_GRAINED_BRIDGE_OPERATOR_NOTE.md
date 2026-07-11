@@ -177,5 +177,10 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [yt_bridge_uv_class_uniqueness_note](YT_BRIDGE_UV_CLASS_UNIQUENESS_NOTE.md)
 - [yt_bridge_hessian_selector_note](YT_BRIDGE_HESSIAN_SELECTOR_NOTE.md)
 - [yt_bridge_higher_order_corrections_note](YT_BRIDGE_HIGHER_ORDER_CORRECTIONS_NOTE.md)
-- [yt_bridge_nonlocal_corrections_note](YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md)
+- `yt_bridge_nonlocal_corrections_note` is context only after its 2026-07-11
+  affine-remainder repair and does not supply a physical nonlocal-tail scale.
 - [yt_bridge_endpoint_shift_bound_note](YT_BRIDGE_ENDPOINT_SHIFT_BOUND_NOTE.md)
+
+**2026-07-11 downstream hygiene.** Any old `5.023669e-3` tail scale used by
+this packet remains a calibrated runner input, not a consequence of the
+repaired theorem. The physical action-to-transport/locality bridge is open.

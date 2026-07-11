@@ -153,5 +153,12 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 - [yt_bridge_hessian_selector_note](YT_BRIDGE_HESSIAN_SELECTOR_NOTE.md)
 - [yt_bridge_higher_order_corrections_note](YT_BRIDGE_HIGHER_ORDER_CORRECTIONS_NOTE.md)
-- [yt_bridge_nonlocal_corrections_note](YT_BRIDGE_NONLOCAL_CORRECTIONS_NOTE.md)
+- `yt_bridge_nonlocal_corrections_note` is context only after its 2026-07-11
+  affine-remainder repair; it no longer supplies the historical physical
+  nonlocal ratio used in this note's budget arithmetic.
 - [yt_constructive_uv_bridge_note](YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md)
+
+**2026-07-11 downstream hygiene.** The old `5.023669e-3` term remains a
+calibrated historical input of this endpoint-budget note, not retained-grade
+support from the repaired affine-remainder theorem. Physical reuse requires a
+separate action-to-transport and locality-resolved operator bridge.

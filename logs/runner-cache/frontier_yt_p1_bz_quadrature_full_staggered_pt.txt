@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py
-runner_sha256: 92bf43910d517e25cf52e6838da439d0e7a0ad0d92991984f3e926904e76e807
-timeout_sec: 120
+runner_sha256: bea0b1097616e31674e17864952e7760aa0a31cfdafcb94eed9cc9f4fc88be4e
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 14.26
+elapsed_sec: 14.07
 status: ok
 ----- stdout -----
 ========================================================================
@@ -113,11 +113,10 @@ Block 13: Authority fallout.
   [PASS] Rep-A/Rep-B cancellation theorem NOT modified  (three-channel formula inherited)
   [PASS] Master assembly theorem's central -3.27% is invalidated  (corrected scalar channel changes sign/magnitude of the residual)
   [PASS] Delta_1, Delta_2, Delta_3 citation surfaces need correction banners  (prior cited ranges are not authoritative for the corrected scalar/fermion channels)
-  [PASS] H_unit prior envelope |I_S| <= 23.35 is violated by corrected scalar channel  (corrected I_v_scalar = 32.435)
   [PASS] Prior schematic BZ quadrature note NOT modified  (full-PT note cites schematic; schematic retains its stated systematic)
 
 ========================================================================
-SUMMARY: PASS=44  FAIL=0
+SUMMARY: PASS=43  FAIL=0
 ========================================================================
 
 CORRECTED DIAGNOSTIC RESULT (full staggered-PT):

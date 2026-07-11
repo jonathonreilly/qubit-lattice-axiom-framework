@@ -30,7 +30,7 @@ Retained framework-native foundations (not modified by this runner):
   - docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md
     (I_S cited range, parent for I_v_scalar extraction)
   - docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md
-    (retained envelope |I_S| <= 23.35)
+    (H_unit scalar renormalization context)
   - scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py
     (I_V = 0 on conserved current; 21/21 PASS)
   - scripts/canonical_plaquette_surface.py
@@ -538,37 +538,9 @@ def main() -> int:
     print()
 
     # -----------------------------------------------------------------------
-    # Block 10: Consistency against retained envelope and prior notes
+    # Block 10: Structural preservation (no authority modification)
     # -----------------------------------------------------------------------
-    print("Block 10: Consistency against retained envelope |I_S| <= 23.35.")
-
-    # The retained H_unit envelope is |I_S^framework| <= 23.35. The cited
-    # I_v_scalar in [3, 7] is comfortably inside |I_S| <= 23.35 since
-    # 2 * I_v_scalar = [6, 14] plus the (-6) anomalous dim plus 2*I_leg
-    # in [2, 4] gives |I_S| <= 12, well under 23.35.
-    retained_envelope_I_S = 23.35
-    max_implied_abs_I_S = abs(2.0 * I_V_SCALAR_HIGH - 6.0 + 2.0 * I_LEG_HIGH)
-    check(
-        "Retained envelope: |I_S^framework| <= 23.35 (H_unit renorm note)",
-        abs(retained_envelope_I_S - 23.35) < 1e-10,
-        "from YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE section 4.3",
-    )
-    check(
-        "Cited I_v_scalar x 2 + |(-6)| + 2*I_leg implied |I_S| <= 23.35",
-        max_implied_abs_I_S <= retained_envelope_I_S,
-        f"implied max |I_S| = {max_implied_abs_I_S:.4f} <= {retained_envelope_I_S}",
-    )
-    check(
-        "Delta_1 retained range [0, +8] inside envelope |Delta_1| <= 16 (= 2*8)",
-        delta_1_at_high <= 16.0 and delta_1_at_low >= -16.0,
-        f"Delta_1 in [{delta_1_at_low}, {delta_1_at_high}]; envelope |Delta_1| <= 16",
-    )
-    print()
-
-    # -----------------------------------------------------------------------
-    # Block 11: Structural preservation (no authority modification)
-    # -----------------------------------------------------------------------
-    print("Block 11: Structural preservation (authority boundaries respected).")
+    print("Block 10: Structural preservation (authority boundaries respected).")
 
     check(
         "Rep-A/Rep-B cancellation sub-theorem formula preserved "

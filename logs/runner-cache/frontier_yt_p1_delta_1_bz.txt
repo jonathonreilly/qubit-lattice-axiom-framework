@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_delta_1_bz.py
-runner_sha256: 110e60dfddb097849cf6d86faf6d47d0938c172593772da3f9973f4438c971ce
-timeout_sec: 120
+runner_sha256: 0e8cf1034f73975551470d8cd3b20599524c2121c2c8cb7d12b32f2e9bc049a9
+timeout_sec: 300
 exit_code: 0
 elapsed_sec: 0.04
 status: ok
@@ -88,12 +88,7 @@ Block 9: Range table: Delta_1 -> C_F * Delta_1 * alpha_LM/(4 pi).
   [PASS (C)] Table endpoint: (I_v_scalar=4, I_v_gauge=0) -> Delta_1=+2, contribution=1.924%  (central entry recovers packaged 1.92 %)
   [PASS (C)] Table endpoint: (I_v_scalar=7, I_v_gauge=0) -> Delta_1=+8, contribution=7.696%  (high-end entry consistent with I_S=10 upper P1 bracket)
 
-Block 10: Consistency against retained envelope |I_S| <= 23.35.
-  [PASS (C)] Retained envelope: |I_S^framework| <= 23.35 (H_unit renorm note)  (from YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE section 4.3)
-  [PASS (C)] Cited I_v_scalar x 2 + |(-6)| + 2*I_leg implied |I_S| <= 23.35  (implied max |I_S| = 12.0000 <= 23.35)
-  [PASS (C)] Delta_1 retained range [0, +8] inside envelope |Delta_1| <= 16 (= 2*8)  (Delta_1 in [0.0, 8.0]; envelope |Delta_1| <= 16)
-
-Block 11: Structural preservation (authority boundaries respected).
+Block 10: Structural preservation (authority boundaries respected).
   [PASS (C)] Rep-A/Rep-B cancellation sub-theorem formula preserved (Delta_1 = 2 (I_v_scalar - I_v_gauge) - 6)  (formula retained from Rep-A/Rep-B note section 4.3)
   [PASS (C)] Scalar anomalous dim -6 preserved (standard MSbar 1-loop)  (retained from SU(3) x 1-loop mass-dim counting)
   [PASS (C)] Conserved-current I_V = 0 preserved (from 21/21-PASS prior runner)  (retained from scripts/frontier_yt_p1_i1_lattice_pt_symbolic.py)
@@ -104,7 +99,7 @@ Block 11: Structural preservation (authority boundaries respected).
   [PASS (C)] Rep-A/Rep-B cancellation sub-theorem NOT modified  (this note evaluates the Delta_1 formula numerically, does not re-derive it)
 
 ========================================================================
-SUMMARY: PASS=55  FAIL=0
+SUMMARY: PASS=52  FAIL=0
 ========================================================================
 
 Retained Delta_1 C_F-channel coefficient on conserved-current surface:

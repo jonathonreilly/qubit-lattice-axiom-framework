@@ -251,7 +251,7 @@ def block_5_native_bz_candidate() -> None:
     print(f"  Delta_R full staggered-PT  = {delta_r:.3f}%")
 
     check("BZ cache records clean execution", "status: ok" in cache and "exit_code: 0" in cache)
-    check("BZ cache records PASS=44 FAIL=0", "SUMMARY: PASS=44  FAIL=0" in cache)
+    check("BZ cache records PASS=43 FAIL=0", "SUMMARY: PASS=43  FAIL=0" in cache)
     check("BZ cache gives corrected I_v_scalar near 32.435", abs(i_v_scalar - 32.435) < 0.01)
     check("5% scalar systematic is far outside supplied I_S bracket", syst_low > 10.0)
     check("corrected scalar diagnostic maps to about 31.2%", abs(100.0 * p1_native - 31.203) < 0.05)

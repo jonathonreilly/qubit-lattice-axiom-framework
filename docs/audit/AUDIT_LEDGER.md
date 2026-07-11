@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 359 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2799 |
+| unaudited | 2798 |
 | audit_in_progress | 22 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 26 |
 | `audited_clean` | 451 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 15 |
-| `unaudited` | 3149 |
+| `unaudited` | 3148 |
 
 | claim_type | count |
 |---|---:|
@@ -602,6 +602,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
@@ -1810,6 +1811,27 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The claimed spatial gap is not an independent first-principles computation; the SU(3) heat-kernel positivity, trace-class property, and Perron-Jentzsch gap are all imported from the retained temporal-axis parent. The new step is a finite-kernel axis-label permutation, which is a class-A algebraic decoration of that parent under the note's own pure-Wilson definitions. The runner reports 18 passes, but its sampled positivity check uses an approximate character surrogate, so the runner should be treated as non-load-bearing sanity support rather than a class-C proof.
 - **decoration parent:** `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`
 - **auditor confidence:** medium
+
+### `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09`
+
+- **Note:** [`CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`](../../docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional bounds for the formal transfer-insertion correlator ⟨A T̃^n B⟩, including the q_β correction, conditional on a positive Hermitian transfer matrix with a well-defined Hamiltonian logarithm and unique top eigenvalue; no derivation of the canonical transfer matrix, its gap, the physical local-correlator identification, spatial clustering, or infinite-volume/continuum clustering was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00071-cluster_decomposition_mass_g`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** After inserting the spectral resolution of T̃ and removing the top-eigenvector term, Cauchy–Schwarz gives |Σ_{k≥1}(λ_k/M_T)^n⟨0|A|k⟩⟨k|B|0⟩| ≤ exp(-nΔ_T)‖A‖‖B‖.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional spectral and trace-distance inequalities are correct on their stated operator hypotheses. The broader canonical-physics wording remains conditional because the packet supplies no one-hop authority for reconstructing T and H̃, deriving Δ_T>0, or identifying Tr(ρ_β A T̃^n B) with the advertised local thermal correlator.
+- **rationale:** The corrected B.14 adjoint placement is valid, and the displayed ground-state bound, 6q_β trace-distance correction, and finite-D population estimate follow algebraically. The runner genuinely exercises those identities and a no-gap counterexample, though it assumes constructed transfer matrices with prescribed gaps rather than deriving the framework transfer matrix or gap. Because the restricted packet provides no cited authorities while the note imports reflection positivity, the spectrum condition, and a physical transfer-insertion interpretation, only the narrowed abstract finite-block lemma closes.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
+  - `AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: eight distinct positive closure routes remain OPEN.
+    - N3: the canonical transfer reconstruction, physical correlator bridge, and positive gap remain unsupported inputs.
+    - N5: spatial, thermodynamic-limit, continuum, and gap-producing resolutions were not tested.
 
 ### `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17`
 

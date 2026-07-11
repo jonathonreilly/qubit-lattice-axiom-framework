@@ -21,14 +21,14 @@ theorem.
 
 ## Artifacts
 
-- [source note](https://github.com/jonathonreilly/cl3-lattice-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/docs/YT_SSB_MATCHING_GAP_ANALYSIS_NOTE_2026-04-18.md)
-- [trace gate](https://github.com/jonathonreilly/cl3-lattice-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/.claude/science/physics-loops/yt-ssb-hunit-normalization-arithmetic-20260711/TRACE_GATE.md)
-- [claim-status certificate](https://github.com/jonathonreilly/cl3-lattice-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/.claude/science/physics-loops/yt-ssb-hunit-normalization-arithmetic-20260711/CLAIM_STATUS_CERTIFICATE.md)
-- [assumption/import audit](https://github.com/jonathonreilly/cl3-lattice-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/.claude/science/physics-loops/yt-ssb-hunit-normalization-arithmetic-20260711/ASSUMPTIONS_AND_IMPORTS.md)
-- [review history](https://github.com/jonathonreilly/cl3-lattice-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/.claude/science/physics-loops/yt-ssb-hunit-normalization-arithmetic-20260711/REVIEW_HISTORY.md)
-- [handoff](https://github.com/jonathonreilly/cl3-lattice-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/.claude/science/physics-loops/yt-ssb-hunit-normalization-arithmetic-20260711/HANDOFF.md)
-- [runner](https://github.com/jonathonreilly/cl3-lattice-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/scripts/frontier_yt_ssb_matching_gap.py)
-- [paired output](https://github.com/jonathonreilly/cl3-lattice-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/logs/retained/yt_ssb_matching_gap_2026-04-18.log)
+- [source note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/docs/YT_SSB_MATCHING_GAP_ANALYSIS_NOTE_2026-04-18.md)
+- [trace gate](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/.claude/science/physics-loops/yt-ssb-hunit-normalization-arithmetic-20260711/TRACE_GATE.md)
+- [claim-status certificate](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/.claude/science/physics-loops/yt-ssb-hunit-normalization-arithmetic-20260711/CLAIM_STATUS_CERTIFICATE.md)
+- [assumption/import audit](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/.claude/science/physics-loops/yt-ssb-hunit-normalization-arithmetic-20260711/ASSUMPTIONS_AND_IMPORTS.md)
+- [review history](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/.claude/science/physics-loops/yt-ssb-hunit-normalization-arithmetic-20260711/REVIEW_HISTORY.md)
+- [handoff](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/.claude/science/physics-loops/yt-ssb-hunit-normalization-arithmetic-20260711/HANDOFF.md)
+- [runner](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/scripts/frontier_yt_ssb_matching_gap.py)
+- [paired output](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/claude/science-fix/yt_ssb_matching_gap_analysis_note_2026-04-18-81ffb53c/logs/retained/yt_ssb_matching_gap_2026-04-18.log)
 
 ## Verification
 

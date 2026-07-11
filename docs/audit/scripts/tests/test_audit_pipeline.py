@@ -3334,6 +3334,30 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             or "",
         )
 
+        self.assertTrue(
+            m.validation_repair_eligible(
+                rejected,
+                "target",
+                "N1 route 1 evidence_locator is not present in docs/TARGET.md",
+            )
+        )
+        self.assertFalse(
+            m.validation_repair_eligible(
+                rejected,
+                "target",
+                "N2.unresolved must be a list of non-empty strings",
+            )
+        )
+        missing_judgment = dict(rejected)
+        del missing_judgment["verdict_rationale"]
+        self.assertFalse(
+            m.validation_repair_eligible(
+                missing_judgment,
+                "target",
+                "N1 route 1 evidence_locator is not present in docs/TARGET.md",
+            )
+        )
+
     def test_prompt_preserves_raw_placeholders_and_types_every_premise(self):
         m = _import_codex_audit_runner()
         with tempfile.TemporaryDirectory() as tmp:

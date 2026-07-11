@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/record_write_admissible_one_step_class_controlled_copy_2026_07_11.py
+runner_sha256: 47fb6ac81dfffcdf36c51a783da5d0e210a2f0717ca2ae0b6c63890ae9ba3b2b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.07
+status: ok
+----- stdout -----
+PASS R1 C1 quotation occurs verbatim in the flattened memo
+PASS R1 C2 quotation occurs verbatim in the flattened memo
+PASS R1 C3 quotation occurs verbatim in the flattened memo
+PASS R1 C4 quotation occurs verbatim in the flattened memo
+PASS R2 C3 has four independent blank-input demolition constraints
+PASS R2 symbolic solution has exactly the two conditional register vectors
+PASS R2 the surviving blank-input parameters are precisely v_0 and v_1
+PASS R2 the solved family has zero off-diagonal pointer blocks
+PASS R3 blank-input completeness reduces to the two conditional norms
+PASS R3 trace preservation forces both conditional norms to one
+PASS R3 C1 gives perfectly distinguishable conditional register vectors
+PASS R3 the C1 register frame is normalized
+PASS R3 the resulting controlled-copy block column is an isometry
+PASS R3 the normalized common-vector Kraus completeness is identity
+PASS R3 the declared rank-one Kraus family is exactly the V channel
+PASS R3 weaker constraints admit a dephasing family excluded by declared C1
+PASS R4 a trace-preserving repeat extension exists
+PASS R4 repeat application fixes the written P_0 record
+PASS R4 repeat application fixes the written P_1 record
+PASS R4 the classical written-record sector is idempotently stable
+PASS R4 C2 leaves no cross-record component on a fixed record ray
+PASS R4 the remaining phase freedom fixes the record content projector
+PASS R4 the eraser negative control is a normalized channel
+PASS R4 the eraser moves written content back to the blank ray
+PASS R5 the general record-frame matrix is unitary
+PASS R5 register-unitary conjugation preserves the controlled-copy class
+PASS R5 the unitary orbit sends the canonical labels to the general pair
+PASS R6a a non-correlating write is rejected by C1
+PASS R6b a pointer-demolishing write is rejected by C3
+PASS R6c an eraser is rejected by C2
+PASS R6d a non-isometric contraction is rejected by normalization
+PASS R7 controlled-copy dependency states the derived write-isometry surface
+PASS R7 Kraus dependency states the projective extracted-block form
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

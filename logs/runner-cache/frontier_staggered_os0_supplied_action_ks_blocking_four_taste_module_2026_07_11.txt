@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_staggered_os0_supplied_action_ks_blocking_four_taste_module_2026_07_11.py
-runner_sha256: 33a5a791252dbb62cf9b1887cff27410ef028031ed7a0f069d488051296d6bea
+runner_sha256: 8fe31813c9ab93e38504a42abd824bb23116e0240f207aea77eeae740b2cf359
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.66
+elapsed_sec: 0.63
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -34,14 +34,16 @@ Part 4: module multiplicity and inverse
   [PASS (A)] Cl_4(C)=M_4(C) gives four irreducible spin modules in the 16-component carrier  (16=4*4)
   [PASS (A)] the exact character equals four times the irreducible Cl_4(C) character
   [PASS (A)] the Clifford kinetic square is (sum_mu s_mu^2) I_16
-  [PASS (A)] the blocked operator has the exact scalar-denominator inverse identity
+  [PASS (A)] the blocked operator has the exact scalar-denominator numerator identity
+  [PASS (A)] the displayed inverse is exact on the declared nonzero-denominator domain
+  [PASS (A)] the zero-mass zero-momentum singular point is excluded from the inverse domain
 
 Scope guard
 -----------
   [PASS (C)] source note discloses the action premise and disclaims physical-carrier selection
 
 ========================================================================================
-TOTAL: PASS=15, FAIL=0
+TOTAL: PASS=17, FAIL=0
 ========================================================================================
 
 ----- stderr -----

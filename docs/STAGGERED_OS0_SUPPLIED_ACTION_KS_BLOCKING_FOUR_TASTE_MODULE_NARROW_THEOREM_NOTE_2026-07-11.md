@@ -138,8 +138,12 @@ The same Clifford relations give
   = [m I_16-i sum_mu s_mu alpha_mu]
     /(m^2+sum_mu s_mu^2),
 
-s_mu=sin(p_mu a)/a.
+s_mu=sin(p_mu a)/a,
+m^2+sum_mu s_mu^2 != 0.
 ```
+
+At the excluded point `m=0` and `s_mu=0` for every `mu`, the operator is
+zero and has no inverse.
 
 The spectrum consequently consists of four identical Dirac-spin spectra.
 
@@ -174,9 +178,11 @@ The exact SymPy runner checks:
 5. exact rank 16 for the Clifford-word span;
 6. the character `(16,0,...,0)`;
 7. fourfold irreducible-module multiplicity; and
-8. the exact scalar-denominator inverse.
+8. the exact scalar-denominator numerator identity and inverse on its declared
+   nonzero-denominator domain; and
+9. exclusion of the singular point `m=s_0=s_1=s_2=s_3=0`.
 
-Expected result: `TOTAL: PASS=15, FAIL=0`.
+Expected result: `TOTAL: PASS=17, FAIL=0`.
 
 ## Dependency and downstream routing
 

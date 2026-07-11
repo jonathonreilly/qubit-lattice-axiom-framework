@@ -239,8 +239,19 @@ def main() -> int:
     operator = m * identity + sp.I * kinetic
     numerator = m * identity - sp.I * kinetic
     check(
-        "the blocked operator has the exact scalar-denominator inverse identity",
+        "the blocked operator has the exact scalar-denominator numerator identity",
         matrix_is_zero(operator * numerator - denominator * identity),
+    )
+    inverse_on_domain = numerator / denominator
+    check(
+        "the displayed inverse is exact on the declared nonzero-denominator domain",
+        matrix_is_zero(operator * inverse_on_domain - identity),
+    )
+    singular_substitution = {m: 0, **{value: 0 for value in s_symbols}}
+    check(
+        "the zero-mass zero-momentum singular point is excluded from the inverse domain",
+        denominator.subs(singular_substitution) == 0
+        and operator.subs(singular_substitution) == sp.zeros(16),
     )
 
     section("Scope guard")

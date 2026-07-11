@@ -2,7 +2,7 @@
 
 This physics-loop block makes a sustained first-principles attempt on the
 missing physical scalar-normalization map in
-[`YT_COLOR_PROJECTION_CORRECTION_NOTE.md`](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/yt-color-projection-block01-20260711/docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md).
+[`YT_COLOR_PROJECTION_CORRECTION_NOTE.md`](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/yt-color-projection-block01-20260711/docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md).
 
 The exact audit target was:
 
@@ -36,10 +36,10 @@ derive a physical `sqrt(8/9)` factor.
 
 See:
 
-- [`TRACE_GATE.md`](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/yt-color-projection-block01-20260711/.claude/science/physics-loops/yt-color-operator-map-20260711/TRACE_GATE.md)
-- [`CLAIM_STATUS_CERTIFICATE.md`](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/yt-color-projection-block01-20260711/.claude/science/physics-loops/yt-color-operator-map-20260711/CLAIM_STATUS_CERTIFICATE.md)
-- [`NO_GO_DISCIPLINE_CHECKLIST.md`](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/yt-color-projection-block01-20260711/.claude/science/physics-loops/yt-color-operator-map-20260711/NO_GO_DISCIPLINE_CHECKLIST.md)
-- [`HANDOFF.md`](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/yt-color-projection-block01-20260711/.claude/science/physics-loops/yt-color-operator-map-20260711/HANDOFF.md)
+- [`TRACE_GATE.md`](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/yt-color-projection-block01-20260711/.claude/science/physics-loops/yt-color-operator-map-20260711/TRACE_GATE.md)
+- [`CLAIM_STATUS_CERTIFICATE.md`](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/yt-color-projection-block01-20260711/.claude/science/physics-loops/yt-color-operator-map-20260711/CLAIM_STATUS_CERTIFICATE.md)
+- [`NO_GO_DISCIPLINE_CHECKLIST.md`](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/yt-color-projection-block01-20260711/.claude/science/physics-loops/yt-color-operator-map-20260711/NO_GO_DISCIPLINE_CHECKLIST.md)
+- [`HANDOFF.md`](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/yt-color-projection-block01-20260711/.claude/science/physics-loops/yt-color-operator-map-20260711/HANDOFF.md)
 
 ## Artifacts
 
@@ -90,7 +90,7 @@ computed rather than hard-coded projection helpers, the shifted-source tangent
 check, and audit-facing claim-boundary metadata.
 
 Detailed findings and the independent check are in
-[`REVIEW_HISTORY.md`](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/yt-color-projection-block01-20260711/.claude/science/physics-loops/yt-color-operator-map-20260711/REVIEW_HISTORY.md).
+[`REVIEW_HISTORY.md`](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/yt-color-projection-block01-20260711/.claude/science/physics-loops/yt-color-operator-map-20260711/REVIEW_HISTORY.md).
 
 This PR must not be merged without normal review, and this physics-loop run
 does not merge it or modify repo-wide audit authority surfaces.

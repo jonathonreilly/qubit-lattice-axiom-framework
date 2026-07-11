@@ -71,19 +71,222 @@ current admitted physical-clock transfers = { (T_hat^2, 2 a_tau) }
 
 No second physical-clock transfer is currently admitted.
 
+## Admission Manifest (2026-07-10)
+
+The inventory above is pinned to the explicit dated manifest below instead of
+a runner-preset list. The manifest is carried in this note as a fenced JSON
+block (fenced, so it adds no dependency edges), and the paired runner
+recomputes its content from source text:
+
+- **Packet.** `packet_notes` names the single-clock clock/evolution source
+  packet: the parent theorem note and this inventory note.
+- **Closed enumeration.** `entries` lists every document reachable by a
+  markdown dependency link from the two packet notes (targets `*.md`,
+  normalized to `docs/<basename>`). The runner recomputes this link union
+  live from both packet notes and fails on any divergence in either
+  direction, so the enumeration cannot silently go stale.
+- **Axiom authority.** The axiom leg reads the current 2026-06-29
+  minimal-axiom memo through the stable `minimal_axioms` premise node in
+  `docs/audit/data/axiom_premise_nodes.json`; the 2026-06-05 path cited by
+  the parent packet is a registered alias of the same node, not a second
+  authority.
+- **Computed admission.** `candidates` names each proposed physical-clock
+  transfer with per-criterion source evidence (file plus exact anchor) for
+  the four-part admission definition above. The runner evaluates the four
+  criteria against the named sources, requires every evidence file to lie
+  inside the enumerated packet surface, and computes the admitted list from
+  those checks; no preset `physical_clock_admitted` flags remain.
+  Counterfeit candidates (fabricated anchors, missing packet consumption,
+  evidence outside the enumerated surface) must evaluate to not-admitted.
+- **Honest auditor read.** For entries that are not clock-adjacent, the
+  negative disposition ("supplies no second physical clock") is carried by
+  the closed enumeration together with the parent packet's sole-pair
+  consumption grammar — every transfer/step pair the parent consumes
+  normalizes to the supplied `(T_hat^2, 2 a_tau)` pair — and by explicit
+  no-clock anchors in the clock-adjacent authorities (minimal axioms, Stone,
+  post-record). It is source-inventory support, not a semantic scan of every
+  linked document and not a mathematical exclusion.
+
+```json
+{
+  "manifest_date": "2026-07-10",
+  "surface": "single-clock clock/evolution source packet",
+  "packet_notes": [
+    "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+    "docs/SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md"
+  ],
+  "axiom_authority": {
+    "stable_id": "minimal_axioms",
+    "current_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "registry": "docs/audit/data/axiom_premise_nodes.json"
+  },
+  "entries": [
+    {
+      "path": "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
+      "h1": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module",
+      "linked_by": ["parent"],
+      "role": "per-site Cl(3) module uniqueness input; supplies no transfer"
+    },
+    {
+      "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
+      "h1": "Axiom-First Reflection Positivity: Staggered-Only, 2-Step Block Formulation",
+      "linked_by": ["parent"],
+      "role": "staggered-only two-step reflection-positivity groundwork on the same admitted transfer surface"
+    },
+    {
+      "path": "docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md",
+      "h1": "Free Staggered 2-Step Blocked Transfer-Matrix Positivity (In-Repo Derivation)",
+      "linked_by": ["n5"],
+      "role": "derives the positive Hermitian two-step blocked transfer T_hat^2; admitted-pair evidence source"
+    },
+    {
+      "path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+      "h1": "Spectrum-Condition Blocked-Time-Spacing Normalization Bridge Narrow Theorem",
+      "linked_by": ["n5"],
+      "role": "supplies the blocked clock denominator 2 a_tau and log normalization; admitted-pair evidence source"
+    },
+    {
+      "path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md",
+      "h1": "Axiom-First Spectrum Condition (Lattice Analogue) on Cl(3) ⊗ Z^3",
+      "linked_by": ["parent"],
+      "role": "spectrum-condition groundwork for the supplied transfer; supplies no second transfer"
+    },
+    {
+      "path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
+      "h1": "Emergent Lorentz Invariance from the Cubic Z³ Lattice (Conditional)",
+      "linked_by": ["parent"],
+      "role": "conditional emergent-Lorentz dispersion comparison; supplies no transfer"
+    },
+    {
+      "path": "docs/FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md",
+      "h1": "Free Bilinear Exact-Log Quasilocal Lieb-Robinson Bridge",
+      "linked_by": ["parent"],
+      "role": "quasilocal Lieb-Robinson bridge input; supplies no transfer"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "h1": "Kinetic-Isotropy Primitive",
+      "linked_by": ["parent"],
+      "role": "approved spatial kinetic-isotropy primitive; static spatial content only"
+    },
+    {
+      "path": "docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "h1": "Lieb-Robinson (M1) Equal-Time Tensor-Locality Narrow Theorem",
+      "linked_by": ["parent"],
+      "role": "equal-time tensor-locality input; supplies no transfer"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-05.md",
+      "h1": "Minimal Framework Axioms (Lattice, Quantum, Record)",
+      "linked_by": ["parent"],
+      "role": "aliased historical path of the stable minimal_axioms premise node",
+      "alias_of": "minimal_axioms"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "h1": "Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)",
+      "linked_by": ["n5"],
+      "role": "current minimal-axiom memo; axiom authority for this manifest; supplies no clock",
+      "alias_of": "minimal_axioms"
+    },
+    {
+      "path": "docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md",
+      "h1": "Post-Record Clock/Rate Interface",
+      "linked_by": ["n5"],
+      "role": "event/count order interface; physical rates require a supplied clock map"
+    },
+    {
+      "path": "docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md",
+      "h1": "Quantum Local Algebra Does Not Force Boost-Action Faith No-Go",
+      "linked_by": ["parent"],
+      "role": "boost-action no-go input; supplies no transfer"
+    },
+    {
+      "path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+      "h1": "Single-Clock APBC Axis-Label Bridge",
+      "linked_by": ["parent"],
+      "role": "axis-label bridge decorating the already-supplied time circle"
+    },
+    {
+      "path": "docs/SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md",
+      "h1": "Single-Clock Blocked-Time Unit Split: N2 Internal Support Boundary",
+      "linked_by": ["parent"],
+      "role": "sibling blocked-time unit-split support boundary"
+    },
+    {
+      "path": "docs/SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md",
+      "h1": "Single-Clock Physical-Clock Admission Inventory N5 Support",
+      "linked_by": ["parent"],
+      "role": "this inventory note; linked back by the parent packet note"
+    },
+    {
+      "path": "docs/SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "h1": "Single-Clock Stone Finite-Dim Uniqueness Narrow Theorem",
+      "linked_by": ["parent", "n5"],
+      "role": "transfer-relative finite Stone/log uniqueness; constructs from a supplied transfer, adds none"
+    },
+    {
+      "path": "docs/SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md",
+      "h1": "Single-Clock Uniqueness Scope Boundary",
+      "linked_by": ["parent"],
+      "role": "single-clock uniqueness scope boundary; names what is not claimed"
+    },
+    {
+      "path": "docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md",
+      "h1": "Spatial Cubic Time-Anisotropy Gate No-Go",
+      "linked_by": ["parent"],
+      "role": "spatial cubic time-anisotropy gate no-go input; supplies no transfer"
+    }
+  ],
+  "candidates": [
+    {
+      "name": "T_hat^2",
+      "clock_denominator": "2 a_tau",
+      "criteria_evidence": {
+        "supplied_as_physical_transfer": {
+          "path": "docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md",
+          "anchor": "2-step blocked transfer matrix"
+        },
+        "positivity_trivial_kernel": {
+          "path": "docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md",
+          "anchor": "positive Hermitian"
+        },
+        "clock_denominator": {
+          "path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "anchor": "H  :=  -(1/(2 a_τ)) log(T_hat^2 / M_T)"
+        },
+        "packet_consumption": {
+          "path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+          "anchor": "inventory contains exactly the supplied `(T̂², 2a_τ)` transfer/step pair."
+        }
+      }
+    }
+  ]
+}
+```
+
 ## Proof
 
 ### 1. The minimal axioms do not admit a clock
 
-The Lattice axiom supplies the `Z^3` site set and finite-range locality notion,
-but no dynamics, boundary condition, metric scale, lattice spacing, causal
-cone, or physical unit conversion. The Quantum axiom supplies the one-qubit
-local algebra at each site, but no dynamics or physical-observable bridge. The
-Record axiom supplies durable realized-outcome readout and finite additivity,
-but no time metric, dynamics, production process, or physical persistence
-dynamics.
+The current minimal-axiom memo (2026-06-29) names four axioms — Lattice,
+Qubit, Admissibility, Record — and none supplies a clock. The Lattice axiom
+supplies the `Z^3` site set with nearest-neighbor adjacency, translations,
+and proper cubic rotations; no dynamics and no time structure. The Qubit
+axiom supplies the one-site possibility domain with algebraic presentation
+`M_2(C)`; no dynamics. The memo states explicitly that Admissibility "is not
+a dynamics axiom" and that it does not "choose a Hamiltonian or transfer
+operator, supply transition probabilities or weights, select a scalar or
+nonzero kinetic branch, assert a Dirac-square carrier, define a time metric,
+or provide a record-production process or physical persistence dynamics."
+The Record axiom fixes records and finite scalar readout additivity, while
+the memo lists "time metric" among the open gates outside axiom content and
+keeps "Probability, dynamics, readout contexts, and physical observable
+bridges" downstream.
 
-Thus the minimal axioms alone do not admit any physical-clock transfer.
+Thus the minimal axioms alone do not admit any physical-clock transfer; every
+admitted clock enters through a named downstream source authority, which is
+what the admission manifest above enumerates.
 
 ### 2. The two-step RP/SC packet admits one clock transfer
 
@@ -182,7 +385,7 @@ python3 scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_
 Expected summary:
 
 ```text
-SUMMARY: PASS=35 FAIL=0
+SUMMARY: PASS=53 FAIL=0
 ADMITTED_PHYSICAL_CLOCK_TRANSFERS=1
 B_AXIS_DERIVED=FALSE
 MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE

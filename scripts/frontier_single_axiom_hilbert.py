@@ -10,9 +10,12 @@ This runner verifies consequences after four inputs are supplied:
 
 It does not derive those inputs from a bare Hilbert-space axiom, reduce the
 current framework axiom ledger, or prove a monotone graph-distance decay law.
-Test 4's valid support is the participation-ratio/spread contrast between a
-supplied local tensor-product Hamiltonian and an unfactored random Hamiltonian
-of the same dimension.
+Test 4 compares normalized distributions on the same 64-outcome basis after
+norm-matching the local and unfactored Hamiltonians. Locality of the
+tensor-product Hamiltonian bounds short-time information propagation (a light
+cone). On the 6-qubit chain the cone saturates the system by t ~ 1, so the
+discriminating regime is short time at matched energy scale. The old t = 1.0
+cross-space 29x statistic is retained only as a negative-finding artifact.
 
 PStack experiment: single-axiom-hilbert
 """
@@ -22,6 +25,7 @@ from __future__ import annotations
 import math
 import time
 import sys
+from pathlib import Path
 
 import numpy as np
 
@@ -488,130 +492,135 @@ def test_unitarity():
           f"{attraction_works_unitary}")
     print(f"  Strong Lindblad: probability stuck at source (toy attraction broken): "
           f"{attraction_broken_lindblad}")
-    print(f"  PASS: Hermitian/unitary control is load-bearing for the toy profile" if attraction_broken_lindblad
-          else f"  NOTE: Lindblad still shows some attraction (weaker test)")
+    print(f"  PASS: fixed gamma=2 strong-dephasing toy control reverses the "
+          f"source-versus-center ordering" if attraction_broken_lindblad
+          else f"  NOTE: fixed strong-dephasing toy control does not reverse the ordering")
 
     return True
 
 
 # ============================================================================
-# Test 4: tensor-product/local-H packet gives bounded localization support.
+# Test 4: norm-matched short-time light-cone statistic on one outcome space.
 # ============================================================================
 
 def test_tensor_product_essential():
-    """Test 4: tensor-product factorization gives bounded localization support.
+    """Test 4: energy-fair short-time light-cone contrast.
 
-    Compare:
-    (a) Tensor product space H = H_1 x H_2 x ... x H_N with local Hamiltonian
-        -> supplies a graph and localized propagator support
-    (b) Single unfactored Hilbert space of the same dimension with a random
-        Hamiltonian -> no supplied graph-distance notion
+    Both dynamics start from |000000> and produce normalized distributions on
+    the same outcome space of 64 computational-basis states. For each seed,
+    H_random is norm-matched to H_local. Hamming distance is defined only on
+    that common basis, not by either Hamiltonian.
 
-    The pass criterion is the participation-ratio/spread contrast. The
-    fixed-seed local amplitudes are printed as a diagnostic only and are not
-    required to decay monotonically with graph distance.
+    Locality bounds short-time information propagation (a light cone). On a
+    6-qubit chain the cone saturates the system by t ~ 1, after which spread
+    statistics cannot distinguish local from unfactored dynamics. Accordingly
+    the scored contrast is restricted to t in (0.25, 0.5) at matched energy
+    scale. The t = 1.0 result is printed separately as unscored negative-finding
+    context.
     """
     print("\n" + "=" * 70)
-    print("TEST 4: Tensor product factorization gives bounded localization support")
+    print("TEST 4: Norm-matched short-time light-cone contrast")
     print("=" * 70)
 
     if not HAS_SCIPY:
         print("  SKIP: scipy required")
         return False
 
-    rng = np.random.default_rng(999)
-
-    # --- (a) Tensor product space: 1D chain of 6 qubits ---
     n_sites = 6
     d = 2
-    D = d ** n_sites  # 64-dimensional
-
-    # Local Hamiltonian on 1D chain
+    D = d ** n_sites
     edges_chain = [(i, i+1) for i in range(n_sites - 1)]
-    H_local = random_local_hamiltonian(n_sites, d, edges_chain, rng, coupling_strength=0.5)
-
-    # Propagator from site 0
     source_state = np.zeros(D, dtype=complex)
-    source_state[0] = 1.0  # |000000> = site 0 in computational basis
-    t = 1.0
-    G_local = expm(-1j * H_local * t) @ source_state
+    source_state[0] = 1.0
+    hamming = np.array([basis.bit_count() for basis in range(D)])
+    seeds = (999, 7, 42, 2026)
+    times = (0.25, 0.5)
+    rows = []
+    old_parameter_rows = {}
 
-    # Measure probability at each site (trace over other qubits)
-    probs_local = []
-    for site in range(n_sites):
-        # Probability of finding excitation at site `site`
-        # = sum over all basis states with qubit `site` = 1
-        p = 0.0
-        for basis in range(D):
-            # Check if bit `site` is set (using big-endian convention)
-            bit = (basis >> (n_sites - 1 - site)) & 1
-            if bit == 1:
-                p += abs(G_local[basis]) ** 2
-        probs_local.append(p)
+    for seed in seeds:
+        rng = np.random.default_rng(seed)
+        H_local = random_local_hamiltonian(
+            n_sites, d, edges_chain, rng, coupling_strength=0.5)
+        H_random = random_hermitian(D, rng)
+        H_random *= np.linalg.norm(H_local, 2) / np.linalg.norm(H_random, 2)
 
-    print(f"\n  (a) Tensor product space (6-qubit chain):")
-    print(f"    Site probabilities: [{', '.join(f'{p:.4f}' for p in probs_local)}]")
+        for t in times + ((1.0,) if seed in (999, 7) else ()):
+            p_local = np.abs(expm(-1j * H_local * t) @ source_state) ** 2
+            p_random = np.abs(expm(-1j * H_random * t) @ source_state) ** 2
+            assert abs(np.sum(p_local) - 1.0) < 1e-10
+            assert abs(np.sum(p_random) - 1.0) < 1e-10
 
-    # Check locality: nearby sites have higher probability than far sites
-    local_gradient = all(probs_local[i] >= probs_local[i+1] - 0.05
-                        for i in range(n_sites - 1))
-    print(f"    Locality gradient (near > far): {local_gradient}")
-    print("    Diagnostic only: the fixed-seed amplitudes are not claimed to decay monotonically.")
+            pr_local = 1.0 / np.sum(p_local ** 2)
+            pr_random = 1.0 / np.sum(p_random ** 2)
+            eh_local = np.sum(p_local * hamming)
+            eh_random = np.sum(p_random * hamming)
+            tail_local = np.sum(p_local[hamming > 2])
+            tail_random = np.sum(p_random[hamming > 2])
+            row = (seed, t, pr_local, pr_random, eh_local, eh_random,
+                   tail_local, tail_random)
+            if t == 1.0:
+                old_parameter_rows[seed] = row
+            else:
+                rows.append(row)
 
-    # --- (b) Unfactored space: random Hamiltonian, same dimension ---
-    H_random = random_hermitian(D, rng)
+    print("\n  Same outcome space: 64 computational-basis states")
+    print("  Source: |000000>; both distributions normalized to one")
+    print("  Energy matching: ||H_random||_2 = ||H_local||_2 per seed")
+    print("\n  seed    t | PR_loc PR_rnd | EH_loc EH_rnd | tail_loc tail_rnd "
+          "| tail ratio EH ratio | criterion")
+    print("  " + "-" * 105)
 
-    G_random = expm(-1j * H_random * t) @ source_state
-    probs_random = np.abs(G_random) ** 2
+    criteria = []
+    seed_order = {seed: index for index, seed in enumerate(seeds)}
+    for row in sorted(rows, key=lambda item: (item[1], seed_order[item[0]])):
+        (seed, t, pr_local, pr_random, eh_local, eh_random,
+         tail_local, tail_random) = row
+        tail_ratio = tail_random / tail_local
+        eh_ratio = eh_random / eh_local
+        if t == 0.25:
+            passed = tail_ratio > 5.0 and eh_ratio > 2.0
+            criterion = "tail>5 and EH>2"
+        else:
+            passed = tail_ratio > 3.0
+            criterion = "tail>3"
+        criteria.append(passed)
+        print(f"  {seed:4d} {t:4.2f} | {pr_local:6.2f} {pr_random:6.2f} | "
+              f"{eh_local:6.3f} {eh_random:6.3f} | {tail_local:8.4f} "
+              f"{tail_random:8.4f} | {tail_ratio:10.2f} {eh_ratio:8.2f} | "
+              f"{'PASS' if passed else 'FAIL'} ({criterion})")
 
-    # In the unfactored space, there's no meaningful "site" decomposition
-    # So we just look at the probability distribution
-    print(f"\n  (b) Unfactored space (random 64x64 Hamiltonian):")
-    print(f"    Probability spread (std): {np.std(probs_random):.4e}")
-    print(f"    Max probability: {np.max(probs_random):.4e}")
-    print(f"    Min probability: {np.min(probs_random):.4e}")
+    print("\n  NEGATIVE-FINDING CONTEXT AT t = 1.0 (unscored)")
+    print("  The old unmatched-norm, cross-space 29x statistic was an artifact.")
+    print("  Under the fair same-space, norm-matched statistic no contrast exists:")
+    print("  seed    t | PR_loc PR_rnd | EH_loc EH_rnd | tail_loc tail_rnd")
+    for seed in (999, 7):
+        (_, t, pr_local, pr_random, eh_local, eh_random,
+         tail_local, tail_random) = old_parameter_rows[seed]
+        print(f"  {seed:4d} {t:4.2f} | {pr_local:6.2f} {pr_random:6.2f} | "
+              f"{eh_local:6.3f} {eh_random:6.3f} | {tail_local:8.4f} "
+              f"{tail_random:8.4f}")
+    print("  Seed 7 reverses direction in EH and Hamming-tail spread.")
+    print("  Test 4 support is the short-time light-cone contrast only.")
 
-    # Key comparison: measure the "effective locality" via participation ratio
-    # PR = 1 / sum(p_i^2) -- measures how many states are populated
-    PR_local = 1.0 / np.sum(np.array(probs_local) ** 2) if sum(probs_local) > 0 else D
-    PR_random = 1.0 / np.sum(probs_random ** 2)
+    note_path = Path(__file__).resolve().parents[1] / "docs" / "SINGLE_AXIOM_HILBERT_NOTE.md"
+    note_text = note_path.read_text(encoding="utf-8")
+    note_surface = " ".join(note_text.split())
+    note_pins = (
+        "same outcome space",
+        "norm-matched",
+        "light-cone",
+        "2026-07-11 Test 4 statistic repair",
+        "at `t = 1.0` no fair contrast exists (negative finding)",
+    )
+    pin_results = [pin in note_surface for pin in note_pins]
+    print("\n  Note-surface pins:")
+    for pin, present in zip(note_pins, pin_results):
+        print(f"    {'PASS' if present else 'FAIL'}: {pin!r}")
 
-    print(f"\n  Participation ratio (how spread is the propagator):")
-    print(f"    Local Hamiltonian:  PR = {PR_local:.1f} / {n_sites} sites")
-    print(f"    Random Hamiltonian: PR = {PR_random:.1f} / {D} states")
-
-    # --- (c) Distance-dependent propagation test ---
-    # In the tensor product space, graph-distance amplitudes are inspectable.
-    # This fixed-seed sample is not used as a monotone-decay proof. In the
-    # unfactored space, there is no graph-distance notion to inspect.
-
-    print(f"\n  Distance dependence of propagation:")
-
-    # For local H: compute |G| at graph distances 0, 1, 2, ...
-    print(f"    Local (tensor product):")
-    for dist in range(n_sites):
-        # Target state: single excitation at site `dist`
-        target = np.zeros(D, dtype=complex)
-        target[1 << (n_sites - 1 - dist)] = 1.0
-        amp = abs(target.conj() @ G_local)
-        print(f"      distance {dist}: |G| = {amp:.6f}")
-
-    # For random H: no notion of distance, check spread
-    # Sort amplitudes and compare decay
-    amps_sorted = sorted(np.abs(G_random), reverse=True)
-    print(f"    Random (unfactored):")
-    print(f"      Top 5 amplitudes: [{', '.join(f'{a:.6f}' for a in amps_sorted[:5])}]")
-    print(f"      Bottom 5: [{', '.join(f'{a:.6f}' for a in amps_sorted[-5:])}]")
-    print(f"      Ratio top/median: {amps_sorted[0] / amps_sorted[D//2]:.2f}")
-
-    # --- Summary ---
-    spread_ratio = PR_random / PR_local
-    print(f"\n  Spread ratio (random/local): {spread_ratio:.1f}x")
-    print(f"  Tensor-product/local-H packet is more localized by spread ratio: {spread_ratio > 2.0}")
-    print(f"  PASS: bounded localization contrast" if spread_ratio > 2.0
-          else f"  MARGINAL: ratio only {spread_ratio:.1f}x")
-
-    return spread_ratio > 2.0
+    passed = all(criteria) and all(pin_results)
+    print(f"\n  Overall Test 4 summary: {'PASS' if passed else 'FAIL'}")
+    return passed
 
 
 # ============================================================================
@@ -638,13 +647,13 @@ def synthesis(t1: float, t2: bool, t3: bool, t4: bool):
     p != 2 theories violate Born rule (I_3 != 0).
 
   Test 3 — Hermitian/unitary control:           {'PASS' if t3 else 'FAIL'}
-    The supplied Hermitian H gives unitary evolution; a Lindblad replacement
-    destroys the toy attraction profile.
+    The supplied Hermitian H gives unitary evolution; the fixed gamma=2
+    strong-dephasing toy control reverses source-versus-center ordering.
 
-  Test 4 — Bounded localization contrast:       {'PASS' if t4 else 'FAIL'}
-    The supplied tensor-product/local-H packet is far less spread than an
-    unfactored random Hamiltonian of the same dimension. The fixed sample
-    does not prove monotone graph-distance decay.
+  Test 4 — Short-time light-cone contrast:       {'PASS' if t4 else 'FAIL'}
+    On the same normalized 64-outcome space, with Hamiltonian norms matched,
+    the local packet has a much smaller short-time Hamming tail. At t = 1.0
+    no fair contrast exists; the old cross-space 29x result was an artifact.
 
   Conclusion:
     The runner supports the bounded operational consequences of the admitted

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_single_axiom_hilbert.py
-runner_sha256: 7ea5ad4c646799e8c7a6a511efd4a37d15b534a99894288174f7ee6b42c1093c
+runner_sha256: 36edb6aefb7d684132b6ccfc54f94700ce760f929c5832ab8af3beb4cc8948aa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 SCOPE-NARROWED LOCAL TENSOR PRODUCT HILBERT SUPPORT
@@ -56,42 +56,44 @@ TEST 3: Hermitian generator gives unitary evolution; Lindblad control breaks it
 
   Unitary: probability migrates toward toy attraction center: True
   Strong Lindblad: probability stuck at source (toy attraction broken): True
-  PASS: Hermitian/unitary control is load-bearing for the toy profile
+  PASS: fixed gamma=2 strong-dephasing toy control reverses the source-versus-center ordering
 
 ======================================================================
-TEST 4: Tensor product factorization gives bounded localization support
+TEST 4: Norm-matched short-time light-cone contrast
 ======================================================================
 
-  (a) Tensor product space (6-qubit chain):
-    Site probabilities: [0.6348, 0.3284, 0.2628, 0.2339, 0.4075, 0.4001]
-    Locality gradient (near > far): False
-    Diagnostic only: the fixed-seed amplitudes are not claimed to decay monotonically.
+  Same outcome space: 64 computational-basis states
+  Source: |000000>; both distributions normalized to one
+  Energy matching: ||H_random||_2 = ||H_local||_2 per seed
 
-  (b) Unfactored space (random 64x64 Hamiltonian):
-    Probability spread (std): 1.6543e-02
-    Max probability: 6.2129e-02
-    Min probability: 5.2271e-05
+  seed    t | PR_loc PR_rnd | EH_loc EH_rnd | tail_loc tail_rnd | tail ratio EH ratio | criterion
+  ---------------------------------------------------------------------------------------------------------
+   999 0.25 |   1.58   4.90 |  0.282  1.685 |   0.0070   0.3758 |      53.90     5.98 | PASS (tail>5 and EH>2)
+     7 0.25 |   1.92   4.82 |  0.368  1.655 |   0.0092   0.3883 |      42.03     4.50 | PASS (tail>5 and EH>2)
+    42 0.25 |   1.57   2.75 |  0.246  1.216 |   0.0037   0.2455 |      65.87     4.95 | PASS (tail>5 and EH>2)
+  2026 0.25 |   1.45   8.11 |  0.265  2.135 |   0.0068   0.4878 |      71.61     8.06 | PASS (tail>5 and EH>2)
+   999 0.50 |   5.27  38.53 |  0.974  3.108 |   0.0817   0.6766 |       8.28     3.19 | PASS (tail>3)
+     7 0.50 |   9.54  32.65 |  1.265  2.981 |   0.1165   0.6807 |       5.84     2.36 | PASS (tail>3)
+    42 0.50 |   4.47  28.17 |  0.828  2.761 |   0.0412   0.6001 |      14.55     3.33 | PASS (tail>3)
+  2026 0.50 |   4.11  37.86 |  0.942  2.912 |   0.0812   0.6442 |       7.94     3.09 | PASS (tail>3)
 
-  Participation ratio (how spread is the propagator):
-    Local Hamiltonian:  PR = 1.0 / 6 sites
-    Random Hamiltonian: PR = 30.2 / 64 states
+  NEGATIVE-FINDING CONTEXT AT t = 1.0 (unscored)
+  The old unmatched-norm, cross-space 29x statistic was an artifact.
+  Under the fair same-space, norm-matched statistic no contrast exists:
+  seed    t | PR_loc PR_rnd | EH_loc EH_rnd | tail_loc tail_rnd
+   999 1.00 |  27.81  30.42 |  2.267  2.799 |   0.3869   0.5962
+     7 1.00 |  17.00  37.27 |  3.070  2.957 |   0.7391   0.6883
+  Seed 7 reverses direction in EH and Hamming-tail spread.
+  Test 4 support is the short-time light-cone contrast only.
 
-  Distance dependence of propagation:
-    Local (tensor product):
-      distance 0: |G| = 0.279140
-      distance 1: |G| = 0.115061
-      distance 2: |G| = 0.181217
-      distance 3: |G| = 0.104496
-      distance 4: |G| = 0.202841
-      distance 5: |G| = 0.202112
-    Random (unfactored):
-      Top 5 amplitudes: [0.249257, 0.247233, 0.239206, 0.236498, 0.233064]
-      Bottom 5: [0.025534, 0.013398, 0.012560, 0.010231, 0.007230]
-      Ratio top/median: 2.51
+  Note-surface pins:
+    PASS: 'same outcome space'
+    PASS: 'norm-matched'
+    PASS: 'light-cone'
+    PASS: '2026-07-11 Test 4 statistic repair'
+    PASS: 'at `t = 1.0` no fair contrast exists (negative finding)'
 
-  Spread ratio (random/local): 29.0x
-  Tensor-product/local-H packet is more localized by spread ratio: True
-  PASS: bounded localization contrast
+  Overall Test 4 summary: PASS
 
 ======================================================================
 SYNTHESIS: What the admitted-input packet supports
@@ -110,13 +112,13 @@ SYNTHESIS: What the admitted-input packet supports
     p != 2 theories violate Born rule (I_3 != 0).
 
   Test 3 — Hermitian/unitary control:           PASS
-    The supplied Hermitian H gives unitary evolution; a Lindblad replacement
-    destroys the toy attraction profile.
+    The supplied Hermitian H gives unitary evolution; the fixed gamma=2
+    strong-dephasing toy control reverses source-versus-center ordering.
 
-  Test 4 — Bounded localization contrast:       PASS
-    The supplied tensor-product/local-H packet is far less spread than an
-    unfactored random Hamiltonian of the same dimension. The fixed sample
-    does not prove monotone graph-distance decay.
+  Test 4 — Short-time light-cone contrast:       PASS
+    On the same normalized 64-outcome space, with Hamiltonian norms matched,
+    the local packet has a much smaller short-time Hamming tail. At t = 1.0
+    no fair contrast exists; the old cross-space 29x result was an artifact.
 
   Conclusion:
     The runner supports the bounded operational consequences of the admitted

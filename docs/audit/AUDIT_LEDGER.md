@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 80 |
+| **retained** | 81 |
 | **retained_no_go** | 22 |
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2841 |
-| audit_in_progress | 10 |
+| audit_in_progress | 9 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
@@ -43,8 +43,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 14 |
-| `audited_clean` | 433 |
+| `audit_in_progress` | 13 |
+| `audited_clean` | 434 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 24 |
@@ -117,7 +117,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
-| `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
@@ -185,6 +184,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chiral_split_mass_gravity_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
@@ -1608,6 +1608,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The arithmetic closes after assuming the bridge and supplied numerical inputs, but neither the bridge nor the selection of the mixed-scale comparator is derived from the restricted packet.
 - **rationale:** Issue: the runner assumes the contested five-sixths bridge by evaluating v_cb**(6/5), imports alpha_s(v) from a helper rooted in the hard-coded CANONICAL_PLAQUETTE = 0.5934, and uses mixed-scale PDG values as the close comparator. Why this blocks: it verifies algebra and a scale-dependent numerical coincidence rather than deriving the bridge or scale-selection rule from framework premises. Repair target: independently derive both the bridge and comparator-scale selection, then make the runner construct them without hard-coding the contested inputs. Claim boundary until fixed: the SU(3) identity, one-loop transport exponent, and conditional numerical decompositions are supported, but the claimed physical preference for the mixed/self-scale surface is not.
 - **auditor confidence:** high
+
+### `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central-idempotent split, and 2-dimensional irreducible complex modules; no physical Hilbert-space or lattice-realization bridge was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T122403Z-14830f8e-00001-cl3_complexification_split_n`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The Pauli map identifies Cl(3,0) with M_2(C) as a real algebra; after complexification the central idempotents split it into two M_2(C) summands, whose irreducible complex modules have dimension 2.  _(class `A`)_
+- **chain closes:** True — The explicit Clifford relations and Pauli realization establish K1-K3, while standard finite-dimensional representation theory establishes K4. The stated physical exclusions remain scope boundaries rather than inputs to the proof.
+- **rationale:** The load-bearing content is a genuine class-(A) algebraic closure with no fitted value, physical readout, external comparator, or open dependency. The runner performs exact Pauli-matrix, real-linear-independence, central-idempotent, and commutant checks, and its 38 reported checks agree with the proof. The K4d runner flag is initialized rather than solved computationally, but the accompanying scalar-anticommutation proof independently establishes that subclaim, so this implementation weakness does not break the theorem.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`
 

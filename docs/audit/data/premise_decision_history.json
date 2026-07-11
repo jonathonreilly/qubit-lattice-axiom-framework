@@ -71,9 +71,12 @@
       ],
       "retirement": {
         "date": "2026-07-11",
-        "mechanism": "gauge_side_retained_mass_side_conditional_on_open_occupancy_obligation",
-        "current_status": "The gauge-side disposition remains derived. The mass-side K-real reading reuses ac_orbit_occupancy_statistical_grain_derivation_obligation and is not unconditionally retired until that obligation closes.",
-        "open_derivation_obligation": "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+        "mechanism": "gauge_side_retained_mass_side_conditional_on_two_independent_open_obligations",
+        "current_status": "The gauge-side disposition remains derived. The mass-side K-real reading is conditional on both the charged-lepton occupancy statistical grain and an independent quark-determinant cross-sector readout; closing either one does not close the other.",
+        "open_derivation_obligations": [
+          "ac_orbit_occupancy_statistical_grain_derivation_obligation",
+          "theta_quark_determinant_cross_sector_readout_derivation_obligation"
+        ],
         "owner_approval": "recorded in the PR #3511 thread (2026-07-05); review-loop must verify the approval comment exists before landing",
         "discharge_basis_rows_all_retained_grade": {
           "gauge_side_local": [
@@ -95,7 +98,7 @@
         },
         "gauge_side_theta_value_cross_confirmation": "explicit second seat, clean-room, confirmed 2026-07-05",
         "retired_target_source_row": "strong_cp_theta_zero_note remains an ordinary bounded selected-action-surface source row whose current audit status is independent; the historical Tier-A slot supplies no authority",
-        "scope": "canonical imported Wilson + staggered-Wilson class; the mass-side K-real reading is conditional on ac_orbit_occupancy_statistical_grain_derivation_obligation. Q-structure lanes (emergent-Q nonvacuous weighting, 4D-carrier model of the emergent OS0 surface, defect closure, W_anomaly_covariant_assembly, SU(3) abelianization) remain open physics outside the gauge-side disposition.",
+        "scope": "canonical imported Wilson + staggered-Wilson class; the mass-side K-real reading is conditional on both ac_orbit_occupancy_statistical_grain_derivation_obligation and theta_quark_determinant_cross_sector_readout_derivation_obligation. The running kappa/counting and G3/angle-readout programs can self-liquidate the AC obligations only; they do not supply or close the independent theta cross-sector bridge. Q-structure lanes (emergent-Q nonvacuous weighting, 4D-carrier model of the emergent OS0 surface, defect closure, W_anomaly_covariant_assembly, SU(3) abelianization) remain open physics outside the gauge-side disposition.",
         "decision_artifact": "PR #4995 artifact path docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md (2026-07-05 updated verdict; decision artifact not shipped as a live source note in this registry PR)"
       }
     },

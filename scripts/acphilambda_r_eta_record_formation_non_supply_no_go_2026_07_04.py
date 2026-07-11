@@ -123,7 +123,7 @@ def main() -> int:
     )
     check("registry prose names R-eta obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
     check("note denies AC retirement", "does not retire" in note_flat and "`AC_phi_lambda(ii)` / R-eta is not derived" in note)
-    check("note denies registry/axiom/primitive edits", "does not edit any Tier-A registry" in note_flat and "No registry, axiom, primitive" in note)
+    check("note denies registry/axiom/primitive edits", "does not create or edit any premise registry" in note_flat and "No registry, axiom, primitive" in note)
     check("note has current-main posture line", "Current-main posture (2026-07-11)" in note)
     check("note records open-obligation posture", "open derivation obligation\nwith zero premise weight" in note)
     check("note says governance is provenance only", "historical governance decision is provenance\nonly" in note)
@@ -209,7 +209,7 @@ def main() -> int:
         "R-eta is derived",
         "R-eta is retired",
         "AC_phi_lambda is retired",
-        "Tier-A registry is edited",
+        "premise registry is edited",
         "Record derives R-eta",
         "all future occurrence-lane routes are closed",
         "audited_clean",

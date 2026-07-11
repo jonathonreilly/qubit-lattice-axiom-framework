@@ -33,8 +33,9 @@ Beyond the axioms, the complete foundation surface is deliberately small:
   interface (a slot for one law-admissible realized state, never a state
   selection). Registered in
   [`docs/audit/data/axiom_premise_nodes.json`](docs/audit/data/axiom_premise_nodes.json).
-- **Open derivation obligations (2):** the AC occupancy statistical grain and
-  R-eta h-class/h-unit readout. They carry zero premise weight and are tracked
+- **Open derivation obligations (3):** the AC occupancy statistical grain,
+  R-eta h-class/h-unit readout, and theta's independent quark-determinant
+  cross-sector readout. They carry zero premise weight and are tracked
   in [`docs/audit/data/derivation_obligations.json`](docs/audit/data/derivation_obligations.json).
   Superseded admission-era decisions are non-authoritative provenance in
   [`docs/audit/data/premise_decision_history.json`](docs/audit/data/premise_decision_history.json).

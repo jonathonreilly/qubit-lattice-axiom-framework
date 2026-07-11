@@ -10,8 +10,8 @@ axiom, audit verdict, or publication-status surface, and does not claim that a
 future constraint-level or dynamical defect-suppression route is impossible.
 **Audit boundary:** independent audit lane only.
 **Current-main posture (2026-07-11):** theta's gauge-side retained disposition
-remains; its mass-side K-real leg is conditional on the open AC occupancy
-obligation. The AC governance-only channel was withdrawn
+remains; its mass-side K-real leg is conditional on the open AC occupancy and
+quark-determinant cross-sector readout obligations. The AC governance-only channel was withdrawn
 and its two atoms are open obligations; that correction does not affect this
 historical G1 defect-closure result.
 **Primary runner:**

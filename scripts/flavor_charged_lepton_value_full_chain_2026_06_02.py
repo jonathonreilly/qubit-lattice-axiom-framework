@@ -120,13 +120,17 @@ def main():
     # Open selector: derivation obligations never supply a value.
     born_blocks = (1 / 3, 2 / 3)   # rho=I/3 dimension weighting -> r=1
     repo = Path(__file__).resolve().parents[1]
-    tier_a = json.loads((repo / "docs/audit/data/premise_decision_history.json").read_text())
+    history = json.loads((repo / "docs/audit/data/premise_decision_history.json").read_text())
     obligations = json.loads((repo / "docs/audit/data/derivation_obligations.json").read_text())
-    obligation_ids = set(obligations["canonical_ids"])
+    ac_obligation_ids = {
+        obligation_id
+        for obligation_id in obligations["canonical_ids"]
+        if obligation_id.startswith("ac_")
+    }
     selector_open = (
-        tier_a["genuine_admitted_input_count"] == 0
-        and not tier_a["canonical_ids"]
-        and obligation_ids
+        history["genuine_admitted_input_count"] == 0
+        and not history["canonical_ids"]
+        and ac_obligation_ids
         == {
             "ac_orbit_occupancy_statistical_grain_derivation_obligation",
             "ac_reta_hclass_hunit_readout_derivation_obligation",

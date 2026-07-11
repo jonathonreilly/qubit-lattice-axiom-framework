@@ -10,8 +10,9 @@ direct_effective_status_change_allowed_from_this_note: false
 **Claim type:** bounded theorem / exact support bridge.
 **Role:** positive bridge candidate for the source-unit gap exposed by
 [`SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md`](SOURCE_MEASURE_LOG_SELECTION_BOUNDARY_THEOREM_NOTE_2026-05-30.md).
-**Status:** bounded support on the Tier-A Planck/action-unit surface; no
-unbounded Y_T closure by this note alone.
+**Status:** bounded conditional support on the approved scale-reference
+primitive plus an open action-unit/source-measure condition; no unbounded Y_T
+closure by this note alone.
 **Primary runner:** `scripts/frontier_source_measure_planck_action_rn_source_unit_bridge.py`
 **Generated output:** `outputs/source_measure_planck_action_rn_source_unit_bridge_2026-05-30.json`
 
@@ -95,15 +96,14 @@ dimensionless action coefficient in units of kappa_Pl
 ```
 
 Equivalently, the RN score is not an extra convention once a source-coupled
-local action in Planck units is accepted.  It is simply
+local action in Planck units is assumed as an explicit theorem condition. It is simply
 
 ```text
 score = - d(S / kappa_Pl) / dh - E[-d(S / kappa_Pl) / dh].
 ```
 
-The result is compatible with the Tier-A scale convention
-`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`:
-the physical lattice has the Planck-mass anchor `a^{-1}=M_Pl`.  The
+The result is compatible with the approved scale-reference primitive: the
+physical lattice has the units-only anchor `a^{-1}`. The
 source-coupled action exponent `S/kappa_Pl` is the additional bounded-surface
 input used here.  The theorem does not derive the SI decimal Planck scale and
 does not derive an action-unit convention from the mass anchor alone.
@@ -152,7 +152,7 @@ normalized democratic signed-linear top source direction?
 ```
 
 If yes, this bridge and the existing Y_T source-support packet would close the
-scalar `lambda` blocker on the Tier-A Planck/action surface.  If no, the
+scalar `lambda` blocker under the stated action/source condition. If no, the
 strict same-source top/W response route remains necessary.
 
 ## Claim Boundary

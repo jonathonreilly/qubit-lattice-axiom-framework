@@ -27,9 +27,9 @@ DOCS = ROOT / "docs"
 OUTPUT = ROOT / "outputs" / "yt_tier_a_source_action_top_premise_closure_2026-05-29.json"
 
 NOTE = DOCS / "YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md"
-TIER_A_REGISTRY = DOCS / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
 AXIOM_PREMISE_REGISTRY = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A_NOTE = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+HISTORICAL_INDEX = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
 P1P2_SYNTHESIS = DOCS / "OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md"
 SOURCE_ACTION_CANDIDATE = DOCS / "OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md"
 LSP_SOURCE = DOCS / "YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md"
@@ -84,9 +84,9 @@ def part1_anchor_status() -> dict[str, Any]:
     print("\nPart 1: anchors and status boundary")
     required = (
         NOTE,
-        TIER_A_REGISTRY,
+        DECISION_HISTORY,
         AXIOM_PREMISE_REGISTRY,
-        TIER_A_NOTE,
+        HISTORICAL_INDEX,
         P1P2_SYNTHESIS,
         SOURCE_ACTION_CANDIDATE,
         LSP_SOURCE,
@@ -115,7 +115,7 @@ def part1_anchor_status() -> dict[str, Any]:
     ):
         check(f"note contains section/phrase: {phrase}", phrase in note)
 
-    registry = json.loads(read(TIER_A_REGISTRY))
+    registry = json.loads(read(DECISION_HISTORY))
     axiom_registry = json.loads(read(AXIOM_PREMISE_REGISTRY))
     derivation_targets = registry.get("derivation_targets", {})
     conventions = registry.get("conventions", {})
@@ -160,7 +160,7 @@ def part1_anchor_status() -> dict[str, Any]:
         None if rows["source_scale_boundary"] is None else rows["source_scale_boundary"].get("effective_status"),
     )
     return {
-        "tier_a_p1": derivation_targets.get("observable_principle_from_axiom_note", {}),
+        "historical_p1_record": derivation_targets.get("observable_principle_from_axiom_note", {}),
         "scale_reference_primitive": axiom_registry.get("nodes", {}).get("scale_reference_primitive", {}),
         "ledger_statuses": {k: None if v is None else v.get("effective_status") for k, v in rows.items()},
     }
@@ -220,7 +220,7 @@ def part3_top_operator() -> dict[str, str]:
     return {
         "unit_top_operator": "sum_i O_i/sqrt(6)",
         "lambda_family": "lambda/sqrt(6)",
-        "tier_a_selected_branch": "lambda=1",
+        "conditional_unit_branch": "lambda=1",
     }
 
 
@@ -295,7 +295,7 @@ def main() -> int:
         "actual_current_surface_status": "bounded-support",
         "trace_class": "direct_blocker_closure",
         "reachability_to_target": "partially_closes",
-        "closed_on_tier_a_surface": {
+        "conditional_calculation_result": {
             "lambda": "1",
             "y_33": "1/sqrt(6)",
         },

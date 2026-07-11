@@ -74,7 +74,7 @@ saving compute on ill-posed questions.
 
 ### 7. Claim-Type Fit
 - If it succeeds, what is the honest intended audit class:
-  `positive_theorem`, `bounded_theorem` (name the admissions), `no_go`, or
+  `positive_theorem`, `bounded_theorem` (name the open conditions), `no_go`, or
   `open_gate` sharpening?
 - If the load-bearing content is a labeling/naming convention, the right
   target is a separate `meta` convention note, not a theorem.

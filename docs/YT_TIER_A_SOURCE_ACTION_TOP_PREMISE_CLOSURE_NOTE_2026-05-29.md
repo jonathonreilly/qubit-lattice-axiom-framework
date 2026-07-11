@@ -19,7 +19,8 @@ primitives only.
 unbounded retained Y_T closure by this note alone.
 **Source-measure input:** physical scalar source coordinates are canonical
 normalized trace Gibbs/RN/Fisher coordinates, with `<1> = 1`.  In this
-framework, this input is tracked as the Tier-A P1/P-cal premise.
+framework, this input is an explicit open P1/P-cal condition with zero premise
+weight.
 **Primary runner:** `scripts/frontier_yt_tier_a_source_action_top_premise_closure.py`
 **Generated output:** `outputs/yt_tier_a_source_action_top_premise_closure_2026-05-29.json`
 
@@ -91,7 +92,7 @@ Load-bearing inputs:
   and `docs/audit/data/premise_decision_history.json`: historically P1 was treated as an admitted
   derivation target, chain-satisfying only at the bounded tier.
 - [`OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md`](OBSERVABLE_PRINCIPLE_P1P2_TWO_STAGE_SYNTHESIS_NARROW_THEOREM_NOTE_2026-05-28.md):
-  reduces the observable-principle admission surface to the P-cal premise.
+  reduces the observable-principle conditional surface to the P-cal condition.
 - [`OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md`](OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md):
   records the local source/action convention whose finite RN identity is used
   here.
@@ -101,13 +102,14 @@ Load-bearing inputs:
 - [`YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md`](YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md):
   fixes the source-side covariance row in the chosen RN source coordinate.
 - [`YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md`](YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md):
-  proves `lambda = 1` once the primitive source unit is accepted.
+  proves `lambda = 1` once the primitive source unit is assumed as an explicit
+  condition.
 - [`YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md`](YT_OPERATIONAL_SOURCE_ACTION_BRIDGE_THEOREM_ATTEMPT_NOTE_2026-05-25.md):
   proves the finite RN/log-density source-action identity under operational
   source calibration.
 - [`YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md`](YT_PRIMITIVE_UNIT_SOURCE_ACTION_PHYSICAL_PREMISE_NO_GO_NOTE_2026-05-25.md):
   records the exact current-surface `lambda` counterfamily when the primitive
-  source/action premise is not accepted.
+  source/action condition is not derived.
 
 Context-only input:
 
@@ -221,10 +223,10 @@ target_blocker_text: "physical top source = primitive unit source/action tangent
 source_of_blocker_text: "YT primitive-unit source/action no-go and source-scale boundary notes"
 reachability_to_target: partially_closes
 artifact_role: theorem
-tier_a_dependencies:
+open_conditions:
   - observable_principle_from_axiom_note / P1
-  - P-cal source-measure premise from the 2026-05-28 two-stage synthesis
-closed_on_tier_a_surface:
+  - P-cal source-measure condition from the 2026-05-28 two-stage synthesis
+conditional_calculation_result:
   - lambda = 1
   - y_33 = 1/sqrt(6)
 not_closed_unbounded:

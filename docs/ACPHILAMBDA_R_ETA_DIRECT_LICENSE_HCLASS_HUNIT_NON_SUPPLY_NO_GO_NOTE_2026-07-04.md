@@ -44,7 +44,8 @@ and its additive cycle-holonomy consequence.
 
 This is a no-go for the direct inference from Record additivity to the R-eta
 h-unit. It is not a claim against a future same-observable holonomy theorem,
-an owner-approved calibration convention, or a stronger physical readout law.
+an explicit coordinate convention after a same-observable theorem, or a
+stronger physical readout law.
 
 ## Countermodel family
 
@@ -89,13 +90,12 @@ supplied.
 
 The result does not derive or refute the physical R-eta identification. It
 does not set `h`, `delta`, `r`, or a charged-lepton mass, and it does not force
-`r=1/2`. It changes no axiom, approved primitive, owner-governed premise,
-registry, or audit verdict.
+`r=1/2`. It changes no axiom, approved primitive, premise registry, or audit
+verdict.
 
-The live governance target is recorded in
-`docs/audit/data/owner_governed_premise_nodes.json` as AC(ii), the R-eta
-h-class/h-unit readout license. That registry identifies the target; it is not
-used as a proof premise here.
+The current target is the zero-weight `open_gate` in
+[`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md).
+Historical decision text identifies provenance only and is not used as proof.
 
 ## No-Go Discipline Gate
 
@@ -133,7 +133,7 @@ standard`, `the framework provides`, `bridge context`, `background`,
 | Hit | Classification |
 |---|---|
 | granted h-class and `h` | explicit hypothesis that strengthens the countermodel |
-| `registered` / `governance target` in the AC(ii) boundary discussion | non-load-bearing identification of the theorem target |
+| historical-target language in the AC(ii) boundary discussion | non-load-bearing provenance for the current open obligation |
 | `registered` in the mass-coordinate path | non-load-bearing description of a partial route |
 | scan terms appearing in this checklist sentence | audit metadata, not proof steps |
 
@@ -141,15 +141,14 @@ No other scan hit is used in the proof.
 
 ### N4 — residual matching
 
-No prior no-go row is cited as evidence. The target itself is matched against
-`docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md:77-85`, whose
-adopted AC(ii) text says that the physical readout is the fixed-locus density
-class `h`, identity-read in h-units as the eta angle, with no intervening
-normalization factor.
+No prior no-go row is cited as evidence. The target is matched directly against
+`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`, which requires the
+physical readout to be the fixed-locus density class `h`, identity-read in
+h-units as the eta angle, with no intervening normalization factor.
 
 | Target or prior negative witness | Residual there | Current residual | Match/disposition |
 |---|---|---|---|
-| adopted AC(ii) text at the locator above | h-class plus identity h-unit for the eta angle | h-class granted; identity h-unit `|delta|=h` tested | exact match to the h-unit face |
+| current R-eta open obligation | h-class plus identity h-unit for the eta angle | h-class granted; identity h-unit `|delta|=h` tested | exact match to the h-unit face |
 | prior negative witness: none | n/a | the same h-unit face, with `Phi=3|delta|` kept as a consequence | direct countermodel; no witness citation to drop |
 
 ### N5 — rhetoric and resolution audit
@@ -165,34 +164,31 @@ claim against a future same-observable theorem.
 
 | Candidate path | Current status | What it would address |
 |---|---|---|
-| existing Class B AC(ii) owner premise | approved as a governance premise, not a theorem or convention | currently supplies h-class and h-unit inside its recorded boundary; it is the target to retire, not evidence of derivation |
+| current zero-weight R-eta obligation | open derivation target, not a premise | records both walls without supplying either one |
 | convention-only coordinate ratification | not adopted as a separate convention | could dispose of h-unit only after the physical fixed-locus scalar and eta angle are shown to be the same observable |
 | same-observable determinant-line/holonomy theorem | no retained theorem on the current ledger surface | h-class and h-unit by physical derivation |
 | `ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md` | unaudited source context | registered value face; does not identify the physical fixed-locus observable |
 
-These paths remain compatible with the result. The existing owner premise is
-present precisely as governance content; the derivational and convention-only
-paths are not supplied by the four axioms or approved primitive registry. This
-note does not classify them as impossible and does not propose a new primitive.
+These paths remain compatible with the result. The derivational and
+convention-only paths are not supplied by the four axioms or approved
+primitives. This note does not classify them as impossible and does not propose
+a new primitive.
 
 ### N7 — steelman
 
-The strongest objection is that the current Class B AC(ii) premise already
-licenses `beta=1`, and that radians then make the identity coefficient a
-coordinate statement rather than new physics. The first point is correct on
-the owner-governed lane: the premise supplies the result, but does not derive
-it from the axioms. The coordinate objection succeeds if the fixed-locus scalar
-and the physical eta angle are first proved to be the same observable in the
-same coordinate. The current axioms name neither object and contain no such
-identity. Thus the objection identifies the governance and same-observable
-paths while leaving the present derivational non-entailment intact.
+The strongest objection is that radians make the identity coefficient a
+coordinate statement rather than new physics. That objection succeeds if the
+fixed-locus scalar and the physical eta angle are first proved to be the same
+observable in the same coordinate. The current axioms name neither object and
+contain no such identity. Thus the objection identifies a same-observable path
+while leaving the present derivational non-entailment intact.
 
 ### N8 — cross-cycle echo
 
 | Similar mechanism | Was its wall retired? | Applicability here |
 |---|---|---|
-| AC(ii) Tier-A-to-Class-B adoption | removed from live Tier-A by owner governance; the two owner atoms remain premise content | records the present license but does not retire it by derivation |
-| theta retirement | the registry records a retained-derivation retirement mechanism at adoption; no theta theorem is used here | the analogous mechanism here is a retained same-observable/readout theorem that makes AC(ii) redundant |
+| historical AC(ii) governance adoption and withdrawal | now provenance only; no premise content remains | the current target is the zero-weight R-eta obligation |
+| theta mass-side split | occupancy and quark-determinant readout are independent obligations; no theta theorem is used here | the analogous mechanism here is a retained same-observable/readout theorem that closes exactly this obligation |
 | scale-reference primitive | calibration made explicit by owner approval | an analogous h-unit primitive would relocate the premise, not derive `beta=1` |
 | registered mass-coordinate reconstruction | reconstructs phase after state data are supplied; current source row is unaudited | does not establish the h-unit identity for the physical fixed-locus observable |
 | identity-unit/radian-convention source routes | current relevant source rows are unaudited, so they are not used as authority here | they motivate convention tests but do not refute this direct countermodel |

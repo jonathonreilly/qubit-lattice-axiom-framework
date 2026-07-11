@@ -22,8 +22,10 @@ or retire any physics dependency. The current exact AC surface is:
 Both carry zero premise weight. The general staggered-Dirac gate keeps its own
 ordinary ledger status and is no longer overloaded as a supplied premise id.
 
-Theta retains its independent retained-derivation disposition; removing the
-governance-only channel does not reopen theta.
+Theta's gauge-side disposition is unchanged. Its mass-side composition remains
+conditional on both the occupancy-grain obligation and the independent
+quark-determinant cross-sector readout obligation; removing the governance-only
+channel exposes rather than supplies that second bridge.
 
 ## Downstream boundary
 

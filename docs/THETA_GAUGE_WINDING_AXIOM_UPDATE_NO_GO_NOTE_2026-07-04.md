@@ -10,8 +10,8 @@ set `theta_bar = 0`, and does not create any admission registry, axiom, primitiv
 audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
 **Current-main posture (2026-07-11):** theta's gauge-side retained disposition
-remains; its mass-side K-real leg is conditional on the open AC occupancy
-obligation. The AC governance-only channel was withdrawn;
+remains; its mass-side K-real leg is conditional on the open AC occupancy and
+quark-determinant cross-sector readout obligations. The AC governance-only channel was withdrawn;
 that correction does not affect this historical gauge-side result.
 **Primary runner:**
 [`scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py`](../scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py)

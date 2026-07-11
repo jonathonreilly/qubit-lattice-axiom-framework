@@ -4,12 +4,12 @@
 **Type:** no_go
 **Claim type:** no_go
 **Scope boundary:** bounded route no-go over the current same-surface
-angle-native candidate classes for AC_phi_lambda sub-admission (ii) R-eta:
+angle-native candidate classes for the AC R-eta open obligation:
 periodic/torsion `q*pi` phase sources, homogeneous self-consistency/readout
 maps, canonical `U(1)` packagings of the `C3` fixed-locus density,
 real/K-real holonomy loci, and unlicensed `Phi = S_sum` maps. This does not
-derive, refute, re-grade, or retire R-eta, and it does not edit any Tier-A
-registry, axiom, primitive, or publication-status surface.
+derive, refute, re-grade, or retire R-eta, and it does not create or edit any
+premise registry, axiom, primitive, or publication-status surface.
 **Audit boundary:** independent audit lane only.
 **Primary runner:**
 [`scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py`](../scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py)
@@ -69,7 +69,7 @@ boundary, no route derives the off-locus holonomy value
 `Phi_target = 2/3` without supplying an inhomogeneous fixed-locus-to-angle
 license.
 
-Equivalently, the surviving R-eta atom has the narrow license form:
+Equivalently, the surviving R-eta obligation has the narrow license form:
 
 ```text
 licensed bridge:

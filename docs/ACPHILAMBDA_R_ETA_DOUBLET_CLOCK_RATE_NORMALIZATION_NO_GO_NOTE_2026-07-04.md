@@ -10,7 +10,7 @@ doublet phase clock
 derive the normalization that turns this clock, or a sparse event-rate ratio,
 into the physical charged-lepton readout
 `Phi = S_sum = 2/3`. This note does not derive, refute, re-grade, retire, or
-remove R-eta or AC_phi_lambda; it does not edit any Tier-A registry, axiom,
+remove R-eta or AC_phi_lambda; it does not create or edit any premise registry, axiom,
 primitive, audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
 **Primary runner:**
@@ -65,10 +65,11 @@ It does not.
   supplies the fixed-locus arithmetic `L = L3(1,2) = 2/9`, hence
   `S_sum = 3L = 2/3`, while excluding the physical readout bridge. This is a
   target/comparator arithmetic surface, not a derivation of R-eta.
-- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
-  and [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json)
-  name the surviving R-eta atom as the density-read-as-angle / holonomy-readout
-  identification.
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` and
+  `docs/audit/data/premise_decision_history.json` preserve the former R-eta
+  wording as non-authoritative provenance. The current density-read-as-angle /
+  holonomy-readout target is the zero-weight `open_gate` in
+  [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md).
 
 ## Theorem
 
@@ -178,8 +179,8 @@ measurement semantics, new primitive, or owner decision enters the proof.
    inhomogeneity/source strength without target fitting.
 4. **Supplied-context closure theorem.** Derive physical carrier realization
    and scalar weighting/readout context.
-5. **Theta residuals.** Continue the independent Tier-A theta gauge/mass
-   residuals if AC R-eta stays blocked.
+5. **Theta residuals.** Continue the independent theta gauge and mass-side
+   derivation programs if AC R-eta stays blocked.
 6. **Approved-primitive proposal.** Register a narrow readout/event primitive explicitly
    if derivation is intentionally bypassed; this would be governance, not a
    derivation.
@@ -198,9 +199,9 @@ selector, event law, Born/interface rule, physical carrier theorem,
 activation-rate premise, readout primitive, source/action bridge, or owner
 decision.
 
-**N4 residual matching.** The residual matches the Tier-A registry: the fixed
-number `2/9` is retained fixed-locus arithmetic conditional on R-eta; the
-surviving atom is the physical density-read-as-angle / holonomy-readout
+**N4 residual matching.** The residual matches the zero-weight R-eta open
+obligation: the fixed number `2/9` is retained fixed-locus arithmetic
+conditional on R-eta; the surviving obligation is the physical density-read-as-angle / holonomy-readout
 identification.
 
 **N5 proven surface.** Proven here is a route-family no-go for using the
@@ -216,7 +217,7 @@ support. Correct. It fixes the type of the residual. It does not fix the value
 or the physical readout law.
 
 **N8 cross-cycle echo.** This is the same pattern as AC(i): a correctly typed
-slot is not a selector. Tier-A retirement requires the selector/readout law,
+slot is not a selector. Closing the open obligation requires the selector/readout law,
 not another coordinate in which the existing value can be written.
 
 ## Verification

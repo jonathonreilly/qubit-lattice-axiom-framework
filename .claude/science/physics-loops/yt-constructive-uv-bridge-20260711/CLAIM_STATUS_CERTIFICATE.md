@@ -35,3 +35,12 @@ Iteration 3 passed code/runner, physics-claim, import/support,
 Nature-retention, No-Go Discipline N1-N8, labeling-convention, and
 repo-governance review. This is source review only. Independent audit remains
 required before an effective status is assigned.
+
+## Audit compatibility
+
+Disposable-worktree validation ran the full 16-stage audit pipeline and
+`audit_lint.py --strict` with zero errors. The sibling seeds as `no_go`,
+`unaudited`, leaf criticality, zero inbound edges, and one dependency on the
+accepted `minimal_axioms` node. The original row remains `bounded_theorem`
+with its original runner/dependencies. No generated audit authority surface is
+part of this branch.

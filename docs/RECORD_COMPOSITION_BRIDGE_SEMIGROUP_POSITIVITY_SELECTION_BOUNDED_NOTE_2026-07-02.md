@@ -10,6 +10,10 @@ runner: scripts/frontier_record_composition_bridge_positivity_2026_07_02.py
 
 # Record-Composition Bridge: C-add/POS/LOC Separate Named Semigroup Candidates; Nearest-Neighbor Heat Is the Finite-N Witness (Bounded Note)
 
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
+
 **Date:** 2026-07-02
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem

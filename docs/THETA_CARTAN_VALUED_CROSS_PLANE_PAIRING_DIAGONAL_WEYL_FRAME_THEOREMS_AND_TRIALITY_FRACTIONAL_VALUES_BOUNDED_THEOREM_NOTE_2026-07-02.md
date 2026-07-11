@@ -1,6 +1,9 @@
 # The Cartan-Valued Cross-Plane Pairing: Diagonal-Weyl-Invariant Joint-Orbit Data, Provably Underdetermined by Per-Plane Weyl Orbits; Values in (1/3)Z with the Fractional Part Exactly the Mod-3 Center Pairing and an Integer Odd Witness on the Center-Trivial Subsector — the Frame Residual Sharpens to Relative-Frame Correlation Across the 4D Gluing (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Claim type:** bounded_theorem (exact finite constructions plus scoped frame
 obstructions; not a terminal no-go, not a discharge of the theta admission).
 **Audit-status authority:** independent audit lane only. This note does not set an

@@ -323,10 +323,10 @@ locally and report that limitation.
   Inventory every measured, fitted, literature, PDG, cosmological,
   normalization, boundary-condition, or convention input. Classify each as
   `zero-input structural`, `framework-derived`, `one computed lattice input`,
-  `admitted normalization/boundary condition`, `standard/literature
+  `explicit normalization/boundary condition`, `standard/literature
   correction`, `observational comparator`, `support-only`, `insensitive
   nuisance`, or `unjustified import`. For a Nature-grade retention claim, every
-  import must be derived, admitted with a narrow role, quantitatively
+  import must be derived, disclosed as a non-satisfying condition with a narrow role, quantitatively
   insensitive, or the claim must be demoted.
 
 - `NatureRetentionReviewer`
@@ -364,8 +364,8 @@ locally and report that limitation.
   candidate whose load-bearing claim is a labeling/naming/convention
   statement (parallel to the u/c/t mass-ordering convention or the
   e/μ/τ charged-lepton naming) rather than an algebraic claim with
-  explicit named admissions. A labeling convention has no propositional
-  content to admit, so `retained_bounded` grade does not apply — the
+  explicit named conditions. A labeling convention has no propositional
+  premise content, so `retained_bounded` grade does not apply — the
   grade is for algebraic claims with explicit named premises, not for
   stipulations about names.
 
@@ -379,7 +379,7 @@ locally and report that limitation.
        ("If labeling, the right outcome is a `meta` convention note").
 
   Output `PASS` if the candidate is genuinely algebraic with named
-  admissions, `SPLIT-REQUIRED` if labeling content is bundled with
+  conditions, `SPLIT-REQUIRED` if labeling content is bundled with
   algebraic content (ship the algebraic theorem narrow + the convention
   as a separate `meta` note), or `DEMOTE-TO-META` if the candidate is
   purely convention with no derivation. The reviewer must not approve a
@@ -592,7 +592,7 @@ Otherwise apply the narrowest honest fix:
    false PASS checks, and code/prose mismatches.
 2. Demote overclaimed status when the artifact supports only support/bounded
    language.
-3. Mark imported values explicitly; distinguish derived, admitted, fitted,
+3. Mark imported values explicitly; distinguish derived, conditional, fitted,
    measured, literature, boundary-condition, and insensitive nuisance inputs.
 4. Add or repair paired runner/note references only when the artifact exists.
 5. Make audit-system hygiene fixes only when they do not change the science:
@@ -820,13 +820,13 @@ notes, apply the audit-hash churn guard above before landing any broad cleanup.
 
 ```bash
 # Source notes whose claim_type is no_go, or whose Status / Type line
-# names walls / admissions / "conditional on" content
+# names walls / open conditions / "conditional on" content
 git diff --name-only origin/main...HEAD -- 'docs/*NO_GO*.md' 'docs/*BOUNDED*.md' \
                                            'docs/*STRETCH_ATTEMPT*.md' \
                                            'docs/*OBSTRUCTION*.md'
 # Audit-data rows whose verdict_rationale or claim_type record walls
 git diff origin/main...HEAD -- docs/audit/data/audit_ledger.json \
-  | grep -E '"claim_type": "no_go"|"verdict_rationale".*wall|"verdict_rationale".*admission'
+  | grep -E '"claim_type": "no_go"|"verdict_rationale".*wall|"verdict_rationale".*condition'
 # Any source note touched on this branch whose body contains negative-claim shape
 git diff origin/main...HEAD -- 'docs/*.md' \
   | grep -E 'structurally undecidable|no retained primitive|requires new axiom|cannot be derived from A_min|conditional on .* walls?'

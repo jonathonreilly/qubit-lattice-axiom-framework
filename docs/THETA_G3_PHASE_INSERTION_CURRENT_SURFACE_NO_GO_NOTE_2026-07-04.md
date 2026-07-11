@@ -38,9 +38,9 @@ physical-sector registration needed to close G3.
 - [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
   withholds source/action, weighting, context-selection, and arbitrary
   physical-observable identification.
-- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
-  leaves theta as a Tier-A derivation target with gauge-side winding and
-  mass-side determinant residual atoms.
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` preserves historical
+  theta target wording only; the current gauge and mass-side work remains open
+  with zero premise weight.
 - [`THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md`](THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md)
   proves the closed-branch carrier reduction: if an `F cup F` insertion is
   given, it reduces to the cross-plane intersection charge.

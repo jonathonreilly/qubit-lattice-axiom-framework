@@ -343,7 +343,7 @@ Hard wording bans in branch-local physics-loop artifacts:
 - `would become retained`
 - `promote to retained`
 - `retained on the actual surface` when a required premise is conditional,
-  hypothetical, admitted, fitted, or human-judgment-only.
+  hypothetical, conditional, fitted, or human-judgment-only.
 
 Use `Type:` / `Claim type:` metadata for the intended audit classification.
 Source-note status prose must never be presented as audit-ratified retained
@@ -364,7 +364,7 @@ after all of these are true:
 
 1. `CLAIM_STATUS_CERTIFICATE.md` names the intended `target_claim_type`.
 2. No open imports remain for the claimed target.
-3. No observed target values, fitted selectors, admitted unit conventions, or
+3. No observed target values, fitted selectors, conditional unit conventions, or
    literature values are load-bearing proof inputs.
 4. Every dependency is retained, a retained corollary, or explicitly allowed
    exact support on the current authority surface.
@@ -521,8 +521,8 @@ For publication-facing or quantitative work, also inspect
    | # | Check | Failure condition |
    |---|---|---|
    | N1 | Alternative route enumeration: name ≥5 distinct attack routes against the no-go, each with what it would attempt, why it fails (with retained-authority citation), and `ATTEMPTED` vs `RULED OUT BY PRIOR` marker. | Fewer than 5 distinct routes named — the no-go is premature. |
-   | N2 | Wall-independence audit: pairwise table for all named walls/admissions; collapse any wall that follows from another. | Source-note presents walls as independent when one follows from another. |
-   | N3 | Hidden-wall scan: grep the proof for "we assume", "by construction", "bridge context", "naturally", "standard QFT", "registered", "canonical"; classify each hit as cited authority, hidden admission, or non-load-bearing context. | Any hidden admission found that should have been promoted to an explicit wall. |
+   | N2 | Wall-independence audit: pairwise table for all named walls/open conditions; collapse any wall that follows from another. | Source-note presents walls as independent when one follows from another. |
+   | N3 | Hidden-wall scan: grep the proof for "we assume", "by construction", "bridge context", "naturally", "standard QFT", "registered", "canonical"; classify each hit as cited authority, hidden condition, or non-load-bearing context. | Any hidden condition found that should have been promoted to an explicit wall. |
    | N4 | Residual matching: for every prior no-go/wall/campaign cited as a witness, verify the residual matches exactly. Drop non-matching citations. | Witness count after dropping non-matches falls below what the claim needs. |
    | N5 | Rhetoric audit: phrases of the form "X is not a Y-fact" must be checked at per-element / per-site / per-mode / per-block / lattice-wide resolutions; narrow the phrase to the resolutions actually tested. | Over-broad phrase not verified at every named resolution. |
    | N6 | Partial-closure path scan: per `feedback_no_new_axioms.md`, a labeling-convention ratification or definition refactor is NOT a new axiom — it is the import-retirement path. Scan for existing reframings, meta-notes, controlled-vocabulary entries, or in-flight PRs that close the wall via convention. | Partial-closure path found but the no-go calls it "new axiom required." |
@@ -737,7 +737,7 @@ If the campaign has runtime and queue-budget but the evaluator says
 Use literature only when the user passes `--literature` or the route requires a
 known theorem/experimental comparator. Prefer primary sources and stable math
 references. Any literature value, theorem, or convention must be entered in the
-assumption/import ledger with its role: bridge, comparator, admitted convention,
+assumption/import ledger with its role: bridge, comparator, explicit convention,
 or non-derivation context. See
 [`references/literature-bridge-protocol.md`](references/literature-bridge-protocol.md).
 

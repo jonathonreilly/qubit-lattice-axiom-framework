@@ -1,6 +1,9 @@
 # Unordered-Mass-Multiset Registrability Bridge — Conditional Narrow Bounded Theorem
 
 **Date:** 2026-06-11
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
 set or predict downstream status and does not edit the Tier-A registry,

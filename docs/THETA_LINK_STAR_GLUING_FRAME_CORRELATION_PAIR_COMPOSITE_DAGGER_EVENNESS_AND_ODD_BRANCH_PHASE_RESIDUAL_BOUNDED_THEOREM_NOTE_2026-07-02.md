@@ -1,6 +1,9 @@
 # Link-Star Gluing Frame Theorems: the Relative Frame Rides the Composite Holonomy (Pairs and Chains), Stars Are Exactly Diagonal-Conjugation Objects, and Real-Weight Gluing Is Orientation-Reversal-Even — so the SU(2) Star Reduces to Pairwise Classes and the Orientation-Odd Branch Requires a Phase Insertion (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Claim type:** bounded_theorem (exact finite gluing constructions plus a
 scoped evenness obstruction; not a terminal no-go, not a discharge of the
 theta admission).

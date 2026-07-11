@@ -99,7 +99,7 @@ integer sector functional `Q`, a fixed log branch/section choice, or a
 nonvacuous weighting law can only enter through additional gauge-action and
 readout structure.
 
-The retained-bounded cross-plane result also has the correct narrow role. In a
+The source-side cross-plane calculation also has the correct narrow role. In a
 supplied additive per-plaquette class
 
 ```text
@@ -117,7 +117,7 @@ all gauge-side routes.
 |---|---|
 | The updated Record/admissibility text could be over-read as supplying the topological-sector account. | It is certified as non-supplying gauge action, Q-sector, branch/section, and weighting structure. |
 | The finite-lattice no-winding observation could be mistaken for theta retirement. | It is classified as a route-local substrate fact that still leaves the emergent-Q/action bridge. |
-| The retained-bounded per-plaquette cross-plane absence could be read as full strong-CP closure. | It remains conditional on a supplied additive per-plaquette action class. |
+| The per-plaquette cross-plane absence calculation could be read as full strong-CP closure. | It remains conditional on an explicit additive per-plaquette action class and its audit status is not promoted here. |
 
 ## What Does Not Move
 
@@ -146,12 +146,18 @@ all gauge-side routes.
 
 ## No-Go Discipline Gate
 
-**N1 alternative route enumeration.** Updated Qubit, Admissibility, Record,
-realized-state, and kinetic-isotropy surfaces are checked and do not supply the
-gauge-side winding bridge. The finite per-site connected-gauge observation,
-per-plaquette cross-plane absence, action-class theorem, emergent-Q bridge,
-branch/section readout, joint gauge/mass, and approved-primitive proposals remain
-separate.
+**N1 alternative route enumeration.** Each route is tested against the current
+foundation and the runner's direct finite checks:
+
+| Route | Marker | Evidence and disposition |
+|---|---|---|
+| Qubit/Admissibility/Record shortcut | ATTEMPTED | The [axiom memo](MINIMAL_AXIOMS_2026-06-29.md) withholds gauge action, sector weighting, and physical readout; runner sections C-D verify the exact omissions. |
+| realized-state shortcut | ATTEMPTED | The [realized-state primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) permits pointwise evaluation but supplies no state, measure, or weighting; runner section D. |
+| kinetic-isotropy shortcut | ATTEMPTED | The [kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) fixes only `c_t=c_s`; runner section D. |
+| finite connected-gauge carrier | ATTEMPTED | Runner section F contracts the discrete winding pattern and shows the counter is not homotopy-stable; this prunes only the Hamiltonian `pi_0` shortcut. |
+| per-plaquette cross-plane route | ATTEMPTED | Runner section G independently recomputes zero mixed derivative for `sum_P f(U_P)` and nonzero support for a multiplaquette product; the source row is context, not promoted authority. |
+| action/emergent-Q/readout route | ATTEMPTED | The four independent walls below remain absent from the axiom/primitive registry and are named as live derivation routes. |
+| joint gauge/mass route | ATTEMPTED | The invariant `theta_bar` combination is preserved, but neither side supplies the other; runner section H. |
 
 **N2 wall independence.** The gauge-side target contains four independently
 closable steps:
@@ -166,13 +172,30 @@ closable steps:
 This note establishes only their joint non-supply by the current foundation;
 it does not collapse them into one wall.
 
-**N3 hidden-wall scan.** The proof imports no measured neutron-EDM bound, no
-comparator, no fitted value, no axion assumption, no topological-sector
-primitive, no action-class primitive, no branch/section primitive, and no
-registry edit.
+**N3 hidden-wall scan.** The note and runner were scanned for `assume`,
+`supplied`, `registered`, `canonical`, `standard`, `background`, `naturally`,
+`obviously`, `primitive`, and `by construction`.
 
-**N4 residual matching.** The result matches the four gauge-side steps stated
-above. Historical decision prose is provenance only and supplies none of them.
+| Hit | Classification |
+|---|---|
+| supplied additive per-plaquette class | explicit theorem condition, not foundation content |
+| approved-primitive route | future governance path, not used in the proof |
+| historical decision/registry language | provenance only and non-evidence |
+| canonical winding/theta language | target vocabulary, not a supplied bridge |
+
+No measured neutron-EDM bound, comparator, fitted value, axion assumption,
+topological-sector primitive, action-class primitive, or branch/section
+primitive is imported.
+
+**N4 residual matching.** Every cited negative/support surface is checked
+against the residual actually used here:
+
+| Surface | Residual there | Residual here | Match/disposition |
+|---|---|---|---|
+| [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) | gauge action, sector/readout, weighting withheld | the same four walls | exact foundation-boundary match |
+| `THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md` | cross-plane absence only under an additive per-plaquette condition | action selection plus multiplaquette routes remain | partial match; algebra recomputed, row not used as retained authority |
+| `THETA_GAUGE_SUBSTRATE_NO_WINDING_CARRIER_EMERGENT_Q_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md` | finite carrier does not supply emergent integer Q | emergent-Q/readout wall | exact route match; context only |
+| historical decision text | former target wording | none | provenance, dropped as evidence |
 
 **N5 proven surface.** Proven here is an axiom/primitives non-supply result plus
 finite carrier sanity checks. It is not a universal no-go against future
@@ -186,10 +209,16 @@ observation and per-plaquette cross-plane absence are exactly the right
 gauge-side route. Correct: this note preserves that route. It only says the
 route's remaining interface is not in the current axioms/primitives.
 
-**N8 cross-cycle echo.** This repeats the AC(i), R-eta, and theta mass-side
-accounting pattern: a useful conditional algebraic or substrate normal form is
-not the physical readout/action bridge unless the framework derives or
-explicitly supplies the bridge.
+**N8 cross-cycle echo.** Repo cross-cycle inventory:
+
+| Cycle | Prior retirement/closure mechanism | Applicability here |
+|---|---|---|
+| AC occupancy | open statistical-grain obligation; historical governance withdrawn | confirms that a target remains open rather than becoming a premise |
+| R-eta | h-class/h-unit countermodels leave a zero-weight obligation | same non-laundering rule for gauge readout/normalization |
+| theta mass side | occupancy and quark-determinant readout split into independent obligations | confirms that the gauge-side walls cannot be closed by the mass-side algebra |
+| per-plaquette cross-plane cycle | conditional algebra prunes one action class only | does not retire multiplaquette, emergent-Q, branch, or weighting walls |
+
+No prior cycle provides a retained mechanism that closes all four gauge walls.
 
 ## Verification
 

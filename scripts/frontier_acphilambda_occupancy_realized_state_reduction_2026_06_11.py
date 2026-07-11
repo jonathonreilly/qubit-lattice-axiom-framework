@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""AC_phi_lambda sub-admission (i): realized-state reduction checks.
+"""AC_phi_lambda occupancy open-gate: realized-state reduction checks.
 
 Class-A finite-dimensional runner for
 docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md

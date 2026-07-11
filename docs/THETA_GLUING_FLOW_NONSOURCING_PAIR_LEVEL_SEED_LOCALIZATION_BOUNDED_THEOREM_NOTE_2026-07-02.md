@@ -1,6 +1,9 @@
 # The Gluing Flow Does Not Source the Theta-Parity Pair Term: Real Class-Weight Seeds Produce Plane-Blind Couplings That Vanish Identically Under the Epsilon Assembly, and Phased Seeds Are Transported, Never Created — the Theta Admission's Gauge-Side Kernel Localizes at the Seed Class (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite non-sourcing theorems with a
 graded generality statement; not a terminal no-go and not a change to the

@@ -8,8 +8,8 @@ theorem on the Record-registrable determinant-character / log-character
 homomorphism readout class. `proposed_retained` is **not** asserted; the
 boundary below is a source-side declaration, not an audit verdict.
 **Status authority:** independent audit lane only. This source note does not set
-or predict an audit outcome and does not edit the audit-lane-owned Tier-A
-registry, ledger, queue, or publication-status surfaces.
+or predict an audit outcome and creates or edits no premise registry, ledger,
+queue, or publication-status surfaces.
 **Primary runner:**
 [`scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py`](../scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py)
 (latest local run: SCORECARD: PASS=55, FAIL=0; paired cached log:
@@ -30,8 +30,8 @@ the two registrability bridges named open by
 could use if a separate physical-readout theorem supplies the missing
 identification.
 
-It does **not** retire either Tier-A admission, edit
-`docs/audit/data/premise_decision_history.json`, remove bounded status from any
+It does **not** close either current open obligation, edit premise policy,
+remove bounded status from any
 consumer, derive `|delta| = 2/9`, supply the global `Cl(3)/Z^3 -> PL S^3 x R`
 identification, close strong-CP premise 1 ("no bare `theta` slot"), or change
 the Record axiom boundary. It does **not** derive phase-group additivity from
@@ -154,7 +154,7 @@ log-character boundary.
 
 ## Conditional Implication A — strong-CP determinant-readout algebra (blocker (a))
 
-The named-open bridge in the Tier-A K/CPT note asks that the physical
+The named-open bridge in the historical K/CPT note asks that the physical
 `arg det(M_u M_d)` contribution used by
 [`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md) be represented
 by the determinant-class registrable readout, with no phase-sensitive
@@ -183,11 +183,10 @@ phase-erasure theorem as its own source-side exact-support artifact. That split
 does not discharge this paragraph's physical mass-readout identification; it
 only makes the algebraic core separately reviewable.
 
-Registry tracking guard (context only): the Tier-A registry names the shared
-K-real mass-side structure between theta(b) and AC_phi_lambda(i), but it also
-states that the two move only after the determinant-readout / exhaustion bridge
-is closed, not by registry wording alone. This note therefore does not replace
-the missing bridge theorem with a Tier-A dependency edge.
+Decision-history guard (context only): historical text named the shared K-real
+mass-side structure between theta(b) and AC_phi_lambda(i), but that provenance
+supplies no physics content. This note therefore does not replace the missing
+bridge theorem with a history dependency edge.
 
 **What Conditional Implication A does NOT close** (carried, not erased):
 
@@ -206,7 +205,7 @@ the missing bridge theorem with a Tier-A dependency edge.
 
 ## Conditional Implication B — AC_phi_lambda unordered-multiset algebra (blocker (b-i))
 
-The same Tier-A note's registry consequence asks for the **unordered-multiset
+The same historical note's former consequence asks for the **unordered-multiset
 registrability bridge** before the orientation lemma can reduce AC_phi_lambda to
 a magnitude-only atom.
 This note does not prove that the physical species readout is exactly that
@@ -230,7 +229,7 @@ surviving scalar species data is the unordered mass multiset (the symmetric
 functions), and the sign / orientation of `delta` is not extra scalar orbit
 content. This conditionally isolates the sign-erasure algebra that a later
 physical-readout bridge would need; it does not by itself reduce the physical
-AC_phi_lambda admission to the magnitude-only atom `|delta|`.
+AC_phi_lambda condition to the magnitude-only atom `|delta|`.
 
 **What Conditional Implication B does NOT close** (carried, not erased):
 
@@ -277,7 +276,7 @@ Record additivity + bridge-supplied K/CPT orbit constancy
   => (b-i) delta-sign is not scalar orbit content on the supplied unordered
      multiset surface; physical AC_phi_lambda readout identification still open
 
-new axioms: 0     new primitives: 0     new admissions: 0     new imports: 0
+new axioms: 0     new primitives: 0     new premise classes: 0     new imports: 0
 residuals named: strong-CP premise 1 (separate); standing readout-context /
                  homomorphism premise; |delta| magnitude (R-eta);
                  R2 PL/ABSS global bridge (external-math LIVE)
@@ -321,8 +320,8 @@ Load-bearing premises are explicit: (Additivity) from the current Record axiom;
 (Orbit) from the supplied-context K/CPT bridge; the determinant-character /
 log-character homomorphism boundary for the phase component; the
 sector-factoring of `det`; the AC_phi_lambda circulant form (consumed from the
-Tier-A note's L2). No "we assume", "by construction", "naturally", or
-"registered" smuggles a hidden admission: each use of "registrable" is the
+historical note's L2). No "we assume", "by construction", "naturally", or
+"registered" smuggles a hidden premise: each use of "registrable" is the
 explicit Record additivity plus bridge-supplied orbit data, the homomorphism
 restriction is separately named, and each external-math name
 (Perelman/Moise/van Kampen) is flagged as the open R2 route, not assumed.
@@ -356,7 +355,7 @@ surfaces used here. The legitimate closure path for R2 is to
 **derive or audit** the global identification on the framework surface (the
 external-math content), exactly as `KOIDE_APS_C3_FIXED_LOCUS_...` records it
 LIVE. The AC_phi_lambda convention-class reclassification (the Y0 precedent) is
-a possible *downstream* registry move, but it is audit-lane owned and is **not**
+a possible *downstream* theorem consequence, but it is audit-lane owned and is **not**
 enacted or predicted here.
 
 ### N7 — Steelman
@@ -374,7 +373,7 @@ homomorphism class.
 
 ### N8 — Cross-cycle echo
 
-The Record reclassification (Record moved from Tier-A to an approved axiom node)
+The Record reclassification (Record became part of the approved minimal-axiom node)
 historically attempted to retire a wall by governance, not by
 a new axiom. That is the template the AC_phi_lambda convention-class move would
 follow — but only **after** this theory chain lands and the audit lane acts. This
@@ -383,7 +382,7 @@ similar wall was retired by a mechanism overlooked here.
 
 ## What this note does NOT claim
 
-- It does **not** retire AC_phi_lambda or `theta`, edit the Tier-A registry, or
+- It does **not** close AC_phi_lambda or `theta`, edit premise policy, or
   remove bounded status from any consumer.
 - It does **not** derive `|delta| = 2/9`, supply R-eta, or supply the global
   `Cl(3)/Z^3 -> PL S^3 x R` (R2) identification.
@@ -392,7 +391,7 @@ similar wall was retired by a mechanism overlooked here.
   registrability constraints or the determinant-character / log-character
   homomorphism boundary; it removes phase freedom *within* that class.
 - It does **not** derive phase-group additivity from Record finite additivity.
-- It introduces **no** new axiom, primitive, admission, normalization,
+- It introduces **no** new axiom, primitive, premise class, normalization,
   probability rule, comparator, or audit verdict, and consumes no PDG / fitted /
   measured / lattice-MC value.
 - It does **not** promote, demote, or set the audit status of any dependency.

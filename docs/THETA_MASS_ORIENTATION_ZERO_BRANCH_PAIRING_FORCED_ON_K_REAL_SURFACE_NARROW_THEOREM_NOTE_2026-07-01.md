@@ -1,6 +1,9 @@
 # Theta Mass-Orientation Zero Branch Is Pairing-Forced on the K-Real Staggered Surface
 
 **Date:** 2026-07-01
+**Current premise authority (2026-07-11):** every Tier-A/admission/registry
+reference below is superseded historical context. It supplies no premise and
+makes no dependency ready; the scientific conditions remain conditional/open.
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Claim scope:** on the supplied staggered-only Case-A surface (real

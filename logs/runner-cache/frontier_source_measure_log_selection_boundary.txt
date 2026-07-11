@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_source_measure_log_selection_boundary.py
-runner_sha256: 3683c0a8b38c3ab41ab44cdf3160120245c3a0abafb822b90b6ef8b06bf1fbb3
+runner_sha256: 9b9e7cce7b25b440ec4245649f93ff50351c8d99d48dbafc7c05866e11796c56
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.69
+elapsed_sec: 0.54
 status: ok
 ----- stdout -----
 ========================================================================================

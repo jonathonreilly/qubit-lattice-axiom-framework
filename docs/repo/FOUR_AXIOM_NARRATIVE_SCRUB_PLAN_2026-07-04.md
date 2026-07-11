@@ -1,5 +1,9 @@
 # Four-Axiom Narrative Scrub — Plan And Attack (2026-07-04)
 
+**Current premise authority (2026-07-11):** every older Tier-A/admission/
+owner-governed reference below is historical process record only. The current
+foundation is exactly axioms plus approved primitives.
+
 **Claim type:** meta (process plan; `docs/repo/**` is outside the audit ledger
 per `docs/audit/data/excluded_source_patterns.txt`)
 **Status:** plan only. The initial wave executed only the front-door rewrite

@@ -429,10 +429,10 @@ def main() -> int:
           "rescale-breaking (inhomogeneous) readout clause" in note)
     check("note localizes the freedom onto the density-to-angle junction",
           "density-to-angle junction" in note)
-    check("note consolidates onto R-eta sub-admission (ii)",
-          "sub-admission (ii)" in note and "names no new wall" in note)
+    check("note consolidates onto the R-eta open obligation",
+          "R-eta open obligation" in note and "names no new wall" in note)
     check("note quotes the radian-bridge primitive residual",
-          "Type-B-to-radian identification remains primitive" in note)
+          "Type-B-to-radian identification remains open" in note)
     check("note names the angle-native live route",
           "Angle-native route" in note)
     check("note keeps the approved-primitive route explicit",

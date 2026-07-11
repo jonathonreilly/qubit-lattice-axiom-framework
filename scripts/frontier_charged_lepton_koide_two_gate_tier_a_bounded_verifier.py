@@ -196,7 +196,7 @@ chain_present = file_exists_on_origin_main(ROOT, CHAIN_OF_CUSTODY_PATH)
 record(
     "S5: chain-of-custody anchor present on origin/main",
     chain_present is True,
-    "sidecar reference; the chain-of-custody documents L1-L10 + AC_φλ admission",
+    "sidecar reference; the chain-of-custody documents L1-L10 + AC_φλ open conditions",
 )
 
 # Also the sister delta companion should be present.

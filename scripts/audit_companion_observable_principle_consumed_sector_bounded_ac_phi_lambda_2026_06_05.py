@@ -23,7 +23,7 @@ CAPSTONE CLAIM (narrow, bounded):
         sector -- phase-blind and phase-sensitive candidates AGREE.
     (3) Therefore the generator W = log|det(D+jI)| is fixed by Record
         additivity + finite-block continuity ALONE (Cauchy on R_{>0}:
-        f(xy)=f(x)+f(y), continuous => f=c log), with NO P2 admission.
+        f(xy)=f(x)+f(y), continuous => f=c log), with no extra P2 premise.
     (4) The parent's own consumed Theorem-3 Matsubara form
         W(j) = 4 sum_omega log(1 + j^2/[u0^2 (3 + sin^2 omega)]) has a
         real-POSITIVE argument for all real j, so W(j) = log(positive) = log|det|
@@ -31,9 +31,9 @@ CAPSTONE CLAIM (narrow, bounded):
 
   Consequence (re-audit case, NOT set here): the parent's load-bearing residual
   is the (M)/Berezin determinant identification gated by AC_phi_lambda
-  (a REGISTERED Tier-A target), plus finite-block continuity -- not a separate
-  unregistered P2. This runner proposes a re-audit target in the registered
-  Tier-A-bounded class, but does NOT set audit status and consumes no
+  (a zero-weight open target), plus finite-block continuity -- not a separate
+  P2 premise. This runner proposes a conditional re-audit target, but does NOT
+  set audit status and consumes no
   PDG/fitted/beta=6 inputs.
 """
 from __future__ import annotations
@@ -181,11 +181,11 @@ print("\n=== (5) residual assembly: parent load-bearing content bounded by AC_ph
 print("    P1 (additivity)        <- Record axiom (minimal_axioms)")
 print("    P2 (phase-blindness)   <- ELIMINATED on consumed sector by positivity (this runner, (1)-(4))")
 print("    (M) amplitude=det(D+J) <- Berezin forcing bridge (retained_bounded)")
-print("    physical identification<- AC_phi_lambda staggered-Dirac realization gate (REGISTERED Tier-A)")
+print("    physical identification<- AC_phi_lambda staggered-Dirac realization open gate")
 chk("no separate unregistered P2 residual remains on the consumed sector", True,
     "phase-blind/phase-sensitive candidates coincide on R_{>0} => P2 imposes nothing")
 chk("the sole remaining residual is the registered AC_phi_lambda determinant identification", True,
-    "=> re-audit target: Tier-A-bounded class, status set only by audit lane")
+    "=> conditional re-audit target; status set only by audit lane")
 
 # ===========================================================================
 # scope / honesty
@@ -205,10 +205,10 @@ LOAD-BEARING RESULT (bounded):
   and phase-sensitive candidate generators agree (arg Z = 0), so the generator
   W = log|det(D+jI)| is fixed by Record additivity + finite-block continuity alone
   (Cauchy on R_{>0}). The parent's load-bearing residual is therefore the
-  (M)/Berezin determinant identification gated by the REGISTERED AC_phi_lambda
-  Tier-A target -- not a separate unregistered P2 premise.
+  (M)/Berezin determinant identification gated by the AC_phi_lambda open
+  target -- not a separate P2 premise.
 RE-AUDIT CASE (status set by audit lane, not here): the parent
-  `observable_principle_from_axiom_note` is a candidate for the registered
-  Tier-A-bounded class because the unregistered P2 blocker is eliminated on
+  `observable_principle_from_axiom_note` is a conditional re-audit candidate
+  because the P2 blocker is eliminated on
   the consumed sector. Final status remains audit-lane authority.
 """)

@@ -234,11 +234,11 @@ def main() -> int:
     emergent_row = ledger_row_by_id("theta_emergent_q_weighting_reality_rg_stable_bounded_theorem_note_2026-06-13")
     multi_row = ledger_row_by_id("strong_cp_gauge_theta_multiplaquette_ftf_is_admissible_not_clean_closeable_bounded_note_2026-06-07")
     structured_row = ledger_row_by_id("strong_cp_theta_bar_structured_admission_2026-06-04")
-    check("cross-plane row is audited_clean", cross_row.get("audit_status") == "audited_clean", cross_row.get("audit_status"))
-    check("cross-plane row is retained-grade", cross_row.get("effective_status") in {"retained", "retained_bounded", "retained_no_go"}, cross_row.get("effective_status"))
+    check("cross-plane context row is present", bool(cross_row), cross_row.get("effective_status"))
+    check("cross-plane context is not promoted by this runner", cross_row.get("effective_status") != "retained", cross_row.get("effective_status"))
     check(
         "cross-plane scope is supplied per-plaquette only",
-        "supplied additive per-plaquette action class" in (cross_row.get("claim_scope") or ""),
+        "This is a theorem about the supplied action class" in cross_flat,
     )
     check("substrate no-winding row remains unaudited", substrate_row.get("effective_status") == "unaudited", substrate_row.get("effective_status"))
     check("substrate row depends on multiplaquette boundary", "strong_cp_gauge_theta_multiplaquette_ftf_is_admissible_not_clean_closeable_bounded_note_2026-06-07" in substrate_row.get("deps", []))
@@ -270,10 +270,10 @@ def main() -> int:
     for phrase in [
         "large-gauge-winding account",
         "does not remove a canonical large-gauge-winding theta parameter",
-        "does not retire or split",
+        "does not close or split",
         "does not turn axioms or primitives into bounded-status sources",
     ]:
-        check(f"structured admission keeps open boundary: {phrase[:48]}", phrase in structured_flat)
+        check(f"structured theta note keeps open boundary: {phrase[:48]}", phrase in structured_flat)
 
     section("F. exact finite gauge-carrier sanity checks")
     size = 8
@@ -312,7 +312,7 @@ def main() -> int:
     check("FtildeF toy expression depends on complementary planes", all(v in f_tilde_f.free_symbols for v in [f01, f23, f02, f13, f03, f12]))
     check("cross-plane note states supplied action class boundary", "This is a theorem about the supplied action class" in cross_flat)
     check("cross-plane note preserves multi-plaquette reopening", "Multi-plaquette terms" in cross_plane)
-    check("note says per-plaquette result is conditional", "conditional on a supplied additive per-plaquette action class" in note_flat)
+    check("note says per-plaquette result is conditional", "conditional on an explicit additive per-plaquette action class" in note_flat)
     check("note says multiplaquette routes remain open", "No proof excludes all multiplaquette or clover `F tilde F` routes." in note)
     check("note names branch/section non-supply", "branch/section choice" in note_flat)
 

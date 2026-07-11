@@ -28,7 +28,7 @@ runner, or review verdict that asserts:
 - a `no_go` result ("structurally closed," "no route exists," "no retained
   primitive supplies this");
 - a `stretch_attempt_negative` outcome ("the attempted route does not close");
-- a `bounded_with_named_walls` result ("conditional on N admissions/walls");
+- a `bounded_with_named_walls` result ("conditional on N open conditions/walls");
 - a derived no-go boundary inside a positive theorem ("the per-element
   identity does not lift");
 - an audit-conditional verdict rationale that names a residual wall.
@@ -73,7 +73,7 @@ out of four overclaims in the v-scale-planck-convention campaign (see
 
 ### N2 — Wall-independence audit
 
-If claiming multiple walls / admissions / load-bearing conditionals, produce
+If claiming multiple walls / open conditions / load-bearing conditionals, produce
 a pairwise table. For each pair `(W_i, W_j)`:
 
 - does closing `W_i` automatically close `W_j`? (yes / no);
@@ -105,10 +105,10 @@ Re-read your own proof. Search for these phrases and any close variants:
 For each hit, classify:
 
 - cited retained authority (with link) — keep as-is;
-- hidden admission — **promote to explicit wall** and re-run N2;
+- hidden condition — **promote to explicit wall** and re-run N2;
 - genuine non-load-bearing context — annotate that it is non-load-bearing.
 
-**Failure condition:** any hidden admission promoted to a wall means the
+**Failure condition:** any hidden condition promoted to a wall means the
 wall count was wrong; revise the claim.
 
 ### N4 — Residual matching
@@ -282,7 +282,7 @@ The cases illustrate:
 - N1 requires 5 distinct routes, not 5 phrasings of the same route.
 - N7 steelman must be the strongest counter-argument, not a token paragraph.
 - N6 "convention reframe vs new axiom" distinction must respect
-  `feedback_no_new_axioms.md` — bounded admission with named import-retirement
+  `feedback_no_new_axioms.md` — bounded condition with named import-retirement
   audit is the legitimate path, approved primitives are not bounded walls, and
   proposed new primitives require explicit approval rather than
   silent use or automatic foreclosure.

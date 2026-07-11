@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py
-runner_sha256: c5b26891b188ea9e20ce3f8c5b19cda8c41ae6483638f8c6cdaa4470b7df3629
-timeout_sec: 60
-exit_code: 0
-elapsed_sec: 0.15
-status: ok
------ stdout -----
 WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_ASSERTIONS=TRUE
 WAVE_DIRECT_DM_H025_SEED0_DEPENDENCIES_RETAINED_GRADE=TRUE
 WAVE_DIRECT_DM_H025_SEED0_ARTIFACT_SHA256_PINS=TRUE
@@ -19,6 +11,3 @@ WAVE_DIRECT_DM_H025_SEED0_WEAK_FIELD_CONTROL=TRUE
 WAVE_DIRECT_DM_H025_SEED0_PORTABILITY_LAW=FALSE
 WAVE_DIRECT_DM_H025_STABLE_AMPLITUDE_LAW=FALSE
 RESIDUAL_SCOPE=fam3_family_wide_portability_and_structural_magnitude_law_not_claimed
-
------ stderr -----
-

@@ -1,211 +1,305 @@
-# Gauge-Vacuum Plaquette Spatial Environment Character-Measure Finite Packet
+# Gauge-Vacuum Plaquette Actual Spatial-Environment Character Measure
 
-**Date:** 2026-04-17 (witness-source repair 2026-05-16);
-2026-05-24 (scope repaired to a bounded finite character-measure packet).
+**Date:** 2026-04-17; actual-environment derivation and computation
+2026-07-10.
 **Type:** bounded_theorem
-**Claim scope (post-2026-05-24 narrowing):** the load-bearing claim is only
-the finite character-measure coefficient packet checked by
-`scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py`.
-On the finite dominant-weight box `0 <= p,q <= NMAX`, at `beta = 6` and
-`MODE_MAX = 80`, the runner computes normalized single-link Wilson character
-coefficients
-`rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q)c_(0,0)(6))`, verifies that the prior
-hand-picked witness has been replaced, and packages the resulting finite
-coefficient sequence as a normalized central boundary-character packet
-`Z_6^packet`.
-**Status authority:** source-note proposal only; audit verdict and effective
-status are set by the independent audit lane. The `bounded_theorem` label is a
-source-side claim-boundary declaration, not an audit verdict.
-**Script:** `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py`
-**Bounded coefficient companion:**
-[`GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md`](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
+**Claim scope:** on the finite periodic three-dimensional `L_s=3` `SU(3)`
+Wilson lattice, for one marked spatial plaquette and any `beta>0`, the
+normalized character coefficients of the actual 80-plaquette unmarked
+environment obey an exact marked-factor deletion identity.  At `beta=6`, the
+primary runner computes the low-rank coefficients by two independent
+finite-volume Markov chains: a full-Wilson deletion estimator and a direct
+80-plaquette environment estimator.  Identification of those static boundary
+coefficients with the algebraically stripped two-slice source residual remains
+an open operator-compression gate.
+**Status authority:** independent audit lane only.  The claim type above is a
+source-side proposal; this note does not set or predict its audit verdict or
+effective status.
+**Primary runner:**
+`scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py`
+**Historical bounded single-link packet runner:**
+`scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py`
 
-This note does **not** claim that the stripped residual source-sector operator
-equals normalized convolution by the actual unmarked spatial Wilson
-environment boundary class function. It also does not claim all-weight
-closure, the full multi-link unmarked spatial-environment tensor-transfer
-operator, explicit `beta = 6` Perron/Jacobi data, analytic `P(6)`, or any
-repo-wide plaquette repinning.
+The exact support theorem is a finite-volume Wilson-integral identity, not a
+thermodynamic-limit claim.  The quoted `beta=6` numbers are computed lattice
+inputs with block-jackknife errors, not exact arithmetic values.  No canonical
+plaquette comparator, fitted selector, generic positive `rho`, or single-link
+Wilson coefficient is used to derive or tune them.
 
-## Question
+## 1. The gap this revision closes
 
-After the finite Wilson coefficient table is computed, can the coefficient
-slot formerly represented by an arbitrary positive witness be packaged as an
-explicit finite normalized central character-measure packet?
+The former runner computed the normalized **single-link** coefficients
 
-## Answer
+`c_(p,q)(6)/(d_(p,q)c_(0,0)(6))`
 
-Yes, on the bounded finite packet.
+and inserted them into a finite diagonal packet.  That was a bounded packet,
+but it was not the full spatial environment.  In particular,
+it did not establish
 
-The runner computes the finite coefficients from the canonical normalized
-single-link `SU(3)` Wilson character integral:
+`R_beta^env = C_(Z_beta^env)`
 
-`rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q)c_(0,0)(6))`,
+for the actual unmarked Wilson integral.
 
-`c_(p,q)(6) = int_SU(3) chi_(p,q)(U) exp((6/3) Re tr U) dU`.
+This revision starts from that integral.  It derives its Fourier coefficients
+without assuming the residual spectrum and evaluates the first channels with
+two different probability measures.
 
-Those coefficients are the same finite-box Wilson coefficients checked by the
-bounded companion row. The current note uses them only as the finite
-diagonal packet `C_(Z_6^packet)` inserted into the source-sector package
+## 2. Actual unmarked environment
 
-`exp(3J) D_6^loc C_(Z_6^packet) exp(3J)`.
+Let `Lambda=(Z/3Z)^3`.  There are 81 positive-direction spatial links and 81
+unoriented elementary spatial plaquettes.  Fix a marked plaquette `m`.  For a
+link configuration `U`, write its marked holonomy as `W_m(U)` and define
 
-This replaces the prior arbitrary witness sequence on the finite box. It does
-not prove that `Z_6^packet` is the actual boundary class function
-`Z_6^env(W)` of the full unmarked spatial Wilson environment, and it does not
-prove that the stripped residual operator is exactly
-`C_(Z_6^packet)`.
+`w_beta(W) = exp[(beta/3) Re Tr W]`.
 
-## Bounded Ingredient 1: computed finite Wilson coefficients
+With normalized product Haar measure `dU`, the full Wilson partition function
+is
 
-On the finite box used by the runner, the coefficients are computed in-runner
-by the Schur-Weyl Bessel-determinant identity. The bounded companion
-cross-checks the same coefficients against direct Weyl integration on the
-Cartan torus with Vandermonde-squared measure.
+`Z_full(beta) = int dU prod_(p in P) w_beta(W_p(U))`.
 
-The finite packet therefore has a bounded companion source for:
+The unmarked environment boundary density `Z_beta^env(W)` is characterized by
+the push-forward identity
 
-- positivity of the normalized finite coefficients;
-- conjugation symmetry `rho_(p,q)(6) = rho_(q,p)(6)`;
-- normalization `rho_(0,0)(6) = 1`;
-- replacement of the retired hand-picked witness sequence
-  `exp(-0.24 (p+q) - 0.08 (p-q)^2)`.
+`int_SU(3) dW Z_beta^env(W) f(W)`
 
-## Bounded Ingredient 2: finite central character-measure packaging
+`= int dU f(W_m(U)) prod_(p != m) w_beta(W_p(U))`                     `(2.1)`
 
-The runner packages the finite coefficient sequence as
+for every continuous class function `f`.  This is the actual 80-active-
+plaquette environment around the marked plaquette.  It is not a single-link
+integral and it does not tie symmetry-related internal links.
 
-`Z_6^packet(W) = z_(0,0)^packet sum d_(p,q) rho_(p,q)(6) chi_(p,q)(W)`.
+Global simultaneous conjugation of all 81 link variables preserves product
+Haar measure and every unmarked Wilson factor while conjugating the marked
+holonomy.  Hence `Z_beta^env` is central.  Lattice reflection through the
+marked plaquette, followed by link-orientation inversion, is a Haar-measure-
+preserving bijection that sends `W` to `W^dagger`; the real Wilson branch gives
 
-The normalized convolution packet acts diagonally on the finite
-class-function basis:
+`Z_beta^env(W)=Z_beta^env(W^dagger)`.
 
-`C_(Z_6^packet) chi_(p,q) = rho_(p,q)(6) chi_(p,q)`.
+Define its character coefficients by
 
-This is a finite algebraic packaging statement. It is not an identification
-of `Z_6^packet` with the full unmarked spatial Wilson environment boundary
-function.
+`Z_beta^env(W) = sum_lambda d_lambda z_lambda^env(beta) chi_lambda(W)`
 
-## Bounded Ingredient 3: finite source-sector package
+in the Peter-Weyl sense, and normalize
 
-The runner constructs the finite matrices:
+`rho_lambda^env(beta)=z_lambda^env(beta)/z_0^env(beta)`.
 
-- the source recurrence `J` on the finite dominant-weight box;
-- the marked half-slice multiplier `exp(3J)`;
-- the diagonal local factor `D_6^loc`;
-- the diagonal character-measure packet `C_(Z_6^packet)`.
+## 3. Theorem 1: exact marked-factor deletion identity
 
-It then checks the finite package
+Let angle brackets with subscript `full` denote expectation under the
+normalized full Wilson measure
 
-`K_6^packet = exp(3J) D_6^loc C_(Z_6^packet) exp(3J)`
+`dP_full(U)=Z_full(beta)^(-1) prod_p w_beta(W_p(U)) dU`.
 
-for:
+For every `SU(3)` irrep `lambda`, equation (2.1) with
+`f=conj(chi_lambda)` gives
 
-- self-adjointness;
-- conjugation-swap symmetry;
-- normalized coefficient consistency;
-- positive finite coefficients;
-- a positive truncated Perron expectation.
+`d_lambda z_lambda^env(beta)`
 
-These are finite packet checks. They do not prove the all-weight operator
-identity named by the earlier parent theorem wording.
+`= int dU conj(chi_lambda(W_m)) prod_(p != m)w_beta(W_p)`
 
-## Open Target: actual character-measure identification
+`= Z_full(beta) <conj(chi_lambda(W_m))/w_beta(W_m)>_full`.          `(3.1)`
 
-The remaining theorem-grade target is still:
+For the trivial character,
 
-`R_beta^actual = C_(Z_beta^env)`,
+`z_0^env(beta)=Z_full(beta)<1/w_beta(W_m)>_full`.                   `(3.2)`
 
-where `Z_beta^env(W)` is the actual boundary class function obtained by
-integrating the full unmarked spatial Wilson environment with the marked
-plaquette boundary holonomy held fixed.
+Dividing (3.1) by (3.2) proves
 
-To close that target, a future proof or runner must derive the equality for
-the actual stripped residual source-sector operator, not merely insert the
-finite single-link Wilson coefficient packet. It must also handle all-weight
-support, the full spatial-environment tensor-transfer/Perron construction,
-and the boundary readout at `beta = 6`.
+`rho_lambda^env(beta)`
 
-## What This Closes
+`= <conj(chi_lambda(W_m))/w_beta(W_m)>_full`
 
-- bounded replacement of the prior arbitrary positive witness on the finite
-  coefficient packet;
-- bounded construction of a finite normalized central character-measure packet
-  from computed single-link Wilson coefficients;
-- bounded verification that the finite source-sector package remains
-  self-adjoint, conjugation-symmetric, positivity-compatible on the
-  truncation, and Perron positive.
+`  / [d_lambda <1/w_beta(W_m)>_full]`.                             `(3.3)`
 
-## What This Does Not Close
+This is an exact finite-volume identity.  It turns the boundary-conditioned
+80-plaquette integral into a ratio in the positive full Wilson ensemble.  It
+contains no supplied environment coefficient.
 
-- equality of the stripped residual source-sector operator with normalized
-  convolution by the actual unmarked spatial Wilson environment boundary
-  class function;
-- identification of the finite single-link packet with the full multi-link
-  unmarked spatial Wilson environment;
-- all-weight closure beyond the finite dominant-weight box;
-- full unmarked spatial Wilson environment tensor-transfer/Perron data;
-- explicit `beta = 6` Perron moments or Jacobi coefficients;
-- analytic closure of canonical `P(6)`;
-- repo-wide repinning of the canonical plaquette;
-- status promotion of this note.
+Translation and cubic-orientation symmetry make the right-hand side the same
+for every plaquette.  Therefore averaging its numerator and denominator over
+all 81 plaquettes preserves the numerator and denominator expectations and
+reduces variance.  Their finite-sample ratio need not itself be unbiased.
+This all-plaquette averaging is used by the primary estimator.
 
-## Commands Run
+## 4. Theorem 2: direct environment estimator
+
+Normalize the 80-plaquette measure obtained by deleting the marked factor:
+
+`dP_env,m(U) = [z_0^env(beta)]^(-1)
+                prod_(p != m) w_beta(W_p(U)) dU`.
+
+Equation (2.1) immediately gives a second exact identity,
+
+`rho_lambda^env(beta)
+ = (1/d_lambda)<conj(chi_lambda(W_m))>_(env,m)`.                    `(4.1)`
+
+The runner samples (3.3) and (4.1) in independent chains, with distinct seeds,
+hot/cold initial states, and four marked plaquettes spanning different
+positions/orientations.  Agreement of the two spectra is a discriminating
+test of the deletion identity and of the implemented 80-plaquette action.
+
+## 5. Open operator-compression gate and doubled-slice discriminator
+
+The static identities above do not by themselves prove
+
+`R_beta^env=C_(Z_beta^env/z_0^env)`.
+
+The actual one-step Wilson kernel is a two-boundary object.  After the marked
+spatial half-weights and four marked mixed-link factors are deleted literally,
+it still contains two sets of 80 unmarked spatial half-weights, 77 unmarked
+mixed-link weights, and integrations over both slice configurations.
+Compression to the marked class sector need not commute with deleting factors
+before compression.  In particular, the retained mixed-kernel theorem sends
+nonmarked links to the trivial channel only when the function being integrated
+is independent of them; the unmarked spatial plaquette weights violate that
+hypothesis.
+
+The companion runner
+`scripts/frontier_gauge_vacuum_plaquette_residual_environment_spectrum_actual_l3.py`
+therefore constructs the literal doubled-slice factor-deleted weight rather
+than replacing it by (2.1).  Its exact census is:
+
+- 80 incoming and 80 outgoing spatial half-plaquette factors;
+- 77 nonmarked mixed-link factors;
+- both 81-link slice integrations.
+
+It measures the tracked character-basis matrix without assuming diagonality.
+At the production packet, all off-diagonal entries are consistent with zero,
+but only at a maximum significance of `1.77` standard errors.  Its normalized
+diagonal estimates are
+
+| irrep | literal doubled-slice deletion diagonal | block-jackknife error |
+|---|---:|---:|
+| `(1,0)` and `(0,1)` | `-0.01237` | `0.01864` |
+| `(1,1)` | `-0.00238` | `0.01635` |
+
+Those estimates are too imprecise to establish equality with the static
+fundamental coefficient `0.04079 +/- 0.00343`, and literal deletion is not yet
+a proof of algebraic stripping after source-sector compression.  The companion
+is a discriminator and blocker-localization artifact, not a closure
+certificate.
+
+The remaining exact task is to define the marked-class compression map for the
+full two-slice Wilson kernel, form
+
+`R_stripped=(D_beta^loc)^(-1) M_(beta/2)^(-1)
+             (P_cls T_beta P_cls^*) M_(beta/2)^(-1)`,
+
+and either derive its integral kernel or compute its character matrix with
+controlled truncation and covariance.  Only then can its spectrum be compared
+to Sections 3--4 without repeating the original identification by naming.
+
+## 6. Independent `beta=6` computation
+
+The primary runner uses four full-Wilson chains and four direct-environment
+chains.  Each chain has 900 thermalization sweeps followed by 2400 measurement
+sweeps sampled every four sweeps.  Two chains in each family start cold and
+two start hot.  Uncertainties come from 12 consecutive blocks per chain,
+combined in a delete-one-block jackknife for the coefficient ratios.
+
+The full-Wilson deletion estimator gives:
+
+| irrep | `rho_lambda^env(6)` | block-jackknife error | old single-link packet |
+|---|---:|---:|---:|
+| `(0,0)` | `1.000000` | normalization | `1.000000` |
+| `(1,0)` and `(0,1)` | `0.040787` | `0.003432` | `0.422532` |
+| `(1,1)` | `-0.000658` | `0.001230` | `0.162260` |
+| `(2,0)` and `(0,2)` | `0.001458` | `0.001444` | `0.135962` |
+
+The exact coefficients are real and conjugation-symmetric.  The raw complex
+estimators retain their imaginary fluctuation as a diagnostic; it is
+consistent with zero within the reported errors.  The `(1,1)` and `(2,0)`
+channels are also statistically consistent with zero, so this computation
+does not claim their strict sign.
+
+The independent direct 80-plaquette estimator gives:
+
+| irrep | direct `rho_lambda^env(6)` | block-jackknife error |
+|---|---:|---:|
+| `(1,0)` and `(0,1)` | `0.047235` | `0.01165` |
+| `(1,1)` | `0.002020` | `0.003283` |
+| `(2,0)` and `(0,2)` | `0.000899` | `0.004197` |
+
+Across the five nontrivial displayed channels, the maximum difference between
+the two estimators is `0.76` combined standard errors.  The deletion estimate
+differs from the former single-link packet by `111` standard errors in the
+fundamental channel and `132` standard errors in the adjoint channel.  The old
+packet is therefore a useful control but is not the physical environment.
+
+## 7. Runner checks
+
+Command:
 
 ```bash
-python3 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py
+python3 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py
 ```
 
 Expected summary:
 
-- `THEOREM PASS=6 SUPPORT=3 FAIL=0`
+```text
+SUMMARY: PASS=21 FAIL=0
+```
 
-The theorem-grade checks are bounded to the finite packet:
+The checks include:
 
-- `J` is self-adjoint and conjugation-symmetric on the finite source sector;
-- the finite packet equals the computed normalized single-link Wilson
-  coefficients;
-- the finite packet is distinct from the retired arbitrary witness sequence;
-- the packet is positive and conjugation-symmetric on the truncation;
-- the finite coefficients can be packaged as one normalized central
-  boundary-character packet;
-- `exp(3J) D_6^loc C_(Z_6^packet) exp(3J)` is self-adjoint and
-  conjugation-symmetric on the finite source sector.
+- exact `SU(3)` character dimensions at the identity;
+- a deterministic Weyl-Haar `beta=0`/marked-only control in which every
+  tracked nontrivial character moment vanishes;
+- the 81-link/81-plaquette census and four incidences per link;
+- equality of the local Metropolis action change and a full Wilson-action
+  recomputation;
+- unitarity and unit determinant of every proposal type;
+- normalization, reality, and conjugation symmetry of the coefficient packet;
+- hot/cold full-chain and direct-environment marked-face agreement,
+  nondegenerate acceptance, direct-spectrum reality/conjugation checks, and
+  per-chain block lengths above ten estimated autocorrelation times;
+- enforcement of the fixed four-chain minimum production protocol so reduced
+  exploratory runs cannot emit the audit certificate;
+- statistical separation from the single-link packet;
+- agreement of the full-Wilson deletion and direct 80-plaquette spectra.
 
-## Audit Dependency Repair Links
+Companion discriminator command:
 
-This graph-bookkeeping section records the explicit bounded inputs for the
-finite packet. It does not promote this note, apply an audit verdict, or close
-the full residual-environment / character-measure identification theorem.
+```bash
+python3 scripts/frontier_gauge_vacuum_plaquette_residual_environment_spectrum_actual_l3.py
+```
 
-- [gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md)
-  has current pipeline-derived effective status `retained_bounded` and
-  computes the bounded normalized single-link Wilson coefficients on a finite
-  weight box by two independent methods. This is the load-bearing coefficient
-  authority for the finite packet used here.
-- [gauge_vacuum_plaquette_local_environment_factorization_theorem_note](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md)
-  supplies the bounded finite `D_6^loc` packet used in
-  `exp(3J) D_6^loc C_(Z_6^packet) exp(3J)`.
-- [gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md)
-  supplies the source-side all-weight **formal diagonal-convolution**
-  bridge for the stripped residual eigenvalue sequence. It supports the
-  Peter-Weyl dictionary part of the character-measure identification:
-  a diagonal residual sequence can be written as unnormalized formal
-  convolution by a central sequence. It does not compute the actual
-  beta=6 unmarked spatial Wilson environment coefficients, prove
-  normalized `kappa_(0,0)=1`, or identify the finite single-link packet
-  with the full multi-link environment.
+Expected summary on the bounded production packet:
 
-The actual residual-environment equality row remains a future sibling target,
-not a dependency of this finite packet. This note does not import a stronger
-actual-environment equality from that row.
+```text
+SUMMARY: PASS=6 FAIL=0
+```
 
-The open bridge named by the earlier review history remains open at full
-theorem scope: prove, or runner-certify, that the stripped residual
-source-sector operator equals normalized convolution by the actual compressed
-unmarked spatial Wilson environment boundary character, beyond insertion of
-the finite single-link coefficient packet. After the all-weight formal bridge
-above, the remaining physical bridge is the independent derivation of the
-environment coefficient sequence from the unmarked DOF integral /
-tensor-transfer construction, not the formal Peter-Weyl diagonal-convolution
-dictionary itself.
+## 8. Dependencies
+
+- [GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md](GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md)
+  supplies the retained linkwise temporal-gauge factorization used to construct
+  the doubled-slice discriminator; it does not supply residual identification.
+- [GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md)
+  defines the bounded source-sector operator-stripping target.  This note does
+  not import that row as a proof of the missing compression identity.
+- [SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md](SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md)
+  supplies the retained finite character/convolution convention for the
+  tracked discriminator packet.
+
+The former finite single-link coefficient note is a non-load-bearing control,
+not a dependency of the derivation.
+
+## 9. What this closes and what remains
+
+This note closes, on the stated finite periodic Wilson surface:
+
+- the derivation of the actual unmarked environment coefficient estimator;
+- the independent low-rank `beta=6` computation from the 80-plaquette action.
+
+It does not claim:
+
+- exact-arithmetic values for the displayed statistical coefficients;
+- equality of the static environment coefficients with the algebraically
+  stripped two-slice source residual spectrum;
+- all-weight numerical evaluation or a convergence rate in irrep weight;
+- a thermodynamic/infinite-spatial-volume limit;
+- the `beta` derivative of the environment coefficients;
+- a completed Perron solve or an analytic canonical plaquette value;
+- repo-wide repinning of the plaquette value or any audit-status change.

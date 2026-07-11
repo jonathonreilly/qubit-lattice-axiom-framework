@@ -1,0 +1,48 @@
+loop_slug: gauge-plaquette-spatial-env-character-20260710
+mode: run
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+proposal_allowed: false
+proposal_allowed_reason: "The static coefficient packet does not close the ordering-sensitive post-compression source-residual identity."
+branch: claude/science-fix/gauge_vacuum_plaquette_spatial_environment_character_measure-7824208b
+base: origin/main
+runtime: "interactive DEEP-HARD attempt; no unattended duration requested"
+checkpoint_interval: "30m"
+cycle_count: 1
+block_count: 1
+active_route: "bounded salvage: exact static marked-factor deletion identity, two independent beta=6 coefficient estimators, and doubled-slice compression/deletion discriminator"
+hard_residual: "actual beta=6 boundary character coefficients of the 80-plaquette unmarked spatial Wilson environment and their equality to the stripped residual spectrum"
+files_touched:
+  - .claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/
+  - docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md
+  - scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py
+  - scripts/frontier_gauge_vacuum_plaquette_residual_environment_spectrum_actual_l3.py
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.txt
+  - logs/runner-cache/frontier_gauge_vacuum_plaquette_residual_environment_spectrum_actual_l3.txt
+open_imports:
+  - "beta=6 canonical Wilson normalization is a named bounded Wilson-surface premise, not derived by this block"
+  - "finite-volume L_s=3 periodic geometry is the target surface named by the existing environment cost note"
+no_go_routes:
+  - "single-link Wilson coefficients are not the multi-link environment coefficients"
+  - "generic positive rho witnesses do not verify the physical environment"
+  - "orbit-tying the 16-element stabilizer quotient is not exact on the original independent-link integral"
+  - "naive dense exact contraction is outside the tested 4 GiB budget; this is a method-specific cost boundary, not a global no-go"
+  - "naive Haar product Monte Carlo is noise-dominated and is not re-opened"
+review_findings:
+  - "Fatal retained-closure issue: algebraic source-sector compression/stripping was conflated with literal factor deletion before compression."
+  - "The static 80-plaquette coefficient identities and computations are valid bounded support."
+  - "A doubled-slice literal-deletion character matrix localizes but does not retire the compression-ordering blocker."
+review_disposition: pass
+science_commit: a2fcb7f31
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5142"
+lock_status: "dedicated worktree; shared default lock path was inaccessible, so no shared-checkout lock is used"
+next_exact_action: "construct the full marked-class compression P_cls T_beta P_cls^*, perform algebraic M and D_loc stripping after compression, and compute its covariance-resolved low-rank matrix before comparing with the static rho packet"
+stop_condition: "bounded salvage passes re-review and is committed/pushed for independent review; retained-grade target remains open"

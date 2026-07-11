@@ -1,84 +1,46 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py
-runner_sha256: 42557c7048d6b28e6a0896d58c25e665693f9c521dd39633f3a486a7a7a1e866
+runner_sha256: 9459b8f7f3c643cde45696675e4b0986c4d0ec334ba65cc859abcad04863667c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.51
+elapsed_sec: 0.68
 status: ok
 ----- stdout -----
-AC_phi_lambda occupancy determinant-power split exact support
-==============================================================================
+Complex determinant and realification determinant power
+================================================================
 
-------------------------------------------------------------------------------
-A - source and registry boundaries
-------------------------------------------------------------------------------
-PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md
-PASS: exists: docs/audit/data/tier_a_admissions.json
-PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md
-PASS: exists: docs/KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md
-PASS: exists: docs/ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
-PASS: exists: docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
-PASS: exists: docs/CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md
-PASS: exists: docs/GENERATION_WEIGHT_DIAL_STRUCTURE_2026-06-05.md
-PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
-PASS: exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
-PASS: note declares bounded_theorem claim type
-PASS: runner path is wired in note
-PASS: note denies AC retirement
-PASS: note denies horn selection
-PASS: note denies premise and primitive adoption
-PASS: note denies registry/axiom/primitive/audit edits
-PASS: live Tier-A genuine count is zero
-PASS: canonical Tier-A IDs are empty on current main
-PASS: live derivation targets are empty on current main
-PASS: AC retired-target record is preserved
-PASS: AC retirement date is recorded -- {'date': '2026-07-05', 'mechanism': 'retired_by_owner_governance_on_audited_surface', 'owner_approval': 'In-thread approval for #4991 owner-governance adoption of the four Block49 residual candidates with the exact owner_governed_premise_nodes.json boundaries; current-main landing applies the registry delta only to the live AC_phi_lambda Tier-A target because theta was already retired by retained derivation.', 'owner_governed_premise_node': 'staggered_dirac_realization_gate_note_2026-05-03', 'adoption_source': 'docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md', 'audited_surface': 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md audited_clean / retained_bounded on main at 5d8df21fe', 'adopted_residual_candidates': ['ac_orbit_occupancy_statistical_grain_premise', 'ac_reta_hclass_hunit_readout_premise'], 'boundary': 'Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.', 'non_laundering': 'This retirement is not an axiom, not an approved primitive, not a theorem derivation, and not an audit verdict. Source-side theorem/no-go packet statuses remain audit-lane-owned.'}
-PASS: AC retirement mechanism is owner governance -- {'date': '2026-07-05', 'mechanism': 'retired_by_owner_governance_on_audited_surface', 'owner_approval': 'In-thread approval for #4991 owner-governance adoption of the four Block49 residual candidates with the exact owner_governed_premise_nodes.json boundaries; current-main landing applies the registry delta only to the live AC_phi_lambda Tier-A target because theta was already retired by retained derivation.', 'owner_governed_premise_node': 'staggered_dirac_realization_gate_note_2026-05-03', 'adoption_source': 'docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md', 'audited_surface': 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md audited_clean / retained_bounded on main at 5d8df21fe', 'adopted_residual_candidates': ['ac_orbit_occupancy_statistical_grain_premise', 'ac_reta_hclass_hunit_readout_premise'], 'boundary': 'Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.', 'non_laundering': 'This retirement is not an axiom, not an approved primitive, not a theorem derivation, and not an audit verdict. Source-side theorem/no-go packet statuses remain audit-lane-owned.'}
-PASS: historical AC decomposition preserves three old atoms -- ['reading_occupancy_selection', 'delta_readout_identification_R_eta', 'species_bridge']
-PASS: AC retired registry names reading/occupancy selection
-PASS: AC retirement boundary names occupancy grain
-PASS: note has current-main posture line
-PASS: note records live Tier-A zero posture
-PASS: note says retirement records are not reopened
+Part A: generic realification identity
+--------------------------------------
+  [PASS] generic 2x2 determinant identity
+  [PASS] realified determinant is real
+  [PASS] scalar realification gives x^2+y^2
+  [PASS] singular scalar is included
+  [PASS] complex determinant scales to first power per complex mode
+  [PASS] realified determinant scales to second power per complex mode
 
-------------------------------------------------------------------------------
-B - determinant power algebra
-------------------------------------------------------------------------------
-PASS: generic 2x2 realification determinant equals squared complex determinant
-PASS: scalar realification gives z*zbar
-PASS: multiplication by i changes det_C phase but not det_R
-PASS: complex count scales once for one complex mode
-PASS: realified count scales twice for one complex mode
-PASS: explicit Berezin Gaussian gives det_C(K) to first power -- k00*k11 - k01*k10
+Part B: exact finite examples
+-----------------------------
+  [PASS] diagonal 2x2 example
+  [PASS] exact 3x3 example
+  [PASS] singular 2x2 example has both determinants zero
+  [PASS] multiplication by i changes the complex determinant phase in odd size
+  [PASS] multiplication by i leaves the realified determinant unchanged
 
-------------------------------------------------------------------------------
-C - AC occupancy fork localization
-------------------------------------------------------------------------------
-PASS: independent C3 channel determinant is holomorphic in beta,gamma
-PASS: tied section supplies mixed beta*betabar term
-PASS: K-real substitution produces |beta|^2 dependence -- alpha**3 - 3*alpha*u**2 - 3*alpha*v**2 + 2*u**3 - 6*u*v**2
-PASS: landed cells remain distinct
-PASS: note keeps both determinant horns live
+Part C: Berezin first power
+---------------------------
+  [PASS] generic 1x1 top coefficient is det_C(K)  (k0)
+  [PASS] generic 2x2 top coefficient is det_C(K)  (k00*k11 - k01*k10)
+  [PASS] Berezin result has first determinant power
+  [PASS] generic 3x3 top coefficient is det_C(K)
 
-------------------------------------------------------------------------------
-D - source integration and non-overclaim
-------------------------------------------------------------------------------
-PASS: realized-state reduction names survivor as measure-side realization
-PASS: first-order theorem already localizes count-twice to K-real restriction
-PASS: measure-binary no-go blocks axiom/primitive retirement
-PASS: formation-append no-go blocks Record shortcut
-PASS: counting-bit synthesis names det_C versus det_R fork
-PASS: dial note identifies block-count and dimension endpoints
-PASS: axiom and primitive surfaces do not supply measure/weight selection
-PASS: note contains required phrase: det_R R(K) = det_C(K) * conjugate(det_C(K))
-PASS: note contains required phrase: determinant-power binary
-PASS: note contains required phrase: matter action implements
-PASS: note contains required phrase: Remaining Live Routes
-PASS: note contains required phrase: Independent audit required
-PASS: banned overclaim phrases are absent except explicit denials
+Scope guards
+------------
+  [PASS] source note has no load-bearing links to former context stack
+  [PASS] source excludes a physical occupancy selector
+  [PASS] source does not force r=1/2
 
-==============================================================================
-TOTAL: PASS=52 FAIL=0
+================================================================
+TOTAL: PASS=18, FAIL=0
 
 ----- stderr -----
 

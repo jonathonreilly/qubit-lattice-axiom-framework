@@ -158,7 +158,7 @@ load-bearing class:
 | Standard radiation -> matter -> Lambda equation-of-state taxonomy (`w_r=1/3`, `w_m=0`; `w_Lambda=-1` separately retained) | `w_Lambda = -1` is handled by a separate corollary; `w_r=1/3` and `w_m=0` now have exact finite kinetic bounded support for ideal component labels, and those component tensors have a finite perfect-fluid lift | **local supplied premise C3, narrowed by the 2026-06-18 kinetic-label and perfect-fluid-lift partial bridges; real species allocation remains supplied** |
 
 The local-supplied-premise label is deliberately non-registry language. This
-note does **not** add C1, C2, or C3 to `docs/audit/data/tier_a_admissions.json`
+note does **not** add C1, C2, or C3 to `docs/audit/data/premise_decision_history.json`
 and does **not** claim membership in the Tier-A registry.
 
 ## Proof-walk

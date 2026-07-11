@@ -118,7 +118,7 @@ The audit lane owns statuses, and the registry is untouched.
 - [`STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md`](STRONG_CP_DETERMINANT_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-12.md)
   supplies the determinant phase-character erasure and the guarded supplied
   mass determinant-channel conditional used by Leg 3.
-- [`tier_a_admissions.json`](audit/data/tier_a_admissions.json) is used only
+- [`premise_decision_history.json`](audit/data/premise_decision_history.json) is used only
   for the registry's own identification that warrants the one-sentence versus
   two-sentence conditional count; it is not an audit-status authority.
 

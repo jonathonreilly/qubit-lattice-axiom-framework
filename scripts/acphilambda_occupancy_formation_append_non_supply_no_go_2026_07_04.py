@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md"
-TIER_A = DOCS / "audit" / "data" / "tier_a_admissions.json"
+TIER_A = DOCS / "audit" / "data" / "premise_decision_history.json"
 OBLIGATIONS = DOCS / "audit" / "data" / "derivation_obligations.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 REGISTRY = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"

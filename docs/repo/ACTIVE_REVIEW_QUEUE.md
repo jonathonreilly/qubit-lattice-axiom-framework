@@ -82,12 +82,12 @@ Current science/open-lane follow-ups:
   consumed before a live fallback; add a dependency-aware input fingerprint or
   equivalent manifest design.
   Disposition: `fix on main`.
-- `2026-07-10-residual-tier-a-runner-pin-sweep`
+- `2026-07-10-residual-admission-runner-pin-sweep`
   Scope: eight older `acphilambda_*` runners that still index the retired AC
   entry under live `derivation_targets`, plus
   `audit_companion_observable_principle_p2_phase_blindness_sector_resolved_2026_06_04.py`.
   Finding: the sibling pin sweep for PR #5115 found additional pre-existing
-  post-retirement crashes and one stale Tier-A count-of-two gate outside the
+  post-retirement crashes and one stale admission-count gate outside the
   four-runner repair slice; repoint them to the historical registry plus exact
   open obligations without weakening their content checks.
   Disposition: `fix on main`.
@@ -189,11 +189,14 @@ Current science/open-lane follow-ups:
   compute/establish the relevant `UD_2` homotopy or land only the narrower
   base-connection area-flux theorem.
   Disposition: `science-needed`.
-- `2026-06-12-pr3511-theta-tier-a-retirement-gate`
-  Scope: PR #3511, `docs/audit/data/tier_a_admissions.json`, and
+- `2026-06-12-pr3511-theta-admission-retirement-gate` (historical/resolved)
+  Scope: PR #3511, `docs/audit/data/premise_decision_history.json`, and
   `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`.
-  Finding: the owner is favorable to retiring `strong_cp_theta_zero_note` from
-  Tier-A, but only after the dependency chain independently supports the
+  Finding: this preserved the former admission-retirement review. The live
+  admission class has since been removed; the dependency chain must now stand
+  entirely on axioms, approved primitives, and retained derivations. At the
+  time, the owner was favorable to retiring `strong_cp_theta_zero_note` only
+  after the dependency chain independently supported the
   retirement. Do not land PR #3511 until the cross-plane basis remains
   audited-clean/retained-bounded, the determinant/K-CPT basis and
   registrable-readout bridge are audited-clean/retained-grade, and owner
@@ -201,7 +204,8 @@ Current science/open-lane follow-ups:
   Current gate check on 2026-06-12: cross-plane is clean; `theta_p2...` and
   `tier_a_korbit...` are still `audited_conditional`; `registrable_readout...`
   is still `unaudited`.
-  Disposition: `science-needed`.
+  Disposition: `resolved as history`; remaining scientific gaps are ordinary
+  derivation obligations.
 
 ## Intake Format
 

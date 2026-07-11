@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_signed_cancellation_firewall_2026_06_21.py
-runner_sha256: 1566e433ded2a103bb6f770d21996f918638021482e242333701cb925b50eb57
+runner_sha256: b7a6b8dcaa535e06335ab1a1642bc42c58c063d195f2b061e9f002a0b3415e2a
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08

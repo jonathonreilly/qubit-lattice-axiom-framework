@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_record_formation_non_supply_no_go_2026_07_04.py
-runner_sha256: bdea13c3f373c45e2fd412ed9dac64ddaf32b5443b052db87b0533e9de817a89
+runner_sha256: 717dae910ed329d2152a524e7e1b16b7fc67aeefb9efccdf6b075102c1a73295
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta Record-formation non-supply no-go
@@ -14,7 +14,7 @@ A - source and registry boundaries
 ------------------------------------------------------------------------------
 PASS: exists: docs/ACPHILAMBDA_R_ETA_RECORD_FORMATION_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
 PASS: exists: docs/MINIMAL_AXIOMS_2026-06-29.md
-PASS: exists: docs/audit/data/tier_a_admissions.json
+PASS: exists: docs/audit/data/premise_decision_history.json
 PASS: exists: docs/ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md
 PASS: exists: docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
 PASS: exists: docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md

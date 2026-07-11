@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py
-runner_sha256: 2fc56248270f79536979075f8f00fe2998a270c8f1aff6b9c386120e6ca1f639
+runner_sha256: 256a356da6edf328f510d64bc4c46cb8efced170b44719c6ee6f9644a55038b5
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.49
@@ -12,7 +12,7 @@ AC_phi_lambda R-eta h-class first-principles stretch no-go verifier
 A. source presence and Tier-A boundary
 ========================================================================================
 [PASS] exists: docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/audit/data/axiom_premise_nodes.json
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md

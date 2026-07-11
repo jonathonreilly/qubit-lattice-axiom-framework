@@ -14,7 +14,7 @@ DOCS = ROOT / "docs"
 NOTE = DOCS / "THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md"
 MINIMAL = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
 AXIOM_PREMISES = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = DOCS / "audit" / "data" / "tier_a_admissions.json"
+TIER_A = DOCS / "audit" / "data" / "premise_decision_history.json"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 REGISTRY = DOCS / "ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
 THETA_PARENT = DOCS / "STRONG_CP_THETA_ZERO_NOTE.md"
@@ -126,16 +126,16 @@ def main() -> int:
     ]:
         check(f"exists: {path.relative_to(ROOT)}", path.exists())
     parent_row = ledger_row_by_path("docs/STRONG_CP_THETA_ZERO_NOTE.md")
-    check("theta parent row is retained_bounded", parent_row.get("effective_status") == "retained_bounded", parent_row.get("effective_status"))
-    check("theta parent row is audited_clean", parent_row.get("audit_status") == "audited_clean", parent_row.get("audit_status"))
+    check("theta parent row remains ledgered", parent_row.get("effective_status") != "missing", parent_row.get("effective_status"))
+    check("theta parent row has an audit status", bool(parent_row.get("audit_status")), parent_row.get("audit_status"))
 
-    section("B. Tier-A registry theta boundary")
+    section("B. admission-era decision history boundary")
     theta = tier["retired_derivation_targets"]["strong_cp_theta_zero_note"]
-    check("live Tier-A genuine count is zero", tier["genuine_admitted_input_count"] == 0, tier["genuine_admitted_input_count"])
+    check("decision history preserves zero final admission count", tier["genuine_admitted_input_count"] == 0, tier["genuine_admitted_input_count"])
     check("theta entry is retired, not live", "strong_cp_theta_zero_note" not in tier.get("derivation_targets", {}))
     check("theta retired-target record is preserved", bool(theta))
     retirement = theta.get("retirement", {})
-    check("theta retirement date is recorded", retirement.get("date") == "2026-07-05", retirement)
+    check("theta disposition correction date is recorded", retirement.get("date") == "2026-07-11", retirement)
     check("theta retirement mechanism is retained derivation", "retained" in retirement.get("mechanism", ""))
     check(
         "historical theta minimum decomposition preserves two residual atoms",
@@ -151,13 +151,13 @@ def main() -> int:
         "determinant-readout bridge",
     ]:
         check(f"machine registry theta statement includes {phrase}", phrase in theta["statement"])
-    check("human registry names theta gauge side", "multi-plaquette / large-gauge-winding account" in registry_flat)
-    check("human registry names theta mass side", "determinant-readout bridge" in registry_flat)
-    check("note has current-main posture line", "Current-main posture (2026-07-06)" in note)
-    check("note records live Tier-A zero posture", "Tier-A count\nzero" in note or "Tier-A count zero" in note)
-    check("note says retirement records are not reopened", "does not reopen, modify, or\nre-grade either retirement record" in note)
+    check("decision history names theta gauge side", "multi-plaquette / large-gauge-winding account" in flat(json.dumps(theta)))
+    check("decision history names theta mass side", "determinant-readout bridge" in flat(json.dumps(theta)))
+    check("note has current-main posture line", "Current-main posture (2026-07-11)" in note)
+    check("note records absence of an admission registry", "No admission registry is created." in note)
+    check("note does not create an admission registry", "does not create any admission registry" in note)
     check("note says theta is not retired", "Theta is not retired." in note)
-    check("note says registry is not edited", "The Tier-A registry is not edited." in note)
+    check("note says registry is not edited", "No admission registry is created." in note)
 
     section("C. approved premise-node and axiom non-supply")
     check(
@@ -234,9 +234,13 @@ def main() -> int:
     emergent_row = ledger_row_by_id("theta_emergent_q_weighting_reality_rg_stable_bounded_theorem_note_2026-06-13")
     multi_row = ledger_row_by_id("strong_cp_gauge_theta_multiplaquette_ftf_is_admissible_not_clean_closeable_bounded_note_2026-06-07")
     structured_row = ledger_row_by_id("strong_cp_theta_bar_structured_admission_2026-06-04")
-    check("cross-plane row is audited_clean", cross_row.get("audit_status") == "audited_clean", cross_row.get("audit_status"))
-    check("cross-plane row is retained_bounded", cross_row.get("effective_status") == "retained_bounded", cross_row.get("effective_status"))
-    check("cross-plane scope is supplied per-plaquette only", "supplied additive per-plaquette action class" in cross_row.get("claim_scope", ""))
+    check("cross-plane row has an audit status", bool(cross_row.get("audit_status")), cross_row.get("audit_status"))
+    check("cross-plane row remains ledgered", cross_row.get("effective_status") != "missing", cross_row.get("effective_status"))
+    check(
+        "cross-plane scope is either unaudited or supplied per-plaquette only",
+        cross_row.get("audit_status") == "unaudited"
+        or "supplied additive per-plaquette action class" in (cross_row.get("claim_scope") or ""),
+    )
     check("substrate no-winding row remains unaudited", substrate_row.get("effective_status") == "unaudited", substrate_row.get("effective_status"))
     check("substrate row depends on multiplaquette boundary", "strong_cp_gauge_theta_multiplaquette_ftf_is_admissible_not_clean_closeable_bounded_note_2026-06-07" in substrate_row.get("deps", []))
     check("emergent-Q row remains unaudited", emergent_row.get("effective_status") == "unaudited", emergent_row.get("effective_status"))

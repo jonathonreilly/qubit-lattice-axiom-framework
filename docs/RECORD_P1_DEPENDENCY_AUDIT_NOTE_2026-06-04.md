@@ -318,7 +318,7 @@ pipeline/audit-queue property after the generated surfaces are recomputed.
 - [docs/audit/data/axiom_premise_nodes.json](audit/data/axiom_premise_nodes.json) — machine-readable axiom
   node registry; `observable_principle_from_axiom_note` is NOT in
   this file and must not be added.
-- [docs/audit/data/tier_a_admissions.json](audit/data/tier_a_admissions.json) — admitted-input registry;
+- [docs/audit/data/premise_decision_history.json](audit/data/premise_decision_history.json) — non-authoritative admission-era history;
   `AC_phi_lambda` and other Tier-A admissions live here, not in
   axiom-premise nodes.
 

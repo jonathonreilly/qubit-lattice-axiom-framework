@@ -278,7 +278,7 @@ unregistered conditional blocker.
 3. **The remaining Tier-A target is context only.** The canonical
    `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` remains the
    registered Tier-A derivation target `AC_phi_lambda` in
-   `docs/audit/data/tier_a_admissions.json`, but this note no longer uses it
+   `docs/audit/data/premise_decision_history.json`, but this note no longer uses it
    as the D=4 taste-count authority. The unresolved target here is the
    physical order-parameter/readout identification, not the finite `2^4 = 16`
    count or the fixed-density coefficient-to-scale algebra.

@@ -26,7 +26,7 @@ This note proves one bounded fact:
 
 It does not discharge the strong-CP mass-orientation premise by itself,
 derive the strong-CP action-form premise, or change
-`docs/audit/data/tier_a_admissions.json`. Those moves require later
+`docs/audit/data/premise_decision_history.json`. Those moves require later
 registry/audit handling and the determinant-readout bridge cited below, whose
 audit status is owned by the independent audit lane.
 

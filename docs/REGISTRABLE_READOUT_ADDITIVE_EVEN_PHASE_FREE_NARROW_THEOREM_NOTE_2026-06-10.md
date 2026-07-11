@@ -31,7 +31,7 @@ could use if a separate physical-readout theorem supplies the missing
 identification.
 
 It does **not** retire either Tier-A admission, edit
-`docs/audit/data/tier_a_admissions.json`, remove bounded status from any
+`docs/audit/data/premise_decision_history.json`, remove bounded status from any
 consumer, derive `|delta| = 2/9`, supply the global `Cl(3)/Z^3 -> PL S^3 x R`
 identification, close strong-CP premise 1 ("no bare `theta` slot"), or change
 the Record axiom boundary. It does **not** derive phase-group additivity from

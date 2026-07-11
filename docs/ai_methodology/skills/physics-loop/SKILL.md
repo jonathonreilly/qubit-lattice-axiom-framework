@@ -243,7 +243,7 @@ hypothetical status.
 Every theorem/support/no-go note and every loop `STATE.yaml` checkpoint must
 state the narrowest status using the controlled vocabulary. When a result
 depends on a new axiom, unapproved primitive, same-surface family,
-observational admission, fitted selector, Tier-A admitted derivation target, or
+observational input, fitted selector, open derivation obligation, or
 human judgment, the actual current surface status is **not** `retained`.
 
 **No-new-axiom/no-new-primitive rule.** The repo does NOT accept extensions to
@@ -279,12 +279,11 @@ current surface." This labeling does not promote the axiom — only an
 external repo-wide governance decision does that, and physics-loop
 runs do NOT make such decisions.
 
-Approved framework primitives are a separate accepted-premise class, not
-bounded imports. They must already be recorded in
+Approved framework primitives are supplied foundation content alongside the
+axioms, not bounded imports. They must already be recorded in
 `docs/audit/data/axiom_premise_nodes.json`, where they chain-satisfy
-dependencies without bounding downstream rows. Tier-A admitted derivation
-targets live in `docs/audit/data/tier_a_admissions.json` and remain bounded
-until retired. The approved axiom baseline is the current
+dependencies without bounding downstream rows. No admission class exists;
+decision history has zero premise weight. The approved axiom baseline is the current
 Lattice/Qubit/Admissibility/Record surface: no site is privileged; sites are
 distinguished by the supplied lattice structure alone; no possibility is
 privileged; possibilities are distinguished by the supplied algebraic structure
@@ -303,9 +302,9 @@ data, occupancy rule, P2/modulus, log-det, source/action, scale,
 state-selection rule, law-domain derivation, or arbitrary observable
 identification. The
 scale-reference primitive is the approved units primitive; do not describe it
-as a Tier-A admission or a bounded Planck import. The kinetic-isotropy
+as an admission or a bounded Planck import. The kinetic-isotropy
 primitive is the approved structural OS0 kinetic-form isotropy `c_t = c_s`;
-do not describe it as a Tier-A admission, a bounded import, a Lorentz-closure
+do not describe it as an admission, a bounded import, a Lorentz-closure
 theorem, a dynamics, an absolute scale, a spacing-ratio theorem, or an
 empirical match.
 Before writing a wall/import/dependency statement in `STATE.yaml`,

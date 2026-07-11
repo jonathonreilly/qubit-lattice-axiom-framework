@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py
-runner_sha256: 7c649e0d8d4802a00c6669a137487ab685cd31d24c5446ddecf59a3ebdec6e40
+runner_sha256: 33037535cb2cf199cbd987cf1e94cca398b4b8c26bd8087a749681a8163e3c38
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.62
+elapsed_sec: 0.34
 status: ok
 ----- stdout -----
 PASS: S1.1 C^3 = I and eigenvalues of C are {1, w, w^2}

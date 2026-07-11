@@ -66,7 +66,7 @@ It does not.
   `S_sum = 3L = 2/3`, while excluding the physical readout bridge. This is a
   target/comparator arithmetic surface, not a derivation of R-eta.
 - [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
-  and [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json)
+  and [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json)
   name the surviving R-eta atom as the density-read-as-angle / holonomy-readout
   identification.
 

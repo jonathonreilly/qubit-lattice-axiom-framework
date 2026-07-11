@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_minimal_axioms_clean_base_exact.py
-runner_sha256: 3131e7297c563d671f6ba5991de56d6fdb2a49a88f5f6d0373e90c1ced946584
+runner_sha256: ac7674b3c2b33ec50378e4db12a75bd8aade91317ccd0535741597cc092e8863
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 PASS: Source note exists
@@ -13,7 +13,7 @@ PASS: Policy exists
 PASS: Axiom-premise registry exists
       docs/audit/data/axiom_premise_nodes.json
 PASS: Tier-A registry exists
-      docs/audit/data/tier_a_admissions.json
+      docs/audit/data/premise_decision_history.json
 PASS: Source type is meta
       framework memo, not theorem row
 PASS: Source status is current public framework axiom memo

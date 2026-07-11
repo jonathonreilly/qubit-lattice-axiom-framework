@@ -202,7 +202,7 @@ surface**, with four named admitted-context inputs.
 ### 5.2 What this bridge does NOT do
 
 - Does **not** set, promote, or change any row's `effective_status`.
-- Does **not** add any new admission to `tier_a_admissions.json` or any
+- Does **not** add any new admission to `premise_decision_history.json` or any
   axiom to `axiom_premise_nodes.json`.
 - Does **not** promote any of P1-P3 to retained.
 - Does **not** claim the package-level `v_hierarchy = v` as a derived

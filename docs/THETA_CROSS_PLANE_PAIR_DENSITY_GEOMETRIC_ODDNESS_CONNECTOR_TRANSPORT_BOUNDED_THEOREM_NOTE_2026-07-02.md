@@ -12,7 +12,7 @@ re-grade any Tier-A admission, or claim Strong-CP closure.
 Tier-A by retained derivation. This note banks a historical bounded support
 calculation for the theta-side cross-plane density campaign; it does not
 reopen, modify, or re-grade the theta retirement record or
-`tier_a_admissions.json`.
+`premise_decision_history.json`.
 **Primary runner:**
 [`scripts/theta_cross_plane_pair_density_geometric_oddness_connector_transport_2026_07_02.py`](../scripts/theta_cross_plane_pair_density_geometric_oddness_connector_transport_2026_07_02.py)
 **Runner cache:**
@@ -118,7 +118,7 @@ note's runner.
    open sibling PRs.
 
 4. **Retired theta registry text**
-   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
+   ([`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json),
    historical gauge-side context, quoted from the retired entry): the
    residual was "localized to the multi-plaquette / large-gauge-winding
    account (within the supplied per-plaquette class the local cross-plane F

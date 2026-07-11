@@ -26,7 +26,7 @@ KINETIC_B4_NOGO = ROOT / "docs" / "KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_
 KINETIC_BW_NOGO = ROOT / "docs" / "KINETIC_BW_OS0_IDENTIFICATION_BRIDGE_INTERFACE_NO_GO_NOTE_2026-06-16.md"
 KINETIC_COMPOSITION = ROOT / "docs" / "KINETIC_ISOTROPY_COMPOSITION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-06-09.md"
 REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+TIER_A = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 SCALE_RUNNER = ROOT / "scripts" / "scale_reference_primitive_boundary_check.py"
 
@@ -168,9 +168,9 @@ def main() -> int:
         "Hygiene Repairs Verified On 2026-07-10" in note
         and "completed hygiene repairs are not retirement evidence" in note,
     )
-    check("review note has current-main posture line", "Current-main posture (2026-07-06)" in note)
-    check("review note records live Tier-A zero posture", "Tier-A count\nzero" in note or "Tier-A count zero" in note)
-    check("review note says premise registries are not reopened", "`axiom_premise_nodes.json`" in note and "does not reopen, modify, or\nre-grade either Tier-A retirement record" in note)
+    check("review note has current-main posture line", "Current-main posture (2026-07-11)" in note)
+    check("review note records the sole foundation", "sole\n  axiom/approved-primitive foundation" in note)
+    check("review note records absence of an admission registry", "absence of an admission registry" in note)
     for idx in range(1, 9):
         check(f"review note carries N{idx} no-go-discipline section", f"**N{idx}" in note)
     check("N1 records at least five attempted routes", note.count("`ATTEMPTED`") >= 5)
@@ -181,9 +181,9 @@ def main() -> int:
 
     print("Hygiene diagnostic checks")
     stale_count_check = "Tier-A registry genuine count remains two" in scale_runner
-    current_count_check = "Tier-A registry genuine count is zero after the 2026-07-05 retirements" in scale_runner
+    current_count_check = "note rejects an admission registry" in scale_runner
     check(
-        "scale boundary runner carries the current Tier-A count gate",
+        "scale boundary runner rejects an admission registry",
         current_count_check and not stale_count_check,
     )
     old_baseline_refs = [

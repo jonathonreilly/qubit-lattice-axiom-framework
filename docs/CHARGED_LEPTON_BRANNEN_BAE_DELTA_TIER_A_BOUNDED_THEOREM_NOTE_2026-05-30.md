@@ -15,7 +15,7 @@ value to be derived or rejected by later source science.
 In parallel, the framework's Tier-A admitted-input registry
 [`docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
 (meta on origin/main) and its machine sibling
-[`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json)
+[`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json)
 classify the generation mass-pattern phase — "the C_3-breaking phase
 delta (which collapses into the same delta tracked as the Koide
 phase)" — as part of the framework's `AC_phi_lambda` non-axiom Tier-A
@@ -193,7 +193,7 @@ falsifiability tracking only.
 | [`CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10`](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md) | retained positive_theorem | S4 supporting equivalence |
 | [`KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09`](KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md) | retained positive_theorem | S1 algebraic ansatz foundation |
 | [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md) | meta (audit-decided) | (TA) authority: classifies the Koide phase delta as `AC_phi_lambda` Tier-A admission |
-| [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json) | machine registry | (TA) authority sibling; pipeline reads this for status propagation |
+| [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json) | non-authoritative history | provenance only; the pipeline does not read this for status propagation |
 | [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md) | retained_no_go | S2 no-go portfolio member; establishes (TA)'s irreducibility from A1-route content |
 | [`KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25`](KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md) | retained_bounded | sharpens (TA) boundary: pins what a radian-bridge postulate would have to supply |
 | `LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26` | open_gate | non-load-bearing context: previously landed companion with the open-derivation framing; this note is the Tier-A-admission-framed companion |

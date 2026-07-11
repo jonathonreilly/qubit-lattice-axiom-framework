@@ -71,7 +71,7 @@ approved primitive, or derived theorem.
   registry and beta-family/type mismatch directly rather than importing those
   unaudited rows as retained-grade proof.
 - [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
-  and [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json)
+  and [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json)
   still name `delta_readout_identification_R_eta` as a live AC_phi_lambda atom.
 
 ## Theorem

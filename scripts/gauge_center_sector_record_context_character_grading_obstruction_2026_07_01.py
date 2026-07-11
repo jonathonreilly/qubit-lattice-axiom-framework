@@ -430,7 +430,7 @@ check("F1 note declares canonical bounded_theorem claim type",
 check("F1 note does not use runner PASS as source status",
       "**Status:** PASS" not in NOTE)
 check("F1 note graph-links the Tier-A registry quote",
-      "(audit/data/tier_a_admissions.json)" in NOTE)
+      "(audit/data/premise_decision_history.json)" in NOTE)
 check("F1 note graph-links the retained RP-half no-go row",
       "(STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md)" in NOTE)
 check("F1 unaudited no-winding-carrier note is non-load-bearing context",

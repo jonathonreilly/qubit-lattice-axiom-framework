@@ -47,7 +47,7 @@ kinetic-isotropy primitives, does not supply the missing weighting rule.
    primitive supplies only unit conversion, and the kinetic-isotropy primitive
    supplies only the structural OS0 kinetic-form ratio `c_t = c_s`.
 
-5. `docs/audit/data/tier_a_admissions.json` currently registers two admitted
+5. `docs/audit/data/premise_decision_history.json` historically records two formerly admitted
    derivation targets and does not register `kappa_EW`.
 
 Together these facts show that `kappa_EW` is not derivable from the approved

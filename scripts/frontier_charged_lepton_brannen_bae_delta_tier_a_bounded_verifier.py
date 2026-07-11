@@ -119,7 +119,7 @@ ROOT = repo_root()
 
 TIER_A_AUTHORITIES = [
     "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
-    "docs/audit/data/tier_a_admissions.json",
+    "docs/audit/data/premise_decision_history.json",
 ]
 
 for relpath in TIER_A_AUTHORITIES:

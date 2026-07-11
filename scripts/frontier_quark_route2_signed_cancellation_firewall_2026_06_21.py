@@ -205,7 +205,7 @@ def part5_quote_anchors() -> None:
 def part6_registered_premise_scan() -> None:
     print("\nPART 6: registered premise scan")
     premise = (AUDIT_DATA / "axiom_premise_nodes.json").read_text(encoding="utf-8")
-    tier_a = (AUDIT_DATA / "tier_a_admissions.json").read_text(encoding="utf-8")
+    tier_a = (AUDIT_DATA / "premise_decision_history.json").read_text(encoding="utf-8")
     json.loads(premise)
     json.loads(tier_a)
     combined = (premise + "\n" + tier_a).lower()

@@ -66,13 +66,10 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   sign/factor/normalization check, or a reopened issue says the runner math was
   wrong, treat the formula family as suspect and choose a non-clean verdict
   unless the restricted packet contains a valid independent repair.
-- Tier-A admitted derivation targets are accepted non-axiom premises only when
-  already listed in `docs/audit/data/tier_a_admissions.json`; they satisfy
-  dependency closure only at the bounded tier, so downstream clean rows remain
-  `retained_bounded` until the admission is retired by a retained derivation.
-  Tier-A convention entries are registry metadata, not accepted premises. Do
-  not recognize, add, or imply any new Tier-A admission without explicit user
-  approval and a reviewed registry update.
+- No admission class exists. `docs/audit/data/premise_decision_history.json`
+  is non-authoritative history and must never satisfy or bound a dependency.
+  Scientific content outside the axiom/approved-primitive foundation must be
+  retained-derived or remain conditional/open.
 - Apply the No-Go Discipline gate (`no-go-discipline` skill, checks N1-N8) before recording any verdict on a row with `claim_type: no_go`, a `bounded_theorem` whose source note names walls/admissions, or an `audited_conditional` whose `verdict_rationale` would name walls. Negative-claim overclaims foreclose investigation paths permanently and require the same scrutiny as positive-claim overclaims. If any N1-N8 check fails on the source note, choose the more conservative non-clean verdict whose `verdict_rationale` reflects the honest narrower claim scope; do not record `audited_clean`, and do not transcribe the source note's inflated wall list into the ledger.
 - **Vocabulary is auto-corrected, not adjudicated.** The repo's process vocabulary is canonical in [`docs/repo/controlled_vocabulary.yaml`](../../../repo/controlled_vocabulary.yaml) (design in [`VOCABULARY_HYGIENE_DESIGN.md`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md)). Before writing an audit verdict, run `scripts/vocab_lint.py --fix` on the source note under audit. Routine local drift that has a non-link-aware rewrite rule, such as legacy aliases and deprecated wording, is rewritten mechanically; link-aware filename suffix migrations and F-letter finding-label migrations are reported but deferred to Cleanup-2 tooling. This is a normal commit step, never a science verdict. Record what was rewritten in the ledger row's `prose_corrections` field and set `prose_status: auto_corrected`. When `vocab_lint --fix` changed the source note, include a `pre_audit_prose_fix` envelope on the audit blob carrying `{old_hash, new_hash, prose_status, prose_corrections}` so `apply_audit.py` atomically refreshes `note_hash` before the hash-drift check. If `vocab_lint` cannot mechanically rewrite a violation (genuinely new term, link-aware rename pending, or F-letter migration pending), set `prose_status: needs_human_vocab_decision` — but **do not** translate this into a non-clean `audit_status`. Physics and prose are separate verdicts. A clean derivation with vocabulary drift lands as `(audit_status: audited_clean, prose_status: auto_corrected)`; a clean derivation that introduces a genuinely new term lands as `(audit_status: audited_clean, prose_status: needs_human_vocab_decision)`. Never assign `audited_renaming` or `audited_conditional` on prose grounds alone.
 - Repo-wide axioms and explicitly approved framework primitives are accepted
@@ -106,18 +103,18 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   source/action bridges, scale, local observability, law-admissibility or
   transition relations, kinetic-branch selection, or arbitrary observable
   identification remain compatible targets but require derivation, bridge,
-  explicit admission, or approved primitive registration before use as
+  retained derivation or approved primitive registration before use as
   load-bearing content. The scale-reference primitive is the approved units
-  primitive, not a Tier-A admission or a bounded Planck import. The
+  primitive, not an admission or a bounded Planck import. The
   kinetic-isotropy primitive is the approved structural OS0 kinetic-form
-  isotropy `c_t = c_s`, not a Tier-A admission or a bounded-status source; it
+  isotropy `c_t = c_s`, not an admission or a bounded-status source; it
   supplies no dynamics, Lorentz-closure theorem, absolute scale,
   spacing-ratio theorem, mass ratio, coupling, mixing angle, phase, selector,
   readout bridge, probability rule, normalization rule, or empirical match. Do
   not recognize, add, or imply any new axiom or new primitive without explicit
   user approval and a reviewed registry/policy update.
-- Before treating any premise as an import, missing dependency, no-go wall,
-  Tier-A admission, or bounded-status source, perform
+- Before treating any premise as an import, missing dependency, no-go wall, or
+  bounded-status source, perform
   `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. If the only
   otherwise non-retained dependency is the registered
   `scale_reference_primitive`, do not bound the row for using the Planck

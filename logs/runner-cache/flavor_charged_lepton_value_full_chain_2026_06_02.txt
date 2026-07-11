@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_charged_lepton_value_full_chain_2026_06_02.py
-runner_sha256: 8c26493edd80cfdc396f630b8a675ab954b5590e7bf57a7474f6e0e256b1d640
+runner_sha256: 226febab1faaae2a49558453b96291e1b8c29b332f7d486941f07fd28b1b04ee
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 [PASS] L1 one-qubit local algebra carries the unique j=1/2 su(2) module (Casimir=3/4) [per_site_su2_spin_half]

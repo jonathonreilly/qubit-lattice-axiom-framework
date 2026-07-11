@@ -95,11 +95,11 @@ entry in `docs/audit/data/axiom_premise_nodes.json`. Dependencies on
 checks only elementary algebra/notation sanity for the four axiom names. It
 does not derive or enlarge the axiom set.
 
-Axioms and approved primitives are not Tier-A admitted derivation targets.
+Axioms and approved primitives are the complete supplied foundation.
 Depending on the Lattice, Qubit, Admissibility, or Record axiom, or on an
 explicitly approved primitive such as `scale_reference_primitive`, must not be
-treated as a source of bounded status. Bounded status belongs to non-axiom
-Tier-A admissions recorded in `docs/audit/data/tier_a_admissions.json`.
+treated as a source of bounded status. No admission class exists: every other
+scientific dependency must be retained-derived or remain conditional/open.
 
 ## Relation To Dynamics And Kinetic Branch Selection
 

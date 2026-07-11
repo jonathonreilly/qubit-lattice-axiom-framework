@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/unit_conversion_is_accepted_non_bounding_ruler_runner.py
-runner_sha256: 4229c36491c43a26a8eb8a6ae9294ba930b53fea3e783e879af508be5713d3fa
+runner_sha256: fc5d86d81ff1d0f33e662905fe7b3b1f81ae435b78dd111ed2bc37816a3f4769
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -23,7 +23,7 @@ A2. dimensionFUL = (dimensionless) x (the ONE ruler) -- Buckingham-Pi
 A3. the ruler is an APPROVED, NON-BOUNDING primitive (policy section 6) -- not a Tier-A admitted premise
 ==============================================================================
    scale_reference_primitive (axiom_premise_nodes.json, owner-approved): chain-satisfies WITHOUT bounding
-   Tier-A admitted import (tier_a_admissions.json): chain-satisfies only at retained_bounded
+   Admission classes are retired: non-foundational inputs do not chain-satisfy
   [PASS] a row whose only non-retained dependency is the ruler is retention-eligible at the FULL tier  | relying on the ruler neither blocks nor caps the result
 
 ==============================================================================

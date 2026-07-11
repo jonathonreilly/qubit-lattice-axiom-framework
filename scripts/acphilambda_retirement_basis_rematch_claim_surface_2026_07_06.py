@@ -14,7 +14,7 @@ import premise_nodes  # noqa: E402
 def main() -> int:
     data = ROOT / "docs" / "audit" / "data"
     obligations = json.loads((data / "derivation_obligations.json").read_text(encoding="utf-8"))
-    tier = json.loads((data / "tier_a_admissions.json").read_text(encoding="utf-8"))
+    tier = json.loads((data / "premise_decision_history.json").read_text(encoding="utf-8"))
     ids = set(obligations.get("canonical_ids") or [])
     expected = {
         "ac_orbit_occupancy_statistical_grain_derivation_obligation",

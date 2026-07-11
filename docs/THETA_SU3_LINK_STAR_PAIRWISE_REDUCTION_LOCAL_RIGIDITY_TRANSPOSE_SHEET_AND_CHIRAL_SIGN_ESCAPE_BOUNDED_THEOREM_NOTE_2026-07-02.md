@@ -12,7 +12,7 @@ re-grade any Tier-A admission, or claim Strong-CP closure.
 Tier-A by retained derivation. This note banks a historical bounded support
 calculation for the theta-side local link-star campaign; it does not reopen,
 modify, or re-grade the theta retirement record or
-`tier_a_admissions.json`.
+`premise_decision_history.json`.
 **Primary runner:**
 [`scripts/theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02.py`](../scripts/theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02.py)
 **Runner cache:**
@@ -128,7 +128,7 @@ search found none, but that is evidence, not proof — see Non-claims).
    runner. No sibling wall note is consumed as a premise.
 
 3. **Retired theta registry text**
-   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
+   ([`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json),
    gauge side): the historical residual was "localized to the
    multi-plaquette / large-gauge-winding account"; link stars are that
    account's local structure and this note answers their SU(3) reduction

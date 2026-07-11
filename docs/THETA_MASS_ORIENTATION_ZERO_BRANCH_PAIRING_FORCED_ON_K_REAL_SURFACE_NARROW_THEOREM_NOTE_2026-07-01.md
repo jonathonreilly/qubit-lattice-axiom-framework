@@ -28,7 +28,7 @@ set or predict an audit outcome and does not edit any audit-owned registry.
 The Tier-A `theta` registry row's mass-side minimum statement localizes the
 residual to "the discrete orientation `arg det M in {0, pi} -> 0` on the
 K-real reading, localized onto the named determinant-readout bridge"
-(`docs/audit/data/tier_a_admissions.json`, minimum form 2026-06-11). The
+(`docs/audit/data/premise_decision_history.json`, minimum form 2026-06-11). The
 landed chain around that residual currently splits as:
 
 - continuous determinant phase characters are erased by K/CPT orbit
@@ -173,7 +173,7 @@ block with `arg det` bounded away from `{0, π}`. ∎
   (the Brannen form; couplings remain the free dial — nothing here selects
   them).
 - Context only, no dependency edge: the theta registry minimum statement
-  (`docs/audit/data/tier_a_admissions.json`);
+  (`docs/audit/data/premise_decision_history.json`);
   `STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`
   (whose positive-mass convention this note makes non-load-bearing for the
   orientation);

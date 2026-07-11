@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "SCALE_REFERENCE_PRIMITIVE_NOTE.md"
 POLICY = ROOT / "docs" / "audit" / "AXIOM_MINIMALITY_POLICY.md"
 REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
-TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+TIER_A = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 PURITY_GUARD = ROOT / "docs" / "audit" / "scripts" / "check_axiom_premise_clean.py"
 RUNNER = "scripts/scale_reference_primitive_boundary_check.py"
 CLAIM_ID = "scale_reference_primitive"
@@ -118,14 +118,14 @@ def main() -> int:
     )
 
     check(
-        "Tier-A registry genuine count is zero after the 2026-07-05 retirements",
+        "decision history preserves zero final admission count",
         tier_a.get("genuine_admitted_input_count") == 0,
         str(tier_a.get("genuine_admitted_input_count")),
     )
-    check("scale primitive is not a Tier-A derivation target", CLAIM_ID not in derivation_targets)
-    check("Tier-A registry records scale as reclassified primitive", bool(tier_a_scale))
+    check("scale primitive was never a historical derivation target", CLAIM_ID not in derivation_targets)
+    check("decision history records scale reclassification provenance", bool(tier_a_scale))
     check(
-        "Tier-A reclassification says not status-bounding",
+        "historical reclassification says not status-bounding",
         "not a status-bounding dependency" in tier_a_scale.get("statement", ""),
     )
 
@@ -138,8 +138,8 @@ def main() -> int:
     check("note says it does not assert a/l_P = 1 as derived", "It does not assert `a/l_P = 1` as a derived theorem." in note)
     check("note says it does not supply dimensionless quantity", "It does not supply any dimensionless quantity." in note)
     check("note says it does not change audit verdicts", "It does not change any audit verdict." in note)
-    check("note distinguishes axiom-premise registry from Tier-A admissions", "axiom_premise_nodes.json" in note and "tier_a_admissions.json" in note)
-    check("note assigns scale primitive to first registry", "belongs to the first registry, not the second" in note)
+    check("note names the sole foundation registry", "axiom_premise_nodes.json" in note and "sole foundation registry" in note)
+    check("note rejects an admission registry", "no admission registry or third premise class exists" in note)
 
     forbidden_claims = (
         r"derives?\s+(?:the\s+)?Planck length",

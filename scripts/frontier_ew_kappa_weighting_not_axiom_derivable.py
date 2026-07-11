@@ -18,7 +18,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md"
 AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
-TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+TIER_A = ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 AXIOM_PREMISES = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 
 PASS = 0

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_doublet_clock_rate_normalization_no_go_2026_07_04.py
-runner_sha256: 1c650462a3f3588c9723c11b25067e17b53c9c1b088ad92d202074139696b29a
+runner_sha256: 1e97a812e50cd65812c49e7bf63d6e7c4ab6fef7f9847040551ff8926fc10d2f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.03
+elapsed_sec: 1.08
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta doublet-clock rate-normalization no-go verifier
@@ -12,7 +12,7 @@ AC_phi_lambda R-eta doublet-clock rate-normalization no-go verifier
 A. source presence and Tier-A boundary
 ========================================================================================
 [PASS] exists: docs/ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
 [PASS] exists: docs/audit/data/axiom_premise_nodes.json

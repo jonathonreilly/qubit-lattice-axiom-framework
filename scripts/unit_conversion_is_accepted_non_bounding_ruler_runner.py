@@ -72,7 +72,7 @@ approved_primitive_bounds = False                  # scale_reference_primitive d
 tier_a_import_bounds = True                         # a Tier-A admission DOES cap at retained_bounded
 non_bounding = (approved_primitive_bounds is False) and (tier_a_import_bounds is True)
 print("   scale_reference_primitive (axiom_premise_nodes.json, owner-approved): chain-satisfies WITHOUT bounding")
-print("   Tier-A admitted import (tier_a_admissions.json): chain-satisfies only at retained_bounded")
+print("   Admission classes are retired: non-foundational inputs do not chain-satisfy")
 check("a row whose only non-retained dependency is the ruler is retention-eligible at the FULL tier",
       non_bounding, "relying on the ruler neither blocks nor caps the result")
 

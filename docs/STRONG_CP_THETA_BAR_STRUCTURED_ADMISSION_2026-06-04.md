@@ -101,7 +101,7 @@ claimed as `PASS`. The open routes are explicit:
 
 - It does not solve Strong CP.
 - It does not retire or split `strong_cp_theta_zero_note` in
-  `docs/audit/data/tier_a_admissions.json`.
+  `docs/audit/data/premise_decision_history.json`.
 - It does not introduce a new axiom, primitive, or Tier-A admission.
 - It does not turn axioms or primitives into bounded-status sources.
 - It does not apply an audit verdict.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_center_sector_record_context_character_grading_obstruction_2026_07_01.py
-runner_sha256: 05f46ffd15b7240a5394edbd60943c48223cc23f04810540c1a37726d0955b82
+runner_sha256: 0971122f5c11bda4c71f4cde846546f28cd920d64acf480baa7415d2bb548c22
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.46
 status: ok
 ----- stdout -----
 Section A: center action is diagonal on characters

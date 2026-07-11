@@ -181,7 +181,6 @@ OUTPUT_BOUNDARY_FIELDS = (
 
 AXIOM_REGISTRY = "docs/audit/data/axiom_premise_nodes.json"
 OBLIGATION_REGISTRY = "docs/audit/data/derivation_obligations.json"
-TIER_A_REGISTRY = "docs/audit/data/tier_a_admissions.json"
 CONTROLLED_VOCABULARY = "docs/repo/controlled_vocabulary.yaml"
 ACTIVE_REVIEW_QUEUE = "docs/repo/ACTIVE_REVIEW_QUEUE.md"
 PREMISE_CLASSES_CHECKED = {
@@ -360,16 +359,6 @@ def build_cross_cycle_index(
         add_history(dep_id, list(ledger_rows.get(dep_id, {}).get("previous_audits") or []))
 
     root = Path(repo_root)
-    tier_a = _load_json(root, TIER_A_REGISTRY)
-    for retired_id, record in sorted((tier_a.get("retired_derivation_targets") or {}).items()):
-        candidates.append(
-            {
-                "candidate_id": f"tier_a_retirement:{retired_id}",
-                "kind": "tier_a_retirement",
-                "source_claim_id": retired_id,
-                "record": record,
-            }
-        )
     obligations = _load_json(root, OBLIGATION_REGISTRY)
     for obligation_id, record in sorted((obligations.get("nodes") or {}).items()):
         candidates.append(
@@ -512,16 +501,6 @@ def build_partial_closure_index(
             source_path=OBLIGATION_REGISTRY,
             content=(obligations.get("nodes") or {}).get(obligation_id, {}),
         )
-    tier_a = _load_json(root, TIER_A_REGISTRY)
-    for premise_id, record in sorted((tier_a.get("conventions") or {}).items()):
-        add_candidate(
-            candidate_id=f"convention_reframe:{premise_id}",
-            kind="convention_reframe",
-            source_path=TIER_A_REGISTRY,
-            content=record,
-            accepted_premise_type="convention_not_accepted",
-        )
-
     keyword_re = re.compile(
         r"\b(?:axiom|primitive|convention|definition|label(?:ing)?|meta|ratif\w*|refram\w*)\b",
         re.IGNORECASE,
@@ -627,7 +606,6 @@ def build_partial_closure_index(
             "search_scope": {
                 "foundation_registry": AXIOM_REGISTRY,
                 "open_obligation_registry": OBLIGATION_REGISTRY,
-                "historical_registry": TIER_A_REGISTRY,
                 "controlled_vocabulary": {
                     "path": CONTROLLED_VOCABULARY,
                     "content_sha256": hashlib.sha256(vocabulary_text.encode("utf-8")).hexdigest(),
@@ -729,12 +707,6 @@ def build_evidence_manifest(
         path=OBLIGATION_REGISTRY,
         role="open_obligation_registry",
         text=_read_text(root, OBLIGATION_REGISTRY),
-    )
-    _add_evidence(
-        manifest,
-        path=TIER_A_REGISTRY,
-        role="historical_registry",
-        text=_read_text(root, TIER_A_REGISTRY),
     )
     _add_evidence(
         manifest,

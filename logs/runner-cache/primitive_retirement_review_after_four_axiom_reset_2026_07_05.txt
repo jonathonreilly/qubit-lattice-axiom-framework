@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py
-runner_sha256: a572bbd0ae4c4c04df04c1893b98a5401bfeb0bb542acc36a6596a22919589ea
+runner_sha256: 8fca6159c4303d7f5f1f0174e5326bc8e1c9497e5475eb9c907d661825ac78b6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -80,8 +80,8 @@ Review-note conclusion checks
 [PASS] review note records kinetic bridge stack needed for retirement
 [PASS] review note records completed hygiene repairs without science reclassification
 [PASS] review note has current-main posture line
-[PASS] review note records live Tier-A zero posture
-[PASS] review note says premise registries are not reopened
+[PASS] review note records the sole foundation
+[PASS] review note records absence of an admission registry
 [PASS] review note carries N1 no-go-discipline section
 [PASS] review note carries N2 no-go-discipline section
 [PASS] review note carries N3 no-go-discipline section
@@ -96,7 +96,7 @@ Review-note conclusion checks
 [PASS] N4 distinguishes exact, support-only, and partial residual matches
 
 Hygiene diagnostic checks
-[PASS] scale boundary runner carries the current Tier-A count gate
+[PASS] scale boundary runner rejects an admission registry
 [PASS] primitive source notes carry no pre-reset baseline narrative
 
 Verdicts

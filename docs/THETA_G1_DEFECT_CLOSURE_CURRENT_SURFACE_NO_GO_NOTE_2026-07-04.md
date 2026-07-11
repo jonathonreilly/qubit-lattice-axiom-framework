@@ -5,7 +5,7 @@
 **Claim type:** no_go
 **Scope boundary:** first-principles route test for G1, the defect-closure
 gate on the abelianized theta gauge carrier. This note does not retire theta,
-does not set `theta_bar = 0`, does not edit any Tier-A registry, primitive,
+does not set `theta_bar = 0`, does not create any admission registry, primitive,
 axiom, audit verdict, or publication-status surface, and does not claim that a
 future constraint-level or dynamical defect-suppression route is impossible.
 **Audit boundary:** independent audit lane only.
@@ -82,7 +82,7 @@ The present framework surface therefore localizes G1; it does not close it.
 | Record/readout rule | Reads existing record content; it does not manufacture closedness or select a defect-free sector. |
 | Admissibility | Allows possibilities; it is not a dynamics axiom and does not select the closed branch. |
 | G3 phase insertion work | The phase slot remains open and cannot bypass the carrier's need for defect discipline. |
-| Tier-A registry | The gauge-side winding residual remains present; the registry is not edited by this block. |
+| admission-era decision history | The gauge-side winding residual remains present; the registry is not edited by this block. |
 
 ## Exact Algebraic Boundary
 
@@ -114,7 +114,7 @@ future constraint-level, defect-energy, or scaling-limit route cannot close G1.
 ## What Does Not Move
 
 - Theta is not retired.
-- The Tier-A registry is not edited.
+- No admission registry is created.
 - No axiom or primitive is changed.
 - No audit status or effective status is changed.
 - No claim is made that future defect-closure or defect-suppression work is

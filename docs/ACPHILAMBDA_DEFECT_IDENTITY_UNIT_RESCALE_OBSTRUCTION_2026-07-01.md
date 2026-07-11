@@ -170,7 +170,7 @@ number `2/9` with the angular offset `delta` — and nowhere else.
 That junction already has two registered names:
 
 - Tier-A `AC_phi_lambda` sub-admission (ii), verbatim from
-  [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json):
+  [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json):
   "the delta readout identification
   R-eta (density-read-as-angle; the magnitude 2/9 is retained-bounded
   fixed-locus arithmetic conditional on R-eta, not an admitted number)".

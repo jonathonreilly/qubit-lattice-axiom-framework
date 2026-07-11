@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_retirement_basis_rematch_claim_surface_2026_07_06.py
-runner_sha256: 3eeb640b4dec9351f6a9c7aa3af12c878b5c0c208a7b030e5b471cba972fd066
+runner_sha256: 8504964d8f73697171ecb817f1bd27ba3de1ea07a2c3f71ec80b2ade94218d65
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py
-runner_sha256: f201a57f0a14394e4f17f574feb9a29e795775bdc9fc7abd5210791fcb4749fc
+runner_sha256: 82a2f9f2bbd24788ddf7c8d76f4fe86730d4be990d79c29c8f691d24be2f2aa8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
 AC_phi_lambda measure binary axiom-update no-go verifier
@@ -14,7 +14,7 @@ A. source presence and audit anchors
 [PASS] exists: docs/ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
 [PASS] exists: docs/audit/data/axiom_premise_nodes.json
-[PASS] exists: docs/audit/data/tier_a_admissions.json
+[PASS] exists: docs/audit/data/premise_decision_history.json
 [PASS] exists: docs/audit/data/audit_ledger.json
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 [PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md

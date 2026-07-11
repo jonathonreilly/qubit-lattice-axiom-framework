@@ -11,10 +11,11 @@ sys.path.insert(0, str(ROOT / "docs" / "audit" / "scripts"))
 import premise_nodes  # noqa: E402
 
 DATA = ROOT / "docs" / "audit" / "data"
-TIER = DATA / "tier_a_admissions.json"
+HISTORY = DATA / "premise_decision_history.json"
 OBLIGATIONS = DATA / "derivation_obligations.json"
 FOUNDATION = DATA / "axiom_premise_nodes.json"
 OLD_OWNER_REGISTRY = DATA / "owner_governed_premise_nodes.json"
+OLD_ADMISSION_REGISTRY = DATA / "tier_a_admissions.json"
 
 
 def load(path: Path) -> dict:
@@ -27,14 +28,16 @@ def main() -> int:
     def check(label: str, value: bool) -> None:
         checks.append((label, bool(value)))
 
-    tier = load(TIER)
+    history = load(HISTORY)
     obligations = load(OBLIGATIONS)
     foundation = load(FOUNDATION)
     obligation_ids = set(obligations.get("canonical_ids") or [])
 
-    check("historical admission count is zero", tier.get("genuine_admitted_input_count") == 0)
-    check("historical admission ids are empty", tier.get("canonical_ids") == [])
-    check("historical derivation-target map is empty", tier.get("derivation_targets") == {})
+    check("admission registry is absent", not OLD_ADMISSION_REGISTRY.exists())
+    check("decision history is explicitly non-authoritative", "Non-authoritative" in history.get("description", ""))
+    check("historical admission count is zero", history.get("genuine_admitted_input_count") == 0)
+    check("historical admission ids are empty", history.get("canonical_ids") == [])
+    check("historical derivation-target map is empty", history.get("derivation_targets") == {})
     check("retired governance registry is absent", not OLD_OWNER_REGISTRY.exists())
     check(
         "exact AC obligations are live",

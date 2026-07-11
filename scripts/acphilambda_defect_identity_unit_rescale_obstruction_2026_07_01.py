@@ -60,7 +60,7 @@ def main() -> int:
         "docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md",
         "docs/MINIMAL_AXIOMS_2026-06-29.md",
         "docs/audit/data/axiom_premise_nodes.json",
-        "docs/audit/data/tier_a_admissions.json",
+        "docs/audit/data/premise_decision_history.json",
         "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
         "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
         "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
@@ -77,7 +77,7 @@ def main() -> int:
     flat_note = flat(note)
     axioms = read("docs/MINIMAL_AXIOMS_2026-06-29.md")
     registry = read("docs/audit/data/axiom_premise_nodes.json")
-    tier_a = read("docs/audit/data/tier_a_admissions.json")
+    tier_a = read("docs/audit/data/premise_decision_history.json")
     scale = flat(read("docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md"))
     kinetic = flat(read("docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"))
     realized = flat(read("docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"))

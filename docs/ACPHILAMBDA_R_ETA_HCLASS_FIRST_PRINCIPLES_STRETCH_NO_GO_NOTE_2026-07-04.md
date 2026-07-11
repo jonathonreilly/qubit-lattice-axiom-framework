@@ -61,7 +61,7 @@ allowed as a load-bearing step.
   axiom/primitive premise nodes. None registers h-class, R-eta, or a physical
   observable bridge.
 - [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
-  and [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json)
+  and [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json)
   still name `delta_readout_identification_R_eta` as a live AC_phi_lambda atom.
 - [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
   supplies the forced C3 fixed-locus weights `(1,2)` and the local density

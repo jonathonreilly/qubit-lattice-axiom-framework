@@ -35,7 +35,7 @@ here, now lives in
 with its own runner; it is context for this note, not load-bearing.)
 
 It does not strip the `AC_phi_lambda` admission by itself, derive
-`|delta| = 2/9`, or change `docs/audit/data/tier_a_admissions.json`.
+`|delta| = 2/9`, or change `docs/audit/data/premise_decision_history.json`.
 Those moves require later registry/audit handling and any missing bridge named
 below.
 

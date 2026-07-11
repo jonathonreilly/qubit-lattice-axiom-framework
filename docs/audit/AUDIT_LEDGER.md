@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 353 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2817 |
+| unaudited | 2816 |
 | audit_in_progress | 19 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 46 |
+| ~~audited_conditional~~ | 47 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,21 +46,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 444 |
-| `audited_conditional` | 46 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3167 |
+| `unaudited` | 3166 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2043 |
+| `bounded_theorem` | 2044 |
 | `decoration` | 26 |
 | `meta` | 357 |
 | `no_go` | 462 |
 | `open_gate` | 195 |
-| `positive_theorem` | 664 |
+| `positive_theorem` | 663 |
 
 | criticality | count |
 |---|---:|
@@ -594,6 +594,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `color_comp_hurwitz_clause_scope_reduction_narrow_theorem_note_2026-07-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | B | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -2343,6 +2344,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 9 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
 - **auditor confidence:** high
+
+### `dm_neutrino_cascade_geometry_note_2026-04-14`
+
+- **Note:** [`DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md`](../../docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact C^8 projected-matrix geometry for the explicitly defined Gamma_1 and fixed O_0/T_1/T_2 bases, together with the bounded inference that it motivates a second-order neutrino-cascade search surface; no physical Dirac-Yukawa theorem is audited as closed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00040-dm_neutrino_cascade_geometry`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the explicitly chosen weak-axis generator, the second-order return on T_1 splits as diag(1,0,0) through O_0 plus diag(0,1,1) through T_2, summing to I_3.  _(class `C`)_
+- **chain closes:** False — The runner genuinely constructs and verifies the six finite-dimensional operator identities. The further inference to a physical neutrino cascade lacks the C^16 chiral embedding, physical Dirac-operator chain, and neutrino-sector normalization explicitly left open by the note.
+- **rationale:** Issue: the computed C^8 matrix identities close, but they do not construct the physical neutrino Dirac-Yukawa carrier or operator map. Why this blocks: the claim that this is the physically relevant second-order cascade surface depends on three explicit bridge steps absent from the restricted packet. Repair target: supply a C^16 chiral/right-handed embedding theorem, the physical Dirac-Yukawa operator chain, and its base normalization, or split the exact matrix theorem from the physical interpretation. Claim boundary until fixed: the six projected-matrix identities are exact for the selected representation, while their neutrino-physics significance remains conditional.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1: the C^16 embedding, physical Dirac-Yukawa operator chain, and neutrino-sector normalization routes remain OPEN.
+    - N3: the physical interpretation depends on three explicit unclosed bridge assumptions.
+    - N5: the runner tests only the selected C^8 representation and does not test the broader physical resolutions named by the source.
 
 ### `dm_neutrino_weak_vector_theorem_note_2026-04-15`
 

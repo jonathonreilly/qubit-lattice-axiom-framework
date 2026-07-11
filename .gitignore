@@ -42,3 +42,6 @@ env/
 # Long-running plaquette MC checkpoints are large resume artifacts; commit the
 # JSON summaries and per-stream outputs, not the active lattice checkpoints.
 outputs/plaquette_mc_grade4_2026_06_11/checkpoints/
+logs/runner-cache/d3_bar_window_checkpoints/*.npz
+logs/runner-cache/d3_bar_window_checkpoints/full_run_stdout.log
+logs/runner-cache/d3_bar_window_checkpoints/full_run_progress.log

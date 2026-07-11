@@ -1,0 +1,39 @@
+loop_slug: d3-bar-window
+created: 2026-07-11
+mode: campaign (owner-commissioned successor to d3-bar-location:
+  "go and then also execute it" — window-plus-boundary bar-location
+  protocol; execution through the overnight run authorized in the
+  same directive)
+execution_split: workhorse (supervisor authored and froze the delta
+  memo personally; codex worker gpt-5.6-sol/max forks the runner;
+  supervisor diff-reviews, executes validate and the full run)
+design_basis: docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md (FROZEN
+  delta inheriting the complete route-C protocol of
+  docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md). Four lambdas
+  {0.02, 0.05, 0.10, 0.20}; W_full completeness (>= 2 lambdas at the
+  full delta ladder, headline persistence); theta* delta- AND
+  field-stability factors < 1.5; boundary bracket reported, never
+  gated; lambda = 0.20 stays commissioned and may fail lawfully as
+  the boundary measurement; lambda = 0.02 tests that theta* is a
+  threshold, not a clock reading.
+measured_basis: the 2026-07-10 run (PR #5144) — first certified
+  onsets (Jt=0.6/0.7, theta*~0.50, opposite pair), independence
+  closure C_55 = 0.005/0.017/0.060 across lambda, realized throughput
+  8.28 s/unit (recalibrated preflight floor; projection ~7.1 h).
+blocks: >
+  Block01: frozen delta memo (supervisor) DONE. Block02: runner fork
+  (worker; review surface = diff vs parent runner). Block03:
+  supervisor validate (four cold doublet builds incl. lambda=0.02,
+  30 min allowance). Block04: detached full run (~7 h), bounded note,
+  PR (base = d3-bar-location branch, stacks above #5144).
+current_block: block02 — fork worker running
+current_branch: physics-loop/d3-bar-window-block01-20260711
+worktree: /Users/jonBridger/tp-matter-mass-wep
+imports: inherited verbatim from the parent frozen memo (QD reading;
+  declared comparator inputs; not basis-neutral; finite volume).
+discipline: physics-loop standard; vocab_lint before commits; commit
+  early; stop and write up on any axiom trigger; no retuning after
+  freeze — the delta memo is already frozen and hashed.
+next_exact_action: diff-review fork on worker return; then validate;
+  then launch scripts/d3_bar_window_launch_detached.sh
+stop_condition_hit: none

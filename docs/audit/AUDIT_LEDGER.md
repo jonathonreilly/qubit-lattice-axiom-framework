@@ -84,7 +84,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1968 | 222.94 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1968 | 223.94 | `unaudited` | meta |
 | 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1598 | 64.64 | `audited_clean` | **retained** |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1182 | 62.71 | `unaudited` | unaudited |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 61.64 | `unaudited` | unaudited |

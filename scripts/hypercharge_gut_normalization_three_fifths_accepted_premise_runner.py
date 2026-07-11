@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Verify the Hypercharge GUT-Normalization 3/5 accepted-premise bridge.
+"""Verify the Hypercharge GUT-Normalization 3/5 declared bounded-premise bridge.
 
 The runner uses fractions.Fraction arithmetic only for the science checks.
 It verifies (B1)-(B7), then pins the named-premise and dependency surfaces
-of the bridge and its R_base consumer. It registers rather than derives the
-(P1a) hypercharge multiset and (P1b) equal-family-trace scheme.
+of the bridge and its R_base consumer. It consumes rather than derives the
+(D1) hypercharge multiset and (D2) equal-family-trace scheme.
 
 Outputs a check list and TOTAL line; exits nonzero if any check fails.
 """
@@ -41,7 +41,7 @@ BRIDGE_LINK = f"[{BRIDGE_NAME}]({BRIDGE_NAME})"
 
 
 def evaluate() -> list[Check]:
-    # (B1)-(B3): family squared traces and the registered scheme composition.
+    # (B1)-(B3): family squared traces and the declared scheme composition.
     y_squared_trace = (
         6 * Fraction(1, 6) ** 2
         + 3 * Fraction(2, 3) ** 2
@@ -84,7 +84,7 @@ def evaluate() -> list[Check]:
     su3_squared_y = Fraction(1, 3) - Fraction(2, 3) + Fraction(1, 3)
     su2_squared_y = Fraction(1, 2) - Fraction(1, 2)
 
-    # (B7): exact substitution into the registered R_base identity.
+    # (B7): exact substitution into the declared R_base identity.
     r_base = Fraction(3, 5) * Fraction(155, 27)
 
     bridge_exists = BRIDGE_PATH.is_file()
@@ -94,7 +94,7 @@ def evaluate() -> list[Check]:
         CONSUMER_PATH.read_text(encoding="utf-8") if consumer_exists else ""
     )
     fenced_multiset_pins = (
-        "```text\n(P1) Hypercharge GUT-normalization accepted-premise packet."
+        "```text\n(D) Hypercharge GUT-normalization declared bounded-premise packet."
         in bridge_text
         and "Q_L : (SU(2) doublet, SU(3) triplet,  Y = +1/6)"
         in bridge_text
@@ -117,10 +117,12 @@ def evaluate() -> list[Check]:
         Check("(B6) SU(2)^2-Y = 0", su2_squared_y == 0, str(su2_squared_y)),
         Check("(B7) (3/5)*(155/27) = 31/9", r_base == Fraction(31, 9), str(r_base)),
         Check("bridge note exists", bridge_exists, str(BRIDGE_PATH)),
-        Check("bridge registers the (P1a) tag", "(P1a)" in bridge_text),
-        Check("bridge registers the (P1b) tag", "(P1b)" in bridge_text),
-        Check("bridge contains the fenced (P1) multiset block", fenced_multiset_pins),
-        Check("bridge boundary says it does NOT derive the premise", "does NOT derive (P1a) or (P1b)" in bridge_text),
+        Check("bridge declares the (D1) tag", "(D1)" in bridge_text),
+        Check("bridge declares the (D2) tag", "(D2)" in bridge_text),
+        Check("bridge contains the fenced bounded-premise block", fenced_multiset_pins),
+        Check("bridge boundary says it does NOT derive the premises", "does NOT derive (D1) or (D2)" in bridge_text),
+        Check("bridge marks D1/D2 as supplied admissions", "supplied admissions" in bridge_text),
+        Check("bridge denies registry/framework authority", "not registry-approved" in bridge_text and "not framework-derived" in bridge_text),
         Check("bridge has the load-bearing hypercharge markdown link", HYPERCHARGE_LINK in bridge_text),
         Check("consumer note exists", consumer_exists, str(CONSUMER_PATH)),
         Check("consumer note links this bridge", BRIDGE_LINK in consumer_text),
@@ -128,8 +130,8 @@ def evaluate() -> list[Check]:
 
 
 def main() -> int:
-    print("Hypercharge GUT-normalization 3/5 accepted-premise bridge")
-    print("Exact Fraction arithmetic; (P1a) and (P1b) are registered inputs.")
+    print("Hypercharge GUT-normalization 3/5 declared bounded-premise bridge")
+    print("Exact Fraction arithmetic; (D1) and (D2) are supplied admissions.")
     print()
 
     checks = evaluate()

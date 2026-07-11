@@ -54,16 +54,16 @@ def evaluate() -> list[Check]:
     casimir_ratio = numerator / denominator
     r_base = gut_norm * casimir_ratio
 
-    registered_y_squared_trace = (
+    declared_y_squared_trace = (
         6 * Fraction(1, 6) ** 2
         + 3 * Fraction(2, 3) ** 2
         + 3 * Fraction(1, 3) ** 2
         + 2 * Fraction(1, 2) ** 2
         + Fraction(1, 1)
     )
-    registered_t3_squared_trace = 8 * Fraction(1, 4)
-    registered_gut_norm = registered_t3_squared_trace / registered_y_squared_trace
-    registered_r_base = registered_gut_norm * Fraction(155, 27)
+    declared_t3_squared_trace = 8 * Fraction(1, 4)
+    declared_gut_norm = declared_t3_squared_trace / declared_y_squared_trace
+    declared_r_base = declared_gut_norm * Fraction(155, 27)
 
     root = Path(__file__).resolve().parents[1]
     bridge_name = (
@@ -101,16 +101,17 @@ def evaluate() -> list[Check]:
     ]
     checks.extend(
         [
-            Check("registered-premise arithmetic: Tr(Y^2) = 10/3", registered_y_squared_trace == Fraction(10, 3), str(registered_y_squared_trace)),
-            Check("registered-premise arithmetic: Tr(T_3^2) = 2", registered_t3_squared_trace == Fraction(2, 1), str(registered_t3_squared_trace)),
-            Check("registered-premise arithmetic: 2/(10/3) = 3/5", registered_gut_norm == Fraction(3, 5), str(registered_gut_norm)),
-            Check("registered-premise composition: (3/5)*(155/27) = 31/9", registered_r_base == Fraction(31, 9), str(registered_r_base)),
+            Check("declared-premise arithmetic: Tr(Y^2) = 10/3", declared_y_squared_trace == Fraction(10, 3), str(declared_y_squared_trace)),
+            Check("declared-premise arithmetic: Tr(T_3^2) = 2", declared_t3_squared_trace == Fraction(2, 1), str(declared_t3_squared_trace)),
+            Check("declared-premise arithmetic: 2/(10/3) = 3/5", declared_gut_norm == Fraction(3, 5), str(declared_gut_norm)),
+            Check("declared-premise composition: (3/5)*(155/27) = 31/9", declared_r_base == Fraction(31, 9), str(declared_r_base)),
             Check("r_base note contains the bridge filename", bridge_name in note_text),
-            Check("r_base note names explicit accepted-premise registration", "explicit accepted-premise registration" in note_text),
+            Check("r_base note names declared bounded premise packet", "declared bounded premise packet" in note_text),
             Check("r_base note removes stale hypercharge-lane admission text", "retained/admitted from the hypercharge-identification lane" not in note_text),
-            Check("accepted-premise bridge note exists", bridge_path.is_file(), str(bridge_path)),
-            Check("accepted-premise bridge contains (P1a)", "(P1a)" in bridge_text),
-            Check("accepted-premise bridge contains (P1b)", "(P1b)" in bridge_text),
+            Check("bounded-premise bridge note exists", bridge_path.is_file(), str(bridge_path)),
+            Check("bounded-premise bridge contains (D1)", "(D1)" in bridge_text),
+            Check("bounded-premise bridge contains (D2)", "(D2)" in bridge_text),
+            Check("D1/D2 are supplied admissions", "supplied admissions" in bridge_text),
         ]
     )
     return checks

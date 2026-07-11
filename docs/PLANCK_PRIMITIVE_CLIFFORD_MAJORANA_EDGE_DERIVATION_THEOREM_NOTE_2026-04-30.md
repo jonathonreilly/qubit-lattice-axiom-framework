@@ -454,10 +454,10 @@ carrier realization; its current audit state is in progress. It therefore
 does not supply the event-cell intertwiner or copy selector. The current
 minimal-axiom and Tier-A registries contain no carrier premise, and the
 controlled vocabulary contains no convention whose ratification changes an
-`SU(2)` representation type. The 2026-07-10 open-PR scan found PR #5135,
-which registers a different one-site P-QBIT carrier premise and does not close
-this `Cl_4`/`P_A` event-cell residual; it found no in-flight repair of this
-intertwiner. The existing link-local selector closes only support selection on
+`SU(2)` representation type. The repository-visible partial-closure scan found
+a different one-site P-QBIT carrier premise, which does not close this
+`Cl_4`/`P_A` event-cell residual, and found no source authority that repairs
+this intertwiner. The existing link-local selector closes only support selection on
 its bounded source surface, not representation descent.
 
 ### N7 Steelman

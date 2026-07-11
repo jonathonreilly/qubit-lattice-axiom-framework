@@ -3,7 +3,7 @@ runner: scripts/frontier_planck_primitive_clifford_substrate_descent_obstruction
 runner_sha256: 118e129a2a5ed70f395151a5c567894d3e779cc46d7f0f4794afa7135d6a018a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.16
+elapsed_sec: 1.27
 status: ok
 ----- stdout -----
 ==============================================================================

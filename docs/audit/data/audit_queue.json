@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 651,
     "high": 334,
-    "leaf": 1149,
+    "leaf": 1148,
     "medium": 756
   },
   "cycle_break_target_count": 49,
@@ -50765,30 +50765,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "realized_state_primitive"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.5,
-      "note_path": "docs/DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_det_phase_capture_vs_order_2026_06_12.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -82312,6 +82288,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 599,
-  "total_pending": 2890
+  "ready_count": 598,
+  "total_pending": 2889
 }

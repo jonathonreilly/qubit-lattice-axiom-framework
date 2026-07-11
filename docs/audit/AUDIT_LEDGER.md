@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 84 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 356 |
+| **retained_bounded** | 357 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 4 |
-| unaudited | 2826 |
+| unaudited | 2825 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 449 |
+| `audited_clean` | 450 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3176 |
+| `unaudited` | 3175 |
 
 | claim_type | count |
 |---|---:|
@@ -223,6 +223,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `dimensional_gravity_table` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2124,6 +2125,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The channel-count guard is not a no-op on the runner's seed-range loop: aggregate eff_ch and aggregate flip count both move under the guard relative to plain pruning.  _(class `C`)_
 - **chain closes:** True — The provided runner source and helper sources compute the graph generation, pruning, guarded pruning, gravity, purity, effective channel count, and flip aggregation directly rather than printing hard-coded expected values. The cached stdout supports the narrowed aggregate claim: eff_p changes under the guard in every printed configuration and total flips drop from 7 unguarded to 3 guarded across the four aggregate rows.
 - **rationale:** The source note has been narrowed to exactly the cached runner's aggregate seed-range surface, and the runner output is present with exit_code 0. The primary runner imports helpers that are included in the packet and uses them in the load-bearing path; no helper appears to import the contested conclusion, hard-code the printed aggregate values, or substitute a definition for the claim. The aggregate flip reduction is true in the summed printed rows, although not in every individual configuration, which is acceptable under the narrowed aggregate scope.
+- **auditor confidence:** high
+
+### `det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The five explicitly seeded free-sector L=3 trajectories with tau=0.35 and T=256, projected onto nested signed-gap exact-tone spans through order 8.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00380-det_phase_harmonic_depth_sta`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The K=6 state reaches the 0.99 capture threshold at order 4 with capture 0.995, whereas the other supplied states do not reach 0.99 through order 8.  _(class `C`)_
+- **chain closes:** True — The runner constructs the finite free-sector trajectories and exact-tone bases, then computes the capture fractions without importing or hard-coding the resulting values. Its table directly establishes the mixed threshold-crossing pattern within the stated finite scope.
+- **rationale:** The load-bearing result is a genuine finite first-principles computation: the capture values and saturation orders arise from constructed projectors, unitary evolution, determinant-phase increments, and exact-tone least-squares projections. Rank, nonzero-signal, basis-span, threshold, and monotonicity gates all pass, and no external comparator or tuned target value is used. The accepted realized-state primitive is used correctly to classify the differing pointwise results as supplied-state data, without asserting selection, weighting, typicality, or behavior beyond the tested family.
 - **auditor confidence:** high
 
 ### `dimensional_gravity_table`

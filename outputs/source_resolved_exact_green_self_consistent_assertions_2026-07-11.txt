@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/source_resolved_exact_green_self_consistent.py
-runner_sha256: 3e822faa4f9ae32ed6a108220889a73471be0ab9246bd203164aacf66fa7a297
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 16.81
-status: ok
------ stdout -----
 ====================================================================================
 SOURCE-RESOLVED EXACT GREEN SELF-CONSISTENT
   compact exact h=0.25 refinement family, one self-consistency update
@@ -65,6 +57,3 @@ CALIBRATED_GAIN_DECLARED_ROLE=frozen_input_not_independent_amplitude_prediction
 COMPARATOR_AMPLITUDE_IS_INDEPENDENT_PREDICTION=FALSE
 SOURCE_RESOLVED_GREEN_FULL_SELF_CONSISTENT_FIELD_THEORY=FALSE
 RESIDUAL_SCOPE=fully_converged_self_consistent_field_theory_and_uncalibrated_amplitude
-
------ stderr -----
-

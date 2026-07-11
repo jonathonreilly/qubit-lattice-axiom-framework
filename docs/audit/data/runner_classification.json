@@ -32232,6 +32232,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_route2_readout_record_positivity_no_go.py"
     },
+    "rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 18,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/rp_multislice_halfspace_os_gram_certificate.py"
+    },
     "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10": {
       "assert_count": 2,
       "counts": {
@@ -89999,6 +90011,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/rp_multislice_halfspace_os_gram_certificate.py": {
+      "assert_count": 1,
+      "claims": [
+        "rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 18,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py": {
       "assert_count": 1,
       "claims": [
@@ -93452,12 +93479,12 @@
     "dominant_class_distribution": {
       "A": 513,
       "B": 662,
-      "C": 1316,
+      "C": 1317,
       "D": 456,
       "none": 458
     },
-    "runners_classified": 3405,
-    "runners_with_C": 1798,
+    "runners_classified": 3406,
+    "runners_with_C": 1799,
     "runners_with_D": 1096
   }
 }

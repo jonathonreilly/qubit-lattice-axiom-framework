@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py
+runner_sha256: ff4cd8e5d02e559634f900fa7b17658a0b97330795d203d2e6521dbd4e7ade8c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.73
+status: ok
+----- stdout -----
 Complex-vs-realified determinant-power countermodels
 ====================================================================
 
@@ -68,10 +76,13 @@ Part F: source and axiom guards
   [PASS] N3 records required phrase scan
   [PASS] N4 uses no prior negative witness
   [PASS] N5 names tested resolutions
-  [PASS] N6 preserves action, coordinate, and governance paths
+  [PASS] N6 preserves action, coordinate, and open-obligation paths
   [PASS] N7 contains normalization and complex-field steelmen
   [PASS] N8 distinguishes phase from determinant power
   [PASS] discipline gate records PASS
 
 ====================================================================
 TOTAL: PASS=54, FAIL=0
+
+----- stderr -----
+

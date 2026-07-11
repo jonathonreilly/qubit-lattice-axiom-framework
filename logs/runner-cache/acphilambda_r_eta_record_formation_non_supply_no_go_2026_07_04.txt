@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_record_formation_non_supply_no_go_2026_07_04.py
-runner_sha256: f79ba40415b03dfca922211e4a5db92e3df6bf65f623fd3bc385cf8b76f4b3e1
+runner_sha256: 73a93f60b65c5ffcb2586e565b25bc8ba85aca87b4cadaf15ff8e61ec6d2538d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta Record-formation non-supply no-go
@@ -23,15 +23,15 @@ PASS: exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2
 PASS: exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 PASS: note declares no-go claim type
 PASS: runner path is wired in note
-PASS: live Tier-A genuine count is zero
-PASS: canonical Tier-A IDs are empty on current main
+PASS: decision history live premise count is zero
+PASS: decision history canonical live IDs are empty
 PASS: live derivation targets are empty on current main
 PASS: AC retired-target record is preserved
 PASS: AC obligation correction date is recorded -- {'date': '2026-07-11', 'mechanism': 'historical_governance_retirement_withdrawn_obligations_reopened', 'owner_direction': 'Only axioms and approved primitives may be supplied physics premises; the prior governance-only AC channel is withdrawn.', 'historical_owner_approval': "On 2026-07-05 the owner approved #4991's governance adoption of four Block49 residual candidates. That decision remains provenance only and no longer supplies a physics dependency.", 'adoption_source': 'docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md', 'open_derivation_obligations': ['ac_orbit_occupancy_statistical_grain_derivation_obligation', 'ac_reta_hclass_hunit_readout_derivation_obligation'], 'boundary': 'The historical record supplies no physics content. AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout are open until retained derivations close their exact obligation rows.', 'non_laundering': 'No governance record, historical admission, or open obligation chain-satisfies a dependency. Source-side theorem/no-go packet statuses remain audit-lane-owned.'}
 PASS: AC obligations are reopened -- {'date': '2026-07-11', 'mechanism': 'historical_governance_retirement_withdrawn_obligations_reopened', 'owner_direction': 'Only axioms and approved primitives may be supplied physics premises; the prior governance-only AC channel is withdrawn.', 'historical_owner_approval': "On 2026-07-05 the owner approved #4991's governance adoption of four Block49 residual candidates. That decision remains provenance only and no longer supplies a physics dependency.", 'adoption_source': 'docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md', 'open_derivation_obligations': ['ac_orbit_occupancy_statistical_grain_derivation_obligation', 'ac_reta_hclass_hunit_readout_derivation_obligation'], 'boundary': 'The historical record supplies no physics content. AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout are open until retained derivations close their exact obligation rows.', 'non_laundering': 'No governance record, historical admission, or open obligation chain-satisfies a dependency. Source-side theorem/no-go packet statuses remain audit-lane-owned.'}
 PASS: historical AC decomposition retains R-eta -- ['reading_occupancy_selection', 'delta_readout_identification_R_eta', 'species_bridge']
 PASS: registry prose names R-eta obligation
-PASS: note denies AC retirement
+PASS: note keeps R-eta open
 PASS: note denies registry/axiom/primitive edits
 PASS: note has current-main posture line
 PASS: note records open-obligation posture

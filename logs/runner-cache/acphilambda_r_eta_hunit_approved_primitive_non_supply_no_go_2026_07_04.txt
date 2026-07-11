@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.py
-runner_sha256: 74b217c54040f71e905408b94613e01893580e16a714a740e2dfda495a5b7233
+runner_sha256: e8fc1a4f869b4740ddce73e684ba8ac325c8a6438c2d3ed6af53dd8f5b1d7ba0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.37
+elapsed_sec: 2.62
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta h-unit approved-primitive non-supply no-go verifier
 
 ========================================================================================
-A. source presence and Tier-A boundary
+A. source presence and current premise boundary
 ========================================================================================
 [PASS] exists: docs/ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/audit/data/premise_decision_history.json
@@ -25,7 +25,7 @@ A. source presence and Tier-A boundary
 [PASS] exists: docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md
 [PASS] exists: docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md
-[PASS] Tier-A has no live admitted inputs
+[PASS] decision history has no live premise inputs
 [PASS] AC minimum decomposition keeps R-eta
 [PASS] AC minimum decomposition keeps occupancy separate
 [PASS] AC statement names R-eta
@@ -108,10 +108,10 @@ D. h-unit source pins
 [PASS] conversion source contains direct `c = 1` reading
 [PASS] conversion source contains no primitive `c != 1` conversion carrier
 [PASS] conversion source contains Does not turn the proposed R-eta identification into a retained axiom
-[PASS] direct-license Block43 source contains h-unit is not supplied
-[PASS] direct-license Block43 source contains Phi_beta = beta S_sum
-[PASS] direct-license Block43 source contains target is `beta = 1`
-[PASS] direct-license Block43 source contains A future direct readout-license theorem remains possible
+[PASS] direct-license Block43 source contains h-unit remains unentailed after h-class has been supplied
+[PASS] direct-license Block43 source contains Phi_beta = I_beta(C) = 3 beta h
+[PASS] direct-license Block43 source contains target is `beta=1`
+[PASS] direct-license Block43 source contains future same-observable holonomy theorem
 [PASS] defect source contains identity-unit member `c = 1`
 [PASS] defect source contains rescale-breaking
 [PASS] defect source contains W_defect_identity_unit

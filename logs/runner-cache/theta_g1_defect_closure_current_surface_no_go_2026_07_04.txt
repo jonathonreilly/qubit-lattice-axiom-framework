@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_g1_defect_closure_current_surface_no_go_2026_07_04.py
-runner_sha256: 0bd9d697b02e569d41fd535650de59b39263e4deca5f278bc58e84009039544d
+runner_sha256: 000e36dbc87c43c18890fb9a4f8342990cc2b467adcb0dca36109f6b94e4f650
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.09
+elapsed_sec: 2.17
 status: ok
 ----- stdout -----
 theta G1 defect-closure current-surface no-go verifier
@@ -43,7 +43,7 @@ A. source presence and ledger grounding
 B. admission-era decision history
 ========================================================================================
 [PASS] decision history preserves zero final admission count
-[PASS] canonical Tier-A IDs are empty on current main
+[PASS] decision history canonical live IDs are empty
 [PASS] live derivation targets are empty on current main
 [PASS] theta retired-target record is preserved
 [PASS] theta disposition correction date is recorded

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py
-runner_sha256: 9a399483e7d34234ac115b252e5eef27fb4f5242afc5963889390d3b5a50a84c
+runner_sha256: e99263441a6aca2cef0a5dd8347300c708833c1921c2b3673485ef217ddcd905
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -17,8 +17,8 @@ Registry/front-door checks
 [PASS] scale primitive current path is stable
 [PASS] kinetic primitive current path is stable
 [PASS] realized-state primitive current path is stable
-[PASS] Tier-A registry now has zero active admitted derivation targets -- 0
-[PASS] canonical Tier-A IDs are empty on current main -- []
+[PASS] decision history has zero active premise targets -- 0
+[PASS] decision history canonical live IDs are empty -- []
 [PASS] live derivation targets are empty on current main -- {}
 [PASS] theta retirement is recorded separately
 [PASS] AC_phi_lambda retirement is recorded separately

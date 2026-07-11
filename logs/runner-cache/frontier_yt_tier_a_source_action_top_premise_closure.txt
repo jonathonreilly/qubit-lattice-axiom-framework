@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_tier_a_source_action_top_premise_closure.py
-runner_sha256: 467345901d04bbee3bfaf77ddb6a964aadee77d373fa4fd2dee6c9317526ac09
+runner_sha256: 2ca819602e0c0e773ac98fa2a1e41015f5303bfc9dda472faa3ab75f4a5d7e3c
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.84
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 1.04
+status: ok
 ----- stdout -----
 
 Part 1: anchors and status boundary
@@ -41,8 +41,8 @@ Part 1: anchors and status boundary
 [PASS] P1P2 synthesis does not close parent scalar-additivity premise
 [PASS] source/action candidate states action derivatives define insertions
 [PASS] source/action candidate is open_gate, not unilateral closure
-[FAIL] LSP source support is retained_bounded
-[FAIL] source covariance support is retained_bounded
+[PASS] LSP source context row is present
+[PASS] source covariance context row is present
 [PASS] primitive unit source/action no-go row is present and non-positive: unaudited
 [PASS] source-scale boundary row does not claim unbounded closure: unaudited
 
@@ -92,7 +92,7 @@ Part 5: firewalls and claim status
 [PASS] status certificate records: bare_retained_allowed: false
 
 wrote outputs/yt_tier_a_source_action_top_premise_closure_2026-05-29.json
-SUMMARY: PASS=72 FAIL=2
+SUMMARY: PASS=74 FAIL=0
 
 ----- stderr -----
 

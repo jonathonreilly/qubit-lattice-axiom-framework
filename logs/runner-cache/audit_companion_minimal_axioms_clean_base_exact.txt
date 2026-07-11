@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_minimal_axioms_clean_base_exact.py
-runner_sha256: 538a03551910698ad3659c51b894fb381f0f94095dcb94bd4014536c22773d2d
+runner_sha256: c0d08cc6206d969ede83f555e65bfd4e3b045e98bd34008f2c98af77d2382d2e
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
@@ -12,7 +12,7 @@ PASS: Policy exists
       docs/audit/AXIOM_MINIMALITY_POLICY.md
 PASS: Axiom-premise registry exists
       docs/audit/data/axiom_premise_nodes.json
-PASS: Tier-A registry exists
+PASS: Decision-history file exists
       docs/audit/data/premise_decision_history.json
 PASS: Source type is meta
       framework memo, not theorem row
@@ -62,15 +62,15 @@ PASS: Policy records 2026-06-29 foundation reset
       
 PASS: Policy no-laundering clause lists Admissibility and Record boundaries
       
-PASS: Tier-A genuine admitted input count is zero after the 2026-07-05 retirements
+PASS: Decision history has zero live premise inputs
       0
-PASS: minimal_axioms is not a Tier-A derivation target
+PASS: minimal_axioms is not a historical derivation target
       
-PASS: Tier-A registry records Record as reclassified primitive
+PASS: Decision history records Record primitive provenance
       
-PASS: Tier-A Record reclassification source is current memo
+PASS: Record provenance source is current memo
       docs/MINIMAL_AXIOMS_2026-06-29.md
-PASS: Tier-A Record boundary forbids P2/log-det/source-action/context-selection laundering
+PASS: Record provenance boundary forbids P2/log-det/source-action/context-selection laundering
       
 PASS: Note names exactly four framework axioms
       

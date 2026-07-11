@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_tier_a_korbit_determinant_orientation_invariance_2026_06_09.py
-runner_sha256: 8b2e25e2139b18a08dcdd77760dd45fa24e8ffca721082bd64361a83ffbe5a0c
+runner_sha256: 97356b0981c20ed1c3817791a4c3c6e53029b88526e60a6acc86125943657c4d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.69
+elapsed_sec: 0.95
 status: ok
 ----- stdout -----
 K/CPT orientation invariance checks for the AC_phi_lambda gate

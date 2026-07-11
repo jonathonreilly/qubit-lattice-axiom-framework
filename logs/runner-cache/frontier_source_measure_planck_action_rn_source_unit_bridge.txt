@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_source_measure_planck_action_rn_source_unit_bridge.py
-runner_sha256: e9cd801115f7519ba8e5d1983d7c4286a9c3172f8f1f388a39d55c4b5469346f
+runner_sha256: 2fc7daaf03813b28fe8fd34ba09131950d531eeb3c9eac7fc8ab9d1b8b7936e8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.36
+elapsed_sec: 0.57
 status: ok
 ----- stdout -----
 ========================================================================================

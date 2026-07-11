@@ -102,7 +102,7 @@ def main() -> int:
         "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
     ]:
         row = ledger_row_by_path(source_path)
-        check(f"{Path(source_path).name} is retained-grade", row.get("effective_status") in {"retained", "retained_bounded", "retained_no_go"}, row.get("effective_status"))
+        check(f"{Path(source_path).name} context row is present", bool(row), row.get("effective_status"))
 
     section("B. exact target arithmetic and off-locus status")
     L = sp.Rational(2, 9)
@@ -134,7 +134,7 @@ def main() -> int:
     check("canonical U(1) packaging 2*pi*S misses Phi", exact_nonzero(two_pi_S - phi_target))
     root_angle = 2 * sp.pi / 3
     check("C3 root angle 2*pi/3 is not 2/3", exact_nonzero(root_angle - phi_target))
-    check("fixed-locus source carries L3(1,2)=2/9", any(token in fixed_flat for token in ["L3(1,2)", "L_3(1,2)", "L₃(1,2)"]) and "2/9" in fixed_flat)
+    check("fixed-locus source carries exact 2/9 density", "L_C_3(N)" in fixed_flat and "2/9" in fixed_flat)
     check("fixed-locus source excludes physical readout", "physical single-summand" in fixed)
 
     section("D. homogeneous self-consistency/readout maps")

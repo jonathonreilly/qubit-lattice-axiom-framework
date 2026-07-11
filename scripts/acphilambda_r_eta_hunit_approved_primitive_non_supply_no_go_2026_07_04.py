@@ -194,10 +194,10 @@ def main() -> int:
     ]:
         check(f"conversion source contains {phrase}", phrase in conversion_flat)
     for phrase in [
-        "h-unit is not supplied",
-        "Phi_beta = beta S_sum",
-        "target is `beta = 1`",
-        "A future direct readout-license theorem remains possible",
+        "h-unit remains unentailed after h-class has been supplied",
+        "Phi_beta = I_beta(C) = 3 beta h",
+        "target is `beta=1`",
+        "future same-observable holonomy theorem",
     ]:
         check(f"direct-license Block43 source contains {phrase}", phrase in direct_flat)
     for phrase in ["identity-unit member `c = 1`", "rescale-breaking", "W_defect_identity_unit"]:

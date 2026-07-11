@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_doublet_clock_rate_normalization_no_go_2026_07_04.py
-runner_sha256: 7cabd7e2c102ee3b796953c99025e04d45956e9a4ff6361a4d5ce064340a38d9
+runner_sha256: ae6d59170386acfa413a0415c7b6679ae0206ce11429bb181219b2083899cf40
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.14
+elapsed_sec: 2.06
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta doublet-clock rate-normalization no-go verifier
 
 ========================================================================================
-A. source presence and Tier-A boundary
+A. source presence and current premise boundary
 ========================================================================================
 [PASS] exists: docs/ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/audit/data/premise_decision_history.json
@@ -26,7 +26,7 @@ A. source presence and Tier-A boundary
 [PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
 [PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
 [PASS] exists: docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
-[PASS] Tier-A has no live admitted inputs
+[PASS] decision history has no live premise inputs
 [PASS] AC minimum decomposition keeps R-eta
 [PASS] AC minimum decomposition keeps occupancy separate
 [PASS] AC statement names density-read-as-angle R-eta

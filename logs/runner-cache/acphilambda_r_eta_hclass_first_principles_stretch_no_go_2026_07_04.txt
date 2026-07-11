@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py
-runner_sha256: 7b083186fe3bbcdd3718aaff51bede5427801d870f132946f6fcaae7d2646947
+runner_sha256: 5b837de159fe783abf02e58d283ada1b17b84caca8c102e5980e10374a765f26
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.53
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 AC_phi_lambda R-eta h-class first-principles stretch no-go verifier
 
 ========================================================================================
-A. source presence and Tier-A boundary
+A. source presence and current premise boundary
 ========================================================================================
 [PASS] exists: docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md
 [PASS] exists: docs/audit/data/premise_decision_history.json
@@ -18,7 +18,7 @@ A. source presence and Tier-A boundary
 [PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
 [PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
 [PASS] exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
-[PASS] Tier-A has no live admitted inputs
+[PASS] decision history has no live premise inputs
 [PASS] AC minimum decomposition keeps R-eta
 [PASS] AC minimum decomposition keeps occupancy separate
 [PASS] AC statement names R-eta
@@ -68,7 +68,7 @@ C. context-handle discipline and retained fixed-locus input
 [PASS] context handle is backticked in note: ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
 [PASS] context handle is backticked in note: ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
 [PASS] fixed-locus source contains 2/9
-[PASS] fixed-locus source contains forced transverse weights
+[PASS] fixed-locus source contains conjugate complex weights
 [PASS] fixed-locus source contains physical single-summand readout
 [PASS] note reproduces context boundary: h-class:
 [PASS] note reproduces context boundary: h-unit:
@@ -142,12 +142,10 @@ F. route accounting and audit row
 [PASS] new row claim_type is no_go
 [PASS] new row audit status remains unaudited
 [PASS] new row effective status remains unaudited
-[PASS] new row uses only the current foundation, support, and open gate
-[PASS] new row dependency includes minimal_axioms
-[PASS] new row dependency includes koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05
-[PASS] new row dependency includes ac_reta_hclass_hunit_readout_derivation_obligation
+[PASS] source note links the current R-eta open obligation
+[PASS] source note treats decision history as non-authoritative provenance
 
-TOTAL: PASS=115 FAIL=0 CHECKS=115
+TOTAL: PASS=113 FAIL=0 CHECKS=113
 
 ----- stderr -----
 

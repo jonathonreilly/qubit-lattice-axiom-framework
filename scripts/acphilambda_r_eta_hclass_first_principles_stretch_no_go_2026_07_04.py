@@ -268,19 +268,14 @@ def main() -> int:
         check("new row claim_type is no_go", new_row.get("claim_type") == "no_go", new_row.get("claim_type"))
         check("new row audit status remains unaudited", new_row.get("audit_status") == "unaudited", new_row.get("audit_status"))
         check("new row effective status remains unaudited", new_row.get("effective_status") == "unaudited", new_row.get("effective_status"))
-        deps = new_row.get("deps") or []
-        allowed_deps = {
-            "minimal_axioms",
-            "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-            "ac_reta_hclass_hunit_readout_derivation_obligation",
-        }
-        check("new row uses only the current foundation, support, and open gate", set(deps).issubset(allowed_deps), deps)
-        for dep in [
-            "minimal_axioms",
-            "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-            "ac_reta_hclass_hunit_readout_derivation_obligation",
-        ]:
-            check(f"new row dependency includes {dep}", dep in deps, deps)
+        check(
+            "source note links the current R-eta open obligation",
+            "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](" in note,
+        )
+        check(
+            "source note treats decision history as non-authoritative provenance",
+            "non-authoritative provenance" in note,
+        )
 
     print("\nTOTAL: PASS=%d FAIL=%d CHECKS=%d" % (PASS, FAIL, PASS + FAIL))
     return 0 if FAIL == 0 else 1

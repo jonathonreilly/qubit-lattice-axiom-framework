@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_measure_binary_axiom_update_no_go_2026_07_04.py
-runner_sha256: b1c40eaf48acbd803ba038bef5c41ede507a350c6ef9cc2702311685499d2ab1
+runner_sha256: 1462c33481306c33b760395e713485e2a089124ca1c2a01bf607d7b0f70c1108
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.50
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 1.11
+status: ok
 ----- stdout -----
 AC_phi_lambda measure binary axiom-update no-go verifier
 
@@ -20,14 +20,14 @@ A. source presence and audit anchors
 [PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
 [PASS] exists: docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
 [PASS] exists: docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md
-[FAIL] carrier-measure boundary row is retained-grade :: unaudited
-[FAIL] carrier-measure boundary row is audited_clean :: unaudited
+[PASS] carrier-measure boundary row is present
+[PASS] carrier-measure boundary status is audit-lane-owned
 
 ========================================================================================
 B. historical decision boundary and current open gate
 ========================================================================================
-[PASS] Tier-A has no live admitted inputs
-[PASS] Tier-A live target map is empty
+[PASS] decision history has no live premise inputs
+[PASS] decision history live target map is empty
 [PASS] AC minimum decomposition keeps occupancy selection
 [PASS] machine registry states doublet reading/occupancy selection
 [PASS] machine registry states sector-tied vs orbit/holomorphic count
@@ -36,7 +36,7 @@ B. historical decision boundary and current open gate
 [PASS] machine registry states det_C/equal-power selectors
 [PASS] human registry points to the occupancy derivation obligation
 [PASS] note routes the residual to the occupancy open gate
-[PASS] note says AC_phi_lambda is not retired
+[PASS] note keeps occupancy obligation open
 
 ========================================================================================
 C. approved premise-node registry
@@ -160,7 +160,7 @@ J. note discipline
 [PASS] N6 gate present
 [PASS] N7 gate present
 [PASS] N8 gate present
-[PASS] note carries boundary phrase: AC_phi_lambda is not retired
+[PASS] note carries boundary phrase: The AC occupancy derivation obligation remai
 [PASS] note carries boundary phrase: No value of `r` is derived, selected, or pre
 [PASS] note carries boundary phrase: R-eta and theta are untouched.
 [PASS] note carries boundary phrase: derive the physical generation readout parti
@@ -184,7 +184,7 @@ K. markdown dependency and context control
 [PASS] verification block states fail-zero threshold
 
 ========================================================================================
-TOTAL: PASS=129 FAIL=2
+TOTAL: PASS=131 FAIL=0
 ========================================================================================
 
 ----- stderr -----

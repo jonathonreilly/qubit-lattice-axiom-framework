@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 664,
+    "critical": 663,
     "high": 332,
     "leaf": 1132,
     "medium": 760
@@ -1863,28 +1863,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_cpt_exact.py",
       "transitive_descendants": 728
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
-      "claim_scope": "Inside the supplied standard Wilson plaquette action with Tr(T_a T_b)=delta_ab/2, leading small-a coefficient matching gives beta g_bare^2 = 2 N_c.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 8,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.474,
-      "note_path": "docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py",
-      "transitive_descendants": 710
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -55499,6 +55477,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -57088,6 +57090,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": null,
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py",
       "transitive_descendants": 0
     },
     {
@@ -73903,30 +73929,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "plaquette_beta9_environment_cluster_identification_narrow_theorem_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -81487,30 +81489,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "wilson_staggered_minimal_block_spectrum_bridge_note_2026-06-13",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -82277,6 +82255,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 596,
-  "total_pending": 2888
+  "ready_count": 597,
+  "total_pending": 2887
 }

@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 82 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 354 |
+| **retained_bounded** | 355 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2811 |
-| audit_in_progress | 23 |
+| audit_in_progress | 22 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 27 |
-| `audited_clean` | 445 |
+| `audit_in_progress` | 26 |
+| `audited_clean` | 446 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 25 |
@@ -142,7 +142,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -582,6 +581,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wide_lattice_h2t_skeptic_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -8027,6 +8027,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — For the scoped finite claim, the runner constructs Q diagonal by occupation number and H only within equal-charge blocks, so [Q,H]=0 and exp(-beta H)/Tr exp(-beta H) preserves the same sectors. An independent check using omega=4 sum sin^2(pi n/L) reproduces the quoted IR values and strict growth from L=16 to L=32 in d=1 and d=2.
 - **rationale:** The displayed matrix identities and finite numerical table entries match both the runner source and an independent recomputation: I_1 gives 1.328125 and 2.6640625, and I_2 gives approximately 0.4899245 and 0.6003262. The runner does not hard-code the contested outputs or import a cross-note premise; it constructs the finite symmetric block Hamiltonian and directly computes the Gibbs commutator and lattice sums. The stronger low-dimensional no-SSB and Noether-current bridges are explicitly excluded as non-claims, so the bounded conclusion does not depend on those open bridges.
 - **auditor confidence:** high
+
+### `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`
+
+- **Note:** [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](../../docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Inside the supplied standard Wilson plaquette action with Tr(T_a T_b)=delta_ab/2, the leading small-a coefficient matching gives beta g_bare^2=2 N_c; action-surface selection and any physical value of g_bare are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00051-wilson_small_a_matching_beta`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Equating the unordered-plane coefficients beta g_bare^2/(4 N_c) and 1/2 gives beta = 2 N_c/g_bare^2.  _(class `A`)_
+- **chain closes:** True — The second-order trace expansion gives the plaquette deficit a^4 g_bare^2 F^a F^a/(4 N_c), while the continuum action contributes coefficient 1/2 per unordered plane. Their equality yields the claimed relation without selecting the Wilson surface or setting g_bare=1.
+- **rationale:** The result is a genuine algebraic coefficient closure over explicitly supplied action and trace-normalization hypotheses. The runner independently constructs the SU(3) generators, verifies their trace Gram matrix, computes the quadratic plaquette deficit symbolically, and solves the general matching equation; it does not merely print or import the target coefficient. The note correctly limits the theorem to the supplied Wilson action surface and does not claim g_bare=1 or an action-selection theorem.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `wilson_two_body_open_note_2026-04-11`
 

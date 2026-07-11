@@ -820,14 +820,15 @@ history separately from the live promoted algebraic CKM package.
 
 ### 6.3 The charged-lepton bridge package
 
-The charged-lepton Koide package contains exact algebra on its registered-mass
-surface, while two physical premise atoms remain owner-governed. AC(i) is the
-matter-action occupancy grain that selects between sector-tied and
-orbit/holomorphic determinant counting. AC(ii) is the R-eta h-class/h-unit
-license identifying the fixed-locus density with the physical folded phase.
+The charged-lepton Koide package contains exact conditional algebra on its
+registered-mass surface. Two physical roles remain open rather than premise
+content. The occupancy gate asks which matter-action grain selects between
+sector-tied and orbit/holomorphic determinant counting. The R-eta gate asks
+for the h-class/h-unit license identifying the fixed-locus density with the
+physical folded phase.
 The realized-state interface permits the sector weight `r` to be registered;
-it does not force `r=1/2`. Consequently the machine Tier-A count of zero is not
-a theorem that these two physical roles derive from the axioms. The overall
+it does not force `r=1/2`. Neither open role satisfies a dependency until a
+retained derivation closes it. The overall
 lepton scale `v_0` remains outside this package.
 
 The cosmology family is now cleaner than before and no longer needs to be

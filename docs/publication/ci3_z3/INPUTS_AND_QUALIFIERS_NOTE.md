@@ -17,14 +17,12 @@ The current package uses the four named axioms in
 Qubit, Admissibility, and Record. The equivalent `Cl(3,0)` reading is the
 local-algebra language for the Qubit axiom, not a separate premise.
 
-The registered non-axiom premise classes are three approved primitive nodes,
-zero live Tier-A admitted derivation targets, and one owner-governed residual
-premise node containing two charged-lepton atoms, AC(i) and AC(ii). These are
-class-specific counts: the zero Tier-A count does not state that the
-charged-lepton lane has zero live owner-governed atoms. The machine authorities
-are `docs/audit/data/axiom_premise_nodes.json`,
-`docs/audit/data/tier_a_admissions.json`, and
-`docs/audit/data/owner_governed_premise_nodes.json`.
+The only registered non-axiom premises are the three approved primitive nodes.
+Together with the four axioms, they form the complete supplied foundation.
+The charged-lepton occupancy and R-eta roles are open gates with zero premise
+weight, not a third premise class. The sole machine premise authority is
+`docs/audit/data/axiom_premise_nodes.json`; open work is routed separately in
+`docs/audit/data/derivation_obligations.json`.
 
 The optional compression notes
 

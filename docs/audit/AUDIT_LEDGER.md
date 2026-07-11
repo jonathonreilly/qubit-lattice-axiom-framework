@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2842 |
+| unaudited | 2841 |
 | audit_in_progress | 10 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
 | ~~audited_conditional~~ | 39 |
-| ~~audited_failed~~ | 1 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -47,10 +47,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 433 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 22 |
-| `audited_failed` | 23 |
+| `audited_failed` | 24 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3189 |
+| `unaudited` | 3188 |
 
 | claim_type | count |
 |---|---:|
@@ -627,6 +627,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -2598,6 +2599,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The stated results follow directly from per-site Pauli algebra, tensor-product factorization, and the elementary even/odd binary-string count. No Hamiltonian, Noether conservation, physical fermion realization, or external comparator is imported inside the audited scope.
 - **rationale:** The scoped theorem is a closed finite-dimensional Pauli-algebra identity. The runner checks the load-bearing identities exactly in the N=3 representative case and includes finite-N combinatorial spot checks; the general proof supplies the symbolic tensor-factor argument. Minor wording around deriving [F,n̂_x]=0 from the bilinear clause is harmless because the same Z_2-even conjugation applies directly to σ_-^{(x)}σ_+^{(x)}.
 - **auditor confidence:** high
+
+### `fermion_parity_z2_grading_theorem_note_2026-05-02`
+
+- **Note:** [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](../../docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For finite N>=1 qubit tensor products, the F1-F7 occupation-parity identities and F8's asserted equivalence among Z_2-even, Q-conserving, and F-commuting dynamics.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T120935Z-e9b7665b-00003-fermion_parity_z2_grading_th`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because F is the tensor product of local sigma_3 factors and sigma_3 anticommutes with each local ladder operator, conjugation by F changes the sign of one ladder operator and leaves bilinears invariant.  _(class `A`)_
+- **chain closes:** False — F1-F7 close algebraically for N>=1, but F8's equivalence does not: an even pair-creation/pair-annihilation Hamiltonian commutes with F while failing to commute with Q_total. Number conservation is sufficient for parity conservation, not equivalent to it.
+- **rationale:** The spectral, tensor-product, dimension-counting, odd-ladder, and even-bilinear conclusions are genuine algebraic identities, and the runner computes seven appropriate finite-case checks rather than importing a comparator. However, the theorem explicitly calls [H_dyn,Q_total]=0 equivalent to Z_2-even dynamics or [H_dyn,F]=0; this is false because parity-preserving dynamics may change occupation number by an even amount. The runner does not test that equivalence, so the full stated theorem does not close despite its correct F1-F7 core.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `fifth_family_complex_boundary_note`
 

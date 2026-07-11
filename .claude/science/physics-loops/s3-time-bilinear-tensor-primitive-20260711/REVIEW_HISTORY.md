@@ -54,3 +54,19 @@ Re-review disposition: pending.
   post-rebase pipeline dependency confirmation required as delivery hygiene.
 
 Final review-loop disposition: **pass**.
+
+## Post-rebase audit compatibility validation
+
+- Rebased cleanly onto current `origin/main` with no changed-path conflict.
+- `bash docs/audit/scripts/run_pipeline.sh`: PASS.
+- `python3 docs/audit/scripts/audit_lint.py --strict`: PASS with zero errors
+  (repo-existing warnings/notices only).
+- Target seed: `claim_type=no_go`, `audit_status=unaudited`,
+  `effective_status=unaudited`.
+- Target dependencies: four approved axiom/primitive nodes plus stable
+  owner-governed premise ID
+  `staggered_dirac_realization_gate_note_2026-05-03`.
+- `open_dependency_paths=[]`; audit queue ready, observed rank 20.
+- All pipeline-regenerated audit, publication effective-status, divergence,
+  and front-door files restored from `origin/main`; no authority output is in
+  the science diff.

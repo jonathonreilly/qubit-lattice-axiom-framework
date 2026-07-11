@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 84 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 357 |
+| **retained_bounded** | 358 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 4 |
-| unaudited | 2825 |
+| unaudited | 2824 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 450 |
+| `audited_clean` | 451 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3175 |
+| `unaudited` | 3174 |
 
 | claim_type | count |
 |---|---:|
@@ -218,6 +218,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_sign_boundary_tracks_landau_peierls_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `d3_staggered_two_band_orbital_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2047,6 +2048,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The full finite-field sign boundary eps*(T) and the Landau-Peierls curvature-determinant sign-change root mu_LP(T) agree within 2e-2 at each sampled T in {0.2, 0.3, 0.4}.  _(class `C`)_
 - **chain closes:** True — The runner constructs the q=24 Harper finite-field spectrum, the zero-field square-band spectrum, and the LP curvature-determinant integrand directly, then independently brackets and bisects the two sign roots. The reported deviations are all below 2e-2, and the displayed square-band Hessian determinant and Fermi-slope sign conventions check internally.
 - **rationale:** The load-bearing numerical agreement is produced by an actual spectral/quadrature computation rather than by hard-coded target roots or a cross-note import. The source note's displayed identities are consistent: for eps=-2t(cos kx+cos ky), eps_xx eps_yy - eps_xy^2 = 4t^2 cos kx cos ky, and f'(0,T) has the stated negative sign. The clean verdict is bounded to the disclosed sampled temperatures and finite B=2*pi/24 comparison; it does not establish a continuum-B or all-temperature theorem.
+- **auditor confidence:** high
+
+### `d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The supplied free one-orbital nearest-neighbor scalar Hamiltonian on periodic simple-cubic Z³ lattices L ∈ {6,8}, audited for its step-1 parity Schur complement at E=0, one E=0.3 covariance probe, retained-site resolvent equality, and the stated integer parity lemma.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00388-d3_checkerboard_step1_closed`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because the odd-parity block is h_oo = μI, its exact Schur complement is determined by two-step path counts: 6 on-site, 2 at face diagonals, 1 at axial d²=4, and 0 beyond those shells.  _(class `C`)_
+- **chain closes:** True — The accepted Lattice axiom supplies cubic Z³ nearest-neighbor adjacency, while the bounded note supplies the free scalar Hamiltonian under study. Direct construction and two-step path counting yield the stated signed coefficients and support, and the parity and resolvent statements follow algebraically.
+- **rationale:** The runner genuinely constructs the finite cubic Hamiltonians, forms their parity blocks and Schur complements, and computes path counts and resolvents rather than merely printing expected results. Its independently generated matrices confirm the signed shell coefficients, absence of farther step-1 couplings, wraparound stability, energy shift, and resolvent identity. The elementary parity identity establishes the checkerboard preservation statement within the explicitly bounded scope; no external comparator or non-accepted authority is used.
 - **auditor confidence:** high
 
 ### `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18`

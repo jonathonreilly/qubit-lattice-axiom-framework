@@ -3,6 +3,7 @@
 **Date:** 2026-04-12 (originally); 2026-05-10 (audit-narrowing refresh:
 explicit class-E definitional-compression framing under named admitted
 inputs); 2026-06-17 (runner/source drift repair for Test 4 and synthesis).
+2026-07-11 (same-outcome-space, norm-matched light-cone repair for Test 4).
 **Status:** scope-narrowed bounded operational note. The runner numerically
 verifies four consequences (Hamiltonian-support graph recovery, Born-rule
 `I_3 = 0` at machine precision, unitarity-vs-Lindblad behaviour, tensor-
@@ -41,6 +42,13 @@ Hamiltonian and an unfactored random Hamiltonian of the same dimension. The
 runner synthesis has therefore been demoted from the old "single axiom
 reduction" language to the admitted-input operational-support boundary already
 stated in this note.
+
+**2026-07-11 Test 4 statistic repair:** Test 4 now compares normalized
+distributions on the same outcome space of 64 computational-basis states,
+with the random Hamiltonian norm-matched to the local Hamiltonian. The old
+cross-space 29x statistic is recorded as an artifact: at `t = 1.0` no fair
+contrast exists (negative finding). The bounded-localization support is now
+explicitly only a short-time light-cone statement at matched energy scale.
 
 **Audit-dispatch parent candidate:** If a future independent audit
 evaluates whether this Hilbert-surface wrapper is a non-chain-closing
@@ -196,33 +204,67 @@ increasing dephasing rate gamma:
 | 2.0   | -0.167        | Localized at source              |
 
 Unitarity follows from the admitted Hermitian Hamiltonian (input 2
-above). Non-unitary evolution (open systems, Lindblad channels)
-destroys gravitational attraction — particles freeze at their source
-instead of migrating toward the potential minimum. The Hermiticity
-restriction is therefore a real admitted input: replacing it with
-non-Hermitian Lindblad dynamics changes the consequence.
+above). In this fixed 8-site toy control, the strong-dephasing Lindblad case
+at `gamma = 2.0` leaves more probability at the source than at the toy
+attraction center, whereas the unitary case has the opposite ordering. This
+supports only the fixed strong-dephasing toy-control conclusion; it is not a
+general claim that Lindblad or non-unitary dynamics destroys attraction.
 
-### Test 4: Tensor-product/local-H packet gives bounded localization support
+### Test 4: Short-time light-cone contrast on a common outcome space
 
-Compared a 6-qubit chain (tensor product, local Hamiltonian) to a random
-64x64 Hamiltonian (same dimension, no factorization).
+The repaired statistic starts both evolutions from `|000000>` and compares
+their normalized Born distributions on the same outcome space: all 64
+computational-basis states. For each seed, the random 64x64 Hermitian
+Hamiltonian is norm-matched to the local 6-qubit-chain Hamiltonian by
+`H_random <- H_random ||H_local||_2 / ||H_random||_2`. Thus the comparison is
+also energy-fair. Hamming distance is defined solely on the common outcome
+space, independently of either Hamiltonian.
 
-| Metric               | Tensor product | Unfactored |
-|----------------------|---------------|------------|
-| Participation ratio  | 1.0 / 6 sites | 30.2 / 64 states |
-| Distance dependence  | No monotone decay claim; fixed-seed gradient check is false | No graph-distance notion |
-| Spread ratio         | 29x more localized | baseline |
+For a normalized distribution `p`, define
 
-Without the admitted tensor-product factorization, there is no notion
-of locality, distance, or spatial structure: the propagator spreads
-uniformly rather than respecting any supplied factorization. The runner's
-valid Test 4 support is the participation-ratio/spread contrast. It does not
-establish that the fixed-seed amplitudes decay monotonically with graph
-distance; the runner prints that monotone-gradient diagnostic as false.
-The tensor-product factorization plus the admitted local Hamiltonian
-(inputs 1+2) jointly give the bounded localization contrast. Neither input
-alone suffices: an unfactored same-dimension Hamiltonian gives much broader
-spread.
+- `tail_2(p) = sum_{hamming > 2} p`;
+- `EH(p) = sum p * hamming`;
+- `PR(p) = 1 / sum p^2` as a reported diagnostic on the same 64 outcomes.
+
+The measured norm-matched results are:
+
+| seed | t | PR_loc | PR_rnd | EH_loc | EH_rnd | tail_loc | tail_rnd |
+|------|---|--------|--------|--------|--------|----------|----------|
+| 999  | 0.25 | 1.58 | 4.90 | 0.282 | 1.685 | 0.0070 | 0.3758 |
+| 7    | 0.25 | 1.92 | 4.82 | 0.368 | 1.655 | 0.0092 | 0.3883 |
+| 42   | 0.25 | 1.57 | 2.75 | 0.246 | 1.216 | 0.0037 | 0.2455 |
+| 2026 | 0.25 | 1.45 | 8.11 | 0.265 | 2.135 | 0.0068 | 0.4878 |
+| 999  | 0.50 | 5.27 | 38.53 | 0.974 | 3.108 | 0.0817 | 0.6766 |
+| 7    | 0.50 | 9.54 | 32.65 | 1.265 | 2.981 | 0.1165 | 0.6807 |
+| 42   | 0.50 | 4.47 | 28.17 | 0.828 | 2.761 | 0.0412 | 0.6001 |
+| 2026 | 0.50 | 4.11 | 37.86 | 0.942 | 2.912 | 0.0812 | 0.6442 |
+
+Per seed, the PASS thresholds are: at `t = 0.25`,
+`tail_rnd / tail_loc > 5` and `EH_rnd / EH_loc > 2`; at `t = 0.5`,
+`tail_rnd / tail_loc > 3`. Every seed passes. The observed tail ratios are
+about 27--72x at `t = 0.25` and 5.8--14.6x at `t = 0.5`; the corresponding
+EH ratios are about 4.6--8.1x and 2.4--3.5x.
+
+Locality of the tensor-product Hamiltonian bounds short-time information
+propagation (a light cone). On this 6-qubit chain the cone saturates the
+system by `t ~ 1`, after which spread statistics cannot distinguish local
+from unfactored dynamics. The discriminating support is therefore restricted
+to short time at a matched energy scale.
+
+#### Negative finding at the old parameters
+
+At the old parameters (`t = 1.0`, unmatched norms, and a cross-space
+statistic), the reported 29x spread was an artifact. Under the fair
+same-space, norm-matched statistic at `t = 1.0`, no fair contrast exists:
+seed 999 gives `PR_loc = 27.81` and `PR_rnd = 30.42`, while seed 7 gives
+`PR_loc = 17.00`, `PR_rnd = 37.27`, `EH_loc = 3.070`, `EH_rnd = 2.957`,
+`tail_loc = 0.7391`, and `tail_rnd = 0.6883`; the latter two spread measures
+reverse direction. Test 4's support is therefore the short-time light-cone
+contrast only.
+
+The tensor-product factorization plus the admitted local Hamiltonian (inputs
+1+2) jointly supply the local light cone tested here. Neither input alone is
+being claimed to establish the short-time contrast.
 
 ## Conclusion (scope-narrowed)
 
@@ -238,12 +280,11 @@ consequences follow mechanically as evaluated by the runner:
   `p`-norm for `p ≠ 2` gives `I_3 ≠ 0`, confirming the readout is a
   real input.
 - Unitary toy evolution follows from the admitted Hermitian generator
-  (Test 3); a non-Hermitian Lindblad replacement breaks the toy attraction
-  profile, confirming the Hermiticity restriction is a real input.
-- The admitted tensor-product factorization gives a bounded localization
-  contrast by participation ratio; an unfactored same-dimension Hamiltonian
-  is much broader. The runner does not claim monotone distance-decay in the
-  fixed Test 4 sample (Test 4).
+  (Test 3); only in the fixed strong-dephasing toy control does the Lindblad
+  evolution reverse the source-versus-center ordering.
+- The admitted tensor-product/local-H packet gives a short-time light-cone
+  contrast on the same normalized 64-outcome space at matched Hamiltonian
+  norm. No fair spread contrast is claimed at `t = 1.0` (Test 4).
 
 **Definitional-compression framing.** The four admitted inputs
 `(local d, local H, Born readout, "support = edges" rule)` can be
@@ -283,3 +324,15 @@ recorded.
    operational support note; it does not propose framework-reduction
    promotion, nor does it claim to be a smaller axiom set than the
    recorded minimal-axioms surface.
+
+## Repair Note (2026-07-11)
+
+The audit's `notes_for_re_audit` stated:
+
+> *Replace Test 4 with a localization statistic computed from normalized distributions on the same outcome space, then rerun and re-audit; also keep Test 3's conclusion limited to the fixed strong-dephasing toy control.*
+
+The fair statistic is now implemented. The old contrast was found absent at
+the old parameters, so the cross-space 29x result is recorded as an artifact
+and the `t = 1.0` result as a negative finding. Honest bounded support has
+been relocated to the norm-matched short-time light-cone regime, where the
+measured per-seed margins exceed the pre-declared thresholds.

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2785 |
+| unaudited | 2784 |
 | audit_in_progress | 29 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 53 |
+| ~~audited_conditional~~ | 54 |
 | ~~audited_failed~~ | 6 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,21 +46,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 33 |
 | `audited_clean` | 453 |
-| `audited_conditional` | 53 |
+| `audited_conditional` | 54 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3135 |
+| `unaudited` | 3134 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2044 |
 | `decoration` | 26 |
 | `meta` | 357 |
-| `no_go` | 464 |
+| `no_go` | 465 |
 | `open_gate` | 195 |
-| `positive_theorem` | 662 |
+| `positive_theorem` | 661 |
 
 | criticality | count |
 |---|---:|
@@ -622,6 +622,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `graded_constraint_interface_consistency_bounded_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -3472,6 +3473,26 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The rank-one propagation identity follows algebraically from T_min = lambda vv^T with lambda^3 v_0 ||v||^4 = 1. Independently recomputing the finite matrices gives det(M)=1, ||offdiag(D_back)||_F=0.250338180104, and reconstruction error at numerical precision, so the diagonal-subfamily exclusion follows.
 - **rationale:** The source and helpers compute the finite objects from the displayed SU(3)/recurrence definitions rather than importing a contested premise or merely printing constants. The load-bearing membership exclusion is stronger than the optimizer residual: invertibility of M makes the pullback unique, and the independently recomputed pullback is plainly non-diagonal. The helper notes contain broader open Wilson-environment language, but the audited claim explicitly stays within the finite diagonal factorized-class packet and does not rely on closing that broader identification.
 - **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_framework_point_underdetermination_note`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The displayed witnesses establish underdetermination from the order-beta^5 jet, real analyticity, and monotonicity alone; they do not establish underdetermination after imposing the claimed connected-hierarchy and spectral-measure constraints.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00096-gauge_vacuum_plaquette_frame`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The two analytic strictly increasing witness laws agree through order beta^5 but differ by c beta^6 at beta=6, so the stated finite jet and monotonicity conditions do not determine beta_eff(6).  _(class `A`)_
+- **chain closes:** False — The algebraic finite-jet counterexample closes, but the broader current-exact-stack conclusion is missing a proof that either witness is realizable by a finite Wilson source surface satisfying the full connected hierarchy and compact spectral-measure constraints.
+- **rationale:** Issue: the witnesses satisfy only the finite jet and monotonicity boundary, while the note promotes them to countermodels for a stack that also includes a connected hierarchy and compact spectral measure. Why this blocks: arbitrary analytic increasing functions need not be realizable reduction laws for that stronger stack. Repair target: construct two hierarchy- and spectral-compatible Wilson-surface models with different beta_eff(6), or narrow every full-stack conclusion to finite-jet-plus-monotonicity underdetermination. Claim boundary until fixed: the explicit functions are a valid algebraic counterexample only to determination by the listed finite regularity data.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: four distinct full-stack attack routes remain OPEN or UNTESTED.
+    - N2: full-stack witness admissibility is unresolved.
+    - N3: hierarchy and spectral compatibility are hidden load-bearing assumptions.
+    - N5: current-exact-stack rhetoric exceeds the finite-jet resolution tested.
+    - N7: the strongest full-hierarchy steelman succeeds against the broad no-go.
 
 ### `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`
 

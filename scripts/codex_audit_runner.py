@@ -286,7 +286,6 @@ VALIDATION_REPAIR_MUTABLE_FIELD = "no_go_discipline"
 VALIDATION_REPAIR_LOCATOR_FIELDS = {
     "evidence_path",
     "evidence_locator",
-    "evidence_snapshot",
 }
 
 # Map JSON-extracted-from-stdout to apply_audit.py's input schema. apply_audit
@@ -1125,9 +1124,8 @@ def render_validation_repair_prompt(
         "not evidence.\n"
         "Every evidence_locator must be a 12+ character verbatim substring of\n"
         "the content at its evidence_path in the restricted packet; copy it\n"
-        "exactly. Every retained/accepted-premise classification must match the\n"
-        "packet metadata. Recheck all N1-N8 internal references, not merely the\n"
-        "first reported error.\n\n"
+        "exactly. Do not revise any classification or internal N1-N8\n"
+        "reference.\n\n"
         f"VALIDATION ERROR:\n{validation_error}\n\n"
         f"REJECTED JSON TO CORRECT:\n{prior_json}\n"
     )
@@ -1175,6 +1173,27 @@ def validation_repair_preservation_error(
     return None
 
 
+def validation_repair_eligible(
+    rejected_blob: dict,
+    expected_cid: str,
+    validation_error: str | None,
+) -> bool:
+    """True only for a complete verdict with an N1-N8 locator failure."""
+    if not validation_error:
+        return False
+    locator_error = validation_error.casefold()
+    if not any(
+        marker in locator_error
+        for marker in ("evidence_path", "evidence path", "evidence_locator")
+    ):
+        return False
+    return (
+        REQUIRED_VERDICT_FIELDS.issubset(rejected_blob)
+        and rejected_blob.get("claim_id") == expected_cid
+        and isinstance(rejected_blob.get(VALIDATION_REPAIR_MUTABLE_FIELD), dict)
+    )
+
+
 def apply_one(verdict_blob: dict, propagate: bool) -> tuple[bool, str]:
     """Pipe a verdict blob through apply_audit.py via stdin."""
     cmd = [sys.executable, str(APPLY_AUDIT_SCRIPT)]
@@ -1210,7 +1229,8 @@ def main() -> int:
     p.add_argument("--codex-timeout-sec", type=int, default=600,
                    help="Per-row codex exec timeout (default 600).")
     p.add_argument("--validation-repair-attempts", type=int, default=1,
-                   help="After a parsed verdict fails strict validation, ask "
+                   help="After a complete parsed verdict fails strict N1-N8 "
+                        "evidence-locator validation, ask "
                         "the same restricted-packet auditor for this many "
                         "validator-guided JSON corrections (default 1; 0 "
                         "disables). Every correction must pass the unchanged "
@@ -1582,11 +1602,7 @@ def main() -> int:
             initial_validation_error = err
             initial_rejected_blob = blob
             repair_elapsed = 0.0
-            repair_eligible = (
-                REQUIRED_VERDICT_FIELDS.issubset(blob)
-                and blob.get("claim_id") == cid
-                and isinstance(blob.get(VALIDATION_REPAIR_MUTABLE_FIELD), dict)
-            )
+            repair_eligible = validation_repair_eligible(blob, cid, err)
             if err and args.validation_repair_attempts > 0 and repair_eligible:
                 for repair_attempt in range(1, args.validation_repair_attempts + 1):
                     print(

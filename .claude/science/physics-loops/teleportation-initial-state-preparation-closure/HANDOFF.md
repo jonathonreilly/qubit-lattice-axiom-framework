@@ -6,6 +6,7 @@
 - Actual status: open.
 - Trace: direct blocker closure for the finite mathematical chain.
 - Review-loop: pass after two iterations.
+- Delivery: draft PR #5174, mergeable against `main`.
 - Lock: branch-local isolated worktree; the repo lock helper failed with
   permission denied at `/Users/jonreilly`.
 
@@ -36,4 +37,4 @@ open by design. They are not needed to certify the finite open-gate boundary.
 ## Next exact action
 
 Send `teleportation_initial_state_preparation_probe_note` to the independent
-audit lane. The branch proposes no audit verdict.
+audit lane through draft PR #5174. The branch proposes no audit verdict.

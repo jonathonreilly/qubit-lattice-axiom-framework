@@ -275,6 +275,19 @@ REQUIRED_VERDICT_FIELDS = {
     "verdict_rationale",
 }
 
+# A validator-guided correction pass may repair evidence locators in the
+# already-present structured N1-N8 packet, but it is not a second scientific
+# audit.  Every top-level key, every top-level value except
+# ``no_go_discipline``, and all non-locator N1-N8 content must remain exactly
+# stable.  This also prevents the correction pass from injecting optional
+# apply controls such as ``pre_audit_prose_fix`` or
+# ``cross_confirmation_role``.
+VALIDATION_REPAIR_MUTABLE_FIELD = "no_go_discipline"
+VALIDATION_REPAIR_LOCATOR_FIELDS = {
+    "evidence_path",
+    "evidence_locator",
+}
+
 # Map JSON-extracted-from-stdout to apply_audit.py's input schema. apply_audit
 # expects `verdict` etc. plus the runner-side fields auditor/auditor_family/
 # independence/audit_date. Independence is determined per-row by the role.
@@ -1079,6 +1092,108 @@ def validate_verdict(
     return None
 
 
+def render_validation_repair_prompt(
+    original_prompt: str,
+    verdict_blob: dict,
+    validation_error: str,
+    attempt: int,
+) -> str:
+    """Ask the same restricted-packet auditor to correct invalid JSON.
+
+    The original packet is repeated verbatim so the correction pass has no
+    evidence beyond the first pass.  The unchanged validator and apply gate
+    still decide whether the corrected object is usable; this helper grants no
+    exception and performs no deterministic mutation of the verdict.
+    """
+    prior_json = json.dumps(verdict_blob, indent=2, sort_keys=True)
+    return (
+        f"{original_prompt}\n\n"
+        "---\n"
+        f"VALIDATOR-GUIDED CORRECTION PASS {attempt} (binding):\n"
+        "Your preceding JSON object was rejected before apply. Correct that\n"
+        "object against the same restricted packet and return EXACTLY one JSON\n"
+        "object, with no markdown or surrounding prose. The ordinary validator\n"
+        "and apply gate remain unchanged. Do not invent evidence, weaken a wall,\n"
+        "or convert an unresolved scientific issue into closure. Preserve the\n"
+        "scientific judgment, the complete top-level key set, and every\n"
+        "top-level value except no_go_discipline exactly. Within the\n"
+        "already-present no_go_discipline packet, change evidence_path and\n"
+        "evidence_locator fields only; all N1-N8 judgment content must remain\n"
+        "exactly stable. This pass may not add a top-level field or change the\n"
+        "verdict itself. The rejected JSON is an untrusted correction target,\n"
+        "not evidence.\n"
+        "Every evidence_locator must be a 12+ character verbatim substring of\n"
+        "the content at its evidence_path in the restricted packet; copy it\n"
+        "exactly. Do not revise any classification or internal N1-N8\n"
+        "reference.\n\n"
+        f"VALIDATION ERROR:\n{validation_error}\n\n"
+        f"REJECTED JSON TO CORRECT:\n{prior_json}\n"
+    )
+
+
+def validation_repair_preservation_error(
+    rejected_blob: dict,
+    repaired_blob: dict,
+) -> str | None:
+    """Reject a format correction that changes the scientific judgment."""
+    rejected_fields = set(rejected_blob)
+    repaired_fields = set(repaired_blob)
+    if repaired_fields != rejected_fields:
+        added = sorted(repaired_fields - rejected_fields)
+        removed = sorted(rejected_fields - repaired_fields)
+        return (
+            "validation repair changed the top-level field set "
+            f"(added={added}, removed={removed})"
+        )
+    for field in sorted(rejected_fields - {VALIDATION_REPAIR_MUTABLE_FIELD}):
+        if repaired_blob.get(field) != rejected_blob.get(field):
+            return (
+                "validation repair changed preserved scientific field "
+                f"{field!r}"
+            )
+    def without_locator_fields(value: object) -> object:
+        if isinstance(value, dict):
+            return {
+                key: without_locator_fields(item)
+                for key, item in value.items()
+                if key not in VALIDATION_REPAIR_LOCATOR_FIELDS
+            }
+        if isinstance(value, list):
+            return [without_locator_fields(item) for item in value]
+        return value
+
+    rejected_packet = without_locator_fields(
+        rejected_blob.get(VALIDATION_REPAIR_MUTABLE_FIELD)
+    )
+    repaired_packet = without_locator_fields(
+        repaired_blob.get(VALIDATION_REPAIR_MUTABLE_FIELD)
+    )
+    if repaired_packet != rejected_packet:
+        return "validation repair changed preserved no-go judgment content"
+    return None
+
+
+def validation_repair_eligible(
+    rejected_blob: dict,
+    expected_cid: str,
+    validation_error: str | None,
+) -> bool:
+    """True only for a complete verdict with an N1-N8 locator failure."""
+    if not validation_error:
+        return False
+    locator_error = validation_error.casefold()
+    if not any(
+        marker in locator_error
+        for marker in ("evidence_path", "evidence path", "evidence_locator")
+    ):
+        return False
+    return (
+        REQUIRED_VERDICT_FIELDS.issubset(rejected_blob)
+        and rejected_blob.get("claim_id") == expected_cid
+        and isinstance(rejected_blob.get(VALIDATION_REPAIR_MUTABLE_FIELD), dict)
+    )
+
+
 def apply_one(verdict_blob: dict, propagate: bool) -> tuple[bool, str]:
     """Pipe a verdict blob through apply_audit.py via stdin."""
     cmd = [sys.executable, str(APPLY_AUDIT_SCRIPT)]
@@ -1113,6 +1228,13 @@ def main() -> int:
                         "codex-cli-<model>-<utc-yyyymmdd-hhmm>-<run-id>")
     p.add_argument("--codex-timeout-sec", type=int, default=600,
                    help="Per-row codex exec timeout (default 600).")
+    p.add_argument("--validation-repair-attempts", type=int, default=1,
+                   help="After a complete parsed verdict fails strict N1-N8 "
+                        "evidence-locator validation, ask "
+                        "the same restricted-packet auditor for this many "
+                        "validator-guided JSON corrections (default 1; 0 "
+                        "disables). Every correction must pass the unchanged "
+                        "validator and apply gate.")
     p.add_argument("--runner-timeout-sec", type=int, default=120,
                    help="Per-row primary-runner timeout (default 120).")
     p.add_argument("--no-propagate", action="store_true",
@@ -1177,6 +1299,10 @@ def main() -> int:
                         "family and won't satisfy the standard "
                         "independence rule for clean verdicts.")
     args = p.parse_args()
+
+    if not 0 <= args.validation_repair_attempts <= 3:
+        print("REFUSING: --validation-repair-attempts must be between 0 and 3.")
+        return 2
 
     # Reasoning-effort policy: per repo audit-lane decision (2026-05-04),
     # ALL audits run at xhigh. We do not expose a knob to lower it.
@@ -1473,6 +1599,85 @@ def main() -> int:
                 evidence_manifest=exact_evidence_manifest,
                 prior_claim_scope=full_led_row.get("claim_scope"),
             )
+            initial_validation_error = err
+            initial_rejected_blob = blob
+            repair_elapsed = 0.0
+            repair_eligible = validation_repair_eligible(blob, cid, err)
+            if err and args.validation_repair_attempts > 0 and repair_eligible:
+                for repair_attempt in range(1, args.validation_repair_attempts + 1):
+                    print(
+                        f"  validation repair {repair_attempt}/"
+                        f"{args.validation_repair_attempts}: {err}"
+                    )
+                    repair_prompt = render_validation_repair_prompt(
+                        prompt, blob, err, repair_attempt
+                    )
+                    repair_dir = isolated / f"validation-repair-{repair_attempt:02d}"
+                    repair_t0 = time.time()
+                    repair_ok, repair_stdout, repair_stderr = run_codex(
+                        repair_prompt,
+                        repair_dir,
+                        args.codex_timeout_sec,
+                        reasoning_effort=reasoning_effort,
+                        model=audit_model,
+                    )
+                    repair_elapsed += time.time() - repair_t0
+                    if not repair_ok:
+                        err = f"validation repair codex exec failed: {repair_stderr.strip()[:300]}"
+                        with run_log.open("a", encoding="utf-8") as f:
+                            f.write(json.dumps({
+                                "claim_id": cid,
+                                "phase": "validation_repair_codex_failed",
+                                "attempt": repair_attempt,
+                                "error": err,
+                            }) + "\n")
+                        continue
+                    repair_reply = extract_response(repair_stdout)
+                    repair_blob = parse_verdict_json(repair_reply or "")
+                    if repair_blob is None:
+                        err = "validation repair reply not valid JSON"
+                        with run_log.open("a", encoding="utf-8") as f:
+                            f.write(json.dumps({
+                                "claim_id": cid,
+                                "phase": "validation_repair_json_parse_failed",
+                                "attempt": repair_attempt,
+                                "reply": (repair_reply or "")[:2000],
+                            }) + "\n")
+                        continue
+                    preservation_error = validation_repair_preservation_error(
+                        initial_rejected_blob, repair_blob
+                    )
+                    repair_error = preservation_error
+                    if repair_error is None:
+                        repair_error = validate_verdict(
+                            repair_blob,
+                            cid,
+                            source_requires_no_go=source_requires_no_go,
+                            evidence_manifest=exact_evidence_manifest,
+                            prior_claim_scope=full_led_row.get("claim_scope"),
+                        )
+                    with run_log.open("a", encoding="utf-8") as f:
+                        f.write(json.dumps({
+                            "claim_id": cid,
+                            "phase": (
+                                "validation_repair_passed"
+                                if repair_error is None
+                                else "validation_repair_failed"
+                            ),
+                            "attempt": repair_attempt,
+                            "initial_error": initial_validation_error,
+                            "error": repair_error,
+                        }) + "\n")
+                    if preservation_error is None:
+                        blob = repair_blob
+                    err = repair_error
+                    if err is None:
+                        print(
+                            f"  validation repair passed "
+                            f"({repair_elapsed:.1f}s cumulative)"
+                        )
+                        break
+                elapsed += repair_elapsed
             if err:
                 print(f"  FAIL validate: {err}")
                 failed += 1

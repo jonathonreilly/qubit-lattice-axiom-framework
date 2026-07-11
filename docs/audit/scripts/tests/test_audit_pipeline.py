@@ -3192,6 +3192,172 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             or "",
         )
 
+    def test_validation_repair_prompt_reuses_packet_and_preserves_strict_gate(self):
+        m = _import_codex_audit_runner()
+        original_prompt = "restricted packet with EXACT EVIDENCE LOCATOR"
+        rejected = {
+            "claim_id": "target",
+            "verdict": "audited_conditional",
+            "claim_scope": "bounded target scope",
+            "no_go_discipline": {
+                "required": True,
+                "status": "FAIL",
+            },
+        }
+        error = (
+            "N1 route 2 evidence_locator is not present in "
+            "'docs/TARGET.md'"
+        )
+
+        prompt = m.render_validation_repair_prompt(
+            original_prompt, rejected, error, 1
+        )
+        flat_prompt = " ".join(prompt.split())
+
+        self.assertIn(original_prompt, prompt)
+        self.assertIn(error, prompt)
+        self.assertIn('"claim_id": "target"', prompt)
+        self.assertIn(
+            "ordinary validator and apply gate remain unchanged", flat_prompt
+        )
+        self.assertIn("12+ character verbatim substring", flat_prompt)
+        self.assertIn("Do not invent evidence", flat_prompt)
+        self.assertIn("or change the verdict itself", flat_prompt)
+        self.assertIn("untrusted correction target, not evidence", flat_prompt)
+        self.assertIn("may not add a top-level field", flat_prompt)
+        self.assertNotIn("accept despite", prompt.casefold())
+
+    def test_validation_repair_cannot_change_scientific_judgment(self):
+        m = _import_codex_audit_runner()
+        rejected = {
+            "claim_id": "target",
+            "load_bearing_step": "the exact obstruction",
+            "load_bearing_step_class": "A",
+            "claim_type": "no_go",
+            "claim_scope": "bounded obstruction",
+            "chain_closes": False,
+            "chain_closure_explanation": "one route remains open",
+            "verdict": "audited_conditional",
+            "verdict_rationale": "the packet is incomplete",
+            "no_go_discipline": {
+                "required": True,
+                "status": "FAIL",
+                "N1_alternative_routes": [{
+                    "route_id": "route-1",
+                    "disposition": "UNTESTED",
+                    "evidence_path": "docs/WRONG.md",
+                    "evidence_locator": "wrong locator text",
+                }],
+            },
+        }
+        locator_repair = json.loads(json.dumps(rejected))
+        locator_repair["no_go_discipline"]["N1_alternative_routes"][0].update({
+            "evidence_path": "docs/TARGET.md",
+            "evidence_locator": "exact packet locator",
+        })
+        changed_verdict = {**locator_repair, "verdict": "audited_clean"}
+
+        self.assertIsNone(
+            m.validation_repair_preservation_error(rejected, locator_repair)
+        )
+        self.assertIn(
+            "changed preserved scientific field 'verdict'",
+            m.validation_repair_preservation_error(rejected, changed_verdict)
+            or "",
+        )
+
+        changed_notes = {
+            **locator_repair,
+            "notes_for_re_audit_if_any": "a new scientific instruction",
+        }
+        self.assertIn(
+            "changed the top-level field set",
+            m.validation_repair_preservation_error(rejected, changed_notes)
+            or "",
+        )
+
+        rejected_with_optional_fields = {
+            **rejected,
+            "notes_for_re_audit_if_any": "original repair instruction",
+            "auditor_confidence": "medium",
+            "runner_check_breakdown": {
+                "A": 1,
+                "B": 0,
+                "C": 0,
+                "D": 0,
+                "total_pass": 1,
+            },
+        }
+        changed_confidence = {
+            **rejected_with_optional_fields,
+            "auditor_confidence": "high",
+        }
+        self.assertIn(
+            "changed preserved scientific field 'auditor_confidence'",
+            m.validation_repair_preservation_error(
+                rejected_with_optional_fields, changed_confidence
+            )
+            or "",
+        )
+
+        injected_apply_control = {
+            **rejected,
+            "cross_confirmation_role": "second_seat",
+        }
+        self.assertIn(
+            "changed the top-level field set",
+            m.validation_repair_preservation_error(
+                rejected, injected_apply_control
+            )
+            or "",
+        )
+
+        changed_route_disposition = json.loads(json.dumps(locator_repair))
+        changed_route_disposition["no_go_discipline"][
+            "N1_alternative_routes"
+        ][0]["disposition"] = "CLOSED"
+        self.assertIn(
+            "changed preserved no-go judgment content",
+            m.validation_repair_preservation_error(
+                rejected, changed_route_disposition
+            )
+            or "",
+        )
+
+        changed_packet_status = json.loads(json.dumps(locator_repair))
+        changed_packet_status["no_go_discipline"]["status"] = "PASS"
+        self.assertIn(
+            "changed preserved no-go judgment content",
+            m.validation_repair_preservation_error(
+                rejected, changed_packet_status
+            )
+            or "",
+        )
+
+        self.assertTrue(
+            m.validation_repair_eligible(
+                rejected,
+                "target",
+                "N1 route 1 evidence_locator is not present in docs/TARGET.md",
+            )
+        )
+        self.assertFalse(
+            m.validation_repair_eligible(
+                rejected,
+                "target",
+                "N2.unresolved must be a list of non-empty strings",
+            )
+        )
+        missing_judgment = dict(rejected)
+        del missing_judgment["verdict_rationale"]
+        self.assertFalse(
+            m.validation_repair_eligible(
+                missing_judgment,
+                "target",
+                "N1 route 1 evidence_locator is not present in docs/TARGET.md",
+            )
+        )
+
     def test_prompt_preserves_raw_placeholders_and_types_every_premise(self):
         m = _import_codex_audit_runner()
         with tempfile.TemporaryDirectory() as tmp:

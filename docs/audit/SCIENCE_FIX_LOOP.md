@@ -25,6 +25,12 @@ For each prompt the loop:
 3. Runs `codex exec -C <worktree> -s workspace-write -m gpt-5.5
    --config model_reasoning_effort=xhigh "<prompt body>"`
 4. After codex returns:
+   - If a nested physics-loop worker already committed, pushed, and opened a
+     PR → discover that PR from the current/planned branch and record
+     `pr_opened` instead of misclassifying the clean worktree as `no_edits`
+   - If Codex hits a usage limit, model-capacity limit, or transient service
+     outage → record `transient_failed`, release the remainder of the
+     pre-reserved batch, and exit with a supervisor backoff code
    - If no edits were made (codex punted) → record `no_edits`, move on
    - If timeout → record `timeout`, move on
    - If edits were made → commit, push, `gh pr create`, record
@@ -39,7 +45,7 @@ For each prompt the loop:
   "attempts": {
     "<claim_id>": {
       "attempted_at": "2026-05-06T...",
-      "outcome": "in_progress" | "stale_in_progress" | "pr_opened" | "no_edits" | "timeout" | "codex_failed" | "push_failed" | "pr_failed" | "error",
+      "outcome": "in_progress" | "stale_in_progress" | "pr_opened" | "no_edits" | "timeout" | "transient_failed" | "codex_failed" | "push_failed" | "pr_failed" | "error",
       "worker_id": "pid12345-abcd1234",
       "elapsed_sec": 248.3,
       "category": "renaming",
@@ -83,6 +89,20 @@ python3 scripts/science_fix_loop.py --claim-id <claim_id>
 # (skips only rows that successfully opened a PR)
 python3 scripts/science_fix_loop.py --n 5 --retry-failed
 
+# Retry only quota/capacity/service failures plus never-attempted rows.
+# Scientific punts, no-go outcomes, and declines remain settled.
+python3 scripts/science_fix_loop.py --n 5 --retry-transient
+
+# Give a hard target a sustained physics-loop attempt without the standard
+# 15-minute self-decline gate.
+python3 scripts/science_fix_loop.py --n 1 --difficulty hard \
+  --screening-profile deep --codex-timeout-sec 7200
+
+# Reconcile a PR that an older nested worker delivered before the outer loop
+# checked its worktree.
+python3 scripts/science_fix_loop.py \
+  --reconcile-pr claim_id=https://github.com/OWNER/REPO/pull/123
+
 # Explicitly recover rows reserved by a known-dead worker.
 # This is disabled by default; only run when no older worker is alive, or
 # choose a cutoff longer than the maximum expected live worker runtime.
@@ -108,6 +128,15 @@ python3 scripts/science_fix_loop.py --n 5 --codex-timeout-sec 600
 - **Explicit stale recovery.** `--reclaim-stale-sec` is disabled by
   default. Use it only to recover rows from a known-dead worker; an
   automatic cutoff can misclassify a slow live worker as stale.
+- **Transient failures do not poison the queue.** Account quota, model
+  capacity, and temporary service errors stop the current batch and release
+  every row the worker reserved but did not reach. Exit codes are `75` for
+  usage limit, `76` for model capacity, and `77` for service unavailability;
+  campaign supervisors should back off before retrying.
+- **Nested delivery is reconciled.** If the physics-loop worker opens its own
+  PR, the outer loop records that verified PR even when the worktree is clean.
+- **Shared state can cross worktrees.** Set `SCIENCE_FIX_STATE_FILE` when a
+  clean supervisor worktree must use the campaign ledger from another checkout.
 - **Per-attempt timeout.** Default 15 min; codex is killed if it
   exceeds that.
 
@@ -120,6 +149,7 @@ python3 scripts/science_fix_loop.py --n 5 --codex-timeout-sec 600
 | `pr_opened` | Codex made edits, PR exists | Run review-loop on the PR; land or close |
 | `no_edits` | Codex punted — couldn't see how to close | This row is hard; either revise the note manually or accept the verdict |
 | `timeout` | Codex didn't finish in budget | Try `--retry-failed` with longer `--codex-timeout-sec`, or skip |
+| `transient_failed` | Account quota, model capacity, or temporary service failure | Back off, then resume with `--retry-transient`; the row was not scientifically attempted |
 | `codex_failed` | Codex crashed / returncode != 0 | Read the stderr in the state file; usually transient |
 | `push_failed` | Codex made edits but git push failed | Check `logs/science-fix-runs/*.jsonl` for details |
 | `pr_failed` | Push succeeded but gh pr create failed | Branch is on remote; open PR manually |

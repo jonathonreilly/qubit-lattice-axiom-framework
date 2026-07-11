@@ -44,7 +44,7 @@ disclosed conditional target itself.
 
 ### 2. Build the Premise Ledger
 - List every axiom, approved primitive, retained theorem (with
-  `effective_status`), and admission the derivation will use.
+  `effective_status`), and open obligation the derivation will encounter.
 - Anything not on the allowed list above is a new import: stop and flag it
   for explicit user approval instead of using it silently.
 
@@ -94,7 +94,7 @@ Write the derivation to `.claude/science/derivations/{slug}-{date}.md`:
 {what is being derived, with quantitative characterization and source}
 
 ## Premise Ledger
-{axioms / approved primitives / retained deps with effective_status / admissions}
+{axioms / approved primitives / retained deps with effective_status / open obligations}
 
 ## Minimal Mechanism
 {smallest configuration exhibiting the behavior}

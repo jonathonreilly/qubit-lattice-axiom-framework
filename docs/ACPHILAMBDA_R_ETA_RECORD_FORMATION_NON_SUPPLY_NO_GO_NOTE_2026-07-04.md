@@ -5,7 +5,7 @@
 **Claim type:** no_go
 **Status:** source-side bounded no-go; independent audit required before any
 effective-status change. This note does not derive R-eta, does not retire
-`AC_phi_lambda` or `AC_phi_lambda(ii)`, does not edit any Tier-A registry,
+`AC_phi_lambda` or `AC_phi_lambda(ii)`, does not create or edit any premise registry,
 axiom, primitive, audit verdict, or publication surface, and does not claim
 that all future occurrence-lane or readout-context routes are closed.
 **Current-main posture (2026-07-11):** R-eta is an open derivation obligation
@@ -57,8 +57,8 @@ Within the current axiom/primitive surface, Record formation does not force
 R-eta. It supplies existence of formed records, not the occurrence/rate law or
 readout-context theorem that would select the direct density-as-angle member.
 Selecting R-eta still requires a separate inhomogeneous readout theorem,
-occurrence-lane event-rate theorem, physical action/source bridge,
-owner-approved primitive, or explicit admission.
+occurrence-lane event-rate theorem, physical action/source bridge, or
+approved primitive with the exact declared scope.
 
 ## Relation To Existing Blocks
 
@@ -91,7 +91,7 @@ owner-approved primitive, or explicit admission.
 ## What Does Not Move
 
 - `AC_phi_lambda` is not retired.
-- `AC_phi_lambda(ii)` / R-eta is not derived, refuted, or removed from Tier A.
+- The R-eta derivation obligation remains open.
 - `AC_phi_lambda(i)`, theta, determinant-readout routes, and approved-primitive
   routes are untouched.
 - A future occurrence-lane theorem is not ruled out. It must add content beyond

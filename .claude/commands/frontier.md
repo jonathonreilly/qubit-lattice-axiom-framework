@@ -82,7 +82,7 @@ Write to `.claude/science/frontier/{date}-frontier-map.md`:
 {ranked blockers with what each unblocks}
 
 ## Premise Coverage
-{load-bearing admissions/imports and their retirement lanes}
+{load-bearing open obligations/imports and their derivation lanes}
 
 ## Top 5 Highest-Value Gaps
 1. {gap} — {why it matters} — {effort}

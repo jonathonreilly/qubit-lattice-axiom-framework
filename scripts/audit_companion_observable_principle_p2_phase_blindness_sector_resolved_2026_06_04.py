@@ -4,19 +4,19 @@
 
 Load-bearing content of the narrow note
 ---------------------------------------
-After the Record baseline absorbed the P1 (finite scalar additivity) premise of
-`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, the sole remaining scalar-selection
-admission of that parent is **P2**:
+After the Record baseline absorbed the P1 (finite scalar additivity) condition of
+`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, the remaining scalar-selection
+condition of that parent is **P2**:
 
     P2: the scalar record generator `W[J]` depends on `|Z| = |det(D+J)|`
         alone, not on `arg Z` (the fermionic phase).
 
 This runner reproves, from explicit finite-dimensional hypotheses, that P2 is
-**not an independent admission** once the determinant-readout regularity
+**not an independent premise** once the determinant-readout regularity
 hypotheses are granted. It is SECTOR-RESOLVED, and its only residual is the
 `(M)`/Berezin determinant-identification, which is already `AC_phi_lambda`-gated
-(form-selection note, that note's section 7).  The admission count is unchanged
-(genuine Tier-A admissions stay at two: `AC_phi_lambda`, `theta`).
+(form-selection note, that note's section 7). Historical admission counts have
+zero authority; the unresolved condition remains open.
 
 The two complementary sectors:
 
@@ -60,7 +60,7 @@ The two complementary sectors:
           -gated -- exactly as the det-vs-tr form selection is.  P2 therefore
           has no separate residual beyond `AC_phi_lambda` plus the named
           determinant-readout regularity hypotheses; it is neither independent
-          authority nor a hidden third admission.
+          authority nor a hidden third premise class.
 
 Companion role: not a new claim row beyond the source note; provides
 audit-friendly evidence that the load-bearing algebra holds at exact /
@@ -282,14 +282,14 @@ check("two sectors are complementary and EXHAUST det(D+J) in C* "
 # Part E -- residual: P2 routes into the (M)/AC_phi_lambda gate
 # ===========================================================================
 print("\n=== Part E: residual analysis -- P2 routes into the (M)/AC_phi_lambda "
-      "determinant identification; admission count unchanged ===")
+      "determinant identification; no extra premise class ===")
 
 # Documentation/assertion checks (mirroring the form-selection runner's Part 7):
 # the ONLY premise left after sector resolution is that the physical readout IS
 # the multiplicative-character determinant Z=det(D+J) -- the (M) premise of the
 # form-selection note, routed into the AC_phi_lambda/Berezin realization gate.
 # P2 itself is therefore neither an independent theorem nor a hidden
-# third admission.
+# third premise class.
 repo_root = Path(__file__).resolve().parents[1]
 history_path = repo_root / "docs/audit/data/premise_decision_history.json"
 history = json.loads(history_path.read_text())
@@ -343,5 +343,5 @@ if FAIL:
 print("\nAll checks passed: P2 phase-blindness is sector-resolved "
       "(audit-ratified positivity on the mass-like sector; prior compact-phase "
       "lemma on the generic sector); its only residual is the "
-      "(M)/AC_phi_lambda determinant identification plus named regularity hypotheses. No new admission.")
+      "(M)/AC_phi_lambda determinant identification plus named regularity hypotheses. No new premise.")
 sys.exit(0)

@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-03
 **Type:** bounded_theorem
-**Claim type:** bounded_theorem (composition), conditional on the named shared bridge
+**Claim type:** bounded_theorem (composition), conditional on two independent bridges
 **Status authority:** independent audit lane only. This source note sets no
 audit outcome and changes no registry row.
 **Current posture (2026-07-11):** this is a conditional composition surface.
@@ -24,7 +24,7 @@ bridges:
 
 Conditional on both statements, the mass-side K-real structure is read as the
 same conjugate-symmetric `C_3` object as the flavor doublet's K/CPT
-record-outcome orbit reading. Under that single input, the determinant channel
+record-outcome orbit reading. Under those two inputs, the determinant channel
 reads the K-real conjugate-paired content.
 
 The composed conclusion on the stated mass surface is:
@@ -65,10 +65,11 @@ determinant/block-composition class. K/CPT orbit registration forces
 `cos(arg det M)` is K-even, but it violates the multiplicative
 independent-block composition law.
 
-Together, Legs 1 and 1b supply the K/CPT determinant-channel reading, Leg 2 removes
-the discrete sign branch, and Leg 3 removes continuous determinant phase
-characters. The theta mass-side supplied content therefore reduces to exactly
-the one bridge sentence quoted above.
+Together, Legs 1 and 1b conditionally supply the K/CPT determinant-channel
+reading, Leg 2 removes the discrete sign branch, and Leg 3 removes continuous
+determinant phase characters. The theta mass-side content therefore remains
+conditional on both the occupancy-grain bridge and the independent
+cross-sector determinant-readout bridge.
 
 ## Two Independent Open Dependencies
 
@@ -120,5 +121,4 @@ The runner uses exact rational arithmetic for the finite matrix checks. It
 guards the shared bridge sentence, the 2026-07-01 pairing formula content, and
 the 2026-06-12 conditional sentence; it checks signed scalar masses on the
 same grid used by the 2026-07-01 runner, exact signed-Brannen circulant dials,
-the phase-character erasure, the hostile guard, and the one-sentence
-conditional count.
+the phase-character erasure, the hostile guard, and the two-condition count.

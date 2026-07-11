@@ -114,8 +114,11 @@ def current_deps_are_ratified(row: dict, rows: dict[str, dict]) -> bool:
     # obligations and historical admissions do not. Textbook results must
     # still be ordinary retained-grade rows.
     return all(
-        dep_effective_status(dep_id, rows) in CHAIN_SATISFYING_DEP_STATUSES
-        or premise_nodes.is_accepted_premise_dep(dep_id)
+        not premise_nodes.is_non_evidence_context_dep(dep_id)
+        and (
+            dep_effective_status(dep_id, rows) in CHAIN_SATISFYING_DEP_STATUSES
+            or premise_nodes.is_accepted_premise_dep(dep_id)
+        )
         for dep_id in deps
     )
 

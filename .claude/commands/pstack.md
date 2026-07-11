@@ -9,7 +9,7 @@ axiom framework (four axioms: Lattice, Qubit, Admissibility, Record; see
 ### Orientation
 | Skill | Role | What It Does |
 |-------|------|-------------|
-| `/framework-refresher` | Orientation | Load the current axioms, approved primitives, admissions, vocabulary, and standing discipline before any physics work |
+| `/framework-refresher` | Orientation | Load the current axioms, approved primitives, open obligations, vocabulary, and standing discipline before any physics work |
 | `/ledger` | Status Lookup | Verify a claim's audit-ratified `effective_status` on `origin/main` before citing or building on it |
 
 ### Research Direction
@@ -86,8 +86,8 @@ Side channels (run anytime): `/frontier`, `/progress`, `/ledger`,
    scan, not spot checks.
 2. **Import Discipline** — Derive from approved axioms and approved primitive
    registry entries when making framework claims; use known physics and
-   literature only as disclosed comparators, targets, or explicitly admitted
-   context.
+   literature only as disclosed comparators, targets, or external context that
+   does not satisfy a framework dependency.
    Registered primitives, including the scale-reference and kinetic-isotropy
    primitives, are not bounded imports; unregistered primitives are not
    granted. The kinetic-isotropy primitive supplies only structural OS0

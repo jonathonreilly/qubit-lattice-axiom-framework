@@ -31,7 +31,7 @@ investigation.
 
 ### Method
 - Premise ledger: axioms, approved primitives, retained dependencies (with
-  `effective_status`), admissions, disclosed comparators.
+  `effective_status`), open obligations, disclosed comparators.
 - Computation: parameters (table), observables, ensemble/seed strategy if
   stochastic, controls.
 - Artifacts: runner script(s) by path, output/cache paths.

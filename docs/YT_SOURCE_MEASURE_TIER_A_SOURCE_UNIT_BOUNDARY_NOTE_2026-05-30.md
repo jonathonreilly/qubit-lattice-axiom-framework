@@ -5,11 +5,11 @@ status_authority: independent_audit_lane_only
 direct_effective_status_change_allowed_from_this_note: false
 ---
 
-# Y_T Source-Measure Tier-A Source-Unit Boundary
+# Y_T Conditional Source-Measure Source-Unit Boundary
 
 **Claim type:** bounded_theorem / source-boundary package.
-**Role:** assemble the shortest honest Y_T chain on the accepted Tier-A
-source-measure surface.
+**Role:** assemble the shortest honest Y_T chain under the explicit open
+source-measure condition.
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome and does not claim unbounded Y_T closure.
 **Primary runner:** `scripts/frontier_yt_source_measure_tier_a_source_unit_boundary.py`
@@ -17,26 +17,26 @@ or predict an audit outcome and does not claim unbounded Y_T closure.
 
 ## Statement
 
-On the accepted Tier-A source-measure/P-cal surface, the Y_T top-source
-normalization wall closes:
+Under the open source-measure/P-cal condition, the Y_T top-source normalization
+calculation gives:
 
 ```text
-accepted Tier-A source-measure/P-cal input
+open source-measure/P-cal condition
   -> physical scalar source coordinate is the primitive normalized
      RN/Fisher coordinate
   -> lambda = 1 for normalized O_top
   -> y_33 = 1/sqrt(6).
 ```
 
-The exact Tier-A input consumed here is:
+The exact open condition consumed here is:
 
 ```text
 physical scalar source coordinates are canonical normalized trace
 Gibbs/RN/Fisher coordinates, with <1> = 1.
 ```
 
-In repo bookkeeping this is tracked as the Tier-A P1/P-cal source-measure
-premise, not as an axiom and not as a derived theorem from A1+A2.
+It has zero premise weight: it is not an axiom, approved primitive, or derived
+theorem from the framework axioms.
 
 ## Load-Bearing Chain
 
@@ -57,9 +57,9 @@ premise, not as an axiom and not as a derived theorem from A1+A2.
    [`YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md`](YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md)).
    These are support surfaces, not independent Y_T closure claims.
 
-3. **Tier-A source-measure closure of lambda.**
+3. **Conditional source-measure calculation of lambda.**
    [`YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md`](YT_TIER_A_SOURCE_ACTION_TOP_PREMISE_CLOSURE_NOTE_2026-05-29.md)
-   proves that, once the Tier-A source-measure/P-cal input is accepted,
+   proves that, once the open source-measure/P-cal condition is assumed,
 
    ```text
    R_h = exp(h O_top) / E_0 exp(h O_top),
@@ -76,8 +76,8 @@ premise, not as an axiom and not as a derived theorem from A1+A2.
    y_33 = 1/sqrt(6).
    ```
 
-This is the bounded source-side support conclusion on the admitted Tier-A
-surface.  It is not a direct top-correlator measurement and not a claim about
+This is a bounded conditional source-side calculation. It is not a direct
+top-correlator measurement and not a claim about
 full physical-scale matching.
 
 ## Why This Is Not The Old Ward/H-Unit Trap
@@ -90,7 +90,7 @@ The load-bearing steps here are:
 
 ```text
 finite S_6 unit-vector lemma
-  + normalized RN/Fisher source coordinate on the admitted Tier-A surface
+  + normalized RN/Fisher source coordinate under the open condition
   + source-action support firewalls.
 ```
 
@@ -102,13 +102,13 @@ No step defines `y_t` by an `H_unit` matrix element, uses
 The source question packaged here is narrow:
 
 ```text
-Given the Tier-A source-measure/P-cal premise and the cited finite support
+Given the open source-measure/P-cal condition and the cited finite support
 lemmas, does the source-side normalization fix y_33 = 1/sqrt(6)?
 ```
 
-The answer remains bounded by the Tier-A P-cal premise until that premise is
-derived or accepted as native source-measure physics.  This note does not
-retire that pin and does not address the separate EW/running gates.
+The answer remains conditional on P-cal until that source-measure statement is
+derived. This note does not close that gate and does not address the separate
+EW/running gates.
 
 ## Rows That Still Need Audit Or Repair
 
@@ -130,16 +130,16 @@ roots.  None is silently promoted by this note.
 ## Relation To P-Cal Release Work
 
 The source-measure campaign has made progress but has not fully released the
-Tier-A pin.  The current narrow release route is:
+open P-cal gate. The current narrow derivation route is:
 
 ```text
 physical sharp-record source interventions are normalized RN/Fisher cocycles.
 ```
 
-If that theorem is accepted as native source-measure physics, the P-cal pin is
+If a retained theorem derives that native source-measure physics, the P-cal pin is
 retired for this sector.  The log-selection boundary shows that finite record
 algebra alone does not force the unit source scale, so this package does not
-pretend the Tier-A pin has already been released.
+pretend the P-cal gate has already been closed.
 
 ## Non-Claims
 
@@ -155,11 +155,11 @@ This package does not claim:
 
 ## Boundary Summary
 
-This package closes only the Tier-A source-measure surface:
+This package reports only the conditional source-measure calculation:
 
 - `lambda = 1`;
 - `y_33 = 1/sqrt(6)`;
-- still dependent on the P-cal/source-measure premise;
+- still dependent on the open P-cal/source-measure condition;
 - still missing strict same-source top/W pole-response evidence;
 - still missing physical-scale `g_2` and matching/running bridges;
 - no unilateral status change is claimed here.

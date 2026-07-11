@@ -85,7 +85,7 @@ import sympy as sp
 # --------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parents[1]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
-TIER_A_PATH = REPO_ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
+DECISION_HISTORY_PATH = REPO_ROOT / "docs" / "audit" / "data" / "premise_decision_history.json"
 NOTE_PATH = REPO_ROOT / "docs" / "YT_WARD_IDENTITY_DEPENDENCIES_REGISTERED_BOUND_NARROW_THEOREM_NOTE_2026-06-05.md"
 
 PASS = 0
@@ -427,23 +427,23 @@ check(
 # ==========================================================================
 banner("BLOCK 9: Open-dependency check (reads history/ledger; writes nothing)")
 # ==========================================================================
-DEP1_TIER_A = "staggered_dirac_realization_gate_note_2026-05-03"
+DEP1_OPEN_GATE = "staggered_dirac_realization_gate_note_2026-05-03"
 DEP2_BASIS = "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
 GBARE_CONVENTION = "g_bare_rigidity_theorem_note"
 TARGET_ROW = "yt_ward_identity_derivation_theorem"
 
-tier_a = json.loads(TIER_A_PATH.read_text(encoding="utf-8"))
+history = json.loads(DECISION_HISTORY_PATH.read_text(encoding="utf-8"))
 ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
 note_text = NOTE_PATH.read_text(encoding="utf-8")
 rows = ledger["rows"]
 RETAINED_GRADES = {"retained", "retained_no_go", "retained_bounded"}
 
-deriv_targets = set((tier_a.get("derivation_targets") or {}).keys())
-conventions = set((tier_a.get("conventions") or {}).keys())
+deriv_targets = set((history.get("derivation_targets") or {}).keys())
+conventions = set((history.get("conventions") or {}).keys())
 
 check(
-    f"Dep 1 '{DEP1_TIER_A}' is not an accepted premise",
-    DEP1_TIER_A not in deriv_targets,
+    f"Dep 1 '{DEP1_OPEN_GATE}' is not an accepted premise",
+    DEP1_OPEN_GATE not in deriv_targets,
     f"historical derivation_targets = {sorted(deriv_targets)}",
 )
 check(
@@ -498,10 +498,10 @@ def resolve_clean_bounded(dep_ids: list[str]) -> str:
         if d in rows and rows[d].get("effective_status") in RETAINED_GRADES:
             continue
         return "retained_pending_chain"
-    return "retained"
+    return "retained_bounded"
 
 
-resolved = resolve_clean_bounded([DEP1_TIER_A, DEP2_BASIS, GBARE_CONVENTION])
+resolved = resolve_clean_bounded([DEP1_OPEN_GATE, DEP2_BASIS, GBARE_CONVENTION])
 check(
     "Open Dep 1 and non-retained convention keep the bounded row pending-chain",
     resolved == "retained_pending_chain",
@@ -511,7 +511,7 @@ check(
 # row, the chain would NOT close (the conditional dep is not retained-grade
 # nor an accepted premise) -> retained_pending_chain. This documents why the note
 # backticks the target row.
-resolved_bad = resolve_clean_bounded([DEP1_TIER_A, DEP2_BASIS, GBARE_CONVENTION, TARGET_ROW])
+resolved_bad = resolve_clean_bounded([DEP1_OPEN_GATE, DEP2_BASIS, GBARE_CONVENTION, TARGET_ROW])
 check(
     "Linking another conditional target also leaves the row pending-chain",
     resolved_bad == "retained_pending_chain",

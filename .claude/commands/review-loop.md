@@ -136,7 +136,7 @@ Run the repo-native physics review loop from:
 - The repo baseline is the four named axioms in
   `MINIMAL_AXIOMS_2026-06-29.md`: Lattice, Qubit, Admissibility, and Record.
   Name them explicitly; do not compress them to bare `A1` / `A2` / `A3` /
-  `A4` labels. Do not classify that baseline as a new admitted premise,
+  `A4` labels. Do not classify that baseline as a new premise,
   regulator interpretation, or optional theory language. Do not let that
   baseline silently promote separate species identifications, selectors,
   probability or occurrence rules, K/CPT or central-sector structure,
@@ -148,7 +148,7 @@ Run the repo-native physics review loop from:
   content alone; a state is a configuration of records; and a law privileges
   no states, has a supplied condition as its domain, and gives exactly one
   answer where that condition holds.
-- Nature-grade retention requires derived or explicitly admitted inputs,
+- Nature-grade retention requires axioms, approved primitives, or retained dependencies,
   decisive artifact support, clear falsifiers, and no hidden semantic bridge.
 - Math-bearing runners require independent formula review: PASS lines do not
   establish that the runner's expression, sign, factor, normalization, or

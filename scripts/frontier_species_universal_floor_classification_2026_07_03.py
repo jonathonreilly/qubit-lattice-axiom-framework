@@ -110,15 +110,15 @@ def main() -> int:
         "live quote guard: arrow universal-floor sentence",
     )
 
-    arrow_registry_quote = (
+    historical_registry_quote = (
         "the past hypothesis sits with the universal-floor admissions (scale "
         "reference / strong-CP-style shared problems), not the framework-specific "
         "Tier A-1 derivation targets (AC_phi_lambda, theta)."
     )
     check(
         4,
-        arrow_registry_quote in arrow,
-        "live quote guard: past-hypothesis placement sentence",
+        historical_registry_quote in arrow,
+        "historical quote guard: superseded past-hypothesis placement sentence",
     )
 
     parent_same_id_quote = (

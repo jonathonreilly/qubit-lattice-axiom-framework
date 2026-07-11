@@ -30,8 +30,9 @@ The owner approval recorded in the 2026-07-05 landing thread was:
 I approve #4991's owner-governance adoption of the four Block49 residual candidates, with the exact boundaries in owner_governed_premise_nodes.json, retiring live Tier-A admissions without treating them as axioms, primitives, or audit-ratified theorem closures.
 ```
 
-At that time theta had already been retired by a retained-derivation record, so
-the attempted live effect applied only to `AC_phi_lambda`.
+At that time theta had been treated as retired by a retained-derivation record.
+The current split preserves the gauge-side disposition but exposes a distinct,
+zero-weight quark-determinant cross-sector readout obligation on the mass side.
 
 ### Historical Candidate 1
 
@@ -72,6 +73,8 @@ Accordingly:
 
 ## Theta disposition
 
-The historical approval also named two theta candidates. Theta already had a
-separate retained-derivation disposition, so this correction does not reopen or
-reclassify theta. It removes only the governance-only premise mechanism.
+The historical approval also named two theta candidates. This correction does
+not alter theta's gauge-side disposition, but it does prevent the charged-lepton
+occupancy bridge from silently supplying the independent quark-determinant
+readout. The mass-side composition therefore remains conditional on both
+zero-weight obligations until retained theorems close them.

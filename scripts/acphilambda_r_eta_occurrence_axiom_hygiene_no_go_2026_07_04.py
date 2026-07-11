@@ -95,7 +95,7 @@ def main() -> int:
     )
     check("AC statement still names R-eta", "R-eta" in ac["statement"])
     check("human registry points to the R-eta derivation obligation", "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md" in registry)
-    check("note says registry is not edited", "The Tier-A registry is not edited." in note)
+    check("note says registry is not edited", "No premise registry is created or edited." in note)
     check("note says R-eta remains open", "R-eta is not derived or refuted; its open gate remains" in note)
 
     for source_path in [

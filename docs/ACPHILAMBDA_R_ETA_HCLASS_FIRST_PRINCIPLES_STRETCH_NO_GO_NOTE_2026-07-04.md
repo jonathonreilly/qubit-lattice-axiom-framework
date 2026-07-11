@@ -9,7 +9,7 @@ primitive registry, retained C3 fixed-locus arithmetic, supplied finite
 registrability context, and holonomy normal form already force the physical
 charged-lepton readout to be the fixed-locus density class of the realized C3
 cycle. They do not. This note does not derive, refute, re-grade, retire, or
-remove R-eta or AC_phi_lambda, and it does not edit any Tier-A registry, axiom,
+remove R-eta or AC_phi_lambda, and it does not create or edit any premise registry, axiom,
 primitive, audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
 **Primary runner:**
@@ -60,9 +60,11 @@ allowed as a load-bearing step.
   `kinetic_isotropy_primitive`, and `realized_state_primitive` as approved
   axiom/primitive premise nodes. None registers h-class, R-eta, or a physical
   observable bridge.
-- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
-  and [`docs/audit/data/premise_decision_history.json`](audit/data/premise_decision_history.json)
-  still name `delta_readout_identification_R_eta` as a live AC_phi_lambda atom.
+- `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` and
+  `docs/audit/data/premise_decision_history.json` preserve the former
+  `delta_readout_identification_R_eta` wording as non-authoritative provenance.
+  The current scientific target is the zero-weight `open_gate` in
+  [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md).
 - [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
   supplies the forced C3 fixed-locus weights `(1,2)` and the local density
   `L3(1,2) = 2/9`, while excluding the physical single-summand readout bridge.
@@ -218,9 +220,9 @@ selector, event law, Born/interface rule, physical carrier theorem,
 activation-rate premise, readout primitive, source/action bridge, h-unit
 assumption, or owner decision.
 
-**N4 residual matching.** The residual matches the Tier-A registry: the fixed
+**N4 residual matching.** The residual matches the zero-weight R-eta open obligation: the fixed
 number `2/9` is retained fixed-locus arithmetic conditional on R-eta, while
-the surviving atom is the density-read-as-angle / holonomy-readout
+the surviving obligation is the density-read-as-angle / holonomy-readout
 identification.
 
 **N5 proven surface.** Proven here is a bounded no-go against deriving h-class
@@ -237,7 +239,7 @@ selection rule.
 
 **N8 cross-cycle echo.** This is the same audit pattern as the Record update
 and AC(i) value-face hygiene: readable content and realized data are not
-automatically the physical law or selector needed for Tier-A retirement.
+automatically the physical law or selector needed to close an open obligation.
 
 ## Verification
 

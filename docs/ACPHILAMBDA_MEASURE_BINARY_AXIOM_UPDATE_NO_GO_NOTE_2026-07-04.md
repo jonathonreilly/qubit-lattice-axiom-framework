@@ -3,11 +3,11 @@
 **Date:** 2026-07-04
 **Type:** no_go
 **Claim type:** no_go
-**Scope boundary:** bounded no-go against retiring the surviving
-AC_phi_lambda sub-admission (i) doublet reading/occupancy selection binary by
+**Scope boundary:** bounded no-go against closing the surviving
+AC_phi_lambda occupancy-grain derivation obligation by
 appeal to the updated four axioms or approved primitives. This note
 does not derive, refute, re-grade, retire, or remove AC_phi_lambda, does not
-select `r = 1/2` or `r = 1`, and does not edit any Tier-A registry, axiom,
+select `r = 1/2` or `r = 1`, and does not create or edit any premise registry, axiom,
 primitive, audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
 **Primary runner:**
@@ -120,12 +120,12 @@ coordinates are supplied. Additivity does not rank them.
 | The updated Admissibility or Record text might be read as supplying AC(i)'s grain. | It is now explicitly certified as non-supplying the measure binary. |
 | The realized-state primitive might be over-read as selecting the measure rule. | It covers lane values only; the rule-shaped measure binary remains outside it. |
 | Kinetic isotropy could be analogized into a generation-measure graining primitive. | It remains only `c_t = c_s`; no selector or readout bridge is imported. |
-| The carrier-measure residual could be described as an axiom-count issue. | It is a theorem/bridge target: derive the physical generation readout partition or keep AC(i) live. |
+| The carrier-measure residual could be described as an axiom-count issue. | It is a theorem/bridge target: derive the physical generation readout partition or keep the obligation open. |
 
 ## What Does Not Move
 
-- AC_phi_lambda is not retired.
-- The Tier-A registry is not edited.
+- The AC occupancy derivation obligation remains open.
+- No premise registry is created or edited.
 - No value of `r` is derived, selected, or preferred.
 - The orbit/holomorphic count-once route remains open if a future theorem
   derives the needed matter-action statistics.

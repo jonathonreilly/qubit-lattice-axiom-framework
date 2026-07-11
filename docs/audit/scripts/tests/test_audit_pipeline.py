@@ -2549,6 +2549,30 @@ class ComputeAuditQueueTest(unittest.TestCase):
             self.assertFalse(m.is_ready(rows["history_blocked_note"], rows))
 
 
+class ComputeReauditCandidatesTest(unittest.TestCase):
+    def test_non_evidence_history_cannot_make_candidate_ready(self):
+        m = _import("compute_reaudit_candidates")
+        rows = {
+            "history": {"effective_status": "meta"},
+            "retained_dep": {"effective_status": "retained_bounded"},
+        }
+        with mock.patch.object(
+            m.premise_nodes,
+            "is_non_evidence_context_dep",
+            side_effect=lambda dep_id: dep_id == "history",
+        ), mock.patch.object(
+            m.premise_nodes,
+            "is_accepted_premise_dep",
+            return_value=False,
+        ):
+            self.assertFalse(
+                m.current_deps_are_ratified({"deps": ["history"]}, rows)
+            )
+            self.assertTrue(
+                m.current_deps_are_ratified({"deps": ["retained_dep"]}, rows)
+            )
+
+
 class NoGoDisciplineGateTest(unittest.TestCase):
     @staticmethod
     def _manifest() -> dict:

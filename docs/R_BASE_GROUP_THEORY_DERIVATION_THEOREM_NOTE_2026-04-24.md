@@ -1,7 +1,8 @@
 # R_base = 31/9 Group-Theory Derivation Theorem
 
 **Date:** 2026-04-24
-**Status:** proposed_retained exact support identity on the bounded dark-matter /
+**Type:** bounded_theorem
+**Status:** bounded exact-support identity on the dark-matter /
 cosmology cascade surface. This note packages the exact rational identity
 `R_base = 31/9` that was previously inline in
 `COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md`
@@ -14,8 +15,9 @@ It does not promote the full dark-matter-to-baryon ratio or the numerical
 ## Statement
 
 On the retained graph-first `SU(3)` gauge structure with `N_c = 3`, the
-retained electroweak `SU(2)_L` structure, and the admitted
-Georgi-Glashow/GUT hypercharge normalization factor `3/5`, the structural
+retained electroweak `SU(2)_L` structure, and the explicitly declared bounded
+Georgi-Glashow/GUT hypercharge normalization factor `3/5`
+((D1)/(D2) of the linked bridge note), the structural
 base factor used by the bounded dark-matter/cosmology cascade is
 
 ```text
@@ -32,7 +34,7 @@ The exact inputs are:
 | `C_2(SU(2)_fund)` | `3/4` | textbook Lie-algebra identity at `N = 2` |
 | `dim(adj SU(3))` | `8` | `N^2 - 1` at `N = 3` |
 | `dim(adj SU(2))` | `3` | `N^2 - 1` at `N = 2` |
-| GUT normalization | `3/5` | retained/admitted from the hypercharge-identification lane |
+| GUT normalization | `3/5` | declared bounded premise packet (D1/D2) via [HYPERCHARGE_GUT_NORMALIZATION_THREE_FIFTHS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-07-10.md](HYPERCHARGE_GUT_NORMALIZATION_THREE_FIFTHS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-07-10.md); the two inputs are supplied admissions, not registry-approved or framework-derived, and are not supplied by the hypercharge-identification authority |
 
 No observed cosmological value enters the derivation of `R_base`.
 
@@ -117,6 +119,24 @@ boundary checks using exact rational arithmetic.
 
 - `COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md`
 - `OMEGA_LAMBDA_DERIVATION_NOTE.md`
+- [HYPERCHARGE_GUT_NORMALIZATION_THREE_FIFTHS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-07-10.md](HYPERCHARGE_GUT_NORMALIZATION_THREE_FIFTHS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-07-10.md)
 - [`HYPERCHARGE_IDENTIFICATION_NOTE.md`](HYPERCHARGE_IDENTIFICATION_NOTE.md)
 - [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
 - [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md)
+
+## Repair Note
+
+**2026-07-10 declared bounded-premise repair.** The audit of this row returned
+`audited_conditional` with repair class `missing_bridge_theorem`: the
+load-bearing `3/5` normalization had neither a retained derivation nor an
+declared bounded-premise packet, and the hypercharge-identification authority
+quarantines GUT-normalization claims. Taking the verdict's bounded-premise arm
+("otherwise keep this row bounded on that admission"), the factor is now
+carried as the declared bounded premise packet (D1/D2) of
+[HYPERCHARGE_GUT_NORMALIZATION_THREE_FIFTHS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-07-10.md](HYPERCHARGE_GUT_NORMALIZATION_THREE_FIFTHS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-07-10.md),
+which supplies the one-family hypercharge multiset and the
+equal-family-trace scheme and verifies by exact arithmetic that they compose
+to exactly `3/5` (and to `R_base = 31/9` on substitution). The native-axiom
+derivation of `3/5` remains a separate open target, unchanged from the Scope
+section. This dated line moves the note hash so the row re-enters for
+re-audit.

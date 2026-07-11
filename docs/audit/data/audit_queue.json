@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 655,
+    "critical": 654,
     "high": 334,
     "leaf": 1149,
     "medium": 756
@@ -3046,30 +3046,6 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
-      "claim_scope": "Finite-dimensional Kraus\u2013Choi correspondence on M_d(\u2102), applied to finite qubit regions, using one unnormalized Choi convention consistently for reconstruction, Kraus extraction, complete positivity, trace preservation, and the two stated mixed-convention errors.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.311,
-      "note_path": "docs/KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_kraus_choi_normalization_reconciled_2026_06_05.py",
-      "transitive_descendants": 448
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
@@ -3091,6 +3067,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py",
+      "transitive_descendants": 447
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 7,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 12.307,
+      "note_path": "docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/kraus_choi_normalization_convention_check_2026_06_05.py",
       "transitive_descendants": 447
     },
     {
@@ -14463,31 +14464,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_koide_brannen_phase_reduction_theorem.py",
       "transitive_descendants": 448
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.307,
-      "note_path": "docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/kraus_choi_normalization_convention_check_2026_06_05.py",
-      "transitive_descendants": 447
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -82409,5 +82385,5 @@
     }
   ],
   "ready_count": 602,
-  "total_pending": 2894
+  "total_pending": 2893
 }

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/admitted_input_registry_tier_a_boundary_check.py
+runner_sha256: 3a4361f31dd5d037542605b9e5961eda9ccf62534e9b0ccb7d2cee1b0b3e3213
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
 ==============================================================================
 TIER-A ADMITTED-INPUT REGISTRY BOUNDARY CHECK
 ==============================================================================
@@ -25,7 +33,7 @@ Scope: source/registry alignment only; no audit verdict changes.
 [PASS] AC retirement record present
 [PASS] AC retirement mechanism is owner governance on audited surface -- retired_by_owner_governance_on_audited_surface
 [PASS] AC retirement records owner-governed premise node -- staggered_dirac_realization_gate_note_2026-05-03
-[PASS] AC retirement records audited surface -- docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md audited_clean / retained_bounded on main at 5d8df21fe
+[PASS] AC retirement records audited surface -- docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md audited_clean / retained_bounded at adoption commit 5d8df21fe; current effective status is ledger-owned
 [PASS] AC retirement candidates exact -- ['ac_orbit_occupancy_statistical_grain_premise', 'ac_reta_hclass_hunit_readout_premise']
 [PASS] AC retirement boundary exact -- Retires only the current minimum AC_phi_lambda Tier-A atoms: AC(i) matter-action occupancy grain and AC(ii) R-eta h-class/h-unit readout license. It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law.
 [PASS] theta retired row exists -- strong_cp_theta_zero_note
@@ -44,12 +52,13 @@ Scope: source/registry alignment only; no audit verdict changes.
 [PASS] Scale reference lives in axiom-premise registry -- ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
 [PASS] convention rows are present -- ['g_bare_rigidity_theorem_note', 'hypercharge_identification_note']
 [PASS] reclassified primitives are present -- ['minimal_axioms_record', 'scale_reference_primitive']
-[PASS] AC source row remains audited retained-bounded bounded theorem -- ('bounded_theorem', 'audited_clean', 'retained_bounded')
+[PASS] AC adoption-time audited bounded surface is preserved in ledger history -- ('bounded_theorem', 'unaudited', 'unaudited')
 [PASS] theta source row remains audited retained-bounded bounded theorem -- ('bounded_theorem', 'audited_clean', 'retained_bounded')
 [PASS] note states zero live Tier-A targets
 [PASS] note states theta retained-derivation retirement
 [PASS] note states AC owner-governance retirement
-[PASS] note states audited AC surface
+[PASS] note states historical audited AC surface
+[PASS] note delegates current AC status to ledger
 [PASS] note names owner-governed registry
 [PASS] note says no hand-maintained backlinks
 [PASS] note says audit status remains audit-lane-only
@@ -63,4 +72,7 @@ Scope: source/registry alignment only; no audit verdict changes.
 [PASS] forbidden positive status claim absent: theta is theorem-derived
 [PASS] forbidden positive status claim absent: AC_phi_lambda is theorem-derived
 
-SUMMARY: TIER-A REGISTRY BOUNDARY PASS=59 FAIL=0
+SUMMARY: TIER-A REGISTRY BOUNDARY PASS=60 FAIL=0
+
+----- stderr -----
+

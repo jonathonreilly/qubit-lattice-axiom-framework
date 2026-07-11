@@ -1707,6 +1707,39 @@ class AuditLintTest(unittest.TestCase):
         )
         self.assertEqual(errors, [])
 
+    def test_owner_governed_class_counts_match_nodes_and_atoms(self):
+        m = _import("audit_lint")
+        registry = {
+            "owner_governed_premise_node_count": 1,
+            "owner_governed_residual_atom_count": 2,
+            "nodes": {
+                "ac": {
+                    "adopted_residual_candidates": ["ac_i", "ac_ii"],
+                }
+            },
+        }
+        self.assertEqual(m.owner_governed_count_errors(registry), [])
+
+        registry["owner_governed_premise_node_count"] = 0
+        self.assertEqual(
+            m.owner_governed_count_errors(registry),
+            [
+                "owner_governed_premise_nodes.json "
+                "owner_governed_premise_node_count must equal nodes"
+            ],
+        )
+
+        registry["owner_governed_premise_node_count"] = 1
+        registry["owner_governed_residual_atom_count"] = 0
+        self.assertEqual(
+            m.owner_governed_count_errors(registry),
+            [
+                "owner_governed_premise_nodes.json "
+                "owner_governed_residual_atom_count must equal "
+                "adopted_residual_candidates across nodes"
+            ],
+        )
+
     def test_lint_validates_live_and_cross_confirmation_no_go_packets(self):
         m = _import("audit_lint")
         _patch_repo_root(m, self.tmp_root)

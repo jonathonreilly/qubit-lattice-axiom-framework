@@ -40,6 +40,10 @@ Beyond the axioms, the complete foundation surface is deliberately small:
   The residual owner-governed premise boundaries are recorded separately in
   [`docs/audit/data/owner_governed_premise_nodes.json`](docs/audit/data/owner_governed_premise_nodes.json);
   they are not axioms, primitives, or theorem derivations.
+- **Owner-governed residual premises (1 node; 2 atoms):** the live
+  `AC_phi_lambda` governance node contains AC(i), the matter-action occupancy
+  grain, and AC(ii), the R-eta h-class/h-unit readout license. Thus the Tier-A
+  count of zero does not report zero live owner-governed atoms.
 - **Scope condition (not a premise):** the past-hypothesis low-entropy
   magnitude; results that need it are explicit conditionals.
 

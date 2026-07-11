@@ -1,147 +1,178 @@
-# AC_phi_lambda Record Outcome-Orbit Occupancy Non-Supply No-Go
+# The Axiom Surface Does Not Select a Complex-vs-Realified Occupancy Grain
 
-**Date:** 2026-07-04
+**Date:** 2026-07-04; countermodel repair 2026-07-11
 **Type:** no_go
 **Claim type:** no_go
-**Status:** source-side bounded no-go; independent audit required before any
-effective-status change. This note does not derive `r = 1/2`, does not choose
-the orbit/holomorphic horn, does not adopt the orbit-occupancy premise, does
-not introduce a K-real primitive, does not retire `AC_phi_lambda` or
-`AC_phi_lambda(i)`, and does not edit any Tier-A registry, axiom, primitive,
-audit verdict, or publication surface.
-**Current-main posture (2026-07-06):** live `main` now records Tier-A count
-zero: theta was retired 2026-07-05 by retained derivation, and
-`AC_phi_lambda` was retired by owner-governance adoption. This note banks the
-historical Record outcome-orbit non-supply no-go only; it does not reopen,
-modify, or re-grade either retirement record, `tier_a_admissions.json`, or
-owner-governed premise data.
+**Status authority:** independent audit lane. This source proposal does not
+set or predict an audit verdict.
 **Primary runner:**
 [`scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py`](../scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py)
+**Runner cache:**
+[`logs/runner-cache/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.txt`](../logs/runner-cache/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.txt)
 
-## Target
+## Narrow no-go claim
 
-After the axiom hygiene, a tempting shortcut remains:
+Grant an invertible complex matter block `A`. Even with that grant, the
+[four axioms](MINIMAL_AXIOMS_2026-06-29.md) do not entail whether its additive,
+K-even determinant readout uses one complex determinant grain or the
+realified two-power grain.
+
+Two functionals on the same carrier are
 
 ```text
-Record names realized outcomes
-+ older Record wording used K/CPT orbits in a supplied readout context
-+ the determinant-power split identifies orbit/count-once versus sector/count-twice
-therefore AC_phi_lambda(i)'s occupancy realization binary is already in the axioms.
+F_C(A) = log |det_C A|,
+F_R(A) = log det_R R(A) = 2 F_C(A),
 ```
 
-The implication is invalid.
+where `R(A)` is the realification. Both are similarity invariant, invariant
+under complex conjugation, zero on the empty block, and additive under block
+direct sum. Under the positive scale deformation `A -> exp(t) A` on an
+`n`-dimensional complex block,
 
-The current public axiom memo,
-[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md), explicitly
-keeps `K`/CPT orbit structure, central-sector decomposition, Born weights,
-readout-context selection, measurement basis selection, probability rules, and
-formation rules outside the four axioms. The superseded June 5 Record wording
-did say that, once a readout context, finite central-sector decomposition, and
-fixed `K`/CPT conjugation were supplied, the realized outcome was the `K`/CPT
-orbit of the realized central sector. But even that older supplied-context
-sentence named the outcome object only. It did not attach a weight,
-normalization, occupancy rule, determinant power, or physical matter-statistics
-readout to that object.
+```text
+d/dt F_C(exp(t)A) at t=0 = n,
+d/dt F_R(exp(t)A) at t=0 = 2n.
+```
 
-## Finite Witness
+They therefore realize distinct occupancy grains while satisfying the same
+granted carrier symmetries and additive-readout requirements. The current
+axiom surface does not select between them.
 
-On the supplied two-outcome surface, let the registered outcome labels be
-`s` for the singlet and `d` for the doublet `K`/CPT orbit. Write
-`x = p_d / p_s` for the outcome-space weight ratio.
+This is a current-surface non-entailment result. It does not rule against a
+future physical CAR/action theorem that derives a specific Gaussian measure.
 
-The same outcome labels support both dictionaries already isolated in
-[`OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md`](OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md):
+## Exact countermodels
 
-| Dictionary | Outcome ratio | Interior fixed reading |
+The determinant identity
+
+```text
+det_R R(A)=det_C(A) conjugate(det_C(A))=|det_C(A)|^2
+```
+
+holds for every complex matrix. For invertible `A`, both logarithmic
+functionals are defined. If `A` and `B` are independent blocks, then
+
+```text
+F_C(A direct-sum B)=F_C(A)+F_C(B),
+F_R(A direct-sum B)=F_R(A)+F_R(B).
+```
+
+Complex conjugation leaves both values unchanged. Similarity
+`A -> S A S^(-1)` leaves both determinants unchanged. Thus neither basis
+invariance, K-evenness, nor additive composition distinguishes the
+functionals.
+
+The runner verifies the identities for generic symbolic `2 x 2` matrices and
+exact finite examples, then checks the scaling degrees `n` and `2n` for
+`n=1,2,3,4`.
+
+## Scope
+
+The result grants a complex carrier and a determinant-style readout. It does
+not derive a physical matter action, Berezin measure, K/CPT structure,
+determinant line, polarization, orbit quotient, or record-to-action map. It
+does not set `r`, `delta`, or any mass, and it does not force `r=1/2`.
+
+The live governance target is recorded in
+`docs/audit/data/owner_governed_premise_nodes.json` as AC(i), the matter-action
+occupancy grain. That registry identifies the target and is not a proof
+premise here.
+
+## No-Go Discipline Gate
+
+### N1 — alternative route enumeration
+
+| Route tested against the countermodel | Marker | Result and authority/check |
 |---|---|---|
-| Component dictionary `(1,2)` | `x = 2r` | `x = 1 -> r = 1/2` |
-| Slot dictionary `(1,1)` | `x = r` | `x = 1 -> r = 1` |
+| Complex carrier structure | ATTEMPTED | Both `F_C` and `F_R` are functorially constructed from the same complex block; runner Parts A–B. |
+| Complex-basis similarity invariance | ATTEMPTED | Both are unchanged by `S A S^(-1)`; runner Part B. |
+| K/conjugation evenness | ATTEMPTED | Both depend on `|det_C A|`; runner Part B. K/CPT is an extra grant because the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md) does not supply it. |
+| Empty-zero plus block additivity | ATTEMPTED | Both vanish on the empty determinant and add on direct sums; Record clause in the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md), runner Part C. |
+| Positive scale response | ATTEMPTED | Both respond covariantly but with degrees `n` and `2n`; runner Part D. |
+| Pointwise realized-state evaluation | ATTEMPTED | Evaluating the same carrier at a realized state does not select the functional; [realized-state primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) boundary. |
 
-The outcome object is identical in the two rows. Only the supplied dictionary
-changes. Therefore an axiom or context sentence saying "the outcome is a
-`K`/CPT orbit" cannot by itself determine which `r`-reading or determinant
-power is physical.
+No prior negative row is used as evidence.
 
-Block28 makes the same point in determinant language:
+### N2 — wall independence
 
-```text
-holomorphic/orbit count-once       -> det_C(K)
-realified/sector-tied count-twice  -> det_R R(K) = |det_C(K)|^2
-```
+The scoped claim has one wall: `W_grain`, the physical choice between the
+complex determinant line and its realification. Carrier existence is granted,
+so it is not counted as another wall.
 
-Record outcome naming supplies neither `det_C(K)` as the physical readout nor
-`det_R R(K)` as the physical readout. It supplies neither a measure nor a
-dictionary from outcome labels to determinant powers.
+### N3 — hidden-wall scan
 
-## No-Go Statement
+The proof text was scanned for `we assume`, `by construction`, `as is
+standard`, `the framework provides`, `bridge context`, `background`,
+`naturally`, `obviously`, `standard QFT`, `registered`, and `canonical`.
 
-Within the current axiom/primitive surface, Record outcome content does not
-retire `AC_phi_lambda(i)`. The current axioms explicitly keep the relevant
-`K`/CPT orbit and weighting structure downstream. The superseded
-supplied-context Record wording, even if quoted historically, names the
-outcome object but does not select the determinant-power dictionary. The live
-AC(i) survivor remains a physical measure/readout theorem: which grain or
-statistics the matter action implements.
-
-## What Moves
-
-| Surface | Movement |
+| Hit | Classification |
 |---|---|
-| "Orbit outcome is in the axioms" shortcut | pruned |
-| Current axiom/primitive review | K/CPT orbit structure and occupancy weights confirmed downstream |
-| AC(i) target | sharpened to dictionary/determinant-power selection, not outcome naming |
-| Tier-A registry | unchanged |
+| granted invertible complex block and determinant-style readout | explicit hypotheses that strengthen the countermodel |
+| `registered` in governance/coordinate discussion | non-load-bearing target or route description |
+| scan terms appearing in this checklist sentence | audit metadata, not proof steps |
 
-## What Does Not Move
+No hidden action, measure, polarization, or physical carrier selector is used.
 
-- `AC_phi_lambda` is not retired.
-- `AC_phi_lambda(i)` is not retired.
-- The orbit/holomorphic horn is not selected.
-- The sector/K-real horn is not selected.
-- `r = 1/2` is not derived, predicted, or preferred.
-- The orbit-occupancy premise candidate is not adopted.
-- No K-real primitive, readout-selection primitive, or occupancy primitive is
-  introduced.
-- No registry, primitive, axiom, audit status, or publication status is edited.
-- `AC_phi_lambda(ii)` / R-eta and theta are untouched.
+### N4 — residual matching
 
-## Relation To Existing Blocks
+| Prior negative witness | Witness residual | Current residual | Match/disposition |
+|---|---|---|---|
+| none | n/a | AC(i) complex-vs-realified physical occupancy grain | direct countermodels; no witness citation to drop |
 
-- [`ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md`](ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md)
-  names the measure-side realization binary as the live AC(i) survivor.
-- [`OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md`](OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md)
-  already states that Record names the outcome object, not the attached weight,
-  on the supplied two-outcome surface.
-- [`ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md`](ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md)
-  supplies the determinant-power split that the physical theorem still has to
-  select.
-- [`ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`](ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md)
-  remains valid: axioms and approved primitives do not select the physical
-  matter-action statistics horn.
-- [`ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`](ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md)
-  remains valid: Record formation/additivity does not identify the occupancy
-  dictionary or formation rule.
+The determinant identity is recomputed by the runner rather than inherited
+from a prior row.
 
-## Remaining Live Routes
+### N5 — rhetoric and resolution audit
 
-1. **Physical horn-selection theorem.** Derive the matter action's
-   holomorphic/K-orbit or realified/K-real readout.
-2. **Physical coupling theorem.** Derive the relevant generation coupling
-   channel rather than supplying a probe kernel.
-3. **K/CPT-site-basis bridge.** Derive the physical antiunitary predicate and
-   its tied section.
-4. **Owner governance route.** Adopt a narrow orbit-occupancy or readout
-   premise if derivation is not required.
-5. **R-eta route.** Separately derive the density-read-as-angle identification.
+The result is checked per scalar block, per finite matrix block, under block
+composition, and for complex dimensions `1` through `4`. It supports the
+finite-carrier statement above. It makes no claim about a continuum action,
+an interacting measure, every possible determinant construction, or a future
+physical carrier theorem.
+
+### N6 — partial-closure paths
+
+| Candidate path | Current status | What it would address |
+|---|---|---|
+| action-native CAR/Berezin theorem | no retained physical carrier/measure theorem on the current surface | derive the complex first-power grain from the physical action |
+| real or Majorana action theorem | no retained physical carrier/measure theorem on the current surface | derive a real determinant or Pfaffian grain if that action is selected |
+| registered-mass coordinate package | algebraically reconstructs `r` after mass data are supplied | removes the determinant explanation from the claim; does not discharge AC(i)'s physical role |
+| owner-approved narrow premise | presently the live governance treatment | supplies the grain without deriving it |
+
+These paths are preserved. The no-go does not propose a new primitive or
+classify a future action theorem as impossible.
+
+### N7 — steelman
+
+The strongest objection is that the Qubit axiom uses `M_2(C)`, so the complex
+field should privilege `det_C` and the realification should be regarded as
+double bookkeeping. That objection would succeed after a theorem identifies
+the physical charged-lepton action with a complex Berezin Gaussian on one
+canonical determinant line. The Qubit axiom supplies the local algebra but not
+that action, measure, determinant line, or polarization. The realified
+functional remains basis-invariant, additive, and K-even on the current
+surface, so the objection names a viable theorem target without invalidating
+the countermodel.
+
+### N8 — cross-cycle echo
+
+| Similar mechanism | Was its wall retired? | Applicability here |
+|---|---|---|
+| strong-CP K-real determinant phase chain | phase orientation was treated on a supplied action/readout surface | phase erasure does not choose determinant modulus power; the residuals differ |
+| registered mass coordinates | values reconstructed from a supplied realized state | changes the explanatory scope and leaves the physical action grain unproved |
+| owner-governed AC adoption | Tier-A bookkeeping was retired by governance | records the premise transparently but is not theorem derivation |
+
+These mechanisms have been checked and do not refute the narrow
+current-surface result.
+
+**Gate result: PASS.** N1–N8 support the finite-carrier non-entailment claim.
 
 ## Verification
 
 Run:
 
 ```bash
-PYTHONPATH=scripts python3 scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py
+python3 scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py
 ```
 
-Expected close: `FAIL=0`.
-
-**Independent audit required.** This note asserts no effective-status change.
+Expected result: `PASS=41`, `FAIL=0`.

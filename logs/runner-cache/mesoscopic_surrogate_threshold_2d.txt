@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/mesoscopic_surrogate_threshold_2d.py
-runner_sha256: 8152dcf928894f513d87761849d684980ae89a01028ecb9d1a0ad83e21c2efec
+runner_sha256: 6df96e81c763fb5e91c8bdce0a389bf3f04a1d7d3391b832f7ee4c4ba326b460
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.98
+elapsed_sec: 1.87
 status: ok
 ----- stdout -----
 ====================================================================================================
 MESOSCOPIC SURROGATE TWO-STAGE THRESHOLD SWEEP (2D)
   Retained 2D ordered-lattice family
-  h=0.5, W=12, L=20, source_y=5.0, sigma=1.25
+  h=0.5, W=12, L=20, max_d_phys=5, probe_y=5.0, field_strength=5e-05
   Goal: does shrinking source support produce a clear threshold in two-stage
         sourced-response stability?
 ====================================================================================================
@@ -18,44 +18,46 @@ Free-profile centroid: +5.2244
 Free-profile spread:   3.0797
 Probe launch y:        +5.0000
 
-  topN    cap1       r1       r2 delta2/delta1   carry  stable?
-------------------------------------------------------------------------------
-     1   0.095    1.000    1.000        1.000   1.000      YES
-     2   0.184    1.307    1.307        1.000   1.000      YES
-     3   0.259    1.019    1.019        1.000   1.000      YES
-     4   0.329    1.055    1.055        1.000   1.000      YES
-     5   0.385    0.557    0.557        1.000   1.000      YES
-     6   0.441    1.787    1.786        1.000   1.000      YES
-     7   0.492    1.713    1.713        1.000   1.000      YES
-     8   0.541    0.874    0.874        1.000   1.000      YES
-     9   0.586    0.655    0.655        1.000   1.000      YES
-    10   0.625    0.774    0.774        1.000   1.000      YES
-    12   0.698    0.030    0.030        0.993   1.000      YES
-    16   0.818    0.468    0.468        1.000   1.000      YES
-    20   0.920    0.337    0.337        1.000   1.000      YES
-    25   0.982    0.372    0.372        1.000   1.000      YES
-    32   0.997    0.385    0.385        1.000   1.000      YES
-    40   1.000    0.117    0.117        1.000   1.000      YES
-    49   1.000    0.117    0.117        1.000   1.000      YES
-    64   1.000    0.117    0.117        1.000   1.000      YES
-    81   1.000    0.117    0.117        1.000   1.000      YES
+Stability gates: ratio_rel_err <= 0.01; carry >= 0.99
 
-First stable topN in scanned range: 1
-Stable topNs in scanned range: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 16, 20, 25, 32, 40, 49, 64, 81]
+  topN      cap1      cap2    stage1_ratio    stage2_ratio  ratio_rel_err      carry  stable?
+---------------------------------------------------------------------------------------------------------
+     1  0.094806  0.094768               1               1              0  1.0000000      YES
+     2  0.184464  0.184390      1.30708334      1.30707376   7.323738e-06  1.0000000      YES
+     3  0.258603  0.258520      1.01866776       1.0186448    2.25389e-05  1.0000000      YES
+     4  0.328538  0.328458       1.0551808      1.05513844   4.014529e-05  1.0000000      YES
+     5  0.384810  0.384751     0.557478729     0.557433191   8.168514e-05  1.0000000      YES
+     6  0.440701  0.440638      1.78665921      1.78649651   9.106127e-05  1.0000000      YES
+     7  0.492363  0.492316      1.71323212      1.71310341   7.512914e-05  1.0000000      YES
+     8  0.541244  0.541198     0.874344611     0.874175303   0.0001936404  1.0000000      YES
+     9  0.586149  0.586115     0.654904098     0.654779355   0.0001904749  1.0000000      YES
+    10  0.624574  0.624549     0.773677005     0.773595599   0.0001052192  1.0000000      YES
+    12  0.698491  0.698478    0.0302014108    0.0300018732    0.006606898  1.0000000      YES
+    16  0.817550  0.817553     0.467612959     0.467527065   0.0001836863  1.0000000      YES
+    20  0.919652  0.919658     0.336642076     0.336590639   0.0001527923  1.0000000      YES
+    25  0.982255  0.982256      0.37174559     0.371709488   9.711719e-05  1.0000000      YES
+    32  0.997448  0.997448     0.385423623     0.385390076   8.703918e-05  1.0000000      YES
+    40  0.999630  0.999630     0.116717007     0.116706969   8.600156e-05  1.0000000      YES
+    49  1.000000  1.000000     0.116753931       0.1167439   8.591456e-05  1.0000000      YES
+    64  1.000000  1.000000     0.116753931       0.1167439   8.591456e-05  1.0000000      YES
+    81  1.000000  1.000000     0.116753931       0.1167439   8.591456e-05  1.0000000      YES
+
+First stable topN in listed scan: 1
+Stable topNs in listed scan: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 16, 20, 25, 32, 40, 49, 64, 81]
 
 SAFE READ
-  - If stability is present for all scanned topN, there is no sharp support
-    threshold in this 2D companion family.
-  - If stability fails only below some topN, that would identify a real
-    mesoscopic support floor.
-  - The honest output is whichever of those two cases the frozen scan shows.
+  - Stability at every listed topN means no collapse is observed at any
+    support value in this finite scan.
+  - A failed listed row would be a finite witness of a support-sensitive
+    response under the declared gates.
+  - Unlisted support values and other geometries are outside this result.
 
 AUDIT CHECKS
   [PASS C] frozen_topN_support_list_scanned: scanned topN=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 16, 20, 25, 32, 40, 49, 64, 81]
   [PASS C] all_scanned_topN_stable: stable_topNs=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 16, 20, 25, 32, 40, 49, 64, 81]
   [PASS C] stage_ratio_relative_error_within_one_percent: max_rel_err=0.0066069 <= 0.01 at topN=12
   [PASS C] support_carry_floor: min_carry=1 >= 0.99
-  [PASS C] no_sharp_collapse_in_scanned_range: first stable topN=1
+  [PASS C] smallest_listed_support_stable: first stable topN=1
 
 SUMMARY: PASS=5 FAIL=0
 

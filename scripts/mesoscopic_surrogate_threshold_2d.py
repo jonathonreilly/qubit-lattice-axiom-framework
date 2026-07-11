@@ -35,11 +35,9 @@ from scripts.mesoscopic_surrogate_two_stage_2d import (  # noqa: E402
     FIELD_STRENGTH,
     H,
     MAX_D_PHYS,
-    PACKET_SIGMA,
     PHYS_L,
     PHYS_W,
     PROBE_Y,
-    SOURCE_Y,
     detector,
     generate,
     overlap,
@@ -87,7 +85,10 @@ def main() -> None:
     print("=" * 100)
     print("MESOSCOPIC SURROGATE TWO-STAGE THRESHOLD SWEEP (2D)")
     print("  Retained 2D ordered-lattice family")
-    print(f"  h={H}, W={PHYS_W}, L={PHYS_L}, source_y={SOURCE_Y}, sigma={PACKET_SIGMA}")
+    print(
+        f"  h={H}, W={PHYS_W}, L={PHYS_L}, max_d_phys={MAX_D_PHYS}, "
+        f"probe_y={PROBE_Y}, field_strength={FIELD_STRENGTH}"
+    )
     print("  Goal: does shrinking source support produce a clear threshold in two-stage")
     print("        sourced-response stability?")
     print("=" * 100)
@@ -96,11 +97,13 @@ def main() -> None:
     print(f"Free-profile spread:   {profile_spread(free_profile, H):.4f}")
     print(f"Probe launch y:        {PROBE_Y:+.4f}")
     print()
+    print(f"Stability gates: ratio_rel_err <= {STABILITY_REL_ERR:.6g}; carry >= {STABILITY_CARRY:.6g}")
+    print()
     print(
-        f"{'topN':>6s} {'cap1':>7s} {'r1':>8s} {'r2':>8s} "
-        f"{'delta2/delta1':>12s} {'carry':>7s} {'stable?':>8s}"
+        f"{'topN':>6s} {'cap1':>9s} {'cap2':>9s} {'stage1_ratio':>15s} "
+        f"{'stage2_ratio':>15s} {'ratio_rel_err':>14s} {'carry':>10s} {'stable?':>8s}"
     )
-    print("-" * 78)
+    print("-" * 105)
 
     stable_topns = []
     rows = []
@@ -125,26 +128,26 @@ def main() -> None:
         rows.append(row)
         if stable:
             stable_topns.append(topn)
-        delta_ratio = stage2["ratio"] / stage1["ratio"] if abs(stage1["ratio"]) > 1e-30 else 0.0
         print(
-            f"{topn:6d} {cap1:7.3f} {stage1['ratio']:8.3f} {stage2['ratio']:8.3f} "
-            f"{delta_ratio:12.3f} {carry:7.3f} {('YES' if stable else 'NO'):>8s}"
+            f"{topn:6d} {cap1:9.6f} {cap2:9.6f} "
+            f"{stage1['ratio']:15.9g} {stage2['ratio']:15.9g} "
+            f"{rel:14.7g} {carry:10.7f} {('YES' if stable else 'NO'):>8s}"
         )
 
     print()
     if stable_topns:
-        print(f"First stable topN in scanned range: {stable_topns[0]}")
-        print(f"Stable topNs in scanned range: {stable_topns}")
+        print(f"First stable topN in listed scan: {stable_topns[0]}")
+        print(f"Stable topNs in listed scan: {stable_topns}")
     else:
-        print("No stable topN found in the scanned range.")
+        print("No stable topN found in the listed scan.")
 
     print()
     print("SAFE READ")
-    print("  - If stability is present for all scanned topN, there is no sharp support")
-    print("    threshold in this 2D companion family.")
-    print("  - If stability fails only below some topN, that would identify a real")
-    print("    mesoscopic support floor.")
-    print("  - The honest output is whichever of those two cases the frozen scan shows.")
+    print("  - Stability at every listed topN means no collapse is observed at any")
+    print("    support value in this finite scan.")
+    print("  - A failed listed row would be a finite witness of a support-sensitive")
+    print("    response under the declared gates.")
+    print("  - Unlisted support values and other geometries are outside this result.")
 
     min_carry = min(row["carry"] for row in rows)
     max_ratio_rel_err = max(row["ratio_rel_err"] for row in rows)
@@ -176,7 +179,7 @@ def main() -> None:
         f"min_carry={min_carry:.6g} >= {STABILITY_CARRY:.6g}",
     )
     pass_count += pass_check(
-        "no_sharp_collapse_in_scanned_range",
+        "smallest_listed_support_stable",
         stable_topns and stable_topns[0] == TOPN_VALUES[0],
         f"first stable topN={stable_topns[0] if stable_topns else None}",
     )

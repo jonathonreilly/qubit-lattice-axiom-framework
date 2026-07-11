@@ -84,8 +84,14 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PROMPTS_FILE = REPO_ROOT / "docs" / "audit" / "MISSING_DERIVATION_PROMPTS.md"
-STATE_FILE = REPO_ROOT / "logs" / "science-fix-state.json"
-WORKTREE_BASE = Path("/tmp") / "science-fix-worktrees"
+STATE_FILE = Path(os.environ.get(
+    "SCIENCE_FIX_STATE_FILE",
+    REPO_ROOT / "logs" / "science-fix-state.json",
+)).expanduser().resolve()
+WORKTREE_BASE = Path(os.environ.get(
+    "SCIENCE_FIX_WORKTREE_BASE",
+    Path("/tmp") / "science-fix-worktrees",
+)).expanduser().resolve()
 LOG_DIR = REPO_ROOT / "logs" / "science-fix-runs"
 
 # Three timeout thresholds for one codex attempt:
@@ -116,6 +122,11 @@ DEFAULT_STALE_AFTER = 240        # 4 min stale-kill
 DEFAULT_MODEL = "gpt-5.5"
 DEFAULT_REASONING = "xhigh"
 DIFFICULTY_ORDER = {"easy": 0, "medium": 1, "hard": 2, "unknown": 3}
+TRANSIENT_EXIT_CODES = {
+    "usage_limit": 75,
+    "model_capacity": 76,
+    "service_unavailable": 77,
+}
 
 # Self-screen preamble: codex evaluates difficulty first and may
 # decline cheaply. Detected via a marker string in stdout so the loop
@@ -148,6 +159,19 @@ If your honest answer is YES, proceed to STEP 2.
 STEP 2. Begin the prompt below. Use the physics-loop skill. Make
 real edits. Do not over-prescribe approach — explore the framework
 and let the skill drive.
+
+============================== PROMPT ==============================
+"""
+
+DEEP_SCREENING_PREAMBLE = """You are taking a hard missing-derivation target in a
+long-running science-fix campaign. Use the physics-loop skill and make a
+sustained first-principles attempt. Do not self-decline merely because the
+target is hard or needs more than 15 minutes. Preserve honest claim-state
+firewalls: a rigorous no-go, exact obstruction, bounded-support result, or
+sharply isolated remaining blocker is valid progress. Make real scoped edits,
+run the relevant checks and review loop, and deliver one review PR for the
+coherent science block. Do not merge it or modify repo-wide audit authority
+surfaces.
 
 ============================== PROMPT ==============================
 """
@@ -257,8 +281,49 @@ def is_active_or_opened_outcome(outcome) -> bool:
     return outcome == "in_progress" or is_opened_outcome(outcome)
 
 
+def classify_transient_failure(stdout: str = "", stderr: str = "") -> str | None:
+    """Classify account/service failures that must not consume a science row."""
+    text = f"{stdout}\n{stderr}".lower()
+    if "usage limit" in text or "purchase more credits" in text:
+        return "usage_limit"
+    if "model is at capacity" in text or "selected model is at capacity" in text:
+        return "model_capacity"
+    if any(marker in text for marker in (
+        "service unavailable",
+        "temporarily unavailable",
+        "internal server error",
+        "upstream connect error",
+    )):
+        return "service_unavailable"
+    return None
+
+
+def is_transient_attempt(attempt: dict | None) -> bool:
+    if not isinstance(attempt, dict):
+        return False
+    if attempt.get("outcome") == "transient_failed":
+        return True
+    if attempt.get("outcome") != "codex_failed":
+        return False
+    return classify_transient_failure(
+        attempt.get("codex_stdout_tail", ""),
+        attempt.get("codex_stderr_tail", ""),
+    ) is not None
+
+
+def attempt_is_eligible(attempt: dict | None, retry_failed: bool,
+                        retry_transient: bool) -> bool:
+    if not attempt:
+        return True
+    if is_active_or_opened_outcome(attempt.get("outcome")):
+        return False
+    if retry_failed:
+        return True
+    return retry_transient and is_transient_attempt(attempt)
+
+
 def claim_targets(candidates: list[dict], n: int, retry_failed: bool,
-                  worker_id: str) -> list[dict]:
+                  retry_transient: bool, worker_id: str) -> list[dict]:
     """Atomically reserve up to N candidates by marking them
     `outcome=in_progress` in the state file. Other workers running the
     loop will then skip these rows and pick from what's left.
@@ -266,15 +331,12 @@ def claim_targets(candidates: list[dict], n: int, retry_failed: bool,
     with state_lock():
         state = _read_state_unlocked()
         attempts = state.get("attempts", {})
-        if retry_failed:
-            eligible = [
-                r for r in candidates
-                if not is_active_or_opened_outcome(
-                    attempts.get(r["claim_id"], {}).get("outcome")
-                )
-            ]
-        else:
-            eligible = [r for r in candidates if r["claim_id"] not in attempts]
+        eligible = [
+            r for r in candidates
+            if attempt_is_eligible(
+                attempts.get(r["claim_id"]), retry_failed, retry_transient
+            )
+        ]
         targets = eligible[:n]
         now = datetime.now(timezone.utc).isoformat()
         for r in targets:
@@ -288,6 +350,29 @@ def claim_targets(candidates: list[dict], n: int, retry_failed: bool,
         state["attempts"] = attempts
         _write_state_unlocked(state)
     return targets
+
+
+def release_unattempted_claims(targets: list[dict], worker_id: str) -> int:
+    """Release rows pre-reserved by this worker after a transient stop.
+
+    A batch reserves all N rows before starting its first Codex call. If the
+    account is quota-limited or the model is at capacity, later rows were never
+    attempted and must not remain poisoned as terminal/in-progress work.
+    """
+    released = 0
+    with state_lock():
+        state = _read_state_unlocked()
+        attempts = state.setdefault("attempts", {})
+        for row in targets:
+            cid = row["claim_id"]
+            marker = attempts.get(cid, {})
+            if (marker.get("outcome") == "in_progress"
+                    and marker.get("worker_id") == worker_id):
+                attempts.pop(cid, None)
+                released += 1
+        if released:
+            _write_state_unlocked(state)
+    return released
 
 
 def record_outcome(claim_id: str, outcome: dict) -> None:
@@ -332,6 +417,85 @@ def reclaim_stale_in_progress(stale_after_sec: int) -> int:
 def git(*args, cwd=None, check=True):
     return subprocess.run(["git", *args], cwd=cwd or REPO_ROOT,
                           capture_output=True, text=True, check=check)
+
+
+def current_branch(worktree: Path, fallback: str) -> str:
+    res = git("branch", "--show-current", cwd=worktree, check=False)
+    return (res.stdout or "").strip() or fallback
+
+
+def find_existing_pr(worktree: Path, planned_branch: str) -> dict | None:
+    """Find an open/merged PR delivered by a nested physics-loop worker.
+
+    Nested workers sometimes commit, push, and open their own PR, leaving the
+    worktree clean. That is successful delivery, not `no_edits`. Check both
+    the branch assigned by this wrapper and the worktree's current branch in
+    case the nested worker switched to a physics-loop block branch.
+    """
+    branches = []
+    for branch in (current_branch(worktree, planned_branch), planned_branch):
+        if branch and branch not in branches:
+            branches.append(branch)
+    for branch in branches:
+        res = subprocess.run(
+            [
+                "gh", "pr", "list", "--state", "all", "--head", branch,
+                "--limit", "10", "--json", "number,url,state,headRefName",
+            ],
+            cwd=worktree,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        if res.returncode != 0:
+            continue
+        try:
+            prs = json.loads(res.stdout or "[]")
+        except (json.JSONDecodeError, ValueError):
+            continue
+        for pr in prs:
+            if str(pr.get("state", "")).upper() in {"OPEN", "MERGED"}:
+                return pr
+    return None
+
+
+def reconcile_pr(claim_id: str, pr_url: str) -> tuple[bool, str]:
+    """Verify and record an already-delivered PR in the local state ledger."""
+    res = subprocess.run(
+        ["gh", "pr", "view", pr_url,
+         "--json", "url,state,headRefName,number"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if res.returncode != 0:
+        return False, (res.stderr or res.stdout or "gh pr view failed").strip()
+    try:
+        pr = json.loads(res.stdout)
+    except (json.JSONDecodeError, ValueError) as exc:
+        return False, f"invalid gh response: {exc}"
+    state_name = str(pr.get("state", "")).upper()
+    if state_name not in {"OPEN", "MERGED"}:
+        return False, f"PR is {state_name or 'UNKNOWN'}, not open/merged"
+    with state_lock():
+        state = _read_state_unlocked()
+        attempts = state.setdefault("attempts", {})
+        prior = attempts.get(claim_id, {})
+        attempts[claim_id] = {
+            **prior,
+            "outcome": "pr_opened",
+            "pr_url": pr["url"],
+            "pr_number": pr.get("number"),
+            "pr_state": state_name,
+            "branch": pr.get("headRefName", ""),
+            "delivery_recovered": (
+                "reconciled existing nested physics-loop delivery"
+            ),
+            "reconciled_at": datetime.now(timezone.utc).isoformat(),
+        }
+        _write_state_unlocked(state)
+    return True, pr["url"]
 
 
 def make_worktree(claim_id: str, run_id: str) -> tuple[Path, str]:
@@ -387,6 +551,7 @@ def _newest_mtime(worktree: Path) -> float:
 def run_codex(prompt_body: str, worktree: Path, timeout_sec: int,
               model: str, reasoning: str,
               run_log: Path,
+              screening_preamble: str = SCREENING_PREAMBLE,
               stale_after_sec: int = DEFAULT_STALE_AFTER,
               edit_deadline_sec: int = DEFAULT_EDIT_DEADLINE,
               poll_interval_sec: int = 30,
@@ -415,7 +580,7 @@ def run_codex(prompt_body: str, worktree: Path, timeout_sec: int,
       - "timeout"        hit the absolute hard backstop
       - "error"          exception raised
     """
-    wrapped_prompt = SCREENING_PREAMBLE + prompt_body
+    wrapped_prompt = screening_preamble + prompt_body
     cmd = [
         "codex", "exec",
         "-C", str(worktree),
@@ -596,7 +761,7 @@ def target_settled_on_main(claim_id: str) -> tuple[bool, str]:
 
 
 def commit_and_push(claim_id: str, worktree: Path, branch: str,
-                    summary: str) -> tuple[bool, str]:
+                    summary: str, model: str, reasoning: str) -> tuple[bool, str]:
     # Framework PRs are forbidden from landing audit-lane outputs (rationale:
     # the audit lane on main is the sole authority over these surfaces; PRs
     # that ship them overwrite ratified state at merge). The codex run may
@@ -642,7 +807,7 @@ def commit_and_push(claim_id: str, worktree: Path, branch: str,
     msg = (
         f"science-fix: attempt to close {claim_id} derivation\n\n"
         f"Automated by scripts/science_fix_loop.py.\n"
-        f"Codex GPT-5.5 at xhigh attempted the derivation per the prompt in\n"
+        f"Codex {model} at {reasoning} attempted the derivation per the prompt in\n"
         f"docs/audit/MISSING_DERIVATION_PROMPTS.md. Review carefully — the\n"
         f"independent audit only runs after merge.\n\n"
         f"Diff summary:\n{summary}\n"
@@ -658,7 +823,7 @@ def commit_and_push(claim_id: str, worktree: Path, branch: str,
 
 def open_pr(claim_id: str, branch: str, prompt_body: str,
             descendants: int, category: str, codex_tail: str,
-            worktree: Path) -> tuple[bool, str]:
+            worktree: Path, model: str, reasoning: str) -> tuple[bool, str]:
     title = f"science-fix: attempt to close {claim_id}"
     if len(title) > 70:
         title = title[:67] + "..."
@@ -673,7 +838,7 @@ derivation in `{claim_id}`.
 
 ## What this PR does
 
-Codex GPT-5.5 at xhigh reasoning was given the missing-derivation
+Codex `{model}` at `{reasoning}` reasoning was given the missing-derivation
 prompt in a clean worktree off `origin/main` and asked to close the
 chain. It made the diff in this PR.
 
@@ -692,7 +857,7 @@ chain. It made the diff in this PR.
 {codex_tail[-2000:]}
 ```
 
-🤖 Generated by `scripts/science_fix_loop.py` (codex GPT-5.5, xhigh)
+🤖 Generated by `scripts/science_fix_loop.py` (codex `{model}`, `{reasoning}`)
 """
     res = subprocess.run(
         ["gh", "pr", "create", "--title", title, "--body", body],
@@ -754,6 +919,17 @@ def main() -> int:
                    help="Run on this specific claim_id only")
     p.add_argument("--retry-failed", action="store_true",
                    help="Re-attempt rows whose prior attempt did not open a PR")
+    p.add_argument("--retry-transient", action="store_true",
+                   help="Retry only prior quota/capacity/service failures, plus "
+                        "rows never attempted; do not retry scientific punts")
+    p.add_argument("--screening-profile", choices=("standard", "deep"),
+                   default="standard",
+                   help="Use 'deep' for sustained hard-target physics-loop "
+                        "attempts without the 15-minute self-decline gate")
+    p.add_argument("--reconcile-pr", action="append", default=[],
+                   metavar="CLAIM_ID=PR_URL",
+                   help="Verify and record an existing open/merged PR. May be "
+                        "passed more than once; no Codex run is started.")
     p.add_argument("--dry-run", action="store_true",
                    help="Show targets and exit without invoking codex")
     p.add_argument("--keep-worktrees", action="store_true",
@@ -783,6 +959,21 @@ def main() -> int:
     if not allowed_difficulties:
         p.error("--difficulty must include at least one bucket")
 
+    if args.reconcile_pr:
+        failures = 0
+        for spec in args.reconcile_pr:
+            if "=" not in spec:
+                print(f"Invalid --reconcile-pr value (expected CLAIM_ID=PR_URL): {spec}",
+                      file=sys.stderr)
+                failures += 1
+                continue
+            claim_id, pr_url = spec.split("=", 1)
+            ok, message = reconcile_pr(claim_id.strip(), pr_url.strip())
+            status = "reconciled" if ok else "FAILED"
+            print(f"{status}: {claim_id.strip()} -> {message}")
+            failures += 0 if ok else 1
+        return 1 if failures else 0
+
     LOG_DIR.mkdir(parents=True, exist_ok=True)
     run_id = uuid.uuid4().hex[:8]
     run_log = LOG_DIR / f"loop-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}-{run_id}.jsonl"
@@ -791,6 +982,7 @@ def main() -> int:
           f"timeout: {args.codex_timeout_sec}s  stale_after: "
           f"{args.stale_after_sec}s  edit_deadline: "
           f"{args.edit_deadline_sec}s  poll: {args.poll_interval_sec}s")
+    print(f"State: {STATE_FILE}")
 
     rows = parse_prompts()
     if not rows:
@@ -851,18 +1043,20 @@ def main() -> int:
         with state_lock():
             state = _read_state_unlocked()
         attempts = state.get("attempts", {})
-        if args.retry_failed:
-            eligible = [
-                r for r in candidates
-                if not is_active_or_opened_outcome(
-                    attempts.get(r["claim_id"], {}).get("outcome")
-                )
-            ]
-        else:
-            eligible = [r for r in candidates if r["claim_id"] not in attempts]
+        eligible = [
+            r for r in candidates
+            if attempt_is_eligible(
+                attempts.get(r["claim_id"]),
+                args.retry_failed,
+                args.retry_transient,
+            )
+        ]
         targets = eligible[: args.n]
     else:
-        targets = claim_targets(candidates, args.n, args.retry_failed, worker_id)
+        targets = claim_targets(
+            candidates, args.n, args.retry_failed, args.retry_transient,
+            worker_id,
+        )
 
     print(f"Total prompts: {len(rows)}; selected: {len(targets)}")
     if targets and not args.dry_run:
@@ -880,6 +1074,7 @@ def main() -> int:
         return 0
 
     applied = punted = errored = pr_failed = 0
+    transient_exit_code = 0
     for i, r in enumerate(targets, 1):
         cid = r["claim_id"]
         print(f"\n[{i}/{len(targets)}] [{r['category']}] desc={r['descendants']}  {cid}")
@@ -920,6 +1115,11 @@ def main() -> int:
                 r["prompt_body"], worktree,
                 args.codex_timeout_sec, args.model, args.reasoning,
                 run_log,
+                screening_preamble=(
+                    DEEP_SCREENING_PREAMBLE
+                    if args.screening_profile == "deep"
+                    else SCREENING_PREAMBLE
+                ),
                 stale_after_sec=args.stale_after_sec,
                 edit_deadline_sec=args.edit_deadline_sec,
                 poll_interval_sec=args.poll_interval_sec,
@@ -943,11 +1143,26 @@ def main() -> int:
             outcome["codex_stderr_tail"] = (stderr or "")[-500:]
 
             # Decide whether this attempt produced anything worth promoting
-            # to a PR. Order: codex's self-screen decline first (cheap
-            # exit), then structural codex failures, then check the
-            # worktree state.
+            # to a PR. First recover delivery already performed by a nested
+            # physics-loop worker. Only then interpret a clean worktree as a
+            # punt or a nonzero return code as failure.
             promote_edits = False
-            if decline_match is not None:
+            existing_pr = find_existing_pr(worktree, branch)
+            if existing_pr is not None:
+                recovered_branch = existing_pr.get("headRefName") or branch
+                print(f"  PR already delivered by nested worker: "
+                      f"{existing_pr['url']}")
+                outcome["outcome"] = "pr_opened"
+                outcome["pr_url"] = existing_pr["url"]
+                outcome["pr_number"] = existing_pr.get("number")
+                outcome["pr_state"] = existing_pr.get("state")
+                outcome["branch"] = recovered_branch
+                outcome["delivery_recovered"] = (
+                    "nested physics-loop committed/pushed/opened PR before "
+                    "outer dirty-worktree check"
+                )
+                applied += 1
+            elif decline_match is not None:
                 print(f"  DECLINED self-screen ({elapsed:.0f}s): {decline_match}")
                 outcome["outcome"] = "declined_too_hard"
                 outcome["decline_reason"] = decline_match
@@ -957,8 +1172,18 @@ def main() -> int:
                 outcome["outcome"] = "run_error"
                 errored += 1
             elif stop_reason == "ok" and not ok:
-                print(f"  codex exec failed (rc!=0): {(stderr or '').strip()[:200]}")
-                outcome["outcome"] = "codex_failed"
+                transient_class = classify_transient_failure(stdout, stderr)
+                if transient_class:
+                    transient_exit_code = TRANSIENT_EXIT_CODES[transient_class]
+                    print(f"  TRANSIENT {transient_class}: stopping batch and "
+                          f"releasing unattempted reservations")
+                    outcome["outcome"] = "transient_failed"
+                    outcome["transient_failure_class"] = transient_class
+                    outcome["retryable"] = True
+                else:
+                    print(f"  codex exec failed (rc!=0): "
+                          f"{(stderr or '').strip()[:200]}")
+                    outcome["outcome"] = "codex_failed"
                 errored += 1
             else:
                 # stop_reason in {ok, timeout, stalled, thinking_only}
@@ -1005,12 +1230,16 @@ def main() -> int:
 
             if promote_edits:
                 summary = diff_summary(worktree)
+                delivery_branch = current_branch(worktree, branch)
                 tag = {"ok": "edits made",
                        "stalled": "STALLED but partial edits",
                        "thinking_only": "THINKING-ONLY but partial edits",
                        "timeout": "ABSOLUTE MAX but partial edits"}[stop_reason]
                 print(f"  {tag} in {elapsed:.0f}s; diff:\n    {summary}")
-                ok2, msg = commit_and_push(cid, worktree, branch, summary)
+                ok2, msg = commit_and_push(
+                    cid, worktree, delivery_branch, summary,
+                    args.model, args.reasoning,
+                )
                 if not ok2:
                     print(f"  push failed: {msg}")
                     outcome["outcome"] = "push_failed"
@@ -1018,16 +1247,16 @@ def main() -> int:
                     pr_failed += 1
                 else:
                     pr_ok, pr_msg = open_pr(
-                        cid, branch, r["prompt_body"],
+                        cid, delivery_branch, r["prompt_body"],
                         r["descendants"], r["category"],
                         stdout or "",
-                        worktree,
+                        worktree, args.model, args.reasoning,
                     )
                     if not pr_ok:
                         print(f"  PR create failed: {pr_msg}")
                         outcome["outcome"] = "pr_failed"
                         outcome["pr_error"] = pr_msg
-                        outcome["branch"] = branch
+                        outcome["branch"] = delivery_branch
                         pr_failed += 1
                     else:
                         # If codex was stalled or hard-timed-out but produced
@@ -1038,7 +1267,7 @@ def main() -> int:
                         print(f"  PR opened ({verdict}): {pr_msg}")
                         outcome["outcome"] = verdict
                         outcome["pr_url"] = pr_msg
-                        outcome["branch"] = branch
+                        outcome["branch"] = delivery_branch
                         applied += 1
         except Exception as e:
             print(f"  ! attempt error: {e!r}")
@@ -1052,8 +1281,16 @@ def main() -> int:
             if not args.keep_worktrees:
                 cleanup_worktree(worktree)
 
+        if transient_exit_code:
+            released = release_unattempted_claims(targets[i:], worker_id)
+            print(f"  Released {released} unattempted reservation(s).")
+            break
+
     print(f"\nDone. attempted={len(targets)} pr_opened={applied} punted={punted} errored={errored} pr_failed={pr_failed}")
-    print(f"State: {STATE_FILE.relative_to(REPO_ROOT)}")
+    print(f"State: {STATE_FILE}")
+    if transient_exit_code:
+        print(f"Transient stop: exiting {transient_exit_code} for supervisor backoff.")
+        return transient_exit_code
     return 0
 
 

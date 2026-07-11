@@ -159,13 +159,24 @@ def main() -> int:
 
     ac_status = row_status(ledger_rows, AC_ID)
     theta_status = row_status(ledger_rows, THETA_ID)
-    check("AC source row remains audited retained-bounded bounded theorem", ac_status == ("bounded_theorem", "audited_clean", "retained_bounded"), str(ac_status))
+    ac_previous_audits = ledger_rows.get(AC_ID, {}).get("previous_audits") or []
+    ac_adoption_grade_recorded = any(
+        audit.get("claim_type") == "bounded_theorem"
+        and audit.get("audit_status") == "audited_clean"
+        for audit in ac_previous_audits
+    )
+    check(
+        "AC adoption-time audited bounded surface is preserved in ledger history",
+        ac_adoption_grade_recorded and ac_status[0] == "bounded_theorem",
+        str(ac_status),
+    )
     check("theta source row remains audited retained-bounded bounded theorem", theta_status == ("bounded_theorem", "audited_clean", "retained_bounded"), str(theta_status))
 
     check("note states zero live Tier-A targets", "Current live Tier-A admitted derivation targets: zero" in note)
     check("note states theta retained-derivation retirement", "theta was retired from tier a on 2026-07-05 by retained derivation" in note_lower)
     check("note states AC owner-governance retirement", "AC_φλ was retired from live Tier A by owner-governance adoption" in note)
-    check("note states audited AC surface", "audited-clean / retained-bounded gate surface" in note and "5d8df21fe" in note)
+    check("note states historical audited AC surface", "audited-clean / retained-bounded gate surface at adoption commit" in note and "5d8df21fe" in note)
+    check("note delegates current AC status to ledger", "Current effective status is always read from the ledger" in note)
     check("note names owner-governed registry", "owner_governed_premise_nodes.json" in note)
     check("note says no hand-maintained backlinks", "No back-links are maintained by hand" in note)
     check("note says audit status remains audit-lane-only", "audit status remains audit-lane-only" in note)

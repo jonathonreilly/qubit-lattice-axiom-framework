@@ -12,9 +12,9 @@ are not scattered across lanes as ad-hoc prose premises.
 ## Purpose
 
 A single, curated registry of the framework's **Tier-A admitted inputs** — the
-non-axiom inputs that (a) gate downstream work and (b) carry a *retained-no-go
-portfolio* (i.e. derivation has been attempted and proven hard, so closing them
-needs a yet-to-be-found mechanism). This is deliberately **separate** from:
+non-axiom inputs that (a) gate downstream work and (b) carried a no-go portfolio
+when admitted. Present grades of the portfolio rows are always read from the
+audit ledger. This is deliberately **separate** from:
 
 - **Framework axioms and approved primitives** (the named Lattice, Qubit,
   Admissibility, and Record axioms, and any explicitly approved primitive such
@@ -38,8 +38,8 @@ the older `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` is not promoted: it
 remains a broader conditional parent carrying readout/log-det/modulus material
 beyond Record. **Theta was retired from Tier A on 2026-07-05 by retained
 derivation. AC_φλ was retired from live Tier A by owner-governance adoption
-applied to the audited-clean / retained-bounded gate surface on current main at
-`5d8df21fe`.**
+applied to the audited-clean / retained-bounded gate surface at adoption commit
+`5d8df21fe`. Current effective status is always read from the ledger.**
 
 The machine Tier-A registry now has:
 
@@ -55,6 +55,19 @@ The live chain-satisfying AC governance boundary is
 [`docs/audit/data/owner_governed_premise_nodes.json`](audit/data/owner_governed_premise_nodes.json),
 not an axiom, primitive, or audit-ratified theorem closure.
 
+The class-specific live counts are therefore:
+
+```text
+approved_primitive_nodes = 3
+tier_a_admitted_derivation_targets = 0
+owner_governed_residual_premise_nodes = 1
+owner_governed_residual_atoms = 2
+```
+
+The Tier-A count is not a count of every non-theorem premise class. In
+particular, `genuine_admitted_input_count = 0` does not report zero live
+owner-governed residual atoms.
+
 Curated to inputs that are irreducible (no-go portfolio) **and not vacuous**,
 the historical Tier-A admitted derivation targets were the rows below. The
 scale-reference primitive is likewise not counted here: it is the explicitly
@@ -66,7 +79,7 @@ AC_φλ naming, explicitly **not** counted as admitted inputs (see
 
 ## Tier A-1 — Historical admitted derivation-targets (now retired)
 
-| id | statement (minimum form, 2026-06-11 — see the minimum-statement section below for the decompositions) | leverage | no-go portfolio (verified `retained_no_go` rows) |
+| id | statement (minimum form, 2026-06-11 — see the minimum-statement section below for the decompositions) | leverage | historical no-go portfolio (current grades are ledger-owned) |
 |---|---|---|---|
 | **AC_φλ** | three named sub-admissions, nothing else: **(i)** the doublet **reading/occupancy selection** (one binary — sector-tied vs orbit/holomorphic count, `r ∈ {1, 1/2}`); **(ii)** the δ **readout identification** (R-η: density-read-as-angle; the magnitude `2/9` is fixed-locus arithmetic conditional on R-η, not an admitted number); **(iii)** the abstract-sector → physical-species **bridge**. The *naming* (which sector is e/μ/τ) remains a vacuous relabeling, **not** an input. | ~41 | `koide_a1_radian_bridge_irreducibility`, `koide_delta_lattice_wilson_selected_eigenline_no_go`, `koide_delta_marked_relative_cobordism_no_go` (3) |
 | **θ** | with `θ̄ = θ_gauge + arg det(M_q)`: **(a)** gauge side — `θ_gauge = 0` in the topological-sector weighting; **(b)** mass side — the discrete orientation `arg det M ∈ {0, π} → 0` on the K-real reading, localized onto the named determinant-readout bridge. | ~20 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` (1) |
@@ -76,7 +89,8 @@ Notes:
   Owner approval recorded in the PR #3511 thread; decision artifact PR #4995
   (artifact path `docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md`,
   updated verdict, 2026-07-05; not shipped as a live source note in this
-  registry PR). Discharge basis, every row retained-grade: gauge side —
+  registry PR). At retirement, every discharge-basis row was retained-grade;
+  present grades are ledger-owned. Gauge side —
   `per_plaquette_from_adjacency_license` ∘
   `theta_cross_plane_term_absent_in_supplied_per_plaquette_class` ∘
   `theta_multi_plaquette_cross_plane_absence_narrowing` ∘
@@ -97,9 +111,9 @@ Notes:
   outside the retired admission. The prior no-go portfolio is preserved in
   `retired_derivation_targets` in `docs/audit/data/tier_a_admissions.json`;
   `genuine_admitted_input_count` 2 → 1. The source row
-  `STRONG_CP_THETA_ZERO_NOTE.md` remains in the audit ledger as a
-  retained-bounded selected-action-surface theorem; retirement removes only
-  the active Tier-A admitted-premise slot, not that historical bounded source.
+  `STRONG_CP_THETA_ZERO_NOTE.md` remains in the audit ledger; its current
+  effective status is read from that ledger. Retirement removes the active
+  Tier-A admitted-premise slot, not the historical bounded source record.
 - **AC_φλ retired from Tier A (2026-07-05; owner-governance adoption on an
   audited surface).** Owner approval recorded in the #4991 landing thread:
   adoption of the Block49 residual candidates with the exact
@@ -113,9 +127,9 @@ Notes:
   retirement acts on that audited surface. The owner-governed AC boundary
   supplies no value of `r`, `delta`, charged-lepton mass, mixing angle,
   probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS
-  alignment, or sector-weight law. The historical source row remains a
-  retained-bounded gate theorem; retirement removes only the active Tier-A
-  admitted-premise slot.
+  alignment, or sector-weight law. The source row was retained-bounded at the
+  adoption commit; its current effective status is ledger-owned. Retirement
+  removes the active Tier-A admitted-premise slot.
 - **Record retired from Tier A (2026-06-05).** The owner-approved Record axiom
   is durable registration of the realized outcome in a supplied readout
   context; the realized outcome is the `K`/CPT orbit of the realized central
@@ -220,12 +234,11 @@ Applying the AC_φλ de-naming lesson uniformly to every Tier-A item:
   derivation-target admission and not a status-bounding dependency.
 - **Y₀, g₀:** vacuous rescaling conventions — **dropped** from the
   admitted-input count (a convention is not an input, just as a name is not).
-- **θ rigor check:** verified NOT derivable from the retained
-  real/anti-Hermitian `D` structure —
-  `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go` (retained_no_go)
-  explicitly shows the real/RP-half structure cannot forbid the CP-odd term.
-  This remains historical no-go context; theta's current retirement is by the
-  retained derivation record above.
+- **θ rigor check:** the historical no-go source
+  `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go` reports that the
+  real/RP-half structure does not forbid the CP-odd term. Its current grade is
+  ledger-owned. Theta's retirement is recorded by the retained-derivation
+  decision above.
 
 Net at the time of the 2026-06-04 refinement, stratified by character:
 **two dimensionless Tier-A admissions** — AC_φλ (framework-specific physics)
@@ -259,16 +272,19 @@ are landed source notes; audit status remains audit-lane-only.
    The custody decomposition's two operative selectors (K-reality;
    det_C/equal-power) are this binary's two faces
    (`CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`).
-   Everything else about the magnitude — carrier, `Q = 1/3 + (2/3)r`
-   lever, channels, topological `2/9`, endpoint exclusion, equipartition
-   stationarity — is derived, not admitted.
+   The historical decomposition placed the remaining magnitude-side content —
+   carrier, `Q = 1/3 + (2/3)r` lever, channels, topological `2/9`, endpoint
+   exclusion, and equipartition stationarity — on the derivation side rather
+   than in the admitted atom. Present grades of those source rows are
+   ledger-owned.
 2. **The δ readout identification (R-η).** Per the landed `|δ| = 2/9`
    chain
    (`KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`),
    the admitted content is the dimensionless readout-class identification
    R-η (the C₃[111] fixed-locus spectral density read directly as the
-   angle); the magnitude `2/9` is retained-bounded fixed-locus arithmetic
-   given R-η and is **not** itself an admitted number.
+   angle); the magnitude `2/9` is fixed-locus arithmetic conditional on R-η
+   and is **not** itself an admitted number. Its present source-row grade is
+   ledger-owned.
 3. **The abstract-sector → physical-species bridge.** Unchanged (the
    interpretive identification; naming remains vacuous per the
    species-labeling no-go).

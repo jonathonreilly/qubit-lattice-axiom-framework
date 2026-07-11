@@ -120,7 +120,9 @@ Charged-lepton Koide structure, the phase/readout bridge, and the absolute
 mass scale remain scope-sensitive. Retirement of the former
 `AC_phi_lambda` Tier-A slot leaves the physical `r=1/2` selector open: the
 owner-governed replacement explicitly supplies no `r`, `delta`, or
-charged-lepton mass value.
+charged-lepton mass value. The zero Tier-A count is therefore not a zero-premise
+claim for this lane: its owner-governed node still contains the AC(i)
+matter-action occupancy grain and AC(ii) R-eta readout-license atoms.
 
 Start with:
 

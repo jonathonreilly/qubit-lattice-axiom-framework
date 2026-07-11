@@ -37,6 +37,14 @@ def foundation_surface_lines() -> list[str]:
     tier_a = load_json(DATA_DIR / "tier_a_admissions.json")
     nodes = premise.get("nodes", {})
     owner_nodes = owner_governed.get("nodes", {})
+    primitive_count = sum(
+        1 for cid in premise.get("canonical_ids", []) if cid != "minimal_axioms"
+    )
+    owner_node_count = len(owner_nodes)
+    owner_atom_count = sum(
+        len(node.get("adopted_residual_candidates") or [])
+        for node in owner_nodes.values()
+    )
     lines = [
         "## Foundation Surface",
         "",
@@ -68,6 +76,11 @@ def foundation_surface_lines() -> list[str]:
         [
             "",
             f"Tier-A admitted derivation targets ({len(targets)}): {target_names}.",
+            f"Approved primitive nodes: {primitive_count}.",
+            f"Owner-governed residual premise nodes: {owner_node_count}.",
+            f"Owner-governed residual atoms: {owner_atom_count}.",
+            "These are class-specific counts: zero live Tier-A targets does not mean",
+            "zero live owner-governed residual atoms.",
             "Live Tier-A dependents chain-satisfy only at `retained_bounded` until an",
             "admission is retired by retained derivation or explicit owner-governance adoption.",
             "",

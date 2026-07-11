@@ -18,6 +18,11 @@ It is not a physics claim surface and should not be edited by hand.
 | `staggered_dirac_realization_gate_note_2026-05-03` | owner-governed residual premise (`AC_phi_lambda`) | [`docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`](../../docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md) |
 
 Tier-A admitted derivation targets (0): none.
+Approved primitive nodes: 3.
+Owner-governed residual premise nodes: 1.
+Owner-governed residual atoms: 2.
+These are class-specific counts: zero live Tier-A targets does not mean
+zero live owner-governed residual atoms.
 Live Tier-A dependents chain-satisfy only at `retained_bounded` until an
 admission is retired by retained derivation or explicit owner-governance adoption.
 

@@ -173,7 +173,16 @@ def main() -> int:
     rows = ledger.get("rows") or {}
     ac_row = rows.get(AC_ID) or {}
     theta_row = rows.get(THETA_ID) or {}
-    check("AC source row is audited retained-bounded", (ac_row.get("claim_type"), ac_row.get("audit_status"), ac_row.get("effective_status")) == ("bounded_theorem", "audited_clean", "retained_bounded"), ac_row)
+    ac_adoption_grade_recorded = any(
+        audit.get("claim_type") == "bounded_theorem"
+        and audit.get("audit_status") == "audited_clean"
+        for audit in (ac_row.get("previous_audits") or [])
+    )
+    check(
+        "AC adoption-time audited bounded surface is preserved in ledger history",
+        ac_adoption_grade_recorded and ac_row.get("claim_type") == "bounded_theorem",
+        (ac_row.get("claim_type"), ac_row.get("audit_status"), ac_row.get("effective_status")),
+    )
     check("theta source row is audited retained-bounded", (theta_row.get("claim_type"), theta_row.get("audit_status"), theta_row.get("effective_status")) == ("bounded_theorem", "audited_clean", "retained_bounded"), theta_row)
     for phrase in [
         "owner-governed residual premises",

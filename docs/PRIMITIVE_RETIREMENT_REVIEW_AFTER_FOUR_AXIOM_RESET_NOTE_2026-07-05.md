@@ -15,6 +15,8 @@ zero: theta was retired 2026-07-05 by retained derivation, and
 historical primitive-retirement gate map only; it does not reopen, modify, or
 re-grade either Tier-A retirement record, `tier_a_admissions.json`,
 `axiom_premise_nodes.json`, or owner-governed premise data.
+The zero Tier-A count is class-specific: the separate AC governance node still
+contains two live owner-governed atoms, AC(i) and AC(ii).
 **Primary runner:**
 [`scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py`](../scripts/primitive_retirement_review_after_four_axiom_reset_2026_07_05.py)
 **Cached runner output:**

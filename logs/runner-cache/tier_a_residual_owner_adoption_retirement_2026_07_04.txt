@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py
-runner_sha256: 84a61a7307c142babdc8a24f50919817c8261e076786ac6be0f9f06ddaa0577a
+runner_sha256: 5ac7a79302ad282065293dc22e93f4c41d9cee35a0ce0a9e8231be685fa57d19
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
@@ -78,7 +78,7 @@ PASS: candidate id itself is not accepted premise: theta_mass_determinant_channe
 ----------------------------------------------------------------------------------------
 E - ledger, policy, and human registry surfaces are updated
 ----------------------------------------------------------------------------------------
-PASS: AC source row is audited retained-bounded
+PASS: AC adoption-time audited bounded surface is preserved in ledger history
 PASS: theta source row is audited retained-bounded
 PASS: minimality policy records: owner-governed residual premises
 PASS: minimality policy records: AC_phi_lambda retired from live Tier-A by owner-governance
@@ -106,4 +106,3 @@ RESULT: PASS=68 FAIL=0 CHECKS=68
 ========================================================================================
 
 ----- stderr -----
-

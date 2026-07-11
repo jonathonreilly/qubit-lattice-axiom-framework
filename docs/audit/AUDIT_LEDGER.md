@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 357 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2805 |
+| unaudited | 2804 |
 | audit_in_progress | 21 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 50 |
-| ~~audited_failed~~ | 3 |
+| ~~audited_failed~~ | 4 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 449 |
 | `audited_conditional` | 50 |
 | `audited_decoration` | 23 |
-| `audited_failed` | 25 |
+| `audited_failed` | 26 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 15 |
-| `unaudited` | 3155 |
+| `unaudited` | 3154 |
 
 | claim_type | count |
 |---|---:|
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 19 | `yt_ew_color_projection_theorem` | no_go | critical | 887 | 33.79 | `audited_clean` | **retained_no_go** |
 | 20 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 620 | 33.78 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 866 | 32.76 | `unaudited` | unaudited |
-| 22 | `cpt_exact_note` | positive_theorem | critical | 728 | 31.51 | `unaudited` | unaudited |
+| 22 | `cpt_exact_note` | positive_theorem | critical | 728 | 31.51 | `audited_failed` | ~~audited_failed~~ |
 | 23 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 467 | 31.37 | `unaudited` | unaudited |
 | 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 863 | 31.25 | `unaudited` | unaudited |
 | 25 | `three_generation_structure_note` | bounded_theorem | critical | 1043 | 31.03 | `unaudited` | unaudited |
@@ -665,6 +665,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `cpt_exact_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1872,6 +1873,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The narrowed finite-h claim follows from the completed cached runner output, and the runner source genuinely computes the reported lattice propagation quantities rather than printing constants or importing a contested premise. The strict h -> 0 continuum-limit statement is explicitly excluded from the audited scope.
 - **rationale:** The source note narrows the binding claim to a finite-resolution numerical trend, and the cached output matches the displayed h values, transfer norms, weak-field deflections, and F~M values. The runner source constructs offsets, fields, propagates amplitudes, computes centroids, Born ratios, and mass-scaling fits directly with fixed parameters; it does not hard-code the contested table. Because the h -> 0 convergence language is demoted to diagnostic-only, the missing convergence theorem does not block this bounded finite-h audit.
 - **auditor confidence:** high
+
+### `cpt_exact_note`
+
+- **Note:** [`CPT_EXACT_NOTE.md`](../../docs/CPT_EXACT_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The retained free even-periodic lattice theorem as written: C/P spectral flips, T=K invariance, CP/CPT invariance, and vanishing Theta_H-odd residuals for physical H=iD, excluding canonical SME-coefficient identification.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00063-cpt_exact_note`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** With the physical lift H=iD and antiunitary representative Theta_H=PK, the note claims Theta_H H Theta_H^{-1}=H and therefore H^{odd}=0.  _(class `A`)_
+- **chain closes:** False — The Theta_H=PK symmetry of physical H=iD closes, but the source and primary runner also identify T with K and CPT with CPK while operating on the real anti-Hermitian D. For physical H=iD, K and CPK flip H, so the retained symmetry table and runner do not verify the theorem as written.
+- **rationale:** Issue: the primary runner names the real anti-Hermitian hopping operator H and verifies CPK invariance of that operator, whereas the retained physical Hamiltonian is H=iD. On the Hermitian lift, K and CPK contribute the antiunitary i-to-minus-i sign and flip H; only the bridge's different representative Theta_H=PK preserves H. The D-level C/P/CP identities and the separate Theta_H=PK odd-sector identity are supported, but their current combined C/P/T/CPT presentation is not.
+- **open / conditional deps cited:**
+  - `PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md`
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 contains an untested canonical-SME-basis route and an open interacting-action route.
+    - N5 identifies untested canonical-basis and interacting-theory resolutions.
 
 ### `critical_exponents_topology_live_scout_note_2026-06-04`
 

@@ -2,7 +2,7 @@
   "claim_type_counts": {
     "bounded_theorem": 2044,
     "decoration": 25,
-    "meta": 355,
+    "meta": 356,
     "no_go": 462,
     "open_gate": 195,
     "positive_theorem": 663
@@ -48,7 +48,7 @@
     "decoration_under_mirror_mutual_information_chokepoint_note": 1,
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
     "decoration_under_plaquette_self_consistency_note": 1,
-    "meta": 348,
+    "meta": 349,
     "open_gate": 4,
     "retained": 81,
     "retained_bounded": 349,

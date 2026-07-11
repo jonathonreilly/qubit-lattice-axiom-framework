@@ -1,0 +1,23 @@
+loop_slug: lattice-nn-finite-window-closure-20260711
+branch: claude/science-fix/lattice_nn_continuum_note-3b98d294
+base: origin/main
+current_goal: "Harden the already-retained_bounded raw NN four-spacing packet with a fail-closed certificate while excluding h=0.125 and continuum inference."
+target_status: bounded-support
+cycle_count: 1
+active_route: "fail-closed finite-window runner certificate"
+hard_residual: "Independent audit must ratify the edited packet; h=0.125 remains outside scope."
+files_touched:
+  - docs/LATTICE_NN_CONTINUUM_NOTE.md
+  - scripts/lattice_nn_continuum.py
+  - logs/runner-cache/lattice_nn_continuum.txt
+  - .claude/science/physics-loops/lattice-nn-finite-window-closure-20260711/
+open_imports: []
+no_go_routes:
+  - "No inference from four rows to a continuum limit."
+  - "No use of the failed h=0.125 row as positive evidence."
+trace_gate_classification: upstream_support
+review_findings: pass
+pr_status: pending_creation
+lock_note: "Default automation lock unavailable because its configured path is owned by /Users/jonreilly; this task uses a dedicated isolated worktree."
+next_exact_action: "Open the review PR; after landing, the independent audit lane rechecks lattice_nn_continuum_note and its invalidated dependent."
+stop_condition: "Stop after the bounded packet passes checks and local review; independent audit owns effective status."

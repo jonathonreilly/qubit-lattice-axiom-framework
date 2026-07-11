@@ -106,6 +106,19 @@ def evaluate_candidate(candidate: dict, surface_paths: set[str]) -> tuple[bool, 
         anchor = " ".join(str(item.get("anchor", "")).split())
         if not anchor or anchor not in flat(source):
             return False, f"{criterion}: anchor not found in source"
+    packet_anchor = " ".join(
+        str(evidence["packet_consumption"].get("anchor", "")).split()
+    )
+    anchor_pairs = [
+        normalize_pair(first, second)
+        for first, second in re.findall(r"\(([^(),]+),([^()]*)\)", packet_anchor)
+    ]
+    candidate_pair = normalize_pair(
+        str(candidate.get("name", "")),
+        str(candidate.get("clock_denominator", "")),
+    )
+    if candidate_pair not in anchor_pairs:
+        return False, "packet-consumption evidence does not name the candidate transfer/denominator pair"
     return True, "all four criteria evidenced in packet sources"
 
 
@@ -274,6 +287,13 @@ def main() -> int:
         "docs/NOT_IN_PACKET_SURFACE_NOTE.md")
     ok_fake, why_fake = evaluate_candidate(fake_outside, surface)
     check(not ok_fake, "counterfeit rejector: evidence outside the enumerated surface is not admitted",
+          why_fake)
+    fake_pair = copy.deepcopy(real)
+    fake_pair["name"] = "counterfeit_transfer"
+    fake_pair["clock_denominator"] = "997 a_tau"
+    ok_fake, why_fake = evaluate_candidate(fake_pair, surface)
+    check(not ok_fake,
+          "counterfeit rejector: candidate identity/denominator not named by packet evidence is not admitted",
           why_fake)
 
     # --- sole-pair consumption grammar in the parent packet ---

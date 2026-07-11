@@ -97,7 +97,8 @@ recomputes its content from source text:
   inside the enumerated packet surface, and computes the admitted list from
   those checks; no preset `physical_clock_admitted` flags remain.
   Counterfeit candidates (fabricated anchors, missing packet consumption,
-  evidence outside the enumerated surface) must evaluate to not-admitted.
+  evidence outside the enumerated surface, or a candidate pair that does not
+  match the packet-consumption anchor) must evaluate to not-admitted.
 - **Honest auditor read.** For entries that are not clock-adjacent, the
   negative disposition ("supplies no second physical clock") is carried by
   the closed enumeration together with the parent packet's sole-pair
@@ -385,7 +386,7 @@ python3 scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_
 Expected summary:
 
 ```text
-SUMMARY: PASS=53 FAIL=0
+SUMMARY: PASS=54 FAIL=0
 ADMITTED_PHYSICAL_CLOCK_TRANSFERS=1
 B_AXIS_DERIVED=FALSE
 MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE

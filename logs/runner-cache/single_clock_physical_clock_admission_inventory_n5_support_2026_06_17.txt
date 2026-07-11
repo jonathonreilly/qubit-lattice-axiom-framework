@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py
-runner_sha256: 9266ae96c234db48ad0e759fa9896c4342ca948fbae5db048d2e2c294f9f5ed2
+runner_sha256: a05b41d7cc0b376b421019858f0a0b61a3f0fcc1f00800a61d6fdbd739e6d2ba
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
@@ -47,6 +47,7 @@ PASS: the computed admitted transfer is T_hat^2 with denominator 2 a_tau
 PASS: counterfeit rejector: fabricated anchor is not admitted -- positivity_trivial_kernel: anchor not found in source
 PASS: counterfeit rejector: missing packet-consumption criterion is not admitted -- criteria evidence does not cover exactly the four admission criteria
 PASS: counterfeit rejector: evidence outside the enumerated surface is not admitted -- supplied_as_physical_transfer: evidence path outside the enumerated packet surface
+PASS: counterfeit rejector: candidate identity/denominator not named by packet evidence is not admitted -- packet-consumption evidence does not name the candidate transfer/denominator pair
 PASS: parent grammar: every consumed T_hat^2 transfer/step pair normalizes to (T_hat^2, 2 a_tau) -- pairs=['T_hat^2,2a_tau']
 PASS: RP2 supplies the two-step transfer
 PASS: RP2 supplies positivity
@@ -62,7 +63,7 @@ PASS: mathematical comparator I x T_B is positive
 PASS: mathematical comparator transfers commute -- resid=0.00e+00
 PASS: factor comparator tangent space is two-dimensional -- rank=2
 
-SUMMARY: PASS=53 FAIL=0
+SUMMARY: PASS=54 FAIL=0
 ADMITTED_PHYSICAL_CLOCK_TRANSFERS=1
 B_AXIS_DERIVED=FALSE
 MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE

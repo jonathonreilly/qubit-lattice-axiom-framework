@@ -53,3 +53,9 @@
   original dependencies.
 - Generated audit/queue/effective-status changes were discarded with the
   disposable worktree and are absent from this branch.
+
+## Delivery
+
+- Branch: `physics-loop/yt-constructive-uv-bridge-block01-20260711`.
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5160
+- PR verified open and mergeable against `main`; not merged.

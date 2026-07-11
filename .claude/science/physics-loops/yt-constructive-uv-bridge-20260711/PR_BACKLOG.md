@@ -1,3 +1,4 @@
 # PR Backlog
 
-No backlog item yet. The block PR is pending implementation and review.
+No backlog item. Review PR opened and verified:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5160

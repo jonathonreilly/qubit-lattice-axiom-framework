@@ -67,10 +67,12 @@ audit_compatibility_validation: >-
   inbound edges, and ready=true; original row remained bounded_theorem with
   its original runner and dependencies. No generated audit authority files
   were copied to the science branch.
-pr_status: pending
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5160
 next_exact_action: >-
-  Commit this validation checkpoint, push the science branch, and open one
-  unmerged review PR.
+  Independent audit should review the sibling no-go under its narrow
+  free-symbol scope. Keep the original bounded row and downstream positive
+  dependency polarity unchanged.
 stop_condition: >-
-  One coherent science block has an honest status certificate, passes review
-  and repo checks, and is delivered in one unmerged review PR.
+  Achieved: one coherent science block has an honest status certificate,
+  passed review and repo checks, and is delivered in one unmerged review PR.

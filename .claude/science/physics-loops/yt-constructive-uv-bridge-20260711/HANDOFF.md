@@ -25,6 +25,10 @@ strict lint returned zero errors. The new sibling seeds as an unaudited
 independent audit. The original row remains a bounded theorem. No generated
 audit authority surface is present on this branch.
 
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5160
+(`OPEN`, `MERGEABLE`; audit-pipeline CI was in progress at the final
+checkpoint). The physics-loop run did not merge it.
+
 ## Next exact action
 
 After the review PR is open, the exact next science action is an independent

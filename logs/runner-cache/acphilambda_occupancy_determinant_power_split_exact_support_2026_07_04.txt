@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py
-runner_sha256: c387a1736dabda11c3b04cc665bc701b679be7628bd8cf9cf2304634649bb324
+runner_sha256: 9459b8f7f3c643cde45696675e4b0986c4d0ec334ba65cc859abcad04863667c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.68
 status: ok
 ----- stdout -----
 Complex determinant and realification determinant power
@@ -28,8 +28,10 @@ Part B: exact finite examples
 
 Part C: Berezin first power
 ---------------------------
+  [PASS] generic 1x1 top coefficient is det_C(K)  (k0)
   [PASS] generic 2x2 top coefficient is det_C(K)  (k00*k11 - k01*k10)
   [PASS] Berezin result has first determinant power
+  [PASS] generic 3x3 top coefficient is det_C(K)
 
 Scope guards
 ------------
@@ -38,6 +40,7 @@ Scope guards
   [PASS] source does not force r=1/2
 
 ================================================================
-TOTAL: PASS=16, FAIL=0
+TOTAL: PASS=18, FAIL=0
 
 ----- stderr -----
+

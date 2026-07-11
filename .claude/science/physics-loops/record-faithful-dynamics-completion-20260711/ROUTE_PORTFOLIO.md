@@ -5,7 +5,7 @@ Scores are provisional `0..3`; risk is negative.
 | Route | Upgrade | Trace | Import retirement | Review | Risk | Current read |
 |---|---:|---:|---:|---:|---:|---|
 | R1 record-observable quotient | 3 | 3 | 2 | 3 | -1 | strongest first theorem: the July-10 kinetic parameter is invisible to its own record histories/readout |
-| R2 permanent-record instrument normal form | 3 | 3 | 2 | 3 | -1 | separates irreversible record formation from the coherent carrier and prevents a frozen-carrier category error |
+| R2 rank-one formation-outcome normal form | 3 | 3 | 2 | 3 | -1 | separates an individual irreversible formation outcome from the coherent carrier and prevents a frozen-carrier category error |
 | R3 cubic-equivariant faithful carrier | 3 | 3 | 3 | 2 | -2 | promising: scalar sum plus vector difference is the full linear intertwiner space; faithfulness must remove scalar without fiat |
 | R4 strict QCA as fundamental coherent block | 2 | 2 | 2 | 3 | -2 | useful constraint, but existing results leave quantized protocol freedom and no curved cone at current density |
 | R5 graded-constraint/Born composition | 3 | 3 | 3 | 2 | -3 | can unify formation weights and interference if additivity/menu-independence are derived rather than inserted |

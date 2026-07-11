@@ -4,7 +4,7 @@ The campaign is initialized on
 `physics-loop/admissibility-dynamics-realization-bridge-20260711` from current
 `origin/main`.
 
-Block 01 review PR:
+Cubic neighbor-response review PR:
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 is open and mergeable; the audit-lane workflow was running at the delivery
 checkpoint.
@@ -46,3 +46,14 @@ A translation/proper-cubic-covariant local instrument in which a scalar or
 SWAP-like coherent block genuinely changes record support or weights while
 satisfying every proposed faithfulness and composition condition. Finding it
 would prove that the candidate bridge still does not select Dirac.
+
+## Record-observable and formation-outcome result
+
+The record-observable quotient removes the July exchange coupling only as an
+operationally invisible appendage; deleting its ontology still needs a
+separate criterion. Direct same-carrier permanence freezes both SWAP and
+ordinary hopping, while a finite unitary with an invariant record sector
+cannot form records from its blank complement. A rank-one locked-output CP
+operation has the exact form `J_P(rho)=Tr(E_P rho)P`. The effect `E_P`, firing
+site/rate, and coherent no-record dilation remain unselected. Runner:
+`PASS=25 FAIL=0`.

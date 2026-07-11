@@ -18,9 +18,17 @@ corrected, explicitly non-load-bearing regression diagnostic.
 
 ## Exact next action
 
-Open and verify the single review PR. After later landing, send
+Review [PR 5179](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5179)
+without merging from this loop. After later landing, send
 `yt_bridge_nonlocal_corrections_note` to the independent audit lane. Do not
 apply an audit verdict from this branch.
+
+## Delivery
+
+- branch: `physics-loop/yt-bridge-nonlocal-closure-block01-20260711`
+- review PR: [#5179](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5179)
+- PR verification: open, non-draft, base `main`, head correct, mergeable
+- merge status at creation: checks in progress; the loop does not merge
 
 ## Sibling-pin sweep
 

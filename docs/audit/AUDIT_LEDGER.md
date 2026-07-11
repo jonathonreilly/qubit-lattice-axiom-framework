@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 359 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2797 |
+| unaudited | 2796 |
 | audit_in_progress | 22 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
-| ~~audited_renaming~~ | 15 |
+| ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 5 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -50,8 +50,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 23 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 6 |
-| `audited_renaming` | 15 |
-| `unaudited` | 3147 |
+| `audited_renaming` | 16 |
+| `unaudited` | 3146 |
 
 | claim_type | count |
 |---|---:|
@@ -707,6 +707,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
+| `pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
@@ -5329,6 +5330,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The residual graph-axis transposition restricts to the same permutation matrix on V_1, so residual-Z_2 invariance of H is exactly P_tau_k H P_tau_k = H, and for k=1 this is P_23 H P_23 = H.  _(class `A`)_
 - **chain closes:** True — The cited retained authorities supply the cube shifts, hw=1 carrier, and residual axis stabilizer. Direct restriction of the explicitly constructed tensor-factor permutation unitary gives P_tau_k on V_1, making the stated invariance equation an exact operator identity.
 - **rationale:** The runner constructs the cube shifts, tensor-factor permutation unitaries, hw=1 basis, restriction blocks, and invariant Hermitian operators rather than importing or printing the contested bridge. All 87 checks are finite-dimensional algebraic checks, and the cited authorities are retained-grade. The statement that the natural three-dimensional permutation carrier is irreducible is inaccurate—it decomposes as trivial plus standard—but that incidental wording is not used by the scoped bridge proof.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24`
+
+- **Note:** [`PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md`](../../docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact S_3 and matrix-unit identities on the imported carrier V_1, including whether the retained P_23 action alone derives the claimed antiunitary residual-swap action.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00073-pmns_graph_first_forward_cyc`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The note defines `R[A] := P_23 . A^dagger . P_23` and then identifies this conjugate-linear map as the antiunitary presentation of the residual swap on the forward-cycle channel.  _(class `E`)_
+- **chain closes:** False — B1-B4 and the algebra following the definition of R are exact, but the cited authorities derive only the unitary P_23 action. They do not derive why the residual swap should be composed with adjoint rather than act by ordinary conjugation.
+- **rationale:** The runner correctly verifies the finite-dimensional permutation and matrix-unit identities, although one non-load-bearing negative-control check is vacuous. Its antiunitary path begins by hard-coding `R_anti(A) = P_23 A^dagger P_23`; subsequent checks establish consequences of that definition, not that the retained residual Z_2 action selects this lift. The safe result is an exact conditional theorem about the defined conjugate-linear involution, while identifying it as a derived presentation of the graph-side residual swap requires an additional bridge.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

@@ -1,0 +1,25 @@
+[PASS] A1. same-marginal joint family: rows/cols = (p_s,p_d), sum = 1 (symbolic in a,p)
+[PASS] A2. positivity interval [max(0,2p-1), p] has strictly positive width for p in (0,1)
+[PASS] A3. product point a=p^2 lies strictly inside the positivity interval for p in (0,1) => marginals+additivity do not force factorization
+[PASS] A4. p=1/2 wall witnesses: product=(1/4,1/4,1/4,1/4), correlated=(1/2,0,0,1/2); both have marginals (1/2,1/2); only product factorizes
+[PASS] B1. ρ_product = diag(p^2,p(1-p),(1-p)p,(1-p)^2) is PSD, trace 1
+[PASS] B2. ρ_corr = diag(p,0,0,1-p) is PSD, trace 1
+[PASS] B3. Tr_2 ρ_product = Tr_2 ρ_corr = diag(p,1-p) AND Tr_1 equal too (shared single-registration reduced state on both copies)
+[PASS] B4. Born joint weights: product factorizes m(j,k)=p_j p_k; corr does NOT (m(s,d)=0 != p(1-p) for p in (0,1))
+[PASS] B5. 06-17 quotient cumulant C_jk = m(j,k)-p_j p_k: identically 0 for product, nonzero for corr (C_sd = -p(1-p))
+[PASS] C1. single-registration observable battery (475 random Hermitian f, p-grid): F(ρ_product)=F(ρ_corr) to machine precision (shared reduced state)
+[PASS] C2. U1 single-edge Born weights (Tr(sigma P_j)) coincide for both witnesses = (p, 1-p); one-registration content cannot separate them
+[PASS] C3. U2 single-edge step-spread surrogate: non-degenerate (>0) for p in (0,1) AND identical on both witnesses (functional of sigma only)
+[PASS] C4. note-5 mean-spectrum surrogate (singular + eigenvalue spectra): identical on both witnesses across p-grid (a single-registration functional)
+[PASS] D1. factorization functional G=m(s,d)-p_s p_d takes different values on states with EQUAL single-registration reduced state (0 vs -p(1-p)) => G does not factor through Tr_2; it lives strictly above the unraveling scope
+[PASS] D2. agreement-conditioning: product => p_s'=p_s^2/(p_s^2+p_d^2) (retained x->x^2 flow); corr => p_s'=p_s (identity). The correlated stack collapses the flow.
+[PASS] E1. cross-edge independence residual-4 condition C_ss=0 solves to a=p^2, recovering the product point => residual 4 is the factorization-critical escape
+[PASS] E2. stationarity/edge-identity lever (residuals 1+3): an unequal-marginal product witness has copy1 marginal p1 != copy2 marginal p2 -- valid single-registration law on each copy, yet the single-p target m(j,k)=p_j p_k is ill-posed without identical marginals
+[PASS] E3. exact escape set: cross-edge independence (residual 4) + identical marginals (residuals 1+3) => m(j,k)=p_j p_k. Neither is delivered by the audited unraveling lane (residual 4 'not tested here'; stationarity FAILS at finite horizon).
+[PASS] F1. N3 hidden-wall scan: witness single-registration law is a function of p only; no unaudited unraveling/C^3 instrument value sits on a derivation path
+[PASS] F2. N4 residual matching: this note's ρ_corr specializes to the 06-18 wall witness diag(1/2,0,0,1/2) at p=1/2 -- same single-copy marginals, differing joint
+[PASS] F3. N7 steelman: even granting U2 non-degeneracy AND note-5 mean-spectrum quasi-freeze as premises, the correlated stack satisfies both and still violates factorization
+[PASS] F4. N8 cross-cycle echo: with unraveling single-edge inputs added to the tested set, the wall still stands (product strictly interior; correlated stack single-edge-indistinguishable yet non-factorized)
+
+TOTAL: PASS=22 FAIL=0
+VERDICT: narrow no-go passes. The audited unraveling premises are single-registration functionals; the correlated-stack witness reproduces every one of them while violating m(j,k)=p_j p_k. Cross-edge independence (residual 4) + identical marginals (residuals 1+3) is the exact escape set; residual 4 is the factorization-critical residual and is precisely the one the lane leaves untested.

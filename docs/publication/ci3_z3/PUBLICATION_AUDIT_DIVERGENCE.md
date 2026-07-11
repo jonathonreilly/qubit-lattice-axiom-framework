@@ -20,7 +20,7 @@ publication tables phrase it.
 | critical | `unaudited` | 244 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 124 |
-| critical | `audit_in_progress` | 7 |
+| critical | `audit_in_progress` | 6 |
 | critical | `audited_conditional` | 4 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_conditional` | 1 |
@@ -29,7 +29,7 @@ publication tables phrase it.
 | medium | `audited_conditional` | 1 |
 | medium | `open_gate` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 561
+**Total non-retained-grade rows in publication tables:** 560
 
 ## Per-row breakdown
 
@@ -274,7 +274,6 @@ publication tables phrase it.
 | critical | `yt_bridge_uv_class_uniqueness_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_constructive_uv_bridge_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_eft_bridge_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `yt_ew_color_projection_theorem` | `audit_in_progress` | `audit_in_progress` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `yt_ew_m_residual_note_2026-05-02` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | critical | `yt_exact_coarse_grained_bridge_operator_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_exact_schur_normal_form_uniqueness_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

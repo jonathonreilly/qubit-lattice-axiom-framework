@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 669,
+    "critical": 668,
     "high": 332,
     "leaf": 1131,
     "medium": 760
@@ -1664,28 +1664,6 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "yt_ew_color_projection_theorem",
-      "claim_scope": "Restricted-packet no-go: the exact family `K_EW(kappa_EW)=1/(8/9+kappa_EW/9)` does not select the connected-trace specialization `kappa_EW=0`.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 48,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 33.794,
-      "note_path": "docs/YT_EW_COLOR_PROJECTION_THEOREM.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/yt_ew_kappa_family_nogo_certificate.py",
-      "transitive_descendants": 887
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "hierarchy_matsubara_decomposition_note",
@@ -3069,6 +3047,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/poisson_self_gravity_loop_v3.py",
+      "transitive_descendants": 478
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_ew_matching_rule_m_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "yt_ew_color_projection_theorem",
+        "yukawa_color_projection_theorem"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.904,
+      "note_path": "docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py",
       "transitive_descendants": 478
     },
     {
@@ -13394,31 +13397,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_mass_ratio_ckm_dual.py",
       "transitive_descendants": 479
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_ew_matching_rule_m_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_ew_color_projection_theorem",
-        "yukawa_color_projection_theorem"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.904,
-      "note_path": "docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py",
-      "transitive_descendants": 478
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -57254,6 +57232,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "ew_current_fierz_channel_decomposition_note_2026-05-01",
+        "yt_ew_color_projection_theorem"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/YT_EW_F_ADJ_FIERZ_FRACTION_BOUNDED_NOTE_2026-05-25.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/yt_ew_f_adj_fierz_runner.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "yt_ssb_matching_gap_analysis_note_2026-04-18",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -81837,31 +81840,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "yt_ew_color_projection_theorem"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/YT_EW_F_ADJ_FIERZ_FRACTION_BOUNDED_NOTE_2026-05-25.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/yt_ew_f_adj_fierz_runner.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_ew_higgs_source_intertwiner_gate_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -82365,6 +82343,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 598,
-  "total_pending": 2892
+  "ready_count": 599,
+  "total_pending": 2891
 }

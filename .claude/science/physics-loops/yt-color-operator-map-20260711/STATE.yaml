@@ -1,0 +1,25 @@
+loop: yt-color-operator-map-20260711
+mode: run
+target: best-honest-status
+runtime: focused_target_no_wall_clock_cap
+cycles_completed: 1
+active_route: su3_equivariant_scalar_source_operator_map
+hard_residual: "Can the physical color-singlet scalar source acquire the adjoint-space rank fraction 8/9 as its LSZ normalization from framework operators?"
+actual_current_surface_status: no-go
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md
+  - scripts/frontier_yt_color_projection_correction.py
+  - logs/runner-cache/frontier_yt_color_projection_correction.txt
+  - .claude/science/physics-loops/yt-color-operator-map-20260711/
+open_imports:
+  - physical_scalar_source_to_color_matrix_matching_map
+  - dynamical_scalar_two_point_residue_or_independent_readout_coefficient
+no_go_routes:
+  - dimension_fraction_equals_scalar_wavefunction_factor
+  - connected_cumulant_equals_adjoint_projection
+review_disposition: pass
+pr_status: not_opened
+next_exact_action: "Commit and push the coherent block, open one unmerged review PR, then send the source row to independent re-audit after landing."
+stop_condition: "Scoped artifact, checks, review-loop pass, and one verified unmerged review PR."

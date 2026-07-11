@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_color_projection_correction.py
-runner_sha256: b640f7b2d46ee89fbb30783393a80fef4a3d9df0fd556966ec0b8c5cee89f12d
+runner_sha256: 59a1f6a7ff1a94ecaea1e5db8875e74ee1e0d35333ce52f7ece9b41d7fb43397
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -41,7 +41,7 @@ Part 2: corrected conditional family
 [PASS] source avoids stale reversed K_Y formula
 
 Part 3: two-completion independence witness
-[PASS] kappa=0 and kappa=1 share retained primitive signature: (Fraction(8, 9), Fraction(1, 9), Fraction(77, 100), Fraction(77, 100))
+[PASS] kappa=0 and kappa=1 share the cited channel-data signature: (Fraction(8, 9), Fraction(1, 9), Fraction(77, 100), Fraction(77, 100))
 [PASS] kappa=0 and kappa=1 disagree on K_Y: 8/9 != 1
 [PASS] color-blind scaling cancels at kappa=0: scaled=8/9, unscaled=8/9
 [PASS] color-blind scaling cancels at kappa=1: scaled=1, unscaled=1
@@ -53,7 +53,62 @@ Part 4: vertex-projection guardrail
 [PASS] identity insertion would give K_Y=1 if kappa_Y=rho_singlet: 1
 [PASS] traceless insertion would give K_Y=8/9 if kappa_Y=rho_singlet: 8/9
 
-Part 5: overclaim guards
+Part 5: projector rank is not projector action
+[PASS] N_c=2: singlet projector has rank 1: rank=1
+[PASS] N_c=2: adjoint projector has rank N_c^2-1: rank=3
+[PASS] N_c=2: adjoint projector rank fraction equals F_adj: 3/4=3/4
+[PASS] N_c=2: P_singlet(I)=I
+[PASS] N_c=2: P_adjoint(I)=0
+[PASS] N_c=2: projector completeness on every matrix unit
+[PASS] N_c=2: P_adj idempotent on every matrix unit
+[PASS] N_c=3: singlet projector has rank 1: rank=1
+[PASS] N_c=3: adjoint projector has rank N_c^2-1: rank=8
+[PASS] N_c=3: adjoint projector rank fraction equals F_adj: 8/9=8/9
+[PASS] N_c=3: P_singlet(I)=I
+[PASS] N_c=3: P_adjoint(I)=0
+[PASS] N_c=3: projector completeness on every matrix unit
+[PASS] N_c=3: P_adj idempotent on every matrix unit
+[PASS] N_c=4: singlet projector has rank 1: rank=1
+[PASS] N_c=4: adjoint projector has rank N_c^2-1: rank=15
+[PASS] N_c=4: adjoint projector rank fraction equals F_adj: 15/16=15/16
+[PASS] N_c=4: P_singlet(I)=I
+[PASS] N_c=4: P_adjoint(I)=0
+[PASS] N_c=4: projector completeness on every matrix unit
+[PASS] N_c=4: P_adj idempotent on every matrix unit
+[PASS] N_c=5: singlet projector has rank 1: rank=1
+[PASS] N_c=5: adjoint projector has rank N_c^2-1: rank=24
+[PASS] N_c=5: adjoint projector rank fraction equals F_adj: 24/25=24/25
+[PASS] N_c=5: P_singlet(I)=I
+[PASS] N_c=5: P_adjoint(I)=0
+[PASS] N_c=5: projector completeness on every matrix unit
+[PASS] N_c=5: P_adj idempotent on every matrix unit
+[PASS] N_c=2: isotropic basis mean gives F_adj: 3/4
+[PASS] N_c=2: identity insertion adjoint fraction is zero, not F_adj: identity=0, rank_fraction=3/4
+[PASS] N_c=3: isotropic basis mean gives F_adj: 8/9
+[PASS] N_c=3: identity insertion adjoint fraction is zero, not F_adj: identity=0, rank_fraction=8/9
+[PASS] N_c=4: isotropic basis mean gives F_adj: 15/16
+[PASS] N_c=4: identity insertion adjoint fraction is zero, not F_adj: identity=0, rank_fraction=15/16
+[PASS] N_c=5: isotropic basis mean gives F_adj: 24/25
+[PASS] N_c=5: identity insertion adjoint fraction is zero, not F_adj: identity=0, rank_fraction=24/25
+
+Part 6: equivariant scalar-source obstruction
+[PASS] N_c=2: invariant insertion space is the scalar line: dimension=1
+[PASS] N_c=2: no nonzero invariant traceless insertion: dimension=0
+[PASS] N_c=2: shifted scalar source has identity finite-difference tangent
+[PASS] N_c=3: invariant insertion space is the scalar line: dimension=1
+[PASS] N_c=3: no nonzero invariant traceless insertion: dimension=0
+[PASS] N_c=3: shifted scalar source has identity finite-difference tangent
+[PASS] N_c=4: invariant insertion space is the scalar line: dimension=1
+[PASS] N_c=4: no nonzero invariant traceless insertion: dimension=0
+[PASS] N_c=4: shifted scalar source has identity finite-difference tangent
+[PASS] N_c=5: invariant insertion space is the scalar line: dimension=1
+[PASS] N_c=5: no nonzero invariant traceless insertion: dimension=0
+[PASS] N_c=5: shifted scalar source has identity finite-difference tangent
+[PASS] source states rank-versus-action obstruction
+[PASS] source states scalar-to-adjoint equivariant-map obstruction
+[PASS] source distinguishes connected cumulant from traceless color projection
+
+Part 7: overclaim guards
 [PASS] source avoids overclaim phrase 'The framework derives the `sqrt(8/9)` correction'
 [PASS] source avoids overclaim phrase 'ALL CHECKS PASSED'
 [PASS] source avoids overclaim phrase 'm_t(pole, 2-loop) within'
@@ -63,9 +118,12 @@ Part 5: overclaim guards
 [PASS] source contains boundary phrase 'derive kappa_Y = 0'
 [PASS] source contains boundary phrase 'No-Go Discipline Gate'
 [PASS] source contains boundary phrase 'Status:** PASS'
+[PASS] source contains boundary phrase 'rank fraction of the adjoint projector'
+[PASS] source contains boundary phrase 'specific scalar insertion'
+[PASS] source contains boundary phrase 'dynamical scalar two-point'
 
 ==============================================================================
-RESULT: PASS=42 FAIL=0
+RESULT: PASS=96 FAIL=0
 ==============================================================================
 
 ----- stderr -----

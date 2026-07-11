@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/hypercharge_gut_normalization_three_fifths_accepted_premise_runner.py
-runner_sha256: 18efeece4dcd8477431204070aad7d3902df5001efc0d86c98955f4040f1c093
+runner_sha256: 7a5ec8b6648bb1b32cd659e0ac16c4bc362864c9c5836d99bf6ccfa2c4530b27
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.07
 status: ok
 ----- stdout -----
-Hypercharge GUT-normalization 3/5 accepted-premise bridge
-Exact Fraction arithmetic; (P1a) and (P1b) are registered inputs.
+Hypercharge GUT-normalization 3/5 declared bounded-premise bridge
+Exact Fraction arithmetic; (D1) and (D2) are supplied admissions.
 
 [PASS] (B1) Tr_family(Y^2) = 10/3 (10/3)
 [PASS] (B2) Tr_family(T_3^2) = 2 (2)
@@ -23,16 +23,18 @@ Exact Fraction arithmetic; (P1a) and (P1b) are registered inputs.
 [PASS] (B6) SU(3)^2-Y = 0 (0)
 [PASS] (B6) SU(2)^2-Y = 0 (0)
 [PASS] (B7) (3/5)*(155/27) = 31/9 (31/9)
-[PASS] bridge note exists (/Users/jonBridger/Toy Physics/.claude/worktrees/science-issues-audit-90e897/docs/HYPERCHARGE_GUT_NORMALIZATION_THREE_FIFTHS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-07-10.md)
-[PASS] bridge registers the (P1a) tag
-[PASS] bridge registers the (P1b) tag
-[PASS] bridge contains the fenced (P1) multiset block
-[PASS] bridge boundary says it does NOT derive the premise
+[PASS] bridge note exists (/private/tmp/review-loop-governance-fixes-20260711-5128/docs/HYPERCHARGE_GUT_NORMALIZATION_THREE_FIFTHS_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-07-10.md)
+[PASS] bridge declares the (D1) tag
+[PASS] bridge declares the (D2) tag
+[PASS] bridge contains the fenced bounded-premise block
+[PASS] bridge boundary says it does NOT derive the premises
+[PASS] bridge marks D1/D2 as supplied admissions
+[PASS] bridge denies registry/framework authority
 [PASS] bridge has the load-bearing hypercharge markdown link
-[PASS] consumer note exists (/Users/jonBridger/Toy Physics/.claude/worktrees/science-issues-audit-90e897/docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md)
+[PASS] consumer note exists (/private/tmp/review-loop-governance-fixes-20260711-5128/docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md)
 [PASS] consumer note links this bridge
 
-TOTAL: PASS=22 FAIL=0
+TOTAL: PASS=24 FAIL=0
 
 ----- stderr -----
 

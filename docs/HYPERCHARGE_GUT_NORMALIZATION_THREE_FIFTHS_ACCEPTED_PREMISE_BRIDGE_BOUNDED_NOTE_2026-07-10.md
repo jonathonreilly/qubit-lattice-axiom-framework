@@ -1,4 +1,4 @@
-# Hypercharge GUT-Normalization 3/5 Accepted-Premise Bridge
+# Hypercharge GUT-Normalization 3/5 Declared Bounded-Premise Bridge
 
 **Date:** 2026-07-10
 **Claim type:** bounded_theorem
@@ -10,22 +10,23 @@ above is a source-side claim-boundary declaration, not an audit verdict.
 
 ## Claim
 
-Given the accepted-premise packet (P1) registered below, the one-family
+Given the declared bounded-premise packet below, the one-family
 hypercharge and weak-isospin squared traces fix the GUT-normalization
-factor to exactly `3/5`. This is a bounded composition of the registered
+factor to exactly `3/5`. This is a bounded composition of the supplied
 hypercharge multiset and equal-family-trace normalization scheme by exact
 rational arithmetic; it is not a framework-native derivation of either
 premise.
 
-## Accepted Premises Registration (P1)
+## Declared Bounded Premises (D1/D2)
 
-This section formally registers the two-part premise packet consumed by
-the `R_base` identity in audit-readable named-premise form:
+This section declares the two-part bounded premise packet consumed by the
+`R_base` identity in audit-readable named-premise form. These are supplied
+admissions, not registry-approved premises and not framework-derived inputs:
 
 ```text
-(P1) Hypercharge GUT-normalization accepted-premise packet.
+(D) Hypercharge GUT-normalization declared bounded-premise packet.
 
-(P1a) The one-family Standard-Model hypercharge assignment in the
+(D1) The one-family Standard-Model hypercharge assignment in the
       Q = T_3 + Y convention, as the Weyl-fermion family multiset
 
   Q_L : (SU(2) doublet, SU(3) triplet,  Y = +1/6)   [6 Weyl states]
@@ -34,7 +35,7 @@ the `R_base` identity in audit-readable named-premise form:
   L_L : (SU(2) doublet, color singlet,  Y = -1/2)   [2]
   e_R : (SU(2) singlet, color singlet,  Y = -1)     [1]
 
-(P1b) The equal-family-trace normalization scheme: the GUT-normalized
+(D2) The equal-family-trace normalization scheme: the GUT-normalized
       abelian generator is Y_GUT = k * Y with k > 0 fixed by
       Tr_family(Y_GUT^2) = Tr_family(T_3^2); equivalently
       g_1^2 = (5/3) g_Y^2. This is the standard
@@ -42,8 +43,9 @@ the `R_base` identity in audit-readable named-premise form:
       RGE literature.
 ```
 
-**Status:** accepted-premise packet entry. The bridge registers (P1a)
-and (P1b); it does not promote either input to a framework-derived axiom.
+**Status:** declared bounded-premise packet. The bridge consumes (D1) and
+(D2) as supplied admissions; neither is registry-approved, framework-derived,
+or promoted to an axiom or approved primitive.
 
 ## Derived Consequences
 
@@ -55,7 +57,7 @@ Each consequence below is verified by the primary runner using exact
 - **(B2)** `Tr_family(T_3^2) = 8 * (1/4) = 2` (eight doublet Weyl
   states: 6 from `Q_L`, 2 from `L_L`; singlets contribute 0).
 - **(B3)** Hence `k^2 = Tr(T_3^2) / Tr(Y^2) = 2 / (10/3) = 3/5`
-  exactly: given (P1a), the (P1b) scheme fixes the normalization factor
+  exactly: given (D1), the (D2) scheme fixes the normalization factor
   to exactly `3/5`; no other value is consistent.
 - **(B4)** Convention invariance: under a rescaled hypercharge table
   `Y' = 2Y` (the `Q = T_3 + Y'/2` convention, in which the doublet
@@ -64,9 +66,9 @@ Each consequence below is verified by the primary runner using exact
   invariant and the scheme returns the same GUT coupling:
   `g_1^2 / g_Y^2 = 5/3` computed in either table (`Tr(Y'^2) = 40/3`,
   `k'^2 = 2/(40/3) = 3/20`, and `(1/2)^2 / (3/20) = 5/3`). The
-  registered factor is therefore a property of the physical generator,
+  supplied bounded factor is therefore a property of the physical generator,
   not of the table normalization.
-- **(B5)** Consistency with the retained framework surface: the (P1a)
+- **(B5)** Consistency with the retained framework surface: the (D1)
   LH-doublet entries stand in the ratio `Y(Q_L) : Y(L_L) = (1/6) :
   (-1/2) = 1 : (-3)`, matching the retained structural eigenvalue ratio
   `+1 : (-3)` on `(Sym^2, Anti^2)` carried by
@@ -74,20 +76,20 @@ Each consequence below is verified by the primary runner using exact
   This dependency is cited at its bounded LH-doublet scope only: that
   authority explicitly quarantines GUT-normalization and full-generation
   squared-trace claims, and this bridge consumes neither from it.
-- **(B6)** Internal-consistency diagnostics of the (P1a) multiset in the
+- **(B6)** Internal-consistency diagnostics of the (D1) multiset in the
   all-left-handed Weyl convention (`u^c: Y=-2/3 [3]`, `d^c: Y=+1/3
   [3]`, `e^c: Y=+1 [1]`, with `Q_L, L_L` as above): the exact sums
   `Tr(Y) = 0`, `Tr(Y^3) = 0`, `SU(3)^2–Y = 1/3 - 2/3 + 1/3 = 0`,
   `SU(2)^2–Y = 1/2 - 1/2 = 0`. These are recorded as diagnostics that
-  the registered multiset is the standard anomaly-consistent family;
-  they are NOT presented as a derivation of (P1a).
+  the supplied multiset is the standard anomaly-consistent family;
+  they are NOT presented as a derivation of (D1).
 - **(B7)** Substitution into the `R_base` identity of
   `R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md`:
   `(3/5) * (155/27) = 31/9` exactly.
 
 The (B7) filename is backticked deliberately: the consumer cites this
 bridge; the load-bearing citation direction runs from the consumer to
-this registration, not vice versa.
+this declared bounded packet, not vice versa.
 
 ## Load-Bearing Dependency
 
@@ -98,10 +100,10 @@ this registration, not vice versa.
 
 ## Boundary
 
-- This bridge does NOT derive (P1a) or (P1b) from the framework axioms
-  (Lattice / Qubit / Admissibility / Record); it formally registers them
-  as an accepted-premise packet entry and composes them by exact
-  arithmetic.
+- This bridge does NOT derive (D1) or (D2) from the framework axioms
+  (Lattice / Qubit / Admissibility / Record); it declares them as supplied
+  bounded admissions and composes them by exact arithmetic. They are not
+  entries in a framework-premise registry.
 - It does NOT claim any SU(5)/GUT embedding. The unaudited
   candidate-derivation notes
   `FULL_Y_SQUARED_TRACE_SU5_GUT_NOTE_2026-05-02.md`,
@@ -113,7 +115,7 @@ this registration, not vice versa.
 - It does NOT modify the hypercharge-identification authority or lift
   its quarantine of GUT-normalization claims.
 - The framework-native derivation of `3/5` remains an open target; this
-  registration records the admission in audit-readable named-premise
+  declared packet records the admissions in audit-readable named-premise
   form.
 
 ## Verification
@@ -122,5 +124,5 @@ this registration, not vice versa.
 python3 scripts/hypercharge_gut_normalization_three_fifths_accepted_premise_runner.py
 ```
 
-The runner checks (B1)–(B7), the note-surface registration, the bounded
+The runner checks (B1)–(B7), the note-surface declaration, the bounded
 hypercharge dependency, and the consumer-to-bridge citation direction.

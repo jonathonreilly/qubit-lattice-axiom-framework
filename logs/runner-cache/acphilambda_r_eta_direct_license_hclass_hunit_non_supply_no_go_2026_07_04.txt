@@ -1,216 +1,57 @@
-AC_phi_lambda R-eta direct-license h-class/h-unit non-supply no-go verifier
+Record additivity and the R-eta unit-calibration countermodel
+========================================================================
 
-========================================================================================
-A. source presence and Tier-A boundary
-========================================================================================
-[PASS] exists: docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md
-[PASS] exists: docs/audit/data/tier_a_admissions.json
-[PASS] exists: docs/audit/data/audit_ledger.json
-[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
-[PASS] exists: docs/audit/data/axiom_premise_nodes.json
-[PASS] exists: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
-[PASS] exists: docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
-[PASS] exists: docs/SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md
-[PASS] exists: docs/ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md
-[PASS] exists: docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
-[PASS] exists: docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md
-[PASS] exists: docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md
-[PASS] exists: docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md
-[PASS] exists: docs/RECORD_CONTENT_READOUT_LICENSE_SPLIT_REGISTRATION_UNREACHABILITY_THEOREM_NOTE_2026-07-02.md
-[PASS] exists: docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
-[PASS] AC_phi_lambda remains the live Tier-A target
-[PASS] AC minimum decomposition keeps R-eta
-[PASS] AC minimum decomposition keeps occupancy separate
-[PASS] AC statement names density-read-as-angle R-eta
-[PASS] human registry names R-eta
-[PASS] note declares Type no_go
-[PASS] note declares Claim type no_go
-[PASS] note declares independent audit boundary
-[PASS] note says R-eta is not retired
-[PASS] note says AC_phi_lambda is not retired
-[PASS] note says no registry/axiom/primitive edit
-[PASS] forbidden overclaim absent: R-eta is retired
-[PASS] forbidden overclaim absent: AC_phi_lambda is retired
-[PASS] forbidden overclaim absent: A_R-eta is derived.
-[PASS] forbidden overclaim absent: therefore R-eta closes
-[PASS] forbidden overclaim absent: audit_status: audited_clean
-[PASS] forbidden overclaim absent: effective_status: retained
-[PASS] forbidden overclaim absent: promoted to retained
+Part A: exact beta family
+-------------------------
+  [PASS] empty record reads zero for every tested beta
+  [PASS] finite disjoint additivity holds for every tested beta
+  [PASS] target singleton eta angle is 2/9
+  [PASS] countermodel singleton eta angle is 4/9
+  [PASS] target cycle holonomy is 2/3
+  [PASS] countermodel cycle holonomy is 4/3
+  [PASS] target and countermodel share the same h
+  [PASS] target and countermodel are distinct
 
-========================================================================================
-B. axiom and primitive boundary pins
-========================================================================================
-[PASS] approved premise registry has minimal axioms
-[PASS] approved premise registry excludes R-eta
-[PASS] minimal axioms contain boundary phrase: Records form.
-[PASS] minimal axioms contain boundary phrase: A readout value is determined by record content alone
-[PASS] minimal axioms contain boundary phrase: scalar readout `I` is additive
-[PASS] minimal axioms contain boundary phrase: context selection
-[PASS] minimal axioms contain boundary phrase: measurement basis selection
-[PASS] minimal axioms contain boundary phrase: formation rules
-[PASS] minimal axioms contain boundary phrase: source/action and physical-observable identification
-[PASS] minimal axioms name AC_phi_lambda as outside axioms
-[PASS] realized-state primitive withholds no state
-[PASS] realized-state primitive withholds measure
-[PASS] realized-state primitive withholds weighting
-[PASS] realized-state primitive withholds probability rule
-[PASS] realized-state primitive withholds normalization rule
-[PASS] realized-state primitive withholds value
+Part B: content and symmetry
+----------------------------
+  [PASS] readout is translation invariant
+  [PASS] readout is proper-cubic-rotation invariant
+  [PASS] readout is cycle-position permutation invariant
+  [PASS] real readout is conjugation even
+  [PASS] readout depends on record collection through cardinality
 
-========================================================================================
-C. source-surface h-class/h-unit pins
-========================================================================================
-[PASS] narrowing source contains A_R-eta
-[PASS] narrowing source contains **(h-class)** class membership
-[PASS] narrowing source contains **(h-unit)** identity reading
-[PASS] narrowing source contains The surviving atom
-[PASS] narrowing source contains remains admitted
-[PASS] supplied-context source contains C1 (FRAME)
-[PASS] supplied-context source contains C2 (WEIGHTING)
-[PASS] supplied-context source contains C1 Does Not Supply C2
-[PASS] supplied-context source contains C2 Does Not Supply C1
-[PASS] supplied-context source contains No C1 supplier is derived here
-[PASS] W2 source contains supplied finite context algebra
-[PASS] W2 source contains physical carrier realization
-[PASS] W2 source contains The value atom `A_R-eta` remains admitted
-[PASS] W2 source contains not a value derivation and not an admission retirement
-[PASS] fixed-locus source contains L₃(1,2)
-[PASS] fixed-locus source contains 2/9
-[PASS] fixed-locus source excludes physical readout bridge
-[PASS] normal-form source contains Phi = S_sum = 2/3
-[PASS] normal-form source contains W_cycle_holonomy_value
-[PASS] normal-form source contains physical charged-lepton readout
-[PASS] normal-form source contains No derivation is supplied
-[PASS] defect source contains W_defect_identity_unit
-[PASS] defect source contains identity-unit member
-[PASS] defect source contains rescale-breaking
-[PASS] angle frontier source contains Phi = S_sum
-[PASS] angle frontier source contains live R-eta license
-[PASS] angle frontier source contains license target
-[PASS] record split source contains record-determined content
-[PASS] record split source contains readout-construction
-[PASS] record split source contains license split
+Part C: arbitrary finite additivity
+-----------------------------------
+  [PASS] cardinality formula holds at n=0
+  [PASS] cardinality formula holds at n=1
+  [PASS] cardinality formula holds at n=2
+  [PASS] cardinality formula holds at n=3
+  [PASS] cardinality formula holds at n=4
+  [PASS] cardinality formula holds at n=5
+  [PASS] three-way disjoint additivity
 
-========================================================================================
-D. dependency row status checks
-========================================================================================
-[PASS] ledger row exists for ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
-[PASS] ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md is not unbounded retained
-[PASS] ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md has claim type
-[PASS] ledger row exists for SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md
-[PASS] SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md is not unbounded retained
-[PASS] SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md has claim type
-[PASS] ledger row exists for ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md
-[PASS] ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md is not unbounded retained
-[PASS] ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md has claim type
-[PASS] ledger row exists for KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
-[PASS] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md is not unbounded retained
-[PASS] KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md has claim type
-[PASS] ledger row exists for ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md
-[PASS] ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md is not unbounded retained
-[PASS] ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md has claim type
-[PASS] ledger row exists for ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md
-[PASS] ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md is not unbounded retained
-[PASS] ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md has claim type
-[PASS] ledger row exists for ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md
-[PASS] ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md is not unbounded retained
-[PASS] ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md has claim type
-[PASS] ledger row exists for RECORD_CONTENT_READOUT_LICENSE_SPLIT_REGISTRATION_UNREACHABILITY_THEOREM_NOTE_2026-07-02.md
-[PASS] RECORD_CONTENT_READOUT_LICENSE_SPLIT_REGISTRATION_UNREACHABILITY_THEOREM_NOTE_2026-07-02.md is not unbounded retained
-[PASS] RECORD_CONTENT_READOUT_LICENSE_SPLIT_REGISTRATION_UNREACHABILITY_THEOREM_NOTE_2026-07-02.md has claim type
-[PASS] new row not required before audit pipeline seeding
+Part D: source and axiom guards
+-------------------------------
+  [PASS] current Record axiom contains empty-zero
+  [PASS] current Record axiom contains finite additivity
+  [PASS] current axioms withhold physical-observable identification
+  [PASS] scale reference withholds dimensionless readout content
+  [PASS] kinetic isotropy withholds phase and readout bridge
+  [PASS] note grants h-class explicitly
+  [PASS] note states the beta countermodel
+  [PASS] note matches singleton eta angle and cycle holonomy
+  [PASS] note limits claim to current finite-record surface
+  [PASS] note preserves a future same-observable theorem
+  [PASS] note does not force r
+  [PASS] N1 contains seven attempted routes
+  [PASS] N2 collapses to one wall
+  [PASS] N3 records the required phrase scan
+  [PASS] N4 uses no prior negative witness
+  [PASS] N5 names tested resolutions
+  [PASS] N6 records convention and theorem paths
+  [PASS] N7 contains the owner-premise and coordinate steelman
+  [PASS] N8 considers governance, derivation, primitive, and coordinate mechanisms
+  [PASS] discipline gate records PASS
 
-========================================================================================
-E. fixed-locus and holonomy algebra
-========================================================================================
-[PASS] L = 2/9
-[PASS] S_sum = 3L = 2/3
-[PASS] Phi(c) = c S_sum hits target at c=1
-[PASS] Phi_beta hits target at beta=1
-[PASS] target is not the single density L
-[PASS] target is not count normalization 1
-[PASS] target is not zero
-[PASS] 2*pi packaging misses target
-[PASS] 1/3 unit maps S_sum back to L
-[PASS] 3 unit maps single density L to target
-[PASS] same target can be fit by different class/unit pairs
-[PASS] target below pi
-[PASS] target nonzero bare angle
-
-========================================================================================
-F. record-additive h-class witnesses
-========================================================================================
-[PASS] zero empty-record readout is zero
-[PASS] zero is additive on disjoint sample records
-[PASS] zero depends only on record content
-[PASS] count empty-record readout is zero
-[PASS] count is additive on disjoint sample records
-[PASS] count depends only on record content
-[PASS] single_density empty-record readout is zero
-[PASS] single_density is additive on disjoint sample records
-[PASS] single_density depends only on record content
-[PASS] unaveraged_fixed_locus_sum empty-record readout is zero
-[PASS] unaveraged_fixed_locus_sum is additive on disjoint sample records
-[PASS] unaveraged_fixed_locus_sum depends only on record content
-[PASS] double_sum empty-record readout is zero
-[PASS] double_sum is additive on disjoint sample records
-[PASS] double_sum depends only on record content
-[PASS] zero map misses target
-[PASS] count map misses target
-[PASS] single-density map gives L
-[PASS] unaveraged fixed-locus sum gives target
-[PASS] double sum misses target
-[PASS] same record frame admits multiple additive scalar values
-[PASS] Record additivity alone does not select the target member
-
-========================================================================================
-G. h-unit and C1/C2 independence witnesses
-========================================================================================
-[PASS] beta=0 gives an additive scalar multiple
-[PASS] beta=1/3 gives an additive scalar multiple
-[PASS] beta=1 gives an additive scalar multiple
-[PASS] beta=2*pi gives an additive scalar multiple
-[PASS] beta=3 gives an additive scalar multiple
-[PASS] only beta=1 in tested set hits target
-[PASS] beta=2*pi is not identity unit
-[PASS] beta=0 is zero readout
-[PASS] beta=1/3 recovers single-density value
-[PASS] C1 fixed frame with w=1 is additive
-[PASS] C1 fixed frame with w=2 is additive
-[PASS] same frame different C2 weights yield different values
-[PASS] Hadamard mixed frame has equal squared weights
-[PASS] Hadamard mixed first cell is not original unit cell
-[PASS] equal weighting alone does not recover original frame
-
-========================================================================================
-H. note discipline and no-overclaim checks
-========================================================================================
-[PASS] note contains required boundary: bounded route no-go
-[PASS] note contains required boundary: h-class
-[PASS] note contains required boundary: h-unit
-[PASS] note contains required boundary: A_R-eta
-[PASS] note contains required boundary: This implication is invalid
-[PASS] note contains required boundary: a successful proof must derive both h-class and h-unit
-[PASS] note contains required boundary: A future direct readout-license theorem remains possible
-[PASS] note contains required boundary: h-class theorem
-[PASS] note contains required boundary: h-unit theorem
-[PASS] note contains required boundary: Combined direct-license theorem
-[PASS] note contains required boundary: Owner governance
-[PASS] note contains N1 no-go gate
-[PASS] note contains N2 no-go gate
-[PASS] note contains N3 no-go gate
-[PASS] note contains N4 no-go gate
-[PASS] note contains N5 no-go gate
-[PASS] note contains N6 no-go gate
-[PASS] note contains N7 no-go gate
-[PASS] note contains N8 no-go gate
-[PASS] note links Tier-A residual atom
-[PASS] note links minimal axioms
-[PASS] note names narrowing source as context
-[PASS] note does not use generated audit ledger as authority
-[PASS] angle frontier classifies Phi=S_sum as target
-[PASS] W2 context leaves physical carrier realization open
-[PASS] supplied context says frame does not supply weighting
-[PASS] defect rescale leaves c=1 open
-
-TOTAL: PASS=181 FAIL=0 CHECKS=181
+========================================================================
+TOTAL: PASS=40, FAIL=0

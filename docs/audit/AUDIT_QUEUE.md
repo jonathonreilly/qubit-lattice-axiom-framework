@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 2889
+**Total pending:** 2888
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes, owner-governed residual premises, and Tier-A admitted derivation targets):** 596
 
 By criticality:
-- `critical`: 665
+- `critical`: 664
 - `high`: 332
 - `medium`: 760
 - `leaf`: 1132
@@ -43,7 +43,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 26 | `higgs_mechanism_note` | bounded_theorem | unaudited | critical | 760 | 12.57 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_higgs_quartic_mechanism_algebra_repair.py` |
 | 27 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | non_terminal_conditional | critical | 750 | 12.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_neutrino_cascade_geometry.py` |
 | 28 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | non_terminal_conditional | critical | 737 | 16.53 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py` |
-| 29 | `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30` | bounded_theorem | audit_in_progress | critical | 729 | 12.01 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_physical_hermitian_hamiltonian_and_sme_bridge.py` |
+| 29 | `cpt_exact_note` | positive_theorem | unaudited | critical | 728 | 31.51 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_cpt_exact.py` |
 | 30 | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | bounded_theorem | audit_in_progress | critical | 710 | 13.47 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py` |
 | 31 | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | audit_in_progress | critical | 709 | 11.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_neutrino_odd_circulant_z2_slot_theorem.py` |
 | 32 | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | bounded_theorem | unaudited | critical | 705 | 17.46 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_three_generation_hw1_distinct_characters_exact.py` |

@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 82 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 353 |
+| **retained_bounded** | 354 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2811 |
-| audit_in_progress | 24 |
+| audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 28 |
-| `audited_clean` | 444 |
+| `audit_in_progress` | 27 |
+| `audited_clean` | 445 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 25 |
@@ -133,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.6 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
@@ -419,6 +418,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_object_top4_multistage_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `persistent_record_matched_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `persistent_record_overlap_kernel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `pl_topology_infrastructure_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -5147,6 +5147,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The mesoscopic persistent-record overlap kernel produces the reported bounded N=8,12,18 purity and detector-weighted overlap table, showing a live residual branch-connection lane but not asymptotic closure.  _(class `C`)_
 - **chain closes:** True — The registered default runner reproduces the source note's mean purities, mean overlaps, and power-law fits for N=8,12,18 with three seeds and gamma=0.25,1.0.
 - **rationale:** Clean within the note's bounded pilot scope. The note does not claim asymptotic solution or closure; it claims the persistent-record overlap-kernel lane is scientifically live on the N=8,12,18 probe while retaining nonzero branch overlap. The current runner reproduces the exact reported table and fit summary, including the N=18 rebound that prevents a stronger claim. Residual risk is the declared small-N bounded setup and the absence of broader seed or asymptotic stress testing.
+- **auditor confidence:** high
+
+### `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30`
+
+- **Note:** [`PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md`](../../docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic free-staggered theorem: for real anti-Hermitian D satisfying P D P = -D, H=iD is Hermitian, Theta_H=P K preserves H, and the full Theta_H-odd Hamiltonian proxy vanishes; the runner additionally verifies direction-resolved proxies at L=4 and L=6. No SME operator-basis completeness or physical SME-coefficient conclusion was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00050-physical_hermitian_hamiltoni`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Because D is real and P D P = -D, the antiunitary Theta_H = P K sends H = iD to P(-iD)P = iD, so its Theta_H-odd projection vanishes.  _(class `A`)_
+- **chain closes:** True — The antiunitary conjugation follows exactly from D being real, P D P=-D, and K(i)=-i; the odd projection then vanishes by substitution. The narrowed claim does not require the missing dictionary from this lattice proxy to every CPT-odd SME bilinear coefficient.
+- **rationale:** The runner constructs D, C, P, H, and the direction-resolved hopping matrices and evaluates the claimed identities rather than printing constants or importing a contested result. Its L=4 and L=6 checks agree exactly with the load-bearing antiunitary algebra. Clean status applies only to the explicitly narrowed Hamiltonian-proxy statement, not to the withdrawn inference that all CPT-odd SME bilinear coefficients vanish.
 - **auditor confidence:** high
 
 ### `pl_topology_infrastructure_textbook_import_note_2026-05-17`

@@ -48,8 +48,9 @@ future physical CAR/action theorem that derives a specific Gaussian measure.
 Take any model of Lattice, Qubit, Admissibility, and the record-locking clauses.
 Keep its lattice, one-site possibility algebra, admissibility rule, records,
 and record contents fixed. For a finite pairwise-disjoint record collection
-`C`, let `N(C)` be its cardinality, fix one real `lambda > 1`, and grant the
-same auxiliary carrier assignment in both extensions:
+`C`, let `N(C)` be its cardinality, set the exact mathematical witness
+`lambda=2`, and grant the same auxiliary carrier assignment in both
+extensions:
 
 ```text
 A(C) = lambda I_(N(C)),

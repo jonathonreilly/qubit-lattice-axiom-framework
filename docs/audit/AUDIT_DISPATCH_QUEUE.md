@@ -47,7 +47,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | # | state | claim_id | current |
 |---:|---|---|---|
 | 1 | resolved_or_superseded | `native_gauge_closure_note` | positive_theorem / audited_clean / retained |
-| 2 | resolved_or_superseded | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem / unaudited / unaudited |
+| 2 | resolved_or_superseded | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem / audited_failed / audited_failed |
 | 3 | resolved_or_superseded | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem / audited_clean / retained |
 | 4 | resolved_or_superseded | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem / unaudited / unaudited |
 | 5 | resolved_or_superseded | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | bounded_theorem / unaudited / unaudited |
@@ -63,7 +63,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 15 | resolved_or_superseded | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem / unaudited / unaudited |
 | 16 | resolved_or_superseded | `oh_schur_boundary_action_note` | positive_theorem / unaudited / unaudited |
 | 17 | resolved_or_superseded | `three_generation_structure_note` | bounded_theorem / unaudited / unaudited |
-| 18 | resolved_or_superseded | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem / unaudited / unaudited |
+| 18 | resolved_or_superseded | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem / audited_conditional / audited_conditional |
 | 19 | resolved_or_superseded | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem / audited_clean / retained |
 | 20 | resolved_or_superseded | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem / unaudited / unaudited |
 | 21 | resolved_or_superseded | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem / unaudited / unaudited |

@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2784 |
+| unaudited | 2783 |
 | audit_in_progress | 29 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
 | ~~audited_conditional~~ | 54 |
-| ~~audited_failed~~ | 6 |
+| ~~audited_failed~~ | 7 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 454 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 23 |
-| `audited_failed` | 28 |
+| `audited_failed` | 29 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3134 |
+| `unaudited` | 3133 |
 
 | claim_type | count |
 |---|---:|
@@ -703,6 +703,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `shapiro_five_family_portability_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `shapiro_scaling_direct_replay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | E | - |
+| `structured_mirror_bornsafe_scan_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -7197,6 +7198,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner genuinely constructs staggered operators and sampled SU(3) configurations, checks anti-Hermiticity, spectral pairing, determinant and effective-action reality, axial deformation, and the positive-weight θ-sum inequality. The decisive θ_eff calculation is nevertheless an algebraic consequence of the explicitly scoped θ-free and positive-real-mass hypotheses, which the note consistently labels as selected-surface premises rather than derived physics. Clean status therefore applies only to the bounded selected-surface theorem and does not ratify an unrestricted or dynamically selected solution of strong CP.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `structured_mirror_bornsafe_scan_note`
+
+- **Note:** [`STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md`](../../docs/STRUCTURED_MIRROR_BORNSAFE_SCAN_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Whether the registered 32-configuration sliced runner establishes that its tested structured-mirror configurations fail the corrected three-slit Born threshold.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00296-structured_mirror_bornsafe_s`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On the registered 32-config sliced runner, no structured-mirror configuration reaches the corrected Born-safety threshold of 1e-14.  _(class `C`)_
+- **chain closes:** False — The runner computes a seven-term inclusion-exclusion statistic without the required empty-slit probability. Because the graph connects each layer to the preceding two layers, paths can bypass the barrier, so the omitted background term can generate the reported nonzero values even under strictly linear propagation.
+- **rationale:** Issue: `sorkin_born` evaluates P(ABC)-P(AB)-P(AC)-P(BC)+P(A)+P(B)+P(C) but omits -P(empty), despite the structured-mirror graph permitting paths that skip the barrier layer. Why this blocks: the computed residual is therefore not the corrected third-order Born interference statistic claimed by the note, and may simply measure bypass-background probability. Repair target: compute and subtract the all-barrier-nodes-blocked probability, or eliminate barrier-bypassing edges, then rerun the complete registered slice while requiring valid results for all six seeds. Claim boundary until fixed: the runner establishes only that its current seven-term statistic exceeds 1e-14 on the valid sampled runs.
+- **auditor confidence:** high
 
 ### `structured_mirror_reconciliation_note`
 

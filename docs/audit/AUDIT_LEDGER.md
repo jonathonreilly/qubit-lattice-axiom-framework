@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 82 |
+| **retained** | 83 |
 | **retained_no_go** | 27 |
 | **retained_bounded** | 355 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2811 |
-| audit_in_progress | 22 |
+| audit_in_progress | 21 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 26 |
-| `audited_clean` | 446 |
+| `audit_in_progress` | 25 |
+| `audited_clean` | 447 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 25 |
@@ -124,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
@@ -243,6 +242,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_neutrino_weak_vector_theorem_note_2026-04-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -2384,6 +2384,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N1: the C^16 embedding, physical Dirac-Yukawa operator chain, and neutrino-sector normalization routes remain OPEN.
     - N3: the physical interpretation depends on three explicit unclosed bridge assumptions.
     - N5: the runner tests only the selected C^8 representation and does not test the broader physical resolutions named by the source.
+
+### `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15`
+
+- **Note:** [`DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md`](../../docs/DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** On the explicitly defined 3x3 Hermitian circulant family K = dI + c_even(S+S^2) + i c_odd(S-S^2), P_23 has exactly one odd coefficient c_odd, Im[(K_01)^2] = 2 c_even c_odd, and the displayed U_Z3 1+2 slice has c_odd = 0; no physical activation law or independent leptogenesis bridge was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00052-dm_neutrino_odd_circulant_z2`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Conjugation by P_23 exchanges S and S^2, so it fixes I and S+S^2 while negating i(S-S^2), making c_odd the unique residual-Z_2-odd coefficient.  _(class `A`)_
+- **chain closes:** True — The result follows by exact finite-dimensional matrix algebra from the explicitly supplied matrices. The runner computes every claimed conjugation, coefficient decomposition, kernel identity, and 1+2-slice Gram matrix without importing the result from another note.
+- **rationale:** The scoped theorem is an exact algebraic statement on a fully specified three-real-dimensional Hermitian circulant coefficient space. The runner constructs the matrices and verifies the parity decomposition, CP-kernel identity, and complex 1+2 bridge directly rather than printing or importing contested outputs. Clean status is restricted to those local identities and does not derive a nonzero c_odd activation law or identify the displayed kernel algebra with complete physical leptogenesis phenomenology.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `dm_neutrino_weak_vector_theorem_note_2026-04-15`
 

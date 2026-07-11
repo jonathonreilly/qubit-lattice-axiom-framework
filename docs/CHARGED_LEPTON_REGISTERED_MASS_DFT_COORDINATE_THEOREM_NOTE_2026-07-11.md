@@ -77,10 +77,11 @@ unordered triple. The sign and the choice of generation origin are not
 registered by unordered masses. When `c=0`, `r=0` and the phase is undefined;
 the reconstruction is independent of it.
 
-Thus a positive unordered mass triple determines `(a,r,delta_fold)` with the
-stated phase degeneracy. Substituting `phi=delta_fold` in the inverse cosine
-formula reconstructs the same unordered square-root triple, though generally
-in a different ordering.
+Thus a positive unordered mass triple with `c` nonzero determines
+`(a,r,delta_fold)` with the stated phase degeneracy. At `c=0` it determines
+`(a,0)` and has no phase coordinate. In the nonzero case, substituting
+`phi=delta_fold` in the inverse cosine formula reconstructs the same unordered
+square-root triple, though generally in a different ordering.
 
 ## Proof
 

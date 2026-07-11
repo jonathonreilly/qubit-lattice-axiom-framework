@@ -1,0 +1,61 @@
+loop_slug: record-faithful-dynamics-completion-20260711
+mode: campaign
+date_started: 2026-07-11
+target: best-honest-status
+runtime_budget: not_supplied
+current_goal: >-
+  Determine whether one record-faithful local process principle can jointly
+  supply the physical evolution object, bare time ordering, record-formation
+  weights, and an admissibility-to-carrier selector without importing the
+  staggered/Dirac answer or sector-specific Standard Model and gravity laws.
+branch: physics-loop/admissibility-dynamics-realization-bridge-20260711
+base_commit_at_start: 9d1636f05f
+cycle_count: 1
+block_count: 1
+active_route: record_instrument_normal_form_and_faithful_scalar_countermodel
+hard_residual: >-
+  Can the four-axiom record surface canonically determine a faithful local
+  record-forming instrument whose coherent no-record block is sufficiently
+  constrained to exclude the observationally disconnected SWAP--Laplacian
+  completion and select the Clifford-vector carrier?
+produced_claim_id: record_faithful_cubic_neighbor_response_classification_bounded_theorem_note_2026-07-11
+actual_current_surface_status: bounded_theorem_source_produced_review_pending
+conditional_surface_status: >-
+  Cubic equivariance narrows a faithful linear neighbor-to-Herm(2) carrier to
+  scalar-sum plus vector-difference intertwiners, but the faithfulness map from
+  availability/formation to physical carrier is not supplied.
+hypothetical_axiom_status: null
+proposal_allowed: false
+proposal_allowed_reason: >-
+  The campaign is classifying the missing process content before proposing any
+  axiom or primitive.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - .claude/science/physics-loops/record-faithful-dynamics-completion-20260711/
+  - docs/RECORD_FAITHFUL_CUBIC_NEIGHBOR_RESPONSE_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md
+  - scripts/record_faithful_cubic_neighbor_response_2026_07_11.py
+  - logs/runner-cache/record_faithful_cubic_neighbor_response_2026_07_11.txt
+open_imports:
+  - fundamental process object: Hamiltonian, strict tick, or record instrument
+  - faithful law-to-record influence principle
+  - local instrument composition/normalization rule
+  - availability-to-coherent-carrier bridge
+  - time-rate and continuum scaling control
+  - probability-form derivation or admission
+no_go_routes:
+  - symmetry and locality alone admit the SWAP--Laplacian completion
+  - strict local unitary ticks alone leave multiple drift protocols and no curved cone at the analyzed carrier density
+  - direct preservation of every rank-one permanent record freezes the same carrier and also forbids unitary record formation
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_disposition: independent_source_review_pass
+pr_status: not_ready
+next_exact_action: >-
+  Derive the absorbing-classical-record plus coherent-dilation block form for
+  a local CP instrument, formalize the record-observable quotient, and attempt
+  a covariant scalar/SWAP instrument whose record weights vary faithfully.
+stop_condition: >-
+  Stop the first science block only after either (a) an exact selector theorem
+  with every new premise isolated, or (b) a strengthened faithful countermodel
+  proving that an additional process primitive is unavoidable.

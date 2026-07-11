@@ -1,0 +1,27 @@
+PASS G01: proper cubic rotations=24
+PASS G02: all det=+1
+PASS G03: 24-element set is closed
+PASS I01: constraint rank=22
+PASS I02: intertwiner nullity=2
+PASS I03: scalar sum is equivariant
+PASS I04: directed vector difference is equivariant
+PASS I05: the displayed maps span the full nullspace
+PASS I06: first even anisotropy mode is killed
+PASS I07: second even anisotropy mode is killed
+PASS C01: Pauli response coefficients satisfy Cl(3) exactly
+PASS C02: symbolic vector response squares to its scalar norm
+PASS C03: symbolic vector eigenvalues are plus/minus the response norm
+PASS C04: nonzero exact vector has two rank-one spectral projectors
+PASS C05: sampled odd response agrees with the exact scalar-square identity
+PASS K01: odd Clifford symbol vanishes at all eight corners
+PASS K02: graph Laplacian has one null corner
+PASS K03: oriented links obey A_minus=A_plus^dagger
+PASS K04: oriented links reconstruct the Hermitian cosine-plus-sine symbol
+PASS K05: reconstructed nearest-neighbor symbol is Hermitian
+PASS K06: I-SWAP/Laplacian is the b=0 scalar-even normal form
+PASS F01: scalar response has no nontrivial rank-one spectral projector
+PASS F02: nonzero vector response has simple rank-one spectral projectors
+BOUNDARY: F01-F02 exclude b=0 only if spectral record-faithfulness is separately supplied.
+BOUNDARY: K03-K06 use a separately supplied oriented-link response-to-symbol realization.
+BOUNDARY: current Admissibility does not identify availability projectors with these response coefficients.
+TOTAL: PASS=23 FAIL=0

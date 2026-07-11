@@ -1,0 +1,14 @@
+# Opportunity Queue
+
+| Rank | Opportunity | Retained-positive probability | Missing imports | Runner availability | Landability | Next discriminator |
+|---:|---|---:|---:|---:|---:|---|
+| 1 | record-observable quotient of the July-10 countermodel | 0.80 bounded | none beyond explicit operational equivalence | high | high | prove all histories/readouts are independent of the SWAP coupling |
+| 2 | absorbing-record local-instrument normal form | 0.65 bounded | CP-instrument physical identification | medium | high | prove same-carrier unitary permanence freezes formation, then construct the minimal dilation split |
+| 3 | exhaustive cubic neighbor-to-qubit intertwiner classification | 0.70 bounded | linearity and carrier faithfulness | high | high | derive scalar-sum plus vector-difference basis exactly |
+| 4 | eliminate the scalar branch by faithful formation response | 0.25 exact selector | faithful spectral/formation bridge | medium | medium | build or rule out a scalar record-faithful countermodel |
+| 5 | derive Born form on composite record menus | 0.35 bounded | grade additivity and menu noncontextuality | medium | medium | close the `M_2` loophole on neighboring composites without assuming probabilities |
+| 6 | controlled QCA-to-Hamiltonian continuum limit | 0.20 exact | scale/rate, RG control, universality | low | low | establish one microscopic carrier before testing Lorentz/QFT limits |
+
+The queue prioritizes the law/probability/time seam because every SM/GR
+continuum claim currently consumes a supplied kinetic/action surface. Closing
+this seam has the largest downstream dependency fan-out.

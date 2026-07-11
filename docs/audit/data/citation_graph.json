@@ -40637,6 +40637,22 @@
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
     {
+      "from": "staggered_dirac_minimal_surface_kinetic_corner_nonforcing_no_go_note_2026-07-10",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "staggered_dirac_minimal_surface_kinetic_corner_nonforcing_no_go_note_2026-07-10",
+      "to": "kinetic_isotropy_primitive"
+    },
+    {
+      "from": "staggered_dirac_minimal_surface_kinetic_corner_nonforcing_no_go_note_2026-07-10",
+      "to": "realized_state_primitive"
+    },
+    {
+      "from": "staggered_dirac_minimal_surface_kinetic_corner_nonforcing_no_go_note_2026-07-10",
+      "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+    },
+    {
       "from": "staggered_dirac_physical_species_direct_theorem_note_2026-05-07",
       "to": "three_generation_observable_theorem_note"
     },
@@ -112152,7 +112168,7 @@
         "abj_epsilon_index_square_block_no_go_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "67f09e337a34e0a01f6ca18b7ec41f5ef42c0889e9d56c8a395e32898eacc919",
+      "note_hash": "f3d97ec89fd6ce9beea928b6e4cf27f67564f249f3c2879cd1e6fac041fecfa1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -117336,6 +117352,23 @@
       "path": "docs/STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md",
       "runner_path": "scripts/staggered_dirac_local_density_readout_bridge_2026_06_17.py",
       "title": "Staggered-Dirac Local Density Readout Bridge Narrow Theorem Note"
+    },
+    "staggered_dirac_minimal_surface_kinetic_corner_nonforcing_no_go_note_2026-07-10": {
+      "claim_id": "staggered_dirac_minimal_surface_kinetic_corner_nonforcing_no_go_note_2026-07-10",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "minimal_axioms",
+        "kinetic_isotropy_primitive",
+        "realized_state_primitive",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "735d188c762b3a5c139c7517a6155c7820c7f4501554ad63a37f2298ac965483",
+      "path": "docs/STAGGERED_DIRAC_MINIMAL_SURFACE_KINETIC_CORNER_NONFORCING_NO_GO_NOTE_2026-07-10.md",
+      "runner_path": "scripts/staggered_dirac_minimal_surface_kinetic_corner_nonforcing_2026_07_10.py",
+      "title": "Staggered-Dirac Minimal-Surface Kinetic/Corner Non-Forcing No-Go"
     },
     "staggered_dirac_physical_species_direct_theorem_note_2026-05-07": {
       "claim_id": "staggered_dirac_physical_species_direct_theorem_note_2026-05-07",
@@ -127815,7 +127848,7 @@
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "bb362874ba20ed94ba4908135aea83ffdca87891821f278a985ca3d10b3c25cf",
+      "note_hash": "f73244bcee2322c61eb3efe7308476633e56543ffb892af7bddff3602ad82cf3",
       "path": "docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md",
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "title": "y_t Lane: Zero-Import Authority"
@@ -129086,7 +129119,7 @@
       "bounded_theorem": 1631,
       "decoration": 3,
       "meta": 329,
-      "no_go": 333,
+      "no_go": 334,
       "none": 1207,
       "open_gate": 132,
       "positive_theorem": 277
@@ -129095,15 +129128,15 @@
       "bounded_theorem": 2033,
       "decoration": 3,
       "meta": 329,
-      "no_go": 436,
+      "no_go": 437,
       "none": 248,
       "open_gate": 206,
       "positive_theorem": 657
     },
-    "edge_count": 14570,
-    "leaf_count": 1319,
-    "node_count": 3912,
+    "edge_count": 14574,
+    "leaf_count": 1320,
+    "node_count": 3913,
     "root_count": 1109,
-    "runners_with_path": 3535
+    "runners_with_path": 3536
   }
 }

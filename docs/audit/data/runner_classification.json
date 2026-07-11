@@ -35172,6 +35172,18 @@
       "dominant_class": "C",
       "runner": "scripts/staggered_dirac_local_density_readout_bridge_2026_06_17.py"
     },
+    "staggered_dirac_minimal_surface_kinetic_corner_nonforcing_no_go_note_2026-07-10": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 18,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/staggered_dirac_minimal_surface_kinetic_corner_nonforcing_2026_07_10.py"
+    },
     "staggered_dirac_physical_species_direct_theorem_note_2026-05-07": {
       "assert_count": 1,
       "counts": {
@@ -42016,7 +42028,7 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 14,
         "D": 0
       },
@@ -42088,7 +42100,7 @@
       "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 14,
         "D": 0
       },
@@ -82750,7 +82762,7 @@
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 14,
         "D": 0
       },
@@ -91332,6 +91344,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/staggered_dirac_minimal_surface_kinetic_corner_nonforcing_2026_07_10.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_dirac_minimal_surface_kinetic_corner_nonforcing_no_go_note_2026-07-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 18,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/staggered_dirac_pkin_subtree_current_surface_restatement_check_2026_07_03.py": {
       "assert_count": 1,
       "claims": [
@@ -93344,12 +93371,12 @@
     "dominant_class_distribution": {
       "A": 511,
       "B": 661,
-      "C": 1313,
+      "C": 1314,
       "D": 457,
       "none": 459
     },
-    "runners_classified": 3401,
-    "runners_with_C": 1796,
-    "runners_with_D": 1094
+    "runners_classified": 3402,
+    "runners_with_C": 1797,
+    "runners_with_D": 1095
   }
 }

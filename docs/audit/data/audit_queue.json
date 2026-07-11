@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 673,
     "high": 335,
-    "leaf": 1130,
+    "leaf": 1131,
     "medium": 757
   },
   "cycle_break_target_count": 49,
@@ -1206,7 +1206,7 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
-      "transitive_descendants": 1691
+      "transitive_descendants": 1692
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1223,12 +1223,12 @@
       "direct_in_degree": 17,
       "effective_status": "audited_failed",
       "helper_runner_paths": [],
-      "load_bearing_score": 19.109,
+      "load_bearing_score": 19.11,
       "note_path": "docs/FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md",
       "queue_reason": "non_terminal_failed",
       "ready": true,
       "runner_path": "scripts/fermion_parity_z2_grading_check.py",
-      "transitive_descendants": 1561
+      "transitive_descendants": 1562
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1470,12 +1470,12 @@
       "direct_in_degree": 17,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 18.705,
+      "load_bearing_score": 18.706,
       "note_path": "docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py",
-      "transitive_descendants": 1179
+      "transitive_descendants": 1180
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4637,12 +4637,12 @@
       "direct_in_degree": 19,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 20.211,
+      "load_bearing_score": 20.212,
       "note_path": "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
-      "transitive_descendants": 1675
+      "transitive_descendants": 1676
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4961,15 +4961,15 @@
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "fermion_parity_z2_grading_theorem_note_2026-05-02"
       ],
-      "direct_in_degree": 16,
+      "direct_in_degree": 17,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 18.132,
+      "load_bearing_score": 18.633,
       "note_path": "docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py",
-      "transitive_descendants": 1121
+      "transitive_descendants": 1122
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -79928,6 +79928,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "staggered_dirac_minimal_surface_kinetic_corner_nonforcing_no_go_note_2026-07-10",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "kinetic_isotropy_primitive",
+        "realized_state_primitive",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/STAGGERED_DIRAC_MINIMAL_SURFACE_KINETIC_CORNER_NONFORCING_NO_GO_NOTE_2026-07-10.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/staggered_dirac_minimal_surface_kinetic_corner_nonforcing_2026_07_10.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "staggered_dirac_pkin_subtree_current_surface_restatement_note_2026-07-03",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -82448,5 +82475,5 @@
     }
   ],
   "ready_count": 598,
-  "total_pending": 2895
+  "total_pending": 2896
 }

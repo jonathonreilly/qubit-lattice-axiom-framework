@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 83 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 354 |
+| **retained_bounded** | 355 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 4 |
 | unaudited | 2826 |
-| audit_in_progress | 26 |
+| audit_in_progress | 25 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
@@ -43,8 +43,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 26 |
-| `audited_clean` | 446 |
+| `audit_in_progress` | 25 |
+| `audited_clean` | 447 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 28 |
@@ -133,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -373,6 +372,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lp_two_band_exact_completion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `massless_vector_null_quotient_exact_linear_algebra_theorem_note_2026-06-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4538,6 +4538,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The finite-dimensional calculation expands the Peierls phase as H(B)=H0+B H1+B^2 H2+O(B^3) and evaluates the grand-potential curvature with the full two-band sum, including interband H1 matrix elements.  _(class `C`)_
 - **chain closes:** True — A manual Taylor/Frechet check of Tr g(H(B)) gives the same normalization used in the runner: 2 Tr g'(H0)H2 plus the divided-difference H1 term with diagonal limit g''. The completed cache shows all sampled mass gates below 2e-2, and the provided source computes the matrix spectra and PT sums rather than reading expected chi values from another note.
 - **rationale:** The load-bearing step is a first-principles finite-matrix computation from the stated Harper cell: the runner constructs H(+B), H(0), H(-B), H1, and H2 and compares the finite-difference response with the full second-order divided-difference PT sum. Expected chi values are not hard-coded; the predecessor deviations are printed as retained bounded provenance and are not used as the proof of the new PT agreement. The finite-B and non-flux-quantized caveats are disclosed, so the conclusion does not overclaim a strict B->0, flux-quantized, continuum, or boundary-root result.
+- **auditor confidence:** high
+
+### `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional projective measurements with nonzero displayed outcome projectors and fixed canonical apparatus preparation/readout: K_r=P_r; outcome phases and permutations preserve the instrument up to phase or relabeling; label-mixing apparatus rows change the corresponding POVM element.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00350-lsp_projective_canonical_kp_`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** From K_r=Σ_s⟨r|V_A|s⟩P_s and P_sP_{s'}=δ_{ss'}P_s, one obtains K_r†K_r=Σ_s|⟨r|V_A|s⟩|²P_s, with the canonical case giving K_r=P_r.  _(class `A`)_
+- **chain closes:** True — The conclusions follow directly from projection orthogonality, completeness, and the stated apparatus contraction. The accepted finite-carrier premise supplies the setting, while no measurement-probability rule, fitted value, or open physical-selection bridge is used.
+- **rationale:** The load-bearing identities are genuine finite-dimensional algebraic consequences of the stated hypotheses. The runner constructs the projectors, isometry, Kraus contractions, phase/permutation twists, mixing examples, and zero-projector cases rather than printing or importing the conclusions; all 53 checks pass. The necessity statement is correctly limited to nonzero displayed sectors, and the note does not claim instrument uniqueness or derive physical measurement semantics.
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

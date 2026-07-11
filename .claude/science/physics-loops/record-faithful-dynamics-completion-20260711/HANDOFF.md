@@ -4,6 +4,11 @@ The campaign is initialized on
 `physics-loop/admissibility-dynamics-realization-bridge-20260711` from current
 `origin/main`.
 
+Block 01 review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
+is open and mergeable; the audit-lane workflow was running at the delivery
+checkpoint.
+
 ## Central thesis
 
 The next move is not another sector Hamiltonian or continuum fit. It is to make

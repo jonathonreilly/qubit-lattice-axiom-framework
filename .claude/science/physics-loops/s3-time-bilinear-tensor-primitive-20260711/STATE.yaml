@@ -1,0 +1,44 @@
+loop_slug: s3-time-bilinear-tensor-primitive-20260711
+mode: run
+date_started: 2026-07-11
+target: best-honest-status
+goal: >-
+  Replace the definition-only K_R row with a first-principles derivation or
+  an exact obstruction that can be independently reviewed at retained grade.
+branch: physics-loop/s3-time-bilinear-tensor-block01-20260711
+cycle: 1
+block: 1
+runtime_kind: goal-bounded synchronous run
+active_route: exact seven-star isotypic core plus homogeneous-normalization witness
+hard_residual: >-
+  Overall normalization inside the explicitly assumed carrier-ray family
+  O_lambda=lambda K_R; physical ray/source-action identification stays open.
+actual_current_surface_status: no-go
+target_claim_type: no_go
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+files_touched:
+  - docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+  - scripts/frontier_s3_time_bilinear_tensor_primitive.py
+  - logs/runner-cache/frontier_s3_time_bilinear_tensor_primitive.txt
+  - .claude/science/physics-loops/s3-time-bilinear-tensor-primitive-20260711/
+open_imports: []
+no_go_routes:
+  - homogeneous carrier properties do not select lambda=1 within O_lambda=lambda K_R
+review_disposition: pass
+pr_status: pending
+next_exact_action: >-
+  Commit the reviewed block, rebase onto current origin/main, validate the
+  audit pipeline, strip generated audit outputs, push, and open one draft PR.
+stop_condition: >-
+  Stop after one independently reviewed science-block PR is opened and
+  verified, or record a complete PR backlog if publication tooling fails.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+proposal_allowed: false
+proposal_allowed_reason: >-
+  Branch-local no-go author hint only; review and independent audit are still
+  required, and no proposed_retained/proposed_promoted wording is used.

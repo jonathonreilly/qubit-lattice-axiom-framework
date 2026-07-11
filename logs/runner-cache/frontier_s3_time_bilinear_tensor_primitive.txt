@@ -1,76 +1,30 @@
-===== runner cache v1 =====
-runner: scripts/frontier_s3_time_bilinear_tensor_primitive.py
-runner_sha256: 743c8e4f922044494cc10e0665da3de02f21a4be8d300d13f0e7651ff7cbbe84
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 15.04
-status: ok
------ stdout -----
-Route 2 bilinear tensor-carrier definition
+Seven-star bilinear carrier: exact support and homogeneous-normalization no-go
 ==============================================================================
-A1 background endpoints under the named coordinates:
-  delta_A1(e0) = 1.666666666667e-01
-  delta_A1(s/sqrt(6)) = 0.000000000000e+00
-r=0.00, amp=0.02, along    E_x: |delta shift|=5.551e-17
-r=0.00, amp=0.02, along    T1x: |delta shift|=0.000e+00
-r=0.00, amp=0.02, along E_perp: |delta shift|=0.000e+00
-r=0.00, amp=0.02, along    T1y: |delta shift|=0.000e+00
-r=0.00, amp=0.02, along    T1z: |delta shift|=0.000e+00
-r=0.00, amp=0.10, along    E_x: |delta shift|=5.551e-17
-r=0.00, amp=0.10, along    T1x: |delta shift|=0.000e+00
-r=0.00, amp=0.10, along E_perp: |delta shift|=0.000e+00
-r=0.00, amp=0.10, along    T1y: |delta shift|=0.000e+00
-r=0.00, amp=0.10, along    T1z: |delta shift|=0.000e+00
-r=0.50, amp=0.02, along    E_x: |delta shift|=0.000e+00
-r=0.50, amp=0.02, along    T1x: |delta shift|=0.000e+00
-r=0.50, amp=0.02, along E_perp: |delta shift|=0.000e+00
-r=0.50, amp=0.02, along    T1y: |delta shift|=0.000e+00
-r=0.50, amp=0.02, along    T1z: |delta shift|=0.000e+00
-r=0.50, amp=0.10, along    E_x: |delta shift|=1.388e-17
-r=0.50, amp=0.10, along    T1x: |delta shift|=0.000e+00
-r=0.50, amp=0.10, along E_perp: |delta shift|=1.388e-17
-r=0.50, amp=0.10, along    T1y: |delta shift|=1.388e-17
-r=0.50, amp=0.10, along    T1z: |delta shift|=0.000e+00
-r=1.50, amp=0.02, along    E_x: |delta shift|=5.551e-17
-r=1.50, amp=0.02, along    T1x: |delta shift|=1.388e-17
-r=1.50, amp=0.02, along E_perp: |delta shift|=0.000e+00
-r=1.50, amp=0.02, along    T1y: |delta shift|=1.388e-17
-r=1.50, amp=0.02, along    T1z: |delta shift|=0.000e+00
-r=1.50, amp=0.10, along    E_x: |delta shift|=1.388e-17
-r=1.50, amp=0.10, along    T1x: |delta shift|=2.776e-17
-r=1.50, amp=0.10, along E_perp: |delta shift|=0.000e+00
-r=1.50, amp=0.10, along    T1y: |delta shift|=0.000e+00
-r=1.50, amp=0.10, along    T1z: |delta shift|=1.388e-17
-r=0.00: Ex-column err=0.000e+00, T1x-column err=2.220e-16
-r=0.25: Ex-column err=1.110e-16, T1x-column err=2.220e-16
-r=0.50: Ex-column err=1.110e-16, T1x-column err=2.220e-16
-r=1.00: Ex-column err=1.110e-16, T1x-column err=2.220e-16
-r=1.50: Ex-column err=1.110e-16, T1x-column err=2.220e-16
-r=2.00: Ex-column err=5.551e-17, T1x-column err=2.220e-16
-
-Bounded projection coefficients from Theta_R^(0) endpoints:
-  gamma_E = -2.010571874025e-04 + (-1.057054376395e-03) delta_A1
-  gamma_T = +4.031967723697e-04 + (-4.032091965809e-04) delta_A1
-
-Bounded readout law:
-  Theta_R^(0) = P_R^(0) vec(K_R)
-  with diagonal endpoint-fixed coefficients above
-[EXACT] PASS: [class D, finite-grid] delta_A1 shows zero shift under bright/dark non-A1 perturbations on the tested grid (numerical shadow of the unproven upstream decoupling fact, NOT a derivation)
-    max non-A1-induced delta_A1 shift=5.551e-17
-[EXACT] PASS: [class A, polynomial-identity substitution] under the named admitted inputs, K_R(q):=[[u_E,u_T],[delta_A1 u_E, delta_A1 u_T]] matches its endpoint columns at the canonical A1 background
-    max exact endpoint-column error=2.220e-16
-[EXACT] PASS: [class A, polynomial-identity substitution] under the named admitted inputs, K_R vanishes on pure A1 backgrounds and is unchanged along dark aligned coordinates on the tested grid
-    pure-A1 norm=6.939e-18, dark-channel norm=6.939e-18
-[BOUNDED] PASS: [class B, bounded readout] the prior bounded tensor pair Theta_R^(0) is a bounded linear projection of the carrier on the canonical A1 family
-    the bounded readout is endpoint-fixed from the old eta_floor_tf surface and now acts on vec(K_R)
-
-Verdict (class-A scope):
-Under the named admitted inputs (delta_A1 from the retained-bounded tensor_support_center_excess_law_note; (u_E, u_T) as linear functionals in the adapted basis; the upstream decoupling fact as an admitted assumption), the symbol K_R := [[u_E, u_T], [delta_A1 u_E, delta_A1 u_T]] is a class-A polynomial-identity substitution whose endpoint columns match by polynomial arithmetic. The prior Theta_R^(0) pair is a bounded readout of this symbol; upstream decoupling, aligned-bright coordinate identification, and physical-primitive bridge remain outside this runner's class-A scope.
+[EXACT] PASS: the signed-permutation construction gives the proper cubic group
+    group_order=24; closure, orthogonality, and determinant +1 hold exactly
+[EXACT] PASS: the displayed A1^2 + E + T1 adapted basis is exactly orthonormal
+    B^T B = I_7 exactly
+[EXACT] PASS: the proper-cubic star module decomposes exactly as A1^2 + E + T1
+    group average has rank 2 and the three orthogonal projectors sum to I_7
+[EXACT] PASS: the oriented-axis stabilizer selects exactly the aligned bright pair E_x and T1x
+    |C4_x|=4 and P_C4x - P_A1 = |E_x><E_x| + |T1x><T1x|
+[EXACT] PASS: the remaining E + T1 coordinates form the exact dark complement
+    B_x direct_sum D_x = E direct_sum T1 with orthogonal projectors
+[EXACT] PASS: the six-parameter displayed family exhausts the proper-cubic commutant
+    commutant_nullity=6; displayed_parameter_rank=6
+[EXACT] PASS: a symbolic general proper-cubic commutant operator gives exact center-excess decoupling
+    ell G and total charge annihilate E_x, T1x, E_perp, T1y, and T1z identically
+[EXACT] PASS: the carrier is the exact rank-at-most-one affine-scalar/bright outer product
+    K_R=[1,delta]^T[u_E,u_T] and det(K_R)=0 as polynomial identities
+[EXACT] PASS: homogeneous carrier algebra does not select lambda=1 in O_lambda=lambda K_R
+    q*=e0+E_x has Q=1,u_E=1,u_T=0; K_R(q*) and 2K_R(q*) differ for every finite delta_q
+[EXACT] PASS: proper-cubic inequivalent bright channels retain independent normalization freedom
+    P_A1+c_E P_E+c_T P_T1 commutes with every rotation, while scaled K_R remains rank one
+[EXACT] PASS: the strict dependency guard covers every approved premise node and confirms its narrow scope
+    axiom/primitive ids=['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']; owner ids=['staggered_dirac_realization_gate_note_2026-05-03']; live Tier-A targets=0
 
 ==============================================================================
 SUMMARY
 ==============================================================================
-PASS=4 FAIL=0 TOTAL=4
-
------ stderr -----
-
+PASS=11 FAIL=0 TOTAL=11
+FINAL_TAG: S3_TIME_BILINEAR_CARRIER_HOMOGENEOUS_NORMALIZATION_NO_GO_EXACT

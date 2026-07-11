@@ -17,11 +17,11 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 248 |
+| critical | `unaudited` | 247 |
 | high | `unaudited` | 175 |
 | medium | `unaudited` | 124 |
 | critical | `audit_in_progress` | 6 |
-| critical | `audited_conditional` | 3 |
+| critical | `audited_conditional` | 4 |
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_conditional` | 1 |
 | high | `audited_failed` | 1 |
@@ -123,7 +123,7 @@ publication tables phrase it.
 | critical | `hierarchy_bosonic_bilinear_selector_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `hierarchy_dimensional_compression_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `hierarchy_effective_potential_endpoint_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
-| critical | `hierarchy_matsubara_decomposition_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
+| critical | `hierarchy_matsubara_decomposition_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | critical | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `higgs_mass_derived_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `higgs_mechanism_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

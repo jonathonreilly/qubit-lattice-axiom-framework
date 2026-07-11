@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2823 |
+| unaudited | 2822 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 43 |
+| ~~audited_conditional~~ | 44 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,21 +46,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 27 |
 | `audited_clean` | 436 |
-| `audited_conditional` | 43 |
+| `audited_conditional` | 44 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3173 |
+| `unaudited` | 3172 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2042 |
+| `bounded_theorem` | 2043 |
 | `decoration` | 26 |
 | `meta` | 357 |
 | `no_go` | 462 |
 | `open_gate` | 195 |
-| `positive_theorem` | 664 |
+| `positive_theorem` | 663 |
 
 | criticality | count |
 |---|---:|
@@ -595,6 +595,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `graded_constraint_interface_consistency_bounded_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3534,6 +3535,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner constructs the finite L=3 realized states, determinant Laurent coefficients, principal-branch phase increments, Fourier weights, root data, single-sideband refutation, and tail orders within the restricted packet. No upstream dependency or external comparator is needed for the bounded finite-state claim.
 - **rationale:** The bounded finite claim closes inside the restricted packet: the runner recomputes the determinant-root and Laurent-Arg machinery rather than merely printing the headline result. Frozen tables act as regression and staleness gates, while the load-bearing Laurent-law comparison is computed from the determinant construction. Residual risk is numerical scope only: this is double-precision finite-state verification, not a symbolic proof or a generalization beyond the four listed realized states.
 - **auditor confidence:** high
+
+### `hierarchy_matsubara_decomposition_note`
+
+- **Note:** [`HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md`](../../docs/HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact determinant magnitude, free-energy density difference, and condensate density formulas for the specified finite L_s=2 spatial-APBC staggered Dirac operator; no physical endpoint, order-parameter, hierarchy-normalization, or alpha_LM selection is audited as closed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00021-hierarchy_matsubara_decompos`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On the specified L_s=2 spatial-APBC staggered operator, spatial modes have sin^2(k_i)=1, yielding |det(D+m)| = prod_omega [m^2 + u_0^2 (3 + sin^2 omega)]^4.  _(class `A`)_
+- **chain closes:** False — The finite-operator Matsubara identities close algebraically and agree with direct matrix calculations. Clean certification nevertheless fails the mandatory N1-N8 gate because the source also frames four physical residuals without exhausting alternative selection or normalization routes.
+- **rationale:** Issue: the exact finite-operator identities are sound, but the mandatory discipline gate fails because endpoint/order-parameter selection, C_obs normalization, the spatial-APBC boundary, and alpha_LM remain open. Why this blocks: the numerical observation that fourth-root compression is closer to C_obs does not derive a physical dimension-4 readout or select L_t=2. Repair target: separate the exact bounded algebra into a source surface containing no unresolved hierarchy-selection claim, or supply independent bridge theorems for the physical selections. Claim boundary until fixed: exact temporal Matsubara algebra for the specified finite operator only.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1 contains OPEN and UNTESTED endpoint, observable, normalization, spatial-boundary, and alpha_LM routes.
+    - N5 identifies untested physical resolutions behind the maximal-gap and dimension-4 interpretation.
+    - The mandatory gate therefore cannot certify audited_clean despite closure of the exact finite-operator algebra.
 
 ### `hierarchy_spatial_bc_and_u0_scaling_note`
 

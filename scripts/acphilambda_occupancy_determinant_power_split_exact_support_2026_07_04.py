@@ -57,6 +57,7 @@ def gr_mul(p: dict[int, sp.Expr], q: dict[int, sp.Expr]) -> dict[int, sp.Expr]:
 
 
 def berezin_top_coefficient(k_mat: list[list[sp.Expr]]) -> sp.Expr:
+    """Coefficient for exp(-chibar K chi) in chi_1,chibar_1,... order."""
     n = len(k_mat)
     action: dict[int, sp.Expr] = {}
     for i in range(n):
@@ -66,7 +67,7 @@ def berezin_top_coefficient(k_mat: list[list[sp.Expr]]) -> sp.Expr:
             chibar = 2 * i + 1
             mask = (1 << chi) | (1 << chibar)
             sign = -1 if chibar > chi else 1
-            action[mask] = sp.simplify(action.get(mask, 0) + sign * k_mat[i][j])
+            action[mask] = sp.simplify(action.get(mask, 0) - sign * k_mat[i][j])
 
     exponential: dict[int, sp.Expr] = {0: sp.Integer(1)}
     power: dict[int, sp.Expr] = {0: sp.Integer(1)}
@@ -137,12 +138,24 @@ def main() -> int:
     )
 
     section("Part C: Berezin first power")
+    k0 = sp.Symbol("k0")
+    scalar_top = berezin_top_coefficient([[k0]])
+    check("generic 1x1 top coefficient is det_C(K)", scalar_top == k0, scalar_top)
+
     k00, k01, k10, k11 = sp.symbols("k00 k01 k10 k11")
     entries = [[k00, k01], [k10, k11]]
     top = berezin_top_coefficient(entries)
     expected = sp.Matrix(entries).det()
     check("generic 2x2 top coefficient is det_C(K)", sp.simplify(top - expected) == 0, top)
     check("Berezin result has first determinant power", sp.Poly(top, k00, k01, k10, k11).total_degree() == 2)
+
+    entries3 = [
+        [sp.Symbol(f"q{i}{j}") for j in range(3)]
+        for i in range(3)
+    ]
+    top3 = berezin_top_coefficient(entries3)
+    expected3 = sp.Matrix(entries3).det()
+    check("generic 3x3 top coefficient is det_C(K)", sp.simplify(top3 - expected3) == 0)
 
     section("Scope guards")
     note = NOTE.read_text(encoding="utf-8")

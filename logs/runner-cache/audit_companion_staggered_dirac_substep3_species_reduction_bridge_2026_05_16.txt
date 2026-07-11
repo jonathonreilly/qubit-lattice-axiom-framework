@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py
-runner_sha256: 46a705a8dab78b873861e997a54cd1bd1cf6849017bbd8c1d38ba01e06014a6c
+runner_sha256: 74be305caed298a8c634c2ffa10cfc1e6bdd817d3e01500099f788544b76138c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.55
+elapsed_sec: 0.41
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -24,7 +24,7 @@ Part 1: (R1) d = 4 corner cardinality = 16 (cited upstream)
 Part 2: (R2) arithmetic factorization 16 = 4 * 4 = 2^2 * 2^2
 ----------------------------------------------------------------------------------------
   [PASS (A)] (R2) 16 = 4 * 4 (integer arithmetic)
-  [PASS (A)] (R2) 4 = 2^(d/2) at d = 4 (taste-count factor)  (2^(d/2) = 4)
+  [PASS (A)] (R2) each arithmetic factor is 4 = 2^(d/2) at d = 4  (2^(d/2) = 4)
   [PASS (A)] (R2) factorization 2^d = 2^(d/2) * 2^(d/2) at d = 4
 
 ----------------------------------------------------------------------------------------
@@ -49,16 +49,20 @@ Part 5: (R4) Hamming-weight count on {0, π}^4
   [PASS (A)] (R4) Hamming-weight counts sum to 2^d = 16  (sum binom(4, k) = 16)
 
 ----------------------------------------------------------------------------------------
-Part 6: (R4) Taste-count factor decoupled from Cl(3) algebra
+Part 6: (R4) supplied-action Clifford module gives four tastes
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (R4) Cl(3) chirality-pair sum 2+2=4 matches N_spinor (not N_taste)  (chirality sum = 4; N_taste = N_spinor = 4)
-  [PASS (A)] (R4) taste-count factor is the lattice-block Hamming-weight count = 4
+  [PASS (A)] (R4) Cl(3) chirality-pair sum 2+2=4 matches the spin-module dimension  (chirality sum = 4)
+  [PASS (A)] (R4) canonical eta flip matrices satisfy the exact Cl_4 relations
+  [PASS (A)] (R4) Clifford-word span has exact dimension 16  (rank=16)
+  [PASS (A)] (R4) blocked-module character is four times the 4-spinor character  (character=(16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
+  [PASS (A)] (R4) 16-dimensional Cl_4(C)=M_4(C) module has multiplicity four
 
 ----------------------------------------------------------------------------------------
-Part 7: (R5) Regulator dependence disclosure
+Part 7: (R5) supplied-action scope pins
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (R5) naive count 16 is distinct from staggered/wilson/overlap/DW counts  (counts = {'naive': 16, 'wilson': 1, 'staggered': 4, 'domain_wall': 1, 'overlap': 1})
-  [PASS (A)] (R5) arithmetic 16 = 4 * 4 does NOT force any specific regulator
+  [PASS (C)] (R5) target cites the supplied-action blocking theorem
+  [PASS (C)] (R5) supplier disclaims framework physical-carrier identification
+  [PASS (C)] (R5) target records physical-carrier selection as a separate obligation
 
 ----------------------------------------------------------------------------------------
 Part 8: (R5) Counterfactual at d = 6 (factorization generalizes)
@@ -76,12 +80,12 @@ Summary
     (R3) Cl(3,0) ⊗_R C chirality-pair dim (2, 2), sum = 4
     (R3) match to N_spinor = 2^(d/2) = 4 at d = 4
     (R4) Hamming-weight distribution = binom(4, k) summing to 16
-    (R4) taste-count factor 4 is lattice-block fact, not Cl(3) algebra fact
-    (R5) regulator-dependence disclosed: naive 16 != staggered 4, etc.
+    (R4) supplied-action Cl_4 module is four copies of the spin irrep
+    (R5) supplied-action and physical-carrier scopes are separated
     (R5) factorization generalizes to even d (d = 6 gives 8 * 8)
 
 ========================================================================================
-TOTAL: PASS=22, FAIL=0
+TOTAL: PASS=26, FAIL=0
 ========================================================================================
 
 ----- stderr -----

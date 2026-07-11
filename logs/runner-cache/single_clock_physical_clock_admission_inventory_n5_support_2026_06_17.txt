@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py
+runner_sha256: 9266ae96c234db48ad0e759fa9896c4342ca948fbae5db048d2e2c294f9f5ed2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
 single-clock physical-clock admission inventory N5 support
 ========================================================================
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'ADMITTED_PHYSICAL_CLOCK_TRANSFERS=1'
@@ -6,14 +14,40 @@ PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'Does not add an axiom'
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains '**Claim boundary:** source-inventory support'
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'No second physical-clock transfer is currently admitted.'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains '## Admission Manifest (2026-07-10)'
+PASS: note states why the support is source-inventory, not algebraic exclusion
 PASS: single-clock source names B-AXIS.3
 PASS: B-AXIS.3 is phrased as an admission statement
 PASS: single-clock source names the sole supplied transfer/step pair
 PASS: single-clock source keeps B-AXIS declared
-PASS: minimal Lattice supplies no dynamics
-PASS: minimal Quantum supplies no dynamics
-PASS: Record supplies no time metric
+PASS: minimal 2026-06-29 memo names the four axioms
+PASS: minimal 2026-06-29: Admissibility is not a dynamics axiom
+PASS: minimal 2026-06-29: dynamics-exclusion sentence covers transfer operator and time metric
+PASS: minimal 2026-06-29: time metric listed among open gates outside axiom content
+PASS: minimal 2026-06-29: probability/dynamics/bridges stay downstream
 PASS: minimal axiom runner does not enlarge axioms
+PASS: registry lists minimal_axioms as a canonical premise node
+PASS: registry current path for minimal_axioms is the 2026-06-29 memo
+PASS: registry aliases the 2026-06-05 path to the same premise node
+PASS: note carries exactly one fenced JSON manifest block -- found=1
+PASS: manifest is explicitly dated 2026-07-10
+PASS: manifest packet is the parent theorem note plus this inventory note
+PASS: manifest axiom authority matches the registry premise node
+PASS: manifest enumerates 19 packet documents -- got=19
+PASS: manifest entry paths are unique
+PASS: closed enumeration: manifest entries equal the live packet link union -- missing=[] stale=[]
+PASS: per-entry linked_by matches live link provenance and every role is stated -- mismatches=[]
+PASS: per-entry h1 titles match the live document headers -- mismatches=[]
+PASS: exactly the two minimal-axiom paths are marked as aliases of minimal_axioms
+PASS: every manifest alias row resolves inside the registry premise node
+PASS: manifest proposes exactly one physical-clock candidate
+PASS: candidate T_hat^2 evaluates as admitted from source evidence -- all four criteria evidenced in packet sources
+PASS: computed admitted physical-clock count is one -- got=1
+PASS: the computed admitted transfer is T_hat^2 with denominator 2 a_tau
+PASS: counterfeit rejector: fabricated anchor is not admitted -- positivity_trivial_kernel: anchor not found in source
+PASS: counterfeit rejector: missing packet-consumption criterion is not admitted -- criteria evidence does not cover exactly the four admission criteria
+PASS: counterfeit rejector: evidence outside the enumerated surface is not admitted -- supplied_as_physical_transfer: evidence path outside the enumerated packet surface
+PASS: parent grammar: every consumed T_hat^2 transfer/step pair normalizes to (T_hat^2, 2 a_tau) -- pairs=['T_hat^2,2a_tau']
 PASS: RP2 supplies the two-step transfer
 PASS: RP2 supplies positivity
 PASS: RP2 excludes the single-step object as the physical positive transfer
@@ -23,21 +57,16 @@ PASS: Stone note is transfer-relative
 PASS: Stone uniqueness does not add a transfer
 PASS: post-record rates require supplied clock map
 PASS: post-record layer does not derive a clock
-PASS: inventory contains exactly one admitted physical-clock transfer
-PASS: the admitted transfer is the two-step blocked transfer with denominator 2 a_tau
-PASS: finite tensor-factor comparators are not physical-clock admissions
-PASS: admitted physical-clock count remains one after comparator scan
 PASS: mathematical comparator T_A x I is positive
 PASS: mathematical comparator I x T_B is positive
 PASS: mathematical comparator transfers commute -- resid=0.00e+00
 PASS: factor comparator tangent space is two-dimensional -- rank=2
-PASS: two positive factor transfers exist as mathematical comparators
-PASS: zero factor comparators are admitted physical clocks
-PASS: counterfactual second admission would visibly break the inventory
-PASS: note states why the support is source-inventory, not algebraic exclusion
 
-SUMMARY: PASS=35 FAIL=0
+SUMMARY: PASS=53 FAIL=0
 ADMITTED_PHYSICAL_CLOCK_TRANSFERS=1
 B_AXIS_DERIVED=FALSE
 MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE
 AUDIT_LEDGER_WRITTEN=FALSE
+
+----- stderr -----
+

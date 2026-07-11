@@ -44,7 +44,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 BRIDGE = ROOT / "docs" / "G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md"
-CONVENTION_META = ROOT / "docs" / "G_BARE_SAME_SLOT_BETA6_CONVENTION_META_NOTE_2026-07-11.md"
+CONVENTION_META = ROOT / "docs" / "G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md"
 PARENT = ROOT / "docs" / "G_BARE_DERIVATION_NOTE.md"
 RIGIDITY = ROOT / "docs" / "G_BARE_RIGIDITY_THEOREM_NOTE.md"
 WILSON = ROOT / "docs" / "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md"
@@ -466,7 +466,7 @@ def section_G() -> None:
     require_contains(
         "theorem",
         bridge_text,
-        "G_BARE_SAME_SLOT_BETA6_CONVENTION_META_NOTE_2026-07-11.md",
+        "G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md",
     )
     require_contains("theorem", bridge_flat, "This theorem locates the pin but does not choose it")
     require_contains("bridge", bridge_flat, "mismatched-slot")

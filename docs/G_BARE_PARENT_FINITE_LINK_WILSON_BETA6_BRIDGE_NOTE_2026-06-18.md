@@ -36,7 +36,7 @@ beta g_bare^2 = 2 N_c.
 
 The same-slot definition and its displayed `N_c = 3` bookkeeping are recorded
 separately in the meta convention note
-[`G_BARE_SAME_SLOT_BETA6_CONVENTION_META_NOTE_2026-07-11.md`](G_BARE_SAME_SLOT_BETA6_CONVENTION_META_NOTE_2026-07-11.md).
+`G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md`.
 That note is non-load-bearing context for this theorem. Nothing here chooses
 the same-slot convention or treats its displayed values as theorem outputs.
 
@@ -204,7 +204,7 @@ remains outside this row.
 1–3 and the mismatched-slot exhibit. Downstream notes must not cite this
 note as choosing the same-slot identification or as deriving the convention
 recorded in
-[`G_BARE_SAME_SLOT_BETA6_CONVENTION_META_NOTE_2026-07-11.md`](G_BARE_SAME_SLOT_BETA6_CONVENTION_META_NOTE_2026-07-11.md).
+`G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md`.
 That meta note is non-load-bearing convention context. A retained derivation
 of the same-slot identification from the operator/Hamiltonian surface remains
 the named open target. This dated line itself moves the note hash so the row

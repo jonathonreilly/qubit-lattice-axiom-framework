@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2787 |
-| audit_in_progress | 27 |
+| unaudited | 2786 |
+| audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
@@ -44,14 +44,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 31 |
+| `audit_in_progress` | 32 |
 | `audited_clean` | 453 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3137 |
+| `unaudited` | 3136 |
 
 | claim_type | count |
 |---|---:|
@@ -124,6 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |

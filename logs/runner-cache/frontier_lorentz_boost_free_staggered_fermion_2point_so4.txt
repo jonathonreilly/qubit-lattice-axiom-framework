@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_boost_free_staggered_fermion_2point_so4.py
-runner_sha256: cc4f729dc0d9a85b071630beeda27d7316f2ec5d9f2d5d5637d26a32e0d99d11
+runner_sha256: 7710d3f9767f90db16cbed90b43c2a0bab727b0572906b1e4048dd202ee1c224
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 18.56
+elapsed_sec: 19.13
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -14,7 +14,8 @@ THEOREM (conditional on (A-free)):
          lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),
          the SO(4)-covariant Euclidean Dirac/Kahler-Dirac propagator;
          taste-singlet scalar-spectrum leading correction = dim-6 ell=4
-         cubic harmonic, O(a^2) (full spin x taste leading corr is O(a)).
+         cubic harmonic, O(a^2) (local-basis spin-taste mixing is O(a);
+         the free spectrum remains exactly fourfold degenerate).
 
 
 === Part 0: canonical staggered phases -> reduced-BZ spin/taste operator ===
@@ -109,7 +110,7 @@ THEOREM (conditional on (A-free)):
   [PASS] Z^3 x Z_tau has hypercubic point symmetry, NOT SO(4)  (SO(4) is non-compact-completion of the cubic group; emergent only)
   [PASS] Continuum-limit D~(p) = m 1 + (i/a) sum gamma_mu sin(p_mu a) (KS basis)  (phases eta_0=1, eta_mu=(-1)^{sum_{nu<mu} n_nu}; 1_taste spectator is the a->0 form, finite-a taste enters as 4-fold spectral mult (Part 1a))
   [PASS] THEOREM: lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2+m^2)  (standard SO(4) Euclidean Dirac/Kahler-Dirac propagator)
-  [PASS] Scalar-spectrum leading lattice correction: dim-6, ell=4 cubic harmonic, O(a^2)  (sum_mu p_mu^4; iso 1/2, axis/diag ratio 4 (4D); no ell=2,6 (taste-singlet Delta(p)/D~ sector; full spin x taste leading corr is O(a)))
+  [PASS] Scalar-spectrum leading lattice correction: dim-6, ell=4 cubic harmonic, O(a^2)  (sum_mu p_mu^4; iso 1/2, axis/diag ratio 4 (4D); no ell=2,6 (taste-singlet Delta(p)/D~ sector; local-basis spin-taste mixing is O(a), free spectrum exactly fourfold degenerate))
   [CONTEXT] Displayed-polynomial P/CPT classification  (real algebraic check is Part 4.6; CPT_EXACT_NOTE is context, not support)
   [CONTEXT] Minkowski/Wightman extension excluded  (no Wick-rotation PASS: OS reconstruction is outside this claim surface)
   [PASS] MATTER-SECTOR ANALOGUE of free-scalar boost note Step 6 (SO(4))  (same mechanism: cubic dispersion -> isotropic continuum limit)
@@ -124,7 +125,8 @@ All checks passed. Conditional on (A-free), the explicitly specified
 FREE staggered-Dirac 2-point Schwinger function becomes SO(4)-covariant
 in the continuum limit, with the
 taste-singlet scalar spectrum's leading anisotropy a dim-6 ell=4
-cubic harmonic at O(a^2) (full spin x taste leading corr is O(a)).
+cubic harmonic at O(a^2) (local-basis spin-taste mixing is O(a);
+the free spectrum remains exactly fourfold degenerate).
 Matter-sector analogue of the free-scalar boost note.
 
 ----- stderr -----

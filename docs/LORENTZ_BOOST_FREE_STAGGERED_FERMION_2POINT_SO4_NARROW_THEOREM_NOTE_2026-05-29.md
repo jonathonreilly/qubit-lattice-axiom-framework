@@ -43,9 +43,10 @@ with Euclidean `γ_μ` Hermitian, `{γ_μ, γ_ν} = 2 δ_{μν}`. The clean
 `1_taste` spin⊗taste factorisation written here is the `a → 0` form;
 what is exact at finite `a` is the **scalar spectrum**
 `Δ(p) = m² + (1/a²) Σ_μ sin²(p_μ a)`, with taste entering not the
-eigenvalue but as a **4-fold spectral multiplicity** (the genuine
-finite-`a` taste-breaking is the `O(a)` non-spectator mixing of standard
-staggered fermions, vanishing as `a → 0`; see Construction). Its inverse —
+eigenvalue but as a **4-fold spectral multiplicity**. In a local hypercube
+spin⊗taste basis there is `O(a)` non-spectator spin-taste mixing, but the free
+spectrum remains exactly fourfold degenerate: this is not physical taste
+splitting. The local-basis mixing vanishes as `a → 0`; see Construction. Its inverse —
 the free 2-point Euclidean Schwinger function
 `G_E(τ, x⃗) = ⟨χ(τ,x) χ̄(0,0)⟩` in momentum space — is
 
@@ -75,8 +76,9 @@ continuum limit `a → 0` with physical separation held fixed,
 the standard SO(4)-covariant Euclidean Dirac/Kähler-Dirac propagator
 (in this `a → 0` limit the taste factor is a spectator `1_taste`;
 equivalently, at finite `a` taste does not enter the scalar spectrum
-`Δ(p)` and appears only as a 4-fold spectral multiplicity, with `O(a)`
-taste-breaking corrections that vanish as `a → 0`). In position space
+`Δ(p)` and appears only as a 4-fold spectral multiplicity; the local-basis
+`O(a)` spin-taste mixing vanishes as `a → 0` and never splits that free
+spectrum). In position space
 this is the SO(4)-rotation-invariant kernel
 built from the scalar Euclidean propagator `m K_1(m R)/(4π² R)` and its
 derivative; the corresponding Minkowski/Wightman statement is NOT part of
@@ -89,16 +91,17 @@ below is made for the **taste-singlet scalar spectrum `Δ(p)` / displayed
 taste-spectator `D~` sector** (the taste-spectral-multiplicity sector
 verified in Part 1a), NOT for the full free staggered spin⊗taste
 propagator. For the FULL free staggered spin⊗taste propagator the leading
-finite-`a` correction is the **`O(a)` non-spectator taste-mixing** of the
-hypercube spin⊗taste reconstruction (standard staggered taste-breaking;
-e.g. `γ_S ⊗ ξ_5` channels), as the Construction admits; that `O(a)`
-taste-mixing vanishes as `a → 0`, recovering the displayed `D~(p)`. The
+finite-`a` correction in a local hypercube basis is the **`O(a)`
+non-spectator spin-taste mixing** of the hypercube reconstruction (e.g.
+`γ_S ⊗ ξ_5` channels), as the Construction admits; that basis-dependent
+mixing vanishes as `a → 0`, recovering the displayed `D~(p)`. The
 two statements are consistent: the taste-singlet scalar spectrum `Δ(p)`
 is exactly the sector in which taste does not enter the eigenvalue (it
 appears only as a 4-fold spectral multiplicity), so its leading
 anisotropy is the `O(a²)` cubic harmonic, while the genuine `O(a)`
-taste-breaking lives in the non-spectator taste channels that `Δ(p)`
-does not resolve.
+spin-taste mixing lives in channels that `Δ(p)` does not resolve. The free
+fourfold degeneracy remains exact; interacting taste violation is the
+separate `O(a²)` effect named below.
 
 Within the taste-singlet scalar spectrum `Δ(p)`, the leading lattice
 correction is a **dimension-6, operator-level parity-even and CPT-even,
@@ -170,8 +173,9 @@ only as the spectator factor `1_taste` — is the **continuum-limit**
 (`a → 0`) form of the operator, NOT an exact finite-`a` reduced-BZ
 lattice-operator identity. At finite `a` the honest hypercube spin⊗taste
 reconstruction (Kawamoto-Smit / Kluberg-Stern) carries `O(a)`
-non-spectator taste-mixing channels (e.g. `γ_S ⊗ ξ_5`) at generic
-momenta — the standard staggered taste-breaking — and a dimension count
+non-spectator spin-taste mixing channels (e.g. `γ_S ⊗ ξ_5`) at generic
+momenta. This is a local-basis mixing, not physical splitting of the exactly
+fourfold-degenerate free spectrum. A dimension count
 confirms the factorisation cannot be a single-spacing identity: the 16
 spin⊗taste components carrying one Grassmann dof per site live on the
 block lattice `(L/2)^4` at spacing `2a` (`16 · (L/2)^4 = L^4`), so a
@@ -181,8 +185,9 @@ spectrum** `Δ(p) = m² + (1/a²) Σ_μ sin²(p_μ a)`: taste does not enter the
 eigenvalue but appears as a **4-fold spectral multiplicity** (every
 eigenvalue multiplicity is divisible by 4). The taste-spectator `1_taste`
 statement is therefore a continuum-limit / 4-fold-spectral-multiplicity
-statement; the genuine finite-`a` taste-breaking is `O(a)` and vanishes
-as `a → 0`, recovering the displayed spin⊗taste `D~(p)`.
+statement; the local-basis finite-`a` spin-taste mixing is `O(a)` and vanishes
+as `a → 0`, recovering the displayed spin⊗taste `D~(p)`. Interacting taste
+violation is a separate `O(a²)` effect.
 
 #### Canonical phase-to-spin/taste derivation inside this packet
 
@@ -449,13 +454,14 @@ statement, which is the load-bearing content.
 - **Taste-symmetry restoration at finite `a`.** The taste-spectator
   `1_taste` factorisation holds in the continuum limit (`a → 0`); at
   finite `a` the free theory already carries `O(a)` non-spectator
-  taste-breaking in the spin⊗taste reconstruction (standard staggered
-  taste-breaking), vanishing as `a → 0`. What is exact at finite `a` is
+  non-spectator spin-taste mixing in a local hypercube reconstruction,
+  vanishing as `a → 0`. This is not physical taste splitting: what is exact
+  at finite `a` is
   the scalar spectrum `Δ(p)` (taste enters only as a 4-fold multiplicity,
   not the eigenvalue). The additional interacting-theory taste-breaking
   (`O(a²)` taste-violating four-fermion operators) is a separate effect
   and is out of scope; the magnitude and continuum extrapolation of free
-  finite-`a` taste-breaking are likewise out of scope here.
+  finite-`a` local-basis mixing are likewise out of scope here.
 - **Physical-unit conversion.** Any conversion of the O(a²)
   scalar-spectrum anisotropy to physical Lorentz-violation magnitude
   requires the Planck-pin / unit-map premise `a ~ 1/M_Pl`, which is NOT
@@ -487,8 +493,9 @@ theorems for that analyzed action. Whether (A-free) is the framework's
 physical carrier is not established here. The O(a²)
 leading-correction statement is confined to that taste-singlet scalar
 sector; for the FULL free staggered spin⊗taste propagator the leading
-finite-`a` correction is the `O(a)` non-spectator taste-mixing admitted
-in the Construction (vanishing as `a → 0`), so no O(a²) leading-correction
+finite-`a` correction in a local hypercube basis is the `O(a)` non-spectator
+spin-taste mixing admitted in the Construction (vanishing as `a → 0` while
+the free spectrum remains exactly fourfold degenerate), so no O(a²) leading-correction
 claim is made for the full spin⊗taste propagator. The scalar-sector
 statements are exact algebraic / continuum-limit facts, verified by the
 registered runner at machine precision (exact SO(4) bispinor covariance
@@ -515,9 +522,10 @@ is ledger-derived):
   load-bearing algebraic spin/taste structure whose continuum limit is
   the spin⊗taste momentum-space operator `D~(p) = m 1 + (i/a) Σ γ_μ ⊗
   1_taste sin(p_μ a)` used here (the clean `1_taste` factorisation is the
-  `a → 0` form; at finite `a` the reconstruction carries the standard
-  `O(a)` staggered taste-breaking, and what is exact is the scalar
-  spectrum `Δ(p)` with its 4-fold taste multiplicity).
+  `a → 0` form; at finite `a` the local reconstruction carries `O(a)`
+  non-spectator spin-taste mixing without splitting the exactly fourfold-
+  degenerate free spectrum, and what is exact is the scalar spectrum `Δ(p)`
+  with its 4-fold taste multiplicity).
 Context notes (plain-text / backticked per the citation-graph
 convention; not load-bearing one-hop dependencies of this row, cited for
 provenance of the conventions and as the sibling scalar result):

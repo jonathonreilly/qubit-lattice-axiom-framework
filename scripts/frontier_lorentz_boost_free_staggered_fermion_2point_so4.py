@@ -9,8 +9,9 @@ STATUS: bounded theorem, conditional on premise (A-free), on the continuum
         of the leading dim-6, ell=4 cubic-harmonic anisotropy at O(a^2) OF THE
         TASTE-SINGLET SCALAR SPECTRUM Delta(p) / displayed taste-spectator D~
         sector. (For the full free staggered spin x taste propagator the
-        leading finite-a correction is the O(a) non-spectator taste-mixing
-        admitted below, vanishing as a->0; no O(a^2) leading-correction claim
+        leading finite-a correction in a local hypercube basis is O(a)
+        non-spectator spin-taste mixing, vanishing as a->0 while the free
+        spectrum stays exactly fourfold degenerate; no O(a^2) leading-correction claim
         is made for the full spin x taste propagator.)
         Status authority: independent audit lane only.
 
@@ -44,15 +45,17 @@ THEOREM (free staggered-Dirac 2-point SO(4) covariance, conditional on
   The clean 1_taste spin(x)taste factorisation is the a -> 0 form, NOT an
   exact finite-a reduced-BZ lattice-operator identity: at finite a the honest
   hypercube spin(x)taste reconstruction (Kawamoto-Smit / Kluberg-Stern) carries
-  O(a) non-spectator taste-mixing channels (e.g. gamma_S (x) xi_5), the standard
-  staggered taste-breaking, and a dimension count forbids the factorisation as
+  O(a) non-spectator spin-taste mixing channels (e.g. gamma_S (x) xi_5).
+  This is local-basis mixing, not physical splitting of the exactly
+  fourfold-degenerate free spectrum. A dimension count forbids the factorisation as
   a single-spacing identity (16 spin(x)taste components carrying one dof/site
   live on the block lattice (L/2)^4 at spacing 2a: 16*(L/2)^4 = L^4). What IS
   exact at finite a is the SCALAR SPECTRUM Delta(p) = m^2 + (1/a^2) sum_mu
   sin^2(p_mu a): taste does not enter the eigenvalue but appears as a 4-FOLD
   SPECTRAL MULTIPLICITY (every eigenvalue multiplicity divisible by 4). The
   taste-spectator statement is therefore a continuum-limit / 4-fold-spectral-
-  multiplicity statement; finite-a taste-breaking is O(a) and vanishes as a->0.
+  multiplicity statement; local-basis spin-taste mixing is O(a) and vanishes
+  as a->0. Interacting taste violation is a separate O(a^2) effect.
   (Part 1a verifies the exact spectrum + 4-fold multiplicity on the genuine
   position-space staggered operator.)
   Its inverse (the 2-point Schwinger function in momentum space) is
@@ -72,7 +75,8 @@ THEOREM (free staggered-Dirac 2-point SO(4) covariance, conditional on
   the STANDARD SO(4)-COVARIANT Euclidean Dirac/Kahler-Dirac propagator
   (in this a -> 0 limit taste is a spectator 1_taste; at finite a taste does
   not enter the scalar spectrum Delta(p) and appears only as a 4-fold spectral
-  multiplicity, with O(a) taste-breaking that vanishes as a -> 0). In position
+  multiplicity, with O(a) local-basis spin-taste mixing that vanishes as
+  a -> 0 without splitting the free spectrum). In position
   space this is the SO(4)-rotation-invariant kernel built from the scalar
   Euclidean propagator G_E^scal(R) = m K_1(m R)/(4 pi^2 R) and its
   derivative. A corresponding Minkowski/Wightman statement is outside this
@@ -83,7 +87,7 @@ THEOREM (free staggered-Dirac 2-point SO(4) covariance, conditional on
   displayed taste-spectator D~ sector: O(a^2), dimension-6, parity-even,
   CPT-even, ell=4 CUBIC HARMONIC. (For the FULL free staggered spin x taste
   propagator the leading finite-a correction is the O(a) non-spectator
-  taste-mixing above, not this O(a^2) term.) It enters through
+  spin-taste mixing above, not this O(a^2) term.) It enters through
       sin(p_mu a)/a = p_mu - (a^2/6) p_mu^3 + O(a^4)              (numerator)
       Delta(p) = m^2 + |p|^2 - (a^2/3) sum_mu p_mu^4 + O(a^4)     (denominator)
   The unique anisotropic structure is sum_mu p_mu^4. As a 4D Euclidean
@@ -1071,7 +1075,8 @@ def test_part7_combined():
 
     check("Scalar-spectrum leading lattice correction: dim-6, ell=4 cubic harmonic, O(a^2)",
           True, "sum_mu p_mu^4; iso 1/2, axis/diag ratio 4 (4D); no ell=2,6 "
-          "(taste-singlet Delta(p)/D~ sector; full spin x taste leading corr is O(a))")
+          "(taste-singlet Delta(p)/D~ sector; local-basis spin-taste mixing is O(a), "
+          "free spectrum exactly fourfold degenerate)")
 
     context_log("Displayed-polynomial P/CPT classification",
                 "real algebraic check is Part 4.6; CPT_EXACT_NOTE is context, not support")
@@ -1123,7 +1128,8 @@ def main():
     print("         lim_{a->0} G~_lat(p) = (m - i gamma.p)/(p^2 + m^2),")
     print("         the SO(4)-covariant Euclidean Dirac/Kahler-Dirac propagator;")
     print("         taste-singlet scalar-spectrum leading correction = dim-6 ell=4")
-    print("         cubic harmonic, O(a^2) (full spin x taste leading corr is O(a)).")
+    print("         cubic harmonic, O(a^2) (local-basis spin-taste mixing is O(a);")
+    print("         the free spectrum remains exactly fourfold degenerate).")
     print()
 
     test_part0_canonical_staggered_to_spin_taste()
@@ -1149,7 +1155,8 @@ def main():
         print("FREE staggered-Dirac 2-point Schwinger function becomes SO(4)-covariant")
         print("in the continuum limit, with the")
         print("taste-singlet scalar spectrum's leading anisotropy a dim-6 ell=4")
-        print("cubic harmonic at O(a^2) (full spin x taste leading corr is O(a)).")
+        print("cubic harmonic at O(a^2) (local-basis spin-taste mixing is O(a);")
+        print("the free spectrum remains exactly fourfold degenerate).")
         print("Matter-sector analogue of the free-scalar boost note.")
         sys.exit(0)
 

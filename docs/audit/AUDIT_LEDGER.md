@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 83 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 359 |
+| **retained_bounded** | 360 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2796 |
-| audit_in_progress | 22 |
+| audit_in_progress | 21 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 16 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 26 |
-| `audited_clean` | 451 |
+| `audit_in_progress` | 25 |
+| `audited_clean` | 452 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 27 |
@@ -124,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -241,6 +240,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -2411,6 +2411,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — For y>0 the series identities are geometric, the tail inequalities follow from e^y >= 1+y, and the J1/J2 Meijer-G representations check against independent quadrature of the stated integrals. The conditional alpha/eta/omega sample definitions are not needed for the pure thermal-kernel certificate.
 - **rationale:** The audited core is algebraic over the cited retained-bounded thermal-normalization inputs. The runner's seven PASS checks are class-A checks and several are hard-coded assertions, so stdout alone would not be enough, but independent formula checks verify the signs, factors, normalizations, Meijer-G forms, and displayed interval numerics. The six live-slice SUPPORT checks rely on conditional helper-defined sample constants and observational conversion helpers, but the source note explicitly excludes those from the load-bearing theorem scope.
 - **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the supplied fixed-chart matrix Y(delta) with real x_i and y_i, the displayed product H_e=Y Y^dagger, the relation H_e(-delta)=conjugate(H_e(delta)), and evenness of scalar readouts invariant under entrywise conjugation were audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00075-dm_leptogenesis_pmns_analyti`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Because the only phase-dependent entries are H13=x1 y3 exp(-i delta) and H31=x1 y3 exp(i delta), replacing delta by -delta gives entrywise complex conjugation of H_e(delta).  _(class `A`)_
+- **chain closes:** True — Direct matrix multiplication establishes every displayed entry, and sign reversal of delta conjugates the only phase-dependent pair. The conclusion is restricted to conjugation-invariant scalar readouts on the supplied chart.
+- **rationale:** The runner constructs Y(delta) symbolically, computes Y Y^dagger, and checks the formula, Hermiticity, conjugation parity, representative invariant readouts, numerical samples, and phase-sensitive negative controls. No selector, normalization, action, KKT classification, physical PMNS-column identification, or external numerical input is load-bearing after the source repair. The result is therefore clean at the explicitly bounded formal matrix-algebra scope, not as a leptogenesis or PMNS-selector theorem.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
 

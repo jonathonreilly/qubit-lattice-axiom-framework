@@ -21,6 +21,6 @@ no_go_routes:
   - asymptotic or mirror-family promotion from the four-point fit
 trace_gate: direct closure of the review finding that N=120 default zeros were misclassified as gravity
 review_disposition: pass
-pr_status: pending
-next_exact_action: commit the reviewed block, rebase onto current origin/main, push, and open the review PR
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5189"
+next_exact_action: land PR 5189 after review, then send mirror_chokepoint_boundary_fit_note to independent re-audit
 stop_condition: passing certificate, fresh cache, pass review, and review PR or recovery backlog

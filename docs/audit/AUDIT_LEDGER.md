@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 83 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 360 |
+| **retained_bounded** | 361 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
 | unaudited | 2788 |
-| audit_in_progress | 27 |
+| audit_in_progress | 26 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
@@ -44,8 +44,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 31 |
-| `audited_clean` | 452 |
+| `audit_in_progress` | 30 |
+| `audited_clean` | 453 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 28 |
@@ -137,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-current | B | - |
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.6 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
@@ -410,6 +409,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `periodic_2d_wraparound_fix_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `persistent_inertial_object_probe_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -5115,6 +5115,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The primary runner constructs the fixed lattice, packet, field, propagation, detector profiles, top-k reidentification, and metrics directly from included code, then checks the displayed table against computed values. No cited authority or external comparator is needed for the narrowed replay claim.
 - **rationale:** The narrowed note does not claim persistent mass, family genericity, or an acceptance theorem; it claims only deterministic reproduction of a six-row numerical table on a fixed harness. The runner source performs the metric computation before comparing against pinned expected display values, and the helper source exposes the lattice generator and constants used in that path. Given the restricted scope, the chain closes as a bounded computational replay.
 - **auditor confidence:** high
+
+### `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02`
+
+- **Note:** [`PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md`](../../docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded formal sign theorem only: under 4x4 Dirac parity conjugation by gamma^0 and the abstract derivative signs partial_0 -> +partial_0 and partial_i -> -partial_i, the four named structures have parity weight (-1)^(total spatial-index count), with the corresponding formal projection vanishings; no lattice-action or staggered-representative exclusion was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00090-parity_operator_basis_dimens`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Combining Dirac parity conjugation by gamma^0 with the stipulated derivative sign character gives formal parity weight (-1)^N for every enumerated operator, where N is the total spatial-index count.  _(class `A`)_
+- **chain closes:** True — The supplied runner explicitly constructs the Clifford matrices, applies parity conjugation and derivative signs, exhaustively checks all 144 index assignments, and verifies both projection identities. The result needs no unstated lattice-action bridge because concrete staggered derivative representatives are explicitly outside the audited scope.
+- **rationale:** The load-bearing result is a genuine finite algebraic identity, not a printed constant, tuned match, definition, or cross-note import. The runner independently calculates gamma^0 conjugation for the Clifford factors, composes it with the stipulated derivative character, enumerates 144 operators, and obtains PASS=164 FAIL=0. The source cleanly excludes the previously problematic lattice-action, staggered-derivative, CPT, and basis-completeness claims.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09`
 

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 650,
+    "critical": 649,
     "high": 333,
     "leaf": 1134,
     "medium": 761
@@ -2332,28 +2332,6 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py",
       "transitive_descendants": 567
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
-      "claim_scope": "Bounded formal sign theorem: under 4x4 Dirac parity conjugation by gamma^0 and the stipulated abstract derivative signs, the four named structures have parity weight (-1)^(total spatial-index count), with the corresponding symmetric/antisymmetric projection vanishings; no lattice-action exclusion is audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.647,
-      "note_path": "docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_parity_dim5_formal_sign_repair.py",
-      "transitive_descendants": 566
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -82021,6 +81999,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 595,
-  "total_pending": 2878
+  "ready_count": 594,
+  "total_pending": 2877
 }

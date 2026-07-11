@@ -1,228 +1,183 @@
-# AC_phi_lambda R-eta Direct-License h-Class/h-Unit Non-Supply No-Go
+# Record Additivity Does Not Fix the R-eta Unit Calibration
 
-**Date:** 2026-07-04
+**Date:** 2026-07-04; countermodel repair 2026-07-11
 **Type:** no_go
 **Claim type:** no_go
-**Scope boundary:** bounded route no-go for the direct R-eta readout-license
-shortcut. The updated axioms say records form and that scalar readout is
-record-content additive, and the current support stack supplies fixed-locus
-arithmetic plus a Record-registrable finite context. Those ingredients do not
-derive the remaining `A_R-eta` license: the h-class statement that the physical
-charged-lepton angle is the fixed-locus density class, and the h-unit statement
-that this density is identity-read as the bare holonomy angle. This note does
-not derive, refute, re-grade, retire, or remove R-eta or AC_phi_lambda, and it
-does not edit any Tier-A registry, axiom, primitive, audit verdict, or
-publication-status surface.
-**Audit boundary:** independent audit lane only.
+**Status authority:** independent audit lane. This source proposal does not
+set or predict an audit verdict.
 **Primary runner:**
 [`scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py`](../scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py)
+**Runner cache:**
+[`logs/runner-cache/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.txt`](../logs/runner-cache/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.txt)
 
-## Target
+## Narrow no-go claim
 
-The live residual after the current R-eta surface is:
-
-```text
-A_R-eta:
-  h-class: the registered charged-lepton angle is a fixed-locus density
-           of the realized C3 cycle;
-  h-unit:  that density is identity-read as the bare cycle holonomy angle.
-```
-
-The direct-license shortcut tries to close this residual by saying:
+Grant the R-eta h-class hypothesis: a three-record charged-lepton cycle is to
+be read through a fixed local scalar `h`. Even with that grant, the
+[four axioms](MINIMAL_AXIOMS_2026-06-29.md) do not entail the identity
+calibration
 
 ```text
-Record forms + record-content additive readout
-+ supplied finite Record-registrable context
-+ fixed-locus arithmetic L = 2/9, S_sum = 2/3
-therefore the physical charged-lepton readout is Phi = S_sum = 2/3.
+Phi = 3h.
 ```
 
-This implication is invalid on the current surface. Record content and finite
-context make the readout domain available, but they do not choose the
-fixed-locus density as the physical observable, and they do not choose the
-identity conversion from dimensionless density to bare holonomy angle.
-
-## Retained Inputs And Context Handles
-
-- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies
-  Record formation, single-record locking, permanence, record-content readout,
-  and finite scalar additivity. It keeps context selection, measurement basis,
-  formation rules, source/action, physical-observable identification, and
-  readout bridges outside axiom content.
-- [`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`](ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md)
-  and [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json)
-  still name `delta_readout_identification_R_eta` as a live AC_phi_lambda atom.
-- Context handles, not load-bearing retained inputs:
-  `ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md`
-  is the lane source for the `A_R-eta` h-class/h-unit language;
-  `SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md`
-  and `ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md`
-  locate the context/frame versus scalar weighting split. This note recomputes
-  the finite independence witnesses below rather than importing those rows as
-  retained-grade proof.
-- [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
-  supplies `L = L3(1,2) = 2/9` and `S_sum = 3L = 2/3` as fixed-locus
-  arithmetic, while excluding the physical readout bridge.
-- Additional context handles, not load-bearing inputs:
-  `ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md`,
-  `ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md`,
-  `ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md`, and
-  `RECORD_CONTENT_READOUT_LICENSE_SPLIT_REGISTRATION_UNREACHABILITY_THEOREM_NOTE_2026-07-02.md`
-  name adjacent route vocabulary. The runner verifies the scalar-family and
-  additive-map witnesses directly.
-
-## Theorem
-
-On the current direct-license surface, the following implication is invalid:
+They admit a real one-parameter family of readouts
 
 ```text
-minimal Record axiom + supplied finite Record-registrable context
-+ fixed-locus arithmetic and holonomy normal form
-therefore the direct R-eta license is supplied.
+I_beta(R) = beta h N(R),
 ```
 
-There are two independent missing steps.
+where `N(R)` is the number of records in a finite pairwise-disjoint record
+collection. Every real `beta` satisfies empty-zero, record-content
+determination, and finite additivity. The target is `beta=1`; `beta=2` is an
+explicit countermodel with the same axiom structure and the same granted `h`.
 
-First, h-class is not supplied. Record additivity says that scalar readout is
-additive on record content. It does not say which additive scalar functional is
-the physical charged-lepton cycle holonomy. On the same finite record frame,
-the zero map, a count map, a fixed-locus single-density map, and the unaveraged
-fixed-locus sum are all record-content additive. They give different scalars.
-Only one of them is the R-eta target, and choosing it is exactly h-class
-content.
+This is a no-go for the direct inference from Record additivity to the R-eta
+h-unit. It is not a claim against a future same-observable holonomy theorem,
+an owner-approved calibration convention, or a stronger physical readout law.
 
-Second, h-unit is not supplied. Even after the fixed-locus class is selected,
-the identity conversion from dimensionless density to the bare holonomy angle
-is a separate scalar-normalization choice. The family
+## Countermodel family
+
+Keep the Lattice, Qubit, and Admissibility structures fixed. Let a state carry
+finite-support records, each locking one admissible local possibility as the
+Record axiom requires. For a finite record collection `R`, define `N(R)` as
+its cardinality. Because cardinality depends on record content and not on a
+site label, it is invariant under translations, proper cubic rotations, and
+permutations of the three cycle positions.
+
+For any real `beta`, set
 
 ```text
-Phi_beta = beta S_sum
+I_beta(empty) = 0,
+I_beta(R disjoint-union S) = I_beta(R)+I_beta(S),
+I_beta(R) = beta h N(R).
 ```
 
-is additive whenever the underlying fixed-locus readout is additive. The
-target is `beta = 1`; `beta = 2*pi`, `beta = 1/3`, `beta = 0`, and other
-dimensionless conversions are not excluded by Record additivity or supplied
-finite-context registrability. They may be wrong physical readouts, but ruling
-them out requires a readout-license theorem or explicit governance premise.
+The first two equations follow directly from cardinality. For a three-record
+cycle `C`,
 
-Thus the direct-license shortcut does not retire R-eta. It sharpens the
-remaining task: a successful proof must derive both h-class and h-unit, or
-owner governance must register a narrow readout primitive/premise explicitly.
+```text
+I_beta(C) = 3 beta h.
+```
 
-## Exact Checks
+When `h=2/9` is granted, `beta=1` gives `2/3` and `beta=2` gives `4/3`.
+Both models obey the stated axiom requirements. Therefore those requirements
+do not entail `beta=1`.
 
-The paired runner verifies:
+The countermodel is real and hence even under complex conjugation. Adding a
+K/CPT-evenness requirement does not remove the free coefficient.
 
-- the Tier-A registry keeps the live `AC_phi_lambda` target and keeps
-  `delta_readout_identification_R_eta` in its decomposition;
-- the minimal axioms include `Records form.` but leave formation rules,
-  context selection, and physical-observable identification outside axiom
-  content;
-- the R-eta narrowing source contains the h-class/h-unit decomposition and
-  says the atom remains admitted;
-- W2 closes only supplied finite-context registrability, not physical carrier
-  realization or `A_R-eta`;
-- supplied context decomposes into C1 frame data and C2 scalar
-  weighting/normalization data;
-- `L = 2/9`, `S_sum = 2/3`, and `Phi(c) = c S_sum`;
-- several distinct additive scalar readouts on the same finite record frame
-  satisfy empty-record and direct-sum additivity while yielding different
-  values;
-- selecting `Phi = S_sum` requires choosing the unaveraged fixed-locus class
-  and identity unit;
-- `Phi_beta = beta S_sum` hits the target only at `beta = 1`;
-- alternative h-class/h-unit combinations can be fitted to the same number,
-  showing that the number alone does not supply the license.
+## Scope
 
-No observed lepton masses, fitted selectors, Born rule, measurement semantics,
-event law, source/action bridge, new primitive, or owner decision enters the
-proof.
+The result grants the h-class association for the sake of the argument. It
+therefore proves a narrower and stronger residual statement than a joint
+h-class/h-unit discussion: h-unit remains unentailed after h-class has been
+supplied.
 
-## What This Moves
+The result does not derive or refute the physical R-eta identification. It
+does not set `h`, `delta`, `r`, or a charged-lepton mass, and it does not force
+`r=1/2`. It changes no axiom, approved primitive, owner-governed premise,
+registry, or audit verdict.
 
-| Before | After |
-|---|---|
-| The direct-license route could be treated as a single missing sentence. | It is split into h-class plus h-unit. |
-| Record formation/additivity could be over-read as readout selection. | They supply readable record content, not the physical scalar functional. |
-| Supplied finite context could be over-read as scalar weighting closure. | It supplies a context/frame side only; scalar normalization remains separate. |
-| `Phi = S_sum` could be treated as a derivation because it hits `2/3`. | It is classified as the exact live R-eta license unless independently derived. |
-
-## What Does Not Move
-
-- AC_phi_lambda is not retired.
-- R-eta is not derived, refuted, re-graded, or removed from Tier-A.
-- No value of `delta`, `Phi`, h-class, h-unit, `c`, or `beta` is selected.
-- AC(i), theta, source/action gates, event laws, and owner primitive decisions
-  are untouched.
-- No registry, axiom, primitive, audit verdict, publication surface, or
-  downstream dependency status is edited.
-- A future direct readout-license theorem remains possible if it derives
-  h-class and h-unit without importing the target.
-
-## Remaining Live Routes
-
-1. **h-class theorem.** Derive that the physical charged-lepton readout is a
-   fixed-locus density of the realized `C3` cycle, not merely any additive
-   scalar on the supplied record content.
-2. **h-unit theorem.** Derive the identity conversion from that dimensionless
-   density to the bare holonomy angle, excluding `2*pi` packaging and other
-   scalar normalizations without fitting.
-3. **Combined direct-license theorem.** Derive `Phi = S_sum = 2/3` as the
-   physical charged-lepton cycle holonomy in one retained bridge.
-4. **Coherence-event/rate theorem.** Derive an event predicate and
-   normalization law that bypasses the direct-license path without importing
-   the target.
-5. **Owner governance.** Register a narrow readout primitive or premise
-   explicitly if derivation is intentionally bypassed; this would be
-   governance, not derivation.
+The live governance target is recorded in
+`docs/audit/data/owner_governed_premise_nodes.json` as AC(ii), the R-eta
+h-class/h-unit readout license. That registry identifies the target; it is not
+used as a proof premise here.
 
 ## No-Go Discipline Gate
 
-**N1 alternative route enumeration.** The block tests direct Record
-additivity, supplied finite context, C1 frame closure, C2 scalar weighting,
-fixed-locus arithmetic, holonomy normal form, h-class choice, h-unit choice,
-and numerical target fitting.
+### N1 — alternative route enumeration
 
-**N2 wall independence.** No new wall is introduced. The wall remains
-`A_R-eta`, now restated as h-class plus h-unit inside the already named
-`W_cycle_holonomy_value == W_defect_identity_unit == R-eta (ii)`.
+| Route tested against the countermodel | Marker | Result and authority/check |
+|---|---|---|
+| Record empty-zero | ATTEMPTED | `I_beta(empty)=0` for every real `beta`; Record clause in the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md), runner Part A. |
+| Record finite additivity | ATTEMPTED | Cardinality is additive on disjoint unions, so every `I_beta` is additive; Record clause in the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md), runner Parts A and C. |
+| Record-content determination | ATTEMPTED | `I_beta` depends on the finite record collection through `N(R)` and the granted scalar, with no site label; Record clause in the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md), runner Part B. |
+| Lattice and cycle symmetry | ATTEMPTED | `N(R)` is invariant under translations, proper cubic rotations, and cycle-position permutations; Lattice clause in the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md), runner Part B. |
+| K/CPT-even real readout | ATTEMPTED | Real `beta` and real `h` make `I_beta` unchanged by complex conjugation; this is an extra grant checked in runner Part B, not axiom content. |
+| Pointwise realized-state evaluation | ATTEMPTED | Evaluating the same realized record state leaves the law-level coefficient `beta` free; [realized-state primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) boundary plus runner Parts A–C. |
 
-**N3 hidden-wall scan.** The proof imports no comparator masses, fitted
-selector, event law, Born/interface rule, physical carrier theorem,
-activation-rate premise, readout primitive, source/action bridge, or owner
-decision.
+The runner checks all six routes. Their authority boundary is the current
+minimal axiom memo plus the explicit family above; no prior negative row is
+used as a witness.
 
-**N4 residual matching.** The residual matches the Tier-A registry: the fixed
-number `2/9` is retained fixed-locus arithmetic conditional on R-eta; the
-surviving atom is the physical density-read-as-angle / holonomy-readout
-identification.
+### N2 — wall independence
 
-**N5 proven surface.** Proven here is a bounded no-go against using the
-updated axioms plus supplied finite-context support as the direct R-eta
-license. This is not a terminal no-go against future readout-license theorems.
+The scoped claim carries one wall: `W_unit`, the coefficient `beta=1`.
+h-class is granted, not counted as a second wall. No pairwise wall table is
+needed after this collapse.
 
-**N6 partial closure.** The result preserves useful support: fixed-locus
-arithmetic, finite-context registrability, and holonomy normal form remain
-valid. It only blocks overpromotion of that support into the physical license.
+### N3 — hidden-wall scan
 
-**N7 steelman.** A reviewer can say the exact value `2/3` is already on the
-right finite surface. Correct. The missing step is why Nature's charged-lepton
-cycle readout must use that surface with identity angle units.
+The proof text was scanned for `we assume`, `by construction`, `as is
+standard`, `the framework provides`, `bridge context`, `background`,
+`naturally`, `obviously`, `standard QFT`, `registered`, and `canonical`.
 
-**N8 cross-cycle echo.** This repeats the AC(i) and clock-route pattern: a
-realized readable slot and a correct finite value are not by themselves the
-selector/readout law needed for Tier-A retirement.
+| Hit | Classification |
+|---|---|
+| granted h-class and `h` | explicit hypothesis that strengthens the countermodel |
+| `registered` in the mass-coordinate and governance discussions | non-load-bearing route/target description |
+| scan terms appearing in this checklist sentence | audit metadata, not proof steps |
+
+No other scan hit is used in the proof.
+
+### N4 — residual matching
+
+No prior no-go row is cited as evidence.
+
+| Prior negative witness | Witness residual | Current residual | Match/disposition |
+|---|---|---|---|
+| none | n/a | h-unit face of AC(ii): identity reading of the fixed local scalar as cycle angle | direct countermodel; no witness citation to drop |
+
+### N5 — rhetoric and resolution audit
+
+The countermodel is checked for the empty collection, a single record, finite
+disjoint collections, a three-record cycle, and arbitrary finite cardinality.
+It supports the statement that the named finite-record axioms do not entail
+`beta=1`. It makes no claim about an added dynamical action, continuum limit,
+or future same-observable theorem.
+
+### N6 — partial-closure paths
+
+| Candidate path | Current status | What it would address |
+|---|---|---|
+| owner-approved `beta=1` coordinate calibration | not approved as a separate convention | h-unit by governance ratification, not axiom derivation |
+| same-observable determinant-line/holonomy theorem | no retained theorem on the current ledger surface | h-class and h-unit by physical derivation |
+| `ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md` | unaudited source context | registered value face; does not identify the physical fixed-locus observable |
+
+These paths remain compatible with the result. Neither is present in the four
+axioms or the approved primitive registry. This note does not classify them as
+impossible and does not propose a new primitive.
+
+### N7 — steelman
+
+The strongest objection is that angles are already measured in radians, so
+`beta=1` may be a coordinate convention rather than new physics. That
+objection succeeds after the fixed-locus scalar and the physical holonomy have
+been proved to be the same observable in the same coordinate. The current
+axioms name neither object and contain no such identity. Thus the objection
+identifies a viable ratification or theorem path while leaving the present
+non-entailment countermodel intact.
+
+### N8 — cross-cycle echo
+
+| Similar mechanism | Was its wall retired? | Applicability here |
+|---|---|---|
+| scale-reference primitive | calibration made explicit by owner approval | an analogous h-unit primitive would be a premise, not a derivation of `beta=1` |
+| registered mass-coordinate reconstruction | phase reconstructed after state data are supplied | does not establish the h-unit identity for the physical fixed-locus observable |
+
+Both mechanisms have been considered and do not refute the narrow
+current-surface claim.
+
+**Gate result: PASS.** N1–N8 support the finite-record, current-surface
+non-entailment statement above.
 
 ## Verification
 
 Run:
 
 ```bash
-PYTHONPATH=scripts python3 scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py
+python3 scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py
 ```
 
-Expected close:
-
-```text
-TOTAL: PASS>=120 FAIL=0
-```
+Expected result: `PASS=35`, `FAIL=0`.

@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 349 |
 | _retained_pending_chain_ | 9 |
 | open_gate | 4 |
-| unaudited | 2842 |
-| audit_in_progress | 9 |
+| unaudited | 2841 |
+| audit_in_progress | 10 |
 | meta | 347 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 14 |
@@ -43,23 +43,23 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
+| `audit_in_progress` | 14 |
 | `audited_clean` | 434 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3189 |
+| `unaudited` | 3188 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2044 |
 | `decoration` | 25 |
 | `meta` | 354 |
-| `no_go` | 459 |
+| `no_go` | 460 |
 | `open_gate` | 195 |
-| `positive_theorem` | 664 |
+| `positive_theorem` | 663 |
 
 | criticality | count |
 |---|---:|
@@ -128,6 +128,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
+| `s3_mass_matrix_no_go_note` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |

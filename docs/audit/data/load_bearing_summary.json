@@ -107,16 +107,16 @@
       "transitive_descendants": 1054
     },
     {
+      "claim_id": "kinetic_isotropy_primitive",
+      "criticality": "critical",
+      "load_bearing_score": 36.425,
+      "transitive_descendants": 485
+    },
+    {
       "claim_id": "s3_time_theta_to_slice_coupling_note",
       "criticality": "critical",
       "load_bearing_score": 35.989,
       "transitive_descendants": 126
-    },
-    {
-      "claim_id": "kinetic_isotropy_primitive",
-      "criticality": "critical",
-      "load_bearing_score": 35.922,
-      "transitive_descendants": 484
     },
     {
       "claim_id": "koide_circulant_character_derivation_note_2026-04-18",

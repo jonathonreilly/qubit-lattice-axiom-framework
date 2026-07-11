@@ -53,7 +53,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 4 | resolved_or_superseded | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem / unaudited / unaudited |
 | 5 | resolved_or_superseded | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | bounded_theorem / unaudited / unaudited |
 | 6 | resolved_or_superseded | `scalar_3plus1_temporal_ratio_note` | positive_theorem / audited_clean / retained |
-| 7 | resolved_or_superseded | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | positive_theorem / unaudited / unaudited |
+| 7 | resolved_or_superseded | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate / unaudited / unaudited |
 | 8 | resolved_or_superseded | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | bounded_theorem / unaudited / unaudited |
 | 9 | resolved_or_superseded | `gauge_vacuum_plaquette_distinct_shell_theorem_note` | bounded_theorem / unaudited / unaudited |
 | 10 | resolved_or_superseded | `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | positive_theorem / audited_clean / retained |
@@ -62,7 +62,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 13 | resolved_or_superseded | `three_generation_observable_theorem_note` | bounded_theorem / unaudited / unaudited |
 | 14 | resolved_or_superseded | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
 | 15 | resolved_or_superseded | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem / unaudited / unaudited |
-| 16 | resolved_or_superseded | `oh_schur_boundary_action_note` | bounded_theorem / unaudited / unaudited |
+| 16 | resolved_or_superseded | `oh_schur_boundary_action_note` | positive_theorem / unaudited / unaudited |
 | 17 | resolved_or_superseded | `three_generation_structure_note` | bounded_theorem / unaudited / unaudited |
 | 18 | resolved_or_superseded | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem / unaudited / unaudited |
 | 19 | resolved_or_superseded | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem / audited_clean / retained |
@@ -81,7 +81,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 32 | resolved_or_superseded | `action_normalization_note` | no_go / unaudited / unaudited |
 | 33 | resolved_or_superseded | `packet_memory_note` | bounded_theorem / unaudited / unaudited |
 | 34 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
-| 35 | resolved_or_superseded | `weak_coupling_sign_sensitivity_note_2026-04-11` | bounded_theorem / unaudited / unaudited |
+| 35 | resolved_or_superseded | `weak_coupling_sign_sensitivity_note_2026-04-11` | open_gate / unaudited / unaudited |
 | 36 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |
 | 37 | invalid_missing_claim_id | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | None / None / None |
 | 38 | invalid_missing_claim_id | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | None / None / None |
@@ -120,7 +120,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 12 | `g_bare_two_ward_closure_note_2026-04-18` | positive_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 13 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem / unaudited / unaudited | exact_content_already_lifted_in_companion |
 | 14 | `g_bare_rigidity_theorem_note` | bounded_theorem / unaudited / unaudited | load_bearing_in_open_g_bare_closure |
-| 15 | `koide_circulant_wilson_target_note_2026-04-18` | bounded_theorem / unaudited / unaudited | assembler_not_source_of_exact_statement |
+| 15 | `koide_circulant_wilson_target_note_2026-04-18` | positive_theorem / unaudited / unaudited | assembler_not_source_of_exact_statement |
 | 16 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem / unaudited / unaudited | exact_arithmetic_conditional_on_admitted_normalization |
 | 17 | `generation_axiom_boundary_note` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the claim. |
 | 18 | `native_gauge_closure_note` | positive_theorem / audited_clean / retained | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the structural gauge-closure claim. |

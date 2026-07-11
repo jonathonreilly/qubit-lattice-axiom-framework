@@ -10,10 +10,71 @@ zero on main. This note is banked only as bounded historical/supporting science
 for the flavor occupancy bridge; it does not reopen, modify, or supply
 authority for any admission or retirement record.
 
+**Repair update:** 2026-07-11 — an independent audit (2026-07-10) failed the
+companion orbit-occupancy note for an arithmetic error in its `rho`-map. This
+note **inherited** the same contaminated arithmetic in its T2 negative control
+(the Result T2 negative-control passage and runner CHECK 13). The `rho`-map r-attribution is
+withdrawn and replaced by the equipartition-granularity framing;
+`Z_sector/Z_orbit = 2` is retained as a normalization / determinant-power fact
+**decoupled from `r`**. Companion to PR #5162 (the 2026-06-09 note's source-side
+repair). The T1 localization and the T2 slot-counting collision exhibit are a
+separate, uncontested argument and are unchanged. See the
+**Repair (2026-07-11)** section below.
+
 **Primary runner:**
 [`scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py`](../scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py)
 **Runner cache:**
 [`logs/runner-cache/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.txt`](../logs/runner-cache/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.txt)
+
+## Repair (2026-07-11): inherited `rho`-map r-attribution withdrawn
+
+An independent audit (2026-07-10) failed the companion orbit-occupancy note
+[`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+for an arithmetic error in its `rho`-map. Verbatim finding:
+
+> "The holomorphic Gaussian integral does not yield the claimed one-slot
+> equipartition moment: with Z=pi/g and g=6 beta, it gives &lt;|b|^2&gt;=1/(6 beta),
+> hence r=1, not 1/2. The runner obtains r=1/2 by hard-coding a per-slot quantum
+> rather than deriving it from that integral."
+
+**The inheritance.** This note reproduced the same withdrawn `rho` arithmetic in
+its T2 negative control. The passage revised below, and the runner's CHECK 13,
+carried the `rho`-map `r = 1/(2ρ)` with `ρ = (π/g)/Z_d`, reading `r = 1` and
+`r = 1/2` off the partition-normalization ratio `Z_sector/Z_orbit = 2`. That
+attribution is withdrawn here for the same reason the audit gave on the source
+side: the honest Gaussian moment is **normalization-independent** — the `Z`
+ratio cancels in the moment ratio — and gives `r = 1` for *both* bookkeepings,
+so `Z_d` does not set `r`.
+
+**What changed, and what did not.**
+
+- **Withdrawn:** the `rho`-map `r = 1/(2ρ)` and every statement that the
+  `Z`-ratio *sets* the `r`-ratio (runner CHECK 13 rewritten; the lines below
+  rewritten).
+- **Retained as a true fact, relabeled:** `Z_sector/Z_orbit = 2` is a
+  normalization / determinant-power fact only, decoupled from `r` (runner
+  CHECK 12, now paired with an honest `sympy` moment check confirming the
+  second moment `⟨|b|²⟩` is the same under both bookkeepings, so the moment
+  `r` is invariant to that choice — mirroring the companion runner's O3A).
+- **Corrected r-attribution:** the two `r`-endpoints are exact solutions of two
+  realized-state equipartition **laws** differing only in granularity — per
+  **real mode** (sector cell: `E_s = ε`, `E_d = 2ε` ⟹ `r = 1`) versus per
+  **outcome cell** (orbit cell: `E_s = E_d` ⟹ `r = 1/2`, and `Q = 2/3` via
+  `Q = (1+2r)/3`). The quantum `ε` cancels in `r`; nothing is hard-coded on a
+  derivation path.
+- **Untouched:** the T1 K-real-section localization (Result T1) and the T2
+  slot-counting collision exhibit against the two Record sentences (Result T2's
+  collision passage). That collision argument — one locked complex outcome
+  assigned two slots by the Re/Im split versus one slot by the locked outcome —
+  is a separate argument, is not contested by the audit, and is not weakened,
+  expanded, or re-editorialized here. Only the downstream `r`-attribution step
+  was contaminated.
+
+This repair is the companion to the 2026-06-09 note's **Repair (2026-07-11)**
+section (in-flight as PR #5162), which withdrew the `rho`-map on the source side
+and recharacterized the two witnesses as realized-state equipartition laws
+differing only in granularity. This note sets no audit status; the audit lane
+owns the re-check. Runner after repair: `TOTAL: PASS=13 FAIL=0`.
 
 ## Question
 
@@ -79,9 +140,18 @@ and the slot multiplicity is changed by the real-coordinate split rather than
 by record content alone. The orbit grading assigns one slot to the locked
 outcome and respects both sentences under the same reading.
 
-The runner's T2 negative control shows the difference is load-bearing:
-`Z_sector / Z_orbit = 2`, giving exactly `r = 1` for sector slotting and
-`r = 1/2` for orbit slotting through the landed `rho` arithmetic.
+The runner's T2 negative control separates a true partition-normalization fact
+from the `r`-attribution. `Z_sector / Z_orbit = 2` is a genuine normalization /
+determinant-power fact (the two-registered-data bookkeeping changes the doublet
+partition by the fiber-count factor 2), but it does **not**, by itself, set the
+doublet `r`: the honest Gaussian moment is normalization-independent — the `Z`
+ratio cancels — and gives `r = 1` for both bookkeepings. The two `r`-endpoints
+arise instead as exact solutions of two realized-state equipartition laws
+differing only in granularity: per real mode (sector cell: `E_s = ε`,
+`E_d = 2ε` ⟹ `r = 1`) versus per outcome cell (orbit cell: `E_s = E_d` ⟹
+`r = 1/2`, and `Q = 2/3` via `Q = (1+2r)/3`). See the **Repair (2026-07-11)**
+section above and the companion 2026-06-09 note's Repair section (in-flight as
+PR #5162).
 
 The honesty boundary is sharp. T2 is not a full derivation unless the
 one-record-one-slot identification is supplied. The remaining bridge is:

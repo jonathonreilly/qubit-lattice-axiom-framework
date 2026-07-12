@@ -18,7 +18,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 75 |
+| **retained** | 76 |
 | **retained_bounded** | 301 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
@@ -40,7 +40,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 1 |
-| `audited_clean` | 378 |
+| `audited_clean` | 379 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 15 |
 | `audited_failed` | 2 |
@@ -50,7 +50,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2044 |
+| `bounded_theorem` | 2045 |
 | `decoration` | 18 |
 | `meta` | 357 |
 | `no_go` | 439 |
@@ -62,17 +62,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 745 |
 | `high` | 400 |
 | `medium` | 945 |
-| `leaf` | 1644 |
+| `leaf` | 1645 |
 
 - **Retained pending chain closure:** 1
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3402
+- runners classified: 3403
 - runners with (C) first-principles compute hits: 1795
 - runners with (D) external comparator hits: 1096
-- decoration candidates (no C, no D): 720
+- decoration candidates (no C, no D): 721
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -80,14 +80,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1971 | 224.44 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1972 | 224.95 | `unaudited` | meta |
 | 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1600 | 64.64 | `audited_clean` | **retained** |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1181 | 62.21 | `unaudited` | unaudited |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 197 | 61.63 | `unaudited` | unaudited |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1042 | 61.53 | `unaudited` | unaudited |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1168 | 50.19 | `unaudited` | unaudited |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1068 | 45.06 | `unaudited` | meta |
-| 8 | `key_terminology` | meta | critical | 1188 | 44.22 | `unaudited` | meta |
+| 8 | `key_terminology` | meta | critical | 1189 | 44.22 | `unaudited` | meta |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 941 | 39.88 | `unaudited` | unaudited |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1307 | 39.85 | `unaudited` | unaudited |
 | 11 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 421 | 39.72 | `unaudited` | unaudited |
@@ -112,6 +112,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `s3_mass_matrix_conditional_degeneracy_note_2026-07-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -589,6 +590,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The physical charged-lepton readout is the fixed-locus density class h, identity-read in h-units as the eta angle, with no extra clock-rate, transport, or normalization factor.  _(class `F`)_
 - **chain closes:** False — The note correctly presents the identity as an open obligation, but supplies no carrier/source-action bridge or normalization theorem deriving it. The physical density-to-angle identification therefore remains unclosed.
 - **rationale:** Issue: the target equates an h-density class with the physical eta-angle readout, but the restricted packet contains no derivation of that map. Why this blocks: Record additivity and the approved primitives do not themselves determine the carrier, source action, or dimensionless readout normalization. Repair target: supply an independently audited carrier/source-action theorem together with either a native eta/holonomy identity or an inhomogeneous Record-facing normalization theorem. Claim boundary until fixed: the identification and all results using it remain conditional or pending-chain.
+- **auditor confidence:** high
+
+### `acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12`
+
+- **Note:** [`ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_NARROW_THEOREM_NOTE_2026-07-12.md`](../../docs/ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_NARROW_THEOREM_NOTE_2026-07-12.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite algebra of the supplied C3 normal action: exact resolvents, the h-trace identity, scalar exponential determinant and root phases, supplied determinant-power cases, and integer determinant-character weights within the stated principal-lift domain.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-c3-final-chain-fresh-context-20260712`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** From the exact resolvents R1+R2=I, hence B=I/3; therefore E=exp(iB/3) satisfies E^3=U1 and arg det(E)=2/9=h.  _(class `A`)_
+- **chain closes:** True — Direct rational 2x2 inversion independently gives R1+R2=I, B=I/3, h=2/9, and tr(B)=3h. The retained determinant-power identity then supplies the stated single-sector, coordinate-rewrite, conjugate-pair, and realification consequences, while the remaining phase and character formulas follow exactly from scalar exponentiation.
+- **rationale:** The restricted packet closes as exact finite algebra over two retained dependencies. Independent Fraction-based matrix inversion reproduced R1, R2, B, h, and tr(B); a separate complex check reproduced the determinant/root phases, conjugate cancellation, oriented rank-two Pfaffian determinant power, and character kernels. Residual risk is confined to later physical carrier, normalization, readout, occupancy, and r-selection targets that the source places outside this theorem scope.
 - **auditor confidence:** high
 
 ### `acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12`

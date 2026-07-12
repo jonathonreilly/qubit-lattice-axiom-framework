@@ -1,6 +1,6 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2044,
+    "bounded_theorem": 2045,
     "decoration": 18,
     "meta": 357,
     "no_go": 439,
@@ -47,7 +47,7 @@
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
     "meta": 350,
     "open_gate": 2,
-    "retained": 75,
+    "retained": 76,
     "retained_bounded": 301,
     "retained_pending_chain": 1,
     "unaudited": 2948

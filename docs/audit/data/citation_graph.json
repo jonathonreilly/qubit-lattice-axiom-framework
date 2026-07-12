@@ -37565,6 +37565,26 @@
       "to": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17"
     },
     {
+      "from": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
+      "to": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
+    },
+    {
+      "from": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
+      "to": "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18"
+    },
+    {
+      "from": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
+      "to": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
+    },
+    {
+      "from": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
+      "to": "record_formation_to_kraus_isometry_bridge_2026-06-06"
+    },
+    {
       "from": "redundancy_not_forced_by_pnd_locality_no_go_note_2026-06-08",
       "to": "key_terminology"
     },
@@ -111425,6 +111445,24 @@
       "runner_path": "scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py",
       "title": "Record Unbounded Finite-Additivity Schema"
     },
+    "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11": {
+      "claim_id": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
+        "minimal_axioms",
+        "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+        "record_formation_to_kraus_isometry_bridge_2026-06-06"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "55a2621cb6ab9ebd11a1d3cd956eb31ab141ae2c43f167348ea575e3333bc296",
+      "path": "docs/RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md",
+      "runner_path": "scripts/record_write_admissible_one_step_class_controlled_copy_2026_07_11.py",
+      "title": "Admissible One-Step Record-Write Class: Controlled-Copy Narrow Theorem"
+    },
     "redundancy_not_forced_by_pnd_locality_no_go_note_2026-06-08": {
       "claim_id": "redundancy_not_forced_by_pnd_locality_no_go_note_2026-06-08",
       "claim_type_author_hint": "no_go",
@@ -111658,7 +111696,7 @@
         "abj_epsilon_index_square_block_no_go_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ade6c96604856c146d6cb9e4319fcd7edb9db726e5e0f68e9d2ce399a5d51fe4",
+      "note_hash": "4be8e2c23d9362e519d50a3a16140d46f4d53df24500293d176576a9594f2f38",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -128689,7 +128727,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1631,
+      "bounded_theorem": 1632,
       "decoration": 3,
       "meta": 333,
       "no_go": 336,
@@ -128698,7 +128736,7 @@
       "positive_theorem": 284
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2030,
+      "bounded_theorem": 2031,
       "decoration": 3,
       "meta": 333,
       "no_go": 439,
@@ -128706,10 +128744,10 @@
       "open_gate": 212,
       "positive_theorem": 663
     },
-    "edge_count": 14447,
-    "leaf_count": 1334,
-    "node_count": 3928,
+    "edge_count": 14452,
+    "leaf_count": 1335,
+    "node_count": 3929,
     "root_count": 1113,
-    "runners_with_path": 3545
+    "runners_with_path": 3546
   }
 }

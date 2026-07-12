@@ -146,7 +146,7 @@ NEGATIVE_ASSERTION_RE = re.compile(
     r"\bneither\s+route\s+exists?\b|"
     r"\bno\s+(?:other|second)\s+(?:[\w-]+\s+){0,2}(?:route|derivation|proof|way|avenue|mechanism)\b"
     r"[^\n.;:]{0,60}\bexists?\b|"
-    r"\bno\s+(?:[\w-]+\s+){0,2}(?:chain|route|path)s?\s+(?:can\s+)?"
+    r"\bno\s+(?:[\w-]+\s+){0,2}(?:chain|route|path|channel)s?\s+(?:can\s+)?"
     r"(?:reach(?:es)?|leads?)\b|"
     r"\bno\s+route\s+survived\b|"
     r"\bfalls?\s+short\s+of\s+a\s+derivation\b|"
@@ -211,6 +211,9 @@ NEGATIVE_ASSERTION_RE = re.compile(
 # perfect/passive forms, and "fails to resolve" without treating affirmative
 # tense variants as no-go assertions.
 EXPLICIT_NEGATIVE_CLOSURE_RE = re.compile(
+    r"\b(?:neither|no)\s+(?:[\w-]+\s+){0,2}"
+    r"(?:walls?|admissions?|obstructions?)\s+(?:is|are|was|were)\s+"
+    r"(?:closed|resolved|discharged|supplied|removed)\b|"
     r"\b(?:(?:(?:does|do|did|has|have|had|is|are|was|were)\s+not)|"
     r"cannot|can\s+not)\s+"
     r"(?:(?:yet|still|fully|completely|entirely|exactly|ever|successfully)\s+){0,4}"
@@ -235,7 +238,8 @@ NEGATIVE_SUBJECT_CLOSURE_RE = re.compile(
     # determines...").
     r"\b(?:(?:no(?!\s+longer\s+(?:\w+ly\s+)?(?:claims?|asserts?|states?|"
     r"reports?|presents?|carries|includes?))|neither|"
-    r"zero(?=\s+(?:[\w-]+\s+){0,3}"
+    r"zero(?!\s+(?:modes?|eigenvalues?|eigenvectors?|crossings?|energy)\b)"
+r"(?=\s+(?:[\w-]+\s+){0,3}"
 r"(?!(?:fixes|closes|determines|derives|selects|supplies|removes|resolves|yields|chooses|decides|gives|produces|maps|sets|takes|returns|equals|denotes|defines)\b)[\w-]+s\s))\s+"
     r"(?:(?!(?:because|although|but|while|once|when|after|before|if|and|so|since|as|whereas|"
     r"is|are|was|were|has|have|had|remains?|exists?|required?|needed|introduced)\b)"
@@ -360,7 +364,7 @@ NOTE_SUBJECT_DISCLAIMER_RE = re.compile(
     re.IGNORECASE,
 )
 LABELED_DISCLAIMER_LINE_RE = re.compile(
-    r"(?im)^(?P<label>[ \t]*(?:[-*+]|\d+(?:[.)]|\s*[-\u2013])?)?[ \t]*"
+    r"(?im)^(?P<label>[ \t]*(?:>[ \t]*)?(?:[-*+]|\d+(?:[.):]|\s*[-\u2013])?)?[ \t]*"
     r"(?:what\s+(?:this|it)\s+is\s+not|is\s+not|does\s+not|not\s+claimed|"
     r"non-?claims?|deliberately\s+not\s+claimed|out\s+of\s+scope)"
     r"\s*[:\u2014-])(?P<payload>[^\n]*)$",
@@ -381,7 +385,8 @@ DISCLAIMER_FRAGMENT_LINE_RE = re.compile(
     re.IGNORECASE,
 )
 UNIQUENESS_SUBJECT_RE = re.compile(
-    r"\s*(?:[\w-]+\s+){0,3}(?:other|second)\b", re.IGNORECASE
+    r"\s*(?:[\w-]+\s+){0,3}(?:other|second|additional|alternative|further)\b",
+    re.IGNORECASE,
 )
 AUTHORITY_UNIQUENESS_SUBJECT_RE = re.compile(
     r"(?:routes?|derivations?|attempts?|constructions?|mechanisms?|arguments?|"
@@ -444,9 +449,13 @@ def _exemptable(span: str) -> bool:
 
 
 def _sentence_around(text: str, start: int, end: int) -> str:
-    left = max(text.rfind(ch, 0, start) for ch in ".!?\n")
-    rights = [i for ch in ".!?\n" if (i := text.find(ch, end)) >= 0]
-    return text[left + 1 : min(rights, default=len(text))]
+    window_left = max(0, start - 400)
+    left = max(text.rfind(ch, window_left, start) for ch in ".!?\n")
+    if left < window_left:
+        left = window_left - 1
+    window_right = min(len(text), end + 400)
+    rights = [i for ch in ".!?\n" if (i := text.find(ch, end, window_right)) >= 0]
+    return text[left + 1 : min(rights, default=window_right)]
 
 
 def _strip_disclaimer_sections(text: str) -> str:
@@ -506,7 +515,10 @@ def _strip_disclaimer_sections(text: str) -> str:
                     continue
                 kept_lines.append(remainder if _exemptable(line) else line)
                 continue
-            if DISCLAIMER_FRAGMENT_LINE_RE.match(line) and _exemptable(wrapped):
+            if DISCLAIMER_FRAGMENT_LINE_RE.match(line) and _exemptable(
+                _fragment_veto_span(line)
+                + (" " + continuation if line and line[-1:] not in ".;:!?" else "")
+            ):
                 kept_lines.append("")
                 continue
             kept_lines.append(line)
@@ -516,11 +528,29 @@ def _strip_disclaimer_sections(text: str) -> str:
     return "".join(pieces)
 
 
+def _fragment_veto_span(payload: str) -> str:
+    parts = re.split(r"([;.])", payload, maxsplit=1)
+    if len(parts) == 3:
+        head, sep, tail = parts
+        if NEGATIVE_CONTINUATION_RE.match(tail) or re.match(
+            r"\s*(?:nor|and\s+no|even)\b", tail, re.IGNORECASE
+        ):
+            return payload
+        return head
+    return payload
+
+
 def _scrub_labeled_disclaimer_lines(text: str) -> str:
     def replace(match: re.Match[str]) -> str:
         payload = match.group("payload").strip()
         continuation = match.string[match.end(): match.end() + 160].split("\n")
-        wrapped = payload + " " + (continuation[1] if len(continuation) > 1 else "")
+        next_line = continuation[1] if len(continuation) > 1 else ""
+        # A payload ending mid-claim (no sentence terminator) keeps its
+        # soft-wrapped continuation in the veto span; a complete payload
+        # followed by independent prose does not.
+        wrapped = _fragment_veto_span(payload)
+        if payload and payload[-1] not in ".;:!?":
+            wrapped = wrapped + " " + next_line
         # Only subjectless template fragments are the disclaimer form; a
         # full-subject payload is judged like ordinary prose. The veto span
         # includes the soft-wrapped continuation line.
@@ -546,10 +576,28 @@ def _scrub_local_scope_exclusions(text: str) -> str:
     return LOCAL_SCOPE_EXCLUSION_RE.sub(replace, text)
 
 
+# A continuation that extends the NEGATIVE claim itself (prepositional
+# source, "even in principle", nor-coordination, appended negative
+# clause) keeps the clause and its continuation in the veto span. An
+# affirmative independent clause after the disclaimer ("; the retained
+# axioms do derive it") is routing attribution and stays out of the
+# veto span.
+NEGATIVE_CONTINUATION_RE = re.compile(
+    r"\s*(?:[\u2014-]\s*)?(?:from|under|using|given|within)\b"
+    r"|\s*,?\s*even\b"
+    r"|\s*,?\s*nor\b"
+    r"|\s*[,;]\s*(?:and\s+)?no(?:t|r)?\b",
+    re.IGNORECASE,
+)
+
+
 def _scrub_note_subject_clauses(text: str) -> str:
     def replace(match: re.Match[str]) -> str:
-        sentence = _sentence_around(text, match.start(), match.end())
-        return "" if _exemptable(sentence) else match.group(0)
+        span = match.group(0)
+        tail = text[match.end(): match.end() + 200]
+        if NEGATIVE_CONTINUATION_RE.match(tail):
+            span = _sentence_around(text, match.start(), match.end())
+        return "" if _exemptable(span) else match.group(0)
 
     return NOTE_SUBJECT_DISCLAIMER_RE.sub(replace, text)
 

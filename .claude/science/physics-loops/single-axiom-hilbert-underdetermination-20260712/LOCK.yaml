@@ -2,6 +2,6 @@ owner: physics-loop-single-axiom-hilbert
 purpose: single axiom Hilbert underdetermination block
 branch: physics-loop/single-axiom-hilbert-no-go-block01-20260712
 worktree: /private/tmp/science-fix-worktrees/single_axiom_hilbert_note-a8521db8
-status: active
+status: released_after_pr_delivery
 created: 2026-07-12
 fallback_reason: automation_lock.py hardcodes inaccessible /Users/jonreilly

@@ -55,11 +55,11 @@ audit_compatibility_validation: >-
   seeded bounded_theorem, high criticality, ready=true, deps=[minimal_axioms];
   the new no_go seeded leaf, ready=true, direct_in_degree=0,
   deps=[minimal_axioms]. No generated audit authority was copied back.
-pr_status: pending
-pr_url: null
+pr_status: open_mergeable_checks_running
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5214
 next_exact_action: >-
-  Push the dedicated science branch and open one unmerged review PR; then
-  record the verified PR URL and leave independent audit as the next action.
+  Independent audit should review the ready same-path bounded theorem and the
+  ready zero-inbound no_go leaf. Do not merge or author an audit verdict here.
 stop_condition: >-
-  Stop after one coherent no-go science block passes review, is pushed, and has
-  one unmerged review PR.
+  Achieved: one coherent science block passed review and validation, was
+  pushed, and has one open unmerged review PR.

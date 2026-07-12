@@ -1,19 +1,17 @@
 # Handoff
 
 Current branch:
-`physics-loop/record-faithful-dynamics-block13-free-staggered-continuum-20260712`.
-The first continuum-block runner reports `PASS=23 FAIL=0`. Independent
+`physics-loop/record-faithful-dynamics-block14-free-staggered-residue-car-20260712`.
+The reflected-Gram/CAR-Fock runner reports `PASS=22 FAIL=0`. Independent
 code/math, claim/import/Nature, governance, labeling, and full N1--N8 review
-pass at bounded strength. The exact result is a same-action scalar spectral
-spine: `T_2=T_even^dag T_even>0`, the covariance pole equals the stable
-two-step eigenvalue, and an explicit map identifies their eight-dimensional
-solution/eigenspaces. Compact-band energy, covariance, and physical
-quasilocal scales converge at `O(a^2)`. The finite-`a` pole-residue,
-equal-time-CAR metric, and coherent-state Berezin/transfer correlator equality
-remain the next exact bridge. Do not attach SM or GR recovery labels before
-that bridge and the interacting/joint limits are controlled.
-Stacked PR #5262 is open and mergeable on the Block12 head; the independent
-audit workflow was running at the delivery checkpoint.
+pass at bounded strength. The exact result derives the infinite-time reflected
+residue, OS support/quotient, full finite-even-3D operator frames, and every
+finite multitime positive-time unbarred Wick-to-Fock exterior identity. The
+canonical quotient `A` and boundary-insertion normalization are separated;
+no original-field equal-time CAR anticommutator is claimed. Next derive the
+reciprocal barred pole and contact/time-ordering all-field functional, then
+open the interacting gauge continuum campaign. Block13 PR #5262 is open and
+mergeable; its audit workflow succeeded at the latest check.
 
 The campaign is initialized on
 `physics-loop/admissibility-dynamics-realization-bridge-20260711` from current

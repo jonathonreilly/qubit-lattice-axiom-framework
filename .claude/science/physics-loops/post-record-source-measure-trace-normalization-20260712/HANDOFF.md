@@ -9,6 +9,7 @@ current synchronized inventory is 17 source-measure rows plus 10 trace rows,
 Validation confirmed both transitive helper paths in the ready audit-queue row.
 Generated audit authority surfaces were restored to `origin/main`, and the
 review disposition is pass with the bounded supplied-input claim unchanged.
+The reviewed block is open as PR #5220 against `main`.
 
 Next exact action: land this reviewed source/helper/cache packet and send the
 ready row to the independent re-audit lane.

@@ -1,56 +1,56 @@
 ===== runner cache v1 =====
 runner: scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py
-runner_sha256: 4fa74f86feb57ae1c3a0f29ef56500d7e256380fa8580dedeccb6e7ab49a9b4c
+runner_sha256: 63bc7ea5aea0f8cde13152dfb01e72c5525c3b6c709de96e45f6f47eeac094d4
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 3.32
+elapsed_sec: 3.76
 status: ok
 ----- stdout -----
 
-Group A -- REAL3 realization surface: six decorated movers + cubic rotations
+Protocol-realization model: six decorated movers and cubic rotations
 ================================================================================================
-  [PASS] A1 six decorated movers unitary at site (64) and across the Bloch grid  --  site=0.00e+00 bloch=2.22e-16
-  [PASS] A2 cross-axis letters anticommute at site level (including inverse letters)  --  max|{S_a,S_b}|=0.00e+00
-  [PASS] A3 S_i^2 equals the independently built cell translation, which is central  --  square=0.00e+00 central=0.00e+00
-  [PASS] A4 forward mover unitary and the inverse letter equals its adjoint  --  unit=0.00e+00 adjoint=0.00e+00
-  [PASS] A5 twenty-four proper cubic rotations, closed, transitive on the six NN offsets  --  |G|=24 orbit=[0, 1, 2, 3, 4, 5] distinct=24
+  [PASS] six decorated movers unitary at site (64) and across the Bloch grid  --  site=0.00e+00 bloch=2.22e-16
+  [PASS] cross-axis letters anticommute at site level (including inverse letters)  --  max|{S_a,S_b}|=0.00e+00
+  [PASS] S_i^2 equals the independently built cell translation, which is central  --  square=0.00e+00 central=0.00e+00
+  [PASS] forward mover unitary and the inverse letter equals its adjoint  --  unit=0.00e+00 adjoint=0.00e+00
+  [PASS] twenty-four proper cubic rotations, closed, transitive on the six NN offsets  --  |G|=24 orbit=[0, 1, 2, 3, 4, 5] distinct=24
 
-Group B -- Theorem 3B1: covariance modulo local frames => zero modulus defect
+Factor covariance modulo local frames implies zero modulus defect
 ================================================================================================
-  [PASS] B1 decorated mover = g F^{(0)} g^dag with F^{(0)} the exactly covariant bare shift; the decorated mover itself is not translation-covariant (gap>1); zero modulus defect  --  bare_cov=0.00e+00 recon=0.00e+00 dec_noncov_gap=2.00 modulus_defect=0.00e+00
-  [PASS] B2 an arbitrary local-frame decoration preserves zero modulus defect  --  defect=3.33e-16
-  [PASS] B3 the frame decoration is modulus-blind (|F| equals |F0| entrywise)  --  max||F|-|F0||=2.22e-16
-  [PASS] B4 a site-dependent axis-1 Givens rotation is unitary and NN-supported but has positive modulus defect  --  unit=1.11e-16 support=(0, 1, 0) defect=0.783
-  [PASS] B5 a covariant-modulus diagonal that translations sign-flip: zero defect, frame-invariant, not covariant  --  defect=0.00e+00 frame_inv=2.22e-16 flip=0.00e+00 gap=2.00
-  [PASS] B6 the undecorated bare shift also has zero modulus defect (the functional is not spuriously positive)  --  defect=0.00e+00
+  [PASS] decorated mover is a local-frame conjugate of the exactly covariant bare shift, is not itself translation-covariant, and has zero modulus defect  --  bare_cov=0.00e+00 recon=0.00e+00 dec_noncov_gap=2.00 modulus_defect=0.00e+00
+  [PASS] an arbitrary local-frame decoration preserves zero modulus defect  --  defect=3.33e-16
+  [PASS] the frame decoration is modulus-blind (|F| equals |F0| entrywise)  --  max||F|-|F0||=2.22e-16
+  [PASS] a site-dependent axis-1 Givens rotation is unitary and NN-supported but has positive modulus defect  --  unit=1.11e-16 support=(0, 1, 0) defect=0.783
+  [PASS] a covariant-modulus diagonal that translations sign-flip has zero defect but is not frame-covariant  --  defect=0.00e+00 frame_inv=2.22e-16 flip=0.00e+00 gap=2.00
+  [PASS] the undecorated bare shift also has zero modulus defect (the functional is not spuriously positive)  --  defect=0.00e+00
 
-Group C -- Theorem 3B2: rotation transitivity forces all-axis support
+Rotation transitivity and the axis-faithful condition force all-axis support
 ================================================================================================
-  [PASS] C1 the parity availability rule B is rotation-covariant and varies at slot 0  --  covariant=True slot0_in_V=True
-  [PASS] C2 rotation transport carries slot 0 to all six NN directions, and the covariant parity rule varies on exactly that orbit  --  orbit0=[0, 1, 2, 3, 4, 5] V(B)=[0, 1, 2, 3, 4, 5]
-  [PASS] C3 control: a single-slot rule varies only at slot 0 and is NOT rotation-covariant  --  V(B')=[0] covariant=False
-  [PASS] C4 the all-axis mover set (S_1,S_2,S_3) has full constituent-factor support  --  support=(1, 1, 1)
-  [PASS] C5 a same-axis mover pair (S_1,S_1) supports only its own axis  --  support=(1, 0, 0)
+  [PASS] the parity availability rule B is rotation-covariant and varies at slot 0  --  covariant=True slot0_in_V=True
+  [PASS] rotation transport carries slot 0 to all six NN directions, and the covariant parity rule varies on exactly that orbit  --  orbit0=[0, 1, 2, 3, 4, 5] V(B)=[0, 1, 2, 3, 4, 5]
+  [PASS] control: a single-slot rule varies only at slot 0 and is NOT rotation-covariant  --  V(B')=[0] covariant=False
+  [PASS] the all-axis mover set (S_1,S_2,S_3) has full constituent-factor support  --  support=(1, 1, 1)
+  [PASS] a same-axis mover pair (S_1,S_1) supports only its own axis  --  support=(1, 0, 0)
 
-Group D -- Theorem 3B3: normal form, support law, dispersiveness dichotomy
+Decorated-word normal form, support law, and dispersiveness dichotomy
 ================================================================================================
-  [PASS] D1 exact normal form W = sigma * prod T_cell^m * residual movers (all 9330 words, len<=5)  --  words=9330 mismatches=0
-  [PASS] D1R a wrong central exponent m_i is caught on L=12 but aliases to identity on L=4 (m_i is load-bearing)  --  caught_on_L12=True aliases_on_L4=True
-  [PASS] D2 support law on the aliasing-free L=6 ring: axis-i occupied iff net_i != 0 (all 9330 words)  --  mismatches=0
-  [PASS] D3 dispersiveness dichotomy: Bloch char-poly flat (<1e-8) iff net displacement is (0,0,0) (all 9330 words)  --  anomalies=0
-  [PASS] D4 five named length-6 witnesses: exact normal form, net, sign, and +-I / dispersive value  --  failed_witnesses=0
-  [PASS] D5 P_CANCEL separates the filters: zero modulus defect, full support, composite identity, flat  --  defect=0.00e+00 support=(1, 1, 1) identity=0.00e+00 disp=2.84e-14
-  [PASS] D6 P_WEIGHT (net (2,1,1)) has full support, zero modulus defect, and is dispersive  --  support=(1, 1, 1) disp=1.05e+01 defect=0.00e+00
-  [PASS] D7 identity flat, single mover dispersive, and dropping the anticommutation sign is detectable  --  id=0.00e+00 s1=11.995 reorder_gap=2.00
-  [PASS] D8 the three filters jointly retain the four-member necessary-condition survivor set  --  survivors=['P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']
-  [PASS] D9 ordered filters attribute each rejection to its first-failing stage (defect/support/dispersion)  --  defect=['P_MIX4', 'P_PAIRFLAT', 'P_STAIR'] support=['P_AXIS', 'P_DIAG'] dispersion=['P_CANCEL']
+  [PASS] exact normal form W = sigma * prod T_cell^m * residual movers (all 9330 words, len<=5)  --  words=9330 mismatches=0
+  [PASS] a wrong central exponent m_i is caught on L=12 but aliases to identity on L=4 (m_i is load-bearing)  --  caught_on_L12=True aliases_on_L4=True
+  [PASS] support law on the aliasing-free L=6 ring: axis-i occupied iff net_i != 0 (all 9330 words)  --  mismatches=0
+  [PASS] dispersiveness dichotomy: Bloch char-poly flat (<1e-8) iff net displacement is (0,0,0) (all 9330 words)  --  anomalies=0
+  [PASS] five named length-6 witnesses: exact normal form, net, sign, and +-I / dispersive value  --  failed_witnesses=0
+  [PASS] P_CANCEL separates the filters: zero modulus defect, full support, composite identity, flat  --  defect=0.00e+00 support=(1, 1, 1) identity=0.00e+00 disp=2.84e-14
+  [PASS] P_WEIGHT (net (2,1,1)) has full support, zero modulus defect, and is dispersive  --  support=(1, 1, 1) disp=1.05e+01 defect=0.00e+00
+  [PASS] identity flat, single mover dispersive, and dropping the anticommutation sign is detectable  --  id=0.00e+00 s1=11.995 reorder_gap=2.00
+  [PASS] the three filters jointly retain the four-member necessary-condition survivor set  --  survivors=['P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']
+  [PASS] ordered filters attribute each rejection to its first-failing stage (defect/support/dispersion)  --  defect=['P_MIX4', 'P_PAIRFLAT', 'P_STAIR'] support=['P_AXIS', 'P_DIAG'] dispersion=['P_CANCEL']
 
-Group E -- source-note quote pins (fabrication + framing gates)
+Source-note quote pins and claim-boundary checks
 ================================================================================================
-  [PASS] E1 both admissibility clause sentences are present verbatim in the axioms file  --  axiom clauses anchored
-  [PASS] E2 the note quotes both axiom clauses and frames its results as necessary consequences  --  note clauses + framing present
-  [PASS] E3 the two supplied-input fragments appear in the note and are anchored verbatim in the parent selection note  --  supplied inputs anchored in parent
-  [PASS] E4 the note is free of forbidden status/framing/nondeterminism language  --  clean
+  [PASS] both admissibility clause sentences are present verbatim in the axioms file  --  axiom clauses anchored
+  [PASS] the note quotes both axiom clauses and frames its results as conditional algebraic consequences  --  note clauses + framing present
+  [PASS] the two supplied-input fragments appear in the note and are anchored verbatim in the parent selection note  --  supplied inputs anchored in parent
+  [PASS] the note is free of forbidden status/framing/nondeterminism language  --  clean
 
 TOTAL: PASS=30 FAIL=0
 

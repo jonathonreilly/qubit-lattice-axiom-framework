@@ -3,23 +3,23 @@
 r"""
 Protocol--Admissibility 3D realization bridge and composite-word dispersiveness.
 
-Derives, on the named availability-rule model B and the named REAL3 realization
-predicate, the two conditions the 3D factorized-protocol selection note supplies
-as physical inputs, plus the word-reduction dichotomy behind the second:
+Checks, on the named availability-rule model B and explicit conditional
+protocol-realization conditions, the algebraic consequences relevant to the two
+physical inputs named by the 3D factorized-protocol selection note:
 
-  * Theorem 3B1 -- factor covariance modulo local U(1) frames forces zero
+  * factor covariance modulo local U(1) frames forces zero
     site-modulus translation defect (a necessary, not sufficient, shadow);
-  * Theorem 3B2 -- the 24 proper cubic rotations act transitively on the six
+  * the 24 proper cubic rotations act transitively on the six
     nearest-neighbor offsets, so a single covariant variation forces all-axis
     constituent-factor support;
-  * Theorem 3B3 -- exact normal form for words in the six decorated movers, the
+  * exact normal form for words in the six decorated movers, the
     support law, and the characteristic-polynomial dispersiveness dichotomy
     (a word is char-poly flat iff its net displacement is (0,0,0)).
 
 Every construction is rebuilt locally (the sibling selection runner is NOT
 imported).  There is no randomness, no audit metadata is read, and there is no
-network or git access.  The check groups are A (surface reconstruction, 5),
-B (Theorem 3B1, 6), C (Theorem 3B2, 5), D (Theorem 3B3, 10), E (quote pins, 4).
+network or git access.  The 30 checks cover surface reconstruction, factor
+covariance, rotation transport, word reduction, and source-note quote pins.
 Final line: TOTAL: PASS=30 FAIL=0.
 
 Determinism note: this runner prints no git state (its stdout is SHA-pinned into
@@ -226,6 +226,16 @@ def site_pairing_factor(axis):
     return np.cos(THETA) * np.eye(L**3) + 1j * np.sin(THETA) * site_pairing(axis)
 
 
+def pairflat_bloch(kvec):
+    """The parent inventory's single composite P_PAIRFLAT constituent factor."""
+    return compose([pairing_factor_bloch(axis)(kvec) for axis in range(3)], 8)
+
+
+def site_pairflat():
+    """Site form of the parent inventory's single composite P_PAIRFLAT factor."""
+    return compose([site_pairing_factor(axis) for axis in range(3)], L**3)
+
+
 def site_diagonal():
     return np.diag([
         np.exp(1j * THETA * ((-1) ** sum(v % 2 for v in x))) for x in coords
@@ -280,16 +290,8 @@ protocols = {
         "site_factors": [site_staircase()],
     },
     "P_PAIRFLAT": {
-        "bloch_factors": [
-            pairing_factor_bloch(0),
-            pairing_factor_bloch(1),
-            pairing_factor_bloch(2),
-        ],
-        "site_factors": [
-            site_pairing_factor(0),
-            site_pairing_factor(1),
-            site_pairing_factor(2),
-        ],
+        "bloch_factors": [pairflat_bloch],
+        "site_factors": [site_pairflat()],
     },
     "P_CANCEL": {
         "bloch_factors": [forward(0), reverse(0), forward(1), reverse(1), forward(2), reverse(2)],
@@ -571,7 +573,7 @@ def variation_set(rule):
 
 
 # ---------------------------------------------------------------------------
-heading("Group A -- REAL3 realization surface: six decorated movers + cubic rotations")
+heading("Protocol-realization model: six decorated movers and cubic rotations")
 
 site_letter = {l: site_shift(l[0], l[1], decorated=True) for l in LETTERS}
 eye64 = np.eye(L**3)
@@ -585,7 +587,7 @@ bloch_unit = max(
     for kvec in K
 )
 check(
-    "A1 six decorated movers unitary at site (64) and across the Bloch grid",
+    "six decorated movers unitary at site (64) and across the Bloch grid",
     site_unit < TOL and bloch_unit < 1e-10,
     f"site={site_unit:.2e} bloch={bloch_unit:.2e}",
 )
@@ -599,7 +601,7 @@ for l in LETTERS:
                 np.max(np.abs(site_letter[l] @ site_letter[m] + site_letter[m] @ site_letter[l])),
             )
 check(
-    "A2 cross-axis letters anticommute at site level (including inverse letters)",
+    "cross-axis letters anticommute at site level (including inverse letters)",
     anti < 1e-12,
     f"max|{{S_a,S_b}}|={anti:.2e}",
 )
@@ -614,7 +616,7 @@ for i in range(3):
             central, np.max(np.abs(T_cell[i] @ site_letter[l] - site_letter[l] @ T_cell[i]))
         )
 check(
-    "A3 S_i^2 equals the independently built cell translation, which is central",
+    "S_i^2 equals the independently built cell translation, which is central",
     sq_err < TOL and central < TOL,
     f"square={sq_err:.2e} central={central:.2e}",
 )
@@ -626,7 +628,7 @@ inv_match = max(
     np.max(np.abs(site_letter[(i, -1)] - site_letter[(i, +1)].conj().T)) for i in range(3)
 )
 check(
-    "A4 forward mover unitary and the inverse letter equals its adjoint",
+    "forward mover unitary and the inverse letter equals its adjoint",
     inv_unit < TOL and inv_match < TOL,
     f"unit={inv_unit:.2e} adjoint={inv_match:.2e}",
 )
@@ -649,7 +651,7 @@ for R1 in rotations:
         products.add(tuple(int(v) for v in Rp.flatten()))
 distinct = len({tuple(int(v) for v in R.flatten()) for R in rotations})
 check(
-    "A5 twenty-four proper cubic rotations, closed, transitive on the six NN offsets",
+    "twenty-four proper cubic rotations, closed, transitive on the six NN offsets",
     len(rotations) == 24
     and proper
     and orbit == set(range(6))
@@ -660,9 +662,9 @@ check(
 )
 
 # ---------------------------------------------------------------------------
-heading("Group B -- Theorem 3B1: covariance modulo local frames => zero modulus defect")
+heading("Factor covariance modulo local frames implies zero modulus defect")
 
-F0 = site_shift(1, +1, decorated=True)  # decorated mover (kept for B2, B3)
+F0 = site_shift(1, +1, decorated=True)  # decorated mover used by frame checks
 F0_bare = site_shift(1, +1, decorated=False)  # the exactly covariant bare shift F^{(0)}
 bare_cov_err = max(
     np.max(np.abs(translations[a] @ F0_bare @ translations[a].conj().T - F0_bare))
@@ -676,7 +678,7 @@ dec_noncov_gap = max(
 )
 mod_defect = factor_translation_defect(F0)
 check(
-    "B1 decorated mover = g F^{(0)} g^dag with F^{(0)} the exactly covariant bare shift; the decorated mover itself is not translation-covariant (gap>1); zero modulus defect",
+    "decorated mover is a local-frame conjugate of the exactly covariant bare shift, is not itself translation-covariant, and has zero modulus defect",
     bare_cov_err < 1e-12 and recon_err < 1e-12 and dec_noncov_gap > 1.0 and mod_defect < TOL,
     f"bare_cov={bare_cov_err:.2e} recon={recon_err:.2e} dec_noncov_gap={dec_noncov_gap:.2f} modulus_defect={mod_defect:.2e}",
 )
@@ -686,14 +688,14 @@ g = np.diag(np.exp(1j * theta))
 F_frame = g @ F0 @ g.conj().T
 frame_defect = factor_translation_defect(F_frame)
 check(
-    "B2 an arbitrary local-frame decoration preserves zero modulus defect",
+    "an arbitrary local-frame decoration preserves zero modulus defect",
     frame_defect < 1e-12,
     f"defect={frame_defect:.2e}",
 )
 
 mod_match = np.max(np.abs(np.abs(F_frame) - np.abs(F0)))
 check(
-    "B3 the frame decoration is modulus-blind (|F| equals |F0| entrywise)",
+    "the frame decoration is modulus-blind (|F| equals |F0| entrywise)",
     mod_match < 1e-12,
     f"max||F|-|F0||={mod_match:.2e}",
 )
@@ -713,7 +715,7 @@ giv_unit = np.max(np.abs(givens @ givens.conj().T - eye64))
 giv_support = factor_support_vector([givens])
 giv_defect = factor_translation_defect(givens)
 check(
-    "B4 a site-dependent axis-1 Givens rotation is unitary and NN-supported but has positive modulus defect",
+    "a site-dependent axis-1 Givens rotation is unitary and NN-supported but has positive modulus defect",
     giv_unit < TOL and giv_support == (0, 1, 0) and giv_defect > 0.05,
     f"unit={giv_unit:.2e} support={giv_support} defect={giv_defect:.3f}",
 )
@@ -725,7 +727,7 @@ t1_conj = translations[1] @ D_alt @ translations[1].conj().T
 sign_flip = np.max(np.abs(t1_conj - (-D_alt)))
 gap = np.max(np.abs(-D_alt - D_alt))
 check(
-    "B5 a covariant-modulus diagonal that translations sign-flip: zero defect, frame-invariant, not covariant",
+    "a covariant-modulus diagonal that translations sign-flip has zero defect but is not frame-covariant",
     dalt_defect < TOL and frame_inv < 1e-12 and sign_flip < 1e-12 and gap > 1.0,
     f"defect={dalt_defect:.2e} frame_inv={frame_inv:.2e} flip={sign_flip:.2e} gap={gap:.2f}",
 )
@@ -733,13 +735,13 @@ check(
 bare = site_shift(1, +1, decorated=False)
 bare_defect = factor_translation_defect(bare)
 check(
-    "B6 the undecorated bare shift also has zero modulus defect (the functional is not spuriously positive)",
+    "the undecorated bare shift also has zero modulus defect (the functional is not spuriously positive)",
     bare_defect < TOL,
     f"defect={bare_defect:.2e}",
 )
 
 # ---------------------------------------------------------------------------
-heading("Group C -- Theorem 3B2: rotation transitivity forces all-axis support")
+heading("Rotation transitivity and the axis-faithful condition force all-axis support")
 
 
 def rule_parity(profile):
@@ -762,13 +764,13 @@ def is_rotation_covariant(rule):
 cov_parity = is_rotation_covariant(rule_parity)
 var_parity = variation_set(rule_parity)
 check(
-    "C1 the parity availability rule B is rotation-covariant and varies at slot 0",
+    "the parity availability rule B is rotation-covariant and varies at slot 0",
     cov_parity and 0 in var_parity,
     f"covariant={cov_parity} slot0_in_V={0 in var_parity}",
 )
 orbit0 = {rperm[0] for rperm in rot_perms}
 check(
-    "C2 rotation transport carries slot 0 to all six NN directions, and the covariant parity rule varies on exactly that orbit",
+    "rotation transport carries slot 0 to all six NN directions, and the covariant parity rule varies on exactly that orbit",
     orbit0 == set(range(6)) and var_parity == orbit0,
     f"orbit0={sorted(orbit0)} V(B)={sorted(var_parity)}",
 )
@@ -776,7 +778,7 @@ check(
 cov_slot0 = is_rotation_covariant(rule_slot0)
 var_slot0 = variation_set(rule_slot0)
 check(
-    "C3 control: a single-slot rule varies only at slot 0 and is NOT rotation-covariant",
+    "control: a single-slot rule varies only at slot 0 and is NOT rotation-covariant",
     var_slot0 == {0} and not cov_slot0,
     f"V(B')={sorted(var_slot0)} covariant={cov_slot0}",
 )
@@ -785,20 +787,20 @@ support_all = factor_support_vector(
     [site_letter[(0, +1)], site_letter[(1, +1)], site_letter[(2, +1)]]
 )
 check(
-    "C4 the all-axis mover set (S_1,S_2,S_3) has full constituent-factor support",
+    "the all-axis mover set (S_1,S_2,S_3) has full constituent-factor support",
     support_all == (1, 1, 1),
     f"support={support_all}",
 )
 
 support_same = factor_support_vector([site_letter[(0, +1)], site_letter[(0, +1)]])
 check(
-    "C5 a same-axis mover pair (S_1,S_1) supports only its own axis",
+    "a same-axis mover pair (S_1,S_1) supports only its own axis",
     support_same == (1, 0, 0),
     f"support={support_same}",
 )
 
 # ---------------------------------------------------------------------------
-heading("Group D -- Theorem 3B3: normal form, support law, dispersiveness dichotomy")
+heading("Decorated-word normal form, support law, and dispersiveness dichotomy")
 
 all_words = []
 for length in range(1, 6):
@@ -828,7 +830,7 @@ for w in all_words:
             d3_bad += 1
 
 check(
-    "D1 exact normal form W = sigma * prod T_cell^m * residual movers (all 9330 words, len<=5)",
+    "exact normal form W = sigma * prod T_cell^m * residual movers (all 9330 words, len<=5)",
     len(all_words) == 9330 and d1_bad == 0,
     f"words={len(all_words)} mismatches={d1_bad}",
 )
@@ -842,17 +844,17 @@ pd4, sd4 = direct_signed(w_reject)
 pb4, sb4 = normal_form_op(w_reject, L, site_idx, perm4, sign4, m_override=m_bad)
 aliases_4 = np.array_equal(pd4, pb4) and np.array_equal(sd4, sb4)
 check(
-    "D1R a wrong central exponent m_i is caught on L=12 but aliases to identity on L=4 (m_i is load-bearing)",
+    "a wrong central exponent m_i is caught on L=12 but aliases to identity on L=4 (m_i is load-bearing)",
     caught_12 and aliases_4,
     f"caught_on_L12={caught_12} aliases_on_L4={aliases_4}",
 )
 check(
-    "D2 support law on the aliasing-free L=6 ring: axis-i occupied iff net_i != 0 (all 9330 words)",
+    "support law on the aliasing-free L=6 ring: axis-i occupied iff net_i != 0 (all 9330 words)",
     d2_bad == 0,
     f"mismatches={d2_bad}",
 )
 check(
-    "D3 dispersiveness dichotomy: Bloch char-poly flat (<1e-8) iff net displacement is (0,0,0) (all 9330 words)",
+    "dispersiveness dichotomy: Bloch char-poly flat (<1e-8) iff net displacement is (0,0,0) (all 9330 words)",
     d3_bad == 0,
     f"anomalies={d3_bad}",
 )
@@ -889,7 +891,7 @@ for word, exp_net, exp_sigma, exp_flat in witnesses:
     if not ok:
         d4_bad += 1
 check(
-    "D4 five named length-6 witnesses: exact normal form, net, sign, and +-I / dispersive value",
+    "five named length-6 witnesses: exact normal form, net, sign, and +-I / dispersive value",
     d4_bad == 0,
     f"failed_witnesses={d4_bad}",
 )
@@ -899,7 +901,7 @@ pc_support = factor_support_vector(protocols["P_CANCEL"]["site_factors"])
 pc_identity = np.max(np.abs(site_protocol("P_CANCEL") - eye64))
 pc_disp = protocol_dispersion("P_CANCEL")
 check(
-    "D5 P_CANCEL separates the filters: zero modulus defect, full support, composite identity, flat",
+    "P_CANCEL separates the filters: zero modulus defect, full support, composite identity, flat",
     pc_defect < TOL and pc_support == (1, 1, 1) and pc_identity < TOL and pc_disp < 1e-8,
     f"defect={pc_defect:.2e} support={pc_support} identity={pc_identity:.2e} disp={pc_disp:.2e}",
 )
@@ -908,7 +910,7 @@ pw_support = factor_support_vector(protocols["P_WEIGHT"]["site_factors"])
 pw_disp = protocol_dispersion("P_WEIGHT")
 pw_defect = protocol_factor_modulus_defect("P_WEIGHT")
 check(
-    "D6 P_WEIGHT (net (2,1,1)) has full support, zero modulus defect, and is dispersive",
+    "P_WEIGHT (net (2,1,1)) has full support, zero modulus defect, and is dispersive",
     pw_support == (1, 1, 1) and pw_disp > 1e-7 and pw_defect < TOL,
     f"support={pw_support} disp={pw_disp:.2e} defect={pw_defect:.2e}",
 )
@@ -929,7 +931,7 @@ reorder_gap = np.max(
     np.abs(signed_matrix(((0, +1), (1, +1))) - signed_matrix(((1, +1), (0, +1))))
 )
 check(
-    "D7 identity flat, single mover dispersive, and dropping the anticommutation sign is detectable",
+    "identity flat, single mover dispersive, and dropping the anticommutation sign is detectable",
     id_disp < 1e-8 and s1_disp > 1e-3 and reorder_gap > 1.0,
     f"id={id_disp:.2e} s1={s1_disp:.3f} reorder_gap={reorder_gap:.2f}",
 )
@@ -949,12 +951,12 @@ attribution = {}
 for name in protocols:
     attribution.setdefault(first_failing_filter(name), set()).add(name)
 check(
-    "D8 the three filters jointly retain the four-member necessary-condition survivor set",
+    "the three filters jointly retain the four-member necessary-condition survivor set",
     attribution.get("survivor") == {"P_SYM", "P_SYM_OCT", "P_REORDER", "P_WEIGHT"},
     f"survivors={sorted(attribution.get('survivor', set()))}",
 )
 check(
-    "D9 ordered filters attribute each rejection to its first-failing stage (defect/support/dispersion)",
+    "ordered filters attribute each rejection to its first-failing stage (defect/support/dispersion)",
     attribution.get("defect") == {"P_MIX4", "P_STAIR", "P_PAIRFLAT"}
     and attribution.get("support") == {"P_AXIS", "P_DIAG"}
     and attribution.get("dispersion") == {"P_CANCEL"},
@@ -964,7 +966,7 @@ check(
 )
 
 # ---------------------------------------------------------------------------
-heading("Group E -- source-note quote pins (fabrication + framing gates)")
+heading("Source-note quote pins and claim-boundary checks")
 
 repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 note_path = os.path.join(
@@ -1009,7 +1011,7 @@ SUPPLIED_2 = "dispersive in the characteristic-polynomial sense used by the runn
 
 e1 = _norm(CLAUSE_1) in axioms_norm and _norm(CLAUSE_2) in axioms_norm
 check(
-    "E1 both admissibility clause sentences are present verbatim in the axioms file",
+    "both admissibility clause sentences are present verbatim in the axioms file",
     e1,
     "axiom clauses anchored" if e1 else "MISSING axiom clause",
 )
@@ -1017,10 +1019,10 @@ check(
 e2 = (
     _norm(CLAUSE_1) in note_norm
     and _norm(CLAUSE_2) in note_norm
-    and "necessary consequences" in note_norm
+    and "algebraic consequences" in note_norm
 )
 check(
-    "E2 the note quotes both axiom clauses and frames its results as necessary consequences",
+    "the note quotes both axiom clauses and frames its results as conditional algebraic consequences",
     e2,
     "note clauses + framing present" if e2 else "MISSING note clause/framing",
 )
@@ -1032,7 +1034,7 @@ e3 = (
     and _norm(SUPPLIED_2) in parent_norm
 )
 check(
-    "E3 the two supplied-input fragments appear in the note and are anchored verbatim in the parent selection note",
+    "the two supplied-input fragments appear in the note and are anchored verbatim in the parent selection note",
     e3,
     "supplied inputs anchored in parent" if e3 else "MISSING supplied input",
 )
@@ -1060,7 +1062,7 @@ FORBIDDEN = [
 note_low = note_norm.lower()
 present = [token for token in FORBIDDEN if token.lower() in note_low]
 check(
-    "E4 the note is free of forbidden status/framing/nondeterminism language",
+    "the note is free of forbidden status/framing/nondeterminism language",
     not present,
     "clean" if not present else f"PRESENT: {present}",
 )

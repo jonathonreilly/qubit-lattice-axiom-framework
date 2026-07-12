@@ -62,6 +62,21 @@ NON_CLEAN_VERDICTS = {
     "audited_numerical_match",
 }
 HONESTY_MARKERS = {"ATTEMPTED", "RULED OUT BY PRIOR"}
+# The five assertion classes of the no-go-discipline policy's
+# "When to invoke" list (docs/ai_methodology/skills/no-go-discipline/
+# SKILL.md; registered in docs/repo/controlled_vocabulary.yaml under
+# negative_assertion_classes). Every incoming audit must declare which classes
+# the artifact ASSERTS (empty list when none). The declaration is the
+# auditor's semantic judgment after reading the full note; the regex
+# trigger below is only a mechanical floor. Either surface requires the
+# N1-N8 packet.
+POLICY_NEGATIVE_CLASSES = {
+    "no_go_result",
+    "stretch_attempt_negative",
+    "bounded_with_named_walls",
+    "derived_no_go_boundary",
+    "conditional_wall_rationale",
+}
 ROUTE_DISPOSITIONS = {"CLOSED", "OPEN", "UNTESTED"}
 
 PATH_TRIGGER_RE = re.compile(
@@ -82,17 +97,23 @@ NEGATIVE_ASSERTION_RE = re.compile(
     r"\b(?:non[- ]?derivability|underdetermination|inability|non[- ]?supply|non[- ]?closure)\b|"
     r"\b(?:every|all)\s+(?:attempted\s+)?(?:routes?|attempts?|constructions?)\s+"
     r"remain(?:s)?\s+(?:open|unclosed|unresolved)\b|"
-    r"(?<!does not )(?<!do not )\brules?\s+out\s+(?:every|all)\s+"
-    r"(?:candidate\s+)?(?:routes?|attempts?|constructions?|carriers?|selectors?)\b|"
     r"\b(?:the\s+)?(?:selector|source|carrier|route|construction)\s+"
     r"remain(?:s)?\s+underdetermined\b|"
+    r"\b(?:residual|named|independent|unclosed|remaining|unresolved) (?:walls?|admissions?)\b|"
+    r"\bno derivation of\b[^\n.;:]{0,160}\b(?:from|under)\b|"
+    r"\b(?:absence|nonexistence|impossibility|failure|lack)\s+of\b"
+    r"[^\n.;:]{0,160}\b(?:route|derivation|selector|closure|solution|carrier|operator)s?\b|"
+    r"\bfailure\s+of\s+(?:every|all)\s+(?:route|attempt|construction)s?\b|"
+    r"\b(?:every|all)\s+(?:attempted\s+)?(?:routes?|attempts?|constructions?)\s+"
+    r"remain(?:s)?\s+(?:open|unclosed|unresolved)\b|"
+    r"(?<!does not )(?<!do not )\brules?\s+out\s+(?:every|all)\s+"
+    r"(?:candidate\s+)?(?:routes?|attempts?|constructions?|carriers?|selectors?)\b|"
+    r"\bunderdetermin(?:e[sd]?|ed|ation)\b|"
     r"\bno\s+(?:admissible\s+|candidate\s+)?(?:selector|source|carrier|route|construction)\s+"
     r"can\s+(?:produce|derive|supply|select|recover|close)\b|"
     r"\ball\s+(?:candidate\s+)?(?:routes?|attempts?|constructions?)\s+fail\b|"
     r"(?:cannot|can not|is not|are not) (?:be )?deriv(?:ed|able)(?: from)?|"
     r"(?:does not|cannot|fails? to|failed to) lift|"
-    r"\b(?:cannot|does not|do not)\s+(?:select|orient|factor|factorize|derive|supply|"
-    r"determine|fix|close|produce|recover)\b|"
     r"\bthere\s+(?:still\s+)?(?:remains?|persists?)\s+(?:an?\s+)?"
     r"(?:scoped\s+|residual\s+|unresolved\s+)?(?:wall|admission|obstruction)\b|"
     r"\bfails?\s+to\s+(?:close|resolve|remove|discharge|supply|derive|select)\b|"
@@ -104,7 +125,6 @@ NEGATIVE_ASSERTION_RE = re.compile(
     r"bounded with named walls|conditional on [^\n]{0,120}\b(?:walls?|admissions?|"
     r"imported selectors?|supplied selectors?|bridges?)\b|"
     r"\b(?:assumes?|assuming) [^\n]{0,120}\b(?:bridge|selector|sector selection|standard QFT)\b|"
-    r"\b(?:residual|named|independent|unclosed|remaining|unresolved) (?:walls?|admissions?)\b|"
     r"\b(?:scoped|structural|bounded|remaining|unresolved) obstruction\b|"
     r"\bobstruction (?:to|rules out|blocks|precludes|prevents)\b|"
     r"no uniform sign|\b(?:route|attempt|construction)\b[^\n]{0,80}\bdoes not close\b|"
@@ -132,7 +152,25 @@ EXPLICIT_NEGATIVE_CLOSURE_RE = re.compile(
     re.IGNORECASE,
 )
 NEGATIVE_SUBJECT_CLOSURE_RE = re.compile(
-    r"\b(?:(?:no|neither|zero)\s+"
+    # "no longer claims/asserts ..." is document-history prose; scientific
+    # "no longer" predicates are hard-gated above. "zero" is a zero-count
+    # determiner only when a plural noun precedes the closure verb
+    # ("zero candidate operators determine..."), never a scalar parameter
+    # ("at coupling zero the transfer map...", "a zero eigenvalue
+    # determines...").
+    r"\b(?:(?:no(?!\s+longer\s+(?:\w+ly\s+)?(?:claims?|asserts?|states?|"
+    r"reports?|presents?|carries|includes?))|neither|"
+    r"(?<!the )(?<!The )zero"
+    r"(?!\s+(?:modes?|eigenmodes?|eigenstates?|eigenfunctions?|eigenvalues?|eigenvectors?|crossings?|energy)\b)"
+    r"(?=\s+(?:[\w-]+\s+){0,3}"
+    r"(?:(?!(?:fixes|closes|determines|derives|selects|supplies|removes|"
+    r"resolves|yields|chooses|decides|gives|produces|maps|sets|takes|"
+    r"returns|equals|denotes|defines)\b)[\w-]+s"
+    # maps/sets/yields/returns read as plural nouns when a distinct
+    # closure predicate follows ("zero candidate maps determine ...").
+    r"|(?:maps|sets|yields|returns)(?=\s+(?:[\w-]+\s+){0,2}"
+    r"(?:determin|select|fix|constrain|supply|suppl|deriv|clos|recover|"
+    r"produc|resolv)))\s))\s+"
     r"(?:(?!(?:because|although|but|while|once|when|after|before|if|and|so|since|as|whereas|"
     r"is|are|was|were|has|have|had|remains?|exists?|required?|needed|introduced)\b)"
     r"[\w-]+\s+){1,10}|"
@@ -145,15 +183,25 @@ NEGATIVE_SUBJECT_CLOSURE_RE = re.compile(
     r"is|are|was|were|has|have|had|remains?|exists?|required?|needed|introduced)\b)"
     r"[\w-]+\s+){0,8})"
     r"(?:(?:can\s+|is\s+able\s+to\s+|are\s+able\s+to\s+)?"
-    r"(?:close[sd]?|remove[sd]?|resolve[sd]?|discharge[sd]?|suppl(?:y|ies|ied)|"
-    r"derive[sd]?|select[sd]?|determine[sd]?|fix(?:es|ed)?|retire[sd]?|"
+    # "closed <shape>" noun-phrase readings and "fixed point/locus"
+    # compounds are excluded; verb readings still gate.
+    r"(?:close(?:s|d(?!(?:[\s-]+forms?\b)|(?:(?:[\s-]+[a-z-]+){1,2}s?\b"
+    r"(?=\s+(?:is|are|was|were|appears?|emerges?|arises?|enters?|"
+    r"exists?|remains?|follows?|closes?|contributes?|forms?|lies?|sits?)\b))))?|"
+    r"remove[sd]?|resolve[sd]?|discharge[sd]?|suppl(?:y|ies|ied)|"
+    r"derive[sd]?|select[sd]?|determine[sd]?|"
+    r"fix(?:es)?(?!-)|fixed(?!-)(?![\s]+(?:points?|locus|loci|backgrounds?|"
+    r"surfaces?|charts?)\b(?!\s+(?:on|in|of|across|under|through|over)\b))(?!(?:[\s-]+[a-z-]+){1,2}s?\b(?=\s+(?:is|are|"
+    r"was|were|appears?|emerges?|arises?|enters?|exists?|remains?|"
+    r"follows?|contributes?|forms?|lies?|sits?)\b))|retire[sd]?|"
     r"eliminate[sd]?)|succeeds?\s+in\s+"
     r"(?:closing|removing|resolving|discharging|supplying|deriving|selecting|"
     r"determining|fixing|retiring|eliminating))\b",
     re.IGNORECASE,
 )
 NO_EXISTENCE_ASSERTION_RE = re.compile(
-    r"\bno\s+(?P<subject>"
+    r"\bno\s+(?!longer\s+(?:\w+ly\s+)?(?:claims?|asserts?|states?|reports?|"
+    r"presents?|carries|includes?)\b)(?P<subject>"
     r"(?:(?!(?:because|although|but|while|once|when|after|before|if|and|so|since|as|whereas|"
     r"is|are|was|were|has|have|had|remains?|required?|needed|introduced)\b)"
     r"[\w-]+\s+){1,10})exist(?:s)?\b",
@@ -187,16 +235,387 @@ BOUNDARY_SUBJECT_NEGATIVE_RE = re.compile(
 POSITIVE_BOUNDARY_CLOSURE_RE = re.compile(
     r"(?<!not )(?<!never )\b(?:closes?|closed|removes?|removed|discharges?|discharged|"
     r"supplies?|supplied|resolves?|resolved|retires?|retired|eliminates?|eliminated|"
-    r"answers?|answered|overcomes?|overcame)\b\s+(?:all\s+|the\s+|an?\s+|"
+    r"answers?|answered|overcomes?|overcame)\b\s+(?:all\s+|every\s+|each\s+|both\s+|its\s+|the\s+|an?\s+|"
     r"explicitly\s+)?(?:residual\s+|remaining\s+|scoped\s+|unresolved\s+)?"
     r"(?:walls?|admissions?|obstructions?|boundar(?:y|ies))\b|"
-    r"\b(?:all\s+|the\s+|an?\s+)?(?:residual\s+|remaining\s+|scoped\s+|"
+    r"(?<!neither )(?<!no )\b(?:all\s+|the\s+|an?\s+)?(?:residual\s+|remaining\s+|scoped\s+|"
     r"unresolved\s+)?(?:walls?|admissions?|obstructions?|boundar(?:y|ies))\b"
     r"[^\n.;:]{0,50}\b(?:is|are|was|were|has\s+been|have\s+been|had\s+been)\s+"
     r"(?:explicitly\s+)?"
     r"(?:closed|removed|discharged|supplied|resolved|retired|eliminated)\b",
     re.IGNORECASE,
 )
+# ---------------------------------------------------------------------------
+# Honest-scoping exemption architecture (trigger-precision repair).
+#
+# The no-go-discipline policy's "When to invoke" list gates artifacts that
+# ASSERT a negative outcome. The mandated honest-scoping template ("this
+# note does not derive X - carried by separate rows", "## What this does
+# NOT claim" fragments, labeled "Is not:" bullets) states coverage routing,
+# not a framework boundary, and is exempt from the bare coverage-verb
+# check below - subject to an authority-payload veto: the proposition, not
+# the placement, decides. Everything in the hard assertion set above gates
+# everywhere, including inside disclaimer surfaces. The regex layer is a
+# mechanical floor; the auditor's mandatory negative-class declaration
+# (validated in apply_audit) is the semantic authority on assertion.
+# ---------------------------------------------------------------------------
+NEGATIVE_COVERAGE_VERB_RE = re.compile(
+    r"\b(?:cannot|can\s+not|does\s+not|do\s+not)\s+"
+    r"(?:select|orient|factor|factorize|derive|supply|"
+    r"determine|fix|close|produce|recover)\b",
+    re.IGNORECASE,
+)
+AUTHORITY_PAYLOAD_RE = re.compile(
+    r"\b(?:axioms?|primitives?|postulates?|premises?|premise\s+set|"
+    r"framework|admissibility|"
+    r"baseline\s+(?:structure|postulates?|premises?|axioms?|package|rules?)|"
+    r"foundational\s+package|minimal\s+axioms|"
+    r"retained\s+(?:axioms?|primitives?|framework|structure|inputs?|"
+    r"premises?|postulates?|sector|authority|routes?|surface)|"
+    r"records?\s*,?\s+(?:alone|by\s+itself|content|data|order)|"
+    r"(?:approved|accepted|baseline|named|supplied|registered|admitted)\s+"
+    r"(?:premises?|postulates?|assumptions?|principles?|axioms?|primitives?)|"
+    r"(?:qubit|lattice|admissibility|record)(?:\s*,\s*"
+    r"(?:qubit|lattice|admissibility|record))*\s+and\s+"
+    r"(?:qubit|lattice|admissibility|record)|"
+    r"in\s+principle)\b"
+    r"|\b(?:from|under|within|using|given|on|with(?:\s+only)?|by\s+use\s+of|"
+r"via|through)\s+(?:the\s+|any\s+|all\s+|only\s+|"
+    r"every\s+|its\s+|these\s+|those\s+)?(?:[\w-]+\s+){0,4}"
+    r"(?:postulates?|premises?|axioms?|primitives?|structure|baseline|"
+    r"package|framework|foundations?|assumptions?|principles?)\b",
+    re.IGNORECASE,
+)
+NOTE_SUBJECT_DISCLAIMER_RE = re.compile(
+    r"\b(?:this|that|the(?:\s+(?:present|current))?)\s+"
+    r"(?:[\w-]+\s+){0,5}"
+    r"(?:note|companion|appendix|document|section|table|readme|write-?up)\s+"
+    r"(?:alone\s+|by\s+itself\s+|also\s+|deliberately\s+|explicitly\s+|"
+    r"intentionally\s+|therefore\s+|thus\s+|still\s+|currently\s+)*"
+    r"(?:does\s+not|do\s+not|did\s+not|cannot|can\s+not|will\s+not)\b"
+    r"(?:(?!\s+(?:and|but|nor|yet|while|whereas)\s)(?:[^\n.;:,?!\u2014]|\.(?=\d))){0,160}",
+    re.IGNORECASE,
+)
+LABELED_DISCLAIMER_LINE_RE = re.compile(
+    r"(?im)^(?P<label>[ \t]*(?:>[ \t]*)?(?:[-*+]|\d+(?:[.):]|\s*[-\u2013\u2014])?(?:\s*[-\u2013\u2014])?)?[ \t]*"
+    r"(?:what\s+(?:this|it)\s+is\s+not|is\s+not|does\s+not|not\s+claimed|"
+    r"non-?claims?|deliberately\s+not\s+claimed|out\s+of\s+scope)"
+    r"\s*[:\u2014-])(?P<payload>[^\n]*)$",
+)
+DISCLAIMER_HEADING_RE = re.compile(
+    r"(?:what\s+this\b.*\bdoes\s+not\b|what\s+this\s+note\b.*\bdoes\s+not\b|"
+    r"what\s+remains\b|does\s+not\b|not\s+claimed\b|non-?claims?\b|"
+    r"non-?goals?\b|(?:claim\s+)?scope\b|limitations?\b|caveats?\b|"
+    r"out[-\s]of[-\s]scope\b|"
+    r"honest\b|open\s+(?:items?|questions?|problems?)\b|"
+    r"boundar(?:y|ies)\b(?!\s+conditions?)|out\s+of\s+scope\b|safe\s+read\b)",
+    re.IGNORECASE,
+)
+MARKDOWN_HEADING_RE = re.compile(r"(?m)^[ \t]{0,3}(#{1,6})\s+(.*)$")
+DISCLAIMER_FRAGMENT_LINE_RE = re.compile(
+    r"^[ \t]*(?:(?:[-*+]|\d+(?:[.):]|\s*[-\u2013\u2014])?)[ \t]*)?"
+    r"(?:does\s+not|do\s+not|did\s+not|cannot|can\s+not|is\s+not|are\s+not|"
+    r"not|no)\b",
+    re.IGNORECASE,
+)
+UNIQUENESS_SUBJECT_RE = re.compile(
+    r"\s*(?:[\w-]+\s+){0,5}(?:other|second|additional|alternative|further)\b",
+    re.IGNORECASE,
+)
+AUTHORITY_UNIQUENESS_SUBJECT_RE = re.compile(
+    r"(?:routes?|derivations?|attempts?|constructions?|mechanisms?|arguments?|"
+    r"ways?|avenues?|strateg(?:y|ies)|approach(?:es)?|procedures?|schemes?|"
+    r"options?|"
+    r"methods?|paths?|closures?|proofs?|selectors?|carriers?|axioms?|"
+    r"primitives?|admissions?|witness(?:es)?|suppliers?|bridges?|lifts?|"
+    r"authorit(?:y|ies))",
+    re.IGNORECASE,
+)
+BOUNDARY_REMOVED_TEMPORAL_RE = re.compile(
+    r"\b(?:walls?|admissions?|obstructions?)\s+(?:\w+\s+){0,2}no\s+longer\s+"
+    r"(?:exists?|remains?|persists?|applies|holds?|blocks?)\b(?:[^.;:,\n]|,(?=\s*(?:but|and|yet)\s))*",
+    re.IGNORECASE,
+)
+CONTRACTION_RE = re.compile(
+    r"\b(do|does|did|could|would|should|has|have|had|is|are|was|were|need)"
+    r"n[\u2019']t\b",
+    re.IGNORECASE,
+)
+CANT_RE = re.compile(r"\bcan[\u2019']t\b", re.IGNORECASE)
+# Explicit negation, withdrawal, denial, and refutation of a negative
+# predicate is not a negative assertion. These scrub before the hard-set
+# search; affirmative forms ("the phase is underdetermined", "asserts
+# that the phase is underdetermined") are untouched.
+NEGATED_PREDICATE_PRESCRUBS = (
+    re.compile(
+        r"\b(?:is|are|was|were)\s+(?:\w+ly\s+)?not\s+(?:\w+ly\s+)?"
+        r"(?:underdetermined|undetermined|unspecified|impossible|incapable|"
+        r"insufficient|unliftable|unavailable|unobtainable|unclosed)\b",
+        re.IGNORECASE,
+    ),
+    re.compile(r"\b(?:does|do|did)\s+not\s+lack\b"
+        r"(?:(?!\s+(?:but|and|nor|yet|while|whereas|although|though|because|since)\s)[^\n.;:]){0,60}",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:claim|assertion|conclusion|reading)\s+that\b"
+        r"(?:(?!\s+(?:but|and|nor|yet|while|whereas)\s)[^\n.;:,\u2014]){0,140}"
+        r"\b(?:is|was|were|has\s+been|have\s+been)\s+"
+        r"(?:refuted|rejected|withdrawn|disproved|overturned|falsified|"
+        r"retracted)\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:no\s+longer\s+(?:asserts?|claims?|states?|reports?|maintains?|contends?)"
+        r"(?:\s+that\b)?|"
+        r"(?:explicitly\s+)?den(?:ies|ied)\s+that\b|"
+        r"is\s+false\s+that\b|refutes?\s+that\b|"
+        r"retract(?:s|ed)?\s+that\b|withdraw(?:s|ed)?\s+that\b)"
+        r"(?:(?!\s+(?:but|and|nor|yet|while|whereas|although|though|"
+        r"because|since)\s)[^\n.;:,\u2014])*",
+        re.IGNORECASE,
+    ),
+    # Rejection frames scoped to their claim noun or that-complement, in
+    # active and passive voice.
+    re.compile(
+        r"\b(?:rejects?|disproves?|falsif(?:y|ies)|repudiates?|overturns?)\s+"
+        r"(?:the\s+)?(?:claim|assertion|reading|conclusion)\s+"
+        r"(?:of\s+[\w-]+|that\b(?:(?!\s+(?:but|and|nor|yet|while|whereas)\s)[^\n.;:,\u2014])*)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:claim|assertion|reading|conclusion)\s+of\s+"
+        r"(?:underdetermination|impossibility|insufficiency|non[- ]?derivability|"
+        r"non[- ]?closure)\b[^\n.;:]{0,50}\b(?:is|was|has\s+been)\s+"
+        r"(?:rejected|disproved|refuted|overturned|falsified)\b",
+        re.IGNORECASE,
+    ),
+)
+POLARITY_IDIOM_PRESCRUBS = (
+    re.compile(
+        r"\bby\s+no\s+means\s+(?:\w+ly\s+)?impossible\b", re.IGNORECASE
+    ),
+    re.compile(r"\b(?:not|never)\s+(?:\w+ly\s+)?impossible\b", re.IGNORECASE),
+    re.compile(r"\bby\s+no\s+means\b", re.IGNORECASE),
+)
+
+
+def _exemptable(span: str) -> bool:
+    """A disclaimer surface may be scrubbed only when its text asserts
+    nothing about a framework authority source."""
+    return not AUTHORITY_PAYLOAD_RE.search(span)
+
+
+def _sentence_around(text: str, start: int, end: int) -> str:
+    window_left = max(0, start - 400)
+    left = max(text.rfind(ch, window_left, start) for ch in ".!?\n")
+    if left < window_left:
+        left = window_left - 1
+    window_right = min(len(text), end + 400)
+    rights = [i for ch in ".!?\n" if (i := text.find(ch, end, window_right)) >= 0]
+    return text[left + 1 : min(rights, default=window_right)]
+
+
+def _strip_disclaimer_sections(text: str) -> str:
+    headings = list(MARKDOWN_HEADING_RE.finditer(text))
+    if not headings:
+        return text
+    spans: list[tuple[int, int]] = []
+    for index, match in enumerate(headings):
+        title = re.sub(
+            r"^\s*\d+(?:\.\d+)*(?:[.):]|\s*[-\u2013\u2014])?\s*", "", match.group(2)
+        ).strip()
+        if not DISCLAIMER_HEADING_RE.match(title):
+            continue
+        level = len(match.group(1))
+        end = len(text)
+        for later in headings[index + 1:]:
+            if len(later.group(1)) <= level:
+                end = later.start()
+                break
+        spans.append((match.start(), end))
+    if not spans:
+        return text
+    merged: list[tuple[int, int]] = []
+    for start, end in sorted(spans):
+        if merged and start <= merged[-1][1]:
+            merged[-1] = (merged[-1][0], max(merged[-1][1], end))
+        else:
+            merged.append((start, end))
+    pieces: list[str] = []
+    cursor = 0
+    for start, end in merged:
+        pieces.append(text[cursor:start])
+        section = text[start:end]
+        kept_lines = []
+        section_lines = section.split("\n")
+        for line_index, line in enumerate(section_lines):
+            following = []
+            for ln in section_lines[line_index + 1 : line_index + 5]:
+                if re.match(r"[ \t]{0,3}#{1,6}\s", ln):
+                    break
+                following.append(ln)
+            rest = " ".join(following)
+            stop_match = re.search(r"[;:!?]|\.(?!\d)", rest)
+            continuation = rest[: stop_match.start() if stop_match else len(rest)]
+            wrapped = line + " " + continuation
+            is_heading = bool(re.match(r"[ \t]{0,3}#{1,6}\s", line))
+            if is_heading:
+                # A heading is presentation; any full-sentence remainder
+                # after a "## Scope: <assertion>" colon is judged normally.
+                stripped = re.sub(r"^[ \t]{0,3}#{1,6}\s+", "", line)
+                title_only = re.sub(r"^\s*\d+(?:\.\d+)*(?:[.):]|\s*[-\u2013\u2014])?\s*", "", stripped).strip()
+                parts = re.split(r":|\s*[\u2014\u2013]\s*|\s+-\s+|-(?=[A-Z])", stripped, maxsplit=1)
+                remainder = parts[1].strip() if len(parts) == 2 else ""
+                if not remainder and not DISCLAIMER_HEADING_RE.match(title_only):
+                    # A full-subject assertion used as a heading is prose,
+                    # not a disclaimer title.
+                    if not DISCLAIMER_FRAGMENT_LINE_RE.match(title_only):
+                        kept_lines.append(title_only if _exemptable(line) else line)
+                        continue
+                if not remainder:
+                    kept_lines.append("" if _exemptable(line) else line)
+                    continue
+                if DISCLAIMER_FRAGMENT_LINE_RE.match(remainder) and _exemptable(
+                    remainder
+                ):
+                    kept_lines.append("")
+                    continue
+                kept_lines.append(remainder if _exemptable(line) else line)
+                continue
+            if DISCLAIMER_FRAGMENT_LINE_RE.match(line) and _exemptable(
+                _fragment_veto_span(line)
+                + (" " + continuation if line and line[-1:] not in ".;:!?" else "")
+            ):
+                kept_lines.append(_fragment_split(line)[1])
+                continue
+            kept_lines.append(line)
+        pieces.append("\n".join(kept_lines))
+        cursor = end
+    pieces.append(text[cursor:])
+    return "".join(pieces)
+
+
+def _fragment_split(payload: str) -> tuple[str, str]:
+    parts = re.split(r"(;|\.(?=\s|$))", payload, maxsplit=1)
+    if len(parts) == 3:
+        return parts[0], parts[2]
+    return payload, ""
+
+
+def _fragment_veto_span(payload: str) -> str:
+    head, tail = _fragment_split(payload)
+    if tail and (
+        NEGATIVE_CONTINUATION_RE.match(tail)
+        or re.match(r"\s*(?:nor|and\s+no|even)\b", tail, re.IGNORECASE)
+    ):
+        return payload
+    return head
+
+
+def _scrub_labeled_disclaimer_lines(text: str) -> str:
+    def replace(match: re.Match[str]) -> str:
+        payload = match.group("payload").strip()
+        head, rest = _fragment_split(payload)
+        tail = match.string[match.end(): match.end() + 400]
+        stop_match = re.search(r"[;:!?]|\.(?!\d)", tail)
+        stop = stop_match.start() if stop_match else len(tail)
+        blank = tail.find("\n\n")
+        if 0 <= blank < stop:
+            stop = blank
+        next_line = tail[:stop].replace("\n", " ")
+        # A payload ending mid-claim (no sentence terminator) keeps its
+        # soft-wrapped continuation in the veto span; a complete payload
+        # followed by independent prose does not.
+        wrapped = _fragment_veto_span(payload)
+        if payload and payload[-1] not in ".;:!?":
+            wrapped = wrapped + " " + next_line
+        # Only subjectless template fragments are the disclaimer form; a
+        # full-subject payload is judged like ordinary prose. The veto span
+        # includes the soft-wrapped continuation line.
+        if (
+            (not payload or DISCLAIMER_FRAGMENT_LINE_RE.match(payload))
+            and _exemptable(wrapped)
+        ):
+            # Keep any independent continuation after the fragment's own
+            # sentence for ordinary matching.
+            return rest
+        return payload
+
+    return LABELED_DISCLAIMER_LINE_RE.sub(replace, text)
+
+
+def _scrub_local_scope_exclusions(text: str) -> str:
+    """Veto-aware form of the local-scope exclusion: a "this note does not
+    derive ..." clause is removed only when its full sentence names no
+    framework authority source."""
+
+    def replace(match: re.Match[str]) -> str:
+        sentence = _sentence_around(text, match.start(), match.end())
+        return "" if _exemptable(sentence) else match.group(0)
+
+    return LOCAL_SCOPE_EXCLUSION_RE.sub(replace, text)
+
+
+# A continuation that extends the NEGATIVE claim itself (prepositional
+# source, "even in principle", nor-coordination, appended negative
+# clause) keeps the clause and its continuation in the veto span. An
+# affirmative independent clause after the disclaimer ("; the retained
+# axioms do derive it") is routing attribution and stays out of the
+# veto span.
+NEGATIVE_CONTINUATION_RE = re.compile(
+    # Prepositional sources, subordinate qualifiers, and appended negative
+    # clauses extend the claim; the authority veto then judges the full
+    # span. Routing attributions ("because the parent row carries it")
+    # extend the span too and stay exempt because they name no authority.
+    r"\s*[,\u2014-]?\s*(?:from|under|using|given|within|when|while|"
+    r"because|once|unless|if|provided|operating|restricted)\b"
+    r"|\s*,?\s*even\b"
+    r"|\s*,?\s*nor\b"
+    r"|\s*[,;]\s*(?:and\s+)?no(?:t|r)?\b",
+    re.IGNORECASE,
+)
+
+
+def _scrub_note_subject_clauses(text: str) -> str:
+    def replace(match: re.Match[str]) -> str:
+        span = match.group(0)
+        tail = text[match.end(): match.end() + 200]
+        if NEGATIVE_CONTINUATION_RE.match(tail):
+            span = _sentence_around(text, match.start(), match.end())
+        return "" if _exemptable(span) else match.group(0)
+
+    return NOTE_SUBJECT_DISCLAIMER_RE.sub(replace, text)
+
+
+def _scrub_removed_boundaries(text: str) -> str:
+    def replace(match: re.Match[str]) -> str:
+        span = match.group(0)
+        # A coordinated predicate may still be live; drop only the
+        # removal statement and keep the coordinated remainder for the
+        # ordinary matchers ("no longer persists and the exact map
+        # closes ..." keeps the affirmative tail; "... but blocks the
+        # readout channel" keeps the live negative).
+        parts = re.split(r"(,?\s(?:but|and|yet)\s)", span, maxsplit=1, flags=re.IGNORECASE)
+        if len(parts) == 3:
+            tail = parts[2]
+            if re.match(
+                r"\s*(?:still\s+|also\s+)?(?:no\b|not\b|cannot|never|blocks?|prevents?|"
+                r"precludes?|fails?)",
+                tail,
+                re.IGNORECASE,
+            ):
+                # The coordinated predicate is live and negative; keep the
+                # boundary subject with it.
+                noun = re.match(r"\w+", span)
+                subject = noun.group(0) + " " if noun else ""
+                return subject + parts[1].strip() + " " + tail
+            # Affirmative continuation: drop the removal statement only.
+            return tail
+        return ""
+
+    return BOUNDARY_REMOVED_TEMPORAL_RE.sub(replace, text)
+
 NEGATED_BOUNDARY_RE = re.compile(
     r"\b(?:no|not|never|without)\s+(?:an?\s+|live\s+)?"
     r"(?:residual\s+|remaining\s+|scoped\s+|unresolved\s+)?"
@@ -228,7 +647,7 @@ LOCAL_SCOPE_EXCLUSION_RE = re.compile(
     r"(?:here|in this (?:note|theorem|section|work)|within this (?:note|scope|theorem))\b|"
     r"\b(?:it|this\s+(?:note|runner|script|calculation|result|theorem|lemma))\s+"
     r"(?:still\s+)?does\s+not\s+(?:derive|establish|prove|claim|identify)\b"
-    r"[^\n.;:]*?(?=\s+\b(?:and|but|yet|because|although|though|while|whereas|since|so)\b|[\n.;:]|$)",
+    r"[^\n.;:,]*?(?=\s+\b(?:and|but|nor|yet|because|although|though|while|whereas|since|so)\b|[\n.;:,]|$)",
     re.IGNORECASE,
 )
 SPECTRAL_COUNT = r"(?:\d+|one|two|three|four|five)"
@@ -2088,10 +2507,45 @@ def evidence_snapshot_index_growth(
 
 
 def _has_governed_no_existence(text: str) -> bool:
-    return any(
-        not BOUNDARY_ABSENCE_SUBJECT_RE.search(match.group("subject"))
-        for match in NO_EXISTENCE_ASSERTION_RE.finditer(text)
-    )
+    def governed(subject: str) -> bool:
+        if BOUNDARY_ABSENCE_SUBJECT_RE.search(subject):
+            return False
+        if UNIQUENESS_SUBJECT_RE.match(subject):
+            # "no other/second X exists" is a positive uniqueness clause
+            # when X is a mathematical object. The object before the first
+            # preposition decides: "no other route through the premise set"
+            # gates on route; "no other representation of the path algebra"
+            # stays positive even though "path" appears as a modifier.
+            tokens = subject.strip().split()
+            for index, token in enumerate(tokens):
+                if token.lower() in {
+                    "of", "for", "to", "through", "from", "under",
+                    "in", "within", "using", "given", "between",
+                }:
+                    tokens = tokens[:index]
+                    break
+            while tokens and tokens[-1].lower() in {"whatsoever", "at", "all"}:
+                tokens.pop()
+            head = tokens[-1] if tokens else ""
+            if not AUTHORITY_UNIQUENESS_SUBJECT_RE.fullmatch(head):
+                return False
+        return True
+
+    for match in NO_EXISTENCE_ASSERTION_RE.finditer(text):
+        tail = text[match.end(): match.end() + 60]
+        span = match.group(0) + tail
+        if re.search(
+            r"\b(?:for|to)\s+(?:deriv|produc|obtain|reach|suppl|select|"
+            r"clos|recover|construct)",
+            span,
+            re.IGNORECASE,
+        ):
+            # "no other X exists for deriving Y" asserts route absence
+            # whatever noun names the route.
+            return True
+        if governed(match.group("subject")):
+            return True
+    return False
 
 
 def _has_forced_spectral_boundary(text: str) -> bool:
@@ -2154,9 +2608,17 @@ def _has_negative_boundary_assertion(text: str) -> bool:
         prose,
     )
     normalized = re.sub(r"[`*_~$(){}\[\]]", "", prose)
+    normalized = CONTRACTION_RE.sub(lambda m: m.group(1) + " not", normalized)
+    normalized = CANT_RE.sub("can not", normalized)
+    normalized = re.sub(r"\bwon[\u2019']t\b", "will not", normalized, flags=re.IGNORECASE)
+    for idiom in POLARITY_IDIOM_PRESCRUBS:
+        normalized = idiom.sub("certainly", normalized)
+    for negated in NEGATED_PREDICATE_PRESCRUBS:
+        normalized = negated.sub("", normalized)
     cleaned = NEGATED_NEGATIVE_ASSURANCE_RE.sub("", normalized)
     cleaned = NEGATED_LABEL_ASSURANCE_RE.sub("", cleaned)
-    cleaned = LOCAL_SCOPE_EXCLUSION_RE.sub("", cleaned)
+    cleaned = _scrub_local_scope_exclusions(cleaned)
+    cleaned = _scrub_removed_boundaries(cleaned)
     if (
         EXPLICIT_NEGATIVE_CLOSURE_RE.search(cleaned)
         or NEGATIVE_SUBJECT_CLOSURE_RE.search(cleaned)
@@ -2169,7 +2631,19 @@ def _has_negative_boundary_assertion(text: str) -> bool:
         return True
     cleaned = POSITIVE_BOUNDARY_CLOSURE_RE.sub("", cleaned)
     cleaned = NEGATED_BOUNDARY_RE.sub("", cleaned)
-    return bool(NEGATIVE_ASSERTION_RE.search(cleaned))
+    if NEGATIVE_ASSERTION_RE.search(cleaned):
+        return True
+    # Only the bare coverage-verb class remains. Remove the honest-scoping
+    # surfaces the policy does not gate — canonical disclaimer sections,
+    # labeled disclaimer payloads, and note-subject coverage clauses — each
+    # subject to the authority-payload veto, then re-check. Soft-wrapped
+    # lines are joined so a clause cannot hide its authority source behind
+    # a line break.
+    scrubbed = _strip_disclaimer_sections(cleaned)
+    scrubbed = _scrub_labeled_disclaimer_lines(scrubbed)
+    scrubbed = re.sub(r"(?<!\n)\n(?!\n)", " ", scrubbed)
+    scrubbed = _scrub_note_subject_clauses(scrubbed)
+    return bool(NEGATIVE_COVERAGE_VERB_RE.search(scrubbed))
 
 
 def source_requires_no_go_discipline(
@@ -3443,8 +3917,30 @@ def validate_no_go_discipline(
     source_required: bool = False,
     evidence_manifest: dict[str, dict] | None = None,
     prior_claim_scope: str | None = None,
+    require_declaration: bool = False,
 ) -> str | None:
-    required = source_required or output_requires_no_go_discipline(audit)
+    declared = audit.get("negative_assertion_classes")
+    if require_declaration:
+        if not isinstance(declared, list) or not all(
+            isinstance(item, str) for item in declared
+        ):
+            return (
+                "negative_assertion_classes must be a list (possibly empty) "
+                "of policy classes; the auditor declares every negative "
+                "assertion class the artifact makes"
+            )
+        unknown = sorted(set(declared) - POLICY_NEGATIVE_CLASSES)
+        if unknown:
+            return (
+                "negative_assertion_classes contains unknown classes "
+                f"{unknown}; allowed: {sorted(POLICY_NEGATIVE_CLASSES)}"
+            )
+    declared_requires = bool(declared) if isinstance(declared, list) else False
+    required = (
+        source_required
+        or output_requires_no_go_discipline(audit)
+        or declared_requires
+    )
     packet = audit.get("no_go_discipline")
     if not required:
         if packet is None:

@@ -333,6 +333,7 @@ Return a single JSON object with exactly these fields. No other prose.
   },
   "verdict": "<one of audited_clean, audited_renaming, audited_conditional, audited_decoration, audited_numerical_match, audited_failed>",
   "verdict_rationale": "<two to four sentences>",
+  "negative_assertion_classes": ["<REQUIRED, possibly empty. After reading the full note, list every no-go-discipline policy class the artifact ASSERTS: no_go_result, stretch_attempt_negative, bounded_with_named_walls, derived_no_go_boundary, conditional_wall_rationale. This is your semantic judgment and is independent of any mechanical trigger; honest coverage routing (this note does not derive X - the parent row carries it) is not an assertion and declares nothing. Any non-empty declaration requires the full no_go_discipline packet.>"],
   "decoration_parent_claim_id": "<claim_id of the upstream parent if verdict = audited_decoration, else null>",
   "open_dependency_paths": ["<note path of any cited authority that is itself support / open / conditional>"],
   "auditor_confidence": "<low | medium | high>",

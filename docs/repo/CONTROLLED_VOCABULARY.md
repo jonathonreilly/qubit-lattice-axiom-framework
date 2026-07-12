@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=de0c15a28d0872427a798a7d0f9eb99389c46cac72ab4ed43d93ef2f8e48e700 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=c03e7bd6a1e5cd35db4beaf6570ea5bd4989a38ca7001e2d877f82da3fa6e3bc -->
 # Controlled Vocabulary
 
 > **Front-door lookup:** Looking up a single term? Go to
@@ -425,6 +425,14 @@ When the status is `FAIL`, `no_go_discipline.demotion` is required and must be e
 Packetless legacy negative authority is invalidated with the controlled reason:
 
 - `no_go_discipline_packet_missing` — A clean negative-boundary audit has no structured N1-N8 packet; archive it and return the row to fresh audit before it can remain authoritative.
+
+`negative_assertion_classes` is the mandatory auditor declaration on every incoming audit: the policy assertion classes the artifact makes, judged semantically from the full note (empty list when none). Any non-empty declaration requires the N1-N8 packet; an empty declaration never bypasses the mechanical trigger. Allowed classes:
+
+- `no_go_result` — Asserts a no_go outcome: structurally closed, no route exists, no retained primitive supplies the target.
+- `stretch_attempt_negative` — Asserts a stretch-attempt negative outcome: the attempted route does not close.
+- `bounded_with_named_walls` — Asserts a bounded result conditional on named walls or admissions.
+- `derived_no_go_boundary` — Asserts a derived no-go boundary inside a positive theorem, such as a per-element identity that does not lift.
+- `conditional_wall_rationale` — An audit rationale that names a residual wall as the reason a verdict is conditional.
 
 ### Independence tiers
 

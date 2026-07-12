@@ -4,10 +4,11 @@
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Claim scope note:** conditional theorem on the named availability-rule model
-`B`, the named `REAL3` realization predicate, the period-2 decorated-mover word
-class on the one-amplitude `Z^3` carrier, and the stated finite verifications.
-No inventory-completeness claim, no protocol-existence claim, and no claim that
-the physical tick realizes `REAL3` are made.
+`B`, the stated 3D protocol-realization conditions, the period-2 decorated-mover
+word class on the one-amplitude `Z^3` carrier, and the stated finite
+verifications. No inventory-completeness claim, no protocol-existence claim,
+and no claim that the physical tick satisfies those realization conditions are
+made.
 **Status authority:** independent audit lane only. This source note does not set or predict an audit outcome.
 **Primary runner:**
 [`scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py`](../scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py)
@@ -31,11 +32,12 @@ The second input is that the realized composite word is supplied to be
 
 > dispersive in the characteristic-polynomial sense used by the runner.
 
-This note derives both supplied inputs as theorems from the two Admissibility
-clauses plus a named realization predicate `REAL3`, rather than leaving them as
-separately supplied physical readings. It does not claim to settle the selection
-question; it is the next derivation this step opens, and the residues the
-selection note keeps open stay open here.
+This note makes the two supplied inputs explicit as named protocol-realization
+conditions and derives their algebraic consequences on the analyzed word
+class. It does not derive the physical rule-to-protocol identification, satisfy
+the selection note's missing physical-bridge requirement, or settle the
+selection question. The residues kept open by the selection note stay open
+here.
 
 ## Setting And Objects
 
@@ -48,8 +50,9 @@ displacement satisfies `|net_i| <= 5 < 6` so no wraparound aliases a nonzero
 displacement to zero. The normal form is realized as an explicit operator
 product on the `L=12` ring (`12^3 = 1728` sites), large enough that a wrong
 central exponent `m_i` cannot alias to the identity the way `T_cell_i^2 = I`
-makes it on `L=4`. Nearest-neighbor license: every elementary factor
-is a nearest-neighbor-supported unitary. A local `U(1)` frame is a
+makes it on `L=4`. Nearest-neighbor support and unitarity are explicit model
+restrictions: every elementary factor is a nearest-neighbor-supported unitary.
+A local `U(1)` frame is a
 site-diagonal unitary. Whole-cell translation on axis `i` is translation by two
 sites on axis `i`, written `T_cell_i`; one-site translation on axis `i` is
 `T_i`.
@@ -86,37 +89,40 @@ Their formalizations on the availability-rule model are:
   rotation `R`, where the 24-element rotation group acts on the `N6` slots.
 - **Clause 2, variation part.** `V(B)` is nonempty.
 
-## The Named 3D Realization Predicate
+## The 3D Protocol-Realization Conditions
 
 For a sequential protocol `P = (F_1, ..., F_m)` with composite word
-`W = F_m ... F_1`, the predicate `REAL3(P; B)` bundles three conditions.
+`W = F_1 ... F_m` in the runner's matrix-order convention, the conditional
+model uses three realization conditions.
 
-- **(R1-factor)** Each constituent factor is built from the fixed rule data by
-  one site-independent assignment, modulo a local `U(1)` frame:
+- **Factor covariance condition.** Each constituent factor is built from the
+  fixed rule data by one site-independent assignment, modulo a local `U(1)` frame:
   `F_j = g_j F_j^{(0)} g_j^dagger` with `g_j` diagonal and `F_j^{(0)}` exactly
   translation covariant.
-- **(R2-factor)** Every variation offset `d in V(B)` is carried by some
-  constituent factor: some `F_j` has a nonzero matrix element at
-  nearest-neighbor displacement `d`.
-- **(R2-word)** For every axis `i` with `+e_i in V(B)` or `-e_i in V(B)`, the
-  composite `W` has a nonzero site-level matrix element `W[x,y]` whose
+- **Axis-faithful factor condition.** For every axis `i` with `+e_i in V(B)`
+  or `-e_i in V(B)`, some constituent factor has a nonzero matrix element at a
+  nearest-neighbor displacement on axis `i`.
+- **Composite-support condition.** For every axis `i` with `+e_i in V(B)` or
+  `-e_i in V(B)`, the composite `W` has a nonzero site-level matrix element `W[x,y]` whose
   displacement `y - x` has nonzero axis-`i` component, at any displacement
   length.
 
-R2-word is a genuine additional realization premise at the composite level. It
-is not a consequence of the factor-level conditions R1-factor and R2-factor;
-the `P_CANCEL` witness below satisfies both factor conditions while failing
-R2-word.
+The composite-support condition is a genuine additional realization premise at
+the composite level. It is not a consequence of the two factor-level
+conditions; the `P_CANCEL` witness below satisfies both factor conditions while
+failing the composite-support condition.
 
-## Theorem 3B1 (Factor Covariance And Zero Modulus Defect)
+## Factor Covariance And Zero Modulus Defect Theorem
 
-**Statement.** Clause 1 (translation part) together with R1-factor implies that
-each constituent factor is fully covariant modulo local `U(1)` frames, meaning
+**Statement.** The factor covariance condition implies that each constituent
+factor is fully covariant modulo local `U(1)` frames, meaning
 `T_a F_j T_a^dagger = h F_j h^dagger` for a diagonal `h` per axis generator, and
 therefore that each constituent factor has zero site-modulus translation
-defect.
+defect. Clause 1 motivates the site-independent assignment in the condition but
+does not by itself derive the rule-to-factor identification.
 
-**Proof.** By R1-factor, `F_j = g_j F_j^{(0)} g_j^dagger` with `F_j^{(0)}`
+**Proof.** By the factor covariance condition,
+`F_j = g_j F_j^{(0)} g_j^dagger` with `F_j^{(0)}`
 exactly translation covariant, so translating `F_j` conjugates it by the
 diagonal `h = T_a g_j T_a^dagger g_j^dagger`, which is a local frame. Frame
 conjugation multiplies each matrix element by unit-modulus diagonal phases, so
@@ -146,19 +152,21 @@ has modulus defect `> 0.05`. The defect functional therefore has teeth.
 The zero-defect filter of the selection note is the derived necessary shadow of
 this theorem.
 
-## Theorem 3B2 (Rotation Transport And All-Axis Factor Support)
+## Rotation Transport And All-Axis Factor Support Theorem
 
 **Statement.** The 24 proper cubic rotations act transitively on the six
 nearest-neighbor offsets. Hence Clause 1 (rotation part) together with Clause 2
 (some variation offset `d0`) implies that `V(B)` contains all six offsets, and,
-combined with R2-factor, the constituent-factor support vector is `(1,1,1)`.
+combined with the axis-faithful factor condition, the constituent-factor
+support vector is `(1,1,1)`.
 
 **Transport proof.** Let `(c, c')` witness variation at slot `d0`, so they agree
 off slot `d0` and `B(c) != B(c')`. Fix a proper cubic rotation `R`. The rotated
 profiles `c o R^{-1}` and `c' o R^{-1}` agree off slot `R d0`, and by the
 rotation part `B(c o R^{-1}) = B(c) != B(c') = B(c' o R^{-1})`, so `R d0` is a
 variation slot. As `R` ranges over the group, `R d0` ranges over the full orbit
-of `d0`, which by transitivity is all six offsets. Thus `V(B) = N6`. R2-factor
+of `d0`, which by transitivity is all six offsets. Thus `V(B) = N6`. The
+axis-faithful factor condition
 then forces some factor to carry nearest-neighbor support on each axis, so the
 support vector is `(1,1,1)`.
 
@@ -174,7 +182,7 @@ the transport argument rules out under covariance.
 The all-axis factor-support filter of the selection note is the derived
 necessary shadow of this theorem.
 
-## Theorem 3B3 (Word Reduction And The Dispersiveness Dichotomy)
+## Word Reduction And The Dispersiveness Dichotomy Theorem
 
 Consider finite words in the six letters
 `{S_1^{+1}, S_1^{-1}, S_2^{+1}, S_2^{-1}, S_3^{+1}, S_3^{-1}}`.
@@ -224,60 +232,65 @@ exponent `m_i` is caught on `L=12` while it aliases to the identity on `L=4`, so
 the `m_i` are load-bearing. The support law is checked on the `L=6` ring, where
 words through length 5 never wrap. The induction is the prose argument above.
 
-**Bridge conclusion.** Under Clauses 1 and 2 and `REAL3`, Theorem 3B2 gives
-variation on all three axes; R2-word forces axis support on all three axes; the
-support law gives `net_i != 0` for all `i`; the dichotomy gives that the
-realized composite word is dispersive in the characteristic-polynomial sense.
-This derives, on the analyzed word class, the condition the selection note lists
-as its supplied input 2.
+**Conditional conclusion.** Under Clauses 1 and 2 and the three stated
+protocol-realization conditions, the rotation-transport theorem gives
+variation on all three axes; the composite-support condition forces axis
+support on all three axes; the support law gives `net_i != 0` for all `i`; and
+the dichotomy gives that the composite word is dispersive in the
+characteristic-polynomial sense. This is an algebraic consequence of the
+explicit composite-support premise, not a derivation that the physical tick
+satisfies that premise.
 
-**Separating witness (R2-word is load-bearing).** The cancelling word
+**Separating witness (the composite-support condition is load-bearing).** The
+cancelling word
 `P_CANCEL = S_1 S_1^{-1} S_2 S_2^{-1} S_3 S_3^{-1}` has zero constituent-factor
-modulus defect and factor support union `(1,1,1)`, so it satisfies R1-factor and
-R2-factor against the parity table, yet it composes to the identity:
+modulus defect and factor support union `(1,1,1)`, so it satisfies the two
+factor-level conditions against the parity table, yet it composes to the
+identity:
 `net = (0,0,0)`, no off-site composite support, flat. It violates exactly
-R2-word. The unconditional claim that nonvacuous variation alone forces
-composite dispersiveness is therefore false and is not made; R2-word is the
-named extra realization premise.
+the composite-support condition. The unconditional claim that nonvacuous
+variation alone forces composite dispersiveness is therefore false and is not
+made; composite support is the named extra realization premise.
 
 **Non-removal witness.** The weighted word `P_WEIGHT = S_1 S_1 S_2 S_3` has
-`net = (2,1,1)`, satisfies R2-word (axis-1 support at displacement 2 through
+`net = (2,1,1)`, satisfies the composite-support condition (axis-1 support at
+displacement 2 through
 `T_cell_1`, nearest-neighbor support on axes 2 and 3), and is dispersive. The
-bridge does not remove `P_WEIGHT`; the four-member candidate set of the
+conditional filter does not remove `P_WEIGHT`; the four-member candidate set of the
 selection note is kept intact.
 
 **Scope honesty.** The reduction and dichotomy are proved on words in the
 decorated movers. Non-word protocols, such as commuting pairing factors and
-diagonal-phase protocols, are outside 3B3's scope; in the analyzed ten-member
-inventory they are removed upstream by the 3B1 defect filter or the 3B2 support
-filter, not by 3B3.
+diagonal-phase protocols, are outside the word theorem's scope; in the analyzed
+ten-member inventory they are removed upstream by the factor-defect or
+factor-support filter, not by the word theorem.
 
 ## Endpoint Corollary (Consistency With The Selection Note)
 
-Applying the three derived necessary conditions -- zero constituent-factor
-modulus defect, all-axis factor support, and R2-word (which on the word class
-implies composite dispersiveness) -- to the ten-member inventory of the
-selection note reproduces exactly the four-member candidate set
+Applying zero constituent-factor modulus defect, all-axis factor support, and
+the explicit composite-support condition (which on the word class implies
+composite dispersiveness) to the ten-member inventory of the selection note
+reproduces exactly the four-member candidate set
 `{P_SYM, P_SYM_OCT, P_REORDER, P_WEIGHT}`. Nothing is consumed: the four-member
 set is reproduced, not narrowed, and the octant, central-sign, and whole-cell
 translation residues stay open exactly as in the selection note.
 
 ## Boundary And Honest Auditor Read
 
-- The availability-rule model `B` and the predicate `REAL3` are named
-  formalizations. The three theorems are conditional on them. Whether the
-  physical tick realizes `REAL3` is not derived here.
-- The 3B3 dichotomy is proved on the decorated-mover word class only, with
-  exhaustive machine verification through length 5 plus named longer witnesses,
-  and an algebraic induction argued in prose.
+- The availability-rule model `B` and the three protocol-realization conditions
+  are named conditional inputs. Whether the physical tick satisfies them is not
+  derived here.
+- The word dispersiveness dichotomy is proved on the decorated-mover word class
+  only, with exhaustive machine verification through length 5 plus named longer
+  witnesses, and an algebraic induction argued in prose.
 - Nothing here selects among the four surviving protocols and nothing removes
   `P_WEIGHT`.
-- The two derived factor conditions are necessary consequences of the bridge,
-  not equivalences. Their converses are false and are shown false by explicit
-  witnesses: `D_alt` has zero modulus defect without being covariant modulo
-  local frames, and a constant-rule uniform mover pattern shows that factor
-  support does not certify variation. Binary all-axis factor support is much
-  weaker than full protocol covariance.
+- The two factor filters are necessary consequences of the explicit
+  factor-level conditions, not equivalences. Their converses are false and are
+  shown false by explicit witnesses: `D_alt` has zero modulus defect without
+  being covariant modulo local frames, and a constant-rule uniform mover
+  pattern shows that factor support does not certify variation. Binary all-axis
+  factor support is much weaker than full protocol covariance.
 
 ## Falsifiers
 
@@ -299,10 +312,6 @@ translation residues stay open exactly as in the selection note.
 - [KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026-06-10.md](KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026-06-10.md)
   supplies the 3D decorated-mover constructions, the factor identities, and the
   bounded-class scope.
-- [LATTICE_NN_LIGHT_CONE_NOTE.md](LATTICE_NN_LIGHT_CONE_NOTE.md)
-  supplies the nearest-neighbor site-license as a finite forward-reachability
-  theorem.
-
 Context (no dependency edge):
 `KINETIC_ISOTROPY_3D_FACTORIZED_PROTOCOL_SELECTION_ON_ANALYZED_CLASSES_BOUNDED_THEOREM_NOTE_2026-07-09`,
 `TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09`,
@@ -318,9 +327,9 @@ defect functional with its Givens rejector and `D_alt` strictness witness, the
 parity availability table with its rotation-transport and non-covariant control,
 the exhaustive normal-form reduction and support law and dispersiveness
 dichotomy over all 9330 words through length 5, the named length-6 witnesses,
-and the ten-member endpoint reproduction. The check-group inventory is A
-(surface reconstruction), B (Theorem 3B1), C (Theorem 3B2), D (Theorem 3B3), and
-E (quote pins). The expected final line is `TOTAL: PASS=30 FAIL=0`. The runner
+and the ten-member endpoint reproduction. The check inventory covers surface
+reconstruction, factor covariance, rotation transport, word reduction, and
+source-note quote pins. The expected final line is `TOTAL: PASS=30 FAIL=0`. The runner
 is deterministic: it uses no randomness, a fixed momentum grid, and fixed word
 and phase lists, and it reads no audit metadata.
 
@@ -334,6 +343,7 @@ Current local runner result is recorded in the SHA-pinned cache.
 
 ## Changelog
 
-- **2026-07-10.** Initial bounded note and deterministic runner deriving the
-  two supplied inputs of the selection note as the theorems 3B1, 3B2, and 3B3
-  under the named availability-rule model and the `REAL3` realization predicate.
+- **2026-07-10.** Initial bounded note and deterministic runner proving the
+  conditional factor-covariance, rotation-transport, and decorated-word
+  dispersiveness results under the named availability-rule model and explicit
+  protocol-realization conditions.

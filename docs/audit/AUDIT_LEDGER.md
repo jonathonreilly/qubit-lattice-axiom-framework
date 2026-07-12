@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 5 |
-| unaudited | 2814 |
+| unaudited | 2813 |
 | audit_in_progress | 24 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 36 |
+| ~~audited_conditional~~ | 37 |
 | ~~audited_failed~~ | 7 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 24 |
 | `audited_clean` | 459 |
-| `audited_conditional` | 36 |
+| `audited_conditional` | 37 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3164 |
+| `unaudited` | 3163 |
 
 | claim_type | count |
 |---|---:|
@@ -630,6 +630,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `source_resolved_generated_family_probe_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -6449,6 +6450,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner recomputes the exact summary stated in the note over seeds 0..3 and the retained source ladder. The note keeps the result bounded as a discriminator rather than claiming generated-family closure.
 - **rationale:** The current runner output matches the frozen note: both variants have zero-source shift 0, support rescue gives 9/16 TOWARD with N_eff 5.31, wavefield gives 6/16 with N_eff 5.14, and the derived discriminator is delta_TOWARD=-3, delta_N_eff=-0.18, bottleneck=geometry-limited. The claim boundary is narrow and explicit: this is a generated-family bottleneck discriminator, not a closure theorem. Residual risk is limited to the chosen compact family, seeds, kNN-floor bridge, and two bridge variants.
 - **auditor confidence:** high
+
+### `source_resolved_generated_family_probe_note`
+
+- **Note:** [`SOURCE_RESOLVED_GENERATED_FAMILY_PROBE_NOTE.md`](../../docs/SOURCE_RESOLVED_GENERATED_FAMILY_PROBE_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Frozen four-seed, four-strength computation of zero-source reduction, Green-versus-instantaneous centroid shifts, sign, and fitted strength exponent for one specified generated-DAG harness; no family-wide or architecture-wide no-go.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00351-source_resolved_generated_fa`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Across the frozen readout, the Green-kernel means are AWAY for all four source strengths and fit an F~M exponent of 0.40, so sign and near-linear scaling fail together.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the stated finite rows, but no invariance or exhaustion argument lifts four seeds at one geometry, calibration, source selection, and readout to the compact generated DAG family or the architecture generally. Multiple distinct transfer-preserving variants remain untested.
+- **rationale:** The finite computation is promoted to a clean generated-family transfer no-go without testing dependence on seed ensemble, geometry, gain, source selection, dynamics, or observable. The runner establishes AWAY sign and exponent 0.40 only for the frozen configured harness, while the no-go discipline gate leaves distinct mechanisms and resolution classes open. Either the note must be narrowed to the finite fixture or controlled sweeps and an invariance or exhaustion argument must be added.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: only the frozen finite fixture is closed; six genuinely distinct routes remain untested.
+    - N2: architecture-wide generalization remains unresolved because model-choice invariance is unproved.
+    - N3: gain, source carrier, imposed dynamics, and centroid readout are supplied rather than derived or exhausted.
+    - N5: family-wide and architecture-wide rhetoric exceeds the tested finite resolutions.
 
 ### `source_resolved_generated_new_family_note`
 

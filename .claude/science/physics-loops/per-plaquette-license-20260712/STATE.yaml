@@ -13,6 +13,14 @@ target_status: best-honest-status
 cycle: 1
 block: 01
 active_route: R2-one-tick-reachability-bound
+active_route_status: conditional-support
+files_touched:
+  - docs/PER_PLAQUETTE_LICENSE_ONE_TICK_REACHABILITY_DERIVATION_NARROW_THEOREM_NOTE_2026-07-12.md
+  - scripts/per_plaquette_license_one_tick_reachability_derivation_2026_07_12.py
+  - logs/runner-cache/per_plaquette_license_one_tick_reachability_derivation_2026_07_12.txt
+  - .claude/science/physics-loops/per-plaquette-license-20260712/STATE.yaml
+  - .claude/science/physics-loops/per-plaquette-license-20260712/CLAIM_STATUS_CERTIFICATE.md
+  - .claude/science/physics-loops/per-plaquette-license-20260712/HANDOFF.md
 hard_residual: >
   Lemma B fundamentality reading: a fundamental one-tick multi-link term's
   availability is evaluable at each constituent link within that link's
@@ -25,7 +33,10 @@ no_go_routes:
   - R1-minimal-nonempty-covariant-lift (pruned pre-execution; see NO_GO_LEDGER)
 trace_class: direct_blocker_closure
 pr_status: none yet
-next_action: write block-01 workhorse spec; launch worker; review; PR
+next_action: >
+  Independently audit the block-01 note, runner, cache, and conditional-status
+  certificate; if accepted, block 03 may wire the parent note to consume this
+  upstream result without enlarging its bounded claim.
 stop_condition: runtime 6h OR queue exhaustion per skill
 lock_note: repo automation_lock.py errors on stale /Users/jonreilly path on
   this machine (infra N/A); branch-local supervisor discipline in force.

@@ -84,13 +84,14 @@ no_go_routes:
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
 review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_ready_to_push
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_mergeable_checks_queued
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
 block04_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5202
 block05_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5205
 block06_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5207
+block07_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5210
 next_exact_action: >-
   Finish bounded review and delivery of the scalar CAR-QCA classification;
   then classify the 720 six-matching coherent qubit-circuit schedules modulo

@@ -22,7 +22,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 303 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2946 |
+| unaudited | 2947 |
 | audit_in_progress | 1 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
@@ -47,11 +47,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3296 |
+| `unaudited` | 3297 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2046 |
+| `bounded_theorem` | 2047 |
 | `decoration` | 19 |
 | `meta` | 357 |
 | `no_go` | 439 |
@@ -63,17 +63,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 746 |
 | `high` | 399 |
 | `medium` | 945 |
-| `leaf` | 1646 |
+| `leaf` | 1647 |
 
 - **Retained pending chain closure:** 1
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3404
+- runners classified: 3405
 - runners with (C) first-principles compute hits: 1795
 - runners with (D) external comparator hits: 1096
-- decoration candidates (no C, no D): 722
+- decoration candidates (no C, no D): 723
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -81,7 +81,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1973 | 225.45 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1974 | 225.95 | `unaudited` | meta |
 | 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1600 | 64.64 | `audited_clean` | **retained** |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1181 | 62.21 | `unaudited` | unaudited |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 197 | 61.63 | `unaudited` | unaudited |

@@ -23089,6 +23089,10 @@
       "to": "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19"
     },
     {
+      "from": "koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12",
+      "to": "minimal_axioms"
+    },
+    {
       "from": "koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02",
       "to": "koide_dweh_cyclic_compression_note_2026-04-18"
     },
@@ -24186,7 +24190,7 @@
     },
     {
       "from": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-      "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
+      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
@@ -24194,11 +24198,11 @@
     },
     {
       "from": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-      "to": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+      "to": "realized_state_primitive"
     },
     {
       "from": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-      "to": "realized_state_primitive"
+      "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
     },
     {
       "from": "koide_p1_collapses_frame_residuals_note_2026-06-01",
@@ -89131,6 +89135,20 @@
       "runner_path": "scripts/frontier_koide_cone_three_form_equivalence_narrow.py",
       "title": "Koide-Cone Three-Form Equivalence Narrow Theorem"
     },
+    "koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12": {
+      "claim_id": "koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e527e0c8372e6ed2b7b4e6b31cd8fb13f1608d48aab0abad8087e6ecc7ba31c4",
+      "path": "docs/KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md",
+      "runner_path": "scripts/koide_convention_invariant_scalar_selector_doublet_constancy_2026_07_12.py",
+      "title": "Koide Convention-Invariant Scalar-Selector Doublet Constancy (Narrow Theorem)"
+    },
     "koide_cyclic_projector_block_democracy_note_2026-04-18": {
       "claim_id": "koide_cyclic_projector_block_democracy_note_2026-04-18",
       "claim_type_author_hint": null,
@@ -90446,16 +90464,16 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
-        "minimal_axioms",
         "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "realized_state_primitive"
+        "minimal_axioms",
+        "realized_state_primitive",
+        "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "de346fe35ff8289016e3c1a4a31849807f5ee2a3b4e146dfb5823c66c8e741df",
+      "note_hash": "bcfc11d07a3dd4594663539324a631120e2ed7a29bc05a39fed551701f091769",
       "path": "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
       "runner_path": "scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py",
-      "title": "The Koide Occupancy Atom Is Independent of the Current Checked Premise Surface; the Orbit-Occupancy Premise Candidate"
+      "title": "Koide Orbit-Occupancy Gaussian Moments and the Aggregate Equipartition-Granularity Fork"
     },
     "koide_order_one_circulant_diagnostic_note_2026-05-29": {
       "claim_id": "koide_order_one_circulant_diagnostic_note_2026-05-29",
@@ -111729,7 +111747,7 @@
         "abj_epsilon_index_square_block_no_go_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "571d2c5fec03dc22b34f50e59e6b71609a98177798c0845d1ed22072f46a6cb6",
+      "note_hash": "dbb0c7af59e15d58acb43a041a86c129cee7d99da1644d0ad00ea3b6ec41d71a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -113986,17 +114004,17 @@
     },
     "sigma_hier_uniqueness_theorem_note_2026-04-19": {
       "claim_id": "sigma_hier_uniqueness_theorem_note_2026-04-19",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
       "claim_type_seed_hint": "open_gate",
       "deps": [
         "neutrino_dirac_pmns_retained_lane_packet_2026-04-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c57bf5b65f0d19d36c777e2dcbfa4da46f9465b0f832f98897d174f03f057cd2",
+      "note_hash": "b3a707a8bb923ed20cd08ea944df2e27c75ecf720d9e4c6c10ab2c417e040dda",
       "path": "docs/SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_sigma_hier_uniqueness_theorem.py",
-      "title": "\u03c3_hier Uniqueness Theorem"
+      "title": "\u03c3_hier Supplied-Input Selection Replay"
     },
     "sigma_mnu_f3_dm_cross_bound_audit_note_2026-04-28": {
       "claim_id": "sigma_mnu_f3_dm_cross_bound_audit_note_2026-04-28",
@@ -128760,16 +128778,16 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1633,
+      "bounded_theorem": 1634,
       "decoration": 3,
       "meta": 333,
       "no_go": 336,
-      "none": 1203,
-      "open_gate": 138,
+      "none": 1202,
+      "open_gate": 139,
       "positive_theorem": 284
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2032,
+      "bounded_theorem": 2033,
       "decoration": 3,
       "meta": 333,
       "no_go": 439,
@@ -128777,10 +128795,10 @@
       "open_gate": 212,
       "positive_theorem": 663
     },
-    "edge_count": 14456,
-    "leaf_count": 1334,
-    "node_count": 3930,
+    "edge_count": 14457,
+    "leaf_count": 1335,
+    "node_count": 3931,
     "root_count": 1113,
-    "runners_with_path": 3547
+    "runners_with_path": 3548
   }
 }

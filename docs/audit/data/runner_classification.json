@@ -8129,11 +8129,11 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 7,
-        "D": 2
+        "C": 9,
+        "D": 10
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "D",
       "runner": "scripts/frontier_sigma_hier_uniqueness_theorem.py"
     },
     "dm_live_constants_canonical_edge_certificate_note_2026-06-18": {
@@ -19164,6 +19164,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_koide_cone_three_form_equivalence_narrow.py"
     },
+    "koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 7,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/koide_convention_invariant_scalar_selector_doublet_constancy_2026_07_12.py"
+    },
     "koide_cyclic_projector_block_democracy_note_2026-04-18": {
       "assert_count": 1,
       "counts": {
@@ -20079,10 +20091,10 @@
     "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": {
       "assert_count": 1,
       "counts": {
-        "A": 49,
+        "A": 52,
         "B": 0,
         "C": 2,
-        "D": 6
+        "D": 5
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -33161,11 +33173,11 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 7,
-        "D": 2
+        "C": 9,
+        "D": 10
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "D",
       "runner": "scripts/frontier_sigma_hier_uniqueness_theorem.py"
     },
     "sigma_mnu_f3_dm_cross_bound_audit_note_2026-04-28": {
@@ -66423,10 +66435,10 @@
         "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
       ],
       "counts": {
-        "A": 49,
+        "A": 52,
         "B": 0,
         "C": 2,
-        "D": 6
+        "D": 5
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -76117,11 +76129,11 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 7,
-        "D": 2
+        "C": 9,
+        "D": 10
       },
       "decoration_candidate": false,
-      "dominant_class": "C",
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/frontier_sigma_mnu_f3_dm_cross_bound_audit.py": {
@@ -85372,6 +85384,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/koide_convention_invariant_scalar_selector_doublet_constancy_2026_07_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/koide_corner_dirac_determinant_2026_06_08.py": {
       "assert_count": 1,
       "claims": [
@@ -93395,15 +93422,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 722,
+    "decoration_candidates": 723,
     "dominant_class_distribution": {
-      "A": 518,
+      "A": 519,
       "B": 663,
-      "C": 1317,
-      "D": 453,
+      "C": 1316,
+      "D": 454,
       "none": 453
     },
-    "runners_classified": 3404,
+    "runners_classified": 3405,
     "runners_with_C": 1795,
     "runners_with_D": 1096
   }

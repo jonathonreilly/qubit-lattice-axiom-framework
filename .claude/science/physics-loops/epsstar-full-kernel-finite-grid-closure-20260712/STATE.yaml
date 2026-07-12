@@ -1,6 +1,9 @@
 loop: epsstar-full-kernel-finite-grid-closure-20260712
 date: 2026-07-12
 branch: claude/science-fix/epsstar_full_kernel_coefficient_derivation_bounded_theorem_n-2cbfadf8
+science_commit: 0267f9857
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5229
+pr_status: open
 target: epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12
 target_status: best-honest-status
 mode: run

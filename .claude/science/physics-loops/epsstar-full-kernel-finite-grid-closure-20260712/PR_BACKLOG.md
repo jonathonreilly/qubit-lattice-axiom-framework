@@ -1,5 +1,8 @@
 # PR Backlog
 
-No separate PR is opened by the review-loop stage.  This work is being
-prepared on the existing dedicated science-fix branch; delivery metadata will
-be recorded after review and validation.
+Delivery is complete; no PR backlog remains.
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5229
+- Base: `main`
+- Head: `claude/science-fix/epsstar_full_kernel_coefficient_derivation_bounded_theorem_n-2cbfadf8`
+- State at checkpoint: open

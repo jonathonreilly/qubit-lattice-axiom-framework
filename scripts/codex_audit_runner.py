@@ -1568,6 +1568,14 @@ def fresh_schema_retry_eligible(validation_error: str | None) -> bool:
 
 def fresh_schema_retry_code(validation_error: str) -> str:
     """Reduce validator text to a conclusion-free control-plane code."""
+    if validation_error.startswith("N3 retained_authority hit "):
+        return "N3_RETAINED_AUTHORITY_PROVENANCE_MISMATCH"
+    if (
+        validation_error.startswith("N1 route ")
+        and ".route_class=" in validation_error
+        and "is not supported by its evidenced" in validation_error
+    ):
+        return "N1_ROUTE_CLASS_MARKER_MISMATCH"
     return "AUDIT_SCHEMA_REJECT"
 
 
@@ -1602,6 +1610,19 @@ def render_fresh_schema_retry_prompt(
     discards the prior object completely. The generic validator code reveals
     no failed section, scientific framing, or prior conclusion.
     """
+    guidance = {
+        "N3_RETAINED_AUTHORITY_PROVENANCE_MISMATCH": (
+            "Static N3 invariant: retained_authority describes path provenance, "
+            "not phrase semantics. Use it exactly when the hit path has an "
+            "authority/framework_premise/premise_registry role and retained-grade "
+            "status or accepted axiom/approved-primitive type. A source-role path "
+            "must instead be classified from its actual load-bearing use.\n"
+        ),
+        "N1_ROUTE_CLASS_MARKER_MISMATCH": (
+            "Static N1 invariant: the joined mechanism, attempt, and outcome must "
+            "contain a documented literal marker for the selected route_class.\n"
+        ),
+    }.get(validation_code, "")
     return (
         f"{original_prompt}\n\n"
         "---\n"
@@ -1615,6 +1636,7 @@ def render_fresh_schema_retry_prompt(
         "output schema and every invariant already stated in the original "
         "restricted packet before responding.\n\n"
         f"VALIDATOR CODE:\n{validation_code}\n"
+        f"{guidance}"
     )
 
 

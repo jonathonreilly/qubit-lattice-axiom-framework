@@ -6199,6 +6199,36 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
         )
 
+    def test_n1_symmetry_route_accepts_invariance_vocabulary(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        route_text = (
+            "readout is translation invariant\n"
+            "readout is proper-cubic-rotation invariant\n"
+            "readout is cycle-position permutation invariant\n"
+        )
+        stdout_path = "audit-packet://runner-stdout/test_no_go"
+        manifest[stdout_path]["text"] += "\n" + route_text
+        packet = _no_go_packet()
+        route = packet["N1_alternative_routes"][1]
+        route.update({
+            "route_id": "lattice_symmetry",
+            "route_class": "symmetry_or_representation",
+            "mechanism": "readout is translation invariant",
+            "attempt": "readout is proper-cubic-rotation invariant",
+            "outcome": "readout is cycle-position permutation invariant",
+            "evidence_path": stdout_path,
+            "evidence_locator": "readout is translation invariant",
+        })
+        _set_no_go_scan_coverage(packet, manifest)
+        audit = {
+            "claim_type": "no_go", "verdict": "audited_clean",
+            "chain_closes": True, "no_go_discipline": packet,
+        }
+        self.assertIsNone(
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest)
+        )
+
     def test_occurrence_scans_and_resolution_classes_fail_closed(self):
         m = _import("no_go_discipline_gate")
         manifest = self._manifest()
@@ -6782,6 +6812,18 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         )
         self.assertIn(
             "`boundary` and `primitive` require separate objects",
+            template_flat,
+        )
+        self.assertIn(
+            "`retained_authority` classifies the provenance of the hit's whole",
+            template_flat,
+        )
+        self.assertIn(
+            "A path whose manifest role is `source` cannot be `retained_authority`",
+            template_flat,
+        )
+        self.assertIn(
+            "symmetry_or_representation`: symmetry, invariant, representation",
             template_flat,
         )
 
@@ -8111,6 +8153,27 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         self.assertNotIn("Recheck every N1-N8", prompt)
         self.assertNotIn("prior_secret", prompt)
         self.assertIn("not given its JSON or conclusion", prompt)
+        n3_code = m.fresh_schema_retry_code(
+            "N3 retained_authority hit 1 is not retained or accepted in the manifest"
+        )
+        self.assertEqual(
+            n3_code, "N3_RETAINED_AUTHORITY_PROVENANCE_MISMATCH"
+        )
+        n3_prompt = m.render_fresh_schema_retry_prompt(
+            "ORIGINAL RESTRICTED PACKET", n3_code, 1,
+        )
+        self.assertIn("describes path provenance", n3_prompt)
+        self.assertNotIn("hit 1", n3_prompt)
+        n1_code = m.fresh_schema_retry_code(
+            "N1 route 2.route_class='symmetry_or_representation' "
+            "is not supported by its evidenced mechanism/attempt/outcome vocabulary"
+        )
+        self.assertEqual(n1_code, "N1_ROUTE_CLASS_MARKER_MISMATCH")
+        n1_prompt = m.render_fresh_schema_retry_prompt(
+            "ORIGINAL RESTRICTED PACKET", n1_code, 1,
+        )
+        self.assertIn("joined mechanism, attempt, and outcome", n1_prompt)
+        self.assertNotIn("route 2", n1_prompt)
 
     def test_failed_locator_repair_preserves_fresh_schema_eligibility(self):
         m = _import_codex_audit_runner()

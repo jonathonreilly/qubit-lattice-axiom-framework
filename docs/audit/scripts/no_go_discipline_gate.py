@@ -38,7 +38,7 @@ ROUTE_CLASSES = {
 }
 ROUTE_CLASS_MARKERS = {
     "algebraic_rearrangement": re.compile(r"\b(?:algebra|identity|rearrang|factor|cancel|solve)\w*\b", re.I),
-    "symmetry_or_representation": re.compile(r"\b(?:symmetr|represent|commut|character|irrep|group)\w*\b", re.I),
+    "symmetry_or_representation": re.compile(r"\b(?:symmetr|invarian|represent|commut|character|irrep|group)\w*\b", re.I),
     "alternate_carrier_or_sector": re.compile(r"\b(?:alternate\s+)?(?:carrier|sector|module|space|irrep)\b", re.I),
     "boundary_or_initial_condition": re.compile(r"\b(?:boundary|initial|background|state|pointwise)\w*\b", re.I),
     "normalization_or_units": re.compile(r"\b(?:normaliz|units?|scale|dimensionful)\w*\b", re.I),

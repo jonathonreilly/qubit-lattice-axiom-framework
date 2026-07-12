@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 369 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2770 |
+| unaudited | 2769 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 55 |
+| ~~audited_conditional~~ | 56 |
 | ~~audited_failed~~ | 9 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 482 |
-| `audited_conditional` | 55 |
+| `audited_conditional` | 56 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 31 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3120 |
+| `unaudited` | 3119 |
 
 | claim_type | count |
 |---|---:|
@@ -642,6 +642,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `dirac_v4_convergence_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -2828,6 +2829,26 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source constructs the stated periodic 3+1D Dirac walk, Gaussian or point initial state, mass field, and signed sideband readouts, and the stdout matches the note's tabulated signs and values. Within the explicitly bounded parameter grid, the conclusion that tested Gaussian smoothing does not repair both stated failure modes follows.
 - **rationale:** The claim is narrowly bounded to a completed numerical scan, not a general no-go theorem for all smooth sources. The runner does not merely print constants: it builds gamma-projector shifts, evolves field and free states, computes density differences, and reports the sign/monotonicity summaries used by the note. No unlisted authority is needed for the bounded comparison as long as the claim boundary stays limited to these widths, offsets, layers, and readout definition.
 - **auditor confidence:** high
+
+### `dirac_v4_convergence_note`
+
+- **Note:** [`DIRAC_V4_CONVERGENCE_NOTE.md`](../../docs/DIRAC_V4_CONVERGENCE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite default-mass cached-run outputs for the n = 17..29 closure sweep and the n = 29 N- and offset-sweeps; no asymptotic or architecture-wide structural no-go is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00400-dirac_v4_convergence_note`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Closure stays at 6/10 across n = 17..29, while the gravity-monotonicity and distance-law failures persist for the tested periodic and open boundaries.  _(class `C`)_
+- **chain closes:** False — The runner computes and supports the finite cached tables, but those slices do not establish the note's broader structural interpretation or exclude rescue at larger n, other parameters, another coin, or another observable.
+- **rationale:** Issue: the completed runner supports the stated finite default-mass rows, but the note extends them into structural language not established by the restricted computation. Why this blocks: one mass, one strength, finite lattices through n = 29, one nonperiodic boundary, and one readout cannot exclude the explicitly acknowledged coupled-coin, alternate-observable, parameter, or asymptotic routes. Repair target: narrow the ratifiable conclusion to the cached finite diagnostic or add completed sweeps and a theorem covering those unresolved routes. Claim boundary until fixed: the default cached run reports 6/10 closure and the displayed finite N- and offset-law failures.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1: the finite-n, parameter-variation, coupled-coin, alternate-readout, and precision-stability routes remain open.
+    - N2: architecture-wide structurality remains an unresolved independent wall.
+    - N3: structurality imports exclusion of mechanisms not tested by the packet.
+    - N5: the negative rhetoric exceeds the finite resolutions actually tested.
+    - N7: the strongest larger-n and asymptotic steelman is unresolved.
 
 ### `directional_b_density_stencil_note`
 

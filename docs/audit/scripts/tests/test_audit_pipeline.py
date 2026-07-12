@@ -4259,7 +4259,24 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             self.assertEqual(truncation["total_hits"], 100)
             self.assertEqual(truncation["listed"], cap)
             self.assertEqual(truncation["omitted_count"], 100 - cap)
-            self.assertEqual(len(truncation["omitted_candidate_ids_sha256"]), 64)
+            full_similar_ids = sorted(
+                f"similar_negative_boundary:peer_{index}"
+                for index in range(100)
+            )
+            self.assertEqual(
+                [candidate["candidate_id"] for candidate in similar],
+                full_similar_ids[:cap],
+            )
+            omitted_ids = full_similar_ids[cap:]
+            self.assertEqual(
+                truncation["omitted_candidate_ids_sha256"],
+                hashlib.sha256(
+                    json.dumps(omitted_ids, separators=(",", ":")).encode()
+                ).hexdigest(),
+            )
+            self.assertTrue(
+                set(full_similar_ids).issubset(parsed["candidate_id_universe"])
+            )
             # the universe itself stays complete: capping the disposition
             # list never hides the corpus
             self.assertEqual(parsed["no_go_row_universe_count"], 100)
@@ -4349,6 +4366,108 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         )
         growth = m.evidence_snapshot_index_growth(packet, current_manifest)
         self.assertEqual(growth, {index_uri: ["open_gate:beta"]})
+
+    def test_dynamic_index_growth_reports_capped_tail_and_partial_closure_ids(self):
+        m = _import("no_go_discipline_gate")
+        cross_uri = m.cross_cycle_index_path("target_claim")
+        partial_uri = m.partial_closure_index_path("target_claim")
+        cross_listed = [f"similar:{index:02d}" for index in range(40)]
+        cross_stored_universe = [*cross_listed, "similar:omitted"]
+        partial_stored_universe = ["partial:listed", "partial:removed"]
+
+        def cross_text(universe):
+            return json.dumps(
+                {
+                    "schema": "no_go_cross_cycle_index_v1",
+                    "claim_id": "target_claim",
+                    "no_go_row_universe_count": 0,
+                    "no_go_row_universe_sha256": "0" * 64,
+                    "candidate_id_universe": universe,
+                    "candidates": [
+                        {"candidate_id": candidate_id}
+                        for candidate_id in cross_listed
+                    ],
+                }
+            )
+
+        def partial_text(universe):
+            return json.dumps(
+                {
+                    "schema": "no_go_partial_closure_index_v1",
+                    "claim_id": "target_claim",
+                    "candidate_id_universe": universe,
+                    "candidates": [{"candidate_id": "partial:listed"}],
+                }
+            )
+
+        manifest = {
+            cross_uri: {
+                "path": cross_uri,
+                "roles": ["cross_cycle_index"],
+                "text": cross_text(cross_stored_universe),
+            },
+            partial_uri: {
+                "path": partial_uri,
+                "roles": ["partial_closure_index"],
+                "text": partial_text(partial_stored_universe),
+            },
+        }
+        packet = {"evidence_snapshot": m.build_evidence_snapshot({}, manifest)}
+        mismatched_manifest = json.loads(json.dumps(manifest))
+        mismatched_manifest[cross_uri][
+            "cross_cycle_candidate_id_universe"
+        ] = cross_listed
+        with self.assertRaisesRegex(ValueError, "candidate-ID universe"):
+            m.build_evidence_snapshot({}, mismatched_manifest)
+
+        malformed_manifest = json.loads(json.dumps(manifest))
+        malformed_cross = json.loads(malformed_manifest[cross_uri]["text"])
+        malformed_cross["candidate_id_universe"] = "not-a-list"
+        malformed_manifest[cross_uri]["text"] = json.dumps(malformed_cross)
+        with self.assertRaisesRegex(ValueError, "candidate-ID universe"):
+            m.build_evidence_snapshot({}, malformed_manifest)
+
+        subset_invalid_packet = json.loads(json.dumps(packet))
+        subset_invalid_packet["evidence_snapshot"]["entries"][cross_uri][
+            "cross_cycle_candidate_id_universe"
+        ] = cross_listed[1:]
+        self.assertIsNone(
+            m.evidence_manifest_from_snapshot(subset_invalid_packet)
+        )
+
+        current_manifest = {
+            cross_uri: dict(
+                manifest[cross_uri],
+                text=cross_text([*cross_stored_universe, "similar:new-tail"]),
+            ),
+            partial_uri: dict(
+                manifest[partial_uri],
+                text=partial_text(["partial:listed", "partial:new"]),
+            ),
+        }
+        self.assertEqual(
+            m.evidence_snapshot_index_growth(packet, current_manifest),
+            {
+                cross_uri: ["similar:new-tail"],
+                partial_uri: ["partial:new"],
+            },
+        )
+
+        # Persisted snapshots from before this field existed remain readable.
+        # N8 was uncapped then; if a synthetic legacy snapshot was capped, the
+        # fallback safely over-targets its previously omitted IDs once.
+        legacy_packet = json.loads(json.dumps(packet))
+        legacy_entries = legacy_packet["evidence_snapshot"]["entries"]
+        legacy_entries[cross_uri].pop("cross_cycle_candidate_id_universe")
+        legacy_entries[partial_uri].pop("partial_closure_candidate_id_universe")
+        self.assertIsNotNone(m.evidence_manifest_from_snapshot(legacy_packet))
+        self.assertEqual(
+            m.evidence_snapshot_index_growth(legacy_packet, current_manifest),
+            {
+                cross_uri: ["similar:new-tail", "similar:omitted"],
+                partial_uri: ["partial:new"],
+            },
+        )
 
     def test_stable_role_content_drift_still_invalidates(self):
         m = _import("no_go_discipline_gate")

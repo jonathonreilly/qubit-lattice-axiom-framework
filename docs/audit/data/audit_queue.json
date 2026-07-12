@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 651,
     "high": 334,
-    "leaf": 1146,
+    "leaf": 1145,
     "medium": 756
   },
   "cycle_break_target_count": 49,
@@ -51350,28 +51350,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/D2_TRUNCATED_FLOW_FROZEN_RATIO_ACCUMULATED_BUDGET_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_d2_truncated_flow_frozen_ratio_2026_06_12.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -82242,6 +82220,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 597,
-  "total_pending": 2887
+  "ready_count": 596,
+  "total_pending": 2886
 }

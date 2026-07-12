@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 400 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2688 |
+| unaudited | 2687 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 82 |
-| ~~audited_failed~~ | 19 |
+| ~~audited_failed~~ | 20 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 526 |
 | `audited_conditional` | 82 |
 | `audited_decoration` | 20 |
-| `audited_failed` | 41 |
+| `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3038 |
+| `unaudited` | 3037 |
 
 | claim_type | count |
 |---|---:|
@@ -807,6 +807,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `wave_direct_dm_h025_fam3_seed1_control_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.6 | G | - |
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -9863,6 +9864,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Both seeds keep exact null, common negative sign, and bounded weak-field linearity at H = 0.25, so the second-family fine-H pair is now controlled rather than one-strength.  _(class `A`)_
 - **chain closes:** True — The two direct retained-grade control notes provide the exact nulls, common negative sign patterns, weak-field linearity spreads, and seed0/seed1 H=0.25 values needed for the pair synthesis. The conclusion is only the bounded conjunction/comparison of those inputs, with broader portability and family-widening claims explicitly excluded.
 - **rationale:** The row is retagged from positive_theorem to bounded_theorem because its support is finite to the configured Fam2 H=0.25 two-seed ladder and one upstream control input is itself bounded. The synthesis closes as an algebraic/logical aggregation over two retained-grade control-note inputs; no runner is present or needed for this aggregation row. It is not decoration because it aggregates two independent seed-control inputs into a bounded family-pair control/asymmetry surface, rather than restating a single parent by pure algebra. Clean status does not ratify Fam3, seed widening, lab-facing magnitude, Fam1 comparison, or a general H=0.25 portability law.
+
+### `wave_direct_dm_h025_fam3_seed1_control_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FAM3_SEED1_CONTROL_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM3_SEED1_CONTROL_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The finite computational control-ladder claim for Fam3, seed 1, H = 0.25 at strengths 0, 0.002, 0.004, and 0.008.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00277-wave_direct_dm_h025_fam3_see`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Fam3, seed 1, H = 0.25 has an exact null, a common negative weak-field sign, approximately linear scaling, and R_hist near -27%.  _(class `C`)_
+- **chain closes:** False — The supplied execution ran Fam2, seed 1, H = 0.25 rather than Fam3. Consequently it does not establish the source note's Fam3 table or its approximately -27% normalized result.
+- **rationale:** The runner and helper sources implement a genuine framework simulation rather than printing target constants, so the intended load-bearing step is class C. However, the completed cached run explicitly reports family=Fam2 and produces R_hist values near -35%, while the audited claim concerns Fam3 and values near -27%. This completed parameter mismatch leaves the claim unsupported on its own artifact chain.
+- **auditor confidence:** high
 
 ### `wave_direct_dm_h025_family_pair_synthesis_note`
 

@@ -31314,12 +31314,12 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
+      "audit_status": "audited_failed",
       "blocker": null,
       "claim_id": "wave_direct_dm_h025_fam3_seed1_control_note",
-      "claim_scope": null,
+      "claim_scope": "The finite computational control-ladder claim for Fam3, seed 1, H = 0.25 at strengths 0, 0.002, 0.004, and 0.008.",
       "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -31327,14 +31327,14 @@
         "wave_direct_dm_transfer_diagnostic_note"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
+      "effective_status": "audited_failed",
       "helper_runner_paths": [
         "scripts/wave_direct_dm_matched_history_probe.py",
         "scripts/wave_retardation_continuum_limit.py"
       ],
       "load_bearing_score": 3.5,
       "note_path": "docs/WAVE_DIRECT_DM_H025_FAM3_SEED1_CONTROL_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_failed",
       "ready": true,
       "runner_path": "scripts/wave_direct_dm_h025_control_batch.py",
       "transitive_descendants": 3

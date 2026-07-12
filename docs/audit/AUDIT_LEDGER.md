@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 399 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2696 |
+| unaudited | 2695 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 80 |
-| ~~audited_failed~~ | 16 |
+| ~~audited_failed~~ | 17 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 523 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 20 |
-| `audited_failed` | 38 |
+| `audited_failed` | 39 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3046 |
+| `unaudited` | 3045 |
 
 | claim_type | count |
 |---|---:|
@@ -781,6 +781,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -6405,6 +6406,28 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner directly constructs the Pauli-tensor operators, forms their group commutators, and computes scalarity and traceless norms; it does not print assumed results or import a comparator. Both cited authorities are retained-grade, and the conclusion is a genuine algebraic closure over their explicit operators. The verdict is restricted to the two named native hop identifications and does not rule out a connection derived from an additional gauge, action, locality, or variational principle.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28`
+
+- **Note:** [`NEUTRINO_LANE4_4F_SIGMA_M_NU_FUNCTIONAL_FORM_THEOREM_NOTE_2026-04-28.md`](../../docs/NEUTRINO_LANE4_4F_SIGMA_M_NU_FUNCTIONAL_FORM_THEOREM_NOTE_2026-04-28.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The conditional matter-budget functional form and its advertised equivalent CMB-bookkeeping equations, without numerical Σm_ν closure.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00269-neutrino_lane4_4f_sigma_m_nu`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Combining (P1)-(P3) and solving gives Σm_ν = (1 - L - R - Ω_b - Ω_DM) × C_ν × h².  _(class `A`)_
+- **chain closes:** False — T-4F-α-2 follows algebraically if P1-P3 are granted, but T-4F-α-4 contains an extra factor of h² on its left-hand side and is not equivalent to T-4F-α-2. The restricted packet also supplies no retained or accepted authority for the admitted FRW, relic-conversion, and observational premises.
+- **rationale:** Issue: the asserted equivalent form Σm_ν h²/C_ν = h²(1-L-R-Ω_b-Ω_DM) is algebraically false; the correct left side is Σm_ν/C_ν. Why this blocks: the note explicitly claims equivalent-form consistency and exactness, while its premises are additionally labeled admitted/open rather than supplied by retained or accepted authorities. Repair target: correct T-4F-α-4, provide the runner source and completed output, and wire retained authorities for P1-P3 or state them as explicit conditional premises. Claim boundary until fixed: T-4F-α-2 is a valid formal rearrangement only conditional on P1-P3 and does not numerically determine Σm_ν.
+- **open / conditional deps cited:**
+  - `COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md`
+  - `N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md`
+  - `HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md`
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1 has OPEN and UNTESTED routes for the algebraic equivalence, relic normalization, h, and matter-component derivations.
+    - N5 cannot verify the claimed runner consistency and identifies untested physical-input resolutions.
+    - The source's T-4F-α-4 equation is algebraically inconsistent with its headline identity.
 
 ### `newton_law_derived_note`
 

@@ -324,6 +324,18 @@
       "dominant_class": "A",
       "runner": "scripts/acphilambda_ambient_scalar_k_blindness_projective_carrier_2026_07_02.py"
     },
+    "acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/acphilambda_c3_resolvent_determinant_holonomy_coupling_2026_07_12.py"
+    },
     "acphilambda_cross_arc_unit_classification_wiring_2026-07-02": {
       "assert_count": 2,
       "counts": {
@@ -42979,6 +42991,21 @@
         "D": 2
       },
       "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/acphilambda_c3_resolvent_determinant_holonomy_coupling_2026_07_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12"
+      ],
+      "counts": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
       "dominant_class": "A",
       "exists": true
     },
@@ -93556,15 +93583,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 720,
+    "decoration_candidates": 721,
     "dominant_class_distribution": {
-      "A": 516,
+      "A": 517,
       "B": 663,
       "C": 1318,
       "D": 454,
       "none": 458
     },
-    "runners_classified": 3409,
+    "runners_classified": 3410,
     "runners_with_C": 1796,
     "runners_with_D": 1097
   }

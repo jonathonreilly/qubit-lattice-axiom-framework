@@ -477,6 +477,14 @@
       "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
     },
     {
+      "from": "acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12",
+      "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12",
+      "to": "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12"
+    },
+    {
       "from": "acphilambda_cross_arc_unit_classification_wiring_2026-07-02",
       "to": "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
     },
@@ -58757,6 +58765,21 @@
       "runner_path": "scripts/acphilambda_ambient_scalar_k_blindness_projective_carrier_2026_07_02.py",
       "title": "AC_phi_lambda Ambient Scalar K-Blindness And The Projective Carrier Requirement"
     },
+    "acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12": {
+      "claim_id": "acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "46d7703e40add10729e5e2788186341adc3de0abf737de22a6fabb4c63062124",
+      "path": "docs/ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_NARROW_THEOREM_NOTE_2026-07-12.md",
+      "runner_path": "scripts/acphilambda_c3_resolvent_determinant_holonomy_coupling_2026_07_12.py",
+      "title": "AC_phi_lambda C3 Resolvent Determinant-Holonomy Coupling"
+    },
     "acphilambda_cross_arc_unit_classification_wiring_2026-07-02": {
       "claim_id": "acphilambda_cross_arc_unit_classification_wiring_2026-07-02",
       "claim_type_author_hint": "bounded_theorem",
@@ -112153,7 +112176,7 @@
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d7d7bbca809792927b5b18e0edc6f4546bae44963c28bec37024d20c7bcdd542",
+      "note_hash": "c425769dbe07834d3c74f776dd631d3009c4b204e4c3afdbce07c8f8d929829e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -129179,7 +129202,7 @@
       "no_go": 336,
       "none": 1205,
       "open_gate": 135,
-      "positive_theorem": 282
+      "positive_theorem": 283
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 2032,
@@ -129188,12 +129211,12 @@
       "no_go": 439,
       "none": 248,
       "open_gate": 209,
-      "positive_theorem": 662
+      "positive_theorem": 663
     },
-    "edge_count": 14549,
+    "edge_count": 14551,
     "leaf_count": 1334,
-    "node_count": 3926,
+    "node_count": 3927,
     "root_count": 1116,
-    "runners_with_path": 3543
+    "runners_with_path": 3544
   }
 }

@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 421 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2616 |
+| unaudited | 2617 |
 | audit_in_progress | 30 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -53,7 +53,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2966 |
+| `unaudited` | 2967 |
 
 | claim_type | count |
 |---|---:|
@@ -62,24 +62,24 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `meta` | 357 |
 | `no_go` | 472 |
 | `open_gate` | 196 |
-| `positive_theorem` | 648 |
+| `positive_theorem` | 649 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 751 |
 | `high` | 401 |
 | `medium` | 940 |
-| `leaf` | 1662 |
+| `leaf` | 1663 |
 
 - **Retained pending chain closure:** 2
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3409
+- runners classified: 3410
 - runners with (C) first-principles compute hits: 1796
 - runners with (D) external comparator hits: 1097
-- decoration candidates (no C, no D): 720
+- decoration candidates (no C, no D): 721
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -87,7 +87,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1969 | 224.44 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1970 | 224.44 | `unaudited` | meta |
 | 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1599 | 64.64 | `audited_clean` | **retained** |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1183 | 62.71 | `unaudited` | unaudited |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 199 | 61.64 | `unaudited` | unaudited |

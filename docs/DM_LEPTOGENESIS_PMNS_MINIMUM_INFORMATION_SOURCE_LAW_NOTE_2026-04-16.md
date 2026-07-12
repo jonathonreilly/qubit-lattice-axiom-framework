@@ -1,8 +1,11 @@
 # DM Leptogenesis PMNS Minimum-Information Source Law
 
 **Type:** open_gate
+**Claim type:** open_gate
 **Claim boundary:** post-axiom selector diagnostic / open selector gate; not a
 selector theorem and not retained PMNS-branch authority
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit outcome.
 **Date:** 2026-04-16; 2026-06-12 numerical-match firewall repair; 2026-06-18
 open-gate source repair
 **Primary runner:** [`scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py`](../scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py)
@@ -20,7 +23,8 @@ The note is therefore a **conditional** result:
 > IF the minimum-information selector law (defined below) is adopted as a
 > downstream convention on the fixed native `N_e` seed surface, THEN the
 > companion runner finds a reproducible low-cost off-seed source on the
-> transport-favored column after imposing `eta_{i_*} / eta_obs = 1`.
+> frozen seed-0 search's representative column after imposing
+> `eta_{i_*} / eta_obs = 1`.
 
 The deriving-the-selector question — does the baseline framework itself force the
 information cost `I_seed` (or some equivalent functional) to be the correct
@@ -39,7 +43,7 @@ selector objective or equality constraint from the framework.
 
 The repaired audit surface is therefore:
 
-- **Open selector gate:** `I_seed` and the favored-column equality constraint
+- **Open selector gate:** `I_seed` and the representative-column equality constraint
   remain supplied/adopted selector data.
 - **Exact conditional diagnostic:** given that supplied selector surface, the
   runner computes a low-cost off-seed closure source on the favored column.
@@ -64,8 +68,9 @@ where
 
 Then:
 
-1. determine the transport-favored flavor column `i_*` from the exact
-   transport-extremal class
+1. run the frozen seed-0, 20-iteration transport search and take its
+   representative maximizing column `i_*` (column `0` for this fixture; not a
+   unique physical column)
 2. among all positive off-seed sources on that same seed surface satisfying
    `eta_{i_*} / eta_obs = 1`, choose the one minimizing `I_seed`.
 
@@ -91,8 +96,8 @@ and the resulting flavored transport values are
 
 `eta / eta_obs = (1.0, 0.50519888, 0.78233530)`.
 
-Conditional on the law, the favored column remains column `0`, and exact
-closure is reached there.
+Conditional on the law and frozen search fixture, the representative column
+remains column `0`, and exact closure is reached there.
 
 ## What this note does claim
 
@@ -104,7 +109,7 @@ closure is reached there.
   closer to the seed than the canonical near-closing sample, with
   `I_seed = 0.058549869343`
 - conditional on adopting `I_seed`, the selected source still respects the
-  transport-favored column identified by the exact extremal class
+  representative column selected by the frozen seed-0 search
 
 The runner output is a calibrated constrained-optimization diagnostic. It is
 not a proof of global uniqueness, global stationarity classification, or
@@ -122,6 +127,8 @@ minimum-selector derivation from the baseline framework.
 - it does **not** close the baseline-framework chain for the PMNS-assisted `N_e`
   branch — that question is parked at the relative-action stationarity
   theorem and the observable relative-action law
+- it does **not** claim that transport extremality uniquely favors column `0`;
+  longer searches expose permutation-related representatives in other columns
 
 ## Why this note is still useful
 
@@ -201,15 +208,15 @@ After this repair, the source-side claim of this note is narrowed to the
 following bounded conditional numerical diagnostic:
 
 > **Bounded conditional diagnostic.** Given (a) the imported
-> information-geometric selector `I_seed` and (b) the transport-favored column
-> `i_*` identified by the exact extremal class (sister theorems), the
+> information-geometric selector `I_seed` and (b) representative column `i_*`
+> from the frozen seed-0 transport-search fixture, the
 > constrained optimization problem
 >
 > "minimize `I_seed` over positive off-seed sources on the fixed native
 >  charged-lepton-active seed surface subject to `eta_{i_*} / eta_obs = 1`"
 >
 > has the runner-verified feasible optimizer output reported above
-> (`I_seed = 0.058549869343`, favored column `0`, `delta_min ~ 0`).
+> (`I_seed = 0.058549869343`, representative column `0`, `delta_min ~ 0`).
 
 The runner does not prove that this point is the unique global stationary point
 on the exact closure manifold. It verifies the calibrated constrained
@@ -226,12 +233,10 @@ or whether the PMNS-assisted `N_e` branch closes from primitives) is
 - this note is an `open_gate` with explicit imported/adopted selector
   assumptions; it is not a positive-theorem or bounded-theorem authority for
   the PMNS-assisted `N_e` branch
-- closure on that branch must be cited through the framework-internal
-  sister theorems (relative-action stationarity, observable
-  relative-action law), with this note used only for post-axiom
-  interpretation of the favored-column source
+- this note may be used only for post-axiom interpretation of the frozen
+  representative-column source, not for a unique favored-column theorem
 - the constrained-opt diagnostic asserted above is conditional on the imported
-  selector, the favored-column identification, and the imposed
+  selector, the frozen representative-column fixture, and the imposed
   `eta_{i_*} / eta_obs = 1` constraint; none of those bridge a baseline
   framework derivation here
 
@@ -255,3 +260,17 @@ for the stationary classification. The renaming-tier source-law row is
 the explicit selector convention layered on top of that classification.
 This is source-side routing context only; it does not assert an
 `audit_status` or `effective_status`.
+
+## 2026-07-12 current-baseline non-entailment result
+
+The first-principles stretch attempt now has a separate exact negative result:
+[DM Leptogenesis PMNS Minimum-Information Current-Baseline Non-Entailment No-Go](DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_CURRENT_BASELINE_NON_ENTAILMENT_NO_GO_NOTE_2026-07-12.md)
+constructs one explicit model of the current four axioms and two conservative
+downstream completions that disagree on the minimization principle, modality
+weights, observational closure anchor, and favored column.
+
+That companion does not positively supply the selector law. This row therefore
+remains an `open_gate`, and its existing runner remains a conditional
+optimizer after the law and `eta_obs` equality are supplied. Downstream
+positive consumers remain conditional on a separate positive selector and
+normalization bridge.

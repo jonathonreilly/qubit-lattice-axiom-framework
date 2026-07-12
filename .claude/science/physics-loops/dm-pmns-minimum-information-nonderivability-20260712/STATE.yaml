@@ -1,0 +1,54 @@
+slug: dm-pmns-minimum-information-nonderivability-20260712
+mode: run
+target: best-honest-status
+cycle: 1
+science_block: 1
+start_branch_base: origin/main
+science_branch: physics-loop/dm-pmns-selector-law-block01-20260712
+current_goal: >-
+  Resolve the missing first-principles derivation of the PMNS-assisted N_e
+  minimum-information source law on the current four-axiom surface.
+active_route: conservative-completion non-entailment theorem
+hard_residual_being_attacked: >-
+  Whether A_min fixes the verb minimize, the equal x/y modality weights,
+  the favored transport column, and eta_{i_*}/eta_obs=1.
+actual_current_surface_status: open
+no_go_source_status: no-go
+conditional_surface_status: conditional-support
+hypothetical_axiom_status: null
+admitted_observation_status: comparator-only-in-conditional-appendix
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+lock_status: skipped-dedicated-worktree-no-concurrent-writers
+files_touched:
+  - docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md
+  - docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_CURRENT_BASELINE_NON_ENTAILMENT_NO_GO_NOTE_2026-07-12.md
+  - scripts/frontier_dm_leptogenesis_pmns_minimum_information_baseline_no_go.py
+  - scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py
+  - logs/runner-cache/frontier_dm_leptogenesis_pmns_minimum_information_baseline_no_go.txt
+  - logs/runner-cache/frontier_dm_leptogenesis_pmns_mininfo_source_law.txt
+  - .claude/science/physics-loops/dm-pmns-minimum-information-nonderivability-20260712/*
+open_imports: []
+no_go_routes:
+  - Record additivity to KL/source simplex without an extra bridge
+  - log-det response generator to a physical source minimization law
+  - cubic symmetry to equal x/y modality weights
+  - target-free transport to eta_obs equality
+  - realized-state slot to a favored-column value
+review_findings:
+  - The original selector path must remain open because retained no-go rows are
+    chain-satisfying and this path has positive downstream consumers.
+  - The optimizer's favored-column output is a deterministic finite-search
+    representative, not a unique physical column.
+  - The executable spectral gate required direct top-eigenspace maximality
+    checks in addition to covariance and degeneracy.
+review_disposition: pass
+pr_status: pending
+next_exact_action: >-
+  Commit and open one draft review PR for the separate no-go source and the
+  honestly open conditional target, then submit the new row to independent
+  audit without changing repo-wide audit authority surfaces.
+stop_condition: one reviewed coherent science block and one open review PR

@@ -3,24 +3,25 @@
 DM leptogenesis PMNS minimum-information selector diagnostic.
 
 Framework baseline:
-  Lattice + Quantum + Record, with the one-qubit operator algebra on the Z^3
-  lattice.
+  Lattice + Qubit + Admissibility + Record, with the one-qubit operator
+  algebra on the Z^3 lattice.
 
-Scope (open gate / conditional diagnostic):
+Scope (open gate / conditional optimizer with a separate exact no-go):
   This runner verifies the consequences of *adopting* a post-axiom selector
   law. The selector itself is an explicit definition imported from
-  information geometry; it is NOT derived from the Lattice + Quantum + Record
-  baseline.
+  information geometry; it is NOT derived from the Lattice + Qubit +
+  Admissibility + Record baseline. A separate self-contained companion proves
+  that this law is not entailed by the current supplied premises alone.
 
   IF the minimum-information selector law (below) is adopted as a post-axiom
   convention on the fixed native N_e seed surface, THEN the runner finds a
   reproducible low-cost exact-closure off-seed source on the transport-favored
-  column after imposing eta_{i_*}/eta_obs = 1.
+  search representative after imposing eta_{i_*}/eta_obs = 1.
 
 Law (adopted definition):
   1. keep the already-derived native seed pair (xbar, ybar) fixed
-  2. determine the transport-favored flavor column i_* from the exact
-     transport-extremal class
+  2. use the flavor column selected by the deterministic seed-0 transport
+     search as a conditional representative (not a unique physical column)
   3. among all positive off-seed sources on that fixed seed surface satisfying
        eta_{i_*} / eta_obs = 1,
      choose the one minimizing the exact information-deformation cost
@@ -28,10 +29,12 @@ Law (adopted definition):
        I_seed = D_KL(x || x_seed) + D_KL(y || y_seed) + (1 - cos delta).
 
 What this runner does NOT prove:
-  - that I_seed follows from the Lattice + Quantum + Record baseline
+  - that I_seed follows from the Lattice + Qubit + Admissibility + Record
+    baseline
   - that I_seed is the unique correct selector (alternative selectors
     exist; see relative_action_stationarity and observable_relative_action_law)
   - baseline-framework closure for the PMNS-assisted N_e branch
+  - any positive authority for descendants that import this convention
 
 This yields a reproducible low-deformation exact-closure source on the current
 branch CONDITIONAL on adopting I_seed as the selector. It does not prove global
@@ -137,11 +140,10 @@ def part0_source_scope_firewall() -> None:
     print("=" * 88)
 
     check(
-        "Source note identifies the open-gate selector diagnostic",
+        "Source note remains the open conditional selector gate",
         "**Type:** open_gate" in NOTE_TEXT
-        and "**Type:** bounded_theorem" not in NOTE_TEXT
-        and "open selector gate" in NOTE_TEXT
-        and "not a selector theorem" in NOTE_FLAT,
+        and "**Claim type:** open_gate" in NOTE_TEXT
+        and "remains an `open_gate`" in NOTE_TEXT,
     )
     check(
         "Source note registers primary runner and cached output",
@@ -154,19 +156,19 @@ def part0_source_scope_firewall() -> None:
         and "does not prove that this point is the unique global stationary point" in NOTE_TEXT,
     )
     check(
-        "Source note keeps eta_obs equality as an imposed constraint",
-        "imposed `eta_{i_*} / eta_obs = 1` constraint" in NOTE_TEXT
-        and "imposed `eta_obs` equality" in NOTE_TEXT,
+        "Source note keeps eta_obs equality as an imposed condition",
+        "imposed `eta_{i_*} / eta_obs = 1` equality constraint" in NOTE_TEXT
+        and "`eta_obs` equality are supplied" in NOTE_TEXT,
     )
     check(
-        "Source note does not introduce a new axiom or retained bridge",
-        "the Lattice + Quantum + Record baseline" in NOTE_TEXT
-        and "none of those bridge a baseline framework derivation here" in NOTE_FLAT,
+        "Source note links the separate no-go without treating it as selector authority",
+        "MINIMUM_INFORMATION_CURRENT_BASELINE_NON_ENTAILMENT_NO_GO" in NOTE_TEXT
+        and "does not positively supply the selector law" in NOTE_TEXT,
     )
     check(
-        "Source note forbids retained selector-theorem reuse",
-        "must not be cited as a retained" in NOTE_TEXT
-        and "No retained-grade promotion" in NOTE_TEXT,
+        "Source note keeps positive downstream consumers conditional",
+        "Downstream positive consumers remain conditional" in NOTE_FLAT
+        and "separate positive selector and normalization bridge" in NOTE_FLAT,
     )
 
 
@@ -189,9 +191,9 @@ def fmt(v: np.ndarray) -> str:
     return np.array2string(np.round(np.asarray(v, dtype=float), 6), separator=", ")
 
 
-def part1_transport_extremality_fixes_the_favored_column() -> tuple[int, np.ndarray]:
+def part1_representative_transport_column() -> tuple[int, np.ndarray]:
     print("\n" + "=" * 88)
-    print("PART 1: TRANSPORT EXTREMALITY FIXES THE FAVORED COLUMN")
+    print("PART 1: DETERMINISTIC TRANSPORT-SEARCH REPRESENTATIVE")
     print("=" * 88)
 
     bounds = [
@@ -214,25 +216,29 @@ def part1_transport_extremality_fixes_the_favored_column() -> tuple[int, np.ndar
     packet_opt, etas_opt = eta_columns_from_active(x_opt, y_opt, delta_opt)
     best_idx = int(np.argmax(etas_opt))
 
+    seed_value = best_eta_from_params(np.zeros(5, dtype=float))
     check(
-        "The transport-extremal class stays on the exact fixed native seed surface",
-        abs(np.mean(x_opt) - XBAR_NE) < 1e-12 and abs(np.mean(y_opt) - YBAR_NE) < 1e-12,
-        f"(xbar,ybar)=({np.mean(x_opt):.6f},{np.mean(y_opt):.6f})",
+        "The seed-0 search returns a finite improvement on the fixed seed surface",
+        abs(np.mean(x_opt) - XBAR_NE) < 1e-12
+        and abs(np.mean(y_opt) - YBAR_NE) < 1e-12
+        and math.isfinite(float(result.fun))
+        and -float(result.fun) > seed_value,
+        f"search={-result.fun:.6f}, seed={seed_value:.6f}",
     )
     check(
-        "The favored flavor column is fixed exactly by the extremal class",
-        best_idx in (0, 1, 2),
+        "The representative has a strict within-point column maximum",
+        etas_opt[best_idx] > np.partition(etas_opt, -2)[-2],
         f"etas={np.round(etas_opt, 6)}, idx={best_idx}",
     )
     check(
-        "On the canonical branch the favored column is column 0",
+        "The frozen seed-0, 20-iteration representative chooses column 0",
         best_idx == 0,
-        f"etas={np.round(etas_opt, 6)}",
+        "fixture only; longer searches expose permutation-related columns",
     )
 
     print()
-    print(f"  extremal packet:\n{np.round(packet_opt, 6)}")
-    print(f"  extremal eta/eta_obs = {np.round(etas_opt, 6)}")
+    print(f"  representative packet:\n{np.round(packet_opt, 6)}")
+    print(f"  representative eta/eta_obs = {np.round(etas_opt, 6)}")
     return best_idx, result.x
 
 
@@ -267,6 +273,15 @@ def part2_minimum_information_closure_law(i_star: int, extremal_params: np.ndarr
         options={"ftol": 1e-12, "maxiter": 500},
     )
 
+    check(
+        "SLSQP reports successful constrained termination",
+        bool(result.success)
+        and int(result.status) == 0
+        and math.isfinite(float(result.fun))
+        and abs(eta_i(np.asarray(result.x, dtype=float)) - 1.0) < 1e-10,
+        f"status={result.status}, message={result.message}",
+    )
+
     x_min, y_min, delta_min = build_active_from_params(result.x)
     packet_min, etas_min = eta_columns_from_active(x_min, y_min, delta_min)
     xi = x_min - X_SEED
@@ -279,7 +294,7 @@ def part2_minimum_information_closure_law(i_star: int, extremal_params: np.ndarr
         f"(xbar,ybar)=({np.mean(x_min):.6f},{np.mean(y_min):.6f})",
     )
     check(
-        "The law closes eta exactly on the favored column",
+        "The law closes eta exactly on the representative column",
         abs(etas_min[i_star] - 1.0) < 1e-12,
         f"etas={np.round(etas_min, 12)}",
     )
@@ -299,7 +314,7 @@ def part2_minimum_information_closure_law(i_star: int, extremal_params: np.ndarr
         f"xi={fmt(xi)}, eta={fmt(eta)}",
     )
     check(
-        "The favored column remains the best column at the closure source",
+        "The representative column remains the best column at the closure source",
         best_idx == i_star,
         f"best idx={best_idx}, etas={np.round(etas_min, 6)}",
     )
@@ -319,23 +334,25 @@ def part2_minimum_information_closure_law(i_star: int, extremal_params: np.ndarr
 
 def part3_bottom_line() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: BOTTOM LINE (conditional)")
+    print("PART 3: BOTTOM LINE (conditional appendix)")
     print("=" * 88)
 
     check(
         "The off-seed source law is now an explicit definition",
-        True,
+        "If the law is adopted" in NOTE_TEXT,
         "minimum information deformation at exact closure on the favored column",
     )
     check(
         "Conditional on adopting I_seed, the runner-found source is sharper than the bare extremal candidate",
-        True,
+        "I_seed = 0.058549869343" in NOTE_TEXT
+        and "(1.0, 0.50519888, 0.78233530)" in NOTE_TEXT,
         "it finds a low-deformation exact closure source, not just some overshooting source",
     )
     check(
         "The runner verifies the conditional diagnostic, not a selector theorem",
-        True,
-        "I_seed is imported from information geometry; baseline-framework derivation is parked at sister theorems",
+        "remains an `open_gate`" in NOTE_TEXT
+        and "does not positively supply the selector law" in NOTE_TEXT,
+        "the separate no-go isolates baseline non-entailment",
     )
 
 
@@ -358,7 +375,7 @@ def part4_honest_scope_assertions(
     It does NOT claim baseline-framework derivation of I_seed itself.
     """
     print("\n" + "=" * 88)
-    print("PART 4: HONEST SCOPE ASSERTIONS (open gate / conditional)")
+    print("PART 4: HONEST SCOPE ASSERTIONS (conditional appendix)")
     print("=" * 88)
 
     check(
@@ -379,13 +396,14 @@ def part4_honest_scope_assertions(
     )
     check(
         "Runner explicitly does NOT claim baseline-framework derivation of I_seed",
-        True,
-        "I_seed is imported from information geometry; treat note as open-gate support",
+        "two conservative downstream completions" in NOTE_FLAT,
+        "I_seed is imported from information geometry; the separate companion proves baseline non-entailment",
     )
     check(
-        "Selector is comparable to sister selectors (relative action, KKT classification)",
-        True,
-        "all converge to the same low-action branch on the reduced N_e surface",
+        "Conditional optimizer is fenced from positive downstream authority",
+        "does not positively supply the selector law" in NOTE_FLAT
+        and "Downstream positive consumers remain conditional" in NOTE_FLAT,
+        "the optimizer remains a comparator or explicit convention only",
     )
 
 
@@ -395,9 +413,10 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Framework baseline:")
-    print("  Lattice + Quantum + Record; one-qubit operator algebra on the Z^3 lattice.")
+    print("  Lattice + Qubit + Admissibility + Record; one-qubit operator")
+    print("  algebra on the Z^3 lattice.")
     print()
-    print("Scope (open gate / conditional diagnostic):")
+    print("Scope (open gate / conditional optimizer):")
     print("  IF the minimum-information selector law is adopted as a post-axiom")
     print("  convention on the fixed native N_e seed surface, THEN the runner")
     print("  finds a calibrated low-cost exact-closure off-seed source on the")
@@ -407,16 +426,18 @@ def main() -> int:
     print("  Choose the off-seed source minimizing")
     print("    I_seed = D_KL(x||x_seed) + D_KL(y||y_seed) + (1-cos delta)")
     print("  subject to exact closure eta_{i_*}/eta_obs = 1, where i_* is the")
-    print("  transport-favored column selected by the exact extremal class.")
+    print("  representative column selected by the frozen seed-0 transport search.")
     print()
     print("NOT claimed:")
-    print("  - that I_seed itself follows from the Lattice + Quantum + Record baseline")
+    print("  - that I_seed itself follows from the Lattice + Qubit +")
+    print("    Admissibility + Record baseline")
     print("  - that I_seed is the unique correct selector")
     print("  - global uniqueness/minimality of the constrained optimizer output")
     print("  - baseline-framework closure of the PMNS-assisted N_e branch")
+    print("  - positive selector authority for downstream claims")
 
     part0_source_scope_firewall()
-    i_star, extremal_params = part1_transport_extremality_fixes_the_favored_column()
+    i_star, extremal_params = part1_representative_transport_column()
     x_min, y_min, delta_min, _packet_min, etas_min = part2_minimum_information_closure_law(
         i_star, extremal_params
     )
@@ -427,7 +448,7 @@ def main() -> int:
     print("RESULT (conditional)")
     print("=" * 88)
     print("  Adopted post-axiom selector law (definition, not derivation):")
-    print("    - favored column fixed by exact transport extremality")
+    print("    - representative column fixed only by the frozen seed-0 search")
     print("    - off-seed source reported by minimum-information exact closure")
     print("    - exact eta/eta_obs = 1 on the current PMNS-assisted N_e branch")
     print("    - conditional on adopting I_seed as the selector")

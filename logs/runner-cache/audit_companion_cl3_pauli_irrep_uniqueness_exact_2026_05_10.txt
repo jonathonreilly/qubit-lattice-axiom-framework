@@ -3,7 +3,7 @@ runner: scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py
 runner_sha256: 4840fdfc9a8c676e7a32e877f28fbd7e4b27c2e5bb42a7fe78313e3867cb4975
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ========================================================================================

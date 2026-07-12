@@ -129,6 +129,11 @@ def closed_loops(length: int) -> list[tuple[Link, ...]]:
             points.append(position)
         if not admissible or points[-1] != ZERO:
             continue
+        interior = points[:-1]
+        if len(set(interior)) != len(interior):
+            # rooted SIMPLE loops (block-04 convention unification): vacuous
+            # at the lengths 4/6 used here; load-bearing at length 8.
+            continue
         links = tuple((points[index], points[index + 1]) for index in range(length))
         if len({frozenset(link) for link in links}) == length:
             loops.append(links)

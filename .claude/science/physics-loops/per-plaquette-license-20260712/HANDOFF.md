@@ -165,3 +165,28 @@ parent runner: SUMMARY: PASS=13 FAIL=0 (exit 0)
 
 Stop after the requested final verification. Do not commit, push, open a PR,
 or weave this support into the parent in block 03.
+
+## Block 04 (2026-07-12, supervisor-executed) + campaign close-out
+
+Length-8 extension of the classification: all one-tick domains reject the
+entire rooted simple length-8 class (0/3312, incl. full C_1 — the
+plaquette-only selection extends beyond the parent's tested {4,6}); radius-2
+admits exactly 96/3312 (strict subclass, unlike full 264/264 at length 6).
+Supervisor pre-probed every cell independently before editing.
+
+FINDING (convention): the shared loop generator (parent convention) enforced
+no-backtrack + no-repeated-edge but NOT vertex-simplicity — vacuous at
+lengths 4/6, load-bearing at 8 (4272 closed walks vs 3312 simple loops).
+Both campaign runners now enforce the stated rooted-SIMPLE domain (block-01
+results unchanged, 51/0; caches regenerated). The parent runner
+(frontier_per_plaquette..., lengths 4/6 only) is unaffected but inherits the
+same latent gap if ever extended — flagged for the review lane in the
+block-04 PR.
+
+Campaign residual (owner-gated / future lanes):
+- (P-FUND-1TICK) closure: needs either an owner registration decision or
+  future ticked-update-law content; the R4 boundary analysis in block 01 is
+  the recorded stretch attempt.
+- Lengths > 8 and non-loop link sets: open frontier, not claimed.
+Proposed weaving: parent note could later also cite the classification note
+(block 03/04) next to the derivation edge; deferred to review.

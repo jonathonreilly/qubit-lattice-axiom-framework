@@ -18,7 +18,7 @@ block exhibited four named one-step domains and a radius-2 falsifier, but it
 did not prove that the four domains exhaust the covariant one-step family or
 place radius 2 in the same computed table. Here the order-eight undirected-link
 stabilizer is constructed explicitly, its orbits are exhausted, and every
-cell of the resulting length-4/length-6 classification is recomputed.
+cell of the resulting length-4/length-6/length-8 classification is recomputed.
 
 This exact finite classification neither changes block 01's conditional
 derivation status nor changes the block-02-wired parent. Its role is upstream
@@ -111,29 +111,38 @@ the per-domain one-tick / `R`-locality upper-bound test `D subseteq C_1`; it
 does not separately assert that an update law has been established as
 `R`-local.
 
-| domain | size | length-4 family | length-6 family | one-tick / `R`-local bound (`D subseteq C_1`) |
-| --- | ---: | ---: | ---: | :---: |
-| `E` (endpoints) | 2 | empty (0/24) | 0/264 | yes |
-| `E∪A` | 4 | empty (0/24) | 0/264 | yes |
-| `E∪T` | 10 | all plaquettes (24/24) | 0/264 | yes |
-| `C_1` | 12 | all plaquettes (24/24) | 0/264 | yes |
-| radius-2 | 38 | 24/24 | 264/264 | NO |
+| domain | size | length-4 family | length-6 family | length-8 family | one-tick / `R`-local bound (`D subseteq C_1`) |
+| --- | ---: | ---: | ---: | ---: | :---: |
+| `E` (endpoints) | 2 | empty (0/24) | 0/264 | 0/3312 | yes |
+| `E∪A` | 4 | empty (0/24) | 0/264 | 0/3312 | yes |
+| `E∪T` | 10 | all plaquettes (24/24) | 0/264 | 0/3312 | yes |
+| `C_1` | 12 | all plaquettes (24/24) | 0/264 | 0/3312 | yes |
+| radius-2 | 38 | 24/24 | 264/264 | 96/3312 | NO |
 
 The radius-2 cardinality is computed rather than assumed. Each endpoint's
 cubic Manhattan radius-2 ball has 25 sites, their intersection has 12 sites,
 and their union therefore has `25 + 25 - 12 = 38` sites.
 
-The previously unchecked `E∪A` row is empty at both enumerated lengths:
-`0/24` and `0/264`. The radius-2 row admits the full length-6 enumeration.
+The previously unchecked `E∪A` row is empty at all three enumerated lengths:
+`0/24`, `0/264`, and `0/3312`. The radius-2 row admits the full length-6
+enumeration.
+
+**Length-8 extension (2026-07-12, block 04).** All 3312 rooted simple
+length-8 loops are rejected by every one-tick domain, including full `C_1`:
+the license's plaquette-only selection extends unchanged from the parent's
+tested {4, 6} domain to length 8. Radius-2, by contrast, admits exactly 96 of
+the 3312 length-8 loops — a strict subclass, unlike its full admission of
+the length-6 class — so the one-tick bound remains the operative exclusion
+mechanism at every tested length.
 Its named exterior point is also the block-01 falsifier instance: source `(-2,0,0)` and target `(0,0,0)`
 are at graph distance 2, so allowing that
 dependency is the witnessed violation class of one-tick confinement.
 
 ## Theorem (enumerated-domain interval classification)
 
-On the enumerated lengths 4 and 6, every domain in the four-element lattice
+On the enumerated lengths 4, 6, and 8, every domain in the four-element lattice
 that contains the transverse orbit lies in the interval `[E∪T,C_1]` and gives
-the same selection: all 24 plaquettes and no length-6 loop. Both domains that
+the same selection: all 24 plaquettes and no length-6 or length-8 loop. Both domains that
 omit the transverse orbit lie in `[E,E∪A]` and give the constant-empty family.
 Equivalently,
 
@@ -161,7 +170,7 @@ not the enumeration outcomes, pins the full `C_1` bound.
 
 ## Boundaries
 
-- This theorem concerns the enumerated lengths 4 and 6 only; no other loop
+- This theorem concerns the enumerated lengths 4, 6, and 8 only; no other loop
   length is classified.
 - This is a classification of covariant domains, not a classification of
   licenses beyond the endpoint-containing, stabilizer-invariant one-step
@@ -202,5 +211,5 @@ git status --short
 
 ```yaml
 claim_type_author_hint: bounded_theorem
-claim_scope: "The order-eight stabilizer exhausts endpoint-containing covariant one-step domains, and the length-4/length-6 table classifies those four domains plus radius 2."
+claim_scope: "The order-eight stabilizer exhausts endpoint-containing covariant one-step domains, and the length-4/length-6/length-8 table classifies those four domains plus radius 2."
 ```

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/per_plaquette_license_one_tick_reachability_derivation_2026_07_12.py
-runner_sha256: bea0586ccb98c5cc5d3de8c4cb7756eabdad1da552a8b099a7e147a0baa693bf
+runner_sha256: 2187339062813d6183773bf60048f301ebf18bf83d9620a40799a69b0aed23e8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 ========================================================================================

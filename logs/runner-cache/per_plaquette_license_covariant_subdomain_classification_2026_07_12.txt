@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/per_plaquette_license_covariant_subdomain_classification_2026_07_12.py
-runner_sha256: 33e6b93969b4f6041526a03c00c8575fbf2e0822d2161ec4e6d3a94e53576d89
+runner_sha256: 0ca4adaec367f1c5fd0639c3d3b8e5fdb35c37fb23745db65cdd0bd1812f62b6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.30
+elapsed_sec: 5.32
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -32,24 +32,27 @@ BLOCK B — exhaustive invariant-subset lattice
   INVARIANT_SUBSETS: tested=1024 invariant=4 sizes=[2, 4, 10, 12]
 
 ----------------------------------------------------------------------------------------
-BLOCK C — computed length-4/length-6 classification table
+BLOCK C — computed length-4/length-6/length-8 classification table
 ----------------------------------------------------------------------------------------
   [PASS] all five domain builders are undirected-link definitions
   [PASS] all five domain builders are translation/proper-rotation covariant  --  comparisons=130
   [PASS] rooted length-4 count  --  found=24
   [PASS] all rooted length-4 loops are plaquettes
   [PASS] rooted length-6 count  --  found=264
-  [PASS] the complete five-row classification matches the computed theorem table  --  {'E': (2, 0, 0, True), 'E+A': (4, 0, 0, True), 'E+T': (10, 24, 0, True), 'C_1': (12, 24, 0, True), 'radius-2': (38, 24, 264, False)}
+  [PASS] rooted length-8 count  --  found=3312
+  [PASS] the complete five-row classification matches the computed theorem table  --  {'E': (2, 0, 0, 0, True), 'E+A': (4, 0, 0, 0, True), 'E+T': (10, 24, 0, 0, True), 'C_1': (12, 24, 0, 0, True), 'radius-2': (38, 24, 264, 96, False)}
   [PASS] domains missing T give the constant-empty family
-  [PASS] domains containing T give the constant 24/0 family
+  [PASS] domains containing T give the constant 24/0/0 family
   [PASS] radius-2 admits the entire enumerated length-6 class
+  [PASS] one-tick domains reject the entire enumerated length-8 class
+  [PASS] radius-2 admits only a strict length-8 subclass (96 of 3312)  --  radius-2 length-8 pass=96
   COMPUTED_CLASSIFICATION_TABLE:
-  domain       size   length-4   length-6   one-tick-subset-C_1
-  E (endpoints)    2     0/24       0/264    yes
-  E union A       4     0/24       0/264    yes
-  E union T      10    24/24       0/264    yes
-  C_1            12    24/24       0/264    yes
-  radius-2       38    24/24     264/264    NO
+  domain       size   length-4   length-6   length-8    one-tick-subset-C_1
+  E (endpoints)    2     0/24       0/264       0/3312    yes
+  E union A       4     0/24       0/264       0/3312    yes
+  E union T      10    24/24       0/264       0/3312    yes
+  C_1            12    24/24       0/264       0/3312    yes
+  radius-2       38    24/24     264/264      96/3312    NO
 
 ----------------------------------------------------------------------------------------
 BLOCK D — one-tick column and named radius-2 witness
@@ -82,7 +85,7 @@ BLOCK E — paired-note surface pins
 SHORT STDOUT SUMMARY
 E union A row: size=4 length4=0/24 length6=0/264
 radius-2 domain size: 38
-TOTAL: PASS=39 FAIL=0
+TOTAL: PASS=42 FAIL=0
 ========================================================================================
 
 ----- stderr -----

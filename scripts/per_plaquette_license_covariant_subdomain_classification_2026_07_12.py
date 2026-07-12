@@ -3,7 +3,7 @@
 
 This deterministic runner constructs the order-eight stabilizer of the
 undirected reference link, exhausts all endpoint-containing subsets of its
-one-step domain, and computes the length-4/length-6 mutual-containment table.
+one-step domain, and computes the length-4/length-6/length-8 mutual-containment table.
 It also checks the paired note's theorem, status, table, and boundary pins.
 """
 from __future__ import annotations
@@ -203,6 +203,13 @@ def closed_loops(length: int) -> list[Loop]:
             points.append(position)
         if not admissible or points[-1] != ZERO:
             continue
+        interior = points[:-1]
+        if len(set(interior)) != len(interior):
+            # rooted SIMPLE loops: no vertex revisit before the closing
+            # return to the root (the stated parent/block-01 domain; the
+            # distinction is vacuous at lengths 4 and 6 and load-bearing at
+            # length 8, where non-simple closed walks exist).
+            continue
         links = tuple((points[index], points[index + 1]) for index in range(length))
         if len({frozenset(link) for link in links}) == length:
             loops.append(links)
@@ -365,7 +372,7 @@ def block_b(
 
 
 def block_c() -> tuple[list[dict[str, object]], list[Loop], list[Loop]]:
-    section("BLOCK C — computed length-4/length-6 classification table")
+    section("BLOCK C — computed length-4/length-6/length-8 classification table")
     rotations = proper_cubic_rotations()
     translations: tuple[Point, ...] = ((2, -1, 3), (-3, 0, 1))
     covariance_checks = []
@@ -395,9 +402,11 @@ def block_c() -> tuple[list[dict[str, object]], list[Loop], list[Loop]]:
 
     length4 = closed_loops(4)
     length6 = closed_loops(6)
+    length8 = closed_loops(8)
     check("rooted length-4 count", len(length4) == 24, f"found={len(length4)}")
     check("all rooted length-4 loops are plaquettes", all(map(is_plaquette, length4)))
     check("rooted length-6 count", len(length6) == 264, f"found={len(length6)}")
+    check("rooted length-8 count", len(length8) == 3312, f"found={len(length8)}")
 
     reference_c1 = c1_domain(REFERENCE_LINK)
     rows: list[dict[str, object]] = []
@@ -410,22 +419,24 @@ def block_c() -> tuple[list[dict[str, object]], list[Loop], list[Loop]]:
                 "size": len(reference),
                 "length4": sum(passes_domain(loop, builder) for loop in length4),
                 "length6": sum(passes_domain(loop, builder) for loop in length6),
+                "length8": sum(passes_domain(loop, builder) for loop in length8),
                 "one_tick": reference <= reference_c1,
             }
         )
 
     expected = {
-        "E": (2, 0, 0, True),
-        "E+A": (4, 0, 0, True),
-        "E+T": (10, 24, 0, True),
-        "C_1": (12, 24, 0, True),
-        "radius-2": (38, 24, 264, False),
+        "E": (2, 0, 0, 0, True),
+        "E+A": (4, 0, 0, 0, True),
+        "E+T": (10, 24, 0, 0, True),
+        "C_1": (12, 24, 0, 0, True),
+        "radius-2": (38, 24, 264, 96, False),
     }
     actual = {
         str(row["key"]): (
             row["size"],
             row["length4"],
             row["length6"],
+            row["length8"],
             row["one_tick"],
         )
         for row in rows
@@ -437,24 +448,34 @@ def block_c() -> tuple[list[dict[str, object]], list[Loop], list[Loop]]:
     )
     check(
         "domains missing T give the constant-empty family",
-        actual["E"][1:3] == actual["E+A"][1:3] == (0, 0),
+        actual["E"][1:4] == actual["E+A"][1:4] == (0, 0, 0),
     )
     check(
-        "domains containing T give the constant 24/0 family",
-        actual["E+T"][1:3] == actual["C_1"][1:3] == (24, 0),
+        "domains containing T give the constant 24/0/0 family",
+        actual["E+T"][1:4] == actual["C_1"][1:4] == (24, 0, 0),
     )
     check(
         "radius-2 admits the entire enumerated length-6 class",
         actual["radius-2"][2] == len(length6) == 264,
     )
+    check(
+        "one-tick domains reject the entire enumerated length-8 class",
+        all(actual[k][3] == 0 for k in ("E", "E+A", "E+T", "C_1")),
+    )
+    check(
+        "radius-2 admits only a strict length-8 subclass (96 of 3312)",
+        actual["radius-2"][3] == 96 and 0 < 96 < len(length8),
+        f"radius-2 length-8 pass={actual['radius-2'][3]}",
+    )
 
     print("  COMPUTED_CLASSIFICATION_TABLE:")
-    print("  domain       size   length-4   length-6   one-tick-subset-C_1")
+    print("  domain       size   length-4   length-6   length-8    one-tick-subset-C_1")
     for row in rows:
         print(
             f"  {str(row['label']):<12} {int(row['size']):>4}   "
             f"{int(row['length4']):>3}/{len(length4):<3}    "
             f"{int(row['length6']):>3}/{len(length6):<3}    "
+            f"{int(row['length8']):>4}/{len(length8):<4}    "
             f"{'yes' if row['one_tick'] else 'NO'}"
         )
     return rows, length4, length6
@@ -507,11 +528,11 @@ def block_d(rows: list[dict[str, object]]) -> None:
 def table_row_needles(rows: list[dict[str, object]]) -> tuple[str, ...]:
     by_key = {str(row["key"]): row for row in rows}
     return (
-        f"| `E` (endpoints) | {by_key['E']['size']} | empty ({by_key['E']['length4']}/24) | {by_key['E']['length6']}/264 | yes |",
-        f"| `E∪A` | {by_key['E+A']['size']} | empty ({by_key['E+A']['length4']}/24) | {by_key['E+A']['length6']}/264 | yes |",
-        f"| `E∪T` | {by_key['E+T']['size']} | all plaquettes ({by_key['E+T']['length4']}/24) | {by_key['E+T']['length6']}/264 | yes |",
-        f"| `C_1` | {by_key['C_1']['size']} | all plaquettes ({by_key['C_1']['length4']}/24) | {by_key['C_1']['length6']}/264 | yes |",
-        f"| radius-2 | {by_key['radius-2']['size']} | {by_key['radius-2']['length4']}/24 | {by_key['radius-2']['length6']}/264 | NO |",
+        f"| `E` (endpoints) | {by_key['E']['size']} | empty ({by_key['E']['length4']}/24) | {by_key['E']['length6']}/264 | {by_key['E']['length8']}/3312 | yes |",
+        f"| `E∪A` | {by_key['E+A']['size']} | empty ({by_key['E+A']['length4']}/24) | {by_key['E+A']['length6']}/264 | {by_key['E+A']['length8']}/3312 | yes |",
+        f"| `E∪T` | {by_key['E+T']['size']} | all plaquettes ({by_key['E+T']['length4']}/24) | {by_key['E+T']['length6']}/264 | {by_key['E+T']['length8']}/3312 | yes |",
+        f"| `C_1` | {by_key['C_1']['size']} | all plaquettes ({by_key['C_1']['length4']}/24) | {by_key['C_1']['length6']}/264 | {by_key['C_1']['length8']}/3312 | yes |",
+        f"| radius-2 | {by_key['radius-2']['size']} | {by_key['radius-2']['length4']}/24 | {by_key['radius-2']['length6']}/264 | {by_key['radius-2']['length8']}/3312 | NO |",
     )
 
 
@@ -547,7 +568,7 @@ def block_e(rows: list[dict[str, object]]) -> None:
     )
     boundary_needles = (
         "## Boundaries",
-        "enumerated lengths 4 and 6 only",
+        "enumerated lengths 4, 6, and 8 only",
         "classification of covariant domains",
         "does **not** prove that the fundamental action is per-plaquette",
         "`theta_bare` is untouched",

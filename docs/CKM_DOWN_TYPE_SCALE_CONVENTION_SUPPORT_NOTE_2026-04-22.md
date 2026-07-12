@@ -1,162 +1,288 @@
-# CKM Down-Type Mass-Ratio Scale-Convention Support Note
+# CKM Down-Type Five-Sixths Algebra And Scale-Covariance Boundary
 
-**Date:** 2026-04-22 (runner patched 2026-05-16 in response to audit defects D1+D2;
-source-graph cycle-edge repair 2026-06-17)
+**Date:** 2026-04-22; first-principles covariance repair 2026-07-12
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem
-**Status:** support-level source-graph repair, not a theorem-grade closure.
-Consolidates the bounded lane's numerical scale-convention coincidence into a
-single cross-checked identity with explicit scope. The `5/6` bridge itself
-remains open; what this note records is the size of the bounded lane's live
-numerical evidence.
-**Prior audit context:** a 2026-05-05 audit packet classified this as class-G
-numerical evidence and identified runner-level defects D1 and D2 plus open
-defect D3. The 2026-05-16 runner patch addressed D1 and D2; D3 (missing
-retained derivation of the `5/6` bridge and threshold-local comparator) remains
-open. Current audit status is set only by the independent audit lane after
-source changes.
-**Primary runner:** `scripts/frontier_ckm_down_type_scale_convention_support.py`
+**Status:** bounded support theorem with an exact algebraic core and an exact
+scale-rescue obstruction. Independent audit owns any effective status.
+**Primary runner:**
+[`scripts/frontier_ckm_down_type_scale_convention_support.py`](../scripts/frontier_ckm_down_type_scale_convention_support.py)
 
-## 0. Source-Graph Cycle-Edge Repair (2026-06-17)
+## 1. Question and repaired scope
 
-The audit queue identified this row as a primary cycle-break target before
-this repair:
-several co-cycle notes were markdown-linked even though this note uses
-them only as context about the still-open `5/6` bridge and
-threshold-local scale-selection problem. This source repair rewrites
-those co-cycle pointers as plain-text context while preserving the real
-load-bearing links to the retained/anchor rows
-[`ALPHA_S_DERIVED_NOTE.md`](ALPHA_S_DERIVED_NOTE.md) and
-[`CKM_ATLAS_AXIOM_CLOSURE_NOTE.md`](CKM_ATLAS_AXIOM_CLOSURE_NOTE.md).
-
-Plain-context rows after this repair:
-`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`,
-`QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md`,
-`DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md`, and the wider quark/CKM
-support stack. They remain scientifically relevant, but they are not
-load-bearing dependencies of this note's narrow calculation. The claim
-scope is unchanged: this row remains support-level / class-G numerical
-evidence and does not derive the `5/6` bridge, a unique threshold-local
-scale convention, or a retained down-type mass-ratio theorem.
-
-Cycle-edge verifier:
-`scripts/ckm_down_type_scale_convention_cycle_edge_hygiene_2026_06_17.py`.
-
-## 1. What this note does
-
-The retained down-type mass-ratio lane (`DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md`, bounded) has two distinct scale-comparison surfaces:
-
-- **threshold-local self-scale**: `m_s(2 GeV) / m_b(m_b) = 0.022345` → framework prediction `0.022390` at `+0.20%`.
-- **common-scale**: `m_s(m_b) / m_b(m_b) = 0.019474` → framework prediction `0.022390` at `+15.0%`.
-
-Both are "bounded lane comparisons" but they tell very different numerical stories. This note packages a single clean support calculation showing:
-
-1. the two comparisons are related by the **exact** 1-loop `γ_m/(2β_0) = 12/25`-running factor that the down-type note cites (a statement about QCD universality, not the framework);
-2. the `5/6` bridge identity `|V_cb|_atlas = α_s(v)/√6` vs `|V_cb|_obs = (m_s/m_b)^{5/6}` lands at `+0.06%` when the threshold-local comparator is used, and the residual comes from the `|V_cb|_atlas` atlas-vs-PDG `-0.06%` shift (matching what the bounded lane quotes);
-3. therefore the live numerical evidence on the threshold-local comparator is coherent at the sub-percent level on a cross-checked product of the retained `α_s(v)` anchor and the still-open `5/6` exponent bridge, which is the sharpest currently available support for this bounded lane.
-
-**This does NOT close:**
-
-- the theorem-grade derivation of the `5/6` bridge itself
-  (`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md` explicitly leaves this
-  open);
-- a retained theorem forcing the threshold-local comparator as the unique framework-natural scale;
-- the down-type mass-ratio lane's bounded → retained promotion.
-
-The useful content is: **the bounded lane's live support is tighter than its "bounded" label suggests if the threshold-local comparator is accepted as live**, and this note cross-checks both the `α_s(v)` anchor and the `5/6`-bridge exponent simultaneously to sub-percent precision.
-
-## 2. Inputs and comparators declared on main
-
-| Input | Value | Authority |
-|-------|-------|-----------|
-| `α_s(v)` | `0.103303816122` | [`ALPHA_S_DERIVED_NOTE.md`](ALPHA_S_DERIVED_NOTE.md) |
-| `C_F − T_F = 5/6` | exact | standard SU(3) Casimir arithmetic (open bridge for this lane) |
-| `|V_cb|_atlas = α_s(v)/√6` | `0.042174` | [`CKM_ATLAS_AXIOM_CLOSURE_NOTE.md`](CKM_ATLAS_AXIOM_CLOSURE_NOTE.md) |
-| Observed `|V_cb|_PDG` | `0.0422` | PDG 2024 comparator |
-| Threshold-local `m_s(2 GeV)` | `93.4 MeV` | PDG 2024 comparator |
-| Threshold-local `m_b(m_b)` | `4.180 GeV` | PDG 2024 comparator |
-| 1-loop `gamma_m/(2 beta_0)` for `n_f=4` | `12/25` | standard QCD comparator convention |
-
-## 3. The consolidated identity (numerical)
-
-Define:
+The earlier version compared one fixed prediction,
 
 ```text
-R_atlas         := α_s(v) / √6                                  (retained)
-R_pred          := R_atlas^{6/5}                                 (5/6 bridge: m_s/m_b predicted)
-R_thresh        := m_s(2 GeV) / m_b(m_b)                         (PDG threshold-local)
-R_common        := m_s(m_b)   / m_b(m_b)                         (PDG common-scale)
-transport_1loop := [α_s(2 GeV) / α_s(m_b)]^{12/25}               (1-loop running)
+R_pred = [alpha_s(v)/sqrt(6)]^(6/5),
 ```
 
-The consolidated identity is:
+to two observational surfaces:
 
 ```text
-R_thresh         =  R_common · transport_1loop                               (exact-QCD)    (2.1)
-R_pred / R_thresh = 1.0020    (+0.20%; framework self-consistency)                          (2.2)
-R_pred / R_common = 1.150     (+15.0%; common-scale mismatch)                               (2.3)
-transport_1loop  = 1.14747                                                                  (2.4)
+R_common = m_s(m_b)/m_b(m_b),
+R_mixed  = m_s(2 GeV)/m_b(m_b).
 ```
 
-**(2.1) is an exact QCD statement; (2.2)–(2.4) are numerical verifications against PDG.**
+It reported a roughly `+15.5%` common-scale deviation and a `+0.2%`
+mixed/reference-scale deviation. That comparison did not transport the theory
+prediction when it transported the observation. It was therefore not an
+RG-covariant comparison.
 
-The retained framework's `R_atlas` anchor is at scale `v` (electroweak scale). The 1-loop running factor `transport_1loop` converts between common-scale and threshold-local at the down-type pair `(m_s, m_b)`; numerically it equals `1.14747`, which is the precise factor that separates the `+15%` common-scale mismatch from the `+0.20%` threshold-local match.
+This repair proves two narrower results:
 
-## 4. What the retained framework's natural scale is
+1. a rank-`1+5` normalized determinant realizes a `5/6` power exactly and
+   singles out `N_c=3` within its `2N_c` generalization;
+2. any shared multiplicative transport preserves the relative deviation
+   between theory and observation, so a scale-convention change alone cannot
+   turn the common-scale mismatch into a sub-percent agreement.
 
-The retained `α_s(v)` is defined at the electroweak scale `v`. The retained CKM atlas ([`CKM_ATLAS_AXIOM_CLOSURE_NOTE.md`](CKM_ATLAS_AXIOM_CLOSURE_NOTE.md)) derives `|V_cb| = α_s(v)/√6` from the canonical tensor/projector surface at that scale.
+The first result is an abstract algebraic lemma, not evidence for its physical
+typing. The second closes the scale-convention-rescue route on the stated
+multiplicative-transport domain.
 
-**What the retained surface does NOT do** is specify which mass-scale convention is natural for the down-type ratio `m_s/m_b`. On the retained surface, mass ratios are extracted from amplitude comparisons at scale `v` (via the bounded `5/6` bridge) — but `m_s/m_b` is scale-independent at 1-loop in QCD (same anomalous dimension), so in principle any common-scale convention would give the same theoretical value.
+## 2. Minimal premise set
 
-The numerical observation is: the framework's prediction `R_pred = 0.022390` matches `R_thresh = 0.022345` at `+0.20%` but is `+15.0%` above `R_common = 0.019474`. This is most naturally read as: the `5/6` bridge is empirically more accurate when compared against the threshold-local PDG convention than against the common-scale PDG convention. Both conventions are equally valid extractions from observation; they differ only by the 1-loop transport factor.
+The exact proof uses only these explicit conditions:
 
-The retained framework does NOT force one over the other. The bounded lane's current live support uses threshold-local because the match is numerically closer. A theorem-grade derivation of the `5/6` bridge is what would resolve which scale the framework structurally picks.
+1. a six-dimensional vector space with complementary projectors `Q` and `P`,
+   where `rank(Q)=1`, `P=I-Q`, and `rank(P)=5`;
+2. a positive scalar `R` and the operator `X_R = Q + R P`;
+3. positive common-scale theory and observation ratios `R_pred` and
+   `R_common`;
+4. a positive shared multiplicative transport `T` from the common surface to
+   the mixed/reference surface.
+5. for the Casimir comparison only, the standard fundamental-generator
+   normalization `tr_F(T^a T^b)=T_F delta^(ab)` with `T_F=1/2`.
 
-## 5. Runner verification (2026-05-16 audit-response patch)
+No observed mass, fitted exponent, quoted coupling, or selected scale is a
+proof input. The numerical values in Section 6 are a post-theorem illustration.
 
-`scripts/frontier_ckm_down_type_scale_convention_support.py` verifies, with **all transport factors and common-scale masses now taken from INDEPENDENT PDG / FLAG quotations** (no hard-coded transport literal, no circular construction):
+The [current framework axioms](MINIMAL_AXIOMS_2026-06-29.md) and approved
+primitives do not supply a quark-mass operator, a CKM normalized-determinant
+readout, or a `2 GeV` selector. In particular, the approved
+[scale-reference primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md) is a units
+conversion and carries no mass ratio or dimensionless selector.
 
-1. retained `α_s(v) = 0.103303816122` numerically (sympy Rational via canonical same-surface);
-2. retained `|V_cb|_atlas = α_s(v)/√6 = 0.0421736` (exact);
-3. retained `5/6 = C_F − T_F` exactly from Casimir arithmetic (sympy);
-4. PDG 2024 input `m_s(2 GeV) = 93.4 ± 8.6 MeV`;
-5. FLAG 2024 / PDG 2024 input `m_s(m_b) = 81.0 ± 7.5 MeV` (**independent published common-scale quotation; NOT derived from m_s(2 GeV) inside the runner**);
-6. PDG 2024 input `m_b(m_b) = 4.180 GeV`;
-7. **transport factor `m_s(2 GeV)/m_s(m_b) = 1.15309` read off the two independent PDG/FLAG quotations** (no hard-coded literal, no closed-form coefficient discretion);
-8. sanity envelope: the observed transport sits inside the published 4-loop QCD literature envelope `[1.13, 1.17]`;
-9. `R_thresh = m_s(2 GeV)/m_b(m_b) = 0.022344` (PDG);
-10. `R_common = m_s(m_b)/m_b(m_b) = 0.019378` (FLAG, INDEPENDENT);
-11. algebraic bookkeeping: `R_thresh = R_common × (m_s(2 GeV)/m_s(m_b))` (now a consequence of the three INDEPENDENT inputs above, not a circular construction);
-12. framework prediction `R_pred = [α_s(v)/√6]^(6/5) = 0.022390`;
-13. `R_pred / R_thresh − 1 = +0.20%` (threshold-local numerical match, class G observation);
-14. `R_pred / R_common − 1 = +15.54%` (common-scale deviation; consistent with the transport factor as a stable scale-convention fact);
-15. ratio-of-deviations equals the independently-quoted transport factor (algebraic bookkeeping from independent inputs).
+## 3. Exact normalized-determinant core
 
-Expected: `PASSED: 17/17`.
+Let `Q` have rank one on a six-dimensional space and let `P=I-Q`. For `R>0`,
 
-### Audit defects addressed by this patch (2026-05-16)
+```text
+X_R = Q + R P.
+```
 
-| Defect | Description | Fix |
-|---|---|---|
-| D1 | Transport factor hard-coded to `1.14747` after the runner's own 1-loop computation gave a different value. | Transport factor now READ OFF two independent published quotations (PDG `m_s(2 GeV) = 93.4 MeV` and FLAG `m_s(m_b) = 81.0 MeV`), giving `1.15309` directly. No transport literal appears in the runner; no closed-form formula coefficient discretion is invoked. |
-| D2 | `R_common` was constructed by dividing `R_thresh` by the hard-coded transport, making the "consolidated identity" trivially circular. | `R_common` is now an INDEPENDENT FLAG 2024 quotation of `m_s(m_b)/m_b(m_b)`. The consolidated identity is now an algebraic bookkeeping consequence of three independent inputs, not a tautology hidden behind one hard-coded number. |
-| D3 | Neither the `5/6` bridge nor the threshold-local comparator was derived from retained inputs. | **Still open.** Deriving the `5/6` bridge and the threshold-local comparator from retained inputs is tracked in the plain-context notes `CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md` and `QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md`. The class-G numerical-match status of this note is **unchanged** by the runner patch; the +0.20% threshold-local match remains a numerical observation, not a derivation. |
+The spectrum is
 
-## 6. Scope qualifiers
+```text
+spec(X_R) = {1, R, R, R, R, R}.
+```
 
-- This note is **support-level**; it does not upgrade the down-type mass-ratio lane from `bounded` to `retained`.
-- The `5/6` bridge itself remains bounded; the plain-context note
-  `CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md` explicitly flags the
-  theorem-grade exponentiation mechanism at `g=1` as open.
-- The claim that the threshold-local comparator is the unique framework-natural scale is NOT derived here; it remains an empirical observation of where the bounded lane matches best.
-- After the 2026-05-16 runner patch, the `+0.20%` match no longer rests on a hard-coded `1.14747` transport literal or a circular `R_common = R_thresh / transport` construction. It now rests on three INDEPENDENT PDG/FLAG inputs (`m_s(2 GeV)`, `m_s(m_b)`, `m_b(m_b)`) plus the retained anchors `α_s(v)` and `5/6 = C_F − T_F`. The PDG and FLAG mass quotations themselves carry quoted uncertainties of order `~9%` on `m_s(m_b)`; the `+0.20%` figure is the central-value match, with the +/- 9% FLAG envelope on `m_s(m_b)` setting the precision floor on the common-scale comparator separately.
-- The class-G numerical-match status of this note is **unchanged** by the runner patch; what the patch closes is the runner-level circularity and hard-coding that the 2026-05-05 audit flagged, not the missing structural derivations (audit defect D3) of the `5/6` bridge or the threshold-local comparator.
+Therefore
 
-## 7. Cross-references
+```text
+det(X_R) = R^5,
+Delta_6(X_R) := det(X_R)^(1/6) = R^(5/6).             (3.1)
+```
 
-- `docs/DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md` — primary bounded lane note.
-- `CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md` — `5/6` bridge support
-  context; not load-bearing for this narrow scale-convention
-  calculation.
-- [`ALPHA_S_DERIVED_NOTE.md`](ALPHA_S_DERIVED_NOTE.md) — retained `α_s(v)`.
-- [`CKM_ATLAS_AXIOM_CLOSURE_NOTE.md`](CKM_ATLAS_AXIOM_CLOSURE_NOTE.md) — retained `|V_cb|_atlas`.
-- `docs/UP_TYPE_MASS_RATIO_CKM_INVERSION_NOTE.md` — bounded up-sector parallel-bridge lane.
+This is an exact abstract realization of a `5/6` power. Because the eigenvalue
+multiplicity was built into `X_R`, it is not evidence for the physical bridge.
+It does not identify `R` with `m_s/m_b` or `Delta_6(X_R)` with `|V_cb|`.
+
+The color-rank generalization has dimension `2N_c`, a rank-one channel, and a
+rank-`2N_c-1` complement. Its normalized-determinant exponent is
+
+```text
+p_det(N_c) = (2N_c-1)/(2N_c).
+```
+
+For fundamental `SU(N_c)` in the stated `T_F=1/2` normalization,
+
+```text
+C_F-T_F = (N_c^2-N_c-1)/(2N_c).
+```
+
+Equality requires
+
+```text
+2N_c-1 = N_c^2-N_c-1
+<=> N_c(N_c-3)=0.
+```
+
+Among integer color ranks `N_c>=2`, the equality is unique at `N_c=3`:
+
+```text
+p_det(3) = C_F-T_F = 5/6.                              (3.2)
+```
+
+## 4. Why the algebraic core is not yet the physical bridge
+
+Two interfaces of one composite physical bridge remain absent:
+
+```text
+down-quark mass data  --->  X_R = Q + (m_s/m_b) P,       (4.1)
+X_R                   --->  |V_cb| = Delta_6(X_R).       (4.2)
+```
+
+The rank split alone cannot supply those maps. A direct counterexample fixes
+all up- and down-mass eigenvalues and varies only their relative eigenbasis:
+
+```text
+M_u = diag(m_u,m_c,m_t),
+M_d(theta) = R_23(theta) diag(m_d,m_s,m_b) R_23(theta)^dagger.
+```
+
+Every spectral mass invariant is independent of `theta`, while
+
+```text
+|V_cb| = |sin(theta)|
+```
+
+varies continuously. Thus mass spectra, Casimir arithmetic, and a rank count do
+not entail a CKM mixing entry. Equations (4.1) and (4.2) form one genuine
+physical bridge obligation, not an algebraic consequence of (3.1).
+
+This is a current-packet boundary only. A future source/action theorem may
+derive both maps.
+
+## 5. Exact scale-covariance theorem
+
+Let `R_pred` and `R_common` be positive theory and observation ratios on one
+common renormalization surface. Let `T>0` be the shared transport to a mixed
+surface. Covariance gives
+
+```text
+R_pred,mixed = T R_pred,
+R_obs,mixed  = T R_common.                               (5.1)
+```
+
+The relative deviation is invariant:
+
+```text
+R_pred,mixed/R_obs,mixed - 1
+  = (T R_pred)/(T R_common) - 1
+  = R_pred/R_common - 1.                                 (5.2)
+```
+
+This identity is independent of the numerical value or perturbative order of
+`T`. Threshold matching factors may be included in `T`; if they act on the
+same numerator transport, they cancel in (5.2) as well.
+
+The crossed comparison used previously was instead
+
+```text
+D_cross(T) = R_pred/(T R_common) - 1.                    (5.3)
+```
+
+It holds the theory result on the common surface while moving only the
+observation. It is not invariant:
+
+```text
+d D_cross/dT = -R_pred/(T^2 R_common) != 0.              (5.4)
+```
+
+Indeed, `T=R_pred/R_common` makes (5.3) vanish identically. A small crossed
+deviation can therefore be created by the selected transport and cannot serve
+as a scale-selection theorem.
+
+For flavor-universal multiplicative QCD mass running on a fixed-flavor
+surface,
+
+```text
+d ln(m_q)/d ln(mu) = -gamma_m,
+d ln[m_s(mu)/m_b(mu)]/d ln(mu) = -gamma_m + gamma_m = 0. (5.5)
+```
+
+A mixed ratio with only the strange numerator moved has a nonzero scale
+derivative. Consequently, a bridge stated directly on that mixed ratio already
+contains an additional scale/readout prescription. QCD transport does not
+select `2 GeV`.
+
+## 6. Comparator-only numerical illustration
+
+The current central values give
+
+```text
+R_pred   = 0.0223897316159,
+R_common = 81.0/4180.0 = 0.0193779904306,
+T        = 93.4/81.0   = 1.1530864197531,
+R_mixed  = T R_common  = 0.0223444976077.
+```
+
+The old crossed comparison is
+
+```text
+R_pred/R_mixed - 1 = +0.202439%.                         (6.1)
+```
+
+The covariantly transported prediction is
+
+```text
+T R_pred = 0.0258172954682,
+(T R_pred)/R_mixed - 1 = +15.542072%,                    (6.2)
+```
+
+exactly equal, up to rounding, to
+
+```text
+R_pred/R_common - 1 = +15.542072%.                       (6.3)
+```
+
+The `+0.20%` value is therefore a cross-surface coincidence. It is not a
+transport explanation of the common-scale discrepancy.
+
+The earlier runner also stored `alpha_s(2 GeV)=0.3026` and
+`alpha_s(m_b)=0.2211`. Those values give the one-loop-truncated factor
+
+```text
+[0.3026/0.2211]^(12/25) = 1.1625576,
+```
+
+not the observed-mass ratio `93.4/81.0 = 1.1530864` and not the historical
+literal `1.14747`. Only the one-loop coefficient arithmetic leading to
+`12/25` is exact; a finite-order transport factor is not an exact all-orders
+QCD statement.
+
+## 7. Theorem and boundary
+
+**Theorem (five-sixths algebra and scale-covariance boundary).** On the
+explicit domain of Sections 2-5:
+
+1. the normalized determinant of a rank-`1+5` operator gives `R^(5/6)`
+   exactly, and, in the standard `T_F=1/2` generator normalization, `N_c=3`
+   uniquely equates this exponent with `C_F-T_F` in the `2N_c` family;
+2. fixed mass spectra do not determine a mixing angle, so the composite
+   mass-operator/CKM-readout bridge (4.1)-(4.2) remains a separate physical
+   obligation;
+3. shared multiplicative RG transport preserves relative theory/observation
+   deviation, so scale convention alone cannot convert the common-scale
+   mismatch into the reported sub-percent agreement.
+
+The scale-convention-rescue route is closed on this domain. The constructive
+remaining target is sharp: derive the composite typed bridge (4.1)-(4.2), and state the
+result on a common or explicitly RG-covariant mass surface. If a future bridge
+is instead defined directly on `m_s(2 GeV)/m_b(m_b)`, its `2 GeV` prescription
+must be supplied or derived as part of that bridge.
+
+## 8. Does not claim
+
+- no observed quark mass or CKM value is derived;
+- no absolute bottom or strange mass is closed;
+- the physical maps (4.1)-(4.2) are not supplied by the determinant identity;
+- no global impossibility is claimed for future source/action, RGI-mass, or
+  explicitly conditional convention routes;
+- the old `+0.20%` central-value coincidence is not retained as derivation
+  evidence.
+
+## 9. Verification
+
+Run:
+
+```bash
+python3 scripts/frontier_ckm_down_type_scale_convention_support.py
+```
+
+Expected final line:
+
+```text
+SUMMARY: EXACT_PASS=26 COMPARATOR_PASS=6 FAIL=0
+```

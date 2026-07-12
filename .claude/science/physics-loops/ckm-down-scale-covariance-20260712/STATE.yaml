@@ -1,0 +1,46 @@
+loop_slug: ckm-down-scale-covariance-20260712
+mode: run
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: comparator-only-non-load-bearing
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+runtime: interactive_single_target
+cycle_count: 1
+block_count: 1
+active_route: rank_one_plus_five_determinant_and_shared_transport_covariance
+hard_residual: physical_maps_Md_to_XR_and_XR_to_Vcb
+files_touched:
+  - docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md
+  - scripts/frontier_ckm_down_type_scale_convention_support.py
+  - logs/runner-cache/frontier_ckm_down_type_scale_convention_support.txt
+  - docs/CKM_DOWN_TYPE_SCALE_CONVENTION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md
+  - scripts/ckm_down_type_scale_convention_cycle_edge_hygiene_2026_06_17.py
+  - logs/runner-cache/ckm_down_type_scale_convention_cycle_edge_hygiene_2026_06_17.txt
+  - .claude/science/physics-loops/ckm-down-scale-covariance-20260712/
+open_imports: []
+open_parent_obligations:
+  - physical_down_mass_operator_map
+  - physical_ckm_normalized_determinant_readout
+no_go_routes:
+  - casimir_identity_only
+  - perturbative_qcd_exponent
+  - scale_convention_rescue
+  - fitted_reference_scale
+trace_gate: direct_blocker_closure_partially_closes
+review_disposition: pass
+pipeline_status: pass_16_of_16
+strict_audit_lint_status: pass_zero_errors
+generated_audit_surfaces: restore_from_origin_main_before_commit
+remote_branch: physics-loop/ckm-down-scale-closure-block01-20260712
+pr_status: pending
+pr_url: null
+lock_path: /private/tmp/cl3-ckm-scale-physics-loop.lock
+lock_note: default path hardcodes unavailable user; authorized private-tmp fallback acquired
+next_exact_action: validate_pipeline_restore_authority_outputs_commit_push_open_pr
+stop_condition: one_review_clean_pr_opened_or_review_blocks_with_honest_handoff

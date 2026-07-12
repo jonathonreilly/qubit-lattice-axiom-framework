@@ -1,121 +1,58 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_down_type_scale_convention_support.py
-runner_sha256: 5678de40090e1245c68ffe90466690788414c663b5db94d6dc0766036c65b9f1
+runner_sha256: d264014abb2dd908740130f58f7e374302d826953bc0c9a14e3099f06f1a87e9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
-================================================================================
-CKM down-type mass-ratio scale-convention support (audit-response patch)
-================================================================================
-[PASS] 1.1 alpha_s(v) = 0.103303816122 (retained from ALPHA_S_DERIVED_NOTE)
-       alpha_s(v) = 0.103303816122
-[PASS] 1.2 |V_cb|_atlas = alpha_s(v)/sqrt(6) (retained from CKM_ATLAS_AXIOM_CLOSURE)
-       |V_cb|_atlas = 0.0421736063
-[PASS] 1.3 C_F - T_F = 5/6 (exact SU(3) Casimir, sympy)
-       C_F = 4/3, T_F = 1/2, C_F - T_F = 5/6
-[PASS] 2.1 m_s(2 GeV) = 93.4 MeV (PDG 2024, MS-bar, INDEPENDENT input)
-       m_s(2 GeV) = 93.4 +/- 8.6 MeV (PDG 2024)
-[PASS] 2.2 m_s(m_b)  = 81.0 MeV (FLAG 2024 / PDG 2024, MS-bar, INDEPENDENT input)
-       m_s(m_b) = 81.0 +/- 7.5 MeV (FLAG 2024 / PDG 2024)
-       NOT derived from m_s(2 GeV) via any transport factor; this is the
-       independent published common-scale value.
-[PASS] 2.3 m_b(m_b)  = 4.180 GeV (PDG 2024, MS-bar)
-       m_b(m_b) = 4.18 GeV (PDG 2024)
-[PASS] 3.1 transport_observed = m_s(2 GeV) / m_s(m_b) (from independent quotations)
-       transport_observed = 93.4 / 81.0 = 1.15309
-       Independent-input envelope (PDG ⊕ FLAG, in quadrature):
-         +/- 0.1506 (13.1%)
-       This value is READ OFF two independent published quotations; it is
-       NOT hard-coded as a literal in this runner and it is NOT computed
-       from any closed-form running formula whose coefficient choice would
-       re-introduce the discretion the audit objected to.
-[PASS] 3.2 transport_observed sits in the published 4-loop QCD envelope [1.13, 1.17]
-       transport_observed = 1.15309
-       This is a sanity check that the independently-quoted ratio is
-       consistent with the standard literature range for the 4-loop MS-bar
-       mass-running factor m(2 GeV) / m(m_b) at n_f = 4.
-[PASS] 4.1 R_thresh = m_s(2 GeV)/m_b(m_b) = 0.022344 (PDG 93.4/4180)
-       R_thresh = 0.022344
-[PASS] 4.2 R_common = m_s(m_b)/m_b(m_b) = 0.01938 (FLAG 81.0/4180, INDEPENDENT)
-       R_common = 0.019378
-       INDEPENDENT input; NOT derived from R_thresh via any transport factor.
-[PASS] 4.3 BOOKKEEPING: R_thresh = R_common * (m_s(2GeV)/m_s(m_b))
-       R_common * transport_observed = 0.0223444976
-       R_thresh (PDG)                = 0.0223444976
-       This restated identity is now an algebraic bookkeeping
-       consequence of R_common, R_thresh, and transport_observed
-       each being read off independent PDG/FLAG quotations.
-[PASS] 4.4 NON-TRIVIAL CHECK: transport_observed agrees with published 4-loop QCD
-       transport_observed = 1.15309 (PDG/FLAG independent inputs)
-       published 4-loop closed-form envelope: [1.13, 1.17]
-       The non-trivial physics content is that the FLAG quotation of
-       m_s(m_b) and the PDG quotation of m_s(2 GeV) are consistent with
-       the standard QCD 4-loop running, which is what makes the +0.20%
-       vs +15% comparator-relative split a stable scale-convention fact
-       rather than an arbitrary numerical coincidence.
-[PASS] 5.1 Framework prediction R_pred = [alpha_s(v)/sqrt(6)]^(6/5) = 0.022390
-       R_pred = 0.0223897316
-[PASS] 5.2 Threshold-local numerical match: R_pred/R_thresh - 1 ~= +0.20%
-       R_pred / R_thresh - 1 = +0.2024%
-       Class G observation: numerical match at the threshold-local
-       comparator. NOT a derivation; the 5/6 bridge and the choice of
-       threshold-local comparator both remain bounded (open).
-[PASS] 5.3 Common-scale deviation: R_pred/R_common - 1 ~= +15%
-       R_pred / R_common - 1 = +15.5421%
-       At the common scale (FLAG m_s(m_b) input), R_pred sits ~+15%
-       above R_common; the gap is of order the mass-running transport
-       factor as expected.
-[PASS] 6.1 Ratio of comparator-relative deviations = transport_observed (bookkeeping)
-       (R_pred/R_common)/(R_pred/R_thresh) = 1.1530864198
-       transport_observed                   = 1.1530864198
-       This is now an algebraic identity from independent PDG/FLAG inputs;
-       the physics content is in 4.4 above (transport_observed agrees with
-       published 4-loop QCD), not in this bookkeeping line.
-[PASS] 7.1 Scope: class-G numerical-match observation, NOT a derivation
-       Audit response runner patch addresses two runner-level defects:
-         (D1) the transport factor is now read off two INDEPENDENT
-              published quotations (PDG m_s(2 GeV) and FLAG m_s(m_b)),
-              NOT hard-coded to 1.14747 and NOT computed from a closed-
-              form formula whose coefficient choice would re-introduce
-              the discretion the audit objected to.
-         (D2) R_common is now an INDEPENDENT FLAG 2024 quotation of
-              m_s(m_b), NOT derived from R_thresh and a transport factor.
-       
-       The third audit defect, (D3) the absence of a retained derivation
-       of the 5/6 bridge and the threshold-local comparator, remains an
-       open frontier item (CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE and
-       QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28). The
-       +0.20% threshold-local match is therefore still a numerical-match
-       observation, not a theorem-grade closure.
-       
-       The note's class-G status is UNCHANGED by this runner patch. What
-       changes is that the load-bearing numerical match is no longer
-       produced by a circular construction or hidden behind a hard-coded
-       transport value.
+CKM DOWN-TYPE FIVE-SIXTHS ALGEBRA AND SCALE-COVARIANCE BOUNDARY
 
-================================================================================
-Summary
-================================================================================
-PASSED: 17/17
+1. EXACT NORMALIZED-DETERMINANT CORE
+[EXACT_PASS] Q is a projector
+[EXACT_PASS] P is a projector
+[EXACT_PASS] Q and P are complementary
+[EXACT_PASS] rank(Q)=1
+[EXACT_PASS] rank(P)=5
+[EXACT_PASS] det(Q+R P)=R^5
+[EXACT_PASS] normalized log determinant has weight 5/6
+[EXACT_PASS] 2N rank-one complement gives (2N-1)/(2N)
+[EXACT_PASS] C_F-T_F general form
+[EXACT_PASS] power equality reduces to N(3-N)=0
+[EXACT_PASS] N_c=3 is unique in positive scan
+             solutions=[3]
+[EXACT_PASS] p_det(3)=5/6
+[EXACT_PASS] C_F-T_F at N_c=3 is 5/6
 
-Audit defects (D1) and (D2) are now closed at the runner level:
-  - transport factor = m_s(2 GeV)/m_s(m_b) = 1.15309
-    read off independent PDG and FLAG quotations (no hard-coded literal,
-    no closed-form formula coefficient discretion).
-  - R_common = 0.019378 from FLAG m_s(m_b) = 81.0 MeV,
-    an independent quotation NOT derived from R_thresh.
-  - The observed transport sits in the published 4-loop QCD envelope
-    [1.13, 1.17], so the comparator-relative split is a stable
-    scale-convention fact rather than an arbitrary coincidence.
+2. EXACT MASS-SPECTRUM / MIXING COUNTERMODEL
+[EXACT_PASS] down trace is orientation-invariant
+[EXACT_PASS] down determinant is orientation-invariant
+[EXACT_PASS] down quadratic trace is orientation-invariant
+[EXACT_PASS] up spectrum stays fixed
+[EXACT_PASS] relative 2-3 mixing varies as sin(theta)
+[EXACT_PASS] two fixed-spectrum models have different mixing
 
-The retained framework prediction R_pred = 0.022390 matches
-R_thresh at +0.20% and R_common at +15.54%.
+3. EXACT SCALE-COVARIANCE OBSTRUCTION
+[EXACT_PASS] shared transport preserves relative deviation
+[EXACT_PASS] crossed comparison depends on transport
+[EXACT_PASS] crossed comparison can be tuned to zero
+[EXACT_PASS] flavor-universal common-scale mass ratio has zero RG derivative
+[EXACT_PASS] fixed-power mixed bridge has nonzero numerator-scale derivative
+[EXACT_PASS] one-loop n_f=4 mass-transport power is 12/25
+[EXACT_PASS] one-loop mass-transport power is not 5/6
 
-Audit defect (D3) -- absence of a retained derivation of the 5/6
-bridge and the threshold-local comparator -- remains open frontier.
-The note's class-G numerical-match status is UNCHANGED by this patch.
+4. COMPARATOR-ONLY NUMERICAL ILLUSTRATION
+[COMPARATOR_PASS] R_mixed=T R_common
+[COMPARATOR_PASS] historical crossed deviation is +0.202%
+[COMPARATOR_PASS] covariant mixed deviation equals common deviation
+             deviation=+15.542071796%
+[COMPARATOR_PASS] covariant deviation remains +15.542%
+[COMPARATOR_PASS] old runner couplings imply 1.162557619574
+             one_loop=1.162557619574
+[COMPARATOR_PASS] one-loop factor differs from observed-mass transport
+             one_loop=1.162557620, observed=1.153086420
+
+SUMMARY: EXACT_PASS=26 COMPARATOR_PASS=6 FAIL=0
 
 ----- stderr -----
 

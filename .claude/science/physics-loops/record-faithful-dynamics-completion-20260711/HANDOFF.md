@@ -304,3 +304,8 @@ only the two crossing-link forests, keep interior temporal links/holonomy
 dynamical, prove constant measure disintegration and reflection preservation,
 then combine the two positive fermion seams with the Wilson character kernel.
 No axiom-update stop condition is triggered.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5270
+is open and mergeable on Block14; the independent audit workflow was running
+at the delivery checkpoint.

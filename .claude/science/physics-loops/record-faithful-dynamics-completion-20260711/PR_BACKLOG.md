@@ -29,7 +29,8 @@ as the next stacked review block:
   periodic/uniform counterexample, free AP+seam repair, and named holonomy route
 - audit compatibility: one `bounded_theorem` / `unaudited` row, exactly three
   dependencies, matching source hash, and strict lint with no errors
-- delivery check: ready for commit, push, and stacked PR
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5270
+- delivery check: open, mergeable, independent audit workflow running
 
 No merge is authorized. Independent audit remains authoritative.
 

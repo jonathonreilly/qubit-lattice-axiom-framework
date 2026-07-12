@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py
-runner_sha256: 0a54ce2e3169dbce1e27d2489d023d38c4f03a434f63908adf0fea8afc9ee0db
+runner_sha256: 4840fdfc9a8c676e7a32e877f28fbd7e4b27c2e5bb42a7fe78313e3867cb4975
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -102,6 +102,48 @@ Part 8: explicit omega^2 = -I proof step expansion
   [PASS (A)] omega^2 overall: full expansion equals -I
 
 ----------------------------------------------------------------------------------------
+Part 9: *-representation to unitary-equivalence upgrade (U3b)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (9a Hadamard) conjugate of sigma_1 is Hermitian
+  [PASS (A)] (9a Hadamard) conjugate of sigma_2 is Hermitian
+  [PASS (A)] (9a Hadamard) conjugate of sigma_3 is Hermitian
+  [PASS (A)] (9a Hadamard) S^dagger S == I  (unitary intertwiner (c = 1))
+  [PASS (A)] (9a SO(2) rotation) conjugate of sigma_1 is Hermitian
+  [PASS (A)] (9a SO(2) rotation) conjugate of sigma_2 is Hermitian
+  [PASS (A)] (9a SO(2) rotation) conjugate of sigma_3 is Hermitian
+  [PASS (A)] (9a SO(2) rotation) S^dagger S == I  (unitary intertwiner (c = 1))
+  [PASS (A)] (9b 3*Hadamard) conjugate of sigma_1 is Hermitian
+  [PASS (A)] (9b 3*Hadamard) conjugate of sigma_2 is Hermitian
+  [PASS (A)] (9b 3*Hadamard) conjugate of sigma_3 is Hermitian
+  [PASS (A)] (9b 3*Hadamard) S^dagger S == 9 I  (positive scalar multiple of I)
+  [PASS (A)] (9b 3*Hadamard) S^dagger S commutes with sigma_1
+  [PASS (A)] (9b 3*Hadamard) S^dagger S commutes with sigma_2
+  [PASS (A)] (9b 3*Hadamard) S^dagger S commutes with sigma_3
+  [PASS (A)] (9b 3*Hadamard) Schur-scalar identity  (S^dagger S == (trace(S^dagger S)/2) I)
+  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (1, 1)  (valid complex-linear equivalence)
+  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (1, 2)  (valid complex-linear equivalence)
+  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (1, 3)  (valid complex-linear equivalence)
+  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (2, 1)  (valid complex-linear equivalence)
+  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (2, 2)  (valid complex-linear equivalence)
+  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (2, 3)  (valid complex-linear equivalence)
+  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (3, 1)  (valid complex-linear equivalence)
+  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (3, 2)  (valid complex-linear equivalence)
+  [PASS (A)] (9c diag(2,1)) conjugated Clifford relation (3, 3)  (valid complex-linear equivalence)
+  [PASS (A)] (9c diag(2,1)) at least one conjugated Pauli image is non-Hermitian  (non-Hermitian image indices = [1, 2])
+  [PASS (A)] (9c diag(2,1)) S^dagger S == diag(4,1) is non-scalar  (S^dagger S = [[4, 0], [0, 1]])
+  [PASS (A)] (9c diag(2,1)) S^dagger S does not commute with sigma_1  (Hermitian-image hypothesis is load-bearing)
+  [PASS (A)] (9c shear) conjugated Clifford relation (1, 1)  (valid complex-linear equivalence)
+  [PASS (A)] (9c shear) conjugated Clifford relation (1, 2)  (valid complex-linear equivalence)
+  [PASS (A)] (9c shear) conjugated Clifford relation (1, 3)  (valid complex-linear equivalence)
+  [PASS (A)] (9c shear) conjugated Clifford relation (2, 1)  (valid complex-linear equivalence)
+  [PASS (A)] (9c shear) conjugated Clifford relation (2, 2)  (valid complex-linear equivalence)
+  [PASS (A)] (9c shear) conjugated Clifford relation (2, 3)  (valid complex-linear equivalence)
+  [PASS (A)] (9c shear) conjugated Clifford relation (3, 1)  (valid complex-linear equivalence)
+  [PASS (A)] (9c shear) conjugated Clifford relation (3, 2)  (valid complex-linear equivalence)
+  [PASS (A)] (9c shear) conjugated Clifford relation (3, 3)  (valid complex-linear equivalence)
+  [PASS (A)] (9c shear) at least one conjugated Pauli image is non-Hermitian  (non-Hermitian image indices = [1, 2, 3])
+
+----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
   Verified at exact sympy precision:
@@ -116,7 +158,7 @@ Summary
     omega^2 = -I step-by-step expansion matches proof in note
 
 ========================================================================================
-TOTAL: PASS=56, FAIL=0
+TOTAL: PASS=94, FAIL=0
 ========================================================================================
 
 ----- stderr -----

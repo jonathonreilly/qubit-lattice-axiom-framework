@@ -384,6 +384,105 @@ def main() -> int:
     )
 
     # =========================================================================
+    section("Part 9: *-representation to unitary-equivalence upgrade (U3b)")
+    # =========================================================================
+    sig = [sigma_1, sigma_2, sigma_3]
+    adj = lambda M: M.conjugate().T
+
+    def is_herm(M: Matrix) -> bool:
+        return matrix_eq(M, adj(M))
+
+    def conj_i(S: Matrix, i: int) -> Matrix:
+        return S * sig[i] * S.inv()
+
+    # (9a) Unitary intertwiners remain in the *-representation class.
+    Hadamard = Rational(1, 1) / sympy.sqrt(2) * Matrix([[1, 1], [1, -1]])
+    theta = sympy.pi / 6
+    Rot = Matrix(
+        [
+            [sympy.cos(theta), -sympy.sin(theta)],
+            [sympy.sin(theta), sympy.cos(theta)],
+        ]
+    )
+    for name, S in [("Hadamard", Hadamard), ("SO(2) rotation", Rot)]:
+        for i in range(3):
+            check(
+                f"(9a {name}) conjugate of sigma_{i+1} is Hermitian",
+                is_herm(conj_i(S, i)),
+            )
+        check(
+            f"(9a {name}) S^dagger S == I",
+            matrix_eq(adj(S) * S, I_2),
+            detail="unitary intertwiner (c = 1)",
+        )
+
+    # (9b) A scaled-unitary intertwiner exposes the Schur-scalar core.
+    S = 3 * Hadamard
+    S_dagger_S = adj(S) * S
+    for i in range(3):
+        check(
+            f"(9b 3*Hadamard) conjugate of sigma_{i+1} is Hermitian",
+            is_herm(conj_i(S, i)),
+        )
+    check(
+        "(9b 3*Hadamard) S^dagger S == 9 I",
+        matrix_eq(S_dagger_S, 9 * I_2),
+        detail="positive scalar multiple of I",
+    )
+    for i in range(3):
+        check(
+            f"(9b 3*Hadamard) S^dagger S commutes with sigma_{i+1}",
+            matrix_eq(S_dagger_S * sig[i], sig[i] * S_dagger_S),
+        )
+    check(
+        "(9b 3*Hadamard) Schur-scalar identity",
+        matrix_eq(S_dagger_S, (S_dagger_S.trace() / 2) * I_2),
+        detail="S^dagger S == (trace(S^dagger S)/2) I",
+    )
+
+    # (9c) Wrong-value rejectors preserve (Cl3) but leave the *-class.
+    nonunitary_intertwiners = [
+        ("diag(2,1)", Matrix([[2, 0], [0, 1]])),
+        ("shear", Matrix([[1, 1], [0, 1]])),
+    ]
+    for name, S in nonunitary_intertwiners:
+        images = [conj_i(S, i) for i in range(3)]
+        for i in range(3):
+            for j in range(3):
+                anticomm = images[i] * images[j] + images[j] * images[i]
+                expected = 2 * (1 if i == j else 0) * I_2
+                check(
+                    f"(9c {name}) conjugated Clifford relation ({i+1}, {j+1})",
+                    matrix_eq(anticomm, expected),
+                    detail="valid complex-linear equivalence",
+                )
+        nonhermitian_images = [
+            i + 1 for i in range(3) if not is_herm(images[i])
+        ]
+        check(
+            f"(9c {name}) at least one conjugated Pauli image is non-Hermitian",
+            bool(nonhermitian_images),
+            detail=f"non-Hermitian image indices = {nonhermitian_images}",
+        )
+
+        if name == "diag(2,1)":
+            S_dagger_S = adj(S) * S
+            scalar_part = (S_dagger_S.trace() / 2) * I_2
+            check(
+                "(9c diag(2,1)) S^dagger S == diag(4,1) is non-scalar",
+                matrix_neq(S_dagger_S, scalar_part),
+                detail=f"S^dagger S = {S_dagger_S.tolist()}",
+            )
+            check(
+                "(9c diag(2,1)) S^dagger S does not commute with sigma_1",
+                matrix_neq(
+                    S_dagger_S * sigma_1,
+                    sigma_1 * S_dagger_S,
+                ),
+                detail="Hermitian-image hypothesis is load-bearing",
+            )
+
+    # =========================================================================
     section("Summary")
     # =========================================================================
     print("  Verified at exact sympy precision:")

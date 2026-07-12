@@ -1,288 +1,215 @@
-"""yt_ew M-residual stretch attempt: explicit Fierz channel bookkeeping under CMT.
+#!/usr/bin/env python3
+"""Verify the exact Fierz-channel boundary for a scalar map on G.
 
-The matching rule (M) of the EW vacuum polarization claims that, after the
-framework's Coupling Map Theorem (CMT) factorization U → u_0 V, the physical
-EW correlator projects onto the adjoint channel C(x,y) and the singlet
-S(x,y) is absorbed into u_0 powers via mean-field improvement.
+The load-bearing premise checked here is supplied directly:
 
-This runner does NOT close M (which requires explicit framework EW
-Wilson-line construction). It does:
+    G_prime = a * G.
 
-(1) Verify the Fierz channel decomposition of Tr_color[G(x,y) G(y,x)] on
-    explicit complex matrix backgrounds for N_c = 2, 3.
-
-(2) Verify the CMT-style factorization: when the link variable U is
-    written as u_0 · V with V trace-normalized, the propagator inherits
-    a u_0^L scaling on its singlet trace.
-
-(3) Verify the channel-fraction count: dim(adj)/dim(N_c ⊗ N_c-bar) =
-    (N_c² − 1)/N_c² exactly for N = 2, 3, 4, 5.
-
-(4) Document numerically: the static-CMT singlet S vanishes after
-    u_0-normalization improvement.
-
-Tests:
-  (T1) Fierz identity on random complex matrices: Tr[M† M] = (1/N) |Tr M|² + 2 Σ_A |Tr[M t^A]|²
-  (T2) Adjoint channel fraction (N²-1)/N² exact for N = 2..5
-  (T3) Random complex propagator-like matrices satisfy the channel decomposition
-  (T4) Singlet content (1/N) |Tr G|² scales as Tr[G]² on identity background
-  (T5) Adjoint content vanishes on color-diagonal G (proves: static CMT background
-       has only singlet, no adjoint — confirming need for V fluctuations to
-       generate adjoint channel)
-  (T6) Adjoint content survives under random non-diagonal G (V-fluctuation analog)
+The runner does not derive that premise from the link-level replacement
+U -> u_0 V. Its scope checks require the paired note to keep that bridge open.
 """
 from __future__ import annotations
+
+from pathlib import Path
 
 import numpy as np
 
 
-def gell_mann_su2() -> list[np.ndarray]:
-    """Pauli matrices / 2 for SU(2)."""
-    s1 = np.array([[0, 1], [1, 0]], dtype=complex) / 2
-    s2 = np.array([[0, -1j], [1j, 0]], dtype=complex) / 2
-    s3 = np.array([[1, 0], [0, -1]], dtype=complex) / 2
-    return [s1, s2, s3]
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "YT_EW_M_RESIDUAL_NOTE_2026-05-02.md"
+TOL = 1e-10
 
 
-def gell_mann_su3() -> list[np.ndarray]:
-    """Gell-Mann matrices / 2 for SU(3)."""
-    L1 = np.array([[0, 1, 0], [1, 0, 0], [0, 0, 0]], dtype=complex)
-    L2 = np.array([[0, -1j, 0], [1j, 0, 0], [0, 0, 0]], dtype=complex)
-    L3 = np.array([[1, 0, 0], [0, -1, 0], [0, 0, 0]], dtype=complex)
-    L4 = np.array([[0, 0, 1], [0, 0, 0], [1, 0, 0]], dtype=complex)
-    L5 = np.array([[0, 0, -1j], [0, 0, 0], [1j, 0, 0]], dtype=complex)
-    L6 = np.array([[0, 0, 0], [0, 0, 1], [0, 1, 0]], dtype=complex)
-    L7 = np.array([[0, 0, 0], [0, 0, -1j], [0, 1j, 0]], dtype=complex)
-    L8 = (1 / np.sqrt(3)) * np.array(
-        [[1, 0, 0], [0, 1, 0], [0, 0, -2]], dtype=complex
-    )
-    return [L / 2 for L in [L1, L2, L3, L4, L5, L6, L7, L8]]
+def su2_generators() -> list[np.ndarray]:
+    return [
+        np.array([[0, 1], [1, 0]], dtype=complex) / 2,
+        np.array([[0, -1j], [1j, 0]], dtype=complex) / 2,
+        np.array([[1, 0], [0, -1]], dtype=complex) / 2,
+    ]
 
 
-def random_traceless_hermitian(N: int, rng: np.random.Generator) -> list[np.ndarray]:
-    """Build orthonormal traceless Hermitian basis (random SU(N) generator basis)."""
-    if N == 2:
-        return gell_mann_su2()
-    if N == 3:
-        return gell_mann_su3()
-    # General N: not implemented for this stretch attempt
-    raise NotImplementedError(f"SU({N}) generator basis not supported in this stretch attempt")
+def su3_generators() -> list[np.ndarray]:
+    matrices = [
+        [[0, 1, 0], [1, 0, 0], [0, 0, 0]],
+        [[0, -1j, 0], [1j, 0, 0], [0, 0, 0]],
+        [[1, 0, 0], [0, -1, 0], [0, 0, 0]],
+        [[0, 0, 1], [0, 0, 0], [1, 0, 0]],
+        [[0, 0, -1j], [0, 0, 0], [1j, 0, 0]],
+        [[0, 0, 0], [0, 0, 1], [0, 1, 0]],
+        [[0, 0, 0], [0, 0, -1j], [0, 1j, 0]],
+        (np.array([[1, 0, 0], [0, 1, 0], [0, 0, -2]]) / np.sqrt(3)).tolist(),
+    ]
+    return [np.array(matrix, dtype=complex) / 2 for matrix in matrices]
 
 
-def random_su_n(N: int, rng: np.random.Generator) -> np.ndarray:
-    """Sample a Haar-distributed SU(N) matrix by QR with determinant repair."""
+def generators(n_c: int) -> list[np.ndarray]:
+    if n_c == 2:
+        return su2_generators()
+    if n_c == 3:
+        return su3_generators()
+    raise ValueError(f"unsupported N_c={n_c}")
 
-    z = rng.standard_normal((N, N)) + 1j * rng.standard_normal((N, N))
-    q, r = np.linalg.qr(z)
-    diag = np.diag(r)
-    phases = np.where(np.abs(diag) > 0, diag / np.abs(diag), 1.0)
-    q = q * phases.conj()
 
-    # Multiplying one column by det(q)^* preserves unitarity and fixes det=1.
-    q[:, 0] *= np.linalg.det(q).conjugate()
-    return q
+def channels(g: np.ndarray, basis: list[np.ndarray]) -> tuple[float, float]:
+    n_c = g.shape[0]
+    singlet = abs(np.trace(g)) ** 2 / n_c
+    adjoint = 2 * sum(abs(np.trace(g @ t_a)) ** 2 for t_a in basis)
+    return float(singlet), float(adjoint)
+
+
+def report(label: str, ok: bool, detail: str) -> bool:
+    print(f"{label}: {'PASS' if ok else 'FAIL'}")
+    print(f"  {detail}")
+    return ok
 
 
 def main() -> None:
-    print("=" * 72)
-    print("yt_ew M-RESIDUAL STRETCH ATTEMPT: FIERZ CHANNEL BOOKKEEPING UNDER CMT")
-    print("=" * 72)
-    print()
-
     rng = np.random.default_rng(42)
+    results: list[bool] = []
 
-    # ----- Test 1: Fierz identity on random complex matrices for SU(2), SU(3) -----
-    print("-" * 72)
-    print("TEST 1: Fierz identity Tr[M† M] = (1/N) |Tr M|² + 2 Σ_A |Tr[M t^A]|²")
-    print("-" * 72)
-    max_fierz_dev = 0.0
-    for N in [2, 3]:
-        T = random_traceless_hermitian(N, rng)
-        for trial in range(5):
-            # Random complex matrix M
-            M = rng.standard_normal((N, N)) + 1j * rng.standard_normal((N, N))
-            lhs = np.trace(M.conj().T @ M).real
-            singlet = (1 / N) * abs(np.trace(M)) ** 2
-            adjoint = 2 * sum(abs(np.trace(M @ t)) ** 2 for t in T)
-            rhs = singlet + adjoint
-            dev = abs(lhs - rhs)
-            max_fierz_dev = max(max_fierz_dev, dev)
-        print(f"  N={N}: max Fierz residual = {max_fierz_dev:.3e}")
-    t1_ok = max_fierz_dev < 1e-10
-    print(f"  STATUS: {'PASS' if t1_ok else 'FAIL'}")
+    print("=" * 76)
+    print("COMMON PROPAGATOR RESCALING: EXACT FIERZ-CHANNEL NEGATIVE BOUNDARY")
+    print("=" * 76)
+    print("Declared premise: G_prime = a * G.")
+    print("No implication from U -> u_0 V to the propagator is derived or tested.")
     print()
 
-    # ----- Test 2: Adjoint channel fraction exactly (N²-1)/N² -----
-    print("-" * 72)
-    print("TEST 2: dim(adj)/dim(N⊗N̄) = (N²-1)/N² (channel fraction)")
-    print("-" * 72)
-    for N in [2, 3, 4, 5]:
-        adj_dim = N ** 2 - 1
-        total_dim = N ** 2
-        frac = adj_dim / total_dim
-        print(f"  N={N}: dim(adj)={adj_dim}, dim(total)={total_dim}, fraction={frac:.4f}")
-    expected_at_3 = 8 / 9
-    actual_at_3 = (3 ** 2 - 1) / 3 ** 2
-    t2_ok = abs(actual_at_3 - expected_at_3) < 1e-15
-    print(f"  At N=3: 8/9 = {expected_at_3:.6f}, computed = {actual_at_3:.6f}")
-    print(f"  STATUS: {'PASS' if t2_ok else 'FAIL'}")
-    print()
+    max_fierz_error = 0.0
+    for n_c in (2, 3):
+        basis = generators(n_c)
+        for _ in range(20):
+            g = rng.normal(size=(n_c, n_c)) + 1j * rng.normal(size=(n_c, n_c))
+            s_g, c_g = channels(g, basis)
+            total = float(np.trace(g.conj().T @ g).real)
+            max_fierz_error = max(max_fierz_error, abs(total - s_g - c_g))
+    results.append(
+        report(
+            "TEST 1 — Fierz identity",
+            max_fierz_error < TOL,
+            f"max |Tr(G^dagger G)-S-C| = {max_fierz_error:.3e}",
+        )
+    )
 
-    # ----- Test 3: Channel decomposition on random SU(N) propagator-like matrices -----
-    print("-" * 72)
-    print("TEST 3: Tr_color[G G^†] = S(G) + C(G) on random non-trivial G")
-    print("-" * 72)
-    max_decomp_dev = 0.0
-    for N in [2, 3]:
-        T = random_traceless_hermitian(N, rng)
-        for trial in range(10):
-            G = rng.standard_normal((N, N)) + 1j * rng.standard_normal((N, N))
-            lhs = np.trace(G.conj().T @ G).real
-            S = (1 / N) * abs(np.trace(G)) ** 2
-            C = 2 * sum(abs(np.trace(G @ t)) ** 2 for t in T)
-            d = abs(lhs - (S + C))
-            max_decomp_dev = max(max_decomp_dev, d)
-        print(f"  N={N}: 10 trials, max ||Tr[G†G] - (S+C)|| = {max_decomp_dev:.3e}")
-    t3_ok = max_decomp_dev < 1e-10
-    print(f"  STATUS: {'PASS' if t3_ok else 'FAIL'}")
-    print()
+    max_generator_error = 0.0
+    for n_c in (2, 3):
+        basis = generators(n_c)
+        for a_index, t_a in enumerate(basis):
+            max_generator_error = max(
+                max_generator_error,
+                float(np.linalg.norm(t_a - t_a.conj().T)),
+                abs(float(np.trace(t_a).real)),
+                abs(float(np.trace(t_a).imag)),
+            )
+            for b_index, t_b in enumerate(basis):
+                expected = 0.5 if a_index == b_index else 0.0
+                max_generator_error = max(
+                    max_generator_error,
+                    abs(complex(np.trace(t_a @ t_b)) - expected),
+                )
+    results.append(
+        report(
+            "TEST 2 — generator normalization",
+            max_generator_error < TOL,
+            f"max Hermiticity/trace/Gram error = {max_generator_error:.3e}",
+        )
+    )
 
-    # ----- Test 4: Singlet on identity background (color-diagonal G) -----
-    print("-" * 72)
-    print("TEST 4: Color-diagonal G = g · I_N has S = N · g², C = 0")
-    print("        (static-CMT limit: all singlet, no adjoint)")
-    print("-" * 72)
-    max_diag_dev = 0.0
-    for N in [2, 3]:
-        T = random_traceless_hermitian(N, rng)
-        for g_val in [1.0, 0.5, 2.0, -1.5]:
-            G_diag = g_val * np.eye(N, dtype=complex)
-            S = (1 / N) * abs(np.trace(G_diag)) ** 2
-            S_expected = N * g_val ** 2
-            C = 2 * sum(abs(np.trace(G_diag @ t)) ** 2 for t in T)
-            d_S = abs(S - S_expected)
-            d_C = abs(C - 0)
-            max_diag_dev = max(max_diag_dev, d_S, d_C)
-        print(f"  N={N}: S_diag exact, C_diag = 0 (max dev = {max_diag_dev:.3e})")
-    t4_ok = max_diag_dev < 1e-10
-    print(f"  STATUS: {'PASS' if t4_ok else 'FAIL'}")
-    print(f"  ⇒ Color-diagonal (static) G has ONLY singlet content; adjoint requires V fluctuations.")
-    print()
+    max_homogeneity_error = 0.0
+    scalars = (0.0, 0.85, -1.2, 0.4 + 0.3j)
+    for n_c in (2, 3):
+        basis = generators(n_c)
+        for _ in range(20):
+            g = rng.normal(size=(n_c, n_c)) + 1j * rng.normal(size=(n_c, n_c))
+            s_g, c_g = channels(g, basis)
+            for scalar in scalars:
+                s_scaled, c_scaled = channels(scalar * g, basis)
+                factor = abs(scalar) ** 2
+                max_homogeneity_error = max(
+                    max_homogeneity_error,
+                    abs(s_scaled - factor * s_g),
+                    abs(c_scaled - factor * c_g),
+                )
+    results.append(
+        report(
+            "TEST 3 — degree-two homogeneity",
+            max_homogeneity_error < TOL,
+            f"real/complex scalar max error = {max_homogeneity_error:.3e}",
+        )
+    )
 
-    # ----- Test 5: CMT factorization preserves channel structure -----
-    print("-" * 72)
-    print("TEST 5: G_full = u_0 · G_V factorization: S_full = u_0² · S_V, C_full = u_0² · C_V")
-    print("        (CMT inherits to channel decomposition with overall u_0² scaling)")
-    print("-" * 72)
-    max_cmt_dev = 0.0
-    for N in [2, 3]:
-        T = random_traceless_hermitian(N, rng)
-        for trial in range(5):
-            u_0 = 0.85  # typical CMT mean-field value
-            G_V = rng.standard_normal((N, N)) + 1j * rng.standard_normal((N, N))
-            G_full = u_0 * G_V
-            S_V = (1 / N) * abs(np.trace(G_V)) ** 2
-            C_V = 2 * sum(abs(np.trace(G_V @ t)) ** 2 for t in T)
-            S_full = (1 / N) * abs(np.trace(G_full)) ** 2
-            C_full = 2 * sum(abs(np.trace(G_full @ t)) ** 2 for t in T)
-            d_S = abs(S_full - u_0 ** 2 * S_V)
-            d_C = abs(C_full - u_0 ** 2 * C_V)
-            max_cmt_dev = max(max_cmt_dev, d_S, d_C)
-        print(f"  N={N}: u_0² scaling on both S and C, max dev = {max_cmt_dev:.3e}")
-    t5_ok = max_cmt_dev < 1e-10
-    print(f"  STATUS: {'PASS' if t5_ok else 'FAIL'}")
-    print()
+    max_ratio_error = 0.0
+    ratio_trials = 0
+    for n_c in (2, 3):
+        basis = generators(n_c)
+        for _ in range(40):
+            g = rng.normal(size=(n_c, n_c)) + 1j * rng.normal(size=(n_c, n_c))
+            s_g, c_g = channels(g, basis)
+            scalar = 0.4 + 0.3j
+            s_scaled, c_scaled = channels(scalar * g, basis)
+            if s_g > TOL and s_g + c_g > TOL:
+                max_ratio_error = max(
+                    max_ratio_error,
+                    abs(c_scaled / s_scaled - c_g / s_g),
+                    abs(c_scaled / (s_scaled + c_scaled) - c_g / (s_g + c_g)),
+                )
+                ratio_trials += 1
+    results.append(
+        report(
+            "TEST 4 — nonzero-scalar ratio invariance",
+            ratio_trials > 0 and max_ratio_error < TOL,
+            f"{ratio_trials} trials; max ratio error = {max_ratio_error:.3e}",
+        )
+    )
 
-    # ----- Test 6: Haar SU(N) V-fluctuation generates adjoint content -----
-    print("-" * 72)
-    print("TEST 6: Haar SU(N) link V generates non-trivial adjoint content")
-    print("        with unitarity and determinant-one residuals checked explicitly")
-    print("-" * 72)
-    print()
-    print("  N | mean(C/(S+C)) over 5000 Haar-SU(N) trials | expected (N²-1)/N²")
-    print("  ---|----------------------------------------|------------------")
-    t6_ok = True
-    for N in [2, 3]:
-        T = random_traceless_hermitian(N, rng)
-        ratios = []
-        max_unitarity_dev = 0.0
-        max_det_dev = 0.0
-        for trial in range(5000):
-            V = random_su_n(N, rng)
-            max_unitarity_dev = max(max_unitarity_dev, np.linalg.norm(V.conj().T @ V - np.eye(N)))
-            max_det_dev = max(max_det_dev, abs(np.linalg.det(V) - 1))
-            S = (1 / N) * abs(np.trace(V)) ** 2
-            C = 2 * sum(abs(np.trace(V @ t)) ** 2 for t in T)
-            if S + C > 0:
-                ratios.append(C / (S + C))
-        mean_ratio = np.mean(ratios)
-        expected = (N ** 2 - 1) / N ** 2
-        print(f"  {N} | {mean_ratio:.4f}                                 | {expected:.4f}")
-        print(f"      max ||V†V-I||={max_unitarity_dev:.2e}, max |det(V)-1|={max_det_dev:.2e}")
-        if abs(mean_ratio - expected) > 0.02:
-            t6_ok = False
-    print(f"  STATUS: {'PASS' if t6_ok else 'FAIL'}")
-    print(f"  ⇒ Haar SU(N) links statistically realize the (N²-1)/N² adjoint fraction.")
-    print()
+    basis = generators(3)
+    g = rng.normal(size=(3, 3)) + 1j * rng.normal(size=(3, 3))
+    s_zero, c_zero = channels(0.0 * g, basis)
+    results.append(
+        report(
+            "TEST 5 — zero scalar erases both channels",
+            abs(s_zero) < TOL and abs(c_zero) < TOL,
+            f"S(0G)={s_zero:.1f}, C(0G)={c_zero:.1f}",
+        )
+    )
 
-    # ----- Test 7: Numerical at N=3 — adjoint dominates at expected fraction -----
-    print("-" * 72)
-    print("TEST 7: At N=3 (framework's N_c), adjoint fraction = 8/9 ≈ 0.8889")
-    print("-" * 72)
-    print()
-    T = gell_mann_su3()
-    n_trials = 5000
-    ratios = []
-    max_unitarity_dev = 0.0
-    max_det_dev = 0.0
-    for trial in range(n_trials):
-        V = random_su_n(3, rng)
-        max_unitarity_dev = max(max_unitarity_dev, np.linalg.norm(V.conj().T @ V - np.eye(3)))
-        max_det_dev = max(max_det_dev, abs(np.linalg.det(V) - 1))
-        S = (1 / 3) * abs(np.trace(V)) ** 2
-        C = 2 * sum(abs(np.trace(V @ t)) ** 2 for t in T)
-        if S + C > 0:
-            ratios.append(C / (S + C))
-    mean_ratio = np.mean(ratios)
-    std_ratio = np.std(ratios) / np.sqrt(n_trials)
-    expected = 8 / 9
-    print(f"  N=3 with {n_trials} Haar-SU(3) link trials:")
-    print(f"    mean(C/(S+C)) = {mean_ratio:.4f} ± {std_ratio:.4f}")
-    print(f"    expected (N²-1)/N² = 8/9 = {expected:.4f}")
-    print(f"    deviation = {abs(mean_ratio - expected):.4f}")
-    print(f"    max ||V†V-I||={max_unitarity_dev:.2e}, max |det(V)-1|={max_det_dev:.2e}")
-    t7_ok = abs(mean_ratio - expected) < 0.01 and max_unitarity_dev < 1e-12 and max_det_dev < 1e-12
-    print(f"  STATUS: {'PASS' if t7_ok else 'FAIL'}")
-    print()
+    note = NOTE.read_text(encoding="utf-8")
+    required = (
+        "exact negative boundary",
+        "does **not** infer",
+        "The only additional premise used in the no-go",
+        "does not disprove CMT-only adjoint",
+        "Closing that physical rule requires",
+    )
+    forbidden = (
+        "It closes the *naive* M interpretation as DISPROVEN",
+        "CMT factorization is channel-blind",
+        "under U → u_0 V factorization, **both S and C inherit",
+    )
+    missing = [phrase for phrase in required if phrase not in note]
+    present_forbidden = [phrase for phrase in forbidden if phrase in note]
+    results.append(
+        report(
+            "TEST 6 — note scope contract",
+            not missing and not present_forbidden,
+            f"missing={missing or 'none'}; forbidden_present={present_forbidden or 'none'}",
+        )
+    )
 
-    print("=" * 72)
-    print(f"  Test 1 (Fierz identity exact):                          {'PASS' if t1_ok else 'FAIL'}")
-    print(f"  Test 2 (channel fraction (N²-1)/N²):                    {'PASS' if t2_ok else 'FAIL'}")
-    print(f"  Test 3 (channel decomposition on random G):             {'PASS' if t3_ok else 'FAIL'}")
-    print(f"  Test 4 (color-diagonal G has only singlet, no adjoint): {'PASS' if t4_ok else 'FAIL'}")
-    print(f"  Test 5 (CMT u_0 factorization preserves S, C):          {'PASS' if t5_ok else 'FAIL'}")
-    print(f"  Test 6 (Haar SU(N) V-fluctuation generates adjoint):   {'PASS' if t6_ok else 'FAIL'}")
-    print(f"  Test 7 (N=3 adjoint fraction = 8/9):                    {'PASS' if t7_ok else 'FAIL'}")
-    all_ok = all([t1_ok, t2_ok, t3_ok, t4_ok, t5_ok, t6_ok, t7_ok])
-    print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
     print()
-    print("RESIDUAL (sharpened obstruction):")
-    print("  The numerical channel bookkeeping is exact (Tests 1-7 PASS at machine")
-    print("  precision). What remains for full closure of (M):")
+    print("=" * 76)
+    for index, ok in enumerate(results, start=1):
+        print(f"TEST {index}: {'PASS' if ok else 'FAIL'}")
+    overall = all(results)
+    print(f"OVERALL: {'PASS' if overall else 'FAIL'} ({sum(results)}/{len(results)})")
     print()
-    print("  (i)  Define the framework's lattice EW current as a Wilson-line bilinear")
-    print("       (currently implicit; needs explicit formula in framework primitives).")
-    print("  (ii) Show: physical (CMT-improved) EW vacuum polarization corresponds to")
-    print("       the adjoint channel C, while the singlet channel S is absorbed into")
-    print("       the link improvement u_0^n_link. Test 5 shows BOTH S and C inherit")
-    print("       u_0² factors; the M residual asks: does CMT improvement REPLACE the")
-    print("       bare singlet content with u_0^n_link absorption, or does it leave")
-    print("       both channels physically observable?")
-    print()
-    print("  Until (ii) is closed, (M) remains a structural input. This stretch")
-    print("  attempt sharpens (M) to a single named question: which channel survives")
-    print("  CMT improvement in the framework's specific EW current construction?")
-    if not all_ok:
+    print("CERTIFIED CLAIM:")
+    print("  Given the explicit propagator-level premise G_prime = a*G, S and C")
+    print("  both scale by |a|^2. It cannot select C by relative rescaling.")
+    print("SCOPE EXCLUSION:")
+    print("  No map from U -> u_0 V to G is derived; the physical CMT/EW-current")
+    print("  matching rule remains open.")
+
+    if not overall:
         raise SystemExit(1)
 
 

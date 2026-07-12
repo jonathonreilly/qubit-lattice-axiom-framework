@@ -2,7 +2,7 @@
 """EW current matching-rule kappa_EW parametrization runner.
 
 This verifies the proposed bounded repair. The channel-weight map and KAPPA-EW are
-supplied premises, common CMT scaling is cited from its declared-model note,
+supplied premises, common propagator scaling is cited from its scalar-map note,
 and the exact family is
 
     K_EW(kappa) = 1 / (F_adj + kappa * (1 - F_adj)).
@@ -212,7 +212,7 @@ def check_note_contract(ledger: Ledger, note: str, fierz: str, cmt: str) -> None
     ledger.check("TEXT", "note registers primary runner", RUNNER in note)
     ledger.check("TEXT", "KAPPA-EW is supplied", "is an extra matching premise" in note)
     ledger.check("TEXT", "channel-weight map is supplied", "Supplied channel-weight map" in note and "count-to-contribution assumption" in note)
-    ledger.check("TEXT", "common CMT scaling section present", "## Common CMT Scaling" in note)
+    ledger.check("TEXT", "common propagator scaling section present", "## Common Propagator Scaling" in note)
     ledger.check("TEXT", "pole is excluded", "kappa_EW != 1 - N_c^2" in note and "kappa_EW != -8" in note)
     ledger.check("TEXT", "OZI qualifier is explicit", "uniformly bounded" in note and "kappa_EW=N_c^2" in note)
     ledger.check(
@@ -275,9 +275,10 @@ def check_note_contract(ledger: Ledger, note: str, fierz: str, cmt: str) -> None
     )
     ledger.check(
         "TEXT",
-        "CMT authority states common channel scaling",
-        "scales both singlet and adjoint Fierz channels by u_0^2" in cmt
-        or "Both channels inherit the same u_0² scaling" in cmt,
+        "scalar-map authority states common channel scaling and excludes link inference",
+        "both channels\ninherit the same u_0² scaling" in cmt
+        and "does **not** infer" in cmt
+        and "does not disprove CMT-only adjoint" in cmt,
     )
 
 
@@ -300,7 +301,7 @@ def check_exact_algebra(ledger: Ledger) -> None:
         model = Completion(n_c=n_c, kappa=kappa, u0_squared=Fraction(77, 100))
         ledger.check(
             "LOAD_BEARING",
-            f"CMT invariance at kappa={label}",
+            f"common-factor invariance at kappa={label}",
             model.matching_u == model.matching_v == expected,
             f"K_U={model.matching_u} K_V={model.matching_v}",
         )

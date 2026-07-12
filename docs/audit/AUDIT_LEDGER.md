@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 370 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2768 |
+| unaudited | 2767 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
-| ~~audited_renaming~~ | 17 |
+| ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 56 |
 | ~~audited_failed~~ | 9 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
@@ -50,8 +50,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 20 |
 | `audited_failed` | 31 |
 | `audited_numerical_match` | 6 |
-| `audited_renaming` | 17 |
-| `unaudited` | 3118 |
+| `audited_renaming` | 18 |
+| `unaudited` | 3117 |
 
 | claim_type | count |
 |---|---:|
@@ -737,6 +737,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.6 | G | - |
 | `ac_orbit_occupancy_statistical_grain_derivation_obligation` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `dm_current_bank_quantitative_mapping_note_2026-04-21` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | F | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.6 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -2947,6 +2948,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The row has no one-hop dependencies; the repaired live runner is the registered primary evidence and supports only the finite active-chamber scan surface stated in the source. The archived exhaustive wrapper remains historical provenance and is not promoted.
 - **rationale:** Clean bounded retention is appropriate for the repaired finite-scan support claim. The runner firewall confirms the active representatives are derived from the live equations rather than copied from the archived coordinate chart, and all three seed families agree on the same three in-chamber roots. The result is not exhaustive: the source and runner both disclaim interval/root-isolation and global no-missed-basin authority. The finite representative set, residual norms, chamber membership, local full-rank checks, and C_base/C_neg split are nevertheless reproducible runner facts on the declared scan surface.
 - **auditor confidence:** medium
+
+### `dm_current_bank_quantitative_mapping_note_2026-04-21`
+
+- **Note:** [`DM_CURRENT_BANK_QUANTITATIVE_MAPPING_NOTE_2026-04-21.md`](../../docs/DM_CURRENT_BANK_QUANTITATIVE_MAPPING_NOTE_2026-04-21.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Bookkeeping claim that hard-coded current-bank quantities are reproduced, arithmetic checks pass, and labels are assembled into the displayed mapping table; not a physical derivation or flagship closure.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00403-dm_current_bank_quantitative`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The retained bank quantities are assigned physical-observable labels and declared to form a complete quantitative DM mapping.  _(class `F`)_
+- **chain closes:** False — The runner reproduces arithmetic over the imported hard-coded bank, but it does not derive the bank inputs or the asserted physical-observable identifications. Its completeness check is a list of literal true flags rather than a computed semantic-coverage test.
+- **rationale:** Issue: the load-bearing mapping is implemented by labeling existing package fields as physical observables, while the helper supplies key numerical inputs directly. Why this blocks: arithmetic consistency and finiteness do not derive the semantic observable bridge or establish first-principles provenance for the current bank. Repair target: cite retained derivations for the bank inputs and add a theorem and runner that construct the physical-observable map rather than declaring labels and true completeness flags. Claim boundary until fixed: the artifact is a reproducible bookkeeping table for a supplied benchmark bank.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: physical-observable mapping, bank provenance, transport dynamics, normalization, and selector routes remain OPEN or UNTESTED.
+    - N5: selector, branch-choice, and flagship resolutions named by the negative rhetoric were not tested by this packet.
 
 ### `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16`
 

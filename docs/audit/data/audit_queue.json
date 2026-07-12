@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 650,
     "high": 335,
-    "leaf": 1116,
+    "leaf": 1115,
     "medium": 755
   },
   "cycle_break_target_count": 49,
@@ -52657,30 +52657,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "dm_current_bank_quantitative_mapping_note_2026-04-21",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/dm_leptogenesis_exact_common.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/DM_CURRENT_BANK_QUANTITATIVE_MAPPING_NOTE_2026-04-21.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_dm_current_bank_quantitative_mapping_2026_04_21.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "dm_dple_abcc_no_go_note_2026-04-19",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -81529,6 +81505,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 570,
-  "total_pending": 2856
+  "ready_count": 569,
+  "total_pending": 2855
 }

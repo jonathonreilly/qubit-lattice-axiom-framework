@@ -191,7 +191,7 @@ NEGATIVE_SUBJECT_CLOSURE_RE = re.compile(
     r"remove[sd]?|resolve[sd]?|discharge[sd]?|suppl(?:y|ies|ied)|"
     r"derive[sd]?|select[sd]?|determine[sd]?|"
     r"fix(?:es)?(?!-)|fixed(?!-)(?![\s]+(?:points?|locus|loci|backgrounds?|"
-    r"surfaces?|charts?)\b)(?!(?:[\s-]+[a-z-]+){1,2}s?\b(?=\s+(?:is|are|"
+    r"surfaces?|charts?)\b(?!\s+(?:on|in|of|across|under|through|over)\b))(?!(?:[\s-]+[a-z-]+){1,2}s?\b(?=\s+(?:is|are|"
     r"was|were|appears?|emerges?|arises?|enters?|exists?|remains?|"
     r"follows?|contributes?|forms?|lies?|sits?)\b))|retire[sd]?|"
     r"eliminate[sd]?)|succeeds?\s+in\s+"
@@ -279,8 +279,9 @@ AUTHORITY_PAYLOAD_RE = re.compile(
     r"(?:qubit|lattice|admissibility|record))*\s+and\s+"
     r"(?:qubit|lattice|admissibility|record)|"
     r"in\s+principle)\b"
-    r"|\b(?:from|under|within|using|given)\s+(?:the\s+|any\s+|all\s+|"
-    r"every\s+|its\s+|these\s+|those\s+)?(?:[\w-]+\s+){0,2}"
+    r"|\b(?:from|under|within|using|given|on|with(?:\s+only)?|by\s+use\s+of|"
+r"via|through)\s+(?:the\s+|any\s+|all\s+|only\s+|"
+    r"every\s+|its\s+|these\s+|those\s+)?(?:[\w-]+\s+){0,4}"
     r"(?:postulates?|premises?|axioms?|primitives?|structure|baseline|"
     r"package|framework|foundations?|assumptions?|principles?)\b",
     re.IGNORECASE,
@@ -292,7 +293,7 @@ NOTE_SUBJECT_DISCLAIMER_RE = re.compile(
     r"(?:alone\s+|by\s+itself\s+|also\s+|deliberately\s+|explicitly\s+|"
     r"intentionally\s+|therefore\s+|thus\s+|still\s+|currently\s+)*"
     r"(?:does\s+not|do\s+not|did\s+not|cannot|can\s+not|will\s+not)\b"
-    r"(?:(?!\s+(?:and|but|nor|yet|while|whereas)\s)[^\n.;:,?!\u2014]){0,160}",
+    r"(?:(?!\s+(?:and|but|nor|yet|while|whereas)\s)(?:[^\n.;:,?!\u2014]|\.(?=\d))){0,160}",
     re.IGNORECASE,
 )
 LABELED_DISCLAIMER_LINE_RE = re.compile(
@@ -356,11 +357,15 @@ NEGATED_PREDICATE_PRESCRUBS = (
         re.IGNORECASE,
     ),
     re.compile(
-        r"\bclaim\s+that\b[^\n.;:]{0,140}\b(?:is|was|has\s+been)\s+refuted\b",
+        r"\b(?:claim|assertion|conclusion|reading)\s+that\b"
+        r"(?:(?!\s+(?:but|and|nor|yet|while|whereas)\s)[^\n.;:,\u2014]){0,140}"
+        r"\b(?:is|was|were|has\s+been|have\s+been)\s+"
+        r"(?:refuted|rejected|withdrawn|disproved|overturned|falsified|"
+        r"retracted)\b",
         re.IGNORECASE,
     ),
     re.compile(
-        r"\b(?:no\s+longer\s+(?:asserts?|claims?|states?|reports?|maintains?)"
+        r"\b(?:no\s+longer\s+(?:asserts?|claims?|states?|reports?|maintains?|contends?)"
         r"(?:\s+that\b)?|"
         r"(?:explicitly\s+)?den(?:ies|ied)\s+that\b|"
         r"is\s+false\s+that\b|refutes?\s+that\b|"
@@ -443,13 +448,14 @@ def _strip_disclaimer_sections(text: str) -> str:
         kept_lines = []
         section_lines = section.split("\n")
         for line_index, line in enumerate(section_lines):
-            rest = " ".join(section_lines[line_index + 1 : line_index + 5])
-            stop = len(rest)
-            for ch in ".;:!?":
-                idx = rest.find(ch)
-                if 0 <= idx < stop:
-                    stop = idx
-            continuation = rest[:stop]
+            following = []
+            for ln in section_lines[line_index + 1 : line_index + 5]:
+                if re.match(r"[ \t]{0,3}#{1,6}\s", ln):
+                    break
+                following.append(ln)
+            rest = " ".join(following)
+            stop_match = re.search(r"[;:!?]|\.(?!\d)", rest)
+            continuation = rest[: stop_match.start() if stop_match else len(rest)]
             wrapped = line + " " + continuation
             is_heading = bool(re.match(r"[ \t]{0,3}#{1,6}\s", line))
             if is_heading:
@@ -510,11 +516,8 @@ def _scrub_labeled_disclaimer_lines(text: str) -> str:
         payload = match.group("payload").strip()
         head, rest = _fragment_split(payload)
         tail = match.string[match.end(): match.end() + 400]
-        stop = len(tail)
-        for ch in ".;:!?":
-            idx = tail.find(ch)
-            if 0 <= idx < stop:
-                stop = idx
+        stop_match = re.search(r"[;:!?]|\.(?!\d)", tail)
+        stop = stop_match.start() if stop_match else len(tail)
         blank = tail.find("\n\n")
         if 0 <= blank < stop:
             stop = blank
@@ -2312,15 +2315,27 @@ def _has_governed_no_existence(text: str) -> bool:
                 }:
                     tokens = tokens[:index]
                     break
+            while tokens and tokens[-1].lower() in {"whatsoever", "at", "all"}:
+                tokens.pop()
             head = tokens[-1] if tokens else ""
             if not AUTHORITY_UNIQUENESS_SUBJECT_RE.fullmatch(head):
                 return False
         return True
 
-    return any(
-        governed(match.group("subject"))
-        for match in NO_EXISTENCE_ASSERTION_RE.finditer(text)
-    )
+    for match in NO_EXISTENCE_ASSERTION_RE.finditer(text):
+        tail = text[match.end(): match.end() + 60]
+        if re.match(
+            r"s?\s+for\s+(?:deriv|obtain|reach|suppl|select|clos|recover|"
+            r"construct)",
+            tail,
+            re.IGNORECASE,
+        ):
+            # "no other X exists for deriving Y" asserts route absence
+            # whatever noun names the route.
+            return True
+        if governed(match.group("subject")):
+            return True
+    return False
 
 
 def _has_forced_spectral_boundary(text: str) -> bool:

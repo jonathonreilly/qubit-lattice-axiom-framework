@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 91 |
+| **retained** | 92 |
 | **retained_no_go** | 35 |
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2785 |
+| unaudited | 2784 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 473 |
+| `audited_clean` | 474 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3135 |
+| `unaudited` | 3134 |
 
 | claim_type | count |
 |---|---:|
@@ -203,6 +203,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `charged_lepton_selected_line_generation_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `charged_lepton_typeb_radian_readout_generation_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
+| `chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `chiral_3plus1d_boundary_phase_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_coupled_coin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1911,6 +1912,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** A natural selector from scalar quotient data to one generation label would have to return a label fixed by all C3 relabelings, but the free C3 action has no fixed label.  _(class `A`)_
 - **chain closes:** True — The fixed-point obstruction follows exactly from the supplied trivial C3 action on scalar data and free C3 action on three labels. The numerical Brannen and PDG blocks are illustrative and are not needed for the obstruction.
 - **rationale:** The runner explicitly enumerates fixed labels, invariant subsets, natural selectors, cyclic carrier rotations, and based equivariant maps instead of merely printing the verdict. Those computations establish the narrow conditional no-go: invariant scalar readout data cannot naturally select a point of a free C3 label orbit. The granted values are not presented as derived, PDG masses are comparator-only, and the note expressly leaves based endpoint/source laws and charged-lepton mass closure open.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`CHERN_CHARACTER_K2_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/CHERN_CHARACTER_K2_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Formal graded-algebra theorem that a nonzero Chern-character term ch_k(F) has top degree only when 2k=d, with k=2 giving d=4 and formal coefficient -1/(8 pi^2); no physical ABJ identification, instanton claim, or claimed independence from the wedge-square witness is ratified.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00383-chern_character_k2_top_form_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because F is a 2-form, ch_k(F) is homogeneous of form degree 2k; therefore a nonzero ch_k(F) is top-degree exactly when 2k=d.  _(class `A`)_
+- **chain closes:** True — Exterior-degree additivity, trace degree preservation, and the definition of top degree directly give 2k=d. Substitution of k=2 then gives d=4 and the stated formal coefficient.
+- **rationale:** The algebraic core closes without dependencies: wedge powers of a 2-form have degree 2k, and scalar multiplication and matrix trace preserve that degree. The runner genuinely implements exterior products and exact symbolic coefficient arithmetic rather than importing a target value. The verdict is restricted to the formal nonzero-form statement; the physical ABJ label, instanton interpretation, and asserted independence from the wedge-square witness are outside the audited scope.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

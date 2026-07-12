@@ -103,11 +103,6 @@ def oscillator_characteristic_coefficients(a: Fraction, b: Fraction, c: Fraction
     return trace, determinant
 
 
-def local_response_coefficient(a: Fraction, b: Fraction, c: Fraction) -> Fraction:
-    """Local LP coefficient after midpoint and integration-by-parts reduction."""
-    return CELL_NORMALIZATION_EXACT * (a * b - c * c)
-
-
 def fermi_prime(energy: np.ndarray, mu: float, temperature: float) -> np.ndarray:
     x = (energy - mu) / temperature
     out = np.empty_like(x, dtype=np.float64)
@@ -231,25 +226,40 @@ def main() -> int:
         "; ".join(oscillator_details),
     )
 
-    continuation_examples = (
+    # Elliptic patches (det(H)>0) give a purely imaginary JH spectrum, i.e. a
+    # real magnetic frequency sqrt(det) and a discrete midpoint Landau ladder,
+    # so the midpoint Euler-Maclaurin derivation applies. Saddle patches
+    # (det(H)<0) give a real JH spectrum: sqrt(det) is imaginary, there is no
+    # oscillator ladder, and the derivation does not apply. This dichotomy is
+    # why the derived scope is elliptic-only and the saddle continuation is held
+    # as an explicit open conjecture. JH eigenvalues solve lambda^2 + det(H)=0.
+    elliptic_examples = (
         (Fraction(3, 2), Fraction(5, 3), Fraction(1, 7)),
-        (Fraction(3, 2), Fraction(-5, 3), Fraction(1, 7)),
-        (Fraction(-4, 5), Fraction(-7, 6), Fraction(2, 9)),
+        (Fraction(5, 4), Fraction(9, 8), Fraction(1, 3)),
     )
-    signs = set()
-    continuation_ok = True
-    continuation_details: list[str] = []
-    for a, b, c in continuation_examples:
-        det_h = a * b - c * c
-        coeff = local_response_coefficient(a, b, c)
-        continuation_ok = continuation_ok and coeff == -det_h / 12
-        signs.add(1 if det_h > 0 else -1 if det_h < 0 else 0)
-        continuation_details.append(f"det={det_h} coeff={coeff}")
-    continuation_ok = continuation_ok and {1, -1}.issubset(signs)
+    saddle_examples = (
+        (Fraction(3, 2), Fraction(-5, 3), Fraction(1, 7)),
+        (Fraction(-4, 5), Fraction(7, 6), Fraction(2, 9)),
+    )
+    dichotomy_ok = True
+    dichotomy_details: list[str] = []
+    for a, b, c in elliptic_examples:
+        _, det_jh = oscillator_characteristic_coefficients(a, b, c)
+        eigen_sq = -det_jh
+        # elliptic: det(H)>0 and lambda^2<0 (purely imaginary -> real frequency).
+        dichotomy_ok = dichotomy_ok and det_jh > 0 and eigen_sq < 0
+        dichotomy_details.append(f"elliptic det={det_jh} lambda^2={eigen_sq}<0")
+    for a, b, c in saddle_examples:
+        _, det_jh = oscillator_characteristic_coefficients(a, b, c)
+        eigen_sq = -det_jh
+        # saddle: det(H)<0 and lambda^2>0 (real eigenvalues -> no oscillator).
+        dichotomy_ok = dichotomy_ok and det_jh < 0 and eigen_sq > 0
+        dichotomy_details.append(f"saddle det={det_jh} lambda^2={eigen_sq}>0")
     gates.check(
-        "saddle continuation uses the exact polynomial coefficient -det(Hxy)/12",
-        continuation_ok,
-        "; ".join(continuation_details),
+        "elliptic patches have a real magnetic frequency and saddle patches do "
+        "not, so the midpoint ladder derivation is elliptic-only",
+        dichotomy_ok,
+        "; ".join(dichotomy_details),
     )
 
     sample_points = (
@@ -272,14 +282,14 @@ def main() -> int:
     k = 2.0 * math.pi * (np.arange(64, dtype=np.float64) + 0.5) / 64.0
     det_grid = 4.0 * np.cos(k[:, None]) * np.cos(k[None, :])
     gates.check(
-        "cubic full-patch determinant includes elliptic and saddle signs without changing coefficient",
+        "cubic Brillouin zone contains saddle (negative-determinant) patches held out of the derived elliptic scope",
         float(np.min(det_grid)) < 0.0 and float(np.max(det_grid)) > 0.0,
         f"det_min={float(np.min(det_grid)):+.6f}, det_max={float(np.max(det_grid)):+.6f}",
     )
 
     lp_ref = landau_peierls_chi_from_native_normalization(REFERENCE_MU, TEMPERATURE, LP_GRID_N)
     gates.check(
-        "native normalization reproduces parent d=3 LP reference value without fitting",
+        "full-zone integral under the conjectured saddle continuation reproduces the parent d=3 LP reference (diagnostic; saddle scope is an open conjecture)",
         abs(lp_ref - EXPECTED_PARENT_LP_REFERENCE) <= PARENT_REFERENCE_TOL,
         f"lp_ref={lp_ref:+.12e}, expected={EXPECTED_PARENT_LP_REFERENCE:+.12e}",
     )
@@ -299,7 +309,6 @@ def main() -> int:
     note_text = NOTE_PATH.read_text()
     required_phrases = (
         "finite-torus `B/(2*pi)` magnetic-cell",
-        "polynomial `-det(H)/12`",
         "does not introduce a new axiom",
         "midpoint Euler-Maclaurin coefficient",
         "`-1/12`",
@@ -311,6 +320,26 @@ def main() -> int:
         "source note records bounded status and no-axiom boundary",
         not missing,
         "all required source-boundary phrases present" if not missing else f"missing={missing}",
+    )
+
+    # Discriminating scope gate: the note must confine the derived claim to
+    # elliptic patches and mark the saddle continuation as an open conjecture.
+    # It FLIPS to FAIL if the withdrawn overclaim is re-added or the boundary
+    # language is removed.
+    scope_forbidden = (
+        "does not require a separate sign branch",
+        "polynomial `-det(H)/12`",
+    )
+    scope_required = (
+        "explicit open conjecture",
+        "not part of the derived bounded claim",
+    )
+    present_forbidden = [phrase for phrase in scope_forbidden if phrase in note_text]
+    absent_required = [phrase for phrase in scope_required if phrase not in note_text]
+    gates.check(
+        "note restricts the derived claim to elliptic patches and marks the saddle continuation as an open conjecture",
+        not present_forbidden and not absent_required,
+        f"forbidden_present={present_forbidden} required_absent={absent_required}",
     )
 
     gates.check(

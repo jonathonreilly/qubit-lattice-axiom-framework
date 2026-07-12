@@ -116,8 +116,9 @@ structure, determinant line, polarization, orbit quotient, or physical
 record-to-action map. It does not set `r`, `delta`, or any mass, and it does
 not force `r=1/2`.
 
-The current target is the zero-weight `open_gate` in
-[`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md).
+The current target is the zero-weight `open_gate` recorded in the plain-text
+context handle `AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`.
+That target is the object being tested, not a proof dependency of this no-go.
 This note does not discharge that physical target. It isolates a necessary
 non-selection subclaim beneath it: Record additivity does not choose the raw
 complex-versus-realified determinant power.

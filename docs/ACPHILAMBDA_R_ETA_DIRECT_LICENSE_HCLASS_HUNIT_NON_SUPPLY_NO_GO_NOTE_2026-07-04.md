@@ -93,8 +93,9 @@ does not set `h`, `delta`, `r`, or a charged-lepton mass, and it does not force
 `r=1/2`. It changes no axiom, approved primitive, premise registry, or audit
 verdict.
 
-The current target is the zero-weight `open_gate` in
-[`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md).
+The current target is the zero-weight `open_gate` recorded in the plain-text
+context handle `AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`.
+That target is the object being tested, not a proof dependency of this no-go.
 Historical decision text identifies provenance only and is not used as proof.
 
 ## No-Go Discipline Gate

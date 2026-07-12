@@ -1,0 +1,11 @@
+PASS Reduced staggered carrier has the analytic anti-Hermitian and parity structure: antihermitian=0.00e+00, parity=0.00e+00
+PASS Schur determinant and retained-inverse identities hold: logdet=2.13e-14, sign=7.05e-17, inverse=1.01e-15
+PASS The eliminated determinant is positive and its inverse norm is at most one over mass: det phase=(1+1.6586469434919726e-17j), sigma_min=1.300000, parity=0.00e+00
+PASS The Schur kernel and two-link coarse links are gauge covariant: Schur=3.51e-15, links=2.59e-15
+PASS The all-mass Q-series is positive, contractive, and reproduces the eliminated inverse: eig=[0.801263,0.904466], r=0.904466, residual=4.74e-14
+PASS One coarse-link fiber contains distinct Schur kernels and a non-Gaussian mixture diagnostic: fiber=0.00e+00, Schur variation=0.180542, quartic=1.95e-04
+PASS An independent exact unitary design verifies the SU(3) Haar second-moment coefficient one third: maximum residual=1.11e-16
+PASS Two factor-two blocks equal one straight factor-four path block: maximum residual=3.94e-16
+PASS Doubling the time spacing leaves the OS physical energies unchanged: energies=-0.000,0.200,0.700,1.400
+PASS Source-note bounded theorem and N1-N8 contract: missing=[]; missing N2 pairs=[]; attempted=8
+SCORECARD PASS=10 FAIL=0

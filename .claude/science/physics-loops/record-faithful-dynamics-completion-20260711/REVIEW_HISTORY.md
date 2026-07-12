@@ -396,3 +396,7 @@ governance, labeling, and no-go re-reviews pass. Audit validation seeds one
 `bounded_theorem` / `unaudited` row with only `minimal_axioms`; strict lint has
 no errors, vocabulary lint has zero violations, and generated audit surfaces
 are stripped before delivery.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5258 is
+open on the onsite-charge common-H head. Independent audit remains required.

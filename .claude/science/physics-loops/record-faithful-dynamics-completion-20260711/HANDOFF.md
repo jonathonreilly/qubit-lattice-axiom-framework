@@ -4,7 +4,7 @@ Current branch:
 `physics-loop/record-faithful-dynamics-block12-bdg-flat-band-20260712`.
 The two-band BdG runner reports `PASS=33 FAIL=0`. Independent code/math,
 claim/import/Nature, governance, labeling, and full N1--N8 review pass at
-bounded strength; delivery remains. After delivery, open the controlled continuum campaign on
+bounded strength. Stacked PR #5258 is open. Next, open the controlled continuum campaign on
 one massive free `3+1` staggered two-step scaling family; do not attach SM or
 GR labels until that same-object free transfer/action/CAR limit is controlled.
 
@@ -270,3 +270,8 @@ Delivery: stacked PR
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5250 is
 open and mergeable on the pairwise-commuting common-H head; independent audit
 workflow running.
+
+Two-band BdG stacked review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5258
+is open against the onsite-charge branch; independent audit remains the only
+status authority.

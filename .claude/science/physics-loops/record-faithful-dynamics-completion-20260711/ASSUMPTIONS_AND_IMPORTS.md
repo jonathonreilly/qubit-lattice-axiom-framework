@@ -100,3 +100,19 @@ finite carrier, not a `Z^3` locality or overlapping-cell theorem.
 There is no persistent terminal register, repeated-cycle absorption theorem,
 framework-Record realization, infinite-lattice channel, simultaneous QCA, or
 physical probability/time interpretation in this block.
+
+## Scalar CAR-QCA conditional inputs
+
+- A supplied global CAR algebra with one fermionic mode per site for the
+  scalar theorem; the local `M_2(C)` isomorphism does not derive this graded
+  many-body realization.
+- Number-preserving Gaussian linearity, translation invariance, finite Laurent
+  range, exact unitarity, and the full 24-element proper-cubic action.
+- For the escape only, six internal modes labeled by the directed nearest
+  neighbors and permuted by the cubic group.
+- Finite-torus second quantization is an implementation check; the
+  infinite-lattice claim is a CAR-algebra automorphism and assumes no global
+  Fock representation.
+
+No physical tick selector, qubit-tensor QCA, interacting/Clifford circuit,
+Record coupling, clock/rate, or continuum generator is imported.

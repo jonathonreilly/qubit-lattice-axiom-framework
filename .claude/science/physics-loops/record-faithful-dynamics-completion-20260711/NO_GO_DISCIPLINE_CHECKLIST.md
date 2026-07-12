@@ -610,6 +610,155 @@ remain required.
 
 ---
 
+# No-Go Discipline: Scalar Cubic CAR-QCA Triviality And Carrier Escape
+
+**Status:** PASS for the narrow statement that a supplied finite-range,
+translation-invariant, number-preserving Gaussian/CAR tick with one fermionic
+mode per simple-cubic site and full proper-cubic covariance is an onsite phase.
+The six-direction carrier is an explicit counterexample to any broader
+no-transport claim. No general qubit-QCA, physical-tick, or axiom-update no-go
+is asserted.
+
+## N1 — Alternative-route enumeration
+
+Evidence is the
+[bounded source](../../../../docs/SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md),
+its [exact runner](../../../../scripts/scalar_cubic_car_qca_triviality_six_direction_escape_2026_07_11.py),
+and [cache](../../../../logs/runner-cache/scalar_cubic_car_qca_triviality_six_direction_escape_2026_07_11.txt).
+
+| Attack route | Marker | Attack and result |
+|---|---|---|
+| scalar amplitude mixing across directions | `ATTEMPTED` | the scalar Laurent lemma collapses every finite unimodular symbol to one monomial; runner `S01/S02` contrasts a failed blend with a monomial |
+| nonzero scalar translation winding | `ATTEMPTED` | proper-cubic covariance requires a group-fixed integer vector; runner `G03/S03--S05` proves only zero survives and exhibits the axis shifts when covariance is dropped |
+| zero determinant winding as a transport selector | `ATTEMPTED` | runner `C06/C07/C10` gives opposite-moving and six-direction bands with zero total winding, rejecting determinant winding as a general selector |
+| one-particle Laurent unitary fails to define a QCA | `ATTEMPTED` | source Eqs. (1)--(4) prove the CAR lift and equally local inverse; runner `C01/C02/C05/C09` certifies the finite-torus instance |
+| enlarge the carrier while retaining cubic strictness | `ATTEMPTED` | the six-direction radius-one CAR QCA is translation- and 24-rotation-covariant and transports every band |
+
+No route is marked `RULED OUT BY PRIOR`; the relevant repo tick rows are
+conditional or unaudited and are not used as authority for this proof.
+Two-component walks on other adjacency graphs, interacting/Clifford/partitioned
+qubit QCAs, and nonlocal Hamiltonian exponentials remain explicitly untested
+escapes rather than being mislabeled as failed attacks.
+
+## N2 — Wall-independence audit
+
+The collapsed algebraic wall set is: (1) one scalar mode, (2) the
+finite-Laurent, translation-invariant, exactly unitary tick class, and (3) full
+proper-cubic covariance. A fourth independent category bridge, (4) a supplied
+number-preserving CAR realization, is load-bearing only for calling the symbol
+a locality-preserving many-body automorphism rather than a one-particle walk.
+
+| Pair | First closes second? | Reverse? | Independent? |
+|---|---:|---:|---:|
+| scalar carrier / finite-Laurent unitary class | no: a scalar nonunitary response or nonlocal exponential need not be a strict Laurent tick | no: the six-direction strict tick has a larger carrier | yes |
+| scalar carrier / full cubic covariance | no: a scalar axis shift breaks cubic covariance | no: the six-direction escape is cubic but nonscalar | yes |
+| finite-Laurent unitary class / full cubic covariance | no: an axis shift is a strict Laurent unitary but picks an axis | no: a cubic scalar Hamiltonian exponential can be unitary but non-Laurent/nonlocal | yes |
+| scalar carrier / CAR realization | no: a scalar Laurent walk can be defined without a many-body CAR identification | no: the six-mode CAR escape is nonscalar | yes |
+| finite-Laurent unitary class / CAR realization | no: a Laurent walk remains one-particle algebra until the CAR lift is supplied | no: interacting CAR automorphisms need not be finite-Laurent linear updates | yes |
+| full cubic covariance / CAR realization | no: a cubic Bloch symbol can remain only a one-particle walk | no: a CAR axis shift breaks cubic covariance | yes |
+
+Translation invariance, finite Laurent support, and exact unitarity jointly
+define the strict scalar symbol class; they are not inflated into three
+claimed physical no-go walls.
+
+## N3 — Hidden-wall scan
+
+The note, runner, cache, and campaign packet were scanned for `we assume`,
+`assum*`, `by construction`, `as is standard`, `framework provides`, `bridge
+context`, `background`, `naturally`, `obviously`, `standard QFT`, `registered`,
+`canonical`, `supplied`, `local`, `QCA`, `Fock`, and `CAR`.
+
+| Coordinate | Classification |
+|---|---|
+| global CAR algebra and graded locality | explicit supplied realization; not inferred from one-site `M_2(C)` |
+| one fermionic mode per site | explicit scalar-carrier restriction |
+| number preservation and Gaussian linearity | explicit update-class restriction |
+| finite Laurent support and translation invariance | explicit strict homogeneous tick restriction |
+| full 24-element proper-cubic covariance | explicit symmetry restriction, verified exactly |
+| infinite-lattice global Fock unitary | not assumed; the result is a CAR-algebra automorphism, with finite-torus second quantization only |
+| six internal direction labels | explicit larger-carrier escape, not selected by the foundation |
+| local Fock dimension `64` | computed for the escape, not assigned to the framework Qubit |
+| physical tick, clock, rate, probability, or Record coupling | absent and explicitly open |
+| general qubit QCA equivalence/index | absent and explicitly open |
+
+No hidden input is used to broaden the one-mode theorem.
+
+## N4 — Residual matching
+
+| Prior surface and current authority | Prior residual | Use here | Match? |
+|---|---|---|---:|
+| [minimal axioms, lines 106--112](../../../../docs/MINIMAL_AXIOMS_2026-06-29.md#L106), approved premise | lattice/Qubit structure but no dynamics or CAR algebra | supplies only the spatial symmetry and one-site boundary | authority context |
+| [3D simultaneous Bloch tick, lines 6--14 and 79--81](../../../../docs/KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026-06-10.md#L6), unaudited | analyzed `8 x 8` one-particle classes; unrestricted family and QCA lift open | motivates the category bridge; no proof imported | adjacent only |
+| [eta-twisted walk, lines 119--127 and 241--248](../../../../docs/ETA_TWISTED_WALK_FAMILY_RIGID_DRIFT_DISCOVERY_BOUNDED_THEOREM_NOTE_2026-06-10.md#L119), unaudited | exact twisted-`S_3` dispersive family; full family and 24-rotation action open | positive warning against a carrier-independent no-go | adjacent only |
+| [period-2 one-axis dichotomy, lines 150--165](../../../../docs/STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-09.md#L150), unaudited | one-component period-2 per-axis spectra; 3D simultaneous tick open | no three-dimensional or CAR authority imported | no |
+| [all-period one-axis dichotomy, lines 164--170](../../../../docs/SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md#L164), unaudited | one-component finite-period 1D spectra | no three-dimensional or CAR authority imported | no |
+| [tick/Admissibility realization lemma, lines 246--258](../../../../docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md#L246), `audited_conditional` / chain open | fixed-assignment implication with physical realization still supplied | no CAR lift or global tick selected | no |
+| [one-axis tick selector, lines 204--218](../../../../docs/TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md#L204), `audited_conditional` / chain open | supplied realization bridge and period-2 one-axis filter | no three-dimensional CAR-QCA selection | no |
+| [cubic neighbor response, lines 143--157](../../../../docs/RECORD_FAITHFUL_CUBIC_NEIGHBOR_RESPONSE_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md#L143), branch-local/audit-pending | Hermitian scalar/vector response, not strict tick | object-separation context only | adjacent only |
+| [Campaign 4 overlap order, lines 280--298](../../../../docs/OVERLAPPING_EDGE_INSTRUMENT_ORDER_AND_TIME_RATE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md#L280), branch-local/audit-pending | CP-instrument schedule fork | motivates a simultaneous update but proves no coherent-QCA fact | no |
+
+The scalar theorem is self-contained and inherits no broader prior no-go.
+
+## N5 — Rhetoric and resolution matrix
+
+| Resolution | Proved/tested? | Honest statement |
+|---|---:|---|
+| scalar one-particle Laurent symbol | analytical universal proof | unimodular finite Laurent implies one monomial |
+| one-mode number-preserving CAR automorphism | analytical lift plus exact finite-torus fixture | full cubic covariance leaves an onsite phase |
+| six-mode direction-permutation CAR QCA | exact finite torus plus analytical infinite-lattice rule | nontrivial radius-one cubic transport exists |
+| arbitrary internal dimension Gaussian QCA | no | only determinant winding is shown to vanish; paired transport may survive |
+| interacting or general qubit QCA | no | not classified |
+| framework Record-forming QCA | no | not constructed |
+| physical continuum dynamics | no | not claimed |
+
+“Triviality” is used only for the scalar one-mode CAR tick, never for the
+general cubic-QCA surface.
+
+## N6 — Partial-closure and governance paths
+
+| Path | Status | What it could close |
+|---|---|---|
+| [six-direction internal carrier](../../../../docs/SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md#L185) | exact escape in this source | proves full cubic strict transport is compatible with a larger supplied carrier |
+| [body-centered-cubic two-component Weyl walk](https://arxiv.org/abs/1708.00826) | primary-literature context, not repo authority | could trade simple-cubic adjacency for a smaller internal carrier |
+| [staggered `2^3` spatial cell](../../../../docs/KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026-06-10.md#L6) | unaudited repo route | could encode directions spatially rather than as six onsite modes |
+| partitioned/Margolus qubit circuit | no current repo source; open route | could realize a genuine one-qubit/site QCA outside Gaussian scalar form |
+| interacting/Clifford QCA | no current repo source; open route | could transport with local `M_2(C)` while evading number-preserving linearity |
+| [Admissibility-to-update bridge](../../../../docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md#L246) | `audited_conditional`; physical realization open | could select a physical tick rather than merely classify candidates |
+| [record-instrument dilation](../../../../docs/AUTONOMOUS_INTERMITTENT_RECORD_INSTRUMENT_CALIBRATION_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md#L1) | branch-local/audit-pending | could couple coherent transport to permanent Record production |
+| [approved primitive registry](../../../../docs/audit/data/axiom_premise_nodes.json) | checked current registry | no approved primitive supplies CAR, mode count, tick, QCA, or update selection |
+
+These are derivation/model routes, not automatic demands for a new axiom.
+
+## N7 — Steelman
+
+The strongest objection is that the framework's local object is a qubit
+algebra, not a globally supplied scalar CAR field. A translation- and
+proper-cubic-covariant partitioned qubit circuit, interacting Clifford QCA, or
+staggered-cell automorphism could use the same one-site `M_2(C)` presentation
+while evading scalar Laurent linearity. The six-direction example already
+proves that internal structure restores strict transport, and the eta-twisted
+source proves that the older one-particle carrier admits curved families
+outside its factorized class. Therefore this result cannot support a
+framework-wide QCA no-go or an axiom-update request.
+
+## N8 — Cross-cycle echo
+
+| Prior surface and status | Retired? / exact mechanism | Applicability here |
+|---|---|---|
+| [one-axis all-period dichotomy](../../../../docs/SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md#L164), unaudited | not retired; its own scope keeps larger components and 3D protocols open | confirms carrier enlargement must stay live |
+| [factorized 3D no-cone class](../../../../docs/KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026-06-10.md#L70), unaudited | broader carrier-density reading was narrowed, not retired: the [eta-twisted family](../../../../docs/ETA_TWISTED_WALK_FAMILY_RIGID_DRIFT_DISCOVERY_BOUNDED_THEOREM_NOTE_2026-06-10.md#L64) exhibits curved dispersion outside the factorized class | forbids repeating the factorized-class overclaim |
+| [overlap-order nonselection](../../../../docs/OVERLAPPING_EDGE_INSTRUMENT_ORDER_AND_TIME_RATE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md#L280), branch-local/audit-pending | not retired; one simultaneous global channel remains its named escape | the CAR lift supplies a category, not a selected symbol or Record law |
+| [same-carrier Record obstruction](../../../../docs/RECORD_OBSERVABLE_QUOTIENT_AND_RANK_ONE_FORMATION_OUTCOME_OPERATION_NORMAL_FORM_BOUNDED_THEOREM_NOTE_2026-07-11.md#L1), branch-local/audit-pending | not retired framework-wide; later enlarged auxiliary register/channel constructions evade only the finite same-carrier route | analogous carrier enlargement is explicitly exhibited here |
+| [kinetic-isotropy primitive](../../../../docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md#L1), approved premise | no tick-selection wall retired; it supplies structural `c_t=c_s` only | cannot be repurposed as a tick or carrier selector |
+
+## Scalar-CAR-QCA gate conclusion
+
+All N1--N8 checks pass for the one-mode scalar Gaussian/CAR theorem. The exact
+six-direction escape and the untested interacting/partitioned routes block any
+broader negative reading. No axiom-update stop condition is triggered.
+
+---
+
 # No-Go Discipline: Autonomous Intermittent Instrument Calibration Nonselection
 
 **Status:** PASS for the narrow finite-dimensional statement that, for a

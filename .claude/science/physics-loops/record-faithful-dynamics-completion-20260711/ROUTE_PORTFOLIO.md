@@ -7,12 +7,13 @@ Scores are provisional `0..3`; risk is negative.
 | record-observable quotient | 3 | 3 | 2 | 3 | -1 | strongest first theorem: the July-10 kinetic parameter is invisible to its own record histories/readout |
 | rank-one formation-outcome normal form | 3 | 3 | 2 | 3 | -1 | separates an individual irreversible formation outcome from the coherent carrier and prevents a frozen-carrier category error |
 | cubic-equivariant faithful carrier | 3 | 3 | 3 | 2 | -2 | promising: scalar sum plus vector difference is the full linear intertwiner space; faithfulness must remove scalar without fiat |
-| strict QCA as fundamental coherent block | 2 | 2 | 2 | 3 | -2 | useful constraint, but existing results leave quantized protocol freedom and no curved cone at current density |
+| strict QCA as fundamental coherent block | 2 | 2 | 2 | 3 | -2 | useful constraint, but existing results split between factorized linear drift and an eta-twisted curved family, with no physical realization selector |
 | graded-constraint/Born composition | 3 | 3 | 3 | 3 | -2 | static additivity/covariance leave a depolarizing family; exact closure is menu normalization plus physically derived `RC_i` |
 | strengthened exchange countermodel | 3 | 3 | 3 | 3 | -1 | completed on a supplied one-excitation sector: rank-three minimal outcome-forgotten `I-SWAP` channels change absorbing outcome-label weights |
 | intermittent finite-carrier instrument normal form | 3 | 3 | 3 | 3 | -1 | complete abstract parameterization; auxiliary absorption/reuse does not imply blank-sector calibration |
 | overlapping-instrument order | 3 | 3 | 3 | 3 | -1 | completed bounded fork: raw and stopping composition differ; commutation is the exact raw schedule-independence condition |
 | simultaneous cubic QCA/tick | 3 | 3 | 3 | 2 | -2 | next discriminator: one global channel could replace unselected sequential layer composition |
+| scalar Gaussian/CAR-QCA normal form | 3 | 3 | 3 | 3 | -1 | exact one-mode classification plus six-mode escape closes the Bloch-walk/QCA category gap without selecting the physical carrier |
 | unified continuum limit | 3 | 3 | 3 | 1 | -3 | deferred until the microscopic process object and carrier class are fixed |
 
 ## Route ordering

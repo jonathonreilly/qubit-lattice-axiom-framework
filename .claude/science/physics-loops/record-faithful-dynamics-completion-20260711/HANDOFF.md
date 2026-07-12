@@ -162,3 +162,23 @@ interpretation fixes only `lambda Delta t`. Runner/cache: `PASS=47 FAIL=0`;
 the N1--N8 gate passes after explicitly separating composition semantics,
 priority, and clock. No axiom update is triggered. The next campaign is the
 actual simultaneous 3D coherent QCA/tick class.
+
+## Scalar CAR-QCA classification and carrier escape
+
+The actual strict-tick sources were reread and their runners replayed. They
+mostly classify `8 x 8` one-particle Bloch/Laurent walks, not many-body QCAs;
+the eta-twisted family also corrects the earlier overbroad “no cone at this
+carrier density” campaign wording.
+
+For any supplied finite-range matrix Laurent unitary, Fourier convolution
+gives a number-preserving CAR automorphism and an inverse of the same range.
+For one fermionic mode per site, scalar torus unitarity forces one Laurent
+monomial; invariance under all 24 proper cubic rotations forces its winding to
+zero, so the tick is onsite phase. A six-direction six-mode permutation CAR
+QCA is a strict radius-one, translation- and proper-cubic-covariant transport
+escape with determinant winding zero. Runner/cache: `PASS=34 FAIL=0`; claim,
+code/math, governance, and N1--N8 reviews pass. No axiom update is triggered.
+
+This is not the end of Campaign 5. The next exact subblock is the 720-order
+six-matching qubit-circuit schedule orbit, followed by the broader interacting
+QCA normal-form question.

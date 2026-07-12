@@ -57346,11 +57346,23 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
       "to": "fermion_parity_z2_grading_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "z2_hw1_mass_matrix_parametrization_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11"
     },
     {
       "from": "repo.front_door_status",
@@ -57363,18 +57375,6 @@
     {
       "from": "repo.front_door_status",
       "to": "abj_epsilon_index_square_block_no_go_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -111642,17 +111642,17 @@
         "ac_orbit_occupancy_statistical_grain_derivation_obligation",
         "ac_reta_hclass_hunit_readout_derivation_obligation",
         "theta_quark_determinant_cross_sector_readout_derivation_obligation",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
         "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
         "fermion_parity_z2_grading_theorem_note_2026-05-02",
+        "z2_hw1_mass_matrix_parametrization_note",
+        "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
         "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
         "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
-        "abj_epsilon_index_square_block_no_go_note_2026-05-30",
-        "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
-        "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+        "abj_epsilon_index_square_block_no_go_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ee057a3e24e7a106b41e63a9d9c7e8edc650fd0ef90622e0e6fd76f6bc1e2bf0",
+      "note_hash": "657996987c3bc3166316580c1bc7e3b870d13af29a7f5015a958ffcaef9014d9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 408 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2675 |
+| unaudited | 2674 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 85 |
+| ~~audited_conditional~~ | 86 |
 | ~~audited_failed~~ | 20 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 535 |
-| `audited_conditional` | 85 |
+| `audited_conditional` | 86 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3025 |
+| `unaudited` | 3024 |
 
 | claim_type | count |
 |---|---:|
@@ -733,6 +733,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
@@ -7321,6 +7322,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The note and runner consistently define and check the finite gate-map/firewall declarations. The closure is definitional rather than a derivation of the upstream dynamics rows or an unbounded-family principle.
 - **rationale:** Issue: the runner hard-codes the gate rows, statuses, and firewall booleans, then checks document presence and consistency. Why this blocks: that verifies a declared methodology/gate map, but it does not derive any retained status, physical dynamics bridge, production kernel, dial selection, probability law, or unbounded-family lift. Repair target: if a theorem is intended, provide retained upstream authorities or a runner that derives the relevant bridge/family principle rather than defining gate rows. Claim boundary until fixed: cite only the finite gate discipline and the explicitly open unbounded/effective-retained gates.
 - **auditor confidence:** high
+
+### `post_record_selector_tangent_readout_weight_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Exact finite normalization and 2x2 positive-definite quadratic/readout-weight arithmetic for one supplied packet; neither selector authority nor current row-bucket coverage is established.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00290-post_record_selector_tangent`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Given a supplied finite tangent/readout carrier, supplied positive tangent metric or Hessian, and supplied nonnegative readout weights, exact normalization and quadratic checks certify finite readout/tangent arithmetic inside that packet.  _(class `A`)_
+- **chain closes:** False — The finite arithmetic closes over the hard-coded supplied packet, but no cited retained bridge derives or accepts its carrier, readout map, weights, or tangent metric/Hessian. The completed runner also reports 22 live rows against its hard-coded expectation of 17 and exits with two failures.
+- **rationale:** Issue: the runner verifies exact arithmetic only after the carrier, readout weights/map, and tangent metric/Hessian are supplied, and its live row count disagrees with its expected snapshot. Why this blocks: neither the accepted axioms nor the conditional/meta subdivision authority supplies selector/readout/tangent authority, while the completed mismatch prevents validation of the claimed bucket coverage. Repair target: add a retained bridge deriving or explicitly accepting the packet structures and update the diagnostic count assertions against the live ledger. Claim boundary until fixed: the exact finite arithmetic is valid supplied-support, not a framework-derived selector/readout/tangent theorem.
+- **open / conditional deps cited:**
+  - `POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1: the retained_bridge route remains OPEN because no restricted-packet authority derives or accepts the carrier, readout map and weights, and positive tangent metric/Hessian.
 
 ### `post_record_source_measure_trace_normalization_prototype_2026-06-06`
 

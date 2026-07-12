@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """
-sigma_hier uniqueness theorem
-==============================
+sigma_hier supplied-input selection replay
+===========================================
 
 STATUS: supplied-input S_3 selection table — conditional on three admitted external
-inputs (the pinned chamber point, the NuFit 5.3 NO 3-sigma magnitude windows, and the
-T2K/NOvA sin(delta_CP) < 0 sign preference), sigma_hier = (2, 1, 0) is the unique
+inputs (the pinned chamber point, the NuFit 5.3 NO 3-sigma magnitude windows without
+SK-atm, and a supplied sin(delta_CP) < 0 sign comparator motivated by T2K),
+sigma_hier = (2, 1, 0) is the unique
 hierarchy pairing with:
   (a) all 9 |U_PMNS| entries inside the NuFit 5.3 NO 3-sigma ranges, AND
-  (b) sin(delta_CP) < 0, consistent with the T2K/NOvA preferred region.
+  (b) the supplied sin(delta_CP) < 0 comparator.
 
 Framework convention: "axiom" means only Cl(3) on Z^3.
 
@@ -18,32 +19,34 @@ The P3 closure pins the chamber point
 
     (m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042)
 
-using three PMNS observational inputs (s12^2, s13^2, s23^2) and the
-imposed branch-choice rule (A-BCC). The hierarchy pairing sigma_hier was
-listed as an independent conditional — an S_3 permutation choice assigning
-eigenvectors of H to the charged-lepton rows (e, mu, tau).
+using three PMNS observational inputs (s12^2, s13^2, s23^2), the imposed
+branch-choice rule (A-BCC), and the already chosen sigma_hier=(2,1,0).
+The hierarchy pairing was listed as an independent conditional — an S_3
+permutation choice assigning eigenvectors of H to the charged-lepton rows
+(e, mu, tau). This runner replays that supplied construction; it does not use
+the pairing-conditioned pin as independent evidence for the same pairing.
 
-This runner proves a two-step uniqueness theorem:
+This runner checks a two-step supplied-input replay:
 
-STEP 1 (9/9 magnitude filter):
+STEP 1 (9/9 NuFit 5.3 magnitude filter, without SK-atm):
     Among all 6 elements of S_3, exactly TWO — sigma=(2,0,1) and
     sigma=(2,1,0) — place all 9 |U_PMNS|_{ij} entries inside the NuFit
     5.3 NO 3-sigma ranges. The other 4 permutations each fail >= 4 entries.
 
-STEP 2 (CP-phase discriminator):
+STEP 2 (supplied CP-sign discriminator):
     The two 9/9-passing permutations are related by a mu<->tau row swap,
     which preserves all |U| magnitudes but reverses the sign of the
     Jarlskog invariant J, hence reverses sin(delta_CP):
       sigma=(2,1,0): sin(delta_CP) = -0.9874  (delta_CP ~ -81 deg)
       sigma=(2,0,1): sin(delta_CP) = +0.9874  (delta_CP ~ +81 deg)
-    T2K (2021, NO, normal hierarchy) measures delta_CP in the range
-    [-200, -15] deg at 1-sigma (central ~ -108 deg), strongly preferring
-    sin(delta_CP) < 0 and disfavoring sin(delta_CP) = +0.987 (> +sin 60deg)
-    at the 3-sigma level. (NOvA similarly prefers the lower half-plane.)
+    The negative-sign comparator is supplied rather than derived, with the
+    T2K 2021 negative-phase preference as motivation. It is not presented as
+    a joint T2K/NOvA preference: NOvA 2021 instead disfavored the neighborhood
+    of delta_CP=3*pi/2 in normal ordering at about 2 sigma.
 
 Conclusion:
-    The combination of the 9/9 NuFit 3-sigma magnitude check AND the
-    experimental CP-phase sign preference (sin(delta_CP) < 0) uniquely
+    The combination of the 9/9 NuFit 5.3 3-sigma magnitude check without
+    SK-atm AND the supplied sign comparator (sin(delta_CP) < 0) uniquely
     selects sigma = (2, 1, 0) from the 6-element S_3 at the pinned point.
 
     This is a supplied-input selection statement, not an internal
@@ -51,11 +54,12 @@ Conclusion:
     uniquely selected, among the 6 elements of S_3 at the pinned point, by
     the joint requirement that all 9 PMNS magnitudes pass the supplied
     NuFit 5.3 3-sigma windows AND that sin(delta_CP) is negative under the
-    supplied T2K/NOvA sign preference.
+    supplied negative-sign comparator.
 
-    The CP phase prediction sin(delta_CP) = -0.9874 is then a falsifiable
-    geometric consequence of the selected pairing under the supplied
-    comparators, not a separately imposed input.
+    The CP phase value sin(delta_CP) = -0.9874 is then a conditional geometric
+    consequence of the selected pairing under the supplied comparators, not a
+    separately imposed input. The supplied pin was itself obtained under
+    sigma_hier=(2,1,0), so this replay is not independent selector evidence.
 """
 
 from __future__ import annotations
@@ -122,12 +126,12 @@ def H_mat(m: float, delta: float, q_plus: float) -> np.ndarray:
     return H_BASE + m * T_M + delta * T_DELTA + q_plus * T_Q
 
 
-# NuFit 5.3 NO 3-sigma ranges on |U_PMNS|_{ij}
+# NuFit 5.3 NO 3-sigma ranges on |U_PMNS|_{ij}, without SK-atm
 PDG_LO = np.array(
-    [[0.801, 0.513, 0.143], [0.234, 0.471, 0.637], [0.271, 0.477, 0.613]]
+    [[0.801, 0.518, 0.142], [0.236, 0.458, 0.630], [0.264, 0.471, 0.610]]
 )
 PDG_HI = np.array(
-    [[0.845, 0.579, 0.155], [0.500, 0.689, 0.776], [0.525, 0.694, 0.756]]
+    [[0.842, 0.580, 0.155], [0.507, 0.691, 0.779], [0.527, 0.700, 0.762]]
 )
 
 
@@ -304,36 +308,30 @@ def part3_cp_phase_discriminator(results: dict) -> None:
     )
 
     print()
-    print("  T2K (2021, NO) 1-sigma: delta_CP in [-200, -15] deg, central ~ -108 deg.")
-    print("  NOvA (2021, NO) similarly prefers sin(delta_CP) < 0.")
-    print("  Both experiments exclude sin(delta_CP) = +0.987 at better than 3-sigma.")
+    print("  The sin(delta_CP) < 0 comparator is a supplied input motivated by T2K 2021.")
+    print("  It is not a joint T2K/NOvA preference or confidence-level combination.")
     print()
-
-    # T2K 3-sigma exclusion: approximate bound sin(delta_CP) > 0 excluded at ~3-sigma
-    # We use the conservative statement: T2K 2-sigma bound excludes sin(dCP) > +0.5
-    T2K_3SIGMA_BOUND = 0.5  # conservative: T2K excludes sin(dCP) > 0.5 at 2-3 sigma
     check(
-        "sigma=(2,0,1): sin(delta_CP)=+0.987 is excluded by T2K/NOvA at >=2-sigma "
-        "(T2K disfavors sin(dCP) > +0.5)",
-        abs(s201) > T2K_3SIGMA_BOUND,
-        f"sin(dCP) = {s201:+.4f} > {T2K_3SIGMA_BOUND}",
+        "sigma=(2,0,1) fails the supplied sin(delta_CP)<0 comparator",
+        s201 > 0.0,
+        f"sin(dCP) = {s201:+.4f} > 0",
     )
     check(
-        "sigma=(2,1,0): sin(delta_CP)=-0.987 is inside T2K/NOvA 2-sigma preferred region",
+        "sigma=(2,1,0) passes the supplied sin(delta_CP)<0 comparator",
         s210 < 0.0,
         f"sin(dCP) = {s210:+.4f} < 0",
     )
 
 
 # ---------------------------------------------------------------------------
-# Part 4: Unique physical permutation detail — all 9 entries
+# Part 4: Selected permutation detail — all 9 entries
 # ---------------------------------------------------------------------------
 
 
-def part4_physical_sigma_detail(results: dict) -> None:
+def part4_selected_sigma_detail(results: dict) -> None:
     print()
     print("=" * 80)
-    print("Part 4: Physical sigma = (2, 1, 0) — full 9/9 NuFit detail")
+    print("Part 4: Selected sigma = (2, 1, 0) — full 9/9 NuFit detail")
     print("=" * 80)
 
     r = results[(2, 1, 0)]
@@ -361,12 +359,12 @@ def part4_physical_sigma_detail(results: dict) -> None:
     print()
     sin_dcp = r["sin_dcp"]
     check(
-        "sin(delta_CP) = -0.9874 ± 0.001 at the physical sigma",
+        "sin(delta_CP) = -0.9874 ± 0.001 at the selected sigma",
         abs(sin_dcp + 0.9874) < 0.001,
         f"sin(dCP) = {sin_dcp:+.4f}",
     )
     check(
-        "delta_CP ~ -81 deg (consistent with T2K/NOvA preferred region)",
+        "delta_CP ~ -81 deg (passes the supplied negative-sign comparator)",
         sin_dcp < -0.9,
         f"sin(dCP) = {sin_dcp:+.4f}",
     )
@@ -428,6 +426,14 @@ def _has_overclaim(flat: str) -> bool:
     return any(p in flat for p in _FORBIDDEN_CLOSURE_PHRASES)
 
 
+_SUPPLIED_INPUT_HEADER = "## Supplied inputs (admitted, external)"
+
+
+def _has_supplied_input_header(note: str) -> bool:
+    """Detect the exact supplied-input Markdown section header."""
+    return _SUPPLIED_INPUT_HEADER in note.splitlines()
+
+
 def supplied_input_scope_gate() -> None:
     """Discriminating downstream-hygiene gate for the supplied-input reframe.
 
@@ -478,7 +484,6 @@ def supplied_input_scope_gate() -> None:
     with open(note_path, encoding="utf-8") as fh:
         note = fh.read()
     flat = " ".join(note.split())
-    supplied_phrase = "Supplied inputs (admitted, external)"
     dep_edge = (
         "[neutrino_dirac_pmns_retained_lane_packet_2026-04-16]"
         "(NEUTRINO_DIRAC_PMNS_RETAINED_LANE_PACKET_2026-04-16.md)"
@@ -490,7 +495,7 @@ def supplied_input_scope_gate() -> None:
     )
     check(
         "gate 5: note declares the supplied-input subsection",
-        supplied_phrase in note,
+        _has_supplied_input_header(note),
     )
     check(
         "gate 6: note carries the dated 2026-07-12 scope-narrowing record",
@@ -512,7 +517,10 @@ def supplied_input_scope_gate() -> None:
     )
     check(
         "gate 9: supplied-input detector distinguishes presence from absence",
-        supplied_phrase not in note.replace(supplied_phrase, "REDACTED"),
+        _has_supplied_input_header(note)
+        and not _has_supplied_input_header(
+            note.replace(_SUPPLIED_INPUT_HEADER, "## REDACTED", 1)
+        ),
     )
 
 
@@ -523,7 +531,7 @@ def supplied_input_scope_gate() -> None:
 
 def main() -> int:
     print("=" * 80)
-    print("sigma_hier UNIQUENESS THEOREM (two-step)")
+    print("sigma_hier SUPPLIED-INPUT SELECTION REPLAY (two-step)")
     print()
     print("  Step 1 (9/9 magnitude filter): reduces S_3 from 6 to 2 permutations.")
     print("  Step 2 (CP-phase discriminator): selects sigma=(2,1,0) uniquely.")
@@ -534,7 +542,7 @@ def main() -> int:
     V = part1_h_at_pin()
     results = part2_magnitude_filter(V)
     part3_cp_phase_discriminator(results)
-    part4_physical_sigma_detail(results)
+    part4_selected_sigma_detail(results)
     part5_non_passing_failures(results)
     supplied_input_scope_gate()
 
@@ -546,17 +554,15 @@ def main() -> int:
     print("  0.715042), the hierarchy pairing sigma_hier = (2, 1, 0) is the unique")
     print("  element of S_3 satisfying both:")
     print("    (1) all 9 |U_PMNS|_{ij} inside NuFit 5.3 NO 3-sigma ranges, AND")
-    print("    (2) sin(delta_CP) < 0, consistent with T2K/NOvA experimental preference.")
+    print("    (2) the supplied sin(delta_CP) < 0 comparator.")
     print()
     print("  Proof structure:")
     print("    - The 9/9 magnitude check reduces 6 S_3 elements to 2: (2,0,1) and")
     print("      (2,1,0), which differ only by a mu<->tau row swap.")
     print("    - The mu<->tau swap preserves all |U| magnitudes but reverses Jarlskog:")
-    print("        sigma=(2,0,1): sin(delta_CP) = +0.9874 (excluded by T2K/NOvA)")
-    print("        sigma=(2,1,0): sin(delta_CP) = -0.9874 (preferred by T2K/NOvA)")
-    print("    - T2K (2021, NO) and NOvA disfavor sin(delta_CP) > +0.5 at >=2-sigma.")
-    print("    - Therefore sigma=(2,0,1) is observationally disfavored and sigma=(2,1,0)")
-    print("      is the unique physically admissible pairing.")
+    print("        sigma=(2,0,1): sin(delta_CP) = +0.9874 (fails supplied sign cut)")
+    print("        sigma=(2,1,0): sin(delta_CP) = -0.9874 (passes supplied sign cut)")
+    print("    - Therefore sigma=(2,1,0) is the sole pairing passing the supplied filter.")
     print()
     print("  This is a supplied-input selection at the live pin: sigma_hier is")
     print("  not derived from Cl(3)/Z^3 alone, and it is not observationally")
@@ -566,9 +572,11 @@ def main() -> int:
     print("  This is a pinned-point selection only, not a chamber-wide or")
     print("  all-basin uniqueness claim; other admitted basins must be")
     print("  checked separately.")
+    print("  The supplied pin was itself obtained under sigma=(2,1,0), so this")
+    print("  replay is a consistency table, not independent selector evidence.")
     print()
-    print("  The CP-phase prediction sin(delta_CP) = -0.9874 is then a")
-    print("  falsifiable geometric consequence: a confirmed >3-sigma positive sin(delta_CP)")
+    print("  The CP-phase value sin(delta_CP) = -0.9874 is then a conditional")
+    print("  geometric consequence: a confirmed >3-sigma positive sin(delta_CP)")
     print("  measurement at DUNE/Hyper-K would rule out this pairing.")
     print("=" * 80)
     print()

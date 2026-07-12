@@ -11,16 +11,17 @@ promotion of that mislabeled branch.
 
 - Branch: `physics-loop/shapiro-static-discriminator-block01-20260711`
 - Base: `origin/main@def6c1127`
+- Source commits: `27c31e8df`, `ff67512d6`
+- Review PR: [#5206](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5206)
 - Claim target: `shapiro_static_discriminator_note`
 - Trace: direct closure of the quoted Class-A blocker
 - Audit authority surfaces: untouched
 
 ## Next Exact Action
 
-Push the reviewed branch and open the single unmerged review PR. After merge,
-the independent audit worker should audit `shapiro_static_discriminator_note`
-first; the two direct companion rows remain dependency-blocked until that
-target is ratified.
+Monitor the hosted `audit_pipeline`. After human merge, the independent audit
+worker should audit `shapiro_static_discriminator_note` first; the two direct
+companion rows remain dependency-blocked until that target is ratified.
 
 ## Final Verification
 
@@ -39,3 +40,10 @@ target is ratified.
 - generated audit, publication-effective-status, registry, and front-door
   surfaces restored to `origin/main` and absent from the branch diff;
 - `git diff --check`: pass.
+
+## Delivery
+
+- PR [#5206](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5206)
+  is open, non-draft, based on `main`, and mergeable.
+- Hosted `audit_pipeline` was in progress at initial verification.
+- The physics-loop worker did not merge the PR.

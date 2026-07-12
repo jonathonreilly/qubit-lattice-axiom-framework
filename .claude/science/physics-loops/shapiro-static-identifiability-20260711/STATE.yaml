@@ -46,9 +46,13 @@ no_go_routes:
   - treating the existing causal label as an independently propagated field
 trace_gate_classification: direct_blocker_closure
 review_disposition: pass_after_iteration_2
-pr_status: pending
+pr_status: open_verified_mergeable
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5206
+source_commits:
+  - 27c31e8df6ddc3b49de4f326a88d998ab550cac9
+  - ff67512d6c7cfac8d4ba2950d06231de1842cef8
 validation_status: pass
 audit_pipeline_result: "pass; target no_go/unaudited/ready with deps=[]; two direct companions unaudited behind target"
 strict_lint_result: "pass; zero errors, 36 pre-existing warnings and 240 notices"
-next_exact_action: commit the delivery checkpoint, push the science branch, and open exactly one unmerged review PR
+next_exact_action: monitor hosted audit_pipeline; after human merge, dispatch independent audit of shapiro_static_discriminator_note before its two companion rows
 stop_condition: coherent block reviewed, pushed, and represented by exactly one verified review PR

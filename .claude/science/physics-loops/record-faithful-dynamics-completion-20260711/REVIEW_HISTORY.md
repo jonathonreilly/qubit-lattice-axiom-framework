@@ -323,6 +323,10 @@ has no errors. Generated audit/effective-status surfaces are stripped before
 delivery; independent audit remains required.
 
 Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5250 is
+open and mergeable on the pairwise-commuting common-H head; audit running.
+
+Delivery: stacked PR
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5237 is
 open and mergeable on the symmetric-Clifford head; audit workflow running.
 

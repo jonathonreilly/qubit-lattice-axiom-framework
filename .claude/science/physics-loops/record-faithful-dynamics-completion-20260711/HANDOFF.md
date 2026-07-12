@@ -255,3 +255,8 @@ full automorphism is not finite radius. The repo's `I-SWAP` competitor is the
 `6I-A` member. A fully cubic 16-mode flat involution has noncommuting
 onsite/bond pieces yet remains strict radius at most one, preventing any broad
 common-H no-go. Runner/cache: `PASS=40 FAIL=0`. No axiom update is triggered.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5250 is
+open and mergeable on the pairwise-commuting common-H head; independent audit
+workflow running.

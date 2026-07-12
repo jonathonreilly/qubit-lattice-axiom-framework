@@ -100,6 +100,13 @@ NOTE_BODY_CHAR_LIMIT = 30_000
 AUTHORITY_TOTAL_CHAR_LIMIT = 60_000
 AUTHORITY_PER_NOTE_MAX = 10_000
 AUTHORITY_PER_NOTE_MIN = 2_000
+CLIPPED_EVIDENCE_MARKERS = (
+    "... [packet-clipped ",
+    "... [truncated; runner is ",
+    "... [truncated; helper is ",
+    "[runner stdout clipped; ",
+    "[runner cache excerpt clipped; ",
+)
 
 
 def clip_packet_text(text: str, limit: int, label: str) -> str:
@@ -622,7 +629,12 @@ def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
         )
         if res.returncode != 0:
             return f"[runner exit={res.returncode}]\n{res.stdout[-3000:]}\n--- stderr ---\n{res.stderr[-1500:]}"
-        return res.stdout[-6000:]   # cap to keep prompt size sane
+        if len(res.stdout) > 6000:
+            return (
+                f"[runner stdout clipped; {len(res.stdout)} chars total]\n"
+                f"{res.stdout[-6000:]}"
+            )
+        return res.stdout
     except subprocess.TimeoutExpired:
         return f"[runner timed out at {timeout_sec}s — likely needs compute-rerun]"
     except Exception as e:
@@ -1134,6 +1146,22 @@ def validate_verdict(
         return f"missing fields: {sorted(missing)}"
     if blob.get("claim_id") != expected_cid:
         return f"claim_id mismatch: expected {expected_cid!r}, got {blob.get('claim_id')!r}"
+    if blob.get("verdict") == "audited_clean" and evidence_manifest is not None:
+        clipped_paths = sorted(
+            path
+            for path, entry in evidence_manifest.items()
+            if any(
+                marker in str(entry.get("text") or "")
+                for marker in CLIPPED_EVIDENCE_MARKERS
+            )
+            and set(entry.get("roles") or [])
+            & {"source", "authority", "runner", "helper", "runner_stdout", "runner_stdout_cache_eligible"}
+        )
+        if clipped_paths:
+            return (
+                "audited_clean requires complete load-bearing packet surfaces; "
+                f"clipped evidence: {clipped_paths}"
+            )
     no_go_error = no_go_discipline_gate.validate_no_go_discipline(
         blob,
         source_required=source_requires_no_go,

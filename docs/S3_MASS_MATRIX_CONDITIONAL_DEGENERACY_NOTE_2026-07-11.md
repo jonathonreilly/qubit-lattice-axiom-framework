@@ -55,6 +55,50 @@ The older `S3_MASS_MATRIX_NO_GO_NOTE.md` bundles the algebra with a
 physical-carrier assertion and is separately targeted for fresh-context
 re-audit. It is historical context, not authority for this lemma.
 
+## No-Go Discipline Gate For The Derived Spectral Boundary
+
+This is a review-only N1-N8 record for the consequence on line 32. It does not
+pre-assign an audit verdict; the independent audit lane must rebuild the packet
+against authenticated evidence.
+
+- **N1 — five distinct attacks.** (1) Schur decomposition gives two
+  multiplicity-one blocks; (2) exact simultaneous commutation with the two
+  generating transpositions gives a two-dimensional commutant; (3) character
+  multiplicities give `1^2+1^2=2`; (4) the explicit group-average projector on
+  `End(V)` has rank two and contains `I_3,P_(A_1)`; (5) direct diagonalization
+  of `alpha I_3+beta P_(A_1)` gives the displayed spectrum for arbitrary real
+  `alpha,beta`. Routes 1-4 close the operator class; route 5 closes its spectral
+  consequence. All five are `ATTEMPTED` in the proof or paired runner.
+- **N2 — condition independence.** The supplied unitary representation
+  `V ~= A_1 direct-sum E` does not imply that a chosen operator is exactly
+  `S_3` invariant, and exact invariance does not select that representation.
+  Both conditions are explicit and neither is counted as a derived wall.
+- **N3 — hidden-condition scan.** The proof uses only the supplied unitary
+  representation, exact invariance, Hermiticity, Schur's lemma, and the spectral
+  theorem. No physical generation, taste-cube, `hw=1`, mass, selector, dynamics,
+  or four-axiom bridge is imported.
+- **N4 — residual matching.** No prior negative claim is used as a witness.
+  In particular, the older physical-carrier note is excluded from the proof.
+- **N5 — rhetoric resolution.** The tested statement is finite-dimensional and
+  operator-level on the supplied `V`. No per-site, lattice-wide, physical-mass,
+  or alternate-representation exclusion is stated.
+- **N6 — partial-closure paths.** Breaking `S_3`, changing the representation,
+  or introducing multiplicities can permit a three-value spectrum. Those are
+  honest escape routes outside the two explicit hypotheses, not new axioms and
+  not counterexamples to the scoped lemma.
+- **N7 — steelman.** A physical flavor carrier need not be this representation,
+  and a physical mass operator need not commute with exact `S_3`; either fact
+  defeats any physical three-generation no-go. That strongest objection is why
+  the theorem excludes the carrier bridge and claims only the abstract
+  commutant characterization.
+- **N8 — cross-cycle echo.** The older S3 note overlaid this algebra with a
+  physical `hw=1`/taste-cube reading. The applicable retirement mechanism is
+  precisely the one used here: split the exact abstract lemma from the
+  separately dispatched carrier-scope re-audit.
+
+**N1-N8 review status:** `PASS` for the narrow derived spectral boundary;
+physical-carrier or universal flavor conclusions remain outside scope.
+
 ## Reproduction
 
 ```bash

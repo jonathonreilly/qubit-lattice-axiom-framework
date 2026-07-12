@@ -31,7 +31,7 @@ COMPUTATION CHAIN:
 CHECKS:
   1. Finite boundary-linear fit R^2 > 0.99 (2D and 3D)
   2. RT ratio finite-L observation across multiple lattice sizes
-  3. Gravity modulates entropy monotonically
+  3. A selected positive 1/r onsite potential modulates entropy monotonically
   4. Frozen-star table is a comparison identity, not an independent test
   5. Independent-copy scaling identity for the diagnostic ratio
   6. Finite-size trend diagnostics, observation only
@@ -145,9 +145,9 @@ def gaussian_correlation_entropy(C: np.ndarray, subsystem: list[int]) -> float:
     return float(S)
 
 
-def gravitational_potential_3d(L: int, source: tuple[int, int, int],
-                               strength: float) -> np.ndarray:
-    """1/r gravitational potential on L^3 cubic lattice."""
+def positive_onsite_potential_3d(L: int, source: tuple[int, int, int],
+                                 strength: float) -> np.ndarray:
+    """Selected positive 1/r onsite-potential diagnostic on an L^3 lattice."""
     N = L ** 3
     V = np.zeros(N)
     sx, sy, sz = source
@@ -405,13 +405,13 @@ def check_2_rt_ratio() -> dict:
 
 
 # ============================================================================
-# CHECK 3: Gravity modulates entropy monotonically
+# CHECK 3: selected positive 1/r onsite potential
 # ============================================================================
 
-def check_3_gravity_modulation() -> dict:
-    """Show gravitational coupling modulates the entropy."""
+def check_3_positive_onsite_potential() -> dict:
+    """Measure entropy under the selected positive 1/r onsite potential."""
     print("\n" + "=" * 72)
-    print("CHECK 3: GRAVITATIONAL MODULATION OF ENTROPY")
+    print("CHECK 3: POSITIVE 1/r ONSITE-POTENTIAL DIAGNOSTIC")
     print("=" * 72)
 
     results = {}
@@ -437,7 +437,7 @@ def check_3_gravity_modulation() -> dict:
 
     s_list = []
     for g in g_values:
-        V = gravitational_potential_3d(L, center, g) if g > 0 else None
+        V = positive_onsite_potential_3d(L, center, g) if g > 0 else None
         H = build_3d_hamiltonian(L, potential=V)
         vals, vecs = eigh(H)
         C, _, _ = half_filled_correlation(vals, vecs)
@@ -740,7 +740,7 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
     #     bounded numerical observation; it is NOT used as a pass/fail
     #     criterion any more. Aggregation reports the observed finite-L
     #     numbers without a "PASS within 15% of 1/4" verdict.
-    #   - Gravity modulation monotone for g >= 0.5
+    #   - Selected positive 1/r onsite-potential response monotone for g >= 0.5
     #   - Independent-copy identity: duplicate-copy ratio spread < 1e-12
     #   - Finite-size tail-fit intercepts are diagnostics only. They do not
     #     close an all-L OBC Widom theorem.
@@ -772,10 +772,10 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
     print(f"     OBSERVATION ONLY — finite comparison, not a BH derivation.")
     # No verdict entry; this is reported as observation.
 
-    # 3. Gravity modulation
+    # 3. Selected positive 1/r onsite-potential diagnostic
     mono = c3.get("monotone_from_half", False)
-    print(f"\n  3. GRAVITY MODULATION: monotone for g >= 0.5: {mono}")
-    verdicts["gravity_monotone"] = mono
+    print(f"\n  3. POSITIVE 1/r ONSITE POTENTIAL: monotone for g >= 0.5: {mono}")
+    verdicts["positive_onsite_potential_monotone"] = mono
 
     # 4. Frozen star scaling — identity holds by construction when ratio
     #    is set to 1/4. This is a sanity check, not an independent PASS.
@@ -857,7 +857,7 @@ def main() -> int:
 
     c1 = check_1_area_law()
     c2 = check_2_rt_ratio()
-    c3 = check_3_gravity_modulation()
+    c3 = check_3_positive_onsite_potential()
     c4 = check_4_frozen_star()
     c5 = check_5_species_scan()
     c6 = check_6_finite_size()

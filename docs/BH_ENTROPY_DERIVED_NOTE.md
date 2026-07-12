@@ -56,7 +56,7 @@ The current runner reports:
   `0.3143` in 2D and `0.1249` in 3D;
 - two-dimensional `1/L` diagnostic intercept: `0.2492`;
 - three-dimensional `1/L` diagnostic intercept: `0.0644`;
-- monotone entropy decrease for the sampled gravitational modulation at
+- monotone entropy decrease for the sampled positive `g/r` onsite potential at
   `g >= 0.5`;
 - exact cancellation of duplicate-copy factors under the runner's explicitly
   independent-copy construction. This is a bookkeeping identity, not a
@@ -72,7 +72,9 @@ favors a value near `1/6`. Neither fit is an all-`L` theorem.
 - nearest-neighbor free-fermion Hamiltonian and open boundary conditions;
 - the basis-invariant mixed half-filling prescription;
 - the Bekenstein-Hawking `1/4` value as an external comparison target;
-- the gravitational-potential modulation used by the diagnostic.
+- the positive `g/r` onsite-potential profile used by the diagnostic; its sign,
+  normalization, and coupling to this fermion carrier are selected diagnostic
+  inputs, not a derived gravitational bridge;
 - `t=1` in the nearest-neighbor Hamiltonians, the `10^-6` SVD tolerance, the
   finite size grids, and the selected fit windows/forms;
 - the SI constants (`G`, `c`, `l_P`, and `M_sun`) and benchmark masses used
@@ -80,7 +82,9 @@ favors a value near `1/6`. Neither fit is an all-`L` theorem.
 - the convention identifying the counted lattice boundary with the area
   comparator and the separately supplied `1/4` normalization in that table.
 
-None of these inputs is supplied merely by the four-axiom baseline.
+These are explicit external or conventional inputs to this diagnostic. The
+four-axiom baseline is used only as the framework boundary against which those
+inputs are disclosed.
 
 ## Open Gates
 

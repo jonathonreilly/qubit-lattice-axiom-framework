@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bh_entropy_derived.py
-runner_sha256: 66a87420551054d945059241a4bd33c9ca46f05933ea1be32b4d1f7a26495ec9
+runner_sha256: c19551686e9a891e728c0671be82c2f3809774c72833ee0e8357d91ceaed9839
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.28
+elapsed_sec: 2.32
 status: ok
 ----- stdout -----
 ========================================================================
@@ -78,7 +78,7 @@ CHECK 2: FINITE-L RT COMPARISON  S / (|dA| * ln chi_eff)
   Diagnostic only: 3D finite-L comparison within 15% of 1/4: False
 
 ========================================================================
-CHECK 3: GRAVITATIONAL MODULATION OF ENTROPY
+CHECK 3: POSITIVE 1/r ONSITE-POTENTIAL DIAGNOSTIC
 ========================================================================
 
   3D lattice L=8, boundary = 64 sites
@@ -175,7 +175,7 @@ SYNTHESIS: BOUNDED BH ENTROPY COMPANION FROM GAUSSIAN CORRELATIONS
      3D mean: 0.1249  (dev from 1/4: 50.0%)
      OBSERVATION ONLY — finite comparison, not a BH derivation.
 
-  3. GRAVITY MODULATION: monotone for g >= 0.5: True
+  3. POSITIVE 1/r ONSITE POTENTIAL: monotone for g >= 0.5: True
 
   4. FROZEN STAR SCALING: comparison identity when RT = 1/4 (sanity)
 

@@ -129,7 +129,9 @@ Use alongside:
     freedom as a gaugeable option
   - three-generation matter structure
   - exact `I_3 = 0` and CPT as compact supporting theorems
-  - emergent Lorentz invariance with first anisotropic correction at dimension 6, exact continuum-limit 1+1D / 3+1D boost-covariant free-scalar 2-point closure, and a conservative support-side angular-kernel no-go / decoupling clarification
+  - Lorentz-anisotropy and fixed-action continuum diagnostics remain audit
+    targets; the selected action/kinetic, Planck-spacing, CPT/parity, and
+    carrier conditions are not current four-axiom consequences
   - retained action-surface strong-CP closure / `theta_eff = 0` on the retained Wilson-plus-staggered action surface
   - promoted CKM atlas/axiom package as part of the quantitative manuscript surface
 - Public package companions / appendices:

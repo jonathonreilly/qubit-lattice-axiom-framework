@@ -114,6 +114,8 @@ ARCHIVED_FIELDS = (
     "claim_type_last_reviewed",
     "notes_for_re_audit_if_any",
     "no_go_discipline",
+    "audit_invocation_id",
+    "audit_invocation_history",
 )
 
 RANK = {
@@ -209,6 +211,31 @@ def repair_class_is_valid(notes: str | None) -> bool:
     return first_token in ALLOWED_REPAIR_CLASSES
 
 
+def clean_audit_provenance_is_compatible(
+    audit: dict, *, top_level: bool
+) -> bool:
+    """Apply the current capability policy without pinning one Codex release."""
+    family = audit.get("auditor_family")
+    independence = audit.get("independence")
+    if isinstance(family, str) and family.startswith("codex-gpt-"):
+        model = audit.get("auditor_model")
+        match = (
+            re.fullmatch(r"gpt-(\d+(?:\.\d+)*)(?:-sol)?", model)
+            if isinstance(model, str)
+            else None
+        )
+        return bool(
+            match
+            and family == f"codex-gpt-{match.group(1)}"
+            and codex_family_meets_minimum(family, minimum="gpt-5.6")
+            and audit.get("auditor_reasoning_effort") == "xhigh"
+            and independence != "weak"
+        )
+    if top_level:
+        return independence in {"strong", "external", "judicial_review"}
+    return independence not in {None, "weak"}
+
+
 def archived_audit_is_lint_compatible(archived: dict) -> bool:
     """True if restoring this archived audit will satisfy current audit lint.
 
@@ -230,10 +257,9 @@ def archived_audit_is_lint_compatible(archived: dict) -> bool:
             return False
 
     fam = archived.get("auditor_family")
-    if archived.get("audit_status") == "audited_clean" and (
-        fam != "codex-gpt-5.6"
-        or archived.get("auditor_model") != "gpt-5.6-sol"
-        or archived.get("auditor_reasoning_effort") != "xhigh"
+    if (
+        archived.get("audit_status") == "audited_clean"
+        and not clean_audit_provenance_is_compatible(archived, top_level=True)
     ):
         return False
     if fam is not None:
@@ -252,12 +278,7 @@ def archived_audit_is_lint_compatible(archived: dict) -> bool:
             seat = cross.get(seat_name)
             if not isinstance(seat, dict) or seat.get("verdict") != "audited_clean":
                 continue
-            seat_family = seat.get("auditor_family")
-            if (
-                seat_family != "codex-gpt-5.6"
-                or seat.get("auditor_model") != "gpt-5.6-sol"
-                or seat.get("auditor_reasoning_effort") != "xhigh"
-            ):
+            if not clean_audit_provenance_is_compatible(seat, top_level=False):
                 return False
 
     return True

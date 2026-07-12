@@ -199,3 +199,8 @@ triggered.
 This is not the end of Campaign 5. The next exact subblock is a broader
 interacting/Clifford gate-family normal form or one common-Hamiltonian
 simultaneous-update class before deciding whether continuum work is controlled.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5212 is
+open and mergeable on the Block07 head; the independent audit workflow is
+queued.

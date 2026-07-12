@@ -3983,6 +3983,17 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "The retained inputs do not lack a local map but no admissible route exists globally.",
             "The selector wall no longer blocks transfer but blocks the readout channel.",
             "Not claimed: does not determine the 3.5PN coefficient from retained axioms.",
+            "This appendix does not derive the clock from the supplied finite one-qubit local structure.",
+            "This appendix does not determine the scale on the supplied algebraic structure.",
+            "This document cannot recover the selector by use of the local structure.",
+            "This note does not determine the 3.5PN coefficient from retained axioms.",
+            "Not claimed: does not determine the\n3.5PN coefficient from retained axioms.",
+            "No admissible gauge transformation fixed points on the residual orbit.",
+            "No other route-finding algorithm exists for obtaining the selector.",
+            "No alternative constructive program exists for deriving the clock.",
+            "No other computational method whatsoever for deriving the clock exists.",
+            "No other analytic channel exists for reaching the selector.",
+            "No alternative propagation channel exists for supplying the clock.",
         ):
             with self.subTest(body=body):
                 self.assertTrue(
@@ -4173,6 +4184,13 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "The residual wall no longer persists and the exact map closes the boundary.",
             "This short self-contained technical audit note does not derive the external coefficient; the parent row supplies it.",
             "No mathematically distinct globally admissible alternative representation exists.",
+            "The article no longer contends that no admissible route exists.",
+            "The assertion that no selector exists was rejected by the constructive proof.",
+            "The conclusion that no route exists was withdrawn after the construction.",
+            "The assertion that no selector exists has been disproved by the explicit map.",
+            "The conclusion that no route exists was overturned by the construction.",
+            "No additional communication channel exists between the two boundary tori.",
+            "## Scope\nDoes not derive external alpha\n### Parent attribution\nThe retained axioms derive alpha.\n",
         ):
             with self.subTest(body=body):
                 self.assertFalse(

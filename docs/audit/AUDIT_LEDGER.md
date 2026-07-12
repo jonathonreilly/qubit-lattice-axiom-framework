@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 411 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2664 |
+| unaudited | 2663 |
 | audit_in_progress | 24 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 90 |
+| ~~audited_conditional~~ | 91 |
 | ~~audited_failed~~ | 21 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 24 |
 | `audited_clean` | 539 |
-| `audited_conditional` | 90 |
+| `audited_conditional` | 91 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 43 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3014 |
+| `unaudited` | 3013 |
 
 | claim_type | count |
 |---|---:|
@@ -712,6 +712,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `eta_188_structural_origin_partial_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -3852,6 +3853,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N1: the alternative-g_* boundary, retained-provenance route, and weak-running route remain OPEN or UNTESTED.
     - N3: multiple constants and the physical transport law are inserted in the helper without retained one-hop authorities.
     - N5: unique and falsified rhetoric exceeds the resolutions tested unless narrowed to the fixed implementation and exact equality.
+
+### `eta_holonomy_base_flux_scope_boundary_note_2026-06-06`
+
+- **Note:** [`ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md`](../../docs/ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact support for the displayed eta scalar connection, uniform Z_2 coordinate-plaquette curvature, and rectangular base-loop area law; no UD_2 null-homotopy or braid-class conclusion is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00052-eta_holonomy_base_flux_scope`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the displayed staggered phases and spin frame, the scalar connection has uniform plaquette curvature -1 and rectangular base-loop holonomy Hol(rectangle a x b)=(-1)^(ab).  _(class `C`)_
+- **chain closes:** False — The base-connection computation closes, but the required negative-boundary gate does not: the runner never constructs UD_2(Z^3), tests a two-token homotopy, or identifies the compared detour swaps as one braid class.
+- **rationale:** The runner genuinely computes the Pauli-matrix spin diagonalization, eta curvature, gauge invariance, and sampled rectangle holonomies rather than importing a tuned value. However, its final two scope checks are unconditional True values, and absence of a plaquette 2-cell in the base graph does not exhaust possible homotopies in the two-token configuration space. The positive base-flux core is supported, but the no-go-shaped UD_2 boundary fails the mandatory N1-N8 discipline gate.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 contains two OPEN routes and one UNTESTED finite-UD_2 route.
+    - N5 uses UD_2 null-homotopy rhetoric at resolutions not tested by the runner.
+    - N7 strongest configuration-space homotopy steelman remains unresolved.
 
 ### `eta_ud2_fixed_token_square_homology_certificate_2026-06-06`
 

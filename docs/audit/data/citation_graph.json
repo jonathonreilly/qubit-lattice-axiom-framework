@@ -92791,7 +92791,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f83cf83ef945e49004184f48cf1bd11e58a1d3e33e9f6ff100ef906e05e4d494",
+      "note_hash": "aa63811267f73e3cc4f3c0bac620a9aeb8c92f1664ac55ceecc84b4712d9941a",
       "path": "docs/KS_ETA_VS_JW_STRING_CAR_LOCALITY_NO_GO_NOTE_2026-06-02.md",
       "runner_path": "scripts/ks_eta_vs_jw_string_car_locality.py",
       "title": "KS Eta Versus Jordan-Wigner String CAR Locality No-Go"
@@ -112147,7 +112147,7 @@
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4864d5380144257e17114f21841e5cbf7206354c525f4b2c5b21f593fa86398e",
+      "note_hash": "32cdad351f681f952e2c30ef87c4325a8d6810cccd23c1f6b3f4180186c3dd4d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

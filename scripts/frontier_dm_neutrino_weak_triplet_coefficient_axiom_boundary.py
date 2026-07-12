@@ -4,13 +4,12 @@ DM neutrino weak-triplet coefficient framework boundary.
 
 Framework convention for this runner:
   the legacy claim id contains "axiom", but the live framework baseline is the
-  named Lattice + Quantum + Record axiom set. This packet uses the Lattice +
-  Quantum algebraic surface, not a new or single axiom.
+  named Lattice + Qubit + Admissibility + Record axiom set. This packet uses
+  the Lattice + Qubit algebraic surface, not a new or single axiom.
 
 Question:
-  Does the current Lattice + Quantum baseline, together with the current
-  derived atlas rows, already derive the transfer coefficients c_odd and
-  M_even in
+  Does the current four-axiom baseline, together with the current derived
+  atlas rows, already derive the transfer coefficients c_odd and M_even in
 
       gamma = c_odd * a_sel
       [E1,E2]^T = M_even [tau_E,tau_T]^T ?
@@ -81,24 +80,26 @@ def compact(text: str) -> str:
     return "".join(text.split())
 
 
-def part1_framework_baseline_is_named_lattice_quantum_record() -> None:
+def part1_framework_baseline_is_named_lattice_qubit_admissibility_record() -> None:
     print("\n" + "=" * 88)
-    print("PART 1: FRAMEWORK BASELINE IS LATTICE + QUANTUM + RECORD")
+    print("PART 1: FRAMEWORK BASELINE IS LATTICE + QUBIT + ADMISSIBILITY + RECORD")
     print("=" * 88)
 
-    minimal = read("docs/MINIMAL_AXIOMS_2026-06-05.md")
+    minimal = read("docs/MINIMAL_AXIOMS_2026-06-29.md")
     transfer = read("docs/DM_NEUTRINO_WEAK_TRIPLET_TRANSFER_CLASS_THEOREM_NOTE_2026-04-15.md")
 
     check(
-        "The live framework baseline names Lattice, Quantum, and Record",
+        "The live framework baseline names Lattice, Qubit, Admissibility, and Record",
         "1. **Lattice**" in minimal
-        and "2. **Quantum**" in minimal
-        and "3. **Record**" in minimal,
+        and "2. **Qubit**" in minimal
+        and "3. **Admissibility**" in minimal
+        and "4. **Record**" in minimal,
     )
     check(
-        "The Lattice + Quantum surface supplies Z^3 and the one-qubit/Cl(3,0) carrier",
-        "The site set is `Z^3`" in minimal
-        and "`A_x ~= M_2(C)`, equivalently `Cl(3,0)`" in minimal,
+        "The Lattice + Qubit surface supplies Z^3 and the one-qubit/Cl(3,0) carrier",
+        "Physical sites are the points of the cubic lattice `Z^3`" in minimal
+        and "The full one-site possibility domain has algebraic presentation `M_2(C)`." in minimal
+        and "A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently" in minimal,
     )
     check(
         "The transfer-class theorem is a derived structural theorem on top of the baseline surface",
@@ -204,7 +205,7 @@ def main() -> int:
     print("DM NEUTRINO WEAK-TRIPLET COEFFICIENT FRAMEWORK BOUNDARY")
     print("=" * 88)
 
-    part1_framework_baseline_is_named_lattice_quantum_record()
+    part1_framework_baseline_is_named_lattice_qubit_admissibility_record()
     part2_c_odd_is_now_fixed_by_bosonic_matching()
     part3_the_exact_source_carrier_closes_the_even_leg()
     part4_the_current_single_axiom_boundary_is_exact()

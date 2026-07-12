@@ -30,9 +30,10 @@ The retained pieces are narrower:
    bare exponent is `8 x 2 = 16`.
 
 What does **not** follow is the readout-scale selection. The approved Record
-axiom in `MINIMAL_AXIOMS_2026-06-05.md` supplies durable realized-outcome
-registration and finite scalar additivity in an already supplied readout
-context. It explicitly supplies no readout context, decomposition,
+axiom in `MINIMAL_AXIOMS_2026-06-29.md` supplies permanent locking of exactly
+one admissible local possibility and finite scalar readout additivity over
+pairwise-disjoint records, with each readout value determined by record content
+alone. It explicitly supplies no readout-context selection, decomposition,
 sector-generation rule, weighting, normalization, probability, dynamics, time
 metric, within-sector data, or occupancy rule. Therefore Record alone cannot
 select the minimal block over the OS continuum.
@@ -47,15 +48,15 @@ Record axiom + RP two-step positivity
 ```
 
 does not close on the current framework surface. RP two-step supplies a native
-minimal positive transfer block. Record can host a realized finite readout once
-the readout context is supplied. Neither premise chooses the magnitude's
-readout scale.
+minimal positive transfer block. Record supplies permanent locking of exactly
+one admissible local possibility and finite additive scalar readout determined
+by record content alone. Neither premise chooses the magnitude's readout scale.
 
 Equivalently:
 
 ```text
 RP two-step:        minimal positive temporal block is 2.
-Record axiom:       durable finite realized records, no scale selector.
+Record axiom:       permanent admissible lock; scalar readout; no scale selector.
 Missing bridge:     UV/minimal-block readout selection for this magnitude count.
 ```
 
@@ -91,7 +92,7 @@ Record axiom + RP two-step positivity
 
 | Route | Result |
 |---|---|
-| Record as selector | Fails. [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) says Record supplies no readout context, weighting, normalization, time metric, or occupancy rule. |
+| Record as selector | Fails. [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) leaves readout-context selection, weighting, normalization, time metric, and occupancy rules downstream (further structure requires a retained derivation, bridge, or approved primitive). |
 | RP two-step as selector | Fails. [`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`](AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md) supplies a minimal positive transfer block, not a magnitude readout rule. |
 | Count-not-rate row as selector | Fails. [`MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md`](MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md) separates count from clock rate but leaves the readout scale residual explicit. |
 | Spatial/species count as selector | Fails. The `2^3=8` spatial count surfaces supply the spatial factor only, not temporal scale selection. |
@@ -105,7 +106,7 @@ walls here; they are examples of the same absent selector bridge.
 
 **N3 -- hidden-wall scan.** The note uses "supplied" only for future bridge
 language, not as an unstated premise. "Record" is load-bearing through
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md). "Minimal block"
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md). "Minimal block"
 is load-bearing through the RP two-step source above. No hidden admission is
 used to close the no-go.
 
@@ -137,7 +138,7 @@ the UV/minimal-block readout rule.
 
 ## Dependencies
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) -- approved
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) -- approved
   Record axiom boundary.
 - [`MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md`](MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md)
   -- the temporal factor is a count rather than a clock rate.

@@ -43,9 +43,10 @@ dependency chain used here is:
 
 The post-record probability firewall
 [`POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06`](POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md)
-is respected: Record supplies durable realized-outcome registration, not the
-outcome weights used in this unraveling. This note is therefore bounded by the
-Born assembly dependency and cannot be read as Record-supplied probability.
+is respected: Record supplies a permanent lock of exactly one admissible local
+possibility when present, not the outcome weights used in this unraveling. This
+note is therefore bounded by the Born assembly dependency and cannot be read as
+Record-supplied probability.
 
 ## Results
 

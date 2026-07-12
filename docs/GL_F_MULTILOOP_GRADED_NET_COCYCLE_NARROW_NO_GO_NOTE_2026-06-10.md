@@ -13,12 +13,13 @@ audit verdict and downstream status are set only by the independent audit lane.
 **Authority role:** exercises and closes the multi-loop derivation route to the
 `GL(F)` predicate named by the route portfolio of the 2026-06-06 FS-admission
 exercise — "multi-loop graded-net cocycle consistency" — on the static
-`{Lattice, Quantum, Record}` baseline. The outcome is NEGATIVE: the
-commuting (hard-core-boson) exchange-sign assignment passes every multi-loop
-cocycle consistency condition, so joint loop consistency does not force the
-cross-site sign `−1`. Relative to the cited route portfolio and the four
-retained statistics no-gos, this removes the remaining named loop-consistency
-route; it does not preclude a future principle outside that route class.
+`{Lattice, Qubit, Admissibility, Record}` baseline. The outcome is NEGATIVE:
+the commuting (hard-core-boson) exchange-sign assignment passes every
+multi-loop cocycle consistency condition, so joint loop consistency does not
+force the cross-site sign `−1`. Relative to the cited route portfolio and the
+four retained statistics no-gos, this removes the remaining named
+loop-consistency route; it does not preclude a future principle outside that
+route class.
 `GL(F)`/FS remains a genuine admission candidate (Tier-A admission, or
 migration off the static baseline, are the remaining paths).
 
@@ -78,7 +79,7 @@ formalizes that condition completely and computes that it does **not** fail.
 
 ## 2. Formalization (the multi-loop graded-net cocycle condition)
 
-Let `Λ ⊂ Z³` be a finite block, `H_Λ = (C²)^{⊗|Λ|}` (Quantum axiom), `F` the
+Let `Λ ⊂ Z³` be a finite block, `H_Λ = (C²)^{⊗|Λ|}` (Qubit axiom), `F` the
 retained parity involution. An **exchange-sign assignment** is a map
 `ε : {(x,y) : x ≠ y} → {+1, −1}`. A **realization** of `ε` is a family
 `(ψ_x)_{x∈Λ}` of operators on `H_Λ` with
@@ -219,7 +220,7 @@ configuration.
 
 Load-bearing (markdown links):
 
-1. [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — baseline.
+1. [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — baseline.
    License used: the `Z³` site set and one-qubit-per-site tensor substrate
    only; no dynamics, boundary condition, or statistics input is drawn.
 2. [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)

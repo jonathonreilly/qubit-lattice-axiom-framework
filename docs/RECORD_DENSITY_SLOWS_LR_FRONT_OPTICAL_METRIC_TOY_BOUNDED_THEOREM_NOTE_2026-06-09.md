@@ -35,9 +35,10 @@ consistent in a concrete quantum model*, not that the framework's axioms force i
 - A **record site** `x` carries a **frozen environment qubit** (no self-Hamiltonian in the ancilla
   sector), coupled by the excitation-conserving registration coupling
   `g (σ⁺_a c_x + c_x† σ⁻_a)`: the site's occupation amplitude is registered into the frozen qubit.
-  This is the toy's reading of the Record axiom's noun — *a record is the durable registration of
-  the realized outcome* — as a minimal interaction; the registration **dynamics** itself is a
-  supplied model input (see Boundaries).
+  This supplied toy is motivated by the Record axiom's locking/permanence content — *When present,
+  a record locks exactly one admissible local possibility. A site never carries more than one
+  record; records are permanent.* — and models registration with a minimal interaction; the
+  registration **dynamics** itself remains a supplied model input (see Boundaries).
 - In the one-excitation sector the qubit ancilla is **exactly** a quadratic dangling mode: the full
   `2^7` spin model's one-excitation sector reproduces the quadratic model's spectrum to `6.7e-16`
   (runner S1.1). Everything is exact diagonalization / transfer matrices / sympy — **no Monte
@@ -148,8 +149,8 @@ Nothing here derives the scale.
 
 ## Boundaries (honest)
 
-- **A toy, not the framework's dynamics.** The Lattice/Quantum/Record axioms supply no dynamics
-  ([`MINIMAL_AXIOMS_2026-06-05`](MINIMAL_AXIOMS_2026-06-05.md): record-production dynamics is
+- **A toy, not the framework's dynamics.** The Lattice/Qubit/Admissibility/Record axioms supply no
+  dynamics ([`MINIMAL_AXIOMS_2026-06-29`](MINIMAL_AXIOMS_2026-06-29.md): record-production dynamics is
   explicitly outside axiom content). The hopping chain and the registration coupling are model
   inputs chosen for exact solvability. What the toy establishes is the **internal consistency and
   constructibility** of the posited link `n(x) → v_eff(x) → Φ(x)` in a concrete quantum-lattice
@@ -160,9 +161,9 @@ Nothing here derives the scale.
   monotone-decrease statement is proven at the inner-band carrier and, carrier-independently, for
   the front speed `v_F(n) = max_k |dE/dk|`. Near band edges (`|E| > √2·t`) the *per-carrier* group
   delay changes sign (verified exactly) while no speed ever exceeds the bare front.
-- **Durability is not produced here.** A single frozen mode is a unitary environment: the imprint
+- **Permanence is not produced here.** A single frozen mode is a unitary environment: the imprint
   persists over the observation window with a slow re-emission leak (measured). Axiom-level
-  durability is a constraint on what counts as a record; this toy does not supply a mechanism that
+  permanence is a constraint on what counts as a record; this toy does not supply a mechanism that
   makes the imprint permanently fixed.
 - **Class dependence.** The slowing is a property of the amplitude-registration coupling class; the
   projective pointer-copy class attenuates instead (S3.5). Which class the framework's actual
@@ -184,10 +185,10 @@ Nothing here derives the scale.
   [`RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md`](RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md)
   — the clock-rate boundary (the scale needs a supplied clock unit); demonstrated in S4.3, not
   violated.
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — the Lattice/Quantum/Record
-  axiom statements and their explicit non-content (no dynamics), which set this note's honest
-  scope. The Record axiom's noun (durable registration of the realized outcome) motivates the
-  frozen-qubit registration model.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — the
+  Lattice/Qubit/Admissibility/Record axiom statements and their explicit non-content (no dynamics),
+  which set this note's honest scope. The Record axiom's locking of exactly one admissible local
+  possibility and record permanence motivate the frozen-qubit registration model.
 - No approved primitive is consumed: `scale_reference_primitive` is not used (all quantities in
   lattice units `t = 1`; no physical unit conversion), and `kinetic_isotropy_primitive` is not used
   (a 1D single-axis toy has no `c_t = c_s` cross-axis content).

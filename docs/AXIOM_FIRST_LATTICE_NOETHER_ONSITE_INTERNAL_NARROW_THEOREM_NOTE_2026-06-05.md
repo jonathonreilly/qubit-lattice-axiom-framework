@@ -267,9 +267,9 @@ narrow theorem.
 
 **Load-bearing dependencies (retained-grade or axiom node):**
 
-- The framework axiom node (Lattice/Quantum/Record), supplying the `Z^3` site
-  set with shift action and the per-site qubit/`Cl(3,0)` carrier:
-  [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md).
+- The framework axiom node (Lattice/Qubit/Admissibility/Record), supplying
+  the `Z^3` site set with shift action and the per-site qubit/`Cl(3,0)` carrier:
+  [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md).
 - The abstract finite matrix-unit continuity theorem, supplying the general
   bilinear continuity identity, global number-charge conservation, orientation
   antisymmetry, and exact Hamiltonian coefficient support envelope:

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Finite Harper/PT eps* full-kernel T^2 coefficient verifier.
+"""Finite Harper/PT eps* full-kernel finite-scale quotient verifier.
 
 Companion draft:
     docs/EPSSTAR_FULL_KERNEL_COEFFICIENT_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-12.md
@@ -47,7 +47,7 @@ T0_BRANCH_LO = 1.48
 T0_BRANCH_HI = 1.56
 SOMMERFELD_DERIV_H = 2.0e-2
 DEGENERATE_PAIR_TOL = 1.0e-10
-FULL_KERNEL_COEFF_T = SURFACE_DELTA_ETA
+FULL_KERNEL_READOUT_T = SURFACE_DELTA_ETA
 
 # Frozen anchors/tolerances.  They are constants, not maps edited from the
 # observed values.
@@ -55,10 +55,11 @@ FROZEN_MU0 = 1.5216
 FROZEN_MU0_ABS_TOL = 2.0e-2
 FROZEN_ALPHA_SEAGULL = -9.27
 FROZEN_ALPHA_SEAGULL_ABS_TOL = 7.5e-1
-FROZEN_D_MEASURED = 3.88
-FROZEN_D_MEASURED_ABS_TOL = 7.5e-1
+FROZEN_D_GRID = 3.88
+FROZEN_D_GRID_ABS_TOL = 7.5e-1
 INTERBAND_H1_MIN = 1.0e-2
-ALPHA_REL_TOL = 1.5e-1
+DECLARED_COMPARISON_BAND = 1.5e-1
+PRINTED_VALUE_ROUNDING_RADIUS = 5.0e-13
 NOTE_PATH = Path(
     "docs/EPSSTAR_FULL_KERNEL_COEFFICIENT_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-12.md"
 )
@@ -69,6 +70,14 @@ RUNNER_LINK = (
 CACHE_LINK = (
     "[`logs/runner-cache/frontier_epsstar_full_kernel_coefficient_2026_06_12.txt`]"
     "(../logs/runner-cache/frontier_epsstar_full_kernel_coefficient_2026_06_12.txt)"
+)
+LP_BRIDGE_LINK = (
+    "[`LP_TWO_BAND_EXACT_COMPLETION_BOUNDED_THEOREM_NOTE_2026-06-12.md`]"
+    "(LP_TWO_BAND_EXACT_COMPLETION_BOUNDED_THEOREM_NOTE_2026-06-12.md)"
+)
+RICHARDSON_BOUNDARY_LINK = (
+    "[`EPSSTAR_COEFFICIENT_RICHARDSON_MOFF0_BOUNDED_NOTE_2026-06-12.md`]"
+    "(EPSSTAR_COEFFICIENT_RICHARDSON_MOFF0_BOUNDED_NOTE_2026-06-12.md)"
 )
 FORBIDDEN_CLOSED_PR_MARKER = "PR #" + "3820"
 FORBIDDEN_PRECURSOR_STATUS_WORD = "lan" + "ded"
@@ -405,29 +414,28 @@ def fit_mu2_slope(rows: list[RootRow]) -> tuple[float, float, float]:
     return float(coeffs[1]), float(coeffs[0]), max_abs_residual
 
 
-def full_kernel_alpha_from_fixed_t2(
+def full_kernel_finite_scale_readout(
     table: PTArrays,
     mu0: float,
     response_prime: float,
 ) -> tuple[float, float, PTParts]:
-    """Separate complete-kernel route for d chi / d(T^2) at fixed mu0.
+    """Return the declared complete-kernel quotient at fixed mu0 and T_q.
 
     This is deliberately not a boundary-root refit.  It evaluates the complete
-    finite-T PT integrand once at the fixed surface scale T=eta and divides by
-    T^2 after the T=0 branch response has been anchored to zero.  The kernel K
-    is the actual divided difference at finite T, including near-degenerate
-    pairs, so this route retains the explicit kernel T-dependence that the
-    diagonal-contact Sommerfeld proxy drops.
+    finite-T PT integrand once at the declared finite scale T_q=0.05 and
+    divides by T_q^2 after the separately regularized T=0 branch response has
+    been anchored to zero.  This defines a finite-protocol quotient.  It is
+    not a T->0 coefficient or an error-controlled asymptotic estimate.
     """
 
-    parts = pt_chi_parts(mu0, FULL_KERNEL_COEFF_T, table)
-    chi_t2_coeff = parts.full / (FULL_KERNEL_COEFF_T * FULL_KERNEL_COEFF_T)
+    parts = pt_chi_parts(mu0, FULL_KERNEL_READOUT_T, table)
+    chi_t2_coeff = parts.full / (FULL_KERNEL_READOUT_T * FULL_KERNEL_READOUT_T)
     alpha = -chi_t2_coeff / (response_prime / (2.0 * mu0))
     return alpha, chi_t2_coeff, parts
 
 
 def run() -> int:
-    print("eps* full-kernel Sommerfeld coefficient verifier")
+    print("eps* full-kernel finite-scale quotient verifier")
     print(
         f"PT cell: Q={Q_HARPER}, Ly={LY}, N={N_SITE}, GL={PT_GL_ORDER}; "
         f"bracket=[{BISECTION_LO:.1f},{BISECTION_HI:.1f}], "
@@ -448,7 +456,7 @@ def run() -> int:
         f"R0_prime_naive={response_prime_naive:+.12e} C_T2_naive={ct2_naive:+.12e}"
     )
     print(
-        f"NAIVE_ALPHA alpha_seagull={alpha_seagull:+.12f} "
+        f"NAIVE_PROXY alpha_proxy={alpha_seagull:+.12f} "
         f"frozen={FROZEN_ALPHA_SEAGULL:+.12f}"
     )
     print(
@@ -462,7 +470,7 @@ def run() -> int:
         f"mu0={mu0:.12f}, frozen={FROZEN_MU0:.4f}, tol={FROZEN_MU0_ABS_TOL:.2e}",
     )
     check(
-        "S0 precursor naive seagull alpha is reproduced",
+        "S0 precursor naive Sommerfeld proxy is reproduced",
         abs(alpha_seagull - FROZEN_ALPHA_SEAGULL) <= FROZEN_ALPHA_SEAGULL_ABS_TOL,
         f"alpha_seagull={alpha_seagull:+.12f}, frozen={FROZEN_ALPHA_SEAGULL:+.2f}, "
         f"tol={FROZEN_ALPHA_SEAGULL_ABS_TOL:.2e}",
@@ -487,7 +495,7 @@ def run() -> int:
             f"interband={row.interband_at_root:+.12e}"
         )
     slope_rows = [root_cache[temp] for temp in PRECURSOR_SLOPE_TEMPERATURES]
-    d_measured, mu2_intercept, mu2_max_abs_residual = fit_mu2_slope(slope_rows)
+    d_grid, mu2_intercept, mu2_max_abs_residual = fit_mu2_slope(slope_rows)
     print(
         "PRECURSOR_SLOPE_GRID "
         + " ".join(
@@ -497,53 +505,84 @@ def run() -> int:
     )
     print(
         f"TRUTH_FIT mu*(T)^2 = c + d*T^2: c={mu2_intercept:.12f} "
-        f"d_measured={d_measured:+.12f} max_abs_residual={mu2_max_abs_residual:.12e}"
+        f"d_grid={d_grid:+.12f} max_abs_residual={mu2_max_abs_residual:.12e}"
     )
     check(
-        "S1 measured finite-T slope reproduces internally recomputed +3.88",
-        abs(d_measured - FROZEN_D_MEASURED) <= FROZEN_D_MEASURED_ABS_TOL,
-        f"d_measured={d_measured:+.12f}, frozen={FROZEN_D_MEASURED:+.2f}, "
-        f"tol={FROZEN_D_MEASURED_ABS_TOL:.2e}",
+        "S1 finite-grid regression slope reproduces internally recomputed +3.88",
+        abs(d_grid - FROZEN_D_GRID) <= FROZEN_D_GRID_ABS_TOL,
+        f"d_grid={d_grid:+.12f}, frozen={FROZEN_D_GRID:+.2f}, "
+        f"tol={FROZEN_D_GRID_ABS_TOL:.2e}",
     )
 
-    print("\nS2 FULL COEFFICIENT: complete finite-T divided-difference kernel")
-    alpha_full, ct2_full, coeff_parts = full_kernel_alpha_from_fixed_t2(
+    print("\nS2 FINITE-SCALE READOUT: complete finite-T divided-difference kernel")
+    q_full, ct2_full, coeff_parts = full_kernel_finite_scale_readout(
         table, mu0, response_prime_naive
     )
-    alpha_kernel = alpha_full - alpha_seagull
+    finite_readout_scale = -1.0 / (
+        (response_prime_naive / (2.0 * mu0))
+        * FULL_KERNEL_READOUT_T
+        * FULL_KERNEL_READOUT_T
+    )
+    q_seagull = finite_readout_scale * coeff_parts.seagull
+    q_kernel = finite_readout_scale * coeff_parts.kernel
     print(
-        f"COEFFICIENTS alpha_seagull={alpha_seagull:+.12f} "
-        f"alpha_kernel={alpha_kernel:+.12f} alpha_full={alpha_full:+.12f}"
+        f"READOUTS alpha_proxy={alpha_seagull:+.12f} q_seagull={q_seagull:+.12f} "
+        f"q_kernel={q_kernel:+.12f} q_full={q_full:+.12f}"
     )
     print(
-        f"FULL_INTERNAL coeff_T={FULL_KERNEL_COEFF_T:.3f} "
+        f"FULL_INTERNAL readout_T={FULL_KERNEL_READOUT_T:.3f} "
         f"chi_full(T)={coeff_parts.full:+.12e} "
         f"seagull(T)={coeff_parts.seagull:+.12e} kernel(T)={coeff_parts.kernel:+.12e} "
         f"C_T2_full={ct2_full:+.12e}; "
         f"R0_prime={response_prime_naive:+.12e} C_T2_naive={ct2_naive:+.12e}"
     )
-    alpha_rel = abs(alpha_full - d_measured) / max(abs(d_measured), 1.0e-15)
+    relative_difference = abs(q_full - d_grid) / max(abs(d_grid), 1.0e-15)
+    rounding_upper = (
+        abs(q_full - d_grid) + 2.0 * PRINTED_VALUE_ROUNDING_RADIUS
+    ) / (abs(d_grid) - PRINTED_VALUE_ROUNDING_RADIUS)
+    sign_robustness_radius = 0.5 * min(
+        -q_seagull,
+        q_kernel,
+        q_kernel - abs(q_seagull),
+        q_full,
+        d_grid,
+    )
     print(
-        f"COMPARISON d_measured={d_measured:+.12f} alpha_full={alpha_full:+.12f} "
-        f"relative_mismatch={alpha_rel:.12e}"
+        f"COMPARISON d_grid={d_grid:+.12f} q_full={q_full:+.12f} "
+        f"relative_difference={relative_difference:.12e} "
+        f"printed_rounding_upper={rounding_upper:.12e}"
+    )
+    print(
+        f"SIGN_ROBUSTNESS componentwise_open_radius={sign_robustness_radius:.12f} "
+        "for q_seagull<0, q_kernel>0, q_kernel>|q_seagull|, q_full>0, d_grid>0"
     )
 
     print("\nS3 GATES")
     check(
-        "S3 alpha_full has the same positive sign as the measured boundary slope",
-        alpha_full > 0.0 and d_measured > 0.0,
-        f"alpha_full={alpha_full:+.12f}, d_measured={d_measured:+.12f}, gate both > 0",
+        "S3 q_full has the same positive sign as the finite-grid boundary slope",
+        q_full > 0.0 and d_grid > 0.0,
+        f"q_full={q_full:+.12f}, d_grid={d_grid:+.12f}, gate both > 0",
     )
     check(
-        "S3 alpha_full matches d_measured within the frozen relative tolerance",
-        alpha_rel <= ALPHA_REL_TOL,
-        f"relative_mismatch={alpha_rel:.6e}, tol={ALPHA_REL_TOL:.2e}",
+        "S3 printed finite-grid comparison lies inside the declared band",
+        rounding_upper <= DECLARED_COMPARISON_BAND,
+        f"printed_rounding_upper={rounding_upper:.6e}, "
+        f"declared_band={DECLARED_COMPARISON_BAND:.2e}; band is not an error estimate",
     )
     check(
-        "S3 kernel term flips the naive sign",
-        alpha_seagull < 0.0 and alpha_kernel > 0.0 and abs(alpha_kernel) > abs(alpha_seagull),
-        f"alpha_seagull={alpha_seagull:+.12f}, alpha_kernel={alpha_kernel:+.12f}, "
-        "gate seagull<0, kernel>0, |kernel|>|seagull|",
+        "S3 same-response finite-scale divided-difference term flips the seagull sign",
+        q_seagull < 0.0
+        and q_kernel > 0.0
+        and abs(q_kernel) > abs(q_seagull)
+        and math.isclose(q_full, q_seagull + q_kernel, rel_tol=0.0, abs_tol=1.0e-10),
+        f"q_seagull={q_seagull:+.12f}, q_kernel={q_kernel:+.12f}, "
+        f"q_full-(q_seagull+q_kernel)={q_full-q_seagull-q_kernel:+.3e}; "
+        "gate q_seagull<0, q_kernel>0, |q_kernel|>|q_seagull|, exact split",
+    )
+    check(
+        "S3 sign conclusions have a nontrivial componentwise robustness radius",
+        sign_robustness_radius > 1.9,
+        f"componentwise_open_radius={sign_robustness_radius:.12f}, gate > 1.9",
     )
 
     print("\nS4 SOURCE HYGIENE")
@@ -567,9 +606,16 @@ def run() -> int:
         "no closed PR is cited as load-bearing authority",
     )
     check(
-        "S4 minimal-axiom dependency link is present",
-        "[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)" in note,
-        "one scope-reference dependency link",
+        "S4 direct finite-model bridge and coefficient-limit boundary links are present",
+        LP_BRIDGE_LINK in note and RICHARDSON_BOUNDARY_LINK in note,
+        "load-bearing links seed the retained-bounded dependency chain",
+    )
+    check(
+        "S4 finite-scale boundary replaces the unsupported asymptotic claim",
+        "not a controlled `T -> 0` coefficient" in note
+        and "`O(eta^2)` truncation estimate" in note
+        and "MINIMAL_AXIOMS_2026-06-05.md" not in note,
+        "one-point quotient is finite-grid only; no minimal-axiom model-selection claim",
     )
 
     print(f"\nTOTAL: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

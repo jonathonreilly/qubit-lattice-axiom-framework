@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 104 |
-| **retained_no_go** | 45 |
+| **retained_no_go** | 46 |
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
 | unaudited | 2628 |
-| audit_in_progress | 31 |
+| audit_in_progress | 30 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 31 |
-| `audited_clean` | 553 |
+| `audit_in_progress` | 30 |
+| `audited_clean` | 554 |
 | `audited_conditional` | 100 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 46 |
@@ -138,7 +138,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -480,6 +479,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -7115,6 +7115,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N2 identifies a missing block-projection-stability condition in the load-bearing lemma.
     - N5 finds unsupported p-to-zero and exhaustiveness rhetoric.
     - N7's strongest outside-selector steelman remains unresolved.
+
+### `observable_principle_record_scalar_map_no_go_note_2026-06-05`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md`](../../docs/OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Record additivity alone does not identify multiplicative branch data with the fixed additive scalar record or force a Born, determinant-modulus, log-det, or P1 branch-to-scalar map.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00111-observable_principle_record_`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Record additivity is a rule for an already specified finite scalar record surface, not a rule that chooses that surface.  _(class `A`)_
+- **chain closes:** True — The accepted Record axiom supplies finite additivity only after record content determines a scalar value, while explicitly withholding probability, weighting, normalization, log-det, and physical-observable bridges. The exact algebra confirms that Born-style powers remain multiplicative and that logarithmic or integer-count readouts require an additional map or observable.
+- **rationale:** The no-go is narrowly confined to derivation from Record additivity alone, and the current accepted minimal-axiom authority supports exactly that boundary. The runner genuinely checks the multiplicative/additive identities and free-monoid counterroute; its legacy-path and source-marker checks are auxiliary rather than load-bearing. No supplied axiom, approved primitive, open obligation, or indexed reframe supplies the missing branch-to-scalar identification.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `ollivier_einstein_proxy_note_2026-04-11`
 

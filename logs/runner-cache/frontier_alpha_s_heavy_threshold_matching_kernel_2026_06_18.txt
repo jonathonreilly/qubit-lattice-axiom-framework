@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18.py
-runner_sha256: b6c56bc7cb6a0264061e2ce4b85e6df8c19468b481e9ba892a58c0a472f08ded
-timeout_sec: 120
+runner_sha256: 5f4667d9fb76005c3c61259c1de0da73223b8aec687f5f228309cf51dd6034de
+timeout_sec: 900
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 === Source-boundary checks ===
 [PASS] note declares boundary: **Claim type:** bounded_theorem
-[PASS] note declares boundary: leading-order continuity matching kernel
-[PASS] note declares boundary: explicit conditional matching input here
-[PASS] note declares boundary: This note does not derive the LO heavy-threshold no-jump condition
-[PASS] note declares boundary: This note does not derive physical threshold masses.
-[PASS] note declares boundary: This note does not supply higher-loop MSbar decoupling constants.
+[PASS] note declares boundary: **Status:** bounded support theorem; independent re-audit required
+[PASS] note declares boundary: M = m_h^(n_f)(M)
+[PASS] note declares boundary: This note does not derive the numerical value of a physical threshold mass.
+[PASS] note declares boundary: This note does not supply two-loop or higher MSbar decoupling constants.
 [PASS] note declares boundary: This note does not promote any downstream alpha_s(M_Z) value to retained status.
+[PASS] note declares boundary: load-bearing derivation here.
 [PASS] parent QCD-low bridge points to this threshold kernel
 
 === SU(3) beta0 algebra ===
@@ -23,6 +23,18 @@ status: ok
 [PASS] b0(n_f=3) = 9
 [PASS] one flavor changes b0 by -2/3
 [PASS] asymptotic-freedom slopes positive through n_f=16
+
+=== One-loop MSbar decoupling derivation ===
+[PASS] Feynman weight integral is exactly 1/6
+[PASS] SU(3) heavy polarization logarithm coefficient is exactly +1/6
+[PASS] SU(3) heavy-quark logarithm coefficient is exactly -1/6
+[PASS] background-field matching cancels Pi_h in zeta_g^2*(1+Pi_h) at linear order
+[PASS] independent beta-jump route reproduces the heavy-loop coefficient
+[PASS] mass-fixed matching point sets log(mu^2/m_h^2) to zero
+[PASS] one-loop zeta_g^2 equals one at M=m_h(M)
+[PASS] derived one-loop matcher has no alpha_s jump at M=m_h(M)
+[PASS] derived one-loop matcher has no inverse-coupling jump at M=m_h(M)
+[PASS] away from the mass-fixed point the one-loop matching logarithm is nonzero
 
 === Segment and semigroup checks ===
 [PASS] fixed-n_f affine inverse-coupling segment equals integrated beta equation
@@ -36,6 +48,7 @@ status: ok
 
 === Multi-threshold kernel checks ===
 [PASS] three threshold events are emitted
+[PASS] every event derives zeta_g^2=1 at its mass-fixed point
 [PASS] every threshold event is exactly continuous in inverse coupling
 [PASS] piecewise threshold kernel equals the summed-log closed form
 
@@ -43,9 +56,11 @@ status: ok
 [PASS] domain guard rejects non-descending thresholds
 [PASS] domain guard rejects thresholds outside the running interval
 [PASS] domain guard rejects skipped flavor crossings
+[PASS] domain guard rejects nonpositive initial inverse coupling
+[PASS] domain guard rejects a segment crossing the one-loop Landau pole
 [PASS] falsifier detects a non-continuous threshold jump
 
-SUMMARY: PASS=27 FAIL=0
+SUMMARY: PASS=40 FAIL=0
 
 ----- stderr -----
 

@@ -87,8 +87,8 @@ an explicit three-real observational pin:
 
 - PDG charged-lepton masses `(m_e, m_μ, m_τ)`
 
-Those are not inputs to the retained structural core either. They are the
-explicit observational pin behind the charged-lepton bounded row.
+Those values are not part of the four-axiom/approved-primitive foundation.
+They are the explicit observational pin behind the charged-lepton bounded row.
 
 ## 3. Computed inputs, conditional identities, and unaudited derived claims
 
@@ -231,7 +231,9 @@ same-surface derivation in
 was audited as `audited_renaming`, so it does not remove the carrier bridge.
 
 - `alpha_s(M_Z)` and the `M_Z` EW rows:
-  - same-surface derived framework values plus the retained running bridge
+  - derived-chain values plus a separately retained running bridge; reuse of
+    the derived values remains controlled by the generated effective-status
+    views
 - bounded string tension readout:
   - exact confinement theorem plus low-energy EFT bridge
   - current hadron-lane support isolates the remaining `sqrt(sigma)` budget:

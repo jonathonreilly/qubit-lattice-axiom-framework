@@ -66554,7 +66554,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "c9989cdb05e2d526d7b0b8b3d51857031893f5452db04ab26f2961c77df88e16",
+      "note_hash": "ab7e2329251e54327560c35ac806ef5e3776378a7eea31277992d6b49e22d9cb",
       "path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
       "title": "Cl(3) Pauli Irrep Uniqueness Narrow Theorem"
@@ -111652,7 +111652,7 @@
         "abj_epsilon_index_square_block_no_go_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "657996987c3bc3166316580c1bc7e3b870d13af29a7f5015a958ffcaef9014d9",
+      "note_hash": "ad4f3e5a99140ea72549ae0d173f76481d83e3e95888d71d60f1297ad608ea28",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

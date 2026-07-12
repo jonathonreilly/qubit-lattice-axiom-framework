@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Conditional one-loop heavy-threshold matching kernel for the alpha_s lane."""
+"""One-loop MSbar heavy-threshold matching kernel for the alpha_s lane."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ from typing import Iterable
 
 NOTE_PATH = Path("docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md")
 QCD_LOW_NOTE_PATH = Path("docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md")
-EXPECTED_SUMMARY = "SUMMARY: PASS=27 FAIL=0"
+EXPECTED_SUMMARY = "SUMMARY: PASS=40 FAIL=0"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -46,17 +46,58 @@ def slope(n_f: int) -> float:
     return float(b0_fraction(n_f)) / (2.0 * pi)
 
 
+def feynman_weight_moment() -> Fraction:
+    """Integral_0^1 dx x(1-x), evaluated from polynomial antiderivatives."""
+    return Fraction(1, 2) - Fraction(1, 3)
+
+
+def one_loop_decoupling_log_coefficient(t_f: Fraction = Fraction(1, 2)) -> Fraction:
+    """Coefficient of (alpha_s/pi) log(mu^2/m_h^2) in zeta_g^2."""
+    return -heavy_polarization_log_coefficient(t_f)
+
+
+def heavy_polarization_log_coefficient(t_f: Fraction = Fraction(1, 2)) -> Fraction:
+    """Coefficient of (alpha_s/pi) log(mu^2/m_h^2) in Pi_h^MSbar(0)."""
+    return 2 * t_f * feynman_weight_moment()
+
+
+def decoupling_log_coefficient_from_beta_jump(n_f_hi: int) -> Fraction:
+    """RG-consistency coefficient c for c*(alpha_s/pi)*log(mu^2/m_h^2)."""
+    if n_f_hi <= 0:
+        raise ValueError("threshold crossing requires n_f_hi >= 1")
+    return (b0_fraction(n_f_hi) - b0_fraction(n_f_hi - 1)) / 4
+
+
+def zeta_g_squared_one_loop(alpha_hi: float, mu: float, heavy_msbar_mass: float) -> float:
+    """One-loop MSbar alpha_s decoupling factor, truncated after its log term."""
+    if not (alpha_hi > 0.0 and mu > 0.0 and heavy_msbar_mass > 0.0):
+        raise ValueError("alpha_s, mu, and the heavy MSbar mass must be positive")
+    coefficient = float(one_loop_decoupling_log_coefficient())
+    return 1.0 + (alpha_hi / pi) * coefficient * log((mu / heavy_msbar_mass) ** 2)
+
+
+def match_alpha_below_one_loop(alpha_hi: float, mu: float, heavy_msbar_mass: float) -> float:
+    """Match alpha_s from n_f to n_f-1 through one-loop decoupling."""
+    alpha_lo = zeta_g_squared_one_loop(alpha_hi, mu, heavy_msbar_mass) * alpha_hi
+    if alpha_lo <= 0.0:
+        raise ValueError("truncated matching factor leaves the positive-coupling domain")
+    return alpha_lo
+
+
 def run_inverse_down(x_hi: float, mu_hi: float, mu_lo: float, n_f: int) -> float:
     """Run x=1/alpha_s from mu_hi down to mu_lo at fixed active n_f."""
-    if not (mu_hi > mu_lo > 0.0):
-        raise ValueError("segment requires mu_hi > mu_lo > 0")
-    return x_hi - slope(n_f) * log(mu_hi / mu_lo)
+    if not (x_hi > 0.0 and mu_hi > mu_lo > 0.0):
+        raise ValueError("segment requires x_hi > 0 and mu_hi > mu_lo > 0")
+    x_lo = x_hi - slope(n_f) * log(mu_hi / mu_lo)
+    if x_lo <= 0.0:
+        raise ValueError("segment crosses the one-loop Landau pole")
+    return x_lo
 
 
 def run_inverse_up(x_lo: float, mu_lo: float, mu_hi: float, n_f: int) -> float:
     """Run x=1/alpha_s from mu_lo up to mu_hi at fixed active n_f."""
-    if not (mu_hi > mu_lo > 0.0):
-        raise ValueError("segment requires mu_hi > mu_lo > 0")
+    if not (x_lo > 0.0 and mu_hi > mu_lo > 0.0):
+        raise ValueError("segment requires x_lo > 0 and mu_hi > mu_lo > 0")
     return x_lo + slope(n_f) * log(mu_hi / mu_lo)
 
 
@@ -98,6 +139,7 @@ class Event:
     n_f_lo: int
     x_above: float
     x_below: float
+    zeta_g_squared: float
 
 
 def validate_thresholds(mu_hi: float, mu_lo: float, thresholds: Iterable[Threshold]) -> list[Threshold]:
@@ -132,15 +174,30 @@ def piecewise_run_down(
         if threshold.n_f_hi != current_nf:
             raise ValueError("first active flavor count does not match threshold list")
         current_x = run_inverse_down(current_x, current_mu, threshold.scale, current_nf)
+        alpha_above = 1.0 / current_x
+        # The abstract threshold is the mass-fixed MSbar point M=m_h(M).
+        zeta_g_squared = zeta_g_squared_one_loop(
+            alpha_above,
+            threshold.scale,
+            threshold.scale,
+        )
+        alpha_below = match_alpha_below_one_loop(
+            alpha_above,
+            threshold.scale,
+            threshold.scale,
+        )
+        x_below = 1.0 / alpha_below
         events.append(
             Event(
                 scale=threshold.scale,
                 n_f_hi=threshold.n_f_hi,
                 n_f_lo=threshold.n_f_lo,
                 x_above=current_x,
-                x_below=current_x,
+                x_below=x_below,
+                zeta_g_squared=zeta_g_squared,
             )
         )
+        current_x = x_below
         current_mu = threshold.scale
         current_nf = threshold.n_f_lo
     current_x = run_inverse_down(current_x, current_mu, mu_lo, current_nf)
@@ -161,12 +218,12 @@ def main() -> int:
     qcd_low_text = QCD_LOW_NOTE_PATH.read_text(encoding="utf-8")
     required_note_phrases = [
         "**Claim type:** bounded_theorem",
-        "leading-order continuity matching kernel",
-        "explicit conditional matching input here",
-        "This note does not derive the LO heavy-threshold no-jump condition",
-        "This note does not derive physical threshold masses.",
-        "This note does not supply higher-loop MSbar decoupling constants.",
+        "**Status:** bounded support theorem; independent re-audit required",
+        "M = m_h^(n_f)(M)",
+        "This note does not derive the numerical value of a physical threshold mass.",
+        "This note does not supply two-loop or higher MSbar decoupling constants.",
         "This note does not promote any downstream alpha_s(M_Z) value to retained status.",
+        "load-bearing derivation here.",
     ]
     for phrase in required_note_phrases:
         check(f"note declares boundary: {phrase}", phrase in note_text)
@@ -182,6 +239,40 @@ def main() -> int:
     check("b0(n_f=3) = 9", b0_fraction(3) == Fraction(9, 1))
     check("one flavor changes b0 by -2/3", b0_fraction(5) - b0_fraction(4) == Fraction(-2, 3))
     check("asymptotic-freedom slopes positive through n_f=16", all(slope(nf) > 0.0 for nf in range(17)))
+
+    print("\n=== One-loop MSbar decoupling derivation ===")
+    check("Feynman weight integral is exactly 1/6", feynman_weight_moment() == Fraction(1, 6))
+    check(
+        "SU(3) heavy polarization logarithm coefficient is exactly +1/6",
+        heavy_polarization_log_coefficient() == Fraction(1, 6),
+    )
+    check(
+        "SU(3) heavy-quark logarithm coefficient is exactly -1/6",
+        one_loop_decoupling_log_coefficient() == Fraction(-1, 6),
+    )
+    check(
+        "background-field matching cancels Pi_h in zeta_g^2*(1+Pi_h) at linear order",
+        one_loop_decoupling_log_coefficient()
+        + heavy_polarization_log_coefficient()
+        == 0,
+    )
+    check(
+        "independent beta-jump route reproduces the heavy-loop coefficient",
+        decoupling_log_coefficient_from_beta_jump(5)
+        == one_loop_decoupling_log_coefficient(),
+    )
+    alpha_match = 0.2
+    mass_fixed_point = 4.0
+    zeta_at_match = zeta_g_squared_one_loop(alpha_match, mass_fixed_point, mass_fixed_point)
+    alpha_below_match = match_alpha_below_one_loop(alpha_match, mass_fixed_point, mass_fixed_point)
+    check("mass-fixed matching point sets log(mu^2/m_h^2) to zero", close(log((mass_fixed_point / mass_fixed_point) ** 2), 0.0))
+    check("one-loop zeta_g^2 equals one at M=m_h(M)", close(zeta_at_match, 1.0))
+    check("derived one-loop matcher has no alpha_s jump at M=m_h(M)", close(alpha_below_match, alpha_match))
+    check("derived one-loop matcher has no inverse-coupling jump at M=m_h(M)", close(1.0 / alpha_below_match, 1.0 / alpha_match))
+    check(
+        "away from the mass-fixed point the one-loop matching logarithm is nonzero",
+        not close(zeta_g_squared_one_loop(alpha_match, 2.0 * mass_fixed_point, mass_fixed_point), 1.0),
+    )
 
     print("\n=== Segment and semigroup checks ===")
     x0 = 10.0
@@ -221,6 +312,7 @@ def main() -> int:
         - slope(3) * log(2.0 / 1.0)
     )
     check("three threshold events are emitted", len(events) == 3)
+    check("every event derives zeta_g^2=1 at its mass-fixed point", all(close(e.zeta_g_squared, 1.0) for e in events))
     check("every threshold event is exactly continuous in inverse coupling", all(close(e.x_above, e.x_below) for e in events))
     check("piecewise threshold kernel equals the summed-log closed form", close(x_final, summed_logs))
 
@@ -236,6 +328,14 @@ def main() -> int:
     check(
         "domain guard rejects skipped flavor crossings",
         assert_raises(lambda: validate_thresholds(120.0, 1.0, [Threshold(scale=50.0, n_f_hi=6, n_f_lo=4)])),
+    )
+    check(
+        "domain guard rejects nonpositive initial inverse coupling",
+        assert_raises(lambda: piecewise_run_down(0.0, 120.0, 1.0, 6, thresholds)),
+    )
+    check(
+        "domain guard rejects a segment crossing the one-loop Landau pole",
+        assert_raises(lambda: run_inverse_down(0.1, 100.0, 1.0, 5)),
     )
     alpha_above = 1.0 / events[0].x_above
     bad_alpha_below = 1.05 * alpha_above

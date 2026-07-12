@@ -1,5 +1,18 @@
 # PR Delivery
 
+The compact-interior Dobrushin continuum no-go is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block21-dobrushin-spatial-uniqueness-20260712`
+- head: `physics-loop/record-faithful-dynamics-block22-controlled-ultralocal-continuum-20260712`
+- runner: `PASS=8 FAIL=0`
+- scope: covered separated correlations vanish under compact-interior scaling;
+  contact/white-noise, critical, outside-wedge, and alternative-action routes remain open
+- audit compatibility: one `no_go` / `unaudited` row, exactly the Dobrushin
+  uniqueness dependency; strict lint zero errors; generated outputs stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5303
+
+No merge is authorized. Independent audit remains authoritative.
+
 The massive Wilson--staggered Dobrushin spatial-uniqueness wedge is prepared
 as the next stacked review block:
 

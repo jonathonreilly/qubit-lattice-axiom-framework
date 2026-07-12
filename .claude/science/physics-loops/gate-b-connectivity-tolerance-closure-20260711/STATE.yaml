@@ -1,0 +1,18 @@
+loop_slug: gate-b-connectivity-tolerance-closure-20260711
+mode: run
+target: retained
+current_surface_status: bounded-support
+cycle: 1
+active_route: finite_harness_scope_and_same_geometry_connectivity_isolation
+hard_residual: physical Gate B source/readout/growth selection remains outside scope
+files_touched:
+  - docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md
+  - scripts/gate_b_connectivity_tolerance.py
+  - logs/runner-cache/gate_b_connectivity_tolerance.txt
+open_imports: []
+trace_class: direct_blocker_closure
+review_disposition: pass
+audit_required_before_effective_retained: true
+next_exact_action: independent re-audit of gate_b_connectivity_tolerance_note
+stop_condition: met; bounded source/runner repair is review-clean and pipeline validation queued it as ready
+lock_note: custom cooperative lock under /Users/jonBridger/.codex/memories; default script path is machine-stale

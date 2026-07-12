@@ -1,51 +1,63 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_connectivity_tolerance.py
-runner_sha256: bb89d656466f7d9cbb44a085f554cdfaac8587d1a1eb3905700127d4a67c0aed
+runner_sha256: 06968de0a84a5654be8b12fe100a2e615cd4eff2894e1f86ea7a5b505d697bcb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.91
+elapsed_sec: 4.37
 status: ok
 ----- stdout -----
 ========================================================================================
-GATE B CONNECTIVITY TOLERANCE REPLAY
-  Valley-linear gravity on layered 3D graphs
-  Question: is position noise tolerated while connectivity structure matters?
+GATE B FINITE CONNECTIVITY COMPARISON
+  Declared valley-linear algorithm on layered 3D graphs
+  Question: what changes under coordinate jitter and same-coordinate adjacency replacement?
 ========================================================================================
 
 Setup: layers=13, half-width=5, mass strengths=(0.75, 1.0, 1.25), mass y targets=(2, 3, 4)
-Action: S = L(1-f), 3D forward propagation, fixed valley-linear phase valley
+Action definition: S = L(1-f), finite 3D forward propagation
 
 Jitter sweep on fixed connectivity
   jitter    toward   mean_delta     F~M
   ----------------------------------------
     0.00     66.7%    +0.000012    0.66
     0.10     55.6%    +0.000003    0.55
-    0.20     66.7%    +0.000009    0.67
-    0.30     47.2%    -0.000010    0.47
-    0.40     50.0%    -0.000003    0.50
-    0.50     75.0%    +0.000005    0.75
+    0.20     61.1%    +0.000010    0.61
+    0.30     55.6%    +0.000014    0.56
+    0.40     55.6%    +0.000008    0.55
+    0.50     72.2%    +0.000007    0.72
 
 Architecture comparison
         architecture    toward   mean_delta     F~M
   ----------------------------------------------------
   ordered lattice        66.7%    +0.000012    0.66
-  jittered lattice       75.0%    +0.000005    0.75
-  templated growth       27.8%    -0.000016    0.27
-  K-NN grown             55.6%    +0.000006    0.55
-  snapped/grid-like      58.3%    -0.000002    0.58
+  jittered lattice       72.2%    +0.000007    0.72
+  templated growth       50.0%    +0.000013    0.50
+  K-NN grown             61.1%    +0.000013    0.61
+  snapped/grid-like      50.0%    +0.000003    0.50
 
 Interpretation:
-  - Fixed connectivity tolerates substantial position noise.
-  - Once connectivity is recomputed from geometry, the gain becomes mixed.
-  - The local F~M fit stays in a non-catastrophic linear-response band.
-  - This is a connectivity-vs-noise audit, not a Gate B theorem.
+  - The fixed-stencil jitter rows show no monotone TOWARD collapse on the tested sweep.
+  - Same-coordinate templated and K-NN rows isolate finite adjacency dependence.
+  - TOWARD and F~M are declared finite functionals, not physical observables.
+  - This is a bounded finite-harness theorem, not Gate B dynamics closure.
+
+Finite-harness theorem checks
+----------------------------------------
+[PASS] fixed-connectivity jitter changes coordinates but never adjacency
+[PASS] all graph rows keep the same three stable mass-label sites
+[PASS] templated and K-NN rows use identical unsnapped coordinates seed by seed
+[PASS] templated fixed-offset and K-NN distance-recomputed adjacencies differ
+[PASS] every displayed row contains 54 trials with normalized terminal weights
+[PASS] computed jitter rows match the frozen displayed table
+[PASS] computed architecture rows match the frozen displayed table
+[PASS] same-coordinate adjacency replacement changes a reported finite functional
+[PASS] fixed-stencil TOWARD series is not monotonically decreasing
 
 Source-boundary checks
 ----------------------------------------
-[PASS] note claim type is open_gate and has 2026-06-12 source-index firewall
-[PASS] GB-S1b-b/GB-S2b/GB-S3b residues remain supplied row-local data
-[PASS] note forbids Gate B dynamics closure and axiom/admission/status changes
-BOUNDARY_CHECKS: PASS=3 FAIL=0
+[PASS] registered runner validates the audited connectivity-tolerance note
+[PASS] note defines detector window, TOWARD, F~M, and the 54-trial denominator
+[PASS] note cites the finite-stencil authority and excludes physical overclaims
+BOUNDARY_CHECKS: PASS=12 FAIL=0
 
 ----- stderr -----
 

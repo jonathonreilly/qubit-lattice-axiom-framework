@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 100 |
 | **retained_no_go** | 41 |
-| **retained_bounded** | 408 |
+| **retained_bounded** | 409 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2674 |
+| unaudited | 2673 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 535 |
+| `audited_clean` | 536 |
 | `audited_conditional` | 86 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3024 |
+| `unaudited` | 3023 |
 
 | claim_type | count |
 |---|---:|
@@ -490,6 +490,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_admitted_sample_target_vector_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_directed_certificate_kernel_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
+| `post_record_supplied_kernel_selection_rule_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -7353,6 +7354,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The finite normalization/RN algebra closes from supplied finite weights by direct exact Fraction arithmetic. The full scoped claim does not close because the 16/10/26 row coverage is delegated to dynamically imported `scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`, whose source/cache are absent from the restricted packet despite being imported by the primary runner.
 - **rationale:** Issue: the primary runner dynamically imports the measure-weight subdivision runner for row enumeration and lane classification, but that helper source is not included while the packet says no helper imports were detected. Why this blocks: stdout alone is not authoritative for the claimed 16 source-measure/RN rows, 10 trace-normalization rows, and total 26-row coverage. Repair target: include the helper runner source and SHA-pinned cache, or inline an independently auditable row enumeration in the packet. Claim boundary until fixed: the supplied finite RN/trace normalization identity is exact, but row-coverage certification remains runner-artifact-conditional.
 - **auditor confidence:** medium
+
+### `post_record_supplied_kernel_selection_rule_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite selection inside the explicitly supplied two-kernel family, source, orientation/clock bridge, and rational scoring rule; no Record-derived rule, candidate family, or physical production kernel was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00291-post_record_supplied_kernel_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the supplied finite candidate family, source, orientation/clock bridge, and exact rational scoring rule, candidate k4 is the unique minimum, while the endpoint-only rule leaves a tie.  _(class `A`)_
+- **chain closes:** True — The runner constructs both length-two Markov laws and computes their quadratic scores using exact Fraction arithmetic, obtaining k3=1/2 and k4=0 under the informative rule and a tie under the weak rule. Selection of a physical rule, candidate family, or production kernel remains explicitly outside this bounded claim.
+- **rationale:** The load-bearing step is a genuine finite algebraic minimization over inputs explicitly identified as supplied hypotheses, and the runner computes the relevant laws and scores rather than merely printing the claimed result. Independent arithmetic from the displayed kernels reproduces k4=0, k3=1/2, and the endpoint-only tie. The clean verdict is confined to this supplied-rule interface and grants no derivation of physical dynamics from Record.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality`
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 92 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 363 |
+| **retained_bounded** | 364 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2782 |
+| unaudited | 2781 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 475 |
+| `audited_clean` | 476 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3132 |
+| `unaudited` | 3131 |
 
 | claim_type | count |
 |---|---:|
@@ -215,6 +215,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
+| `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2133,6 +2134,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The volume-element sign and the classification of the simultaneous anticommutant follow directly from the Clifford basis and pairwise anticommutation relations. The accepted Lattice premise supplies only d_s=3, after which the d_t parity conclusion is immediate under the explicitly stated total-Clifford hypothesis.
 - **rationale:** The general result closes through symbolic Clifford-algebra sign and basis-parity arguments, independently of the finite runner enumeration. The runner genuinely constructs matrix generators and computes the asserted relations for n=1 through 6; it neither prints unsupported constants nor imports fitted or external comparison values. Its finite floating-point checks are corroborative smoke tests, while the source proof supplies the all-n closure. The sole cited authority is an accepted axiom premise and is correctly used only to fix the spatial count d_s=3.
 - **auditor confidence:** high
+
+### `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2`
+
+- **Note:** [`CLOSURE_T2_M1_M2_DISTINGUISHER_NOTE_2026-05-10_t2m1m2.md`](../../docs/CLOSURE_T2_M1_M2_DISTINGUISHER_NOTE_2026-05-10_t2m1m2.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the explicitly defined reduced x-measure model, M1 and M2 share the saddle x=1/2, their Gaussian responses differ by an uncalibrated homogeneous scale, their fixed-weight normalized measures have the stated exact Beta-shape distinctions, and no cataloged statistic elects either measure from the current single Koide realization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00386-closure_t2_m1_m2_distinguish`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Normalizing p_1(x) proportional to x(1-x) and p_2(x) proportional to sqrt(x(1-x)) gives Beta(2,2) and Beta(3/2,3/2), while their shared mode and factor-two log-Hessian make the cataloged saddle and uncalibrated Gaussian routes observationally degenerate.  _(class `A`)_
+- **chain closes:** True — The saddle, Hessian ratio, Beta normalizations, moments, and KL distinctions follow algebraically from the two supplied weights. The negative observational conclusion closes only for the enumerated reduced-model routes and current single-realization boundary, not as a global no-go on future observables.
+- **rationale:** The load-bearing results are exact algebra over the two explicitly supplied weight functions, and the runner independently evaluates the saddle, Hessians, normalizations, moments, and numerical KL integrals without importing another note or calibrated target. Its final scope/disclaimer PASS lines are assertions rather than independent computations, but the bounded conclusion follows from the preceding calculations plus the expressly limited single-realization catalog. The result must not be enlarged into BAE closure, canonical selection of M1 or M2, or a theorem excluding future observables.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`
 

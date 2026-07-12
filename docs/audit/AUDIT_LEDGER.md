@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 364 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2781 |
+| unaudited | 2780 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -34,6 +34,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
+| `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
@@ -46,16 +47,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 23 |
 | `audited_clean` | 476 |
 | `audited_conditional` | 51 |
-| `audited_decoration` | 19 |
+| `audited_decoration` | 20 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3131 |
+| `unaudited` | 3130 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2050 |
-| `decoration` | 22 |
+| `bounded_theorem` | 2049 |
+| `decoration` | 23 |
 | `meta` | 357 |
 | `no_go` | 467 |
 | `open_gate` | 198 |
@@ -671,6 +672,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.6 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | cross_family | codex-gpt-5.5 | A | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` |
+| `commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12` | decoration | ~~audited_decoration~~ | `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | cross_family | codex-gpt-5.6 | A | `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` |
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
@@ -2196,6 +2198,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N1: eight distinct positive closure routes remain OPEN.
     - N3: the canonical transfer reconstruction, physical correlator bridge, and positive gap remain unsupported inputs.
     - N5: spatial, thermodynamic-limit, continuum, and gap-producing resolutions were not tested.
+
+### `commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`COMMENSURATION_GENERAL_LEMMA_PERIOD_PARITY_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/COMMENSURATION_GENERAL_LEMMA_PERIOD_PARITY_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `decoration`
+- **claim_scope:** For the specified d=3 step-2 chart family with K-periods (L/2, L, L/2), the minimal-vector d^2 mod 2 parity correspondence holds for even L >= 8 exactly when L = 0 mod 4; the Hamiltonian tie is audited only at L=8 and L=10.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00388-commensuration_general_lemma`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** If a period is even, replacing a residue difference by its minimal representative does not change parity; if it is odd, wrapping flips parity, so correspondence holds exactly when all periods (L/2, L, L/2) are even, equivalently L = 0 mod 4.  _(class `A`)_
+- **chain closes:** False — The residue-parity conclusion follows algebraically on the supplied chart family, but it is not an independent physics closure: it is a standard mod-2 consequence of the single retained-bounded commensuration parent. The broader Hamiltonian equivalence is not established beyond the two stated anchors.
+- **rationale:** The load-bearing argument is elementary residue-class parity algebra applied to the chart periods supplied by one retained-bounded parent. The runner genuinely computes the symbolic case split and finite combinatorial correspondence, while its frozen L=8 and L=10 values serve only as parent-anchor checks. With no external comparator and no new framework-level physics derivation, the result is algebraic decoration of the upstream commensuration criterion.
+- **decoration parent:** `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12`
+- **auditor confidence:** high
 
 ### `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12`
 

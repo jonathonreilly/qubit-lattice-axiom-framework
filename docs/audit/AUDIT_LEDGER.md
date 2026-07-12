@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 411 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2667 |
+| unaudited | 2666 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 88 |
+| ~~audited_conditional~~ | 89 |
 | ~~audited_failed~~ | 21 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 539 |
-| `audited_conditional` | 88 |
+| `audited_conditional` | 89 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 43 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3017 |
+| `unaudited` | 3016 |
 
 | claim_type | count |
 |---|---:|
@@ -736,6 +736,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7322,6 +7323,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing result is an exact finite algebraic counterexample rather than a definition, renaming, fitted numerical match, or external comparison. The runner constructs the stochastic kernels and laws with exact fractions and computes the equal and separating certificate values instead of merely printing expected conclusions. The clean verdict is limited to non-uniqueness from the fixed certificate data alone; it does not rule out identification from a sufficiently enriched observation family plus a supplied estimator or model class.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16`
+
+- **Note:** [`POST_RECORD_FINITE_SUPPLIED_WEIGHT_NORMALIZATION_LEMMA_NOTE_2026-06-16.md`](../../docs/POST_RECORD_FINITE_SUPPLIED_WEIGHT_NORMALIZATION_LEMMA_NOTE_2026-06-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For an already supplied nonempty finite carrier and rational nonnegative weights of positive total, the audit covers exact normalization and the stated rejection of empty, zero-total, and negative-weight inputs; no carrier, selector, Born-law, or dynamics derivation was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00300-post_record_finite_supplied_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For a supplied finite carrier and supplied rational nonnegative weights with positive total W, defining mu(x)=w_x/W gives sum_x mu(x)=1.  _(class `A`)_
+- **chain closes:** False — The finite normalization identity closes algebraically on the supplied inputs. The note's broader no-authority boundary package does not satisfy the mandatory No-Go Discipline gate because carrier/weight-source and Born/dynamics alternatives are asserted through false flags rather than exhaustively tested.
+- **rationale:** The load-bearing normalization is a genuine class-A finite-sum identity, and the runner correctly implements exact rational normalization, scaling invariance, and input rejection. The carrier and weights remain explicit supplied inputs, and normalization does not derive a selector or physical probability law. Because the mandatory no-go gate fails on the note's broader boundary claims, the row is conservatively conditional rather than clean.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the carrier/weight-source and Born/dynamics routes remain untested, so five genuinely distinct routes are not all closed.
+    - N5: the selector-authority rhetoric exceeds the two-state boolean resolution actually tested by the runner.
 
 ### `post_record_flow_thermal_stable_setting_certificate_2026-06-06`
 

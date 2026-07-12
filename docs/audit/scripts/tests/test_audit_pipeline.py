@@ -3473,6 +3473,7 @@ class AuditLintTest(unittest.TestCase):
             rc = m.main()
         self.assertEqual(rc, 1, output.getvalue())
         self.assertIn("unsupported cross_confirmation.agreement_schema", output.getvalue())
+        self.assertNotIn("legacy_cross_confirmation_tuple_mismatch", output.getvalue())
 
         cross.pop("agreement_schema")
         self.fx.write_ledger(ledger)
@@ -3519,6 +3520,26 @@ class AuditLintTest(unittest.TestCase):
             rc = m.main()
         self.assertEqual(rc, 1, output.getvalue())
         self.assertIn("audit summary must be a non-empty object", output.getvalue())
+
+        cross["first_audit"] = "malformed-summary"
+        cross["second_audit"] = {}
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("audit summary must be a non-empty object", output.getvalue())
+
+        malformed = dict(first)
+        malformed["verdict"] = []
+        cross["first_audit"] = malformed
+        cross["second_audit"] = dict(malformed)
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("non-terminal verdict []", output.getvalue())
 
     def test_lint_enforces_versioned_tuple_for_all_confirmed_paths(self):
         m = _import("audit_lint")

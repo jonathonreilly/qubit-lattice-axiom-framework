@@ -102,6 +102,8 @@ def normalized_negative_assertion_classes(audit_like: dict) -> tuple[str, ...]:
 
 def audit_summary_tuples_match(first: dict, second: dict) -> bool:
     """Mirror apply_audit's full cross-confirmation agreement tuple."""
+    if not isinstance(first, dict) or not isinstance(second, dict):
+        return False
     return (
         first.get("verdict") == second.get("verdict")
         and first.get("claim_type") == second.get("claim_type")
@@ -128,12 +130,15 @@ def audit_summary_tuple_schema_error(summary: object) -> str | None:
     if missing:
         return f"audit summary missing tuple fields: {sorted(missing)}"
     verdict = summary.get("verdict")
-    if verdict not in ALLOWED_AUDIT_STATUSES or verdict in {
+    if not isinstance(verdict, str) or verdict not in ALLOWED_AUDIT_STATUSES or verdict in {
         "unaudited", "audit_in_progress"
     }:
         return f"audit summary has non-terminal verdict {verdict!r}"
     claim_type = summary.get("claim_type")
-    if claim_type not in ALLOWED_CLAIM_TYPES or claim_type is None:
+    if (
+        not isinstance(claim_type, str)
+        or claim_type not in ALLOWED_CLAIM_TYPES
+    ):
         return f"audit summary has invalid claim_type {claim_type!r}"
     scope = summary.get("claim_scope")
     if not isinstance(scope, str) or not scope.strip():
@@ -989,26 +994,32 @@ def main() -> int:
         if isinstance(xc, dict) and xc_status == "confirmed":
             first = xc.get("first_audit") or {}
             second = xc.get("second_audit") or {}
+            tuple_schema_valid = True
             if exact_tuple_schema:
                 for label, summary in (("first_audit", first), ("second_audit", second)):
                     schema_error = audit_summary_tuple_schema_error(summary)
                     if schema_error:
+                        tuple_schema_valid = False
                         errors.append(
                             f"{cid}: versioned cross_confirmation.{label} {schema_error}"
                         )
-            if not audit_summary_tuples_match(first, second):
+            tuples_match = audit_summary_tuples_match(first, second)
+            if exact_tuple_schema and tuple_schema_valid and not tuples_match:
+                errors.append(
+                    f"{cid}: confirmed cross-confirmation full audit tuple mismatch "
+                    "(verdict, claim_type, normalized claim_scope, "
+                    "load_bearing_step_class, negative_assertion_classes)"
+                )
+            elif agreement_schema is None and not tuples_match:
                 message = (
                     f"{cid}: confirmed cross-confirmation full audit tuple mismatch "
                     "(verdict, claim_type, normalized claim_scope, "
                     "load_bearing_step_class, negative_assertion_classes)"
                 )
-                if exact_tuple_schema:
-                    errors.append(message)
-                else:
-                    add_notice(
-                        "legacy_cross_confirmation_tuple_mismatch",
-                        message + "; legacy confirmation requires fresh re-audit",
-                    )
+                add_notice(
+                    "legacy_cross_confirmation_tuple_mismatch",
+                    message + "; legacy confirmation requires fresh re-audit",
+                )
         if isinstance(xc, dict) and xc_status in {"third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
             expected_side = {
                 "third_confirmed_first": "first",
@@ -1022,6 +1033,7 @@ def main() -> int:
             if not third:
                 errors.append(f"{cid}: {xc_status} requires third_audit")
             else:
+                tuple_schema_valid = True
                 if exact_tuple_schema:
                     for label, summary in (
                         ("first_audit", first),
@@ -1030,6 +1042,7 @@ def main() -> int:
                     ):
                         schema_error = audit_summary_tuple_schema_error(summary)
                         if schema_error:
+                            tuple_schema_valid = False
                             errors.append(
                                 f"{cid}: versioned cross_confirmation.{label} "
                                 f"{schema_error}"
@@ -1039,20 +1052,30 @@ def main() -> int:
                     errors.append(
                         f"{cid}: {xc_status} conflicts with third_audit.sided_with={side!r}"
                     )
-                if expected_side != "hybrid" and not audit_summary_tuples_match(
-                    third, winning
+                tuples_match = audit_summary_tuples_match(third, winning)
+                if (
+                    expected_side != "hybrid"
+                    and exact_tuple_schema
+                    and tuple_schema_valid
+                    and not tuples_match
+                ):
+                    errors.append(
+                        f"{cid}: {xc_status} third_audit full audit tuple does not "
+                        "match the winning audit"
+                    )
+                elif (
+                    expected_side != "hybrid"
+                    and agreement_schema is None
+                    and not tuples_match
                 ):
                     message = (
                         f"{cid}: {xc_status} third_audit full audit tuple does not "
                         "match the winning audit"
                     )
-                    if exact_tuple_schema:
-                        errors.append(message)
-                    else:
-                        add_notice(
-                            "legacy_cross_confirmation_tuple_mismatch",
-                            message + "; legacy confirmation requires fresh re-audit",
-                        )
+                    add_notice(
+                        "legacy_cross_confirmation_tuple_mismatch",
+                        message + "; legacy confirmation requires fresh re-audit",
+                    )
                 if row.get("claim_type_provenance") == "judicial_review":
                     for key in ("verdict", "claim_type", "load_bearing_step_class"):
                         row_key = "audit_status" if key == "verdict" else key
@@ -1127,8 +1150,10 @@ def main() -> int:
                         f"got {xc_status!r}"
                     )
                 else:
-                    first = xc.get("first_audit") or {}
-                    second = xc.get("second_audit") or {}
+                    first_value = xc.get("first_audit")
+                    second_value = xc.get("second_audit")
+                    first = first_value if isinstance(first_value, dict) else {}
+                    second = second_value if isinstance(second_value, dict) else {}
                     if first.get("auditor") and first.get("auditor") == second.get("auditor"):
                         errors.append(
                             f"{cid}: critical cross-confirmation reused auditor identity/session "
@@ -1144,7 +1169,8 @@ def main() -> int:
                             "second_audit.independence='fresh_context'"
                         )
                     if xc_status in {"third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
-                        third = xc.get("third_audit") or {}
+                        third_value = xc.get("third_audit")
+                        third = third_value if isinstance(third_value, dict) else {}
                         if not third:
                             errors.append(f"{cid}: {xc_status} requires third_audit")
                         elif third.get("auditor") in {first.get("auditor"), second.get("auditor")}:

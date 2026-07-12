@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 374 |
+| **retained_bounded** | 375 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2756 |
+| unaudited | 2755 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 489 |
+| `audited_clean` | 490 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3106 |
+| `unaudited` | 3105 |
 
 | claim_type | count |
 |---|---:|
@@ -312,6 +312,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fixed_field_complex_grown_basin_v2_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_family_unification_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_grown_transfer_scout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3823,6 +3824,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The supplied runner actually constructs fields from sources, propagates amplitudes on the grown graph, computes detector centroids, and reproduces the frozen sign, zero-control, and linearity outputs. The cited grown-geometry companion is retained_bounded and is used only to support the narrow retained-row context, not to broaden the result.
 - **rationale:** The load-bearing result is a live numerical computation over the runner-defined grown row, not a printed constant, renaming, or imported external comparator. The zero-source and neutral same-point cancellations are algebraic/numerical controls, while the signed single-source, pair, dipole, and double-source cases are computed by the propagation code. The claim is narrow enough to match the evidence: it does not assert geometry-generic electromagnetism or continuum closure.
 - **auditor confidence:** high
+
+### `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30`
+
+- **Note:** [`FLAVOR_BA_RATIO_BOUND_HS_EQUIPARTITION_NOTE_2026-05-30.md`](../../docs/FLAVOR_BA_RATIO_BOUND_HS_EQUIPARTITION_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite algebraic audit of the symmetric matrix Y=aI+b(J-I): its eigenvalues and PSD interval, Hilbert-Schmidt equipartition and formal Gaussian variance ratio, and the resulting spectral Koide identity.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00417-flavor_ba_ratio_bound_hs_equ`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Expanding the spectral Koide ratio gives Q(Y)=(3a^2+6b^2)/(9a^2)=1/3+(2/3)(b/a)^2, while equal Hilbert-Schmidt contributions give 3a^2=6b^2.  _(class `A`)_
+- **chain closes:** True — All scoped conclusions follow by direct finite-dimensional algebra from the explicitly defined matrix family and readout. The note correctly excludes any claim that the physical matter-sector measure is Hilbert-Schmidt or that the charged-lepton value is thereby derived.
+- **rationale:** The eigenvalue decomposition gives the stated PSD interval, and the Hilbert-Schmidt norms independently give (b/a)^2=1/2 under the explicitly conditional equipartition premise. The source now derives the spectral Q identity in-packet, and the runner performs genuine numerical matrix checks and symbolic simplification rather than merely printing the disputed formula. The theorem remains strictly a finite characterization and makes no unsupported physical measure-selection claim.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`
 

@@ -205,3 +205,32 @@ re-review passed. The audit pipeline seeded exactly `minimal_axioms` and the
 preceding finite-carrier instrument normal form, strict lint passed with no
 errors, and generated audit/effective-status surfaces were stripped before
 delivery. Independent audit remains required.
+
+## Scalar CAR-QCA classification internal result
+
+- A finite matrix Laurent unitary lifts to a number-preserving CAR
+  automorphism with an inverse of the same finite range.
+- One-mode scalar unitarity gives a monomial; full proper-cubic covariance
+  forces zero winding and onsite phase.
+- A six-direction six-mode strict CAR QCA supplies a nontrivial full-cubic
+  escape with zero determinant winding.
+- Runner/cache: `PASS=34 FAIL=0`.
+
+### Scalar CAR-QCA review iteration 1
+
+Review found that the first runner certified only selected Laurent examples
+and the special six-direction CAR permutation, while the source headline was
+general. It also caught conflated isometry/coisometry roles, an overbroad
+“minimal carrier” label, imprecise external-literature wording, and incomplete
+N2/N4/N6/N8 governance surfaces.
+
+### Scalar CAR-QCA review iteration 2
+
+The runner now carries a general extreme-support autocorrelation certificate
+and a nontrivial `2 x 2` matrix Laurent convolution/inverse family. Source
+wording is one-mode classification plus six-mode escape; CAR isometry and
+coisometry are separated; every N1--N8 status/path/mechanism is explicit.
+Independent claim, code/math, and governance re-reviews passed. The audit
+pipeline seeded only `minimal_axioms`, strict lint passed with no errors, and
+generated audit/effective-status surfaces were stripped before delivery.
+Independent audit remains required.

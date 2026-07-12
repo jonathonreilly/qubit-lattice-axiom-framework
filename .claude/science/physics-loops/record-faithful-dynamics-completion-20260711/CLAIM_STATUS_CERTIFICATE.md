@@ -1,11 +1,11 @@
 ---
-target_claim_id: overlapping_edge_instrument_order_and_time_rate_nonselection_bounded_theorem_note_2026-07-11
+target_claim_id: scalar_cubic_car_qca_triviality_and_six_direction_escape_bounded_theorem_note_2026-07-11
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact finite CPTP schedule forks, full-channel commutation controls, a finite dependency-DAG theorem, a proper-cubic finite-torus matching-family theorem, and a narrow clock-rescaling boundary under explicit finite-model inputs."
+claim_type_reason: "Exact finite-Laurent-unitary to local CAR-automorphism bridge, exhaustive one-mode scalar proper-cubic classification, and one explicit six-mode strict cubic carrier escape under named Gaussian/CAR inputs."
 actual_current_surface_status: bounded-support
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
-conditional_surface_status: "On supplied three- and four-qubit tensor carriers, identical normalized overlapping-edge instruments can define distinct raw layered and first-nonempty stopping channels. Commuting incomparable maps give raw schedule independence, while composition semantics, priority, physical clock/rate, framework Records, and a simultaneous infinite-lattice QCA remain open."
+conditional_surface_status: "On a supplied number-preserving Gaussian/CAR realization, every finite Laurent unitary lifts to an equally local automorphism. One scalar mode plus full proper-cubic covariance leaves only onsite phase; a six-direction six-mode carrier restores strict radius-one transport. Intermediate mode counts, general qubit QCAs, physical tick selection, Record coupling, and continuum control remain open."
 hypothetical_axiom_status: null
 admitted_observation_status: none
 proposal_allowed: false
@@ -16,8 +16,8 @@ review_loop_disposition: pass_with_bounded_claims_audit_compatible
 
 # Claim Status Certificate
 
-The current source classifies a bounded overlap-order and time/rate seam for
-one explicit finite edge instrument.
+The current source classifies the one-mode scalar Gaussian/CAR tick and closes
+the one-particle Bloch-unitary versus local CAR-automorphism category gap.
 The exact current status is:
 
 - the four axioms do not supply the required process law;
@@ -27,28 +27,29 @@ The exact current status is:
   by itself select a unique visible law;
 - the Clifford-vector conclusion remains conditional on a faithful spectral
   availability/formation-to-carrier bridge;
-- two raw layer orders and two first-nonempty priority instruments are
-  separately CPTP but define distinct channels on a three-qubit witness;
-- commuting incomparable channels give the exact conditional finite-DAG
-  schedule-independence theorem;
-- composition semantics and sequential order/priority are independent process
-  coordinates;
-- six conflict-free proper-cubic edge matchings form one symmetry orbit on
-  even finite tori of side `L>=4`, without selecting a layer schedule;
-- discrete order does not select metric time or rate;
-- the multisite tensor carrier, computational menu, SWAP branch, stopping
-  semantics, and clock maps are explicit finite-model inputs;
-- the current runner reports `PASS=47 FAIL=0`; independent audit remains
+- finite Laurent unitarity gives an equally local number-preserving CAR
+  automorphism and inverse;
+- a scalar finite Laurent unitary is one monomial;
+- full proper-cubic covariance forces the scalar winding vector to zero;
+- the one-mode automorphism is therefore onsite phase and transports no
+  support;
+- a six-direction six-mode CAR QCA is translation- and 24-rotation-covariant,
+  strict radius one, and transports with zero total determinant winding;
+- the CAR algebra, Gaussian linearity, number preservation, and internal modes
+  are explicit conditional inputs, not consequences of the Qubit axiom;
+- the current runner reports `PASS=34 FAIL=0`; independent audit remains
   required.
 
 No axiom, primitive, or audit status is proposed or changed. The new claim
-depends directly on `minimal_axioms` and the preceding finite-carrier
-instrument normal form; all finite Kraus algebra used here is recomputed.
-Those edges remain subject to independent audit and dependency closure.
+depends directly only on `minimal_axioms`; every CAR/Laurent dynamical input is
+named and the algebra is proved self-containedly. That edge remains subject to
+independent audit and dependency closure.
 
-The bounded schedule fork passed independent claim, code/math, governance, and
-N1--N8 review after the `L=2` exception, full matrix-unit channel controls,
-tensor-carrier import, stopping semantics, and schedule-coordinate split were
-made explicit. Common dilation, commuting overlap, derived dependency,
-randomized composition, and one simultaneous global QCA remain live. The
-result does not trigger the campaign's axiom-update stop condition.
+The bounded one-mode classification and six-mode escape passed independent
+claim, code/math, governance, and N1--N8 review after the general Laurent
+support-collapse certificate, matrix-valued CAR convolution/inverse checks,
+carrier-minimum narrowing, and CAR/Qubit category wall were made explicit.
+Intermediate Gaussian carriers, Bogoliubov mixing, partitioned/Clifford and
+interacting qubit QCAs, staggered cells, and Admissibility-to-update
+realization remain live. The result does not trigger the campaign's
+axiom-update stop condition.

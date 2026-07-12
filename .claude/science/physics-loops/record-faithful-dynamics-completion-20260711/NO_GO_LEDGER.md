@@ -4,7 +4,7 @@
 |---|---|---|
 | current four axioms uniquely select staggered/Dirac kinetics | closed negative on current surface | a symmetric SWAP--Laplacian completion exists |
 | locality + cubic symmetry + nonzero Hermitian dynamics select the carrier | falsified | the graph Laplacian satisfies these demands |
-| strict local unitary tick alone selects the 3D matter cone | bounded negative on analyzed classes | scalar ticks are trivial, but internal ticks leave multiple quantized drifts and no curved cone at current carrier density |
+| strict local unitary tick alone selects the 3D matter cone | bounded negative on analyzed classes | the factorized decorated-shift class has only linear drift, while the later eta-twisted class has curved dispersion and continuous off-axis front content; realization remains unselected |
 | direct Hamiltonian preservation of every rank-one permanent record selects Dirac | rejected category error | commuting with every rank-one projector makes the same-site action scalar; staggered hopping is frozen too |
 | unitary evolution alone forms permanent records | rejected in finite blank/record split | an invariant record subspace is reducing, so blank-to-record transitions vanish |
 | availability variation equals kinetic-coefficient variation | falsified on current text | the top-eigenspace availability rule varies while remaining independent of the kinetic law |
@@ -14,6 +14,8 @@
 | auxiliary locked-register absorption plus same-map reuse calibrates blank-sector formation | falsified on one supplied finite system/register class | an exact CPTP family has absorbing consistent locked states and cross-label blank formation for `a<1` |
 | separate normalization of identical overlapping-edge instruments selects one global schedule | falsified on a supplied three-qubit tensor carrier | both raw layer orders and both first-nonempty priorities are CPTP but give different channels |
 | discrete event order selects physical time/rate | falsified under explicit clock rescaling | the same ordered history embeds in clocks with different rates, and `q=exp(-lambda Delta t)` fixes only the product |
+| a one-mode scalar Gaussian/CAR tick supports nontrivial full-cubic finite-range transport | closed negatively on the supplied CAR surface | scalar Laurent unitarity gives one monomial and the 24 rotations force its winding vector to zero |
+| zero determinant winding implies no multicomponent transport | falsified | opposite-moving bands and the six-direction cubic CAR QCA transport with zero total winding |
 
 These negatives prune routes, not the full record-instrument program. The live
 escape is a separate classical record register coupled through a local

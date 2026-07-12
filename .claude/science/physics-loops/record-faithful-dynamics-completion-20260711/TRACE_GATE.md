@@ -1,11 +1,11 @@
 ---
 trace_class: direct_blocker_closure
-target_claim_id: overlapping_edge_instrument_order_and_time_rate_nonselection_bounded_theorem_note_2026-07-11
+target_claim_id: scalar_cubic_car_qca_triviality_and_six_direction_escape_bounded_theorem_note_2026-07-11
 target_blocker_text: "A unique or severely constrained dynamics/admissibility law, including time and the probability rule."
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Read the simultaneous-tick, strict-QCA, cubic-covariance, index, locality, and continuum-obstruction lanes; then classify one simultaneous 3D coherent update without importing an ordered edge schedule."
+next_trace_action: "Classify the 720 six-matching coherent qubit-circuit products modulo spatial symmetry, cyclic phase, and reversal, then compare that interacting circuit surface with the scalar CAR-QCA normal form."
 ---
 
 # Trace Gate
@@ -46,3 +46,11 @@ make raw schedule order irrelevant, but no composition semantics or priority
 is selected, and an event order leaves clock/rate rescaling free. The next
 trace action is one simultaneous 3D coherent QCA/tick classification, not a
 more elaborate sequential schedule.
+
+The first simultaneous-QCA subblock now proves that any finite Laurent unitary
+has an equally local number-preserving CAR-automorphism lift. The one-mode
+scalar proper-cubic class is exactly onsite phase, while a six-direction
+six-mode construction restores strict radius-one cubic transport. This closes
+the one-particle-versus-QCA category gap on the Gaussian surface but does not
+select a carrier or classify general one-qubit-site circuits. The next trace
+action is the exact matching-product qubit-QCA schedule orbit.

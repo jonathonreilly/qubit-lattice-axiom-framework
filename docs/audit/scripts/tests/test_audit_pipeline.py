@@ -8112,6 +8112,26 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         self.assertNotIn("prior_secret", prompt)
         self.assertIn("not given its JSON or conclusion", prompt)
 
+    def test_failed_locator_repair_preserves_fresh_schema_eligibility(self):
+        m = _import_codex_audit_runner()
+        initial = "N1 route 1.outcome is not evidenced at evidence_path"
+        preservation = "validation repair changed preserved no-go judgment content"
+        self.assertEqual(
+            m.fresh_schema_retry_error(preservation, initial),
+            initial,
+        )
+        self.assertEqual(
+            m.fresh_schema_retry_error("N3 scan is incomplete", initial),
+            "N3 scan is incomplete",
+        )
+        self.assertEqual(
+            m.fresh_schema_retry_error("claim_id mismatch", None),
+            "claim_id mismatch",
+        )
+        self.assertIsNone(
+            m.fresh_schema_retry_error(None, initial),
+        )
+
     def test_oversized_validation_repair_is_detected_before_transport(self):
         m = _import_codex_audit_runner()
         original = "p" * (m.CODEX_INPUT_CHAR_LIMIT - 100)

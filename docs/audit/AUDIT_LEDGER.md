@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 97 |
 | **retained_no_go** | 40 |
-| **retained_bounded** | 397 |
+| **retained_bounded** | 398 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2700 |
+| unaudited | 2699 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,22 +45,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 520 |
+| `audited_clean` | 521 |
 | `audited_conditional` | 79 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3050 |
+| `unaudited` | 3049 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2055 |
+| `bounded_theorem` | 2056 |
 | `decoration` | 23 |
 | `meta` | 357 |
 | `no_go` | 471 |
 | `open_gate` | 196 |
-| `positive_theorem` | 652 |
+| `positive_theorem` | 651 |
 
 | criticality | count |
 |---|---:|
@@ -637,6 +637,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_matched_history_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_portability_batch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_seed_band_diagnosis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
+| `wave_direct_dm_transfer_diagnostic_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `wave_equation_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_equation_self_field_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_poisson_cinf_bridge_theorem_note_2026-05-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -9804,6 +9805,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The runner parses the retained portability-batch reference-strength rows and computes seed-resolved means showing seed0 mean late gain +0.003712 and mean dL/dE 1.727 versus seed1 mean late gain +0.001949 and mean dL/dE 1.328, while all deltas remain negative.  _(class `B`)_
 - **chain closes:** True — The one-hop portability batch is retained_bounded, and this runner only parses its reference-strength log rows and performs deterministic arithmetic summaries. Independent recomputation from the printed summary confirms the seed0/seed1 late-gain split and the absence of early-branch suppression for seed1.
 - **rationale:** Clean under the bounded diagnostic scope. The source and runner support an algebraic decomposition of the retained s=0.004 batch table: the two-band split is not sign loss, and seed1's early response is not suppressed; the main table-level separator is seed0's larger late-branch amplification. This audit does not retain a deeper geometry mechanism, H=0.25 persistence, or widened seed/family law.
+- **auditor confidence:** high
+
+### `wave_direct_dm_transfer_diagnostic_note`
+
+- **Note:** [`WAVE_DIRECT_DM_TRANSFER_DIAGNOSTIC_NOTE.md`](../../docs/WAVE_DIRECT_DM_TRANSFER_DIAGNOSTIC_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the four controlled Fam1/Fam2, seed-0/1 rows at s=0.004, the defined coarse-to-fine late-gain ratio separates seed-0 compression from seed-1 retention.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00265-wave_direct_dm_transfer_diag`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Computing T(F,s)=G(H=0.25)/mean(G(H=0.5),G(H=0.35)) gives 0.3266 and 0.4529 for seed 0, versus 1.0471 and 1.0190 for seed 1.  _(class `A`)_
+- **chain closes:** True — The runner parses the retained coarse and fine rows, computes each late gain and transfer ratio, and reproduces the table and stated two-band separation. The conclusion is restricted to those four rows and does not require a wider portability or family law.
+- **rationale:** Both cited authorities are retained-grade bounded inputs, and the runner performs genuine arithmetic over their controlled numerical surface rather than merely printing the transfer table. Although the final narrative lines repeat rounded constants, the preceding per-row values are independently computed from parsed logs and support the bounded conclusion. No external comparator, tuned match, or unclosed bridge is used.
 - **auditor confidence:** high
 
 ### `wave_equation_gravity_note`
